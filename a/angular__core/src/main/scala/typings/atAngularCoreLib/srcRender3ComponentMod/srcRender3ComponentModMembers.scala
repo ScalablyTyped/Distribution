@@ -62,6 +62,6 @@ object srcRender3ComponentModMembers extends js.Object {
   ): T = js.native
   def renderComponent[T](componentType: atAngularCoreLib.srcTypeMod.Type[T]): T = js.native
   def renderComponent[T](componentType: atAngularCoreLib.srcTypeMod.Type[T], opts: CreateComponentOptions): T = js.native
-  def whenRendered(component: js.Any): stdLib.Promise[scala.Null] = js.native
+  def whenRendered(component: js.Any): js.Promise[scala.Null] = js.native
 }
 

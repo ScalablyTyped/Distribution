@@ -16,7 +16,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotDoubleclickbidmanagerLib.gapiDotClientDotDoubleclickbidmanagerLibStrings.doubleclickbidmanager,
     version: gapiDotClientDotDoubleclickbidmanagerLib.gapiDotClientDotDoubleclickbidmanagerLibStrings.v1
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotDoubleclickbidmanagerLib.gapiDotClientDotDoubleclickbidmanagerLibStrings.doubleclickbidmanager,
     version: gapiDotClientDotDoubleclickbidmanagerLib.gapiDotClientDotDoubleclickbidmanagerLibStrings.v1,

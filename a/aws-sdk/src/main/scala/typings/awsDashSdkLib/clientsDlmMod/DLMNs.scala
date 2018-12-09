@@ -217,11 +217,11 @@ object DLMNs extends js.Object {
     /**
          * The tag key.
          */
-    var Key: java.lang.String
+    var Key: String
     /**
          * The tag value.
          */
-    var Value: java.lang.String
+    var Value: String
   }
   
   @js.native

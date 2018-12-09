@@ -45,7 +45,7 @@ class Operation protected ()
        *
        * @return {promise}
        */
-  def promise(): stdLib.Promise[js.Object] = js.native
+  def promise(): js.Promise[js.Object] = js.native
   /**
        * Poll `getMetadata` to check the operation's status. This runs a loop to
        * ping the API on an interval.
@@ -55,6 +55,6 @@ class Operation protected ()
        *
        * @private
        */
-  /* protected */ def `startPolling_`(): stdLib.Promise[scala.Unit] = js.native
+  /* protected */ def `startPolling_`(): js.Promise[scala.Unit] = js.native
 }
 

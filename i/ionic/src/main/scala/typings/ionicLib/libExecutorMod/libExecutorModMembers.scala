@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libExecutorModMembers extends js.Object {
   def metadataToCmdOptsEnv(metadata: ionicLib.definitionsMod.CommandMetadata, cmdNameParts: js.Array[java.lang.String]): lodashLib.lodashMod.Global.Map[ionicLib.definitionsMod.CommandMetadataOption, java.lang.String] = js.native
-  def runCommand(runinfo: ionicLib.definitionsMod.CommandInstanceInfo, argv: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def runCommand(runinfo: ionicLib.definitionsMod.CommandInstanceInfo, argv: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
 }
 

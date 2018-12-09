@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object labLib {
   type AsyncCallback = js.Function1[/* done */ DoneFunction, scala.Unit]
-  type AsyncPromise = js.Function0[stdLib.Promise[js.Any]]
+  type AsyncPromise = js.Function0[js.Promise[js.Any]]
   type CleanupFunction = js.Function1[/* func */ js.Function1[/* next */ js.Function, scala.Unit], scala.Unit]
   type DoneFunction = js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   type EmptyCallback = js.Function0[scala.Unit]
@@ -18,6 +18,6 @@ package object labLib {
     /* onCleanup */ js.UndefOr[CleanupFunction], 
     scala.Unit
   ]
-  type TestPromise = js.Function0[stdLib.Promise[js.Any]]
+  type TestPromise = js.Function0[js.Promise[js.Any]]
   type TestWithOptionsArgs = js.Function3[/* desc */ java.lang.String, /* options */ js.Any, /* cb */ TestCallback, js.Object]
 }

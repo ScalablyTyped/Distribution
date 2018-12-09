@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait YamlParser extends js.Object {
-  def parse(yamlFilePath: java.lang.String): stdLib.Promise[_]
+  def parse(yamlFilePath: java.lang.String): js.Promise[_]
 }
 

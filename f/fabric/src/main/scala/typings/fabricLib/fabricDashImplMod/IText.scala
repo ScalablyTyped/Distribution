@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ /* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IITextOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit, path, underline, textDecoration, fontStyle, text, textAlign, fontFamily, lineHeight, overline, fontSize, textBackgroundColor, linethrough, useNative, charSpacing, fontWeight))*/
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IITextOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit, path, underline, textDecoration, fontStyle, text, textAlign, fontFamily, lineHeight, overline, fontSize, textBackgroundColor, linethrough, useNative, charSpacing, fontWeight))*/
 @JSImport("fabric/fabric-impl", "IText")
 @js.native
 class IText protected () extends Text {
@@ -252,8 +251,7 @@ class IText protected () extends Text {
   def shiftLineStyles(lineIndex: scala.Double, offset: scala.Double): scala.Unit = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "IText")
+@JSImport("fabric/fabric-impl", "IText")
 @js.native
 object IText extends js.Object {
   /**

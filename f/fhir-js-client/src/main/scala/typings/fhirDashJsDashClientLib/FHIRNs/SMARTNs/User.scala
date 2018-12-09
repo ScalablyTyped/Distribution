@@ -13,6 +13,6 @@ trait User extends js.Object {
   /**
                * Fetch the current user information from server. The library expects the userId to be of the format "ResourceType/Id"
                */
-  def read(): stdLib.Promise[Response]
+  def read(): js.Promise[Response]
 }
 

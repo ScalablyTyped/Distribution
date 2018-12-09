@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CallBuilder[T /* <: Record */] protected () extends js.Object {
   def this(serverUrl: java.lang.String) = this()
-  def call(): stdLib.Promise[CollectionPage[T]] = js.native
+  def call(): js.Promise[CollectionPage[T]] = js.native
   def cursor(cursor: java.lang.String): this.type = js.native
   def limit(limit: scala.Double): this.type = js.native
   @JSName("order")

@@ -14,7 +14,7 @@ trait RegisterOptions extends js.Object {
     js.Function2[
       /* decoded */ js.Any, 
       /* request */ hapiLib.hapiMod.Request, 
-      stdLib.Promise[hapiDashAuthDashJwt2Lib.Anon_Credentials]
+      js.Promise[hapiDashAuthDashJwt2Lib.Anon_Credentials]
     ]
   ] = js.undefined
 }

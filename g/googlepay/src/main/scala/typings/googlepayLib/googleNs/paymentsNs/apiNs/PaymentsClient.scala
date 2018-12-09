@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class PaymentsClient protected () extends js.Object {
   def this(paymentOptions: PaymentOptions) = this()
   def createButton(request: ButtonOptions): stdLib.HTMLElement = js.native
-  def isReadyToPay(request: IsReadyToPayRequest): stdLib.Promise[IsReadyToPayResponse] = js.native
-  def loadPaymentData(request: PaymentDataRequest): stdLib.Promise[PaymentData] = js.native
+  def isReadyToPay(request: IsReadyToPayRequest): js.Promise[IsReadyToPayResponse] = js.native
+  def loadPaymentData(request: PaymentDataRequest): js.Promise[PaymentData] = js.native
   def prefetchPaymentData(request: PaymentDataRequest): scala.Unit = js.native
 }
 

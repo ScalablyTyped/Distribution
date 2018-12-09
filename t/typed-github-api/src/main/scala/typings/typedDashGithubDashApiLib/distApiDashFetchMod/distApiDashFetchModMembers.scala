@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typed-github-api/dist/api-fetch", JSImport.Namespace)
 @js.native
 object distApiDashFetchModMembers extends js.Object {
-  def getAllPagesAsync[T](uri: java.lang.String, options: Options): stdLib.Promise[js.Array[T] | scala.Null] = js.native
-  def getAsync[T](uri: java.lang.String, options: Options): stdLib.Promise[Response[T] | scala.Null] = js.native
+  def getAllPagesAsync[T](uri: java.lang.String, options: Options): js.Promise[js.Array[T] | scala.Null] = js.native
+  def getAsync[T](uri: java.lang.String, options: Options): js.Promise[Response[T] | scala.Null] = js.native
 }
 

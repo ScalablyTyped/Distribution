@@ -41,11 +41,11 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * The ARN or name of the job definition to use if the event target is an AWS Batch job. This job definition must already exist.
          */
-    var JobDefinition: java.lang.String
+    var JobDefinition: String
     /**
          * The name to use for this execution of the job, if the target is an AWS Batch job.
          */
-    var JobName: java.lang.String
+    var JobName: String
     /**
          * The retry strategy to use for failed jobs, if the target is an AWS Batch job. The retry strategy is the number of times to retry the failed job execution. Valid values are 1–10. When you specify a retry strategy here, it overrides the retry strategy defined in the job definition.
          */
@@ -73,15 +73,15 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * Specifies the key for the condition. Currently the only supported key is aws:PrincipalOrgID.
          */
-    var Key: java.lang.String
+    var Key: String
     /**
          * Specifies the type of condition. Currently the only supported value is StringEquals.
          */
-    var Type: java.lang.String
+    var Type: String
     /**
          * Specifies the value for the key. Currently, this must be the ID of the organization.
          */
-    var Value: java.lang.String
+    var Value: String
   }
   
   
@@ -89,7 +89,7 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * If this is a managed rule, created by an AWS service on your behalf, you must specify Force as True to delete the rule. This parameter is ignored for rules that are not managed rules. You can check whether a rule is a managed rule by using DescribeRule or ListRules and checking the ManagedBy field of the response.
          */
-    var Force: js.UndefOr[scala.Boolean] = js.undefined
+    var Force: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the rule.
          */
@@ -104,15 +104,15 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the account permitted to write events to the current account.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The name of the event bus. Currently, this is always default.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The policy that enables the external account to send events to your account.
          */
-    var Policy: js.UndefOr[java.lang.String] = js.undefined
+    var Policy: js.UndefOr[String] = js.undefined
   }
   
   
@@ -172,7 +172,7 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * Specifies an ECS task group for the task. The maximum length is 255 characters.
          */
-    var Group: js.UndefOr[java.lang.String] = js.undefined
+    var Group: js.UndefOr[String] = js.undefined
     /**
          * Specifies the launch type on which your task is running. The launch type that you specify here must match one of the launch type (compatibilities) of the target task. The FARGATE value is supported only in the Regions where AWS Fargate with Amazon ECS is supported. For more information, see AWS Fargate on Amazon ECS in the Amazon Elastic Container Service Developer Guide.
          */
@@ -184,7 +184,7 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * Specifies the platform version for the task. Specify only the numeric portion of the platform version, such as 1.1.0. This structure is used only if LaunchType is FARGATE. For more information about valid platform versions, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
          */
-    var PlatformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var PlatformVersion: js.UndefOr[String] = js.undefined
     /**
          * The number of tasks to create based on TaskDefinition. The default is 1.
          */
@@ -328,11 +328,11 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * A valid JSON string. There is no other schema imposed. The JSON string may contain fields and nested subobjects.
          */
-    var Detail: js.UndefOr[java.lang.String] = js.undefined
+    var Detail: js.UndefOr[String] = js.undefined
     /**
          * Free-form string used to decide what fields to expect in the event detail.
          */
-    var DetailType: js.UndefOr[java.lang.String] = js.undefined
+    var DetailType: js.UndefOr[String] = js.undefined
     /**
          * AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.
          */
@@ -340,7 +340,7 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * The source of the event. This field is required.
          */
-    var Source: js.UndefOr[java.lang.String] = js.undefined
+    var Source: js.UndefOr[String] = js.undefined
     /**
          * The time stamp of the event, per RFC3339. If no time stamp is provided, the time stamp of the PutEvents call is used.
          */
@@ -484,7 +484,7 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * If this is a managed rule, created by an AWS service on your behalf, you must specify Force as True to remove targets. This parameter is ignored for rules that are not managed rules. You can check whether a rule is a managed rule by using DescribeRule or ListRules and checking the ManagedBy field of the response.
          */
-    var Force: js.UndefOr[scala.Boolean] = js.undefined
+    var Force: js.UndefOr[Boolean] = js.undefined
     /**
          * The IDs of the targets to remove from the rule.
          */
@@ -640,7 +640,7 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * The event, in JSON format, to test against the event pattern.
          */
-    var Event: java.lang.String
+    var Event: String
     /**
          * The event pattern. For more information, see Events and Event Patterns in the Amazon CloudWatch Events User Guide.
          */
@@ -652,7 +652,7 @@ object CloudWatchEventsNs extends js.Object {
     /**
          * Indicates whether the event matches the event pattern.
          */
-    var Result: js.UndefOr[scala.Boolean] = js.undefined
+    var Result: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1093,7 +1093,7 @@ object CloudWatchEventsNs extends js.Object {
   type ScheduleExpression = java.lang.String
   type StatementId = java.lang.String
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type TargetArn = java.lang.String
   type TargetId = java.lang.String
   type TargetIdList = js.Array[TargetId]

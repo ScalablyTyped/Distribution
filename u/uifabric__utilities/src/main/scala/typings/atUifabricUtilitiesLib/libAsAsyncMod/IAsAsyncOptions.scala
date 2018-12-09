@@ -18,6 +18,6 @@ trait IAsAsyncOptions[TProps] extends js.Object {
   /**
        * Callback which returns a promise resolving an object which exports the component.
        */
-  def load(): stdLib.Promise[reactLib.reactMod.ReactNs.ReactType[TProps]]
+  def load(): js.Promise[reactLib.reactMod.ReactNs.ReactType[TProps]]
 }
 

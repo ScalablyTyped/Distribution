@@ -11,7 +11,7 @@ object libraryFnReflectEs7GetDashMetadataMod
   extends ScalablyTyped.runtime.TopLevel[
       js.Function3[
         /* metadataKey */ js.Any, 
-        /* target */ js.Object, 
+        /* target */ Object, 
         /* targetKey */ js.UndefOr[java.lang.String | js.Symbol], 
         js.Any
       ]

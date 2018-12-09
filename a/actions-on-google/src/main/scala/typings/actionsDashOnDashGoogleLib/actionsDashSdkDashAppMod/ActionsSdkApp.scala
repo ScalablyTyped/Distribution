@@ -1046,7 +1046,7 @@ class ActionsSdkApp protected ()
        *     for an invalid token.
        * @actionssdk
        */
-  def isRequestFromAssistant(projectId: java.lang.String): stdLib.Promise[js.Object] = js.native
+  def isRequestFromAssistant(projectId: java.lang.String): js.Promise[js.Object] = js.native
   /**
        * Validates whether request is from Google through signature verification.
        * Uses Google-Auth-Library to verify authorization token against given
@@ -1069,7 +1069,7 @@ class ActionsSdkApp protected ()
        *     for an invalid token.
        * @actionssdk
        */
-  def isRequestFromGoogle(projectId: java.lang.String): stdLib.Promise[js.Object] = js.native
+  def isRequestFromGoogle(projectId: java.lang.String): js.Promise[js.Object] = js.native
   /**
        * Tells Assistant to render the speech response and close the mic.
        *

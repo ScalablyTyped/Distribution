@@ -47,7 +47,7 @@ object newrelicModMembers extends js.Object {
   ): scala.Unit = js.native
   def startBackgroundTransaction(name: java.lang.String, group: java.lang.String, handle: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
   def startBackgroundTransaction(name: java.lang.String, handle: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def startSegment[T /* <: stdLib.PromiseLike[_] */](name: java.lang.String, record: scala.Boolean, handler: T): T = js.native
+  def startSegment[T /* <: js.Thenable[_] */](name: java.lang.String, record: scala.Boolean, handler: T): T = js.native
   def startSegment[T, C /* <: js.Function1[/* repeated */js.Any, _] */](name: java.lang.String, record: scala.Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T]): T = js.native
   def startSegment[T, C /* <: js.Function1[/* repeated */js.Any, _] */](
     name: java.lang.String,

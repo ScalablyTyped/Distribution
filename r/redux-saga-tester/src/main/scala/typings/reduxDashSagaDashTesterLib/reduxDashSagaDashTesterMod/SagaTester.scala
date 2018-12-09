@@ -49,12 +49,12 @@ trait SagaTester[StateType /* <: js.Object */] extends js.Object {
        * Returns a promise that will resolve if the specified action is dispatched to the store.
        * @param futureOnly Causes waitFor to only resolve if the action is called in the future.
        */
-  def waitFor(actionType: java.lang.String): stdLib.PromiseLike[scala.Unit] = js.native
+  def waitFor(actionType: java.lang.String): js.Thenable[scala.Unit] = js.native
   /**
        * Returns a promise that will resolve if the specified action is dispatched to the store.
        * @param futureOnly Causes waitFor to only resolve if the action is called in the future.
        */
-  def waitFor(actionType: java.lang.String, futureOnly: scala.Boolean): stdLib.PromiseLike[scala.Unit] = js.native
+  def waitFor(actionType: java.lang.String, futureOnly: scala.Boolean): js.Thenable[scala.Unit] = js.native
   /**
        * Returns whether the specified was dispatched in the past.
        */

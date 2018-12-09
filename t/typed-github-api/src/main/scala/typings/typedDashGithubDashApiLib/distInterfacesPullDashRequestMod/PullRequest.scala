@@ -23,9 +23,9 @@ trait PullRequest extends PullRequestRef {
   var state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.open | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed
   var title: java.lang.String
   var updatedAt: momentLib.momentMod.momentNs.Moment
-  def loadIssueAsync(): stdLib.Promise[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]
-  def loadReviewCommentsAsync(): stdLib.Promise[js.Array[ReviewComment]]
-  def loadReviewRequestsAsync(): stdLib.Promise[ReviewRequests]
-  def loadReviewsAsync(): stdLib.Promise[js.Array[Review]]
+  def loadIssueAsync(): js.Promise[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]
+  def loadReviewCommentsAsync(): js.Promise[js.Array[ReviewComment]]
+  def loadReviewRequestsAsync(): js.Promise[ReviewRequests]
+  def loadReviewsAsync(): js.Promise[js.Array[Review]]
 }
 

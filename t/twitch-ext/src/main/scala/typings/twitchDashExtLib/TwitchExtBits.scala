@@ -19,7 +19,7 @@ trait TwitchExtBits extends js.Object {
   	 *
   	 * @see https://dev.twitch.tv/docs/extensions/bits/#getproducts
   	 */
-  def getProducts(): stdLib.Promise[js.Array[TwitchExtBitsProduct]]
+  def getProducts(): js.Promise[js.Array[TwitchExtBitsProduct]]
   /**
   	 * This function takes a callback that is fired whenever a transaction is cancelled.
   	 * @param callback The callback that is fired whenever a transaction is cancelled.

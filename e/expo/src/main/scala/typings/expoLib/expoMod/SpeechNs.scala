@@ -19,7 +19,7 @@ object SpeechNs extends js.Object {
     var rate: js.UndefOr[scala.Double] = js.undefined
   }
   
-  def isSpeakingAsync(): stdLib.Promise[scala.Boolean] = js.native
+  def isSpeakingAsync(): js.Promise[scala.Boolean] = js.native
   /** Available on iOS only */
   def pause(): scala.Unit = js.native
   /** Available on iOS only */

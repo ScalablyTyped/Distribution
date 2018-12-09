@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object pDashMapDashSeriesMod extends js.Object {
   def apply[T, U](
-    input: stdLib.Iterable[stdLib.PromiseLike[T] | T],
-    mapper: js.Function2[/* element */ T, /* index */ scala.Double, stdLib.PromiseLike[U] | U]
-  ): stdLib.Promise[js.Array[U]] = js.native
+    input: stdLib.Iterable[js.Thenable[T] | T],
+    mapper: js.Function2[/* element */ T, /* index */ scala.Double, js.Thenable[U] | U]
+  ): js.Promise[js.Array[U]] = js.native
 }
 

@@ -10,7 +10,7 @@ trait PushNotifications extends js.Object {
   def send(
     registrationIds: js.Array[java.lang.String],
     data: nodeDashPushnotificationsLib.nodeDashPushnotificationsMod.PushNotificationsNs.Data
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def send(
     registrationIds: js.Array[java.lang.String],
     data: nodeDashPushnotificationsLib.nodeDashPushnotificationsMod.PushNotificationsNs.Data,

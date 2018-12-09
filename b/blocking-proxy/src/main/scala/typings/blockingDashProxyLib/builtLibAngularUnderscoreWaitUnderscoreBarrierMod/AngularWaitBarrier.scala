@@ -21,7 +21,7 @@ class AngularWaitBarrier protected ()
        */
   def enableLogging(logDir: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
-  override def onCommand(command: blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.WebDriverCommand): stdLib.Promise[scala.Unit] = js.native
+  override def onCommand(command: blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.WebDriverCommand): js.Promise[scala.Unit] = js.native
   /* private */ def sendRequestToStabilize(command: js.Any): js.Any = js.native
   /**
        * Override the logger instance. Only used for testing.

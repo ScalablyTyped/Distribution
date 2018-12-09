@@ -13,5 +13,5 @@ package object SparkPostNs {
   ]
   type Recipient = (RecipientWithAddress | RecipientWithMultichannelAddresses) with BaseRecipient
   type ResultsCallback[T] = Callback[sparkpostLib.Anon_Results[T]]
-  type ResultsPromise[T] = stdLib.Promise[sparkpostLib.Anon_Results[T]]
+  type ResultsPromise[T] = js.Promise[sparkpostLib.Anon_Results[T]]
 }

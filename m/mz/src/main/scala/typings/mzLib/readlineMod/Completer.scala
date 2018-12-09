@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Completer extends js.Object {
-  def apply(line: java.lang.String): (stdLib.Promise[js.Tuple2[js.Array[java.lang.String], java.lang.String]]) | (js.Tuple2[js.Array[java.lang.String], java.lang.String]) = js.native
+  def apply(line: java.lang.String): (js.Promise[js.Tuple2[js.Array[java.lang.String], java.lang.String]]) | (js.Tuple2[js.Array[java.lang.String], java.lang.String]) = js.native
   def apply(
     line: java.lang.String,
     callback: js.Function2[

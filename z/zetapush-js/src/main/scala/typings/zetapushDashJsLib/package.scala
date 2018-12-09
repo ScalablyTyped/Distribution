@@ -10,7 +10,7 @@ package object zetapushDashJsLib {
     /* parameters */ js.UndefOr[js.Any], 
     /* hardFail */ js.UndefOr[scala.Boolean], 
     /* debug */ js.UndefOr[scala.Double], 
-    stdLib.Promise[js.Any]
+    js.Promise[js.Any]
   ]
   type AuthenticationCallback = js.Function0[js.Any]
   type ConnectionStatusHandler = scala.Double

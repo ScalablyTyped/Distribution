@@ -18,6 +18,6 @@ class PollyServer () extends js.Object {
   def patch(args: js.Any*): RouteHandler = js.native
   def post(args: js.Any*): RouteHandler = js.native
   def put(args: js.Any*): RouteHandler = js.native
-  def timeout(ms: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def timeout(ms: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

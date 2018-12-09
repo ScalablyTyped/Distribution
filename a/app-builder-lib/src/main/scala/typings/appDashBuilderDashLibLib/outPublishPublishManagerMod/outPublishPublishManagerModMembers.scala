@@ -29,13 +29,13 @@ object outPublishPublishManagerModMembers extends js.Object {
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     arch: builderDashUtilLib.outArchMod.Arch,
     errorIfCannot: scala.Boolean
-  ): stdLib.Promise[appDashBuilderDashLibLib.Anon_PublishAutoUpdate | scala.Null] = js.native
+  ): js.Promise[appDashBuilderDashLibLib.Anon_PublishAutoUpdate | scala.Null] = js.native
   def getPublishConfigs(
     platformPackager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     targetSpecificOptions: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions,
     arch: builderDashUtilLib.outArchMod.Arch,
     errorIfCannot: scala.Boolean
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
   def getPublishConfigs(
@@ -43,7 +43,7 @@ object outPublishPublishManagerModMembers extends js.Object {
     targetSpecificOptions: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions,
     arch: scala.Null,
     errorIfCannot: scala.Boolean
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
   def getPublishConfigs(
@@ -51,7 +51,7 @@ object outPublishPublishManagerModMembers extends js.Object {
     targetSpecificOptions: js.UndefOr[scala.Nothing],
     arch: builderDashUtilLib.outArchMod.Arch,
     errorIfCannot: scala.Boolean
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
   def getPublishConfigs(
@@ -59,7 +59,7 @@ object outPublishPublishManagerModMembers extends js.Object {
     targetSpecificOptions: js.UndefOr[scala.Nothing],
     arch: scala.Null,
     errorIfCannot: scala.Boolean
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
   def getPublishConfigs(
@@ -67,7 +67,7 @@ object outPublishPublishManagerModMembers extends js.Object {
     targetSpecificOptions: scala.Null,
     arch: builderDashUtilLib.outArchMod.Arch,
     errorIfCannot: scala.Boolean
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
   def getPublishConfigs(
@@ -75,30 +75,30 @@ object outPublishPublishManagerModMembers extends js.Object {
     targetSpecificOptions: scala.Null,
     arch: scala.Null,
     errorIfCannot: scala.Boolean
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
-  def getPublishConfigsForUpdateInfo(packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_]): stdLib.Promise[
+  def getPublishConfigsForUpdateInfo(packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_]): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
   def getPublishConfigsForUpdateInfo(
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     publishConfigs: js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration]
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
   def getPublishConfigsForUpdateInfo(
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     publishConfigs: js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration],
     arch: builderDashUtilLib.outArchMod.Arch
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
   def getPublishConfigsForUpdateInfo(
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     publishConfigs: scala.Null,
     arch: builderDashUtilLib.outArchMod.Arch
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
 }

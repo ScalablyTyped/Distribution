@@ -11,6 +11,6 @@ object defaultNs extends js.Object {
   def buildSitemaps(
     urls: js.Array[expressDashSitemapDashXmlLib.expressDashSitemapDashXmlMod.SitemapLeaf],
     base: java.lang.String
-  ): stdLib.Promise[expressDashSitemapDashXmlLib.expressDashSitemapDashXmlMod.Sitemap] = js.native
+  ): js.Promise[expressDashSitemapDashXmlLib.expressDashSitemapDashXmlMod.Sitemap] = js.native
 }
 

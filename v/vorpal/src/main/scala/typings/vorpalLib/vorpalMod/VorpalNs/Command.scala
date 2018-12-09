@@ -11,7 +11,7 @@ trait Command extends js.Object {
   @JSName("_fn")
   var _fn_Original: Action = js.native
   var _name: java.lang.String = js.native
-  def _fn(args: Args): stdLib.Promise[scala.Unit] = js.native
+  def _fn(args: Args): js.Promise[scala.Unit] = js.native
   def action(action: Action): this.type = js.native
   def alias(command: java.lang.String): this.type = js.native
   def allowUnknownOptions(): this.type = js.native

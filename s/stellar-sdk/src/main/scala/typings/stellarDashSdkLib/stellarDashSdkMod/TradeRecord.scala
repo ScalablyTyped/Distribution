@@ -27,8 +27,8 @@ trait TradeRecord extends Record {
   @JSName("operation")
   var operation_Original: CallFunction[OperationRecord] = js.native
   var paging_token: java.lang.String = js.native
-  def base(): stdLib.Promise[AccountRecord] = js.native
-  def counter(): stdLib.Promise[AccountRecord] = js.native
-  def operation(): stdLib.Promise[OperationRecord] = js.native
+  def base(): js.Promise[AccountRecord] = js.native
+  def counter(): js.Promise[AccountRecord] = js.native
+  def operation(): js.Promise[OperationRecord] = js.native
 }
 

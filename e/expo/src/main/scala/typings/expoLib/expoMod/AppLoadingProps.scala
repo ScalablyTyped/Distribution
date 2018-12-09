@@ -12,6 +12,6 @@ trait AppLoadingProps extends js.Object {
   /** Required if you provide `startAsync`. Called when `startAsync` resolves or rejects. This should be used to set state and unmount the `AppLoading` component. */
   var onFinish: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** A `function` that returns a `Promise`. The `Promise` should resolve when the app is done loading data and assets. */
-  var startAsync: js.UndefOr[js.Function0[stdLib.Promise[scala.Unit]]] = js.undefined
+  var startAsync: js.UndefOr[js.Function0[js.Promise[scala.Unit]]] = js.undefined
 }
 

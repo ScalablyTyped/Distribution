@@ -16,7 +16,7 @@ object eventDashToDashPromiseModMembers extends js.Object {
    * @param options  An `Object` controlling advanced options.
    * @return         The returned promise has a `cancel()` method which can be used to remove the event listeners. Note that the promise will never settled if canceled.
    */
-  def apply(emitter: eventDashToDashPromiseLib.EventSource, event: java.lang.String): stdLib.Promise[_] = js.native
+  def apply(emitter: eventDashToDashPromiseLib.EventSource, event: java.lang.String): js.Promise[_] = js.native
   /**
    * Wait for one event. The first parameter of the emitted event is used to resolve/reject the promise.
    * 
@@ -29,12 +29,12 @@ object eventDashToDashPromiseModMembers extends js.Object {
     emitter: eventDashToDashPromiseLib.EventSource,
     event: java.lang.String,
     options: EventToPromiseOptions
-  ): stdLib.Promise[_] = js.native
-  def multi(emitter: eventDashToDashPromiseLib.EventSource, successEvents: js.Array[java.lang.String]): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
+  def multi(emitter: eventDashToDashPromiseLib.EventSource, successEvents: js.Array[java.lang.String]): js.Promise[_] = js.native
   def multi(
     emitter: eventDashToDashPromiseLib.EventSource,
     successEvents: js.Array[java.lang.String],
     errorEvents: js.Array[java.lang.String]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
 }
 

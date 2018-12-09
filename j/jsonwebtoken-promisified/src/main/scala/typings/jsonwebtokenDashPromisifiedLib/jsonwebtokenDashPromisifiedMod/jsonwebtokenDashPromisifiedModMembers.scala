@@ -27,12 +27,12 @@ object jsonwebtokenDashPromisifiedModMembers extends js.Object {
   def sign(payload: nodeLib.Buffer, secretOrPrivateKey: Secret, callback: SignCallback): scala.Unit = js.native
   def sign(payload: nodeLib.Buffer, secretOrPrivateKey: Secret, options: SignOptions): java.lang.String = js.native
   def sign(payload: nodeLib.Buffer, secretOrPrivateKey: Secret, options: SignOptions, callback: SignCallback): scala.Unit = js.native
-  def signAsync(payload: java.lang.String, secretOrPrivateKey: Secret): stdLib.Promise[java.lang.String] = js.native
-  def signAsync(payload: java.lang.String, secretOrPrivateKey: Secret, options: SignOptions): stdLib.Promise[java.lang.String] = js.native
-  def signAsync(payload: js.Object, secretOrPrivateKey: Secret): stdLib.Promise[java.lang.String] = js.native
-  def signAsync(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): stdLib.Promise[java.lang.String] = js.native
-  def signAsync(payload: nodeLib.Buffer, secretOrPrivateKey: Secret): stdLib.Promise[java.lang.String] = js.native
-  def signAsync(payload: nodeLib.Buffer, secretOrPrivateKey: Secret, options: SignOptions): stdLib.Promise[java.lang.String] = js.native
+  def signAsync(payload: java.lang.String, secretOrPrivateKey: Secret): js.Promise[java.lang.String] = js.native
+  def signAsync(payload: java.lang.String, secretOrPrivateKey: Secret, options: SignOptions): js.Promise[java.lang.String] = js.native
+  def signAsync(payload: js.Object, secretOrPrivateKey: Secret): js.Promise[java.lang.String] = js.native
+  def signAsync(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): js.Promise[java.lang.String] = js.native
+  def signAsync(payload: nodeLib.Buffer, secretOrPrivateKey: Secret): js.Promise[java.lang.String] = js.native
+  def signAsync(payload: nodeLib.Buffer, secretOrPrivateKey: Secret, options: SignOptions): js.Promise[java.lang.String] = js.native
   def verify(token: java.lang.String, secretOrPublicKey: java.lang.String): js.Object | java.lang.String = js.native
   def verify(token: java.lang.String, secretOrPublicKey: java.lang.String, callback: VerifyCallback): scala.Unit = js.native
   def verify(token: java.lang.String, secretOrPublicKey: java.lang.String, options: VerifyOptions): js.Object | java.lang.String = js.native
@@ -51,10 +51,10 @@ object jsonwebtokenDashPromisifiedModMembers extends js.Object {
     options: VerifyOptions,
     callback: VerifyCallback
   ): scala.Unit = js.native
-  def verifyAsync(token: java.lang.String, secretOrPublicKey: java.lang.String): stdLib.Promise[js.Object | java.lang.String] = js.native
-  def verifyAsync(token: java.lang.String, secretOrPublicKey: java.lang.String, options: VerifyOptions): stdLib.Promise[js.Object | java.lang.String] = js.native
-  def verifyAsync(token: java.lang.String, secretOrPublicKey: nodeLib.Buffer): stdLib.Promise[js.Object | java.lang.String] = js.native
-  def verifyAsync(token: java.lang.String, secretOrPublicKey: nodeLib.Buffer, options: VerifyOptions): stdLib.Promise[js.Object | java.lang.String] = js.native
+  def verifyAsync(token: java.lang.String, secretOrPublicKey: java.lang.String): js.Promise[js.Object | java.lang.String] = js.native
+  def verifyAsync(token: java.lang.String, secretOrPublicKey: java.lang.String, options: VerifyOptions): js.Promise[js.Object | java.lang.String] = js.native
+  def verifyAsync(token: java.lang.String, secretOrPublicKey: nodeLib.Buffer): js.Promise[js.Object | java.lang.String] = js.native
+  def verifyAsync(token: java.lang.String, secretOrPublicKey: nodeLib.Buffer, options: VerifyOptions): js.Promise[js.Object | java.lang.String] = js.native
   @JSName("verify")
   def verify_Unit(token: java.lang.String, secretOrPublicKey: java.lang.String): scala.Unit = js.native
   @JSName("verify")

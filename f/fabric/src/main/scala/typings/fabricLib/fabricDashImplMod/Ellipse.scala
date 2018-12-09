@@ -5,16 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Ellipse")
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IEllipseOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+@JSImport("fabric/fabric-impl", "Ellipse")
 @js.native
-class Ellipse () extends IEllipseOptions {
+class Ellipse () extends Object {
   def this(options: IEllipseOptions) = this()
-  /**
-  	 * Returns complexity of an instance
-  	 * @return complexity
-  	 */
-  def complexity(): scala.Double = js.native
   /**
   	 * Returns horizontal radius of an object (according to how an object is scaled)
   	 */
@@ -23,18 +18,6 @@ class Ellipse () extends IEllipseOptions {
   	 * Returns Vertical radius of an object (according to how an object is scaled)
   	 */
   def getRy(): scala.Double = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(): js.Any = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Returns svg representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
@@ -49,8 +32,7 @@ class Ellipse () extends IEllipseOptions {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Ellipse")
+@JSImport("fabric/fabric-impl", "Ellipse")
 @js.native
 object Ellipse extends js.Object {
   /**

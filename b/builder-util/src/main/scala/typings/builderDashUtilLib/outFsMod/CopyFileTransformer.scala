@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CopyFileTransformer protected () extends js.Object {
   def this(afterCopyTransformer: AfterCopyFileTransformer) = this()
-  def afterCopyTransformer(file: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def afterCopyTransformer(file: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

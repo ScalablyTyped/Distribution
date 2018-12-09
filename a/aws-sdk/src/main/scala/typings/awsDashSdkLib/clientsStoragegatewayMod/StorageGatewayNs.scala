@@ -218,7 +218,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
          */
-    var KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
          */
@@ -278,11 +278,11 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
          */
-    var GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
          */
-    var KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) AWS KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
          */
@@ -302,11 +302,11 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that sets the write status of a file share. This value is true if the write status is read-only, and otherwise false.
          */
-    var ReadOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var ReadOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * A value that sets the access control list permission for objects in the Amazon S3 bucket that a file gateway puts objects into. The default value is private.
          */
-    var RequesterPays: js.UndefOr[scala.Boolean] = js.undefined
+    var RequesterPays: js.UndefOr[Boolean] = js.undefined
     /**
          * The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it accesses the underlying storage. 
          */
@@ -346,7 +346,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
          */
-    var GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
          */
@@ -354,7 +354,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
          */
-    var KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
          */
@@ -370,11 +370,11 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that sets the write status of a file share. This value is true if the write status is read-only, and otherwise false.
          */
-    var ReadOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var ReadOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * A value that sets the access control list permission for objects in the Amazon S3 bucket that a file gateway puts objects into. The default value is private.
          */
-    var RequesterPays: js.UndefOr[scala.Boolean] = js.undefined
+    var RequesterPays: js.UndefOr[Boolean] = js.undefined
     /**
          * The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it accesses the underlying storage. 
          */
@@ -440,7 +440,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
          */
-    var KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
          */
@@ -488,7 +488,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
          */
-    var KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the AWS KMS Key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
          */
@@ -524,7 +524,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
          */
-    var KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
          */
@@ -856,7 +856,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * This value is true if a password for the guest user “smbguest” is set, and otherwise false.
          */
-    var SMBGuestPasswordSet: js.UndefOr[scala.Boolean] = js.undefined
+    var SMBGuestPasswordSet: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1357,7 +1357,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
          */
-    var GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. 
          */
@@ -1370,11 +1370,11 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that sets the write status of a file share. This value is true if the write status is read-only, and otherwise false.
          */
-    var ReadOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var ReadOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * A value that sets the access control list permission for objects in the Amazon S3 bucket that a file gateway puts objects into. The default value is private.
          */
-    var RequesterPays: js.UndefOr[scala.Boolean] = js.undefined
+    var RequesterPays: js.UndefOr[Boolean] = js.undefined
     var Role: js.UndefOr[Role] = js.undefined
     var Squash: js.UndefOr[Squash] = js.undefined
   }
@@ -1413,7 +1413,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that specifies whether to recursively refresh folders in the cache. The refresh includes folders that were in the cache the last time the gateway listed the folder's contents. If this value set to "true", each folder that is listed in FolderList is recursively updated. Otherwise, subfolders listed in FolderList are not refreshed. Only objects that are in folders listed directly under FolderList are found and used for the update. The default is "true".
          */
-    var Recursive: js.UndefOr[scala.Boolean] = js.undefined
+    var Recursive: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1503,7 +1503,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
          */
-    var GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
          */
@@ -1522,11 +1522,11 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that sets the write status of a file share. This value is true if the write status is read-only, and otherwise false.
          */
-    var ReadOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var ReadOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * A value that sets the access control list permission for objects in the Amazon S3 bucket that a file gateway puts objects into. The default value is private.
          */
-    var RequesterPays: js.UndefOr[scala.Boolean] = js.undefined
+    var RequesterPays: js.UndefOr[Boolean] = js.undefined
     var Role: js.UndefOr[Role] = js.undefined
     /**
          * A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
@@ -3863,11 +3863,11 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
          */
-    var GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. 
          */
-    var KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional. 
          */
@@ -3883,11 +3883,11 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that sets the write status of a file share. This value is true if the write status is read-only, and otherwise false.
          */
-    var ReadOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var ReadOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * A value that sets the access control list permission for objects in the Amazon S3 bucket that a file gateway puts objects into. The default value is private.
          */
-    var RequesterPays: js.UndefOr[scala.Boolean] = js.undefined
+    var RequesterPays: js.UndefOr[Boolean] = js.undefined
     /**
          * The user mapped to anonymous user. Valid options are the following:    RootSquash - Only root is mapped to anonymous user.    NoSquash - No one is mapped to anonymous user    AllSquash - Everyone is mapped to anonymous user.  
          */
@@ -3915,7 +3915,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.
          */
-    var GuessMIMETypeEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
          */
@@ -3923,7 +3923,7 @@ object StorageGatewayNs extends js.Object {
     /**
          * True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.
          */
-    var KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.
          */
@@ -3935,11 +3935,11 @@ object StorageGatewayNs extends js.Object {
     /**
          * A value that sets the write status of a file share. This value is true if the write status is read-only, and otherwise false.
          */
-    var ReadOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var ReadOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * A value that sets the access control list permission for objects in the Amazon S3 bucket that a file gateway puts objects into. The default value is private.
          */
-    var RequesterPays: js.UndefOr[scala.Boolean] = js.undefined
+    var RequesterPays: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
          */

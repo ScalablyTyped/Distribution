@@ -41,6 +41,6 @@ trait AngularFire extends js.Object {
   @JSName("$update")
   def $update(data: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
   @JSName("$update")
-  def $update(key: java.lang.String, data: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $update(key: java.lang.String, data: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
 }
 

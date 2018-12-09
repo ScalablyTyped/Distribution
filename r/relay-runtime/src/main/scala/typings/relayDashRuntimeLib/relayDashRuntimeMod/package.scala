@@ -18,7 +18,7 @@ package object relayDashRuntimeMod {
     /* variables */ Variables, 
     /* cacheConfig */ CacheConfig, 
     /* uploadables */ js.UndefOr[UploadableMap], 
-    stdLib.Promise[js.Any]
+    js.Promise[js.Any]
   ]
   type FetchFunction = js.Function4[
     /* operation */ RequestNode, 
@@ -31,7 +31,7 @@ package object relayDashRuntimeMod {
   type HandlerProvider = js.Function1[/* name */ java.lang.String, HandlerInterface | scala.Null]
   type MutableRecordSource = RecordSource
   type Observable[T] = RelayObservable[T]
-  type ObservableFromValue[T] = RelayObservable[T] | stdLib.Promise[T] | T
+  type ObservableFromValue[T] = RelayObservable[T] | js.Promise[T] | T
   type OperationSelector = COperationSelector[js.Any, js.Any]
   type OptimisticUpdate = js.Any
   type PayloadData = js.Any

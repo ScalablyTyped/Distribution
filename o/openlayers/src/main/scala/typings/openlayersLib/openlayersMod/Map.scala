@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("openlayers", "Map")
+@JSImport("openlayers", "Map")
 @js.native
-class Map protected () extends js.Object {
+class Map protected () extends Object {
   /**
        * @classdesc
        * The map is the core component of OpenLayers. For a map to render, a view,

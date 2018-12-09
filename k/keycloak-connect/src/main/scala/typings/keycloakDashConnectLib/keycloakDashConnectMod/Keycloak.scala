@@ -11,13 +11,13 @@ trait Keycloak extends js.Object {
   def accountUrl(): java.lang.String = js.native
   def authenticated(request: expressLib.expressMod.eNs.Request): scala.Unit = js.native
   def deauthenticated(request: expressLib.expressMod.eNs.Request): scala.Unit = js.native
-  def getAccount(token: keycloakDashConnectLib.keycloakDashConnectMod.KeycloakNs.Token): stdLib.Promise[_] = js.native
-  def getGrant(request: expressLib.expressMod.eNs.Request, response: expressLib.expressMod.eNs.Response): stdLib.Promise[keycloakDashConnectLib.keycloakDashConnectMod.KeycloakNs.Grant] = js.native
+  def getAccount(token: keycloakDashConnectLib.keycloakDashConnectMod.KeycloakNs.Token): js.Promise[_] = js.native
+  def getGrant(request: expressLib.expressMod.eNs.Request, response: expressLib.expressMod.eNs.Response): js.Promise[keycloakDashConnectLib.keycloakDashConnectMod.KeycloakNs.Grant] = js.native
   def getGrantFromCode(
     code: java.lang.String,
     request: expressLib.expressMod.eNs.Request,
     response: expressLib.expressMod.eNs.Response
-  ): stdLib.Promise[keycloakDashConnectLib.keycloakDashConnectMod.KeycloakNs.Grant] = js.native
+  ): js.Promise[keycloakDashConnectLib.keycloakDashConnectMod.KeycloakNs.Grant] = js.native
   def loginUrl(uuid: java.lang.String, redirectUrl: java.lang.String): java.lang.String = js.native
   def logoutUrl(redirectUrl: java.lang.String): java.lang.String = js.native
   def middleware(): expressLib.expressMod.eNs.RequestHandler = js.native

@@ -31,7 +31,7 @@ class AppInfo protected () extends js.Object {
   val sanitizedName: java.lang.String = js.native
   val updaterCacheDirName: java.lang.String = js.native
   val version: java.lang.String = js.native
-  def computePackageUrl(): stdLib.Promise[java.lang.String | scala.Null] = js.native
+  def computePackageUrl(): js.Promise[java.lang.String | scala.Null] = js.native
   def getVersionInWeirdWindowsForm(): java.lang.String = js.native
   def getVersionInWeirdWindowsForm(isSetBuildNumber: scala.Boolean): java.lang.String = js.native
 }

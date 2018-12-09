@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ 
+
 trait AnyObject
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends stdLib.Object
+     with /* index */ ScalablyTyped.runtime.StringDictionary[js.Any]
 

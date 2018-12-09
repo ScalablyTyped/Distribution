@@ -270,7 +270,7 @@ class BootstrapPopupControl () extends Control {
     eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.shown,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[PopupWindowEventArgs], scala.Unit]
   ): this.type = js.native
-  def performCallback(data: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def performCallback(data: js.Any): js.Promise[scala.Unit] = js.native
   def performCallback(data: js.Any, onSuccess: js.Function0[scala.Unit]): scala.Unit = js.native
   def refreshContentUrl(): scala.Unit = js.native
   def refreshPopupElementConnection(): scala.Unit = js.native

@@ -43,14 +43,14 @@ trait LDClient extends js.Object {
        * @param onDone
        *   A callback to invoke after the events were flushed.
        */
-  def flush(): stdLib.Promise[scala.Unit] = js.native
+  def flush(): js.Promise[scala.Unit] = js.native
   /**
        * Flushes pending events asynchronously.
        *
        * @param onDone
        *   A callback to invoke after the events were flushed.
        */
-  def flush(onDone: js.Function): stdLib.Promise[scala.Unit] = js.native
+  def flush(onDone: js.Function): js.Promise[scala.Unit] = js.native
   /**
        * Identifies a user to LaunchDarkly.
        *
@@ -66,7 +66,7 @@ trait LDClient extends js.Object {
        * @param onDone
        *   A callback to invoke after the user is identified.
        */
-  def identify(user: LDUser): stdLib.Promise[scala.Unit] = js.native
+  def identify(user: LDUser): js.Promise[scala.Unit] = js.native
   /**
        * Identifies a user to LaunchDarkly.
        *
@@ -82,7 +82,7 @@ trait LDClient extends js.Object {
        * @param onDone
        *   A callback to invoke after the user is identified.
        */
-  def identify(user: LDUser, hash: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def identify(user: LDUser, hash: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
        * Identifies a user to LaunchDarkly.
        *
@@ -102,7 +102,7 @@ trait LDClient extends js.Object {
     user: LDUser,
     hash: java.lang.String,
     onDone: js.Function2[/* err */ stdLib.Error | scala.Null, /* flags */ LDFlagSet | scala.Null, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
        * Deregisters an event listener. See LDEventSignature for the available event types.
        *
@@ -301,7 +301,7 @@ trait LDClient extends js.Object {
        * 
        * @returns a Promise containing the initialization state of the client
        */
-  def waitForInitialization(): stdLib.Promise[scala.Unit] = js.native
+  def waitForInitialization(): js.Promise[scala.Unit] = js.native
   /**
        * Allows you to wait for client initialization using Promise syntax. The returned
        * Promise will be resolved once the client has either successfully initialized or
@@ -315,6 +315,6 @@ trait LDClient extends js.Object {
        * 
        * @returns a Promise containing the initialization state of the client
        */
-  def waitUntilReady(): stdLib.Promise[scala.Unit] = js.native
+  def waitUntilReady(): js.Promise[scala.Unit] = js.native
 }
 

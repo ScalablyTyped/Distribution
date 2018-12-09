@@ -15,23 +15,27 @@ object Reset extends js.Object {
   /**
        * Look up a refs's commit.
        */
-  def default(repo: nodegitLib.repositoryMod.Repository, target: js.Object, pathspecs: java.lang.String): stdLib.Promise[scala.Double] = js.native
+  def default(
+    repo: nodegitLib.repositoryMod.Repository,
+    target: nodegitLib.objectMod.Object,
+    pathspecs: java.lang.String
+  ): js.Promise[scala.Double] = js.native
   /**
        * Look up a refs's commit.
        */
   def default(
     repo: nodegitLib.repositoryMod.Repository,
-    target: js.Object,
+    target: nodegitLib.objectMod.Object,
     pathspecs: js.Array[java.lang.String]
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
   /**
        * Look up a refs's commit.
        */
   def default(
     repo: nodegitLib.repositoryMod.Repository,
-    target: js.Object,
+    target: nodegitLib.objectMod.Object,
     pathspecs: nodegitLib.strDashArrayMod.Strarray
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
   /**
        * Sets the current head to the specified commit oid and optionally resets the index and working tree to match.
        * This behaves like reset but takes an annotated commit, which lets you specify which extended sha syntax string was specified by a user, allowing for more exact reflog messages.
@@ -48,9 +52,9 @@ object Reset extends js.Object {
        */
   def reset(
     repo: nodegitLib.repositoryMod.Repository,
-    target: js.Object,
+    target: nodegitLib.objectMod.Object,
     resetType: scala.Double,
     checkoutOpts: nodegitLib.checkoutDashOptionsMod.CheckoutOptions
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
 }
 

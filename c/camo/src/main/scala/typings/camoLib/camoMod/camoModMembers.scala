@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("camo", JSImport.Namespace)
 @js.native
 object camoModMembers extends js.Object {
-  def connect(uri: java.lang.String): stdLib.Promise[_] = js.native
+  def connect(uri: java.lang.String): js.Promise[_] = js.native
 }
 

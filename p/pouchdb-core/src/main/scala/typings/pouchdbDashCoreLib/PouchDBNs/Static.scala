@@ -26,10 +26,10 @@ trait Static
            * except that whenever you invoke it (e.g. with new), the given options will be passed in by default.
            */
   def defaults(options: pouchdbDashCoreLib.PouchDBNs.ConfigurationNs.DatabaseConfiguration): pouchdbDashCoreLib.Anon_Name = js.native
-  def fetch(url: java.lang.String): stdLib.Promise[stdLib.Response] = js.native
-  def fetch(url: java.lang.String, opts: stdLib.RequestInit): stdLib.Promise[stdLib.Response] = js.native
-  def fetch(url: stdLib.Request): stdLib.Promise[stdLib.Response] = js.native
-  def fetch(url: stdLib.Request, opts: stdLib.RequestInit): stdLib.Promise[stdLib.Response] = js.native
+  def fetch(url: java.lang.String): js.Promise[stdLib.Response] = js.native
+  def fetch(url: java.lang.String, opts: stdLib.RequestInit): js.Promise[stdLib.Response] = js.native
+  def fetch(url: stdLib.Request): js.Promise[stdLib.Response] = js.native
+  def fetch(url: stdLib.Request, opts: stdLib.RequestInit): js.Promise[stdLib.Response] = js.native
   @JSName("on")
   def on_created(
     event: pouchdbDashCoreLib.pouchdbDashCoreLibStrings.created,

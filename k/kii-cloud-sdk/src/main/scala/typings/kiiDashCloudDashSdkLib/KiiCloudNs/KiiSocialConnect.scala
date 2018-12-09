@@ -243,7 +243,7 @@ object KiiSocialConnect extends js.Object {
   def linkCurrentUserWithNetwork(
     networkName: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName,
     options: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialConnectOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Tuple2[
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName
@@ -418,7 +418,7 @@ object KiiSocialConnect extends js.Object {
     networkName: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName,
     options: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialConnectOptions,
     callbacks: kiiDashCloudDashSdkLib.Anon_FailureUserNetwork
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Tuple2[
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName
@@ -594,7 +594,7 @@ object KiiSocialConnect extends js.Object {
   def logIn(
     networkName: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName,
     options: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialConnectOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Tuple2[
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName
@@ -771,7 +771,7 @@ object KiiSocialConnect extends js.Object {
     networkName: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName,
     options: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialConnectOptions,
     callbacks: kiiDashCloudDashSdkLib.Anon_FailureUserNetwork
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Tuple2[
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName
@@ -959,7 +959,7 @@ object KiiSocialConnect extends js.Object {
            *          }
            *      );
            */
-  def unLinkCurrentUserFromNetwork(networkName: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName): stdLib.Promise[
+  def unLinkCurrentUserFromNetwork(networkName: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName): js.Promise[
     js.Tuple2[
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName
@@ -1017,7 +1017,7 @@ object KiiSocialConnect extends js.Object {
   def unLinkCurrentUserFromNetwork(
     networkName: kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName,
     callbacks: kiiDashCloudDashSdkLib.Anon_FailureUserNetwork
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Tuple2[
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
       kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName

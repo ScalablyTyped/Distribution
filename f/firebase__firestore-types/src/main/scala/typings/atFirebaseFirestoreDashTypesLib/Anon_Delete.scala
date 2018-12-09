@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Delete extends js.Object {
-  var delete: js.Function0[stdLib.Promise[scala.Unit]]
+  var delete: js.Function0[js.Promise[scala.Unit]]
 }
 

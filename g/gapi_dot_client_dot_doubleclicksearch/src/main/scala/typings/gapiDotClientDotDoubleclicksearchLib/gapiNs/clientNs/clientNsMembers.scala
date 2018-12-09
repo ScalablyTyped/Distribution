@@ -15,7 +15,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotDoubleclicksearchLib.gapiDotClientDotDoubleclicksearchLibStrings.doubleclicksearch,
     version: gapiDotClientDotDoubleclicksearchLib.gapiDotClientDotDoubleclicksearchLibStrings.v2
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotDoubleclicksearchLib.gapiDotClientDotDoubleclicksearchLibStrings.doubleclicksearch,
     version: gapiDotClientDotDoubleclicksearchLib.gapiDotClientDotDoubleclicksearchLibStrings.v2,

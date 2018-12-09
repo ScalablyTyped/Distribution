@@ -89,7 +89,7 @@ trait Observable[E, A] extends js.Object {
            * @param {Observable#firstToPromise~promiseCtr} [promiseCtr]
            * @returns {Promise<A>}
            */
-  def firstToPromise(): stdLib.Promise[A] = js.native
+  def firstToPromise(): js.Promise[A] = js.native
   /**
            * @callback Observable#firstToPromise~promiseCtr
            * @param {A} value
@@ -101,7 +101,7 @@ trait Observable[E, A] extends js.Object {
            * @param {Observable#firstToPromise~promiseCtr} [promiseCtr]
            * @returns {Promise<A>}
            */
-  def firstToPromise(promiseCtr: js.Function1[/* value */ A, stdLib.Promise[A]]): stdLib.Promise[A] = js.native
+  def firstToPromise(promiseCtr: js.Function1[/* value */ A, js.Promise[A]]): js.Promise[A] = js.native
   /**
            * @callback Observable#flatMap~f
            * @param {A} value
@@ -311,7 +311,7 @@ trait Observable[E, A] extends js.Object {
            * @param {Observable#toPromise~promiseCtr} [promiseCtr]
            * @returns {Promise<A>}
            */
-  def toPromise(): stdLib.Promise[A] = js.native
+  def toPromise(): js.Promise[A] = js.native
   /**
            * @callback Observable#toPromise~promiseCtr
            * @param {A} value
@@ -323,7 +323,7 @@ trait Observable[E, A] extends js.Object {
            * @param {Observable#toPromise~promiseCtr} [promiseCtr]
            * @returns {Promise<A>}
            */
-  def toPromise(promiseCtr: js.Function1[/* value */ A, stdLib.Promise[A]]): stdLib.Promise[A] = js.native
+  def toPromise(promiseCtr: js.Function1[/* value */ A, js.Promise[A]]): js.Promise[A] = js.native
   /**
            * @callback Observable#withStateMachine~f
            * @param {B} state

@@ -27,7 +27,7 @@ class Asset protected () extends js.Object {
   /** If the asset is an image, the width of the image data divided by the scale factor. The scale factor is the number after `@` in the filename, or `1` if not present. */
   var width: js.UndefOr[scala.Double] = js.native
   /** Downloads the asset data to a local file in the device’s cache directory. Once the returned promise is fulfilled without error, the localUri field of this asset points to a local file containing the asset data. The asset is only downloaded if an up-to-date local file for the asset isn’t already present due to an earlier download. */
-  def downloadAsync(): stdLib.Promise[scala.Unit] = js.native
+  def downloadAsync(): js.Promise[scala.Unit] = js.native
 }
 
 @JSImport("expo", "Asset")
@@ -39,11 +39,11 @@ object Asset extends js.Object {
        * A helper that wraps `Expo.Asset.fromModule(module).downloadAsync` for convenience.
        * @param moduleIds An array of `require('path/to/file')`. Can also be just one module without an Array.
        */
-  def loadAsync(module: expoLib.expoMod.RequireSource): stdLib.Promise[scala.Unit] = js.native
+  def loadAsync(module: expoLib.expoMod.RequireSource): js.Promise[scala.Unit] = js.native
   /**
        * A helper that wraps `Expo.Asset.fromModule(module).downloadAsync` for convenience.
        * @param moduleIds An array of `require('path/to/file')`. Can also be just one module without an Array.
        */
-  def loadAsync(module: js.Array[expoLib.expoMod.RequireSource]): stdLib.Promise[scala.Unit] = js.native
+  def loadAsync(module: js.Array[expoLib.expoMod.RequireSource]): js.Promise[scala.Unit] = js.native
 }
 

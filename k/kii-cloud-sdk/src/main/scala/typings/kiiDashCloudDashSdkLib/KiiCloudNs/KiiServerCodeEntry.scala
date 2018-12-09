@@ -77,7 +77,7 @@ class KiiServerCodeEntry () extends js.Object {
            *         }
            *     );
            */
-  def execute[T](argument: T): stdLib.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
+  def execute[T](argument: T): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
   /**
            * Execute this server code entry.<br>
            *  If argument is an empty object or not type of Object, callbacks.failure or reject callback of promise will be called.<br>
@@ -144,7 +144,7 @@ class KiiServerCodeEntry () extends js.Object {
            *         }
            *     );
            */
-  def execute[T](argument: T, callbacks: kiiDashCloudDashSdkLib.Anon_FailureEntry[T]): stdLib.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
+  def execute[T](argument: T, callbacks: kiiDashCloudDashSdkLib.Anon_FailureEntry[T]): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
   /**
            * Get the entryName of this server code entry.
            *

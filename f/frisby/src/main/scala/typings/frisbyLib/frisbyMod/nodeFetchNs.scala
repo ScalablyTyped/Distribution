@@ -50,13 +50,13 @@ object nodeFetchNs extends js.Object {
     def this(body: nodeDashFetchLib.nodeDashFetchMod.BodyInit, init: nodeDashFetchLib.nodeDashFetchMod.ResponseInit) = this()
   }
   
-  def default(url: java.lang.String): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
-  def default(url: java.lang.String, init: nodeDashFetchLib.nodeDashFetchMod.RequestInit): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
-  def default(url: nodeDashFetchLib.nodeDashFetchMod.Request): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
+  def default(url: java.lang.String): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
+  def default(url: java.lang.String, init: nodeDashFetchLib.nodeDashFetchMod.RequestInit): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
+  def default(url: nodeDashFetchLib.nodeDashFetchMod.Request): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
   def default(
     url: nodeDashFetchLib.nodeDashFetchMod.Request,
     init: nodeDashFetchLib.nodeDashFetchMod.RequestInit
-  ): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
+  ): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
   @js.native
   object Response extends js.Object {
     def error(): nodeDashFetchLib.nodeDashFetchMod.Response = js.native

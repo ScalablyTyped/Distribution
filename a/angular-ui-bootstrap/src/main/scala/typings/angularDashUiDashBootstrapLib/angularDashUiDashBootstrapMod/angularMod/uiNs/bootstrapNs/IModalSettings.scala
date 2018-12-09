@@ -68,7 +68,9 @@ trait IModalSettings extends js.Object {
                * A controller can be injected with `$modalInstance`
                * If value is an array, it must be in Inline Array Annotation format for injection (strings followed by factory method)
                */
-  var controller: js.UndefOr[java.lang.String | js.Function | (js.Array[java.lang.String | js.Function])] = js.undefined
+  var controller: js.UndefOr[
+    java.lang.String | angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function])
+  ] = js.undefined
   /**
                *  an alternative to the controller-as syntax, matching the API of directive definitions.
                *  Requires the controller option to be provided as well
@@ -92,7 +94,7 @@ trait IModalSettings extends js.Object {
                */
   var resolve: js.UndefOr[
     ScalablyTyped.runtime.StringDictionary[
-      java.lang.String | js.Function | (js.Array[java.lang.String | js.Function]) | js.Object
+      java.lang.String | angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) | js.Object
     ]
   ] = js.undefined
   /**

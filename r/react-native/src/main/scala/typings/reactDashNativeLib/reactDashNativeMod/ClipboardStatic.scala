@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ClipboardStatic extends js.Object {
-  def getString(): stdLib.Promise[java.lang.String]
+  def getString(): js.Promise[java.lang.String]
   def setString(content: java.lang.String): scala.Unit
 }
 

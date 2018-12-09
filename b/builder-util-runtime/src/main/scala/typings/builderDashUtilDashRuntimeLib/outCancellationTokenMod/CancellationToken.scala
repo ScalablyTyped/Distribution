@@ -25,7 +25,7 @@ class CancellationToken ()
       /* onCancel */ js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit], 
       scala.Unit
     ]
-  ): stdLib.Promise[R] = js.native
+  ): js.Promise[R] = js.native
   def dispose(): scala.Unit = js.native
 }
 

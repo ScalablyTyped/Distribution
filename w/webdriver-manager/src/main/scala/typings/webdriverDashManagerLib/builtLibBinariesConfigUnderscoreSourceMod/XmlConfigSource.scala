@@ -13,7 +13,7 @@ abstract class XmlConfigSource protected () extends ConfigSource {
   var xmlUrl: java.lang.String = js.native
   /* private */ def convertXml2js(xml: js.Any): js.Any = js.native
   /* protected */ def getFileName(): java.lang.String = js.native
-  /* protected */ def getXml(): stdLib.Promise[_] = js.native
+  /* protected */ def getXml(): js.Promise[_] = js.native
   /* private */ def readResponse(): js.Any = js.native
   /* private */ def requestXml(): js.Any = js.native
 }

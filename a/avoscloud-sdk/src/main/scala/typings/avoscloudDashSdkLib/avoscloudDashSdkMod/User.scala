@@ -17,7 +17,10 @@ import scala.scalajs.js.annotation._
 @JSImport("avoscloud-sdk", "User")
 @js.native
 class User ()
-  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.User
+  extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.User {
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
+}
 
 /**
      * @class

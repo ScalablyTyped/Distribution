@@ -27,8 +27,8 @@ object reduxDashSagaModMembers extends js.Object {
   def channel[T](buffer: Buffer[T]): Channel[T] = js.native
   def default[C /* <: js.Object */](): SagaMiddleware[C] = js.native
   def default[C /* <: js.Object */](options: SagaMiddlewareOptions[C]): SagaMiddleware[C] = js.native
-  def delay(ms: scala.Double): stdLib.Promise[reduxDashSagaLib.reduxDashSagaLibNumbers.`true`] = js.native
-  def delay[T](ms: scala.Double, `val`: T): stdLib.Promise[T] = js.native
+  def delay(ms: scala.Double): js.Promise[reduxDashSagaLib.reduxDashSagaLibNumbers.`true`] = js.native
+  def delay[T](ms: scala.Double, `val`: T): js.Promise[T] = js.native
   def detach(forkEffect: reduxDashSagaLib.effectsMod.ForkEffect): reduxDashSagaLib.effectsMod.ForkEffect = js.native
   def eventChannel[T](subscribe: reduxDashSagaLib.Subscribe[T]): Channel[T] = js.native
   def eventChannel[T](subscribe: reduxDashSagaLib.Subscribe[T], buffer: Buffer[T]): Channel[T] = js.native

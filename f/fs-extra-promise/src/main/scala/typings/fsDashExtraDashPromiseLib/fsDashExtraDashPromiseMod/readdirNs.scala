@@ -14,43 +14,43 @@ object readdirNs extends js.Object {
            * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
            * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
            */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[js.Array[java.lang.String]] = js.native
   /**
            * Asynchronous readdir(3) - read a directory.
            * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
            * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
            */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): stdLib.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
   /**
            * Asynchronous readdir(3) - read a directory.
            * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
            * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
            */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypes): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypes): js.Promise[js.Array[java.lang.String]] = js.native
   /**
            * Asynchronous readdir(3) - read a directory.
            * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
            * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
            */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalse): stdLib.Promise[js.Array[nodeLib.Buffer]] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalse): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   /**
            * Asynchronous readdir(3) - read a directory.
            * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
            * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
            */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalseEncoding): stdLib.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalseEncoding): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
   /**
            * Asynchronous readdir(3) - read a directory.
            * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
            * @param options If called with `withFileTypes: true` the result data will be an array of Dirent
            */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesTrue): stdLib.Promise[js.Array[nodeLib.fsMod.Dirent]] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesTrue): js.Promise[js.Array[nodeLib.fsMod.Dirent]] = js.native
   /**
            * Asynchronous readdir(3) - read a directory.
            * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
            * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
            */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
   /**
            * Asynchronous readdir(3) - read a directory.
            * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -60,6 +60,6 @@ object readdirNs extends js.Object {
   def __promisify___buffer(
     path: nodeLib.fsMod.PathLike,
     options: fsDashExtraDashPromiseLib.fsDashExtraDashPromiseLibStrings.buffer
-  ): stdLib.Promise[js.Array[nodeLib.Buffer]] = js.native
+  ): js.Promise[js.Array[nodeLib.Buffer]] = js.native
 }
 

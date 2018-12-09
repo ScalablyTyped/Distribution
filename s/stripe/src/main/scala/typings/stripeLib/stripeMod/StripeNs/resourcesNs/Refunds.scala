@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Refunds
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def create(data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptionsWithCharge): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def create(data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptionsWithCharge): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * When you create a new refund, you must specify a charge to create it on.
                *
@@ -25,7 +25,7 @@ trait Refunds
   def create(
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptionsWithCharge,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * When you create a new refund, you must specify a charge to create it on.
                *
@@ -43,15 +43,15 @@ trait Refunds
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptionsWithCharge,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def create(
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptionsWithCharge,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def list(): stdLib.Promise[
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def list(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundListOptions): stdLib.Promise[
+  def list(data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   /**
@@ -62,7 +62,7 @@ trait Refunds
   def list(
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   /**
@@ -76,7 +76,7 @@ trait Refunds
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   def list(
@@ -84,10 +84,10 @@ trait Refunds
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
-  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   def list(
@@ -95,18 +95,18 @@ trait Refunds
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
-  def retrieve(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * Retrieves the details of an existing refund.
                */
@@ -114,7 +114,7 @@ trait Refunds
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * Retrieves the details of an existing refund.
                */
@@ -123,23 +123,23 @@ trait Refunds
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def retrieve(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def retrieve(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def retrieve(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * Updates the specified refund by setting the values of the parameters passed.
                * Any parameters not provided will be left unchanged.
@@ -150,7 +150,7 @@ trait Refunds
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * Updates the specified refund by setting the values of the parameters passed.
                * Any parameters not provided will be left unchanged.
@@ -162,11 +162,11 @@ trait Refunds
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def update(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
 }
 

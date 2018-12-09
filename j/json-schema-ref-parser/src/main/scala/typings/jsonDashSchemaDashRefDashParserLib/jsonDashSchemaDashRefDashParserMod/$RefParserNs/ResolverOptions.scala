@@ -22,7 +22,7 @@ trait ResolverOptions extends js.Object {
        *
        * Unlike the `canRead` function, the `read` method can also be asynchronous. This might be important if your resolver needs to read data from a database or some other external source. You can return your asynchronous value using either an ES6 Promise or a Node.js-style error-first callback. Of course, if your resolver has the ability to return its data synchronously, then that's fine too. Here are examples of all three approaches:
        */
-  def read(file: FileInfo): java.lang.String | nodeLib.Buffer | (stdLib.Promise[java.lang.String | nodeLib.Buffer]) = js.native
+  def read(file: FileInfo): java.lang.String | nodeLib.Buffer | (js.Promise[java.lang.String | nodeLib.Buffer]) = js.native
   /**
        * This is where the real work of a resolver happens. The `read` method accepts the same file info object as the `canRead` function, but rather than returning a boolean value, the `read` method should return the contents of the file. The file contents should be returned in as raw a form as possible, such as a string or a byte array. Any further parsing or processing should be done by parsers.
        *
@@ -31,6 +31,6 @@ trait ResolverOptions extends js.Object {
   def read(
     file: FileInfo,
     callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* data */ java.lang.String | scala.Null, _]
-  ): java.lang.String | nodeLib.Buffer | (stdLib.Promise[java.lang.String | nodeLib.Buffer]) = js.native
+  ): java.lang.String | nodeLib.Buffer | (js.Promise[java.lang.String | nodeLib.Buffer]) = js.native
 }
 

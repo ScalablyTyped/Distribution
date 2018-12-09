@@ -12,6 +12,6 @@ trait Anon_Method extends js.Object {
   var method: js.UndefOr[java.lang.String] = js.undefined
   var overrideMimeType: js.UndefOr[java.lang.String] = js.undefined
   var responseType: js.UndefOr[java.lang.String] = js.undefined
-  var url: java.lang.String | stdLib.Promise[java.lang.String]
+  var url: java.lang.String | js.Promise[java.lang.String]
 }
 

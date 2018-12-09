@@ -13,7 +13,7 @@ trait Resource extends js.Object {
            * Gets the content of the resource.
            * @deprecated Unsupported on Firefox at this time.
            */
-  var getContent: js.UndefOr[js.Function0[stdLib.Promise[js.Object]]] = js.undefined
+  var getContent: js.UndefOr[js.Function0[js.Promise[js.Object]]] = js.undefined
   /**
            * Sets the content of the resource.
            * @param content New content of the resource. Only resources with the text type are currently supported.
@@ -22,7 +22,7 @@ trait Resource extends js.Object {
            * @deprecated Unsupported on Firefox at this time.
            */
   var setContent: js.UndefOr[
-    js.Function2[/* content */ java.lang.String, /* commit */ scala.Boolean, stdLib.Promise[_]]
+    js.Function2[/* content */ java.lang.String, /* commit */ scala.Boolean, js.Promise[_]]
   ] = js.undefined
   /** The URL of the resource. */
   var url: java.lang.String

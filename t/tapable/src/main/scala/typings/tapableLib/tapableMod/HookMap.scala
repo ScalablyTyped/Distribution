@@ -35,12 +35,12 @@ class HookMap[T1, T2, T3] protected () extends js.Object {
   def tapPromise(
     key: js.Any,
     name: java.lang.String,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, stdLib.Promise[_]]
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, js.Promise[_]]
   ): scala.Unit = js.native
   def tapPromise(
     key: js.Any,
     name: Tap,
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, stdLib.Promise[_]]
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */js.Any, js.Promise[_]]
   ): scala.Unit = js.native
 }
 

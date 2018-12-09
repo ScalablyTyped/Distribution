@@ -15,7 +15,7 @@ object readDashChunkMod extends js.Object {
        * @param {number} length Number of bytes to read.
        * @return {Promise<Buffer>} Returns a Promise<Buffer>.
        */
-  def apply(filePath: java.lang.String, startingPosition: scala.Double, length: scala.Double): stdLib.Promise[nodeLib.Buffer] = js.native
+  def apply(filePath: java.lang.String, startingPosition: scala.Double, length: scala.Double): js.Promise[nodeLib.Buffer] = js.native
   /**
        * Synchronous: Reads a chunk from a file. Returns a Buffer.
        * @param {string} filePath The path to the file.

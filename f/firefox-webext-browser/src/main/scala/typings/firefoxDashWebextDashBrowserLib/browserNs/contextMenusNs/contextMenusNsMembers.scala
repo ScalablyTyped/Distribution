@@ -82,19 +82,19 @@ object contextMenusNsMembers extends js.Object {
        * Has no effect if the menu is hidden. Rebuilding a shown menu is an expensive operation, only invoke this method
        * when necessary.
        */
-  def refresh(): stdLib.Promise[_] = js.native
+  def refresh(): js.Promise[_] = js.native
   /**
        * Removes a context menu item.
        * @param menuItemId The ID of the context menu item to remove.
        */
-  def remove(menuItemId: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def remove(menuItemId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
        * Removes a context menu item.
        * @param menuItemId The ID of the context menu item to remove.
        */
-  def remove(menuItemId: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def remove(menuItemId: scala.Double): js.Promise[scala.Unit] = js.native
   /** Removes all context menu items added by this extension. */
-  def removeAll(): stdLib.Promise[scala.Unit] = js.native
+  def removeAll(): js.Promise[scala.Unit] = js.native
   /**
        * Updates a previously created context menu item.
        * @param id The ID of the item to update.
@@ -103,7 +103,7 @@ object contextMenusNsMembers extends js.Object {
   def update(
     id: java.lang.String,
     updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypes
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
        * Updates a previously created context menu item.
        * @param id The ID of the item to update.
@@ -112,6 +112,6 @@ object contextMenusNsMembers extends js.Object {
   def update(
     id: scala.Double,
     updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypes
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

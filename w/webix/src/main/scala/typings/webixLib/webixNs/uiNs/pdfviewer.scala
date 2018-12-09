@@ -28,9 +28,9 @@ class pdfviewer () extends baseview {
   def detachEvent(id: java.lang.String): scala.Unit = js.native
   def download(): scala.Unit = js.native
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def mapEvent(map: js.Any): scala.Unit = js.native
   def nextPage(): scala.Unit = js.native
   def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native

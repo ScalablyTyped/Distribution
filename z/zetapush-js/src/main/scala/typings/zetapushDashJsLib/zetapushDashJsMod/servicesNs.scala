@@ -17,13 +17,13 @@ object servicesNs extends js.Object {
     /* CompleteClass */
     override var DEFAULT_DEPLOYMENT_ID: java.lang.String = js.native
     @JSName("$publish")
-    def $publish(method: java.lang.String): stdLib.Promise[_] = js.native
+    def $publish(method: java.lang.String): js.Promise[_] = js.native
     @JSName("$publish")
-    def $publish(method: java.lang.String, parameters: js.Any): stdLib.Promise[_] = js.native
+    def $publish(method: java.lang.String, parameters: js.Any): js.Promise[_] = js.native
     @JSName("$publish")
-    def $publish(method: java.lang.String, parameters: js.Any, hardFail: scala.Boolean): stdLib.Promise[_] = js.native
+    def $publish(method: java.lang.String, parameters: js.Any, hardFail: scala.Boolean): js.Promise[_] = js.native
     @JSName("$publish")
-    def $publish(method: java.lang.String, parameters: js.Any, hardFail: scala.Boolean, debug: scala.Double): stdLib.Promise[_] = js.native
+    def $publish(method: java.lang.String, parameters: js.Any, hardFail: scala.Boolean, debug: scala.Double): js.Promise[_] = js.native
   }
   
   @js.native

@@ -3779,7 +3779,7 @@ trait Config extends js.Object {
   @JSName("onDidChange")
   def `onDidChange_autocomplete-plusbuiltinProviderBlacklist`(
     keyPath: atomLib.atomLibStrings.`autocomplete-plusDOTbuiltinProviderBlacklist`,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -3789,7 +3789,7 @@ trait Config extends js.Object {
   def `onDidChange_autocomplete-plusbuiltinProviderBlacklist`(
     keyPath: atomLib.atomLibStrings.`autocomplete-plusDOTbuiltinProviderBlacklist`,
     options: atomLib.Anon_Scope,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -4748,7 +4748,7 @@ trait Config extends js.Object {
   @JSName("onDidChange")
   def onDidChange_editorfontFamily(
     keyPath: atomLib.atomLibStrings.editorDOTfontFamily,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -4758,7 +4758,7 @@ trait Config extends js.Object {
   def onDidChange_editorfontFamily(
     keyPath: atomLib.atomLibStrings.editorDOTfontFamily,
     options: atomLib.Anon_Scope,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -4862,7 +4862,7 @@ trait Config extends js.Object {
   @JSName("onDidChange")
   def onDidChange_editornonWordCharacters(
     keyPath: atomLib.atomLibStrings.editorDOTnonWordCharacters,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -4872,7 +4872,7 @@ trait Config extends js.Object {
   def onDidChange_editornonWordCharacters(
     keyPath: atomLib.atomLibStrings.editorDOTnonWordCharacters,
     options: atomLib.Anon_Scope,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -5185,7 +5185,7 @@ trait Config extends js.Object {
   @JSName("onDidChange")
   def onDidChange_linterignoreGlob(
     keyPath: atomLib.atomLibStrings.linterDOTignoreGlob,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -5195,7 +5195,7 @@ trait Config extends js.Object {
   def onDidChange_linterignoreGlob(
     keyPath: atomLib.atomLibStrings.linterDOTignoreGlob,
     options: atomLib.Anon_Scope,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -5280,7 +5280,7 @@ trait Config extends js.Object {
   @JSName("onDidChange")
   def `onDidChange_status-barcursorPositionFormat`(
     keyPath: atomLib.atomLibStrings.`status-barDOTcursorPositionFormat`,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -5290,7 +5290,7 @@ trait Config extends js.Object {
   def `onDidChange_status-barcursorPositionFormat`(
     keyPath: atomLib.atomLibStrings.`status-barDOTcursorPositionFormat`,
     options: atomLib.Anon_Scope,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -5337,7 +5337,7 @@ trait Config extends js.Object {
   @JSName("onDidChange")
   def `onDidChange_status-barselectionCountFormat`(
     keyPath: atomLib.atomLibStrings.`status-barDOTselectionCountFormat`,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Add a listener for changes to a given key path. If keyPath is not specified, your
@@ -5347,7 +5347,7 @@ trait Config extends js.Object {
   def `onDidChange_status-barselectionCountFormat`(
     keyPath: atomLib.atomLibStrings.`status-barDOTselectionCountFormat`,
     options: atomLib.Anon_Scope,
-    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueString_1599134675, scala.Unit]
+    callback: js.Function1[/* values */ atomLib.Anon_OldValueNewValueStringOptional, scala.Unit]
   ): Disposable = js.native
   /**
        *  Sets the value for a configuration setting.

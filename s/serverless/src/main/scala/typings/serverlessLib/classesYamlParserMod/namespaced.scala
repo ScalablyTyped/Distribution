@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class namespaced protected () extends YamlParser {
   def this(serverless: serverlessLib.serverlessMod.namespaced) = this()
   /* CompleteClass */
-  override def parse(yamlFilePath: java.lang.String): stdLib.Promise[_] = js.native
+  override def parse(yamlFilePath: java.lang.String): js.Promise[_] = js.native
 }
 

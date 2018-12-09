@@ -12,13 +12,13 @@ object i18nNsMembers extends js.Object {
        * Detects the language of the provided text using CLD.
        * @param text User input string to be translated.
        */
-  def detectLanguage(text: java.lang.String): stdLib.Promise[firefoxDashWebextDashBrowserLib.Anon_Languages] = js.native
+  def detectLanguage(text: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.Anon_Languages] = js.native
   /* i18n functions */
   /**
        * Gets the accept-languages of the browser. This is different from the locale used by the browser; to get the
        * locale, use `i18n.getUILanguage`.
        */
-  def getAcceptLanguages(): stdLib.Promise[js.Array[LanguageCode]] = js.native
+  def getAcceptLanguages(): js.Promise[js.Array[LanguageCode]] = js.native
   /**
        * Gets the localized string for the specified message. If the message is missing, this method returns an empty
        * string (''). If the format of the `getMessage()` call is wrong — for example, _messageName_ is not a string or

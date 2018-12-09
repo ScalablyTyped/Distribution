@@ -21,7 +21,7 @@ class default () extends OCSPResponse {
   override def createForCertificate(
     certificate: pkijsLib.srcCertificateMod.default,
     parameters: pkijsLib.srcCertIDMod.CreateFroCertificateParams
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   /* CompleteClass */
   override def fromSchema(schema: js.Any): scala.Unit = js.native
   /**
@@ -34,7 +34,7 @@ class default () extends OCSPResponse {
   override def getCertificateStatus(
     certificate: pkijsLib.srcCertificateMod.default,
     issuerCertificate: pkijsLib.srcCertificateMod.default
-  ): stdLib.PromiseLike[pkijsLib.srcBasicOCSPResponseMod.GetCertificateStatusResult] = js.native
+  ): js.Thenable[pkijsLib.srcBasicOCSPResponseMod.GetCertificateStatusResult] = js.native
   /* CompleteClass */
   override def toJSON(): js.Any = js.native
   /* CompleteClass */

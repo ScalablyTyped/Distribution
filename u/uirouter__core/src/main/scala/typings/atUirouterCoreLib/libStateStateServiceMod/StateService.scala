@@ -532,7 +532,7 @@ class StateService protected () extends js.Object {
        *
        * @returns a promise to lazy load
        */
-  def lazyLoad(stateOrName: atUirouterCoreLib.libStateInterfaceMod.StateOrName): stdLib.Promise[atUirouterCoreLib.libStateInterfaceMod.LazyLoadResult] = js.native
+  def lazyLoad(stateOrName: atUirouterCoreLib.libStateInterfaceMod.StateOrName): js.Promise[atUirouterCoreLib.libStateInterfaceMod.LazyLoadResult] = js.native
   /**
        * Lazy loads a state
        *
@@ -548,7 +548,7 @@ class StateService protected () extends js.Object {
   def lazyLoad(
     stateOrName: atUirouterCoreLib.libStateInterfaceMod.StateOrName,
     transition: atUirouterCoreLib.libTransitionTransitionMod.Transition
-  ): stdLib.Promise[atUirouterCoreLib.libStateInterfaceMod.LazyLoadResult] = js.native
+  ): js.Promise[atUirouterCoreLib.libStateInterfaceMod.LazyLoadResult] = js.native
   /**
        * Registers an Invalid State handler
        *
@@ -618,7 +618,7 @@ class StateService protected () extends js.Object {
        *
        * @returns A promise representing the state of the new transition. See [[StateService.go]]
        */
-  def reload(): stdLib.Promise[atUirouterCoreLib.libStateStateObjectMod.StateObject] = js.native
+  def reload(): js.Promise[atUirouterCoreLib.libStateStateObjectMod.StateObject] = js.native
   /**
        * Reloads the current state
        *
@@ -663,7 +663,7 @@ class StateService protected () extends js.Object {
        *
        * @returns A promise representing the state of the new transition. See [[StateService.go]]
        */
-  def reload(reloadState: atUirouterCoreLib.libStateInterfaceMod.StateOrName): stdLib.Promise[atUirouterCoreLib.libStateStateObjectMod.StateObject] = js.native
+  def reload(reloadState: atUirouterCoreLib.libStateInterfaceMod.StateOrName): js.Promise[atUirouterCoreLib.libStateStateObjectMod.StateObject] = js.native
   /**
        * Creates a [[TargetState]]
        *

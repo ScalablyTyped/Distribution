@@ -15,10 +15,10 @@ import scala.scalajs.js.annotation._
 * 
 * @url http://www.espruino.com/Reference#Serial
 */
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @js.native
+@js.native
 trait Serial
-  extends /**
+  extends Object
+     with /**
      * 
      * @return  
      */

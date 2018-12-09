@@ -22,14 +22,14 @@ object relayDashRuntimeModMembers extends js.Object {
   environment: js.Any,
     taggedNode: GraphQLTaggedNode,
     variables: Variables
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def fetchRelayModernQuery(
      // FIXME - $FlowFixMe in facebook source code
   environment: js.Any,
     taggedNode: GraphQLTaggedNode,
     variables: Variables,
     cacheConfig: CacheConfig
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def requestRelaySubscription(environment: Environment, config: GraphQLSubscriptionConfig): Disposable = js.native
 }
 

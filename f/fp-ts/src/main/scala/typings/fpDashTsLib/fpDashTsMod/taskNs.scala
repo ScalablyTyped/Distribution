@@ -11,7 +11,7 @@ object taskNs extends js.Object {
   @js.native
   class Task[A] protected ()
     extends fpDashTsLib.libTaskMod.Task[A] {
-    def this(run: fpDashTsLib.libFunctionMod.Lazy[stdLib.Promise[A]]) = this()
+    def this(run: fpDashTsLib.libFunctionMod.Lazy[js.Promise[A]]) = this()
   }
   
   val URI: /* Task */ java.lang.String = js.native
@@ -29,7 +29,7 @@ object taskNs extends js.Object {
   val task: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[fpDashTsLib.libTaskMod.URI] = js.native
   val taskSeq: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[fpDashTsLib.libTaskMod.URI] = js.native
   val tryCatch: js.Function2[
-    /* f */ fpDashTsLib.libFunctionMod.Lazy[stdLib.Promise[js.Any]], 
+    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Promise[js.Any]], 
     /* onrejected */ js.Function1[/* reason */ js.Any, js.Any], 
     fpDashTsLib.libTaskMod.Task[fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
   ] = js.native

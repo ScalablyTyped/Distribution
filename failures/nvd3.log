@@ -2,8 +2,8 @@
 [info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/nvd3/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/nvd3),TsIdentLibrarySimple(nvd3)),TsIdentModule(None,List(nvd3))) [id => nvd3, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(nvd3)) [id => nvd3, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(nvd3) [id => nvd3, phase => typescript] 
-[warn ] QualifyReferences.scala:47 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(d3), TsIdentSimple(svg), TsIdentSimple(Axis))),List()), defaulting to any [id => nvd3, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(nvd3) / TsDeclNamespace(nv) / TsDeclInterface(Nvd3Axis) / TsTypeRef())] 
-[error] PhaseRes.scala:75 Caught exception [id => nvd3, phase => typescript] java.lang.RuntimeException: Type parameter not provided
+[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(d3), TsIdentSimple(svg), TsIdentSimple(Axis))),List()), defaulting to any [id => nvd3, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(nvd3) / TsDeclNamespace(nv) / TsDeclInterface(Nvd3Axis) / TsTypeRef())] 
+[error] PhaseRes.scala:75 Caught exception: Type parameter not provided [id => nvd3, phase => typescript] java.lang.RuntimeException: Type parameter not provided
 	at scala.sys.package$.error(package.scala:26)
 	at com.olvind.tso.ts.FillInTParams$.$anonfun$rewriter$2(FillInTParams.scala:34)
 	at scala.Option.getOrElse(Option.scala:121)

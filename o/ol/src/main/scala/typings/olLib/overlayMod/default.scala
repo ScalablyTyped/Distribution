@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("ol/overlay", JSImport.Default)
+@JSImport("ol/overlay", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.Overlay {

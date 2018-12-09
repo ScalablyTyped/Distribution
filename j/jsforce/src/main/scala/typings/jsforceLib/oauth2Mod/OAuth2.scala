@@ -16,24 +16,24 @@ class OAuth2 () extends js.Object {
   var redirectUri: java.lang.String = js.native
   var revokeServiceUrl: java.lang.String = js.native
   var tokenServiceUrl: java.lang.String = js.native
-  def authenticate(username: java.lang.String, password: java.lang.String): stdLib.Promise[TokenResponse] = js.native
+  def authenticate(username: java.lang.String, password: java.lang.String): js.Promise[TokenResponse] = js.native
   def authenticate(
     username: java.lang.String,
     password: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
-  ): stdLib.Promise[TokenResponse] = js.native
+  ): js.Promise[TokenResponse] = js.native
   def getAuthorizationUrl(params: jsforceLib.Anon_State): java.lang.String = js.native
-  def refreshToken(code: java.lang.String): stdLib.Promise[TokenResponse] = js.native
+  def refreshToken(code: java.lang.String): js.Promise[TokenResponse] = js.native
   def refreshToken(
     code: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
-  ): stdLib.Promise[TokenResponse] = js.native
-  def requestToken(code: java.lang.String): stdLib.Promise[TokenResponse] = js.native
+  ): js.Promise[TokenResponse] = js.native
+  def requestToken(code: java.lang.String): js.Promise[TokenResponse] = js.native
   def requestToken(
     code: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
-  ): stdLib.Promise[TokenResponse] = js.native
-  def revokeToken(accessToken: java.lang.String): stdLib.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def revokeToken(accessToken: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): stdLib.Promise[js.UndefOr[scala.Nothing]] = js.native
+  ): js.Promise[TokenResponse] = js.native
+  def revokeToken(accessToken: java.lang.String): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def revokeToken(accessToken: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): js.Promise[js.UndefOr[scala.Nothing]] = js.native
 }
 

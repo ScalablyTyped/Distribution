@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Endpoint extends js.Object {
-  var Address: java.lang.String
+  var Address: String
   var CachePeriodInMinutes: Long
 }
 

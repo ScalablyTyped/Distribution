@@ -51,7 +51,7 @@ trait MIDIPort
        * other applications), the vended Promise is resolved. If the port is
        * disconnected, the Promise is rejected.
        */
-  def close(): stdLib.Promise[MIDIPort] = js.native
+  def close(): js.Promise[MIDIPort] = js.native
   /**
        * The handler called when an existing port changes its state or connection
        * attributes.
@@ -66,6 +66,6 @@ trait MIDIPort
        * When invoked, this method returns a Promise object representing a request for
        * access to the given MIDI port on the user's system.
        */
-  def open(): stdLib.Promise[MIDIPort] = js.native
+  def open(): js.Promise[MIDIPort] = js.native
 }
 

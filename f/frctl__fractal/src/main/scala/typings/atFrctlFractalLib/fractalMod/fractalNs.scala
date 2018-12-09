@@ -56,7 +56,7 @@ object fractalNs extends js.Object {
         val title: java.lang.String = js.native
         def add(name: java.lang.String, config: js.Any): AssetSource = js.native
         def find(name: java.lang.String): js.UndefOr[AssetSource] = js.native
-        def load(): stdLib.Promise[scala.Unit] = js.native
+        def load(): js.Promise[scala.Unit] = js.native
         def remove(name: java.lang.String): this.type = js.native
         def sources(): js.Array[AssetSource] = js.native
         def toArray(): js.Array[AssetSource] = js.native
@@ -100,11 +100,11 @@ object fractalNs extends js.Object {
         var viewPath: java.lang.String = js.native
         def component(): this.type = js.native
         def flatten(): atFrctlFractalLib.fractalMod.fractalNs.apiNs.variantsNs.VariantCollection = js.native
-        def getPreviewContent(): stdLib.Promise[java.lang.String] = js.native
-        def getPreviewContext(): stdLib.Promise[_] = js.native
+        def getPreviewContent(): js.Promise[java.lang.String] = js.native
+        def getPreviewContext(): js.Promise[_] = js.native
         def hasTag(tag: java.lang.String): scala.Boolean = js.native
         def isCollated(): scala.Boolean = js.native
-        def render(context: js.Any, env: js.Any, opts: js.Any): stdLib.Promise[java.lang.String] = js.native
+        def render(context: js.Any, env: js.Any, opts: js.Any): js.Promise[java.lang.String] = js.native
         def resources(): atFrctlFractalLib.fractalMod.fractalNs.apiNs.assetsNs.AssetCollection = js.native
         def resourcesJSON(): js.Object = js.native
         def setVariants(variantCollection: atFrctlFractalLib.fractalMod.fractalNs.apiNs.variantsNs.VariantCollection): scala.Unit = js.native
@@ -156,32 +156,32 @@ object fractalNs extends js.Object {
         def find(): js.Any = js.native
         def findFile(filePath: java.lang.String): js.UndefOr[atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File] = js.native
         def getReferencesOf(target: atFrctlFractalLib.Anon_Alias): js.Array[_] = js.native
-        def render(entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity, context: js.Any): stdLib.Promise[java.lang.String] = js.native
+        def render(entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity, context: js.Any): js.Promise[java.lang.String] = js.native
         def render(
           entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity,
           context: js.Any,
           env: js.Any
-        ): stdLib.Promise[java.lang.String] = js.native
+        ): js.Promise[java.lang.String] = js.native
         def render(
           entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity,
           context: js.Any,
           env: js.Any,
           opts: js.Object
-        ): stdLib.Promise[java.lang.String] = js.native
-        def render(entity: java.lang.String, context: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def render(entity: java.lang.String, context: js.Any, env: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def render(entity: java.lang.String, context: js.Any, env: js.Any, opts: js.Object): stdLib.Promise[java.lang.String] = js.native
-        def renderPreview(entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity): stdLib.Promise[java.lang.String] = js.native
-        def renderPreview(entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity, preview: scala.Boolean): stdLib.Promise[java.lang.String] = js.native
+        ): js.Promise[java.lang.String] = js.native
+        def render(entity: java.lang.String, context: js.Any): js.Promise[java.lang.String] = js.native
+        def render(entity: java.lang.String, context: js.Any, env: js.Any): js.Promise[java.lang.String] = js.native
+        def render(entity: java.lang.String, context: js.Any, env: js.Any, opts: js.Object): js.Promise[java.lang.String] = js.native
+        def renderPreview(entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity): js.Promise[java.lang.String] = js.native
+        def renderPreview(entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity, preview: scala.Boolean): js.Promise[java.lang.String] = js.native
         def renderPreview(
           entity: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.Entity,
           preview: scala.Boolean,
           env: js.Any
-        ): stdLib.Promise[java.lang.String] = js.native
-        def renderPreview(entity: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-        def renderPreview(entity: java.lang.String, preview: scala.Boolean): stdLib.Promise[java.lang.String] = js.native
-        def renderPreview(entity: java.lang.String, preview: scala.Boolean, env: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def renderString(str: java.lang.String, context: js.Any, env: js.Any): stdLib.Promise[java.lang.String] = js.native
+        ): js.Promise[java.lang.String] = js.native
+        def renderPreview(entity: java.lang.String): js.Promise[java.lang.String] = js.native
+        def renderPreview(entity: java.lang.String, preview: scala.Boolean): js.Promise[java.lang.String] = js.native
+        def renderPreview(entity: java.lang.String, preview: scala.Boolean, env: js.Any): js.Promise[java.lang.String] = js.native
+        def renderString(str: java.lang.String, context: js.Any, env: js.Any): js.Promise[java.lang.String] = js.native
         def resolve(context: js.Any): js.Any = js.native
         def resources(): atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.FileCollection = js.native
         def variants(): this.type = js.native
@@ -224,13 +224,13 @@ object fractalNs extends js.Object {
         val isIndex: scala.Boolean = js.native
         @JSName("isVariant")
         val isVariant_Doc: js.UndefOr[scala.Nothing] = js.native
-        def getContent(): stdLib.Promise[java.lang.String] = js.native
+        def getContent(): js.Promise[java.lang.String] = js.native
         def getContentSync(): java.lang.String = js.native
-        def render(context: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def render(context: js.Any, env: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def render(context: js.Any, env: js.Any, opts: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def toc(): stdLib.Promise[java.lang.String] = js.native
-        def toc(maxDepth: scala.Double): stdLib.Promise[java.lang.String] = js.native
+        def render(context: js.Any): js.Promise[java.lang.String] = js.native
+        def render(context: js.Any, env: js.Any): js.Promise[java.lang.String] = js.native
+        def render(context: js.Any, env: js.Any, opts: js.Any): js.Promise[java.lang.String] = js.native
+        def toc(): js.Promise[java.lang.String] = js.native
+        def toc(maxDepth: scala.Double): js.Promise[java.lang.String] = js.native
       }
       
       @js.native
@@ -288,24 +288,24 @@ object fractalNs extends js.Object {
         def isPage(file: java.lang.String): scala.Boolean = js.native
         def isTemplate(file: java.lang.String): scala.Boolean = js.native
         def pages(): this.type = js.native
-        def render(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File): stdLib.Promise[java.lang.String] = js.native
-        def render(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File, context: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def render(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File, context: js.Any, env: js.Any): stdLib.Promise[java.lang.String] = js.native
+        def render(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File): js.Promise[java.lang.String] = js.native
+        def render(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File, context: js.Any): js.Promise[java.lang.String] = js.native
+        def render(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File, context: js.Any, env: js.Any): js.Promise[java.lang.String] = js.native
         def render(
           page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File,
           context: js.Any,
           env: js.Any,
           opts: js.Object
-        ): stdLib.Promise[java.lang.String] = js.native
-        def render(page: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-        def render(page: java.lang.String, context: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def render(page: java.lang.String, context: js.Any, env: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def render(page: java.lang.String, context: js.Any, env: js.Any, opts: js.Object): stdLib.Promise[java.lang.String] = js.native
-        def renderString(str: java.lang.String, context: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def renderString(str: java.lang.String, context: js.Any, env: js.Any): stdLib.Promise[java.lang.String] = js.native
+        ): js.Promise[java.lang.String] = js.native
+        def render(page: java.lang.String): js.Promise[java.lang.String] = js.native
+        def render(page: java.lang.String, context: js.Any): js.Promise[java.lang.String] = js.native
+        def render(page: java.lang.String, context: js.Any, env: js.Any): js.Promise[java.lang.String] = js.native
+        def render(page: java.lang.String, context: js.Any, env: js.Any, opts: js.Object): js.Promise[java.lang.String] = js.native
+        def renderString(str: java.lang.String, context: js.Any): js.Promise[java.lang.String] = js.native
+        def renderString(str: java.lang.String, context: js.Any, env: js.Any): js.Promise[java.lang.String] = js.native
         def resolve(context: js.Any): js.Any = js.native
-        def toc(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File): stdLib.Promise[java.lang.String] = js.native
-        def toc(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File, maxDepth: scala.Double): stdLib.Promise[java.lang.String] = js.native
+        def toc(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File): js.Promise[java.lang.String] = js.native
+        def toc(page: atFrctlFractalLib.fractalMod.fractalNs.apiNs.filesNs.File, maxDepth: scala.Double): js.Promise[java.lang.String] = js.native
       }
       
       @js.native
@@ -348,10 +348,10 @@ object fractalNs extends js.Object {
         var path: java.lang.String
         var relPath: java.lang.String
         var stat: nodeLib.fsMod.Stats | scala.Null
-        def getContent(): stdLib.Promise[java.lang.String]
+        def getContent(): js.Promise[java.lang.String]
         def getContentSync(): java.lang.String
         def getContext(): js.Any
-        def read(): stdLib.Promise[java.lang.String]
+        def read(): js.Promise[java.lang.String]
         def readSync(): java.lang.String
         def toVinyl(): vinylLib.vinylMod.File
       }
@@ -415,13 +415,13 @@ object fractalNs extends js.Object {
         var viewPath: java.lang.String = js.native
         def component(): atFrctlFractalLib.fractalMod.fractalNs.apiNs.componentsNs.Component = js.native
         def defaultVariant(): this.type = js.native
-        def getContent(): stdLib.Promise[java.lang.String] = js.native
+        def getContent(): js.Promise[java.lang.String] = js.native
         def getContentSync(): java.lang.String = js.native
-        def getPreviewContent(): stdLib.Promise[java.lang.String] = js.native
-        def getPreviewContext(): stdLib.Promise[_] = js.native
-        def render(context: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def render(context: js.Any, env: js.Any): stdLib.Promise[java.lang.String] = js.native
-        def render(context: js.Any, env: js.Any, opts: js.Any): stdLib.Promise[java.lang.String] = js.native
+        def getPreviewContent(): js.Promise[java.lang.String] = js.native
+        def getPreviewContext(): js.Promise[_] = js.native
+        def render(context: js.Any): js.Promise[java.lang.String] = js.native
+        def render(context: js.Any, env: js.Any): js.Promise[java.lang.String] = js.native
+        def render(context: js.Any, env: js.Any, opts: js.Any): js.Promise[java.lang.String] = js.native
         def resources(): atFrctlFractalLib.fractalMod.fractalNs.apiNs.assetsNs.AssetCollection = js.native
         def resourcesJSON(): js.Object = js.native
         def variant(): this.type = js.native
@@ -433,8 +433,8 @@ object fractalNs extends js.Object {
         val referencedBy: js.Array[_] = js.native
         val references: js.Array[_] = js.native
         def default(): Variant = js.native
-        def getCOllatedContext(): stdLib.Promise[_] = js.native
-        def getCollatedContent(): stdLib.Promise[java.lang.String] = js.native
+        def getCOllatedContext(): js.Promise[_] = js.native
+        def getCollatedContent(): js.Promise[java.lang.String] = js.native
         def getCollatedContentSync(): java.lang.String = js.native
       }
       
@@ -558,7 +558,7 @@ object fractalNs extends js.Object {
         val status: atFrctlFractalLib.fractalMod.fractalNs.coreNs.StatusInfo = js.native
         def getContext(): js.Any = js.native
         def getResolvedContext(): js.Any = js.native
-        def hasContext(): stdLib.Promise[scala.Boolean] = js.native
+        def hasContext(): js.Promise[scala.Boolean] = js.native
         def setContext(data: js.Any): scala.Unit = js.native
       }
       
@@ -698,9 +698,9 @@ object fractalNs extends js.Object {
         val title: java.lang.String = js.native
         def exists(): scala.Boolean = js.native
         def isConfig(file: java.lang.String): scala.Boolean = js.native
-        def load(): stdLib.Promise[this.type] = js.native
-        def load(force: scala.Boolean): stdLib.Promise[this.type] = js.native
-        def refresh(): stdLib.Promise[this.type] = js.native
+        def load(): js.Promise[this.type] = js.native
+        def load(force: scala.Boolean): js.Promise[this.type] = js.native
+        def refresh(): js.Promise[this.type] = js.native
         def unwatch(): scala.Unit = js.native
         def watch(): scala.Unit = js.native
       }
@@ -718,8 +718,8 @@ object fractalNs extends js.Object {
       /**
                    * @deprecated Use start() instead.
                    */
-      def build(): stdLib.Promise[atFrctlFractalLib.Anon_ErrorCount] = js.native
-      def start(): stdLib.Promise[atFrctlFractalLib.Anon_ErrorCount] = js.native
+      def build(): js.Promise[atFrctlFractalLib.Anon_ErrorCount] = js.native
+      def start(): js.Promise[atFrctlFractalLib.Anon_ErrorCount] = js.native
       def stop(): scala.Unit = js.native
       def use(): scala.Unit = js.native
     }
@@ -732,8 +732,8 @@ object fractalNs extends js.Object {
       val ports: atFrctlFractalLib.Anon_SyncServer = js.native
       val url: js.UndefOr[java.lang.String] = js.native
       val urls: atFrctlFractalLib.Anon_Sync = js.native
-      def start(): stdLib.Promise[nodeLib.httpMod.Server] = js.native
-      def start(sync: scala.Boolean): stdLib.Promise[nodeLib.httpMod.Server] = js.native
+      def start(): js.Promise[nodeLib.httpMod.Server] = js.native
+      def start(sync: scala.Boolean): js.Promise[nodeLib.httpMod.Server] = js.native
       def stop(): scala.Unit = js.native
       def use(mount: java.lang.String, middleware: js.Any): scala.Unit = js.native
     }

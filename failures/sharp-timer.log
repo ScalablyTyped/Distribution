@@ -1,4 +1,4 @@
-[error] PhaseRes.scala:75 Caught exception [id => sharp-timer, phase => typescript] java.lang.RuntimeException: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/sharp-timer/tsconfig.json: io.circe.ParsingFailure: expected " got / (line 7, column 150)
+[error] PhaseRes.scala:75 Caught exception: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/sharp-timer/tsconfig.json: io.circe.ParsingFailure: expected " got / (line 7, column 150) [id => sharp-timer, phase => typescript] java.lang.RuntimeException: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/sharp-timer/tsconfig.json: io.circe.ParsingFailure: expected " got / (line 7, column 150)
 	at scala.sys.package$.error(package.scala:26)
 	at com.olvind.tso.importer.Json$.apply(Json.scala:12)
 	at com.olvind.tso.importer.Json$.opt(Json.scala:17)

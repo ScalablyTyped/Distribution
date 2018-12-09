@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait IHttpClientResponse extends js.Object {
   var message: nodeLib.httpMod.IncomingMessage
-  def readBody(): stdLib.Promise[java.lang.String]
+  def readBody(): js.Promise[java.lang.String]
 }
 

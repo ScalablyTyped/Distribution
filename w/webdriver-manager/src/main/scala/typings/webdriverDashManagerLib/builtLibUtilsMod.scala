@@ -22,22 +22,22 @@ object builtLibUtilsMod extends js.Object {
     /* opts */ js.UndefOr[nodeLib.childUnderscoreProcessMod.SpawnSyncOptions], 
     nodeLib.childUnderscoreProcessMod.SpawnSyncReturns[js.Any]
   ] = js.native
-  def adb(sdkPath: java.lang.String, port: scala.Double, command: java.lang.String, timeout: scala.Double): stdLib.Promise[java.lang.String] = js.native
+  def adb(sdkPath: java.lang.String, port: scala.Double, command: java.lang.String, timeout: scala.Double): js.Promise[java.lang.String] = js.native
   def adb(
     sdkPath: java.lang.String,
     port: scala.Double,
     command: java.lang.String,
     timeout: scala.Double,
     args: js.Array[java.lang.String]
-  ): stdLib.Promise[java.lang.String] = js.native
-  def request(method: java.lang.String, port: java.lang.String, path: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-  def request(method: java.lang.String, port: java.lang.String, path: java.lang.String, timeout: scala.Double): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
+  def request(method: java.lang.String, port: java.lang.String, path: java.lang.String): js.Promise[java.lang.String] = js.native
+  def request(method: java.lang.String, port: java.lang.String, path: java.lang.String, timeout: scala.Double): js.Promise[java.lang.String] = js.native
   def request(
     method: java.lang.String,
     port: java.lang.String,
     path: java.lang.String,
     timeout: scala.Double,
     data: js.Any
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
 }
 

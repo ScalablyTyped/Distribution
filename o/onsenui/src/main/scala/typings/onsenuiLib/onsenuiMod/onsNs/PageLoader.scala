@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
    */
 
 trait PageLoader extends js.Object {
-  var internalLoader: js.Function
-  def load(options: onsenuiLib.Anon_Page, done: js.Function): scala.Unit
+  var internalLoader: coreDashJsLib.Function
+  def load(options: onsenuiLib.Anon_Page, done: coreDashJsLib.Function): scala.Unit
 }
 

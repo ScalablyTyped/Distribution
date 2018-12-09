@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ApplicationFees
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def createRefund(feeId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  def createRefund(feeId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def createRefund(
     feeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefundCreationOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   /**
                * Refunds an application fee that has previously been collected but not yet refunded. Funds will be refunded to the Stripe account that
                * the fee was originally collected from.
@@ -26,7 +26,7 @@ trait ApplicationFees
     feeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefundCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   /**
                * Refunds an application fee that has previously been collected but not yet refunded. Funds will be refunded to the Stripe account that
                * the fee was originally collected from.
@@ -41,26 +41,26 @@ trait ApplicationFees
     data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefundCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def createRefund(
     feeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefundCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
-  def createRefund(feeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  def createRefund(feeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def createRefund(
     feeId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def createRefund(
     feeId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
-  def list(): stdLib.Promise[
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  def list(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
   ] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeListOptions): stdLib.Promise[
+  def list(data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
   ] = js.native
   /**
@@ -70,7 +70,7 @@ trait ApplicationFees
   def list(
     data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
   ] = js.native
   /**
@@ -83,7 +83,7 @@ trait ApplicationFees
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
   ] = js.native
   def list(
@@ -91,10 +91,10 @@ trait ApplicationFees
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
   ] = js.native
-  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
   ] = js.native
   def list(
@@ -102,20 +102,20 @@ trait ApplicationFees
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
   ] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
   ] = js.native
-  def listRefunds(feeId: java.lang.String): stdLib.Promise[
+  def listRefunds(feeId: java.lang.String): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
   ] = js.native
-  def listRefunds(feeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IListOptions): stdLib.Promise[
+  def listRefunds(feeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
   ] = js.native
   /**
@@ -127,7 +127,7 @@ trait ApplicationFees
     feeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
   ] = js.native
   /**
@@ -142,7 +142,7 @@ trait ApplicationFees
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
   ] = js.native
   def listRefunds(
@@ -151,10 +151,10 @@ trait ApplicationFees
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
   ] = js.native
-  def listRefunds(feeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def listRefunds(feeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
   ] = js.native
   def listRefunds(
@@ -163,7 +163,7 @@ trait ApplicationFees
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
   ] = js.native
   def listRefunds(
@@ -171,14 +171,14 @@ trait ApplicationFees
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
   ] = js.native
-  def refund(feeId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  def refund(feeId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def refund(
     feeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefundCreationOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   /**
                * Refunds an application fee that has previously been collected but not yet refunded. Funds will be refunded to the Stripe account that
                * the fee was originally collected from.
@@ -192,7 +192,7 @@ trait ApplicationFees
     feeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefundCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   /**
                * Refunds an application fee that has previously been collected but not yet refunded. Funds will be refunded to the Stripe account that
                * the fee was originally collected from.
@@ -207,23 +207,23 @@ trait ApplicationFees
     data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefundCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def refund(
     feeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefundCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
-  def refund(feeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  def refund(feeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def refund(
     feeId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def refund(
     feeId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
-  def retreiveRefund(feeId: java.lang.String, refundId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  def retreiveRefund(feeId: java.lang.String, refundId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   /**
                * By default, you can see the 10 most recent refunds stored directly on the application fee object, but you can also retrieve details
                * about a specific refund stored on the application fee.
@@ -232,7 +232,7 @@ trait ApplicationFees
     feeId: java.lang.String,
     refundId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   /**
                * By default, you can see the 10 most recent refunds stored directly on the application fee object, but you can also retrieve details
                * about a specific refund stored on the application fee.
@@ -242,14 +242,14 @@ trait ApplicationFees
     refundId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def retreiveRefund(
     feeId: java.lang.String,
     refundId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
-  def retrieve(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
-  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
+  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
   /**
                * Retrieves the details of an application fee that your account has collected. The same information is returned when refunding the
                * application fee.
@@ -258,7 +258,7 @@ trait ApplicationFees
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
   /**
                * Retrieves the details of an application fee that your account has collected. The same information is returned when refunding the
                * application fee.
@@ -268,23 +268,23 @@ trait ApplicationFees
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
   def retrieve(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
-  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
+  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
   def retrieve(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
   def retrieve(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
-  def updateRefund(feeId: java.lang.String, refundId: java.lang.String, data: stripeLib.Anon_Metadata): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee] = js.native
+  def updateRefund(feeId: java.lang.String, refundId: java.lang.String, data: stripeLib.Anon_Metadata): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   /**
                * Updates the specified application fee refund by setting the values of the parameters passed. Any parameters not provided will be left
                * unchanged.
@@ -296,7 +296,7 @@ trait ApplicationFees
     refundId: java.lang.String,
     data: stripeLib.Anon_Metadata,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   /**
                * Updates the specified application fee refund by setting the values of the parameters passed. Any parameters not provided will be left
                * unchanged.
@@ -309,12 +309,12 @@ trait ApplicationFees
     data: stripeLib.Anon_Metadata,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
   def updateRefund(
     feeId: java.lang.String,
     refundId: java.lang.String,
     data: stripeLib.Anon_Metadata,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFeeRefund] = js.native
 }
 

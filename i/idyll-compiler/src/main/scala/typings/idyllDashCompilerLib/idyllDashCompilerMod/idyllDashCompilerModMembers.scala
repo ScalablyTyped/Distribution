@@ -17,7 +17,7 @@ object idyllDashCompilerModMembers extends js.Object {
    * Otherwise, compile returns the AST synchronously
    *
    */
-  def default(input: java.lang.String): stdLib.Promise[AST] | AST = js.native
+  def default(input: java.lang.String): js.Promise[AST] | AST = js.native
   /**
    * Compiles the given idyllMarkup and returns an AST either synchronously
    * or asynchronously.
@@ -27,7 +27,7 @@ object idyllDashCompilerModMembers extends js.Object {
    * Otherwise, compile returns the AST synchronously
    *
    */
-  def default(input: java.lang.String, options: Options): stdLib.Promise[AST] | AST = js.native
+  def default(input: java.lang.String, options: Options): js.Promise[AST] | AST = js.native
   /**
    * Compiles the given idyllMarkup and returns an AST either synchronously
    * or asynchronously.
@@ -37,6 +37,6 @@ object idyllDashCompilerModMembers extends js.Object {
    * Otherwise, compile returns the AST synchronously
    *
    */
-  def default(input: java.lang.String, options: Options, callback: js.Function0[scala.Unit]): stdLib.Promise[AST] | AST = js.native
+  def default(input: java.lang.String, options: Options, callback: js.Function0[scala.Unit]): js.Promise[AST] | AST = js.native
 }
 

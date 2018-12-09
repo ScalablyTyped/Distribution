@@ -14,6 +14,6 @@ class default protected () extends BadRequestErrorMessageResult {
   /* CompleteClass */
   override var message: js.Any = js.native
   /* CompleteClass */
-  override def executeAsync(): stdLib.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage] = js.native
+  override def executeAsync(): js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage] = js.native
 }
 

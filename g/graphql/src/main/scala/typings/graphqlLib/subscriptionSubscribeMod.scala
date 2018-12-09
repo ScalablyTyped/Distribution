@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/subscription/subscribe", JSImport.Namespace)
 @js.native
 object subscriptionSubscribeMod extends js.Object {
-  def createSourceEventStream[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, document: graphqlLib.languageAstMod.DocumentNode): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def createSourceEventStream[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, document: graphqlLib.languageAstMod.DocumentNode): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any,
     variableValues: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
@@ -34,7 +34,7 @@ object subscriptionSubscribeMod extends js.Object {
     contextValue: js.Any,
     variableValues: ScalablyTyped.runtime.StringDictionary[js.Any],
     operationName: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String]
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
@@ -45,8 +45,8 @@ object subscriptionSubscribeMod extends js.Object {
     fieldResolver: graphqlLib.tsutilsMaybeMod.Maybe[
       graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
     ]
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
-  def subscribe[TData](args: graphqlLib.Anon_FieldResolver): stdLib.Promise[
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def subscribe[TData](args: graphqlLib.Anon_FieldResolver): js.Promise[
     stdLib.AsyncIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
   ] = js.native
   def subscribe[TData](
@@ -66,7 +66,7 @@ object subscriptionSubscribeMod extends js.Object {
         graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
       ]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stdLib.AsyncIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
   ] = js.native
 }

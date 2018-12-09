@@ -22,7 +22,7 @@ class namespaced[T] protected () extends PProgress[T] {
        *  If you set it yourself, it will simply be ignored.
        */
   def this(executor: js.Function3[
-      /* resolve */ js.Function1[/* value */ js.UndefOr[T | stdLib.PromiseLike[T]], scala.Unit], 
+      /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], scala.Unit], 
       /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
       /* progress */ js.Function1[/* progress */ scala.Double, scala.Unit], 
       scala.Unit

@@ -51,13 +51,13 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
        * resolved with either the doc(s) or rejected with the error.
        * Like .then(), but only takes a rejection handler.
        */
-  def `catch`[TRes](): stdLib.Promise[TRes] = js.native
+  def `catch`[TRes](): js.Promise[TRes] = js.native
   /**
        * Executes the query returning a Promise which will be
        * resolved with either the doc(s) or rejected with the error.
        * Like .then(), but only takes a rejection handler.
        */
-  def `catch`[TRes](reject: js.Function1[/* err */ js.Any, scala.Unit | TRes | stdLib.PromiseLike[TRes]]): stdLib.Promise[TRes] = js.native
+  def `catch`[TRes](reject: js.Function1[/* err */ js.Any, scala.Unit | TRes | js.Thenable[TRes]]): js.Promise[TRes] = js.native
   /**
        * DEPRECATED Alias for circle
        * Specifies a $center or $centerSphere condition.
@@ -207,13 +207,13 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   def estimatedDocumentCount(options: js.Any): Query[scala.Double] with QueryHelpers = js.native
   def estimatedDocumentCount(options: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ scala.Double, scala.Unit]): Query[scala.Double] with QueryHelpers = js.native
   /** Executes the query */
-  def exec(): stdLib.Promise[T] = js.native
+  def exec(): js.Promise[T] = js.native
   /** Executes the query */
-  def exec(callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]): stdLib.Promise[T] = js.native
-  def exec(operation: java.lang.String): stdLib.Promise[T] = js.native
-  def exec(operation: java.lang.String, callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]): stdLib.Promise[T] = js.native
-  def exec(operation: js.Function): stdLib.Promise[T] = js.native
-  def exec(operation: js.Function, callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]): stdLib.Promise[T] = js.native
+  def exec(callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]): js.Promise[T] = js.native
+  def exec(operation: java.lang.String): js.Promise[T] = js.native
+  def exec(operation: java.lang.String, callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]): js.Promise[T] = js.native
+  def exec(operation: js.Function): js.Promise[T] = js.native
+  def exec(operation: js.Function, callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]): js.Promise[T] = js.native
   /** Specifies an $exists condition */
   def exists(): this.type = js.native
   def exists(path: java.lang.String): this.type = js.native
@@ -899,14 +899,14 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
        */
   def tailable(bool: scala.Boolean, opts: mongooseLib.Anon_TailableRetryInterval): this.type = js.native
   /** Executes this query and returns a promise */
-  def `then`[TRes](): stdLib.Promise[TRes] = js.native
+  def `then`[TRes](): js.Promise[TRes] = js.native
   /** Executes this query and returns a promise */
-  def `then`[TRes](resolve: js.Function1[/* res */ T, scala.Unit | TRes | stdLib.PromiseLike[TRes]]): stdLib.Promise[TRes] = js.native
+  def `then`[TRes](resolve: js.Function1[/* res */ T, scala.Unit | TRes | js.Thenable[TRes]]): js.Promise[TRes] = js.native
   /** Executes this query and returns a promise */
   def `then`[TRes](
-    resolve: js.Function1[/* res */ T, scala.Unit | TRes | stdLib.PromiseLike[TRes]],
-    reject: js.Function1[/* err */ js.Any, scala.Unit | TRes | stdLib.PromiseLike[TRes]]
-  ): stdLib.Promise[TRes] = js.native
+    resolve: js.Function1[/* res */ T, scala.Unit | TRes | js.Thenable[TRes]],
+    reject: js.Function1[/* err */ js.Any, scala.Unit | TRes | js.Thenable[TRes]]
+  ): js.Promise[TRes] = js.native
   /**
        * Converts this query to a customized, reusable query
        * constructor with all arguments and options retained.

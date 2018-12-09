@@ -16,7 +16,7 @@ trait Future[A] extends js.Object {
   def filter(f: js.Function1[/* a */ A, scala.Boolean]): Future[A]
   def flatMap[B](f: js.Function1[/* a */ A, Future[B]]): Future[B]
   def foreach[B](f: js.Function1[/* a */ A, B]): scala.Unit
-  def getPromise(): stdLib.Promise[A]
+  def getPromise(): js.Promise[A]
   def isCompleted(): scala.Boolean
   def map[B](f: js.Function1[/* a */ A, B]): Future[B]
   def onComplete[B](f: js.Function1[/* t */ Try[A], B]): scala.Unit

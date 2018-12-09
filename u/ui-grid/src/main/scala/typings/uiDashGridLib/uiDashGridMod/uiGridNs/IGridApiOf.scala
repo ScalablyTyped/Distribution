@@ -109,7 +109,7 @@ trait IGridApiOf[TEntity] extends js.Object {
   def registerMethod(
     featureName: java.lang.String,
     methodName: java.lang.String,
-    callBackFn: js.Function,
+    callBackFn: angularLib.angularMod.Global.Function,
     _this: js.Any
   ): scala.Unit = js.native
   /**
@@ -127,7 +127,10 @@ trait IGridApiOf[TEntity] extends js.Object {
            *                      These must be the same functions that were used in the .on.eventName method
            * @param callBackFn function to execute
            */
-  def suppressEvents(listenerFuncs: js.Array[js.Function], callBackFn: js.Function): scala.Unit = js.native
+  def suppressEvents(
+    listenerFuncs: angularLib.angularMod.Global.Function,
+    callBackFn: angularLib.angularMod.Global.Function
+  ): scala.Unit = js.native
   /**
            * Used to execute a function while disabling the specified event listeners.
            * Disables the listenerFunctions, executes the callbackFn, and then enables the listenerFunctions again
@@ -135,6 +138,9 @@ trait IGridApiOf[TEntity] extends js.Object {
            *                      These must be the same functions that were used in the .on.eventName method
            * @param callBackFn function to execute
            */
-  def suppressEvents(listenerFuncs: js.Function, callBackFn: js.Function): scala.Unit = js.native
+  def suppressEvents(
+    listenerFuncs: js.Array[angularLib.angularMod.Global.Function],
+    callBackFn: angularLib.angularMod.Global.Function
+  ): scala.Unit = js.native
 }
 

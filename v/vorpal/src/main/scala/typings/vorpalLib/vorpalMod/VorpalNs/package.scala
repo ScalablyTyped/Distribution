@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object VorpalNs {
-  type Action = js.Function1[/* args */ Args, stdLib.Promise[scala.Unit]]
+  type Action = js.Function1[/* args */ Args, js.Promise[scala.Unit]]
   type Cancel = js.Function0[scala.Unit]
   type Catch = Command
 }

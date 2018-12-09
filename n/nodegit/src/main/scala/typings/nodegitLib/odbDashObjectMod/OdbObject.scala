@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OdbObject () extends js.Object {
   def data(): nodeLib.Buffer = js.native
-  def dup(): stdLib.Promise[OdbObject] = js.native
+  def dup(): js.Promise[OdbObject] = js.native
   def free(): scala.Unit = js.native
   def id(): nodegitLib.oidMod.Oid = js.native
   def size(): scala.Double = js.native

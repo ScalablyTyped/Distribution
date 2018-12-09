@@ -21,11 +21,11 @@ trait BaseOperationRecord extends Record {
   var transaction_Original: CallFunction[TransactionRecord] = js.native
   var `type`: java.lang.String = js.native
   var type_i: scala.Double = js.native
-  def effects(): stdLib.Promise[CollectionRecord[EffectRecord]] = js.native
-  def effects(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[EffectRecord]] = js.native
-  def precedes(): stdLib.Promise[OperationRecord] = js.native
-  def self(): stdLib.Promise[OperationRecord] = js.native
-  def succeeds(): stdLib.Promise[OperationRecord] = js.native
-  def transaction(): stdLib.Promise[TransactionRecord] = js.native
+  def effects(): js.Promise[CollectionRecord[EffectRecord]] = js.native
+  def effects(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[EffectRecord]] = js.native
+  def precedes(): js.Promise[OperationRecord] = js.native
+  def self(): js.Promise[OperationRecord] = js.native
+  def succeeds(): js.Promise[OperationRecord] = js.native
+  def transaction(): js.Promise[TransactionRecord] = js.native
 }
 

@@ -11,7 +11,7 @@ package object libTypesMod {
     /* request */ xhrDashMockLib.libMockRequestMod.default, 
     /* response */ xhrDashMockLib.libMockResponseMod.default, 
     js.UndefOr[
-      xhrDashMockLib.libMockResponseMod.default | stdLib.Promise[js.UndefOr[xhrDashMockLib.libMockResponseMod.default]]
+      xhrDashMockLib.libMockResponseMod.default | js.Promise[js.UndefOr[xhrDashMockLib.libMockResponseMod.default]]
     ]
   ]
 }

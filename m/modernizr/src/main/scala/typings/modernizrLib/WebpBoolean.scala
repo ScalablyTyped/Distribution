@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Boolean */ 
-trait WebpBoolean extends js.Object {
+
+trait WebpBoolean
+  extends stdLib.Boolean {
   var alpha: scala.Boolean
   var animation: scala.Boolean
   var lossless: scala.Boolean

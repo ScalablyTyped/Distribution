@@ -21,7 +21,7 @@ package object BluebirdNs {
   type OperationalError = stdLib.Error
   type ResolvableProps[T] = js.Object with bluebirdDashLstLib.bluebirdDashLstLibStrings.ResolvableProps with T
   /** @deprecated Use PromiseLike<T> directly. */
-  type Thenable[T] = stdLib.PromiseLike[T]
+  type Thenable[T] = js.Thenable[T]
   /**
      * Signals that an operation has timed out. Used as a custom cancellation reason in `.timeout`.
      */

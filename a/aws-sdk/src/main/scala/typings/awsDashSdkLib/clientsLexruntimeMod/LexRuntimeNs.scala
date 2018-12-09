@@ -105,7 +105,7 @@ object LexRuntimeNs extends js.Object {
     /**
          * The text used to process the request. If the input was an audio stream, the inputTranscript field contains the text extracted from the audio stream. This is the text that is actually processed to recognize intents and slot values. You can use this information to determine if Amazon Lex is correctly processing the audio that you send.
          */
-    var inputTranscript: js.UndefOr[java.lang.String] = js.undefined
+    var inputTranscript: js.UndefOr[String] = js.undefined
     /**
          * Current user intent that Amazon Lex is aware of.
          */
@@ -121,15 +121,15 @@ object LexRuntimeNs extends js.Object {
     /**
          *  Map of key/value pairs representing the session-specific context information. 
          */
-    var sessionAttributes: js.UndefOr[java.lang.String] = js.undefined
+    var sessionAttributes: js.UndefOr[String] = js.undefined
     /**
          *  If the dialogState value is ElicitSlot, returns the name of the slot for which Amazon Lex is eliciting a value. 
          */
-    var slotToElicit: js.UndefOr[java.lang.String] = js.undefined
+    var slotToElicit: js.UndefOr[String] = js.undefined
     /**
          * Map of zero or more intent slots (name/value pairs) Amazon Lex detected from the user input during the conversation. Amazon Lex creates a resolution list containing likely values for a slot. The value that it returns is determined by the valueSelectionStrategy selected when the slot type was created or updated. If valueSelectionStrategy is set to ORIGINAL_VALUE, the value provided by the user is returned, if the user value is similar to the slot values. If valueSelectionStrategy is set to TOP_RESOLUTION Amazon Lex returns the first value in the resolution list or, if there is no resolution list, null. If you don't specify a valueSelectionStrategy, the default is ORIGINAL_VALUE.
          */
-    var slots: js.UndefOr[java.lang.String] = js.undefined
+    var slots: js.UndefOr[String] = js.undefined
   }
   
   
@@ -189,7 +189,7 @@ object LexRuntimeNs extends js.Object {
     /**
          * If the dialogState value is ElicitSlot, returns the name of the slot for which Amazon Lex is eliciting a value. 
          */
-    var slotToElicit: js.UndefOr[java.lang.String] = js.undefined
+    var slotToElicit: js.UndefOr[String] = js.undefined
     /**
          *  The intent slots that Amazon Lex detected from the user input in the conversation.  Amazon Lex creates a resolution list containing likely values for a slot. The value that it returns is determined by the valueSelectionStrategy selected when the slot type was created or updated. If valueSelectionStrategy is set to ORIGINAL_VALUE, the value provided by the user is returned, if the user value is similar to the slot values. If valueSelectionStrategy is set to TOP_RESOLUTION Amazon Lex returns the first value in the resolution list or, if there is no resolution list, null. If you don't specify a valueSelectionStrategy, the default is ORIGINAL_VALUE.
          */
@@ -209,12 +209,12 @@ object LexRuntimeNs extends js.Object {
     /**
          * The version of the response card format.
          */
-    var version: js.UndefOr[java.lang.String] = js.undefined
+    var version: js.UndefOr[String] = js.undefined
   }
   
   
   trait StringMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   @js.native
   trait Types

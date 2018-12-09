@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object pDashLocateModMembers extends js.Object {
   def apply[T](
-    input: stdLib.Iterable[stdLib.PromiseLike[T] | T],
-    tester: js.Function1[/* element */ T, stdLib.Promise[scala.Boolean] | scala.Boolean]
-  ): stdLib.Promise[js.UndefOr[T]] = js.native
+    input: stdLib.Iterable[js.Thenable[T] | T],
+    tester: js.Function1[/* element */ T, js.Promise[scala.Boolean] | scala.Boolean]
+  ): js.Promise[js.UndefOr[T]] = js.native
   def apply[T](
-    input: stdLib.Iterable[stdLib.PromiseLike[T] | T],
-    tester: js.Function1[/* element */ T, stdLib.Promise[scala.Boolean] | scala.Boolean],
+    input: stdLib.Iterable[js.Thenable[T] | T],
+    tester: js.Function1[/* element */ T, js.Promise[scala.Boolean] | scala.Boolean],
     options: pDashLocateLib.pDashLocateMod.pLocateNs.Options
-  ): stdLib.Promise[js.UndefOr[T]] = js.native
+  ): js.Promise[js.UndefOr[T]] = js.native
 }
 

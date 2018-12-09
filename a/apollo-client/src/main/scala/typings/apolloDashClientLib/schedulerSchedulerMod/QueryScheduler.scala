@@ -29,7 +29,7 @@ class QueryScheduler[TCacheShape] protected () extends js.Object {
     queryId: java.lang.String,
     options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables],
     fetchType: apolloDashClientLib.coreTypesMod.FetchType
-  ): stdLib.Promise[js.Object] = js.native
+  ): js.Promise[js.Object] = js.native
   def registerPollingQuery[T](
     queryOptions: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
   ): apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables] = js.native

@@ -13,7 +13,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotPagespeedonlineLib.gapiDotClientDotPagespeedonlineLibStrings.pagespeedonline,
     version: gapiDotClientDotPagespeedonlineLib.gapiDotClientDotPagespeedonlineLibStrings.v2
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotPagespeedonlineLib.gapiDotClientDotPagespeedonlineLibStrings.pagespeedonline,
     version: gapiDotClientDotPagespeedonlineLib.gapiDotClientDotPagespeedonlineLibStrings.v2,

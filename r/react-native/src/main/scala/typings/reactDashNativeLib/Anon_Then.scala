@@ -12,7 +12,7 @@ trait Anon_Then extends js.Object {
   var `then`: js.Function2[
     /* onfulfilled */ js.UndefOr[js.Function0[_]], 
     /* onrejected */ js.UndefOr[js.Function0[_]], 
-    stdLib.Promise[_]
+    js.Promise[_]
   ]
 }
 

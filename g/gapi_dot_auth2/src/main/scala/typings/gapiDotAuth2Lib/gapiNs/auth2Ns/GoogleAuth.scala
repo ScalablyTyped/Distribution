@@ -31,26 +31,26 @@ class GoogleAuth () extends js.Object {
   /**
        * Get permission from the user to access the specified scopes offline.
        */
-  def grantOfflineAccess(): stdLib.Promise[gapiDotAuth2Lib.Anon_Code] = js.native
+  def grantOfflineAccess(): js.Promise[gapiDotAuth2Lib.Anon_Code] = js.native
   /**
        * Get permission from the user to access the specified scopes offline.
        */
-  def grantOfflineAccess(options: OfflineAccessOptions): stdLib.Promise[gapiDotAuth2Lib.Anon_Code] = js.native
+  def grantOfflineAccess(options: OfflineAccessOptions): js.Promise[gapiDotAuth2Lib.Anon_Code] = js.native
   /**
        * Signs in the user using the specified options.
        * If no option specified here, fallback to the options specified to gapi.auth2.init().
        */
-  def signIn(): stdLib.Promise[GoogleUser] = js.native
+  def signIn(): js.Promise[GoogleUser] = js.native
   /**
        * Signs in the user using the specified options.
        * If no option specified here, fallback to the options specified to gapi.auth2.init().
        */
-  def signIn(options: SigninOptions): stdLib.Promise[GoogleUser] = js.native
+  def signIn(options: SigninOptions): js.Promise[GoogleUser] = js.native
   /**
        * Signs in the user using the specified options.
        * If no option specified here, fallback to the options specified to gapi.auth2.init().
        */
-  def signIn(options: SigninOptionsBuilder): stdLib.Promise[GoogleUser] = js.native
+  def signIn(options: SigninOptionsBuilder): js.Promise[GoogleUser] = js.native
   /**
        * Signs out all accounts from the application.
        */

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Boolean */ 
-trait DatauriBoolean extends js.Object {
+
+trait DatauriBoolean
+  extends stdLib.Boolean {
   var over32kb: scala.Boolean
 }
 

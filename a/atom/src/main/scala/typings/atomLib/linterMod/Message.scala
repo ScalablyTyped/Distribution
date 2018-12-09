@@ -12,7 +12,7 @@ trait Message extends js.Object {
        *  do things like HTTP requests.
        */
   var description: js.UndefOr[
-    java.lang.String | (js.Function0[stdLib.Promise[java.lang.String] | java.lang.String])
+    java.lang.String | (js.Function0[js.Promise[java.lang.String] | java.lang.String])
   ] = js.undefined
   /** The text for the message. */
   var excerpt: java.lang.String

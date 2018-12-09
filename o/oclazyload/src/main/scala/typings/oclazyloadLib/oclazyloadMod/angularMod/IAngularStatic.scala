@@ -42,7 +42,7 @@ trait IAngularStatic extends js.Object {
   def module(
     name: java.lang.String,
     requires: js.Array[java.lang.String | oclazyloadLib.oclazyloadMod.IModuleConfig],
-    configFn: js.Function
+    configFn: angularLib.angularMod.Global.Function
   ): angularLib.angularMod.angularNs.IModule = js.native
 }
 

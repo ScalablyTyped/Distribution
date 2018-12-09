@@ -30,9 +30,9 @@ class namespaced () extends Serverless {
   /* CompleteClass */
   override def getVersion(): java.lang.String = js.native
   /* CompleteClass */
-  override def init(): stdLib.Promise[_] = js.native
+  override def init(): js.Promise[_] = js.native
   /* CompleteClass */
-  override def run(): stdLib.Promise[_] = js.native
+  override def run(): js.Promise[_] = js.native
   /* CompleteClass */
   override def setProvider(name: java.lang.String, provider: serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced): scala.Null = js.native
 }

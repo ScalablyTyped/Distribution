@@ -57,11 +57,11 @@ trait WaveSurfer
   ): scala.Unit = js.native
   def loadBlob(url: stdLib.Blob): scala.Unit = js.native
   def loadBlob(url: stdLib.File): scala.Unit = js.native
-  def pause(): js.UndefOr[stdLib.Promise[scala.Unit]] = js.native
-  def play(): js.UndefOr[stdLib.Promise[scala.Unit]] = js.native
-  def play(start: scala.Double): js.UndefOr[stdLib.Promise[scala.Unit]] = js.native
-  def play(start: scala.Double, end: scala.Double): js.UndefOr[stdLib.Promise[scala.Unit]] = js.native
-  def playPause(): js.UndefOr[stdLib.Promise[scala.Unit]] = js.native
+  def pause(): js.UndefOr[js.Promise[scala.Unit]] = js.native
+  def play(): js.UndefOr[js.Promise[scala.Unit]] = js.native
+  def play(start: scala.Double): js.UndefOr[js.Promise[scala.Unit]] = js.native
+  def play(start: scala.Double, end: scala.Double): js.UndefOr[js.Promise[scala.Unit]] = js.native
+  def playPause(): js.UndefOr[js.Promise[scala.Unit]] = js.native
   def seekAndCenter(progress: scala.Double): scala.Unit = js.native
   def seekTo(progress: scala.Double): scala.Unit = js.native
   def setHeight(height: scala.Double): scala.Unit = js.native

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class default protected () extends KeenTracking {
   def this(options: keenDashTrackingLib.Anon_WriteKey) = this()
   /* CompleteClass */
-  override def recordEvent(collectionName: java.lang.String, event: js.Object): stdLib.Promise[keenDashTrackingLib.Anon_Created] = js.native
+  override def recordEvent(collectionName: java.lang.String, event: js.Object): js.Promise[keenDashTrackingLib.Anon_Created] = js.native
   /* CompleteClass */
-  override def recordEvents(events: ScalablyTyped.runtime.StringDictionary[js.Array[js.Object]]): stdLib.Promise[ScalablyTyped.runtime.StringDictionary[js.Array[scala.Boolean]]] = js.native
+  override def recordEvents(events: ScalablyTyped.runtime.StringDictionary[js.Array[js.Object]]): js.Promise[ScalablyTyped.runtime.StringDictionary[js.Array[scala.Boolean]]] = js.native
 }
 

@@ -16,14 +16,14 @@ class Pool[T] ()
   var pending: scala.Double = js.native
   var size: scala.Double = js.native
   var spareResourceCapacity: scala.Double = js.native
-  def acquire(): stdLib.PromiseLike[T] = js.native
-  def acquire(priority: scala.Double): stdLib.PromiseLike[T] = js.native
-  def clear(): stdLib.PromiseLike[scala.Unit] = js.native
-  def destroy(resource: T): stdLib.PromiseLike[scala.Unit] = js.native
-  def drain(): stdLib.PromiseLike[scala.Unit] = js.native
+  def acquire(): js.Thenable[T] = js.native
+  def acquire(priority: scala.Double): js.Thenable[T] = js.native
+  def clear(): js.Thenable[scala.Unit] = js.native
+  def destroy(resource: T): js.Thenable[scala.Unit] = js.native
+  def drain(): js.Thenable[scala.Unit] = js.native
   def isBorrowedResource(resource: T): scala.Boolean = js.native
-  def release(resource: T): stdLib.PromiseLike[scala.Unit] = js.native
+  def release(resource: T): js.Thenable[scala.Unit] = js.native
   def start(): scala.Unit = js.native
-  def use[U](cb: js.Function1[/* resource */ T, U]): stdLib.PromiseLike[U] = js.native
+  def use[U](cb: js.Function1[/* resource */ T, U]): js.Thenable[U] = js.native
 }
 

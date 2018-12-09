@@ -188,7 +188,7 @@ class Observable[T] () extends js.Object {
            * @param currentTarget defines he current object in the bubbling phase
            * @returns {Promise<T>} will return a Promise than resolves when all callbacks executed successfully.
            */
-  def notifyObserversWithPromise(eventData: T): stdLib.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T): js.Promise[T] = js.native
   /**
            * Calling this will execute each callback, expecting it to be a promise or return a value.
            * If at any point in the chain one function fails, the promise will fail and the execution will not continue.
@@ -202,7 +202,7 @@ class Observable[T] () extends js.Object {
            * @param currentTarget defines he current object in the bubbling phase
            * @returns {Promise<T>} will return a Promise than resolves when all callbacks executed successfully.
            */
-  def notifyObserversWithPromise(eventData: T, mask: scala.Double): stdLib.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: scala.Double): js.Promise[T] = js.native
   /**
            * Calling this will execute each callback, expecting it to be a promise or return a value.
            * If at any point in the chain one function fails, the promise will fail and the execution will not continue.
@@ -216,7 +216,7 @@ class Observable[T] () extends js.Object {
            * @param currentTarget defines he current object in the bubbling phase
            * @returns {Promise<T>} will return a Promise than resolves when all callbacks executed successfully.
            */
-  def notifyObserversWithPromise(eventData: T, mask: scala.Double, target: js.Any): stdLib.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: scala.Double, target: js.Any): js.Promise[T] = js.native
   /**
            * Calling this will execute each callback, expecting it to be a promise or return a value.
            * If at any point in the chain one function fails, the promise will fail and the execution will not continue.
@@ -230,7 +230,7 @@ class Observable[T] () extends js.Object {
            * @param currentTarget defines he current object in the bubbling phase
            * @returns {Promise<T>} will return a Promise than resolves when all callbacks executed successfully.
            */
-  def notifyObserversWithPromise(eventData: T, mask: scala.Double, target: js.Any, currentTarget: js.Any): stdLib.Promise[T] = js.native
+  def notifyObserversWithPromise(eventData: T, mask: scala.Double, target: js.Any, currentTarget: js.Any): js.Promise[T] = js.native
   /**
            * Remove an Observer from the Observable object
            * @param observer the instance of the Observer to remove

@@ -5225,7 +5225,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpDo(path: java.lang.String): stdLib.Promise[_] = js.native
+  def httpDo(path: java.lang.String): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP request. If data type
        *   is not specified, p5 will try to guess based on
@@ -5252,7 +5252,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpDo(path: java.lang.String, method: java.lang.String): stdLib.Promise[_] = js.native
+  def httpDo(path: java.lang.String, method: java.lang.String): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP request. If data type
        *   is not specified, p5 will try to guess based on
@@ -5279,7 +5279,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpDo(path: java.lang.String, method: java.lang.String, datatype: java.lang.String): stdLib.Promise[_] = js.native
+  def httpDo(path: java.lang.String, method: java.lang.String, datatype: java.lang.String): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP request. If data type
        *   is not specified, p5 will try to guess based on
@@ -5306,7 +5306,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpDo(path: java.lang.String, method: java.lang.String, datatype: java.lang.String, data: js.Object): stdLib.Promise[_] = js.native
+  def httpDo(path: java.lang.String, method: java.lang.String, datatype: java.lang.String, data: js.Object): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP request. If data type
        *   is not specified, p5 will try to guess based on
@@ -5339,7 +5339,7 @@ trait p5InstanceExtensions extends js.Object {
     datatype: java.lang.String,
     data: js.Object,
     callback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP request. If data type
        *   is not specified, p5 will try to guess based on
@@ -5373,7 +5373,7 @@ trait p5InstanceExtensions extends js.Object {
     data: js.Object,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP request. If data type
        *   is not specified, p5 will try to guess based on
@@ -5394,7 +5394,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpDo(path: java.lang.String, options: js.Object): stdLib.Promise[_] = js.native
+  def httpDo(path: java.lang.String, options: js.Object): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP request. If data type
        *   is not specified, p5 will try to guess based on
@@ -5415,7 +5415,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpDo(path: java.lang.String, options: js.Object, callback: js.Function1[/* repeated */js.Any, _]): stdLib.Promise[_] = js.native
+  def httpDo(path: java.lang.String, options: js.Object, callback: js.Function1[/* repeated */js.Any, _]): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP request. If data type
        *   is not specified, p5 will try to guess based on
@@ -5441,7 +5441,7 @@ trait p5InstanceExtensions extends js.Object {
     options: js.Object,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5465,7 +5465,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpGet(path: java.lang.String): stdLib.Promise[_] = js.native
+  def httpGet(path: java.lang.String): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5483,7 +5483,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpGet(path: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): stdLib.Promise[_] = js.native
+  def httpGet(path: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5505,7 +5505,7 @@ trait p5InstanceExtensions extends js.Object {
     path: java.lang.String,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5524,7 +5524,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpGet(path: java.lang.String, data: js.Object): stdLib.Promise[_] = js.native
+  def httpGet(path: java.lang.String, data: js.Object): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5543,7 +5543,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpGet(path: java.lang.String, data: js.Object, callback: js.Function1[/* repeated */js.Any, _]): stdLib.Promise[_] = js.native
+  def httpGet(path: java.lang.String, data: js.Object, callback: js.Function1[/* repeated */js.Any, _]): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5567,7 +5567,7 @@ trait p5InstanceExtensions extends js.Object {
     data: js.Object,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5586,7 +5586,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpGet(path: java.lang.String, data: scala.Boolean): stdLib.Promise[_] = js.native
+  def httpGet(path: java.lang.String, data: scala.Boolean): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5605,7 +5605,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpGet(path: java.lang.String, data: scala.Boolean, callback: js.Function1[/* repeated */js.Any, _]): stdLib.Promise[_] = js.native
+  def httpGet(path: java.lang.String, data: scala.Boolean, callback: js.Function1[/* repeated */js.Any, _]): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5629,7 +5629,7 @@ trait p5InstanceExtensions extends js.Object {
     data: scala.Boolean,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5653,7 +5653,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpGet(path: java.lang.String, datatype: java.lang.String): stdLib.Promise[_] = js.native
+  def httpGet(path: java.lang.String, datatype: java.lang.String): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5677,7 +5677,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpGet(path: java.lang.String, datatype: java.lang.String, data: js.Object): stdLib.Promise[_] = js.native
+  def httpGet(path: java.lang.String, datatype: java.lang.String, data: js.Object): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5706,7 +5706,7 @@ trait p5InstanceExtensions extends js.Object {
     datatype: java.lang.String,
     data: js.Object,
     callback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5736,7 +5736,7 @@ trait p5InstanceExtensions extends js.Object {
     data: js.Object,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5760,7 +5760,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpGet(path: java.lang.String, datatype: java.lang.String, data: scala.Boolean): stdLib.Promise[_] = js.native
+  def httpGet(path: java.lang.String, datatype: java.lang.String, data: scala.Boolean): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5789,7 +5789,7 @@ trait p5InstanceExtensions extends js.Object {
     datatype: java.lang.String,
     data: scala.Boolean,
     callback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP GET request. If data
        *   type is not specified, p5 will try to guess based
@@ -5819,7 +5819,7 @@ trait p5InstanceExtensions extends js.Object {
     data: scala.Boolean,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5839,7 +5839,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpPost(path: java.lang.String): stdLib.Promise[_] = js.native
+  def httpPost(path: java.lang.String): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5853,7 +5853,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpPost(path: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): stdLib.Promise[_] = js.native
+  def httpPost(path: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5871,7 +5871,7 @@ trait p5InstanceExtensions extends js.Object {
     path: java.lang.String,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5886,7 +5886,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpPost(path: java.lang.String, data: js.Object): stdLib.Promise[_] = js.native
+  def httpPost(path: java.lang.String, data: js.Object): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5901,7 +5901,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpPost(path: java.lang.String, data: js.Object, callback: js.Function1[/* repeated */js.Any, _]): stdLib.Promise[_] = js.native
+  def httpPost(path: java.lang.String, data: js.Object, callback: js.Function1[/* repeated */js.Any, _]): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5921,7 +5921,7 @@ trait p5InstanceExtensions extends js.Object {
     data: js.Object,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5936,7 +5936,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpPost(path: java.lang.String, data: scala.Boolean): stdLib.Promise[_] = js.native
+  def httpPost(path: java.lang.String, data: scala.Boolean): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5951,7 +5951,7 @@ trait p5InstanceExtensions extends js.Object {
        *   there is an error, response is passed in as first
        *   argument
        */
-  def httpPost(path: java.lang.String, data: scala.Boolean, callback: js.Function1[/* repeated */js.Any, _]): stdLib.Promise[_] = js.native
+  def httpPost(path: java.lang.String, data: scala.Boolean, callback: js.Function1[/* repeated */js.Any, _]): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5971,7 +5971,7 @@ trait p5InstanceExtensions extends js.Object {
     data: scala.Boolean,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -5991,7 +5991,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpPost(path: java.lang.String, datatype: java.lang.String): stdLib.Promise[_] = js.native
+  def httpPost(path: java.lang.String, datatype: java.lang.String): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -6011,7 +6011,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpPost(path: java.lang.String, datatype: java.lang.String, data: js.Object): stdLib.Promise[_] = js.native
+  def httpPost(path: java.lang.String, datatype: java.lang.String, data: js.Object): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -6036,7 +6036,7 @@ trait p5InstanceExtensions extends js.Object {
     datatype: java.lang.String,
     data: js.Object,
     callback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -6062,7 +6062,7 @@ trait p5InstanceExtensions extends js.Object {
     data: js.Object,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -6082,7 +6082,7 @@ trait p5InstanceExtensions extends js.Object {
        *   the operation completes successfully or rejects
        *   with the error after one occurs.
        */
-  def httpPost(path: java.lang.String, datatype: java.lang.String, data: scala.Boolean): stdLib.Promise[_] = js.native
+  def httpPost(path: java.lang.String, datatype: java.lang.String, data: scala.Boolean): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -6107,7 +6107,7 @@ trait p5InstanceExtensions extends js.Object {
     datatype: java.lang.String,
     data: scala.Boolean,
     callback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Method for executing an HTTP POST request. If data
        *   type is not specified, p5 will try to guess based
@@ -6133,7 +6133,7 @@ trait p5InstanceExtensions extends js.Object {
     data: scala.Boolean,
     callback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Extracts the hue value from a color or pixel
        *   array. Hue exists in both HSB and HSL. This

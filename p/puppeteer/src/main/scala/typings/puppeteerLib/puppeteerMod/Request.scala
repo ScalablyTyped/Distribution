@@ -12,25 +12,25 @@ trait Request extends js.Object {
      * To use this, request interception should be enabled with `page.setRequestInterception`.
      * @throws An exception is immediately thrown if the request interception is not enabled.
      */
-  def abort(): stdLib.Promise[scala.Unit] = js.native
+  def abort(): js.Promise[scala.Unit] = js.native
   /**
      * Aborts request.
      * To use this, request interception should be enabled with `page.setRequestInterception`.
      * @throws An exception is immediately thrown if the request interception is not enabled.
      */
-  def abort(errorCode: ErrorCode): stdLib.Promise[scala.Unit] = js.native
+  def abort(errorCode: ErrorCode): js.Promise[scala.Unit] = js.native
   /**
      * Continues request with optional request overrides.
      * To use this, request interception should be enabled with `page.setRequestInterception`.
      * @throws An exception is immediately thrown if the request interception is not enabled.
      */
-  def continue(): stdLib.Promise[scala.Unit] = js.native
+  def continue(): js.Promise[scala.Unit] = js.native
   /**
      * Continues request with optional request overrides.
      * To use this, request interception should be enabled with `page.setRequestInterception`.
      * @throws An exception is immediately thrown if the request interception is not enabled.
      */
-  def continue(overrides: Overrides): stdLib.Promise[scala.Unit] = js.native
+  def continue(overrides: Overrides): js.Promise[scala.Unit] = js.native
   /**
      * @returns An object if the request failed, null otherwise.
      */
@@ -70,7 +70,7 @@ trait Request extends js.Object {
      * @throws An exception is immediately thrown if the request interception is not enabled.
      * @param response The response options that will fulfill this request.
      */
-  def respond(response: RespondOptions): stdLib.Promise[scala.Unit] = js.native
+  def respond(response: RespondOptions): js.Promise[scala.Unit] = js.native
   /** A matching `Response` object, or `null` if the response has not been received yet. */
   def response(): Response | scala.Null = js.native
   /** Contains the URL of the request. */

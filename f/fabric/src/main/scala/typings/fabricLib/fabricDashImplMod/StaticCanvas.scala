@@ -52,13 +52,13 @@ class StaticCanvas protected ()
   	 * @param [intersecting] If `true`, send object in front of next upper intersecting object
   	 * @chainable
   	 */
-  def bringForward(`object`: js.Object): this.type = js.native
+  def bringForward(`object`: Object): this.type = js.native
   /**
   	 * Moves an object to the top of the stack of drawn objects
   	 * @param object Object to send
   	 * @chainable
   	 */
-  def bringToFront(`object`: js.Object): this.type = js.native
+  def bringToFront(`object`: Object): this.type = js.native
   /**
   	 * Calculates canvas element offset relative to the document
   	 * This method is also attached as "resize" event handler of window
@@ -69,19 +69,19 @@ class StaticCanvas protected ()
   	 * You might need to call `setCoords` on an object after centering, to update controls area.
   	 * @param object Object to center vertically and horizontally
   	 */
-  def centerObject(`object`: js.Object): this.type = js.native
+  def centerObject(`object`: Object): this.type = js.native
   /**
   	 * Centers object horizontally.
   	 * You might need to call `setCoords` on an object after centering, to update controls area.
   	 * @param object Object to center horizontally
   	 */
-  def centerObjectH(`object`: js.Object): this.type = js.native
+  def centerObjectH(`object`: Object): this.type = js.native
   /**
   	 * Centers object vertically.
   	 * You might need to call `setCoords` on an object after centering, to update controls area.
   	 * @param object Object to center vertically
   	 */
-  def centerObjectV(`object`: js.Object): this.type = js.native
+  def centerObjectV(`object`: Object): this.type = js.native
   /**
   	 * Clears all contexts (background, main, top) of an instance
   	 */
@@ -119,7 +119,7 @@ class StaticCanvas protected ()
   	 * Same as straightenObject, but animated
   	 * @param object Object to straighten
   	 */
-  def fxStraightenObject(`object`: js.Object): this.type = js.native
+  def fxStraightenObject(`object`: Object): this.type = js.native
   /**
   	 * Returns currently selected group of object, if any
   	 */
@@ -127,7 +127,7 @@ class StaticCanvas protected ()
   /**
   	 * Returns currently selected object, if any
   	 */
-  def getActiveObject(): js.Object = js.native
+  def getActiveObject(): Object = js.native
   /**
   	 * Returns coordinates of a center of canvas.
   	 * Returned value is an object with top and left properties
@@ -199,11 +199,11 @@ class StaticCanvas protected ()
   	 * @param index Position to move to
   	 * @chainable
   	 */
-  def moveTo(`object`: js.Object, index: scala.Double): this.type = js.native
+  def moveTo(`object`: Object, index: scala.Double): this.type = js.native
   /**
   	 * Callback; invoked right before object is about to be scaled/rotated
   	 */
-  def onBeforeScaleRotate(target: js.Object): scala.Unit = js.native
+  def onBeforeScaleRotate(target: Object): scala.Unit = js.native
   /**
   	 * Pans viewpoint relatively
   	 * @param point (position vector) to move by
@@ -238,13 +238,13 @@ class StaticCanvas protected ()
   	 * @param [intersecting] If `true`, send object behind next lower intersecting object
   	 * @chainable
   	 */
-  def sendBackwards(`object`: js.Object): this.type = js.native
+  def sendBackwards(`object`: Object): this.type = js.native
   /**
   	 * Moves an object to the bottom of the stack of drawn objects
   	 * @param object Object to send to back
   	 * @chainable
   	 */
-  def sendToBack(`object`: js.Object): this.type = js.native
+  def sendToBack(`object`: Object): this.type = js.native
   /**
   	 * Sets {@link fabric.StaticCanvas#backgroundColor|background color} for this canvas
   	 * @param backgroundColor Color or pattern to set background color to
@@ -437,7 +437,7 @@ class StaticCanvas protected ()
   	 * Straightens object, then rerenders canvas
   	 * @param object Object to straighten
   	 */
-  def straightenObject(`object`: js.Object): this.type = js.native
+  def straightenObject(`object`: Object): this.type = js.native
   /**
   	 * Provides a way to check support of some of the canvas methods
   	 * (either those of HTMLCanvasElement itself, or rendering context)

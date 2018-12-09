@@ -266,7 +266,7 @@ class BootstrapListBox () extends BootstrapClientEdit {
     eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.selectedIndexChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[ProcessingModeEventArgs], scala.Unit]
   ): this.type = js.native
-  def performCallback(data: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def performCallback(data: js.Any): js.Promise[scala.Unit] = js.native
   def performCallback(data: js.Any, onSuccess: js.Function0[scala.Unit]): scala.Unit = js.native
   def removeItem(index: scala.Double): scala.Unit = js.native
   def removeItemCssClass(index: scala.Double, className: java.lang.String): scala.Unit = js.native

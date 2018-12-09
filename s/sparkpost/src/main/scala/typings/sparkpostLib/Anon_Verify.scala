@@ -29,7 +29,7 @@ trait Anon_Verify extends js.Object {
            * @param domain The domain
            * @returns Promise void
            */
-  def delete(domain: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def delete(domain: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Delete an existing sending domain.
            * @param domain The domain

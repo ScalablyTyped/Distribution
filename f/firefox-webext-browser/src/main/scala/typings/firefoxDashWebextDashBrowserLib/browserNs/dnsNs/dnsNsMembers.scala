@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object dnsNsMembers extends js.Object {
   /* dns functions */
   /** Resolves a hostname to a DNS record. */
-  def resolve(hostname: java.lang.String): stdLib.Promise[DNSRecord] = js.native
+  def resolve(hostname: java.lang.String): js.Promise[DNSRecord] = js.native
   /* dns functions */
   /** Resolves a hostname to a DNS record. */
-  def resolve(hostname: java.lang.String, flags: ResolveFlags): stdLib.Promise[DNSRecord] = js.native
+  def resolve(hostname: java.lang.String, flags: ResolveFlags): js.Promise[DNSRecord] = js.native
 }
 

@@ -40,6 +40,6 @@ object RawCubeTexture extends js.Object {
     sphericalPolynomial: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.SphericalPolynomial],
     lodScale: scala.Double,
     lodOffset: scala.Double
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

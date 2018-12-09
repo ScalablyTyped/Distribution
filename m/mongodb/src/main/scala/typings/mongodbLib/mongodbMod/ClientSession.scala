@@ -14,12 +14,12 @@ trait ClientSession
        * Aborts the currently active transaction in this session.
        * @param {MongoCallback<void>} [cb] Optional callback for completion of this operation
        */
-  def abortTransaction(): stdLib.Promise[scala.Unit] = js.native
+  def abortTransaction(): js.Promise[scala.Unit] = js.native
   /**
        * Aborts the currently active transaction in this session.
        * @param {MongoCallback<void>} [cb] Optional callback for completion of this operation
        */
-  def abortTransaction(cb: MongoCallback[scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def abortTransaction(cb: MongoCallback[scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
        * Advances the operationTime for a ClientSession.
        * @param {mongodb.Timestamp} operationTime
@@ -29,12 +29,12 @@ trait ClientSession
        * Commits the currently active transaction in this session.
        * @param {MongoCallback<void>} [cb] Optional callback for completion of this operation
        */
-  def commitTransaction(): stdLib.Promise[scala.Unit] = js.native
+  def commitTransaction(): js.Promise[scala.Unit] = js.native
   /**
        * Commits the currently active transaction in this session.
        * @param {MongoCallback<void>} [cb] Optional callback for completion of this operation
        */
-  def commitTransaction(cb: MongoCallback[scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def commitTransaction(cb: MongoCallback[scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
        * Ends this session on the server
        * @param {MongoCallback<void>} [cb] Optional callback for completion of this operation

@@ -21,8 +21,8 @@ abstract class NamespaceHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definit
        * @param meta: The metadata of the command.
        * @return `true` to keep, `false` to discard
        */
-  def filterCommandCallback(meta: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]): stdLib.Promise[scala.Boolean] = js.native
-  def getNamespaceFullName(): stdLib.Promise[java.lang.String] = js.native
-  def getNamespaceMetadata(): stdLib.Promise[atIonicCliDashFrameworkLib.definitionsMod.NamespaceMetadata] = js.native
+  def filterCommandCallback(meta: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]): js.Promise[scala.Boolean] = js.native
+  def getNamespaceFullName(): js.Promise[java.lang.String] = js.native
+  def getNamespaceMetadata(): js.Promise[atIonicCliDashFrameworkLib.definitionsMod.NamespaceMetadata] = js.native
 }
 

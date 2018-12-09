@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Pathspec () extends js.Object {
   def free(): scala.Unit = js.native
-  def matchDiff(diff: nodegitLib.diffMod.Diff, flags: scala.Double): stdLib.Promise[_] = js.native
-  def matchIndex(index: nodegitLib.nodegitMod.Index, flags: scala.Double): stdLib.Promise[_] = js.native
-  def matchTree(tree: nodegitLib.treeMod.Tree, flags: scala.Double): stdLib.Promise[_] = js.native
-  def matchWorkdir(repo: nodegitLib.repositoryMod.Repository, flags: scala.Double): stdLib.Promise[_] = js.native
+  def matchDiff(diff: nodegitLib.diffMod.Diff, flags: scala.Double): js.Promise[_] = js.native
+  def matchIndex(index: nodegitLib.nodegitMod.Index, flags: scala.Double): js.Promise[_] = js.native
+  def matchTree(tree: nodegitLib.treeMod.Tree, flags: scala.Double): js.Promise[_] = js.native
+  def matchWorkdir(repo: nodegitLib.repositoryMod.Repository, flags: scala.Double): js.Promise[_] = js.native
   def matchesPath(flags: scala.Double, path: java.lang.String): scala.Double = js.native
 }
 

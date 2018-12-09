@@ -10,8 +10,8 @@ package object monkMod {
   type TMiddleware = js.Function1[
     /* hasCollectionMonkInstance */ monkLib.Anon_Collection, 
     js.Function1[
-      /* next */ js.Function2[/* args */ js.Object, /* method */ java.lang.String, stdLib.Promise[js.Any]], 
-      js.Function2[/* args */ js.Object, /* method */ java.lang.String, stdLib.Promise[js.Any]]
+      /* next */ js.Function2[/* args */ js.Object, /* method */ java.lang.String, js.Promise[js.Any]], 
+      js.Function2[/* args */ js.Object, /* method */ java.lang.String, js.Promise[js.Any]]
     ]
   ]
   type TQuery = java.lang.String | js.Object

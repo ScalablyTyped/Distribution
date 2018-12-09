@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 abstract class BuildRunner[T /* <: ionicLib.definitionsMod.BuildOptions[_] */] ()
   extends ionicLib.definitionsMod.Runner[T, scala.Unit] {
   val e: BuildRunnerDeps = js.native
-  def afterBuild(options: T): stdLib.Promise[scala.Unit] = js.native
-  def beforeBuild(options: T): stdLib.Promise[scala.Unit] = js.native
-  def buildProject(options: T): stdLib.Promise[scala.Unit] = js.native
+  def afterBuild(options: T): js.Promise[scala.Unit] = js.native
+  def beforeBuild(options: T): js.Promise[scala.Unit] = js.native
+  def buildProject(options: T): js.Promise[scala.Unit] = js.native
   def createBaseOptionsFromCommandLine(
     inputs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineInputs,
     options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions
@@ -22,8 +22,8 @@ abstract class BuildRunner[T /* <: ionicLib.definitionsMod.BuildOptions[_] */] (
     options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions
   ): T = js.native
   def determineEngineFromCommandLine(options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions): java.lang.String = js.native
-  def getCommandMetadata(): stdLib.Promise[stdLib.Partial[ionicLib.definitionsMod.CommandMetadata]] = js.native
+  def getCommandMetadata(): js.Promise[stdLib.Partial[ionicLib.definitionsMod.CommandMetadata]] = js.native
   /* CompleteClass */
-  override def run(options: T): stdLib.Promise[scala.Unit] = js.native
+  override def run(options: T): js.Promise[scala.Unit] = js.native
 }
 

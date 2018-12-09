@@ -42,7 +42,7 @@ class ArcGisMapServerImageryProvider protected ()
   /* CompleteClass */
   override val ready: scala.Boolean = js.native
   /* CompleteClass */
-  override val readyPromise: stdLib.Promise[scala.Boolean] = js.native
+  override val readyPromise: js.Promise[scala.Boolean] = js.native
   /* CompleteClass */
   override val rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = js.native
   /* CompleteClass */
@@ -66,8 +66,8 @@ class ArcGisMapServerImageryProvider protected ()
     level: scala.Double,
     longitude: scala.Double,
     latitude: scala.Double
-  ): stdLib.Promise[js.Array[cesiumLib.cesiumMod.CesiumNs.ImageryLayerFeatureInfo]] = js.native
+  ): js.Promise[js.Array[cesiumLib.cesiumMod.CesiumNs.ImageryLayerFeatureInfo]] = js.native
   /* CompleteClass */
-  override def requestImage(x: scala.Double, y: scala.Double, level: scala.Double): stdLib.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
+  override def requestImage(x: scala.Double, y: scala.Double, level: scala.Double): js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
 }
 

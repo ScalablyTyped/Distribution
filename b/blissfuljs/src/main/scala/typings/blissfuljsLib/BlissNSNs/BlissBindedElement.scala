@@ -46,7 +46,7 @@ trait BlissBindedElement[T] extends BlissNativeExtentions[T] {
   def set(options: js.Object): BlissDecoratedElement[T] = js.native
   def start(element: blissfuljsLib.Element): BlissDecoratedElement[T] = js.native
   def style(properties: js.Object): BlissDecoratedElement[T] = js.native
-  def transition(properties: js.Object): stdLib.Promise[T] = js.native
-  def transition(properties: js.Object, duration: scala.Double): stdLib.Promise[T] = js.native
+  def transition(properties: js.Object): js.Promise[T] = js.native
+  def transition(properties: js.Object, duration: scala.Double): js.Promise[T] = js.native
 }
 

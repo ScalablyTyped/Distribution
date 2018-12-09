@@ -37,7 +37,7 @@ trait Query extends js.Object {
   def off(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
-    context: js.Object
+    context: coreDashJsLib.Object
   ): js.Any = js.native
   def on(
     eventType: EventType,
@@ -46,42 +46,42 @@ trait Query extends js.Object {
   def on(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _],
-    cancelCallbackOrContext: js.Object
+    cancelCallbackOrContext: coreDashJsLib.Object
   ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
   def on(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _],
-    cancelCallbackOrContext: js.Object,
-    context: js.Object
+    cancelCallbackOrContext: coreDashJsLib.Object,
+    context: coreDashJsLib.Object
   ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
   def on(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _],
     cancelCallbackOrContext: scala.Null,
-    context: js.Object
+    context: coreDashJsLib.Object
   ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
-  def once(eventType: EventType): stdLib.Promise[DataSnapshot] = js.native
+  def once(eventType: EventType): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _]
-  ): stdLib.Promise[DataSnapshot] = js.native
+  ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
-    failureCallbackOrContext: js.Object
-  ): stdLib.Promise[DataSnapshot] = js.native
+    failureCallbackOrContext: coreDashJsLib.Object
+  ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
-    failureCallbackOrContext: js.Object,
-    context: js.Object
-  ): stdLib.Promise[DataSnapshot] = js.native
+    failureCallbackOrContext: coreDashJsLib.Object,
+    context: coreDashJsLib.Object
+  ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
     failureCallbackOrContext: scala.Null,
-    context: js.Object
-  ): stdLib.Promise[DataSnapshot] = js.native
+    context: coreDashJsLib.Object
+  ): js.Promise[DataSnapshot] = js.native
   def orderByChild(path: java.lang.String): Query = js.native
   def orderByKey(): Query = js.native
   def orderByPriority(): Query = js.native
@@ -94,6 +94,6 @@ trait Query extends js.Object {
   def startAt(value: scala.Double): Query = js.native
   def startAt(value: scala.Double, key: java.lang.String): Query = js.native
   def startAt(value: scala.Null, key: java.lang.String): Query = js.native
-  def toJSON(): js.Object = js.native
+  def toJSON(): coreDashJsLib.Object = js.native
 }
 

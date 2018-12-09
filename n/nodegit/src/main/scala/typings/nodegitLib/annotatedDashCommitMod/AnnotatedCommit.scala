@@ -26,9 +26,9 @@ object AnnotatedCommit extends js.Object {
     branchName: java.lang.String,
     remoteUrl: java.lang.String,
     id: nodegitLib.oidMod.Oid
-  ): stdLib.Promise[nodegitLib.annotatedDashCommitMod.AnnotatedCommit] = js.native
-  def fromRef(repo: nodegitLib.repositoryMod.Repository, ref: nodegitLib.referenceMod.Reference): stdLib.Promise[nodegitLib.annotatedDashCommitMod.AnnotatedCommit] = js.native
-  def fromRevspec(repo: nodegitLib.repositoryMod.Repository, revspec: java.lang.String): stdLib.Promise[nodegitLib.annotatedDashCommitMod.AnnotatedCommit] = js.native
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): stdLib.Promise[nodegitLib.annotatedDashCommitMod.AnnotatedCommit] = js.native
+  ): js.Promise[nodegitLib.annotatedDashCommitMod.AnnotatedCommit] = js.native
+  def fromRef(repo: nodegitLib.repositoryMod.Repository, ref: nodegitLib.referenceMod.Reference): js.Promise[nodegitLib.annotatedDashCommitMod.AnnotatedCommit] = js.native
+  def fromRevspec(repo: nodegitLib.repositoryMod.Repository, revspec: java.lang.String): js.Promise[nodegitLib.annotatedDashCommitMod.AnnotatedCommit] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.annotatedDashCommitMod.AnnotatedCommit] = js.native
 }
 

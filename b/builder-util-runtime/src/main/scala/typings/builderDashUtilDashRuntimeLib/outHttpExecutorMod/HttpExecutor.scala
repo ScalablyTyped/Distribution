@@ -29,7 +29,7 @@ abstract class HttpExecutor[REQUEST] () extends js.Object {
       /* reject */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
       scala.Unit
     ]
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   def doApiRequest(
     options: nodeLib.httpMod.RequestOptions,
     cancellationToken: builderDashUtilDashRuntimeLib.outCancellationTokenMod.CancellationToken,
@@ -39,19 +39,19 @@ abstract class HttpExecutor[REQUEST] () extends js.Object {
       scala.Unit
     ],
     redirectCount: scala.Double
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /* protected */ def doDownload(requestOptions: js.Any, options: DownloadCallOptions, redirectCount: scala.Double): scala.Unit = js.native
-  def downloadToBuffer(url: nodeLib.urlMod.URL, options: DownloadOptions): stdLib.Promise[nodeLib.Buffer] = js.native
-  def request(options: nodeLib.httpMod.RequestOptions): stdLib.Promise[java.lang.String | scala.Null] = js.native
+  def downloadToBuffer(url: nodeLib.urlMod.URL, options: DownloadOptions): js.Promise[nodeLib.Buffer] = js.native
+  def request(options: nodeLib.httpMod.RequestOptions): js.Promise[java.lang.String | scala.Null] = js.native
   def request(
     options: nodeLib.httpMod.RequestOptions,
     cancellationToken: builderDashUtilDashRuntimeLib.outCancellationTokenMod.CancellationToken
-  ): stdLib.Promise[java.lang.String | scala.Null] = js.native
+  ): js.Promise[java.lang.String | scala.Null] = js.native
   def request(
     options: nodeLib.httpMod.RequestOptions,
     cancellationToken: builderDashUtilDashRuntimeLib.outCancellationTokenMod.CancellationToken,
     data: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): stdLib.Promise[java.lang.String | scala.Null] = js.native
+  ): js.Promise[java.lang.String | scala.Null] = js.native
 }
 
 @JSImport("builder-util-runtime/out/httpExecutor", "HttpExecutor")

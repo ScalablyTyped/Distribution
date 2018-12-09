@@ -21,7 +21,7 @@ object apolloDashLinkModMembers extends js.Object {
   ] = js.native
   val makePromise: js.Function1[
     /* observable */ zenDashObservableDashTsLib.libZenObservableMod.Observable[js.Any], 
-    stdLib.Promise[js.Any]
+    js.Promise[js.Any]
   ] = js.native
   val split: js.Function3[
     /* test */ js.Function1[/* op */ apolloDashLinkLib.libTypesMod.Operation, scala.Boolean], 
@@ -39,7 +39,7 @@ object apolloDashLinkModMembers extends js.Object {
     apolloDashLinkLib.libTypesMod.FetchResult[stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
   ] = js.native
   def fromError[T](errorValue: js.Any): zenDashObservableDashTsLib.libZenObservableMod.Observable[T] = js.native
-  def fromPromise[T](promise: stdLib.Promise[T]): zenDashObservableDashTsLib.libZenObservableMod.Observable[T] = js.native
-  def toPromise[R](observable: zenDashObservableDashTsLib.libZenObservableMod.Observable[R]): stdLib.Promise[R] = js.native
+  def fromPromise[T](promise: js.Promise[T]): zenDashObservableDashTsLib.libZenObservableMod.Observable[T] = js.native
+  def toPromise[R](observable: zenDashObservableDashTsLib.libZenObservableMod.Observable[R]): js.Promise[R] = js.native
 }
 

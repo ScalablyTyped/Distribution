@@ -12,7 +12,7 @@ trait RequestHandle[T] extends js.Object {
        * This method is only available if you supplied the `Promise` constructor to the `createClient()` method when you constructed
        * the client object.
        */
-  def asPromise(): stdLib.Promise[ClientResponse[T]]
+  def asPromise(): js.Promise[ClientResponse[T]]
   /**
        * Cancels the request.
        * The ResponseCallback will not be invoked, and promises will not be settled.

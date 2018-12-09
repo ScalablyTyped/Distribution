@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("yoctodelay", JSImport.Namespace)
 @js.native
 object yoctodelayMod extends js.Object {
-  def apply(ms: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def apply(ms: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

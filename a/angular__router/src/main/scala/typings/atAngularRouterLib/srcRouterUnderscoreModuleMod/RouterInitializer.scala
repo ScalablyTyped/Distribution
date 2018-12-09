@@ -14,7 +14,7 @@ class RouterInitializer protected () extends js.Object {
   var isLegacyDisabled: js.Any = js.native
   var isLegacyEnabled: js.Any = js.native
   var resultOfPreactivationDone: js.Any = js.native
-  def appInitializer(): stdLib.Promise[_] = js.native
+  def appInitializer(): js.Promise[_] = js.native
   def bootstrapListener(bootstrappedComponentRef: atAngularCoreLib.coreMod.ComponentRef[_]): scala.Unit = js.native
 }
 

@@ -22,14 +22,14 @@ trait JSZipObject extends js.Object {
            * @param onUpdate a function to call on each internal update.
            * @return Promise the promise of the result.
            */
-  def async[T /* <: OutputType */](`type`: T): stdLib.Promise[_] = js.native
+  def async[T /* <: OutputType */](`type`: T): js.Promise[_] = js.native
   /**
            * Prepare the content in the asked type.
            * @param type the type of the result.
            * @param onUpdate a function to call on each internal update.
            * @return Promise the promise of the result.
            */
-  def async[T /* <: OutputType */](`type`: T, onUpdate: jszipLib.OnUpdateCallback): stdLib.Promise[_] = js.native
+  def async[T /* <: OutputType */](`type`: T, onUpdate: jszipLib.OnUpdateCallback): js.Promise[_] = js.native
   def nodeStream(): nodeLib.NodeJSNs.ReadableStream = js.native
   @JSName("nodeStream")
   def nodeStream_nodestream(`type`: jszipLib.jszipLibStrings.nodestream): nodeLib.NodeJSNs.ReadableStream = js.native

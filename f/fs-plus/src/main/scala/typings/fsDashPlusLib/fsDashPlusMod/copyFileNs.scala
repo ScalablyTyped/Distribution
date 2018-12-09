@@ -21,7 +21,7 @@ object copyFileNs extends js.Object {
            * The only supported flag is fs.constants.COPYFILE_EXCL,
            * which causes the copy operation to fail if dest already exists.
            */
-  def `__promisify__`(src: nodeLib.fsMod.PathLike, dst: nodeLib.fsMod.PathLike): stdLib.Promise[scala.Unit] = js.native
+  def `__promisify__`(src: nodeLib.fsMod.PathLike, dst: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
   /**
            * Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
            * No arguments other than a possible exception are given to the callback function.
@@ -34,6 +34,6 @@ object copyFileNs extends js.Object {
            * The only supported flag is fs.constants.COPYFILE_EXCL,
            * which causes the copy operation to fail if dest already exists.
            */
-  def `__promisify__`(src: nodeLib.fsMod.PathLike, dst: nodeLib.fsMod.PathLike, flags: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def `__promisify__`(src: nodeLib.fsMod.PathLike, dst: nodeLib.fsMod.PathLike, flags: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

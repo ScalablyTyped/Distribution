@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ParameterEvent () extends TableauEvent {
   /** Gets the Parameter object that triggered the event. */
-  def getParameterAsync(): stdLib.Promise[Parameter] = js.native
+  def getParameterAsync(): js.Promise[Parameter] = js.native
   /** Gets the name of the parameter that changed. */
   def getParameterName(): java.lang.String = js.native
 }

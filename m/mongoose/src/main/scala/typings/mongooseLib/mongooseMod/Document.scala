@@ -30,12 +30,12 @@ trait Document
        * Removes this document from the db.
        * @param fn optional callback
        */
-  def remove(): stdLib.Promise[this.type] = js.native
+  def remove(): js.Promise[this.type] = js.native
   /**
        * Removes this document from the db.
        * @param fn optional callback
        */
-  def remove(fn: js.Function2[/* err */ js.Any, /* product */ this.type, scala.Unit]): stdLib.Promise[this.type] = js.native
+  def remove(fn: js.Function2[/* err */ js.Any, /* product */ this.type, scala.Unit]): js.Promise[this.type] = js.native
   /**
        * Saves this document.
        * @param options options optional options
@@ -43,8 +43,8 @@ trait Document
        * @param options.validateBeforeSave set to false to save without validating.
        * @param fn optional callback
        */
-  def save(): stdLib.Promise[this.type] = js.native
-  def save(fn: js.Function2[/* err */ js.Any, /* product */ this.type, scala.Unit]): stdLib.Promise[this.type] = js.native
+  def save(): js.Promise[this.type] = js.native
+  def save(fn: js.Function2[/* err */ js.Any, /* product */ this.type, scala.Unit]): js.Promise[this.type] = js.native
   /**
        * Saves this document.
        * @param options options optional options
@@ -52,7 +52,7 @@ trait Document
        * @param options.validateBeforeSave set to false to save without validating.
        * @param fn optional callback
        */
-  def save(options: SaveOptions): stdLib.Promise[this.type] = js.native
+  def save(options: SaveOptions): js.Promise[this.type] = js.native
   /**
        * Saves this document.
        * @param options options optional options
@@ -60,6 +60,6 @@ trait Document
        * @param options.validateBeforeSave set to false to save without validating.
        * @param fn optional callback
        */
-  def save(options: SaveOptions, fn: js.Function2[/* err */ js.Any, /* product */ this.type, scala.Unit]): stdLib.Promise[this.type] = js.native
+  def save(options: SaveOptions, fn: js.Function2[/* err */ js.Any, /* product */ this.type, scala.Unit]): js.Promise[this.type] = js.native
 }
 

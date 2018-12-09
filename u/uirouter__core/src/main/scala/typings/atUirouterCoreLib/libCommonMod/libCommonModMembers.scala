@@ -89,8 +89,8 @@ object libCommonModMembers extends js.Object {
   val removeFrom: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, js.Array[js.Any]]] = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
-  val silenceUncaughtInPromise: js.Function1[/* promise */ stdLib.Promise[js.Any], stdLib.Promise[js.Any]] = js.native
-  val silentRejection: js.Function1[/* error */ js.Any, stdLib.Promise[js.Any]] = js.native
+  val silenceUncaughtInPromise: js.Function1[/* promise */ js.Promise[js.Any], js.Promise[js.Any]] = js.native
+  val silentRejection: js.Function1[/* error */ js.Any, js.Promise[js.Any]] = js.native
   val splitEqual: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
   val splitHash: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
   val splitQuery: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native

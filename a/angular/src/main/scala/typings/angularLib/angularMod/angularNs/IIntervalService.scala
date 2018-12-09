@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 @js.native
 trait IIntervalService extends js.Object {
-  def apply(func: js.Function, delay: scala.Double): IPromise[_] = js.native
-  def apply(func: js.Function, delay: scala.Double, count: scala.Double): IPromise[_] = js.native
+  def apply(func: angularLib.angularMod.Global.Function, delay: scala.Double): IPromise[_] = js.native
+  def apply(func: angularLib.angularMod.Global.Function, delay: scala.Double, count: scala.Double): IPromise[_] = js.native
   def apply(
-    func: js.Function,
+    func: angularLib.angularMod.Global.Function,
     delay: scala.Double,
     count: scala.Double,
     invokeApply: scala.Boolean,

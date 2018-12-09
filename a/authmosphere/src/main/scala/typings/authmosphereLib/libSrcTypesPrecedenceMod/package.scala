@@ -13,6 +13,6 @@ package object libSrcTypesPrecedenceMod {
     /* req */ expressLib.expressMod.eNs.Request, 
     /* res */ expressLib.expressMod.eNs.Response, 
     /* next */ expressLib.expressMod.eNs.NextFunction, 
-    stdLib.Promise[scala.Boolean]
+    js.Promise[scala.Boolean]
   ]
 }

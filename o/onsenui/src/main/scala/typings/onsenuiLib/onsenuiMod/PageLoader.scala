@@ -14,8 +14,8 @@ class PageLoader protected ()
   extends onsenuiLib.onsenuiMod.onsNs.PageLoader {
   def this(args: js.Any*) = this()
   /* CompleteClass */
-  override var internalLoader: js.Function = js.native
+  override var internalLoader: coreDashJsLib.Function = js.native
   /* CompleteClass */
-  override def load(options: onsenuiLib.Anon_Page, done: js.Function): scala.Unit = js.native
+  override def load(options: onsenuiLib.Anon_Page, done: coreDashJsLib.Function): scala.Unit = js.native
 }
 

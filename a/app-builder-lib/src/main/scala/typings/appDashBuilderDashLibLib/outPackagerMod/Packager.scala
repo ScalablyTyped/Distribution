@@ -43,43 +43,43 @@ class Packager protected () extends js.Object {
   val projectDir: java.lang.String = js.native
   var readProjectMetadataIfTwoPackageStructureOrPrepacked: js.Any = js.native
   val relativeBuildResourcesDirname: java.lang.String = js.native
-  val repositoryInfo: stdLib.Promise[appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo | scala.Null] = js.native
+  val repositoryInfo: js.Promise[appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo | scala.Null] = js.native
   val tempDirManager: builderDashUtilLib.builderDashUtilMod.TmpDir = js.native
   def _build(
     configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata
-  ): stdLib.Promise[BuildResult] = js.native
+  ): js.Promise[BuildResult] = js.native
   def _build(
     configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     devMetadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata
-  ): stdLib.Promise[BuildResult] = js.native
+  ): js.Promise[BuildResult] = js.native
   def _build(
     configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     devMetadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     repositoryInfo: appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo
-  ): stdLib.Promise[BuildResult] = js.native
+  ): js.Promise[BuildResult] = js.native
   def _build(
     configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
     metadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata,
     devMetadata: scala.Null,
     repositoryInfo: appDashBuilderDashLibLib.outCoreMod.SourceRepositoryInfo
-  ): stdLib.Promise[BuildResult] = js.native
+  ): js.Promise[BuildResult] = js.native
   def addAfterPackHandler(
     handler: js.Function1[
       /* context */ appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, 
-      stdLib.Promise[_] | scala.Null
+      js.Promise[_] | scala.Null
     ]
   ): scala.Unit = js.native
-  def afterPack(context: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext): stdLib.Promise[_] = js.native
+  def afterPack(context: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext): js.Promise[_] = js.native
   def artifactCreated(
     handler: js.Function1[/* event */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated, scala.Unit]
   ): Packager = js.native
-  def build(): stdLib.Promise[BuildResult] = js.native
-  def callArtifactBuildCompleted(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated): stdLib.Promise[scala.Unit] = js.native
-  def callArtifactBuildStarted(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactBuildStarted): stdLib.Promise[scala.Unit] = js.native
-  def callArtifactBuildStarted(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactBuildStarted, logFields: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def build(): js.Promise[BuildResult] = js.native
+  def callArtifactBuildCompleted(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated): js.Promise[scala.Unit] = js.native
+  def callArtifactBuildStarted(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactBuildStarted): js.Promise[scala.Unit] = js.native
+  def callArtifactBuildStarted(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactBuildStarted, logFields: js.Any): js.Promise[scala.Unit] = js.native
   /**
        * Only for sub artifacts (update info), for main artifacts use `callArtifactBuildCompleted`.
        */

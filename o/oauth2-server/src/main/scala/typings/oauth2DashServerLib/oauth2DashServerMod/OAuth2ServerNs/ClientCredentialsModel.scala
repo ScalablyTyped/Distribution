@@ -19,18 +19,18 @@ trait ClientCredentialsModel
       /* client */ Client, 
       /* scope */ java.lang.String | js.Array[java.lang.String], 
       /* callback */ js.UndefOr[Callback[java.lang.String | Falsey]], 
-      stdLib.Promise[java.lang.String | js.Array[java.lang.String] | Falsey]
+      js.Promise[java.lang.String | js.Array[java.lang.String] | Falsey]
     ]
   ] = js.native
   /**
            * Invoked to retrieve the user associated with the specified client.
            *
            */
-  def getUserFromClient(client: Client): stdLib.Promise[User | Falsey] = js.native
+  def getUserFromClient(client: Client): js.Promise[User | Falsey] = js.native
   /**
            * Invoked to retrieve the user associated with the specified client.
            *
            */
-  def getUserFromClient(client: Client, callback: Callback[User | Falsey]): stdLib.Promise[User | Falsey] = js.native
+  def getUserFromClient(client: Client, callback: Callback[User | Falsey]): js.Promise[User | Falsey] = js.native
 }
 

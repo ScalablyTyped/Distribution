@@ -27,7 +27,7 @@ trait Request extends js.Object {
            * lifecycle and the request.render() method will produce the same limited results server.render() can.
            * @see {@link https://github.com/hapijs/vision/blob/master/API.md#requestrendertemplate-context-options-callback}
            */
-  def render(template: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def render(template: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
            * request.render() works the same way as server.render() but is for use inside of request handlers.
            * server.render() does not work inside request handlers when called via request.server.render() if the view manager was created by a plugin.
@@ -37,7 +37,7 @@ trait Request extends js.Object {
            * lifecycle and the request.render() method will produce the same limited results server.render() can.
            * @see {@link https://github.com/hapijs/vision/blob/master/API.md#requestrendertemplate-context-options-callback}
            */
-  def render(template: java.lang.String, context: js.Any): stdLib.Promise[java.lang.String] = js.native
+  def render(template: java.lang.String, context: js.Any): js.Promise[java.lang.String] = js.native
   /**
            * request.render() works the same way as server.render() but is for use inside of request handlers.
            * server.render() does not work inside request handlers when called via request.server.render() if the view manager was created by a plugin.
@@ -51,6 +51,6 @@ trait Request extends js.Object {
     template: java.lang.String,
     context: js.Any,
     options: visionLib.visionMod.visionNs.ServerViewsConfiguration
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
 }
 

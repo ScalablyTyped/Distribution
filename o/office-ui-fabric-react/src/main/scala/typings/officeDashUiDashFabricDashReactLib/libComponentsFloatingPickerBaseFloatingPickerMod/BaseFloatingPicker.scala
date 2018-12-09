@@ -16,7 +16,7 @@ class BaseFloatingPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
     officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionsControl[T]
   ] = js.native
   var _onValidateInput: js.Any = js.native
-  var currentPromise: stdLib.PromiseLike[_] = js.native
+  var currentPromise: js.Thenable[_] = js.native
   val currentSelectedSuggestionIndex: scala.Double = js.native
   var root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
   var selection: stdLib.Selection = js.native
@@ -47,7 +47,7 @@ class BaseFloatingPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   def updateSuggestions(suggestions: js.Array[T]): scala.Unit = js.native
   def updateSuggestions(suggestions: js.Array[T], forceUpdate: scala.Boolean): scala.Unit = js.native
   /* protected */ def updateSuggestionsList(suggestions: js.Array[T]): scala.Unit = js.native
-  /* protected */ def updateSuggestionsList(suggestions: stdLib.PromiseLike[js.Array[T]]): scala.Unit = js.native
+  /* protected */ def updateSuggestionsList(suggestions: js.Thenable[js.Array[T]]): scala.Unit = js.native
   /* protected */ def updateValue(updatedValue: java.lang.String): scala.Unit = js.native
 }
 

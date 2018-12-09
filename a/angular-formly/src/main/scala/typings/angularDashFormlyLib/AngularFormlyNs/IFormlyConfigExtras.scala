@@ -12,8 +12,8 @@ trait IFormlyConfigExtras extends js.Object {
   var disableNgModelAttrsManipulator: scala.Boolean
   var errorExistsAndShouldBeVisibleExpression: js.Any
   var explicitAsync: scala.Boolean
-  var fieldTransform: js.Function | js.Array[js.Function]
-  var getFieldId: js.Function
+  var fieldTransform: angularLib.angularMod.Global.Function | js.Array[angularLib.angularMod.Global.Function]
+  var getFieldId: angularLib.angularMod.Global.Function
   var ngModelAttrsManipulatorPreferUnbound: scala.Boolean
   var removeChromeAutoComplete: scala.Boolean
 }

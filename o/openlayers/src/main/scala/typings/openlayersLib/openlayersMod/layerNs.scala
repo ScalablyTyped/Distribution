@@ -19,9 +19,9 @@ object layerNs extends js.Object {
        * @param options Layer options.
        * @api stable
        */
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
-  class Base protected () extends js.Object {
+  @js.native
+  class Base protected ()
+    extends openlayersLib.openlayersMod.Object {
     /**
              * @classdesc
              * Abstract base class; normally only used for creating subclasses and not

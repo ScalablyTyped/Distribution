@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object contentScriptsNsMembers extends js.Object {
   /* contentScripts functions */
   /** Register a content script programmatically */
-  def register(contentScriptOptions: RegisteredContentScriptOptions): stdLib.Promise[RegisteredContentScript] = js.native
+  def register(contentScriptOptions: RegisteredContentScriptOptions): js.Promise[RegisteredContentScript] = js.native
 }
 

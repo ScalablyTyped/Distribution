@@ -389,11 +389,11 @@ object SupportNs extends js.Object {
     /**
          * The unique identifier for the Trusted Advisor check.
          */
-    var checkId: java.lang.String
+    var checkId: String
     /**
          * The ISO 639-1 code for the language in which AWS provides support. AWS Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
          */
-    var language: js.UndefOr[java.lang.String] = js.undefined
+    var language: js.UndefOr[String] = js.undefined
   }
   
   
@@ -425,7 +425,7 @@ object SupportNs extends js.Object {
     /**
          * The ISO 639-1 code for the language in which AWS provides support. AWS Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
          */
-    var language: java.lang.String
+    var language: String
   }
   
   
@@ -453,7 +453,7 @@ object SupportNs extends js.Object {
     /**
          * The unique identifier for the Trusted Advisor check to refresh. Note: Specifying the check ID of a check that is automatically refreshed causes an InvalidParameterValue error.
          */
-    var checkId: java.lang.String
+    var checkId: String
   }
   
   
@@ -525,15 +525,15 @@ object SupportNs extends js.Object {
     /**
          * The category of the Trusted Advisor check.
          */
-    var category: java.lang.String
+    var category: String
     /**
          * The description of the Trusted Advisor check, which includes the alert criteria and recommended actions (contains HTML markup).
          */
-    var description: java.lang.String
+    var description: String
     /**
          * The unique identifier for the Trusted Advisor check.
          */
-    var id: java.lang.String
+    var id: String
     /**
          * The column headings for the data returned by the Trusted Advisor check. The order of the headings corresponds to the order of the data in the Metadata element of the TrustedAdvisorResourceDetail for the check. Metadata contains all the data that is shown in the Excel download, even in those cases where the UI shows just summary data. 
          */
@@ -541,7 +541,7 @@ object SupportNs extends js.Object {
     /**
          * The display name for the Trusted Advisor check.
          */
-    var name: java.lang.String
+    var name: String
   }
   
   
@@ -549,7 +549,7 @@ object SupportNs extends js.Object {
     /**
          * The unique identifier for the Trusted Advisor check.
          */
-    var checkId: java.lang.String
+    var checkId: String
     /**
          * The amount of time, in milliseconds, until the Trusted Advisor check is eligible for refresh.
          */
@@ -557,7 +557,7 @@ object SupportNs extends js.Object {
     /**
          * The status of the Trusted Advisor check for which a refresh has been requested: "none", "enqueued", "processing", "success", or "abandoned".
          */
-    var status: java.lang.String
+    var status: String
   }
   
   
@@ -569,7 +569,7 @@ object SupportNs extends js.Object {
     /**
          * The unique identifier for the Trusted Advisor check.
          */
-    var checkId: java.lang.String
+    var checkId: String
     /**
          * The details about each resource listed in the check result.
          */
@@ -578,11 +578,11 @@ object SupportNs extends js.Object {
     /**
          * The alert status of the check: "ok" (green), "warning" (yellow), "error" (red), or "not_available".
          */
-    var status: java.lang.String
+    var status: String
     /**
          * The time of the last refresh of the check.
          */
-    var timestamp: java.lang.String
+    var timestamp: String
   }
   
   
@@ -594,20 +594,20 @@ object SupportNs extends js.Object {
     /**
          * The unique identifier for the Trusted Advisor check.
          */
-    var checkId: java.lang.String
+    var checkId: String
     /**
          * Specifies whether the Trusted Advisor check has flagged resources.
          */
-    var hasFlaggedResources: js.UndefOr[scala.Boolean] = js.undefined
+    var hasFlaggedResources: js.UndefOr[Boolean] = js.undefined
     var resourcesSummary: TrustedAdvisorResourcesSummary
     /**
          * The alert status of the check: "ok" (green), "warning" (yellow), "error" (red), or "not_available".
          */
-    var status: java.lang.String
+    var status: String
     /**
          * The time of the last refresh of the check.
          */
-    var timestamp: java.lang.String
+    var timestamp: String
   }
   
   
@@ -627,7 +627,7 @@ object SupportNs extends js.Object {
     /**
          * Specifies whether the AWS resource was ignored by Trusted Advisor because it was marked as suppressed by the user.
          */
-    var isSuppressed: js.UndefOr[scala.Boolean] = js.undefined
+    var isSuppressed: js.UndefOr[Boolean] = js.undefined
     /**
          * Additional information about the identified resource. The exact metadata and its order can be obtained by inspecting the TrustedAdvisorCheckDescription object returned by the call to DescribeTrustedAdvisorChecks. Metadata contains all the data that is shown in the Excel download, even in those cases where the UI shows just summary data. 
          */
@@ -635,15 +635,15 @@ object SupportNs extends js.Object {
     /**
          * The AWS region in which the identified resource is located.
          */
-    var region: js.UndefOr[java.lang.String] = js.undefined
+    var region: js.UndefOr[String] = js.undefined
     /**
          * The unique identifier for the identified resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * The status code for the resource identified in the Trusted Advisor check.
          */
-    var status: java.lang.String
+    var status: String
   }
   
   
@@ -1134,7 +1134,7 @@ object SupportNs extends js.Object {
   type SeverityLevelsList = js.Array[SeverityLevel]
   type Status = java.lang.String
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type Subject = java.lang.String
   type SubmittedBy = java.lang.String
   type TimeCreated = java.lang.String

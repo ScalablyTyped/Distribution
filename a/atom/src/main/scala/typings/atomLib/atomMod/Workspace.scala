@@ -40,7 +40,7 @@ trait Workspace extends js.Object {
        *  If no URI is given, or no registered opener can open the URI, a new empty TextEditor
        *  will be created.
        */
-  def createItemForURI(uri: java.lang.String): stdLib.Promise[js.Object | TextEditor] = js.native
+  def createItemForURI(uri: java.lang.String): js.Promise[js.Object | TextEditor] = js.native
   /** Get the active Pane. */
   def getActivePane(): Pane = js.native
   // Panes
@@ -159,39 +159,39 @@ trait Workspace extends js.Object {
        *      If this function returns a Promise, then the item will not be destroyed
        *      until the promise resolves.
        */
-  def onWillDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, scala.Unit | stdLib.Promise[scala.Unit]]): Disposable = js.native
+  def onWillDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, scala.Unit | js.Promise[scala.Unit]]): Disposable = js.native
   /**
        *  Opens the given URI in Atom asynchronously. If the URI is already open,
        *  the existing item for that URI will be activated. If no URI is given, or
        *  no registered opener can open the URI, a new empty TextEditor will be created.
        */
-  def open(): stdLib.Promise[TextEditor] = js.native
+  def open(): js.Promise[TextEditor] = js.native
   // Opening
   /**
        *  Opens the given URI in Atom asynchronously. If the URI is already open,
        *  the existing item for that URI will be activated. If no URI is given, or
        *  no registered opener can open the URI, a new empty TextEditor will be created.
        */
-  def open(uri: java.lang.String): stdLib.Promise[js.Object] = js.native
+  def open(uri: java.lang.String): js.Promise[js.Object] = js.native
   // Opening
   /**
        *  Opens the given URI in Atom asynchronously. If the URI is already open,
        *  the existing item for that URI will be activated. If no URI is given, or
        *  no registered opener can open the URI, a new empty TextEditor will be created.
        */
-  def open(uri: java.lang.String, options: WorkspaceOpenOptions): stdLib.Promise[js.Object] = js.native
+  def open(uri: java.lang.String, options: WorkspaceOpenOptions): js.Promise[js.Object] = js.native
   /**
        *  Opens the given item in Atom asynchronously. If the item is already open,
        *  the existing item will be activated. If no item is given, a new empty TextEditor
        *  will be created.
        */
-  def open[T /* <: ViewModel */](item: T): stdLib.Promise[T] = js.native
+  def open[T /* <: ViewModel */](item: T): js.Promise[T] = js.native
   /**
        *  Opens the given item in Atom asynchronously. If the item is already open,
        *  the existing item will be activated. If no item is given, a new empty TextEditor
        *  will be created.
        */
-  def open[T /* <: ViewModel */](item: T, options: WorkspaceOpenOptions): stdLib.Promise[T] = js.native
+  def open[T /* <: ViewModel */](item: T, options: WorkspaceOpenOptions): js.Promise[T] = js.native
   /** Get the first pane container that contains the given item. */
   def paneContainerForItem(item: js.Object): js.UndefOr[Dock | WorkspaceCenter] = js.native
   /** Get the first pane container that contains an item with the given URI. */
@@ -209,14 +209,14 @@ trait Workspace extends js.Object {
        *  Asynchronously reopens the last-closed item's URI if it hasn't already
        *  been reopened.
        */
-  def reopenItem(): stdLib.Promise[js.UndefOr[js.Object]] = js.native
+  def reopenItem(): js.Promise[js.UndefOr[js.Object]] = js.native
   /** Performs a replace across all the specified files in the project. */
   def replace(
     regex: stdLib.RegExp,
     replacementText: java.lang.String,
     filePaths: js.Array[java.lang.String],
     iterator: js.Function1[/* result */ atomLib.Anon_FilePath, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   // Searching and Replacing
   /** Performs a search across all files in the workspace. */
   def scan(regex: stdLib.RegExp, iterator: js.Function1[/* result */ ScandalResult, scala.Unit]): CancellablePromise[java.lang.String | scala.Null] = js.native
@@ -231,12 +231,12 @@ trait Workspace extends js.Object {
        *  hide them. Otherwise, open the URL.
        *  Returns a Promise that resolves when the item is shown or hidden.
        */
-  def toggle(itemOrURI: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def toggle(itemOrURI: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
        *  Search the workspace for items matching the given URI. If any are found,
        *  hide them. Otherwise, open the URL.
        *  Returns a Promise that resolves when the item is shown or hidden.
        */
-  def toggle(itemOrURI: js.Object): stdLib.Promise[scala.Unit] = js.native
+  def toggle(itemOrURI: js.Object): js.Promise[scala.Unit] = js.native
 }
 

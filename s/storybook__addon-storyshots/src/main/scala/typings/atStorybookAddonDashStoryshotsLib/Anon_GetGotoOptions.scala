@@ -11,7 +11,7 @@ trait Anon_GetGotoOptions extends js.Object {
     js.Function2[
       /* page */ puppeteerLib.puppeteerMod.Page, 
       /* options */ atStorybookAddonDashStoryshotsLib.addonDashStoryshotsMod.ImageSnapshotOptions, 
-      stdLib.Promise[scala.Unit]
+      js.Promise[scala.Unit]
     ]
   ] = js.undefined
   var chromeExecutablePath: js.UndefOr[java.lang.String] = js.undefined

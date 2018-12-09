@@ -33,7 +33,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def addToCollection(refOrPath: java.lang.String, data: js.Object): stdLib.Promise[_] = js.native
+  def addToCollection(refOrPath: java.lang.String, data: js.Object): js.Promise[_] = js.native
   /**
        * Add a new Document to a Collection.
        * @param refOrPath CollectionReference or path.
@@ -44,7 +44,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def addToCollection(refOrPath: java.lang.String, data: js.Object, id: java.lang.String): stdLib.Promise[_] = js.native
+  def addToCollection(refOrPath: java.lang.String, data: js.Object, id: java.lang.String): js.Promise[_] = js.native
   /**
        * Add a new Document to a Collection.
        * @param refOrPath CollectionReference or path.
@@ -55,7 +55,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def addToCollection(refOrPath: js.Object, data: js.Object): stdLib.Promise[_] = js.native
+  def addToCollection(refOrPath: js.Object, data: js.Object): js.Promise[_] = js.native
   /**
        * Add a new Document to a Collection.
        * @param refOrPath CollectionReference or path.
@@ -66,7 +66,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def addToCollection(refOrPath: js.Object, data: js.Object, id: java.lang.String): stdLib.Promise[_] = js.native
+  def addToCollection(refOrPath: js.Object, data: js.Object, id: java.lang.String): js.Promise[_] = js.native
   /**
        * Bind a collection to a state property in your component. When then
        * collection changes in firestore, your component will re-render with
@@ -127,7 +127,7 @@ trait Rebase extends js.Object {
        * which resolves when the write is complete and rejects if there is an
        * error.
        */
-  def fetch(endpoint: java.lang.String, options: FetchOptions): stdLib.Promise[_] = js.native
+  def fetch(endpoint: java.lang.String, options: FetchOptions): js.Promise[_] = js.native
   /**
        * Fetch either a Collection or Document.
        * @param refOrPath CollectionReference, DocumentReference or path.
@@ -136,7 +136,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def get(refOrPath: java.lang.String, options: listenToCollectionOptions): stdLib.Promise[_] = js.native
+  def get(refOrPath: java.lang.String, options: listenToCollectionOptions): js.Promise[_] = js.native
   /**
        * Fetch either a Collection or Document.
        * @param refOrPath CollectionReference, DocumentReference or path.
@@ -145,7 +145,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def get(refOrPath: js.Object, options: listenToCollectionOptions): stdLib.Promise[_] = js.native
+  def get(refOrPath: js.Object, options: listenToCollectionOptions): js.Promise[_] = js.native
   /**
        * Allows you to listen to Firebase endpoints without binding those
        * changes to a state property. Instead, a callback will be invoked
@@ -203,7 +203,7 @@ trait Rebase extends js.Object {
        * which resolves when the write is complete and rejects if there is an
        * error.
        */
-  def post(endpoint: java.lang.String, options: PostOptions): stdLib.Promise[_] = js.native
+  def post(endpoint: java.lang.String, options: PostOptions): js.Promise[_] = js.native
   /**
        * Allows you to add data to a Firebase endpoint. *Adds data to a child
        * of the endpoint with a new Firebase push key*.
@@ -215,7 +215,7 @@ trait Rebase extends js.Object {
        * resolves when write is complete, but can be used immediately as the
        * reference to the child location."
        */
-  def push(endpoint: java.lang.String, options: PushOptions): stdLib.Promise[_] = js.native
+  def push(endpoint: java.lang.String, options: PushOptions): js.Promise[_] = js.native
   /**
        * Allows you to delete all data at the endpoint location.
        * @param endpoint The relative Firebase endpoint that you'd like to
@@ -227,7 +227,7 @@ trait Rebase extends js.Object {
        * which resolves when the write is complete and rejects if there is an
        * error.
        */
-  def remove(endpoint: java.lang.String): stdLib.Promise[_] = js.native
+  def remove(endpoint: java.lang.String): js.Promise[_] = js.native
   /**
        * Allows you to delete all data at the endpoint location.
        * @param endpoint The relative Firebase endpoint that you'd like to
@@ -239,7 +239,7 @@ trait Rebase extends js.Object {
        * which resolves when the write is complete and rejects if there is an
        * error.
        */
-  def remove(endpoint: java.lang.String, callback: js.Function1[/* result */ stdLib.Promise[_], scala.Unit]): stdLib.Promise[_] = js.native
+  def remove(endpoint: java.lang.String, callback: js.Function1[/* result */ js.Promise[_], scala.Unit]): js.Promise[_] = js.native
   /**
        * Clean up a listener. Listeners are automatically cleaned up when
        * components unmount, however if you wish to remove a listener while
@@ -259,7 +259,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def removeDoc(refOrPath: java.lang.String, data: js.Object): stdLib.Promise[_] = js.native
+  def removeDoc(refOrPath: java.lang.String, data: js.Object): js.Promise[_] = js.native
   /**
        * Deletes a document.
        * @param refOrPath DocumentReference or path.
@@ -268,7 +268,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def removeDoc(refOrPath: js.Object, data: js.Object): stdLib.Promise[_] = js.native
+  def removeDoc(refOrPath: js.Object, data: js.Object): js.Promise[_] = js.native
   /**
        * Removes documents from a collection. If no query is supplied, it
        * will remove all the documents. If a query is supplied, it will only
@@ -279,7 +279,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def removeFromCollection(refOrPath: java.lang.String, options: removeFromCollectionOptions): stdLib.Promise[_] = js.native
+  def removeFromCollection(refOrPath: java.lang.String, options: removeFromCollectionOptions): js.Promise[_] = js.native
   /**
        * Removes documents from a collection. If no query is supplied, it
        * will remove all the documents. If a query is supplied, it will only
@@ -290,7 +290,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def removeFromCollection(refOrPath: js.Object, options: removeFromCollectionOptions): stdLib.Promise[_] = js.native
+  def removeFromCollection(refOrPath: js.Object, options: removeFromCollectionOptions): js.Promise[_] = js.native
   /**
        * Removes every Firebase/Firestore listener.
        */
@@ -337,7 +337,7 @@ trait Rebase extends js.Object {
        * which resolves when the write is complete and rejects if there is an
        * error.
        */
-  def update(endpoint: java.lang.String, options: UpdateOptions): stdLib.Promise[_] = js.native
+  def update(endpoint: java.lang.String, options: UpdateOptions): js.Promise[_] = js.native
   /**
        * Update an existing document.
        * @param refOrPath DocumentReference or path.
@@ -346,7 +346,7 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def updateDoc(refOrPath: java.lang.String, data: js.Object): stdLib.Promise[_] = js.native
+  def updateDoc(refOrPath: java.lang.String, data: js.Object): js.Promise[_] = js.native
   /**
        * Update an existing document.
        * @param refOrPath DocumentReference or path.
@@ -355,6 +355,6 @@ trait Rebase extends js.Object {
        * if the document/collection does not exist or there are any read
        * errors.
        */
-  def updateDoc(refOrPath: js.Object, data: js.Object): stdLib.Promise[_] = js.native
+  def updateDoc(refOrPath: js.Object, data: js.Object): js.Promise[_] = js.native
 }
 

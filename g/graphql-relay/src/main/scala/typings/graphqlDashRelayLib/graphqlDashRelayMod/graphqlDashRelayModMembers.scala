@@ -14,8 +14,8 @@ object graphqlDashRelayModMembers extends js.Object {
   def connectionDefinitions(config: ConnectionConfig): GraphQLConnectionDefinitions = js.native
   def connectionFromArray[T](data: js.Array[T], args: ConnectionArguments): Connection[T] = js.native
   def connectionFromArraySlice[T](arraySlice: js.Array[T], args: ConnectionArguments, meta: ArraySliceMetaInfo): Connection[T] = js.native
-  def connectionFromPromisedArray[T](dataPromise: stdLib.Promise[js.Array[T]], args: ConnectionArguments): stdLib.Promise[Connection[T]] = js.native
-  def connectionFromPromisedArraySlice[T](dataPromise: stdLib.Promise[js.Array[T]], args: ConnectionArguments, arrayInfo: ArraySliceMetaInfo): stdLib.Promise[Connection[T]] = js.native
+  def connectionFromPromisedArray[T](dataPromise: js.Promise[js.Array[T]], args: ConnectionArguments): js.Promise[Connection[T]] = js.native
+  def connectionFromPromisedArraySlice[T](dataPromise: js.Promise[js.Array[T]], args: ConnectionArguments, arrayInfo: ArraySliceMetaInfo): js.Promise[Connection[T]] = js.native
   def cursorForObjectInConnection[T](data: js.Array[T], `object`: T): ConnectionCursor = js.native
   def cursorToOffset(cursor: ConnectionCursor): scala.Double = js.native
   def fromGlobalId(globalId: java.lang.String): ResolvedGlobalId = js.native

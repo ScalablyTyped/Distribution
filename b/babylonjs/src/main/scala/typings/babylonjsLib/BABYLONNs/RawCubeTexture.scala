@@ -80,7 +80,7 @@ class RawCubeTexture protected () extends CubeTexture {
            * @param lodOffset defines the offset applied to environment texture. This manages first LOD level used for IBL according to the roughness
            * @returns a promsie that resolves when the operation is complete
            */
-  def updateRGBDAsync(data: js.Array[js.Array[stdLib.ArrayBufferView]]): stdLib.Promise[scala.Unit] = js.native
+  def updateRGBDAsync(data: js.Array[js.Array[stdLib.ArrayBufferView]]): js.Promise[scala.Unit] = js.native
   /**
            * Updates a raw cube texture with RGBD encoded data.
            * @param data defines the array of data [mipmap][face] to use to create each face
@@ -92,7 +92,7 @@ class RawCubeTexture protected () extends CubeTexture {
   def updateRGBDAsync(
     data: js.Array[js.Array[stdLib.ArrayBufferView]],
     sphericalPolynomial: Nullable[SphericalPolynomial]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
            * Updates a raw cube texture with RGBD encoded data.
            * @param data defines the array of data [mipmap][face] to use to create each face
@@ -105,7 +105,7 @@ class RawCubeTexture protected () extends CubeTexture {
     data: js.Array[js.Array[stdLib.ArrayBufferView]],
     sphericalPolynomial: Nullable[SphericalPolynomial],
     lodScale: scala.Double
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
            * Updates a raw cube texture with RGBD encoded data.
            * @param data defines the array of data [mipmap][face] to use to create each face
@@ -119,7 +119,7 @@ class RawCubeTexture protected () extends CubeTexture {
     sphericalPolynomial: Nullable[SphericalPolynomial],
     lodScale: scala.Double,
     lodOffset: scala.Double
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 
 /**
@@ -135,6 +135,6 @@ object RawCubeTexture extends js.Object {
     sphericalPolynomial: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.SphericalPolynomial],
     lodScale: scala.Double,
     lodOffset: scala.Double
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

@@ -14,10 +14,10 @@ trait Socket extends js.Object {
   var resume_Original: freedomLib.freedomNs.Method0[scala.Unit] = js.native
   @JSName("write")
   var write_Original: freedomLib.freedomNs.Method1[stdLib.ArrayBuffer, WriteInfo] = js.native
-  def close(): stdLib.Promise[scala.Unit] = js.native
-  def connect(hostname: java.lang.String, port: scala.Double): stdLib.Promise[scala.Unit] = js.native
-  def getInfo(): stdLib.Promise[SocketInfo] = js.native
-  def listen(address: java.lang.String, port: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
+  def connect(hostname: java.lang.String, port: scala.Double): js.Promise[scala.Unit] = js.native
+  def getInfo(): js.Promise[SocketInfo] = js.native
+  def listen(address: java.lang.String, port: scala.Double): js.Promise[scala.Unit] = js.native
   def off(eventType: java.lang.String, f: js.Function1[/* i */ js.Object, scala.Unit]): scala.Unit = js.native
   @JSName("off")
   def off_onData(`type`: freedomLib.freedomLibStrings.onData, f: js.Function1[/* i */ ReadInfo, scala.Unit]): scala.Unit = js.native
@@ -35,9 +35,9 @@ trait Socket extends js.Object {
     `type`: freedomLib.freedomLibStrings.onDisconnect,
     f: js.Function1[/* i */ DisconnectInfo, scala.Unit]
   ): scala.Unit = js.native
-  def pause(): stdLib.Promise[scala.Unit] = js.native
-  def resume(): stdLib.Promise[scala.Unit] = js.native
-  def secure(): stdLib.Promise[scala.Unit] = js.native
-  def write(a: stdLib.ArrayBuffer): stdLib.Promise[WriteInfo] = js.native
+  def pause(): js.Promise[scala.Unit] = js.native
+  def resume(): js.Promise[scala.Unit] = js.native
+  def secure(): js.Promise[scala.Unit] = js.native
+  def write(a: stdLib.ArrayBuffer): js.Promise[WriteInfo] = js.native
 }
 

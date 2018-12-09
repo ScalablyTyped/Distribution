@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CustomerCards
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def create(data: stripeLib.Anon_Card): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  def create(data: stripeLib.Anon_Card): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   /**
                * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
                * then the new card will become the default. However, if the owner already has a default then it will not change. To change the default,
@@ -16,7 +16,7 @@ trait CustomerCards
                *
                * @returns Returns the card object.
                */
-  def create(data: stripeLib.Anon_Card, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  def create(data: stripeLib.Anon_Card, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   /**
                * When you create a new credit card, you must specify a customer or recipient to create it on. If the card's owner has no default card,
                * then the new card will become the default. However, if the owner already has a default then it will not change. To change the default,
@@ -28,12 +28,12 @@ trait CustomerCards
     data: stripeLib.Anon_Card,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   def create(
     data: stripeLib.Anon_Card,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
-  def del(cardId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  def del(cardId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**
                * You can delete cards from a customer or recipient. If you delete a card that is currently the
                * default source on a customer, then the most recently added source will become the new default.
@@ -48,7 +48,7 @@ trait CustomerCards
                *
                * @param cardId The ID of the card to be retrieved.
                */
-  def del(cardId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  def del(cardId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**
                * You can delete cards from a customer or recipient. If you delete a card that is currently the
                * default source on a customer, then the most recently added source will become the new default.
@@ -67,13 +67,13 @@ trait CustomerCards
     cardId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IDeleteConfirmation]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   def del(
     cardId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IDeleteConfirmation]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
-  def list(): stdLib.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.IListOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  def list(): js.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
+  def list(data: stripeLib.stripeMod.StripeNs.IListOptions): js.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
   /**
                * You can see a list of the cards belonging to a customer or recipient. Note that the 10 most recent
                * cards are always available by default on the customer or recipient object. If you need more than
@@ -88,7 +88,7 @@ trait CustomerCards
   def list(
     data: stripeLib.stripeMod.StripeNs.IListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
   /**
                * You can see a list of the cards belonging to a customer or recipient. Note that the 10 most recent
                * cards are always available by default on the customer or recipient object. If you need more than
@@ -104,20 +104,20 @@ trait CustomerCards
     data: stripeLib.stripeMod.StripeNs.IListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
   def list(
     data: stripeLib.stripeMod.StripeNs.IListOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
-  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
+  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
   def list(
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
-  def retrieve(cardId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.cardsNs.ICard]] = js.native
+  def retrieve(cardId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   /**
                * By default, you can see the 10 most recent cards stored on a customer or recipient directly on the customer or recipient object, but
                * you can also retrieve details about a specific card stored on the customer or recipient.
@@ -126,7 +126,7 @@ trait CustomerCards
                *
                * @param cardId The ID of the card to be retrieved.
                */
-  def retrieve(cardId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  def retrieve(cardId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   /**
                * By default, you can see the 10 most recent cards stored on a customer or recipient directly on the customer or recipient object, but
                * you can also retrieve details about a specific card stored on the customer or recipient.
@@ -139,12 +139,12 @@ trait CustomerCards
     cardId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   def retrieve(
     cardId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
-  def update(cardId: java.lang.String, data: stripeLib.stripeMod.StripeNs.cardsNs.ICardUpdateOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  def update(cardId: java.lang.String, data: stripeLib.stripeMod.StripeNs.cardsNs.ICardUpdateOptions): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   /**
                * If you need to update only some card details, like the billing address or expiration date, you can do so without having to re-enter the
                * full card details. Stripe also works directly with card networks so that your customers can continue using your service without
@@ -158,7 +158,7 @@ trait CustomerCards
     cardId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.cardsNs.ICardUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   /**
                * If you need to update only some card details, like the billing address or expiration date, you can do so without having to re-enter the
                * full card details. Stripe also works directly with card networks so that your customers can continue using your service without
@@ -173,11 +173,11 @@ trait CustomerCards
     data: stripeLib.stripeMod.StripeNs.cardsNs.ICardUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
   def update(
     cardId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.cardsNs.ICardUpdateOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.cardsNs.ICard]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.cardsNs.ICard] = js.native
 }
 

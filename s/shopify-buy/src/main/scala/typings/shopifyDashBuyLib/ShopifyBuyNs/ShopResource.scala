@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ShopResource extends js.Object {
-  def fetchInfo(): stdLib.Promise[Shop]
-  def fetchPolicies(): stdLib.Promise[Shop]
+  def fetchInfo(): js.Promise[Shop]
+  def fetchPolicies(): js.Promise[Shop]
 }
 

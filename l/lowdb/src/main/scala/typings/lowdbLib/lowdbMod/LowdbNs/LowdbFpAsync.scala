@@ -92,10 +92,10 @@ trait LowdbFpAsync[SchemaT] extends LowdbBase[SchemaT] {
   /**
        * @description Be careful: This function overwrites the whole database.
        */
-  def write[T](): stdLib.Promise[T] = js.native
+  def write[T](): js.Promise[T] = js.native
   /**
        * @description Be careful: This function overwrites the whole database.
        */
-  def write[T](returnValue: T): stdLib.Promise[T] = js.native
+  def write[T](returnValue: T): js.Promise[T] = js.native
 }
 

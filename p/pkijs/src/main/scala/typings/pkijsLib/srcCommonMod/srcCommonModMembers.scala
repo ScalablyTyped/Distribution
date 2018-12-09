@@ -78,7 +78,7 @@ object srcCommonModMembers extends js.Object {
     Zbuffer: stdLib.ArrayBuffer,
     keydatalen: scala.Double,
     SharedInfo: stdLib.ArrayBuffer
-  ): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  ): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
        * ANS X9.63 Key Derivation Function having a "Counter" as a parameter
        * 
@@ -92,7 +92,7 @@ object srcCommonModMembers extends js.Object {
     Zbuffer: stdLib.ArrayBuffer,
     Counter: scala.Double,
     SharedInfo: stdLib.ArrayBuffer
-  ): stdLib.PromiseLike[pkijsLib.Anon_Result] = js.native
+  ): js.Thenable[pkijsLib.Anon_Result] = js.native
   def setEngine(name: java.lang.String, crypto: stdLib.Crypto, subtle: stdLib.SubtleCrypto): scala.Unit = js.native
   /**
        * String preparation function. In a future here will be realization of algorithm from RFC4518

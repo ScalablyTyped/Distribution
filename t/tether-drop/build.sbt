@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "tether-drop"
-version := "v1.4-dt-20180910Z-6d9e18"
+version := "v1.4-dt-20180910Z-a599c1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b",
-  "org.scalablytyped" %%% "tether" % "v1.4-dt-20180910Z-92aa97")
+  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
+  "org.scalablytyped" %%% "tether" % "v1.4-dt-20180910Z-d719f6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

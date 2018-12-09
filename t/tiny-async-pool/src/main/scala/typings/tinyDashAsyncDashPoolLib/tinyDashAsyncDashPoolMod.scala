@@ -25,7 +25,7 @@ object tinyDashAsyncDashPoolMod extends js.Object {
   def apply[IN, OUT](
     poolLimit: scala.Double,
     array: js.Array[IN],
-    iteratorFn: js.Function1[/* generator */ IN, stdLib.Promise[OUT]]
-  ): stdLib.Promise[js.Array[OUT]] = js.native
+    iteratorFn: js.Function1[/* generator */ IN, js.Promise[OUT]]
+  ): js.Promise[js.Array[OUT]] = js.native
 }
 

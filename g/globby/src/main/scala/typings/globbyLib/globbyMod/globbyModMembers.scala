@@ -11,11 +11,11 @@ object globbyModMembers extends js.Object {
   /**
    * Returns a `Promise<Array>` of matching paths.
    */
-  def apply(patterns: java.lang.String | js.Array[java.lang.String]): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def apply(patterns: java.lang.String | js.Array[java.lang.String]): js.Promise[js.Array[java.lang.String]] = js.native
   /**
    * Returns a `Promise<Array>` of matching paths.
    */
-  def apply(patterns: java.lang.String | js.Array[java.lang.String], options: Options): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def apply(patterns: java.lang.String | js.Array[java.lang.String], options: Options): js.Promise[js.Array[java.lang.String]] = js.native
   /**
        * Returns an `Array<Object>` in the format `{ pattern: string, opts: Object }`,
        * which can be passed as arguments to [`fast-glob`](https://github.com/mrmlnc/fast-glob).
@@ -68,7 +68,7 @@ object globbyModMembers extends js.Object {
        * })();
        * ```
        */
-  def gitignore(): stdLib.Promise[js.Function1[/* path */ java.lang.String, scala.Boolean]] = js.native
+  def gitignore(): js.Promise[js.Function1[/* path */ java.lang.String, scala.Boolean]] = js.native
   /**
        * Returns a Promise<(path: string) => boolean> indicating whether a given path is ignored
        * via a `.gitignore` file.
@@ -85,7 +85,7 @@ object globbyModMembers extends js.Object {
        * })();
        * ```
        */
-  def gitignore(options: globbyLib.Anon_Cwd): stdLib.Promise[js.Function1[/* path */ java.lang.String, scala.Boolean]] = js.native
+  def gitignore(options: globbyLib.Anon_Cwd): js.Promise[js.Function1[/* path */ java.lang.String, scala.Boolean]] = js.native
   /**
        * Returns a boolean of whether there are any special glob characters in the `patterns`.
        *

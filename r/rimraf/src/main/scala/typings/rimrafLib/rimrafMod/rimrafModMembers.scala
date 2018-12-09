@@ -16,8 +16,8 @@ object rimrafModMembers extends js.Object {
     options: rimrafLib.rimrafMod.rimrafNs.Options,
     callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def `__promisify__`(path: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def `__promisify__`(path: java.lang.String, options: rimrafLib.rimrafMod.rimrafNs.Options): stdLib.Promise[scala.Unit] = js.native
+  def `__promisify__`(path: java.lang.String): js.Promise[scala.Unit] = js.native
+  def `__promisify__`(path: java.lang.String, options: rimrafLib.rimrafMod.rimrafNs.Options): js.Promise[scala.Unit] = js.native
   def sync(path: java.lang.String): scala.Unit = js.native
   def sync(path: java.lang.String, options: rimrafLib.rimrafMod.rimrafNs.Options): scala.Unit = js.native
 }

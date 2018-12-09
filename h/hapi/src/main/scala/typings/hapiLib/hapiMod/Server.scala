@@ -328,10 +328,7 @@ class Server () extends js.Object {
        * The method does not provide version dependency which should be implemented using npm peer dependencies.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdependencydependencies-after)
        */
-  def dependency(
-    dependencies: Dependencies,
-    after: js.Function1[/* server */ this.type, stdLib.Promise[scala.Unit]]
-  ): scala.Unit = js.native
+  def dependency(dependencies: Dependencies, after: js.Function1[/* server */ this.type, js.Promise[scala.Unit]]): scala.Unit = js.native
   /**
        * Registers a custom content encoding compressor to extend the built-in support for 'gzip' and 'deflate' where:
        * @param encoding - the encoder name string.
@@ -499,7 +496,7 @@ class Server () extends js.Object {
        * If you must try to resume after an error, call server.stop() first to reset the server state.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverinitialize)
        */
-  def initialize(): stdLib.Promise[scala.Unit] = js.native
+  def initialize(): js.Promise[scala.Unit] = js.native
   /**
        * Injects a request into the server simulating an incoming HTTP request without making an actual socket connection. Injection is useful for testing purposes as well as for invoking routing logic
        * internally without the overhead and limitations of the network stack. The method utilizes the shot module for performing injections, with some additional options and response properties:
@@ -537,7 +534,7 @@ class Server () extends js.Object {
        * * request - the request object.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverinjectoptions)
        */
-  def inject(options: ServerInjectOptions): stdLib.Promise[ServerInjectResponse] = js.native
+  def inject(options: ServerInjectOptions): js.Promise[ServerInjectResponse] = js.native
   /**
        * Injects a request into the server simulating an incoming HTTP request without making an actual socket connection. Injection is useful for testing purposes as well as for invoking routing logic
        * internally without the overhead and limitations of the network stack. The method utilizes the shot module for performing injections, with some additional options and response properties:
@@ -575,7 +572,7 @@ class Server () extends js.Object {
        * * request - the request object.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverinjectoptions)
        */
-  def inject(options: java.lang.String): stdLib.Promise[ServerInjectResponse] = js.native
+  def inject(options: java.lang.String): js.Promise[ServerInjectResponse] = js.native
   /**
        * Logs server events that cannot be associated with a specific request. When called the server emits a 'log' event which can be used by other listeners or plugins to record the information or
        * output to the console. The arguments are:
@@ -841,13 +838,13 @@ class Server () extends js.Object {
        */
   def path(relativeTo: java.lang.String): scala.Unit = js.native
   /* tslint:disable-next-line:unified-signatures */
-  def register(plugins: Plugin[_]): stdLib.Promise[scala.Unit] = js.native
+  def register(plugins: Plugin[_]): js.Promise[scala.Unit] = js.native
   /* tslint:disable-next-line:unified-signatures */
-  def register(plugins: Plugin[_], options: ServerRegisterOptions): stdLib.Promise[scala.Unit] = js.native
+  def register(plugins: Plugin[_], options: ServerRegisterOptions): js.Promise[scala.Unit] = js.native
   /* tslint:disable-next-line:unified-signatures */
-  def register(plugins: js.Array[Plugin[_] | ServerRegisterPluginObject[_]]): stdLib.Promise[scala.Unit] = js.native
+  def register(plugins: js.Array[Plugin[_] | ServerRegisterPluginObject[_]]): js.Promise[scala.Unit] = js.native
   /* tslint:disable-next-line:unified-signatures */
-  def register(plugins: js.Array[Plugin[_] | ServerRegisterPluginObject[_]], options: ServerRegisterOptions): stdLib.Promise[scala.Unit] = js.native
+  def register(plugins: js.Array[Plugin[_] | ServerRegisterPluginObject[_]], options: ServerRegisterOptions): js.Promise[scala.Unit] = js.native
   /**
        * Registers a plugin where:
        * @param plugins - one or an array of:
@@ -867,7 +864,7 @@ class Server () extends js.Object {
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverregisterplugins-options)
        */
   /* tslint:disable-next-line:no-unnecessary-generics */
-  def register[T](plugin: ServerRegisterPluginObject[T]): stdLib.Promise[scala.Unit] = js.native
+  def register[T](plugin: ServerRegisterPluginObject[T]): js.Promise[scala.Unit] = js.native
   /**
        * Registers a plugin where:
        * @param plugins - one or an array of:
@@ -887,11 +884,11 @@ class Server () extends js.Object {
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverregisterplugins-options)
        */
   /* tslint:disable-next-line:no-unnecessary-generics */
-  def register[T](plugin: ServerRegisterPluginObject[T], options: ServerRegisterOptions): stdLib.Promise[scala.Unit] = js.native
+  def register[T](plugin: ServerRegisterPluginObject[T], options: ServerRegisterOptions): js.Promise[scala.Unit] = js.native
   /* tslint:disable-next-line:no-unnecessary-generics */
-  def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z]): stdLib.Promise[scala.Unit] = js.native
+  def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z]): js.Promise[scala.Unit] = js.native
   /* tslint:disable-next-line:no-unnecessary-generics */
-  def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z], options: ServerRegisterOptions): stdLib.Promise[scala.Unit] = js.native
+  def register[T, U, V, W, X, Y, Z](plugins: ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z], options: ServerRegisterOptions): js.Promise[scala.Unit] = js.native
   /**
        * Adds a route where:
        * @param route - a route configuration object or an array of configuration objects where each object contains:
@@ -983,7 +980,7 @@ class Server () extends js.Object {
        *     is started again, the second call to server.start() is ignored. No events will be emitted and no extension points invoked.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverstart)
        */
-  def start(): stdLib.Promise[scala.Unit] = js.native
+  def start(): js.Promise[scala.Unit] = js.native
   /**
        * HTTP state management uses client cookies to persist a state across multiple requests.
        * @param name - the cookie name string.
@@ -1009,7 +1006,7 @@ class Server () extends js.Object {
        * @return Return value: none.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverstopoptions)
        */
-  def stop(): stdLib.Promise[scala.Unit] = js.native
+  def stop(): js.Promise[scala.Unit] = js.native
   /**
        * Stops the server's listener by refusing to accept any new connections or requests (existing connections will continue until closed or timeout), where:
        * @param options - (optional) object with:
@@ -1017,7 +1014,7 @@ class Server () extends js.Object {
        * @return Return value: none.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverstopoptions)
        */
-  def stop(options: hapiLib.Anon_Timeout): stdLib.Promise[scala.Unit] = js.native
+  def stop(options: hapiLib.Anon_Timeout): js.Promise[scala.Unit] = js.native
   /**
        * Returns a copy of the routing table where:
        * @param host - (optional) host to filter routes matching a specific virtual host. Defaults to all virtual hosts.

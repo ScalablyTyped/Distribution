@@ -11,7 +11,7 @@ trait OpenApi extends js.Object {
     route: java.lang.String,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def any(
@@ -19,14 +19,14 @@ trait OpenApi extends js.Object {
     options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def delete(
     route: java.lang.String,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def delete(
@@ -34,14 +34,14 @@ trait OpenApi extends js.Object {
     options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def get(
     route: java.lang.String,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def get(
@@ -49,15 +49,15 @@ trait OpenApi extends js.Object {
     options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
-  def handler(event: js.Object, context: js.Object): stdLib.Promise[_] = js.native
+  def handler(event: js.Object, context: js.Object): js.Promise[_] = js.native
   def head(
     route: java.lang.String,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def head(
@@ -65,13 +65,13 @@ trait OpenApi extends js.Object {
     options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
     handler: js.Function1[/* req */ js.UndefOr[js.Any], _]
   ): scala.Unit = js.native
-  def onEvent(onEventFunc: js.Function1[/* req */ js.UndefOr[js.Any], stdLib.Promise[_]]): scala.Unit = js.native
-  def onSchedule(onScheduleFunc: js.Function1[/* req */ js.UndefOr[js.Any], stdLib.Promise[_]]): scala.Unit = js.native
+  def onEvent(onEventFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[_]]): scala.Unit = js.native
+  def onSchedule(onScheduleFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[_]]): scala.Unit = js.native
   def options(
     route: java.lang.String,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def options(
@@ -79,14 +79,14 @@ trait OpenApi extends js.Object {
     options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def patch(
     route: java.lang.String,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def patch(
@@ -94,14 +94,14 @@ trait OpenApi extends js.Object {
     options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def post(
     route: java.lang.String,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def post(
@@ -109,14 +109,14 @@ trait OpenApi extends js.Object {
     options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def put(
     route: java.lang.String,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
   def put(
@@ -124,9 +124,9 @@ trait OpenApi extends js.Object {
     options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
     handler: js.Function1[
       /* req */ js.UndefOr[js.Object], 
-      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | js.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
     ]
   ): scala.Unit = js.native
-  def setAuthorizer(authorizerFunc: js.Function1[/* req */ js.UndefOr[js.Any], stdLib.Promise[_]]): scala.Unit = js.native
+  def setAuthorizer(authorizerFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[_]]): scala.Unit = js.native
 }
 

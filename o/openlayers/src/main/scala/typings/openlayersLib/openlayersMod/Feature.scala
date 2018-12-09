@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("openlayers", "Feature")
+@JSImport("openlayers", "Feature")
 @js.native
-class Feature () extends js.Object {
+class Feature () extends Object {
   /**
        * @classdesc
        * A vector object for geographic features with a geometry and other

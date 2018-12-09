@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ReflectNs extends js.Object {
   @JSName("apply")
-  def apply(target: js.Function, thisArgument: js.Any, argumentsList: stdLib.ArrayLike[_]): js.Any = js.native
-  def construct(target: js.Function, argumentsList: stdLib.ArrayLike[_]): js.Any = js.native
+  def apply(target: coreDashJsLib.Function, thisArgument: js.Any, argumentsList: stdLib.ArrayLike[_]): js.Any = js.native
+  def construct(target: coreDashJsLib.Function, argumentsList: stdLib.ArrayLike[_]): js.Any = js.native
   /**
            * Define a unique metadata entry on the target.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -33,7 +33,7 @@ object ReflectNs extends js.Object {
            *  }
            * ```
            */
-  def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: js.Object): scala.Unit = js.native
+  def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: coreDashJsLib.Object): scala.Unit = js.native
   /**
            * Define a unique metadata entry on the target.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -56,7 +56,12 @@ object ReflectNs extends js.Object {
            *  }
            * ```
            */
-  def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: js.Object, targetKey: java.lang.String): scala.Unit = js.native
+  def defineMetadata(
+    metadataKey: js.Any,
+    metadataValue: js.Any,
+    target: coreDashJsLib.Object,
+    targetKey: java.lang.String
+  ): scala.Unit = js.native
   /**
            * Define a unique metadata entry on the target.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -79,7 +84,7 @@ object ReflectNs extends js.Object {
            *  }
            * ```
            */
-  def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: js.Object, targetKey: js.Symbol): scala.Unit = js.native
+  def defineMetadata(metadataKey: js.Any, metadataValue: js.Any, target: coreDashJsLib.Object, targetKey: js.Symbol): scala.Unit = js.native
   def defineProperty(target: js.Any, propertyKey: stdLib.PropertyKey, attributes: stdLib.PropertyDescriptor): scala.Boolean = js.native
   /**
            * Deletes the metadata entry from the target object with the provided key.
@@ -98,7 +103,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.deleteMetadata("custom:annotation", Example);
            * ```
            */
-  def deleteMetadata(metadataKey: js.Any, target: js.Object): scala.Boolean = js.native
+  def deleteMetadata(metadataKey: js.Any, target: coreDashJsLib.Object): scala.Boolean = js.native
   /**
            * Deletes the metadata entry from the target object with the provided key.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -116,7 +121,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.deleteMetadata("custom:annotation", Example);
            * ```
            */
-  def deleteMetadata(metadataKey: js.Any, target: js.Object, targetKey: java.lang.String): scala.Boolean = js.native
+  def deleteMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: java.lang.String): scala.Boolean = js.native
   /**
            * Deletes the metadata entry from the target object with the provided key.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -134,7 +139,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.deleteMetadata("custom:annotation", Example);
            * ```
            */
-  def deleteMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): scala.Boolean = js.native
+  def deleteMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: js.Symbol): scala.Boolean = js.native
   def deleteProperty(target: js.Any, propertyKey: stdLib.PropertyKey): scala.Boolean = js.native
   def enumerate(target: js.Any): nodeLib.IterableIterator[_] = js.native
   def get(target: js.Any, propertyKey: stdLib.PropertyKey): js.Any = js.native
@@ -156,7 +161,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getMetadata("custom:annotation", Example);
            * ```
            */
-  def getMetadata(metadataKey: js.Any, target: js.Object): js.Any = js.native
+  def getMetadata(metadataKey: js.Any, target: coreDashJsLib.Object): js.Any = js.native
   /**
            * Gets the metadata value for the provided metadata key on the target object or its prototype chain.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -174,7 +179,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getMetadata("custom:annotation", Example);
            * ```
            */
-  def getMetadata(metadataKey: js.Any, target: js.Object, targetKey: java.lang.String): js.Any = js.native
+  def getMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: java.lang.String): js.Any = js.native
   /**
            * Gets the metadata value for the provided metadata key on the target object or its prototype chain.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -192,7 +197,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getMetadata("custom:annotation", Example);
            * ```
            */
-  def getMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): js.Any = js.native
+  def getMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: js.Symbol): js.Any = js.native
   /**
            * Gets the metadata keys defined on the target object or its prototype chain.
            * @param target The target object on which the metadata is defined.
@@ -209,7 +214,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getMetadataKeys(Example);
            * ```
            */
-  def getMetadataKeys(target: js.Object): coreDashJsLib.Array[_] = js.native
+  def getMetadataKeys(target: coreDashJsLib.Object): coreDashJsLib.Array[_] = js.native
   /**
            * Gets the metadata keys defined on the target object or its prototype chain.
            * @param target The target object on which the metadata is defined.
@@ -226,7 +231,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getMetadataKeys(Example);
            * ```
            */
-  def getMetadataKeys(target: js.Object, targetKey: java.lang.String): coreDashJsLib.Array[_] = js.native
+  def getMetadataKeys(target: coreDashJsLib.Object, targetKey: java.lang.String): coreDashJsLib.Array[_] = js.native
   /**
            * Gets the metadata keys defined on the target object or its prototype chain.
            * @param target The target object on which the metadata is defined.
@@ -243,7 +248,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getMetadataKeys(Example);
            * ```
            */
-  def getMetadataKeys(target: js.Object, targetKey: js.Symbol): coreDashJsLib.Array[_] = js.native
+  def getMetadataKeys(target: coreDashJsLib.Object, targetKey: js.Symbol): coreDashJsLib.Array[_] = js.native
   /**
            * Gets the metadata value for the provided metadata key on the target object.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -261,7 +266,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getOwnMetadata("custom:annotation", Example);
            * ```
            */
-  def getOwnMetadata(metadataKey: js.Any, target: js.Object): js.Any = js.native
+  def getOwnMetadata(metadataKey: js.Any, target: coreDashJsLib.Object): js.Any = js.native
   /**
            * Gets the metadata value for the provided metadata key on the target object.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -279,7 +284,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getOwnMetadata("custom:annotation", Example);
            * ```
            */
-  def getOwnMetadata(metadataKey: js.Any, target: js.Object, targetKey: java.lang.String): js.Any = js.native
+  def getOwnMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: java.lang.String): js.Any = js.native
   /**
            * Gets the metadata value for the provided metadata key on the target object.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -297,7 +302,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getOwnMetadata("custom:annotation", Example);
            * ```
            */
-  def getOwnMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): js.Any = js.native
+  def getOwnMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: js.Symbol): js.Any = js.native
   /**
            * Gets the unique metadata keys defined on the target object.
            * @param target The target object on which the metadata is defined.
@@ -314,7 +319,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getOwnMetadataKeys(Example);
            * ```
            */
-  def getOwnMetadataKeys(target: js.Object): coreDashJsLib.Array[_] = js.native
+  def getOwnMetadataKeys(target: coreDashJsLib.Object): coreDashJsLib.Array[_] = js.native
   /**
            * Gets the unique metadata keys defined on the target object.
            * @param target The target object on which the metadata is defined.
@@ -331,7 +336,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getOwnMetadataKeys(Example);
            * ```
            */
-  def getOwnMetadataKeys(target: js.Object, targetKey: java.lang.String): coreDashJsLib.Array[_] = js.native
+  def getOwnMetadataKeys(target: coreDashJsLib.Object, targetKey: java.lang.String): coreDashJsLib.Array[_] = js.native
   /**
            * Gets the unique metadata keys defined on the target object.
            * @param target The target object on which the metadata is defined.
@@ -348,7 +353,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.getOwnMetadataKeys(Example);
            * ```
            */
-  def getOwnMetadataKeys(target: js.Object, targetKey: js.Symbol): coreDashJsLib.Array[_] = js.native
+  def getOwnMetadataKeys(target: coreDashJsLib.Object, targetKey: js.Symbol): coreDashJsLib.Array[_] = js.native
   def getOwnPropertyDescriptor(target: js.Any, propertyKey: stdLib.PropertyKey): stdLib.PropertyDescriptor = js.native
   def getPrototypeOf(target: js.Any): js.Any = js.native
   def has(target: js.Any, propertyKey: java.lang.String): scala.Boolean = js.native
@@ -370,7 +375,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.hasMetadata("custom:annotation", Example);
            * ```
            */
-  def hasMetadata(metadataKey: js.Any, target: js.Object): scala.Boolean = js.native
+  def hasMetadata(metadataKey: js.Any, target: coreDashJsLib.Object): scala.Boolean = js.native
   /**
            * Gets a value indicating whether the target object or its prototype chain has the provided metadata key defined.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -388,7 +393,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.hasMetadata("custom:annotation", Example);
            * ```
            */
-  def hasMetadata(metadataKey: js.Any, target: js.Object, targetKey: java.lang.String): scala.Boolean = js.native
+  def hasMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: java.lang.String): scala.Boolean = js.native
   /**
            * Gets a value indicating whether the target object or its prototype chain has the provided metadata key defined.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -406,7 +411,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.hasMetadata("custom:annotation", Example);
            * ```
            */
-  def hasMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): scala.Boolean = js.native
+  def hasMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: js.Symbol): scala.Boolean = js.native
   /**
            * Gets a value indicating whether the target object has the provided metadata key defined.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -425,7 +430,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.hasOwnMetadata("custom:annotation", Example);
            * ```
            */
-  def hasOwnMetadata(metadataKey: js.Any, target: js.Object): scala.Boolean = js.native
+  def hasOwnMetadata(metadataKey: js.Any, target: coreDashJsLib.Object): scala.Boolean = js.native
   /**
            * Gets a value indicating whether the target object has the provided metadata key defined.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -444,7 +449,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.hasOwnMetadata("custom:annotation", Example);
            * ```
            */
-  def hasOwnMetadata(metadataKey: js.Any, target: js.Object, targetKey: java.lang.String): scala.Boolean = js.native
+  def hasOwnMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: java.lang.String): scala.Boolean = js.native
   /**
            * Gets a value indicating whether the target object has the provided metadata key defined.
            * @param metadataKey A key used to store and retrieve metadata.
@@ -463,7 +468,7 @@ object ReflectNs extends js.Object {
            *  result = Reflect.hasOwnMetadata("custom:annotation", Example);
            * ```
            */
-  def hasOwnMetadata(metadataKey: js.Any, target: js.Object, targetKey: js.Symbol): scala.Boolean = js.native
+  def hasOwnMetadata(metadataKey: js.Any, target: coreDashJsLib.Object, targetKey: js.Symbol): scala.Boolean = js.native
   def isExtensible(target: js.Any): scala.Boolean = js.native
   /**
            * A default metadata decorator factory that can be used on a class, class member, or parameter.

@@ -14,7 +14,7 @@ trait Producer extends js.Object {
            * @param message A message.
            * @return The consumer response.
            */
-  def produce[T](queue: java.lang.String, message: js.Any): stdLib.Promise[T] = js.native
+  def produce[T](queue: java.lang.String, message: js.Any): js.Promise[T] = js.native
   /**
            * Send messages to a named queue.
            *
@@ -22,6 +22,6 @@ trait Producer extends js.Object {
            * @param message A message.
            * @return The consumer response.
            */
-  def produce[T](queue: java.lang.String, message: js.Any, options: ProducerOptions): stdLib.Promise[T] = js.native
+  def produce[T](queue: java.lang.String, message: js.Any, options: ProducerOptions): js.Promise[T] = js.native
 }
 

@@ -30,7 +30,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 *
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#controller-controller-name-as-string--controller-f
   		 */
-  var controller: js.UndefOr[java.lang.String | js.Function] = js.undefined
+  var controller: js.UndefOr[java.lang.String | angularLib.angularMod.Global.Function] = js.undefined
   /**
   		 * This is reserved for the developer. You have our guarantee to be able to use this and not worry about
   		 * future versions of formly overriding your usage and preventing you from upgrading :-)

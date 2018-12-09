@@ -17,7 +17,7 @@ package object mongooseMod {
     /* next */ HookNextFunction, 
     /* done */ HookDoneFunction, 
     /* docs */ js.Array[js.Any], 
-    stdLib.Promise[js.Any] | scala.Unit
+    js.Promise[js.Any] | scala.Unit
   ]
   type HookDoneFunction = js.Function1[/* error */ js.UndefOr[Error], js.Any]
   type HookErrorCallback = js.Function1[/* error */ js.UndefOr[Error], js.Any]
@@ -27,7 +27,7 @@ package object mongooseMod {
     /* this */ T, 
     /* next */ HookNextFunction, 
     /* docs */ js.Array[js.Any], 
-    stdLib.Promise[js.Any] | scala.Unit
+    js.Promise[js.Any] | scala.Unit
   ]
   type Mongoose = js.Any
   /*

@@ -13,11 +13,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The ARN of the CloudWatch Logs log group to receive access logs.
          */
-    var destinationArn: js.UndefOr[java.lang.String] = js.undefined
+    var destinationArn: js.UndefOr[String] = js.undefined
     /**
          * A single line format of the access logs of data, as specified by selected $context variables. The format must include at least $context.requestId.
          */
-    var format: js.UndefOr[java.lang.String] = js.undefined
+    var format: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25,11 +25,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The version of the API keys used for the account.
          */
-    var apiKeyVersion: js.UndefOr[java.lang.String] = js.undefined
+    var apiKeyVersion: js.UndefOr[String] = js.undefined
     /**
          * The ARN of an Amazon CloudWatch role for the current Account. 
          */
-    var cloudwatchRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var cloudwatchRoleArn: js.UndefOr[String] = js.undefined
     /**
          * A list of features supported for the account. When usage plans are enabled, the features list will include an entry of "UsagePlans".
          */
@@ -49,19 +49,19 @@ object APIGatewayNs extends js.Object {
     /**
          * An AWS Marketplace customer identifier , when integrating with the AWS SaaS Marketplace.
          */
-    var customerId: js.UndefOr[java.lang.String] = js.undefined
+    var customerId: js.UndefOr[String] = js.undefined
     /**
          * The description of the API Key.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether the API Key can be used by callers.
          */
-    var enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The identifier of the API Key.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The timestamp when the API Key was last updated.
          */
@@ -69,7 +69,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The name of the API Key.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * A list of Stage resources that are associated with the ApiKey resource.
          */
@@ -77,7 +77,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The value of the API Key.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -98,7 +98,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfApiKey] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * A list of warning messages logged during the import of API keys when the failOnWarnings option is set to true.
          */
@@ -110,11 +110,11 @@ object APIGatewayNs extends js.Object {
     /**
          * API Id of the associated API stage in a usage plan.
          */
-    var apiId: js.UndefOr[java.lang.String] = js.undefined
+    var apiId: js.UndefOr[String] = js.undefined
     /**
          * API stage name of the associated API stage in a usage plan.
          */
-    var stage: js.UndefOr[java.lang.String] = js.undefined
+    var stage: js.UndefOr[String] = js.undefined
     /**
          * Map containing method level throttling information for API stage in a usage plan.
          */
@@ -126,11 +126,11 @@ object APIGatewayNs extends js.Object {
     /**
          * Optional customer-defined field, used in OpenAPI imports and exports without functional impact.
          */
-    var authType: js.UndefOr[java.lang.String] = js.undefined
+    var authType: js.UndefOr[String] = js.undefined
     /**
          * Specifies the required credentials as an IAM role for API Gateway to invoke the authorizer. To specify an IAM role for API Gateway to assume, use the role's Amazon Resource Name (ARN). To use resource-based permissions on the Lambda function, specify null.
          */
-    var authorizerCredentials: js.UndefOr[java.lang.String] = js.undefined
+    var authorizerCredentials: js.UndefOr[String] = js.undefined
     /**
          * The TTL in seconds of cached authorizer results. If it equals 0, authorization caching is disabled. If it is greater than 0, API Gateway will cache authorizer responses. If this field is not set, the default value is 300. The maximum value is 3600, or 1 hour.
          */
@@ -138,23 +138,23 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies the authorizer's Uniform Resource Identifier (URI). For TOKEN or REQUEST authorizers, this must be a well-formed Lambda function URI, for example, arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:{account_id}:function:{lambda_function_name}/invocations. In general, the URI has this form arn:aws:apigateway:{region}:lambda:path/{service_api}, where {region} is the same as the region hosting the Lambda function, path indicates that the remaining substring in the URI should be treated as the path to the resource, including the initial /. For Lambda functions, this is usually of the form /2015-03-31/functions/[FunctionARN]/invocations.
          */
-    var authorizerUri: js.UndefOr[java.lang.String] = js.undefined
+    var authorizerUri: js.UndefOr[String] = js.undefined
     /**
          * The identifier for the authorizer resource.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The identity source for which authorization is requested. For a TOKEN or COGNITO_USER_POOLS authorizer, this is required and specifies the request header mapping expression for the custom header holding the authorization token submitted by the client. For example, if the token header name is Auth, the header mapping expression is method.request.header.Auth.For the REQUEST authorizer, this is required when authorization caching is enabled. The value is a comma-separated string of one or more mapping expressions of the specified request parameters. For example, if an Auth header, a Name query string parameter are defined as identity sources, this value is method.request.header.Auth, method.request.querystring.Name. These parameters will be used to derive the authorization caching key and to perform runtime validation of the REQUEST authorizer by verifying all of the identity-related request parameters are present, not null and non-empty. Only when this is true does the authorizer invoke the authorizer Lambda function, otherwise, it returns a 401 Unauthorized response without calling the Lambda function. The valid value is a string of comma-separated mapping expressions of the specified request parameters. When the authorization caching is not enabled, this property is optional.
          */
-    var identitySource: js.UndefOr[java.lang.String] = js.undefined
+    var identitySource: js.UndefOr[String] = js.undefined
     /**
          * A validation expression for the incoming identity token. For TOKEN authorizers, this value is a regular expression. API Gateway will match the aud field of the incoming token from the client against the specified regular expression. It will invoke the authorizer's Lambda function when there is a match. Otherwise, it will return a 401 Unauthorized response without calling the Lambda function. The validation expression does not apply to the REQUEST authorizer.
          */
-    var identityValidationExpression: js.UndefOr[java.lang.String] = js.undefined
+    var identityValidationExpression: js.UndefOr[String] = js.undefined
     /**
          * [Required] The name of the authorizer.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * A list of the Amazon Cognito user pool ARNs for the COGNITO_USER_POOLS authorizer. Each element is of this format: arn:aws:cognito-idp:{region}:{account_id}:userpool/{user_pool_id}. For a TOKEN or REQUEST authorizer, this is not defined. 
          */
@@ -171,7 +171,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfAuthorizer] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -179,15 +179,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The base path name that callers of the API must provide as part of the URL after the domain name.
          */
-    var basePath: js.UndefOr[java.lang.String] = js.undefined
+    var basePath: js.UndefOr[String] = js.undefined
     /**
          * The string identifier of the associated RestApi.
          */
-    var restApiId: js.UndefOr[java.lang.String] = js.undefined
+    var restApiId: js.UndefOr[String] = js.undefined
     /**
          * The name of the associated stage.
          */
-    var stage: js.UndefOr[java.lang.String] = js.undefined
+    var stage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -196,7 +196,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfBasePathMapping] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -204,7 +204,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The ID of the canary deployment.
          */
-    var deploymentId: js.UndefOr[java.lang.String] = js.undefined
+    var deploymentId: js.UndefOr[String] = js.undefined
     /**
          * The percent (0-100) of traffic diverted to a canary deployment.
          */
@@ -216,7 +216,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A Boolean flag to indicate whether the canary deployment uses the stage cache or not.
          */
-    var useStageCache: js.UndefOr[scala.Boolean] = js.undefined
+    var useStageCache: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -232,7 +232,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The identifier of the client certificate.
          */
-    var clientCertificateId: js.UndefOr[java.lang.String] = js.undefined
+    var clientCertificateId: js.UndefOr[String] = js.undefined
     /**
          * The timestamp when the client certificate was created.
          */
@@ -240,7 +240,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The description of the client certificate.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The timestamp when the client certificate will expire.
          */
@@ -248,7 +248,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The PEM-encoded public key of the client certificate, which can be used to configure certificate authentication in the integration endpoint .
          */
-    var pemEncodedCertificate: js.UndefOr[java.lang.String] = js.undefined
+    var pemEncodedCertificate: js.UndefOr[String] = js.undefined
   }
   
   
@@ -257,7 +257,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfClientCertificate] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -265,23 +265,23 @@ object APIGatewayNs extends js.Object {
     /**
          * An AWS Marketplace customer identifier , when integrating with the AWS SaaS Marketplace.
          */
-    var customerId: js.UndefOr[java.lang.String] = js.undefined
+    var customerId: js.UndefOr[String] = js.undefined
     /**
          * The description of the ApiKey.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether the ApiKey can be used by callers.
          */
-    var enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether (true) or not (false) the key identifier is distinct from the created API key value.
          */
-    var generateDistinctId: js.UndefOr[scala.Boolean] = js.undefined
+    var generateDistinctId: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the ApiKey.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * DEPRECATED FOR USAGE PLANS - Specifies stages associated with the API key.
          */
@@ -289,7 +289,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies a value of the API key.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -297,11 +297,11 @@ object APIGatewayNs extends js.Object {
     /**
          * Optional customer-defined field, used in OpenAPI imports and exports without functional impact.
          */
-    var authType: js.UndefOr[java.lang.String] = js.undefined
+    var authType: js.UndefOr[String] = js.undefined
     /**
          * Specifies the required credentials as an IAM role for API Gateway to invoke the authorizer. To specify an IAM role for API Gateway to assume, use the role's Amazon Resource Name (ARN). To use resource-based permissions on the Lambda function, specify null.
          */
-    var authorizerCredentials: js.UndefOr[java.lang.String] = js.undefined
+    var authorizerCredentials: js.UndefOr[String] = js.undefined
     /**
          * The TTL in seconds of cached authorizer results. If it equals 0, authorization caching is disabled. If it is greater than 0, API Gateway will cache authorizer responses. If this field is not set, the default value is 300. The maximum value is 3600, or 1 hour.
          */
@@ -309,19 +309,19 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies the authorizer's Uniform Resource Identifier (URI). For TOKEN or REQUEST authorizers, this must be a well-formed Lambda function URI, for example, arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:{account_id}:function:{lambda_function_name}/invocations. In general, the URI has this form arn:aws:apigateway:{region}:lambda:path/{service_api}, where {region} is the same as the region hosting the Lambda function, path indicates that the remaining substring in the URI should be treated as the path to the resource, including the initial /. For Lambda functions, this is usually of the form /2015-03-31/functions/[FunctionARN]/invocations.
          */
-    var authorizerUri: js.UndefOr[java.lang.String] = js.undefined
+    var authorizerUri: js.UndefOr[String] = js.undefined
     /**
          * The identity source for which authorization is requested. For a TOKEN or COGNITO_USER_POOLS authorizer, this is required and specifies the request header mapping expression for the custom header holding the authorization token submitted by the client. For example, if the token header name is Auth, the header mapping expression is method.request.header.Auth.For the REQUEST authorizer, this is required when authorization caching is enabled. The value is a comma-separated string of one or more mapping expressions of the specified request parameters. For example, if an Auth header, a Name query string parameter are defined as identity sources, this value is method.request.header.Auth, method.request.querystring.Name. These parameters will be used to derive the authorization caching key and to perform runtime validation of the REQUEST authorizer by verifying all of the identity-related request parameters are present, not null and non-empty. Only when this is true does the authorizer invoke the authorizer Lambda function, otherwise, it returns a 401 Unauthorized response without calling the Lambda function. The valid value is a string of comma-separated mapping expressions of the specified request parameters. When the authorization caching is not enabled, this property is optional.
          */
-    var identitySource: js.UndefOr[java.lang.String] = js.undefined
+    var identitySource: js.UndefOr[String] = js.undefined
     /**
          * A validation expression for the incoming identity token. For TOKEN authorizers, this value is a regular expression. API Gateway will match the aud field of the incoming token from the client against the specified regular expression. It will invoke the authorizer's Lambda function when there is a match. Otherwise, it will return a 401 Unauthorized response without calling the Lambda function. The validation expression does not apply to the REQUEST authorizer.
          */
-    var identityValidationExpression: js.UndefOr[java.lang.String] = js.undefined
+    var identityValidationExpression: js.UndefOr[String] = js.undefined
     /**
          * [Required] The name of the authorizer.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * A list of the Amazon Cognito user pool ARNs for the COGNITO_USER_POOLS authorizer. Each element is of this format: arn:aws:cognito-idp:{region}:{account_id}:userpool/{user_pool_id}. For a TOKEN or REQUEST authorizer, this is not defined. 
          */
@@ -329,7 +329,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The authorizer type. Valid values are TOKEN for a Lambda function using a single authorization token submitted in a custom header, REQUEST for a Lambda function using incoming request parameters, and COGNITO_USER_POOLS for using an Amazon Cognito user pool.
          */
@@ -341,19 +341,19 @@ object APIGatewayNs extends js.Object {
     /**
          * The base path name that callers of the API must provide as part of the URL after the domain name. This value must be unique for all of the mappings across a single API. Leave this blank if you do not want callers to specify a base path name after the domain name.
          */
-    var basePath: js.UndefOr[java.lang.String] = js.undefined
+    var basePath: js.UndefOr[String] = js.undefined
     /**
          * [Required] The domain name of the BasePathMapping resource to create.
          */
-    var domainName: java.lang.String
+    var domainName: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * The name of the API's stage that you want to use for this mapping. Leave this blank if you do not want callers to explicitly specify the stage name after any base path name.
          */
-    var stage: js.UndefOr[java.lang.String] = js.undefined
+    var stage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -373,19 +373,19 @@ object APIGatewayNs extends js.Object {
     /**
          * The description for the Deployment resource to create.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * The description of the Stage resource for the Deployment resource to create.
          */
-    var stageDescription: js.UndefOr[java.lang.String] = js.undefined
+    var stageDescription: js.UndefOr[String] = js.undefined
     /**
          * The name of the Stage resource for the Deployment resource to create.
          */
-    var stageName: js.UndefOr[java.lang.String] = js.undefined
+    var stageName: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether active tracing with X-ray is enabled for the Stage.
          */
@@ -405,11 +405,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The new documentation content map of the targeted API entity. Enclosed key-value pairs are API-specific, but only OpenAPI-compliant key-value pairs can be exported and, hence, published.
          */
-    var properties: java.lang.String
+    var properties: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -417,19 +417,19 @@ object APIGatewayNs extends js.Object {
     /**
          * A description about the new documentation snapshot.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * [Required] The version identifier of the new snapshot.
          */
-    var documentationVersion: java.lang.String
+    var documentationVersion: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * The stage name to be associated with the new documentation snapshot.
          */
-    var stageName: js.UndefOr[java.lang.String] = js.undefined
+    var stageName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -437,27 +437,27 @@ object APIGatewayNs extends js.Object {
     /**
          * The reference to an AWS-managed certificate that will be used by edge-optimized endpoint for this domain name. AWS Certificate Manager is the only supported source.
          */
-    var certificateArn: js.UndefOr[java.lang.String] = js.undefined
+    var certificateArn: js.UndefOr[String] = js.undefined
     /**
          * [Deprecated] The body of the server certificate that will be used by edge-optimized endpoint for this domain name provided by your certificate authority.
          */
-    var certificateBody: js.UndefOr[java.lang.String] = js.undefined
+    var certificateBody: js.UndefOr[String] = js.undefined
     /**
          * [Deprecated] The intermediate certificates and optionally the root certificate, one after the other without any blank lines, used by an edge-optimized endpoint for this domain name. If you include the root certificate, your certificate chain must start with intermediate certificates and end with the root certificate. Use the intermediate certificates that were provided by your certificate authority. Do not include any intermediaries that are not in the chain of trust path.
          */
-    var certificateChain: js.UndefOr[java.lang.String] = js.undefined
+    var certificateChain: js.UndefOr[String] = js.undefined
     /**
          * The user-friendly name of the certificate that will be used by edge-optimized endpoint for this domain name.
          */
-    var certificateName: js.UndefOr[java.lang.String] = js.undefined
+    var certificateName: js.UndefOr[String] = js.undefined
     /**
          * [Deprecated] Your edge-optimized endpoint's domain name certificate's private key.
          */
-    var certificatePrivateKey: js.UndefOr[java.lang.String] = js.undefined
+    var certificatePrivateKey: js.UndefOr[String] = js.undefined
     /**
          * [Required] The name of the DomainName resource.
          */
-    var domainName: java.lang.String
+    var domainName: String
     /**
          * The endpoint configuration of this DomainName showing the endpoint types of the domain name. 
          */
@@ -465,11 +465,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The reference to an AWS-managed certificate that will be used by regional endpoint for this domain name. AWS Certificate Manager is the only supported source.
          */
-    var regionalCertificateArn: js.UndefOr[java.lang.String] = js.undefined
+    var regionalCertificateArn: js.UndefOr[String] = js.undefined
     /**
          * The user-friendly name of the certificate that will be used by regional endpoint for this domain name.
          */
-    var regionalCertificateName: js.UndefOr[java.lang.String] = js.undefined
+    var regionalCertificateName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -477,23 +477,23 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The content-type for the model.
          */
-    var contentType: java.lang.String
+    var contentType: String
     /**
          * The description of the model.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * [Required] The name of the model. Must be alphanumeric.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * [Required] The RestApi identifier under which the Model will be created.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * The schema for the model. For application/json models, this should be JSON schema draft 4 model.
          */
-    var schema: js.UndefOr[java.lang.String] = js.undefined
+    var schema: js.UndefOr[String] = js.undefined
   }
   
   
@@ -501,19 +501,19 @@ object APIGatewayNs extends js.Object {
     /**
          * The name of the to-be-created RequestValidator.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * A Boolean flag to indicate whether to validate request body according to the configured model schema for the method (true) or not (false).
          */
-    var validateRequestBody: js.UndefOr[scala.Boolean] = js.undefined
+    var validateRequestBody: js.UndefOr[Boolean] = js.undefined
     /**
          * A Boolean flag to indicate whether to validate request parameters, true, or not false.
          */
-    var validateRequestParameters: js.UndefOr[scala.Boolean] = js.undefined
+    var validateRequestParameters: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -521,15 +521,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The parent resource's identifier.
          */
-    var parentId: java.lang.String
+    var parentId: String
     /**
          * The last path segment for this resource.
          */
-    var pathPart: java.lang.String
+    var pathPart: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -545,11 +545,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The ID of the RestApi that you want to clone from.
          */
-    var cloneFrom: js.UndefOr[java.lang.String] = js.undefined
+    var cloneFrom: js.UndefOr[String] = js.undefined
     /**
          * The description of the RestApi.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The endpoint configuration of this RestApi showing the endpoint types of the API. 
          */
@@ -561,15 +561,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The name of the RestApi.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * A stringified JSON policy document that applies to this RestApi regardless of the caller and Method configuration.
          */
-    var policy: js.UndefOr[java.lang.String] = js.undefined
+    var policy: js.UndefOr[String] = js.undefined
     /**
          * A version identifier for the API.
          */
-    var version: js.UndefOr[java.lang.String] = js.undefined
+    var version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -577,7 +577,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Whether cache clustering is enabled for the stage.
          */
-    var cacheClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var cacheClusterEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The stage's cache cluster size.
          */
@@ -589,23 +589,23 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the Deployment resource for the Stage resource.
          */
-    var deploymentId: java.lang.String
+    var deploymentId: String
     /**
          * The description of the Stage resource.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The version of the associated API documentation.
          */
-    var documentationVersion: js.UndefOr[java.lang.String] = js.undefined
+    var documentationVersion: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The name for the Stage resource.
          */
-    var stageName: java.lang.String
+    var stageName: String
     /**
          * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters.
          */
@@ -613,7 +613,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies whether active tracing with X-ray is enabled for the Stage.
          */
-    var tracingEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var tracingEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A map that defines the stage variables for the new Stage resource. Variable names can have alphanumeric and underscore characters, and the values must match [A-Za-z0-9-._~:/?#&amp;=,]+.
          */
@@ -625,15 +625,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of a UsagePlanKey resource for a plan customer.
          */
-    var keyId: java.lang.String
+    var keyId: String
     /**
          * [Required] The type of a UsagePlanKey resource for a plan customer.
          */
-    var keyType: java.lang.String
+    var keyType: String
     /**
          * [Required] The Id of the UsagePlan resource representing the usage plan containing the to-be-created UsagePlanKey resource representing a plan customer.
          */
-    var usagePlanId: java.lang.String
+    var usagePlanId: String
   }
   
   
@@ -645,11 +645,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The description of the usage plan.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * [Required] The name of the usage plan.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * The quota of the usage plan.
          */
@@ -665,11 +665,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The description of the VPC link.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * [Required] The name used to label and identify the VPC link.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * [Required] The ARNs of network load balancers of the VPC targeted by the VPC link. The network load balancers must be owned by the same AWS account of the API owner.
          */
@@ -681,7 +681,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the ApiKey resource to be deleted.
          */
-    var apiKey: java.lang.String
+    var apiKey: String
   }
   
   
@@ -689,11 +689,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the Authorizer resource.
          */
-    var authorizerId: java.lang.String
+    var authorizerId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -701,11 +701,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The base path name of the BasePathMapping resource to delete.
          */
-    var basePath: java.lang.String
+    var basePath: String
     /**
          * [Required] The domain name of the BasePathMapping resource to delete.
          */
-    var domainName: java.lang.String
+    var domainName: String
   }
   
   
@@ -713,7 +713,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the ClientCertificate resource to be deleted.
          */
-    var clientCertificateId: java.lang.String
+    var clientCertificateId: String
   }
   
   
@@ -721,11 +721,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the Deployment resource to delete.
          */
-    var deploymentId: java.lang.String
+    var deploymentId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -733,11 +733,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the to-be-deleted documentation part.
          */
-    var documentationPartId: java.lang.String
+    var documentationPartId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -745,11 +745,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The version identifier of a to-be-deleted documentation snapshot.
          */
-    var documentationVersion: java.lang.String
+    var documentationVersion: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -757,7 +757,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The name of the DomainName resource to be deleted.
          */
-    var domainName: java.lang.String
+    var domainName: String
   }
   
   
@@ -769,7 +769,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -777,15 +777,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies a delete integration request's HTTP method.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] Specifies a delete integration request's resource identifier.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -793,15 +793,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies a delete integration response request's HTTP method.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] Specifies a delete integration response request's resource identifier.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] Specifies a delete integration response request's status code.
          */
@@ -813,15 +813,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The HTTP verb of the Method resource.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] The Resource identifier for the Method resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -829,15 +829,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The HTTP verb of the Method resource.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] The Resource identifier for the MethodResponse resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The status code identifier for the MethodResponse resource.
          */
@@ -849,11 +849,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The name of the model to delete.
          */
-    var modelName: java.lang.String
+    var modelName: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -861,11 +861,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the RequestValidator to be deleted.
          */
-    var requestValidatorId: java.lang.String
+    var requestValidatorId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -873,11 +873,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the Resource resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -885,7 +885,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -893,11 +893,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The name of the Stage resource to delete.
          */
-    var stageName: java.lang.String
+    var stageName: String
   }
   
   
@@ -905,11 +905,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The Id of the UsagePlanKey resource to be deleted.
          */
-    var keyId: java.lang.String
+    var keyId: String
     /**
          * [Required] The Id of the UsagePlan resource representing the usage plan containing the to-be-deleted UsagePlanKey resource representing a plan customer.
          */
-    var usagePlanId: java.lang.String
+    var usagePlanId: String
   }
   
   
@@ -917,7 +917,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The Id of the to-be-deleted usage plan.
          */
-    var usagePlanId: java.lang.String
+    var usagePlanId: String
   }
   
   
@@ -925,7 +925,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the VpcLink. It is used in an Integration to reference this VpcLink.
          */
-    var vpcLinkId: java.lang.String
+    var vpcLinkId: String
   }
   
   
@@ -941,11 +941,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The description for the deployment resource.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The identifier for the deployment resource.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
   }
   
   
@@ -961,7 +961,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A Boolean flag to indicate whether the canary release deployment uses the stage cache or not.
          */
-    var useStageCache: js.UndefOr[scala.Boolean] = js.undefined
+    var useStageCache: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -970,7 +970,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfDeployment] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -978,7 +978,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The DocumentationPart identifier, generated by API Gateway when the DocumentationPart is created.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The location of the API entity to which the documentation applies. Valid fields depend on the targeted API entity type. All the valid location fields are not required. If not explicitly specified, a valid location field is treated as a wildcard and associated documentation content may be inherited by matching entities, unless overridden.
          */
@@ -986,7 +986,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A content map of API-specific key-value pairs describing the targeted API entity. The map must be encoded as a JSON string, e.g., "{ \"description\": \"The API does ...\" }". Only OpenAPI-compliant documentation-related fields from the properties map are exported and, hence, published as part of the API entity definitions, while the original documentation parts are exported in a OpenAPI extension of x-amazon-apigateway-documentation.
          */
-    var properties: js.UndefOr[java.lang.String] = js.undefined
+    var properties: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1006,15 +1006,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The HTTP verb of a method. It is a valid field for the API entity types of METHOD, PATH_PARAMETER, QUERY_PARAMETER, REQUEST_HEADER, REQUEST_BODY, RESPONSE, RESPONSE_HEADER, and RESPONSE_BODY. The default value is * for any method. When an applicable child entity inherits the content of an entity of the same type with more general specifications of the other location attributes, the child entity's method attribute must match that of the parent entity exactly.
          */
-    var method: js.UndefOr[java.lang.String] = js.undefined
+    var method: js.UndefOr[String] = js.undefined
     /**
          * The name of the targeted API entity. It is a valid and required field for the API entity types of AUTHORIZER, MODEL, PATH_PARAMETER, QUERY_PARAMETER, REQUEST_HEADER, REQUEST_BODY and RESPONSE_HEADER. It is an invalid field for any other entity type.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The URL path of the target. It is a valid field for the API entity types of RESOURCE, METHOD, PATH_PARAMETER, QUERY_PARAMETER, REQUEST_HEADER, REQUEST_BODY, RESPONSE, RESPONSE_HEADER, and RESPONSE_BODY. The default value is / for the root resource. When an applicable child entity inherits the content of another entity of the same type with more general specifications of the other location attributes, the child entity's path attribute must match that of the parent entity as a prefix.
          */
-    var path: js.UndefOr[java.lang.String] = js.undefined
+    var path: js.UndefOr[String] = js.undefined
     /**
          * The HTTP status code of a response. It is a valid field for the API entity types of RESPONSE, RESPONSE_HEADER, and RESPONSE_BODY. The default value is * for any status code. When an applicable child entity inherits the content of an entity of the same type with more general specifications of the other location attributes, the child entity's statusCode attribute must match that of the parent entity exactly.
          */
@@ -1031,7 +1031,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfDocumentationPart] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1043,11 +1043,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The description of the API documentation snapshot.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The version identifier of the API documentation snapshot.
          */
-    var version: js.UndefOr[java.lang.String] = js.undefined
+    var version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1056,7 +1056,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfDocumentationVersion] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1064,11 +1064,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The reference to an AWS-managed certificate that will be used by edge-optimized endpoint for this domain name. AWS Certificate Manager is the only supported source.
          */
-    var certificateArn: js.UndefOr[java.lang.String] = js.undefined
+    var certificateArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the certificate that will be used by edge-optimized endpoint for this domain name.
          */
-    var certificateName: js.UndefOr[java.lang.String] = js.undefined
+    var certificateName: js.UndefOr[String] = js.undefined
     /**
          * The timestamp when the certificate that was used by edge-optimized endpoint for this domain name was uploaded.
          */
@@ -1076,15 +1076,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The domain name of the Amazon CloudFront distribution associated with this custom domain name for an edge-optimized endpoint. You set up this association when adding a DNS record pointing the custom domain name to this distribution name. For more information about CloudFront distributions, see the Amazon CloudFront documentation.
          */
-    var distributionDomainName: js.UndefOr[java.lang.String] = js.undefined
+    var distributionDomainName: js.UndefOr[String] = js.undefined
     /**
          * The region-agnostic Amazon Route 53 Hosted Zone ID of the edge-optimized endpoint. The valid value is Z2FDTNDATAQYW2 for all the regions. For more information, see Set up a Regional Custom Domain Name and AWS Regions and Endpoints for API Gateway. 
          */
-    var distributionHostedZoneId: js.UndefOr[java.lang.String] = js.undefined
+    var distributionHostedZoneId: js.UndefOr[String] = js.undefined
     /**
          * The custom domain name as an API host name, for example, my-api.example.com.
          */
-    var domainName: js.UndefOr[java.lang.String] = js.undefined
+    var domainName: js.UndefOr[String] = js.undefined
     /**
          * The endpoint configuration of this DomainName showing the endpoint types of the domain name. 
          */
@@ -1092,19 +1092,19 @@ object APIGatewayNs extends js.Object {
     /**
          * The reference to an AWS-managed certificate that will be used for validating the regional domain name. AWS Certificate Manager is the only supported source.
          */
-    var regionalCertificateArn: js.UndefOr[java.lang.String] = js.undefined
+    var regionalCertificateArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the certificate that will be used for validating the regional domain name.
          */
-    var regionalCertificateName: js.UndefOr[java.lang.String] = js.undefined
+    var regionalCertificateName: js.UndefOr[String] = js.undefined
     /**
          * The domain name associated with the regional endpoint for this custom domain name. You set up this association by adding a DNS record that points the custom domain name to this regional domain name. The regional domain name is returned by API Gateway when you create a regional endpoint.
          */
-    var regionalDomainName: js.UndefOr[java.lang.String] = js.undefined
+    var regionalDomainName: js.UndefOr[String] = js.undefined
     /**
          * The region-specific Amazon Route 53 Hosted Zone ID of the regional endpoint. For more information, see Set up a Regional Custom Domain Name and AWS Regions and Endpoints for API Gateway. 
          */
-    var regionalHostedZoneId: js.UndefOr[java.lang.String] = js.undefined
+    var regionalHostedZoneId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1113,7 +1113,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfDomainName] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1133,11 +1133,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The content-disposition header value in the HTTP response.
          */
-    var contentDisposition: js.UndefOr[java.lang.String] = js.undefined
+    var contentDisposition: js.UndefOr[String] = js.undefined
     /**
          * The content-type header value in the HTTP response. This will correspond to a valid 'accept' type in the request.
          */
-    var contentType: js.UndefOr[java.lang.String] = js.undefined
+    var contentType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1145,11 +1145,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * The name of the stage to flush.
          */
-    var stageName: java.lang.String
+    var stageName: String
   }
   
   
@@ -1157,11 +1157,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The name of the stage to flush its cache.
          */
-    var stageName: java.lang.String
+    var stageName: String
   }
   
   
@@ -1169,7 +1169,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A Boolean flag to indicate whether this GatewayResponse is the default gateway response (true) or not (false). A default gateway response is one generated by API Gateway without any customization by an API developer. 
          */
-    var defaultResponse: js.UndefOr[scala.Boolean] = js.undefined
+    var defaultResponse: js.UndefOr[Boolean] = js.undefined
     /**
          * Response parameters (paths, query strings and headers) of the GatewayResponse as a string-to-string map of key-value pairs.
          */
@@ -1194,7 +1194,7 @@ object APIGatewayNs extends js.Object {
          * Returns the entire collection, because of no pagination support.
          */
     var items: js.UndefOr[ListOfGatewayResponse] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1202,7 +1202,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The description of the ClientCertificate.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1213,7 +1213,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the ApiKey resource.
          */
-    var apiKey: java.lang.String
+    var apiKey: String
     /**
          * A boolean flag to specify whether (true) or not (false) the result contains the key value.
          */
@@ -1225,7 +1225,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The identifier of a customer in AWS Marketplace or an external system, such as a developer portal.
          */
-    var customerId: js.UndefOr[java.lang.String] = js.undefined
+    var customerId: js.UndefOr[String] = js.undefined
     /**
          * A boolean flag to specify whether (true) or not (false) the result contains key values.
          */
@@ -1237,11 +1237,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The name of queried API keys.
          */
-    var nameQuery: js.UndefOr[java.lang.String] = js.undefined
+    var nameQuery: js.UndefOr[String] = js.undefined
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1249,11 +1249,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the Authorizer resource.
          */
-    var authorizerId: java.lang.String
+    var authorizerId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1265,11 +1265,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1277,11 +1277,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The base path name that callers of the API must provide as part of the URL after the domain name. This value must be unique for all of the mappings across a single API. Leave this blank if you do not want callers to specify any base path name after the domain name.
          */
-    var basePath: java.lang.String
+    var basePath: String
     /**
          * [Required] The domain name of the BasePathMapping resource to be described.
          */
-    var domainName: java.lang.String
+    var domainName: String
   }
   
   
@@ -1289,7 +1289,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The domain name of a BasePathMapping resource.
          */
-    var domainName: java.lang.String
+    var domainName: String
     /**
          * The maximum number of returned results per page. The default value is 25 and the maximum value is 500.
          */
@@ -1297,7 +1297,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1305,7 +1305,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the ClientCertificate resource to be described.
          */
-    var clientCertificateId: java.lang.String
+    var clientCertificateId: String
   }
   
   
@@ -1317,7 +1317,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1325,7 +1325,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the Deployment resource to get information about.
          */
-    var deploymentId: java.lang.String
+    var deploymentId: String
     /**
          * A query parameter to retrieve the specified embedded resources of the returned Deployment resource in the response. In a REST API call, this embed parameter value is a list of comma-separated strings, as in GET /restapis/{restapi_id}/deployments/{deployment_id}?embed=var1,var2. The SDK and other platform-dependent libraries might use a different format for the list. Currently, this request supports only retrieval of the embedded API summary this way. Hence, the parameter value must be a single-valued list containing only the "apisummary" string. For example, GET /restapis/{restapi_id}/deployments/{deployment_id}?embed=apisummary.
          */
@@ -1333,7 +1333,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1345,11 +1345,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1357,11 +1357,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var documentationPartId: java.lang.String
+    var documentationPartId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1377,19 +1377,19 @@ object APIGatewayNs extends js.Object {
     /**
          * The name of API entities of the to-be-retrieved documentation parts.
          */
-    var nameQuery: js.UndefOr[java.lang.String] = js.undefined
+    var nameQuery: js.UndefOr[String] = js.undefined
     /**
          * The path of API entities of the to-be-retrieved documentation parts.
          */
-    var path: js.UndefOr[java.lang.String] = js.undefined
+    var path: js.UndefOr[String] = js.undefined
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * The type of API entities of the to-be-retrieved documentation parts. 
          */
@@ -1401,11 +1401,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The version identifier of the to-be-retrieved documentation snapshot.
          */
-    var documentationVersion: java.lang.String
+    var documentationVersion: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1417,11 +1417,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1429,7 +1429,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The name of the DomainName resource.
          */
-    var domainName: java.lang.String
+    var domainName: String
   }
   
   
@@ -1441,7 +1441,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1449,11 +1449,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The content-type of the export, for example application/json. Currently application/json and application/yaml are supported for exportType ofoas30 and swagger. This should be specified in the Accept header for direct API requests.
          */
-    var accepts: js.UndefOr[java.lang.String] = js.undefined
+    var accepts: js.UndefOr[String] = js.undefined
     /**
          * [Required] The type of export. Acceptable values are 'oas30' for OpenAPI 3.0.x and 'swagger' for Swagger/OpenAPI 2.0.
          */
-    var exportType: java.lang.String
+    var exportType: String
     /**
          * A key-value map of query string parameters that specify properties of the export, depending on the requested exportType. For exportType oas30 and swagger, any combination of the following parameters are supported: extensions='integrations' or extensions='apigateway' will export the API with x-amazon-apigateway-integration extensions. extensions='authorizers' will export the API with x-amazon-apigateway-authorizer extensions. postman will export the API with Postman extensions, allowing for import to the Postman tool
          */
@@ -1461,11 +1461,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The name of the Stage that will be exported.
          */
-    var stageName: java.lang.String
+    var stageName: String
   }
   
   
@@ -1477,7 +1477,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1489,11 +1489,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set. The GatewayResponse collection does not support pagination and the position does not apply here.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1501,15 +1501,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies a get integration request's HTTP method.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] Specifies a get integration request's resource identifier
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1517,15 +1517,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies a get integration response request's HTTP method.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] Specifies a get integration response request's resource identifier.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] Specifies a get integration response request's status code.
          */
@@ -1537,15 +1537,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies the method request's HTTP method type.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] The Resource identifier for the Method resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1553,15 +1553,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The HTTP verb of the Method resource.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] The Resource identifier for the MethodResponse resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The status code for the MethodResponse resource.
          */
@@ -1573,15 +1573,15 @@ object APIGatewayNs extends js.Object {
     /**
          * A query parameter of a Boolean value to resolve (true) all external model references and returns a flattened model schema or not (false) The default is false.
          */
-    var flatten: js.UndefOr[scala.Boolean] = js.undefined
+    var flatten: js.UndefOr[Boolean] = js.undefined
     /**
          * [Required] The name of the model as an identifier.
          */
-    var modelName: java.lang.String
+    var modelName: String
     /**
          * [Required] The RestApi identifier under which the Model exists.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1589,11 +1589,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The name of the model for which to generate a template.
          */
-    var modelName: java.lang.String
+    var modelName: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1605,11 +1605,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1617,11 +1617,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the RequestValidator to be retrieved.
          */
-    var requestValidatorId: java.lang.String
+    var requestValidatorId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1633,11 +1633,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1649,11 +1649,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier for the Resource resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1669,11 +1669,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1681,7 +1681,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1693,7 +1693,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1705,15 +1705,15 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The language for the generated SDK. Currently java, javascript, android, objectivec (for iOS), swift (for iOS), and ruby are supported.
          */
-    var sdkType: java.lang.String
+    var sdkType: String
     /**
          * [Required] The name of the Stage that the SDK will use.
          */
-    var stageName: java.lang.String
+    var stageName: String
   }
   
   
@@ -1721,7 +1721,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the queried SdkType instance.
          */
-    var id: java.lang.String
+    var id: String
   }
   
   
@@ -1733,7 +1733,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1741,11 +1741,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The name of the Stage resource to get information about.
          */
-    var stageName: java.lang.String
+    var stageName: String
   }
   
   
@@ -1753,11 +1753,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The stages' deployment identifiers.
          */
-    var deploymentId: js.UndefOr[java.lang.String] = js.undefined
+    var deploymentId: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1769,11 +1769,11 @@ object APIGatewayNs extends js.Object {
     /**
          * (Not currently supported) The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The ARN of a resource that can be tagged. The resource ARN must be URL-encoded. At present, Stage is the only taggable resource.
          */
-    var resourceArn: java.lang.String
+    var resourceArn: String
   }
   
   
@@ -1781,11 +1781,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The key Id of the to-be-retrieved UsagePlanKey resource representing a plan customer.
          */
-    var keyId: java.lang.String
+    var keyId: String
     /**
          * [Required] The Id of the UsagePlan resource representing the usage plan containing the to-be-retrieved UsagePlanKey resource representing a plan customer.
          */
-    var usagePlanId: java.lang.String
+    var usagePlanId: String
   }
   
   
@@ -1797,15 +1797,15 @@ object APIGatewayNs extends js.Object {
     /**
          * A query parameter specifying the name of the to-be-returned usage plan keys.
          */
-    var nameQuery: js.UndefOr[java.lang.String] = js.undefined
+    var nameQuery: js.UndefOr[String] = js.undefined
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The Id of the UsagePlan resource representing the usage plan containing the to-be-retrieved UsagePlanKey resource representing a plan customer.
          */
-    var usagePlanId: java.lang.String
+    var usagePlanId: String
   }
   
   
@@ -1813,7 +1813,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the UsagePlan resource to be retrieved.
          */
-    var usagePlanId: java.lang.String
+    var usagePlanId: String
   }
   
   
@@ -1821,7 +1821,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The identifier of the API key associated with the usage plans.
          */
-    var keyId: js.UndefOr[java.lang.String] = js.undefined
+    var keyId: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of returned results per page. The default value is 25 and the maximum value is 500.
          */
@@ -1829,7 +1829,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1837,11 +1837,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The ending date (e.g., 2016-12-31) of the usage data.
          */
-    var endDate: java.lang.String
+    var endDate: String
     /**
          * The Id of the API key associated with the resultant usage data.
          */
-    var keyId: js.UndefOr[java.lang.String] = js.undefined
+    var keyId: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of returned results per page. The default value is 25 and the maximum value is 500.
          */
@@ -1849,15 +1849,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * [Required] The starting date (e.g., 2016-01-01) of the usage data.
          */
-    var startDate: java.lang.String
+    var startDate: String
     /**
          * [Required] The Id of the usage plan associated with the usage data.
          */
-    var usagePlanId: java.lang.String
+    var usagePlanId: String
   }
   
   
@@ -1865,7 +1865,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the VpcLink. It is used in an Integration to reference this VpcLink.
          */
-    var vpcLinkId: java.lang.String
+    var vpcLinkId: String
   }
   
   
@@ -1877,7 +1877,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The current pagination position in the paged result set.
          */
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1889,7 +1889,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A query parameter to indicate whether to rollback ApiKey importation (true) or not (false) when error is encountered.
          */
-    var failOnWarnings: js.UndefOr[scala.Boolean] = js.undefined
+    var failOnWarnings: js.UndefOr[Boolean] = js.undefined
     /**
          * A query parameter to specify the input format to imported API keys. Currently, only the csv format is supported.
          */
@@ -1905,7 +1905,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A query parameter to specify whether to rollback the documentation importation (true) or not (false) when a warning is encountered. The default value is false.
          */
-    var failOnWarnings: js.UndefOr[scala.Boolean] = js.undefined
+    var failOnWarnings: js.UndefOr[Boolean] = js.undefined
     /**
          * A query parameter to indicate whether to overwrite (OVERWRITE) any existing DocumentationParts definition or to merge (MERGE) the new definition into the existing one. The default value is MERGE.
          */
@@ -1913,7 +1913,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -1925,7 +1925,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A query parameter to indicate whether to rollback the API creation (true) or not (false) when a warning is encountered. The default value is false.
          */
-    var failOnWarnings: js.UndefOr[scala.Boolean] = js.undefined
+    var failOnWarnings: js.UndefOr[Boolean] = js.undefined
     /**
          * A key-value map of context-specific query string parameters specifying the behavior of different API importing operations. The following shows operation-specific parameters and their supported values.  To exclude DocumentationParts from the import, set parameters as ignore=documentation.  To configure the endpoint type, set parameters as endpointConfigurationTypes=EDGE, endpointConfigurationTypes=REGIONAL, or endpointConfigurationTypes=PRIVATE. The default endpoint type is EDGE.  To handle imported basePath, set parameters as basePath=ignore, basePath=prepend or basePath=split. For example, the AWS CLI command to exclude documentation from the imported API is: aws apigateway import-rest-api --parameters ignore=documentation --body 'file:///path/to/imported-api-body.json' The AWS CLI command to set the regional endpoint on the imported API is: aws apigateway import-rest-api --parameters endpointConfigurationTypes=REGIONAL --body 'file:///path/to/imported-api-body.json'
          */
@@ -1941,11 +1941,11 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies the integration's cache namespace.
          */
-    var cacheNamespace: js.UndefOr[java.lang.String] = js.undefined
+    var cacheNamespace: js.UndefOr[String] = js.undefined
     /**
          * The (id) of the VpcLink used for the integration when connectionType=VPC_LINK and undefined, otherwise.
          */
-    var connectionId: js.UndefOr[java.lang.String] = js.undefined
+    var connectionId: js.UndefOr[String] = js.undefined
     /**
          * The type of the network connection to the integration endpoint. The valid value is INTERNET for connections through the public routable internet or VPC_LINK for private connections between API Gateway and a network load balancer in a VPC. The default value is INTERNET.
          */
@@ -1957,11 +1957,11 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies the credentials required for the integration, if any. For AWS integrations, three options are available. To specify an IAM Role for API Gateway to assume, use the role's Amazon Resource Name (ARN). To require that the caller's identity be passed through from the request, specify the string arn:aws:iam::\*:user/\*. To use resource-based permissions on supported AWS services, specify null.
          */
-    var credentials: js.UndefOr[java.lang.String] = js.undefined
+    var credentials: js.UndefOr[String] = js.undefined
     /**
          * Specifies the integration's HTTP method type.
          */
-    var httpMethod: js.UndefOr[java.lang.String] = js.undefined
+    var httpMethod: js.UndefOr[String] = js.undefined
     /**
          * Specifies the integration's responses.   Example: Get integration responses of a method Request  GET /restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration/responses/200 HTTP/1.1 Content-Type: application/json Host: apigateway.us-east-1.amazonaws.com X-Amz-Date: 20160607T191449Z Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160607/us-east-1/apigateway/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature={sig4_hash}  Response The successful response returns 200 OK status and a payload as follows: { "_links": { "curies": { "href": "https://docs.aws.amazon.com/apigateway/latest/developerguide/restapi-integration-response-{rel}.html", "name": "integrationresponse", "templated": true }, "self": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration/responses/200", "title": "200" }, "integrationresponse:delete": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration/responses/200" }, "integrationresponse:update": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration/responses/200" } }, "responseParameters": { "method.response.header.Content-Type": "'application/xml'" }, "responseTemplates": { "application/json": "$util.urlDecode(\"%3CkinesisStreams%3E#foreach($stream in $input.path('$.StreamNames'))%3Cstream%3E%3Cname%3E$stream%3C/name%3E%3C/stream%3E#end%3C/kinesisStreams%3E\")\n" }, "statusCode": "200" }    Creating an API 
          */
@@ -1969,7 +1969,7 @@ object APIGatewayNs extends js.Object {
     /**
          *   Specifies how the method request body of an unmapped content type will be passed through the integration request to the back end without transformation. A content type is unmapped if no mapping template is defined in the integration or the content type does not match any of the mapped content types, as specified in requestTemplates. The valid value is one of the following:    WHEN_NO_MATCH: passes the method request body through the integration request to the back end without transformation when the method request content type does not match any content type associated with the mapping templates defined in the integration request.   WHEN_NO_TEMPLATES: passes the method request body through the integration request to the back end without transformation when no mapping template is defined in the integration request. If a template is defined when this option is selected, the method request of an unmapped content-type will be rejected with an HTTP 415 Unsupported Media Type response.   NEVER: rejects the method request with an HTTP 415 Unsupported Media Type response when either the method request content type does not match any content type associated with the mapping templates defined in the integration request or no mapping template is defined in the integration request.   
          */
-    var passthroughBehavior: js.UndefOr[java.lang.String] = js.undefined
+    var passthroughBehavior: js.UndefOr[String] = js.undefined
     /**
          * A key-value map specifying request parameters that are passed from the method request to the back end. The key is an integration request parameter name and the associated value is a method request parameter value or static value that must be enclosed within single quotes and pre-encoded as required by the back end. The method request parameter value must match the pattern of method.request.{location}.{name}, where location is querystring, path, or header and name must be a valid and unique method request parameter name.
          */
@@ -1989,7 +1989,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies Uniform Resource Identifier (URI) of the integration endpoint.   For HTTP or HTTP_PROXY integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification, for either standard integration, where connectionType is not VPC_LINK, or private integration, where connectionType is VPC_LINK. For a private HTTP integration, the URI is not used for routing.    For AWS or AWS_PROXY integrations, the URI is of the form arn:aws:apigateway:{region}:{subdomain.service|service}:path|action/{service_api}. Here, {Region} is the API Gateway region (e.g., us-east-1); {service} is the name of the integrated AWS service (e.g., s3); and {subdomain} is a designated subdomain supported by certain AWS service for fast host-name lookup. action can be used for an AWS service action-based API, using an Action={name}&amp;{p1}={v1}&amp;p2={v2}... query string. The ensuing {service_api} refers to a supported action {name} plus any required input parameters. Alternatively, path can be used for an AWS service path-based API. The ensuing service_api refers to the path to an AWS service resource, including the region of the integrated AWS service, if applicable. For example, for integration with the S3 API of GetObject, the uri can be either arn:aws:apigateway:us-west-2:s3:action/GetObject&amp;Bucket={bucket}&amp;Key={key} or arn:aws:apigateway:us-west-2:s3:path/{bucket}/{key} 
          */
-    var uri: js.UndefOr[java.lang.String] = js.undefined
+    var uri: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2009,7 +2009,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies the regular expression (regex) pattern used to choose an integration response based on the response from the back end. For example, if the success response returns nothing and the error response returns some string, you could use the .+ regex to match error response. However, make sure that the error response does not contain any newline (\n) character in such cases. If the back end is an AWS Lambda function, the AWS Lambda function error header is matched. For all other HTTP and AWS back ends, the HTTP status code is matched.
          */
-    var selectionPattern: js.UndefOr[java.lang.String] = js.undefined
+    var selectionPattern: js.UndefOr[String] = js.undefined
     /**
          * Specifies the status code that is used to map the integration response to an existing MethodResponse.
          */
@@ -2054,7 +2054,7 @@ object APIGatewayNs extends js.Object {
   
   
   trait MapOfStringToString
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait Method extends js.Object {
@@ -2069,15 +2069,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The method's authorization type. Valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, CUSTOM for using a custom authorizer, or COGNITO_USER_POOLS for using a Cognito user pool.
          */
-    var authorizationType: js.UndefOr[java.lang.String] = js.undefined
+    var authorizationType: js.UndefOr[String] = js.undefined
     /**
          * The identifier of an Authorizer to use on this method. The authorizationType must be CUSTOM.
          */
-    var authorizerId: js.UndefOr[java.lang.String] = js.undefined
+    var authorizerId: js.UndefOr[String] = js.undefined
     /**
          * The method's HTTP verb.
          */
-    var httpMethod: js.UndefOr[java.lang.String] = js.undefined
+    var httpMethod: js.UndefOr[String] = js.undefined
     /**
          * Gets the method's integration responsible for passing the client-submitted request to the back end and performing necessary transformations to make the request compliant with the back end.   Example:  Request  GET /restapis/uojnr9hd57/resources/0cjtch/methods/GET/integration HTTP/1.1 Content-Type: application/json Host: apigateway.us-east-1.amazonaws.com Content-Length: 117 X-Amz-Date: 20160613T213210Z Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20160613/us-east-1/apigateway/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature={sig4_hash} Response The successful response returns a 200 OK status code and a payload similar to the following: { "_links": { "curies": [ { "href": "https://docs.aws.amazon.com/apigateway/latest/developerguide/restapi-integration-{rel}.html", "name": "integration", "templated": true }, { "href": "https://docs.aws.amazon.com/apigateway/latest/developerguide/restapi-integration-response-{rel}.html", "name": "integrationresponse", "templated": true } ], "self": { "href": "/restapis/uojnr9hd57/resources/0cjtch/methods/GET/integration" }, "integration:delete": { "href": "/restapis/uojnr9hd57/resources/0cjtch/methods/GET/integration" }, "integration:responses": { "href": "/restapis/uojnr9hd57/resources/0cjtch/methods/GET/integration/responses/200", "name": "200", "title": "200" }, "integration:update": { "href": "/restapis/uojnr9hd57/resources/0cjtch/methods/GET/integration" }, "integrationresponse:put": { "href": "/restapis/uojnr9hd57/resources/0cjtch/methods/GET/integration/responses/{status_code}", "templated": true } }, "cacheKeyParameters": [], "cacheNamespace": "0cjtch", "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole", "httpMethod": "POST", "passthroughBehavior": "WHEN_NO_MATCH", "requestTemplates": { "application/json": "{\n \"a\": \"$input.params('operand1')\",\n \"b\": \"$input.params('operand2')\", \n \"op\": \"$input.params('operator')\" \n}" }, "type": "AWS", "uri": "arn:aws:apigateway:us-west-2:lambda:path//2015-03-31/functions/arn:aws:lambda:us-west-2:123456789012:function:Calc/invocations", "_embedded": { "integration:responses": { "_links": { "self": { "href": "/restapis/uojnr9hd57/resources/0cjtch/methods/GET/integration/responses/200", "name": "200", "title": "200" }, "integrationresponse:delete": { "href": "/restapis/uojnr9hd57/resources/0cjtch/methods/GET/integration/responses/200" }, "integrationresponse:update": { "href": "/restapis/uojnr9hd57/resources/0cjtch/methods/GET/integration/responses/200" } }, "responseParameters": { "method.response.header.operator": "integration.response.body.op", "method.response.header.operand_2": "integration.response.body.b", "method.response.header.operand_1": "integration.response.body.a" }, "responseTemplates": { "application/json": "#set($res = $input.path('$'))\n{\n \"result\": \"$res.a, $res.b, $res.op => $res.c\",\n \"a\" : \"$res.a\",\n \"b\" : \"$res.b\",\n \"op\" : \"$res.op\",\n \"c\" : \"$res.c\"\n}" }, "selectionPattern": "", "statusCode": "200" } } }    AWS CLI 
          */
@@ -2089,7 +2089,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A human-friendly operation identifier for the method. For example, you can assign the operationName of ListPets for the GET /pets method in PetStore example.
          */
-    var operationName: js.UndefOr[java.lang.String] = js.undefined
+    var operationName: js.UndefOr[String] = js.undefined
     /**
          * A key-value map specifying data schemas, represented by Model resources, (as the mapped value) of the request payloads of given content types (as the mapping key).
          */
@@ -2101,7 +2101,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The identifier of a RequestValidator for request validation.
          */
-    var requestValidatorId: js.UndefOr[java.lang.String] = js.undefined
+    var requestValidatorId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2125,7 +2125,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies whether the cached responses are encrypted. The PATCH path for this setting is /{method_setting_key}/caching/dataEncrypted, and the value is a Boolean.
          */
-    var cacheDataEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var cacheDataEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the time to live (TTL), in seconds, for cached responses. The higher the TTL, the longer the response will be cached. The PATCH path for this setting is /{method_setting_key}/caching/ttlInSeconds, and the value is an integer.
          */
@@ -2133,23 +2133,23 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies whether responses should be cached and returned for requests. A cache cluster must be enabled on the stage for responses to be cached. The PATCH path for this setting is /{method_setting_key}/caching/enabled, and the value is a Boolean.
          */
-    var cachingEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var cachingEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether data trace logging is enabled for this method, which affects the log entries pushed to Amazon CloudWatch Logs. The PATCH path for this setting is /{method_setting_key}/logging/dataTrace, and the value is a Boolean.
          */
-    var dataTraceEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var dataTraceEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the logging level for this method, which affects the log entries pushed to Amazon CloudWatch Logs. The PATCH path for this setting is /{method_setting_key}/logging/loglevel, and the available levels are OFF, ERROR, and INFO.
          */
-    var loggingLevel: js.UndefOr[java.lang.String] = js.undefined
+    var loggingLevel: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether Amazon CloudWatch metrics are enabled for this method. The PATCH path for this setting is /{method_setting_key}/metrics/enabled, and the value is a Boolean.
          */
-    var metricsEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var metricsEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether authorization is required for a cache invalidation request. The PATCH path for this setting is /{method_setting_key}/caching/requireAuthorizationForCacheControl, and the value is a Boolean.
          */
-    var requireAuthorizationForCacheControl: js.UndefOr[scala.Boolean] = js.undefined
+    var requireAuthorizationForCacheControl: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the throttling burst limit. The PATCH path for this setting is /{method_setting_key}/throttling/burstLimit, and the value is an integer.
          */
@@ -2169,11 +2169,11 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies whether the method requires a valid ApiKey.
          */
-    var apiKeyRequired: js.UndefOr[scala.Boolean] = js.undefined
+    var apiKeyRequired: js.UndefOr[Boolean] = js.undefined
     /**
          * The method's authorization type. Valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, CUSTOM for using a custom authorizer, or COGNITO_USER_POOLS for using a Cognito user pool.
          */
-    var authorizationType: js.UndefOr[java.lang.String] = js.undefined
+    var authorizationType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2181,23 +2181,23 @@ object APIGatewayNs extends js.Object {
     /**
          * The content-type for the model.
          */
-    var contentType: js.UndefOr[java.lang.String] = js.undefined
+    var contentType: js.UndefOr[String] = js.undefined
     /**
          * The description of the model.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The identifier for the model resource.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The name of the model. Must be an alphanumeric string.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The schema for the model. For application/json models, this should be JSON schema draft 4 model. Do not include "\*" characters in the description of any properties because such "\*" characters may be interpreted as the closing marker for comments in some languages, such as Java or JavaScript, causing the installation of your API's SDK generated by API Gateway to fail.
          */
-    var schema: js.UndefOr[java.lang.String] = js.undefined
+    var schema: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2206,7 +2206,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfModel] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2214,7 +2214,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The copy update operation's source as identified by a JSON-Pointer value referencing the location within the targeted resource to copy the value from. For example, to promote a canary deployment, you copy the canary deployment ID to the affiliated deployment ID by calling a PATCH request on a Stage resource with "op":"copy", "from":"/canarySettings/deploymentId" and "path":"/deploymentId".
          */
-    var from: js.UndefOr[java.lang.String] = js.undefined
+    var from: js.UndefOr[String] = js.undefined
     /**
          *  An update operation to be performed with this PATCH request. The valid value can be add, remove, replace or copy. Not all valid operations are supported for a given resource. Support of the operations depends on specific operational contexts. Attempts to apply an unsupported operation on a resource will return an error message.
          */
@@ -2222,11 +2222,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The op operation's target, as identified by a JSON Pointer value that references a location within the targeted resource. For example, if the target resource has an updateable property of {"name":"value"}, the path for this property is /name. If the name property value is a JSON object (e.g., {"name": {"child/name": "child-value"}}), the path for the child/name property will be /name/child~1name. Any slash ("/") character appearing in path names must be escaped with "~1", as shown in the example above. Each op operation can have only one path associated with it.
          */
-    var path: js.UndefOr[java.lang.String] = js.undefined
+    var path: js.UndefOr[String] = js.undefined
     /**
          * The new target value of the update operation. It is applicable for the add or replace operation. When using AWS CLI to update a property of a JSON value, enclose the JSON object with a pair of single quotes in a Linux shell, e.g., '{"a": ...}'. In a Windows shell, see Using JSON for Parameters.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2250,7 +2250,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * The HTTP status code of the GatewayResponse.
          */
@@ -2266,11 +2266,11 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies a put integration input's cache namespace.
          */
-    var cacheNamespace: js.UndefOr[java.lang.String] = js.undefined
+    var cacheNamespace: js.UndefOr[String] = js.undefined
     /**
          * The (id) of the VpcLink used for the integration when connectionType=VPC_LINK and undefined, otherwise.
          */
-    var connectionId: js.UndefOr[java.lang.String] = js.undefined
+    var connectionId: js.UndefOr[String] = js.undefined
     /**
          * The type of the network connection to the integration endpoint. The valid value is INTERNET for connections through the public routable internet or VPC_LINK for private connections between API Gateway and a network load balancer in a VPC. The default value is INTERNET.
          */
@@ -2282,19 +2282,19 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies whether credentials are required for a put integration.
          */
-    var credentials: js.UndefOr[java.lang.String] = js.undefined
+    var credentials: js.UndefOr[String] = js.undefined
     /**
          * [Required] Specifies a put integration request's HTTP method.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * Specifies a put integration HTTP method. When the integration type is HTTP or AWS, this field is required.
          */
-    var integrationHttpMethod: js.UndefOr[java.lang.String] = js.undefined
+    var integrationHttpMethod: js.UndefOr[String] = js.undefined
     /**
          * Specifies the pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the requestTemplates property on the Integration resource. There are three valid values: WHEN_NO_MATCH, WHEN_NO_TEMPLATES, and NEVER.   WHEN_NO_MATCH passes the request body for unmapped content types through to the integration back end without transformation. NEVER rejects unmapped content types with an HTTP 415 'Unsupported Media Type' response. WHEN_NO_TEMPLATES allows pass-through when the integration has NO content types mapped to templates. However if there is at least one content type defined, unmapped content types will be rejected with the same 415 response. 
          */
-    var passthroughBehavior: js.UndefOr[java.lang.String] = js.undefined
+    var passthroughBehavior: js.UndefOr[String] = js.undefined
     /**
          * A key-value map specifying request parameters that are passed from the method request to the back end. The key is an integration request parameter name and the associated value is a method request parameter value or static value that must be enclosed within single quotes and pre-encoded as required by the back end. The method request parameter value must match the pattern of method.request.{location}.{name}, where location is querystring, path, or header and name must be a valid and unique method request parameter name.
          */
@@ -2306,11 +2306,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies a put integration request's resource ID.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * Custom timeout between 50 and 29,000 milliseconds. The default value is 29,000 milliseconds or 29 seconds.
          */
@@ -2322,7 +2322,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies Uniform Resource Identifier (URI) of the integration endpoint.   For HTTP or HTTP_PROXY integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification, for either standard integration, where connectionType is not VPC_LINK, or private integration, where connectionType is VPC_LINK. For a private HTTP integration, the URI is not used for routing.    For AWS or AWS_PROXY integrations, the URI is of the form arn:aws:apigateway:{region}:{subdomain.service|service}:path|action/{service_api}. Here, {Region} is the API Gateway region (e.g., us-east-1); {service} is the name of the integrated AWS service (e.g., s3); and {subdomain} is a designated subdomain supported by certain AWS service for fast host-name lookup. action can be used for an AWS service action-based API, using an Action={name}&amp;{p1}={v1}&amp;p2={v2}... query string. The ensuing {service_api} refers to a supported action {name} plus any required input parameters. Alternatively, path can be used for an AWS service path-based API. The ensuing service_api refers to the path to an AWS service resource, including the region of the integrated AWS service, if applicable. For example, for integration with the S3 API of GetObject, the uri can be either arn:aws:apigateway:us-west-2:s3:action/GetObject&amp;Bucket={bucket}&amp;Key={key} or arn:aws:apigateway:us-west-2:s3:path/{bucket}/{key} 
          */
-    var uri: js.UndefOr[java.lang.String] = js.undefined
+    var uri: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2334,11 +2334,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies a put integration response request's HTTP method.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] Specifies a put integration response request's resource identifier.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * A key-value map specifying response parameters that are passed to the method response from the back end. The key is a method response header parameter name and the mapped value is an integration response header value, a static value enclosed within a pair of single quotes, or a JSON expression from the integration response body. The mapping key must match the pattern of method.response.header.{name}, where name is a valid and unique header name. The mapped non-static value must match the pattern of integration.response.header.{name} or integration.response.body.{JSON-expression}, where name must be a valid and unique response header name and JSON-expression a valid JSON expression without the $ prefix.
          */
@@ -2350,11 +2350,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * Specifies the selection pattern of a put integration response.
          */
-    var selectionPattern: js.UndefOr[java.lang.String] = js.undefined
+    var selectionPattern: js.UndefOr[String] = js.undefined
     /**
          * [Required] Specifies the status code that is used to map the integration response to an existing MethodResponse.
          */
@@ -2366,7 +2366,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies whether the method required a valid ApiKey.
          */
-    var apiKeyRequired: js.UndefOr[scala.Boolean] = js.undefined
+    var apiKeyRequired: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of authorization scopes configured on the method. The scopes are used with a COGNITO_USER_POOLS authorizer to authorize the method invocation. The authorization works by matching the method scopes against the scopes parsed from the access token in the incoming request. The method invocation is authorized if any method scopes matches a claimed scope in the access token. Otherwise, the invocation is not authorized. When the method scope is configured, the client must provide an access token instead of an identity token for authorization purposes.
          */
@@ -2374,19 +2374,19 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The method's authorization type. Valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, CUSTOM for using a custom authorizer, or COGNITO_USER_POOLS for using a Cognito user pool.
          */
-    var authorizationType: java.lang.String
+    var authorizationType: String
     /**
          * Specifies the identifier of an Authorizer to use on this Method, if the type is CUSTOM or COGNITO_USER_POOLS. The authorizer identifier is generated by API Gateway when you created the authorizer.
          */
-    var authorizerId: js.UndefOr[java.lang.String] = js.undefined
+    var authorizerId: js.UndefOr[String] = js.undefined
     /**
          * [Required] Specifies the method request's HTTP method type.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * A human-friendly operation identifier for the method. For example, you can assign the operationName of ListPets for the GET /pets method in PetStore example.
          */
-    var operationName: js.UndefOr[java.lang.String] = js.undefined
+    var operationName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the Model resources used for the request's content type. Request models are represented as a key/value map, with a content type as the key and a Model name as the value.
          */
@@ -2398,15 +2398,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The identifier of a RequestValidator for validating the method request.
          */
-    var requestValidatorId: js.UndefOr[java.lang.String] = js.undefined
+    var requestValidatorId: js.UndefOr[String] = js.undefined
     /**
          * [Required] The Resource identifier for the new Method resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -2414,11 +2414,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The HTTP verb of the Method resource.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * [Required] The Resource identifier for the Method resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * Specifies the Model resources used for the response's content type. Response models are represented as a key/value map, with a content type as the key and a Model name as the value.
          */
@@ -2430,7 +2430,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The method response's status code.
          */
@@ -2446,7 +2446,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A query parameter to indicate whether to rollback the API update (true) or not (false) when a warning is encountered. The default value is false.
          */
-    var failOnWarnings: js.UndefOr[scala.Boolean] = js.undefined
+    var failOnWarnings: js.UndefOr[Boolean] = js.undefined
     /**
          * The mode query parameter to specify the update mode. Valid values are "merge" and "overwrite". By default, the update mode is "merge".
          */
@@ -2458,7 +2458,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -2482,19 +2482,19 @@ object APIGatewayNs extends js.Object {
     /**
          * The identifier of this RequestValidator.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The name of this RequestValidator
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * A Boolean flag to indicate whether to validate a request body according to the configured Model schema.
          */
-    var validateRequestBody: js.UndefOr[scala.Boolean] = js.undefined
+    var validateRequestBody: js.UndefOr[Boolean] = js.undefined
     /**
          * A Boolean flag to indicate whether to validate request parameters (true) or not (false).
          */
-    var validateRequestParameters: js.UndefOr[scala.Boolean] = js.undefined
+    var validateRequestParameters: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2503,7 +2503,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfRequestValidator] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2511,19 +2511,19 @@ object APIGatewayNs extends js.Object {
     /**
          * The resource's identifier.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The parent resource's identifier.
          */
-    var parentId: js.UndefOr[java.lang.String] = js.undefined
+    var parentId: js.UndefOr[String] = js.undefined
     /**
          * The full path for this resource.
          */
-    var path: js.UndefOr[java.lang.String] = js.undefined
+    var path: js.UndefOr[String] = js.undefined
     /**
          * The last path segment for this resource.
          */
-    var pathPart: js.UndefOr[java.lang.String] = js.undefined
+    var pathPart: js.UndefOr[String] = js.undefined
     /**
          * Gets an API resource's method of a given HTTP verb.  The resource methods are a map of methods indexed by methods' HTTP verbs enabled on the resource. This method map is included in the 200 OK response of the GET /restapis/{restapi_id}/resources/{resource_id} or GET /restapis/{restapi_id}/resources/{resource_id}?embed=methods request. Example: Get the GET method of an API resource Request GET /restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET HTTP/1.1 Content-Type: application/json Host: apigateway.us-east-1.amazonaws.com X-Amz-Date: 20170223T031827Z Authorization: AWS4-HMAC-SHA256 Credential={access_key_ID}/20170223/us-east-1/apigateway/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature={sig4_hash} Response { "_links": { "curies": [ { "href": "https://docs.aws.amazon.com/apigateway/latest/developerguide/restapi-integration-{rel}.html", "name": "integration", "templated": true }, { "href": "https://docs.aws.amazon.com/apigateway/latest/developerguide/restapi-integration-response-{rel}.html", "name": "integrationresponse", "templated": true }, { "href": "https://docs.aws.amazon.com/apigateway/latest/developerguide/restapi-method-{rel}.html", "name": "method", "templated": true }, { "href": "https://docs.aws.amazon.com/apigateway/latest/developerguide/restapi-method-response-{rel}.html", "name": "methodresponse", "templated": true } ], "self": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET", "name": "GET", "title": "GET" }, "integration:put": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration" }, "method:delete": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET" }, "method:integration": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration" }, "method:responses": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/responses/200", "name": "200", "title": "200" }, "method:update": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET" }, "methodresponse:put": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/responses/{status_code}", "templated": true } }, "apiKeyRequired": false, "authorizationType": "NONE", "httpMethod": "GET", "_embedded": { "method:integration": { "_links": { "self": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration" }, "integration:delete": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration" }, "integration:responses": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration/responses/200", "name": "200", "title": "200" }, "integration:update": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration" }, "integrationresponse:put": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration/responses/{status_code}", "templated": true } }, "cacheKeyParameters": [], "cacheNamespace": "3kzxbg5sa2", "credentials": "arn:aws:iam::123456789012:role/apigAwsProxyRole", "httpMethod": "POST", "passthroughBehavior": "WHEN_NO_MATCH", "requestParameters": { "integration.request.header.Content-Type": "'application/x-amz-json-1.1'" }, "requestTemplates": { "application/json": "{\n}" }, "type": "AWS", "uri": "arn:aws:apigateway:us-east-1:kinesis:action/ListStreams", "_embedded": { "integration:responses": { "_links": { "self": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration/responses/200", "name": "200", "title": "200" }, "integrationresponse:delete": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration/responses/200" }, "integrationresponse:update": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/integration/responses/200" } }, "responseParameters": { "method.response.header.Content-Type": "'application/xml'" }, "responseTemplates": { "application/json": "$util.urlDecode(\"%3CkinesisStreams%3E#foreach($stream in $input.path('$.StreamNames'))%3Cstream%3E%3Cname%3E$stream%3C/name%3E%3C/stream%3E#end%3C/kinesisStreams%3E\")\n" }, "statusCode": "200" } } }, "method:responses": { "_links": { "self": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/responses/200", "name": "200", "title": "200" }, "methodresponse:delete": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/responses/200" }, "methodresponse:update": { "href": "/restapis/fugvjdxtri/resources/3kzxbg5sa2/methods/GET/responses/200" } }, "responseModels": { "application/json": "Empty" }, "responseParameters": { "method.response.header.Content-Type": false }, "statusCode": "200" } } } If the OPTIONS is enabled on the resource, you can follow the example here to get that method. Just replace the GET of the last path segment in the request URL with OPTIONS.   
          */
@@ -2536,7 +2536,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfResource] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2556,7 +2556,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The API's description.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The endpoint configuration of this RestApi showing the endpoint types of the API. 
          */
@@ -2564,7 +2564,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The API's identifier. This identifier is unique across all of your APIs in API Gateway.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * A nullable integer that is used to enable compression (with non-negative between 0 and 10485760 (10M) bytes, inclusive) or disable compression (with a null value) on an API. When compression is enabled, compression or decompression is not applied on the payload if the payload size is smaller than this value. Setting it to zero allows compression for any payload size.
          */
@@ -2572,15 +2572,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The API's name.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * A stringified JSON policy document that applies to this RestApi regardless of the caller and Method configuration.
          */
-    var policy: js.UndefOr[java.lang.String] = js.undefined
+    var policy: js.UndefOr[String] = js.undefined
     /**
          * A version identifier for the API.
          */
-    var version: js.UndefOr[java.lang.String] = js.undefined
+    var version: js.UndefOr[String] = js.undefined
     /**
          * The warning messages reported when failonwarnings is turned on during API import.
          */
@@ -2593,7 +2593,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfRestApi] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2601,23 +2601,23 @@ object APIGatewayNs extends js.Object {
     /**
          * The default value of an SdkType configuration property.
          */
-    var defaultValue: js.UndefOr[java.lang.String] = js.undefined
+    var defaultValue: js.UndefOr[String] = js.undefined
     /**
          * The description of an SdkType configuration property.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The user-friendly name of an SdkType configuration property.
          */
-    var friendlyName: js.UndefOr[java.lang.String] = js.undefined
+    var friendlyName: js.UndefOr[String] = js.undefined
     /**
          * The name of a an SdkType configuration property.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * A boolean flag of an SdkType configuration property to indicate if the associated SDK configuration property is required (true) or not (false).
          */
-    var required: js.UndefOr[scala.Boolean] = js.undefined
+    var required: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2629,11 +2629,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The content-disposition header value in the HTTP response.
          */
-    var contentDisposition: js.UndefOr[java.lang.String] = js.undefined
+    var contentDisposition: js.UndefOr[String] = js.undefined
     /**
          * The content-type header value in the HTTP response.
          */
-    var contentType: js.UndefOr[java.lang.String] = js.undefined
+    var contentType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2645,15 +2645,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The description of an SdkType.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The user-friendly name of an SdkType instance.
          */
-    var friendlyName: js.UndefOr[java.lang.String] = js.undefined
+    var friendlyName: js.UndefOr[String] = js.undefined
     /**
          * The identifier of an SdkType instance.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2662,7 +2662,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfSdkType] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2674,7 +2674,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies whether a cache cluster is enabled for the stage.
          */
-    var cacheClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var cacheClusterEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The size of the cache cluster for the stage, if enabled.
          */
@@ -2690,7 +2690,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The identifier of a client certificate for an API stage.
          */
-    var clientCertificateId: js.UndefOr[java.lang.String] = js.undefined
+    var clientCertificateId: js.UndefOr[String] = js.undefined
     /**
          * The timestamp when the stage was created.
          */
@@ -2698,15 +2698,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The identifier of the Deployment that the stage points to.
          */
-    var deploymentId: js.UndefOr[java.lang.String] = js.undefined
+    var deploymentId: js.UndefOr[String] = js.undefined
     /**
          * The stage's description.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The version of the associated API documentation.
          */
-    var documentationVersion: js.UndefOr[java.lang.String] = js.undefined
+    var documentationVersion: js.UndefOr[String] = js.undefined
     /**
          * The timestamp when the stage last updated.
          */
@@ -2718,7 +2718,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The name of the stage is the first path segment in the Uniform Resource Identifier (URI) of a call to API Gateway.
          */
-    var stageName: js.UndefOr[java.lang.String] = js.undefined
+    var stageName: js.UndefOr[String] = js.undefined
     /**
          * The collection of tags. Each tag element is associated with a given resource.
          */
@@ -2726,7 +2726,7 @@ object APIGatewayNs extends js.Object {
     /**
          * Specifies whether active tracing with X-ray is enabled for the Stage.
          */
-    var tracingEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var tracingEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A map that defines the stage variables for a Stage resource. Variable names can have alphanumeric and underscore characters, and the values must match [A-Za-z0-9-._~:/?#&amp;=,]+.
          */
@@ -2734,7 +2734,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The ARN of the WebAcl associated with the Stage.
          */
-    var webAclArn: js.UndefOr[java.lang.String] = js.undefined
+    var webAclArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2742,11 +2742,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The string identifier of the associated RestApi.
          */
-    var restApiId: js.UndefOr[java.lang.String] = js.undefined
+    var restApiId: js.UndefOr[String] = js.undefined
     /**
          * The stage name associated with the stage key.
          */
-    var stageName: js.UndefOr[java.lang.String] = js.undefined
+    var stageName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2762,7 +2762,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The ARN of a resource that can be tagged. The resource ARN must be URL-encoded. At present, Stage is the only taggable resource.
          */
-    var resourceArn: java.lang.String
+    var resourceArn: String
     /**
          * [Required] The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters.
          */
@@ -2782,7 +2782,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The Apache Velocity Template Language (VTL) template content used for the template resource.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2794,11 +2794,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies a test invoke authorizer request's Authorizer ID.
          */
-    var authorizerId: java.lang.String
+    var authorizerId: String
     /**
          * [Optional] The simulated request body of an incoming invocation request.
          */
-    var body: js.UndefOr[java.lang.String] = js.undefined
+    var body: js.UndefOr[String] = js.undefined
     /**
          * [Required] A key-value map of headers to simulate an incoming invocation request. This is where the incoming authorization token, or identity source, should be specified.
          */
@@ -2810,11 +2810,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Optional] The URI path, including query string, of the simulated invocation request. Use this to specify path parameters and query string parameters.
          */
-    var pathWithQueryString: js.UndefOr[java.lang.String] = js.undefined
+    var pathWithQueryString: js.UndefOr[String] = js.undefined
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * A key-value map of stage variables to simulate an invocation on a deployed Stage.
          */
@@ -2839,15 +2839,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The API Gateway execution log for the test authorizer request.
          */
-    var log: js.UndefOr[java.lang.String] = js.undefined
+    var log: js.UndefOr[String] = js.undefined
     /**
          * The JSON policy document returned by the Authorizer
          */
-    var policy: js.UndefOr[java.lang.String] = js.undefined
+    var policy: js.UndefOr[String] = js.undefined
     /**
          * The principal identity returned by the Authorizer
          */
-    var principalId: js.UndefOr[java.lang.String] = js.undefined
+    var principalId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2855,11 +2855,11 @@ object APIGatewayNs extends js.Object {
     /**
          * The simulated request body of an incoming invocation request.
          */
-    var body: js.UndefOr[java.lang.String] = js.undefined
+    var body: js.UndefOr[String] = js.undefined
     /**
          * A ClientCertificate identifier to use in the test invocation. API Gateway will use the certificate when making the HTTPS request to the defined back-end endpoint.
          */
-    var clientCertificateId: js.UndefOr[java.lang.String] = js.undefined
+    var clientCertificateId: js.UndefOr[String] = js.undefined
     /**
          * A key-value map of headers to simulate an incoming invocation request.
          */
@@ -2867,7 +2867,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies a test invoke method request's HTTP method.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * The headers as a map from string to list of values to simulate an incoming invocation request.
          */
@@ -2875,15 +2875,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The URI path, including query string, of the simulated invocation request. Use this to specify path parameters and query string parameters.
          */
-    var pathWithQueryString: js.UndefOr[java.lang.String] = js.undefined
+    var pathWithQueryString: js.UndefOr[String] = js.undefined
     /**
          * [Required] Specifies a test invoke method request's resource ID.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * A key-value map of stage variables to simulate an invocation on a deployed Stage.
          */
@@ -2895,7 +2895,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The body of the HTTP response.
          */
-    var body: js.UndefOr[java.lang.String] = js.undefined
+    var body: js.UndefOr[String] = js.undefined
     /**
          * The headers of the HTTP response.
          */
@@ -2907,7 +2907,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The API Gateway execution log for the test invoke request.
          */
-    var log: js.UndefOr[java.lang.String] = js.undefined
+    var log: js.UndefOr[String] = js.undefined
     /**
          * The headers of the HTTP response as a map from string to list of values.
          */
@@ -5636,7 +5636,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The ARN of a resource that can be tagged. The resource ARN must be URL-encoded. At present, Stage is the only taggable resource.
          */
-    var resourceArn: java.lang.String
+    var resourceArn: String
     /**
          * [Required] The Tag keys to delete.
          */
@@ -5656,7 +5656,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the ApiKey resource to be updated.
          */
-    var apiKey: java.lang.String
+    var apiKey: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5668,7 +5668,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the Authorizer resource.
          */
-    var authorizerId: java.lang.String
+    var authorizerId: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5676,7 +5676,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5684,11 +5684,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The base path of the BasePathMapping resource to change.
          */
-    var basePath: java.lang.String
+    var basePath: String
     /**
          * [Required] The domain name of the BasePathMapping resource to change.
          */
-    var domainName: java.lang.String
+    var domainName: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5700,7 +5700,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the ClientCertificate resource to be updated.
          */
-    var clientCertificateId: java.lang.String
+    var clientCertificateId: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5712,7 +5712,7 @@ object APIGatewayNs extends js.Object {
     /**
          * The replacement identifier for the Deployment resource to change information about.
          */
-    var deploymentId: java.lang.String
+    var deploymentId: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5720,7 +5720,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5728,7 +5728,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the to-be-updated documentation part.
          */
-    var documentationPartId: java.lang.String
+    var documentationPartId: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5736,7 +5736,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5744,7 +5744,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The version identifier of the to-be-updated documentation version.
          */
-    var documentationVersion: java.lang.String
+    var documentationVersion: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5752,7 +5752,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi..
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5760,7 +5760,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The name of the DomainName resource to be changed.
          */
-    var domainName: java.lang.String
+    var domainName: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5780,7 +5780,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5788,7 +5788,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Represents an update integration request's HTTP method.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5796,11 +5796,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Represents an update integration request's resource identifier.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5808,7 +5808,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies an update integration response request's HTTP method.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5816,11 +5816,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] Specifies an update integration response request's resource identifier.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] Specifies an update integration response request's status code.
          */
@@ -5832,7 +5832,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The HTTP verb of the Method resource.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5840,11 +5840,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The Resource identifier for the Method resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5852,7 +5852,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The HTTP verb of the Method resource.
          */
-    var httpMethod: java.lang.String
+    var httpMethod: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5860,11 +5860,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The Resource identifier for the MethodResponse resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The status code for the MethodResponse resource.
          */
@@ -5876,7 +5876,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The name of the model to update.
          */
-    var modelName: java.lang.String
+    var modelName: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5884,7 +5884,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5896,11 +5896,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of RequestValidator to be updated.
          */
-    var requestValidatorId: java.lang.String
+    var requestValidatorId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5912,11 +5912,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the Resource resource.
          */
-    var resourceId: java.lang.String
+    var resourceId: String
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5928,7 +5928,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
   }
   
   
@@ -5940,11 +5940,11 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The string identifier of the associated RestApi.
          */
-    var restApiId: java.lang.String
+    var restApiId: String
     /**
          * [Required] The name of the Stage resource to change information about.
          */
-    var stageName: java.lang.String
+    var stageName: String
   }
   
   
@@ -5956,7 +5956,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The Id of the to-be-updated usage plan.
          */
-    var usagePlanId: java.lang.String
+    var usagePlanId: String
   }
   
   
@@ -5964,7 +5964,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the API key associated with the usage plan in which a temporary extension is granted to the remaining quota.
          */
-    var keyId: java.lang.String
+    var keyId: String
     /**
          * A list of update operations to be applied to the specified resource and in the order specified in this list.
          */
@@ -5972,7 +5972,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The Id of the usage plan associated with the usage data.
          */
-    var usagePlanId: java.lang.String
+    var usagePlanId: String
   }
   
   
@@ -5984,7 +5984,7 @@ object APIGatewayNs extends js.Object {
     /**
          * [Required] The identifier of the VpcLink. It is used in an Integration to reference this VpcLink.
          */
-    var vpcLinkId: java.lang.String
+    var vpcLinkId: String
   }
   
   
@@ -5992,20 +5992,20 @@ object APIGatewayNs extends js.Object {
     /**
          * The ending date of the usage data.
          */
-    var endDate: js.UndefOr[java.lang.String] = js.undefined
+    var endDate: js.UndefOr[String] = js.undefined
     /**
          * The usage data, as daily logs of used and remaining quotas, over the specified time interval indexed over the API keys in a usage plan. For example, {..., "values" : { "{api_key}" : [ [0, 100], [10, 90], [100, 10]]}, where {api_key} stands for an API key value and the daily log entry is of the format [used quota, remaining quota].
          */
     var items: js.UndefOr[MapOfKeyUsages] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
     /**
          * The starting date of the usage data.
          */
-    var startDate: js.UndefOr[java.lang.String] = js.undefined
+    var startDate: js.UndefOr[String] = js.undefined
     /**
          * The plan Id associated with this usage data.
          */
-    var usagePlanId: js.UndefOr[java.lang.String] = js.undefined
+    var usagePlanId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6017,19 +6017,19 @@ object APIGatewayNs extends js.Object {
     /**
          * The description of a usage plan.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The identifier of a UsagePlan resource.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The name of a usage plan.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The AWS Markeplace product identifier to associate with the usage plan as a SaaS product on AWS Marketplace.
          */
-    var productCode: js.UndefOr[java.lang.String] = js.undefined
+    var productCode: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of permitted requests per a given unit time interval.
          */
@@ -6045,19 +6045,19 @@ object APIGatewayNs extends js.Object {
     /**
          * The Id of a usage plan key.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The name of a usage plan key.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The type of a usage plan key. Currently, the valid key type is API_KEY.
          */
-    var `type`: js.UndefOr[java.lang.String] = js.undefined
+    var `type`: js.UndefOr[String] = js.undefined
     /**
          * The value of a usage plan key.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6066,7 +6066,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfUsagePlanKey] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6075,7 +6075,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfUsagePlan] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6083,15 +6083,15 @@ object APIGatewayNs extends js.Object {
     /**
          * The description of the VPC link.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the VpcLink. It is used in an Integration to reference this VpcLink.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The name used to label and identify the VPC link.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The status of the VPC link. The valid values are AVAILABLE, PENDING, DELETING, or FAILED. Deploying an API will wait if the status is PENDING and will fail if the status is DELETING. 
          */
@@ -6099,7 +6099,7 @@ object APIGatewayNs extends js.Object {
     /**
          * A description about the VPC link status.
          */
-    var statusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var statusMessage: js.UndefOr[String] = js.undefined
     /**
          * The ARNs of network load balancers of the VPC targeted by the VPC link. The network load balancers must be owned by the same AWS account of the API owner.
          */
@@ -6112,7 +6112,7 @@ object APIGatewayNs extends js.Object {
          * The current page of elements from this collection.
          */
     var items: js.UndefOr[ListOfVpcLink] = js.undefined
-    var position: js.UndefOr[java.lang.String] = js.undefined
+    var position: js.UndefOr[String] = js.undefined
   }
   
   val TypesNs: this.type = js.native
@@ -6154,7 +6154,7 @@ object APIGatewayNs extends js.Object {
   type ListOfSdkType = js.Array[SdkType]
   type ListOfStage = js.Array[Stage]
   type ListOfStageKeys = js.Array[StageKey]
-  type ListOfString = js.Array[java.lang.String]
+  type ListOfString = js.Array[String]
   type ListOfUsage = js.Array[ListOfLong]
   type ListOfUsagePlan = js.Array[UsagePlan]
   type ListOfUsagePlanKey = js.Array[UsagePlanKey]

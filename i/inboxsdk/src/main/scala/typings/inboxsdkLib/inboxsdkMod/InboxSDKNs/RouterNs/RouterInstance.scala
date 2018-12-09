@@ -18,7 +18,7 @@ trait RouterInstance extends js.Object {
     handler: js.Function2[
       /* offset */ scala.Double, 
       /* max */ scala.Double, 
-      CustomListDescriptor | stdLib.Promise[CustomListDescriptor]
+      CustomListDescriptor | js.Promise[CustomListDescriptor]
     ]
   ): js.Function0[scala.Unit] = js.native
   def handleCustomRoute(

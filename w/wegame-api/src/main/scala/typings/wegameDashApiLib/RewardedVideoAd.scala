@@ -11,7 +11,7 @@ class RewardedVideoAd () extends BannerAd {
   /**
        * 加载视频广告
        */
-  def load(): stdLib.Promise[scala.Unit] = js.native
+  def load(): js.Promise[scala.Unit] = js.native
   /**
        * 监听用户点击 关闭广告 按钮的事件
        */

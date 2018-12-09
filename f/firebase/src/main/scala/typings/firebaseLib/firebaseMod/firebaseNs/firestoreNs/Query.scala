@@ -63,7 +63,7 @@ trait Query extends js.Object {
        * @param options An object to configure the get behavior.
        * @return A Promise that will be resolved with the results of the Query.
        */
-  def get(): stdLib.Promise[QuerySnapshot] = js.native
+  def get(): js.Promise[QuerySnapshot] = js.native
   /**
        * Executes the query and returns the results as a QuerySnapshot.
        *
@@ -75,7 +75,7 @@ trait Query extends js.Object {
        * @param options An object to configure the get behavior.
        * @return A Promise that will be resolved with the results of the Query.
        */
-  def get(options: GetOptions): stdLib.Promise[QuerySnapshot] = js.native
+  def get(options: GetOptions): js.Promise[QuerySnapshot] = js.native
   /**
        * Returns true if this `Query` is equal to the provided one.
        *

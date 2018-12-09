@@ -19,7 +19,7 @@ class Request ()
   var stream: js.Any = js.native
   var transaction: Transaction = js.native
   var verbose: scala.Boolean = js.native
-  def batch(batch: java.lang.String): stdLib.Promise[IResult[_]] = js.native
+  def batch(batch: java.lang.String): js.Promise[IResult[_]] = js.native
   def batch(
     batch: java.lang.String,
     callback: js.Function2[
@@ -29,7 +29,7 @@ class Request ()
     ]
   ): scala.Unit = js.native
   @JSName("batch")
-  def batch_Entity[Entity](batch: java.lang.String): stdLib.Promise[IResult[Entity]] = js.native
+  def batch_Entity[Entity](batch: java.lang.String): js.Promise[IResult[Entity]] = js.native
   @JSName("batch")
   def batch_Entity[Entity](
     batch: java.lang.String,
@@ -39,10 +39,10 @@ class Request ()
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def bulk(table: Table): stdLib.Promise[scala.Double] = js.native
+  def bulk(table: Table): js.Promise[scala.Double] = js.native
   def bulk(table: Table, callback: js.Function2[/* err */ nodeLib.Error, /* rowCount */ js.Any, scala.Unit]): scala.Unit = js.native
   def cancel(): scala.Unit = js.native
-  def execute(procedure: java.lang.String): stdLib.Promise[IProcedureResult[_]] = js.native
+  def execute(procedure: java.lang.String): js.Promise[IProcedureResult[_]] = js.native
   def execute[Entity](
     procedure: java.lang.String,
     callback: js.Function3[
@@ -53,7 +53,7 @@ class Request ()
     ]
   ): scala.Unit = js.native
   @JSName("execute")
-  def execute_Entity[Entity](procedure: java.lang.String): stdLib.Promise[IProcedureResult[Entity]] = js.native
+  def execute_Entity[Entity](procedure: java.lang.String): js.Promise[IProcedureResult[Entity]] = js.native
   def input(name: java.lang.String, `type`: js.Function0[ISqlType], value: js.Any): Request = js.native
   def input(name: java.lang.String, `type`: ISqlType, value: js.Any): Request = js.native
   def input(name: java.lang.String, value: js.Any): Request = js.native
@@ -62,7 +62,7 @@ class Request ()
   def output(name: java.lang.String, `type`: ISqlType): Request = js.native
   def output(name: java.lang.String, `type`: ISqlType, value: js.Any): Request = js.native
   def pipe(stream: nodeLib.NodeJSNs.WritableStream): nodeLib.NodeJSNs.WritableStream = js.native
-  def query(command: java.lang.String): stdLib.Promise[IResult[_]] = js.native
+  def query(command: java.lang.String): js.Promise[IResult[_]] = js.native
   def query[Entity](
     command: java.lang.String,
     callback: js.Function2[
@@ -72,6 +72,6 @@ class Request ()
     ]
   ): scala.Unit = js.native
   @JSName("query")
-  def query_Entity[Entity](command: java.lang.String): stdLib.Promise[IResult[Entity]] = js.native
+  def query_Entity[Entity](command: java.lang.String): js.Promise[IResult[Entity]] = js.native
 }
 

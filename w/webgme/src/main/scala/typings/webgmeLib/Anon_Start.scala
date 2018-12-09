@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Start extends js.Object {
-  def apply(start: webgmeLib.GmeCommonNs.ProjectStart, number: scala.Double): stdLib.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
+  def apply(start: webgmeLib.GmeCommonNs.ProjectStart, number: scala.Double): js.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
   def apply(
     start: webgmeLib.GmeCommonNs.ProjectStart,
     number: scala.Double,

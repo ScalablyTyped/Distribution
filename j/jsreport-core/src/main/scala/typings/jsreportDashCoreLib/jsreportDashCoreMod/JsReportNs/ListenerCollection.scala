@@ -13,7 +13,7 @@ trait ListenerCollection extends js.Object {
       /* req */ Request, 
       /* res */ Response, 
       /* err */ js.UndefOr[js.Any], 
-      stdLib.Promise[_] | scala.Unit
+      js.Promise[_] | scala.Unit
     ]
   ): scala.Unit
 }

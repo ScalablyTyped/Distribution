@@ -52,7 +52,7 @@ trait BlissCollectionArray[T] extends js.Object {
   def set(options: js.Object): BlissCollectionArray[T] = js.native
   def start(element: blissfuljsLib.Element): BlissCollectionArray[T] = js.native
   def style(properties: js.Object): BlissCollectionArray[T] = js.native
-  def transition(properties: js.Object): blissfuljsLib.Array[stdLib.Promise[T]] = js.native
-  def transition(properties: js.Object, duration: scala.Double): blissfuljsLib.Array[stdLib.Promise[T]] = js.native
+  def transition(properties: js.Object): blissfuljsLib.Array[js.Promise[T]] = js.native
+  def transition(properties: js.Object, duration: scala.Double): blissfuljsLib.Array[js.Promise[T]] = js.native
 }
 

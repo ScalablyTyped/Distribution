@@ -46,20 +46,20 @@ class EntityManager () extends js.Object {
     mergeStrategy: MergeStrategySymbol
   ): Entity = js.native
   def detachEntity(entity: Entity): scala.Boolean = js.native
-  def executeQuery(query: EntityQuery): stdLib.Promise[QueryResult] = js.native
-  def executeQuery(query: EntityQuery, callback: ExecuteQuerySuccessCallback): stdLib.Promise[QueryResult] = js.native
+  def executeQuery(query: EntityQuery): js.Promise[QueryResult] = js.native
+  def executeQuery(query: EntityQuery, callback: ExecuteQuerySuccessCallback): js.Promise[QueryResult] = js.native
   def executeQuery(
     query: EntityQuery,
     callback: ExecuteQuerySuccessCallback,
     errorCallback: ExecuteQueryErrorCallback
-  ): stdLib.Promise[QueryResult] = js.native
-  def executeQuery(query: java.lang.String): stdLib.Promise[QueryResult] = js.native
-  def executeQuery(query: java.lang.String, callback: ExecuteQuerySuccessCallback): stdLib.Promise[QueryResult] = js.native
+  ): js.Promise[QueryResult] = js.native
+  def executeQuery(query: java.lang.String): js.Promise[QueryResult] = js.native
+  def executeQuery(query: java.lang.String, callback: ExecuteQuerySuccessCallback): js.Promise[QueryResult] = js.native
   def executeQuery(
     query: java.lang.String,
     callback: ExecuteQuerySuccessCallback,
     errorCallback: ExecuteQueryErrorCallback
-  ): stdLib.Promise[QueryResult] = js.native
+  ): js.Promise[QueryResult] = js.native
   def executeQueryLocally(query: EntityQuery): js.Array[Entity] = js.native
   def exportEntities(): java.lang.String = js.native
   def exportEntities(entities: js.Array[Entity]): java.lang.String = js.native
@@ -69,19 +69,19 @@ class EntityManager () extends js.Object {
   def exportEntities_Any(): js.Any = js.native
   @JSName("exportEntities")
   def exportEntities_Any(entities: js.Array[Entity]): js.Any = js.native
-  def fetchEntityByKey(entityKey: EntityKey): stdLib.Promise[EntityByKeyResult] = js.native
+  def fetchEntityByKey(entityKey: EntityKey): js.Promise[EntityByKeyResult] = js.native
    // string | Object
-  def fetchEntityByKey(typeName: java.lang.String, keyValue: js.Any): stdLib.Promise[EntityByKeyResult] = js.native
+  def fetchEntityByKey(typeName: java.lang.String, keyValue: js.Any): js.Promise[EntityByKeyResult] = js.native
    // string | Object
-  def fetchEntityByKey(typeName: java.lang.String, keyValue: js.Any, checkLocalCacheFirst: scala.Boolean): stdLib.Promise[EntityByKeyResult] = js.native
-  def fetchEntityByKey(typeName: java.lang.String, keyValues: js.Array[_]): stdLib.Promise[EntityByKeyResult] = js.native
-  def fetchEntityByKey(typeName: java.lang.String, keyValues: js.Array[_], checkLocalCacheFirst: scala.Boolean): stdLib.Promise[EntityByKeyResult] = js.native
-  def fetchMetadata(): stdLib.Promise[_] = js.native
-  def fetchMetadata(callback: js.Function1[/* schema */ js.Any, scala.Unit]): stdLib.Promise[_] = js.native
+  def fetchEntityByKey(typeName: java.lang.String, keyValue: js.Any, checkLocalCacheFirst: scala.Boolean): js.Promise[EntityByKeyResult] = js.native
+  def fetchEntityByKey(typeName: java.lang.String, keyValues: js.Array[_]): js.Promise[EntityByKeyResult] = js.native
+  def fetchEntityByKey(typeName: java.lang.String, keyValues: js.Array[_], checkLocalCacheFirst: scala.Boolean): js.Promise[EntityByKeyResult] = js.native
+  def fetchMetadata(): js.Promise[_] = js.native
+  def fetchMetadata(callback: js.Function1[/* schema */ js.Any, scala.Unit]): js.Promise[_] = js.native
   def fetchMetadata(
     callback: js.Function1[/* schema */ js.Any, scala.Unit],
     errorCallback: breezeLib.breezeNs.coreNs.ErrorCallback
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def generateTempKeyValue(entity: Entity): js.Any = js.native
   def getChanges(): js.Array[Entity] = js.native
   def getChanges(entityTypeName: java.lang.String): js.Array[Entity] = js.native
@@ -112,16 +112,16 @@ class EntityManager () extends js.Object {
   def importEntities(exportedString: java.lang.String): breezeLib.Anon_Entities = js.native
   def importEntities(exportedString: java.lang.String, config: breezeLib.Anon_MetadataVersionFn): breezeLib.Anon_Entities = js.native
   def rejectChanges(): js.Array[Entity] = js.native
-  def saveChanges(): stdLib.Promise[SaveResult] = js.native
-  def saveChanges(entities: js.Array[Entity]): stdLib.Promise[SaveResult] = js.native
-  def saveChanges(entities: js.Array[Entity], saveOptions: SaveOptions): stdLib.Promise[SaveResult] = js.native
-  def saveChanges(entities: js.Array[Entity], saveOptions: SaveOptions, callback: SaveChangesSuccessCallback): stdLib.Promise[SaveResult] = js.native
+  def saveChanges(): js.Promise[SaveResult] = js.native
+  def saveChanges(entities: js.Array[Entity]): js.Promise[SaveResult] = js.native
+  def saveChanges(entities: js.Array[Entity], saveOptions: SaveOptions): js.Promise[SaveResult] = js.native
+  def saveChanges(entities: js.Array[Entity], saveOptions: SaveOptions, callback: SaveChangesSuccessCallback): js.Promise[SaveResult] = js.native
   def saveChanges(
     entities: js.Array[Entity],
     saveOptions: SaveOptions,
     callback: SaveChangesSuccessCallback,
     errorCallback: SaveChangesErrorCallback
-  ): stdLib.Promise[SaveResult] = js.native
+  ): js.Promise[SaveResult] = js.native
   def setProperties(config: EntityManagerProperties): scala.Unit = js.native
 }
 

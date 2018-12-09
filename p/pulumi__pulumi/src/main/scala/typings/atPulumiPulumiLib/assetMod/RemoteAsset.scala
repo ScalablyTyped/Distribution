@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class RemoteAsset protected ()
   extends atPulumiPulumiLib.assetAssetMod.RemoteAsset {
   def this(uri: java.lang.String) = this()
-  def this(uri: stdLib.Promise[java.lang.String]) = this()
+  def this(uri: js.Promise[java.lang.String]) = this()
 }
 

@@ -376,7 +376,7 @@ object ElasticTranscoderNs extends js.Object {
     /**
          * If the preset settings don't comply with the standards for the video codec but Elastic Transcoder created the preset, this message explains the reason the preset settings don't meet the standard. Elastic Transcoder created the preset because the settings might produce acceptable output.
          */
-    var Warning: js.UndefOr[java.lang.String] = js.undefined
+    var Warning: js.UndefOr[String] = js.undefined
   }
   
   
@@ -490,7 +490,7 @@ object ElasticTranscoderNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the job.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The identifier that Elastic Transcoder assigned to the job. You use this value to get settings for the job or to delete the job.
          */
@@ -602,7 +602,7 @@ object ElasticTranscoderNs extends js.Object {
     /**
          * If Elastic Transcoder used a preset with a ColorSpaceConversionMode to transcode the output file, the AppliedColorSpaceConversion parameter shows the conversion used. If no ColorSpaceConversionMode was defined in the preset, this parameter is not be included in the job response.
          */
-    var AppliedColorSpaceConversion: js.UndefOr[java.lang.String] = js.undefined
+    var AppliedColorSpaceConversion: js.UndefOr[String] = js.undefined
     /**
          * You can configure Elastic Transcoder to transcode captions, or subtitles, from one format to another. All captions must be in UTF-8. Elastic Transcoder supports two types of captions:    Embedded: Embedded captions are included in the same file as the audio and video. Elastic Transcoder supports only one embedded caption per language, to a maximum of 300 embedded captions per file. Valid input values include: CEA-608 (EIA-608, first non-empty channel only), CEA-708 (EIA-708, first non-empty channel only), and mov-text  Valid outputs include: mov-text  Elastic Transcoder supports a maximum of one embedded format per output.    Sidecar: Sidecar captions are kept in a separate metadata file from the audio and video data. Sidecar captions require a player that is capable of understanding the relationship between the video file and the sidecar file. Elastic Transcoder supports only one sidecar caption per language, to a maximum of 20 sidecar captions per file. Valid input values include: dfxp (first div element only), ebu-tt, scc, smpt, srt, ttml (first div element only), and webvtt  Valid outputs include: dfxp (first div element only), scc, srt, and webvtt.   If you want ttml or smpte-tt compatible captions, specify dfxp as your output format. Elastic Transcoder does not support OCR (Optical Character Recognition), does not accept pictures as a valid input for captions, and is not available for audio-only transcoding. Elastic Transcoder does not preserve text formatting (for example, italics) during the transcoding process. To remove captions or leave the captions empty, set Captions to null. To pass through existing captions unchanged, set the MergePolicy to MergeRetain, and pass in a null CaptionSources array. For more information on embedded files, see the Subtitles Wikipedia page. For more information on sidecar files, see the Extensible Metadata Platform and Sidecar file Wikipedia pages.
          */
@@ -638,7 +638,7 @@ object ElasticTranscoderNs extends js.Object {
     /**
          * A sequential counter, starting with 1, that identifies an output among the outputs from the current job. In the Output syntax, this value is always 1.
          */
-    var Id: js.UndefOr[java.lang.String] = js.undefined
+    var Id: js.UndefOr[String] = js.undefined
     /**
          *  The name to assign to the transcoded file. Elastic Transcoder saves the file in the Amazon S3 bucket specified by the OutputBucket object in the pipeline that is specified by the pipeline ID.
          */
@@ -842,7 +842,7 @@ object ElasticTranscoderNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the pipeline.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The AWS Key Management Service (AWS KMS) key that you want to use with this pipeline. If you use either s3 or s3-aws-kms as your Encryption:Mode, you don't need to provide a key with your job because a default key, known as an AWS-KMS key, is created for you automatically. You need to provide an AWS-KMS key only if you want to use a non-default AWS-KMS key, or if you are using an Encryption:Mode of aes-cbc-pkcs7, aes-ctr, or aes-gcm.
          */
@@ -966,7 +966,7 @@ object ElasticTranscoderNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the preset.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * A section of the response body that provides information about the audio preset values.
          */
@@ -1805,7 +1805,7 @@ object ElasticTranscoderNs extends js.Object {
   
   
   trait UserMetadata
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait VideoParameters extends js.Object {
@@ -1876,11 +1876,11 @@ object ElasticTranscoderNs extends js.Object {
     /**
          * The code of the cross-regional warning.
          */
-    var Code: js.UndefOr[java.lang.String] = js.undefined
+    var Code: js.UndefOr[String] = js.undefined
     /**
          * The message explaining what resources are in a different region from the pipeline.  AWS KMS keys must be in the same region as the pipeline. 
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   val TypesNs: this.type = js.native
@@ -1914,7 +1914,7 @@ object ElasticTranscoderNs extends js.Object {
   type Digits = java.lang.String
   type DigitsOrAuto = java.lang.String
   type EncryptionMode = java.lang.String
-  type ExceptionMessages = js.Array[java.lang.String]
+  type ExceptionMessages = js.Array[String]
   type Filename = java.lang.String
   type FixedGOP = java.lang.String
   type FloatString = java.lang.String

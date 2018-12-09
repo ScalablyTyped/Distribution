@@ -10,11 +10,11 @@ trait StorageEngine extends js.Object {
   /**
            * Load
            */
-  def load(): stdLib.PromiseLike[_]
+  def load(): js.Thenable[_]
   /**
            * Save
            * @param state
            */
-  def save(state: js.Any): stdLib.PromiseLike[_]
+  def save(state: js.Any): js.Thenable[_]
 }
 

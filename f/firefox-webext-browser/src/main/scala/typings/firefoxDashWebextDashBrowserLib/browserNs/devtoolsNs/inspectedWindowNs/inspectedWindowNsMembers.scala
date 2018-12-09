@@ -41,7 +41,7 @@ object inspectedWindowNsMembers extends js.Object {
        * @param expression An expression to evaluate.
        * @param [options] The options parameter can contain one or more options.
        */
-  def eval(expression: java.lang.String): stdLib.Promise[js.UndefOr[js.Object]] = js.native
+  def eval(expression: java.lang.String): js.Promise[js.UndefOr[js.Object]] = js.native
   /* devtools.inspectedWindow functions */
   /**
        * Evaluates a JavaScript expression in the context of the main frame of the inspected page. The expression must
@@ -53,12 +53,12 @@ object inspectedWindowNsMembers extends js.Object {
        * @param expression An expression to evaluate.
        * @param [options] The options parameter can contain one or more options.
        */
-  def eval(expression: java.lang.String, options: firefoxDashWebextDashBrowserLib.Anon_ContextSecurityOrigin): stdLib.Promise[js.UndefOr[js.Object]] = js.native
+  def eval(expression: java.lang.String, options: firefoxDashWebextDashBrowserLib.Anon_ContextSecurityOrigin): js.Promise[js.UndefOr[js.Object]] = js.native
   /**
        * Retrieves the list of resources from the inspected page.
        * @deprecated Unsupported on Firefox at this time.
        */
-  def getResources(): stdLib.Promise[js.Array[Resource]] = js.native
+  def getResources(): js.Promise[js.Array[Resource]] = js.native
   /** Reloads the inspected page. */
   def reload(): scala.Unit = js.native
   /** Reloads the inspected page. */

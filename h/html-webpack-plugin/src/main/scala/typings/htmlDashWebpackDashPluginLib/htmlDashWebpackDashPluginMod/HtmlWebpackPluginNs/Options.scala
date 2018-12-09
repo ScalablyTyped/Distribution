@@ -98,7 +98,7 @@ trait Options
   		 * Default: `false`, meaning the `template` option should be used instead.
   		 */
   var templateContent: js.UndefOr[
-    htmlDashWebpackDashPluginLib.htmlDashWebpackDashPluginLibNumbers.`false` | java.lang.String | stdLib.Promise[java.lang.String]
+    htmlDashWebpackDashPluginLib.htmlDashWebpackDashPluginLibNumbers.`false` | java.lang.String | js.Promise[java.lang.String]
   ] = js.undefined
   /**
   		 * Allows to overwrite the parameters used in the template.

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait AsyncPromiseValidationOpts extends ValidateOptsBase {
   @JSName("validator")
   var validator_Original: AsyncPromiseValidationFn[_] = js.native
-  def validator(value: js.Any): stdLib.Promise[scala.Boolean] = js.native
+  def validator(value: js.Any): js.Promise[scala.Boolean] = js.native
 }
 

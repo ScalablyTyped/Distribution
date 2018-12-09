@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Disputes
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def close(disputeId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  def close(disputeId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   /**
                * Closing the dispute for a charge indicates that you do not have any evidence to submit and are
                * essentially ‘dismissing’ the dispute, acknowledging it as lost
@@ -17,7 +17,7 @@ trait Disputes
                *
                * *Closing a dispute is irreversible!*
                */
-  def close(disputeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  def close(disputeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   /**
                * Closing the dispute for a charge indicates that you do not have any evidence to submit and are
                * essentially ‘dismissing’ the dispute, acknowledging it as lost
@@ -30,17 +30,17 @@ trait Disputes
     disputeId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   def close(
     disputeId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
    //TODO: Implement placeholder method
   def getMetadata(): scala.Unit = js.native
-  def list(): stdLib.Promise[
+  def list(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
   ] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.IListOptionsCreated): stdLib.Promise[
+  def list(data: stripeLib.stripeMod.StripeNs.IListOptionsCreated): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
   ] = js.native
   /**
@@ -49,7 +49,7 @@ trait Disputes
   def list(
     data: stripeLib.stripeMod.StripeNs.IListOptionsCreated,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
   ] = js.native
   /**
@@ -61,7 +61,7 @@ trait Disputes
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
   ] = js.native
   def list(
@@ -69,10 +69,10 @@ trait Disputes
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
   ] = js.native
-  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
   ] = js.native
   def list(
@@ -80,18 +80,18 @@ trait Disputes
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
   ] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
   ] = js.native
-  def retrieve(disputeId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
-  def retrieve(disputeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  def retrieve(disputeId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  def retrieve(disputeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   /**
                * Retrieves the dispute with the given ID.
                */
@@ -99,7 +99,7 @@ trait Disputes
     disputeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   /**
                * Retrieves the dispute with the given ID.
                */
@@ -108,24 +108,24 @@ trait Disputes
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   def retrieve(
     disputeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
-  def retrieve(disputeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  def retrieve(disputeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   def retrieve(
     disputeId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   def retrieve(
     disputeId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   def setMetadata(): scala.Unit = js.native
-  def update(disputeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.disputesNs.IDisputeUpdateOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  def update(disputeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.disputesNs.IDisputeUpdateOptions): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   /**
                * When you get a dispute, contacting your customer is always the best first step. If that doesn't work, you can submit evidence in
                * order to help us resolve the dispute in your favor. You can do this in your dashboard, but if you prefer, you can use the API to
@@ -139,7 +139,7 @@ trait Disputes
     disputeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.disputesNs.IDisputeUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   /**
                * When you get a dispute, contacting your customer is always the best first step. If that doesn't work, you can submit evidence in
                * order to help us resolve the dispute in your favor. You can do this in your dashboard, but if you prefer, you can use the API to
@@ -154,11 +154,11 @@ trait Disputes
     data: stripeLib.stripeMod.StripeNs.disputesNs.IDisputeUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
   def update(
     disputeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.disputesNs.IDisputeUpdateOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.disputesNs.IDispute]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.disputesNs.IDispute] = js.native
 }
 

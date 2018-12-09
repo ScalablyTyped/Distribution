@@ -12,8 +12,8 @@ trait oraFactory
   def apply(): Ora = js.native
   def apply(options: java.lang.String): Ora = js.native
   def apply(options: Options): Ora = js.native
-  def promise(action: stdLib.PromiseLike[_]): Ora = js.native
-  def promise(action: stdLib.PromiseLike[_], options: java.lang.String): Ora = js.native
-  def promise(action: stdLib.PromiseLike[_], options: Options): Ora = js.native
+  def promise(action: js.Thenable[_]): Ora = js.native
+  def promise(action: js.Thenable[_], options: java.lang.String): Ora = js.native
+  def promise(action: js.Thenable[_], options: Options): Ora = js.native
 }
 

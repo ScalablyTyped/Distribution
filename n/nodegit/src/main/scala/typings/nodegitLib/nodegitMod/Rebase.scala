@@ -18,16 +18,16 @@ object Rebase extends js.Object {
     branch: nodegitLib.annotatedDashCommitMod.AnnotatedCommit,
     upstream: nodegitLib.annotatedDashCommitMod.AnnotatedCommit,
     onto: nodegitLib.annotatedDashCommitMod.AnnotatedCommit
-  ): stdLib.Promise[nodegitLib.rebaseMod.Rebase] = js.native
+  ): js.Promise[nodegitLib.rebaseMod.Rebase] = js.native
   def init(
     repo: nodegitLib.repositoryMod.Repository,
     branch: nodegitLib.annotatedDashCommitMod.AnnotatedCommit,
     upstream: nodegitLib.annotatedDashCommitMod.AnnotatedCommit,
     onto: nodegitLib.annotatedDashCommitMod.AnnotatedCommit,
     opts: nodegitLib.rebaseMod.RebaseOptions
-  ): stdLib.Promise[nodegitLib.rebaseMod.Rebase] = js.native
+  ): js.Promise[nodegitLib.rebaseMod.Rebase] = js.native
   def initOptions(opts: nodegitLib.rebaseMod.RebaseOptions, version: scala.Double): scala.Double = js.native
-  def open(repo: nodegitLib.repositoryMod.Repository): stdLib.Promise[nodegitLib.rebaseMod.Rebase] = js.native
-  def open(repo: nodegitLib.repositoryMod.Repository, opts: nodegitLib.rebaseMod.RebaseOptions): stdLib.Promise[nodegitLib.rebaseMod.Rebase] = js.native
+  def open(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.rebaseMod.Rebase] = js.native
+  def open(repo: nodegitLib.repositoryMod.Repository, opts: nodegitLib.rebaseMod.RebaseOptions): js.Promise[nodegitLib.rebaseMod.Rebase] = js.native
 }
 

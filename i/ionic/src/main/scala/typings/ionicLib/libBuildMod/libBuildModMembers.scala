@@ -14,6 +14,6 @@ object libBuildModMembers extends js.Object {
     deps: BuildRunnerDeps,
     inputs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineInputs,
     options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

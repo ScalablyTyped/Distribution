@@ -47,7 +47,7 @@ class KiiPushInstallation () extends js.Object {
            * @example
            *
            */
-  def getMqttEndpoint(installationID: java.lang.String): stdLib.Promise[KiiMqttEndpoint] = js.native
+  def getMqttEndpoint(installationID: java.lang.String): js.Promise[KiiMqttEndpoint] = js.native
   /**
            * Get MQTT endpoint.
            * If the MQTT endpoint is not ready, this method retries request up to three times.
@@ -84,7 +84,7 @@ class KiiPushInstallation () extends js.Object {
            * @example
            *
            */
-  def getMqttEndpoint(installationID: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccess): stdLib.Promise[KiiMqttEndpoint] = js.native
+  def getMqttEndpoint(installationID: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccess): js.Promise[KiiMqttEndpoint] = js.native
   /**
            * Register the id issued by GCM to the Kii cloud for current logged in user.
            *
@@ -109,7 +109,7 @@ class KiiPushInstallation () extends js.Object {
            * @example
            *
            */
-  def installGcm(installationRegistrationID: java.lang.String, development: scala.Boolean): stdLib.Promise[KiiGcmInstallationResponse] = js.native
+  def installGcm(installationRegistrationID: java.lang.String, development: scala.Boolean): js.Promise[KiiGcmInstallationResponse] = js.native
   /**
            * Register the id issued by GCM to the Kii cloud for current logged in user.
            *
@@ -138,7 +138,7 @@ class KiiPushInstallation () extends js.Object {
     installationRegistrationID: java.lang.String,
     development: scala.Boolean,
     callbacks: kiiDashCloudDashSdkLib.Anon_FailureError
-  ): stdLib.Promise[KiiGcmInstallationResponse] = js.native
+  ): js.Promise[KiiGcmInstallationResponse] = js.native
   /**
            * Register a MQTT installation to the Kii cloud for current logged in user.
            *
@@ -163,7 +163,7 @@ class KiiPushInstallation () extends js.Object {
            * @example
            *
            */
-  def installMqtt(development: scala.Boolean): stdLib.Promise[KiiMqttInstallationResponse] = js.native
+  def installMqtt(development: scala.Boolean): js.Promise[KiiMqttInstallationResponse] = js.native
   /**
            * Register a MQTT installation to the Kii cloud for current logged in user.
            *
@@ -188,7 +188,7 @@ class KiiPushInstallation () extends js.Object {
            * @example
            *
            */
-  def installMqtt(development: scala.Boolean, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessResponse): stdLib.Promise[KiiMqttInstallationResponse] = js.native
+  def installMqtt(development: scala.Boolean, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessResponse): js.Promise[KiiMqttInstallationResponse] = js.native
   /**
            * Unregister the push settings by the id(issued by push provider) that is used for installation.
            *
@@ -209,7 +209,7 @@ class KiiPushInstallation () extends js.Object {
            * @example
            *
            */
-  def uninstall(installationRegistrationID: java.lang.String, deviceType: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def uninstall(installationRegistrationID: java.lang.String, deviceType: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Unregister the push settings by the id(issued by push provider) that is used for installation.
            *
@@ -234,7 +234,7 @@ class KiiPushInstallation () extends js.Object {
     installationRegistrationID: java.lang.String,
     deviceType: java.lang.String,
     callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessAny
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
            * Unregister the push settings by the id(issued by KiiCloud) that is used for installation.
            *
@@ -254,7 +254,7 @@ class KiiPushInstallation () extends js.Object {
            * @example
            *
            */
-  def uninstallByInstallationID(installationID: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def uninstallByInstallationID(installationID: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Unregister the push settings by the id(issued by KiiCloud) that is used for installation.
            *
@@ -274,6 +274,6 @@ class KiiPushInstallation () extends js.Object {
            * @example
            *
            */
-  def uninstallByInstallationID(installationID: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessAny): stdLib.Promise[scala.Unit] = js.native
+  def uninstallByInstallationID(installationID: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessAny): js.Promise[scala.Unit] = js.native
 }
 

@@ -13,7 +13,7 @@ class Extractor protected () extends js.Object {
   var messageBundle: js.Any = js.native
   var metadataResolver: js.Any = js.native
   var staticSymbolResolver: js.Any = js.native
-  def extract(rootFiles: js.Array[java.lang.String]): stdLib.Promise[atAngularCompilerLib.srcI18nMessageUnderscoreBundleMod.MessageBundle] = js.native
+  def extract(rootFiles: js.Array[java.lang.String]): js.Promise[atAngularCompilerLib.srcI18nMessageUnderscoreBundleMod.MessageBundle] = js.native
 }
 
 @JSImport("@angular/compiler/src/i18n/extractor", "Extractor")

@@ -21,11 +21,11 @@ object SQSNs extends js.Object {
     /**
          * The unique identification of the permission you're setting (for example, AliceSendMessage). Maximum 80 characters. Allowed characters include alphanumeric characters, hyphens (-), and underscores (_).
          */
-    var Label: java.lang.String
+    var Label: String
     /**
          * The URL of the Amazon SQS queue to which permissions are added. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -33,19 +33,19 @@ object SQSNs extends js.Object {
     /**
          * An error code representing why the action failed on this entry.
          */
-    var Code: java.lang.String
+    var Code: String
     /**
          * The Id of an entry in a batch request.
          */
-    var Id: java.lang.String
+    var Id: String
     /**
          * A message explaining why the action failed on this entry.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether the error happened due to the producer.
          */
-    var SenderFault: scala.Boolean
+    var SenderFault: Boolean
   }
   
   
@@ -57,7 +57,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the Amazon SQS queue whose messages' visibility is changed. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -65,11 +65,11 @@ object SQSNs extends js.Object {
     /**
          * An identifier for this particular receipt handle used to communicate the result.  The Ids of a batch request need to be unique within a request 
          */
-    var Id: java.lang.String
+    var Id: String
     /**
          * A receipt handle.
          */
-    var ReceiptHandle: java.lang.String
+    var ReceiptHandle: String
     /**
          * The new value (in seconds) for the message's visibility timeout.
          */
@@ -93,7 +93,7 @@ object SQSNs extends js.Object {
     /**
          * Represents a message whose visibility timeout has been changed successfully.
          */
-    var Id: java.lang.String
+    var Id: String
   }
   
   
@@ -101,11 +101,11 @@ object SQSNs extends js.Object {
     /**
          * The URL of the Amazon SQS queue whose message's visibility is changed. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
     /**
          * The receipt handle associated with the message whose visibility timeout is changed. This parameter is returned by the  ReceiveMessage  action.
          */
-    var ReceiptHandle: java.lang.String
+    var ReceiptHandle: String
     /**
          * The new value for the message's visibility timeout (in seconds). Values values: 0 to 43200. Maximum: 12 hours.
          */
@@ -129,7 +129,7 @@ object SQSNs extends js.Object {
     /**
          * The name of the new queue. The following limits apply to this name:   A queue name can have up to 80 characters.   Valid values: alphanumeric characters, hyphens (-), and underscores (_).   A FIFO queue name must end with the .fifo suffix.   Queue URLs and names are case-sensitive.
          */
-    var QueueName: java.lang.String
+    var QueueName: String
   }
   
   
@@ -137,7 +137,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the created Amazon SQS queue.
          */
-    var QueueUrl: js.UndefOr[java.lang.String] = js.undefined
+    var QueueUrl: js.UndefOr[String] = js.undefined
   }
   
   
@@ -149,7 +149,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the Amazon SQS queue from which messages are deleted. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -157,11 +157,11 @@ object SQSNs extends js.Object {
     /**
          * An identifier for this particular receipt handle. This is used to communicate the result.  The Ids of a batch request need to be unique within a request 
          */
-    var Id: java.lang.String
+    var Id: String
     /**
          * A receipt handle.
          */
-    var ReceiptHandle: java.lang.String
+    var ReceiptHandle: String
   }
   
   
@@ -181,7 +181,7 @@ object SQSNs extends js.Object {
     /**
          * Represents a successfully deleted message.
          */
-    var Id: java.lang.String
+    var Id: String
   }
   
   
@@ -189,11 +189,11 @@ object SQSNs extends js.Object {
     /**
          * The URL of the Amazon SQS queue from which messages are deleted. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
     /**
          * The receipt handle associated with the message to delete.
          */
-    var ReceiptHandle: java.lang.String
+    var ReceiptHandle: String
   }
   
   
@@ -201,7 +201,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the Amazon SQS queue to delete. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -213,7 +213,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the Amazon SQS queue whose attribute information is retrieved. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -229,11 +229,11 @@ object SQSNs extends js.Object {
     /**
          * The name of the queue whose URL must be fetched. Maximum 80 characters. Valid values: alphanumeric characters, hyphens (-), and underscores (_). Queue URLs and names are case-sensitive.
          */
-    var QueueName: java.lang.String
+    var QueueName: String
     /**
          * The AWS account ID of the account that created the queue.
          */
-    var QueueOwnerAWSAccountId: js.UndefOr[java.lang.String] = js.undefined
+    var QueueOwnerAWSAccountId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -241,7 +241,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the queue.
          */
-    var QueueUrl: js.UndefOr[java.lang.String] = js.undefined
+    var QueueUrl: js.UndefOr[String] = js.undefined
   }
   
   
@@ -249,7 +249,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of a dead-letter queue. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -265,7 +265,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the queue.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -281,7 +281,7 @@ object SQSNs extends js.Object {
     /**
          * A string to use for filtering the list results. Only those queues whose name begins with the specified string are returned. Queue URLs and names are case-sensitive.
          */
-    var QueueNamePrefix: js.UndefOr[java.lang.String] = js.undefined
+    var QueueNamePrefix: js.UndefOr[String] = js.undefined
   }
   
   
@@ -301,15 +301,15 @@ object SQSNs extends js.Object {
     /**
          * The message's contents (not URL-encoded).
          */
-    var Body: js.UndefOr[java.lang.String] = js.undefined
+    var Body: js.UndefOr[String] = js.undefined
     /**
          * An MD5 digest of the non-URL-encoded message body string.
          */
-    var MD5OfBody: js.UndefOr[java.lang.String] = js.undefined
+    var MD5OfBody: js.UndefOr[String] = js.undefined
     /**
          * An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
          */
-    var MD5OfMessageAttributes: js.UndefOr[java.lang.String] = js.undefined
+    var MD5OfMessageAttributes: js.UndefOr[String] = js.undefined
     /**
          * Each message attribute consists of a Name, Type, and Value. For more information, see Amazon SQS Message Attributes in the Amazon Simple Queue Service Developer Guide.
          */
@@ -317,11 +317,11 @@ object SQSNs extends js.Object {
     /**
          * A unique identifier for the message. A MessageIdis considered unique across all AWS accounts for an extended period of time.
          */
-    var MessageId: js.UndefOr[java.lang.String] = js.undefined
+    var MessageId: js.UndefOr[String] = js.undefined
     /**
          * An identifier associated with the act of receiving the message. A new receipt handle is returned every time you receive a message. When deleting a message, you provide the last received receipt handle to delete the message.
          */
-    var ReceiptHandle: js.UndefOr[java.lang.String] = js.undefined
+    var ReceiptHandle: js.UndefOr[String] = js.undefined
   }
   
   
@@ -337,7 +337,7 @@ object SQSNs extends js.Object {
     /**
          * Amazon SQS supports the following logical data types: String, Number, and Binary. For the Number data type, you must use StringValue. You can also append custom labels. For more information, see Amazon SQS Message Attributes in the Amazon Simple Queue Service Developer Guide.
          */
-    var DataType: java.lang.String
+    var DataType: String
     /**
          * Not implemented. Reserved for future use.
          */
@@ -345,7 +345,7 @@ object SQSNs extends js.Object {
     /**
          * Strings are Unicode with UTF-8 binary encoding. For a list of code values, see ASCII Printable Characters.
          */
-    var StringValue: js.UndefOr[java.lang.String] = js.undefined
+    var StringValue: js.UndefOr[String] = js.undefined
   }
   
   
@@ -354,19 +354,19 @@ object SQSNs extends js.Object {
   
   
   trait MessageSystemAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait PurgeQueueRequest extends js.Object {
     /**
          * The URL of the queue from which the PurgeQueue action deletes messages. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
   trait QueueAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait ReceiveMessageRequest extends js.Object {
@@ -385,11 +385,11 @@ object SQSNs extends js.Object {
     /**
          * The URL of the Amazon SQS queue from which messages are received. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
     /**
          * This parameter applies only to FIFO (first-in-first-out) queues. The token used for deduplication of ReceiveMessage calls. If a networking issue occurs after a ReceiveMessage action, and instead of a response you receive a generic error, you can retry the same action with an identical ReceiveRequestAttemptId to retrieve the same set of messages, even if their visibility timeout has not yet expired.   You can use ReceiveRequestAttemptId only for 5 minutes after a ReceiveMessage action.   When you set FifoQueue, a caller of the ReceiveMessage action can provide a ReceiveRequestAttemptId explicitly.   If a caller of the ReceiveMessage action doesn't provide a ReceiveRequestAttemptId, Amazon SQS generates a ReceiveRequestAttemptId.   You can retry the ReceiveMessage action with the same ReceiveRequestAttemptId if none of the messages have been modified (deleted or had their visibility changes).   During a visibility timeout, subsequent calls with the same ReceiveRequestAttemptId return the same messages and receipt handles. If a retry occurs within the deduplication interval, it resets the visibility timeout. For more information, see Visibility Timeout in the Amazon Simple Queue Service Developer Guide.  If a caller of the ReceiveMessage action still processes messages when the visibility timeout expires and messages become visible, another worker consuming from the same queue can receive the same messages and therefore process duplicates. Also, if a consumer whose message processing time is longer than the visibility timeout tries to delete the processed messages, the action fails with an error. To mitigate this effect, ensure that your application observes a safe threshold before the visibility timeout expires and extend the visibility timeout as necessary.    While messages with a particular MessageGroupId are invisible, no more messages belonging to the same MessageGroupId are returned until the visibility timeout expires. You can still receive messages with another MessageGroupId as long as it is also visible.   If a caller of ReceiveMessage can't track the ReceiveRequestAttemptId, no retries work until the original visibility timeout expires. As a result, delays might occur but the messages in the queue remain in a strict order.   The length of ReceiveRequestAttemptId is 128 characters. ReceiveRequestAttemptId can contain alphanumeric characters (a-z, A-Z, 0-9) and punctuation (!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~). For best practices of using ReceiveRequestAttemptId, see Using the ReceiveRequestAttemptId Request Parameter in the Amazon Simple Queue Service Developer Guide.
          */
-    var ReceiveRequestAttemptId: js.UndefOr[java.lang.String] = js.undefined
+    var ReceiveRequestAttemptId: js.UndefOr[String] = js.undefined
     /**
          * The duration (in seconds) that the received messages are hidden from subsequent retrieve requests after being retrieved by a ReceiveMessage request.
          */
@@ -413,11 +413,11 @@ object SQSNs extends js.Object {
     /**
          * The identification of the permission to remove. This is the label added using the  AddPermission  action.
          */
-    var Label: java.lang.String
+    var Label: String
     /**
          * The URL of the Amazon SQS queue from which permissions are removed. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -429,7 +429,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the Amazon SQS queue to which batched messages are sent. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -441,7 +441,7 @@ object SQSNs extends js.Object {
     /**
          * An identifier for a message in this batch used to communicate the result.  The Ids of a batch request need to be unique within a request This identifier can have up to 80 characters. The following characters are accepted: alphanumeric characters, hyphens(-), and underscores (_). 
          */
-    var Id: java.lang.String
+    var Id: String
     /**
          * Each message attribute consists of a Name, Type, and Value. For more information, see Amazon SQS Message Attributes in the Amazon Simple Queue Service Developer Guide.
          */
@@ -449,15 +449,15 @@ object SQSNs extends js.Object {
     /**
          * The body of the message.
          */
-    var MessageBody: java.lang.String
+    var MessageBody: String
     /**
          * This parameter applies only to FIFO (first-in-first-out) queues. The token used for deduplication of messages within a 5-minute minimum deduplication interval. If a message with a particular MessageDeduplicationId is sent successfully, subsequent messages with the same MessageDeduplicationId are accepted successfully but aren't delivered. For more information, see  Exactly-Once Processing in the Amazon Simple Queue Service Developer Guide.   Every message must have a unique MessageDeduplicationId,   You may provide a MessageDeduplicationId explicitly.   If you aren't able to provide a MessageDeduplicationId and you enable ContentBasedDeduplication for your queue, Amazon SQS uses a SHA-256 hash to generate the MessageDeduplicationId using the body of the message (but not the attributes of the message).    If you don't provide a MessageDeduplicationId and the queue doesn't have ContentBasedDeduplication set, the action fails with an error.   If the queue has ContentBasedDeduplication set, your MessageDeduplicationId overrides the generated one.     When ContentBasedDeduplication is in effect, messages with identical content sent within the deduplication interval are treated as duplicates and only one copy of the message is delivered.   If you send one message with ContentBasedDeduplication enabled and then another message with a MessageDeduplicationId that is the same as the one generated for the first MessageDeduplicationId, the two messages are treated as duplicates and only one copy of the message is delivered.     The MessageDeduplicationId is available to the consumer of the message (this can be useful for troubleshooting delivery issues). If a message is sent successfully but the acknowledgement is lost and the message is resent with the same MessageDeduplicationId after the deduplication interval, Amazon SQS can't detect duplicate messages. Amazon SQS continues to keep track of the message deduplication ID even after the message is received and deleted.  The length of MessageDeduplicationId is 128 characters. MessageDeduplicationId can contain alphanumeric characters (a-z, A-Z, 0-9) and punctuation (!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~). For best practices of using MessageDeduplicationId, see Using the MessageDeduplicationId Property in the Amazon Simple Queue Service Developer Guide.
          */
-    var MessageDeduplicationId: js.UndefOr[java.lang.String] = js.undefined
+    var MessageDeduplicationId: js.UndefOr[String] = js.undefined
     /**
          * This parameter applies only to FIFO (first-in-first-out) queues. The tag that specifies that a message belongs to a specific message group. Messages that belong to the same message group are processed in a FIFO manner (however, messages in different message groups might be processed out of order). To interleave multiple ordered streams within a single queue, use MessageGroupId values (for example, session data for multiple users). In this scenario, multiple consumers can process the queue, but the session data of each user is processed in a FIFO fashion.   You must associate a non-empty MessageGroupId with a message. If you don't provide a MessageGroupId, the action fails.    ReceiveMessage might return messages with multiple MessageGroupId values. For each MessageGroupId, the messages are sorted by time sent. The caller can't specify a MessageGroupId.   The length of MessageGroupId is 128 characters. Valid values: alphanumeric characters and punctuation (!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~). For best practices of using MessageGroupId, see Using the MessageGroupId Property in the Amazon Simple Queue Service Developer Guide.   MessageGroupId is required for FIFO queues. You can't use it for Standard queues. 
          */
-    var MessageGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var MessageGroupId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -477,23 +477,23 @@ object SQSNs extends js.Object {
     /**
          * An identifier for the message in this batch.
          */
-    var Id: java.lang.String
+    var Id: String
     /**
          * An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
          */
-    var MD5OfMessageAttributes: js.UndefOr[java.lang.String] = js.undefined
+    var MD5OfMessageAttributes: js.UndefOr[String] = js.undefined
     /**
          * An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
          */
-    var MD5OfMessageBody: java.lang.String
+    var MD5OfMessageBody: String
     /**
          * An identifier for the message.
          */
-    var MessageId: java.lang.String
+    var MessageId: String
     /**
          * This parameter applies only to FIFO (first-in-first-out) queues. The large, non-consecutive number that Amazon SQS assigns to each message. The length of SequenceNumber is 128 bits. As SequenceNumber continues to increase for a particular MessageGroupId.
          */
-    var SequenceNumber: js.UndefOr[java.lang.String] = js.undefined
+    var SequenceNumber: js.UndefOr[String] = js.undefined
   }
   
   
@@ -509,19 +509,19 @@ object SQSNs extends js.Object {
     /**
          * The message to send. The maximum string size is 256 KB.  A message can include only XML, JSON, and unformatted text. The following Unicode characters are allowed:  #x9 | #xA | #xD | #x20 to #xD7FF | #xE000 to #xFFFD | #x10000 to #x10FFFF  Any characters not included in this list will be rejected. For more information, see the W3C specification for characters. 
          */
-    var MessageBody: java.lang.String
+    var MessageBody: String
     /**
          * This parameter applies only to FIFO (first-in-first-out) queues. The token used for deduplication of sent messages. If a message with a particular MessageDeduplicationId is sent successfully, any messages sent with the same MessageDeduplicationId are accepted successfully but aren't delivered during the 5-minute deduplication interval. For more information, see  Exactly-Once Processing in the Amazon Simple Queue Service Developer Guide.   Every message must have a unique MessageDeduplicationId,   You may provide a MessageDeduplicationId explicitly.   If you aren't able to provide a MessageDeduplicationId and you enable ContentBasedDeduplication for your queue, Amazon SQS uses a SHA-256 hash to generate the MessageDeduplicationId using the body of the message (but not the attributes of the message).    If you don't provide a MessageDeduplicationId and the queue doesn't have ContentBasedDeduplication set, the action fails with an error.   If the queue has ContentBasedDeduplication set, your MessageDeduplicationId overrides the generated one.     When ContentBasedDeduplication is in effect, messages with identical content sent within the deduplication interval are treated as duplicates and only one copy of the message is delivered.   If you send one message with ContentBasedDeduplication enabled and then another message with a MessageDeduplicationId that is the same as the one generated for the first MessageDeduplicationId, the two messages are treated as duplicates and only one copy of the message is delivered.     The MessageDeduplicationId is available to the consumer of the message (this can be useful for troubleshooting delivery issues). If a message is sent successfully but the acknowledgement is lost and the message is resent with the same MessageDeduplicationId after the deduplication interval, Amazon SQS can't detect duplicate messages. Amazon SQS continues to keep track of the message deduplication ID even after the message is received and deleted.  The length of MessageDeduplicationId is 128 characters. MessageDeduplicationId can contain alphanumeric characters (a-z, A-Z, 0-9) and punctuation (!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~). For best practices of using MessageDeduplicationId, see Using the MessageDeduplicationId Property in the Amazon Simple Queue Service Developer Guide.
          */
-    var MessageDeduplicationId: js.UndefOr[java.lang.String] = js.undefined
+    var MessageDeduplicationId: js.UndefOr[String] = js.undefined
     /**
          * This parameter applies only to FIFO (first-in-first-out) queues. The tag that specifies that a message belongs to a specific message group. Messages that belong to the same message group are processed in a FIFO manner (however, messages in different message groups might be processed out of order). To interleave multiple ordered streams within a single queue, use MessageGroupId values (for example, session data for multiple users). In this scenario, multiple consumers can process the queue, but the session data of each user is processed in a FIFO fashion.   You must associate a non-empty MessageGroupId with a message. If you don't provide a MessageGroupId, the action fails.    ReceiveMessage might return messages with multiple MessageGroupId values. For each MessageGroupId, the messages are sorted by time sent. The caller can't specify a MessageGroupId.   The length of MessageGroupId is 128 characters. Valid values: alphanumeric characters and punctuation (!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~). For best practices of using MessageGroupId, see Using the MessageGroupId Property in the Amazon Simple Queue Service Developer Guide.   MessageGroupId is required for FIFO queues. You can't use it for Standard queues. 
          */
-    var MessageGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var MessageGroupId: js.UndefOr[String] = js.undefined
     /**
          * The URL of the Amazon SQS queue to which a message is sent. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -529,19 +529,19 @@ object SQSNs extends js.Object {
     /**
          * An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
          */
-    var MD5OfMessageAttributes: js.UndefOr[java.lang.String] = js.undefined
+    var MD5OfMessageAttributes: js.UndefOr[String] = js.undefined
     /**
          * An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see RFC1321.
          */
-    var MD5OfMessageBody: js.UndefOr[java.lang.String] = js.undefined
+    var MD5OfMessageBody: js.UndefOr[String] = js.undefined
     /**
          * An attribute containing the MessageId of the message sent to the queue. For more information, see Queue and Message Identifiers in the Amazon Simple Queue Service Developer Guide. 
          */
-    var MessageId: js.UndefOr[java.lang.String] = js.undefined
+    var MessageId: js.UndefOr[String] = js.undefined
     /**
          * This parameter applies only to FIFO (first-in-first-out) queues. The large, non-consecutive number that Amazon SQS assigns to each message. The length of SequenceNumber is 128 bits. SequenceNumber continues to increase for a particular MessageGroupId.
          */
-    var SequenceNumber: js.UndefOr[java.lang.String] = js.undefined
+    var SequenceNumber: js.UndefOr[String] = js.undefined
   }
   
   
@@ -553,7 +553,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the Amazon SQS queue whose attributes are set. Queue URLs and names are case-sensitive.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
   }
   
   
@@ -565,7 +565,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the queue.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
     /**
          * The list of tags to be added to the specified queue.
          */
@@ -1092,7 +1092,7 @@ object SQSNs extends js.Object {
     /**
          * The URL of the queue.
          */
-    var QueueUrl: java.lang.String
+    var QueueUrl: String
     /**
          * The list of tags to be removed from the specified queue.
          */
@@ -1100,8 +1100,8 @@ object SQSNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
-  type AWSAccountIdList = js.Array[java.lang.String]
-  type ActionNameList = js.Array[java.lang.String]
+  type AWSAccountIdList = js.Array[String]
+  type ActionNameList = js.Array[String]
   type AttributeNameList = js.Array[QueueAttributeName]
   type BatchResultErrorEntryList = js.Array[BatchResultErrorEntry]
   type Binary = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsSqsMod.Blob | java.lang.String
@@ -1118,11 +1118,11 @@ object SQSNs extends js.Object {
   type MessageList = js.Array[Message]
   type MessageSystemAttributeName = awsDashSdkLib.awsDashSdkLibStrings.SenderId | awsDashSdkLib.awsDashSdkLibStrings.SentTimestamp | awsDashSdkLib.awsDashSdkLibStrings.ApproximateReceiveCount | awsDashSdkLib.awsDashSdkLibStrings.ApproximateFirstReceiveTimestamp | awsDashSdkLib.awsDashSdkLibStrings.SequenceNumber | awsDashSdkLib.awsDashSdkLibStrings.MessageDeduplicationId | awsDashSdkLib.awsDashSdkLibStrings.MessageGroupId | java.lang.String
   type QueueAttributeName = awsDashSdkLib.awsDashSdkLibStrings.All | awsDashSdkLib.awsDashSdkLibStrings.Policy | awsDashSdkLib.awsDashSdkLibStrings.VisibilityTimeout | awsDashSdkLib.awsDashSdkLibStrings.MaximumMessageSize | awsDashSdkLib.awsDashSdkLibStrings.MessageRetentionPeriod | awsDashSdkLib.awsDashSdkLibStrings.ApproximateNumberOfMessages | awsDashSdkLib.awsDashSdkLibStrings.ApproximateNumberOfMessagesNotVisible | awsDashSdkLib.awsDashSdkLibStrings.CreatedTimestamp | awsDashSdkLib.awsDashSdkLibStrings.LastModifiedTimestamp | awsDashSdkLib.awsDashSdkLibStrings.QueueArn | awsDashSdkLib.awsDashSdkLibStrings.ApproximateNumberOfMessagesDelayed | awsDashSdkLib.awsDashSdkLibStrings.DelaySeconds | awsDashSdkLib.awsDashSdkLibStrings.ReceiveMessageWaitTimeSeconds | awsDashSdkLib.awsDashSdkLibStrings.RedrivePolicy | awsDashSdkLib.awsDashSdkLibStrings.FifoQueue | awsDashSdkLib.awsDashSdkLibStrings.ContentBasedDeduplication | awsDashSdkLib.awsDashSdkLibStrings.KmsMasterKeyId | awsDashSdkLib.awsDashSdkLibStrings.KmsDataKeyReusePeriodSeconds | java.lang.String
-  type QueueUrlList = js.Array[java.lang.String]
+  type QueueUrlList = js.Array[String]
   type SendMessageBatchRequestEntryList = js.Array[SendMessageBatchRequestEntry]
   type SendMessageBatchResultEntryList = js.Array[SendMessageBatchResultEntry]
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagValue = java.lang.String

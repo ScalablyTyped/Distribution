@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Runner[T /* <: js.Object */, U] extends js.Object {
-  def run(options: T): stdLib.Promise[U]
+  def run(options: T): js.Promise[U]
 }
 

@@ -84,32 +84,28 @@ ScalablyTyped.runtime.Instantiable2[
        * @return JSZip object
        */
   def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](path: java.lang.String, data: js.Any, options: jszipLib.jszipMod.JSZipNs.JSZipFileOptions): this.type = js.native
+  /**
+       * Add a file to the archive
+       *
+       * @param path Relative path to file
+       * @param data Content of the file
+       * @param options Optional information about the file
+       * @return JSZip object
+       */
+  def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](path: java.lang.String, data: js.Promise[_]): this.type = js.native
+  /**
+       * Add a file to the archive
+       *
+       * @param path Relative path to file
+       * @param data Content of the file
+       * @param options Optional information about the file
+       * @return JSZip object
+       */
+  def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](path: java.lang.String, data: js.Promise[_], options: jszipLib.jszipMod.JSZipNs.JSZipFileOptions): this.type = js.native
   def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](
     path: java.lang.String,
     data: scala.Null,
     options: jszipLib.jszipMod.JSZipNs.JSZipFileOptions with jszipLib.Anon_Dir
-  ): this.type = js.native
-  /**
-       * Add a file to the archive
-       *
-       * @param path Relative path to file
-       * @param data Content of the file
-       * @param options Optional information about the file
-       * @return JSZip object
-       */
-  def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](path: java.lang.String, data: stdLib.Promise[_]): this.type = js.native
-  /**
-       * Add a file to the archive
-       *
-       * @param path Relative path to file
-       * @param data Content of the file
-       * @param options Optional information about the file
-       * @return JSZip object
-       */
-  def file[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](
-    path: java.lang.String,
-    data: stdLib.Promise[_],
-    options: jszipLib.jszipMod.JSZipNs.JSZipFileOptions
   ): this.type = js.native
   @JSName("file")
   def `file_TInputType<this>`[T /* <: jszipLib.jszipMod.JSZipNs.InputType */](path: java.lang.String): this.type = js.native
@@ -159,7 +155,7 @@ ScalablyTyped.runtime.Instantiable2[
        * @param onUpdate The optional function called on each internal update with the metadata.
        * @return The serialized archive
        */
-  def generateAsync[T /* <: jszipLib.jszipMod.JSZipNs.OutputType */](): stdLib.Promise[_] = js.native
+  def generateAsync[T /* <: jszipLib.jszipMod.JSZipNs.OutputType */](): js.Promise[_] = js.native
   /**
        * Generates a new archive asynchronously
        *
@@ -167,7 +163,7 @@ ScalablyTyped.runtime.Instantiable2[
        * @param onUpdate The optional function called on each internal update with the metadata.
        * @return The serialized archive
        */
-  def generateAsync[T /* <: jszipLib.jszipMod.JSZipNs.OutputType */](options: jszipLib.jszipMod.JSZipNs.JSZipGeneratorOptions[T]): stdLib.Promise[_] = js.native
+  def generateAsync[T /* <: jszipLib.jszipMod.JSZipNs.OutputType */](options: jszipLib.jszipMod.JSZipNs.JSZipGeneratorOptions[T]): js.Promise[_] = js.native
   /**
        * Generates a new archive asynchronously
        *
@@ -175,7 +171,7 @@ ScalablyTyped.runtime.Instantiable2[
        * @param onUpdate The optional function called on each internal update with the metadata.
        * @return The serialized archive
        */
-  def generateAsync[T /* <: jszipLib.jszipMod.JSZipNs.OutputType */](options: jszipLib.jszipMod.JSZipNs.JSZipGeneratorOptions[T], onUpdate: jszipLib.OnUpdateCallback): stdLib.Promise[_] = js.native
+  def generateAsync[T /* <: jszipLib.jszipMod.JSZipNs.OutputType */](options: jszipLib.jszipMod.JSZipNs.JSZipGeneratorOptions[T], onUpdate: jszipLib.OnUpdateCallback): js.Promise[_] = js.native
   /**
        * Generates a new archive asynchronously
        *
@@ -212,7 +208,7 @@ ScalablyTyped.runtime.Instantiable2[
        * @param options Options for deserializing
        * @return Returns promise
        */
-  def loadAsync(data: jszipLib.InputFileFormat): stdLib.Promise[JSZip] = js.native
+  def loadAsync(data: jszipLib.InputFileFormat): js.Promise[JSZip] = js.native
   /**
        * Deserialize zip file asynchronously
        *
@@ -220,7 +216,7 @@ ScalablyTyped.runtime.Instantiable2[
        * @param options Options for deserializing
        * @return Returns promise
        */
-  def loadAsync(data: jszipLib.InputFileFormat, options: jszipLib.jszipMod.JSZipNs.JSZipLoadOptions): stdLib.Promise[JSZip] = js.native
+  def loadAsync(data: jszipLib.InputFileFormat, options: jszipLib.jszipMod.JSZipNs.JSZipLoadOptions): js.Promise[JSZip] = js.native
   /**
        * Removes the file or folder from the archive
        *

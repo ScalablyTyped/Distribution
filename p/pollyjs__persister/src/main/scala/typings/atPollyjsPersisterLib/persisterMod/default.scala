@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Persister {
   /* CompleteClass */
-  override def persist(): stdLib.Promise[scala.Unit] = js.native
+  override def persist(): js.Promise[scala.Unit] = js.native
 }
 
 @JSImport("@pollyjs/persister", JSImport.Default)

@@ -109,7 +109,7 @@ object ACMPCANs extends js.Object {
     /**
          * Serial number of your private CA.
          */
-    var Serial: js.UndefOr[java.lang.String] = js.undefined
+    var Serial: js.UndefOr[String] = js.undefined
     /**
          * Status of your private CA.
          */
@@ -157,7 +157,7 @@ object ACMPCANs extends js.Object {
     /**
          * Name of the S3 bucket that will contain the audit report.
          */
-    var S3BucketName: java.lang.String
+    var S3BucketName: String
   }
   
   
@@ -169,7 +169,7 @@ object ACMPCANs extends js.Object {
     /**
          * The key that uniquely identifies the report file in your S3 bucket.
          */
-    var S3Key: js.UndefOr[java.lang.String] = js.undefined
+    var S3Key: js.UndefOr[String] = js.undefined
   }
   
   
@@ -209,7 +209,7 @@ object ACMPCANs extends js.Object {
     /**
          * Boolean value that specifies whether certificate revocation lists (CRLs) are enabled. You can use this value to enable certificate revocation for a new CA when you call the CreateCertificateAuthority operation or for an existing CA when you call the UpdateCertificateAuthority operation. 
          */
-    var Enabled: scala.Boolean
+    var Enabled: Boolean
     /**
          * Number of days until a certificate expires.
          */
@@ -257,11 +257,11 @@ object ACMPCANs extends js.Object {
     /**
          * Name of the S3 bucket that contains the report.
          */
-    var S3BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var S3BucketName: js.UndefOr[String] = js.undefined
     /**
          * S3 key that uniquely identifies the report file in your S3 bucket.
          */
-    var S3Key: js.UndefOr[java.lang.String] = js.undefined
+    var S3Key: js.UndefOr[String] = js.undefined
   }
   
   

@@ -15,7 +15,7 @@ trait ConfigProps[FormData, P, ErrorType] extends js.Object {
       /* dispatch */ reduxLib.reduxMod.Dispatch[_], 
       /* props */ P with (InjectedFormProps[FormData, P, ErrorType]), 
       /* blurredField */ java.lang.String, 
-      stdLib.Promise[_]
+      js.Promise[_]
     ]
   ] = js.undefined
   var destroyOnUnmount: js.UndefOr[scala.Boolean] = js.undefined

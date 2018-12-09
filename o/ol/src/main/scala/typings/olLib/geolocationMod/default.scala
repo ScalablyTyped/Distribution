@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("ol/geolocation", JSImport.Default)
+@JSImport("ol/geolocation", JSImport.Default)
 @js.native
 class default ()
   extends openlayersLib.openlayersMod.Geolocation {

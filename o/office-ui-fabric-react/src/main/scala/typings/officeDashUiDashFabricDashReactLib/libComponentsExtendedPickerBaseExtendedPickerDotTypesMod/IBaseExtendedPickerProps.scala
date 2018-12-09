@@ -82,7 +82,7 @@ trait IBaseExtendedPickerProps[T] extends js.Object {
        * A callback to process a selection after the user selects a suggestion from the picker.
        * The returned item will be added to the selected items list
        */
-  var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | stdLib.PromiseLike[T]]] = js.undefined
+  var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T]]] = js.undefined
   /**
        * A callback on when an item or items were removed from the selected item list
        */

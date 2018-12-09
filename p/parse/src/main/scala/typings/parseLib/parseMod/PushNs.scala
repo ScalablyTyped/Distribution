@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("parse", "Push")
 @js.native
 object PushNs extends js.Object {
-  def send[T](data: parseLib.ParseNs.PushNs.PushData): stdLib.Promise[T] = js.native
-  def send[T](data: parseLib.ParseNs.PushNs.PushData, options: parseLib.ParseNs.PushNs.SendOptions): stdLib.Promise[T] = js.native
+  def send[T](data: parseLib.ParseNs.PushNs.PushData): js.Promise[T] = js.native
+  def send[T](data: parseLib.ParseNs.PushNs.PushData, options: parseLib.ParseNs.PushNs.SendOptions): js.Promise[T] = js.native
 }
 

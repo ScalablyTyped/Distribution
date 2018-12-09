@@ -67,7 +67,7 @@ object FMSNs extends js.Object {
     /**
          * Indicates that over 100 resources are non-compliant with the AWS Firewall Manager policy.
          */
-    var EvaluationLimitExceeded: js.UndefOr[scala.Boolean] = js.undefined
+    var EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined
     /**
          * Number of resources that are non-compliant with the specified policy. A resource is considered non-compliant if it is not associated with the specified policy.
          */
@@ -233,7 +233,7 @@ object FMSNs extends js.Object {
     /**
          * If set to True, resources with the tags that are specified in the ResourceTag array are not protected by the policy. If set to False, and the ResourceTag array is not null, only resources with the specified tags are associated with the policy.
          */
-    var ExcludeResourceTags: scala.Boolean
+    var ExcludeResourceTags: Boolean
     /**
          * Specifies the AWS account IDs to include in the policy. If IncludeMap is null, all accounts in the AWS Organization are included in the policy. If IncludeMap is not null, only values listed in IncludeMap will be included in the policy. The key to the map is ACCOUNT. For example, a valid IncludeMap would be {“ACCOUNT” : [“accountID1”, “accountID2”]}.
          */
@@ -253,7 +253,7 @@ object FMSNs extends js.Object {
     /**
          * Indicates if the policy should be automatically applied to new resources.
          */
-    var RemediationEnabled: scala.Boolean
+    var RemediationEnabled: Boolean
     /**
          * An array of ResourceTag objects.
          */
@@ -273,7 +273,7 @@ object FMSNs extends js.Object {
     /**
          * Indicates if over 100 resources are non-compliant with the AWS Firewall Manager policy.
          */
-    var EvaluationLimitExceeded: js.UndefOr[scala.Boolean] = js.undefined
+    var EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined
     /**
          * A time stamp that indicates when the returned information should be considered out-of-date.
          */
@@ -349,7 +349,7 @@ object FMSNs extends js.Object {
     /**
          * Indicates if the policy should be automatically applied to new resources.
          */
-    var RemediationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var RemediationEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The type of resource to protect with the policy, either an Application Load Balancer or a CloudFront distribution. This is in the format shown in AWS Resource Types Reference. Valid values are AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
          */

@@ -44,7 +44,7 @@ class MongoosePromise[T] ()
   /** ES6-style .catch() shorthand */
   def `catch`[TRes](): MongoosePromise[TRes] = js.native
   /** ES6-style .catch() shorthand */
-  def `catch`[TRes](onReject: js.Function1[/* err */ js.Any, scala.Unit | TRes | stdLib.PromiseLike[TRes]]): MongoosePromise[TRes] = js.native
+  def `catch`[TRes](onReject: js.Function1[/* err */ js.Any, scala.Unit | TRes | js.Thenable[TRes]]): MongoosePromise[TRes] = js.native
   /**
        * Fulfills this promise with passed arguments. Alias of mpromise#fulfill.
        * @deprecated Use fulfill instead.
@@ -83,8 +83,8 @@ object MongoosePromise extends js.Object {
   /** ES6-style promise constructor wrapper around mpromise. */
   def ES6[TRes](
     resolver: js.Function2[
-      /* complete */ js.Function1[/* repeated */TRes, scala.Unit | TRes | stdLib.PromiseLike[TRes]], 
-      /* error */ js.Function1[/* e */ js.Any, scala.Unit | TRes | stdLib.PromiseLike[TRes]], 
+      /* complete */ js.Function1[/* repeated */TRes, scala.Unit | TRes | js.Thenable[TRes]], 
+      /* error */ js.Function1[/* e */ js.Any, scala.Unit | TRes | js.Thenable[TRes]], 
       scala.Unit
     ]
   ): mongooseDashPromiseLib.mongooseMod.MongoosePromise[TRes] = js.native

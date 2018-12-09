@@ -15,6 +15,6 @@ class Index ()
 object Index extends js.Object {
   def entryIsConflict(entry: nodegitLib.indexDashEntryMod.IndexEntry): scala.Boolean = js.native
   def entryStage(entry: nodegitLib.indexDashEntryMod.IndexEntry): scala.Double = js.native
-  def open(indexPath: java.lang.String): stdLib.Promise[nodegitLib.indexUnderscoreMod.Index] = js.native
+  def open(indexPath: java.lang.String): js.Promise[nodegitLib.indexUnderscoreMod.Index] = js.native
 }
 

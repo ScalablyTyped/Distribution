@@ -41,8 +41,8 @@ object FaceDetectorNs extends js.Object {
   }
   
   val Constants: _Constants = js.native
-  def detectFaces(uri: java.lang.String): stdLib.Promise[DetectFaceResult] = js.native
-  def detectFaces(uri: java.lang.String, options: DetectionOptions): stdLib.Promise[DetectFaceResult] = js.native
+  def detectFaces(uri: java.lang.String): js.Promise[DetectFaceResult] = js.native
+  def detectFaces(uri: java.lang.String, options: DetectionOptions): js.Promise[DetectFaceResult] = js.native
   type Classifications = _Shared
   type Landmarks = _Shared
 }

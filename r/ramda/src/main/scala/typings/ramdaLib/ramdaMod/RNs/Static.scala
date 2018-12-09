@@ -379,37 +379,34 @@ trait Static extends js.Object {
            * Performs right-to-left composition of one or more Promise-returning functions.
            * All functions must be unary.
            */
-  def composeP[V0, T1](fn0: js.Function1[/* x0 */ V0, stdLib.Promise[T1]]): js.Function1[/* x0 */ V0, stdLib.Promise[T1]] = js.native
-  def composeP[V0, T1, T2](
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn0: js.Function1[/* x0 */ V0, stdLib.Promise[T1]]
-  ): js.Function1[/* x0 */ V0, stdLib.Promise[T2]] = js.native
+  def composeP[V0, T1](fn0: js.Function1[/* x0 */ V0, js.Promise[T1]]): js.Function1[/* x0 */ V0, js.Promise[T1]] = js.native
+  def composeP[V0, T1, T2](fn1: js.Function1[/* x */ T1, js.Promise[T2]], fn0: js.Function1[/* x0 */ V0, js.Promise[T1]]): js.Function1[/* x0 */ V0, js.Promise[T2]] = js.native
   def composeP[V0, T1, T2, T3](
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T3]] = js.native
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]]
+  ): js.Function1[/* x */ V0, js.Promise[T3]] = js.native
   def composeP[V0, T1, T2, T3, T4](
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T4]] = js.native
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]]
+  ): js.Function1[/* x */ V0, js.Promise[T4]] = js.native
   def composeP[V0, T1, T2, T3, T4, T5](
-    fn4: js.Function1[/* x */ T4, stdLib.Promise[T5]],
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T5]] = js.native
+    fn4: js.Function1[/* x */ T4, js.Promise[T5]],
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]]
+  ): js.Function1[/* x */ V0, js.Promise[T5]] = js.native
   def composeP[V0, T1, T2, T3, T4, T5, T6](
-    fn5: js.Function1[/* x */ T5, stdLib.Promise[T6]],
-    fn4: js.Function1[/* x */ T4, stdLib.Promise[T5]],
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T6]] = js.native
+    fn5: js.Function1[/* x */ T5, js.Promise[T6]],
+    fn4: js.Function1[/* x */ T4, js.Promise[T5]],
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]]
+  ): js.Function1[/* x */ V0, js.Promise[T6]] = js.native
   def concat(list1: java.lang.String): js.Function1[/* list2 */ java.lang.String, java.lang.String] = js.native
   def concat(list1: java.lang.String, list2: java.lang.String): java.lang.String = js.native
   def concat[T](list1: js.Array[T]): js.Function1[/* list2 */ js.Array[T], js.Array[T]] = js.native
@@ -1672,79 +1669,76 @@ trait Static extends js.Object {
            * Performs left-to-right composition of one or more Promise-returning functions.
            * All functions need to be unary.
            */
-  def pipeP[V0, T1](fn0: js.Function1[/* x0 */ V0, stdLib.Promise[T1]]): js.Function1[/* x0 */ V0, stdLib.Promise[T1]] = js.native
-  def pipeP[V0, T1, T2](
-    fn0: js.Function1[/* x0 */ V0, stdLib.Promise[T1]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]]
-  ): js.Function1[/* x0 */ V0, stdLib.Promise[T2]] = js.native
+  def pipeP[V0, T1](fn0: js.Function1[/* x0 */ V0, js.Promise[T1]]): js.Function1[/* x0 */ V0, js.Promise[T1]] = js.native
+  def pipeP[V0, T1, T2](fn0: js.Function1[/* x0 */ V0, js.Promise[T1]], fn1: js.Function1[/* x */ T1, js.Promise[T2]]): js.Function1[/* x0 */ V0, js.Promise[T2]] = js.native
   def pipeP[V0, T1, T2, T3](
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T3]] = js.native
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]]
+  ): js.Function1[/* x */ V0, js.Promise[T3]] = js.native
   def pipeP[V0, T1, T2, T3, T4](
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T4]] = js.native
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]]
+  ): js.Function1[/* x */ V0, js.Promise[T4]] = js.native
   def pipeP[V0, T1, T2, T3, T4, T5](
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]],
-    fn4: js.Function1[/* x */ T4, stdLib.Promise[T5]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T5]] = js.native
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]],
+    fn4: js.Function1[/* x */ T4, js.Promise[T5]]
+  ): js.Function1[/* x */ V0, js.Promise[T5]] = js.native
   def pipeP[V0, T1, T2, T3, T4, T5, T6](
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]],
-    fn4: js.Function1[/* x */ T4, stdLib.Promise[T5]],
-    fn5: js.Function1[/* x */ T5, stdLib.Promise[T6]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T6]] = js.native
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]],
+    fn4: js.Function1[/* x */ T4, js.Promise[T5]],
+    fn5: js.Function1[/* x */ T5, js.Promise[T6]]
+  ): js.Function1[/* x */ V0, js.Promise[T6]] = js.native
   def pipeP[V0, T1, T2, T3, T4, T5, T6, T7](
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]],
-    fn4: js.Function1[/* x */ T4, stdLib.Promise[T5]],
-    fn5: js.Function1[/* x */ T5, stdLib.Promise[T6]],
-    fn: js.Function1[/* x */ T6, stdLib.Promise[T7]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T7]] = js.native
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]],
+    fn4: js.Function1[/* x */ T4, js.Promise[T5]],
+    fn5: js.Function1[/* x */ T5, js.Promise[T6]],
+    fn: js.Function1[/* x */ T6, js.Promise[T7]]
+  ): js.Function1[/* x */ V0, js.Promise[T7]] = js.native
   def pipeP[V0, T1, T2, T3, T4, T5, T6, T7, T8](
-    fn0: js.Function1[/* x */ V0, stdLib.Promise[T1]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]],
-    fn4: js.Function1[/* x */ T4, stdLib.Promise[T5]],
-    fn5: js.Function1[/* x */ T5, stdLib.Promise[T6]],
-    fn6: js.Function1[/* x */ T6, stdLib.Promise[T7]],
-    fn: js.Function1[/* x */ T7, stdLib.Promise[T8]]
-  ): js.Function1[/* x */ V0, stdLib.Promise[T8]] = js.native
+    fn0: js.Function1[/* x */ V0, js.Promise[T1]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]],
+    fn4: js.Function1[/* x */ T4, js.Promise[T5]],
+    fn5: js.Function1[/* x */ T5, js.Promise[T6]],
+    fn6: js.Function1[/* x */ T6, js.Promise[T7]],
+    fn: js.Function1[/* x */ T7, js.Promise[T8]]
+  ): js.Function1[/* x */ V0, js.Promise[T8]] = js.native
   def pipeP[V0, T1, T2, T3, T4, T5, T6, T7, T8, T9](
-    fn0: js.Function1[/* x0 */ V0, stdLib.Promise[T1]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]],
-    fn4: js.Function1[/* x */ T4, stdLib.Promise[T5]],
-    fn5: js.Function1[/* x */ T5, stdLib.Promise[T6]],
-    fn6: js.Function1[/* x */ T6, stdLib.Promise[T7]],
-    fn7: js.Function1[/* x */ T7, stdLib.Promise[T8]],
-    fn8: js.Function1[/* x */ T8, stdLib.Promise[T9]]
-  ): js.Function1[/* x0 */ V0, stdLib.Promise[T9]] = js.native
+    fn0: js.Function1[/* x0 */ V0, js.Promise[T1]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]],
+    fn4: js.Function1[/* x */ T4, js.Promise[T5]],
+    fn5: js.Function1[/* x */ T5, js.Promise[T6]],
+    fn6: js.Function1[/* x */ T6, js.Promise[T7]],
+    fn7: js.Function1[/* x */ T7, js.Promise[T8]],
+    fn8: js.Function1[/* x */ T8, js.Promise[T9]]
+  ): js.Function1[/* x0 */ V0, js.Promise[T9]] = js.native
   def pipeP[V0, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
-    fn0: js.Function1[/* x0 */ V0, stdLib.Promise[T1]],
-    fn1: js.Function1[/* x */ T1, stdLib.Promise[T2]],
-    fn2: js.Function1[/* x */ T2, stdLib.Promise[T3]],
-    fn3: js.Function1[/* x */ T3, stdLib.Promise[T4]],
-    fn4: js.Function1[/* x */ T4, stdLib.Promise[T5]],
-    fn5: js.Function1[/* x */ T5, stdLib.Promise[T6]],
-    fn6: js.Function1[/* x */ T6, stdLib.Promise[T7]],
-    fn7: js.Function1[/* x */ T7, stdLib.Promise[T8]],
-    fn8: js.Function1[/* x */ T8, stdLib.Promise[T9]],
-    fn9: js.Function1[/* x */ T9, stdLib.Promise[T10]]
-  ): js.Function1[/* x0 */ V0, stdLib.Promise[T10]] = js.native
+    fn0: js.Function1[/* x0 */ V0, js.Promise[T1]],
+    fn1: js.Function1[/* x */ T1, js.Promise[T2]],
+    fn2: js.Function1[/* x */ T2, js.Promise[T3]],
+    fn3: js.Function1[/* x */ T3, js.Promise[T4]],
+    fn4: js.Function1[/* x */ T4, js.Promise[T5]],
+    fn5: js.Function1[/* x */ T5, js.Promise[T6]],
+    fn6: js.Function1[/* x */ T6, js.Promise[T7]],
+    fn7: js.Function1[/* x */ T7, js.Promise[T8]],
+    fn8: js.Function1[/* x */ T8, js.Promise[T9]],
+    fn9: js.Function1[/* x */ T9, js.Promise[T10]]
+  ): js.Function1[/* x0 */ V0, js.Promise[T10]] = js.native
   def pluck(p: scala.Double): js.Function1[/* list */ js.Array[ScalablyTyped.runtime.NumberDictionary[_]], js.Array[_]] = js.native
   def pluck[P /* <: java.lang.String */](p: P): js.Function1[/* list */ js.Array[stdLib.Record[P, _]], js.Array[_]] = js.native
   def pluck[T](p: scala.Double, list: js.Array[ScalablyTyped.runtime.NumberDictionary[T]]): js.Array[T] = js.native

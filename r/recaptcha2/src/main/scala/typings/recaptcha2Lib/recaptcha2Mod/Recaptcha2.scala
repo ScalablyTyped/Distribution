@@ -11,7 +11,7 @@ trait Recaptcha2 extends js.Object {
   def getRequestOptions[T /* <: js.Object */](body: T): recaptcha2Lib.recaptcha2Mod.Recaptcha2Ns.RequestOptions[T] = js.native
   def translateErrors(errorCodes: java.lang.String): java.lang.String = js.native
   def translateErrors(errorCodes: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  def validate(token: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def validateRequest(req: js.Object, ip: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def validate(token: java.lang.String): js.Promise[scala.Unit] = js.native
+  def validateRequest(req: js.Object, ip: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

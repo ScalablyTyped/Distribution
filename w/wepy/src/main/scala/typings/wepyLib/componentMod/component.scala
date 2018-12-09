@@ -12,7 +12,7 @@ trait component extends js.Object {
   @JSName("$prefix")
   var $prefix: java.lang.String = js.native
   var computed: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Function1[/* self */ js.UndefOr[this.type], _]]
+    ScalablyTyped.runtime.StringDictionary[js.Function1[/* self */ js.UndefOr[component], _]]
   ] = js.native
   var data: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   var methods: js.UndefOr[

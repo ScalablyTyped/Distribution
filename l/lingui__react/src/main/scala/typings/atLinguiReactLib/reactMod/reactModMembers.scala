@@ -20,20 +20,14 @@ object reactModMembers extends js.Object {
   def withI18n(): js.Function1[
     /* WrappedComponent */ atLinguiReactLib.withI18nMod.ComponentConstructor[_], 
     reactLib.reactMod.ReactNs.ComponentClass[
-      stdLib.Pick[
-        stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
-        stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]
-      ], 
+      stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
       reactLib.reactMod.ReactNs.ComponentState
     ]
   ] = js.native
   def withI18n(options: atLinguiReactLib.withI18nMod.withI18nOptions): js.Function1[
     /* WrappedComponent */ atLinguiReactLib.withI18nMod.ComponentConstructor[_], 
     reactLib.reactMod.ReactNs.ComponentClass[
-      stdLib.Pick[
-        stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
-        stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]
-      ], 
+      stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
       reactLib.reactMod.ReactNs.ComponentState
     ]
   ] = js.native

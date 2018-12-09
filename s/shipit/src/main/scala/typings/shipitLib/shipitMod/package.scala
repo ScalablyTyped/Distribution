@@ -18,7 +18,7 @@ package object shipitMod {
         scala.Unit
       ]
     ], 
-    stdLib.PromiseLike[ShipitLocal]
+    js.Thenable[ShipitLocal]
   ]
   type TaskExecution = js.Function3[
     /* name */ java.lang.String, 

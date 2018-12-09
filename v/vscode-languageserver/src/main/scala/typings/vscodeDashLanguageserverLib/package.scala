@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object vscodeDashLanguageserverLib {
-  type Thenable[T] = stdLib.PromiseLike[T]
+  type Thenable[T] = js.Thenable[T]
 }

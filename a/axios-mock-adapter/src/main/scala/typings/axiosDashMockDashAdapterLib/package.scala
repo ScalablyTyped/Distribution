@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object axiosDashMockDashAdapterLib {
-  type CallbackResponseSpecFunc = js.Function1[/* config */ js.Any, js.Array[js.Any] | stdLib.Promise[js.Array[js.Any]]]
+  type CallbackResponseSpecFunc = js.Function1[/* config */ js.Any, js.Array[js.Any] | js.Promise[js.Array[js.Any]]]
   type RequestMatcherFunc = js.Function2[
     /* matcher */ js.UndefOr[java.lang.String | stdLib.RegExp], 
     /* body */ js.UndefOr[java.lang.String | js.Any], 

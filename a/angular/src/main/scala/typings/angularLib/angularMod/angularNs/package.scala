@@ -113,7 +113,7 @@ package object angularNs {
     /* method */ java.lang.String, 
     /* url */ java.lang.String, 
     /* post */ js.UndefOr[js.Any], 
-    /* callback */ js.UndefOr[js.Function], 
+    /* callback */ js.UndefOr[angularLib.angularMod.Global.Function], 
     /* headers */ js.UndefOr[js.Any], 
     /* timeout */ js.UndefOr[scala.Double], 
     /* withCredentials */ js.UndefOr[scala.Boolean], 
@@ -189,5 +189,5 @@ package object angularNs {
        * see https://docs.angularjs.org/api/ng/service/$xhrFactory
        */
   type IXhrFactory[T] = js.Function2[/* method */ java.lang.String, /* url */ java.lang.String, T]
-  type Injectable[T /* <: js.Function */] = T | (js.Array[java.lang.String | T])
+  type Injectable[T /* <: angularLib.angularMod.Global.Function */] = T | (js.Array[java.lang.String | T])
 }

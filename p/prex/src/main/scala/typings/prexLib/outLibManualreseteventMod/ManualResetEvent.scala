@@ -33,6 +33,6 @@ class ManualResetEvent () extends js.Object {
        *
        * @param token A CancellationToken used to cancel the request.
        */
-  def wait(token: prexLib.outLibCancellationMod.CancellationToken): stdLib.Promise[scala.Unit] = js.native
+  def wait(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[scala.Unit] = js.native
 }
 

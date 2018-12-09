@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait FacebookAuthProvider_Instance extends AuthProvider {
   def addScope(scope: java.lang.String): AuthProvider
-  def setCustomParameters(customOAuthParameters: js.Object): AuthProvider
+  def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): AuthProvider
 }
 

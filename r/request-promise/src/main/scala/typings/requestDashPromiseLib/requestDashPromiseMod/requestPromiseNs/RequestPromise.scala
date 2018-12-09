@@ -58,21 +58,21 @@ trait RequestPromise
     /* onfulfilled */ scala.Null, 
     /* onrejected */ js.Function1[/* reason */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
-  ]) | js.Function0[stdLib.PromiseLike[_]] | (js.Function1[
-    /* onfulfilled */ js.Function1[/* value */ js.Any, _ | stdLib.PromiseLike[_]], 
-    stdLib.PromiseLike[_]
+  ]) | js.Function0[js.Thenable[_]] | (js.Function1[
+    /* onfulfilled */ js.Function1[/* value */ js.Any, _ | js.Thenable[_]], 
+    js.Thenable[_]
   ]) | (js.Function2[
-    /* onfulfilled */ js.Function1[/* value */ js.Any, _ | stdLib.PromiseLike[_]], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | stdLib.PromiseLike[_]], 
-    stdLib.PromiseLike[_]
+    /* onfulfilled */ js.Function1[/* value */ js.Any, _ | js.Thenable[_]], 
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Thenable[_]
   ]) | (js.Function2[
     /* onfulfilled */ js.UndefOr[scala.Nothing], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | stdLib.PromiseLike[_]], 
-    stdLib.PromiseLike[_]
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Thenable[_]
   ]) | (js.Function2[
     /* onfulfilled */ scala.Null, 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | stdLib.PromiseLike[_]], 
-    stdLib.PromiseLike[_]
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Thenable[_]
   ]) = js.native
   def promise(): bluebirdLib.bluebirdMod.namespaced[_] = js.native
 }

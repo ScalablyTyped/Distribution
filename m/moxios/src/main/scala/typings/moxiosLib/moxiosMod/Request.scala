@@ -19,12 +19,12 @@ trait Request extends js.Object {
        * @param res The data representing the result of the request
        * @return A Promise that resolves once the response is ready
        */
-  def respondWith(res: Item): stdLib.Promise[Response]
+  def respondWith(res: Item): js.Promise[Response]
   /**
        * Respond to this request with a timeout result
        *
        * @return A Promise that rejects with a timeout result
        */
-  def respondWithTimeout(): stdLib.Promise[Response]
+  def respondWithTimeout(): js.Promise[Response]
 }
 

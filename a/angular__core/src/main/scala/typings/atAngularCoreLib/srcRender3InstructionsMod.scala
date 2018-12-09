@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core/src/render3/instructions", JSImport.Namespace)
 @js.native
 object srcRender3InstructionsMod extends js.Object {
-  val CLEAN_PROMISE: stdLib.Promise[scala.Null] = js.native
+  val CLEAN_PROMISE: js.Promise[scala.Null] = js.native
   def addToViewTree[T /* <: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData | atAngularCoreLib.srcRender3InterfacesContainerMod.LContainer */](
     currentView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
     adjustedHostIndex: scala.Double,
@@ -688,6 +688,15 @@ object srcRender3InstructionsMod extends js.Object {
     index: scala.Double,
     styleIndex: scala.Double,
     value: java.lang.String,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String): scala.Unit = js.native
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String, suffix: java.lang.String): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: nodeLib.String,
     suffix: java.lang.String,
     directiveIndex: scala.Double
   ): scala.Unit = js.native

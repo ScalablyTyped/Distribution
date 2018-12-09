@@ -13,13 +13,13 @@ trait Charges
                * you created a charge with the capture option set to false. Uncaptured payments expire exactly seven days after they are
                * created. If they are not captured by that point in time, they will be marked as refunded and will no longer be capturable.
                */
-  def capture(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def capture(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   /**
                * Capture the payment of an existing, uncaptured, charge. This is the second half of the two-step payment flow, where first
                * you created a charge with the capture option set to false. Uncaptured payments expire exactly seven days after they are
                * created. If they are not captured by that point in time, they will be marked as refunded and will no longer be capturable.
                */
-  def capture(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeCaptureOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def capture(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeCaptureOptions): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   /**
                * Capture the payment of an existing, uncaptured, charge. This is the second half of the two-step payment flow, where first
                * you created a charge with the capture option set to false. Uncaptured payments expire exactly seven days after they are
@@ -29,7 +29,7 @@ trait Charges
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeCaptureOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   /**
                * Capture the payment of an existing, uncaptured, charge. This is the second half of the two-step payment flow, where first
                * you created a charge with the capture option set to false. Uncaptured payments expire exactly seven days after they are
@@ -40,8 +40,8 @@ trait Charges
     data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeCaptureOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
-  def create(data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeCreationOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def create(data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   /**
                * To charge a credit card, you create a charge object. If your API key is in test mode, the supplied card won't actually be charged, though
                * everything else will occur as if in live mode. (Stripe assumes that the charge would have completed successfully).
@@ -58,7 +58,7 @@ trait Charges
   def create(
     data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   /**
                * To charge a credit card, you create a charge object. If your API key is in test mode, the supplied card won't actually be charged, though
                * everything else will occur as if in live mode. (Stripe assumes that the charge would have completed successfully).
@@ -76,13 +76,13 @@ trait Charges
     data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   def create(
     data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
-  def createRefund(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def createRefund(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def createRefund(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def createRefund(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * When you create a new refund, you must specify a charge to create it on. Creating a new refund will refund a charge that has previously
                * been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. The fees you were
@@ -103,7 +103,7 @@ trait Charges
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * When you create a new refund, you must specify a charge to create it on. Creating a new refund will refund a charge that has previously
                * been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. The fees you were
@@ -125,26 +125,26 @@ trait Charges
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def createRefund(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def createRefund(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def createRefund(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def createRefund(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def createRefund(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def list(): stdLib.Promise[
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def list(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeListOptions): stdLib.Promise[
+  def list(data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
   /**
@@ -161,7 +161,7 @@ trait Charges
   def list(
     data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
   /**
@@ -181,7 +181,7 @@ trait Charges
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
   def list(
@@ -189,10 +189,10 @@ trait Charges
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
-  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
   def list(
@@ -200,20 +200,20 @@ trait Charges
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
-  def listRefunds(chargeId: java.lang.String): stdLib.Promise[
+  def listRefunds(chargeId: java.lang.String): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
-  def listRefunds(chargeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IListOptions): stdLib.Promise[
+  def listRefunds(chargeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   /**
@@ -233,7 +233,7 @@ trait Charges
     chargeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   /**
@@ -256,7 +256,7 @@ trait Charges
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   def listRefunds(
@@ -265,10 +265,10 @@ trait Charges
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
-  def listRefunds(chargeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def listRefunds(chargeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   def listRefunds(
@@ -277,7 +277,7 @@ trait Charges
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
   def listRefunds(
@@ -285,21 +285,21 @@ trait Charges
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
   ] = js.native
-  def markAsFraudulent(chargeId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def markAsFraudulent(chargeId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   def markAsFraudulent(
     chargeId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
-  def markAsSafe(chargeId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def markAsSafe(chargeId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   def markAsSafe(
     chargeId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
-  def refund(chargeId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def refund(chargeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def refund(chargeId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def refund(chargeId: java.lang.String, data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * When you create a new refund, you must specify a charge to create it on.
                * Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. The fees you were originally charged are also refunded.
@@ -310,7 +310,7 @@ trait Charges
     chargeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * When you create a new refund, you must specify a charge to create it on.
                * Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. The fees you were originally charged are also refunded.
@@ -322,24 +322,24 @@ trait Charges
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def refund(
     chargeId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def refund(chargeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def refund(chargeId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def refund(
     chargeId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def refund(
     chargeId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def retrieve(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
-  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   /**
                * Retrieves the details of a charge that has previously been created. Supply the unique charge ID that was returned
                * from your previous request, and Stripe will return the corresponding charge information. The same information is
@@ -352,7 +352,7 @@ trait Charges
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   /**
                * Retrieves the details of a charge that has previously been created. Supply the unique charge ID that was returned
                * from your previous request, and Stripe will return the corresponding charge information. The same information is
@@ -366,23 +366,23 @@ trait Charges
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   def retrieve(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
-  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   def retrieve(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   def retrieve(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
-  def retrieveRefund(chargeId: java.lang.String, refundId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  def retrieveRefund(chargeId: java.lang.String, refundId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * By default, you can see the 10 most recent refunds stored directly on the charge object, but you can also retrieve details about a specific
                * refund stored on the charge.
@@ -394,7 +394,7 @@ trait Charges
     chargeId: java.lang.String,
     refundId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * By default, you can see the 10 most recent refunds stored directly on the charge object, but you can also retrieve details about a specific
                * refund stored on the charge.
@@ -407,13 +407,13 @@ trait Charges
     refundId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def retrieveRefund(
     chargeId: java.lang.String,
     refundId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
-  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeUpdateOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeUpdateOptions): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   /**
                * Updates the specified charge by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
                * This request accepts only the description, metadata, receipt_emailand fraud_details as arguments.
@@ -425,7 +425,7 @@ trait Charges
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   /**
                * Updates the specified charge by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
                * This request accepts only the description, metadata, receipt_emailand fraud_details as arguments.
@@ -438,17 +438,17 @@ trait Charges
     data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   def update(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.chargesNs.IChargeUpdateOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.chargesNs.ICharge] = js.native
   def updateRefund(
     chargeId: java.lang.String,
     refundId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * Updates the specified refund by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
                * This request only accepts metadata as an argument.
@@ -461,7 +461,7 @@ trait Charges
     refundId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   /**
                * Updates the specified refund by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
                * This request only accepts metadata as an argument.
@@ -475,12 +475,12 @@ trait Charges
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
   def updateRefund(
     chargeId: java.lang.String,
     refundId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund] = js.native
 }
 

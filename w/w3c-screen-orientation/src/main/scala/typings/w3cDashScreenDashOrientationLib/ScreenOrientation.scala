@@ -21,7 +21,7 @@ trait ScreenOrientation
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  def lock(orientation: ScreenOrientationLockType): stdLib.Promise[scala.Unit] = js.native
+  def lock(orientation: ScreenOrientationLockType): js.Promise[scala.Unit] = js.native
   def unlock(): scala.Unit = js.native
 }
 

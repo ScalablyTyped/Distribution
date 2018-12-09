@@ -97,7 +97,7 @@ class Resolvable protected ()
   var deps_Resolvable: js.Array[_] = js.native
   @JSName("policy")
   var policy_Resolvable: atUirouterCoreLib.libResolveInterfaceMod.ResolvePolicy = js.native
-  var promise: stdLib.Promise[_] = js.native
+  var promise: js.Promise[_] = js.native
   /**
        * A function which fetches the Resolvable's data
        *
@@ -127,7 +127,7 @@ class Resolvable protected ()
        * Fetches the data and returns a promise.
        * Returns the existing promise if it has already been fetched once.
        */
-  def get(resolveContext: atUirouterCoreLib.libResolveResolveContextMod.ResolveContext): stdLib.Promise[_] = js.native
+  def get(resolveContext: atUirouterCoreLib.libResolveResolveContextMod.ResolveContext): js.Promise[_] = js.native
   /**
        * Gets a promise for this Resolvable's data.
        *
@@ -137,7 +137,7 @@ class Resolvable protected ()
   def get(
     resolveContext: atUirouterCoreLib.libResolveResolveContextMod.ResolveContext,
     trans: atUirouterCoreLib.libTransitionTransitionMod.Transition
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def getPolicy(state: atUirouterCoreLib.libStateStateObjectMod.StateObject): atUirouterCoreLib.libResolveInterfaceMod.ResolvePolicy = js.native
   /**
        * Asynchronously resolve this Resolvable's data
@@ -146,7 +146,7 @@ class Resolvable protected ()
        * Wait for this Resolvable's dependencies, then invoke this Resolvable's function
        * and update the Resolvable's state
        */
-  def resolve(resolveContext: atUirouterCoreLib.libResolveResolveContextMod.ResolveContext): stdLib.Promise[_] = js.native
+  def resolve(resolveContext: atUirouterCoreLib.libResolveResolveContextMod.ResolveContext): js.Promise[_] = js.native
   /**
        * Asynchronously resolve this Resolvable's data
        *
@@ -157,7 +157,7 @@ class Resolvable protected ()
   def resolve(
     resolveContext: atUirouterCoreLib.libResolveResolveContextMod.ResolveContext,
     trans: atUirouterCoreLib.libTransitionTransitionMod.Transition
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
 }
 
 @JSImport("@uirouter/core/lib/resolve/resolvable", "Resolvable")

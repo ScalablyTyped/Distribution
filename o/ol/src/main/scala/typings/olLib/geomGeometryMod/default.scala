@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation._
      *
      * @api stable
      */
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("ol/geom/geometry", JSImport.Default)
+@JSImport("ol/geom/geometry", JSImport.Default)
 @js.native
 class default ()
   extends openlayersLib.openlayersMod.geomNs.Geometry

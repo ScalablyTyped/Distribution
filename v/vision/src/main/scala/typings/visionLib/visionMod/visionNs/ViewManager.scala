@@ -30,16 +30,16 @@ trait ViewManager extends js.Object {
            * Renders a template. This is typically not needed and it is usually more convenient to use server.render().
            * @see {@link https://github.com/hapijs/vision/blob/master/API.md#managerrendertemplate-context-options-callback}
            */
-  def render(template: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def render(template: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
            * Renders a template. This is typically not needed and it is usually more convenient to use server.render().
            * @see {@link https://github.com/hapijs/vision/blob/master/API.md#managerrendertemplate-context-options-callback}
            */
-  def render(template: java.lang.String, context: js.Any): stdLib.Promise[java.lang.String] = js.native
+  def render(template: java.lang.String, context: js.Any): js.Promise[java.lang.String] = js.native
   /**
            * Renders a template. This is typically not needed and it is usually more convenient to use server.render().
            * @see {@link https://github.com/hapijs/vision/blob/master/API.md#managerrendertemplate-context-options-callback}
            */
-  def render(template: java.lang.String, context: js.Any, options: ServerViewsConfiguration): stdLib.Promise[java.lang.String] = js.native
+  def render(template: java.lang.String, context: js.Any, options: ServerViewsConfiguration): js.Promise[java.lang.String] = js.native
 }
 

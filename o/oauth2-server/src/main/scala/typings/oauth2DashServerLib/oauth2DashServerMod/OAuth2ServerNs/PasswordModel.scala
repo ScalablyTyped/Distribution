@@ -19,7 +19,7 @@ trait PasswordModel
       /* user */ User, 
       /* scope */ java.lang.String | js.Array[java.lang.String], 
       /* callback */ js.UndefOr[Callback[java.lang.String]], 
-      stdLib.Promise[java.lang.String]
+      js.Promise[java.lang.String]
     ]
   ] = js.native
   /**
@@ -32,18 +32,18 @@ trait PasswordModel
       /* client */ Client, 
       /* scope */ java.lang.String | js.Array[java.lang.String], 
       /* callback */ js.UndefOr[Callback[java.lang.String | Falsey]], 
-      stdLib.Promise[java.lang.String | js.Array[java.lang.String] | Falsey]
+      js.Promise[java.lang.String | js.Array[java.lang.String] | Falsey]
     ]
   ] = js.native
   /**
            * Invoked to retrieve a user using a username/password combination.
            *
            */
-  def getUser(username: java.lang.String, password: java.lang.String): stdLib.Promise[User | Falsey] = js.native
+  def getUser(username: java.lang.String, password: java.lang.String): js.Promise[User | Falsey] = js.native
   /**
            * Invoked to retrieve a user using a username/password combination.
            *
            */
-  def getUser(username: java.lang.String, password: java.lang.String, callback: Callback[User | Falsey]): stdLib.Promise[User | Falsey] = js.native
+  def getUser(username: java.lang.String, password: java.lang.String, callback: Callback[User | Falsey]): js.Promise[User | Falsey] = js.native
 }
 

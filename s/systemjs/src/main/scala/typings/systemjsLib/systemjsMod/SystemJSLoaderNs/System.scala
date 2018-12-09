@@ -66,12 +66,12 @@ trait System extends Config {
            * Loads a module by name taking an optional normalized parent name argument.
            * Promise resolves to the module value.
            */
-  def `import`(moduleName: java.lang.String): stdLib.Promise[_] = js.native
+  def `import`(moduleName: java.lang.String): js.Promise[_] = js.native
   /**
            * Loads a module by name taking an optional normalized parent name argument.
            * Promise resolves to the module value.
            */
-  def `import`(moduleName: java.lang.String, normalizedParentName: java.lang.String): stdLib.Promise[_] = js.native
+  def `import`(moduleName: java.lang.String, normalizedParentName: java.lang.String): js.Promise[_] = js.native
   /**
            * Given any object, returns true if the object is either a SystemJS module or native JavaScript module object, and false otherwise.
            * Useful for interop scenarios.
@@ -109,11 +109,11 @@ trait System extends Config {
   /**
            * Resolves module name to normalized URL.
            */
-  def resolve(moduleName: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def resolve(moduleName: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
            * Resolves module name to normalized URL.
            */
-  def resolve(moduleName: java.lang.String, parentName: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def resolve(moduleName: java.lang.String, parentName: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
            * Resolves module name to normalized URL.
            * Synchronous alternative to `SystemJS.resolve`.

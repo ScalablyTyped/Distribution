@@ -19,13 +19,13 @@ trait OnsSplitterContentElement
        * @param {Object} [options]
        * @return {Promise}
        */
-  def load(page: js.Any): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def load(page: js.Any): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @description Show the page specified in pageUrl in the right section. Returns: Resolves to the new page element
        * @param {*} page
        * @param {Object} [options]
        * @return {Promise}
        */
-  def load(page: js.Any, options: onsenuiLib.onsenuiMod.SplitterContentOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def load(page: js.Any, options: onsenuiLib.onsenuiMod.SplitterContentOptions): js.Promise[stdLib.HTMLElement] = js.native
 }
 

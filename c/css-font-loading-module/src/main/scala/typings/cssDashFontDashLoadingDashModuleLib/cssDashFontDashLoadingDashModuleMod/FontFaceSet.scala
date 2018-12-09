@@ -18,7 +18,7 @@ trait FontFaceSet
   @JSName("onloadingerror")
   var onloadingerror_Original: EventHandler = js.native
   // async notification that font loading and layout operations are done
-  val ready: stdLib.Promise[FontFaceSet] = js.native
+  val ready: js.Promise[FontFaceSet] = js.native
   // loading state, "loading" while one or more fonts loading, "loaded" otherwise
   val status: FontFaceSetLoadStatus = js.native
   // return whether all fonts in the fontlist are loaded
@@ -29,14 +29,14 @@ trait FontFaceSet
   def check(font: java.lang.String, text: java.lang.String): scala.Boolean = js.native
   // check and start loads if appropriate
   // and fulfill promise when all loads complete
-  def load(font: java.lang.String): stdLib.Promise[
+  def load(font: java.lang.String): js.Promise[
     js.Array[
       cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.Global.FontFace
     ]
   ] = js.native
   // check and start loads if appropriate
   // and fulfill promise when all loads complete
-  def load(font: java.lang.String, text: java.lang.String): stdLib.Promise[
+  def load(font: java.lang.String, text: java.lang.String): js.Promise[
     js.Array[
       cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.Global.FontFace
     ]

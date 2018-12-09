@@ -25,20 +25,20 @@ class USBDevice () extends js.Object {
   val usbVersionMinor: scala.Double = js.native
   val usbVersionSubminor: scala.Double = js.native
   val vendorId: scala.Double = js.native
-  def claimInterface(interfaceNumber: scala.Double): stdLib.Promise[scala.Unit] = js.native
-  def clearHalt(direction: USBDirection, endpointNumber: scala.Double): stdLib.Promise[scala.Unit] = js.native
-  def close(): stdLib.Promise[scala.Unit] = js.native
-  def controlTransferIn(setup: USBControlTransferParameters, length: scala.Double): stdLib.Promise[USBInTransferResult] = js.native
-  def controlTransferOut(setup: USBControlTransferParameters): stdLib.Promise[USBOutTransferResult] = js.native
-  def controlTransferOut(setup: USBControlTransferParameters, data: stdLib.BufferSource): stdLib.Promise[USBOutTransferResult] = js.native
-  def isochronousTransferIn(endpointNumber: scala.Double, packetLengths: js.Array[scala.Double]): stdLib.Promise[USBIsochronousInTransferResult] = js.native
-  def isochronousTransferOut(endpointNumber: scala.Double, data: stdLib.BufferSource, packetLengths: js.Array[scala.Double]): stdLib.Promise[USBIsochronousOutTransferResult] = js.native
-  def open(): stdLib.Promise[scala.Unit] = js.native
-  def releaseInterface(interfaceNumber: scala.Double): stdLib.Promise[scala.Unit] = js.native
-  def reset(): stdLib.Promise[scala.Unit] = js.native
-  def selectAlternateInterface(interfaceNumber: scala.Double, alternateSetting: scala.Double): stdLib.Promise[scala.Unit] = js.native
-  def selectConfiguration(configurationValue: scala.Double): stdLib.Promise[scala.Unit] = js.native
-  def transferIn(endpointNumber: scala.Double, length: scala.Double): stdLib.Promise[USBInTransferResult] = js.native
-  def transferOut(endpointNumber: scala.Double, data: stdLib.BufferSource): stdLib.Promise[USBOutTransferResult] = js.native
+  def claimInterface(interfaceNumber: scala.Double): js.Promise[scala.Unit] = js.native
+  def clearHalt(direction: USBDirection, endpointNumber: scala.Double): js.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
+  def controlTransferIn(setup: USBControlTransferParameters, length: scala.Double): js.Promise[USBInTransferResult] = js.native
+  def controlTransferOut(setup: USBControlTransferParameters): js.Promise[USBOutTransferResult] = js.native
+  def controlTransferOut(setup: USBControlTransferParameters, data: stdLib.BufferSource): js.Promise[USBOutTransferResult] = js.native
+  def isochronousTransferIn(endpointNumber: scala.Double, packetLengths: js.Array[scala.Double]): js.Promise[USBIsochronousInTransferResult] = js.native
+  def isochronousTransferOut(endpointNumber: scala.Double, data: stdLib.BufferSource, packetLengths: js.Array[scala.Double]): js.Promise[USBIsochronousOutTransferResult] = js.native
+  def open(): js.Promise[scala.Unit] = js.native
+  def releaseInterface(interfaceNumber: scala.Double): js.Promise[scala.Unit] = js.native
+  def reset(): js.Promise[scala.Unit] = js.native
+  def selectAlternateInterface(interfaceNumber: scala.Double, alternateSetting: scala.Double): js.Promise[scala.Unit] = js.native
+  def selectConfiguration(configurationValue: scala.Double): js.Promise[scala.Unit] = js.native
+  def transferIn(endpointNumber: scala.Double, length: scala.Double): js.Promise[USBInTransferResult] = js.native
+  def transferOut(endpointNumber: scala.Double, data: stdLib.BufferSource): js.Promise[USBOutTransferResult] = js.native
 }
 

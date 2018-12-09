@@ -12,7 +12,7 @@ trait ServerRoute[P] extends js.Object {
     res: nodeLib.httpMod.ServerResponse,
     params: P,
     parsedUrl: nextDashServerLib.routerMod.UrlLike
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def `match`(pathname: java.lang.String): P | nextDashServerLib.nextDashServerLibNumbers.`false` = js.native
   def `match`(pathname: java.lang.String, params: stdLib.Partial[P]): P | nextDashServerLib.nextDashServerLibNumbers.`false` = js.native
 }

@@ -8,13 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait UploadProps extends js.Object {
   var accept: js.UndefOr[java.lang.String] = js.undefined
-  var action: js.UndefOr[java.lang.String | (js.Function1[/* file */ UploadFile, stdLib.PromiseLike[_]])] = js.undefined
+  var action: js.UndefOr[java.lang.String | (js.Function1[/* file */ UploadFile, js.Thenable[_]])] = js.undefined
   var beforeUpload: js.UndefOr[
-    js.Function2[
-      /* file */ RcFile, 
-      /* FileList */ js.Array[RcFile], 
-      scala.Boolean | stdLib.PromiseLike[_]
-    ]
+    js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], scala.Boolean | js.Thenable[_]]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var customRequest: js.UndefOr[js.Function1[/* option */ js.Any, scala.Unit]] = js.undefined

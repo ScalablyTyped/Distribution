@@ -2638,7 +2638,7 @@ object RoboMakerNs extends js.Object {
     /**
          * A boolean indicating whether to assign a public IP address.
          */
-    var assignPublicIp: js.UndefOr[scala.Boolean] = js.undefined
+    var assignPublicIp: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of one or more security groups IDs in your VPC.
          */
@@ -2654,7 +2654,7 @@ object RoboMakerNs extends js.Object {
     /**
          * A boolean indicating if a public IP was assigned.
          */
-    var assignPublicIp: js.UndefOr[scala.Boolean] = js.undefined
+    var assignPublicIp: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of security group IDs associated with the simulation job.
          */

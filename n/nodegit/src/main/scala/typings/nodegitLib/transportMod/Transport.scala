@@ -15,9 +15,9 @@ class Transport () extends js.Object {
 @JSImport("nodegit/transport", "Transport")
 @js.native
 object Transport extends js.Object {
-  def sshWithPaths(owner: nodegitLib.remoteMod.Remote, payload: java.lang.String): stdLib.Promise[nodegitLib.transportMod.Transport] = js.native
-  def sshWithPaths(owner: nodegitLib.remoteMod.Remote, payload: js.Array[java.lang.String]): stdLib.Promise[nodegitLib.transportMod.Transport] = js.native
-  def sshWithPaths(owner: nodegitLib.remoteMod.Remote, payload: nodegitLib.strDashArrayMod.Strarray): stdLib.Promise[nodegitLib.transportMod.Transport] = js.native
+  def sshWithPaths(owner: nodegitLib.remoteMod.Remote, payload: java.lang.String): js.Promise[nodegitLib.transportMod.Transport] = js.native
+  def sshWithPaths(owner: nodegitLib.remoteMod.Remote, payload: js.Array[java.lang.String]): js.Promise[nodegitLib.transportMod.Transport] = js.native
+  def sshWithPaths(owner: nodegitLib.remoteMod.Remote, payload: nodegitLib.strDashArrayMod.Strarray): js.Promise[nodegitLib.transportMod.Transport] = js.native
   def unregister(prefix: java.lang.String): scala.Double = js.native
 }
 

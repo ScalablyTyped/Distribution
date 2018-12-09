@@ -1223,7 +1223,7 @@ trait Element
   /**
        * Displays element fullscreen and resolves promise when done.
        */
-  def requestFullscreen(): Promise[scala.Unit] = js.native
+  def requestFullscreen(): js.Promise[scala.Unit] = js.native
   def scroll(): scala.Unit = js.native
   def scroll(options: ScrollToOptions): scala.Unit = js.native
   def scroll(x: scala.Double, y: scala.Double): scala.Unit = js.native

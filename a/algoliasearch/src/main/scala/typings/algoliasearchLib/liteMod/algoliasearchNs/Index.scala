@@ -15,7 +15,7 @@ trait Index extends js.Object {
        * Browse an index
        * https://github.com/algolia/algoliasearch-client-js#backup--export-an-index---browse
        */
-  def browse(query: java.lang.String): stdLib.Promise[BrowseResponse] = js.native
+  def browse(query: java.lang.String): js.Promise[BrowseResponse] = js.native
   /**
        * Browse an index
        * https://github.com/algolia/algoliasearch-client-js#backup--export-an-index---browse
@@ -28,7 +28,7 @@ trait Index extends js.Object {
        * Browse an index
        * https://github.com/algolia/algoliasearch-client-js#backup--export-an-index---browse
        */
-  def browse(query: java.lang.String, parameters: BrowseParameters): stdLib.Promise[BrowseResponse] = js.native
+  def browse(query: java.lang.String, parameters: BrowseParameters): js.Promise[BrowseResponse] = js.native
   /**
        * Browse an index
        * https://github.com/algolia/algoliasearch-client-js#backup--export-an-index---browse
@@ -42,7 +42,7 @@ trait Index extends js.Object {
        * Browse an index from a cursor
        * https://github.com/algolia/algoliasearch-client-js#backup--export-an-index---browse
        */
-  def browseFrom(cursor: java.lang.String): stdLib.Promise[BrowseResponse] = js.native
+  def browseFrom(cursor: java.lang.String): js.Promise[BrowseResponse] = js.native
   /**
        * Browse an index from a cursor
        * https://github.com/algolia/algoliasearch-client-js#backup--export-an-index---browse
@@ -77,7 +77,7 @@ trait Index extends js.Object {
        * Gets a list of objects
        * https://github.com/algolia/algoliasearch-client-js#find-by-ids---getobjects
        */
-  def getObjects(objectIDs: js.Array[java.lang.String]): stdLib.Promise[algoliasearchLib.Anon_Results] = js.native
+  def getObjects(objectIDs: js.Array[java.lang.String]): js.Promise[algoliasearchLib.Anon_Results] = js.native
   /**
        * Gets a list of objects
        * https://github.com/algolia/algoliasearch-client-js#find-by-ids---getobjects
@@ -90,7 +90,7 @@ trait Index extends js.Object {
        * Search in an index
        * https://github.com/algolia/algoliasearch-client-js#search-in-an-index---search
        */
-  def search(params: QueryParameters): stdLib.Promise[Response] = js.native
+  def search(params: QueryParameters): js.Promise[Response] = js.native
   /**
        * Search in an index
        * https://github.com/algolia/algoliasearch-client-js#search-in-an-index---search
@@ -100,7 +100,7 @@ trait Index extends js.Object {
        * Search in an index
        * https://www.algolia.com/doc/api-reference/api-methods/search-for-facet-values/
        */
-  def searchForFacetValues(options: algoliasearchLib.liteMod.algoliasearchNs.SearchForFacetValuesNs.Parameters): stdLib.Promise[algoliasearchLib.liteMod.algoliasearchNs.SearchForFacetValuesNs.Response] = js.native
+  def searchForFacetValues(options: algoliasearchLib.liteMod.algoliasearchNs.SearchForFacetValuesNs.Parameters): js.Promise[algoliasearchLib.liteMod.algoliasearchNs.SearchForFacetValuesNs.Response] = js.native
   /**
        * Search in an index
        * https://www.algolia.com/doc/api-reference/api-methods/search-for-facet-values/

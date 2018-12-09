@@ -26,7 +26,7 @@ object srcUtilsCollectionMod extends js.Object {
   ): rxjsLib.rxjsMod.Observable[ScalablyTyped.runtime.StringDictionary[B]] = js.native
   def wrapIntoObservable[T](value: T): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
   def wrapIntoObservable[T](value: atAngularCoreLib.coreMod.NgModuleFactory[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
+  def wrapIntoObservable[T](value: js.Promise[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
   def wrapIntoObservable[T](value: rxjsLib.rxjsMod.Observable[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
-  def wrapIntoObservable[T](value: stdLib.Promise[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
 }
 

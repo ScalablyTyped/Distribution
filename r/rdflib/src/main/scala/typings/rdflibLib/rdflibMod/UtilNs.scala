@@ -15,7 +15,7 @@ object UtilNs extends js.Object {
        * @param p A property
        * @param requestedBy
        */
-  def AJAR_handleNewTerm(kb: rdflibLib.rdflibMod.Formula, p: rdflibLib.rdflibMod.NamedNode, requestedBy: java.lang.String): stdLib.Promise[_] = js.native
+  def AJAR_handleNewTerm(kb: rdflibLib.rdflibMod.Formula, p: rdflibLib.rdflibMod.NamedNode, requestedBy: java.lang.String): js.Promise[_] = js.native
   /**
        * Gets a named node from the name of a relation
        * @param relation The name of a relation

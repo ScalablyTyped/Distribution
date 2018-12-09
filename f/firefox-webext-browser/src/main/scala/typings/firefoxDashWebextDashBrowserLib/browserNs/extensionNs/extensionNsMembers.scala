@@ -81,12 +81,12 @@ object extensionNsMembers extends js.Object {
        * Retrieves the state of the extension's access to the 'file://' scheme (as determined by the user-controlled
        * 'Allow access to File URLs' checkbox.
        */
-  def isAllowedFileSchemeAccess(): stdLib.Promise[scala.Boolean] = js.native
+  def isAllowedFileSchemeAccess(): js.Promise[scala.Boolean] = js.native
   /**
        * Retrieves the state of the extension's access to Incognito-mode (as determined by the user-controlled 'Allowed
        * in Incognito' checkbox.
        */
-  def isAllowedIncognitoAccess(): stdLib.Promise[scala.Boolean] = js.native
+  def isAllowedIncognitoAccess(): js.Promise[scala.Boolean] = js.native
   /**
        * Sets the value of the ap CGI parameter used in the extension's update URL. This value is ignored for extensions
        * that are hosted in the browser vendor's store.

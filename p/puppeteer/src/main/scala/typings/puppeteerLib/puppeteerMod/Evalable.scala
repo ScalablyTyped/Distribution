@@ -20,8 +20,8 @@ trait Evalable extends js.Object {
   @JSName("$$eval")
   def $$eval[R](
     selector: java.lang.String,
-    pageFunction: js.Function1[/* elements */ js.Array[stdLib.Element], R | stdLib.Promise[R]]
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+    pageFunction: js.Function1[/* elements */ js.Array[stdLib.Element], R | js.Promise[R]]
+  ): js.Promise[WrapElementHandle[R]] = js.native
   /**
      * This method runs `Array.from(document.querySelectorAll(selector))` within the context and passes it as the
      * first argument to `pageFunction`.
@@ -36,9 +36,9 @@ trait Evalable extends js.Object {
   @JSName("$$eval")
   def $$eval[R](
     selector: java.lang.String,
-    pageFunction: js.Function2[/* elements */ js.Array[stdLib.Element], /* repeated */js.Any, R | stdLib.Promise[R]],
+    pageFunction: js.Function2[/* elements */ js.Array[stdLib.Element], /* repeated */js.Any, R | js.Promise[R]],
     args: js.Any*
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+  ): js.Promise[WrapElementHandle[R]] = js.native
   /**
      * This method runs `Array.from(document.querySelectorAll(selector))` within the context and passes it as the
      * first argument to `pageFunction`.
@@ -56,10 +56,10 @@ trait Evalable extends js.Object {
     pageFunction: js.Function2[
       /* elements */ js.Array[stdLib.Element], 
       /* x1 */ UnwrapElementHandle[X1], 
-      R | stdLib.Promise[R]
+      R | js.Promise[R]
     ],
     x1: X1
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+  ): js.Promise[WrapElementHandle[R]] = js.native
   /**
      * This method runs `Array.from(document.querySelectorAll(selector))` within the context and passes it as the
      * first argument to `pageFunction`.
@@ -79,11 +79,11 @@ trait Evalable extends js.Object {
       /* elements */ js.Array[stdLib.Element], 
       /* x1 */ UnwrapElementHandle[X1], 
       /* x2 */ UnwrapElementHandle[X2], 
-      R | stdLib.Promise[R]
+      R | js.Promise[R]
     ],
     x1: X1,
     x2: X2
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+  ): js.Promise[WrapElementHandle[R]] = js.native
   /**
      * This method runs `Array.from(document.querySelectorAll(selector))` within the context and passes it as the
      * first argument to `pageFunction`.
@@ -105,12 +105,12 @@ trait Evalable extends js.Object {
       /* x1 */ UnwrapElementHandle[X1], 
       /* x2 */ UnwrapElementHandle[X2], 
       /* x3 */ UnwrapElementHandle[X3], 
-      R | stdLib.Promise[R]
+      R | js.Promise[R]
     ],
     x1: X1,
     x2: X2,
     x3: X3
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+  ): js.Promise[WrapElementHandle[R]] = js.native
   /**
      * This method runs `document.querySelector` within the context and passes it as the first argument to `pageFunction`.
      * If there's no element matching `selector`, the method throws an error.
@@ -124,8 +124,8 @@ trait Evalable extends js.Object {
   @JSName("$eval")
   def $eval[R](
     selector: java.lang.String,
-    pageFunction: js.Function1[/* element */ stdLib.Element, R | stdLib.Promise[R]]
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+    pageFunction: js.Function1[/* element */ stdLib.Element, R | js.Promise[R]]
+  ): js.Promise[WrapElementHandle[R]] = js.native
   /**
      * This method runs `document.querySelector` within the context and passes it as the first argument to `pageFunction`.
      * If there's no element matching `selector`, the method throws an error.
@@ -140,9 +140,9 @@ trait Evalable extends js.Object {
   @JSName("$eval")
   def $eval[R](
     selector: java.lang.String,
-    pageFunction: js.Function2[/* element */ stdLib.Element, /* repeated */js.Any, R | stdLib.Promise[R]],
+    pageFunction: js.Function2[/* element */ stdLib.Element, /* repeated */js.Any, R | js.Promise[R]],
     args: js.Any*
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+  ): js.Promise[WrapElementHandle[R]] = js.native
   /**
      * This method runs `document.querySelector` within the context and passes it as the first argument to `pageFunction`.
      * If there's no element matching `selector`, the method throws an error.
@@ -157,13 +157,9 @@ trait Evalable extends js.Object {
   @JSName("$eval")
   def $eval[R, X1](
     selector: java.lang.String,
-    pageFunction: js.Function2[
-      /* element */ stdLib.Element, 
-      /* x1 */ UnwrapElementHandle[X1], 
-      R | stdLib.Promise[R]
-    ],
+    pageFunction: js.Function2[/* element */ stdLib.Element, /* x1 */ UnwrapElementHandle[X1], R | js.Promise[R]],
     x1: X1
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+  ): js.Promise[WrapElementHandle[R]] = js.native
   /**
      * This method runs `document.querySelector` within the context and passes it as the first argument to `pageFunction`.
      * If there's no element matching `selector`, the method throws an error.
@@ -183,11 +179,11 @@ trait Evalable extends js.Object {
       /* element */ stdLib.Element, 
       /* x1 */ UnwrapElementHandle[X1], 
       /* x2 */ UnwrapElementHandle[X2], 
-      R | stdLib.Promise[R]
+      R | js.Promise[R]
     ],
     x1: X1,
     x2: X2
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+  ): js.Promise[WrapElementHandle[R]] = js.native
   /**
      * This method runs `document.querySelector` within the context and passes it as the first argument to `pageFunction`.
      * If there's no element matching `selector`, the method throws an error.
@@ -209,11 +205,11 @@ trait Evalable extends js.Object {
       /* x1 */ UnwrapElementHandle[X1], 
       /* x2 */ UnwrapElementHandle[X2], 
       /* x3 */ UnwrapElementHandle[X3], 
-      R | stdLib.Promise[R]
+      R | js.Promise[R]
     ],
     x1: X1,
     x2: X2,
     x3: X3
-  ): stdLib.Promise[WrapElementHandle[R]] = js.native
+  ): js.Promise[WrapElementHandle[R]] = js.native
 }
 

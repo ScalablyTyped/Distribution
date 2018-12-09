@@ -20,7 +20,7 @@ class ConvenientHunk () extends js.Object {
   /**
        * The lines in this hunk
        */
-  def lines(): stdLib.Promise[js.Array[nodegitLib.diffDashLineMod.DiffLine]] = js.native
+  def lines(): js.Promise[js.Array[nodegitLib.diffDashLineMod.DiffLine]] = js.native
   /**
        * The number of new lines in the hunk
        */

@@ -23,7 +23,7 @@ class BlockingProxy protected () extends js.Object {
   def enableLogging(logDir: java.lang.String): scala.Unit = js.native
   def handleProxyCommand(message: js.Any, data: js.Any, response: js.Any): scala.Unit = js.native
   def listen(port: scala.Double): scala.Double = js.native
-  def quit(): stdLib.Promise[js.Object] = js.native
+  def quit(): js.Promise[js.Object] = js.native
   def requestListener(originalRequest: nodeLib.httpMod.IncomingMessage, response: nodeLib.httpMod.ServerResponse): scala.Unit = js.native
   /**
        * Override the logger instance. Only used for testing.

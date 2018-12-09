@@ -21,7 +21,7 @@ package object webpackNs {
   type DllPlugin = Plugin
   type DllReferencePlugin = Plugin
   type EntryFunc = js.Function0[
-    java.lang.String | js.Array[java.lang.String] | Entry | (stdLib.Promise[java.lang.String | js.Array[java.lang.String] | Entry])
+    java.lang.String | js.Array[java.lang.String] | Entry | (js.Promise[java.lang.String | js.Array[java.lang.String] | Entry])
   ]
   type EnvironmentPlugin = Plugin
   type EvalSourceMapDevToolPlugin = Plugin

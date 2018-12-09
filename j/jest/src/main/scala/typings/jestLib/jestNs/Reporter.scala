@@ -13,7 +13,7 @@ trait Reporter extends js.Object {
     js.Function2[
       /* contexts */ Set[Context], 
       /* results */ AggregatedResult, 
-      Maybe[stdLib.Promise[scala.Unit]]
+      Maybe[js.Promise[scala.Unit]]
     ]
   ] = js.undefined
   var onRunStart: js.UndefOr[

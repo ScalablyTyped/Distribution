@@ -15,7 +15,7 @@ class Products protected ()
        * @param options Options for filtering the results.
        * @see https://help.shopify.com/api/reference/product#count
        */
-  def count(): stdLib.Promise[scala.Double] = js.native
+  def count(): js.Promise[scala.Double] = js.native
   /**
        * Gets a count of all of the shop's Products.
        * @param options Options for filtering the results.
@@ -23,47 +23,47 @@ class Products protected ()
        */
   def count(
     options: shopifyDashPrimeLib.distOptionsProductsMod.ProductBaseOptions with shopifyDashPrimeLib.distOptionsBaseMod.DateOptions with shopifyDashPrimeLib.distOptionsBaseMod.PublishedOptions
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
   /**
        * Creates an Product.
        * @param product The Product being created.
        * @param options Options for creating the Product.
        */
-  def create(product: shopifyDashPrimeLib.distModelsProductMod.Product): stdLib.Promise[shopifyDashPrimeLib.distModelsProductMod.Product] = js.native
+  def create(product: shopifyDashPrimeLib.distModelsProductMod.Product): js.Promise[shopifyDashPrimeLib.distModelsProductMod.Product] = js.native
   /**
        * Deletes an Product with the given id.
        * @param id The Product's id.
        */
-  def delete(id: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def delete(id: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * Gets the Product with the given id.
        * @param id The Product's id.
        * @param options Options for filtering the results.
        */
-  def get(id: scala.Double): stdLib.Promise[shopifyDashPrimeLib.distModelsProductMod.Product] = js.native
+  def get(id: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsProductMod.Product] = js.native
   /**
        * Gets the Product with the given id.
        * @param id The Product's id.
        * @param options Options for filtering the results.
        */
-  def get(id: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions): stdLib.Promise[shopifyDashPrimeLib.distModelsProductMod.Product] = js.native
+  def get(id: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions): js.Promise[shopifyDashPrimeLib.distModelsProductMod.Product] = js.native
   /**
        * Gets a list of up to 250 of the shop's Products.
        * @param options Options for filtering the results.
        */
-  def list(): stdLib.Promise[js.Array[shopifyDashPrimeLib.distModelsProductMod.Product]] = js.native
+  def list(): js.Promise[js.Array[shopifyDashPrimeLib.distModelsProductMod.Product]] = js.native
   /**
        * Gets a list of up to 250 of the shop's Products.
        * @param options Options for filtering the results.
        */
   def list(
     options: shopifyDashPrimeLib.distOptionsProductsMod.ProductListOptions with shopifyDashPrimeLib.distOptionsBaseMod.PublishedOptions with shopifyDashPrimeLib.distOptionsBaseMod.ListOptions with shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions
-  ): stdLib.Promise[js.Array[shopifyDashPrimeLib.distModelsProductMod.Product]] = js.native
+  ): js.Promise[js.Array[shopifyDashPrimeLib.distModelsProductMod.Product]] = js.native
   /**
        * Updates an Product with the given id.
        * @param id The Product's id.
        * @param product The updated Product.
        */
-  def update(id: scala.Double, product: shopifyDashPrimeLib.distModelsProductMod.Product): stdLib.Promise[shopifyDashPrimeLib.distModelsProductMod.Product] = js.native
+  def update(id: scala.Double, product: shopifyDashPrimeLib.distModelsProductMod.Product): js.Promise[shopifyDashPrimeLib.distModelsProductMod.Product] = js.native
 }
 

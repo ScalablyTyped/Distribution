@@ -17,55 +17,55 @@ object SnowballNs extends js.Object {
     /**
          * The city in an address that a Snowball is to be delivered to.
          */
-    var City: js.UndefOr[java.lang.String] = js.undefined
+    var City: js.UndefOr[String] = js.undefined
     /**
          * The name of the company to receive a Snowball at an address.
          */
-    var Company: js.UndefOr[java.lang.String] = js.undefined
+    var Company: js.UndefOr[String] = js.undefined
     /**
          * The country in an address that a Snowball is to be delivered to.
          */
-    var Country: js.UndefOr[java.lang.String] = js.undefined
+    var Country: js.UndefOr[String] = js.undefined
     /**
          * If the address you are creating is a primary address, then set this option to true. This field is not supported in most regions.
          */
-    var IsRestricted: js.UndefOr[scala.Boolean] = js.undefined
+    var IsRestricted: js.UndefOr[Boolean] = js.undefined
     /**
          * This field is no longer used and the value is ignored.
          */
-    var Landmark: js.UndefOr[java.lang.String] = js.undefined
+    var Landmark: js.UndefOr[String] = js.undefined
     /**
          * The name of a person to receive a Snowball at an address.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The phone number associated with an address that a Snowball is to be delivered to.
          */
-    var PhoneNumber: js.UndefOr[java.lang.String] = js.undefined
+    var PhoneNumber: js.UndefOr[String] = js.undefined
     /**
          * The postal code in an address that a Snowball is to be delivered to.
          */
-    var PostalCode: js.UndefOr[java.lang.String] = js.undefined
+    var PostalCode: js.UndefOr[String] = js.undefined
     /**
          * This field is no longer used and the value is ignored.
          */
-    var PrefectureOrDistrict: js.UndefOr[java.lang.String] = js.undefined
+    var PrefectureOrDistrict: js.UndefOr[String] = js.undefined
     /**
          * The state or province in an address that a Snowball is to be delivered to.
          */
-    var StateOrProvince: js.UndefOr[java.lang.String] = js.undefined
+    var StateOrProvince: js.UndefOr[String] = js.undefined
     /**
          * The first line in a street address that a Snowball is to be delivered to.
          */
-    var Street1: js.UndefOr[java.lang.String] = js.undefined
+    var Street1: js.UndefOr[String] = js.undefined
     /**
          * The second line in a street address that a Snowball is to be delivered to.
          */
-    var Street2: js.UndefOr[java.lang.String] = js.undefined
+    var Street2: js.UndefOr[String] = js.undefined
     /**
          * The third line in a street address that a Snowball is to be delivered to.
          */
-    var Street3: js.UndefOr[java.lang.String] = js.undefined
+    var Street3: js.UndefOr[String] = js.undefined
   }
   
   
@@ -103,7 +103,7 @@ object SnowballNs extends js.Object {
     /**
          * The 39-character ID for the cluster that you want to list, for example CID123e4567-e89b-12d3-a456-426655440000.
          */
-    var ClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var ClusterId: js.UndefOr[String] = js.undefined
     /**
          * The current state of this cluster. For information about the state of a specific node, see JobListEntry$JobState.
          */
@@ -115,7 +115,7 @@ object SnowballNs extends js.Object {
     /**
          * Defines an optional description of the cluster, for example Environmental Data Cluster-01.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
   }
   
   
@@ -127,7 +127,7 @@ object SnowballNs extends js.Object {
     /**
          * The automatically generated ID for a cluster.
          */
-    var ClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var ClusterId: js.UndefOr[String] = js.undefined
     /**
          * The current status of the cluster.
          */
@@ -139,7 +139,7 @@ object SnowballNs extends js.Object {
     /**
          * The optional description of the cluster.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the address that you want a cluster shipped to, after it will be shipped to its primary address. This field is not supported in most regions.
          */
@@ -179,11 +179,11 @@ object SnowballNs extends js.Object {
     /**
          * The unique identifier for an individual Snowball Edge AMI.
          */
-    var AmiId: js.UndefOr[java.lang.String] = js.undefined
+    var AmiId: js.UndefOr[String] = js.undefined
     /**
          * The optional name of a compatible image.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -199,7 +199,7 @@ object SnowballNs extends js.Object {
     /**
          * The automatically generated ID for a specific address. You'll use this ID when you create a job to specify which address you want the Snowball for that job shipped to.
          */
-    var AddressId: js.UndefOr[java.lang.String] = js.undefined
+    var AddressId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -211,7 +211,7 @@ object SnowballNs extends js.Object {
     /**
          * An optional description of this specific cluster, for example Environmental Data Cluster-01.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The forwarding address ID for a cluster. This field is not supported in most regions.
          */
@@ -267,7 +267,7 @@ object SnowballNs extends js.Object {
     /**
          * Defines an optional description of this specific job, for example Important Photos 2016-08-11.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The forwarding address ID for a job. This field is not supported in most regions.
          */
@@ -359,7 +359,7 @@ object SnowballNs extends js.Object {
     /**
          * HTTP requests are stateless. To identify what object comes "next" in the list of ADDRESS objects, you have the option of specifying a value for NextToken as the starting point for your list of returned addresses.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -371,7 +371,7 @@ object SnowballNs extends js.Object {
     /**
          * HTTP requests are stateless. If you use the automatically generated NextToken value in your next DescribeAddresses call, your list of returned addresses will start from this point in the array.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -419,7 +419,7 @@ object SnowballNs extends js.Object {
     /**
          * The ID of the AMI on the supported device.
          */
-    var SnowballAmiId: js.UndefOr[java.lang.String] = js.undefined
+    var SnowballAmiId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -443,7 +443,7 @@ object SnowballNs extends js.Object {
     /**
          * The Amazon S3 presigned URL for the manifest file associated with the specified JobId value.
          */
-    var ManifestURI: js.UndefOr[java.lang.String] = js.undefined
+    var ManifestURI: js.UndefOr[String] = js.undefined
   }
   
   
@@ -459,7 +459,7 @@ object SnowballNs extends js.Object {
     /**
          * The UnlockCode value for the specified job. The UnlockCode value can be accessed for up to 90 days after the job has been created.
          */
-    var UnlockCode: js.UndefOr[java.lang.String] = js.undefined
+    var UnlockCode: js.UndefOr[String] = js.undefined
   }
   
   
@@ -486,15 +486,15 @@ object SnowballNs extends js.Object {
     /**
          * The optional description of this specific job, for example Important Photos 2016-08-11.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * A value that indicates that this job is a master job. A master job represents a successful request to create an export job. Master jobs aren't associated with any Snowballs. Instead, each master job will have at least one job part, and each job part is associated with a Snowball. It might take some time before the job parts associated with a particular master job are listed, because they are created after the master job is created.
          */
-    var IsMaster: js.UndefOr[scala.Boolean] = js.undefined
+    var IsMaster: js.UndefOr[Boolean] = js.undefined
     /**
          * The automatically generated ID for a job, for example JID123e4567-e89b-12d3-a456-426655440000.
          */
-    var JobId: js.UndefOr[java.lang.String] = js.undefined
+    var JobId: js.UndefOr[String] = js.undefined
     /**
          * The current state of this job.
          */
@@ -514,15 +514,15 @@ object SnowballNs extends js.Object {
     /**
          * A link to an Amazon S3 presigned URL where the job completion report is located.
          */
-    var JobCompletionReportURI: js.UndefOr[java.lang.String] = js.undefined
+    var JobCompletionReportURI: js.UndefOr[String] = js.undefined
     /**
          * A link to an Amazon S3 presigned URL where the job failure log is located.
          */
-    var JobFailureLogURI: js.UndefOr[java.lang.String] = js.undefined
+    var JobFailureLogURI: js.UndefOr[String] = js.undefined
     /**
          * A link to an Amazon S3 presigned URL where the job success log is located.
          */
-    var JobSuccessLogURI: js.UndefOr[java.lang.String] = js.undefined
+    var JobSuccessLogURI: js.UndefOr[String] = js.undefined
   }
   
   
@@ -534,7 +534,7 @@ object SnowballNs extends js.Object {
     /**
          * The 39-character ID for the cluster, for example CID123e4567-e89b-12d3-a456-426655440000.
          */
-    var ClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var ClusterId: js.UndefOr[String] = js.undefined
     /**
          * The creation date for this job.
          */
@@ -546,7 +546,7 @@ object SnowballNs extends js.Object {
     /**
          * The description of the job, provided at job creation.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the address that you want a job shipped to, after it will be shipped to its primary address. This field is not supported in most regions.
          */
@@ -554,7 +554,7 @@ object SnowballNs extends js.Object {
     /**
          * The automatically generated ID for a job, for example JID123e4567-e89b-12d3-a456-426655440000.
          */
-    var JobId: js.UndefOr[java.lang.String] = js.undefined
+    var JobId: js.UndefOr[String] = js.undefined
     /**
          * Links to Amazon S3 presigned URLs for the job report and logs. For import jobs, the PDF job report becomes available at the end of the import process. For export jobs, your job report typically becomes available while the Snowball for your job part is being delivered to you.
          */
@@ -618,11 +618,11 @@ object SnowballNs extends js.Object {
     /**
          * The key that starts an optional key range for an export job. Ranges are inclusive and UTF-8 binary sorted.
          */
-    var BeginMarker: js.UndefOr[java.lang.String] = js.undefined
+    var BeginMarker: js.UndefOr[String] = js.undefined
     /**
          * The key that ends an optional key range for an export job. Ranges are inclusive and UTF-8 binary sorted.
          */
-    var EndMarker: js.UndefOr[java.lang.String] = js.undefined
+    var EndMarker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -650,7 +650,7 @@ object SnowballNs extends js.Object {
     /**
          * HTTP requests are stateless. To identify what object comes "next" in the list of JobListEntry objects, you have the option of specifying NextToken as the starting point for your returned list.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -662,7 +662,7 @@ object SnowballNs extends js.Object {
     /**
          * HTTP requests are stateless. If you use the automatically generated NextToken value in your next ListClusterJobsResult call, your list of returned jobs will start from this point in the array.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -674,7 +674,7 @@ object SnowballNs extends js.Object {
     /**
          * HTTP requests are stateless. To identify what object comes "next" in the list of ClusterListEntry objects, you have the option of specifying NextToken as the starting point for your returned list.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -686,7 +686,7 @@ object SnowballNs extends js.Object {
     /**
          * HTTP requests are stateless. If you use the automatically generated NextToken value in your next ClusterListEntry call, your list of returned clusters will start from this point in the array.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -698,7 +698,7 @@ object SnowballNs extends js.Object {
     /**
          * HTTP requests are stateless. To identify what object comes "next" in the list of compatible images, you can specify a value for NextToken as the starting point for your list of returned images.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -710,7 +710,7 @@ object SnowballNs extends js.Object {
     /**
          * Because HTTP requests are stateless, this is the starting point for your next list of returned images.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -722,7 +722,7 @@ object SnowballNs extends js.Object {
     /**
          * HTTP requests are stateless. To identify what object comes "next" in the list of JobListEntry objects, you have the option of specifying NextToken as the starting point for your returned list.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -734,7 +734,7 @@ object SnowballNs extends js.Object {
     /**
          * HTTP requests are stateless. If you use this automatically generated NextToken value in your next ListJobs call, your returned JobListEntry objects will start from this point in the array.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -746,7 +746,7 @@ object SnowballNs extends js.Object {
     /**
          * Any change in job state will trigger a notification for this job.
          */
-    var NotifyAll: js.UndefOr[scala.Boolean] = js.undefined
+    var NotifyAll: js.UndefOr[Boolean] = js.undefined
     /**
          * The new SNS TopicArn that you want to associate with this job. You can create Amazon Resource Names (ARNs) for topics by using the CreateTopic Amazon SNS API action. You can subscribe email addresses to an Amazon SNS topic through the AWS Management Console, or by using the Subscribe AWS Simple Notification Service (SNS) API action.
          */
@@ -770,11 +770,11 @@ object SnowballNs extends js.Object {
     /**
          * Status information for a shipment.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The tracking number for this job. Using this tracking number with your region's carrier's website, you can track a Snowball as the carrier transports it. For India, the carrier is Amazon Logistics. For all other regions, UPS is the carrier.
          */
-    var TrackingNumber: js.UndefOr[java.lang.String] = js.undefined
+    var TrackingNumber: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1303,7 +1303,7 @@ object SnowballNs extends js.Object {
     /**
          * The updated description of this cluster.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The updated ID for the forwarding address for a cluster. This field is not supported in most regions.
          */
@@ -1338,7 +1338,7 @@ object SnowballNs extends js.Object {
     /**
          * The updated description of this job's JobMetadata object.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The updated ID for the forwarding address for a job. This field is not supported in most regions.
          */

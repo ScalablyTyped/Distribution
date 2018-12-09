@@ -41,8 +41,8 @@ object libCommonCommonModMembers extends js.Object {
   val pushTo: js.Function1[/* arr */ js.Array[js.Any], js.Function1[/* val */ js.Any, js.Any]] = js.native
   val removeFrom: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, js.Array[js.Any]]] = js.native
   val root: js.Any = js.native
-  val silenceUncaughtInPromise: js.Function1[/* promise */ stdLib.Promise[js.Any], stdLib.Promise[js.Any]] = js.native
-  val silentRejection: js.Function1[/* error */ js.Any, stdLib.Promise[js.Any]] = js.native
+  val silenceUncaughtInPromise: js.Function1[/* promise */ js.Promise[js.Any], js.Promise[js.Any]] = js.native
+  val silentRejection: js.Function1[/* error */ js.Any, js.Promise[js.Any]] = js.native
   val toJson: js.Any = js.native
   val uniqR: js.Function2[/* acc */ js.Array[js.Any], /* token */ js.Any, js.Array[js.Any]] = js.native
   val unnest: js.Function1[/* arr */ js.Array[js.Any], js.Any] = js.native

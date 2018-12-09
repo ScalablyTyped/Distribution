@@ -16,7 +16,7 @@ trait TextEditorElement
      * Extended: Get a promise that resolves the next time the element's
      * DOM is updated in any way.
      */
-  def getNextUpdatePromise(): stdLib.Promise[scala.Unit] = js.native
+  def getNextUpdatePromise(): js.Promise[scala.Unit] = js.native
   def getScrollHeight(): scala.Double = js.native
   def getScrollLeft(): scala.Double = js.native
   def getScrollTop(): scala.Double = js.native

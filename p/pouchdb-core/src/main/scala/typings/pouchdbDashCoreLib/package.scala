@@ -8,6 +8,6 @@ package object pouchdbDashCoreLib {
   type Fetch = js.Function2[
     /* url */ java.lang.String | stdLib.Request, 
     /* opts */ js.UndefOr[stdLib.RequestInit], 
-    stdLib.Promise[stdLib.Response]
+    js.Promise[stdLib.Response]
   ]
 }

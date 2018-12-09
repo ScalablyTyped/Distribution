@@ -24,7 +24,7 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authAnonymously")
-  def $authAnonymously(options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authAnonymously(options: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with a custom authentication token.
   	 *
@@ -48,7 +48,7 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authWithCustomToken")
-  def $authWithCustomToken(authToken: java.lang.String, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithCustomToken(authToken: java.lang.String, options: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with the OAuth popup flow.
   	 *
@@ -70,7 +70,7 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authWithOAuthPopup")
-  def $authWithOAuthPopup(provider: java.lang.String, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthPopup(provider: java.lang.String, options: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with the OAuth redirect flow.
   	 *
@@ -92,7 +92,33 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authWithOAuthRedirect")
-  def $authWithOAuthRedirect(provider: java.lang.String, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthRedirect(provider: java.lang.String, options: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+  	 * Authenticates the Firebase reference with an OAuth token.
+  	 *
+  	 * @param {string} provider The unique string identifying the OAuth provider to authenticate
+  	 * with, e.g. google.
+  	 * @param {string|Object} credentials Either a string, such as an OAuth 2.0 access token, or an
+  	 * Object of key / value pairs, such as a set of OAuth 1.0a credentials.
+  	 * @param {Object} [options] An object containing optional client arguments, such as configuring
+  	 * session persistence.
+  	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
+  	 */
+  @JSName("$authWithOAuthToken")
+  def $authWithOAuthToken(provider: java.lang.String, credentials: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+  	 * Authenticates the Firebase reference with an OAuth token.
+  	 *
+  	 * @param {string} provider The unique string identifying the OAuth provider to authenticate
+  	 * with, e.g. google.
+  	 * @param {string|Object} credentials Either a string, such as an OAuth 2.0 access token, or an
+  	 * Object of key / value pairs, such as a set of OAuth 1.0a credentials.
+  	 * @param {Object} [options] An object containing optional client arguments, such as configuring
+  	 * session persistence.
+  	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
+  	 */
+  @JSName("$authWithOAuthToken")
+  def $authWithOAuthToken(provider: java.lang.String, credentials: coreDashJsLib.Object, options: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with an OAuth token.
   	 *
@@ -118,33 +144,7 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: java.lang.String, credentials: java.lang.String, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  /**
-  	 * Authenticates the Firebase reference with an OAuth token.
-  	 *
-  	 * @param {string} provider The unique string identifying the OAuth provider to authenticate
-  	 * with, e.g. google.
-  	 * @param {string|Object} credentials Either a string, such as an OAuth 2.0 access token, or an
-  	 * Object of key / value pairs, such as a set of OAuth 1.0a credentials.
-  	 * @param {Object} [options] An object containing optional client arguments, such as configuring
-  	 * session persistence.
-  	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
-  	 */
-  @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: java.lang.String, credentials: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  /**
-  	 * Authenticates the Firebase reference with an OAuth token.
-  	 *
-  	 * @param {string} provider The unique string identifying the OAuth provider to authenticate
-  	 * with, e.g. google.
-  	 * @param {string|Object} credentials Either a string, such as an OAuth 2.0 access token, or an
-  	 * Object of key / value pairs, such as a set of OAuth 1.0a credentials.
-  	 * @param {Object} [options] An object containing optional client arguments, such as configuring
-  	 * session persistence.
-  	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
-  	 */
-  @JSName("$authWithOAuthToken")
-  def $authWithOAuthToken(provider: java.lang.String, credentials: js.Object, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithOAuthToken(provider: java.lang.String, credentials: java.lang.String, options: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
   /**
   	 * Authenticates the Firebase reference with an email/password user.
   	 *
@@ -166,7 +166,7 @@ trait AngularFireAuth extends js.Object {
   	 * @return {Promise<Object>} A promise fulfilled with an object containing authentication data.
   	 */
   @JSName("$authWithPassword")
-  def $authWithPassword(credentials: js.Any, options: js.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $authWithPassword(credentials: js.Any, options: coreDashJsLib.Object): angularLib.angularMod.angularNs.IPromise[_] = js.native
   /**
   	 * Changes the email for an email/password user.
   	 *
@@ -216,7 +216,7 @@ trait AngularFireAuth extends js.Object {
   	 * @return {function} A function which can be used to deregister the provided callback.
   	 */
   @JSName("$onAuth")
-  def $onAuth(callback: js.Function): js.Function = js.native
+  def $onAuth(callback: angularLib.angularMod.Global.Function): angularLib.angularMod.Global.Function = js.native
   /**
   	 * Asynchronously fires the provided callback with the current authentication data every time
   	 * the authentication data changes. It also fires as soon as the authentication data is
@@ -230,7 +230,7 @@ trait AngularFireAuth extends js.Object {
   	 * @return {function} A function which can be used to deregister the provided callback.
   	 */
   @JSName("$onAuth")
-  def $onAuth(callback: js.Function, context: js.Any): js.Function = js.native
+  def $onAuth(callback: angularLib.angularMod.Global.Function, context: js.Any): angularLib.angularMod.Global.Function = js.native
   /**
   	 * Removes an email/password user.
   	 *

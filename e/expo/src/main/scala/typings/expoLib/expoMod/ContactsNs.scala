@@ -18,7 +18,7 @@ object ContactsNs extends js.Object {
     var emails: js.UndefOr[js.Array[expoLib.Anon_Email]] = js.undefined
     var firstName: js.UndefOr[java.lang.String] = js.undefined
     var id: java.lang.String
-    var image: js.UndefOr[expoLib.Anon_UriString_763862751] = js.undefined
+    var image: js.UndefOr[expoLib.Anon_UriStringOptional] = js.undefined
     var imageAvailable: js.UndefOr[scala.Boolean] = js.undefined
     var instantMessageAddresses: js.UndefOr[js.Array[expoLib.Anon_Username]] = js.undefined
     var jobTitle: js.UndefOr[java.lang.String] = js.undefined
@@ -36,7 +36,7 @@ object ContactsNs extends js.Object {
     var previousLastName: js.UndefOr[java.lang.String] = js.undefined
     var relationships: js.UndefOr[js.Array[expoLib.Anon_NameLabel]] = js.undefined
     var socialProfiles: js.UndefOr[js.Array[expoLib.Anon_Url]] = js.undefined
-    var thumbnail: js.UndefOr[expoLib.Anon_UriString_763862751] = js.undefined
+    var thumbnail: js.UndefOr[expoLib.Anon_UriStringOptional] = js.undefined
     var urls: js.UndefOr[expoLib.Anon_UrlLabel] = js.undefined
   }
   
@@ -73,8 +73,8 @@ object ContactsNs extends js.Object {
   val SOCIAL_PROFILES: SocialProfiles = js.native
   val THUMBNAIL: Thumbnail = js.native
   val URLS: UrlAddresses = js.native
-  def getContactByIdAsync(options: expoLib.Anon_Fields): stdLib.Promise[Contact] = js.native
-  def getContactsAsync(options: Options): stdLib.Promise[Response] = js.native
+  def getContactByIdAsync(options: expoLib.Anon_Fields): js.Promise[Contact] = js.native
+  def getContactsAsync(options: Options): js.Promise[Response] = js.native
   type Addresses = expoLib.expoLibStrings.addresses
   type Birthday = expoLib.expoLibStrings.birthday
   type Dates = expoLib.expoLibStrings.dates

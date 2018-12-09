@@ -25,7 +25,7 @@ trait ILocalStorageService extends js.Object {
                * @param value optional
                * @param key The corresponding key used in local storage
                */
-  def bind(scope: angularLib.angularMod.angularNs.IScope, property: java.lang.String): js.Function = js.native
+  def bind(scope: angularLib.angularMod.angularNs.IScope, property: java.lang.String): angularLib.angularMod.Global.Function = js.native
   /**
                * Bind $scope key to localStorageService.
                * Usage: localStorageService.bind(scope, property, value[optional], key[optional])
@@ -35,7 +35,7 @@ trait ILocalStorageService extends js.Object {
                * @param value optional
                * @param key The corresponding key used in local storage
                */
-  def bind(scope: angularLib.angularMod.angularNs.IScope, property: java.lang.String, value: js.Any): js.Function = js.native
+  def bind(scope: angularLib.angularMod.angularNs.IScope, property: java.lang.String, value: js.Any): angularLib.angularMod.Global.Function = js.native
   /**
                * Bind $scope key to localStorageService.
                * Usage: localStorageService.bind(scope, property, value[optional], key[optional])
@@ -50,7 +50,7 @@ trait ILocalStorageService extends js.Object {
     property: java.lang.String,
     value: js.Any,
     key: java.lang.String
-  ): js.Function = js.native
+  ): angularLib.angularMod.Global.Function = js.native
   /**
                * Bind $scope key to localStorageService.
                * Usage: localStorageService.bind(scope, property, value[optional], key[optional])
@@ -66,7 +66,7 @@ trait ILocalStorageService extends js.Object {
     value: js.Any,
     key: java.lang.String,
     storageType: StorageType
-  ): js.Function = js.native
+  ): angularLib.angularMod.Global.Function = js.native
   /**
                * Remove all data for this app from local storage.
                * If local storage is not supported, use cookies instead.

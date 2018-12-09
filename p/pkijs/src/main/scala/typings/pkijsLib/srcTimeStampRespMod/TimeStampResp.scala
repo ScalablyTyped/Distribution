@@ -16,14 +16,14 @@ trait TimeStampResp extends js.Object {
            * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
            * @returns {Promise}
            */
-  def sign(privateKey: stdLib.CryptoKey): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def sign(privateKey: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
            * Sign current TSP Response
            * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
            * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
            * @returns {Promise}
            */
-  def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): js.Thenable[stdLib.ArrayBuffer] = js.native
   def toJSON(): js.Any = js.native
   def toSchema(): js.Any = js.native
   /**
@@ -31,6 +31,6 @@ trait TimeStampResp extends js.Object {
            * @param {VerifyParams} verificationParameters Input parameters for verification
            * @returns {Promise}
            */
-  def verify(verificationParameters: pkijsLib.srcSignedDataMod.VerifyParams): stdLib.PromiseLike[pkijsLib.srcSignedDataMod.VerifyResult] = js.native
+  def verify(verificationParameters: pkijsLib.srcSignedDataMod.VerifyParams): js.Thenable[pkijsLib.srcSignedDataMod.VerifyResult] = js.native
 }
 

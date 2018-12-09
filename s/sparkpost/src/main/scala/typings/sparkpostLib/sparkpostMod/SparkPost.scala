@@ -21,27 +21,27 @@ trait SparkPost extends js.Object {
   var templates: sparkpostLib.Anon_Preview = js.native
   var transmissions: sparkpostLib.Anon_Get = js.native
   var webhooks: sparkpostLib.Anon_Validate = js.native
-  def delete(options: requestLib.requestMod.requestNs.Options): stdLib.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
+  def delete(options: requestLib.requestMod.requestNs.Options): js.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
   def delete(
     options: requestLib.requestMod.requestNs.Options,
     callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[_]
   ): scala.Unit = js.native
-  def get(options: requestLib.requestMod.requestNs.Options): stdLib.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
+  def get(options: requestLib.requestMod.requestNs.Options): js.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
   def get(
     options: requestLib.requestMod.requestNs.Options,
     callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[_]
   ): scala.Unit = js.native
-  def post(options: requestLib.requestMod.requestNs.Options): stdLib.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
+  def post(options: requestLib.requestMod.requestNs.Options): js.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
   def post(
     options: requestLib.requestMod.requestNs.Options,
     callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[_]
   ): scala.Unit = js.native
-  def put(options: requestLib.requestMod.requestNs.Options): stdLib.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
+  def put(options: requestLib.requestMod.requestNs.Options): js.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
   def put(
     options: requestLib.requestMod.requestNs.Options,
     callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[_]
   ): scala.Unit = js.native
-  def request(options: requestLib.requestMod.requestNs.Options): stdLib.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
+  def request(options: requestLib.requestMod.requestNs.Options): js.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
   def request(
     options: requestLib.requestMod.requestNs.Options,
     callback: sparkpostLib.sparkpostMod.SparkPostNs.Callback[_]

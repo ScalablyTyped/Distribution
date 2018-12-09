@@ -44,7 +44,7 @@ class AotCompiler protected () extends js.Object {
   var _typeCheckCompiler: js.Any = js.native
   var _viewCompiler: js.Any = js.native
   val reflector: atAngularCompilerLib.srcAotStaticUnderscoreReflectorMod.StaticReflector = js.native
-  def analyzeModulesAsync(rootFiles: js.Array[java.lang.String]): stdLib.Promise[NgAnalyzedModules] = js.native
+  def analyzeModulesAsync(rootFiles: js.Array[java.lang.String]): js.Promise[NgAnalyzedModules] = js.native
   def analyzeModulesSync(rootFiles: js.Array[java.lang.String]): NgAnalyzedModules = js.native
   def clearCache(): scala.Unit = js.native
   def emitAllImpls(analyzeResult: NgAnalyzedModules): js.Array[atAngularCompilerLib.srcAotGeneratedUnderscoreFileMod.GeneratedFile] = js.native
@@ -62,7 +62,7 @@ class AotCompiler protected () extends js.Object {
   def listLazyRoutes(): js.Array[atAngularCompilerLib.srcAotLazyUnderscoreRoutesMod.LazyRoute] = js.native
   def listLazyRoutes(entryRoute: java.lang.String): js.Array[atAngularCompilerLib.srcAotLazyUnderscoreRoutesMod.LazyRoute] = js.native
   def listLazyRoutes(entryRoute: java.lang.String, analyzedModules: NgAnalyzedModules): js.Array[atAngularCompilerLib.srcAotLazyUnderscoreRoutesMod.LazyRoute] = js.native
-  def loadFilesAsync(fileNames: js.Array[java.lang.String], tsFiles: js.Array[java.lang.String]): stdLib.Promise[atAngularCompilerLib.Anon_AnalyzedModules] = js.native
+  def loadFilesAsync(fileNames: js.Array[java.lang.String], tsFiles: js.Array[java.lang.String]): js.Promise[atAngularCompilerLib.Anon_AnalyzedModules] = js.native
   def loadFilesSync(fileNames: js.Array[java.lang.String], tsFiles: js.Array[java.lang.String]): atAngularCompilerLib.Anon_AnalyzedModules = js.native
 }
 

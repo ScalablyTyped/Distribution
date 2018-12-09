@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait DetoxJestAdapter extends js.Object {
   var detox: detoxLib.detoxMod.Global.DetoxNs.Detox
-  def afterAll(): stdLib.Promise[scala.Unit]
-  def beforeEach(): stdLib.Promise[scala.Unit]
+  def afterAll(): js.Promise[scala.Unit]
+  def beforeEach(): js.Promise[scala.Unit]
 }
 

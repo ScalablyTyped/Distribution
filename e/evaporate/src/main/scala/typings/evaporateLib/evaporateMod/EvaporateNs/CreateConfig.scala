@@ -27,7 +27,7 @@ trait CreateConfig extends js.Object {
       /* stringToSign */ java.lang.String, 
       /* signatureDateTime */ java.lang.String, 
       /* canonicalRequest */ java.lang.String, 
-      stdLib.Promise[java.lang.String]
+      js.Promise[java.lang.String]
     ])
   ] = js.undefined
   var encodeFilename: js.UndefOr[scala.Boolean] = js.undefined
@@ -67,7 +67,7 @@ trait CreateConfig extends js.Object {
       /* response */ js.Any, 
       /* stringToSign */ java.lang.String, 
       /* signatureDateTime */ java.lang.String, 
-      stdLib.Promise[java.lang.String]
+      js.Promise[java.lang.String]
     ])
   ] = js.undefined
   var signerUrl: js.UndefOr[java.lang.String] = js.undefined

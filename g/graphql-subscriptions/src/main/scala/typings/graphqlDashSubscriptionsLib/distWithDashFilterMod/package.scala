@@ -11,7 +11,7 @@ package object distWithDashFilterMod {
     /* args */ js.UndefOr[js.Any], 
     /* context */ js.UndefOr[js.Any], 
     /* info */ js.UndefOr[js.Any], 
-    scala.Boolean | stdLib.Promise[scala.Boolean]
+    scala.Boolean | js.Promise[scala.Boolean]
   ]
   type ResolverFn = js.Function4[
     /* rootValue */ js.UndefOr[js.Any], 

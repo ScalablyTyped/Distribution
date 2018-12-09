@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait SessionDescriptionHandler extends js.Object {
   var peerConnection: js.Any = js.native
   def close(): scala.Unit = js.native
-  def getDescription(options: SessionDescriptionHandlerParameters, modifiers: js.Array[DescriptionModifier]): stdLib.Promise[_] = js.native
+  def getDescription(options: SessionDescriptionHandlerParameters, modifiers: js.Array[DescriptionModifier]): js.Promise[_] = js.native
   def hasDescription(contentType: java.lang.String): scala.Boolean = js.native
-  def holdModifier(description: stdLib.RTCSessionDescription): stdLib.Promise[stdLib.RTCSessionDescription] = js.native
+  def holdModifier(description: stdLib.RTCSessionDescription): js.Promise[stdLib.RTCSessionDescription] = js.native
   def on(
     name: sipDotJsLib.sipDotJsLibStrings.iceGathering | sipDotJsLib.sipDotJsLibStrings.iceGatheringComplete | sipDotJsLib.sipDotJsLibStrings.iceConnection | sipDotJsLib.sipDotJsLibStrings.iceConnectionChecking | sipDotJsLib.sipDotJsLibStrings.iceConnectionConnected | sipDotJsLib.sipDotJsLibStrings.iceConnectionCompleted | sipDotJsLib.sipDotJsLibStrings.iceConnectionFailed | sipDotJsLib.sipDotJsLibStrings.iceConnectionDisconnected | sipDotJsLib.sipDotJsLibStrings.iceConnectionClosed | java.lang.String,
     callback: js.Function0[scala.Unit]
@@ -60,6 +60,6 @@ trait SessionDescriptionHandler extends js.Object {
     sessionDescription: java.lang.String,
     options: SessionDescriptionHandlerParameters,
     modifiers: js.Array[DescriptionModifier]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
 }
 

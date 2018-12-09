@@ -86,13 +86,13 @@ object AccessToken extends js.Object {
   /**
        * Getter for the access token that is current for the application.
        */
-  def getCurrentAccessToken(): stdLib.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AccessToken | scala.Null] = js.native
+  def getCurrentAccessToken(): js.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AccessToken | scala.Null] = js.native
   /**
        * Updates the current access token with up to date permissions,
        * and extends the expiration date, if extension is possible.
        */
   
-  def refreshCurrentAccessTokenAsync(): stdLib.Promise[_] = js.native
+  def refreshCurrentAccessTokenAsync(): js.Promise[_] = js.native
   /**
        * Setter for the access token that is current for the application.
        */

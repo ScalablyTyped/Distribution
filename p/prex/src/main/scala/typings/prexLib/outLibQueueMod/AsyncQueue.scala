@@ -13,7 +13,7 @@ class AsyncQueue[T] () extends js.Object {
        *
        * @param iterable An optional iterable of values or promises.
        */
-  def this(iterable: stdLib.Iterable[T | stdLib.PromiseLike[T]]) = this()
+  def this(iterable: stdLib.Iterable[T | js.Thenable[T]]) = this()
   var _available: js.Any = js.native
   var _pending: js.Any = js.native
   /**
@@ -26,7 +26,7 @@ class AsyncQueue[T] () extends js.Object {
        * Removes and returns a Promise for the first value in the queue. If the queue is empty,
        * returns a Promise for the next value to be added to the queue.
        */
-  def get(): stdLib.Promise[T] = js.native
+  def get(): js.Promise[T] = js.native
   /**
        * Adds a value to the end of the queue. If the queue is empty but has a pending
        * dequeue request, the value will be dequeued and the request fulfilled.
@@ -40,6 +40,6 @@ class AsyncQueue[T] () extends js.Object {
        *
        * @param value A value or promise to add to the queue.
        */
-  def put(value: stdLib.PromiseLike[T]): scala.Unit = js.native
+  def put(value: js.Thenable[T]): scala.Unit = js.native
 }
 

@@ -46,7 +46,7 @@ object libTaskEitherModMembers extends js.Object {
   val taskEither: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] with fpDashTsLib.libMonadIOMod.MonadIO2[URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[URI] = js.native
   val taskEitherSeq: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] with fpDashTsLib.libMonadIOMod.MonadIO2[URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[URI] = js.native
   val tryCatch: js.Function2[
-    /* f */ fpDashTsLib.libFunctionMod.Lazy[stdLib.Promise[js.Any]], 
+    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Promise[js.Any]], 
     /* onrejected */ js.Function1[/* reason */ js.Any, js.Any], 
     TaskEither[js.Any, js.Any]
   ] = js.native

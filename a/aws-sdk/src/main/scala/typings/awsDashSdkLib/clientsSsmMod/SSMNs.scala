@@ -33,7 +33,7 @@ object SSMNs extends js.Object {
     /**
          * Whether or not the activation is expired.
          */
-    var Expired: js.UndefOr[scala.Boolean] = js.undefined
+    var Expired: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Identity and Access Management (IAM) role to assign to the managed instance.
          */
@@ -457,11 +457,11 @@ object SSMNs extends js.Object {
     /**
          * The action of the currently executing step.
          */
-    var CurrentAction: js.UndefOr[java.lang.String] = js.undefined
+    var CurrentAction: js.UndefOr[String] = js.undefined
     /**
          * The name of the currently executing step.
          */
-    var CurrentStepName: js.UndefOr[java.lang.String] = js.undefined
+    var CurrentStepName: js.UndefOr[String] = js.undefined
     /**
          * The name of the Automation document used during the execution.
          */
@@ -473,7 +473,7 @@ object SSMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the user who executed the automation.
          */
-    var ExecutedBy: js.UndefOr[java.lang.String] = js.undefined
+    var ExecutedBy: js.UndefOr[String] = js.undefined
     /**
          * The time the execution finished.
          */
@@ -485,7 +485,7 @@ object SSMNs extends js.Object {
     /**
          * A message describing why an execution has failed, if the status is set to Failed.
          */
-    var FailureMessage: js.UndefOr[java.lang.String] = js.undefined
+    var FailureMessage: js.UndefOr[String] = js.undefined
     /**
          * The MaxConcurrency value specified by the user when the execution started.
          */
@@ -525,11 +525,11 @@ object SSMNs extends js.Object {
     /**
          * A boolean value that indicates if the response contains the full list of the Automation step executions. If true, use the DescribeAutomationStepExecutions API action to get the full list of step executions.
          */
-    var StepExecutionsTruncated: js.UndefOr[scala.Boolean] = js.undefined
+    var StepExecutionsTruncated: js.UndefOr[Boolean] = js.undefined
     /**
          * The target of the execution.
          */
-    var Target: js.UndefOr[java.lang.String] = js.undefined
+    var Target: js.UndefOr[String] = js.undefined
     /**
          * The combination of AWS Regions and/or AWS accounts where you want to execute the Automation.
          */
@@ -577,11 +577,11 @@ object SSMNs extends js.Object {
     /**
          * The action of the currently executing step.
          */
-    var CurrentAction: js.UndefOr[java.lang.String] = js.undefined
+    var CurrentAction: js.UndefOr[String] = js.undefined
     /**
          * The name of the currently executing step.
          */
-    var CurrentStepName: js.UndefOr[java.lang.String] = js.undefined
+    var CurrentStepName: js.UndefOr[String] = js.undefined
     /**
          * The name of the Automation document used during execution.
          */
@@ -593,7 +593,7 @@ object SSMNs extends js.Object {
     /**
          * The IAM role ARN of the user who executed the Automation.
          */
-    var ExecutedBy: js.UndefOr[java.lang.String] = js.undefined
+    var ExecutedBy: js.UndefOr[String] = js.undefined
     /**
          * The time the execution finished. This is not populated if the execution is still in progress.
          */
@@ -605,11 +605,11 @@ object SSMNs extends js.Object {
     /**
          * The list of execution outputs as defined in the Automation document.
          */
-    var FailureMessage: js.UndefOr[java.lang.String] = js.undefined
+    var FailureMessage: js.UndefOr[String] = js.undefined
     /**
          * An Amazon S3 bucket where execution information is stored.
          */
-    var LogFile: js.UndefOr[java.lang.String] = js.undefined
+    var LogFile: js.UndefOr[String] = js.undefined
     /**
          * The MaxConcurrency value specified by the user when starting the Automation.
          */
@@ -637,7 +637,7 @@ object SSMNs extends js.Object {
     /**
          * The list of execution outputs as defined in the Automation document.
          */
-    var Target: js.UndefOr[java.lang.String] = js.undefined
+    var Target: js.UndefOr[String] = js.undefined
     /**
          * The specified key-value mapping of document parameters to target resources.
          */
@@ -1329,7 +1329,7 @@ object SSMNs extends js.Object {
     /**
          * Indicates whether the list of approved patches includes non-security updates that should be applied to the instances. The default value is 'false'. Applies to Linux instances only.
          */
-    var ApprovedPatchesEnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined
+    var ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined
     /**
          * User-provided idempotency token.
          */
@@ -1578,7 +1578,7 @@ object SSMNs extends js.Object {
     /**
          * The system checks if the target is being referenced by a task. If the target is being referenced, the system returns an error and does not deregister the target from the Maintenance Window.
          */
-    var Safe: js.UndefOr[scala.Boolean] = js.undefined
+    var Safe: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the Maintenance Window the target should be removed from.
          */
@@ -1810,7 +1810,7 @@ object SSMNs extends js.Object {
     /**
          * A boolean that indicates whether to list step executions in reverse order by start time. The default value is false.
          */
-    var ReverseOrder: js.UndefOr[scala.Boolean] = js.undefined
+    var ReverseOrder: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2766,7 +2766,7 @@ object SSMNs extends js.Object {
     /**
          * An identifier for the default version of the document.
          */
-    var IsDefaultVersion: js.UndefOr[scala.Boolean] = js.undefined
+    var IsDefaultVersion: js.UndefOr[Boolean] = js.undefined
     /**
          * The document name.
          */
@@ -2822,11 +2822,11 @@ object SSMNs extends js.Object {
     /**
          * The stage of the Automation execution when the failure occurred. The stages include the following: InputValidation, PreVerification, Invocation, PostVerification.
          */
-    var FailureStage: js.UndefOr[java.lang.String] = js.undefined
+    var FailureStage: js.UndefOr[String] = js.undefined
     /**
          * The type of Automation failure. Failure types include the following: Action, Permission, Throttling, Verification, Internal.
          */
-    var FailureType: js.UndefOr[java.lang.String] = js.undefined
+    var FailureType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3466,7 +3466,7 @@ object SSMNs extends js.Object {
     /**
          * Return decrypted values for secure string parameters. This flag is ignored for String and StringList parameter types.
          */
-    var WithDecryption: js.UndefOr[scala.Boolean] = js.undefined
+    var WithDecryption: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3490,7 +3490,7 @@ object SSMNs extends js.Object {
     /**
          * Return decrypted values for secure string parameters. This flag is ignored for String and StringList parameter types.
          */
-    var WithDecryption: js.UndefOr[scala.Boolean] = js.undefined
+    var WithDecryption: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3522,11 +3522,11 @@ object SSMNs extends js.Object {
     /**
          * Retrieve all parameters within a hierarchy.  If a user has access to a path, then the user can access all levels of that path. For example, if a user has permission to access path /a, then the user can also access /a/b. Even if a user has explicitly been denied access in IAM for parameter /a, they can still call the GetParametersByPath API action recursively and view /a/b. 
          */
-    var Recursive: js.UndefOr[scala.Boolean] = js.undefined
+    var Recursive: js.UndefOr[Boolean] = js.undefined
     /**
          * Retrieve all parameters in a hierarchy with their value decrypted.
          */
-    var WithDecryption: js.UndefOr[scala.Boolean] = js.undefined
+    var WithDecryption: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3550,7 +3550,7 @@ object SSMNs extends js.Object {
     /**
          * Return decrypted secure string value. Return decrypted values for secure string parameters. This flag is ignored for String and StringList parameter types.
          */
-    var WithDecryption: js.UndefOr[scala.Boolean] = js.undefined
+    var WithDecryption: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3618,7 +3618,7 @@ object SSMNs extends js.Object {
     /**
          * Indicates whether the list of approved patches includes non-security updates that should be applied to the instances. The default value is 'false'. Applies to Linux instances only.
          */
-    var ApprovedPatchesEnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined
+    var ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the retrieved patch baseline.
          */
@@ -3806,7 +3806,7 @@ object SSMNs extends js.Object {
     /**
          * Indicates whether latest version of SSM Agent is running on your instance. Some older versions of Windows Server use the EC2Config service to process SSM requests. For this reason, this field does not indicate whether or not the latest version is installed on Windows managed instances.
          */
-    var IsLatestVersion: js.UndefOr[scala.Boolean] = js.undefined
+    var IsLatestVersion: js.UndefOr[Boolean] = js.undefined
     /**
          * The date the association was last executed.
          */
@@ -3822,7 +3822,7 @@ object SSMNs extends js.Object {
     /**
          * The name of the managed instance.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * Connection status of SSM Agent. 
          */
@@ -3830,7 +3830,7 @@ object SSMNs extends js.Object {
     /**
          * The name of the operating system platform running on your instance. 
          */
-    var PlatformName: js.UndefOr[java.lang.String] = js.undefined
+    var PlatformName: js.UndefOr[String] = js.undefined
     /**
          * The operating system platform type. 
          */
@@ -3838,7 +3838,7 @@ object SSMNs extends js.Object {
     /**
          * The version of the OS platform running on your instance. 
          */
-    var PlatformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var PlatformVersion: js.UndefOr[String] = js.undefined
     /**
          * The date the server or VM was registered with AWS as a managed instance.
          */
@@ -4258,7 +4258,7 @@ object SSMNs extends js.Object {
     /**
          * (Optional) If set this returns the response of the command executions and any command output. By default this is set to False. 
          */
-    var Details: js.UndefOr[scala.Boolean] = js.undefined
+    var Details: js.UndefOr[Boolean] = js.undefined
     /**
          * (Optional) One or more filters. Use a filter to return a more specific list of results.
          */
@@ -5014,7 +5014,7 @@ object SSMNs extends js.Object {
   
   
   trait NormalStringMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait NotificationConfig extends js.Object {
@@ -5049,7 +5049,7 @@ object SSMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the parameter.
          */
-    var ARN: js.UndefOr[java.lang.String] = js.undefined
+    var ARN: js.UndefOr[String] = js.undefined
     /**
          * Date the parameter was last changed or updated and the parameter version was created.
          */
@@ -5065,7 +5065,7 @@ object SSMNs extends js.Object {
     /**
          * Applies to parameters that reference information in other AWS services. SourceResult is the raw result or response from the source.
          */
-    var SourceResult: js.UndefOr[java.lang.String] = js.undefined
+    var SourceResult: js.UndefOr[String] = js.undefined
     /**
          * The type of parameter. Valid values include the following: String, String list, Secure string.
          */
@@ -5105,7 +5105,7 @@ object SSMNs extends js.Object {
     /**
          * Amazon Resource Name (ARN) of the AWS user who last changed the parameter.
          */
-    var LastModifiedUser: js.UndefOr[java.lang.String] = js.undefined
+    var LastModifiedUser: js.UndefOr[String] = js.undefined
     /**
          * The name of the parameter.
          */
@@ -5145,7 +5145,7 @@ object SSMNs extends js.Object {
     /**
          * Amazon Resource Name (ARN) of the AWS user who last changed the parameter.
          */
-    var LastModifiedUser: js.UndefOr[java.lang.String] = js.undefined
+    var LastModifiedUser: js.UndefOr[String] = js.undefined
     /**
          * The parameter name.
          */
@@ -5357,7 +5357,7 @@ object SSMNs extends js.Object {
     /**
          * For instances identified by the approval rule filters, enables a patch baseline to apply non-security updates available in the specified repository. The default value is 'false'. Applies to Linux instances only.
          */
-    var EnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableNonSecurity: js.UndefOr[Boolean] = js.undefined
     /**
          * The patch filter group that defines the criteria for the rule.
          */
@@ -5500,7 +5500,7 @@ object SSMNs extends js.Object {
     /**
          * Overwrite an existing parameter. If not specified, will default to "false".
          */
-    var Overwrite: js.UndefOr[scala.Boolean] = js.undefined
+    var Overwrite: js.UndefOr[Boolean] = js.undefined
     /**
          * The type of parameter that you want to add to the system. Items in a StringList must be separated by a comma (,). You can't use other punctuation or special character to escape items in the list. If you have a parameter value that requires a comma, then use the String data type.   SecureString is not currently supported for AWS CloudFormation templates or in the China Regions. 
          */
@@ -5695,7 +5695,7 @@ object SSMNs extends js.Object {
     /**
          * A boolean value indicating whether the resolved target list is truncated.
          */
-    var Truncated: js.UndefOr[scala.Boolean] = js.undefined
+    var Truncated: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -6177,7 +6177,7 @@ object SSMNs extends js.Object {
     /**
          * If a step failed, this message explains why the execution failed.
          */
-    var FailureMessage: js.UndefOr[java.lang.String] = js.undefined
+    var FailureMessage: js.UndefOr[String] = js.undefined
     /**
          * Fully-resolved values passed into the step before execution.
          */
@@ -6185,11 +6185,11 @@ object SSMNs extends js.Object {
     /**
          * The flag which can be used to help decide whether the failure of current step leads to the Automation failure.
          */
-    var IsCritical: js.UndefOr[scala.Boolean] = js.undefined
+    var IsCritical: js.UndefOr[Boolean] = js.undefined
     /**
          * The flag which can be used to end automation no matter whether the step succeeds or fails.
          */
-    var IsEnd: js.UndefOr[scala.Boolean] = js.undefined
+    var IsEnd: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of tries to run the action of the step. The default value is 1.
          */
@@ -6197,11 +6197,11 @@ object SSMNs extends js.Object {
     /**
          * The next step after the step succeeds.
          */
-    var NextStep: js.UndefOr[java.lang.String] = js.undefined
+    var NextStep: js.UndefOr[String] = js.undefined
     /**
          * The action to take if the step fails. The default value is Abort.
          */
-    var OnFailure: js.UndefOr[java.lang.String] = js.undefined
+    var OnFailure: js.UndefOr[String] = js.undefined
     /**
          * Returned values from the execution of the step.
          */
@@ -6213,19 +6213,19 @@ object SSMNs extends js.Object {
     /**
          * A message associated with the response code for an execution.
          */
-    var Response: js.UndefOr[java.lang.String] = js.undefined
+    var Response: js.UndefOr[String] = js.undefined
     /**
          * The response code returned by the execution of the step.
          */
-    var ResponseCode: js.UndefOr[java.lang.String] = js.undefined
+    var ResponseCode: js.UndefOr[String] = js.undefined
     /**
          * The unique ID of a step execution.
          */
-    var StepExecutionId: js.UndefOr[java.lang.String] = js.undefined
+    var StepExecutionId: js.UndefOr[String] = js.undefined
     /**
          * The name of this execution step.
          */
-    var StepName: js.UndefOr[java.lang.String] = js.undefined
+    var StepName: js.UndefOr[String] = js.undefined
     /**
          * The execution status for this step. Valid values include: Pending, InProgress, Success, Cancelled, Failed, and TimedOut.
          */
@@ -9770,7 +9770,7 @@ object SSMNs extends js.Object {
     /**
          * If True, then all fields that are required by the CreateMaintenanceWindow action are also required for this API request. Optional fields that are not specified are set to null. 
          */
-    var Replace: js.UndefOr[scala.Boolean] = js.undefined
+    var Replace: js.UndefOr[Boolean] = js.undefined
     /**
          * The schedule of the Maintenance Window in the form of a cron or rate expression.
          */
@@ -9854,7 +9854,7 @@ object SSMNs extends js.Object {
     /**
          * If True, then all fields that are required by the RegisterTargetWithMaintenanceWindow action are also required for this API request. Optional fields that are not specified are set to null.
          */
-    var Replace: js.UndefOr[scala.Boolean] = js.undefined
+    var Replace: js.UndefOr[Boolean] = js.undefined
     /**
          * The targets to add or replace.
          */
@@ -9926,7 +9926,7 @@ object SSMNs extends js.Object {
     /**
          * If True, then all fields that are required by the RegisterTaskWithMaintenanceWndow action are also required for this API request. Optional fields that are not specified are set to null.
          */
-    var Replace: js.UndefOr[scala.Boolean] = js.undefined
+    var Replace: js.UndefOr[Boolean] = js.undefined
     /**
          * The IAM service role ARN to modify. The system assumes this role during task execution. If you do not specify a service role ARN, Systems Manager will use your account's service-linked role for Systems Manager by default. If no service-linked role for Systems Manager exists in your account, it will be created when you run RegisterTaskWithMaintenanceWindow without specifying a service role ARN. For more information, see Service-Linked Role Permissions for Systems Manager and Should I Use a Service-Linked Role or a Custom Service Role to Run Maintenance Window Tasks?  in the AWS Systems Manager User Guide.
          */
@@ -10045,7 +10045,7 @@ object SSMNs extends js.Object {
     /**
          * Indicates whether the list of approved patches includes non-security updates that should be applied to the instances. The default value is 'false'. Applies to Linux instances only.
          */
-    var ApprovedPatchesEnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined
+    var ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the patch baseline to update.
          */
@@ -10073,7 +10073,7 @@ object SSMNs extends js.Object {
     /**
          * If True, then all fields that are required by the CreatePatchBaseline action are also required for this API request. Optional fields that are not specified are set to null.
          */
-    var Replace: js.UndefOr[scala.Boolean] = js.undefined
+    var Replace: js.UndefOr[Boolean] = js.undefined
     /**
          * Information about the patches to use to update the instances, including target operating systems and source repositories. Applies to Linux instances only.
          */
@@ -10097,7 +10097,7 @@ object SSMNs extends js.Object {
     /**
          * Indicates whether the list of approved patches includes non-security updates that should be applied to the instances. The default value is 'false'. Applies to Linux instances only.
          */
-    var ApprovedPatchesEnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined
+    var ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the deleted patch baseline.
          */
@@ -10565,7 +10565,7 @@ object SSMNs extends js.Object {
   type StreamUrl = java.lang.String
   type String = java.lang.String
   type StringDateTime = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type TagKey = java.lang.String
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String

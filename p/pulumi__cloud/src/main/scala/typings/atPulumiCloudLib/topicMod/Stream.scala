@@ -19,6 +19,6 @@ trait Stream[T] extends js.Object {
        * @param name The name of the subscription.
        * @param handler A callback to handle each item published to the stream.
        */
-  def subscribe(name: java.lang.String, handler: js.Function1[/* item */ T, stdLib.Promise[scala.Unit]]): scala.Unit
+  def subscribe(name: java.lang.String, handler: js.Function1[/* item */ T, js.Promise[scala.Unit]]): scala.Unit
 }
 

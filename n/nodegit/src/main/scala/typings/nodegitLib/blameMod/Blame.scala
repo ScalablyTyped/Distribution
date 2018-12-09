@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("nodegit/blame", "Blame")
 @js.native
 class Blame () extends js.Object {
-  def buffer(buffer: java.lang.String, bufferLen: scala.Double): stdLib.Promise[Blame] = js.native
+  def buffer(buffer: java.lang.String, bufferLen: scala.Double): js.Promise[Blame] = js.native
   def free(): scala.Unit = js.native
   /**
        * @returns - the hunk at the given index, or NULL on error

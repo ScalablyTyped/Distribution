@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SubscriptionItems
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def create(data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemCreationOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  def create(data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   /**
                * Adds a new item to an existing subscription. No existing items will be changed or replaced.
                *
@@ -19,7 +19,7 @@ trait SubscriptionItems
   def create(
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   /**
                * Adds a new item to an existing subscription. No existing items will be changed or replaced.
                *
@@ -31,16 +31,16 @@ trait SubscriptionItems
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   def create(
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
-  def del(subscriptionItemId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  def del(subscriptionItemId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   def del(
     subscriptionItemId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemDeleteOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   /**
                * Deletes an item from the subscription. Removing a subscription item from a subscription will not cancel the subscription.
                *
@@ -54,7 +54,7 @@ trait SubscriptionItems
     subscriptionItemId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemDeleteOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   /**
                * Deletes an item from the subscription. Removing a subscription item from a subscription will not cancel the subscription.
                *
@@ -69,23 +69,23 @@ trait SubscriptionItems
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemDeleteOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   def del(
     subscriptionItemId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemDeleteOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
-  def del(subscriptionItemId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  def del(subscriptionItemId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   def del(
     subscriptionItemId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   def del(
     subscriptionItemId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemListOptions): stdLib.Promise[
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  def list(data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
   ] = js.native
   /**
@@ -98,7 +98,7 @@ trait SubscriptionItems
   def list(
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
   ] = js.native
   /**
@@ -114,7 +114,7 @@ trait SubscriptionItems
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
   ] = js.native
   def list(
@@ -122,10 +122,10 @@ trait SubscriptionItems
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
   ] = js.native
-  def retrieve(subscriptionItemId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  def retrieve(subscriptionItemId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   /**
                * Retrieves the subscription item with the given ID.
                *
@@ -133,7 +133,7 @@ trait SubscriptionItems
                *
                * @param subscriptionItemId The identifier of the subscription item to retrieve.
                */
-  def retrieve(subscriptionItemId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  def retrieve(subscriptionItemId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   /**
                * Retrieves the subscription item with the given ID.
                *
@@ -145,15 +145,15 @@ trait SubscriptionItems
     subscriptionItemId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   def retrieve(
     subscriptionItemId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   def update(
     subscriptionItemId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemUpdateOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   /**
                * Updates the plan or quantity of an item on a current subscription.
                *
@@ -164,7 +164,7 @@ trait SubscriptionItems
     subscriptionItemId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   /**
                * Updates the plan or quantity of an item on a current subscription.
                *
@@ -176,11 +176,11 @@ trait SubscriptionItems
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
   def update(
     subscriptionItemId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItemUpdateOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem] = js.native
 }
 

@@ -26,25 +26,25 @@ trait IVariable
            * @param qd - Numeric representation of a dual value.
            * >> This parameter is mandatory.
            */
-  def forceContent(qs: java.lang.String, qd: scala.Double): stdLib.Promise[scala.Unit]
+  def forceContent(qs: java.lang.String, qd: scala.Double): js.Promise[scala.Unit]
   /**
            * Returns the calculated value of a variable.
            *
            * Note: This method is deprecated (not recommended to use). Use GetProperties method instead.
            */
-  def getContent(): stdLib.Promise[IAlfaNumString]
+  def getContent(): js.Promise[IAlfaNumString]
   /**
            * Gets the properties of a variable.
            *
            * Note: This method is deprecated (not recommended to use). Use GetProperties method instead.
            */
-  def getNxProperties(): stdLib.Promise[INxVariableProperties]
+  def getNxProperties(): js.Promise[INxVariableProperties]
   /**
            * Returns the raw value of a variable.
            *
            * Note: This method is deprecated (not recommended to use). Use GetProperties method instead.
            */
-  def getRawContent(): stdLib.Promise[java.lang.String]
+  def getRawContent(): js.Promise[java.lang.String]
   /**
            * Sets a value to a variable.
            *
@@ -54,7 +54,7 @@ trait IVariable
            * @param qUpdateMRU - If set to true, the value is added to the Most Recently Used (MRU) list.
            * >> This parameter is mandatory.
            */
-  def setContent(qContent: java.lang.String, qUpdateMRU: scala.Boolean): stdLib.Promise[scala.Boolean]
+  def setContent(qContent: java.lang.String, qUpdateMRU: scala.Boolean): js.Promise[scala.Boolean]
   /**
            * Sets some properties to a variable.
            *
@@ -63,6 +63,6 @@ trait IVariable
            * In addition to the properties described below, dynamic properties can be added.
            * @param qProperties - Information about the properties of the variable
            */
-  def setNxProperties(qProperties: INxVariableProperties): stdLib.Promise[scala.Unit]
+  def setNxProperties(qProperties: INxVariableProperties): js.Promise[scala.Unit]
 }
 

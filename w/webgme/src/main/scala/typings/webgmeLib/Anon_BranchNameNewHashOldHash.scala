@@ -11,7 +11,7 @@ trait Anon_BranchNameNewHashOldHash extends js.Object {
     branchName: webgmeLib.GmeCommonNs.Name,
     newHash: webgmeLib.GmeStorageNs.CommitHash,
     oldHash: webgmeLib.GmeStorageNs.CommitHash
-  ): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  ): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   def apply(
     branchName: webgmeLib.GmeCommonNs.Name,
     newHash: webgmeLib.GmeStorageNs.CommitHash,

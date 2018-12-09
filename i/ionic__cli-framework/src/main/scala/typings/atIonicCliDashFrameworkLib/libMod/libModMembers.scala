@@ -35,13 +35,13 @@ object libModMembers extends js.Object {
   def createPrefixedFormatter(prefix: java.lang.String): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
   def createPrefixedFormatter(prefix: js.Function0[java.lang.String]): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
   def createPromptChoiceSeparator(): inquirerLib.inquirerMod.inquirerNs.objectsNs.Separator = js.native
-  def createPromptModule(): stdLib.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
-  def createPromptModule(hasInteractiveOnFallback: atIonicCliDashFrameworkLib.libPromptsMod.CreatePromptModuleOptions): stdLib.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
+  def createPromptModule(): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
+  def createPromptModule(hasInteractiveOnFallback: atIonicCliDashFrameworkLib.libPromptsMod.CreatePromptModuleOptions): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
   def createTaggedFormatter(): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
   def createTaggedFormatter(hasColorsPrefixTitleizeWrap: atIonicCliDashFrameworkLib.libLoggerMod.CreateTaggedFormatterOptions): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
   def execute[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](
     hasNamespaceArgvEnvRest: atIonicCliDashFrameworkLib.Anon_Namespace[N] with (stdLib.Partial[atIonicCliDashFrameworkLib.libExecutorMod.BaseExecutorDeps[C, N, M, I, O]])
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def filterCommandLineOptions[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](options: js.Array[O], parsedArgs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions): atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions = js.native
   def filterCommandLineOptions[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](
     options: js.Array[O],
@@ -63,7 +63,7 @@ object libModMembers extends js.Object {
     opt: O,
     hasShowAliasesShowValueSpecColors: atIonicCliDashFrameworkLib.libOptionsMod.FormatOptionNameOptions
   ): java.lang.String = js.native
-  def generateCommandPath[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](cmd: C): stdLib.Promise[
+  def generateCommandPath[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](cmd: C): js.Promise[
     js.Array[atIonicCliDashFrameworkLib.definitionsMod.CommandPathItem[C, N, M, I, O]]
   ] = js.native
   def getLoggerLevelColor(colors: atIonicCliDashFrameworkLib.libColorsMod.Colors): js.UndefOr[atIonicCliDashFrameworkLib.libColorsMod.ColorFunction] = js.native
@@ -75,8 +75,8 @@ object libModMembers extends js.Object {
   def getLoggerLevelName(level: atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevelWeight): js.UndefOr[atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel] = js.native
   def hydrateCommandMetadataOption[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](option: O): atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadataOption[O] = js.native
   def hydrateOptionSpec[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](opt: O): atIonicCliDashFrameworkLib.libOptionsMod.HydratedOptionSpec = js.native
-  def isCommandVisible[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](cmd: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]): stdLib.Promise[scala.Boolean] = js.native
-  def isOptionVisible[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](opt: O): stdLib.Promise[scala.Boolean] = js.native
+  def isCommandVisible[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](cmd: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]): js.Promise[scala.Boolean] = js.native
+  def isOptionVisible[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](opt: O): js.Promise[scala.Boolean] = js.native
   def metadataOptionsToParseArgsOptions(commandOptions: js.Array[atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption]): atIonicCliDashFrameworkLib.definitionsMod.HydratedParseArgsOptions = js.native
   def separateArgv(pargv: js.Array[java.lang.String]): js.Tuple2[js.Array[java.lang.String], js.Array[java.lang.String]] = js.native
   def stripOptions(

@@ -10,10 +10,10 @@ trait Task extends js.Object {
   /**
        * Run the task, passing in additional task run options.
        */
-  def run(): stdLib.Promise[scala.Unit] = js.native
+  def run(): js.Promise[scala.Unit] = js.native
   /**
        * Run the task, passing in additional task run options.
        */
-  def run(options: TaskRunOptions): stdLib.Promise[scala.Unit] = js.native
+  def run(options: TaskRunOptions): js.Promise[scala.Unit] = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("app-builder-lib/out/forge-maker", JSImport.Namespace)
 @js.native
 object outForgeDashMakerModMembers extends js.Object {
-  def buildForge(forgeOptions: ForgeOptions, options: appDashBuilderDashLibLib.outPackagerApiMod.PackagerOptions): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def buildForge(forgeOptions: ForgeOptions, options: appDashBuilderDashLibLib.outPackagerApiMod.PackagerOptions): js.Promise[js.Array[java.lang.String]] = js.native
 }
 

@@ -16,6 +16,6 @@ class default protected () extends JsonResult {
   /* CompleteClass */
   override val statusCode: scala.Double = js.native
   /* CompleteClass */
-  override def executeAsync(): stdLib.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage] = js.native
+  override def executeAsync(): js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage] = js.native
 }
 

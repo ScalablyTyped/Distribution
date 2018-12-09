@@ -13,7 +13,7 @@ trait PCancelableConstructor
     wrapper: js.Function2[
       /* onCancel */ js.Function1[/* fn */ js.UndefOr[js.Function0[scala.Unit]], scala.Unit], 
       /* input */ T, 
-      stdLib.PromiseLike[R]
+      js.Thenable[R]
     ]
   ): js.Function1[/* input */ T, pDashCancelableLib.pDashCancelableMod.PCancelableNs.PCancelable[R]] = js.native
 }

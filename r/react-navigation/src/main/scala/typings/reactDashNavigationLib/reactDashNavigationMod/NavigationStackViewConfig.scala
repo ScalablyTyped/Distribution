@@ -32,7 +32,7 @@ trait NavigationStackViewConfig extends js.Object {
     js.Function2[
       /* transitionProps */ NavigationTransitionProps, 
       /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps], 
-      stdLib.Promise[scala.Unit] | scala.Unit
+      js.Promise[scala.Unit] | scala.Unit
     ]
   ] = js.undefined
   var transitionConfig: js.UndefOr[

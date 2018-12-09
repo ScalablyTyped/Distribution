@@ -60,28 +60,28 @@ trait Query extends js.Object {
     cancelCallbackOrContext: scala.Null,
     context: js.Object
   ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
-  def once(eventType: atFirebaseDatabaseDashTypesLib.EventType): stdLib.Promise[DataSnapshot] = js.native
+  def once(eventType: atFirebaseDatabaseDashTypesLib.EventType): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: atFirebaseDatabaseDashTypesLib.EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _]
-  ): stdLib.Promise[DataSnapshot] = js.native
+  ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: atFirebaseDatabaseDashTypesLib.EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
     failureCallbackOrContext: js.Object
-  ): stdLib.Promise[DataSnapshot] = js.native
+  ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: atFirebaseDatabaseDashTypesLib.EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
     failureCallbackOrContext: js.Object,
     context: js.Object
-  ): stdLib.Promise[DataSnapshot] = js.native
+  ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: atFirebaseDatabaseDashTypesLib.EventType,
     successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
     failureCallbackOrContext: scala.Null,
     context: js.Object
-  ): stdLib.Promise[DataSnapshot] = js.native
+  ): js.Promise[DataSnapshot] = js.native
   def orderByChild(path: java.lang.String): Query = js.native
   def orderByKey(): Query = js.native
   def orderByPriority(): Query = js.native

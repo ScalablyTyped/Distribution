@@ -13,7 +13,7 @@ package object jestNs {
     /* this */ MatcherUtils, 
     /* received */ js.Any, 
     /* repeated */js.Any, 
-    CustomMatcherResult | stdLib.Promise[CustomMatcherResult]
+    CustomMatcherResult | js.Promise[CustomMatcherResult]
   ]
   type EmptyFunction = js.Function0[scala.Unit]
   type Environment = $JestEnvironment
@@ -70,7 +70,7 @@ package object jestNs {
     /* environment */ Environment, 
     /* runtime */ Runtime, 
     /* testPath */ java.lang.String, 
-    stdLib.Promise[TestResult]
+    js.Promise[TestResult]
   ]
   type TestResultsProcessor = js.Function1[/* testResult */ AggregatedResult, AggregatedResult]
 }

@@ -32,7 +32,7 @@ trait BroccoliPlugin extends js.Object {
        * (re-)build. All paths stay the same between builds.
        * To perform asynchronous work, return a promise.
        */
-  def build(): scala.Unit | stdLib.Promise[_]
+  def build(): scala.Unit | js.Promise[_]
   /**
        * Advanced usage only.
        * Return the object on which Broccoli will call `obj.build()`. Called

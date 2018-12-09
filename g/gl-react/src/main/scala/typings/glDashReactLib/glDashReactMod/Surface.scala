@@ -21,7 +21,7 @@ class Surface[T] ()
   def capture(x: scala.Double, y: scala.Double): js.Array[_] = js.native
   def capture(x: scala.Double, y: scala.Double, w: scala.Double): js.Array[_] = js.native
   def capture(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): js.Array[_] = js.native
-  def captureAsBlob(args: js.Any*): stdLib.Promise[stdLib.Blob] = js.native
+  def captureAsBlob(args: js.Any*): js.Promise[stdLib.Blob] = js.native
   def captureAsDataURL(args: js.Any*): java.lang.String = js.native
   def flush(): scala.Unit = js.native
   def getEmptyTexture(): stdLib.WebGLTexture = js.native

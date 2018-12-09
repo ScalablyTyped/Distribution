@@ -23,7 +23,7 @@ trait Anon_TimeoutError extends js.Object {
   /**
      * returned by `Bluebird.disposer()`.
      */
-  var Disposer: ScalablyTyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[js.Object]]
+  var Disposer: ScalablyTyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[js.Any]]
   /**
      * Represents an error is an explicit promise rejection as opposed to a thrown error.
      *  For example, if an error is errbacked by a callback API promisified through undefined or undefined

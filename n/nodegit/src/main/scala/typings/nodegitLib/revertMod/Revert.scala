@@ -20,7 +20,7 @@ object Revert extends js.Object {
     revertCommit: nodegitLib.commitMod.Commit,
     ourCommit: nodegitLib.commitMod.Commit,
     mainline: scala.Double
-  ): stdLib.Promise[nodegitLib.nodegitMod.Index] = js.native
+  ): js.Promise[nodegitLib.nodegitMod.Index] = js.native
   /**
        * Reverts the given commit against the given "our" commit, producing an index that reflects the result of the revert.
        */
@@ -30,11 +30,11 @@ object Revert extends js.Object {
     ourCommit: nodegitLib.commitMod.Commit,
     mainline: scala.Double,
     mergeOptions: nodegitLib.mergeDashOptionsMod.MergeOptions
-  ): stdLib.Promise[nodegitLib.nodegitMod.Index] = js.native
+  ): js.Promise[nodegitLib.nodegitMod.Index] = js.native
   def revert(
     repo: nodegitLib.repositoryMod.Repository,
     commit: nodegitLib.commitMod.Commit,
     givenOpts: nodegitLib.revertMod.RevertOptions
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
 }
 

@@ -19,7 +19,7 @@ trait RouterOptions extends js.Object {
       /* to */ Route, 
       /* from */ Route, 
       /* savedPosition */ Position | scala.Unit, 
-      PositionResult | stdLib.Promise[PositionResult]
+      PositionResult | js.Promise[PositionResult]
     ]
   ] = js.undefined
   var stringifyQuery: js.UndefOr[js.Function1[/* query */ js.Object, java.lang.String]] = js.undefined

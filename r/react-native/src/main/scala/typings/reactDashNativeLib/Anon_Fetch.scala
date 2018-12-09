@@ -15,7 +15,7 @@ trait Anon_Fetch extends js.Object {
     /* listener */ js.Function1[/* result */ scala.Boolean, scala.Unit], 
     scala.Unit
   ]
-  var fetch: js.Function0[stdLib.Promise[scala.Boolean]]
+  var fetch: js.Function0[js.Promise[scala.Boolean]]
   /**
            * eventName is expected to be `change`(deprecated) or `connectionChange`
            */

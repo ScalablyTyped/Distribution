@@ -15,7 +15,7 @@ class StatusBarHeight () extends js.Object {
   /**
      * Get the current status bar height
      */
-  def getAsync(): stdLib.Promise[scala.Double] = js.native
+  def getAsync(): js.Promise[scala.Double] = js.native
   /**
      * Remove 'willChange' event listener
      */

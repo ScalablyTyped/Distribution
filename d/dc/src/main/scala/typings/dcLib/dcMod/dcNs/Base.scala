@@ -85,10 +85,10 @@ trait Base extends js.Object {
   def seriesChart(parent: java.lang.String): SeriesChart = js.native
   def seriesChart(parent: java.lang.String, chartGroup: java.lang.String): SeriesChart = js.native
   def transition(
-    selections: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object],
+    selections: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _],
     duration: scala.Double,
     callback: js.Function1[
-      /* s */ d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object], 
+      /* s */ d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _], 
       scala.Unit
     ]
   ): scala.Unit = js.native

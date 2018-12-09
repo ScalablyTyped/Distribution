@@ -36,7 +36,7 @@ trait StripeJS extends js.Object {
        * @return StripeJS instance
        */
   def apply(key: java.lang.String, options: StripeConfigOptions): StripeJS = js.native
-  def createSource(data: stripejsLib.sourceMod.SourceData): stdLib.Promise[stripejsLib.sourceMod.SourceResult] = js.native
+  def createSource(data: stripejsLib.sourceMod.SourceData): js.Promise[stripejsLib.sourceMod.SourceResult] = js.native
   /**
        *  convert payment information collected by Elements into a Source object that you safely pass
        *  to your server to use in an API call
@@ -48,7 +48,7 @@ trait StripeJS extends js.Object {
        *
        * @return an object containing the generated Source or an error
        */
-  def createSource(element: stripejsLib.elementMod.StripeElement, data: stripejsLib.sourceMod.SourceData): stdLib.Promise[stripejsLib.sourceMod.SourceResult] = js.native
+  def createSource(element: stripejsLib.elementMod.StripeElement, data: stripejsLib.sourceMod.SourceData): js.Promise[stripejsLib.sourceMod.SourceResult] = js.native
   /**
        * to convert information collected by Elements into a single-use token that you safely pass to your server
        * to use in an API call
@@ -59,7 +59,7 @@ trait StripeJS extends js.Object {
        *
        * @return an object containing the generated token or an error
        */
-  def createToken(element: stripejsLib.elementMod.StripeElement): stdLib.Promise[stripejsLib.tokenMod.TokenResult] = js.native
+  def createToken(element: stripejsLib.elementMod.StripeElement): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
   /**
        * to convert information collected by Elements into a single-use token that you safely pass to your server
        * to use in an API call
@@ -70,7 +70,7 @@ trait StripeJS extends js.Object {
        *
        * @return an object containing the generated token or an error
        */
-  def createToken(element: stripejsLib.elementMod.StripeElement, data: stripejsLib.tokenMod.IBANTokenData): stdLib.Promise[stripejsLib.tokenMod.TokenResult] = js.native
+  def createToken(element: stripejsLib.elementMod.StripeElement, data: stripejsLib.tokenMod.IBANTokenData): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
   /**
        * to convert information collected by Elements into a single-use token that you safely pass to your server
        * to use in an API call
@@ -81,11 +81,11 @@ trait StripeJS extends js.Object {
        *
        * @return an object containing the generated token or an error
        */
-  def createToken(element: stripejsLib.elementMod.StripeElement, data: stripejsLib.tokenMod.TokenData): stdLib.Promise[stripejsLib.tokenMod.TokenResult] = js.native
+  def createToken(element: stripejsLib.elementMod.StripeElement, data: stripejsLib.tokenMod.TokenData): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
   @JSName("createToken")
-  def createToken_bank_account(`type`: stripejsLib.stripejsLibStrings.bank_account, data: stripejsLib.tokenMod.BankTokenData): stdLib.Promise[stripejsLib.tokenMod.TokenResult] = js.native
+  def createToken_bank_account(`type`: stripejsLib.stripejsLibStrings.bank_account, data: stripejsLib.tokenMod.BankTokenData): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
   @JSName("createToken")
-  def createToken_pii(`type`: stripejsLib.stripejsLibStrings.pii, data: stripejsLib.tokenMod.PiiTokenData): stdLib.Promise[stripejsLib.tokenMod.TokenResult] = js.native
+  def createToken_pii(`type`: stripejsLib.stripejsLibStrings.pii, data: stripejsLib.tokenMod.PiiTokenData): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
   /**
        * Create an instance of elements which can be used to manage a group of StripeJS elements
        * @see https://stripe.com/docs/stripe-js/reference#stripe-elements
@@ -120,6 +120,6 @@ trait StripeJS extends js.Object {
        *
        * @return an object containing the generated Source or an error
        */
-  def retrieveSource(hasIdClient_secret: stripejsLib.Anon_Clientsecret): stdLib.Promise[stripejsLib.sourceMod.SourceResult] = js.native
+  def retrieveSource(hasIdClient_secret: stripejsLib.Anon_Clientsecret): js.Promise[stripejsLib.sourceMod.SourceResult] = js.native
 }
 

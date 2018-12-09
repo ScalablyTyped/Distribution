@@ -24,7 +24,7 @@ class GoogleEarthEnterpriseMetadata protected ()
   /* CompleteClass */
   override val proxy: cesiumLib.cesiumMod.CesiumNs.Proxy = js.native
   /* CompleteClass */
-  override val readyPromise: stdLib.Promise[scala.Boolean] = js.native
+  override val readyPromise: js.Promise[scala.Boolean] = js.native
   /* CompleteClass */
   override val resource: cesiumLib.cesiumMod.CesiumNs.Resource = js.native
   /* CompleteClass */

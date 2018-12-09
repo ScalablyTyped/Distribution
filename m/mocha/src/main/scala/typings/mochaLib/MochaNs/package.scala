@@ -9,7 +9,7 @@ package object MochaNs {
   /**
        * Async callback function used for tests and hooks.
        */
-  type AsyncFunc = js.ThisFunction0[/* this */ Context, stdLib.PromiseLike[js.Any]]
+  type AsyncFunc = js.ThisFunction0[/* this */ Context, js.Thenable[js.Any]]
   type Done = js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]
   /**
        * Callback function used for tests and hooks.

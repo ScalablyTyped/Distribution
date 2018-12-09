@@ -103,7 +103,7 @@ class PluginBase () extends js.Object {
   def save(): webgmeLib.GmeCommonNs.Promisable = js.native
   def save(message: java.lang.String): webgmeLib.GmeCommonNs.Promisable = js.native
    // returns a promise?
-  def sendNotification(message: java.lang.String): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def sendNotification(message: java.lang.String): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
    // returns a promise?
   def sendNotification(
     message: java.lang.String,

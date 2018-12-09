@@ -115,7 +115,7 @@ class HtmlBehaviorResource () extends js.Object {
   def load(
     container: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container,
     target: js.Function
-  ): stdLib.Promise[HtmlBehaviorResource] = js.native
+  ): js.Promise[HtmlBehaviorResource] = js.native
   /**
       * Enables the resource to asynchronously load additional resources.
       * @param container The dependency injection container from which the resource
@@ -130,7 +130,7 @@ class HtmlBehaviorResource () extends js.Object {
     container: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container,
     target: js.Function,
     loadContext: ResourceLoadContext
-  ): stdLib.Promise[HtmlBehaviorResource] = js.native
+  ): js.Promise[HtmlBehaviorResource] = js.native
   /**
       * Enables the resource to asynchronously load additional resources.
       * @param container The dependency injection container from which the resource
@@ -146,7 +146,7 @@ class HtmlBehaviorResource () extends js.Object {
     target: js.Function,
     loadContext: ResourceLoadContext,
     viewStrategy: ViewStrategy
-  ): stdLib.Promise[HtmlBehaviorResource] = js.native
+  ): js.Promise[HtmlBehaviorResource] = js.native
   /**
       * Enables the resource to asynchronously load additional resources.
       * @param container The dependency injection container from which the resource
@@ -163,7 +163,7 @@ class HtmlBehaviorResource () extends js.Object {
     loadContext: ResourceLoadContext,
     viewStrategy: ViewStrategy,
     transientView: scala.Boolean
-  ): stdLib.Promise[HtmlBehaviorResource] = js.native
+  ): js.Promise[HtmlBehaviorResource] = js.native
   /**
       * Allows the resource to be registered in the view resources for the particular
       * view into which it was required.

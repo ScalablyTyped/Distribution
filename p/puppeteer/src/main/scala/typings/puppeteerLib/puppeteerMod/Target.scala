@@ -12,11 +12,11 @@ trait Target extends js.Object {
   /** The browser context the target belongs to. */
   def browserContext(): BrowserContext
   /** Creates a Chrome Devtools Protocol session attached to the target. */
-  def createCDPSession(): stdLib.Promise[CDPSession]
+  def createCDPSession(): js.Promise[CDPSession]
   /** Get the target that opened this target. Top-level targets return `null`. */
   def opener(): Target | scala.Null
   /** Returns the target `Page` or a `null` if the type of the page is not "page". */
-  def page(): stdLib.Promise[Page]
+  def page(): js.Promise[Page]
   /** Identifies what kind of target this is.  */
   def `type`(): TargetType
   /** Returns the target URL. */

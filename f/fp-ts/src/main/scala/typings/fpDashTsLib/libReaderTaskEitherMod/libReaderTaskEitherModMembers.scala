@@ -50,7 +50,7 @@ object libReaderTaskEitherModMembers extends js.Object {
     ReaderTaskEither[js.Any, js.Any, js.Any]
   ] = js.native
   val tryCatch: js.Function2[
-    /* f */ js.Function1[/* e */ js.Any, stdLib.Promise[js.Any]], 
+    /* f */ js.Function1[/* e */ js.Any, js.Promise[js.Any]], 
     /* onrejected */ js.Function2[/* reason */ js.Any, /* e */ js.Any, js.Any], 
     ReaderTaskEither[js.Any, js.Any, js.Any]
   ] = js.native

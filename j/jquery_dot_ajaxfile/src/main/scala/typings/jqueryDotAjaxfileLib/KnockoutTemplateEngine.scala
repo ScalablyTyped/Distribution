@@ -17,7 +17,7 @@ trait KnockoutTemplateEngine extends KnockoutNativeTemplateEngine {
   def renderTemplate(
     template: js.Any,
     bindingContext: KnockoutBindingContext,
-    options: js.Object,
+    options: Object,
     templateDocument: stdLib.Document
   ): js.Any = js.native
   def rewriteTemplate(template: js.Any, rewriterCallback: js.Function, templateDocument: stdLib.Document): scala.Unit = js.native

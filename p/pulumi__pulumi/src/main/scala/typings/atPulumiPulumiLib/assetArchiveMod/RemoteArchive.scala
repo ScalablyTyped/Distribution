@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class RemoteArchive protected () extends Archive {
   def this(uri: java.lang.String) = this()
-  def this(uri: stdLib.Promise[java.lang.String]) = this()
+  def this(uri: js.Promise[java.lang.String]) = this()
   /**
        * The URI where the archive lives.
        */
-  val uri: stdLib.Promise[java.lang.String] = js.native
+  val uri: js.Promise[java.lang.String] = js.native
 }
 

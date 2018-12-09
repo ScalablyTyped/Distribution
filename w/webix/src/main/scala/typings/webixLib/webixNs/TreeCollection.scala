@@ -10,7 +10,7 @@ trait TreeCollection extends js.Object {
   var config: TreeCollectionConfig = js.native
   var data: DataStore = js.native
   var name: java.lang.String = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String = js.native
   def add(obj: js.Any, index: scala.Double, parentId: java.lang.String): java.lang.String = js.native
@@ -77,9 +77,9 @@ trait TreeCollection extends js.Object {
   def isBranch(id: java.lang.String): scala.Boolean = js.native
   def isBranch(id: scala.Double): scala.Boolean = js.native
   def isVisible(): scala.Boolean = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): js.Promise[_] = js.native
   def loadBranch(id: java.lang.String, callback: WebixCallback, url: java.lang.String): scala.Unit = js.native
   def loadBranch(id: scala.Double, callback: WebixCallback, url: java.lang.String): scala.Unit = js.native
   def loadNext(

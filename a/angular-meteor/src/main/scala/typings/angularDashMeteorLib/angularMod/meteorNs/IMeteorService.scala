@@ -28,7 +28,7 @@ trait IMeteorService extends js.Object {
                * @param scope - The AngularJS scope you use the autorun on.
                * @param fn - The function that will re-run every time a reactive variable changes inside it.
                */
-  def autorun(scope: angularLib.angularMod.angularNs.IScope, fn: js.Function): scala.Unit = js.native
+  def autorun(scope: angularLib.angularMod.angularNs.IScope, fn: angularLib.angularMod.Global.Function): scala.Unit = js.native
   /**
                * A service service which wraps up Meteor.methods with AngularJS promises.
                *
@@ -71,7 +71,16 @@ trait IMeteorService extends js.Object {
                * @param [autoClientSave=true] - By default, changes in the Angular collection will automatically update the Meteor collection.
                *                              - However if set to false, changes in the client won't be automatically propagated back to the Meteor collection.
                */
-  def collection[T](collection: js.Function): AngularMeteorCollection[T] = js.native
+  def collection[T](collection: angularLib.angularMod.Global.Function): AngularMeteorCollection[T] = js.native
+  /**
+               * A service that wraps the Meteor collections to enable reactivity within AngularJS.
+               *
+               * @param collection - A Meteor Collection or a reactive function to bind to.
+               *                   - Reactive function can be used with $scope.getReactively to add $scope variable as reactive variable to the cursor.
+               * @param [autoClientSave=true] - By default, changes in the Angular collection will automatically update the Meteor collection.
+               *                              - However if set to false, changes in the client won't be automatically propagated back to the Meteor collection.
+               */
+  def collection[T](collection: angularLib.angularMod.Global.Function, autoClientSave: scala.Boolean): AngularMeteorCollection[T] = js.native
   /**
                * A service that wraps the Meteor collections to enable reactivity within AngularJS.
                *
@@ -90,15 +99,6 @@ trait IMeteorService extends js.Object {
                *                              - However if set to false, changes in the client won't be automatically propagated back to the Meteor collection.
                */
   def collection[T](collection: js.Function0[T], autoClientSave: scala.Boolean): AngularMeteorCollection[T] = js.native
-  /**
-               * A service that wraps the Meteor collections to enable reactivity within AngularJS.
-               *
-               * @param collection - A Meteor Collection or a reactive function to bind to.
-               *                   - Reactive function can be used with $scope.getReactively to add $scope variable as reactive variable to the cursor.
-               * @param [autoClientSave=true] - By default, changes in the Angular collection will automatically update the Meteor collection.
-               *                              - However if set to false, changes in the client won't be automatically propagated back to the Meteor collection.
-               */
-  def collection[T](collection: js.Function, autoClientSave: scala.Boolean): AngularMeteorCollection[T] = js.native
   /**
                * A service that wraps the Meteor collections to enable reactivity within AngularJS.
                *
@@ -141,7 +141,7 @@ trait IMeteorService extends js.Object {
                * @param [updateCollection] - A collection object which will be used for updates (insert, update, delete).
                */
   def collection[T, U](
-    collection: js.Function0[T],
+    collection: angularLib.angularMod.Global.Function,
     autoClientSave: scala.Boolean,
     updateCollection: meteorLib.MongoNs.Collection[U]
   ): AngularMeteorCollection2[T, U] = js.native
@@ -155,7 +155,7 @@ trait IMeteorService extends js.Object {
                * @param [updateCollection] - A collection object which will be used for updates (insert, update, delete).
                */
   def collection[T, U](
-    collection: js.Function,
+    collection: js.Function0[T],
     autoClientSave: scala.Boolean,
     updateCollection: meteorLib.MongoNs.Collection[U]
   ): AngularMeteorCollection2[T, U] = js.native

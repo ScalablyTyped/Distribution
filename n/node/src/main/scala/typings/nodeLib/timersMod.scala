@@ -17,15 +17,15 @@ object timersMod extends js.Object {
   @JSName("setImmediate")
   @js.native
   object setImmediateNs extends js.Object {
-    def `__promisify__`(): stdLib.Promise[scala.Unit] = js.native
-    def `__promisify__`[T](value: T): stdLib.Promise[T] = js.native
+    def `__promisify__`(): js.Promise[scala.Unit] = js.native
+    def `__promisify__`[T](value: T): js.Promise[T] = js.native
   }
   
   @JSName("setTimeout")
   @js.native
   object setTimeoutNs extends js.Object {
-    def `__promisify__`(ms: scala.Double): stdLib.Promise[scala.Unit] = js.native
-    def `__promisify__`[T](ms: scala.Double, value: T): stdLib.Promise[T] = js.native
+    def `__promisify__`(ms: scala.Double): js.Promise[scala.Unit] = js.native
+    def `__promisify__`[T](ms: scala.Double, value: T): js.Promise[T] = js.native
   }
   
 }

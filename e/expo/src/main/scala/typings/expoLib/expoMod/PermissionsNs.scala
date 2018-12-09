@@ -37,8 +37,8 @@ object PermissionsNs extends js.Object {
   val REMOTE_NOTIFICATIONS: RemoteNotificationPermission = js.native
   val SYSTEM_BRIGHTNESS: expoLib.expoLibStrings.systemBrightness = js.native
   val USER_FACING_NOTIFICATIONS: /* userFacingNotifications */ java.lang.String = js.native
-  def askAsync(`type`: PermissionType): stdLib.Promise[PermissionResponse] = js.native
-  def getAsync(`type`: PermissionType): stdLib.Promise[PermissionResponse] = js.native
+  def askAsync(`type`: PermissionType): js.Promise[PermissionResponse] = js.native
+  def getAsync(`type`: PermissionType): js.Promise[PermissionResponse] = js.native
   type PermissionExpires = expoLib.expoLibStrings.never
   type PermissionStatus = expoLib.expoLibStrings.undetermined | expoLib.expoLibStrings.granted | expoLib.expoLibStrings.denied
   type PermissionType = expoLib.expoLibStrings.audioRecording | expoLib.expoLibStrings.calendar | expoLib.expoLibStrings.cameraRoll | expoLib.expoLibStrings.camera | expoLib.expoLibStrings.contacts | expoLib.expoLibStrings.location | expoLib.expoLibStrings.reminders | expoLib.expoLibStrings.remoteNotifications | expoLib.expoLibStrings.systemBrightness | expoLib.expoLibStrings.userFacingNotifications

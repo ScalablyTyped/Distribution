@@ -17,7 +17,7 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The facet value being counted.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -41,12 +41,12 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The description for a warning returned by the document service.
          */
-    var message: js.UndefOr[java.lang.String] = js.undefined
+    var message: js.UndefOr[String] = js.undefined
   }
   
   
   trait Exprs
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait Facets
@@ -61,15 +61,15 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The maximum value found in the specified field in the result set. If the field is numeric (int, int-array, double, or double-array), max is the string representation of a double-precision 64-bit floating point value. If the field is date or date-array, max is the string representation of a date with the format specified in IETF RFC3339: yyyy-mm-ddTHH:mm:ss.SSSZ.
          */
-    var max: js.UndefOr[java.lang.String] = js.undefined
+    var max: js.UndefOr[String] = js.undefined
     /**
          * The average of the values found in the specified field in the result set. If the field is numeric (int, int-array, double, or double-array), mean is the string representation of a double-precision 64-bit floating point value. If the field is date or date-array, mean is the string representation of a date with the format specified in IETF RFC3339: yyyy-mm-ddTHH:mm:ss.SSSZ.
          */
-    var mean: js.UndefOr[java.lang.String] = js.undefined
+    var mean: js.UndefOr[String] = js.undefined
     /**
          * The minimum value found in the specified field in the result set. If the field is numeric (int, int-array, double, or double-array), min is the string representation of a double-precision 64-bit floating point value. If the field is date or date-array, min is the string representation of a date with the format specified in IETF RFC3339: yyyy-mm-ddTHH:mm:ss.SSSZ.
          */
-    var min: js.UndefOr[java.lang.String] = js.undefined
+    var min: js.UndefOr[String] = js.undefined
     /**
          * The number of documents that do not contain a value in the specified field in the result set.
          */
@@ -94,7 +94,7 @@ object CloudSearchDomainNs extends js.Object {
   
   
   trait Highlights
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait Hit extends js.Object {
@@ -113,7 +113,7 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The document ID of a document that matches the search request.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
   }
   
   
@@ -121,7 +121,7 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * A cursor that can be used to retrieve the next set of matching documents when you want to page through a large result set.
          */
-    var cursor: js.UndefOr[java.lang.String] = js.undefined
+    var cursor: js.UndefOr[String] = js.undefined
     /**
          * The total number of documents that match the search request.
          */
@@ -221,7 +221,7 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The encrypted resource ID for the request.
          */
-    var rid: js.UndefOr[java.lang.String] = js.undefined
+    var rid: js.UndefOr[String] = js.undefined
     /**
          * How long it took to process the request, in milliseconds.
          */
@@ -241,7 +241,7 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The query string specified in the suggest request.
          */
-    var query: js.UndefOr[java.lang.String] = js.undefined
+    var query: js.UndefOr[String] = js.undefined
     /**
          * The documents that match the query string.
          */
@@ -281,7 +281,7 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The encrypted resource ID for the request.
          */
-    var rid: js.UndefOr[java.lang.String] = js.undefined
+    var rid: js.UndefOr[String] = js.undefined
     /**
          * How long it took to process the request, in milliseconds.
          */
@@ -293,7 +293,7 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The document ID of the suggested document.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The relevance score of a suggested match.
          */
@@ -301,7 +301,7 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The string that matches the query string specified in the SuggestRequest. 
          */
-    var suggestion: js.UndefOr[java.lang.String] = js.undefined
+    var suggestion: js.UndefOr[String] = js.undefined
   }
   
   @js.native
@@ -407,7 +407,7 @@ object CloudSearchDomainNs extends js.Object {
     /**
          * The status of an UploadDocumentsRequest.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * Any warnings returned by the document service about the documents being uploaded.
          */
@@ -425,7 +425,7 @@ object CloudSearchDomainNs extends js.Object {
   type Double = scala.Double
   type Expr = java.lang.String
   type Facet = java.lang.String
-  type FieldValue = js.Array[java.lang.String]
+  type FieldValue = js.Array[String]
   type FilterQuery = java.lang.String
   type Highlight = java.lang.String
   type HitList = js.Array[Hit]

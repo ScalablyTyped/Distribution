@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("qlik", JSImport.Namespace)
 @js.native
 object qlikModMembers extends js.Object {
-  def callRepository(path: java.lang.String, method: java.lang.String, body: java.lang.String): stdLib.Promise[_] = js.native
+  def callRepository(path: java.lang.String, method: java.lang.String, body: java.lang.String): js.Promise[_] = js.native
   def currApp(reference: js.Object): App = js.native
   def getAppList(callback: js.Array[App], config: GetAppConfig): scala.Unit = js.native
-  def getExtensionList(callback: js.Array[_]): stdLib.Promise[_] = js.native
+  def getExtensionList(callback: js.Array[_]): js.Promise[_] = js.native
   def getGlobal(config: GetGlobalConfig): Global = js.native
   def openApp(appId: java.lang.String, config: GetAppConfig): App = js.native
   def registerExtension(id: java.lang.String, impl: Extension, metadata: js.Object): scala.Unit = js.native

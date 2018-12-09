@@ -26,7 +26,7 @@ class namespaced protected () extends Service {
   /* CompleteClass */
   override def getServiceName(): java.lang.String = js.native
   /* CompleteClass */
-  override def load(rawOptions: js.Object): stdLib.Promise[_] = js.native
+  override def load(rawOptions: js.Object): js.Promise[_] = js.native
   /* CompleteClass */
   override def mergeResourceArrays(): scala.Unit = js.native
   /* CompleteClass */

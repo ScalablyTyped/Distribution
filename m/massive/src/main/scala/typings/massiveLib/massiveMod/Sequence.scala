@@ -16,15 +16,15 @@ class Sequence protected ()
            * The return value will be a stringified number.
            */
   /* CompleteClass */
-  override def lastValue(): stdLib.Promise[java.lang.String] = js.native
+  override def lastValue(): js.Promise[java.lang.String] = js.native
   /**
            * Increment the sequence counter and return the next value.
            * The return value will be a stringified number.
            */
   /* CompleteClass */
-  override def nextValue(): stdLib.Promise[java.lang.String] = js.native
+  override def nextValue(): js.Promise[java.lang.String] = js.native
   /** Reset the sequence. */
   /* CompleteClass */
-  override def reset(initialValue: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  override def reset(initialValue: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

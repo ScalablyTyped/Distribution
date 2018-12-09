@@ -30,10 +30,10 @@ trait telebot extends js.Object {
   def editMessageReplyMarkup(config: telebotLib.Anon_MessageId, replyMarkup: js.Any): js.Any | scala.Boolean = js.native
   def editMessageText(config: telebotLib.Anon_MessageIdInlineMsgId, text: java.lang.String): js.Any | scala.Boolean = js.native
   def editMessageText(config: telebotLib.Anon_MessageId, text: java.lang.String): js.Any | scala.Boolean = js.native
-  def event(types: java.lang.String, data: js.Any): stdLib.Promise[_] = js.native
-  def event(types: java.lang.String, data: js.Any, self: js.Any): stdLib.Promise[_] = js.native
-  def event(types: js.Array[java.lang.String], data: js.Any): stdLib.Promise[_] = js.native
-  def event(types: js.Array[java.lang.String], data: js.Any, self: js.Any): stdLib.Promise[_] = js.native
+  def event(types: java.lang.String, data: js.Any): js.Promise[_] = js.native
+  def event(types: java.lang.String, data: js.Any, self: js.Any): js.Promise[_] = js.native
+  def event(types: js.Array[java.lang.String], data: js.Any): js.Promise[_] = js.native
+  def event(types: js.Array[java.lang.String], data: js.Any, self: js.Any): js.Promise[_] = js.native
   def forwardMessage(chat_id: java.lang.String, from_chat_id: java.lang.String, message_id: scala.Double): js.Any = js.native
   def forwardMessage(
     chat_id: java.lang.String,
@@ -113,10 +113,10 @@ trait telebot extends js.Object {
   def on(types: stdLib.RegExp, fn: telebotLib.telebotMod.telebotNs.genericCb, opt: js.Any): scala.Boolean = js.native
   def plug(module: telebotLib.telebotMod.telebotNs.module): scala.Unit = js.native
   def properties(form: js.Any, opt: js.Any): js.Any = js.native
-  def receiveUpdates(updateList: js.Array[_]): stdLib.Promise[_] = js.native
+  def receiveUpdates(updateList: js.Array[_]): js.Promise[_] = js.native
   def removeEvent(`type`: java.lang.String, fn: telebotLib.telebotMod.telebotNs.genericCb): scala.Boolean = js.native
   def removeMod(name: java.lang.String, fn: telebotLib.telebotMod.telebotNs.genericCb): scala.Boolean = js.native
-  def request(url: java.lang.String, form: js.Any, data: js.Any): stdLib.Promise[_] = js.native
+  def request(url: java.lang.String, form: js.Any, data: js.Any): js.Promise[_] = js.native
   def sendAction(chat_id: java.lang.String, action: java.lang.String): scala.Boolean = js.native
   def sendAction(chat_id: scala.Double, action: java.lang.String): scala.Boolean = js.native
   def sendAudio(chat_id: java.lang.String, file: java.lang.String): js.Any = js.native

@@ -20,7 +20,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotBloggerLib.gapiDotClientDotBloggerLibStrings.blogger,
     version: gapiDotClientDotBloggerLib.gapiDotClientDotBloggerLibStrings.v3
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotBloggerLib.gapiDotClientDotBloggerLibStrings.blogger,
     version: gapiDotClientDotBloggerLib.gapiDotClientDotBloggerLibStrings.v3,

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object sipDotJsMod {
   type DescriptionModifier = js.Function1[
     /* description */ stdLib.RTCSessionDescription, 
-    stdLib.Promise[stdLib.RTCSessionDescription]
+    js.Promise[stdLib.RTCSessionDescription]
   ]
   type IncomingMessage = Request
   type IncomingRequest = Request

@@ -18,14 +18,14 @@ object alarmsNsMembers extends js.Object {
        * Clears the alarm with the given name.
        * @param [name] The name of the alarm to clear. Defaults to the empty string.
        */
-  def clear(): stdLib.Promise[scala.Boolean] = js.native
+  def clear(): js.Promise[scala.Boolean] = js.native
   /**
        * Clears the alarm with the given name.
        * @param [name] The name of the alarm to clear. Defaults to the empty string.
        */
-  def clear(name: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def clear(name: java.lang.String): js.Promise[scala.Boolean] = js.native
   /** Clears all alarms. */
-  def clearAll(): stdLib.Promise[scala.Boolean] = js.native
+  def clearAll(): js.Promise[scala.Boolean] = js.native
   /* alarms functions */
   /**
        * Creates an alarm. After the delay is expired, the onAlarm event is fired. If there is another alarm with the
@@ -52,13 +52,13 @@ object alarmsNsMembers extends js.Object {
        * Retrieves details about the specified alarm.
        * @param [name] The name of the alarm to get. Defaults to the empty string.
        */
-  def get(): stdLib.Promise[Alarm] = js.native
+  def get(): js.Promise[Alarm] = js.native
   /**
        * Retrieves details about the specified alarm.
        * @param [name] The name of the alarm to get. Defaults to the empty string.
        */
-  def get(name: java.lang.String): stdLib.Promise[Alarm] = js.native
+  def get(name: java.lang.String): js.Promise[Alarm] = js.native
   /** Gets an array of all the alarms. */
-  def getAll(): stdLib.Promise[js.Array[Alarm]] = js.native
+  def getAll(): js.Promise[js.Array[Alarm]] = js.native
 }
 

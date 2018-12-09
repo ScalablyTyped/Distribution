@@ -13,7 +13,7 @@ class StatusList ()
 @JSImport("nodegit", "StatusList")
 @js.native
 object StatusList extends js.Object {
-  def create(repo: nodegitLib.repositoryMod.Repository): stdLib.Promise[nodegitLib.statusDashListMod.StatusList] = js.native
-  def create(repo: nodegitLib.repositoryMod.Repository, opts: nodegitLib.statusDashOptionsMod.StatusOptions): stdLib.Promise[nodegitLib.statusDashListMod.StatusList] = js.native
+  def create(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.statusDashListMod.StatusList] = js.native
+  def create(repo: nodegitLib.repositoryMod.Repository, opts: nodegitLib.statusDashOptionsMod.StatusOptions): js.Promise[nodegitLib.statusDashListMod.StatusList] = js.native
 }
 

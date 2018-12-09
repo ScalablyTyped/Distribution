@@ -145,11 +145,11 @@ object DynamoDBStreamsNs extends js.Object {
     /**
          * A unique identifier for the entity that made the call. For Time To Live, the principalId is "dynamodb.amazonaws.com".
          */
-    var PrincipalId: js.UndefOr[java.lang.String] = js.undefined
+    var PrincipalId: js.UndefOr[String] = js.undefined
     /**
          * The type of the identity. For Time To Live, the type is "Service".
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -201,7 +201,7 @@ object DynamoDBStreamsNs extends js.Object {
     /**
          * The region in which the GetRecords request was received.
          */
-    var awsRegion: js.UndefOr[java.lang.String] = js.undefined
+    var awsRegion: js.UndefOr[String] = js.undefined
     /**
          * The main body of the stream record, containing all of the DynamoDB-specific fields.
          */
@@ -209,7 +209,7 @@ object DynamoDBStreamsNs extends js.Object {
     /**
          * A globally unique identifier for the event that was recorded in this stream record.
          */
-    var eventID: js.UndefOr[java.lang.String] = js.undefined
+    var eventID: js.UndefOr[String] = js.undefined
     /**
          * The type of data modification that was performed on the DynamoDB table:    INSERT - a new item was added to the table.    MODIFY - one or more of an existing item's attributes were modified.    REMOVE - the item was deleted from the table  
          */
@@ -217,11 +217,11 @@ object DynamoDBStreamsNs extends js.Object {
     /**
          * The AWS service from which the stream record originated. For DynamoDB Streams, this is aws:dynamodb.
          */
-    var eventSource: js.UndefOr[java.lang.String] = js.undefined
+    var eventSource: js.UndefOr[String] = js.undefined
     /**
          * The version number of the stream record format. This number is updated whenever the structure of Record is modified. Client applications must not assume that eventVersion will remain at a particular value, as this number is subject to change at any time. In general, eventVersion will only increase as the low-level DynamoDB Streams API evolves.
          */
-    var eventVersion: js.UndefOr[java.lang.String] = js.undefined
+    var eventVersion: js.UndefOr[String] = js.undefined
     /**
          * Items that are deleted by the Time to Live process after expiration have the following fields:    Records[].userIdentity.type "Service"   Records[].userIdentity.principalId "dynamodb.amazonaws.com"  
          */
@@ -265,7 +265,7 @@ object DynamoDBStreamsNs extends js.Object {
     /**
          * A timestamp, in ISO 8601 format, for this stream. Note that LatestStreamLabel is not a unique identifier for the stream, because it is possible that a stream from another table might have the same timestamp. However, the combination of the following three elements is guaranteed to be unique:   the AWS customer ID.   the table name   the StreamLabel   
          */
-    var StreamLabel: js.UndefOr[java.lang.String] = js.undefined
+    var StreamLabel: js.UndefOr[String] = js.undefined
     /**
          * The DynamoDB table with which the stream is associated.
          */
@@ -297,7 +297,7 @@ object DynamoDBStreamsNs extends js.Object {
     /**
          * A timestamp, in ISO 8601 format, for this stream. Note that LatestStreamLabel is not a unique identifier for the stream, because it is possible that a stream from another table might have the same timestamp. However, the combination of the following three elements is guaranteed to be unique:   the AWS customer ID.   the table name   the StreamLabel   
          */
-    var StreamLabel: js.UndefOr[java.lang.String] = js.undefined
+    var StreamLabel: js.UndefOr[String] = js.undefined
     /**
          * Indicates the current status of the stream:    ENABLING - Streams is currently being enabled on the DynamoDB table.    ENABLED - the stream is enabled.    DISABLING - Streams is currently being disabled on the DynamoDB table.    DISABLED - the stream is disabled.  
          */

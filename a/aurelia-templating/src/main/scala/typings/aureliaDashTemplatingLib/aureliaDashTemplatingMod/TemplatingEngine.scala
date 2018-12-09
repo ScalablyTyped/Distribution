@@ -22,7 +22,7 @@ class TemplatingEngine protected () extends js.Object {
        * @return A promise for the resulting Controller or View. Consumers of this API
        * are responsible for enforcing the Controller/View lifecycle.
        */
-  def compose(context: CompositionContext): stdLib.Promise[View | Controller] = js.native
+  def compose(context: CompositionContext): js.Promise[View | Controller] = js.native
   /**
        * Configures the default animator.
        * @param animator The animator instance.

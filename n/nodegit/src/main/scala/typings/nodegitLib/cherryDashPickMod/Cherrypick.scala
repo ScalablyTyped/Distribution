@@ -15,7 +15,7 @@ object Cherrypick extends js.Object {
   /**
        * Cherrypick a commit and, changing the index and working directory
        */
-  def cherrypick(repo: nodegitLib.repositoryMod.Repository, commit: nodegitLib.commitMod.Commit): stdLib.Promise[scala.Double] = js.native
+  def cherrypick(repo: nodegitLib.repositoryMod.Repository, commit: nodegitLib.commitMod.Commit): js.Promise[scala.Double] = js.native
   /**
        * Cherrypick a commit and, changing the index and working directory
        */
@@ -23,7 +23,7 @@ object Cherrypick extends js.Object {
     repo: nodegitLib.repositoryMod.Repository,
     commit: nodegitLib.commitMod.Commit,
     options: nodegitLib.cherryDashPickDashOptionsMod.CherrypickOptions
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
   /**
        * Cherrypicks the given commit against "our" commit, producing an index that reflects the result of the cherrypick. The index is not backed by a repo.
        */
@@ -32,7 +32,7 @@ object Cherrypick extends js.Object {
     cherrypickCommit: nodegitLib.commitMod.Commit,
     ourCommit: nodegitLib.commitMod.Commit,
     mainline: scala.Double
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
   /**
        * Cherrypicks the given commit against "our" commit, producing an index that reflects the result of the cherrypick. The index is not backed by a repo.
        */
@@ -42,7 +42,7 @@ object Cherrypick extends js.Object {
     ourCommit: nodegitLib.commitMod.Commit,
     mainline: scala.Double,
     mergeOptions: nodegitLib.mergeDashOptionsMod.MergeOptions
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
   def initOptions(opts: nodegitLib.cherryDashPickDashOptionsMod.CherrypickOptions, version: scala.Double): scala.Double = js.native
 }
 

@@ -15,15 +15,15 @@ trait Include extends js.Object {
   @JSName("members")
   var members_Original: Members = js.native
   var ordered: Ordered = js.native
+  def apply(value: chaiLib.Object): Assertion = js.native
+  def apply(value: chaiLib.Object, message: java.lang.String): Assertion = js.native
   def apply(value: java.lang.String): Assertion = js.native
   def apply(value: java.lang.String, message: java.lang.String): Assertion = js.native
-  def apply(value: js.Object): Assertion = js.native
-  def apply(value: js.Object, message: java.lang.String): Assertion = js.native
   def apply(value: scala.Double): Assertion = js.native
   def apply(value: scala.Double, message: java.lang.String): Assertion = js.native
   def keys(keys: java.lang.String*): Assertion = js.native
+  def keys(keys: chaiLib.Object): Assertion = js.native
   def keys(keys: js.Array[_]): Assertion = js.native
-  def keys(keys: js.Object): Assertion = js.native
   def members(set: js.Array[_]): Assertion = js.native
   def members(set: js.Array[_], message: java.lang.String): Assertion = js.native
 }

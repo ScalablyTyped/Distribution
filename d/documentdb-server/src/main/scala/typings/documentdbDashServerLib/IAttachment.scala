@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ 
-trait IAttachment extends js.Object {
+
+trait IAttachment
+  extends stdLib.Object {
   /** MIME contentType of the attachment */
   var contentType: java.lang.String
   /** media link associated with the attachment content */

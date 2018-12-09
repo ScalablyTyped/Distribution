@@ -16,7 +16,7 @@ trait TableProps
   /**
      * Will be called when the row selection changes. It passes an array of selected indexes as first parameter so you can figure out changes in your local state.
      */
-  var onRowSelect: js.UndefOr[js.Function] = js.undefined
+  var onRowSelect: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * If true, each row will display a checkbox to allow the user to select that one row.
      * @default true

@@ -27,7 +27,7 @@ class GoogleEarthEnterpriseTerrainData protected ()
     descendantX: scala.Double,
     descendantY: scala.Double,
     descendantLevel: scala.Double
-  ): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.TerrainData] = js.native
+  ): js.Promise[cesiumLib.cesiumMod.CesiumNs.TerrainData] = js.native
   /* CompleteClass */
   override def wasCreatedByUpsampling(): scala.Boolean = js.native
 }

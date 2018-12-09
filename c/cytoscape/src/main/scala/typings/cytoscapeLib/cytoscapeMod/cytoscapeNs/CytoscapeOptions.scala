@@ -56,7 +56,7 @@ trait CytoscapeOptions extends js.Object {
            * An array of [[Elements]] specified as plain objects. For convenience, this option can alternatively be specified as a promise that resolves to the elements JSON.
            */
   var elements: js.UndefOr[
-    ElementsDefinition | js.Array[ElementDefinition] | stdLib.Promise[ElementsDefinition] | stdLib.Promise[js.Array[ElementDefinition]]
+    ElementsDefinition | js.Array[ElementDefinition] | js.Promise[ElementsDefinition] | js.Promise[js.Array[ElementDefinition]]
   ] = js.undefined
   ///////////////////////////////////////
   // rendering options:
@@ -151,7 +151,7 @@ trait CytoscapeOptions extends js.Object {
   /**
            * The [[Stylesheet]] used to style the graph. For convenience, this option can alternatively be specified as a promise that resolves to the stylesheet.
            */
-  var style: js.UndefOr[js.Array[Stylesheet] | stdLib.Promise[js.Array[Stylesheet]]] = js.undefined
+  var style: js.UndefOr[js.Array[Stylesheet] | js.Promise[js.Array[Stylesheet]]] = js.undefined
   /**
            * A boolean that indicates whether styling should be used.
            * For headless (i.e. outside the browser) environments,

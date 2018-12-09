@@ -24,33 +24,33 @@ trait LocalForage extends LocalForageDbMethods {
        * @param {LocalForageOptions} options
        */
   def createInstance(options: LocalForageOptions): LocalForage = js.native
-  def defineDriver(driver: LocalForageDriver): stdLib.Promise[scala.Unit] = js.native
-  def defineDriver(driver: LocalForageDriver, callback: js.Function0[scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def defineDriver(driver: LocalForageDriver): js.Promise[scala.Unit] = js.native
+  def defineDriver(driver: LocalForageDriver, callback: js.Function0[scala.Unit]): js.Promise[scala.Unit] = js.native
   def defineDriver(
     driver: LocalForageDriver,
     callback: js.Function0[scala.Unit],
     errorCallback: js.Function1[/* error */ js.Any, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def driver(): java.lang.String = js.native
   /**
        * Return a particular driver
        * @param {string} driver
        */
-  def getDriver(driver: java.lang.String): stdLib.Promise[LocalForageDriver] = js.native
-  def getSerializer(): stdLib.Promise[LocalForageSerializer] = js.native
-  def getSerializer(callback: js.Function1[/* serializer */ LocalForageSerializer, scala.Unit]): stdLib.Promise[LocalForageSerializer] = js.native
-  def ready(): stdLib.Promise[scala.Unit] = js.native
-  def ready(callback: js.Function1[/* error */ js.Any, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def getDriver(driver: java.lang.String): js.Promise[LocalForageDriver] = js.native
+  def getSerializer(): js.Promise[LocalForageSerializer] = js.native
+  def getSerializer(callback: js.Function1[/* serializer */ LocalForageSerializer, scala.Unit]): js.Promise[LocalForageSerializer] = js.native
+  def ready(): js.Promise[scala.Unit] = js.native
+  def ready(callback: js.Function1[/* error */ js.Any, scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
        * Force usage of a particular driver or drivers, if available.
        * @param {string} driver
        */
-  def setDriver(driver: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def setDriver(driver: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
        * Force usage of a particular driver or drivers, if available.
        * @param {string} driver
        */
-  def setDriver(driver: java.lang.String, callback: js.Function0[scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def setDriver(driver: java.lang.String, callback: js.Function0[scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
        * Force usage of a particular driver or drivers, if available.
        * @param {string} driver
@@ -59,17 +59,17 @@ trait LocalForage extends LocalForageDbMethods {
     driver: java.lang.String,
     callback: js.Function0[scala.Unit],
     errorCallback: js.Function1[/* error */ js.Any, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
        * Force usage of a particular driver or drivers, if available.
        * @param {string} driver
        */
-  def setDriver(driver: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def setDriver(driver: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   /**
        * Force usage of a particular driver or drivers, if available.
        * @param {string} driver
        */
-  def setDriver(driver: js.Array[java.lang.String], callback: js.Function0[scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def setDriver(driver: js.Array[java.lang.String], callback: js.Function0[scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
        * Force usage of a particular driver or drivers, if available.
        * @param {string} driver
@@ -78,7 +78,7 @@ trait LocalForage extends LocalForageDbMethods {
     driver: js.Array[java.lang.String],
     callback: js.Function0[scala.Unit],
     errorCallback: js.Function1[/* error */ js.Any, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def supports(driverName: java.lang.String): scala.Boolean = js.native
 }
 

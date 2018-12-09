@@ -28,7 +28,7 @@ object Attr extends js.Object {
     flags: scala.Double,
     path: java.lang.String,
     name: java.lang.String
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /**
        * @param repo - The repository containing the path.
        * @param flags - A combination of GIT_ATTR_CHECK... flags.

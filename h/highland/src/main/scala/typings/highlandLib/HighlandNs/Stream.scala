@@ -862,7 +862,7 @@ trait Stream[R]
        *     // parameter result will be [1,2,3,4]
        * });
        */
-  def toPromise(promiseConstructor: stdLib.PromiseConstructor): stdLib.PromiseLike[R] = js.native
+  def toPromise(promiseConstructor: stdLib.PromiseConstructor): js.Thenable[R] = js.native
   /**
        * Filters out all duplicate values from the stream and keeps only the first
        * occurence of each value, using === to define equality.

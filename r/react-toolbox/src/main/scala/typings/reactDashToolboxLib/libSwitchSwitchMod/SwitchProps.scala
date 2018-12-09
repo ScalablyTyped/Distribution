@@ -29,15 +29,15 @@ trait SwitchProps
   /**
      * Callback function that is fired when when the switch is blurred.
      */
-  var onBlur: js.UndefOr[js.Function] = js.undefined
+  var onBlur: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that is fired when the component's value changes.
      */
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that is fired when the switch is focused.
      */
-  var onFocus: js.UndefOr[js.Function] = js.undefined
+  var onFocus: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Classnames object defining the component style.
      */

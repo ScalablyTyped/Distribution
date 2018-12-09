@@ -100,7 +100,7 @@ trait PushNotificationIOSStatic extends js.Object {
        * This method returns a promise that resolves to either the notification
        * object if the app was launched by a push notification, or `null` otherwise.
        */
-  def getInitialNotification(): stdLib.Promise[PushNotification] = js.native
+  def getInitialNotification(): js.Promise[PushNotification] = js.native
   /**
        * Gets the local notifications that are currently scheduled.
        */
@@ -136,7 +136,7 @@ trait PushNotificationIOSStatic extends js.Object {
        * Requests all notification permissions from iOS, prompting the user's
        * dialog box.
        */
-  def requestPermissions(): scala.Unit = js.native
+  def requestPermissions(): js.Promise[PushNotificationPermissions] = js.native
   /**
        * Requests all notification permissions from iOS, prompting the user's
        * dialog box.
@@ -146,13 +146,13 @@ trait PushNotificationIOSStatic extends js.Object {
        * Requests all notification permissions from iOS, prompting the user's
        * dialog box.
        */
-  def requestPermissions(permissions: PushNotificationPermissions): stdLib.Promise[PushNotificationPermissions] = js.native
+  def requestPermissions(permissions: PushNotificationPermissions): js.Promise[PushNotificationPermissions] = js.native
   /**
        * Requests all notification permissions from iOS, prompting the user's
        * dialog box.
        */
   @JSName("requestPermissions")
-  def requestPermissions_Promise(): stdLib.Promise[PushNotificationPermissions] = js.native
+  def requestPermissions_Unit(): scala.Unit = js.native
   /**
        * Schedules the localNotification for future presentation.
        * details is an object containing:

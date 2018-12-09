@@ -14,7 +14,7 @@ trait Client extends js.Object {
        * Add global API Keys
        * https://github.com/algolia/algoliasearch-client-js#add-user-key---addapikey
        */
-  def addApiKey(scopes: js.Array[java.lang.String]): stdLib.Promise[Task] = js.native
+  def addApiKey(scopes: js.Array[java.lang.String]): js.Promise[Task] = js.native
   /**
        * Add global API Keys
        * https://github.com/algolia/algoliasearch-client-js#add-user-key---addapikey
@@ -27,7 +27,7 @@ trait Client extends js.Object {
        * Add global API Keys
        * https://github.com/algolia/algoliasearch-client-js#add-user-key---addapikey
        */
-  def addApiKey(scopes: js.Array[java.lang.String], options: ApiKeyOptions): stdLib.Promise[Task] = js.native
+  def addApiKey(scopes: js.Array[java.lang.String], options: ApiKeyOptions): js.Promise[Task] = js.native
   /**
        * Add global API Key
        * https://github.com/algolia/algoliasearch-client-js#add-user-key---addapikey
@@ -41,7 +41,7 @@ trait Client extends js.Object {
        * Perform multiple operations with one API call to reduce latency
        * https://github.com/algolia/algoliasearch-client-js#custom-batch---batch
        */
-  def batch(action: js.Array[Action]): stdLib.Promise[Task] = js.native
+  def batch(action: js.Array[Action]): js.Promise[Task] = js.native
   /**
        * Perform multiple operations with one API call to reduce latency
        * https://github.com/algolia/algoliasearch-client-js#custom-batch---batch
@@ -56,7 +56,7 @@ trait Client extends js.Object {
        * Copy settings of an index from a specific index to a new one
        * https://github.com/algolia/algoliasearch-client-js#copy-index---copyindex
        */
-  def copyIndex(from: java.lang.String, to: java.lang.String): stdLib.Promise[Task] = js.native
+  def copyIndex(from: java.lang.String, to: java.lang.String): js.Promise[Task] = js.native
   /**
        * Copy an index from a specific index to a new one
        * https://github.com/algolia/algoliasearch-client-js#copy-index---copyindex
@@ -76,7 +76,7 @@ trait Client extends js.Object {
     scope: js.Array[
       algoliasearchLib.algoliasearchLibStrings.settings | algoliasearchLib.algoliasearchLibStrings.synonyms | algoliasearchLib.algoliasearchLibStrings.rules
     ]
-  ): stdLib.Promise[Task] = js.native
+  ): js.Promise[Task] = js.native
   /**
        * Copy settings of an index from a specific index to a new one
        * https://github.com/algolia/algoliasearch-client-js#copy-index---copyindex
@@ -93,7 +93,7 @@ trait Client extends js.Object {
        * Deletes a global key
        * https://github.com/algolia/algoliasearch-client-js#delete-user-key---deleteapikey
        */
-  def deleteApiKey(key: java.lang.String): stdLib.Promise[Task] = js.native
+  def deleteApiKey(key: java.lang.String): js.Promise[Task] = js.native
   /**
        * Deletes a global key
        * https://github.com/algolia/algoliasearch-client-js#delete-user-key---deleteapikey
@@ -103,7 +103,7 @@ trait Client extends js.Object {
        * Delete a specific index
        * https://github.com/algolia/algoliasearch-client-js#delete-index---deleteindex
        */
-  def deleteIndex(name: java.lang.String): stdLib.Promise[Task] = js.native
+  def deleteIndex(name: java.lang.String): js.Promise[Task] = js.native
   /**
        * Delete a specific index
        * https://github.com/algolia/algoliasearch-client-js#delete-index---deleteindex
@@ -123,7 +123,7 @@ trait Client extends js.Object {
        * Gets the rights of a global key
        * https://github.com/algolia/algoliasearch-client-js#update-user-key---updateapikey
        */
-  def getApiKey(key: java.lang.String): stdLib.Promise[_] = js.native
+  def getApiKey(key: java.lang.String): js.Promise[_] = js.native
   /**
        * Gets the rights of a global key
        * https://github.com/algolia/algoliasearch-client-js#update-user-key---updateapikey
@@ -137,7 +137,7 @@ trait Client extends js.Object {
        * Get 1000 last events
        * https://github.com/algolia/algoliasearch-client-js#get-logs---getlogs
        */
-  def getLogs(options: LogsOptions): stdLib.Promise[algoliasearchLib.Anon_Logs] = js.native
+  def getLogs(options: LogsOptions): js.Promise[algoliasearchLib.Anon_Logs] = js.native
   /**
        * Get 1000 last events
        * https://github.com/algolia/algoliasearch-client-js#get-logs---getlogs
@@ -155,7 +155,7 @@ trait Client extends js.Object {
        * Lists global API Keys
        * https://github.com/algolia/algoliasearch-client-js#backup--export-an-index---browse
        */
-  def listApiKeys(): stdLib.Promise[_] = js.native
+  def listApiKeys(): js.Promise[_] = js.native
   /**
        * Lists global API Keys
        * https://github.com/algolia/algoliasearch-client-js#backup--export-an-index---browse
@@ -165,7 +165,7 @@ trait Client extends js.Object {
        * List all your indices along with their associated information (number of entries, disk size, etc.)
        * https://github.com/algolia/algoliasearch-client-js#list-indices---listindexes
        */
-  def listIndexes(): stdLib.Promise[_] = js.native
+  def listIndexes(): js.Promise[_] = js.native
   /**
        * List all your indices along with their associated information (number of entries, disk size, etc.)
        * https://github.com/algolia/algoliasearch-client-js#list-indices---listindexes
@@ -175,7 +175,7 @@ trait Client extends js.Object {
        * Move index to a new one (and will overwrite the original one)
        * https://github.com/algolia/algoliasearch-client-js#move-index---moveindex
        */
-  def moveIndex(from: java.lang.String, to: java.lang.String): stdLib.Promise[Task] = js.native
+  def moveIndex(from: java.lang.String, to: java.lang.String): js.Promise[Task] = js.native
   /**
        * Move index to a new one (and will overwrite the original one)
        * https://github.com/algolia/algoliasearch-client-js#move-index---moveindex
@@ -189,7 +189,7 @@ trait Client extends js.Object {
        * Query on multiple index
        * https://github.com/algolia/algoliasearch-client-js#multiple-queries---multiplequeries
        */
-  def search(queries: js.Array[algoliasearchLib.Anon_IndexNameQuery]): stdLib.Promise[MultiResponse] = js.native
+  def search(queries: js.Array[algoliasearchLib.Anon_IndexNameQuery]): js.Promise[MultiResponse] = js.native
   /**
        * Query on multiple index
        * https://github.com/algolia/algoliasearch-client-js#multiple-queries---multiplequeries
@@ -201,7 +201,7 @@ trait Client extends js.Object {
   /**
        * Query for facet values of a specific facet
        */
-  def searchForFacetValues(queries: js.Array[algoliasearchLib.Anon_IndexName]): stdLib.Promise[
+  def searchForFacetValues(queries: js.Array[algoliasearchLib.Anon_IndexName]): js.Promise[
     js.Array[
       algoliasearchLib.algoliasearchMod.algoliasearchNs.SearchForFacetValuesNs.Response
     ]
@@ -218,7 +218,7 @@ trait Client extends js.Object {
        * Update global API key
        * https://github.com/algolia/algoliasearch-client-js#update-user-key---updateapikey
        */
-  def updateApiKey(key: java.lang.String, scopes: js.Array[java.lang.String]): stdLib.Promise[Task] = js.native
+  def updateApiKey(key: java.lang.String, scopes: js.Array[java.lang.String]): js.Promise[Task] = js.native
   /**
        * Update global API key
        * https://github.com/algolia/algoliasearch-client-js#update-user-key---updateapikey
@@ -232,7 +232,7 @@ trait Client extends js.Object {
        * Update global API key
        * https://github.com/algolia/algoliasearch-client-js#update-user-key---updateapikey
        */
-  def updateApiKey(key: java.lang.String, scopes: js.Array[java.lang.String], options: ApiKeyOptions): stdLib.Promise[Task] = js.native
+  def updateApiKey(key: java.lang.String, scopes: js.Array[java.lang.String], options: ApiKeyOptions): js.Promise[Task] = js.native
   /**
        * Update global API key
        * https://github.com/algolia/algoliasearch-client-js#update-user-key---updateapikey

@@ -26,7 +26,7 @@ trait Options extends js.Object {
     js.Function2[
       /* uri */ java.lang.String, 
       /* cb */ js.UndefOr[js.Function2[/* err */ stdLib.Error, /* schema */ js.Object, scala.Unit]], 
-      stdLib.PromiseLike[js.Object | scala.Boolean]
+      js.Thenable[js.Object | scala.Boolean]
     ]
   ] = js.undefined
   var logger: js.UndefOr[CustomLogger | ajvLib.ajvLibNumbers.`false`] = js.undefined

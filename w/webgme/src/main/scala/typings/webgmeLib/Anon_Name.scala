@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Name extends js.Object {
-  def apply(name: webgmeLib.GmeCommonNs.Name, data: webgmeLib.GmeCommonNs.Payload): stdLib.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  def apply(name: webgmeLib.GmeCommonNs.Name, data: webgmeLib.GmeCommonNs.Payload): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   def apply(
     name: webgmeLib.GmeCommonNs.Name,
     data: webgmeLib.GmeCommonNs.Payload,

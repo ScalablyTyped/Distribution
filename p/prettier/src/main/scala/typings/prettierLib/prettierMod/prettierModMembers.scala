@@ -15,11 +15,11 @@ object prettierModMembers extends js.Object {
   def format(source: java.lang.String): java.lang.String = js.native
   def format(source: java.lang.String, options: Options): java.lang.String = js.native
   def formatWithCursor(source: java.lang.String, options: CursorOptions): CursorResult = js.native
-  def getFileInfo(filePath: java.lang.String): stdLib.Promise[FileInfoResult] = js.native
-  def getFileInfo(filePath: java.lang.String, options: FileInfoOptions): stdLib.Promise[FileInfoResult] = js.native
+  def getFileInfo(filePath: java.lang.String): js.Promise[FileInfoResult] = js.native
+  def getFileInfo(filePath: java.lang.String, options: FileInfoOptions): js.Promise[FileInfoResult] = js.native
   def getSupportInfo(): SupportInfo = js.native
   def getSupportInfo(version: java.lang.String): SupportInfo = js.native
-  def resolveConfig(filePath: java.lang.String): stdLib.Promise[scala.Null | Options] = js.native
-  def resolveConfig(filePath: java.lang.String, options: ResolveConfigOptions): stdLib.Promise[scala.Null | Options] = js.native
+  def resolveConfig(filePath: java.lang.String): js.Promise[scala.Null | Options] = js.native
+  def resolveConfig(filePath: java.lang.String, options: ResolveConfigOptions): js.Promise[scala.Null | Options] = js.native
 }
 

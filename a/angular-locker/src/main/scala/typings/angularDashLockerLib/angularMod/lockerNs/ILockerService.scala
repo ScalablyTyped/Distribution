@@ -178,7 +178,7 @@ trait ILockerService extends js.Object {
               *
               * @param  {Mixed}  putFunction    The default to pass to function if doesn't already exist
               */
-  def put(putFunction: js.Function): ILockerService | scala.Boolean = js.native
+  def put(putFunction: angularLib.angularMod.Global.Function): ILockerService | scala.Boolean = js.native
   /**
               * Check browser support
               *

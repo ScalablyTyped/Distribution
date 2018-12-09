@@ -16,7 +16,7 @@ trait Anon_NodeOptions extends js.Object {
       /* finished */ webgmeLib.GmeCommonNs.VoidFn, 
       scala.Unit
     ]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   // takes a callback & returning *no* promise
   def apply(
     node: webgmeLib.CoreNs.Node,

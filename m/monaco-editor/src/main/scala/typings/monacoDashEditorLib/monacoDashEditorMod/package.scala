@@ -11,5 +11,5 @@ package object monacoDashEditorMod {
     /* thisArg */ js.UndefOr[js.Any], 
     IDisposable
   ]
-  type Thenable[T] = stdLib.PromiseLike[T]
+  type Thenable[T] = js.Thenable[T]
 }

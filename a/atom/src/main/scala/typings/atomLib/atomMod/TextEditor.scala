@@ -753,12 +753,12 @@ class TextEditor () extends js.Object {
        *  Saves the editor's text buffer.
        *  See TextBuffer::save for more details.
        */
-  def save(): stdLib.Promise[scala.Unit] = js.native
+  def save(): js.Promise[scala.Unit] = js.native
   /**
        *  Saves the editor's text buffer as the given path.
        *  See TextBuffer::saveAs for more details.
        */
-  def saveAs(filePath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def saveAs(filePath: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
        *  Scan regular expression matches in the entire buffer, calling the given
        *  iterator function on each match.

@@ -12,11 +12,20 @@ trait IResourceArrayMethod[T] extends js.Object {
   def apply(): IResourceArray[T] = js.native
   def apply(params: js.Object): IResourceArray[T] = js.native
   def apply(params: js.Object, data: js.Object): IResourceArray[T] = js.native
-  def apply(params: js.Object, data: js.Object, success: js.Function): IResourceArray[T] = js.native
-  def apply(params: js.Object, data: js.Object, success: js.Function, error: js.Function): IResourceArray[T] = js.native
-  def apply(params: js.Object, success: js.Function): IResourceArray[T] = js.native
-  def apply(params: js.Object, success: js.Function, error: js.Function): IResourceArray[T] = js.native
-  def apply(success: js.Function): IResourceArray[T] = js.native
-  def apply(success: js.Function, error: js.Function): IResourceArray[T] = js.native
+  def apply(params: js.Object, data: js.Object, success: angularLib.angularMod.Global.Function): IResourceArray[T] = js.native
+  def apply(
+    params: js.Object,
+    data: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): IResourceArray[T] = js.native
+  def apply(params: js.Object, success: angularLib.angularMod.Global.Function): IResourceArray[T] = js.native
+  def apply(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): IResourceArray[T] = js.native
+  def apply(success: angularLib.angularMod.Global.Function): IResourceArray[T] = js.native
+  def apply(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): IResourceArray[T] = js.native
 }
 

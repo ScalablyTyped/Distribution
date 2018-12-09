@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AngularFireArrayService extends js.Object {
   @JSName("$extend")
-  def $extend(ChildClass: js.Object): js.Object = js.native
+  def $extend(ChildClass: coreDashJsLib.Object): coreDashJsLib.Object = js.native
   @JSName("$extend")
-  def $extend(ChildClass: js.Object, methods: js.Object): js.Object = js.native
+  def $extend(ChildClass: coreDashJsLib.Object, methods: coreDashJsLib.Object): coreDashJsLib.Object = js.native
   def apply(firebase: js.Any): AngularFireArray = js.native
 }
 

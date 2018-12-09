@@ -13,7 +13,7 @@ trait GoogleEarthEnterpriseMetadata extends js.Object {
   var negativeAltitudeThreshold: scala.Double
   var protoImagery: scala.Boolean
   val proxy: Proxy
-  val readyPromise: stdLib.Promise[scala.Boolean]
+  val readyPromise: js.Promise[scala.Boolean]
   val resource: Resource
   var terrainPresent: scala.Boolean
   val url: java.lang.String

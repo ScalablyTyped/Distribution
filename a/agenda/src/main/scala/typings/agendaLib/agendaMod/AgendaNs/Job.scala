@@ -57,7 +57,7 @@ trait Job[T /* <: JobAttributesData */] extends js.Object {
   /**
            * Removes the job from the database and cancels the job.
            */
-  def remove(): stdLib.Promise[scala.Unit] = js.native
+  def remove(): js.Promise[scala.Unit] = js.native
   /**
            * Specifies a time when the job should repeat. [Possible values](https://github.com/matthewmueller/date#examples).
            * @param time
@@ -98,11 +98,11 @@ trait Job[T /* <: JobAttributesData */] extends js.Object {
   /**
            * Runs the given job and calls callback(err, job) upon completion. Normally you never need to call this manually
            */
-  def run(): stdLib.Promise[this.type] = js.native
+  def run(): js.Promise[this.type] = js.native
   /**
            * Saves the job into the database.
            */
-  def save(): stdLib.Promise[this.type] = js.native
+  def save(): js.Promise[this.type] = js.native
   /**
            * Specifies the next time at which the job should run.
            * @param time The next time at which the job should run.
@@ -117,7 +117,7 @@ trait Job[T /* <: JobAttributesData */] extends js.Object {
            * Resets the lock on the job. Useful to indicate that the job hasn't timed out when you have very long running
            * jobs.
            */
-  def touch(): stdLib.Promise[this.type] = js.native
+  def touch(): js.Promise[this.type] = js.native
   /**
            * Ensure that only one instance of this job exists with the specified properties
            * @param value The properties associated with the job that must be unqiue.

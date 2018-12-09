@@ -48,13 +48,13 @@ trait IShadowGenerator extends js.Object {
            * @param options Sets of optional options forcing the compilation with different modes
            * @returns A promise that resolves when the compilation completes
            */
-  def forceCompilationAsync(): stdLib.Promise[scala.Unit] = js.native
+  def forceCompilationAsync(): js.Promise[scala.Unit] = js.native
   /**
            * Forces all the attached effect to compile to enable rendering only once ready vs. lazyly compiling effects.
            * @param options Sets of optional options forcing the compilation with different modes
            * @returns A promise that resolves when the compilation completes
            */
-  def forceCompilationAsync(options: stdLib.Partial[babylonjsLib.Anon_UseInstances]): stdLib.Promise[scala.Unit] = js.native
+  def forceCompilationAsync(options: stdLib.Partial[babylonjsLib.Anon_UseInstances]): js.Promise[scala.Unit] = js.native
   /**
            * Gets the main RTT containing the shadow map (usually storing depth from the light point of view).
            * @returns The render target texture if present otherwise, null

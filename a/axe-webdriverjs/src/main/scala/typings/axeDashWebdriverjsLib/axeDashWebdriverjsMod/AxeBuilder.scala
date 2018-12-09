@@ -11,7 +11,7 @@ trait AxeBuilder extends js.Object {
        * Perform analysis and retrieve results.
        * @param callback   Function to execute when analysis completes.
        */
-  def analyze(callback: js.Function1[/* results */ AxeAnalysis, scala.Unit]): stdLib.Promise[AxeAnalysis] = js.native
+  def analyze(callback: js.Function1[/* results */ AxeAnalysis, scala.Unit]): js.Promise[AxeAnalysis] = js.native
   /**
        * Configures aXe before running analyze.
        *

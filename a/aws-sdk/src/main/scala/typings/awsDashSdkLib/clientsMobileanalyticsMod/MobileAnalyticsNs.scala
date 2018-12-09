@@ -57,11 +57,11 @@ object MobileAnalyticsNs extends js.Object {
     /**
          * The client context including the client ID, app title, app version and package name.
          */
-    var clientContext: java.lang.String
+    var clientContext: String
     /**
          * The encoding used for the client context.
          */
-    var clientContextEncoding: js.UndefOr[java.lang.String] = js.undefined
+    var clientContextEncoding: js.UndefOr[String] = js.undefined
     /**
          * An array of Event JSON objects
          */

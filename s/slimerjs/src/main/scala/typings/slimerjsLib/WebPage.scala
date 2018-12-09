@@ -50,9 +50,9 @@ trait WebPage extends js.Object {
   def childFramesName(): java.lang.String = js.native
     // DEPRECATED
   def clearCookies(): scala.Unit = js.native
-  def close(): scala.Unit = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   @JSName("close")
-  def close_Promise(): stdLib.Promise[scala.Unit] = js.native
+  def close_Unit(): scala.Unit = js.native
   // Callback triggers
   def closing(closingPage: WebPage): scala.Unit = js.native
   def currentFrameName(): java.lang.String = js.native
@@ -71,12 +71,12 @@ trait WebPage extends js.Object {
   def go(index: scala.Double): scala.Unit = js.native
   def goBack(): scala.Unit = js.native
   def goForward(): scala.Unit = js.native
-  def includeJs(url: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def includeJs(url: java.lang.String): js.Promise[scala.Unit] = js.native
   def includeJs(url: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def initialized(): scala.Unit = js.native
-  def injectJs(filename: java.lang.String): scala.Boolean = js.native
+  def injectJs(filename: java.lang.String): js.Promise[scala.Boolean] = js.native
   @JSName("injectJs")
-  def injectJs_Promise(filename: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def injectJs_Boolean(filename: java.lang.String): scala.Boolean = js.native
   def javaScriptAlertSent(msg: java.lang.String): scala.Unit = js.native
   def javaScriptConsoleMessageSent(msg: java.lang.String): scala.Unit = js.native
   def javaScriptConsoleMessageSent(msg: java.lang.String, lineNum: scala.Double): scala.Unit = js.native
@@ -106,44 +106,44 @@ trait WebPage extends js.Object {
   def onResourceRequested(requestData: ResourceRequest, networkRequest: NetworkRequest): js.Any = js.native
   def onUrlChanged(targetUrl: java.lang.String): js.Any = js.native
   // open(url: string): Promise<string>;
-  def open(url: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def open(url: java.lang.String): js.Promise[java.lang.String] = js.native
   // open(url: string): Promise<string>;
-  def open(url: java.lang.String, callback: js.Function1[/* status */ java.lang.String, _]): stdLib.Promise[java.lang.String] = js.native
+  def open(url: java.lang.String, callback: js.Function1[/* status */ java.lang.String, _]): js.Promise[java.lang.String] = js.native
   def open(
     url: java.lang.String,
     method: java.lang.String,
     callback: js.Function1[/* status */ java.lang.String, _]
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
    // maybe data is missing
-  def open(url: java.lang.String, method: java.lang.String, data: js.Any): stdLib.Promise[java.lang.String] = js.native
+  def open(url: java.lang.String, method: java.lang.String, data: js.Any): js.Promise[java.lang.String] = js.native
    // maybe data is missing
   def open(
     url: java.lang.String,
     method: java.lang.String,
     data: js.Any,
     callback: js.Function1[/* status */ java.lang.String, _]
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   def open(
     url: java.lang.String,
     method: java.lang.String,
     data: js.Any,
     headers: js.Any,
     callback: js.Function1[/* status */ java.lang.String, _]
-  ): stdLib.Promise[java.lang.String] = js.native
-  def openUrl(url: java.lang.String, httpConf: HttpConf, settings: js.Any): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
+  def openUrl(url: java.lang.String, httpConf: HttpConf, settings: js.Any): js.Promise[java.lang.String] = js.native
   def rawPageCreated(newPage: WebPage): scala.Unit = js.native
    // :TODO: elaborate this when documentation improves
   def release(): scala.Unit = js.native
     // DEPRECATED
   def reload(): scala.Unit = js.native
-  // render(filename: string): Promise<void>;
-  def render(filename: java.lang.String): scala.Unit = js.native
-  def render(filename: java.lang.String, options: Anon_Quality): stdLib.Promise[scala.Unit] = js.native
-  def renderBase64(format: java.lang.String): java.lang.String = js.native
+  def render(filename: java.lang.String): js.Promise[scala.Unit] = js.native
+  def render(filename: java.lang.String, options: Anon_Quality): js.Promise[scala.Unit] = js.native
+  def renderBase64(`type`: java.lang.String): js.Promise[java.lang.String] = js.native
   @JSName("renderBase64")
-  def renderBase64_Promise(`type`: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def renderBase64_String(format: java.lang.String): java.lang.String = js.native
+  // render(filename: string): Promise<void>;
   @JSName("render")
-  def render_Promise(filename: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def render_Unit(filename: java.lang.String): scala.Unit = js.native
   def resourceReceived(response: ResourceResponse): scala.Unit = js.native
   def resourceRequested(requestData: ResourceRequest, networkRequest: NetworkRequest): scala.Unit = js.native
   def sendEvent(keyboardEventType: java.lang.String, keyOrKeys: js.Any): scala.Unit = js.native
@@ -156,39 +156,39 @@ trait WebPage extends js.Object {
     bNull: js.Any,
     modifier: scala.Double
   ): scala.Unit = js.native
-  def sendEvent(keyboardEventType: java.lang.String, key: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def sendEvent(keyboardEventType: java.lang.String, key: java.lang.String): js.Promise[scala.Unit] = js.native
   def sendEvent(
     keyboardEventType: java.lang.String,
     key: java.lang.String,
     null1: scala.Null,
     null2: scala.Null,
     modifier: scala.Double
-  ): stdLib.Promise[scala.Unit] = js.native
-  def sendEvent(mouseEventType: java.lang.String): scala.Unit = js.native
-  def sendEvent(mouseEventType: java.lang.String, mouseX: scala.Double): scala.Unit = js.native
-  def sendEvent(mouseEventType: java.lang.String, mouseX: scala.Double, mouseY: scala.Double): scala.Unit = js.native
+  ): js.Promise[scala.Unit] = js.native
+  def sendEvent(mouseEventType: java.lang.String): js.Promise[scala.Unit] = js.native
+  def sendEvent(mouseEventType: java.lang.String, mouseX: scala.Double): js.Promise[scala.Unit] = js.native
+  def sendEvent(mouseEventType: java.lang.String, mouseX: scala.Double, mouseY: scala.Double): js.Promise[scala.Unit] = js.native
   def sendEvent(
     mouseEventType: java.lang.String,
     mouseX: scala.Double,
     mouseY: scala.Double,
     button: java.lang.String
-  ): scala.Unit = js.native
+  ): js.Promise[scala.Unit] = js.native
   @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def sendEvent_Unit(mouseEventType: java.lang.String): scala.Unit = js.native
   @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: java.lang.String, mouseX: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def sendEvent_Unit(mouseEventType: java.lang.String, mouseX: scala.Double): scala.Unit = js.native
   @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: java.lang.String, mouseX: scala.Double, mouseY: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def sendEvent_Unit(mouseEventType: java.lang.String, mouseX: scala.Double, mouseY: scala.Double): scala.Unit = js.native
   @JSName("sendEvent")
-  def sendEvent_Promise(
+  def sendEvent_Unit(
     mouseEventType: java.lang.String,
     mouseX: scala.Double,
     mouseY: scala.Double,
     button: java.lang.String
-  ): stdLib.Promise[scala.Unit] = js.native
-  def setContent(content: java.lang.String, url: java.lang.String): scala.Unit = js.native
+  ): scala.Unit = js.native
+  def setContent(html: java.lang.String, url: java.lang.String): js.Promise[java.lang.String] = js.native
   @JSName("setContent")
-  def setContent_Promise(html: java.lang.String, url: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def setContent_Unit(content: java.lang.String, url: java.lang.String): scala.Unit = js.native
   def stop(): scala.Unit = js.native
   // switchToFrame(framePosition: number): void;
   def switchToChildFrame(framePosOrName: java.lang.String): scala.Unit = js.native

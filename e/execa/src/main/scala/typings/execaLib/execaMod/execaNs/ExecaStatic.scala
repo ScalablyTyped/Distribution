@@ -63,44 +63,44 @@ trait ExecaStatic extends js.Object {
            * Think of this as a mix of `child_process.execFile` and `child_process.spawn`.
            * @returns a `child_process` instance which is enhanced to also be a `Promise` for `stderr`.
            */
-  def stderr(file: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def stderr(file: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
            * Execute a file.
            *
            * Think of this as a mix of `child_process.execFile` and `child_process.spawn`.
            * @returns a `child_process` instance which is enhanced to also be a `Promise` for `stderr`.
            */
-  def stderr(file: java.lang.String, args: js.Array[java.lang.String]): stdLib.Promise[java.lang.String] = js.native
+  def stderr(file: java.lang.String, args: js.Array[java.lang.String]): js.Promise[java.lang.String] = js.native
   /**
            * Execute a file.
            *
            * Think of this as a mix of `child_process.execFile` and `child_process.spawn`.
            * @returns a `child_process` instance which is enhanced to also be a `Promise` for `stderr`.
            */
-  def stderr(file: java.lang.String, args: js.Array[java.lang.String], options: Options): stdLib.Promise[java.lang.String] = js.native
-  def stderr(file: java.lang.String, options: Options): stdLib.Promise[java.lang.String] = js.native
+  def stderr(file: java.lang.String, args: js.Array[java.lang.String], options: Options): js.Promise[java.lang.String] = js.native
+  def stderr(file: java.lang.String, options: Options): js.Promise[java.lang.String] = js.native
   /**
            * Execute a file.
            *
            * Think of this as a mix of `child_process.execFile` and `child_process.spawn`.
            * @returns a `child_process` instance which is enhanced to also be a `Promise` for `stdout`.
            */
-  def stdout(file: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def stdout(file: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
            * Execute a file.
            *
            * Think of this as a mix of `child_process.execFile` and `child_process.spawn`.
            * @returns a `child_process` instance which is enhanced to also be a `Promise` for `stdout`.
            */
-  def stdout(file: java.lang.String, args: js.Array[java.lang.String]): stdLib.Promise[java.lang.String] = js.native
+  def stdout(file: java.lang.String, args: js.Array[java.lang.String]): js.Promise[java.lang.String] = js.native
   /**
            * Execute a file.
            *
            * Think of this as a mix of `child_process.execFile` and `child_process.spawn`.
            * @returns a `child_process` instance which is enhanced to also be a `Promise` for `stdout`.
            */
-  def stdout(file: java.lang.String, args: js.Array[java.lang.String], options: Options): stdLib.Promise[java.lang.String] = js.native
-  def stdout(file: java.lang.String, options: Options): stdLib.Promise[java.lang.String] = js.native
+  def stdout(file: java.lang.String, args: js.Array[java.lang.String], options: Options): js.Promise[java.lang.String] = js.native
+  def stdout(file: java.lang.String, options: Options): js.Promise[java.lang.String] = js.native
   /**
            * Execute a file synchronously.
            *

@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object reduxDashRecycleMod extends js.Object {
   def default[A](
-    reducer: reduxLib.reduxMod.Reducer[reduxLib.reduxMod.AnyAction, reduxLib.reduxMod.AnyAction],
+    reducer: reduxLib.reduxMod.Reducer[A, reduxLib.reduxMod.AnyAction],
     actions: js.Array[java.lang.String]
-  ): reduxLib.reduxMod.Reducer[reduxLib.reduxMod.AnyAction, reduxLib.reduxMod.AnyAction] = js.native
+  ): reduxLib.reduxMod.Reducer[A, reduxLib.reduxMod.AnyAction] = js.native
   def default[A](
-    reducer: reduxLib.reduxMod.Reducer[reduxLib.reduxMod.AnyAction, reduxLib.reduxMod.AnyAction],
+    reducer: reduxLib.reduxMod.Reducer[A, reduxLib.reduxMod.AnyAction],
     actions: js.Array[java.lang.String],
     initialState: A
-  ): reduxLib.reduxMod.Reducer[reduxLib.reduxMod.AnyAction, reduxLib.reduxMod.AnyAction] = js.native
+  ): reduxLib.reduxMod.Reducer[A, reduxLib.reduxMod.AnyAction] = js.native
   def default[A](
-    reducer: reduxLib.reduxMod.Reducer[reduxLib.reduxMod.AnyAction, reduxLib.reduxMod.AnyAction],
+    reducer: reduxLib.reduxMod.Reducer[A, reduxLib.reduxMod.AnyAction],
     actions: js.Array[java.lang.String],
-    initialState: reduxLib.reduxMod.Reducer[reduxLib.reduxMod.AnyAction, reduxLib.reduxMod.AnyAction]
-  ): reduxLib.reduxMod.Reducer[reduxLib.reduxMod.AnyAction, reduxLib.reduxMod.AnyAction] = js.native
+    initialState: reduxLib.reduxMod.Reducer[A, reduxLib.reduxMod.AnyAction]
+  ): reduxLib.reduxMod.Reducer[A, reduxLib.reduxMod.AnyAction] = js.native
 }
 

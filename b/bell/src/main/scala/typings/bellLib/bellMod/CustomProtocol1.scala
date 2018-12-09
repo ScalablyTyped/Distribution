@@ -28,6 +28,6 @@ trait CustomProtocol1 extends CustomProtocol {
     credentials: Credentials1,
     params: ScalablyTyped.runtime.StringDictionary[java.lang.String],
     get: AuthedRequest
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

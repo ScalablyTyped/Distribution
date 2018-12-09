@@ -410,7 +410,7 @@ trait Sequelize
   def sync(options: SyncOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def transaction(): bluebirdLib.bluebirdMod.namespaced[Transaction] = js.native
   def transaction(options: TransactionOptions): bluebirdLib.bluebirdMod.namespaced[Transaction] = js.native
-  def transaction[T](autoCallback: js.Function1[/* t */ Transaction, stdLib.PromiseLike[T]]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
+  def transaction[T](autoCallback: js.Function1[/* t */ Transaction, js.Thenable[T]]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   /**
            * Start a transaction. When using transactions, you should pass the transaction in the options argument
            * in order for the query to happen under that transaction
@@ -456,10 +456,7 @@ trait Sequelize
            * @param options Transaction Options
            * @param autoCallback Callback for the transaction
            */
-  def transaction[T](
-    options: TransactionOptions,
-    autoCallback: js.Function1[/* t */ Transaction, stdLib.PromiseLike[T]]
-  ): bluebirdLib.bluebirdMod.namespaced[T] = js.native
+  def transaction[T](options: TransactionOptions, autoCallback: js.Function1[/* t */ Transaction, js.Thenable[T]]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   /**
            * Truncate all tables defined through the sequelize models. This is done
            * by calling Model.truncate() on each model.

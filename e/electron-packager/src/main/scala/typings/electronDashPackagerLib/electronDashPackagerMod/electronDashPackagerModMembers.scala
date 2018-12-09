@@ -19,7 +19,7 @@ object electronDashPackagerModMembers extends js.Object {
    *
    * @returns A promise containing the path(s) to the newly created application(s)
    */
-  def apply(opts: electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.Options): stdLib.Promise[java.lang.String | js.Array[java.lang.String]] = js.native
+  def apply(opts: electronDashPackagerLib.electronDashPackagerMod.electronPackagerNs.Options): js.Promise[java.lang.String | js.Array[java.lang.String]] = js.native
   /**
    * This will:
    * - Find or download the correct release of Electron

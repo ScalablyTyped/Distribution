@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait SyncManager extends js.Object {
-  def getTags(): Promise[js.Array[java.lang.String]]
-  def register(tag: java.lang.String): Promise[scala.Unit]
+  def getTags(): js.Promise[js.Array[java.lang.String]]
+  def register(tag: java.lang.String): js.Promise[scala.Unit]
 }
 
 @JSGlobal("SyncManager")

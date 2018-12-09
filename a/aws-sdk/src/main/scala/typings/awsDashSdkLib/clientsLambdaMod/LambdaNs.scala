@@ -65,7 +65,7 @@ object LambdaNs extends js.Object {
     /**
          * Only update the policy if the revision ID matches the ID specified. Use this option to avoid modifying a policy that has changed since you last read it.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * An identifier that distinguishes the policy from others on the same layer version.
          */
@@ -81,11 +81,11 @@ object LambdaNs extends js.Object {
     /**
          * A unique identifier for the current revision of the policy.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * The permission statement.
          */
-    var Statement: js.UndefOr[java.lang.String] = js.undefined
+    var Statement: js.UndefOr[String] = js.undefined
   }
   
   
@@ -113,7 +113,7 @@ object LambdaNs extends js.Object {
     /**
          * An optional value you can use to ensure you are updating the latest update of the function version or alias. If the RevisionID you pass doesn't match the latest RevisionId of the function or alias, it will fail with an error message, advising you to retrieve the latest function version or alias RevisionID using either GetFunction or GetAlias 
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * This parameter is used for S3 and SES. The AWS account ID (without a hyphen) of the source owner. For example, if the SourceArn identifies a bucket, then this is the bucket owner's account ID. You can use this additional condition to ensure the bucket you specify is owned by a specific account (it is possible the bucket owner deleted the bucket and some other AWS account created the bucket). You can also use this condition to specify all sources (that is, you don't specify the SourceArn) owned by a specific account. 
          */
@@ -133,7 +133,7 @@ object LambdaNs extends js.Object {
     /**
          * The permission statement you specified in the request. The response returns the same as a string using a backslash ("\") as an escape character in the JSON.
          */
-    var Statement: js.UndefOr[java.lang.String] = js.undefined
+    var Statement: js.UndefOr[String] = js.undefined
   }
   
   
@@ -161,7 +161,7 @@ object LambdaNs extends js.Object {
     /**
          * Represents the latest updated revision of the function or alias.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * Specifies an additional function versions the alias points to, allowing you to dictate what percentage of traffic will invoke each version.
          */
@@ -285,7 +285,7 @@ object LambdaNs extends js.Object {
     /**
          * Set to true to publish the first version of the function during creation.
          */
-    var Publish: js.UndefOr[scala.Boolean] = js.undefined
+    var Publish: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the function's execution role.
          */
@@ -337,7 +337,7 @@ object LambdaNs extends js.Object {
     /**
          * The identifier of the event source mapping.
          */
-    var UUID: java.lang.String
+    var UUID: String
   }
   
   
@@ -385,7 +385,7 @@ object LambdaNs extends js.Object {
     /**
          * The error code.
          */
-    var ErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The error message.
          */
@@ -429,19 +429,19 @@ object LambdaNs extends js.Object {
     /**
          * The result of the last AWS Lambda invocation of your Lambda function.
          */
-    var LastProcessingResult: js.UndefOr[java.lang.String] = js.undefined
+    var LastProcessingResult: js.UndefOr[String] = js.undefined
     /**
          * The state of the event source mapping. It can be one of the following: Creating, Enabling, Enabled, Disabling, Disabled, Updating, or Deleting.
          */
-    var State: js.UndefOr[java.lang.String] = js.undefined
+    var State: js.UndefOr[String] = js.undefined
     /**
          * The cause of the last state change, either User initiated or Lambda initiated.
          */
-    var StateTransitionReason: js.UndefOr[java.lang.String] = js.undefined
+    var StateTransitionReason: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the event source mapping.
          */
-    var UUID: js.UndefOr[java.lang.String] = js.undefined
+    var UUID: js.UndefOr[String] = js.undefined
   }
   
   
@@ -469,11 +469,11 @@ object LambdaNs extends js.Object {
     /**
          * The presigned URL you can use to download the function's .zip file that you previously uploaded. The URL is valid for up to 10 minutes.
          */
-    var Location: js.UndefOr[java.lang.String] = js.undefined
+    var Location: js.UndefOr[String] = js.undefined
     /**
          * The repository from which you can download the function.
          */
-    var RepositoryType: js.UndefOr[java.lang.String] = js.undefined
+    var RepositoryType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -481,7 +481,7 @@ object LambdaNs extends js.Object {
     /**
          * The SHA256 hash of the function's deployment package.
          */
-    var CodeSha256: js.UndefOr[java.lang.String] = js.undefined
+    var CodeSha256: js.UndefOr[String] = js.undefined
     /**
          * The size of the function's deployment package in bytes.
          */
@@ -533,7 +533,7 @@ object LambdaNs extends js.Object {
     /**
          * Represents the latest updated revision of the function or alias.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * The function's execution role.
          */
@@ -592,7 +592,7 @@ object LambdaNs extends js.Object {
     /**
          * The identifier of the event source mapping.
          */
-    var UUID: java.lang.String
+    var UUID: String
   }
   
   
@@ -656,11 +656,11 @@ object LambdaNs extends js.Object {
     /**
          * The policy document.
          */
-    var Policy: js.UndefOr[java.lang.String] = js.undefined
+    var Policy: js.UndefOr[String] = js.undefined
     /**
          * A unique identifier for the current revision of the policy.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -728,11 +728,11 @@ object LambdaNs extends js.Object {
     /**
          * The resource policy associated with the specified function. The response returns the same as a string using a backslash ("\") as an escape character in the JSON.
          */
-    var Policy: js.UndefOr[java.lang.String] = js.undefined
+    var Policy: js.UndefOr[String] = js.undefined
     /**
          * Represents the latest updated revision of the function or alias.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -740,7 +740,7 @@ object LambdaNs extends js.Object {
     /**
          * Using the ClientContext you can pass client-specific information to the Lambda function you are invoking. You can then process the client information in your Lambda function as you choose through the context variable. For an example of a ClientContext JSON, see PutEvents in the Amazon Mobile Analytics API Reference and User Guide. The ClientContext JSON must be base64-encoded and has a maximum size of 3583 bytes.   ClientContext information is returned only if you use the synchronous (RequestResponse) invocation type. 
          */
-    var ClientContext: js.UndefOr[java.lang.String] = js.undefined
+    var ClientContext: js.UndefOr[String] = js.undefined
     /**
          * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
@@ -772,11 +772,11 @@ object LambdaNs extends js.Object {
     /**
          * Indicates whether an error occurred while executing the Lambda function. If an error occurred this field will have one of two values; Handled or Unhandled. Handled errors are errors that are reported by the function while the Unhandled errors are those detected and reported by AWS Lambda. Unhandled errors include out of memory errors and function timeouts. For information about how to report an Handled error, see Programming Model. 
          */
-    var FunctionError: js.UndefOr[java.lang.String] = js.undefined
+    var FunctionError: js.UndefOr[String] = js.undefined
     /**
          *  It is the base64-encoded logs for the Lambda function invocation. This is present only if the invocation type is RequestResponse and the logs were requested. 
          */
-    var LogResult: js.UndefOr[java.lang.String] = js.undefined
+    var LogResult: js.UndefOr[String] = js.undefined
     /**
          *  It is the JSON representation of the object returned by the Lambda function. This is present only if the invocation type is RequestResponse.  In the event of a function error this field contains a message describing the error. For the Handled errors the Lambda function will report this message. For Unhandled errors AWS Lambda reports the message. 
          */
@@ -844,7 +844,7 @@ object LambdaNs extends js.Object {
     /**
          * The SHA-256 hash of the layer archive.
          */
-    var CodeSha256: js.UndefOr[java.lang.String] = js.undefined
+    var CodeSha256: js.UndefOr[String] = js.undefined
     /**
          * The size of the layer archive in bytes.
          */
@@ -852,7 +852,7 @@ object LambdaNs extends js.Object {
     /**
          * A link to the layer archive in Amazon S3 that is valid for 10 minutes.
          */
-    var Location: js.UndefOr[java.lang.String] = js.undefined
+    var Location: js.UndefOr[String] = js.undefined
   }
   
   
@@ -912,7 +912,7 @@ object LambdaNs extends js.Object {
     /**
          * Optional string. An opaque pagination token returned from a previous ListAliases operation. If present, indicates where to continue the listing.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * Optional integer. Specifies the maximum number of aliases to return in response. This parameter value must be greater than 0.
          */
@@ -928,7 +928,7 @@ object LambdaNs extends js.Object {
     /**
          * A string, present if there are more aliases.
          */
-    var NextMarker: js.UndefOr[java.lang.String] = js.undefined
+    var NextMarker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -944,7 +944,7 @@ object LambdaNs extends js.Object {
     /**
          * A pagination token returned by a previous call.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of event source mappings to return.
          */
@@ -960,7 +960,7 @@ object LambdaNs extends js.Object {
     /**
          * A pagination token that's returned when the response doesn't contain all event source mappings.
          */
-    var NextMarker: js.UndefOr[java.lang.String] = js.undefined
+    var NextMarker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -972,7 +972,7 @@ object LambdaNs extends js.Object {
     /**
          * Optional string. An opaque pagination token returned from a previous ListFunctions operation. If present, indicates where to continue the listing. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * Specify a region (e.g. us-east-2) to only list functions that were created in that region, or ALL to include functions replicated from any region. If specified, you also must specify the FunctionVersion.
          */
@@ -992,7 +992,7 @@ object LambdaNs extends js.Object {
     /**
          * A string, present if there are more functions.
          */
-    var NextMarker: js.UndefOr[java.lang.String] = js.undefined
+    var NextMarker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1008,7 +1008,7 @@ object LambdaNs extends js.Object {
     /**
          * A pagination token returned by a previous call.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of versions to return.
          */
@@ -1024,7 +1024,7 @@ object LambdaNs extends js.Object {
     /**
          * A pagination token returned when the response doesn't contain all versions.
          */
-    var NextMarker: js.UndefOr[java.lang.String] = js.undefined
+    var NextMarker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1036,7 +1036,7 @@ object LambdaNs extends js.Object {
     /**
          * A pagination token returned by a previous call.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of layers to return.
          */
@@ -1052,7 +1052,7 @@ object LambdaNs extends js.Object {
     /**
          * A pagination token returned when the response doesn't contain all layers.
          */
-    var NextMarker: js.UndefOr[java.lang.String] = js.undefined
+    var NextMarker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1080,7 +1080,7 @@ object LambdaNs extends js.Object {
     /**
          *  Optional string. An opaque pagination token returned from a previous ListVersionsByFunction operation. If present, indicates where to continue the listing. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * Optional integer. Specifies the maximum number of AWS Lambda function versions to return in response. This parameter value must be greater than 0.
          */
@@ -1092,7 +1092,7 @@ object LambdaNs extends js.Object {
     /**
          * A string, present if there are more function versions.
          */
-    var NextMarker: js.UndefOr[java.lang.String] = js.undefined
+    var NextMarker: js.UndefOr[String] = js.undefined
     /**
          * A list of Lambda function versions.
          */
@@ -1164,7 +1164,7 @@ object LambdaNs extends js.Object {
     /**
          * The SHA256 hash of the deployment package you want to publish. This provides validation on the code you are publishing. If you provide this parameter, the value must match the SHA256 of the $LATEST version for the publication to succeed. You can use the DryRun parameter of UpdateFunctionCode to verify the hash value that will be returned before publishing your new version.
          */
-    var CodeSha256: js.UndefOr[java.lang.String] = js.undefined
+    var CodeSha256: js.UndefOr[String] = js.undefined
     /**
          * The description for the version you are publishing. If not provided, AWS Lambda copies the description from the $LATEST version.
          */
@@ -1176,7 +1176,7 @@ object LambdaNs extends js.Object {
     /**
          * An optional value you can use to ensure you are updating the latest update of the function version or alias. If the RevisionID you pass doesn't match the latest RevisionId of the function or alias, it will fail with an error message, advising you retrieve the latest function version or alias RevisionID using either GetFunction or GetAlias.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1200,7 +1200,7 @@ object LambdaNs extends js.Object {
     /**
          * Only update the policy if the revision ID matches the ID specified. Use this option to avoid modifying a policy that has changed since you last read it.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * The identifier that was specified when the statement was added.
          */
@@ -1224,7 +1224,7 @@ object LambdaNs extends js.Object {
     /**
          * An optional value you can use to ensure you are updating the latest update of the function version or alias. If the RevisionID you pass doesn't match the latest RevisionId of the function or alias, it will fail with an error message, advising you to retrieve the latest function version or alias RevisionID using either GetFunction or GetAlias.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * Statement ID of the permission to remove.
          */
@@ -2333,7 +2333,7 @@ object LambdaNs extends js.Object {
     /**
          * An optional value you can use to ensure you are updating the latest update of the function version or alias. If the RevisionID you pass doesn't match the latest RevisionId of the function or alias, it will fail with an error message, advising you retrieve the latest function version or alias RevisionID using either GetFunction or GetAlias.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * Specifies an additional version your alias can point to, allowing you to dictate what percentage of traffic will invoke each version. For more information, see Traffic Shifting Using Aliases.
          */
@@ -2357,7 +2357,7 @@ object LambdaNs extends js.Object {
     /**
          * The identifier of the event source mapping.
          */
-    var UUID: java.lang.String
+    var UUID: String
   }
   
   
@@ -2365,7 +2365,7 @@ object LambdaNs extends js.Object {
     /**
          * This boolean parameter can be used to test your request to AWS Lambda to update the Lambda function and publish a version as an atomic operation. It will do all necessary computation and validation of your code but will not upload it or a publish a version. Each time this operation is invoked, the CodeSha256 hash value of the provided code will also be computed and returned in the response.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
@@ -2373,11 +2373,11 @@ object LambdaNs extends js.Object {
     /**
          * This boolean parameter can be used to request AWS Lambda to update the Lambda function and publish a version as an atomic operation.
          */
-    var Publish: js.UndefOr[scala.Boolean] = js.undefined
+    var Publish: js.UndefOr[Boolean] = js.undefined
     /**
          * An optional value you can use to ensure you are updating the latest update of the function version or alias. If the RevisionID you pass doesn't match the latest RevisionId of the function or alias, it will fail with an error message, advising you to retrieve the latest function version or alias RevisionID using either using using either GetFunction or GetAlias.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * Amazon S3 bucket name where the .zip file containing your deployment package is stored. This bucket must reside in the same AWS Region where you are creating the Lambda function.
          */
@@ -2433,7 +2433,7 @@ object LambdaNs extends js.Object {
     /**
          * An optional value you can use to ensure you are updating the latest update of the function version or alias. If the RevisionID you pass doesn't match the latest RevisionId of the function or alias, it will fail with an error message, advising you to retrieve the latest function version or alias RevisionID using either GetFunction or GetAlias.
          */
-    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    var RevisionId: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the IAM role that Lambda will assume when it executes your function.
          */

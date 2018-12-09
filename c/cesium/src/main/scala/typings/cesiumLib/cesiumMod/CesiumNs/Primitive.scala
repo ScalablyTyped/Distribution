@@ -18,7 +18,7 @@ trait Primitive extends js.Object {
   val interleave: scala.Boolean
   var modelMatrix: Matrix4
   val ready: scala.Boolean
-  val readyPromise: stdLib.Promise[Primitive]
+  val readyPromise: js.Promise[Primitive]
   val releaseGeometryInstances: scala.Boolean
   var shadows: ShadowMode
   var show: scala.Boolean

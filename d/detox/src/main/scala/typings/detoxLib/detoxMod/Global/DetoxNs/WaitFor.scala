@@ -24,6 +24,6 @@ trait WaitFor extends js.Object {
                * @param millis number
                * @example await waitFor(element(by.id('UniqueId336'))).toExist().withTimeout(2000);
                */
-  def withTimeout(millis: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def withTimeout(millis: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

@@ -27,7 +27,7 @@ package object visionNs {
     /* template */ java.lang.String, 
     /* context */ js.UndefOr[js.Any], 
     /* options */ js.UndefOr[ServerViewsConfiguration], 
-    stdLib.Promise[java.lang.String]
+    js.Promise[java.lang.String]
   ]
   type RuntimeOptions = js.Object
   type ServerViewCompile = ServerViewCompileSync | ServerViewCompileAsync

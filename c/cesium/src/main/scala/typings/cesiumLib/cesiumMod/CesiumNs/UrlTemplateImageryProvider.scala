@@ -14,6 +14,6 @@ trait UrlTemplateImageryProvider extends ImageryProvider {
   var subdomains: java.lang.String | js.Array[java.lang.String] = js.native
   var url: java.lang.String = js.native
   def reinitialize(options: js.Object): scala.Unit = js.native
-  def reinitialize(options: stdLib.Promise[js.Object]): scala.Unit = js.native
+  def reinitialize(options: js.Promise[js.Object]): scala.Unit = js.native
 }
 

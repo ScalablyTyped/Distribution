@@ -45914,11 +45914,7 @@ trait Chainable[Subject] extends js.Object {
        */
   @JSName("then")
   def then_S[S](
-    fn: js.ThisFunction1[
-      /* this */ ObjectLike, 
-      /* currentSubject */ Subject, 
-      Chainable[S] | stdLib.PromiseLike[S]
-    ]
+    fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, Chainable[S] | js.Thenable[S]]
   ): Chainable[S] = js.native
   /**
        * Enables you to work with the subject yielded from the previous command.
@@ -45932,11 +45928,7 @@ trait Chainable[Subject] extends js.Object {
        */
   @JSName("then")
   def then_S[S](
-    fn: js.ThisFunction1[
-      /* this */ ObjectLike, 
-      /* currentSubject */ Subject, 
-      Chainable[S] | stdLib.PromiseLike[S]
-    ],
+    fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, Chainable[S] | js.Thenable[S]],
     options: stdLib.Partial[Timeoutable]
   ): Chainable[S] = js.native
   /**
@@ -51299,7 +51291,7 @@ trait Chainable[Subject] extends js.Object {
        *    }).then(result => {})
        */
   @JSName("wrap")
-  def wrap_FPromiseS[F /* <: stdLib.Promise[S] */, S](promise: F): Chainable[S] = js.native
+  def wrap_FPromiseS[F /* <: js.Promise[S] */, S](promise: F): Chainable[S] = js.native
   /**
        * Yield the element passed into `.wrap()` to the next command in the Cypress chain.
        *
@@ -51310,7 +51302,7 @@ trait Chainable[Subject] extends js.Object {
        *    }).then(result => {})
        */
   @JSName("wrap")
-  def wrap_FPromiseS[F /* <: stdLib.Promise[S] */, S](promise: F, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[S] = js.native
+  def wrap_FPromiseS[F /* <: js.Promise[S] */, S](promise: F, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[S] = js.native
   /**
        * Write to a file with the specified contents.
        *

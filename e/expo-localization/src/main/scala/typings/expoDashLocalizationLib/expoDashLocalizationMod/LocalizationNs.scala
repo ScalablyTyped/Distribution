@@ -35,6 +35,6 @@ object LocalizationNs extends js.Object {
   /**
        * Android only, on iOS changing the locale settings will cause all the apps to reset
        */
-  def getLocalizationAsync(): stdLib.Promise[expoDashLocalizationLib.expoDashLocalizationMod.LocalizationProps] = js.native
+  def getLocalizationAsync(): js.Promise[expoDashLocalizationLib.expoDashLocalizationMod.LocalizationProps] = js.native
 }
 

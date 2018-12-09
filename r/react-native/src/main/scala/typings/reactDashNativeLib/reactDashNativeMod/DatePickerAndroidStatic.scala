@@ -33,7 +33,7 @@ trait DatePickerAndroidStatic extends js.Object {
        *
        * Note the native date picker dialog has some UI glitches on Android 4 and lower when using the minDate and maxDate options.
        */
-  def open(): stdLib.Promise[DatePickerAndroidOpenReturn] = js.native
+  def open(): js.Promise[DatePickerAndroidOpenReturn] = js.native
   /**
        * Opens the standard Android date picker dialog.
        *
@@ -52,6 +52,6 @@ trait DatePickerAndroidStatic extends js.Object {
        *
        * Note the native date picker dialog has some UI glitches on Android 4 and lower when using the minDate and maxDate options.
        */
-  def open(options: DatePickerAndroidOpenOptions): stdLib.Promise[DatePickerAndroidOpenReturn] = js.native
+  def open(options: DatePickerAndroidOpenOptions): js.Promise[DatePickerAndroidOpenReturn] = js.native
 }
 

@@ -42,6 +42,6 @@ trait Art extends js.Object {
   def style(text: java.lang.String, style: java.lang.String, close: scala.Boolean): Art = js.native
   def table(options: js.Object): Art = js.native
   def table(options: js.Object, callback: Cb): Art = js.native
-  def toPromise(): stdLib.Promise[java.lang.String] = js.native
+  def toPromise(): js.Promise[java.lang.String] = js.native
 }
 

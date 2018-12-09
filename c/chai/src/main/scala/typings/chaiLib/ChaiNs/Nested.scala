@@ -13,10 +13,10 @@ trait Nested extends js.Object {
   var members_Original: Members = js.native
   @JSName("property")
   var property_Original: Property = js.native
+  def include(value: chaiLib.Object): Assertion = js.native
+  def include(value: chaiLib.Object, message: java.lang.String): Assertion = js.native
   def include(value: java.lang.String): Assertion = js.native
   def include(value: java.lang.String, message: java.lang.String): Assertion = js.native
-  def include(value: js.Object): Assertion = js.native
-  def include(value: js.Object, message: java.lang.String): Assertion = js.native
   def include(value: scala.Double): Assertion = js.native
   def include(value: scala.Double, message: java.lang.String): Assertion = js.native
   def members(set: js.Array[_]): Assertion = js.native

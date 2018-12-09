@@ -17,8 +17,8 @@ trait Deep extends js.Object {
   def equal(value: js.Any, message: java.lang.String): Assertion = js.native
   def include(value: java.lang.String): Assertion = js.native
   def include(value: java.lang.String, message: java.lang.String): Assertion = js.native
-  def include(value: js.Object): Assertion = js.native
-  def include(value: js.Object, message: java.lang.String): Assertion = js.native
+  def include(value: jqueryDotAjaxfileLib.Object): Assertion = js.native
+  def include(value: jqueryDotAjaxfileLib.Object, message: java.lang.String): Assertion = js.native
   def include(value: scala.Double): Assertion = js.native
   def include(value: scala.Double, message: java.lang.String): Assertion = js.native
   def property(name: java.lang.String): Assertion = js.native

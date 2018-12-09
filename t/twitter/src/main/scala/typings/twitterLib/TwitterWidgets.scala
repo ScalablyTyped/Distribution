@@ -17,7 +17,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createFollowButton(screen_name: java.lang.String, target: stdLib.HTMLElement): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createFollowButton(screen_name: java.lang.String, target: stdLib.HTMLElement): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create a follow button for a user.
        *
@@ -25,7 +25,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createFollowButton(screen_name: java.lang.String, target: stdLib.HTMLElement, options: TwitterButtonWidgetOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createFollowButton(screen_name: java.lang.String, target: stdLib.HTMLElement, options: TwitterButtonWidgetOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create a hashtag button for a hashtag.
        *
@@ -33,7 +33,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createHashtagButton(hashtag: java.lang.String, target: stdLib.HTMLElement): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createHashtagButton(hashtag: java.lang.String, target: stdLib.HTMLElement): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create a hashtag button for a hashtag.
        *
@@ -41,7 +41,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createHashtagButton(hashtag: java.lang.String, target: stdLib.HTMLElement, options: TwitterButtonWidgetOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createHashtagButton(hashtag: java.lang.String, target: stdLib.HTMLElement, options: TwitterButtonWidgetOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create a mention button for a user.
        *
@@ -49,7 +49,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createMentionButton(screen_name: java.lang.String, target: stdLib.HTMLElement): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createMentionButton(screen_name: java.lang.String, target: stdLib.HTMLElement): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create a mention button for a user.
        *
@@ -57,7 +57,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createMentionButton(screen_name: java.lang.String, target: stdLib.HTMLElement, options: TwitterButtonWidgetOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createMentionButton(screen_name: java.lang.String, target: stdLib.HTMLElement, options: TwitterButtonWidgetOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create a share button for a URL.
        *
@@ -65,7 +65,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createShareButton(url: java.lang.String, target: stdLib.HTMLElement): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createShareButton(url: java.lang.String, target: stdLib.HTMLElement): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create a share button for a URL.
        *
@@ -73,7 +73,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createShareButton(url: java.lang.String, target: stdLib.HTMLElement, options: TwitterButtonWidgetOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createShareButton(url: java.lang.String, target: stdLib.HTMLElement, options: TwitterButtonWidgetOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create a timeline widget.
        *
@@ -81,7 +81,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createTimeline(widgetId: java.lang.String, target: stdLib.HTMLElement): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createTimeline(widgetId: java.lang.String, target: stdLib.HTMLElement): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create a timeline widget.
        *
@@ -89,7 +89,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createTimeline(widgetId: java.lang.String, target: stdLib.HTMLElement, options: TwitterTimelineWidgetOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createTimeline(widgetId: java.lang.String, target: stdLib.HTMLElement, options: TwitterTimelineWidgetOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create an embedded Tweet for a Tweet.
        *
@@ -97,7 +97,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createTweet(tweetId: java.lang.String, target: stdLib.HTMLElement): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createTweet(tweetId: java.lang.String, target: stdLib.HTMLElement): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Create an embedded Tweet for a Tweet.
        *
@@ -105,7 +105,7 @@ trait TwitterWidgets extends js.Object {
        * @param target The element in which to render the widget.
        * @param options An object hash of additional options to configure the widget.
        */
-  def createTweet(tweetId: java.lang.String, target: stdLib.HTMLElement, options: TwitterTweetWidgetOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def createTweet(tweetId: java.lang.String, target: stdLib.HTMLElement, options: TwitterTweetWidgetOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * Initialize Twitter for Websites widgets contained within a page.
        */

@@ -51,14 +51,14 @@ trait Aggregate[T] extends js.Object {
   def cursor(options: js.Any): this.type = js.native
   // If cursor option is on, could return an object
   /** Executes the aggregate pipeline on the currently bound Model. */
-  def exec(): stdLib.Promise[T] | js.Any = js.native
+  def exec(): js.Promise[T] | js.Any = js.native
   // If cursor option is on, could return an object
   /** Executes the aggregate pipeline on the currently bound Model. */
-  def exec(callback: js.Function2[/* err */ js.Any, /* result */ T, scala.Unit]): stdLib.Promise[T] | js.Any = js.native
+  def exec(callback: js.Function2[/* err */ js.Any, /* result */ T, scala.Unit]): js.Promise[T] | js.Any = js.native
   /** Execute the aggregation with explain */
-  def explain(): stdLib.Promise[T] = js.native
+  def explain(): js.Promise[T] = js.native
   /** Execute the aggregation with explain */
-  def explain(callback: js.Function2[/* err */ js.Any, /* result */ T, scala.Unit]): stdLib.Promise[T] = js.native
+  def explain(callback: js.Function2[/* err */ js.Any, /* result */ T, scala.Unit]): js.Promise[T] = js.native
   /**
        * Appends a new $facet operator to this aggregate pipeline.
        * @param arg $facet operator contents
@@ -172,14 +172,14 @@ trait Aggregate[T] extends js.Object {
        */
   def sort(arg: js.Any): this.type = js.native
   /** Provides promise for aggregate. */
-  def `then`[TRes](): stdLib.Promise[TRes] = js.native
+  def `then`[TRes](): js.Promise[TRes] = js.native
   /** Provides promise for aggregate. */
-  def `then`[TRes](resolve: js.Function1[/* val */ T, scala.Unit | TRes | stdLib.PromiseLike[TRes]]): stdLib.Promise[TRes] = js.native
+  def `then`[TRes](resolve: js.Function1[/* val */ T, scala.Unit | TRes | js.Thenable[TRes]]): js.Promise[TRes] = js.native
   /** Provides promise for aggregate. */
   def `then`[TRes](
-    resolve: js.Function1[/* val */ T, scala.Unit | TRes | stdLib.PromiseLike[TRes]],
-    reject: js.Function1[/* err */ js.Any, scala.Unit | TRes | stdLib.PromiseLike[TRes]]
-  ): stdLib.Promise[TRes] = js.native
+    resolve: js.Function1[/* val */ T, scala.Unit | TRes | js.Thenable[TRes]],
+    reject: js.Function1[/* err */ js.Any, scala.Unit | TRes | js.Thenable[TRes]]
+  ): js.Promise[TRes] = js.native
   /**
        * Appends new custom $unwind operator(s) to this aggregate pipeline.
        * Note that the $unwind operator requires the path name to start with '$'.

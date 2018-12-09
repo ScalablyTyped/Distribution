@@ -16,7 +16,7 @@ class pivot () extends baseview {
   var config_pivot: pivotConfig = js.native
   var data: webixLib.webixNs.DataStore = js.native
   var operations: js.Any = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
   def addOperation(name: java.lang.String, operation: webixLib.webixNs.WebixCallback, options: js.Any): scala.Unit = js.native
@@ -62,9 +62,9 @@ class pivot () extends baseview {
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
   def innerId(id: java.lang.String): scala.Double | java.lang.String = js.native
   def innerId(id: scala.Double): scala.Double | java.lang.String = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def mapEvent(map: js.Any): scala.Unit = js.native
   def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
   def refresh(): scala.Unit = js.native

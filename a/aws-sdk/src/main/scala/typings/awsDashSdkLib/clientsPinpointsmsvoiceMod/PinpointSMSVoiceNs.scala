@@ -29,11 +29,11 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of an Amazon Identity and Access Management (IAM) role that is able to write event data to an Amazon CloudWatch destination.
          */
-    var IamRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the Amazon CloudWatch Log Group that you want to record events in.
          */
-    var LogGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var LogGroupArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -95,13 +95,13 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * Indicates whether or not the event destination is enabled. If the event destination is enabled, then Amazon Pinpoint sends response data to the specified event destination.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     var KinesisFirehoseDestination: js.UndefOr[KinesisFirehoseDestination] = js.undefined
     var MatchingEventTypes: js.UndefOr[EventTypes] = js.undefined
     /**
          * A name that identifies the event destination configuration.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -110,7 +110,7 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * Indicates whether or not the event destination is enabled. If the event destination is enabled, then Amazon Pinpoint sends response data to the specified event destination.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     var KinesisFirehoseDestination: js.UndefOr[KinesisFirehoseDestination] = js.undefined
     var MatchingEventTypes: js.UndefOr[EventTypes] = js.undefined
   }
@@ -133,11 +133,11 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of an IAM role that can write data to an Amazon Kinesis Data Firehose stream.
          */
-    var DeliveryStreamArn: js.UndefOr[java.lang.String] = js.undefined
+    var DeliveryStreamArn: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the Amazon Kinesis Data Firehose destination that you want to use in the event destination.
          */
-    var IamRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamRoleArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -145,7 +145,7 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * The language to use when delivering the message. For a complete list of supported languages, see the Amazon Polly Developer Guide.
          */
-    var LanguageCode: js.UndefOr[java.lang.String] = js.undefined
+    var LanguageCode: js.UndefOr[String] = js.undefined
     /**
          * The plain (not SSML-formatted) text to deliver to the recipient.
          */
@@ -153,7 +153,7 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * The name of the voice that you want to use to deliver the message. For a complete list of supported voices, see the Amazon Polly Developer Guide.
          */
-    var VoiceId: js.UndefOr[java.lang.String] = js.undefined
+    var VoiceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -161,7 +161,7 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * The language to use when delivering the message. For a complete list of supported languages, see the Amazon Polly Developer Guide.
          */
-    var LanguageCode: js.UndefOr[java.lang.String] = js.undefined
+    var LanguageCode: js.UndefOr[String] = js.undefined
     /**
          * The SSML-formatted text to deliver to the recipient.
          */
@@ -169,7 +169,7 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * The name of the voice that you want to use to deliver the message. For a complete list of supported voices, see the Amazon Polly Developer Guide.
          */
-    var VoiceId: js.UndefOr[java.lang.String] = js.undefined
+    var VoiceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -177,7 +177,7 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * The phone number that appears on recipients' devices when they receive the message.
          */
-    var CallerId: js.UndefOr[java.lang.String] = js.undefined
+    var CallerId: js.UndefOr[String] = js.undefined
     /**
          * The name of the configuration set that you want to use to send the message.
          */
@@ -198,7 +198,7 @@ object PinpointSMSVoiceNs extends js.Object {
     /**
          * A unique identifier for the voice message.
          */
-    var MessageId: js.UndefOr[java.lang.String] = js.undefined
+    var MessageId: js.UndefOr[String] = js.undefined
   }
   
   @js.native

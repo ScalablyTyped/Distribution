@@ -29,7 +29,7 @@ class ViewEngine protected () extends js.Object {
       * @param moduleMember The export from the module to generate the resource for.
       * @return A promise for the ResourceDescription.
       */
-  def importViewModelResource(moduleImport: java.lang.String, moduleMember: java.lang.String): stdLib.Promise[ResourceDescription] = js.native
+  def importViewModelResource(moduleImport: java.lang.String, moduleMember: java.lang.String): js.Promise[ResourceDescription] = js.native
   /**
       * Imports the specified resources with the specified names into the view resources object.
       * @param moduleIds The modules to load.
@@ -38,21 +38,7 @@ class ViewEngine protected () extends js.Object {
       * @param compileInstruction The compilation instruction associated with the resource imports.
       * @return A promise for the ViewResources.
       */
-  def importViewResources(moduleIds: js.Array[java.lang.String], names: js.Array[java.lang.String], resources: ViewResources): stdLib.Promise[ViewResources] = js.native
-  /**
-      * Imports the specified resources with the specified names into the view resources object.
-      * @param moduleIds The modules to load.
-      * @param names The names associated with resource modules to import.
-      * @param resources The resources lookup to add the loaded resources to.
-      * @param compileInstruction The compilation instruction associated with the resource imports.
-      * @return A promise for the ViewResources.
-      */
-  def importViewResources(
-    moduleIds: js.Array[java.lang.String],
-    names: js.Array[java.lang.String],
-    resources: ViewResources,
-    compileInstruction: ViewCompileInstruction
-  ): stdLib.Promise[ViewResources] = js.native
+  def importViewResources(moduleIds: js.Array[java.lang.String], names: js.Array[java.lang.String], resources: ViewResources): js.Promise[ViewResources] = js.native
   /**
       * Imports the specified resources with the specified names into the view resources object.
       * @param moduleIds The modules to load.
@@ -65,9 +51,23 @@ class ViewEngine protected () extends js.Object {
     moduleIds: js.Array[java.lang.String],
     names: js.Array[java.lang.String],
     resources: ViewResources,
+    compileInstruction: ViewCompileInstruction
+  ): js.Promise[ViewResources] = js.native
+  /**
+      * Imports the specified resources with the specified names into the view resources object.
+      * @param moduleIds The modules to load.
+      * @param names The names associated with resource modules to import.
+      * @param resources The resources lookup to add the loaded resources to.
+      * @param compileInstruction The compilation instruction associated with the resource imports.
+      * @return A promise for the ViewResources.
+      */
+  def importViewResources(
+    moduleIds: js.Array[java.lang.String],
+    names: js.Array[java.lang.String],
+    resources: ViewResources,
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext
-  ): stdLib.Promise[ViewResources] = js.native
+  ): js.Promise[ViewResources] = js.native
   /**
       * Loads all the resources specified by the registry entry.
       * @param registryEntry The template registry entry to load the resources for.
@@ -76,7 +76,7 @@ class ViewEngine protected () extends js.Object {
       * @param target A class from which to extract metadata of additional resources to load.
       * @return A promise of ViewResources for the registry entry.
       */
-  def loadTemplateResources(registryEntry: aureliaDashLoaderLib.aureliaDashLoaderMod.TemplateRegistryEntry): stdLib.Promise[ViewResources] = js.native
+  def loadTemplateResources(registryEntry: aureliaDashLoaderLib.aureliaDashLoaderMod.TemplateRegistryEntry): js.Promise[ViewResources] = js.native
   /**
       * Loads all the resources specified by the registry entry.
       * @param registryEntry The template registry entry to load the resources for.
@@ -88,7 +88,7 @@ class ViewEngine protected () extends js.Object {
   def loadTemplateResources(
     registryEntry: aureliaDashLoaderLib.aureliaDashLoaderMod.TemplateRegistryEntry,
     compileInstruction: ViewCompileInstruction
-  ): stdLib.Promise[ViewResources] = js.native
+  ): js.Promise[ViewResources] = js.native
   /**
       * Loads all the resources specified by the registry entry.
       * @param registryEntry The template registry entry to load the resources for.
@@ -101,7 +101,7 @@ class ViewEngine protected () extends js.Object {
     registryEntry: aureliaDashLoaderLib.aureliaDashLoaderMod.TemplateRegistryEntry,
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext
-  ): stdLib.Promise[ViewResources] = js.native
+  ): js.Promise[ViewResources] = js.native
   /**
       * Loads all the resources specified by the registry entry.
       * @param registryEntry The template registry entry to load the resources for.
@@ -115,7 +115,7 @@ class ViewEngine protected () extends js.Object {
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext,
     target: js.Any
-  ): stdLib.Promise[ViewResources] = js.native
+  ): js.Promise[ViewResources] = js.native
   /**
       * Loads and compiles a ViewFactory from a url or template registry entry.
       * @param urlOrRegistryEntry A url or template registry entry to generate the view factory for.
@@ -124,7 +124,7 @@ class ViewEngine protected () extends js.Object {
       * @param target A class from which to extract metadata of additional resources to load.
       * @return A promise for the compiled view factory.
       */
-  def loadViewFactory(urlOrRegistryEntry: aureliaDashLoaderLib.aureliaDashLoaderMod.TemplateRegistryEntry): stdLib.Promise[ViewFactory] = js.native
+  def loadViewFactory(urlOrRegistryEntry: aureliaDashLoaderLib.aureliaDashLoaderMod.TemplateRegistryEntry): js.Promise[ViewFactory] = js.native
   /**
       * Loads and compiles a ViewFactory from a url or template registry entry.
       * @param urlOrRegistryEntry A url or template registry entry to generate the view factory for.
@@ -136,7 +136,7 @@ class ViewEngine protected () extends js.Object {
   def loadViewFactory(
     urlOrRegistryEntry: aureliaDashLoaderLib.aureliaDashLoaderMod.TemplateRegistryEntry,
     compileInstruction: ViewCompileInstruction
-  ): stdLib.Promise[ViewFactory] = js.native
+  ): js.Promise[ViewFactory] = js.native
   /**
       * Loads and compiles a ViewFactory from a url or template registry entry.
       * @param urlOrRegistryEntry A url or template registry entry to generate the view factory for.
@@ -149,7 +149,7 @@ class ViewEngine protected () extends js.Object {
     urlOrRegistryEntry: aureliaDashLoaderLib.aureliaDashLoaderMod.TemplateRegistryEntry,
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext
-  ): stdLib.Promise[ViewFactory] = js.native
+  ): js.Promise[ViewFactory] = js.native
   /**
       * Loads and compiles a ViewFactory from a url or template registry entry.
       * @param urlOrRegistryEntry A url or template registry entry to generate the view factory for.
@@ -163,7 +163,7 @@ class ViewEngine protected () extends js.Object {
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext,
     target: js.Any
-  ): stdLib.Promise[ViewFactory] = js.native
+  ): js.Promise[ViewFactory] = js.native
   /**
       * Loads and compiles a ViewFactory from a url or template registry entry.
       * @param urlOrRegistryEntry A url or template registry entry to generate the view factory for.
@@ -172,7 +172,7 @@ class ViewEngine protected () extends js.Object {
       * @param target A class from which to extract metadata of additional resources to load.
       * @return A promise for the compiled view factory.
       */
-  def loadViewFactory(urlOrRegistryEntry: java.lang.String): stdLib.Promise[ViewFactory] = js.native
+  def loadViewFactory(urlOrRegistryEntry: java.lang.String): js.Promise[ViewFactory] = js.native
   /**
       * Loads and compiles a ViewFactory from a url or template registry entry.
       * @param urlOrRegistryEntry A url or template registry entry to generate the view factory for.
@@ -181,7 +181,7 @@ class ViewEngine protected () extends js.Object {
       * @param target A class from which to extract metadata of additional resources to load.
       * @return A promise for the compiled view factory.
       */
-  def loadViewFactory(urlOrRegistryEntry: java.lang.String, compileInstruction: ViewCompileInstruction): stdLib.Promise[ViewFactory] = js.native
+  def loadViewFactory(urlOrRegistryEntry: java.lang.String, compileInstruction: ViewCompileInstruction): js.Promise[ViewFactory] = js.native
   /**
       * Loads and compiles a ViewFactory from a url or template registry entry.
       * @param urlOrRegistryEntry A url or template registry entry to generate the view factory for.
@@ -194,7 +194,7 @@ class ViewEngine protected () extends js.Object {
     urlOrRegistryEntry: java.lang.String,
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext
-  ): stdLib.Promise[ViewFactory] = js.native
+  ): js.Promise[ViewFactory] = js.native
   /**
       * Loads and compiles a ViewFactory from a url or template registry entry.
       * @param urlOrRegistryEntry A url or template registry entry to generate the view factory for.
@@ -208,7 +208,7 @@ class ViewEngine protected () extends js.Object {
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext,
     target: js.Any
-  ): stdLib.Promise[ViewFactory] = js.native
+  ): js.Promise[ViewFactory] = js.native
 }
 
 @JSImport("aurelia-templating", "ViewEngine")

@@ -19,7 +19,7 @@ package object definitionsMod {
   type DistTag = ionicLib.ionicLibStrings.testing | ionicLib.ionicLibStrings.canary | ionicLib.ionicLibStrings.latest
   type FeatureId = ionicLib.ionicLibStrings.`ssl-commands`
   type HookContext = BaseHookContext with HookInput
-  type HookFn = js.Function1[/* ctx */ HookContext, stdLib.Promise[scala.Unit]]
+  type HookFn = js.Function1[/* ctx */ HookContext, js.Promise[scala.Unit]]
   type HookInput = BuildHookInput | ServeBeforeHookInput | ServeAfterHookInput
   type HookName = ionicLib.ionicLibStrings.`build:before` | ionicLib.ionicLibStrings.`build:after` | ionicLib.ionicLibStrings.`serve:before` | ionicLib.ionicLibStrings.`serve:after`
   type HttpMethod = ionicLib.ionicLibStrings.GET | ionicLib.ionicLibStrings.POST | ionicLib.ionicLibStrings.PATCH | ionicLib.ionicLibStrings.PUT | ionicLib.ionicLibStrings.DELETE | ionicLib.ionicLibStrings.PURGE | ionicLib.ionicLibStrings.HEAD | ionicLib.ionicLibStrings.OPTIONS
@@ -50,7 +50,7 @@ package object definitionsMod {
     ionicLib.ionicLibStrings.reqgen | ionicLib.ionicLibStrings.guard | ionicLib.ionicLibStrings.state | ionicLib.ionicLibStrings.max
   ]
   type PaginatorGuard[T /* <: Response[js.Array[js.Object]] */] = js.Function1[/* res */ APIResponseSuccess, /* is T */scala.Boolean]
-  type PaginatorRequestGenerator = js.Function0[stdLib.Promise[ionicLib.Anon_Req]]
+  type PaginatorRequestGenerator = js.Function0[js.Promise[ionicLib.Anon_Req]]
   type ProjectFile = IProjectConfig | IMultiProjectConfig
   type ProjectType = ionicLib.ionicLibStrings.angular | ionicLib.ionicLibStrings.`ionic-angular` | ionicLib.ionicLibStrings.ionic1 | ionicLib.ionicLibStrings.custom | ionicLib.ionicLibStrings.bare
   type RepoAssociation = GithubRepoAssociation | BitbucketCloudRepoAssociation | BitbucketServerRepoAssociation

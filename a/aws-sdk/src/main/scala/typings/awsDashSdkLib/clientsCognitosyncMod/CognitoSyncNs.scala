@@ -69,7 +69,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * The device that made the last change to this dataset.
          */
-    var LastModifiedBy: js.UndefOr[java.lang.String] = js.undefined
+    var LastModifiedBy: js.UndefOr[String] = js.undefined
     /**
          * Date when the dataset was last modified.
          */
@@ -193,7 +193,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * If BulkPublishStatus is FAILED this field will contain the error message that caused the bulk publish to fail.
          */
-    var FailureMessage: js.UndefOr[java.lang.String] = js.undefined
+    var FailureMessage: js.UndefOr[String] = js.undefined
     /**
          * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
          */
@@ -301,7 +301,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * A pagination token for obtaining the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -317,7 +317,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * A pagination token for obtaining the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -329,7 +329,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * A pagination token for obtaining the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -349,7 +349,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * A pagination token for obtaining the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -377,7 +377,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * A pagination token for obtaining the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A token containing a session ID, identity ID, and expiration.
          */
@@ -393,11 +393,11 @@ object CognitoSyncNs extends js.Object {
     /**
          * A boolean value specifying whether to delete the dataset locally.
          */
-    var DatasetDeletedAfterRequestedSyncCount: js.UndefOr[scala.Boolean] = js.undefined
+    var DatasetDeletedAfterRequestedSyncCount: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the dataset exists.
          */
-    var DatasetExists: js.UndefOr[scala.Boolean] = js.undefined
+    var DatasetExists: js.UndefOr[Boolean] = js.undefined
     /**
          * Server sync count for this dataset.
          */
@@ -405,7 +405,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * The user/device that made the last change to this record.
          */
-    var LastModifiedBy: js.UndefOr[java.lang.String] = js.undefined
+    var LastModifiedBy: js.UndefOr[String] = js.undefined
     /**
          * Names of merged datasets.
          */
@@ -413,7 +413,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * A pagination token for obtaining the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list of all records.
          */
@@ -421,7 +421,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * A token containing a session ID, identity ID, and expiration.
          */
-    var SyncSessionToken: js.UndefOr[java.lang.String] = js.undefined
+    var SyncSessionToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -449,7 +449,7 @@ object CognitoSyncNs extends js.Object {
     /**
          * The user/device that made the last change to this record.
          */
-    var LastModifiedBy: js.UndefOr[java.lang.String] = js.undefined
+    var LastModifiedBy: js.UndefOr[String] = js.undefined
     /**
          * The date on which the record was last modified.
          */
@@ -1157,7 +1157,7 @@ object CognitoSyncNs extends js.Object {
   type IntegerString = scala.Double
   type LambdaFunctionArn = java.lang.String
   type Long = scala.Double
-  type MergedDatasetNameList = js.Array[java.lang.String]
+  type MergedDatasetNameList = js.Array[String]
   type Operation = awsDashSdkLib.awsDashSdkLibStrings.replace | awsDashSdkLib.awsDashSdkLibStrings.remove | java.lang.String
   type Platform = awsDashSdkLib.awsDashSdkLibStrings.APNS | awsDashSdkLib.awsDashSdkLibStrings.APNS_SANDBOX | awsDashSdkLib.awsDashSdkLibStrings.GCM | awsDashSdkLib.awsDashSdkLibStrings.ADM | java.lang.String
   type PushToken = java.lang.String

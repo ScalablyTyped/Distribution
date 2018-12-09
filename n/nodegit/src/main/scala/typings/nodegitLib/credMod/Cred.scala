@@ -22,14 +22,14 @@ object Cred extends js.Object {
     publicKey: java.lang.String,
     privateKey: java.lang.String,
     passphrase: java.lang.String
-  ): stdLib.Promise[nodegitLib.credMod.Cred] = js.native
+  ): js.Promise[nodegitLib.credMod.Cred] = js.native
   def sshKeyNew(
     username: java.lang.String,
     publicKey: java.lang.String,
     privateKey: java.lang.String,
     passphrase: java.lang.String
   ): nodegitLib.credMod.Cred = js.native
-  def usernameNew(username: java.lang.String): stdLib.Promise[nodegitLib.credMod.Cred] = js.native
+  def usernameNew(username: java.lang.String): js.Promise[nodegitLib.credMod.Cred] = js.native
   def userpassPlaintextNew(username: java.lang.String, password: java.lang.String): nodegitLib.credMod.Cred = js.native
 }
 

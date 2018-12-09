@@ -31,7 +31,7 @@ class KerberosClient () extends js.Object {
        * @param callback
        * @return returns Promise if no callback passed
        */
-  def step(challenge: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def step(challenge: java.lang.String): js.Promise[java.lang.String] = js.native
   def step(
     challenge: java.lang.String,
     callback: js.Function2[/* err */ java.lang.String, /* clientResponse */ java.lang.String, _]
@@ -43,7 +43,7 @@ class KerberosClient () extends js.Object {
        * @param callback
        * @return returns Promise if no callback passed
        */
-  def unwrap(challenge: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def unwrap(challenge: java.lang.String): js.Promise[java.lang.String] = js.native
   def unwrap(
     challenge: java.lang.String,
     callback: js.Function2[/* err */ java.lang.String, /* challengeResponse */ java.lang.String, _]
@@ -56,7 +56,7 @@ class KerberosClient () extends js.Object {
        * @param [callback]
        * @return returns Promise if no callback passed
        */
-  def wrap(challenge: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def wrap(challenge: java.lang.String): js.Promise[java.lang.String] = js.native
   def wrap(
     challenge: java.lang.String,
     callback: js.Function2[/* err */ java.lang.String, /* challengeResponse */ java.lang.String, _]
@@ -69,7 +69,7 @@ class KerberosClient () extends js.Object {
        * @param [callback]
        * @return returns Promise if no callback passed
        */
-  def wrap(challenge: java.lang.String, options: WrapOptions): stdLib.Promise[java.lang.String] = js.native
+  def wrap(challenge: java.lang.String, options: WrapOptions): js.Promise[java.lang.String] = js.native
   def wrap(
     challenge: java.lang.String,
     options: WrapOptions,

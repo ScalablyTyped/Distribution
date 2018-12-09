@@ -12,6 +12,6 @@ trait NumberFormatDefinition extends js.Object {
   var `type`: ajvLib.ajvLibStrings.number = js.native
   @JSName("validate")
   var validate_Original: NumberFormatValidator = js.native
-  def validate(data: scala.Double): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  def validate(data: scala.Double): scala.Boolean | js.Thenable[_] = js.native
 }
 

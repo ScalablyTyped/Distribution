@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_BranchNameOldHashCallback extends js.Object {
-  def apply(branchName: webgmeLib.GmeCommonNs.Name, oldHash: webgmeLib.GmeStorageNs.CommitHash): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  def apply(branchName: webgmeLib.GmeCommonNs.Name, oldHash: webgmeLib.GmeStorageNs.CommitHash): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   def apply(
     branchName: webgmeLib.GmeCommonNs.Name,
     oldHash: webgmeLib.GmeStorageNs.CommitHash,

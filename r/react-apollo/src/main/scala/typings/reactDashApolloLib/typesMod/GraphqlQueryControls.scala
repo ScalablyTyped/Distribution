@@ -13,9 +13,9 @@ trait GraphqlQueryControls[TGraphQLVariables] extends js.Object {
   var variables: TGraphQLVariables = js.native
   def fetchMore(
     fetchMoreOptions: (apolloDashClientLib.coreWatchQueryOptionsMod.FetchMoreQueryOptions[_, _]) with (apolloDashClientLib.coreObservableQueryMod.FetchMoreOptions[_, apolloDashClientLib.coreTypesMod.OperationVariables])
-  ): stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]] = js.native
-  def refetch(): stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]] = js.native
-  def refetch(variables: TGraphQLVariables): stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]] = js.native
+  ): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]] = js.native
+  def refetch(): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]] = js.native
+  def refetch(variables: TGraphQLVariables): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]] = js.native
   def startPolling(pollInterval: scala.Double): scala.Unit = js.native
   def stopPolling(): scala.Unit = js.native
   def subscribeToMore(

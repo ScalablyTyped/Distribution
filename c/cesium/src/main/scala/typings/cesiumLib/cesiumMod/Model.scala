@@ -35,7 +35,7 @@ class Model ()
   /* CompleteClass */
   override var ready: scala.Boolean = js.native
   /* CompleteClass */
-  override var readyPromise: stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.Model] = js.native
+  override var readyPromise: js.Promise[cesiumLib.cesiumMod.CesiumNs.Model] = js.native
   /* CompleteClass */
   override var scale: scala.Double = js.native
   /* CompleteClass */

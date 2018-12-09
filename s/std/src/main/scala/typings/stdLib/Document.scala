@@ -2310,7 +2310,7 @@ trait Document
        * Stops document's fullscreen element from being displayed fullscreen and
        * resolves promise when done.
        */
-  def exitFullscreen(): Promise[scala.Unit] = js.native
+  def exitFullscreen(): js.Promise[scala.Unit] = js.native
   def getAnimations(): js.Array[Animation] = js.native
   /**
        * collection = element . getElementsByClassName(classNames)

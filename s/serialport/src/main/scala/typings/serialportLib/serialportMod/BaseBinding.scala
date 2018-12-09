@@ -17,6 +17,6 @@ class BaseBinding protected ()
 @JSImport("serialport", "BaseBinding")
 @js.native
 object BaseBinding extends js.Object {
-  def list(): stdLib.Promise[js.Array[serialportLib.serialportMod.SerialPortNs.PortInfo]] = js.native
+  def list(): js.Promise[js.Array[serialportLib.serialportMod.SerialPortNs.PortInfo]] = js.native
 }
 

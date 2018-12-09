@@ -387,7 +387,7 @@ object baconjsModMembers extends js.Object {
        * Bacon.fromPromise($.ajax("https://baconjs.github.io/"), true);
        * Bacon.fromPromise(Promise.resolve(1), false);
        */
-  def fromPromise[E, A](promise: stdLib.PromiseLike[A]): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromPromise[E, A](promise: js.Thenable[A]): baconjsLib.BaconNs.EventStream[E, A] = js.native
   /**
        * @function
        * @description Creates an [EventStream]{@link Bacon.EventStream} from a `promise` Promise object such as JQuery Ajax. This stream will contain a single value or an error, followed immediately by stream end. You can use the optional `abort` flag (i.e. ´Bacon.fromPromise(p, true)´ to have the `abort` method of the given promise be called when all subscribers have been removed from the created stream.
@@ -400,7 +400,7 @@ object baconjsModMembers extends js.Object {
        * Bacon.fromPromise($.ajax("https://baconjs.github.io/"), true);
        * Bacon.fromPromise(Promise.resolve(1), false);
        */
-  def fromPromise[E, A](promise: stdLib.PromiseLike[A], abort: scala.Boolean): baconjsLib.BaconNs.EventStream[E, A] = js.native
+  def fromPromise[E, A](promise: js.Thenable[A], abort: scala.Boolean): baconjsLib.BaconNs.EventStream[E, A] = js.native
   /**
        * @callback Bacon.fromPromise~eventTransformer
        * @param {A} value
@@ -452,7 +452,7 @@ object baconjsModMembers extends js.Object {
        * });
        */
   def fromPromise[E, A, B](
-    promise: stdLib.PromiseLike[A],
+    promise: js.Thenable[A],
     abort: scala.Boolean,
     eventTransformer: js.Function1[
       /* value */ A, 

@@ -23,7 +23,7 @@ object FacebookNs extends js.Object {
     var `type`: expoLib.expoLibStrings.cancel | expoLib.expoLibStrings.success
   }
   
-  def logInWithReadPermissionsAsync(appId: java.lang.String): stdLib.Promise[Response] = js.native
-  def logInWithReadPermissionsAsync(appId: java.lang.String, options: Options): stdLib.Promise[Response] = js.native
+  def logInWithReadPermissionsAsync(appId: java.lang.String): js.Promise[Response] = js.native
+  def logInWithReadPermissionsAsync(appId: java.lang.String, options: Options): js.Promise[Response] = js.native
 }
 

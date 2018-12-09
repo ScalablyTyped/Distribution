@@ -21,7 +21,7 @@ object appendFileNs extends js.Object {
            * If `mode` is a string, it is parsed as an octal integer.
            * If `flag` is not supplied, the default of `'a'` is used.
            */
-  def `__promisify__`(file: nodeLib.fsMod.PathLike, data: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def `__promisify__`(file: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
   /**
            * Asynchronously append data to a file, creating the file if it does not exist.
            * @param file A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -34,7 +34,7 @@ object appendFileNs extends js.Object {
            * If `mode` is a string, it is parsed as an octal integer.
            * If `flag` is not supplied, the default of `'a'` is used.
            */
-  def `__promisify__`(file: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): stdLib.Promise[scala.Unit] = js.native
+  def `__promisify__`(file: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
   /**
            * Asynchronously append data to a file, creating the file if it does not exist.
            * @param file A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -47,7 +47,7 @@ object appendFileNs extends js.Object {
            * If `mode` is a string, it is parsed as an octal integer.
            * If `flag` is not supplied, the default of `'a'` is used.
            */
-  def `__promisify__`(file: scala.Double, data: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def `__promisify__`(file: scala.Double, data: js.Any): js.Promise[scala.Unit] = js.native
   /**
            * Asynchronously append data to a file, creating the file if it does not exist.
            * @param file A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -60,6 +60,6 @@ object appendFileNs extends js.Object {
            * If `mode` is a string, it is parsed as an octal integer.
            * If `flag` is not supplied, the default of `'a'` is used.
            */
-  def `__promisify__`(file: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): stdLib.Promise[scala.Unit] = js.native
+  def `__promisify__`(file: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
 }
 

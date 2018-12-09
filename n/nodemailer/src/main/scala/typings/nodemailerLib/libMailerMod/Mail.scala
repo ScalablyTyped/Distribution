@@ -177,7 +177,7 @@ trait Mail
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_idle(event: nodemailerLib.nodemailerLibStrings.idle, listener: js.Function0[scala.Unit]): this.type = js.native
-  def sendMail(mailOptions: nodemailerLib.libMailerMod.MailNs.Options): stdLib.Promise[nodemailerLib.nodemailerMod.SentMessageInfo] = js.native
+  def sendMail(mailOptions: nodemailerLib.libMailerMod.MailNs.Options): js.Promise[nodemailerLib.nodemailerMod.SentMessageInfo] = js.native
   /** Sends an email using the preselected transport object */
   def sendMail(
     mailOptions: nodemailerLib.libMailerMod.MailNs.Options,
@@ -290,7 +290,7 @@ trait Mail
   /** Sets up proxy handler for a Nodemailer object */
   def setupProxy(proxyUrl: java.lang.String): scala.Unit = js.native
   def use(step: java.lang.String, plugin: nodemailerLib.libMailerMod.MailNs.PluginFunction): this.type = js.native
-  def verify(): stdLib.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
+  def verify(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
   /** Verifies SMTP configuration */
   def verify(
     callback: js.Function2[

@@ -21,7 +21,7 @@ trait DataLoader[K, V] extends js.Object {
   /**
      * Loads a key, returning a `Promise` for the value represented by that key.
      */
-  def load(key: K): stdLib.Promise[V]
+  def load(key: K): js.Promise[V]
   /**
      * Loads multiple keys, promising an array of values:
      *
@@ -35,7 +35,7 @@ trait DataLoader[K, V] extends js.Object {
      *     ]);
      *
      */
-  def loadMany(keys: js.Array[K]): stdLib.Promise[js.Array[V]]
+  def loadMany(keys: js.Array[K]): js.Promise[js.Array[V]]
   /**
      * Adds the provied key and value to the cache. If the key already exists, no
      * change is made. Returns itself for method chaining.

@@ -11,6 +11,6 @@ trait OptionConfig extends js.Object {
   var default: js.UndefOr[js.Any] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var hide: js.UndefOr[scala.Boolean] = js.undefined
-  var `type`: js.UndefOr[scala.Boolean | java.lang.String | stdLib.NumberConstructor] = js.undefined
+  var `type`: js.UndefOr[stdLib.BooleanConstructor | stdLib.StringConstructor | stdLib.NumberConstructor] = js.undefined
 }
 

@@ -23,6 +23,6 @@ trait PluginBase[T] extends js.Object {
        * * server - the server object with a plugin-specific server.realm.
        * * options - any options passed to the plugin during registration via server.register().
        */
-  def register(server: Server, options: T): scala.Unit | stdLib.Promise[scala.Unit]
+  def register(server: Server, options: T): scala.Unit | js.Promise[scala.Unit]
 }
 

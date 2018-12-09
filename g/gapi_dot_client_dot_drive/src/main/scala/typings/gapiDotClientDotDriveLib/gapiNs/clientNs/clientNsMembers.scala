@@ -12,7 +12,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotDriveLib.gapiDotClientDotDriveLibStrings.drive,
     version: gapiDotClientDotDriveLib.gapiDotClientDotDriveLibStrings.v3
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotDriveLib.gapiDotClientDotDriveLibStrings.drive,
     version: gapiDotClientDotDriveLib.gapiDotClientDotDriveLibStrings.v3,

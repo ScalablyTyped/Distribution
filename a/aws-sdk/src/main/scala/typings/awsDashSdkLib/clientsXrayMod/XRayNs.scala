@@ -13,7 +13,7 @@ object XRayNs extends js.Object {
     /**
          * The canonical name of the alias.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * A list of names for the alias, including the canonical name.
          */
@@ -21,7 +21,7 @@ object XRayNs extends js.Object {
     /**
          * The type of the alias.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -37,7 +37,7 @@ object XRayNs extends js.Object {
     /**
          * Value for a String annotation.
          */
-    var StringValue: js.UndefOr[java.lang.String] = js.undefined
+    var StringValue: js.UndefOr[String] = js.undefined
   }
   
   
@@ -53,7 +53,7 @@ object XRayNs extends js.Object {
     /**
          * The name of a corresponding availability zone.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -89,7 +89,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Specify the trace IDs of requests for which to retrieve segments.
          */
@@ -101,7 +101,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Full traces for the specified requests.
          */
@@ -176,11 +176,11 @@ object XRayNs extends js.Object {
     /**
          * The ARN of the sampling rule. Specify a rule by either name or ARN, but not both.
          */
-    var RuleARN: js.UndefOr[java.lang.String] = js.undefined
+    var RuleARN: js.UndefOr[String] = js.undefined
     /**
          * The name of the sampling rule. Specify a rule by either name or ARN, but not both.
          */
-    var RuleName: js.UndefOr[java.lang.String] = js.undefined
+    var RuleName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -248,7 +248,7 @@ object XRayNs extends js.Object {
     /**
          * The ID of the customer master key (CMK) used for encryption, if applicable.
          */
-    var KeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KeyId: js.UndefOr[String] = js.undefined
     /**
          * The encryption status. While the status is UPDATING, X-Ray may encrypt data with a combination of the new and old settings.
          */
@@ -276,7 +276,7 @@ object XRayNs extends js.Object {
     /**
          * The name of the entity.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * A flag that denotes a remote subsegment.
          */
@@ -288,7 +288,7 @@ object XRayNs extends js.Object {
     /**
          * The account ID associated to the service.
          */
-    var AccountId: js.UndefOr[java.lang.String] = js.undefined
+    var AccountId: js.UndefOr[String] = js.undefined
     /**
          * The path of root cause entities found on the service. 
          */
@@ -300,7 +300,7 @@ object XRayNs extends js.Object {
     /**
          * The service name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * A collection of associated service names.
          */
@@ -308,7 +308,7 @@ object XRayNs extends js.Object {
     /**
          * The type associated to the service.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -344,7 +344,7 @@ object XRayNs extends js.Object {
     /**
          * The name of the entity.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * A flag that denotes a remote subsegment.
          */
@@ -356,7 +356,7 @@ object XRayNs extends js.Object {
     /**
          * The account ID associated to the service.
          */
-    var AccountId: js.UndefOr[java.lang.String] = js.undefined
+    var AccountId: js.UndefOr[String] = js.undefined
     /**
          * The path of root cause entities found on the service. 
          */
@@ -368,7 +368,7 @@ object XRayNs extends js.Object {
     /**
          * The service name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * A collection of associated service names.
          */
@@ -376,7 +376,7 @@ object XRayNs extends js.Object {
     /**
          * The type associated to the service.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -439,7 +439,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -447,7 +447,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -455,7 +455,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Rule definitions and metadata.
          */
@@ -467,7 +467,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -475,7 +475,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the number of requests instrumented for each sampling rule.
          */
@@ -523,7 +523,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The start of the time frame for which to generate a graph.
          */
@@ -535,7 +535,7 @@ object XRayNs extends js.Object {
     /**
          * A flag indicating whether the group's filter expression has been consistent, or if the returned service graph may show traces from an older version of the group's filter expression.
          */
-    var ContainsOldGroupVersions: js.UndefOr[scala.Boolean] = js.undefined
+    var ContainsOldGroupVersions: js.UndefOr[Boolean] = js.undefined
     /**
          * The end of the time frame for which the graph was generated.
          */
@@ -543,7 +543,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The services that have processed a traced request during the specified time frame.
          */
@@ -559,7 +559,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Trace IDs of requests for which to generate a service graph.
          */
@@ -571,7 +571,7 @@ object XRayNs extends js.Object {
     /**
          * Pagination token. Not used.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The services that have processed one of the specified requests.
          */
@@ -591,7 +591,7 @@ object XRayNs extends js.Object {
     /**
          * Specify the pagination token returned by a previous request to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Set to true to get summaries for only a subset of available traces.
          */
@@ -611,7 +611,7 @@ object XRayNs extends js.Object {
     /**
          * If the requested time frame contained more than one page of results, you can use this token to retrieve the next page. The first page contains the most most recent results, closest to the end of the time frame.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Trace IDs and metadata for traces that were found in the specified time frame.
          */
@@ -627,15 +627,15 @@ object XRayNs extends js.Object {
     /**
          * The filter expression defining the parameters to include traces.
          */
-    var FilterExpression: js.UndefOr[java.lang.String] = js.undefined
+    var FilterExpression: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the group generated based on the GroupName.
          */
-    var GroupARN: js.UndefOr[java.lang.String] = js.undefined
+    var GroupARN: js.UndefOr[String] = js.undefined
     /**
          * The unique case-sensitive name of the group.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -643,15 +643,15 @@ object XRayNs extends js.Object {
     /**
          * The filter expression defining the parameters to include traces.
          */
-    var FilterExpression: js.UndefOr[java.lang.String] = js.undefined
+    var FilterExpression: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the group generated based on the GroupName.
          */
-    var GroupARN: js.UndefOr[java.lang.String] = js.undefined
+    var GroupARN: js.UndefOr[String] = js.undefined
     /**
          * The unique case-sensitive name of the group.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -671,11 +671,11 @@ object XRayNs extends js.Object {
     /**
          * The IP address of the requestor.
          */
-    var ClientIp: js.UndefOr[java.lang.String] = js.undefined
+    var ClientIp: js.UndefOr[String] = js.undefined
     /**
          * The request method.
          */
-    var HttpMethod: js.UndefOr[java.lang.String] = js.undefined
+    var HttpMethod: js.UndefOr[String] = js.undefined
     /**
          * The response status.
          */
@@ -683,11 +683,11 @@ object XRayNs extends js.Object {
     /**
          * The request URL.
          */
-    var HttpURL: js.UndefOr[java.lang.String] = js.undefined
+    var HttpURL: js.UndefOr[String] = js.undefined
     /**
          * The request's user agent string.
          */
-    var UserAgent: js.UndefOr[java.lang.String] = js.undefined
+    var UserAgent: js.UndefOr[String] = js.undefined
   }
   
   
@@ -695,7 +695,7 @@ object XRayNs extends js.Object {
     /**
          * The ID of a corresponding EC2 instance.
          */
-    var Id: js.UndefOr[java.lang.String] = js.undefined
+    var Id: js.UndefOr[String] = js.undefined
   }
   
   
@@ -762,7 +762,7 @@ object XRayNs extends js.Object {
     /**
          * The ARN of a corresponding resource.
          */
-    var ARN: js.UndefOr[java.lang.String] = js.undefined
+    var ARN: js.UndefOr[String] = js.undefined
   }
   
   
@@ -782,7 +782,7 @@ object XRayNs extends js.Object {
     /**
          * The name of the entity.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * A flag that denotes a remote subsegment.
          */
@@ -794,7 +794,7 @@ object XRayNs extends js.Object {
     /**
          * The account ID associated to the service.
          */
-    var AccountId: js.UndefOr[java.lang.String] = js.undefined
+    var AccountId: js.UndefOr[String] = js.undefined
     /**
          * The path of root cause entities found on the service. 
          */
@@ -806,7 +806,7 @@ object XRayNs extends js.Object {
     /**
          * The service name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * A collection of associated service names.
          */
@@ -814,7 +814,7 @@ object XRayNs extends js.Object {
     /**
          * The type associated to the service.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -822,11 +822,11 @@ object XRayNs extends js.Object {
     /**
          * The message of the exception.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * The name of the exception.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -862,7 +862,7 @@ object XRayNs extends js.Object {
     /**
          * The ARN of the sampling rule. Specify a rule by either name or ARN, but not both.
          */
-    var RuleARN: js.UndefOr[java.lang.String] = js.undefined
+    var RuleARN: js.UndefOr[String] = js.undefined
     /**
          * The name of the sampling rule. Specify a rule by either name or ARN, but not both.
          */
@@ -934,7 +934,7 @@ object XRayNs extends js.Object {
     /**
          * The ARN of the sampling rule. Specify a rule by either name or ARN, but not both.
          */
-    var RuleARN: js.UndefOr[java.lang.String] = js.undefined
+    var RuleARN: js.UndefOr[String] = js.undefined
     /**
          * The name of the sampling rule. Specify a rule by either name or ARN, but not both.
          */
@@ -966,7 +966,7 @@ object XRayNs extends js.Object {
     /**
          * The name of the sampling rule.
          */
-    var RuleName: js.UndefOr[java.lang.String] = js.undefined
+    var RuleName: js.UndefOr[String] = js.undefined
     /**
          * The number of requests recorded.
          */
@@ -1026,7 +1026,7 @@ object XRayNs extends js.Object {
     /**
          * The name of the sampling rule.
          */
-    var RuleName: js.UndefOr[java.lang.String] = js.undefined
+    var RuleName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1046,7 +1046,7 @@ object XRayNs extends js.Object {
     /**
          * Identifier of the AWS account in which the service runs.
          */
-    var AccountId: js.UndefOr[java.lang.String] = js.undefined
+    var AccountId: js.UndefOr[String] = js.undefined
     /**
          * A histogram that maps the spread of service durations.
          */
@@ -1062,7 +1062,7 @@ object XRayNs extends js.Object {
     /**
          * The canonical name of the service.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * A list of names for the service, including the canonical name.
          */
@@ -1086,7 +1086,7 @@ object XRayNs extends js.Object {
     /**
          * The service's state.
          */
-    var State: js.UndefOr[java.lang.String] = js.undefined
+    var State: js.UndefOr[String] = js.undefined
     /**
          * Aggregated statistics for the service.
          */
@@ -1094,7 +1094,7 @@ object XRayNs extends js.Object {
     /**
          * The type of service.   AWS Resource - The type of an AWS resource. For example, AWS::EC2::Instance for a application running on Amazon EC2 or AWS::DynamoDB::Table for an Amazon DynamoDB table that the application used.   AWS Service - The type of an AWS service. For example, AWS::DynamoDB for downstream calls to Amazon DynamoDB that didn't target a specific table.    client - Represents the clients that sent requests to a root service.    remote - A downstream service of indeterminate type.  
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1102,11 +1102,11 @@ object XRayNs extends js.Object {
     /**
          * 
          */
-    var AccountId: js.UndefOr[java.lang.String] = js.undefined
+    var AccountId: js.UndefOr[String] = js.undefined
     /**
          * 
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * 
          */
@@ -1114,7 +1114,7 @@ object XRayNs extends js.Object {
     /**
          * 
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1274,7 +1274,7 @@ object XRayNs extends js.Object {
     /**
          * The user's name.
          */
-    var UserName: js.UndefOr[java.lang.String] = js.undefined
+    var UserName: js.UndefOr[String] = js.undefined
   }
   
   @js.native
@@ -1824,15 +1824,15 @@ object XRayNs extends js.Object {
     /**
          * The error code.
          */
-    var ErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The error message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * The name of the sampling rule.
          */
-    var RuleName: js.UndefOr[java.lang.String] = js.undefined
+    var RuleName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1840,15 +1840,15 @@ object XRayNs extends js.Object {
     /**
          * The error that caused processing to fail.
          */
-    var ErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The segment's ID.
          */
-    var Id: js.UndefOr[java.lang.String] = js.undefined
+    var Id: js.UndefOr[String] = js.undefined
     /**
          * The error message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1905,7 +1905,7 @@ object XRayNs extends js.Object {
   
   val TypesNs: this.type = js.native
   type AliasList = js.Array[Alias]
-  type AliasNames = js.Array[java.lang.String]
+  type AliasNames = js.Array[String]
   type AnnotationKey = java.lang.String
   type AttributeKey = java.lang.String
   type AttributeValue = java.lang.String
@@ -1960,7 +1960,7 @@ object XRayNs extends js.Object {
   type ServiceIds = js.Array[ServiceId]
   type ServiceList = js.Array[Service]
   type ServiceName = java.lang.String
-  type ServiceNames = js.Array[java.lang.String]
+  type ServiceNames = js.Array[String]
   type ServiceType = java.lang.String
   type String = java.lang.String
   type TelemetryRecordList = js.Array[TelemetryRecord]

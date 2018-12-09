@@ -11,7 +11,7 @@ trait Lifecycle[Attrs, State]
 /* _ */ ScalablyTyped.runtime.NumberDictionary[js.Any] {
   /** The onbeforeremove hook is called before a DOM element is detached from the document. If a Promise is returned, Mithril only detaches the DOM element after the promise completes. */
   var onbeforeremove: js.UndefOr[
-    js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], stdLib.Promise[_] | scala.Unit]
+    js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | scala.Unit]
   ] = js.undefined
   /** The onbeforeupdate hook is called before a vnode is diffed in a update. */
   var onbeforeupdate: js.UndefOr[

@@ -10,16 +10,16 @@ trait FlowIterator[T] extends js.Object {
   var `return`: js.UndefOr[
     js.Function1[
       /* value */ js.UndefOr[js.Any], 
-      stdLib.IteratorResult[T] | stdLib.Promise[stdLib.IteratorResult[T]]
+      stdLib.IteratorResult[T] | js.Promise[stdLib.IteratorResult[T]]
     ]
   ] = js.native
   var `throw`: js.UndefOr[
     js.Function1[
       /* e */ js.UndefOr[js.Any], 
-      stdLib.IteratorResult[T] | stdLib.Promise[stdLib.IteratorResult[T]]
+      stdLib.IteratorResult[T] | js.Promise[stdLib.IteratorResult[T]]
     ]
   ] = js.native
-  def next(): stdLib.IteratorResult[T] | stdLib.Promise[stdLib.IteratorResult[T]] = js.native
-  def next(value: js.Any): stdLib.IteratorResult[T] | stdLib.Promise[stdLib.IteratorResult[T]] = js.native
+  def next(): stdLib.IteratorResult[T] | js.Promise[stdLib.IteratorResult[T]] = js.native
+  def next(value: js.Any): stdLib.IteratorResult[T] | js.Promise[stdLib.IteratorResult[T]] = js.native
 }
 

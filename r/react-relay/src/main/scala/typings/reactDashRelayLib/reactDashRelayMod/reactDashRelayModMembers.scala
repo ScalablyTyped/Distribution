@@ -50,14 +50,14 @@ object reactDashRelayModMembers extends js.Object {
   environment: js.Any,
     taggedNode: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode,
     variables: relayDashRuntimeLib.relayDashRuntimeMod.Variables
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def fetchQuery(
      // FIXME - $FlowFixMe in facebook source code
   environment: js.Any,
     taggedNode: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode,
     variables: relayDashRuntimeLib.relayDashRuntimeMod.Variables,
     cacheConfig: relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def requestSubscription(
     environment: relayDashRuntimeLib.relayDashRuntimeMod.Environment,
     config: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLSubscriptionConfig

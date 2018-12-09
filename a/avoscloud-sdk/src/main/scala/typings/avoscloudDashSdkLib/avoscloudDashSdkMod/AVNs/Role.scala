@@ -18,9 +18,8 @@ import scala.scalajs.js.annotation._
      * A AV.Role is a local representation of a role persisted to the AV
      * cloud.
      */
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @js.native
-trait Role extends js.Object {
+@js.native
+trait Role extends Object {
   def getName(): java.lang.String = js.native
   def getRoles(): Relation = js.native
   def getUsers(): Relation = js.native

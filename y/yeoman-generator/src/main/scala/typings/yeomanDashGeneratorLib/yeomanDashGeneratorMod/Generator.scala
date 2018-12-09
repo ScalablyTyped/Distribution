@@ -226,7 +226,7 @@ trait Generator
     config: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.OptionConfig
   ): this.type = js.native
   def optionsHelp(): java.lang.String = js.native
-  def prompt(questions: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Questions): stdLib.Promise[yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Answers] = js.native
+  def prompt(questions: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Questions): js.Promise[yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Answers] = js.native
   def registerTransformStream(stream: js.Array[js.Object]): this.type = js.native
   def registerTransformStream(stream: js.Object): this.type = js.native
   def rootGeneratorName(): java.lang.String = js.native

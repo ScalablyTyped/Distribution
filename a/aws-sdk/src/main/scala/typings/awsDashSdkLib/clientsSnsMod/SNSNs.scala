@@ -81,7 +81,7 @@ object SNSNs extends js.Object {
     /**
          * EndpointArn returned from CreateEndpoint action.
          */
-    var EndpointArn: js.UndefOr[java.lang.String] = js.undefined
+    var EndpointArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -93,11 +93,11 @@ object SNSNs extends js.Object {
     /**
          * Application names must be made up of only uppercase and lowercase ASCII letters, numbers, underscores, hyphens, and periods, and must be between 1 and 256 characters long.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The following platforms are supported: ADM (Amazon Device Messaging), APNS (Apple Push Notification Service), APNS_SANDBOX, and GCM (Google Cloud Messaging).
          */
-    var Platform: java.lang.String
+    var Platform: String
   }
   
   
@@ -105,7 +105,7 @@ object SNSNs extends js.Object {
     /**
          * PlatformApplicationArn is returned.
          */
-    var PlatformApplicationArn: js.UndefOr[java.lang.String] = js.undefined
+    var PlatformApplicationArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -117,15 +117,15 @@ object SNSNs extends js.Object {
     /**
          * Arbitrary user data to associate with the endpoint. Amazon SNS does not use this data. The data must be in UTF-8 format and less than 2KB.
          */
-    var CustomUserData: js.UndefOr[java.lang.String] = js.undefined
+    var CustomUserData: js.UndefOr[String] = js.undefined
     /**
          * PlatformApplicationArn returned from CreatePlatformApplication is used to create a an endpoint.
          */
-    var PlatformApplicationArn: java.lang.String
+    var PlatformApplicationArn: String
     /**
          * Unique identifier created by the notification service for an app on a device. The specific name for Token will vary, depending on which notification service is being used. For example, when using APNS as the notification service, you need the device token. Alternatively, when using GCM or ADM, the device token equivalent is called the registration ID.
          */
-    var Token: java.lang.String
+    var Token: String
   }
   
   
@@ -153,7 +153,7 @@ object SNSNs extends js.Object {
     /**
          * EndpointArn of endpoint to delete.
          */
-    var EndpointArn: java.lang.String
+    var EndpointArn: String
   }
   
   
@@ -161,7 +161,7 @@ object SNSNs extends js.Object {
     /**
          * PlatformApplicationArn of platform application object to delete.
          */
-    var PlatformApplicationArn: java.lang.String
+    var PlatformApplicationArn: String
   }
   
   
@@ -181,7 +181,7 @@ object SNSNs extends js.Object {
     /**
          * EndpointArn for mobile app and device.
          */
-    var EndpointArn: js.UndefOr[java.lang.String] = js.undefined
+    var EndpointArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -189,7 +189,7 @@ object SNSNs extends js.Object {
     /**
          * EndpointArn for GetEndpointAttributes input.
          */
-    var EndpointArn: java.lang.String
+    var EndpointArn: String
   }
   
   
@@ -205,7 +205,7 @@ object SNSNs extends js.Object {
     /**
          * PlatformApplicationArn for GetPlatformApplicationAttributesInput.
          */
-    var PlatformApplicationArn: java.lang.String
+    var PlatformApplicationArn: String
   }
   
   
@@ -269,11 +269,11 @@ object SNSNs extends js.Object {
     /**
          * NextToken string is used when calling ListEndpointsByPlatformApplication action to retrieve additional records that are available after the first page results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * PlatformApplicationArn for ListEndpointsByPlatformApplicationInput action.
          */
-    var PlatformApplicationArn: java.lang.String
+    var PlatformApplicationArn: String
   }
   
   
@@ -285,7 +285,7 @@ object SNSNs extends js.Object {
     /**
          * NextToken string is returned when calling ListEndpointsByPlatformApplication action if additional records are available after the first page results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -313,7 +313,7 @@ object SNSNs extends js.Object {
     /**
          * NextToken string is used when calling ListPlatformApplications action to retrieve additional records that are available after the first page results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -321,7 +321,7 @@ object SNSNs extends js.Object {
     /**
          * NextToken string is returned when calling ListPlatformApplications action if additional records are available after the first page results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Platform applications returned when calling ListPlatformApplications action.
          */
@@ -394,7 +394,7 @@ object SNSNs extends js.Object {
   
   
   trait MapStringToString
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait MessageAttributeMap
@@ -409,11 +409,11 @@ object SNSNs extends js.Object {
     /**
          * Amazon SNS supports the following logical data types: String, String.Array, Number, and Binary. For more information, see Message Attribute Data Types.
          */
-    var DataType: java.lang.String
+    var DataType: String
     /**
          * Strings are Unicode with UTF8 binary encoding. For a list of code values, see http://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters.
          */
-    var StringValue: js.UndefOr[java.lang.String] = js.undefined
+    var StringValue: js.UndefOr[String] = js.undefined
   }
   
   
@@ -436,7 +436,7 @@ object SNSNs extends js.Object {
     /**
          * PlatformApplicationArn for platform application object.
          */
-    var PlatformApplicationArn: js.UndefOr[java.lang.String] = js.undefined
+    var PlatformApplicationArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -456,7 +456,7 @@ object SNSNs extends js.Object {
     /**
          * The phone number to which you want to deliver an SMS message. Use E.164 format. If you don't specify a value for the PhoneNumber parameter, you must specify a value for the TargetArn or TopicArn parameters.
          */
-    var PhoneNumber: js.UndefOr[java.lang.String] = js.undefined
+    var PhoneNumber: js.UndefOr[String] = js.undefined
     /**
          * Optional parameter to be used as the "Subject" line when the message is delivered to email endpoints. This field will also be included, if present, in the standard JSON messages delivered to other endpoints. Constraints: Subjects must be ASCII text that begins with a letter, number, or punctuation mark; must not include line breaks or control characters; and must be less than 100 characters long.
          */
@@ -464,7 +464,7 @@ object SNSNs extends js.Object {
     /**
          * Either TopicArn or EndpointArn, but not both. If you don't specify a value for the TargetArn parameter, you must specify a value for the PhoneNumber or TopicArn parameters.
          */
-    var TargetArn: js.UndefOr[java.lang.String] = js.undefined
+    var TargetArn: js.UndefOr[String] = js.undefined
     /**
          * The topic you want to publish to. If you don't specify a value for the TopicArn parameter, you must specify a value for the PhoneNumber or TargetArn parameters.
          */
@@ -500,7 +500,7 @@ object SNSNs extends js.Object {
     /**
          * EndpointArn used for SetEndpointAttributes action.
          */
-    var EndpointArn: java.lang.String
+    var EndpointArn: String
   }
   
   
@@ -512,7 +512,7 @@ object SNSNs extends js.Object {
     /**
          * PlatformApplicationArn for SetPlatformApplicationAttributes action.
          */
-    var PlatformApplicationArn: java.lang.String
+    var PlatformApplicationArn: String
   }
   
   
@@ -1434,7 +1434,7 @@ object SNSNs extends js.Object {
   type DelegatesList = js.Array[delegate]
   type ListOfEndpoints = js.Array[Endpoint]
   type ListOfPlatformApplications = js.Array[PlatformApplication]
-  type ListString = js.Array[java.lang.String]
+  type ListString = js.Array[String]
   type PhoneNumber = java.lang.String
   type PhoneNumberList = js.Array[PhoneNumber]
   type String = java.lang.String

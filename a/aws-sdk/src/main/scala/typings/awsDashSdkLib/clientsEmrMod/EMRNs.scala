@@ -104,11 +104,11 @@ object EMRNs extends js.Object {
     /**
          * The name of the application.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The version of the application.
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -148,7 +148,7 @@ object EMRNs extends js.Object {
     /**
          * A friendly, more verbose message that accompanies an automatic scaling policy state change.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -188,7 +188,7 @@ object EMRNs extends js.Object {
     /**
          * The reason for the failure if the CancelSteps request fails.
          */
-    var Reason: js.UndefOr[java.lang.String] = js.undefined
+    var Reason: js.UndefOr[String] = js.undefined
     /**
          * The status of a CancelSteps Request. The value may be SUBMITTED or FAILED.
          */
@@ -244,11 +244,11 @@ object EMRNs extends js.Object {
     /**
          * The name of the CloudWatch metric that is watched to determine an alarm condition.
          */
-    var MetricName: java.lang.String
+    var MetricName: String
     /**
          * The namespace for the CloudWatch metric. The default is AWS/ElasticMapReduce.
          */
-    var Namespace: js.UndefOr[java.lang.String] = js.undefined
+    var Namespace: js.UndefOr[String] = js.undefined
     /**
          * The period, in seconds, over which the statistic is applied. EMR CloudWatch metrics are emitted every five minutes (300 seconds), so if an EMR CloudWatch metric is specified, specify 300.
          */
@@ -280,7 +280,7 @@ object EMRNs extends js.Object {
     /**
          * Specifies whether the cluster should terminate after completing all steps.
          */
-    var AutoTerminate: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoTerminate: js.UndefOr[Boolean] = js.undefined
     /**
          * Applies only to Amazon EMR releases 4.x and later. The list of Configurations supplied to the EMR cluster.
          */
@@ -312,15 +312,15 @@ object EMRNs extends js.Object {
     /**
          * The path to the Amazon S3 location where logs for this cluster are stored.
          */
-    var LogUri: js.UndefOr[java.lang.String] = js.undefined
+    var LogUri: js.UndefOr[String] = js.undefined
     /**
          * The DNS name of the master node. If the cluster is on a private subnet, this is the private DNS name. On a public subnet, this is the public DNS name.
          */
-    var MasterPublicDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var MasterPublicDnsName: js.UndefOr[String] = js.undefined
     /**
          * The name of the cluster.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * An approximation of the cost of the cluster, represented in m1.small/hours. This value is incremented one time for every hour an m1.small instance runs. Larger instances are weighted more, so an EC2 instance that is roughly four times more expensive would result in the normalized instance hours being incremented by four. This result is only an approximation and does not reflect the actual billing rate.
          */
@@ -328,7 +328,7 @@ object EMRNs extends js.Object {
     /**
          * The Amazon EMR release label, which determines the version of open-source application packages installed on the cluster. Release labels are in the form emr-x.x.x, where x.x.x is an Amazon EMR release version, for example, emr-5.14.0. For more information about Amazon EMR release versions and included application versions and features, see http://docs.aws.amazon.com/emr/latest/ReleaseGuide/. The release label applies only to Amazon EMR releases versions 4.x and later. Earlier versions use AmiVersion.
          */
-    var ReleaseLabel: js.UndefOr[java.lang.String] = js.undefined
+    var ReleaseLabel: js.UndefOr[String] = js.undefined
     /**
          * Applies only when CustomAmiID is used. Specifies the type of updates that are applied from the Amazon Linux AMI package repositories when an instance boots using the AMI.
          */
@@ -336,11 +336,11 @@ object EMRNs extends js.Object {
     /**
          * The AMI version requested for this cluster.
          */
-    var RequestedAmiVersion: js.UndefOr[java.lang.String] = js.undefined
+    var RequestedAmiVersion: js.UndefOr[String] = js.undefined
     /**
          * The AMI version running on this cluster.
          */
-    var RunningAmiVersion: js.UndefOr[java.lang.String] = js.undefined
+    var RunningAmiVersion: js.UndefOr[String] = js.undefined
     /**
          * The way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an instance group is resized. TERMINATE_AT_INSTANCE_HOUR indicates that Amazon EMR terminates nodes at the instance-hour boundary, regardless of when the request to terminate the instance was submitted. This option is only available with Amazon EMR 5.1.0 and later and is the default for clusters created using that version. TERMINATE_AT_TASK_COMPLETION indicates that Amazon EMR blacklists and drains tasks from nodes before terminating the Amazon EC2 instances, regardless of the instance-hour boundary. With either behavior, Amazon EMR removes the least active nodes first and blocks instance termination if it could lead to HDFS corruption. TERMINATE_AT_TASK_COMPLETION is available only in Amazon EMR version 4.1.0 and later, and is the default for versions of Amazon EMR earlier than 5.1.0.
          */
@@ -352,7 +352,7 @@ object EMRNs extends js.Object {
     /**
          * The IAM role that will be assumed by the Amazon EMR service to access AWS resources on your behalf.
          */
-    var ServiceRole: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceRole: js.UndefOr[String] = js.undefined
     /**
          * The current status details about the cluster.
          */
@@ -364,11 +364,11 @@ object EMRNs extends js.Object {
     /**
          * Indicates whether Amazon EMR will lock the cluster to prevent the EC2 instances from being terminated by an API call or user intervention, or in the event of a cluster error.
          */
-    var TerminationProtected: js.UndefOr[scala.Boolean] = js.undefined
+    var TerminationProtected: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the cluster is visible to all IAM users of the AWS account associated with the cluster. If this value is set to true, all IAM users of that AWS account can view and manage the cluster if they have the proper policy permissions set. If this value is false, only the IAM user that created the cluster can view and manage it. This value can be changed using the SetVisibleToAllUsers action.
          */
-    var VisibleToAllUsers: js.UndefOr[scala.Boolean] = js.undefined
+    var VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -380,7 +380,7 @@ object EMRNs extends js.Object {
     /**
          * The descriptive message for the state change reason.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -408,7 +408,7 @@ object EMRNs extends js.Object {
     /**
          * The name of the cluster.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * An approximation of the cost of the cluster, represented in m1.small/hours. This value is incremented one time for every hour an m1.small instance runs. Larger instances are weighted more, so an EC2 instance that is roughly four times more expensive would result in the normalized instance hours being incremented by four. This result is only an approximation and does not reflect the actual billing rate.
          */
@@ -444,11 +444,11 @@ object EMRNs extends js.Object {
     /**
          * The name of the command.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The Amazon S3 location of the command script.
          */
-    var ScriptPath: js.UndefOr[java.lang.String] = js.undefined
+    var ScriptPath: js.UndefOr[String] = js.undefined
   }
   
   
@@ -456,7 +456,7 @@ object EMRNs extends js.Object {
     /**
          * The classification within a configuration.
          */
-    var Classification: js.UndefOr[java.lang.String] = js.undefined
+    var Classification: js.UndefOr[String] = js.undefined
     /**
          * A list of additional configurations to apply within a configuration object.
          */
@@ -476,7 +476,7 @@ object EMRNs extends js.Object {
     /**
          * The security configuration details in JSON format. For JSON parameters and examples, see Use Security Configurations to Set Up Cluster Security in the Amazon EMR Management Guide.
          */
-    var SecurityConfiguration: java.lang.String
+    var SecurityConfiguration: String
   }
   
   
@@ -567,7 +567,7 @@ object EMRNs extends js.Object {
     /**
          * The security configuration details in JSON format.
          */
-    var SecurityConfiguration: js.UndefOr[java.lang.String] = js.undefined
+    var SecurityConfiguration: js.UndefOr[String] = js.undefined
   }
   
   
@@ -595,7 +595,7 @@ object EMRNs extends js.Object {
     /**
          * The device name that is exposed to the instance, such as /dev/sdh.
          */
-    var Device: js.UndefOr[java.lang.String] = js.undefined
+    var Device: js.UndefOr[String] = js.undefined
     /**
          * EBS volume specifications such as volume type, IOPS, and size (GiB) that will be requested for the EBS volume attached to an EC2 instance in the cluster.
          */
@@ -631,11 +631,11 @@ object EMRNs extends js.Object {
     /**
          * The device name that is exposed to the instance, such as /dev/sdh.
          */
-    var Device: js.UndefOr[java.lang.String] = js.undefined
+    var Device: js.UndefOr[String] = js.undefined
     /**
          * The volume identifier of the EBS volume.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -651,27 +651,27 @@ object EMRNs extends js.Object {
     /**
          * The Availability Zone in which the cluster will run. 
          */
-    var Ec2AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var Ec2AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The name of the Amazon EC2 key pair to use when connecting with SSH into the master node as a user named "hadoop".
          */
-    var Ec2KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var Ec2KeyName: js.UndefOr[String] = js.undefined
     /**
          * To launch the cluster in Amazon VPC, set this parameter to the identifier of the Amazon VPC subnet where you want the cluster to launch. If you do not specify this value, the cluster is launched in the normal AWS cloud, outside of a VPC. Amazon VPC currently does not support cluster compute quadruple extra large (cc1.4xlarge) instances. Thus, you cannot specify the cc1.4xlarge instance type for nodes of a cluster launched in a VPC.
          */
-    var Ec2SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var Ec2SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the Amazon EC2 security group for the master node.
          */
-    var EmrManagedMasterSecurityGroup: js.UndefOr[java.lang.String] = js.undefined
+    var EmrManagedMasterSecurityGroup: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the Amazon EC2 security group for the slave nodes.
          */
-    var EmrManagedSlaveSecurityGroup: js.UndefOr[java.lang.String] = js.undefined
+    var EmrManagedSlaveSecurityGroup: js.UndefOr[String] = js.undefined
     /**
          * The IAM role that was specified when the cluster was launched. The EC2 instances of the cluster assume this role.
          */
-    var IamInstanceProfile: js.UndefOr[java.lang.String] = js.undefined
+    var IamInstanceProfile: js.UndefOr[String] = js.undefined
     /**
          * Applies to clusters configured with the instance fleets option. Specifies one or more Availability Zones in which to launch EC2 cluster instances when the EC2-Classic network configuration is supported. Amazon EMR chooses the Availability Zone with the best fit from among the list of RequestedEc2AvailabilityZones, and then launches all cluster instances within that Availability Zone. If you do not specify this value, Amazon EMR chooses the Availability Zone for you. RequestedEc2SubnetIDs and RequestedEc2AvailabilityZones cannot be specified together.
          */
@@ -683,7 +683,7 @@ object EMRNs extends js.Object {
     /**
          * The identifier of the Amazon EC2 security group for the Amazon EMR service to access clusters in VPC private subnets.
          */
-    var ServiceAccessSecurityGroup: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceAccessSecurityGroup: js.UndefOr[String] = js.undefined
   }
   
   
@@ -691,15 +691,15 @@ object EMRNs extends js.Object {
     /**
          * The path to the log file where the step failure root cause was originally recorded.
          */
-    var LogFile: js.UndefOr[java.lang.String] = js.undefined
+    var LogFile: js.UndefOr[String] = js.undefined
     /**
          * The descriptive message including the error the EMR service has identified as the cause of step failure. This is text from an error log that describes the root cause of the failure.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * The reason for the step failure. In the case where the service cannot successfully determine the root cause of the failure, it returns "Unknown Error" as a reason.
          */
-    var Reason: js.UndefOr[java.lang.String] = js.undefined
+    var Reason: js.UndefOr[String] = js.undefined
   }
   
   
@@ -731,11 +731,11 @@ object EMRNs extends js.Object {
     /**
          * The path to the JAR file that runs during the step.
          */
-    var Jar: js.UndefOr[java.lang.String] = js.undefined
+    var Jar: js.UndefOr[String] = js.undefined
     /**
          * The name of the main class in the specified Java file. If not specified, the JAR file should specify a main class in its manifest file.
          */
-    var MainClass: js.UndefOr[java.lang.String] = js.undefined
+    var MainClass: js.UndefOr[String] = js.undefined
     /**
          * The list of Java properties that are set when the step runs. You can use these properties to pass key value pairs to your main function.
          */
@@ -763,7 +763,7 @@ object EMRNs extends js.Object {
     /**
          * The identifier of the instance group to which this instance belongs.
          */
-    var InstanceGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceGroupId: js.UndefOr[String] = js.undefined
     /**
          * The EC2 instance type, for example m3.xlarge.
          */
@@ -775,19 +775,19 @@ object EMRNs extends js.Object {
     /**
          * The private DNS name of the instance.
          */
-    var PrivateDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateDnsName: js.UndefOr[String] = js.undefined
     /**
          * The private IP address of the instance.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The public DNS name of the instance.
          */
-    var PublicDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PublicDnsName: js.UndefOr[String] = js.undefined
     /**
          * The public IP address of the instance.
          */
-    var PublicIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The current status of the instance.
          */
@@ -899,7 +899,7 @@ object EMRNs extends js.Object {
     /**
          * An explanatory message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -943,7 +943,7 @@ object EMRNs extends js.Object {
     /**
          * The maximum Spot price your are willing to pay for EC2 instances. An optional, nullable field that applies if the MarketType for the instance group is specified as SPOT. Specify the maximum spot price in USD. If the value is NULL and SPOT is specified, the maximum Spot price is set equal to the On-Demand price.
          */
-    var BidPrice: js.UndefOr[java.lang.String] = js.undefined
+    var BidPrice: js.UndefOr[String] = js.undefined
     /**
          *  Amazon EMR releases 4.x or later.  The list of configurations supplied for an EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
          */
@@ -975,7 +975,7 @@ object EMRNs extends js.Object {
     /**
          * The name of the instance group.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The target number of instances for the instance group.
          */
@@ -1123,7 +1123,7 @@ object EMRNs extends js.Object {
     /**
          * The status change reason description.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1183,7 +1183,7 @@ object EMRNs extends js.Object {
     /**
          * The status change reason description.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1335,7 +1335,7 @@ object EMRNs extends js.Object {
     /**
          * Specifies whether the cluster is visible to all IAM users of the AWS account associated with the cluster. If this value is set to true, all IAM users of that AWS account can view and (if they have the proper policy permissions set) manage the cluster. If it is set to false, only the IAM user that created the cluster can view and manage it. This value can be changed using the SetVisibleToAllUsers action.
          */
-    var VisibleToAllUsers: js.UndefOr[scala.Boolean] = js.undefined
+    var VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1415,7 +1415,7 @@ object EMRNs extends js.Object {
     /**
          * Specifies whether the cluster should remain available after completing all steps.
          */
-    var KeepJobFlowAliveWhenNoSteps: js.UndefOr[scala.Boolean] = js.undefined
+    var KeepJobFlowAliveWhenNoSteps: js.UndefOr[Boolean] = js.undefined
     /**
          * The EC2 instance type of the master node.
          */
@@ -1435,7 +1435,7 @@ object EMRNs extends js.Object {
     /**
          * Specifies whether to lock the cluster to prevent the Amazon EC2 instances from being terminated by API call, user intervention, or in the event of a job-flow error.
          */
-    var TerminationProtected: js.UndefOr[scala.Boolean] = js.undefined
+    var TerminationProtected: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1463,7 +1463,7 @@ object EMRNs extends js.Object {
     /**
          * Specifies whether the cluster should remain available after completing all steps.
          */
-    var KeepJobFlowAliveWhenNoSteps: js.UndefOr[scala.Boolean] = js.undefined
+    var KeepJobFlowAliveWhenNoSteps: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon EC2 instance identifier of the master node.
          */
@@ -1491,7 +1491,7 @@ object EMRNs extends js.Object {
     /**
          * Specifies whether the Amazon EC2 instances in the cluster are protected from termination by API calls, user intervention, or in the event of a job-flow error.
          */
-    var TerminationProtected: js.UndefOr[scala.Boolean] = js.undefined
+    var TerminationProtected: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1735,11 +1735,11 @@ object EMRNs extends js.Object {
     /**
          * The dimension name.
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * The dimension value.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1933,7 +1933,7 @@ object EMRNs extends js.Object {
     /**
          * Whether the cluster is visible to all IAM users of the AWS account associated with the cluster. If this value is set to true, all IAM users of that AWS account can view and (if they have the proper policy permissions set) manage the cluster. If it is set to false, only the IAM user that created the cluster can view and manage it.
          */
-    var VisibleToAllUsers: js.UndefOr[scala.Boolean] = js.undefined
+    var VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1977,11 +1977,11 @@ object EMRNs extends js.Object {
     /**
          * A friendly, more verbose description of the automatic scaling rule.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The name used to identify an automatic scaling rule. Rule names must be unique within a scaling policy.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The CloudWatch alarm definition that determines when automatic scaling activity is triggered.
          */
@@ -2029,7 +2029,7 @@ object EMRNs extends js.Object {
     /**
          * A Boolean that indicates whether to protect the cluster and prevent the Amazon EC2 instances in the cluster from shutting down due to API calls, user intervention, or job-flow error.
          */
-    var TerminationProtected: scala.Boolean
+    var TerminationProtected: Boolean
   }
   
   
@@ -2041,7 +2041,7 @@ object EMRNs extends js.Object {
     /**
          * Whether the specified clusters are visible to all IAM users of the AWS account associated with the cluster. If this value is set to True, all IAM users of that AWS account can view and, if they have the proper IAM policy permissions set, manage the clusters. If it is set to False, only the IAM user that created a cluster can view and manage it.
          */
-    var VisibleToAllUsers: scala.Boolean
+    var VisibleToAllUsers: Boolean
   }
   
   
@@ -2105,7 +2105,7 @@ object EMRNs extends js.Object {
     /**
          * The name of the cluster step.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The current execution status details of the cluster step.
          */
@@ -2173,7 +2173,7 @@ object EMRNs extends js.Object {
     /**
          * The descriptive message for the state change reason.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2213,7 +2213,7 @@ object EMRNs extends js.Object {
     /**
          * The name of the cluster step.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The current execution status details of the cluster step.
          */
@@ -2238,7 +2238,7 @@ object EMRNs extends js.Object {
   
   
   trait StringMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait SupportedProductConfig extends js.Object {
@@ -2257,11 +2257,11 @@ object EMRNs extends js.Object {
     /**
          * A user-defined key, which is the minimum required information for a valid tag. For more information, see Tag . 
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * A user-defined value, which is optional in a tag. For more information, see Tag Clusters. 
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3133,7 +3133,7 @@ object EMRNs extends js.Object {
     /**
          * The volume type. Volume types supported are gp2, io1, standard.
          */
-    var VolumeType: java.lang.String
+    var VolumeType: String
   }
   
   val TypesNs: this.type = js.native
@@ -3216,7 +3216,7 @@ object EMRNs extends js.Object {
   type StepStateList = js.Array[StepState]
   type StepSummaryList = js.Array[StepSummary]
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type SupportedProductsList = js.Array[XmlStringMaxLen256]
   type TagList = js.Array[Tag]
   type Unit = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.SECONDS | awsDashSdkLib.awsDashSdkLibStrings.MICRO_SECONDS | awsDashSdkLib.awsDashSdkLibStrings.MILLI_SECONDS | awsDashSdkLib.awsDashSdkLibStrings.BYTES | awsDashSdkLib.awsDashSdkLibStrings.KILO_BYTES | awsDashSdkLib.awsDashSdkLibStrings.MEGA_BYTES | awsDashSdkLib.awsDashSdkLibStrings.GIGA_BYTES | awsDashSdkLib.awsDashSdkLibStrings.TERA_BYTES | awsDashSdkLib.awsDashSdkLibStrings.BITS | awsDashSdkLib.awsDashSdkLibStrings.KILO_BITS | awsDashSdkLib.awsDashSdkLibStrings.MEGA_BITS | awsDashSdkLib.awsDashSdkLibStrings.GIGA_BITS | awsDashSdkLib.awsDashSdkLibStrings.TERA_BITS | awsDashSdkLib.awsDashSdkLibStrings.PERCENT | awsDashSdkLib.awsDashSdkLibStrings.COUNT | awsDashSdkLib.awsDashSdkLibStrings.BYTES_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.KILO_BYTES_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.MEGA_BYTES_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.GIGA_BYTES_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.TERA_BYTES_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.BITS_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.KILO_BITS_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.MEGA_BITS_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.GIGA_BITS_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.TERA_BITS_PER_SECOND | awsDashSdkLib.awsDashSdkLibStrings.COUNT_PER_SECOND | java.lang.String

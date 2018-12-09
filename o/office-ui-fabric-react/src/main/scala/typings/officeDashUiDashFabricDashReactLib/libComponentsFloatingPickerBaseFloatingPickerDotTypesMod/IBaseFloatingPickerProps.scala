@@ -78,7 +78,7 @@ trait IBaseFloatingPickerProps[T]
   var onZeroQuerySuggestion: js.UndefOr[
     js.Function1[
       /* selectedItems */ js.UndefOr[js.Array[T]], 
-      js.Array[T] | stdLib.PromiseLike[js.Array[T]] | scala.Null
+      js.Array[T] | js.Thenable[js.Array[T]] | scala.Null
     ]
   ] = js.native
   /**
@@ -120,13 +120,13 @@ trait IBaseFloatingPickerProps[T]
        * If used in conjunction with resolveDelay this will ony kick off after the delay throttle.
        * Return null if using as a controlled component
        */
-  def onResolveSuggestions(filter: java.lang.String): js.Array[T] | stdLib.PromiseLike[js.Array[T]] | scala.Null = js.native
+  def onResolveSuggestions(filter: java.lang.String): js.Array[T] | js.Thenable[js.Array[T]] | scala.Null = js.native
   /**
        * A callback for what should happen when a person types text into the input.
        * Returns the already selected items so the resolver can filter them out.
        * If used in conjunction with resolveDelay this will ony kick off after the delay throttle.
        * Return null if using as a controlled component
        */
-  def onResolveSuggestions(filter: java.lang.String, selectedItems: js.Array[T]): js.Array[T] | stdLib.PromiseLike[js.Array[T]] | scala.Null = js.native
+  def onResolveSuggestions(filter: java.lang.String, selectedItems: js.Array[T]): js.Array[T] | js.Thenable[js.Array[T]] | scala.Null = js.native
 }
 

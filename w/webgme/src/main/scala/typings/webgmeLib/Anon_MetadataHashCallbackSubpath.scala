@@ -12,6 +12,6 @@ trait Anon_MetadataHashCallbackSubpath extends js.Object {
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.Content],
     subpath: java.lang.String
   ): scala.Unit = js.native
-  def apply(metadataHash: webgmeLib.GmeCommonNs.MetadataHash, subpath: java.lang.String): stdLib.Promise[webgmeLib.GmeCommonNs.Content] = js.native
+  def apply(metadataHash: webgmeLib.GmeCommonNs.MetadataHash, subpath: java.lang.String): js.Promise[webgmeLib.GmeCommonNs.Content] = js.native
 }
 

@@ -24,7 +24,7 @@ package object reduxDashFirstDashRouterMod {
   type RouteThunk[TState] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[js.Any], 
     /* getState */ StateGetter[TState], 
-    js.Any | stdLib.Promise[js.Any]
+    js.Any | js.Promise[js.Any]
   ]
   type ScrollBehavior = js.Object
   type ScrollUpdater = js.Function1[/* performedByUser */ scala.Boolean, scala.Unit]

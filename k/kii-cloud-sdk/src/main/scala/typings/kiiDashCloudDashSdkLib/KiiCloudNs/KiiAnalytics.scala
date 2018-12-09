@@ -142,7 +142,7 @@ object KiiAnalytics extends js.Object {
            *       </li>
            *     </ul>
            */
-  def trackEvent(eventName: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def trackEvent(eventName: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Log a single event to be uploaded to KiiAnalytics
            *
@@ -164,7 +164,7 @@ object KiiAnalytics extends js.Object {
            *       </li>
            *     </ul>
            */
-  def trackEventWithExtras(eventName: java.lang.String, extras: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def trackEventWithExtras(eventName: java.lang.String, extras: js.Any): js.Promise[scala.Unit] = js.native
   /**
            * Log a single event to be uploaded to KiiAnalytics
            *
@@ -187,7 +187,7 @@ object KiiAnalytics extends js.Object {
            *       </li>
            *     </ul>
            */
-  def trackEventWithExtrasAndCallbacks(eventName: java.lang.String, extras: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def trackEventWithExtrasAndCallbacks(eventName: java.lang.String, extras: js.Any): js.Promise[scala.Unit] = js.native
   /**
            * Log a single event to be uploaded to KiiAnalytics
            *
@@ -214,6 +214,6 @@ object KiiAnalytics extends js.Object {
     eventName: java.lang.String,
     extras: js.Any,
     callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessAny
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

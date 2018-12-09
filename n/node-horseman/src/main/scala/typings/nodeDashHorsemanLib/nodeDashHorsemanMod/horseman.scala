@@ -75,11 +75,11 @@ trait horseman extends js.Object {
   /** Get the height of an element. */
   def height(selector: java.lang.String): scala.Double = js.native
   /** Get the HTML for the page, or optionally for a selector. */
-  def html(): stdLib.Promise[java.lang.String] = js.native
+  def html(): js.Promise[java.lang.String] = js.native
   /** Get the HTML for the page, or optionally for a selector. */
-  def html(selector: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def html(selector: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Get the HTML for the page, or optionally for a selector. */
-  def html(selector: java.lang.String, file: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def html(selector: java.lang.String, file: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Includes javascript script from a url on the page. */
   def includeJs(url: java.lang.String): this.type = js.native
   /** Injects javascript from a file into the page. */

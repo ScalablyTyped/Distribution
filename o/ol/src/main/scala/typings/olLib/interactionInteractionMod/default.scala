@@ -20,8 +20,7 @@ import scala.scalajs.js.annotation._
      * @param options Options.
      * @api
      */
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("ol/interaction/interaction", JSImport.Default)
+@JSImport("ol/interaction/interaction", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.interactionNs.Interaction {

@@ -23,7 +23,7 @@ class Root () extends NamespaceBase {
        * @param [options] Parse options. Defaults to {@link parse.defaults} when omitted.
        * @returns Promise
        */
-  def load(filename: java.lang.String): stdLib.Promise[Root] = js.native
+  def load(filename: java.lang.String): js.Promise[Root] = js.native
   /**
        * Loads one or multiple .proto or preprocessed .json files into this root namespace and calls the callback.
        * @param filename Names of one or multiple files to load
@@ -36,7 +36,7 @@ class Root () extends NamespaceBase {
        * @param [options] Parse options. Defaults to {@link parse.defaults} when omitted.
        * @returns Promise
        */
-  def load(filename: java.lang.String, options: IParseOptions): stdLib.Promise[Root] = js.native
+  def load(filename: java.lang.String, options: IParseOptions): js.Promise[Root] = js.native
   /**
        * Loads one or multiple .proto or preprocessed .json files into this root namespace and calls the callback.
        * @param filename Names of one or multiple files to load
@@ -50,7 +50,7 @@ class Root () extends NamespaceBase {
        * @param [options] Parse options. Defaults to {@link parse.defaults} when omitted.
        * @returns Promise
        */
-  def load(filename: js.Array[java.lang.String]): stdLib.Promise[Root] = js.native
+  def load(filename: js.Array[java.lang.String]): js.Promise[Root] = js.native
   /**
        * Loads one or multiple .proto or preprocessed .json files into this root namespace and calls the callback.
        * @param filename Names of one or multiple files to load
@@ -63,7 +63,7 @@ class Root () extends NamespaceBase {
        * @param [options] Parse options. Defaults to {@link parse.defaults} when omitted.
        * @returns Promise
        */
-  def load(filename: js.Array[java.lang.String], options: IParseOptions): stdLib.Promise[Root] = js.native
+  def load(filename: js.Array[java.lang.String], options: IParseOptions): js.Promise[Root] = js.native
   /**
        * Loads one or multiple .proto or preprocessed .json files into this root namespace and calls the callback.
        * @param filename Names of one or multiple files to load

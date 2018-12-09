@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object routeNs {
-  type InlineAnnotatedFunction = js.Function | (js.Array[java.lang.String | js.Function])
+  type InlineAnnotatedFunction = angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function])
 }

@@ -11,12 +11,7 @@ package object graphqlDashResolveDashBatchMod {
     /* args */ TArgs, 
     /* context */ TContext, 
     /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
-    js.Array[TReturn] | stdLib.Promise[js.Array[TReturn]]
+    js.Array[TReturn] | js.Promise[js.Array[TReturn]]
   ]
-  type ResolverFunction[TSource, TArgs, TContext, TReturn] = js.Function3[
-    /* source */ TSource, 
-    /* args */ TArgs, 
-    /* context */ TContext, 
-    stdLib.Promise[TReturn]
-  ]
+  type ResolverFunction[TSource, TArgs, TContext, TReturn] = js.Function3[/* source */ TSource, /* args */ TArgs, /* context */ TContext, js.Promise[TReturn]]
 }

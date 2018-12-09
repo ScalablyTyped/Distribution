@@ -25,8 +25,8 @@ class Reference protected ()
   val key: java.lang.String | scala.Null = js.native
   val parent: Reference | scala.Null = js.native
   val root: Reference = js.native
-  def `catch`(): stdLib.Promise[_] = js.native
-  def `catch`(a: stdLib.Error): stdLib.Promise[_] = js.native
+  def `catch`(): js.Promise[_] = js.native
+  def `catch`(a: stdLib.Error): js.Promise[_] = js.native
   /**
        * @param {!(string|Path)} pathString
        * @return {!Reference}
@@ -71,36 +71,36 @@ class Reference protected ()
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def remove(): stdLib.Promise[_] = js.native
+  def remove(): js.Promise[_] = js.native
   /**
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def remove(onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): stdLib.Promise[_] = js.native
-  /**
-       * @param {*} newVal
-       * @param {function(?Error)=} onComplete
-       * @return {!Promise}
-       */
-  def set(newVal: js.Any): stdLib.Promise[_] = js.native
+  def remove(onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): js.Promise[_] = js.native
   /**
        * @param {*} newVal
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def set(newVal: js.Any, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): stdLib.Promise[_] = js.native
+  def set(newVal: js.Any): js.Promise[_] = js.native
+  /**
+       * @param {*} newVal
+       * @param {function(?Error)=} onComplete
+       * @return {!Promise}
+       */
+  def set(newVal: js.Any, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): js.Promise[_] = js.native
   /**
        * @param {string|number|null} priority
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def setPriority(): stdLib.Promise[_] = js.native
+  def setPriority(): js.Promise[_] = js.native
   /**
        * @param {string|number|null} priority
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def setPriority(priority: java.lang.String): stdLib.Promise[_] = js.native
+  def setPriority(priority: java.lang.String): js.Promise[_] = js.native
   /**
        * @param {string|number|null} priority
        * @param {function(?Error)=} onComplete
@@ -109,39 +109,39 @@ class Reference protected ()
   def setPriority(
     priority: java.lang.String,
     onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * @param {string|number|null} priority
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def setPriority(priority: scala.Double): stdLib.Promise[_] = js.native
+  def setPriority(priority: scala.Double): js.Promise[_] = js.native
   /**
        * @param {string|number|null} priority
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def setPriority(priority: scala.Double, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): stdLib.Promise[_] = js.native
+  def setPriority(priority: scala.Double, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): js.Promise[_] = js.native
   /**
        * @param {string|number|null} priority
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def setPriority(priority: scala.Null, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): stdLib.Promise[_] = js.native
+  def setPriority(priority: scala.Null, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): js.Promise[_] = js.native
   /**
        * @param {*} newVal
        * @param {string|number|null} newPriority
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def setWithPriority(newVal: js.Any): stdLib.Promise[_] = js.native
+  def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
   /**
        * @param {*} newVal
        * @param {string|number|null} newPriority
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def setWithPriority(newVal: js.Any, newPriority: java.lang.String): stdLib.Promise[_] = js.native
+  def setWithPriority(newVal: js.Any, newPriority: java.lang.String): js.Promise[_] = js.native
   /**
        * @param {*} newVal
        * @param {string|number|null} newPriority
@@ -152,14 +152,14 @@ class Reference protected ()
     newVal: js.Any,
     newPriority: java.lang.String,
     onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * @param {*} newVal
        * @param {string|number|null} newPriority
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def setWithPriority(newVal: js.Any, newPriority: scala.Double): stdLib.Promise[_] = js.native
+  def setWithPriority(newVal: js.Any, newPriority: scala.Double): js.Promise[_] = js.native
   /**
        * @param {*} newVal
        * @param {string|number|null} newPriority
@@ -170,7 +170,7 @@ class Reference protected ()
     newVal: js.Any,
     newPriority: scala.Double,
     onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * @param {*} newVal
        * @param {string|number|null} newPriority
@@ -181,16 +181,16 @@ class Reference protected ()
     newVal: js.Any,
     newPriority: scala.Null,
     onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]
-  ): stdLib.Promise[_] = js.native
-  def `then`(): stdLib.Promise[_] = js.native
-  def `then`(a: js.Any): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
+  def `then`(): js.Promise[_] = js.native
+  def `then`(a: js.Any): js.Promise[_] = js.native
   /**
        * @param {function(*):*} transactionUpdate
        * @param {(function(?Error, boolean, ?DataSnapshot))=} onComplete
        * @param {boolean=} applyLocally
        * @return {!Promise}
        */
-  def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): stdLib.Promise[atFirebaseDatabaseLib.distSrcApiTransactionResultMod.TransactionResult] = js.native
+  def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[atFirebaseDatabaseLib.distSrcApiTransactionResultMod.TransactionResult] = js.native
   /**
        * @param {function(*):*} transactionUpdate
        * @param {(function(?Error, boolean, ?DataSnapshot))=} onComplete
@@ -205,7 +205,7 @@ class Reference protected ()
       /* c */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot | scala.Null, 
       scala.Unit
     ]
-  ): stdLib.Promise[atFirebaseDatabaseLib.distSrcApiTransactionResultMod.TransactionResult] = js.native
+  ): js.Promise[atFirebaseDatabaseLib.distSrcApiTransactionResultMod.TransactionResult] = js.native
   /**
        * @param {function(*):*} transactionUpdate
        * @param {(function(?Error, boolean, ?DataSnapshot))=} onComplete
@@ -221,18 +221,18 @@ class Reference protected ()
       scala.Unit
     ],
     applyLocally: scala.Boolean
-  ): stdLib.Promise[atFirebaseDatabaseLib.distSrcApiTransactionResultMod.TransactionResult] = js.native
+  ): js.Promise[atFirebaseDatabaseLib.distSrcApiTransactionResultMod.TransactionResult] = js.native
   /**
        * @param {!Object} objectToMerge
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def update(objectToMerge: js.Object): stdLib.Promise[_] = js.native
+  def update(objectToMerge: js.Object): js.Promise[_] = js.native
   /**
        * @param {!Object} objectToMerge
        * @param {function(?Error)=} onComplete
        * @return {!Promise}
        */
-  def update(objectToMerge: js.Object, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): stdLib.Promise[_] = js.native
+  def update(objectToMerge: js.Object, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, scala.Unit]): js.Promise[_] = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Coupons
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def create(data: stripeLib.stripeMod.StripeNs.couponsNs.ICouponCreationOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  def create(data: stripeLib.stripeMod.StripeNs.couponsNs.ICouponCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   /**
                * You can create coupons easily via the coupon management page of the Stripe dashboard. Coupon creation is also accessible via the API if
                * you need to create coupons on the fly. A coupon has either a percent_off or an amount_off and currency. If you set an amount_off, that
@@ -23,7 +23,7 @@ trait Coupons
   def create(
     data: stripeLib.stripeMod.StripeNs.couponsNs.ICouponCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   /**
                * You can create coupons easily via the coupon management page of the Stripe dashboard. Coupon creation is also accessible via the API if
                * you need to create coupons on the fly. A coupon has either a percent_off or an amount_off and currency. If you set an amount_off, that
@@ -39,12 +39,12 @@ trait Coupons
     data: stripeLib.stripeMod.StripeNs.couponsNs.ICouponCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   def create(
     data: stripeLib.stripeMod.StripeNs.couponsNs.ICouponCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
-  def del(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  def del(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**
                * You can delete coupons via the coupon management page of the Stripe dashboard. However, deleting a coupon does not affect any
                * customers who have already applied the coupon; it means that new customers can't redeem the coupon. You can also delete coupons
@@ -55,7 +55,7 @@ trait Coupons
                *
                * @param id The ID of the coupon to be deleted.
                */
-  def del(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  def del(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**
                * You can delete coupons via the coupon management page of the Stripe dashboard. However, deleting a coupon does not affect any
                * customers who have already applied the coupon; it means that new customers can't redeem the coupon. You can also delete coupons
@@ -70,15 +70,15 @@ trait Coupons
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IDeleteConfirmation]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   def del(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IDeleteConfirmation]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
-  def list(): stdLib.Promise[
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  def list(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
   ] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.IListOptionsCreated): stdLib.Promise[
+  def list(data: stripeLib.stripeMod.StripeNs.IListOptionsCreated): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
   ] = js.native
   /**
@@ -94,7 +94,7 @@ trait Coupons
   def list(
     data: stripeLib.stripeMod.StripeNs.IListOptionsCreated,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
   ] = js.native
   /**
@@ -113,7 +113,7 @@ trait Coupons
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
   ] = js.native
   def list(
@@ -121,10 +121,10 @@ trait Coupons
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
   ] = js.native
-  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
   ] = js.native
   def list(
@@ -132,18 +132,18 @@ trait Coupons
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
   ] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
   ] = js.native
-  def retrieve(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
-  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   /**
                * Retrieves the coupon with the given ID.
                *
@@ -155,7 +155,7 @@ trait Coupons
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   /**
                * Retrieves the coupon with the given ID.
                *
@@ -168,23 +168,23 @@ trait Coupons
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   def retrieve(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
-  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   def retrieve(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   def retrieve(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
-  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   /**
                * Updates the metadata of a coupon. Other coupon details (currency, duration, amount_off) are, by design, not editable.
                *
@@ -198,7 +198,7 @@ trait Coupons
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   /**
                * Updates the metadata of a coupon. Other coupon details (currency, duration, amount_off) are, by design, not editable.
                *
@@ -213,11 +213,11 @@ trait Coupons
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
   def update(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.couponsNs.ICoupon] = js.native
 }
 

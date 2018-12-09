@@ -13,6 +13,6 @@ package object jestDashAxeMod {
   type JestAxe = js.Function2[
     /* html */ java.lang.String, 
     /* options */ js.UndefOr[AxeOptions], 
-    stdLib.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults]
+    js.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults]
   ]
 }

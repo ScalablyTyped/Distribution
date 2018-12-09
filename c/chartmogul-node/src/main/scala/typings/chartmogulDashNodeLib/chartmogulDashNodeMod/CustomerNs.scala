@@ -112,20 +112,20 @@ object CustomerNs extends js.Object {
     var zip: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): stdLib.Promise[chartmogulDashNodeLib.commonMod.Entries[Customer]] = js.native
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ListCustomersParams): stdLib.Promise[chartmogulDashNodeLib.commonMod.Entries[Customer]] = js.native
-  def attributes(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[Attributes] = js.native
-  def create(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, data: NewCustomer): stdLib.Promise[Customer] = js.native
-  def destroy(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[js.Object] = js.native
-  def merge(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): stdLib.Promise[js.Object] = js.native
-  def merge(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: MergeCustomersParams): stdLib.Promise[js.Object] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): js.Promise[chartmogulDashNodeLib.commonMod.Entries[Customer]] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ListCustomersParams): js.Promise[chartmogulDashNodeLib.commonMod.Entries[Customer]] = js.native
+  def attributes(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[Attributes] = js.native
+  def create(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, data: NewCustomer): js.Promise[Customer] = js.native
+  def destroy(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[js.Object] = js.native
+  def merge(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): js.Promise[js.Object] = js.native
+  def merge(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: MergeCustomersParams): js.Promise[js.Object] = js.native
   def modify(
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
     uuid: java.lang.String,
     data: UpdateCustomer
-  ): stdLib.Promise[Customer] = js.native
-  def retrieve(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[Customer] = js.native
-  def search(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): stdLib.Promise[chartmogulDashNodeLib.commonMod.Entries[Customer]] = js.native
-  def search(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: SearchCustomersParams): stdLib.Promise[chartmogulDashNodeLib.commonMod.Entries[Customer]] = js.native
+  ): js.Promise[Customer] = js.native
+  def retrieve(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[Customer] = js.native
+  def search(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): js.Promise[chartmogulDashNodeLib.commonMod.Entries[Customer]] = js.native
+  def search(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: SearchCustomersParams): js.Promise[chartmogulDashNodeLib.commonMod.Entries[Customer]] = js.native
 }
 

@@ -13,7 +13,7 @@ trait ThreadView extends js.Object {
   def getMessageViews(): js.Array[MessageView] = js.native
   def getMessageViewsAll(): js.Array[MessageView] = js.native
   def getSubject(): java.lang.String = js.native
-  def getThreadIDAsync(): stdLib.Promise[java.lang.String] = js.native
+  def getThreadIDAsync(): js.Promise[java.lang.String] = js.native
   @JSName("on")
   def on_contactHover(
     name: inboxsdkLib.inboxsdkLibStrings.contactHover,

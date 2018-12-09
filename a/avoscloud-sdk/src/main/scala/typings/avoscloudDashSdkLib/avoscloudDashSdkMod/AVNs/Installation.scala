@@ -9,20 +9,19 @@ import scala.scalajs.js.annotation._
      * Every AV application installed on a device registered for
      * push notifications has an associated Installation object.
      */
-/* RemoveDifficultInheritance: 
-- Dropped Object */ 
-trait Installation extends js.Object {
-  var AVVersion: java.lang.String
-  var appIdentifier: java.lang.String
-  var appName: java.lang.String
-  var appVersion: java.lang.String
-  var badge: js.Any
-  var channelUris: java.lang.String
-  var channels: js.Array[java.lang.String]
-  var deviceToken: java.lang.String
-  var deviceType: java.lang.String
-  var installationId: java.lang.String
-  var pushType: java.lang.String
-  var timeZone: js.Any
+@js.native
+trait Installation extends Object {
+  var AVVersion: java.lang.String = js.native
+  var appIdentifier: java.lang.String = js.native
+  var appName: java.lang.String = js.native
+  var appVersion: java.lang.String = js.native
+  var badge: js.Any = js.native
+  var channelUris: java.lang.String = js.native
+  var channels: js.Array[java.lang.String] = js.native
+  var deviceToken: java.lang.String = js.native
+  var deviceType: java.lang.String = js.native
+  var installationId: java.lang.String = js.native
+  var pushType: java.lang.String = js.native
+  var timeZone: js.Any = js.native
 }
 

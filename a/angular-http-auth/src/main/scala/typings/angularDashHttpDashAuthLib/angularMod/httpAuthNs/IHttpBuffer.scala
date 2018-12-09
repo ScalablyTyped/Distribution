@@ -14,6 +14,6 @@ trait IHttpBuffer extends js.Object {
   def rejectAll(): scala.Unit = js.native
   def rejectAll(reason: js.Any): scala.Unit = js.native
   def retryAll(): scala.Unit = js.native
-  def retryAll(updater: js.Function): scala.Unit = js.native
+  def retryAll(updater: angularLib.angularMod.Global.Function): scala.Unit = js.native
 }
 

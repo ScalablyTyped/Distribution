@@ -13,6 +13,6 @@ class HttpClientResponse protected ()
   /* CompleteClass */
   override var message: nodeLib.httpMod.IncomingMessage = js.native
   /* CompleteClass */
-  override def readBody(): stdLib.Promise[java.lang.String] = js.native
+  override def readBody(): js.Promise[java.lang.String] = js.native
 }
 

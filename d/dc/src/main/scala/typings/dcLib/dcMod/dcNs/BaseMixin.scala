@@ -52,8 +52,8 @@ trait BaseMixin[T] extends js.Object {
   var resetFilterHandler_Original: IGetSet[js.Function1[/* filters */ js.Array[_], js.Array[_]], T] = js.native
   @JSName("svg")
   var svg_Original: IGetSet[
-    d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object], 
-    d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object]
+    d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _], 
+    d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
   ] = js.native
   @JSName("title")
   var title_Original: IGetSet[Accessor[_, java.lang.String], T] = js.native
@@ -67,15 +67,17 @@ trait BaseMixin[T] extends js.Object {
   var width_Original: IGetSet[scala.Double, T] = js.native
   def addFilterHandler(): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
   def addFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
-  def anchor(anchor: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object]): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
   def anchor(
-    anchor: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object],
+    anchor: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def anchor(
+    anchor: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _],
     chartGroup: java.lang.String
-  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def anchor(anchor: BaseMixin[_]): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def anchor(anchor: BaseMixin[_], chartGroup: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def anchor(anchor: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def anchor(anchor: java.lang.String, chartGroup: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def anchor(anchor: BaseMixin[_]): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def anchor(anchor: BaseMixin[_], chartGroup: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def anchor(anchor: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def anchor(anchor: java.lang.String, chartGroup: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
   def anchorName(): java.lang.String = js.native
   def chartGroup(): java.lang.String = js.native
   def chartGroup(t: java.lang.String): java.lang.String = js.native
@@ -150,12 +152,18 @@ trait BaseMixin[T] extends js.Object {
   def resetFilterHandler(): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
   def resetFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
   def resetSvg(): scala.Unit = js.native
-  def select(selector: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object]): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def select(selector: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def selectAll(selector: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object]): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def selectAll(selector: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def svg(): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def svg(t: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object]): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
+  def select(
+    selector: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def select(selector: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def selectAll(
+    selector: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def selectAll(selector: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def svg(): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def svg(
+    t: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
   def title(): Accessor[_, java.lang.String] = js.native
   def title(t: Accessor[_, java.lang.String]): Accessor[_, java.lang.String] = js.native
   def transitionDuration(): scala.Double = js.native

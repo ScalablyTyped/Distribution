@@ -10,7 +10,7 @@ trait LocalSecondaryIndexDescription extends js.Object {
   /**
        * The Amazon Resource Name (ARN) that uniquely identifies the index.
        */
-  var IndexArn: js.UndefOr[java.lang.String] = js.undefined
+  var IndexArn: js.UndefOr[String] = js.undefined
   /**
        * Represents the name of the local secondary index.
        */

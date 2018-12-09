@@ -34,6 +34,6 @@ trait HandleObject[TTarget, TData] extends js.Object {
   /**
            * Event handler function passed to jQuery during event binding. If `false` was passed during event binding, the handler refers to a single shared function that simply returns `false`.
            */
-  def handler(`this`: TTarget, t: TriggeredEvent[_, TData, _, _], args: js.Any*): js.Any
+  def handler(`this`: TTarget, t: TriggeredEvent[TTarget, TData, _, _], args: js.Any*): js.Any
 }
 

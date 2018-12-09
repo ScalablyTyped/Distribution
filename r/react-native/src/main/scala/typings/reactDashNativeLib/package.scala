@@ -32,7 +32,7 @@ package object reactDashNativeLib {
   type RequestInfo = Request | java.lang.String
   type `RequestMode_` = reactDashNativeLib.reactDashNativeLibStrings.navigate | reactDashNativeLib.reactDashNativeLibStrings.`same-origin` | reactDashNativeLib.reactDashNativeLibStrings.`no-cors` | reactDashNativeLib.reactDashNativeLibStrings.cors
   type `ResponseType_` = reactDashNativeLib.reactDashNativeLibStrings.basic | reactDashNativeLib.reactDashNativeLibStrings.cors | reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.error | reactDashNativeLib.reactDashNativeLibStrings.opaque | reactDashNativeLib.reactDashNativeLibStrings.opaqueredirect
-  type Task = js.Function1[/* taskData */ js.Any, stdLib.Promise[scala.Unit]]
+  type Task = js.Function1[/* taskData */ js.Any, js.Promise[scala.Unit]]
   type TaskProvider = js.Function0[Task]
   type XMLHttpRequestResponseType = reactDashNativeLib.reactDashNativeLibStrings.Empty | reactDashNativeLib.reactDashNativeLibStrings.arraybuffer | reactDashNativeLib.reactDashNativeLibStrings.blob | reactDashNativeLib.reactDashNativeLibStrings.document | reactDashNativeLib.reactDashNativeLibStrings.json | reactDashNativeLib.reactDashNativeLibStrings.text
 }

@@ -27,8 +27,8 @@ object riotModMembers extends js.Object {
   def observable(el: js.Any): Observable = js.native
   def render(tagName: java.lang.String): java.lang.String = js.native
   def render(tagName: java.lang.String, opts: TagOpts): java.lang.String = js.native
-  def renderAsync(tagName: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-  def renderAsync(tagName: java.lang.String, opts: TagOpts): stdLib.Promise[java.lang.String] = js.native
+  def renderAsync(tagName: java.lang.String): js.Promise[java.lang.String] = js.native
+  def renderAsync(tagName: java.lang.String, opts: TagOpts): js.Promise[java.lang.String] = js.native
   def require(tagPath: java.lang.String): java.lang.String = js.native
   def require(tagPath: java.lang.String, opts: js.Any): java.lang.String = js.native
   def tag[T /* <: TagInterface */](tagName: java.lang.String, html: java.lang.String): java.lang.String = js.native

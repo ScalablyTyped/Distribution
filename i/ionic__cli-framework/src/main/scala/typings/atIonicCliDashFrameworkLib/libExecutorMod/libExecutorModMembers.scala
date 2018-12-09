@@ -11,6 +11,6 @@ object libExecutorModMembers extends js.Object {
   val EXECUTOR_OPS: ExecutorOperations = js.native
   def execute[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](
     hasNamespaceArgvEnvRest: atIonicCliDashFrameworkLib.Anon_Namespace[N] with (stdLib.Partial[BaseExecutorDeps[C, N, M, I, O]])
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

@@ -16,7 +16,7 @@ class Pool ()
   val idleCount: scala.Double = js.native
   val totalCount: scala.Double = js.native
   val waitingCount: scala.Double = js.native
-  def connect(): stdLib.Promise[PoolClient] = js.native
+  def connect(): js.Promise[PoolClient] = js.native
   def connect(
     callback: js.Function3[
       /* err */ nodeLib.Error, 
@@ -25,7 +25,7 @@ class Pool ()
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def end(): stdLib.Promise[scala.Unit] = js.native
+  def end(): js.Promise[scala.Unit] = js.native
   def end(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")
   def on_acquire(event: pgLib.pgLibStrings.acquire, listener: js.Function1[/* client */ PoolClient, scala.Unit]): this.type = js.native
@@ -38,24 +38,24 @@ class Pool ()
   ): this.type = js.native
   @JSName("on")
   def on_remove(event: pgLib.pgLibStrings.remove, listener: js.Function1[/* client */ PoolClient, scala.Unit]): this.type = js.native
-  def query(queryConfig: QueryArrayConfig): stdLib.Promise[QueryArrayResult] = js.native
+  def query(queryConfig: QueryArrayConfig): js.Promise[QueryArrayResult] = js.native
   def query(
     queryConfig: QueryArrayConfig,
     callback: js.Function2[/* err */ nodeLib.Error, /* result */ QueryArrayResult, scala.Unit]
   ): Query = js.native
-  def query(queryConfig: QueryArrayConfig, values: js.Array[_]): stdLib.Promise[QueryArrayResult] = js.native
-  def query(queryConfig: QueryConfig): stdLib.Promise[QueryResult] = js.native
-  def query(queryTextOrConfig: java.lang.String): stdLib.Promise[QueryResult] = js.native
+  def query(queryConfig: QueryArrayConfig, values: js.Array[_]): js.Promise[QueryArrayResult] = js.native
+  def query(queryConfig: QueryConfig): js.Promise[QueryResult] = js.native
+  def query(queryTextOrConfig: java.lang.String): js.Promise[QueryResult] = js.native
   def query(
     queryTextOrConfig: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* result */ QueryResult, scala.Unit]
   ): Query = js.native
-  def query(queryTextOrConfig: java.lang.String, values: js.Array[_]): stdLib.Promise[QueryResult] = js.native
+  def query(queryTextOrConfig: java.lang.String, values: js.Array[_]): js.Promise[QueryResult] = js.native
   def query(
     queryTextOrConfig: QueryConfig,
     callback: js.Function2[/* err */ nodeLib.Error, /* result */ QueryResult, scala.Unit]
   ): Query = js.native
-  def query(queryTextOrConfig: QueryConfig, values: js.Array[_]): stdLib.Promise[QueryResult] = js.native
+  def query(queryTextOrConfig: QueryConfig, values: js.Array[_]): js.Promise[QueryResult] = js.native
   def query(
     queryText: java.lang.String,
     values: js.Array[_],

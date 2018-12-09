@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("ol/map", JSImport.Default)
+@JSImport("ol/map", JSImport.Default)
 @js.native
 class default protected ()
   extends openlayersLib.openlayersMod.Map {

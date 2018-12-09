@@ -22,6 +22,6 @@ object libServeModMembers extends js.Object {
     deps: ServeRunnerDeps,
     inputs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineInputs,
     options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions
-  ): stdLib.Promise[ionicLib.definitionsMod.ServeDetails] = js.native
+  ): js.Promise[ionicLib.definitionsMod.ServeDetails] = js.native
 }
 

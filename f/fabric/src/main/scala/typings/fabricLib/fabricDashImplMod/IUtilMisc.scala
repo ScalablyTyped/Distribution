@@ -11,7 +11,7 @@ trait IUtilMisc extends js.Object {
   	 * @param receiver Object implementing `clipTo` method
   	 * @param ctx Context to clip
   	 */
-  def clipContext(receiver: js.Object, ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  def clipContext(receiver: Object, ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
   /**
   	 * Creates accessors (getXXX, setXXX) for a "class", based on "stateProperties" array
   	 * @param klass "Class" to create accessors for

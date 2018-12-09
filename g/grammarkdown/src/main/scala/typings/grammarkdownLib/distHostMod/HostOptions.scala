@@ -12,7 +12,7 @@ trait HostOptions extends HostBaseOptions {
       /* this */ scala.Nothing, 
       /* file */ java.lang.String, 
       /* cancellationToken */ js.UndefOr[prexLib.prexMod.CancellationToken], 
-      stdLib.Promise[java.lang.String]
+      js.Promise[java.lang.String]
     ]
   ] = js.undefined
   var readFileSync: js.UndefOr[
@@ -29,7 +29,7 @@ trait HostOptions extends HostBaseOptions {
       /* file */ java.lang.String, 
       /* content */ java.lang.String, 
       /* cancellationToken */ js.UndefOr[prexLib.prexMod.CancellationToken], 
-      stdLib.Promise[scala.Unit]
+      js.Promise[scala.Unit]
     ]
   ] = js.undefined
   var writeFileSync: js.UndefOr[

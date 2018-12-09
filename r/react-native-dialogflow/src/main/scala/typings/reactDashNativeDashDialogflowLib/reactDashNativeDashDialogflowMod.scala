@@ -37,12 +37,12 @@ object reactDashNativeDashDialogflowMod extends js.Object {
       eventData: js.Object,
       resultCallback: js.Function1[/* result */ js.Object, scala.Unit],
       errorCallback: js.Function1[/* error */ stdLib.Error, scala.Unit]
-    ): stdLib.Promise[_] = js.native
+    ): js.Promise[_] = js.native
     def requestQuery(
       query: java.lang.String,
       resultCallback: js.Function1[/* result */ js.Object, scala.Unit],
       errorCallback: js.Function1[/* error */ stdLib.Error, scala.Unit]
-    ): stdLib.Promise[_] = js.native
+    ): js.Promise[_] = js.native
     def resetContexts(
       resultCallback: js.Function1[/* result */ js.Object, scala.Unit],
       errorCallback: js.Function1[/* error */ stdLib.Error, scala.Unit]
@@ -86,12 +86,12 @@ object reactDashNativeDashDialogflowMod extends js.Object {
       eventData: js.Object,
       resultCallback: js.Function1[/* result */ js.Object, scala.Unit],
       errorCallback: js.Function1[/* error */ stdLib.Error, scala.Unit]
-    ): stdLib.Promise[_] = js.native
+    ): js.Promise[_] = js.native
     def requestQuery(
       query: java.lang.String,
       resultCallback: js.Function1[/* result */ js.Object, scala.Unit],
       errorCallback: js.Function1[/* error */ stdLib.Error, scala.Unit]
-    ): stdLib.Promise[_] = js.native
+    ): js.Promise[_] = js.native
     def resetContexts(
       resultCallback: js.Function1[/* result */ js.Object, scala.Unit],
       errorCallback: js.Function1[/* error */ stdLib.Error, scala.Unit]

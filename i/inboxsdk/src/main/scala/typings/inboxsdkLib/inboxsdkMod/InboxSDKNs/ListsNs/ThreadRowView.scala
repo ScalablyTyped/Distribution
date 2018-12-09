@@ -19,11 +19,11 @@ trait ThreadRowView extends js.Object {
   def addLabel(labelDescriptor: LabelDescriptor): scala.Unit
   def getContacts(): js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact]
   def getDateString(): java.lang.String
-  def getDraftID(): stdLib.Promise[java.lang.String]
+  def getDraftID(): js.Promise[java.lang.String]
   // replaceDraftLabel(draftLabelDescriptor: Stream<ThreadRowDraftLabelDescriptor>): void;
   def getSubject(): java.lang.String
-  def getThreadIDAsync(): stdLib.Promise[java.lang.String]
-  def getThreadIDIfStableAsync(): stdLib.Promise[java.lang.String | scala.Null]
+  def getThreadIDAsync(): js.Promise[java.lang.String]
+  def getThreadIDIfStableAsync(): js.Promise[java.lang.String | scala.Null]
   def getVisibleDraftCount(): scala.Double
   def getVisibleMessageCount(): scala.Double
   @JSName("on")

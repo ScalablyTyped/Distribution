@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait CommandInstance extends js.Object {
   def delimiter(value: java.lang.String): scala.Unit = js.native
   def log(value: java.lang.String, values: java.lang.String*): scala.Unit = js.native
-  def prompt(prompt: js.Array[js.Object]): stdLib.Promise[js.Object] = js.native
-  def prompt(prompt: js.Object): stdLib.Promise[js.Object] = js.native
+  def prompt(prompt: js.Array[js.Object]): js.Promise[js.Object] = js.native
+  def prompt(prompt: js.Object): js.Promise[js.Object] = js.native
 }
 

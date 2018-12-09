@@ -566,8 +566,8 @@ object coreNs extends js.Object {
   var resolvePolicies: atUirouterCoreLib.Anon_When = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
-  val silenceUncaughtInPromise: js.Function1[/* promise */ stdLib.Promise[js.Any], stdLib.Promise[js.Any]] = js.native
-  val silentRejection: js.Function1[/* error */ js.Any, stdLib.Promise[js.Any]] = js.native
+  val silenceUncaughtInPromise: js.Function1[/* promise */ js.Promise[js.Any], js.Promise[js.Any]] = js.native
+  val silentRejection: js.Function1[/* error */ js.Any, js.Promise[js.Any]] = js.native
   val splitEqual: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
   val splitHash: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
   val splitQuery: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
@@ -1335,7 +1335,7 @@ object coreNs extends js.Object {
          * @param waitFor if provided, the chain is `.then()`'ed off this promise
          * @returns a `Promise` for sequentially invoking the hooks (in order)
          */
-    def chain(hooks: js.Array[atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook]): stdLib.Promise[_] = js.native
+    def chain(hooks: js.Array[atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook]): js.Promise[_] = js.native
     /**
          * Chains together an array of TransitionHooks.
          *
@@ -1356,8 +1356,8 @@ object coreNs extends js.Object {
          */
     def chain(
       hooks: js.Array[atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook],
-      waitFor: stdLib.Promise[_]
-    ): stdLib.Promise[_] = js.native
+      waitFor: js.Promise[_]
+    ): js.Promise[_] = js.native
     /**
          * Invokes all the provided TransitionHooks, in order.
          * Each hook's return value is checked.
@@ -1372,7 +1372,7 @@ object coreNs extends js.Object {
     def invokeHooks[T](
       hooks: js.Array[atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook],
       doneCallback: js.Function1[/* result */ js.UndefOr[atUirouterCoreLib.libTransitionInterfaceMod.HookResult], T]
-    ): stdLib.Promise[_] | T = js.native
+    ): js.Promise[_] | T = js.native
     /**
          * Run all TransitionHooks, ignoring their return value.
          */

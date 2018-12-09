@@ -13,6 +13,6 @@ trait ITaskAgentApi
     contentStream: nodeLib.NodeJSNs.ReadableStream,
     taskId: java.lang.String,
     overwrite: scala.Boolean
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

@@ -43,8 +43,8 @@ trait OfflineAudioContext extends BaseAudioContext {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
-  def startRendering(): Promise[AudioBuffer] = js.native
-  def suspend(suspendTime: scala.Double): Promise[scala.Unit] = js.native
+  def startRendering(): js.Promise[AudioBuffer] = js.native
+  def suspend(suspendTime: scala.Double): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("OfflineAudioContext")

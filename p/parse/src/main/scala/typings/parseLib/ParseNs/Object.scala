@@ -49,15 +49,15 @@ class Object () extends BaseObject {
   def change(options: js.Any): this.type = js.native
   def changedAttributes(diff: js.Any): scala.Boolean = js.native
   def clear(options: js.Any): js.Any = js.native
-  def destroy(): stdLib.Promise[this.type] = js.native
-  def destroy(options: parseLib.ParseNs.ObjectNs.DestroyOptions): stdLib.Promise[this.type] = js.native
+  def destroy(): js.Promise[this.type] = js.native
+  def destroy(options: parseLib.ParseNs.ObjectNs.DestroyOptions): js.Promise[this.type] = js.native
   def dirty(): scala.Boolean = js.native
   def dirty(attr: java.lang.String): scala.Boolean = js.native
   def dirtyKeys(): js.Array[java.lang.String] = js.native
   def escape(attr: java.lang.String): java.lang.String = js.native
   def existed(): scala.Boolean = js.native
-  def fetch(): stdLib.Promise[this.type] = js.native
-  def fetch(options: parseLib.ParseNs.ObjectNs.FetchOptions): stdLib.Promise[this.type] = js.native
+  def fetch(): js.Promise[this.type] = js.native
+  def fetch(options: parseLib.ParseNs.ObjectNs.FetchOptions): js.Promise[this.type] = js.native
   def get(attr: java.lang.String): js.UndefOr[_] = js.native
   def getACL(): js.UndefOr[ACL] = js.native
   def has(attr: java.lang.String): scala.Boolean = js.native
@@ -70,20 +70,20 @@ class Object () extends BaseObject {
   def op(attr: java.lang.String): js.Any = js.native
   def previous(attr: java.lang.String): js.Any = js.native
   def previousAttributes(): js.Any = js.native
-  def relation(attr: java.lang.String): Relation[this.type, js.Object] = js.native
+  def relation(attr: java.lang.String): Relation[this.type, Object] = js.native
   def remove(attr: java.lang.String, item: js.Any): js.Any = js.native
   def revert(): scala.Unit = js.native
-  def save(): stdLib.Promise[this.type] = js.native
-  def save(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): stdLib.Promise[this.type] = js.native
+  def save(): js.Promise[this.type] = js.native
+  def save(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Promise[this.type] = js.native
   def save(
     attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
     options: parseLib.ParseNs.ObjectNs.SaveOptions
-  ): stdLib.Promise[this.type] = js.native
-  def save(attrs: js.Object): stdLib.Promise[this.type] = js.native
-  def save(attrs: js.Object, options: parseLib.ParseNs.ObjectNs.SaveOptions): stdLib.Promise[this.type] = js.native
-  def save(attrs: scala.Null, options: parseLib.ParseNs.ObjectNs.SaveOptions): stdLib.Promise[this.type] = js.native
-  def save(key: java.lang.String, value: js.Any): stdLib.Promise[this.type] = js.native
-  def save(key: java.lang.String, value: js.Any, options: parseLib.ParseNs.ObjectNs.SaveOptions): stdLib.Promise[this.type] = js.native
+  ): js.Promise[this.type] = js.native
+  def save(attrs: js.Object): js.Promise[this.type] = js.native
+  def save(attrs: js.Object, options: parseLib.ParseNs.ObjectNs.SaveOptions): js.Promise[this.type] = js.native
+  def save(attrs: scala.Null, options: parseLib.ParseNs.ObjectNs.SaveOptions): js.Promise[this.type] = js.native
+  def save(key: java.lang.String, value: js.Any): js.Promise[this.type] = js.native
+  def save(key: java.lang.String, value: js.Any, options: parseLib.ParseNs.ObjectNs.SaveOptions): js.Promise[this.type] = js.native
   def set(attrs: js.Object): scala.Boolean = js.native
   def set(attrs: js.Object, options: parseLib.ParseNs.ObjectNs.SetOptions): scala.Boolean = js.native
   def set(key: java.lang.String, value: js.Any): scala.Boolean = js.native
@@ -125,20 +125,20 @@ class Object () extends BaseObject {
 @JSGlobal("Parse.Object")
 @js.native
 object Object extends js.Object {
-  def createWithoutData[T /* <: js.Object */](id: java.lang.String): T = js.native
-  def destroyAll[T](list: js.Array[T]): stdLib.Promise[js.Array[T]] = js.native
-  def destroyAll[T](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.DestroyAllOptions): stdLib.Promise[js.Array[T]] = js.native
+  def createWithoutData[T /* <: parseLib.ParseNs.Object */](id: java.lang.String): T = js.native
+  def destroyAll[T](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
+  def destroyAll[T](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.DestroyAllOptions): js.Promise[js.Array[T]] = js.native
   def extend(className: java.lang.String): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any, classProps: js.Any): js.Any = js.native
-  def fetchAll[T /* <: js.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): stdLib.Promise[js.Array[T]] = js.native
-  def fetchAllIfNeeded[T /* <: js.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): stdLib.Promise[js.Array[T]] = js.native
+  def fetchAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): js.Promise[js.Array[T]] = js.native
+  def fetchAllIfNeeded[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): js.Promise[js.Array[T]] = js.native
   def fromJSON(json: js.Any, `override`: scala.Boolean): js.Any = js.native
-  def registerSubclass[T /* <: js.Object */](
+  def registerSubclass[T /* <: parseLib.ParseNs.Object */](
     className: java.lang.String,
     clazz: ScalablyTyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], T]
   ): scala.Unit = js.native
-  def saveAll[T /* <: js.Object */](list: js.Array[T]): stdLib.Promise[js.Array[T]] = js.native
-  def saveAll[T /* <: js.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.SaveAllOptions): stdLib.Promise[js.Array[T]] = js.native
+  def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
+  def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.SaveAllOptions): js.Promise[js.Array[T]] = js.native
 }
 

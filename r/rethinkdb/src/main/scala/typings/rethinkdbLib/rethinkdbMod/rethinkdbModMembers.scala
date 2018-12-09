@@ -15,12 +15,12 @@ object rethinkdbModMembers extends js.Object {
   def branch(test: Expression[scala.Boolean], trueBranch: Expression[_], falseBranch: Expression[_]): Expression[_] = js.native
   def circle(point: Point, radius: scala.Double): Geometry = js.native
   def circle(point: Point, radius: scala.Double, options: CircleOptions): Geometry = js.native
-  def connect(host: java.lang.String): stdLib.Promise[Connection] = js.native
+  def connect(host: java.lang.String): js.Promise[Connection] = js.native
   def connect(
     host: java.lang.String,
     cb: js.Function2[/* err */ ReqlDriverError, /* conn */ Connection, scala.Unit]
   ): scala.Unit = js.native
-  def connect(opts: ConnectionOptions): stdLib.Promise[Connection] = js.native
+  def connect(opts: ConnectionOptions): js.Promise[Connection] = js.native
   def connect(
     opts: ConnectionOptions,
     cb: js.Function2[/* err */ ReqlDriverError, /* conn */ Connection, scala.Unit]

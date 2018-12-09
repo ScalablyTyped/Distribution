@@ -19,8 +19,8 @@ class RecaptchaVerifier_Instance protected () extends ApplicationVerifier {
   /* CompleteClass */
   override var `type`: java.lang.String = js.native
   def clear(): scala.Unit = js.native
-  def render(): stdLib.Promise[scala.Double] = js.native
+  def render(): js.Promise[scala.Double] = js.native
   /* CompleteClass */
-  override def verify(): stdLib.Promise[java.lang.String] = js.native
+  override def verify(): js.Promise[java.lang.String] = js.native
 }
 

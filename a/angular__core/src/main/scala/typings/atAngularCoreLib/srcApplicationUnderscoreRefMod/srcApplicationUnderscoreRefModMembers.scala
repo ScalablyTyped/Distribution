@@ -14,7 +14,7 @@ object srcApplicationUnderscoreRefModMembers extends js.Object {
     injector: atAngularCoreLib.srcDiMod.Injector,
     options: atAngularCoreLib.srcLinkerCompilerMod.CompilerOptions,
     moduleType: atAngularCoreLib.srcTypeMod.Type[M]
-  ): stdLib.Promise[
+  ): js.Promise[
     atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[M]
   ] = js.native
   def createPlatform(injector: atAngularCoreLib.srcDiMod.Injector): PlatformRef = js.native

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "Ping")
 @js.native
 object PingNs extends js.Object {
-  def ping(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): stdLib.Promise[java.lang.String] = js.native
+  def ping(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): js.Promise[java.lang.String] = js.native
 }
 

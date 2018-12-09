@@ -22,9 +22,9 @@ class LargeObjectManager protected () extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def createAndWritableStreamAsync(): stdLib.Promise[js.Tuple2[scala.Double, WriteStream]] = js.native
-  def createAndWritableStreamAsync(bufferSize: scala.Double): stdLib.Promise[js.Tuple2[scala.Double, WriteStream]] = js.native
-  def createAsync(): stdLib.Promise[scala.Double] = js.native
+  def createAndWritableStreamAsync(): js.Promise[js.Tuple2[scala.Double, WriteStream]] = js.native
+  def createAndWritableStreamAsync(bufferSize: scala.Double): js.Promise[js.Tuple2[scala.Double, WriteStream]] = js.native
+  def createAsync(): js.Promise[scala.Double] = js.native
   def open(
     oid: scala.Double,
     mode: scala.Double,
@@ -40,12 +40,12 @@ class LargeObjectManager protected () extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def openAndReadableStreamAsync(oid: scala.Double): stdLib.Promise[js.Tuple2[scala.Double, ReadStream]] = js.native
-  def openAndReadableStreamAsync(oid: scala.Double, bufferSize: scala.Double): stdLib.Promise[js.Tuple2[scala.Double, ReadStream]] = js.native
-  def openAsync(oid: scala.Double, mode: scala.Double): stdLib.Promise[LargeObject] = js.native
+  def openAndReadableStreamAsync(oid: scala.Double): js.Promise[js.Tuple2[scala.Double, ReadStream]] = js.native
+  def openAndReadableStreamAsync(oid: scala.Double, bufferSize: scala.Double): js.Promise[js.Tuple2[scala.Double, ReadStream]] = js.native
+  def openAsync(oid: scala.Double, mode: scala.Double): js.Promise[LargeObject] = js.native
   def unlink(oid: scala.Double): scala.Unit = js.native
   def unlink(oid: scala.Double, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
-  def unlinkAsync(oid: scala.Double): stdLib.Promise[_] = js.native
+  def unlinkAsync(oid: scala.Double): js.Promise[_] = js.native
 }
 
 @JSImport("pg-large-object", "LargeObjectManager")

@@ -18,7 +18,7 @@ object Branch extends js.Object {
     branchName: java.lang.String,
     target: nodegitLib.commitMod.Commit,
     force: scala.Double
-  ): stdLib.Promise[nodegitLib.referenceMod.Reference] = js.native
+  ): js.Promise[nodegitLib.referenceMod.Reference] = js.native
   def createFromAnnotated(
     repository: nodegitLib.repositoryMod.Repository,
     branchName: java.lang.String,
@@ -27,15 +27,15 @@ object Branch extends js.Object {
   ): nodegitLib.referenceMod.Reference = js.native
   def delete(branch: nodegitLib.referenceMod.Reference): scala.Double = js.native
   def isHead(branch: nodegitLib.referenceMod.Reference): scala.Double = js.native
-  def iteratorNew(repo: nodegitLib.repositoryMod.Repository, listFlags: scala.Double): stdLib.Promise[_] = js.native
+  def iteratorNew(repo: nodegitLib.repositoryMod.Repository, listFlags: scala.Double): js.Promise[_] = js.native
   def lookup(
     repo: nodegitLib.repositoryMod.Repository,
     branchName: java.lang.String,
     branchType: nodegitLib.branchMod.BranchNs.BRANCH
-  ): stdLib.Promise[nodegitLib.referenceMod.Reference] = js.native
-  def move(branch: nodegitLib.referenceMod.Reference, newBranchName: java.lang.String, force: scala.Double): stdLib.Promise[nodegitLib.referenceMod.Reference] = js.native
-  def name(ref: nodegitLib.referenceMod.Reference): stdLib.Promise[java.lang.String] = js.native
-  def setUpstream(branch: nodegitLib.referenceMod.Reference, upstreamName: java.lang.String): stdLib.Promise[scala.Double] = js.native
-  def upstream(branch: nodegitLib.referenceMod.Reference): stdLib.Promise[nodegitLib.referenceMod.Reference] = js.native
+  ): js.Promise[nodegitLib.referenceMod.Reference] = js.native
+  def move(branch: nodegitLib.referenceMod.Reference, newBranchName: java.lang.String, force: scala.Double): js.Promise[nodegitLib.referenceMod.Reference] = js.native
+  def name(ref: nodegitLib.referenceMod.Reference): js.Promise[java.lang.String] = js.native
+  def setUpstream(branch: nodegitLib.referenceMod.Reference, upstreamName: java.lang.String): js.Promise[scala.Double] = js.native
+  def upstream(branch: nodegitLib.referenceMod.Reference): js.Promise[nodegitLib.referenceMod.Reference] = js.native
 }
 

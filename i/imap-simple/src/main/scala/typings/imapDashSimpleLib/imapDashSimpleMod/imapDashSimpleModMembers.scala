@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("imap-simple", JSImport.Namespace)
 @js.native
 object imapDashSimpleModMembers extends js.Object {
-  def connect(options: ImapSimpleOptions): stdLib.Promise[ImapSimple] = js.native
+  def connect(options: ImapSimpleOptions): js.Promise[ImapSimple] = js.native
   def connect(
     options: ImapSimpleOptions,
     callback: js.Function2[/* err */ nodeLib.Error, /* connection */ ImapSimple, scala.Unit]

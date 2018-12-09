@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
      */
 
 trait NextStaticLifecycle[IP, C] extends js.Object {
-  var getInitialProps: js.UndefOr[js.Function1[/* ctx */ C, stdLib.Promise[IP] | IP]] = js.undefined
+  var getInitialProps: js.UndefOr[js.Function1[/* ctx */ C, js.Promise[IP] | IP]] = js.undefined
 }
 

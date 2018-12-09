@@ -119,7 +119,7 @@ object Cloud9Ns extends js.Object {
     /**
          * During a previous call, if there are more than 25 items in the list, only the first 25 items are returned, along with a unique string called a next token. To get the next batch of items in the list, call this operation again, adding the next token to the call. To get all of the items in the list, keep calling this operation with each subsequent next token that is returned, until no more next tokens are returned.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The type of environment member permissions to get information about. Available values include:    owner: Owns the environment.    read-only: Has read-only access to the environment.    read-write: Has read-write access to the environment.   If no value is specified, information about all environment members are returned.
          */
@@ -139,7 +139,7 @@ object Cloud9Ns extends js.Object {
     /**
          * If there are more than 25 items in the list, only the first 25 items are returned, along with a unique string called a next token. To get the next batch of items in the list, call this operation again, adding the next token to the call.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -155,7 +155,7 @@ object Cloud9Ns extends js.Object {
     /**
          * Any informational message about the status of the environment.
          */
-    var message: js.UndefOr[java.lang.String] = js.undefined
+    var message: js.UndefOr[String] = js.undefined
     /**
          * The status of the environment. Available values include:    connecting: The environment is connecting.    creating: The environment is being created.    deleting: The environment is being deleted.    error: The environment is in an error state.    ready: The environment is ready.    stopped: The environment is stopped.    stopping: The environment is stopping.  
          */
@@ -183,7 +183,7 @@ object Cloud9Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the environment.
          */
-    var arn: js.UndefOr[java.lang.String] = js.undefined
+    var arn: js.UndefOr[String] = js.undefined
     /**
          * The description for the environment.
          */
@@ -199,7 +199,7 @@ object Cloud9Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the environment owner.
          */
-    var ownerArn: js.UndefOr[java.lang.String] = js.undefined
+    var ownerArn: js.UndefOr[String] = js.undefined
     /**
          * The type of environment. Valid values include the following:    ec2: An Amazon Elastic Compute Cloud (Amazon EC2) instance connects to the environment.    ssh: Your own server connects to the environment.  
          */
@@ -227,7 +227,7 @@ object Cloud9Ns extends js.Object {
     /**
          * The user ID in AWS Identity and Access Management (AWS IAM) of the environment member.
          */
-    var userId: js.UndefOr[java.lang.String] = js.undefined
+    var userId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -239,7 +239,7 @@ object Cloud9Ns extends js.Object {
     /**
          * During a previous call, if there are more than 25 items in the list, only the first 25 items are returned, along with a unique string called a next token. To get the next batch of items in the list, call this operation again, adding the next token to the call. To get all of the items in the list, keep calling this operation with each subsequent next token that is returned, until no more next tokens are returned.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -251,7 +251,7 @@ object Cloud9Ns extends js.Object {
     /**
          * If there are more than 25 items in the list, only the first 25 items are returned, along with a unique string called a next token. To get the next batch of items in the list, call this operation again, adding the next token to the call.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   @js.native

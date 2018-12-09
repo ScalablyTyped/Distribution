@@ -72,7 +72,7 @@ class RelayObservable[T] protected () extends Subscribable[T] {
        * Returns a Promise which resolves when this Observable yields a first value
        * or when it completes with no value.
        */
-  def toPromise(): stdLib.Promise[js.UndefOr[T | scala.Null]] = js.native
+  def toPromise(): js.Promise[js.UndefOr[T | scala.Null]] = js.native
 }
 
 @JSImport("relay-runtime", "RelayObservable")

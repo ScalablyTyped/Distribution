@@ -11,9 +11,9 @@ trait Database extends js.Object {
   def createTransaction(): Transaction = js.native
   def createTransaction(`type`: TransactionType): Transaction = js.native
   def delete(): lovefieldLib.lovefieldMod.lfNs.queryNs.Delete = js.native
-  def export(): stdLib.Promise[js.Object] = js.native
+  def export(): js.Promise[js.Object] = js.native
   def getSchema(): lovefieldLib.lovefieldMod.lfNs.schemaNs.Database = js.native
-  def `import`(data: js.Object): stdLib.Promise[scala.Unit] = js.native
+  def `import`(data: js.Object): js.Promise[scala.Unit] = js.native
   def insert(): lovefieldLib.lovefieldMod.lfNs.queryNs.Insert = js.native
   def insertOrReplace(): lovefieldLib.lovefieldMod.lfNs.queryNs.Insert = js.native
   def observe(query: lovefieldLib.lovefieldMod.lfNs.queryNs.Select, callback: js.Function): scala.Unit = js.native

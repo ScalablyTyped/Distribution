@@ -17,8 +17,8 @@ class Kdbx () extends js.Object {
   var xml: stdLib.Document = js.native
   def addDeletedObject(uuid: KdbxUuid, dt: stdLib.Date): scala.Unit = js.native
   def cleanup(settings: Settings): scala.Unit = js.native
-  def createBinary(value: ProtectedValue): stdLib.Promise[ProtectedValue | stdLib.ArrayBuffer] = js.native
-  def createBinary(value: stdLib.ArrayBuffer): stdLib.Promise[ProtectedValue | stdLib.ArrayBuffer] = js.native
+  def createBinary(value: ProtectedValue): js.Promise[ProtectedValue | stdLib.ArrayBuffer] = js.native
+  def createBinary(value: stdLib.ArrayBuffer): js.Promise[ProtectedValue | stdLib.ArrayBuffer] = js.native
   def createDefaultGroup(): scala.Unit = js.native
   def createEntry(group: Group): Entry = js.native
   def createGroup(group: Group, name: StringProtected): Group = js.native
@@ -34,8 +34,8 @@ class Kdbx () extends js.Object {
   def move(`object`: KdbxObject, toGroup: Group, atIndex: scala.Double): scala.Unit = js.native
   def remove(`object`: KdbxObject): scala.Unit = js.native
   def removeLocalEditState(): scala.Unit = js.native
-  def save(): stdLib.Promise[stdLib.ArrayBuffer] = js.native
-  def saveXml(): stdLib.Promise[java.lang.String] = js.native
+  def save(): js.Promise[stdLib.ArrayBuffer] = js.native
+  def saveXml(): js.Promise[java.lang.String] = js.native
   def setLocalEditState(editingState: editingStateDict): scala.Unit = js.native
   def upgrade(): scala.Unit = js.native
 }
@@ -44,7 +44,7 @@ class Kdbx () extends js.Object {
 @js.native
 object Kdbx extends js.Object {
   def create(credentials: kdbxwebLib.kdbxwebMod.Credentials, name: java.lang.String): kdbxwebLib.kdbxwebMod.Kdbx = js.native
-  def load(data: stdLib.ArrayBuffer, credentials: kdbxwebLib.kdbxwebMod.Credentials): stdLib.Promise[kdbxwebLib.kdbxwebMod.Kdbx] = js.native
-  def loadXml(data: java.lang.String, credentials: kdbxwebLib.kdbxwebMod.Credentials): stdLib.Promise[kdbxwebLib.kdbxwebMod.Kdbx] = js.native
+  def load(data: stdLib.ArrayBuffer, credentials: kdbxwebLib.kdbxwebMod.Credentials): js.Promise[kdbxwebLib.kdbxwebMod.Kdbx] = js.native
+  def loadXml(data: java.lang.String, credentials: kdbxwebLib.kdbxwebMod.Credentials): js.Promise[kdbxwebLib.kdbxwebMod.Kdbx] = js.native
 }
 

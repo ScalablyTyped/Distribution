@@ -26,15 +26,15 @@ object NotificationsNs extends js.Object {
   }
   
   def addListener(listener: js.Function1[/* notification */ Notification, _]): fbemitterLib.fbemitterMod.EventSubscription = js.native
-  def cancelAllScheduledNotificationsAsync(): stdLib.Promise[scala.Unit] = js.native
-  def cancelScheduledNotificationAsync(localNotificationId: LocalNotificationId): stdLib.Promise[scala.Unit] = js.native
-  def dismissAllNotificationsAsync(): stdLib.Promise[scala.Unit] = js.native
-  def dismissNotificationAsync(localNotificationId: LocalNotificationId): stdLib.Promise[scala.Unit] = js.native
-  def getBadgeNumberAsync(): stdLib.Promise[scala.Double] = js.native
-  def getExpoPushTokenAsync(): stdLib.Promise[java.lang.String] = js.native
-  def presentLocalNotificationAsync(localNotification: LocalNotification): stdLib.Promise[LocalNotificationId] = js.native
-  def scheduleLocalNotificationAsync(localNotification: LocalNotification, schedulingOptions: expoLib.Anon_Repeat): stdLib.Promise[LocalNotificationId] = js.native
-  def setBadgeNumberAsync(number: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def cancelAllScheduledNotificationsAsync(): js.Promise[scala.Unit] = js.native
+  def cancelScheduledNotificationAsync(localNotificationId: LocalNotificationId): js.Promise[scala.Unit] = js.native
+  def dismissAllNotificationsAsync(): js.Promise[scala.Unit] = js.native
+  def dismissNotificationAsync(localNotificationId: LocalNotificationId): js.Promise[scala.Unit] = js.native
+  def getBadgeNumberAsync(): js.Promise[scala.Double] = js.native
+  def getExpoPushTokenAsync(): js.Promise[java.lang.String] = js.native
+  def presentLocalNotificationAsync(localNotification: LocalNotification): js.Promise[LocalNotificationId] = js.native
+  def scheduleLocalNotificationAsync(localNotification: LocalNotification, schedulingOptions: expoLib.Anon_Repeat): js.Promise[LocalNotificationId] = js.native
+  def setBadgeNumberAsync(number: scala.Double): js.Promise[scala.Unit] = js.native
   type LocalNotificationId = java.lang.String | scala.Double
 }
 

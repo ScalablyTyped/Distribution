@@ -34,11 +34,11 @@ class Request protected () extends js.Object {
   /**
      * Make Response to JSON
      */
-  def json(): stdLib.Promise[_] = js.native
+  def json(): js.Promise[_] = js.native
   /**
      * Make Response to JSON
      */
-  def json(strict: scala.Boolean): stdLib.Promise[_] = js.native
+  def json(strict: scala.Boolean): js.Promise[_] = js.native
   /**
      * HTTP options method
      */
@@ -71,18 +71,18 @@ class Request protected () extends js.Object {
   /**
      * Make Response to string
      */
-  def text(): stdLib.Promise[java.lang.String] = js.native
+  def text(): js.Promise[java.lang.String] = js.native
   /**
      * Get Response directly
      */
-  def `then`(resolve: js.Function1[/* value */ js.UndefOr[stdLib.Response], scala.Unit]): stdLib.Promise[_] = js.native
+  def `then`(resolve: js.Function1[/* value */ js.UndefOr[stdLib.Response], scala.Unit]): js.Promise[_] = js.native
   /**
      * Get Response directly
      */
   def `then`(
     resolve: js.Function1[/* value */ js.UndefOr[stdLib.Response], scala.Unit],
     reject: js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
      * Set Content-Type
      */

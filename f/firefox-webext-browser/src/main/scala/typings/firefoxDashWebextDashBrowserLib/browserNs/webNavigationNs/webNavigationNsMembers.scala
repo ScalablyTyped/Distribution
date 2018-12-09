@@ -77,13 +77,13 @@ object webNavigationNsMembers extends js.Object {
        * Retrieves information about all frames of a given tab.
        * @param details Information about the tab to retrieve all frames from.
        */
-  def getAllFrames(details: firefoxDashWebextDashBrowserLib.Anon_TabId): stdLib.Promise[js.Array[firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrlErrorOccurred]] = js.native
+  def getAllFrames(details: firefoxDashWebextDashBrowserLib.Anon_TabId): js.Promise[js.Array[firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrlErrorOccurred]] = js.native
   /* webNavigation functions */
   /**
        * Retrieves information about the given frame. A frame refers to an <iframe> or a <frame> of a web page and is
        * identified by a tab ID and a frame ID.
        * @param details Information about the frame to retrieve information about.
        */
-  def getFrame(details: firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdProcessId): stdLib.Promise[firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrl] = js.native
+  def getFrame(details: firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdProcessId): js.Promise[firefoxDashWebextDashBrowserLib.Anon_FrameIdTabIdUrl] = js.native
 }
 

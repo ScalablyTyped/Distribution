@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object `libraryFnReflectEs7GetDashOwnDashMetadataDashKeys'Mod`
   extends ScalablyTyped.runtime.TopLevel[
       js.Function2[
-        /* target */ js.Object, 
+        /* target */ Object, 
         /* targetKey */ js.UndefOr[java.lang.String | js.Symbol], 
         Array[js.Any]
       ]

@@ -53,17 +53,17 @@ object UpdatesNs extends js.Object {
        * Does not actually download the update.
        * Rejects if `updates.enabled` is `false` in app.json.
        */
-  def checkForUpdateAsync(): stdLib.Promise[UpdateCheck] = js.native
+  def checkForUpdateAsync(): js.Promise[UpdateCheck] = js.native
   /**
        * Downloads the most recent published version of your experience to the device's local cache.
        * Rejects if `updates.enabled` is `false` in app.json.
        */
-  def fetchUpdateAsync(): stdLib.Promise[UpdateBundle] = js.native
+  def fetchUpdateAsync(): js.Promise[UpdateBundle] = js.native
   /**
        * Downloads the most recent published version of your experience to the device's local cache.
        * Rejects if `updates.enabled` is `false` in app.json.
        */
-  def fetchUpdateAsync(params: FetchUpdateAsyncParams): stdLib.Promise[UpdateBundle] = js.native
+  def fetchUpdateAsync(params: FetchUpdateAsyncParams): js.Promise[UpdateBundle] = js.native
   /**
        * Immediately reloads the current experience.
        * This will use your app.json updates configuration to fetch and load the newest available JS supported by the device's Expo environment.

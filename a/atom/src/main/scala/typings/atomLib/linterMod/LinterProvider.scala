@@ -11,6 +11,6 @@ trait LinterProvider extends js.Object {
   var lintsOnChange: scala.Boolean
   var name: java.lang.String
   var scope: atomLib.atomLibStrings.file | atomLib.atomLibStrings.project
-  def lint(editor: atomLib.atomMod.TextEditor): LintResult | stdLib.Promise[LintResult]
+  def lint(editor: atomLib.atomMod.TextEditor): LintResult | js.Promise[LintResult]
 }
 

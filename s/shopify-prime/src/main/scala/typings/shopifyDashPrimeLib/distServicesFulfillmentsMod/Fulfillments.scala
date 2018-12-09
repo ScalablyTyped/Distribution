@@ -15,38 +15,38 @@ class Fulfillments protected ()
        * @param fulfillmentId The fulfillment's id.
        * @param options Options for canceling the fulfillment.
        */
-  def cancel(orderId: scala.Double, fulfillmentId: scala.Double): stdLib.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
+  def cancel(orderId: scala.Double, fulfillmentId: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
   /**
        * Complete a fulfillment with the given id.
        * @param fulfillmentId The fulfillment's id.
        * @param options Options for canceling the fulfillment.
        */
-  def complete(orderId: scala.Double, fulfillmentId: scala.Double): stdLib.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
+  def complete(orderId: scala.Double, fulfillmentId: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
   /**
        * Counts the fulfillments on the given order.
        * @param orderId Id of the blog that the fulfillments belong to.
        * @param options Options for filtering the results.
        */
-  def count(orderId: scala.Double): stdLib.Promise[scala.Double] = js.native
+  def count(orderId: scala.Double): js.Promise[scala.Double] = js.native
   /**
        * Counts the fulfillments on the given order.
        * @param orderId Id of the blog that the fulfillments belong to.
        * @param options Options for filtering the results.
        */
-  def count(orderId: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.DateOptions): stdLib.Promise[scala.Double] = js.native
+  def count(orderId: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.DateOptions): js.Promise[scala.Double] = js.native
   /**
        * Creates a new fulfillment.
        * @param orderId Id of the blog that the fulfillment will belong to.
        * @param fulfillment The fulfillment being created.
        */
-  def create(orderId: scala.Double, fulfillment: shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment): stdLib.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
+  def create(orderId: scala.Double, fulfillment: shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment): js.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
   /**
        * Gets an fulfillment with the given id.
        * @param orderId Id of the blog that the fulfillment belongs to.
        * @param fulfillmentId Id of the fulfillment being retrieved.
        * @param options Options for filtering the result.
        */
-  def get(orderId: scala.Double, fulfillmentId: scala.Double): stdLib.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
+  def get(orderId: scala.Double, fulfillmentId: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
   /**
        * Gets an fulfillment with the given id.
        * @param orderId Id of the blog that the fulfillment belongs to.
@@ -57,14 +57,14 @@ class Fulfillments protected ()
     orderId: scala.Double,
     fulfillmentId: scala.Double,
     options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions
-  ): stdLib.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
+  ): js.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
   /* private */ def getPath(orderId: js.Any, path: js.Any): js.Any = js.native
   /**
        * Lists up to 250 fulfillments for the given order.
        * @param orderId Id of the blog that the fulfillments belong to.
        * @param options Options for filtering the results.
        */
-  def list(orderId: scala.Double): stdLib.Promise[js.Array[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment]] = js.native
+  def list(orderId: scala.Double): js.Promise[js.Array[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment]] = js.native
   /**
        * Lists up to 250 fulfillments for the given order.
        * @param orderId Id of the blog that the fulfillments belong to.
@@ -73,13 +73,13 @@ class Fulfillments protected ()
   def list(
     orderId: scala.Double,
     options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions with shopifyDashPrimeLib.distOptionsBaseMod.DateOptions with shopifyDashPrimeLib.distOptionsBaseMod.ListOptions
-  ): stdLib.Promise[js.Array[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment]] = js.native
+  ): js.Promise[js.Array[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment]] = js.native
   /**
        * Opens a fulfillment with the given fulfillmentId.
        * @param orderId Id of the blog that the fulfillments belong to.
        * @param fulfillmentId The fulfillment's id.
        */
-  def open(orderId: scala.Double, fulfillmentId: scala.Double): stdLib.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
+  def open(orderId: scala.Double, fulfillmentId: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
   /**
        * Updates an fulfillment with the given id.
        * @param orderId Id of the blog that the fulfillment belongs to.
@@ -90,6 +90,6 @@ class Fulfillments protected ()
     orderId: scala.Double,
     fulfillmentId: scala.Double,
     fulfillment: shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment
-  ): stdLib.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
+  ): js.Promise[shopifyDashPrimeLib.distModelsFulfillmentMod.Fulfillment] = js.native
 }
 

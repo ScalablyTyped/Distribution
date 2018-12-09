@@ -34,7 +34,7 @@ trait Anon_CreateOptions extends js.Object {
            * @param id The list id
            * @returns Promise void
            */
-  def delete(id: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def delete(id: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Permanently delete the specified recipient list.
            *

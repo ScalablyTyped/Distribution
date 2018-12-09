@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait ClassComponent[A] extends Lifecycle[A, ClassComponent[A]] {
   /** The onbeforeremove hook is called before a DOM element is detached from the document. If a Promise is returned, Mithril only detaches the DOM element after the promise completes. */
   @JSName("onbeforeremove")
-  var onbeforeremove_ClassComponent: js.UndefOr[js.Function1[/* vnode */ VnodeDOM[A, this.type], stdLib.Promise[_] | scala.Unit]] = js.undefined
+  var onbeforeremove_ClassComponent: js.UndefOr[js.Function1[/* vnode */ VnodeDOM[A, this.type], js.Promise[_] | scala.Unit]] = js.undefined
   /** The onbeforeupdate hook is called before a vnode is diffed in a update. */
   @JSName("onbeforeupdate")
   var onbeforeupdate_ClassComponent: js.UndefOr[

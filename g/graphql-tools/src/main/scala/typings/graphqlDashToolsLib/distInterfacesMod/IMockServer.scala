@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IMockServer extends js.Object {
-  def query(query: java.lang.String): stdLib.Promise[
+  def query(query: java.lang.String): js.Promise[
     graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
   ] = js.native
-  def query(query: java.lang.String, vars: ScalablyTyped.runtime.StringDictionary[js.Any]): stdLib.Promise[
+  def query(query: java.lang.String, vars: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Promise[
     graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
   ] = js.native
 }

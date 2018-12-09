@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PackageManager extends js.Object {
   /** Activate a single package by name or path. */
-  def activatePackage(nameOrPath: java.lang.String): stdLib.Promise[Package] = js.native
+  def activatePackage(nameOrPath: java.lang.String): js.Promise[Package] = js.native
   /** Deactivate a single package by name or path. */
-  def deactivatePackage(nameOrPath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def deactivatePackage(nameOrPath: java.lang.String): js.Promise[scala.Unit] = js.native
   /** Deactivate a single package by name or path. */
-  def deactivatePackage(nameOrPath: java.lang.String, suppressSerialization: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def deactivatePackage(nameOrPath: java.lang.String, suppressSerialization: scala.Boolean): js.Promise[scala.Unit] = js.native
   /** Disable the package with the given name. */
   def disablePackage(name: java.lang.String): js.UndefOr[Package] = js.native
   // Enabling and Disabling Packages

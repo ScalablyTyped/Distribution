@@ -23,24 +23,24 @@ trait PQueue[O /* <: pDashQueueLib.pDashQueueMod.PQueueNs.QueueAddOptions */] ex
        * Returns the promise returned by calling fn.
        * @param fn Promise-returning/async function.
        */
-  def add[T](fn: pDashQueueLib.pDashQueueMod.PQueueNs.Task[T]): stdLib.Promise[T] = js.native
+  def add[T](fn: pDashQueueLib.pDashQueueMod.PQueueNs.Task[T]): js.Promise[T] = js.native
   /**
        * Returns the promise returned by calling fn.
        * @param fn Promise-returning/async function.
        */
-  def add[T](fn: pDashQueueLib.pDashQueueMod.PQueueNs.Task[T], opts: O): stdLib.Promise[T] = js.native
+  def add[T](fn: pDashQueueLib.pDashQueueMod.PQueueNs.Task[T], opts: O): js.Promise[T] = js.native
   /**
        * Same as .add(), but accepts an array of async functions and
        * returns a promise that resolves when all async functions are resolved.
        * @param fn Array of Promise-returning/async functions.
        */
-  def addAll[TAll](fns: js.Array[pDashQueueLib.pDashQueueMod.PQueueNs.Task[TAll]]): stdLib.Promise[js.Array[TAll]] = js.native
+  def addAll[TAll](fns: js.Array[pDashQueueLib.pDashQueueMod.PQueueNs.Task[TAll]]): js.Promise[js.Array[TAll]] = js.native
   /**
        * Same as .add(), but accepts an array of async functions and
        * returns a promise that resolves when all async functions are resolved.
        * @param fn Array of Promise-returning/async functions.
        */
-  def addAll[TAll](fns: js.Array[pDashQueueLib.pDashQueueMod.PQueueNs.Task[TAll]], opts: O): stdLib.Promise[js.Array[TAll]] = js.native
+  def addAll[TAll](fns: js.Array[pDashQueueLib.pDashQueueMod.PQueueNs.Task[TAll]], opts: O): js.Promise[js.Array[TAll]] = js.native
   /**
        * Clear the queue.
        */
@@ -50,7 +50,7 @@ trait PQueue[O /* <: pDashQueueLib.pDashQueueMod.PQueueNs.QueueAddOptions */] ex
        * Can be called multiple times. Useful if you for example add
        * additional items at a later time.
        */
-  def onEmpty(): stdLib.Promise[scala.Unit] = js.native
+  def onEmpty(): js.Promise[scala.Unit] = js.native
   /**
        * Returns a promise that settles when the queue becomes empty, and all
        * promises have completed; queue.size === 0 && queue.pending === 0.
@@ -58,7 +58,7 @@ trait PQueue[O /* <: pDashQueueLib.pDashQueueMod.PQueueNs.QueueAddOptions */] ex
        * from the queue has finished. .onEmpty merely signals that the queue is
        * empty, but it could mean that some promises haven't completed yet.
        */
-  def onIdle(): stdLib.Promise[scala.Unit] = js.native
+  def onIdle(): js.Promise[scala.Unit] = js.native
   /**
        * Put queue execution on hold.
        */

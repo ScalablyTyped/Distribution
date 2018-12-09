@@ -39,7 +39,7 @@ class DocumentReference protected () extends js.Object {
      * deleted from the backend (Note that it won't resolve while you're
      * offline).
      */
-  def delete(): stdLib.Promise[scala.Unit] = js.native
+  def delete(): js.Promise[scala.Unit] = js.native
   /**
      * Reads the document referred to by this `DocumentReference`.
      *
@@ -52,7 +52,7 @@ class DocumentReference protected () extends js.Object {
      * @return A Promise resolved with a DocumentSnapshot containing the
      * current document contents.
      */
-  def get(): stdLib.Promise[DocumentSnapshot] = js.native
+  def get(): js.Promise[DocumentSnapshot] = js.native
   /**
      * Reads the document referred to by this `DocumentReference`.
      *
@@ -65,7 +65,7 @@ class DocumentReference protected () extends js.Object {
      * @return A Promise resolved with a DocumentSnapshot containing the
      * current document contents.
      */
-  def get(options: GetOptions): stdLib.Promise[DocumentSnapshot] = js.native
+  def get(options: GetOptions): js.Promise[DocumentSnapshot] = js.native
   /**
      * Returns true if this `DocumentReference` is equal to the provided one.
      *
@@ -124,7 +124,7 @@ class DocumentReference protected () extends js.Object {
      * @return A Promise resolved once the data has been successfully written
      * to the backend (Note that it won't resolve while you're offline).
      */
-  def set(data: DocumentData): stdLib.Promise[scala.Unit] = js.native
+  def set(data: DocumentData): js.Promise[scala.Unit] = js.native
   /**
      * Writes to the document referred to by this `DocumentReference`. If the
      * document does not yet exist, it will be created. If you pass
@@ -135,7 +135,7 @@ class DocumentReference protected () extends js.Object {
      * @return A Promise resolved once the data has been successfully written
      * to the backend (Note that it won't resolve while you're offline).
      */
-  def set(data: DocumentData, options: SetOptions): stdLib.Promise[scala.Unit] = js.native
+  def set(data: DocumentData, options: SetOptions): js.Promise[scala.Unit] = js.native
   /**
      * Updates fields in the document referred to by this `DocumentReference`.
      * The update will fail if applied to a document that does not exist.
@@ -146,7 +146,7 @@ class DocumentReference protected () extends js.Object {
      * @return A Promise resolved once the data has been successfully written
      * to the backend (Note that it won't resolve while you're offline).
      */
-  def update(data: UpdateData): stdLib.Promise[scala.Unit] = js.native
+  def update(data: UpdateData): js.Promise[scala.Unit] = js.native
   /**
      * Updates fields in the document referred to by this `DocumentReference`.
      * The update will fail if applied to a document that does not exist.
@@ -160,7 +160,7 @@ class DocumentReference protected () extends js.Object {
      * @return A Promise resolved once the data has been successfully written
      * to the backend (Note that it won't resolve while you're offline).
      */
-  def update(field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): stdLib.Promise[scala.Unit] = js.native
+  def update(field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[scala.Unit] = js.native
   /**
      * Updates fields in the document referred to by this `DocumentReference`.
      * The update will fail if applied to a document that does not exist.
@@ -174,6 +174,6 @@ class DocumentReference protected () extends js.Object {
      * @return A Promise resolved once the data has been successfully written
      * to the backend (Note that it won't resolve while you're offline).
      */
-  def update(field: java.lang.String, value: js.Any, moreFieldsAndValues: js.Any*): stdLib.Promise[scala.Unit] = js.native
+  def update(field: java.lang.String, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[scala.Unit] = js.native
 }
 

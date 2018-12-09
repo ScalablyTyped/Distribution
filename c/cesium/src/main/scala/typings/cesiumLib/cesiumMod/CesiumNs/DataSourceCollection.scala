@@ -10,8 +10,8 @@ trait DataSourceCollection extends js.Object {
   var dataSourceAdded: Event = js.native
   var dataSourceRemoved: Event = js.native
   var length: scala.Double = js.native
-  def add(dataSource: DataSource): stdLib.Promise[DataSource] = js.native
-  def add(dataSource: stdLib.Promise[DataSource]): stdLib.Promise[DataSource] = js.native
+  def add(dataSource: DataSource): js.Promise[DataSource] = js.native
+  def add(dataSource: js.Promise[DataSource]): js.Promise[DataSource] = js.native
   def contains(dataSource: DataSource): scala.Boolean = js.native
   def destroy(): scala.Unit = js.native
   def get(index: scala.Double): DataSource = js.native

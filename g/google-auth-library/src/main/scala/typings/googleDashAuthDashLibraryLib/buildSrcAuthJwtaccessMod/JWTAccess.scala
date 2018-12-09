@@ -108,7 +108,7 @@ class JWTAccess () extends js.Object {
        * @param inputStream The input stream.
        * @param callback Optional callback.
        */
-  def fromStream(inputStream: nodeLib.streamMod.Readable): stdLib.Promise[scala.Unit] = js.native
+  def fromStream(inputStream: nodeLib.streamMod.Readable): js.Promise[scala.Unit] = js.native
   def fromStream(
     inputStream: nodeLib.streamMod.Readable,
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]

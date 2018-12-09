@@ -53,7 +53,7 @@ trait MongooseDocument extends MongooseDocumentOptionals {
        * Useful for ES2015 integration.
        * @returns promise that resolves to the document when population is done
        */
-  def execPopulate(): stdLib.Promise[this.type] = js.native
+  def execPopulate(): js.Promise[this.type] = js.native
   /**
        * Returns the value of a path.
        * @param type optionally specify a type for on-the-fly attributes
@@ -248,15 +248,15 @@ trait MongooseDocument extends MongooseDocumentOptionals {
        * @param optional options internal options
        * @param callback callback called after validation completes, passing an error if one occurred
        */
-  def validate(): stdLib.Promise[scala.Unit] = js.native
+  def validate(): js.Promise[scala.Unit] = js.native
   /**
        * Executes registered validation rules for this document.
        * @param optional options internal options
        * @param callback callback called after validation completes, passing an error if one occurred
        */
-  def validate(callback: js.Function1[/* err */ js.Any, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
-  def validate(optional: js.Any): stdLib.Promise[scala.Unit] = js.native
-  def validate(optional: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def validate(callback: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[scala.Unit] = js.native
+  def validate(optional: js.Any): js.Promise[scala.Unit] = js.native
+  def validate(optional: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
        * Executes registered validation rules (skipping asynchronous validators) for this document.
        * This method is useful if you need synchronous validation.

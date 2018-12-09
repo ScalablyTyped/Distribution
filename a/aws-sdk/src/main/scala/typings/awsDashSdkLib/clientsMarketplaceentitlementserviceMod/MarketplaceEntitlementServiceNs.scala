@@ -45,7 +45,7 @@ object MarketplaceEntitlementServiceNs extends js.Object {
     /**
          * The BooleanValue field will be populated with a boolean value when the entitlement is a boolean type. Otherwise, the field will not be set.
          */
-    var BooleanValue: js.UndefOr[scala.Boolean] = js.undefined
+    var BooleanValue: js.UndefOr[Boolean] = js.undefined
     /**
          * The DoubleValue field will be populated with a double value when the entitlement is a double type. Otherwise, the field will not be set.
          */
@@ -57,7 +57,7 @@ object MarketplaceEntitlementServiceNs extends js.Object {
     /**
          * The StringValue field will be populated with a string value when the entitlement is a string type. Otherwise, the field will not be set.
          */
-    var StringValue: js.UndefOr[java.lang.String] = js.undefined
+    var StringValue: js.UndefOr[String] = js.undefined
   }
   
   

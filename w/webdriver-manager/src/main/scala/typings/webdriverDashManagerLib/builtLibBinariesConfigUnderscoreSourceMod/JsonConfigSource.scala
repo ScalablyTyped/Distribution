@@ -12,6 +12,6 @@ abstract class JsonConfigSource protected () extends ConfigSource {
   var jsonUrl: java.lang.String = js.native
   var name: java.lang.String = js.native
   /* protected */ def getFileName(): java.lang.String = js.native
-  /* protected */ def getJson(): stdLib.Promise[java.lang.String] = js.native
+  /* protected */ def getJson(): js.Promise[java.lang.String] = js.native
 }
 

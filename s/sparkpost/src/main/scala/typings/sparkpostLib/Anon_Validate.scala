@@ -29,7 +29,7 @@ trait Anon_Validate extends js.Object {
            *
            * @param id The id of the webhook to delete
            */
-  def delete(id: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def delete(id: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Delete an existing webhook
            * @param id The webhook id
@@ -129,7 +129,7 @@ trait Anon_Validate extends js.Object {
            * @param options [event types]{@link https://support.sparkpost.com/customer/portal/articles/1976204} for which to get a sample payload
            * Default: all event types returned
            */
-  def getSamples(): stdLib.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
+  def getSamples(): js.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
   /**
            * List an example of the event data that will be posted by a Webhook for the specified events.
            * @param callback The request callback containing examples
@@ -141,7 +141,7 @@ trait Anon_Validate extends js.Object {
            * @param options [event types]{@link https://support.sparkpost.com/customer/portal/articles/1976204} for which to get a sample payload
            * Default: all event types returned
            */
-  def getSamples(options: Anon_Events): stdLib.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
+  def getSamples(options: Anon_Events): js.Promise[sparkpostLib.sparkpostMod.SparkPostNs.Response[_]] = js.native
   /**
            * List an example of the event data that will be posted by a Webhook for the specified events.
            * @param options The optional event name

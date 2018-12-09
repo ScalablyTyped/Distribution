@@ -28,7 +28,7 @@ class sidebar () extends baseview {
   var on_mouse_move_Original: webixLib.webixNs.WebixCallback = js.native
   var `type`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   var types: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   @JSName("$drag")
   def $drag(source: stdLib.HTMLElement, ev: stdLib.Event): java.lang.String = js.native
   @JSName("$dragHTML")
@@ -145,9 +145,9 @@ class sidebar () extends baseview {
   def isChecked(id: scala.Double): scala.Boolean = js.native
   def isSelected(id: java.lang.String): scala.Boolean = js.native
   def isSelected(id: scala.Double): scala.Boolean = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def loadBranch(id: java.lang.String, callback: webixLib.webixNs.WebixCallback, url: java.lang.String): scala.Unit = js.native
   def loadBranch(id: scala.Double, callback: webixLib.webixNs.WebixCallback, url: java.lang.String): scala.Unit = js.native
   def loadNext(

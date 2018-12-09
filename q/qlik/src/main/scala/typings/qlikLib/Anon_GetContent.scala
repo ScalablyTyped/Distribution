@@ -10,7 +10,7 @@ trait Anon_GetContent extends js.Object {
   def getContent(
     variable: java.lang.String,
     callback: js.Function2[/* value */ qlikLib.qlikMod.Variable, /* app */ this.type, scala.Unit]
-  ): stdLib.Promise[_]
+  ): js.Promise[_]
   def setContent(variable: java.lang.String, value: java.lang.String): scala.Unit
 }
 

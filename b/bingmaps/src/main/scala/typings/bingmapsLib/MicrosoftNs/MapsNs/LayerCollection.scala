@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Microsoft.Maps.LayerCollection")
 @js.native
 class LayerCollection ()
-  extends stdLib.Array[js.Object] {
+  extends stdLib.Array[js.Any] {
   /**
           * Removes all layers from the map.
           */

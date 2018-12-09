@@ -19,7 +19,7 @@ class Fractal ()
   val web: atFrctlFractalLib.fractalMod.fractalNs.webNs.Web = js.native
   def extend(plugin: java.lang.String): this.type = js.native
   def extend(plugin: js.ThisFunction1[/* this */ this.type, /* core */ js.Any, scala.Unit]): this.type = js.native
-  def load(): stdLib.Promise[scala.Unit] = js.native
+  def load(): js.Promise[scala.Unit] = js.native
   def unwatch(): this.type = js.native
   def watch(): this.type = js.native
 }

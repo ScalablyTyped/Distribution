@@ -16,7 +16,7 @@ trait Namespace extends js.Object {
   def get(key: java.lang.String): js.Any = js.native
   def run(fn: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
   def runAndReturn[T](fn: js.Function1[/* repeated */js.Any, T]): T = js.native
-  def runPromise[T](fn: js.Function1[/* repeated */js.Any, stdLib.Promise[T]]): stdLib.Promise[T] = js.native
+  def runPromise[T](fn: js.Function1[/* repeated */js.Any, js.Promise[T]]): js.Promise[T] = js.native
   def set[T](key: java.lang.String, value: T): T = js.native
 }
 

@@ -4,8 +4,6 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(braft-editor)) [id => braft-editor, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(braft-editor) [id => braft-editor, phase => typescript] 
 [info ] PreferTypeAlias.scala:97 Could not simplify BraftEditor to function type alias because of circular references Vector(TsIdentNamespace(BraftEditor)) [id => braft-editor, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(braft-editor) / TsDeclInterface(BraftEditor))] 
-[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(S) at TreeScope(TsParsedFile() / TsDeclModule(braft-editor) / TsDeclInterface(BraftEditor) / TsTypeRef()) [id => braft-editor, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(braft-editor) / TsDeclInterface(BraftEditor) / TsTypeRef())] 
-[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(SS) at TreeScope(TsParsedFile() / TsDeclModule(braft-editor) / TsDeclInterface(BraftEditor) / TsTypeRef()) [id => braft-editor, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(braft-editor) / TsDeclInterface(BraftEditor) / TsTypeRef())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Type) [id => braft-editor, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(braft-editor) / TsDeclNamespace(BraftEditor) / TsDeclInterface(editorProps) / TsMemberFunction(insertMedias) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeObject())] 
 [debug] PhaseRunner.scala:78 Success [id => braft-editor, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing braft-editor [id => braft-editor, phase => scala.js] 

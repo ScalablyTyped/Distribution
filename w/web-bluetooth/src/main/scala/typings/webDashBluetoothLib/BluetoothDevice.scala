@@ -39,6 +39,6 @@ trait BluetoothDevice
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   def unwatchAdvertisements(): scala.Unit = js.native
-  def watchAdvertisements(): stdLib.Promise[scala.Unit] = js.native
+  def watchAdvertisements(): js.Promise[scala.Unit] = js.native
 }
 

@@ -30,14 +30,14 @@ trait OnsPopoverElement
        * @return Resolves to the hidden element
        * @description Close the popover
        */
-  def hide(): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def hide(): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} [options] Parameter object
        * @param {String} [options.animation] Animation name. Available animations are "fade" and "none"
        * @return Resolves to the hidden element
        * @description Close the popover
        */
-  def hide(options: onsenuiLib.onsenuiMod.PopoverOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def hide(options: onsenuiLib.onsenuiMod.PopoverOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {String|Event|HTMLElement} target Target element. Can be either a CSS selector, an event object or a DOM element
        * @param {Object} [options] Parameter object
@@ -45,7 +45,7 @@ trait OnsPopoverElement
        * @return Resolves to the displayed element
        * @description Open the popover and point it at a target. The target can be either an event, a css selector or a DOM element
        */
-  def show(target: js.Any): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def show(target: js.Any): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {String|Event|HTMLElement} target Target element. Can be either a CSS selector, an event object or a DOM element
        * @param {Object} [options] Parameter object
@@ -53,6 +53,6 @@ trait OnsPopoverElement
        * @return Resolves to the displayed element
        * @description Open the popover and point it at a target. The target can be either an event, a css selector or a DOM element
        */
-  def show(target: js.Any, options: onsenuiLib.onsenuiMod.PopoverOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def show(target: js.Any, options: onsenuiLib.onsenuiMod.PopoverOptions): js.Promise[stdLib.HTMLElement] = js.native
 }
 

@@ -19,6 +19,6 @@ trait SweetAlert extends js.Object {
   var stopLoading: js.UndefOr[js.Function0[scala.Unit]] = js.native
   def apply(
     /* import warning: Dropping repeated marker of param TsIdentSimple(params) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(SwalParams))),List())) is not an array type */params: SwalParams
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
 }
 

@@ -22,54 +22,54 @@ class Connection protected () extends BaseConnection {
   var streaming: jsforceLib.jsforceMod.Streaming = js.native
   var tooling: Tooling = js.native
   var version: java.lang.String = js.native
-  def authorize(code: java.lang.String): stdLib.Promise[UserInfo] = js.native
+  def authorize(code: java.lang.String): js.Promise[UserInfo] = js.native
   def authorize(
     code: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* res */ UserInfo, scala.Unit]
-  ): stdLib.Promise[UserInfo] = js.native
+  ): js.Promise[UserInfo] = js.native
   def initialize(): scala.Unit = js.native
   def initialize(options: ConnectionOptions): scala.Unit = js.native
-  def limits(): stdLib.Promise[jsforceLib.limitsDashInfoMod.LimitsInfo] = js.native
-  def limits(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]): stdLib.Promise[jsforceLib.limitsDashInfoMod.LimitsInfo] = js.native
-  def login(user: java.lang.String, password: java.lang.String): stdLib.Promise[UserInfo] = js.native
+  def limits(): js.Promise[jsforceLib.limitsDashInfoMod.LimitsInfo] = js.native
+  def limits(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]): js.Promise[jsforceLib.limitsDashInfoMod.LimitsInfo] = js.native
+  def login(user: java.lang.String, password: java.lang.String): js.Promise[UserInfo] = js.native
   def login(
     user: java.lang.String,
     password: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* res */ UserInfo, scala.Unit]
-  ): stdLib.Promise[UserInfo] = js.native
-  def loginByOAuth2(user: java.lang.String, password: java.lang.String): stdLib.Promise[UserInfo] = js.native
+  ): js.Promise[UserInfo] = js.native
+  def loginByOAuth2(user: java.lang.String, password: java.lang.String): js.Promise[UserInfo] = js.native
   def loginByOAuth2(
     user: java.lang.String,
     password: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* res */ UserInfo, scala.Unit]
-  ): stdLib.Promise[UserInfo] = js.native
-  def loginBySoap(user: java.lang.String, password: java.lang.String): stdLib.Promise[UserInfo] = js.native
+  ): js.Promise[UserInfo] = js.native
+  def loginBySoap(user: java.lang.String, password: java.lang.String): js.Promise[UserInfo] = js.native
   def loginBySoap(
     user: java.lang.String,
     password: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* res */ UserInfo, scala.Unit]
-  ): stdLib.Promise[UserInfo] = js.native
-  def logout(): stdLib.Promise[scala.Unit] = js.native
-  def logout(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]): stdLib.Promise[scala.Unit] = js.native
-  def logout(revoke: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[UserInfo] = js.native
+  def logout(): js.Promise[scala.Unit] = js.native
+  def logout(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]): js.Promise[scala.Unit] = js.native
+  def logout(revoke: scala.Boolean): js.Promise[scala.Unit] = js.native
   def logout(
     revoke: scala.Boolean,
     callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
-  def logoutByOAuth2(): stdLib.Promise[scala.Unit] = js.native
-  def logoutByOAuth2(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]): stdLib.Promise[scala.Unit] = js.native
-  def logoutByOAuth2(revoke: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
+  def logoutByOAuth2(): js.Promise[scala.Unit] = js.native
+  def logoutByOAuth2(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]): js.Promise[scala.Unit] = js.native
+  def logoutByOAuth2(revoke: scala.Boolean): js.Promise[scala.Unit] = js.native
   def logoutByOAuth2(
     revoke: scala.Boolean,
     callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
-  def logoutBySoap(): stdLib.Promise[scala.Unit] = js.native
-  def logoutBySoap(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]): stdLib.Promise[scala.Unit] = js.native
-  def logoutBySoap(revoke: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
+  def logoutBySoap(): js.Promise[scala.Unit] = js.native
+  def logoutBySoap(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]): js.Promise[scala.Unit] = js.native
+  def logoutBySoap(revoke: scala.Boolean): js.Promise[scala.Unit] = js.native
   def logoutBySoap(
     revoke: scala.Boolean,
     callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.UndefOr[scala.Nothing], scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def queryAll[T](soql: java.lang.String): jsforceLib.queryMod.Query[jsforceLib.queryMod.QueryResult[T]] = js.native
   def queryAll[T](soql: java.lang.String, options: js.Object): jsforceLib.queryMod.Query[jsforceLib.queryMod.QueryResult[T]] = js.native
   def queryAll[T](

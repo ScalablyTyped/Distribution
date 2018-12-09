@@ -7,26 +7,26 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IApi extends js.Object {
-  def apply[T](patterns: fastDashGlobLib.outTypesPatternsMod.Pattern): stdLib.Promise[js.Array[T]] = js.native
+  def apply[T](patterns: fastDashGlobLib.outTypesPatternsMod.Pattern): js.Promise[js.Array[T]] = js.native
   def apply[T](
     patterns: fastDashGlobLib.outTypesPatternsMod.Pattern,
     options: fastDashGlobLib.outManagersOptionsMod.IPartialOptions[T]
-  ): stdLib.Promise[js.Array[T]] = js.native
-  def apply[T](patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern]): stdLib.Promise[js.Array[T]] = js.native
+  ): js.Promise[js.Array[T]] = js.native
+  def apply[T](patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern]): js.Promise[js.Array[T]] = js.native
   def apply[T](
     patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
     options: fastDashGlobLib.outManagersOptionsMod.IPartialOptions[T]
-  ): stdLib.Promise[js.Array[T]] = js.native
-  def async[T](patterns: fastDashGlobLib.outTypesPatternsMod.Pattern): stdLib.Promise[js.Array[T]] = js.native
+  ): js.Promise[js.Array[T]] = js.native
+  def async[T](patterns: fastDashGlobLib.outTypesPatternsMod.Pattern): js.Promise[js.Array[T]] = js.native
   def async[T](
     patterns: fastDashGlobLib.outTypesPatternsMod.Pattern,
     options: fastDashGlobLib.outManagersOptionsMod.IPartialOptions[T]
-  ): stdLib.Promise[js.Array[T]] = js.native
-  def async[T](patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern]): stdLib.Promise[js.Array[T]] = js.native
+  ): js.Promise[js.Array[T]] = js.native
+  def async[T](patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern]): js.Promise[js.Array[T]] = js.native
   def async[T](
     patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
     options: fastDashGlobLib.outManagersOptionsMod.IPartialOptions[T]
-  ): stdLib.Promise[js.Array[T]] = js.native
+  ): js.Promise[js.Array[T]] = js.native
   def generateTasks(patterns: fastDashGlobLib.outTypesPatternsMod.Pattern): js.Array[Task] = js.native
   def generateTasks(
     patterns: fastDashGlobLib.outTypesPatternsMod.Pattern,

@@ -59,7 +59,7 @@ package object libCoreMod {
     /* name */ java.lang.String, 
     /* chunkData */ js.Any, 
     /* customResumeData */ js.Any, 
-    scala.Unit | stdLib.Promise[js.Any]
+    scala.Unit | js.Promise[js.Any]
   ]
   type OnSessionRequestComplete = js.Function3[
     /* response */ js.Array[js.Any], 
@@ -86,7 +86,7 @@ package object libCoreMod {
     /* id */ scala.Double, 
     /* name */ java.lang.String, 
     /* chunkData */ ChunkData, 
-    scala.Unit | stdLib.Promise[js.Any]
+    scala.Unit | js.Promise[js.Any]
   ]
   type OnUploadChunkSuccess = js.Function4[
     /* id */ scala.Double, 

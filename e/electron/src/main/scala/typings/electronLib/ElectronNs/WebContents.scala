@@ -358,7 +358,7 @@ class WebContents () extends EventEmitter {
        * We recommend that you use the returned Promise to handle code that results in a
        * Promise.
        */
-  def executeJavaScript(code: java.lang.String): stdLib.Promise[_] = js.native
+  def executeJavaScript(code: java.lang.String): js.Promise[_] = js.native
   /**
        * Evaluates code in page. In the browser window some HTML APIs like
        * requestFullScreen can only be invoked by a gesture from the user. Setting
@@ -367,7 +367,7 @@ class WebContents () extends EventEmitter {
        * We recommend that you use the returned Promise to handle code that results in a
        * Promise.
        */
-  def executeJavaScript(code: java.lang.String, userGesture: scala.Boolean): stdLib.Promise[_] = js.native
+  def executeJavaScript(code: java.lang.String, userGesture: scala.Boolean): js.Promise[_] = js.native
   /**
        * Evaluates code in page. In the browser window some HTML APIs like
        * requestFullScreen can only be invoked by a gesture from the user. Setting
@@ -380,7 +380,7 @@ class WebContents () extends EventEmitter {
     code: java.lang.String,
     userGesture: scala.Boolean,
     callback: js.Function1[/* result */ js.Any, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * Starts a request to find all matches for the text in the web page. The result of
        * the request can be obtained by subscribing to found-in-page event.

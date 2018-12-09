@@ -21,6 +21,6 @@ trait QHeader extends js.Object {
   var qStateCounts: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Double]] = js.undefined
   def orderBy(): scala.Unit
   def reverseOrder(): scala.Unit
-  def selectRange(min: scala.Double, max: scala.Double, inclMin: scala.Boolean, inclMax: scala.Boolean): stdLib.Promise[_]
+  def selectRange(min: scala.Double, max: scala.Double, inclMin: scala.Boolean, inclMax: scala.Boolean): js.Promise[_]
 }
 

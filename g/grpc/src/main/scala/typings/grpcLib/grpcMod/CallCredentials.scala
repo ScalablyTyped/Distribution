@@ -18,6 +18,6 @@ trait CallCredentials extends js.Object {
        * Asynchronously generates a new Metadata object.
        * @param options Options used in generating the Metadata object.
        */
-  def generateMetadata(options: js.Object): stdLib.Promise[Metadata]
+  def generateMetadata(options: js.Object): js.Promise[Metadata]
 }
 

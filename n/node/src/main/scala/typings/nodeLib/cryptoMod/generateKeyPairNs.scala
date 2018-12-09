@@ -14,20 +14,20 @@ object generateKeyPairNs extends js.Object {
       nodeLib.nodeLibStrings.der | nodeLib.nodeLibStrings.pem, 
       nodeLib.nodeLibStrings.der | nodeLib.nodeLibStrings.pem
     ]
-  ): stdLib.Promise[nodeLib.Anon_PublicKey] = js.native
+  ): js.Promise[nodeLib.Anon_PublicKey] = js.native
   def `__promisify__`(
     `type`: nodeLib.nodeLibStrings.ec,
     options: nodeLib.cryptoMod.ECKeyPairOptions[
       nodeLib.nodeLibStrings.der | nodeLib.nodeLibStrings.pem, 
       nodeLib.nodeLibStrings.der | nodeLib.nodeLibStrings.pem
     ]
-  ): stdLib.Promise[nodeLib.Anon_PublicKey] = js.native
+  ): js.Promise[nodeLib.Anon_PublicKey] = js.native
   def `__promisify__`(
     `type`: nodeLib.nodeLibStrings.rsa,
     options: nodeLib.cryptoMod.RSAKeyPairOptions[
       nodeLib.nodeLibStrings.der | nodeLib.nodeLibStrings.pem, 
       nodeLib.nodeLibStrings.der | nodeLib.nodeLibStrings.pem
     ]
-  ): stdLib.Promise[nodeLib.Anon_PublicKey] = js.native
+  ): js.Promise[nodeLib.Anon_PublicKey] = js.native
 }
 

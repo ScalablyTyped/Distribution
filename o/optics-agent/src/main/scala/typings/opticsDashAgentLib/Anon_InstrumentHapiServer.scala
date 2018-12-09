@@ -21,7 +21,7 @@ trait Anon_InstrumentHapiServer extends js.Object {
   var koaMiddleware: js.Function0[
     js.Function2[
       /* context */ koaLib.koaMod.ApplicationNs.Context, 
-      /* next */ js.Function0[stdLib.Promise[_]], 
+      /* next */ js.Function0[js.Promise[_]], 
       scala.Unit
     ]
   ]

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Task", "Task")
 @js.native
 class Task[A] protected () extends js.Object {
-  def this(run: fpDashTsLib.libFunctionMod.Lazy[stdLib.Promise[A]]) = this()
+  def this(run: fpDashTsLib.libFunctionMod.Lazy[js.Promise[A]]) = this()
   val _A: A = js.native
   val _URI: URI = js.native
   def ap[B](fab: Task[js.Function1[/* a */ A, B]]): Task[B] = js.native
@@ -29,6 +29,6 @@ class Task[A] protected () extends js.Object {
   def chain[B](f: js.Function1[/* a */ A, Task[B]]): Task[B] = js.native
   def inspect(): java.lang.String = js.native
   def map[B](f: js.Function1[/* a */ A, B]): Task[B] = js.native
-  def run(): stdLib.Promise[stdLib.Promise[A]] = js.native
+  def run(): js.Promise[js.Promise[A]] = js.native
 }
 

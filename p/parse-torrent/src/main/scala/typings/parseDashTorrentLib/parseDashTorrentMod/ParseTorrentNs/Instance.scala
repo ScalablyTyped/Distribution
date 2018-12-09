@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance because Would inherit conflicting mutable fields List(announce, infoHash, infoHashBuffer, name, urlList))*/
+/* RemoveMultipleInheritance: Dropped parents List(parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance because Would inherit conflicting mutable fields List(constructor, announce, infoHash, infoHashBuffer, name, urlList))*/
 
 trait Instance
   extends magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance {

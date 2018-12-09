@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 trait Utils extends js.Object {
   def add(l: js.Any, r: js.Any): js.Any
   def appendOrSelect(
-    parent: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object],
+    parent: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _],
     selector: java.lang.String,
     tag: js.Any
-  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
   def clamp(n: scala.Double, min: scala.Double, max: scala.Double): scala.Double
   def isFloat(n: js.Any): scala.Boolean
   def isInteger(n: js.Any): scala.Boolean

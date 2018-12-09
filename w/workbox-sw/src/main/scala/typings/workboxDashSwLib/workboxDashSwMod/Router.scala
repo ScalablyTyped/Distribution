@@ -22,7 +22,7 @@ trait Router extends js.Object {
   	 * @param {FetchEvent} event - The event from a service worker's 'fetch' event listener.
   	 * @returns {Promise<Response>?} A promise is returned if a registered route can handle the FetchEvent's request. If there is no matching route and there's no defaultHandler, undefined is returned.
   	 */
-  def handleRequest(event: js.Any): js.UndefOr[stdLib.Promise[stdLib.Response]]
+  def handleRequest(event: js.Any): js.UndefOr[js.Promise[stdLib.Response]]
   /**
   	 * Registers a route with the router.
   	 * @param {Route} route

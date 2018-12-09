@@ -22,14 +22,14 @@ ScalablyTyped.runtime.Instantiable1[
                *  Restore a TextBuffer based on an earlier state created using the
                *  TextBuffer::serialize method.
                */
-  def deserialize(params: js.Object): stdLib.Promise[TextBuffer] = js.native
+  def deserialize(params: js.Object): js.Promise[TextBuffer] = js.native
   /** Create a new buffer backed by the given file path. */
-  def load(source: java.lang.String): stdLib.Promise[TextBuffer] = js.native
+  def load(source: java.lang.String): js.Promise[TextBuffer] = js.native
   /** Create a new buffer backed by the given file path. */
   def load(
     source: java.lang.String,
     params: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.OptionsNs.BufferLoad
-  ): stdLib.Promise[TextBuffer] = js.native
+  ): js.Promise[TextBuffer] = js.native
   /**
                *  Create a new buffer backed by the given file path. For better performance,
                *  use TextBuffer.load instead.

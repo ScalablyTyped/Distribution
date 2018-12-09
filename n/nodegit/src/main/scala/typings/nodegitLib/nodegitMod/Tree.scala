@@ -18,27 +18,27 @@ object Tree extends js.Object {
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String, callback: js.Function): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String, callback: js.Function): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, callback: js.Function): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, callback: js.Function): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.treeMod.Tree): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.treeMod.Tree): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.treeMod.Tree, callback: js.Function): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
-  def lookupPrefix(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, len: scala.Double): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.treeMod.Tree, callback: js.Function): js.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookupPrefix(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, len: scala.Double): js.Promise[nodegitLib.treeMod.Tree] = js.native
 }
 

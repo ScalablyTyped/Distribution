@@ -16,7 +16,7 @@ trait PublicKeyInfo extends js.Object {
            */
   def fromJSON(json: stdLib.JsonWebKey): scala.Unit
   def fromSchema(schema: js.Any): scala.Unit
-  def importKey(publicKey: stdLib.CryptoKey): stdLib.PromiseLike[scala.Unit]
+  def importKey(publicKey: stdLib.CryptoKey): js.Thenable[scala.Unit]
   def toJSON(): js.Any
   def toSchema(): js.Any
 }

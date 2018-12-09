@@ -68,7 +68,7 @@ trait Jexl extends js.Object {
        *      if a callback is supplied, the returned promise will already have
        *      a '.catch' attached to it in order to pass the error to the callback.
        */
-  def eval(expression: java.lang.String): stdLib.Promise[_] = js.native
+  def eval(expression: java.lang.String): js.Promise[_] = js.native
   /**
        * Evaluates a Jexl string within an optional context.
        * @param expression The Jexl expression to be evaluated
@@ -82,7 +82,7 @@ trait Jexl extends js.Object {
        *      if a callback is supplied, the returned promise will already have
        *      a '.catch' attached to it in order to pass the error to the callback.
        */
-  def eval(expression: java.lang.String, context: js.Object): stdLib.Promise[_] = js.native
+  def eval(expression: java.lang.String, context: js.Object): js.Promise[_] = js.native
   /**
        * Evaluates a Jexl string within an optional context.
        * @param expression The Jexl expression to be evaluated
@@ -96,7 +96,7 @@ trait Jexl extends js.Object {
        *      if a callback is supplied, the returned promise will already have
        *      a '.catch' attached to it in order to pass the error to the callback.
        */
-  def eval(expression: java.lang.String, context: js.Object, cb: jexlLib.EvalCallbackFunction): stdLib.Promise[_] = js.native
+  def eval(expression: java.lang.String, context: js.Object, cb: jexlLib.EvalCallbackFunction): js.Promise[_] = js.native
   /**
        * Retrieves a previously set transform function.
        * @param name The name of the transform function

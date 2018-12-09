@@ -21,9 +21,9 @@ trait DataRecord extends js.Object {
   def getValues(): js.Any = js.native
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
   def isVisible(): scala.Boolean = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): js.Promise[_] = js.native
   def mapEvent(map: js.Any): scala.Unit = js.native
   def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
   def refresh(): scala.Unit = js.native

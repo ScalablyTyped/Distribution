@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait MediaDevices extends js.Object {
-  def enumerateDevices(): stdLib.Promise[js.Array[MediaDeviceInfo]]
+  def enumerateDevices(): js.Promise[js.Array[MediaDeviceInfo]]
   def getSupportedConstraints(): MediaTrackSupportedConstraints
-  def getUserMedia(constraints: MediaStreamConstraints): stdLib.Promise[MediaStream]
+  def getUserMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream]
 }
 

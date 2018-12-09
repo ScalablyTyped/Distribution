@@ -56,7 +56,7 @@ class GoogleAuth () extends js.Object {
        * @returns A promise that resolves with the boolean.
        * @api private
        */
-  def _checkIsGCE(): stdLib.Promise[scala.Boolean] = js.native
+  def _checkIsGCE(): js.Promise[scala.Boolean] = js.native
   /**
        * Creates a file stream. Allows mocking.
        * @api private
@@ -73,7 +73,7 @@ class GoogleAuth () extends js.Object {
        * @returns Promise that resolves with the OAuth2Client
        * @api private
        */
-  def _getApplicationCredentialsFromFilePath(filePath: java.lang.String): stdLib.Promise[
+  def _getApplicationCredentialsFromFilePath(filePath: java.lang.String): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient
   ] = js.native
   /**
@@ -85,7 +85,7 @@ class GoogleAuth () extends js.Object {
   def _getApplicationCredentialsFromFilePath(
     filePath: java.lang.String,
     options: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient
   ] = js.native
   /**
@@ -108,7 +108,7 @@ class GoogleAuth () extends js.Object {
        * @returns Promise that resolves with the OAuth2Client or null.
        * @api private
        */
-  def _tryGetApplicationCredentialsFromEnvironmentVariable(): stdLib.Promise[
+  def _tryGetApplicationCredentialsFromEnvironmentVariable(): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient | scala.Null
   ] = js.native
   /**
@@ -116,7 +116,7 @@ class GoogleAuth () extends js.Object {
        * @returns Promise that resolves with the OAuth2Client or null.
        * @api private
        */
-  def _tryGetApplicationCredentialsFromEnvironmentVariable(options: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions): stdLib.Promise[
+  def _tryGetApplicationCredentialsFromEnvironmentVariable(options: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient | scala.Null
   ] = js.native
   /**
@@ -124,7 +124,7 @@ class GoogleAuth () extends js.Object {
        * @return Promise that resolves with the OAuth2Client or null.
        * @api private
        */
-  def _tryGetApplicationCredentialsFromWellKnownFile(): stdLib.Promise[
+  def _tryGetApplicationCredentialsFromWellKnownFile(): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient | scala.Null
   ] = js.native
   /**
@@ -132,7 +132,7 @@ class GoogleAuth () extends js.Object {
        * @return Promise that resolves with the OAuth2Client or null.
        * @api private
        */
-  def _tryGetApplicationCredentialsFromWellKnownFile(options: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions): stdLib.Promise[
+  def _tryGetApplicationCredentialsFromWellKnownFile(options: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient | scala.Null
   ] = js.native
   /**
@@ -140,7 +140,7 @@ class GoogleAuth () extends js.Object {
        * the request options.
        * @param opts Axios or Request options on which to attach the headers
        */
-  def authorizeRequest(opts: googleDashAuthDashLibraryLib.Anon_Uri): stdLib.Promise[googleDashAuthDashLibraryLib.Anon_UriUrl] = js.native
+  def authorizeRequest(opts: googleDashAuthDashLibraryLib.Anon_Uri): js.Promise[googleDashAuthDashLibraryLib.Anon_UriUrl] = js.native
   /**
        * Create a credentials instance using the given API key string.
        * @param apiKey The API key string
@@ -178,14 +178,14 @@ class GoogleAuth () extends js.Object {
        * @param inputStream The input stream.
        * @param callback Optional callback.
        */
-  def fromStream(inputStream: nodeLib.streamMod.Readable): stdLib.Promise[
+  def fromStream(inputStream: nodeLib.streamMod.Readable): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient
   ] = js.native
   def fromStream(inputStream: nodeLib.streamMod.Readable, callback: CredentialCallback): scala.Unit = js.native
   def fromStream(
     inputStream: nodeLib.streamMod.Readable,
     options: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient
   ] = js.native
   def fromStream(
@@ -197,16 +197,16 @@ class GoogleAuth () extends js.Object {
        * Automatically obtain application default credentials, and return
        * an access token for making requests.
        */
-  def getAccessToken(): stdLib.Promise[js.UndefOr[java.lang.String | scala.Null]] = js.native
+  def getAccessToken(): js.Promise[js.UndefOr[java.lang.String | scala.Null]] = js.native
   /**
        * Obtains the default service-level credentials for the application.
        * @param callback Optional callback.
        * @returns Promise that resolves with the ADCResponse (if no callback was
        * passed).
        */
-  def getApplicationDefault(): stdLib.Promise[ADCResponse] = js.native
+  def getApplicationDefault(): js.Promise[ADCResponse] = js.native
   def getApplicationDefault(callback: ADCCallback): scala.Unit = js.native
-  def getApplicationDefault(options: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions): stdLib.Promise[ADCResponse] = js.native
+  def getApplicationDefault(options: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions): js.Promise[ADCResponse] = js.native
   def getApplicationDefault(
     options: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions,
     callback: ADCCallback
@@ -215,14 +215,14 @@ class GoogleAuth () extends js.Object {
        * Automatically obtain a client based on the provided configuration.  If no
        * options were passed, use Application Default Credentials.
        */
-  def getClient(): stdLib.Promise[
+  def getClient(): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthComputeclientMod.Compute | googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient
   ] = js.native
   /**
        * Automatically obtain a client based on the provided configuration.  If no
        * options were passed, use Application Default Credentials.
        */
-  def getClient(options: GoogleAuthOptions): stdLib.Promise[
+  def getClient(options: GoogleAuthOptions): js.Promise[
     googleDashAuthDashLibraryLib.buildSrcAuthComputeclientMod.Compute | googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient
   ] = js.native
   /**
@@ -235,7 +235,7 @@ class GoogleAuth () extends js.Object {
        * a client_email and optional private key, or the error.
        * returned
        */
-  def getCredentials(): stdLib.Promise[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody] = js.native
+  def getCredentials(): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody] = js.native
   def getCredentials(
     callback: js.Function2[
       /* err */ nodeLib.Error | scala.Null, 
@@ -247,41 +247,41 @@ class GoogleAuth () extends js.Object {
        * THIS METHOD HAS BEEN DEPRECATED.
        * It will be removed in 3.0.  Please use getProjectId instead.
        */
-  def getDefaultProjectId(): stdLib.Promise[java.lang.String] = js.native
+  def getDefaultProjectId(): js.Promise[java.lang.String] = js.native
   def getDefaultProjectId(callback: ProjectIdCallback): scala.Unit = js.native
   /**
        * Determine the compute environment in which the code is running.
        */
-  def getEnv(): stdLib.Promise[googleDashAuthDashLibraryLib.buildSrcAuthEnvDetectMod.GCPEnv] = js.native
+  def getEnv(): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthEnvDetectMod.GCPEnv] = js.native
   /**
        * Obtains the default project ID for the application.
        * @param callback Optional callback
        * @returns Promise that resolves with project Id (if used without callback)
        */
-  def getProjectId(): stdLib.Promise[java.lang.String] = js.native
+  def getProjectId(): js.Promise[java.lang.String] = js.native
   def getProjectId(callback: ProjectIdCallback): scala.Unit = js.native
   /**
        * Obtain the HTTP headers that will provide authorization for a given
        * request.
        */
-  def getRequestHeaders(): stdLib.Promise[googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.Headers] = js.native
+  def getRequestHeaders(): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.Headers] = js.native
   /**
        * Obtain the HTTP headers that will provide authorization for a given
        * request.
        */
-  def getRequestHeaders(url: java.lang.String): stdLib.Promise[googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.Headers] = js.native
+  def getRequestHeaders(url: java.lang.String): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.Headers] = js.native
   /**
        * Automatically obtain application default credentials, and make an
        * HTTP request using the given options.
        * @param opts Axios request options for the HTTP request.
        */
-  def request[T](opts: axiosLib.axiosMod.AxiosRequestConfig): stdLib.Promise[axiosLib.axiosMod.AxiosResponse[T]] = js.native
+  def request[T](opts: axiosLib.axiosMod.AxiosRequestConfig): js.Promise[axiosLib.axiosMod.AxiosResponse[T]] = js.native
   /**
        * Sign the given data with the current private key, or go out
        * to the IAM API to sign it.
        * @param data The data to be signed.
        */
-  def sign(data: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def sign(data: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
        * Credentials from the Cloud SDK that are associated with Cloud SDK's project
        * are problematic because they may not have APIs enabled and have limited

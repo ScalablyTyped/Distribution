@@ -18,7 +18,7 @@ trait OCSPResponse extends js.Object {
   def createForCertificate(
     certificate: pkijsLib.srcCertificateMod.default,
     parameters: pkijsLib.srcCertIDMod.CreateFroCertificateParams
-  ): stdLib.PromiseLike[scala.Unit]
+  ): js.Thenable[scala.Unit]
   def fromSchema(schema: js.Any): scala.Unit
   /**
            * Get OCSP response status for specific certificate
@@ -29,7 +29,7 @@ trait OCSPResponse extends js.Object {
   def getCertificateStatus(
     certificate: pkijsLib.srcCertificateMod.default,
     issuerCertificate: pkijsLib.srcCertificateMod.default
-  ): stdLib.PromiseLike[pkijsLib.srcBasicOCSPResponseMod.GetCertificateStatusResult]
+  ): js.Thenable[pkijsLib.srcBasicOCSPResponseMod.GetCertificateStatusResult]
   def toJSON(): js.Any
   def toSchema(): js.Any
 }

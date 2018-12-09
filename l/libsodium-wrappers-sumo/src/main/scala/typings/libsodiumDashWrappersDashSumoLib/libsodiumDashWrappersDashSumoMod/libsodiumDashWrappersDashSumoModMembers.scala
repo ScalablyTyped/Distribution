@@ -135,7 +135,7 @@ object libsodiumDashWrappersDashSumoModMembers extends js.Object {
   val crypto_stream_xchacha20_MESSAGEBYTES_MAX: scala.Double = js.native
   val crypto_stream_xchacha20_NONCEBYTES: scala.Double = js.native
   val randombytes_SEEDBYTES: scala.Double = js.native
-  val ready: stdLib.Promise[scala.Unit] = js.native
+  val ready: js.Promise[scala.Unit] = js.native
   def add(a: stdLib.Uint8Array, b: stdLib.Uint8Array): scala.Unit = js.native
   def compare(b1: stdLib.Uint8Array, b2: stdLib.Uint8Array): scala.Double = js.native
   def crypto_aead_chacha20poly1305_decrypt(

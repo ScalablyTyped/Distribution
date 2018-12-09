@@ -11,11 +11,11 @@ trait Navigator extends js.Object {
      * When invoked, returns a Promise object representing a request for access to MIDI
      * devices on the user's system.
      */
-  def requestMIDIAccess(): stdLib.Promise[webmidiLib.WebMidiNs.MIDIAccess] = js.native
+  def requestMIDIAccess(): js.Promise[webmidiLib.WebMidiNs.MIDIAccess] = js.native
   /**
      * When invoked, returns a Promise object representing a request for access to MIDI
      * devices on the user's system.
      */
-  def requestMIDIAccess(options: webmidiLib.WebMidiNs.MIDIOptions): stdLib.Promise[webmidiLib.WebMidiNs.MIDIAccess] = js.native
+  def requestMIDIAccess(options: webmidiLib.WebMidiNs.MIDIOptions): js.Promise[webmidiLib.WebMidiNs.MIDIAccess] = js.native
 }
 

@@ -13,25 +13,25 @@ object gzipDashSizeModMembers extends js.Object {
    * @param input A string or Buffer to determine the gzip size of
    * @param options Any zlib option
    */
-  def apply(input: java.lang.String | nodeLib.Buffer): stdLib.Promise[scala.Double] = js.native
+  def apply(input: java.lang.String | nodeLib.Buffer): js.Promise[scala.Double] = js.native
   /**
    * Returns a Promise for the size.
    * @param input A string or Buffer to determine the gzip size of
    * @param options Any zlib option
    */
-  def apply(input: java.lang.String | nodeLib.Buffer, options: nodeLib.zlibMod.ZlibOptions): stdLib.Promise[scala.Double] = js.native
+  def apply(input: java.lang.String | nodeLib.Buffer, options: nodeLib.zlibMod.ZlibOptions): js.Promise[scala.Double] = js.native
   /**
        * Returns a Promise for the size of the file.
        * @param path The path to the file
        * @param options Any zlib option
        */
-  def file(path: java.lang.String): stdLib.Promise[scala.Double] = js.native
+  def file(path: java.lang.String): js.Promise[scala.Double] = js.native
   /**
        * Returns a Promise for the size of the file.
        * @param path The path to the file
        * @param options Any zlib option
        */
-  def file(path: java.lang.String, options: nodeLib.zlibMod.ZlibOptions): stdLib.Promise[scala.Double] = js.native
+  def file(path: java.lang.String, options: nodeLib.zlibMod.ZlibOptions): js.Promise[scala.Double] = js.native
   /**
        * Returns a stream.PassThrough. The stream emits a gzip-size event and has a gzipSize property.
        * @param options Any zlib option

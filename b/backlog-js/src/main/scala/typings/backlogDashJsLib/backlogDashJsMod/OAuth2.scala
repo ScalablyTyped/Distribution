@@ -12,8 +12,8 @@ class OAuth2 protected () extends js.Object {
   def this(credentials: backlogDashJsLib.backlogDashJsMod.OptionNs.OAuth2Ns.Credentials, timeout: scala.Double) = this()
   var credentials: js.Any = js.native
   var timeout: js.Any = js.native
-  def getAccessToken(options: backlogDashJsLib.Anon_RedirectUriHost): stdLib.Promise[backlogDashJsLib.backlogDashJsMod.EntityNs.OAuth2Ns.AccessToken] = js.native
+  def getAccessToken(options: backlogDashJsLib.Anon_RedirectUriHost): js.Promise[backlogDashJsLib.backlogDashJsMod.EntityNs.OAuth2Ns.AccessToken] = js.native
   def getAuthorizationURL(options: backlogDashJsLib.Anon_RedirectUri): java.lang.String = js.native
-  def refreshAccessToken(options: backlogDashJsLib.Anon_RefreshToken): stdLib.Promise[backlogDashJsLib.backlogDashJsMod.EntityNs.OAuth2Ns.AccessToken] = js.native
+  def refreshAccessToken(options: backlogDashJsLib.Anon_RefreshToken): js.Promise[backlogDashJsLib.backlogDashJsMod.EntityNs.OAuth2Ns.AccessToken] = js.native
 }
 

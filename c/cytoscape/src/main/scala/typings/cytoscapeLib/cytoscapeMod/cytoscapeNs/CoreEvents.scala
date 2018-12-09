@@ -127,22 +127,22 @@ trait CoreEvents extends js.Object {
            * @param selector A selector to specify elements for which the handler is triggered.
            */
   def one(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
-  def pon(events: EventNames): stdLib.Promise[EventHandler] = js.native
-  def pon(events: EventNames, selector: Selector): stdLib.Promise[EventHandler] = js.native
+  def pon(events: EventNames): js.Promise[EventHandler] = js.native
+  def pon(events: EventNames, selector: Selector): js.Promise[EventHandler] = js.native
   /**
            * Get a promise that is resolved with the first
            * of any of the specified events triggered on the graph.
            * @param events A space separated list of event names.
            * @param selector [optional] A selector to specify elements for which the handler is triggered.
            */
-  def promiseOn(events: EventNames): stdLib.Promise[EventHandler] = js.native
+  def promiseOn(events: EventNames): js.Promise[EventHandler] = js.native
   /**
            * Get a promise that is resolved with the first
            * of any of the specified events triggered on the graph.
            * @param events A space separated list of event names.
            * @param selector [optional] A selector to specify elements for which the handler is triggered.
            */
-  def promiseOn(events: EventNames, selector: Selector): stdLib.Promise[EventHandler] = js.native
+  def promiseOn(events: EventNames, selector: Selector): js.Promise[EventHandler] = js.native
   /**
            * Run a callback as soon as the graph becomes ready. If the graph is already ready, then the callback is called immediately.
            * @param fn The callback run as soon as the graph is ready, inside which this refers to the core (cy).

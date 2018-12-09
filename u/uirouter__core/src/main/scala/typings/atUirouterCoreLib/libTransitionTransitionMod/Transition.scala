@@ -60,7 +60,7 @@ class Transition protected ()
        * When the transition is successful, the promise is resolved
        * When the transition is unsuccessful, the promise is rejected with the [[Rejection]] or javascript error
        */
-  var promise: stdLib.Promise[_] = js.native
+  var promise: js.Promise[_] = js.native
   /**
        * A reference to the [[UIRouter]] instance
        *
@@ -714,7 +714,7 @@ class Transition protected ()
        *
        * @returns a promise for a successful transition.
        */
-  def run(): stdLib.Promise[_] = js.native
+  def run(): js.Promise[_] = js.native
   /**
        * Gets the Target State
        *

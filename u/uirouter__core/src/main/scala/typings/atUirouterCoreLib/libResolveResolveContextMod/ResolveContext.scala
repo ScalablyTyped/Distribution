@@ -56,7 +56,7 @@ class ResolveContext protected () extends js.Object {
        * @param trans
        * @returns {Promise<any>|any}
        */
-  def resolvePath(): stdLib.Promise[js.Array[atUirouterCoreLib.Anon_Token]] = js.native
+  def resolvePath(): js.Promise[js.Array[atUirouterCoreLib.Anon_Token]] = js.native
   /**
        * Returns a promise for an array of resolved path Element promises
        *
@@ -64,7 +64,7 @@ class ResolveContext protected () extends js.Object {
        * @param trans
        * @returns {Promise<any>|any}
        */
-  def resolvePath(when: atUirouterCoreLib.libResolveInterfaceMod.PolicyWhen): stdLib.Promise[js.Array[atUirouterCoreLib.Anon_Token]] = js.native
+  def resolvePath(when: atUirouterCoreLib.libResolveInterfaceMod.PolicyWhen): js.Promise[js.Array[atUirouterCoreLib.Anon_Token]] = js.native
   /**
        * Returns a promise for an array of resolved path Element promises
        *
@@ -75,7 +75,7 @@ class ResolveContext protected () extends js.Object {
   def resolvePath(
     when: atUirouterCoreLib.libResolveInterfaceMod.PolicyWhen,
     trans: atUirouterCoreLib.libTransitionTransitionMod.Transition
-  ): stdLib.Promise[js.Array[atUirouterCoreLib.Anon_Token]] = js.native
+  ): js.Promise[js.Array[atUirouterCoreLib.Anon_Token]] = js.native
   /**
        * Returns a ResolveContext that includes a portion of this one
        *

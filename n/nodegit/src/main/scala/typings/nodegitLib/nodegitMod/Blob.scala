@@ -26,7 +26,7 @@ object Blob extends js.Object {
        * @param path - file from which the blob will be created
        */
   def createFromDisk(id: nodegitLib.oidMod.Oid, repo: nodegitLib.repositoryMod.Repository, path: java.lang.String): scala.Double = js.native
-  def createFromStream(repo: nodegitLib.repositoryMod.Repository, hintPath: java.lang.String): stdLib.Promise[nodeLib.fsMod.WriteStream] = js.native
+  def createFromStream(repo: nodegitLib.repositoryMod.Repository, hintPath: java.lang.String): js.Promise[nodeLib.fsMod.WriteStream] = js.native
   /**
        * @param id - return the id of the written blob
        * @param repo - repository where the blob will be written. this repository cannot be bare
@@ -38,9 +38,9 @@ object Blob extends js.Object {
     repo: nodegitLib.repositoryMod.Repository,
     relativePath: java.lang.String
   ): scala.Double = js.native
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String): stdLib.Promise[nodegitLib.blobMod.Blob] = js.native
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.blobMod.Blob): stdLib.Promise[nodegitLib.blobMod.Blob] = js.native
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): stdLib.Promise[nodegitLib.blobMod.Blob] = js.native
-  def lookupPrefix(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, len: scala.Double): stdLib.Promise[nodegitLib.blobMod.Blob] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String): js.Promise[nodegitLib.blobMod.Blob] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.blobMod.Blob): js.Promise[nodegitLib.blobMod.Blob] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.blobMod.Blob] = js.native
+  def lookupPrefix(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, len: scala.Double): js.Promise[nodegitLib.blobMod.Blob] = js.native
 }
 

@@ -11,7 +11,7 @@ class datalayout () extends baseview {
   @JSName("config")
   var config_datalayout: datalayoutConfig = js.native
   var data: webixLib.webixNs.DataStore = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
   def addView(view: js.Any): java.lang.String | scala.Double = js.native
@@ -52,9 +52,9 @@ class datalayout () extends baseview {
   def getValue(): js.Array[_] = js.native
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
   def index(obj: js.Any): scala.Double = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,

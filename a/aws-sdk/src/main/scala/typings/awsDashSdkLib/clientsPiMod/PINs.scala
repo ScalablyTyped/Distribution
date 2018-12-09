@@ -45,7 +45,7 @@ object PINs extends js.Object {
     /**
          * An immutable, AWS Region-unique identifier for a data source. Performance Insights gathers metrics from this data source. To use an Amazon RDS instance as a data source, you specify its DbiResourceId value - for example: db-FAIHNTYBKTGAUSUZQYPDS2GW4A 
          */
-    var Identifier: java.lang.String
+    var Identifier: String
     /**
          * The maximum number of items to return in the response. If more items exist than the specified MaxRecords value, a pagination token is included in the response so that the remaining results can be retrieved. 
          */
@@ -53,11 +53,11 @@ object PINs extends js.Object {
     /**
          * The name of a Performance Insights metric to be measured. Valid values for Metric are:    db.load.avg - a scaled representation of the number of active sessions for the database engine.    db.sampledload.avg - the raw number of active sessions for the database engine.  
          */
-    var Metric: java.lang.String
+    var Metric: String
     /**
          * An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the token, up to the value specified by MaxRecords.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * For each dimension specified in GroupBy, specify a secondary dimension to further subdivide the partition keys in the response.
          */
@@ -93,7 +93,7 @@ object PINs extends js.Object {
     /**
          * An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the token, up to the value specified by MaxRecords.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * If PartitionBy was present in the request, PartitionKeys contains the breakdown of dimension keys by the specified partitions.
          */
@@ -109,7 +109,7 @@ object PINs extends js.Object {
     /**
          * The name of the dimension group. Valid values are:    db.user     db.host     db.sql     db.sql_tokenized     db.wait_event     db.wait_event_type   
          */
-    var Group: java.lang.String
+    var Group: String
     /**
          * The maximum number of items to fetch for this dimension group.
          */
@@ -134,7 +134,7 @@ object PINs extends js.Object {
   
   
   trait DimensionMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait GetResourceMetricsRequest extends js.Object {
@@ -145,7 +145,7 @@ object PINs extends js.Object {
     /**
          * An immutable, AWS Region-unique identifier for a data source. Performance Insights gathers metrics from this data source. To use an Amazon RDS instance as a data source, you specify its DbiResourceId value - for example: db-FAIHNTYBKTGAUSUZQYPDS2GW4A 
          */
-    var Identifier: java.lang.String
+    var Identifier: String
     /**
          * The maximum number of items to return in the response. If more items exist than the specified MaxRecords value, a pagination token is included in the response so that the remaining results can be retrieved. 
          */
@@ -157,7 +157,7 @@ object PINs extends js.Object {
     /**
          * An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the token, up to the value specified by MaxRecords.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The granularity, in seconds, of the data points returned from Performance Insights. A period can be as short as one second, or as long as one day (86400 seconds). Valid values are:    1 (one second)    60 (one minute)    300 (five minutes)    3600 (one hour)    86400 (twenty-four hours)   If you don't specify PeriodInSeconds, then Performance Insights will choose a value for you, with a goal of returning roughly 100-200 data points in the response.
          */
@@ -185,7 +185,7 @@ object PINs extends js.Object {
     /**
          * An immutable, AWS Region-unique identifier for a data source. Performance Insights gathers metrics from this data source. To use an Amazon RDS instance as a data source, you specify its DbiResourceId value - for example: db-FAIHNTYBKTGAUSUZQYPDS2GW4A 
          */
-    var Identifier: js.UndefOr[java.lang.String] = js.undefined
+    var Identifier: js.UndefOr[String] = js.undefined
     /**
          * An array of metric results,, where each array element contains all of the data points for a particular dimension.
          */
@@ -193,7 +193,7 @@ object PINs extends js.Object {
     /**
          * An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the token, up to the value specified by MaxRecords.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -221,12 +221,12 @@ object PINs extends js.Object {
     /**
          * The name of a Performance Insights metric to be measured. Valid values for Metric are:    db.load.avg - a scaled representation of the number of active sessions for the database engine.    db.sampledload.avg - the raw number of active sessions for the database engine.  
          */
-    var Metric: java.lang.String
+    var Metric: String
   }
   
   
   trait MetricQueryFilterMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait ResponsePartitionKey extends js.Object {
@@ -245,7 +245,7 @@ object PINs extends js.Object {
     /**
          * The name of a Performance Insights metric to be measured. Valid values for Metric are:    db.load.avg - a scaled representation of the number of active sessions for the database engine.    db.sampledload.avg - the raw number of active sessions for the database engine.  
          */
-    var Metric: java.lang.String
+    var Metric: String
   }
   
   @js.native
@@ -328,7 +328,7 @@ object PINs extends js.Object {
   type ResponsePartitionKeyList = js.Array[ResponsePartitionKey]
   type ServiceType = awsDashSdkLib.awsDashSdkLibStrings.RDS | java.lang.String
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-02-27` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }
 

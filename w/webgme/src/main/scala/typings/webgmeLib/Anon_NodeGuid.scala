@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_NodeGuid extends js.Object {
-  def apply(node: webgmeLib.CoreNs.Node, guid: webgmeLib.CoreNs.GUID): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def apply(node: webgmeLib.CoreNs.Node, guid: webgmeLib.CoreNs.GUID): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   def apply(
     node: webgmeLib.CoreNs.Node,
     guid: webgmeLib.CoreNs.GUID,

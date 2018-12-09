@@ -9,62 +9,62 @@ import scala.scalajs.js.annotation._
 @js.native
 class Apex protected () extends js.Object {
   def this(conn: jsforceLib.connectionMod.Connection) = this()
-  def del[T](path: java.lang.String): stdLib.Promise[T] = js.native
-  def del[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): stdLib.Promise[T] = js.native
-  def del[T](path: java.lang.String, options: jsforceLib.connectionMod.RestApiOptions): stdLib.Promise[T] = js.native
+  def del[T](path: java.lang.String): js.Promise[T] = js.native
+  def del[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native
+  def del[T](path: java.lang.String, options: jsforceLib.connectionMod.RestApiOptions): js.Promise[T] = js.native
   def del[T](
     path: java.lang.String,
     options: jsforceLib.connectionMod.RestApiOptions,
     callback: jsforceLib.connectionMod.Callback[T]
-  ): stdLib.Promise[T] = js.native
-  def delete[T](path: java.lang.String): stdLib.Promise[T] = js.native
-  def delete[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): stdLib.Promise[T] = js.native
-  def delete[T](path: java.lang.String, options: jsforceLib.connectionMod.RestApiOptions): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
+  def delete[T](path: java.lang.String): js.Promise[T] = js.native
+  def delete[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native
+  def delete[T](path: java.lang.String, options: jsforceLib.connectionMod.RestApiOptions): js.Promise[T] = js.native
   def delete[T](
     path: java.lang.String,
     options: jsforceLib.connectionMod.RestApiOptions,
     callback: jsforceLib.connectionMod.Callback[T]
-  ): stdLib.Promise[T] = js.native
-  def get[T](path: java.lang.String): stdLib.Promise[T] = js.native
-  def get[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): stdLib.Promise[T] = js.native
-  def get[T](path: java.lang.String, options: jsforceLib.connectionMod.RestApiOptions): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
+  def get[T](path: java.lang.String): js.Promise[T] = js.native
+  def get[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native
+  def get[T](path: java.lang.String, options: jsforceLib.connectionMod.RestApiOptions): js.Promise[T] = js.native
   def get[T](
     path: java.lang.String,
     options: jsforceLib.connectionMod.RestApiOptions,
     callback: jsforceLib.connectionMod.Callback[T]
-  ): stdLib.Promise[T] = js.native
-  def patch[T](path: java.lang.String): stdLib.Promise[T] = js.native
-  def patch[T](path: java.lang.String, body: js.Object): stdLib.Promise[T] = js.native
-  def patch[T](path: java.lang.String, body: js.Object, callback: jsforceLib.connectionMod.Callback[T]): stdLib.Promise[T] = js.native
-  def patch[T](path: java.lang.String, body: js.Object, options: jsforceLib.connectionMod.RestApiOptions): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
+  def patch[T](path: java.lang.String): js.Promise[T] = js.native
+  def patch[T](path: java.lang.String, body: js.Object): js.Promise[T] = js.native
+  def patch[T](path: java.lang.String, body: js.Object, callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native
+  def patch[T](path: java.lang.String, body: js.Object, options: jsforceLib.connectionMod.RestApiOptions): js.Promise[T] = js.native
   def patch[T](
     path: java.lang.String,
     body: js.Object,
     options: jsforceLib.connectionMod.RestApiOptions,
     callback: jsforceLib.connectionMod.Callback[T]
-  ): stdLib.Promise[T] = js.native
-  def patch[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): stdLib.Promise[T] = js.native
-  def post[T](path: java.lang.String): stdLib.Promise[T] = js.native
-  def post[T](path: java.lang.String, body: js.Object): stdLib.Promise[T] = js.native
-  def post[T](path: java.lang.String, body: js.Object, callback: jsforceLib.connectionMod.Callback[T]): stdLib.Promise[T] = js.native
-  def post[T](path: java.lang.String, body: js.Object, options: jsforceLib.connectionMod.RestApiOptions): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
+  def patch[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native
+  def post[T](path: java.lang.String): js.Promise[T] = js.native
+  def post[T](path: java.lang.String, body: js.Object): js.Promise[T] = js.native
+  def post[T](path: java.lang.String, body: js.Object, callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native
+  def post[T](path: java.lang.String, body: js.Object, options: jsforceLib.connectionMod.RestApiOptions): js.Promise[T] = js.native
   def post[T](
     path: java.lang.String,
     body: js.Object,
     options: jsforceLib.connectionMod.RestApiOptions,
     callback: jsforceLib.connectionMod.Callback[T]
-  ): stdLib.Promise[T] = js.native
-  def post[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): stdLib.Promise[T] = js.native
-  def put[T](path: java.lang.String): stdLib.Promise[T] = js.native
-  def put[T](path: java.lang.String, body: js.Object): stdLib.Promise[T] = js.native
-  def put[T](path: java.lang.String, body: js.Object, callback: jsforceLib.connectionMod.Callback[T]): stdLib.Promise[T] = js.native
-  def put[T](path: java.lang.String, body: js.Object, options: jsforceLib.connectionMod.RestApiOptions): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
+  def post[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native
+  def put[T](path: java.lang.String): js.Promise[T] = js.native
+  def put[T](path: java.lang.String, body: js.Object): js.Promise[T] = js.native
+  def put[T](path: java.lang.String, body: js.Object, callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native
+  def put[T](path: java.lang.String, body: js.Object, options: jsforceLib.connectionMod.RestApiOptions): js.Promise[T] = js.native
   def put[T](
     path: java.lang.String,
     body: js.Object,
     options: jsforceLib.connectionMod.RestApiOptions,
     callback: jsforceLib.connectionMod.Callback[T]
-  ): stdLib.Promise[T] = js.native
-  def put[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
+  def put[T](path: java.lang.String, callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native
 }
 

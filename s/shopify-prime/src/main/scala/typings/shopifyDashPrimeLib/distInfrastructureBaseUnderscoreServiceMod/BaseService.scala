@@ -13,65 +13,65 @@ class BaseService protected () extends js.Object {
   var resource: js.Any = js.native
   var shopDomain: js.Any = js.native
   @JSName("createRequest")
-  /* protected */ def createRequest_DELETE[T](method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.DELETE, path: java.lang.String): stdLib.Promise[T] = js.native
+  /* protected */ def createRequest_DELETE[T](method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.DELETE, path: java.lang.String): js.Promise[T] = js.native
   @JSName("createRequest")
   /* protected */ def createRequest_DELETE[T](
     method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.DELETE,
     path: java.lang.String,
     rootElement: java.lang.String
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   @JSName("createRequest")
   /* protected */ def createRequest_DELETE[T](
     method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.DELETE,
     path: java.lang.String,
     rootElement: java.lang.String,
     payload: js.Object
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   @JSName("createRequest")
-  /* protected */ def createRequest_GET[T](method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.GET, path: java.lang.String): stdLib.Promise[T] = js.native
+  /* protected */ def createRequest_GET[T](method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.GET, path: java.lang.String): js.Promise[T] = js.native
   @JSName("createRequest")
   /* protected */ def createRequest_GET[T](
     method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.GET,
     path: java.lang.String,
     rootElement: java.lang.String
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   @JSName("createRequest")
   /* protected */ def createRequest_GET[T](
     method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.GET,
     path: java.lang.String,
     rootElement: java.lang.String,
     payload: js.Object
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   @JSName("createRequest")
-  /* protected */ def createRequest_POST[T](method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.POST, path: java.lang.String): stdLib.Promise[T] = js.native
+  /* protected */ def createRequest_POST[T](method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.POST, path: java.lang.String): js.Promise[T] = js.native
   @JSName("createRequest")
   /* protected */ def createRequest_POST[T](
     method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.POST,
     path: java.lang.String,
     rootElement: java.lang.String
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   @JSName("createRequest")
   /* protected */ def createRequest_POST[T](
     method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.POST,
     path: java.lang.String,
     rootElement: java.lang.String,
     payload: js.Object
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   @JSName("createRequest")
-  /* protected */ def createRequest_PUT[T](method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.PUT, path: java.lang.String): stdLib.Promise[T] = js.native
+  /* protected */ def createRequest_PUT[T](method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.PUT, path: java.lang.String): js.Promise[T] = js.native
   @JSName("createRequest")
   /* protected */ def createRequest_PUT[T](
     method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.PUT,
     path: java.lang.String,
     rootElement: java.lang.String
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   @JSName("createRequest")
   /* protected */ def createRequest_PUT[T](
     method: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.PUT,
     path: java.lang.String,
     rootElement: java.lang.String,
     payload: js.Object
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Joins URI paths into one single string, replacing bad slashes and ensuring the path doesn't end in /.json.
        */

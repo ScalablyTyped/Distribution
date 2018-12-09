@@ -14,7 +14,7 @@ package object libReduxFormMod {
     /* values */ FormData, 
     /* dispatch */ reduxLib.reduxMod.Dispatch[js.Any], 
     /* props */ P, 
-    scala.Unit | (reduxDashFormLib.reduxDashFormMod.FormErrors[FormData, ErrorType]) | stdLib.Promise[js.Any]
+    scala.Unit | (reduxDashFormLib.reduxDashFormMod.FormErrors[FormData, ErrorType]) | js.Promise[js.Any]
   ]
   type GetFormState = js.Function1[/* state */ js.Any, reduxDashFormLib.libReducerMod.FormStateMap]
 }

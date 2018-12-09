@@ -19,7 +19,7 @@ object qDashRetryModMembers extends js.Object {
    * If value is a promise from another library it is coerced into a Q promise (where possible).
    * If value is not a promise, returns a promise that is fulfilled with value.
    */
-  def apply[T](promise: stdLib.PromiseLike[T] | T): qLib.qMod.QNs.Promise[T] = js.native
+  def apply[T](promise: js.Thenable[T] | T): qLib.qMod.QNs.Promise[T] = js.native
   def Promise[T](
     resolver: js.Function3[
       /* resolve */ js.Function1[/* val */ js.UndefOr[qLib.qMod.QNs.IWhenable[T]], scala.Unit], 

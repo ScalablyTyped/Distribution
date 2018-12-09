@@ -11,12 +11,12 @@ class Credentials protected () extends js.Object {
   def this(password: ProtectedValue, keyFile: java.lang.String) = this()
   def this(password: ProtectedValue, keyFile: stdLib.ArrayBuffer) = this()
   def this(password: ProtectedValue, keyFile: stdLib.Uint8Array) = this()
-  def getHash(): stdLib.Promise[stdLib.ArrayBuffer] = js.native
-  def setKeyFile(): stdLib.Promise[scala.Unit] = js.native
-  def setKeyFile(keyFile: stdLib.ArrayBuffer): stdLib.Promise[scala.Unit] = js.native
-  def setKeyFile(keyFile: stdLib.Uint8Array): stdLib.Promise[scala.Unit] = js.native
-  def setPassword(): stdLib.Promise[scala.Unit] = js.native
-  def setPassword(password: ProtectedValue): stdLib.Promise[scala.Unit] = js.native
+  def getHash(): js.Promise[stdLib.ArrayBuffer] = js.native
+  def setKeyFile(): js.Promise[scala.Unit] = js.native
+  def setKeyFile(keyFile: stdLib.ArrayBuffer): js.Promise[scala.Unit] = js.native
+  def setKeyFile(keyFile: stdLib.Uint8Array): js.Promise[scala.Unit] = js.native
+  def setPassword(): js.Promise[scala.Unit] = js.native
+  def setPassword(password: ProtectedValue): js.Promise[scala.Unit] = js.native
 }
 
 @JSImport("kdbxweb", "Credentials")

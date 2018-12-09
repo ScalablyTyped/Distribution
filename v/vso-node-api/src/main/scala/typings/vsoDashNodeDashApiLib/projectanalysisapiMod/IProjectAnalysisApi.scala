@@ -14,7 +14,7 @@ trait IProjectAnalysisApi
     aggregationType: vsoDashNodeDashApiLib.interfacesProjectAnalysisInterfacesMod.AggregationType,
     skip: scala.Double,
     top: scala.Double
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[
       vsoDashNodeDashApiLib.interfacesProjectAnalysisInterfacesMod.RepositoryActivityMetrics
     ]
@@ -23,10 +23,10 @@ trait IProjectAnalysisApi
     project: java.lang.String,
     fromDate: stdLib.Date,
     aggregationType: vsoDashNodeDashApiLib.interfacesProjectAnalysisInterfacesMod.AggregationType
-  ): stdLib.Promise[
+  ): js.Promise[
     vsoDashNodeDashApiLib.interfacesProjectAnalysisInterfacesMod.ProjectActivityMetrics
   ] = js.native
-  def getProjectLanguageAnalytics(project: java.lang.String): stdLib.Promise[
+  def getProjectLanguageAnalytics(project: java.lang.String): js.Promise[
     vsoDashNodeDashApiLib.interfacesProjectAnalysisInterfacesMod.ProjectLanguageAnalytics
   ] = js.native
   def getRepositoryActivityMetrics(
@@ -34,7 +34,7 @@ trait IProjectAnalysisApi
     repositoryId: java.lang.String,
     fromDate: stdLib.Date,
     aggregationType: vsoDashNodeDashApiLib.interfacesProjectAnalysisInterfacesMod.AggregationType
-  ): stdLib.Promise[
+  ): js.Promise[
     vsoDashNodeDashApiLib.interfacesProjectAnalysisInterfacesMod.RepositoryActivityMetrics
   ] = js.native
 }

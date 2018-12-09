@@ -12,7 +12,7 @@ trait ExtractorHost
   /**
        * Loads a resource (e.g. html / css)
        */
-  def loadResource(path: java.lang.String): stdLib.Promise[java.lang.String] | java.lang.String = js.native
+  def loadResource(path: java.lang.String): js.Promise[java.lang.String] | java.lang.String = js.native
   /**
        * Converts a path that refers to a resource into an absolute filePath
        * that can be lateron used for loading the resource via `loadResource.

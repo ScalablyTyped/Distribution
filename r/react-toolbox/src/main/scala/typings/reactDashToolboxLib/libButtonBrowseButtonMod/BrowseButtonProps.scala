@@ -31,7 +31,7 @@ trait BrowseButtonProps
      * @default false
      */
   var mini: js.UndefOr[scala.Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * If true, the button will have a raised look.
      * @default false

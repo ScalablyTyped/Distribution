@@ -29,7 +29,7 @@ trait IProvideService extends js.Object {
                *
                * $delegate - The original service instance, which can be monkey patched, configured, decorated or delegated to.
                */
-  def decorator(name: java.lang.String, decorator: js.Function): scala.Unit = js.native
+  def decorator(name: java.lang.String, decorator: angularLib.angularMod.Global.Function): scala.Unit = js.native
   /**
                * Register a service decorator with the $injector. A service decorator intercepts the creation of a service, allowing it to override or modify the behaviour of the service. The object returned by the decorator may be the original service, or a new service object which replaces or wraps and delegates to the original service.
                *
@@ -40,10 +40,10 @@ trait IProvideService extends js.Object {
                */
   def decorator(name: java.lang.String, inlineAnnotatedFunction: js.Array[_]): scala.Unit = js.native
   def factory(name: java.lang.String, inlineAnnotatedFunction: js.Array[_]): angularLib.angularMod.angularNs.IServiceProvider = js.native
-  def factory(name: java.lang.String, serviceFactoryFunction: js.Function): angularLib.angularMod.angularNs.IServiceProvider = js.native
+  def factory(name: java.lang.String, serviceFactoryFunction: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IServiceProvider = js.native
   def provider(name: java.lang.String, provider: angularLib.angularMod.angularNs.IServiceProvider): angularLib.angularMod.angularNs.IServiceProvider = js.native
-  def provider(name: java.lang.String, serviceProviderConstructor: js.Function): angularLib.angularMod.angularNs.IServiceProvider = js.native
-  def service(name: java.lang.String, constructor: js.Function): angularLib.angularMod.angularNs.IServiceProvider = js.native
+  def provider(name: java.lang.String, serviceProviderConstructor: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IServiceProvider = js.native
+  def service(name: java.lang.String, constructor: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IServiceProvider = js.native
   def service(name: java.lang.String, inlineAnnotatedFunction: js.Array[_]): angularLib.angularMod.angularNs.IServiceProvider = js.native
   def value(name: java.lang.String, value: js.Any): angularLib.angularMod.angularNs.IServiceProvider = js.native
 }

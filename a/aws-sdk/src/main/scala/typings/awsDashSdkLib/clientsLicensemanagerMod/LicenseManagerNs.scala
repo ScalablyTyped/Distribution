@@ -33,7 +33,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Human-friendly description of the license configuration.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Number of licenses managed by the license configuration.
          */
@@ -53,7 +53,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Name of the license configuration.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The tags to apply to the resources during launch. You can only tag instances and volumes on launch. The specified tags are applied to all instances or volumes that are created during launch. To tag a resource after it has been created, see CreateTags . 
          */
@@ -65,7 +65,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN of the license configuration object after its creation.
          */
-    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -73,7 +73,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Unique ID of the configuration object to delete.
          */
-    var LicenseConfigurationArn: java.lang.String
+    var LicenseConfigurationArn: String
   }
   
   
@@ -96,7 +96,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN of the license configuration being requested.
          */
-    var LicenseConfigurationArn: java.lang.String
+    var LicenseConfigurationArn: String
   }
   
   
@@ -112,15 +112,15 @@ object LicenseManagerNs extends js.Object {
     /**
          * Description of the license configuration.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * ARN of the license configuration requested.
          */
-    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
     /**
          * Unique ID for the license configuration.
          */
-    var LicenseConfigurationId: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseConfigurationId: js.UndefOr[String] = js.undefined
     /**
          * Number of available licenses.
          */
@@ -144,15 +144,15 @@ object LicenseManagerNs extends js.Object {
     /**
          * Name of the license configuration.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * Owner account ID for the license configuration.
          */
-    var OwnerAccountId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerAccountId: js.UndefOr[String] = js.undefined
     /**
          * License configuration status (active, etc.).
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * List of tags attached to the license configuration.
          */
@@ -175,11 +175,11 @@ object LicenseManagerNs extends js.Object {
     /**
          * Regional S3 bucket path for storing reports, license trail event data, discovery data, etc.
          */
-    var S3BucketArn: js.UndefOr[java.lang.String] = js.undefined
+    var S3BucketArn: js.UndefOr[String] = js.undefined
     /**
          * SNS topic configured to receive notifications from License Manager.
          */
-    var SnsTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -191,11 +191,11 @@ object LicenseManagerNs extends js.Object {
     /**
          * The name of the filter.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * Value of the filter.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -211,15 +211,15 @@ object LicenseManagerNs extends js.Object {
     /**
          * Description of the license configuration.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * ARN of the LicenseConfiguration object.
          */
-    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
     /**
          * Unique ID of the LicenseConfiguration object.
          */
-    var LicenseConfigurationId: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseConfigurationId: js.UndefOr[String] = js.undefined
     /**
          * Number of licenses managed by the license configuration.
          */
@@ -243,15 +243,15 @@ object LicenseManagerNs extends js.Object {
     /**
          * Name of the license configuration.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * Account ID of the license configuration's owner.
          */
-    var OwnerAccountId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerAccountId: js.UndefOr[String] = js.undefined
     /**
          * Status of the license configuration.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -263,11 +263,11 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN of the resource associated with the license configuration.
          */
-    var ResourceArn: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceArn: js.UndefOr[String] = js.undefined
     /**
          * ID of the AWS account that owns the resource consuming licenses.
          */
-    var ResourceOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceOwnerId: js.UndefOr[String] = js.undefined
     /**
          * Type of server resource.
          */
@@ -287,15 +287,15 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN of the resource associated with a license configuration.
          */
-    var ResourceArn: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceArn: js.UndefOr[String] = js.undefined
     /**
          * ID of the account that owns a resource that is associated with the license configuration.
          */
-    var ResourceOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceOwnerId: js.UndefOr[String] = js.undefined
     /**
          * Status of a resource associated with the license configuration.
          */
-    var ResourceStatus: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceStatus: js.UndefOr[String] = js.undefined
     /**
          * Type of resource associated with athe license configuration.
          */
@@ -307,7 +307,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN of the LicenseConfiguration object.
          */
-    var LicenseConfigurationArn: java.lang.String
+    var LicenseConfigurationArn: String
   }
   
   
@@ -315,7 +315,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN of a LicenseConfiguration object.
          */
-    var LicenseConfigurationArn: java.lang.String
+    var LicenseConfigurationArn: String
     /**
          * Maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
          */
@@ -323,7 +323,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -335,7 +335,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -355,7 +355,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -367,7 +367,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -379,11 +379,11 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * ARN of an AMI or Amazon EC2 instance that has an associated license configuration.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
   }
   
   
@@ -395,7 +395,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -411,7 +411,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -419,7 +419,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The detailed list of resources.
          */
@@ -431,7 +431,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN for the resource.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
   }
   
   
@@ -451,7 +451,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN of the targeted LicenseConfiguration object.
          */
-    var LicenseConfigurationArn: java.lang.String
+    var LicenseConfigurationArn: String
     /**
          * Maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
          */
@@ -459,7 +459,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -471,7 +471,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -491,7 +491,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Flag to activate AWS Organization integration.
          */
-    var EnableIntegration: scala.Boolean
+    var EnableIntegration: Boolean
   }
   
   
@@ -499,23 +499,23 @@ object LicenseManagerNs extends js.Object {
     /**
          * The platform of the resource.
          */
-    var Platform: js.UndefOr[java.lang.String] = js.undefined
+    var Platform: js.UndefOr[String] = js.undefined
     /**
          * Platform version of the resource in the inventory.
          */
-    var PlatformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var PlatformVersion: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the resource.
          */
-    var ResourceArn: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceArn: js.UndefOr[String] = js.undefined
     /**
          * Unique ID of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * Unique ID of the account that owns the resource.
          */
-    var ResourceOwningAccountId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceOwningAccountId: js.UndefOr[String] = js.undefined
     /**
          * The type of resource.
          */
@@ -527,11 +527,11 @@ object LicenseManagerNs extends js.Object {
     /**
          * Key for the resource tag.
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * Value for the resource tag.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -539,7 +539,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * Resource of the ARN to be tagged.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
     /**
          * Names of the tags to attach to the resource.
          */
@@ -1008,7 +1008,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN of the resource.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
     /**
          * List keys identifying tags to remove.
          */
@@ -1023,11 +1023,11 @@ object LicenseManagerNs extends js.Object {
     /**
          * New human-friendly description of the license configuration.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * ARN for a license configuration.
          */
-    var LicenseConfigurationArn: java.lang.String
+    var LicenseConfigurationArn: String
     /**
          * New status of the license configuration (ACTIVE or INACTIVE).
          */
@@ -1047,7 +1047,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * New name of the license configuration.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1066,7 +1066,7 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN for an AWS server resource.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
   }
   
   
@@ -1085,11 +1085,11 @@ object LicenseManagerNs extends js.Object {
     /**
          * ARN of the Amazon S3 bucket where License Manager information is stored.
          */
-    var S3BucketArn: js.UndefOr[java.lang.String] = js.undefined
+    var S3BucketArn: js.UndefOr[String] = js.undefined
     /**
          * ARN of the Amazon SNS topic used for License Manager alerts.
          */
-    var SnsTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1119,8 +1119,8 @@ object LicenseManagerNs extends js.Object {
   type ResourceInventoryList = js.Array[ResourceInventory]
   type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.EC2_INSTANCE | awsDashSdkLib.awsDashSdkLibStrings.EC2_HOST | awsDashSdkLib.awsDashSdkLibStrings.EC2_AMI | java.lang.String
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
-  type TagKeyList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
+  type TagKeyList = js.Array[String]
   type TagList = js.Array[Tag]
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-08-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

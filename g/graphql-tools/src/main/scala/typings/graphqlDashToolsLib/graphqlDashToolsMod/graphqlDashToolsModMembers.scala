@@ -83,8 +83,8 @@ object graphqlDashToolsModMembers extends js.Object {
   def delegateToSchema(
     options: graphqlDashToolsLib.distInterfacesMod.IDelegateToSchemaOptions[ScalablyTyped.runtime.StringDictionary[_]],
     args: js.Any*
-  ): stdLib.Promise[_] = js.native
-  def delegateToSchema(options: graphqlLib.graphqlMod.GraphQLSchema, args: js.Any*): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
+  def delegateToSchema(options: graphqlLib.graphqlMod.GraphQLSchema, args: js.Any*): js.Promise[_] = js.native
   def extendResolversFromInterfaces(
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     resolvers: graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]
@@ -94,16 +94,16 @@ object graphqlDashToolsModMembers extends js.Object {
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     fn: graphqlDashToolsLib.distInterfacesMod.IFieldIteratorFn
   ): scala.Unit = js.native
-  def introspectSchema(fetcher: apolloDashLinkLib.apolloDashLinkMod.ApolloLink): stdLib.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
+  def introspectSchema(fetcher: apolloDashLinkLib.apolloDashLinkMod.ApolloLink): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
   def introspectSchema(
     fetcher: apolloDashLinkLib.apolloDashLinkMod.ApolloLink,
     linkContext: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): stdLib.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
-  def introspectSchema(fetcher: graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher): stdLib.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
+  ): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
+  def introspectSchema(fetcher: graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
   def introspectSchema(
     fetcher: graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher,
     linkContext: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): stdLib.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
+  ): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
   def makeExecutableSchema[TContext](
     hasTypeDefsResolversConnectorsLoggerAllowUndefinedInResolveResolverValidationOptionsDirectiveResolversSchemaDirectivesParseOptionsInheritResolversFromInterfaces: graphqlDashToolsLib.distInterfacesMod.IExecutableSchemaDefinition[TContext]
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native

@@ -15,7 +15,7 @@ class googleMap () extends baseview {
   @JSName("config")
   var config_googleMap: googleMapConfig = js.native
   var data: webixLib.webixNs.DataStore = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   @JSName("$onLoad")
   def $onLoad(args: js.Any*): js.Any = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
@@ -55,9 +55,9 @@ class googleMap () extends baseview {
   def getPrevId(id: java.lang.String, step: scala.Double): java.lang.String | scala.Double = js.native
   def getPrevId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,

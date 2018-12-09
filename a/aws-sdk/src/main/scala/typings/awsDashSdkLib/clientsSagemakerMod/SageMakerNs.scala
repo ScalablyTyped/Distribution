@@ -65,7 +65,7 @@ object SageMakerNs extends js.Object {
     /**
          * The reason for failure, if the overall status is a failed state.
          */
-    var FailureReason: js.UndefOr[java.lang.String] = js.undefined
+    var FailureReason: js.UndefOr[String] = js.undefined
     /**
          * The name of the algorithm for which the overall status is being repoorted.
          */
@@ -197,7 +197,7 @@ object SageMakerNs extends js.Object {
     /**
          * Indicates whether the channel is required by the algorithm.
          */
-    var IsRequired: js.UndefOr[scala.Boolean] = js.undefined
+    var IsRequired: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the channel./sagemaker/eia
          */
@@ -581,7 +581,7 @@ object SageMakerNs extends js.Object {
     /**
          * Isolates the model container. No inbound or outbound network calls can be made to or from the model container.  The Semantic Segmentation built-in algorithm does not support network isolation. 
          */
-    var EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker can assume to access model artifacts and docker image for deployment on ML compute instances or for batch transform jobs. Deploying on ML compute instances is part of model hosting. For more information, see Amazon SageMaker Roles.   To be able to pass this role to Amazon SageMaker, the caller of this API must have the iam:PassRole permission. 
          */
@@ -765,7 +765,7 @@ object SageMakerNs extends js.Object {
     /**
          * Isolates the training container. No inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If network isolation is used for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specifed VPC, but the training container does not have network access.  The Semantic Segmentation built-in algorithm does not support network isolation. 
          */
-    var EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
     /**
          * Algorithm-specific parameters that influence the quality of the model. You set hyperparameters before you start the learning process. For a list of hyperparameters for each training algorithm provided by Amazon SageMaker, see Algorithms.  You can specify a maximum of 100 hyperparameters. Each hyperparameter is a key-value pair. Each key and value is limited to 256 characters, as specified by the Length Constraint. 
          */
@@ -1412,7 +1412,7 @@ object SageMakerNs extends js.Object {
     /**
          * If True, no inbound or outbound network calls can be made to or from the model container.  The Semantic Segmentation built-in algorithm does not support network isolation. 
          */
-    var EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the IAM role that you specified for the model.
          */
@@ -1648,7 +1648,7 @@ object SageMakerNs extends js.Object {
     /**
          * If True, inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If network isolation is used for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specifed VPC, but the training container does not have network access.  The Semantic Segmentation built-in algorithm does not support network isolation. 
          */
-    var EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
     /**
          * If the training job failed, the reason it failed. 
          */
@@ -2044,11 +2044,11 @@ object SageMakerNs extends js.Object {
     /**
          * Indicates whether this hyperparameter is required.
          */
-    var IsRequired: js.UndefOr[scala.Boolean] = js.undefined
+    var IsRequired: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether this hyperparameter is tunable in a hyperparameter tuning job.
          */
-    var IsTunable: js.UndefOr[scala.Boolean] = js.undefined
+    var IsTunable: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of this hyperparameter. The name must be unique.
          */
@@ -2072,7 +2072,7 @@ object SageMakerNs extends js.Object {
     /**
          * Isolates the training container. No inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If network isolation is used for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specifed VPC, but the training container does not have network access.  The Semantic Segmentation built-in algorithm does not support network isolation. 
          */
-    var EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
     /**
          * An array of Channel objects that specify the input for the training jobs that the tuning job launches.
          */
@@ -3464,7 +3464,7 @@ object SageMakerNs extends js.Object {
     /**
          * The reason for failure, if the overall status is a failed state.
          */
-    var FailureReason: js.UndefOr[java.lang.String] = js.undefined
+    var FailureReason: js.UndefOr[String] = js.undefined
     /**
          * The name of the model package for which the overall status is being repoorted.
          */
@@ -3808,7 +3808,7 @@ object SageMakerNs extends js.Object {
     /**
          * A Liquid template that renders the HTML for the worker UI.
          */
-    var RenderedContent: java.lang.String
+    var RenderedContent: String
   }
   
   
@@ -3824,11 +3824,11 @@ object SageMakerNs extends js.Object {
     /**
          * A unique identifier for a specific class of errors.
          */
-    var Code: java.lang.String
+    var Code: String
     /**
          * A human-readable message describing the error.
          */
-    var Message: java.lang.String
+    var Message: String
   }
   
   
@@ -4068,7 +4068,7 @@ object SageMakerNs extends js.Object {
     /**
          * 
          */
-    var ListingId: js.UndefOr[java.lang.String] = js.undefined
+    var ListingId: js.UndefOr[String] = js.undefined
     /**
          * The description of the vendor from the Amazon Marketplace.
          */
@@ -4080,7 +4080,7 @@ object SageMakerNs extends js.Object {
     /**
          * The name of the vendor in the Amazon Marketplace.
          */
-    var SellerName: js.UndefOr[java.lang.String] = js.undefined
+    var SellerName: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the vendor that you have subscribed.
          */
@@ -4120,7 +4120,7 @@ object SageMakerNs extends js.Object {
     /**
          * If the TrainingJob was created with network isolation, the value is set to true. If network isolation is enabled, nodes can't communicate beyond the VPC they run in.
          */
-    var EnableNetworkIsolation: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
     /**
          * If the training job failed, the reason it failed.
          */
@@ -4308,7 +4308,7 @@ object SageMakerNs extends js.Object {
     /**
          * Indicates whether the algorithm supports distributed training. If set to false, buyers can’t request more than one instance during training.
          */
-    var SupportsDistributedTraining: js.UndefOr[scala.Boolean] = js.undefined
+    var SupportsDistributedTraining: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of ChannelSpecification objects, which specify the input sources to be used by the algorithm.
          */
@@ -7010,7 +7010,7 @@ object SageMakerNs extends js.Object {
     /**
          * The URI of the labeling job's user interface. Workers open this URI to start labeling your data objects.
          */
-    var SubDomain: js.UndefOr[java.lang.String] = js.undefined
+    var SubDomain: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) that identifies the work team.
          */
@@ -7196,7 +7196,7 @@ object SageMakerNs extends js.Object {
   type ParameterValues = js.Array[ParameterValue]
   type ParentHyperParameterTuningJobs = js.Array[ParentHyperParameterTuningJob]
   type ProductId = java.lang.String
-  type ProductListings = js.Array[java.lang.String]
+  type ProductListings = js.Array[String]
   type ProductionVariantAcceleratorType = awsDashSdkLib.awsDashSdkLibStrings.mlDOTeia1DOTmedium | awsDashSdkLib.awsDashSdkLibStrings.mlDOTeia1DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTeia1DOTxlarge | java.lang.String
   type ProductionVariantInstanceType = awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOTmedium | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT10xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT12xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT24xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT9xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT18xlarge | java.lang.String
   type ProductionVariantList = js.Array[ProductionVariant]

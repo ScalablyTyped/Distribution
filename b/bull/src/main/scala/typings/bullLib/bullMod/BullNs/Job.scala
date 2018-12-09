@@ -19,20 +19,20 @@ trait Job[T] extends js.Object {
   /**
        * Ensure this job is never ran again even if attemptsMade is less than job.attempts.
        */
-  def discard(): stdLib.Promise[scala.Unit] = js.native
+  def discard(): js.Promise[scala.Unit] = js.native
   /**
        * Returns a promise that resolves to the returned data when the job has been finished.
        * TODO: Add a watchdog to check if the job has finished periodically.
        * since pubsub does not give any guarantees.
        */
-  def finished(): stdLib.Promise[_] = js.native
+  def finished(): js.Promise[_] = js.native
   /**
        * Returns a promise resolving to the current job's status.
        * Please take note that the implementation of this method is not very efficient, nor is
        * it atomic. If your queue does have a very large quantity of jobs, you may want to
        * avoid using this method.
        */
-  def getState(): stdLib.Promise[JobStatus] = js.native
+  def getState(): js.Promise[JobStatus] = js.native
   /**
        * The lock id of the job
        */
@@ -41,56 +41,56 @@ trait Job[T] extends js.Object {
        * Moves a job to the `completed` queue. Pulls a job from 'waiting' to 'active'
        * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.
        */
-  def moveToCompleted(): stdLib.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
+  def moveToCompleted(): js.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
   /**
        * Moves a job to the `completed` queue. Pulls a job from 'waiting' to 'active'
        * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.
        */
-  def moveToCompleted(returnValue: java.lang.String): stdLib.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
+  def moveToCompleted(returnValue: java.lang.String): js.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
   /**
        * Moves a job to the `completed` queue. Pulls a job from 'waiting' to 'active'
        * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.
        */
-  def moveToCompleted(returnValue: java.lang.String, ignoreLock: scala.Boolean): stdLib.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
+  def moveToCompleted(returnValue: java.lang.String, ignoreLock: scala.Boolean): js.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
   /**
        * Moves a job to the `failed` queue. Pulls a job from 'waiting' to 'active'
        * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.
        */
-  def moveToFailed(errorInfo: bullLib.Anon_Message): stdLib.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
+  def moveToFailed(errorInfo: bullLib.Anon_Message): js.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
   /**
        * Moves a job to the `failed` queue. Pulls a job from 'waiting' to 'active'
        * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.
        */
-  def moveToFailed(errorInfo: bullLib.Anon_Message, ignoreLock: scala.Boolean): stdLib.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
+  def moveToFailed(errorInfo: bullLib.Anon_Message, ignoreLock: scala.Boolean): js.Promise[(js.Tuple2[_, JobId]) | scala.Null] = js.native
   /**
        * Report progress on a job
        */
-  def progress(value: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def progress(value: js.Any): js.Promise[scala.Unit] = js.native
   /**
        * Promotes a job that is currently "delayed" to the "waiting" state and executed as soon as possible.
        */
-  def promote(): stdLib.Promise[scala.Unit] = js.native
+  def promote(): js.Promise[scala.Unit] = js.native
   /**
        * Releases the lock on the job. Only locks owned by the queue instance can be released.
        */
-  def releaseLock(): stdLib.Promise[scala.Unit] = js.native
+  def releaseLock(): js.Promise[scala.Unit] = js.native
   /**
        * Removes a job from the queue and from any lists it may be included in.
        * The returned promise resolves when the job has been removed.
        */
-  def remove(): stdLib.Promise[scala.Unit] = js.native
+  def remove(): js.Promise[scala.Unit] = js.native
   /**
        * Re-run a job that has failed. The returned promise resolves when the job
        * has been scheduled for retry.
        */
-  def retry(): stdLib.Promise[scala.Unit] = js.native
+  def retry(): js.Promise[scala.Unit] = js.native
   /**
        * Takes a lock for this job so that no other queue worker can process it at the same time.
        */
-  def takeLock(): stdLib.Promise[scala.Double | bullLib.bullLibNumbers.`false`] = js.native
+  def takeLock(): js.Promise[scala.Double | bullLib.bullLibNumbers.`false`] = js.native
   /**
        * Update a specific job's data. Promise resolves when the job has been updated.
        */
-  def update(data: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def update(data: js.Any): js.Promise[scala.Unit] = js.native
 }
 

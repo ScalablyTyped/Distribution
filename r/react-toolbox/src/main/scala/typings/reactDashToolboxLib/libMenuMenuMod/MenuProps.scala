@@ -20,15 +20,15 @@ trait MenuProps
   /**
      * Callback that will be called when the menu is being hidden.
      */
-  var onHide: js.UndefOr[js.Function] = js.undefined
+  var onHide: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback that will be invoked when a menu item is selected.
      */
-  var onSelect: js.UndefOr[js.Function] = js.undefined
+  var onSelect: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback that will be invoked when the menu is being shown.
      */
-  var onShow: js.UndefOr[js.Function] = js.undefined
+  var onShow: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * If true the menu wrapper will show an outline with a soft shadow.
      * @default true

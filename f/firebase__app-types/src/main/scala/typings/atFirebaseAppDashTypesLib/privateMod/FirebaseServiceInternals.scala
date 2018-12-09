@@ -11,6 +11,6 @@ trait FirebaseServiceInternals extends js.Object {
      * Delete the service and free it's resources - called from
      * app.delete().
      */
-  def delete(): stdLib.Promise[scala.Unit]
+  def delete(): js.Promise[scala.Unit]
 }
 

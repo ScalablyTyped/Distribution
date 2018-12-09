@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Slider extends js.Object {
-  def apply(sel: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object]): scala.Unit = js.native
+  def apply(
+    sel: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
+  ): scala.Unit = js.native
   def animate(): scala.Boolean | scala.Double = js.native
   def animate(`val`: scala.Boolean): Slider = js.native
   def animate(`val`: scala.Double): Slider = js.native

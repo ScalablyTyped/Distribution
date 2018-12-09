@@ -16,11 +16,11 @@ object Graph extends js.Object {
     repo: nodegitLib.repositoryMod.Repository,
     local: nodegitLib.oidMod.Oid,
     upstream: nodegitLib.oidMod.Oid
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
   def descendantOf(
     repo: nodegitLib.repositoryMod.Repository,
     commit: nodegitLib.oidMod.Oid,
     ancestor: nodegitLib.oidMod.Oid
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
 }
 

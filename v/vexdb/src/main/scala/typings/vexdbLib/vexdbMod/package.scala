@@ -12,7 +12,7 @@ package object vexdbMod {
   type NumberRequestValidatorFunction = js.Function2[
     /* itemValue */ scala.Double, 
     /* item */ ResponseObject, 
-    stdLib.Promise[scala.Boolean] | scala.Boolean
+    js.Promise[scala.Boolean] | scala.Boolean
   ]
   type RequestObject = TeamsRequestObject | EventsRequestObject | MatchesRequestObject | RankingsRequestObject | SeasonRankingsRequestObject | AwardsRequestObject | SkillsRequestObject
   type ResponseObject = TeamsResponseObject | EventsResponseObject | MatchesResponseObject | RankingsResponseObject | SeasonRankingsResponseObject | AwardsResponseObject | SkillsResponseObject
@@ -20,6 +20,6 @@ package object vexdbMod {
   type StringRequestValidatorFunction = js.Function2[
     /* itemValue */ java.lang.String, 
     /* item */ ResponseObject, 
-    stdLib.Promise[scala.Boolean] | scala.Boolean
+    js.Promise[scala.Boolean] | scala.Boolean
   ]
 }

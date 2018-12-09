@@ -24,7 +24,7 @@ class default () extends CertID {
            * @returns {Promise}
            */
   /* CompleteClass */
-  override def createForCertificate(certificate: pkijsLib.srcCertificateMod.default, parameters: CreateFroCertificateParams): stdLib.PromiseLike[scala.Unit] = js.native
+  override def createForCertificate(certificate: pkijsLib.srcCertificateMod.default, parameters: CreateFroCertificateParams): js.Thenable[scala.Unit] = js.native
   /* CompleteClass */
   override def fromSchema(schema: js.Any): scala.Unit = js.native
   /**

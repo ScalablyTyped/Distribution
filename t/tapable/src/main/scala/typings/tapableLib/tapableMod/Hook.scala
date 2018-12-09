@@ -21,10 +21,10 @@ class Hook[TArg1, TArg2, TArg3, TTabResult, THookResult] () extends js.Object {
   def callAsync(arg1: TArg1, arg2: TArg2, arg3: TArg3, args: js.Any*): THookResult = js.native
   def compile(options: HookCompileOptions): js.Function = js.native
   def intercept(interceptor: HookInterceptor): scala.Unit = js.native
-  def promise(): stdLib.Promise[THookResult] = js.native
-  def promise(arg1: TArg1): stdLib.Promise[THookResult] = js.native
-  def promise(arg1: TArg1, arg2: TArg2): stdLib.Promise[THookResult] = js.native
-  def promise(arg1: TArg1, arg2: TArg2, arg3: TArg3, args: js.Any*): stdLib.Promise[THookResult] = js.native
+  def promise(): js.Promise[THookResult] = js.native
+  def promise(arg1: TArg1): js.Promise[THookResult] = js.native
+  def promise(arg1: TArg1, arg2: TArg2): js.Promise[THookResult] = js.native
+  def promise(arg1: TArg1, arg2: TArg2, arg3: TArg3, args: js.Any*): js.Promise[THookResult] = js.native
   def tap(
     name: java.lang.String,
     fn: js.Function4[/* arg1 */ TArg1, /* arg2 */ TArg2, /* arg3 */ TArg3, /* repeated */js.Any, TTabResult]
@@ -48,7 +48,7 @@ class Hook[TArg1, TArg2, TArg3, TTabResult, THookResult] () extends js.Object {
       /* arg2 */ TArg2, 
       /* arg3 */ TArg3, 
       /* repeated */js.Any, 
-      stdLib.Promise[TTabResult]
+      js.Promise[TTabResult]
     ]
   ): scala.Unit = js.native
   def tapPromise(
@@ -58,7 +58,7 @@ class Hook[TArg1, TArg2, TArg3, TTabResult, THookResult] () extends js.Object {
       /* arg2 */ TArg2, 
       /* arg3 */ TArg3, 
       /* repeated */js.Any, 
-      stdLib.Promise[TTabResult]
+      js.Promise[TTabResult]
     ]
   ): scala.Unit = js.native
 }

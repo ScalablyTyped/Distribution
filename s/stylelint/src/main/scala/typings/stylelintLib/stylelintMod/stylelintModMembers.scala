@@ -15,7 +15,7 @@ object stylelintModMembers extends js.Object {
       js.Function2[/* root */ _, /* result */ LintResult, scala.Unit]
     ]
   ): js.Any = js.native
-  def lint(): stdLib.Promise[LinterResult] = js.native
-  def lint(options: LinterOptions): stdLib.Promise[LinterResult] = js.native
+  def lint(): js.Promise[LinterResult] = js.native
+  def lint(options: LinterOptions): js.Promise[LinterResult] = js.native
 }
 

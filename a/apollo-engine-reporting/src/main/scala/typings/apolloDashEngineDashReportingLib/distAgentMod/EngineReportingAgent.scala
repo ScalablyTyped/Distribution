@@ -26,7 +26,7 @@ class EngineReportingAgent[TContext] protected () extends js.Object {
     trace: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.Trace
   ): scala.Unit = js.native
   def newExtension(): apolloDashEngineDashReportingLib.distExtensionMod.EngineReportingExtension[TContext] = js.native
-  def sendReport(): stdLib.Promise[scala.Unit] = js.native
+  def sendReport(): js.Promise[scala.Unit] = js.native
   def stop(): scala.Unit = js.native
 }
 

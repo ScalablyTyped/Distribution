@@ -49,13 +49,13 @@ trait LayoutEvents extends js.Object {
            * @param handler The handler function that is called when one of the specified events occurs.
            */
   def one(events: EventNames, handler: EventHandler): this.type = js.native
-  def pon(events: EventNames): stdLib.Promise[EventObject] = js.native
+  def pon(events: EventNames): js.Promise[EventObject] = js.native
   /**
            * Get a promise that is resolved with the first of any of
            * the specified events triggered on the layout.
            * http://js.cytoscape.org/#layout.promiseOn
            */
-  def promiseOn(events: EventNames): stdLib.Promise[EventObject] = js.native
+  def promiseOn(events: EventNames): js.Promise[EventObject] = js.native
   def removeListener(events: EventNames): this.type = js.native
   def removeListener(events: EventNames, handler: EventHandler): this.type = js.native
   /**

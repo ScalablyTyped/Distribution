@@ -12,12 +12,12 @@ trait CacheStrategy extends js.Object {
   	 * @param {ICacheStrategyHandleOptions} input
   	 * @returns {Promise<Response>}
   	 */
-  def handle(input: ICacheStrategyHandleOptions): stdLib.Promise[stdLib.Response]
+  def handle(input: ICacheStrategyHandleOptions): js.Promise[stdLib.Response]
   /**
   	 * This method can be used to perform a make a standalone request outside the context of the Workbox Router.
   	 * @param {ICacheStrategyMakeRequestOptions} input
   	 * @returns {Promise<Response>}
   	 */
-  def makeRequest(input: ICacheStrategyMakeRequestOptions): stdLib.Promise[stdLib.Response]
+  def makeRequest(input: ICacheStrategyMakeRequestOptions): js.Promise[stdLib.Response]
 }
 

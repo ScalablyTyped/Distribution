@@ -23,6 +23,6 @@ trait ServerMethodConfigurationObject extends js.Object {
   /**
        * the method function.
        */
-  def method(args: js.Any*): stdLib.Promise[_] = js.native
+  def method(args: js.Any*): js.Promise[_] = js.native
 }
 

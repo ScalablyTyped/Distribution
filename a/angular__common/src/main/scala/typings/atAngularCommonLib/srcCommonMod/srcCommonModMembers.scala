@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object srcCommonModMembers extends js.Object {
   val APP_BASE_HREF: atAngularCoreLib.coreMod.InjectionToken[java.lang.String] = js.native
   val DOCUMENT: atAngularCoreLib.coreMod.InjectionToken[stdLib.Document] = js.native
-  val LOCATION_INITIALIZED: atAngularCoreLib.coreMod.InjectionToken[stdLib.Promise[js.Any]] = js.native
+  val LOCATION_INITIALIZED: atAngularCoreLib.coreMod.InjectionToken[js.Promise[js.Any]] = js.native
   val VERSION: atAngularCoreLib.coreMod.Version = js.native
   val ɵPLATFORM_BROWSER_ID: /* browser */ java.lang.String = js.native
   val ɵPLATFORM_SERVER_ID: /* server */ java.lang.String = js.native

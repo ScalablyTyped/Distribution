@@ -172,7 +172,7 @@ object Notification
      with ScalablyTyped.runtime.Instantiable2[/* title */ java.lang.String, /* options */ NotificationOptions, Notification] {
   val maxActions: scala.Double = js.native
   val permission: stdLib.NotificationPermission = js.native
-  def requestPermission(): stdLib.Promise[stdLib.NotificationPermission] = js.native
-  def requestPermission(deprecatedCallback: stdLib.NotificationPermissionCallback): stdLib.Promise[stdLib.NotificationPermission] = js.native
+  def requestPermission(): js.Promise[stdLib.NotificationPermission] = js.native
+  def requestPermission(deprecatedCallback: stdLib.NotificationPermissionCallback): js.Promise[stdLib.NotificationPermission] = js.native
 }
 

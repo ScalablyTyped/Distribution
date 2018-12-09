@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait IHttpActionResult extends js.Object {
-  def executeAsync(): stdLib.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
+  def executeAsync(): js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
 }
 

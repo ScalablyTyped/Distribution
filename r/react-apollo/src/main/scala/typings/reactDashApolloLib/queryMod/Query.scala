@@ -34,6 +34,6 @@ trait Query[TData, TVariables]
   def componentWillReceiveProps_MQuery(nextProps: QueryProps[TData, TVariables], nextContext: QueryContext): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MQuery(): scala.Unit = js.native
-  def fetchData(): stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]] | scala.Boolean = js.native
+  def fetchData(): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]] | scala.Boolean = js.native
 }
 

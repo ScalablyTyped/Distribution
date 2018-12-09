@@ -29,11 +29,11 @@ class SpotifyPlayer protected () extends js.Object {
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.ready,
     cb: PlaybackInstanceListener
   ): scala.Unit = js.native
-  def connect(): stdLib.Promise[scala.Boolean] = js.native
+  def connect(): js.Promise[scala.Boolean] = js.native
   def disconnect(): scala.Unit = js.native
-  def getCurrentState(): stdLib.Promise[PlaybackState | scala.Null] = js.native
-  def getVolume(): stdLib.Promise[scala.Double] = js.native
-  def nextTrack(): stdLib.Promise[scala.Unit] = js.native
+  def getCurrentState(): js.Promise[PlaybackState | scala.Null] = js.native
+  def getVolume(): js.Promise[scala.Double] = js.native
+  def nextTrack(): js.Promise[scala.Unit] = js.native
   def on(event: ErrorTypes, cb: ErrorListener): scala.Unit = js.native
   @JSName("on")
   def on_not_ready(
@@ -50,8 +50,8 @@ class SpotifyPlayer protected () extends js.Object {
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.ready,
     cb: PlaybackInstanceListener
   ): scala.Unit = js.native
-  def pause(): stdLib.Promise[scala.Unit] = js.native
-  def previousTrack(): stdLib.Promise[scala.Unit] = js.native
+  def pause(): js.Promise[scala.Unit] = js.native
+  def previousTrack(): js.Promise[scala.Unit] = js.native
   def removeListener(event: ErrorTypes): scala.Unit = js.native
   def removeListener(event: ErrorTypes, cb: ErrorListener | PlaybackInstanceListener | PlaybackStateListener): scala.Unit = js.native
   @JSName("removeListener")
@@ -77,9 +77,9 @@ class SpotifyPlayer protected () extends js.Object {
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.ready,
     cb: ErrorListener | PlaybackInstanceListener | PlaybackStateListener
   ): scala.Unit = js.native
-  def resume(): stdLib.Promise[scala.Unit] = js.native
-  def seek(pos_ms: scala.Double): stdLib.Promise[scala.Unit] = js.native
-  def setVolume(volume: scala.Double): stdLib.Promise[scala.Unit] = js.native
-  def togglePlay(): stdLib.Promise[scala.Unit] = js.native
+  def resume(): js.Promise[scala.Unit] = js.native
+  def seek(pos_ms: scala.Double): js.Promise[scala.Unit] = js.native
+  def setVolume(volume: scala.Double): js.Promise[scala.Unit] = js.native
+  def togglePlay(): js.Promise[scala.Unit] = js.native
 }
 

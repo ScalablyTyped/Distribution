@@ -13,8 +13,8 @@ class Buf () extends js.Object {
   var size: scala.Double = js.native
   def containsNul(): scala.Double = js.native
   def free(): scala.Unit = js.native
-  def grow(targetSize: scala.Double): stdLib.Promise[Buf] = js.native
+  def grow(targetSize: scala.Double): js.Promise[Buf] = js.native
   def isBinary(): scala.Double = js.native
-  def set(data: nodeLib.Buffer, datalen: scala.Double): stdLib.Promise[Buf] = js.native
+  def set(data: nodeLib.Buffer, datalen: scala.Double): js.Promise[Buf] = js.native
 }
 

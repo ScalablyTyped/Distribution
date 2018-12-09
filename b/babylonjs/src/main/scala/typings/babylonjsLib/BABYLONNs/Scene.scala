@@ -550,7 +550,7 @@ class Scene protected () extends AbstractScene {
   /**
            * Gets the list of meshes imported to the scene through SceneLoader
            */
-  var importedMeshesFiles: js.Array[java.lang.String] = js.native
+  var importedMeshesFiles: js.Array[nodeLib.String] = js.native
   /** @hidden */
   val interFramePerfCounter: Nullable[PerfCounter] = js.native
   /**
@@ -1018,11 +1018,11 @@ class Scene protected () extends AbstractScene {
     ]
   ): IFileRequest = js.native
   /** @hidden */
-  def _loadFileAsync(url: java.lang.String): stdLib.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
+  def _loadFileAsync(url: java.lang.String): js.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
   /** @hidden */
-  def _loadFileAsync(url: java.lang.String, useDatabase: scala.Boolean): stdLib.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
+  def _loadFileAsync(url: java.lang.String, useDatabase: scala.Boolean): js.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
   /** @hidden */
-  def _loadFileAsync(url: java.lang.String, useDatabase: scala.Boolean, useArrayBuffer: scala.Boolean): stdLib.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
+  def _loadFileAsync(url: java.lang.String, useDatabase: scala.Boolean, useArrayBuffer: scala.Boolean): js.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
   /** @hidden */
   def _rebuildGeometries(): scala.Unit = js.native
   /** @hidden */
@@ -2869,7 +2869,7 @@ class Scene protected () extends AbstractScene {
            * Returns a promise that resolves when the scene is ready
            * @returns A promise that resolves when the scene is ready
            */
-  def whenReadyAsync(): stdLib.Promise[scala.Unit] = js.native
+  def whenReadyAsync(): js.Promise[scala.Unit] = js.native
 }
 
 /**

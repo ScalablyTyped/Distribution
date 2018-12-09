@@ -15,7 +15,7 @@ class filemanager () extends baseview {
   @JSName("config")
   var config_filemanager: filemanagerConfig = js.native
   var data: webixLib.webixNs.DataStore = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   @JSName("$dropAllow")
   def $dropAllow(args: js.Any*): js.Any = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
@@ -100,9 +100,9 @@ class filemanager () extends baseview {
   def isBranch(id: java.lang.String): scala.Boolean = js.native
   def isBranch(id: scala.Double): scala.Boolean = js.native
   def levelUp(id: java.lang.String): scala.Unit = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def loadBranch(id: java.lang.String, callback: webixLib.webixNs.WebixCallback, url: java.lang.String): scala.Unit = js.native
   def loadBranch(id: scala.Double, callback: webixLib.webixNs.WebixCallback, url: java.lang.String): scala.Unit = js.native
   def loadNext(

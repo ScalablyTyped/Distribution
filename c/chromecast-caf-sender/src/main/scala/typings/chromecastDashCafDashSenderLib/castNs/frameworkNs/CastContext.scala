@@ -20,7 +20,7 @@ class CastContext () extends js.Object {
     `type`: CastContextEventType,
     handler: js.Function1[(/* event */ CastStateEventData) | (/* event */ SessionStateEventData), scala.Unit]
   ): scala.Unit = js.native
-  def requestSession(): stdLib.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
+  def requestSession(): js.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
   def setOptions(options: CastOptions): scala.Unit = js.native
 }
 

@@ -16,7 +16,7 @@ trait IGenericBookmark extends js.Object {
            * @returns - A promise true or false
            */
   @JSName("apply")
-  def apply(): stdLib.Promise[scala.Boolean]
+  def apply(): js.Promise[scala.Boolean]
   /**
            * Applies a patch to the properties of an object. Allows an update to some of the properties.
            *
@@ -24,7 +24,7 @@ trait IGenericBookmark extends js.Object {
            * @param qPatches - Array of patches.
            * @returns - A promise of a Qlik engine reply.
            */
-  def applyPatches(qPatches: js.Array[INxPatch]): stdLib.Promise[scala.Unit]
+  def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[scala.Unit]
   /**
            * Get the selected values in the bookmark for a specific field.
            *
@@ -38,7 +38,7 @@ trait IGenericBookmark extends js.Object {
     qField: java.lang.String,
     qGetExcludedValues: scala.Boolean,
     qDataPage: qlikDashEngineapiLib.Anon_QStartIndex
-  ): stdLib.Promise[qlikDashEngineapiLib.Anon_QFieldValues]
+  ): js.Promise[qlikDashEngineapiLib.Anon_QFieldValues]
   /**
            * Returns:
            *
@@ -48,24 +48,24 @@ trait IGenericBookmark extends js.Object {
            * Note: Applying a patch takes less time than resetting all the properties.
            * @returns - A promise InfoObject
            */
-  def getInfo(): stdLib.Promise[INxInfo]
+  def getInfo(): js.Promise[INxInfo]
   /**
            * Evaluates an object and displays its properties including the dynamic properties.
            * If the member delta is set to true in the request object, only the delta is evaluated..
            * @returns - A promise of GenericBookmarkLayout
            */
-  def getLayout(): stdLib.Promise[IGenericBookmarkLayout]
+  def getLayout(): js.Promise[IGenericBookmarkLayout]
   /**
            * Shows the properties of an object.
            * If the member delta is set to true in the request object, only the delta is retrieved.
            * @returns - A promise of GenericBookmarkProperties
            */
-  def getProperties(): stdLib.Promise[IGenericBookmarkProperties]
+  def getProperties(): js.Promise[IGenericBookmarkProperties]
   /**
            * Publishes a bookmark.
            * @returns - A promise of a Qlik engine reply.
            */
-  def publish(): stdLib.Promise[scala.Unit]
+  def publish(): js.Promise[scala.Unit]
   /**
            * Sets some properties for a bookmark.
            *
@@ -74,11 +74,11 @@ trait IGenericBookmark extends js.Object {
            * >> This parameter is mandatory.
            * @returns - A promise of a Qlik engine reply.
            */
-  def setProperties(qProp: IGenericBookmarkProperties): stdLib.Promise[scala.Unit]
+  def setProperties(qProp: IGenericBookmarkProperties): js.Promise[scala.Unit]
   /**
            * Unpublishes a bookmark.
            * @returns - A promise of a Qlik engine reply.
            */
-  def unPublish(): stdLib.Promise[scala.Unit]
+  def unPublish(): js.Promise[scala.Unit]
 }
 

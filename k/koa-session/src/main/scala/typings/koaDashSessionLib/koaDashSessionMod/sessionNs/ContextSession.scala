@@ -16,7 +16,7 @@ trait ContextSession extends js.Object {
   /**
            * Commit the session changes or removal.
            */
-  def commit(): stdLib.Promise[scala.Unit]
+  def commit(): js.Promise[scala.Unit]
   /**
            * internal logic of `ctx.session`
            */
@@ -25,7 +25,7 @@ trait ContextSession extends js.Object {
            * init session from external store
            * will be called in the front of session middleware
            */
-  def initFromExternal(): stdLib.Promise[scala.Unit]
+  def initFromExternal(): js.Promise[scala.Unit]
   /**
            * internal logic of `ctx.session=`
            */

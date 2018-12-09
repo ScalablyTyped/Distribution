@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "cron-parser"
-version := "2.7.3-1e4c60"
+version := "2.7.3-f8f457"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "moment" % "2.22.2-d1dfb5",
-  "org.scalablytyped" %%% "moment-timezone" % "0.5-dt-20180915Z-83c9af",
-  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
+  "org.scalablytyped" %%% "moment" % "2.22.2-90ee67",
+  "org.scalablytyped" %%% "moment-timezone" % "0.5-dt-20180915Z-4074c0",
+  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

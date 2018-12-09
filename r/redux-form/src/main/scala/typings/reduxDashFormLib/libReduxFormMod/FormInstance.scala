@@ -17,6 +17,6 @@ trait FormInstance[FormData, P, ErrorType]
   var wrappedInstance: reactLib.reactMod.ReactNs.ReactElement[P with (InjectedFormProps[FormData, P, ErrorType])] = js.native
   def reset(): scala.Unit = js.native
   def resetSection(sections: java.lang.String*): scala.Unit = js.native
-  def submit(): stdLib.Promise[_] = js.native
+  def submit(): js.Promise[_] = js.native
 }
 

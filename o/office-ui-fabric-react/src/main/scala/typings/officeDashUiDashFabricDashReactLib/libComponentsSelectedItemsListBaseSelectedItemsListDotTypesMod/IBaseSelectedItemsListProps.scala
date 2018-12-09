@@ -43,7 +43,7 @@ trait IBaseSelectedItemsListProps[T]
   /**
        * A callback to process a selection after the user selects something from the picker.
        */
-  var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | stdLib.PromiseLike[T]]] = js.undefined
+  var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T]]] = js.undefined
   /**
        * A callback when and item or items are deleted
        */

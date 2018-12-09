@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class AssetArchive protected ()
   extends atPulumiPulumiLib.assetArchiveMod.AssetArchive {
   def this(assets: atPulumiPulumiLib.assetArchiveMod.AssetMap) = this()
-  def this(assets: stdLib.Promise[atPulumiPulumiLib.assetArchiveMod.AssetMap]) = this()
+  def this(assets: js.Promise[atPulumiPulumiLib.assetArchiveMod.AssetMap]) = this()
 }
 

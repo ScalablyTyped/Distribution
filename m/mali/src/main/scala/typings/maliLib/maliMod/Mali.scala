@@ -16,7 +16,7 @@ trait Mali
   def addService(path: js.Any, name: java.lang.String, options: js.Any): scala.Unit = js.native
   def addService(path: js.Any, name: js.Array[java.lang.String]): scala.Unit = js.native
   def addService(path: js.Any, name: js.Array[java.lang.String], options: js.Any): scala.Unit = js.native
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   def inspect(): js.Any = js.native
   def start(port: java.lang.String): grpcLib.grpcMod.Server = js.native
   def start(port: java.lang.String, creds: js.Any): grpcLib.grpcMod.Server = js.native

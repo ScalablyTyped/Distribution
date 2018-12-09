@@ -103,7 +103,7 @@ class Project () extends js.Object {
   /**
            * Creates a new branch with head pointing to the provided commit hash.
            */
-  def createBranch(branchName: java.lang.String, newHash: webgmeLib.GmeStorageNs.CommitHash): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  def createBranch(branchName: java.lang.String, newHash: webgmeLib.GmeStorageNs.CommitHash): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   /** Name of branch to create. */
   /**
            * Creates a new branch with head pointing to the provided commit hash.
@@ -116,7 +116,7 @@ class Project () extends js.Object {
   /**
            * Creates a new tag pointing to the provided commit hash.
            */
-  def createTag(tagName: java.lang.String, commitHash: webgmeLib.GmeStorageNs.CommitHash): stdLib.Promise[webgmeLib.GmeStorageNs.ErrorOnlyCallback] = js.native
+  def createTag(tagName: java.lang.String, commitHash: webgmeLib.GmeStorageNs.CommitHash): js.Promise[webgmeLib.GmeStorageNs.ErrorOnlyCallback] = js.native
   /**
            * Creates a new tag pointing to the provided commit hash.
            */
@@ -128,7 +128,7 @@ class Project () extends js.Object {
   /**
           * Deletes the given branch.
           */
-  def deleteBranch(branchName: java.lang.String, oldHash: webgmeLib.GmeStorageNs.CommitHash): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  def deleteBranch(branchName: java.lang.String, oldHash: webgmeLib.GmeStorageNs.CommitHash): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   /** Name of branch to delete. */
   /**
           * Deletes the given branch.
@@ -146,11 +146,11 @@ class Project () extends js.Object {
   /**
            * Deletes the given tag.
            */
-  def deleteTag(tagname: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def deleteTag(tagname: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Retrieves the commit hash for the head of the branch.
            */
-  def getBranchHash(branchName: java.lang.String): stdLib.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
+  def getBranchHash(branchName: java.lang.String): js.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
   /**
            * Retrieves the commit hash for the head of the branch.
            */
@@ -159,7 +159,7 @@ class Project () extends js.Object {
   /**
            * Retrieves all branches and their current heads within the project.
            */
-  def getBranches(): stdLib.Promise[webgmeLib.GmeCommonNs.Dictionary[webgmeLib.GmeStorageNs.CommitHash]] = js.native
+  def getBranches(): js.Promise[webgmeLib.GmeCommonNs.Dictionary[webgmeLib.GmeStorageNs.CommitHash]] = js.native
   /** On success the callback will run with Object.module:Storage~CommitHash result. */
   /**
            * Retrieves all branches and their current heads within the project.
@@ -171,7 +171,7 @@ class Project () extends js.Object {
            * Retrieves the Class ancestor of two commits. 
            * If no ancestor exists it will result in an error.
            */
-  def getClassAncestorCommit(commitA: webgmeLib.GmeStorageNs.CommitHash, commitB: webgmeLib.GmeStorageNs.CommitHash): stdLib.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
+  def getClassAncestorCommit(commitA: webgmeLib.GmeStorageNs.CommitHash, commitB: webgmeLib.GmeStorageNs.CommitHash): js.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
   /**
            * Retrieves the Class ancestor of two commits. 
            * If no ancestor exists it will result in an error.
@@ -193,7 +193,7 @@ class Project () extends js.Object {
            * Unless looking for 'headless' commits 
            * 'getHistory' is the preferred method.
            */
-  def getCommits(before: scala.Double, number: scala.Double): stdLib.Promise[webgmeLib.GmeStorageNs.CommitObject] = js.native
+  def getCommits(before: scala.Double, number: scala.Double): js.Promise[webgmeLib.GmeStorageNs.CommitObject] = js.native
   /**
            * Retrieves and array of the latest 
            * (sorted by timestamp) commits for the project. 
@@ -223,7 +223,7 @@ class Project () extends js.Object {
            * Unless looking for 'headless' commits 
            * 'getHistory' is the preferred method.
            */
-  def getCommits(before: webgmeLib.GmeStorageNs.CommitHash, number: scala.Double): stdLib.Promise[webgmeLib.GmeStorageNs.CommitObject] = js.native
+  def getCommits(before: webgmeLib.GmeStorageNs.CommitHash, number: scala.Double): js.Promise[webgmeLib.GmeStorageNs.CommitObject] = js.native
   /**
            * Retrieves and array of the latest 
            * (sorted by timestamp) commits for the project. 
@@ -247,7 +247,7 @@ class Project () extends js.Object {
            *  1. Descendants are always returned before their ancestors.
            *  2. By their timestamp.
            */
-  def getHistory(start: webgmeLib.GmeCommonNs.ProjectStart, number: scala.Double): stdLib.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
+  def getHistory(start: webgmeLib.GmeCommonNs.ProjectStart, number: scala.Double): js.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
   /**
            * Retrieves an array of commits starting from a branch(es) and/or commitHash(es). 
            * The result is ordered by the rules (applied in order) 
@@ -262,12 +262,12 @@ class Project () extends js.Object {
   /**
            * Retrieves all tags and their commits hashes within the project.
            */
-  def getTags(): stdLib.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
+  def getTags(): js.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
   /**
            * Retrieves all tags and their commits hashes within the project.
            */
   def getTags(callback: webgmeLib.GmeStorageNs.CommitHashCallback): scala.Unit = js.native
-  def loadObject(key: java.lang.String): stdLib.Promise[webgmeLib.GmeStorageNs.CommitObject] = js.native
+  def loadObject(key: java.lang.String): js.Promise[webgmeLib.GmeStorageNs.CommitObject] = js.native
   /** Hash of object to load. */
   def loadObject(
     key: java.lang.String,
@@ -280,7 +280,7 @@ class Project () extends js.Object {
            * @param rootKey Hash of the object at the entry point of the paths.
            * @param paths List of paths that needs to be pre-loaded.
            */
-  def loadPaths(rootKey: java.lang.String, paths: js.Array[java.lang.String]): stdLib.Promise[webgmeLib.GmeStorageNs.ErrorOnlyCallback] = js.native
+  def loadPaths(rootKey: java.lang.String, paths: js.Array[java.lang.String]): js.Promise[webgmeLib.GmeStorageNs.ErrorOnlyCallback] = js.native
   /** 
            * Collects the objects from the server and pre-loads 
            * them into the cache making the load of multiple objects faster.
@@ -306,7 +306,7 @@ class Project () extends js.Object {
     rootHash: webgmeLib.CoreNs.ObjectHash,
     coreObjects: webgmeLib.CoreNs.DataObject,
     msg: java.lang.String
-  ): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  ): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   /**
            * Makes a commit to data base. 
            * Based on the root hash and commit message a 
@@ -329,7 +329,7 @@ class Project () extends js.Object {
     branchName: java.lang.String,
     newHash: webgmeLib.GmeStorageNs.CommitHash,
     oldHash: webgmeLib.GmeStorageNs.CommitHash
-  ): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  ): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   /**
            * Updates the head of the branch.
            */

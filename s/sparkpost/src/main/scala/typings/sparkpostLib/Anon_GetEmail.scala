@@ -13,7 +13,7 @@ trait Anon_GetEmail extends js.Object {
            * @param email Recipient email address
            * @returns void
            */
-  def delete(email: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def delete(email: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Delete a recipient from the list by specifying the recipient’s email address in the URI path.
            *

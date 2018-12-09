@@ -28,7 +28,7 @@ trait SnackbarProps
   /**
      * Callback function when finish the set timeout.
      */
-  var onTimeout: js.UndefOr[js.Function] = js.undefined
+  var onTimeout: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Classnames object defining the component style.
      */

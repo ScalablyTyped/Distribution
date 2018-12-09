@@ -14,6 +14,6 @@ trait Entry
   var `type`: java.lang.String = js.native
   var vars: unzipperLib.Anon_LastModifiedTime = js.native
   def autodrain(): nodeLib.streamMod.Transform with unzipperLib.Anon_Promise = js.native
-  def buffer(): stdLib.Promise[nodeLib.Buffer] = js.native
+  def buffer(): js.Promise[nodeLib.Buffer] = js.native
 }
 

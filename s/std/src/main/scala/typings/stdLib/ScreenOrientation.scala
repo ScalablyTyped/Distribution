@@ -27,7 +27,7 @@ trait ScreenOrientation extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  def lock(orientation: OrientationLockType): Promise[scala.Unit] = js.native
+  def lock(orientation: OrientationLockType): js.Promise[scala.Unit] = js.native
   @JSName("removeEventListener")
   def removeEventListener_change(
     `type`: stdLib.stdLibStrings.change,

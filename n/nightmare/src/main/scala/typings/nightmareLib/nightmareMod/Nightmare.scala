@@ -356,7 +356,7 @@ trait Nightmare extends js.Object {
   def screenshot(path: java.lang.String, done: js.Function1[/* err */ js.Any, scala.Unit]): Nightmare = js.native
   def scrollTo(top: scala.Double, left: scala.Double): Nightmare = js.native
   def select(seletor: java.lang.String, option: java.lang.String): Nightmare = js.native
-  def `then`[T, R](fn: js.Function1[/* value */ T, R]): stdLib.Promise[R] = js.native
+  def `then`[T, R](fn: js.Function1[/* value */ T, R]): js.Promise[R] = js.native
   def title(): java.lang.String = js.native
   def title(cb: js.Function1[/* title */ java.lang.String, scala.Unit]): Nightmare = js.native
   def `type`(selector: java.lang.String, text: java.lang.String): Nightmare = js.native

@@ -32,41 +32,41 @@ object windowsNsMembers extends js.Object {
        */
   val onRemoved: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* windowId */ scala.Double, scala.Unit]] = js.native
   /** Creates (opens) a new browser with any optional sizing, position or default URL provided. */
-  def create(): stdLib.Promise[js.UndefOr[Window]] = js.native
+  def create(): js.Promise[js.UndefOr[Window]] = js.native
   /** Creates (opens) a new browser with any optional sizing, position or default URL provided. */
-  def create(createData: firefoxDashWebextDashBrowserLib.Anon_AllowScriptsToClose): stdLib.Promise[js.UndefOr[Window]] = js.native
+  def create(createData: firefoxDashWebextDashBrowserLib.Anon_AllowScriptsToClose): js.Promise[js.UndefOr[Window]] = js.native
   /* windows functions */
   /** Gets details about a window. */
-  def get(windowId: scala.Double): stdLib.Promise[Window] = js.native
+  def get(windowId: scala.Double): js.Promise[Window] = js.native
   /* windows functions */
   /** Gets details about a window. */
-  def get(windowId: scala.Double, getInfo: GetInfo): stdLib.Promise[Window] = js.native
+  def get(windowId: scala.Double, getInfo: GetInfo): js.Promise[Window] = js.native
   /**
        * Gets all windows.
        * @param [getInfo] Specifies properties used to filter the `windows.Window` returned and to determine whether they
        *     should contain a list of the `tabs.Tab` objects.
        */
-  def getAll(): stdLib.Promise[js.Array[Window]] = js.native
+  def getAll(): js.Promise[js.Array[Window]] = js.native
   /**
        * Gets all windows.
        * @param [getInfo] Specifies properties used to filter the `windows.Window` returned and to determine whether they
        *     should contain a list of the `tabs.Tab` objects.
        */
-  def getAll(getInfo: firefoxDashWebextDashBrowserLib.Anon_Populate): stdLib.Promise[js.Array[Window]] = js.native
+  def getAll(getInfo: firefoxDashWebextDashBrowserLib.Anon_Populate): js.Promise[js.Array[Window]] = js.native
   /** Gets the current window. */
-  def getCurrent(): stdLib.Promise[Window] = js.native
+  def getCurrent(): js.Promise[Window] = js.native
   /** Gets the current window. */
-  def getCurrent(getInfo: GetInfo): stdLib.Promise[Window] = js.native
+  def getCurrent(getInfo: GetInfo): js.Promise[Window] = js.native
   /** Gets the window that was most recently focused — typically the window 'on top'. */
-  def getLastFocused(): stdLib.Promise[Window] = js.native
+  def getLastFocused(): js.Promise[Window] = js.native
   /** Gets the window that was most recently focused — typically the window 'on top'. */
-  def getLastFocused(getInfo: GetInfo): stdLib.Promise[Window] = js.native
+  def getLastFocused(getInfo: GetInfo): js.Promise[Window] = js.native
   /** Removes (closes) a window, and all the tabs inside it. */
-  def remove(windowId: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def remove(windowId: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * Updates the properties of a window. Specify only the properties that you want to change; unspecified properties
        * will be left unchanged.
        */
-  def update(windowId: scala.Double, updateInfo: firefoxDashWebextDashBrowserLib.Anon_State): stdLib.Promise[js.UndefOr[Window]] = js.native
+  def update(windowId: scala.Double, updateInfo: firefoxDashWebextDashBrowserLib.Anon_State): js.Promise[js.UndefOr[Window]] = js.native
 }
 

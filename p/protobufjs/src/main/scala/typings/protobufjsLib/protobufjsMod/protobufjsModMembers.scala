@@ -13,13 +13,13 @@ object protobufjsModMembers extends js.Object {
   def configure(): scala.Unit = js.native
   def decoder(mtype: Type): protobufjsLib.Codegen = js.native
   def encoder(mtype: Type): protobufjsLib.Codegen = js.native
-  def load(filename: java.lang.String): stdLib.Promise[Root] = js.native
+  def load(filename: java.lang.String): js.Promise[Root] = js.native
   def load(filename: java.lang.String, callback: protobufjsLib.LoadCallback): scala.Unit = js.native
-  def load(filename: java.lang.String, root: Root): stdLib.Promise[Root] = js.native
+  def load(filename: java.lang.String, root: Root): js.Promise[Root] = js.native
   def load(filename: java.lang.String, root: Root, callback: protobufjsLib.LoadCallback): scala.Unit = js.native
-  def load(filename: js.Array[java.lang.String]): stdLib.Promise[Root] = js.native
+  def load(filename: js.Array[java.lang.String]): js.Promise[Root] = js.native
   def load(filename: js.Array[java.lang.String], callback: protobufjsLib.LoadCallback): scala.Unit = js.native
-  def load(filename: js.Array[java.lang.String], root: Root): stdLib.Promise[Root] = js.native
+  def load(filename: js.Array[java.lang.String], root: Root): js.Promise[Root] = js.native
   def load(filename: js.Array[java.lang.String], root: Root, callback: protobufjsLib.LoadCallback): scala.Unit = js.native
   def loadSync(filename: java.lang.String): Root = js.native
   def loadSync(filename: java.lang.String, root: Root): Root = js.native

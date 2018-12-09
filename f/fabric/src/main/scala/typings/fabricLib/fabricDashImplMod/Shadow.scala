@@ -53,7 +53,7 @@ class Shadow () extends IShadowOptions {
   /**
   	 * Returns SVG representation of a shadow
   	 */
-  def toSVG(`object`: js.Object): java.lang.String = js.native
+  def toSVG(`object`: Object): java.lang.String = js.native
 }
 
 @JSImport("fabric/fabric-impl", "Shadow")

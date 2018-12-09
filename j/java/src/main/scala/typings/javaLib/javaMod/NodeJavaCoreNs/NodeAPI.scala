@@ -16,7 +16,7 @@ trait NodeAPI extends js.Object {
   def callMethodSync(instance: js.Any, methodName: java.lang.String, args: js.Any*): js.Any = js.native
   def callStaticMethod(className: java.lang.String, methodName: java.lang.String, args: (js.Any | Callback[_])*): scala.Unit = js.native
   def callStaticMethodSync(className: java.lang.String, methodName: java.lang.String, args: js.Any*): js.Any = js.native
-  def ensureJvm(): stdLib.Promise[scala.Unit] = js.native
+  def ensureJvm(): js.Promise[scala.Unit] = js.native
   def ensureJvm(done: Callback[scala.Unit]): scala.Unit = js.native
   def getClassLoader(): js.Any = js.native
   def getStaticFieldValue(className: java.lang.String, fieldName: java.lang.String): js.Any = js.native
@@ -30,7 +30,7 @@ trait NodeAPI extends js.Object {
   def newDouble(`val`: scala.Double): js.Any = js.native
   def newFloat(`val`: scala.Double): js.Any = js.native
   def newInstance(className: java.lang.String, args: js.Any*): scala.Unit = js.native
-  def newInstanceP(className: java.lang.String, args: js.Any*): stdLib.Promise[_] = js.native
+  def newInstanceP(className: java.lang.String, args: js.Any*): js.Promise[_] = js.native
   def newInstanceSync(className: java.lang.String, args: js.Any*): js.Any = js.native
   def newLong(`val`: scala.Double): js.Any = js.native
   def newProxy(interfaceName: java.lang.String, functions: ProxyFunctions): js.Any = js.native
@@ -40,11 +40,8 @@ trait NodeAPI extends js.Object {
     before: js.Function1[/* cb */ Callback[scala.Unit], scala.Unit],
     after: js.Function1[/* cb */ Callback[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
-  def registerClientP(beforeP: js.Function0[stdLib.Promise[scala.Unit]]): scala.Unit = js.native
-  def registerClientP(
-    beforeP: js.Function0[stdLib.Promise[scala.Unit]],
-    afterP: js.Function0[stdLib.Promise[scala.Unit]]
-  ): scala.Unit = js.native
+  def registerClientP(beforeP: js.Function0[js.Promise[scala.Unit]]): scala.Unit = js.native
+  def registerClientP(beforeP: js.Function0[js.Promise[scala.Unit]], afterP: js.Function0[js.Promise[scala.Unit]]): scala.Unit = js.native
   def setStaticFieldValue(className: java.lang.String, fieldName: java.lang.String, newValue: js.Any): scala.Unit = js.native
 }
 

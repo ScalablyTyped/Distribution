@@ -13,7 +13,7 @@ class Hashsig ()
 @JSImport("nodegit", "Hashsig")
 @js.native
 object Hashsig extends js.Object {
-  def create(buf: java.lang.String, buflen: scala.Double, opts: scala.Double): stdLib.Promise[nodegitLib.hashDashSigMod.Hashsig] = js.native
-  def createFromFile(path: java.lang.String, opts: scala.Double): stdLib.Promise[nodegitLib.hashDashSigMod.Hashsig] = js.native
+  def create(buf: java.lang.String, buflen: scala.Double, opts: scala.Double): js.Promise[nodegitLib.hashDashSigMod.Hashsig] = js.native
+  def createFromFile(path: java.lang.String, opts: scala.Double): js.Promise[nodegitLib.hashDashSigMod.Hashsig] = js.native
 }
 

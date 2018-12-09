@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Snapshot extends js.Object {
-  def delete(): stdLib.Promise[js.Array[_]] = js.native
+  def delete(): js.Promise[js.Array[_]] = js.native
   def delete(callback: atGoogleDashCloudPubsubLib.pubsubMod.PubSubNs.SnapshotNs.DeleteCallback): scala.Unit = js.native
 }
 

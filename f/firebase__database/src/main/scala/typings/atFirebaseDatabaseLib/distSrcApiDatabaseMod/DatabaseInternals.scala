@@ -12,6 +12,6 @@ class DatabaseInternals protected () extends js.Object {
   def this(database: Database) = this()
   var database: Database = js.native
   /** @return {Promise<void>} */
-  def delete(): stdLib.Promise[scala.Unit] = js.native
+  def delete(): js.Promise[scala.Unit] = js.native
 }
 

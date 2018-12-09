@@ -27,7 +27,7 @@ class namespaced[K, V] protected () extends DataLoader[K, V] {
      * Loads a key, returning a `Promise` for the value represented by that key.
      */
   /* CompleteClass */
-  override def load(key: K): stdLib.Promise[V] = js.native
+  override def load(key: K): js.Promise[V] = js.native
   /**
      * Loads multiple keys, promising an array of values:
      *
@@ -42,7 +42,7 @@ class namespaced[K, V] protected () extends DataLoader[K, V] {
      *
      */
   /* CompleteClass */
-  override def loadMany(keys: js.Array[K]): stdLib.Promise[js.Array[V]] = js.native
+  override def loadMany(keys: js.Array[K]): js.Promise[js.Array[V]] = js.native
   /**
      * Adds the provied key and value to the cache. If the key already exists, no
      * change is made. Returns itself for method chaining.

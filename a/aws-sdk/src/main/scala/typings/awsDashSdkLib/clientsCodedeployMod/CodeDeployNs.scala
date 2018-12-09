@@ -37,11 +37,11 @@ object CodeDeployNs extends js.Object {
     /**
          * Indicates whether the alarm configuration is enabled.
          */
-    var enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether a deployment should continue if information about the current state of alarms cannot be retrieved from Amazon CloudWatch. The default value is false.   true: The deployment will proceed even if alarm status information can't be retrieved from Amazon CloudWatch.   false: The deployment will stop if alarm status information can't be retrieved from Amazon CloudWatch.  
          */
-    var ignorePollAlarmFailure: js.UndefOr[scala.Boolean] = js.undefined
+    var ignorePollAlarmFailure: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -81,7 +81,7 @@ object CodeDeployNs extends js.Object {
     /**
          * True if the user has authenticated with GitHub for the specified application; otherwise, false.
          */
-    var linkedToGitHub: js.UndefOr[scala.Boolean] = js.undefined
+    var linkedToGitHub: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -89,7 +89,7 @@ object CodeDeployNs extends js.Object {
     /**
          * Indicates whether a defined automatic rollback configuration is currently enabled.
          */
-    var enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The event type or types that trigger a rollback.
          */
@@ -453,7 +453,7 @@ object CodeDeployNs extends js.Object {
     /**
          *  If set to true, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance will not be considered to have failed at that point and will continue on to the BeforeInstall deployment lifecycle event.   If set to false or not specified, then if the deployment causes the ApplicationStop deployment lifecycle event to fail to an instance, the deployment to that instance will stop, and the deployment to that instance will be considered to have failed. 
          */
-    var ignoreApplicationStopFailures: js.UndefOr[scala.Boolean] = js.undefined
+    var ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined
     /**
          *  The type and location of the revision to deploy. 
          */
@@ -465,7 +465,7 @@ object CodeDeployNs extends js.Object {
     /**
          *  Indicates whether to deploy to all instances or only to instances that are not running the latest application revision. 
          */
-    var updateOutdatedInstancesOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var updateOutdatedInstancesOnly: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -717,11 +717,11 @@ object CodeDeployNs extends js.Object {
     /**
          * If true, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance will not be considered to have failed at that point and will continue on to the BeforeInstall deployment lifecycle event. If false or not specified, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance will stop, and the deployment to that instance will be considered to have failed.
          */
-    var ignoreApplicationStopFailures: js.UndefOr[scala.Boolean] = js.undefined
+    var ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the wait period set for the termination of instances in the original environment has started. Status is 'false' if the KEEP_ALIVE option is specified; otherwise, 'true' as soon as the termination wait period starts.
          */
-    var instanceTerminationWaitTimeStarted: js.UndefOr[scala.Boolean] = js.undefined
+    var instanceTerminationWaitTimeStarted: js.UndefOr[Boolean] = js.undefined
     /**
          * Information about the load balancer used in the deployment.
          */
@@ -753,7 +753,7 @@ object CodeDeployNs extends js.Object {
     /**
          * Indicates whether only instances that are not running the latest application revision are to be deployed to.
          */
-    var updateOutdatedInstancesOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var updateOutdatedInstancesOnly: js.UndefOr[Boolean] = js.undefined
   }
   
   

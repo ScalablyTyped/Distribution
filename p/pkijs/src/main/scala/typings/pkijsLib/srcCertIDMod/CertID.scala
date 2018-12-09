@@ -17,7 +17,7 @@ trait CertID extends js.Object {
            * @param {CreateFroCertificateParams} parameters Additional parameters
            * @returns {Promise}
            */
-  def createForCertificate(certificate: pkijsLib.srcCertificateMod.default, parameters: CreateFroCertificateParams): stdLib.PromiseLike[scala.Unit]
+  def createForCertificate(certificate: pkijsLib.srcCertificateMod.default, parameters: CreateFroCertificateParams): js.Thenable[scala.Unit]
   def fromSchema(schema: js.Any): scala.Unit
   /**
            * Check that two "CertIDs" are equal

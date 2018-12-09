@@ -34,6 +34,6 @@ trait TimePickerAndroidStatic extends js.Object {
        * still be resolved with action being `TimePickerAndroid.dismissedAction` and all the other keys
        * being undefined. **Always** check whether the `action` before reading the values.
        */
-  def open(options: reactDashNativeLib.TimePickerAndroidOpenOptions): stdLib.Promise[reactDashNativeLib.Anon_Action]
+  def open(options: reactDashNativeLib.TimePickerAndroidOpenOptions): js.Promise[reactDashNativeLib.Anon_Action]
 }
 

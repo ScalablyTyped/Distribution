@@ -30,7 +30,7 @@ object ParticleHelper extends js.Object {
            * @param gpu If the system will use gpu
            * @returns the ParticleSystemSet created
            */
-  def CreateAsync(`type`: java.lang.String, scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]): stdLib.Promise[babylonjsLib.BABYLONNs.ParticleSystemSet] = js.native
+  def CreateAsync(`type`: java.lang.String, scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]): js.Promise[babylonjsLib.BABYLONNs.ParticleSystemSet] = js.native
   /**
            * This is the main static method (one-liner) of this helper to create different particle systems
            * @param type This string represents the type to the particle system to create
@@ -42,7 +42,7 @@ object ParticleHelper extends js.Object {
     `type`: java.lang.String,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene],
     gpu: scala.Boolean
-  ): stdLib.Promise[babylonjsLib.BABYLONNs.ParticleSystemSet] = js.native
+  ): js.Promise[babylonjsLib.BABYLONNs.ParticleSystemSet] = js.native
   /**
            * Create a default particle system that you can tweak
            * @param emitter defines the emitter to use

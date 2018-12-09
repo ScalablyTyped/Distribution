@@ -12,6 +12,6 @@ trait LoaderPlugin extends js.Object {
       * @param address The address of the resource.
       * @return A Promise for the requested resouce.
       */
-  def fetch(address: java.lang.String): stdLib.Promise[_]
+  def fetch(address: java.lang.String): js.Promise[_]
 }
 

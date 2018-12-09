@@ -33,7 +33,7 @@ trait IGridOptions extends js.Object {
           */
   var data: js.UndefOr[js.Any] = js.undefined
   /** Data updated callback, fires every time the data is modified from outside the grid. */
-  var dataUpdated: js.UndefOr[js.Function] = js.undefined
+  var dataUpdated: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
   /** Enables cell editing. */
   var enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined
   /** Enables cell selection. */

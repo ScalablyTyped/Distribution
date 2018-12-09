@@ -22,6 +22,6 @@ object coreDashJsLibMembers extends js.Object {
   // delay - https://github.com/zloirock/core-js/#delay
   // Modules: core.delay
   // #############################################################################################
-  def delay(msec: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def delay(msec: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

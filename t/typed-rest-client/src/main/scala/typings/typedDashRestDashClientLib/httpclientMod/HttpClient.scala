@@ -37,7 +37,7 @@ class HttpClient protected ()
        * Needs to be called if keepAlive is set to true in request options.
        */
   def dispose(): scala.Unit = js.native
-  def head(requestUrl: java.lang.String): stdLib.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native
-  def head(requestUrl: java.lang.String, additionalHeaders: typedDashRestDashClientLib.interfacesMod.IHeaders): stdLib.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native
+  def head(requestUrl: java.lang.String): js.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native
+  def head(requestUrl: java.lang.String, additionalHeaders: typedDashRestDashClientLib.interfacesMod.IHeaders): js.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native
 }
 

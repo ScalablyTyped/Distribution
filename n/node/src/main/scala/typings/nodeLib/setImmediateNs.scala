@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("setImmediate")
 @js.native
 object setImmediateNs extends js.Object {
-  def `__promisify__`(): stdLib.Promise[scala.Unit] = js.native
-  def `__promisify__`[T](value: T): stdLib.Promise[T] = js.native
+  def `__promisify__`(): js.Promise[scala.Unit] = js.native
+  def `__promisify__`[T](value: T): js.Promise[T] = js.native
 }
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("move-concurrently", JSImport.Namespace)
 @js.native
 object moveDashConcurrentlyModMembers extends js.Object {
-  def apply[T /* <: stdLib.PromiseLike[scala.Unit] */](from: java.lang.String, to: java.lang.String): T = js.native
-  def apply[T /* <: stdLib.PromiseLike[scala.Unit] */](
+  def apply[T /* <: js.Thenable[scala.Unit] */](from: java.lang.String, to: java.lang.String): T = js.native
+  def apply[T /* <: js.Thenable[scala.Unit] */](
     from: java.lang.String,
     to: java.lang.String,
     opts: moveDashConcurrentlyLib.moveDashConcurrentlyMod.moveNs.Options[T]

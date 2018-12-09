@@ -25,9 +25,9 @@ trait MediaDevices extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  def enumerateDevices(): Promise[js.Array[MediaDeviceInfo]] = js.native
+  def enumerateDevices(): js.Promise[js.Array[MediaDeviceInfo]] = js.native
   def getSupportedConstraints(): MediaTrackSupportedConstraints = js.native
-  def getUserMedia(constraints: MediaStreamConstraints): Promise[MediaStream] = js.native
+  def getUserMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream] = js.native
   @JSName("removeEventListener")
   def removeEventListener_devicechange(
     `type`: stdLib.stdLibStrings.devicechange,

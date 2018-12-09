@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("gapi.client")
 @js.native
 object clientNsMembers extends js.Object {
-  def init(args: gapiLib.Anon_ClientId): stdLib.Promise[scala.Unit] = js.native
-  def load(name: java.lang.String, version: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def init(args: gapiLib.Anon_ClientId): js.Promise[scala.Unit] = js.native
+  def load(name: java.lang.String, version: java.lang.String): js.Promise[scala.Unit] = js.native
   def load(name: java.lang.String, version: java.lang.String, callback: js.Function0[_]): scala.Unit = js.native
   def load(
     name: java.lang.String,

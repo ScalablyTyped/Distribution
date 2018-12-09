@@ -503,7 +503,7 @@ object promiseNs extends js.Object {
          *     resolved with the result of the invoked callback.
          * @template R
          */
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | stdLib.PromiseLike[TResult]]): Promise[T | TResult] = js.native
+    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): Promise[T | TResult] = js.native
   }
   
   /**

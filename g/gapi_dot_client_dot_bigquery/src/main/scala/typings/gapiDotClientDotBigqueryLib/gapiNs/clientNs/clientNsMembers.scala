@@ -17,7 +17,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotBigqueryLib.gapiDotClientDotBigqueryLibStrings.bigquery,
     version: gapiDotClientDotBigqueryLib.gapiDotClientDotBigqueryLibStrings.v2
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotBigqueryLib.gapiDotClientDotBigqueryLibStrings.bigquery,
     version: gapiDotClientDotBigqueryLib.gapiDotClientDotBigqueryLibStrings.v2,

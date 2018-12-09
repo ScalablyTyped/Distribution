@@ -20,11 +20,11 @@ package object reduxDashActionMod {
   type ThunkAction[Payload] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[js.Any], 
     /* getState */ js.Function0[js.Any], 
-    stdLib.Promise[Action[Payload]]
+    js.Promise[Action[Payload]]
   ]
   type ThunkMetaAction[Payload, Meta] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[js.Any], 
     /* getState */ js.Function0[js.Any], 
-    stdLib.Promise[MetaAction[Payload, Meta]]
+    js.Promise[MetaAction[Payload, Meta]]
   ]
 }

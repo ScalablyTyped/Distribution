@@ -14,7 +14,7 @@ trait IGulpProtractor extends js.Object {
   def getProtractorDir(): java.lang.String = js.native
   def protractor(): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def protractor(options: IOptions): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def webdriver_standalone(done: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Unit | nodeLib.streamMod.Duplex | nodeLib.NodeJSNs.Process | stdLib.Promise[scala.Nothing] | js.Any = js.native
-  def webdriver_update(done: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Unit | nodeLib.streamMod.Duplex | nodeLib.NodeJSNs.Process | stdLib.Promise[scala.Nothing] | js.Any = js.native
+  def webdriver_standalone(done: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Unit | nodeLib.streamMod.Duplex | nodeLib.NodeJSNs.Process | js.Promise[scala.Nothing] | js.Any = js.native
+  def webdriver_update(done: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Unit | nodeLib.streamMod.Duplex | nodeLib.NodeJSNs.Process | js.Promise[scala.Nothing] | js.Any = js.native
 }
 

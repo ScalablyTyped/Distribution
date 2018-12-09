@@ -159,13 +159,13 @@ object ApplePaySession extends js.Object {
        * @param merchantIdentifier - The merchant ID created when the merchant enrolled in Apple Pay.
        * @returns true if the device supports Apple Pay and there is at least one active card in Wallet that is qualified for payments on the web; otherwise, false.
        */
-  def canMakePaymentsWithActiveCard(merchantIdentifier: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def canMakePaymentsWithActiveCard(merchantIdentifier: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
        * Displays the Set up Apple Pay button.
        * @param merchantIdentifier - The merchant ID created when the merchant enrolled in Apple Pay.
        * @returns A boolean value indicating whether setup was successful.
        */
-  def openPaymentSetup(merchantIdentifier: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def openPaymentSetup(merchantIdentifier: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
        * Verifies whether a web browser supports a given Apple Pay JS API version.
        * @param version - A number representing the Apple Pay JS API version being checked. The initial version is 1. The latest version is 3.

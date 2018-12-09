@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CustomViewEvent () extends TableauEvent {
   /** Gets the CustomView object associated with the event. */
-  def getCustomViewAsync(): stdLib.Promise[CustomView] = js.native
+  def getCustomViewAsync(): js.Promise[CustomView] = js.native
 }
 

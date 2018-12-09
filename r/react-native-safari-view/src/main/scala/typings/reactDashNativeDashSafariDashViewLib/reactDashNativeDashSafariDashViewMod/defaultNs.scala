@@ -16,7 +16,7 @@ object defaultNs extends js.Object {
   /**
        * Checks if Safari View is available on the device
        */
-  def isAvailable(): stdLib.Promise[scala.Boolean] = js.native
+  def isAvailable(): js.Promise[scala.Boolean] = js.native
   def removeEventListener(event: java.lang.String, listener: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
        * Displays a Safari View with the provided URL
@@ -24,6 +24,6 @@ object defaultNs extends js.Object {
        */
   def show(
     options: reactDashNativeDashSafariDashViewLib.reactDashNativeDashSafariDashViewMod.SafariViewOptions
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
 }
 

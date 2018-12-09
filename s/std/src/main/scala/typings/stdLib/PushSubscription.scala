@@ -12,7 +12,7 @@ trait PushSubscription extends js.Object {
   val options: PushSubscriptionOptions
   def getKey(name: PushEncryptionKeyName): ArrayBuffer | scala.Null
   def toJSON(): PushSubscriptionJSON
-  def unsubscribe(): Promise[scala.Boolean]
+  def unsubscribe(): js.Promise[scala.Boolean]
 }
 
 @JSGlobal("PushSubscription")

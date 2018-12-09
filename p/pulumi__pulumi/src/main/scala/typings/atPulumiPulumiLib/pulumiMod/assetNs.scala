@@ -20,42 +20,42 @@ object assetNs extends js.Object {
   class AssetArchive protected ()
     extends atPulumiPulumiLib.assetMod.AssetArchive {
     def this(assets: atPulumiPulumiLib.assetArchiveMod.AssetMap) = this()
-    def this(assets: stdLib.Promise[atPulumiPulumiLib.assetArchiveMod.AssetMap]) = this()
+    def this(assets: js.Promise[atPulumiPulumiLib.assetArchiveMod.AssetMap]) = this()
   }
   
   @js.native
   class FileArchive protected ()
     extends atPulumiPulumiLib.assetMod.FileArchive {
     def this(path: java.lang.String) = this()
-    def this(path: stdLib.Promise[java.lang.String]) = this()
+    def this(path: js.Promise[java.lang.String]) = this()
   }
   
   @js.native
   class FileAsset protected ()
     extends atPulumiPulumiLib.assetMod.FileAsset {
     def this(path: java.lang.String) = this()
-    def this(path: stdLib.Promise[java.lang.String]) = this()
+    def this(path: js.Promise[java.lang.String]) = this()
   }
   
   @js.native
   class RemoteArchive protected ()
     extends atPulumiPulumiLib.assetMod.RemoteArchive {
     def this(uri: java.lang.String) = this()
-    def this(uri: stdLib.Promise[java.lang.String]) = this()
+    def this(uri: js.Promise[java.lang.String]) = this()
   }
   
   @js.native
   class RemoteAsset protected ()
     extends atPulumiPulumiLib.assetMod.RemoteAsset {
     def this(uri: java.lang.String) = this()
-    def this(uri: stdLib.Promise[java.lang.String]) = this()
+    def this(uri: js.Promise[java.lang.String]) = this()
   }
   
   @js.native
   class StringAsset protected ()
     extends atPulumiPulumiLib.assetMod.StringAsset {
     def this(text: java.lang.String) = this()
-    def this(text: stdLib.Promise[java.lang.String]) = this()
+    def this(text: js.Promise[java.lang.String]) = this()
   }
   
   @js.native

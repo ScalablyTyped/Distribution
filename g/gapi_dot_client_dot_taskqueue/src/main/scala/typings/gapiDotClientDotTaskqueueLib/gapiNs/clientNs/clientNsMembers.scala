@@ -14,7 +14,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotTaskqueueLib.gapiDotClientDotTaskqueueLibStrings.taskqueue,
     version: gapiDotClientDotTaskqueueLib.gapiDotClientDotTaskqueueLibStrings.v1beta2
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotTaskqueueLib.gapiDotClientDotTaskqueueLibStrings.taskqueue,
     version: gapiDotClientDotTaskqueueLib.gapiDotClientDotTaskqueueLibStrings.v1beta2,

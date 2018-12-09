@@ -460,7 +460,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * Whether PSTN calling is enabled.
          */
-    var PSTNEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var PSTNEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of a room profile.
          */
@@ -468,7 +468,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * Whether room profile setup is enabled.
          */
-    var SetupModeDisabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The temperature unit to be used by devices in the profile.
          */
@@ -1371,7 +1371,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * Retrieves if the profile is default or not.
          */
-    var IsDefault: js.UndefOr[scala.Boolean] = js.undefined
+    var IsDefault: js.UndefOr[Boolean] = js.undefined
     /**
          * The max volume limit of a room profile.
          */
@@ -1379,7 +1379,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * The PSTN setting of a room profile.
          */
-    var PSTNEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var PSTNEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The ARN of a room profile.
          */
@@ -1391,7 +1391,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * The setup mode of a room profile.
          */
-    var SetupModeDisabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The temperature unit of a room profile.
          */
@@ -1419,7 +1419,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * Retrieves if the profile data is default or not.
          */
-    var IsDefault: js.UndefOr[scala.Boolean] = js.undefined
+    var IsDefault: js.UndefOr[Boolean] = js.undefined
     /**
          * The ARN of a room profile.
          */
@@ -4388,7 +4388,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * Sets the profile as default if selected. If this is missing, no update is done to the default status.
          */
-    var IsDefault: js.UndefOr[scala.Boolean] = js.undefined
+    var IsDefault: js.UndefOr[Boolean] = js.undefined
     /**
          * The updated maximum volume limit for the room profile.
          */
@@ -4396,7 +4396,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * Whether the PSTN setting of the room profile is enabled.
          */
-    var PSTNEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var PSTNEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The ARN of the room profile to update. Required.
          */
@@ -4408,7 +4408,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * Whether the setup mode of the profile is enabled.
          */
-    var SetupModeDisabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The updated temperature unit for the room profile.
          */

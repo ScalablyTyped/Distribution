@@ -153,7 +153,7 @@ class Program () extends js.Object {
        * method.
        * @param args The arguments that will be parsed to run the method.
        */
-  def run(json: stdLib.JSON): stdLib.Promise[scala.Unit] = js.native
+  def run(json: stdLib.JSON): js.Promise[scala.Unit] = js.native
 }
 
 @JSImport("webdriver-manager/built/lib/cli/programs", "Program")

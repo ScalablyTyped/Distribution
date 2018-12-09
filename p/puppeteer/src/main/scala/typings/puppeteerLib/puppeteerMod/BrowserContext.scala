@@ -14,16 +14,16 @@ trait BrowserContext
   /**
      * Clears all permission overrides for the browser context.
      */
-  def clearPermissionOverrides(): stdLib.Promise[scala.Unit] = js.native
+  def clearPermissionOverrides(): js.Promise[scala.Unit] = js.native
   /** Closes the browser context. All the targets that belong to the browser context will be closed. */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   /**
      * Returns whether BrowserContext is incognito.
      * The default browser context is the only non-incognito browser context.
      */
   def isIncognito(): scala.Boolean = js.native
   /** Creates a new page in the browser context. */
-  def newPage(): stdLib.Promise[Page] = js.native
+  def newPage(): js.Promise[Page] = js.native
   /**
      * Adds the listener function to the end of the listeners array for the event named `eventName`.
      * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
@@ -99,9 +99,9 @@ trait BrowserContext
      * @param permissions An array of permissions to grant.
      * All permissions that are not listed here will be automatically denied.
      */
-  def overridePermissions(origin: java.lang.String, permissions: js.Array[Permission]): stdLib.Promise[scala.Unit] = js.native
+  def overridePermissions(origin: java.lang.String, permissions: js.Array[Permission]): js.Promise[scala.Unit] = js.native
   /** Promise which resolves to an array of all open pages. */
-  def pages(): stdLib.Promise[js.Array[Page]] = js.native
+  def pages(): js.Promise[js.Array[Page]] = js.native
   /** An array of all active targets inside the browser context. */
   def targets(): js.Array[Target] = js.native
 }

@@ -117,7 +117,7 @@ object SceneLoader extends js.Object {
            * @param pluginExtension the extension used to determine the plugin
            * @returns The given scene
            */
-  def AppendAsync(rootUrl: java.lang.String): stdLib.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
+  def AppendAsync(rootUrl: java.lang.String): js.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
   /**
            * Append a scene
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -127,7 +127,7 @@ object SceneLoader extends js.Object {
            * @param pluginExtension the extension used to determine the plugin
            * @returns The given scene
            */
-  def AppendAsync(rootUrl: java.lang.String, sceneFilename: java.lang.String): stdLib.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
+  def AppendAsync(rootUrl: java.lang.String, sceneFilename: java.lang.String): js.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
   /**
            * Append a scene
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -141,7 +141,7 @@ object SceneLoader extends js.Object {
     rootUrl: java.lang.String,
     sceneFilename: java.lang.String,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
-  ): stdLib.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
+  ): js.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
   /**
            * Append a scene
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -158,7 +158,7 @@ object SceneLoader extends js.Object {
     onProgress: babylonjsLib.BABYLONNs.Nullable[
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ]
-  ): stdLib.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
+  ): js.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
   /**
            * Append a scene
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -176,7 +176,7 @@ object SceneLoader extends js.Object {
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ],
     pluginExtension: babylonjsLib.BABYLONNs.Nullable[java.lang.String]
-  ): stdLib.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
+  ): js.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
   /**
            * Gets a plugin that can load the given extension
            * @param extension defines the extension to load
@@ -240,7 +240,7 @@ object SceneLoader extends js.Object {
            * @param pluginExtension the extension used to determine the plugin
            * @returns The loaded list of imported meshes, particle systems, skeletons, and animation groups
            */
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: java.lang.String): stdLib.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  def ImportMeshAsync(meshNames: js.Any, rootUrl: java.lang.String): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
   /**
            * Import meshes into a scene
            * @param meshNames an array of mesh names, a single mesh name, or empty string for all meshes that filter what meshes are imported
@@ -251,7 +251,7 @@ object SceneLoader extends js.Object {
            * @param pluginExtension the extension used to determine the plugin
            * @returns The loaded list of imported meshes, particle systems, skeletons, and animation groups
            */
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: java.lang.String, sceneFilename: java.lang.String): stdLib.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  def ImportMeshAsync(meshNames: js.Any, rootUrl: java.lang.String, sceneFilename: java.lang.String): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
   /**
            * Import meshes into a scene
            * @param meshNames an array of mesh names, a single mesh name, or empty string for all meshes that filter what meshes are imported
@@ -267,7 +267,7 @@ object SceneLoader extends js.Object {
     rootUrl: java.lang.String,
     sceneFilename: java.lang.String,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
-  ): stdLib.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
   /**
            * Import meshes into a scene
            * @param meshNames an array of mesh names, a single mesh name, or empty string for all meshes that filter what meshes are imported
@@ -286,7 +286,7 @@ object SceneLoader extends js.Object {
     onProgress: babylonjsLib.BABYLONNs.Nullable[
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ]
-  ): stdLib.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
   /**
            * Import meshes into a scene
            * @param meshNames an array of mesh names, a single mesh name, or empty string for all meshes that filter what meshes are imported
@@ -306,7 +306,7 @@ object SceneLoader extends js.Object {
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ],
     pluginExtension: babylonjsLib.BABYLONNs.Nullable[java.lang.String]
-  ): stdLib.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
   /**
            * Gets a boolean indicating that the given extension can be loaded
            * @param extension defines the extension to load
@@ -475,7 +475,7 @@ object SceneLoader extends js.Object {
            * @param pluginExtension the extension used to determine the plugin
            * @returns The loaded asset container
            */
-  def LoadAssetContainerAsync(rootUrl: java.lang.String): stdLib.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
+  def LoadAssetContainerAsync(rootUrl: java.lang.String): js.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
   /**
            * Load a scene into an asset container
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -485,7 +485,7 @@ object SceneLoader extends js.Object {
            * @param pluginExtension the extension used to determine the plugin
            * @returns The loaded asset container
            */
-  def LoadAssetContainerAsync(rootUrl: java.lang.String, sceneFilename: java.lang.String): stdLib.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
+  def LoadAssetContainerAsync(rootUrl: java.lang.String, sceneFilename: java.lang.String): js.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
   /**
            * Load a scene into an asset container
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -499,7 +499,7 @@ object SceneLoader extends js.Object {
     rootUrl: java.lang.String,
     sceneFilename: java.lang.String,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
-  ): stdLib.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
+  ): js.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
   /**
            * Load a scene into an asset container
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -516,7 +516,7 @@ object SceneLoader extends js.Object {
     onProgress: babylonjsLib.BABYLONNs.Nullable[
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ]
-  ): stdLib.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
+  ): js.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
   /**
            * Load a scene into an asset container
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -534,7 +534,7 @@ object SceneLoader extends js.Object {
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ],
     pluginExtension: babylonjsLib.BABYLONNs.Nullable[java.lang.String]
-  ): stdLib.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
+  ): js.Promise[babylonjsLib.BABYLONNs.AssetContainer] = js.native
   /**
            * Load a scene
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -544,7 +544,7 @@ object SceneLoader extends js.Object {
            * @param pluginExtension the extension used to determine the plugin
            * @returns The loaded scene
            */
-  def LoadAsync(rootUrl: java.lang.String, sceneFilename: java.lang.String, engine: babylonjsLib.BABYLONNs.Engine): stdLib.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
+  def LoadAsync(rootUrl: java.lang.String, sceneFilename: java.lang.String, engine: babylonjsLib.BABYLONNs.Engine): js.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
   /**
            * Load a scene
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -561,7 +561,7 @@ object SceneLoader extends js.Object {
     onProgress: babylonjsLib.BABYLONNs.Nullable[
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ]
-  ): stdLib.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
+  ): js.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
   /**
            * Load a scene
            * @param rootUrl a string that defines the root url for the scene and resources or the concatenation of rootURL and filename (e.g. http://example.com/test.glb)
@@ -579,7 +579,7 @@ object SceneLoader extends js.Object {
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ],
     pluginExtension: babylonjsLib.BABYLONNs.Nullable[java.lang.String]
-  ): stdLib.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
+  ): js.Promise[babylonjsLib.BABYLONNs.Scene] = js.native
   /**
            * Adds a new plugin to the list of registered plugins
            * @param plugin defines the plugin to add

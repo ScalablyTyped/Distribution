@@ -12,7 +12,7 @@ class GLViewHeadless ()
   var canvas: js.UndefOr[reactLib.HTMLCanvasElement] = js.native
   var gl: js.UndefOr[reactLib.WebGLRenderingContext] = js.native
   var webglContextAttributes: stdLib.WebGLContextAttributes = js.native
-  def captureAsBlob(): stdLib.Promise[stdLib.Blob] = js.native
+  def captureAsBlob(): js.Promise[stdLib.Blob] = js.native
   def captureAsDataURL(): java.lang.String = js.native
   def onRef(ref: reactLib.HTMLCanvasElement): scala.Unit = js.native
   def simulateContextLost(): scala.Unit = js.native

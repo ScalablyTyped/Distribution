@@ -14,11 +14,11 @@ object SecureStoreNs extends js.Object {
     var keychainService: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  def deleteItemAsync(key: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def deleteItemAsync(key: java.lang.String, options: SecureStoreOptions): stdLib.Promise[scala.Unit] = js.native
-  def getItemAsync(key: java.lang.String): stdLib.Promise[java.lang.String | scala.Null] = js.native
-  def getItemAsync(key: java.lang.String, options: SecureStoreOptions): stdLib.Promise[java.lang.String | scala.Null] = js.native
-  def setItemAsync(key: java.lang.String, value: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def setItemAsync(key: java.lang.String, value: java.lang.String, options: SecureStoreOptions): stdLib.Promise[scala.Unit] = js.native
+  def deleteItemAsync(key: java.lang.String): js.Promise[scala.Unit] = js.native
+  def deleteItemAsync(key: java.lang.String, options: SecureStoreOptions): js.Promise[scala.Unit] = js.native
+  def getItemAsync(key: java.lang.String): js.Promise[java.lang.String | scala.Null] = js.native
+  def getItemAsync(key: java.lang.String, options: SecureStoreOptions): js.Promise[java.lang.String | scala.Null] = js.native
+  def setItemAsync(key: java.lang.String, value: java.lang.String): js.Promise[scala.Unit] = js.native
+  def setItemAsync(key: java.lang.String, value: java.lang.String, options: SecureStoreOptions): js.Promise[scala.Unit] = js.native
 }
 

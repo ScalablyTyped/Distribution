@@ -31,7 +31,7 @@ trait IColumnDefOf[TEntity]
            * in this case your function needs to accept the full set of visible rows,
            * and return a value that should be shown
            */
-  var aggregationType: js.UndefOr[scala.Double | js.Function] = js.undefined
+  var aggregationType: js.UndefOr[scala.Double | angularLib.angularMod.Global.Function] = js.undefined
   /**
            * cellClass can be a string specifying the class to append to a cell
            * or it can be a function(row,rowRenderIndex, col, colRenderIndex)

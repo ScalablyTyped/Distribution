@@ -1170,7 +1170,7 @@ object SecurityHubNs extends js.Object {
     /**
          * Specifies what member accounts the response includes based on their relationship status with the master account. The default value is TRUE. If onlyAssociated is set to TRUE, the response includes member accounts whose relationship status with the master is set to ENABLED or DISABLED. If onlyAssociated is set to FALSE, the response includes all existing member accounts. 
          */
-    var OnlyAssociated: js.UndefOr[scala.Boolean] = js.undefined
+    var OnlyAssociated: js.UndefOr[Boolean] = js.undefined
   }
   
   

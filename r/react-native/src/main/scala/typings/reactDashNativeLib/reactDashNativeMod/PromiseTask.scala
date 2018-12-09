@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait PromiseTask extends js.Object {
-  var gen: js.Function0[stdLib.Promise[_]]
+  var gen: js.Function0[js.Promise[_]]
   var name: java.lang.String
 }
 

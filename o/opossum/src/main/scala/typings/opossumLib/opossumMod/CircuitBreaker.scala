@@ -15,11 +15,11 @@ class CircuitBreaker ()
   def enable(): scala.Unit = js.native
   def fallback(): this.type = js.native
   def fallback(func: js.Function1[/* repeated */js.Any, _]): this.type = js.native
-  def fire(args: js.Any*): stdLib.Promise[_] = js.native
-  def healthCheck(func: js.Function1[/* repeated */js.Any, stdLib.Promise[_]]): stdLib.Promise[_] = js.native
-  def healthCheck(func: js.Function1[/* repeated */js.Any, stdLib.Promise[_]], interval: scala.Double): stdLib.Promise[_] = js.native
+  def fire(args: js.Any*): js.Promise[_] = js.native
+  def healthCheck(func: js.Function1[/* repeated */js.Any, js.Promise[_]]): js.Promise[_] = js.native
+  def healthCheck(func: js.Function1[/* repeated */js.Any, js.Promise[_]], interval: scala.Double): js.Promise[_] = js.native
   def open(): scala.Unit = js.native
-  def promisify(action: Action): stdLib.Promise[Action] = js.native
+  def promisify(action: Action): js.Promise[Action] = js.native
   def stats(): nodeLib.streamMod.Transform = js.native
 }
 

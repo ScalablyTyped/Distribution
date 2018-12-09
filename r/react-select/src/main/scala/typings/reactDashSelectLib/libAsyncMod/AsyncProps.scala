@@ -20,6 +20,6 @@ trait AsyncProps[OptionType] extends js.Object {
   def loadOptions(
     inputValue: java.lang.String,
     callback: js.Function1[/* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType], scala.Unit]
-  ): stdLib.Promise[_] | scala.Unit
+  ): js.Promise[_] | scala.Unit
 }
 

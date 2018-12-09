@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RTCRtpSender extends js.Object {
   def getParameters(): RTCRtpParameters = js.native
-  def replaceTrack(withTrack: MediaStreamTrack): stdLib.Promise[scala.Unit] = js.native
+  def replaceTrack(withTrack: MediaStreamTrack): js.Promise[scala.Unit] = js.native
   //readonly track?: MediaStreamTrack;
   //readonly transport?: RTCDtlsTransport;
   //readonly rtcpTransport?: RTCDtlsTransport;
-  def setParameters(): stdLib.Promise[scala.Unit] = js.native
+  def setParameters(): js.Promise[scala.Unit] = js.native
   //readonly track?: MediaStreamTrack;
   //readonly transport?: RTCDtlsTransport;
   //readonly rtcpTransport?: RTCDtlsTransport;
-  def setParameters(parameters: RTCRtpParameters): stdLib.Promise[scala.Unit] = js.native
+  def setParameters(parameters: RTCRtpParameters): js.Promise[scala.Unit] = js.native
 }
 

@@ -13,7 +13,7 @@ trait ResourceProvider extends js.Object {
        * @param olds The old input properties to use for validation.
        * @param news The new input properties to use for validation.
        */
-  var check: js.UndefOr[js.Function2[/* olds */ js.Any, /* news */ js.Any, stdLib.Promise[CheckResult]]] = js.undefined
+  var check: js.UndefOr[js.Function2[/* olds */ js.Any, /* news */ js.Any, js.Promise[CheckResult]]] = js.undefined
   /**
        * Delete tears down an existing resource with the given ID.  If it fails, the resource is assumed to still exist.
        *
@@ -24,7 +24,7 @@ trait ResourceProvider extends js.Object {
     js.Function2[
       /* id */ atPulumiPulumiLib.resourceMod.ID, 
       /* props */ js.Any, 
-      stdLib.Promise[scala.Unit]
+      js.Promise[scala.Unit]
     ]
   ] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait ResourceProvider extends js.Object {
       /* id */ atPulumiPulumiLib.resourceMod.ID, 
       /* olds */ js.Any, 
       /* news */ js.Any, 
-      stdLib.Promise[DiffResult]
+      js.Promise[DiffResult]
     ]
   ] = js.undefined
   /**
@@ -50,7 +50,7 @@ trait ResourceProvider extends js.Object {
     js.Function2[
       /* id */ atPulumiPulumiLib.resourceMod.ID, 
       /* props */ js.UndefOr[js.Any], 
-      stdLib.Promise[ReadResult]
+      js.Promise[ReadResult]
     ]
   ] = js.undefined
   /**
@@ -65,7 +65,7 @@ trait ResourceProvider extends js.Object {
       /* id */ atPulumiPulumiLib.resourceMod.ID, 
       /* olds */ js.Any, 
       /* news */ js.Any, 
-      stdLib.Promise[UpdateResult]
+      js.Promise[UpdateResult]
     ]
   ] = js.undefined
   /**
@@ -74,6 +74,6 @@ trait ResourceProvider extends js.Object {
        *
        * @param inputs The properties to set during creation.
        */
-  def create(inputs: js.Any): stdLib.Promise[CreateResult]
+  def create(inputs: js.Any): js.Promise[CreateResult]
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class nestedEditable protected ()
   extends ckeditorLib.CKEDITORNs.domNs.element {
-  def this(editor: ckeditorLib.CKEDITORNs.editor, element: ckeditorLib.CKEDITORNs.domNs.element, config: ckeditorLib.Anon_Filter_2048898132) = this()
+  def this(editor: ckeditorLib.CKEDITORNs.editor, element: ckeditorLib.CKEDITORNs.domNs.element, config: ckeditorLib.Anon_FilterOptional) = this()
   val editor: ckeditorLib.CKEDITORNs.editor = js.native
   val enterMode: scala.Double = js.native
   val filter: ckeditorLib.CKEDITORNs.filter = js.native

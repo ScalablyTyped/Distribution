@@ -21,23 +21,23 @@ object runtimeRpcModMembers extends js.Object {
     name: java.lang.String,
     allProps: js.Any
   ): scala.Unit = js.native
-  def serializeProperties(label: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs): stdLib.Promise[stdLib.Record[java.lang.String, _]] = js.native
+  def serializeProperties(label: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def serializeProperties(
     label: java.lang.String,
     props: atPulumiPulumiLib.resourceMod.Inputs,
     dependentResources: js.Array[atPulumiPulumiLib.resourceMod.Resource]
-  ): stdLib.Promise[stdLib.Record[java.lang.String, _]] = js.native
+  ): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def serializeProperty(
     ctx: java.lang.String,
     prop: atPulumiPulumiLib.resourceMod.Input[_],
     dependentResources: js.Array[atPulumiPulumiLib.resourceMod.Resource]
-  ): stdLib.Promise[_] = js.native
-  def serializeResourceProperties(label: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs): stdLib.Promise[stdLib.Record[java.lang.String, _]] = js.native
+  ): js.Promise[_] = js.native
+  def serializeResourceProperties(label: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def serializeResourceProperties(
     label: java.lang.String,
     props: atPulumiPulumiLib.resourceMod.Inputs,
     dependentResources: js.Array[atPulumiPulumiLib.resourceMod.Resource]
-  ): stdLib.Promise[stdLib.Record[java.lang.String, _]] = js.native
+  ): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def transferProperties(
     onto: atPulumiPulumiLib.resourceMod.Resource,
     label: java.lang.String,

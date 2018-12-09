@@ -109,9 +109,9 @@ object geomNs extends js.Object {
        *
        * @api stable
        */
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
-  class Geometry () extends js.Object {
+  @js.native
+  class Geometry ()
+    extends openlayersLib.openlayersMod.Object {
     /**
              * Return the closest point of the geometry to the passed point as
              * {@link ol.Coordinate coordinate}.

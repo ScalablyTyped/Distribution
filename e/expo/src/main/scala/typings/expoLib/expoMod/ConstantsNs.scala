@@ -63,6 +63,6 @@ object ConstantsNs extends js.Object {
   val sessionId: java.lang.String = js.native
   val statusBarHeight: scala.Double = js.native
   val systemFonts: js.Array[java.lang.String] = js.native
-  def getWebViewUserAgentAsync(): stdLib.Promise[java.lang.String] = js.native
+  def getWebViewUserAgentAsync(): js.Promise[java.lang.String] = js.native
 }
 

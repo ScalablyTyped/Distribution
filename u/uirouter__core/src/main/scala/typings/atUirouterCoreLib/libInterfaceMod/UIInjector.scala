@@ -61,10 +61,10 @@ trait UIInjector extends js.Object {
        * @param token the key for the value to get.  May be a string or arbitrary object.
        * @return a Promise for the Dependency Injection value that matches the token
        */
-  def getAsync(token: js.Any): stdLib.Promise[_] = js.native
+  def getAsync(token: js.Any): js.Promise[_] = js.native
   /** Asynchronously gets a value as type `T` (generics parameter) */
   @JSName("getAsync")
-  def getAsync_T[T](token: js.Any): stdLib.Promise[T] = js.native
+  def getAsync_T[T](token: js.Any): js.Promise[T] = js.native
   /**
        * Gets a value from the native injector
        *

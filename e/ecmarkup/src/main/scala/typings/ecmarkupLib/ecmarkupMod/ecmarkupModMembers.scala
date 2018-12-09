@@ -13,27 +13,27 @@ object ecmarkupModMembers extends js.Object {
     fetch: js.Function2[
       /* path */ java.lang.String, 
       /* token */ prexLib.prexMod.CancellationToken, 
-      stdLib.PromiseLike[java.lang.String]
+      js.Thenable[java.lang.String]
     ]
-  ): stdLib.Promise[ecmarkupLib.libSpecMod.Spec] = js.native
+  ): js.Promise[ecmarkupLib.libSpecMod.Spec] = js.native
   def build(
     path: java.lang.String,
     fetch: js.Function2[
       /* path */ java.lang.String, 
       /* token */ prexLib.prexMod.CancellationToken, 
-      stdLib.PromiseLike[java.lang.String]
+      js.Thenable[java.lang.String]
     ],
     opts: Options
-  ): stdLib.Promise[ecmarkupLib.libSpecMod.Spec] = js.native
+  ): js.Promise[ecmarkupLib.libSpecMod.Spec] = js.native
   def build(
     path: java.lang.String,
     fetch: js.Function2[
       /* path */ java.lang.String, 
       /* token */ prexLib.prexMod.CancellationToken, 
-      stdLib.PromiseLike[java.lang.String]
+      js.Thenable[java.lang.String]
     ],
     opts: Options,
     token: prexLib.prexMod.CancellationToken
-  ): stdLib.Promise[ecmarkupLib.libSpecMod.Spec] = js.native
+  ): js.Promise[ecmarkupLib.libSpecMod.Spec] = js.native
 }
 

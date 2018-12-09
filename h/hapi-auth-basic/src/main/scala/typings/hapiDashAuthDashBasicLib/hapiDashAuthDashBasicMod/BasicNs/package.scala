@@ -11,6 +11,6 @@ package object BasicNs {
     /* username */ java.lang.String, 
     /* password */ java.lang.String, 
     /* h */ hapiLib.hapiMod.ResponseToolkit, 
-    stdLib.Promise[ValidateResponse | ValidateCustomResponse]
+    js.Promise[ValidateResponse | ValidateCustomResponse]
   ]
 }

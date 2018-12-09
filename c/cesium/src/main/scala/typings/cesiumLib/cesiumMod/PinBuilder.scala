@@ -12,10 +12,10 @@ class PinBuilder ()
   /* CompleteClass */
   override def fromColor(color: cesiumLib.cesiumMod.CesiumNs.Color, size: scala.Double): stdLib.HTMLCanvasElement = js.native
   /* CompleteClass */
-  override def fromMakiIconId(id: java.lang.String, color: cesiumLib.cesiumMod.CesiumNs.Color, size: scala.Double): stdLib.HTMLCanvasElement | stdLib.Promise[stdLib.HTMLCanvasElement] = js.native
+  override def fromMakiIconId(id: java.lang.String, color: cesiumLib.cesiumMod.CesiumNs.Color, size: scala.Double): stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement] = js.native
   /* CompleteClass */
   override def fromText(text: java.lang.String, color: cesiumLib.cesiumMod.CesiumNs.Color, size: scala.Double): stdLib.HTMLCanvasElement = js.native
   /* CompleteClass */
-  override def fromUrl(url: java.lang.String, color: cesiumLib.cesiumMod.CesiumNs.Color, size: scala.Double): stdLib.HTMLCanvasElement | stdLib.Promise[stdLib.HTMLCanvasElement] = js.native
+  override def fromUrl(url: java.lang.String, color: cesiumLib.cesiumMod.CesiumNs.Color, size: scala.Double): stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement] = js.native
 }
 

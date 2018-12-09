@@ -600,9 +600,9 @@ object sourceNs extends js.Object {
        * @param options Source options.
        * @api stable
        */
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
-  class Source protected () extends js.Object {
+  @js.native
+  class Source protected ()
+    extends openlayersLib.openlayersMod.Object {
     /**
              * @classdesc
              * Abstract base class; normally only used for creating subclasses and not

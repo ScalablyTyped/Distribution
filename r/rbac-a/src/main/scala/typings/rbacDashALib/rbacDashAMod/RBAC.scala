@@ -20,7 +20,7 @@ class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected ()
        * Promise is rejected, it should be considered as if the user has
        * insufficient access to the specified ressources.
        */
-  def check(user: js.Any, permission: java.lang.String): stdLib.Promise[scala.Double] = js.native
+  def check(user: js.Any, permission: java.lang.String): js.Promise[scala.Double] = js.native
   /**
        * Check the user for the given permissions. The method will return
        * a Promise resolving with a number. If the user has sufficient
@@ -29,7 +29,7 @@ class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected ()
        * Promise is rejected, it should be considered as if the user has
        * insufficient access to the specified ressources.
        */
-  def check(user: js.Any, permission: java.lang.String, params: js.Object): stdLib.Promise[scala.Double] = js.native
+  def check(user: js.Any, permission: java.lang.String, params: js.Object): js.Promise[scala.Double] = js.native
   /**
        * Check the user for the given permissions. The method will return
        * a Promise resolving with a number. If the user has sufficient
@@ -38,7 +38,7 @@ class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected ()
        * Promise is rejected, it should be considered as if the user has
        * insufficient access to the specified ressources.
        */
-  def check(user: js.Any, permission: js.Array[java.lang.String]): stdLib.Promise[scala.Double] = js.native
+  def check(user: js.Any, permission: js.Array[java.lang.String]): js.Promise[scala.Double] = js.native
   /**
        * Check the user for the given permissions. The method will return
        * a Promise resolving with a number. If the user has sufficient
@@ -47,6 +47,6 @@ class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected ()
        * Promise is rejected, it should be considered as if the user has
        * insufficient access to the specified ressources.
        */
-  def check(user: js.Any, permission: js.Array[java.lang.String], params: js.Object): stdLib.Promise[scala.Double] = js.native
+  def check(user: js.Any, permission: js.Array[java.lang.String], params: js.Object): js.Promise[scala.Double] = js.native
 }
 

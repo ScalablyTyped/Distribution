@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ 
-trait DTMF extends js.Object {
+
+trait DTMF
+  extends stdLib.Object {
   var direction: java.lang.String | sipDotJsLib.sipDotJsLibStrings.incoming
   var tone: js.Any
 }

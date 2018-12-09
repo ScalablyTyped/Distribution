@@ -33,7 +33,7 @@ class ResourceDescription protected () extends js.Object {
       * @param loadContext The loading context used for loading all resources and dependencies.
       * @return A promise that resolves when all loading is complete.
       */
-  def load(container: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  def load(container: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
       * Loads any dependencies of the resource.
       * @param container The DI container to use during dependency resolution.
@@ -43,7 +43,7 @@ class ResourceDescription protected () extends js.Object {
   def load(
     container: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container,
     loadContext: ResourceLoadContext
-  ): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  ): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
       * Registrers the resource with the view resources.
       * @param registry The registry of view resources to regiser within.

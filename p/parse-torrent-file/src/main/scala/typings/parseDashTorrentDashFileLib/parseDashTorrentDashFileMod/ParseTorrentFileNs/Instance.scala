@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ 
-trait Instance extends js.Object {
+
+trait Instance
+  extends stdLib.Object {
   var announce: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var created: js.UndefOr[stdLib.Date] = js.undefined
   var createdBy: js.UndefOr[java.lang.String] = js.undefined

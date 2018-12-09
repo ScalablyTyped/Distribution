@@ -49,11 +49,11 @@ trait ChannelWrapper
   	 * Setup functions should, ideally, not throw errors, but if they do then the ChannelWrapper will emit an 'error' event.
   	 * @param func
   	 */
-  def addSetup(func: SetupFunc): stdLib.Promise[scala.Unit] = js.native
+  def addSetup(func: SetupFunc): js.Promise[scala.Unit] = js.native
   /**
   	 * Close a channel, clean up resources associated with it.
   	 */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   /**
   	 * @see amqplib
   	 * @param message
@@ -159,7 +159,7 @@ trait ChannelWrapper
   	 * @param options
   	 * @param callback
   	 */
-  def publish(exchange: java.lang.String, routingKey: java.lang.String, content: nodeLib.Buffer): stdLib.Promise[scala.Unit] = js.native
+  def publish(exchange: java.lang.String, routingKey: java.lang.String, content: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
   /**
   	 * @see amqplib
   	 * @param exchange
@@ -173,7 +173,7 @@ trait ChannelWrapper
     routingKey: java.lang.String,
     content: nodeLib.Buffer,
     options: amqplibLib.propertiesMod.OptionsNs.Publish
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
   	 * @see amqplib
   	 * @param exchange
@@ -188,7 +188,7 @@ trait ChannelWrapper
     content: nodeLib.Buffer,
     options: amqplibLib.propertiesMod.OptionsNs.Publish,
     callback: js.Function2[/* err */ js.Any, /* ok */ amqplibLib.propertiesMod.RepliesNs.Empty, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
   	 * Returns a count of messages currently waiting to be sent to the underlying channel.
   	 */
@@ -200,7 +200,7 @@ trait ChannelWrapper
        * @param func
        * @param [tearDown]
        */
-  def removeSetup(func: SetupFunc): stdLib.Promise[scala.Unit] = js.native
+  def removeSetup(func: SetupFunc): js.Promise[scala.Unit] = js.native
   /**
        * Remove a setup function added with `addSetup`.  If there is currently a
        * connection, `teardown(channel, [cb])` will be run immediately, and the
@@ -208,7 +208,7 @@ trait ChannelWrapper
        * @param func
        * @param [tearDown]
        */
-  def removeSetup(func: SetupFunc, tearDown: SetupFunc): stdLib.Promise[scala.Unit] = js.native
+  def removeSetup(func: SetupFunc, tearDown: SetupFunc): js.Promise[scala.Unit] = js.native
   /**
   	 * @see amqplib
   	 * @param queue
@@ -216,7 +216,7 @@ trait ChannelWrapper
   	 * @param options
   	 * @param callback
   	 */
-  def sendToQueue(queue: java.lang.String, content: nodeLib.Buffer): stdLib.Promise[scala.Unit] = js.native
+  def sendToQueue(queue: java.lang.String, content: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
   /**
   	 * @see amqplib
   	 * @param queue
@@ -228,7 +228,7 @@ trait ChannelWrapper
     queue: java.lang.String,
     content: nodeLib.Buffer,
     options: amqplibLib.propertiesMod.OptionsNs.Publish
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
   	 * @see amqplib
   	 * @param queue
@@ -241,6 +241,6 @@ trait ChannelWrapper
     content: nodeLib.Buffer,
     options: amqplibLib.propertiesMod.OptionsNs.Publish,
     callback: js.Function2[/* err */ js.Any, /* ok */ amqplibLib.propertiesMod.RepliesNs.Empty, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

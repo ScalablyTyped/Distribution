@@ -13,7 +13,7 @@ package object graphqlDashRelayMod {
     /* object */ js.Any, 
     /* ctx */ js.Any, 
     /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
-    stdLib.Promise[js.Any] | js.Any
+    js.Promise[js.Any] | js.Any
   ]
-  type typeResolverFn = (js.Function1[/* any */ js.Any, graphqlLib.graphqlMod.GraphQLObjectType]) | (js.Function1[/* any */ js.Any, stdLib.Promise[graphqlLib.graphqlMod.GraphQLObjectType]])
+  type typeResolverFn = (js.Function1[/* any */ js.Any, graphqlLib.graphqlMod.GraphQLObjectType]) | (js.Function1[/* any */ js.Any, js.Promise[graphqlLib.graphqlMod.GraphQLObjectType]])
 }

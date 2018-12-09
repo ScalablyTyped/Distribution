@@ -29,7 +29,7 @@ object RekognitionNs extends js.Object {
     /**
          * Boolean value that indicates whether the face has beard or not.
          */
-    var Value: js.UndefOr[scala.Boolean] = js.undefined
+    var Value: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -69,7 +69,7 @@ object RekognitionNs extends js.Object {
     /**
          * The name of the celebrity.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * An array of URLs pointing to additional information about the celebrity. If there is no additional information about the celebrity, this list is empty.
          */
@@ -97,7 +97,7 @@ object RekognitionNs extends js.Object {
     /**
          * The name of the celebrity.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * An array of URLs pointing to additional celebrity information. 
          */
@@ -237,11 +237,11 @@ object RekognitionNs extends js.Object {
     /**
          * Amazon Resource Name (ARN) of the collection. You can use this to manage permissions on your resources. 
          */
-    var CollectionArn: js.UndefOr[java.lang.String] = js.undefined
+    var CollectionArn: js.UndefOr[String] = js.undefined
     /**
          * Version number of the face detection model associated with the collection you are creating.
          */
-    var FaceModelVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FaceModelVersion: js.UndefOr[String] = js.undefined
     /**
          * HTTP status code indicating the result of the operation.
          */
@@ -340,7 +340,7 @@ object RekognitionNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the collection.
          */
-    var CollectionARN: js.UndefOr[java.lang.String] = js.undefined
+    var CollectionARN: js.UndefOr[String] = js.undefined
     /**
          * The number of milliseconds since the Unix epoch time until the creation of the collection. The Unix epoch time is 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970.
          */
@@ -352,7 +352,7 @@ object RekognitionNs extends js.Object {
     /**
          * The version of the face model that's used by the collection for face detection. For more information, see Model Versioning in the Amazon Rekognition Developer Guide.
          */
-    var FaceModelVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FaceModelVersion: js.UndefOr[String] = js.undefined
   }
   
   
@@ -400,7 +400,7 @@ object RekognitionNs extends js.Object {
     /**
          * Detailed status message about the stream processor.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
     /**
          * ARN of the stream processor.
          */
@@ -452,7 +452,7 @@ object RekognitionNs extends js.Object {
     /**
          * Version number of the label detection model that was used to detect labels.
          */
-    var LabelModelVersion: js.UndefOr[java.lang.String] = js.undefined
+    var LabelModelVersion: js.UndefOr[String] = js.undefined
     /**
          * An array of labels for the real-world objects detected. 
          */
@@ -520,7 +520,7 @@ object RekognitionNs extends js.Object {
     /**
          * Boolean value that indicates whether the eyes on the face are open.
          */
-    var Value: js.UndefOr[scala.Boolean] = js.undefined
+    var Value: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -532,7 +532,7 @@ object RekognitionNs extends js.Object {
     /**
          * Boolean value that indicates whether the face is wearing eye glasses or not.
          */
-    var Value: js.UndefOr[scala.Boolean] = js.undefined
+    var Value: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -708,7 +708,7 @@ object RekognitionNs extends js.Object {
     /**
          * The name of the celebrity.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * An array of URLs pointing to additional celebrity information. 
          */
@@ -1032,7 +1032,7 @@ object RekognitionNs extends js.Object {
     /**
          * The version number of the face detection model that's associated with the input collection (CollectionId).
          */
-    var FaceModelVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FaceModelVersion: js.UndefOr[String] = js.undefined
     /**
          * An array of faces detected and added to the collection. For more information, see Searching Faces in a Collection in the Amazon Rekognition Developer Guide. 
          */
@@ -1088,7 +1088,7 @@ object RekognitionNs extends js.Object {
     /**
          * The name (label) of the object or scene.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The parent labels for a label. The response includes all ancestor labels.  Amazon Rekognition Video does not support a hierarchical taxonomy of detected labels. The value of Parents is returned as null by GetLabelDetection. 
          */
@@ -1172,7 +1172,7 @@ object RekognitionNs extends js.Object {
     /**
          * Version number of the face detection model associated with the input collection (CollectionId).
          */
-    var FaceModelVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FaceModelVersion: js.UndefOr[String] = js.undefined
     /**
          * An array of Face objects. 
          */
@@ -1180,7 +1180,7 @@ object RekognitionNs extends js.Object {
     /**
          * If the response is truncated, Amazon Rekognition returns this token that you can use in the subsequent request to retrieve the next set of faces.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1216,11 +1216,11 @@ object RekognitionNs extends js.Object {
     /**
          * The label name for the type of content detected in the image.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The name for the parent label. Labels at the top level of the hierarchy have the parent label "".
          */
-    var ParentName: js.UndefOr[java.lang.String] = js.undefined
+    var ParentName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1232,7 +1232,7 @@ object RekognitionNs extends js.Object {
     /**
          * Boolean value that indicates whether the mouth on the face is open or not.
          */
-    var Value: js.UndefOr[scala.Boolean] = js.undefined
+    var Value: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1244,7 +1244,7 @@ object RekognitionNs extends js.Object {
     /**
          * Boolean value that indicates whether the face has mustache or not.
          */
-    var Value: js.UndefOr[scala.Boolean] = js.undefined
+    var Value: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1264,7 +1264,7 @@ object RekognitionNs extends js.Object {
     /**
          * The name of the parent label.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1408,7 +1408,7 @@ object RekognitionNs extends js.Object {
     /**
          * Version number of the face detection model associated with the input collection (CollectionId).
          */
-    var FaceModelVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FaceModelVersion: js.UndefOr[String] = js.undefined
     /**
          * The bounding box around the face in the input image that Amazon Rekognition used for the search.
          */
@@ -1448,7 +1448,7 @@ object RekognitionNs extends js.Object {
     /**
          * Version number of the face detection model associated with the input collection (CollectionId).
          */
-    var FaceModelVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FaceModelVersion: js.UndefOr[String] = js.undefined
     /**
          * ID of the face that was searched for matches in a collection.
          */
@@ -1464,7 +1464,7 @@ object RekognitionNs extends js.Object {
     /**
          * Boolean value that indicates whether the face is smiling or not.
          */
-    var Value: js.UndefOr[scala.Boolean] = js.undefined
+    var Value: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1722,7 +1722,7 @@ object RekognitionNs extends js.Object {
     /**
          * Boolean value that indicates whether the face is wearing sunglasses or not.
          */
-    var Value: js.UndefOr[scala.Boolean] = js.undefined
+    var Value: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1734,7 +1734,7 @@ object RekognitionNs extends js.Object {
     /**
          * The word or line of text recognized by Amazon Rekognition. 
          */
-    var DetectedText: js.UndefOr[java.lang.String] = js.undefined
+    var DetectedText: js.UndefOr[String] = js.undefined
     /**
          * The location of the detected text on the image. Includes an axis aligned coarse bounding box surrounding the text and a finer grain polygon for more accurate spatial information.
          */
@@ -2771,7 +2771,7 @@ object RekognitionNs extends js.Object {
     /**
          * Type of compression used in the analyzed video. 
          */
-    var Codec: js.UndefOr[java.lang.String] = js.undefined
+    var Codec: js.UndefOr[String] = js.undefined
     /**
          * Length of the video in milliseconds.
          */
@@ -2779,7 +2779,7 @@ object RekognitionNs extends js.Object {
     /**
          * Format of the analyzed video. Possible values are MP4, MOV and AVI. 
          */
-    var Format: js.UndefOr[java.lang.String] = js.undefined
+    var Format: js.UndefOr[String] = js.undefined
     /**
          * Vertical pixel dimension of the video.
          */
@@ -2822,7 +2822,7 @@ object RekognitionNs extends js.Object {
   type FaceIdList = js.Array[FaceId]
   type FaceList = js.Array[Face]
   type FaceMatchList = js.Array[FaceMatch]
-  type FaceModelVersionList = js.Array[java.lang.String]
+  type FaceModelVersionList = js.Array[String]
   type FaceRecordList = js.Array[FaceRecord]
   type FaceSearchSortBy = awsDashSdkLib.awsDashSdkLibStrings.INDEX | awsDashSdkLib.awsDashSdkLibStrings.TIMESTAMP | java.lang.String
   type Float = scala.Double

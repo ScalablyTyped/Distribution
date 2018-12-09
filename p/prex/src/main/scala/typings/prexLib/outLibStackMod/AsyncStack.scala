@@ -13,7 +13,7 @@ class AsyncStack[T] () extends js.Object {
        *
        * @param iterable An optional iterable of values or promises.
        */
-  def this(iterable: stdLib.Iterable[T | stdLib.PromiseLike[T]]) = this()
+  def this(iterable: stdLib.Iterable[T | js.Thenable[T]]) = this()
   var _available: js.Any = js.native
   var _pending: js.Any = js.native
   /**
@@ -26,7 +26,7 @@ class AsyncStack[T] () extends js.Object {
        * Removes and returns a Promise for the top value of the stack. If the stack is empty,
        * returns a Promise for the next value to be pushed on to the stack.
        */
-  def pop(): stdLib.Promise[T] = js.native
+  def pop(): js.Promise[T] = js.native
   /**
        * Adds a value to the top of the stack. If the stack is empty but has a pending
        * pop request, the value will be popped and the request fulfilled.
@@ -40,6 +40,6 @@ class AsyncStack[T] () extends js.Object {
        *
        * @param value A value or promise to add to the stack.
        */
-  def push(value: stdLib.PromiseLike[T]): scala.Unit = js.native
+  def push(value: js.Thenable[T]): scala.Unit = js.native
 }
 

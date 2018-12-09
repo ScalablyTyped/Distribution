@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Boolean */ 
-trait WebglextensionsBoolean extends js.Object {
+
+trait WebglextensionsBoolean
+  extends stdLib.Boolean {
   var ANGLE_instanced_arrays: scala.Boolean
   var EXT_blend_minmax: scala.Boolean
   var EXT_disjoint_timer_query: scala.Boolean

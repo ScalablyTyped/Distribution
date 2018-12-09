@@ -15,12 +15,12 @@ trait Matchers[R] extends js.Object {
            * Unwraps the reason of a rejected promise so any other matcher can be chained.
            * If the promise is fulfilled the assertion fails.
            */
-  var rejects: Matchers[stdLib.Promise[R]] = js.native
+  var rejects: Matchers[js.Promise[R]] = js.native
   /**
            * Use resolves to unwrap the value of a fulfilled promise so any other
            * matcher can be chained. If the promise is rejected the assertion fails.
            */
-  var resolves: Matchers[stdLib.Promise[R]] = js.native
+  var resolves: Matchers[js.Promise[R]] = js.native
   /**
            * Ensures the last call to a mock function was provided specific args.
            */

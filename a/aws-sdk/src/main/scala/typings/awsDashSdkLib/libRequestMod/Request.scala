@@ -1000,7 +1000,7 @@ class Request[D, E] protected () extends js.Object {
   /**
        * Returns a 'thenable' promise.
        */
-  def promise(): stdLib.Promise[PromiseResult[D, E]] = js.native
+  def promise(): js.Promise[PromiseResult[D, E]] = js.native
   /**
        * Sends the request object.
        * If a callback is supplied, it is called when a response is returned from the service.

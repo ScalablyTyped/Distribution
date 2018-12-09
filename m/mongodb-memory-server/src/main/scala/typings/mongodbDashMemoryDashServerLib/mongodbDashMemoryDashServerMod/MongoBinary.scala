@@ -20,10 +20,10 @@ class MongoBinary ()
 @js.native
 object MongoBinary extends js.Object {
   var cache: mongodbDashMemoryDashServerLib.mongodbDashMemoryDashServerMod.underscoreMongoBinaryNs.MongoBinaryCache = js.native
-  def getPath(): stdLib.Promise[java.lang.String] = js.native
+  def getPath(): js.Promise[java.lang.String] = js.native
   def getPath(
     opts: mongodbDashMemoryDashServerLib.mongodbDashMemoryDashServerMod.underscoreMongoBinaryNs.MongoBinaryOpts
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   def hasValidBinPath(files: js.Array[java.lang.String]): scala.Boolean = js.native
 }
 

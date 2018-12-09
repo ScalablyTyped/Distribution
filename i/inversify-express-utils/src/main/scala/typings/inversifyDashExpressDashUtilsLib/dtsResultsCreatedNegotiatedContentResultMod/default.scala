@@ -17,6 +17,6 @@ class default[T] protected () extends CreatedNegotiatedContentResult[T] {
   /* CompleteClass */
   override var location: js.Any = js.native
   /* CompleteClass */
-  override def executeAsync(): stdLib.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage] = js.native
+  override def executeAsync(): js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage] = js.native
 }
 

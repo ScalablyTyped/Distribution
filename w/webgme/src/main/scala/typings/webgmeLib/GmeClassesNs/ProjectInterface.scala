@@ -216,7 +216,7 @@ trait ProjectInterface extends js.Object {
            * {@link module:Storage~CommitResult} <b>result</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def createBranch(branchName: webgmeLib.GmeCommonNs.Name, newHash: webgmeLib.GmeStorageNs.CommitHash): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  def createBranch(branchName: webgmeLib.GmeCommonNs.Name, newHash: webgmeLib.GmeStorageNs.CommitHash): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   /**
            * Creates a new branch with head pointing to the provided commit hash.
            * @param {string} branchName - Name of branch to create.
@@ -241,7 +241,7 @@ trait ProjectInterface extends js.Object {
            * @return {external:Promise}  On success the promise will be resolved with nothing.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def createTag(tagName: webgmeLib.GmeCommonNs.Name, commitHash: webgmeLib.GmeStorageNs.CommitHash): stdLib.Promise[scala.Unit] = js.native
+  def createTag(tagName: webgmeLib.GmeCommonNs.Name, commitHash: webgmeLib.GmeStorageNs.CommitHash): js.Promise[scala.Unit] = js.native
   /**
            * Creates a new tag pointing to the provided commit hash.
            * @param {string} tagName - Name of tag to create.
@@ -266,7 +266,7 @@ trait ProjectInterface extends js.Object {
            * {@link module:Storage~CommitResult} <b>result</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def deleteBranch(branchName: webgmeLib.GmeCommonNs.Name, oldHash: webgmeLib.GmeStorageNs.CommitHash): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  def deleteBranch(branchName: webgmeLib.GmeCommonNs.Name, oldHash: webgmeLib.GmeStorageNs.CommitHash): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   /**
            * Deletes the branch.
            * @param {string} branchName - Name of branch to create.
@@ -290,7 +290,7 @@ trait ProjectInterface extends js.Object {
            * @return {external:Promise}  On success the promise will be resolved with nothing.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def deleteTag(tagName: webgmeLib.GmeCommonNs.Name): stdLib.Promise[scala.Unit] = js.native
+  def deleteTag(tagName: webgmeLib.GmeCommonNs.Name): js.Promise[scala.Unit] = js.native
   /**
            * Deletes the given tag.
            * @param {string} tagName - Name of tag to delete.
@@ -309,7 +309,7 @@ trait ProjectInterface extends js.Object {
            * {module:Storage~CommitHash} <b>branchHash</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def getBranchHash(branchName: webgmeLib.GmeCommonNs.Name): stdLib.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
+  def getBranchHash(branchName: webgmeLib.GmeCommonNs.Name): js.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
   /**
            * Retrieves the commit hash for the head of the branch.
            * @param {string} branchName - Name of branch.
@@ -331,7 +331,7 @@ trait ProjectInterface extends js.Object {
            * Object.<string, {@link module:Storage~CommitHash}> <b>result</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def getBranches(): stdLib.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
+  def getBranches(): js.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
   /**
            * Retrieves all branches and their current heads within the project.
            * @param {function} [callback] - if provided no promise will be returned.
@@ -357,7 +357,7 @@ trait ProjectInterface extends js.Object {
            * Array.<{@link module:Storage~CommitObject}> <b>result</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def getCommits(before: scala.Double, number: scala.Double): stdLib.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
+  def getCommits(before: scala.Double, number: scala.Double): js.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
   /**
            * Retrieves and array of the latest (sorted by timestamp) commits for the project.
            * If timestamp is given it will get <b>number</b> of commits strictly <b>before</b>.
@@ -395,7 +395,7 @@ trait ProjectInterface extends js.Object {
            * Array.<{@link module:Storage~CommitObject}> <b>result</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def getCommits(before: webgmeLib.GmeStorageNs.CommitHash, number: scala.Double): stdLib.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
+  def getCommits(before: webgmeLib.GmeStorageNs.CommitHash, number: scala.Double): js.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
   /**
            * Retrieves and array of the latest (sorted by timestamp) commits for the project.
            * If timestamp is given it will get <b>number</b> of commits strictly <b>before</b>.
@@ -428,7 +428,7 @@ trait ProjectInterface extends js.Object {
            * {@link module:Storage~CommitHash} <b>commonCommitHash</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def getCommonAncestorCommit(commitA: webgmeLib.GmeStorageNs.CommitHash, commitB: webgmeLib.GmeStorageNs.CommitHash): stdLib.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
+  def getCommonAncestorCommit(commitA: webgmeLib.GmeStorageNs.CommitHash, commitB: webgmeLib.GmeStorageNs.CommitHash): js.Promise[webgmeLib.GmeStorageNs.CommitHash] = js.native
   /**
            * Retrieves the common ancestor of two commits. If no ancestor exists it will result in an error.
            *
@@ -458,7 +458,7 @@ trait ProjectInterface extends js.Object {
            * Array.<{@link module:Storage~CommitObject}> <b>result</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def getHistory(start: java.lang.String | webgmeLib.GmeStorageNs.CommitHash, number: scala.Double): stdLib.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
+  def getHistory(start: java.lang.String | webgmeLib.GmeStorageNs.CommitHash, number: scala.Double): js.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
   /**
            * Retrieves an array of commits starting from a branch(es) and/or commitHash(es).
            * <br> The result is ordered by the rules (applied in order)
@@ -490,7 +490,7 @@ trait ProjectInterface extends js.Object {
            * Array.<{@link module:Storage~CommitObject}> <b>result</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def getHistory(start: js.Array[java.lang.String], number: scala.Double): stdLib.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
+  def getHistory(start: js.Array[java.lang.String], number: scala.Double): js.Promise[js.Array[webgmeLib.GmeStorageNs.CommitObject]] = js.native
   /**
            * Retrieves an array of commits starting from a branch(es) and/or commitHash(es).
            * <br> The result is ordered by the rules (applied in order)
@@ -517,7 +517,7 @@ trait ProjectInterface extends js.Object {
            * Object.<string, {@link module:Storage~CommitHash}> <b>result</b>.<br>
            * On error the promise will be rejected with {@link Error} <b>error</b>.
            */
-  def getTags(): stdLib.Promise[scala.Unit] = js.native
+  def getTags(): js.Promise[scala.Unit] = js.native
   /**
            * Retrieves all tags and their commits hashes within the project.
            * @param {function} [callback] - if provided no promise will be returned.
@@ -647,7 +647,7 @@ trait ProjectInterface extends js.Object {
     rootHash: webgmeLib.CoreNs.ObjectHash,
     coreObjects: webgmeLib.CoreNs.DataObject,
     msg: java.lang.String
-  ): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  ): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   /**
            * Makes a commit to data base. Based on the root hash and commit message a new
            * {@link module:Storage.CommitObject} (with returned hash)
@@ -723,7 +723,7 @@ trait ProjectInterface extends js.Object {
     branchName: webgmeLib.GmeCommonNs.Name,
     newHash: webgmeLib.GmeStorageNs.CommitHash,
     oldHash: webgmeLib.GmeStorageNs.CommitHash
-  ): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  ): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   /**
            * Updates the head of the branch.
            * @param {string} branchName - Name of branch to update.

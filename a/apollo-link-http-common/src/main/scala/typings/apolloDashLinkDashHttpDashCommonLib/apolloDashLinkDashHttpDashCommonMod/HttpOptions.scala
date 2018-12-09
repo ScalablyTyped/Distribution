@@ -15,10 +15,10 @@ trait HttpOptions extends js.Object {
        * A `fetch`-compatible API to use when making requests.
        */
   var fetch: js.UndefOr[
-    (js.Function1[/* input */ stdLib.RequestInfo, stdLib.Promise[stdLib.Response]]) | (js.Function2[
+    (js.Function1[/* input */ stdLib.RequestInfo, js.Promise[stdLib.Response]]) | (js.Function2[
       /* input */ stdLib.RequestInfo, 
       /* init */ stdLib.RequestInit, 
-      stdLib.Promise[stdLib.Response]
+      js.Promise[stdLib.Response]
     ])
   ] = js.undefined
   /**

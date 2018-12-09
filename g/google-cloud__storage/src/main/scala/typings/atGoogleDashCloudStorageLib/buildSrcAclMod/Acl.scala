@@ -126,7 +126,7 @@ class Acl protected () extends AclRoleAccessorMethods {
        * region_tag:storage_add_bucket_default_owner
        * Example of adding a default owner to a bucket:
        */
-  def add(options: AddAclOptions): stdLib.Promise[AddAclResponse] = js.native
+  def add(options: AddAclOptions): js.Promise[AddAclResponse] = js.native
   def add(options: AddAclOptions, callback: AddAclCallback): scala.Unit = js.native
   /**
        * @typedef {array} RemoveAclResponse
@@ -188,7 +188,7 @@ class Acl protected () extends AclRoleAccessorMethods {
        * region_tag:storage_remove_file_owner
        * Example of removing an owner from a bucket:
        */
-  def delete(options: RemoveAclOptions): stdLib.Promise[RemoveAclResponse] = js.native
+  def delete(options: RemoveAclOptions): js.Promise[RemoveAclResponse] = js.native
   def delete(options: RemoveAclOptions, callback: RemoveAclCallback): scala.Unit = js.native
   /**
        * @typedef {array} GetAclResponse
@@ -273,7 +273,7 @@ class Acl protected () extends AclRoleAccessorMethods {
        * region_tag:storage_print_bucket_acl_for_user
        * Example of printing a bucket's ACL for a specific user:
        */
-  def get(): stdLib.Promise[GetAclResponse] = js.native
+  def get(): js.Promise[GetAclResponse] = js.native
   def get(callback: GetAclCallback): scala.Unit = js.native
   /**
        * @typedef {array} GetAclResponse
@@ -358,7 +358,7 @@ class Acl protected () extends AclRoleAccessorMethods {
        * region_tag:storage_print_bucket_acl_for_user
        * Example of printing a bucket's ACL for a specific user:
        */
-  def get(options: GetAclOptions): stdLib.Promise[GetAclResponse] = js.native
+  def get(options: GetAclOptions): js.Promise[GetAclResponse] = js.native
   def get(options: GetAclOptions, callback: GetAclCallback): scala.Unit = js.native
   /**
        * Transform API responses to a consistent object format.
@@ -438,7 +438,7 @@ class Acl protected () extends AclRoleAccessorMethods {
        *   const apiResponse = data[1];
        * });
        */
-  def update(options: UpdateAclOptions): stdLib.Promise[UpdateAclResponse] = js.native
+  def update(options: UpdateAclOptions): js.Promise[UpdateAclResponse] = js.native
   def update(options: UpdateAclOptions, callback: UpdateAclCallback): scala.Unit = js.native
 }
 

@@ -57,7 +57,7 @@ class RestClient protected () extends js.Object {
        * @param {string} resource - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def create[T](resource: java.lang.String, resources: js.Any): stdLib.Promise[IRestResponse[T]] = js.native
+  def create[T](resource: java.lang.String, resources: js.Any): js.Promise[IRestResponse[T]] = js.native
   /**
        * Creates resource(s) from an endpoint
        * T type of object returned.
@@ -65,49 +65,49 @@ class RestClient protected () extends js.Object {
        * @param {string} resource - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def create[T](resource: java.lang.String, resources: js.Any, options: IRequestOptions): stdLib.Promise[IRestResponse[T]] = js.native
+  def create[T](resource: java.lang.String, resources: js.Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
   /**
        * Deletes a resource from an endpoint
        * Be aware that not found returns a null.  Other error conditions reject the promise
        * @param {string} resource - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def del[T](resource: java.lang.String): stdLib.Promise[IRestResponse[T]] = js.native
+  def del[T](resource: java.lang.String): js.Promise[IRestResponse[T]] = js.native
   /**
        * Deletes a resource from an endpoint
        * Be aware that not found returns a null.  Other error conditions reject the promise
        * @param {string} resource - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def del[T](resource: java.lang.String, options: IRequestOptions): stdLib.Promise[IRestResponse[T]] = js.native
+  def del[T](resource: java.lang.String, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
   /**
        * Gets a resource from an endpoint
        * Be aware that not found returns a null.  Other error conditions reject the promise
        * @param {string} resource - fully qualified url or relative path
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def get[T](resource: java.lang.String): stdLib.Promise[IRestResponse[T]] = js.native
+  def get[T](resource: java.lang.String): js.Promise[IRestResponse[T]] = js.native
   /**
        * Gets a resource from an endpoint
        * Be aware that not found returns a null.  Other error conditions reject the promise
        * @param {string} resource - fully qualified url or relative path
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def get[T](resource: java.lang.String, options: IRequestOptions): stdLib.Promise[IRestResponse[T]] = js.native
+  def get[T](resource: java.lang.String, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
   /**
        * Gets a resource from an endpoint
        * Be aware that not found returns a null.  Other error conditions reject the promise
        * @param {string} requestUrl - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def options[T](requestUrl: java.lang.String): stdLib.Promise[IRestResponse[T]] = js.native
+  def options[T](requestUrl: java.lang.String): js.Promise[IRestResponse[T]] = js.native
   /**
        * Gets a resource from an endpoint
        * Be aware that not found returns a null.  Other error conditions reject the promise
        * @param {string} requestUrl - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def options[T](requestUrl: java.lang.String, options: IRequestOptions): stdLib.Promise[IRestResponse[T]] = js.native
+  def options[T](requestUrl: java.lang.String, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
   /**
        * Replaces resource(s) from an endpoint
        * T type of object returned.
@@ -115,7 +115,7 @@ class RestClient protected () extends js.Object {
        * @param {string} resource - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def replace[T](resource: java.lang.String, resources: js.Any): stdLib.Promise[IRestResponse[T]] = js.native
+  def replace[T](resource: java.lang.String, resources: js.Any): js.Promise[IRestResponse[T]] = js.native
   /**
        * Replaces resource(s) from an endpoint
        * T type of object returned.
@@ -123,7 +123,7 @@ class RestClient protected () extends js.Object {
        * @param {string} resource - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def replace[T](resource: java.lang.String, resources: js.Any, options: IRequestOptions): stdLib.Promise[IRestResponse[T]] = js.native
+  def replace[T](resource: java.lang.String, resources: js.Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
   /**
        * Updates resource(s) from an endpoint
        * T type of object returned.
@@ -131,7 +131,7 @@ class RestClient protected () extends js.Object {
        * @param {string} resource - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def update[T](resource: java.lang.String, resources: js.Any): stdLib.Promise[IRestResponse[T]] = js.native
+  def update[T](resource: java.lang.String, resources: js.Any): js.Promise[IRestResponse[T]] = js.native
   /**
        * Updates resource(s) from an endpoint
        * T type of object returned.
@@ -139,14 +139,14 @@ class RestClient protected () extends js.Object {
        * @param {string} resource - fully qualified or relative url
        * @param {IRequestOptions} requestOptions - (optional) requestOptions object
        */
-  def update[T](resource: java.lang.String, resources: js.Any, options: IRequestOptions): stdLib.Promise[IRestResponse[T]] = js.native
-  def uploadStream[T](verb: java.lang.String, requestUrl: java.lang.String, stream: nodeLib.NodeJSNs.ReadableStream): stdLib.Promise[IRestResponse[T]] = js.native
+  def update[T](resource: java.lang.String, resources: js.Any, options: IRequestOptions): js.Promise[IRestResponse[T]] = js.native
+  def uploadStream[T](verb: java.lang.String, requestUrl: java.lang.String, stream: nodeLib.NodeJSNs.ReadableStream): js.Promise[IRestResponse[T]] = js.native
   def uploadStream[T](
     verb: java.lang.String,
     requestUrl: java.lang.String,
     stream: nodeLib.NodeJSNs.ReadableStream,
     options: IRequestOptions
-  ): stdLib.Promise[IRestResponse[T]] = js.native
+  ): js.Promise[IRestResponse[T]] = js.native
 }
 
 @JSImport("typed-rest-client/RestClient", "RestClient")

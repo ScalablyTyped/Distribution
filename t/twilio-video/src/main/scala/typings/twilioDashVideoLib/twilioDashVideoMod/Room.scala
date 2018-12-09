@@ -17,6 +17,6 @@ class Room ()
   var sid: twilioDashVideoLib.twilioDashVideoMod.RoomNs.SID = js.native
   var state: java.lang.String = js.native
   def disconnect(): Room = js.native
-  def getStats(): stdLib.Promise[js.Array[StatsReport]] = js.native
+  def getStats(): js.Promise[js.Array[StatsReport]] = js.native
 }
 

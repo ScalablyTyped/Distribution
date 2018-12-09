@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("openlayers", "View")
+@JSImport("openlayers", "View")
 @js.native
-class View () extends js.Object {
+class View () extends Object {
   /**
        * @classdesc
        * An ol.View object represents a simple 2D view of the map.

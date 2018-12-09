@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait IndexedSourceMapConsumerConstructor
   extends ScalablyTyped.runtime.Instantiable1[
       (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ java.lang.String), 
-      stdLib.Promise[IndexedSourceMapConsumer]
+      js.Promise[IndexedSourceMapConsumer]
     ]
 

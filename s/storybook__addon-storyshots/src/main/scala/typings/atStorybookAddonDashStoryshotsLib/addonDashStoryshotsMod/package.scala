@@ -10,10 +10,10 @@ package object addonDashStoryshotsMod {
     /* story */ atStorybookReactLib.reactMod.StoryObject, 
     /* context */ StoryContext, 
     /* options */ js.UndefOr[SnapshotOptions], 
-    js.UndefOr[scala.Unit | stdLib.Promise[scala.Unit]]
+    js.UndefOr[scala.Unit | js.Promise[scala.Unit]]
   ]
   type Test = js.Function1[
     /* options */ atStorybookAddonDashStoryshotsLib.Anon_RenderShallowTree, 
-    js.UndefOr[scala.Unit | stdLib.Promise[scala.Unit]]
+    js.UndefOr[scala.Unit | js.Promise[scala.Unit]]
   ]
 }

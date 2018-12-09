@@ -1128,7 +1128,7 @@ object ELBv2Ns extends js.Object {
     /**
          * The priority.
          */
-    var Priority: js.UndefOr[java.lang.String] = js.undefined
+    var Priority: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the rule.
          */

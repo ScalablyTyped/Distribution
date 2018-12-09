@@ -14,7 +14,7 @@ trait RollupSingleFileBuild extends js.Object {
   var imports: js.Array[java.lang.String]
   var modules: js.Array[ModuleJSON]
   var watchFiles: js.Array[java.lang.String]
-  def generate(outputOptions: OutputOptions): stdLib.Promise[OutputChunk]
-  def write(options: OutputOptions): stdLib.Promise[OutputChunk]
+  def generate(outputOptions: OutputOptions): js.Promise[OutputChunk]
+  def write(options: OutputOptions): js.Promise[OutputChunk]
 }
 

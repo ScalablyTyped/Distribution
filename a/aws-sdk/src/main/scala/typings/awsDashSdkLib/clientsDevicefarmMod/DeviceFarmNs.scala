@@ -53,7 +53,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The artifact's file extension.
          */
-    var extension: js.UndefOr[java.lang.String] = js.undefined
+    var extension: js.UndefOr[String] = js.undefined
     /**
          * The artifact's name.
          */
@@ -73,7 +73,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The CPU's architecture, for example x86 or ARM.
          */
-    var architecture: js.UndefOr[java.lang.String] = js.undefined
+    var architecture: js.UndefOr[String] = js.undefined
     /**
          * The clock speed of the device's CPU, expressed in hertz (Hz). For example, a 1.2 GHz CPU is expressed as 1200000000.
          */
@@ -81,7 +81,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The CPU's frequency.
          */
-    var frequency: js.UndefOr[java.lang.String] = js.undefined
+    var frequency: js.UndefOr[String] = js.undefined
   }
   
   
@@ -169,11 +169,11 @@ object DeviceFarmNs extends js.Object {
     /**
          * When set to true, Device Farm will remove app packages after a test run. The default value is false for private devices.
          */
-    var packageCleanup: js.UndefOr[scala.Boolean] = js.undefined
+    var packageCleanup: js.UndefOr[Boolean] = js.undefined
     /**
          * When set to true, Device Farm will reboot the instance after a test run. The default value is true.
          */
-    var rebootAfterUse: js.UndefOr[scala.Boolean] = js.undefined
+    var rebootAfterUse: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -309,7 +309,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * Set to true if you want to access devices remotely for debugging in your remote access session.
          */
-    var remoteDebugEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for the app to be recorded in the remote access session.
          */
@@ -317,11 +317,11 @@ object DeviceFarmNs extends js.Object {
     /**
          * Set to true to enable remote recording for the remote access session.
          */
-    var remoteRecordEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var remoteRecordEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * When set to true, for private devices, Device Farm will not sign your app again. For public devices, Device Farm always signs your apps again and this parameter has no effect. For more information about how Device Farm re-signs your app(s), see Do you modify my app? in the AWS Device Farm FAQs.
          */
-    var skipAppResign: js.UndefOr[scala.Boolean] = js.undefined
+    var skipAppResign: js.UndefOr[Boolean] = js.undefined
     /**
          * The public key of the ssh key pair you want to use for connecting to remote devices in your remote debugging session. This is only required if remoteDebugEnabled is set to true.
          */
@@ -509,7 +509,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The device's carrier.
          */
-    var carrier: js.UndefOr[java.lang.String] = js.undefined
+    var carrier: js.UndefOr[String] = js.undefined
     /**
          * Information about the device's CPU.
          */
@@ -517,11 +517,11 @@ object DeviceFarmNs extends js.Object {
     /**
          * The name of the fleet to which this device belongs.
          */
-    var fleetName: js.UndefOr[java.lang.String] = js.undefined
+    var fleetName: js.UndefOr[String] = js.undefined
     /**
          * The type of fleet to which this device belongs. Possible values for fleet type are PRIVATE and PUBLIC.
          */
-    var fleetType: js.UndefOr[java.lang.String] = js.undefined
+    var fleetType: js.UndefOr[String] = js.undefined
     /**
          * The device's form factor. Allowed values include:   PHONE: The phone form factor.   TABLET: The tablet form factor.  
          */
@@ -533,7 +533,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The device's image name.
          */
-    var image: js.UndefOr[java.lang.String] = js.undefined
+    var image: js.UndefOr[String] = js.undefined
     /**
          * The instances belonging to this device.
          */
@@ -541,7 +541,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The device's manufacturer name.
          */
-    var manufacturer: js.UndefOr[java.lang.String] = js.undefined
+    var manufacturer: js.UndefOr[String] = js.undefined
     /**
          * The device's total memory size, expressed in bytes.
          */
@@ -549,11 +549,11 @@ object DeviceFarmNs extends js.Object {
     /**
          * The device's model name.
          */
-    var model: js.UndefOr[java.lang.String] = js.undefined
+    var model: js.UndefOr[String] = js.undefined
     /**
          * The device's model ID.
          */
-    var modelId: js.UndefOr[java.lang.String] = js.undefined
+    var modelId: js.UndefOr[String] = js.undefined
     /**
          * The device's display name.
          */
@@ -561,7 +561,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The device's operating system type.
          */
-    var os: js.UndefOr[java.lang.String] = js.undefined
+    var os: js.UndefOr[String] = js.undefined
     /**
          * The device's platform. Allowed values include:   ANDROID: The Android platform.   IOS: The iOS platform.  
          */
@@ -569,15 +569,15 @@ object DeviceFarmNs extends js.Object {
     /**
          * The device's radio.
          */
-    var radio: js.UndefOr[java.lang.String] = js.undefined
+    var radio: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether remote access has been enabled for the specified device.
          */
-    var remoteAccessEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var remoteAccessEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * This flag is set to true if remote debugging is enabled for the device.
          */
-    var remoteDebugEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The resolution of the device.
          */
@@ -625,7 +625,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * Unique device identifier for the device instance.
          */
-    var udid: js.UndefOr[java.lang.String] = js.undefined
+    var udid: js.UndefOr[String] = js.undefined
   }
   
   
@@ -673,7 +673,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * Whether the result was compatible with the device pool.
          */
-    var compatible: js.UndefOr[scala.Boolean] = js.undefined
+    var compatible: js.UndefOr[Boolean] = js.undefined
     /**
          * The device (phone or tablet) that you wish to return information about.
          */
@@ -1068,11 +1068,11 @@ object DeviceFarmNs extends js.Object {
     /**
          * When set to true, Device Farm will remove app packages after a test run. The default value is false for private devices.
          */
-    var packageCleanup: js.UndefOr[scala.Boolean] = js.undefined
+    var packageCleanup: js.UndefOr[Boolean] = js.undefined
     /**
          * When set to true, Device Farm will reboot the instance after a test run. The default value is true.
          */
-    var rebootAfterUse: js.UndefOr[scala.Boolean] = js.undefined
+    var rebootAfterUse: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1136,7 +1136,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The endpoint for streaming device video.
          */
-    var videoEndpoint: js.UndefOr[java.lang.String] = js.undefined
+    var videoEndpoint: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1864,19 +1864,19 @@ object DeviceFarmNs extends js.Object {
     /**
          * True if Bluetooth is enabled at the beginning of the test; otherwise, false.
          */
-    var bluetooth: js.UndefOr[scala.Boolean] = js.undefined
+    var bluetooth: js.UndefOr[Boolean] = js.undefined
     /**
          * True if GPS is enabled at the beginning of the test; otherwise, false.
          */
-    var gps: js.UndefOr[scala.Boolean] = js.undefined
+    var gps: js.UndefOr[Boolean] = js.undefined
     /**
          * True if NFC is enabled at the beginning of the test; otherwise, false.
          */
-    var nfc: js.UndefOr[scala.Boolean] = js.undefined
+    var nfc: js.UndefOr[Boolean] = js.undefined
     /**
          * True if Wi-Fi is enabled at the beginning of the test; otherwise, false.
          */
-    var wifi: js.UndefOr[scala.Boolean] = js.undefined
+    var wifi: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1920,11 +1920,11 @@ object DeviceFarmNs extends js.Object {
     /**
          * Unique device identifier for the remote device. Only returned if remote debugging is enabled for the remote access session.
          */
-    var deviceUdid: js.UndefOr[java.lang.String] = js.undefined
+    var deviceUdid: js.UndefOr[String] = js.undefined
     /**
          * The endpoint for the remote access sesssion.
          */
-    var endpoint: js.UndefOr[java.lang.String] = js.undefined
+    var endpoint: js.UndefOr[String] = js.undefined
     /**
          * IP address of the EC2 host where you need to connect to remotely debug devices. Only returned if remote debugging is enabled for the remote access session.
          */
@@ -1948,7 +1948,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * This flag is set to true if remote debugging is enabled for the remote access session.
          */
-    var remoteDebugEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for the app to be recorded in the remote access session.
          */
@@ -1956,7 +1956,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * This flag is set to true if remote recording is enabled for the remote access session.
          */
-    var remoteRecordEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var remoteRecordEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The result of the remote access session. Can be any of the following:   PENDING: A pending condition.   PASSED: A passing condition.   WARNED: A warning condition.   FAILED: A failed condition.   SKIPPED: A skipped condition.   ERRORED: An error condition.   STOPPED: A stopped condition.  
          */
@@ -2024,7 +2024,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The rule's value. The value must be passed in as a string using escaped quotes. For example: "value": "\"ANDROID\""
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2080,7 +2080,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * Information about the locale that is used for the run.
          */
-    var locale: js.UndefOr[java.lang.String] = js.undefined
+    var locale: js.UndefOr[String] = js.undefined
     /**
          * Information about the location that is used for the run.
          */
@@ -2100,7 +2100,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * Read-only URL for an object in S3 bucket where you can get the parsing results of the test package. If the test package doesn't parse, the reason why it doesn't parse appears in the file that this URL points to.
          */
-    var parsingResultUrl: js.UndefOr[java.lang.String] = js.undefined
+    var parsingResultUrl: js.UndefOr[String] = js.undefined
     /**
          * The run's platform. Allowed values include:   ANDROID: The Android platform.   IOS: The iOS platform.  
          */
@@ -2152,7 +2152,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * The Device Farm console URL for the recording of the run.
          */
-    var webUrl: js.UndefOr[java.lang.String] = js.undefined
+    var webUrl: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2192,7 +2192,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * Information about the locale that is used for the run.
          */
-    var locale: js.UndefOr[java.lang.String] = js.undefined
+    var locale: js.UndefOr[String] = js.undefined
     /**
          * Information about the location that is used for the run.
          */
@@ -2425,7 +2425,7 @@ object DeviceFarmNs extends js.Object {
   
   
   trait TestParameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait TrialMinutes extends js.Object {
@@ -4295,11 +4295,11 @@ object DeviceFarmNs extends js.Object {
     /**
          * The updated choice for whether you want to specify package cleanup. The default value is false for private devices.
          */
-    var packageCleanup: js.UndefOr[scala.Boolean] = js.undefined
+    var packageCleanup: js.UndefOr[Boolean] = js.undefined
     /**
          * The updated choice for whether you want to reboot the device after use. The default value is true.
          */
-    var rebootAfterUse: js.UndefOr[scala.Boolean] = js.undefined
+    var rebootAfterUse: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -4407,7 +4407,7 @@ object DeviceFarmNs extends js.Object {
     /**
          * Set to true if the YAML file has changed and needs to be updated; otherwise, set to false.
          */
-    var editContent: js.UndefOr[scala.Boolean] = js.undefined
+    var editContent: js.UndefOr[Boolean] = js.undefined
     /**
          * The upload's test spec file name. The name should not contain the '/' character. The test spec file name must end with the .yaml or .yml file extension.
          */
@@ -4527,7 +4527,7 @@ object DeviceFarmNs extends js.Object {
   type AccountsCleanup = scala.Boolean
   type AmazonResourceName = java.lang.String
   type AmazonResourceNames = js.Array[AmazonResourceName]
-  type AndroidPaths = js.Array[java.lang.String]
+  type AndroidPaths = js.Array[String]
   type AppPackagesCleanup = scala.Boolean
   type ArtifactCategory = awsDashSdkLib.awsDashSdkLibStrings.SCREENSHOT | awsDashSdkLib.awsDashSdkLibStrings.FILE | awsDashSdkLib.awsDashSdkLibStrings.LOG | java.lang.String
   type ArtifactType = awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | awsDashSdkLib.awsDashSdkLibStrings.SCREENSHOT | awsDashSdkLib.awsDashSdkLibStrings.DEVICE_LOG | awsDashSdkLib.awsDashSdkLibStrings.MESSAGE_LOG | awsDashSdkLib.awsDashSdkLibStrings.VIDEO_LOG | awsDashSdkLib.awsDashSdkLibStrings.RESULT_LOG | awsDashSdkLib.awsDashSdkLibStrings.SERVICE_LOG | awsDashSdkLib.awsDashSdkLibStrings.WEBKIT_LOG | awsDashSdkLib.awsDashSdkLibStrings.INSTRUMENTATION_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.EXERCISER_MONKEY_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.CALABASH_JSON_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.CALABASH_PRETTY_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.CALABASH_STANDARD_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.CALABASH_JAVA_XML_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.AUTOMATION_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.APPIUM_SERVER_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.APPIUM_JAVA_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.APPIUM_JAVA_XML_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.APPIUM_PYTHON_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.APPIUM_PYTHON_XML_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.EXPLORER_EVENT_LOG | awsDashSdkLib.awsDashSdkLibStrings.EXPLORER_SUMMARY_LOG | awsDashSdkLib.awsDashSdkLibStrings.APPLICATION_CRASH_REPORT | awsDashSdkLib.awsDashSdkLibStrings.XCTEST_LOG | awsDashSdkLib.awsDashSdkLibStrings.VIDEO | awsDashSdkLib.awsDashSdkLibStrings.CUSTOMER_ARTIFACT | awsDashSdkLib.awsDashSdkLibStrings.CUSTOMER_ARTIFACT_LOG | awsDashSdkLib.awsDashSdkLibStrings.TESTSPEC_OUTPUT | java.lang.String
@@ -4543,10 +4543,10 @@ object DeviceFarmNs extends js.Object {
   type DeviceAvailability = awsDashSdkLib.awsDashSdkLibStrings.TEMPORARY_NOT_AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.BUSY | awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.HIGHLY_AVAILABLE | java.lang.String
   type DeviceFilterAttribute = awsDashSdkLib.awsDashSdkLibStrings.ARN | awsDashSdkLib.awsDashSdkLibStrings.PLATFORM | awsDashSdkLib.awsDashSdkLibStrings.OS_VERSION | awsDashSdkLib.awsDashSdkLibStrings.MODEL | awsDashSdkLib.awsDashSdkLibStrings.AVAILABILITY | awsDashSdkLib.awsDashSdkLibStrings.FORM_FACTOR | awsDashSdkLib.awsDashSdkLibStrings.MANUFACTURER | awsDashSdkLib.awsDashSdkLibStrings.REMOTE_ACCESS_ENABLED | awsDashSdkLib.awsDashSdkLibStrings.REMOTE_DEBUG_ENABLED | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_ARN | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_LABELS | awsDashSdkLib.awsDashSdkLibStrings.FLEET_TYPE | java.lang.String
   type DeviceFilterOperator = awsDashSdkLib.awsDashSdkLibStrings.EQUALS | awsDashSdkLib.awsDashSdkLibStrings.LESS_THAN | awsDashSdkLib.awsDashSdkLibStrings.LESS_THAN_OR_EQUALS | awsDashSdkLib.awsDashSdkLibStrings.GREATER_THAN | awsDashSdkLib.awsDashSdkLibStrings.GREATER_THAN_OR_EQUALS | awsDashSdkLib.awsDashSdkLibStrings.IN | awsDashSdkLib.awsDashSdkLibStrings.NOT_IN | awsDashSdkLib.awsDashSdkLibStrings.CONTAINS | java.lang.String
-  type DeviceFilterValues = js.Array[java.lang.String]
+  type DeviceFilterValues = js.Array[String]
   type DeviceFilters = js.Array[DeviceFilter]
   type DeviceFormFactor = awsDashSdkLib.awsDashSdkLibStrings.PHONE | awsDashSdkLib.awsDashSdkLibStrings.TABLET | java.lang.String
-  type DeviceHostPaths = js.Array[java.lang.String]
+  type DeviceHostPaths = js.Array[String]
   type DeviceInstances = js.Array[DeviceInstance]
   type DevicePlatform = awsDashSdkLib.awsDashSdkLibStrings.ANDROID | awsDashSdkLib.awsDashSdkLibStrings.IOS | java.lang.String
   type DevicePoolCompatibilityResults = js.Array[DevicePoolCompatibilityResult]
@@ -4560,12 +4560,12 @@ object DeviceFarmNs extends js.Object {
   type Filter = java.lang.String
   type HostAddress = java.lang.String
   type IncompatibilityMessages = js.Array[IncompatibilityMessage]
-  type InstanceLabels = js.Array[java.lang.String]
+  type InstanceLabels = js.Array[String]
   type InstanceProfiles = js.Array[InstanceProfile]
   type InstanceStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_USE | awsDashSdkLib.awsDashSdkLibStrings.PREPARING | awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.NOT_AVAILABLE | java.lang.String
   type Integer = scala.Double
   type InteractionMode = awsDashSdkLib.awsDashSdkLibStrings.INTERACTIVE | awsDashSdkLib.awsDashSdkLibStrings.NO_VIDEO | awsDashSdkLib.awsDashSdkLibStrings.VIDEO_ONLY | java.lang.String
-  type IosPaths = js.Array[java.lang.String]
+  type IosPaths = js.Array[String]
   type JobTimeoutMinutes = scala.Double
   type Jobs = js.Array[Job]
   type Long = scala.Double
@@ -4581,7 +4581,7 @@ object DeviceFarmNs extends js.Object {
   type OfferingTransactions = js.Array[OfferingTransaction]
   type OfferingType = awsDashSdkLib.awsDashSdkLibStrings.RECURRING | java.lang.String
   type Offerings = js.Array[Offering]
-  type PackageIds = js.Array[java.lang.String]
+  type PackageIds = js.Array[String]
   type PaginationToken = java.lang.String
   type PercentInteger = scala.Double
   type Problems = js.Array[Problem]

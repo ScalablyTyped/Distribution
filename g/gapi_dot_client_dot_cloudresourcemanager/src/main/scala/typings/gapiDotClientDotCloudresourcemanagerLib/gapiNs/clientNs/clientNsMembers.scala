@@ -17,7 +17,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotCloudresourcemanagerLib.gapiDotClientDotCloudresourcemanagerLibStrings.cloudresourcemanager,
     version: gapiDotClientDotCloudresourcemanagerLib.gapiDotClientDotCloudresourcemanagerLibStrings.v1
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotCloudresourcemanagerLib.gapiDotClientDotCloudresourcemanagerLibStrings.cloudresourcemanager,
     version: gapiDotClientDotCloudresourcemanagerLib.gapiDotClientDotCloudresourcemanagerLibStrings.v1,

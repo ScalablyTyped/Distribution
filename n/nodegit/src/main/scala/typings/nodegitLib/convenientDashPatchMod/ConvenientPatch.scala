@@ -11,7 +11,7 @@ class ConvenientPatch () extends js.Object {
   /**
        * The hunks in this patch
        */
-  def hunks(): stdLib.Promise[js.Array[nodegitLib.convenientDashHunkMod.ConvenientHunk]] = js.native
+  def hunks(): js.Promise[js.Array[nodegitLib.convenientDashHunkMod.ConvenientHunk]] = js.native
   /**
        * Is this an added patch?
        */

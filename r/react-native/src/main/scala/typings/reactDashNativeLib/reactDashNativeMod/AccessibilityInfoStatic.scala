@@ -32,7 +32,7 @@ trait AccessibilityInfoStatic extends js.Object {
        * Query whether a screen reader is currently enabled.
        * Returns a promise which resolves to a boolean. The result is true when a screen reader is enabled and false otherwise.
        */
-  def fetch(): stdLib.Promise[scala.Boolean]
+  def fetch(): js.Promise[scala.Boolean]
   /**
        * Remove an event handler.
        */

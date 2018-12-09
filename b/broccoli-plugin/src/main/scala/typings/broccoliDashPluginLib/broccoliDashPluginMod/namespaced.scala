@@ -30,7 +30,7 @@ class namespaced protected () extends BroccoliPlugin {
        * To perform asynchronous work, return a promise.
        */
   /* CompleteClass */
-  override def build(): scala.Unit | stdLib.Promise[_] = js.native
+  override def build(): scala.Unit | js.Promise[_] = js.native
   /**
        * Advanced usage only.
        * Return the object on which Broccoli will call `obj.build()`. Called

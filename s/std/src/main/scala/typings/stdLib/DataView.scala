@@ -17,25 +17,25 @@ trait DataView extends js.Object {
         * no alignment constraint; multi-byte values may be fetched from any offset.
         * @param byteOffset The place in the buffer at which the value should be retrieved.
         */
-  def getBigInt64(byteOffset: scala.Double): js.Any = js.native
+  def getBigInt64(byteOffset: scala.Double): BigInt = js.native
   /**
         * Gets the BigInt64 value at the specified byte offset from the start of the view. There is
         * no alignment constraint; multi-byte values may be fetched from any offset.
         * @param byteOffset The place in the buffer at which the value should be retrieved.
         */
-  def getBigInt64(byteOffset: scala.Double, littleEndian: scala.Boolean): js.Any = js.native
+  def getBigInt64(byteOffset: scala.Double, littleEndian: scala.Boolean): BigInt = js.native
   /**
         * Gets the BigUint64 value at the specified byte offset from the start of the view. There is
         * no alignment constraint; multi-byte values may be fetched from any offset.
         * @param byteOffset The place in the buffer at which the value should be retrieved.
         */
-  def getBigUint64(byteOffset: scala.Double): js.Any = js.native
+  def getBigUint64(byteOffset: scala.Double): BigInt = js.native
   /**
         * Gets the BigUint64 value at the specified byte offset from the start of the view. There is
         * no alignment constraint; multi-byte values may be fetched from any offset.
         * @param byteOffset The place in the buffer at which the value should be retrieved.
         */
-  def getBigUint64(byteOffset: scala.Double, littleEndian: scala.Boolean): js.Any = js.native
+  def getBigUint64(byteOffset: scala.Double, littleEndian: scala.Boolean): BigInt = js.native
   /**
         * Gets the Float32 value at the specified byte offset from the start of the view. There is
         * no alignment constraint; multi-byte values may be fetched from any offset.
@@ -127,7 +127,7 @@ trait DataView extends js.Object {
         * @param littleEndian If false or undefined, a big-endian value should be written,
         * otherwise a little-endian value should be written.
         */
-  def setBigInt64(byteOffset: scala.Double, value: js.Any): scala.Unit = js.native
+  def setBigInt64(byteOffset: scala.Double, value: BigInt): scala.Unit = js.native
   /**
         * Stores a BigInt64 value at the specified byte offset from the start of the view.
         * @param byteOffset The place in the buffer at which the value should be set.
@@ -135,7 +135,7 @@ trait DataView extends js.Object {
         * @param littleEndian If false or undefined, a big-endian value should be written,
         * otherwise a little-endian value should be written.
         */
-  def setBigInt64(byteOffset: scala.Double, value: js.Any, littleEndian: scala.Boolean): scala.Unit = js.native
+  def setBigInt64(byteOffset: scala.Double, value: BigInt, littleEndian: scala.Boolean): scala.Unit = js.native
   /**
         * Stores a BigUint64 value at the specified byte offset from the start of the view.
         * @param byteOffset The place in the buffer at which the value should be set.
@@ -143,7 +143,7 @@ trait DataView extends js.Object {
         * @param littleEndian If false or undefined, a big-endian value should be written,
         * otherwise a little-endian value should be written.
         */
-  def setBigUint64(byteOffset: scala.Double, value: js.Any): scala.Unit = js.native
+  def setBigUint64(byteOffset: scala.Double, value: BigInt): scala.Unit = js.native
   /**
         * Stores a BigUint64 value at the specified byte offset from the start of the view.
         * @param byteOffset The place in the buffer at which the value should be set.
@@ -151,7 +151,7 @@ trait DataView extends js.Object {
         * @param littleEndian If false or undefined, a big-endian value should be written,
         * otherwise a little-endian value should be written.
         */
-  def setBigUint64(byteOffset: scala.Double, value: js.Any, littleEndian: scala.Boolean): scala.Unit = js.native
+  def setBigUint64(byteOffset: scala.Double, value: BigInt, littleEndian: scala.Boolean): scala.Unit = js.native
   /**
         * Stores an Float32 value at the specified byte offset from the start of the view.
         * @param byteOffset The place in the buffer at which the value should be set.

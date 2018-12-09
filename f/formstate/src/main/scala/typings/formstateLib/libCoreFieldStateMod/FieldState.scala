@@ -50,7 +50,7 @@ class FieldState[TValue] protected ()
   def disableAutoValidation(): this.type = js.native
   /* CompleteClass */
   override def enableAutoValidation(): scala.Unit = js.native
-  def enableAutoValidationAndValidate(): stdLib.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native
+  def enableAutoValidationAndValidate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native
   /* protected */ def executeOnDidChange(config: formstateLib.Anon_OldValue[TValue]): scala.Unit = js.native
   /* protected */ def executeOnUpdate(): scala.Unit = js.native
   def getAutoValidationDefault(): scala.Boolean = js.native
@@ -101,7 +101,7 @@ class FieldState[TValue] protected ()
        **/
   def setError(error: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
-  override def validate(): stdLib.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native
+  override def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native
   def validators(validators: formstateLib.libCoreTypesMod.Validator[TValue]*): this.type = js.native
 }
 

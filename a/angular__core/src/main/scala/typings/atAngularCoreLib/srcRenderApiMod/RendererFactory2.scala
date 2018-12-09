@@ -20,7 +20,7 @@ abstract class RendererFactory2 () extends js.Object {
        * Use with animations test-only mode. Notifies the test when rendering has completed.
        * @returns The asynchronous result of the developer-defined function.
        */
-  var whenRenderingDone: js.UndefOr[js.Function0[stdLib.Promise[_]]] = js.native
+  var whenRenderingDone: js.UndefOr[js.Function0[js.Promise[_]]] = js.native
   /**
        * Creates and initializes a custom renderer for a host DOM element.
        * @param hostElement The element to render.

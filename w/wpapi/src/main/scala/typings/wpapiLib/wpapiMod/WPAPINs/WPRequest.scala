@@ -52,7 +52,7 @@ trait WPRequest
            * @param callback A callback to invoke with the results of the POST
            * request
            */
-  def create(data: js.Any): stdLib.Promise[_] = js.native
+  def create(data: js.Any): js.Promise[_] = js.native
   /**
            * Create the specified resource with the provided data
            *
@@ -62,7 +62,7 @@ trait WPRequest
            * @param callback A callback to invoke with the results of the POST
            * request
            */
-  def create(data: js.Any, callback: WPRequestCallback): stdLib.Promise[_] = js.native
+  def create(data: js.Any, callback: WPRequestCallback): js.Promise[_] = js.native
   /**
            * Delete the specified resource
            *
@@ -70,7 +70,7 @@ trait WPRequest
            * @param callback A callback to invoke with the results of the DELETE
            * request
            */
-  def delete(): stdLib.Promise[_] = js.native
+  def delete(): js.Promise[_] = js.native
   /**
            * Delete the specified resource
            *
@@ -78,7 +78,7 @@ trait WPRequest
            * @param callback A callback to invoke with the results of the DELETE
            * request
            */
-  def delete(data: js.Any): stdLib.Promise[_] = js.native
+  def delete(data: js.Any): js.Promise[_] = js.native
   /**
            * Delete the specified resource
            *
@@ -86,7 +86,7 @@ trait WPRequest
            * @param callback A callback to invoke with the results of the DELETE
            * request
            */
-  def delete(data: js.Any, callback: WPRequestCallback): stdLib.Promise[_] = js.native
+  def delete(data: js.Any, callback: WPRequestCallback): js.Promise[_] = js.native
   /**
            * Convenience wrapper for .context( 'edit' )
            */
@@ -149,14 +149,14 @@ trait WPRequest
            * @param callback A callback to invoke with the results of the HEAD
            * request
            */
-  def get(): stdLib.Promise[_] = js.native
+  def get(): js.Promise[_] = js.native
   /**
            * Get the headers for the specified resource
            *
            * @param callback A callback to invoke with the results of the HEAD
            * request
            */
-  def get(callback: WPRequestCallback): stdLib.Promise[_] = js.native
+  def get(callback: WPRequestCallback): js.Promise[_] = js.native
   /**
            * Set the id of resource.
            *
@@ -400,7 +400,7 @@ trait WPRequest
            * @param failureCallback A callback to handle any errors encountered
            * by the request
            */
-  def `then`(): stdLib.Promise[_] = js.native
+  def `then`(): js.Promise[_] = js.native
   /**
            * Calling .then on a query chain will invoke the query as a GET and
            * return a promise
@@ -410,7 +410,7 @@ trait WPRequest
            * @param failureCallback A callback to handle any errors encountered
            * by the request
            */
-  def `then`(successCallback: js.Function1[/* data */ js.Any, scala.Unit]): stdLib.Promise[_] = js.native
+  def `then`(successCallback: js.Function1[/* data */ js.Any, scala.Unit]): js.Promise[_] = js.native
   /**
            * Calling .then on a query chain will invoke the query as a GET and
            * return a promise
@@ -423,7 +423,7 @@ trait WPRequest
   def `then`(
     successCallback: js.Function1[/* data */ js.Any, scala.Unit],
     failureCallback: js.Function1[/* error */ stdLib.Error, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
            * Update the specified resource with the provided data
            *
@@ -433,7 +433,7 @@ trait WPRequest
            * @param callback A callback to invoke with the results of the PATCH
            * request
            */
-  def update(data: js.Any): stdLib.Promise[_] = js.native
+  def update(data: js.Any): js.Promise[_] = js.native
   /**
            * Update the specified resource with the provided data
            *
@@ -443,7 +443,7 @@ trait WPRequest
            * @param callback A callback to invoke with the results of the PATCH
            * request
            */
-  def update(data: js.Any, callback: WPRequestCallback): stdLib.Promise[_] = js.native
+  def update(data: js.Any, callback: WPRequestCallback): js.Promise[_] = js.native
   /**
            * Validate whether the specified path parts are valid for this endpoint
            *

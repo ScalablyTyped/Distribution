@@ -21,7 +21,7 @@ class Barrier protected () extends js.Object {
        * @param participantCount The initial number of participants for the barrier.
        * @param postPhaseAction An action to execute between each phase.
        */
-  def this(participantCount: scala.Double, postPhaseAction: js.Function1[/* barrier */ Barrier, scala.Unit | stdLib.PromiseLike[scala.Unit]]) = this()
+  def this(participantCount: scala.Double, postPhaseAction: js.Function1[/* barrier */ Barrier, scala.Unit | js.Thenable[scala.Unit]]) = this()
   var _finishPhase: js.Any = js.native
   var _isExecutingPostPhaseAction: js.Any = js.native
   var _nextPhase: js.Any = js.native
@@ -74,13 +74,13 @@ class Barrier protected () extends js.Object {
        *
        * @param token An optional CancellationToken used to cancel the request.
        */
-  def signalAndWait(): stdLib.Promise[scala.Unit] = js.native
+  def signalAndWait(): js.Promise[scala.Unit] = js.native
   /**
        * Signals that a participant has reached the barrier and waits for all other participants
        * to reach the barrier.
        *
        * @param token An optional CancellationToken used to cancel the request.
        */
-  def signalAndWait(token: prexLib.outLibCancellationMod.CancellationToken): stdLib.Promise[scala.Unit] = js.native
+  def signalAndWait(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[scala.Unit] = js.native
 }
 

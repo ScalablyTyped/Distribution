@@ -30,7 +30,7 @@ trait Client extends js.Object {
        * });
        * @static
        */
-  def create(options: braintreeDashWebLib.Anon_Authorization): stdLib.Promise[Client] = js.native
+  def create(options: braintreeDashWebLib.Anon_Authorization): js.Promise[Client] = js.native
   def create(options: braintreeDashWebLib.Anon_Authorization, callback: callback): scala.Unit = js.native
   /**
        * Returns a copy of the configuration values.

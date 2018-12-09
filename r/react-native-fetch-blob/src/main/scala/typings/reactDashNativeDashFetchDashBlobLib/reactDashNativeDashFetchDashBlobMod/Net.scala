@@ -12,18 +12,18 @@ trait Net extends js.Object {
        * @param  domain Domain of the cookies to be removed, remove all
        * @return     Cookies of a specific domain.
        */
-  def getCookies(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def getCookies(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   /**
        * Remove cookies for a specific domain
        * @param  domain Domain of the cookies to be removed, remove all
        * cookies when this is null.
        */
-  def removeCookies(): stdLib.Promise[scala.Null] = js.native
+  def removeCookies(): js.Promise[scala.Null] = js.native
   /**
        * Remove cookies for a specific domain
        * @param  domain Domain of the cookies to be removed, remove all
        * cookies when this is null.
        */
-  def removeCookies(domain: java.lang.String): stdLib.Promise[scala.Null] = js.native
+  def removeCookies(domain: java.lang.String): js.Promise[scala.Null] = js.native
 }
 

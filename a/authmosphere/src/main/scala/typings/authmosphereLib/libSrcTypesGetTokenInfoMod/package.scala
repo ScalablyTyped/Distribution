@@ -10,6 +10,6 @@ package object libSrcTypesGetTokenInfoMod {
     /* tokenInfoUrl */ java.lang.String, 
     /* accessToken */ java.lang.String, 
     /* logger */ js.UndefOr[authmosphereLib.libSrcTypesLoggerMod.Logger], 
-    stdLib.Promise[authmosphereLib.libSrcTypesTokenMod.Token[T]]
+    js.Promise[authmosphereLib.libSrcTypesTokenMod.Token[T]]
   ]
 }

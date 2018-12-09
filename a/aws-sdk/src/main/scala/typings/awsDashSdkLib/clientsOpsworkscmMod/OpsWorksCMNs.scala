@@ -17,7 +17,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  The attribute name. The following are supported attribute names.     ServerLimit: The number of current servers/maximum number of servers allowed. By default, you can have a maximum of 10 servers.     ManualBackupLimit: The number of current manual backups/maximum number of backups allowed. By default, you can have a maximum of 50 manual backups saved.   
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          *  The current usage, such as the current number of servers that are associated with the account. 
          */
@@ -53,7 +53,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          * The ARN of the backup. 
          */
-    var BackupArn: js.UndefOr[java.lang.String] = js.undefined
+    var BackupArn: js.UndefOr[String] = js.undefined
     /**
          *  The generated ID of the backup. Example: myServerName-yyyyMMddHHmmssSSS 
          */
@@ -69,31 +69,31 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  A user-provided description for a manual backup. This field is empty for automated backups. 
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          *  The engine type that is obtained from the server when the backup is created. 
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          *  The engine model that is obtained from the server when the backup is created. 
          */
-    var EngineModel: js.UndefOr[java.lang.String] = js.undefined
+    var EngineModel: js.UndefOr[String] = js.undefined
     /**
          *  The engine version that is obtained from the server when the backup is created. 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          *  The EC2 instance profile ARN that is obtained from the server when the backup is created. Because this value is stored, you are not required to provide the InstanceProfileArn again if you restore a backup. 
          */
-    var InstanceProfileArn: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceProfileArn: js.UndefOr[String] = js.undefined
     /**
          *  The instance type that is obtained from the server when the backup is created. 
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          *  The key pair that is obtained from the server when the backup is created. 
          */
-    var KeyPair: js.UndefOr[java.lang.String] = js.undefined
+    var KeyPair: js.UndefOr[String] = js.undefined
     /**
          *  The preferred backup period that is obtained from the server when the backup is created. 
          */
@@ -109,11 +109,11 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  This field is deprecated and is no longer used. 
          */
-    var S3DataUrl: js.UndefOr[java.lang.String] = js.undefined
+    var S3DataUrl: js.UndefOr[String] = js.undefined
     /**
          *  The Amazon S3 URL of the backup's log file. 
          */
-    var S3LogUrl: js.UndefOr[java.lang.String] = js.undefined
+    var S3LogUrl: js.UndefOr[String] = js.undefined
     /**
          *  The security group IDs that are obtained from the server when the backup is created. 
          */
@@ -125,7 +125,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  The service role ARN that is obtained from the server when the backup is created. 
          */
-    var ServiceRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The status of a backup while in progress. 
          */
@@ -133,7 +133,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  An informational message about backup status. 
          */
-    var StatusDescription: js.UndefOr[java.lang.String] = js.undefined
+    var StatusDescription: js.UndefOr[String] = js.undefined
     /**
          *  The subnet IDs that are obtained from the server when the backup is created. 
          */
@@ -141,11 +141,11 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  The version of AWS OpsWorks CM-specific tools that is obtained from the server when the backup is created. 
          */
-    var ToolsVersion: js.UndefOr[java.lang.String] = js.undefined
+    var ToolsVersion: js.UndefOr[String] = js.undefined
     /**
          *  The IAM user ARN of the requester for manual backups. This field is empty for automated backups. 
          */
-    var UserArn: js.UndefOr[java.lang.String] = js.undefined
+    var UserArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -161,7 +161,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  A user-defined description of the backup. 
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The name of the server that you want to back up. 
          */
@@ -181,7 +181,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  Associate a public IP address with a server that you are launching. Valid values are true or false. The default value is true. 
          */
-    var AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined
+    var AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
     /**
          *  If you specify this field, AWS OpsWorks CM creates the server by using the backup represented by BackupId. 
          */
@@ -193,11 +193,11 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  Enable or disable scheduled backups. Valid values are true or false. The default value is true. 
          */
-    var DisableAutomatedBackup: js.UndefOr[scala.Boolean] = js.undefined
+    var DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined
     /**
          *  The configuration management engine to use. Valid values include Chef and Puppet. 
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * Optional engine attributes on a specified server.   Attributes accepted in a Chef createServer request:     CHEF_PIVOTAL_KEY: A base64-encoded RSA private key that is not stored by AWS OpsWorks for Chef Automate. This private key is required to access the Chef API. When no CHEF_PIVOTAL_KEY is set, one is generated and returned in the response.     CHEF_DELIVERY_ADMIN_PASSWORD: The password for the administrative user in the Chef Automate GUI. The password length is a minimum of eight characters, and a maximum of 32. The password can contain letters, numbers, and special characters (!/@#$%^&amp;+=_). The password must contain at least one lower case letter, one upper case letter, one number, and one special character. When no CHEF_DELIVERY_ADMIN_PASSWORD is set, one is generated and returned in the response.    Attributes accepted in a Puppet createServer request:     PUPPET_ADMIN_PASSWORD: To work with the Puppet Enterprise console, a password must use ASCII characters.  
          */
@@ -205,11 +205,11 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  The engine model of the server. Valid values in this release include Monolithic for Puppet and Single for Chef. 
          */
-    var EngineModel: js.UndefOr[java.lang.String] = js.undefined
+    var EngineModel: js.UndefOr[String] = js.undefined
     /**
          *  The major release version of the engine that you want to use. For a Chef server, the valid value for EngineVersion is currently 12. For a Puppet server, the valid value is 2017. 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          *  The ARN of the instance profile that your Amazon EC2 instances use. Although the AWS OpsWorks console typically creates the instance profile for you, if you are using API commands instead, run the service-role-creation.yaml AWS CloudFormation template, located at https://s3.amazonaws.com/opsworks-cm-us-east-1-prod-default-assets/misc/opsworks-cm-roles.yaml. This template creates a CloudFormation stack that includes the instance profile you need. 
          */
@@ -217,7 +217,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  The Amazon EC2 instance type to use. For example, m4.large. Recommended instance types include t2.medium and greater, m4.*, or c4.xlarge and greater. 
          */
-    var InstanceType: java.lang.String
+    var InstanceType: String
     /**
          *  The Amazon EC2 key pair to set for the instance. This parameter is optional; if desired, you may specify this parameter to connect to your instances by using SSH. 
          */
@@ -318,7 +318,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          * This is not currently implemented for DescribeBackups requests.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -342,7 +342,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          * NextToken is a string that is returned in some command responses. It indicates that not all entries have been returned, and that you must run at least one more request to get remaining items. To get remaining results, call DescribeEvents again, and assign the token from the previous results as the value of the nextToken parameter. If there are no more results, the response object's nextToken parameter value is null. Setting a nextToken value that was not returned in your previous results causes an InvalidNextTokenException to occur. 
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Contains the response to a DescribeEvents request. 
          */
@@ -394,7 +394,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          * This is not currently implemented for DescribeServers requests. 
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Contains the response to a DescribeServers request.  For Puppet Server: DescribeServersResponse$Servers$EngineAttributes contains PUPPET_API_CA_CERT. This is the PEM-encoded CA certificate that is used by the Puppet API over TCP port number 8140. The CA certificate is also used to sign node certificates.
          */
@@ -442,7 +442,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          * The name of the export attribute. Currently supported export attribute is "Userdata" which exports a userdata script filled out with parameters provided in the InputAttributes list.
          */
-    var ExportAttributeName: java.lang.String
+    var ExportAttributeName: String
     /**
          * The list of engine attributes. The list type is EngineAttribute. EngineAttribute is a pair of attribute name and value. For ExportAttributeName "Userdata", currently supported input attribute names are: - "RunList": For Chef, an ordered list of roles and/or recipes that are run in the exact order. For Puppet, this parameter is ignored. - "OrganizationName": For Chef, an organization name. AWS OpsWorks for Chef Server always creates the organization "default". For Puppet, this parameter is ignored. - "NodeEnvironment": For Chef, a node environment (eg. development, staging, onebox). For Puppet, this parameter is ignored. - "NodeClientVersion": For Chef, version of Chef Engine (3 numbers separated by dots, eg. "13.8.5"). If empty, it uses the latest one. For Puppet, this parameter is ignored. 
          */
@@ -474,7 +474,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  The type of the instance to create. Valid values must be specified in the following format: ^([cm][34]|t2).* For example, m4.large. Valid values are t2.medium, m4.large, and m4.2xlarge. If you do not specify this parameter, RestoreServer uses the instance type from the specified backup. 
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          *  The name of the key pair to set on the new EC2 instance. This can be helpful if the administrator no longer has the SSH key. 
          */
@@ -493,7 +493,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          * Associate a public IP address with a server that you are launching. 
          */
-    var AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined
+    var AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of automated backups to keep. 
          */
@@ -501,7 +501,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          * The ARN of the CloudFormation stack that was used to create the server. 
          */
-    var CloudFormationStackArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudFormationStackArn: js.UndefOr[String] = js.undefined
     /**
          * Time stamp of server creation. Example 2016-07-29T13:38:47.520Z 
          */
@@ -509,15 +509,15 @@ object OpsWorksCMNs extends js.Object {
     /**
          * Disables automated backups. The number of stored backups is dependent on the value of PreferredBackupCount. 
          */
-    var DisableAutomatedBackup: js.UndefOr[scala.Boolean] = js.undefined
+    var DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined
     /**
          *  A DNS name that can be used to access the engine. Example: myserver-asdfghjkl.us-east-1.opsworks.io 
          */
-    var Endpoint: js.UndefOr[java.lang.String] = js.undefined
+    var Endpoint: js.UndefOr[String] = js.undefined
     /**
          * The engine type of the server. Valid values in this release include Chef and Puppet. 
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The response of a createServer() request returns the master credential to access the server in EngineAttributes. These credentials are not stored by AWS OpsWorks CM; they are returned only as part of the result of createServer().   Attributes returned in a createServer response for Chef     CHEF_PIVOTAL_KEY: A base64-encoded RSA private key that is generated by AWS OpsWorks for Chef Automate. This private key is required to access the Chef API.    CHEF_STARTER_KIT: A base64-encoded ZIP file. The ZIP file contains a Chef starter kit, which includes a README, a configuration file, and the required RSA private key. Save this file, unzip it, and then change to the directory where you've unzipped the file contents. From this directory, you can run Knife commands.    Attributes returned in a createServer response for Puppet     PUPPET_STARTER_KIT: A base64-encoded ZIP file. The ZIP file contains a Puppet starter kit, including a README and a required private key. Save this file, unzip it, and then change to the directory where you've unzipped the file contents.    PUPPET_ADMIN_PASSWORD: An administrator password that you can use to sign in to the Puppet Enterprise console after the server is online.  
          */
@@ -525,23 +525,23 @@ object OpsWorksCMNs extends js.Object {
     /**
          * The engine model of the server. Valid values in this release include Monolithic for Puppet and Single for Chef. 
          */
-    var EngineModel: js.UndefOr[java.lang.String] = js.undefined
+    var EngineModel: js.UndefOr[String] = js.undefined
     /**
          * The engine version of the server. For a Chef server, the valid value for EngineVersion is currently 12. For a Puppet server, the valid value is 2017. 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The instance profile ARN of the server. 
          */
-    var InstanceProfileArn: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceProfileArn: js.UndefOr[String] = js.undefined
     /**
          *  The instance type for the server, as specified in the CloudFormation stack. This might not be the same instance type that is shown in the EC2 console. 
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The key pair associated with the server. 
          */
-    var KeyPair: js.UndefOr[java.lang.String] = js.undefined
+    var KeyPair: js.UndefOr[String] = js.undefined
     /**
          * The status of the most recent server maintenance run. Shows SUCCESS or FAILED. 
          */
@@ -561,15 +561,15 @@ object OpsWorksCMNs extends js.Object {
     /**
          * The ARN of the server. 
          */
-    var ServerArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServerArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the server. 
          */
-    var ServerName: js.UndefOr[java.lang.String] = js.undefined
+    var ServerName: js.UndefOr[String] = js.undefined
     /**
          * The service role ARN used to create the server. 
          */
-    var ServiceRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceRoleArn: js.UndefOr[String] = js.undefined
     /**
          *  The server's status. This field displays the states of actions in progress, such as creating, running, or backing up the server, as well as the server's health state. 
          */
@@ -577,7 +577,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          *  Depending on the server status, this field has either a human-readable message (such as a create or backup error), or an escaped block of JSON (used for health check results). 
          */
-    var StatusReason: js.UndefOr[java.lang.String] = js.undefined
+    var StatusReason: js.UndefOr[String] = js.undefined
     /**
          *  The subnet IDs specified in a CreateServer request. 
          */
@@ -593,15 +593,15 @@ object OpsWorksCMNs extends js.Object {
     /**
          * The Amazon S3 URL of the event's log file.
          */
-    var LogUrl: js.UndefOr[java.lang.String] = js.undefined
+    var LogUrl: js.UndefOr[String] = js.undefined
     /**
          * A human-readable informational or status message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * The name of the server on or for which the event occurred. 
          */
-    var ServerName: js.UndefOr[java.lang.String] = js.undefined
+    var ServerName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1166,7 +1166,7 @@ object OpsWorksCMNs extends js.Object {
     /**
          * Setting DisableAutomatedBackup to true disables automated or scheduled backups. Automated backups are enabled by default. 
          */
-    var DisableAutomatedBackup: js.UndefOr[scala.Boolean] = js.undefined
+    var DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined
     var PreferredBackupWindow: js.UndefOr[TimeWindowDefinition] = js.undefined
     var PreferredMaintenanceWindow: js.UndefOr[TimeWindowDefinition] = js.undefined
     /**
@@ -1212,7 +1212,7 @@ object OpsWorksCMNs extends js.Object {
   type Servers = js.Array[Server]
   type ServiceRoleArn = java.lang.String
   type String = java.lang.String
-  type Strings = js.Array[java.lang.String]
+  type Strings = js.Array[String]
   type TimeWindowDefinition = java.lang.String
   type Timestamp = stdLib.Date
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-11-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String

@@ -174,7 +174,7 @@ class Storage ()
        * region_tag:storage_create_bucket
        * Another example:
        */
-  def createBucket(name: java.lang.String): stdLib.Promise[CreateBucketResponse] = js.native
+  def createBucket(name: java.lang.String): js.Promise[CreateBucketResponse] = js.native
   def createBucket(name: java.lang.String, callback: BucketCallback): scala.Unit = js.native
   def createBucket(name: java.lang.String, metadata: CreateBucketRequest, callback: BucketCallback): scala.Unit = js.native
   /**
@@ -252,7 +252,7 @@ class Storage ()
        * region_tag:storage_list_buckets
        * Another example:
        */
-  def getBuckets(): stdLib.Promise[GetBucketsResponse] = js.native
+  def getBuckets(): js.Promise[GetBucketsResponse] = js.native
   def getBuckets(callback: GetBucketsCallback): scala.Unit = js.native
   /**
        * Query object for listing buckets.
@@ -329,7 +329,7 @@ class Storage ()
        * region_tag:storage_list_buckets
        * Another example:
        */
-  def getBuckets(options: GetBucketsRequest): stdLib.Promise[GetBucketsResponse] = js.native
+  def getBuckets(options: GetBucketsRequest): js.Promise[GetBucketsResponse] = js.native
   def getBuckets(options: GetBucketsRequest, callback: GetBucketsCallback): scala.Unit = js.native
   /**
        * Get {@link Bucket} objects for all of the buckets in your project as
@@ -407,7 +407,7 @@ class Storage ()
        *   const apiResponse = data[1];
        * });
        */
-  def getServiceAccount(): stdLib.Promise[GetServiceAccountResponse] = js.native
+  def getServiceAccount(): js.Promise[GetServiceAccountResponse] = js.native
   def getServiceAccount(callback: GetServiceAccountCallback): scala.Unit = js.native
   /**
        * @typedef {array} GetServiceAccountResponse
@@ -457,7 +457,7 @@ class Storage ()
        *   const apiResponse = data[1];
        * });
        */
-  def getServiceAccount(options: GetServiceAccountOptions): stdLib.Promise[GetServiceAccountResponse] = js.native
+  def getServiceAccount(options: GetServiceAccountOptions): js.Promise[GetServiceAccountResponse] = js.native
   def getServiceAccount(options: GetServiceAccountOptions, callback: GetServiceAccountCallback): scala.Unit = js.native
 }
 

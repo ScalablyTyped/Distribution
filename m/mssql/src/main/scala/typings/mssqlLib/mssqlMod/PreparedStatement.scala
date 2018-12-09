@@ -16,7 +16,7 @@ class PreparedStatement ()
   var statement: java.lang.String = js.native
   var stream: js.Any = js.native
   var transaction: Transaction = js.native
-  def execute(values: js.Object): stdLib.Promise[IProcedureResult[_]] = js.native
+  def execute(values: js.Object): js.Promise[IProcedureResult[_]] = js.native
   def execute(
     values: js.Object,
     callback: js.Function2[
@@ -26,7 +26,7 @@ class PreparedStatement ()
     ]
   ): Request = js.native
   @JSName("execute")
-  def execute_Entity[Entity](values: js.Object): stdLib.Promise[IProcedureResult[Entity]] = js.native
+  def execute_Entity[Entity](values: js.Object): js.Promise[IProcedureResult[Entity]] = js.native
   @JSName("execute")
   def execute_Entity[Entity](
     values: js.Object,
@@ -47,10 +47,10 @@ class PreparedStatement ()
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): PreparedStatement = js.native
   @JSName("prepare")
-  def prepare_Promise(): stdLib.Promise[scala.Unit] = js.native
+  def prepare_Promise(): js.Promise[scala.Unit] = js.native
   @JSName("prepare")
-  def prepare_Promise(statement: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def unprepare(): stdLib.Promise[scala.Unit] = js.native
+  def prepare_Promise(statement: java.lang.String): js.Promise[scala.Unit] = js.native
+  def unprepare(): js.Promise[scala.Unit] = js.native
   def unprepare(callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): PreparedStatement = js.native
 }
 

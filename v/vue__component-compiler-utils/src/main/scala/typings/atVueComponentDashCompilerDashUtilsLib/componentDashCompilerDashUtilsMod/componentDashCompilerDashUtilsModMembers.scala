@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object componentDashCompilerDashUtilsModMembers extends js.Object {
   def compileStyle(options: atVueComponentDashCompilerDashUtilsLib.distCompileStyleMod.StyleCompileOptions): atVueComponentDashCompilerDashUtilsLib.distCompileStyleMod.StyleCompileResults = js.native
-  def compileStyleAsync(options: atVueComponentDashCompilerDashUtilsLib.distCompileStyleMod.StyleCompileOptions): stdLib.Promise[atVueComponentDashCompilerDashUtilsLib.distCompileStyleMod.StyleCompileResults] = js.native
+  def compileStyleAsync(options: atVueComponentDashCompilerDashUtilsLib.distCompileStyleMod.StyleCompileOptions): js.Promise[atVueComponentDashCompilerDashUtilsLib.distCompileStyleMod.StyleCompileResults] = js.native
   def compileTemplate(options: atVueComponentDashCompilerDashUtilsLib.distCompileTemplateMod.TemplateCompileOptions): atVueComponentDashCompilerDashUtilsLib.distCompileTemplateMod.TemplateCompileResult = js.native
   def parse(options: atVueComponentDashCompilerDashUtilsLib.distParseMod.ParseOptions): atVueComponentDashCompilerDashUtilsLib.distParseMod.SFCDescriptor = js.native
 }

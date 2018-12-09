@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StripePaymentRequest extends js.Object {
-  def canMakePayment(): stdLib.Promise[stripeDashV3Lib.Anon_ApplePay | scala.Null] = js.native
+  def canMakePayment(): js.Promise[stripeDashV3Lib.Anon_ApplePay | scala.Null] = js.native
   @JSName("on")
   def on_cancel(event: stripeDashV3Lib.stripeDashV3LibStrings.cancel, handler: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")

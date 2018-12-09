@@ -11,10 +11,10 @@ object GameRequestDialogNs extends js.Object {
   /**
        * Check if the dialog can be shown.
        */
-  def canShow(): stdLib.Promise[_] = js.native
+  def canShow(): js.Promise[_] = js.native
   /**
        * Shows the dialog using the specified content.
        */
-  def show(gameRequestContent: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.GameRequestContent): stdLib.Promise[_] = js.native
+  def show(gameRequestContent: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.GameRequestContent): js.Promise[_] = js.native
 }
 

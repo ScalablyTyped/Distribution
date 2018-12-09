@@ -23,16 +23,16 @@ class ZipFile protected ()
   var readEntryCursor: scala.Boolean = js.native
   var validateEntrySizes: scala.Boolean = js.native
   // These funcitons are custom to yauzl-promise
-  def close(): stdLib.Promise[scala.Unit] = js.native
-  def openReadStream(entry: Entry): stdLib.Promise[nodeLib.streamMod.Readable] = js.native
-  def openReadStream(entry: Entry, options: yauzlLib.yauzlMod.ZipFileOptions): stdLib.Promise[nodeLib.streamMod.Readable] = js.native
-  def readEntries(): stdLib.Promise[js.Array[Entry]] = js.native
-  def readEntries(numEntries: scala.Double): stdLib.Promise[js.Array[Entry]] = js.native
-  def readEntry(): stdLib.Promise[Entry] = js.native
-  def walkEntries(callback: js.Function1[/* entry */ Entry, stdLib.Promise[scala.Unit] | scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
+  def openReadStream(entry: Entry): js.Promise[nodeLib.streamMod.Readable] = js.native
+  def openReadStream(entry: Entry, options: yauzlLib.yauzlMod.ZipFileOptions): js.Promise[nodeLib.streamMod.Readable] = js.native
+  def readEntries(): js.Promise[js.Array[Entry]] = js.native
+  def readEntries(numEntries: scala.Double): js.Promise[js.Array[Entry]] = js.native
+  def readEntry(): js.Promise[Entry] = js.native
+  def walkEntries(callback: js.Function1[/* entry */ Entry, js.Promise[scala.Unit] | scala.Unit]): js.Promise[scala.Unit] = js.native
   def walkEntries(
-    callback: js.Function1[/* entry */ Entry, stdLib.Promise[scala.Unit] | scala.Unit],
+    callback: js.Function1[/* entry */ Entry, js.Promise[scala.Unit] | scala.Unit],
     numEntries: scala.Double
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

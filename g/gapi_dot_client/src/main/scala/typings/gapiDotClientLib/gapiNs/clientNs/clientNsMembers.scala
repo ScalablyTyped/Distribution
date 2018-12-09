@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("gapi.client")
 @js.native
 object clientNsMembers extends js.Object {
-  def load(name: java.lang.String, version: java.lang.String): stdLib.PromiseLike[scala.Unit] = js.native
+  def load(name: java.lang.String, version: java.lang.String): js.Thenable[scala.Unit] = js.native
   /**
            * Loads the client library interface to a particular API. The new API interface will be in the form gapi.client.api.collection.method.
            * @param name The name of the API to load.

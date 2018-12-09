@@ -13,20 +13,14 @@ object ReactIntlNsMembers extends js.Object {
   def addLocaleData(data: Locale): scala.Unit = js.native
   def defineMessages[T /* <: Messages */](messages: T): T = js.native
   def injectIntl[P](component: reactLib.reactMod.ReactNs.ComponentType[P with InjectedIntlProps]): (reactLib.reactMod.ReactNs.ComponentClass[
-    stdLib.Pick[
-      stdLib.Pick[P, stdLib.Exclude[java.lang.String, reactDashIntlLib.reactDashIntlLibStrings.intl]], 
-      stdLib.Exclude[java.lang.String, reactDashIntlLib.reactDashIntlLibStrings.intl]
-    ], 
+    stdLib.Pick[P, stdLib.Exclude[java.lang.String, reactDashIntlLib.reactDashIntlLibStrings.intl]], 
     reactLib.reactMod.ReactNs.ComponentState
   ]) with reactDashIntlLib.Anon_WrappedComponent[P] = js.native
   def injectIntl[P](
     component: reactLib.reactMod.ReactNs.ComponentType[P with InjectedIntlProps],
     options: InjectIntlConfig
   ): (reactLib.reactMod.ReactNs.ComponentClass[
-    stdLib.Pick[
-      stdLib.Pick[P, stdLib.Exclude[java.lang.String, reactDashIntlLib.reactDashIntlLibStrings.intl]], 
-      stdLib.Exclude[java.lang.String, reactDashIntlLib.reactDashIntlLibStrings.intl]
-    ], 
+    stdLib.Pick[P, stdLib.Exclude[java.lang.String, reactDashIntlLib.reactDashIntlLibStrings.intl]], 
     reactLib.reactMod.ReactNs.ComponentState
   ]) with reactDashIntlLib.Anon_WrappedComponent[P] = js.native
 }

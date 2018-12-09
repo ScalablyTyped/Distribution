@@ -30,28 +30,28 @@ object hexoDashUtilModMembers extends js.Object {
   def htmlTag(tag: java.lang.String, attrs: stdLib.ArrayLike[java.lang.String], text: java.lang.String): java.lang.String = js.native
   def slugize(str: java.lang.String): java.lang.String = js.native
   def slugize(str: java.lang.String, options: hexoDashUtilLib.Anon_Transform): java.lang.String = js.native
-  def spawn(command: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-  def spawn(command: java.lang.String, args: js.Array[java.lang.String]): stdLib.Promise[java.lang.String] = js.native
+  def spawn(command: java.lang.String): js.Promise[java.lang.String] = js.native
+  def spawn(command: java.lang.String, args: js.Array[java.lang.String]): js.Promise[java.lang.String] = js.native
   def spawn(
     command: java.lang.String,
     args: js.Array[java.lang.String],
     options: hexoSpawnDisableEncodingAndOverrideStdioOptions
-  ): stdLib.Promise[js.UndefOr[nodeLib.Buffer]] = js.native
+  ): js.Promise[js.UndefOr[nodeLib.Buffer]] = js.native
   def spawn(
     command: java.lang.String,
     args: js.Array[java.lang.String],
     options: hexoSpawnDisableEncodingOptions
-  ): stdLib.Promise[nodeLib.Buffer] = js.native
-  def spawn(command: java.lang.String, args: js.Array[java.lang.String], options: hexoSpawnOptions): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[nodeLib.Buffer] = js.native
+  def spawn(command: java.lang.String, args: js.Array[java.lang.String], options: hexoSpawnOptions): js.Promise[java.lang.String] = js.native
   def spawn(
     command: java.lang.String,
     args: js.Array[java.lang.String],
     options: hexoSpawnOverrideStdioOptions
-  ): stdLib.Promise[js.UndefOr[java.lang.String]] = js.native
-  def spawn(command: java.lang.String, options: hexoSpawnDisableEncodingAndOverrideStdioOptions): stdLib.Promise[js.UndefOr[nodeLib.Buffer]] = js.native
-  def spawn(command: java.lang.String, options: hexoSpawnDisableEncodingOptions): stdLib.Promise[nodeLib.Buffer] = js.native
-  def spawn(command: java.lang.String, options: hexoSpawnOptions): stdLib.Promise[java.lang.String] = js.native
-  def spawn(command: java.lang.String, options: hexoSpawnOverrideStdioOptions): stdLib.Promise[js.UndefOr[java.lang.String]] = js.native
+  ): js.Promise[js.UndefOr[java.lang.String]] = js.native
+  def spawn(command: java.lang.String, options: hexoSpawnDisableEncodingAndOverrideStdioOptions): js.Promise[js.UndefOr[nodeLib.Buffer]] = js.native
+  def spawn(command: java.lang.String, options: hexoSpawnDisableEncodingOptions): js.Promise[nodeLib.Buffer] = js.native
+  def spawn(command: java.lang.String, options: hexoSpawnOptions): js.Promise[java.lang.String] = js.native
+  def spawn(command: java.lang.String, options: hexoSpawnOverrideStdioOptions): js.Promise[js.UndefOr[java.lang.String]] = js.native
   def stripHTML(str: java.lang.String): java.lang.String = js.native
   def truncate(str: java.lang.String): java.lang.String = js.native
   def truncate(str: java.lang.String, options: hexoDashUtilLib.Anon_Length): java.lang.String = js.native

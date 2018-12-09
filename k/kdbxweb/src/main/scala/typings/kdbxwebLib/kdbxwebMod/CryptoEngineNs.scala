@@ -20,8 +20,8 @@ object CryptoEngineNs extends js.Object {
     parallelism: scala.Double,
     `type`: scala.Double,
     version: scala.Double
-  ): stdLib.Promise[stdLib.ArrayBuffer] = js.native
-  def chacha20(data: stdLib.ArrayBuffer, key: stdLib.ArrayBuffer, iv: stdLib.ArrayBuffer): stdLib.Promise[stdLib.ArrayBuffer] = js.native
+  ): js.Promise[stdLib.ArrayBuffer] = js.native
+  def chacha20(data: stdLib.ArrayBuffer, key: stdLib.ArrayBuffer, iv: stdLib.ArrayBuffer): js.Promise[stdLib.ArrayBuffer] = js.native
   def configure(): scala.Unit = js.native
   def configure(newSubtle: scala.Null, newWebCrypto: scala.Null, newNodeCrypto: stdLib.Crypto): scala.Unit = js.native
   def configure(newSubtle: scala.Null, newWebCrypto: stdLib.Crypto): scala.Unit = js.native
@@ -31,9 +31,9 @@ object CryptoEngineNs extends js.Object {
   def configure(newSubtle: stdLib.SubtleCrypto, newWebCrypto: stdLib.Crypto): scala.Unit = js.native
   def configure(newSubtle: stdLib.SubtleCrypto, newWebCrypto: stdLib.Crypto, newNodeCrypto: stdLib.Crypto): scala.Unit = js.native
   def createAesCbc(): js.Any = js.native
-  def hmacSha256(key: stdLib.ArrayBuffer, data: stdLib.ArrayBuffer): stdLib.Promise[stdLib.ArrayBuffer] = js.native
+  def hmacSha256(key: stdLib.ArrayBuffer, data: stdLib.ArrayBuffer): js.Promise[stdLib.ArrayBuffer] = js.native
   def random(len: scala.Double): stdLib.Uint8Array = js.native
-  def sha256(data: stdLib.ArrayBuffer): stdLib.Promise[stdLib.ArrayBuffer] = js.native
-  def sha512(data: stdLib.ArrayBuffer): stdLib.Promise[stdLib.ArrayBuffer] = js.native
+  def sha256(data: stdLib.ArrayBuffer): js.Promise[stdLib.ArrayBuffer] = js.native
+  def sha512(data: stdLib.ArrayBuffer): js.Promise[stdLib.ArrayBuffer] = js.native
 }
 

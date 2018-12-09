@@ -15,13 +15,13 @@ trait ngStomp extends js.Object {
   def connect(endpoint: java.lang.String, headers: ngDashStompLib.ngStompNs.Headers): angularLib.angularMod.angularNs.IHttpPromise[_] = js.native
   def disconnect(callback: js.Function0[scala.Unit]): angularLib.angularMod.angularNs.IHttpPromise[_] = js.native
   def send(destination: java.lang.String, body: js.Any, headers: ngDashStompLib.ngStompNs.Headers): js.Any = js.native
-  def setDebug(callback: js.Function): scala.Unit = js.native
+  def setDebug(callback: angularLib.angularMod.Global.Function): scala.Unit = js.native
   def subscribe(
     destination: java.lang.String,
     callback: js.Function3[
       /* payload */ java.lang.String, 
       /* headers */ ngDashStompLib.ngStompNs.Headers, 
-      /* res */ js.Function, 
+      /* res */ angularLib.angularMod.Global.Function, 
       scala.Unit
     ]
   ): js.Any = js.native
@@ -30,7 +30,7 @@ trait ngStomp extends js.Object {
     callback: js.Function3[
       /* payload */ java.lang.String, 
       /* headers */ ngDashStompLib.ngStompNs.Headers, 
-      /* res */ js.Function, 
+      /* res */ angularLib.angularMod.Global.Function, 
       scala.Unit
     ],
     headers: ngDashStompLib.ngStompNs.Headers
@@ -40,7 +40,7 @@ trait ngStomp extends js.Object {
     callback: js.Function3[
       /* payload */ java.lang.String, 
       /* headers */ ngDashStompLib.ngStompNs.Headers, 
-      /* res */ js.Function, 
+      /* res */ angularLib.angularMod.Global.Function, 
       scala.Unit
     ],
     headers: ngDashStompLib.ngStompNs.Headers,

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("dns", "resolveCname")
 @js.native
 object resolveCnameNs extends js.Object {
-  def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
 }
 

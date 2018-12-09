@@ -12,7 +12,7 @@ object isomorphicDashFetchMod
       js.Function2[
         /* input */ stdLib.RequestInfo, 
         /* init */ stdLib.RequestInit, 
-        stdLib.Promise[stdLib.Response]
+        js.Promise[stdLib.Response]
       ]
     ]
 

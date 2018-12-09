@@ -52,7 +52,7 @@ trait ServerAuthSchemeObject extends js.Object {
        * revoked). Note that the method does not have access to the original request, only to the
        * credentials and artifacts produced by the `authenticate()` method.
        */
-  var verify: js.UndefOr[js.Function1[/* auth */ RequestAuth, stdLib.Promise[scala.Unit]]] = js.undefined
+  var verify: js.UndefOr[js.Function1[/* auth */ RequestAuth, js.Promise[scala.Unit]]] = js.undefined
   /**
        * A lifecycle method function called for each incoming request configured with the authentication scheme. The
        * method is provided with two special toolkit methods for returning an authenticated or an unauthenticate result:

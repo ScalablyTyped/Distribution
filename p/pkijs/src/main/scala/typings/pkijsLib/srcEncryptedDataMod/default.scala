@@ -20,14 +20,14 @@ class default () extends EncryptedData {
            * @param {*} parameters Parameters neccessary for encryption
            */
   /* CompleteClass */
-  override def decrypt(parameters: pkijsLib.Anon_Password): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  override def decrypt(parameters: pkijsLib.Anon_Password): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
            * Create a new CMS Encrypted Data content
            * @param {*} parameters Parameters neccessary for encryption
            * @returns {Promise}
            */
   /* CompleteClass */
-  override def encrypt(parameters: pkijsLib.Anon_HmacHashAlgorithm): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  override def encrypt(parameters: pkijsLib.Anon_HmacHashAlgorithm): js.Thenable[stdLib.ArrayBuffer] = js.native
   /* CompleteClass */
   override def fromSchema(schema: js.Any): scala.Unit = js.native
   /* CompleteClass */

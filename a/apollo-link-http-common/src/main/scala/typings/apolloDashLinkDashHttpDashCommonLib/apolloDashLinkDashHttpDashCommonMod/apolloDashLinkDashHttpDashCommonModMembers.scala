@@ -12,7 +12,7 @@ object apolloDashLinkDashHttpDashCommonModMembers extends js.Object {
     /* fetcher */ js.Function2[
       /* input */ js.UndefOr[java.lang.String | stdLib.Request], 
       /* init */ js.UndefOr[stdLib.RequestInit], 
-      stdLib.Promise[stdLib.Response]
+      js.Promise[stdLib.Response]
     ], 
     scala.Unit
   ] = js.native
@@ -20,7 +20,7 @@ object apolloDashLinkDashHttpDashCommonModMembers extends js.Object {
   val fallbackHttpConfig: apolloDashLinkDashHttpDashCommonLib.Anon_Options = js.native
   val parseAndCheckHttpResponse: js.Function1[
     /* operations */ js.Any, 
-    js.Function1[/* response */ stdLib.Response, stdLib.Promise[js.Any]]
+    js.Function1[/* response */ stdLib.Response, js.Promise[js.Any]]
   ] = js.native
   val selectHttpOptionsAndBody: js.Function3[
     /* operation */ apolloDashLinkLib.libTypesMod.Operation, 

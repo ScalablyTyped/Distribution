@@ -60,8 +60,7 @@ object defaultNs extends js.Object {
        * @param options Control options.
        * @api stable
        */
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
+  @js.native
   class Control protected ()
     extends openlayersLib.openlayersMod.controlNs.Control {
     /**

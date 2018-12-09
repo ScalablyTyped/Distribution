@@ -13,7 +13,7 @@ class namespaced[R] protected () extends Bluebird[R] {
      * If promise cancellation is enabled, passed in function will receive one more function argument `onCancel` that allows to register an optional cancellation callback.
      */
   def this(callback: js.Function3[
-      /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[R | stdLib.PromiseLike[R]], scala.Unit], 
+      /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[R | js.Thenable[R]], scala.Unit], 
       /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit], 
       /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]], 
       scala.Unit
@@ -66,24 +66,13 @@ object namespaced extends js.Object {
      * The version number of the library
      */
   var version: java.lang.String = js.native
-  def all[T1](values: js.Array[stdLib.PromiseLike[T1] | T1]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[T1]] = js.native
+  def all[T1](values: js.Array[js.Thenable[T1] | T1]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[T1]] = js.native
   // array with values
-  def all[R](values: stdLib.PromiseLike[js.Array[stdLib.PromiseLike[R] | R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
-  def all[T1, T2](values: js.Tuple2[stdLib.PromiseLike[T1] | T1, stdLib.PromiseLike[T2] | T2]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Tuple2[T1, T2]] = js.native
-  def all[T1, T2, T3](
-    values: js.Tuple3[
-      stdLib.PromiseLike[T1] | T1, 
-      stdLib.PromiseLike[T2] | T2, 
-      stdLib.PromiseLike[T3] | T3
-    ]
-  ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Tuple3[T1, T2, T3]] = js.native
+  def all[R](values: js.Thenable[js.Array[js.Thenable[R] | R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
+  def all[T1, T2](values: js.Tuple2[js.Thenable[T1] | T1, js.Thenable[T2] | T2]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Tuple2[T1, T2]] = js.native
+  def all[T1, T2, T3](values: js.Tuple3[js.Thenable[T1] | T1, js.Thenable[T2] | T2, js.Thenable[T3] | T3]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Tuple3[T1, T2, T3]] = js.native
   def all[T1, T2, T3, T4](
-    values: js.Tuple4[
-      stdLib.PromiseLike[T1] | T1, 
-      stdLib.PromiseLike[T2] | T2, 
-      stdLib.PromiseLike[T3] | T3, 
-      stdLib.PromiseLike[T4] | T4
-    ]
+    values: js.Tuple4[js.Thenable[T1] | T1, js.Thenable[T2] | T2, js.Thenable[T3] | T3, js.Thenable[T4] | T4]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Tuple4[T1, T2, T3, T4]] = js.native
   /**
      * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is fulfilled when all the items in the array are fulfilled. The promise's fulfillment value is an array with fulfillment values at respective positions to the original array. If any promise in the array rejects, the returned promise is rejected with the rejection reason.
@@ -92,27 +81,27 @@ object namespaced extends js.Object {
   // array with promises of different types
   def all[T1, T2, T3, T4, T5](
     values: js.Tuple5[
-      stdLib.PromiseLike[T1] | T1, 
-      stdLib.PromiseLike[T2] | T2, 
-      stdLib.PromiseLike[T3] | T3, 
-      stdLib.PromiseLike[T4] | T4, 
-      stdLib.PromiseLike[T5] | T5
+      js.Thenable[T1] | T1, 
+      js.Thenable[T2] | T2, 
+      js.Thenable[T3] | T3, 
+      js.Thenable[T4] | T4, 
+      js.Thenable[T5] | T5
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
   // array with values
   @JSName("all")
-  def all_R[R](values: js.Array[stdLib.PromiseLike[R] | R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
+  def all_R[R](values: js.Array[js.Thenable[R] | R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
    // tslint:disable-line:unified-signatures
   /**
      * Like `Promise.some()`, with 1 as `count`. However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.
      */
-  def any[R](values: js.Array[stdLib.PromiseLike[R] | R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def any[R](values: js.Array[js.Thenable[R] | R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
    // tslint:disable-line:unified-signatures
   /**
      * Like `Promise.some()`, with 1 as `count`. However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.
      */
-  def any[R](values: stdLib.PromiseLike[js.Array[stdLib.PromiseLike[R] | R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
-  def attempt[R](fn: js.Function0[R | stdLib.PromiseLike[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def any[R](values: js.Thenable[js.Array[js.Thenable[R] | R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def attempt[R](fn: js.Function0[R | js.Thenable[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   /**
      * Sugar for `Promise.resolve(undefined).bind(thisArg);`. See `.bind()`.
      */
@@ -124,7 +113,7 @@ object namespaced extends js.Object {
   /**
      * Cast the given `value` to a trusted promise. If `value` is already a trusted `Promise`, it is returned as is. If `value` is not a thenable, a fulfilled is: Promise returned with `value` as its fulfillment value. If `value` is a thenable (Promise-like object, like those returned by jQuery's `$.ajax`), returns a trusted that: Promise assimilates the state of the thenable.
      */
-  def cast[R](value: stdLib.PromiseLike[R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def cast[R](value: js.Thenable[R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   /**
      * Configure long stack traces, warnings, monitoring and cancellation.
      * Note that even though false is the default here, a development environment might be detected which automatically
@@ -370,19 +359,19 @@ object namespaced extends js.Object {
      * If value is a promise, the delay will start counting down when it is fulfilled and the returned
      *  promise will be fulfilled with the fulfillment value of the value promise.
      */
-  def delay[R](ms: scala.Double, value: stdLib.PromiseLike[R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def delay[R](ms: scala.Double, value: js.Thenable[R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   /**
      * Iterate over an array, or a promise of an array, which contains promises (or a mix of promises and values) with the given iterator function with the signature (item, index, value) where item is the resolved value of a respective promise in the input array. Iteration happens serially. If any promise in the input array is rejected the returned promise is rejected as well.
      *
      * Resolves to the original array unmodified, this method is meant to be used for side effects. If the iterator function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
      */
   def each[R, U](
-    values: js.Array[stdLib.PromiseLike[R] | R],
+    values: js.Array[js.Thenable[R] | R],
     iterator: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   /**
@@ -391,12 +380,12 @@ object namespaced extends js.Object {
      * Resolves to the original array unmodified, this method is meant to be used for side effects. If the iterator function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
      */
   def each[R, U](
-    values: stdLib.PromiseLike[js.Array[stdLib.PromiseLike[R] | R]],
+    values: js.Thenable[js.Array[js.Thenable[R] | R]],
     iterator: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   /**
@@ -407,12 +396,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.
      */
   def filter[R](
-    values: js.Array[stdLib.PromiseLike[R] | R],
+    values: js.Array[js.Thenable[R] | R],
     filterer: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      scala.Boolean | stdLib.PromiseLike[scala.Boolean]
+      scala.Boolean | js.Thenable[scala.Boolean]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   /**
@@ -423,12 +412,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.
      */
   def filter[R](
-    values: js.Array[stdLib.PromiseLike[R] | R],
+    values: js.Array[js.Thenable[R] | R],
     filterer: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      scala.Boolean | stdLib.PromiseLike[scala.Boolean]
+      scala.Boolean | js.Thenable[scala.Boolean]
     ],
     option: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
@@ -440,12 +429,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.
      */
   def filter[R](
-    values: stdLib.PromiseLike[js.Array[stdLib.PromiseLike[R] | R]],
+    values: js.Thenable[js.Array[js.Thenable[R] | R]],
     filterer: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      scala.Boolean | stdLib.PromiseLike[scala.Boolean]
+      scala.Boolean | js.Thenable[scala.Boolean]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   /**
@@ -456,12 +445,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.
      */
   def filter[R](
-    values: stdLib.PromiseLike[js.Array[stdLib.PromiseLike[R] | R]],
+    values: js.Thenable[js.Array[js.Thenable[R] | R]],
     filterer: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      scala.Boolean | stdLib.PromiseLike[scala.Boolean]
+      scala.Boolean | js.Thenable[scala.Boolean]
     ],
     option: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
@@ -533,7 +522,7 @@ object namespaced extends js.Object {
   def is(value: js.Any): scala.Boolean = js.native
   // variadic array
   /** @deprecated use .all instead */
-  def join[R](values: (R | stdLib.PromiseLike[R])*): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
+  def join[R](values: (R | js.Thenable[R])*): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   /**
      * Promise.join(
      *   Promise<any>|any values...,
@@ -543,7 +532,7 @@ object namespaced extends js.Object {
      *
      * Note: In 1.x and 0.x Promise.join used to be a Promise.all that took the values in as arguments instead in an array. This behavior has been deprecated but is still supported partially - when the last argument is an immediate function value the new semantics will apply
      */
-  def join[R, A1](arg1: A1, handler: js.Function1[/* arg1 */ A1, R | stdLib.PromiseLike[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def join[R, A1](arg1: A1, handler: js.Function1[/* arg1 */ A1, R | js.Thenable[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   /**
      * Promise.join(
      *   Promise<any>|any values...,
@@ -553,196 +542,196 @@ object namespaced extends js.Object {
      *
      * Note: In 1.x and 0.x Promise.join used to be a Promise.all that took the values in as arguments instead in an array. This behavior has been deprecated but is still supported partially - when the last argument is an immediate function value the new semantics will apply
      */
-  def join[R, A1](arg1: stdLib.PromiseLike[A1], handler: js.Function1[/* arg1 */ A1, R | stdLib.PromiseLike[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
-  def join[R, A1, A2](arg1: A1, arg2: A2, handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | stdLib.PromiseLike[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def join[R, A1](arg1: js.Thenable[A1], handler: js.Function1[/* arg1 */ A1, R | js.Thenable[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def join[R, A1, A2](arg1: A1, arg2: A2, handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2](
     arg1: A1,
-    arg2: stdLib.PromiseLike[A2],
-    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | stdLib.PromiseLike[R]]
+    arg2: js.Thenable[A2],
+    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2](
-    arg1: stdLib.PromiseLike[A1],
+    arg1: js.Thenable[A1],
     arg2: A2,
-    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | stdLib.PromiseLike[R]]
+    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2](
-    arg1: stdLib.PromiseLike[A1],
-    arg2: stdLib.PromiseLike[A2],
-    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | stdLib.PromiseLike[R]]
+    arg1: js.Thenable[A1],
+    arg2: js.Thenable[A2],
+    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3](
     arg1: A1,
     arg2: A2,
     arg3: A3,
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | stdLib.PromiseLike[R]]
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3](
     arg1: A1,
     arg2: A2,
-    arg3: stdLib.PromiseLike[A3],
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | stdLib.PromiseLike[R]]
+    arg3: js.Thenable[A3],
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3](
     arg1: A1,
-    arg2: stdLib.PromiseLike[A2],
+    arg2: js.Thenable[A2],
     arg3: A3,
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | stdLib.PromiseLike[R]]
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3](
     arg1: A1,
-    arg2: stdLib.PromiseLike[A2],
-    arg3: stdLib.PromiseLike[A3],
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | stdLib.PromiseLike[R]]
+    arg2: js.Thenable[A2],
+    arg3: js.Thenable[A3],
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3](
-    arg1: stdLib.PromiseLike[A1],
+    arg1: js.Thenable[A1],
     arg2: A2,
     arg3: A3,
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | stdLib.PromiseLike[R]]
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3](
-    arg1: stdLib.PromiseLike[A1],
+    arg1: js.Thenable[A1],
     arg2: A2,
-    arg3: stdLib.PromiseLike[A3],
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | stdLib.PromiseLike[R]]
+    arg3: js.Thenable[A3],
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3](
-    arg1: stdLib.PromiseLike[A1],
-    arg2: stdLib.PromiseLike[A2],
+    arg1: js.Thenable[A1],
+    arg2: js.Thenable[A2],
     arg3: A3,
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | stdLib.PromiseLike[R]]
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3](
-    arg1: stdLib.PromiseLike[A1],
-    arg2: stdLib.PromiseLike[A2],
-    arg3: stdLib.PromiseLike[A3],
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | stdLib.PromiseLike[R]]
+    arg1: js.Thenable[A1],
+    arg2: js.Thenable[A2],
+    arg3: js.Thenable[A3],
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
     arg1: A1,
     arg2: A2,
     arg3: A3,
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
     arg1: A1,
     arg2: A2,
     arg3: A3,
-    arg4: stdLib.PromiseLike[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    arg4: js.Thenable[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
     arg1: A1,
     arg2: A2,
-    arg3: stdLib.PromiseLike[A3],
+    arg3: js.Thenable[A3],
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
     arg1: A1,
     arg2: A2,
-    arg3: stdLib.PromiseLike[A3],
-    arg4: stdLib.PromiseLike[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    arg3: js.Thenable[A3],
+    arg4: js.Thenable[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
     arg1: A1,
-    arg2: stdLib.PromiseLike[A2],
+    arg2: js.Thenable[A2],
     arg3: A3,
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
     arg1: A1,
-    arg2: stdLib.PromiseLike[A2],
+    arg2: js.Thenable[A2],
     arg3: A3,
-    arg4: stdLib.PromiseLike[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    arg4: js.Thenable[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
     arg1: A1,
-    arg2: stdLib.PromiseLike[A2],
-    arg3: stdLib.PromiseLike[A3],
+    arg2: js.Thenable[A2],
+    arg3: js.Thenable[A3],
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
     arg1: A1,
-    arg2: stdLib.PromiseLike[A2],
-    arg3: stdLib.PromiseLike[A3],
-    arg4: stdLib.PromiseLike[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    arg2: js.Thenable[A2],
+    arg3: js.Thenable[A3],
+    arg4: js.Thenable[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
-    arg1: stdLib.PromiseLike[A1],
+    arg1: js.Thenable[A1],
     arg2: A2,
     arg3: A3,
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
-    arg1: stdLib.PromiseLike[A1],
+    arg1: js.Thenable[A1],
     arg2: A2,
     arg3: A3,
-    arg4: stdLib.PromiseLike[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    arg4: js.Thenable[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
-    arg1: stdLib.PromiseLike[A1],
+    arg1: js.Thenable[A1],
     arg2: A2,
-    arg3: stdLib.PromiseLike[A3],
+    arg3: js.Thenable[A3],
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
-    arg1: stdLib.PromiseLike[A1],
+    arg1: js.Thenable[A1],
     arg2: A2,
-    arg3: stdLib.PromiseLike[A3],
-    arg4: stdLib.PromiseLike[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    arg3: js.Thenable[A3],
+    arg4: js.Thenable[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
-    arg1: stdLib.PromiseLike[A1],
-    arg2: stdLib.PromiseLike[A2],
+    arg1: js.Thenable[A1],
+    arg2: js.Thenable[A2],
     arg3: A3,
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
-    arg1: stdLib.PromiseLike[A1],
-    arg2: stdLib.PromiseLike[A2],
+    arg1: js.Thenable[A1],
+    arg2: js.Thenable[A2],
     arg3: A3,
-    arg4: stdLib.PromiseLike[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    arg4: js.Thenable[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
-    arg1: stdLib.PromiseLike[A1],
-    arg2: stdLib.PromiseLike[A2],
-    arg3: stdLib.PromiseLike[A3],
+    arg1: js.Thenable[A1],
+    arg2: js.Thenable[A2],
+    arg3: js.Thenable[A3],
     arg4: A4,
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
-    arg1: stdLib.PromiseLike[A1],
-    arg2: stdLib.PromiseLike[A2],
-    arg3: stdLib.PromiseLike[A3],
-    arg4: stdLib.PromiseLike[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
+    arg1: js.Thenable[A1],
+    arg2: js.Thenable[A2],
+    arg3: js.Thenable[A3],
+    arg4: js.Thenable[A4],
+    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4, A5](
-    arg1: A1 | stdLib.PromiseLike[A1],
-    arg2: A2 | stdLib.PromiseLike[A2],
-    arg3: A3 | stdLib.PromiseLike[A3],
-    arg4: A4 | stdLib.PromiseLike[A4],
-    arg5: A5 | stdLib.PromiseLike[A5],
+    arg1: A1 | js.Thenable[A1],
+    arg2: A2 | js.Thenable[A2],
+    arg3: A3 | js.Thenable[A3],
+    arg4: A4 | js.Thenable[A4],
+    arg5: A5 | js.Thenable[A5],
     handler: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | stdLib.PromiseLike[R]
+      R | js.Thenable[R]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   /**
@@ -757,12 +746,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.*
      */
   def map[R, U](
-    values: js.Array[stdLib.PromiseLike[R] | R],
+    values: js.Array[js.Thenable[R] | R],
     mapper: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
   /**
@@ -773,12 +762,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.*
      */
   def map[R, U](
-    values: js.Array[stdLib.PromiseLike[R] | R],
+    values: js.Array[js.Thenable[R] | R],
     mapper: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ],
     options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
@@ -790,12 +779,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.*
      */
   def map[R, U](
-    values: stdLib.Iterable[stdLib.PromiseLike[R] | R],
+    values: js.Thenable[(js.Array[js.Thenable[R] | R]) | (stdLib.Iterable[js.Thenable[R] | R])],
     mapper: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
   /**
@@ -806,12 +795,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.*
      */
   def map[R, U](
-    values: stdLib.Iterable[stdLib.PromiseLike[R] | R],
+    values: js.Thenable[(js.Array[js.Thenable[R] | R]) | (stdLib.Iterable[js.Thenable[R] | R])],
     mapper: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ],
     options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
@@ -823,14 +812,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.*
      */
   def map[R, U](
-    values: stdLib.PromiseLike[
-      (js.Array[stdLib.PromiseLike[R] | R]) | (stdLib.Iterable[stdLib.PromiseLike[R] | R])
-    ],
+    values: stdLib.Iterable[js.Thenable[R] | R],
     mapper: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
   /**
@@ -841,14 +828,12 @@ object namespaced extends js.Object {
      * *The original array is not modified.*
      */
   def map[R, U](
-    values: stdLib.PromiseLike[
-      (js.Array[stdLib.PromiseLike[R] | R]) | (stdLib.Iterable[stdLib.PromiseLike[R] | R])
-    ],
+    values: stdLib.Iterable[js.Thenable[R] | R],
     mapper: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ],
     options: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ConcurrencyOption
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
@@ -860,12 +845,12 @@ object namespaced extends js.Object {
      * If any promise in the input array is rejected or any promise returned by the iterator function is rejected, the result will be rejected as well.
      */
   def mapSeries[R, U](
-    values: js.Array[stdLib.PromiseLike[R] | R],
+    values: js.Array[js.Thenable[R] | R],
     iterator: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
   /**
@@ -876,12 +861,12 @@ object namespaced extends js.Object {
      * If any promise in the input array is rejected or any promise returned by the iterator function is rejected, the result will be rejected as well.
      */
   def mapSeries[R, U](
-    values: stdLib.Iterable[stdLib.PromiseLike[R] | R],
+    values: js.Thenable[(js.Array[js.Thenable[R] | R]) | (stdLib.Iterable[js.Thenable[R] | R])],
     iterator: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
   /**
@@ -892,27 +877,23 @@ object namespaced extends js.Object {
      * If any promise in the input array is rejected or any promise returned by the iterator function is rejected, the result will be rejected as well.
      */
   def mapSeries[R, U](
-    values: stdLib.PromiseLike[
-      (js.Array[stdLib.PromiseLike[R] | R]) | (stdLib.Iterable[stdLib.PromiseLike[R] | R])
-    ],
+    values: stdLib.Iterable[js.Thenable[R] | R],
     iterator: js.Function3[
       /* item */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[U]] = js.native
-  def method[R](fn: js.Function1[/* repeated */js.Any, R | stdLib.PromiseLike[R]]): js.Function1[/* repeated */js.Any, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R]] = js.native
-  def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | stdLib.PromiseLike[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R]] = js.native
-  def method[R, A1, A2, A3](fn: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | stdLib.PromiseLike[R]]): js.Function3[
+  def method[R](fn: js.Function1[/* repeated */js.Any, R | js.Thenable[R]]): js.Function1[/* repeated */js.Any, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R]] = js.native
+  def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, R | js.Thenable[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R]] = js.native
+  def method[R, A1, A2, A3](fn: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, R | js.Thenable[R]]): js.Function3[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
     /* arg3 */ A3, 
     bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R]
   ] = js.native
-  def method[R, A1, A2, A3, A4](
-    fn: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | stdLib.PromiseLike[R]]
-  ): js.Function4[
+  def method[R, A1, A2, A3, A4](fn: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, R | js.Thenable[R]]): js.Function4[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
     /* arg3 */ A3, 
@@ -926,7 +907,7 @@ object namespaced extends js.Object {
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      R | stdLib.PromiseLike[R]
+      R | js.Thenable[R]
     ]
   ): js.Function5[
     /* arg1 */ A1, 
@@ -941,7 +922,7 @@ object namespaced extends js.Object {
      * This method is convenient when a function can sometimes return synchronously or throw synchronously.
      */
   @JSName("method")
-  def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, R | stdLib.PromiseLike[R]]): js.Function1[/* arg1 */ A1, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R]] = js.native
+  def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, R | js.Thenable[R]]): js.Function1[/* arg1 */ A1, bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R]] = js.native
   /**
      * Add handler as the handler to call when there is a possibly unhandled rejection.
      * The default handler logs the error stack to stderr or console.error in browsers.
@@ -1155,10 +1136,10 @@ object namespaced extends js.Object {
   // object
   def props[T](`object`: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ResolvableProps[T]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
   // trusted promise for object
-  def props[T](`object`: stdLib.PromiseLike[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ResolvableProps[T]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
+  def props[T](`object`: js.Thenable[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.ResolvableProps[T]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
    // tslint:disable-line:unified-signatures
   // map
-  def props[K, V](map: stdLib.Map[K, stdLib.PromiseLike[V] | V]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[stdLib.Map[K, V]] = js.native
+  def props[K, V](map: stdLib.Map[K, js.Thenable[V] | V]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[stdLib.Map[K, V]] = js.native
   /**
      * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled. The promise's fulfillment value is an object with fulfillment values at respective keys to the original object. If any promise in the object rejects, the returned promise is rejected with the rejection reason.
      *
@@ -1168,19 +1149,19 @@ object namespaced extends js.Object {
      */
   // trusted promise for map
   @JSName("props")
-  def props_KV[K, V](map: stdLib.PromiseLike[stdLib.Map[K, stdLib.PromiseLike[V] | V]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[stdLib.Map[K, V]] = js.native
+  def props_KV[K, V](map: js.Thenable[stdLib.Map[K, js.Thenable[V] | V]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[stdLib.Map[K, V]] = js.native
   /**
      * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is fulfilled or rejected as soon as a promise in the array is fulfilled or rejected with the respective rejection reason or fulfillment value.
      *
      * **Note** If you pass empty array or a sparse array with no values, or a promise/thenable for such, it will be forever pending.
      */
-  def race[R](values: js.Array[stdLib.PromiseLike[R] | R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def race[R](values: js.Array[js.Thenable[R] | R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   /**
      * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is fulfilled or rejected as soon as a promise in the array is fulfilled or rejected with the respective rejection reason or fulfillment value.
      *
      * **Note** If you pass empty array or a sparse array with no values, or a promise/thenable for such, it will be forever pending.
      */
-  def race[R](values: stdLib.PromiseLike[js.Array[stdLib.PromiseLike[R] | R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def race[R](values: js.Thenable[js.Array[js.Thenable[R] | R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   /**
      * Reduce an array, or a promise of an array, which contains a promises (or a mix of promises and values) with the given `reducer` function with the signature `(total, current, index, arrayLength)` where `item` is the resolved value of a respective promise in the input array. If any promise in the input array is rejected the returned promise is rejected as well.
      *
@@ -1189,13 +1170,13 @@ object namespaced extends js.Object {
      * *The original array is not modified. If no `intialValue` is given and the array doesn't contain at least 2 items, the callback will not be called and `undefined` is returned. If `initialValue` is given and the array doesn't have at least 1 item, `initialValue` is returned.*
      */
   def reduce[R, U](
-    values: js.Array[stdLib.PromiseLike[R] | R],
+    values: js.Array[js.Thenable[R] | R],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[U] = js.native
   /**
@@ -1206,13 +1187,13 @@ object namespaced extends js.Object {
      * *The original array is not modified. If no `intialValue` is given and the array doesn't contain at least 2 items, the callback will not be called and `undefined` is returned. If `initialValue` is given and the array doesn't have at least 1 item, `initialValue` is returned.*
      */
   def reduce[R, U](
-    values: js.Array[stdLib.PromiseLike[R] | R],
+    values: js.Array[js.Thenable[R] | R],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ],
     initialValue: U
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[U] = js.native
@@ -1224,13 +1205,13 @@ object namespaced extends js.Object {
      * *The original array is not modified. If no `intialValue` is given and the array doesn't contain at least 2 items, the callback will not be called and `undefined` is returned. If `initialValue` is given and the array doesn't have at least 1 item, `initialValue` is returned.*
      */
   def reduce[R, U](
-    values: stdLib.PromiseLike[js.Array[stdLib.PromiseLike[R] | R]],
+    values: js.Thenable[js.Array[js.Thenable[R] | R]],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[U] = js.native
   /**
@@ -1241,13 +1222,13 @@ object namespaced extends js.Object {
      * *The original array is not modified. If no `intialValue` is given and the array doesn't contain at least 2 items, the callback will not be called and `undefined` is returned. If `initialValue` is given and the array doesn't have at least 1 item, `initialValue` is returned.*
      */
   def reduce[R, U](
-    values: stdLib.PromiseLike[js.Array[stdLib.PromiseLike[R] | R]],
+    values: js.Thenable[js.Array[js.Thenable[R] | R]],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      U | stdLib.PromiseLike[U]
+      U | js.Thenable[U]
     ],
     initialValue: U
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[U] = js.native
@@ -1262,7 +1243,7 @@ object namespaced extends js.Object {
      */
   def resolve(): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[scala.Unit] = js.native
   def resolve[R](value: R): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
-  def resolve[R](value: stdLib.PromiseLike[R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def resolve[R](value: js.Thenable[R]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   /**
      * Initiate a competetive race between multiple promises or values (values will become immediately fulfilled promises). When `count` amount of promises have been fulfilled, the returned promise is fulfilled with an array that contains the fulfillment values of the winners in order of resolution.
      *
@@ -1270,7 +1251,7 @@ object namespaced extends js.Object {
      *
      * *The original array is not modified.*
      */
-  def some[R](values: js.Array[stdLib.PromiseLike[R] | R], count: scala.Double): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
+  def some[R](values: js.Array[js.Thenable[R] | R], count: scala.Double): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   /**
      * Initiate a competetive race between multiple promises or values (values will become immediately fulfilled promises). When `count` amount of promises have been fulfilled, the returned promise is fulfilled with an array that contains the fulfillment values of the winners in order of resolution.
      *
@@ -1278,7 +1259,7 @@ object namespaced extends js.Object {
      *
      * *The original array is not modified.*
      */
-  def some[R](values: stdLib.PromiseLike[js.Array[stdLib.PromiseLike[R] | R]], count: scala.Double): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
+  def some[R](values: js.Thenable[js.Array[js.Thenable[R] | R]], count: scala.Double): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Array[R]] = js.native
   /**
      * Start the chain of promises with `Promise.try`. Any synchronous exceptions will be turned into rejections on the returned promise.
      *
@@ -1286,7 +1267,7 @@ object namespaced extends js.Object {
      *
      * Alias for `attempt();` for compatibility with earlier ECMAScript version.
      */
-  def `try`[R](fn: js.Function0[R | stdLib.PromiseLike[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
+  def `try`[R](fn: js.Function0[R | js.Thenable[R]]): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[R] = js.native
   /**
      * In conjunction with `.disposer`, using will make sure that no matter what, the specified disposer
      *  will be called when the promise returned by the callback passed to using has settled. The disposer is
@@ -1294,23 +1275,18 @@ object namespaced extends js.Object {
      */
   def using[R, T](
     disposer: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R],
-    executor: js.Function1[/* transaction */ R, stdLib.PromiseLike[T]]
+    executor: js.Function1[/* transaction */ R, js.Thenable[T]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
   def using[R1, R2, T](
     disposer: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R1],
     disposer2: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R2],
-    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, stdLib.PromiseLike[T]]
+    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
   def using[R1, R2, R3, T](
     disposer: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R1],
     disposer2: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R2],
     disposer3: bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[R3],
-    executor: js.Function3[
-      /* transaction1 */ R1, 
-      /* transaction2 */ R2, 
-      /* transaction3 */ R3, 
-      stdLib.PromiseLike[T]
-    ]
+    executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
   ): bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[T] = js.native
 }
 

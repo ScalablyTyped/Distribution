@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Transfers
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def cancel(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
-  def cancel(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  def cancel(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  def cancel(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   def cancel(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   def cancel(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
-  def create(data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferCreationOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  def create(data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   /**
                * To send funds from your Stripe account to a third-party recipient or to your own bank account, you create a new transfer
                * object. Your Stripe balance must be able to cover the transfer amount, or you'll receive an "Insufficient Funds" error.
@@ -33,7 +33,7 @@ trait Transfers
   def create(
     data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   /**
                * To send funds from your Stripe account to a third-party recipient or to your own bank account, you create a new transfer
                * object. Your Stripe balance must be able to cover the transfer amount, or you'll receive an "Insufficient Funds" error.
@@ -48,12 +48,12 @@ trait Transfers
     data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   def create(
     data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
-  def createReversal(transferId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  def createReversal(transferId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   /**
                * When you create a new reversal, you must specify a transfer to create it on.
                *
@@ -70,7 +70,7 @@ trait Transfers
     transferId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversalCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   /**
                * When you create a new reversal, you must specify a transfer to create it on.
                *
@@ -88,23 +88,23 @@ trait Transfers
     data: stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversalCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
-  def createReversal(transferId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  def createReversal(transferId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   def createReversal(
     transferId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   def createReversal(
     transferId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
    //TODO: Implement placeholder method
   def getMetadata(): scala.Unit = js.native
-  def list(): stdLib.Promise[
+  def list(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
   ] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferListOptions): stdLib.Promise[
+  def list(data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
   ] = js.native
   /**
@@ -114,7 +114,7 @@ trait Transfers
   def list(
     data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
   ] = js.native
   /**
@@ -127,7 +127,7 @@ trait Transfers
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
   ] = js.native
   def list(
@@ -135,10 +135,10 @@ trait Transfers
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
   ] = js.native
-  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
   ] = js.native
   def list(
@@ -146,20 +146,20 @@ trait Transfers
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
   ] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
   ] = js.native
-  def listReversals(transferId: java.lang.String): stdLib.Promise[
+  def listReversals(transferId: java.lang.String): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
   ] = js.native
-  def listReversals(transferId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IListOptions): stdLib.Promise[
+  def listReversals(transferId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
   ] = js.native
   /**
@@ -171,7 +171,7 @@ trait Transfers
     transferId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
   ] = js.native
   /**
@@ -186,7 +186,7 @@ trait Transfers
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
   ] = js.native
   def listReversals(
@@ -195,10 +195,10 @@ trait Transfers
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
   ] = js.native
-  def listReversals(transferId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def listReversals(transferId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
   ] = js.native
   def listReversals(
@@ -207,7 +207,7 @@ trait Transfers
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
   ] = js.native
   def listReversals(
@@ -215,14 +215,14 @@ trait Transfers
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
   ] = js.native
    //TODO: Not sure if this should be a list of balance transactions or charges.
-  def listTransactions(): stdLib.Promise[
+  def listTransactions(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
-  def listTransactions(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def listTransactions(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
   def listTransactions(
@@ -230,7 +230,7 @@ trait Transfers
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
    //TODO: Not sure if this should be a list of balance transactions or charges.
@@ -238,11 +238,11 @@ trait Transfers
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.chargesNs.ICharge]
   ] = js.native
-  def retrieve(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
-  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   /**
                * Retrieves the details of an existing transfer. Supply the unique transfer ID from either a transfer creation request or
                * the transfer list, and Stripe will return the corresponding transfer information.
@@ -251,7 +251,7 @@ trait Transfers
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   /**
                * Retrieves the details of an existing transfer. Supply the unique transfer ID from either a transfer creation request or
                * the transfer list, and Stripe will return the corresponding transfer information.
@@ -261,23 +261,23 @@ trait Transfers
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   def retrieve(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
-  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   def retrieve(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   def retrieve(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
-  def retrieveReversal(transferId: java.lang.String, reversalId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  def retrieveReversal(transferId: java.lang.String, reversalId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   /**
                * By default, you can see the 10 most recent reversals stored directly on the transfer object, but you can also retrieve details about a
                * specific reversal stored on the transfer.
@@ -286,7 +286,7 @@ trait Transfers
     transferId: java.lang.String,
     reversalId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   /**
                * By default, you can see the 10 most recent reversals stored directly on the transfer object, but you can also retrieve details about a
                * specific reversal stored on the transfer.
@@ -296,13 +296,13 @@ trait Transfers
     reversalId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   def retrieveReversal(
     transferId: java.lang.String,
     reversalId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
-  def reverse(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  def reverse(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
    //TODO: Not sure if this should be a list of balance transactions or charges.
   /**
                * When you create a new reversal, you must specify a transfer to create it on.
@@ -320,7 +320,7 @@ trait Transfers
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversalCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
    //TODO: Not sure if this should be a list of balance transactions or charges.
   /**
                * When you create a new reversal, you must specify a transfer to create it on.
@@ -339,19 +339,19 @@ trait Transfers
     data: stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversalCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
-  def reverse(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  def reverse(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   def reverse(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   def reverse(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   def setMetadata(): scala.Unit = js.native
-  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferUpdateOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferUpdateOptions): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   /**
                * Updates the specified transfer by setting the values of the parameters passed. Any parameters not provided will be left
                * unchanged.
@@ -362,7 +362,7 @@ trait Transfers
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   /**
                * Updates the specified transfer by setting the values of the parameters passed. Any parameters not provided will be left
                * unchanged.
@@ -374,17 +374,17 @@ trait Transfers
     data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   def update(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.transfersNs.ITransferUpdateOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer] = js.native
   def updateReversal(
     transferId: java.lang.String,
     reversalId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversalUpdateOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   /**
                * Updates the specified reversal by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
                *
@@ -395,7 +395,7 @@ trait Transfers
     reversalId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversalUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   /**
                * Updates the specified reversal by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
                *
@@ -407,12 +407,12 @@ trait Transfers
     data: stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversalUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
   def updateReversal(
     transferId: java.lang.String,
     reversalId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversalUpdateOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.transferReversalsNs.IReversal] = js.native
 }
 

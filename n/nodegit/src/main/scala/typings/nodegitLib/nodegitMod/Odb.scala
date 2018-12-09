@@ -13,6 +13,6 @@ class Odb ()
 @JSImport("nodegit", "Odb")
 @js.native
 object Odb extends js.Object {
-  def open(objectsDir: java.lang.String): stdLib.Promise[nodegitLib.odbMod.Odb] = js.native
+  def open(objectsDir: java.lang.String): js.Promise[nodegitLib.odbMod.Odb] = js.native
 }
 

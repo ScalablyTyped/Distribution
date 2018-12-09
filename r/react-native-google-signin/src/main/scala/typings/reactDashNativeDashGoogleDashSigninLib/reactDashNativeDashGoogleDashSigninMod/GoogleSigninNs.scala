@@ -22,39 +22,39 @@ object GoogleSigninNs extends js.Object {
        * Check if the device has Google Play Services installed. Always resolves
        * true on iOS
        */
-  def hasPlayServices(): stdLib.Promise[scala.Boolean] = js.native
+  def hasPlayServices(): js.Promise[scala.Boolean] = js.native
   /**
        * Check if the device has Google Play Services installed. Always resolves
        * true on iOS
        */
   def hasPlayServices(
     params: reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.HasPlayServicesParams
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
        * Returns whether the user is currently signed in
        */
-  def isSignedIn(): stdLib.Promise[scala.Boolean] = js.native
+  def isSignedIn(): js.Promise[scala.Boolean] = js.native
   /**
        * Removes your application from the user's authorized applications
        */
-  def revokeAccess(): stdLib.Promise[scala.Unit] = js.native
+  def revokeAccess(): js.Promise[scala.Unit] = js.native
   /**
        * Prompts the user to sign in with their Google account. Resolves with the
        * user if successful.
        */
-  def signIn(): stdLib.Promise[
+  def signIn(): js.Promise[
     reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.User
   ] = js.native
   /**
        * Returns a Promise that resolves with the current signed in user or rejects
        * if not signed in.
        */
-  def signInSilently(): stdLib.Promise[
+  def signInSilently(): js.Promise[
     reactDashNativeDashGoogleDashSigninLib.reactDashNativeDashGoogleDashSigninMod.User
   ] = js.native
   /**
        * Signs the user out.
        */
-  def signOut(): stdLib.Promise[scala.Unit] = js.native
+  def signOut(): js.Promise[scala.Unit] = js.native
 }
 

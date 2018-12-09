@@ -49,7 +49,7 @@ class FormStateLazy[TValue /* <: ValidatableArray */] protected ()
   /** It is a function as fields can change over time */
   /* protected */ def getFields(): TValue = js.native
   /* CompleteClass */
-  override def validate(): stdLib.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native
+  override def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native
   def validators(validators: formstateLib.libCoreTypesMod.Validator[TValue]*): this.type = js.native
 }
 

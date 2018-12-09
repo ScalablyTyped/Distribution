@@ -13,19 +13,19 @@ trait RepositoryRef extends js.Object {
   def getCommit(sha: java.lang.String): typedDashGithubDashApiLib.distInterfacesCommitMod.CommitRef = js.native
   def getIssue(issueNumber: scala.Double): typedDashGithubDashApiLib.distInterfacesIssueMod.IssueRef = js.native
   def getPullRequest(pullRequestNumber: scala.Double): typedDashGithubDashApiLib.distInterfacesPullDashRequestMod.PullRequestRef = js.native
-  def loadAsync(): stdLib.Promise[Repository | scala.Null] = js.native
+  def loadAsync(): js.Promise[Repository | scala.Null] = js.native
   /**
        * Loads branches from this repository.
        * @param protectedOnly Only loads protected branches
        * @returns             The resulting array of branches
        */
-  def loadBranchesAsync(): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesBranchMod.BranchRef]] = js.native
+  def loadBranchesAsync(): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesBranchMod.BranchRef]] = js.native
   /**
        * Loads branches from this repository.
        * @param protectedOnly Only loads protected branches
        * @returns             The resulting array of branches
        */
-  def loadBranchesAsync(protectedOnly: scala.Boolean): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesBranchMod.BranchRef]] = js.native
+  def loadBranchesAsync(protectedOnly: scala.Boolean): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesBranchMod.BranchRef]] = js.native
   /**
        * Loads commits from this repository.
        * @param start         SHA or branch to start listing commits from. Default: the repository�s default branch (usually master)
@@ -35,7 +35,7 @@ trait RepositoryRef extends js.Object {
        * @param until         Only commits before this date will be returned
        * @returns             The resulting array of commits
        */
-  def loadCommitsAsync(): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
+  def loadCommitsAsync(): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
   /**
        * Loads commits from this repository.
        * @param start         SHA or branch to start listing commits from. Default: the repository�s default branch (usually master)
@@ -45,7 +45,7 @@ trait RepositoryRef extends js.Object {
        * @param until         Only commits before this date will be returned
        * @returns             The resulting array of commits
        */
-  def loadCommitsAsync(start: java.lang.String): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
+  def loadCommitsAsync(start: java.lang.String): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
   /**
        * Loads commits from this repository.
        * @param start         SHA or branch to start listing commits from. Default: the repository�s default branch (usually master)
@@ -55,7 +55,7 @@ trait RepositoryRef extends js.Object {
        * @param until         Only commits before this date will be returned
        * @returns             The resulting array of commits
        */
-  def loadCommitsAsync(start: java.lang.String, pathIncluded: java.lang.String): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
+  def loadCommitsAsync(start: java.lang.String, pathIncluded: java.lang.String): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
   /**
        * Loads commits from this repository.
        * @param start         SHA or branch to start listing commits from. Default: the repository�s default branch (usually master)
@@ -65,7 +65,7 @@ trait RepositoryRef extends js.Object {
        * @param until         Only commits before this date will be returned
        * @returns             The resulting array of commits
        */
-  def loadCommitsAsync(start: java.lang.String, pathIncluded: java.lang.String, author: java.lang.String): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
+  def loadCommitsAsync(start: java.lang.String, pathIncluded: java.lang.String, author: java.lang.String): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
   /**
        * Loads commits from this repository.
        * @param start         SHA or branch to start listing commits from. Default: the repository�s default branch (usually master)
@@ -80,7 +80,7 @@ trait RepositoryRef extends js.Object {
     pathIncluded: java.lang.String,
     author: java.lang.String,
     since: momentLib.momentMod.momentNs.Moment
-  ): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
+  ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
   /**
        * Loads commits from this repository.
        * @param start         SHA or branch to start listing commits from. Default: the repository�s default branch (usually master)
@@ -96,7 +96,7 @@ trait RepositoryRef extends js.Object {
     author: java.lang.String,
     since: momentLib.momentMod.momentNs.Moment,
     until: momentLib.momentMod.momentNs.Moment
-  ): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
+  ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesCommitMod.CommitSummary]] = js.native
   /**
        * Loads issues for this repository.
        * @param milestone     Only loads issues for this milestone, if specified;
@@ -131,7 +131,7 @@ trait RepositoryRef extends js.Object {
     ],
     ascending: js.UndefOr[scala.Boolean],
     updatedSince: js.UndefOr[momentLib.momentMod.momentNs.Moment]
-  ): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]] = js.native
+  ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]] = js.native
   /**
        * Loads pull requests for this repository.
        * @param state         Only loads pull requests for this state (default open)
@@ -153,6 +153,6 @@ trait RepositoryRef extends js.Object {
       typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.created | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`long-running` | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.popularity | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.updated
     ],
     ascending: js.UndefOr[scala.Boolean]
-  ): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesPullDashRequestMod.PullRequest]] = js.native
+  ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesPullDashRequestMod.PullRequest]] = js.native
 }
 

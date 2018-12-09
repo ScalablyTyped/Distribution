@@ -15,10 +15,7 @@ trait ExplorerOptions extends js.Object {
   var searchPlaces: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var stopDir: js.UndefOr[java.lang.String] = js.undefined
   var transform: js.UndefOr[
-    js.Function1[
-      /* result */ CosmiconfigResult, 
-      stdLib.Promise[CosmiconfigResult] | CosmiconfigResult
-    ]
+    js.Function1[/* result */ CosmiconfigResult, js.Promise[CosmiconfigResult] | CosmiconfigResult]
   ] = js.undefined
 }
 

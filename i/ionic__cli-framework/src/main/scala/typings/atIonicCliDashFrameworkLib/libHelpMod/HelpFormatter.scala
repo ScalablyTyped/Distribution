@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 abstract class HelpFormatter protected () extends js.Object {
   def this(hasColors: atIonicCliDashFrameworkLib.Anon_Colors) = this()
   val colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
-  def format(): stdLib.Promise[java.lang.String] = js.native
+  def format(): js.Promise[java.lang.String] = js.native
 }
 

@@ -16,8 +16,8 @@ object builderDashUtilModMembers extends js.Object {
   def asArray[T](): js.Array[T] = js.native
   def asArray[T](v: T): js.Array[T] = js.native
   def asArray[T](v: js.Array[T]): js.Array[T] = js.native
-  def copyFile(src: java.lang.String, dest: java.lang.String): stdLib.Promise[_] = js.native
-  def copyFile(src: java.lang.String, dest: java.lang.String, isEnsureDir: scala.Boolean): stdLib.Promise[_] = js.native
+  def copyFile(src: java.lang.String, dest: java.lang.String): js.Promise[_] = js.native
+  def copyFile(src: java.lang.String, dest: java.lang.String, isEnsureDir: scala.Boolean): js.Promise[_] = js.native
   def deepAssign[T](target: T, objects: js.Any*): T = js.native
   def doSpawn(command: java.lang.String, args: js.Array[java.lang.String]): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def doSpawn(
@@ -31,40 +31,40 @@ object builderDashUtilModMembers extends js.Object {
     options: nodeLib.childUnderscoreProcessMod.SpawnOptions,
     extraOptions: ExtraSpawnOptions
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def exec(file: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-  def exec(file: java.lang.String, args: js.Array[java.lang.String]): stdLib.Promise[java.lang.String] = js.native
+  def exec(file: java.lang.String): js.Promise[java.lang.String] = js.native
+  def exec(file: java.lang.String, args: js.Array[java.lang.String]): js.Promise[java.lang.String] = js.native
   def exec(
     file: java.lang.String,
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   def exec(
     file: java.lang.String,
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions,
     isLogOutIfDebug: scala.Boolean
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   def exec(
     file: java.lang.String,
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   def exec(
     file: java.lang.String,
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions,
     isLogOutIfDebug: scala.Boolean
-  ): stdLib.Promise[java.lang.String] = js.native
-  def executeAppBuilder(args: js.Array[java.lang.String]): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
+  def executeAppBuilder(args: js.Array[java.lang.String]): js.Promise[java.lang.String] = js.native
   def executeAppBuilder(
     args: js.Array[java.lang.String],
     childProcessConsumer: js.Function1[/* childProcess */ nodeLib.childUnderscoreProcessMod.ChildProcess, scala.Unit]
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   def executeAppBuilder(
     args: js.Array[java.lang.String],
     childProcessConsumer: js.Function1[/* childProcess */ nodeLib.childUnderscoreProcessMod.ChildProcess, scala.Unit],
     extraOptions: nodeLib.childUnderscoreProcessMod.ExecFileOptions
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   def getArchCliNames(): js.Array[java.lang.String] = js.native
   def getArchSuffix(arch: builderDashUtilLib.outArchMod.Arch): java.lang.String = js.native
   def getPlatformIconFileName(value: java.lang.String, isMac: scala.Boolean): js.UndefOr[java.lang.String | scala.Null] = js.native
@@ -85,37 +85,37 @@ object builderDashUtilModMembers extends js.Object {
   def serializeToYaml(`object`: js.Object): java.lang.String = js.native
   def serializeToYaml(`object`: js.Object, skipInvalid: scala.Boolean): java.lang.String = js.native
   def serializeToYaml(`object`: js.Object, skipInvalid: scala.Boolean, noRefs: scala.Boolean): java.lang.String = js.native
-  def spawn(command: java.lang.String): stdLib.Promise[_] = js.native
-  def spawn(command: java.lang.String, args: js.Array[java.lang.String]): stdLib.Promise[_] = js.native
+  def spawn(command: java.lang.String): js.Promise[_] = js.native
+  def spawn(command: java.lang.String, args: js.Array[java.lang.String]): js.Promise[_] = js.native
   def spawn(
     command: java.lang.String,
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.SpawnOptions
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def spawn(
     command: java.lang.String,
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.SpawnOptions,
     extraOptions: ExtraSpawnOptions
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def spawn(
     command: java.lang.String,
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.SpawnOptions
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def spawn(
     command: java.lang.String,
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.SpawnOptions,
     extraOptions: ExtraSpawnOptions
-  ): stdLib.Promise[_] = js.native
-  def spawnAndWrite(command: java.lang.String, args: js.Array[java.lang.String], data: java.lang.String): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
+  def spawnAndWrite(command: java.lang.String, args: js.Array[java.lang.String], data: java.lang.String): js.Promise[_] = js.native
   def spawnAndWrite(
     command: java.lang.String,
     args: js.Array[java.lang.String],
     data: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.SpawnOptions
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def toLinuxArchString(arch: builderDashUtilLib.outArchMod.Arch): java.lang.String = js.native
   def use[T, R](value: T, task: js.Function1[/* it */ T, R]): R | scala.Null = js.native
   def use[T, R](value: scala.Null, task: js.Function1[/* it */ T, R]): R | scala.Null = js.native

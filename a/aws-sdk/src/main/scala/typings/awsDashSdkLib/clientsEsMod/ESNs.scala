@@ -46,7 +46,7 @@ object ESNs extends js.Object {
   
   
   trait AdvancedOptions
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait AdvancedOptionsStatus extends js.Object {
@@ -89,7 +89,7 @@ object ESNs extends js.Object {
     /**
          * Specifies the option to enable Cognito for Kibana authentication.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the Cognito identity pool ID for Kibana authentication.
          */
@@ -319,7 +319,7 @@ object ESNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * List of reserved Elasticsearch instances.
          */
@@ -339,7 +339,7 @@ object ESNs extends js.Object {
     /**
          * Specifies whether EBS-based storage is enabled.
          */
-    var EBSEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var EBSEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the IOPD for a Provisioned IOPS EBS volume (SSD).
          */
@@ -375,7 +375,7 @@ object ESNs extends js.Object {
     /**
          * A boolean value to indicate whether a dedicated master node is enabled. See About Dedicated Master Nodes for more information.
          */
-    var DedicatedMasterEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var DedicatedMasterEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance type for a dedicated master node.
          */
@@ -391,7 +391,7 @@ object ESNs extends js.Object {
     /**
          * A boolean value to indicate whether zone awareness is enabled. See About Zone Awareness for more information.
          */
-    var ZoneAwarenessEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ZoneAwarenessEnabled: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -475,11 +475,11 @@ object ESNs extends js.Object {
     /**
          * The domain creation status. True if the creation of an Elasticsearch domain is complete. False if domain creation is still in progress.
          */
-    var Created: js.UndefOr[scala.Boolean] = js.undefined
+    var Created: js.UndefOr[Boolean] = js.undefined
     /**
          * The domain deletion status. True if a delete request has been received for the domain but resource cleanup is still in progress. False if the domain has not been deleted. Once domain deletion is complete, the status of the domain is no longer returned.
          */
-    var Deleted: js.UndefOr[scala.Boolean] = js.undefined
+    var Deleted: js.UndefOr[Boolean] = js.undefined
     /**
          * The unique identifier for the specified Elasticsearch domain.
          */
@@ -520,7 +520,7 @@ object ESNs extends js.Object {
     /**
          * The status of the Elasticsearch domain configuration. True if Amazon Elasticsearch Service is processing configuration changes. False if the configuration is active.
          */
-    var Processing: js.UndefOr[scala.Boolean] = js.undefined
+    var Processing: js.UndefOr[Boolean] = js.undefined
     /**
          * The current status of the Elasticsearch domain's service software.
          */
@@ -532,7 +532,7 @@ object ESNs extends js.Object {
     /**
          * The status of an Elasticsearch domain version upgrade. True if Amazon Elasticsearch Service is undergoing a version upgrade. False if the configuration is active.
          */
-    var UpgradeProcessing: js.UndefOr[scala.Boolean] = js.undefined
+    var UpgradeProcessing: js.UndefOr[Boolean] = js.undefined
     /**
          * The VPCOptions for the specified domain. For more information, see VPC Endpoints for Amazon Elasticsearch Service Domains.
          */
@@ -556,7 +556,7 @@ object ESNs extends js.Object {
     /**
          * Specifies the option to enable Encryption At Rest.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     /**
          *  Specifies the KMS Key ID for Encryption At Rest options.
          */
@@ -604,7 +604,7 @@ object ESNs extends js.Object {
     /**
          * Pagination token that needs to be supplied to the next call to get the next page of results
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          *  A list of  UpgradeHistory  objects corresponding to each Upgrade or Upgrade Eligibility Check performed on a domain returned as part of  GetUpgradeHistoryResponse  object. 
          */
@@ -737,7 +737,7 @@ object ESNs extends js.Object {
     /**
          *  Specifies whether given log publishing option is enabled or not.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -761,7 +761,7 @@ object ESNs extends js.Object {
     /**
          * Specify true to enable node-to-node encryption.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -785,7 +785,7 @@ object ESNs extends js.Object {
     /**
          * Indicates whether the Elasticsearch domain is being deleted.
          */
-    var PendingDeletion: js.UndefOr[scala.Boolean] = js.undefined
+    var PendingDeletion: js.UndefOr[Boolean] = js.undefined
     /**
          * Provides the OptionState for the Elasticsearch domain.
          */
@@ -837,7 +837,7 @@ object ESNs extends js.Object {
     /**
          * The frequency of the recurring charge.
          */
-    var RecurringChargeFrequency: js.UndefOr[java.lang.String] = js.undefined
+    var RecurringChargeFrequency: js.UndefOr[String] = js.undefined
   }
   
   
@@ -857,7 +857,7 @@ object ESNs extends js.Object {
     /**
          * The currency code for the reserved Elasticsearch instance offering.
          */
-    var CurrencyCode: js.UndefOr[java.lang.String] = js.undefined
+    var CurrencyCode: js.UndefOr[String] = js.undefined
     /**
          * The duration, in seconds, for which the Elasticsearch instance is reserved.
          */
@@ -893,7 +893,7 @@ object ESNs extends js.Object {
     /**
          * The offering identifier.
          */
-    var ReservedElasticsearchInstanceOfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedElasticsearchInstanceOfferingId: js.UndefOr[String] = js.undefined
     /**
          * The time the reservation started.
          */
@@ -901,7 +901,7 @@ object ESNs extends js.Object {
     /**
          * The state of the reserved Elasticsearch instance.
          */
-    var State: js.UndefOr[java.lang.String] = js.undefined
+    var State: js.UndefOr[String] = js.undefined
     /**
          * The rate you are charged for each hour for the domain that is using this reserved instance.
          */
@@ -913,7 +913,7 @@ object ESNs extends js.Object {
     /**
          * The currency code for the reserved Elasticsearch instance offering.
          */
-    var CurrencyCode: js.UndefOr[java.lang.String] = js.undefined
+    var CurrencyCode: js.UndefOr[String] = js.undefined
     /**
          * The duration, in seconds, for which the offering will reserve the Elasticsearch instance.
          */
@@ -953,23 +953,23 @@ object ESNs extends js.Object {
     /**
          * True if you are able to cancel your service software version update. False if you are not able to cancel your service software version. 
          */
-    var Cancellable: js.UndefOr[scala.Boolean] = js.undefined
+    var Cancellable: js.UndefOr[Boolean] = js.undefined
     /**
          * The current service software version that is present on the domain.
          */
-    var CurrentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var CurrentVersion: js.UndefOr[String] = js.undefined
     /**
          * The description of the UpdateStatus.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The new service software version if one is available.
          */
-    var NewVersion: js.UndefOr[java.lang.String] = js.undefined
+    var NewVersion: js.UndefOr[String] = js.undefined
     /**
          * True if you are able to update you service software version. False if you are not able to update your service software version. 
          */
-    var UpdateAvailable: js.UndefOr[scala.Boolean] = js.undefined
+    var UpdateAvailable: js.UndefOr[Boolean] = js.undefined
     /**
          * The status of your service software update. This field can take the following values: ELIGIBLE, PENDING_UPDATE, IN_PROGRESS, COMPLETED, and NOT_ELIGIBLE.
          */
@@ -1784,7 +1784,7 @@ object ESNs extends js.Object {
     /**
          *  This flag, when set to True, indicates that an Upgrade Eligibility Check needs to be performed. This will not actually perform the Upgrade. 
          */
-    var PerformCheckOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var PerformCheckOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * The version of Elasticsearch that you intend to upgrade the domain to.
          */
@@ -1797,7 +1797,7 @@ object ESNs extends js.Object {
     /**
          *  This flag, when set to True, indicates that an Upgrade Eligibility Check needs to be performed. This will not actually perform the Upgrade. 
          */
-    var PerformCheckOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var PerformCheckOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * The version of Elasticsearch that you intend to upgrade the domain to.
          */
@@ -1861,7 +1861,7 @@ object ESNs extends js.Object {
     /**
          * The VPC Id for the Elasticsearch domain. Exists only if the domain was created with VPCOptions.
          */
-    var VPCId: js.UndefOr[java.lang.String] = js.undefined
+    var VPCId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1939,7 +1939,7 @@ object ESNs extends js.Object {
   type StorageTypeList = js.Array[StorageType]
   type StorageTypeName = java.lang.String
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type TagKey = java.lang.String
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String

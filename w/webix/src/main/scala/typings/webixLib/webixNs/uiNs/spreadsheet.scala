@@ -57,9 +57,9 @@ class spreadsheet () extends baseview {
   def isCellLocked(rowId: scala.Double, columnId: scala.Double): scala.Boolean = js.native
   def isColumnVisible(columnId: scala.Double): scala.Boolean = js.native
   def isRowVisible(rowId: scala.Double): scala.Boolean = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def lockCell(row: js.Any, column: js.Any, state: scala.Boolean): scala.Unit = js.native
   def mapEvent(map: js.Any): scala.Unit = js.native
   def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native

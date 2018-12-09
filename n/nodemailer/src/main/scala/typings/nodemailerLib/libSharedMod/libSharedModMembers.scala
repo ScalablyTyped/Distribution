@@ -21,7 +21,7 @@ object libSharedModMembers extends js.Object {
     defaults: ScalablyTyped.runtime.StringDictionary[js.Any]
   ): Logger = js.native
   def parseConnectionUrl(url: java.lang.String): nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Options = js.native
-  def resolveContent(data: js.Array[_], key: java.lang.String): stdLib.Promise[nodeLib.Buffer | java.lang.String] = js.native
+  def resolveContent(data: js.Array[_], key: java.lang.String): js.Promise[nodeLib.Buffer | java.lang.String] = js.native
   def resolveContent(
     data: js.Array[_],
     key: java.lang.String,
@@ -31,7 +31,7 @@ object libSharedModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveContent(data: js.Array[_], key: scala.Double): stdLib.Promise[nodeLib.Buffer | java.lang.String] = js.native
+  def resolveContent(data: js.Array[_], key: scala.Double): js.Promise[nodeLib.Buffer | java.lang.String] = js.native
   def resolveContent(
     data: js.Array[_],
     key: scala.Double,
@@ -41,7 +41,7 @@ object libSharedModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveContent(data: js.Object, key: java.lang.String): stdLib.Promise[nodeLib.Buffer | java.lang.String] = js.native
+  def resolveContent(data: js.Object, key: java.lang.String): js.Promise[nodeLib.Buffer | java.lang.String] = js.native
   def resolveContent(
     data: js.Object,
     key: java.lang.String,
@@ -51,7 +51,7 @@ object libSharedModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveContent(data: js.Object, key: scala.Double): stdLib.Promise[nodeLib.Buffer | java.lang.String] = js.native
+  def resolveContent(data: js.Object, key: scala.Double): js.Promise[nodeLib.Buffer | java.lang.String] = js.native
   def resolveContent(
     data: js.Object,
     key: scala.Double,

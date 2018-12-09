@@ -14,6 +14,6 @@ trait MutationConfig extends js.Object {
   var mutateAndGetPayload_Original: mutationFn = js.native
   var name: java.lang.String = js.native
   var outputFields: graphqlLib.typeDefinitionMod.Thunk[graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[_, _]] = js.native
-  def mutateAndGetPayload(`object`: js.Any, ctx: js.Any, info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo): stdLib.Promise[_] | js.Any = js.native
+  def mutateAndGetPayload(`object`: js.Any, ctx: js.Any, info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo): js.Promise[_] | js.Any = js.native
 }
 

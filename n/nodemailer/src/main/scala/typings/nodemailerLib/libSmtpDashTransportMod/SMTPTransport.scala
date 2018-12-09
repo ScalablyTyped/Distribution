@@ -25,7 +25,7 @@ trait SMTPTransport
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* socketOptions */ js.Object, scala.Unit]
   ): scala.Unit = js.native
   @JSName("verify")
-  def verify_MSMTPTransport(): stdLib.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
+  def verify_MSMTPTransport(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
   /** Verifies SMTP configuration */
   @JSName("verify")
   def verify_MSMTPTransport(

@@ -28,7 +28,7 @@ trait Anon_Delay extends js.Object {
        * @param urlOrRegExp A URL or RegExp to test against
        * @param response The response to use when a match is made
        */
-  def stubFailure(method: java.lang.String, urlOrRegExp: java.lang.String, response: moxiosLib.moxiosMod.Item): stdLib.Promise[scala.Unit] = js.native
+  def stubFailure(method: java.lang.String, urlOrRegExp: java.lang.String, response: moxiosLib.moxiosMod.Item): js.Promise[scala.Unit] = js.native
   /**
        * Stub a timed response to a request matching a method and a URL or RegExp. If
        * timer fires, reject with a TimeoutException for simple assertions. The goal is
@@ -38,7 +38,7 @@ trait Anon_Delay extends js.Object {
        * @param urlOrRegExp A URL or RegExp to test against
        * @param response The response to use when a match is made
        */
-  def stubFailure(method: java.lang.String, urlOrRegExp: stdLib.RegExp, response: moxiosLib.moxiosMod.Item): stdLib.Promise[scala.Unit] = js.native
+  def stubFailure(method: java.lang.String, urlOrRegExp: stdLib.RegExp, response: moxiosLib.moxiosMod.Item): js.Promise[scala.Unit] = js.native
   /**
        * Stub a response to be used one or more times to respond to a request matching a
        * method and a URL or RegExp.
@@ -47,7 +47,7 @@ trait Anon_Delay extends js.Object {
        * @param urlOrRegExp A URL or RegExp to test against
        * @param response The response to use when a match is made
        */
-  def stubOnce(method: java.lang.String, urlOrRegExp: java.lang.String, response: moxiosLib.moxiosMod.Item): stdLib.Promise[scala.Unit] = js.native
+  def stubOnce(method: java.lang.String, urlOrRegExp: java.lang.String, response: moxiosLib.moxiosMod.Item): js.Promise[scala.Unit] = js.native
   /**
        * Stub a response to be used one or more times to respond to a request matching a
        * method and a URL or RegExp.
@@ -56,7 +56,7 @@ trait Anon_Delay extends js.Object {
        * @param urlOrRegExp A URL or RegExp to test against
        * @param response The response to use when a match is made
        */
-  def stubOnce(method: java.lang.String, urlOrRegExp: stdLib.RegExp, response: moxiosLib.moxiosMod.Item): stdLib.Promise[scala.Unit] = js.native
+  def stubOnce(method: java.lang.String, urlOrRegExp: stdLib.RegExp, response: moxiosLib.moxiosMod.Item): js.Promise[scala.Unit] = js.native
   /**
        * Stub a response to be used to respond to a request matching a URL or RegExp
        *

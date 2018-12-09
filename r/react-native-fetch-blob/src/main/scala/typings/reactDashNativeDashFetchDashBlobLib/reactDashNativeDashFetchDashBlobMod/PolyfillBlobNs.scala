@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-fetch-blob", "PolyfillBlob")
 @js.native
 object PolyfillBlobNs extends js.Object {
-  def build(data: js.Any, cType: js.Any): stdLib.Promise[
+  def build(data: js.Any, cType: js.Any): js.Promise[
     reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.PolyfillBlob
   ] = js.native
   def clearCache(): scala.Unit = js.native

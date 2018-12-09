@@ -17,17 +17,17 @@ trait SignedXml
     algorithm: stdLib.Algorithm,
     key: stdLib.CryptoKey,
     options: OptionsXAdES
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /* protected */ def ApplySignaturePolicyIdentifier(): scala.Unit = js.native
   /* protected */ def ApplySignaturePolicyIdentifier(options: OptionsPolicyId): scala.Unit = js.native
   /* protected */ def ApplySignatureProductionPlace(): scala.Unit = js.native
   /* protected */ def ApplySignatureProductionPlace(options: OptionsProductionPlace): scala.Unit = js.native
   /* protected */ def ApplySignerRoles(): scala.Unit = js.native
   /* protected */ def ApplySignerRoles(options: OptionsSignerRole): scala.Unit = js.native
-  /* protected */ def ApplySigningCertificate(): stdLib.Promise[scala.Unit] = js.native
-  /* protected */ def ApplySigningCertificate(base64string: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  /* protected */ def ApplySigningCertificate(): js.Promise[scala.Unit] = js.native
+  /* protected */ def ApplySigningCertificate(base64string: java.lang.String): js.Promise[scala.Unit] = js.native
   /* protected */ def CreateQualyingProperties(): scala.Unit = js.native
-  def Sign(algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, data: stdLib.Document, options: OptionsXAdES): stdLib.PromiseLike[xmldsigjsLib.xmldsigjsMod.Signature] = js.native
-  /* protected */ def VerifySigningCertificate(): stdLib.Promise[xmldsigjsLib.xmldsigjsMod.X509Certificate | scala.Null] = js.native
+  def Sign(algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, data: stdLib.Document, options: OptionsXAdES): js.Thenable[xmldsigjsLib.xmldsigjsMod.Signature] = js.native
+  /* protected */ def VerifySigningCertificate(): js.Promise[xmldsigjsLib.xmldsigjsMod.X509Certificate | scala.Null] = js.native
 }
 

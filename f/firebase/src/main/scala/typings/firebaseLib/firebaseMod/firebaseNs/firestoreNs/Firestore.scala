@@ -33,7 +33,7 @@ trait Firestore extends js.Object {
        *
        * @return A promise that is resolved once the network has been disabled.
        */
-  def disableNetwork(): stdLib.Promise[scala.Unit] = js.native
+  def disableNetwork(): js.Promise[scala.Unit] = js.native
   /**
        * Gets a `DocumentReference` instance that refers to the document at the
        * specified path.
@@ -48,7 +48,7 @@ trait Firestore extends js.Object {
        *
        * @return A promise that is resolved once the network has been enabled.
        */
-  def enableNetwork(): stdLib.Promise[scala.Unit] = js.native
+  def enableNetwork(): js.Promise[scala.Unit] = js.native
   /**
        * Attempts to enable persistent storage, if possible.
        *
@@ -69,7 +69,7 @@ trait Firestore extends js.Object {
        * @return A promise that represents successfully enabling persistent
        * storage.
        */
-  def enablePersistence(): stdLib.Promise[scala.Unit] = js.native
+  def enablePersistence(): js.Promise[scala.Unit] = js.native
   /**
        * Attempts to enable persistent storage, if possible.
        *
@@ -90,7 +90,7 @@ trait Firestore extends js.Object {
        * @return A promise that represents successfully enabling persistent
        * storage.
        */
-  def enablePersistence(settings: PersistenceSettings): stdLib.Promise[scala.Unit] = js.native
+  def enablePersistence(settings: PersistenceSettings): js.Promise[scala.Unit] = js.native
   /**
        * Executes the given updateFunction and then attempts to commit the
        * changes applied within the transaction. If any document read within the
@@ -105,7 +105,7 @@ trait Firestore extends js.Object {
        * transaction failed, a rejected Promise with the corresponding failure
        * error will be returned.
        */
-  def runTransaction[T](updateFunction: js.Function1[/* transaction */ Transaction, stdLib.Promise[T]]): stdLib.Promise[T] = js.native
+  def runTransaction[T](updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]]): js.Promise[T] = js.native
   /**
        * Specifies custom settings to be used to configure the `Firestore`
        * instance. Must be set before invoking any other methods.

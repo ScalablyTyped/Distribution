@@ -19,7 +19,7 @@ trait Anon_Number extends js.Object {
   var `object`: reduxDashSagaLib.utilsMod.GuardPredicate[js.Object]
   var observable: reduxDashSagaLib.utilsMod.GuardPredicate[Anon_Subscribe]
   var pattern: reduxDashSagaLib.utilsMod.GuardPredicate[reduxDashSagaLib.effectsMod.Pattern]
-  var promise: reduxDashSagaLib.utilsMod.GuardPredicate[stdLib.Promise[_]]
+  var promise: reduxDashSagaLib.utilsMod.GuardPredicate[js.Promise[_]]
   var string: reduxDashSagaLib.utilsMod.GuardPredicate[java.lang.String]
   var stringableFunc: reduxDashSagaLib.utilsMod.GuardPredicate[js.Function]
   var task: reduxDashSagaLib.utilsMod.GuardPredicate[reduxDashSagaLib.reduxDashSagaMod.Task]

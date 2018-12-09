@@ -10,6 +10,6 @@ package object crpcMod {
     /* path */ java.lang.String, 
     /* body */ js.Any, 
     /* options */ js.UndefOr[js.Object | scala.Null], 
-    stdLib.Promise[js.Any]
+    js.Promise[js.Any]
   ]
 }

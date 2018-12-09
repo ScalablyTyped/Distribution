@@ -384,13 +384,13 @@ object mobxModMembers extends js.Object {
   def values[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[T] = js.native
   def values[T](obj: T): js.Array[_] = js.native
   def values[K, T](map: mobxLib.libInternalMod.ObservableMap[K, T]): js.Array[T] = js.native
-  def when(predicate: js.Function0[scala.Boolean]): stdLib.Promise[scala.Unit] with mobxLib.Anon_Cancel = js.native
+  def when(predicate: js.Function0[scala.Boolean]): js.Promise[scala.Unit] with mobxLib.Anon_Cancel = js.native
   def when(predicate: js.Function0[scala.Boolean], effect: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
   def when(
     predicate: js.Function0[scala.Boolean],
     effect: mobxLib.libUtilsUtilsMod.Lambda,
     opts: mobxLib.libApiWhenMod.IWhenOptions
   ): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
-  def when(predicate: js.Function0[scala.Boolean], opts: mobxLib.libApiWhenMod.IWhenOptions): stdLib.Promise[scala.Unit] with mobxLib.Anon_Cancel = js.native
+  def when(predicate: js.Function0[scala.Boolean], opts: mobxLib.libApiWhenMod.IWhenOptions): js.Promise[scala.Unit] with mobxLib.Anon_Cancel = js.native
 }
 

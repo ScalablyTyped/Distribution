@@ -30,32 +30,32 @@ trait ExtensionSidebarPane extends js.Object {
            *     nodes are displayed in an expandable tree similar to the console/watch.
            * @param [rootTitle] An optional title for the root of the expression tree.
            */
-  def setExpression(expression: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def setExpression(expression: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Sets an expression that is evaluated within the inspected page. The result is displayed in the sidebar pane.
            * @param expression An expression to be evaluated in context of the inspected page. JavaScript objects and DOM
            *     nodes are displayed in an expandable tree similar to the console/watch.
            * @param [rootTitle] An optional title for the root of the expression tree.
            */
-  def setExpression(expression: java.lang.String, rootTitle: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def setExpression(expression: java.lang.String, rootTitle: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Sets a JSON-compliant object to be displayed in the sidebar pane.
            * @param jsonObject An object to be displayed in context of the inspected page. Evaluated in the context of
            *     the caller (API client).
            * @param [rootTitle] An optional title for the root of the expression tree.
            */
-  def setObject(jsonObject: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def setObject(jsonObject: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Sets a JSON-compliant object to be displayed in the sidebar pane.
            * @param jsonObject An object to be displayed in context of the inspected page. Evaluated in the context of
            *     the caller (API client).
            * @param [rootTitle] An optional title for the root of the expression tree.
            */
-  def setObject(jsonObject: java.lang.String, rootTitle: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def setObject(jsonObject: java.lang.String, rootTitle: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Sets an HTML page to be displayed in the sidebar pane.
            * @param path Relative path of an extension page to display within the sidebar.
            */
-  def setPage(path: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL): stdLib.Promise[_] = js.native
+  def setPage(path: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL): js.Promise[_] = js.native
 }
 

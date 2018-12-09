@@ -43,7 +43,7 @@ object FileManager extends js.Object {
        * @returns Promise resolved to true for files downloaded, resolved to false for files not
        *          downloaded because they exist, rejected if there is an error.
        */
-  def downloadFile[T /* <: webdriverDashManagerLib.builtLibBinariesMod.Binary */](binary: T, outputDir: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def downloadFile[T /* <: webdriverDashManagerLib.builtLibBinariesMod.Binary */](binary: T, outputDir: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
        * Try to download the binary version.
        * @param binary The binary of interest.
@@ -51,7 +51,7 @@ object FileManager extends js.Object {
        * @returns Promise resolved to true for files downloaded, resolved to false for files not
        *          downloaded because they exist, rejected if there is an error.
        */
-  def downloadFile[T /* <: webdriverDashManagerLib.builtLibBinariesMod.Binary */](binary: T, outputDir: java.lang.String, callback: js.Function): stdLib.Promise[scala.Boolean] = js.native
+  def downloadFile[T /* <: webdriverDashManagerLib.builtLibBinariesMod.Binary */](binary: T, outputDir: java.lang.String, callback: js.Function): js.Promise[scala.Boolean] = js.native
   /**
        * Finds all the downloaded binary versions stored in the output directory.
        * @param outputDir The directory where files are downloaded and stored.

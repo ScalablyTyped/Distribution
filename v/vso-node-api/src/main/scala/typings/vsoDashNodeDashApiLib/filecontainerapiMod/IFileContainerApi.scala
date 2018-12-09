@@ -15,14 +15,14 @@ trait IFileContainerApi
     itemPath: java.lang.String,
     scope: java.lang.String,
     options: js.Any
-  ): stdLib.Promise[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainerItem] = js.native
-  def getItem(containerId: scala.Double): stdLib.Promise[
+  ): js.Promise[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainerItem] = js.native
+  def getItem(containerId: scala.Double): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
-  def getItem(containerId: scala.Double, scope: java.lang.String): stdLib.Promise[
+  def getItem(containerId: scala.Double, scope: java.lang.String): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
-  def getItem(containerId: scala.Double, scope: java.lang.String, itemPath: java.lang.String): stdLib.Promise[
+  def getItem(containerId: scala.Double, scope: java.lang.String, itemPath: java.lang.String): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
   def getItem(
@@ -30,7 +30,7 @@ trait IFileContainerApi
     scope: java.lang.String,
     itemPath: java.lang.String,
     downloadFileName: java.lang.String
-  ): stdLib.Promise[
+  ): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
 }

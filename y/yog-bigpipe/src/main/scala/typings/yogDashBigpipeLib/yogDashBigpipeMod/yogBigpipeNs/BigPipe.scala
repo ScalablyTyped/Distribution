@@ -27,8 +27,8 @@ trait BigPipe
   def isQuicklingMode(): scala.Boolean = js.native
   def isQuicklingWidget(item: yogDashBigpipeLib.Anon_Key): scala.Unit = js.native
   def outputPagelet(pagelet: Pagelet): scala.Unit = js.native
-  def prepareAllSources(): stdLib.Promise[_] = js.native
-  def preparePageOnly(): stdLib.Promise[_] = js.native
+  def prepareAllSources(): js.Promise[_] = js.native
+  def preparePageOnly(): js.Promise[_] = js.native
   def render(): scala.Unit = js.native
   def renderPagelet(pagelet: Pagelet): scala.Unit = js.native
 }

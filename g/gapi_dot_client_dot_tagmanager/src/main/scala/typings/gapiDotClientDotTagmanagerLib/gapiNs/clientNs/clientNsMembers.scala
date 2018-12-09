@@ -13,7 +13,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotTagmanagerLib.gapiDotClientDotTagmanagerLibStrings.tagmanager,
     version: gapiDotClientDotTagmanagerLib.gapiDotClientDotTagmanagerLibStrings.v2
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotTagmanagerLib.gapiDotClientDotTagmanagerLibStrings.tagmanager,
     version: gapiDotClientDotTagmanagerLib.gapiDotClientDotTagmanagerLibStrings.v2,

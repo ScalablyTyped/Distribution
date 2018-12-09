@@ -127,7 +127,7 @@ object User extends js.Object {
                * @callback {() => void} callback
                * @param {Error} er
                */
-  def confirm(userId: js.Any, token: java.lang.String, redirect: java.lang.String): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  def confirm(userId: js.Any, token: java.lang.String, redirect: java.lang.String): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
                * Confirm the user's identity
                * @param {Any} userId
@@ -141,7 +141,7 @@ object User extends js.Object {
     token: java.lang.String,
     redirect: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
-  ): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  ): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
                * A default verification token generator which accepts the user the token is
                * being generated for and a callback function to indicate completion.
@@ -151,7 +151,7 @@ object User extends js.Object {
                * @param {any} user The User this token is being generated for.
                * @param {() => void} cb The generator must pass back the new token with this function cal
                */
-  def generateVerificationToken(user: js.Any): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  def generateVerificationToken(user: js.Any): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
                * A default verification token generator which accepts the user the token is
                * being generated for and a callback function to indicate completion.
@@ -161,7 +161,7 @@ object User extends js.Object {
                * @param {any} user The User this token is being generated for.
                * @param {() => void} cb The generator must pass back the new token with this function cal
                */
-  def generateVerificationToken(user: js.Any, callback: js.Function0[scala.Unit]): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  def generateVerificationToken(user: js.Any, callback: js.Function0[scala.Unit]): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
                * Login a user by with the given `credentials`
                *
@@ -178,7 +178,7 @@ object User extends js.Object {
                * @param {Error} err Error object
                * @param {AccessToken} token Access token if login is successfu
                */
-  def login(credentials: js.Any): stdLib.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
+  def login(credentials: js.Any): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
   /**
                * Login a user by with the given `credentials`
                *
@@ -195,7 +195,7 @@ object User extends js.Object {
                * @param {Error} err Error object
                * @param {AccessToken} token Access token if login is successfu
                */
-  def login(credentials: js.Any, include: java.lang.String): stdLib.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
+  def login(credentials: js.Any, include: java.lang.String): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
   /**
                * Login a user by with the given `credentials`
                *
@@ -220,7 +220,7 @@ object User extends js.Object {
       /* token */ loopbackLib.loopbackMod.lNs.AccessToken, 
       scala.Unit
     ]
-  ): stdLib.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
+  ): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
   /**
                * Login a user by with the given `credentials`
                *
@@ -237,7 +237,7 @@ object User extends js.Object {
                * @param {Error} err Error object
                * @param {AccessToken} token Access token if login is successfu
                */
-  def login(credentials: js.Any, include: js.Array[java.lang.String]): stdLib.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
+  def login(credentials: js.Any, include: js.Array[java.lang.String]): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
   /**
                * Login a user by with the given `credentials`
                *
@@ -262,7 +262,7 @@ object User extends js.Object {
       /* token */ loopbackLib.loopbackMod.lNs.AccessToken, 
       scala.Unit
     ]
-  ): stdLib.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
+  ): js.Promise[loopbackLib.loopbackMod.lNs.AccessToken] | scala.Unit = js.native
   /**
                * Logout a user with the given accessToken id
                *
@@ -276,7 +276,7 @@ object User extends js.Object {
                * @callback {() => void} callback
                * @param {Error} er
                */
-  def logout(accessTokenID: java.lang.String): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  def logout(accessTokenID: java.lang.String): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
                * Logout a user with the given accessToken id
                *
@@ -290,7 +290,7 @@ object User extends js.Object {
                * @callback {() => void} callback
                * @param {Error} er
                */
-  def logout(accessTokenID: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  def logout(accessTokenID: java.lang.String, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
                * Normalize the credentials
                * @param {any} credentials The credential object
@@ -307,7 +307,7 @@ object User extends js.Object {
                * @callback {() => void} callback
                * @param {Error} er
                */
-  def resetPassword(options: js.Object): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  def resetPassword(options: js.Object): js.Promise[scala.Unit] | scala.Unit = js.native
   /**
                * Create a short lived acess token for temporary login. Allows users
                * to change passwords if forgotten
@@ -316,6 +316,6 @@ object User extends js.Object {
                * @callback {() => void} callback
                * @param {Error} er
                */
-  def resetPassword(options: js.Object, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  def resetPassword(options: js.Object, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): js.Promise[scala.Unit] | scala.Unit = js.native
 }
 

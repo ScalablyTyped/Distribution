@@ -30,8 +30,8 @@ class AsyncPipe protected ()
   /* CompleteClass */
   override def transform(value: js.Any, args: js.Any*): js.Any = js.native
   def transform[T](): T | scala.Null = js.native
+  def transform[T](obj: js.Promise[T]): T | scala.Null = js.native
   def transform[T](obj: rxjsLib.rxjsMod.Observable[T]): T | scala.Null = js.native
-  def transform[T](obj: stdLib.Promise[T]): T | scala.Null = js.native
   @JSName("transform")
   def transform_TNull[T](): scala.Null = js.native
   @JSName("transform")

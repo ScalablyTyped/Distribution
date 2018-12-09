@@ -100,13 +100,13 @@ class StateProvider protected () extends js.Object {
        *
        * @return {object} $stateProvider - $stateProvider instance
        */
-  def decorator(name: java.lang.String, func: atUirouterCoreLib.libStateStateBuilderMod.BuilderFunction): js.Function | this.type | js.Array[atUirouterCoreLib.libStateStateBuilderMod.BuilderFunction] = js.native
+  def decorator(name: java.lang.String, func: atUirouterCoreLib.libStateStateBuilderMod.BuilderFunction): angularLib.angularMod.Global.Function | this.type | js.Array[atUirouterCoreLib.libStateStateBuilderMod.BuilderFunction] = js.native
   /**
        * Registers an invalid state handler
        *
        * This is a passthrough to [[StateService.onInvalid]] for ng1.
        */
-  def onInvalid(callback: atUirouterCoreLib.libStateStateServiceMod.OnInvalidCallback): js.Function = js.native
+  def onInvalid(callback: atUirouterCoreLib.libStateStateServiceMod.OnInvalidCallback): angularLib.angularMod.Global.Function = js.native
   def state(definition: atUirouterAngularjsLib.libInterfaceMod.Ng1StateDeclaration): StateProvider = js.native
   /**
        * Registers a state

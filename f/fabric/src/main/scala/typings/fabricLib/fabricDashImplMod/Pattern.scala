@@ -42,6 +42,6 @@ class Pattern () extends IPatternOptions {
   /**
   	 * Returns SVG representation of a pattern
   	 */
-  def toSVG(`object`: js.Object): java.lang.String = js.native
+  def toSVG(`object`: Object): java.lang.String = js.native
 }
 

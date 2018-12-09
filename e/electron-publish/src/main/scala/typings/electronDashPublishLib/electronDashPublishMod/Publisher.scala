@@ -24,6 +24,6 @@ abstract class Publisher protected () extends js.Object {
     progressBar: scala.Null,
     reject: js.Function1[/* error */ nodeLib.Error, scala.Unit]
   ): nodeLib.NodeJSNs.ReadableStream = js.native
-  def upload(task: UploadTask): stdLib.Promise[_] = js.native
+  def upload(task: UploadTask): js.Promise[_] = js.native
 }
 

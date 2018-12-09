@@ -14,9 +14,9 @@ trait Reference extends js.Object {
   var root: Reference = js.native
   var storage: stdLib.Storage = js.native
   def child(path: java.lang.String): Reference = js.native
-  def delete(): stdLib.Promise[scala.Unit] = js.native
-  def getDownloadURL(): stdLib.Promise[java.lang.String] = js.native
-  def getMetadata(): stdLib.Promise[FullMetadata] = js.native
+  def delete(): js.Promise[scala.Unit] = js.native
+  def getDownloadURL(): js.Promise[java.lang.String] = js.native
+  def getMetadata(): js.Promise[FullMetadata] = js.native
   def put(data: stdLib.ArrayBuffer): UploadTask = js.native
   def put(data: stdLib.ArrayBuffer, metadata: UploadMetadata): UploadTask = js.native
   def put(data: stdLib.Blob): UploadTask = js.native
@@ -26,6 +26,6 @@ trait Reference extends js.Object {
   def putString(data: java.lang.String): UploadTask = js.native
   def putString(data: java.lang.String, format: StringFormat): UploadTask = js.native
   def putString(data: java.lang.String, format: StringFormat, metadata: UploadMetadata): UploadTask = js.native
-  def updateMetadata(metadata: SettableMetadata): stdLib.Promise[FullMetadata] = js.native
+  def updateMetadata(metadata: SettableMetadata): js.Promise[FullMetadata] = js.native
 }
 

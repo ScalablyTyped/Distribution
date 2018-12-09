@@ -15,19 +15,19 @@ trait SignedXml
   val XmlSignature: Signature = js.native
   var document: js.UndefOr[stdLib.Document] = js.native
   var signature: Signature = js.native
-  /* protected */ def ApplySignOptions(signature: Signature, algorithm: stdLib.Algorithm, key: stdLib.CryptoKey): stdLib.PromiseLike[scala.Unit] = js.native
-  /* protected */ def ApplySignOptions(signature: Signature, algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, options: OptionsSign): stdLib.PromiseLike[scala.Unit] = js.native
+  /* protected */ def ApplySignOptions(signature: Signature, algorithm: stdLib.Algorithm, key: stdLib.CryptoKey): js.Thenable[scala.Unit] = js.native
+  /* protected */ def ApplySignOptions(signature: Signature, algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, options: OptionsSign): js.Thenable[scala.Unit] = js.native
   /* protected */ def ApplyTransforms(transforms: Transforms, input: stdLib.Element): js.Any = js.native
   /**
            * Copies namespaces from source element and its parents into destination element
            */
   /* protected */ def CopyNamespaces(src: stdLib.Element, dst: stdLib.Element, ignoreDefault: scala.Boolean): scala.Unit = js.native
-  /* protected */ def DigestReference(doc: stdLib.Element, reference: Reference, checkHmac: scala.Boolean): stdLib.Promise[stdLib.Uint8Array] = js.native
-  /* protected */ def DigestReferences(data: stdLib.Element): stdLib.Promise[js.Array[scala.Unit]] = js.native
+  /* protected */ def DigestReference(doc: stdLib.Element, reference: Reference, checkHmac: scala.Boolean): js.Promise[stdLib.Uint8Array] = js.native
+  /* protected */ def DigestReferences(data: stdLib.Element): js.Promise[js.Array[scala.Unit]] = js.native
   /**
            * Returns the public key of a signature.
            */
-  /* protected */ def GetPublicKeys(): stdLib.PromiseLike[js.Array[stdLib.CryptoKey]] = js.native
+  /* protected */ def GetPublicKeys(): js.Thenable[js.Array[stdLib.CryptoKey]] = js.native
   /**
            * Returns dictionary of namespaces used in signature
            */
@@ -47,12 +47,12 @@ trait SignedXml
            */
   def LoadXml(value: stdLib.Element): scala.Unit = js.native
   /* protected */ def ResolveTransform(transform: java.lang.String): Transform = js.native
-  def Sign(algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, data: stdLib.Document): stdLib.PromiseLike[Signature] = js.native
-  def Sign(algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, data: stdLib.Document, options: OptionsSign): stdLib.PromiseLike[Signature] = js.native
+  def Sign(algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, data: stdLib.Document): js.Thenable[Signature] = js.native
+  def Sign(algorithm: stdLib.Algorithm, key: stdLib.CryptoKey, data: stdLib.Document, options: OptionsSign): js.Thenable[Signature] = js.native
   /* protected */ def TransformSignedInfo(): java.lang.String = js.native
-  /* protected */ def ValidateReferences(doc: stdLib.Element): stdLib.PromiseLike[scala.Boolean] = js.native
-  /* protected */ def ValidateSignatureValue(keys: js.Array[stdLib.CryptoKey]): stdLib.PromiseLike[scala.Boolean] = js.native
-  def Verify(): stdLib.PromiseLike[scala.Boolean] = js.native
-  def Verify(key: stdLib.CryptoKey): stdLib.PromiseLike[scala.Boolean] = js.native
+  /* protected */ def ValidateReferences(doc: stdLib.Element): js.Thenable[scala.Boolean] = js.native
+  /* protected */ def ValidateSignatureValue(keys: js.Array[stdLib.CryptoKey]): js.Thenable[scala.Boolean] = js.native
+  def Verify(): js.Thenable[scala.Boolean] = js.native
+  def Verify(key: stdLib.CryptoKey): js.Thenable[scala.Boolean] = js.native
 }
 

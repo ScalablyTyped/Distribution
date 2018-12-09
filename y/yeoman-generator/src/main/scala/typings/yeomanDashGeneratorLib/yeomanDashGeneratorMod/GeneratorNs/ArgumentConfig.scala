@@ -12,7 +12,7 @@ trait ArgumentConfig extends js.Object {
   var optional: js.UndefOr[scala.Boolean] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: js.UndefOr[
-    java.lang.String | stdLib.NumberConstructor | stdLib.ArrayConstructor | js.Object
+    stdLib.StringConstructor | stdLib.NumberConstructor | stdLib.ArrayConstructor | stdLib.ObjectConstructor
   ] = js.undefined
 }
 

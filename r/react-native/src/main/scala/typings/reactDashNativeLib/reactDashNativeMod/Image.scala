@@ -18,7 +18,7 @@ object Image extends js.Object {
   var queryCache: js.UndefOr[
     js.Function1[
       /* urls */ js.Array[java.lang.String], 
-      stdLib.Promise[
+      js.Promise[
         stdLib.Map[
           java.lang.String, 
           reactDashNativeLib.reactDashNativeLibStrings.memory | reactDashNativeLib.reactDashNativeLibStrings.disk

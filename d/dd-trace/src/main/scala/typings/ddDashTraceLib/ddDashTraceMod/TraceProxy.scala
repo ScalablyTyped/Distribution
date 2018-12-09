@@ -30,7 +30,7 @@ trait TraceProxy
        * @param operationName The operation name to be used for this span.
        * @param options Configuration options. These will take precedence over environment variables.
        */
-  def trace(operationName: java.lang.String, options: TraceOptions): stdLib.Promise[opentracingLib.opentracingMod.Span] = js.native
+  def trace(operationName: java.lang.String, options: TraceOptions): js.Promise[opentracingLib.opentracingMod.Span] = js.native
   /**
        * Initiate a trace and creates a new span.
        * @param operationName The operation name to be used for this span.

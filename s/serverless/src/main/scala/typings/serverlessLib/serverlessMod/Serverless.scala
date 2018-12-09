@@ -17,8 +17,8 @@ trait Serverless extends js.Object {
   var yamlParser: serverlessLib.classesYamlParserMod.namespaced
   def getProvider(name: java.lang.String): serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced
   def getVersion(): java.lang.String
-  def init(): stdLib.Promise[_]
-  def run(): stdLib.Promise[_]
+  def init(): js.Promise[_]
+  def run(): js.Promise[_]
   def setProvider(name: java.lang.String, provider: serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced): scala.Null
 }
 

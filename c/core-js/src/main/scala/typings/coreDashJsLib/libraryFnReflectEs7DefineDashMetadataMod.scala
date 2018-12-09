@@ -12,7 +12,7 @@ object libraryFnReflectEs7DefineDashMetadataMod
       js.Function4[
         /* metadataKey */ js.Any, 
         /* metadataValue */ js.Any, 
-        /* target */ js.Object, 
+        /* target */ Object, 
         /* targetKey */ js.UndefOr[java.lang.String | js.Symbol], 
         scala.Unit
       ]

@@ -58,11 +58,11 @@ object LocationNs extends js.Object {
     var passiveAvailable: js.UndefOr[scala.Boolean] = js.undefined
   }
   
-  def geocodeAsync(address: java.lang.String): stdLib.Promise[Coords] = js.native
-  def getCurrentPositionAsync(options: LocationOptions): stdLib.Promise[LocationData] = js.native
-  def getHeadingAsync(): stdLib.Promise[HeadingStatus] = js.native
-  def getProviderStatusAsync(): stdLib.Promise[ProviderStatus] = js.native
-  def reverseGeocodeAsync(location: LocationProps): stdLib.Promise[js.Array[GeocodeData]] = js.native
+  def geocodeAsync(address: java.lang.String): js.Promise[Coords] = js.native
+  def getCurrentPositionAsync(options: LocationOptions): js.Promise[LocationData] = js.native
+  def getHeadingAsync(): js.Promise[HeadingStatus] = js.native
+  def getProviderStatusAsync(): js.Promise[ProviderStatus] = js.native
+  def reverseGeocodeAsync(location: LocationProps): js.Promise[js.Array[GeocodeData]] = js.native
   def setApiKey(key: java.lang.String): scala.Unit = js.native
   def watchHeadingAsync(callback: js.Function1[/* status */ HeadingStatus, scala.Unit]): fbemitterLib.fbemitterMod.EventSubscription = js.native
   def watchPositionAsync(options: LocationOptions, callback: LocationCallback): fbemitterLib.fbemitterMod.EventSubscription = js.native

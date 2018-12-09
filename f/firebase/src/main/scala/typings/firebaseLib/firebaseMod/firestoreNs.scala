@@ -50,7 +50,7 @@ object firestoreNs extends js.Object {
          * @return A Promise resolved with a `DocumentReference` pointing to the
          * newly created document after it has been written to the backend.
          */
-    def add(data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData): stdLib.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference] = js.native
+    def add(data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference] = js.native
     /**
          * Get a `DocumentReference` for the document within the collection at the
          * specified path. If no path is specified, an automatically-generated
@@ -136,7 +136,7 @@ object firestoreNs extends js.Object {
          * deleted from the backend (Note that it won't resolve while you're
          * offline).
          */
-    def delete(): stdLib.Promise[scala.Unit] = js.native
+    def delete(): js.Promise[scala.Unit] = js.native
     /**
          * Reads the document referred to by this `DocumentReference`.
          *
@@ -149,7 +149,7 @@ object firestoreNs extends js.Object {
          * @return A Promise resolved with a DocumentSnapshot containing the
          * current document contents.
          */
-    def get(): stdLib.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot] = js.native
+    def get(): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot] = js.native
     /**
          * Reads the document referred to by this `DocumentReference`.
          *
@@ -162,7 +162,7 @@ object firestoreNs extends js.Object {
          * @return A Promise resolved with a DocumentSnapshot containing the
          * current document contents.
          */
-    def get(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.GetOptions): stdLib.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot] = js.native
+    def get(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.GetOptions): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot] = js.native
     /**
          * Returns true if this `DocumentReference` is equal to the provided one.
          *
@@ -247,7 +247,7 @@ object firestoreNs extends js.Object {
          * @return A Promise resolved once the data has been successfully written
          * to the backend (Note that it won't resolve while you're offline).
          */
-    def set(data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData): stdLib.Promise[scala.Unit] = js.native
+    def set(data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData): js.Promise[scala.Unit] = js.native
     /**
          * Writes to the document referred to by this `DocumentReference`. If the
          * document does not yet exist, it will be created. If you pass
@@ -261,7 +261,7 @@ object firestoreNs extends js.Object {
     def set(
       data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentData,
       options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.SetOptions
-    ): stdLib.Promise[scala.Unit] = js.native
+    ): js.Promise[scala.Unit] = js.native
     /**
          * Updates fields in the document referred to by this `DocumentReference`.
          * The update will fail if applied to a document that does not exist.
@@ -272,7 +272,7 @@ object firestoreNs extends js.Object {
          * @return A Promise resolved once the data has been successfully written
          * to the backend (Note that it won't resolve while you're offline).
          */
-    def update(data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.UpdateData): stdLib.Promise[scala.Unit] = js.native
+    def update(data: firebaseLib.firebaseMod.firebaseNs.firestoreNs.UpdateData): js.Promise[scala.Unit] = js.native
     /**
          * Updates fields in the document referred to by this `DocumentReference`.
          * The update will fail if applied to a document that does not exist.
@@ -290,7 +290,7 @@ object firestoreNs extends js.Object {
       field: firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath,
       value: js.Any,
       moreFieldsAndValues: js.Any*
-    ): stdLib.Promise[scala.Unit] = js.native
+    ): js.Promise[scala.Unit] = js.native
     /**
          * Updates fields in the document referred to by this `DocumentReference`.
          * The update will fail if applied to a document that does not exist.
@@ -304,7 +304,7 @@ object firestoreNs extends js.Object {
          * @return A Promise resolved once the data has been successfully written
          * to the backend (Note that it won't resolve while you're offline).
          */
-    def update(field: java.lang.String, value: js.Any, moreFieldsAndValues: js.Any*): stdLib.Promise[scala.Unit] = js.native
+    def update(field: java.lang.String, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[scala.Unit] = js.native
   }
   
   @js.native
@@ -488,7 +488,7 @@ object firestoreNs extends js.Object {
          *
          * @return A promise that is resolved once the network has been disabled.
          */
-    def disableNetwork(): stdLib.Promise[scala.Unit] = js.native
+    def disableNetwork(): js.Promise[scala.Unit] = js.native
     /**
          * Gets a `DocumentReference` instance that refers to the document at the
          * specified path.
@@ -503,7 +503,7 @@ object firestoreNs extends js.Object {
          *
          * @return A promise that is resolved once the network has been enabled.
          */
-    def enableNetwork(): stdLib.Promise[scala.Unit] = js.native
+    def enableNetwork(): js.Promise[scala.Unit] = js.native
     /**
          * Attempts to enable persistent storage, if possible.
          *
@@ -524,7 +524,7 @@ object firestoreNs extends js.Object {
          * @return A promise that represents successfully enabling persistent
          * storage.
          */
-    def enablePersistence(): stdLib.Promise[scala.Unit] = js.native
+    def enablePersistence(): js.Promise[scala.Unit] = js.native
     /**
          * Attempts to enable persistent storage, if possible.
          *
@@ -545,7 +545,7 @@ object firestoreNs extends js.Object {
          * @return A promise that represents successfully enabling persistent
          * storage.
          */
-    def enablePersistence(settings: firebaseLib.firebaseMod.firebaseNs.firestoreNs.PersistenceSettings): stdLib.Promise[scala.Unit] = js.native
+    def enablePersistence(settings: firebaseLib.firebaseMod.firebaseNs.firestoreNs.PersistenceSettings): js.Promise[scala.Unit] = js.native
     /**
          * Executes the given updateFunction and then attempts to commit the
          * changes applied within the transaction. If any document read within the
@@ -563,9 +563,9 @@ object firestoreNs extends js.Object {
     def runTransaction[T](
       updateFunction: js.Function1[
           /* transaction */ firebaseLib.firebaseMod.firebaseNs.firestoreNs.Transaction, 
-          stdLib.Promise[T]
+          js.Promise[T]
         ]
-    ): stdLib.Promise[T] = js.native
+    ): js.Promise[T] = js.native
     /**
          * Specifies custom settings to be used to configure the `Firestore`
          * instance. Must be set before invoking any other methods.
@@ -705,7 +705,7 @@ object firestoreNs extends js.Object {
          * @param options An object to configure the get behavior.
          * @return A Promise that will be resolved with the results of the Query.
          */
-    def get(): stdLib.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot] = js.native
+    def get(): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot] = js.native
     /**
          * Executes the query and returns the results as a QuerySnapshot.
          *
@@ -717,7 +717,7 @@ object firestoreNs extends js.Object {
          * @param options An object to configure the get behavior.
          * @return A Promise that will be resolved with the results of the Query.
          */
-    def get(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.GetOptions): stdLib.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot] = js.native
+    def get(options: firebaseLib.firebaseMod.firebaseNs.firestoreNs.GetOptions): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.QuerySnapshot] = js.native
     /**
          * Returns true if this `Query` is equal to the provided one.
          *
@@ -1162,7 +1162,7 @@ object firestoreNs extends js.Object {
          * @param documentRef A reference to the document to be read.
          * @return A DocumentSnapshot for the read data.
          */
-    def get(documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference): stdLib.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot] = js.native
+    def get(documentRef: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentReference): js.Promise[firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentSnapshot] = js.native
     /**
          * Writes to the document referred to by the provided `DocumentReference`.
          * If the document does not exist yet, it will be created. If you pass
@@ -1264,7 +1264,7 @@ object firestoreNs extends js.Object {
          * successfully written to the backend as an atomic unit. Note that it won't
          * resolve while you're offline.
          */
-    def commit(): stdLib.Promise[scala.Unit] = js.native
+    def commit(): js.Promise[scala.Unit] = js.native
     /**
          * Deletes the document referred to by the provided `DocumentReference`.
          *

@@ -21,7 +21,7 @@ trait Loadable extends js.Object {
            * });
            * ```
            */
-  def preloadAll(): stdLib.Promise[scala.Unit] = js.native
+  def preloadAll(): js.Promise[scala.Unit] = js.native
   /**
            * Check for modules that are already loaded in the browser and call the matching
            * `LoadableComponent.preload` methods.
@@ -36,6 +36,6 @@ trait Loadable extends js.Object {
            * };
            * ```
            */
-  def preloadReady(): stdLib.Promise[scala.Unit] = js.native
+  def preloadReady(): js.Promise[scala.Unit] = js.native
 }
 

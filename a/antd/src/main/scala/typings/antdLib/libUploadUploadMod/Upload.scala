@@ -13,13 +13,13 @@ trait Upload
       js.Any
     ] {
   var progressTimer: js.Any = js.native
-  var recentUploadStatus: scala.Boolean | stdLib.PromiseLike[_] = js.native
+  var recentUploadStatus: scala.Boolean | js.Thenable[_] = js.native
   var upload: js.Any = js.native
   def autoUpdateProgress(`_`: js.Any, file: antdLib.libUploadInterfaceMod.UploadFile): scala.Unit = js.native
   def beforeUpload(
     file: antdLib.libUploadInterfaceMod.RcFile,
     fileList: js.Array[antdLib.libUploadInterfaceMod.RcFile]
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
   def clearProgressTimer(): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MUpload(): scala.Unit = js.native

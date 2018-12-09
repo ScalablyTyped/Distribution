@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("delete-empty", JSImport.Namespace)
 @js.native
 object deleteDashEmptyMod extends js.Object {
-  def apply(dir: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def apply(dir: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def apply(
     dir: java.lang.String,
     cb: js.Function2[

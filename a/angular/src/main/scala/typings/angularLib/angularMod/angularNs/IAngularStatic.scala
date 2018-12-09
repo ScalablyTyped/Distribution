@@ -29,7 +29,7 @@ trait IAngularStatic extends js.Object {
     ]
   ] = js.native
   var version: angularLib.Anon_Dot = js.native
-  def bind(context: js.Any, fn: js.Function, args: js.Any*): js.Function = js.native
+  def bind(context: js.Any, fn: angularLib.angularMod.Global.Function, args: js.Any*): angularLib.angularMod.Global.Function = js.native
   /**
            * Use this function to manually start up angular application.
            *
@@ -51,7 +51,10 @@ trait IAngularStatic extends js.Object {
            * @param config an object for defining configuration options for the application. The following keys are supported:
            *     - `strictDi`: disable automatic function annotation for the application. This is meant to assist in finding bugs which break minified code.
            */
-  def bootstrap(element: angularLib.JQuery, modules: js.Array[java.lang.String | js.Function | js.Array[_]]): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
+  def bootstrap(
+    element: angularLib.JQuery,
+    modules: js.Array[java.lang.String | angularLib.angularMod.Global.Function | js.Array[_]]
+  ): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   /**
            * Use this function to manually start up angular application.
            *
@@ -64,7 +67,7 @@ trait IAngularStatic extends js.Object {
            */
   def bootstrap(
     element: angularLib.JQuery,
-    modules: js.Array[java.lang.String | js.Function | js.Array[_]],
+    modules: js.Array[java.lang.String | angularLib.angularMod.Global.Function | js.Array[_]],
     config: IAngularBootstrapConfig
   ): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   /**
@@ -88,7 +91,10 @@ trait IAngularStatic extends js.Object {
            * @param config an object for defining configuration options for the application. The following keys are supported:
            *     - `strictDi`: disable automatic function annotation for the application. This is meant to assist in finding bugs which break minified code.
            */
-  def bootstrap(element: java.lang.String, modules: js.Array[java.lang.String | js.Function | js.Array[_]]): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
+  def bootstrap(
+    element: java.lang.String,
+    modules: js.Array[java.lang.String | angularLib.angularMod.Global.Function | js.Array[_]]
+  ): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   /**
            * Use this function to manually start up angular application.
            *
@@ -101,7 +107,7 @@ trait IAngularStatic extends js.Object {
            */
   def bootstrap(
     element: java.lang.String,
-    modules: js.Array[java.lang.String | js.Function | js.Array[_]],
+    modules: js.Array[java.lang.String | angularLib.angularMod.Global.Function | js.Array[_]],
     config: IAngularBootstrapConfig
   ): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   /**
@@ -125,7 +131,10 @@ trait IAngularStatic extends js.Object {
            * @param config an object for defining configuration options for the application. The following keys are supported:
            *     - `strictDi`: disable automatic function annotation for the application. This is meant to assist in finding bugs which break minified code.
            */
-  def bootstrap(element: stdLib.Document, modules: js.Array[java.lang.String | js.Function | js.Array[_]]): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
+  def bootstrap(
+    element: stdLib.Document,
+    modules: js.Array[java.lang.String | angularLib.angularMod.Global.Function | js.Array[_]]
+  ): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   /**
            * Use this function to manually start up angular application.
            *
@@ -138,7 +147,7 @@ trait IAngularStatic extends js.Object {
            */
   def bootstrap(
     element: stdLib.Document,
-    modules: js.Array[java.lang.String | js.Function | js.Array[_]],
+    modules: js.Array[java.lang.String | angularLib.angularMod.Global.Function | js.Array[_]],
     config: IAngularBootstrapConfig
   ): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   /**
@@ -162,7 +171,10 @@ trait IAngularStatic extends js.Object {
            * @param config an object for defining configuration options for the application. The following keys are supported:
            *     - `strictDi`: disable automatic function annotation for the application. This is meant to assist in finding bugs which break minified code.
            */
-  def bootstrap(element: stdLib.Element, modules: js.Array[java.lang.String | js.Function | js.Array[_]]): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
+  def bootstrap(
+    element: stdLib.Element,
+    modules: js.Array[java.lang.String | angularLib.angularMod.Global.Function | js.Array[_]]
+  ): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   /**
            * Use this function to manually start up angular application.
            *
@@ -175,7 +187,7 @@ trait IAngularStatic extends js.Object {
            */
   def bootstrap(
     element: stdLib.Element,
-    modules: js.Array[java.lang.String | js.Function | js.Array[_]],
+    modules: js.Array[java.lang.String | angularLib.angularMod.Global.Function | js.Array[_]],
     config: IAngularBootstrapConfig
   ): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   /**
@@ -397,7 +409,11 @@ trait IAngularStatic extends js.Object {
            * @param requires The names of modules this module depends on. If specified then new module is being created. If unspecified then the module is being retrieved for further configuration.
            * @param configFn Optional configuration function for the module.
            */
-  def module(name: java.lang.String, requires: js.Array[java.lang.String], configFn: Injectable[js.Function]): IModule = js.native
+  def module(
+    name: java.lang.String,
+    requires: js.Array[java.lang.String],
+    configFn: Injectable[angularLib.angularMod.Global.Function]
+  ): IModule = js.native
   def noop(args: js.Any*): scala.Unit = js.native
   def reloadWithDebugInfo(): scala.Unit = js.native
   def toJson(obj: js.Any): java.lang.String = js.native

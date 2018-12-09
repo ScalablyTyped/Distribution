@@ -17,26 +17,26 @@ trait IGlobal
            * If an abort flag is set on a pending request, the request is aborted.
            * If an abort flag is set on an ongoing request, the engine checks to see if it is possible to abort the request.
            */
-  def abortAll(): stdLib.Promise[scala.Unit] = js.native
+  def abortAll(): js.Promise[scala.Unit] = js.native
   /**
            * Aborts a specific request
            * @param qRequestId - Identifier of the request to stop.
            */
-  def abortRequest(qRequestId: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def abortRequest(qRequestId: scala.Double): js.Promise[scala.Unit] = js.native
   /**
            * no / empty docu
            */
-  def allowCreateApp(): stdLib.Promise[scala.Boolean] = js.native
+  def allowCreateApp(): js.Promise[scala.Boolean] = js.native
   /**
            * Indicates whether or not a user is able to create an app.
            */
-  def cancelReload(): stdLib.Promise[scala.Unit] = js.native
+  def cancelReload(): js.Promise[scala.Unit] = js.native
   /**
            * Cancels an ongoing reload. The reload of the app is stopped.
            * The indexation can be canceled and true is still the return value of the reload task.
            * @param qRequestId - Identifier of the request to stop.
            */
-  def cancelRequest(qRequestId: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def cancelRequest(qRequestId: scala.Double): js.Promise[scala.Unit] = js.native
   /**
            * Configures the engine's behavior during a reload.
            *
@@ -53,7 +53,7 @@ trait IGlobal
            * This parameter is relevant only if the variable ErrorMode is set to 1 and the script is run in
            * debug mode (qDebug is set to true when calling the DoReload method).
            */
-  def configureReload(qCancelOnScriptError: scala.Boolean, qUseErrorData: scala.Boolean, qInteractOnError: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def configureReload(qCancelOnScriptError: scala.Boolean, qUseErrorData: scala.Boolean, qInteractOnError: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Copies an app that is in the Qlik Sense repository.
            * The engine copies the app into an app entity that was previously created by the repository. See the QRS API (REST API) help for more information.
@@ -77,7 +77,7 @@ trait IGlobal
            * @returns - true or false
            * Note: The operation is successful if qSuccess is set to true.
            */
-  def copyApp(qTargetAppId: java.lang.String, qSrcAppId: java.lang.String, qIds: js.Array[java.lang.String]): stdLib.Promise[scala.Boolean] = js.native
+  def copyApp(qTargetAppId: java.lang.String, qSrcAppId: java.lang.String, qIds: js.Array[java.lang.String]): js.Promise[scala.Boolean] = js.native
   /**
            * Creates an app.
            * @param qAppName - Name of the app.
@@ -86,7 +86,7 @@ trait IGlobal
            * >> This parameter is optional.
            * >> The default value is Main.
            */
-  def createApp(qAppName: java.lang.String): stdLib.Promise[_] = js.native
+  def createApp(qAppName: java.lang.String): js.Promise[_] = js.native
   /**
            * Creates an app.
            * @param qAppName - Name of the app.
@@ -95,7 +95,7 @@ trait IGlobal
            * >> This parameter is optional.
            * >> The default value is Main.
            */
-  def createApp(qAppName: java.lang.String, qLocalizedScriptMainSection: java.lang.String): stdLib.Promise[_] = js.native
+  def createApp(qAppName: java.lang.String, qLocalizedScriptMainSection: java.lang.String): js.Promise[_] = js.native
    // ?Result
   /**
            * Creates an app and opens an engine session.
@@ -113,7 +113,7 @@ trait IGlobal
            * >> The default value is Main.
            * @returns - A Promise of App
            */
-  def createDocEx(qDocName: java.lang.String): stdLib.Promise[IApp] = js.native
+  def createDocEx(qDocName: java.lang.String): js.Promise[IApp] = js.native
    // ?Result
   /**
            * Creates an app and opens an engine session.
@@ -131,7 +131,7 @@ trait IGlobal
            * >> The default value is Main.
            * @returns - A Promise of App
            */
-  def createDocEx(qDocName: java.lang.String, qUserName: java.lang.String): stdLib.Promise[IApp] = js.native
+  def createDocEx(qDocName: java.lang.String, qUserName: java.lang.String): js.Promise[IApp] = js.native
    // ?Result
   /**
            * Creates an app and opens an engine session.
@@ -149,7 +149,7 @@ trait IGlobal
            * >> The default value is Main.
            * @returns - A Promise of App
            */
-  def createDocEx(qDocName: java.lang.String, qUserName: java.lang.String, qPassword: java.lang.String): stdLib.Promise[IApp] = js.native
+  def createDocEx(qDocName: java.lang.String, qUserName: java.lang.String, qPassword: java.lang.String): js.Promise[IApp] = js.native
    // ?Result
   /**
            * Creates an app and opens an engine session.
@@ -172,7 +172,7 @@ trait IGlobal
     qUserName: java.lang.String,
     qPassword: java.lang.String,
     qSerial: java.lang.String
-  ): stdLib.Promise[IApp] = js.native
+  ): js.Promise[IApp] = js.native
    // ?Result
   /**
            * Creates an app and opens an engine session.
@@ -196,7 +196,7 @@ trait IGlobal
     qPassword: java.lang.String,
     qSerial: java.lang.String,
     qLocalizedScriptMainSection: java.lang.String
-  ): stdLib.Promise[IApp] = js.native
+  ): js.Promise[IApp] = js.native
   /**
            * Creates an empty session app.
            * The following applies:
@@ -206,7 +206,7 @@ trait IGlobal
            * for example: objects, data connections.
            * @returns - A Promise of App
            */
-  def createSessionApp(): stdLib.Promise[IApp] = js.native
+  def createSessionApp(): js.Promise[IApp] = js.native
   /**
            * Creates a session app from a source app.
            * The following applies:
@@ -221,7 +221,7 @@ trait IGlobal
            * This parameter is mandatory.
            * @returns - A Promise of App
            */
-  def createSessionAppFromApp(qSrcAppId: java.lang.String): stdLib.Promise[IApp] = js.native
+  def createSessionAppFromApp(qSrcAppId: java.lang.String): js.Promise[IApp] = js.native
   /**
            * Deletes an app from the Qlik Sense repository or from the file system.
            *
@@ -241,12 +241,12 @@ trait IGlobal
            *
            * Note: The operation is successful if qSuccess is set to true.
            */
-  def deleteApp(qAppId: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def deleteApp(qAppId: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Get the current EngineVersion
            * @returns - qVersion
            */
-  def engineVersion(): stdLib.Promise[IQVersion] = js.native
+  def engineVersion(): js.Promise[IQVersion] = js.native
   /**
            * Exports an app from the Qlik Sense repository to the file system.
            *
@@ -261,14 +261,14 @@ trait IGlobal
            * This list must contain the GUIDs of all these objects.
            * @returns The operation is successful if qSuccess is set to true.
            */
-  def exportApp(qTargetPath: java.lang.String, qSrcAppId: java.lang.String, qIds: js.Array[java.lang.String]): stdLib.Promise[scala.Boolean] = js.native
+  def exportApp(qTargetPath: java.lang.String, qSrcAppId: java.lang.String, qIds: js.Array[java.lang.String]): js.Promise[scala.Boolean] = js.native
   /**
            * Returns the handle of the current app.
            *
            * Note: If no app is opened, an error message is returned:
            * For example code: 1007 and No active document and App invalid
            */
-  def getActiveDoc(): stdLib.Promise[IApp | java.lang.String] = js.native
+  def getActiveDoc(): js.Promise[IApp | java.lang.String] = js.native
    // ?Result
   /**
            * Retrieves the meta data of an app.
@@ -280,12 +280,12 @@ trait IGlobal
            * >> This parameter is mandatory.
            * @returns A Promise of AppEntry
            */
-  def getAppEntry(qAppID: java.lang.String): stdLib.Promise[IAppEntry] = js.native
+  def getAppEntry(qAppID: java.lang.String): js.Promise[IAppEntry] = js.native
   /**
            * Retrieves information about the authenticated user.
            * @returns Returns UserDirectory=<directory>; UserId=<identifier>
            */
-  def getAuthenticatedUser(): stdLib.Promise[java.lang.String] = js.native
+  def getAuthenticatedUser(): js.Promise[java.lang.String] = js.native
   /**
            * @deprecated since version 12.20.0
            * Returns a set of rules defining the Qlik Sense scripting language grammar.
@@ -302,7 +302,7 @@ trait IGlobal
            * - the chart functions if qBnfType is set to E.
            * @returns A Promise of  Array of BNFDef
            */
-  def getBNF(qBnfType: BnfType): stdLib.Promise[IBNFDef] = js.native
+  def getBNF(qBnfType: BnfType): js.Promise[IBNFDef] = js.native
   /**
            * Returns a set of rules defining the Qlik Sense scripting language grammar.
            * These rules define the syntax for the script statements and the script or chart functions.
@@ -318,7 +318,7 @@ trait IGlobal
            * - the chart functions if qBnfType is set to E.
            * @returns A Promise of IBNFDefResult
            */
-  def getBaseBNF(qBnfType: BnfType): stdLib.Promise[IBNFDefResult] = js.native
+  def getBaseBNF(qBnfType: BnfType): js.Promise[IBNFDefResult] = js.native
   /**
            * Gets a string hash calculated from the current Backus-Naur Form (BNF) grammar
            * of the Qlik engine scripting language. If the hash changes between subsequent
@@ -329,7 +329,7 @@ trait IGlobal
            * - the chart functions if qBnfType is set to E.
            * @returns A Promise qBnfHash
            */
-  def getBaseBNFHash(qBnfType: BnfType): stdLib.Promise[qlikDashEngineapiLib.Anon_QBnfHash] = js.native
+  def getBaseBNFHash(qBnfType: BnfType): js.Promise[qlikDashEngineapiLib.Anon_QBnfHash] = js.native
   /**
            * Gets the current Backus-Naur Form (BNF) grammar of the Qlik engine scripting language,
            * as well as a string hash calculated from that grammar. The BNF rules define the syntax
@@ -343,12 +343,12 @@ trait IGlobal
            *                   E: returns the chart functions.
            * @returns qBnfDefs and qBnfHash
            */
-  def getBaseBNFString(qBnfType: BnfType): stdLib.Promise[qlikDashEngineapiLib.Anon_QBnfDefs] = js.native
+  def getBaseBNFString(qBnfType: BnfType): js.Promise[qlikDashEngineapiLib.Anon_QBnfDefs] = js.native
   /**
            * Get a Config Object
            * @returns A Promise qConfig
            */
-  def getConfiguration(): stdLib.Promise[IQConfig] = js.native
+  def getConfiguration(): js.Promise[IQConfig] = js.native
   /**
            * List the custom connectors available in the system.
            * @param qReloadList Sets if the list of custom connectors should be reloaded or not.
@@ -359,7 +359,7 @@ trait IGlobal
            * If set to true, the GetCustomConnectors method looks for new connectors in the file system.
            * @returns A Promise Array of CustomConnector
            */
-  def getCustomConnectors(): stdLib.Promise[js.Array[ICustomConnector]] = js.native
+  def getCustomConnectors(): js.Promise[js.Array[ICustomConnector]] = js.native
   /**
            * List the custom connectors available in the system.
            * @param qReloadList Sets if the list of custom connectors should be reloaded or not.
@@ -370,20 +370,20 @@ trait IGlobal
            * If set to true, the GetCustomConnectors method looks for new connectors in the file system.
            * @returns A Promise Array of CustomConnector
            */
-  def getCustomConnectors(qReloadList: scala.Boolean): stdLib.Promise[js.Array[ICustomConnector]] = js.native
+  def getCustomConnectors(qReloadList: scala.Boolean): js.Promise[js.Array[ICustomConnector]] = js.native
   /**
            * Lists the databases in a ODBC, OLEDB or CUSTOM data source.
            * @param qConnection Information about the connection.
            * @returns A Promise Array of Database
            */
-  def getDatabasesFromConnectionString(qConnection: IConnection): stdLib.Promise[js.Array[IDatabase]] = js.native
+  def getDatabasesFromConnectionString(qConnection: IConnection): js.Promise[js.Array[IDatabase]] = js.native
   /**
            * Returns the folder where the apps are stored.
            *
            * Note: This method applies only if running Qlik Sense Desktop.
            * @returns Returns a path of the folder where the apps are stored.
            */
-  def getDefaultAppFolder(): stdLib.Promise[java.lang.String] = js.native
+  def getDefaultAppFolder(): js.Promise[java.lang.String] = js.native
   /**
            * Returns the list of apps.
            * -- In Qlik Sense Enterprise:
@@ -392,7 +392,7 @@ trait IGlobal
            * The apps are located in C:\Users\<user name>\Documents\Qlik\Sense\Apps.
            * @returns A Promise Array of DocListEntry
            */
-  def getDocList(): stdLib.Promise[IDocListEntry] = js.native
+  def getDocList(): js.Promise[IDocListEntry] = js.native
   /**
            * Returns the files and folders located at a specified path.
            * @param qPath Absolute or relative path.
@@ -405,7 +405,7 @@ trait IGlobal
            * The apps are located in C:\Users\<user name>\Documents\Qlik\Sense\Apps.
            * @returns Path of the folder where the apps are stored.
            */
-  def getFolderItemsForPath(qPath: java.lang.String): stdLib.Promise[js.Array[IFolderItem]] = js.native
+  def getFolderItemsForPath(qPath: java.lang.String): js.Promise[js.Array[IFolderItem]] = js.native
   /**
            * Gets the list of all the script functions.
            * @param qGroup Name of the group
@@ -413,7 +413,7 @@ trait IGlobal
            * >> Default is all groups.
            * @returns A Promise <Function> or undefined
            */
-  def getFunctions(): stdLib.Promise[js.UndefOr[IFunction]] = js.native
+  def getFunctions(): js.Promise[js.UndefOr[IFunction]] = js.native
   /**
            * Gets the list of all the script functions.
            * @param qGroup Name of the group
@@ -421,7 +421,7 @@ trait IGlobal
            * >> Default is all groups.
            * @returns A Promise <Function> or undefined
            */
-  def getFunctions(qGroup: FunctionGroupType): stdLib.Promise[js.UndefOr[IFunction]] = js.native
+  def getFunctions(qGroup: FunctionGroupType): js.Promise[js.UndefOr[IFunction]] = js.native
   /**
            * Retrieves information on the user interaction that is requested by the engine.
            * Engine can request user interactions only during script reload and when the reload is performed in debug mode
@@ -440,29 +440,29 @@ trait IGlobal
            * Corresponds to the identifier of the DoReload request.
            * @returns A Promise of InteractDef
            */
-  def getInteract(qRequestId: scala.Double): stdLib.Promise[IInteractDef] = js.native
+  def getInteract(qRequestId: scala.Double): js.Promise[IInteractDef] = js.native
   /**
            * Lists the logical drives in the system.
            *
            * Note: This method applies only if running Qlik Sense Desktop.
            * @returns A Promise Array of DriveInfo
            */
-  def getLogicalDriveStrings(): stdLib.Promise[js.Array[IDriveInfo]] = js.native
+  def getLogicalDriveStrings(): js.Promise[js.Array[IDriveInfo]] = js.native
   /**
            * Gets the MyDocumenstFolder Path in the system.
            * @returns A Promise of the MyDocumenstFolder Path
            */
-  def getMyDocumentsFolder(): stdLib.Promise[qlikDashEngineapiLib.Anon_QFolder] = js.native
+  def getMyDocumentsFolder(): js.Promise[qlikDashEngineapiLib.Anon_QFolder] = js.native
   /**
            * Returns the list of the ODBC connectors that are installed in the system.
            * @returns A Promise Array of OdbcDsn
            */
-  def getOdbcDsns(): stdLib.Promise[js.Array[IOdbcDsn]] = js.native
+  def getOdbcDsns(): js.Promise[js.Array[IOdbcDsn]] = js.native
   /**
            * Returns the list of the OLEDB providers installed on the system.
            * @returns A Promise Array of OleDbProvider
            */
-  def getOleDbProviders(): stdLib.Promise[js.Array[IOleDbProvider]] = js.native
+  def getOleDbProviders(): js.Promise[js.Array[IOleDbProvider]] = js.native
   /**
            * Gives information about the progress of the DoReload and DoSave calls.
            *
@@ -473,7 +473,7 @@ trait IGlobal
            * error messages are returned but information like when the request started and finished is not returned.
            * @returns Information about the progress of the request.
            */
-  def getProgress(qRequestId: scala.Double): stdLib.Promise[IProgressData] = js.native
+  def getProgress(qRequestId: scala.Double): js.Promise[IProgressData] = js.native
   /**
            * Lists the streams.
            *
@@ -481,11 +481,11 @@ trait IGlobal
            * Use general purpose endpoint in QRS API: GET qrs/stream/ instead.
            * @returns Array of NxStreamListEntry
            */
-  def getStreamList(): stdLib.Promise[js.Array[INxStreamListEntry]] = js.native
+  def getStreamList(): js.Promise[js.Array[INxStreamListEntry]] = js.native
   /**
            * Lists the supported code pages.
            */
-  def getSupportedCodePages(): stdLib.Promise[js.Array[ICodePage]] = js.native
+  def getSupportedCodePages(): js.Promise[js.Array[ICodePage]] = js.native
   /**
            * Returns the unique identifier of the endpoint for the current user in the current app.
            *
@@ -493,7 +493,7 @@ trait IGlobal
            * @returns Identifier of the endpoint.
            * This identifier is unique.
            */
-  def getUniqueID(): stdLib.Promise[java.lang.String] = js.native
+  def getUniqueID(): js.Promise[java.lang.String] = js.native
   /**
            * Import an App
            * @param qAppId - new AppId
@@ -502,7 +502,7 @@ trait IGlobal
            * Note: from shema file
            * Note: This operation is possible only in Qlik Sense Enterprise.
            */
-  def importApp(qAppId: java.lang.String, qSrcPath: java.lang.String, qIds: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def importApp(qAppId: java.lang.String, qSrcPath: java.lang.String, qIds: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   /**
            * Import an App Extended
            * @param qAppId - new AppId
@@ -517,7 +517,7 @@ trait IGlobal
     qSrcPath: java.lang.String,
     qIds: js.Array[java.lang.String],
     qExcludeConnections: scala.Boolean
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
            * Informs the engine that a user interaction (which was earlier requested by the engine)
            * was performed and indicates the engine what to do next.
@@ -525,32 +525,32 @@ trait IGlobal
            * Corresponds to the identifier of the DoReload request.
            * @param qDef User response to the current interaction.
            */
-  def interactDone(qRequestId: scala.Double, qDef: IInteractDef): stdLib.Promise[scala.Unit] = js.native
+  def interactDone(qRequestId: scala.Double, qDef: IInteractDef): js.Promise[scala.Unit] = js.native
   /**
            * Indicates whether the user is working in Qlik Sense Desktop.
            */
-  def isDesktopMode(): stdLib.Promise[scala.Boolean] = js.native
+  def isDesktopMode(): js.Promise[scala.Boolean] = js.native
   /**
            * Indicates whether or not the user is working in personal mode (Qlik Sense Desktop).
            *
            * Note: This method is deprecated.
            * @returns The engine returns true if the user is working with Qlik Sense Desktop.
            */
-  def isPersonalMode(): stdLib.Promise[scala.Boolean] = js.native
+  def isPersonalMode(): js.Promise[scala.Boolean] = js.native
   /**
            * Checks if a connection string is valid.
            * @param qConnection Information about the connection.
            * @returns True means that the connection string is correct.
            */
-  def isValidConnectionString(qConnection: IConnection): stdLib.Promise[scala.Boolean] = js.native
+  def isValidConnectionString(qConnection: IConnection): js.Promise[scala.Boolean] = js.native
   /**
            * Returns the name of the operating system.
            */
-  def oSName(): stdLib.Promise[java.lang.String] = js.native
+  def oSName(): js.Promise[java.lang.String] = js.native
   /**
            * Returns the version number of the operating system.
            */
-  def oSVersion(): stdLib.Promise[java.lang.String] = js.native
+  def oSVersion(): js.Promise[java.lang.String] = js.native
   /**
            * Opens an app and checks if the app needs to be migrated (if the app is deprecated).
            * The OpenDoc method compares the version of the app with the version of Qlik Sense and
@@ -582,7 +582,7 @@ trait IGlobal
            * >> The default value is false.
            * @returns A Promise of App
            */
-  def openDoc(qDocName: java.lang.String): stdLib.Promise[IApp] = js.native
+  def openDoc(qDocName: java.lang.String): js.Promise[IApp] = js.native
   /**
            * Opens an app and checks if the app needs to be migrated (if the app is deprecated).
            * The OpenDoc method compares the version of the app with the version of Qlik Sense and
@@ -614,7 +614,7 @@ trait IGlobal
            * >> The default value is false.
            * @returns A Promise of App
            */
-  def openDoc(qDocName: java.lang.String, qUserName: java.lang.String): stdLib.Promise[IApp] = js.native
+  def openDoc(qDocName: java.lang.String, qUserName: java.lang.String): js.Promise[IApp] = js.native
   /**
            * Opens an app and checks if the app needs to be migrated (if the app is deprecated).
            * The OpenDoc method compares the version of the app with the version of Qlik Sense and
@@ -646,7 +646,7 @@ trait IGlobal
            * >> The default value is false.
            * @returns A Promise of App
            */
-  def openDoc(qDocName: java.lang.String, qUserName: java.lang.String, qPassword: java.lang.String): stdLib.Promise[IApp] = js.native
+  def openDoc(qDocName: java.lang.String, qUserName: java.lang.String, qPassword: java.lang.String): js.Promise[IApp] = js.native
   /**
            * Opens an app and checks if the app needs to be migrated (if the app is deprecated).
            * The OpenDoc method compares the version of the app with the version of Qlik Sense and
@@ -683,7 +683,7 @@ trait IGlobal
     qUserName: java.lang.String,
     qPassword: java.lang.String,
     qSerial: java.lang.String
-  ): stdLib.Promise[IApp] = js.native
+  ): js.Promise[IApp] = js.native
   /**
            * Opens an app and checks if the app needs to be migrated (if the app is deprecated).
            * The OpenDoc method compares the version of the app with the version of Qlik Sense and
@@ -721,12 +721,12 @@ trait IGlobal
     qPassword: java.lang.String,
     qSerial: java.lang.String,
     qNoData: scala.Boolean
-  ): stdLib.Promise[IApp] = js.native
+  ): js.Promise[IApp] = js.native
   /**
            * @deprecated since version 12.20.0
            * Returns the Qlik Sense version number.
            */
-  def productVersion(): stdLib.Promise[java.lang.String] = js.native
+  def productVersion(): js.Promise[java.lang.String] = js.native
   /**
            * Publish an App to a Stream
            * @param qStreamId - Id of the stream there it should published
@@ -734,21 +734,21 @@ trait IGlobal
            * Note: from shema file
            * Note: This operation is possible only in Qlik Sense Enterprise.
            */
-  def publishApp(qStreamId: java.lang.String, qName: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def publishApp(qStreamId: java.lang.String, qName: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Returns the Qlik product name.
            */
-  def qTProduct(): stdLib.Promise[java.lang.String] = js.native
+  def qTProduct(): js.Promise[java.lang.String] = js.native
   /**
            * Returns the Qlik Sense version number.
            *
            * Note: This method is deprecated (not recommended to use). Use ProductVersion method instead.
            */
-  def qvVersion(): stdLib.Promise[java.lang.String] = js.native
+  def qvVersion(): js.Promise[java.lang.String] = js.native
   /**
            * Reloads the list of extensions.
            */
-  def reloadExtensionList(): stdLib.Promise[scala.Unit] = js.native
+  def reloadExtensionList(): js.Promise[scala.Unit] = js.native
   /**
            * Replaces an app with the objects from a source app.
            * The list of objects in the app to be replaced must be defined in qIds.
@@ -769,12 +769,12 @@ trait IGlobal
            * the objects related to these identifiers are removed from the target app.
            * @returns The operation is successful if qSuccess is set to true.
            */
-  def replaceAppFromID(qTargetAppId: java.lang.String, qSrcAppID: java.lang.String, qIds: js.Array[java.lang.String]): stdLib.Promise[scala.Boolean] = js.native
+  def replaceAppFromID(qTargetAppId: java.lang.String, qSrcAppID: java.lang.String, qIds: js.Array[java.lang.String]): js.Promise[scala.Boolean] = js.native
   /**
            * Shuts down the Qlik engine.
            *
            * Note: This operation is possible only in Qlik Sense Desktop.
            */
-  def shutdownProcess(): stdLib.Promise[scala.Unit] = js.native
+  def shutdownProcess(): js.Promise[scala.Unit] = js.native
 }
 

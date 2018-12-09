@@ -65,7 +65,7 @@ object ACMNs extends js.Object {
     /**
          * The name of the certificate authority that issued and signed the certificate.
          */
-    var Issuer: js.UndefOr[java.lang.String] = js.undefined
+    var Issuer: js.UndefOr[String] = js.undefined
     /**
          * The algorithm that was used to generate the public-private key pair.
          */
@@ -105,11 +105,11 @@ object ACMNs extends js.Object {
     /**
          * The serial number of the certificate.
          */
-    var Serial: js.UndefOr[java.lang.String] = js.undefined
+    var Serial: js.UndefOr[String] = js.undefined
     /**
          * The algorithm that was used to sign the certificate.
          */
-    var SignatureAlgorithm: js.UndefOr[java.lang.String] = js.undefined
+    var SignatureAlgorithm: js.UndefOr[String] = js.undefined
     /**
          * The status of the certificate.
          */
@@ -117,7 +117,7 @@ object ACMNs extends js.Object {
     /**
          * The name of the entity that is associated with the public key contained in the certificate.
          */
-    var Subject: js.UndefOr[java.lang.String] = js.undefined
+    var Subject: js.UndefOr[String] = js.undefined
     /**
          * One or more domain names (subject alternative names) included in the certificate. This list contains the domain names that are bound to the public key that is contained in the certificate. The subject alternative names include the canonical domain name (CN) of the certificate and additional domain names that can be used to connect to the website. 
          */
@@ -257,7 +257,7 @@ object ACMNs extends js.Object {
     /**
          * An object identifier (OID) for the extension value. OIDs are strings of numbers separated by periods. The following OIDs are defined in RFC 3280 and RFC 5280.     1.3.6.1.5.5.7.3.1 (TLS_WEB_SERVER_AUTHENTICATION)     1.3.6.1.5.5.7.3.2 (TLS_WEB_CLIENT_AUTHENTICATION)     1.3.6.1.5.5.7.3.3 (CODE_SIGNING)     1.3.6.1.5.5.7.3.4 (EMAIL_PROTECTION)     1.3.6.1.5.5.7.3.8 (TIME_STAMPING)     1.3.6.1.5.5.7.3.9 (OCSP_SIGNING)     1.3.6.1.5.5.7.3.5 (IPSEC_END_SYSTEM)     1.3.6.1.5.5.7.3.6 (IPSEC_TUNNEL)     1.3.6.1.5.5.7.3.7 (IPSEC_USER)   
          */
-    var OID: js.UndefOr[java.lang.String] = js.undefined
+    var OID: js.UndefOr[String] = js.undefined
   }
   
   
@@ -465,7 +465,7 @@ object ACMNs extends js.Object {
     /**
          * The name of the DNS record to create in your domain. This is supplied by ACM.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The type of DNS record. Currently this can be CNAME.
          */
@@ -473,7 +473,7 @@ object ACMNs extends js.Object {
     /**
          * The value of the CNAME record to add to your DNS database. This is supplied by ACM.
          */
-    var Value: java.lang.String
+    var Value: String
   }
   
   
@@ -875,7 +875,7 @@ object ACMNs extends js.Object {
   type ExtendedKeyUsageName = awsDashSdkLib.awsDashSdkLibStrings.TLS_WEB_SERVER_AUTHENTICATION | awsDashSdkLib.awsDashSdkLibStrings.TLS_WEB_CLIENT_AUTHENTICATION | awsDashSdkLib.awsDashSdkLibStrings.CODE_SIGNING | awsDashSdkLib.awsDashSdkLibStrings.EMAIL_PROTECTION | awsDashSdkLib.awsDashSdkLibStrings.TIME_STAMPING | awsDashSdkLib.awsDashSdkLibStrings.OCSP_SIGNING | awsDashSdkLib.awsDashSdkLibStrings.IPSEC_END_SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.IPSEC_TUNNEL | awsDashSdkLib.awsDashSdkLibStrings.IPSEC_USER | awsDashSdkLib.awsDashSdkLibStrings.ANY | awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM | java.lang.String
   type FailureReason = awsDashSdkLib.awsDashSdkLibStrings.NO_AVAILABLE_CONTACTS | awsDashSdkLib.awsDashSdkLibStrings.ADDITIONAL_VERIFICATION_REQUIRED | awsDashSdkLib.awsDashSdkLibStrings.DOMAIN_NOT_ALLOWED | awsDashSdkLib.awsDashSdkLibStrings.INVALID_PUBLIC_DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.CAA_ERROR | awsDashSdkLib.awsDashSdkLibStrings.PCA_LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.PCA_INVALID_ARN | awsDashSdkLib.awsDashSdkLibStrings.PCA_INVALID_STATE | awsDashSdkLib.awsDashSdkLibStrings.PCA_REQUEST_FAILED | awsDashSdkLib.awsDashSdkLibStrings.PCA_RESOURCE_NOT_FOUND | awsDashSdkLib.awsDashSdkLibStrings.PCA_INVALID_ARGS | awsDashSdkLib.awsDashSdkLibStrings.OTHER | java.lang.String
   type IdempotencyToken = java.lang.String
-  type InUseList = js.Array[java.lang.String]
+  type InUseList = js.Array[String]
   type KeyAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.RSA_2048 | awsDashSdkLib.awsDashSdkLibStrings.RSA_1024 | awsDashSdkLib.awsDashSdkLibStrings.RSA_4096 | awsDashSdkLib.awsDashSdkLibStrings.EC_prime256v1 | awsDashSdkLib.awsDashSdkLibStrings.EC_secp384r1 | awsDashSdkLib.awsDashSdkLibStrings.EC_secp521r1 | java.lang.String
   type KeyAlgorithmList = js.Array[KeyAlgorithm]
   type KeyUsageFilterList = js.Array[KeyUsageName]
@@ -895,7 +895,7 @@ object ACMNs extends js.Object {
   type TagKey = java.lang.String
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
-  type ValidationEmailList = js.Array[java.lang.String]
+  type ValidationEmailList = js.Array[String]
   type ValidationMethod = awsDashSdkLib.awsDashSdkLibStrings.EMAIL | awsDashSdkLib.awsDashSdkLibStrings.DNS | java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-12-08` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

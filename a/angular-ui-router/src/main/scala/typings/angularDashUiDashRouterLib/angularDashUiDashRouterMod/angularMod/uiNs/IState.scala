@@ -19,12 +19,16 @@ trait IState extends js.Object {
   /**
                * A controller paired to the state. Function, annotated array or name as String
                */
-  var controller: js.UndefOr[js.Function | java.lang.String | (js.Array[java.lang.String | js.Function])] = js.undefined
+  var controller: js.UndefOr[
+    angularLib.angularMod.Global.Function | java.lang.String | (js.Array[java.lang.String | angularLib.angularMod.Global.Function])
+  ] = js.undefined
   var controllerAs: js.UndefOr[java.lang.String] = js.undefined
   /**
                * Function (injectable), returns the actual controller function or string.
                */
-  var controllerProvider: js.UndefOr[js.Function | (js.Array[java.lang.String | js.Function])] = js.undefined
+  var controllerProvider: js.UndefOr[
+    angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function])
+  ] = js.undefined
   /**
                * Arbitrary data object, useful for custom configuration.
                */
@@ -34,12 +38,16 @@ trait IState extends js.Object {
                * Callback function for when a state is entered. Good way to trigger an action or dispatch an event, such as opening a dialog.
                * If minifying your scripts, make sure to explicitly annotate this function, because it won't be automatically annotated by your build tools.
                */
-  var onEnter: js.UndefOr[js.Function | (js.Array[java.lang.String | js.Function])] = js.undefined
+  var onEnter: js.UndefOr[
+    angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function])
+  ] = js.undefined
   /**
                * Callback functions for when a state is entered and exited. Good way to trigger an action or dispatch an event, such as opening a dialog.
                * If minifying your scripts, make sure to explicitly annotate this function, because it won't be automatically annotated by your build tools.
                */
-  var onExit: js.UndefOr[js.Function | (js.Array[java.lang.String | js.Function])] = js.undefined
+  var onExit: js.UndefOr[
+    angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function])
+  ] = js.undefined
   /**
                * A map which optionally configures parameters declared in the url, or defines additional non-url parameters. Only use this within a state if you are not using url. Otherwise you can specify your parameters within the url. When a state is navigated or transitioned to, the $stateParams service will be populated with any parameters that were passed.
                */
@@ -52,7 +60,7 @@ trait IState extends js.Object {
                * string | function | object
                * Synchronously or asynchronously redirects Transitions to a different state/params
                */
-  var redirectTo: js.UndefOr[java.lang.String | js.Function | IState] = js.undefined
+  var redirectTo: js.UndefOr[java.lang.String | angularLib.angularMod.Global.Function | IState] = js.undefined
   /**
                * Boolean (default true). If false will not re-trigger the same state just because a search/query parameter has changed. Useful for when you'd like to modify $location.search() without triggering a reload.
                */
@@ -65,7 +73,9 @@ trait IState extends js.Object {
   /**
                * Function, returns HTML content string
                */
-  var templateProvider: js.UndefOr[js.Function | (js.Array[java.lang.String | js.Function])] = js.undefined
+  var templateProvider: js.UndefOr[
+    angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function])
+  ] = js.undefined
   /**
                * String URL path to template file OR Function, returns URL path string
                */

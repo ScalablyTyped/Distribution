@@ -9,22 +9,22 @@ import scala.scalajs.js.annotation._
 @js.native
 object utilModMembers extends js.Object {
   val inspect: nodeLib.Anon_Object = js.native
-  def callbackify(fn: js.Function0[stdLib.Promise[scala.Unit]]): js.Function1[
+  def callbackify(fn: js.Function0[js.Promise[scala.Unit]]): js.Function1[
     /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
     scala.Unit
   ] = js.native
-  def callbackify[T1](fn: js.Function1[/* arg1 */ T1, stdLib.Promise[scala.Unit]]): js.Function2[
+  def callbackify[T1](fn: js.Function1[/* arg1 */ T1, js.Promise[scala.Unit]]): js.Function2[
     /* arg1 */ T1, 
     /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
     scala.Unit
   ] = js.native
-  def callbackify[T1, T2](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, stdLib.Promise[scala.Unit]]): js.Function3[
+  def callbackify[T1, T2](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[scala.Unit]]): js.Function3[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
     scala.Unit
   ] = js.native
-  def callbackify[T1, T2, T3](fn: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, stdLib.Promise[scala.Unit]]): js.Function4[
+  def callbackify[T1, T2, T3](fn: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Promise[scala.Unit]]): js.Function4[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
@@ -32,7 +32,7 @@ object utilModMembers extends js.Object {
     scala.Unit
   ] = js.native
   def callbackify[T1, T2, T3, T4](
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, stdLib.Promise[scala.Unit]]
+    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Promise[scala.Unit]]
   ): js.Function5[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
@@ -48,7 +48,7 @@ object utilModMembers extends js.Object {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      stdLib.Promise[scala.Unit]
+      js.Promise[scala.Unit]
     ]
   ): js.Function6[
     /* arg1 */ T1, 
@@ -67,7 +67,7 @@ object utilModMembers extends js.Object {
       /* arg4 */ T4, 
       /* arg5 */ T5, 
       /* arg6 */ T6, 
-      stdLib.Promise[scala.Unit]
+      js.Promise[scala.Unit]
     ]
   ): js.Function7[
     /* arg1 */ T1, 
@@ -88,7 +88,7 @@ object utilModMembers extends js.Object {
       /* arg4 */ T4, 
       /* arg5 */ T5, 
       /* arg6 */ T6, 
-      stdLib.Promise[TResult]
+      js.Promise[TResult]
     ]
   ): js.Function7[
     /* arg1 */ T1, 
@@ -108,7 +108,7 @@ object utilModMembers extends js.Object {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      stdLib.Promise[TResult]
+      js.Promise[TResult]
     ]
   ): js.Function6[
     /* arg1 */ T1, 
@@ -120,9 +120,7 @@ object utilModMembers extends js.Object {
     scala.Unit
   ] = js.native
   @JSName("callbackify")
-  def callbackify_T1T2T3T4TResult[T1, T2, T3, T4, TResult](
-    fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, stdLib.Promise[TResult]]
-  ): js.Function5[
+  def callbackify_T1T2T3T4TResult[T1, T2, T3, T4, TResult](fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Promise[TResult]]): js.Function5[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
@@ -131,7 +129,7 @@ object utilModMembers extends js.Object {
     scala.Unit
   ] = js.native
   @JSName("callbackify")
-  def callbackify_T1T2T3TResult[T1, T2, T3, TResult](fn: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, stdLib.Promise[TResult]]): js.Function4[
+  def callbackify_T1T2T3TResult[T1, T2, T3, TResult](fn: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Promise[TResult]]): js.Function4[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
@@ -139,20 +137,20 @@ object utilModMembers extends js.Object {
     scala.Unit
   ] = js.native
   @JSName("callbackify")
-  def callbackify_T1T2TResult[T1, T2, TResult](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, stdLib.Promise[TResult]]): js.Function3[
+  def callbackify_T1T2TResult[T1, T2, TResult](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[TResult]]): js.Function3[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* result */ TResult, scala.Unit], 
     scala.Unit
   ] = js.native
   @JSName("callbackify")
-  def callbackify_T1TResult[T1, TResult](fn: js.Function1[/* arg1 */ T1, stdLib.Promise[TResult]]): js.Function2[
+  def callbackify_T1TResult[T1, TResult](fn: js.Function1[/* arg1 */ T1, js.Promise[TResult]]): js.Function2[
     /* arg1 */ T1, 
     /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* result */ TResult, scala.Unit], 
     scala.Unit
   ] = js.native
   @JSName("callbackify")
-  def callbackify_TResult[TResult](fn: js.Function0[stdLib.Promise[TResult]]): js.Function1[
+  def callbackify_TResult[TResult](fn: js.Function0[js.Promise[TResult]]): js.Function1[
     /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* result */ TResult, scala.Unit], 
     scala.Unit
   ] = js.native
@@ -206,14 +204,14 @@ object utilModMembers extends js.Object {
       /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
-  ): js.Function0[stdLib.Promise[scala.Unit]] = js.native
+  ): js.Function0[js.Promise[scala.Unit]] = js.native
   def promisify[T1](
     fn: js.Function2[
       /* arg1 */ T1, 
       /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
-  ): js.Function1[/* arg1 */ T1, stdLib.Promise[scala.Unit]] = js.native
+  ): js.Function1[/* arg1 */ T1, js.Promise[scala.Unit]] = js.native
   def promisify[TCustom /* <: js.Function */](fn: CustomPromisify[TCustom]): TCustom = js.native
   def promisify[T1, T2](
     fn: js.Function3[
@@ -222,7 +220,7 @@ object utilModMembers extends js.Object {
       /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
-  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, stdLib.Promise[scala.Unit]] = js.native
+  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[scala.Unit]] = js.native
   def promisify[T1, T2, T3](
     fn: js.Function4[
       /* arg1 */ T1, 
@@ -231,7 +229,7 @@ object utilModMembers extends js.Object {
       /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
-  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, stdLib.Promise[scala.Unit]] = js.native
+  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Promise[scala.Unit]] = js.native
   def promisify[T1, T2, T3, T4](
     fn: js.Function5[
       /* arg1 */ T1, 
@@ -241,7 +239,7 @@ object utilModMembers extends js.Object {
       /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
-  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, stdLib.Promise[scala.Unit]] = js.native
+  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Promise[scala.Unit]] = js.native
   def promisify[T1, T2, T3, T4, T5](
     fn: js.Function6[
       /* arg1 */ T1, 
@@ -258,7 +256,7 @@ object utilModMembers extends js.Object {
     /* arg3 */ T3, 
     /* arg4 */ T4, 
     /* arg5 */ T5, 
-    stdLib.Promise[scala.Unit]
+    js.Promise[scala.Unit]
   ] = js.native
   @JSName("promisify")
   def promisify_T1T2T3T4T5TResult[T1, T2, T3, T4, T5, TResult](
@@ -277,7 +275,7 @@ object utilModMembers extends js.Object {
     /* arg3 */ T3, 
     /* arg4 */ T4, 
     /* arg5 */ T5, 
-    stdLib.Promise[TResult]
+    js.Promise[TResult]
   ] = js.native
   @JSName("promisify")
   def promisify_T1T2T3T4TResult[T1, T2, T3, T4, TResult](
@@ -289,7 +287,7 @@ object utilModMembers extends js.Object {
       /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ TResult, scala.Unit], 
       scala.Unit
     ]
-  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, stdLib.Promise[TResult]] = js.native
+  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Promise[TResult]] = js.native
   @JSName("promisify")
   def promisify_T1T2T3TResult[T1, T2, T3, TResult](
     fn: js.Function4[
@@ -299,7 +297,7 @@ object utilModMembers extends js.Object {
       /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ TResult, scala.Unit], 
       scala.Unit
     ]
-  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, stdLib.Promise[TResult]] = js.native
+  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Promise[TResult]] = js.native
   @JSName("promisify")
   def promisify_T1T2TResult[T1, T2, TResult](
     fn: js.Function3[
@@ -308,7 +306,7 @@ object utilModMembers extends js.Object {
       /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ TResult, scala.Unit], 
       scala.Unit
     ]
-  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, stdLib.Promise[TResult]] = js.native
+  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[TResult]] = js.native
   @JSName("promisify")
   def promisify_T1TResult[T1, TResult](
     fn: js.Function2[
@@ -316,14 +314,14 @@ object utilModMembers extends js.Object {
       /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ TResult, scala.Unit], 
       scala.Unit
     ]
-  ): js.Function1[/* arg1 */ T1, stdLib.Promise[TResult]] = js.native
+  ): js.Function1[/* arg1 */ T1, js.Promise[TResult]] = js.native
   @JSName("promisify")
   def promisify_TResult[TResult](
     fn: js.Function1[
       /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ TResult, scala.Unit], 
       scala.Unit
     ]
-  ): js.Function0[stdLib.Promise[TResult]] = js.native
+  ): js.Function0[js.Promise[TResult]] = js.native
   /** @deprecated since v0.11.3 - use `console.log()` instead. */
   def puts(param: js.Any*): scala.Unit = js.native
 }

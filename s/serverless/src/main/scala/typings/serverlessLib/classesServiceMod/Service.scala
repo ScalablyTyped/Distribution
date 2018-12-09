@@ -15,7 +15,7 @@ trait Service extends js.Object {
   def getEventInFunction(eventName: java.lang.String, functionName: java.lang.String): serverlessLib.serverlessMod.ServerlessNs.Event
   def getFunction(functionName: java.lang.String): serverlessLib.serverlessMod.ServerlessNs.FunctionDefinition
   def getServiceName(): java.lang.String
-  def load(rawOptions: js.Object): stdLib.Promise[_]
+  def load(rawOptions: js.Object): js.Promise[_]
   def mergeResourceArrays(): scala.Unit
   def setFunctionNames(rawOptions: js.Object): scala.Unit
   def update(data: js.Object): js.Object

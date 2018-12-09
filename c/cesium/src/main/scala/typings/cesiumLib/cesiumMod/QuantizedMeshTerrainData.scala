@@ -18,7 +18,7 @@ class QuantizedMeshTerrainData protected ()
     x: scala.Double,
     y: scala.Double,
     level: scala.Double
-  ): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.TerrainMesh] = js.native
+  ): js.Promise[cesiumLib.cesiumMod.CesiumNs.TerrainMesh] = js.native
   /* CompleteClass */
   override def interpolateHeight(rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle, longitude: scala.Double, latitude: scala.Double): scala.Double = js.native
   /* CompleteClass */
@@ -32,7 +32,7 @@ class QuantizedMeshTerrainData protected ()
     descendantX: scala.Double,
     descendantY: scala.Double,
     descendantLevel: scala.Double
-  ): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.QuantizedMeshTerrainData] = js.native
+  ): js.Promise[cesiumLib.cesiumMod.CesiumNs.QuantizedMeshTerrainData] = js.native
   /* CompleteClass */
   override def wasCreatedByUpsampling(): scala.Boolean = js.native
 }

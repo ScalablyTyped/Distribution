@@ -13,6 +13,6 @@ trait AndroidApi extends js.Object {
        * @param path Path of the file to be opened.
        * @param mime Basically system will open an app according to this MIME type.
        */
-  def actionViewIntent(path: java.lang.String, mime: java.lang.String): stdLib.Promise[_]
+  def actionViewIntent(path: java.lang.String, mime: java.lang.String): js.Promise[_]
 }
 

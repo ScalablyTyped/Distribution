@@ -26,7 +26,7 @@ package object CodeMirrorNs {
     /* content */ java.lang.String, 
     /* options */ LintStateOptions, 
     /* codeMirror */ Editor, 
-    js.Array[Annotation] | stdLib.PromiseLike[js.Array[Annotation]]
+    js.Array[Annotation] | js.Thenable[js.Array[Annotation]]
   ]
   /**
        * A function that, given a CodeMirror configuration object and an optional mode configuration object, returns a mode object.

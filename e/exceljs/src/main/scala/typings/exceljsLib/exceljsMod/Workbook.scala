@@ -45,7 +45,7 @@ class Workbook () extends js.Object {
   /**
   	 * Commit a completed workbook to stream and close the stream
   	 */
-  def commit(): stdLib.Promise[scala.Unit] = js.native
+  def commit(): js.Promise[scala.Unit] = js.native
   /**
   	 * Iterate over all sheets.
   	 *

@@ -13,6 +13,6 @@ class Session ()
 @JSImport("parse", "Session")
 @js.native
 object Session extends js.Object {
-  def current(): stdLib.Promise[parseLib.ParseNs.Session] = js.native
+  def current(): js.Promise[parseLib.ParseNs.Session] = js.native
 }
 

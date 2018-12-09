@@ -34,7 +34,7 @@ class OAuth2Client ()
   var projectId: js.UndefOr[java.lang.String] = js.native
   var redirectUri: js.UndefOr[js.Any] = js.native
   var refreshAccessTokenAsync: js.Any = js.native
-  var refreshTokenPromises: lodashLib.lodashMod.Global.Map[java.lang.String, stdLib.Promise[GetTokenResponse]] = js.native
+  var refreshTokenPromises: lodashLib.lodashMod.Global.Map[java.lang.String, js.Promise[GetTokenResponse]] = js.native
   var revokeCredentialsAsync: js.Any = js.native
   var verifyIdTokenAsync: js.Any = js.native
   /**
@@ -66,7 +66,7 @@ class OAuth2Client ()
        *
        * @param callback Callback to call with the access token
        */
-  def getAccessToken(): stdLib.Promise[GetAccessTokenResponse] = js.native
+  def getAccessToken(): js.Promise[GetAccessTokenResponse] = js.native
   def getAccessToken(callback: GetAccessTokenCallback): scala.Unit = js.native
   /**
        * Gets federated sign-on certificates to use for verifying identity tokens.
@@ -74,9 +74,9 @@ class OAuth2Client ()
        * are PEM encoded certificates.
        * @param callback Callback supplying the certificates
        */
-  def getFederatedSignonCerts(): stdLib.Promise[FederatedSignonCertsResponse] = js.native
+  def getFederatedSignonCerts(): js.Promise[FederatedSignonCertsResponse] = js.native
   def getFederatedSignonCerts(callback: GetFederatedSignonCertsCallback): scala.Unit = js.native
-  def getFederatedSignonCertsAsync(): stdLib.Promise[FederatedSignonCertsResponse] = js.native
+  def getFederatedSignonCertsAsync(): js.Promise[FederatedSignonCertsResponse] = js.native
   /**
        * The main authentication interface.  It takes an optional url which when
        * present is the endpoint being accessed, and returns a Promise which
@@ -86,7 +86,7 @@ class OAuth2Client ()
        * { Authorization: 'Bearer <access_token_value>' }
        * @param url The optional url being authorized
        */
-  def getRequestHeaders(): stdLib.Promise[Headers] = js.native
+  def getRequestHeaders(): js.Promise[Headers] = js.native
   /**
        * The main authentication interface.  It takes an optional url which when
        * present is the endpoint being accessed, and returns a Promise which
@@ -96,7 +96,7 @@ class OAuth2Client ()
        * { Authorization: 'Bearer <access_token_value>' }
        * @param url The optional url being authorized
        */
-  def getRequestHeaders(url: java.lang.String): stdLib.Promise[Headers] = js.native
+  def getRequestHeaders(url: java.lang.String): js.Promise[Headers] = js.native
   /**
        * Obtain the set of headers required to authenticate a request.
        *
@@ -104,7 +104,7 @@ class OAuth2Client ()
        * @param url the Uri being authorized
        * @param callback the func described above
        */
-  def getRequestMetadata(): stdLib.Promise[RequestMetadataResponse] = js.native
+  def getRequestMetadata(): js.Promise[RequestMetadataResponse] = js.native
   /**
        * Obtain the set of headers required to authenticate a request.
        *
@@ -112,19 +112,19 @@ class OAuth2Client ()
        * @param url the Uri being authorized
        * @param callback the func described above
        */
-  def getRequestMetadata(url: java.lang.String): stdLib.Promise[RequestMetadataResponse] = js.native
+  def getRequestMetadata(url: java.lang.String): js.Promise[RequestMetadataResponse] = js.native
   def getRequestMetadata(url: java.lang.String, callback: RequestMetadataCallback): scala.Unit = js.native
   def getRequestMetadata(url: scala.Null, callback: RequestMetadataCallback): scala.Unit = js.native
-  /* protected */ def getRequestMetadataAsync(): stdLib.Promise[RequestMetadataResponse] = js.native
-  /* protected */ def getRequestMetadataAsync(url: java.lang.String): stdLib.Promise[RequestMetadataResponse] = js.native
+  /* protected */ def getRequestMetadataAsync(): js.Promise[RequestMetadataResponse] = js.native
+  /* protected */ def getRequestMetadataAsync(url: java.lang.String): js.Promise[RequestMetadataResponse] = js.native
   /**
        * Gets the access token for the given code.
        * @param code The authorization code.
        * @param callback Optional callback fn.
        */
-  def getToken(code: java.lang.String): stdLib.Promise[GetTokenResponse] = js.native
+  def getToken(code: java.lang.String): js.Promise[GetTokenResponse] = js.native
   def getToken(code: java.lang.String, callback: GetTokenCallback): scala.Unit = js.native
-  def getToken(options: GetTokenOptions): stdLib.Promise[GetTokenResponse] = js.native
+  def getToken(options: GetTokenOptions): js.Promise[GetTokenResponse] = js.native
   def getToken(options: GetTokenOptions, callback: GetTokenCallback): scala.Unit = js.native
   /**
        * Obtains information about the provisioned access token.  Especially useful
@@ -133,7 +133,7 @@ class OAuth2Client ()
        * @param accessToken Required.  The Access Token for which you want to get
        * user info.
        */
-  def getTokenInfo(accessToken: java.lang.String): stdLib.Promise[TokenInfo] = js.native
+  def getTokenInfo(accessToken: java.lang.String): js.Promise[TokenInfo] = js.native
   /**
        * Returns true if a token is expired or will expire within
        * eagerRefreshThresholdMillismilliseconds.
@@ -146,28 +146,28 @@ class OAuth2Client ()
        * @deprecated use getRequestHeaders instead.
        * @param callback callback
        */
-  def refreshAccessToken(): stdLib.Promise[RefreshAccessTokenResponse] = js.native
+  def refreshAccessToken(): js.Promise[RefreshAccessTokenResponse] = js.native
   def refreshAccessToken(callback: RefreshAccessTokenCallback): scala.Unit = js.native
   /**
        * Refreshes the access token.
        * @param refresh_token Existing refresh token.
        * @private
        */
-  /* protected */ def refreshToken(): stdLib.Promise[GetTokenResponse] = js.native
+  /* protected */ def refreshToken(): js.Promise[GetTokenResponse] = js.native
   /**
        * Refreshes the access token.
        * @param refresh_token Existing refresh token.
        * @private
        */
-  /* protected */ def refreshToken(refreshToken: java.lang.String): stdLib.Promise[GetTokenResponse] = js.native
-  /* protected */ def refreshTokenNoCache(): stdLib.Promise[GetTokenResponse] = js.native
-  /* protected */ def refreshTokenNoCache(refreshToken: java.lang.String): stdLib.Promise[GetTokenResponse] = js.native
+  /* protected */ def refreshToken(refreshToken: java.lang.String): js.Promise[GetTokenResponse] = js.native
+  /* protected */ def refreshTokenNoCache(): js.Promise[GetTokenResponse] = js.native
+  /* protected */ def refreshTokenNoCache(refreshToken: java.lang.String): js.Promise[GetTokenResponse] = js.native
   def request[T](
     opts: axiosLib.axiosMod.AxiosRequestConfig,
     callback: googleDashAuthDashLibraryLib.buildSrcTransportersMod.BodyResponseCallback[T]
   ): scala.Unit = js.native
-  /* protected */ def requestAsync[T](opts: axiosLib.axiosMod.AxiosRequestConfig): stdLib.Promise[axiosLib.axiosMod.AxiosResponse[T]] = js.native
-  /* protected */ def requestAsync[T](opts: axiosLib.axiosMod.AxiosRequestConfig, retry: scala.Boolean): stdLib.Promise[axiosLib.axiosMod.AxiosResponse[T]] = js.native
+  /* protected */ def requestAsync[T](opts: axiosLib.axiosMod.AxiosRequestConfig): js.Promise[axiosLib.axiosMod.AxiosResponse[T]] = js.native
+  /* protected */ def requestAsync[T](opts: axiosLib.axiosMod.AxiosRequestConfig, retry: scala.Boolean): js.Promise[axiosLib.axiosMod.AxiosResponse[T]] = js.native
   /**
        * Revokes access token and clears the credentials object
        * @param callback callback
@@ -191,7 +191,7 @@ class OAuth2Client ()
        * @param options that contains all options.
        * @param callback Callback supplying GoogleLogin if successful
        */
-  def verifyIdToken(options: VerifyIdTokenOptions): stdLib.Promise[googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket] = js.native
+  def verifyIdToken(options: VerifyIdTokenOptions): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket] = js.native
   def verifyIdToken(
     options: VerifyIdTokenOptions,
     callback: js.Function2[

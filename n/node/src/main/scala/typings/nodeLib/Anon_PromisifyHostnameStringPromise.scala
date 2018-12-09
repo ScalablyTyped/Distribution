@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_PromisifyHostnameStringPromise extends js.Object {
-  def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[nodeLib.dnsMod.AnyRecord]]
+  def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.AnyRecord]]
 }
 

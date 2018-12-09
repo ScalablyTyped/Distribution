@@ -26,7 +26,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
        *  Asynchronously invoke the handlers registered via ::on for the given event name.
        *  @return A promise that will be fulfilled once all handlers have been invoked.
        */
-  def emitAsync[T /* <: java.lang.String */](eventName: T): stdLib.Promise[scala.Unit] = js.native
+  def emitAsync[T /* <: java.lang.String */](eventName: T): js.Promise[scala.Unit] = js.native
   /**
        *  Asynchronously invoke the handlers registered via ::on for the given event name.
        *  @return A promise that will be fulfilled once all handlers have been invoked.
@@ -34,7 +34,7 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
   def emitAsync[T /* <: java.lang.String */](
     eventName: T,
     value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(OptionalEmissions))),List()),Left(TsIdentSimple(T))) */js.Any
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   // Event Subscription
   /** Registers a handler to be invoked whenever the given event is emitted. */
   def on[T /* <: java.lang.String */](

@@ -21,7 +21,7 @@ trait AmqpConnectionManager
   /**
   	 * Close this AmqpConnectionManager and free all associated resources.
   	 */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   /**
   	 * Create a new ChannelWrapper. This is a proxy for the actual channel (which may or may not exist at any moment, depending on whether or not we are currently connected.)
   	 * @param opts

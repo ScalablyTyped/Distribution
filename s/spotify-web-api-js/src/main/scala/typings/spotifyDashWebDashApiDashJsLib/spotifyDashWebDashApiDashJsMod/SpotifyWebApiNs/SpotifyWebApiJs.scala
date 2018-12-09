@@ -23,7 +23,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def addToMySavedAlbums(albumIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveAlbumsForUserResponse] = js.native
+  def addToMySavedAlbums(albumIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveAlbumsForUserResponse] = js.native
   /**
            * Save one or more albums to the current user's "Your Music" library.
            * See [Save Albums for Current User](https://developer.spotify.com/web-api/save-albums-user/) on
@@ -36,7 +36,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def addToMySavedAlbums(albumIds: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveAlbumsForUserResponse] = js.native
+  def addToMySavedAlbums(albumIds: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveAlbumsForUserResponse] = js.native
   /**
            * Save one or more albums to the current user's "Your Music" library.
            * See [Save Albums for Current User](https://developer.spotify.com/web-api/save-albums-user/) on
@@ -53,7 +53,7 @@ trait SpotifyWebApiJs extends js.Object {
     albumIds: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveAlbumsForUserResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveAlbumsForUserResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveAlbumsForUserResponse] = js.native
   /**
            * Adds a list of tracks to the current user's saved tracks.
            * See [Save Tracks for Current User](https://developer.spotify.com/web-api/save-tracks-user/) on
@@ -66,7 +66,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def addToMySavedTracks(trackIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveTracksForUserResponse] = js.native
+  def addToMySavedTracks(trackIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveTracksForUserResponse] = js.native
   /**
            * Adds a list of tracks to the current user's saved tracks.
            * See [Save Tracks for Current User](https://developer.spotify.com/web-api/save-tracks-user/) on
@@ -79,7 +79,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def addToMySavedTracks(trackIds: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveTracksForUserResponse] = js.native
+  def addToMySavedTracks(trackIds: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveTracksForUserResponse] = js.native
   /**
            * Adds a list of tracks to the current user's saved tracks.
            * See [Save Tracks for Current User](https://developer.spotify.com/web-api/save-tracks-user/) on
@@ -96,7 +96,7 @@ trait SpotifyWebApiJs extends js.Object {
     trackIds: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveTracksForUserResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveTracksForUserResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SaveTracksForUserResponse] = js.native
   /**
            * Add tracks to a playlist.
            * See [Add Tracks to a Playlist](https://developer.spotify.com/web-api/add-tracks-to-playlist/) on
@@ -110,7 +110,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def addTracksToPlaylist(playlistId: java.lang.String, uris: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AddTracksToPlaylistResponse] = js.native
+  def addTracksToPlaylist(playlistId: java.lang.String, uris: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AddTracksToPlaylistResponse] = js.native
   /**
            * Add tracks to a playlist.
            * See [Add Tracks to a Playlist](https://developer.spotify.com/web-api/add-tracks-to-playlist/) on
@@ -124,7 +124,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def addTracksToPlaylist(playlistId: java.lang.String, uris: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AddTracksToPlaylistResponse] = js.native
+  def addTracksToPlaylist(playlistId: java.lang.String, uris: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AddTracksToPlaylistResponse] = js.native
   /**
            * Add tracks to a playlist.
            * See [Add Tracks to a Playlist](https://developer.spotify.com/web-api/add-tracks-to-playlist/) on
@@ -143,7 +143,7 @@ trait SpotifyWebApiJs extends js.Object {
     uris: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AddTracksToPlaylistResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AddTracksToPlaylistResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AddTracksToPlaylistResponse] = js.native
   /**
            * Check to see if one or more Spotify users are following a specified playlist.
            * See [Check if Users Follow a Playlist](https://developer.spotify.com/web-api/check-user-following-playlist/) on
@@ -158,7 +158,7 @@ trait SpotifyWebApiJs extends js.Object {
            * whether the users are following the playlist sent in the request.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def areFollowingPlaylist(playlistId: java.lang.String, userIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowPlaylistReponse] = js.native
+  def areFollowingPlaylist(playlistId: java.lang.String, userIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowPlaylistReponse] = js.native
   /**
            * Check to see if one or more Spotify users are following a specified playlist.
            * See [Check if Users Follow a Playlist](https://developer.spotify.com/web-api/check-user-following-playlist/) on
@@ -177,7 +177,7 @@ trait SpotifyWebApiJs extends js.Object {
     playlistId: java.lang.String,
     userIds: js.Array[java.lang.String],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowPlaylistReponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowPlaylistReponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowPlaylistReponse] = js.native
   /**
            * Change a playlist's name and public/private state
            * See [Change a Playlist's Details](https://developer.spotify.com/web-api/change-playlist-details/) on
@@ -190,7 +190,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def changePlaylistDetails(playlistId: java.lang.String, data: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ChangePlaylistDetailsReponse] = js.native
+  def changePlaylistDetails(playlistId: java.lang.String, data: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ChangePlaylistDetailsReponse] = js.native
   /**
            * Change a playlist's name and public/private state
            * See [Change a Playlist's Details](https://developer.spotify.com/web-api/change-playlist-details/) on
@@ -207,7 +207,7 @@ trait SpotifyWebApiJs extends js.Object {
     playlistId: java.lang.String,
     data: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ChangePlaylistDetailsReponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ChangePlaylistDetailsReponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ChangePlaylistDetailsReponse] = js.native
   /**
            * Check if one or more albums is already saved in the current Spotify user's "Your Music" library.
            * See [Check User's Saved Albums](https://developer.spotify.com/web-api/check-users-saved-albums/) on
@@ -220,7 +220,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def containsMySavedAlbums(albumIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUserSavedAlbumsResponse] = js.native
+  def containsMySavedAlbums(albumIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUserSavedAlbumsResponse] = js.native
   /**
            * Check if one or more albums is already saved in the current Spotify user's "Your Music" library.
            * See [Check User's Saved Albums](https://developer.spotify.com/web-api/check-users-saved-albums/) on
@@ -233,7 +233,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def containsMySavedAlbums(albumIds: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUserSavedAlbumsResponse] = js.native
+  def containsMySavedAlbums(albumIds: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUserSavedAlbumsResponse] = js.native
   /**
            * Check if one or more albums is already saved in the current Spotify user's "Your Music" library.
            * See [Check User's Saved Albums](https://developer.spotify.com/web-api/check-users-saved-albums/) on
@@ -250,7 +250,7 @@ trait SpotifyWebApiJs extends js.Object {
     albumIds: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUserSavedAlbumsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUserSavedAlbumsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUserSavedAlbumsResponse] = js.native
   /**
            * Checks if the current user's saved tracks contains a certain list of tracks.
            * See [Check Current User's Saved Tracks](https://developer.spotify.com/web-api/check-users-saved-tracks/) on
@@ -263,7 +263,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def containsMySavedTracks(trackIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUsersSavedTracksResponse] = js.native
+  def containsMySavedTracks(trackIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUsersSavedTracksResponse] = js.native
   /**
            * Checks if the current user's saved tracks contains a certain list of tracks.
            * See [Check Current User's Saved Tracks](https://developer.spotify.com/web-api/check-users-saved-tracks/) on
@@ -276,7 +276,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def containsMySavedTracks(trackIds: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUsersSavedTracksResponse] = js.native
+  def containsMySavedTracks(trackIds: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUsersSavedTracksResponse] = js.native
   /**
            * Checks if the current user's saved tracks contains a certain list of tracks.
            * See [Check Current User's Saved Tracks](https://developer.spotify.com/web-api/check-users-saved-tracks/) on
@@ -293,7 +293,7 @@ trait SpotifyWebApiJs extends js.Object {
     trackIds: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUsersSavedTracksResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUsersSavedTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CheckUsersSavedTracksResponse] = js.native
   /**
            * Creates a playlist and stores it in the current user's library.
            * See [Create a Playlist](https://developer.spotify.com/web-api/create-playlist/) on
@@ -304,7 +304,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def createPlaylist(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
+  def createPlaylist(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
   /**
            * Creates a playlist and stores it in the current user's library.
            * See [Create a Playlist](https://developer.spotify.com/web-api/create-playlist/) on
@@ -315,7 +315,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def createPlaylist(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
+  def createPlaylist(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
   /**
            * Creates a playlist and stores it in the current user's library.
            * See [Create a Playlist](https://developer.spotify.com/web-api/create-playlist/) on
@@ -329,7 +329,7 @@ trait SpotifyWebApiJs extends js.Object {
   def createPlaylist(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
   /**
            * Adds the current user as a follower of one or more artists.
            * See [Follow Artists or Users](https://developer.spotify.com/web-api/follow-artists-users/) on
@@ -341,7 +341,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is an empty value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def followArtists(artistIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse] = js.native
+  def followArtists(artistIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse] = js.native
   /**
            * Adds the current user as a follower of one or more artists.
            * See [Follow Artists or Users](https://developer.spotify.com/web-api/follow-artists-users/) on
@@ -356,7 +356,7 @@ trait SpotifyWebApiJs extends js.Object {
   def followArtists(
     artistIds: js.Array[java.lang.String],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse] = js.native
   /**
            * Add the current user as a follower of one playlist.
            * See [Follow a Playlist](https://developer.spotify.com/web-api/follow-playlist/) on
@@ -370,7 +370,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is an empty value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def followPlaylist(playlistId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowPlaylistReponse] = js.native
+  def followPlaylist(playlistId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowPlaylistReponse] = js.native
   /**
            * Add the current user as a follower of one playlist.
            * See [Follow a Playlist](https://developer.spotify.com/web-api/follow-playlist/) on
@@ -384,7 +384,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is an empty value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def followPlaylist(playlistId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowPlaylistReponse] = js.native
+  def followPlaylist(playlistId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowPlaylistReponse] = js.native
   /**
            * Add the current user as a follower of one playlist.
            * See [Follow a Playlist](https://developer.spotify.com/web-api/follow-playlist/) on
@@ -402,7 +402,7 @@ trait SpotifyWebApiJs extends js.Object {
     playlistId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowPlaylistReponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowPlaylistReponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowPlaylistReponse] = js.native
   /**
            * Adds the current user as a follower of one or more other Spotify users.
            * See [Follow Artists or Users](https://developer.spotify.com/web-api/follow-artists-users/) on
@@ -414,7 +414,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is an empty value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def followUsers(userIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse] = js.native
+  def followUsers(userIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse] = js.native
   /**
            * Adds the current user as a follower of one or more other Spotify users.
            * See [Follow Artists or Users](https://developer.spotify.com/web-api/follow-artists-users/) on
@@ -429,7 +429,7 @@ trait SpotifyWebApiJs extends js.Object {
   def followUsers(
     userIds: js.Array[java.lang.String],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.FollowArtistsOrUsersResponse] = js.native
   /**
            * Gets the access token in use.
            *
@@ -448,7 +448,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAlbum(albumId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleAlbumResponse] = js.native
+  def getAlbum(albumId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleAlbumResponse] = js.native
   /**
            * Fetches an album from the Spotify catalog.
            * See [Get an Album](https://developer.spotify.com/web-api/get-album/) on
@@ -461,7 +461,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAlbum(albumId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleAlbumResponse] = js.native
+  def getAlbum(albumId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleAlbumResponse] = js.native
   /**
            * Fetches an album from the Spotify catalog.
            * See [Get an Album](https://developer.spotify.com/web-api/get-album/) on
@@ -478,7 +478,7 @@ trait SpotifyWebApiJs extends js.Object {
     albumId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleAlbumResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleAlbumResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleAlbumResponse] = js.native
   /**
            * Fetches the tracks of an album from the Spotify catalog.
            * See [Get an Album's Tracks](https://developer.spotify.com/web-api/get-albums-tracks/) on
@@ -491,7 +491,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAlbumTracks(albumId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumTracksResponse] = js.native
+  def getAlbumTracks(albumId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumTracksResponse] = js.native
   /**
            * Fetches the tracks of an album from the Spotify catalog.
            * See [Get an Album's Tracks](https://developer.spotify.com/web-api/get-albums-tracks/) on
@@ -504,7 +504,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAlbumTracks(albumId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumTracksResponse] = js.native
+  def getAlbumTracks(albumId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumTracksResponse] = js.native
   /**
            * Fetches the tracks of an album from the Spotify catalog.
            * See [Get an Album's Tracks](https://developer.spotify.com/web-api/get-albums-tracks/) on
@@ -521,7 +521,7 @@ trait SpotifyWebApiJs extends js.Object {
     albumId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumTracksResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumTracksResponse] = js.native
   /**
            * Fetches multiple albums from the Spotify catalog.
            * See [Get Several Albums](https://developer.spotify.com/web-api/get-several-albums/) on
@@ -534,7 +534,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAlbums(albumIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAlbumsResponse] = js.native
+  def getAlbums(albumIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAlbumsResponse] = js.native
   /**
            * Fetches multiple albums from the Spotify catalog.
            * See [Get Several Albums](https://developer.spotify.com/web-api/get-several-albums/) on
@@ -547,7 +547,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAlbums(albumIds: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAlbumsResponse] = js.native
+  def getAlbums(albumIds: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAlbumsResponse] = js.native
   /**
            * Fetches multiple albums from the Spotify catalog.
            * See [Get Several Albums](https://developer.spotify.com/web-api/get-several-albums/) on
@@ -564,7 +564,7 @@ trait SpotifyWebApiJs extends js.Object {
     albumIds: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAlbumsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAlbumsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAlbumsResponse] = js.native
   /**
            * Fetches an artist from the Spotify catalog.
            * See [Get an Artist](https://developer.spotify.com/web-api/get-artist/) on
@@ -577,7 +577,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtist(artistId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleArtistResponse] = js.native
+  def getArtist(artistId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleArtistResponse] = js.native
   /**
            * Fetches an artist from the Spotify catalog.
            * See [Get an Artist](https://developer.spotify.com/web-api/get-artist/) on
@@ -590,7 +590,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtist(artistId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleArtistResponse] = js.native
+  def getArtist(artistId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleArtistResponse] = js.native
   /**
            * Fetches an artist from the Spotify catalog.
            * See [Get an Artist](https://developer.spotify.com/web-api/get-artist/) on
@@ -607,7 +607,7 @@ trait SpotifyWebApiJs extends js.Object {
     artistId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleArtistResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleArtistResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleArtistResponse] = js.native
   /**
            * Fetches the albums of an artist from the Spotify catalog.
            * See [Get an Artist's Albums](https://developer.spotify.com/web-api/get-artists-albums/) on
@@ -620,7 +620,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtistAlbums(artistId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsAlbumsResponse] = js.native
+  def getArtistAlbums(artistId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsAlbumsResponse] = js.native
   /**
            * Fetches the albums of an artist from the Spotify catalog.
            * See [Get an Artist's Albums](https://developer.spotify.com/web-api/get-artists-albums/) on
@@ -633,7 +633,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtistAlbums(artistId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsAlbumsResponse] = js.native
+  def getArtistAlbums(artistId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsAlbumsResponse] = js.native
   /**
            * Fetches the albums of an artist from the Spotify catalog.
            * See [Get an Artist's Albums](https://developer.spotify.com/web-api/get-artists-albums/) on
@@ -650,7 +650,7 @@ trait SpotifyWebApiJs extends js.Object {
     artistId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsAlbumsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsAlbumsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsAlbumsResponse] = js.native
   /**
            * Fetches a list of artists related with a given one from the Spotify catalog.
            * See [Get an Artist's Related Artists](https://developer.spotify.com/web-api/get-related-artists/) on
@@ -663,7 +663,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtistRelatedArtists(artistId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsRelatedArtistsResponse] = js.native
+  def getArtistRelatedArtists(artistId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsRelatedArtistsResponse] = js.native
   /**
            * Fetches a list of artists related with a given one from the Spotify catalog.
            * See [Get an Artist's Related Artists](https://developer.spotify.com/web-api/get-related-artists/) on
@@ -676,7 +676,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtistRelatedArtists(artistId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsRelatedArtistsResponse] = js.native
+  def getArtistRelatedArtists(artistId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsRelatedArtistsResponse] = js.native
   /**
            * Fetches a list of artists related with a given one from the Spotify catalog.
            * See [Get an Artist's Related Artists](https://developer.spotify.com/web-api/get-related-artists/) on
@@ -693,7 +693,7 @@ trait SpotifyWebApiJs extends js.Object {
     artistId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsRelatedArtistsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsRelatedArtistsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsRelatedArtistsResponse] = js.native
   /**
            * Fetches a list of top tracks of an artist from the Spotify catalog, for a specific country.
            * See [Get an Artist's Top Tracks](https://developer.spotify.com/web-api/get-artists-top-tracks/) on
@@ -707,7 +707,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtistTopTracks(artistId: java.lang.String, countryId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsTopTracksResponse] = js.native
+  def getArtistTopTracks(artistId: java.lang.String, countryId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsTopTracksResponse] = js.native
   /**
            * Fetches a list of top tracks of an artist from the Spotify catalog, for a specific country.
            * See [Get an Artist's Top Tracks](https://developer.spotify.com/web-api/get-artists-top-tracks/) on
@@ -721,7 +721,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtistTopTracks(artistId: java.lang.String, countryId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsTopTracksResponse] = js.native
+  def getArtistTopTracks(artistId: java.lang.String, countryId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsTopTracksResponse] = js.native
   /**
            * Fetches a list of top tracks of an artist from the Spotify catalog, for a specific country.
            * See [Get an Artist's Top Tracks](https://developer.spotify.com/web-api/get-artists-top-tracks/) on
@@ -740,7 +740,7 @@ trait SpotifyWebApiJs extends js.Object {
     countryId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsTopTracksResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsTopTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistsTopTracksResponse] = js.native
   /**
            * Fetches multiple artists from the Spotify catalog.
            * See [Get Several Artists](https://developer.spotify.com/web-api/get-several-artists/) on
@@ -753,7 +753,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtists(artistIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleArtistsResponse] = js.native
+  def getArtists(artistIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleArtistsResponse] = js.native
   /**
            * Fetches multiple artists from the Spotify catalog.
            * See [Get Several Artists](https://developer.spotify.com/web-api/get-several-artists/) on
@@ -766,7 +766,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getArtists(artistIds: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleArtistsResponse] = js.native
+  def getArtists(artistIds: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleArtistsResponse] = js.native
   /**
            * Fetches multiple artists from the Spotify catalog.
            * See [Get Several Artists](https://developer.spotify.com/web-api/get-several-artists/) on
@@ -783,7 +783,7 @@ trait SpotifyWebApiJs extends js.Object {
     artistIds: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleArtistsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleArtistsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleArtistsResponse] = js.native
   /**
            * Get audio feature information for a single track identified by its unique Spotify ID. 
            * See [Get Audio Analysis for a Track](https://developer.spotify.com/documentation/web-api/https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-analysis/) on
@@ -792,7 +792,7 @@ trait SpotifyWebApiJs extends js.Object {
            * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            */
-  def getAudioAnalysisForTrack(trackId: java.lang.String): stdLib.Promise[_] = js.native
+  def getAudioAnalysisForTrack(trackId: java.lang.String): js.Promise[_] = js.native
   /**
            * Get audio feature information for a single track identified by its unique Spotify ID. 
            * See [Get Audio Analysis for a Track](https://developer.spotify.com/documentation/web-api/https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-analysis/) on
@@ -801,7 +801,7 @@ trait SpotifyWebApiJs extends js.Object {
            * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            */
-  def getAudioAnalysisForTrack(trackId: java.lang.String, callback: ResultsCallback[_]): stdLib.Promise[_] = js.native
+  def getAudioAnalysisForTrack(trackId: java.lang.String, callback: ResultsCallback[_]): js.Promise[_] = js.native
   /**
            * Get audio features for a single track identified by its unique Spotify ID.
            * See [Get Audio Features for a Track](https://developer.spotify.com/web-api/get-audio-features/) on
@@ -813,7 +813,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAudioFeaturesForTrack(trackId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AudioFeaturesResponse] = js.native
+  def getAudioFeaturesForTrack(trackId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AudioFeaturesResponse] = js.native
   /**
            * Get audio features for a single track identified by its unique Spotify ID.
            * See [Get Audio Features for a Track](https://developer.spotify.com/web-api/get-audio-features/) on
@@ -828,7 +828,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getAudioFeaturesForTrack(
     trackId: java.lang.String,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AudioFeaturesResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AudioFeaturesResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AudioFeaturesResponse] = js.native
   /**
            * Get audio features for multiple tracks based on their Spotify IDs.
            * See [Get Audio Features for Several Tracks](https://developer.spotify.com/web-api/get-several-audio-features/) on
@@ -840,7 +840,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAudioFeaturesForTracks(trackIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAudioFeaturesResponse] = js.native
+  def getAudioFeaturesForTracks(trackIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAudioFeaturesResponse] = js.native
   /**
            * Get audio features for multiple tracks based on their Spotify IDs.
            * See [Get Audio Features for Several Tracks](https://developer.spotify.com/web-api/get-several-audio-features/) on
@@ -855,7 +855,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getAudioFeaturesForTracks(
     trackIds: js.Array[java.lang.String],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAudioFeaturesResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAudioFeaturesResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleAudioFeaturesResponse] = js.native
   /**
            * Retrieve a list of available genres seed parameter values for recommendations.
            * See [Available Genre Seeds](https://developer.spotify.com/web-api/get-recommendations/#available-genre-seeds) on
@@ -865,7 +865,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAvailableGenreSeeds(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AvailableGenreSeedsResponse] = js.native
+  def getAvailableGenreSeeds(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AvailableGenreSeedsResponse] = js.native
   /**
            * Retrieve a list of available genres seed parameter values for recommendations.
            * See [Available Genre Seeds](https://developer.spotify.com/web-api/get-recommendations/#available-genre-seeds) on
@@ -875,7 +875,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getAvailableGenreSeeds(callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AvailableGenreSeedsResponse]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AvailableGenreSeedsResponse] = js.native
+  def getAvailableGenreSeeds(callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AvailableGenreSeedsResponse]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AvailableGenreSeedsResponse] = js.native
   /**
            * Get a list of categories used to tag items in Spotify (on, for example, the Spotify player's "Browse" tab).
            * See [Get a List of Categories](https://developer.spotify.com/web-api/get-list-categories/) on
@@ -886,7 +886,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getCategories(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleCategoriesResponse] = js.native
+  def getCategories(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleCategoriesResponse] = js.native
   /**
            * Get a list of categories used to tag items in Spotify (on, for example, the Spotify player's "Browse" tab).
            * See [Get a List of Categories](https://developer.spotify.com/web-api/get-list-categories/) on
@@ -897,7 +897,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getCategories(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleCategoriesResponse] = js.native
+  def getCategories(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleCategoriesResponse] = js.native
   /**
            * Get a list of categories used to tag items in Spotify (on, for example, the Spotify player's "Browse" tab).
            * See [Get a List of Categories](https://developer.spotify.com/web-api/get-list-categories/) on
@@ -911,7 +911,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getCategories(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleCategoriesResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleCategoriesResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleCategoriesResponse] = js.native
   /**
            * Get a single category used to tag items in Spotify (on, for example, the Spotify player's "Browse" tab).
            * See [Get a Category](https://developer.spotify.com/web-api/get-category/) on
@@ -923,7 +923,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getCategory(categoryId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleCategoryResponse] = js.native
+  def getCategory(categoryId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleCategoryResponse] = js.native
   /**
            * Get a single category used to tag items in Spotify (on, for example, the Spotify player's "Browse" tab).
            * See [Get a Category](https://developer.spotify.com/web-api/get-category/) on
@@ -935,7 +935,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getCategory(categoryId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleCategoryResponse] = js.native
+  def getCategory(categoryId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleCategoryResponse] = js.native
   /**
            * Get a single category used to tag items in Spotify (on, for example, the Spotify player's "Browse" tab).
            * See [Get a Category](https://developer.spotify.com/web-api/get-category/) on
@@ -951,7 +951,7 @@ trait SpotifyWebApiJs extends js.Object {
     categoryId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleCategoryResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleCategoryResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleCategoryResponse] = js.native
   /**
            * Get a list of Spotify playlists tagged with a particular category.
            * See [Get a Category's Playlists](https://developer.spotify.com/web-api/get-categorys-playlists/) on
@@ -963,7 +963,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getCategoryPlaylists(categoryId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CategoryPlaylistsReponse] = js.native
+  def getCategoryPlaylists(categoryId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CategoryPlaylistsReponse] = js.native
   /**
            * Get a list of Spotify playlists tagged with a particular category.
            * See [Get a Category's Playlists](https://developer.spotify.com/web-api/get-categorys-playlists/) on
@@ -975,7 +975,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getCategoryPlaylists(categoryId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CategoryPlaylistsReponse] = js.native
+  def getCategoryPlaylists(categoryId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CategoryPlaylistsReponse] = js.native
   /**
            * Get a list of Spotify playlists tagged with a particular category.
            * See [Get a Category's Playlists](https://developer.spotify.com/web-api/get-categorys-playlists/) on
@@ -991,7 +991,7 @@ trait SpotifyWebApiJs extends js.Object {
     categoryId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CategoryPlaylistsReponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CategoryPlaylistsReponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CategoryPlaylistsReponse] = js.native
   /**
            * Fetches a list of Spotify featured playlists (shown, for example, on a Spotify player's "Browse" tab).
            * See [Get a List of Featured Playlists](https://developer.spotify.com/web-api/get-list-featured-playlists/) on
@@ -1002,7 +1002,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getFeaturedPlaylists(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfFeaturedPlaylistsResponse] = js.native
+  def getFeaturedPlaylists(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfFeaturedPlaylistsResponse] = js.native
   /**
            * Fetches a list of Spotify featured playlists (shown, for example, on a Spotify player's "Browse" tab).
            * See [Get a List of Featured Playlists](https://developer.spotify.com/web-api/get-list-featured-playlists/) on
@@ -1013,7 +1013,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getFeaturedPlaylists(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfFeaturedPlaylistsResponse] = js.native
+  def getFeaturedPlaylists(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfFeaturedPlaylistsResponse] = js.native
   /**
            * Fetches a list of Spotify featured playlists (shown, for example, on a Spotify player's "Browse" tab).
            * See [Get a List of Featured Playlists](https://developer.spotify.com/web-api/get-list-featured-playlists/) on
@@ -1027,7 +1027,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getFeaturedPlaylists(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfFeaturedPlaylistsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfFeaturedPlaylistsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfFeaturedPlaylistsResponse] = js.native
   /**
            * Get the current user's followed artists.
            * See [Get User's Followed Artists](https://developer.spotify.com/web-api/get-followed-artists/) on
@@ -1040,7 +1040,7 @@ trait SpotifyWebApiJs extends js.Object {
            * @returns {Promise|undefined} A promise that if successful, resolves to an object containing a paging object which contains
            * artists objects. Not returned if a callback is given.
            */
-  def getFollowedArtists(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowedArtistsResponse] = js.native
+  def getFollowedArtists(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowedArtistsResponse] = js.native
   /**
            * Get the current user's followed artists.
            * See [Get User's Followed Artists](https://developer.spotify.com/web-api/get-followed-artists/) on
@@ -1053,7 +1053,7 @@ trait SpotifyWebApiJs extends js.Object {
            * @returns {Promise|undefined} A promise that if successful, resolves to an object containing a paging object which contains
            * artists objects. Not returned if a callback is given.
            */
-  def getFollowedArtists(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowedArtistsResponse] = js.native
+  def getFollowedArtists(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowedArtistsResponse] = js.native
   /**
            * Get the current user's followed artists.
            * See [Get User's Followed Artists](https://developer.spotify.com/web-api/get-followed-artists/) on
@@ -1069,7 +1069,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getFollowedArtists(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowedArtistsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowedArtistsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersFollowedArtistsResponse] = js.native
   /**
            * Fetches a resource through a generic GET request.
            *
@@ -1077,7 +1077,7 @@ trait SpotifyWebApiJs extends js.Object {
            * @param {function(Object,Object)} callback An optional callback
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getGeneric(url: java.lang.String): stdLib.Promise[js.Object] = js.native
+  def getGeneric(url: java.lang.String): js.Promise[js.Object] = js.native
   /**
            * Fetches a resource through a generic GET request.
            *
@@ -1085,7 +1085,7 @@ trait SpotifyWebApiJs extends js.Object {
            * @param {function(Object,Object)} callback An optional callback
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getGeneric(url: java.lang.String, callback: ResultsCallback[js.Object]): stdLib.Promise[js.Object] = js.native
+  def getGeneric(url: java.lang.String, callback: ResultsCallback[js.Object]): js.Promise[js.Object] = js.native
   /**
            * Fetches information about the current user.
            * See [Get Current User's Profile](https://developer.spotify.com/web-api/get-current-users-profile/) on
@@ -1096,7 +1096,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMe(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentUsersProfileResponse] = js.native
+  def getMe(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentUsersProfileResponse] = js.native
   /**
            * Fetches information about the current user.
            * See [Get Current User's Profile](https://developer.spotify.com/web-api/get-current-users-profile/) on
@@ -1107,7 +1107,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMe(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentUsersProfileResponse] = js.native
+  def getMe(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentUsersProfileResponse] = js.native
   /**
            * Fetches information about the current user.
            * See [Get Current User's Profile](https://developer.spotify.com/web-api/get-current-users-profile/) on
@@ -1121,7 +1121,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getMe(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentUsersProfileResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentUsersProfileResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentUsersProfileResponse] = js.native
   /**
            * Get information about the user’s current playback state, including track, track progress, and active device.
            * See [Get Information About The User’s Current Playback](https://developer.spotify.com/web-api/get-information-about-the-users-current-playback/) on
@@ -1132,7 +1132,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyCurrentPlaybackState(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentPlaybackResponse] = js.native
+  def getMyCurrentPlaybackState(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentPlaybackResponse] = js.native
   def getMyCurrentPlaybackState(callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentPlaybackResponse]): scala.Unit = js.native
   /**
            * Get information about the user’s current playback state, including track, track progress, and active device.
@@ -1144,7 +1144,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyCurrentPlaybackState(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackRelinkingParameterObject): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentPlaybackResponse] = js.native
+  def getMyCurrentPlaybackState(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackRelinkingParameterObject): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentPlaybackResponse] = js.native
   def getMyCurrentPlaybackState(
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackRelinkingParameterObject,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentPlaybackResponse]
@@ -1159,7 +1159,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyCurrentPlayingTrack(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentlyPlayingResponse] = js.native
+  def getMyCurrentPlayingTrack(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentlyPlayingResponse] = js.native
   def getMyCurrentPlayingTrack(callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentlyPlayingResponse]): scala.Unit = js.native
   /**
            * Get the object currently being played on the user’s Spotify account.
@@ -1171,7 +1171,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyCurrentPlayingTrack(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackRelinkingParameterObject): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentlyPlayingResponse] = js.native
+  def getMyCurrentPlayingTrack(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackRelinkingParameterObject): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentlyPlayingResponse] = js.native
   def getMyCurrentPlayingTrack(
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackRelinkingParameterObject,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CurrentlyPlayingResponse]
@@ -1185,7 +1185,7 @@ trait SpotifyWebApiJs extends js.Object {
           * one is the error object (null if no error), and the second is the value if the request succeeded.
           * @return {Object} Null if a callback is provided, a `Promise` object otherwise
           */
-  def getMyDevices(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserDevicesResponse] = js.native
+  def getMyDevices(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserDevicesResponse] = js.native
   def getMyDevices(callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserDevicesResponse]): scala.Unit = js.native
   /**
            * Get tracks from the current user’s recently played tracks.
@@ -1197,7 +1197,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyRecentlyPlayedTracks(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersRecentlyPlayedTracksResponse] = js.native
+  def getMyRecentlyPlayedTracks(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersRecentlyPlayedTracksResponse] = js.native
   def getMyRecentlyPlayedTracks(
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersRecentlyPlayedTracksResponse]
   ): scala.Unit = js.native
@@ -1211,7 +1211,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyRecentlyPlayedTracks(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecentlyPlayedParameterObject): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersRecentlyPlayedTracksResponse] = js.native
+  def getMyRecentlyPlayedTracks(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecentlyPlayedParameterObject): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersRecentlyPlayedTracksResponse] = js.native
   def getMyRecentlyPlayedTracks(
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecentlyPlayedParameterObject,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersRecentlyPlayedTracksResponse]
@@ -1226,7 +1226,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMySavedAlbums(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedAlbumsResponse] = js.native
+  def getMySavedAlbums(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedAlbumsResponse] = js.native
   /**
            * Get a list of the albums saved in the current Spotify user's "Your Music" library.
            * See [Get Current User's Saved Albums](https://developer.spotify.com/web-api/get-users-saved-albums/) on
@@ -1237,7 +1237,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMySavedAlbums(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedAlbumsResponse] = js.native
+  def getMySavedAlbums(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedAlbumsResponse] = js.native
   /**
            * Get a list of the albums saved in the current Spotify user's "Your Music" library.
            * See [Get Current User's Saved Albums](https://developer.spotify.com/web-api/get-users-saved-albums/) on
@@ -1251,7 +1251,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getMySavedAlbums(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedAlbumsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedAlbumsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedAlbumsResponse] = js.native
   /**
            * Fetches current user's saved tracks.
            * See [Get Current User's Saved Tracks](https://developer.spotify.com/web-api/get-users-saved-tracks/) on
@@ -1262,7 +1262,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMySavedTracks(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedTracksResponse] = js.native
+  def getMySavedTracks(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedTracksResponse] = js.native
   /**
            * Fetches current user's saved tracks.
            * See [Get Current User's Saved Tracks](https://developer.spotify.com/web-api/get-users-saved-tracks/) on
@@ -1273,7 +1273,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMySavedTracks(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedTracksResponse] = js.native
+  def getMySavedTracks(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedTracksResponse] = js.native
   /**
            * Fetches current user's saved tracks.
            * See [Get Current User's Saved Tracks](https://developer.spotify.com/web-api/get-users-saved-tracks/) on
@@ -1287,7 +1287,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getMySavedTracks(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedTracksResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersSavedTracksResponse] = js.native
   /**
            * Get the current user’s top artists based on calculated affinity.
            * See [Get a User’s Top Artists](https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/) on
@@ -1298,7 +1298,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyTopArtists(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopArtistsResponse] = js.native
+  def getMyTopArtists(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopArtistsResponse] = js.native
   /**
            * Get the current user’s top artists based on calculated affinity.
            * See [Get a User’s Top Artists](https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/) on
@@ -1309,7 +1309,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyTopArtists(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopArtistsResponse] = js.native
+  def getMyTopArtists(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopArtistsResponse] = js.native
   /**
            * Get the current user’s top artists based on calculated affinity.
            * See [Get a User’s Top Artists](https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/) on
@@ -1323,7 +1323,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getMyTopArtists(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopArtistsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopArtistsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopArtistsResponse] = js.native
   /**
            * Get the current user’s top tracks based on calculated affinity.
            * See [Get a User’s Top Tracks](https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/) on
@@ -1334,7 +1334,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyTopTracks(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopTracksResponse] = js.native
+  def getMyTopTracks(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopTracksResponse] = js.native
   /**
            * Get the current user’s top tracks based on calculated affinity.
            * See [Get a User’s Top Tracks](https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/) on
@@ -1345,7 +1345,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getMyTopTracks(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopTracksResponse] = js.native
+  def getMyTopTracks(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopTracksResponse] = js.native
   /**
            * Get the current user’s top tracks based on calculated affinity.
            * See [Get a User’s Top Tracks](https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/) on
@@ -1359,7 +1359,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getMyTopTracks(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopTracksResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UsersTopTracksResponse] = js.native
   /**
            * Fetches a list of new album releases featured in Spotify (shown, for example, on a Spotify player's "Browse" tab).
            * See [Get a List of New Releases](https://developer.spotify.com/web-api/get-list-new-releases/) on
@@ -1370,7 +1370,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getNewReleases(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfNewReleasesResponse] = js.native
+  def getNewReleases(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfNewReleasesResponse] = js.native
   /**
            * Fetches a list of new album releases featured in Spotify (shown, for example, on a Spotify player's "Browse" tab).
            * See [Get a List of New Releases](https://developer.spotify.com/web-api/get-list-new-releases/) on
@@ -1381,7 +1381,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getNewReleases(options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfNewReleasesResponse] = js.native
+  def getNewReleases(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfNewReleasesResponse] = js.native
   /**
            * Fetches a list of new album releases featured in Spotify (shown, for example, on a Spotify player's "Browse" tab).
            * See [Get a List of New Releases](https://developer.spotify.com/web-api/get-list-new-releases/) on
@@ -1395,7 +1395,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getNewReleases(
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfNewReleasesResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfNewReleasesResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfNewReleasesResponse] = js.native
   /**
            * Fetches a specific playlist.
            * See [Get a Playlist](https://developer.spotify.com/web-api/get-playlist/) on
@@ -1408,7 +1408,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getPlaylist(playlistId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SinglePlaylistResponse] = js.native
+  def getPlaylist(playlistId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SinglePlaylistResponse] = js.native
   /**
            * Fetches a specific playlist.
            * See [Get a Playlist](https://developer.spotify.com/web-api/get-playlist/) on
@@ -1421,7 +1421,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getPlaylist(playlistId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SinglePlaylistResponse] = js.native
+  def getPlaylist(playlistId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SinglePlaylistResponse] = js.native
   /**
            * Fetches a specific playlist.
            * See [Get a Playlist](https://developer.spotify.com/web-api/get-playlist/) on
@@ -1438,7 +1438,7 @@ trait SpotifyWebApiJs extends js.Object {
     playlistId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SinglePlaylistResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SinglePlaylistResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SinglePlaylistResponse] = js.native
   /**
            * Fetches the tracks from a specific playlist.
            * See [Get a Playlist's Tracks](https://developer.spotify.com/web-api/get-playlists-tracks/) on
@@ -1451,7 +1451,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getPlaylistTracks(playlistId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistTrackResponse] = js.native
+  def getPlaylistTracks(playlistId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistTrackResponse] = js.native
   /**
            * Fetches the tracks from a specific playlist.
            * See [Get a Playlist's Tracks](https://developer.spotify.com/web-api/get-playlists-tracks/) on
@@ -1464,7 +1464,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getPlaylistTracks(playlistId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistTrackResponse] = js.native
+  def getPlaylistTracks(playlistId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistTrackResponse] = js.native
   /**
            * Fetches the tracks from a specific playlist.
            * See [Get a Playlist's Tracks](https://developer.spotify.com/web-api/get-playlists-tracks/) on
@@ -1481,7 +1481,7 @@ trait SpotifyWebApiJs extends js.Object {
     playlistId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistTrackResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistTrackResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistTrackResponse] = js.native
   /**
            * Create a playlist-style listening experience based on seed artists, tracks and genres.
            * See [Get Recommendations Based on Seeds](https://developer.spotify.com/web-api/get-recommendations/) on
@@ -1492,7 +1492,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getRecommendations(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsFromSeedsResponse] = js.native
+  def getRecommendations(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsFromSeedsResponse] = js.native
   /**
            * Create a playlist-style listening experience based on seed artists, tracks and genres.
            * See [Get Recommendations Based on Seeds](https://developer.spotify.com/web-api/get-recommendations/) on
@@ -1503,7 +1503,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getRecommendations(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsOptionsObject): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsFromSeedsResponse] = js.native
+  def getRecommendations(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsOptionsObject): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsFromSeedsResponse] = js.native
   /**
            * Create a playlist-style listening experience based on seed artists, tracks and genres.
            * See [Get Recommendations Based on Seeds](https://developer.spotify.com/web-api/get-recommendations/) on
@@ -1517,7 +1517,7 @@ trait SpotifyWebApiJs extends js.Object {
   def getRecommendations(
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsOptionsObject,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsFromSeedsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsFromSeedsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RecommendationsFromSeedsResponse] = js.native
   /**
            * Fetches a track from the Spotify catalog.
            * See [Get a Track](https://developer.spotify.com/web-api/get-track/) on
@@ -1530,7 +1530,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getTrack(trackId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleTrackResponse] = js.native
+  def getTrack(trackId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleTrackResponse] = js.native
   /**
            * Fetches a track from the Spotify catalog.
            * See [Get a Track](https://developer.spotify.com/web-api/get-track/) on
@@ -1543,7 +1543,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getTrack(trackId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleTrackResponse] = js.native
+  def getTrack(trackId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleTrackResponse] = js.native
   /**
            * Fetches a track from the Spotify catalog.
            * See [Get a Track](https://developer.spotify.com/web-api/get-track/) on
@@ -1560,7 +1560,7 @@ trait SpotifyWebApiJs extends js.Object {
     trackId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleTrackResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleTrackResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SingleTrackResponse] = js.native
   /**
            * Fetches multiple tracks from the Spotify catalog.
            * See [Get Several Tracks](https://developer.spotify.com/web-api/get-several-tracks/) on
@@ -1573,7 +1573,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getTracks(trackIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleTracksResponse] = js.native
+  def getTracks(trackIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleTracksResponse] = js.native
   /**
            * Fetches multiple tracks from the Spotify catalog.
            * See [Get Several Tracks](https://developer.spotify.com/web-api/get-several-tracks/) on
@@ -1586,7 +1586,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getTracks(trackIds: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleTracksResponse] = js.native
+  def getTracks(trackIds: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleTracksResponse] = js.native
   /**
            * Fetches multiple tracks from the Spotify catalog.
            * See [Get Several Tracks](https://developer.spotify.com/web-api/get-several-tracks/) on
@@ -1603,7 +1603,7 @@ trait SpotifyWebApiJs extends js.Object {
     trackIds: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleTracksResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.MultipleTracksResponse] = js.native
   /**
            * Fetches information about a specific user.
            * See [Get a User's Profile](https://developer.spotify.com/web-api/get-users-profile/) on
@@ -1616,7 +1616,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getUser(userId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserProfileResponse] = js.native
+  def getUser(userId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserProfileResponse] = js.native
   /**
            * Fetches information about a specific user.
            * See [Get a User's Profile](https://developer.spotify.com/web-api/get-users-profile/) on
@@ -1629,7 +1629,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getUser(userId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserProfileResponse] = js.native
+  def getUser(userId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserProfileResponse] = js.native
   /**
            * Fetches information about a specific user.
            * See [Get a User's Profile](https://developer.spotify.com/web-api/get-users-profile/) on
@@ -1646,7 +1646,7 @@ trait SpotifyWebApiJs extends js.Object {
     userId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserProfileResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserProfileResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserProfileResponse] = js.native
   /**
            * Fetches a list of the current user's playlists.
            * See [Get a List of a User's Playlists](https://developer.spotify.com/web-api/get-list-users-playlists/) on
@@ -1660,7 +1660,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getUserPlaylists(): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfUsersPlaylistsResponse] = js.native
+  def getUserPlaylists(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfUsersPlaylistsResponse] = js.native
   /**
            * Fetches a list of the current user's playlists.
            * See [Get a List of a User's Playlists](https://developer.spotify.com/web-api/get-list-users-playlists/) on
@@ -1674,7 +1674,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getUserPlaylists(userId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfUsersPlaylistsResponse] = js.native
+  def getUserPlaylists(userId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfUsersPlaylistsResponse] = js.native
   /**
            * Fetches a list of the current user's playlists.
            * See [Get a List of a User's Playlists](https://developer.spotify.com/web-api/get-list-users-playlists/) on
@@ -1688,7 +1688,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def getUserPlaylists(userId: java.lang.String, options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfUsersPlaylistsResponse] = js.native
+  def getUserPlaylists(userId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfUsersPlaylistsResponse] = js.native
   /**
            * Fetches a list of the current user's playlists.
            * See [Get a List of a User's Playlists](https://developer.spotify.com/web-api/get-list-users-playlists/) on
@@ -1706,7 +1706,7 @@ trait SpotifyWebApiJs extends js.Object {
     userId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfUsersPlaylistsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfUsersPlaylistsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ListOfUsersPlaylistsResponse] = js.native
   /**
            * Checks to see if the current user is following one or more artists.
            * See [Check if Current User Follows](https://developer.spotify.com/web-api/check-current-user-follows/) on
@@ -1719,7 +1719,7 @@ trait SpotifyWebApiJs extends js.Object {
            * whether the user is following the artists sent in the request.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def isFollowingArtists(artistIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse] = js.native
+  def isFollowingArtists(artistIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse] = js.native
   /**
            * Checks to see if the current user is following one or more artists.
            * See [Check if Current User Follows](https://developer.spotify.com/web-api/check-current-user-follows/) on
@@ -1735,7 +1735,7 @@ trait SpotifyWebApiJs extends js.Object {
   def isFollowingArtists(
     artistIds: js.Array[java.lang.String],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse] = js.native
   /**
            * Checks to see if the current user is following one or more other Spotify users.
            * See [Check if Current User Follows Users or Artists](https://developer.spotify.com/web-api/check-current-user-follows/) on
@@ -1748,7 +1748,7 @@ trait SpotifyWebApiJs extends js.Object {
            * whether the user is following the users sent in the request.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def isFollowingUsers(userIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse] = js.native
+  def isFollowingUsers(userIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse] = js.native
   /**
            * Checks to see if the current user is following one or more other Spotify users.
            * See [Check if Current User Follows Users or Artists](https://developer.spotify.com/web-api/check-current-user-follows/) on
@@ -1764,7 +1764,7 @@ trait SpotifyWebApiJs extends js.Object {
   def isFollowingUsers(
     userIds: js.Array[java.lang.String],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UserFollowsUsersOrArtistsResponse] = js.native
   /**
            * Pause playback on the user’s account.
            * See [Pause a User’s Playback](https://developer.spotify.com/web-api/pause-a-users-playback/) on
@@ -1775,7 +1775,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def pause(): stdLib.Promise[scala.Unit] = js.native
+  def pause(): js.Promise[scala.Unit] = js.native
   def pause(callback: VoidResultsCallback): scala.Unit = js.native
   /**
            * Pause playback on the user’s account.
@@ -1787,7 +1787,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def pause(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject): stdLib.Promise[scala.Unit] = js.native
+  def pause(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject): js.Promise[scala.Unit] = js.native
   def pause(
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject,
     callback: VoidResultsCallback
@@ -1802,7 +1802,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def play(): stdLib.Promise[scala.Unit] = js.native
+  def play(): js.Promise[scala.Unit] = js.native
   def play(callback: VoidResultsCallback): scala.Unit = js.native
   /**
            * Start a new context or resume current playback on the user’s active device.
@@ -1814,7 +1814,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def play(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject): stdLib.Promise[scala.Unit] = js.native
+  def play(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject): js.Promise[scala.Unit] = js.native
   def play(
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject,
     callback: VoidResultsCallback
@@ -1831,7 +1831,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def removeFromMySavedAlbums(albumIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveAlbumsForUserResponse] = js.native
+  def removeFromMySavedAlbums(albumIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveAlbumsForUserResponse] = js.native
   /**
            * Remove one or more albums from the current user's "Your Music" library.
            * See [Remove Albums for Current User](https://developer.spotify.com/web-api/remove-albums-user/) on
@@ -1844,7 +1844,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def removeFromMySavedAlbums(albumIds: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveAlbumsForUserResponse] = js.native
+  def removeFromMySavedAlbums(albumIds: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveAlbumsForUserResponse] = js.native
   /**
            * Remove one or more albums from the current user's "Your Music" library.
            * See [Remove Albums for Current User](https://developer.spotify.com/web-api/remove-albums-user/) on
@@ -1861,7 +1861,7 @@ trait SpotifyWebApiJs extends js.Object {
     albumIds: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveAlbumsForUserResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveAlbumsForUserResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveAlbumsForUserResponse] = js.native
   /**
            * Remove a list of tracks from the current user's saved tracks.
            * See [Remove Tracks for Current User](https://developer.spotify.com/web-api/remove-tracks-user/) on
@@ -1874,7 +1874,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def removeFromMySavedTracks(trackIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveUsersSavedTracksResponse] = js.native
+  def removeFromMySavedTracks(trackIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveUsersSavedTracksResponse] = js.native
   /**
            * Remove a list of tracks from the current user's saved tracks.
            * See [Remove Tracks for Current User](https://developer.spotify.com/web-api/remove-tracks-user/) on
@@ -1887,7 +1887,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def removeFromMySavedTracks(trackIds: js.Array[java.lang.String], options: js.Object): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveUsersSavedTracksResponse] = js.native
+  def removeFromMySavedTracks(trackIds: js.Array[java.lang.String], options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveUsersSavedTracksResponse] = js.native
   /**
            * Remove a list of tracks from the current user's saved tracks.
            * See [Remove Tracks for Current User](https://developer.spotify.com/web-api/remove-tracks-user/) on
@@ -1904,7 +1904,7 @@ trait SpotifyWebApiJs extends js.Object {
     trackIds: js.Array[java.lang.String],
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveUsersSavedTracksResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveUsersSavedTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveUsersSavedTracksResponse] = js.native
   /**
            * Remove tracks from a playlist
            * See [Remove Tracks from a Playlist](https://developer.spotify.com/web-api/remove-tracks-playlist/) on
@@ -1919,7 +1919,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def removeTracksFromPlaylist(playlistId: java.lang.String, uris: js.Array[js.Object]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveTracksFromPlaylistResponse] = js.native
+  def removeTracksFromPlaylist(playlistId: java.lang.String, uris: js.Array[js.Object]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveTracksFromPlaylistResponse] = js.native
   /**
            * Remove tracks from a playlist
            * See [Remove Tracks from a Playlist](https://developer.spotify.com/web-api/remove-tracks-playlist/) on
@@ -1938,7 +1938,7 @@ trait SpotifyWebApiJs extends js.Object {
     playlistId: java.lang.String,
     uris: js.Array[js.Object],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveTracksFromPlaylistResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveTracksFromPlaylistResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.RemoveTracksFromPlaylistResponse] = js.native
   /**
            * Remove tracks from a playlist, specifying the positions of the tracks to be removed.
            * See [Remove Tracks from a Playlist](https://developer.spotify.com/web-api/remove-tracks-playlist/) on
@@ -1953,7 +1953,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def removeTracksFromPlaylistInPositions(playlistId: java.lang.String, positions: js.Array[scala.Double], snapshotId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse] = js.native
+  def removeTracksFromPlaylistInPositions(playlistId: java.lang.String, positions: js.Array[scala.Double], snapshotId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse] = js.native
   /**
            * Remove tracks from a playlist, specifying the positions of the tracks to be removed.
            * See [Remove Tracks from a Playlist](https://developer.spotify.com/web-api/remove-tracks-playlist/) on
@@ -1973,7 +1973,7 @@ trait SpotifyWebApiJs extends js.Object {
     positions: js.Array[scala.Double],
     snapshotId: java.lang.String,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse] = js.native
   /**
            * Remove tracks from a playlist, specifying a snapshot id.
            * See [Remove Tracks from a Playlist](https://developer.spotify.com/web-api/remove-tracks-playlist/) on
@@ -1989,7 +1989,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def removeTracksFromPlaylistWithSnapshotId(playlistId: java.lang.String, uris: js.Array[js.Object], snapshotId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse] = js.native
+  def removeTracksFromPlaylistWithSnapshotId(playlistId: java.lang.String, uris: js.Array[js.Object], snapshotId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse] = js.native
   /**
            * Remove tracks from a playlist, specifying a snapshot id.
            * See [Remove Tracks from a Playlist](https://developer.spotify.com/web-api/remove-tracks-playlist/) on
@@ -2010,7 +2010,7 @@ trait SpotifyWebApiJs extends js.Object {
     uris: js.Array[js.Object],
     snapshotId: java.lang.String,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSnapshotResponse] = js.native
   /**
            * Reorder tracks in a playlist
            * See [Reorder a Playlist’s Tracks](https://developer.spotify.com/web-api/reorder-playlists-tracks/) on
@@ -2026,7 +2026,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def reorderTracksInPlaylist(playlistId: java.lang.String, rangeStart: scala.Double, insertBefore: scala.Double): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReorderPlaylistTracksResponse] = js.native
+  def reorderTracksInPlaylist(playlistId: java.lang.String, rangeStart: scala.Double, insertBefore: scala.Double): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReorderPlaylistTracksResponse] = js.native
   /**
            * Reorder tracks in a playlist
            * See [Reorder a Playlist’s Tracks](https://developer.spotify.com/web-api/reorder-playlists-tracks/) on
@@ -2047,7 +2047,7 @@ trait SpotifyWebApiJs extends js.Object {
     rangeStart: scala.Double,
     insertBefore: scala.Double,
     options: js.Object
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReorderPlaylistTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReorderPlaylistTracksResponse] = js.native
   /**
            * Reorder tracks in a playlist
            * See [Reorder a Playlist’s Tracks](https://developer.spotify.com/web-api/reorder-playlists-tracks/) on
@@ -2069,7 +2069,7 @@ trait SpotifyWebApiJs extends js.Object {
     insertBefore: scala.Double,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReorderPlaylistTracksResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReorderPlaylistTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReorderPlaylistTracksResponse] = js.native
   /**
            * Replace the tracks of a playlist
            * See [Replace a Playlist's Tracks](https://developer.spotify.com/web-api/replace-playlists-tracks/) on
@@ -2082,7 +2082,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def replaceTracksInPlaylist(playlistId: java.lang.String, uris: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReplacePlaylistTracksResponse] = js.native
+  def replaceTracksInPlaylist(playlistId: java.lang.String, uris: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReplacePlaylistTracksResponse] = js.native
   /**
            * Replace the tracks of a playlist
            * See [Replace a Playlist's Tracks](https://developer.spotify.com/web-api/replace-playlists-tracks/) on
@@ -2099,7 +2099,7 @@ trait SpotifyWebApiJs extends js.Object {
     playlistId: java.lang.String,
     uris: js.Array[java.lang.String],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReplacePlaylistTracksResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReplacePlaylistTracksResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ReplacePlaylistTracksResponse] = js.native
   // the search method added to allow access to it in typescript
   /**
            * Get Spotify catalog information about artists, albums, tracks or playlists that match a keyword string.
@@ -2120,7 +2120,7 @@ trait SpotifyWebApiJs extends js.Object {
     types: js.Array[
       spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.album | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.artist | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.playlist | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.track
     ]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchResponse] = js.native
   // the search method added to allow access to it in typescript
   /**
            * Get Spotify catalog information about artists, albums, tracks or playlists that match a keyword string.
@@ -2142,7 +2142,7 @@ trait SpotifyWebApiJs extends js.Object {
       spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.album | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.artist | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.playlist | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.track
     ],
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchResponse] = js.native
   // the search method added to allow access to it in typescript
   /**
            * Get Spotify catalog information about artists, albums, tracks or playlists that match a keyword string.
@@ -2165,7 +2165,7 @@ trait SpotifyWebApiJs extends js.Object {
     ],
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumSearchResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchResponse] = js.native
   /**
            * Fetches albums from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2177,7 +2177,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def searchAlbums(query: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumSearchResponse] = js.native
+  def searchAlbums(query: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumSearchResponse] = js.native
   /**
            * Fetches albums from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2192,7 +2192,7 @@ trait SpotifyWebApiJs extends js.Object {
   def searchAlbums(
     query: java.lang.String,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumSearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumSearchResponse] = js.native
   /**
            * Fetches albums from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2208,7 +2208,7 @@ trait SpotifyWebApiJs extends js.Object {
     query: java.lang.String,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumSearchResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumSearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.AlbumSearchResponse] = js.native
   /**
            * Fetches artists from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2220,7 +2220,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def searchArtists(query: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistSearchResponse] = js.native
+  def searchArtists(query: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistSearchResponse] = js.native
   /**
            * Fetches artists from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2235,7 +2235,7 @@ trait SpotifyWebApiJs extends js.Object {
   def searchArtists(
     query: java.lang.String,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistSearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistSearchResponse] = js.native
   /**
            * Fetches artists from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2251,7 +2251,7 @@ trait SpotifyWebApiJs extends js.Object {
     query: java.lang.String,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistSearchResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistSearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ArtistSearchResponse] = js.native
   /**
            * Fetches playlists from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2263,7 +2263,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def searchPlaylists(query: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSearchResponse] = js.native
+  def searchPlaylists(query: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSearchResponse] = js.native
   /**
            * Fetches playlists from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2278,7 +2278,7 @@ trait SpotifyWebApiJs extends js.Object {
   def searchPlaylists(
     query: java.lang.String,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSearchResponse] = js.native
   /**
            * Fetches playlists from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2294,7 +2294,7 @@ trait SpotifyWebApiJs extends js.Object {
     query: java.lang.String,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSearchResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaylistSearchResponse] = js.native
   /**
            * Fetches tracks from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2306,7 +2306,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def searchTracks(query: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackSearchResponse] = js.native
+  def searchTracks(query: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackSearchResponse] = js.native
   /**
            * Fetches tracks from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2321,7 +2321,7 @@ trait SpotifyWebApiJs extends js.Object {
   def searchTracks(
     query: java.lang.String,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackSearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackSearchResponse] = js.native
   /**
            * Fetches tracks from the Spotify catalog according to a query.
            * See [Search for an Item](https://developer.spotify.com/web-api/search-item/) on
@@ -2337,7 +2337,7 @@ trait SpotifyWebApiJs extends js.Object {
     query: java.lang.String,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.SearchForItemParameterObject,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackSearchResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackSearchResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TrackSearchResponse] = js.native
   /**
            * Seeks to the given position in the user’s currently playing track.
            * See [Seek To Position In Currently Playing Track](https://developer.spotify.com/web-api/seek-to-position-in-currently-playing-track/) on
@@ -2349,7 +2349,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def seek(position: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def seek(position: scala.Double): js.Promise[scala.Unit] = js.native
   def seek(position: scala.Double, callback: VoidResultsCallback): scala.Unit = js.native
   /**
            * Seeks to the given position in the user’s currently playing track.
@@ -2365,7 +2365,7 @@ trait SpotifyWebApiJs extends js.Object {
   def seek(
     position: scala.Double,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def seek(
     position: scala.Double,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject,
@@ -2401,7 +2401,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def setRepeat(state: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaybackRepeatState): stdLib.Promise[scala.Unit] = js.native
+  def setRepeat(state: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaybackRepeatState): js.Promise[scala.Unit] = js.native
   def setRepeat(
     state: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaybackRepeatState,
     callback: VoidResultsCallback
@@ -2420,7 +2420,7 @@ trait SpotifyWebApiJs extends js.Object {
   def setRepeat(
     state: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaybackRepeatState,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def setRepeat(
     state: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaybackRepeatState,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject,
@@ -2437,7 +2437,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def setShuffle(state: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def setShuffle(state: scala.Boolean): js.Promise[scala.Unit] = js.native
   def setShuffle(state: scala.Boolean, callback: VoidResultsCallback): scala.Unit = js.native
   /**
            * Toggle shuffle on or off for user’s playback.
@@ -2453,7 +2453,7 @@ trait SpotifyWebApiJs extends js.Object {
   def setShuffle(
     state: scala.Boolean,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def setShuffle(
     state: scala.Boolean,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject,
@@ -2470,7 +2470,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def setVolume(volumePercent: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def setVolume(volumePercent: scala.Double): js.Promise[scala.Unit] = js.native
   def setVolume(volumePercent: scala.Double, callback: VoidResultsCallback): scala.Unit = js.native
   /**
            * Set the volume for the user’s current playback device.
@@ -2486,7 +2486,7 @@ trait SpotifyWebApiJs extends js.Object {
   def setVolume(
     volumePercent: scala.Double,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def setVolume(
     volumePercent: scala.Double,
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject,
@@ -2502,7 +2502,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def skipToNext(): stdLib.Promise[scala.Unit] = js.native
+  def skipToNext(): js.Promise[scala.Unit] = js.native
   def skipToNext(callback: VoidResultsCallback): scala.Unit = js.native
   /**
            * Skips to next track in the user’s queue.
@@ -2514,7 +2514,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def skipToNext(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject): stdLib.Promise[scala.Unit] = js.native
+  def skipToNext(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject): js.Promise[scala.Unit] = js.native
   def skipToNext(
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject,
     callback: VoidResultsCallback
@@ -2531,7 +2531,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def skipToPrevious(): stdLib.Promise[scala.Unit] = js.native
+  def skipToPrevious(): js.Promise[scala.Unit] = js.native
   def skipToPrevious(callback: VoidResultsCallback): scala.Unit = js.native
   /**
            * Skips to previous track in the user’s queue.
@@ -2545,7 +2545,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def skipToPrevious(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject): stdLib.Promise[scala.Unit] = js.native
+  def skipToPrevious(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject): js.Promise[scala.Unit] = js.native
   def skipToPrevious(
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject,
     callback: VoidResultsCallback
@@ -2561,7 +2561,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def transferMyPlayback(deviceIds: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def transferMyPlayback(deviceIds: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   def transferMyPlayback(deviceIds: js.Array[java.lang.String], callback: VoidResultsCallback): scala.Unit = js.native
   /**
            * Transfer playback to a new device and determine if it should start playing.
@@ -2577,7 +2577,7 @@ trait SpotifyWebApiJs extends js.Object {
   def transferMyPlayback(
     deviceIds: js.Array[java.lang.String],
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TransferPlaybackParameterObject
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def transferMyPlayback(
     deviceIds: js.Array[java.lang.String],
     options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.TransferPlaybackParameterObject,
@@ -2594,7 +2594,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is an empty value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def unfollowArtists(artistIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse] = js.native
+  def unfollowArtists(artistIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse] = js.native
   /**
            * Removes the current user as a follower of one or more artists.
            * See [Unfollow Artists or Users](https://developer.spotify.com/web-api/unfollow-artists-users/) on
@@ -2609,7 +2609,7 @@ trait SpotifyWebApiJs extends js.Object {
   def unfollowArtists(
     artistIds: js.Array[java.lang.String],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse] = js.native
   /**
            * Remove the current user as a follower of one playlist.
            * See [Unfollow a Playlist](https://developer.spotify.com/web-api/unfollow-playlist/) on
@@ -2621,7 +2621,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is an empty value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def unfollowPlaylist(playlistId: java.lang.String): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowPlaylistReponse] = js.native
+  def unfollowPlaylist(playlistId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowPlaylistReponse] = js.native
   /**
            * Remove the current user as a follower of one playlist.
            * See [Unfollow a Playlist](https://developer.spotify.com/web-api/unfollow-playlist/) on
@@ -2636,7 +2636,7 @@ trait SpotifyWebApiJs extends js.Object {
   def unfollowPlaylist(
     playlistId: java.lang.String,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowPlaylistReponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowPlaylistReponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowPlaylistReponse] = js.native
   /**
            * Removes the current user as a follower of one or more other Spotify users.
            * See [Unfollow Artists or Users](https://developer.spotify.com/web-api/unfollow-artists-users/) on
@@ -2648,7 +2648,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is an empty value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def unfollowUsers(userIds: js.Array[java.lang.String]): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse] = js.native
+  def unfollowUsers(userIds: js.Array[java.lang.String]): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse] = js.native
   /**
            * Removes the current user as a follower of one or more other Spotify users.
            * See [Unfollow Artists or Users](https://developer.spotify.com/web-api/unfollow-artists-users/) on
@@ -2663,7 +2663,7 @@ trait SpotifyWebApiJs extends js.Object {
   def unfollowUsers(
     userIds: js.Array[java.lang.String],
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse]
-  ): stdLib.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse] = js.native
+  ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UnfollowArtistsOrUsersResponse] = js.native
   /**
            * Upload a custom playlist cover image.
            * See [Upload A Custom Playlist Cover Image](https://developer.spotify.com/web-api/upload-a-custom-playlist-cover-image/) on
@@ -2676,7 +2676,7 @@ trait SpotifyWebApiJs extends js.Object {
            * one is the error object (null if no error), and the second is the value if the request succeeded.
            * @return {Object} Null if a callback is provided, a `Promise` object otherwise
            */
-  def uploadCustomPlaylistCoverImage(playlistId: java.lang.String, imageData: java.lang.String): stdLib.Promise[
+  def uploadCustomPlaylistCoverImage(playlistId: java.lang.String, imageData: java.lang.String): js.Promise[
     spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UploadCustomPlaylistCoverImageReponse
   ] = js.native
   /**
@@ -2697,7 +2697,7 @@ trait SpotifyWebApiJs extends js.Object {
     callback: ResultsCallback[
       spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UploadCustomPlaylistCoverImageReponse
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     spotifyDashWebDashApiDashJsLib.SpotifyApiNs.UploadCustomPlaylistCoverImageReponse
   ] = js.native
 }

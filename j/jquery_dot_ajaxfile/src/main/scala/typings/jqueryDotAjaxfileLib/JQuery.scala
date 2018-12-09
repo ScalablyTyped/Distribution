@@ -196,7 +196,7 @@ trait JQuery
        * @param duration A string or number determining how long the animation will run.
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object): JQuery = js.native
+  def animate(properties: Object): JQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -204,7 +204,7 @@ trait JQuery
        * @param duration A string or number determining how long the animation will run.
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: java.lang.String): JQuery = js.native
+  def animate(properties: Object, duration: java.lang.String): JQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -212,16 +212,7 @@ trait JQuery
        * @param duration A string or number determining how long the animation will run.
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: java.lang.String, complete: js.Function): JQuery = js.native
-  /**
-       * Perform a custom animation of a set of CSS properties.
-       *
-       * @param properties An object of CSS properties and values that the animation will move toward.
-       * @param duration A string or number determining how long the animation will run.
-       * @param easing A string indicating which easing function to use for the transition. (default: swing)
-       * @param complete A function to call once the animation is complete.
-       */
-  def animate(properties: js.Object, duration: java.lang.String, easing: java.lang.String): JQuery = js.native
+  def animate(properties: Object, duration: java.lang.String, complete: js.Function): JQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -230,23 +221,7 @@ trait JQuery
        * @param easing A string indicating which easing function to use for the transition. (default: swing)
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: java.lang.String, easing: java.lang.String, complete: js.Function): JQuery = js.native
-  /**
-       * Perform a custom animation of a set of CSS properties.
-       *
-       * @param properties An object of CSS properties and values that the animation will move toward.
-       * @param duration A string or number determining how long the animation will run.
-       * @param complete A function to call once the animation is complete.
-       */
-  def animate(properties: js.Object, duration: scala.Double): JQuery = js.native
-  /**
-       * Perform a custom animation of a set of CSS properties.
-       *
-       * @param properties An object of CSS properties and values that the animation will move toward.
-       * @param duration A string or number determining how long the animation will run.
-       * @param complete A function to call once the animation is complete.
-       */
-  def animate(properties: js.Object, duration: scala.Double, complete: js.Function): JQuery = js.native
+  def animate(properties: Object, duration: java.lang.String, easing: java.lang.String): JQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -255,7 +230,23 @@ trait JQuery
        * @param easing A string indicating which easing function to use for the transition. (default: swing)
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: scala.Double, easing: java.lang.String): JQuery = js.native
+  def animate(properties: Object, duration: java.lang.String, easing: java.lang.String, complete: js.Function): JQuery = js.native
+  /**
+       * Perform a custom animation of a set of CSS properties.
+       *
+       * @param properties An object of CSS properties and values that the animation will move toward.
+       * @param duration A string or number determining how long the animation will run.
+       * @param complete A function to call once the animation is complete.
+       */
+  def animate(properties: Object, duration: scala.Double): JQuery = js.native
+  /**
+       * Perform a custom animation of a set of CSS properties.
+       *
+       * @param properties An object of CSS properties and values that the animation will move toward.
+       * @param duration A string or number determining how long the animation will run.
+       * @param complete A function to call once the animation is complete.
+       */
+  def animate(properties: Object, duration: scala.Double, complete: js.Function): JQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
@@ -264,14 +255,23 @@ trait JQuery
        * @param easing A string indicating which easing function to use for the transition. (default: swing)
        * @param complete A function to call once the animation is complete.
        */
-  def animate(properties: js.Object, duration: scala.Double, easing: java.lang.String, complete: js.Function): JQuery = js.native
+  def animate(properties: Object, duration: scala.Double, easing: java.lang.String): JQuery = js.native
+  /**
+       * Perform a custom animation of a set of CSS properties.
+       *
+       * @param properties An object of CSS properties and values that the animation will move toward.
+       * @param duration A string or number determining how long the animation will run.
+       * @param easing A string indicating which easing function to use for the transition. (default: swing)
+       * @param complete A function to call once the animation is complete.
+       */
+  def animate(properties: Object, duration: scala.Double, easing: java.lang.String, complete: js.Function): JQuery = js.native
   /**
        * Perform a custom animation of a set of CSS properties.
        *
        * @param properties An object of CSS properties and values that the animation will move toward.
        * @param options A map of additional options to pass to the method.
        */
-  def animate(properties: js.Object, options: JQueryAnimationOptions): JQuery = js.native
+  def animate(properties: Object, options: JQueryAnimationOptions): JQuery = js.native
   /**
        * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
        * 
@@ -382,7 +382,7 @@ trait JQuery
        *
        * @param attributes An object of attribute-value pairs to set.
        */
-  def attr(attributes: js.Object): JQuery = js.native
+  def attr(attributes: Object): JQuery = js.native
   /**
        * Insert content, specified by the parameter, before each element in the set of matched elements.
        * 
@@ -628,7 +628,7 @@ trait JQuery
        *
        * @param properties An object of property-value pairs to set.
        */
-  def css(properties: js.Object): JQuery = js.native
+  def css(properties: Object): JQuery = js.native
   /**
        * Get the value of style properties for the first element in the set of matched elements.
        *
@@ -1168,7 +1168,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def focusin(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def focusin(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "focusin" JavaScript event
        *
@@ -1181,7 +1181,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def focusout(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def focusout(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "focusout" JavaScript event
        *
@@ -1626,7 +1626,7 @@ trait JQuery
        * @param data A plain object or string that is sent to the server with the request.
        * @param complete A callback function that is executed when the request completes.
        */
-  def load(url: java.lang.String, data: js.Object): JQuery = js.native
+  def load(url: java.lang.String, data: Object): JQuery = js.native
   /**
        * Load data from the server and place the returned HTML into the matched element.
        *
@@ -1636,7 +1636,7 @@ trait JQuery
        */
   def load(
     url: java.lang.String,
-    data: js.Object,
+    data: Object,
     complete: js.Function3[
       /* responseText */ java.lang.String, 
       /* textStatus */ java.lang.String, 
@@ -1660,7 +1660,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mousedown(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
+  def mousedown(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "mousedown" JavaScript event.
        *
@@ -1677,7 +1677,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseenter(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
+  def mouseenter(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to be fired when the mouse enters an element.
        *
@@ -1694,7 +1694,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseleave(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
+  def mouseleave(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to be fired when the mouse leaves an element.
        *
@@ -1711,7 +1711,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mousemove(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
+  def mousemove(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "mousemove" JavaScript event.
        *
@@ -1728,7 +1728,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseout(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
+  def mouseout(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "mouseout" JavaScript event.
        *
@@ -1745,7 +1745,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseover(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
+  def mouseover(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "mouseover" JavaScript event.
        *
@@ -1762,7 +1762,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute when the event is triggered.
        */
-  def mouseup(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
+  def mouseup(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "mouseup" JavaScript event.
        *
@@ -2058,7 +2058,7 @@ trait JQuery
        */
   def one(
     events: java.lang.String,
-    data: js.Object,
+    data: Object,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): JQuery = js.native
   /**
@@ -2383,13 +2383,13 @@ trait JQuery
        * @param type The type of queue that needs to be observed. (default: fx)
        * @param target Object onto which the promise methods have to be attached
        */
-  def promise(`type`: java.lang.String, target: js.Object): JQueryPromise[_] = js.native
+  def promise(`type`: java.lang.String, target: Object): JQueryPromise[_] = js.native
   /**
        * Set one or more properties for the set of matched elements.
        *
        * @param properties An object of property-value pairs to set.
        */
-  def prop(properties: js.Object): JQuery = js.native
+  def prop(properties: Object): JQuery = js.native
   /**
        * Set the HTML contents of each element in the set of matched elements.
        *
@@ -2615,7 +2615,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def resize(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def resize(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "resize" JavaScript event.
        *
@@ -2632,7 +2632,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def scroll(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def scroll(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "scroll" JavaScript event.
        *
@@ -2669,7 +2669,7 @@ trait JQuery
        * @param eventData An object containing data that will be passed to the event handler.
        * @param handler A function to execute each time the event is triggered.
        */
-  def select(eventData: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def select(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
        * Bind an event handler to the "select" JavaScript event.
        *
@@ -3250,14 +3250,14 @@ trait JQuery
        * @param eventType A string containing a JavaScript event type, such as click or submit.
        * @param extraParameters Additional parameters to pass along to the event handler.
        */
-  def trigger(eventType: java.lang.String, extraParameters: js.Array[_]): JQuery = js.native
+  def trigger(eventType: java.lang.String, extraParameters: Object): JQuery = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        * 
        * @param eventType A string containing a JavaScript event type, such as click or submit.
        * @param extraParameters Additional parameters to pass along to the event handler.
        */
-  def trigger(eventType: java.lang.String, extraParameters: js.Object): JQuery = js.native
+  def trigger(eventType: java.lang.String, extraParameters: js.Array[_]): JQuery = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        * 
@@ -3271,28 +3271,28 @@ trait JQuery
        * @param event A jQuery.Event object.
        * @param extraParameters Additional parameters to pass along to the event handler.
        */
-  def trigger(event: JQueryEventObject, extraParameters: js.Array[_]): JQuery = js.native
+  def trigger(event: JQueryEventObject, extraParameters: Object): JQuery = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        * 
        * @param event A jQuery.Event object.
        * @param extraParameters Additional parameters to pass along to the event handler.
        */
-  def trigger(event: JQueryEventObject, extraParameters: js.Object): JQuery = js.native
+  def trigger(event: JQueryEventObject, extraParameters: js.Array[_]): JQuery = js.native
   /**
        * Execute all handlers attached to an element for an event.
        * 
        * @param eventType A string containing a JavaScript event type, such as click or submit.
        * @param extraParameters An array of additional parameters to pass along to the event handler.
        */
-  def triggerHandler(eventType: java.lang.String, extraParameters: js.Any*): js.Object = js.native
+  def triggerHandler(eventType: java.lang.String, extraParameters: js.Any*): Object = js.native
   /**
        * Execute all handlers attached to an element for an event.
        * 
        * @param event A jQuery.Event object.
        * @param extraParameters An array of additional parameters to pass along to the event handler.
        */
-  def triggerHandler(event: JQueryEventObject, extraParameters: js.Any*): js.Object = js.native
+  def triggerHandler(event: JQueryEventObject, extraParameters: js.Any*): Object = js.native
   /**
        * Remove a previously-attached event handler from the elements.
        * 
@@ -3363,7 +3363,7 @@ trait JQuery
        * @param selector A selector which will be used to filter the event results.
        * @param events An object of one or more event types and previously bound functions to unbind from them.
        */
-  def undelegate(selector: java.lang.String, events: js.Object): JQuery = js.native
+  def undelegate(selector: java.lang.String, events: Object): JQuery = js.native
   /**
        * Bind an event handler to the "unload" JavaScript event. (DEPRECATED from v1.8)
        * 

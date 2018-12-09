@@ -187,7 +187,7 @@ object Route53DomainsNs extends js.Object {
     /**
          * Whether the domain name is available for registering.  You can register only the domains that are designated as AVAILABLE.  Valid values:  AVAILABLE  The domain name is available.  AVAILABLE_RESERVED  The domain name is reserved under specific conditions.  AVAILABLE_PREORDER  The domain name is available and can be preordered.  DONT_KNOW  The TLD registry didn't reply with a definitive answer about whether the domain name is available. Amazon Route 53 can return this response for a variety of reasons, for example, the registry is performing maintenance. Try again later.  PENDING  The TLD registry didn't return a response in the expected amount of time. When the response is delayed, it usually takes just a few extra seconds. You can resubmit the request immediately.  RESERVED  The domain name has been reserved for another person or organization.  UNAVAILABLE  The domain name is not available.  UNAVAILABLE_PREMIUM  The domain name is not available.  UNAVAILABLE_RESTRICTED  The domain name is forbidden.  
          */
-    var Availability: js.UndefOr[java.lang.String] = js.undefined
+    var Availability: js.UndefOr[String] = js.undefined
     /**
          * A suggested domain name.
          */
@@ -199,7 +199,7 @@ object Route53DomainsNs extends js.Object {
     /**
          * Indicates whether the domain is automatically renewed upon expiration.
          */
-    var AutoRenew: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoRenew: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain that the summary information applies to.
          */
@@ -211,7 +211,7 @@ object Route53DomainsNs extends js.Object {
     /**
          * Indicates whether a domain is locked from unauthorized transfer to another party.
          */
-    var TransferLock: js.UndefOr[scala.Boolean] = js.undefined
+    var TransferLock: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -303,11 +303,11 @@ object Route53DomainsNs extends js.Object {
     /**
          * Specifies whether contact information is concealed from WHOIS queries. If the value is true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If the value is false, WHOIS queries return the information that you entered for the admin contact.
          */
-    var AdminPrivacy: js.UndefOr[scala.Boolean] = js.undefined
+    var AdminPrivacy: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the domain registration is set to renew automatically.
          */
-    var AutoRenew: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoRenew: js.UndefOr[Boolean] = js.undefined
     /**
          * The date when the domain was created as found in the response to a WHOIS query. The date and time is in Coordinated Universal time (UTC).
          */
@@ -335,7 +335,7 @@ object Route53DomainsNs extends js.Object {
     /**
          * Specifies whether contact information is concealed from WHOIS queries. If the value is true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If the value is false, WHOIS queries return the information that you entered for the registrant contact (domain owner).
          */
-    var RegistrantPrivacy: js.UndefOr[scala.Boolean] = js.undefined
+    var RegistrantPrivacy: js.UndefOr[Boolean] = js.undefined
     /**
          * Name of the registrar of the domain as identified in the registry. Domains with a .com, .net, or .org TLD are registered by Amazon Registrar. All other domains are registered by our registrar associate, Gandi. The value for domains that are registered by Gandi is "GANDI SAS". 
          */
@@ -363,7 +363,7 @@ object Route53DomainsNs extends js.Object {
     /**
          * Specifies whether contact information is concealed from WHOIS queries. If the value is true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If the value is false, WHOIS queries return the information that you entered for the technical contact.
          */
-    var TechPrivacy: js.UndefOr[scala.Boolean] = js.undefined
+    var TechPrivacy: js.UndefOr[Boolean] = js.undefined
     /**
          * The last updated date of the domain as found in the response to a WHOIS query. The date and time is in Coordinated Universal time (UTC).
          */
@@ -383,7 +383,7 @@ object Route53DomainsNs extends js.Object {
     /**
          * If OnlyAvailable is true, Amazon Route 53 returns only domain names that are available. If OnlyAvailable is false, Amazon Route 53 returns domain names without checking whether they're available to be registered. To determine whether the domain is available, you can call checkDomainAvailability for each suggestion.
          */
-    var OnlyAvailable: scala.Boolean
+    var OnlyAvailable: Boolean
     /**
          * The number of suggested domain names that you want Amazon Route 53 to return.
          */
@@ -543,7 +543,7 @@ object Route53DomainsNs extends js.Object {
     /**
          * Indicates whether the domain will be automatically renewed (true) or not (false). Autorenewal only takes effect after the account is charged. Default: true 
          */
-    var AutoRenew: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoRenew: js.UndefOr[Boolean] = js.undefined
     /**
          * The domain name that you want to register. Constraints: The domain name can contain only the letters a through z, the numbers 0 through 9, and hyphen (-). Internationalized Domain Names are not supported.
          */
@@ -559,15 +559,15 @@ object Route53DomainsNs extends js.Object {
     /**
          * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the admin contact. Default: true 
          */
-    var PrivacyProtectAdminContact: js.UndefOr[scala.Boolean] = js.undefined
+    var PrivacyProtectAdminContact: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the registrant contact (the domain owner). Default: true 
          */
-    var PrivacyProtectRegistrantContact: js.UndefOr[scala.Boolean] = js.undefined
+    var PrivacyProtectRegistrantContact: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the technical contact. Default: true 
          */
-    var PrivacyProtectTechContact: js.UndefOr[scala.Boolean] = js.undefined
+    var PrivacyProtectTechContact: js.UndefOr[Boolean] = js.undefined
     /**
          * Provides detailed contact information.
          */
@@ -631,7 +631,7 @@ object Route53DomainsNs extends js.Object {
     /**
          *  True if the email address for the registrant contact has already been verified, and false otherwise. If the email address has already been verified, we don't send another confirmation email.
          */
-    var isAlreadyVerified: js.UndefOr[scala.Boolean] = js.undefined
+    var isAlreadyVerified: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -675,7 +675,7 @@ object Route53DomainsNs extends js.Object {
     /**
          * Indicates whether the domain will be automatically renewed (true) or not (false). Autorenewal only takes effect after the account is charged. Default: true
          */
-    var AutoRenew: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoRenew: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain that you want to transfer to Amazon Route 53. Constraints: The domain name can contain only the letters a through z, the numbers 0 through 9, and hyphen (-). Internationalized Domain Names are not supported.
          */
@@ -695,15 +695,15 @@ object Route53DomainsNs extends js.Object {
     /**
          * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the admin contact. Default: true 
          */
-    var PrivacyProtectAdminContact: js.UndefOr[scala.Boolean] = js.undefined
+    var PrivacyProtectAdminContact: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the registrant contact (domain owner). Default: true 
          */
-    var PrivacyProtectRegistrantContact: js.UndefOr[scala.Boolean] = js.undefined
+    var PrivacyProtectRegistrantContact: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the technical contact. Default: true 
          */
-    var PrivacyProtectTechContact: js.UndefOr[scala.Boolean] = js.undefined
+    var PrivacyProtectTechContact: js.UndefOr[Boolean] = js.undefined
     /**
          * Provides detailed contact information.
          */
@@ -1430,7 +1430,7 @@ object Route53DomainsNs extends js.Object {
     /**
          * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the admin contact.
          */
-    var AdminPrivacy: js.UndefOr[scala.Boolean] = js.undefined
+    var AdminPrivacy: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain that you want to update the privacy setting for.
          */
@@ -1438,11 +1438,11 @@ object Route53DomainsNs extends js.Object {
     /**
          * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the registrant contact (domain owner).
          */
-    var RegistrantPrivacy: js.UndefOr[scala.Boolean] = js.undefined
+    var RegistrantPrivacy: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you specify false, WHOIS queries return the information that you entered for the technical contact.
          */
-    var TechPrivacy: js.UndefOr[scala.Boolean] = js.undefined
+    var TechPrivacy: js.UndefOr[Boolean] = js.undefined
   }
   
   

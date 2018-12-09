@@ -33,7 +33,7 @@ class ManagedUpload protected () extends js.Object {
   /**
        * Returns a 'thenable' promise.
        */
-  def promise(): stdLib.Promise[awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.SendData] = js.native
+  def promise(): js.Promise[awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.SendData] = js.native
   /**
        * Initiates the managed upload for the payload.
        */

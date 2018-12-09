@@ -94,6 +94,6 @@ class Editor protected ()
   def setProgressState(state: scala.Boolean, time: scala.Double): scala.Boolean = js.native
   def show(): scala.Unit = js.native
   def translate(text: java.lang.String): java.lang.String = js.native
-  def uploadImages(callback: js.Function0[scala.Unit]): stdLib.Promise[_] = js.native
+  def uploadImages(callback: js.Function0[scala.Unit]): js.Promise[_] = js.native
 }
 

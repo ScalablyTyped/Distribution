@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ymaps")
 @js.native
 object ymapsNsMembers extends js.Object {
-  def ready(): stdLib.Promise[scala.Unit] = js.native
-  def ready(successCallback: js.Function0[_ | IReadyobject]): stdLib.Promise[scala.Unit] = js.native
-  def ready(successCallback: js.Function0[_ | IReadyobject], errorCallback: js.Function0[_]): stdLib.Promise[scala.Unit] = js.native
+  def ready(): js.Promise[scala.Unit] = js.native
+  def ready(successCallback: js.Function0[_ | IReadyobject]): js.Promise[scala.Unit] = js.native
+  def ready(successCallback: js.Function0[_ | IReadyobject], errorCallback: js.Function0[_]): js.Promise[scala.Unit] = js.native
   def ready(
     successCallback: js.Function0[_ | IReadyobject],
     errorCallback: js.Function0[_],
     context: js.Object
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

@@ -36,7 +36,7 @@ package object fetchMockNs {
        * Function(url, opts): A function that is passed the url and opts fetch()
        *  is called with and that returns any of the responses listed above
        */
-  type MockResponse = stdLib.Response | stdLib.Promise[stdLib.Response] | scala.Double | stdLib.Promise[scala.Double] | java.lang.String | stdLib.Promise[java.lang.String] | js.Object | stdLib.Promise[js.Object] | MockResponseObject | stdLib.Promise[MockResponseObject]
+  type MockResponse = stdLib.Response | js.Promise[stdLib.Response] | scala.Double | js.Promise[scala.Double] | java.lang.String | js.Promise[java.lang.String] | js.Object | js.Promise[js.Object] | MockResponseObject | js.Promise[MockResponseObject]
   /**
        * Mock response function
        */

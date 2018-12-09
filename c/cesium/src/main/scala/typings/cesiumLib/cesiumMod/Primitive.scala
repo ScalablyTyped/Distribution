@@ -33,7 +33,7 @@ class Primitive ()
   /* CompleteClass */
   override val ready: scala.Boolean = js.native
   /* CompleteClass */
-  override val readyPromise: stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.Primitive] = js.native
+  override val readyPromise: js.Promise[cesiumLib.cesiumMod.CesiumNs.Primitive] = js.native
   /* CompleteClass */
   override val releaseGeometryInstances: scala.Boolean = js.native
   /* CompleteClass */

@@ -11,15 +11,15 @@ trait Passport extends js.Object {
   def authenticate(credentials: FeathersAuthCredentials): js.Any = js.native
   def authenticateSocket(credentials: FeathersAuthCredentials, socket: js.Any, emit: js.Any): js.Any = js.native
   def clearCookie(name: java.lang.String): scala.Null = js.native
-  def connected(): stdLib.Promise[_] = js.native
+  def connected(): js.Promise[_] = js.native
   def getCookie(name: java.lang.String): java.lang.String = js.native
-  def getJWT(): stdLib.Promise[_] = js.native
+  def getJWT(): js.Promise[_] = js.native
   def getStorage(storage: js.Any): js.Any = js.native
-  def logout(): stdLib.Promise[_] = js.native
-  def logoutSocket(socket: js.Any, emit: js.Any): stdLib.Promise[_] = js.native
+  def logout(): js.Promise[_] = js.native
+  def logoutSocket(socket: js.Any, emit: js.Any): js.Promise[_] = js.native
   def payloadIsValid(payload: java.lang.String): scala.Boolean = js.native
-  def setJWT(data: js.Any): stdLib.Promise[_] = js.native
+  def setJWT(data: js.Any): js.Promise[_] = js.native
   def setupSocketListeners(): scala.Unit = js.native
-  def verifyJWT(token: java.lang.String): stdLib.Promise[_] = js.native
+  def verifyJWT(token: java.lang.String): js.Promise[_] = js.native
 }
 

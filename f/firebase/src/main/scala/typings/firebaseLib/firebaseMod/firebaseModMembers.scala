@@ -20,8 +20,8 @@ object firebaseModMembers extends js.Object {
   def firestore(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
   def functions(): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
   def functions(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
-  def initializeApp(options: js.Object): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
-  def initializeApp(options: js.Object, name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
+  def initializeApp(options: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
+  def initializeApp(options: coreDashJsLib.Object, name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
   def messaging(): firebaseLib.firebaseMod.firebaseNs.messagingNs.Messaging = js.native
   def messaging(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.messagingNs.Messaging = js.native
   def storage(): firebaseLib.firebaseMod.firebaseNs.storageNs.Storage = js.native

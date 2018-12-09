@@ -171,7 +171,7 @@ trait StateDeclaration extends js.Object {
     js.Function2[
       /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
       /* state */ StateDeclaration, 
-      stdLib.Promise[LazyLoadResult]
+      js.Promise[LazyLoadResult]
     ]
   ] = js.undefined
   /**
@@ -369,7 +369,7 @@ trait StateDeclaration extends js.Object {
       RedirectToResult
     ]) | (js.Function1[
       /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
-      stdLib.Promise[RedirectToResult]
+      js.Promise[RedirectToResult]
     ])
   ] = js.undefined
   /**

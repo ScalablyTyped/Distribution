@@ -29,7 +29,7 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
   var getScriptKind: js.UndefOr[js.Function1[/* fileName */ java.lang.String, ScriptKind]] = js.undefined
   var getTypeRootsVersion: js.UndefOr[js.Function0[scala.Double]] = js.undefined
   var installPackage: js.UndefOr[
-    js.Function1[/* options */ InstallPackageOptions, stdLib.Promise[ApplyCodeActionCommandResult]]
+    js.Function1[/* options */ InstallPackageOptions, js.Promise[ApplyCodeActionCommandResult]]
   ] = js.undefined
   var isKnownTypesPackageName: js.UndefOr[js.Function1[/* name */ java.lang.String, scala.Boolean]] = js.undefined
   var log: js.UndefOr[js.Function1[/* s */ java.lang.String, scala.Unit]] = js.undefined

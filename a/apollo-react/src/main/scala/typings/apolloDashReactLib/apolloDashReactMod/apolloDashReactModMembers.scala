@@ -44,15 +44,15 @@ object apolloDashReactModMembers extends js.Object {
     f3: js.Function1[/* a */ A, B],
     f4: reduxLib.Func3[T1, T2, T3, A]
   ): reduxLib.Func3[T1, T2, T3, R] = js.native
-  def getDataFromTree(rootElement: js.Any): stdLib.Promise[scala.Unit] = js.native
-  def getDataFromTree(rootElement: js.Any, rootContext: js.Any): stdLib.Promise[scala.Unit] = js.native
-  def getDataFromTree(rootElement: js.Any, rootContext: js.Any, fetchRoot: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def getDataFromTree(rootElement: js.Any): js.Promise[scala.Unit] = js.native
+  def getDataFromTree(rootElement: js.Any, rootContext: js.Any): js.Promise[scala.Unit] = js.native
+  def getDataFromTree(rootElement: js.Any, rootContext: js.Any, fetchRoot: scala.Boolean): js.Promise[scala.Unit] = js.native
   def graphql(document: typedDashGraphqlLib.graphqlMod.Document): js.Function1[/* WrappedComponent */ js.Any, _] = js.native
   def graphql(
     document: typedDashGraphqlLib.graphqlMod.Document,
     operationOptions: apolloDashReactLib.libGraphqlMod.OperationOption
   ): js.Function1[/* WrappedComponent */ js.Any, _] = js.native
-  def renderToStringWithData(component: js.Any): stdLib.Promise[java.lang.String] = js.native
+  def renderToStringWithData(component: js.Any): js.Promise[java.lang.String] = js.native
   def withApollo(WrappedComponent: js.Any): js.Any = js.native
 }
 

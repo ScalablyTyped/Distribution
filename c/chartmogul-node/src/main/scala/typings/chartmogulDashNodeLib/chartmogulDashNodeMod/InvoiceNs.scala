@@ -67,20 +67,20 @@ object InvoiceNs extends js.Object {
     var uuid: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): stdLib.Promise[Invoices] = js.native
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ListInvoicesParams): stdLib.Promise[Invoices] = js.native
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[Invoices] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): js.Promise[Invoices] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ListInvoicesParams): js.Promise[Invoices] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[Invoices] = js.native
   def all(
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
     uuid: java.lang.String,
     params: ListInvoicesParams
-  ): stdLib.Promise[Invoices] = js.native
+  ): js.Promise[Invoices] = js.native
   def create(
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
     uuid: java.lang.String,
     data: chartmogulDashNodeLib.Anon_Invoices
-  ): stdLib.Promise[Invoice] = js.native
-  def destroy(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[js.Object] = js.native
-  def retrieve(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[Invoice] = js.native
+  ): js.Promise[Invoice] = js.native
+  def destroy(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[js.Object] = js.native
+  def retrieve(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[Invoice] = js.native
 }
 

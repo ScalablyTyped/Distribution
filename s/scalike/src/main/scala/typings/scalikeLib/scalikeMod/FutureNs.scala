@@ -19,7 +19,7 @@ object FutureNs extends js.Object {
     zero: B,
     f: js.Function2[/* b */ B, /* a */ A, B]
   ): scalikeLib.scalikeMod.scalikeNs.Future[B] = js.native
-  def fromPromise[A](p: stdLib.Promise[A]): scalikeLib.scalikeMod.scalikeNs.Future[A] = js.native
+  def fromPromise[A](p: js.Promise[A]): scalikeLib.scalikeMod.scalikeNs.Future[A] = js.native
   def fromTry[A](t: scalikeLib.scalikeMod.scalikeNs.Try[A]): scalikeLib.scalikeMod.scalikeNs.Future[A] = js.native
   def reduceLeft[A, B](fu: js.Array[scalikeLib.scalikeMod.scalikeNs.Future[A]], f: js.Function2[/* b */ B, /* a */ A, B]): scalikeLib.scalikeMod.scalikeNs.Future[B] = js.native
   def sequence[A](fus: js.Array[scalikeLib.scalikeMod.scalikeNs.Future[A]]): scalikeLib.scalikeMod.scalikeNs.Future[js.Array[A]] = js.native

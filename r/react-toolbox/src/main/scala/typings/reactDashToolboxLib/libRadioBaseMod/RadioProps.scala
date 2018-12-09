@@ -23,6 +23,6 @@ trait RadioProps
   /**
      * Callback invoked on mouse down.
      */
-  var onMouseDown: js.UndefOr[js.Function] = js.undefined
+  var onMouseDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
 }
 

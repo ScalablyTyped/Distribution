@@ -13,7 +13,7 @@ class Config ()
 @JSImport("nodegit", "Config")
 @js.native
 object Config extends js.Object {
-  def findProgramdata(): stdLib.Promise[nodegitLib.bufMod.Buf] = js.native
-  def openDefault(): stdLib.Promise[nodegitLib.configMod.Config] = js.native
+  def findProgramdata(): js.Promise[nodegitLib.bufMod.Buf] = js.native
+  def openDefault(): js.Promise[nodegitLib.configMod.Config] = js.native
 }
 

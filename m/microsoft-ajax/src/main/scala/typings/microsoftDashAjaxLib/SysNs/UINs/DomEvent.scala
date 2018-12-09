@@ -186,7 +186,7 @@ object DomEvent extends js.Object {
                */
   def addHandlers(
     element: stdLib.HTMLElement,
-    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ this.type, scala.Unit]]
+    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit]]
   ): scala.Unit = js.native
   /**
                * Adds a list of DOM event handlers to the DOM element that exposes the events. This member is static and can be invoked without creating an instance of the class.
@@ -211,7 +211,7 @@ object DomEvent extends js.Object {
                */
   def addHandlers(
     element: stdLib.HTMLElement,
-    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ this.type, scala.Unit]],
+    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit]],
     handlerOwner: js.Any
   ): scala.Unit = js.native
   /**
@@ -237,7 +237,7 @@ object DomEvent extends js.Object {
                */
   def addHandlers(
     element: stdLib.HTMLElement,
-    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ this.type, scala.Unit]],
+    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit]],
     handlerOwner: js.Any,
     autoRemove: scala.Boolean
   ): scala.Unit = js.native

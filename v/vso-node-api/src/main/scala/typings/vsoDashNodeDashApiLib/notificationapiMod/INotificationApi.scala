@@ -10,51 +10,51 @@ trait INotificationApi
   extends vsoDashNodeDashApiLib.clientapibasesMod.ClientApiBase {
   def createSubscription(
     createParameters: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriptionCreateParameters
-  ): stdLib.Promise[
+  ): js.Promise[
     vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscription
   ] = js.native
-  def deleteSubscription(subscriptionId: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def getEventType(eventType: java.lang.String): stdLib.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationEventType] = js.native
-  def getNotificationReasons(notificationId: scala.Double): stdLib.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationReason] = js.native
-  def getNotificationTracing(subscriptionId: java.lang.String): stdLib.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationTracing] = js.native
-  def getSubscriber(subscriberId: java.lang.String): stdLib.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriber] = js.native
-  def getSubscription(subscriptionId: java.lang.String): stdLib.Promise[
+  def deleteSubscription(subscriptionId: java.lang.String): js.Promise[scala.Unit] = js.native
+  def getEventType(eventType: java.lang.String): js.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationEventType] = js.native
+  def getNotificationReasons(notificationId: scala.Double): js.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationReason] = js.native
+  def getNotificationTracing(subscriptionId: java.lang.String): js.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationTracing] = js.native
+  def getSubscriber(subscriberId: java.lang.String): js.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriber] = js.native
+  def getSubscription(subscriptionId: java.lang.String): js.Promise[
     vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscription
   ] = js.native
   def getSubscription(
     subscriptionId: java.lang.String,
     queryFlags: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionQueryFlags
-  ): stdLib.Promise[
+  ): js.Promise[
     vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscription
   ] = js.native
-  def getSubscriptionTemplates(): stdLib.Promise[
+  def getSubscriptionTemplates(): js.Promise[
     js.Array[
       vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriptionTemplate
     ]
   ] = js.native
-  def listEventTypes(): stdLib.Promise[
+  def listEventTypes(): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationEventType]
   ] = js.native
-  def listEventTypes(publisherId: java.lang.String): stdLib.Promise[
+  def listEventTypes(publisherId: java.lang.String): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationEventType]
   ] = js.native
-  def listNotificationReasons(): stdLib.Promise[
+  def listNotificationReasons(): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationReason]
   ] = js.native
-  def listNotificationReasons(notificationIds: scala.Double): stdLib.Promise[
+  def listNotificationReasons(notificationIds: scala.Double): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationReason]
   ] = js.native
-  def listSubscriptions(): stdLib.Promise[
+  def listSubscriptions(): js.Promise[
     js.Array[
       vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscription
     ]
   ] = js.native
-  def listSubscriptions(targetId: java.lang.String): stdLib.Promise[
+  def listSubscriptions(targetId: java.lang.String): js.Promise[
     js.Array[
       vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscription
     ]
   ] = js.native
-  def listSubscriptions(targetId: java.lang.String, ids: js.Array[java.lang.String]): stdLib.Promise[
+  def listSubscriptions(targetId: java.lang.String, ids: js.Array[java.lang.String]): js.Promise[
     js.Array[
       vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscription
     ]
@@ -63,20 +63,20 @@ trait INotificationApi
     targetId: java.lang.String,
     ids: js.Array[java.lang.String],
     queryFlags: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionQueryFlags
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[
       vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscription
     ]
   ] = js.native
-  def performBatchNotificationOperations(operation: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.BatchNotificationOperation): stdLib.Promise[scala.Unit] = js.native
-  def publishEvent(notificationEvent: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.VssNotificationEvent): stdLib.Promise[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.VssNotificationEvent] = js.native
+  def performBatchNotificationOperations(operation: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.BatchNotificationOperation): js.Promise[scala.Unit] = js.native
+  def publishEvent(notificationEvent: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.VssNotificationEvent): js.Promise[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.VssNotificationEvent] = js.native
   def queryEventTypes(
     inputValuesQuery: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.FieldValuesQuery,
     eventType: java.lang.String
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationEventField]
   ] = js.native
-  def querySubscriptions(subscriptionQuery: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionQuery): stdLib.Promise[
+  def querySubscriptions(subscriptionQuery: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionQuery): js.Promise[
     js.Array[
       vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscription
     ]
@@ -84,22 +84,22 @@ trait INotificationApi
   def updateNotificationTracing(
     setParameters: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationTracingSetParameters,
     subscriptionId: java.lang.String
-  ): stdLib.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationTracing] = js.native
+  ): js.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationTracing] = js.native
   def updateSubscriber(
     updateParameters: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriberUpdateParameters,
     subscriberId: java.lang.String
-  ): stdLib.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriber] = js.native
+  ): js.Promise[vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriber] = js.native
   def updateSubscription(
     updateParameters: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscriptionUpdateParameters,
     subscriptionId: java.lang.String
-  ): stdLib.Promise[
+  ): js.Promise[
     vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.NotificationSubscription
   ] = js.native
   def updateSubscriptionUserSettings(
     userSettings: vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionUserSettings,
     subscriptionId: java.lang.String,
     userId: java.lang.String
-  ): stdLib.Promise[
+  ): js.Promise[
     vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionUserSettings
   ] = js.native
 }

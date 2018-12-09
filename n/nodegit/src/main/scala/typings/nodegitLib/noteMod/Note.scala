@@ -26,22 +26,22 @@ object Note extends js.Object {
     oid: nodegitLib.oidMod.Oid,
     note: java.lang.String,
     force: scala.Double
-  ): stdLib.Promise[nodegitLib.oidMod.Oid] = js.native
+  ): js.Promise[nodegitLib.oidMod.Oid] = js.native
   def foreach(
     repo: nodegitLib.repositoryMod.Repository,
     notesRef: java.lang.String,
     noteCb: js.Function,
     payload: js.Any
-  ): stdLib.Promise[scala.Double] = js.native
-  def iteratorNew(repo: nodegitLib.repositoryMod.Repository, notesRef: java.lang.String): stdLib.Promise[_] = js.native
+  ): js.Promise[scala.Double] = js.native
+  def iteratorNew(repo: nodegitLib.repositoryMod.Repository, notesRef: java.lang.String): js.Promise[_] = js.native
   def next(noteId: nodegitLib.oidMod.Oid, annotatedId: nodegitLib.oidMod.Oid, it: js.Any): scala.Double = js.native
-  def read(repo: nodegitLib.repositoryMod.Repository, notesRef: java.lang.String, oid: nodegitLib.oidMod.Oid): stdLib.Promise[nodegitLib.noteMod.Note] = js.native
+  def read(repo: nodegitLib.repositoryMod.Repository, notesRef: java.lang.String, oid: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.noteMod.Note] = js.native
   def remove(
     repo: nodegitLib.repositoryMod.Repository,
     notesRef: java.lang.String,
     author: nodegitLib.signatureMod.Signature,
     committer: nodegitLib.signatureMod.Signature,
     oid: nodegitLib.oidMod.Oid
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
 }
 

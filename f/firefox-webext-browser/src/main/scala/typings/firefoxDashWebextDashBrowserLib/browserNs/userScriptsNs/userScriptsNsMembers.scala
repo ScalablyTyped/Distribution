@@ -13,7 +13,7 @@ object userScriptsNsMembers extends js.Object {
        * Register a user script programmatically given its `userScripts.UserScriptOptions`, and resolves to a
        * `userScripts.RegisteredUserScript` instance
        */
-  def register(userScriptOptions: UserScriptOptions): stdLib.Promise[RegisteredUserScript] = js.native
+  def register(userScriptOptions: UserScriptOptions): js.Promise[RegisteredUserScript] = js.native
   /**
        * Provides a set of custom API methods available to the registered userScripts
        *

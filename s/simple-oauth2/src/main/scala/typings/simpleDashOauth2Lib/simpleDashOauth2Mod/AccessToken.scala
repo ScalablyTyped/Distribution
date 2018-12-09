@@ -11,12 +11,12 @@ trait AccessToken extends js.Object {
   /** Check if the access token is expired or not */
   def expired(): scala.Boolean = js.native
   /** Refresh the access token */
-  def refresh(): stdLib.Promise[AccessToken] = js.native
+  def refresh(): js.Promise[AccessToken] = js.native
   /** Refresh the access token */
-  def refresh(params: js.Object): stdLib.Promise[AccessToken] = js.native
+  def refresh(params: js.Object): js.Promise[AccessToken] = js.native
   /** Revoke access or refresh token */
-  def revoke(tokenType: TokenType): stdLib.Promise[scala.Unit] = js.native
+  def revoke(tokenType: TokenType): js.Promise[scala.Unit] = js.native
   /** Revoke both the existing access and refresh tokens */
-  def revokeAll(): stdLib.Promise[scala.Unit] = js.native
+  def revokeAll(): js.Promise[scala.Unit] = js.native
 }
 

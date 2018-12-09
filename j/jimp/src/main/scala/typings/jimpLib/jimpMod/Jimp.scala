@@ -228,12 +228,12 @@ ScalablyTyped.runtime.Instantiable2[
     cb: jimpLib.ImageCallback[_]
   ): this.type = js.native
   def cover(w: scala.Double, h: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
-  def create(data: nodeLib.Buffer): stdLib.Promise[Jimp] = js.native
-  def create(image: Jimp): stdLib.Promise[Jimp] = js.native
-  def create(path: java.lang.String): stdLib.Promise[Jimp] = js.native
-  def create(w: scala.Double, h: scala.Double): stdLib.Promise[Jimp] = js.native
-  def create(w: scala.Double, h: scala.Double, background: java.lang.String): stdLib.Promise[Jimp] = js.native
-  def create(w: scala.Double, h: scala.Double, background: scala.Double): stdLib.Promise[Jimp] = js.native
+  def create(data: nodeLib.Buffer): js.Promise[Jimp] = js.native
+  def create(image: Jimp): js.Promise[Jimp] = js.native
+  def create(path: java.lang.String): js.Promise[Jimp] = js.native
+  def create(w: scala.Double, h: scala.Double): js.Promise[Jimp] = js.native
+  def create(w: scala.Double, h: scala.Double, background: java.lang.String): js.Promise[Jimp] = js.native
+  def create(w: scala.Double, h: scala.Double, background: scala.Double): js.Promise[Jimp] = js.native
   def crop(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): this.type = js.native
   def crop(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def cropQuiet(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): this.type = js.native
@@ -262,9 +262,9 @@ ScalablyTyped.runtime.Instantiable2[
   def gaussian(r: scala.Double): this.type = js.native
   def gaussian(r: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def getBase64(mime: java.lang.String, cb: jimpLib.GenericCallback[java.lang.String, _, this.type]): this.type = js.native
-  def getBase64Async(mime: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def getBase64Async(mime: java.lang.String): js.Promise[java.lang.String] = js.native
   def getBuffer(mime: java.lang.String, cb: jimpLib.GenericCallback[nodeLib.Buffer, _, _]): this.type = js.native
-  def getBufferAsync(mime: java.lang.String): stdLib.Promise[nodeLib.Buffer] = js.native
+  def getBufferAsync(mime: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
   def getExtension(): java.lang.String = js.native
   def getHeight(): scala.Double = js.native
   def getMIME(): java.lang.String = js.native
@@ -300,8 +300,8 @@ ScalablyTyped.runtime.Instantiable2[
   def invert(): this.type = js.native
   def invert(cb: jimpLib.ImageCallback[_]): this.type = js.native
   def limit255(n: scala.Double): scala.Double = js.native
-  def loadFont(file: java.lang.String): stdLib.Promise[Font] = js.native
-  def loadFont(file: java.lang.String, cb: jimpLib.GenericCallback[Font, _, _]): stdLib.Promise[scala.Nothing] = js.native
+  def loadFont(file: java.lang.String): js.Promise[Font] = js.native
+  def loadFont(file: java.lang.String, cb: jimpLib.GenericCallback[Font, _, _]): js.Promise[scala.Nothing] = js.native
   def mask(src: Jimp, x: scala.Double, y: scala.Double): this.type = js.native
   def mask(src: Jimp, x: scala.Double, y: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def measureText(font: Font, text: jimpLib.PrintableText): scala.Double = js.native
@@ -372,12 +372,12 @@ ScalablyTyped.runtime.Instantiable2[
   ): this.type = js.native
   def quality(n: scala.Double): this.type = js.native
   def quality(n: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
-  def read(data: nodeLib.Buffer): stdLib.Promise[Jimp] = js.native
-  def read(image: Jimp): stdLib.Promise[Jimp] = js.native
-  def read(path: java.lang.String): stdLib.Promise[Jimp] = js.native
-  def read(w: scala.Double, h: scala.Double): stdLib.Promise[Jimp] = js.native
-  def read(w: scala.Double, h: scala.Double, background: java.lang.String): stdLib.Promise[Jimp] = js.native
-  def read(w: scala.Double, h: scala.Double, background: scala.Double): stdLib.Promise[Jimp] = js.native
+  def read(data: nodeLib.Buffer): js.Promise[Jimp] = js.native
+  def read(image: Jimp): js.Promise[Jimp] = js.native
+  def read(path: java.lang.String): js.Promise[Jimp] = js.native
+  def read(w: scala.Double, h: scala.Double): js.Promise[Jimp] = js.native
+  def read(w: scala.Double, h: scala.Double, background: java.lang.String): js.Promise[Jimp] = js.native
+  def read(w: scala.Double, h: scala.Double, background: scala.Double): js.Promise[Jimp] = js.native
   def resize(w: scala.Double, h: scala.Double): this.type = js.native
   def resize(w: scala.Double, h: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def resize(w: scala.Double, h: scala.Double, mode: java.lang.String): this.type = js.native
@@ -469,6 +469,6 @@ ScalablyTyped.runtime.Instantiable2[
   def setPixelColour(hex: scala.Double, x: scala.Double, y: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def write(path: java.lang.String): this.type = js.native
   def write(path: java.lang.String, cb: jimpLib.ImageCallback[_]): this.type = js.native
-  def writeAsync(path: java.lang.String): stdLib.Promise[Jimp] = js.native
+  def writeAsync(path: java.lang.String): js.Promise[Jimp] = js.native
 }
 

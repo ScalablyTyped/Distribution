@@ -17,6 +17,6 @@ trait SourceModel[S] extends js.Object {
   ] = js.undefined
   var success: js.UndefOr[js.Function1[/* state */ S, scala.Unit]] = js.undefined
   def local(state: js.Any, args: js.Any*): js.Any
-  def remote(state: js.Any, args: js.Any*): stdLib.Promise[S]
+  def remote(state: js.Any, args: js.Any*): js.Promise[S]
 }
 

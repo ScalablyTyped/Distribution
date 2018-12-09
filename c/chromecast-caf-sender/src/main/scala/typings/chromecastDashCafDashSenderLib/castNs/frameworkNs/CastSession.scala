@@ -31,7 +31,7 @@ class CastSession protected () extends js.Object {
   def getSessionState(): SessionState = js.native
   def getVolume(): scala.Double = js.native
   def isMute(): scala.Boolean = js.native
-  def loadMedia(request: chromeLib.chromeNs.castNs.mediaNs.LoadRequest): stdLib.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
+  def loadMedia(request: chromeLib.chromeNs.castNs.mediaNs.LoadRequest): js.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
   def removeEventListener(
     `type`: SessionEventType,
     handler: js.Function1[
@@ -43,8 +43,8 @@ class CastSession protected () extends js.Object {
     namespace: java.lang.String,
     listener: js.Function2[/* namespace */ java.lang.String, /* message */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  def sendMessage(namespace: java.lang.String, data: js.Any): stdLib.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
-  def setMute(mute: scala.Boolean): stdLib.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
-  def setVolume(volume: scala.Double): stdLib.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
+  def sendMessage(namespace: java.lang.String, data: js.Any): js.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
+  def setMute(mute: scala.Boolean): js.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
+  def setVolume(volume: scala.Double): js.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
 }
 

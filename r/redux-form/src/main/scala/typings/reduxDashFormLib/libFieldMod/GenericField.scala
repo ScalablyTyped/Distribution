@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GenericField[P]
-  extends reactLib.reactMod.Component[
-      (BaseFieldProps[BaseFieldProps[P] with P]) with BaseFieldProps[P] with P, 
-      js.Object, 
-      js.Any
-    ] {
+  extends reactLib.reactMod.Component[BaseFieldProps[P] with P, js.Object, js.Any] {
   var dirty: scala.Boolean = js.native
   var name: java.lang.String = js.native
   var pristine: scala.Boolean = js.native

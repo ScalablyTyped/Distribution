@@ -10,6 +10,6 @@ trait Anon_StartCustomFunctions extends js.Object {
   /**
            * Initializes the use of custom JavaScript functions in Excel.
            */
-  def startCustomFunctions(): stdLib.Promise[scala.Unit]
+  def startCustomFunctions(): js.Promise[scala.Unit]
 }
 

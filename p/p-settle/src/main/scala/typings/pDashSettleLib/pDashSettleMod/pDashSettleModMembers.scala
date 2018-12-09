@@ -17,6 +17,6 @@ object pDashSettleModMembers extends js.Object {
    * * `isRejected`
    * * `value` or `reason` (Depending on whether the promise fulfilled or rejected)
    */
-  def apply[T](input: stdLib.Iterable[stdLib.PromiseLike[T]]): stdLib.Promise[js.Array[pDashSettleLib.pDashSettleMod.pSettleNs.SettledResult[T]]] = js.native
+  def apply[T](input: stdLib.Iterable[js.Thenable[T]]): js.Promise[js.Array[pDashSettleLib.pDashSettleMod.pSettleNs.SettledResult[T]]] = js.native
 }
 

@@ -2469,7 +2469,7 @@ object S3Ns extends js.Object {
     /**
          * Returns a 'thenable' promise.
          */
-    def promise(): stdLib.Promise[awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.SendData] = js.native
+    def promise(): js.Promise[awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.SendData] = js.native
     /**
          * Initiates the managed upload for the payload.
          */
@@ -6674,7 +6674,7 @@ object S3Ns extends js.Object {
   type ObjectCannedACL = awsDashSdkLib.awsDashSdkLibStrings.`private` | awsDashSdkLib.awsDashSdkLibStrings.`public-read` | awsDashSdkLib.awsDashSdkLibStrings.`public-read-write` | awsDashSdkLib.awsDashSdkLibStrings.`authenticated-read` | awsDashSdkLib.awsDashSdkLibStrings.`aws-exec-read` | awsDashSdkLib.awsDashSdkLibStrings.`bucket-owner-read` | awsDashSdkLib.awsDashSdkLibStrings.`bucket-owner-full-control` | java.lang.String
   type ObjectIdentifierList = js.Array[ObjectIdentifier]
   type ObjectKey = java.lang.String
-  type ObjectList = js.Array[js.Object]
+  type ObjectList = js.Array[Object]
   type ObjectLockEnabled = awsDashSdkLib.awsDashSdkLibStrings.Enabled | java.lang.String
   type ObjectLockEnabledForBucket = scala.Boolean
   type ObjectLockLegalHoldStatus = awsDashSdkLib.awsDashSdkLibStrings.ON | awsDashSdkLib.awsDashSdkLibStrings.OFF | java.lang.String

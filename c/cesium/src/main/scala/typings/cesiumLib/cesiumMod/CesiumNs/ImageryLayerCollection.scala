@@ -23,7 +23,7 @@ trait ImageryLayerCollection extends js.Object {
   def isDestroyed(): scala.Boolean = js.native
   def lower(layer: ImageryLayer): scala.Unit = js.native
   def lowerToBottom(layer: ImageryLayer): scala.Unit = js.native
-  def pickImageryLayerFeatures(ray: Ray, scene: Scene): js.UndefOr[stdLib.Promise[js.Array[ImageryLayerFeatureInfo]]] = js.native
+  def pickImageryLayerFeatures(ray: Ray, scene: Scene): js.UndefOr[js.Promise[js.Array[ImageryLayerFeatureInfo]]] = js.native
   def raise(layer: ImageryLayer): scala.Unit = js.native
   def raiseToTop(layer: ImageryLayer): scala.Unit = js.native
   def remove(layer: ImageryLayer): scala.Boolean = js.native

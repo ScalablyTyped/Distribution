@@ -233,8 +233,7 @@ object defaultNs extends js.Object {
        * @param options Options.
        * @api
        */
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
+  @js.native
   class Interaction protected ()
     extends openlayersLib.openlayersMod.interactionNs.Interaction {
     /**

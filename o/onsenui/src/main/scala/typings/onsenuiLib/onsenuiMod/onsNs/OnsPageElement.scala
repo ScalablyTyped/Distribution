@@ -23,6 +23,6 @@ trait OnsPageElement
   /**
        * @description Function to be executed when scrolling to the bottom of the page. The function receives a done callback as an argument that must be called when it's finished.
        */
-  var onInfiniteScroll: js.Function = js.native
+  var onInfiniteScroll: coreDashJsLib.Function = js.native
 }
 

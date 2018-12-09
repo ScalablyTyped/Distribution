@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("unzipper", JSImport.Namespace)
 @js.native
 object unzipperModMembers extends js.Object {
-  def BufferStream(entry: Entry): stdLib.Promise[nodeLib.Buffer] = js.native
+  def BufferStream(entry: Entry): js.Promise[nodeLib.Buffer] = js.native
   def Extract(): ParseStream = js.native
   def Extract(opts: ParseOptions): ParseStream = js.native
   def Parse(): ParseStream = js.native

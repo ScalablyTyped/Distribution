@@ -20,7 +20,7 @@ class NtlmCredentialHandler protected ()
     httpClient: typedDashRestDashClientLib.interfacesMod.IHttpClient,
     requestInfo: typedDashRestDashClientLib.interfacesMod.IRequestInfo,
     objs: js.Any
-  ): stdLib.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native
+  ): js.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native
   /* private */ def handleAuthenticationPrivate(httpClient: js.Any, requestInfo: js.Any, objs: js.Any, finalCallback: js.Any): js.Any = js.native
   /* CompleteClass */
   override def prepareRequest(options: nodeLib.httpMod.RequestOptions): scala.Unit = js.native

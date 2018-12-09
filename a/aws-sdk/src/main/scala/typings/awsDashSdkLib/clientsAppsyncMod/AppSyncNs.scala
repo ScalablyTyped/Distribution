@@ -13,7 +13,7 @@ object AppSyncNs extends js.Object {
     /**
          * A description of the purpose of the API key.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The time after which the API key expires. The date is represented as seconds since the epoch, rounded down to the nearest hour.
          */
@@ -21,7 +21,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API key ID.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
   }
   
   
@@ -41,11 +41,11 @@ object AppSyncNs extends js.Object {
     /**
          * The signing region for AWS IAM authorization.
          */
-    var signingRegion: js.UndefOr[java.lang.String] = js.undefined
+    var signingRegion: js.UndefOr[String] = js.undefined
     /**
          * The signing service name for AWS IAM authorization.
          */
-    var signingServiceName: js.UndefOr[java.lang.String] = js.undefined
+    var signingServiceName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -61,11 +61,11 @@ object AppSyncNs extends js.Object {
     /**
          * The ID for your GraphQL API.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * A description of the purpose of the API key.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The time from creation time after which the API key expires. The date is represented as seconds since the epoch, rounded down to the nearest hour. The default value for this parameter is 7 days from creation time. For more information, see .
          */
@@ -85,11 +85,11 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID for the GraphQL API for the DataSource.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * A description of the DataSource.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * Amazon DynamoDB settings.
          */
@@ -117,7 +117,7 @@ object AppSyncNs extends js.Object {
     /**
          * The AWS IAM service role ARN for the data source. The system assumes this role when accessing the data source.
          */
-    var serviceRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var serviceRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The type of the DataSource.
          */
@@ -137,7 +137,7 @@ object AppSyncNs extends js.Object {
     /**
          * The GraphQL API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The Function DataSource name.
          */
@@ -145,11 +145,11 @@ object AppSyncNs extends js.Object {
     /**
          * The Function description.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The version of the request mapping template. Currently the supported value is 2018-05-29. 
          */
-    var functionVersion: java.lang.String
+    var functionVersion: String
     /**
          * The Function name. The function name does not have to be unique.
          */
@@ -185,7 +185,7 @@ object AppSyncNs extends js.Object {
     /**
          * A user-supplied name for the GraphqlApi.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * The OpenID Connect configuration.
          */
@@ -209,7 +209,7 @@ object AppSyncNs extends js.Object {
     /**
          * The ID for the GraphQL API for which the resolver is being created.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The name of the data source for which the resolver is being created.
          */
@@ -253,11 +253,11 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The type definition, in GraphQL Schema Definition Language (SDL) format. For more information, see the GraphQL SDL documentation.
          */
-    var definition: java.lang.String
+    var definition: String
     /**
          * The type format: SDL or JSON.
          */
@@ -277,11 +277,11 @@ object AppSyncNs extends js.Object {
     /**
          * The data source ARN.
          */
-    var dataSourceArn: js.UndefOr[java.lang.String] = js.undefined
+    var dataSourceArn: js.UndefOr[String] = js.undefined
     /**
          * The description of the data source.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * Amazon DynamoDB settings.
          */
@@ -309,7 +309,7 @@ object AppSyncNs extends js.Object {
     /**
          * The AWS IAM service role ARN for the data source. The system assumes this role when accessing the data source.
          */
-    var serviceRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var serviceRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The type of the data source.    AMAZON_DYNAMODB: The data source is an Amazon DynamoDB table.    AMAZON_ELASTICSEARCH: The data source is an Amazon Elasticsearch Service domain.    AWS_LAMBDA: The data source is an AWS Lambda function.    NONE: There is no data source. This type is used when you wish to invoke a GraphQL operation without connecting to a data source, such as performing data transformation with resolvers or triggering a subscription to be invoked from a mutation.    HTTP: The data source is an HTTP endpoint.    RELATIONAL_DATABASE: The data source is a relational database.  
          */
@@ -321,11 +321,11 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The ID for the API key.
          */
-    var id: java.lang.String
+    var id: String
   }
   
   
@@ -336,7 +336,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The name of the data source.
          */
@@ -351,7 +351,7 @@ object AppSyncNs extends js.Object {
     /**
          * The GraphQL API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The Function ID.
          */
@@ -366,7 +366,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
   }
   
   
@@ -377,7 +377,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The resolver field name.
          */
@@ -396,7 +396,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The type name.
          */
@@ -411,15 +411,15 @@ object AppSyncNs extends js.Object {
     /**
          * The AWS Region.
          */
-    var awsRegion: java.lang.String
+    var awsRegion: String
     /**
          * The table name.
          */
-    var tableName: java.lang.String
+    var tableName: String
     /**
          * Set to TRUE to use Amazon Cognito credentials with this data source.
          */
-    var useCallerCredentials: js.UndefOr[scala.Boolean] = js.undefined
+    var useCallerCredentials: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -427,11 +427,11 @@ object AppSyncNs extends js.Object {
     /**
          * The AWS Region.
          */
-    var awsRegion: java.lang.String
+    var awsRegion: String
     /**
          * The endpoint.
          */
-    var endpoint: java.lang.String
+    var endpoint: String
   }
   
   
@@ -443,19 +443,19 @@ object AppSyncNs extends js.Object {
     /**
          * The Function description.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the Function object.
          */
-    var functionArn: js.UndefOr[java.lang.String] = js.undefined
+    var functionArn: js.UndefOr[String] = js.undefined
     /**
          * A unique ID representing the Function object.
          */
-    var functionId: js.UndefOr[java.lang.String] = js.undefined
+    var functionId: js.UndefOr[String] = js.undefined
     /**
          * The version of the request mapping template. Currently only the 2018-05-29 version of the template is supported.
          */
-    var functionVersion: js.UndefOr[java.lang.String] = js.undefined
+    var functionVersion: js.UndefOr[String] = js.undefined
     /**
          * The name of the Function object.
          */
@@ -475,7 +475,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The name of the data source.
          */
@@ -495,7 +495,7 @@ object AppSyncNs extends js.Object {
     /**
          * The GraphQL API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The Function ID.
          */
@@ -515,7 +515,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID for the GraphQL API.
          */
-    var apiId: java.lang.String
+    var apiId: String
   }
   
   
@@ -531,7 +531,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The schema format: SDL or JSON.
          */
@@ -551,7 +551,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The resolver field name.
          */
@@ -575,7 +575,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
   }
   
   
@@ -583,7 +583,7 @@ object AppSyncNs extends js.Object {
     /**
          * Detailed information about the status of the schema creation operation.
          */
-    var details: js.UndefOr[java.lang.String] = js.undefined
+    var details: js.UndefOr[String] = js.undefined
     /**
          * The current state of the schema (PROCESSING, ACTIVE, or DELETING). Once the schema is in the ACTIVE state, you can add data.
          */
@@ -595,7 +595,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The type format: SDL or JSON.
          */
@@ -619,11 +619,11 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: js.UndefOr[java.lang.String] = js.undefined
+    var apiId: js.UndefOr[String] = js.undefined
     /**
          * The ARN.
          */
-    var arn: js.UndefOr[java.lang.String] = js.undefined
+    var arn: js.UndefOr[String] = js.undefined
     /**
          * The authentication type.
          */
@@ -659,7 +659,7 @@ object AppSyncNs extends js.Object {
     /**
          * The HTTP URL endpoint. You can either specify the domain name or IP, and port combination, and the URL scheme must be HTTP or HTTPS. If the port is not specified, AWS AppSync uses the default port 80 for the HTTP endpoint and port 443 for HTTPS endpoints.
          */
-    var endpoint: js.UndefOr[java.lang.String] = js.undefined
+    var endpoint: js.UndefOr[String] = js.undefined
   }
   
   
@@ -667,7 +667,7 @@ object AppSyncNs extends js.Object {
     /**
          * The ARN for the Lambda function.
          */
-    var lambdaFunctionArn: java.lang.String
+    var lambdaFunctionArn: String
   }
   
   
@@ -675,7 +675,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The maximum number of results you want the request to return.
          */
@@ -703,7 +703,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The maximum number of results you want the request to return.
          */
@@ -731,7 +731,7 @@ object AppSyncNs extends js.Object {
     /**
          * The GraphQL API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The maximum number of results you want the request to return.
          */
@@ -783,11 +783,11 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The Function ID.
          */
-    var functionId: java.lang.String
+    var functionId: String
     /**
          * The maximum number of results you want the request to return.
          */
@@ -815,7 +815,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The maximum number of results you want the request to return.
          */
@@ -827,7 +827,7 @@ object AppSyncNs extends js.Object {
     /**
          * The type name.
          */
-    var typeName: java.lang.String
+    var typeName: String
   }
   
   
@@ -847,7 +847,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The type format: SDL or JSON.
          */
@@ -879,7 +879,7 @@ object AppSyncNs extends js.Object {
     /**
          * The service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account. 
          */
-    var cloudWatchLogsRoleArn: java.lang.String
+    var cloudWatchLogsRoleArn: String
     /**
          * The field logging level. Values can be NONE, ERROR, or ALL.     NONE: No field-level logs are captured.    ERROR: Logs the following information only for the fields that are in error:   The error section in the server response.   Field-level errors.   The generated request/response functions that got resolved for error fields.      ALL: The following information is logged for all fields in the query:   Field-level tracing information.   The generated request/response functions that got resolved for each field.    
          */
@@ -888,7 +888,7 @@ object AppSyncNs extends js.Object {
   
   
   trait MapOfStringToString
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait OpenIDConnectConfig extends js.Object {
@@ -899,7 +899,7 @@ object AppSyncNs extends js.Object {
     /**
          * The client identifier of the Relying party at the OpenID identity provider. This identifier is typically obtained when the Relying party is registered with the OpenID identity provider. You can specify a regular expression so the AWS AppSync can validate against multiple client identifiers at a time.
          */
-    var clientId: js.UndefOr[java.lang.String] = js.undefined
+    var clientId: js.UndefOr[String] = js.undefined
     /**
          * The number of milliseconds a token is valid after being issued to a user.
          */
@@ -907,7 +907,7 @@ object AppSyncNs extends js.Object {
     /**
          * The issuer for the OpenID Connect configuration. The issuer returned by discovery must exactly match the value of iss in the ID token.
          */
-    var issuer: java.lang.String
+    var issuer: String
   }
   
   
@@ -923,23 +923,23 @@ object AppSyncNs extends js.Object {
     /**
          * AWS Region for RDS HTTP endpoint.
          */
-    var awsRegion: js.UndefOr[java.lang.String] = js.undefined
+    var awsRegion: js.UndefOr[String] = js.undefined
     /**
          * AWS secret store ARN for database credentials.
          */
-    var awsSecretStoreArn: js.UndefOr[java.lang.String] = js.undefined
+    var awsSecretStoreArn: js.UndefOr[String] = js.undefined
     /**
          * Logical database name.
          */
-    var databaseName: js.UndefOr[java.lang.String] = js.undefined
+    var databaseName: js.UndefOr[String] = js.undefined
     /**
          * Amazon RDS cluster identifier.
          */
-    var dbClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var dbClusterIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Logical schema name.
          */
-    var schema: js.UndefOr[java.lang.String] = js.undefined
+    var schema: js.UndefOr[String] = js.undefined
   }
   
   
@@ -979,7 +979,7 @@ object AppSyncNs extends js.Object {
     /**
          * The resolver ARN.
          */
-    var resolverArn: js.UndefOr[java.lang.String] = js.undefined
+    var resolverArn: js.UndefOr[String] = js.undefined
     /**
          * The response mapping template.
          */
@@ -995,7 +995,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The schema definition, in GraphQL schema language format.
          */
@@ -1015,15 +1015,15 @@ object AppSyncNs extends js.Object {
     /**
          * The type ARN.
          */
-    var arn: js.UndefOr[java.lang.String] = js.undefined
+    var arn: js.UndefOr[String] = js.undefined
     /**
          * The type definition.
          */
-    var definition: js.UndefOr[java.lang.String] = js.undefined
+    var definition: js.UndefOr[String] = js.undefined
     /**
          * The type description.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The type format: SDL or JSON.
          */
@@ -1995,11 +1995,11 @@ object AppSyncNs extends js.Object {
     /**
          * The ID for the GraphQL API.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * A description of the purpose of the API key.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The time from update time after which the API key expires. The date is represented as seconds since the epoch. For more information, see .
          */
@@ -2007,7 +2007,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API key ID.
          */
-    var id: java.lang.String
+    var id: String
   }
   
   
@@ -2023,11 +2023,11 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The new description for the data source.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The new Amazon DynamoDB configuration.
          */
@@ -2055,7 +2055,7 @@ object AppSyncNs extends js.Object {
     /**
          * The new service role ARN for the data source.
          */
-    var serviceRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var serviceRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The new data source type.
          */
@@ -2075,7 +2075,7 @@ object AppSyncNs extends js.Object {
     /**
          * The GraphQL API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The Function DataSource name.
          */
@@ -2083,7 +2083,7 @@ object AppSyncNs extends js.Object {
     /**
          * The Function description.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * The function ID.
          */
@@ -2091,7 +2091,7 @@ object AppSyncNs extends js.Object {
     /**
          * The version of the request mapping template. Currently the supported value is 2018-05-29. 
          */
-    var functionVersion: java.lang.String
+    var functionVersion: String
     /**
          * The Function name.
          */
@@ -2119,7 +2119,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The new authentication type for the GraphqlApi object.
          */
@@ -2131,7 +2131,7 @@ object AppSyncNs extends js.Object {
     /**
          * The new name for the GraphqlApi object.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * The OpenID Connect configuration for the GraphqlApi object.
          */
@@ -2155,7 +2155,7 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The new data source name.
          */
@@ -2199,11 +2199,11 @@ object AppSyncNs extends js.Object {
     /**
          * The API ID.
          */
-    var apiId: java.lang.String
+    var apiId: String
     /**
          * The new definition.
          */
-    var definition: js.UndefOr[java.lang.String] = js.undefined
+    var definition: js.UndefOr[String] = js.undefined
     /**
          * The new type format: SDL or JSON.
          */
@@ -2227,11 +2227,11 @@ object AppSyncNs extends js.Object {
     /**
          * A regular expression for validating the incoming Amazon Cognito user pool app client ID.
          */
-    var appIdClientRegex: js.UndefOr[java.lang.String] = js.undefined
+    var appIdClientRegex: js.UndefOr[String] = js.undefined
     /**
          * The AWS Region in which the user pool was created.
          */
-    var awsRegion: java.lang.String
+    var awsRegion: String
     /**
          * The action that you want your GraphQL API to take when a request that uses Amazon Cognito user pool authentication doesn't match the Amazon Cognito user pool configuration.
          */
@@ -2239,7 +2239,7 @@ object AppSyncNs extends js.Object {
     /**
          * The user pool ID.
          */
-    var userPoolId: java.lang.String
+    var userPoolId: String
   }
   
   val TypesNs: this.type = js.native
@@ -2253,7 +2253,7 @@ object AppSyncNs extends js.Object {
   type DefaultAction = awsDashSdkLib.awsDashSdkLibStrings.ALLOW | awsDashSdkLib.awsDashSdkLibStrings.DENY | java.lang.String
   type FieldLogLevel = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
   type Functions = js.Array[FunctionConfiguration]
-  type FunctionsIds = js.Array[java.lang.String]
+  type FunctionsIds = js.Array[String]
   type GraphqlApis = js.Array[GraphqlApi]
   type Long = scala.Double
   type MappingTemplate = java.lang.String

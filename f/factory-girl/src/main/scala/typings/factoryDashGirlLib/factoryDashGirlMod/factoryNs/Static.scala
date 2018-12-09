@@ -30,37 +30,37 @@ trait Static extends js.Object {
   /**
        * Generates and returns model attributes as an object hash instead of the model instance
        */
-  def attrs[T](name: java.lang.String): stdLib.Promise[T] = js.native
+  def attrs[T](name: java.lang.String): js.Promise[T] = js.native
   /**
        * Generates and returns model attributes as an object hash instead of the model instance
        */
-  def attrs[T](name: java.lang.String, attrs: stdLib.Partial[T]): stdLib.Promise[T] = js.native
+  def attrs[T](name: java.lang.String, attrs: stdLib.Partial[T]): js.Promise[T] = js.native
   /**
        * Generates and returns a collection of model attributes as an object hash instead of the model instance
        */
-  def attrsMany[T](name: java.lang.String, num: scala.Double): stdLib.Promise[js.Array[T]] = js.native
+  def attrsMany[T](name: java.lang.String, num: scala.Double): js.Promise[js.Array[T]] = js.native
   /**
        * Generates and returns a collection of model attributes as an object hash instead of the model instance
        */
-  def attrsMany[T](name: java.lang.String, num: scala.Double, attrs: js.Array[stdLib.Partial[T]]): stdLib.Promise[js.Array[T]] = js.native
+  def attrsMany[T](name: java.lang.String, num: scala.Double, attrs: js.Array[stdLib.Partial[T]]): js.Promise[js.Array[T]] = js.native
   /**
        * Builds a new model instance that is not persisted
        */
-  def build[T](name: java.lang.String): stdLib.Promise[T] = js.native
+  def build[T](name: java.lang.String): js.Promise[T] = js.native
   /**
        * Builds a new model instance that is not persisted
        */
-  def build[T](name: java.lang.String, attrs: stdLib.Partial[T]): stdLib.Promise[T] = js.native
-  def buildMany[T](name: java.lang.String): stdLib.Promise[js.Array[T]] = js.native
-  def buildMany[T](name: java.lang.String, attrs: js.Array[stdLib.Partial[T]]): stdLib.Promise[js.Array[T]] = js.native
+  def build[T](name: java.lang.String, attrs: stdLib.Partial[T]): js.Promise[T] = js.native
+  def buildMany[T](name: java.lang.String): js.Promise[js.Array[T]] = js.native
+  def buildMany[T](name: java.lang.String, attrs: js.Array[stdLib.Partial[T]]): js.Promise[js.Array[T]] = js.native
   /**
        * Builds an array of model instances that are persisted
        */
-  def buildMany[T](name: java.lang.String, num: scala.Double): stdLib.Promise[js.Array[T]] = js.native
+  def buildMany[T](name: java.lang.String, num: scala.Double): js.Promise[js.Array[T]] = js.native
   /**
        * Builds an array of model instances that are persisted
        */
-  def buildMany[T](name: java.lang.String, num: scala.Double, attrs: stdLib.Partial[T]): stdLib.Promise[js.Array[T]] = js.native
+  def buildMany[T](name: java.lang.String, num: scala.Double, attrs: stdLib.Partial[T]): js.Promise[js.Array[T]] = js.native
   /**
        * Destroys all of the created models
        */
@@ -68,26 +68,26 @@ trait Static extends js.Object {
   /**
        * Builds a new model instance that is persisted
        */
-  def create[T](name: java.lang.String): stdLib.Promise[T] = js.native
+  def create[T](name: java.lang.String): js.Promise[T] = js.native
   /**
        * Builds a new model instance that is persisted
        */
-  def create[T](name: java.lang.String, attrs: stdLib.Partial[T]): stdLib.Promise[T] = js.native
-  def createMany[T](name: java.lang.String): stdLib.Promise[js.Array[T]] = js.native
-  def createMany[T](name: java.lang.String, attrs: js.Array[stdLib.Partial[T]]): stdLib.Promise[js.Array[T]] = js.native
-  def createMany[T](name: java.lang.String, attrs: js.Array[stdLib.Partial[T]], buildOptions: Options[T]): stdLib.Promise[js.Array[T]] = js.native
+  def create[T](name: java.lang.String, attrs: stdLib.Partial[T]): js.Promise[T] = js.native
+  def createMany[T](name: java.lang.String): js.Promise[js.Array[T]] = js.native
+  def createMany[T](name: java.lang.String, attrs: js.Array[stdLib.Partial[T]]): js.Promise[js.Array[T]] = js.native
+  def createMany[T](name: java.lang.String, attrs: js.Array[stdLib.Partial[T]], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
   /**
        * Builds an array of model instances that are persisted
        */
-  def createMany[T](name: java.lang.String, num: scala.Double): stdLib.Promise[js.Array[T]] = js.native
+  def createMany[T](name: java.lang.String, num: scala.Double): js.Promise[js.Array[T]] = js.native
   /**
        * Builds an array of model instances that are persisted
        */
-  def createMany[T](name: java.lang.String, num: scala.Double, attrs: stdLib.Partial[T]): stdLib.Promise[js.Array[T]] = js.native
+  def createMany[T](name: java.lang.String, num: scala.Double, attrs: stdLib.Partial[T]): js.Promise[js.Array[T]] = js.native
   /**
        * Builds an array of model instances that are persisted
        */
-  def createMany[T](name: java.lang.String, num: scala.Double, attrs: stdLib.Partial[T], buildOptions: Options[T]): stdLib.Promise[js.Array[T]] = js.native
+  def createMany[T](name: java.lang.String, num: scala.Double, attrs: stdLib.Partial[T], buildOptions: Options[T]): js.Promise[js.Array[T]] = js.native
   /**
        * Define a new factory with a set of options
        */

@@ -13,9 +13,9 @@ class Copyrights protected () extends js.Object {
   def add(customCopyrights: js.Array[java.lang.String | stdLib.HTMLElement]): yandexDashMapsLib.ymapsNs.ICopyrightsAccessor = js.native
   def add(customCopyrights: stdLib.HTMLElement): yandexDashMapsLib.ymapsNs.ICopyrightsAccessor = js.native
   def addProvider(provider: yandexDashMapsLib.ymapsNs.ICopyrightsProvider): this.type = js.native
-  def get(): stdLib.Promise[js.Array[java.lang.String | stdLib.HTMLElement]] = js.native
-  def get(point: js.Array[scala.Double]): stdLib.Promise[js.Array[java.lang.String | stdLib.HTMLElement]] = js.native
-  def get(point: js.Array[scala.Double], zoom: scala.Double): stdLib.Promise[js.Array[java.lang.String | stdLib.HTMLElement]] = js.native
+  def get(): js.Promise[js.Array[java.lang.String | stdLib.HTMLElement]] = js.native
+  def get(point: js.Array[scala.Double]): js.Promise[js.Array[java.lang.String | stdLib.HTMLElement]] = js.native
+  def get(point: js.Array[scala.Double], zoom: scala.Double): js.Promise[js.Array[java.lang.String | stdLib.HTMLElement]] = js.native
   def getPromoLink(): java.lang.String = js.native
   def removeProvider(provider: yandexDashMapsLib.ymapsNs.ICopyrightsProvider): this.type = js.native
 }

@@ -14,7 +14,7 @@ class Ng1ViewConfig protected ()
   @JSName("$id")
   override var $id: scala.Double = js.native
   var component: java.lang.String = js.native
-  var controller: js.Function = js.native
+  var controller: angularLib.angularMod.Global.Function = js.native
   var factory: atUirouterAngularjsLib.libTemplateFactoryMod.TemplateFactory = js.native
   /* CompleteClass */
   override var loaded: scala.Boolean = js.native
@@ -35,10 +35,10 @@ class Ng1ViewConfig protected ()
        *
        * @returns {Function|Promise.<Function>} Returns a controller, or a promise that resolves to a controller.
        */
-  def getController(context: atUirouterCoreLib.coreMod.ResolveContext): atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String | (stdLib.Promise[atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String]) = js.native
+  def getController(context: atUirouterCoreLib.coreMod.ResolveContext): atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String | (js.Promise[atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String]) = js.native
   def getTemplate(uiView: js.Any, context: atUirouterCoreLib.coreMod.ResolveContext): java.lang.String = js.native
   /** Fetches templates, runs dynamic (controller|template)Provider code, lazy loads Components, etc */
   /* CompleteClass */
-  override def load(): stdLib.Promise[atUirouterCoreLib.libViewInterfaceMod.ViewConfig] = js.native
+  override def load(): js.Promise[atUirouterCoreLib.libViewInterfaceMod.ViewConfig] = js.native
 }
 

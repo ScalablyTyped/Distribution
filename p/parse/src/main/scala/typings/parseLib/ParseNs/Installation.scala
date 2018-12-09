@@ -9,10 +9,9 @@ import scala.scalajs.js.annotation._
      * Every Parse application installed on a device registered for
      * push notifications has an associated Installation object.
      */
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSGlobal("Parse.Installation")
+@JSGlobal("Parse.Installation")
 @js.native
-class Installation () extends js.Object {
+class Installation () extends Object {
   var appIdentifier: java.lang.String = js.native
   var appName: java.lang.String = js.native
   var appVersion: java.lang.String = js.native

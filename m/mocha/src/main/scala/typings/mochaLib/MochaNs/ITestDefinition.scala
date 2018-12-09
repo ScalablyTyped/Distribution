@@ -18,7 +18,7 @@ trait ITestDefinition extends js.Object {
     callback: js.ThisFunction1[
       /* this */ ITestCallbackContext, 
       /* done */ mochaLib.MochaDone, 
-      stdLib.PromiseLike[_] | scala.Unit
+      js.Thenable[_] | scala.Unit
     ]
   ): ITest = js.native
   /** @deprecated use `Mocha.TestFunction` instead. */
@@ -31,7 +31,7 @@ trait ITestDefinition extends js.Object {
     callback: js.ThisFunction1[
       /* this */ ITestCallbackContext, 
       /* done */ mochaLib.MochaDone, 
-      stdLib.PromiseLike[_] | scala.Unit
+      js.Thenable[_] | scala.Unit
     ]
   ): ITest = js.native
   /** @deprecated use `Mocha.TestFunction` instead. */
@@ -44,7 +44,7 @@ trait ITestDefinition extends js.Object {
     callback: js.ThisFunction1[
       /* this */ ITestCallbackContext, 
       /* done */ mochaLib.MochaDone, 
-      stdLib.PromiseLike[_] | scala.Unit
+      js.Thenable[_] | scala.Unit
     ]
   ): scala.Unit = js.native
 }

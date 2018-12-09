@@ -41,8 +41,8 @@ object dnsNs extends js.Object {
   val TIMEOUT: java.lang.String = js.native
   val V4MAPPED: scala.Double = js.native
   def getServers(): js.Array[java.lang.String] = js.native
-  def lookup(domain: java.lang.String): stdLib.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
-  def lookup(domain: java.lang.String, family: scala.Double): stdLib.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
+  def lookup(domain: java.lang.String): js.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
+  def lookup(domain: java.lang.String, family: scala.Double): js.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
   def lookup(
     hostname: java.lang.String,
     callback: js.Function3[
@@ -101,8 +101,8 @@ object dnsNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolve(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
-  def resolve(domain: java.lang.String, rrtype: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolve(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+  def resolve(domain: java.lang.String, rrtype: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolve(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -120,7 +120,7 @@ object dnsNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolve4(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolve4(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolve4(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -147,7 +147,7 @@ object dnsNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolve6(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolve6(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolve6(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -182,7 +182,7 @@ object dnsNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveCname(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolveCname(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolveCname(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -191,7 +191,7 @@ object dnsNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveMx(domain: java.lang.String): stdLib.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
+  def resolveMx(domain: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
   def resolveMx(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -208,7 +208,7 @@ object dnsNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveNs(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolveNs(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolveNs(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -233,7 +233,7 @@ object dnsNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveSrv(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolveSrv(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolveSrv(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -242,7 +242,7 @@ object dnsNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveTxt(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolveTxt(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolveTxt(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -361,7 +361,7 @@ object dnsNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def reverse(ip: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def reverse(ip: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def reverse(
     ip: java.lang.String,
     callback: js.Function2[
@@ -375,121 +375,121 @@ object dnsNs extends js.Object {
   @JSName("lookup")
   @js.native
   object lookupNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[nodeLib.Anon_AddressFamily] = js.native
-    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.LookupAllOptions): stdLib.Promise[nodeLib.Anon_Address] = js.native
-    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.LookupOneOptions): stdLib.Promise[nodeLib.Anon_AddressFamily] = js.native
-    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.LookupOptions): stdLib.Promise[nodeLib.Anon_AddressFamilyString] = js.native
-    def `__promisify__`(hostname: java.lang.String, options: scala.Double): stdLib.Promise[nodeLib.Anon_AddressFamily] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[nodeLib.Anon_AddressFamily] = js.native
+    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.LookupAllOptions): js.Promise[nodeLib.Anon_Address] = js.native
+    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.LookupOneOptions): js.Promise[nodeLib.Anon_AddressFamily] = js.native
+    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.LookupOptions): js.Promise[nodeLib.Anon_AddressFamilyString] = js.native
+    def `__promisify__`(hostname: java.lang.String, options: scala.Double): js.Promise[nodeLib.Anon_AddressFamily] = js.native
   }
   
   @JSName("lookupService")
   @js.native
   object lookupServiceNs extends js.Object {
-    def `__promisify__`(address: java.lang.String, port: scala.Double): stdLib.Promise[nodeLib.Anon_Hostname] = js.native
+    def `__promisify__`(address: java.lang.String, port: scala.Double): js.Promise[nodeLib.Anon_Hostname] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   @JSName("resolve4")
   @js.native
   object resolve4Ns extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
-    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.ResolveOptions): stdLib.Promise[js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl]] = js.native
-    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.ResolveWithTtlOptions): stdLib.Promise[js.Array[nodeLib.dnsMod.RecordWithTtl]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.ResolveOptions): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl]] = js.native
+    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.ResolveWithTtlOptions): js.Promise[js.Array[nodeLib.dnsMod.RecordWithTtl]] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   @JSName("resolve6")
   @js.native
   object resolve6Ns extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
-    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.ResolveOptions): stdLib.Promise[js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl]] = js.native
-    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.ResolveWithTtlOptions): stdLib.Promise[js.Array[nodeLib.dnsMod.RecordWithTtl]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.ResolveOptions): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl]] = js.native
+    def `__promisify__`(hostname: java.lang.String, options: nodeLib.dnsMod.ResolveWithTtlOptions): js.Promise[js.Array[nodeLib.dnsMod.RecordWithTtl]] = js.native
   }
   
   @JSName("resolveAny")
   @js.native
   object resolveAnyNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[nodeLib.dnsMod.AnyRecord]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.AnyRecord]] = js.native
   }
   
   @JSName("resolveCname")
   @js.native
   object resolveCnameNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   }
   
   @JSName("resolveMx")
   @js.native
   object resolveMxNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
   }
   
   @JSName("resolveNaptr")
   @js.native
   object resolveNaptrNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[nodeLib.dnsMod.NaptrRecord]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.NaptrRecord]] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   @JSName("resolve")
   @js.native
   object resolveNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
-    def `__promisify__`(hostname: java.lang.String, rrtype: java.lang.String): stdLib.Promise[
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+    def `__promisify__`(hostname: java.lang.String, rrtype: java.lang.String): js.Promise[
         js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.MxRecord] | js.Array[nodeLib.dnsMod.NaptrRecord] | nodeLib.dnsMod.SoaRecord | js.Array[nodeLib.dnsMod.SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[nodeLib.dnsMod.AnyRecord]
       ] = js.native
     @JSName("__promisify__")
-    def __promisify___A(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.A): stdLib.Promise[js.Array[java.lang.String]] = js.native
+    def __promisify___A(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.A): js.Promise[js.Array[java.lang.String]] = js.native
     @JSName("__promisify__")
-    def __promisify___AAAA(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.AAAA): stdLib.Promise[js.Array[java.lang.String]] = js.native
+    def __promisify___AAAA(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.AAAA): js.Promise[js.Array[java.lang.String]] = js.native
     @JSName("__promisify__")
-    def __promisify___ANY(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.ANY): stdLib.Promise[js.Array[nodeLib.dnsMod.AnyRecord]] = js.native
+    def __promisify___ANY(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.ANY): js.Promise[js.Array[nodeLib.dnsMod.AnyRecord]] = js.native
     @JSName("__promisify__")
-    def __promisify___CNAME(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.CNAME): stdLib.Promise[js.Array[java.lang.String]] = js.native
+    def __promisify___CNAME(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.CNAME): js.Promise[js.Array[java.lang.String]] = js.native
     @JSName("__promisify__")
-    def __promisify___MX(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.MX): stdLib.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
+    def __promisify___MX(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.MX): js.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
     @JSName("__promisify__")
-    def __promisify___NAPTR(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.NAPTR): stdLib.Promise[js.Array[nodeLib.dnsMod.NaptrRecord]] = js.native
+    def __promisify___NAPTR(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.NAPTR): js.Promise[js.Array[nodeLib.dnsMod.NaptrRecord]] = js.native
     @JSName("__promisify__")
-    def __promisify___NS(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.NS): stdLib.Promise[js.Array[java.lang.String]] = js.native
+    def __promisify___NS(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.NS): js.Promise[js.Array[java.lang.String]] = js.native
     @JSName("__promisify__")
-    def __promisify___PTR(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.PTR): stdLib.Promise[js.Array[java.lang.String]] = js.native
+    def __promisify___PTR(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.PTR): js.Promise[js.Array[java.lang.String]] = js.native
     @JSName("__promisify__")
-    def __promisify___SOA(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.SOA): stdLib.Promise[nodeLib.dnsMod.SoaRecord] = js.native
+    def __promisify___SOA(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.SOA): js.Promise[nodeLib.dnsMod.SoaRecord] = js.native
     @JSName("__promisify__")
-    def __promisify___SRV(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.SRV): stdLib.Promise[js.Array[nodeLib.dnsMod.SrvRecord]] = js.native
+    def __promisify___SRV(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.SRV): js.Promise[js.Array[nodeLib.dnsMod.SrvRecord]] = js.native
     @JSName("__promisify__")
-    def __promisify___TXT(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.TXT): stdLib.Promise[js.Array[js.Array[java.lang.String]]] = js.native
+    def __promisify___TXT(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.TXT): js.Promise[js.Array[js.Array[java.lang.String]]] = js.native
   }
   
   @JSName("resolveNs")
   @js.native
   object resolveNsNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   }
   
   @JSName("resolvePtr")
   @js.native
   object resolvePtrNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   }
   
   @JSName("resolveSoa")
   @js.native
   object resolveSoaNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[nodeLib.dnsMod.SoaRecord] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[nodeLib.dnsMod.SoaRecord] = js.native
   }
   
   @JSName("resolveSrv")
   @js.native
   object resolveSrvNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[nodeLib.dnsMod.SrvRecord]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.SrvRecord]] = js.native
   }
   
   @JSName("resolveTxt")
   @js.native
   object resolveTxtNs extends js.Object {
-    def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[js.Array[java.lang.String]]] = js.native
+    def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[js.Array[java.lang.String]]] = js.native
   }
   
 }

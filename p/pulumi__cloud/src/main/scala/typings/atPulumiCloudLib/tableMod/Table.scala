@@ -22,7 +22,7 @@ trait Table extends js.Object {
        * the value to lookup.
        * @returns A promise for the success or failure of the delete.
        */
-  def delete(query: js.Object): stdLib.Promise[scala.Unit] = js.native
+  def delete(query: js.Object): js.Promise[scala.Unit] = js.native
   /**
        * Get a document from the table.
        *
@@ -31,7 +31,7 @@ trait Table extends js.Object {
        * @returns A promise for the resulting document if found, or for undefined if not found,
        *   or a failed promise if the query could not be processed.
        */
-  def get(query: js.Object): stdLib.Promise[_] = js.native
+  def get(query: js.Object): js.Promise[_] = js.native
   /**
        * Insert a document into the table.
        *
@@ -39,7 +39,7 @@ trait Table extends js.Object {
        *   include a property for the primary key ("id" by default).
        * @returns A promise for the success or failure of the insert.
        */
-  def insert(item: js.Object): stdLib.Promise[scala.Unit] = js.native
+  def insert(item: js.Object): js.Promise[scala.Unit] = js.native
   /**
        * Gets all documents from the table.
        *
@@ -48,8 +48,8 @@ trait Table extends js.Object {
        * @returns A promise for the resulting documents, or a failed promise if
        * the lookup fails.
        */
-  def scan(): stdLib.Promise[js.Array[_]] = js.native
-  def scan(callback: js.Function1[/* items */ js.Array[_], stdLib.Promise[scala.Boolean]]): stdLib.Promise[scala.Unit] = js.native
+  def scan(): js.Promise[js.Array[_]] = js.native
+  def scan(callback: js.Function1[/* items */ js.Array[_], js.Promise[scala.Boolean]]): js.Promise[scala.Unit] = js.native
   /**
        * Updates a documents in the table.
        *
@@ -59,6 +59,6 @@ trait Table extends js.Object {
        * updated.
        * @returns A promise for the success or failure of the update.
        */
-  def update(query: js.Object, updates: js.Object): stdLib.Promise[scala.Unit] = js.native
+  def update(query: js.Object, updates: js.Object): js.Promise[scala.Unit] = js.native
 }
 

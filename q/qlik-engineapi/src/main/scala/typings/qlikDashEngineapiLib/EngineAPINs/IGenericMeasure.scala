@@ -19,28 +19,28 @@ trait IGenericMeasure
            * @param qPatches - Array of patches.
            * @returns -
            */
-  def applyPatches(qPatches: js.Array[INxPatch]): stdLib.Promise[scala.Unit]
+  def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[scala.Unit]
   /**
            * Returns the type and identifier of the object.
            * @returns - A Promise of NxInfo
            */
-  def getInfo(): stdLib.Promise[INxInfo]
+  def getInfo(): js.Promise[INxInfo]
   /**
            * Evaluates a measure and displays its properties, including the dynamic properties.
            * @returns - A Promise of GenericMeasureLayout
            */
-  def getLayout(): stdLib.Promise[IGenericMeasureLayout]
+  def getLayout(): js.Promise[IGenericMeasureLayout]
   /**
            * Lists the linked objects to a generic object, a dimension or a measure.
            * @returns - Array of NxLinkedObjectInfo
            */
-  def getLinkedObjects(): stdLib.Promise[INxLinkedObjectInfo]
+  def getLinkedObjects(): js.Promise[INxLinkedObjectInfo]
   /**
            * Returns the definition of a measure
            * @returns - Information about the measure.
            * >> This parameter is mandatory.
            */
-  def getMeasure(): stdLib.Promise[IGenericMeasureProperties]
+  def getMeasure(): js.Promise[IGenericMeasureProperties]
   /**
            * Shows the properties of an object.
            * Returns the identifier and the definition of the measure.
@@ -49,21 +49,21 @@ trait IGenericMeasure
            * @returns - A Promise GenericMeasureProperties
            * >> This parameter is mandatory.
            */
-  def getProperties(): stdLib.Promise[IGenericMeasureProperties]
+  def getProperties(): js.Promise[IGenericMeasureProperties]
   /**
            * Publishes a measure.
            */
-  def publish(): stdLib.Promise[scala.Unit]
+  def publish(): js.Promise[scala.Unit]
   /**
            * Sets some properties for a measure.
            * @param qProp - Information about the measure.
            * This parameter is mandatory.
            * @returns - A Promise of GenericMeasureProperties
            */
-  def setProperties(qProp: IGenericMeasureProperties): stdLib.Promise[scala.Unit]
+  def setProperties(qProp: IGenericMeasureProperties): js.Promise[scala.Unit]
   /**
            * Unpublishes a measure.
            */
-  def unPublish(): stdLib.Promise[scala.Unit]
+  def unPublish(): js.Promise[scala.Unit]
 }
 

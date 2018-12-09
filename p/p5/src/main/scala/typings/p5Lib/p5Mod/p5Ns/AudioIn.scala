@@ -101,7 +101,7 @@ trait AudioIn extends js.Object {
        *   place of the callbacks, similar to the
        *   enumerateDevices() method
        */
-  def getSources(): stdLib.Promise[_] = js.native
+  def getSources(): js.Promise[_] = js.native
   /**
        *   Returns a list of available input sources. This is
        *   a wrapper for <a
@@ -119,7 +119,7 @@ trait AudioIn extends js.Object {
        *   place of the callbacks, similar to the
        *   enumerateDevices() method
        */
-  def getSources(successCallback: js.Function1[/* repeated */js.Any, _]): stdLib.Promise[_] = js.native
+  def getSources(successCallback: js.Function1[/* repeated */js.Any, _]): js.Promise[_] = js.native
   /**
        *   Returns a list of available input sources. This is
        *   a wrapper for <a
@@ -140,7 +140,7 @@ trait AudioIn extends js.Object {
   def getSources(
     successCallback: js.Function1[/* repeated */js.Any, _],
     errorCallback: js.Function1[/* repeated */js.Any, _]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        *   Set the input source. Accepts a number
        *   representing a position in the array returned by

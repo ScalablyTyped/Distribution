@@ -75,8 +75,8 @@ trait Pipeline extends js.Object {
   ): Pipeline = js.native
   def eval(args: js.Any*): Pipeline = js.native
   def evalsha(args: js.Any*): Pipeline = js.native
-  def exec(): stdLib.Promise[_] = js.native
-  def exec(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.Any, scala.Unit]): stdLib.Promise[_] = js.native
+  def exec(): js.Promise[_] = js.native
+  def exec(callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.Any, scala.Unit]): js.Promise[_] = js.native
   def exists(keys: KeyType*): Pipeline = js.native
   def expire(key: KeyType, seconds: scala.Double): Pipeline = js.native
   def expire(

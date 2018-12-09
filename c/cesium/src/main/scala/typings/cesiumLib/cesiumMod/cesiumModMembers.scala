@@ -244,35 +244,35 @@ object cesiumModMembers extends js.Object {
   def getImagePixels(image: stdLib.HTMLImageElement): js.Array[scala.Double] = js.native
   def isArray(value: js.Any): scala.Boolean = js.native
   def isLeapYear(year: scala.Double): scala.Boolean = js.native
-  def jsonp(url: java.lang.String): stdLib.Promise[_] = js.native
-  def jsonp(url: java.lang.String, options: cesiumLib.Anon_Parameters): stdLib.Promise[_] = js.native
-  def loadArrayBuffer(url: java.lang.String): stdLib.Promise[stdLib.ArrayBuffer] = js.native
-  def loadArrayBuffer(url: java.lang.String, headers: js.Any): stdLib.Promise[stdLib.ArrayBuffer] = js.native
-  def loadArrayBuffer(url: stdLib.Promise[java.lang.String]): stdLib.Promise[stdLib.ArrayBuffer] = js.native
-  def loadArrayBuffer(url: stdLib.Promise[java.lang.String], headers: js.Any): stdLib.Promise[stdLib.ArrayBuffer] = js.native
-  def loadBlob(url: java.lang.String): stdLib.Promise[stdLib.Blob] = js.native
-  def loadBlob(url: java.lang.String, headers: js.Any): stdLib.Promise[stdLib.Blob] = js.native
-  def loadBlob(url: stdLib.Promise[java.lang.String]): stdLib.Promise[stdLib.Blob] = js.native
-  def loadBlob(url: stdLib.Promise[java.lang.String], headers: js.Any): stdLib.Promise[stdLib.Blob] = js.native
-  def loadImage(url: java.lang.String): stdLib.Promise[stdLib.HTMLImageElement] = js.native
-  def loadImage(url: java.lang.String, allowCrossOrigin: scala.Boolean): stdLib.Promise[stdLib.HTMLImageElement] = js.native
-  def loadImage(url: stdLib.Promise[java.lang.String]): stdLib.Promise[stdLib.HTMLImageElement] = js.native
-  def loadImage(url: stdLib.Promise[java.lang.String], allowCrossOrigin: scala.Boolean): stdLib.Promise[stdLib.HTMLImageElement] = js.native
-  def loadImageViaBlob(url: java.lang.String): stdLib.Promise[stdLib.HTMLImageElement] = js.native
-  def loadImageViaBlob(url: stdLib.Promise[java.lang.String]): stdLib.Promise[stdLib.HTMLImageElement] = js.native
-  def loadJson(url: java.lang.String): stdLib.Promise[_] = js.native
-  def loadJson(url: java.lang.String, headers: js.Any): stdLib.Promise[_] = js.native
-  def loadJson(url: stdLib.Promise[java.lang.String]): stdLib.Promise[_] = js.native
-  def loadJson(url: stdLib.Promise[java.lang.String], headers: js.Any): stdLib.Promise[_] = js.native
-  def loadText(url: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-  def loadText(url: java.lang.String, headers: js.Any): stdLib.Promise[java.lang.String] = js.native
-  def loadText(url: stdLib.Promise[java.lang.String]): stdLib.Promise[java.lang.String] = js.native
-  def loadText(url: stdLib.Promise[java.lang.String], headers: js.Any): stdLib.Promise[java.lang.String] = js.native
-  def loadWithXhr(options: cesiumLib.Anon_Method): stdLib.Promise[_] = js.native
-  def loadXML(url: java.lang.String): stdLib.Promise[stdLib.XMLDocument] = js.native
-  def loadXML(url: java.lang.String, headers: js.Any): stdLib.Promise[stdLib.XMLDocument] = js.native
-  def loadXML(url: stdLib.Promise[java.lang.String]): stdLib.Promise[stdLib.XMLDocument] = js.native
-  def loadXML(url: stdLib.Promise[java.lang.String], headers: js.Any): stdLib.Promise[stdLib.XMLDocument] = js.native
+  def jsonp(url: java.lang.String): js.Promise[_] = js.native
+  def jsonp(url: java.lang.String, options: cesiumLib.Anon_Parameters): js.Promise[_] = js.native
+  def loadArrayBuffer(url: java.lang.String): js.Promise[stdLib.ArrayBuffer] = js.native
+  def loadArrayBuffer(url: java.lang.String, headers: js.Any): js.Promise[stdLib.ArrayBuffer] = js.native
+  def loadArrayBuffer(url: js.Promise[java.lang.String]): js.Promise[stdLib.ArrayBuffer] = js.native
+  def loadArrayBuffer(url: js.Promise[java.lang.String], headers: js.Any): js.Promise[stdLib.ArrayBuffer] = js.native
+  def loadBlob(url: java.lang.String): js.Promise[stdLib.Blob] = js.native
+  def loadBlob(url: java.lang.String, headers: js.Any): js.Promise[stdLib.Blob] = js.native
+  def loadBlob(url: js.Promise[java.lang.String]): js.Promise[stdLib.Blob] = js.native
+  def loadBlob(url: js.Promise[java.lang.String], headers: js.Any): js.Promise[stdLib.Blob] = js.native
+  def loadImage(url: java.lang.String): js.Promise[stdLib.HTMLImageElement] = js.native
+  def loadImage(url: java.lang.String, allowCrossOrigin: scala.Boolean): js.Promise[stdLib.HTMLImageElement] = js.native
+  def loadImage(url: js.Promise[java.lang.String]): js.Promise[stdLib.HTMLImageElement] = js.native
+  def loadImage(url: js.Promise[java.lang.String], allowCrossOrigin: scala.Boolean): js.Promise[stdLib.HTMLImageElement] = js.native
+  def loadImageViaBlob(url: java.lang.String): js.Promise[stdLib.HTMLImageElement] = js.native
+  def loadImageViaBlob(url: js.Promise[java.lang.String]): js.Promise[stdLib.HTMLImageElement] = js.native
+  def loadJson(url: java.lang.String): js.Promise[_] = js.native
+  def loadJson(url: java.lang.String, headers: js.Any): js.Promise[_] = js.native
+  def loadJson(url: js.Promise[java.lang.String]): js.Promise[_] = js.native
+  def loadJson(url: js.Promise[java.lang.String], headers: js.Any): js.Promise[_] = js.native
+  def loadText(url: java.lang.String): js.Promise[java.lang.String] = js.native
+  def loadText(url: java.lang.String, headers: js.Any): js.Promise[java.lang.String] = js.native
+  def loadText(url: js.Promise[java.lang.String]): js.Promise[java.lang.String] = js.native
+  def loadText(url: js.Promise[java.lang.String], headers: js.Any): js.Promise[java.lang.String] = js.native
+  def loadWithXhr(options: cesiumLib.Anon_Method): js.Promise[_] = js.native
+  def loadXML(url: java.lang.String): js.Promise[stdLib.XMLDocument] = js.native
+  def loadXML(url: java.lang.String, headers: js.Any): js.Promise[stdLib.XMLDocument] = js.native
+  def loadXML(url: js.Promise[java.lang.String]): js.Promise[stdLib.XMLDocument] = js.native
+  def loadXML(url: js.Promise[java.lang.String], headers: js.Any): js.Promise[stdLib.XMLDocument] = js.native
   def mergeSort(array: js.Array[_], comparator: cesiumLib.cesiumMod.CesiumNs.mergeSortNs.Comparator): js.UndefOr[scala.Nothing] = js.native
   def mergeSort(
     array: js.Array[_],
@@ -382,12 +382,12 @@ object cesiumModMembers extends js.Object {
     terrainProvider: cesiumLib.cesiumMod.CesiumNs.TerrainProvider,
     level: scala.Double,
     positions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartographic]
-  ): stdLib.Promise[js.Array[cesiumLib.cesiumMod.CesiumNs.Cartographic]] = js.native
+  ): js.Promise[js.Array[cesiumLib.cesiumMod.CesiumNs.Cartographic]] = js.native
   def subdivideArray(array: js.Array[_], numberOfArrays: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def throttleRequestByServer(
     url: java.lang.String,
     requestFunction: cesiumLib.cesiumMod.CesiumNs.throttleRequestByServerNs.RequestFunction
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def viewerCesiumInspectorMixin(viewer: cesiumLib.cesiumMod.CesiumNs.Viewer): js.UndefOr[scala.Nothing] = js.native
   def viewerDragDropMixin(viewer: cesiumLib.cesiumMod.CesiumNs.Viewer): js.UndefOr[scala.Nothing] = js.native
   def viewerDragDropMixin(viewer: cesiumLib.cesiumMod.CesiumNs.Viewer, options: cesiumLib.Anon_ClearOnDrop): js.UndefOr[scala.Nothing] = js.native

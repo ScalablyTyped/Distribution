@@ -25,13 +25,13 @@ trait CertificateRevocationList extends js.Object {
            * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
            * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
            */
-  def sign(privateKey: stdLib.CryptoKey): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def sign(privateKey: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
            * Make a signature for existing CRL data
            * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
            * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
            */
-  def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): js.Thenable[stdLib.ArrayBuffer] = js.native
   def toJSON(): js.Any = js.native
   /**
            * Convert current object to asn1js object and set correct values
@@ -52,6 +52,6 @@ trait CertificateRevocationList extends js.Object {
            * @param {{[issuerCertificate]: Certificate, [publicKeyInfo]: PublicKeyInfo}} parameters
            * @returns {*}
            */
-  def verify(parameters: pkijsLib.Anon_IssuerCertificate): stdLib.PromiseLike[scala.Boolean] = js.native
+  def verify(parameters: pkijsLib.Anon_IssuerCertificate): js.Thenable[scala.Boolean] = js.native
 }
 

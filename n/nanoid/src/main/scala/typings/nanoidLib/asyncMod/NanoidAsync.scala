@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NanoidAsync extends js.Object {
-  def apply(): stdLib.Promise[java.lang.String] = js.native
-  def apply(size: scala.Double): stdLib.Promise[java.lang.String] = js.native
+  def apply(): js.Promise[java.lang.String] = js.native
+  def apply(size: scala.Double): js.Promise[java.lang.String] = js.native
   def apply(
     size: scala.Double,
     callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* id */ java.lang.String, _]

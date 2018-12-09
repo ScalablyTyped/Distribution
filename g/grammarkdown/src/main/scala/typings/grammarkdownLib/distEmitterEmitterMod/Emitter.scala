@@ -28,9 +28,9 @@ class Emitter protected () extends js.Object {
       /* file */ java.lang.String, 
       /* text */ java.lang.String, 
       /* cancellationToken */ js.UndefOr[prexLib.prexMod.CancellationToken], 
-      scala.Unit | stdLib.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ]
-  ): scala.Unit | stdLib.Promise[scala.Unit] = js.native
+  ): scala.Unit | js.Promise[scala.Unit] = js.native
   def emit(
     node: grammarkdownLib.distNodesMod.SourceFile,
     resolver: grammarkdownLib.distCheckerMod.Resolver,
@@ -39,10 +39,10 @@ class Emitter protected () extends js.Object {
       /* file */ java.lang.String, 
       /* text */ java.lang.String, 
       /* cancellationToken */ js.UndefOr[prexLib.prexMod.CancellationToken], 
-      scala.Unit | stdLib.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ],
     cancellationToken: prexLib.prexMod.CancellationToken
-  ): scala.Unit | stdLib.Promise[scala.Unit] = js.native
+  ): scala.Unit | js.Promise[scala.Unit] = js.native
   /* protected */ def emitArgument(node: grammarkdownLib.distNodesMod.Argument): scala.Unit = js.native
   /* protected */ def emitArgumentList(node: grammarkdownLib.distNodesMod.ArgumentList): scala.Unit = js.native
   /* protected */ def emitButNotSymbol(node: grammarkdownLib.distNodesMod.ButNotSymbol): scala.Unit = js.native

@@ -10,10 +10,10 @@ trait Framework extends js.Object {
   var afterPack: js.UndefOr[
     js.Function1[
       /* context */ appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, 
-      stdLib.Promise[_]
+      js.Promise[_]
     ]
   ] = js.undefined
-  var beforeCopyExtraFiles: js.UndefOr[js.Function1[/* options */ BeforeCopyExtraFilesOptions, stdLib.Promise[_]]] = js.undefined
+  var beforeCopyExtraFiles: js.UndefOr[js.Function1[/* options */ BeforeCopyExtraFilesOptions, js.Promise[_]]] = js.undefined
   var createTransformer: js.UndefOr[js.Function0[builderDashUtilLib.outFsMod.FileTransformer | scala.Null]] = js.undefined
   val defaultAppIdPrefix: java.lang.String
   val distMacOsAppName: java.lang.String
@@ -40,6 +40,6 @@ trait Framework extends js.Object {
   val macOsDefaultTargets: js.Array[java.lang.String]
   val name: java.lang.String
   val version: java.lang.String
-  def prepareApplicationStageDirectory(options: PrepareApplicationStageDirectoryOptions): stdLib.Promise[_]
+  def prepareApplicationStageDirectory(options: PrepareApplicationStageDirectoryOptions): js.Promise[_]
 }
 

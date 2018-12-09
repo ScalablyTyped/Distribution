@@ -25,7 +25,7 @@ trait AutocompleteProvider extends js.Object {
   var getSuggestionDetailsOnSelect: js.UndefOr[
     js.Function1[
       /* suggestion */ AnySuggestion, 
-      (stdLib.Promise[AnySuggestion | scala.Null]) | AnySuggestion | scala.Null
+      (js.Promise[AnySuggestion | scala.Null]) | AnySuggestion | scala.Null
     ]
   ] = js.undefined
   /**
@@ -55,6 +55,6 @@ trait AutocompleteProvider extends js.Object {
        *  like them displayed to the user. Returning a Promise of an array of suggestions
        *  is also supported.
        */
-  def getSuggestions(params: SuggestionsRequestedEvent): Suggestions | stdLib.Promise[Suggestions]
+  def getSuggestions(params: SuggestionsRequestedEvent): Suggestions | js.Promise[Suggestions]
 }
 

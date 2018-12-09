@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("ol/view", JSImport.Default)
+@JSImport("ol/view", JSImport.Default)
 @js.native
 class default ()
   extends openlayersLib.openlayersMod.View {

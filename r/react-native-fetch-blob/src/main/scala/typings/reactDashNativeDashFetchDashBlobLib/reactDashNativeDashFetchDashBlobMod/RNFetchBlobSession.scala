@@ -11,7 +11,7 @@ class RNFetchBlobSession protected () extends js.Object {
   def this(name: java.lang.String, list: js.Array[java.lang.String]) = this()
   var name: java.lang.String = js.native
   def add(path: java.lang.String): RNFetchBlobSession = js.native
-  def dispose(): stdLib.Promise[scala.Unit] = js.native
+  def dispose(): js.Promise[scala.Unit] = js.native
   def list(): js.Array[java.lang.String] = js.native
   def remove(path: java.lang.String): RNFetchBlobSession = js.native
 }

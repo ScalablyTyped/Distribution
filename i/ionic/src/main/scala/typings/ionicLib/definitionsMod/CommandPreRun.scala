@@ -11,6 +11,6 @@ trait CommandPreRun extends ICommand {
     inputs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineInputs,
     options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions,
     metadata: CommandInstanceInfo
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

@@ -13,7 +13,7 @@ object ChimeNs extends js.Object {
     /**
          * The Amazon Chime account ID.
          */
-    var AccountId: java.lang.String
+    var AccountId: String
     /**
          * The Amazon Chime account type. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide.
          */
@@ -21,7 +21,7 @@ object ChimeNs extends js.Object {
     /**
          * The AWS account ID.
          */
-    var AwsAccountId: java.lang.String
+    var AwsAccountId: String
     /**
          * The Amazon Chime account creation timestamp, in ISO 8601 format.
          */
@@ -33,7 +33,7 @@ object ChimeNs extends js.Object {
     /**
          * The Amazon Chime account name.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * Supported licenses for the Amazon Chime account.
          */
@@ -45,11 +45,11 @@ object ChimeNs extends js.Object {
     /**
          * Setting that stops or starts remote control of shared screens during meetings.
          */
-    var DisableRemoteControl: js.UndefOr[scala.Boolean] = js.undefined
+    var DisableRemoteControl: js.UndefOr[Boolean] = js.undefined
     /**
          * Setting that allows meeting participants to choose the Call me at a phone number option. For more information, see Join a Meeting without the Amazon Chime App.
          */
-    var EnableDialOut: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableDialOut: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -212,7 +212,7 @@ object ChimeNs extends js.Object {
     /**
          * The invite ID.
          */
-    var InviteId: js.UndefOr[java.lang.String] = js.undefined
+    var InviteId: js.UndefOr[String] = js.undefined
     /**
          * The status of the invite.
          */
@@ -252,7 +252,7 @@ object ChimeNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * User email address with which to filter results.
          */
@@ -268,7 +268,7 @@ object ChimeNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -284,7 +284,7 @@ object ChimeNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Optional. The user email address used to filter results. Maximum 1.
          */
@@ -296,7 +296,7 @@ object ChimeNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * List of users and user details.
          */
@@ -877,7 +877,7 @@ object ChimeNs extends js.Object {
     /**
          * The Amazon Chime account ID.
          */
-    var AccountId: js.UndefOr[java.lang.String] = js.undefined
+    var AccountId: js.UndefOr[String] = js.undefined
     /**
          * The display name of the user.
          */
@@ -893,7 +893,7 @@ object ChimeNs extends js.Object {
     /**
          * The user's personal meeting PIN.
          */
-    var PersonalPIN: js.UndefOr[java.lang.String] = js.undefined
+    var PersonalPIN: js.UndefOr[String] = js.undefined
     /**
          * The primary email address of the user.
          */
@@ -905,7 +905,7 @@ object ChimeNs extends js.Object {
     /**
          * The user ID.
          */
-    var UserId: java.lang.String
+    var UserId: String
     /**
          * The user invite status.
          */
@@ -925,7 +925,7 @@ object ChimeNs extends js.Object {
     /**
          * The error message.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The user ID for which the action failed.
          */

@@ -30,14 +30,14 @@ trait OnsDialogElement
        * @param {Function} [options.callback] This functions is called after the dialog has been hidden
        * @description Hide the dialog
        */
-  def hide(): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def hide(): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} [options] Parameter object
        * @param {String} [options.animation] Animation name. Available animations are "none", "fade" and "slide"
        * @param {Function} [options.callback] This functions is called after the dialog has been hidden
        * @description Hide the dialog
        */
-  def hide(options: onsenuiLib.onsenuiMod.DialogOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def hide(options: onsenuiLib.onsenuiMod.DialogOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @return {Object} Device back button handler
        * @description Retrieve the back button handler for overriding the default behavior
@@ -49,13 +49,13 @@ trait OnsDialogElement
        * @param {Function} [options.callback] This function is called after the dialog has been revealed
        * @description Show the dialog
        */
-  def show(): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def show(): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} [options] Parameter object
        * @param {String} [options.animation] Animation name. Available animations are "none", "fade" and "slide"
        * @param {Function} [options.callback] This function is called after the dialog has been revealed
        * @description Show the dialog
        */
-  def show(options: onsenuiLib.onsenuiMod.DialogOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def show(options: onsenuiLib.onsenuiMod.DialogOptions): js.Promise[stdLib.HTMLElement] = js.native
 }
 

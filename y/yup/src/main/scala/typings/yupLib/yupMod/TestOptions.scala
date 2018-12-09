@@ -26,6 +26,6 @@ trait TestOptions extends js.Object {
   /**
        * Test function, determines schema validity
        */
-  def test(`this`: TestContext, value: js.Any): scala.Boolean | ValidationError | (stdLib.Promise[scala.Boolean | ValidationError])
+  def test(`this`: TestContext, value: js.Any): scala.Boolean | ValidationError | (js.Promise[scala.Boolean | ValidationError])
 }
 

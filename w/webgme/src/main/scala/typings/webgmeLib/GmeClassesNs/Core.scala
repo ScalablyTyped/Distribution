@@ -190,7 +190,7 @@ trait Core extends js.Object {
     name: webgmeLib.GmeCommonNs.Name,
     libraryRootHash: java.lang.String,
     libraryInfo: LibraryInfo
-  ): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  ): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   /**
            * It adds a project as library to your project by copying it over. 
            * The library will be a node with the given name directly 
@@ -252,7 +252,7 @@ trait Core extends js.Object {
            * @param patch
            * @return only reports errors.
            */
-  def applyTreeDiff(root: webgmeLib.CoreNs.Node, patch: webgmeLib.CoreNs.DataObject): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def applyTreeDiff(root: webgmeLib.CoreNs.Node, patch: webgmeLib.CoreNs.DataObject): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   /**
            * Apply changes to the current project.
            * @param root
@@ -479,7 +479,7 @@ trait Core extends js.Object {
            * @param targetRoot the root node of the target state.
            * @return the result is in form of a json object.
            */
-  def generateTreeDiff(sourceRoot: webgmeLib.CoreNs.Node, targetRoot: webgmeLib.CoreNs.Node): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def generateTreeDiff(sourceRoot: webgmeLib.CoreNs.Node, targetRoot: webgmeLib.CoreNs.Node): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   /**
            * Generates a differential tree among the two states 
            * of the project that contains the necessary changes 
@@ -1427,7 +1427,7 @@ trait Core extends js.Object {
            * @param startNode the starting node of our search.
            * @param relativePath the relative path - built by relative ids - of the node in question.
            */
-  def loadByPath(startNode: webgmeLib.CoreNs.Node, relativePath: webgmeLib.GmeCommonNs.Path): stdLib.Promise[webgmeLib.GmeCommonNs.DataObject] = js.native
+  def loadByPath(startNode: webgmeLib.CoreNs.Node, relativePath: webgmeLib.GmeCommonNs.Path): js.Promise[webgmeLib.GmeCommonNs.DataObject] = js.native
   /**
            * From the given starting node, it loads the path 
            * given as a series of relative ids (separated by '/') and returns the node it finds at the ends of the path. 
@@ -1450,7 +1450,7 @@ trait Core extends js.Object {
            * @param parent the container node in question.
            * @param relativeId the relative id of the child in question.
            */
-  def loadChild(parent: webgmeLib.CoreNs.Node, relativeId: java.lang.String): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.DataObject]] = js.native
+  def loadChild(parent: webgmeLib.CoreNs.Node, relativeId: java.lang.String): js.Promise[js.Array[webgmeLib.GmeCommonNs.DataObject]] = js.native
   /**
            * Loads the child of the given parent pointed by the relative id. 
            * Behind the scenes, it means that it actually loads the 
@@ -1473,7 +1473,7 @@ trait Core extends js.Object {
            * @param parent the container node in question.
            * @see https://github.com/webgme/webgme/wiki/GME-Core-API#containment-methods
            */
-  def loadChildren(parent: webgmeLib.CoreNs.Node): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.DataObject]] = js.native
+  def loadChildren(parent: webgmeLib.CoreNs.Node): js.Promise[js.Array[webgmeLib.GmeCommonNs.DataObject]] = js.native
   /**
            * Loads all the children of the given parent. 
            * As it first checks the already reserved relative ids of the parent, 
@@ -1491,7 +1491,7 @@ trait Core extends js.Object {
            * @param pointerName 
            * @return the relative id of the child in question.
            */
-  def loadCollection(target: webgmeLib.CoreNs.Node, pointerName: webgmeLib.GmeCommonNs.Name): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.DataObject]] = js.native
+  def loadCollection(target: webgmeLib.CoreNs.Node, pointerName: webgmeLib.GmeCommonNs.Name): js.Promise[js.Array[webgmeLib.GmeCommonNs.DataObject]] = js.native
   /**
            * Loads all the source nodes that has such a pointer and its target is the given node.
            * @param target the container node in question.
@@ -1507,7 +1507,7 @@ trait Core extends js.Object {
            * Loads all the instances of the given node.
            * @param node the node in question.
            */
-  def loadInstances(node: webgmeLib.CoreNs.Node): stdLib.Promise[scala.Unit] = js.native
+  def loadInstances(node: webgmeLib.CoreNs.Node): js.Promise[scala.Unit] = js.native
   /**
            * Loads all the instances of the given node.
            * @param node the node in question.
@@ -1519,7 +1519,7 @@ trait Core extends js.Object {
            * it only loads the already existing children (so no on-demand empty node creation).
            * @param parent the container node in question.
            */
-  def loadOwnChildren(parent: webgmeLib.CoreNs.Node): stdLib.Promise[scala.Unit] = js.native
+  def loadOwnChildren(parent: webgmeLib.CoreNs.Node): js.Promise[scala.Unit] = js.native
   /**
            * Loads all the children of the given parent that has some data and not just inherited. 
            * As it first checks the already reserved relative ids of the parent, 
@@ -1532,7 +1532,7 @@ trait Core extends js.Object {
            * but load only those children that has some additional data and not purely inherited.
            * @param node the node in question.
            */
-  def loadOwnSubTree(node: webgmeLib.CoreNs.Node): stdLib.Promise[scala.Unit] = js.native
+  def loadOwnSubTree(node: webgmeLib.CoreNs.Node): js.Promise[scala.Unit] = js.native
   /**
            * Loads a complete sub-tree of the containment hierarchy starting from the given node, 
            * but load only those children that has some additional data and not purely inherited.
@@ -1548,7 +1548,7 @@ trait Core extends js.Object {
            * @param source the source node in question.
            * @param pointerName the relative id of the child in question.
            */
-  def loadPointer(source: webgmeLib.CoreNs.Node, pointerName: java.lang.String): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def loadPointer(source: webgmeLib.CoreNs.Node, pointerName: java.lang.String): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   /**
            * Loads the target of the given pointer of the given node. 
            * In the callback the node can have three values: 
@@ -1568,7 +1568,7 @@ trait Core extends js.Object {
            * @param node the node in question.
            * @return 
            */
-  def loadRoot(metadataHash: webgmeLib.GmeCommonNs.MetadataHash): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def loadRoot(metadataHash: webgmeLib.GmeCommonNs.MetadataHash): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   /**
            * Loads the data object with the given hash and makes it a root of a containment hierarchy.
            * @param node the node in question.
@@ -1583,7 +1583,7 @@ trait Core extends js.Object {
            * @param node the node in question.
            * @return 
            */
-  def loadSubTree(node: webgmeLib.CoreNs.Node): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def loadSubTree(node: webgmeLib.CoreNs.Node): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   /**
            * TODO
            * @param node the node in question.
@@ -1598,7 +1598,7 @@ trait Core extends js.Object {
            * @param node the node in question.
            * @return 
            */
-  def loadTree(rootHash: webgmeLib.GmeCommonNs.MetadataHash): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def loadTree(rootHash: webgmeLib.GmeCommonNs.MetadataHash): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   /**
            * TODO
            * @param node the node in question.
@@ -1809,7 +1809,7 @@ trait Core extends js.Object {
            * @param node the node in question.
            * @return 
            */
-  def setGuid(node: webgmeLib.CoreNs.Node, guid: webgmeLib.CoreNs.GUID): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def setGuid(node: webgmeLib.CoreNs.Node, guid: webgmeLib.CoreNs.GUID): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   /**
            * TODO
            * @param node the node in question.
@@ -1950,7 +1950,7 @@ trait Core extends js.Object {
       /* finished */ webgmeLib.GmeCommonNs.VoidFn, 
       scala.Unit
     ]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   // takes a callback & returning *no* promise
   /**
            * TODO
@@ -1987,7 +1987,7 @@ trait Core extends js.Object {
     name: webgmeLib.GmeCommonNs.Name,
     libraryRootHash: webgmeLib.GmeCommonNs.MetadataHash,
     libraryInfo: LibraryInfo
-  ): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  ): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   /**
            * TODO
            * @param node the node in question.

@@ -18,7 +18,7 @@ trait TabbarOptions extends js.Object {
   /**
      *
      */
-  var callback: js.UndefOr[js.Function] = js.undefined
+  var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * @description If true the page will not be changed.
      */

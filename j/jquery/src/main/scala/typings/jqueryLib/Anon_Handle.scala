@@ -15,7 +15,7 @@ trait Anon_Handle[TTarget, TData] extends js.Object {
            */
   def handle(
     `this`: TTarget,
-    event: (jqueryLib.JQueryNs.TriggeredEvent[_, TData, _, _]) with (Anon_HandleObj[TTarget, TData]),
+    event: (jqueryLib.JQueryNs.TriggeredEvent[TTarget, TData, _, _]) with (Anon_HandleObj[TTarget, TData]),
     data: TData*
   ): scala.Unit
 }

@@ -23,9 +23,9 @@ class API protected () extends js.Object {
       * @param     {[type]}    data        body parameters
       * @param     {(JSON}     callback    callback function with formatted JSON
       */
-  def getJSON(url: java.lang.String, method: java.lang.String, data: js.Any): stdLib.Promise[_] = js.native
-  def request(url: java.lang.String, method: java.lang.String, data: js.Any): stdLib.Promise[_] = js.native
-  def request(url: java.lang.String, method: java.lang.String, data: js.Any, prop: java.lang.String): stdLib.Promise[_] = js.native
+  def getJSON(url: java.lang.String, method: java.lang.String, data: js.Any): js.Promise[_] = js.native
+  def request(url: java.lang.String, method: java.lang.String, data: js.Any): js.Promise[_] = js.native
+  def request(url: java.lang.String, method: java.lang.String, data: js.Any, prop: java.lang.String): js.Promise[_] = js.native
   /**
        * set the API Keys
        * @param    {string[]}    ApiKeys    the API Keys

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait NextPageComponentMethods extends js.Object {
-  def getInitialProps(props: js.Any): stdLib.Promise[_]
+  def getInitialProps(props: js.Any): js.Promise[_]
 }
 

@@ -5,29 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Rect")
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IRectOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+@JSImport("fabric/fabric-impl", "Rect")
 @js.native
-class Rect () extends IRectOptions {
+class Rect () extends Object {
   /**
   	 * Constructor
   	 * @param [options] Options object
   	 */
   def this(options: IRectOptions) = this()
-  /**
-  	 * Returns complexity of an instance
-  	 * @return complexity
-  	 */
-  def complexity(): scala.Double = js.native
   def initialize(): Rect = js.native
   def initialize(points: js.Array[scala.Double]): Rect = js.native
   def initialize(points: js.Array[scala.Double], options: js.Any): Rect = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(propertiesToInclude: js.Array[_]): js.Any = js.native
   /**
   	 * Returns svg representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
@@ -42,8 +31,7 @@ class Rect () extends IRectOptions {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Rect")
+@JSImport("fabric/fabric-impl", "Rect")
 @js.native
 object Rect extends js.Object {
   /**

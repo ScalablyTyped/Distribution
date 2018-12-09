@@ -13,8 +13,8 @@ trait Graph extends js.Object {
   // see source of http://cpettitt.github.io/project/dagre-d3/latest/demo/interactive-demo.html
   var transition: js.UndefOr[
     js.Function1[
-      /* selection */ d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object], 
-      d3DashTransitionLib.d3DashTransitionMod.Transition[_, js.Object, js.Object, js.Object]
+      /* selection */ d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _], 
+      d3DashTransitionLib.d3DashTransitionMod.Transition[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
     ]
   ] = js.undefined
   var width: scala.Double

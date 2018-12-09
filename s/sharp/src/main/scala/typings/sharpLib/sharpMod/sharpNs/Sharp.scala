@@ -377,7 +377,7 @@ trait Sharp
            * Fast access to (uncached) image metadata without decoding any compressed image data.
            * @returns A promise that resolves with a metadata object
            */
-  def metadata(): stdLib.Promise[Metadata] = js.native
+  def metadata(): js.Promise[Metadata] = js.native
   /**
            * Fast access to (uncached) image metadata without decoding any compressed image data.
            * @returns A sharp instance that can be used to chain operations
@@ -924,7 +924,7 @@ trait Sharp
            * Access to pixel-derived image statistics for every channel in the image.
            * @returns A promise that resolves with a stats object
            */
-  def stats(): stdLib.Promise[Stats] = js.native
+  def stats(): js.Promise[Stats] = js.native
   /**
            * Access to pixel-derived image statistics for every channel in the image.
            * @returns A sharp instance that can be used to chain operations
@@ -1006,7 +1006,7 @@ trait Sharp
            * @param options.resolveWithObject Resolve the Promise with an Object containing data and info properties instead of resolving only with data.
            * @returns A promise that resolves with the Buffer data.
            */
-  def toBuffer(): stdLib.Promise[nodeLib.Buffer] = js.native
+  def toBuffer(): js.Promise[nodeLib.Buffer] = js.native
   /**
            * Write output to a Buffer. JPEG, PNG, WebP, TIFF and RAW output are supported.
            * By default, the format will match the input image, except GIF and SVG input which become PNG output.
@@ -1028,7 +1028,7 @@ trait Sharp
            * @param options.resolveWithObject Resolve the Promise with an Object containing data and info properties instead of resolving only with data.
            * @returns A promise that resolves with the Buffer data.
            */
-  def toBuffer(options: sharpLib.Anon_ResolveWithObject): stdLib.Promise[nodeLib.Buffer] = js.native
+  def toBuffer(options: sharpLib.Anon_ResolveWithObject): js.Promise[nodeLib.Buffer] = js.native
   /**
            * Write output to a Buffer. JPEG, PNG, WebP, TIFF and RAW output are supported.
            * By default, the format will match the input image, except GIF and SVG input which become PNG output.
@@ -1036,7 +1036,7 @@ trait Sharp
            * @param options.resolveWithObject Resolve the Promise with an Object containing data and info properties instead of resolving only with data.
            * @returns A promise that resolves with an object containing the Buffer data and an info object containing the output image format, size (bytes), width, height and channels
            */
-  def toBuffer(options: sharpLib.Anon_ResolveWithObjectTrue): stdLib.Promise[sharpLib.Anon_Data] = js.native
+  def toBuffer(options: sharpLib.Anon_ResolveWithObjectTrue): js.Promise[sharpLib.Anon_Data] = js.native
   /**
            * Alternative spelling of toColourspace().
            * @param colorspace output colorspace e.g. srgb, rgb, cmyk, lab, b-w ...
@@ -1066,7 +1066,7 @@ trait Sharp
            * @throws {Error} Invalid parameters
            * @returns A promise that fulfills with an object containing informations on the resulting file
            */
-  def toFile(fileOut: java.lang.String): stdLib.Promise[OutputInfo] = js.native
+  def toFile(fileOut: java.lang.String): js.Promise[OutputInfo] = js.native
   //#endregion
   //#region Output functions
   /**

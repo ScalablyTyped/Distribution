@@ -12,6 +12,6 @@ class DebugLogger () extends js.Object {
   val data: js.Any = js.native
   val isEnabled: scala.Boolean = js.native
   def add(key: java.lang.String, value: js.Any): scala.Unit = js.native
-  def save(file: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def save(file: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

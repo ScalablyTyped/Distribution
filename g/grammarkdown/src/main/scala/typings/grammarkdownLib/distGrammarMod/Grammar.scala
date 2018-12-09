@@ -54,16 +54,16 @@ class Grammar protected () extends js.Object {
   val sourceFiles: js.Array[grammarkdownLib.distNodesMod.SourceFile] = js.native
   var writeFileFallback: js.Any = js.native
   var writeFileSyncFallback: js.Any = js.native
-  def bind(): stdLib.Promise[scala.Unit] = js.native
-  def bind(cancellationToken: prexLib.prexMod.CancellationToken): stdLib.Promise[scala.Unit] = js.native
+  def bind(): js.Promise[scala.Unit] = js.native
+  def bind(cancellationToken: prexLib.prexMod.CancellationToken): js.Promise[scala.Unit] = js.native
   def bindSync(): scala.Unit = js.native
   def bindSync(cancellationToken: prexLib.prexMod.CancellationToken): scala.Unit = js.native
-  def check(): stdLib.Promise[scala.Unit] = js.native
-  def check(sourceFile: grammarkdownLib.distNodesMod.SourceFile): stdLib.Promise[scala.Unit] = js.native
+  def check(): js.Promise[scala.Unit] = js.native
+  def check(sourceFile: grammarkdownLib.distNodesMod.SourceFile): js.Promise[scala.Unit] = js.native
   def check(
     sourceFile: grammarkdownLib.distNodesMod.SourceFile,
     cancellationToken: prexLib.prexMod.CancellationToken
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def checkSync(): scala.Unit = js.native
   def checkSync(sourceFile: grammarkdownLib.distNodesMod.SourceFile): scala.Unit = js.native
   def checkSync(
@@ -74,30 +74,30 @@ class Grammar protected () extends js.Object {
   /* protected */ def createChecker(options: grammarkdownLib.distOptionsMod.CompilerOptions): grammarkdownLib.distCheckerMod.Checker = js.native
   /* protected */ def createEmitter(options: grammarkdownLib.distOptionsMod.CompilerOptions): grammarkdownLib.distEmitterMod.Emitter = js.native
   /* protected */ def createResolver(bindings: grammarkdownLib.distBinderMod.BindingTable): grammarkdownLib.distCheckerMod.Resolver = js.native
-  def emit(): stdLib.Promise[scala.Unit] = js.native
-  def emit(sourceFile: grammarkdownLib.distNodesMod.SourceFile): stdLib.Promise[scala.Unit] = js.native
+  def emit(): js.Promise[scala.Unit] = js.native
+  def emit(sourceFile: grammarkdownLib.distNodesMod.SourceFile): js.Promise[scala.Unit] = js.native
   def emit(
     sourceFile: grammarkdownLib.distNodesMod.SourceFile,
     writeFile: js.Function2[
       /* file */ java.lang.String, 
       /* output */ java.lang.String, 
-      scala.Unit | stdLib.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def emit(
     sourceFile: grammarkdownLib.distNodesMod.SourceFile,
     writeFile: js.Function2[
       /* file */ java.lang.String, 
       /* output */ java.lang.String, 
-      scala.Unit | stdLib.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ],
     cancellationToken: prexLib.prexMod.CancellationToken
-  ): stdLib.Promise[scala.Unit] = js.native
-  def emitString(sourceFile: grammarkdownLib.distNodesMod.SourceFile): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[scala.Unit] = js.native
+  def emitString(sourceFile: grammarkdownLib.distNodesMod.SourceFile): js.Promise[java.lang.String] = js.native
   def emitString(
     sourceFile: grammarkdownLib.distNodesMod.SourceFile,
     cancellationToken: prexLib.prexMod.CancellationToken
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   def emitStringSync(sourceFile: grammarkdownLib.distNodesMod.SourceFile): java.lang.String = js.native
   def emitStringSync(
     sourceFile: grammarkdownLib.distNodesMod.SourceFile,
@@ -115,19 +115,19 @@ class Grammar protected () extends js.Object {
     cancellationToken: prexLib.prexMod.CancellationToken
   ): scala.Unit = js.native
   def getSourceFile(file: java.lang.String): js.UndefOr[grammarkdownLib.distNodesMod.SourceFile] = js.native
-  def parse(): stdLib.Promise[scala.Unit] = js.native
-  def parse(cancellationToken: prexLib.prexMod.CancellationToken): stdLib.Promise[scala.Unit] = js.native
+  def parse(): js.Promise[scala.Unit] = js.native
+  def parse(cancellationToken: prexLib.prexMod.CancellationToken): js.Promise[scala.Unit] = js.native
   def parseSync(): scala.Unit = js.native
   def parseSync(cancellationToken: prexLib.prexMod.CancellationToken): scala.Unit = js.native
-  /* protected */ def readFile(file: java.lang.String): js.UndefOr[stdLib.Promise[js.UndefOr[java.lang.String]] | java.lang.String] = js.native
-  /* protected */ def readFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): js.UndefOr[stdLib.Promise[js.UndefOr[java.lang.String]] | java.lang.String] = js.native
-  /* protected */ def readFileSync(file: java.lang.String): js.UndefOr[stdLib.Promise[js.UndefOr[java.lang.String]] | java.lang.String] = js.native
-  /* protected */ def writeFile(file: java.lang.String, content: java.lang.String): scala.Unit | stdLib.Promise[scala.Unit] = js.native
+  /* protected */ def readFile(file: java.lang.String): js.UndefOr[js.Promise[js.UndefOr[java.lang.String]] | java.lang.String] = js.native
+  /* protected */ def readFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): js.UndefOr[js.Promise[js.UndefOr[java.lang.String]] | java.lang.String] = js.native
+  /* protected */ def readFileSync(file: java.lang.String): js.UndefOr[js.Promise[js.UndefOr[java.lang.String]] | java.lang.String] = js.native
+  /* protected */ def writeFile(file: java.lang.String, content: java.lang.String): scala.Unit | js.Promise[scala.Unit] = js.native
   /* protected */ def writeFile(
     file: java.lang.String,
     content: java.lang.String,
     cancellationToken: prexLib.prexMod.CancellationToken
-  ): scala.Unit | stdLib.Promise[scala.Unit] = js.native
+  ): scala.Unit | js.Promise[scala.Unit] = js.native
   /* protected */ def writeFileSync(file: java.lang.String, content: java.lang.String): scala.Unit = js.native
 }
 

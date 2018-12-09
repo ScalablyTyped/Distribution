@@ -22,7 +22,7 @@ trait ImageryProvider extends js.Object {
   val minimumLevel: scala.Double
   val proxy: Proxy
   val ready: scala.Boolean
-  val readyPromise: stdLib.Promise[scala.Boolean]
+  val readyPromise: js.Promise[scala.Boolean]
   val rectangle: Rectangle
   val tileDiscardPolicy: TileDiscardPolicy
   val tileHeight: scala.Double
@@ -35,7 +35,7 @@ trait ImageryProvider extends js.Object {
     level: scala.Double,
     longitude: scala.Double,
     latitude: scala.Double
-  ): stdLib.Promise[js.Array[ImageryLayerFeatureInfo]]
-  def requestImage(x: scala.Double, y: scala.Double, level: scala.Double): stdLib.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement]
+  ): js.Promise[js.Array[ImageryLayerFeatureInfo]]
+  def requestImage(x: scala.Double, y: scala.Double, level: scala.Double): js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement]
 }
 

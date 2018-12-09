@@ -14,34 +14,34 @@ trait Csv extends js.Object {
   /**
   	 * read from a stream
   	 */
-  def read(stream: nodeLib.streamMod.Stream): stdLib.Promise[Worksheet] = js.native
+  def read(stream: nodeLib.streamMod.Stream): js.Promise[Worksheet] = js.native
   /**
   	 * read from a stream
   	 */
-  def read(stream: nodeLib.streamMod.Stream, options: CsvReadOptions): stdLib.Promise[Worksheet] = js.native
+  def read(stream: nodeLib.streamMod.Stream, options: CsvReadOptions): js.Promise[Worksheet] = js.native
   /**
   	 * read from a file
   	 */
-  def readFile(path: java.lang.String): stdLib.Promise[Worksheet] = js.native
+  def readFile(path: java.lang.String): js.Promise[Worksheet] = js.native
   /**
   	 * read from a file
   	 */
-  def readFile(path: java.lang.String, options: CsvReadOptions): stdLib.Promise[Worksheet] = js.native
+  def readFile(path: java.lang.String, options: CsvReadOptions): js.Promise[Worksheet] = js.native
   /**
   	 * write to a stream
   	 */
-  def write(stream: nodeLib.streamMod.Stream): stdLib.Promise[scala.Unit] = js.native
+  def write(stream: nodeLib.streamMod.Stream): js.Promise[scala.Unit] = js.native
   /**
   	 * write to a stream
   	 */
-  def write(stream: nodeLib.streamMod.Stream, options: CsvWriteOptions): stdLib.Promise[scala.Unit] = js.native
+  def write(stream: nodeLib.streamMod.Stream, options: CsvWriteOptions): js.Promise[scala.Unit] = js.native
   /**
   	 * write to a file
   	 */
-  def writeFile(path: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def writeFile(path: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
   	 * write to a file
   	 */
-  def writeFile(path: java.lang.String, options: CsvWriteOptions): stdLib.Promise[scala.Unit] = js.native
+  def writeFile(path: java.lang.String, options: CsvWriteOptions): js.Promise[scala.Unit] = js.native
 }
 

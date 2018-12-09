@@ -11,7 +11,7 @@ package object reduxDashStorageMod {
        */
   type Loader[TState] = js.Function1[
     /* store */ reduxLib.reduxMod.Store[TState, reduxLib.reduxMod.AnyAction], 
-    stdLib.PromiseLike[js.Any]
+    js.Thenable[js.Any]
   ]
   type StateMerger = js.Function2[/* oldState */ js.Any, /* newState */ js.Any, js.Any]
 }

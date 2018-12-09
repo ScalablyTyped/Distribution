@@ -25,7 +25,7 @@ class Requester protected () extends Component {
        *
        * @param event Request.
        */
-  def send[T /* <: Event */](event: T): stdLib.Promise[_] = js.native
+  def send[T /* <: Event */](event: T): js.Promise[_] = js.native
   /**
        * Queues a request until a Responder is available, and once so, delivers
        * the request. Requests are dispatched to Responders in a round-robin way.

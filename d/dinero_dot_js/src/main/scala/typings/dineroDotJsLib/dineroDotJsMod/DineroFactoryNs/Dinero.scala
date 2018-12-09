@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait Dinero extends js.Object {
   def add(addend: Dinero): Dinero = js.native
   def allocate(ratios: js.Array[scala.Double]): js.Array[Dinero] = js.native
-  def convert(currency: java.lang.String): stdLib.Promise[Dinero] = js.native
-  def convert(currency: java.lang.String, options: ExchangeRatesApiOptions): stdLib.Promise[Dinero] = js.native
+  def convert(currency: java.lang.String): js.Promise[Dinero] = js.native
+  def convert(currency: java.lang.String, options: ExchangeRatesApiOptions): js.Promise[Dinero] = js.native
   def convertPrecision(newPrecision: scala.Double): Dinero = js.native
   def divide(divisor: scala.Double): Dinero = js.native
   def divide(divisor: scala.Double, roundingMode: RoundingMode): Dinero = js.native

@@ -83,7 +83,7 @@ trait HTMLImageElement extends HTMLElement {
   var width: scala.Double = js.native
   val x: scala.Double = js.native
   val y: scala.Double = js.native
-  def decode(): Promise[scala.Unit] = js.native
+  def decode(): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("HTMLImageElement")

@@ -24,7 +24,7 @@ trait WorkboxPlugin extends js.Object {
   val cacheWillUpdate: js.UndefOr[
     js.Function1[
       /* context */ CacheWillUpdatePluginContext, 
-      stdLib.Promise[stdLib.Response] | stdLib.Response | scala.Null
+      js.Promise[stdLib.Response] | stdLib.Response | scala.Null
     ]
   ] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait WorkboxPlugin extends js.Object {
   val cachedResponseWillBeUsed: js.UndefOr[
     js.Function1[
       /* context */ CacheResponseWillBeUsedPluginContext, 
-      stdLib.Promise[stdLib.Response] | stdLib.Response | scala.Null
+      js.Promise[stdLib.Response] | stdLib.Response | scala.Null
     ]
   ] = js.undefined
   /**

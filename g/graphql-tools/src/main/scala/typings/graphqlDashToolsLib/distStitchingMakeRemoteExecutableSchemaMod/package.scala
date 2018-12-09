@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object distStitchingMakeRemoteExecutableSchemaMod {
   type Fetcher = js.Function1[
     /* operation */ FetcherOperation, 
-    stdLib.Promise[
+    js.Promise[
       graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
     ]
   ]

@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("backbone.marionette", "Region")
+@JSImport("backbone.marionette", "Region")
 @js.native
-class Region () extends DomMixin {
+class Region ()
+  extends Object
+     with DomMixin {
   /**
        * You can specify an el for the region to manage at the time the region
        * is instantiated.

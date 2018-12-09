@@ -22,7 +22,7 @@ trait OnsSplitterSideElement
        * @param {Object} animationOptions Object containing duration and timing.
        * @description Hook called whenever the user slides the splitter.
        **/
-  var onSwipe: js.UndefOr[js.Function] = js.native
+  var onSwipe: js.UndefOr[coreDashJsLib.Function] = js.native
   /**
        * @description Page element loaded in the splitter side.
        */
@@ -33,48 +33,48 @@ trait OnsSplitterSideElement
        * @param {Object} [option]
        * @return Resolves to the splitter side element or false if not in collapse mode
        */
-  def close(): stdLib.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
+  def close(): js.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
   /**
        * @description Close menu in collapse mode.
        * @param {Object} [option]
        * @return Resolves to the splitter side element or false if not in collapse mode
        */
-  def close(options: onsenuiLib.onsenuiMod.SplitterSideOptions): stdLib.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
+  def close(options: onsenuiLib.onsenuiMod.SplitterSideOptions): js.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
   /**
        * @description Show the page specified in pageUrl in the right section
        * @param {*} page Page URL. Can be either an HTML document or an <ons-template>.
        * @param {Object} [option]
        * @return Resolves to the new page element
        */
-  def load(page: js.Any): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def load(page: js.Any): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @description Show the page specified in pageUrl in the right section
        * @param {*} page Page URL. Can be either an HTML document or an <ons-template>.
        * @param {Object} [option]
        * @return Resolves to the new page element
        */
-  def load(page: js.Any, options: onsenuiLib.onsenuiMod.SplitterSideOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def load(page: js.Any, options: onsenuiLib.onsenuiMod.SplitterSideOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @description Open menu in collapse mode.
        * @return Resolves to the splitter side element or false if not in collapse mode
        */
-  def open(): stdLib.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
+  def open(): js.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
   /**
        * @description Open menu in collapse mode.
        * @return Resolves to the splitter side element or false if not in collapse mode
        */
-  def open(options: onsenuiLib.onsenuiMod.SplitterSideOptions): stdLib.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
+  def open(options: onsenuiLib.onsenuiMod.SplitterSideOptions): js.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
   /**
        * @description Opens if it's closed. Closes if it's open.
        * @param {Object} [options]
        * @return Resolves to the splitter side element or false if not in collapse mode
        */
-  def toggle(): stdLib.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
+  def toggle(): js.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
   /**
        * @description Opens if it's closed. Closes if it's open.
        * @param {Object} [options]
        * @return Resolves to the splitter side element or false if not in collapse mode
        */
-  def toggle(options: onsenuiLib.onsenuiMod.SplitterSideOptions): stdLib.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
+  def toggle(options: onsenuiLib.onsenuiMod.SplitterSideOptions): js.Promise[stdLib.HTMLElement | scala.Boolean] = js.native
 }
 

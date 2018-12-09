@@ -13,7 +13,7 @@ trait RouteResolver[Attrs, State] extends js.Object {
       /* this */ this.type, 
       /* args */ Attrs, 
       /* requestedPath */ java.lang.String, 
-      (ComponentTypes[_, _]) | stdLib.Promise[_] | scala.Unit
+      (ComponentTypes[_, _]) | js.Promise[_] | scala.Unit
     ]
   ] = js.undefined
   /** The render method is called on every redraw for a matching route. */

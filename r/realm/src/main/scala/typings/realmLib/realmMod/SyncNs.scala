@@ -78,17 +78,17 @@ object SyncNs extends js.Object {
     name: java.lang.String,
     changeCallback: js.Function1[
       /* changeEvent */ realmLib.RealmNs.SyncNs.ChangeEvent, 
-      scala.Unit | stdLib.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ]
   ): scala.Unit = js.native
   def initiateClientReset(path: java.lang.String): scala.Unit = js.native
   def reconnect(): scala.Unit = js.native
-  def removeAllListeners(): stdLib.Promise[scala.Unit] = js.native
+  def removeAllListeners(): js.Promise[scala.Unit] = js.native
   def removeListener(
     regex: java.lang.String,
     name: java.lang.String,
     changeCallback: js.Function1[/* changeEvent */ realmLib.RealmNs.SyncNs.ChangeEvent, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
        * @deprecated, to be removed in future versions
        */
@@ -168,21 +168,21 @@ object SyncNs extends js.Object {
     /** @deprecated, to be removed in future versions */
     def adminUser(adminToken: java.lang.String, server: java.lang.String): realmLib.RealmNs.SyncNs.User = js.native
     /** @deprecated, to be removed in future versions */
-    def authenticate(server: java.lang.String, provider: java.lang.String, options: js.Any): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native
-    def completePasswordReset(server: java.lang.String, resetToken: java.lang.String, newPassword: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-    def confirmEmail(server: java.lang.String, confirmationToken: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+    def authenticate(server: java.lang.String, provider: java.lang.String, options: js.Any): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native
+    def completePasswordReset(server: java.lang.String, resetToken: java.lang.String, newPassword: java.lang.String): js.Promise[scala.Unit] = js.native
+    def confirmEmail(server: java.lang.String, confirmationToken: java.lang.String): js.Promise[scala.Unit] = js.native
     def deserialize(serialized: realmLib.RealmNs.SyncNs.SerializedTokenUser): realmLib.RealmNs.SyncNs.User = js.native
     def deserialize(serialized: realmLib.RealmNs.SyncNs.SerializedUser): realmLib.RealmNs.SyncNs.User = js.native
     def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.AdminCredentials): realmLib.RealmNs.SyncNs.User = js.native
-    def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.Credentials): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native
+    def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.Credentials): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native
     /** @deprecated, to be removed in future versions */
-    def login(server: java.lang.String, username: java.lang.String, password: java.lang.String): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native
+    def login(server: java.lang.String, username: java.lang.String, password: java.lang.String): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native
     /** @deprecated, to be removed in future versions */
-    def register(server: java.lang.String, username: java.lang.String, password: java.lang.String): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native
+    def register(server: java.lang.String, username: java.lang.String, password: java.lang.String): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native
     /** @deprecated, to be removed in future versions */
-    def registerWithProvider(server: java.lang.String, options: realmLib.Anon_ProviderToken): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native
-    def requestEmailConfirmation(server: java.lang.String, email: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-    def requestPasswordReset(server: java.lang.String, email: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+    def registerWithProvider(server: java.lang.String, options: realmLib.Anon_ProviderToken): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native
+    def requestEmailConfirmation(server: java.lang.String, email: java.lang.String): js.Promise[scala.Unit] = js.native
+    def requestPasswordReset(server: java.lang.String, email: java.lang.String): js.Promise[scala.Unit] = js.native
   }
   
   type ConnectionState = realmLib.RealmNs.SyncNs.ConnectionState

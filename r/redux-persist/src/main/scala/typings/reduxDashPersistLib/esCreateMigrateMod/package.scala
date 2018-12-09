@@ -9,6 +9,6 @@ package object esCreateMigrateMod {
   type MigrationDispatch = js.Function2[
     /* state */ reduxDashPersistLib.esTypesMod.PersistedState, 
     /* currentVersion */ scala.Double, 
-    stdLib.Promise[reduxDashPersistLib.esTypesMod.PersistedState]
+    js.Promise[reduxDashPersistLib.esTypesMod.PersistedState]
   ]
 }

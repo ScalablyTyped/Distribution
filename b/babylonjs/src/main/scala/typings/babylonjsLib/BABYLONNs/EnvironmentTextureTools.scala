@@ -37,7 +37,7 @@ object EnvironmentTextureTools extends js.Object {
            * @param texture defines the cube texture to convert in env file
            * @return a promise containing the environment data if succesfull.
            */
-  def CreateEnvTextureAsync(texture: babylonjsLib.BABYLONNs.CubeTexture): stdLib.Promise[stdLib.ArrayBuffer] = js.native
+  def CreateEnvTextureAsync(texture: babylonjsLib.BABYLONNs.CubeTexture): js.Promise[stdLib.ArrayBuffer] = js.native
   /**
            * Gets the environment info from an env file.
            * @param data The array buffer containing the .env bytes.
@@ -55,7 +55,7 @@ object EnvironmentTextureTools extends js.Object {
     texture: babylonjsLib.BABYLONNs.InternalTexture,
     arrayBuffer: js.Any,
     info: babylonjsLib.BABYLONNs.EnvironmentTextureInfo
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
            * Uploads spherical polynomials information to the texture.
            * @param texture defines the texture we are trying to upload the information to
@@ -74,6 +74,6 @@ object EnvironmentTextureTools extends js.Object {
   def UploadLevelsAsync(
     texture: babylonjsLib.BABYLONNs.InternalTexture,
     imageData: js.Array[js.Array[stdLib.ArrayBufferView]]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

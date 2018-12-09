@@ -18,12 +18,12 @@ trait CertificateChainValidationEngine extends js.Object {
            * @param {{initialPolicySet, initialExplicitPolicy, initialPolicyMappingInhibit, initialInhibitPolicy, initialPermittedSubtreesSet, initialExcludedSubtreesSet, initialRequiredNameForms}} [parameters]
            * @returns {PromiseLike<any>}
            */
-  def verify(): stdLib.PromiseLike[_] = js.native
+  def verify(): js.Thenable[_] = js.native
   /**
            * Major verification function for certificate chain.
            * @param {{initialPolicySet, initialExplicitPolicy, initialPolicyMappingInhibit, initialInhibitPolicy, initialPermittedSubtreesSet, initialExcludedSubtreesSet, initialRequiredNameForms}} [parameters]
            * @returns {PromiseLike<any>}
            */
-  def verify(parameters: js.Any): stdLib.PromiseLike[_] = js.native
+  def verify(parameters: js.Any): js.Thenable[_] = js.native
 }
 

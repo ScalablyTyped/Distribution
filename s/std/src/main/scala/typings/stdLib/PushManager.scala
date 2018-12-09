@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PushManager extends js.Object {
-  def getSubscription(): Promise[PushSubscription | scala.Null] = js.native
-  def permissionState(): Promise[PushPermissionState] = js.native
-  def permissionState(options: PushSubscriptionOptionsInit): Promise[PushPermissionState] = js.native
-  def subscribe(): Promise[PushSubscription] = js.native
-  def subscribe(options: PushSubscriptionOptionsInit): Promise[PushSubscription] = js.native
+  def getSubscription(): js.Promise[PushSubscription | scala.Null] = js.native
+  def permissionState(): js.Promise[PushPermissionState] = js.native
+  def permissionState(options: PushSubscriptionOptionsInit): js.Promise[PushPermissionState] = js.native
+  def subscribe(): js.Promise[PushSubscription] = js.native
+  def subscribe(options: PushSubscriptionOptionsInit): js.Promise[PushSubscription] = js.native
 }
 
 @JSGlobal("PushManager")

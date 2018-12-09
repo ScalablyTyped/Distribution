@@ -11,7 +11,7 @@ package object reactDashReduxMod {
     reactLib.reactMod.ReactNs.ComponentClass[TOwnProps, reactLib.reactMod.ReactNs.ComponentState]
   ]
   type ConnectedComponentClass[C, P] = (reactLib.reactMod.ReactNs.ComponentClass[
-    reactLib.reactMod.Global.JSXNs.LibraryManagedAttributes[C, reactLib.reactMod.Global.JSXNs.LibraryManagedAttributes[C, P]], 
+    reactLib.reactMod.Global.JSXNs.LibraryManagedAttributes[C, P], 
     reactLib.reactMod.ReactNs.ComponentState
   ]) with reactDashReduxLib.Anon_WrappedComponent[C]
   type GetProps[C] = js.Any

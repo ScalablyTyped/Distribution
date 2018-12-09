@@ -28,27 +28,27 @@ trait OnsAlertDialogElement
        * @param {Function} [options.callback] Function to execute after the dialog has been hidden
        * @description Hide the alert dialog
        */
-  def hide(): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def hide(): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} [options] Parameter object
        * @param {String} [options.animation] Animation name. Available animations are "fade", "slide" and "none"
        * @param {Function} [options.callback] Function to execute after the dialog has been hidden
        * @description Hide the alert dialog
        */
-  def hide(options: onsenuiLib.onsenuiMod.DialogOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def hide(options: onsenuiLib.onsenuiMod.DialogOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} [options] Parameter object
        * @param {String} [options.animation] Animation name. Available animations are "fade", "slide" and "none"
        * @param {Function} [options.callback] Function to execute after the dialog has been revealed
        * @description Show the alert dialog
        */
-  def show(): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def show(): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} [options] Parameter object
        * @param {String} [options.animation] Animation name. Available animations are "fade", "slide" and "none"
        * @param {Function} [options.callback] Function to execute after the dialog has been revealed
        * @description Show the alert dialog
        */
-  def show(options: onsenuiLib.onsenuiMod.DialogOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def show(options: onsenuiLib.onsenuiMod.DialogOptions): js.Promise[stdLib.HTMLElement] = js.native
 }
 

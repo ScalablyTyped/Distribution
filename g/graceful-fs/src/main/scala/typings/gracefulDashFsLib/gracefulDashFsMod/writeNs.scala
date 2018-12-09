@@ -16,7 +16,7 @@ object writeNs extends js.Object {
            * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
            * @param encoding The expected string encoding.
            */
-  def `__promisify__`(fd: scala.Double, string: js.Any): stdLib.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+  def `__promisify__`(fd: scala.Double, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
   /**
            * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
            * @param fd A file descriptor.
@@ -24,7 +24,7 @@ object writeNs extends js.Object {
            * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
            * @param encoding The expected string encoding.
            */
-  def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double): stdLib.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+  def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
   /**
            * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
            * @param fd A file descriptor.
@@ -32,7 +32,7 @@ object writeNs extends js.Object {
            * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
            * @param encoding The expected string encoding.
            */
-  def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): stdLib.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+  def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
   /**
            * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
            * @param fd A file descriptor.
@@ -40,7 +40,7 @@ object writeNs extends js.Object {
            * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
            * @param encoding The expected string encoding.
            */
-  def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): stdLib.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+  def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
   /**
            * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
            * @param fd A file descriptor.
@@ -48,7 +48,7 @@ object writeNs extends js.Object {
            * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
            * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
            */
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double): stdLib.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
+  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
   /**
            * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
            * @param fd A file descriptor.
@@ -56,7 +56,7 @@ object writeNs extends js.Object {
            * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
            * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
            */
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer): stdLib.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
+  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
   /**
            * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
            * @param fd A file descriptor.
@@ -64,7 +64,7 @@ object writeNs extends js.Object {
            * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
            * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
            */
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): stdLib.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
+  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
   /**
            * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
            * @param fd A file descriptor.
@@ -72,7 +72,7 @@ object writeNs extends js.Object {
            * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
            * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
            */
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): stdLib.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
+  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
   /**
            * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
            * @param fd A file descriptor.
@@ -86,6 +86,6 @@ object writeNs extends js.Object {
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): stdLib.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenTBuffer[TBuffer]] = js.native
 }
 

@@ -18,18 +18,18 @@ class CompositionEngine protected () extends js.Object {
       * @param context The CompositionContext providing information on how the composition should occur.
       * @return A Promise for the View or the Controller that results from the dynamic composition.
       */
-  def compose(context: CompositionContext): stdLib.Promise[View | Controller] = js.native
+  def compose(context: CompositionContext): js.Promise[View | Controller] = js.native
   /**
       * Creates a controller instance for the component described in the context.
       * @param context The CompositionContext that describes the component.
       * @return A Promise for the Controller.
       */
-  def createController(context: CompositionContext): stdLib.Promise[Controller] = js.native
+  def createController(context: CompositionContext): js.Promise[Controller] = js.native
   /**
       * Ensures that the view model and its resource are loaded for this context.
       * @param context The CompositionContext to load the view model and its resource for.
       * @return A Promise for the context.
       */
-  def ensureViewModel(context: CompositionContext): stdLib.Promise[CompositionContext] = js.native
+  def ensureViewModel(context: CompositionContext): js.Promise[CompositionContext] = js.native
 }
 

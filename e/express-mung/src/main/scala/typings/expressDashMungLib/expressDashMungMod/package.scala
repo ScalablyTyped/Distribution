@@ -16,7 +16,7 @@ package object expressDashMungMod {
     /* body */ js.Object, 
     /* request */ expressLib.expressMod.eNs.Request, 
     /* response */ expressLib.expressMod.eNs.Response, 
-    stdLib.PromiseLike[js.Any]
+    js.Thenable[js.Any]
   ]
   type TransformChunk = js.Function4[
     /* chunk */ java.lang.String | nodeLib.Buffer, 
@@ -33,6 +33,6 @@ package object expressDashMungMod {
   type TransformHeaderAsync = js.Function2[
     /* request */ expressLib.expressMod.eNs.Request, 
     /* response */ expressLib.expressMod.eNs.Response, 
-    stdLib.PromiseLike[js.Any]
+    js.Thenable[js.Any]
   ]
 }

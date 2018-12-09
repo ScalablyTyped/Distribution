@@ -17,6 +17,6 @@ object OfficeRuntimeNsMembers extends js.Object {
        * @param url
        * @param options
        */
-  def displayWebDialog(url: java.lang.String, options: DisplayWebDialogOptions): stdLib.Promise[Dialog] = js.native
+  def displayWebDialog(url: java.lang.String, options: DisplayWebDialogOptions): js.Promise[Dialog] = js.native
 }
 

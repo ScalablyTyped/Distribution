@@ -15,7 +15,7 @@ trait CommonShareButtonProps extends js.Object {
        *  Takes a function that returns a Promise to be fulfilled before calling
        * `onClick`. If you do not return promise, `onClick` is called immediately.
        */
-  var beforeOnClick: js.UndefOr[js.Function0[stdLib.Promise[scala.Unit]]] = js.undefined
+  var beforeOnClick: js.UndefOr[js.Function0[js.Promise[scala.Unit]]] = js.undefined
   /** Disables click action and adds `disabled` class */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**

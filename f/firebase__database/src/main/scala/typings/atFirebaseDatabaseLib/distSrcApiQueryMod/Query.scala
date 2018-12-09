@@ -318,7 +318,7 @@ class Query protected () extends js.Object {
        * @param context
        * @return {!firebase.Promise}
        */
-  def once(eventType: java.lang.String): stdLib.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
+  def once(eventType: java.lang.String): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
   /**
        * Attaches a listener, waits for the first event, and then removes the listener
        * @param {!string} eventType
@@ -327,7 +327,7 @@ class Query protected () extends js.Object {
        * @param context
        * @return {!firebase.Promise}
        */
-  def once(eventType: java.lang.String, userCallback: SnapshotCallback): stdLib.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
+  def once(eventType: java.lang.String, userCallback: SnapshotCallback): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
   /**
        * Attaches a listener, waits for the first event, and then removes the listener
        * @param {!string} eventType
@@ -340,7 +340,7 @@ class Query protected () extends js.Object {
     eventType: java.lang.String,
     userCallback: SnapshotCallback,
     cancelOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit]
-  ): stdLib.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
+  ): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
   /**
        * Attaches a listener, waits for the first event, and then removes the listener
        * @param {!string} eventType
@@ -354,7 +354,7 @@ class Query protected () extends js.Object {
     userCallback: SnapshotCallback,
     cancelOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit],
     context: js.Object
-  ): stdLib.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
+  ): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
   /**
        * Attaches a listener, waits for the first event, and then removes the listener
        * @param {!string} eventType
@@ -363,7 +363,7 @@ class Query protected () extends js.Object {
        * @param context
        * @return {!firebase.Promise}
        */
-  def once(eventType: java.lang.String, userCallback: SnapshotCallback, cancelOrContext: js.Object): stdLib.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
+  def once(eventType: java.lang.String, userCallback: SnapshotCallback, cancelOrContext: js.Object): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
   /**
        * Attaches a listener, waits for the first event, and then removes the listener
        * @param {!string} eventType
@@ -377,7 +377,7 @@ class Query protected () extends js.Object {
     userCallback: SnapshotCallback,
     cancelOrContext: js.Object,
     context: js.Object
-  ): stdLib.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
+  ): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
   /**
        * Given a child path, return a new query ordered by the specified grandchild path.
        * @param {!string} path

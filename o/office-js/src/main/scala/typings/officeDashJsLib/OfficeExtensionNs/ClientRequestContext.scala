@@ -85,13 +85,13 @@ class ClientRequestContext () extends js.Object {
            * and retrieving properties of loaded Office objects for use in your code. 
            * This method returns a promise, which is resolved when the synchronization is complete.
            */
-  def sync[T](): stdLib.Promise[T] = js.native
+  def sync[T](): js.Promise[T] = js.native
   /**
            * Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context 
            * and retrieving properties of loaded Office objects for use in your code. 
            * This method returns a promise, which is resolved when the synchronization is complete.
            */
-  def sync[T](passThroughValue: T): stdLib.Promise[T] = js.native
+  def sync[T](passThroughValue: T): js.Promise[T] = js.native
   /**
            * Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this adds a ".traceMessages" 
            * array to the OfficeExtension.Error object, containing all trace messages that were executed. 

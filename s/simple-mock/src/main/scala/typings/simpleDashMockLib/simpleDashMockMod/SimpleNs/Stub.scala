@@ -59,12 +59,12 @@ trait Stub[T] extends Spy[T] {
        * Configures the stub to return a Promise (where available) rejecting with this error. Same as stub.returnWith(Promise.reject(val)).
        * You can use a custom Promise-conforming library, i.e. simple.Promise = require('bluebird') or simple.Promise = $q.
        */
-  def rejectWith[V](`val`: V): Stub[stdLib.PromiseLike[V]] = js.native
+  def rejectWith[V](`val`: V): Stub[js.Thenable[V]] = js.native
   /**
        * Configures the stub to return a Promise (where available] resolving to this value. Same as stub.returnWith(Promise.resolve(val)).
        * You can use a custom Promise-conforming library, i.e. simple.Promise = require('bluebird') or simple.Promise = $q.
        */
-  def resolveWith[V](`val`: V): Stub[stdLib.PromiseLike[V]] = js.native
+  def resolveWith[V](`val`: V): Stub[js.Thenable[V]] = js.native
   /**
        * Configures this stub to return with this value.
        * Subsequent calls of this on the same stub (chainable) will queue up different behaviours for each subsequent call of the stub.

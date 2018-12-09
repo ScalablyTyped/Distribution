@@ -14,8 +14,8 @@ object AdMobInterstitialNs extends js.Object {
     event: expoLib.expoLibStrings.interstitialDidFailToLoad,
     handler: js.Function1[/* error */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  def dismissAdAsync(): stdLib.Promise[scala.Unit] = js.native
-  def getIsReadyAsync(): stdLib.Promise[scala.Boolean] = js.native
+  def dismissAdAsync(): js.Promise[scala.Unit] = js.native
+  def getIsReadyAsync(): js.Promise[scala.Boolean] = js.native
   def removeAllListeners(): scala.Unit = js.native
   def removeEventListener(event: expoLib.expoMod.AdMobInterstitialEmptyEvent, handler: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -23,9 +23,9 @@ object AdMobInterstitialNs extends js.Object {
     event: expoLib.expoLibStrings.interstitialDidFailToLoad,
     handler: js.Function1[/* error */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  def requestAdAsync(): stdLib.Promise[scala.Unit] = js.native
+  def requestAdAsync(): js.Promise[scala.Unit] = js.native
   def setAdUnitID(id: java.lang.String): scala.Unit = js.native
   def setTestDeviceID(id: java.lang.String): scala.Unit = js.native
-  def showAdAsync(): stdLib.Promise[scala.Unit] = js.native
+  def showAdAsync(): js.Promise[scala.Unit] = js.native
 }
 

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Boolean */ 
-trait CssColumnsBoolean extends js.Object {
+
+trait CssColumnsBoolean
+  extends stdLib.Boolean {
   var breakafter: scala.Boolean
   var breakbefore: scala.Boolean
   var breakinside: scala.Boolean

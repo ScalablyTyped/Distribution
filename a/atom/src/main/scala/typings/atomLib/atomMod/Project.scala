@@ -30,7 +30,7 @@ trait Project extends js.Object {
        *  Access a promise that resolves when the filesystem watcher associated with a
        *  project root directory is ready to begin receiving events.
        */
-  def getWatcherPromise(projectPath: java.lang.String): stdLib.Promise[PathWatcher]
+  def getWatcherPromise(projectPath: java.lang.String): js.Promise[PathWatcher]
   /**
        *  Invoke the given callback with all current and future text buffers in
        *  the project.
@@ -61,7 +61,7 @@ trait Project extends js.Object {
   /** Remove a path from the project's list of root paths. */
   def removePath(projectPath: java.lang.String): scala.Unit
   /** Get the repository for a given directory asynchronously. */
-  def repositoryForDirectory(directory: Directory): stdLib.Promise[GitRepository | scala.Null]
+  def repositoryForDirectory(directory: Directory): js.Promise[GitRepository | scala.Null]
   /** Set the paths of the project's directories. */
   def setPaths(projectPaths: js.Array[java.lang.String]): scala.Unit
 }

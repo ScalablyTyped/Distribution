@@ -35,11 +35,11 @@ object SubscriptionNs extends js.Object {
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
     uuid: java.lang.String,
     data: chartmogulDashNodeLib.commonMod.CursorParams
-  ): stdLib.Promise[Subscriptions] = js.native
+  ): js.Promise[Subscriptions] = js.native
   def cancel(
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
     uuid: java.lang.String,
     data: CancelSubscriptionParams
-  ): stdLib.Promise[Subscription] = js.native
+  ): js.Promise[Subscription] = js.native
 }
 

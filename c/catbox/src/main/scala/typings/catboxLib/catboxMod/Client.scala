@@ -14,13 +14,13 @@ class Client[T] protected () extends ClientApi[T] {
        *  * key - a cache key object (see [ICacheKey]).
        */
   /* CompleteClass */
-  override def drop(key: CacheKey): stdLib.Promise[scala.Unit] = js.native
+  override def drop(key: CacheKey): js.Promise[scala.Unit] = js.native
   /**
        * get(key, callback) - retrieve an item from the cache engine if found where:
        *  * key - a cache key object (see [ICacheKey]).
        */
   /* CompleteClass */
-  override def get(key: CacheKey): stdLib.Promise[scala.Null | CachedObject[T]] = js.native
+  override def get(key: CacheKey): js.Promise[scala.Null | CachedObject[T]] = js.native
   /** isReady() - returns true if cache engine determines itself as ready, false if it is not ready. */
   /* CompleteClass */
   override def isReady(): scala.Boolean = js.native
@@ -31,10 +31,10 @@ class Client[T] protected () extends ClientApi[T] {
        *  * ttl - a time-to-live value in milliseconds after which the item is automatically removed from the cache (or is marked invalid).
        */
   /* CompleteClass */
-  override def set(key: CacheKey, value: T, ttl: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  override def set(key: CacheKey, value: T, ttl: scala.Double): js.Promise[scala.Unit] = js.native
   /** start() - creates a connection to the cache server. Must be called before any other method is available. */
   /* CompleteClass */
-  override def start(): stdLib.Promise[scala.Unit] = js.native
+  override def start(): js.Promise[scala.Unit] = js.native
   /** stop() - terminates the connection to the cache server. */
   /* CompleteClass */
   override def stop(): scala.Unit = js.native

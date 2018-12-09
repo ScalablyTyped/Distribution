@@ -29,7 +29,7 @@ class CredentialProviderChain () extends js.Object {
   /**
        * Return a Promise on resolve() function
        */
-  def resolvePromise(): stdLib.Promise[awsDashSdkLib.libCredentialsMod.Credentials] = js.native
+  def resolvePromise(): js.Promise[awsDashSdkLib.libCredentialsMod.Credentials] = js.native
 }
 
 @JSImport("aws-sdk/lib/credentials/credential_provider_chain", "CredentialProviderChain")

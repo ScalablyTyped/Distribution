@@ -13,7 +13,7 @@ class Policy[T, O /* <: PolicyOptionVariants[T] */] protected () extends js.Obje
        * remove the item from cache where:
        * @param id the unique item identifier (within the policy segment).
        */
-  def drop(id: Id): stdLib.Promise[scala.Unit] = js.native
+  def drop(id: Id): js.Promise[scala.Unit] = js.native
   /**
        *  retrieve an item from the cache. If the item is not
        * found and the generateFunc method was provided,
@@ -22,7 +22,7 @@ class Policy[T, O /* <: PolicyOptionVariants[T] */] protected () extends js.Obje
        * @param id the unique item identifier (within the policy segment).
        * Can be a string or an object with the required 'id' key.
        */
-  def get(id: Id): stdLib.Promise[T | scala.Null | DecoratedResult[T]] = js.native
+  def get(id: Id): js.Promise[T | scala.Null | DecoratedResult[T]] = js.native
   /**
        * returns true if cache engine determines itself as ready, false if it is not ready or if
        * here is no cache engine set.
@@ -38,7 +38,7 @@ class Policy[T, O /* <: PolicyOptionVariants[T] */] protected () extends js.Obje
        * removed from the cache (or is marked invalid).
        *    This should be set to 0 in order to use the caching rules configured when creating the Policy object.
        */
-  def set(id: Id, value: T): stdLib.Promise[scala.Unit] = js.native
+  def set(id: Id, value: T): js.Promise[scala.Unit] = js.native
   /**
        * store an item in the cache where:
        * @param id - the unique item identifier (within the policy segment).
@@ -47,7 +47,7 @@ class Policy[T, O /* <: PolicyOptionVariants[T] */] protected () extends js.Obje
        * removed from the cache (or is marked invalid).
        *    This should be set to 0 in order to use the caching rules configured when creating the Policy object.
        */
-  def set(id: Id, value: T, ttl: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def set(id: Id, value: T, ttl: scala.Double): js.Promise[scala.Unit] = js.native
   /** an object with cache statistics */
   def stats(): CacheStatisticsObject = js.native
   /**

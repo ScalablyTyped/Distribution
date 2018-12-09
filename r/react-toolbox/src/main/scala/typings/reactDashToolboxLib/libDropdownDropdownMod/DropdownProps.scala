@@ -42,15 +42,15 @@ trait DropdownProps
   /**
      * Callback function that is fired when the component is blurred.
      */
-  var onBlur: js.UndefOr[js.Function] = js.undefined
+  var onBlur: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that is fired when the component's value changes.
      */
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that is fired when the component is focused.
      */
-  var onFocus: js.UndefOr[js.Function] = js.undefined
+  var onFocus: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * If true, the dropdown has a required attribute.
      * @default false
@@ -63,7 +63,7 @@ trait DropdownProps
   /**
      * Callback function that returns a JSX template to represent the element.
      */
-  var template: js.UndefOr[js.Function] = js.undefined
+  var template: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Classnames object defining the component style.
      */

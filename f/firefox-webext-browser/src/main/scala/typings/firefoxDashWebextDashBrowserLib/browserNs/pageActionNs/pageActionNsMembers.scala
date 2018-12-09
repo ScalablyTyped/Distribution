@@ -14,24 +14,24 @@ object pageActionNsMembers extends js.Object {
     js.Function1[/* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab, scala.Unit]
   ] = js.native
   /** Gets the html document set as the popup for this page action. */
-  def getPopup(details: firefoxDashWebextDashBrowserLib.Anon_TabId): stdLib.Promise[java.lang.String] = js.native
+  def getPopup(details: firefoxDashWebextDashBrowserLib.Anon_TabId): js.Promise[java.lang.String] = js.native
   /** Gets the title of the page action. */
-  def getTitle(details: firefoxDashWebextDashBrowserLib.Anon_TabId): stdLib.Promise[java.lang.String] = js.native
+  def getTitle(details: firefoxDashWebextDashBrowserLib.Anon_TabId): js.Promise[java.lang.String] = js.native
   /**
        * Hides the page action.
        * @param tabId The id of the tab for which you want to modify the page action.
        */
-  def hide(tabId: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def hide(tabId: scala.Double): js.Promise[scala.Unit] = js.native
   /** Checks whether the page action is shown. */
-  def isShown(details: firefoxDashWebextDashBrowserLib.Anon_TabId): stdLib.Promise[scala.Boolean] = js.native
+  def isShown(details: firefoxDashWebextDashBrowserLib.Anon_TabId): js.Promise[scala.Boolean] = js.native
   /** Opens the extension page action in the active window. */
-  def openPopup(): stdLib.Promise[scala.Unit] = js.native
+  def openPopup(): js.Promise[scala.Unit] = js.native
   /**
        * Sets the icon for the page action. The icon can be specified either as the path to an image file or as the pixel
        * data from a canvas element, or as dictionary of either one of those. Either the **path** or the **imageData**
        * property must be specified.
        */
-  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_ImageData): stdLib.Promise[scala.Unit] = js.native
+  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_ImageData): js.Promise[scala.Unit] = js.native
   /** Sets the html document to be opened as a popup when the user clicks on the page action's icon. */
   def setPopup(details: firefoxDashWebextDashBrowserLib.Anon_TabIdPopup): scala.Unit = js.native
   /** Sets the title of the page action. This is displayed in a tooltip over the page action. */
@@ -41,6 +41,6 @@ object pageActionNsMembers extends js.Object {
        * Shows the page action. The page action is shown whenever the tab is selected.
        * @param tabId The id of the tab for which you want to modify the page action.
        */
-  def show(tabId: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def show(tabId: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

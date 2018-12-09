@@ -35,13 +35,13 @@ class KmlDataSource ()
 @JSImport("cesium", "KmlDataSource")
 @js.native
 object KmlDataSource extends js.Object {
-  def load(data: cesiumLib.cesiumMod.CesiumNs.Resource): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
-  def load(data: cesiumLib.cesiumMod.CesiumNs.Resource, options: cesiumLib.Anon_Camera): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
-  def load(data: java.lang.String): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
-  def load(data: java.lang.String, options: cesiumLib.Anon_Camera): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
-  def load(data: stdLib.Blob): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
-  def load(data: stdLib.Blob, options: cesiumLib.Anon_Camera): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
-  def load(data: stdLib.Document): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
-  def load(data: stdLib.Document, options: cesiumLib.Anon_Camera): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
+  def load(data: cesiumLib.cesiumMod.CesiumNs.Resource): js.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
+  def load(data: cesiumLib.cesiumMod.CesiumNs.Resource, options: cesiumLib.Anon_Camera): js.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
+  def load(data: java.lang.String): js.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
+  def load(data: java.lang.String, options: cesiumLib.Anon_Camera): js.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
+  def load(data: stdLib.Blob): js.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
+  def load(data: stdLib.Blob, options: cesiumLib.Anon_Camera): js.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
+  def load(data: stdLib.Document): js.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
+  def load(data: stdLib.Document, options: cesiumLib.Anon_Camera): js.Promise[cesiumLib.cesiumMod.CesiumNs.KmlDataSource] = js.native
 }
 

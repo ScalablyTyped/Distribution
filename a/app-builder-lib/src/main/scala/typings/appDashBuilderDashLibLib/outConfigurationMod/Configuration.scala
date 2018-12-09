@@ -14,20 +14,20 @@ trait Configuration
   val afterAllArtifactBuild: js.UndefOr[
     (js.Function1[
       /* context */ appDashBuilderDashLibLib.outPackagerMod.BuildResult, 
-      stdLib.Promise[js.Array[java.lang.String]] | js.Array[java.lang.String]
+      js.Promise[js.Array[java.lang.String]] | js.Array[java.lang.String]
     ]) | java.lang.String | scala.Null
   ] = js.undefined
   /**
        * The function (or path to file or module id) to be [run after pack](#afterpack) (but before pack into distributable format and sign).
        */
   val afterPack: js.UndefOr[
-    (js.Function1[/* context */ AfterPackContext, stdLib.Promise[_] | _]) | java.lang.String | scala.Null
+    (js.Function1[/* context */ AfterPackContext, js.Promise[_] | _]) | java.lang.String | scala.Null
   ] = js.undefined
   /**
        * The function (or path to file or module id) to be [run after pack and sign](#aftersign) (but before pack into distributable format).
        */
   val afterSign: js.UndefOr[
-    (js.Function1[/* context */ AfterPackContext, stdLib.Promise[_] | _]) | java.lang.String | scala.Null
+    (js.Function1[/* context */ AfterPackContext, js.Promise[_] | _]) | java.lang.String | scala.Null
   ] = js.undefined
   val apk: js.UndefOr[
     appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.LinuxTargetSpecificOptions | scala.Null
@@ -43,7 +43,7 @@ trait Configuration
   val artifactBuildCompleted: js.UndefOr[
     (js.Function1[
       /* context */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated, 
-      stdLib.Promise[_] | _
+      js.Promise[_] | _
     ]) | java.lang.String | scala.Null
   ] = js.undefined
   /**
@@ -52,7 +52,7 @@ trait Configuration
   val artifactBuildStarted: js.UndefOr[
     (js.Function1[
       /* context */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactBuildStarted, 
-      stdLib.Promise[_] | _
+      js.Promise[_] | _
     ]) | java.lang.String | scala.Null
   ] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait Configuration
   val beforeBuild: js.UndefOr[
     (js.Function1[
       /* context */ appDashBuilderDashLibLib.outCoreMod.BeforeBuildContext, 
-      stdLib.Promise[_]
+      js.Promise[_]
     ]) | java.lang.String | scala.Null
   ] = js.undefined
   /**

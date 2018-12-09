@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @js.native
-trait Record extends js.Object {
+@js.native
+trait Record
+  extends stdLib.Object {
   var `@class`: js.UndefOr[java.lang.String] = js.native
   var `@rid`: js.UndefOr[RID] = js.native
   var `@type`: js.UndefOr[orientjsLib.orientjsLibStrings.d | orientjsLib.orientjsLibStrings.b] = js.native

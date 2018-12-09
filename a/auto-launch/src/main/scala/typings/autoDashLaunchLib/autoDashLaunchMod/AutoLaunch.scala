@@ -10,14 +10,14 @@ trait AutoLaunch extends js.Object {
   /**
      * Disables auto-launch at start up.
      */
-  def disable(): stdLib.Promise[scala.Unit]
+  def disable(): js.Promise[scala.Unit]
   /**
      * Enables auto-launch at start up.
      */
-  def enable(): stdLib.Promise[scala.Unit]
+  def enable(): js.Promise[scala.Unit]
   /**
      * Returns true if auto-launch is enabled.
      */
-  def isEnabled(): stdLib.Promise[scala.Boolean]
+  def isEnabled(): js.Promise[scala.Boolean]
 }
 

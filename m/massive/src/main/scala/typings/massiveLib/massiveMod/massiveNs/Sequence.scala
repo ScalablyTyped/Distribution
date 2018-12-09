@@ -11,13 +11,13 @@ trait Sequence extends js.Object {
            * Get the last value the sequence returned.
            * The return value will be a stringified number.
            */
-  def lastValue(): stdLib.Promise[java.lang.String]
+  def lastValue(): js.Promise[java.lang.String]
   /**
            * Increment the sequence counter and return the next value.
            * The return value will be a stringified number.
            */
-  def nextValue(): stdLib.Promise[java.lang.String]
+  def nextValue(): js.Promise[java.lang.String]
   /** Reset the sequence. */
-  def reset(initialValue: scala.Double): stdLib.Promise[scala.Unit]
+  def reset(initialValue: scala.Double): js.Promise[scala.Unit]
 }
 

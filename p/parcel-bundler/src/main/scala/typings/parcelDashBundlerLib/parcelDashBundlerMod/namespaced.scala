@@ -17,6 +17,6 @@ class namespaced () extends ParcelBundler {
   /* CompleteClass */
   override def addPackager(`type`: java.lang.String, packager: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
-  override def bundle(): stdLib.Promise[parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelBundle] = js.native
+  override def bundle(): js.Promise[parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelBundle] = js.native
 }
 

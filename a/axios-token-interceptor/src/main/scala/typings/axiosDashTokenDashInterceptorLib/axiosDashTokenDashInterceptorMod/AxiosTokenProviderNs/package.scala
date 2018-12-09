@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 package object AxiosTokenProviderNs {
   type TokenProvider = js.Function1[
     /* config */ axiosLib.axiosMod.AxiosRequestConfig, 
-    stdLib.Promise[axiosLib.axiosMod.AxiosRequestConfig]
+    js.Promise[axiosLib.axiosMod.AxiosRequestConfig]
   ]
 }

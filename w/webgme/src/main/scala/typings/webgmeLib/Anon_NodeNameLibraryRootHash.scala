@@ -12,7 +12,7 @@ trait Anon_NodeNameLibraryRootHash extends js.Object {
     name: webgmeLib.GmeCommonNs.Name,
     libraryRootHash: java.lang.String,
     libraryInfo: webgmeLib.GmeClassesNs.LibraryInfo
-  ): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  ): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   def apply(
     node: webgmeLib.CoreNs.Node,
     name: webgmeLib.GmeCommonNs.Name,

@@ -11,6 +11,6 @@ trait ProgressEmitter extends js.Object {
   def on_progress(
     event: cpyLib.cpyLibStrings.progress,
     handler: js.Function1[/* progress */ ProgressData, scala.Unit]
-  ): stdLib.Promise[scala.Unit]
+  ): js.Promise[scala.Unit]
 }
 

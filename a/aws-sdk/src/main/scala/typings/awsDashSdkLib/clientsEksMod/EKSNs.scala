@@ -13,7 +13,7 @@ object EKSNs extends js.Object {
     /**
          * The base64 encoded certificate data required to communicate with your cluster. Add this to the certificate-authority-data section of the kubeconfig file for your cluster.
          */
-    var data: js.UndefOr[java.lang.String] = js.undefined
+    var data: js.UndefOr[String] = js.undefined
   }
   
   
@@ -29,7 +29,7 @@ object EKSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the cluster.
          */
-    var arn: js.UndefOr[java.lang.String] = js.undefined
+    var arn: js.UndefOr[String] = js.undefined
     /**
          * The certificate-authority-data for your cluster.
          */
@@ -37,7 +37,7 @@ object EKSNs extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request.
          */
-    var clientRequestToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientRequestToken: js.UndefOr[String] = js.undefined
     /**
          * The Unix epoch time stamp in seconds for when the cluster was created.
          */
@@ -45,15 +45,15 @@ object EKSNs extends js.Object {
     /**
          * The endpoint for your Kubernetes API server.
          */
-    var endpoint: js.UndefOr[java.lang.String] = js.undefined
+    var endpoint: js.UndefOr[String] = js.undefined
     /**
          * The name of the cluster.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The platform version of your Amazon EKS cluster. For more information, see Platform Versions in the  Amazon EKS User Guide .
          */
-    var platformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var platformVersion: js.UndefOr[String] = js.undefined
     /**
          * The VPC subnets and security groups used by the cluster control plane. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see Cluster VPC Considerations and Cluster Security Group Considerations in the Amazon EKS User Guide.
          */
@@ -61,7 +61,7 @@ object EKSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf.
          */
-    var roleArn: js.UndefOr[java.lang.String] = js.undefined
+    var roleArn: js.UndefOr[String] = js.undefined
     /**
          * The current status of the cluster.
          */
@@ -69,7 +69,7 @@ object EKSNs extends js.Object {
     /**
          * The Kubernetes server version for the cluster.
          */
-    var version: js.UndefOr[java.lang.String] = js.undefined
+    var version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -77,7 +77,7 @@ object EKSNs extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request.
          */
-    var clientRequestToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientRequestToken: js.UndefOr[String] = js.undefined
     /**
          * The unique name to give to your cluster.
          */
@@ -89,11 +89,11 @@ object EKSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the IAM role that provides permissions for Amazon EKS to make calls to other AWS API operations on your behalf. For more information, see Amazon EKS Service IAM Role in the  Amazon EKS User Guide .
          */
-    var roleArn: java.lang.String
+    var roleArn: String
     /**
          * The desired Kubernetes version for your cluster. If you do not specify a value here, the latest version available in Amazon EKS is used.
          */
-    var version: js.UndefOr[java.lang.String] = js.undefined
+    var version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -109,7 +109,7 @@ object EKSNs extends js.Object {
     /**
          * The name of the cluster to delete.
          */
-    var name: java.lang.String
+    var name: String
   }
   
   
@@ -125,7 +125,7 @@ object EKSNs extends js.Object {
     /**
          * The name of the cluster to describe.
          */
-    var name: java.lang.String
+    var name: String
   }
   
   
@@ -145,7 +145,7 @@ object EKSNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated ListClusters request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -157,7 +157,7 @@ object EKSNs extends js.Object {
     /**
          * The nextToken value to include in a future ListClusters request. When the results of a ListClusters request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   @js.native
@@ -384,7 +384,7 @@ object EKSNs extends js.Object {
     /**
          * The VPC associated with your cluster.
          */
-    var vpcId: js.UndefOr[java.lang.String] = js.undefined
+    var vpcId: js.UndefOr[String] = js.undefined
   }
   
   val TypesNs: this.type = js.native
@@ -393,7 +393,7 @@ object EKSNs extends js.Object {
   type ClusterStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
   type ListClustersRequestMaxResults = scala.Double
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type Timestamp = stdLib.Date
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

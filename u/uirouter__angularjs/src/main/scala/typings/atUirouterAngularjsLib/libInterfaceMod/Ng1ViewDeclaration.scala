@@ -206,7 +206,7 @@ trait Ng1ViewDeclaration
        * }
        * ```
        */
-  var template: js.UndefOr[js.Function | java.lang.String] = js.undefined
+  var template: js.UndefOr[angularLib.angularMod.Global.Function | java.lang.String] = js.undefined
   /**
        * Injected function which returns the HTML template.
        *
@@ -245,6 +245,6 @@ trait Ng1ViewDeclaration
        * }
        * ```
        */
-  var templateUrl: js.UndefOr[java.lang.String | js.Function] = js.undefined
+  var templateUrl: js.UndefOr[java.lang.String | angularLib.angularMod.Global.Function] = js.undefined
 }
 

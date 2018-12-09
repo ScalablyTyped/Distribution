@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("backbone.marionette", "Behavior")
+@JSImport("backbone.marionette", "Behavior")
 @js.native
-class Behavior () extends js.Object {
+class Behavior () extends Object {
   def this(options: js.Any) = this()
   /**
        * $el is a direct proxy of the view's el cached as a jQuery selector.

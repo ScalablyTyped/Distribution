@@ -10,6 +10,6 @@ trait Anon_HiddenInCommandPalette[TargetType /* <: stdLib.EventTarget */] extend
   var description: js.UndefOr[java.lang.String] = js.undefined
   var displayName: js.UndefOr[java.lang.String] = js.undefined
   var hiddenInCommandPalette: js.UndefOr[scala.Boolean] = js.undefined
-  def didDispatch(event: atomLib.atomMod.CommandEvent[TargetType]): scala.Unit | stdLib.Promise[scala.Unit]
+  def didDispatch(event: atomLib.atomMod.CommandEvent[TargetType]): scala.Unit | js.Promise[scala.Unit]
 }
 

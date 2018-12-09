@@ -13,12 +13,12 @@ abstract class Adapter[TEngine] protected ()
   var _source: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.EntitySource[_, _] = js.native
   val engine: TEngine = js.native
   val views: js.Array[atFrctlFractalLib.Anon_HandleContent] = js.native
-  /* protected */ def _resolve[T](value: T): stdLib.Promise[T] = js.native
-  /* protected */ def _resolve[T](value: stdLib.PromiseLike[T]): stdLib.Promise[T] = js.native
+  /* protected */ def _resolve[T](value: T): js.Promise[T] = js.native
+  /* protected */ def _resolve[T](value: js.Thenable[T]): js.Promise[T] = js.native
   def getReferencesForView(handle: java.lang.String): js.Array[_] = js.native
   def getView(handle: java.lang.String): js.Any = js.native
   def load(): scala.Unit = js.native
-  def render(path: java.lang.String, str: java.lang.String, context: js.Any, meta: js.Any): stdLib.Promise[java.lang.String] = js.native
+  def render(path: java.lang.String, str: java.lang.String, context: js.Any, meta: js.Any): js.Promise[java.lang.String] = js.native
   def setHandlePrefix(prefix: java.lang.String): this.type = js.native
 }
 

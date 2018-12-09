@@ -12,6 +12,6 @@ trait JenkinsPromisifiedAPI extends js.Object {
   var node: jenkinsLib.Anon_EnableNameDisconnect
   var queue: jenkinsLib.Anon_CancelN
   var view: jenkinsLib.Anon_CreateName
-  def info(): stdLib.Promise[_]
+  def info(): js.Promise[_]
 }
 

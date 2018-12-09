@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait PubSubEngine extends js.Object {
   def asyncIterator[T](triggers: java.lang.String): stdLib.AsyncIterator[T] = js.native
   def asyncIterator[T](triggers: js.Array[java.lang.String]): stdLib.AsyncIterator[T] = js.native
-  def publish(triggerName: java.lang.String, payload: js.Any): stdLib.Promise[scala.Unit] = js.native
-  def subscribe(triggerName: java.lang.String, onMessage: js.Function, options: js.Object): stdLib.Promise[scala.Double] = js.native
+  def publish(triggerName: java.lang.String, payload: js.Any): js.Promise[scala.Unit] = js.native
+  def subscribe(triggerName: java.lang.String, onMessage: js.Function, options: js.Object): js.Promise[scala.Double] = js.native
   def unsubscribe(subId: scala.Double): js.Any = js.native
 }
 

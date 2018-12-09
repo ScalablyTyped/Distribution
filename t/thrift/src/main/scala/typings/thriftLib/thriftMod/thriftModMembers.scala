@@ -23,7 +23,7 @@ object thriftModMembers extends js.Object {
    * If value is a promise from another library it is coerced into a Q promise (where possible).
    * If value is not a promise, returns a promise that is fulfilled with value.
    */
-  def Q[T](promise: stdLib.PromiseLike[T]): qLib.qMod.QNs.Promise[T] = js.native
+  def Q[T](promise: js.Thenable[T]): qLib.qMod.QNs.Promise[T] = js.native
   def createClient[TClient](client: TClientConstructor[TClient], connection: Connection): TClient = js.native
   def createConnection(host: java.lang.String, port: scala.Double): Connection = js.native
   def createConnection(host: java.lang.String, port: scala.Double, options: ConnectOptions): Connection = js.native

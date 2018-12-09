@@ -24,11 +24,11 @@ trait Accounts extends js.Object {
   def recover(sigOrHash: Signature, sigOrV: java.lang.String, r: java.lang.String, s: java.lang.String): java.lang.String = js.native
   def recoverTransaction(signature: java.lang.String): java.lang.String = js.native
   def sign(data: java.lang.String, privateKey: java.lang.String): MessageSignature = js.native
-  def signTransaction(tx: web3Lib.ethTypesMod.Tx, privateKey: java.lang.String): stdLib.Promise[TxSignature] = js.native
+  def signTransaction(tx: web3Lib.ethTypesMod.Tx, privateKey: java.lang.String): js.Promise[TxSignature] = js.native
   def signTransaction(
     tx: web3Lib.ethTypesMod.Tx,
     privateKey: java.lang.String,
     cb: js.Function2[/* err */ stdLib.Error, /* result */ TxSignature, scala.Unit]
-  ): stdLib.Promise[TxSignature] = js.native
+  ): js.Promise[TxSignature] = js.native
 }
 

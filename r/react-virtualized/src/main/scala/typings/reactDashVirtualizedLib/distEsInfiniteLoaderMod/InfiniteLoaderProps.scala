@@ -38,7 +38,7 @@ trait InfiniteLoaderProps
        */
   var loadMoreRows: js.Function1[
     /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange, 
-    stdLib.Promise[_]
+    js.Promise[_]
   ]
   /**
        * Minimum number of rows to be loaded at a time.

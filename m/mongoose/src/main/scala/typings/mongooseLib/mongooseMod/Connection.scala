@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
    */
 @js.native
 trait Connection extends ConnectionBase {
-  def startSession(): stdLib.Promise[mongodbLib.mongodbMod.ClientSession] = js.native
-  def startSession(options: mongodbLib.mongodbMod.SessionOptions): stdLib.Promise[mongodbLib.mongodbMod.ClientSession] = js.native
+  def startSession(): js.Promise[mongodbLib.mongodbMod.ClientSession] = js.native
+  def startSession(options: mongodbLib.mongodbMod.SessionOptions): js.Promise[mongodbLib.mongodbMod.ClientSession] = js.native
   def startSession(
     options: mongodbLib.mongodbMod.SessionOptions,
     cb: js.Function2[/* err */ js.Any, /* session */ mongodbLib.mongodbMod.ClientSession, scala.Unit]
-  ): stdLib.Promise[mongodbLib.mongodbMod.ClientSession] = js.native
+  ): js.Promise[mongodbLib.mongodbMod.ClientSession] = js.native
   /**
        * Switches to a different database using the same connection pool.
        * @param name The database name

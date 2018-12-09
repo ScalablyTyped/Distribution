@@ -31,10 +31,10 @@ class USB ()
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  def getDevices(): stdLib.Promise[js.Array[USBDevice]] = js.native
+  def getDevices(): js.Promise[js.Array[USBDevice]] = js.native
   def onconnect(): js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _] = js.native
   def ondisconnect(): js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _] = js.native
-  def requestDevice(): stdLib.Promise[USBDevice] = js.native
-  def requestDevice(options: USBDeviceRequestOptions): stdLib.Promise[USBDevice] = js.native
+  def requestDevice(): js.Promise[USBDevice] = js.native
+  def requestDevice(options: USBDeviceRequestOptions): js.Promise[USBDevice] = js.native
 }
 

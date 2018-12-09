@@ -9,7 +9,7 @@ package object graphqlHTTPNs {
   type Middleware = js.Function2[
     /* request */ expressLib.expressMod.eNs.Request, 
     /* response */ expressLib.expressMod.eNs.Response, 
-    stdLib.Promise[js.UndefOr[scala.Nothing]]
+    js.Promise[js.UndefOr[scala.Nothing]]
   ]
   type Options = (js.Function3[
     /* request */ expressLib.expressMod.eNs.Request, 
@@ -17,5 +17,5 @@ package object graphqlHTTPNs {
     /* params */ js.UndefOr[GraphQLParams], 
     OptionsResult
   ]) | OptionsResult
-  type OptionsResult = OptionsData | stdLib.Promise[OptionsData]
+  type OptionsResult = OptionsData | js.Promise[OptionsData]
 }

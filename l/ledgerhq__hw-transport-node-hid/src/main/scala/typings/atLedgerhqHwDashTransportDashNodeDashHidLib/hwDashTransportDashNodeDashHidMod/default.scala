@@ -16,7 +16,7 @@ class default protected () extends TransportNodeHid {
 @JSImport("@ledgerhq/hw-transport-node-hid", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def open(path: java.lang.String): stdLib.Promise[
+  def open(path: java.lang.String): js.Promise[
     atLedgerhqHwDashTransportDashNodeDashHidLib.hwDashTransportDashNodeDashHidMod.TransportNodeHid
   ] = js.native
 }

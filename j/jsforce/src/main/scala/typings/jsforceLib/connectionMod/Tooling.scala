@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class Tooling () extends BaseConnection {
   var _logger: js.Any = js.native
   // Specific to tooling
-  def executeAnonymous(body: java.lang.String): stdLib.Promise[ExecuteAnonymousResult] = js.native
+  def executeAnonymous(body: java.lang.String): js.Promise[ExecuteAnonymousResult] = js.native
   // Specific to tooling
   def executeAnonymous(
     body: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* res */ js.Any, scala.Unit]
-  ): stdLib.Promise[ExecuteAnonymousResult] = js.native
+  ): js.Promise[ExecuteAnonymousResult] = js.native
 }
 

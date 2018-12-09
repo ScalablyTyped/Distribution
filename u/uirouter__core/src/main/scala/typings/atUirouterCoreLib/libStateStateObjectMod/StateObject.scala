@@ -114,7 +114,7 @@ class StateObject () extends js.Object {
   def lazyLoad(
     transition: atUirouterCoreLib.libTransitionTransitionMod.Transition,
     state: atUirouterCoreLib.libStateInterfaceMod.StateDeclaration
-  ): stdLib.Promise[atUirouterCoreLib.libStateInterfaceMod.LazyLoadResult] = js.native
+  ): js.Promise[atUirouterCoreLib.libStateInterfaceMod.LazyLoadResult] = js.native
   /** Prototypally inherits from [[StateDeclaration.onEnter]] */
   def onEnter(
     transition: atUirouterCoreLib.libTransitionTransitionMod.Transition,

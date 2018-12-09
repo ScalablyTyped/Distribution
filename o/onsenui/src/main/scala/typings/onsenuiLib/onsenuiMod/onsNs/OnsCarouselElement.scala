@@ -36,7 +36,7 @@ trait OnsCarouselElement
        * @param {Object} animationOptions Object containing duration and timing.
        * @description Hook called whenever the user slides the carousel.
        **/
-  var onSwipe: js.UndefOr[js.Function] = js.native
+  var onSwipe: js.UndefOr[coreDashJsLib.Function] = js.native
   /**
        * @description Whether the carousel is overscrollable or not.
        **/
@@ -49,7 +49,7 @@ trait OnsCarouselElement
        * @description Show first ons-carousel item
        * @Resolves to the carousel element
        */
-  def first(): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def first(): js.Promise[stdLib.HTMLElement] = js.native
   /**
       * @description Returns the index of the currently visible `<ons-carousel-item>`.
       * @return The current carousel item index.
@@ -59,27 +59,27 @@ trait OnsCarouselElement
        * @description Show last ons-carousel item
        * @return Resolves to the carousel element
        */
-  def last(): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def last(): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @description Show next ons-carousel item
        * @return Resolves to the carousel element
        */
-  def next(): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def next(): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @description Show next ons-carousel item
        * @return Resolves to the carousel element
        */
-  def next(options: onsenuiLib.onsenuiMod.CarouselOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def next(options: onsenuiLib.onsenuiMod.CarouselOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @description Show previous ons-carousel item
        * @return Resolves to the carousel element
        */
-  def prev(): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def prev(): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @description Show previous ons-carousel item
        * @return Resolves to the carousel element
        */
-  def prev(options: onsenuiLib.onsenuiMod.CarouselOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def prev(options: onsenuiLib.onsenuiMod.CarouselOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @description Update the layout of the carousel. Used when adding ons-carousel-items dynamically or to automatically adjust the size.
        */
@@ -88,11 +88,11 @@ trait OnsCarouselElement
       * @description Specify the index of the `<ons-carousel-item>` to show.
       * @return Resolves to the carousel element.
       */
-  def setActiveIndex(index: scala.Double): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def setActiveIndex(index: scala.Double): js.Promise[stdLib.HTMLElement] = js.native
   /**
       * @description Specify the index of the `<ons-carousel-item>` to show.
       * @return Resolves to the carousel element.
       */
-  def setActiveIndex(index: scala.Double, options: onsenuiLib.onsenuiMod.CarouselOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def setActiveIndex(index: scala.Double, options: onsenuiLib.onsenuiMod.CarouselOptions): js.Promise[stdLib.HTMLElement] = js.native
 }
 

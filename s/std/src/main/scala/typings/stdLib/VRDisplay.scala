@@ -16,14 +16,14 @@ trait VRDisplay extends EventTarget {
   val isPresenting: scala.Boolean = js.native
   val stageParameters: VRStageParameters | scala.Null = js.native
   def cancelAnimationFrame(handle: scala.Double): scala.Unit = js.native
-  def exitPresent(): Promise[scala.Unit] = js.native
+  def exitPresent(): js.Promise[scala.Unit] = js.native
   def getEyeParameters(whichEye: java.lang.String): VREyeParameters = js.native
   def getFrameData(frameData: VRFrameData): scala.Boolean = js.native
   def getLayers(): js.Array[VRLayer] = js.native
   /** @deprecated */
   def getPose(): VRPose = js.native
   def requestAnimationFrame(callback: FrameRequestCallback): scala.Double = js.native
-  def requestPresent(layers: js.Array[VRLayer]): Promise[scala.Unit] = js.native
+  def requestPresent(layers: js.Array[VRLayer]): js.Promise[scala.Unit] = js.native
   def resetPose(): scala.Unit = js.native
   def submitFrame(): scala.Unit = js.native
   def submitFrame(pose: VRPose): scala.Unit = js.native

@@ -16,11 +16,11 @@ class ConnectionPool protected ()
   var connected: scala.Boolean = js.native
   var connecting: scala.Boolean = js.native
   var driver: java.lang.String = js.native
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   def close(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
-  def connect(): stdLib.Promise[ConnectionPool] = js.native
+  def connect(): js.Promise[ConnectionPool] = js.native
   def connect(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
-  def query(strings: stdLib.TemplateStringsArray, interpolations: js.Any*): stdLib.Promise[IResult[_]] = js.native
+  def query(strings: stdLib.TemplateStringsArray, interpolations: js.Any*): js.Promise[IResult[_]] = js.native
   def request(): Request = js.native
   def transaction(): Transaction = js.native
 }

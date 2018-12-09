@@ -32,7 +32,7 @@ trait IModule extends js.Object {
            *
            * @param configFn Execute this function on module load. Useful for service configuration.
            */
-  def config(configFn: js.Function): IModule = js.native
+  def config(configFn: angularLib.angularMod.Global.Function): IModule = js.native
   /**
            * Use this method to register work which needs to be performed on module loading.
            *
@@ -63,7 +63,7 @@ trait IModule extends js.Object {
            * @param name The name of the service to decorate
            * @param decorator This function will be invoked when the service needs to be instantiated and should return the decorated service instance. The function is called using the injector.invoke method and is therefore fully injectable. Local injection arguments: $delegate - The original service instance, which can be monkey patched, configured, decorated or delegated to.
            */
-  def decorator(name: java.lang.String, decorator: Injectable[js.Function]): IModule = js.native
+  def decorator(name: java.lang.String, decorator: Injectable[angularLib.angularMod.Global.Function]): IModule = js.native
   /**
            * Register a new directive with the compiler.
            *
@@ -78,8 +78,10 @@ trait IModule extends js.Object {
            * @param name The name of the instance.
            * @param $getFn The $getFn for the instance creation. Internally this is a short hand for $provide.provider(name, {$get: $getFn}).
            */
-  def factory(name: java.lang.String, $getFn: Injectable[js.Function]): IModule = js.native
-  def factory(`object`: ScalablyTyped.runtime.StringDictionary[Injectable[js.Function]]): IModule = js.native
+  def factory(name: java.lang.String, $getFn: Injectable[angularLib.angularMod.Global.Function]): IModule = js.native
+  def factory(
+    `object`: ScalablyTyped.runtime.StringDictionary[Injectable[angularLib.angularMod.Global.Function]]
+  ): IModule = js.native
   def filter(name: java.lang.String, filterFactoryFunction: Injectable[FilterFactory]): IModule = js.native
   def filter(`object`: ScalablyTyped.runtime.StringDictionary[Injectable[FilterFactory]]): IModule = js.native
   def provider(name: java.lang.String, inlineAnnotatedConstructor: js.Array[_]): IModule = js.native
@@ -90,15 +92,17 @@ trait IModule extends js.Object {
   /**
            * Run blocks are the closest thing in Angular to the main method. A run block is the code which needs to run to kickstart the application. It is executed after all of the service have been configured and the injector has been created. Run blocks typically contain code which is hard to unit-test, and for this reason should be declared in isolated modules, so that they can be ignored in the unit-tests.
            */
-  def run(initializationFunction: Injectable[js.Function]): IModule = js.native
+  def run(initializationFunction: Injectable[angularLib.angularMod.Global.Function]): IModule = js.native
   /**
            * Register a service constructor, which will be invoked with new to create the service instance. This is short for registering a service where its provider's $get property is a factory function that returns an instance instantiated by the injector from the service constructor function.
            *
            * @param name The name of the instance.
            * @param serviceConstructor An injectable class (constructor function) that will be instantiated.
            */
-  def service(name: java.lang.String, serviceConstructor: Injectable[js.Function]): IModule = js.native
-  def service(`object`: ScalablyTyped.runtime.StringDictionary[Injectable[js.Function]]): IModule = js.native
+  def service(name: java.lang.String, serviceConstructor: Injectable[angularLib.angularMod.Global.Function]): IModule = js.native
+  def service(
+    `object`: ScalablyTyped.runtime.StringDictionary[Injectable[angularLib.angularMod.Global.Function]]
+  ): IModule = js.native
   def value(`object`: js.Object): IModule = js.native
   /**
            * Register a value service with the $injector, such as a string, a number, an array, an object or a function. This is short for registering a service where its provider's $get property is a factory function that takes no arguments and returns the value service.

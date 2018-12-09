@@ -15,41 +15,41 @@ object iterallMod extends js.Object {
   def createAsyncIterator(collection: iterallLib.Anon_Length): stdLib.AsyncIterator[_] = js.native
   def createAsyncIterator(collection: js.Any): scala.Unit | stdLib.AsyncIterator[_] = js.native
   def createAsyncIterator[TValue](collection: stdLib.AsyncIterable[TValue]): stdLib.AsyncIterator[TValue] = js.native
-  def createAsyncIterator[TValue](collection: stdLib.Iterable[stdLib.Promise[TValue] | TValue]): stdLib.AsyncIterator[TValue] = js.native
+  def createAsyncIterator[TValue](collection: stdLib.Iterable[js.Promise[TValue] | TValue]): stdLib.AsyncIterator[TValue] = js.native
   def createIterator(collection: iterallLib.Anon_Length): stdLib.Iterator[_] = js.native
   def createIterator(collection: js.Any): scala.Unit | stdLib.Iterator[_] = js.native
   def createIterator[TValue](collection: stdLib.Iterable[TValue]): stdLib.Iterator[TValue] = js.native
   def forAwaitEach[TCollection /* <: iterallLib.Anon_Length */](
     collection: TCollection,
     callbackFn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* collection */ TCollection, _]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def forAwaitEach[TCollection /* <: iterallLib.Anon_Length */](
     collection: TCollection,
     callbackFn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* collection */ TCollection, _],
     thisArg: js.Any
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   @JSName("forAwaitEach")
   def forAwaitEach_TValueTCollectionAsyncIterable[TValue, TCollection /* <: stdLib.AsyncIterable[TValue] */](
     collection: TCollection,
     callbackFn: js.Function3[/* value */ TValue, /* index */ scala.Double, /* collection */ TCollection, _]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   @JSName("forAwaitEach")
   def forAwaitEach_TValueTCollectionAsyncIterable[TValue, TCollection /* <: stdLib.AsyncIterable[TValue] */](
     collection: TCollection,
     callbackFn: js.Function3[/* value */ TValue, /* index */ scala.Double, /* collection */ TCollection, _],
     thisArg: js.Any
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   @JSName("forAwaitEach")
-  def forAwaitEach_TValueTCollectionIterable[TValue, TCollection /* <: stdLib.Iterable[stdLib.Promise[TValue] | TValue] */](
+  def forAwaitEach_TValueTCollectionIterable[TValue, TCollection /* <: stdLib.Iterable[js.Promise[TValue] | TValue] */](
     collection: TCollection,
     callbackFn: js.Function3[/* value */ TValue, /* index */ scala.Double, /* collection */ TCollection, _]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   @JSName("forAwaitEach")
-  def forAwaitEach_TValueTCollectionIterable[TValue, TCollection /* <: stdLib.Iterable[stdLib.Promise[TValue] | TValue] */](
+  def forAwaitEach_TValueTCollectionIterable[TValue, TCollection /* <: stdLib.Iterable[js.Promise[TValue] | TValue] */](
     collection: TCollection,
     callbackFn: js.Function3[/* value */ TValue, /* index */ scala.Double, /* collection */ TCollection, _],
     thisArg: js.Any
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def forEach[TCollection /* <: iterallLib.Anon_Length */](
     collection: TCollection,
     callbackFn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* collection */ TCollection, _]

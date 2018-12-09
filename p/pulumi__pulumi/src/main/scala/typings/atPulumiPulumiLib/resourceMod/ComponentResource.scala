@@ -50,6 +50,6 @@ class ComponentResource protected () extends Resource {
   /* protected */ def registerOutputs(): scala.Unit = js.native
   /* protected */ def registerOutputs(outputs: Inputs): scala.Unit = js.native
   /* protected */ def registerOutputs(outputs: Output[Inputs]): scala.Unit = js.native
-  /* protected */ def registerOutputs(outputs: stdLib.Promise[Inputs]): scala.Unit = js.native
+  /* protected */ def registerOutputs(outputs: js.Promise[Inputs]): scala.Unit = js.native
 }
 

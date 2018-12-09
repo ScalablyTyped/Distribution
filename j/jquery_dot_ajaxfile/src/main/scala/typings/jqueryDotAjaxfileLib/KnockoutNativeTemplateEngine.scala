@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 //////////////////////////////////
 @js.native
 trait KnockoutNativeTemplateEngine extends js.Object {
-  def renderTemplateSource(templateSource: js.Object): js.Array[_] = js.native
-  def renderTemplateSource(templateSource: js.Object, bindingContext: KnockoutBindingContext): js.Array[_] = js.native
-  def renderTemplateSource(templateSource: js.Object, bindingContext: KnockoutBindingContext, options: js.Object): js.Array[_] = js.native
+  def renderTemplateSource(templateSource: Object): js.Array[_] = js.native
+  def renderTemplateSource(templateSource: Object, bindingContext: KnockoutBindingContext): js.Array[_] = js.native
+  def renderTemplateSource(templateSource: Object, bindingContext: KnockoutBindingContext, options: Object): js.Array[_] = js.native
 }
 

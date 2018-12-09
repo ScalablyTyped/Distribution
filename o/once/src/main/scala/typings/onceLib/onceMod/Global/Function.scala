@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Function extends js.Object {
   // tslint:disable-next-line ban-types
-  def once(): js.Function with onceLib.onceMod.onceNs.FnProps[_] = js.native
+  def once(): Function with onceLib.onceMod.onceNs.FnProps[_] = js.native
 }
 

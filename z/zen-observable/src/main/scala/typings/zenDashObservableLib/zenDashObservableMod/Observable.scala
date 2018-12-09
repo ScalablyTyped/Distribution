@@ -17,7 +17,7 @@ trait Observable[T] extends js.Object {
       zenDashObservableLib.zenDashObservableMod.Global.ZenObservableNs.ObservableLike[R]
     ]
   ): Observable[R] = js.native
-  def forEach(callback: js.Function1[/* value */ T, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def forEach(callback: js.Function1[/* value */ T, scala.Unit]): js.Promise[scala.Unit] = js.native
   def map[R](callback: js.Function1[/* value */ T, R]): Observable[R] = js.native
   def reduce(callback: js.Function2[/* previousValue */ T, /* currentValue */ T, T]): Observable[T] = js.native
   def reduce(callback: js.Function2[/* previousValue */ T, /* currentValue */ T, T], initialValue: T): Observable[T] = js.native

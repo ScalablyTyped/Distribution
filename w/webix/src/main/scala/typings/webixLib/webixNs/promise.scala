@@ -13,12 +13,12 @@ trait promise
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
         scala.Unit
       ], 
-      stdLib.Promise[js.Any]
+      js.Promise[js.Any]
     ] {
-  def all(promises: js.Array[stdLib.Promise[_]]): stdLib.Promise[_] = js.native
-  def defer(): stdLib.Promise[_] = js.native
-  def race(promises: js.Array[stdLib.Promise[_]]): stdLib.Promise[_] = js.native
-  def reject(value: js.Any): stdLib.Promise[_] = js.native
-  def resolve(value: js.Any): stdLib.Promise[_] = js.native
+  def all(promises: js.Array[js.Promise[_]]): js.Promise[_] = js.native
+  def defer(): js.Promise[_] = js.native
+  def race(promises: js.Array[js.Promise[_]]): js.Promise[_] = js.native
+  def reject(value: js.Any): js.Promise[_] = js.native
+  def resolve(value: js.Any): js.Promise[_] = js.native
 }
 

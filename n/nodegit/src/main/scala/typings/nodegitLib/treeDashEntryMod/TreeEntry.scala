@@ -11,8 +11,8 @@ class TreeEntry () extends js.Object {
   def filemode(): nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE = js.native
   def filemodeRaw(): nodegitLib.treeDashEntryMod.TreeEntryNs.FILEMODE = js.native
   def free(): scala.Unit = js.native
-  def getBlob(): stdLib.Promise[nodegitLib.blobMod.Blob] = js.native
-  def getTree(): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def getBlob(): js.Promise[nodegitLib.blobMod.Blob] = js.native
+  def getTree(): js.Promise[nodegitLib.treeMod.Tree] = js.native
   def id(): nodegitLib.oidMod.Oid = js.native
   def isBlob(): scala.Boolean = js.native
   def isDirectory(): scala.Boolean = js.native

@@ -15,7 +15,7 @@ trait CredentialsContainer extends js.Object {
        *
        * @see {@link https://www.w3.org/TR/2017/WD-credential-management-1-20170804/#dom-credentialscontainer-create}
        */
-  def create(options: CredentialCreationOptions): stdLib.Promise[Credential | scala.Null] = js.native
+  def create(options: CredentialCreationOptions): js.Promise[Credential | scala.Null] = js.native
   /**
        * Request a credential from the credential manager.
        *
@@ -25,7 +25,7 @@ trait CredentialsContainer extends js.Object {
        *     return.
        * @see {@link https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-get}
        */
-  def get(): stdLib.Promise[Credential | scala.Null] = js.native
+  def get(): js.Promise[Credential | scala.Null] = js.native
   /**
        * Request a credential from the credential manager.
        *
@@ -35,7 +35,7 @@ trait CredentialsContainer extends js.Object {
        *     return.
        * @see {@link https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-get}
        */
-  def get(options: CredentialRequestOptions): stdLib.Promise[Credential | scala.Null] = js.native
+  def get(options: CredentialRequestOptions): js.Promise[Credential | scala.Null] = js.native
   /**
        * Ask the credential manager to require user mediation before returning
        * credentials for the origin in which the method is called. This might be
@@ -45,7 +45,7 @@ trait CredentialsContainer extends js.Object {
        *
        * @see {@link https://www.w3.org/TR/2017/WD-credential-management-1-20170804/#dom-credentialscontainer-preventsilentaccess}
        */
-  def preventSilentAccess(): stdLib.Promise[scala.Unit] = js.native
+  def preventSilentAccess(): js.Promise[scala.Unit] = js.native
   /**
        * Ask the credential manager to require user mediation before returning
        * credentials for the origin in which the method is called. This might be
@@ -56,7 +56,7 @@ trait CredentialsContainer extends js.Object {
        * @deprecated Use {@link preventSilentAccess} instead.
        * @see {@link https://www.w3.org/TR/2016/WD-credential-management-1-20160425/#dom-credentialscontainer-requireusermediation}
        */
-  def requireUserMediation(): stdLib.Promise[scala.Unit] = js.native
+  def requireUserMediation(): js.Promise[scala.Unit] = js.native
   /**
        * Ask the credential manager to store a {@link Credential} for the user.
        * Authors could call this method after a user successfully signs in, or
@@ -64,6 +64,6 @@ trait CredentialsContainer extends js.Object {
        *
        * @see {@link https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-store}
        */
-  def store(credential: Credential): stdLib.Promise[Credential] = js.native
+  def store(credential: Credential): js.Promise[Credential] = js.native
 }
 

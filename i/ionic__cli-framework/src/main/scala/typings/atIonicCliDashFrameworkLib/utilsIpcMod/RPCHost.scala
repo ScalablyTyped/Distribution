@@ -15,7 +15,7 @@ class RPCHost protected () extends js.Object {
   def call[R /* <: RPCResponse[_, js.Object] */](
     procedure: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(procedure))) */js.Any,
     args: /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(request))),Left(TsIdentSimple(args))) */js.Any
-  ): stdLib.Promise[
+  ): js.Promise[
     /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(data))) */js.Any
   ] = js.native
   def end(): scala.Unit = js.native
@@ -23,7 +23,7 @@ class RPCHost protected () extends js.Object {
     procedure: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(procedure))) */js.Any,
     fn: js.Function1[
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(request))),Left(TsIdentSimple(args))) *//* args */ js.Any, 
-      stdLib.Promise[
+      js.Promise[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(R))),List()),Left(TsIdentSimple(data))) */js.Any
       ]
     ]

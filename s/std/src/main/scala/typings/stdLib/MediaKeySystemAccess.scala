@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait MediaKeySystemAccess extends js.Object {
   val keySystem: java.lang.String
-  def createMediaKeys(): Promise[MediaKeys]
+  def createMediaKeys(): js.Promise[MediaKeys]
   def getConfiguration(): MediaKeySystemConfiguration
 }
 

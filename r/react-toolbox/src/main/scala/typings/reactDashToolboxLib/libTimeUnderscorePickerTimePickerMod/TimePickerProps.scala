@@ -52,27 +52,27 @@ trait TimePickerProps
   /**
      * Callback called when the picker value is changed.
      */
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback fired on Input click.
      */
-  var onClick: js.UndefOr[js.Function] = js.undefined
+  var onClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback fired after dismissing the Dialog.
      */
-  var onDismiss: js.UndefOr[js.Function] = js.undefined
+  var onDismiss: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback called when the ESC key is pressed with the overlay active.
      */
-  var onEscKeyDown: js.UndefOr[js.Function] = js.undefined
+  var onEscKeyDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback invoked on Input key press.
      */
-  var onKeyPress: js.UndefOr[js.Function] = js.undefined
+  var onKeyPress: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback to be invoked when the dialog overlay is clicked.
      */
-  var onOverlayClick: js.UndefOr[js.Function] = js.undefined
+  var onOverlayClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * The input element will be readonly and look like disabled.
      */

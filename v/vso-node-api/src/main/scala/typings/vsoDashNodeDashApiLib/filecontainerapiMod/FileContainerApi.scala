@@ -32,14 +32,14 @@ class FileContainerApi protected ()
     itemPath: java.lang.String,
     scope: java.lang.String,
     options: js.Any
-  ): stdLib.Promise[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainerItem] = js.native
+  ): js.Promise[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainerItem] = js.native
   /**
        * @param {number} containerId
        * @param {string} scope
        * @param {string} itemPath
        * @param {string} downloadFileName
        */
-  def getItem(containerId: scala.Double): stdLib.Promise[
+  def getItem(containerId: scala.Double): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
   /**
@@ -48,7 +48,7 @@ class FileContainerApi protected ()
        * @param {string} itemPath
        * @param {string} downloadFileName
        */
-  def getItem(containerId: scala.Double, scope: java.lang.String): stdLib.Promise[
+  def getItem(containerId: scala.Double, scope: java.lang.String): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
   /**
@@ -57,7 +57,7 @@ class FileContainerApi protected ()
        * @param {string} itemPath
        * @param {string} downloadFileName
        */
-  def getItem(containerId: scala.Double, scope: java.lang.String, itemPath: java.lang.String): stdLib.Promise[
+  def getItem(containerId: scala.Double, scope: java.lang.String, itemPath: java.lang.String): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
   /**
@@ -71,7 +71,7 @@ class FileContainerApi protected ()
     scope: java.lang.String,
     itemPath: java.lang.String,
     downloadFileName: java.lang.String
-  ): stdLib.Promise[
+  ): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
 }

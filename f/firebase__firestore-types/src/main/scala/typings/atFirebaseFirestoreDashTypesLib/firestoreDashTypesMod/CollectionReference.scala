@@ -28,7 +28,7 @@ class CollectionReference protected () extends Query {
      * @return A Promise resolved with a `DocumentReference` pointing to the
      * newly created document after it has been written to the backend.
      */
-  def add(data: DocumentData): stdLib.Promise[DocumentReference] = js.native
+  def add(data: DocumentData): js.Promise[DocumentReference] = js.native
   /**
      * Get a `DocumentReference` for the document within the collection at the
      * specified path. If no path is specified, an automatically-generated

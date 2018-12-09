@@ -13,7 +13,7 @@ trait IGeoObject
   var geometry: IGeometry | scala.Null = js.native
   var properties: IDataManager = js.native
   var state: IDataManager = js.native
-  def getOverlay(): stdLib.Promise[IOverlay | scala.Null] = js.native
+  def getOverlay(): js.Promise[IOverlay | scala.Null] = js.native
   def getOverlaySync(): IOverlay | scala.Null = js.native
 }
 

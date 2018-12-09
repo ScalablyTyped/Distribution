@@ -39,7 +39,7 @@ object AudioNs extends js.Object {
              * - `sound`: the newly created and loaded Sound object.
              * - `status`: the PlaybackStatus of the Sound object.
              */
-    def createNewLoadedSound(): stdLib.Promise[expoLib.Anon_Sound] = js.native
+    def createNewLoadedSound(): js.Promise[expoLib.Anon_Sound] = js.native
     /**
              * Creates and loads a new `Sound` object to play back the `Recording`. Note that this will only succeed once the `Recording` is done recording (once `stopAndUnloadAsync()` has been called).
              *
@@ -50,7 +50,7 @@ object AudioNs extends js.Object {
     def createNewLoadedSound(
       /** The initial intended `PlaybackStatusToSet` of the sound, whose values will override the default initial playback status. This value defaults to `{}` if no parameter is passed. */
     initialStatus: expoLib.expoMod.PlaybackStatusToSet
-    ): stdLib.Promise[expoLib.Anon_Sound] = js.native
+    ): js.Promise[expoLib.Anon_Sound] = js.native
     /**
              * Creates and loads a new `Sound` object to play back the `Recording`. Note that this will only succeed once the `Recording` is done recording (once `stopAndUnloadAsync()` has been called).
              *
@@ -63,9 +63,9 @@ object AudioNs extends js.Object {
     initialStatus: expoLib.expoMod.PlaybackStatusToSet,
       /** A function taking a single parameter `PlaybackStatus`. This value defaults to `null` if no parameter is passed. */
     onPlaybackStatusUpdate: js.Function1[/* status */ expoLib.expoMod.PlaybackStatus, scala.Unit]
-    ): stdLib.Promise[expoLib.Anon_Sound] = js.native
+    ): js.Promise[expoLib.Anon_Sound] = js.native
     /** Gets the `status` of the `Recording`. */
-    def getStatusAsync(): stdLib.Promise[RecordingStatus] = js.native
+    def getStatusAsync(): js.Promise[RecordingStatus] = js.native
     /**
              * Gets the local URI of the Recording. Note that this will only succeed once the Recording is prepared to record.
              *
@@ -77,14 +77,14 @@ object AudioNs extends js.Object {
              *
              * NOTE: This is only available on Android API version 24 and later.
              */
-    def pauseAsync(): stdLib.Promise[RecordingStatus] = js.native
+    def pauseAsync(): js.Promise[RecordingStatus] = js.native
     /** Loads the recorder into memory and prepares it for recording. This must be called before calling `startAsync()`. This method can only be called if the `Recording` instance has never yet been prepared. */
-    def prepareToRecordAsync(): stdLib.Promise[RecordingStatus] = js.native
+    def prepareToRecordAsync(): js.Promise[RecordingStatus] = js.native
     /** Loads the recorder into memory and prepares it for recording. This must be called before calling `startAsync()`. This method can only be called if the `Recording` instance has never yet been prepared. */
     def prepareToRecordAsync(
       /** Options for the recording, including sample rate, bitrate, channels, format, encoder, and extension. If no options are passed to `prepareToRecordAsync()`, the recorder will be created with options `Expo.Audio.RECORDING_OPTIONS_PRESET_LOW_QUALITY`. */
     options: RecordingOptions
-    ): stdLib.Promise[RecordingStatus] = js.native
+    ): js.Promise[RecordingStatus] = js.native
     /** Sets a function to be called regularly with the `status` of the `Recording`. */
     def setOnRecordingStatusUpdate(): scala.Unit = js.native
     /** Sets a function to be called regularly with the `status` of the `Recording`. */
@@ -92,9 +92,9 @@ object AudioNs extends js.Object {
     /** Sets the interval with which onRecordingStatusUpdate is called while the recording can record. This value defaults to 500 milliseconds. */
     def setProgressUpdateInterval(progressUpdateIntervalMillis: scala.Double): scala.Unit = js.native
     /** Begins recording. This method can only be called if the `Recording` has been prepared. */
-    def startAsync(): stdLib.Promise[RecordingStatus] = js.native
+    def startAsync(): js.Promise[RecordingStatus] = js.native
     /** Stops the recording and deallocates the recorder from memory. This reverts the Recording instance to an unprepared state, and another Recording instance must be created in order to record again. This method can only be called if the `Recording` has been prepared. */
-    def stopAndUnloadAsync(): stdLib.Promise[RecordingStatus] = js.native
+    def stopAndUnloadAsync(): js.Promise[RecordingStatus] = js.native
   }
   
   
@@ -175,8 +175,8 @@ object AudioNs extends js.Object {
   val RECORDING_OPTION_IOS_OUTPUT_FORMAT_QDESIGN2: expoLib.expoLibStrings.QDM2 = js.native
   val RECORDING_OPTION_IOS_OUTPUT_FORMAT_QUALCOMM: expoLib.expoLibStrings.Qclp = js.native
   val RECORDING_OPTION_IOS_OUTPUT_FORMAT_ULAW: expoLib.expoLibStrings.ulaw = js.native
-  def setAudioModeAsync(mode: AudioMode): stdLib.Promise[scala.Unit] = js.native
-  def setIsEnabledAsync(value: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def setAudioModeAsync(mode: AudioMode): js.Promise[scala.Unit] = js.native
+  def setIsEnabledAsync(value: scala.Boolean): js.Promise[scala.Unit] = js.native
   @js.native
   object InterruptionModeAndroid extends js.Object {
     /** If this option is set, your experience’s audio interrupts audio from other apps. */
@@ -238,7 +238,7 @@ object AudioNs extends js.Object {
                  * - An `Expo.Asset` object for an audio file asset.
                  */
     source: expoLib.expoMod.PlaybackSource
-    ): stdLib.Promise[expoLib.Anon_Sound] = js.native
+    ): js.Promise[expoLib.Anon_Sound] = js.native
     /**
              * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
              *
@@ -257,7 +257,7 @@ object AudioNs extends js.Object {
     source: expoLib.expoMod.PlaybackSource,
       /** The initial intended PlaybackStatusToSet of the sound, whose values will override the default initial playback status. This value defaults to `{}` if no parameter is passed. */
     initialStatus: expoLib.expoMod.PlaybackStatusToSet
-    ): stdLib.Promise[expoLib.Anon_Sound] = js.native
+    ): js.Promise[expoLib.Anon_Sound] = js.native
     /**
              * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
              *
@@ -278,7 +278,7 @@ object AudioNs extends js.Object {
     initialStatus: expoLib.expoMod.PlaybackStatusToSet,
       /** A function taking a single parameter PlaybackStatus. This value defaults to `null` if no parameter is passed. */
     onPlaybackStatusUpdate: js.Function1[/* status */ expoLib.expoMod.PlaybackStatus, scala.Unit]
-    ): stdLib.Promise[expoLib.Anon_Sound] = js.native
+    ): js.Promise[expoLib.Anon_Sound] = js.native
     /**
              * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
              *
@@ -301,7 +301,7 @@ object AudioNs extends js.Object {
     onPlaybackStatusUpdate: js.Function1[/* status */ expoLib.expoMod.PlaybackStatus, scala.Unit],
       /** If set to true, the system will attempt to download the resource to the device before loading. This value defaults to `true`. Note that at the moment, this will only work for `source`s of the form `require('path/to/file')` or `Asset` objects. */
     downloadFirst: scala.Boolean
-    ): stdLib.Promise[expoLib.Anon_Sound] = js.native
+    ): js.Promise[expoLib.Anon_Sound] = js.native
     /**
              * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
              *
@@ -324,7 +324,7 @@ object AudioNs extends js.Object {
     onPlaybackStatusUpdate: scala.Null,
       /** If set to true, the system will attempt to download the resource to the device before loading. This value defaults to `true`. Note that at the moment, this will only work for `source`s of the form `require('path/to/file')` or `Asset` objects. */
     downloadFirst: scala.Boolean
-    ): stdLib.Promise[expoLib.Anon_Sound] = js.native
+    ): js.Promise[expoLib.Anon_Sound] = js.native
   }
   
   type RecordingStatus = expoLib.Anon_CanRecord | expoLib.Anon_CanRecordTrue | expoLib.Anon_CanRecordFalse

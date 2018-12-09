@@ -11,7 +11,7 @@ object libraryFnReflectEs7DeleteDashMetadataMod
   extends ScalablyTyped.runtime.TopLevel[
       js.Function3[
         /* metadataKey */ js.Any, 
-        /* target */ js.Object, 
+        /* target */ Object, 
         /* targetKey */ js.UndefOr[java.lang.String | js.Symbol], 
         scala.Boolean
       ]

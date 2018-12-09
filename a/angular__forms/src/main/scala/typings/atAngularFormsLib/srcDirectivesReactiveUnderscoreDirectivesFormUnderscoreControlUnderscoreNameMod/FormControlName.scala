@@ -69,7 +69,7 @@ class FormControlName protected ()
        * directive.
        */
   @JSName("asyncValidator")
-  def asyncValidator_MFormControlName(control: atAngularFormsLib.srcModelMod.AbstractControl): (stdLib.Promise[atAngularFormsLib.srcDirectivesValidatorsMod.ValidationErrors | scala.Null]) | (rxjsLib.rxjsMod.Observable[atAngularFormsLib.srcDirectivesValidatorsMod.ValidationErrors | scala.Null]) = js.native
+  def asyncValidator_MFormControlName(control: atAngularFormsLib.srcModelMod.AbstractControl): (js.Promise[atAngularFormsLib.srcDirectivesValidatorsMod.ValidationErrors | scala.Null]) | (rxjsLib.rxjsMod.Observable[atAngularFormsLib.srcDirectivesValidatorsMod.ValidationErrors | scala.Null]) = js.native
   /**
        * A callback method that is invoked immediately after the
        * default change detector has checked data-bound properties

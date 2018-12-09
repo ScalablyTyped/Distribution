@@ -71,12 +71,12 @@ trait Query extends BaseObject {
   def addDescending(key: js.Array[java.lang.String]): Query = js.native
   def ascending(key: java.lang.String): Query = js.native
   def ascending(key: js.Array[java.lang.String]): Query = js.native
-  def collection(): Collection[js.Object] = js.native
-  def collection(items: js.Array[js.Object]): Collection[js.Object] = js.native
+  def collection(): Collection[Object] = js.native
+  def collection(items: js.Array[Object]): Collection[Object] = js.native
   def collection(
-    items: js.Array[js.Object],
+    items: js.Array[Object],
     options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.CollectionNs.Options
-  ): Collection[js.Object] = js.native
+  ): Collection[Object] = js.native
   def containedIn(key: java.lang.String, values: js.Array[_]): Query = js.native
   def contains(key: java.lang.String, substring: java.lang.String): Query = js.native
   def containsAll(key: java.lang.String, values: js.Array[_]): Query = js.native

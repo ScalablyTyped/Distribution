@@ -14,14 +14,14 @@ trait Question[T] extends js.Object {
            * (to save in the answers hash). Values can also be a Separator.
            */
   var choices: js.UndefOr[
-    js.Array[ChoiceType] | (js.Function1[/* answers */ T, js.Array[ChoiceType]]) | (js.Function1[/* answers */ T, stdLib.Promise[js.Array[ChoiceType]]])
+    js.Array[ChoiceType] | (js.Function1[/* answers */ T, js.Array[ChoiceType]]) | (js.Function1[/* answers */ T, js.Promise[js.Array[ChoiceType]]])
   ] = js.undefined
   /**
            * Default value(s) to use if nothing is entered, or a function that returns the default value(s).
            * If defined as a function, the first parameter will be the current inquirer session answers.
            */
   var default: js.UndefOr[
-    js.Any | (js.Function1[/* answers */ T, _]) | (js.Function1[/* answers */ T, stdLib.Promise[_]])
+    js.Any | (js.Function1[/* answers */ T, _]) | (js.Function1[/* answers */ T, js.Promise[_]])
   ] = js.undefined
   /**
            * Receive the user input and return the filtered value to be used inside the program.
@@ -81,7 +81,7 @@ trait Question[T] extends js.Object {
     js.Function2[
       /* input */ js.Any, 
       /* answers */ js.UndefOr[T], 
-      scala.Boolean | java.lang.String | (stdLib.Promise[scala.Boolean | java.lang.String])
+      scala.Boolean | java.lang.String | (js.Promise[scala.Boolean | java.lang.String])
     ]
   ] = js.undefined
   /**
@@ -89,7 +89,7 @@ trait Question[T] extends js.Object {
            * not this question should be asked. The value can also be a simple boolean.
            */
   var when: js.UndefOr[
-    scala.Boolean | (js.Function1[/* answers */ T, scala.Boolean]) | (js.Function1[/* answers */ T, stdLib.Promise[scala.Boolean]])
+    scala.Boolean | (js.Function1[/* answers */ T, scala.Boolean]) | (js.Function1[/* answers */ T, js.Promise[scala.Boolean]])
   ] = js.undefined
 }
 

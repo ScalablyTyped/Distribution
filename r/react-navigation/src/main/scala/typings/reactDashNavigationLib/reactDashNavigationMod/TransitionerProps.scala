@@ -20,7 +20,7 @@ trait TransitionerProps extends js.Object {
     js.Function2[
       /* transitionProps */ NavigationTransitionProps, 
       /* prevTransitionProps */ js.UndefOr[NavigationTransitionProps], 
-      stdLib.Promise[scala.Unit] | scala.Unit
+      js.Promise[scala.Unit] | scala.Unit
     ]
   ] = js.native
   var style: js.UndefOr[

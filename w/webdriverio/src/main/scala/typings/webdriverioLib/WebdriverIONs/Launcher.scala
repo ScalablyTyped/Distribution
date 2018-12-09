@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Launcher protected () extends js.Object {
   def this(file: java.lang.String, data: Options) = this()
-  def run(): stdLib.Promise[_] = js.native
+  def run(): js.Promise[_] = js.native
 }
 

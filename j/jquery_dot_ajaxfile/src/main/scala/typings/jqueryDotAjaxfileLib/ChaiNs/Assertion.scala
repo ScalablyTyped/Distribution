@@ -83,8 +83,8 @@ trait Assertion
   def closeTo(expected: scala.Double, delta: scala.Double, message: java.lang.String): Assertion = js.native
   def contain(value: java.lang.String): Assertion = js.native
   def contain(value: java.lang.String, message: java.lang.String): Assertion = js.native
-  def contain(value: js.Object): Assertion = js.native
-  def contain(value: js.Object, message: java.lang.String): Assertion = js.native
+  def contain(value: jqueryDotAjaxfileLib.Object): Assertion = js.native
+  def contain(value: jqueryDotAjaxfileLib.Object, message: java.lang.String): Assertion = js.native
   def contain(value: scala.Double): Assertion = js.native
   def contain(value: scala.Double, message: java.lang.String): Assertion = js.native
   def eq(value: js.Any): Assertion = js.native
@@ -101,8 +101,8 @@ trait Assertion
   def haveOwnProperty(name: java.lang.String, message: java.lang.String): Assertion = js.native
   def include(value: java.lang.String): Assertion = js.native
   def include(value: java.lang.String, message: java.lang.String): Assertion = js.native
-  def include(value: js.Object): Assertion = js.native
-  def include(value: js.Object, message: java.lang.String): Assertion = js.native
+  def include(value: jqueryDotAjaxfileLib.Object): Assertion = js.native
+  def include(value: jqueryDotAjaxfileLib.Object, message: java.lang.String): Assertion = js.native
   def include(value: scala.Double): Assertion = js.native
   def include(value: scala.Double, message: java.lang.String): Assertion = js.native
   def key(string: java.lang.String): Assertion = js.native

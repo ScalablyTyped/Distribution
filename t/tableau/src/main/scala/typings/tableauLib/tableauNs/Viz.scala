@@ -40,7 +40,7 @@ class Viz protected () extends js.Object {
   /** Indicates whether the tabs are displayed in the UI. It does not actually hide individual tabs. */
   def getAreTabsHidden(): scala.Boolean = js.native
   /** Gets the URL of the visualization asynchronously. */
-  def getCurrentUrlAsync(): stdLib.Promise[java.lang.String] = js.native
+  def getCurrentUrlAsync(): js.Promise[java.lang.String] = js.native
   /** Indicates whether the visualization is displayed on the hosting page. */
   def getIsHidden(): scala.Boolean = js.native
   /** Returns the node that was specified in the constructor. */
@@ -56,14 +56,14 @@ class Viz protected () extends js.Object {
   /** Pauses or resumes layout updates. This is useful if you are resizing the visualization or performing multiple calls that could affect the layout. */
   def pauseAutomaticUpdatesAsync(): scala.Unit = js.native
   /** Redoes last action on a sheet, defaults to a single redo unless optional parameters is specified. */
-  def redoAsync(): stdLib.Promise[scala.Unit] = js.native
+  def redoAsync(): js.Promise[scala.Unit] = js.native
   /** Equivalent to clicking on the Refresh Data toolbar button. */
-  def refreshDataAsync(): stdLib.Promise[scala.Unit] = js.native
+  def refreshDataAsync(): js.Promise[scala.Unit] = js.native
   /** Removes an event listener from the specified event. */
   def removeEventListener(`type`: TableauEventName, f: ListenerFunction[TableauEvent]): scala.Unit = js.native
   def resumeAutomaticUpdatesAsync(): scala.Unit = js.native
   /** Equivalent to clicking on the Revert All toolbar button, which restores the workbook to its starting state. */
-  def revertAllAsync(): stdLib.Promise[scala.Unit] = js.native
+  def revertAllAsync(): js.Promise[scala.Unit] = js.native
   /**
            * Sets the size of the iframe element, which causes the visualization to expand or
            * collapse to fit the iframe element if the visualization size (current sheet's size) is set to AUTOMATIC.
@@ -105,6 +105,6 @@ class Viz protected () extends js.Object {
   def showShareDialog(): scala.Unit = js.native
   def toggleAutomaticUpdatesAsync(): scala.Unit = js.native
   /** Undoes action on sheet, defaults to a single undo unless optional parameters is specified. */
-  def undoAsync(): stdLib.Promise[scala.Unit] = js.native
+  def undoAsync(): js.Promise[scala.Unit] = js.native
 }
 

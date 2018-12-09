@@ -59,18 +59,18 @@ trait CollectionEvents extends js.Object {
            */
   def one(events: EventNames, selector: java.lang.String, data: js.Any, handler: EventHandler): this.type = js.native
   def one(events: EventNames, selector: java.lang.String, handler: EventHandler): this.type = js.native
-  def pon(events: EventNames): stdLib.Promise[EventHandler] = js.native
-  def pon(events: EventNames, selector: java.lang.String): stdLib.Promise[EventHandler] = js.native
+  def pon(events: EventNames): js.Promise[EventHandler] = js.native
+  def pon(events: EventNames, selector: java.lang.String): js.Promise[EventHandler] = js.native
   /**
            * http://js.cytoscape.org/#eles.promiseOn
            * alias: pon
            */
-  def promiseOn(events: EventNames): stdLib.Promise[EventHandler] = js.native
+  def promiseOn(events: EventNames): js.Promise[EventHandler] = js.native
   /**
            * http://js.cytoscape.org/#eles.promiseOn
            * alias: pon
            */
-  def promiseOn(events: EventNames, selector: java.lang.String): stdLib.Promise[EventHandler] = js.native
+  def promiseOn(events: EventNames, selector: java.lang.String): js.Promise[EventHandler] = js.native
   def removeListener(events: EventNames): this.type = js.native
   def removeListener(events: EventNames, selector: java.lang.String): this.type = js.native
   def removeListener(events: EventNames, selector: java.lang.String, handler: EventHandler): this.type = js.native

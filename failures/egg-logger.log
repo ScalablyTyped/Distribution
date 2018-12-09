@@ -3,7 +3,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(egg-logger)) [id => egg-logger, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(egg-logger) [id => egg-logger, phase => typescript] 
 [info ] UnionTypesFromKeyOf.scala:11 Expanded keyof TsQIdent(List(TsIdentLibrarySimple(egg-logger), TsIdentModule(None,List(egg-logger)), TsIdentSimple(ILoggerLevel))) [id => egg-logger, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(egg-logger) / TsDeclTypeAlias(LoggerLevel) / TsTypeKeyOf())] 
-[error] PhaseRes.scala:75 Caught exception [id => egg-logger, phase => typescript] java.lang.RuntimeException: Type parameter not provided
+[error] PhaseRes.scala:75 Caught exception: Type parameter not provided [id => egg-logger, phase => typescript] java.lang.RuntimeException: Type parameter not provided
 	at scala.sys.package$.error(package.scala:26)
 	at com.olvind.tso.ts.FillInTParams$.$anonfun$rewriter$2(FillInTParams.scala:34)
 	at scala.Option.getOrElse(Option.scala:121)

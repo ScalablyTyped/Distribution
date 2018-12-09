@@ -11,6 +11,6 @@ trait AuthProvider extends js.Object {
     req: expressLib.expressMod.eNs.Request,
     res: expressLib.expressMod.eNs.Response,
     next: expressLib.expressMod.eNs.NextFunction
-  ): stdLib.Promise[Principal]
+  ): js.Promise[Principal]
 }
 

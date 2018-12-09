@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @js.native
-trait Moment extends js.Object {
+@js.native
+trait Moment
+  extends stdLib.Object {
   def holiday(): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
   def holiday(holidays: java.lang.String): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
   def holiday(holidays: java.lang.String, adjust: scala.Boolean): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native

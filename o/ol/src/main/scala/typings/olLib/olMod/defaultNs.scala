@@ -46,8 +46,7 @@ object defaultNs extends js.Object {
     def this(options: openlayersLib.openlayersMod.olxNs.AttributionOptions) = this()
   }
   
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
+  @js.native
   class Collection[T] ()
     extends openlayersLib.openlayersMod.Collection[T] {
     /**
@@ -66,8 +65,7 @@ object defaultNs extends js.Object {
     def this(opt_array: js.Array[T]) = this()
   }
   
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
+  @js.native
   class DeviceOrientation ()
     extends openlayersLib.openlayersMod.DeviceOrientation {
     /**
@@ -130,8 +128,7 @@ object defaultNs extends js.Object {
   class Disposable ()
     extends openlayersLib.openlayersMod.Disposable
   
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
+  @js.native
   class Feature ()
     extends openlayersLib.openlayersMod.Feature {
     /**
@@ -224,8 +221,7 @@ object defaultNs extends js.Object {
     def this(opt_geometryOrProperties: openlayersLib.openlayersMod.geomNs.Geometry) = this()
   }
   
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
+  @js.native
   class Geolocation ()
     extends openlayersLib.openlayersMod.Geolocation {
     /**
@@ -360,8 +356,7 @@ object defaultNs extends js.Object {
     def this(decay: scala.Double, minVelocity: scala.Double, delay: scala.Double) = this()
   }
   
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
+  @js.native
   class Map protected ()
     extends openlayersLib.openlayersMod.Map {
     /**
@@ -551,8 +546,7 @@ object defaultNs extends js.Object {
   class Observable ()
     extends openlayersLib.openlayersMod.Observable
   
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
+  @js.native
   class Overlay protected ()
     extends openlayersLib.openlayersMod.Overlay {
     /**
@@ -624,8 +618,7 @@ object defaultNs extends js.Object {
     def this(tileCoord: openlayersLib.openlayersMod.TileCoord, state: openlayersLib.openlayersMod.TileNs.State, src: java.lang.String, format: openlayersLib.openlayersMod.formatNs.Feature, tileLoadFunction: openlayersLib.openlayersMod.TileLoadFunctionType) = this()
   }
   
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
+  @js.native
   class View ()
     extends openlayersLib.openlayersMod.View {
     /**
@@ -900,8 +893,7 @@ object defaultNs extends js.Object {
          * @param options Control options.
          * @api stable
          */
-    /* RemoveDifficultInheritance: 
-    - Dropped Object */ @js.native
+    @js.native
     class Control protected ()
       extends openlayersLib.openlayersMod.controlNs.Control {
       /**
@@ -3753,8 +3745,7 @@ object defaultNs extends js.Object {
          *
          * @api stable
          */
-    /* RemoveDifficultInheritance: 
-    - Dropped Object */ @js.native
+    @js.native
     class Geometry ()
       extends openlayersLib.openlayersMod.geomNs.Geometry
     
@@ -4369,8 +4360,7 @@ object defaultNs extends js.Object {
          * @param options Options.
          * @api
          */
-    /* RemoveDifficultInheritance: 
-    - Dropped Object */ @js.native
+    @js.native
     class Interaction protected ()
       extends openlayersLib.openlayersMod.interactionNs.Interaction {
       /**
@@ -5183,8 +5173,7 @@ object defaultNs extends js.Object {
          * @param options Layer options.
          * @api stable
          */
-    /* RemoveDifficultInheritance: 
-    - Dropped Object */ @js.native
+    @js.native
     class Base protected ()
       extends openlayersLib.openlayersMod.layerNs.Base {
       /**
@@ -6268,8 +6257,7 @@ object defaultNs extends js.Object {
          * @param options Source options.
          * @api stable
          */
-    /* RemoveDifficultInheritance: 
-    - Dropped Object */ @js.native
+    @js.native
     class Source protected ()
       extends openlayersLib.openlayersMod.sourceNs.Source {
       /**

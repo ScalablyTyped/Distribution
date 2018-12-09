@@ -10,7 +10,7 @@ trait IDialogService
   extends // indexer used to call preset dialog created with $mdDialogProvider
 // see: https://material.angularjs.org/latest/api/service/$mdDialog#custom-presets
 // tslint:disable-next-line:ban-types
-/* presetName */ ScalablyTyped.runtime.StringDictionary[js.Function] {
+/* presetName */ ScalablyTyped.runtime.StringDictionary[angularLib.angularMod.Global.Function] {
   def alert(): IAlertDialog = js.native
   def cancel(): scala.Unit = js.native
   def cancel(response: js.Any): scala.Unit = js.native

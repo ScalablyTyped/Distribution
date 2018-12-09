@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Products extends js.Object {
-  def create(data: stripeLib.stripeMod.StripeNs.productsNs.IProductCreationOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  def create(data: stripeLib.stripeMod.StripeNs.productsNs.IProductCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   /**
                * Creates a new product object.
                */
   def create(
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   /**
                * Creates a new product object.
                */
@@ -22,16 +22,16 @@ trait Products extends js.Object {
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   def create(
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
-  def del(productId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  def del(productId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**
                * Delete a product. Deleting a product is only possible if it has no SKUs associated with it.
                */
-  def del(productId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  def del(productId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**
                * Delete a product. Deleting a product is only possible if it has no SKUs associated with it.
                */
@@ -39,15 +39,15 @@ trait Products extends js.Object {
     productId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IDeleteConfirmation]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   def del(
     productId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IDeleteConfirmation]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
-  def list(): stdLib.Promise[
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  def list(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.productsNs.IProductListOptions): stdLib.Promise[
+  def list(data: stripeLib.stripeMod.StripeNs.productsNs.IProductListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
   /**
@@ -56,7 +56,7 @@ trait Products extends js.Object {
   def list(
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
   /**
@@ -68,7 +68,7 @@ trait Products extends js.Object {
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
   def list(
@@ -76,10 +76,10 @@ trait Products extends js.Object {
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
-  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
   def list(
@@ -87,18 +87,18 @@ trait Products extends js.Object {
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
   ] = js.native
-  def retrieve(productId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
-  def retrieve(productId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  def retrieve(productId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  def retrieve(productId: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   /**
                * Retrieves the details of an existing product. Supply the unique product ID from either a product creation request or the product
                * list, and Stripe will return the corresponding product information.
@@ -107,7 +107,7 @@ trait Products extends js.Object {
     productId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   /**
                * Retrieves the details of an existing product. Supply the unique product ID from either a product creation request or the product
                * list, and Stripe will return the corresponding product information.
@@ -117,23 +117,23 @@ trait Products extends js.Object {
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   def retrieve(
     productId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
-  def retrieve(productId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  def retrieve(productId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   def retrieve(
     productId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   def retrieve(
     productId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
-  def update(productId: java.lang.String, data: stripeLib.stripeMod.StripeNs.productsNs.IProductUpdateOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  def update(productId: java.lang.String, data: stripeLib.stripeMod.StripeNs.productsNs.IProductUpdateOptions): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   /**
                * Updates the specific product by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
                *
@@ -144,7 +144,7 @@ trait Products extends js.Object {
     productId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   /**
                * Updates the specific product by setting the values of the parameters passed. Any parameters not provided will be left unchanged.
                *
@@ -156,11 +156,11 @@ trait Products extends js.Object {
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
   def update(
     productId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.productsNs.IProductUpdateOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.productsNs.IProduct]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.productsNs.IProduct] = js.native
 }
 

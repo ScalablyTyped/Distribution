@@ -20,12 +20,12 @@ class Polly protected () extends js.Object {
   def disconnect(): scala.Unit = js.native
   def disconnectFrom(name: ScalablyTyped.runtime.Instantiable0[atPollyjsAdapterLib.adapterMod.default]): scala.Unit = js.native
   def disconnectFrom(name: java.lang.String): scala.Unit = js.native
-  def flush(): stdLib.Promise[scala.Unit] = js.native
+  def flush(): js.Promise[scala.Unit] = js.native
   def pause(): scala.Unit = js.native
   def play(): scala.Unit = js.native
   def record(): scala.Unit = js.native
   def replay(): scala.Unit = js.native
-  def stop(): stdLib.Promise[scala.Unit] = js.native
+  def stop(): js.Promise[scala.Unit] = js.native
 }
 
 @JSImport("@pollyjs/core", "Polly")

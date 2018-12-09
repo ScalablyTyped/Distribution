@@ -195,7 +195,7 @@ class File protected ()
        * region_tag:storage_copy_file
        * Another example:
        */
-  def copy(destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket): stdLib.Promise[CopyResponse] = js.native
+  def copy(destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket): js.Promise[CopyResponse] = js.native
   def copy(destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, callback: CopyCallback): scala.Unit = js.native
   def copy(
     destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket,
@@ -308,7 +308,7 @@ class File protected ()
        * region_tag:storage_copy_file
        * Another example:
        */
-  def copy(destination: File): stdLib.Promise[CopyResponse] = js.native
+  def copy(destination: File): js.Promise[CopyResponse] = js.native
   def copy(destination: File, callback: CopyCallback): scala.Unit = js.native
   def copy(destination: File, options: CopyOptions, callback: CopyCallback): scala.Unit = js.native
   /**
@@ -417,7 +417,7 @@ class File protected ()
        * region_tag:storage_copy_file
        * Another example:
        */
-  def copy(destination: java.lang.String): stdLib.Promise[CopyResponse] = js.native
+  def copy(destination: java.lang.String): js.Promise[CopyResponse] = js.native
   def copy(destination: java.lang.String, callback: CopyCallback): scala.Unit = js.native
   def copy(destination: java.lang.String, options: CopyOptions, callback: CopyCallback): scala.Unit = js.native
   /**
@@ -665,7 +665,7 @@ class File protected ()
        *   const uri = data[0];
        * });
        */
-  def createResumableUpload(): stdLib.Promise[CreateResumableUploadResponse] = js.native
+  def createResumableUpload(): js.Promise[CreateResumableUploadResponse] = js.native
   def createResumableUpload(callback: CreateResumableUploadCallback): scala.Unit = js.native
   /**
        * Create a unique resumable upload session URI. This is the first step when
@@ -734,7 +734,7 @@ class File protected ()
        *   const uri = data[0];
        * });
        */
-  def createResumableUpload(options: CreateResumableUploadOptions): stdLib.Promise[CreateResumableUploadResponse] = js.native
+  def createResumableUpload(options: CreateResumableUploadOptions): js.Promise[CreateResumableUploadResponse] = js.native
   def createResumableUpload(options: CreateResumableUploadOptions, callback: CreateResumableUploadCallback): scala.Unit = js.native
   /**
        * Create a writable stream to overwrite the contents of the file in your
@@ -962,7 +962,7 @@ class File protected ()
        * region_tag:storage_delete_file
        * Another example:
        */
-  def delete(options: DeleteFileOptions): stdLib.Promise[DeleteFileResponse] = js.native
+  def delete(options: DeleteFileOptions): js.Promise[DeleteFileResponse] = js.native
   def delete(options: DeleteFileOptions, callback: DeleteFileCallback): scala.Unit = js.native
   /**
        * Convenience method to download a file into memory or to a local
@@ -1017,7 +1017,7 @@ class File protected ()
        * region_tag:storage_download_file_requester_pays
        * Example of downloading a file where the requester pays:
        */
-  def download(): stdLib.Promise[DownloadResponse] = js.native
+  def download(): js.Promise[DownloadResponse] = js.native
   def download(callback: DownloadCallback): scala.Unit = js.native
   /**
        * Convenience method to download a file into memory or to a local
@@ -1072,7 +1072,7 @@ class File protected ()
        * region_tag:storage_download_file_requester_pays
        * Example of downloading a file where the requester pays:
        */
-  def download(options: DownloadOptions): stdLib.Promise[DownloadResponse] = js.native
+  def download(options: DownloadOptions): js.Promise[DownloadResponse] = js.native
   def download(options: DownloadOptions, callback: DownloadCallback): scala.Unit = js.native
   /**
        * Check if the file exists.
@@ -1099,7 +1099,7 @@ class File protected ()
        *   const exists = data[0];
        * });
        */
-  def exists(options: FileExistsOptions): stdLib.Promise[FileExistsResponse] = js.native
+  def exists(options: FileExistsOptions): js.Promise[FileExistsResponse] = js.native
   def exists(options: FileExistsOptions, callback: FileExistsCallback): scala.Unit = js.native
   /**
        * Get a file object and its metadata if it exists.
@@ -1129,7 +1129,7 @@ class File protected ()
        *   const apiResponse = data[1];
        * });
        */
-  def get(options: GetFileOptions): stdLib.Promise[GetFileResponse] = js.native
+  def get(options: GetFileOptions): js.Promise[GetFileResponse] = js.native
   def get(options: GetFileOptions, callback: GetFileCallback): scala.Unit = js.native
   /**
        * @typedef {array} GetExpirationDateResponse
@@ -1159,7 +1159,7 @@ class File protected ()
        *   // expirationDate is a Date object.
        * });
        */
-  def getExpirationDate(): stdLib.Promise[GetExpirationDateResponse] = js.native
+  def getExpirationDate(): js.Promise[GetExpirationDateResponse] = js.native
   def getExpirationDate(callback: GetExpirationDateCallback): scala.Unit = js.native
   /**
        * @typedef {array} GetFileMetadataResponse
@@ -1204,7 +1204,7 @@ class File protected ()
        * region_tag:storage_get_metadata
        * Another example:
        */
-  def getMetadata(options: GetFileMetadataOptions): stdLib.Promise[GetFileMetadataResponse] = js.native
+  def getMetadata(options: GetFileMetadataOptions): js.Promise[GetFileMetadataResponse] = js.native
   def getMetadata(options: GetFileMetadataOptions, callback: GetFileMetadataCallback): scala.Unit = js.native
   def getSignedPolicy(callback: GetSignedPolicyCallback): scala.Unit = js.native
   /**
@@ -1295,7 +1295,7 @@ class File protected ()
        *   const policy = data[0];
        * });
        */
-  def getSignedPolicy(options: GetSignedPolicyOptions): stdLib.Promise[GetSignedPolicyResponse] = js.native
+  def getSignedPolicy(options: GetSignedPolicyOptions): js.Promise[GetSignedPolicyResponse] = js.native
   def getSignedPolicy(options: GetSignedPolicyOptions, callback: GetSignedPolicyCallback): scala.Unit = js.native
   /**
        * Get a signed URL to allow limited time access to the file.
@@ -1411,7 +1411,7 @@ class File protected ()
        * region_tag:storage_generate_signed_url
        * Another example:
        */
-  def getSignedUrl(cfg: GetSignedUrlConfig): stdLib.Promise[GetSignedUrlResponse] = js.native
+  def getSignedUrl(cfg: GetSignedUrlConfig): js.Promise[GetSignedUrlResponse] = js.native
   def getSignedUrl(cfg: GetSignedUrlConfig, callback: GetSignedUrlCallback): scala.Unit = js.native
   /**
        * Make a file private to the project and remove all other permissions.
@@ -1447,7 +1447,7 @@ class File protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def makePrivate(): stdLib.Promise[MakeFilePrivateResponse] = js.native
+  def makePrivate(): js.Promise[MakeFilePrivateResponse] = js.native
   def makePrivate(callback: MakeFilePrivateCallback): scala.Unit = js.native
   /**
        * Make a file private to the project and remove all other permissions.
@@ -1483,7 +1483,7 @@ class File protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def makePrivate(options: MakeFilePrivateOptions): stdLib.Promise[MakeFilePrivateResponse] = js.native
+  def makePrivate(options: MakeFilePrivateOptions): js.Promise[MakeFilePrivateResponse] = js.native
   def makePrivate(options: MakeFilePrivateOptions, callback: MakeFilePrivateCallback): scala.Unit = js.native
   /**
        * @callback MakeFilePublicCallback
@@ -1518,7 +1518,7 @@ class File protected ()
        * region_tag:storage_make_public
        * Another example:
        */
-  def makePublic(): stdLib.Promise[MakeFilePublicResponse] = js.native
+  def makePublic(): js.Promise[MakeFilePublicResponse] = js.native
   def makePublic(callback: MakeFilePublicCallback): scala.Unit = js.native
   /**
        * Move this file to another location. By default, this will rename the file
@@ -1630,7 +1630,7 @@ class File protected ()
        * region_tag:storage_move_file
        * Another example:
        */
-  def move(destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket): stdLib.Promise[MoveResponse] = js.native
+  def move(destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket): js.Promise[MoveResponse] = js.native
   def move(destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, callback: MoveCallback): scala.Unit = js.native
   /**
        * Move this file to another location. By default, this will rename the file
@@ -1742,7 +1742,7 @@ class File protected ()
        * region_tag:storage_move_file
        * Another example:
        */
-  def move(destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, options: MoveOptions): stdLib.Promise[MoveResponse] = js.native
+  def move(destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, options: MoveOptions): js.Promise[MoveResponse] = js.native
   def move(
     destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket,
     options: MoveOptions,
@@ -1858,7 +1858,7 @@ class File protected ()
        * region_tag:storage_move_file
        * Another example:
        */
-  def move(destination: File): stdLib.Promise[MoveResponse] = js.native
+  def move(destination: File): js.Promise[MoveResponse] = js.native
   def move(destination: File, callback: MoveCallback): scala.Unit = js.native
   /**
        * Move this file to another location. By default, this will rename the file
@@ -1970,7 +1970,7 @@ class File protected ()
        * region_tag:storage_move_file
        * Another example:
        */
-  def move(destination: File, options: MoveOptions): stdLib.Promise[MoveResponse] = js.native
+  def move(destination: File, options: MoveOptions): js.Promise[MoveResponse] = js.native
   def move(destination: File, options: MoveOptions, callback: MoveCallback): scala.Unit = js.native
   /**
        * Move this file to another location. By default, this will rename the file
@@ -2082,7 +2082,7 @@ class File protected ()
        * region_tag:storage_move_file
        * Another example:
        */
-  def move(destination: java.lang.String): stdLib.Promise[MoveResponse] = js.native
+  def move(destination: java.lang.String): js.Promise[MoveResponse] = js.native
   def move(destination: java.lang.String, callback: MoveCallback): scala.Unit = js.native
   /**
        * Move this file to another location. By default, this will rename the file
@@ -2194,7 +2194,7 @@ class File protected ()
        * region_tag:storage_move_file
        * Another example:
        */
-  def move(destination: java.lang.String, options: MoveOptions): stdLib.Promise[MoveResponse] = js.native
+  def move(destination: java.lang.String, options: MoveOptions): js.Promise[MoveResponse] = js.native
   def move(destination: java.lang.String, options: MoveOptions, callback: MoveCallback): scala.Unit = js.native
   /**
        * This method allows you to update the encryption key associated with this
@@ -2210,7 +2210,7 @@ class File protected ()
        * region_tag:storage_rotate_encryption_key
        * Example of rotating the encryption key for this file:
        */
-  def rotateEncryptionKey(): stdLib.Promise[RotateEncryptionKeyResponse] = js.native
+  def rotateEncryptionKey(): js.Promise[RotateEncryptionKeyResponse] = js.native
   def rotateEncryptionKey(callback: RotateEncryptionKeyCallback): scala.Unit = js.native
   /**
        * This method allows you to update the encryption key associated with this
@@ -2226,7 +2226,7 @@ class File protected ()
        * region_tag:storage_rotate_encryption_key
        * Example of rotating the encryption key for this file:
        */
-  def rotateEncryptionKey(options: RotateEncryptionKeyOptions): stdLib.Promise[RotateEncryptionKeyResponse] = js.native
+  def rotateEncryptionKey(options: RotateEncryptionKeyOptions): js.Promise[RotateEncryptionKeyResponse] = js.native
   def rotateEncryptionKey(options: RotateEncryptionKeyOptions, callback: RotateEncryptionKeyCallback): scala.Unit = js.native
   /**
        * Write arbitrary data to a file.
@@ -2268,7 +2268,7 @@ class File protected ()
        * //-
        * file.save(contents).then(function() {});
        */
-  def save(data: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def save(data: js.Any): js.Promise[scala.Unit] = js.native
   def save(data: js.Any, callback: SaveCallback): scala.Unit = js.native
   /**
        * Write arbitrary data to a file.
@@ -2310,7 +2310,7 @@ class File protected ()
        * //-
        * file.save(contents).then(function() {});
        */
-  def save(data: js.Any, options: SaveOptions): stdLib.Promise[scala.Unit] = js.native
+  def save(data: js.Any, options: SaveOptions): js.Promise[scala.Unit] = js.native
   def save(data: js.Any, options: SaveOptions, callback: SaveCallback): scala.Unit = js.native
   /**
        * The Storage API allows you to use a custom key for server-side encryption.
@@ -2478,13 +2478,41 @@ class File protected ()
   def setMetadata(
     metadata: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata,
     options: SetFileMetadataOptions
-  ): stdLib.Promise[SetFileMetadataResponse] = js.native
+  ): js.Promise[SetFileMetadataResponse] = js.native
   def setMetadata(
     metadata: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata,
     options: SetFileMetadataOptions,
     callback: SetFileMetadataCallback
   ): scala.Unit = js.native
-  def setStorageClass(storageClass: java.lang.String): scala.Unit = js.native
+  /**
+       * Set the storage class for this file.
+       *
+       * @see [Per-Object Storage Class]{@link https://cloud.google.com/storage/docs/per-object-storage-class}
+       * @see [Storage Classes]{@link https://cloud.google.com/storage/docs/storage-classes}
+       *
+       * @param {string} storageClass The new storage class. (`multi_regional`,
+       *     `regional`, `nearline`, `coldline`)
+       * @param {SetStorageClassOptions} [options] Configuration options.
+       * @param {string} [options.userProject] The ID of the project which will be
+       *     billed for the request.
+       * @param {SetStorageClassCallback} [callback] Callback function.
+       * @returns {Promise<SetStorageClassResponse>}
+       *
+       * @example
+       * file.setStorageClass('regional', function(err, apiResponse) {
+       *   if (err) {
+       *     // Error handling omitted.
+       *   }
+       *
+       *   // The storage class was updated successfully.
+       * });
+       *
+       * //-
+       * // If the callback is omitted, we'll return a Promise.
+       * //-
+       * file.setStorageClass('regional').then(function() {});
+       */
+  def setStorageClass(storageClass: java.lang.String): js.Promise[SetStorageClassResponse] = js.native
   def setStorageClass(storageClass: java.lang.String, callback: SetStorageClassCallback): scala.Unit = js.native
   /**
        * Set the storage class for this file.
@@ -2514,38 +2542,10 @@ class File protected ()
        * //-
        * file.setStorageClass('regional').then(function() {});
        */
-  def setStorageClass(storageClass: java.lang.String, options: SetStorageClassOptions): stdLib.Promise[SetStorageClassResponse] = js.native
+  def setStorageClass(storageClass: java.lang.String, options: SetStorageClassOptions): js.Promise[SetStorageClassResponse] = js.native
   def setStorageClass(storageClass: java.lang.String, options: SetStorageClassOptions, callback: SetStorageClassCallback): scala.Unit = js.native
-  /**
-       * Set the storage class for this file.
-       *
-       * @see [Per-Object Storage Class]{@link https://cloud.google.com/storage/docs/per-object-storage-class}
-       * @see [Storage Classes]{@link https://cloud.google.com/storage/docs/storage-classes}
-       *
-       * @param {string} storageClass The new storage class. (`multi_regional`,
-       *     `regional`, `nearline`, `coldline`)
-       * @param {SetStorageClassOptions} [options] Configuration options.
-       * @param {string} [options.userProject] The ID of the project which will be
-       *     billed for the request.
-       * @param {SetStorageClassCallback} [callback] Callback function.
-       * @returns {Promise<SetStorageClassResponse>}
-       *
-       * @example
-       * file.setStorageClass('regional', function(err, apiResponse) {
-       *   if (err) {
-       *     // Error handling omitted.
-       *   }
-       *
-       *   // The storage class was updated successfully.
-       * });
-       *
-       * //-
-       * // If the callback is omitted, we'll return a Promise.
-       * //-
-       * file.setStorageClass('regional').then(function() {});
-       */
   @JSName("setStorageClass")
-  def setStorageClass_Promise(storageClass: java.lang.String): stdLib.Promise[SetStorageClassResponse] = js.native
+  def setStorageClass_Unit(storageClass: java.lang.String): scala.Unit = js.native
   /**
        * Set a user project to be billed for all requests made from this File
        * object.

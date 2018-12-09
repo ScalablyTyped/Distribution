@@ -17,9 +17,9 @@ trait MessageView extends js.Object {
   def getDateString(): java.lang.String = js.native
   def getFileAttachmentCardViews(): js.Array[AttachmentCardView] = js.native
   def getLinksInBody(): js.Array[MessageViewLinkDescriptor] = js.native
-  def getMessageIDAsync(): stdLib.Promise[java.lang.String] = js.native
+  def getMessageIDAsync(): js.Promise[java.lang.String] = js.native
   def getRecipientEmailAddresses(): js.Array[java.lang.String] = js.native
-  def getRecipientsFull(): stdLib.Promise[js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact]] = js.native
+  def getRecipientsFull(): js.Promise[js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact]] = js.native
   def getSender(): inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact = js.native
   def getThreadView(): ThreadView = js.native
   // addAttachmentIcon(iconDescriptor: Stream<MessageAttachmentIconDescriptor>): void;

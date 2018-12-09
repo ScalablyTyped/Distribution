@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IBalloonManager[T] extends IPopupManager[T] {
-  def autoPan(): stdLib.Promise[T] = js.native
+  def autoPan(): js.Promise[T] = js.native
 }
 

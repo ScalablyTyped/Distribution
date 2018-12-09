@@ -39,9 +39,9 @@ class JSDOM () extends js.Object {
 @js.native
 object JSDOM extends js.Object {
   def fragment(html: java.lang.String): stdLib.DocumentFragment = js.native
-  def fromFile(url: java.lang.String): stdLib.Promise[jsdomLib.jsdomMod.JSDOM] = js.native
-  def fromFile(url: java.lang.String, options: jsdomLib.jsdomMod.FromFileOptions): stdLib.Promise[jsdomLib.jsdomMod.JSDOM] = js.native
-  def fromURL(url: java.lang.String): stdLib.Promise[jsdomLib.jsdomMod.JSDOM] = js.native
-  def fromURL(url: java.lang.String, options: jsdomLib.jsdomMod.FromUrlOptions): stdLib.Promise[jsdomLib.jsdomMod.JSDOM] = js.native
+  def fromFile(url: java.lang.String): js.Promise[jsdomLib.jsdomMod.JSDOM] = js.native
+  def fromFile(url: java.lang.String, options: jsdomLib.jsdomMod.FromFileOptions): js.Promise[jsdomLib.jsdomMod.JSDOM] = js.native
+  def fromURL(url: java.lang.String): js.Promise[jsdomLib.jsdomMod.JSDOM] = js.native
+  def fromURL(url: java.lang.String, options: jsdomLib.jsdomMod.FromUrlOptions): js.Promise[jsdomLib.jsdomMod.JSDOM] = js.native
 }
 

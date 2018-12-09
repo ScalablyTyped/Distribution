@@ -40,7 +40,7 @@ package object hapiMod {
   type RouteOptionsResponseSchema = scala.Boolean | ValidationObject | joiLib.joiMod.AnySchema | (js.Function2[
     /* value */ js.Object | nodeLib.Buffer | java.lang.String, 
     /* options */ joiLib.joiMod.ValidationOptions, 
-    stdLib.Promise[js.Any]
+    js.Promise[js.Any]
   ])
   type RouteOptionsSecure = scala.Boolean | RouteOptionsSecureObject
   type RouteRequestExtType = hapiLib.hapiLibStrings.onPreAuth | hapiLib.hapiLibStrings.onCredentials | hapiLib.hapiLibStrings.onPostAuth | hapiLib.hapiLibStrings.onPreHandler | hapiLib.hapiLibStrings.onPostHandler | hapiLib.hapiLibStrings.onPreResponse
@@ -54,7 +54,7 @@ package object hapiMod {
   type ServerEventsApplication = java.lang.String | ServerEventsApplicationObject | podiumLib.podiumMod.Podium
   type ServerExtPointFunction = js.Function1[/* server */ Server, scala.Unit]
   type ServerExtType = hapiLib.hapiLibStrings.onPreStart | hapiLib.hapiLibStrings.onPostStart | hapiLib.hapiLibStrings.onPreStop | hapiLib.hapiLibStrings.onPostStop
-  type ServerMethod = js.Function1[/* repeated */js.Any, stdLib.Promise[js.Any]]
+  type ServerMethod = js.Function1[/* repeated */js.Any, js.Promise[js.Any]]
   type ServerRequestExtType = RouteRequestExtType | hapiLib.hapiLibStrings.onRequest
   type StartEventHandler = js.Function0[scala.Unit]
   type StopEventHandler = js.Function0[scala.Unit]

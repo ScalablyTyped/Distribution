@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("viewport-mercator-project", "Vector3")
 @js.native
 class Vector3 ()
-  extends stdLib.Array[js.Object]
+  extends stdLib.Array[js.Any]
 

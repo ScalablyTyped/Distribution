@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait HeightmapTerrainData extends js.Object {
   var waterMask: stdLib.Uint8Array | stdLib.HTMLImageElement | stdLib.HTMLCanvasElement
-  def createMesh(tilingScheme: TilingScheme, x: scala.Double, y: scala.Double, level: scala.Double): stdLib.Promise[TerrainMesh]
+  def createMesh(tilingScheme: TilingScheme, x: scala.Double, y: scala.Double, level: scala.Double): js.Promise[TerrainMesh]
   def interpolateHeight(rectangle: Rectangle, longitude: scala.Double, latitude: scala.Double): scala.Double
   def isChildAvailable(thisX: scala.Double, thisY: scala.Double, childX: scala.Double, childY: scala.Double): scala.Boolean
   def upsample(
@@ -19,7 +19,7 @@ trait HeightmapTerrainData extends js.Object {
     descendantX: scala.Double,
     descendantY: scala.Double,
     descendantLevel: scala.Double
-  ): stdLib.Promise[HeightmapTerrainData]
+  ): js.Promise[HeightmapTerrainData]
   def wasCreatedByUpsampling(): scala.Boolean
 }
 

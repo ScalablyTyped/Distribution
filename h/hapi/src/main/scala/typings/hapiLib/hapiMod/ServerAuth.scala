@@ -93,7 +93,7 @@ trait ServerAuth extends js.Object {
        * include verifying scope, entity, or other route properties.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverauthteststrategy-request)
        */
-  def test(strategy: java.lang.String, request: Request): stdLib.Promise[AuthCredentials] = js.native
+  def test(strategy: java.lang.String, request: Request): js.Promise[AuthCredentials] = js.native
   /**
        * Verify a request's authentication credentials against an authentication strategy.
        * Returns nothing if verification was successful, otherwise throws an error.
@@ -104,6 +104,6 @@ trait ServerAuth extends js.Object {
        * are still valid (e.g. have not been revoked or expired). It does not include verifying scope,
        * entity, or other route properties.
        */
-  def verify(request: Request): stdLib.Promise[scala.Unit] = js.native
+  def verify(request: Request): js.Promise[scala.Unit] = js.native
 }
 

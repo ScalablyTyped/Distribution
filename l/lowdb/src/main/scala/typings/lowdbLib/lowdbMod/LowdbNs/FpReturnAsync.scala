@@ -14,6 +14,6 @@ trait FpReturnAsync[PathT] extends FpReturnBase[PathT] {
        *  posts.write((allPosts) => [...allPosts, {title: 'Yup!'}])
        * ```
        */
-  def write[R1 /* <: PathT */](f1: js.Function1[/* a1 */ PathT, R1]): stdLib.Promise[R1] = js.native
+  def write[R1 /* <: PathT */](f1: js.Function1[/* a1 */ PathT, R1]): js.Promise[R1] = js.native
 }
 

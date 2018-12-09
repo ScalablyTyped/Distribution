@@ -26,7 +26,7 @@ trait RTCPeerConnection extends EventTarget {
   var onsignalingstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onstatsended: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCStatsEvent, _]) | scala.Null = js.native
   var ontrack: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, _]) | scala.Null = js.native
-  val peerIdentity: Promise[RTCIdentityAssertion] = js.native
+  val peerIdentity: js.Promise[RTCIdentityAssertion] = js.native
   val pendingLocalDescription: RTCSessionDescription | scala.Null = js.native
   val pendingRemoteDescription: RTCSessionDescription | scala.Null = js.native
   val remoteDescription: RTCSessionDescription | scala.Null = js.native
@@ -202,26 +202,26 @@ trait RTCPeerConnection extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCTrackEvent, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  def addIceCandidate(candidate: RTCIceCandidate): Promise[scala.Unit] = js.native
-  def addIceCandidate(candidate: RTCIceCandidateInit): Promise[scala.Unit] = js.native
+  def addIceCandidate(candidate: RTCIceCandidate): js.Promise[scala.Unit] = js.native
+  def addIceCandidate(candidate: RTCIceCandidateInit): js.Promise[scala.Unit] = js.native
   def addTrack(track: MediaStreamTrack, streams: MediaStream*): RTCRtpSender = js.native
   def addTransceiver(trackOrKind: java.lang.String): RTCRtpTransceiver = js.native
   def addTransceiver(trackOrKind: java.lang.String, init: RTCRtpTransceiverInit): RTCRtpTransceiver = js.native
   def addTransceiver(trackOrKind: MediaStreamTrack): RTCRtpTransceiver = js.native
   def addTransceiver(trackOrKind: MediaStreamTrack, init: RTCRtpTransceiverInit): RTCRtpTransceiver = js.native
   def close(): scala.Unit = js.native
-  def createAnswer(): Promise[RTCSessionDescriptionInit] = js.native
-  def createAnswer(options: RTCOfferOptions): Promise[RTCSessionDescriptionInit] = js.native
+  def createAnswer(): js.Promise[RTCSessionDescriptionInit] = js.native
+  def createAnswer(options: RTCOfferOptions): js.Promise[RTCSessionDescriptionInit] = js.native
   def createDataChannel(label: java.lang.String): RTCDataChannel = js.native
   def createDataChannel(label: java.lang.String, dataChannelDict: RTCDataChannelInit): RTCDataChannel = js.native
-  def createOffer(): Promise[RTCSessionDescriptionInit] = js.native
-  def createOffer(options: RTCOfferOptions): Promise[RTCSessionDescriptionInit] = js.native
+  def createOffer(): js.Promise[RTCSessionDescriptionInit] = js.native
+  def createOffer(options: RTCOfferOptions): js.Promise[RTCSessionDescriptionInit] = js.native
   def getConfiguration(): RTCConfiguration = js.native
-  def getIdentityAssertion(): Promise[java.lang.String] = js.native
+  def getIdentityAssertion(): js.Promise[java.lang.String] = js.native
   def getReceivers(): js.Array[RTCRtpReceiver] = js.native
   def getSenders(): js.Array[RTCRtpSender] = js.native
-  def getStats(): Promise[RTCStatsReport] = js.native
-  def getStats(selector: MediaStreamTrack): Promise[RTCStatsReport] = js.native
+  def getStats(): js.Promise[RTCStatsReport] = js.native
+  def getStats(selector: MediaStreamTrack): js.Promise[RTCStatsReport] = js.native
   def getTransceivers(): js.Array[RTCRtpTransceiver] = js.native
   @JSName("removeEventListener")
   def removeEventListener_connectionstatechange(
@@ -397,8 +397,8 @@ trait RTCPeerConnection extends EventTarget {
   def setConfiguration(configuration: RTCConfiguration): scala.Unit = js.native
   def setIdentityProvider(provider: java.lang.String): scala.Unit = js.native
   def setIdentityProvider(provider: java.lang.String, options: RTCIdentityProviderOptions): scala.Unit = js.native
-  def setLocalDescription(description: RTCSessionDescriptionInit): Promise[scala.Unit] = js.native
-  def setRemoteDescription(description: RTCSessionDescriptionInit): Promise[scala.Unit] = js.native
+  def setLocalDescription(description: RTCSessionDescriptionInit): js.Promise[scala.Unit] = js.native
+  def setRemoteDescription(description: RTCSessionDescriptionInit): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("RTCPeerConnection")
@@ -406,7 +406,7 @@ trait RTCPeerConnection extends EventTarget {
 object RTCPeerConnection
   extends ScalablyTyped.runtime.Instantiable0[RTCPeerConnection]
      with ScalablyTyped.runtime.Instantiable1[/* configuration */ RTCConfiguration, RTCPeerConnection] {
-  def generateCertificate(keygenAlgorithm: stdLib.AlgorithmIdentifier): stdLib.Promise[stdLib.RTCCertificate] = js.native
+  def generateCertificate(keygenAlgorithm: stdLib.AlgorithmIdentifier): js.Promise[stdLib.RTCCertificate] = js.native
   def getDefaultIceServers(): js.Array[stdLib.RTCIceServer] = js.native
 }
 

@@ -11,7 +11,7 @@ object enzymeDashExtensionsModMembers extends js.Object {
   def apply(
     s: ScalablyTyped.runtime.Instantiable1[
       /* nodes */ js.Array[reactLib.reactMod.Global.JSXNs.Element], 
-      enzymeLib.enzymeMod.ShallowWrapper[js.Object, js.Object, reactLib.reactMod.Component[js.Object, js.Object, js.Any]]
+      enzymeLib.enzymeMod.ShallowWrapper[js.Object, js.Object, js.Object]
     ]
   ): scala.Unit = js.native
 }

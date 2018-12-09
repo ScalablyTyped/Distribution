@@ -14,7 +14,7 @@ trait GlobalSecondaryIndexDescription extends js.Object {
   /**
        * The Amazon Resource Name (ARN) that uniquely identifies the index.
        */
-  var IndexArn: js.UndefOr[java.lang.String] = js.undefined
+  var IndexArn: js.UndefOr[String] = js.undefined
   /**
        * The name of the global secondary index.
        */

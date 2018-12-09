@@ -17,7 +17,7 @@ trait Proxy extends js.Object {
       *
       * @param methodName The name of the server hub method.
       */
-  def invoke(methodName: java.lang.String, args: js.Any*): stdLib.Promise[_]
+  def invoke(methodName: java.lang.String, args: js.Any*): js.Promise[_]
   /**
       * Removes the callback invocation request from the server hub for the given event name.
       *

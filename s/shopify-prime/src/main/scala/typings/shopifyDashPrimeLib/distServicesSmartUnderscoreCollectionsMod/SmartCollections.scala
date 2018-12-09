@@ -15,7 +15,7 @@ class SmartCollections protected ()
        * @param options Options for filtering the results.
        * @see https://help.shopify.com/api/reference/smartcollection#count
        */
-  def count(): stdLib.Promise[scala.Double] = js.native
+  def count(): js.Promise[scala.Double] = js.native
   /**
        * Get a count of all smart collections that contain a given product
        * @param options Options for filtering the results.
@@ -23,42 +23,42 @@ class SmartCollections protected ()
        */
   def count(
     options: shopifyDashPrimeLib.Anon_Productid with shopifyDashPrimeLib.distOptionsBaseMod.DateOptions with shopifyDashPrimeLib.distOptionsBaseMod.PublishedOptions
-  ): stdLib.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Double] = js.native
   /**
        * Create a new smart collection.
        * @param collection The collection being created.
        * @param options Options for creating the collection.
        */
-  def create(collection: shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection): stdLib.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection] = js.native
+  def create(collection: shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection): js.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection] = js.native
   /**
        * Deletes an collection with the given id.
        * @param id The collection's id.
        */
-  def delete(id: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def delete(id: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * Get a single collection
        * @param id The collection's id.
        * @param options Options for filtering the results.
        */
-  def get(id: scala.Double): stdLib.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection] = js.native
+  def get(id: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection] = js.native
   /**
        * Get a single collection
        * @param id The collection's id.
        * @param options Options for filtering the results.
        */
-  def get(id: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions): stdLib.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection] = js.native
+  def get(id: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions): js.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection] = js.native
   /**
        * Get a list of all smart collections that contain a given product
        * @param options Options for filtering the results.
        */
-  def list(): stdLib.Promise[
+  def list(): js.Promise[
     js.Array[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection]
   ] = js.native
   /**
        * Get a list of all smart collections that contain a given product
        * @param options Options for filtering the results.
        */
-  def list(options: shopifyDashPrimeLib.distOptionsProductUnderscoreCollectionMod.CollectionListOptions): stdLib.Promise[
+  def list(options: shopifyDashPrimeLib.distOptionsProductUnderscoreCollectionMod.CollectionListOptions): js.Promise[
     js.Array[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection]
   ] = js.native
   /**
@@ -69,6 +69,6 @@ class SmartCollections protected ()
   def update(
     id: scala.Double,
     collection: shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection
-  ): stdLib.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection] = js.native
+  ): js.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreCollectionMod.SmartCollection] = js.native
 }
 

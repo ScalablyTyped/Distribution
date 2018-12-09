@@ -25,7 +25,7 @@ object reactDashRouterDashNativeModMembers extends js.Object {
     reactDashRouterLib.reactDashRouterMod.StaticContext, 
     historyLib.historyMod.LocationState
   ] */](component: reactLib.reactMod.ReactNs.ComponentType[P]): reactLib.reactMod.ReactNs.ComponentClass[
-    reactDashRouterLib.reactDashRouterMod.Omit[reactDashRouterLib.reactDashRouterMod.Omit[P, java.lang.String], java.lang.String], 
+    reactDashRouterLib.reactDashRouterMod.Omit[P, java.lang.String], 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
 }

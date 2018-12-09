@@ -28,7 +28,7 @@ trait Client extends js.Object {
        * Query on multiple index
        * https://github.com/algolia/algoliasearch-client-js#multiple-queries---multiplequeries
        */
-  def search(queries: js.Array[algoliasearchLib.Anon_IndexNameQueryParams]): stdLib.Promise[MultiResponse] = js.native
+  def search(queries: js.Array[algoliasearchLib.Anon_IndexNameQueryParams]): js.Promise[MultiResponse] = js.native
   /**
        * Query on multiple index
        * https://github.com/algolia/algoliasearch-client-js#multiple-queries---multiplequeries
@@ -40,7 +40,7 @@ trait Client extends js.Object {
   /**
        * Query for facet values of a specific facet
        */
-  def searchForFacetValues(queries: js.Array[algoliasearchLib.Anon_IndexNameParams]): stdLib.Promise[
+  def searchForFacetValues(queries: js.Array[algoliasearchLib.Anon_IndexNameParams]): js.Promise[
     js.Array[algoliasearchLib.liteMod.algoliasearchNs.SearchForFacetValuesNs.Response]
   ] = js.native
   /**

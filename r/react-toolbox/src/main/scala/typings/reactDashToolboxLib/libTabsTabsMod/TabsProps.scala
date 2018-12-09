@@ -42,7 +42,7 @@ trait TabsProps
   /**
      * Callback function that is fired when the tab changes.
      */
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Classnames object defining the component style.
      */

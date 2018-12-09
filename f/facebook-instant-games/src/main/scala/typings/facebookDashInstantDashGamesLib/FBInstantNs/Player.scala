@@ -14,7 +14,7 @@ trait Player extends js.Object {
            *
            * @returns Whether a player can subscribe to the game bot or not.
            */
-  def canSubscribeBotAsync(): stdLib.Promise[scala.Boolean] = js.native
+  def canSubscribeBotAsync(): js.Promise[scala.Boolean] = js.native
   /**
            * Immediately flushes any changes to the player data to the designated cloud storage. This function is expensive, and should primarily be
            * used for critical changes where persistence needs to be immediate and known by the game. Non-critical changes should rely on the platform
@@ -26,14 +26,14 @@ trait Player extends js.Object {
            * @throws PENDING_REQUEST
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def flushDataAsync(): stdLib.Promise[scala.Unit] = js.native
+  def flushDataAsync(): js.Promise[scala.Unit] = js.native
   /**
            * Fetches an array of ConnectedPlayer objects containing information about players that are connected to the current player.
            * @returns A promise that resolves with a list of connected player objects. NOTE: This promise will not resolve until FBInstant.startGameAsync() has resolved.
            * @throws NETWORK_FAILURE
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def getConnectedPlayersAsync(): stdLib.Promise[js.Array[ConnectedPlayer]] = js.native
+  def getConnectedPlayersAsync(): js.Promise[js.Array[ConnectedPlayer]] = js.native
   /**
            * Retrieve data from the designated cloud storage of the current player.
            *
@@ -43,7 +43,7 @@ trait Player extends js.Object {
            * @throws NETWORK_FAILURE
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def getDataAsync(keys: js.Array[java.lang.String]): stdLib.Promise[DataObject] = js.native
+  def getDataAsync(keys: js.Array[java.lang.String]): js.Promise[DataObject] = js.native
   /**
            * A unique identifier for the player. A Facebook user's player ID will remain constant,
            * and is scoped to a specific game. This means that different games will have different
@@ -81,7 +81,7 @@ trait Player extends js.Object {
            * @throws NETWORK_FAILURE
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def getSignedPlayerInfoAsync(): stdLib.Promise[SignedPlayerInfo] = js.native
+  def getSignedPlayerInfoAsync(): js.Promise[SignedPlayerInfo] = js.native
   /**
            * Fetch the player's unique identifier along with a signature that verifies that the identifier indeed
            * comes from Facebook without being tampered with. This function should not be called until
@@ -93,7 +93,7 @@ trait Player extends js.Object {
            * @throws NETWORK_FAILURE
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def getSignedPlayerInfoAsync(requestPayload: java.lang.String): stdLib.Promise[SignedPlayerInfo] = js.native
+  def getSignedPlayerInfoAsync(requestPayload: java.lang.String): js.Promise[SignedPlayerInfo] = js.native
   /**
            * Retrieve stats from the designated cloud storage of the current player.
            *
@@ -103,7 +103,7 @@ trait Player extends js.Object {
            * @throws NETWORK_FAILURE
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def getStatsAsync(): stdLib.Promise[StatsObject] = js.native
+  def getStatsAsync(): js.Promise[StatsObject] = js.native
   /**
            * Retrieve stats from the designated cloud storage of the current player.
            *
@@ -113,7 +113,7 @@ trait Player extends js.Object {
            * @throws NETWORK_FAILURE
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def getStatsAsync(keys: js.Array[java.lang.String]): stdLib.Promise[StatsObject] = js.native
+  def getStatsAsync(keys: js.Array[java.lang.String]): js.Promise[StatsObject] = js.native
   /**
            * Increment stats saved in the designated cloud storage of the current player.
            *
@@ -127,7 +127,7 @@ trait Player extends js.Object {
            * @throws PENDING_REQUEST
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def incrementStatsAsync(increments: IncrementObject): stdLib.Promise[StatsObject] = js.native
+  def incrementStatsAsync(increments: IncrementObject): js.Promise[StatsObject] = js.native
   /**
            * Set data to be saved to the designated cloud storage of the current player. The game can store up to 1MB of data for each unique player.
            *
@@ -140,7 +140,7 @@ trait Player extends js.Object {
            * @throws PENDING_REQUEST
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def setDataAsync(data: DataObject): stdLib.Promise[scala.Unit] = js.native
+  def setDataAsync(data: DataObject): js.Promise[scala.Unit] = js.native
   /**
            * Set stats to be saved to the designated cloud storage of the current player.
            *
@@ -153,7 +153,7 @@ trait Player extends js.Object {
            * @throws PENDING_REQUEST
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def setStatsAsync(stats: StatsObject): stdLib.Promise[scala.Unit] = js.native
+  def setStatsAsync(stats: StatsObject): js.Promise[scala.Unit] = js.native
   /**
            * Request that the player subscribe the bot associated to the game. The API will reject if the subscription
            * fails - else, the player will subscribe the game bot.
@@ -163,6 +163,6 @@ trait Player extends js.Object {
            * @throws PENDING_REQUEST
            * @throws CLIENT_REQUIRES_UPDATE
            */
-  def subscribeBotAsync(): stdLib.Promise[scala.Unit] = js.native
+  def subscribeBotAsync(): js.Promise[scala.Unit] = js.native
 }
 

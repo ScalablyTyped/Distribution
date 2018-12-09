@@ -55,13 +55,13 @@ trait WebFrame extends EventEmitter {
        * requestFullScreen can only be invoked by a gesture from the user. Setting
        * userGesture to true will remove this limitation.
        */
-  def executeJavaScript(code: java.lang.String): stdLib.Promise[_] = js.native
+  def executeJavaScript(code: java.lang.String): js.Promise[_] = js.native
   /**
        * Evaluates code in page. In the browser window some HTML APIs like
        * requestFullScreen can only be invoked by a gesture from the user. Setting
        * userGesture to true will remove this limitation.
        */
-  def executeJavaScript(code: java.lang.String, userGesture: scala.Boolean): stdLib.Promise[_] = js.native
+  def executeJavaScript(code: java.lang.String, userGesture: scala.Boolean): js.Promise[_] = js.native
   /**
        * Evaluates code in page. In the browser window some HTML APIs like
        * requestFullScreen can only be invoked by a gesture from the user. Setting
@@ -71,7 +71,7 @@ trait WebFrame extends EventEmitter {
     code: java.lang.String,
     userGesture: scala.Boolean,
     callback: js.Function1[/* result */ js.Any, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * Work like executeJavaScript but evaluates scripts in isolated context.
        */

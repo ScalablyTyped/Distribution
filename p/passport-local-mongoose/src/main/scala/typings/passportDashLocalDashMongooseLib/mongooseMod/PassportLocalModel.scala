@@ -19,7 +19,7 @@ trait PassportLocalModel[T /* <: stdLib.Document */] extends js.Object {
   def authenticate_Function2(): js.Function2[
     /* username */ java.lang.String, 
     /* password */ java.lang.String, 
-    stdLib.Promise[AuthenticationResult]
+    js.Promise[AuthenticationResult]
   ] = js.native
   def createStrategy(): passportDashLocalLib.passportDashLocalMod.Strategy = js.native
   def deserializeUser(): js.Function2[
@@ -33,7 +33,7 @@ trait PassportLocalModel[T /* <: stdLib.Document */] extends js.Object {
     selectHashSaltFields: scala.Boolean,
     cb: js.Function2[/* err */ js.Any, /* account */ js.Any, scala.Unit]
   ): js.Any = js.native
-  def register(user: T, password: java.lang.String): stdLib.Promise[T] = js.native
+  def register(user: T, password: java.lang.String): js.Promise[T] = js.native
   def register(
     user: T,
     password: java.lang.String,

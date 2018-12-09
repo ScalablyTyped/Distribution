@@ -16,14 +16,14 @@ object servicesNs extends js.Object {
              * @param headers key value pair of headers
              * @returns Promise<ApiClientResponse>
              */
-    def delete(uri: java.lang.String, headers: js.Object): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
+    def delete(uri: java.lang.String, headers: js.Object): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
     /**
              * Make a GET API call to the specified uri with headers
              * @param uri http(s?) endpoint to call
              * @param headers key value pair of headers
              * @returns Promise<ApiClientResponse>
              */
-    def get(uri: java.lang.String, headers: js.Object): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
+    def get(uri: java.lang.String, headers: js.Object): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
     /**
              * Make a POST API call to the specified uri with headers and optional body
              * @param uri http(s?) endpoint to call
@@ -31,7 +31,7 @@ object servicesNs extends js.Object {
              * @param body post body to send
              * @returns Promise<ApiClientResponse>
              */
-    def post(uri: java.lang.String, headers: js.Object): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
+    def post(uri: java.lang.String, headers: js.Object): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
     /**
              * Make a POST API call to the specified uri with headers and optional body
              * @param uri http(s?) endpoint to call
@@ -39,7 +39,7 @@ object servicesNs extends js.Object {
              * @param body post body to send
              * @returns Promise<ApiClientResponse>
              */
-    def post(uri: java.lang.String, headers: js.Object, body: java.lang.String): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
+    def post(uri: java.lang.String, headers: js.Object, body: java.lang.String): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
     /**
              * Make a PUT API call to the specified uri with headers and optional body
              * @param uri http(s?) endpoint to call
@@ -47,7 +47,7 @@ object servicesNs extends js.Object {
              * @param body post body to send
              * @returns Promise<ApiClientResponse>
              */
-    def put(uri: java.lang.String, headers: js.Object): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
+    def put(uri: java.lang.String, headers: js.Object): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
     /**
              * Make a PUT API call to the specified uri with headers and optional body
              * @param uri http(s?) endpoint to call
@@ -55,7 +55,7 @@ object servicesNs extends js.Object {
              * @param body post body to send
              * @returns Promise<ApiClientResponse>
              */
-    def put(uri: java.lang.String, headers: js.Object, body: java.lang.String): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
+    def put(uri: java.lang.String, headers: js.Object, body: java.lang.String): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ApiClientResponse] = js.native
   }
   
   @js.native
@@ -72,7 +72,7 @@ object servicesNs extends js.Object {
              * @param token bearer token for device address permission
              * @returns Promise<object>
              */
-    def getCountryAndPostalCode(deviceId: java.lang.String, apiEndpoint: java.lang.String, token: java.lang.String): stdLib.Promise[js.Object] = js.native
+    def getCountryAndPostalCode(deviceId: java.lang.String, apiEndpoint: java.lang.String, token: java.lang.String): js.Promise[js.Object] = js.native
     /**
              * Get full address information from Alexa Device Address API
              * @param deviceId deviceId from Alexa request
@@ -80,7 +80,7 @@ object servicesNs extends js.Object {
              * @param token bearer token for device address permission
              * @returns Promise<object>
              */
-    def getFullAddress(deviceId: java.lang.String, apiEndpoint: java.lang.String, token: java.lang.String): stdLib.Promise[js.Object] = js.native
+    def getFullAddress(deviceId: java.lang.String, apiEndpoint: java.lang.String, token: java.lang.String): js.Promise[js.Object] = js.native
   }
   
   @js.native
@@ -98,7 +98,7 @@ object servicesNs extends js.Object {
              * @param token bearer token for directive service
              * @returns Promise<void>
              */
-    def enqueue(directive: js.Object, apiEndpoint: java.lang.String, token: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+    def enqueue(directive: js.Object, apiEndpoint: java.lang.String, token: java.lang.String): js.Promise[scala.Unit] = js.native
   }
   
   @js.native
@@ -114,7 +114,7 @@ object servicesNs extends js.Object {
              * @param token bearer token for list management permission
              * @returns Promise<ListObject>
              */
-    def createList(params: alexaDashSdkLib.alexaDashSdkMod.CreateListParams, token: java.lang.String): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ListObject] = js.native
+    def createList(params: alexaDashSdkLib.alexaDashSdkMod.CreateListParams, token: java.lang.String): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ListObject] = js.native
     /**
              * Create an item in an active list or in a default list
              * @param listId unique Id associated with the list
@@ -126,14 +126,14 @@ object servicesNs extends js.Object {
       listId: java.lang.String,
       params: alexaDashSdkLib.alexaDashSdkMod.CreateListItemParams,
       token: java.lang.String
-    ): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ListItemObject] = js.native
+    ): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ListItemObject] = js.native
     /**
              * Delete a custom list
              * @param listId unique Id associated with the list
              * @param token bearer token for list management permission
              * @returns Promise<void>
              */
-    def deleteList(listId: java.lang.String, token: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+    def deleteList(listId: java.lang.String, token: java.lang.String): js.Promise[scala.Unit] = js.native
     /**
              * Delete an item in the specified list
              * @param listId unique Id associated with the list
@@ -141,7 +141,7 @@ object servicesNs extends js.Object {
              * @param token bearer token for list management permission
              * @returns Promise<void>
              */
-    def deleteListItem(listId: java.lang.String, itemId: java.lang.String, token: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+    def deleteListItem(listId: java.lang.String, itemId: java.lang.String, token: java.lang.String): js.Promise[scala.Unit] = js.native
     /**
              * Get currently set apiEndpoint address
              * @returns string
@@ -158,7 +158,7 @@ object servicesNs extends js.Object {
       listId: java.lang.String,
       itemStatus: alexaDashSdkLib.alexaDashSdkMod.ListItemObjectStatus,
       token: java.lang.String
-    ): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ListObject] = js.native
+    ): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ListObject] = js.native
     /**
              * Retrieve single item within any list by listId and itemId
              * @param listId unique Id associated with the list
@@ -166,13 +166,13 @@ object servicesNs extends js.Object {
              * @param token bearer token for list management permission
              * @returns Promise<ListItemObject>
              */
-    def getListItem(listId: java.lang.String, itemId: java.lang.String, token: java.lang.String): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ListItemObject] = js.native
+    def getListItem(listId: java.lang.String, itemId: java.lang.String, token: java.lang.String): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ListItemObject] = js.native
     /**
              * Retrieve the metadata for all customer lists, including the customer's default lists
              * @param token bearer token for list management permission
              * @returns Promise<ListCollection>
              */
-    def getListsMetadata(token: java.lang.String): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ListCollection] = js.native
+    def getListsMetadata(token: java.lang.String): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ListCollection] = js.native
     /**
              * Set apiEndpoint address, default is "https://api.amazonalexa.com"
              * @param apiEndpoint apiEndpoint
@@ -190,7 +190,7 @@ object servicesNs extends js.Object {
       listId: java.lang.String,
       params: alexaDashSdkLib.alexaDashSdkMod.UpdateListParams,
       token: java.lang.String
-    ): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ListObject] = js.native
+    ): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ListObject] = js.native
     /**
              * Update an item value or item status
              * @param listId unique Id associated with the list
@@ -204,7 +204,7 @@ object servicesNs extends js.Object {
       itemId: java.lang.String,
       params: alexaDashSdkLib.alexaDashSdkMod.UpdateListItemParams,
       token: java.lang.String
-    ): stdLib.Promise[alexaDashSdkLib.alexaDashSdkMod.ListItemObject] = js.native
+    ): js.Promise[alexaDashSdkLib.alexaDashSdkMod.ListItemObject] = js.native
   }
   
 }

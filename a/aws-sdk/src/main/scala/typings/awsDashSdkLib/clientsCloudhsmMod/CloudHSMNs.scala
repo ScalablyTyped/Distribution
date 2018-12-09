@@ -13,7 +13,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the AWS CloudHSM resource to tag.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
     /**
          * One or more tags.
          */
@@ -25,7 +25,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The status of the operation.
          */
-    var Status: java.lang.String
+    var Status: String
   }
   
   
@@ -126,7 +126,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The status of the action.
          */
-    var Status: java.lang.String
+    var Status: String
   }
   
   
@@ -142,7 +142,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The status of the operation.
          */
-    var Status: java.lang.String
+    var Status: String
   }
   
   
@@ -158,7 +158,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The status of the action.
          */
-    var Status: java.lang.String
+    var Status: String
   }
   
   
@@ -178,7 +178,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The serial number of the high-availability partition group.
          */
-    var HapgSerial: js.UndefOr[java.lang.String] = js.undefined
+    var HapgSerial: js.UndefOr[String] = js.undefined
     /**
          * 
          */
@@ -242,7 +242,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The HSM model type.
          */
-    var HsmType: js.UndefOr[java.lang.String] = js.undefined
+    var HsmType: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the IAM role assigned to the HSM.
          */
@@ -262,11 +262,11 @@ object CloudHSMNs extends js.Object {
     /**
          * The URI of the certificate server.
          */
-    var ServerCertUri: js.UndefOr[java.lang.String] = js.undefined
+    var ServerCertUri: js.UndefOr[String] = js.undefined
     /**
          * The HSM software version.
          */
-    var SoftwareVersion: js.UndefOr[java.lang.String] = js.undefined
+    var SoftwareVersion: js.UndefOr[String] = js.undefined
     /**
          * The date and time that the SSH key was last updated.
          */
@@ -282,7 +282,7 @@ object CloudHSMNs extends js.Object {
     /**
          * Contains additional information about the status of the HSM.
          */
-    var StatusDetails: js.UndefOr[java.lang.String] = js.undefined
+    var StatusDetails: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the subnet that the HSM is in.
          */
@@ -299,7 +299,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The name of the HSM vendor.
          */
-    var VendorName: js.UndefOr[java.lang.String] = js.undefined
+    var VendorName: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the VPC that the HSM is in.
          */
@@ -363,15 +363,15 @@ object CloudHSMNs extends js.Object {
     /**
          * The certificate file containing the server.pem files of the HSMs.
          */
-    var ConfigCred: js.UndefOr[java.lang.String] = js.undefined
+    var ConfigCred: js.UndefOr[String] = js.undefined
     /**
          * The chrystoki.conf configuration file.
          */
-    var ConfigFile: js.UndefOr[java.lang.String] = js.undefined
+    var ConfigFile: js.UndefOr[String] = js.undefined
     /**
          * The type of credentials.
          */
-    var ConfigType: js.UndefOr[java.lang.String] = js.undefined
+    var ConfigType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -450,7 +450,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the AWS CloudHSM resource.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
   }
   
   
@@ -546,7 +546,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the AWS CloudHSM resource.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
     /**
          * The tag key or keys to remove. Specify only the tag key to remove (not the value). To overwrite the value for an existing tag, use AddTagsToResource.
          */
@@ -558,7 +558,7 @@ object CloudHSMNs extends js.Object {
     /**
          * The status of the operation.
          */
-    var Status: java.lang.String
+    var Status: String
   }
   
   

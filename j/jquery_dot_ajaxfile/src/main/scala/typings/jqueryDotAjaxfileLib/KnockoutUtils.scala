@@ -37,7 +37,7 @@ trait KnockoutUtils extends js.Object {
   def domNodeIsAttachedToDocument(node: js.Any): scala.Boolean = js.native
   def domNodeIsContainedBy(node: js.Any, containedByNode: js.Any): scala.Boolean = js.native
   def ensureSelectElementIsRenderedCorrectly(selectElement: js.Any): scala.Unit = js.native
-  def extend(target: js.Object, source: js.Object): js.Object = js.native
+  def extend(target: Object, source: Object): Object = js.native
   def forceRefresh(node: js.Any): scala.Unit = js.native
   def getFormFields(form: js.Any, fieldName: java.lang.String): js.Array[_] = js.native
   def jQueryHtmlParse(html: java.lang.String): js.Array[_] = js.native

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class RecordReference[T] protected () extends js.Object {
   def this(conn: jsforceLib.connectionMod.Connection, `type`: java.lang.String, id: jsforceLib.salesforceDashIdMod.SalesforceId) = this()
   def blob(fieldName: java.lang.String): nodeLib.streamMod.Stream = js.native
-  def del(): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
-  def del(options: js.Object): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  def del(): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  def del(options: js.Object): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
   def del(
     options: js.Object,
     callback: js.Function2[
@@ -19,9 +19,9 @@ class RecordReference[T] protected () extends js.Object {
       /* result */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
-  ): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
-  def delete(): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
-  def delete(options: js.Object): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  ): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  def delete(): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  def delete(options: js.Object): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
   def delete(
     options: js.Object,
     callback: js.Function2[
@@ -29,9 +29,9 @@ class RecordReference[T] protected () extends js.Object {
       /* result */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
-  ): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
-  def destroy(): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
-  def destroy(options: js.Object): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  ): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  def destroy(): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  def destroy(options: js.Object): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
   def destroy(
     options: js.Object,
     callback: js.Function2[
@@ -39,15 +39,15 @@ class RecordReference[T] protected () extends js.Object {
       /* result */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
-  ): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
-  def retrieve(): stdLib.Promise[Record[T]] = js.native
-  def retrieve(options: js.Object): stdLib.Promise[Record[T]] = js.native
+  ): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  def retrieve(): js.Promise[Record[T]] = js.native
+  def retrieve(options: js.Object): js.Promise[Record[T]] = js.native
   def retrieve(
     options: js.Object,
     callback: js.Function2[/* err */ nodeLib.Error, /* record */ Record[T], scala.Unit]
-  ): stdLib.Promise[Record[T]] = js.native
-  def update(record: stdLib.Partial[T]): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
-  def update(record: stdLib.Partial[T], options: js.Object): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  ): js.Promise[Record[T]] = js.native
+  def update(record: stdLib.Partial[T]): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  def update(record: stdLib.Partial[T], options: js.Object): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
   def update(
     record: stdLib.Partial[T],
     options: js.Object,
@@ -56,6 +56,6 @@ class RecordReference[T] protected () extends js.Object {
       /* result */ jsforceLib.recordDashResultMod.RecordResult, 
       scala.Unit
     ]
-  ): stdLib.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
+  ): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
 }
 

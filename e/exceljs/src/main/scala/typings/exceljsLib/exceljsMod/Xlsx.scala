@@ -14,14 +14,14 @@ trait Xlsx extends js.Object {
   /**
   	 * read from a file
   	 */
-  def readFile(path: java.lang.String): stdLib.Promise[scala.Unit]
+  def readFile(path: java.lang.String): js.Promise[scala.Unit]
   /**
   	 * write to a stream
   	 */
-  def write(stream: nodeLib.streamMod.Stream): stdLib.Promise[scala.Unit]
+  def write(stream: nodeLib.streamMod.Stream): js.Promise[scala.Unit]
   /**
   	 * write to a file
   	 */
-  def writeFile(path: java.lang.String): stdLib.Promise[scala.Unit]
+  def writeFile(path: java.lang.String): js.Promise[scala.Unit]
 }
 

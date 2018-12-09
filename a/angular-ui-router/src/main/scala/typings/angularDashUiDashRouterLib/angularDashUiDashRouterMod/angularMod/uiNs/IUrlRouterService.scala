@@ -10,7 +10,7 @@ trait IUrlRouterService extends js.Object {
   def href(urlMatcher: IUrlMatcher): java.lang.String = js.native
   def href(urlMatcher: IUrlMatcher, params: IStateParamsService): java.lang.String = js.native
   def href(urlMatcher: IUrlMatcher, params: IStateParamsService, options: IHrefOptions): java.lang.String = js.native
-  def listen(): js.Function = js.native
+  def listen(): angularLib.angularMod.Global.Function = js.native
   def push(urlMatcher: IUrlMatcher): scala.Unit = js.native
   def push(urlMatcher: IUrlMatcher, params: IStateParamsService): scala.Unit = js.native
   def push(urlMatcher: IUrlMatcher, params: IStateParamsService, options: IHrefOptions): scala.Unit = js.native

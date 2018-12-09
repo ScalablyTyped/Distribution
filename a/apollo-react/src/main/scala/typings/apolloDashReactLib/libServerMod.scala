@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object libServerMod extends js.Object {
   def cleanupApolloState(apolloState: js.Any): scala.Unit = js.native
-  def getDataFromTree(rootElement: js.Any): stdLib.Promise[scala.Unit] = js.native
-  def getDataFromTree(rootElement: js.Any, rootContext: js.Any): stdLib.Promise[scala.Unit] = js.native
-  def getDataFromTree(rootElement: js.Any, rootContext: js.Any, fetchRoot: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
-  def renderToStringWithData(component: js.Any): stdLib.Promise[java.lang.String] = js.native
+  def getDataFromTree(rootElement: js.Any): js.Promise[scala.Unit] = js.native
+  def getDataFromTree(rootElement: js.Any, rootContext: js.Any): js.Promise[scala.Unit] = js.native
+  def getDataFromTree(rootElement: js.Any, rootContext: js.Any, fetchRoot: scala.Boolean): js.Promise[scala.Unit] = js.native
+  def renderToStringWithData(component: js.Any): js.Promise[java.lang.String] = js.native
   def walkTree(
     element: js.Any,
     context: js.Any,

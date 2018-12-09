@@ -42,7 +42,7 @@ trait ISceneLoaderPluginAsync extends js.Object {
            * @param fileName Defines the name of the file to load
            * @returns The loaded meshes, particle systems, skeletons, and animation groups
            */
-  def importMeshAsync(meshesNames: js.Any, scene: Scene, data: js.Any, rootUrl: java.lang.String): stdLib.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  def importMeshAsync(meshesNames: js.Any, scene: Scene, data: js.Any, rootUrl: java.lang.String): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
   /**
            * Import meshes into a scene.
            * @param meshesNames An array of mesh names, a single mesh name, or empty string for all meshes that filter what meshes are imported
@@ -59,7 +59,7 @@ trait ISceneLoaderPluginAsync extends js.Object {
     data: js.Any,
     rootUrl: java.lang.String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, scala.Unit]
-  ): stdLib.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
   /**
            * Import meshes into a scene.
            * @param meshesNames An array of mesh names, a single mesh name, or empty string for all meshes that filter what meshes are imported
@@ -77,7 +77,7 @@ trait ISceneLoaderPluginAsync extends js.Object {
     rootUrl: java.lang.String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, scala.Unit],
     fileName: java.lang.String
-  ): stdLib.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
   /**
            * Load into an asset container.
            * @param scene The scene to load into
@@ -87,7 +87,7 @@ trait ISceneLoaderPluginAsync extends js.Object {
            * @param fileName Defines the name of the file to load
            * @returns The loaded asset container
            */
-  def loadAssetContainerAsync(scene: Scene, data: java.lang.String, rootUrl: java.lang.String): stdLib.Promise[AssetContainer] = js.native
+  def loadAssetContainerAsync(scene: Scene, data: java.lang.String, rootUrl: java.lang.String): js.Promise[AssetContainer] = js.native
   /**
            * Load into an asset container.
            * @param scene The scene to load into
@@ -102,7 +102,7 @@ trait ISceneLoaderPluginAsync extends js.Object {
     data: java.lang.String,
     rootUrl: java.lang.String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, scala.Unit]
-  ): stdLib.Promise[AssetContainer] = js.native
+  ): js.Promise[AssetContainer] = js.native
   /**
            * Load into an asset container.
            * @param scene The scene to load into
@@ -118,7 +118,7 @@ trait ISceneLoaderPluginAsync extends js.Object {
     rootUrl: java.lang.String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, scala.Unit],
     fileName: java.lang.String
-  ): stdLib.Promise[AssetContainer] = js.native
+  ): js.Promise[AssetContainer] = js.native
   /**
            * Load into a scene.
            * @param scene The scene to load into
@@ -128,7 +128,7 @@ trait ISceneLoaderPluginAsync extends js.Object {
            * @param fileName Defines the name of the file to load
            * @returns Nothing
            */
-  def loadAsync(scene: Scene, data: java.lang.String, rootUrl: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def loadAsync(scene: Scene, data: java.lang.String, rootUrl: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Load into a scene.
            * @param scene The scene to load into
@@ -143,7 +143,7 @@ trait ISceneLoaderPluginAsync extends js.Object {
     data: java.lang.String,
     rootUrl: java.lang.String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
            * Load into a scene.
            * @param scene The scene to load into
@@ -159,6 +159,6 @@ trait ISceneLoaderPluginAsync extends js.Object {
     rootUrl: java.lang.String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, scala.Unit],
     fileName: java.lang.String
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

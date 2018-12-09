@@ -74,7 +74,7 @@ object PersistedModel extends js.Object {
                * @param {any} options An optional options object to pass to underlying data-access calls.
                * @param  {() => void} callback Callback function
                */
-  def bulkUpdate(updates: js.Array[_], options: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def bulkUpdate(updates: js.Array[_], options: js.Any): js.Promise[scala.Unit] = js.native
   /**
                * Apply an update list
                * **Note: this is not atomic*
@@ -92,7 +92,7 @@ object PersistedModel extends js.Object {
                * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
                * @param {Array} changes An Array of [Change](#change) objects
                */
-  def changes(since: scala.Double, filter: js.Any): stdLib.Promise[js.Array[_]] = js.native
+  def changes(since: scala.Double, filter: js.Any): js.Promise[js.Array[_]] = js.native
   /**
                * Get the changes to a model since the specified checkpoint. Provide a filter object
                * to reduce the number of results returned.
@@ -105,9 +105,8 @@ object PersistedModel extends js.Object {
   def changes(since: scala.Double, filter: js.Any, callback: loopbackLib.loopbackMod.lNs.CallbackWithResult[_]): scala.Unit = js.native
   /**
                * Create a checkpoint
-               * @param  {() => void} callback
                */
-  def checkpoint(): scala.Unit = js.native
+  def checkpoint(): js.Promise[scala.Unit] = js.native
   /**
                * Create a checkpoint
                * @param  {() => void} callback
@@ -115,9 +114,10 @@ object PersistedModel extends js.Object {
   def checkpoint(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
                * Create a checkpoint
+               * @param  {() => void} callback
                */
   @JSName("checkpoint")
-  def checkpoint_Promise(): stdLib.Promise[scala.Unit] = js.native
+  def checkpoint_Unit(): scala.Unit = js.native
   /**
                * Return the number of records that match the optional "where" filter.
                * @param {any} [where] Optional where filter, like
@@ -130,7 +130,7 @@ object PersistedModel extends js.Object {
                * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
                * @param {number} count number of instances updated
                */
-  def count(): stdLib.Promise[scala.Double] = js.native
+  def count(): js.Promise[scala.Double] = js.native
   /**
                * Return the number of records that match the optional "where" filter.
                * @param {any} [where] Optional where filter, like
@@ -143,7 +143,7 @@ object PersistedModel extends js.Object {
                * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
                * @param {number} count number of instances updated
                */
-  def count(where: js.Any): stdLib.Promise[scala.Double] = js.native
+  def count(where: js.Any): js.Promise[scala.Double] = js.native
   /**
                * Return the number of records that match the optional "where" filter.
                * @param {any} [where] Optional where filter, like
@@ -162,13 +162,13 @@ object PersistedModel extends js.Object {
                * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
                * @returns {T | T[]} Model instances or null
                */
-  def create[T](): stdLib.Promise[T | js.Array[T] | scala.Null] = js.native
+  def create[T](): js.Promise[T | js.Array[T] | scala.Null] = js.native
   /**
                * Create new instance of Model, and save to database
                * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
                * @returns {T | T[]} Model instances or null
                */
-  def create[T](data: js.Any): stdLib.Promise[T | js.Array[T] | scala.Null] = js.native
+  def create[T](data: js.Any): js.Promise[T | js.Array[T] | scala.Null] = js.native
   /**
                * Create new instance of Model, and save to database
                * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
@@ -185,7 +185,7 @@ object PersistedModel extends js.Object {
                * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
                * @returns {T | T[]} Model instances or null
                */
-  def create[T](data: js.Array[_]): stdLib.Promise[T | js.Array[T] | scala.Null] = js.native
+  def create[T](data: js.Array[_]): js.Promise[T | js.Array[T] | scala.Null] = js.native
   /**
                * Create new instance of Model, and save to database
                * @param {any}|[{any}] data Optional data argument.  Can be either a single model instance or an Array of instances
@@ -202,7 +202,7 @@ object PersistedModel extends js.Object {
                * @param {any} options Only changes to models matching this where filter will be included in the ChangeStream.
                * @returns {any} changes
                */
-  def createChangeStream(options: loopbackLib.Anon_Where): stdLib.Promise[_] = js.native
+  def createChangeStream(options: loopbackLib.Anon_Where): js.Promise[_] = js.native
   /**
                * Create a change stream. See here for more info http://loopback.io/doc/en/lb2/Realtime-server-sent-events.html
                * @param {any} options Only changes to models matching this where filter will be included in the ChangeStream.
@@ -214,7 +214,7 @@ object PersistedModel extends js.Object {
                * (result of `Change.diff()`)
                * @param  {Array}    deltas
                */
-  def createUpdates(deltas: js.Array[_]): stdLib.Promise[scala.Unit] = js.native
+  def createUpdates(deltas: js.Array[_]): js.Promise[scala.Unit] = js.native
   /**
                * Create an update list (for `Model.bulkUpdate()`) from a delta list
                * (result of `Change.diff()`)
@@ -226,7 +226,7 @@ object PersistedModel extends js.Object {
                * Get the current checkpoint ID
                * @returns {Promise<number>} resolves to currentCheckpointId
                */
-  def currentCheckpoint(): stdLib.Promise[scala.Double] = js.native
+  def currentCheckpoint(): js.Promise[scala.Double] = js.native
   /**
                * Get the current checkpoint ID
                * @callback {() => void} callback Callback function called with `(err, currentCheckpointId)` arguments.  Required.
@@ -245,7 +245,7 @@ object PersistedModel extends js.Object {
                *
                * @returns {Promise<{ count: number }>} number of instances (rows, documents) destroyed
                */
-  def destroyAll(): stdLib.Promise[loopbackLib.Anon_InfoCount] = js.native
+  def destroyAll(): js.Promise[loopbackLib.Anon_InfoCount] = js.native
   /**
                * Destroy all model instances that match the optional `where` specification
                * @param {any} [where] Optional where filter, like:
@@ -257,7 +257,7 @@ object PersistedModel extends js.Object {
                *
                * @returns {Promise<{ count: number }>} number of instances (rows, documents) destroyed
                */
-  def destroyAll(where: js.Any): stdLib.Promise[loopbackLib.Anon_InfoCount] = js.native
+  def destroyAll(where: js.Any): js.Promise[loopbackLib.Anon_InfoCount] = js.native
   /**
                * Destroy all model instances that match the optional `where` specification
                * @param {any} [where] Optional where filter, like:
@@ -277,7 +277,7 @@ object PersistedModel extends js.Object {
                * Destroy model instance with the specified ID.
                * @param {*} id The ID value of model instance to delete.
                */
-  def destroyById(id: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def destroyById(id: js.Any): js.Promise[scala.Unit] = js.native
   /**
                * Destroy model instance with the specified ID.
                * @param {*} id The ID value of model instance to delete.
@@ -291,7 +291,7 @@ object PersistedModel extends js.Object {
                * @param  {number}  since  Find deltas since this checkpoint.
                * @param  {Array}  remoteChanges  An Array of change objects.
                */
-  def diff(since: scala.Double, remoteChanges: js.Array[_]): stdLib.Promise[_] = js.native
+  def diff(since: scala.Double, remoteChanges: js.Array[_]): js.Promise[_] = js.native
   /**
                * Get a set of deltas and conflicts since the given checkpoint
                * See [Change.diff()](#change-diff) for details
@@ -314,7 +314,7 @@ object PersistedModel extends js.Object {
                * Check whether a model instance exists in database
                * @param {id} id Identifier of object (primary key value)
                */
-  def exists(id: js.Any): stdLib.Promise[scala.Boolean] = js.native
+  def exists(id: js.Any): js.Promise[scala.Boolean] = js.native
   /**
                * Check whether a model instance exists in database
                * @param {id} id Identifier of object (primary key value)
@@ -344,7 +344,7 @@ object PersistedModel extends js.Object {
                * <br/>See
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
                */
-  def find[T](): stdLib.Promise[js.Array[T] | scala.Null] = js.native
+  def find[T](): js.Promise[js.Array[T] | scala.Null] = js.native
   /**
                * Find all model instances that match `filter` specification.
                * See [Querying models](docs.strongloop.com/display/LB/Querying+models)
@@ -366,7 +366,7 @@ object PersistedModel extends js.Object {
                * <br/>See
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
                */
-  def find[T](filter: loopbackLib.Anon_Skip): stdLib.Promise[js.Array[T] | scala.Null] = js.native
+  def find[T](filter: loopbackLib.Anon_Skip): js.Promise[js.Array[T] | scala.Null] = js.native
   /**
                * Find all model instances that match `filter` specification.
                * See [Querying models](docs.strongloop.com/display/LB/Querying+models)
@@ -404,7 +404,7 @@ object PersistedModel extends js.Object {
                * @property {string|any|Array} include  See PersistedModel.include documentation.
                * <br/>See [Include filter](docs.strongloop.com/display/LB/Include+filter).
                */
-  def findById[T](id: js.Any): stdLib.Promise[T | scala.Null] = js.native
+  def findById[T](id: js.Any): js.Promise[T | scala.Null] = js.native
   /**
                * Find object by ID with an optional filter for include/fields
                * @param {*} id Primary key value
@@ -422,7 +422,7 @@ object PersistedModel extends js.Object {
                * @property {string|any|Array} include  See PersistedModel.include documentation.
                * <br/>See [Include filter](docs.strongloop.com/display/LB/Include+filter).
                */
-  def findById[T](id: js.Any, filter: loopbackLib.Anon_Include): stdLib.Promise[T | scala.Null] = js.native
+  def findById[T](id: js.Any, filter: loopbackLib.Anon_Include): js.Promise[T | scala.Null] = js.native
   /**
                * Find object by ID with an optional filter for include/fields
                * @param {*} id Primary key value
@@ -460,7 +460,7 @@ object PersistedModel extends js.Object {
                * <br/>See
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
                */
-  def findOne[T](): stdLib.Promise[T | scala.Null] = js.native
+  def findOne[T](): js.Promise[T | scala.Null] = js.native
   /**
                * Find one model instance that matches `filter` specification.
                * Same as `find`, but limited to one result;
@@ -490,7 +490,7 @@ object PersistedModel extends js.Object {
                * <br/>See
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
                */
-  def findOne[T](filter: loopbackLib.Anon_SkipOrder): stdLib.Promise[T | scala.Null] = js.native
+  def findOne[T](filter: loopbackLib.Anon_SkipOrder): js.Promise[T | scala.Null] = js.native
   /**
                * Find one model instance that matches `filter` specification.
                * Same as `find`, but limited to one result;
@@ -541,7 +541,7 @@ object PersistedModel extends js.Object {
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries).
                * @param {any} data Data to insert if object matching the `where` filter is not found.
                */
-  def findOrCreate[T](data: js.Any): stdLib.Promise[loopbackLib.Anon_Created[T] | scala.Null] = js.native
+  def findOrCreate[T](data: js.Any): js.Promise[loopbackLib.Anon_Created[T] | scala.Null] = js.native
   /**
                * Finds one record matching the optional filter object. If not found, creates
                * the object using the data provided as second argument. In this sense it is
@@ -582,7 +582,7 @@ object PersistedModel extends js.Object {
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries).
                * @param {any} data Data to insert if object matching the `where` filter is not found.
                */
-  def findOrCreate[T](data: js.Any, filter: loopbackLib.Anon_Skip): stdLib.Promise[loopbackLib.Anon_Created[T] | scala.Null] = js.native
+  def findOrCreate[T](data: js.Any, filter: loopbackLib.Anon_Skip): js.Promise[loopbackLib.Anon_Created[T] | scala.Null] = js.native
   /**
                * Finds one record matching the optional filter object. If not found, creates
                * the object using the data provided as second argument. In this sense it is
@@ -631,7 +631,7 @@ object PersistedModel extends js.Object {
   /**
                * Get the source identifier for this model or dataSource
                */
-  def getSourceId(): stdLib.Promise[java.lang.String] = js.native
+  def getSourceId(): js.Promise[java.lang.String] = js.native
   /**
                * Get the source identifier for this model or dataSource
                * @callback {() => void} callback Callback function called with `(err, id)` arguments.
@@ -649,7 +649,7 @@ object PersistedModel extends js.Object {
                * Specify that a change to the model with the given ID has occurred
                * @param {*} id The ID of the model that has changed.
                */
-  def rectifyChange(id: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def rectifyChange(id: js.Any): js.Promise[scala.Unit] = js.native
   /**
                * Specify that a change to the model with the given ID has occurred
                * @param {*} id The ID of the model that has changed.
@@ -666,7 +666,7 @@ object PersistedModel extends js.Object {
                * @options {any} [options] Options for replace
                * @property {boolean} validate Perform validation before saving.  Default is true.
                */
-  def replaceById[T](id: js.Any, data: js.Any): stdLib.Promise[T] = js.native
+  def replaceById[T](id: js.Any, data: js.Any): js.Promise[T] = js.native
   /**
                * Replace attributes for a model instance whose id is the first input
                * argument and persist it into the datasource.
@@ -687,7 +687,7 @@ object PersistedModel extends js.Object {
                * @options {any} [options] Options for replace
                * @property {boolean} validate Perform validation before saving.  Default is true.
                */
-  def replaceById[T](id: js.Any, data: js.Any, options: loopbackLib.Anon_Validate): stdLib.Promise[T] = js.native
+  def replaceById[T](id: js.Any, data: js.Any, options: loopbackLib.Anon_Validate): js.Promise[T] = js.native
   /**
                * Replace attributes for a model instance whose id is the first input
                * argument and persist it into the datasource.
@@ -714,7 +714,7 @@ object PersistedModel extends js.Object {
                * @options {any} [options] Options for replaceOrCreate
                * @property {boolean} validate Perform validation before saving.  Default is true.
                */
-  def replaceOrCreate[T](data: js.Any): stdLib.Promise[T] = js.native
+  def replaceOrCreate[T](data: js.Any): js.Promise[T] = js.native
   /**
                * Replace or insert a model instance; replace existing record if one is found,
                * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -733,7 +733,7 @@ object PersistedModel extends js.Object {
                * @options {any} [options] Options for replaceOrCreate
                * @property {boolean} validate Perform validation before saving.  Default is true.
                */
-  def replaceOrCreate[T](data: js.Any, options: loopbackLib.Anon_Validate): stdLib.Promise[T] = js.native
+  def replaceOrCreate[T](data: js.Any, options: loopbackLib.Anon_Validate): js.Promise[T] = js.native
   /**
                * Replace or insert a model instance; replace existing record if one is found,
                * such that parameter `data.id` matches `id` of model instance; otherwise,
@@ -762,7 +762,7 @@ object PersistedModel extends js.Object {
                * @param {any} checkpoints The new checkpoints to use as the "since"
                * argument for the next replication
                */
-  def replicate(): stdLib.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
+  def replicate(): js.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
   /**
                * Replicate changes since the given checkpoint to the given target model
                * @param  {number}   [since]  Since this checkpoint
@@ -775,7 +775,7 @@ object PersistedModel extends js.Object {
                * @param {any} checkpoints The new checkpoints to use as the "since"
                * argument for the next replication
                */
-  def replicate(since: scala.Double): stdLib.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
+  def replicate(since: scala.Double): js.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
   /**
                * Replicate changes since the given checkpoint to the given target model
                * @param  {number}   [since]  Since this checkpoint
@@ -788,7 +788,7 @@ object PersistedModel extends js.Object {
                * @param {any} checkpoints The new checkpoints to use as the "since"
                * argument for the next replication
                */
-  def replicate(since: scala.Double, targetModel: loopbackLib.loopbackMod.lNs.Model): stdLib.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
+  def replicate(since: scala.Double, targetModel: loopbackLib.loopbackMod.lNs.Model): js.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
   /**
                * Replicate changes since the given checkpoint to the given target model
                * @param  {number}   [since]  Since this checkpoint
@@ -801,7 +801,7 @@ object PersistedModel extends js.Object {
                * @param {any} checkpoints The new checkpoints to use as the "since"
                * argument for the next replication
                */
-  def replicate(since: scala.Double, targetModel: loopbackLib.loopbackMod.lNs.Model, options: js.Any): stdLib.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
+  def replicate(since: scala.Double, targetModel: loopbackLib.loopbackMod.lNs.Model, options: js.Any): js.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
   /**
                * Replicate changes since the given checkpoint to the given target model
                * @param  {number}   [since]  Since this checkpoint
@@ -819,7 +819,7 @@ object PersistedModel extends js.Object {
     targetModel: loopbackLib.loopbackMod.lNs.Model,
     options: js.Any,
     optionsFilter: js.Any
-  ): stdLib.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
+  ): js.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
   /**
                * Replicate changes since the given checkpoint to the given target model
                * @param  {number}   [since]  Since this checkpoint
@@ -843,7 +843,7 @@ object PersistedModel extends js.Object {
       /* param */ js.Any, 
       scala.Unit
     ]
-  ): stdLib.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
+  ): js.Promise[loopbackLib.Anon_Conflicts] | scala.Unit = js.native
   /**
                * Update multiple instances that match the where clause.
                *
@@ -863,7 +863,7 @@ object PersistedModel extends js.Object {
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
                * @param {any} data any containing data to replace matching instances, if any.
                */
-  def updateAll(): stdLib.Promise[scala.Double] = js.native
+  def updateAll(): js.Promise[scala.Double] = js.native
   /**
                * Update multiple instances that match the where clause.
                * @callback {() => void} callback Callback function called with `(err, info)` arguments.  Required.
@@ -921,7 +921,7 @@ object PersistedModel extends js.Object {
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
                * @param {any} data any containing data to replace matching instances, if any.
                */
-  def updateAll(where: js.Any): stdLib.Promise[scala.Double] = js.native
+  def updateAll(where: js.Any): js.Promise[scala.Double] = js.native
   /**
                * Update multiple instances that match the where clause.
                *
@@ -941,7 +941,7 @@ object PersistedModel extends js.Object {
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
                * @param {any} data any containing data to replace matching instances, if any.
                */
-  def updateAll(where: js.Any, data: js.Any): stdLib.Promise[scala.Double] = js.native
+  def updateAll(where: js.Any, data: js.Any): js.Promise[scala.Double] = js.native
   /**
                * Update multiple instances that match the where clause.
                *
@@ -979,7 +979,7 @@ object PersistedModel extends js.Object {
                * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
                * @param {any} model Updated model instance
                */
-  def upsert[T](data: js.Any): stdLib.Promise[T] = js.native
+  def upsert[T](data: js.Any): js.Promise[T] = js.native
   /**
                * Update or insert a model instance
                * @param {any} data The model instance data to insert.
@@ -1001,7 +1001,7 @@ object PersistedModel extends js.Object {
                * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforothermethods).
                * @param {any} data The model instance data to insert.
                */
-  def upsertWithWhere[T](data: js.Any): stdLib.Promise[T] = js.native
+  def upsertWithWhere[T](data: js.Any): js.Promise[T] = js.native
   /**
                * Update or insert a model instance based on the search criteria.
                * If there is a single instance retrieved, update the retrieved model.

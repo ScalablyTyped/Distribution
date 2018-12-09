@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Promise extends js.Object {
-  def promise(): stdLib.Promise[scala.Unit]
+  def promise(): js.Promise[scala.Unit]
 }
 

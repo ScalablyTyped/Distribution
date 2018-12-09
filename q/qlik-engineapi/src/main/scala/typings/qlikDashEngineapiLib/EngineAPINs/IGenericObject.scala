@@ -25,7 +25,7 @@ trait IGenericObject
            * For example, /qListObjectDef.
            * @returns -
            */
-  def abortListObjectSearch(qPath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def abortListObjectSearch(qPath: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Accept the results of a search in a list object. The search results become selected in the field.
            *
@@ -41,7 +41,7 @@ trait IGenericObject
            * This parameter is optional.
            * @returns -
            */
-  def acceptListObjectSearch(qPath: java.lang.String, qToggleMode: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def acceptListObjectSearch(qPath: java.lang.String, qToggleMode: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Accept the results of a search in a list object. The search results become selected in the field.
            *
@@ -57,7 +57,7 @@ trait IGenericObject
            * This parameter is optional.
            * @returns -
            */
-  def acceptListObjectSearch(qPath: java.lang.String, qToggleMode: scala.Boolean, qSoftLock: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def acceptListObjectSearch(qPath: java.lang.String, qToggleMode: scala.Boolean, qSoftLock: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Applies a patch to the properties of an object. Allows an update to some of the properties.
            * It is possible to apply a patch to the properties of a generic object, that is not persistent.
@@ -76,7 +76,7 @@ trait IGenericObject
            * Default is false.
            * @returns -
            */
-  def applyPatches(qPatches: js.Array[INxPatch]): stdLib.Promise[scala.Unit] = js.native
+  def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[scala.Unit] = js.native
   /**
            * Applies a patch to the properties of an object. Allows an update to some of the properties.
            * It is possible to apply a patch to the properties of a generic object, that is not persistent.
@@ -95,7 +95,7 @@ trait IGenericObject
            * Default is false.
            * @returns -
            */
-  def applyPatches(qPatches: js.Array[INxPatch], qSoftPatch: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def applyPatches(qPatches: js.Array[INxPatch], qSoftPatch: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Begins the selection mode. The app enters the modal state. The specified object enters the selection mode and
            * a modal window is opened. The selection mode can apply to only one object in an app at a time.
@@ -116,7 +116,7 @@ trait IGenericObject
            * For example, /qListObjectDef.
            * @returns -
            */
-  def beginSelections(qPaths: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def beginSelections(qPaths: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   /**
            * Clears the selections in a dimension of a visualization.
            * @param qPath - Path to the definition of the visualization.
@@ -126,7 +126,7 @@ trait IGenericObject
            * This parameter is optional. If this parameter is not set, all dimensions are cleared.
            * @returns -
            */
-  def clearSelections(qPath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def clearSelections(qPath: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Clears the selections in a dimension of a visualization.
            * @param qPath - Path to the definition of the visualization.
@@ -136,13 +136,13 @@ trait IGenericObject
            * This parameter is optional. If this parameter is not set, all dimensions are cleared.
            * @returns -
            */
-  def clearSelections(qPath: java.lang.String, qColIndices: js.Array[scala.Double]): stdLib.Promise[scala.Unit] = js.native
+  def clearSelections(qPath: java.lang.String, qColIndices: js.Array[scala.Double]): js.Promise[scala.Unit] = js.native
   /**
            * Clears the soft properties of a generic object.
            * For more information on how to add soft properties to a generic object,
            * @returns -
            */
-  def clearSoftPatches(): stdLib.Promise[scala.Unit] = js.native
+  def clearSoftPatches(): js.Promise[scala.Unit] = js.native
   /**
            * Collapses the left dimensions of a pivot table. This method applies only to pivot tables that are not always fully expanded.
            * In the definition of the hypercube (in HyperCubeDef), the parameter qAlwaysFullyExpanded must be set to false.
@@ -157,7 +157,7 @@ trait IGenericObject
            * Parameters qRow and qCol are not used if qAll is set to true, but they need to be set (for example to 0).
            * @returns -
            */
-  def collapseLeft(qPath: java.lang.String, qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def collapseLeft(qPath: java.lang.String, qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Collapses the top dimensions of a pivot table. This method applies only to pivot tables that are not always fully expanded.
            * In the definition of the hypercube (in HyperCubeDef), the parameter qAlwaysFullyExpanded must be set to false.
@@ -172,7 +172,7 @@ trait IGenericObject
            * Parameters qRow and qCol are not used if qAll is set to true, but they need to be set (for example to 0).
            * @returns -
            */
-  def collapseTop(qPath: java.lang.String, qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def collapseTop(qPath: java.lang.String, qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Copies the properties of a generic object and its children.
            * The source object is specified by the parameter qFromId and the destination object is referenced by its handle.
@@ -181,7 +181,7 @@ trait IGenericObject
            * @param qFromId - Identifier of the object to copy.
            * @returns -
            */
-  def copyFrom(qFromId: IGenericObjectProperties): stdLib.Promise[scala.Unit] = js.native
+  def copyFrom(qFromId: IGenericObjectProperties): js.Promise[scala.Unit] = js.native
   /**
            * Creates a generic object that is a child of another generic object.
            *
@@ -199,7 +199,7 @@ trait IGenericObject
            * Should be set to update the properties of the parent's object at the same time the child is created.
            * @returns - A Promise of GenericObject
            */
-  def createChild(qProp: IGenericObjectProperties): stdLib.Promise[IGenericObject] = js.native
+  def createChild(qProp: IGenericObjectProperties): js.Promise[IGenericObject] = js.native
   /**
            * Creates a generic object that is a child of another generic object.
            *
@@ -217,7 +217,7 @@ trait IGenericObject
            * Should be set to update the properties of the parent's object at the same time the child is created.
            * @returns - A Promise of GenericObject
            */
-  def createChild(qProp: IGenericObjectProperties, qPropForThis: IGenericObjectProperties): stdLib.Promise[IGenericObject] = js.native
+  def createChild(qProp: IGenericObjectProperties, qPropForThis: IGenericObjectProperties): js.Promise[IGenericObject] = js.native
   /**
            * Removes all children and all children to the children on an object.
            * @param qPropForThis - This parameter is optional.
@@ -225,7 +225,7 @@ trait IGenericObject
            * Should be set to update the properties of the parent's object at the same time the child is created.
            * @returns -
            */
-  def destroyAllChildren(): stdLib.Promise[scala.Unit] = js.native
+  def destroyAllChildren(): js.Promise[scala.Unit] = js.native
   /**
            * Removes all children and all children to the children on an object.
            * @param qPropForThis - This parameter is optional.
@@ -233,7 +233,7 @@ trait IGenericObject
            * Should be set to update the properties of the parent's object at the same time the child is created.
            * @returns -
            */
-  def destroyAllChildren(qPropForThis: IGenericObjectProperties): stdLib.Promise[scala.Unit] = js.native
+  def destroyAllChildren(qPropForThis: IGenericObjectProperties): js.Promise[scala.Unit] = js.native
   /**
            * Removes a child object.
            * Note: It is possible to update the properties of the child's parent at the same time that the child is removed.
@@ -248,7 +248,7 @@ trait IGenericObject
            * Should be set to update the properties of the parent's object at the same time the child is created.
            * @returns - true or false
            */
-  def destroyChild(qid: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def destroyChild(qid: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Removes a child object.
            * Note: It is possible to update the properties of the child's parent at the same time that the child is removed.
@@ -263,7 +263,7 @@ trait IGenericObject
            * Should be set to update the properties of the parent's object at the same time the child is created.
            * @returns - true or false
            */
-  def destroyChild(qid: java.lang.String, qPropForThis: IGenericObjectProperties): stdLib.Promise[scala.Boolean] = js.native
+  def destroyChild(qid: java.lang.String, qPropForThis: IGenericObjectProperties): js.Promise[scala.Boolean] = js.native
   /**
            * You can use the drillUp method with any object that contains a drill-down group as a dimension.
            * This method allows you to move between different levels of information
@@ -279,7 +279,7 @@ trait IGenericObject
            * The default value is 0.
            * @returns -
            */
-  def drillUp(qPath: java.lang.String, qDimNo: scala.Double, qNbrSteps: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def drillUp(qPath: java.lang.String, qDimNo: scala.Double, qNbrSteps: scala.Double): js.Promise[scala.Unit] = js.native
   /**
            * Adds a snapshot to a generic object.
            *
@@ -289,14 +289,14 @@ trait IGenericObject
            * @param qId Identifier of the bookmark. >> This parameter is mandatory.
            * @returns -
            */
-  def embedSnapshotObject(qId: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def embedSnapshotObject(qId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Ends the selection mode on a visualization. The selections are accepted or aborted when exiting the selection mode,
            * depending on the qAccept parameter value.
            * @param qAccept - Set this parameter to true to accept the selections before exiting the selection mode.
            * @returns -
            */
-  def endSelections(qAccept: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def endSelections(qAccept: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Expands the left dimensions of a pivot table.
            * This method applies only to pivot tables that are not always fully expanded.
@@ -312,7 +312,7 @@ trait IGenericObject
            * Parameters qRow and qCol are not used if qAll is set to true, but they need to be set (for example to 0).
            * @returns -
            */
-  def expandLeft(qPath: java.lang.String, qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def expandLeft(qPath: java.lang.String, qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Expands the top dimensions of a pivot table.
            * This method applies only to pivot tables that are not always fully expanded.
@@ -328,7 +328,7 @@ trait IGenericObject
            * Parameters qRow and qCol are not used if qAll is set to true, but they need to be set (for example to 0).
            * @returns -
            */
-  def expandTop(qPath: java.lang.String, qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def expandTop(qPath: java.lang.String, qRow: scala.Double, qCol: scala.Double, qAll: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Exports the data of any generic object to an Excel file or a open XML file.
            * If the object contains excluded values, those excluded values are not exported.
@@ -363,7 +363,7 @@ trait IGenericObject
            *
            * @returns - A Promise of String qUrl: <url of the exported file> and qWarnings: [1000] only if exported data is truncated
            */
-  def exportData(qFileType: FileType, qPath: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def exportData(qFileType: FileType, qPath: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
            * Exports the data of any generic object to an Excel file or a open XML file.
            * If the object contains excluded values, those excluded values are not exported.
@@ -398,7 +398,7 @@ trait IGenericObject
            *
            * @returns - A Promise of String qUrl: <url of the exported file> and qWarnings: [1000] only if exported data is truncated
            */
-  def exportData(qFileType: FileType, qPath: java.lang.String, qFileName: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def exportData(qFileType: FileType, qPath: java.lang.String, qFileName: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
            * Exports the data of any generic object to an Excel file or a open XML file.
            * If the object contains excluded values, those excluded values are not exported.
@@ -438,14 +438,14 @@ trait IGenericObject
     qPath: java.lang.String,
     qFileName: java.lang.String,
     qExportState: ExportStateType
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /**
            * Returns the type of the object and the corresponding handle.
            * @param qId - Identifier of the object.
            * >> This parameter is mandatory.
            * @returns - A Promise of GenericObject
            */
-  def getChild(qId: java.lang.String): stdLib.Promise[IGenericObject] = js.native
+  def getChild(qId: java.lang.String): js.Promise[IGenericObject] = js.native
   /**
            * Returns the identifier and the type for each child in an app object.
            * If the child contains extra properties in qInfos,these properties are returned.
@@ -453,14 +453,14 @@ trait IGenericObject
            * Note: Full dynamic properties are optional and are returned if they exist in the definition of the object.
            * @returns - A Promise Array of NxInfo
            */
-  def getChildInfos(): stdLib.Promise[js.Array[INxInfo]] = js.native
+  def getChildInfos(): js.Promise[js.Array[INxInfo]] = js.native
   /**
            * Returns the identifier, the type and the properties of the object.
            * If the object contains some soft properties, the soft properties are returned.
            * If the object is linked to another object, the properties of the linking object are returned.
            * @returns - A Promise of GenericObjectProperties
            */
-  def getEffectiveProperties(): stdLib.Promise[IGenericObjectProperties] = js.native
+  def getEffectiveProperties(): js.Promise[IGenericObjectProperties] = js.native
   /**
            * Gets the properties of:
            *       - a generic object
@@ -468,7 +468,7 @@ trait IGenericObject
            *       - the bookmarks/embedded snapshots of the generic object
            * @returns - A Promise  GenericObjectEntry
            */
-  def getFullPropertyTree(): stdLib.Promise[IGenericObjectEntry] = js.native
+  def getFullPropertyTree(): js.Promise[IGenericObjectEntry] = js.native
   /**
            * This method supports data binning.
            * When a generic object with two or three measures and one dimension contains a lot of data,
@@ -519,7 +519,7 @@ trait IGenericObject
     qMaxNbrCells: scala.Double,
     qQueryLevel: scala.Double,
     qBinningMethod: scala.Double
-  ): stdLib.Promise[js.Array[INxDataPage]] = js.native
+  ): js.Promise[js.Array[INxDataPage]] = js.native
   /**
            * Retrieves and packs compressed hypercube and axis data. It is possible to retrieve specific pages of data.
            *
@@ -532,7 +532,7 @@ trait IGenericObject
            * Options.MaxNbrTicks - maximum number of ticks.
            * @returns - A Promise <Boolean> or <Array of NxDataPage> or <Array of NxAxisData>
            */
-  def getHyperCubeContinuousData(qPath: java.lang.String, qOptions: js.Array[IContinuousDataOptions]): stdLib.Promise[qlikDashEngineapiLib.Anon_QAxisData] = js.native
+  def getHyperCubeContinuousData(qPath: java.lang.String, qOptions: js.Array[IContinuousDataOptions]): js.Promise[qlikDashEngineapiLib.Anon_QAxisData] = js.native
   /**
            * Retrieves the values of a chart, a table, or a scatter plot. It is possible to retrieve specific pages of data.
            * Note: This method does not apply to stacked tables.
@@ -543,7 +543,7 @@ trait IGenericObject
            * >> This parameter is mandatory.
            * @returns - A data set Array of NxDataPage
            */
-  def getHyperCubeData(qPath: java.lang.String, qPages: js.Array[INxPage]): stdLib.Promise[js.Array[INxDataPage]] = js.native
+  def getHyperCubeData(qPath: java.lang.String, qPages: js.Array[INxPage]): js.Promise[js.Array[INxDataPage]] = js.native
   /**
            * Retrieves the values of a pivot table. It is possible to retrieve specific pages of data.
            * @param qPath - Path to the definition of the object to be selected.
@@ -553,7 +553,7 @@ trait IGenericObject
            * >> This parameter is mandatory.
            * @returns - A data set Array of NxPivotPage
            */
-  def getHyperCubePivotData(qPath: java.lang.String, qPages: js.Array[INxPage]): stdLib.Promise[js.Array[INxPivotPage]] = js.native
+  def getHyperCubePivotData(qPath: java.lang.String, qPages: js.Array[INxPage]): js.Promise[js.Array[INxPivotPage]] = js.native
   /**
            * Reduces the data of a bar chart, a line chart or a scatter plot chart and retrieves them.
            * The reduction is dependent on the zoom factor (parameter qZoomFactor) and on the reduction mode.
@@ -606,7 +606,7 @@ trait IGenericObject
     qPages: js.Array[INxPage],
     qZoomFactor: scala.Double,
     qReductionMode: ReductionModeType
-  ): stdLib.Promise[js.Array[INxDataPage]] = js.native
+  ): js.Promise[js.Array[INxDataPage]] = js.native
   /**
            * Retrieves the values of a stacked pivot table. It is possible to retrieve specific pages of data.
            * @param qPath - Path to the definition of the object to be selected.
@@ -617,7 +617,7 @@ trait IGenericObject
            * >> This parameter is optional. The default value is 10 000.
            * @returns - A data set Array of NxStackPage.
            */
-  def getHyperCubeStackData(qPath: java.lang.String, qPages: js.Array[INxPage]): stdLib.Promise[js.Array[INxStackPage]] = js.native
+  def getHyperCubeStackData(qPath: java.lang.String, qPages: js.Array[INxPage]): js.Promise[js.Array[INxStackPage]] = js.native
   /**
            * Retrieves the values of a stacked pivot table. It is possible to retrieve specific pages of data.
            * @param qPath - Path to the definition of the object to be selected.
@@ -628,7 +628,7 @@ trait IGenericObject
            * >> This parameter is optional. The default value is 10 000.
            * @returns - A data set Array of NxStackPage.
            */
-  def getHyperCubeStackData(qPath: java.lang.String, qPages: js.Array[INxPage], qMaxNbrCells: scala.Double): stdLib.Promise[js.Array[INxStackPage]] = js.native
+  def getHyperCubeStackData(qPath: java.lang.String, qPages: js.Array[INxPage], qMaxNbrCells: scala.Double): js.Promise[js.Array[INxStackPage]] = js.native
   /**
            * Retrieves the values of a stacked pivot table. It is possible to retrieve specific pages of data.
            * @param qPath - Path to the definition of the object to be selected.
@@ -636,12 +636,12 @@ trait IGenericObject
            * @param qNodeOptions - Specifies all the paging filters needed to define the tree to be fetched.
            * @returns - A data set Array of NxTreeNode.
            */
-  def getHyperCubeTreeData(qPath: java.lang.String, qNodeOptions: js.Array[INxTreeDataOption]): stdLib.Promise[INxTreeNode] = js.native
+  def getHyperCubeTreeData(qPath: java.lang.String, qNodeOptions: js.Array[INxTreeDataOption]): js.Promise[INxTreeNode] = js.native
   /**
            * Returns the type and identifier of the object.
            * @returns - A Promise of NxInfo.
            */
-  def getInfo(): stdLib.Promise[INxInfo] = js.native
+  def getInfo(): js.Promise[INxInfo] = js.native
   /* ToCheck!  return value is GenericObjectLayout  */
   /**
            * Evaluates an object and displays its properties including the dynamic properties.
@@ -652,12 +652,12 @@ trait IGenericObject
            * the GetLayout method returns the properties described in HyperCube.
            * @returns - A Promise of GenericBaseLayout.
            */
-  def getLayout(): stdLib.Promise[IGenericBaseLayout] = js.native
+  def getLayout(): js.Promise[IGenericBaseLayout] = js.native
   /**
            * Lists the linked objects to a generic object, a dimension or a measure.
            * @returns - Array of NxLinkedObjectInfo
            */
-  def getLinkedObjects(): stdLib.Promise[js.Array[INxLinkedObjectInfo]] = js.native
+  def getLinkedObjects(): js.Promise[js.Array[INxLinkedObjectInfo]] = js.native
   /**
            * GetListObjectContinuousData method
            * @param qPath - Path to the definition of the object.
@@ -667,7 +667,7 @@ trait IGenericObject
            * - Options.MaxNbrTicks - maximum number of ticks.
            * @returns - A data set Array of (NxDataPage) or (NxAxisData)
            */
-  def getListObjectContinuousData(qPath: java.lang.String, qOptions: IContinuousDataOptions): stdLib.Promise[qlikDashEngineapiLib.Anon_QAxisDataQDataPages] = js.native
+  def getListObjectContinuousData(qPath: java.lang.String, qOptions: IContinuousDataOptions): js.Promise[qlikDashEngineapiLib.Anon_QAxisDataQDataPages] = js.native
   /**
            * Retrieves the values of a list object.
            * @param qPath - Path to the definition of the object to be selected.
@@ -675,7 +675,7 @@ trait IGenericObject
            * @param qPages -Array of pages you are interested in.
            * @returns - Array of NxDataPage
            */
-  def getListObjectData(qPath: java.lang.String, qPages: js.Array[INxPage]): stdLib.Promise[js.Array[INxDataPage]] = js.native
+  def getListObjectData(qPath: java.lang.String, qPages: js.Array[INxPage]): js.Promise[js.Array[INxDataPage]] = js.native
   /**
            * Returns the identifier, the type and the properties of the object.
            * Because it is not mandatory to set all properties when you define an object,
@@ -688,12 +688,12 @@ trait IGenericObject
            * Note: If the member delta is set to true in the request object, only the delta is retrieved.
            * @returns - A Promise of GenericObjectProperties
            */
-  def getProperties(): stdLib.Promise[IGenericObjectProperties] = js.native
+  def getProperties(): js.Promise[IGenericObjectProperties] = js.native
   /**
            * Returns the type of the object and the corresponding handle.
            * @returns - A Promise of GenericBookmark
            */
-  def getSnapshotObject(): stdLib.Promise[IGenericBookmark] = js.native
+  def getSnapshotObject(): js.Promise[IGenericBookmark] = js.native
   /**
            * Locks the selected values of a generic object.
            * @param qPath - Path to the definition of the object.
@@ -702,7 +702,7 @@ trait IGenericObject
            * Dimension numbers/indexes start from 0.
            * This parameter is optional. If this parameter is not set, the selected values in all dimensions are locked.
            */
-  def lock(qPath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def lock(qPath: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Locks the selected values of a generic object.
            * @param qPath - Path to the definition of the object.
@@ -711,7 +711,7 @@ trait IGenericObject
            * Dimension numbers/indexes start from 0.
            * This parameter is optional. If this parameter is not set, the selected values in all dimensions are locked.
            */
-  def lock(qPath: java.lang.String, qColIndices: js.Array[scala.Double]): stdLib.Promise[scala.Unit] = js.native
+  def lock(qPath: java.lang.String, qColIndices: js.Array[scala.Double]): js.Promise[scala.Unit] = js.native
   /**
            * Make range selections in measures.
            *
@@ -736,7 +736,7 @@ trait IGenericObject
            * >> The default value is false.
            * @returns - true or false
            */
-  def multiRangeSelectHyperCubeValues(qPath: java.lang.String, qRanges: INxMultiRangeSelectInfo, qDeselectOnlyOneSelected: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def multiRangeSelectHyperCubeValues(qPath: java.lang.String, qRanges: INxMultiRangeSelectInfo, qDeselectOnlyOneSelected: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Make range selections in measures.
            *
@@ -766,7 +766,7 @@ trait IGenericObject
     qRanges: INxMultiRangeSelectInfo,
     qDeselectOnlyOneSelected: scala.Boolean,
     qColumnsToSelect: js.Array[scala.Double]
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * Make range selections in measures.
            *
@@ -797,13 +797,13 @@ trait IGenericObject
     qDeselectOnlyOneSelected: scala.Boolean,
     qColumnsToSelect: js.Array[scala.Double],
     qOrMode: scala.Boolean
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * Publishes a generic object.
            *
            * Note: This operation is possible only in Qlik Sense Enterprise.
            */
-  def publish(): stdLib.Promise[scala.Unit] = js.native
+  def publish(): js.Promise[scala.Unit] = js.native
   /**
            * Make range selections in measures.
            * Note: This method applies to hypercubes. For example, bar charts, tables and scatter plots.
@@ -831,7 +831,7 @@ trait IGenericObject
     qPath: java.lang.String,
     qRanges: js.Array[INxRangeSelectInfo],
     qDeselectOnlyOneSelected: scala.Boolean
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * Make range selections in measures.
            * Note: This method applies to hypercubes. For example, bar charts, tables and scatter plots.
@@ -860,7 +860,7 @@ trait IGenericObject
     qRanges: js.Array[INxRangeSelectInfo],
     qDeselectOnlyOneSelected: scala.Boolean,
     qColumnsToSelect: js.Array[scala.Double]
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * Make range selections in measures.
            * Note: This method applies to hypercubes. For example, bar charts, tables and scatter plots.
@@ -890,11 +890,11 @@ trait IGenericObject
     qDeselectOnlyOneSelected: scala.Boolean,
     qColumnsToSelect: js.Array[scala.Double],
     qOrMode: scala.Boolean
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * Resets all selections made in selection mode.
            */
-  def resetMadeSelections(): stdLib.Promise[scala.Unit] = js.native
+  def resetMadeSelections(): js.Promise[scala.Unit] = js.native
   /**
            * Searches for a string in a list object.
            *
@@ -909,7 +909,7 @@ trait IGenericObject
            *        P U S: retrieves values that start with P, U or S
            * @returns - The operation is successful if qSuccess is set to true.
            */
-  def searchListObjectFor(qPath: java.lang.String, qMatch: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def searchListObjectFor(qPath: java.lang.String, qMatch: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Makes selections in multiple dimensions and measures.
            *
@@ -942,7 +942,7 @@ trait IGenericObject
     qColIndices: js.Array[scala.Double],
     qSoftLock: scala.Boolean,
     qDeselectOnlyOneSelected: scala.Boolean
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * SelectHyperCubeContinuousRange method
            * @param qPath - Path to the definition of the object.
@@ -955,7 +955,7 @@ trait IGenericObject
            * >> This parameter is mandatory.
            * @returns - true or false.
            */
-  def selectHyperCubeContinuousRange(qPath: java.lang.String, qRanges: js.Array[INxContinuousRangeSelectInfo], qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectHyperCubeContinuousRange(qPath: java.lang.String, qRanges: js.Array[INxContinuousRangeSelectInfo], qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects some values in one dimension.
            * The values are identified by their element numbers.
@@ -979,7 +979,7 @@ trait IGenericObject
     qDimNo: scala.Double,
     qValues: js.Array[scala.Double],
     qToggleMode: scala.Boolean
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all values of a field.
            *
@@ -992,7 +992,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectAll(qPath: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectAll(qPath: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all values of a field.
            *
@@ -1005,7 +1005,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectAll(qPath: java.lang.String, qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectAll(qPath: java.lang.String, qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all values of a field.
            *
@@ -1018,7 +1018,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectAlternative(qPath: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectAlternative(qPath: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all values of a field.
            *
@@ -1031,7 +1031,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectAlternative(qPath: java.lang.String, qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectAlternative(qPath: java.lang.String, qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * @param qPath - Path to the definition of the object to be selected.
            * For example, /qListObjectDef.
@@ -1044,7 +1044,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectContinuousRange(qPath: java.lang.String, qRanges: js.Array[stdLib.Range]): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectContinuousRange(qPath: java.lang.String, qRanges: js.Array[stdLib.Range]): js.Promise[scala.Boolean] = js.native
   /**
            * @param qPath - Path to the definition of the object to be selected.
            * For example, /qListObjectDef.
@@ -1057,7 +1057,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectContinuousRange(qPath: java.lang.String, qRanges: js.Array[stdLib.Range], qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectContinuousRange(qPath: java.lang.String, qRanges: js.Array[stdLib.Range], qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Inverts the current selections in a specific field.
            *
@@ -1070,7 +1070,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectExcluded(qPath: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectExcluded(qPath: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Inverts the current selections in a specific field.
            *
@@ -1083,7 +1083,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectExcluded(qPath: java.lang.String, qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectExcluded(qPath: java.lang.String, qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all possible values of a list object.
            *
@@ -1096,7 +1096,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectPossible(qPath: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectPossible(qPath: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all possible values of a list object.
            *
@@ -1109,7 +1109,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectPossible(qPath: java.lang.String, qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectPossible(qPath: java.lang.String, qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Makes single selections in dimensions.
            *
@@ -1127,7 +1127,7 @@ trait IGenericObject
            * >> This parameter is optional.
            * @returns - true or false.
            */
-  def selectListObjectValues(qPath: java.lang.String, qValues: js.Array[scala.Double], qToggleMode: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectListObjectValues(qPath: java.lang.String, qValues: js.Array[scala.Double], qToggleMode: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Makes single selections in dimensions.
            *
@@ -1150,7 +1150,7 @@ trait IGenericObject
     qValues: js.Array[scala.Double],
     qToggleMode: scala.Boolean,
     qSoftLock: scala.Boolean
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * Note: This method only applies to hypercubes that are not represented as straight tables.
            * The parameter qMode in HyperCubeDef must be set either to P or K.
@@ -1179,7 +1179,7 @@ trait IGenericObject
     qPath: java.lang.String,
     qSelections: js.Array[INxSelectionCell],
     qDeselectOnlyOneSelected: scala.Boolean
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * Note: This method only applies to hypercubes that are not represented as straight tables.
            * The parameter qMode in HyperCubeDef must be set either to P or K.
@@ -1209,7 +1209,7 @@ trait IGenericObject
     qSelections: js.Array[INxSelectionCell],
     qDeselectOnlyOneSelected: scala.Boolean,
     qSoftLock: scala.Boolean
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
            * Sets the order of the children in a generic object.
            *
@@ -1217,7 +1217,7 @@ trait IGenericObject
            * must be included in the list of the identifiers (in qIds).
            * @returns -
            */
-  def setChildArrayOrder(qIds: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def setChildArrayOrder(qIds: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   /**
            * Sets the properties of:
            *
@@ -1229,20 +1229,20 @@ trait IGenericObject
            *           it creates the child.
            * Note: The type of an object cannot be updated.
            */
-  def setFullPropertyTree(qPropEntry: IGenericObjectEntry): stdLib.Promise[scala.Unit] = js.native
+  def setFullPropertyTree(qPropEntry: IGenericObjectEntry): js.Promise[scala.Unit] = js.native
   /**
            * Sets some properties for a generic object.
            *
            * Note: In addition to the parameters specified above, the object can get any properties
            * defined in the Generic objects section.
            */
-  def setProperties(qProp: IGenericObjectProperties): stdLib.Promise[scala.Unit] = js.native
+  def setProperties(qProp: IGenericObjectProperties): js.Promise[scala.Unit] = js.native
   /**
            * Unpublishes a generic object.
            *
            * Note: This operation is possible only in Qlik Sense Enterprise.
            */
-  def unPublish(): stdLib.Promise[scala.Unit] = js.native
+  def unPublish(): js.Promise[scala.Unit] = js.native
   /**
            * Unlocks the selected values of a generic object if the target (or handle ) is a generic object
            * @param qPath - Path to the definition of the object.
@@ -1251,7 +1251,7 @@ trait IGenericObject
            * Dimension numbers/indexes start from 0.
            * This parameter is optional. If this parameter is not set, the locked values in all dimensions are unlocked.
            */
-  def unlock(qPath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def unlock(qPath: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Unlocks the selected values of a generic object if the target (or handle ) is a generic object
            * @param qPath - Path to the definition of the object.
@@ -1260,6 +1260,6 @@ trait IGenericObject
            * Dimension numbers/indexes start from 0.
            * This parameter is optional. If this parameter is not set, the locked values in all dimensions are unlocked.
            */
-  def unlock(qPath: java.lang.String, qColIndices: js.Array[scala.Double]): stdLib.Promise[scala.Unit] = js.native
+  def unlock(qPath: java.lang.String, qColIndices: js.Array[scala.Double]): js.Promise[scala.Unit] = js.native
 }
 

@@ -18,12 +18,12 @@ trait Browser
      * Closes browser with all the pages (if any were opened).
      * The browser object itself is considered to be disposed and can not be used anymore.
      */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   /**
      * Creates a new incognito browser context.
      * This won't share cookies/cache with other browser contexts.
      */
-  def createIncognitoBrowserContext(): stdLib.Promise[BrowserContext] = js.native
+  def createIncognitoBrowserContext(): js.Promise[BrowserContext] = js.native
   /**
      * Returns the default browser context.
      * The default browser context can not be closed.
@@ -35,7 +35,7 @@ trait Browser
      */
   def disconnect(): scala.Unit = js.native
   /** Promise which resolves to a new Page object. */
-  def newPage(): stdLib.Promise[Page] = js.native
+  def newPage(): js.Promise[Page] = js.native
   /**
      * Adds the listener function to the end of the listeners array for the event named `eventName`.
      * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
@@ -129,20 +129,20 @@ trait Browser
     handler: js.Function2[/* e */ Target, /* repeated */js.Any, scala.Unit]
   ): this.type = js.native
   /** Promise which resolves to an array of all open pages. */
-  def pages(): stdLib.Promise[js.Array[Page]] = js.native
+  def pages(): js.Promise[js.Array[Page]] = js.native
   /** Spawned browser process. Returns `null` if the browser instance was created with `puppeteer.connect` method */
   def process(): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   /** A target associated with the browser. */
   def target(): Target = js.native
   /** Promise which resolves to an array of all active targets. */
-  def targets(): stdLib.Promise[js.Array[Target]] = js.native
+  def targets(): js.Promise[js.Array[Target]] = js.native
   /**
      * Promise which resolves to the browser's original user agent.
      * **NOTE** Pages can override browser user agent with `page.setUserAgent`.
      */
-  def userAgent(): stdLib.Promise[java.lang.String] = js.native
+  def userAgent(): js.Promise[java.lang.String] = js.native
   /** For headless Chromium, this is similar to HeadlessChrome/61.0.3153.0. For non-headless, this is similar to Chrome/61.0.3153.0. */
-  def version(): stdLib.Promise[java.lang.String] = js.native
+  def version(): js.Promise[java.lang.String] = js.native
   /** Browser websocket endpoint which can be used as an argument to puppeteer.connect. The format is ws://${host}:${port}/devtools/browser/<id> */
   def wsEndpoint(): java.lang.String = js.native
 }

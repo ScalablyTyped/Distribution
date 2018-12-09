@@ -22,12 +22,12 @@ object inDashAppDashPurchaseModMembers extends js.Object {
   def isCanceled(item: PurchasedItem): scala.Boolean = js.native
   def isExpired(item: PurchasedItem): scala.Boolean = js.native
   def isValidated(response: ValidationResponse): scala.Boolean = js.native
-  def refreshGoogleToken(): stdLib.Promise[scala.Unit] = js.native
+  def refreshGoogleToken(): js.Promise[scala.Unit] = js.native
   def refreshGoogleToken(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
   def reset(): scala.Unit = js.native
-  def setup(): stdLib.Promise[scala.Unit] = js.native
+  def setup(): js.Promise[scala.Unit] = js.native
   def setup(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
-  def validate(receipt: Receipt): stdLib.Promise[ValidationResponse] = js.native
+  def validate(receipt: Receipt): js.Promise[ValidationResponse] = js.native
   def validate(
     receipt: Receipt,
     callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, scala.Unit]
@@ -37,7 +37,7 @@ object inDashAppDashPurchaseModMembers extends js.Object {
     receipt: Receipt,
     callback: js.Function2[/* err */ js.Any, /* res */ ValidationResponse, scala.Unit]
   ): scala.Unit = js.native
-  def validateOnce(receipt: Receipt, secretOrPubKey: js.Any): stdLib.Promise[ValidationResponse] = js.native
+  def validateOnce(receipt: Receipt, secretOrPubKey: js.Any): js.Promise[ValidationResponse] = js.native
   def validateOnce(
     receipt: Receipt,
     secretOrPubKey: js.Any,

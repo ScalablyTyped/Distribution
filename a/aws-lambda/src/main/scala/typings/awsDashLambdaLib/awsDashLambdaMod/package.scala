@@ -40,7 +40,7 @@ package object awsDashLambdaMod {
     /* event */ TEvent, 
     /* context */ Context, 
     /* callback */ Callback[TResult], 
-    scala.Unit | stdLib.Promise[TResult]
+    scala.Unit | js.Promise[TResult]
   ]
   type KinesisStreamHandler = Handler[KinesisStreamEvent, scala.Unit]
   type PrincipalValue = (ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]) | java.lang.String | js.Array[java.lang.String]

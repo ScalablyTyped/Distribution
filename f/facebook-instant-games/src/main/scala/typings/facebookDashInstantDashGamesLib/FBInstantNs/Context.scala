@@ -20,7 +20,7 @@ trait Context extends js.Object {
            * @throws PENDING_REQUEST
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def chooseAsync(): stdLib.Promise[scala.Unit] = js.native
+  def chooseAsync(): js.Promise[scala.Unit] = js.native
   /**
            * Opens a context selection dialog for the player. If the player selects an available context, the client will attempt to switch into that context,
            * and resolve if successful. Otherwise, if the player exits the menu or the client fails to switch into the new context, this function will reject.
@@ -34,7 +34,7 @@ trait Context extends js.Object {
            * @throws PENDING_REQUEST
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def chooseAsync(options: ContextOptions): stdLib.Promise[scala.Unit] = js.native
+  def chooseAsync(options: ContextOptions): js.Promise[scala.Unit] = js.native
   /**
            * Attempts to create or switch into a context between a specified player and the current player. The returned promise will reject if the player listed is not a Connected Player of the current
            * player or if the player does not provide permission to enter the new context. Otherwise, the promise will resolve when the game has switched into the new context.
@@ -48,7 +48,7 @@ trait Context extends js.Object {
            * @throws PENDING_REQUEST
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def createAsync(playerID: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def createAsync(playerID: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * A unique identifier for the current game context. This represents a specific context that the game is being played in
            * (for example, a particular messenger conversation or facebook post). The identifier will be null if game is being played in
@@ -64,7 +64,7 @@ trait Context extends js.Object {
            * @throws CLIENT_UNSUPPORTED_OPERATION
            * @throws INVALID_OPERATION
            */
-  def getPlayersAsync(): stdLib.Promise[js.Array[ContextPlayer]] = js.native
+  def getPlayersAsync(): js.Promise[js.Array[ContextPlayer]] = js.native
   /**
            * The type of the current game context. POST - A facebook post. THREAD - A messenger thread.
            * GROUP - A facebook group. SOLO - Default context, where the player is the only participant.
@@ -126,6 +126,6 @@ trait Context extends js.Object {
            * @throws PENDING_REQUEST
            * @throws CLIENT_UNSUPPORTED_OPERATION
            */
-  def switchAsync(id: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def switchAsync(id: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

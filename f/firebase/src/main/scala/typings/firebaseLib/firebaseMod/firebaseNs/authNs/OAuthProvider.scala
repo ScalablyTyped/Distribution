@@ -11,6 +11,6 @@ trait OAuthProvider extends AuthProvider {
   def credential(): AuthCredential = js.native
   def credential(idToken: java.lang.String): AuthCredential = js.native
   def credential(idToken: java.lang.String, accessToken: java.lang.String): AuthCredential = js.native
-  def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
+  def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): AuthProvider = js.native
 }
 

@@ -11,11 +11,11 @@ object depcheckModMembers extends js.Object {
   val detector: depcheckLib.Anon_GruntLoadTaskCallExpression = js.native
   val parser: depcheckLib.Anon_Jsx = js.native
   val special: depcheckLib.Anon_Commitizen = js.native
-  def apply(rootDir: java.lang.String, options: depcheckLib.depcheckMod.depcheckNs.Options): stdLib.Promise[depcheckLib.depcheckMod.depcheckNs.Results] = js.native
+  def apply(rootDir: java.lang.String, options: depcheckLib.depcheckMod.depcheckNs.Options): js.Promise[depcheckLib.depcheckMod.depcheckNs.Results] = js.native
   def apply[T](
     rootDir: java.lang.String,
     options: depcheckLib.depcheckMod.depcheckNs.Options,
     callback: js.Function1[/* results */ depcheckLib.depcheckMod.depcheckNs.Results, T]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
 }
 

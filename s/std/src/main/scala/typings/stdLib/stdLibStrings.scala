@@ -358,9 +358,6 @@ object stdLibStrings {
   sealed trait Readonly extends js.Object
   
   @js.native
-  sealed trait Record extends js.Object
-  
-  @js.native
   sealed trait Required extends js.Object
   
   @js.native
@@ -2781,7 +2778,6 @@ object stdLibStrings {
   def RTCStatsEvent: RTCStatsEvent = "RTCStatsEvent".asInstanceOf[RTCStatsEvent]
   def RTCTrackEvent: RTCTrackEvent = "RTCTrackEvent".asInstanceOf[RTCTrackEvent]
   def Readonly: Readonly = "Readonly".asInstanceOf[Readonly]
-  def Record: Record = "Record".asInstanceOf[Record]
   def Required: Required = "Required".asInstanceOf[Required]
   def SVGUnload: SVGUnload = "SVGUnload".asInstanceOf[SVGUnload]
   def SVGZoom: SVGZoom = "SVGZoom".asInstanceOf[SVGZoom]

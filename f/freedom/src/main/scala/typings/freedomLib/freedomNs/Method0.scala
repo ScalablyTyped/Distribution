@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 // produce a reply message.
 @js.native
 trait Method0[R] extends js.Object {
-  def apply(): stdLib.Promise[R] = js.native
+  def apply(): js.Promise[R] = js.native
   def reckless(): scala.Unit = js.native
 }
 

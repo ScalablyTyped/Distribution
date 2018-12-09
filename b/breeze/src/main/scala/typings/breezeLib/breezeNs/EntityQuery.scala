@@ -20,9 +20,9 @@ class EntityQuery () extends js.Object {
   var skipCount: scala.Double = js.native
   var takeCount: scala.Double = js.native
   var wherePredicate: Predicate = js.native
-  def execute(): stdLib.Promise[QueryResult] = js.native
-  def execute(callback: ExecuteQuerySuccessCallback): stdLib.Promise[QueryResult] = js.native
-  def execute(callback: ExecuteQuerySuccessCallback, errorCallback: ExecuteQueryErrorCallback): stdLib.Promise[QueryResult] = js.native
+  def execute(): js.Promise[QueryResult] = js.native
+  def execute(callback: ExecuteQuerySuccessCallback): js.Promise[QueryResult] = js.native
+  def execute(callback: ExecuteQuerySuccessCallback, errorCallback: ExecuteQueryErrorCallback): js.Promise[QueryResult] = js.native
   def executeLocally(): js.Array[Entity] = js.native
   def expand(propertyPaths: java.lang.String): EntityQuery = js.native
   def expand(propertyPaths: js.Array[java.lang.String]): EntityQuery = js.native

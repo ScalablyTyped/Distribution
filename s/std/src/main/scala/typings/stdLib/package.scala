@@ -224,11 +224,11 @@ package object stdLib {
   type PositionErrorCallback = js.Function1[/* positionError */ PositionError, scala.Unit]
   type PromiseConstructorLike = ScalablyTyped.runtime.Instantiable1[
     /* executor */ js.Function2[
-      /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | PromiseLike[js.Object]], scala.Unit], 
+      /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | js.Thenable[js.Object]], scala.Unit], 
       /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
       scala.Unit
     ], 
-    PromiseLike[js.Object]
+    js.Thenable[js.Object]
   ]
   type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit]
   type PropertyKey = java.lang.String | scala.Double | js.Symbol
@@ -274,13 +274,13 @@ package object stdLib {
   type RangeError = Error
   type ReadableByteStreamControllerCallback = js.Function1[
     /* controller */ ReadableByteStreamController, 
-    scala.Unit | PromiseLike[scala.Unit]
+    scala.Unit | js.Thenable[scala.Unit]
   ]
   type ReadableStreamDefaultControllerCallback[R] = js.Function1[
     /* controller */ ReadableStreamDefaultController[R], 
-    scala.Unit | PromiseLike[scala.Unit]
+    scala.Unit | js.Thenable[scala.Unit]
   ]
-  type ReadableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | PromiseLike[scala.Unit]]
+  type ReadableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
   /**
    * Make all properties in T readonly
    */
@@ -289,7 +289,7 @@ package object stdLib {
   /**
    * Construct a type with a set of properties K of type T
    */
-  type Record[K /* <: java.lang.String */, T] = stdLib.stdLibStrings.Record with js.Any
+  type Record[K /* <: java.lang.String */, T] = ScalablyTyped.runtime.StringDictionary[K]
   type ReferenceError = Error
   type ReferrerPolicy = stdLib.stdLibStrings.Empty | stdLib.stdLibStrings.`no-referrer` | stdLib.stdLibStrings.`no-referrer-when-downgrade` | stdLib.stdLibStrings.`origin-only` | stdLib.stdLibStrings.`origin-when-cross-origin` | stdLib.stdLibStrings.`unsafe-url`
   type RenderingContext = CanvasRenderingContext2D | ImageBitmapRenderingContext | WebGLRenderingContext
@@ -334,12 +334,12 @@ package object stdLib {
   type Transferable = ArrayBuffer | MessagePort | ImageBitmap
   type TransformStreamDefaultControllerCallback[O] = js.Function1[
     /* controller */ TransformStreamDefaultController[O], 
-    scala.Unit | PromiseLike[scala.Unit]
+    scala.Unit | js.Thenable[scala.Unit]
   ]
   type TransformStreamDefaultControllerTransformCallback[I, O] = js.Function2[
     /* chunk */ I, 
     /* controller */ TransformStreamDefaultController[O], 
-    scala.Unit | PromiseLike[scala.Unit]
+    scala.Unit | js.Thenable[scala.Unit]
   ]
   type Transport = stdLib.stdLibStrings.usb | stdLib.stdLibStrings.nfc | stdLib.stdLibStrings.ble
   type TypeError = Error
@@ -361,17 +361,17 @@ package object stdLib {
   type WebKitCSSMatrix = DOMMatrix
   type WindowProxy = Window
   type WorkerType = stdLib.stdLibStrings.classic | stdLib.stdLibStrings.module
-  type WritableStreamDefaultControllerCloseCallback = js.Function0[scala.Unit | PromiseLike[scala.Unit]]
+  type WritableStreamDefaultControllerCloseCallback = js.Function0[scala.Unit | js.Thenable[scala.Unit]]
   type WritableStreamDefaultControllerStartCallback = js.Function1[
     /* controller */ WritableStreamDefaultController, 
-    scala.Unit | PromiseLike[scala.Unit]
+    scala.Unit | js.Thenable[scala.Unit]
   ]
   type WritableStreamDefaultControllerWriteCallback[W] = js.Function2[
     /* chunk */ W, 
     /* controller */ WritableStreamDefaultController, 
-    scala.Unit | PromiseLike[scala.Unit]
+    scala.Unit | js.Thenable[scala.Unit]
   ]
-  type WritableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | PromiseLike[scala.Unit]]
+  type WritableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
   type XMLHttpRequestResponseType = stdLib.stdLibStrings.Empty | stdLib.stdLibStrings.arraybuffer | stdLib.stdLibStrings.blob | stdLib.stdLibStrings.document | stdLib.stdLibStrings.json | stdLib.stdLibStrings.text
   type webkitURL = URL
 }

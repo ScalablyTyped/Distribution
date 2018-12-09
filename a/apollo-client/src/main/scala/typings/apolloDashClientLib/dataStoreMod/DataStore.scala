@@ -45,6 +45,6 @@ class DataStore[TSerialized] protected () extends js.Object {
     variables: js.Any
   ): scala.Unit = js.native
   def markUpdateQueryResult(document: graphqlLib.languageAstMod.DocumentNode, variables: js.Any, newResult: js.Any): scala.Unit = js.native
-  def reset(): stdLib.Promise[scala.Unit] = js.native
+  def reset(): js.Promise[scala.Unit] = js.native
 }
 

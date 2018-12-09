@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Renderable extends js.Object {
   var createOut: js.Any = js.native
-  def render(): stdLib.Promise[markoLib.srcRuntimeHtmlRenderResultMod.RenderResult] = js.native
-  def render(data: js.Any): stdLib.Promise[markoLib.srcRuntimeHtmlRenderResultMod.RenderResult] = js.native
+  def render(): js.Promise[markoLib.srcRuntimeHtmlRenderResultMod.RenderResult] = js.native
+  def render(data: js.Any): js.Promise[markoLib.srcRuntimeHtmlRenderResultMod.RenderResult] = js.native
   def render(data: js.Any, out: asyncDashWriterLib.asyncDashWriterMod.AsyncWriter): scala.Unit = js.native
   def render(
     data: js.Any,

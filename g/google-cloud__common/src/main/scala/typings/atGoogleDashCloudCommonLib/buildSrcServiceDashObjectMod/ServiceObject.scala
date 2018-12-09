@@ -40,7 +40,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {object} callback.instance - The instance.
        * @param {object} callback.apiResponse - The full API response.
        */
-  def create(): stdLib.Promise[js.Tuple2[ServiceObject[js.Object], requestLib.requestMod.requestNs.Response]] = js.native
+  def create(): js.Promise[js.Tuple2[ServiceObject[js.Object], requestLib.requestMod.requestNs.Response]] = js.native
   def create(callback: InstanceResponseCallback): scala.Unit = js.native
   /**
        * Create the object.
@@ -51,7 +51,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {object} callback.instance - The instance.
        * @param {object} callback.apiResponse - The full API response.
        */
-  def create(options: CreateOptions): stdLib.Promise[js.Tuple2[ServiceObject[js.Object], requestLib.requestMod.requestNs.Response]] = js.native
+  def create(options: CreateOptions): js.Promise[js.Tuple2[ServiceObject[js.Object], requestLib.requestMod.requestNs.Response]] = js.native
   def create(options: CreateOptions, callback: InstanceResponseCallback): scala.Unit = js.native
   /**
        * Delete the object.
@@ -60,7 +60,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {?error} callback.err - An error returned while making this request.
        * @param {object} callback.apiResponse - The full API response.
        */
-  def delete(): stdLib.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
+  def delete(): js.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
   def delete(callback: DeleteCallback): scala.Unit = js.native
   /**
        * Check if the object exists.
@@ -69,7 +69,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {?error} callback.err - An error returned while making this request.
        * @param {boolean} callback.exists - Whether the object exists or not.
        */
-  def exists(): stdLib.Promise[js.Array[scala.Boolean]] = js.native
+  def exists(): js.Promise[js.Array[scala.Boolean]] = js.native
   def exists(callback: ExistsCallback): scala.Unit = js.native
   /**
        * Get the object if it exists. Optionally have the object created if an
@@ -83,7 +83,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {object} callback.instance - The instance.
        * @param {object} callback.apiResponse - The full API response.
        */
-  def get(): stdLib.Promise[GetResponse] = js.native
+  def get(): js.Promise[GetResponse] = js.native
   def get(callback: InstanceResponseCallback): scala.Unit = js.native
   /**
        * Get the object if it exists. Optionally have the object created if an
@@ -97,7 +97,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {object} callback.instance - The instance.
        * @param {object} callback.apiResponse - The full API response.
        */
-  def get(config: GetConfig with CreateOptions): stdLib.Promise[GetResponse] = js.native
+  def get(config: GetConfig with CreateOptions): js.Promise[GetResponse] = js.native
   def get(config: GetConfig with CreateOptions, callback: InstanceResponseCallback): scala.Unit = js.native
   /**
        * Get the metadata of this object.
@@ -107,7 +107,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {object} callback.metadata - The metadata for this object.
        * @param {object} callback.apiResponse - The full API response.
        */
-  def getMetadata(): stdLib.Promise[Metadata] = js.native
+  def getMetadata(): js.Promise[Metadata] = js.native
   def getMetadata(callback: GetMetadataCallback): scala.Unit = js.native
   /**
        * Make an authenticated API request.
@@ -118,7 +118,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {string} reqOpts.uri - A URI relative to the baseUrl.
        * @param {function} callback - The callback function passed to `request`.
        */
-  def request(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): stdLib.Promise[requestLib.requestMod.requestNs.Response] = js.native
+  def request(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
   def request(
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
@@ -142,7 +142,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {function} callback - The callback function passed to `request`.
        */
   def `request_`(reqOpts: atGoogleDashCloudCommonLib.buildSrcServiceMod.StreamRequestOptions): requestLib.requestMod.requestNs.Request = js.native
-  def `request_`(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): stdLib.Promise[requestLib.requestMod.requestNs.Response] = js.native
+  def `request_`(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
   /**
        * Set the metadata for this object.
        *
@@ -151,7 +151,7 @@ class ServiceObject[CreateOptions /* <: js.Object */] protected ()
        * @param {?error} callback.err - An error returned while making this request.
        * @param {object} callback.apiResponse - The full API response.
        */
-  def setMetadata(metadata: Metadata): stdLib.Promise[SetMetadataResponse] = js.native
+  def setMetadata(metadata: Metadata): js.Promise[SetMetadataResponse] = js.native
   def setMetadata(metadata: Metadata, callback: ResponseCallback): scala.Unit = js.native
 }
 

@@ -16,7 +16,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotDnsLib.gapiDotClientDotDnsLibStrings.dns,
     version: gapiDotClientDotDnsLib.gapiDotClientDotDnsLibStrings.v1
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotDnsLib.gapiDotClientDotDnsLibStrings.dns,
     version: gapiDotClientDotDnsLib.gapiDotClientDotDnsLibStrings.v1,

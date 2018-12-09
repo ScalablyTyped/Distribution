@@ -10,7 +10,7 @@ trait Animation
   extends stdLib.EventTarget {
   var currentTime: scala.Double | scala.Null = js.native
   var effect: AnimationEffectReadOnly = js.native
-  val finished: stdLib.Promise[Animation] = js.native
+  val finished: js.Promise[Animation] = js.native
   var id: java.lang.String = js.native
   @JSName("oncancel")
   var oncancel_Original: AnimationEventListener = js.native
@@ -18,7 +18,7 @@ trait Animation
   var onfinish_Original: AnimationEventListener = js.native
   val playState: AnimationPlayState = js.native
   var playbackRate: scala.Double = js.native
-  val ready: stdLib.Promise[Animation] = js.native
+  val ready: js.Promise[Animation] = js.native
   var startTime: scala.Double = js.native
   var timeline: AnimationTimeline = js.native
   @JSName("addEventListener")

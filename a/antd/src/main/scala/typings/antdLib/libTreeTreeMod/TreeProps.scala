@@ -42,7 +42,7 @@ trait TreeProps extends js.Object {
     js.Function1[/* nodeProps */ AntdTreeNodeAttribute, reactLib.reactMod.ReactNs.ReactNode]
   ] = js.undefined
   /** 异步加载数据 */
-  var loadData: js.UndefOr[js.Function1[/* node */ AntTreeNode, stdLib.PromiseLike[_]]] = js.undefined
+  var loadData: js.UndefOr[js.Function1[/* node */ AntTreeNode, js.Thenable[_]]] = js.undefined
   var loadedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** 是否支持多选 */
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
@@ -85,7 +85,7 @@ trait TreeProps extends js.Object {
     js.Function2[
       /* expandedKeys */ js.Array[java.lang.String], 
       /* info */ AntTreeNodeExpandedEvent, 
-      scala.Unit | stdLib.PromiseLike[_]
+      scala.Unit | js.Thenable[_]
     ]
   ] = js.undefined
   var onLoaded: js.UndefOr[

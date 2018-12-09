@@ -17,13 +17,13 @@ trait Queue extends js.Object {
   	 * @param {Request} request - The request object to store.
   	 * @returns {Promise<void>}
   	 */
-  def addRequest(request: stdLib.Request): stdLib.Promise[scala.Unit]
+  def addRequest(request: stdLib.Request): js.Promise[scala.Unit]
   /**
   	 * Retrieves all stored requests in IndexedDB and retries them. If the queue contained requests that
   	 * were successfully replayed, the queueDidReplay callback is invoked (which implies the queue is now empty).
   	 * If any of the requests fail, a new sync registration is created to retry again later.
   	 * @returns {Promise<void>}
   	 */
-  def replayRequests(): stdLib.Promise[scala.Unit]
+  def replayRequests(): js.Promise[scala.Unit]
 }
 

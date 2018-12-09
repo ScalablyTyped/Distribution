@@ -10,7 +10,7 @@ trait HttpQueryRequest extends js.Object {
   var method: java.lang.String
   var options: (apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]) | (js.Function1[
     /* repeated */js.Any, 
-    (stdLib.Promise[
+    (js.Promise[
       apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
     ]) | (apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _])
   ])

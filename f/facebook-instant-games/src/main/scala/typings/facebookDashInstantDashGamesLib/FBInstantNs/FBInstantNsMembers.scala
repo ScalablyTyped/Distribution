@@ -30,14 +30,14 @@ object FBInstantNsMembers extends js.Object {
        * @throws CLIENT_REQUIRES_UPDATE
        * @throws INVALID_OPERATION
        */
-  def canCreateShortcutAsync(): stdLib.Promise[scala.Boolean] = js.native
+  def canCreateShortcutAsync(): js.Promise[scala.Boolean] = js.native
   /**
        * Checks if the current player is eligible for the matchPlayerAsync API.
        * @returns  A promise that resolves with true if the player is eligible to match with other players and false otherwise.
        * @throws NETWORK_FAILURE
        * @throws CLIENT_UNSUPPORTED_OPERATION
        */
-  def checkCanPlayerMatchAsync(): stdLib.Promise[scala.Boolean] = js.native
+  def checkCanPlayerMatchAsync(): js.Promise[scala.Boolean] = js.native
   /**
        * Prompts the user to create a shortcut to the game if they are eligible to Can only be called once per session. (see canCreateShortcutAsync)
        * @throws USER_INPUT
@@ -45,14 +45,14 @@ object FBInstantNsMembers extends js.Object {
        * @throws CLIENT_REQUIRES_UPDATE
        * @throws INVALID_OPERATION
        */
-  def createShortcutAsync(): stdLib.Promise[scala.Unit] = js.native
+  def createShortcutAsync(): js.Promise[scala.Unit] = js.native
   /**
        * Returns the entry point that the game was launched from.
        * This function should be called after FBInstant.startGameAsync() resolves.
        *
        * @returns The name of the entry point from which the user started the game.
        */
-  def getEntryPointAsync(): stdLib.Promise[java.lang.String] = js.native
+  def getEntryPointAsync(): js.Promise[java.lang.String] = js.native
   /**
        * Returns any data object associated with the entry point that the game was launched from.
        *
@@ -69,7 +69,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws ADS_TOO_MANY_INSTANCES
        * @throws CLIENT_UNSUPPORTED_OPERATION
        */
-  def getInterstitialAdAsync(placementID: java.lang.String): stdLib.Promise[AdInstance] = js.native
+  def getInterstitialAdAsync(placementID: java.lang.String): js.Promise[AdInstance] = js.native
   /**
        * Fetch a specific leaderboard belonging to this Instant Game.
        *
@@ -81,7 +81,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws INVALID_OPERATION
        * @throws INVALID_PARAM
        */
-  def getLeaderboardAsync(name: java.lang.String): stdLib.Promise[Leaderboard] = js.native
+  def getLeaderboardAsync(name: java.lang.String): js.Promise[Leaderboard] = js.native
   /**
        * The current locale. Use this to determine what language the current game should be localized with.
        * The value will not be accurate until FBInstant.startGameAsync() resolves.
@@ -100,7 +100,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws ADS_TOO_MANY_INSTANCES
        * @throws CLIENT_UNSUPPORTED_OPERATION
        */
-  def getRewardedVideoAsync(placementID: java.lang.String): stdLib.Promise[AdInstance] = js.native
+  def getRewardedVideoAsync(placementID: java.lang.String): js.Promise[AdInstance] = js.native
   /**
        * The string representation of this SDK version.
        *
@@ -119,7 +119,7 @@ object FBInstantNsMembers extends js.Object {
        * @returns A promise that resolves when the SDK is ready to use.
        * @throws INVALID_OPERATION
        */
-  def initializeAsync(): stdLib.Promise[scala.Unit] = js.native
+  def initializeAsync(): js.Promise[scala.Unit] = js.native
   /**
        * Log an app event with FB Analytics. See https://developers.facebook.com/docs/javascript/reference/v2.8#app_events for more details about FB Analytics.
        *
@@ -173,7 +173,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws CLIENT_UNSUPPORTED_OPERATION
        * @throws INVALID_OPERATION
        */
-  def matchPlayerAsync(): stdLib.Promise[scala.Unit] = js.native
+  def matchPlayerAsync(): js.Promise[scala.Unit] = js.native
   /**
        * Attempts to match the current player with other users looking for people to play with. If successful, a new Messenger group
        * thread will be created containing the matched players and the player will be context switched to that thread.
@@ -193,7 +193,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws CLIENT_UNSUPPORTED_OPERATION
        * @throws INVALID_OPERATION
        */
-  def matchPlayerAsync(matchTag: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def matchPlayerAsync(matchTag: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
        * Attempts to match the current player with other users looking for people to play with. If successful, a new Messenger group
        * thread will be created containing the matched players and the player will be context switched to that thread.
@@ -213,7 +213,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws CLIENT_UNSUPPORTED_OPERATION
        * @throws INVALID_OPERATION
        */
-  def matchPlayerAsync(matchTag: java.lang.String, switchContextWhenMatched: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def matchPlayerAsync(matchTag: java.lang.String, switchContextWhenMatched: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
        * Set a callback to be fired when a pause event is triggered.
        * @param func A function to call when a pause event occurs.
@@ -252,7 +252,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws CLIENT_UNSUPPORTED_OPERATION
        * @throws INVALID_OPERATION
        */
-  def shareAsync(payload: SharePayload): stdLib.Promise[scala.Unit] = js.native
+  def shareAsync(payload: SharePayload): js.Promise[scala.Unit] = js.native
   /**
        * This indicates that the game has finished initial loading and is ready to start.
        * Context information will be up-to-date when the returned promise resolves.
@@ -261,7 +261,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws INVALID_PARAM
        * @throws CLIENT_UNSUPPORTED_OPERATION
        */
-  def startGameAsync(): stdLib.Promise[scala.Unit] = js.native
+  def startGameAsync(): js.Promise[scala.Unit] = js.native
   /**
        * Request that the client switch to a different Instant Game. The API will reject if the switch fails - else, the client will load the new game.
        *
@@ -273,7 +273,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws PENDING_REQUEST
        * @throws CLIENT_REQUIRES_UPDATE
        */
-  def switchGameAsync(appID: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def switchGameAsync(appID: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
        * Request that the client switch to a different Instant Game. The API will reject if the switch fails - else, the client will load the new game.
        *
@@ -285,7 +285,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws PENDING_REQUEST
        * @throws CLIENT_REQUIRES_UPDATE
        */
-  def switchGameAsync(appID: java.lang.String, data: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def switchGameAsync(appID: java.lang.String, data: js.Any): js.Promise[scala.Unit] = js.native
   /**
        * Informs Facebook of an update that occurred in the game. This will temporarily yield control to Facebook and Facebook will decide what to do based on what the update is.
        * The returned promise will resolve/reject when Facebook returns control to the game.
@@ -296,7 +296,7 @@ object FBInstantNsMembers extends js.Object {
        * @throws PENDING_REQUEST
        * @throws INVALID_OPERATION
        */
-  def updateAsync(payload: CustomUpdatePayload): stdLib.Promise[scala.Unit] = js.native
+  def updateAsync(payload: CustomUpdatePayload): js.Promise[scala.Unit] = js.native
   /**
        * Informs Facebook of an update that occurred in the game. This will temporarily yield control to Facebook and Facebook will decide what to do based on what the update is.
        * The returned promise will resolve/reject when Facebook returns control to the game.
@@ -307,6 +307,6 @@ object FBInstantNsMembers extends js.Object {
        * @throws PENDING_REQUEST
        * @throws INVALID_OPERATION
        */
-  def updateAsync(payload: LeaderboardUpdatePayload): stdLib.Promise[scala.Unit] = js.native
+  def updateAsync(payload: LeaderboardUpdatePayload): js.Promise[scala.Unit] = js.native
 }
 

@@ -31,7 +31,7 @@ class TemplateFactory ()
     provider: atUirouterCoreLib.libCommonCommonMod.IInjectable,
     params: js.Any,
     context: atUirouterCoreLib.coreMod.ResolveContext
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * Creates a template from a configuration object.
        *
@@ -49,7 +49,7 @@ class TemplateFactory ()
     config: atUirouterAngularjsLib.libInterfaceMod.Ng1ViewDeclaration,
     params: js.Any,
     context: atUirouterCoreLib.coreMod.ResolveContext
-  ): stdLib.Promise[atUirouterAngularjsLib.Anon_Component] = js.native
+  ): js.Promise[atUirouterAngularjsLib.Anon_Component] = js.native
   /**
        * Creates a template by invoking an injectable provider function.
        *
@@ -62,7 +62,30 @@ class TemplateFactory ()
     provider: atUirouterCoreLib.libCommonCommonMod.IInjectable,
     params: js.Any,
     context: atUirouterCoreLib.coreMod.ResolveContext
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
+  /**
+       * Creates a template from a string or a function returning a string.
+       *
+       * @param template html template as a string or function that returns an html template as a string.
+       * @param params Parameters to pass to the template function.
+       *
+       * @return {string|object} The template html as a string, or a promise for that
+       * string.
+       */
+  def fromString(template: angularLib.angularMod.Global.Function): js.Any = js.native
+  /**
+       * Creates a template from a string or a function returning a string.
+       *
+       * @param template html template as a string or function that returns an html template as a string.
+       * @param params Parameters to pass to the template function.
+       *
+       * @return {string|object} The template html as a string, or a promise for that
+       * string.
+       */
+  def fromString(
+    template: angularLib.angularMod.Global.Function,
+    params: atUirouterCoreLib.libParamsInterfaceMod.RawParams
+  ): js.Any = js.native
   /**
        * Creates a template from a string or a function returning a string.
        *
@@ -84,25 +107,15 @@ class TemplateFactory ()
        */
   def fromString(template: java.lang.String, params: atUirouterCoreLib.libParamsInterfaceMod.RawParams): js.Any = js.native
   /**
-       * Creates a template from a string or a function returning a string.
+       * Loads a template from the a URL via `$http` and `$templateCache`.
        *
-       * @param template html template as a string or function that returns an html template as a string.
-       * @param params Parameters to pass to the template function.
-       *
-       * @return {string|object} The template html as a string, or a promise for that
-       * string.
+       * @param {string|Function} url url of the template to load, or a function
+       * that returns a url.
+       * @param {Object} params Parameters to pass to the url function.
+       * @return {string|Promise.<string>} The template html as a string, or a promise
+       * for that string.
        */
-  def fromString(template: js.Function): js.Any = js.native
-  /**
-       * Creates a template from a string or a function returning a string.
-       *
-       * @param template html template as a string or function that returns an html template as a string.
-       * @param params Parameters to pass to the template function.
-       *
-       * @return {string|object} The template html as a string, or a promise for that
-       * string.
-       */
-  def fromString(template: js.Function, params: atUirouterCoreLib.libParamsInterfaceMod.RawParams): js.Any = js.native
+  def fromUrl(url: angularLib.angularMod.Global.Function, params: js.Any): js.Any = js.native
   /**
        * Loads a template from the a URL via `$http` and `$templateCache`.
        *
@@ -113,16 +126,6 @@ class TemplateFactory ()
        * for that string.
        */
   def fromUrl(url: java.lang.String, params: js.Any): js.Any = js.native
-  /**
-       * Loads a template from the a URL via `$http` and `$templateCache`.
-       *
-       * @param {string|Function} url url of the template to load, or a function
-       * that returns a url.
-       * @param {Object} params Parameters to pass to the url function.
-       * @return {string|Promise.<string>} The template html as a string, or a promise
-       * for that string.
-       */
-  def fromUrl(url: js.Function, params: js.Any): js.Any = js.native
   /**
        * Creates a template from a component's name
        *

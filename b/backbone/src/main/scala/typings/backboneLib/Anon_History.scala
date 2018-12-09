@@ -14,7 +14,7 @@ trait Anon_History extends js.Object {
       /* models */ js.Array[backboneLib.backboneMod.BackboneNs.Model] | js.Array[js.Object]
     ], 
     /* options */ js.UndefOr[/* options */ js.Any], 
-    backboneLib.backboneMod.BackboneNs.Collection[js.Object]
+    backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model]
   ] = js.native
   var History: ScalablyTyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.History] = js.native
   var Model: ScalablyTyped.runtime.Instantiable2[
@@ -31,7 +31,7 @@ trait Anon_History extends js.Object {
     /* options */ js.UndefOr[
       /* options */ backboneLib.backboneMod.BackboneNs.ViewOptions[backboneLib.backboneMod.BackboneNs.Model]
     ], 
-    backboneLib.backboneMod.BackboneNs.View[js.Object]
+    backboneLib.backboneMod.BackboneNs.View[backboneLib.backboneMod.BackboneNs.Model]
   ] = js.native
   var emulateHTTP: scala.Boolean = js.native
   var emulateJSON: scala.Boolean = js.native

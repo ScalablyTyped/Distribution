@@ -17,6 +17,6 @@ package object promiseDashRetryLib {
   type RetryableFn[ResolutionType] = js.Function2[
     /* retry */ js.Function1[/* error */ js.Any, scala.Nothing], 
     /* attempt */ scala.Double, 
-    stdLib.Promise[ResolutionType]
+    js.Promise[ResolutionType]
   ]
 }

@@ -29,7 +29,7 @@ trait CommandRegistry extends js.Object {
        *  @return Either a Promise that resolves after all handlers complete or null if
        *  no handlers were matched.
        */
-  def dispatch(target: stdLib.Node, commandName: java.lang.String): stdLib.Promise[scala.Unit] | scala.Null = js.native
+  def dispatch(target: stdLib.Node, commandName: java.lang.String): js.Promise[scala.Unit] | scala.Null = js.native
   /** Find all registered commands matching a query. */
   def findCommands(params: atomLib.Anon_Target): js.Array[atomLib.Anon_DisplayName] = js.native
   /** Invoke the given callback after dispatching a command event. */

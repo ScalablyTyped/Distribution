@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait DoctorTreatmentStep extends PatientTreatmentStep {
-  def treat(): stdLib.Promise[scala.Unit]
+  def treat(): js.Promise[scala.Unit]
 }
 

@@ -15,10 +15,10 @@ trait RNFetchBlobFetchRepsonse extends js.Object {
   var rnfbRespInfo: RNFetchBlobResponseInfo
   var status: scala.Double
   var `type`: java.lang.String
-  def arrayBuffer(): stdLib.Promise[js.Array[_]]
-  def blob(): stdLib.Promise[PolyfillBlob]
-  def json(): stdLib.Promise[_]
-  def rawResp(): stdLib.Promise[FetchBlobResponse]
-  def text(): stdLib.Promise[java.lang.String]
+  def arrayBuffer(): js.Promise[js.Array[_]]
+  def blob(): js.Promise[PolyfillBlob]
+  def json(): js.Promise[_]
+  def rawResp(): js.Promise[FetchBlobResponse]
+  def text(): js.Promise[java.lang.String]
 }
 

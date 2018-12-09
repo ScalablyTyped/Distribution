@@ -54,27 +54,27 @@ trait InputProps
   /**
      * Callback function that is fired when component is blurred.
      */
-  var onBlur: js.UndefOr[js.Function] = js.undefined
+  var onBlur: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that is fired when the component's value changes
      */
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that is fired when component is focused.
      */
-  var onFocus: js.UndefOr[js.Function] = js.undefined
+  var onFocus: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that is fired when a key is pressed down.
      */
-  var onKeyDown: js.UndefOr[js.Function] = js.undefined
+  var onKeyDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that is fired when a key is pressed.
      */
-  var onKeyPress: js.UndefOr[js.Function] = js.undefined
+  var onKeyPress: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that is fired when a key is released.
      */
-  var onKeyUp: js.UndefOr[js.Function] = js.undefined
+  var onKeyUp: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * If true, the html input has a required attribute.
      * @default false

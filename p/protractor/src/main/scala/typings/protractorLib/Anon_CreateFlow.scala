@@ -81,7 +81,7 @@ trait Anon_CreateFlow extends js.Object {
      * @interface
      * @template T
      */
-  var Thenable: ScalablyTyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Thenable[js.Object]] = js.native
+  var Thenable: ScalablyTyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Thenable[js.Any]] = js.native
   // region Functions
   /**
      * Set `USE_PROMISE_MANAGER` to `false` to disable the promise manager.

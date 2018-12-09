@@ -34,7 +34,7 @@ trait IColumn extends js.Object {
   var sortDirection: java.lang.String
   var sortPriority: scala.Double
   var sortable: scala.Boolean
-  var sortingAlgorithm: js.Function
+  var sortingAlgorithm: angularLib.angularMod.Global.Function
   var visible: scala.Boolean
   var width: scala.Double
   def copy(): IColumn

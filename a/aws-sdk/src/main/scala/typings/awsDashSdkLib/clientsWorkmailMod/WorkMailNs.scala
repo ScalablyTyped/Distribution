@@ -51,15 +51,15 @@ object WorkMailNs extends js.Object {
     /**
          * The resource's ability to automatically reply to requests. If disabled, delegates must be associated to the resource.
          */
-    var AutoAcceptRequests: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoAcceptRequests: js.UndefOr[Boolean] = js.undefined
     /**
          * The resource's ability to automatically decline any conflicting requests.
          */
-    var AutoDeclineConflictingRequests: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoDeclineConflictingRequests: js.UndefOr[Boolean] = js.undefined
     /**
          * The resource's ability to automatically decline any recurring requests.
          */
-    var AutoDeclineRecurringRequests: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoDeclineRecurringRequests: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -138,7 +138,7 @@ object WorkMailNs extends js.Object {
     /**
          * The display name for the user to be created.
          */
-    var DisplayName: java.lang.String
+    var DisplayName: String
     /**
          * The name for the user to be created.
          */
@@ -166,7 +166,7 @@ object WorkMailNs extends js.Object {
     /**
          * The identifier for the user or group is associated as the resource's delegate.
          */
-    var Id: java.lang.String
+    var Id: String
     /**
          * The type of the delegate: user or group.
          */
@@ -332,19 +332,19 @@ object WorkMailNs extends js.Object {
     /**
          * The default mail domain associated with the organization.
          */
-    var DefaultMailDomain: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultMailDomain: js.UndefOr[String] = js.undefined
     /**
          * The identifier for the directory associated with an Amazon WorkMail organization.
          */
-    var DirectoryId: js.UndefOr[java.lang.String] = js.undefined
+    var DirectoryId: js.UndefOr[String] = js.undefined
     /**
          * The type of directory associated with the Amazon WorkMail organization.
          */
-    var DirectoryType: js.UndefOr[java.lang.String] = js.undefined
+    var DirectoryType: js.UndefOr[String] = js.undefined
     /**
          * The (optional) error message indicating if unexpected behavior was encountered with regards to the organization.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The identifier of an organization.
          */
@@ -352,7 +352,7 @@ object WorkMailNs extends js.Object {
     /**
          * The state of an organization.
          */
-    var State: js.UndefOr[java.lang.String] = js.undefined
+    var State: js.UndefOr[String] = js.undefined
   }
   
   
@@ -424,7 +424,7 @@ object WorkMailNs extends js.Object {
     /**
          * The display name of the user.
          */
-    var DisplayName: js.UndefOr[java.lang.String] = js.undefined
+    var DisplayName: js.UndefOr[String] = js.undefined
     /**
          * The email of the user.
          */
@@ -766,11 +766,11 @@ object WorkMailNs extends js.Object {
     /**
          * The identifier of the member.
          */
-    var Id: js.UndefOr[java.lang.String] = js.undefined
+    var Id: js.UndefOr[String] = js.undefined
     /**
          * The name of the member.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The state of the member, which can be ENABLED, DISABLED, or DELETED.
          */
@@ -790,7 +790,7 @@ object WorkMailNs extends js.Object {
     /**
          * The error message associated with the organization. It is only present if unexpected behavior has occurred with regards to the organization. It provides insight or solutions regarding unexpected behavior.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The identifier associated with the organization.
          */
@@ -798,7 +798,7 @@ object WorkMailNs extends js.Object {
     /**
          * The state associated with the organization.
          */
-    var State: js.UndefOr[java.lang.String] = js.undefined
+    var State: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1867,7 +1867,7 @@ object WorkMailNs extends js.Object {
     /**
          * The display name of the user.
          */
-    var DisplayName: js.UndefOr[java.lang.String] = js.undefined
+    var DisplayName: js.UndefOr[String] = js.undefined
     /**
          * The email of the user.
          */

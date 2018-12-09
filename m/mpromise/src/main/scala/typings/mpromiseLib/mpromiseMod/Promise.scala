@@ -16,10 +16,10 @@ trait Promise[F, R] extends js.Object {
   def reject(reason: R): Promise[F, R] = js.native
   def resolve(reason: R, arg: F): Promise[F, R] = js.native
   def resolve(reason: R, args: F*): Promise[F, R] = js.native
-  def `then`[TRes](onFulfilled: js.Function1[/* repeated */F, TRes | stdLib.PromiseLike[TRes]]): Promise[TRes, R] = js.native
+  def `then`[TRes](onFulfilled: js.Function1[/* repeated */F, TRes | js.Thenable[TRes]]): Promise[TRes, R] = js.native
   def `then`[TRes](
-    onFulfilled: js.Function1[/* repeated */F, TRes | stdLib.PromiseLike[TRes]],
-    onRejected: js.Function1[/* err */ R, TRes | stdLib.PromiseLike[TRes]]
+    onFulfilled: js.Function1[/* repeated */F, TRes | js.Thenable[TRes]],
+    onRejected: js.Function1[/* err */ R, TRes | js.Thenable[TRes]]
   ): Promise[TRes, R] = js.native
 }
 

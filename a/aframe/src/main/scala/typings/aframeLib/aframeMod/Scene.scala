@@ -21,8 +21,8 @@ trait Scene
   var time: scala.Double = js.native
   def addEventListener(`type`: SceneEvents, listener: stdLib.EventListener): scala.Unit = js.native
   def addEventListener(`type`: SceneEvents, listener: stdLib.EventListener, useCapture: scala.Boolean): scala.Unit = js.native
-  def enterVR(): stdLib.Promise[scala.Unit] | scala.Unit = js.native
-  def exitVR(): stdLib.Promise[scala.Unit] | scala.Unit = js.native
+  def enterVR(): js.Promise[scala.Unit] | scala.Unit = js.native
+  def exitVR(): js.Promise[scala.Unit] | scala.Unit = js.native
   def reload(): scala.Unit = js.native
 }
 

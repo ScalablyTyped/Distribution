@@ -33,15 +33,15 @@ trait ListCheckboxProps
   /**
      * Callback called when the input element is blurred.
      */
-  var onBlur: js.UndefOr[js.Function] = js.undefined
+  var onBlur: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback called when the input element is changed.
      */
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback called when the input element is focused.
      */
-  var onFocus: js.UndefOr[js.Function] = js.undefined
+  var onFocus: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Classnames object defining the component style.
      */

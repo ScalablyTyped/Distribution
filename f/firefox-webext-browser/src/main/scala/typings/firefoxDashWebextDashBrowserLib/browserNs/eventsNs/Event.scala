@@ -21,7 +21,7 @@ trait Event extends js.Object {
       /* eventName */ java.lang.String, 
       /* webViewInstanceId */ scala.Double, 
       /* rules */ js.Array[Rule], 
-      stdLib.Promise[js.UndefOr[js.Array[Rule]]]
+      js.Promise[js.UndefOr[js.Array[Rule]]]
     ]
   ] = js.undefined
   /**
@@ -38,7 +38,7 @@ trait Event extends js.Object {
       /* eventName */ java.lang.String, 
       /* webViewInstanceId */ scala.Double, 
       /* ruleIdentifiers */ js.UndefOr[js.Array[java.lang.String]], 
-      stdLib.Promise[js.Array[Rule]]
+      js.Promise[js.Array[Rule]]
     ]
   ] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait Event extends js.Object {
       /* eventName */ java.lang.String, 
       /* webViewInstanceId */ scala.Double, 
       /* ruleIdentifiers */ js.UndefOr[js.Array[java.lang.String]], 
-      stdLib.Promise[scala.Unit]
+      js.Promise[scala.Unit]
     ]
   ] = js.undefined
   /**

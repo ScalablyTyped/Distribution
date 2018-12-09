@@ -26,7 +26,7 @@ trait EditorManager
   def execCommand(cmd: java.lang.String, ui: scala.Boolean): scala.Boolean = js.native
   def execCommand(cmd: java.lang.String, ui: scala.Boolean, value: java.lang.String): scala.Boolean = js.native
   def get(id: java.lang.String): Editor = js.native
-  def init(settings: Settings): stdLib.Promise[Editor] = js.native
+  def init(settings: Settings): js.Promise[Editor] = js.native
   def overrideDefaults(defaultSettings: js.Object): scala.Unit = js.native
   def remove(selector: Editor): Editor = js.native
   def setActive(editor: Editor): scala.Unit = js.native

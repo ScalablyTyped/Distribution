@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait KeyInfoClause
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject {
   var Key: stdLib.CryptoKey | scala.Null = js.native
-  def exportKey(alg: stdLib.Algorithm): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
-  def importKey(key: stdLib.CryptoKey): stdLib.PromiseLike[this.type] = js.native
+  def exportKey(alg: stdLib.Algorithm): js.Thenable[stdLib.CryptoKey] = js.native
+  def importKey(key: stdLib.CryptoKey): js.Thenable[this.type] = js.native
 }
 

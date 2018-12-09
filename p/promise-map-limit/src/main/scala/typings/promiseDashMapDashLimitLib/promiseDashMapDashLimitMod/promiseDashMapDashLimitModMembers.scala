@@ -12,6 +12,6 @@ object promiseDashMapDashLimitModMembers extends js.Object {
     iterable: stdLib.Iterable[T],
     concurrency: scala.Double,
     iteratee: promiseDashMapDashLimitLib.promiseDashMapDashLimitMod.promiseMapLimitNs.IIteratee[T, R]
-  ): stdLib.Promise[js.Array[R]] = js.native
+  ): js.Promise[js.Array[R]] = js.native
 }
 

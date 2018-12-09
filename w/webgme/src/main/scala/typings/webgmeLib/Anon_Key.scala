@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Key extends js.Object {
-  def apply(key: java.lang.String): stdLib.Promise[webgmeLib.GmeStorageNs.CommitObject] = js.native
+  def apply(key: java.lang.String): js.Promise[webgmeLib.GmeStorageNs.CommitObject] = js.native
   /** Hash of object to load. */
   def apply(
     key: java.lang.String,

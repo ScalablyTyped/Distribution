@@ -10,17 +10,17 @@ trait Anon_RetType
   extends ScalablyTyped.runtime.Instantiable2[
       (/* retType */ refDashNapiLib.refDashNapiMod.Type) | (/* retType */ java.lang.String), 
       /* argTypes */ js.Array[js.Any], 
-      js.Function
+      ffiDashNapiLib.ffiDashNapiMod.Function
     ]
      with ScalablyTyped.runtime.Instantiable3[
       (/* retType */ refDashNapiLib.refDashNapiMod.Type) | (/* retType */ java.lang.String), 
       /* argTypes */ js.Array[js.Any], 
       /* abi */ scala.Double, 
-      js.Function
+      ffiDashNapiLib.ffiDashNapiMod.Function
     ] {
-  def apply(retType: java.lang.String, argTypes: js.Array[_]): js.Function = js.native
-  def apply(retType: java.lang.String, argTypes: js.Array[_], abi: scala.Double): js.Function = js.native
-  def apply(retType: refDashNapiLib.refDashNapiMod.Type, argTypes: js.Array[_]): js.Function = js.native
-  def apply(retType: refDashNapiLib.refDashNapiMod.Type, argTypes: js.Array[_], abi: scala.Double): js.Function = js.native
+  def apply(retType: java.lang.String, argTypes: js.Array[_]): ffiDashNapiLib.ffiDashNapiMod.Function = js.native
+  def apply(retType: java.lang.String, argTypes: js.Array[_], abi: scala.Double): ffiDashNapiLib.ffiDashNapiMod.Function = js.native
+  def apply(retType: refDashNapiLib.refDashNapiMod.Type, argTypes: js.Array[_]): ffiDashNapiLib.ffiDashNapiMod.Function = js.native
+  def apply(retType: refDashNapiLib.refDashNapiMod.Type, argTypes: js.Array[_], abi: scala.Double): ffiDashNapiLib.ffiDashNapiMod.Function = js.native
 }
 

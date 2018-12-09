@@ -86,9 +86,9 @@ object controlNs extends js.Object {
        * @param options Control options.
        * @api stable
        */
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
-  class Control protected () extends js.Object {
+  @js.native
+  class Control protected ()
+    extends openlayersLib.openlayersMod.Object {
     /**
              * @classdesc
              * A control is a visible widget with a DOM element in a fixed position on the

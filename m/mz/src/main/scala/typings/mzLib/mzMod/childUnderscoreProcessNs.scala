@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mz", "child_process")
 @js.native
 object childUnderscoreProcessNs extends js.Object {
-  def exec(command: java.lang.String): stdLib.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
+  def exec(command: java.lang.String): js.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
   // no `options` definitely means stdout/stderr are `string`.
   def exec(
     command: java.lang.String,
@@ -99,12 +99,12 @@ object childUnderscoreProcessNs extends js.Object {
   def exec(
     command: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding
-  ): stdLib.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
-  def exec(command: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecOptions): stdLib.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
+  ): js.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
+  def exec(command: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecOptions): js.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
   def exec(
     command: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecOptionsWithBufferEncoding
-  ): stdLib.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
+  ): js.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
   def exec(
     command: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecOptionsWithBufferEncoding,
@@ -147,8 +147,8 @@ object childUnderscoreProcessNs extends js.Object {
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def execFile(file: java.lang.String): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
-  def execFile(file: java.lang.String, args: js.Array[java.lang.String]): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  def execFile(file: java.lang.String): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  def execFile(file: java.lang.String, args: js.Array[java.lang.String]): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
@@ -190,12 +190,12 @@ object childUnderscoreProcessNs extends js.Object {
     file: java.lang.String,
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions
-  ): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  ): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding
-  ): stdLib.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
+  ): js.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
@@ -222,7 +222,7 @@ object childUnderscoreProcessNs extends js.Object {
     file: java.lang.String,
     args: js.Array[java.lang.String],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding
-  ): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  ): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
@@ -287,12 +287,12 @@ object childUnderscoreProcessNs extends js.Object {
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions
-  ): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  ): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def execFile(
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding
-  ): stdLib.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
+  ): js.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
   def execFile(
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
@@ -319,7 +319,7 @@ object childUnderscoreProcessNs extends js.Object {
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding
-  ): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  ): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def execFile(
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
@@ -384,12 +384,12 @@ object childUnderscoreProcessNs extends js.Object {
     file: java.lang.String,
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions
-  ): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  ): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def execFile(
     file: java.lang.String,
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding
-  ): stdLib.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
+  ): js.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
   def execFile(
     file: java.lang.String,
     args: scala.Null,
@@ -416,7 +416,7 @@ object childUnderscoreProcessNs extends js.Object {
     file: java.lang.String,
     args: scala.Null,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding
-  ): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  ): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def execFile(
     file: java.lang.String,
     args: scala.Null,
@@ -475,11 +475,11 @@ object childUnderscoreProcessNs extends js.Object {
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def execFile(file: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecFileOptions): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  def execFile(file: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecFileOptions): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def execFile(
     file: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding
-  ): stdLib.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
+  ): js.Promise[js.Tuple2[nodeLib.Buffer, nodeLib.Buffer]] = js.native
   // `options` with `"buffer"` or `null` for `encoding` means stdout/stderr are definitely `Buffer`.
   def execFile(
     file: java.lang.String,
@@ -506,7 +506,7 @@ object childUnderscoreProcessNs extends js.Object {
   def execFile(
     file: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding
-  ): stdLib.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
+  ): js.Promise[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   // `options` with well known `encoding` means stdout/stderr are definitely `string`.
   def execFile(
     file: java.lang.String,
@@ -626,120 +626,120 @@ object childUnderscoreProcessNs extends js.Object {
   @JSName("execFile")
   @js.native
   object execFileNs extends js.Object {
-    def `__promisify__`(file: java.lang.String): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
-    def `__promisify__`(file: java.lang.String, args: js.Array[java.lang.String]): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    def `__promisify__`(file: java.lang.String): js.Promise[nodeLib.Anon_Stdout] = js.native
+    def `__promisify__`(file: java.lang.String, args: js.Array[java.lang.String]): js.Promise[nodeLib.Anon_Stdout] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.Array[java.lang.String],
       options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.Array[java.lang.String],
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptions
-    ): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    ): js.Promise[nodeLib.Anon_Stdout] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.Array[java.lang.String],
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderr] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderr] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.Array[java.lang.String],
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithOtherEncoding
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.Array[java.lang.String],
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding
-    ): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    ): js.Promise[nodeLib.Anon_Stdout] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.UndefOr[scala.Nothing],
       options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.UndefOr[scala.Nothing],
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptions
-    ): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    ): js.Promise[nodeLib.Anon_Stdout] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.UndefOr[scala.Nothing],
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderr] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderr] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.UndefOr[scala.Nothing],
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithOtherEncoding
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: js.UndefOr[scala.Nothing],
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding
-    ): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    ): js.Promise[nodeLib.Anon_Stdout] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: scala.Null,
       options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: scala.Null,
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptions
-    ): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    ): js.Promise[nodeLib.Anon_Stdout] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: scala.Null,
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderr] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderr] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: scala.Null,
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithOtherEncoding
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
     def `__promisify__`(
       file: java.lang.String,
       args: scala.Null,
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding
-    ): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    ): js.Promise[nodeLib.Anon_Stdout] = js.native
     def `__promisify__`(
       file: java.lang.String,
       options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
-    def `__promisify__`(file: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecFileOptions): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+    def `__promisify__`(file: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecFileOptions): js.Promise[nodeLib.Anon_Stdout] = js.native
     def `__promisify__`(
       file: java.lang.String,
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderr] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderr] = js.native
     def `__promisify__`(
       file: java.lang.String,
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithOtherEncoding
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
     def `__promisify__`(
       file: java.lang.String,
       options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding
-    ): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    ): js.Promise[nodeLib.Anon_Stdout] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   @JSName("exec")
   @js.native
   object execNs extends js.Object {
-    def `__promisify__`(command: java.lang.String): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    def `__promisify__`(command: java.lang.String): js.Promise[nodeLib.Anon_Stdout] = js.native
     def `__promisify__`(
       command: java.lang.String,
       options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecOptions
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
     def `__promisify__`(
       command: java.lang.String,
       options: nodeLib.Anon_EncodingBuffer with nodeLib.childUnderscoreProcessMod.ExecOptions
-    ): stdLib.Promise[nodeLib.Anon_StdoutStderr] = js.native
+    ): js.Promise[nodeLib.Anon_StdoutStderr] = js.native
     def `__promisify__`(
       command: java.lang.String,
       options: nodeLib.Anon_EncodingBufferEncoding with nodeLib.childUnderscoreProcessMod.ExecOptions
-    ): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
-    def `__promisify__`(command: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecOptions): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+    ): js.Promise[nodeLib.Anon_Stdout] = js.native
+    def `__promisify__`(command: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecOptions): js.Promise[nodeLib.Anon_Stdout] = js.native
   }
   
 }

@@ -15,7 +15,7 @@ trait Options extends js.Object {
            * If action is not set, it defaults to an empty function.
            */
   var action: js.UndefOr[
-    js.Function0[stdLib.Promise[_]] | (js.Function1[/* done */ js.Function0[scala.Unit], _])
+    js.Function0[js.Promise[_]] | (js.Function1[/* done */ js.Function0[scala.Unit], _])
   ] = js.undefined
   /**
            * fail: The error handler.

@@ -33,20 +33,20 @@ trait NetInfoStatic extends js.Object {
        * This function is deprecated. Use `getConnectionInfo` instead. Returns a promise that
        * resolves with one of the deprecated connectivity types listed above.
        */
-  def fetch(): stdLib.Promise[ConnectionType]
+  def fetch(): js.Promise[ConnectionType]
   /**
        * Returns a promise that resolves to an object with `type` and `effectiveType` keys
        * whose values are a `ConnectionType` and an `EffectiveConnectionType`, (described above),
        * respectively.
        */
-  def getConnectionInfo(): stdLib.Promise[ConnectionInfo]
+  def getConnectionInfo(): js.Promise[ConnectionInfo]
   /**
        * Detect if the current active connection is
        * metered or not. A network is classified as metered when the user is
        * sensitive to heavy data usage on that connection due to monetary
        * costs, data limitations or battery/performance issues.
        */
-  def isConnectionExpensive(): stdLib.Promise[scala.Boolean]
+  def isConnectionExpensive(): js.Promise[scala.Boolean]
   /**
        * Removes the listener for network status changes.
        */

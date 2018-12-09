@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_GetToken extends js.Object {
   /** Returns the Access Token Object */
-  def getToken(params: simpleDashOauth2Lib.simpleDashOauth2Mod.ClientCredentialTokenConfig): stdLib.Promise[simpleDashOauth2Lib.simpleDashOauth2Mod.Token]
+  def getToken(params: simpleDashOauth2Lib.simpleDashOauth2Mod.ClientCredentialTokenConfig): js.Promise[simpleDashOauth2Lib.simpleDashOauth2Mod.Token]
 }
 

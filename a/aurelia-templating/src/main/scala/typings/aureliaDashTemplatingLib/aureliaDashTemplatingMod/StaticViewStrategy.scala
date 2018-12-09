@@ -14,7 +14,7 @@ class StaticViewStrategy protected () extends js.Object {
   /**@internal */
   var dependencies: js.Array[js.Function] | (js.Function0[
     js.Array[
-      js.Function | (stdLib.Promise[js.Function | (stdLib.Record[java.lang.String, js.Function])])
+      js.Function | (js.Promise[js.Function | (stdLib.Record[java.lang.String, js.Function])])
     ]
   ]) = js.native
   var factory: ViewFactory = js.native
@@ -34,6 +34,6 @@ class StaticViewStrategy protected () extends js.Object {
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext,
     target: js.Any
-  ): stdLib.Promise[ViewFactory] = js.native
+  ): js.Promise[ViewFactory] = js.native
 }
 

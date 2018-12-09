@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DataLoader extends js.Object {
   var data: DataStore = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
   def clearAll(): scala.Unit = js.native
@@ -35,9 +35,9 @@ trait DataLoader extends js.Object {
   def getNextId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
   def getPrevId(id: java.lang.String, step: scala.Double): java.lang.String | scala.Double = js.native
   def getPrevId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): js.Promise[_] = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,

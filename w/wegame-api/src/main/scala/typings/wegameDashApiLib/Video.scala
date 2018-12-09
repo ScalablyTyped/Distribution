@@ -74,7 +74,7 @@ class Video () extends js.Object {
   /**
        * 视频退出全屏
        */
-  def exitFullScreen(): stdLib.Promise[scala.Unit] = js.native
+  def exitFullScreen(): js.Promise[scala.Unit] = js.native
   /**
        * 取消监听视频播放到末尾事件
        */
@@ -156,23 +156,23 @@ class Video () extends js.Object {
   /**
        * 暂停视频
        */
-  def pause(): stdLib.Promise[scala.Unit] = js.native
+  def pause(): js.Promise[scala.Unit] = js.native
   /**
        * 播放视频
        */
-  def play(): stdLib.Promise[scala.Unit] = js.native
+  def play(): js.Promise[scala.Unit] = js.native
   /**
        * 视频全屏
        */
-  def requestFullScreen(): stdLib.Promise[scala.Unit] = js.native
+  def requestFullScreen(): js.Promise[scala.Unit] = js.native
   /**
        * 视频跳转
        * @param time 视频跳转到指定位置，单位为 s 秒
        */
-  def seek(time: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def seek(time: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * 停止视频
        */
-  def stop(): stdLib.Promise[scala.Unit] = js.native
+  def stop(): js.Promise[scala.Unit] = js.native
 }
 

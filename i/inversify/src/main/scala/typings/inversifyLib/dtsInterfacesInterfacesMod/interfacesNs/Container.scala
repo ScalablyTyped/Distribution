@@ -30,7 +30,7 @@ trait Container extends js.Object {
   def isBoundTagged(serviceIdentifier: ServiceIdentifier[_], key: js.Symbol, value: js.Any): scala.Boolean = js.native
   def isBoundTagged(serviceIdentifier: ServiceIdentifier[_], key: scala.Double, value: js.Any): scala.Boolean = js.native
   def load(modules: ContainerModule*): scala.Unit = js.native
-  def loadAsync(modules: AsyncContainerModule*): stdLib.Promise[scala.Unit] = js.native
+  def loadAsync(modules: AsyncContainerModule*): js.Promise[scala.Unit] = js.native
   def rebind[T](serviceIdentifier: ServiceIdentifier[T]): BindingToSyntax[T] = js.native
   def resolve[T](constructorFunction: Newable[T]): T = js.native
   def restore(): scala.Unit = js.native

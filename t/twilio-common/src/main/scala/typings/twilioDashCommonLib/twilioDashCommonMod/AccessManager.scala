@@ -34,6 +34,6 @@ class AccessManager protected ()
     `type`: twilioDashCommonLib.twilioDashCommonLibStrings.tokenWillExpire,
     listener: js.Function1[/* manager */ this.type, scala.Unit]
   ): this.type = js.native
-  def updateToken(newToken: java.lang.String): stdLib.Promise[AccessManager] = js.native
+  def updateToken(newToken: java.lang.String): js.Promise[AccessManager] = js.native
 }
 

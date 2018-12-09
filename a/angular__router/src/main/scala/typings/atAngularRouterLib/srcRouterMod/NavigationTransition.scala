@@ -16,7 +16,7 @@ trait NavigationTransition extends js.Object {
   var guards: atAngularRouterLib.srcUtilsPreactivationMod.Checks
   var guardsResult: scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree | scala.Null
   var id: scala.Double
-  var promise: stdLib.Promise[scala.Boolean]
+  var promise: js.Promise[scala.Boolean]
   var rawUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
   var reject: js.Any
   var resolve: js.Any

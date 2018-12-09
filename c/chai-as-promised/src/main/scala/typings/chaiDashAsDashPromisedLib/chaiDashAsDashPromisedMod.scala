@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object chaiDashAsDashPromisedMod extends js.Object {
   def apply(chai: js.Any, utils: js.Any): scala.Unit = js.native
-  def transferPromiseness(assertion: chaiDashAsDashPromisedLib.ChaiNs.PromisedAssertion, promise: stdLib.PromiseLike[_]): scala.Unit = js.native
+  def transferPromiseness(assertion: chaiDashAsDashPromisedLib.ChaiNs.PromisedAssertion, promise: js.Thenable[_]): scala.Unit = js.native
   def transformAsserterArgs(values: js.Array[_]): js.Any = js.native
 }
 

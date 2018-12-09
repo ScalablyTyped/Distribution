@@ -46,11 +46,11 @@ trait BluetoothRemoteGATTService
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  def getCharacteristic(characteristic: BluetoothCharacteristicUUID): stdLib.Promise[BluetoothRemoteGATTCharacteristic] = js.native
-  def getCharacteristics(): stdLib.Promise[js.Array[BluetoothRemoteGATTCharacteristic]] = js.native
-  def getCharacteristics(characteristic: BluetoothCharacteristicUUID): stdLib.Promise[js.Array[BluetoothRemoteGATTCharacteristic]] = js.native
-  def getIncludedService(service: BluetoothServiceUUID): stdLib.Promise[BluetoothRemoteGATTService] = js.native
-  def getIncludedServices(): stdLib.Promise[js.Array[BluetoothRemoteGATTService]] = js.native
-  def getIncludedServices(service: BluetoothServiceUUID): stdLib.Promise[js.Array[BluetoothRemoteGATTService]] = js.native
+  def getCharacteristic(characteristic: BluetoothCharacteristicUUID): js.Promise[BluetoothRemoteGATTCharacteristic] = js.native
+  def getCharacteristics(): js.Promise[js.Array[BluetoothRemoteGATTCharacteristic]] = js.native
+  def getCharacteristics(characteristic: BluetoothCharacteristicUUID): js.Promise[js.Array[BluetoothRemoteGATTCharacteristic]] = js.native
+  def getIncludedService(service: BluetoothServiceUUID): js.Promise[BluetoothRemoteGATTService] = js.native
+  def getIncludedServices(): js.Promise[js.Array[BluetoothRemoteGATTService]] = js.native
+  def getIncludedServices(service: BluetoothServiceUUID): js.Promise[js.Array[BluetoothRemoteGATTService]] = js.native
 }
 

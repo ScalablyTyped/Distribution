@@ -2691,8 +2691,8 @@ object stdLibMembers extends js.Object {
   def close(): scala.Unit = js.native
   def confirm(): scala.Boolean = js.native
   def confirm(message: java.lang.String): scala.Boolean = js.native
-  def createImageBitmap(image: ImageBitmapSource): Promise[ImageBitmap] = js.native
-  def createImageBitmap(image: ImageBitmapSource, sx: scala.Double, sy: scala.Double, sw: scala.Double, sh: scala.Double): Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageBitmapSource): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageBitmapSource, sx: scala.Double, sy: scala.Double, sw: scala.Double, sh: scala.Double): js.Promise[ImageBitmap] = js.native
   /**
     * Gets the unencoded version of an encoded Uniform Resource Identifier (URI).
     * @param encodedURI A value representing an encoded URI.
@@ -2729,8 +2729,8 @@ object stdLibMembers extends js.Object {
     * @param x A String value that contains valid JavaScript code.
     */
   def eval(x: java.lang.String): js.Any = js.native
-  def fetch(input: RequestInfo): Promise[Response] = js.native
-  def fetch(input: RequestInfo, init: RequestInit): Promise[Response] = js.native
+  def fetch(input: RequestInfo): js.Promise[Response] = js.native
+  def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   def focus(): scala.Unit = js.native
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native

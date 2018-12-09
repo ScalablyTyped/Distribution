@@ -13,16 +13,16 @@ class namespaced protected () extends AutoLaunch {
      * Disables auto-launch at start up.
      */
   /* CompleteClass */
-  override def disable(): stdLib.Promise[scala.Unit] = js.native
+  override def disable(): js.Promise[scala.Unit] = js.native
   /**
      * Enables auto-launch at start up.
      */
   /* CompleteClass */
-  override def enable(): stdLib.Promise[scala.Unit] = js.native
+  override def enable(): js.Promise[scala.Unit] = js.native
   /**
      * Returns true if auto-launch is enabled.
      */
   /* CompleteClass */
-  override def isEnabled(): stdLib.Promise[scala.Boolean] = js.native
+  override def isEnabled(): js.Promise[scala.Boolean] = js.native
 }
 

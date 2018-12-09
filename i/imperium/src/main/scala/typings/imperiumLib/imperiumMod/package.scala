@@ -12,6 +12,6 @@ package object imperiumMod {
   ]
   type GetAcl = js.Function1[
     /* req */ expressLib.expressMod.eNs.Request, 
-    stdLib.Promise[scala.Boolean] | stdLib.Promise[js.Object]
+    js.Promise[scala.Boolean] | js.Promise[js.Object]
   ]
 }

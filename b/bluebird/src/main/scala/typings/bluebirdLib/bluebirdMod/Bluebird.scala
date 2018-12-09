@@ -410,12 +410,12 @@ trait Bluebird[R]
     options: bluebirdLib.bluebirdMod.BluebirdNs.SpreadOption
   ): this.type = js.native
   def nodeify(sink: js.Any*): this.type = js.native
-  def props[T](`this`: stdLib.PromiseLike[bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[T]]): Bluebird[T] = js.native
+  def props[T](`this`: js.Thenable[bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[T]]): Bluebird[T] = js.native
   /**
      * Same as calling `Promise.props(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
      */
   @JSName("props")
-  def props_KV[K, V](`this`: stdLib.PromiseLike[stdLib.Map[K, bluebirdLib.Resolvable[V]]]): Bluebird[stdLib.Map[K, V]] = js.native
+  def props_KV[K, V](`this`: js.Thenable[stdLib.Map[K, bluebirdLib.Resolvable[V]]]): Bluebird[stdLib.Map[K, V]] = js.native
   /**
      * Same as calling `Promise.race(thisPromise, count)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
      */

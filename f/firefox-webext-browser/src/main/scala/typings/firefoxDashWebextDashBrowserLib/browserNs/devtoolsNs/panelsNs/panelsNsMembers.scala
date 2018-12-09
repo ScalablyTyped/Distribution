@@ -33,7 +33,7 @@ object panelsNsMembers extends js.Object {
     title: java.lang.String,
     iconPath: _Create,
     pagePath: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL
-  ): stdLib.Promise[js.UndefOr[ExtensionPanel]] = js.native
+  ): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
   /* devtools.panels functions */
   /**
        * Creates an extension panel.
@@ -46,20 +46,20 @@ object panelsNsMembers extends js.Object {
     title: java.lang.String,
     iconPath: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL,
     pagePath: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL
-  ): stdLib.Promise[js.UndefOr[ExtensionPanel]] = js.native
+  ): js.Promise[js.UndefOr[ExtensionPanel]] = js.native
   /**
        * Requests DevTools to open a URL in a Developer Tools panel.
        * @param url The URL of the resource to open.
        * @param lineNumber Specifies the line number to scroll to when the resource is loaded.
        * @deprecated Unsupported on Firefox at this time.
        */
-  def openResource(url: java.lang.String, lineNumber: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def openResource(url: java.lang.String, lineNumber: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * Specifies the function to be called when the user clicks a resource link in the Developer Tools window. To unset
        * the handler, either call the method with no parameters or pass null as the parameter.
        * @deprecated Unsupported on Firefox at this time.
        */
-  def setOpenResourceHandler(): stdLib.Promise[
+  def setOpenResourceHandler(): js.Promise[
     js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.devtoolsNs.inspectedWindowNs.Resource]
   ] = js.native
 }

@@ -10,6 +10,6 @@ trait CallbackStepDefinition extends js.Object {
   def apply(): scala.Unit = js.native
   def apply(error: js.Any): scala.Unit = js.native
   def apply(error: js.Any, pending: java.lang.String): scala.Unit = js.native
-  def pending(): stdLib.PromiseLike[_] = js.native
+  def pending(): js.Thenable[_] = js.native
 }
 

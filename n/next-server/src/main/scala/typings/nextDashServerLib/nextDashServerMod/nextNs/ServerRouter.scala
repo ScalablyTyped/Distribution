@@ -13,6 +13,6 @@ trait ServerRouter extends js.Object {
     req: nodeLib.httpMod.IncomingMessage,
     res: nodeLib.httpMod.ServerResponse,
     parsedUrl: nextDashServerLib.routerMod.UrlLike
-  ): js.UndefOr[js.Function0[stdLib.Promise[scala.Unit]]]
+  ): js.UndefOr[js.Function0[js.Promise[scala.Unit]]]
 }
 

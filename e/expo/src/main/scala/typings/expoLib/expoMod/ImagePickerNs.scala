@@ -51,19 +51,19 @@ object ImagePickerNs extends js.Object {
   /**
        * require Permissions.CAMERA_ROLL
        */
-  def launchCameraAsync(): stdLib.Promise[ImageResult] = js.native
+  def launchCameraAsync(): js.Promise[ImageResult] = js.native
   /**
        * require Permissions.CAMERA_ROLL
        */
-  def launchCameraAsync(options: CameraOptions): stdLib.Promise[ImageResult] = js.native
+  def launchCameraAsync(options: CameraOptions): js.Promise[ImageResult] = js.native
   /**
        * require Permissions.CAMERA_ROLL
        */
-  def launchImageLibraryAsync(): stdLib.Promise[ImageResult] = js.native
+  def launchImageLibraryAsync(): js.Promise[ImageResult] = js.native
   /**
        * require Permissions.CAMERA_ROLL
        */
-  def launchImageLibraryAsync(options: ImageLibraryOptions): stdLib.Promise[ImageResult] = js.native
+  def launchImageLibraryAsync(options: ImageLibraryOptions): js.Promise[ImageResult] = js.native
   type ImageResult = expoLib.Anon_Cancelled | (expoLib.Anon_CancelledFalse with ImageInfo)
 }
 

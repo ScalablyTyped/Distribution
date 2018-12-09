@@ -80,10 +80,10 @@ trait LowdbAsync[SchemaT]
           * upperFirst, value, and words.
           **/
   def `_`[T](value: T): lodashLib.lodashMod.underscoreNs.LoDashImplicitWrapper[T] = js.native
-  def read(): stdLib.Promise[this.type] = js.native
+  def read(): js.Promise[this.type] = js.native
   /**
        * @description Be careful: This function overwrites the whole database.
        */
-  def write[T](returnValue: T): stdLib.Promise[T] = js.native
+  def write[T](returnValue: T): js.Promise[T] = js.native
 }
 

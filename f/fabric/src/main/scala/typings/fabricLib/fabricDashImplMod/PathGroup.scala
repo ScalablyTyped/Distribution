@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "PathGroup")
+@JSImport("fabric/fabric-impl", "PathGroup")
 @js.native
-class PathGroup protected () extends js.Object {
+class PathGroup protected () extends Object {
   /**
   	 * Constructor
   	 * @param [options] Options object
@@ -19,11 +18,6 @@ class PathGroup protected () extends js.Object {
   	 * @param [options] Options object
   	 */
   def this(paths: js.Array[Path], options: IObjectOptions) = this()
-  /**
-  	 * Returns number representation of object's complexity
-  	 * @return complexity
-  	 */
-  def complexity(): scala.Double = js.native
   /**
   	 * Returns all paths in this path group
   	 * @return array of path objects included in this path group
@@ -36,35 +30,6 @@ class PathGroup protected () extends js.Object {
   	 * @return true if all paths are of the same color (`fill`)
   	 */
   def isSameColor(): scala.Boolean = js.native
-  /**
-  	 * Renders this group on a specified context
-  	 * @param ctx Context to render this instance on
-  	 */
-  def render(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
-  /**
-  	 * Returns dataless object representation of this path group
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return dataless object representation of an instance
-  	 */
-  def toDatalessObject(): js.Any = js.native
-  /**
-  	 * Returns dataless object representation of this path group
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return dataless object representation of an instance
-  	 */
-  def toDatalessObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
-  /**
-  	 * Returns object representation of this path group
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(): js.Any = js.native
-  /**
-  	 * Returns object representation of this path group
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Returns svg representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
@@ -79,8 +44,7 @@ class PathGroup protected () extends js.Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "PathGroup")
+@JSImport("fabric/fabric-impl", "PathGroup")
 @js.native
 object PathGroup extends js.Object {
   def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.PathGroup = js.native

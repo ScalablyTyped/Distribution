@@ -54,6 +54,6 @@ class BannerAd () extends js.Object {
   /**
        * 显示 banner 广告。
        */
-  def show(): stdLib.Promise[scala.Unit] = js.native
+  def show(): js.Promise[scala.Unit] = js.native
 }
 

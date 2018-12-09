@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait Options[T /* <: stdLib.PromiseLike[scala.Unit] */] extends js.Object {
+trait Options[T /* <: js.Thenable[scala.Unit] */] extends js.Object {
   /**
            * (Default: global.Promise) The promise implementation to use, defaults to Node's.
            */

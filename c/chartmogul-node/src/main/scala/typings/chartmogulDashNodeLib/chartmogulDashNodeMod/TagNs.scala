@@ -19,14 +19,14 @@ object TagNs extends js.Object {
     var tags: chartmogulDashNodeLib.commonMod.Strings
   }
   
-  def add(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String, data: Tags): stdLib.Promise[Tags] = js.native
+  def add(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String, data: Tags): js.Promise[Tags] = js.native
   def add(
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
     uuid: java.lang.String,
     data: TagsWithEmail
-  ): stdLib.Promise[
+  ): js.Promise[
     chartmogulDashNodeLib.commonMod.Entries[chartmogulDashNodeLib.chartmogulDashNodeMod.CustomerNs.Customer]
   ] = js.native
-  def remove(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String, data: Tags): stdLib.Promise[Tags] = js.native
+  def remove(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String, data: Tags): js.Promise[Tags] = js.native
 }
 

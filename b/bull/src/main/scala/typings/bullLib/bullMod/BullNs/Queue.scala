@@ -12,25 +12,25 @@ trait Queue[T] extends js.Object {
        * If the queue is empty the job will be executed directly,
        * otherwise it will be placed in the queue and executed as soon as possible.
        */
-  def add(data: T): stdLib.Promise[Job[T]] = js.native
+  def add(data: T): js.Promise[Job[T]] = js.native
   /**
        * Creates a new job and adds it to the queue.
        * If the queue is empty the job will be executed directly,
        * otherwise it will be placed in the queue and executed as soon as possible.
        */
-  def add(data: T, opts: JobOptions): stdLib.Promise[Job[T]] = js.native
+  def add(data: T, opts: JobOptions): js.Promise[Job[T]] = js.native
   /**
        * Creates a new named job and adds it to the queue.
        * If the queue is empty the job will be executed directly,
        * otherwise it will be placed in the queue and executed as soon as possible.
        */
-  def add(name: java.lang.String, data: T): stdLib.Promise[Job[T]] = js.native
+  def add(name: java.lang.String, data: T): js.Promise[Job[T]] = js.native
   /**
        * Creates a new named job and adds it to the queue.
        * If the queue is empty the job will be executed directly,
        * otherwise it will be placed in the queue and executed as soon as possible.
        */
-  def add(name: java.lang.String, data: T, opts: JobOptions): stdLib.Promise[Job[T]] = js.native
+  def add(name: java.lang.String, data: T, opts: JobOptions): js.Promise[Job[T]] = js.native
   /**
        * Tells the queue remove all jobs created outside of a grace period in milliseconds.
        * You can clean the jobs with the following states: completed, wait (typo for waiting), active, delayed, and failed.
@@ -38,7 +38,7 @@ trait Queue[T] extends js.Object {
        * @param status Status of the job to clean. Values are completed, wait, active, delayed, and failed. Defaults to completed.
        * @param limit Maximum amount of jobs to clean per call. If not provided will clean all matching jobs.
        */
-  def clean(grace: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def clean(grace: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Tells the queue remove all jobs created outside of a grace period in milliseconds.
        * You can clean the jobs with the following states: completed, wait (typo for waiting), active, delayed, and failed.
@@ -46,7 +46,7 @@ trait Queue[T] extends js.Object {
        * @param status Status of the job to clean. Values are completed, wait, active, delayed, and failed. Defaults to completed.
        * @param limit Maximum amount of jobs to clean per call. If not provided will clean all matching jobs.
        */
-  def clean(grace: scala.Double, status: JobStatusClean): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def clean(grace: scala.Double, status: JobStatusClean): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Tells the queue remove all jobs created outside of a grace period in milliseconds.
        * You can clean the jobs with the following states: completed, wait (typo for waiting), active, delayed, and failed.
@@ -54,169 +54,169 @@ trait Queue[T] extends js.Object {
        * @param status Status of the job to clean. Values are completed, wait, active, delayed, and failed. Defaults to completed.
        * @param limit Maximum amount of jobs to clean per call. If not provided will clean all matching jobs.
        */
-  def clean(grace: scala.Double, status: JobStatusClean, limit: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def clean(grace: scala.Double, status: JobStatusClean, limit: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Closes the underlying redis client. Use this to perform a graceful shutdown.
        *
        * `close` can be called from anywhere, with one caveat:
        * if called from within a job handler the queue won't close until after the job has been processed
        */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   /**
        * Returns a promise that returns the number of jobs in the queue, waiting or paused.
        * Since there may be other processes adding or processing jobs, this value may be true only for a very small amount of time.
        */
-  def count(): stdLib.Promise[scala.Double] = js.native
+  def count(): js.Promise[scala.Double] = js.native
   /**
        * Empties a queue deleting all the input lists and associated jobs.
        */
-  def empty(): stdLib.Promise[scala.Unit] = js.native
+  def empty(): js.Promise[scala.Unit] = js.native
   /**
        * Returns a promise that will return an array with the active jobs between start and end.
        */
-  def getActive(): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getActive(): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the active jobs between start and end.
        */
-  def getActive(start: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getActive(start: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the active jobs between start and end.
        */
-  def getActive(start: scala.Double, end: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getActive(start: scala.Double, end: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that resolves with the quantity of active jobs.
        */
-  def getActiveCount(): stdLib.Promise[scala.Double] = js.native
+  def getActiveCount(): js.Promise[scala.Double] = js.native
   /**
        * Returns a promise that will return an array with the completed jobs between start and end.
        */
-  def getCompleted(): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getCompleted(): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the completed jobs between start and end.
        */
-  def getCompleted(start: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getCompleted(start: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the completed jobs between start and end.
        */
-  def getCompleted(start: scala.Double, end: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getCompleted(start: scala.Double, end: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that resolves with the quantity of completed jobs.
        */
-  def getCompletedCount(): stdLib.Promise[scala.Double] = js.native
+  def getCompletedCount(): js.Promise[scala.Double] = js.native
   /**
        * Returns a promise that will return an array with the delayed jobs between start and end.
        */
-  def getDelayed(): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getDelayed(): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the delayed jobs between start and end.
        */
-  def getDelayed(start: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getDelayed(start: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the delayed jobs between start and end.
        */
-  def getDelayed(start: scala.Double, end: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getDelayed(start: scala.Double, end: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that resolves with the quantity of delayed jobs.
        */
-  def getDelayedCount(): stdLib.Promise[scala.Double] = js.native
+  def getDelayedCount(): js.Promise[scala.Double] = js.native
   /**
        * Returns a promise that will return an array with the failed jobs between start and end.
        */
-  def getFailed(): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getFailed(): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the failed jobs between start and end.
        */
-  def getFailed(start: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getFailed(start: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the failed jobs between start and end.
        */
-  def getFailed(start: scala.Double, end: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getFailed(start: scala.Double, end: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that resolves with the quantity of failed jobs.
        */
-  def getFailedCount(): stdLib.Promise[scala.Double] = js.native
+  def getFailedCount(): js.Promise[scala.Double] = js.native
   /**
        * Returns a promise that will return the job instance associated with the jobId parameter.
        * If the specified job cannot be located, the promise callback parameter will be set to null.
        */
-  def getJob(jobId: JobId): stdLib.Promise[Job[T] | scala.Null] = js.native
+  def getJob(jobId: JobId): js.Promise[Job[T] | scala.Null] = js.native
   /**
        * Returns a promise that resolves with the job counts for the given queue.
        */
-  def getJobCounts(): stdLib.Promise[JobCounts] = js.native
+  def getJobCounts(): js.Promise[JobCounts] = js.native
   /**
        * Returns a promise that will return an array of job instances of the given types.
        * Optional parameters for range and ordering are provided.
        */
-  def getJobs(types: js.Array[java.lang.String]): stdLib.Promise[js.Array[Job[_]]] = js.native
+  def getJobs(types: js.Array[java.lang.String]): js.Promise[js.Array[Job[_]]] = js.native
   /**
        * Returns a promise that will return an array of job instances of the given types.
        * Optional parameters for range and ordering are provided.
        */
-  def getJobs(types: js.Array[java.lang.String], start: scala.Double): stdLib.Promise[js.Array[Job[_]]] = js.native
+  def getJobs(types: js.Array[java.lang.String], start: scala.Double): js.Promise[js.Array[Job[_]]] = js.native
   /**
        * Returns a promise that will return an array of job instances of the given types.
        * Optional parameters for range and ordering are provided.
        */
-  def getJobs(types: js.Array[java.lang.String], start: scala.Double, end: scala.Double): stdLib.Promise[js.Array[Job[_]]] = js.native
+  def getJobs(types: js.Array[java.lang.String], start: scala.Double, end: scala.Double): js.Promise[js.Array[Job[_]]] = js.native
   /**
        * Returns a promise that will return an array of job instances of the given types.
        * Optional parameters for range and ordering are provided.
        */
-  def getJobs(types: js.Array[java.lang.String], start: scala.Double, end: scala.Double, asc: scala.Boolean): stdLib.Promise[js.Array[Job[_]]] = js.native
+  def getJobs(types: js.Array[java.lang.String], start: scala.Double, end: scala.Double, asc: scala.Boolean): js.Promise[js.Array[Job[_]]] = js.native
   /**
        * Returns a promise that resolves with the quantity of paused jobs.
        */
-  def getPausedCount(): stdLib.Promise[scala.Double] = js.native
+  def getPausedCount(): js.Promise[scala.Double] = js.native
   /**
        * Returns a promise that resolves to the quantity of repeatable jobs.
        */
-  def getRepeatableCount(): stdLib.Promise[scala.Double] = js.native
+  def getRepeatableCount(): js.Promise[scala.Double] = js.native
   /**
        * Returns JobInformation of repeatable jobs (ordered descending). Provide a start and/or an end
        * index to limit the number of results. Start defaults to 0, end to -1 and asc to false.
        */
-  def getRepeatableJobs(): stdLib.Promise[js.Array[JobInformation]] = js.native
+  def getRepeatableJobs(): js.Promise[js.Array[JobInformation]] = js.native
   /**
        * Returns JobInformation of repeatable jobs (ordered descending). Provide a start and/or an end
        * index to limit the number of results. Start defaults to 0, end to -1 and asc to false.
        */
-  def getRepeatableJobs(start: scala.Double): stdLib.Promise[js.Array[JobInformation]] = js.native
+  def getRepeatableJobs(start: scala.Double): js.Promise[js.Array[JobInformation]] = js.native
   /**
        * Returns JobInformation of repeatable jobs (ordered descending). Provide a start and/or an end
        * index to limit the number of results. Start defaults to 0, end to -1 and asc to false.
        */
-  def getRepeatableJobs(start: scala.Double, end: scala.Double): stdLib.Promise[js.Array[JobInformation]] = js.native
+  def getRepeatableJobs(start: scala.Double, end: scala.Double): js.Promise[js.Array[JobInformation]] = js.native
   /**
        * Returns JobInformation of repeatable jobs (ordered descending). Provide a start and/or an end
        * index to limit the number of results. Start defaults to 0, end to -1 and asc to false.
        */
-  def getRepeatableJobs(start: scala.Double, end: scala.Double, asc: scala.Boolean): stdLib.Promise[js.Array[JobInformation]] = js.native
+  def getRepeatableJobs(start: scala.Double, end: scala.Double, asc: scala.Boolean): js.Promise[js.Array[JobInformation]] = js.native
   /**
        * Returns a promise that will return an array with the waiting jobs between start and end.
        */
-  def getWaiting(): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getWaiting(): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the waiting jobs between start and end.
        */
-  def getWaiting(start: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getWaiting(start: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that will return an array with the waiting jobs between start and end.
        */
-  def getWaiting(start: scala.Double, end: scala.Double): stdLib.Promise[js.Array[Job[T]]] = js.native
+  def getWaiting(start: scala.Double, end: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
   /**
        * Returns a promise that resolves with the quantity of waiting jobs.
        */
-  def getWaitingCount(): stdLib.Promise[scala.Double] = js.native
+  def getWaitingCount(): js.Promise[scala.Double] = js.native
   /**
        * Returns a promise that resolves when Redis is connected and the queue is ready to accept jobs.
        * This replaces the `ready` event emitted on Queue in previous verisons.
        */
-  def isReady(): stdLib.Promise[this.type] = js.native
+  def isReady(): js.Promise[this.type] = js.native
   /**
        * ???
        */
-  def nextRepeatableJob(name: java.lang.String, data: js.Any, opts: JobOptions): stdLib.Promise[Job[T]] = js.native
+  def nextRepeatableJob(name: java.lang.String, data: js.Any, opts: JobOptions): js.Promise[Job[T]] = js.native
   /**
        * Listens to queue events
        */
@@ -297,7 +297,7 @@ trait Queue[T] extends js.Object {
        *
        * Pausing a queue that is already paused does nothing.
        */
-  def pause(): stdLib.Promise[scala.Unit] = js.native
+  def pause(): js.Promise[scala.Unit] = js.native
   /**
        * Returns a promise that resolves when the queue is paused.
        *
@@ -308,7 +308,7 @@ trait Queue[T] extends js.Object {
        *
        * Pausing a queue that is already paused does nothing.
        */
-  def pause(isLocal: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def pause(isLocal: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
        * Defines a processing function for the jobs placed into a given Queue.
        *
@@ -344,7 +344,7 @@ trait Queue[T] extends js.Object {
        * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
        * If it is resolved, its value will be the "completed" event's second argument.
        */
-  def process(callback: js.Function1[/* job */ Job[T], stdLib.Promise[_]]): scala.Unit = js.native
+  def process(callback: js.Function1[/* job */ Job[T], js.Promise[_]]): scala.Unit = js.native
   /**
        * Defines a processing function for the jobs placed into a given Queue.
        *
@@ -402,7 +402,7 @@ trait Queue[T] extends js.Object {
        *
        * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
        */
-  def process(concurrency: scala.Double, callback: js.Function1[/* job */ Job[T], stdLib.Promise[_]]): scala.Unit = js.native
+  def process(concurrency: scala.Double, callback: js.Function1[/* job */ Job[T], js.Promise[_]]): scala.Unit = js.native
   /**
        * Defines a processing function for the jobs placed into a given Queue.
        *
@@ -467,7 +467,7 @@ trait Queue[T] extends js.Object {
        * @param name Bull will only call the handler if the job name matches
        */
   // tslint:disable-next-line:unified-signatures
-  def process(name: java.lang.String, callback: js.Function1[/* job */ Job[T], stdLib.Promise[_]]): scala.Unit = js.native
+  def process(name: java.lang.String, callback: js.Function1[/* job */ Job[T], js.Promise[_]]): scala.Unit = js.native
   /**
        * Defines a processing function for the jobs placed into a given Queue.
        *
@@ -536,7 +536,7 @@ trait Queue[T] extends js.Object {
   def process(
     name: java.lang.String,
     concurrency: scala.Double,
-    callback: js.Function1[/* job */ Job[T], stdLib.Promise[_]]
+    callback: js.Function1[/* job */ Job[T], js.Promise[_]]
   ): scala.Unit = js.native
   /**
        * Defines a processing function for the jobs placed into a given Queue.
@@ -569,12 +569,12 @@ trait Queue[T] extends js.Object {
        *
        * name: The name of the to be removed job
        */
-  def removeRepeatable(name: java.lang.String, repeat: (CronRepeatOptions | EveryRepeatOptions) with bullLib.Anon_JobId): stdLib.Promise[scala.Unit] = js.native
+  def removeRepeatable(name: java.lang.String, repeat: (CronRepeatOptions | EveryRepeatOptions) with bullLib.Anon_JobId): js.Promise[scala.Unit] = js.native
   /**
        * Removes a given repeatable job. The RepeatOptions and JobId needs to be the same as the ones
        * used for the job when it was added.
        */
-  def removeRepeatable(repeat: (CronRepeatOptions | EveryRepeatOptions) with bullLib.Anon_JobId): stdLib.Promise[scala.Unit] = js.native
+  def removeRepeatable(repeat: (CronRepeatOptions | EveryRepeatOptions) with bullLib.Anon_JobId): js.Promise[scala.Unit] = js.native
   /**
        * Returns a promise that resolves when the queue is resumed after being paused.
        *
@@ -585,7 +585,7 @@ trait Queue[T] extends js.Object {
        *
        * Resuming a queue that is not paused does nothing.
        */
-  def resume(): stdLib.Promise[scala.Unit] = js.native
+  def resume(): js.Promise[scala.Unit] = js.native
   /**
        * Returns a promise that resolves when the queue is resumed after being paused.
        *
@@ -596,6 +596,6 @@ trait Queue[T] extends js.Object {
        *
        * Resuming a queue that is not paused does nothing.
        */
-  def resume(isLocal: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def resume(isLocal: scala.Boolean): js.Promise[scala.Unit] = js.native
 }
 

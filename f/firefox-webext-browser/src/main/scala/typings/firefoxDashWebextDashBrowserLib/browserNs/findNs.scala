@@ -21,14 +21,14 @@ object findNs extends js.Object {
        * @param queryphrase The string to search for.
        * @param [params] Search parameters.
        */
-  def find(queryphrase: java.lang.String): stdLib.Promise[firefoxDashWebextDashBrowserLib.Anon_Count] = js.native
+  def find(queryphrase: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.Anon_Count] = js.native
   /* find functions */
   /**
        * Search for text in document and store found ranges in array, in document order.
        * @param queryphrase The string to search for.
        * @param [params] Search parameters.
        */
-  def find(queryphrase: java.lang.String, params: firefoxDashWebextDashBrowserLib.Anon_TabIdIncludeRangeData): stdLib.Promise[firefoxDashWebextDashBrowserLib.Anon_Count] = js.native
+  def find(queryphrase: java.lang.String, params: firefoxDashWebextDashBrowserLib.Anon_TabIdIncludeRangeData): js.Promise[firefoxDashWebextDashBrowserLib.Anon_Count] = js.native
   /**
        * Highlight a range
        * @param [params] highlightResults parameters

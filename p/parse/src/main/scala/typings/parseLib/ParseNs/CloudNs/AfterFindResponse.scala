@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AfterFindResponse extends FunctionResponse {
-  def success(objects: js.Array[js.Object]): scala.Unit = js.native
+  def success(objects: js.Array[parseLib.ParseNs.Object]): scala.Unit = js.native
 }
 

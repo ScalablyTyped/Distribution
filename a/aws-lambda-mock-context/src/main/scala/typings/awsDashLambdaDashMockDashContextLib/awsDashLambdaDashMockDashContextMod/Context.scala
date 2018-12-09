@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Context extends js.Object {
-  var Promise: stdLib.Promise[_]
+  var Promise: js.Promise[_]
   var awsRequestId: java.lang.String
   var callbackWaitsForEmptyEventLoop: scala.Boolean
   var functionName: java.lang.String
@@ -18,8 +18,8 @@ trait Context extends js.Object {
   var logGroupName: java.lang.String
   var logStreamName: java.lang.String
   var memoryLimitInMB: java.lang.String
-  def done(err: js.Any, result: js.Any): stdLib.Promise[_]
-  def fail(err: js.Any): stdLib.Promise[_]
-  def succeed(result: js.Any): stdLib.Promise[_]
+  def done(err: js.Any, result: js.Any): js.Promise[_]
+  def fail(err: js.Any): js.Promise[_]
+  def succeed(result: js.Any): js.Promise[_]
 }
 

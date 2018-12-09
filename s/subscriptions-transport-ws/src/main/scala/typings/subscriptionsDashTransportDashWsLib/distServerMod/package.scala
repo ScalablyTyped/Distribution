@@ -16,7 +16,7 @@ package object distServerMod {
     /* fieldResolver */ js.UndefOr[
       graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]]
     ], 
-    graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault] | (stdLib.Promise[
+    graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault] | (js.Promise[
       graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
     ]) | (stdLib.AsyncIterator[
       graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
@@ -40,7 +40,7 @@ package object distServerMod {
     ], 
     (stdLib.AsyncIterator[
       graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
-    ]) | (stdLib.Promise[
+    ]) | (js.Promise[
       (stdLib.AsyncIterator[
         graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
       ]) | graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]

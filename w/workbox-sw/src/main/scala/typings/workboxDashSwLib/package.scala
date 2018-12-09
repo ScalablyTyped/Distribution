@@ -9,7 +9,7 @@ package object workboxDashSwLib {
    * The "handler" callback is called when a service worker's fetch event has been matched by a Route. This callback should return a Promise that resolves with a Response.
    * If a value is returned by the match callback it will be passed in as the context.params argument.
    */
-  type HandlerCallback = js.Function1[/* context */ js.Any, stdLib.Promise[stdLib.Response]]
+  type HandlerCallback = js.Function1[/* context */ js.Any, js.Promise[stdLib.Response]]
   /**
    * To signify a match, return anything other than null. Return null if the route shouldn't match.
    */

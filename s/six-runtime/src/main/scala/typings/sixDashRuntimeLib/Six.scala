@@ -64,15 +64,15 @@ trait Six extends js.Object {
   /**
        * 渲染函数
        */
-  def render(name: java.lang.String): stdLib.Promise[_] = js.native
+  def render(name: java.lang.String): js.Promise[_] = js.native
   /**
        * 渲染函数
        */
-  def render(name: java.lang.String, runtimeConf: scala.Null, data: js.Object): stdLib.Promise[_] = js.native
+  def render(name: java.lang.String, runtimeConf: scala.Null, data: js.Object): js.Promise[_] = js.native
   /**
        * 渲染函数
        */
-  def render(name: java.lang.String, runtimeConf: sixDashRuntimeLib.SixNs.pluginsNs.viewNs.runtimeConf): stdLib.Promise[_] = js.native
+  def render(name: java.lang.String, runtimeConf: sixDashRuntimeLib.SixNs.pluginsNs.viewNs.runtimeConf): js.Promise[_] = js.native
   /**
        * 渲染函数
        */
@@ -80,7 +80,7 @@ trait Six extends js.Object {
     name: java.lang.String,
     runtimeConf: sixDashRuntimeLib.SixNs.pluginsNs.viewNs.runtimeConf,
     data: js.Object
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * rpc调用工具方法，返回ThriftPool实例
        */

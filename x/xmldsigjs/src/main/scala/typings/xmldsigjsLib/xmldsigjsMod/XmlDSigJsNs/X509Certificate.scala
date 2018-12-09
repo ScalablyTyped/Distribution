@@ -39,18 +39,18 @@ trait X509Certificate extends js.Object {
            * @param  {DigestAlgorithm="SHA-1"} algName Digest algorithm name
            * @returns PromiseLike
            */
-  def Thumbprint(): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def Thumbprint(): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
            * Returns a thumbprint of the certificate
            * @param  {DigestAlgorithm="SHA-1"} algName Digest algorithm name
            * @returns PromiseLike
            */
-  def Thumbprint(algName: DigestAlgorithm): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def Thumbprint(algName: DigestAlgorithm): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
            * Returns public key from X509Certificate
            * @param  {Algorithm} algorithm
            * @returns Promise
            */
-  def exportKey(algorithm: stdLib.Algorithm): stdLib.Promise[stdLib.CryptoKey] = js.native
+  def exportKey(algorithm: stdLib.Algorithm): js.Promise[stdLib.CryptoKey] = js.native
 }
 

@@ -33,13 +33,13 @@ trait Hemera extends js.Object {
   @JSName("trace$")
   var trace$: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Trace = js.native
   var transport: js.Any = js.native
-  def act(pattern: java.lang.String): stdLib.Promise[_] = js.native
-  def act(pattern: java.lang.String, handler: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ActHandler): stdLib.Promise[_] = js.native
-  def act(pattern: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Pattern): stdLib.Promise[_] = js.native
+  def act(pattern: java.lang.String): js.Promise[_] = js.native
+  def act(pattern: java.lang.String, handler: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ActHandler): js.Promise[_] = js.native
+  def act(pattern: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Pattern): js.Promise[_] = js.native
   def act(
     pattern: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Pattern,
     handler: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ActHandler
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def add(pattern: java.lang.String, handler: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.AddHandler): natsDashHemeraLib.natsDashHemeraMod.HemeraNs.AddMeta = js.native
   def add(
     pattern: natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Pattern,

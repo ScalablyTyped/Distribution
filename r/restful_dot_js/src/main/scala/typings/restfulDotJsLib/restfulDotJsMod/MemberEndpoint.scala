@@ -20,47 +20,47 @@ trait MemberEndpoint extends Endpoint[MemberEndpoint] {
        * @param data
        * @param headers
        */
-  def delete[T](): stdLib.Promise[MemberResponse[T]] = js.native
+  def delete[T](): js.Promise[MemberResponse[T]] = js.native
   /**
        * Delete a member. Returns a promise with the response.
        * @param data
        * @param headers
        */
-  def delete[T](data: js.Any): stdLib.Promise[MemberResponse[T]] = js.native
+  def delete[T](data: js.Any): js.Promise[MemberResponse[T]] = js.native
   /**
        * Delete a member. Returns a promise with the response.
        * @param data
        * @param headers
        */
-  def delete[T](data: js.Any, headers: Headers): stdLib.Promise[MemberResponse[T]] = js.native
+  def delete[T](data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
   /**
        * Get a member. Returns a promise with an entity.
        * @param params
        * @param headers
        */
-  def get[T](): stdLib.Promise[MemberResponse[T]] = js.native
+  def get[T](): js.Promise[MemberResponse[T]] = js.native
   /**
        * Get a member. Returns a promise with an entity.
        * @param params
        * @param headers
        */
-  def get[T](params: js.Any): stdLib.Promise[MemberResponse[T]] = js.native
+  def get[T](params: js.Any): js.Promise[MemberResponse[T]] = js.native
   /**
        * Get a member. Returns a promise with an entity.
        * @param params
        * @param headers
        */
-  def get[T](params: js.Any, headers: Headers): stdLib.Promise[MemberResponse[T]] = js.native
+  def get[T](params: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
   /**
        * Perform a HEAD request on a member. Returns a promise with the response.
        * @param headers
        */
-  def head[T](): stdLib.Promise[MemberResponse[T]] = js.native
+  def head[T](): js.Promise[MemberResponse[T]] = js.native
   /**
        * Perform a HEAD request on a member. Returns a promise with the response.
        * @param headers
        */
-  def head[T](headers: js.Any): stdLib.Promise[MemberResponse[T]] = js.native
+  def head[T](headers: js.Any): js.Promise[MemberResponse[T]] = js.native
   /**
        * Target a child member in a collection name.
        * @param name
@@ -73,24 +73,24 @@ trait MemberEndpoint extends Endpoint[MemberEndpoint] {
        * @param data
        * @param headers
        */
-  def patch[T](data: js.Any): stdLib.Promise[MemberResponse[T]] = js.native
+  def patch[T](data: js.Any): js.Promise[MemberResponse[T]] = js.native
   /**
        * Patch a member. Returns a promise with the response.
        * @param data
        * @param headers
        */
-  def patch[T](data: js.Any, headers: Headers): stdLib.Promise[MemberResponse[T]] = js.native
+  def patch[T](data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
   /**
        * Update a member. Returns a promise with the response.
        * @param data
        * @param headers
        */
-  def put[T](data: js.Any): stdLib.Promise[MemberResponse[T]] = js.native
+  def put[T](data: js.Any): js.Promise[MemberResponse[T]] = js.native
   /**
        * Update a member. Returns a promise with the response.
        * @param data
        * @param headers
        */
-  def put[T](data: js.Any, headers: Headers): stdLib.Promise[MemberResponse[T]] = js.native
+  def put[T](data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
 }
 

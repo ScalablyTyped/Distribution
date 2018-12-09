@@ -60,7 +60,7 @@ object Client extends js.Object {
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getDirectConnection
   		 */
-  def getDirectConnection(): stdLib.Promise[scala.Unit] = js.native
+  def getDirectConnection(): js.Promise[scala.Unit] = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_getHostFrame
   		 */

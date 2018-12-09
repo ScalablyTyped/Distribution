@@ -11,6 +11,6 @@ trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends js.Obje
   val max: js.UndefOr[scala.Double] = js.undefined
   val state: js.UndefOr[stdLib.Partial[S]] = js.undefined
   def guard(res: APIResponseSuccess): /* is T */scala.Boolean
-  def reqgen(): stdLib.Promise[ionicLib.Anon_Req]
+  def reqgen(): js.Promise[ionicLib.Anon_Req]
 }
 

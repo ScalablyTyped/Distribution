@@ -12,7 +12,7 @@ trait RTCRtpReceiver extends js.Object {
   val transport: RTCDtlsTransport | scala.Null
   def getContributingSources(): js.Array[RTCRtpContributingSource]
   def getParameters(): RTCRtpReceiveParameters
-  def getStats(): Promise[RTCStatsReport]
+  def getStats(): js.Promise[RTCStatsReport]
   def getSynchronizationSources(): js.Array[RTCRtpSynchronizationSource]
 }
 

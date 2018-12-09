@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Source[RecordType] extends js.Object {
   var bbox: js.Array[scala.Double]
-  def cancel(): stdLib.Promise[scala.Unit]
-  def read(): stdLib.Promise[shapefileLib.Anon_Done[RecordType]]
+  def cancel(): js.Promise[scala.Unit]
+  def read(): js.Promise[shapefileLib.Anon_Done[RecordType]]
 }
 

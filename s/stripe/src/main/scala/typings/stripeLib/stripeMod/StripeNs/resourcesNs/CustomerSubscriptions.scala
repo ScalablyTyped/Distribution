@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CustomerSubscriptions extends SubscriptionsBase {
-  def create(data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionCustCreationOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  def create(data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionCustCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   /**
                * Creates a new subscription on an existing customer.
                *
@@ -20,7 +20,7 @@ trait CustomerSubscriptions extends SubscriptionsBase {
   def create(
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionCustCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   /**
                * Creates a new subscription on an existing customer.
                *
@@ -34,10 +34,10 @@ trait CustomerSubscriptions extends SubscriptionsBase {
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionCustCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   def create(
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionCustCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
 }
 

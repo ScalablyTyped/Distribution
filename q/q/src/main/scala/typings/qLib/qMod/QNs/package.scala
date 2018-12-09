@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object QNs {
-  type IPromise[T] = stdLib.PromiseLike[T]
-  type IWhenable[T] = stdLib.PromiseLike[T] | T
+  type IPromise[T] = js.Thenable[T]
+  type IWhenable[T] = js.Thenable[T] | T
 }

@@ -24,7 +24,7 @@ trait DrawerCommonProps extends js.Object {
   /**
      * Callback function to be invoked when the overlay is clicked.
      */
-  var onOverlayClick: js.UndefOr[js.Function] = js.undefined
+  var onOverlayClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Type of drawer. It can be left or right to display the drawer on the left or right side of the screen.
      * @default left

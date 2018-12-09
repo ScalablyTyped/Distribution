@@ -13,15 +13,15 @@ class OwnerRefClass protected ()
   def this(login: java.lang.String, options: typedDashGithubDashApiLib.distGithubDashRefMod.OptionsOrRef) = this()
   def loadRepositoriesAsync(
     _type: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.all | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.owner | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.member
-  ): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]] = js.native
+  ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]] = js.native
   def loadRepositoriesAsync(
     _type: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.all | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.owner | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.member,
     _sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.created | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.updated | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.pushed | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.full_name
-  ): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]] = js.native
+  ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]] = js.native
   def loadRepositoriesAsync(
     _type: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.all | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.owner | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.member,
     _sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.created | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.updated | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.pushed | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.full_name,
     _ascending: scala.Boolean
-  ): stdLib.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]] = js.native
+  ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]] = js.native
 }
 

@@ -20,7 +20,7 @@ trait AmqpConnectionManagerOptions extends js.Object {
     (js.Function1[
       /* callback */ js.Function1[/* urls */ java.lang.String | js.Array[java.lang.String], scala.Unit], 
       scala.Unit
-    ]) | (js.Function0[stdLib.Promise[java.lang.String | js.Array[java.lang.String]]])
+    ]) | (js.Function0[js.Promise[java.lang.String | js.Array[java.lang.String]]])
   ] = js.undefined
   /**
   	 * Interval to send heartbeats to broker. Defaults to 5 seconds.

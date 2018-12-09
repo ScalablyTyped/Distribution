@@ -709,7 +709,7 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN]
            * @returns A Promise for the completion of which ever callback is executed.
            */
   /* InferMemberOverrides */
-  override def `then`[TResult1, TResult2](): (_Promise[TResult1 | TResult2]) with (stdLib.PromiseLike[TResult1 | TResult2]) = js.native
+  override def `then`[TResult1, TResult2](): (_Promise[TResult1 | TResult2]) with (js.Thenable[TResult1 | TResult2]) = js.native
   /**
            * Attaches callbacks for the resolution and/or rejection of the Promise.
            * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -717,7 +717,7 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN]
            * @returns A Promise for the completion of which ever callback is executed.
            */
   /* InferMemberOverrides */
-  override def `then`[TResult1, TResult2](onfulfilled: js.Function1[TR, TResult1 | stdLib.PromiseLike[TResult1]]): (_Promise[TResult1 | TResult2]) with (stdLib.PromiseLike[TResult1 | TResult2]) = js.native
+  override def `then`[TResult1, TResult2](onfulfilled: js.Function1[TR, TResult1 | js.Thenable[TResult1]]): (_Promise[TResult1 | TResult2]) with (js.Thenable[TResult1 | TResult2]) = js.native
   /**
            * Attaches callbacks for the resolution and/or rejection of the Promise.
            * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -726,9 +726,9 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN]
            */
   /* InferMemberOverrides */
   override def `then`[TResult1, TResult2](
-    onfulfilled: js.Function1[TR, TResult1 | stdLib.PromiseLike[TResult1]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | stdLib.PromiseLike[TResult2]]
-  ): (_Promise[TResult1 | TResult2]) with (stdLib.PromiseLike[TResult1 | TResult2]) = js.native
+    onfulfilled: js.Function1[TR, TResult1 | js.Thenable[TResult1]],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): (_Promise[TResult1 | TResult2]) with (js.Thenable[TResult1 | TResult2]) = js.native
   /**
            * Attaches callbacks for the resolution and/or rejection of the Promise.
            * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -738,8 +738,8 @@ trait PromiseBase[TR, TJ, TN, UR, UJ, UN, VR, VJ, VN, SR, SJ, SN]
   /* InferMemberOverrides */
   override def `then`[TResult1, TResult2](
     onfulfilled: scala.Null,
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | stdLib.PromiseLike[TResult2]]
-  ): (_Promise[TResult1 | TResult2]) with (stdLib.PromiseLike[TResult1 | TResult2]) = js.native
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): (_Promise[TResult1 | TResult2]) with (js.Thenable[TResult1 | TResult2]) = js.native
   /**
            * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
            * @param doneFilter An optional function that is called when the Deferred is resolved.

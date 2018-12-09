@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_MetadataHashSubpath extends js.Object {
-  def apply(metadataHash: webgmeLib.GmeCommonNs.MetadataHash, subpath: java.lang.String): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def apply(metadataHash: webgmeLib.GmeCommonNs.MetadataHash, subpath: java.lang.String): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   def apply(
     metadataHash: webgmeLib.GmeCommonNs.MetadataHash,
     subpath: java.lang.String,

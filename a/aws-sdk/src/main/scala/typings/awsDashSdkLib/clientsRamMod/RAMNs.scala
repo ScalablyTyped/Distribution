@@ -13,11 +13,11 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the invitation.
          */
-    var resourceShareInvitationArn: java.lang.String
+    var resourceShareInvitationArn: String
   }
   
   
@@ -25,7 +25,7 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the invitation.
          */
@@ -37,7 +37,7 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The principals.
          */
@@ -49,7 +49,7 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: java.lang.String
+    var resourceShareArn: String
   }
   
   
@@ -57,7 +57,7 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the associations.
          */
@@ -77,15 +77,15 @@ object RAMNs extends js.Object {
     /**
          * Indicates whether principals outside your organization can be associated with a resource share.
          */
-    var allowExternalPrincipals: js.UndefOr[scala.Boolean] = js.undefined
+    var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the resource share.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * The principals to associate with the resource share. The possible values are IDs of AWS accounts, the ARN of an OU or organization from AWS Organizations.
          */
@@ -105,7 +105,7 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the resource share.
          */
@@ -117,11 +117,11 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: java.lang.String
+    var resourceShareArn: String
   }
   
   
@@ -129,11 +129,11 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the request succeeded.
          */
-    var returnValue: js.UndefOr[scala.Boolean] = js.undefined
+    var returnValue: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -141,7 +141,7 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The principals.
          */
@@ -153,7 +153,7 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: java.lang.String
+    var resourceShareArn: String
   }
   
   
@@ -161,7 +161,7 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the associations.
          */
@@ -176,7 +176,7 @@ object RAMNs extends js.Object {
     /**
          * Indicates whether the request succeeded.
          */
-    var returnValue: js.UndefOr[scala.Boolean] = js.undefined
+    var returnValue: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -188,11 +188,11 @@ object RAMNs extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The principal.
          */
-    var principal: js.UndefOr[java.lang.String] = js.undefined
+    var principal: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Names (ARN) of the resources.
          */
@@ -204,7 +204,7 @@ object RAMNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * A key policy document, in JSON format.
          */
@@ -228,15 +228,15 @@ object RAMNs extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The principal.
          */
-    var principal: js.UndefOr[java.lang.String] = js.undefined
+    var principal: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the resource.
          */
-    var resourceArn: js.UndefOr[java.lang.String] = js.undefined
+    var resourceArn: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Names (ARN) of the resource shares.
          */
@@ -248,7 +248,7 @@ object RAMNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the association.
          */
@@ -264,7 +264,7 @@ object RAMNs extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Names (ARN) of the resource shares.
          */
@@ -280,7 +280,7 @@ object RAMNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the invitations.
          */
@@ -296,11 +296,11 @@ object RAMNs extends js.Object {
     /**
          * The name of the resource share.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The token for the next page of results.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The type of owner.
          */
@@ -324,7 +324,7 @@ object RAMNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the resource shares.
          */
@@ -340,7 +340,7 @@ object RAMNs extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The principals.
          */
@@ -348,7 +348,7 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource.
          */
-    var resourceArn: js.UndefOr[java.lang.String] = js.undefined
+    var resourceArn: js.UndefOr[String] = js.undefined
     /**
          * The type of owner.
          */
@@ -360,7 +360,7 @@ object RAMNs extends js.Object {
     /**
          * The resource type.
          */
-    var resourceType: js.UndefOr[java.lang.String] = js.undefined
+    var resourceType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -368,7 +368,7 @@ object RAMNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The principals.
          */
@@ -384,11 +384,11 @@ object RAMNs extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The principal.
          */
-    var principal: js.UndefOr[java.lang.String] = js.undefined
+    var principal: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Names (ARN) of the resources.
          */
@@ -404,7 +404,7 @@ object RAMNs extends js.Object {
     /**
          * The resource type.
          */
-    var resourceType: js.UndefOr[java.lang.String] = js.undefined
+    var resourceType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -412,7 +412,7 @@ object RAMNs extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the resources.
          */
@@ -428,11 +428,11 @@ object RAMNs extends js.Object {
     /**
          * Indicates whether the principal belongs to the same organization as the AWS account that owns the resource share.
          */
-    var external: js.UndefOr[scala.Boolean] = js.undefined
+    var external: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the principal.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The time when the association was last updated.
          */
@@ -440,7 +440,7 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: js.UndefOr[java.lang.String] = js.undefined
+    var resourceShareArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -448,11 +448,11 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the invitation.
          */
-    var resourceShareInvitationArn: java.lang.String
+    var resourceShareInvitationArn: String
   }
   
   
@@ -460,7 +460,7 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the invitation.
          */
@@ -472,7 +472,7 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource.
          */
-    var arn: js.UndefOr[java.lang.String] = js.undefined
+    var arn: js.UndefOr[String] = js.undefined
     /**
          * The time when the resource was associated with the resource share.
          */
@@ -484,7 +484,7 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: js.UndefOr[java.lang.String] = js.undefined
+    var resourceShareArn: js.UndefOr[String] = js.undefined
     /**
          * The status of the resource.
          */
@@ -492,11 +492,11 @@ object RAMNs extends js.Object {
     /**
          * A message about the status of the resource.
          */
-    var statusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var statusMessage: js.UndefOr[String] = js.undefined
     /**
          * The resource type.
          */
-    var `type`: js.UndefOr[java.lang.String] = js.undefined
+    var `type`: js.UndefOr[String] = js.undefined
   }
   
   
@@ -504,7 +504,7 @@ object RAMNs extends js.Object {
     /**
          * Indicates whether principals outside your organization can be associated with a resource share.
          */
-    var allowExternalPrincipals: js.UndefOr[scala.Boolean] = js.undefined
+    var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
     /**
          * The time when the resource share was created.
          */
@@ -516,15 +516,15 @@ object RAMNs extends js.Object {
     /**
          * The name of the resource share.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that owns the resource share.
          */
-    var owningAccountId: js.UndefOr[java.lang.String] = js.undefined
+    var owningAccountId: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: js.UndefOr[java.lang.String] = js.undefined
+    var resourceShareArn: js.UndefOr[String] = js.undefined
     /**
          * The status of the resource share.
          */
@@ -532,7 +532,7 @@ object RAMNs extends js.Object {
     /**
          * A message about the status of the resource share.
          */
-    var statusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var statusMessage: js.UndefOr[String] = js.undefined
     /**
          * The tags for the resource share.
          */
@@ -544,7 +544,7 @@ object RAMNs extends js.Object {
     /**
          * The associated entity. For resource associations, this is the ARN of the resource. For principal associations, this is the ID of an AWS account or the ARN of an OU or organization from AWS Organizations.
          */
-    var associatedEntity: js.UndefOr[java.lang.String] = js.undefined
+    var associatedEntity: js.UndefOr[String] = js.undefined
     /**
          * The association type.
          */
@@ -556,7 +556,7 @@ object RAMNs extends js.Object {
     /**
          * Indicates whether the principal belongs to the same organization as the AWS account that owns the resource share.
          */
-    var external: js.UndefOr[scala.Boolean] = js.undefined
+    var external: js.UndefOr[Boolean] = js.undefined
     /**
          * The time when the association was last updated.
          */
@@ -564,7 +564,7 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: js.UndefOr[java.lang.String] = js.undefined
+    var resourceShareArn: js.UndefOr[String] = js.undefined
     /**
          * The status of the association.
          */
@@ -572,7 +572,7 @@ object RAMNs extends js.Object {
     /**
          * A message about the status of the association.
          */
-    var statusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var statusMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -584,11 +584,11 @@ object RAMNs extends js.Object {
     /**
          * The ID of the AWS account that received the invitation.
          */
-    var receiverAccountId: js.UndefOr[java.lang.String] = js.undefined
+    var receiverAccountId: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: js.UndefOr[java.lang.String] = js.undefined
+    var resourceShareArn: js.UndefOr[String] = js.undefined
     /**
          * The resources associated with the resource share.
          */
@@ -596,15 +596,15 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the invitation.
          */
-    var resourceShareInvitationArn: js.UndefOr[java.lang.String] = js.undefined
+    var resourceShareInvitationArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the resource share.
          */
-    var resourceShareName: js.UndefOr[java.lang.String] = js.undefined
+    var resourceShareName: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that sent the invitation.
          */
-    var senderAccountId: js.UndefOr[java.lang.String] = js.undefined
+    var senderAccountId: js.UndefOr[String] = js.undefined
     /**
          * The status of the invitation.
          */
@@ -640,7 +640,7 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: java.lang.String
+    var resourceShareArn: String
     /**
          * One or more tags.
          */
@@ -1126,7 +1126,7 @@ object RAMNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: java.lang.String
+    var resourceShareArn: String
     /**
          * The tag keys of the tags to remove.
          */
@@ -1141,19 +1141,19 @@ object RAMNs extends js.Object {
     /**
          * Indicates whether principals outside your organization can be associated with a resource share.
          */
-    var allowExternalPrincipals: js.UndefOr[scala.Boolean] = js.undefined
+    var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the resource share.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the resource share.
          */
-    var resourceShareArn: java.lang.String
+    var resourceShareArn: String
   }
   
   
@@ -1161,7 +1161,7 @@ object RAMNs extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the resource share.
          */
@@ -1175,16 +1175,16 @@ object RAMNs extends js.Object {
   type MaxResults = scala.Double
   type Policy = java.lang.String
   type PolicyList = js.Array[Policy]
-  type PrincipalArnOrIdList = js.Array[java.lang.String]
+  type PrincipalArnOrIdList = js.Array[String]
   type PrincipalList = js.Array[Principal]
-  type ResourceArnList = js.Array[java.lang.String]
+  type ResourceArnList = js.Array[String]
   type ResourceList = js.Array[Resource]
   type ResourceOwner = awsDashSdkLib.awsDashSdkLibStrings.SELF | awsDashSdkLib.awsDashSdkLibStrings.`OTHER-ACCOUNTS` | java.lang.String
-  type ResourceShareArnList = js.Array[java.lang.String]
+  type ResourceShareArnList = js.Array[String]
   type ResourceShareAssociationList = js.Array[ResourceShareAssociation]
   type ResourceShareAssociationStatus = awsDashSdkLib.awsDashSdkLibStrings.ASSOCIATING | awsDashSdkLib.awsDashSdkLibStrings.ASSOCIATED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.DISASSOCIATING | awsDashSdkLib.awsDashSdkLibStrings.DISASSOCIATED | java.lang.String
   type ResourceShareAssociationType = awsDashSdkLib.awsDashSdkLibStrings.PRINCIPAL | awsDashSdkLib.awsDashSdkLibStrings.RESOURCE | java.lang.String
-  type ResourceShareInvitationArnList = js.Array[java.lang.String]
+  type ResourceShareInvitationArnList = js.Array[String]
   type ResourceShareInvitationList = js.Array[ResourceShareInvitation]
   type ResourceShareInvitationStatus = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.ACCEPTED | awsDashSdkLib.awsDashSdkLibStrings.REJECTED | awsDashSdkLib.awsDashSdkLibStrings.EXPIRED | java.lang.String
   type ResourceShareList = js.Array[ResourceShare]

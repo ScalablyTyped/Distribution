@@ -18,10 +18,10 @@ trait WindowOrWorkerGlobalScope extends js.Object {
   def clearInterval(handle: scala.Double): scala.Unit = js.native
   def clearTimeout(): scala.Unit = js.native
   def clearTimeout(handle: scala.Double): scala.Unit = js.native
-  def createImageBitmap(image: ImageBitmapSource): Promise[ImageBitmap] = js.native
-  def createImageBitmap(image: ImageBitmapSource, sx: scala.Double, sy: scala.Double, sw: scala.Double, sh: scala.Double): Promise[ImageBitmap] = js.native
-  def fetch(input: RequestInfo): Promise[Response] = js.native
-  def fetch(input: RequestInfo, init: RequestInit): Promise[Response] = js.native
+  def createImageBitmap(image: ImageBitmapSource): js.Promise[ImageBitmap] = js.native
+  def createImageBitmap(image: ImageBitmapSource, sx: scala.Double, sy: scala.Double, sw: scala.Double, sh: scala.Double): js.Promise[ImageBitmap] = js.native
+  def fetch(input: RequestInfo): js.Promise[Response] = js.native
+  def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   def queueMicrotask(callback: js.Function): scala.Unit = js.native
   def setInterval(handler: TimerHandler): scala.Double = js.native
   def setInterval(handler: TimerHandler, timeout: scala.Double, arguments: js.Any*): scala.Double = js.native

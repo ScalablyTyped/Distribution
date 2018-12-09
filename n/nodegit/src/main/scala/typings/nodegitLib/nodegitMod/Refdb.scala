@@ -13,6 +13,6 @@ class Refdb ()
 @JSImport("nodegit", "Refdb")
 @js.native
 object Refdb extends js.Object {
-  def open(repo: nodegitLib.repositoryMod.Repository): stdLib.Promise[nodegitLib.refDashDbMod.Refdb] = js.native
+  def open(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.refDashDbMod.Refdb] = js.native
 }
 

@@ -12,7 +12,7 @@ trait MediaStreamTrack
   //kind: string;
   //label: string;
   var enabled: scala.Boolean = js.native
-  def applyConstraints(constraints: MediaTrackConstraints): stdLib.Promise[scala.Unit] = js.native
+  def applyConstraints(constraints: MediaTrackConstraints): js.Promise[scala.Unit] = js.native
   def getCapabilities(): MediaTrackCapabilities = js.native
   def getConstraints(): MediaTrackConstraints = js.native
   def getSettings(): MediaTrackSettings = js.native

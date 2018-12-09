@@ -24,7 +24,7 @@ class Manager protected () extends js.Object {
   ): this.type = js.native
   def get(index: java.lang.String): yandexDashMapsLib.ymapsNs.IControl | scala.Null = js.native
   def get(index: scala.Double): yandexDashMapsLib.ymapsNs.IControl | scala.Null = js.native
-  def getChildElement(control: yandexDashMapsLib.ymapsNs.IControl): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def getChildElement(control: yandexDashMapsLib.ymapsNs.IControl): js.Promise[stdLib.HTMLElement] = js.native
   def getContainer(): stdLib.HTMLElement = js.native
   def getMap(): yandexDashMapsLib.ymapsNs.Map = js.native
   def indexOf(childToFind: java.lang.String): scala.Double = js.native

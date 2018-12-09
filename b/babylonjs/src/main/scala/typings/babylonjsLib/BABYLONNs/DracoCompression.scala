@@ -52,14 +52,14 @@ class DracoCompression () extends IDisposable {
            * @param attributes A map of attributes from vertex buffer kinds to Draco unique ids
            * @returns A promise that resolves with the decoded vertex data
            */
-  def decodeMeshAsync(data: stdLib.ArrayBufferView, attributes: ScalablyTyped.runtime.StringDictionary[scala.Double]): stdLib.Promise[VertexData] = js.native
+  def decodeMeshAsync(data: stdLib.ArrayBufferView, attributes: ScalablyTyped.runtime.StringDictionary[scala.Double]): js.Promise[VertexData] = js.native
   /**
            * Decode Draco compressed mesh data to vertex data.
            * @param data The ArrayBuffer or ArrayBufferView for the Draco compression data
            * @param attributes A map of attributes from vertex buffer kinds to Draco unique ids
            * @returns A promise that resolves with the decoded vertex data
            */
-  def decodeMeshAsync(data: stdLib.ArrayBuffer, attributes: ScalablyTyped.runtime.StringDictionary[scala.Double]): stdLib.Promise[VertexData] = js.native
+  def decodeMeshAsync(data: stdLib.ArrayBuffer, attributes: ScalablyTyped.runtime.StringDictionary[scala.Double]): js.Promise[VertexData] = js.native
   /**
            * Releases all held resources
            */

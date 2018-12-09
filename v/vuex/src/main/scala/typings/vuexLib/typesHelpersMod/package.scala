@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesHelpersMod {
-  type ActionMethod = js.Function1[/* repeated */js.Any, stdLib.Promise[js.Any]]
+  type ActionMethod = js.Function1[/* repeated */js.Any, js.Promise[js.Any]]
   type Computed = js.Function0[js.Any]
   type FunctionMapper[F, R] = js.Function1[
     /* map */ Dictionary[

@@ -19,7 +19,7 @@ trait Anon_ChildrenPropsIsRowLoaded extends js.Object {
   var loadMoreRows: reactLib.reactMod.ReactNs.Validator[
     js.Function1[
       /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange, 
-      stdLib.Promise[_]
+      js.Promise[_]
     ]
   ]
   var minimumBatchSize: reactLib.reactMod.ReactNs.Validator[scala.Double]

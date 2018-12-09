@@ -11,7 +11,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
            */
-  def query[Result, Model](fun: java.lang.String): stdLib.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
+  def query[Result, Model](fun: java.lang.String): js.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
   /**
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
@@ -24,7 +24,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
            */
-  def query[Result, Model](fun: java.lang.String, opts: pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Options[Model, Result]): stdLib.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
+  def query[Result, Model](fun: java.lang.String, opts: pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Options[Model, Result]): js.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
   /**
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
@@ -38,7 +38,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
            */
-  def query[Result, Model](fun: Filter[Model, Result]): stdLib.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
+  def query[Result, Model](fun: Filter[Model, Result]): js.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
   /**
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
@@ -51,7 +51,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
            */
-  def query[Result, Model](fun: Filter[Model, Result], opts: pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Options[Model, Result]): stdLib.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
+  def query[Result, Model](fun: Filter[Model, Result], opts: pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Options[Model, Result]): js.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
   /**
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
@@ -65,7 +65,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
            */
-  def query[Result, Model](fun: Map[Model, Result]): stdLib.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
+  def query[Result, Model](fun: Map[Model, Result]): js.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
   /**
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
@@ -78,7 +78,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
            */
-  def query[Result, Model](fun: Map[Model, Result], opts: pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Options[Model, Result]): stdLib.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
+  def query[Result, Model](fun: Map[Model, Result], opts: pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Options[Model, Result]): js.Promise[pouchdbDashMapreduceLib.PouchDBNs.QueryNs.Response[Result]] = js.native
   /**
            * Invoke a map/reduce function, which allows you to perform more complex queries
            * on PouchDB than what you get with allDocs().
@@ -96,7 +96,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
            * to take up space on disk. viewCleanup() removes these unnecessary
            * index files.
            */
-  def viewCleanup(): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.BasicResponse] = js.native
+  def viewCleanup(): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.BasicResponse] = js.native
   /**
            * Cleans up any stale map/reduce indexes.
            *

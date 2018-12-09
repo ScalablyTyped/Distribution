@@ -51,7 +51,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def delete(): stdLib.Promise[KiiObject] = js.native
+  def delete(): js.Promise[KiiObject] = js.native
   /**
            * Delete the object from the server
            *
@@ -92,7 +92,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def delete(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject): stdLib.Promise[KiiObject] = js.native
+  def delete(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject): js.Promise[KiiObject] = js.native
   /**
            * Delete the object body from the server.<br>
            * If the KiiObject has not saved on the cloud or deleted
@@ -136,7 +136,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def deleteBody(): stdLib.Promise[KiiObject] = js.native
+  def deleteBody(): js.Promise[KiiObject] = js.native
   /**
            * Delete the object body from the server.<br>
            * If the KiiObject has not saved on the cloud or deleted
@@ -180,7 +180,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def deleteBody(callbacks: kiiDashCloudDashSdkLib.Anon_FailureObjAnErrorString): stdLib.Promise[KiiObject] = js.native
+  def deleteBody(callbacks: kiiDashCloudDashSdkLib.Anon_FailureObjAnErrorString): js.Promise[KiiObject] = js.native
   /**
            * Download body data of this object.<br>
            * If the KiiObject has not saved on the cloud or deleted
@@ -254,7 +254,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def downloadBody(): stdLib.Promise[js.Tuple2[KiiObject, stdLib.Blob]] = js.native
+  def downloadBody(): js.Promise[js.Tuple2[KiiObject, stdLib.Blob]] = js.native
   /**
            * Download body data of this object.<br>
            * If the KiiObject has not saved on the cloud or deleted
@@ -328,7 +328,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def downloadBody(callbacks: kiiDashCloudDashSdkLib.Anon_FailureObjAnErrorStringSuccess): stdLib.Promise[js.Tuple2[KiiObject, stdLib.Blob]] = js.native
+  def downloadBody(callbacks: kiiDashCloudDashSdkLib.Anon_FailureObjAnErrorStringSuccess): js.Promise[js.Tuple2[KiiObject, stdLib.Blob]] = js.native
   /**
            * Gets the value associated with the given key
            *
@@ -454,7 +454,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def moveBody(targetObjectUri: java.lang.String): stdLib.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
+  def moveBody(targetObjectUri: java.lang.String): js.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
   /**
            * Move KiiObject body from an object to another object.
            * <br>
@@ -512,7 +512,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def moveBody(targetObjectUri: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheSrcObject): stdLib.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
+  def moveBody(targetObjectUri: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheSrcObject): js.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
   /**
            * Get the ACL handle for this file
            *
@@ -588,7 +588,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def publishBody(): stdLib.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
+  def publishBody(): js.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
   /**
            * Publish object body.<br>
            * Publish object body and obtain public URL links to the body.<br>
@@ -640,7 +640,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def publishBody(callbacks: kiiDashCloudDashSdkLib.Anon_FailureObj): stdLib.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
+  def publishBody(callbacks: kiiDashCloudDashSdkLib.Anon_FailureObj): js.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
   /**
            * Publish object body with expiration date.<br>
            * Publish object body and obtain public URL links to the body.<br>
@@ -695,7 +695,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def publishBodyExpiresAt(expiresAt: stdLib.Date): stdLib.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
+  def publishBodyExpiresAt(expiresAt: stdLib.Date): js.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
   /**
            * Publish object body with expiration date.<br>
            * Publish object body and obtain public URL links to the body.<br>
@@ -750,7 +750,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def publishBodyExpiresAt(expiresAt: stdLib.Date, callbacks: kiiDashCloudDashSdkLib.Anon_FailureObj): stdLib.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
+  def publishBodyExpiresAt(expiresAt: stdLib.Date, callbacks: kiiDashCloudDashSdkLib.Anon_FailureObj): js.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
   /**
            * Publish object body with expiration duration.<br>
            * Publish object body and obtain public URL links to the body.<br>
@@ -805,7 +805,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def publishBodyExpiresIn(expiresIn: scala.Double): stdLib.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
+  def publishBodyExpiresIn(expiresIn: scala.Double): js.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
   /**
            * Publish object body with expiration duration.<br>
            * Publish object body and obtain public URL links to the body.<br>
@@ -860,7 +860,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def publishBodyExpiresIn(expiresIn: scala.Double, callbacks: kiiDashCloudDashSdkLib.Anon_FailureObj): stdLib.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
+  def publishBodyExpiresIn(expiresIn: scala.Double, callbacks: kiiDashCloudDashSdkLib.Anon_FailureObj): js.Promise[js.Tuple2[KiiObject, java.lang.String]] = js.native
   /**
            * Updates the local object's data with the user data on the server
            *
@@ -903,7 +903,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def refresh(): stdLib.Promise[KiiObject] = js.native
+  def refresh(): js.Promise[KiiObject] = js.native
   /**
            * Updates the local object's data with the user data on the server
            *
@@ -946,7 +946,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def refresh(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject): stdLib.Promise[KiiObject] = js.native
+  def refresh(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject): js.Promise[KiiObject] = js.native
   /**
            * Removes a pair of key/value from this object.
            * This pair is also removed from server when saveAllFields() is succeeded.
@@ -1014,7 +1014,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def save(): stdLib.Promise[KiiObject] = js.native
+  def save(): js.Promise[KiiObject] = js.native
   /**
            * Create or update the KiiObject on KiiCloud.
            * <br><br>When call this method for the object that has not saved on cloud, will send all fields.
@@ -1071,7 +1071,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def save(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject): stdLib.Promise[KiiObject] = js.native
+  def save(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject): js.Promise[KiiObject] = js.native
   /**
            * Create or update the KiiObject on KiiCloud.
            * <br><br>When call this method for the object that has not saved on cloud, will send all fields.
@@ -1128,7 +1128,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def save(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject, overwrite: scala.Boolean): stdLib.Promise[KiiObject] = js.native
+  def save(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject, overwrite: scala.Boolean): js.Promise[KiiObject] = js.native
   /**
            * Create or update the KiiObject on KiiCloud.
            * <br><br>When call this method for the object that has not saved on cloud, will send all fields.
@@ -1184,7 +1184,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def saveAllFields(): stdLib.Promise[KiiObject] = js.native
+  def saveAllFields(): js.Promise[KiiObject] = js.native
   /**
            * Create or update the KiiObject on KiiCloud.
            * <br><br>When call this method for the object that has not saved on cloud, will send all fields.
@@ -1240,7 +1240,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def saveAllFields(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject): stdLib.Promise[KiiObject] = js.native
+  def saveAllFields(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject): js.Promise[KiiObject] = js.native
   /**
            * Create or update the KiiObject on KiiCloud.
            * <br><br>When call this method for the object that has not saved on cloud, will send all fields.
@@ -1296,7 +1296,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def saveAllFields(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject, overwrite: scala.Boolean): stdLib.Promise[KiiObject] = js.native
+  def saveAllFields(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheObject, overwrite: scala.Boolean): js.Promise[KiiObject] = js.native
   /**
            * Sets a key/value pair to a KiiObject
            *
@@ -1406,7 +1406,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def uploadBody(srcDataBlob: stdLib.Blob): stdLib.Promise[KiiObject] = js.native
+  def uploadBody(srcDataBlob: stdLib.Blob): js.Promise[KiiObject] = js.native
   /**
            * Upload body data of this object.<br>
            * If the KiiObject has not saved on the cloud or deleted,
@@ -1485,7 +1485,7 @@ class KiiObject () extends js.Object {
            *         }
            *     );
            */
-  def uploadBody(srcDataBlob: stdLib.Blob, callbacks: kiiDashCloudDashSdkLib.Anon_FailureObjAnErrorString): stdLib.Promise[KiiObject] = js.native
+  def uploadBody(srcDataBlob: stdLib.Blob, callbacks: kiiDashCloudDashSdkLib.Anon_FailureObjAnErrorString): js.Promise[KiiObject] = js.native
 }
 
 /**

@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("openlayers", "Collection")
+@JSImport("openlayers", "Collection")
 @js.native
-class Collection[T] () extends js.Object {
+class Collection[T] () extends Object {
   /**
        * @classdesc
        * An expanded version of standard JS Array, adding convenience methods for

@@ -22,7 +22,7 @@ class default () extends PublicKeyInfo {
   /* CompleteClass */
   override def fromSchema(schema: js.Any): scala.Unit = js.native
   /* CompleteClass */
-  override def importKey(publicKey: stdLib.CryptoKey): stdLib.PromiseLike[scala.Unit] = js.native
+  override def importKey(publicKey: stdLib.CryptoKey): js.Thenable[scala.Unit] = js.native
   /* CompleteClass */
   override def toJSON(): js.Any = js.native
   /* CompleteClass */

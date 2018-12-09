@@ -1159,6 +1159,6 @@ trait App extends EventEmitter {
        * userInfo into its current userInfo dictionary.
        */
   def updateCurrentActivity(`type`: java.lang.String, userInfo: js.Any): scala.Unit = js.native
-  def whenReady(): stdLib.Promise[_] = js.native
+  def whenReady(): js.Promise[_] = js.native
 }
 

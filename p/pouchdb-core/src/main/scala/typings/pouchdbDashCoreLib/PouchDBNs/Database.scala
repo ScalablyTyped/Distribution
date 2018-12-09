@@ -11,15 +11,15 @@ trait Database[Content /* <: js.Object */]
   /** The name passed to the PouchDB constructor and unique identifier of the database. */
   var name: java.lang.String = js.native
   /** Fetch all documents matching the given options. */
-  def allDocs[Model](): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
+  def allDocs[Model](): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
   /** Fetch all documents matching the given options. */
-  def allDocs[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsOptions): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
+  def allDocs[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsOptions): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
   /** Fetch all documents matching the given options. */
-  def allDocs[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsWithKeyOptions): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
+  def allDocs[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsWithKeyOptions): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
   /** Fetch all documents matching the given options. */
-  def allDocs[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsWithKeysOptions): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
+  def allDocs[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsWithKeysOptions): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
   /** Fetch all documents matching the given options. */
-  def allDocs[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsWithinRangeOptions): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
+  def allDocs[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsWithinRangeOptions): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsResponse[Content with Model]] = js.native
   /**
            * Create, update or delete multiple documents. The docs argument is an array of documents.
            * If you omit an _id parameter on a given document, the database will create a new document and assign the ID for you.
@@ -27,7 +27,7 @@ trait Database[Content /* <: js.Object */]
            * which should match the ID and revision of the document on which to base your updates.
            * Finally, to delete a document, include a _deleted parameter with the value true.
            */
-  def bulkDocs[Model](docs: js.Array[pouchdbDashCoreLib.PouchDBNs.CoreNs.PutDocument[Content with Model]]): stdLib.Promise[
+  def bulkDocs[Model](docs: js.Array[pouchdbDashCoreLib.PouchDBNs.CoreNs.PutDocument[Content with Model]]): js.Promise[
     js.Array[
       pouchdbDashCoreLib.PouchDBNs.CoreNs.Response | pouchdbDashCoreLib.PouchDBNs.CoreNs.Error
     ]
@@ -42,7 +42,7 @@ trait Database[Content /* <: js.Object */]
   def bulkDocs[Model](
     docs: js.Array[pouchdbDashCoreLib.PouchDBNs.CoreNs.PutDocument[Content with Model]],
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.BulkDocsOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[
       pouchdbDashCoreLib.PouchDBNs.CoreNs.Response | pouchdbDashCoreLib.PouchDBNs.CoreNs.Error
     ]
@@ -80,7 +80,7 @@ trait Database[Content /* <: js.Object */]
     ]
   ): scala.Unit = js.native
   /** Given a set of document/revision IDs, returns the document bodies (and, optionally, attachment data) for each ID/revision pair specified. */
-  def bulkGet[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.BulkGetOptions): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.BulkGetResponse[Content with Model]] = js.native
+  def bulkGet[Model](options: pouchdbDashCoreLib.PouchDBNs.CoreNs.BulkGetOptions): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.BulkGetResponse[Content with Model]] = js.native
   /** Given a set of document/revision IDs, returns the document bodies (and, optionally, attachment data) for each ID/revision pair specified. */
   def bulkGet[Model](
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.BulkGetOptions,
@@ -129,22 +129,22 @@ trait Database[Content /* <: js.Object */]
     callback: pouchdbDashCoreLib.PouchDBNs.CoreNs.Callback[pouchdbDashCoreLib.PouchDBNs.CoreNs.Changes[Content with Model]]
   ): scala.Unit = js.native
   /** Close the database */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   /** Close the database */
   def close(callback: pouchdbDashCoreLib.PouchDBNs.CoreNs.Callback[_]): scala.Unit = js.native
   /** Compact the database */
-  def compact(): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  def compact(): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /** Compact the database */
-  def compact(options: pouchdbDashCoreLib.PouchDBNs.CoreNs.CompactOptions): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  def compact(options: pouchdbDashCoreLib.PouchDBNs.CoreNs.CompactOptions): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /** Compact the database */
   def compact(
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.CompactOptions,
     callback: pouchdbDashCoreLib.PouchDBNs.CoreNs.Callback[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response]
   ): scala.Unit = js.native
   /** Destroy the database */
-  def destroy(): stdLib.Promise[scala.Unit] = js.native
+  def destroy(): js.Promise[scala.Unit] = js.native
   /** Destroy the database */
-  def destroy(options: pouchdbDashCoreLib.PouchDBNs.CoreNs.Options): stdLib.Promise[scala.Unit] = js.native
+  def destroy(options: pouchdbDashCoreLib.PouchDBNs.CoreNs.Options): js.Promise[scala.Unit] = js.native
   /** Destroy the database */
   def destroy(
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.Options,
@@ -153,14 +153,14 @@ trait Database[Content /* <: js.Object */]
   /** Destroy the database */
   def destroy(options: scala.Null, callback: pouchdbDashCoreLib.PouchDBNs.CoreNs.Callback[_]): scala.Unit = js.native
   /** Fetch a document */
-  def get[Model](docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId): stdLib.Promise[
+  def get[Model](docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId): js.Promise[
     (pouchdbDashCoreLib.PouchDBNs.CoreNs.Document[Content with Model]) with pouchdbDashCoreLib.PouchDBNs.CoreNs.GetMeta
   ] = js.native
   /** Fetch a document */
   def get[Model](
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.GetOpenRevisions
-  ): stdLib.Promise[js.Array[pouchdbDashCoreLib.PouchDBNs.CoreNs.Revision[Content with Model]]] = js.native
+  ): js.Promise[js.Array[pouchdbDashCoreLib.PouchDBNs.CoreNs.Revision[Content with Model]]] = js.native
   /** Fetch a document */
   def get[Model](
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
@@ -171,7 +171,7 @@ trait Database[Content /* <: js.Object */]
   def get[Model](
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.GetOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     (pouchdbDashCoreLib.PouchDBNs.CoreNs.Document[Content with Model]) with pouchdbDashCoreLib.PouchDBNs.CoreNs.GetMeta
   ] = js.native
   /** Fetch a document */
@@ -194,7 +194,7 @@ trait Database[Content /* <: js.Object */]
   def getAttachment(
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     attachmentId: pouchdbDashCoreLib.PouchDBNs.CoreNs.AttachmentId
-  ): stdLib.Promise[pouchdbDashCoreLib.Blob | pouchdbDashCoreLib.Buffer] = js.native
+  ): js.Promise[pouchdbDashCoreLib.Blob | pouchdbDashCoreLib.Buffer] = js.native
   /** Get attachment data */
   def getAttachment(
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
@@ -206,7 +206,7 @@ trait Database[Content /* <: js.Object */]
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     attachmentId: pouchdbDashCoreLib.PouchDBNs.CoreNs.AttachmentId,
     options: pouchdbDashCoreLib.Anon_Rev
-  ): stdLib.Promise[pouchdbDashCoreLib.Blob | pouchdbDashCoreLib.Buffer] = js.native
+  ): js.Promise[pouchdbDashCoreLib.Blob | pouchdbDashCoreLib.Buffer] = js.native
   /** Get attachment data */
   def getAttachment(
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
@@ -215,7 +215,7 @@ trait Database[Content /* <: js.Object */]
     callback: pouchdbDashCoreLib.PouchDBNs.CoreNs.Callback[pouchdbDashCoreLib.Blob | pouchdbDashCoreLib.Buffer]
   ): scala.Unit = js.native
   /** Get database information */
-  def info(): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.DatabaseInfo] = js.native
+  def info(): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.DatabaseInfo] = js.native
   /** Get database information */
   def info(
     callback: pouchdbDashCoreLib.PouchDBNs.CoreNs.Callback[pouchdbDashCoreLib.PouchDBNs.CoreNs.DatabaseInfo]
@@ -229,7 +229,7 @@ trait Database[Content /* <: js.Object */]
            *
            * @see {@link https://pouchdb.com/2014/06/17/12-pro-tips-for-better-code-with-pouchdb.html|PouchDB Pro Tips}
            */
-  def post[Model](doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.PostDocument[Content with Model]): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  def post[Model](doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.PostDocument[Content with Model]): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /**
            * Create a new document without providing an id.
            *
@@ -242,7 +242,7 @@ trait Database[Content /* <: js.Object */]
   def post[Model](
     doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.PostDocument[Content with Model],
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.Options
-  ): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  ): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /**
            * Create a new document without providing an id.
            *
@@ -280,7 +280,7 @@ trait Database[Content /* <: js.Object */]
            * If you try to store non-JSON data (for instance Date objects) you may
            * see inconsistent results.
            */
-  def put[Model](doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.PutDocument[Content with Model]): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  def put[Model](doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.PutDocument[Content with Model]): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /**
            * Create a new document or update an existing document.
            *
@@ -293,7 +293,7 @@ trait Database[Content /* <: js.Object */]
   def put[Model](
     doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.PutDocument[Content with Model],
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.PutOptions
-  ): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  ): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /**
            * Create a new document or update an existing document.
            *
@@ -332,7 +332,7 @@ trait Database[Content /* <: js.Object */]
     attachmentId: pouchdbDashCoreLib.PouchDBNs.CoreNs.AttachmentId,
     attachment: pouchdbDashCoreLib.PouchDBNs.CoreNs.AttachmentData,
     `type`: java.lang.String
-  ): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  ): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /**
             * Attaches a binary object to a document.
             * This method will update an existing document to add the attachment, so it requires a rev if the document already exists.
@@ -356,7 +356,7 @@ trait Database[Content /* <: js.Object */]
     rev: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId,
     attachment: pouchdbDashCoreLib.PouchDBNs.CoreNs.AttachmentData,
     `type`: java.lang.String
-  ): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  ): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /**
            * Attaches a binary object to a document.
            * This method will update an existing document to add the attachment, so it requires a rev if the document already exists.
@@ -374,13 +374,13 @@ trait Database[Content /* <: js.Object */]
   def remove(
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     revision: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId
-  ): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  ): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /** Remove a doc from the database */
   def remove(
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     revision: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId,
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.Options
-  ): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  ): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /** Remove a doc from the database */
   def remove(
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
@@ -389,12 +389,12 @@ trait Database[Content /* <: js.Object */]
     callback: pouchdbDashCoreLib.PouchDBNs.CoreNs.Callback[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response]
   ): scala.Unit = js.native
   /** Remove a doc from the database */
-  def remove(doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.RemoveDocument): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  def remove(doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.RemoveDocument): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /** Remove a doc from the database */
   def remove(
     doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.RemoveDocument,
     options: pouchdbDashCoreLib.PouchDBNs.CoreNs.Options
-  ): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
+  ): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.Response] = js.native
   /** Remove a doc from the database */
   def remove(
     doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.RemoveDocument,
@@ -406,7 +406,7 @@ trait Database[Content /* <: js.Object */]
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     attachmentId: pouchdbDashCoreLib.PouchDBNs.CoreNs.AttachmentId,
     rev: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId
-  ): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.RemoveAttachmentResponse] = js.native
+  ): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.RemoveAttachmentResponse] = js.native
   /** Delete an attachment from a doc. You must supply the rev of the existing doc. */
   def removeAttachment(
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
@@ -415,7 +415,7 @@ trait Database[Content /* <: js.Object */]
     callback: pouchdbDashCoreLib.PouchDBNs.CoreNs.Callback[pouchdbDashCoreLib.PouchDBNs.CoreNs.RemoveAttachmentResponse]
   ): scala.Unit = js.native
   /** Given a set of document/revision IDs, returns the subset of those that do not correspond to revisions stored in the database */
-  def revsDiff(diff: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionDiffOptions): stdLib.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionDiffResponse] = js.native
+  def revsDiff(diff: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionDiffOptions): js.Promise[pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionDiffResponse] = js.native
   /** Given a set of document/revision IDs, returns the subset of those that do not correspond to revisions stored in the database */
   def revsDiff(
     diff: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionDiffOptions,

@@ -14,13 +14,13 @@ object fsutilMod extends js.Object {
     checkInterval: scala.Double,
     startTime: scala.Double,
     maxWaitDuration: scala.Double
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def waitForFile(
     filePath: nodeLib.fsMod.PathLike,
     checkInterval: scala.Double,
     startTime: scala.Double,
     maxWaitDuration: scala.Double,
     timeoutErrorMessage: java.lang.String
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

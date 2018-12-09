@@ -66,7 +66,7 @@ object Kii extends js.Object {
            *         }
            *     );
            */
-  def authenticateAsAppAdmin(clientId: java.lang.String, clientSecret: java.lang.String): stdLib.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiAppAdminContext] = js.native
+  def authenticateAsAppAdmin(clientId: java.lang.String, clientSecret: java.lang.String): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiAppAdminContext] = js.native
   /**
            * Authenticate as app admin.
            * <br><br>
@@ -119,7 +119,7 @@ object Kii extends js.Object {
     clientId: java.lang.String,
     clientSecret: java.lang.String,
     callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorStatusCode
-  ): stdLib.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiAppAdminContext] = js.native
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiAppAdminContext] = js.native
   /**
            * Authenticate as Thing.
            * <br><br>
@@ -167,7 +167,7 @@ object Kii extends js.Object {
            *         }
            *     );
            */
-  def authenticateAsThing(vendorThingID: java.lang.String, password: java.lang.String): stdLib.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThingContext] = js.native
+  def authenticateAsThing(vendorThingID: java.lang.String, password: java.lang.String): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThingContext] = js.native
   /**
            * Authenticate as Thing.
            * <br><br>
@@ -219,7 +219,7 @@ object Kii extends js.Object {
     vendorThingID: java.lang.String,
     password: java.lang.String,
     callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessThingAuthContext
-  ): stdLib.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThingContext] = js.native
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThingContext] = js.native
   /**
            * Create a KiiThingContext reference
            * <br><br>
@@ -267,7 +267,7 @@ object Kii extends js.Object {
            *         }
            *     );
            */
-  def authenticateAsThingWithToken(thingID: java.lang.String, token: java.lang.String): stdLib.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThingContext] = js.native
+  def authenticateAsThingWithToken(thingID: java.lang.String, token: java.lang.String): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThingContext] = js.native
   /**
            * Create a KiiThingContext reference
            * <br><br>
@@ -319,7 +319,7 @@ object Kii extends js.Object {
     thingID: java.lang.String,
     token: java.lang.String,
     callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessThingContext
-  ): stdLib.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThingContext] = js.native
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThingContext] = js.native
   /**
            * Creates a reference to a bucket for this app
            *
@@ -567,7 +567,7 @@ object Kii extends js.Object {
            *         }
            *     );
            */
-  def listTopics(): stdLib.Promise[
+  def listTopics(): js.Promise[
     js.Tuple2[js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic], java.lang.String]
   ] = js.native
   /**
@@ -633,7 +633,7 @@ object Kii extends js.Object {
            *         }
            *     );
            */
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString): stdLib.Promise[
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString): js.Promise[
     js.Tuple2[js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic], java.lang.String]
   ] = js.native
   /**
@@ -699,7 +699,7 @@ object Kii extends js.Object {
            *         }
            *     );
            */
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString, paginationKey: java.lang.String): stdLib.Promise[
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString, paginationKey: java.lang.String): js.Promise[
     js.Tuple2[js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic], java.lang.String]
   ] = js.native
   /**

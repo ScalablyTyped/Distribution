@@ -26,7 +26,7 @@ object fetchModMembers extends js.Object {
    * @returns {Promise<string|Uint8Array>} Promise
    * @variation 3
    */
-  def apply(path: java.lang.String): stdLib.Promise[java.lang.String | stdLib.Uint8Array] = js.native
+  def apply(path: java.lang.String): js.Promise[java.lang.String | stdLib.Uint8Array] = js.native
   /**
    * Fetches the contents of a file.
    * @name util.fetch
@@ -46,6 +46,6 @@ object fetchModMembers extends js.Object {
    * @returns {Promise<string|Uint8Array>} Promise
    * @variation 3
    */
-  def apply(path: java.lang.String, options: FetchOptions): stdLib.Promise[java.lang.String | stdLib.Uint8Array] = js.native
+  def apply(path: java.lang.String, options: FetchOptions): js.Promise[java.lang.String | stdLib.Uint8Array] = js.native
 }
 

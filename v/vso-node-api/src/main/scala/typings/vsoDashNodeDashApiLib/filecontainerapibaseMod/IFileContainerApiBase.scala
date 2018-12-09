@@ -13,7 +13,7 @@ trait IFileContainerApiBase
       js.Array[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainerItem]
     ],
     containerId: scala.Double
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainerItem]
   ] = js.native
   def createItems(
@@ -22,18 +22,18 @@ trait IFileContainerApiBase
     ],
     containerId: scala.Double,
     scope: java.lang.String
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainerItem]
   ] = js.native
-  def deleteItem(containerId: scala.Double, itemPath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def deleteItem(containerId: scala.Double, itemPath: java.lang.String, scope: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def getContainers(): stdLib.Promise[
+  def deleteItem(containerId: scala.Double, itemPath: java.lang.String): js.Promise[scala.Unit] = js.native
+  def deleteItem(containerId: scala.Double, itemPath: java.lang.String, scope: java.lang.String): js.Promise[scala.Unit] = js.native
+  def getContainers(): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainer]
   ] = js.native
-  def getContainers(scope: java.lang.String): stdLib.Promise[
+  def getContainers(scope: java.lang.String): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainer]
   ] = js.native
-  def getContainers(scope: java.lang.String, artifactUris: java.lang.String): stdLib.Promise[
+  def getContainers(scope: java.lang.String, artifactUris: java.lang.String): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainer]
   ] = js.native
   def getItems(
@@ -45,7 +45,7 @@ trait IFileContainerApiBase
     downloadFileName: js.UndefOr[java.lang.String],
     includeDownloadTickets: js.UndefOr[scala.Boolean],
     isShallow: js.UndefOr[scala.Boolean]
-  ): stdLib.Promise[
+  ): js.Promise[
     js.Array[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainerItem]
   ] = js.native
 }

@@ -102,78 +102,78 @@ object MediaLibraryNs extends js.Object {
      * On Android, by default it copies assets from the current album to provided one, however it's also possible to move them by passing false as copyAssets argument.
      * In case they're copied you should keep in mind that getAssetsAsync will return duplicated assets.
      */
-  def addAssetsToAlbumAsync(assets: js.Array[Asset], album: Album): stdLib.Promise[scala.Boolean] = js.native
+  def addAssetsToAlbumAsync(assets: js.Array[Asset], album: Album): js.Promise[scala.Boolean] = js.native
   /**
      * Adds array of assets to the album.
      * On Android, by default it copies assets from the current album to provided one, however it's also possible to move them by passing false as copyAssets argument.
      * In case they're copied you should keep in mind that getAssetsAsync will return duplicated assets.
      */
-  def addAssetsToAlbumAsync(assets: js.Array[Asset], album: Album, copyAssets: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def addAssetsToAlbumAsync(assets: js.Array[Asset], album: Album, copyAssets: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
      * Adds array of assets to the album.
      * On Android, by default it copies assets from the current album to provided one, however it's also possible to move them by passing false as copyAssets argument.
      * In case they're copied you should keep in mind that getAssetsAsync will return duplicated assets.
      */
-  def addAssetsToAlbumAsync(assets: js.Array[Asset], album: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def addAssetsToAlbumAsync(assets: js.Array[Asset], album: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
      * Adds array of assets to the album.
      * On Android, by default it copies assets from the current album to provided one, however it's also possible to move them by passing false as copyAssets argument.
      * In case they're copied you should keep in mind that getAssetsAsync will return duplicated assets.
      */
-  def addAssetsToAlbumAsync(assets: js.Array[Asset], album: java.lang.String, copyAssets: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def addAssetsToAlbumAsync(assets: js.Array[Asset], album: java.lang.String, copyAssets: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
      * Creates an album with given name and initial asset.
      * The asset parameter is required on Android, since it's not possible to create empty album on this platform.
      */
-  def createAlbumAsync(albumName: java.lang.String, asset: Asset): stdLib.Promise[Album] = js.native
+  def createAlbumAsync(albumName: java.lang.String, asset: Asset): js.Promise[Album] = js.native
   /**
      * Creates an album with given name and initial asset.
      * The asset parameter is required on Android, since it's not possible to create empty album on this platform.
      */
-  def createAlbumAsync(albumName: java.lang.String, asset: java.lang.String): stdLib.Promise[Album] = js.native
+  def createAlbumAsync(albumName: java.lang.String, asset: java.lang.String): js.Promise[Album] = js.native
   /**
      * Creates an asset from existing file. The most common use case is to save a picture taken by Camera.
      */
-  def createAssetAsync(localUri: java.lang.String): stdLib.Promise[Asset] = js.native
+  def createAssetAsync(localUri: java.lang.String): js.Promise[Asset] = js.native
   /**
      * Deletes assets from the library. On iOS it deletes assets from all albums they belong to, while on Android it keeps all copies of them
      * (album is strictly connected to the asset). Also, there is additional dialog on iOS that requires user to confirm this action.
      */
-  def deleteAssetsAsync(asset: js.Array[Asset | java.lang.String]): stdLib.Promise[scala.Boolean] = js.native
+  def deleteAssetsAsync(asset: js.Array[Asset | java.lang.String]): js.Promise[scala.Boolean] = js.native
   /**
      * Queries for an album with a specific name.
      */
-  def getAlbumAsync(albumName: java.lang.String): stdLib.Promise[Album] = js.native
+  def getAlbumAsync(albumName: java.lang.String): js.Promise[Album] = js.native
   /**
      * Queries for user-created albums in media gallery.
      */
-  def getAlbumsAsync(): stdLib.Promise[js.Array[Album]] = js.native
+  def getAlbumsAsync(): js.Promise[js.Array[Album]] = js.native
   /**
      * Provides more informations about an asset, including GPS location, local URI and EXIF metadata.
      */
-  def getAssetInfoAsync(asset: Asset): stdLib.Promise[Asset] = js.native
+  def getAssetInfoAsync(asset: Asset): js.Promise[Asset] = js.native
   /**
      * Provides more informations about an asset, including GPS location, local URI and EXIF metadata.
      */
-  def getAssetInfoAsync(asset: java.lang.String): stdLib.Promise[Asset] = js.native
+  def getAssetInfoAsync(asset: java.lang.String): js.Promise[Asset] = js.native
   /**
      * Fetches a page of assets matching the provided criteria.
      */
-  def getAssetsAsync(options: GetAssetsOptions): stdLib.Promise[GetAssetsResult] = js.native
+  def getAssetsAsync(options: GetAssetsOptions): js.Promise[GetAssetsResult] = js.native
   /**
      * Available on iOS only. Fetches a list of moments, which is a group of assets taken around the same place and time.
      */
-  def getMomentsAsync(): stdLib.Promise[js.Array[Album]] = js.native
+  def getMomentsAsync(): js.Promise[js.Array[Album]] = js.native
   /**
      * Removes given assets from album.
      * On Android, album will be automatically deleted if there are no more assets inside.
      */
-  def removeAssetsFromAlbumAsync(assets: js.Array[Asset], album: Album): stdLib.Promise[scala.Boolean] = js.native
+  def removeAssetsFromAlbumAsync(assets: js.Array[Asset], album: Album): js.Promise[scala.Boolean] = js.native
   /**
      * Removes given assets from album.
      * On Android, album will be automatically deleted if there are no more assets inside.
      */
-  def removeAssetsFromAlbumAsync(assets: js.Array[Asset], album: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def removeAssetsFromAlbumAsync(assets: js.Array[Asset], album: java.lang.String): js.Promise[scala.Boolean] = js.native
   @js.native
   object MediaType extends js.Object {
     @js.native

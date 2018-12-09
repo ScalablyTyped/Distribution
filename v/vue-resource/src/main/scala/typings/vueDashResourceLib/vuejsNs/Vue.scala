@@ -12,7 +12,7 @@ trait Vue extends js.Object {
   @JSName("$resource")
   var $resource_Original: $resource = js.native
   @JSName("$http")
-  def $http(options: HttpOptions): stdLib.PromiseLike[HttpResponse] = js.native
+  def $http(options: HttpOptions): js.Thenable[HttpResponse] = js.native
   @JSName("$resource")
   def $resource(url: java.lang.String): ResourceMethods = js.native
   @JSName("$resource")

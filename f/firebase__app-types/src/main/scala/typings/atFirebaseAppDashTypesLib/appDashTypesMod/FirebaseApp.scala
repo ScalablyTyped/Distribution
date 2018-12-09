@@ -24,6 +24,6 @@ class FirebaseApp () extends js.Object {
   /**
      * Make the given App unusable and free resources.
      */
-  def delete(): stdLib.Promise[scala.Unit] = js.native
+  def delete(): js.Promise[scala.Unit] = js.native
 }
 

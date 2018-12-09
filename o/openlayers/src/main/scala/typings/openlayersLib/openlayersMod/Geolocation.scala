@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("openlayers", "Geolocation")
+@JSImport("openlayers", "Geolocation")
 @js.native
-class Geolocation () extends js.Object {
+class Geolocation () extends Object {
   /**
        * @classdesc
        * Helper class for providing HTML5 Geolocation capabilities.

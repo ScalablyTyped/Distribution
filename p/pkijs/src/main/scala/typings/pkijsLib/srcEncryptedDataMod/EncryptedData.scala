@@ -14,13 +14,13 @@ trait EncryptedData extends js.Object {
            * Create a new CMS Encrypted Data content
            * @param {*} parameters Parameters neccessary for encryption
            */
-  def decrypt(parameters: pkijsLib.Anon_Password): stdLib.PromiseLike[stdLib.ArrayBuffer]
+  def decrypt(parameters: pkijsLib.Anon_Password): js.Thenable[stdLib.ArrayBuffer]
   /**
            * Create a new CMS Encrypted Data content
            * @param {*} parameters Parameters neccessary for encryption
            * @returns {Promise}
            */
-  def encrypt(parameters: pkijsLib.Anon_HmacHashAlgorithm): stdLib.PromiseLike[stdLib.ArrayBuffer]
+  def encrypt(parameters: pkijsLib.Anon_HmacHashAlgorithm): js.Thenable[stdLib.ArrayBuffer]
   def fromSchema(schema: js.Any): scala.Unit
   def toJSON(): js.Any
   def toSchema(): js.Any

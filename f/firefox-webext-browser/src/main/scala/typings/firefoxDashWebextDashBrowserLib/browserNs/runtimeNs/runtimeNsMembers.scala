@@ -48,7 +48,7 @@ object runtimeNsMembers extends js.Object {
       /* message */ js.Any, 
       /* sender */ MessageSender, 
       /* sendResponse */ js.Function1[/* response */ js.UndefOr[js.Any], scala.Unit], 
-      scala.Boolean | stdLib.Promise[js.Any] | scala.Unit
+      scala.Boolean | js.Promise[js.Any] | scala.Unit
     ]
   ] = js.native
   /**
@@ -67,7 +67,7 @@ object runtimeNsMembers extends js.Object {
       /* message */ js.Any, 
       /* sender */ MessageSender, 
       /* sendResponse */ js.Function1[/* response */ js.UndefOr[js.Any], scala.Unit], 
-      scala.Boolean | stdLib.Promise[js.Any] | scala.Unit
+      scala.Boolean | js.Promise[js.Any] | scala.Unit
     ]
   ] = js.native
   /**
@@ -160,9 +160,9 @@ object runtimeNsMembers extends js.Object {
        * the background page is an event page, the system will ensure it is loaded before calling the callback. If there
        * is no background page, an error is set.
        */
-  def getBackgroundPage(): stdLib.Promise[firefoxDashWebextDashBrowserLib.Window] = js.native
+  def getBackgroundPage(): js.Promise[firefoxDashWebextDashBrowserLib.Window] = js.native
   /** Returns information about the current browser. */
-  def getBrowserInfo(): stdLib.Promise[BrowserInfo] = js.native
+  def getBrowserInfo(): js.Promise[BrowserInfo] = js.native
   /**
        * Returns details about the app or extension from the manifest. The object returned is a serialization of the full
        * manifest file.
@@ -172,9 +172,9 @@ object runtimeNsMembers extends js.Object {
        * Returns a DirectoryEntry for the package directory.
        * @deprecated Unsupported on Firefox at this time.
        */
-  def getPackageDirectoryEntry(): stdLib.Promise[js.Object] = js.native
+  def getPackageDirectoryEntry(): js.Promise[js.Object] = js.native
   /** Returns information about the current platform. */
-  def getPlatformInfo(): stdLib.Promise[PlatformInfo] = js.native
+  def getPlatformInfo(): js.Promise[PlatformInfo] = js.native
   /**
        * Converts a relative path within an app/extension install directory to a fully-qualified URL.
        * @param path A path to a resource within an app/extension expressed relative to its install directory.
@@ -190,14 +190,14 @@ object runtimeNsMembers extends js.Object {
        * If your Extension does not declare an options page, or the browser failed to create one for some other reason,
        * the callback will set `lastError`.
        */
-  def openOptionsPage(): stdLib.Promise[scala.Unit] = js.native
+  def openOptionsPage(): js.Promise[scala.Unit] = js.native
   /** Reloads the app or extension. */
   def reload(): scala.Unit = js.native
   /**
        * Requests an update check for this app/extension.
        * @deprecated Unsupported on Firefox at this time.
        */
-  def requestUpdateCheck(): stdLib.Promise[js.Object] = js.native
+  def requestUpdateCheck(): js.Promise[js.Object] = js.native
   /**
        * Restart the device when the app runs in kiosk mode. Otherwise, it's no-op.
        * @deprecated Unsupported on Firefox at this time.
@@ -214,7 +214,7 @@ object runtimeNsMembers extends js.Object {
        * @param extensionId The ID of the extension/app to send the message to. If omitted, the message will be sent to
        *     your own extension/app. Required if sending messages from a web page for web messaging.
        */
-  def sendMessage(extensionId: java.lang.String, message: js.Any): stdLib.Promise[_] = js.native
+  def sendMessage(extensionId: java.lang.String, message: js.Any): js.Promise[_] = js.native
   /**
        * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to
        * `runtime.connect` but only sends a single message, with an optional response. If sending to your extension, the
@@ -230,7 +230,7 @@ object runtimeNsMembers extends js.Object {
     extensionId: java.lang.String,
     message: js.Any,
     options: firefoxDashWebextDashBrowserLib.Anon_ToProxyScript
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to
        * `runtime.connect` but only sends a single message, with an optional response. If sending to your extension, the
@@ -240,7 +240,7 @@ object runtimeNsMembers extends js.Object {
        *
        * Allowed in: Proxy scripts
        */
-  def sendMessage(message: js.Any): stdLib.Promise[_] = js.native
+  def sendMessage(message: js.Any): js.Promise[_] = js.native
   /**
        * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to
        * `runtime.connect` but only sends a single message, with an optional response. If sending to your extension, the
@@ -250,19 +250,19 @@ object runtimeNsMembers extends js.Object {
        *
        * Allowed in: Proxy scripts
        */
-  def sendMessage(message: js.Any, options: firefoxDashWebextDashBrowserLib.Anon_ToProxyScript): stdLib.Promise[_] = js.native
+  def sendMessage(message: js.Any, options: firefoxDashWebextDashBrowserLib.Anon_ToProxyScript): js.Promise[_] = js.native
   /**
        * Send a single message to a native application.
        * @param application The name of the native messaging host.
        * @param message The message that will be passed to the native messaging host.
        */
-  def sendNativeMessage(application: java.lang.String, message: js.Any): stdLib.Promise[_] = js.native
+  def sendNativeMessage(application: java.lang.String, message: js.Any): js.Promise[_] = js.native
   /**
        * Sets the URL to be visited upon uninstallation. This may be used to clean up server-side data, do analytics, and
        * implement surveys. Maximum 255 characters.
        * @param url URL to be opened after the extension is uninstalled. This URL must have an http: or https: scheme.
        *     Set an empty string to not open a new tab upon uninstallation.
        */
-  def setUninstallURL(url: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def setUninstallURL(url: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

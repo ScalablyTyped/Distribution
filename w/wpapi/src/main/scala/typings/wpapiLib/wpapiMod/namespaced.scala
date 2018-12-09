@@ -36,6 +36,6 @@ object namespaced extends js.Object {
        *
        * @param url A URL within a REST API-enabled WordPress website
        */
-  def discover(url: java.lang.String): stdLib.Promise[wpapiLib.wpapiMod.WPAPI] = js.native
+  def discover(url: java.lang.String): js.Promise[wpapiLib.wpapiMod.WPAPI] = js.native
 }
 

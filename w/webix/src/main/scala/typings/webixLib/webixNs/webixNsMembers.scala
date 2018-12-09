@@ -171,9 +171,9 @@ object webixNsMembers extends js.Object {
   def proxy(`type`: java.lang.String, source: java.lang.String): js.Any = js.native
   def ready(code: WebixCallback): scala.Unit = js.native
   def remote(): scala.Unit = js.native
-  def require(url: js.Any): stdLib.Promise[_] = js.native
-  def require(url: js.Any, callback: WebixCallback): stdLib.Promise[_] = js.native
-  def require(url: js.Any, callback: WebixCallback, master: js.Any): stdLib.Promise[_] = js.native
+  def require(url: js.Any): js.Promise[_] = js.native
+  def require(url: js.Any, callback: WebixCallback): js.Promise[_] = js.native
+  def require(url: js.Any, callback: WebixCallback, master: js.Any): js.Promise[_] = js.native
   def send(url: java.lang.String, values: js.Any, method: java.lang.String, target: java.lang.String): scala.Unit = js.native
   def single(source: WebixCallback): WebixCallback = js.native
   def stringify(obj: js.Any): java.lang.String = js.native

@@ -20,7 +20,7 @@ object opnModMembers extends js.Object {
    *     browser.
    * @param options Options to be passed to opn.
    */
-  def apply(target: java.lang.String): stdLib.Promise[nodeLib.childUnderscoreProcessMod.ChildProcess] = js.native
+  def apply(target: java.lang.String): js.Promise[nodeLib.childUnderscoreProcessMod.ChildProcess] = js.native
   /**
    * Uses the command `open` on OS X, `start` on Windows and `xdg-open` on other platforms.
    *
@@ -33,6 +33,6 @@ object opnModMembers extends js.Object {
    *     browser.
    * @param options Options to be passed to opn.
    */
-  def apply(target: java.lang.String, options: opnLib.opnMod.OpnNs.Options): stdLib.Promise[nodeLib.childUnderscoreProcessMod.ChildProcess] = js.native
+  def apply(target: java.lang.String, options: opnLib.opnMod.OpnNs.Options): js.Promise[nodeLib.childUnderscoreProcessMod.ChildProcess] = js.native
 }
 

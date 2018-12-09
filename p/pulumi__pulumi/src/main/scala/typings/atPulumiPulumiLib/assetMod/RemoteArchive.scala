@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class RemoteArchive protected ()
   extends atPulumiPulumiLib.assetArchiveMod.RemoteArchive {
   def this(uri: java.lang.String) = this()
-  def this(uri: stdLib.Promise[java.lang.String]) = this()
+  def this(uri: js.Promise[java.lang.String]) = this()
 }
 

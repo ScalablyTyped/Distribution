@@ -42,6 +42,6 @@ object keyNs extends js.Object {
   
           @param armoredText text to be parsed
        */
-  def readArmored(armoredText: java.lang.String): stdLib.Promise[KeyResult] = js.native
+  def readArmored(armoredText: java.lang.String): js.Promise[KeyResult] = js.native
 }
 

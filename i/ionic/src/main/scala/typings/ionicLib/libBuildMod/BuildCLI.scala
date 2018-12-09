@@ -29,14 +29,14 @@ abstract class BuildCLI[T /* <: js.Object */] protected () extends js.Object {
        * of `program`.
        */
   val script: js.UndefOr[java.lang.String] = js.native
-  def build(options: T): stdLib.Promise[scala.Unit] = js.native
+  def build(options: T): js.Promise[scala.Unit] = js.native
   /**
        * Build the arguments for starting this Build CLI. Called by `this.run()`.
        */
-  /* protected */ def buildArgs(options: T): stdLib.Promise[js.Array[java.lang.String]] = js.native
-  /* protected */ def promptToInstall(): stdLib.Promise[scala.Boolean] = js.native
-  /* protected */ def resolveProgram(): stdLib.Promise[java.lang.String] = js.native
-  /* protected */ def run(options: T): stdLib.Promise[scala.Unit] = js.native
-  /* protected */ def runWrapper(options: T): stdLib.Promise[scala.Unit] = js.native
+  /* protected */ def buildArgs(options: T): js.Promise[js.Array[java.lang.String]] = js.native
+  /* protected */ def promptToInstall(): js.Promise[scala.Boolean] = js.native
+  /* protected */ def resolveProgram(): js.Promise[java.lang.String] = js.native
+  /* protected */ def run(options: T): js.Promise[scala.Unit] = js.native
+  /* protected */ def runWrapper(options: T): js.Promise[scala.Unit] = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IDeferred[T] extends js.Object {
-  var promise: stdLib.Promise[T]
+  var promise: js.Promise[T]
   def reject(reason: js.Any): scala.Unit
   def resolve(value: T): scala.Unit
 }

@@ -21,9 +21,9 @@ abstract class CommandHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definitio
        *
        * @return `true` to keep, `false` to discard
        */
-  def filterOptionCallback(option: O): stdLib.Promise[scala.Boolean] = js.native
-  def getCommandFullName(): stdLib.Promise[java.lang.String] = js.native
-  def getCommandMetadata(): stdLib.Promise[
+  def filterOptionCallback(option: O): js.Promise[scala.Boolean] = js.native
+  def getCommandFullName(): js.Promise[java.lang.String] = js.native
+  def getCommandMetadata(): js.Promise[
     M | (atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O])
   ] = js.native
 }

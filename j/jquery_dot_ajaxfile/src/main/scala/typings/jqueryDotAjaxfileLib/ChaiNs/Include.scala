@@ -13,8 +13,8 @@ trait Include extends js.Object {
   var members_Original: Members = js.native
   def apply(value: java.lang.String): Assertion = js.native
   def apply(value: java.lang.String, message: java.lang.String): Assertion = js.native
-  def apply(value: js.Object): Assertion = js.native
-  def apply(value: js.Object, message: java.lang.String): Assertion = js.native
+  def apply(value: jqueryDotAjaxfileLib.Object): Assertion = js.native
+  def apply(value: jqueryDotAjaxfileLib.Object, message: java.lang.String): Assertion = js.native
   def apply(value: scala.Double): Assertion = js.native
   def apply(value: scala.Double, message: java.lang.String): Assertion = js.native
   def keys(keys: java.lang.String*): Assertion = js.native

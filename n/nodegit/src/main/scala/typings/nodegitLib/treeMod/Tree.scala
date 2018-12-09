@@ -18,28 +18,28 @@ class Tree () extends js.Object {
     repo: nodegitLib.repositoryMod.Repository,
     nUpdates: scala.Double,
     updates: nodegitLib.treeDashUpdateMod.TreeUpdate
-  ): stdLib.Promise[nodegitLib.oidMod.Oid] = js.native
+  ): js.Promise[nodegitLib.oidMod.Oid] = js.native
   /**
        * Diff two trees
        */
-  def diff(tree: Tree): stdLib.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
+  def diff(tree: Tree): js.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
   /**
        * Diff two trees
        */
-  def diff(tree: Tree, callback: js.Function): stdLib.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
+  def diff(tree: Tree, callback: js.Function): js.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
   /**
        * Diff two trees with options
        */
-  def diffWithOptions(tree: Tree): stdLib.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
+  def diffWithOptions(tree: Tree): js.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
   /**
        * Diff two trees with options
        */
-  def diffWithOptions(tree: Tree, options: js.Object): stdLib.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
+  def diffWithOptions(tree: Tree, options: nodegitLib.objectMod.Object): js.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
   /**
        * Diff two trees with options
        */
-  def diffWithOptions(tree: Tree, options: js.Object, callback: js.Function): stdLib.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
-  def dup(): stdLib.Promise[Tree] = js.native
+  def diffWithOptions(tree: Tree, options: nodegitLib.objectMod.Object, callback: js.Function): js.Promise[js.Array[nodegitLib.diffDashFileMod.DiffFile]] = js.native
+  def dup(): js.Promise[Tree] = js.native
   /**
        * Return an array of the entries in this tree (excluding its children).
        */
@@ -53,7 +53,7 @@ class Tree () extends js.Object {
        * Get an entry by name; if the tree is a directory, the name is the filename.
        */
   def entryByName(name: java.lang.String): nodegitLib.treeDashEntryMod.TreeEntry = js.native
-  def entryByPath(path: java.lang.String): stdLib.Promise[nodegitLib.treeDashEntryMod.TreeEntry] = js.native
+  def entryByPath(path: java.lang.String): js.Promise[nodegitLib.treeDashEntryMod.TreeEntry] = js.native
   def entryCount(): scala.Double = js.native
   def free(): scala.Unit = js.native
   /**
@@ -86,27 +86,27 @@ object Tree extends js.Object {
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String, callback: js.Function): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String, callback: js.Function): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, callback: js.Function): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, callback: js.Function): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.treeMod.Tree): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.treeMod.Tree): js.Promise[nodegitLib.treeMod.Tree] = js.native
   /**
        * Retrieves the tree pointed to by the oid
        */
-  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.treeMod.Tree, callback: js.Function): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
-  def lookupPrefix(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, len: scala.Double): stdLib.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.treeMod.Tree, callback: js.Function): js.Promise[nodegitLib.treeMod.Tree] = js.native
+  def lookupPrefix(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, len: scala.Double): js.Promise[nodegitLib.treeMod.Tree] = js.native
 }
 

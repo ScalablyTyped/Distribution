@@ -10,7 +10,8 @@ trait Global extends js.Object {
   var ArrayBuffer: stdLib.ArrayBufferConstructor = js.native
   @JSName("Array")
   var Array_Original: stdLib.ArrayConstructor = js.native
-  var Boolean: scala.Boolean = js.native
+  @JSName("Boolean")
+  var Boolean_Original: stdLib.BooleanConstructor = js.native
   var Buffer: easyDashXDashHeadersLib.Anon_IsEncoding = js.native
   var DataView: stdLib.DataViewConstructor = js.native
   @JSName("Date")
@@ -21,7 +22,8 @@ trait Global extends js.Object {
   var EvalError_Original: stdLib.EvalErrorConstructor = js.native
   var Float32Array: stdLib.Float32ArrayConstructor = js.native
   var Float64Array: stdLib.Float64ArrayConstructor = js.native
-  var Function: js.Function = js.native
+  @JSName("Function")
+  var Function_Original: stdLib.FunctionConstructor = js.native
   var GLOBAL: Global = js.native
   var Infinity: scala.Double = js.native
   var Int16Array: stdLib.Int16ArrayConstructor = js.native
@@ -34,7 +36,8 @@ trait Global extends js.Object {
   var NaN: scala.Double = js.native
   @JSName("Number")
   var Number_Original: stdLib.NumberConstructor = js.native
-  var Object: js.Object = js.native
+  @JSName("Object")
+  var Object_Original: stdLib.ObjectConstructor = js.native
   var Promise: js.Function = js.native
   @JSName("RangeError")
   var RangeError_Original: stdLib.RangeErrorConstructor = js.native
@@ -43,7 +46,8 @@ trait Global extends js.Object {
   @JSName("RegExp")
   var RegExp_Original: stdLib.RegExpConstructor = js.native
   var Set: stdLib.SetConstructor = js.native
-  var String: java.lang.String = js.native
+  @JSName("String")
+  var String_Original: stdLib.StringConstructor = js.native
   var Symbol: js.Function = js.native
   @JSName("SyntaxError")
   var SyntaxError_Original: stdLib.SyntaxErrorConstructor = js.native
@@ -85,13 +89,18 @@ trait Global extends js.Object {
   def Array[T](items: T*): js.Array[T] = js.native
   @JSName("Array")
   def Array_T[T](arrayLength: scala.Double): js.Array[T] = js.native
+  def Boolean(): scala.Boolean = js.native
+  def Boolean(value: js.Any): scala.Boolean = js.native
   def Date(): java.lang.String = js.native
   def Error(): stdLib.Error = js.native
   def Error(message: java.lang.String): stdLib.Error = js.native
   def EvalError(): stdLib.EvalError = js.native
   def EvalError(message: java.lang.String): stdLib.EvalError = js.native
+  def Function(args: java.lang.String*): js.Function = js.native
   def Number(): scala.Double = js.native
   def Number(value: js.Any): scala.Double = js.native
+  def Object(): js.Any = js.native
+  def Object(value: js.Any): js.Any = js.native
   def RangeError(): stdLib.RangeError = js.native
   def RangeError(message: java.lang.String): stdLib.RangeError = js.native
   def ReferenceError(): stdLib.ReferenceError = js.native
@@ -100,6 +109,8 @@ trait Global extends js.Object {
   def RegExp(pattern: java.lang.String, flags: java.lang.String): stdLib.RegExp = js.native
   def RegExp(pattern: stdLib.RegExp): stdLib.RegExp = js.native
   def RegExp(pattern: stdLib.RegExp, flags: java.lang.String): stdLib.RegExp = js.native
+  def String(): java.lang.String = js.native
+  def String(value: js.Any): java.lang.String = js.native
   def SyntaxError(): stdLib.SyntaxError = js.native
   def SyntaxError(message: java.lang.String): stdLib.SyntaxError = js.native
   def TypeError(): stdLib.TypeError = js.native

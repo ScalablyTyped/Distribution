@@ -39,28 +39,28 @@ trait Umzug
   /**
            * The down method can be used to revert the last executed migration.
            */
-  def down(): stdLib.Promise[js.Array[Migration]] = js.native
+  def down(): js.Promise[js.Array[Migration]] = js.native
   /**
            * The down method can be used to revert the last executed migration.
            */
-  def down(migration: java.lang.String): stdLib.Promise[js.Array[Migration]] = js.native
-  def down(migrations: js.Array[java.lang.String]): stdLib.Promise[js.Array[Migration]] = js.native
-  def down(options: DownToOptions): stdLib.Promise[js.Array[Migration]] = js.native
-  def down(options: UpDownMigrationsOptions): stdLib.Promise[js.Array[Migration]] = js.native
+  def down(migration: java.lang.String): js.Promise[js.Array[Migration]] = js.native
+  def down(migrations: js.Array[java.lang.String]): js.Promise[js.Array[Migration]] = js.native
+  def down(options: DownToOptions): js.Promise[js.Array[Migration]] = js.native
+  def down(options: UpDownMigrationsOptions): js.Promise[js.Array[Migration]] = js.native
   /**
            * The execute method is a general purpose function that runs for
            * every specified migrations the respective function.
            */
-  def execute(): stdLib.Promise[js.Array[Migration]] = js.native
+  def execute(): js.Promise[js.Array[Migration]] = js.native
   /**
            * The execute method is a general purpose function that runs for
            * every specified migrations the respective function.
            */
-  def execute(options: ExecuteOptions): stdLib.Promise[js.Array[Migration]] = js.native
+  def execute(options: ExecuteOptions): js.Promise[js.Array[Migration]] = js.native
   /**
            * You can get a list of already executed migrations like this:
            */
-  def executed(): stdLib.Promise[js.Array[Migration]] = js.native
+  def executed(): js.Promise[js.Array[Migration]] = js.native
   @JSName("on")
   def on_migrated(eventName: umzugLib.umzugLibStrings.migrated): this.type = js.native
   @JSName("on")
@@ -92,7 +92,7 @@ trait Umzug
   /**
            * You can get a list of pending/not yet executed migrations like this:
            */
-  def pending(): stdLib.Promise[js.Array[Migration]] = js.native
+  def pending(): js.Promise[js.Array[Migration]] = js.native
   @JSName("removeListener")
   def removeListener_migrated(eventName: umzugLib.umzugLibStrings.migrated): this.type = js.native
   @JSName("removeListener")
@@ -124,13 +124,13 @@ trait Umzug
   /**
            * The up method can be used to execute all pending migrations.
            */
-  def up(): stdLib.Promise[js.Array[Migration]] = js.native
+  def up(): js.Promise[js.Array[Migration]] = js.native
   /**
            * The up method can be used to execute all pending migrations.
            */
-  def up(migration: java.lang.String): stdLib.Promise[js.Array[Migration]] = js.native
-  def up(migrations: js.Array[java.lang.String]): stdLib.Promise[js.Array[Migration]] = js.native
-  def up(options: UpDownMigrationsOptions): stdLib.Promise[js.Array[Migration]] = js.native
-  def up(options: UpToOptions): stdLib.Promise[js.Array[Migration]] = js.native
+  def up(migration: java.lang.String): js.Promise[js.Array[Migration]] = js.native
+  def up(migrations: js.Array[java.lang.String]): js.Promise[js.Array[Migration]] = js.native
+  def up(options: UpDownMigrationsOptions): js.Promise[js.Array[Migration]] = js.native
+  def up(options: UpToOptions): js.Promise[js.Array[Migration]] = js.native
 }
 

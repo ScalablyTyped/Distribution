@@ -41,7 +41,7 @@ trait ShareStatic extends js.Object {
        * - `dialogTitle`
        *
        */
-  def share(content: ShareContent): stdLib.Promise[js.Object] = js.native
+  def share(content: ShareContent): js.Promise[js.Object] = js.native
   /**
        * Open a dialog to share text content.
        *
@@ -74,6 +74,6 @@ trait ShareStatic extends js.Object {
        * - `dialogTitle`
        *
        */
-  def share(content: ShareContent, options: ShareOptions): stdLib.Promise[js.Object] = js.native
+  def share(content: ShareContent, options: ShareOptions): js.Promise[js.Object] = js.native
 }
 

@@ -16,13 +16,13 @@ object fabricNs extends js.Object {
     	 * @param objects ActiveSelection objects
     	 * @param [options] Options object
     	 */
-    def this(items: js.Array[js.Object]) = this()
+    def this(items: js.Array[fabricLib.fabricDashImplMod.Object]) = this()
     /**
     	 * Constructor
     	 * @param objects ActiveSelection objects
     	 * @param [options] Options object
     	 */
-    def this(items: js.Array[js.Object], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
+    def this(items: js.Array[fabricLib.fabricDashImplMod.Object], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
   }
   
   @js.native
@@ -371,26 +371,42 @@ object fabricNs extends js.Object {
   val isTouchSupported: scala.Boolean = js.native
   val util: fabricLib.fabricDashImplMod.IUtil = js.native
   def createCanvasForNode(width: scala.Double, height: scala.Double): fabricLib.fabricDashImplMod.Canvas = js.native
-  def createSVGFontFacesMarkup(objects: js.Array[js.Object]): java.lang.String = js.native
+  def createSVGFontFacesMarkup(objects: js.Array[fabricLib.fabricDashImplMod.Object]): java.lang.String = js.native
   def createSVGRefElementsMarkup(canvas: fabricLib.fabricDashImplMod.StaticCanvas): java.lang.String = js.native
   def getCSSRules(doc: stdLib.SVGElement): js.Any = js.native
   def getGradientDefs(doc: stdLib.SVGElement): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   def loadSVGFromString(
     string: java.lang.String,
-    callback: js.Function2[/* results */ js.Array[js.Object], /* options */ js.Any, scala.Unit]
+    callback: js.Function2[
+      /* results */ js.Array[fabricLib.fabricDashImplMod.Object], 
+      /* options */ js.Any, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def loadSVGFromString(
     string: java.lang.String,
-    callback: js.Function2[/* results */ js.Array[js.Object], /* options */ js.Any, scala.Unit],
+    callback: js.Function2[
+      /* results */ js.Array[fabricLib.fabricDashImplMod.Object], 
+      /* options */ js.Any, 
+      scala.Unit
+    ],
     reviver: js.Function
   ): scala.Unit = js.native
   def loadSVGFromURL(
     url: java.lang.String,
-    callback: js.Function2[/* results */ js.Array[js.Object], /* options */ js.Any, scala.Unit]
+    callback: js.Function2[
+      /* results */ js.Array[fabricLib.fabricDashImplMod.Object], 
+      /* options */ js.Any, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def loadSVGFromURL(
     url: java.lang.String,
-    callback: js.Function2[/* results */ js.Array[js.Object], /* options */ js.Any, scala.Unit],
+    callback: js.Function2[
+      /* results */ js.Array[fabricLib.fabricDashImplMod.Object], 
+      /* options */ js.Any, 
+      scala.Unit
+    ],
     reviver: js.Function
   ): scala.Unit = js.native
   def log(values: js.Any*): scala.Unit = js.native
@@ -408,11 +424,19 @@ object fabricNs extends js.Object {
   def parsePointsAttribute(points: java.lang.String): js.Array[_] = js.native
   def parseSVGDocument(
     doc: stdLib.SVGElement,
-    callback: js.Function2[/* results */ js.Array[js.Object], /* options */ js.Any, scala.Unit]
+    callback: js.Function2[
+      /* results */ js.Array[fabricLib.fabricDashImplMod.Object], 
+      /* options */ js.Any, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def parseSVGDocument(
     doc: stdLib.SVGElement,
-    callback: js.Function2[/* results */ js.Array[js.Object], /* options */ js.Any, scala.Unit],
+    callback: js.Function2[
+      /* results */ js.Array[fabricLib.fabricDashImplMod.Object], 
+      /* options */ js.Any, 
+      scala.Unit
+    ],
     reviver: js.Function
   ): scala.Unit = js.native
   def parseStyleAttribute(element: stdLib.SVGElement): js.Any = js.native

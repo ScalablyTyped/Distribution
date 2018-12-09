@@ -67,7 +67,7 @@ trait SCWorker
   ): scala.Unit = js.native
   def setAuthEngine(authEngine: scDashAuthLib.scDashAuthMod.SCAuthEngine): scala.Unit = js.native
   def setCodecEngine(codecEngine: js.Any): scala.Unit = js.native
-  def start(): stdLib.Promise[scala.Unit] = js.native
+  def start(): js.Promise[scala.Unit] = js.native
   def startHTTPServer(): scala.Unit = js.native
 }
 

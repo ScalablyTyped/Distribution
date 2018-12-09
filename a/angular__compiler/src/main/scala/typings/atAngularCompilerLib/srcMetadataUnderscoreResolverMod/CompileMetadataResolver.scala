@@ -103,10 +103,10 @@ class CompileMetadataResolver protected () extends js.Object {
   /**
        * Loads the declared directives and pipes of an NgModule.
        */
-  def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: scala.Boolean): stdLib.Promise[_] = js.native
+  def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: scala.Boolean): js.Promise[_] = js.native
   /**
        * Loads the declared directives and pipes of an NgModule.
        */
-  def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: scala.Boolean, throwIfNotFound: scala.Boolean): stdLib.Promise[_] = js.native
+  def loadNgModuleDirectiveAndPipeMetadata(moduleType: js.Any, isSync: scala.Boolean, throwIfNotFound: scala.Boolean): js.Promise[_] = js.native
 }
 

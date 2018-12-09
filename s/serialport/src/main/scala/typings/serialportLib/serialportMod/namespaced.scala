@@ -18,7 +18,7 @@ class namespaced protected () extends SerialPort {
 @js.native
 object namespaced extends js.Object {
   var Binding: serialportLib.serialportMod.SerialPortNs.BaseBinding = js.native
-  def list(): stdLib.Promise[js.Array[serialportLib.serialportMod.SerialPortNs.PortInfo]] = js.native
-  def list(callback: serialportLib.serialportMod.SerialPortNs.ListCallback): stdLib.Promise[js.Array[serialportLib.serialportMod.SerialPortNs.PortInfo]] = js.native
+  def list(): js.Promise[js.Array[serialportLib.serialportMod.SerialPortNs.PortInfo]] = js.native
+  def list(callback: serialportLib.serialportMod.SerialPortNs.ListCallback): js.Promise[js.Array[serialportLib.serialportMod.SerialPortNs.PortInfo]] = js.native
 }
 

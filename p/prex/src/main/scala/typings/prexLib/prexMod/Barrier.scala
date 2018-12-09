@@ -24,7 +24,7 @@ class Barrier protected ()
        */
   def this(participantCount: scala.Double, postPhaseAction: js.Function1[
       /* barrier */ prexLib.outLibBarrierMod.Barrier, 
-      scala.Unit | stdLib.PromiseLike[scala.Unit]
+      scala.Unit | js.Thenable[scala.Unit]
     ]) = this()
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BigInt64Array
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[js.Any] {
+  extends /* index */ ScalablyTyped.runtime.NumberDictionary[BigInt] {
   /** The size in bytes of each element in the array. */
   val BYTES_PER_ELEMENT: scala.Double = js.native
   /** The ArrayBuffer instance referenced by the array. */
@@ -21,7 +21,7 @@ trait BigInt64Array
   /** The offset in bytes of the array. */
   val byteOffset: scala.Double = js.native
   @JSName(ScalablyTyped.runtime.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[_]] = js.native
+  var iterator: js.Function0[IterableIterator[BigInt]] = js.native
   /** The length of the array. */
   val length: scala.Double = js.native
   @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
@@ -47,7 +47,7 @@ trait BigInt64Array
         */
   def copyWithin(target: scala.Double, start: scala.Double, end: scala.Double): this.type = js.native
   /** Yields index, value pairs for every entry in the array. */
-  def entries(): IterableIterator[js.Tuple2[scala.Double, _]] = js.native
+  def entries(): IterableIterator[js.Tuple2[scala.Double, BigInt]] = js.native
   /**
         * Determines whether all the members of an array satisfy the specified test.
         * @param callbackfn A function that accepts up to three arguments. The every method calls
@@ -57,7 +57,7 @@ trait BigInt64Array
         * If thisArg is omitted, undefined is used as the this value.
         */
   def every(
-    callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Boolean]
+    callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Boolean]
   ): scala.Boolean = js.native
   /**
         * Determines whether all the members of an array satisfy the specified test.
@@ -68,7 +68,7 @@ trait BigInt64Array
         * If thisArg is omitted, undefined is used as the this value.
         */
   def every(
-    callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Boolean],
+    callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Boolean],
     thisArg: js.Any
   ): scala.Boolean = js.native
   /**
@@ -79,7 +79,7 @@ trait BigInt64Array
         * @param end index to stop filling the array at. If end is negative, it is treated as
         * length+end.
         */
-  def fill(value: js.Any): this.type = js.native
+  def fill(value: BigInt): this.type = js.native
   /**
         * Returns the this object after filling the section identified by start and end with value
         * @param value value to fill array section with
@@ -88,7 +88,7 @@ trait BigInt64Array
         * @param end index to stop filling the array at. If end is negative, it is treated as
         * length+end.
         */
-  def fill(value: js.Any, start: scala.Double): this.type = js.native
+  def fill(value: BigInt, start: scala.Double): this.type = js.native
   /**
         * Returns the this object after filling the section identified by start and end with value
         * @param value value to fill array section with
@@ -97,7 +97,7 @@ trait BigInt64Array
         * @param end index to stop filling the array at. If end is negative, it is treated as
         * length+end.
         */
-  def fill(value: js.Any, start: scala.Double, end: scala.Double): this.type = js.native
+  def fill(value: BigInt, start: scala.Double, end: scala.Double): this.type = js.native
   /**
         * Returns the elements of an array that meet the condition specified in a callback function.
         * @param callbackfn A function that accepts up to three arguments. The filter method calls
@@ -105,7 +105,7 @@ trait BigInt64Array
         * @param thisArg An object to which the this keyword can refer in the callbackfn function.
         * If thisArg is omitted, undefined is used as the this value.
         */
-  def filter(callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, _]): BigInt64Array = js.native
+  def filter(callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, _]): BigInt64Array = js.native
   /**
         * Returns the elements of an array that meet the condition specified in a callback function.
         * @param callbackfn A function that accepts up to three arguments. The filter method calls
@@ -114,7 +114,7 @@ trait BigInt64Array
         * If thisArg is omitted, undefined is used as the this value.
         */
   def filter(
-    callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, _],
+    callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, _],
     thisArg: js.Any
   ): BigInt64Array = js.native
   /**
@@ -127,8 +127,8 @@ trait BigInt64Array
         * predicate. If it is not provided, undefined is used instead.
         */
   def find(
-    predicate: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Boolean]
-  ): js.UndefOr[_] = js.native
+    predicate: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Boolean]
+  ): js.UndefOr[BigInt] = js.native
   /**
         * Returns the value of the first element in the array where predicate is true, and undefined
         * otherwise.
@@ -139,9 +139,9 @@ trait BigInt64Array
         * predicate. If it is not provided, undefined is used instead.
         */
   def find(
-    predicate: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Boolean],
+    predicate: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Boolean],
     thisArg: js.Any
-  ): js.UndefOr[_] = js.native
+  ): js.UndefOr[BigInt] = js.native
   /**
         * Returns the index of the first element in the array where predicate is true, and -1
         * otherwise.
@@ -152,7 +152,7 @@ trait BigInt64Array
         * predicate. If it is not provided, undefined is used instead.
         */
   def findIndex(
-    predicate: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Boolean]
+    predicate: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Boolean]
   ): scala.Double = js.native
   /**
         * Returns the index of the first element in the array where predicate is true, and -1
@@ -164,7 +164,7 @@ trait BigInt64Array
         * predicate. If it is not provided, undefined is used instead.
         */
   def findIndex(
-    predicate: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Boolean],
+    predicate: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Boolean],
     thisArg: js.Any
   ): scala.Double = js.native
   /**
@@ -175,7 +175,7 @@ trait BigInt64Array
         * If thisArg is omitted, undefined is used as the this value.
         */
   def forEach(
-    callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Unit]
+    callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Unit]
   ): scala.Unit = js.native
   /**
         * Performs the specified action for each element in an array.
@@ -185,7 +185,7 @@ trait BigInt64Array
         * If thisArg is omitted, undefined is used as the this value.
         */
   def forEach(
-    callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Unit],
+    callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Unit],
     thisArg: js.Any
   ): scala.Unit = js.native
   /**
@@ -193,27 +193,27 @@ trait BigInt64Array
         * @param searchElement The element to search for.
         * @param fromIndex The position in this array at which to begin searching for searchElement.
         */
-  def includes(searchElement: js.Any): scala.Boolean = js.native
+  def includes(searchElement: BigInt): scala.Boolean = js.native
   /**
         * Determines whether an array includes a certain element, returning true or false as appropriate.
         * @param searchElement The element to search for.
         * @param fromIndex The position in this array at which to begin searching for searchElement.
         */
-  def includes(searchElement: js.Any, fromIndex: scala.Double): scala.Boolean = js.native
+  def includes(searchElement: BigInt, fromIndex: scala.Double): scala.Boolean = js.native
   /**
         * Returns the index of the first occurrence of a value in an array.
         * @param searchElement The value to locate in the array.
         * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the
         * search starts at index 0.
         */
-  def indexOf(searchElement: js.Any): scala.Double = js.native
+  def indexOf(searchElement: BigInt): scala.Double = js.native
   /**
         * Returns the index of the first occurrence of a value in an array.
         * @param searchElement The value to locate in the array.
         * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the
         * search starts at index 0.
         */
-  def indexOf(searchElement: js.Any, fromIndex: scala.Double): scala.Double = js.native
+  def indexOf(searchElement: BigInt, fromIndex: scala.Double): scala.Double = js.native
   /**
         * Adds all the elements of an array separated by the specified separator string.
         * @param separator A string used to separate one element of an array from the next in the
@@ -234,23 +234,14 @@ trait BigInt64Array
         * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the
         * search starts at index 0.
         */
-  def lastIndexOf(searchElement: js.Any): scala.Double = js.native
+  def lastIndexOf(searchElement: BigInt): scala.Double = js.native
   /**
         * Returns the index of the last occurrence of a value in an array.
         * @param searchElement The value to locate in the array.
         * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the
         * search starts at index 0.
         */
-  def lastIndexOf(searchElement: js.Any, fromIndex: scala.Double): scala.Double = js.native
-  /**
-        * Calls a defined callback function on each element of an array, and returns an array that
-        * contains the results.
-        * @param callbackfn A function that accepts up to three arguments. The map method calls the
-        * callbackfn function one time for each element in the array.
-        * @param thisArg An object to which the this keyword can refer in the callbackfn function.
-        * If thisArg is omitted, undefined is used as the this value.
-        */
-  def map(callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, _]): BigInt64Array = js.native
+  def lastIndexOf(searchElement: BigInt, fromIndex: scala.Double): scala.Double = js.native
   /**
         * Calls a defined callback function on each element of an array, and returns an array that
         * contains the results.
@@ -260,7 +251,18 @@ trait BigInt64Array
         * If thisArg is omitted, undefined is used as the this value.
         */
   def map(
-    callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, _],
+    callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, BigInt]
+  ): BigInt64Array = js.native
+  /**
+        * Calls a defined callback function on each element of an array, and returns an array that
+        * contains the results.
+        * @param callbackfn A function that accepts up to three arguments. The map method calls the
+        * callbackfn function one time for each element in the array.
+        * @param thisArg An object to which the this keyword can refer in the callbackfn function.
+        * If thisArg is omitted, undefined is used as the this value.
+        */
+  def map(
+    callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, BigInt],
     thisArg: js.Any
   ): BigInt64Array = js.native
   /**
@@ -275,13 +277,13 @@ trait BigInt64Array
         */
   def reduce(
     callbackfn: js.Function4[
-      /* previousValue */ js.Any, 
-      /* currentValue */ js.Any, 
+      /* previousValue */ BigInt, 
+      /* currentValue */ BigInt, 
       /* currentIndex */ scala.Double, 
       /* array */ this.type, 
-      _
+      BigInt
     ]
-  ): js.Any = js.native
+  ): BigInt = js.native
   /**
         * Calls the specified callback function for all the elements in an array. The return value of
         * the callback function is the accumulated result, and is provided as an argument in the next
@@ -295,7 +297,7 @@ trait BigInt64Array
   def reduce[U](
     callbackfn: js.Function4[
       /* previousValue */ U, 
-      /* currentValue */ js.Any, 
+      /* currentValue */ BigInt, 
       /* currentIndex */ scala.Double, 
       /* array */ this.type, 
       U
@@ -314,13 +316,13 @@ trait BigInt64Array
         */
   def reduceRight(
     callbackfn: js.Function4[
-      /* previousValue */ js.Any, 
-      /* currentValue */ js.Any, 
+      /* previousValue */ BigInt, 
+      /* currentValue */ BigInt, 
       /* currentIndex */ scala.Double, 
       /* array */ this.type, 
-      _
+      BigInt
     ]
-  ): js.Any = js.native
+  ): BigInt = js.native
   /**
         * Calls the specified callback function for all the elements in an array, in descending order.
         * The return value of the callback function is the accumulated result, and is provided as an
@@ -334,7 +336,7 @@ trait BigInt64Array
   def reduceRight[U](
     callbackfn: js.Function4[
       /* previousValue */ U, 
-      /* currentValue */ js.Any, 
+      /* currentValue */ BigInt, 
       /* currentIndex */ scala.Double, 
       /* array */ this.type, 
       U
@@ -348,13 +350,13 @@ trait BigInt64Array
         * @param array A typed or untyped array of values to set.
         * @param offset The index in the current array at which the values are to be written.
         */
-  def set(array: ArrayLike[_]): scala.Unit = js.native
+  def set(array: ArrayLike[BigInt]): scala.Unit = js.native
   /**
         * Sets a value or an array of values.
         * @param array A typed or untyped array of values to set.
         * @param offset The index in the current array at which the values are to be written.
         */
-  def set(array: ArrayLike[_], offset: scala.Double): scala.Unit = js.native
+  def set(array: ArrayLike[BigInt], offset: scala.Double): scala.Unit = js.native
   /**
         * Returns a section of an array.
         * @param start The beginning of the specified portion of the array.
@@ -382,7 +384,7 @@ trait BigInt64Array
         * If thisArg is omitted, undefined is used as the this value.
         */
   def some(
-    callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Boolean]
+    callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Boolean]
   ): scala.Boolean = js.native
   /**
         * Determines whether the specified callback function returns true for any element of an array.
@@ -393,7 +395,7 @@ trait BigInt64Array
         * If thisArg is omitted, undefined is used as the this value.
         */
   def some(
-    callbackfn: js.Function3[/* value */ js.Any, /* index */ scala.Double, /* array */ this.type, scala.Boolean],
+    callbackfn: js.Function3[/* value */ BigInt, /* index */ scala.Double, /* array */ this.type, scala.Boolean],
     thisArg: js.Any
   ): scala.Boolean = js.native
   /**
@@ -405,7 +407,7 @@ trait BigInt64Array
         * Sorts the array.
         * @param compareFn The function used to determine the order of the elements. If omitted, the elements are sorted in ascending order.
         */
-  def sort(compareFn: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double | _]): this.type = js.native
+  def sort(compareFn: js.Function2[/* a */ BigInt, /* b */ BigInt, scala.Double | BigInt]): this.type = js.native
   /**
         * Gets a new BigInt64Array view of the ArrayBuffer store for this array, referencing the elements
         * at begin, inclusive, up to end, exclusive.
@@ -421,6 +423,6 @@ trait BigInt64Array
         */
   def subarray(begin: scala.Double, end: scala.Double): BigInt64Array = js.native
   /** Yields each value in the array. */
-  def values(): IterableIterator[_] = js.native
+  def values(): IterableIterator[BigInt] = js.native
 }
 

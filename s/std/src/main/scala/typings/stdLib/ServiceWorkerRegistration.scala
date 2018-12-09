@@ -33,8 +33,8 @@ trait ServiceWorkerRegistration extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  def getNotifications(): Promise[js.Array[Notification]] = js.native
-  def getNotifications(filter: GetNotificationOptions): Promise[js.Array[Notification]] = js.native
+  def getNotifications(): js.Promise[js.Array[Notification]] = js.native
+  def getNotifications(filter: GetNotificationOptions): js.Promise[js.Array[Notification]] = js.native
   @JSName("removeEventListener")
   def removeEventListener_updatefound(
     `type`: stdLib.stdLibStrings.updatefound,
@@ -52,10 +52,10 @@ trait ServiceWorkerRegistration extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
-  def showNotification(title: java.lang.String): Promise[scala.Unit] = js.native
-  def showNotification(title: java.lang.String, options: NotificationOptions): Promise[scala.Unit] = js.native
-  def unregister(): Promise[scala.Boolean] = js.native
-  def update(): Promise[scala.Unit] = js.native
+  def showNotification(title: java.lang.String): js.Promise[scala.Unit] = js.native
+  def showNotification(title: java.lang.String, options: NotificationOptions): js.Promise[scala.Unit] = js.native
+  def unregister(): js.Promise[scala.Boolean] = js.native
+  def update(): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("ServiceWorkerRegistration")

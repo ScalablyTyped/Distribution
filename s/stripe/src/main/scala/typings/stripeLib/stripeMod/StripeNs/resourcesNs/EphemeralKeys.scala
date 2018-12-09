@@ -10,11 +10,11 @@ trait EphemeralKeys extends js.Object {
   def create(
     customer: stripeLib.stripeMod.StripeNs.ephemeralKeysNs.ICustomer,
     stripe_version: stripeLib.stripeMod.StripeNs.ephemeralKeysNs.IStripeVersion
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.ephemeralKeysNs.IEphemeralKey] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.ephemeralKeysNs.IEphemeralKey] = js.native
   def create(
     customer: stripeLib.stripeMod.StripeNs.ephemeralKeysNs.ICustomer,
     stripe_version: stripeLib.stripeMod.StripeNs.ephemeralKeysNs.IStripeVersion,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.ephemeralKeysNs.IEphemeralKey]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.ephemeralKeysNs.IEphemeralKey] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.ephemeralKeysNs.IEphemeralKey] = js.native
 }
 

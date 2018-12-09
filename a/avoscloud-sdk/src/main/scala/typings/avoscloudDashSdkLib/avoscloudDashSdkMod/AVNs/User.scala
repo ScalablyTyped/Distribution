@@ -14,11 +14,9 @@ import scala.scalajs.js.annotation._
      * user specific methods, like authentication, signing up, and validation of
      * uniqueness.</p>
      */
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @js.native
-trait User extends js.Object {
+@js.native
+trait User extends Object {
   def authenticated(): scala.Boolean = js.native
-  def fetch[T](): Promise[T] = js.native
   def fetch[T](options: SuccessFailureOptions): Promise[T] = js.native
   def getEmail(): java.lang.String = js.native
   def getSessionToken(): java.lang.String = js.native
@@ -26,7 +24,6 @@ trait User extends js.Object {
   def isCurrent(): scala.Boolean = js.native
   def logIn[T](): Promise[T] = js.native
   def logIn[T](options: SuccessFailureOptions): Promise[T] = js.native
-  def save[T](): Promise[T] = js.native
   def save[T](arg1: js.Any): Promise[T] = js.native
   def save[T](arg1: js.Any, arg2: js.Any): Promise[T] = js.native
   def save[T](arg1: js.Any, arg2: js.Any, arg3: js.Any): Promise[T] = js.native

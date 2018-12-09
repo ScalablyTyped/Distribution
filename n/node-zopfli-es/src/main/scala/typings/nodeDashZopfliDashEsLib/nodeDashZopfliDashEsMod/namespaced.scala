@@ -15,7 +15,7 @@ class namespaced () extends Zopfli {
 @JSImport("node-zopfli-es", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  def compress(input: nodeLib.Buffer, format: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Format): stdLib.Promise[nodeLib.Buffer] = js.native
+  def compress(input: nodeLib.Buffer, format: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Format): js.Promise[nodeLib.Buffer] = js.native
   def compress(
     input: nodeLib.Buffer,
     format: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Format,
@@ -25,7 +25,7 @@ object namespaced extends js.Object {
     input: nodeLib.Buffer,
     format: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Format,
     options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options
-  ): stdLib.Promise[nodeLib.Buffer] = js.native
+  ): js.Promise[nodeLib.Buffer] = js.native
   def compress(
     input: nodeLib.Buffer,
     format: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Format,
@@ -38,12 +38,12 @@ object namespaced extends js.Object {
   def createGzip(options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.Zopfli = js.native
   def createZlib(): nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.Zopfli = js.native
   def createZlib(options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.Zopfli = js.native
-  def deflate(input: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def deflate(input: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def deflate(
     input: nodeLib.Buffer,
     cb: js.Function2[/* err */ nodeLib.Error, /* out */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  def deflate(input: nodeLib.Buffer, options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): stdLib.Promise[nodeLib.Buffer] = js.native
+  def deflate(input: nodeLib.Buffer, options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): js.Promise[nodeLib.Buffer] = js.native
   def deflate(
     input: nodeLib.Buffer,
     options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options,
@@ -51,12 +51,12 @@ object namespaced extends js.Object {
   ): scala.Unit = js.native
   def deflateSync(): nodeLib.Buffer = js.native
   def deflateSync(options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): nodeLib.Buffer = js.native
-  def gzip(input: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def gzip(input: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def gzip(
     input: nodeLib.Buffer,
     cb: js.Function2[/* err */ nodeLib.Error, /* out */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  def gzip(input: nodeLib.Buffer, options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): stdLib.Promise[nodeLib.Buffer] = js.native
+  def gzip(input: nodeLib.Buffer, options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): js.Promise[nodeLib.Buffer] = js.native
   def gzip(
     input: nodeLib.Buffer,
     options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options,
@@ -64,12 +64,12 @@ object namespaced extends js.Object {
   ): scala.Unit = js.native
   def gzipSync(): nodeLib.Buffer = js.native
   def gzipSync(options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): nodeLib.Buffer = js.native
-  def zlib(input: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def zlib(input: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def zlib(
     input: nodeLib.Buffer,
     cb: js.Function2[/* err */ nodeLib.Error, /* out */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  def zlib(input: nodeLib.Buffer, options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): stdLib.Promise[nodeLib.Buffer] = js.native
+  def zlib(input: nodeLib.Buffer, options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options): js.Promise[nodeLib.Buffer] = js.native
   def zlib(
     input: nodeLib.Buffer,
     options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options,

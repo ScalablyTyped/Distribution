@@ -12,6 +12,6 @@ trait Anon_Username extends js.Object {
                * @return Resolved with the GitHub username or rejected if unable to
                *         get the information
                */
-  def username(): stdLib.Promise[java.lang.String]
+  def username(): js.Promise[java.lang.String]
 }
 

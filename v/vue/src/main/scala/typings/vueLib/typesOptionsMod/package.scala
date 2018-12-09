@@ -13,7 +13,7 @@ package object typesOptionsMod {
   type AsyncComponentPromise[Data, Methods, Computed, Props] = js.Function2[
     /* resolve */ js.Function1[/* component */ Component[Data, Methods, Computed, Props], scala.Unit], 
     /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
-    (stdLib.Promise[
+    (js.Promise[
       (Component[
         DefaultData[scala.Nothing], 
         DefaultMethods[scala.Nothing], 
@@ -22,7 +22,7 @@ package object typesOptionsMod {
       ]) | EsModuleComponent
     ]) | scala.Unit
   ]
-  type Component[Data, Methods, Computed, Props] = vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue] | (FunctionalComponentOptions[Props, PropsDefinition[Props]]) | (ComponentOptions[scala.Nothing, Data, Methods, Computed, DefaultProps, DefaultProps])
+  type Component[Data, Methods, Computed, Props] = vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue] | (FunctionalComponentOptions[Props, PropsDefinition[Props]]) | (ComponentOptions[scala.Nothing, Data, Methods, Computed, Props, DefaultProps])
   type DataDef[Data, Props, V] = Data | (js.ThisFunction0[/* this */ stdLib.Readonly[Props] with V, Data])
   type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
   type DefaultProps = stdLib.Record[java.lang.String, js.Any]

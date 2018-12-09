@@ -71,7 +71,7 @@ trait Options extends js.Object {
        *
        * Defaults to `window.location.reload()`
        */
-  var onRefresh: js.UndefOr[js.Function0[stdLib.PromiseLike[scala.Unit]] | js.Function0[scala.Unit]] = js.undefined
+  var onRefresh: js.UndefOr[js.Function0[js.Thenable[scala.Unit]] | js.Function0[scala.Unit]] = js.undefined
   /**
        * This value will be passed as `{ passive: true|false }` to `touchmove`
        * listeners if passive-handlers are supported.

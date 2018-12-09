@@ -16,7 +16,7 @@ trait Leaderboard extends js.Object {
            * @param offset The offset from the set of ordered connected player score entries to fetch from.
            * @returns Resolves with the leaderboard entries that match the query.
            */
-  def getConnectedPlayerEntriesAsync(count: scala.Double, offset: scala.Double): stdLib.Promise[js.Array[LeaderboardEntry]] = js.native
+  def getConnectedPlayerEntriesAsync(count: scala.Double, offset: scala.Double): js.Promise[js.Array[LeaderboardEntry]] = js.native
   /**
            * The ID of the context that the leaderboard is associated with, or null if the leaderboard is not tied to a particular context.
            */
@@ -30,7 +30,7 @@ trait Leaderboard extends js.Object {
            * @throws NETWORK_FAILURE
            * @throws RATE_LIMITED
            */
-  def getEntriesAsync(count: scala.Double, offset: scala.Double): stdLib.Promise[js.Array[LeaderboardEntry]] = js.native
+  def getEntriesAsync(count: scala.Double, offset: scala.Double): js.Promise[js.Array[LeaderboardEntry]] = js.native
   /**
            * Fetches the total number of player entries in the leaderboard.
            *
@@ -38,7 +38,7 @@ trait Leaderboard extends js.Object {
            * @throws NETWORK_FAILURE
            * @throws RATE_LIMITED
            */
-  def getEntryCountAsync(): stdLib.Promise[scala.Double] = js.native
+  def getEntryCountAsync(): js.Promise[scala.Double] = js.native
   /**
            * The name of the leaderboard.
            */
@@ -51,7 +51,7 @@ trait Leaderboard extends js.Object {
            * @throws INVALID_OPERATION
            * @throws RATE_LIMITED
            */
-  def getPlayerEntryAsync(): stdLib.Promise[LeaderboardEntry | scala.Null] = js.native
+  def getPlayerEntryAsync(): js.Promise[LeaderboardEntry | scala.Null] = js.native
   /**
            * Updates the player's score. If the player has an existing score, the old score will only be replaced if the new score is better than it.
            * NOTE: If the leaderboard is associated with a specific context, the game must be in that context to set a score for the player.
@@ -65,7 +65,7 @@ trait Leaderboard extends js.Object {
            * @throws INVALID_OPERATION
            * @throws RATE_LIMITED
            */
-  def setScoreAsync(score: scala.Double): stdLib.Promise[LeaderboardEntry] = js.native
+  def setScoreAsync(score: scala.Double): js.Promise[LeaderboardEntry] = js.native
   /**
            * Updates the player's score. If the player has an existing score, the old score will only be replaced if the new score is better than it.
            * NOTE: If the leaderboard is associated with a specific context, the game must be in that context to set a score for the player.
@@ -79,6 +79,6 @@ trait Leaderboard extends js.Object {
            * @throws INVALID_OPERATION
            * @throws RATE_LIMITED
            */
-  def setScoreAsync(score: scala.Double, extraData: java.lang.String): stdLib.Promise[LeaderboardEntry] = js.native
+  def setScoreAsync(score: scala.Double, extraData: java.lang.String): js.Promise[LeaderboardEntry] = js.native
 }
 

@@ -66,10 +66,10 @@ trait BaseAudioContext extends EventTarget {
   ): ScriptProcessorNode = js.native
   def createStereoPanner(): StereoPannerNode = js.native
   def createWaveShaper(): WaveShaperNode = js.native
-  def decodeAudioData(audioData: ArrayBuffer): Promise[AudioBuffer] = js.native
-  def decodeAudioData(audioData: ArrayBuffer, successCallback: scala.Null, errorCallback: DecodeErrorCallback): Promise[AudioBuffer] = js.native
-  def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback): Promise[AudioBuffer] = js.native
-  def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback, errorCallback: DecodeErrorCallback): Promise[AudioBuffer] = js.native
+  def decodeAudioData(audioData: ArrayBuffer): js.Promise[AudioBuffer] = js.native
+  def decodeAudioData(audioData: ArrayBuffer, successCallback: scala.Null, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native
+  def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback): js.Promise[AudioBuffer] = js.native
+  def decodeAudioData(audioData: ArrayBuffer, successCallback: DecodeSuccessCallback, errorCallback: DecodeErrorCallback): js.Promise[AudioBuffer] = js.native
   @JSName("removeEventListener")
   def removeEventListener_statechange(
     `type`: stdLib.stdLibStrings.statechange,
@@ -87,7 +87,7 @@ trait BaseAudioContext extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
-  def resume(): Promise[scala.Unit] = js.native
+  def resume(): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("BaseAudioContext")

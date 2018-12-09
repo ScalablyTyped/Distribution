@@ -88,7 +88,7 @@ object IntentLauncherAndroidNs extends js.Object {
   val ACTION_ZEN_MODE_PRIORITY_SETTINGS: expoLib.expoLibStrings.androidDOTsettingsDOTZEN_MODE_PRIORITY_SETTINGS = js.native
   val ACTION_ZEN_MODE_SCHEDULE_RULE_SETTINGS: expoLib.expoLibStrings.androidDOTsettingsDOTZEN_MODE_SCHEDULE_RULE_SETTINGS = js.native
   val ACTION_ZEN_MODE_SETTINGS: expoLib.expoLibStrings.androidDOTsettingsDOTZEN_MODE_SETTINGS = js.native
-  def startActivityAsync(activity: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
-  def startActivityAsync(activity: java.lang.String, data: expoLib.expoMod.HashMap): stdLib.Promise[scala.Boolean] = js.native
+  def startActivityAsync(activity: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def startActivityAsync(activity: java.lang.String, data: expoLib.expoMod.HashMap): js.Promise[scala.Boolean] = js.native
 }
 

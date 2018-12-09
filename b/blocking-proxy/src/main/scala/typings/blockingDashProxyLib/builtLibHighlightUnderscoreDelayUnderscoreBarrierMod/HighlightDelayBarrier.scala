@@ -15,7 +15,7 @@ class HighlightDelayBarrier protected ()
   /* private */ def highlightData(top: js.Any, left: js.Any, width: js.Any, height: js.Any): js.Any = js.native
   /* private */ def isHighlightCommand(command: js.Any): js.Any = js.native
   /* CompleteClass */
-  override def onCommand(command: blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.WebDriverCommand): stdLib.Promise[scala.Unit] = js.native
+  override def onCommand(command: blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.WebDriverCommand): js.Promise[scala.Unit] = js.native
   /* private */ def removeHighlightData(): js.Any = js.native
   /* private */ def sleep(delay: js.Any): js.Any = js.native
 }

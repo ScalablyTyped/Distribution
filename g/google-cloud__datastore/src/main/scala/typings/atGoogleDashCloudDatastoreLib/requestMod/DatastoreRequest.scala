@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@google-cloud/datastore/request", "DatastoreRequest")
 @js.native
 abstract class DatastoreRequest () extends js.Object {
-  def allocateIds(incompleteKey: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey, n: scala.Double): stdLib.Promise[AllocateIdsResult] = js.native
+  def allocateIds(incompleteKey: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey, n: scala.Double): js.Promise[AllocateIdsResult] = js.native
   def allocateIds(
     incompleteKey: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey,
     n: scala.Double,
@@ -26,25 +26,25 @@ abstract class DatastoreRequest () extends js.Object {
     keys: js.Array[atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey],
     options: atGoogleDashCloudDatastoreLib.queryMod.QueryOptions
   ): nodeLib.NodeJSNs.ReadableStream = js.native
-  def delete(keyOrKeys: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey): stdLib.Promise[CommitResult] | scala.Unit = js.native
+  def delete(keyOrKeys: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey): js.Promise[CommitResult] | scala.Unit = js.native
   def delete(keyOrKeys: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey, callback: CommitCallback): scala.Unit = js.native
-  def delete(keyOrKeys: js.Array[atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey]): stdLib.Promise[CommitResult] | scala.Unit = js.native
+  def delete(keyOrKeys: js.Array[atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey]): js.Promise[CommitResult] | scala.Unit = js.native
   def delete(
     keyOrKeys: js.Array[atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey],
     callback: CommitCallback
   ): scala.Unit = js.native
-  def get(key: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey): stdLib.Promise[js.Array[js.UndefOr[js.Object]]] = js.native
+  def get(key: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey): js.Promise[js.Array[js.UndefOr[js.Object]]] = js.native
   def get(key: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey, callback: GetCallback[js.Object]): scala.Unit = js.native
   def get(
     key: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey,
     options: atGoogleDashCloudDatastoreLib.queryMod.QueryOptions
-  ): stdLib.Promise[js.Array[js.UndefOr[js.Object]]] = js.native
+  ): js.Promise[js.Array[js.UndefOr[js.Object]]] = js.native
   def get(
     key: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey,
     options: atGoogleDashCloudDatastoreLib.queryMod.QueryOptions,
     callback: GetCallback[js.Object]
   ): scala.Unit = js.native
-  def get(keys: js.Array[atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey]): stdLib.Promise[js.Array[js.Array[js.Object]]] = js.native
+  def get(keys: js.Array[atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey]): js.Promise[js.Array[js.Array[js.Object]]] = js.native
   def get(
     keys: js.Array[atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey],
     callback: GetCallback[js.Array[js.Object]]
@@ -52,15 +52,15 @@ abstract class DatastoreRequest () extends js.Object {
   def get(
     keys: js.Array[atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey],
     options: atGoogleDashCloudDatastoreLib.queryMod.QueryOptions
-  ): stdLib.Promise[js.Array[js.Array[js.Object]]] = js.native
+  ): js.Promise[js.Array[js.Array[js.Object]]] = js.native
   def get(
     keys: js.Array[atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey],
     options: atGoogleDashCloudDatastoreLib.queryMod.QueryOptions,
     callback: GetCallback[js.Array[js.Object]]
   ): scala.Unit = js.native
-  def insert(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object]): stdLib.Promise[CommitResult] = js.native
+  def insert(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object]): js.Promise[CommitResult] = js.native
   def insert(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object], callback: CommitCallback): scala.Unit = js.native
-  def runQuery(query: atGoogleDashCloudDatastoreLib.queryMod.Query): stdLib.Promise[atGoogleDashCloudDatastoreLib.queryMod.QueryResult] = js.native
+  def runQuery(query: atGoogleDashCloudDatastoreLib.queryMod.Query): js.Promise[atGoogleDashCloudDatastoreLib.queryMod.QueryResult] = js.native
   def runQuery(
     query: atGoogleDashCloudDatastoreLib.queryMod.Query,
     callback: atGoogleDashCloudDatastoreLib.queryMod.QueryCallback
@@ -68,7 +68,7 @@ abstract class DatastoreRequest () extends js.Object {
   def runQuery(
     query: atGoogleDashCloudDatastoreLib.queryMod.Query,
     options: atGoogleDashCloudDatastoreLib.queryMod.QueryOptions
-  ): stdLib.Promise[atGoogleDashCloudDatastoreLib.queryMod.QueryResult] = js.native
+  ): js.Promise[atGoogleDashCloudDatastoreLib.queryMod.QueryResult] = js.native
   def runQuery(
     query: atGoogleDashCloudDatastoreLib.queryMod.Query,
     options: atGoogleDashCloudDatastoreLib.queryMod.QueryOptions,
@@ -79,11 +79,11 @@ abstract class DatastoreRequest () extends js.Object {
     query: atGoogleDashCloudDatastoreLib.queryMod.Query,
     options: atGoogleDashCloudDatastoreLib.queryMod.QueryOptions
   ): nodeLib.NodeJSNs.ReadableStream = js.native
-  def save(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object]): stdLib.Promise[CommitResult] | scala.Unit = js.native
+  def save(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object]): js.Promise[CommitResult] | scala.Unit = js.native
   def save(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object], callback: CommitCallback): scala.Unit = js.native
-  def update(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object]): stdLib.Promise[CommitResult] = js.native
+  def update(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object]): js.Promise[CommitResult] = js.native
   def update(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object], callback: CommitCallback): scala.Unit = js.native
-  def upsert(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object]): stdLib.Promise[CommitResult] = js.native
+  def upsert(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object]): js.Promise[CommitResult] = js.native
   def upsert(entities: atGoogleDashCloudDatastoreLib.entityMod.OneOrMany[js.Object], callback: CommitCallback): scala.Unit = js.native
 }
 

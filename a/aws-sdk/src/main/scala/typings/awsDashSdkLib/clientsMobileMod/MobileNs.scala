@@ -103,7 +103,7 @@ object MobileNs extends js.Object {
     /**
          *  If set to true, causes AWS Mobile Hub to synchronize information from other services, e.g., update state of AWS CloudFormation stacks in the AWS Mobile Hub project. 
          */
-    var syncFromResources: js.UndefOr[scala.Boolean] = js.undefined
+    var syncFromResources: js.UndefOr[Boolean] = js.undefined
   }
   
   

@@ -117,7 +117,7 @@ object Role extends js.Object {
       /* role */ java.lang.String, 
       /* ctx */ loopbackLib.loopbackMod.lNs.Context, 
       /* callback */ js.UndefOr[js.Function2[/* err */ nodeLib.Error, /* resolved */ scala.Boolean, scala.Unit]], 
-      stdLib.Promise[scala.Boolean] | scala.Unit
+      js.Promise[scala.Boolean] | scala.Unit
     ]
   ): scala.Unit = js.native
 }

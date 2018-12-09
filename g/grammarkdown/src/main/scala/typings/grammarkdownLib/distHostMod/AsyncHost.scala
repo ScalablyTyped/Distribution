@@ -11,16 +11,16 @@ class AsyncHost () extends HostBase {
   def this(hasReadFileWriteFileBaseOptions: AsyncHostOptions) = this()
   var readFileCallback: js.UndefOr[js.Any] = js.native
   var writeFileCallback: js.UndefOr[js.Any] = js.native
-  def getSourceFile(file: java.lang.String): stdLib.Promise[js.UndefOr[grammarkdownLib.distNodesMod.SourceFile]] = js.native
-  def getSourceFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): stdLib.Promise[js.UndefOr[grammarkdownLib.distNodesMod.SourceFile]] = js.native
-  def readFile(file: java.lang.String): stdLib.Promise[js.UndefOr[java.lang.String]] = js.native
-  def readFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): stdLib.Promise[js.UndefOr[java.lang.String]] = js.native
-  def writeFile(file: java.lang.String, text: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def getSourceFile(file: java.lang.String): js.Promise[js.UndefOr[grammarkdownLib.distNodesMod.SourceFile]] = js.native
+  def getSourceFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): js.Promise[js.UndefOr[grammarkdownLib.distNodesMod.SourceFile]] = js.native
+  def readFile(file: java.lang.String): js.Promise[js.UndefOr[java.lang.String]] = js.native
+  def readFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): js.Promise[js.UndefOr[java.lang.String]] = js.native
+  def writeFile(file: java.lang.String, text: java.lang.String): js.Promise[scala.Unit] = js.native
   def writeFile(
     file: java.lang.String,
     text: java.lang.String,
     cancellationToken: prexLib.prexMod.CancellationToken
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 
 @JSImport("grammarkdown/dist/host", "AsyncHost")

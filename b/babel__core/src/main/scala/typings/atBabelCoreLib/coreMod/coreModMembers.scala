@@ -28,8 +28,8 @@ object coreModMembers extends js.Object {
   def parse(code: java.lang.String, options: TransformOptions): ParseResult | scala.Null = js.native
   def parse(code: java.lang.String, options: TransformOptions, callback: FileParseCallback): scala.Unit = js.native
   def parse(code: java.lang.String, options: js.UndefOr[scala.Nothing], callback: FileParseCallback): scala.Unit = js.native
-  def parseAsync(code: java.lang.String): stdLib.Promise[ParseResult | scala.Null] = js.native
-  def parseAsync(code: java.lang.String, options: TransformOptions): stdLib.Promise[ParseResult | scala.Null] = js.native
+  def parseAsync(code: java.lang.String): js.Promise[ParseResult | scala.Null] = js.native
+  def parseAsync(code: java.lang.String, options: TransformOptions): js.Promise[ParseResult | scala.Null] = js.native
   def parseSync(code: java.lang.String): ParseResult | scala.Null = js.native
   def parseSync(code: java.lang.String, options: TransformOptions): ParseResult | scala.Null = js.native
   def transform(code: java.lang.String): BabelFileResult | scala.Null = js.native
@@ -37,13 +37,13 @@ object coreModMembers extends js.Object {
   def transform(code: java.lang.String, opts: TransformOptions): BabelFileResult | scala.Null = js.native
   def transform(code: java.lang.String, opts: TransformOptions, callback: FileResultCallback): scala.Unit = js.native
   def transform(code: java.lang.String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): scala.Unit = js.native
-  def transformAsync(code: java.lang.String): stdLib.Promise[BabelFileResult | scala.Null] = js.native
-  def transformAsync(code: java.lang.String, opts: TransformOptions): stdLib.Promise[BabelFileResult | scala.Null] = js.native
+  def transformAsync(code: java.lang.String): js.Promise[BabelFileResult | scala.Null] = js.native
+  def transformAsync(code: java.lang.String, opts: TransformOptions): js.Promise[BabelFileResult | scala.Null] = js.native
   def transformFile(filename: java.lang.String, callback: FileResultCallback): scala.Unit = js.native
   def transformFile(filename: java.lang.String, opts: TransformOptions, callback: FileResultCallback): scala.Unit = js.native
   def transformFile(filename: java.lang.String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): scala.Unit = js.native
-  def transformFileAsync(filename: java.lang.String): stdLib.Promise[BabelFileResult | scala.Null] = js.native
-  def transformFileAsync(filename: java.lang.String, opts: TransformOptions): stdLib.Promise[BabelFileResult | scala.Null] = js.native
+  def transformFileAsync(filename: java.lang.String): js.Promise[BabelFileResult | scala.Null] = js.native
+  def transformFileAsync(filename: java.lang.String, opts: TransformOptions): js.Promise[BabelFileResult | scala.Null] = js.native
   def transformFileSync(filename: java.lang.String): BabelFileResult | scala.Null = js.native
   def transformFileSync(filename: java.lang.String, opts: TransformOptions): BabelFileResult | scala.Null = js.native
   def transformFromAst(ast: Node, code: java.lang.String, callback: FileResultCallback): scala.Unit = js.native
@@ -57,9 +57,9 @@ object coreModMembers extends js.Object {
     opts: js.UndefOr[scala.Nothing],
     callback: FileResultCallback
   ): scala.Unit = js.native
-  def transformFromAstAsync(ast: Node): stdLib.Promise[BabelFileResult | scala.Null] = js.native
-  def transformFromAstAsync(ast: Node, code: java.lang.String): stdLib.Promise[BabelFileResult | scala.Null] = js.native
-  def transformFromAstAsync(ast: Node, code: java.lang.String, opts: TransformOptions): stdLib.Promise[BabelFileResult | scala.Null] = js.native
+  def transformFromAstAsync(ast: Node): js.Promise[BabelFileResult | scala.Null] = js.native
+  def transformFromAstAsync(ast: Node, code: java.lang.String): js.Promise[BabelFileResult | scala.Null] = js.native
+  def transformFromAstAsync(ast: Node, code: java.lang.String, opts: TransformOptions): js.Promise[BabelFileResult | scala.Null] = js.native
   def transformFromAstSync(ast: Node): BabelFileResult | scala.Null = js.native
   def transformFromAstSync(ast: Node, code: java.lang.String): BabelFileResult | scala.Null = js.native
   def transformFromAstSync(ast: Node, code: java.lang.String, opts: TransformOptions): BabelFileResult | scala.Null = js.native

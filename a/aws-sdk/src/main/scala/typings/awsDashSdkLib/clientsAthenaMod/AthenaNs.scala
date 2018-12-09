@@ -61,19 +61,19 @@ object AthenaNs extends js.Object {
     /**
          * Indicates whether values in the column are case-sensitive.
          */
-    var CaseSensitive: js.UndefOr[scala.Boolean] = js.undefined
+    var CaseSensitive: js.UndefOr[Boolean] = js.undefined
     /**
          * The catalog to which the query results belong.
          */
-    var CatalogName: js.UndefOr[java.lang.String] = js.undefined
+    var CatalogName: js.UndefOr[String] = js.undefined
     /**
          * A column label.
          */
-    var Label: js.UndefOr[java.lang.String] = js.undefined
+    var Label: js.UndefOr[String] = js.undefined
     /**
          * The name of the column.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * Indicates the column's nullable status.
          */
@@ -89,15 +89,15 @@ object AthenaNs extends js.Object {
     /**
          * The schema name (database name) to which the query results belong.
          */
-    var SchemaName: js.UndefOr[java.lang.String] = js.undefined
+    var SchemaName: js.UndefOr[String] = js.undefined
     /**
          * The table name for the query results.
          */
-    var TableName: js.UndefOr[java.lang.String] = js.undefined
+    var TableName: js.UndefOr[String] = js.undefined
     /**
          * The data type of the column.
          */
-    var Type: java.lang.String
+    var Type: String
   }
   
   
@@ -160,7 +160,7 @@ object AthenaNs extends js.Object {
     /**
          * For SSE-KMS and CSE-KMS, this is the KMS key ARN or ID.
          */
-    var KmsKey: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKey: js.UndefOr[String] = js.undefined
   }
   
   
@@ -364,7 +364,7 @@ object AthenaNs extends js.Object {
     /**
          * Further detail about the status of the query.
          */
-    var StateChangeReason: js.UndefOr[java.lang.String] = js.undefined
+    var StateChangeReason: js.UndefOr[String] = js.undefined
     /**
          * The date and time that the query was submitted.
          */
@@ -380,7 +380,7 @@ object AthenaNs extends js.Object {
     /**
          * The location in Amazon S3 where your query results are stored, such as s3://path/to/query/bucket/. For more information, see Queries and Query Result Files.  
          */
-    var OutputLocation: java.lang.String
+    var OutputLocation: String
   }
   
   

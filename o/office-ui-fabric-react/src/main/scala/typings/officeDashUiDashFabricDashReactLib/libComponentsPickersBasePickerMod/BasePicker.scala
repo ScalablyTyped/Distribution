@@ -17,7 +17,7 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   ] = js.native
   var _ariaMap: IPickerAriaIds = js.native
   var _id: js.Any = js.native
-  var currentPromise: js.UndefOr[stdLib.PromiseLike[_]] = js.native
+  var currentPromise: js.UndefOr[js.Thenable[_]] = js.native
   @JSName("focusZone")
   var focusZone_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrent = js.native
   @JSName("input")
@@ -133,8 +133,8 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   /* protected */ def updateSuggestions(suggestions: js.Array[_]): scala.Unit = js.native
   /* protected */ def updateSuggestionsList(suggestions: js.Array[T]): scala.Unit = js.native
   /* protected */ def updateSuggestionsList(suggestions: js.Array[T], updatedValue: java.lang.String): scala.Unit = js.native
-  /* protected */ def updateSuggestionsList(suggestions: stdLib.PromiseLike[js.Array[T]]): scala.Unit = js.native
-  /* protected */ def updateSuggestionsList(suggestions: stdLib.PromiseLike[js.Array[T]], updatedValue: java.lang.String): scala.Unit = js.native
+  /* protected */ def updateSuggestionsList(suggestions: js.Thenable[js.Array[T]]): scala.Unit = js.native
+  /* protected */ def updateSuggestionsList(suggestions: js.Thenable[js.Array[T]], updatedValue: java.lang.String): scala.Unit = js.native
   /* protected */ def updateValue(updatedValue: java.lang.String): scala.Unit = js.native
 }
 

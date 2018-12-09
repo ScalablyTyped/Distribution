@@ -20,6 +20,6 @@ class Executor protected ()
     command: ionicLib.definitionsMod.ICommand,
     cmdargs: js.Array[java.lang.String],
     hasLocationEnvExecutor: ionicLib.definitionsMod.CommandInstanceInfo
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

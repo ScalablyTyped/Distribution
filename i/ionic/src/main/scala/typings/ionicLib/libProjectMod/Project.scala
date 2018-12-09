@@ -15,6 +15,6 @@ abstract class Project protected ()
   val e: ProjectDeps = js.native
   var originalConfigFile: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
   val packageJsonPath: java.lang.String = js.native
-  /* protected */ def getIntegrations(): stdLib.Promise[js.Array[ionicLib.definitionsMod.IIntegration]] = js.native
+  /* protected */ def getIntegrations(): js.Promise[js.Array[ionicLib.definitionsMod.IIntegration]] = js.native
 }
 

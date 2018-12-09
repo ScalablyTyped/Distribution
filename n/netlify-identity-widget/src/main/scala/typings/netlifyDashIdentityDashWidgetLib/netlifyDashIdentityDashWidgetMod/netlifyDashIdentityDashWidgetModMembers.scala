@@ -12,7 +12,7 @@ object netlifyDashIdentityDashWidgetModMembers extends js.Object {
   def currentUser(): User | scala.Null = js.native
   def init(): scala.Unit = js.native
   def init(opts: InitOptions): scala.Unit = js.native
-  def logout(): js.UndefOr[stdLib.Promise[scala.Unit]] = js.native
+  def logout(): js.UndefOr[js.Promise[scala.Unit]] = js.native
   @JSName("on")
   def on_close(
     event: netlifyDashIdentityDashWidgetLib.netlifyDashIdentityDashWidgetLibStrings.close,

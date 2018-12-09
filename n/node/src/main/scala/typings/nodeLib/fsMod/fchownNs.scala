@@ -13,6 +13,6 @@ object fchownNs extends js.Object {
            * Asynchronous fchown(2) - Change ownership of a file.
            * @param fd A file descriptor.
            */
-  def `__promisify__`(fd: scala.Double, uid: scala.Double, gid: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def `__promisify__`(fd: scala.Double, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

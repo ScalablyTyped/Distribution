@@ -13,6 +13,6 @@ trait Anon_Options extends js.Object {
   var patch: vueDashResourceLib.vuejsNs.$http = js.native
   var post: vueDashResourceLib.vuejsNs.$http = js.native
   var put: vueDashResourceLib.vuejsNs.$http = js.native
-  def apply(options: vueDashResourceLib.vuejsNs.HttpOptions): stdLib.PromiseLike[vueDashResourceLib.vuejsNs.HttpResponse] = js.native
+  def apply(options: vueDashResourceLib.vuejsNs.HttpOptions): js.Thenable[vueDashResourceLib.vuejsNs.HttpResponse] = js.native
 }
 

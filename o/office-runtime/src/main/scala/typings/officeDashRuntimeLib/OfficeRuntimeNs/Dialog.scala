@@ -15,6 +15,6 @@ trait Dialog extends js.Object {
            * @beta
            * Method that closes a dialog box.
            */
-  def close(): stdLib.Promise[scala.Unit]
+  def close(): js.Promise[scala.Unit]
 }
 

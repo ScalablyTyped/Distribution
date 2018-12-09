@@ -122,7 +122,7 @@ object rpcNs extends js.Object {
   type ServiceMethod[TReq /* <: protobufjsLib.protobufjsMod.Message[TReq] */, TRes /* <: protobufjsLib.protobufjsMod.Message[TRes] */] = js.Function2[
     /* request */ TReq | protobufjsLib.Properties[TReq], 
     /* callback */ js.UndefOr[ServiceMethodCallback[TRes]], 
-    stdLib.Promise[protobufjsLib.protobufjsMod.Message[TRes]]
+    js.Promise[protobufjsLib.protobufjsMod.Message[TRes]]
   ]
   /**
        * A service method callback as used by {@link rpc.ServiceMethod|ServiceMethod}.

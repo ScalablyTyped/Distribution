@@ -12,10 +12,10 @@ trait Account extends js.Object {
   def encrypt(password: java.lang.String): PrivateKey = js.native
   def encrypt(password: java.lang.String, options: js.Any): PrivateKey = js.native
   def sign(data: java.lang.String): MessageSignature = js.native
-  def signTransaction(tx: web3Lib.ethTypesMod.Tx): stdLib.Promise[TxSignature] = js.native
+  def signTransaction(tx: web3Lib.ethTypesMod.Tx): js.Promise[TxSignature] = js.native
   def signTransaction(
     tx: web3Lib.ethTypesMod.Tx,
     cb: js.Function2[/* err */ stdLib.Error, /* result */ TxSignature, scala.Unit]
-  ): stdLib.Promise[TxSignature] = js.native
+  ): js.Promise[TxSignature] = js.native
 }
 

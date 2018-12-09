@@ -10,10 +10,10 @@ trait Anon_NeedLoadMoreDataTop extends js.Object {
   /**
                    * This event fires when scroll reaches bottom percentage of grid and needs to load data
                    */
-  var needLoadMoreData: js.Function
+  var needLoadMoreData: angularLib.angularMod.Global.Function
   /**
                    * This event fires when scroll reaches top percentage of grid and needs to load data
                    */
-  var needLoadMoreDataTop: js.Function
+  var needLoadMoreDataTop: angularLib.angularMod.Global.Function
 }
 

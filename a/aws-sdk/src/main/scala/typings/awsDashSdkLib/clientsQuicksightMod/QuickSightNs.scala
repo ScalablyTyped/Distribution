@@ -45,7 +45,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -81,7 +81,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -113,7 +113,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -141,7 +141,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -169,7 +169,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -201,7 +201,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -229,7 +229,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -249,7 +249,7 @@ object QuickSightNs extends js.Object {
     /**
          * The ID for the dashboard, also added to IAM policy
          */
-    var DashboardId: java.lang.String
+    var DashboardId: String
     /**
          * The authentication method the user uses to sign in (IAM or QUICKSIGHT).
          */
@@ -277,7 +277,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -333,7 +333,7 @@ object QuickSightNs extends js.Object {
     /**
          * A pagination token that can be used in a subsequent request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -345,11 +345,11 @@ object QuickSightNs extends js.Object {
     /**
          * A pagination token that can be used in a subsequent request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -373,7 +373,7 @@ object QuickSightNs extends js.Object {
     /**
          * A pagination token that can be used in a subsequent request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -385,11 +385,11 @@ object QuickSightNs extends js.Object {
     /**
          * A pagination token that can be used in a subsequent request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -413,7 +413,7 @@ object QuickSightNs extends js.Object {
     /**
          * A pagination token that can be used in a subsequent request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the user that you want to list groups for.
          */
@@ -429,11 +429,11 @@ object QuickSightNs extends js.Object {
     /**
          * A pagination token that can be used in a subsequent request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -457,7 +457,7 @@ object QuickSightNs extends js.Object {
     /**
          * A pagination token that can be used in a subsequent request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -465,11 +465,11 @@ object QuickSightNs extends js.Object {
     /**
          * A pagination token that can be used in a subsequent request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -489,11 +489,11 @@ object QuickSightNs extends js.Object {
     /**
          * The email address of the user that you want to register.
          */
-    var Email: java.lang.String
+    var Email: String
     /**
          * The ARN of the IAM user or role that you are registering with Amazon QuickSight. 
          */
-    var IamArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamArn: js.UndefOr[String] = js.undefined
     /**
          * Amazon QuickSight supports several ways of managing the identity of users. This parameter accepts two values:    IAM: A user whose identity maps to an existing IAM user or role.     QUICKSIGHT: A user whose identity is owned and managed internally by Amazon QuickSight.   
          */
@@ -505,7 +505,7 @@ object QuickSightNs extends js.Object {
     /**
          * The name of the session with the assumed IAM role. By using this parameter, you can register multiple users with the same IAM role, provided that each has a different session name. For more information on assuming IAM roles, see  assume-role  in the AWS CLI Reference. 
          */
-    var SessionName: js.UndefOr[java.lang.String] = js.undefined
+    var SessionName: js.UndefOr[String] = js.undefined
     /**
          * The Amazon QuickSight user name that you want to create for the user you are registering.
          */
@@ -521,7 +521,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -1003,7 +1003,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -1019,7 +1019,7 @@ object QuickSightNs extends js.Object {
     /**
          * The email address of the user that you want to update.
          */
-    var Email: java.lang.String
+    var Email: String
     /**
          * The namespace. Currently, you should set this to default.
          */
@@ -1039,7 +1039,7 @@ object QuickSightNs extends js.Object {
     /**
          * The AWS request ID for this operation.
          */
-    var RequestId: js.UndefOr[java.lang.String] = js.undefined
+    var RequestId: js.UndefOr[String] = js.undefined
     /**
          * The http status of the request.
          */
@@ -1055,7 +1055,7 @@ object QuickSightNs extends js.Object {
     /**
          * Active status of user. When you create an Amazon QuickSight user that’s not an IAM user or an AD user, that user is inactive until they sign in and provide a password
          */
-    var Active: js.UndefOr[scala.Boolean] = js.undefined
+    var Active: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for the user.
          */
@@ -1063,7 +1063,7 @@ object QuickSightNs extends js.Object {
     /**
          * The user's email address.
          */
-    var Email: js.UndefOr[java.lang.String] = js.undefined
+    var Email: js.UndefOr[String] = js.undefined
     /**
          * The type of identity authentication used by the user.
          */

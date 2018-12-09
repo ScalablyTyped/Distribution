@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 // Query API
 
 trait ExecutableQuery[T] extends js.Object {
-  def execute(): stdLib.Promise[js.Array[T]]
+  def execute(): js.Promise[js.Array[T]]
 }
 

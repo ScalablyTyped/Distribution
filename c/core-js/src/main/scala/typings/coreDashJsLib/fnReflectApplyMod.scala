@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object fnReflectApplyMod
   extends ScalablyTyped.runtime.TopLevel[
       js.Function3[
-        /* target */ js.Function, 
+        /* target */ Function, 
         /* thisArgument */ js.Any, 
         /* argumentsList */ stdLib.ArrayLike[js.Any], 
         js.Any

@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object timerMod {
-  type Action = js.Function0[stdLib.Promise[scala.Unit]]
+  type Action = js.Function0[js.Promise[scala.Unit]]
 }

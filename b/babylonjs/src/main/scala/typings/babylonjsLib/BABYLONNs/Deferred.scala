@@ -16,7 +16,7 @@ class Deferred[T] () extends js.Object {
   /**
            * The promise associated with this deferred object.
            */
-  val promise: stdLib.Promise[T] = js.native
+  val promise: js.Promise[T] = js.native
   /**
            * The reject method of the promise associated with this deferred object.
            */
@@ -36,6 +36,6 @@ class Deferred[T] () extends js.Object {
   /**
            * The resolve method of the promise associated with this deferred object.
            */
-  def resolve(value: stdLib.PromiseLike[T]): scala.Unit = js.native
+  def resolve(value: js.Thenable[T]): scala.Unit = js.native
 }
 

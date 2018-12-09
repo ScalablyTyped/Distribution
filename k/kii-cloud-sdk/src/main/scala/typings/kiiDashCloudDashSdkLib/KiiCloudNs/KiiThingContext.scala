@@ -124,7 +124,7 @@ class KiiThingContext () extends js.Object {
            *         }
            *     );
            */
-  def listTopics(): stdLib.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
+  def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
   /**
            * Gets a list of topics in app scope
            *
@@ -191,7 +191,7 @@ class KiiThingContext () extends js.Object {
            *         }
            *     );
            */
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString): stdLib.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
   /**
            * Gets a list of topics in app scope
            *
@@ -258,7 +258,7 @@ class KiiThingContext () extends js.Object {
            *         }
            *     );
            */
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString, paginationKey: java.lang.String): stdLib.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString, paginationKey: java.lang.String): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
   /**
            * Creates a reference to an object operated by thing using object`s URI.
            *

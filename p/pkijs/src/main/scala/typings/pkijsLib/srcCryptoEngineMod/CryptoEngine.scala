@@ -27,7 +27,7 @@ trait CryptoEngine
     algorithm: stdLib.Algorithm,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.BufferSource | stdLib.JsonWebKey] = js.native
+  ): js.Thenable[stdLib.BufferSource | stdLib.JsonWebKey] = js.native
   /**
            * Convert WebCrypto keys between different export formats
            * @param {string} inputFormat
@@ -45,51 +45,51 @@ trait CryptoEngine
     algorithm: stdLib.Algorithm,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.BufferSource | stdLib.JsonWebKey] = js.native
-  def digest(algorithm: stdLib.AlgorithmIdentifier, data: stdLib.BufferSource): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  ): js.Thenable[stdLib.BufferSource | stdLib.JsonWebKey] = js.native
+  def digest(algorithm: stdLib.AlgorithmIdentifier, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
   @JSName("exportKey")
-  def exportKey_jwk(format: pkijsLib.pkijsLibStrings.jwk, key: stdLib.CryptoKey): stdLib.PromiseLike[stdLib.JsonWebKey] = js.native
+  def exportKey_jwk(format: pkijsLib.pkijsLibStrings.jwk, key: stdLib.CryptoKey): js.Thenable[stdLib.JsonWebKey] = js.native
   @JSName("exportKey")
-  def exportKey_pkcs8(format: pkijsLib.pkijsLibStrings.pkcs8, key: stdLib.CryptoKey): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def exportKey_pkcs8(format: pkijsLib.pkijsLibStrings.pkcs8, key: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
   @JSName("exportKey")
-  def exportKey_raw(format: pkijsLib.pkijsLibStrings.raw, key: stdLib.CryptoKey): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def exportKey_raw(format: pkijsLib.pkijsLibStrings.raw, key: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
   @JSName("exportKey")
-  def exportKey_spki(format: pkijsLib.pkijsLibStrings.spki, key: stdLib.CryptoKey): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def exportKey_spki(format: pkijsLib.pkijsLibStrings.spki, key: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
   def importKey(
     format: java.lang.String,
     keyData: stdLib.JsonWebKey,
     algorithm: java.lang.String,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   def importKey(
     format: java.lang.String,
     keyData: stdLib.JsonWebKey,
     algorithm: stdLib.DhImportKeyParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   def importKey(
     format: java.lang.String,
     keyData: stdLib.JsonWebKey,
     algorithm: stdLib.EcKeyImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   def importKey(
     format: java.lang.String,
     keyData: stdLib.JsonWebKey,
     algorithm: stdLib.HmacImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   def importKey(
     format: java.lang.String,
     keyData: stdLib.JsonWebKey,
     algorithm: stdLib.RsaHashedImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_jwk(
     format: pkijsLib.pkijsLibStrings.jwk,
@@ -97,7 +97,7 @@ trait CryptoEngine
     algorithm: java.lang.String,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_jwk(
     format: pkijsLib.pkijsLibStrings.jwk,
@@ -105,7 +105,7 @@ trait CryptoEngine
     algorithm: stdLib.DhImportKeyParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_jwk(
     format: pkijsLib.pkijsLibStrings.jwk,
@@ -113,7 +113,7 @@ trait CryptoEngine
     algorithm: stdLib.EcKeyImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_jwk(
     format: pkijsLib.pkijsLibStrings.jwk,
@@ -121,7 +121,7 @@ trait CryptoEngine
     algorithm: stdLib.HmacImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_jwk(
     format: pkijsLib.pkijsLibStrings.jwk,
@@ -129,7 +129,7 @@ trait CryptoEngine
     algorithm: stdLib.RsaHashedImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_pkcs8(
     format: pkijsLib.pkijsLibStrings.pkcs8,
@@ -137,7 +137,7 @@ trait CryptoEngine
     algorithm: java.lang.String,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_pkcs8(
     format: pkijsLib.pkijsLibStrings.pkcs8,
@@ -145,7 +145,7 @@ trait CryptoEngine
     algorithm: stdLib.DhImportKeyParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_pkcs8(
     format: pkijsLib.pkijsLibStrings.pkcs8,
@@ -153,7 +153,7 @@ trait CryptoEngine
     algorithm: stdLib.EcKeyImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_pkcs8(
     format: pkijsLib.pkijsLibStrings.pkcs8,
@@ -161,7 +161,7 @@ trait CryptoEngine
     algorithm: stdLib.HmacImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_pkcs8(
     format: pkijsLib.pkijsLibStrings.pkcs8,
@@ -169,7 +169,7 @@ trait CryptoEngine
     algorithm: stdLib.RsaHashedImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_raw(
     format: pkijsLib.pkijsLibStrings.raw,
@@ -177,7 +177,7 @@ trait CryptoEngine
     algorithm: java.lang.String,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_raw(
     format: pkijsLib.pkijsLibStrings.raw,
@@ -185,7 +185,7 @@ trait CryptoEngine
     algorithm: stdLib.DhImportKeyParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_raw(
     format: pkijsLib.pkijsLibStrings.raw,
@@ -193,7 +193,7 @@ trait CryptoEngine
     algorithm: stdLib.EcKeyImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_raw(
     format: pkijsLib.pkijsLibStrings.raw,
@@ -201,7 +201,7 @@ trait CryptoEngine
     algorithm: stdLib.HmacImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_raw(
     format: pkijsLib.pkijsLibStrings.raw,
@@ -209,7 +209,7 @@ trait CryptoEngine
     algorithm: stdLib.RsaHashedImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_spki(
     format: pkijsLib.pkijsLibStrings.spki,
@@ -217,7 +217,7 @@ trait CryptoEngine
     algorithm: java.lang.String,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_spki(
     format: pkijsLib.pkijsLibStrings.spki,
@@ -225,7 +225,7 @@ trait CryptoEngine
     algorithm: stdLib.DhImportKeyParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_spki(
     format: pkijsLib.pkijsLibStrings.spki,
@@ -233,7 +233,7 @@ trait CryptoEngine
     algorithm: stdLib.EcKeyImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_spki(
     format: pkijsLib.pkijsLibStrings.spki,
@@ -241,7 +241,7 @@ trait CryptoEngine
     algorithm: stdLib.HmacImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   @JSName("importKey")
   def importKey_spki(
     format: pkijsLib.pkijsLibStrings.spki,
@@ -249,7 +249,7 @@ trait CryptoEngine
     algorithm: stdLib.RsaHashedImportParams,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   def unwrapKey(
     format: java.lang.String,
     wrappedKey: stdLib.BufferSource,
@@ -258,12 +258,12 @@ trait CryptoEngine
     unwrappedKeyAlgorithm: stdLib.AlgorithmIdentifier,
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
-  ): stdLib.PromiseLike[stdLib.CryptoKey] = js.native
+  ): js.Thenable[stdLib.CryptoKey] = js.native
   def wrapKey(
     format: java.lang.String,
     key: stdLib.CryptoKey,
     wrappingKey: stdLib.CryptoKey,
     wrapAlgorithm: stdLib.AlgorithmIdentifier
-  ): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  ): js.Thenable[stdLib.ArrayBuffer] = js.native
 }
 

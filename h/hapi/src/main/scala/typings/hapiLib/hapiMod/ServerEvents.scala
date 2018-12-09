@@ -73,7 +73,7 @@ trait ServerEvents
        * @return Return value: a promise that resolves when the event is emitted.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-servereventsoncecriteria)
        */
-  def once(criteria: ServerEventCriteria[java.lang.String]): stdLib.Promise[_] = js.native
+  def once(criteria: ServerEventCriteria[java.lang.String]): js.Promise[_] = js.native
   /**
        * Same as calling server.events.on() with the count option set to 1.
        * @param criteria - the subscription criteria which must be one of:
@@ -83,7 +83,7 @@ trait ServerEvents
        * @return Return value: a promise that resolves when the event is emitted.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-servereventsoncecriteria)
        */
-  def once(criteria: java.lang.String): stdLib.Promise[_] = js.native
+  def once(criteria: java.lang.String): js.Promise[_] = js.native
   /**
        * Same as calling [server.events.on()](https://github.com/hapijs/hapi/blob/master/API.md#server.events.on()) with the count option set to 1.
        * @param criteria - the subscription criteria which must be one of:

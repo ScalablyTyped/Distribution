@@ -31,7 +31,7 @@ trait Options[K, V] extends js.Object {
        * be used as the underlying cache for this loader.
        * Default `new Map()`.
        */
-  var cacheMap: js.UndefOr[CacheMap[K, stdLib.Promise[V]]] = js.undefined
+  var cacheMap: js.UndefOr[CacheMap[K, js.Promise[V]]] = js.undefined
   /**
        * Default `Infinity`. Limits the number of items that get
        * passed in to the `batchLoadFn`.

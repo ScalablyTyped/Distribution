@@ -9,31 +9,31 @@ import scala.scalajs.js.annotation._
 @JSImport("mz/dns", "resolve")
 @js.native
 object resolveNs extends js.Object {
-  def `__promisify__`(hostname: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
-  def `__promisify__`(hostname: java.lang.String, rrtype: java.lang.String): stdLib.Promise[
+  def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+  def `__promisify__`(hostname: java.lang.String, rrtype: java.lang.String): js.Promise[
     js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.MxRecord] | js.Array[nodeLib.dnsMod.NaptrRecord] | nodeLib.dnsMod.SoaRecord | js.Array[nodeLib.dnsMod.SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[nodeLib.dnsMod.AnyRecord]
   ] = js.native
   @JSName("__promisify__")
-  def __promisify___A(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.A): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def __promisify___A(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.A): js.Promise[js.Array[java.lang.String]] = js.native
   @JSName("__promisify__")
-  def __promisify___AAAA(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.AAAA): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def __promisify___AAAA(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.AAAA): js.Promise[js.Array[java.lang.String]] = js.native
   @JSName("__promisify__")
-  def __promisify___ANY(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.ANY): stdLib.Promise[js.Array[nodeLib.dnsMod.AnyRecord]] = js.native
+  def __promisify___ANY(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.ANY): js.Promise[js.Array[nodeLib.dnsMod.AnyRecord]] = js.native
   @JSName("__promisify__")
-  def __promisify___CNAME(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.CNAME): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def __promisify___CNAME(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.CNAME): js.Promise[js.Array[java.lang.String]] = js.native
   @JSName("__promisify__")
-  def __promisify___MX(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.MX): stdLib.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
+  def __promisify___MX(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.MX): js.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
   @JSName("__promisify__")
-  def __promisify___NAPTR(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.NAPTR): stdLib.Promise[js.Array[nodeLib.dnsMod.NaptrRecord]] = js.native
+  def __promisify___NAPTR(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.NAPTR): js.Promise[js.Array[nodeLib.dnsMod.NaptrRecord]] = js.native
   @JSName("__promisify__")
-  def __promisify___NS(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.NS): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def __promisify___NS(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.NS): js.Promise[js.Array[java.lang.String]] = js.native
   @JSName("__promisify__")
-  def __promisify___PTR(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.PTR): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def __promisify___PTR(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.PTR): js.Promise[js.Array[java.lang.String]] = js.native
   @JSName("__promisify__")
-  def __promisify___SOA(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.SOA): stdLib.Promise[nodeLib.dnsMod.SoaRecord] = js.native
+  def __promisify___SOA(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.SOA): js.Promise[nodeLib.dnsMod.SoaRecord] = js.native
   @JSName("__promisify__")
-  def __promisify___SRV(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.SRV): stdLib.Promise[js.Array[nodeLib.dnsMod.SrvRecord]] = js.native
+  def __promisify___SRV(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.SRV): js.Promise[js.Array[nodeLib.dnsMod.SrvRecord]] = js.native
   @JSName("__promisify__")
-  def __promisify___TXT(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.TXT): stdLib.Promise[js.Array[js.Array[java.lang.String]]] = js.native
+  def __promisify___TXT(hostname: java.lang.String, rrtype: mzLib.mzLibStrings.TXT): js.Promise[js.Array[js.Array[java.lang.String]]] = js.native
 }
 

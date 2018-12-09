@@ -21,6 +21,6 @@ object TransactionNs extends js.Object {
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
     uuid: java.lang.String,
     data: Transaction
-  ): stdLib.Promise[Transaction] = js.native
+  ): js.Promise[Transaction] = js.native
 }
 

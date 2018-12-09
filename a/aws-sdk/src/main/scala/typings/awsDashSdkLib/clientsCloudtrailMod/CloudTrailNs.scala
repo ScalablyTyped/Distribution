@@ -13,7 +13,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the ARN of the trail to which one or more tags will be added. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var ResourceId: java.lang.String
+    var ResourceId: String
     /**
          * Contains a list of CloudTrail tags, up to a limit of 50
          */
@@ -36,47 +36,47 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies a log group name using an Amazon Resource Name (ARN), a unique identifier that represents the log group to which CloudTrail logs will be delivered. Not required unless you specify CloudWatchLogsRoleArn.
          */
-    var CloudWatchLogsLogGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group.
          */
-    var CloudWatchLogsRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsRoleArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether log file integrity validation is enabled. The default is false.  When you disable log file integrity validation, the chain of digest files is broken after one hour. CloudTrail will not create digest files for log files that were delivered during a period in which log file integrity validation was disabled. For example, if you enable log file integrity validation at noon on January 1, disable it at noon on January 2, and re-enable it at noon on January 10, digest files will not be created for the log files delivered from noon on January 2 to noon on January 10. The same applies whenever you stop CloudTrail logging or delete a trail. 
          */
-    var EnableLogFileValidation: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableLogFileValidation: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail is publishing events from global services such as IAM to the log files.
          */
-    var IncludeGlobalServiceEvents: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail is created in the current region or in all regions. The default is false.
          */
-    var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail is created for all accounts in an organization in AWS Organizations, or only for the current AWS account. The default is false, and cannot be true unless the call is made on behalf of an AWS account that is the master account for an organization in AWS Organizations.
          */
-    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the KMS key ID to use to encrypt the logs delivered by CloudTrail. The value can be an alias name prefixed by "alias/", a fully specified ARN to an alias, a fully specified ARN to a key, or a globally unique identifier. Examples:   alias/MyAliasName   arn:aws:kms:us-east-2:123456789012:alias/MyAliasName   arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012   12345678-1234-1234-1234-123456789012  
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * Specifies the name of the trail. The name must meet the following requirements:   Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores (_), or dashes (-)   Start with a letter or number, and end with a letter or number   Be between 3 and 128 characters   Have no adjacent periods, underscores or dashes. Names like my-_namespace and my--namespace are invalid.   Not be in IP address format (for example, 192.168.5.4)  
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * Specifies the name of the Amazon S3 bucket designated for publishing log files. See Amazon S3 Bucket Naming Requirements.
          */
-    var S3BucketName: java.lang.String
+    var S3BucketName: String
     /**
          * Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see Finding Your CloudTrail Log Files. The maximum length is 200 characters.
          */
-    var S3KeyPrefix: js.UndefOr[java.lang.String] = js.undefined
+    var S3KeyPrefix: js.UndefOr[String] = js.undefined
     /**
          * Specifies the name of the Amazon SNS topic defined for notification of log file delivery. The maximum length is 256 characters.
          */
-    var SnsTopicName: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -84,55 +84,55 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the Amazon Resource Name (ARN) of the log group to which CloudTrail logs will be delivered.
          */
-    var CloudWatchLogsLogGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group.
          */
-    var CloudWatchLogsRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsRoleArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether the trail is publishing events from global services such as IAM to the log files.
          */
-    var IncludeGlobalServiceEvents: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail exists in one region or in all regions.
          */
-    var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail is an organization trail.
          */
-    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether log file integrity validation is enabled.
          */
-    var LogFileValidationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var LogFileValidationEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the name of the trail.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * Specifies the name of the Amazon S3 bucket designated for publishing log files.
          */
-    var S3BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var S3BucketName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see Finding Your CloudTrail Log Files.
          */
-    var S3KeyPrefix: js.UndefOr[java.lang.String] = js.undefined
+    var S3KeyPrefix: js.UndefOr[String] = js.undefined
     /**
          * Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send notifications when log files are delivered. The format of a topic ARN is:  arn:aws:sns:us-east-2:123456789012:MyTopic 
          */
-    var SnsTopicARN: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicARN: js.UndefOr[String] = js.undefined
     /**
          * This field is deprecated. Use SnsTopicARN.
          */
-    var SnsTopicName: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the ARN of the trail that was created. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var TrailARN: js.UndefOr[java.lang.String] = js.undefined
+    var TrailARN: js.UndefOr[String] = js.undefined
   }
   
   
@@ -140,7 +140,7 @@ object CloudTrailNs extends js.Object {
     /**
          * The resource type in which you want to log data events. You can specify AWS::S3::Object or AWS::Lambda::Function resources.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
     /**
          * An array of Amazon Resource Name (ARN) strings or partial ARN strings for the specified objects.   To log data events for all objects in all S3 buckets in your AWS account, specify the prefix as arn:aws:s3:::.   This will also enable logging of data event activity performed by any user or role in your AWS account, even if that activity is performed on a bucket that belongs to another AWS account.     To log data events for all objects in all S3 buckets that include my-bucket in their names, specify the prefix as aws:s3:::my-bucket. The trail logs data events for all objects in all buckets whose name contains a match for my-bucket.    To log data events for all objects in an S3 bucket, specify the bucket and an empty object prefix such as arn:aws:s3:::bucket-1/. The trail logs data events for all objects in this S3 bucket.   To log data events for specific objects, specify the S3 bucket and object prefix such as arn:aws:s3:::bucket-1/example-images. The trail logs data events for objects in this S3 bucket that match the prefix.   To log data events for all functions in your AWS account, specify the prefix as arn:aws:lambda.  This will also enable logging of Invoke activity performed by any user or role in your AWS account, even if that activity is performed on a function that belongs to another AWS account.     To log data eents for a specific Lambda function, specify the function ARN.  Lambda function ARNs are exact. Unlike S3, you cannot use matching. For example, if you specify a function ARN arn:aws:lambda:us-west-2:111111111111:function:helloworld, data events will only be logged for arn:aws:lambda:us-west-2:111111111111:function:helloworld. They will not be logged for arn:aws:lambda:us-west-2:111111111111:function:helloworld2.   
          */
@@ -152,7 +152,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the name or the CloudTrail ARN of the trail to be deleted. The format of a trail ARN is: arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -163,7 +163,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies whether to include shadow trails in the response. A shadow trail is the replication in a region of a trail that was created in a different region, or in the case of an organization trail, the replication of an organization trail in member accounts. If you do not include shadow trails, organization trails in a member account and region replication trails will not be returned. The default is true.
          */
-    var includeShadowTrails: js.UndefOr[scala.Boolean] = js.undefined
+    var includeShadowTrails: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies a list of trail names, trail ARNs, or both, of the trails to describe. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail  If an empty list is specified, information for the trail in the current region is returned.   If an empty list is specified and IncludeShadowTrails is false, then information for all trails in the current region is returned.   If an empty list is specified and IncludeShadowTrails is null or true, then information for all trails in the current region and any associated shadow trails in other regions is returned.    If one or more trail names are specified, information is returned only if the names match the names of trails belonging only to the current region. To return information about a trail in another region, you must specify its trail ARN. 
          */
@@ -183,23 +183,23 @@ object CloudTrailNs extends js.Object {
     /**
          * The AWS access key ID that was used to sign the request. If the request was made with temporary security credentials, this is the access key ID of the temporary credentials.
          */
-    var AccessKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var AccessKeyId: js.UndefOr[String] = js.undefined
     /**
          * A JSON string that contains a representation of the event returned.
          */
-    var CloudTrailEvent: js.UndefOr[java.lang.String] = js.undefined
+    var CloudTrailEvent: js.UndefOr[String] = js.undefined
     /**
          * The CloudTrail ID of the event returned.
          */
-    var EventId: js.UndefOr[java.lang.String] = js.undefined
+    var EventId: js.UndefOr[String] = js.undefined
     /**
          * The name of the event returned.
          */
-    var EventName: js.UndefOr[java.lang.String] = js.undefined
+    var EventName: js.UndefOr[String] = js.undefined
     /**
          * The AWS service that the request was made to.
          */
-    var EventSource: js.UndefOr[java.lang.String] = js.undefined
+    var EventSource: js.UndefOr[String] = js.undefined
     /**
          * The date and time of the event returned.
          */
@@ -207,7 +207,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Information about whether the event is a write event or a read event. 
          */
-    var ReadOnly: js.UndefOr[java.lang.String] = js.undefined
+    var ReadOnly: js.UndefOr[String] = js.undefined
     /**
          * A list of resources referenced by the event returned.
          */
@@ -215,7 +215,7 @@ object CloudTrailNs extends js.Object {
     /**
          * A user name or role name of the requester that called the API in the event returned.
          */
-    var Username: js.UndefOr[java.lang.String] = js.undefined
+    var Username: js.UndefOr[String] = js.undefined
   }
   
   
@@ -227,7 +227,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specify if you want your event selector to include management events for your trail.  For more information, see Management Events in the AWS CloudTrail User Guide. By default, the value is true.
          */
-    var IncludeManagementEvents: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludeManagementEvents: js.UndefOr[Boolean] = js.undefined
     /**
          * Specify if you want your trail to log read-only events, write-only events, or all. For example, the EC2 GetConsoleOutput is a read-only API operation and RunInstances is a write-only API operation.  By default, the value is All.
          */
@@ -239,7 +239,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the name of the trail or trail ARN. If you specify a trail name, the string must meet the following requirements:   Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores (_), or dashes (-)   Start with a letter or number, and end with a letter or number   Be between 3 and 128 characters   Have no adjacent periods, underscores or dashes. Names like my-_namespace and my--namespace are not valid.   Not be in IP address format (for example, 192.168.5.4)   If you specify a trail ARN, it must be in the format:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var TrailName: java.lang.String
+    var TrailName: String
   }
   
   
@@ -251,7 +251,7 @@ object CloudTrailNs extends js.Object {
     /**
          * The specified trail ARN that has the event selectors.
          */
-    var TrailARN: js.UndefOr[java.lang.String] = js.undefined
+    var TrailARN: js.UndefOr[String] = js.undefined
   }
   
   
@@ -259,7 +259,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the name or the CloudTrail ARN of the trail for which you are requesting status. To get the status of a shadow trail (a replication of the trail in another region), you must specify its ARN. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -267,11 +267,11 @@ object CloudTrailNs extends js.Object {
     /**
          * Whether the CloudTrail is currently logging AWS API calls.
          */
-    var IsLogging: js.UndefOr[scala.Boolean] = js.undefined
+    var IsLogging: js.UndefOr[Boolean] = js.undefined
     /**
          * Displays any CloudWatch Logs error that CloudTrail encountered when attempting to deliver logs to CloudWatch Logs.
          */
-    var LatestCloudWatchLogsDeliveryError: js.UndefOr[java.lang.String] = js.undefined
+    var LatestCloudWatchLogsDeliveryError: js.UndefOr[String] = js.undefined
     /**
          * Displays the most recent date and time when CloudTrail delivered logs to CloudWatch Logs.
          */
@@ -279,15 +279,15 @@ object CloudTrailNs extends js.Object {
     /**
          * This field is deprecated.
          */
-    var LatestDeliveryAttemptSucceeded: js.UndefOr[java.lang.String] = js.undefined
+    var LatestDeliveryAttemptSucceeded: js.UndefOr[String] = js.undefined
     /**
          * This field is deprecated.
          */
-    var LatestDeliveryAttemptTime: js.UndefOr[java.lang.String] = js.undefined
+    var LatestDeliveryAttemptTime: js.UndefOr[String] = js.undefined
     /**
          * Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver log files to the designated bucket. For more information see the topic Error Responses in the Amazon S3 API Reference.   This error occurs only when there is a problem with the destination S3 bucket and will not occur for timeouts. To resolve the issue, create a new bucket and call UpdateTrail to specify the new bucket, or fix the existing objects so that CloudTrail can again write to the bucket. 
          */
-    var LatestDeliveryError: js.UndefOr[java.lang.String] = js.undefined
+    var LatestDeliveryError: js.UndefOr[String] = js.undefined
     /**
          * Specifies the date and time that CloudTrail last delivered log files to an account's Amazon S3 bucket.
          */
@@ -295,7 +295,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver a digest file to the designated bucket. For more information see the topic Error Responses in the Amazon S3 API Reference.   This error occurs only when there is a problem with the destination S3 bucket and will not occur for timeouts. To resolve the issue, create a new bucket and call UpdateTrail to specify the new bucket, or fix the existing objects so that CloudTrail can again write to the bucket. 
          */
-    var LatestDigestDeliveryError: js.UndefOr[java.lang.String] = js.undefined
+    var LatestDigestDeliveryError: js.UndefOr[String] = js.undefined
     /**
          * Specifies the date and time that CloudTrail last delivered a digest file to an account's Amazon S3 bucket.
          */
@@ -303,15 +303,15 @@ object CloudTrailNs extends js.Object {
     /**
          * This field is deprecated.
          */
-    var LatestNotificationAttemptSucceeded: js.UndefOr[java.lang.String] = js.undefined
+    var LatestNotificationAttemptSucceeded: js.UndefOr[String] = js.undefined
     /**
          * This field is deprecated.
          */
-    var LatestNotificationAttemptTime: js.UndefOr[java.lang.String] = js.undefined
+    var LatestNotificationAttemptTime: js.UndefOr[String] = js.undefined
     /**
          * Displays any Amazon SNS error that CloudTrail encountered when attempting to send a notification. For more information about Amazon SNS errors, see the Amazon SNS Developer Guide. 
          */
-    var LatestNotificationError: js.UndefOr[java.lang.String] = js.undefined
+    var LatestNotificationError: js.UndefOr[String] = js.undefined
     /**
          * Specifies the date and time of the most recent Amazon SNS notification that CloudTrail has written a new log file to an account's Amazon S3 bucket.
          */
@@ -327,11 +327,11 @@ object CloudTrailNs extends js.Object {
     /**
          * This field is deprecated.
          */
-    var TimeLoggingStarted: js.UndefOr[java.lang.String] = js.undefined
+    var TimeLoggingStarted: js.UndefOr[String] = js.undefined
     /**
          * This field is deprecated.
          */
-    var TimeLoggingStopped: js.UndefOr[java.lang.String] = js.undefined
+    var TimeLoggingStopped: js.UndefOr[String] = js.undefined
   }
   
   
@@ -343,7 +343,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Reserved for future use.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Optionally specifies, in UTC, the start of the time range to look up public keys for CloudTrail digest files. If not specified, the current time is used, and the current public key is returned.
          */
@@ -355,7 +355,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Reserved for future use.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Contains an array of PublicKey objects.  The returned public keys may have validity time ranges that overlap. 
          */
@@ -367,7 +367,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Reserved for future use.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Specifies a list of trail ARNs whose tags will be listed. The list has a limit of 20 ARNs. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
@@ -379,7 +379,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Reserved for future use.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list of resource tags.
          */
@@ -395,7 +395,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies a value for the specified AttributeKey.
          */
-    var AttributeValue: java.lang.String
+    var AttributeValue: String
   }
   
   
@@ -439,7 +439,7 @@ object CloudTrailNs extends js.Object {
     /**
          * The fingerprint of the public key.
          */
-    var Fingerprint: js.UndefOr[java.lang.String] = js.undefined
+    var Fingerprint: js.UndefOr[String] = js.undefined
     /**
          * The ending time of validity of the public key.
          */
@@ -463,7 +463,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the name of the trail or trail ARN. If you specify a trail name, the string must meet the following requirements:   Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores (_), or dashes (-)   Start with a letter or number, and end with a letter or number   Be between 3 and 128 characters   Have no adjacent periods, underscores or dashes. Names like my-_namespace and my--namespace are invalid.   Not be in IP address format (for example, 192.168.5.4)   If you specify a trail ARN, it must be in the format:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var TrailName: java.lang.String
+    var TrailName: String
   }
   
   
@@ -475,7 +475,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the ARN of the trail that was updated with event selectors. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var TrailARN: js.UndefOr[java.lang.String] = js.undefined
+    var TrailARN: js.UndefOr[String] = js.undefined
   }
   
   
@@ -483,7 +483,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the ARN of the trail from which tags should be removed. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var ResourceId: java.lang.String
+    var ResourceId: String
     /**
          * Specifies a list of tags to be removed.
          */
@@ -498,11 +498,11 @@ object CloudTrailNs extends js.Object {
     /**
          * The name of the resource referenced by the event returned. These are user-created names whose values will depend on the environment. For example, the resource name might be "auto-scaling-test-group" for an Auto Scaling Group or "i-1234567" for an EC2 Instance.
          */
-    var ResourceName: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceName: js.UndefOr[String] = js.undefined
     /**
          * The type of a resource referenced by the event returned. When the resource type cannot be determined, null is returned. Some examples of resource types are: Instance for EC2, Trail for CloudTrail, DBInstance for RDS, and AccessKey for IAM. For a list of resource types supported for event lookup, see Resource Types Supported for Event Lookup.
          */
-    var ResourceType: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -510,7 +510,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the ARN of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * A list of tags.
          */
@@ -522,7 +522,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the name or the CloudTrail ARN of the trail for which CloudTrail logs AWS API calls. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -533,7 +533,7 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the name or the CloudTrail ARN of the trail for which CloudTrail will stop logging AWS API calls. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -544,11 +544,11 @@ object CloudTrailNs extends js.Object {
     /**
          * The key in a key-value pair. The key must be must be no longer than 128 Unicode characters. The key must be unique for the resource to which it applies.
          */
-    var Key: java.lang.String
+    var Key: String
     /**
          * The value in a key-value pair of a tag. The value must be no longer than 256 Unicode characters.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -556,63 +556,63 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies an Amazon Resource Name (ARN), a unique identifier that represents the log group to which CloudTrail logs will be delivered.
          */
-    var CloudWatchLogsLogGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group.
          */
-    var CloudWatchLogsRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsRoleArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies if the trail has custom event selectors.
          */
-    var HasCustomEventSelectors: js.UndefOr[scala.Boolean] = js.undefined
+    var HasCustomEventSelectors: js.UndefOr[Boolean] = js.undefined
     /**
          * The region in which the trail was created.
          */
-    var HomeRegion: js.UndefOr[java.lang.String] = js.undefined
+    var HomeRegion: js.UndefOr[String] = js.undefined
     /**
          * Set to True to include AWS API calls from AWS global services such as IAM. Otherwise, False.
          */
-    var IncludeGlobalServiceEvents: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail belongs only to one region or exists in all regions.
          */
-    var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail is an organization trail.
          */
-    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether log file validation is enabled.
          */
-    var LogFileValidationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var LogFileValidationEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Name of the trail set by calling CreateTrail. The maximum length is 128 characters.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * Name of the Amazon S3 bucket into which CloudTrail delivers your trail files. See Amazon S3 Bucket Naming Requirements.
          */
-    var S3BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var S3BucketName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see Finding Your CloudTrail Log Files.The maximum length is 200 characters.
          */
-    var S3KeyPrefix: js.UndefOr[java.lang.String] = js.undefined
+    var S3KeyPrefix: js.UndefOr[String] = js.undefined
     /**
          * Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send notifications when log files are delivered. The format of a topic ARN is:  arn:aws:sns:us-east-2:123456789012:MyTopic 
          */
-    var SnsTopicARN: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicARN: js.UndefOr[String] = js.undefined
     /**
          * This field is deprecated. Use SnsTopicARN.
          */
-    var SnsTopicName: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the ARN of the trail. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var TrailARN: js.UndefOr[java.lang.String] = js.undefined
+    var TrailARN: js.UndefOr[String] = js.undefined
   }
   
   @js.native
@@ -1025,47 +1025,47 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies a log group name using an Amazon Resource Name (ARN), a unique identifier that represents the log group to which CloudTrail logs will be delivered. Not required unless you specify CloudWatchLogsRoleArn.
          */
-    var CloudWatchLogsLogGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group.
          */
-    var CloudWatchLogsRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsRoleArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether log file validation is enabled. The default is false.  When you disable log file integrity validation, the chain of digest files is broken after one hour. CloudTrail will not create digest files for log files that were delivered during a period in which log file integrity validation was disabled. For example, if you enable log file integrity validation at noon on January 1, disable it at noon on January 2, and re-enable it at noon on January 10, digest files will not be created for the log files delivered from noon on January 2 to noon on January 10. The same applies whenever you stop CloudTrail logging or delete a trail. 
          */
-    var EnableLogFileValidation: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableLogFileValidation: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail is publishing events from global services such as IAM to the log files.
          */
-    var IncludeGlobalServiceEvents: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail applies only to the current region or to all regions. The default is false. If the trail exists only in the current region and this value is set to true, shadow trails (replications of the trail) will be created in the other regions. If the trail exists in all regions and this value is set to false, the trail will remain in the region where it was created, and its shadow trails in other regions will be deleted.
          */
-    var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail is applied to all accounts in an organization in AWS Organizations, or only for the current AWS account. The default is false, and cannot be true unless the call is made on behalf of an AWS account that is the master account for an organization in AWS Organizations. If the trail is not an organization trail and this is set to true, the trail will be created in all AWS accounts that belong to the organization. If the trail is an organization trail and this is set to false, the trail will remain in the current AWS account but be deleted from all member accounts in the organization.
          */
-    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the KMS key ID to use to encrypt the logs delivered by CloudTrail. The value can be an alias name prefixed by "alias/", a fully specified ARN to an alias, a fully specified ARN to a key, or a globally unique identifier. Examples:   alias/MyAliasName   arn:aws:kms:us-east-2:123456789012:alias/MyAliasName   arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012   12345678-1234-1234-1234-123456789012  
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * Specifies the name of the trail or trail ARN. If Name is a trail name, the string must meet the following requirements:   Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores (_), or dashes (-)   Start with a letter or number, and end with a letter or number   Be between 3 and 128 characters   Have no adjacent periods, underscores or dashes. Names like my-_namespace and my--namespace are invalid.   Not be in IP address format (for example, 192.168.5.4)   If Name is a trail ARN, it must be in the format:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * Specifies the name of the Amazon S3 bucket designated for publishing log files. See Amazon S3 Bucket Naming Requirements.
          */
-    var S3BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var S3BucketName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see Finding Your CloudTrail Log Files. The maximum length is 200 characters.
          */
-    var S3KeyPrefix: js.UndefOr[java.lang.String] = js.undefined
+    var S3KeyPrefix: js.UndefOr[String] = js.undefined
     /**
          * Specifies the name of the Amazon SNS topic defined for notification of log file delivery. The maximum length is 256 characters.
          */
-    var SnsTopicName: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1073,62 +1073,62 @@ object CloudTrailNs extends js.Object {
     /**
          * Specifies the Amazon Resource Name (ARN) of the log group to which CloudTrail logs will be delivered.
          */
-    var CloudWatchLogsLogGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group.
          */
-    var CloudWatchLogsRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var CloudWatchLogsRoleArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether the trail is publishing events from global services such as IAM to the log files.
          */
-    var IncludeGlobalServiceEvents: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludeGlobalServiceEvents: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail exists in one region or in all regions.
          */
-    var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the trail is an organization trail.
          */
-    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
+    var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether log file integrity validation is enabled.
          */
-    var LogFileValidationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var LogFileValidationEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the name of the trail.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * Specifies the name of the Amazon S3 bucket designated for publishing log files.
          */
-    var S3BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var S3BucketName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the Amazon S3 key prefix that comes after the name of the bucket you have designated for log file delivery. For more information, see Finding Your CloudTrail Log Files.
          */
-    var S3KeyPrefix: js.UndefOr[java.lang.String] = js.undefined
+    var S3KeyPrefix: js.UndefOr[String] = js.undefined
     /**
          * Specifies the ARN of the Amazon SNS topic that CloudTrail uses to send notifications when log files are delivered. The format of a topic ARN is:  arn:aws:sns:us-east-2:123456789012:MyTopic 
          */
-    var SnsTopicARN: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicARN: js.UndefOr[String] = js.undefined
     /**
          * This field is deprecated. Use SnsTopicARN.
          */
-    var SnsTopicName: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the ARN of the trail that was updated. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail 
          */
-    var TrailARN: js.UndefOr[java.lang.String] = js.undefined
+    var TrailARN: js.UndefOr[String] = js.undefined
   }
   
   val TypesNs: this.type = js.native
   type Boolean = scala.Boolean
   type ByteBuffer = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsCloudtrailMod.Blob | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type DataResourceValues = js.Array[java.lang.String]
+  type DataResourceValues = js.Array[String]
   type DataResources = js.Array[DataResource]
   type EventSelectors = js.Array[EventSelector]
   type EventsList = js.Array[Event]
@@ -1138,13 +1138,13 @@ object CloudTrailNs extends js.Object {
   type NextToken = java.lang.String
   type PublicKeyList = js.Array[PublicKey]
   type ReadWriteType = awsDashSdkLib.awsDashSdkLibStrings.ReadOnly | awsDashSdkLib.awsDashSdkLibStrings.WriteOnly | awsDashSdkLib.awsDashSdkLibStrings.All | java.lang.String
-  type ResourceIdList = js.Array[java.lang.String]
+  type ResourceIdList = js.Array[String]
   type ResourceList = js.Array[Resource]
   type ResourceTagList = js.Array[ResourceTag]
   type String = java.lang.String
   type TagsList = js.Array[Tag]
   type TrailList = js.Array[Trail]
-  type TrailNameList = js.Array[java.lang.String]
+  type TrailNameList = js.Array[String]
   type _Date = stdLib.Date
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-11-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

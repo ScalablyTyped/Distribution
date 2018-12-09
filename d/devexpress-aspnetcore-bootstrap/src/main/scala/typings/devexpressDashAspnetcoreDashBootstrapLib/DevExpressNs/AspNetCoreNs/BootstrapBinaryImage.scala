@@ -86,7 +86,7 @@ class BootstrapBinaryImage () extends BootstrapClientEdit {
     eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.endCallback,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EndCallbackEventArgs], scala.Unit]
   ): this.type = js.native
-  def performCallback(data: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def performCallback(data: js.Any): js.Promise[scala.Unit] = js.native
   def performCallback(data: js.Any, onSuccess: js.Function0[scala.Unit]): scala.Unit = js.native
   def setSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
 }

@@ -12,7 +12,7 @@ trait ICircleOptions extends js.Object {
       /* geometry */ IPixelCircleGeometry, 
       /* data */ js.Object, 
       /* options */ js.Object, 
-      stdLib.Promise[IOverlay]
+      js.Promise[IOverlay]
     ])
   ] = js.undefined
   var cursor: js.UndefOr[java.lang.String] = js.undefined

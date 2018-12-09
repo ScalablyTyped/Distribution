@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core/src/render3/query", JSImport.Namespace)
 @js.native
 object srcRender3QueryModMembers extends js.Object {
-  val QueryList: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[js.Object]] = js.native
+  val QueryList: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[js.Any]] = js.native
   def query[T](memoryIndex: scala.Double, predicate: atAngularCoreLib.srcTypeMod.Type[_]): QueryList[T] = js.native
   def query[T](memoryIndex: scala.Double, predicate: atAngularCoreLib.srcTypeMod.Type[_], descend: scala.Boolean): QueryList[T] = js.native
   def query[T](

@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("openlayers", "Overlay")
+@JSImport("openlayers", "Overlay")
 @js.native
-class Overlay protected () extends js.Object {
+class Overlay protected () extends Object {
   /**
        * @classdesc
        * An element to be displayed over the map and attached to a single map

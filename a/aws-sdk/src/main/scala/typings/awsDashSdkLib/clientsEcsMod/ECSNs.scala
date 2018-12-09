@@ -17,15 +17,15 @@ object ECSNs extends js.Object {
     /**
          * The unique identifier for the attachment.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          *  The status of the attachment. Valid values are PRECREATED, CREATED, ATTACHING, ATTACHED, DETACHING, DETACHED, and DELETED.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * The type of the attachment, such as ElasticNetworkInterface.
          */
-    var `type`: js.UndefOr[java.lang.String] = js.undefined
+    var `type`: js.UndefOr[String] = js.undefined
   }
   
   
@@ -33,11 +33,11 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the attachment.
          */
-    var attachmentArn: java.lang.String
+    var attachmentArn: String
     /**
          * The status of the attachment.
          */
-    var status: java.lang.String
+    var status: String
   }
   
   
@@ -45,11 +45,11 @@ object ECSNs extends js.Object {
     /**
          * The name of the attribute. Up to 128 letters (uppercase and lowercase), numbers, hyphens, underscores, and periods are allowed.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * The ID of the target. You can specify the short form ID for a resource or the full Amazon Resource Name (ARN).
          */
-    var targetId: js.UndefOr[java.lang.String] = js.undefined
+    var targetId: js.UndefOr[String] = js.undefined
     /**
          * The type of the target with which to attach the attribute. This parameter is required if you use the short form ID for a resource instead of the full ARN.
          */
@@ -57,7 +57,7 @@ object ECSNs extends js.Object {
     /**
          * The value of the attribute. Up to 128 letters (uppercase and lowercase), numbers, hyphens, underscores, periods, at signs (@), forward slashes, colons, and spaces are allowed.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -93,11 +93,11 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) that identifies the cluster. The ARN contains the arn:aws:ecs namespace, followed by the Region of the cluster, the AWS account ID of the cluster owner, the cluster namespace, and then the cluster name. For example, arn:aws:ecs:region:012345678910:cluster/test ..
          */
-    var clusterArn: js.UndefOr[java.lang.String] = js.undefined
+    var clusterArn: js.UndefOr[String] = js.undefined
     /**
          * A user-generated string that you use to identify your cluster.
          */
-    var clusterName: js.UndefOr[java.lang.String] = js.undefined
+    var clusterName: js.UndefOr[String] = js.undefined
     /**
          * The number of tasks in the cluster that are in the PENDING state.
          */
@@ -117,7 +117,7 @@ object ECSNs extends js.Object {
     /**
          * The status of the cluster. The valid values are ACTIVE or INACTIVE. ACTIVE indicates that you can register container instances with the cluster and the associated instances can accept tasks.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * The metadata that you apply to the cluster to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
          */
@@ -129,7 +129,7 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the container.
          */
-    var containerArn: js.UndefOr[java.lang.String] = js.undefined
+    var containerArn: js.UndefOr[String] = js.undefined
     /**
          * The exit code returned from the container.
          */
@@ -141,11 +141,11 @@ object ECSNs extends js.Object {
     /**
          * The last known status of the container.
          */
-    var lastStatus: js.UndefOr[java.lang.String] = js.undefined
+    var lastStatus: js.UndefOr[String] = js.undefined
     /**
          * The name of the container.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The network bindings associated with the container.
          */
@@ -157,11 +157,11 @@ object ECSNs extends js.Object {
     /**
          * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
          */
-    var reason: js.UndefOr[java.lang.String] = js.undefined
+    var reason: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the task.
          */
-    var taskArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -217,11 +217,11 @@ object ECSNs extends js.Object {
     /**
          * The hostname to use for your container. This parameter maps to Hostname in the Create a container section of the Docker Remote API and the --hostname option to docker run.  The hostname parameter is not supported if you are using the awsvpc network mode. 
          */
-    var hostname: js.UndefOr[java.lang.String] = js.undefined
+    var hostname: js.UndefOr[String] = js.undefined
     /**
          * The image used to start a container. This string is passed directly to the Docker daemon. Images in the Docker Hub registry are available by default. Other repositories are specified with either  repository-url/image:tag  or  repository-url/image@digest . Up to 255 letters (uppercase and lowercase), numbers, hyphens, underscores, colons, periods, forward slashes, and number signs are allowed. This parameter maps to Image in the Create a container section of the Docker Remote API and the IMAGE parameter of docker run.   When a new task starts, the Amazon ECS container agent pulls the latest version of the specified image and tag for the container to use. However, subsequent updates to a repository image are not propagated to already running tasks.   Images in Amazon ECR repositories can be specified by either using the full registry/repository:tag or registry/repository@digest. For example, 012345678910.dkr.ecr.&lt;region-name&gt;.amazonaws.com/&lt;repository-name&gt;:latest or 012345678910.dkr.ecr.&lt;region-name&gt;.amazonaws.com/&lt;repository-name&gt;@sha256:94afd1f2e64d908bc90dbca0035a5b567EXAMPLE.    Images in official repositories on Docker Hub use a single name (for example, ubuntu or mongo).   Images in other repositories on Docker Hub are qualified with an organization name (for example, amazon/amazon-ecs-agent).   Images in other online repositories are qualified further by a domain name (for example, quay.io/assemblyline/ubuntu).  
          */
-    var image: js.UndefOr[java.lang.String] = js.undefined
+    var image: js.UndefOr[String] = js.undefined
     /**
          * When this parameter is true, this allows you to deploy containerized applications that require stdin or a tty to be allocated. This parameter maps to OpenStdin in the Create a container section of the Docker Remote API and the --interactive option to docker run.
          */
@@ -253,7 +253,7 @@ object ECSNs extends js.Object {
     /**
          * The name of a container. If you are linking multiple containers together in a task definition, the name of one container can be entered in the links of another container to connect the containers. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. This parameter maps to name in the Create a container section of the Docker Remote API and the --name option to docker run. 
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The list of port mappings for the container. Port mappings allow containers to access ports on the host container instance to send or receive traffic. For task definitions that use the awsvpc network mode, you should only specify the containerPort. The hostPort can be left blank or it must be the same value as the containerPort. Port mappings on Windows use the NetNAT gateway address rather than localhost. There is no loopback for port mappings on Windows, so you cannot access a container's mapped port from the host itself.  This parameter maps to PortBindings in the Create a container section of the Docker Remote API and the --publish option to docker run. If the network mode of a task definition is set to none, then you can't specify port mappings. If the network mode of a task definition is set to host, then host ports must either be undefined or they must match the container port in the port mapping.  After a task reaches the RUNNING status, manual and automatic host and container port assignments are visible in the Network Bindings section of a container description for a selected task in the Amazon ECS console. The assignments are also visible in the networkBindings section DescribeTasks responses. 
          */
@@ -289,7 +289,7 @@ object ECSNs extends js.Object {
     /**
          * The user name to use inside the container. This parameter maps to User in the Create a container section of the Docker Remote API and the --user option to docker run.  This parameter is not supported for Windows containers. 
          */
-    var user: js.UndefOr[java.lang.String] = js.undefined
+    var user: js.UndefOr[String] = js.undefined
     /**
          * Data volumes to mount from another container. This parameter maps to VolumesFrom in the Create a container section of the Docker Remote API and the --volumes-from option to docker run.
          */
@@ -297,7 +297,7 @@ object ECSNs extends js.Object {
     /**
          * The working directory in which to run commands inside the container. This parameter maps to WorkingDir in the Create a container section of the Docker Remote API and the --workdir option to docker run.
          */
-    var workingDirectory: js.UndefOr[java.lang.String] = js.undefined
+    var workingDirectory: js.UndefOr[String] = js.undefined
   }
   
   
@@ -305,7 +305,7 @@ object ECSNs extends js.Object {
     /**
          * This parameter returns true if the agent is connected to Amazon ECS. Registered instances with an agent that may be unhealthy or stopped return false. Only instances connected to an agent can accept placement requests.
          */
-    var agentConnected: js.UndefOr[scala.Boolean] = js.undefined
+    var agentConnected: js.UndefOr[Boolean] = js.undefined
     /**
          * The status of the most recent agent update. If an update has never been requested, this value is NULL.
          */
@@ -321,11 +321,11 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the container instance. The ARN contains the arn:aws:ecs namespace, followed by the Region of the container instance, the AWS account ID of the container instance owner, the container-instance namespace, and then the container instance ID. For example, arn:aws:ecs:region:aws_account_id:container-instance/container_instance_ID .
          */
-    var containerInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var containerInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The EC2 instance ID of the container instance.
          */
-    var ec2InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var ec2InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The number of tasks on the container instance that are in the PENDING status.
          */
@@ -349,7 +349,7 @@ object ECSNs extends js.Object {
     /**
          * The status of the container instance. The valid values are ACTIVE, INACTIVE, or DRAINING. ACTIVE indicates that the container instance can accept tasks. DRAINING indicates that new tasks are not placed on the container instance and any service tasks running on the container instance are removed if possible. For more information, see Container Instance Draining in the Amazon Elastic Container Service Developer Guide.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * The metadata that you apply to the container instance to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
          */
@@ -389,7 +389,7 @@ object ECSNs extends js.Object {
     /**
          * The name of the container that receives the override. This parameter is required if any override is specified.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -397,7 +397,7 @@ object ECSNs extends js.Object {
     /**
          * The name of the container.
          */
-    var containerName: js.UndefOr[java.lang.String] = js.undefined
+    var containerName: js.UndefOr[String] = js.undefined
     /**
          * The exit code for the container, if the state change is a result of the container exiting.
          */
@@ -409,11 +409,11 @@ object ECSNs extends js.Object {
     /**
          * The reason for the state change.
          */
-    var reason: js.UndefOr[java.lang.String] = js.undefined
+    var reason: js.UndefOr[String] = js.undefined
     /**
          * The status of the container.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -421,7 +421,7 @@ object ECSNs extends js.Object {
     /**
          * The name of your cluster. If you do not specify a name for your cluster, you create a cluster named default. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
          */
-    var clusterName: js.UndefOr[java.lang.String] = js.undefined
+    var clusterName: js.UndefOr[String] = js.undefined
     /**
          * The metadata that you apply to the cluster to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
          */
@@ -441,11 +441,11 @@ object ECSNs extends js.Object {
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. Up to 32 ASCII characters are allowed.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster on which to run your service. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * Optional deployment parameters that control how many tasks run during the deployment and the ordering of stopping and starting tasks.
          */
@@ -461,7 +461,7 @@ object ECSNs extends js.Object {
     /**
          * Specifies whether to enable Amazon ECS managed tags for the tasks within the service. For more information, see Tagging Your Amazon ECS Resources in the Amazon Elastic Container Service Developer Guide.
          */
-    var enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined
+    var enableECSManagedTags: js.UndefOr[Boolean] = js.undefined
     /**
          * The period of time, in seconds, that the Amazon ECS service scheduler should ignore unhealthy Elastic Load Balancing target health checks after a task has first started. This is only valid if your service is configured to use a load balancer. If your service's tasks take a while to start and respond to Elastic Load Balancing health checks, you can specify a health check grace period of up to 7,200 seconds. During that time, the ECS service scheduler ignores health check status. This grace period can prevent the ECS service scheduler from marking tasks as unhealthy and stopping them before they have time to come up.
          */
@@ -489,7 +489,7 @@ object ECSNs extends js.Object {
     /**
          * The platform version on which your tasks in the service are running. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
          */
-    var platformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var platformVersion: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether to propagate the tags from the task definition or the service to the tasks. If no value is specified, the tags are not propagated. Tags can only be propagated to the tasks within the service during service creation. To add tags to a task after service creation, use the TagResource API action.
          */
@@ -497,7 +497,7 @@ object ECSNs extends js.Object {
     /**
          * The name or full Amazon Resource Name (ARN) of the IAM role that allows Amazon ECS to make calls to your load balancer on your behalf. This parameter is only permitted if you are using a load balancer with your service and your task definition does not use the awsvpc network mode. If you specify the role parameter, you must also specify a load balancer object with the loadBalancers parameter.  If your account has already created the Amazon ECS service-linked role, that role is used by default for your service unless you specify a role here. The service-linked role is required if your task definition uses the awsvpc network mode, in which case you should not specify a role here. For more information, see Using Service-Linked Roles for Amazon ECS in the Amazon Elastic Container Service Developer Guide.  If your specified role has a path other than /, then you must either specify the full role ARN (this is recommended) or prefix the role name with the path. For example, if a role with the name bar has a path of /foo/ then you would specify /foo/bar as the role name. For more information, see Friendly Names and Paths in the IAM User Guide.
          */
-    var role: js.UndefOr[java.lang.String] = js.undefined
+    var role: js.UndefOr[String] = js.undefined
     /**
          * The scheduling strategy to use for the service. For more information, see Services. There are two service scheduler strategies available:    REPLICA-The replica scheduling strategy places and maintains the desired number of tasks across your cluster. By default, the service scheduler spreads tasks across Availability Zones. You can use task placement strategies and constraints to customize task placement decisions. This scheduler strategy is required if using the CODE_DEPLOY deployment controller.    DAEMON-The daemon scheduling strategy deploys exactly one task on each active container instance that meets all of the task placement constraints that you specify in your cluster. When you are using this strategy, there is no need to specify a desired number of tasks, a task placement strategy, or use Service Auto Scaling policies.  Tasks using the Fargate launch type or the CODE_DEPLOY deploymenet controller do not support the DAEMON scheduling strategy.   
          */
@@ -505,7 +505,7 @@ object ECSNs extends js.Object {
     /**
          * The name of your service. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. Service names must be unique within a cluster, but you can have similarly named services in multiple clusters within a Region or across multiple Regions.
          */
-    var serviceName: java.lang.String
+    var serviceName: String
     /**
          * The details of the service discovery registries to assign to this service. For more information, see Service Discovery.  Service discovery is supported for Fargate tasks if you are using platform version v1.1.0 or later. For more information, see AWS Fargate Platform Versions. 
          */
@@ -517,7 +517,7 @@ object ECSNs extends js.Object {
     /**
          * The family and revision (family:revision) or full ARN of the task definition to run in your service. If a revision is not specified, the latest ACTIVE revision is used.
          */
-    var taskDefinition: java.lang.String
+    var taskDefinition: String
   }
   
   
@@ -537,7 +537,7 @@ object ECSNs extends js.Object {
     /**
          * The ARN of the principal, which can be an IAM user, IAM role, or the root user. If you specify the root user, it modifies the ARN and resource ID format for all IAM users, IAM roles, and the root user of the account unless an IAM user or role explicitly overrides these settings for themselves. If this field is omitted, the setting are changed only for the authenticated user.
          */
-    var principalArn: js.UndefOr[java.lang.String] = js.undefined
+    var principalArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -557,7 +557,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that contains the resource to delete attributes. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
   }
   
   
@@ -573,7 +573,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster to delete.
          */
-    var cluster: java.lang.String
+    var cluster: String
   }
   
   
@@ -589,7 +589,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the service to delete. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * If true, allows you to delete a service even if it has not been scaled down to zero tasks. It is only necessary to use this if the service is using the REPLICA scheduling strategy.
          */
@@ -597,7 +597,7 @@ object ECSNs extends js.Object {
     /**
          * The name of the service to delete.
          */
-    var service: java.lang.String
+    var service: String
   }
   
   
@@ -621,7 +621,7 @@ object ECSNs extends js.Object {
     /**
          * The ID of the deployment.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The launch type the tasks in the service are using. For more information, see Amazon ECS Launch Types in the Amazon Elastic Container Service Developer Guide.
          */
@@ -637,7 +637,7 @@ object ECSNs extends js.Object {
     /**
          * The platform version on which your tasks in the service are running. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
          */
-    var platformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var platformVersion: js.UndefOr[String] = js.undefined
     /**
          * The number of tasks in the deployment that are in the RUNNING status.
          */
@@ -645,11 +645,11 @@ object ECSNs extends js.Object {
     /**
          * The status of the deployment. The following describes each state:  PRIMARY  The most recent deployment of a service.  ACTIVE  A service deployment that still has running tasks, but are in the process of being replaced with a new PRIMARY deployment.  INACTIVE  A deployment that has been completely replaced.  
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * The most recent task definition that was specified for the tasks in the service to use.
          */
-    var taskDefinition: js.UndefOr[java.lang.String] = js.undefined
+    var taskDefinition: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp for when the service deployment was last updated.
          */
@@ -681,11 +681,11 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the container instance to deregister. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The container instance ID or full ARN of the container instance to deregister. The ARN contains the arn:aws:ecs namespace, followed by the Region of the container instance, the AWS account ID of the container instance owner, the container-instance namespace, and then the container instance ID. For example, arn:aws:ecs:region:aws_account_id:container-instance/container_instance_ID .
          */
-    var containerInstance: java.lang.String
+    var containerInstance: String
     /**
          * Forces the deregistration of the container instance. If you have tasks running on the container instance when you deregister it with the force option, these tasks remain running until you terminate the instance or the tasks stop through some other means, but they are orphaned (no longer monitored or accounted for by Amazon ECS). If an orphaned task on your container instance is part of an Amazon ECS service, then the service scheduler starts another copy of that task, on a different container instance if possible.  Any containers in orphaned service tasks that are registered with a Classic Load Balancer or an Application Load Balancer target group are deregistered. They begin connection draining according to the settings on the load balancer or target group.
          */
@@ -705,7 +705,7 @@ object ECSNs extends js.Object {
     /**
          * The family and revision (family:revision) or full Amazon Resource Name (ARN) of the task definition to deregister. You must specify a revision.
          */
-    var taskDefinition: java.lang.String
+    var taskDefinition: String
   }
   
   
@@ -745,7 +745,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the container instances to describe. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * A list of up to 100 container instance IDs or full Amazon Resource Name (ARN) entries.
          */
@@ -773,7 +773,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN)the cluster that hosts the service to describe. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether you want to see the resource tags for the service. If TAGS is specified, the tags are included in the response. If this field is omitted, tags are not included in the response.
          */
@@ -805,7 +805,7 @@ object ECSNs extends js.Object {
     /**
          * The family for the latest ACTIVE revision, family and revision (family:revision) for a specific revision in the family, or full Amazon Resource Name (ARN) of the task definition to describe.
          */
-    var taskDefinition: java.lang.String
+    var taskDefinition: String
   }
   
   
@@ -825,7 +825,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the task to describe. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether you want to see the resource tags for the task. If TAGS is specified, the tags are included in the response. If this field is omitted, tags are not included in the response.
          */
@@ -853,11 +853,11 @@ object ECSNs extends js.Object {
     /**
          * The path inside the container at which to expose the host device.
          */
-    var containerPath: js.UndefOr[java.lang.String] = js.undefined
+    var containerPath: js.UndefOr[String] = js.undefined
     /**
          * The path for the device on the host container instance.
          */
-    var hostPath: java.lang.String
+    var hostPath: String
     /**
          * The explicit permissions to provide to the container for the device. By default, the container has permissions for read, write, and mknod for the device.
          */
@@ -869,11 +869,11 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster to which the container instance belongs.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The container instance ID or full ARN of the container instance. The ARN contains the arn:aws:ecs namespace, followed by the Region of the container instance, the AWS account ID of the container instance owner, the container-instance namespace, and then the container instance ID. For example, arn:aws:ecs:region:aws_account_id:container-instance/container_instance_ID .
          */
-    var containerInstance: js.UndefOr[java.lang.String] = js.undefined
+    var containerInstance: js.UndefOr[String] = js.undefined
   }
   
   
@@ -881,16 +881,16 @@ object ECSNs extends js.Object {
     /**
          * The endpoint for the Amazon ECS agent to poll.
          */
-    var endpoint: js.UndefOr[java.lang.String] = js.undefined
+    var endpoint: js.UndefOr[String] = js.undefined
     /**
          * The telemetry endpoint for the Amazon ECS agent.
          */
-    var telemetryEndpoint: js.UndefOr[java.lang.String] = js.undefined
+    var telemetryEndpoint: js.UndefOr[String] = js.undefined
   }
   
   
   trait DockerLabelsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait DockerVolumeConfiguration extends js.Object {
@@ -901,7 +901,7 @@ object ECSNs extends js.Object {
     /**
          * The Docker volume driver to use. The driver value must match the driver name provided by Docker because it is used for task placement. If the driver was installed using the Docker plugin CLI, use docker plugin ls to retrieve the driver name from your container instance. If the driver was installed using another method, use Docker plugin discovery to retrieve the driver name. For more information, see Docker plugin discovery. This parameter maps to Driver in the Create a volume section of the Docker Remote API and the xxdriver option to  docker volume create .
          */
-    var driver: js.UndefOr[java.lang.String] = js.undefined
+    var driver: js.UndefOr[String] = js.undefined
     /**
          * A map of Docker driver-specific options passed through. This parameter maps to DriverOpts in the Create a volume section of the Docker Remote API and the xxopt option to  docker volume create .
          */
@@ -921,11 +921,11 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the failed resource.
          */
-    var arn: js.UndefOr[java.lang.String] = js.undefined
+    var arn: js.UndefOr[String] = js.undefined
     /**
          * The reason for the failure.
          */
-    var reason: js.UndefOr[java.lang.String] = js.undefined
+    var reason: js.UndefOr[String] = js.undefined
   }
   
   
@@ -957,11 +957,11 @@ object ECSNs extends js.Object {
     /**
          * The hostname to use in the /etc/hosts entry.
          */
-    var hostname: java.lang.String
+    var hostname: String
     /**
          * The IP address to use in the /etc/hosts entry.
          */
-    var ipAddress: java.lang.String
+    var ipAddress: String
   }
   
   
@@ -969,7 +969,7 @@ object ECSNs extends js.Object {
     /**
          * When the host parameter is used, specify a sourcePath to declare the path on the host container instance that is presented to the container. If this parameter is empty, then the Docker daemon has assigned a host path for you. If the host parameter contains a sourcePath file location, then the data volume persists at the specified location on the host container instance until you delete it manually. If the sourcePath value does not exist on the host container instance, the Docker daemon creates it. If the location does exist, the contents of the source path folder are exported. If you are using the Fargate launch type, the sourcePath parameter is not supported.
          */
-    var sourcePath: js.UndefOr[java.lang.String] = js.undefined
+    var sourcePath: js.UndefOr[String] = js.undefined
   }
   
   
@@ -989,11 +989,11 @@ object ECSNs extends js.Object {
     /**
          * The name of the key-value pair. For environment variables, this is the name of the environment variable.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The value of the key-value pair. For environment variables, this is the value of the environment variable.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1025,7 +1025,7 @@ object ECSNs extends js.Object {
     /**
          * Specifies whether to return the effective settings. If true, the account settings for the root user or the default setting for the principalArn. If false, the account settings for the principalArn are returned if they are set. Otherwise, no account settings are returned.
          */
-    var effectiveSettings: js.UndefOr[scala.Boolean] = js.undefined
+    var effectiveSettings: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of account setting results returned by ListAccountSettings in paginated output. When this parameter is used, ListAccountSettings only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListAccountSettings request with the returned nextToken value. This value can be between 1 and 10. If this parameter is not used, then ListAccountSettings returns up to 10 results and a nextToken value if applicable.
          */
@@ -1037,15 +1037,15 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated ListAccountSettings request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the principal, which can be an IAM user, IAM role, or the root user. If this field is omitted, the account settings are listed only for the authenticated user.
          */
-    var principalArn: js.UndefOr[java.lang.String] = js.undefined
+    var principalArn: js.UndefOr[String] = js.undefined
     /**
          * The value of the account settings with which to filter results. You must also specify an account setting name to use this parameter.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1053,7 +1053,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value to include in a future ListAccountSettings request. When the results of a ListAccountSettings request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The account settings for the resource.
          */
@@ -1065,15 +1065,15 @@ object ECSNs extends js.Object {
     /**
          * The name of the attribute with which to filter the results. 
          */
-    var attributeName: js.UndefOr[java.lang.String] = js.undefined
+    var attributeName: js.UndefOr[String] = js.undefined
     /**
          * The value of the attribute with which to filter results. You must also specify an attribute name to use this parameter.
          */
-    var attributeValue: js.UndefOr[java.lang.String] = js.undefined
+    var attributeValue: js.UndefOr[String] = js.undefined
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster to list attributes. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of cluster results returned by ListAttributes in paginated output. When this parameter is used, ListAttributes only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListAttributes request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListAttributes returns up to 100 results and a nextToken value if applicable.
          */
@@ -1081,7 +1081,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated ListAttributes request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The type of the target with which to list attributes.
          */
@@ -1097,7 +1097,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value to include in a future ListAttributes request. When the results of a ListAttributes request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1109,7 +1109,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated ListClusters request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1121,7 +1121,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value to include in a future ListClusters request. When the results of a ListClusters request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1129,11 +1129,11 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the container instances to list. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * You can filter the results of a ListContainerInstances operation with cluster query language statements. For more information, see Cluster Query Language in the Amazon Elastic Container Service Developer Guide.
          */
-    var filter: js.UndefOr[java.lang.String] = js.undefined
+    var filter: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of container instance results returned by ListContainerInstances in paginated output. When this parameter is used, ListContainerInstances only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListContainerInstances request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListContainerInstances returns up to 100 results and a nextToken value if applicable.
          */
@@ -1141,7 +1141,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated ListContainerInstances request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * Filters the container instances by status. For example, if you specify the DRAINING status, the results include only container instances that have been set to DRAINING using UpdateContainerInstancesState. If you do not specify this parameter, the default is to include container instances set to ACTIVE and DRAINING.
          */
@@ -1157,7 +1157,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value to include in a future ListContainerInstances request. When the results of a ListContainerInstances request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1165,7 +1165,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the services to list. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The launch type for the services to list.
          */
@@ -1177,7 +1177,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated ListServices request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The scheduling strategy for services to list.
          */
@@ -1189,7 +1189,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value to include in a future ListServices request. When the results of a ListServices request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The list of full ARN entries for each service associated with the specified cluster.
          */
@@ -1201,7 +1201,7 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) that identifies the resource for which to list the tags. Currently, the supported resources are Amazon ECS tasks, services, task definitions, clusters, and container instances.
          */
-    var resourceArn: java.lang.String
+    var resourceArn: String
   }
   
   
@@ -1217,7 +1217,7 @@ object ECSNs extends js.Object {
     /**
          * The familyPrefix is a string that is used to filter the results of ListTaskDefinitionFamilies. If you specify a familyPrefix, only task definition family names that begin with the familyPrefix string are returned.
          */
-    var familyPrefix: js.UndefOr[java.lang.String] = js.undefined
+    var familyPrefix: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of task definition family results returned by ListTaskDefinitionFamilies in paginated output. When this parameter is used, ListTaskDefinitions only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListTaskDefinitionFamilies request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListTaskDefinitionFamilies returns up to 100 results and a nextToken value if applicable.
          */
@@ -1225,7 +1225,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated ListTaskDefinitionFamilies request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The task definition family status with which to filter the ListTaskDefinitionFamilies results. By default, both ACTIVE and INACTIVE task definition families are listed. If this parameter is set to ACTIVE, only task definition families that have an ACTIVE task definition revision are returned. If this parameter is set to INACTIVE, only task definition families that do not have any ACTIVE task definition revisions are returned. If you paginate the resulting output, be sure to keep the status value constant in each subsequent request.
          */
@@ -1241,7 +1241,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value to include in a future ListTaskDefinitionFamilies request. When the results of a ListTaskDefinitionFamilies request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1249,7 +1249,7 @@ object ECSNs extends js.Object {
     /**
          * The full family name with which to filter the ListTaskDefinitions results. Specifying a familyPrefix limits the listed task definitions to task definition revisions that belong to that family.
          */
-    var familyPrefix: js.UndefOr[java.lang.String] = js.undefined
+    var familyPrefix: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of task definition results returned by ListTaskDefinitions in paginated output. When this parameter is used, ListTaskDefinitions only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListTaskDefinitions request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListTaskDefinitions returns up to 100 results and a nextToken value if applicable.
          */
@@ -1257,7 +1257,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated ListTaskDefinitions request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The order in which to sort the results. Valid values are ASC and DESC. By default (ASC), task definitions are listed lexicographically by family name and in ascending numerical order by revision so that the newest task definitions in a family are listed last. Setting this parameter to DESC reverses the sort order on family name and revision so that the newest task definitions in a family are listed first.
          */
@@ -1273,7 +1273,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value to include in a future ListTaskDefinitions request. When the results of a ListTaskDefinitions request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The list of task definition Amazon Resource Name (ARN) entries for the ListTaskDefinitions request.
          */
@@ -1285,11 +1285,11 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the tasks to list. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The container instance ID or full ARN of the container instance with which to filter the ListTasks results. Specifying a containerInstance limits the results to tasks that belong to that container instance.
          */
-    var containerInstance: js.UndefOr[java.lang.String] = js.undefined
+    var containerInstance: js.UndefOr[String] = js.undefined
     /**
          * The task desired status with which to filter the ListTasks results. Specifying a desiredStatus of STOPPED limits the results to tasks that Amazon ECS has set the desired status to STOPPED. This can be useful for debugging tasks that are not starting properly or have died or finished. The default status filter is RUNNING, which shows tasks that Amazon ECS has set the desired status to RUNNING.  Although you can filter results based on a desired status of PENDING, this does not return any results. Amazon ECS never sets the desired status of a task to that value (only a task's lastStatus may have a value of PENDING). 
          */
@@ -1297,7 +1297,7 @@ object ECSNs extends js.Object {
     /**
          * The name of the family with which to filter the ListTasks results. Specifying a family limits the results to tasks that belong to that family.
          */
-    var family: js.UndefOr[java.lang.String] = js.undefined
+    var family: js.UndefOr[String] = js.undefined
     /**
          * The launch type for services to list.
          */
@@ -1309,15 +1309,15 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated ListTasks request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the service with which to filter the ListTasks results. Specifying a serviceName limits the results to tasks that belong to that service.
          */
-    var serviceName: js.UndefOr[java.lang.String] = js.undefined
+    var serviceName: js.UndefOr[String] = js.undefined
     /**
          * The startedBy value with which to filter the task results. Specifying a startedBy value limits the results to tasks that were started with that value.
          */
-    var startedBy: js.UndefOr[java.lang.String] = js.undefined
+    var startedBy: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1325,7 +1325,7 @@ object ECSNs extends js.Object {
     /**
          * The nextToken value to include in a future ListTasks request. When the results of a ListTasks request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The list of task ARN entries for the ListTasks request.
          */
@@ -1337,7 +1337,7 @@ object ECSNs extends js.Object {
     /**
          * The name of the container (as it appears in a container definition) to associate with the load balancer.
          */
-    var containerName: js.UndefOr[java.lang.String] = js.undefined
+    var containerName: js.UndefOr[String] = js.undefined
     /**
          * The port on the container to associate with the load balancer. This port must correspond to a containerPort in the service's task definition. Your container instances must allow ingress traffic on the hostPort of the port mapping.
          */
@@ -1345,11 +1345,11 @@ object ECSNs extends js.Object {
     /**
          * The name of a load balancer.
          */
-    var loadBalancerName: js.UndefOr[java.lang.String] = js.undefined
+    var loadBalancerName: js.UndefOr[String] = js.undefined
     /**
          * The full Amazon Resource Name (ARN) of the Elastic Load Balancing target group or groups associated with a service. For services using the ECS deployment controller, you are limited to one target group. For services using the CODE_DEPLOY deployment controller, you are required to define two target groups for the load balancer.  If your service's task definition uses the awsvpc network mode (which is required for the Fargate launch type), you must choose ip as the target type, not instance, because tasks that use the awsvpc network mode are associated with an elastic network interface, not an Amazon EC2 instance. 
          */
-    var targetGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var targetGroupArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1366,14 +1366,14 @@ object ECSNs extends js.Object {
   
   
   trait LogConfigurationOptionsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait MountPoint extends js.Object {
     /**
          * The path on the container to mount the host volume at.
          */
-    var containerPath: js.UndefOr[java.lang.String] = js.undefined
+    var containerPath: js.UndefOr[String] = js.undefined
     /**
          * If this value is true, the container has read-only access to the volume. If this value is false, then the container can write to the volume. The default value is false.
          */
@@ -1381,7 +1381,7 @@ object ECSNs extends js.Object {
     /**
          * The name of the volume to mount. Must be a volume name referenced in the name parameter of task definition volume.
          */
-    var sourceVolume: js.UndefOr[java.lang.String] = js.undefined
+    var sourceVolume: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1389,7 +1389,7 @@ object ECSNs extends js.Object {
     /**
          * The IP address that the container is bound to on the container instance.
          */
-    var bindIP: js.UndefOr[java.lang.String] = js.undefined
+    var bindIP: js.UndefOr[String] = js.undefined
     /**
          * The port number on the container that is used with the network binding.
          */
@@ -1417,15 +1417,15 @@ object ECSNs extends js.Object {
     /**
          * The attachment ID for the network interface.
          */
-    var attachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var attachmentId: js.UndefOr[String] = js.undefined
     /**
          * The private IPv6 address for the network interface.
          */
-    var ipv6Address: js.UndefOr[java.lang.String] = js.undefined
+    var ipv6Address: js.UndefOr[String] = js.undefined
     /**
          * The private IPv4 address for the network interface.
          */
-    var privateIpv4Address: js.UndefOr[java.lang.String] = js.undefined
+    var privateIpv4Address: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1433,7 +1433,7 @@ object ECSNs extends js.Object {
     /**
          * A cluster query language expression to apply to the constraint. You cannot specify an expression if the constraint type is distinctInstance. For more information, see Cluster Query Language in the Amazon Elastic Container Service Developer Guide.
          */
-    var expression: js.UndefOr[java.lang.String] = js.undefined
+    var expression: js.UndefOr[String] = js.undefined
     /**
          * The type of constraint. Use distinctInstance to ensure that each task in a particular group is running on a different container instance. Use memberOf to restrict the selection to a group of valid candidates. The value distinctInstance is not supported in task definitions.
          */
@@ -1445,7 +1445,7 @@ object ECSNs extends js.Object {
     /**
          * The field to apply the placement strategy against. For the spread placement strategy, valid values are instanceId (or host, which has the same effect), or any platform or custom attribute that is applied to a container instance, such as attribute:ecs.availability-zone. For the binpack placement strategy, valid values are cpu and memory. For the random placement strategy, this field is not used.
          */
-    var field: js.UndefOr[java.lang.String] = js.undefined
+    var field: js.UndefOr[String] = js.undefined
     /**
          * The type of placement strategy. The random placement strategy randomly places tasks on available candidates. The spread placement strategy spreads placement across available candidates evenly based on the field parameter. The binpack strategy places tasks on available candidates that have the least available amount of the resource that is specified with the field parameter. For example, if you binpack on memory, a task is placed on the instance with the least amount of remaining memory (but still enough to run the task).
          */
@@ -1477,11 +1477,11 @@ object ECSNs extends js.Object {
     /**
          * The ARN of the principal, which can be an IAM user, IAM role, or the root user. If you specify the root user, it modifies the ARN and resource ID format for all IAM users, IAM roles, and the root user of the account unless an IAM user or role explicitly overrides these settings for themselves. If this field is omitted, the setting are changed only for the authenticated user.
          */
-    var principalArn: js.UndefOr[java.lang.String] = js.undefined
+    var principalArn: js.UndefOr[String] = js.undefined
     /**
          * The account setting value for the specified principal ARN. Accepted values are ENABLED and DISABLED.
          */
-    var value: java.lang.String
+    var value: String
   }
   
   
@@ -1501,7 +1501,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that contains the resource to apply attributes. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1521,19 +1521,19 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster with which to register your container instance. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the container instance (if it was previously registered).
          */
-    var containerInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var containerInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The instance identity document for the EC2 instance to register. This document can be found by running the following command from the instance: curl http://169.254.169.254/latest/dynamic/instance-identity/document/ 
          */
-    var instanceIdentityDocument: js.UndefOr[java.lang.String] = js.undefined
+    var instanceIdentityDocument: js.UndefOr[String] = js.undefined
     /**
          * The instance identity document signature for the EC2 instance to register. This signature can be found by running the following command from the instance: curl http://169.254.169.254/latest/dynamic/instance-identity/signature/ 
          */
-    var instanceIdentityDocumentSignature: js.UndefOr[java.lang.String] = js.undefined
+    var instanceIdentityDocumentSignature: js.UndefOr[String] = js.undefined
     /**
          * The metadata that you apply to the container instance to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
          */
@@ -1565,15 +1565,15 @@ object ECSNs extends js.Object {
     /**
          * The number of CPU units used by the task. It can be expressed as an integer using CPU units, for example 1024, or as a string using vCPUs, for example 1 vCPU or 1 vcpu, in a task definition. String values are converted to an integer indicating the CPU units when the task definition is registered.  Task-level CPU and memory parameters are ignored for Windows containers. We recommend specifying container-level resources for Windows containers.  If you are using the EC2 launch type, this field is optional. Supported values are between 128 CPU units (0.125 vCPUs) and 10240 CPU units (10 vCPUs). If you are using the Fargate launch type, this field is required and you must use one of the following values, which determines your range of supported values for the memory parameter:   256 (.25 vCPU) - Available memory values: 512 (0.5 GB), 1024 (1 GB), 2048 (2 GB)   512 (.5 vCPU) - Available memory values: 1024 (1 GB), 2048 (2 GB), 3072 (3 GB), 4096 (4 GB)   1024 (1 vCPU) - Available memory values: 2048 (2 GB), 3072 (3 GB), 4096 (4 GB), 5120 (5 GB), 6144 (6 GB), 7168 (7 GB), 8192 (8 GB)   2048 (2 vCPU) - Available memory values: Between 4096 (4 GB) and 16384 (16 GB) in increments of 1024 (1 GB)   4096 (4 vCPU) - Available memory values: Between 8192 (8 GB) and 30720 (30 GB) in increments of 1024 (1 GB)  
          */
-    var cpu: js.UndefOr[java.lang.String] = js.undefined
+    var cpu: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
          */
-    var executionRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var executionRoleArn: js.UndefOr[String] = js.undefined
     /**
          * You must specify a family for a task definition, which allows you to track multiple versions of the same task definition. The family is used as a name for your task definition. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
          */
-    var family: java.lang.String
+    var family: String
     /**
          * The IPC resource namespace to use for the containers in the task. The valid values are host, task, or none. If host is specified, then all containers within the tasks that specified the host IPC mode on the same container instance share the same IPC resources with the host Amazon EC2 instance. If task is specified, all containers within the specified task share the same IPC resources. If none is specified, then IPC resources within the containers of a task are private and not shared with other containers in a task or on the container instance. If no value is specified, then the IPC resource namespace sharing depends on the Docker daemon setting on the container instance. For more information, see IPC settings in the Docker run reference. If the host IPC mode is used, be aware that there is a heightened risk of undesired IPC namespace expose. For more information, see Docker security. If you are setting namespaced kernel parameters using systemControls for the containers in the task, the following will apply to your IPC resource namespace. For more information, see System Controls in the Amazon Elastic Container Service Developer Guide.   For tasks that use the host IPC mode, IPC namespace related systemControls are not supported.   For tasks that use the task IPC mode, IPC namespace related systemControls will apply to all containers within a task.    This parameter is not supported for Windows containers or tasks using the Fargate launch type. 
          */
@@ -1581,7 +1581,7 @@ object ECSNs extends js.Object {
     /**
          * The amount of memory (in MiB) used by the task. It can be expressed as an integer using MiB, for example 1024, or as a string using GB, for example 1GB or 1 GB, in a task definition. String values are converted to an integer indicating the MiB when the task definition is registered.  Task-level CPU and memory parameters are ignored for Windows containers. We recommend specifying container-level resources for Windows containers.  If using the EC2 launch type, this field is optional. If using the Fargate launch type, this field is required and you must use one of the following values, which determines your range of supported values for the cpu parameter:   512 (0.5 GB), 1024 (1 GB), 2048 (2 GB) - Available cpu values: 256 (.25 vCPU)   1024 (1 GB), 2048 (2 GB), 3072 (3 GB), 4096 (4 GB) - Available cpu values: 512 (.5 vCPU)   2048 (2 GB), 3072 (3 GB), 4096 (4 GB), 5120 (5 GB), 6144 (6 GB), 7168 (7 GB), 8192 (8 GB) - Available cpu values: 1024 (1 vCPU)   Between 4096 (4 GB) and 16384 (16 GB) in increments of 1024 (1 GB) - Available cpu values: 2048 (2 vCPU)   Between 8192 (8 GB) and 30720 (30 GB) in increments of 1024 (1 GB) - Available cpu values: 4096 (4 vCPU)  
          */
-    var memory: js.UndefOr[java.lang.String] = js.undefined
+    var memory: js.UndefOr[String] = js.undefined
     /**
          * The Docker networking mode to use for the containers in the task. The valid values are none, bridge, awsvpc, and host. The default Docker network mode is bridge. If you are using the Fargate launch type, the awsvpc network mode is required. If you are using the EC2 launch type, any network mode can be used. If the network mode is set to none, you cannot specify port mappings in your container definitions, and the tasks containers do not have external connectivity. The host and awsvpc network modes offer the highest networking performance for containers because they use the EC2 network stack instead of the virtualized network stack provided by the bridge mode. With the host and awsvpc network modes, exposed container ports are mapped directly to the corresponding host port (for the host network mode) or the attached elastic network interface port (for the awsvpc network mode), so you cannot take advantage of dynamic host port mappings.  If the network mode is awsvpc, the task is allocated an elastic network interface, and you must specify a NetworkConfiguration value when you create a service or run a task with the task definition. For more information, see Task Networking in the Amazon Elastic Container Service Developer Guide.  Currently, only Amazon ECS-optimized AMIs, other Amazon Linux variants with the ecs-init package, or AWS Fargate infrastructure support the awsvpc network mode.   If the network mode is host, you cannot run multiple instantiations of the same task on a single container instance when port mappings are used. Docker for Windows uses different network modes than Docker for Linux. When you register a task definition with Windows containers, you must not specify a network mode. If you use the console to register a task definition with Windows containers, you must choose the &lt;default&gt; network mode object.  For more information, see Network settings in the Docker run reference.
          */
@@ -1605,7 +1605,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role. For more information, see IAM Roles for Tasks in the Amazon Elastic Container Service Developer Guide.
          */
-    var taskRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskRoleArn: js.UndefOr[String] = js.undefined
     /**
          * A list of volume definitions in JSON format that containers in your task may use.
          */
@@ -1629,7 +1629,7 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the secret containing the private repository credentials.  When you are using the Amazon ECS API, AWS CLI, or AWS SDK, if the secret exists in the same Region as the task that you are launching then you can use either the full ARN or the name of the secret. When you are using the AWS Management Console, you must specify the full ARN of the secret. 
          */
-    var credentialsParameter: java.lang.String
+    var credentialsParameter: String
   }
   
   
@@ -1649,7 +1649,7 @@ object ECSNs extends js.Object {
     /**
          * The name of the resource, such as CPU, MEMORY, PORTS, PORTS_UDP, or a user-defined resource.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * When the stringSetValue type is set, the value of the resource must be a string type.
          */
@@ -1657,7 +1657,7 @@ object ECSNs extends js.Object {
     /**
          * The type of the resource, such as INTEGER, DOUBLE, LONG, or STRINGSET.
          */
-    var `type`: js.UndefOr[java.lang.String] = js.undefined
+    var `type`: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1665,7 +1665,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster on which to run your task. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The number of instantiations of the specified task to place on your cluster. You can specify up to 10 tasks per call.
          */
@@ -1673,11 +1673,11 @@ object ECSNs extends js.Object {
     /**
          * Specifies whether to enable Amazon ECS managed tags for the task. For more information, see Tagging Your Amazon ECS Resources in the Amazon Elastic Container Service Developer Guide.
          */
-    var enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined
+    var enableECSManagedTags: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the task group to associate with the task. The default value is the family name of the task definition (for example, family:my-family-name).
          */
-    var group: js.UndefOr[java.lang.String] = js.undefined
+    var group: js.UndefOr[String] = js.undefined
     /**
          * The launch type on which to run your task. For more information, see Amazon ECS Launch Types in the Amazon Elastic Container Service Developer Guide.
          */
@@ -1701,7 +1701,7 @@ object ECSNs extends js.Object {
     /**
          * The platform version the task should run. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
          */
-    var platformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var platformVersion: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether to propagate the tags from the task definition or the service to the task. If no value is specified, the tags are not propagated.
          */
@@ -1709,7 +1709,7 @@ object ECSNs extends js.Object {
     /**
          * An optional tag specified when a task is started. For example, if you automatically trigger a task to run a batch process job, you could apply a unique identifier for that job to your task with the startedBy parameter. You can then identify which tasks belong to that job by filtering the results of a ListTasks call with the startedBy value. Up to 36 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. If a task is started by an Amazon ECS service, then the startedBy parameter contains the deployment ID of the service that starts it.
          */
-    var startedBy: js.UndefOr[java.lang.String] = js.undefined
+    var startedBy: js.UndefOr[String] = js.undefined
     /**
          * The metadata that you apply to the task to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
          */
@@ -1717,7 +1717,7 @@ object ECSNs extends js.Object {
     /**
          * The family and revision (family:revision) or full ARN of the task definition to run. If a revision is not specified, the latest ACTIVE revision is used.
          */
-    var taskDefinition: java.lang.String
+    var taskDefinition: String
   }
   
   
@@ -1749,11 +1749,11 @@ object ECSNs extends js.Object {
     /**
          * The value to set as the environment variable on the container.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * The secret to expose to the container. Supported values are either the full ARN or the name of the parameter in the AWS Systems Manager Parameter Store. 
          */
-    var valueFrom: java.lang.String
+    var valueFrom: String
   }
   
   
@@ -1761,7 +1761,7 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the cluster that hosts the service.
          */
-    var clusterArn: js.UndefOr[java.lang.String] = js.undefined
+    var clusterArn: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp for when the service was created.
          */
@@ -1769,7 +1769,7 @@ object ECSNs extends js.Object {
     /**
          * The principal that created the service.
          */
-    var createdBy: js.UndefOr[java.lang.String] = js.undefined
+    var createdBy: js.UndefOr[String] = js.undefined
     /**
          * Optional deployment parameters that control how many tasks run during the deployment and the ordering of stopping and starting tasks.
          */
@@ -1789,7 +1789,7 @@ object ECSNs extends js.Object {
     /**
          * Specifies whether to enable Amazon ECS managed tags for the tasks in the service. For more information, see Tagging Your Amazon ECS Resources in the Amazon Elastic Container Service Developer Guide.
          */
-    var enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined
+    var enableECSManagedTags: js.UndefOr[Boolean] = js.undefined
     /**
          * The event stream for your service. A maximum of 100 of the latest events are displayed.
          */
@@ -1825,7 +1825,7 @@ object ECSNs extends js.Object {
     /**
          * The platform version on which your tasks in the service are running. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
          */
-    var platformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var platformVersion: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether to propagate the tags from the task definition or the service to the task. If no value is specified, the tags are not propagated.
          */
@@ -1833,7 +1833,7 @@ object ECSNs extends js.Object {
     /**
          * The ARN of the IAM role associated with the service that allows the Amazon ECS container agent to register container instances with an Elastic Load Balancing load balancer.
          */
-    var roleArn: js.UndefOr[java.lang.String] = js.undefined
+    var roleArn: js.UndefOr[String] = js.undefined
     /**
          * The number of tasks in the cluster that are in the RUNNING state.
          */
@@ -1845,11 +1845,11 @@ object ECSNs extends js.Object {
     /**
          * The ARN that identifies the service. The ARN contains the arn:aws:ecs namespace, followed by the Region of the service, the AWS account ID of the service owner, the service namespace, and then the service name. For example, arn:aws:ecs:region:012345678910:service/my-service .
          */
-    var serviceArn: js.UndefOr[java.lang.String] = js.undefined
+    var serviceArn: js.UndefOr[String] = js.undefined
     /**
          * The name of your service. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. Service names must be unique within a cluster, but you can have similarly named services in multiple clusters within a Region or across multiple Regions.
          */
-    var serviceName: js.UndefOr[java.lang.String] = js.undefined
+    var serviceName: js.UndefOr[String] = js.undefined
     /**
          * 
          */
@@ -1857,7 +1857,7 @@ object ECSNs extends js.Object {
     /**
          * The status of the service. The valid values are ACTIVE, DRAINING, or INACTIVE.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * The metadata that you apply to the service to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
          */
@@ -1865,7 +1865,7 @@ object ECSNs extends js.Object {
     /**
          * The task definition to use for tasks in the service. This value is specified when the service is created with CreateService, and it can be modified with UpdateService.
          */
-    var taskDefinition: js.UndefOr[java.lang.String] = js.undefined
+    var taskDefinition: js.UndefOr[String] = js.undefined
     /**
          * Information about a set of Amazon ECS tasks in an AWS CodeDeploy deployment. An Amazon ECS task set includes details such as the desired number of tasks, how many tasks are running, and whether the task set serves production traffic.
          */
@@ -1881,11 +1881,11 @@ object ECSNs extends js.Object {
     /**
          * The ID string of the event.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The event message.
          */
-    var message: js.UndefOr[java.lang.String] = js.undefined
+    var message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1893,7 +1893,7 @@ object ECSNs extends js.Object {
     /**
          * The container name value, already specified in the task definition, to be used for your service discovery service. If the task definition that your service task specifies uses the bridge or host network mode, you must specify a containerName and containerPort combination from the task definition. If the task definition that your service task specifies uses the awsvpc network mode and a type SRV DNS record is used, you must specify either a containerName and containerPort combination or a port value, but not both.
          */
-    var containerName: js.UndefOr[java.lang.String] = js.undefined
+    var containerName: js.UndefOr[String] = js.undefined
     /**
          * The port value, already specified in the task definition, to be used for your service discovery service. If the task definition your service task specifies uses the bridge or host network mode, you must specify a containerName and containerPort combination from the task definition. If the task definition your service task specifies uses the awsvpc network mode and a type SRV DNS record is used, you must specify either a containerName and containerPort combination or a port value, but not both.
          */
@@ -1905,7 +1905,7 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the service registry. The currently supported service registry is Amazon Route 53 Auto Naming. For more information, see Service.
          */
-    var registryArn: js.UndefOr[java.lang.String] = js.undefined
+    var registryArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1917,11 +1917,11 @@ object ECSNs extends js.Object {
     /**
          * The ARN of the principal, which can be an IAM user, IAM role, or the root user. If this field is omitted, the authenticated user is assumed.
          */
-    var principalArn: js.UndefOr[java.lang.String] = js.undefined
+    var principalArn: js.UndefOr[String] = js.undefined
     /**
          * The current account setting for the resource name. If ENABLED, then the resource will receive the new Amazon Resource Name (ARN) and resource identifier (ID) format. If DISABLED, then the resource will receive the old Amazon Resource Name (ARN) and resource identifier (ID) format.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1929,7 +1929,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster on which to start your task. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The container instance IDs or full ARN entries for the container instances on which you would like to place your task. You can specify up to 10 container instances.
          */
@@ -1937,11 +1937,11 @@ object ECSNs extends js.Object {
     /**
          * Specifies whether to enable Amazon ECS managed tags for the task. For more information, see Tagging Your Amazon ECS Resources in the Amazon Elastic Container Service Developer Guide.
          */
-    var enableECSManagedTags: js.UndefOr[scala.Boolean] = js.undefined
+    var enableECSManagedTags: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the task group to associate with the task. The default value is the family name of the task definition (for example, family:my-family-name).
          */
-    var group: js.UndefOr[java.lang.String] = js.undefined
+    var group: js.UndefOr[String] = js.undefined
     /**
          * The VPC subnet and security group configuration for tasks that receive their own elastic network interface by using the awsvpc networking mode.
          */
@@ -1957,7 +1957,7 @@ object ECSNs extends js.Object {
     /**
          * An optional tag specified when a task is started. For example, if you automatically trigger a task to run a batch process job, you could apply a unique identifier for that job to your task with the startedBy parameter. You can then identify which tasks belong to that job by filtering the results of a ListTasks call with the startedBy value. Up to 36 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. If a task is started by an Amazon ECS service, then the startedBy parameter contains the deployment ID of the service that starts it.
          */
-    var startedBy: js.UndefOr[java.lang.String] = js.undefined
+    var startedBy: js.UndefOr[String] = js.undefined
     /**
          * The metadata that you apply to the task to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
          */
@@ -1965,7 +1965,7 @@ object ECSNs extends js.Object {
     /**
          * The family and revision (family:revision) or full ARN of the task definition to start. If a revision is not specified, the latest ACTIVE revision is used.
          */
-    var taskDefinition: java.lang.String
+    var taskDefinition: String
   }
   
   
@@ -1985,15 +1985,15 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the task to stop. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * An optional message specified when a task is stopped. For example, if you are using a custom scheduler, you can use this parameter to specify the reason for stopping the task here, and the message appears in subsequent DescribeTasks API operations on this task. Up to 255 characters are allowed in this message.
          */
-    var reason: js.UndefOr[java.lang.String] = js.undefined
+    var reason: js.UndefOr[String] = js.undefined
     /**
          * The task ID or full ARN entry of the task to stop.
          */
-    var task: java.lang.String
+    var task: String
   }
   
   
@@ -2006,18 +2006,18 @@ object ECSNs extends js.Object {
   
   
   trait StringMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait SubmitContainerStateChangeRequest extends js.Object {
     /**
          * The short name or full ARN of the cluster that hosts the container.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The name of the container.
          */
-    var containerName: js.UndefOr[java.lang.String] = js.undefined
+    var containerName: js.UndefOr[String] = js.undefined
     /**
          * The exit code returned for the state change request.
          */
@@ -2029,15 +2029,15 @@ object ECSNs extends js.Object {
     /**
          * The reason for the state change request.
          */
-    var reason: js.UndefOr[java.lang.String] = js.undefined
+    var reason: js.UndefOr[String] = js.undefined
     /**
          * The status of the state change request.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * The task ID or full Amazon Resource Name (ARN) of the task that hosts the container.
          */
-    var task: js.UndefOr[java.lang.String] = js.undefined
+    var task: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2045,7 +2045,7 @@ object ECSNs extends js.Object {
     /**
          * Acknowledgement of the state change.
          */
-    var acknowledgment: js.UndefOr[java.lang.String] = js.undefined
+    var acknowledgment: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2057,7 +2057,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the task.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * Any containers associated with the state change request.
          */
@@ -2077,15 +2077,15 @@ object ECSNs extends js.Object {
     /**
          * The reason for the state change request.
          */
-    var reason: js.UndefOr[java.lang.String] = js.undefined
+    var reason: js.UndefOr[String] = js.undefined
     /**
          * The status of the state change request.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * The task ID or full ARN of the task in the state change request.
          */
-    var task: js.UndefOr[java.lang.String] = js.undefined
+    var task: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2093,7 +2093,7 @@ object ECSNs extends js.Object {
     /**
          * Acknowledgement of the state change.
          */
-    var acknowledgment: js.UndefOr[java.lang.String] = js.undefined
+    var acknowledgment: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2101,11 +2101,11 @@ object ECSNs extends js.Object {
     /**
          * The namespaced kernel parameter for which to set a value.
          */
-    var namespace: js.UndefOr[java.lang.String] = js.undefined
+    var namespace: js.UndefOr[String] = js.undefined
     /**
          * The value for the namespaced kernel parameter specified in namespace.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2125,7 +2125,7 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource to which to add tags. Currently, the supported resources are Amazon ECS tasks, services, task definitions, clusters, and container instances.
          */
-    var resourceArn: java.lang.String
+    var resourceArn: String
     /**
          * The tags to add to the resource. A tag is an array of key-value pairs. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
          */
@@ -2144,7 +2144,7 @@ object ECSNs extends js.Object {
     /**
          * The ARN of the cluster that hosts the task.
          */
-    var clusterArn: js.UndefOr[java.lang.String] = js.undefined
+    var clusterArn: js.UndefOr[String] = js.undefined
     /**
          * The connectivity status of a task.
          */
@@ -2156,7 +2156,7 @@ object ECSNs extends js.Object {
     /**
          * The ARN of the container instances that host the task.
          */
-    var containerInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var containerInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The containers associated with the task.
          */
@@ -2164,7 +2164,7 @@ object ECSNs extends js.Object {
     /**
          * The number of CPU units used by the task as expressed in a task definition. It can be expressed as an integer using CPU units, for example 1024. It can also be expressed as a string using vCPUs, for example 1 vCPU or 1 vcpu. String values are converted to an integer indicating the CPU units when the task definition is registered. If you are using the EC2 launch type, this field is optional. Supported values are between 128 CPU units (0.125 vCPUs) and 10240 CPU units (10 vCPUs). If you are using the Fargate launch type, this field is required and you must use one of the following values, which determines your range of supported values for the memory parameter:   256 (.25 vCPU) - Available memory values: 512 (0.5 GB), 1024 (1 GB), 2048 (2 GB)   512 (.5 vCPU) - Available memory values: 1024 (1 GB), 2048 (2 GB), 3072 (3 GB), 4096 (4 GB)   1024 (1 vCPU) - Available memory values: 2048 (2 GB), 3072 (3 GB), 4096 (4 GB), 5120 (5 GB), 6144 (6 GB), 7168 (7 GB), 8192 (8 GB)   2048 (2 vCPU) - Available memory values: Between 4096 (4 GB) and 16384 (16 GB) in increments of 1024 (1 GB)   4096 (4 vCPU) - Available memory values: Between 8192 (8 GB) and 30720 (30 GB) in increments of 1024 (1 GB)  
          */
-    var cpu: js.UndefOr[java.lang.String] = js.undefined
+    var cpu: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp for when the task was created (the task entered the PENDING state).
          */
@@ -2172,7 +2172,7 @@ object ECSNs extends js.Object {
     /**
          * The desired status of the task. For more information, see Task Lifecycle.
          */
-    var desiredStatus: js.UndefOr[java.lang.String] = js.undefined
+    var desiredStatus: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp for when the task execution stopped.
          */
@@ -2180,7 +2180,7 @@ object ECSNs extends js.Object {
     /**
          * The name of the task group associated with the task.
          */
-    var group: js.UndefOr[java.lang.String] = js.undefined
+    var group: js.UndefOr[String] = js.undefined
     /**
          * The health status for the task, which is determined by the health of the essential containers in the task. If all essential containers in the task are reporting as HEALTHY, then the task status also reports as HEALTHY. If any essential containers in the task are reporting as UNHEALTHY or UNKNOWN, then the task status also reports as UNHEALTHY or UNKNOWN, accordingly.  The Amazon ECS container agent does not monitor or report on Docker health checks that are embedded in a container image (such as those specified in a parent image or from the image's Dockerfile) and not specified in the container definition. Health check parameters that are specified in a container definition override any Docker health checks that exist in the container image. 
          */
@@ -2188,7 +2188,7 @@ object ECSNs extends js.Object {
     /**
          * The last known status of the task. For more information, see Task Lifecycle.
          */
-    var lastStatus: js.UndefOr[java.lang.String] = js.undefined
+    var lastStatus: js.UndefOr[String] = js.undefined
     /**
          * The launch type on which your task is running. For more information, see Amazon ECS Launch Types in the Amazon Elastic Container Service Developer Guide.
          */
@@ -2196,7 +2196,7 @@ object ECSNs extends js.Object {
     /**
          * The amount of memory (in MiB) used by the task as expressed in a task definition. It can be expressed as an integer using MiB, for example 1024. It can also be expressed as a string using GB, for example 1GB or 1 GB. String values are converted to an integer indicating the MiB when the task definition is registered. If you are using the EC2 launch type, this field is optional. If you are using the Fargate launch type, this field is required and you must use one of the following values, which determines your range of supported values for the cpu parameter:   512 (0.5 GB), 1024 (1 GB), 2048 (2 GB) - Available cpu values: 256 (.25 vCPU)   1024 (1 GB), 2048 (2 GB), 3072 (3 GB), 4096 (4 GB) - Available cpu values: 512 (.5 vCPU)   2048 (2 GB), 3072 (3 GB), 4096 (4 GB), 5120 (5 GB), 6144 (6 GB), 7168 (7 GB), 8192 (8 GB) - Available cpu values: 1024 (1 vCPU)   Between 4096 (4 GB) and 16384 (16 GB) in increments of 1024 (1 GB) - Available cpu values: 2048 (2 vCPU)   Between 8192 (8 GB) and 30720 (30 GB) in increments of 1024 (1 GB) - Available cpu values: 4096 (4 vCPU)  
          */
-    var memory: js.UndefOr[java.lang.String] = js.undefined
+    var memory: js.UndefOr[String] = js.undefined
     /**
          * One or more container overrides.
          */
@@ -2204,7 +2204,7 @@ object ECSNs extends js.Object {
     /**
          * The platform version on which your task is running. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
          */
-    var platformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var platformVersion: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp for when the container image pull began.
          */
@@ -2220,7 +2220,7 @@ object ECSNs extends js.Object {
     /**
          * The tag specified when a task is started. If the task is started by an Amazon ECS service, then the startedBy parameter contains the deployment ID of the service that starts it.
          */
-    var startedBy: js.UndefOr[java.lang.String] = js.undefined
+    var startedBy: js.UndefOr[String] = js.undefined
     /**
          * The stop code indicating why a task was stopped. The stoppedReason may contain additional details.
          */
@@ -2232,7 +2232,7 @@ object ECSNs extends js.Object {
     /**
          * The reason that the task was stopped.
          */
-    var stoppedReason: js.UndefOr[java.lang.String] = js.undefined
+    var stoppedReason: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp for when the task stops (transitions from the RUNNING state to STOPPED).
          */
@@ -2244,11 +2244,11 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the task.
          */
-    var taskArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskArn: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the task definition that creates the task.
          */
-    var taskDefinitionArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskDefinitionArn: js.UndefOr[String] = js.undefined
     /**
          * The version counter for the task. Every time a task experiences a change that triggers a CloudWatch event, the version counter is incremented. If you are replicating your Amazon ECS task state with CloudWatch Events, you can compare the version of a task reported by the Amazon ECS API actionss with the version reported in CloudWatch Events for the task (inside the detail object) to verify that the version in your event stream is current.
          */
@@ -2268,15 +2268,15 @@ object ECSNs extends js.Object {
     /**
          * The number of cpu units used by the task. If you are using the EC2 launch type, this field is optional and any value can be used. If you are using the Fargate launch type, this field is required and you must use one of the following values, which determines your range of valid values for the memory parameter:   256 (.25 vCPU) - Available memory values: 512 (0.5 GB), 1024 (1 GB), 2048 (2 GB)   512 (.5 vCPU) - Available memory values: 1024 (1 GB), 2048 (2 GB), 3072 (3 GB), 4096 (4 GB)   1024 (1 vCPU) - Available memory values: 2048 (2 GB), 3072 (3 GB), 4096 (4 GB), 5120 (5 GB), 6144 (6 GB), 7168 (7 GB), 8192 (8 GB)   2048 (2 vCPU) - Available memory values: Between 4096 (4 GB) and 16384 (16 GB) in increments of 1024 (1 GB)   4096 (4 vCPU) - Available memory values: Between 8192 (8 GB) and 30720 (30 GB) in increments of 1024 (1 GB)  
          */
-    var cpu: js.UndefOr[java.lang.String] = js.undefined
+    var cpu: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
          */
-    var executionRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var executionRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The family of your task definition, used as the definition name.
          */
-    var family: js.UndefOr[java.lang.String] = js.undefined
+    var family: js.UndefOr[String] = js.undefined
     /**
          * The IPC resource namespace to use for the containers in the task. The valid values are host, task, or none. If host is specified, then all containers within the tasks that specified the host IPC mode on the same container instance share the same IPC resources with the host Amazon EC2 instance. If task is specified, all containers within the specified task share the same IPC resources. If none is specified, then IPC resources within the containers of a task are private and not shared with other containers in a task or on the container instance. If no value is specified, then the IPC resource namespace sharing depends on the Docker daemon setting on the container instance. For more information, see IPC settings in the Docker run reference. If the host IPC mode is used, be aware that there is a heightened risk of undesired IPC namespace expose. For more information, see Docker security. If you are setting namespaced kernel parameters using systemControls for the containers in the task, the following will apply to your IPC resource namespace. For more information, see System Controls in the Amazon Elastic Container Service Developer Guide.   For tasks that use the host IPC mode, IPC namespace related systemControls are not supported.   For tasks that use the task IPC mode, IPC namespace related systemControls will apply to all containers within a task.    This parameter is not supported for Windows containers or tasks using the Fargate launch type. 
          */
@@ -2284,7 +2284,7 @@ object ECSNs extends js.Object {
     /**
          * The amount (in MiB) of memory used by the task. If using the EC2 launch type, this field is optional and any value can be used. If using the Fargate launch type, this field is required and you must use one of the following values, which determines your range of valid values for the cpu parameter:   512 (0.5 GB), 1024 (1 GB), 2048 (2 GB) - Available cpu values: 256 (.25 vCPU)   1024 (1 GB), 2048 (2 GB), 3072 (3 GB), 4096 (4 GB) - Available cpu values: 512 (.5 vCPU)   2048 (2 GB), 3072 (3 GB), 4096 (4 GB), 5120 (5 GB), 6144 (6 GB), 7168 (7 GB), 8192 (8 GB) - Available cpu values: 1024 (1 vCPU)   Between 4096 (4 GB) and 16384 (16 GB) in increments of 1024 (1 GB) - Available cpu values: 2048 (2 vCPU)   Between 8192 (8 GB) and 30720 (30 GB) in increments of 1024 (1 GB) - Available cpu values: 4096 (4 vCPU)  
          */
-    var memory: js.UndefOr[java.lang.String] = js.undefined
+    var memory: js.UndefOr[String] = js.undefined
     /**
          * The Docker networking mode to use for the containers in the task. The valid values are none, bridge, awsvpc, and host. The default Docker network mode is bridge. If you are using the Fargate launch type, the awsvpc network mode is required. If you are using the EC2 launch type, any network mode can be used. If the network mode is set to none, you cannot specify port mappings in your container definitions, and the tasks containers do not have external connectivity. The host and awsvpc network modes offer the highest networking performance for containers because they use the EC2 network stack instead of the virtualized network stack provided by the bridge mode. With the host and awsvpc network modes, exposed container ports are mapped directly to the corresponding host port (for the host network mode) or the attached elastic network interface port (for the awsvpc network mode), so you cannot take advantage of dynamic host port mappings.  If the network mode is awsvpc, the task is allocated an elastic network interface, and you must specify a NetworkConfiguration value when you create a service or run a task with the task definition. For more information, see Task Networking in the Amazon Elastic Container Service Developer Guide.  Currently, only Amazon ECS-optimized AMIs, other Amazon Linux variants with the ecs-init package, or AWS Fargate infrastructure support the awsvpc network mode.   If the network mode is host, you cannot run multiple instantiations of the same task on a single container instance when port mappings are used. Docker for Windows uses different network modes than Docker for Linux. When you register a task definition with Windows containers, you must not specify a network mode. If you use the console to register a task definition with Windows containers, you must choose the &lt;default&gt; network mode object.  For more information, see Network settings in the Docker run reference.
          */
@@ -2316,11 +2316,11 @@ object ECSNs extends js.Object {
     /**
          * The full Amazon Resource Name (ARN) of the task definition.
          */
-    var taskDefinitionArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskDefinitionArn: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role. IAM roles for tasks on Windows require that the -EnableTaskIAMRole option is set when you launch the Amazon ECS-optimized Windows AMI. Your containers must also run some configuration code in order to take advantage of the feature. For more information, see Windows IAM Roles for Tasks in the Amazon Elastic Container Service Developer Guide.
          */
-    var taskRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The list of volumes in a task. If you are using the Fargate launch type, the host and sourcePath parameters are not supported. For more information about volume definition parameters and defaults, see Amazon ECS Task Definitions in the Amazon Elastic Container Service Developer Guide.
          */
@@ -2332,7 +2332,7 @@ object ECSNs extends js.Object {
     /**
          * A cluster query language expression to apply to the constraint. For more information, see Cluster Query Language in the Amazon Elastic Container Service Developer Guide.
          */
-    var expression: js.UndefOr[java.lang.String] = js.undefined
+    var expression: js.UndefOr[String] = js.undefined
     /**
          * The type of constraint. The DistinctInstance constraint ensures that each task in a particular group is running on a different container instance. The MemberOf constraint restricts selection to be from a group of valid candidates.
          */
@@ -2348,11 +2348,11 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
          */
-    var executionRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var executionRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.
          */
-    var taskRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskRoleArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2368,11 +2368,11 @@ object ECSNs extends js.Object {
     /**
          * The deployment ID of the AWS CodeDeploy deployment.
          */
-    var externalId: js.UndefOr[java.lang.String] = js.undefined
+    var externalId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the task set.
          */
-    var id: js.UndefOr[java.lang.String] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     /**
          * The launch type the tasks in the task set are using. For more information, see Amazon ECS Launch Types in the Amazon Elastic Container Service Developer Guide.
          */
@@ -2392,7 +2392,7 @@ object ECSNs extends js.Object {
     /**
          * The platform version on which the tasks in the task set are running. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
          */
-    var platformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var platformVersion: js.UndefOr[String] = js.undefined
     /**
          * The number of tasks in the task set that are in the RUNNING status during a deployment. A task in the RUNNING state is running and ready for use.
          */
@@ -2412,19 +2412,19 @@ object ECSNs extends js.Object {
     /**
          * The tag specified when a task set is started. If the task is started by an AWS CodeDeploy deployment, then the startedBy parameter is CODE_DEPLOY.
          */
-    var startedBy: js.UndefOr[java.lang.String] = js.undefined
+    var startedBy: js.UndefOr[String] = js.undefined
     /**
          * The status of the task set. The following describes each state:  PRIMARY  The task set is serving production traffic.  ACTIVE  The task set is not serving production traffic.  DRAINING  The tasks in the task set are being stopped and their corresponding targets are being deregistered from their target group.  
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * The task definition the task set is using.
          */
-    var taskDefinition: js.UndefOr[java.lang.String] = js.undefined
+    var taskDefinition: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the task set.
          */
-    var taskSetArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskSetArn: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp for when the task set was last updated.
          */
@@ -2436,7 +2436,7 @@ object ECSNs extends js.Object {
     /**
          * The absolute file path where the tmpfs volume is to be mounted.
          */
-    var containerPath: java.lang.String
+    var containerPath: String
     /**
          * The list of tmpfs volume mount options. Valid values: "defaults" | "ro" | "rw" | "suid" | "nosuid" | "dev" | "nodev" | "exec" | "noexec" | "sync" | "async" | "dirsync" | "remount" | "mand" | "nomand" | "atime" | "noatime" | "diratime" | "nodiratime" | "bind" | "rbind" | "unbindable" | "runbindable" | "private" | "rprivate" | "shared" | "rshared" | "slave" | "rslave" | "relatime" | "norelatime" | "strictatime" | "nostrictatime" | "mode" | "uid" | "gid" | "nr_inodes" | "nr_blocks" | "mpol" 
          */
@@ -3692,7 +3692,7 @@ object ECSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource from which to delete tags. Currently, the supported resources are Amazon ECS tasks, services, task definitions, clusters, and container instances.
          */
-    var resourceArn: java.lang.String
+    var resourceArn: String
     /**
          * The keys of the tags to be removed.
          */
@@ -3707,11 +3707,11 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that your container instance is running on. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * The container instance ID or full ARN entries for the container instance on which you would like to update the Amazon ECS container agent.
          */
-    var containerInstance: java.lang.String
+    var containerInstance: String
   }
   
   
@@ -3727,7 +3727,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the container instance to update. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * A list of container instance IDs or full ARN entries.
          */
@@ -3755,7 +3755,7 @@ object ECSNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the cluster that your service is running on. If you do not specify a cluster, the default cluster is assumed.
          */
-    var cluster: js.UndefOr[java.lang.String] = js.undefined
+    var cluster: js.UndefOr[String] = js.undefined
     /**
          * Optional deployment parameters that control how many tasks run during the deployment and the ordering of stopping and starting tasks.
          */
@@ -3767,7 +3767,7 @@ object ECSNs extends js.Object {
     /**
          * Whether to force a new deployment of the service. Deployments are not forced by default. You can use this option to trigger a new deployment with no service definition changes. For example, you can update a service's tasks to use a newer Docker image with the same image/tag combination (my_image:latest) or to roll Fargate tasks onto a newer platform version.
          */
-    var forceNewDeployment: js.UndefOr[scala.Boolean] = js.undefined
+    var forceNewDeployment: js.UndefOr[Boolean] = js.undefined
     /**
          * The period of time, in seconds, that the Amazon ECS service scheduler should ignore unhealthy Elastic Load Balancing target health checks after a task has first started. This is only valid if your service is configured to use a load balancer. If your service's tasks take a while to start and respond to Elastic Load Balancing health checks, you can specify a health check grace period of up to 1,800 seconds. During that time, the ECS service scheduler ignores the Elastic Load Balancing health check status. This grace period can prevent the ECS service scheduler from marking tasks as unhealthy and stopping them before they have time to come up.
          */
@@ -3779,15 +3779,15 @@ object ECSNs extends js.Object {
     /**
          * The platform version on which your tasks in the service are running. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
          */
-    var platformVersion: js.UndefOr[java.lang.String] = js.undefined
+    var platformVersion: js.UndefOr[String] = js.undefined
     /**
          * The name of the service to update.
          */
-    var service: java.lang.String
+    var service: String
     /**
          * The family and revision (family:revision) or full ARN of the task definition to run in your service. If a revision is not specified, the latest ACTIVE revision is used. If you modify the task definition with UpdateService, Amazon ECS spawns a task with the new version of the task definition and then stops an old task after the new version is running.
          */
-    var taskDefinition: js.UndefOr[java.lang.String] = js.undefined
+    var taskDefinition: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3803,15 +3803,15 @@ object ECSNs extends js.Object {
     /**
          * The Git commit hash for the Amazon ECS container agent build on the amazon-ecs-agent  GitHub repository.
          */
-    var agentHash: js.UndefOr[java.lang.String] = js.undefined
+    var agentHash: js.UndefOr[String] = js.undefined
     /**
          * The version number of the Amazon ECS container agent.
          */
-    var agentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var agentVersion: js.UndefOr[String] = js.undefined
     /**
          * The Docker version running on the container instance.
          */
-    var dockerVersion: js.UndefOr[java.lang.String] = js.undefined
+    var dockerVersion: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3827,7 +3827,7 @@ object ECSNs extends js.Object {
     /**
          * The name of the volume. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. This name is referenced in the sourceVolume parameter of container definition mountPoints.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3839,7 +3839,7 @@ object ECSNs extends js.Object {
     /**
          * The name of another container within the same task definition from which to mount volumes.
          */
-    var sourceContainer: js.UndefOr[java.lang.String] = js.undefined
+    var sourceContainer: js.UndefOr[String] = js.undefined
   }
   
   val TypesNs: this.type = js.native
@@ -3912,7 +3912,7 @@ object ECSNs extends js.Object {
   type StabilityStatus = awsDashSdkLib.awsDashSdkLibStrings.STEADY_STATE | awsDashSdkLib.awsDashSdkLibStrings.STABILIZING | java.lang.String
   type Statistics = js.Array[KeyValuePair]
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type SystemControls = js.Array[SystemControl]
   type TagKey = java.lang.String
   type TagKeys = js.Array[TagKey]

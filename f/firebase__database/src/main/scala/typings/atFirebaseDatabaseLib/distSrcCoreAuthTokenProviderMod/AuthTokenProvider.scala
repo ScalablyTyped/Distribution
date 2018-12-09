@@ -18,7 +18,7 @@ class AuthTokenProvider protected () extends js.Object {
        * @param {boolean} forceRefresh
        * @return {!Promise<FirebaseAuthTokenData>}
        */
-  def getToken(forceRefresh: scala.Boolean): stdLib.Promise[atFirebaseAppDashTypesLib.privateMod.FirebaseAuthTokenData] = js.native
+  def getToken(forceRefresh: scala.Boolean): js.Promise[atFirebaseAppDashTypesLib.privateMod.FirebaseAuthTokenData] = js.native
   def notifyForInvalidToken(): scala.Unit = js.native
   def removeTokenChangeListener(listener: js.Function1[/* token */ java.lang.String | scala.Null, scala.Unit]): scala.Unit = js.native
 }

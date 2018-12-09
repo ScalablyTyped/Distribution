@@ -12,6 +12,6 @@ trait Topic[T] extends Stream[T] {
        *
        * @param item The item to publish.
        */
-  def publish(item: T): stdLib.Promise[scala.Unit]
+  def publish(item: T): js.Promise[scala.Unit]
 }
 

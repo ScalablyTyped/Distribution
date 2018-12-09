@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class FileAsset protected ()
   extends atPulumiPulumiLib.assetAssetMod.FileAsset {
   def this(path: java.lang.String) = this()
-  def this(path: stdLib.Promise[java.lang.String]) = this()
+  def this(path: js.Promise[java.lang.String]) = this()
 }
 

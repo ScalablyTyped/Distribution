@@ -30,7 +30,7 @@ trait CertificationRequest extends js.Object {
            * 
            * @memberOf CertificationRequest
            */
-  def sign(privateKey: stdLib.CryptoKey): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def sign(privateKey: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
            * Makes signature for currect certification request
            * 
@@ -40,7 +40,7 @@ trait CertificationRequest extends js.Object {
            * 
            * @memberOf CertificationRequest
            */
-  def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): js.Thenable[stdLib.ArrayBuffer] = js.native
   def toJSON(): js.Any = js.native
   /**
            * Convert current object to asn1js object and set correct values
@@ -63,6 +63,6 @@ trait CertificationRequest extends js.Object {
            * 
            * @memberOf CertificationRequest
            */
-  def verify(): stdLib.PromiseLike[scala.Boolean] = js.native
+  def verify(): js.Thenable[scala.Boolean] = js.native
 }
 

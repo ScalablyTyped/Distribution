@@ -28,6 +28,6 @@ object MailComposerNs extends js.Object {
   
   /** Resolves to a promise with object containing status field that could be either sent, saved or cancelled. Android does not provide such info so it always resolves to sent. */
   def composeAsync(/** A map defining the data to fill the mail */
-  options: ComposeOptions): stdLib.Promise[expoLib.Anon_Status] = js.native
+  options: ComposeOptions): js.Promise[expoLib.Anon_Status] = js.native
 }
 

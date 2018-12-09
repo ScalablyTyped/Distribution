@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 
 trait StorageManager extends js.Object {
-  def estimate(): Promise[StorageEstimate]
-  def persist(): Promise[scala.Boolean]
-  def persisted(): Promise[scala.Boolean]
+  def estimate(): js.Promise[StorageEstimate]
+  def persist(): js.Promise[scala.Boolean]
+  def persisted(): js.Promise[scala.Boolean]
 }
 
 @JSGlobal("StorageManager")

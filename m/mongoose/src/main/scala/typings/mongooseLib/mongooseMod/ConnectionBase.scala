@@ -36,13 +36,13 @@ trait ConnectionBase
        */
   var readyState: scala.Double = js.native
   /** Closes the connection */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   /** Closes the connection */
-  def close(callback: js.Function1[/* err */ js.Any, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def close(callback: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[scala.Unit] = js.native
   /** Closes the connection */
-  def close(force: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def close(force: scala.Boolean): js.Promise[scala.Unit] = js.native
   /** Closes the connection */
-  def close(force: scala.Boolean, callback: js.Function1[/* err */ js.Any, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def close(force: scala.Boolean, callback: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
        * Retrieves a collection, creating it if not cached.
        * Not typically needed by applications. Just talk to your collection through your model.
@@ -58,9 +58,9 @@ trait ConnectionBase
        */
   def collection(name: java.lang.String, options: js.Any): Collection = js.native
   /** Helper for creating a collection */
-  def createCollection(name: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def createCollection(name: java.lang.String): js.Promise[scala.Unit] = js.native
   /** Helper for creating a collection */
-  def createCollection(name: java.lang.String, options: mongodbLib.mongodbMod.CollectionCreateOptions): stdLib.Promise[scala.Unit] = js.native
+  def createCollection(name: java.lang.String, options: mongodbLib.mongodbMod.CollectionCreateOptions): js.Promise[scala.Unit] = js.native
   /** Helper for creating a collection */
   def createCollection(
     name: java.lang.String,
@@ -70,7 +70,7 @@ trait ConnectionBase
       /* collection */ mongodbLib.mongodbMod.Collection[mongodbLib.Default], 
       scala.Unit
     ]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
        * Removes the model named `name` from this connection, if it exists. You can
        * use this function to clean up any models you created in your tests to
@@ -90,13 +90,13 @@ trait ConnectionBase
        */
   def deleteModel(name: stdLib.RegExp): Connection = js.native
   /** Helper for dropCollection() */
-  def dropCollection(name: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def dropCollection(name: java.lang.String): js.Promise[scala.Unit] = js.native
   /** Helper for dropCollection() */
-  def dropCollection(name: java.lang.String, callback: js.Function1[/* err */ js.Any, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def dropCollection(name: java.lang.String, callback: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[scala.Unit] = js.native
   /** Helper for dropDatabase() */
-  def dropDatabase(): stdLib.Promise[_] = js.native
+  def dropDatabase(): js.Promise[_] = js.native
   /** Helper for dropDatabase() */
-  def dropDatabase(callback: js.Function1[/* err */ js.Any, scala.Unit]): stdLib.Promise[_] = js.native
+  def dropDatabase(callback: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[_] = js.native
   /**
        * Defines or retrieves a model.
        * When no collection argument is passed, Mongoose produces a collection name by passing

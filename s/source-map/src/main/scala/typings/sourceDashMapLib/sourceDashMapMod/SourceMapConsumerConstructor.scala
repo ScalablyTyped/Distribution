@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait SourceMapConsumerConstructor
   extends ScalablyTyped.runtime.Instantiable1[
       (/* rawSourceMap */ RawSourceMap) | (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ java.lang.String), 
-      stdLib.Promise[BasicSourceMapConsumer] | stdLib.Promise[IndexedSourceMapConsumer] | (stdLib.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer])
+      js.Promise[BasicSourceMapConsumer] | js.Promise[IndexedSourceMapConsumer] | (js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer])
     ]
      with ScalablyTyped.runtime.Instantiable2[
       (/* rawSourceMap */ RawSourceMap) | (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ java.lang.String), 
       /* sourceMapUrl */ SourceMapUrl, 
-      stdLib.Promise[BasicSourceMapConsumer] | stdLib.Promise[IndexedSourceMapConsumer] | (stdLib.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer])
+      js.Promise[BasicSourceMapConsumer] | js.Promise[IndexedSourceMapConsumer] | (js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer])
     ] {
   var GENERATED_ORDER: scala.Double = js.native
   var GREATEST_LOWER_BOUND: scala.Double = js.native
@@ -26,14 +26,14 @@ trait SourceMapConsumerConstructor
        * @param sourceMap
        *        The source map that will be consumed.
        */
-  def fromSourceMap(sourceMap: SourceMapGenerator): stdLib.Promise[BasicSourceMapConsumer] = js.native
+  def fromSourceMap(sourceMap: SourceMapGenerator): js.Promise[BasicSourceMapConsumer] = js.native
   /**
        * Create a BasicSourceMapConsumer from a SourceMapGenerator.
        *
        * @param sourceMap
        *        The source map that will be consumed.
        */
-  def fromSourceMap(sourceMap: SourceMapGenerator, sourceMapUrl: SourceMapUrl): stdLib.Promise[BasicSourceMapConsumer] = js.native
+  def fromSourceMap(sourceMap: SourceMapGenerator, sourceMapUrl: SourceMapUrl): js.Promise[BasicSourceMapConsumer] = js.native
   /**
        * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
        * (see the `SourceMapConsumer` constructor for details. Then, invoke the `async
@@ -69,9 +69,9 @@ trait SourceMapConsumerConstructor
     sourceMapUrl: js.UndefOr[scala.Nothing],
     callback: js.Function1[
       /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
-      stdLib.Promise[T] | T
+      js.Promise[T] | T
     ]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
        * (see the `SourceMapConsumer` constructor for details. Then, invoke the `async
@@ -107,9 +107,9 @@ trait SourceMapConsumerConstructor
     sourceMapUrl: scala.Null,
     callback: js.Function1[
       /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
-      stdLib.Promise[T] | T
+      js.Promise[T] | T
     ]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
        * (see the `SourceMapConsumer` constructor for details. Then, invoke the `async
@@ -145,9 +145,9 @@ trait SourceMapConsumerConstructor
     sourceMapUrl: SourceMapUrl,
     callback: js.Function1[
       /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
-      stdLib.Promise[T] | T
+      js.Promise[T] | T
     ]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
        * (see the `SourceMapConsumer` constructor for details. Then, invoke the `async
@@ -183,9 +183,9 @@ trait SourceMapConsumerConstructor
     sourceMapUrl: js.UndefOr[scala.Nothing],
     callback: js.Function1[
       /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
-      stdLib.Promise[T] | T
+      js.Promise[T] | T
     ]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
        * (see the `SourceMapConsumer` constructor for details. Then, invoke the `async
@@ -221,9 +221,9 @@ trait SourceMapConsumerConstructor
     sourceMapUrl: scala.Null,
     callback: js.Function1[
       /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
-      stdLib.Promise[T] | T
+      js.Promise[T] | T
     ]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
        * (see the `SourceMapConsumer` constructor for details. Then, invoke the `async
@@ -259,9 +259,9 @@ trait SourceMapConsumerConstructor
     sourceMapUrl: SourceMapUrl,
     callback: js.Function1[
       /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
-      stdLib.Promise[T] | T
+      js.Promise[T] | T
     ]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
        * (see the `SourceMapConsumer` constructor for details. Then, invoke the `async
@@ -297,9 +297,9 @@ trait SourceMapConsumerConstructor
     sourceMapUrl: js.UndefOr[scala.Nothing],
     callback: js.Function1[
       /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
-      stdLib.Promise[T] | T
+      js.Promise[T] | T
     ]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
        * (see the `SourceMapConsumer` constructor for details. Then, invoke the `async
@@ -335,9 +335,9 @@ trait SourceMapConsumerConstructor
     sourceMapUrl: scala.Null,
     callback: js.Function1[
       /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
-      stdLib.Promise[T] | T
+      js.Promise[T] | T
     ]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Construct a new `SourceMapConsumer` from `rawSourceMap` and `sourceMapUrl`
        * (see the `SourceMapConsumer` constructor for details. Then, invoke the `async
@@ -373,8 +373,8 @@ trait SourceMapConsumerConstructor
     sourceMapUrl: SourceMapUrl,
     callback: js.Function1[
       /* consumer */ BasicSourceMapConsumer | IndexedSourceMapConsumer, 
-      stdLib.Promise[T] | T
+      js.Promise[T] | T
     ]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
 }
 

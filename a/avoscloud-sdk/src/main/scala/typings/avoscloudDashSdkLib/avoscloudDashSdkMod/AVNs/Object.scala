@@ -41,9 +41,9 @@ trait Object extends BaseObject {
   var createdAt: js.Any = js.native
   var id: js.Any = js.native
   var updatedAt: js.Any = js.native
-  def add(attr: java.lang.String, item: js.Any): js.Object = js.native
+  def add(attr: java.lang.String, item: js.Any): Object = js.native
   def addUnique(attr: java.lang.String, item: js.Any): js.Any = js.native
-  def change(options: js.Any): js.Object = js.native
+  def change(options: js.Any): Object = js.native
   def changedAttributes(diff: js.Any): scala.Boolean = js.native
   def clear(options: js.Any): js.Any = js.native
   def destroy[T](): Promise[T] = js.native

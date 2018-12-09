@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ 
-trait AnimationPromise extends js.Object {
+
+trait AnimationPromise
+  extends stdLib.Object {
   def stop(): scala.Unit
 }
 

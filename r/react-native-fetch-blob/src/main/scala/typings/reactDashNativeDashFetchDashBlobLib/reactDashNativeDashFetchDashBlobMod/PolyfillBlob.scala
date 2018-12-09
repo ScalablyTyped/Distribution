@@ -24,7 +24,7 @@ class PolyfillBlob protected ()
        * Release the resource of the Blob object.
        * @nonstandard
        */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   /**
        * Get file reference of the Blob object.
        * @return Blob file reference which can be consumed by RNFetchBlob fs
@@ -42,7 +42,7 @@ class PolyfillBlob protected ()
        * Read data of the Blob object, this is not standard method.
        * @param  encoding Read data with encoding
        */
-  def readBlob(encoding: java.lang.String): stdLib.Promise[_] = js.native
+  def readBlob(encoding: java.lang.String): js.Promise[_] = js.native
   /**
        * Create a Blob object which is sliced from current object
        * @param  start    Start byte number

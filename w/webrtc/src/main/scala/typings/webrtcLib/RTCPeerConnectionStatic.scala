@@ -11,6 +11,6 @@ trait RTCPeerConnectionStatic
      with ScalablyTyped.runtime.Instantiable1[/* configuration */ RTCConfiguration, RTCPeerConnection] {
   val defaultIceServers: js.Array[RTCIceServer] = js.native
   // Extension: https://www.w3.org/TR/webrtc/#sec.cert-mgmt
-  def generateCertificate(keygenAlgorithm: java.lang.String): stdLib.Promise[RTCCertificate] = js.native
+  def generateCertificate(keygenAlgorithm: java.lang.String): js.Promise[RTCCertificate] = js.native
 }
 

@@ -18,7 +18,7 @@ class VsoClient protected () extends js.Object {
        * Sets a promise that is waited on before any requests are issued. Can be used to asynchronously
        * set the request url and auth token manager.
        */
-  def _setInitializationPromise(promise: stdLib.Promise[_]): scala.Unit = js.native
+  def _setInitializationPromise(promise: js.Promise[_]): scala.Unit = js.native
   /* protected */ def autoNegotiateApiVersion(
     location: vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.ApiResourceLocation,
     requestedVersion: java.lang.String
@@ -30,7 +30,7 @@ class VsoClient protected () extends js.Object {
        * @param area resource area name
        * @param locationId Guid of the location to get
        */
-  def beginGetLocation(area: java.lang.String, locationId: java.lang.String): stdLib.Promise[vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.ApiResourceLocation] = js.native
+  def beginGetLocation(area: java.lang.String, locationId: java.lang.String): js.Promise[vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.ApiResourceLocation] = js.native
   /* protected */ def getRequestUrl(
     routeTemplate: java.lang.String,
     area: java.lang.String,
@@ -53,7 +53,7 @@ class VsoClient protected () extends js.Object {
     area: java.lang.String,
     locationId: java.lang.String,
     routeValues: js.Any
-  ): stdLib.Promise[ClientVersioningData] = js.native
+  ): js.Promise[ClientVersioningData] = js.native
   /**
        * Gets the route template for a resource based on its location ID and negotiates the api version
        */
@@ -63,7 +63,7 @@ class VsoClient protected () extends js.Object {
     locationId: java.lang.String,
     routeValues: js.Any,
     queryParams: js.Any
-  ): stdLib.Promise[ClientVersioningData] = js.native
+  ): js.Promise[ClientVersioningData] = js.native
   /* private */ def replaceRouteValues(routeTemplate: js.Any, routeValues: js.Any): js.Any = js.native
   def resolveUrl(relativeUrl: java.lang.String): java.lang.String = js.native
 }

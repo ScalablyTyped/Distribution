@@ -17,6 +17,6 @@ object swDashToolboxModMembers extends js.Object {
   val router: Router = js.native
   def cache(url: java.lang.String, options: Options): scala.Unit = js.native
   def precache(urls: PrecacheURLs): scala.Unit = js.native
-  def uncache(url: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def uncache(url: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

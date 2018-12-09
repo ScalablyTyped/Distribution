@@ -25,7 +25,7 @@ object KinesisVideoArchivedMediaNs extends js.Object {
     /**
          * The index value of the fragment.
          */
-    var FragmentNumber: js.UndefOr[java.lang.String] = js.undefined
+    var FragmentNumber: js.UndefOr[String] = js.undefined
     /**
          * The total fragment size, including information about the fragment and contained media data.
          */
@@ -153,7 +153,7 @@ object KinesisVideoArchivedMediaNs extends js.Object {
     /**
          * A token to specify where to start paginating. This is the ListFragmentsOutput$NextToken from a previously truncated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the stream from which to retrieve a fragment list.
          */
@@ -169,7 +169,7 @@ object KinesisVideoArchivedMediaNs extends js.Object {
     /**
          * If the returned list is truncated, the operation returns this token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   

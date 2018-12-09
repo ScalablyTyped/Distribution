@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @js.native
-trait Moment extends js.Object {
+@js.native
+trait Moment
+  extends stdLib.Object {
   def add(): Moment = js.native
   def add(amount: DurationInputArg1): Moment = js.native
   def add(amount: DurationInputArg1, unit: DurationInputArg2): Moment = js.native

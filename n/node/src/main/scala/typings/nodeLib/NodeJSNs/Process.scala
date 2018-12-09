@@ -112,7 +112,7 @@ trait Process extends EventEmitter {
     listener: js.Function1[/* repeated */js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("emit")
-  def emit_rejectionHandled(event: nodeLib.nodeLibStrings.rejectionHandled, promise: stdLib.Promise[_]): scala.Boolean = js.native
+  def emit_rejectionHandled(event: nodeLib.nodeLibStrings.rejectionHandled, promise: js.Promise[_]): scala.Boolean = js.native
   @JSName("emit")
   def emit_removeListener(
     event: nodeLib.nodeLibStrings.removeListener,
@@ -122,7 +122,7 @@ trait Process extends EventEmitter {
   @JSName("emit")
   def emit_uncaughtException(event: nodeLib.nodeLibStrings.uncaughtException, error: nodeLib.Error): scala.Boolean = js.native
   @JSName("emit")
-  def emit_unhandledRejection(event: nodeLib.nodeLibStrings.unhandledRejection, reason: js.Any, promise: stdLib.Promise[_]): scala.Boolean = js.native
+  def emit_unhandledRejection(event: nodeLib.nodeLibStrings.unhandledRejection, reason: js.Any, promise: js.Promise[_]): scala.Boolean = js.native
   @JSName("emit")
   def emit_warning(event: nodeLib.nodeLibStrings.warning, warning: nodeLib.Error): scala.Boolean = js.native
   def exit(): scala.Nothing = js.native

@@ -30,7 +30,7 @@ trait Anon_Preview extends js.Object {
            * @param id The template id
            * @returns Promise void
            */
-  def delete(id: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def delete(id: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Delete an existing template
            * @param id The template id

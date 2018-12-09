@@ -20,7 +20,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotGamesmanagementLib.gapiDotClientDotGamesmanagementLibStrings.gamesmanagement,
     version: gapiDotClientDotGamesmanagementLib.gapiDotClientDotGamesmanagementLibStrings.v1management
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotGamesmanagementLib.gapiDotClientDotGamesmanagementLibStrings.gamesmanagement,
     version: gapiDotClientDotGamesmanagementLib.gapiDotClientDotGamesmanagementLibStrings.v1management,

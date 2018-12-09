@@ -22,7 +22,7 @@ class rangechart () extends baseview {
   @JSName("on_mouse_move")
   var on_mouse_move_Original: webixLib.webixNs.WebixCallback = js.native
   var presets: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
   def addSeries(obj: js.Any): scala.Unit = js.native
@@ -65,9 +65,9 @@ class rangechart () extends baseview {
   def group(config: js.Any, mode: scala.Boolean): scala.Unit = js.native
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
   def hideSeries(index: scala.Double): scala.Unit = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,

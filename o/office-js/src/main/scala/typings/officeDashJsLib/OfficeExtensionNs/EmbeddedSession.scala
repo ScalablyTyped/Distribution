@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class EmbeddedSession protected () extends js.Object {
   def this(url: java.lang.String) = this()
   def this(url: java.lang.String, options: EmbeddedOptions) = this()
-  def init(): stdLib.Promise[_] = js.native
+  def init(): js.Promise[_] = js.native
 }
 

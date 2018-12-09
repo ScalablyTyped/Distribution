@@ -13,7 +13,7 @@ trait StripePaymentRequest extends js.Object {
        *
        * @see https://stripe.com/docs/stripe-js/reference#payment-request-can-make-payment
        */
-  def canMakePayment(): stdLib.Promise[CanMakePaymentResult | scala.Null] = js.native
+  def canMakePayment(): js.Promise[CanMakePaymentResult | scala.Null] = js.native
   /**
        * Register your event listener
        * @see https://stripe.com/docs/stripe-js/reference#payment-request-on

@@ -25,27 +25,27 @@ object RDSDataServiceNs extends js.Object {
     /**
          * Whether the designated column is automatically numbered
          */
-    var isAutoIncrement: js.UndefOr[scala.Boolean] = js.undefined
+    var isAutoIncrement: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether values in the designated column's case matters
          */
-    var isCaseSensitive: js.UndefOr[scala.Boolean] = js.undefined
+    var isCaseSensitive: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether values in the designated column is a cash value
          */
-    var isCurrency: js.UndefOr[scala.Boolean] = js.undefined
+    var isCurrency: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether values in the designated column are signed numbers
          */
-    var isSigned: js.UndefOr[scala.Boolean] = js.undefined
+    var isSigned: js.UndefOr[Boolean] = js.undefined
     /**
          * Usually specified by the SQL AS. If not specified, return column name.
          */
-    var label: js.UndefOr[java.lang.String] = js.undefined
+    var label: js.UndefOr[String] = js.undefined
     /**
          * Name of the column.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * Indicates the nullability of values in the designated column. One of columnNoNulls (0), columnNullable (1), columnNullableUnknown (2)
          */
@@ -61,11 +61,11 @@ object RDSDataServiceNs extends js.Object {
     /**
          * Designated column's table's schema
          */
-    var schemaName: js.UndefOr[java.lang.String] = js.undefined
+    var schemaName: js.UndefOr[String] = js.undefined
     /**
          * Designated column's table name
          */
-    var tableName: js.UndefOr[java.lang.String] = js.undefined
+    var tableName: js.UndefOr[String] = js.undefined
     /**
          * SQL type from java.sql.Types.
          */
@@ -73,7 +73,7 @@ object RDSDataServiceNs extends js.Object {
     /**
          * Database-specific type name.
          */
-    var typeName: js.UndefOr[java.lang.String] = js.undefined
+    var typeName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -81,23 +81,23 @@ object RDSDataServiceNs extends js.Object {
     /**
          * ARN of the db credentials in AWS Secret Store or the friendly secret name
          */
-    var awsSecretStoreArn: java.lang.String
+    var awsSecretStoreArn: String
     /**
          * Target DB name
          */
-    var database: js.UndefOr[java.lang.String] = js.undefined
+    var database: js.UndefOr[String] = js.undefined
     /**
          * ARN of the target db cluster or instance
          */
-    var dbClusterOrInstanceArn: java.lang.String
+    var dbClusterOrInstanceArn: String
     /**
          * Target Schema name
          */
-    var schema: js.UndefOr[java.lang.String] = js.undefined
+    var schema: js.UndefOr[String] = js.undefined
     /**
          * SQL statement(s) to be executed. Statements can be chained by using semicolons
          */
-    var sqlStatements: java.lang.String
+    var sqlStatements: String
   }
   
   
@@ -209,7 +209,7 @@ object RDSDataServiceNs extends js.Object {
     /**
          * Bit value
          */
-    var bitValue: js.UndefOr[scala.Boolean] = js.undefined
+    var bitValue: js.UndefOr[Boolean] = js.undefined
     /**
          * Blob value
          */
@@ -225,7 +225,7 @@ object RDSDataServiceNs extends js.Object {
     /**
          * Is column null
          */
-    var isNull: js.UndefOr[scala.Boolean] = js.undefined
+    var isNull: js.UndefOr[Boolean] = js.undefined
     /**
          * Float value
          */
@@ -233,7 +233,7 @@ object RDSDataServiceNs extends js.Object {
     /**
          * String value
          */
-    var stringValue: js.UndefOr[java.lang.String] = js.undefined
+    var stringValue: js.UndefOr[String] = js.undefined
     /**
          * Struct or UDT
          */

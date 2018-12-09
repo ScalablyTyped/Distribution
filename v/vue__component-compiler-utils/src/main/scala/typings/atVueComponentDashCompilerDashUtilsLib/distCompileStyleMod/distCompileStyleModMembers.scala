@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distCompileStyleModMembers extends js.Object {
   def compileStyle(options: StyleCompileOptions): StyleCompileResults = js.native
-  def compileStyleAsync(options: StyleCompileOptions): stdLib.Promise[StyleCompileResults] = js.native
+  def compileStyleAsync(options: StyleCompileOptions): js.Promise[StyleCompileResults] = js.native
   def doCompileStyle(options: AsyncStyleCompileOptions): StyleCompileResults = js.native
 }
 

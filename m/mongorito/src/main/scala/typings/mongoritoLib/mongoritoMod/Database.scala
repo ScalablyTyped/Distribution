@@ -16,9 +16,9 @@ class Database () extends js.Object {
   var options: mongodbLib.mongodbMod.MongoClientOptions = js.native
   var plugins: js.Array[Plugin] = js.native
   var state: DatabaseState = js.native
-  def connect(): stdLib.Promise[mongodbLib.mongodbMod.Db] = js.native
-  def connection(): stdLib.Promise[mongodbLib.mongodbMod.Db] = js.native
-  def disconnect(): stdLib.Promise[scala.Unit] = js.native
+  def connect(): js.Promise[mongodbLib.mongodbMod.Db] = js.native
+  def connection(): js.Promise[mongodbLib.mongodbMod.Db] = js.native
+  def disconnect(): js.Promise[scala.Unit] = js.native
   def register(models: js.Array[ModelClass]): scala.Unit = js.native
   def register(models: ModelClass): scala.Unit = js.native
   /**

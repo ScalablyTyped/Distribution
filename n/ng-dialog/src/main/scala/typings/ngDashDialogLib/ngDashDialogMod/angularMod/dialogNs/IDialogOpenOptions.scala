@@ -23,7 +23,9 @@ trait IDialogOpenOptions extends IDialogOptions {
   			 * are promises, ngDialog will wait for them all to be resolved or one to be rejected before the controller
   			 * is instantiated.
   			 */
-  var resolve: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Function]] = js.undefined
+  var resolve: js.UndefOr[
+    ScalablyTyped.runtime.StringDictionary[java.lang.String | angularLib.angularMod.Global.Function]
+  ] = js.undefined
   /**
   			 * Scope object that will be passed to dialog. If you use controller with separate $scope service this object will be passed to $scope.$parent param.
   			 */

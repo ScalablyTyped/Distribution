@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("gapi.client.analytics.provisioning")
 @js.native
 object provisioningNs extends js.Object {
-  def createAccountTicket(): stdLib.Promise[_] = js.native
+  def createAccountTicket(): js.Promise[_] = js.native
 }
 

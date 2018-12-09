@@ -12,7 +12,7 @@ object ionicModMembers extends js.Object {
   val INTEGRATION_NAMES: js.Array[ionicLib.definitionsMod.IntegrationName] = js.native
   val PROJECT_FILE: /* ionic.config.json */ java.lang.String = js.native
   val PROJECT_TYPES: js.Array[ionicLib.definitionsMod.ProjectType] = js.native
-  def generateContext(): stdLib.Promise[ionicLib.definitionsMod.IonicContext] = js.native
+  def generateContext(): js.Promise[ionicLib.definitionsMod.IonicContext] = js.native
   def isAPIResponseError(res: js.Any): /* is APIResponseError */scala.Boolean = js.native
   def isAPIResponseSuccess(res: js.Any): /* is APIResponseSuccess */scala.Boolean = js.native
   def isApp(app: js.Any): /* is App */scala.Boolean = js.native
@@ -54,8 +54,8 @@ object ionicModMembers extends js.Object {
   def isTreatableAilment(ailment: js.Any): /* is TreatableAilment */scala.Boolean = js.native
   def isUser(user: js.Any): /* is User */scala.Boolean = js.native
   def isUserResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
-  def loadExecutor(ctx: ionicLib.definitionsMod.IonicContext, pargv: js.Array[java.lang.String]): stdLib.Promise[ionicLib.libExecutorMod.Executor] = js.native
-  def receive(msg: ionicLib.definitionsMod.IPCMessage): stdLib.Promise[scala.Unit] = js.native
-  def run(pargv: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def loadExecutor(ctx: ionicLib.definitionsMod.IonicContext, pargv: js.Array[java.lang.String]): js.Promise[ionicLib.libExecutorMod.Executor] = js.native
+  def receive(msg: ionicLib.definitionsMod.IPCMessage): js.Promise[scala.Unit] = js.native
+  def run(pargv: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
 }
 

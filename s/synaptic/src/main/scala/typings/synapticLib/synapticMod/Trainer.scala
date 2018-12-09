@@ -75,7 +75,7 @@ class Trainer protected () extends js.Object {
        * This method allows you to train any training set to a Network.
        * @returns When the training is done this method returns an object with the error, the iterations, and the elapsed time of the training.
        */
-  def trainAsync(trainingSet: synapticLib.synapticMod.TrainerNs.TrainingSet): stdLib.Promise[synapticLib.synapticMod.TrainerNs.TrainingResult] = js.native
+  def trainAsync(trainingSet: synapticLib.synapticMod.TrainerNs.TrainingSet): js.Promise[synapticLib.synapticMod.TrainerNs.TrainingResult] = js.native
   /**
        * This method allows you to train any training set to a Network.
        * @returns When the training is done this method returns an object with the error, the iterations, and the elapsed time of the training.
@@ -83,6 +83,6 @@ class Trainer protected () extends js.Object {
   def trainAsync(
     trainingSet: synapticLib.synapticMod.TrainerNs.TrainingSet,
     trainingOptions: synapticLib.synapticMod.TrainerNs.TrainingOptions
-  ): stdLib.Promise[synapticLib.synapticMod.TrainerNs.TrainingResult] = js.native
+  ): js.Promise[synapticLib.synapticMod.TrainerNs.TrainingResult] = js.native
 }
 

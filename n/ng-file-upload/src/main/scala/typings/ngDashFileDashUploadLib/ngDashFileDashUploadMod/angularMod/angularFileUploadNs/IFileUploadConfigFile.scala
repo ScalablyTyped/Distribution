@@ -37,12 +37,12 @@ trait IFileUploadConfigFile
                * Function that returns a prommise which will be resolved to the upload file size on the server.
                * @type {[type]}
                */
-  var resumeSize: js.UndefOr[js.Function] = js.undefined
+  var resumeSize: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
   /**
                * Reads the uploaded file size from resumeSizeUrl GET response
                * @type {Function}
                */
-  var resumeSizeResponseReader: js.UndefOr[js.Function] = js.undefined
+  var resumeSizeResponseReader: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
   /**
                * Uploaded file size so far on the server
                * @type {string}

@@ -17,7 +17,7 @@ abstract class ApolloCache[TSerialized] ()
   def read[T, TVariables](query: apolloDashCacheLib.libTypesCacheMod.CacheNs.ReadOptions[TVariables]): T | scala.Null = js.native
   def recordOptimisticTransaction(transaction: Transaction[TSerialized], id: java.lang.String): scala.Unit = js.native
   def removeOptimistic(id: java.lang.String): scala.Unit = js.native
-  def reset(): stdLib.Promise[scala.Unit] = js.native
+  def reset(): js.Promise[scala.Unit] = js.native
   def restore(serializedState: TSerialized): ApolloCache[TSerialized] = js.native
   def transformDocument(document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def transformForLink(document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native

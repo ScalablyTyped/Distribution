@@ -14,8 +14,8 @@ trait Schema[T] extends js.Object {
   def default(value: js.Any): this.type = js.native
   def describe(): SchemaDescription = js.native
   def isType(value: js.Any): /* is T */scala.Boolean = js.native
-  def isValid(value: T): stdLib.Promise[scala.Boolean] = js.native
-  def isValid(value: T, options: js.Any): stdLib.Promise[scala.Boolean] = js.native
+  def isValid(value: T): js.Promise[scala.Boolean] = js.native
+  def isValid(value: T, options: js.Any): js.Promise[scala.Boolean] = js.native
   def isValidSync(value: T): scala.Boolean = js.native
   def isValidSync(value: T, options: js.Any): scala.Boolean = js.native
   def label(label: java.lang.String): this.type = js.native
@@ -37,7 +37,7 @@ trait Schema[T] extends js.Object {
     test: js.ThisFunction1[
       /* this */ TestContext, 
       /* value */ js.UndefOr[js.Any], 
-      scala.Boolean | ValidationError | (stdLib.Promise[scala.Boolean | ValidationError])
+      scala.Boolean | ValidationError | (js.Promise[scala.Boolean | ValidationError])
     ]
   ): this.type = js.native
   def test(
@@ -46,7 +46,7 @@ trait Schema[T] extends js.Object {
     test: js.ThisFunction1[
       /* this */ TestContext, 
       /* value */ js.UndefOr[js.Any], 
-      scala.Boolean | ValidationError | (stdLib.Promise[scala.Boolean | ValidationError])
+      scala.Boolean | ValidationError | (js.Promise[scala.Boolean | ValidationError])
     ],
     callbackStyleAsync: scala.Boolean
   ): this.type = js.native
@@ -56,7 +56,7 @@ trait Schema[T] extends js.Object {
     test: js.ThisFunction1[
       /* this */ TestContext, 
       /* value */ js.UndefOr[js.Any], 
-      scala.Boolean | ValidationError | (stdLib.Promise[scala.Boolean | ValidationError])
+      scala.Boolean | ValidationError | (js.Promise[scala.Boolean | ValidationError])
     ]
   ): this.type = js.native
   def test(
@@ -65,7 +65,7 @@ trait Schema[T] extends js.Object {
     test: js.ThisFunction1[
       /* this */ TestContext, 
       /* value */ js.UndefOr[js.Any], 
-      scala.Boolean | ValidationError | (stdLib.Promise[scala.Boolean | ValidationError])
+      scala.Boolean | ValidationError | (js.Promise[scala.Boolean | ValidationError])
     ],
     callbackStyleAsync: scala.Boolean
   ): this.type = js.native
@@ -73,10 +73,10 @@ trait Schema[T] extends js.Object {
   def transform(fn: TransformFunction[this.type]): this.type = js.native
   def typeError(): this.type = js.native
   def typeError(message: TestOptionsMessage): this.type = js.native
-  def validate(value: T): stdLib.Promise[T] = js.native
-  def validate(value: T, options: ValidateOptions): stdLib.Promise[T] = js.native
-  def validateAt(path: java.lang.String, value: T): stdLib.Promise[T] = js.native
-  def validateAt(path: java.lang.String, value: T, options: ValidateOptions): stdLib.Promise[T] = js.native
+  def validate(value: T): js.Promise[T] = js.native
+  def validate(value: T, options: ValidateOptions): js.Promise[T] = js.native
+  def validateAt(path: java.lang.String, value: T): js.Promise[T] = js.native
+  def validateAt(path: java.lang.String, value: T, options: ValidateOptions): js.Promise[T] = js.native
   def validateSync(value: T): T = js.native
   def validateSync(value: T, options: ValidateOptions): T = js.native
   def validateSyncAt(path: java.lang.String, value: T): T = js.native

@@ -17,7 +17,7 @@ object MTurkNs extends js.Object {
     /**
          * The ID of the Qualification request, as returned by the GetQualificationRequests operation.
          */
-    var QualificationRequestId: java.lang.String
+    var QualificationRequestId: String
   }
   
   
@@ -32,11 +32,11 @@ object MTurkNs extends js.Object {
     /**
          *  A flag indicating that an assignment should be approved even if it was previously rejected. Defaults to False. 
          */
-    var OverrideRejection: js.UndefOr[scala.Boolean] = js.undefined
+    var OverrideRejection: js.UndefOr[Boolean] = js.undefined
     /**
          *  A message for the Worker, which the Worker can see in the Status section of the web site. 
          */
-    var RequesterFeedback: js.UndefOr[java.lang.String] = js.undefined
+    var RequesterFeedback: js.UndefOr[String] = js.undefined
   }
   
   
@@ -51,7 +51,7 @@ object MTurkNs extends js.Object {
     /**
          *  The Worker's answers submitted for the HIT contained in a QuestionFormAnswers document, if the Worker provides an answer. If the Worker does not provide any answers, Answer may contain a QuestionFormAnswers document, or Answer may be empty.
          */
-    var Answer: js.UndefOr[java.lang.String] = js.undefined
+    var Answer: js.UndefOr[String] = js.undefined
     /**
          *  If the Worker has submitted results and the Requester has approved the results, ApprovalTime is the date and time the Requester approved the results. This value is omitted from the assignment if the Requester has not yet approved the results.
          */
@@ -83,7 +83,7 @@ object MTurkNs extends js.Object {
     /**
          *  The feedback string included with the call to the ApproveAssignment operation or the RejectAssignment operation, if the Requester approved or rejected the assignment and specified feedback.
          */
-    var RequesterFeedback: js.UndefOr[java.lang.String] = js.undefined
+    var RequesterFeedback: js.UndefOr[String] = js.undefined
     /**
          *  If the Worker has submitted results, SubmitTime is the date and time the assignment was submitted. This value is omitted from the assignment if the Worker has not yet submitted results.
          */
@@ -107,7 +107,7 @@ object MTurkNs extends js.Object {
     /**
          *  Specifies whether to send a notification email message to the Worker saying that the qualification was assigned to the Worker. Note: this is true by default. 
          */
-    var SendNotification: js.UndefOr[scala.Boolean] = js.undefined
+    var SendNotification: js.UndefOr[Boolean] = js.undefined
     /**
          *  The ID of the Worker to whom the Qualification is being assigned. Worker IDs are included with submitted HIT assignments and Qualification requests. 
          */
@@ -131,7 +131,7 @@ object MTurkNs extends js.Object {
     /**
          * The Reason text given when the bonus was granted, if any.
          */
-    var Reason: js.UndefOr[java.lang.String] = js.undefined
+    var Reason: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Worker to whom the bonus was paid.
          */
@@ -182,7 +182,7 @@ object MTurkNs extends js.Object {
     /**
          *  A general description of the HIT. A description includes detailed information about the kind of task the HIT contains. On the Amazon Mechanical Turk web site, the HIT description appears in the expanded view of search results, and in the HIT and assignment screens. A good description gives the user enough information to evaluate the HIT before accepting it. 
          */
-    var Description: java.lang.String
+    var Description: String
     /**
          *  The HITLayoutId allows you to use a pre-existing HIT design with placeholder values and create an additional HIT by providing those values as HITLayoutParameters.   Constraints: Either a Question parameter or a HITLayoutId parameter must be provided. 
          */
@@ -198,7 +198,7 @@ object MTurkNs extends js.Object {
     /**
          *  One or more words or phrases that describe the HIT, separated by commas. These words are used in searches to find HITs. 
          */
-    var Keywords: js.UndefOr[java.lang.String] = js.undefined
+    var Keywords: js.UndefOr[String] = js.undefined
     /**
          *  An amount of time, in seconds, after which the HIT is no longer available for users to accept. After the lifetime of the HIT elapses, the HIT no longer appears in HIT searches, even if not all of the assignments for the HIT have been accepted. 
          */
@@ -214,11 +214,11 @@ object MTurkNs extends js.Object {
     /**
          *  The data the person completing the HIT uses to produce the results.   Constraints: Must be a QuestionForm data structure, an ExternalQuestion data structure, or an HTMLQuestion data structure. The XML question data must not be larger than 64 kilobytes (65,535 bytes) in size, including whitespace.  Either a Question parameter or a HITLayoutId parameter must be provided.
          */
-    var Question: js.UndefOr[java.lang.String] = js.undefined
+    var Question: js.UndefOr[String] = js.undefined
     /**
          *  An arbitrary data field. The RequesterAnnotation parameter lets your application attach arbitrary data to the HIT for tracking purposes. For example, this parameter could be an identifier internal to the Requester's application that corresponds with the HIT.   The RequesterAnnotation parameter for a HIT is only visible to the Requester who created the HIT. It is not shown to the Worker, or any other Requester.   The RequesterAnnotation parameter may be different for each HIT you submit. It does not affect how your HITs are grouped. 
          */
-    var RequesterAnnotation: js.UndefOr[java.lang.String] = js.undefined
+    var RequesterAnnotation: js.UndefOr[String] = js.undefined
     /**
          *  The amount of money the Requester will pay a Worker for successfully completing the HIT. 
          */
@@ -226,7 +226,7 @@ object MTurkNs extends js.Object {
     /**
          *  The title of the HIT. A title should be short and descriptive about the kind of task the HIT contains. On the Amazon Mechanical Turk web site, the HIT title appears in search results, and everywhere the HIT is mentioned. 
          */
-    var Title: java.lang.String
+    var Title: String
     /**
          *  A unique identifier for this request which allows you to retry the call on error without creating duplicate HITs. This is useful in cases such as network timeouts where it is unclear whether or not the call succeeded on the server. If the HIT already exists in the system from a previous call using the same UniqueRequestToken, subsequent calls will return a AWS.MechanicalTurk.HitAlreadyExists error with a message containing the HITId.    Note: It is your responsibility to ensure uniqueness of the token. The unique token expires after 24 hours. Subsequent calls using the same UniqueRequestToken made after the 24 hour limit could create duplicate HITs.  
          */
@@ -254,11 +254,11 @@ object MTurkNs extends js.Object {
     /**
          *  A general description of the HIT. A description includes detailed information about the kind of task the HIT contains. On the Amazon Mechanical Turk web site, the HIT description appears in the expanded view of search results, and in the HIT and assignment screens. A good description gives the user enough information to evaluate the HIT before accepting it. 
          */
-    var Description: java.lang.String
+    var Description: String
     /**
          *  One or more words or phrases that describe the HIT, separated by commas. These words are used in searches to find HITs. 
          */
-    var Keywords: js.UndefOr[java.lang.String] = js.undefined
+    var Keywords: js.UndefOr[String] = js.undefined
     /**
          *  Conditions that a Worker's Qualifications must meet in order to accept the HIT. A HIT can have between zero and ten Qualification requirements. All requirements must be met in order for a Worker to accept the HIT. Additionally, other actions can be restricted using the ActionsGuarded field on each QualificationRequirement structure. 
          */
@@ -270,7 +270,7 @@ object MTurkNs extends js.Object {
     /**
          *  The title of the HIT. A title should be short and descriptive about the kind of task the HIT contains. On the Amazon Mechanical Turk web site, the HIT title appears in search results, and everywhere the HIT is mentioned. 
          */
-    var Title: java.lang.String
+    var Title: String
   }
   
   
@@ -314,11 +314,11 @@ object MTurkNs extends js.Object {
     /**
          *  The data the person completing the HIT uses to produce the results.   Constraints: Must be a QuestionForm data structure, an ExternalQuestion data structure, or an HTMLQuestion data structure. The XML question data must not be larger than 64 kilobytes (65,535 bytes) in size, including whitespace.  Either a Question parameter or a HITLayoutId parameter must be provided.
          */
-    var Question: js.UndefOr[java.lang.String] = js.undefined
+    var Question: js.UndefOr[String] = js.undefined
     /**
          *  An arbitrary data field. The RequesterAnnotation parameter lets your application attach arbitrary data to the HIT for tracking purposes. For example, this parameter could be an identifier internal to the Requester's application that corresponds with the HIT.   The RequesterAnnotation parameter for a HIT is only visible to the Requester who created the HIT. It is not shown to the Worker, or any other Requester.   The RequesterAnnotation parameter may be different for each HIT you submit. It does not affect how your HITs are grouped. 
          */
-    var RequesterAnnotation: js.UndefOr[java.lang.String] = js.undefined
+    var RequesterAnnotation: js.UndefOr[String] = js.undefined
     /**
          *  A unique identifier for this request which allows you to retry the call on error without creating duplicate HITs. This is useful in cases such as network timeouts where it is unclear whether or not the call succeeded on the server. If the HIT already exists in the system from a previous call using the same UniqueRequestToken, subsequent calls will return a AWS.MechanicalTurk.HitAlreadyExists error with a message containing the HITId.    Note: It is your responsibility to ensure uniqueness of the token. The unique token expires after 24 hours. Subsequent calls using the same UniqueRequestToken made after the 24 hour limit could create duplicate HITs.  
          */
@@ -338,11 +338,11 @@ object MTurkNs extends js.Object {
     /**
          * The answers to the Qualification test specified in the Test parameter, in the form of an AnswerKey data structure. Constraints: Must not be longer than 65535 bytes. Constraints: None. If not specified, you must process Qualification requests manually.
          */
-    var AnswerKey: js.UndefOr[java.lang.String] = js.undefined
+    var AnswerKey: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether requests for the Qualification type are granted immediately, without prompting the Worker with a Qualification test. Constraints: If the Test parameter is specified, this parameter cannot be true.
          */
-    var AutoGranted: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoGranted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Qualification value to use for automatically granted Qualifications. This parameter is used only if the AutoGranted parameter is true.
          */
@@ -350,15 +350,15 @@ object MTurkNs extends js.Object {
     /**
          * A long description for the Qualification type. On the Amazon Mechanical Turk website, the long description is displayed when a Worker examines a Qualification type.
          */
-    var Description: java.lang.String
+    var Description: String
     /**
          * One or more words or phrases that describe the Qualification type, separated by commas. The keywords of a type make the type easier to find during a search.
          */
-    var Keywords: js.UndefOr[java.lang.String] = js.undefined
+    var Keywords: js.UndefOr[String] = js.undefined
     /**
          *  The name you give to the Qualification type. The type name is used to represent the Qualification to Workers, and to find the type using a Qualification type search. It must be unique across all of your Qualification types.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The initial status of the Qualification type. Constraints: Valid values are: Active | Inactive
          */
@@ -370,7 +370,7 @@ object MTurkNs extends js.Object {
     /**
          *  The questions for the Qualification test a Worker must answer correctly to obtain a Qualification of this type. If this parameter is specified, TestDurationInSeconds must also be specified.  Constraints: Must not be longer than 65535 bytes. Must be a QuestionForm data structure. This parameter cannot be specified if AutoGranted is true. Constraints: None. If not specified, the Worker may request the Qualification without answering any questions.
          */
-    var Test: js.UndefOr[java.lang.String] = js.undefined
+    var Test: js.UndefOr[String] = js.undefined
     /**
          * The number of seconds the Worker has to complete the Qualification test, starting from the time the Worker requests the Qualification.
          */
@@ -390,7 +390,7 @@ object MTurkNs extends js.Object {
     /**
          * A message explaining the reason for blocking the Worker. This parameter enables you to keep track of your Workers. The Worker does not see this message.
          */
-    var Reason: java.lang.String
+    var Reason: String
     /**
          * The ID of the Worker to block.
          */
@@ -427,7 +427,7 @@ object MTurkNs extends js.Object {
     /**
          * A message that explains the reason for unblocking the Worker. The Worker does not see this message.
          */
-    var Reason: js.UndefOr[java.lang.String] = js.undefined
+    var Reason: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Worker to unblock.
          */
@@ -446,7 +446,7 @@ object MTurkNs extends js.Object {
     /**
          * A text message that explains why the Qualification was revoked. The user who had the Qualification sees this message.
          */
-    var Reason: js.UndefOr[java.lang.String] = js.undefined
+    var Reason: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Worker who possesses the Qualification to be revoked.
          */
@@ -494,7 +494,7 @@ object MTurkNs extends js.Object {
     /**
          * The identifier of the question with a FileUploadAnswer, as specified in the QuestionForm of the HIT.
          */
-    var QuestionIdentifier: java.lang.String
+    var QuestionIdentifier: String
   }
   
   
@@ -502,7 +502,7 @@ object MTurkNs extends js.Object {
     /**
          *  A temporary URL for the file that the Worker uploaded for the answer. 
          */
-    var FileUploadURL: js.UndefOr[java.lang.String] = js.undefined
+    var FileUploadURL: js.UndefOr[String] = js.undefined
   }
   
   
@@ -574,7 +574,7 @@ object MTurkNs extends js.Object {
     /**
          *  A general description of the HIT.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The date and time the HIT expires.
          */
@@ -606,7 +606,7 @@ object MTurkNs extends js.Object {
     /**
          *  One or more words or phrases that describe the HIT, separated by commas. Search terms similar to the keywords of a HIT are more likely to have the HIT in the search results.
          */
-    var Keywords: js.UndefOr[java.lang.String] = js.undefined
+    var Keywords: js.UndefOr[String] = js.undefined
     /**
          * The number of times the HIT can be accepted and completed before the HIT becomes unavailable. 
          */
@@ -630,16 +630,16 @@ object MTurkNs extends js.Object {
     /**
          *  The data the Worker completing the HIT uses produce the results. This is either either a QuestionForm, HTMLQuestion or an ExternalQuestion data structure.
          */
-    var Question: js.UndefOr[java.lang.String] = js.undefined
+    var Question: js.UndefOr[String] = js.undefined
     /**
          *  An arbitrary data field the Requester who created the HIT can use. This field is visible only to the creator of the HIT.
          */
-    var RequesterAnnotation: js.UndefOr[java.lang.String] = js.undefined
+    var RequesterAnnotation: js.UndefOr[String] = js.undefined
     var Reward: js.UndefOr[CurrencyAmount] = js.undefined
     /**
          *  The title of the HIT.
          */
-    var Title: js.UndefOr[java.lang.String] = js.undefined
+    var Title: js.UndefOr[String] = js.undefined
   }
   
   
@@ -647,11 +647,11 @@ object MTurkNs extends js.Object {
     /**
          *  The name of the parameter in the HITLayout. 
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The value substituted for the parameter referenced in the HITLayout. 
          */
-    var Value: java.lang.String
+    var Value: String
   }
   
   
@@ -800,16 +800,16 @@ object MTurkNs extends js.Object {
     /**
          *  Specifies that only Qualification types that the Requester created are returned. If false, the operation returns all Qualification types. 
          */
-    var MustBeOwnedByCaller: js.UndefOr[scala.Boolean] = js.undefined
+    var MustBeOwnedByCaller: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies that only Qualification types that a user can request through the Amazon Mechanical Turk web site, such as by taking a Qualification test, are returned as results of the search. Some Qualification types, such as those assigned automatically by the system, cannot be requested directly by users. If false, all Qualification types, including those managed by the system, are considered. Valid values are True | False. 
          */
-    var MustBeRequestable: scala.Boolean
+    var MustBeRequestable: Boolean
     var NextToken: js.UndefOr[PaginationToken] = js.undefined
     /**
          *  A text query against all of the searchable attributes of Qualification types. 
          */
-    var Query: js.UndefOr[java.lang.String] = js.undefined
+    var Query: js.UndefOr[String] = js.undefined
   }
   
   
@@ -846,11 +846,11 @@ object MTurkNs extends js.Object {
     /**
          *  Specify if the operation should retrieve a list of the actions taken executing the Review Policies and their outcomes. 
          */
-    var RetrieveActions: js.UndefOr[scala.Boolean] = js.undefined
+    var RetrieveActions: js.UndefOr[Boolean] = js.undefined
     /**
          *  Specify if the operation should retrieve a list of the results computed by the Review Policies. 
          */
-    var RetrieveResults: js.UndefOr[scala.Boolean] = js.undefined
+    var RetrieveResults: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -983,7 +983,7 @@ object MTurkNs extends js.Object {
     /**
          *  The target for notification messages. The Destination’s format is determined by the specified Transport:    When Transport is Email, the Destination is your email address.   When Transport is SQS, the Destination is your queue URL.   When Transport is SNS, the Destination is the ARN of your topic.  
          */
-    var Destination: java.lang.String
+    var Destination: String
     /**
          *  The list of events that should cause notifications to be sent. Valid Values: AssignmentAccepted | AssignmentAbandoned | AssignmentReturned | AssignmentSubmitted | AssignmentRejected | AssignmentApproved | HITCreated | HITExtended | HITDisposed | HITReviewable | HITExpired | Ping. The Ping event is only valid for the SendTestEventNotification operation. 
          */
@@ -995,7 +995,7 @@ object MTurkNs extends js.Object {
     /**
          * The version of the Notification API to use. Valid value is 2006-05-05.
          */
-    var Version: java.lang.String
+    var Version: String
   }
   
   
@@ -1007,7 +1007,7 @@ object MTurkNs extends js.Object {
     /**
          *  A message detailing the reason the Worker could not be notified. 
          */
-    var NotifyWorkersFailureMessage: js.UndefOr[java.lang.String] = js.undefined
+    var NotifyWorkersFailureMessage: js.UndefOr[String] = js.undefined
     /**
          *  The ID of the Worker.
          */
@@ -1019,11 +1019,11 @@ object MTurkNs extends js.Object {
     /**
          * The text of the email message to send. Can include up to 4,096 characters
          */
-    var MessageText: java.lang.String
+    var MessageText: String
     /**
          * The subject line of the email message to send. Can include up to 200 characters.
          */
-    var Subject: java.lang.String
+    var Subject: String
     /**
          * A list of Worker IDs you wish to notify. You can notify upto 100 Workers at a time.
          */
@@ -1043,7 +1043,7 @@ object MTurkNs extends js.Object {
     /**
          *  The QuestionID from the HIT that is used to identify which question requires Mechanical Turk to score as part of the ScoreMyKnownAnswers/2011-09-01 Review Policy. 
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          *  The list of answers to the question specified in the MapEntry Key element. The Worker must match all values in order for the answer to be scored correctly. 
          */
@@ -1055,7 +1055,7 @@ object MTurkNs extends js.Object {
     /**
          *  Name of the parameter from the list of Review Polices. 
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          *  List of ParameterMapEntry objects. 
          */
@@ -1096,11 +1096,11 @@ object MTurkNs extends js.Object {
     /**
          *  The Worker's answers for the Qualification type's test contained in a QuestionFormAnswers document, if the type has a test and the Worker has submitted answers. If the Worker does not provide any answers, Answer may be empty. 
          */
-    var Answer: js.UndefOr[java.lang.String] = js.undefined
+    var Answer: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Qualification request, a unique identifier generated when the request was submitted. 
          */
-    var QualificationRequestId: js.UndefOr[java.lang.String] = js.undefined
+    var QualificationRequestId: js.UndefOr[String] = js.undefined
     /**
          *  The ID of the Qualification type the Worker is requesting, as returned by the CreateQualificationType operation. 
          */
@@ -1112,7 +1112,7 @@ object MTurkNs extends js.Object {
     /**
          *  The contents of the Qualification test that was presented to the Worker, if the type has a test and the Worker has submitted answers. This value is identical to the QuestionForm associated with the Qualification type at the time the Worker requests the Qualification.
          */
-    var Test: js.UndefOr[java.lang.String] = js.undefined
+    var Test: js.UndefOr[String] = js.undefined
     /**
          *  The ID of the Worker requesting the Qualification.
          */
@@ -1140,11 +1140,11 @@ object MTurkNs extends js.Object {
     /**
          *  The ID of the Qualification type for the requirement.
          */
-    var QualificationTypeId: java.lang.String
+    var QualificationTypeId: String
     /**
          *  DEPRECATED: Use the ActionsGuarded field instead. If RequiredToPreview is true, the question data for the HIT will not be shown when a Worker whose Qualifications do not meet this requirement tries to preview the HIT. That is, a Worker's Qualifications must meet all of the requirements for which RequiredToPreview is true in order to preview the HIT. If a Worker meets all of the requirements where RequiredToPreview is true (or if there are no such requirements), but does not meet all of the requirements for the HIT, the Worker will be allowed to preview the HIT's question data, but will not be allowed to accept and complete the HIT. The default is false. This should not be used in combination with the ActionsGuarded field. 
          */
-    var RequiredToPreview: js.UndefOr[scala.Boolean] = js.undefined
+    var RequiredToPreview: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1152,11 +1152,11 @@ object MTurkNs extends js.Object {
     /**
          * The answers to the Qualification test specified in the Test parameter.
          */
-    var AnswerKey: js.UndefOr[java.lang.String] = js.undefined
+    var AnswerKey: js.UndefOr[String] = js.undefined
     /**
          * Specifies that requests for the Qualification type are granted immediately, without prompting the Worker with a Qualification test. Valid values are True | False.
          */
-    var AutoGranted: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoGranted: js.UndefOr[Boolean] = js.undefined
     /**
          *  The Qualification integer value to use for automatically granted Qualifications, if AutoGranted is true. This is 1 by default. 
          */
@@ -1168,19 +1168,19 @@ object MTurkNs extends js.Object {
     /**
          *  A long description for the Qualification type. 
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          *  Specifies whether the Qualification type is one that a user can request through the Amazon Mechanical Turk web site, such as by taking a Qualification test. This value is False for Qualifications assigned automatically by the system. Valid values are True | False. 
          */
-    var IsRequestable: js.UndefOr[scala.Boolean] = js.undefined
+    var IsRequestable: js.UndefOr[Boolean] = js.undefined
     /**
          *  One or more words or phrases that describe theQualification type, separated by commas. The Keywords make the type easier to find using a search. 
          */
-    var Keywords: js.UndefOr[java.lang.String] = js.undefined
+    var Keywords: js.UndefOr[String] = js.undefined
     /**
          *  The name of the Qualification type. The type name is used to identify the type, and to find the type using a Qualification type search. 
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          *  A unique identifier for the Qualification type. A Qualification type is given a Qualification type ID when you call the CreateQualificationType operation. 
          */
@@ -1196,7 +1196,7 @@ object MTurkNs extends js.Object {
     /**
          *  The questions for a Qualification test associated with this Qualification type that a user can take to obtain a Qualification of this type. This parameter must be specified if AnswerKey is present. A Qualification type cannot have both a specified Test parameter and an AutoGranted value of true. 
          */
-    var Test: js.UndefOr[java.lang.String] = js.undefined
+    var Test: js.UndefOr[String] = js.undefined
     /**
          *  The amount of time, in seconds, given to a Worker to complete the Qualification test, beginning from the time the Worker requests the Qualification. 
          */
@@ -1212,7 +1212,7 @@ object MTurkNs extends js.Object {
     /**
          *  A message for the Worker, which the Worker can see in the Status section of the web site. 
          */
-    var RequesterFeedback: java.lang.String
+    var RequesterFeedback: String
   }
   
   
@@ -1223,11 +1223,11 @@ object MTurkNs extends js.Object {
     /**
          *  The ID of the Qualification request, as returned by the ListQualificationRequests operation. 
          */
-    var QualificationRequestId: java.lang.String
+    var QualificationRequestId: String
     /**
          * A text message explaining why the request was rejected, to be shown to the Worker who made the request.
          */
-    var Reason: js.UndefOr[java.lang.String] = js.undefined
+    var Reason: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1242,7 +1242,7 @@ object MTurkNs extends js.Object {
     /**
          *  The nature of the action itself. The Review Policy is responsible for examining the HIT and Assignments, emitting results, and deciding which other actions will be necessary. 
          */
-    var ActionName: js.UndefOr[java.lang.String] = js.undefined
+    var ActionName: js.UndefOr[String] = js.undefined
     /**
          *  The date when the action was completed.
          */
@@ -1250,11 +1250,11 @@ object MTurkNs extends js.Object {
     /**
          *  Present only when the Results have a FAILED Status.
          */
-    var ErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorCode: js.UndefOr[String] = js.undefined
     /**
          *  A description of the outcome of the review.
          */
-    var Result: js.UndefOr[java.lang.String] = js.undefined
+    var Result: js.UndefOr[String] = js.undefined
     /**
          *  The current disposition of the action: INTENDED, SUCCEEDED, FAILED, or CANCELLED. 
          */
@@ -1266,7 +1266,7 @@ object MTurkNs extends js.Object {
     /**
          *  The type of object in TargetId.
          */
-    var TargetType: js.UndefOr[java.lang.String] = js.undefined
+    var TargetType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1278,7 +1278,7 @@ object MTurkNs extends js.Object {
     /**
          *  Name of a Review Policy: SimplePlurality/2011-09-01 or ScoreMyKnownAnswers/2011-09-01 
          */
-    var PolicyName: java.lang.String
+    var PolicyName: String
   }
   
   
@@ -1302,7 +1302,7 @@ object MTurkNs extends js.Object {
     /**
          *  Key identifies the particular piece of reviewed information. 
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          *  Specifies the QuestionId the result is describing. Depending on whether the TargetType is a HIT or Assignment this results could specify multiple values. If TargetType is HIT and QuestionId is absent, then the result describes results of the HIT, including the HIT agreement score. If ObjectType is Assignment and QuestionId is absent, then the result describes the Worker's performance on the HIT. 
          */
@@ -1314,11 +1314,11 @@ object MTurkNs extends js.Object {
     /**
          *  The type of the object from the SubjectId field.
          */
-    var SubjectType: js.UndefOr[java.lang.String] = js.undefined
+    var SubjectType: js.UndefOr[String] = js.undefined
     /**
          *  The values of Key provided by the review policies you have selected. 
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1334,7 +1334,7 @@ object MTurkNs extends js.Object {
     /**
          * A message that explains the reason for the bonus payment. The Worker receiving the bonus can see this message.
          */
-    var Reason: java.lang.String
+    var Reason: String
     /**
          * A unique identifier for this request, which allows you to retry the call on error without granting multiple bonuses. This is useful in cases such as network timeouts where it is unclear whether or not the call succeeded on the server. If the bonus already exists in the system from a previous call using the same UniqueRequestToken, subsequent calls will return an error with a message containing the request ID.
          */
@@ -2517,7 +2517,7 @@ object MTurkNs extends js.Object {
     /**
          *  Specifies how to update the HIT status. Default is False.     Setting this to false will only transition a HIT from Reviewable to Reviewing     Setting this to true will only transition a HIT from Reviewing to Reviewable   
          */
-    var Revert: js.UndefOr[scala.Boolean] = js.undefined
+    var Revert: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2543,7 +2543,7 @@ object MTurkNs extends js.Object {
     /**
          *  Specifies whether notifications are sent for HITs of this HIT type, according to the notification specification. You must specify either the Notification parameter or the Active parameter for the call to UpdateNotificationSettings to succeed. 
          */
-    var Active: js.UndefOr[scala.Boolean] = js.undefined
+    var Active: js.UndefOr[Boolean] = js.undefined
     /**
          *  The ID of the HIT type whose notification specification is being updated. 
          */
@@ -2562,11 +2562,11 @@ object MTurkNs extends js.Object {
     /**
          * The answers to the Qualification test specified in the Test parameter, in the form of an AnswerKey data structure.
          */
-    var AnswerKey: js.UndefOr[java.lang.String] = js.undefined
+    var AnswerKey: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether requests for the Qualification type are granted immediately, without prompting the Worker with a Qualification test. Constraints: If the Test parameter is specified, this parameter cannot be true.
          */
-    var AutoGranted: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoGranted: js.UndefOr[Boolean] = js.undefined
     /**
          * The Qualification value to use for automatically granted Qualifications. This parameter is used only if the AutoGranted parameter is true.
          */
@@ -2574,7 +2574,7 @@ object MTurkNs extends js.Object {
     /**
          * The new description of the Qualification type.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Qualification type to update.
          */
@@ -2590,7 +2590,7 @@ object MTurkNs extends js.Object {
     /**
          * The questions for the Qualification test a Worker must answer correctly to obtain a Qualification of this type. If this parameter is specified, TestDurationInSeconds must also be specified. Constraints: Must not be longer than 65535 bytes. Must be a QuestionForm data structure. This parameter cannot be specified if AutoGranted is true. Constraints: None. If not specified, the Worker may request the Qualification without answering any questions.
          */
-    var Test: js.UndefOr[java.lang.String] = js.undefined
+    var Test: js.UndefOr[String] = js.undefined
     /**
          * The number of seconds the Worker has to complete the Qualification test, starting from the time the Worker requests the Qualification.
          */
@@ -2610,7 +2610,7 @@ object MTurkNs extends js.Object {
     /**
          *  A message explaining the reason the Worker was blocked. 
          */
-    var Reason: js.UndefOr[java.lang.String] = js.undefined
+    var Reason: js.UndefOr[String] = js.undefined
     /**
          *  The ID of the Worker who accepted the HIT.
          */
@@ -2662,7 +2662,7 @@ object MTurkNs extends js.Object {
   type ReviewResultDetailList = js.Array[ReviewResultDetail]
   type ReviewableHITStatus = awsDashSdkLib.awsDashSdkLibStrings.Reviewable | awsDashSdkLib.awsDashSdkLibStrings.Reviewing | java.lang.String
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type Timestamp = stdLib.Date
   type WorkerBlockList = js.Array[WorkerBlock]
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-01-17` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String

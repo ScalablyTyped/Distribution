@@ -43,14 +43,14 @@ trait EnvelopedData extends js.Object {
            * @param {*} parameters Additional parameters
            * @returns {Promise}
            */
-  def decrypt(recipientIndex: scala.Double, parameters: pkijsLib.Anon_RecipientPrivateKey): stdLib.PromiseLike[stdLib.ArrayBuffer]
+  def decrypt(recipientIndex: scala.Double, parameters: pkijsLib.Anon_RecipientPrivateKey): js.Thenable[stdLib.ArrayBuffer]
   /**
            * Create a new CMS Enveloped Data content with encrypted data
            * @param {Algorithm} contentEncryptionAlgorithm WebCrypto algorithm. For the moment here could be only "AES-CBC" or "AES-GCM" algorithms.
            * @param {ArrayBuffer} contentToEncrypt Content to encrypt
            * @returns {Promise}
            */
-  def encrypt(contentEncryptionAlgorithm: stdLib.Algorithm, contentToEncrypt: stdLib.ArrayBuffer): stdLib.PromiseLike[stdLib.ArrayBuffer]
+  def encrypt(contentEncryptionAlgorithm: stdLib.Algorithm, contentToEncrypt: stdLib.ArrayBuffer): js.Thenable[stdLib.ArrayBuffer]
   def fromSchema(schema: js.Any): scala.Unit
   def toJSON(): js.Any
   def toSchema(): js.Any

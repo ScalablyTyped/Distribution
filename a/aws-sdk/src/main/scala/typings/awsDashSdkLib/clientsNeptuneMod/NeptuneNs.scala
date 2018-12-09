@@ -13,11 +13,11 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster to associate the IAM role with.
          */
-    var DBClusterIdentifier: java.lang.String
+    var DBClusterIdentifier: String
     /**
          * The Amazon Resource Name (ARN) of the IAM role to associate with the Neptune DB cluster, for example arn:aws:iam::123456789012:role/NeptuneAccessRole.
          */
-    var RoleArn: java.lang.String
+    var RoleArn: String
   }
   
   
@@ -25,11 +25,11 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier of the event source to be added. Constraints:   If the source type is a DB instance, then a DBInstanceIdentifier must be supplied.   If the source type is a DB security group, a DBSecurityGroupName must be supplied.   If the source type is a DB parameter group, a DBParameterGroupName must be supplied.   If the source type is a DB snapshot, a DBSnapshotIdentifier must be supplied.  
          */
-    var SourceIdentifier: java.lang.String
+    var SourceIdentifier: String
     /**
          * The name of the event notification subscription you want to add a source identifier to.
          */
-    var SubscriptionName: java.lang.String
+    var SubscriptionName: String
   }
   
   
@@ -42,7 +42,7 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Neptune resource that the tags are added to. This value is an Amazon Resource Name (ARN). For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN).
          */
-    var ResourceName: java.lang.String
+    var ResourceName: String
     /**
          * The tags to be assigned to the Amazon Neptune resource.
          */
@@ -54,15 +54,15 @@ object NeptuneNs extends js.Object {
     /**
          * The pending maintenance action to apply to this resource. Valid values: system-update, db-upgrade 
          */
-    var ApplyAction: java.lang.String
+    var ApplyAction: String
     /**
          * A value that specifies the type of opt-in request, or undoes an opt-in request. An opt-in request of type immediate can't be undone. Valid values:    immediate - Apply the maintenance action immediately.    next-maintenance - Apply the maintenance action during the next maintenance window for the resource.    undo-opt-in - Cancel any existing next-maintenance opt-in requests.  
          */
-    var OptInType: java.lang.String
+    var OptInType: String
     /**
          * The Amazon Resource Name (ARN) of the resource that the pending maintenance action applies to. For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN).
          */
-    var ResourceIdentifier: java.lang.String
+    var ResourceIdentifier: String
   }
   
   
@@ -75,7 +75,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the availability zone.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -83,11 +83,11 @@ object NeptuneNs extends js.Object {
     /**
          * The description of the character set.
          */
-    var CharacterSetDescription: js.UndefOr[java.lang.String] = js.undefined
+    var CharacterSetDescription: js.UndefOr[String] = js.undefined
     /**
          * The name of the character set.
          */
-    var CharacterSetName: js.UndefOr[java.lang.String] = js.undefined
+    var CharacterSetName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -115,16 +115,16 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier or Amazon Resource Name (ARN) for the source DB cluster parameter group. For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN).  Constraints:   Must specify a valid DB cluster parameter group.   If the source DB cluster parameter group is in the same AWS Region as the copy, specify a valid DB parameter group identifier, for example my-db-cluster-param-group, or a valid ARN.   If the source DB parameter group is in a different AWS Region than the copy, specify a valid DB cluster parameter group ARN, for example arn:aws:rds:us-east-1:123456789012:cluster-pg:custom-cluster-group1.  
          */
-    var SourceDBClusterParameterGroupIdentifier: java.lang.String
+    var SourceDBClusterParameterGroupIdentifier: String
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
          * A description for the copied DB cluster parameter group.
          */
-    var TargetDBClusterParameterGroupDescription: java.lang.String
+    var TargetDBClusterParameterGroupDescription: String
     /**
          * The identifier for the copied DB cluster parameter group. Constraints:   Cannot be null, empty, or blank   Must contain from 1 to 255 letters, numbers, or hyphens   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens   Example: my-cluster-param-group1 
          */
-    var TargetDBClusterParameterGroupIdentifier: java.lang.String
+    var TargetDBClusterParameterGroupIdentifier: String
   }
   
   
@@ -141,20 +141,20 @@ object NeptuneNs extends js.Object {
     /**
          * The AWS AWS KMS key ID for an encrypted DB cluster snapshot. The KMS key ID is the Amazon Resource Name (ARN), KMS key identifier, or the KMS key alias for the KMS encryption key.  If you copy an unencrypted DB cluster snapshot and specify a value for the KmsKeyId parameter, Amazon Neptune encrypts the target DB cluster snapshot using the specified KMS encryption key.  If you copy an encrypted DB cluster snapshot from your AWS account, you can specify a value for KmsKeyId to encrypt the copy with a new KMS encryption key. If you don't specify a value for KmsKeyId, then the copy of the DB cluster snapshot is encrypted with the same KMS key as the source DB cluster snapshot.  If you copy an encrypted DB cluster snapshot that is shared from another AWS account, then you must specify a value for KmsKeyId.  To copy an encrypted DB cluster snapshot to another AWS Region, you must set KmsKeyId to the KMS key ID you want to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. KMS encryption keys are specific to the AWS Region that they are created in, and you can't use encryption keys from one AWS Region in another AWS Region.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The URL that contains a Signature Version 4 signed request for the CopyDBClusterSnapshot API action in the AWS Region that contains the source DB cluster snapshot to copy. The PreSignedUrl parameter must be used when copying an encrypted DB cluster snapshot from another AWS Region. The pre-signed URL must be a valid request for the CopyDBSClusterSnapshot API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The AWS KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the CopyDBClusterSnapshot action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that the DB cluster snapshot will be created in.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks like the following example: arn:aws:rds:us-west-2:123456789012:cluster-snapshot:neptune-cluster1-snapshot-20161115.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.
          */
-    var PreSignedUrl: js.UndefOr[java.lang.String] = js.undefined
+    var PreSignedUrl: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the DB cluster snapshot to copy. This parameter is not case-sensitive. You can't copy an encrypted, shared DB cluster snapshot from one AWS Region to another. Constraints:   Must specify a valid system snapshot in the "available" state.   If the source snapshot is in the same AWS Region as the copy, specify a valid DB snapshot identifier.   If the source snapshot is in a different AWS Region than the copy, specify a valid DB cluster snapshot ARN.    Example: my-cluster-snapshot1 
          */
-    var SourceDBClusterSnapshotIdentifier: java.lang.String
+    var SourceDBClusterSnapshotIdentifier: String
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
          * The identifier of the new DB cluster snapshot to create from the source DB cluster snapshot. This parameter is not case-sensitive. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: my-cluster-snapshot2 
          */
-    var TargetDBClusterSnapshotIdentifier: java.lang.String
+    var TargetDBClusterSnapshotIdentifier: String
   }
   
   
@@ -167,16 +167,16 @@ object NeptuneNs extends js.Object {
     /**
          *  The identifier or ARN for the source DB parameter group. For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN).  Constraints:   Must specify a valid DB parameter group.   Must specify a valid DB parameter group identifier, for example my-db-param-group, or a valid ARN.  
          */
-    var SourceDBParameterGroupIdentifier: java.lang.String
+    var SourceDBParameterGroupIdentifier: String
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
          * A description for the copied DB parameter group.
          */
-    var TargetDBParameterGroupDescription: java.lang.String
+    var TargetDBParameterGroupDescription: String
     /**
          * The identifier for the copied DB parameter group. Constraints:   Cannot be null, empty, or blank   Must contain from 1 to 255 letters, numbers, or hyphens   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens   Example: my-db-parameter-group 
          */
-    var TargetDBParameterGroupIdentifier: java.lang.String
+    var TargetDBParameterGroupIdentifier: String
   }
   
   
@@ -197,23 +197,23 @@ object NeptuneNs extends js.Object {
     /**
          * A value that indicates that the DB cluster should be associated with the specified CharacterSet.
          */
-    var CharacterSetName: js.UndefOr[java.lang.String] = js.undefined
+    var CharacterSetName: js.UndefOr[String] = js.undefined
     /**
          * The DB cluster identifier. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: my-cluster1 
          */
-    var DBClusterIdentifier: java.lang.String
+    var DBClusterIdentifier: String
     /**
          *  The name of the DB cluster parameter group to associate with this DB cluster. If this argument is omitted, the default is used.  Constraints:   If supplied, must match the name of an existing DBClusterParameterGroup.  
          */
-    var DBClusterParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * A DB subnet group to associate with this DB cluster. Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
          */
-    var DBSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * The name for your database of up to 64 alpha-numeric characters. If you do not provide a name, Amazon Neptune will not create a database in the DB cluster you are creating.
          */
-    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    var DatabaseName: js.UndefOr[String] = js.undefined
     /**
          * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
          */
@@ -221,27 +221,27 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the database engine to be used for this DB cluster. Valid Values: neptune 
          */
-    var Engine: java.lang.String
+    var Engine: String
     /**
          * The version number of the database engine to use. Example: 1.0.1 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The AWS KMS key identifier for an encrypted DB cluster. The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are creating a DB cluster with the same AWS account that owns the KMS encryption key used to encrypt the new DB cluster, then you can use the KMS key alias instead of the ARN for the KMS encryption key. If an encryption key is not specified in KmsKeyId:   If ReplicationSourceIdentifier identifies an encrypted source, then Amazon Neptune will use the encryption key used to encrypt the source. Otherwise, Amazon Neptune will use your default encryption key.    If the StorageEncrypted parameter is true and ReplicationSourceIdentifier is not specified, then Amazon Neptune will use your default encryption key.   AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region. If you create a Read Replica of an encrypted DB cluster in another AWS Region, you must set KmsKeyId to a KMS key ID that is valid in the destination AWS Region. This key is used to encrypt the Read Replica in that AWS Region.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The password for the master database user. This password can contain any printable ASCII character except "/", """, or "@". Constraints: Must contain from 8 to 41 characters.
          */
-    var MasterUserPassword: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUserPassword: js.UndefOr[String] = js.undefined
     /**
          * The name of the master user for the DB cluster. Constraints:   Must be 1 to 16 letters or numbers.   First character must be a letter.   Cannot be a reserved word for the chosen database engine.  
          */
-    var MasterUsername: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUsername: js.UndefOr[String] = js.undefined
     /**
          * A value that indicates that the DB cluster should be associated with the specified option group. Permanent options can't be removed from an option group. The option group can't be removed from a DB cluster once it is associated with a DB cluster.
          */
-    var OptionGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var OptionGroupName: js.UndefOr[String] = js.undefined
     /**
          * The port number on which the instances in the DB cluster accept connections.  Default: 8182 
          */
@@ -249,19 +249,19 @@ object NeptuneNs extends js.Object {
     /**
          * A URL that contains a Signature Version 4 signed request for the CreateDBCluster action to be called in the source AWS Region where the DB cluster is replicated from. You only need to specify PreSignedUrl when you are performing cross-region replication from an encrypted DB cluster. The pre-signed URL must be a valid request for the CreateDBCluster API action that can be executed in the source AWS Region that contains the encrypted DB cluster to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The AWS KMS key identifier for the key to use to encrypt the copy of the DB cluster in the destination AWS Region. This should refer to the same KMS key for both the CreateDBCluster action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that Read Replica will be created in.    ReplicationSourceIdentifier - The DB cluster identifier for the encrypted DB cluster to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster from the us-west-2 AWS Region, then your ReplicationSourceIdentifier would look like Example: arn:aws:rds:us-west-2:123456789012:cluster:neptune-cluster1.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.
          */
-    var PreSignedUrl: js.UndefOr[java.lang.String] = js.undefined
+    var PreSignedUrl: js.UndefOr[String] = js.undefined
     /**
          * The daily time range during which automated backups are created if automated backups are enabled using the BackupRetentionPeriod parameter.  The default is a 30-minute window selected at random from an 8-hour block of time for each AWS Region. To see the time blocks available, see  Adjusting the Preferred Maintenance Window in the Amazon Neptune User Guide.  Constraints:   Must be in the format hh24:mi-hh24:mi.   Must be in Universal Coordinated Time (UTC).   Must not conflict with the preferred maintenance window.   Must be at least 30 minutes.  
          */
-    var PreferredBackupWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredBackupWindow: js.UndefOr[String] = js.undefined
     /**
          * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC). Format: ddd:hh24:mi-ddd:hh24:mi  The default is a 30-minute window selected at random from an 8-hour block of time for each AWS Region, occurring on a random day of the week. To see the time blocks available, see  Adjusting the Preferred Maintenance Window in the Amazon Neptune User Guide.  Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Constraints: Minimum 30-minute window.
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the source DB instance or DB cluster if this DB cluster is created as a Read Replica.
          */
-    var ReplicationSourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationSourceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether the DB cluster is encrypted.
          */
@@ -278,15 +278,15 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster parameter group. Constraints:   Must match the name of an existing DBClusterParameterGroup.    This value is stored as a lowercase string. 
          */
-    var DBClusterParameterGroupName: java.lang.String
+    var DBClusterParameterGroupName: String
     /**
          * The DB cluster parameter group family name. A DB cluster parameter group can be associated with one and only one DB cluster parameter group family, and can be applied only to a DB cluster running a database engine and engine version compatible with that DB cluster parameter group family.
          */
-    var DBParameterGroupFamily: java.lang.String
+    var DBParameterGroupFamily: String
     /**
          * The description for the DB cluster parameter group.
          */
-    var Description: java.lang.String
+    var Description: String
     var Tags: js.UndefOr[TagList] = js.undefined
   }
   
@@ -305,11 +305,11 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier of the DB cluster to create a snapshot for. This parameter is not case-sensitive. Constraints:   Must match the identifier of an existing DBCluster.   Example: my-cluster1 
          */
-    var DBClusterIdentifier: java.lang.String
+    var DBClusterIdentifier: String
     /**
          * The identifier of the DB cluster snapshot. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: my-cluster1-snapshot1 
          */
-    var DBClusterSnapshotIdentifier: java.lang.String
+    var DBClusterSnapshotIdentifier: String
     /**
          * The tags to be assigned to the DB cluster snapshot.
          */
@@ -334,7 +334,7 @@ object NeptuneNs extends js.Object {
     /**
          *  The EC2 Availability Zone that the DB instance is created in.  Default: A random, system-chosen Availability Zone in the endpoint's AWS Region.  Example: us-east-1d   Constraint: The AvailabilityZone parameter can't be specified if the MultiAZ parameter is set to true. The specified Availability Zone must be in the same AWS Region as the current endpoint. 
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The number of days for which automated backups are retained. Not applicable. The retention period for automated backups is managed by the DB cluster. For more information, see CreateDBCluster. Default: 1 Constraints:   Must be a value from 0 to 35   Cannot be set to 0 if the DB instance is a source to Read Replicas  
          */
@@ -342,7 +342,7 @@ object NeptuneNs extends js.Object {
     /**
          * Indicates that the DB instance should be associated with the specified CharacterSet. Not applicable. The character set is managed by the DB cluster. For more information, see CreateDBCluster.
          */
-    var CharacterSetName: js.UndefOr[java.lang.String] = js.undefined
+    var CharacterSetName: js.UndefOr[String] = js.undefined
     /**
          * True to copy all tags from the DB instance to snapshots of the DB instance, and otherwise false. The default is false.
          */
@@ -350,23 +350,23 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier of the DB cluster that the instance will belong to. For information on creating a DB cluster, see CreateDBCluster. Type: String
          */
-    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The compute and memory capacity of the DB instance, for example, db.m4.large. Not all DB instance classes are available in all AWS Regions. 
          */
-    var DBInstanceClass: java.lang.String
+    var DBInstanceClass: String
     /**
          * The DB instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: mydbinstance 
          */
-    var DBInstanceIdentifier: java.lang.String
+    var DBInstanceIdentifier: String
     /**
          * The database name.  Type: String
          */
-    var DBName: js.UndefOr[java.lang.String] = js.undefined
+    var DBName: js.UndefOr[String] = js.undefined
     /**
          * The name of the DB parameter group to associate with this DB instance. If this argument is omitted, the default DBParameterGroup for the specified engine is used. Constraints:   Must be 1 to 255 letters, numbers, or hyphens.   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens  
          */
-    var DBParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * A list of DB security groups to associate with this DB instance. Default: The default DB security group for the database engine.
          */
@@ -374,15 +374,15 @@ object NeptuneNs extends js.Object {
     /**
          * A DB subnet group to associate with this DB instance. If there is no DB subnet group, then it is a non-VPC DB instance.
          */
-    var DBSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * Specify the Active Directory Domain to create the instance in.
          */
-    var Domain: js.UndefOr[java.lang.String] = js.undefined
+    var Domain: js.UndefOr[String] = js.undefined
     /**
          * Specify the name of the IAM role to be used when making API calls to the Directory Service.
          */
-    var DomainIAMRoleName: js.UndefOr[java.lang.String] = js.undefined
+    var DomainIAMRoleName: js.UndefOr[String] = js.undefined
     /**
          * The list of log types that need to be enabled for exporting to CloudWatch Logs.
          */
@@ -398,11 +398,11 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the database engine to be used for this instance.  Valid Values: neptune 
          */
-    var Engine: java.lang.String
+    var Engine: String
     /**
          * The version number of the database engine to use.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The amount of Provisioned IOPS (input/output operations per second) to be initially allocated for the DB instance. 
          */
@@ -410,19 +410,19 @@ object NeptuneNs extends js.Object {
     /**
          * The AWS KMS key identifier for an encrypted DB instance. The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are creating a DB instance with the same AWS account that owns the KMS encryption key used to encrypt the new DB instance, then you can use the KMS key alias instead of the ARN for the KM encryption key. Not applicable. The KMS key identifier is managed by the DB cluster. For more information, see CreateDBCluster. If the StorageEncrypted parameter is true, and you do not specify a value for the KmsKeyId parameter, then Amazon Neptune will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * License model information for this DB instance.  Valid values: license-included | bring-your-own-license | general-public-license 
          */
-    var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseModel: js.UndefOr[String] = js.undefined
     /**
          * The password for the master user. The password can include any printable ASCII character except "/", """, or "@".  Not used. 
          */
-    var MasterUserPassword: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUserPassword: js.UndefOr[String] = js.undefined
     /**
          * The name for the master user. Not used.
          */
-    var MasterUsername: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUsername: js.UndefOr[String] = js.undefined
     /**
          * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. If MonitoringRoleArn is specified, then you must also set MonitoringInterval to a value other than 0. Valid Values: 0, 1, 5, 10, 15, 30, 60 
          */
@@ -430,7 +430,7 @@ object NeptuneNs extends js.Object {
     /**
          * The ARN for the IAM role that permits Neptune to send enhanced monitoring metrics to Amazon CloudWatch Logs. For example, arn:aws:iam:123456789012:role/emaccess. If MonitoringInterval is set to a value other than 0, then you must supply a MonitoringRoleArn value.
          */
-    var MonitoringRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var MonitoringRoleArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies if the DB instance is a Multi-AZ deployment. You can't set the AvailabilityZone parameter if the MultiAZ parameter is set to true.
          */
@@ -438,11 +438,11 @@ object NeptuneNs extends js.Object {
     /**
          * Indicates that the DB instance should be associated with the specified option group. Permanent options, such as the TDE option for Oracle Advanced Security TDE, can't be removed from an option group, and that option group can't be removed from a DB instance once it is associated with a DB instance
          */
-    var OptionGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var OptionGroupName: js.UndefOr[String] = js.undefined
     /**
          * The AWS KMS key identifier for encryption of Performance Insights data. The KMS key ID is the Amazon Resource Name (ARN), KMS key identifier, or the KMS key alias for the KMS encryption key.
          */
-    var PerformanceInsightsKMSKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
     /**
          * The port number on which the database accepts connections. Not applicable. The port is managed by the DB cluster. For more information, see CreateDBCluster.  Default: 8182  Type: Integer
          */
@@ -450,11 +450,11 @@ object NeptuneNs extends js.Object {
     /**
          *  The daily time range during which automated backups are created.  Not applicable. The daily time range for creating automated backups is managed by the DB cluster. For more information, see CreateDBCluster.
          */
-    var PreferredBackupWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredBackupWindow: js.UndefOr[String] = js.undefined
     /**
          * The time range each week during which system maintenance can occur, in Universal Coordinated Time (UTC).   Format: ddd:hh24:mi-ddd:hh24:mi  The default is a 30-minute window selected at random from an 8-hour block of time for each AWS Region, occurring on a random day of the week.  Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Constraints: Minimum 30-minute window.
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * A value that specifies the order in which an Read Replica is promoted to the primary instance after a failure of the existing primary instance.  Default: 1 Valid Values: 0 - 15
          */
@@ -470,20 +470,20 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the storage type to be associated with the DB instance. Not applicable. Storage is managed by the DB Cluster.
          */
-    var StorageType: js.UndefOr[java.lang.String] = js.undefined
+    var StorageType: js.UndefOr[String] = js.undefined
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
          * The ARN from the key store with which to associate the instance for TDE encryption.
          */
-    var TdeCredentialArn: js.UndefOr[java.lang.String] = js.undefined
+    var TdeCredentialArn: js.UndefOr[String] = js.undefined
     /**
          * The password for the given ARN from the key store in order to access the device.
          */
-    var TdeCredentialPassword: js.UndefOr[java.lang.String] = js.undefined
+    var TdeCredentialPassword: js.UndefOr[String] = js.undefined
     /**
          * The time zone of the DB instance. 
          */
-    var Timezone: js.UndefOr[java.lang.String] = js.undefined
+    var Timezone: js.UndefOr[String] = js.undefined
     /**
          * A list of EC2 VPC security groups to associate with this DB instance. Not applicable. The associated list of EC2 VPC security groups is managed by the DB cluster. For more information, see CreateDBCluster. Default: The default EC2 VPC security group for the DB subnet group's VPC.
          */
@@ -500,15 +500,15 @@ object NeptuneNs extends js.Object {
     /**
          * The DB parameter group family name. A DB parameter group can be associated with one and only one DB parameter group family, and can be applied only to a DB instance running a database engine and engine version compatible with that DB parameter group family.
          */
-    var DBParameterGroupFamily: java.lang.String
+    var DBParameterGroupFamily: String
     /**
          * The name of the DB parameter group. Constraints:   Must be 1 to 255 letters, numbers, or hyphens.   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens    This value is stored as a lowercase string. 
          */
-    var DBParameterGroupName: java.lang.String
+    var DBParameterGroupName: String
     /**
          * The description for the DB parameter group.
          */
-    var Description: java.lang.String
+    var Description: String
     var Tags: js.UndefOr[TagList] = js.undefined
   }
   
@@ -522,11 +522,11 @@ object NeptuneNs extends js.Object {
     /**
          * The description for the DB subnet group.
          */
-    var DBSubnetGroupDescription: java.lang.String
+    var DBSubnetGroupDescription: String
     /**
          * The name for the DB subnet group. This value is stored as a lowercase string. Constraints: Must contain no more than 255 letters, numbers, periods, underscores, spaces, or hyphens. Must not be default. Example: mySubnetgroup 
          */
-    var DBSubnetGroupName: java.lang.String
+    var DBSubnetGroupName: String
     /**
          * The EC2 Subnet IDs for the DB subnet group.
          */
@@ -552,7 +552,7 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the SNS topic created for event notification. The ARN is created by Amazon SNS when you create a topic and subscribe to it.
          */
-    var SnsTopicArn: java.lang.String
+    var SnsTopicArn: String
     /**
          * The list of identifiers of the event sources for which events are returned. If not specified, then all sources are included in the response. An identifier must begin with a letter and must contain only ASCII letters, digits, and hyphens; it can't end with a hyphen or contain two consecutive hyphens. Constraints:   If SourceIds are supplied, SourceType must also be provided.   If the source type is a DB instance, then a DBInstanceIdentifier must be supplied.   If the source type is a DB security group, a DBSecurityGroupName must be supplied.   If the source type is a DB parameter group, a DBParameterGroupName must be supplied.   If the source type is a DB snapshot, a DBSnapshotIdentifier must be supplied.  
          */
@@ -560,11 +560,11 @@ object NeptuneNs extends js.Object {
     /**
          * The type of source that is generating the events. For example, if you want to be notified of events generated by a DB instance, you would set this parameter to db-instance. if this value is not specified, all events are returned. Valid values: db-instance | db-cluster | db-parameter-group | db-security-group | db-snapshot | db-cluster-snapshot 
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
     /**
          * The name of the subscription. Constraints: The name must be less than 255 characters.
          */
-    var SubscriptionName: java.lang.String
+    var SubscriptionName: String
     var Tags: js.UndefOr[TagList] = js.undefined
   }
   
@@ -594,11 +594,11 @@ object NeptuneNs extends js.Object {
     /**
          * If present, specifies the name of the character set that this cluster is associated with.
          */
-    var CharacterSetName: js.UndefOr[java.lang.String] = js.undefined
+    var CharacterSetName: js.UndefOr[String] = js.undefined
     /**
          * Identifies the clone group to which the DB cluster is associated.
          */
-    var CloneGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var CloneGroupId: js.UndefOr[String] = js.undefined
     /**
          * Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC).
          */
@@ -606,11 +606,11 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the DB cluster.
          */
-    var DBClusterArn: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterArn: js.UndefOr[String] = js.undefined
     /**
          * Contains a user-supplied DB cluster identifier. This identifier is the unique key that identifies a DB cluster.
          */
-    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Provides the list of instances that make up the DB cluster.
          */
@@ -622,19 +622,19 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the name of the DB cluster parameter group for the DB cluster.
          */
-    var DBClusterParameterGroup: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterParameterGroup: js.UndefOr[String] = js.undefined
     /**
          * Specifies information on the subnet group associated with the DB cluster, including the name, description, and subnets in the subnet group.
          */
-    var DBSubnetGroup: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroup: js.UndefOr[String] = js.undefined
     /**
          * Contains the name of the initial database of this DB cluster that was provided at create time, if one was specified when the DB cluster was created. This same name is returned for the life of the DB cluster.
          */
-    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    var DatabaseName: js.UndefOr[String] = js.undefined
     /**
          * The AWS Region-unique, immutable identifier for the DB cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed.
          */
-    var DbClusterResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var DbClusterResourceId: js.UndefOr[String] = js.undefined
     /**
          * Specifies the earliest time to which a database can be restored with point-in-time restore.
          */
@@ -642,27 +642,27 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the connection endpoint for the primary instance of the DB cluster.
          */
-    var Endpoint: js.UndefOr[java.lang.String] = js.undefined
+    var Endpoint: js.UndefOr[String] = js.undefined
     /**
          * Provides the name of the database engine to be used for this DB cluster.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * Indicates the database engine version.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * Specifies the ID that Amazon Route 53 assigns when you create a hosted zone.
          */
-    var HostedZoneId: js.UndefOr[java.lang.String] = js.undefined
+    var HostedZoneId: js.UndefOr[String] = js.undefined
     /**
          * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
          */
-    var IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * Specifies the latest time to which a database can be restored with point-in-time restore.
          */
@@ -670,15 +670,15 @@ object NeptuneNs extends js.Object {
     /**
          * Contains the master username for the DB cluster.
          */
-    var MasterUsername: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUsername: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether the DB cluster has instances in multiple Availability Zones.
          */
-    var MultiAZ: js.UndefOr[scala.Boolean] = js.undefined
+    var MultiAZ: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the progress of the operation as a percentage.
          */
-    var PercentProgress: js.UndefOr[java.lang.String] = js.undefined
+    var PercentProgress: js.UndefOr[String] = js.undefined
     /**
          * Specifies the port that the database engine is listening on.
          */
@@ -686,11 +686,11 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod. 
          */
-    var PreferredBackupWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredBackupWindow: js.UndefOr[String] = js.undefined
     /**
          * Specifies the weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * Contains one or more identifiers of the Read Replicas associated with this DB cluster.
          */
@@ -698,19 +698,19 @@ object NeptuneNs extends js.Object {
     /**
          * The reader endpoint for the DB cluster. The reader endpoint for a DB cluster load-balances connections across the Read Replicas that are available in a DB cluster. As clients request new connections to the reader endpoint, Neptune distributes the connection requests among the Read Replicas in the DB cluster. This functionality can help balance your read workload across multiple Read Replicas in your DB cluster.  If a failover occurs, and the Read Replica that you are connected to is promoted to be the primary instance, your connection is dropped. To continue sending your read workload to other Read Replicas in the cluster, you can then reconnect to the reader endpoint.
          */
-    var ReaderEndpoint: js.UndefOr[java.lang.String] = js.undefined
+    var ReaderEndpoint: js.UndefOr[String] = js.undefined
     /**
          * Contains the identifier of the source DB cluster if this DB cluster is a Read Replica.
          */
-    var ReplicationSourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationSourceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Specifies the current state of this DB cluster.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether the DB cluster is encrypted.
          */
-    var StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * Provides a list of VPC security groups that the DB cluster belongs to.
          */
@@ -722,15 +722,15 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the status of the DB cluster parameter group for this member of the DB cluster.
          */
-    var DBClusterParameterGroupStatus: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterParameterGroupStatus: js.UndefOr[String] = js.undefined
     /**
          * Specifies the instance identifier for this member of the DB cluster.
          */
-    var DBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Value that is true if the cluster member is the primary instance for the DB cluster and false otherwise.
          */
-    var IsClusterWriter: js.UndefOr[scala.Boolean] = js.undefined
+    var IsClusterWriter: js.UndefOr[Boolean] = js.undefined
     /**
          * A value that specifies the order in which a Read Replica is promoted to the primary instance after a failure of the existing primary instance. 
          */
@@ -746,7 +746,7 @@ object NeptuneNs extends js.Object {
     /**
          * A pagination token that can be used in a subsequent DescribeDBClusters request.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -754,11 +754,11 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the name of the DB cluster option group.
          */
-    var DBClusterOptionGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterOptionGroupName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the status of the DB cluster option group.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -766,19 +766,19 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the DB cluster parameter group.
          */
-    var DBClusterParameterGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterParameterGroupArn: js.UndefOr[String] = js.undefined
     /**
          * Provides the name of the DB cluster parameter group.
          */
-    var DBClusterParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * Provides the name of the DB parameter group family that this DB cluster parameter group is compatible with.
          */
-    var DBParameterGroupFamily: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
     /**
          * Provides the customer-specified description for this DB cluster parameter group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
   }
   
   
@@ -786,7 +786,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeDBClusterParameters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * Provides a list of parameters for the DB cluster parameter group.
          */
@@ -798,7 +798,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster parameter group. Constraints:   Must be 1 to 255 letters or numbers.   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens    This value is stored as a lowercase string. 
          */
-    var DBClusterParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -810,7 +810,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeDBClusterParameterGroups request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -818,11 +818,11 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the IAM role that is associated with the DB cluster.
          */
-    var RoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var RoleArn: js.UndefOr[String] = js.undefined
     /**
          * Describes the state of association between the IAM role and the DB cluster. The Status property returns one of the following values:    ACTIVE - the IAM role ARN is associated with the DB cluster and can be used to access other AWS services on your behalf.    PENDING - the IAM role ARN is being associated with the DB cluster.    INVALID - the IAM role ARN is associated with the DB cluster, but the DB cluster is unable to assume the IAM role in order to access other AWS services on your behalf.  
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -842,39 +842,39 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the DB cluster identifier of the DB cluster that this DB cluster snapshot was created from.
          */
-    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for the DB cluster snapshot.
          */
-    var DBClusterSnapshotArn: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterSnapshotArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies the identifier for the DB cluster snapshot.
          */
-    var DBClusterSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Specifies the name of the database engine.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * Provides the version of the database engine for this DB cluster snapshot.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
          */
-    var IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * Provides the license model information for this DB cluster snapshot.
          */
-    var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseModel: js.UndefOr[String] = js.undefined
     /**
          * Provides the master username for the DB cluster snapshot.
          */
-    var MasterUsername: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUsername: js.UndefOr[String] = js.undefined
     /**
          * Specifies the percentage of the estimated data that has been transferred.
          */
@@ -890,23 +890,23 @@ object NeptuneNs extends js.Object {
     /**
          * Provides the type of the DB cluster snapshot.
          */
-    var SnapshotType: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotType: js.UndefOr[String] = js.undefined
     /**
          * If the DB cluster snapshot was copied from a source DB cluster snapshot, the Amazon Resource Name (ARN) for the source DB cluster snapshot, otherwise, a null value.
          */
-    var SourceDBClusterSnapshotArn: js.UndefOr[java.lang.String] = js.undefined
+    var SourceDBClusterSnapshotArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies the status of this DB cluster snapshot.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether the DB cluster snapshot is encrypted.
          */
-    var StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * Provides the VPC ID associated with the DB cluster snapshot.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -914,7 +914,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the manual DB cluster snapshot attribute. The attribute named restore refers to the list of AWS accounts that have permission to copy or restore the manual DB cluster snapshot. For more information, see the ModifyDBClusterSnapshotAttribute API action.
          */
-    var AttributeName: js.UndefOr[java.lang.String] = js.undefined
+    var AttributeName: js.UndefOr[String] = js.undefined
     /**
          * The value(s) for the manual DB cluster snapshot attribute. If the AttributeName field is set to restore, then this element returns a list of IDs of the AWS accounts that are authorized to copy or restore the manual DB cluster snapshot. If a value of all is in the list, then the manual DB cluster snapshot is public and available for any AWS account to copy or restore.
          */
@@ -930,7 +930,7 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier of the manual DB cluster snapshot that the attributes apply to.
          */
-    var DBClusterSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
   }
   
   
@@ -942,7 +942,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeDBClusterSnapshots request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -950,15 +950,15 @@ object NeptuneNs extends js.Object {
     /**
          * The description of the database engine.
          */
-    var DBEngineDescription: js.UndefOr[java.lang.String] = js.undefined
+    var DBEngineDescription: js.UndefOr[String] = js.undefined
     /**
          * The description of the database engine version.
          */
-    var DBEngineVersionDescription: js.UndefOr[java.lang.String] = js.undefined
+    var DBEngineVersionDescription: js.UndefOr[String] = js.undefined
     /**
          * The name of the DB parameter group family for the database engine.
          */
-    var DBParameterGroupFamily: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
     /**
          *  The default character set for new instances of this engine version, if the CharacterSetName parameter of the CreateDBInstance API is not specified. 
          */
@@ -966,11 +966,11 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the database engine.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The version number of the database engine.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The types of logs that the database engine has available for export to CloudWatch Logs.
          */
@@ -986,11 +986,11 @@ object NeptuneNs extends js.Object {
     /**
          * A value that indicates whether the engine version supports exporting the log types specified by ExportableLogTypes to CloudWatch Logs.
          */
-    var SupportsLogExportsToCloudwatchLogs: js.UndefOr[scala.Boolean] = js.undefined
+    var SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the database engine version supports read replicas.
          */
-    var SupportsReadReplica: js.UndefOr[scala.Boolean] = js.undefined
+    var SupportsReadReplica: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of engine versions that this database engine version can be upgraded to.
          */
@@ -1006,7 +1006,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1018,11 +1018,11 @@ object NeptuneNs extends js.Object {
     /**
          * Indicates that minor version patches are applied automatically.
          */
-    var AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the name of the Availability Zone the DB instance is located in.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * Specifies the number of days for which automatic DB snapshots are retained.
          */
@@ -1030,39 +1030,39 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier of the CA certificate for this DB instance.
          */
-    var CACertificateIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var CACertificateIdentifier: js.UndefOr[String] = js.undefined
     /**
          * If present, specifies the name of the character set that this instance is associated with.
          */
-    var CharacterSetName: js.UndefOr[java.lang.String] = js.undefined
+    var CharacterSetName: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether tags are copied from the DB instance to snapshots of the DB instance.
          */
-    var CopyTagsToSnapshot: js.UndefOr[scala.Boolean] = js.undefined
+    var CopyTagsToSnapshot: js.UndefOr[Boolean] = js.undefined
     /**
          * If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
          */
-    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for the DB instance.
          */
-    var DBInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * Contains the name of the compute and memory capacity class of the DB instance.
          */
-    var DBInstanceClass: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceClass: js.UndefOr[String] = js.undefined
     /**
          * Contains a user-supplied database identifier. This identifier is the unique key that identifies a DB instance.
          */
-    var DBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Specifies the current state of this database.
          */
-    var DBInstanceStatus: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceStatus: js.UndefOr[String] = js.undefined
     /**
          * The database name.
          */
-    var DBName: js.UndefOr[java.lang.String] = js.undefined
+    var DBName: js.UndefOr[String] = js.undefined
     /**
          * Provides the list of DB parameter groups applied to this DB instance.
          */
@@ -1082,7 +1082,7 @@ object NeptuneNs extends js.Object {
     /**
          * The AWS Region-unique, immutable identifier for the DB instance. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB instance is accessed.
          */
-    var DbiResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var DbiResourceId: js.UndefOr[String] = js.undefined
     /**
          * Not supported
          */
@@ -1098,19 +1098,19 @@ object NeptuneNs extends js.Object {
     /**
          * Provides the name of the database engine to be used for this DB instance.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * Indicates the database engine version.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the Amazon CloudWatch Logs log stream that receives the Enhanced Monitoring metrics data for the DB instance.
          */
-    var EnhancedMonitoringResourceArn: js.UndefOr[java.lang.String] = js.undefined
+    var EnhancedMonitoringResourceArn: js.UndefOr[String] = js.undefined
     /**
          * True if AWS Identity and Access Management (IAM) authentication is enabled, and otherwise false.
          */
-    var IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Provides the date and time the DB instance was created.
          */
@@ -1122,7 +1122,7 @@ object NeptuneNs extends js.Object {
     /**
          *  If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB instance. 
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * Specifies the latest time to which a database can be restored with point-in-time restore.
          */
@@ -1130,11 +1130,11 @@ object NeptuneNs extends js.Object {
     /**
          * License model information for this DB instance.
          */
-    var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseModel: js.UndefOr[String] = js.undefined
     /**
          * Contains the master username for the DB instance.
          */
-    var MasterUsername: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUsername: js.UndefOr[String] = js.undefined
     /**
          * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
          */
@@ -1142,11 +1142,11 @@ object NeptuneNs extends js.Object {
     /**
          * The ARN for the IAM role that permits Neptune to send Enhanced Monitoring metrics to Amazon CloudWatch Logs.
          */
-    var MonitoringRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var MonitoringRoleArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies if the DB instance is a Multi-AZ deployment.
          */
-    var MultiAZ: js.UndefOr[scala.Boolean] = js.undefined
+    var MultiAZ: js.UndefOr[Boolean] = js.undefined
     /**
          * Provides the list of option group memberships for this DB instance.
          */
@@ -1162,15 +1162,15 @@ object NeptuneNs extends js.Object {
     /**
          * The AWS KMS key identifier for encryption of Performance Insights data. The KMS key ID is the Amazon Resource Name (ARN), KMS key identifier, or the KMS key alias for the KMS encryption key.
          */
-    var PerformanceInsightsKMSKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
     /**
          *  Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod. 
          */
-    var PreferredBackupWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredBackupWindow: js.UndefOr[String] = js.undefined
     /**
          * Specifies the weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * A value that specifies the order in which a Read Replica is promoted to the primary instance after a failure of the existing primary instance. 
          */
@@ -1178,7 +1178,7 @@ object NeptuneNs extends js.Object {
     /**
          * This parameter is not supported.
          */
-    var PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined
+    var PubliclyAccessible: js.UndefOr[Boolean] = js.undefined
     /**
          * Contains one or more identifiers of DB clusters that are Read Replicas of this DB instance.
          */
@@ -1190,11 +1190,11 @@ object NeptuneNs extends js.Object {
     /**
          * Contains the identifier of the source DB instance if this DB instance is a Read Replica.
          */
-    var ReadReplicaSourceDBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReadReplicaSourceDBInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * If present, specifies the name of the secondary Availability Zone for a DB instance with multi-AZ support.
          */
-    var SecondaryAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var SecondaryAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The status of a Read Replica. If the instance is not a Read Replica, this is blank.
          */
@@ -1202,19 +1202,19 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies whether the DB instance is encrypted.
          */
-    var StorageEncrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the storage type associated with DB instance.
          */
-    var StorageType: js.UndefOr[java.lang.String] = js.undefined
+    var StorageType: js.UndefOr[String] = js.undefined
     /**
          * The ARN from the key store with which the instance is associated for TDE encryption.
          */
-    var TdeCredentialArn: js.UndefOr[java.lang.String] = js.undefined
+    var TdeCredentialArn: js.UndefOr[String] = js.undefined
     /**
          * Not supported. 
          */
-    var Timezone: js.UndefOr[java.lang.String] = js.undefined
+    var Timezone: js.UndefOr[String] = js.undefined
     /**
          * Provides a list of VPC security group elements that the DB instance belongs to.
          */
@@ -1230,7 +1230,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1238,19 +1238,19 @@ object NeptuneNs extends js.Object {
     /**
          * Details of the error if there is an error for the instance. If the instance is not in an error state, this value is blank.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * Boolean value that is true if the instance is operating normally, or false if the instance is in an error state.
          */
-    var Normal: js.UndefOr[scala.Boolean] = js.undefined
+    var Normal: js.UndefOr[Boolean] = js.undefined
     /**
          * Status of the DB instance. For a StatusType of read replica, the values can be replicating, error, stopped, or terminated.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * This value is currently "read replication."
          */
-    var StatusType: js.UndefOr[java.lang.String] = js.undefined
+    var StatusType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1258,19 +1258,19 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the DB parameter group.
          */
-    var DBParameterGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupArn: js.UndefOr[String] = js.undefined
     /**
          * Provides the name of the DB parameter group family that this DB parameter group is compatible with.
          */
-    var DBParameterGroupFamily: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
     /**
          * Provides the name of the DB parameter group.
          */
-    var DBParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * Provides the customer-specified description for this DB parameter group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1278,7 +1278,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  A list of Parameter values. 
          */
@@ -1290,7 +1290,7 @@ object NeptuneNs extends js.Object {
     /**
          * Provides the name of the DB parameter group.
          */
-    var DBParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1298,11 +1298,11 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DP parameter group.
          */
-    var DBParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * The status of parameter updates.
          */
-    var ParameterApplyStatus: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterApplyStatus: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1314,7 +1314,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1322,11 +1322,11 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB security group.
          */
-    var DBSecurityGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBSecurityGroupName: js.UndefOr[String] = js.undefined
     /**
          * The status of the DB security group.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1334,19 +1334,19 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the DB subnet group.
          */
-    var DBSubnetGroupArn: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupArn: js.UndefOr[String] = js.undefined
     /**
          * Provides the description of the DB subnet group.
          */
-    var DBSubnetGroupDescription: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupDescription: js.UndefOr[String] = js.undefined
     /**
          * The name of the DB subnet group.
          */
-    var DBSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * Provides the status of the DB subnet group.
          */
-    var SubnetGroupStatus: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetGroupStatus: js.UndefOr[String] = js.undefined
     /**
          *  Contains a list of Subnet elements. 
          */
@@ -1354,7 +1354,7 @@ object NeptuneNs extends js.Object {
     /**
          * Provides the VpcId of the DB subnet group.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1366,7 +1366,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1374,15 +1374,15 @@ object NeptuneNs extends js.Object {
     /**
          * The DB cluster identifier for the DB cluster to be deleted. This parameter isn't case-sensitive. Constraints:   Must match an existing DBClusterIdentifier.  
          */
-    var DBClusterIdentifier: java.lang.String
+    var DBClusterIdentifier: String
     /**
          *  The DB cluster snapshot identifier of the new DB cluster snapshot created when SkipFinalSnapshot is set to false.    Specifying this parameter and also setting the SkipFinalShapshot parameter to true results in an error.   Constraints:   Must be 1 to 255 letters, numbers, or hyphens.   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens  
          */
-    var FinalDBSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var FinalDBSnapshotIdentifier: js.UndefOr[String] = js.undefined
     /**
          *  Determines whether a final DB cluster snapshot is created before the DB cluster is deleted. If true is specified, no DB cluster snapshot is created. If false is specified, a DB cluster snapshot is created before the DB cluster is deleted.   You must specify a FinalDBSnapshotIdentifier parameter if SkipFinalSnapshot is false.  Default: false 
          */
-    var SkipFinalSnapshot: js.UndefOr[scala.Boolean] = js.undefined
+    var SkipFinalSnapshot: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1390,7 +1390,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster parameter group. Constraints:   Must be the name of an existing DB cluster parameter group.   You can't delete a default DB cluster parameter group.   Cannot be associated with any DB clusters.  
          */
-    var DBClusterParameterGroupName: java.lang.String
+    var DBClusterParameterGroupName: String
   }
   
   
@@ -1403,7 +1403,7 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier of the DB cluster snapshot to delete. Constraints: Must be the name of an existing DB cluster snapshot in the available state.
          */
-    var DBClusterSnapshotIdentifier: java.lang.String
+    var DBClusterSnapshotIdentifier: String
   }
   
   
@@ -1416,15 +1416,15 @@ object NeptuneNs extends js.Object {
     /**
          * The DB instance identifier for the DB instance to be deleted. This parameter isn't case-sensitive. Constraints:   Must match the name of an existing DB instance.  
          */
-    var DBInstanceIdentifier: java.lang.String
+    var DBInstanceIdentifier: String
     /**
          *  The DBSnapshotIdentifier of the new DBSnapshot created when SkipFinalSnapshot is set to false.   Specifying this parameter and also setting the SkipFinalShapshot parameter to true results in an error.  Constraints:   Must be 1 to 255 letters or numbers.   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens   Cannot be specified when deleting a Read Replica.  
          */
-    var FinalDBSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var FinalDBSnapshotIdentifier: js.UndefOr[String] = js.undefined
     /**
          *  Determines whether a final DB snapshot is created before the DB instance is deleted. If true is specified, no DBSnapshot is created. If false is specified, a DB snapshot is created before the DB instance is deleted.  Note that when a DB instance is in a failure state and has a status of 'failed', 'incompatible-restore', or 'incompatible-network', it can only be deleted when the SkipFinalSnapshot parameter is set to "true". Specify true when deleting a Read Replica.  The FinalDBSnapshotIdentifier parameter must be specified if SkipFinalSnapshot is false.  Default: false 
          */
-    var SkipFinalSnapshot: js.UndefOr[scala.Boolean] = js.undefined
+    var SkipFinalSnapshot: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1437,7 +1437,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB parameter group. Constraints:   Must be the name of an existing DB parameter group   You can't delete a default DB parameter group   Cannot be associated with any DB instances  
          */
-    var DBParameterGroupName: java.lang.String
+    var DBParameterGroupName: String
   }
   
   
@@ -1445,7 +1445,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the database subnet group to delete.  You can't delete the default subnet group.  Constraints: Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
          */
-    var DBSubnetGroupName: java.lang.String
+    var DBSubnetGroupName: String
   }
   
   
@@ -1453,7 +1453,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the event notification subscription you want to delete.
          */
-    var SubscriptionName: java.lang.String
+    var SubscriptionName: String
   }
   
   
@@ -1466,7 +1466,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of a specific DB cluster parameter group to return details for. Constraints:   If supplied, must match the name of an existing DBClusterParameterGroup.  
          */
-    var DBClusterParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * This parameter is not currently supported.
          */
@@ -1474,7 +1474,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeDBClusterParameterGroups request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1486,7 +1486,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of a specific DB cluster parameter group to return parameter details for. Constraints:   If supplied, must match the name of an existing DBClusterParameterGroup.  
          */
-    var DBClusterParameterGroupName: java.lang.String
+    var DBClusterParameterGroupName: String
     /**
          * This parameter is not currently supported.
          */
@@ -1494,7 +1494,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeDBClusterParameters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1502,7 +1502,7 @@ object NeptuneNs extends js.Object {
     /**
          *  A value that indicates to return only parameters for a specific source. Parameter sources can be engine, service, or customer. 
          */
-    var Source: js.UndefOr[java.lang.String] = js.undefined
+    var Source: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1510,7 +1510,7 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier for the DB cluster snapshot to describe the attributes for.
          */
-    var DBClusterSnapshotIdentifier: java.lang.String
+    var DBClusterSnapshotIdentifier: String
   }
   
   
@@ -1523,11 +1523,11 @@ object NeptuneNs extends js.Object {
     /**
          * The ID of the DB cluster to retrieve the list of DB cluster snapshots for. This parameter can't be used in conjunction with the DBClusterSnapshotIdentifier parameter. This parameter is not case-sensitive.  Constraints:   If supplied, must match the identifier of an existing DBCluster.  
          */
-    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterIdentifier: js.UndefOr[String] = js.undefined
     /**
          * A specific DB cluster snapshot identifier to describe. This parameter can't be used in conjunction with the DBClusterIdentifier parameter. This value is stored as a lowercase string.  Constraints:   If supplied, must match the identifier of an existing DBClusterSnapshot.   If this identifier is for an automated snapshot, the SnapshotType parameter must also be specified.  
          */
-    var DBClusterSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
     /**
          * This parameter is not currently supported.
          */
@@ -1535,15 +1535,15 @@ object NeptuneNs extends js.Object {
     /**
          * True to include manual DB cluster snapshots that are public and can be copied or restored by any AWS account, and otherwise false. The default is false. The default is false. You can share a manual DB cluster snapshot as public by using the ModifyDBClusterSnapshotAttribute API action.
          */
-    var IncludePublic: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludePublic: js.UndefOr[Boolean] = js.undefined
     /**
          * True to include shared manual DB cluster snapshots from other AWS accounts that this AWS account has been given permission to copy or restore, and otherwise false. The default is false. You can give an AWS account permission to restore a manual DB cluster snapshot from another AWS account by the ModifyDBClusterSnapshotAttribute API action.
          */
-    var IncludeShared: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludeShared: js.UndefOr[Boolean] = js.undefined
     /**
          * An optional pagination token provided by a previous DescribeDBClusterSnapshots request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1551,7 +1551,7 @@ object NeptuneNs extends js.Object {
     /**
          * The type of DB cluster snapshots to be returned. You can specify one of the following values:    automated - Return all DB cluster snapshots that have been automatically taken by Amazon Neptune for my AWS account.    manual - Return all DB cluster snapshots that have been taken by my AWS account.    shared - Return all manual DB cluster snapshots that have been shared to my AWS account.    public - Return all DB cluster snapshots that have been marked as public.   If you don't specify a SnapshotType value, then both automated and manual DB cluster snapshots are returned. You can include shared DB cluster snapshots with these results by setting the IncludeShared parameter to true. You can include public DB cluster snapshots with these results by setting the IncludePublic parameter to true. The IncludeShared and IncludePublic parameters don't apply for SnapshotType values of manual or automated. The IncludePublic parameter doesn't apply when SnapshotType is set to shared. The IncludeShared parameter doesn't apply when SnapshotType is set to public.
          */
-    var SnapshotType: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1559,7 +1559,7 @@ object NeptuneNs extends js.Object {
     /**
          * The user-supplied DB cluster identifier. If this parameter is specified, information from only the specific DB cluster is returned. This parameter isn't case-sensitive. Constraints:   If supplied, must match an existing DBClusterIdentifier.  
          */
-    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterIdentifier: js.UndefOr[String] = js.undefined
     /**
          * A filter that specifies one or more DB clusters to describe. Supported filters:    db-cluster-id - Accepts DB cluster identifiers and DB cluster Amazon Resource Names (ARNs). The results list will only include information about the DB clusters identified by these ARNs.  
          */
@@ -1567,7 +1567,7 @@ object NeptuneNs extends js.Object {
     /**
          * An optional pagination token provided by a previous DescribeDBClusters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1579,19 +1579,19 @@ object NeptuneNs extends js.Object {
     /**
          * The name of a specific DB parameter group family to return details for. Constraints:   If supplied, must match an existing DBParameterGroupFamily.  
          */
-    var DBParameterGroupFamily: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
     /**
          * Indicates that only the default version of the specified engine or engine and major version combination is returned.
          */
-    var DefaultOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var DefaultOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * The database engine to return.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The database engine version to return. Example: 5.1.49 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * Not currently supported.
          */
@@ -1607,7 +1607,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more than the MaxRecords value is available, a pagination token called a marker is included in the response so that the following results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1619,7 +1619,7 @@ object NeptuneNs extends js.Object {
     /**
          * The user-supplied instance identifier. If this parameter is specified, information from only the specific DB instance is returned. This parameter isn't case-sensitive. Constraints:   If supplied, must match the identifier of an existing DBInstance.  
          */
-    var DBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * A filter that specifies one or more DB instances to describe. Supported filters:    db-cluster-id - Accepts DB cluster identifiers and DB cluster Amazon Resource Names (ARNs). The results list will only include information about the DB instances associated with the DB clusters identified by these ARNs.    db-instance-id - Accepts DB instance identifiers and DB instance Amazon Resource Names (ARNs). The results list will only include information about the DB instances identified by these ARNs.  
          */
@@ -1627,7 +1627,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeDBInstances request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1639,7 +1639,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of a specific DB parameter group to return details for. Constraints:   If supplied, must match the name of an existing DBClusterParameterGroup.  
          */
-    var DBParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * This parameter is not currently supported.
          */
@@ -1647,7 +1647,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeDBParameterGroups request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1659,7 +1659,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of a specific DB parameter group to return details for. Constraints:   If supplied, must match the name of an existing DBParameterGroup.  
          */
-    var DBParameterGroupName: java.lang.String
+    var DBParameterGroupName: String
     /**
          * This parameter is not currently supported.
          */
@@ -1667,7 +1667,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeDBParameters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1675,7 +1675,7 @@ object NeptuneNs extends js.Object {
     /**
          * The parameter types to return. Default: All parameter types returned Valid Values: user | system | engine-default 
          */
-    var Source: js.UndefOr[java.lang.String] = js.undefined
+    var Source: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1683,7 +1683,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB subnet group to return details for.
          */
-    var DBSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * This parameter is not currently supported.
          */
@@ -1691,7 +1691,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeDBSubnetGroups request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1703,7 +1703,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster parameter group family to return engine parameter information for.
          */
-    var DBParameterGroupFamily: java.lang.String
+    var DBParameterGroupFamily: String
     /**
          * This parameter is not currently supported.
          */
@@ -1711,7 +1711,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeEngineDefaultClusterParameters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1728,7 +1728,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB parameter group family.
          */
-    var DBParameterGroupFamily: java.lang.String
+    var DBParameterGroupFamily: String
     /**
          * Not currently supported.
          */
@@ -1736,7 +1736,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeEngineDefaultParameters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1757,7 +1757,7 @@ object NeptuneNs extends js.Object {
     /**
          * The type of source that is generating the events. Valid values: db-instance | db-parameter-group | db-security-group | db-snapshot
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1769,7 +1769,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeOrderableDBInstanceOptions request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1777,7 +1777,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the event notification subscription you want to describe.
          */
-    var SubscriptionName: js.UndefOr[java.lang.String] = js.undefined
+    var SubscriptionName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1801,7 +1801,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeEvents request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1809,7 +1809,7 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier of the event source for which events are returned. If not specified, then all sources are included in the response. Constraints:   If SourceIdentifier is supplied, SourceType must also be provided.   If the source type is DBInstance, then a DBInstanceIdentifier must be supplied.   If the source type is DBSecurityGroup, a DBSecurityGroupName must be supplied.   If the source type is DBParameterGroup, a DBParameterGroupName must be supplied.   If the source type is DBSnapshot, a DBSnapshotIdentifier must be supplied.   Cannot end with a hyphen or contain two consecutive hyphens.  
          */
-    var SourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SourceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The event source to retrieve events for. If no value is specified, all events are returned.
          */
@@ -1825,15 +1825,15 @@ object NeptuneNs extends js.Object {
     /**
          * The DB instance class filter value. Specify this parameter to show only the available offerings matching the specified DB instance class.
          */
-    var DBInstanceClass: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceClass: js.UndefOr[String] = js.undefined
     /**
          * The name of the engine to retrieve DB instance options for.
          */
-    var Engine: java.lang.String
+    var Engine: String
     /**
          * The engine version filter value. Specify this parameter to show only the available offerings matching the specified engine version.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * This parameter is not currently supported.
          */
@@ -1841,11 +1841,11 @@ object NeptuneNs extends js.Object {
     /**
          * The license model filter value. Specify this parameter to show only the available offerings matching the specified license model.
          */
-    var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseModel: js.UndefOr[String] = js.undefined
     /**
          *  An optional pagination token provided by a previous DescribeOrderableDBInstanceOptions request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1865,7 +1865,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribePendingMaintenanceActions request. If this parameter is specified, the response includes only records beyond the marker, up to a number of records specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -1873,7 +1873,7 @@ object NeptuneNs extends js.Object {
     /**
          * The ARN of a resource to return pending maintenance actions for.
          */
-    var ResourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceIdentifier: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1881,7 +1881,7 @@ object NeptuneNs extends js.Object {
     /**
          * The customer identifier or the ARN of your DB instance. 
          */
-    var DBInstanceIdentifier: java.lang.String
+    var DBInstanceIdentifier: String
   }
   
   
@@ -1894,19 +1894,19 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier of the Active Directory Domain.
          */
-    var Domain: js.UndefOr[java.lang.String] = js.undefined
+    var Domain: js.UndefOr[String] = js.undefined
     /**
          * The fully qualified domain name of the Active Directory Domain.
          */
-    var FQDN: js.UndefOr[java.lang.String] = js.undefined
+    var FQDN: js.UndefOr[String] = js.undefined
     /**
          * The name of the IAM role to be used when making API calls to the Directory Service.
          */
-    var IAMRoleName: js.UndefOr[java.lang.String] = js.undefined
+    var IAMRoleName: js.UndefOr[String] = js.undefined
     /**
          * The status of the DB instance's Active Directory Domain membership, such as joined, pending-join, failed etc).
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1926,11 +1926,11 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the DNS address of the DB instance.
          */
-    var Address: js.UndefOr[java.lang.String] = js.undefined
+    var Address: js.UndefOr[String] = js.undefined
     /**
          * Specifies the ID that Amazon Route 53 assigns when you create a hosted zone.
          */
-    var HostedZoneId: js.UndefOr[java.lang.String] = js.undefined
+    var HostedZoneId: js.UndefOr[String] = js.undefined
     /**
          * Specifies the port that the database engine is listening on.
          */
@@ -1942,11 +1942,11 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the name of the DB parameter group family that the engine default parameters apply to.
          */
-    var DBParameterGroupFamily: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
     /**
          *  An optional pagination token provided by a previous EngineDefaults request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * Contains a list of engine default parameters.
          */
@@ -1966,15 +1966,15 @@ object NeptuneNs extends js.Object {
     /**
          * Provides the text of this event.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for the event.
          */
-    var SourceArn: js.UndefOr[java.lang.String] = js.undefined
+    var SourceArn: js.UndefOr[String] = js.undefined
     /**
          * Provides the identifier for the source of the event.
          */
-    var SourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SourceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Specifies the source type for this event.
          */
@@ -1990,7 +1990,7 @@ object NeptuneNs extends js.Object {
     /**
          * The source type that the returned categories belong to
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2006,15 +2006,15 @@ object NeptuneNs extends js.Object {
     /**
          * The event notification subscription Id.
          */
-    var CustSubscriptionId: js.UndefOr[java.lang.String] = js.undefined
+    var CustSubscriptionId: js.UndefOr[String] = js.undefined
     /**
          * The AWS customer account associated with the event notification subscription.
          */
-    var CustomerAwsId: js.UndefOr[java.lang.String] = js.undefined
+    var CustomerAwsId: js.UndefOr[String] = js.undefined
     /**
          * A Boolean value indicating if the subscription is enabled. True indicates the subscription is enabled.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of event categories for the event notification subscription.
          */
@@ -2022,11 +2022,11 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the event subscription.
          */
-    var EventSubscriptionArn: js.UndefOr[java.lang.String] = js.undefined
+    var EventSubscriptionArn: js.UndefOr[String] = js.undefined
     /**
          * The topic ARN of the event notification subscription.
          */
-    var SnsTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicArn: js.UndefOr[String] = js.undefined
     /**
          * A list of source IDs for the event notification subscription.
          */
@@ -2034,15 +2034,15 @@ object NeptuneNs extends js.Object {
     /**
          * The source type for the event notification subscription.
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
     /**
          * The status of the event notification subscription. Constraints: Can be one of the following: creating | modifying | deleting | active | no-permission | topic-not-exist The status "no-permission" indicates that Neptune no longer has permission to post to the SNS topic. The status "topic-not-exist" indicates that the topic was deleted after the subscription was created.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The time the event notification subscription was created.
          */
-    var SubscriptionCreationTime: js.UndefOr[java.lang.String] = js.undefined
+    var SubscriptionCreationTime: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2054,7 +2054,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribeOrderableDBInstanceOptions request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2066,7 +2066,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous Events request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2074,11 +2074,11 @@ object NeptuneNs extends js.Object {
     /**
          * A DB cluster identifier to force a failover for. This parameter is not case-sensitive. Constraints:   Must match the identifier of an existing DBCluster.  
          */
-    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The name of the instance to promote to the primary instance. You must specify the instance identifier for an Read Replica in the DB cluster. For example, mydbcluster-replica1.
          */
-    var TargetDBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var TargetDBInstanceIdentifier: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2091,7 +2091,7 @@ object NeptuneNs extends js.Object {
     /**
          * This parameter is not currently supported.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * This parameter is not currently supported.
          */
@@ -2107,7 +2107,7 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Neptune resource with tags to be listed. This value is an Amazon Resource Name (ARN). For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN).
          */
-    var ResourceName: java.lang.String
+    var ResourceName: String
   }
   
   
@@ -2115,7 +2115,7 @@ object NeptuneNs extends js.Object {
     /**
          * A value that specifies whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is set to false, changes to the DB cluster are applied during the next maintenance window. The ApplyImmediately parameter only affects the NewDBClusterIdentifier and MasterUserPassword values. If you set the ApplyImmediately parameter value to false, then changes to the NewDBClusterIdentifier and MasterUserPassword values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. Default: false 
          */
-    var ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined
+    var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of days for which automated backups are retained. You must specify a minimum value of 1. Default: 1 Constraints:   Must be a value from 1 to 35  
          */
@@ -2123,11 +2123,11 @@ object NeptuneNs extends js.Object {
     /**
          * The DB cluster identifier for the cluster being modified. This parameter is not case-sensitive. Constraints:   Must match the identifier of an existing DBCluster.  
          */
-    var DBClusterIdentifier: java.lang.String
+    var DBClusterIdentifier: String
     /**
          * The name of the DB cluster parameter group to use for the DB cluster.
          */
-    var DBClusterParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
          */
@@ -2135,19 +2135,19 @@ object NeptuneNs extends js.Object {
     /**
          * The version number of the database engine to which you want to upgrade. Changing this parameter results in an outage. The change is applied during the next maintenance window unless the ApplyImmediately parameter is set to true. For a list of valid engine versions, see CreateDBInstance, or call DescribeDBEngineVersions.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The new password for the master database user. This password can contain any printable ASCII character except "/", """, or "@". Constraints: Must contain from 8 to 41 characters.
          */
-    var MasterUserPassword: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUserPassword: js.UndefOr[String] = js.undefined
     /**
          * The new DB cluster identifier for the DB cluster when renaming a DB cluster. This value is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens   The first character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens   Example: my-cluster2 
          */
-    var NewDBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var NewDBClusterIdentifier: js.UndefOr[String] = js.undefined
     /**
          * A value that indicates that the DB cluster should be associated with the specified option group. Changing this parameter doesn't result in an outage except in the following case, and the change is applied during the next maintenance window unless the ApplyImmediately parameter is set to true for this request. If the parameter change results in an option group that enables OEM, this change can cause a brief (sub-second) period during which new connections are rejected but existing connections are not interrupted.  Permanent options can't be removed from an option group. The option group can't be removed from a DB cluster once it is associated with a DB cluster.
          */
-    var OptionGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var OptionGroupName: js.UndefOr[String] = js.undefined
     /**
          * The port number on which the DB cluster accepts connections. Constraints: Value must be 1150-65535  Default: The same port as the original DB cluster.
          */
@@ -2155,11 +2155,11 @@ object NeptuneNs extends js.Object {
     /**
          * The daily time range during which automated backups are created if automated backups are enabled, using the BackupRetentionPeriod parameter.  The default is a 30-minute window selected at random from an 8-hour block of time for each AWS Region.  Constraints:   Must be in the format hh24:mi-hh24:mi.   Must be in Universal Coordinated Time (UTC).   Must not conflict with the preferred maintenance window.   Must be at least 30 minutes.  
          */
-    var PreferredBackupWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredBackupWindow: js.UndefOr[String] = js.undefined
     /**
          * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC). Format: ddd:hh24:mi-ddd:hh24:mi  The default is a 30-minute window selected at random from an 8-hour block of time for each AWS Region, occurring on a random day of the week.  Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Constraints: Minimum 30-minute window.
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * A list of VPC security groups that the DB cluster will belong to.
          */
@@ -2171,7 +2171,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster parameter group to modify.
          */
-    var DBClusterParameterGroupName: java.lang.String
+    var DBClusterParameterGroupName: String
     /**
          * A list of parameters in the DB cluster parameter group to modify.
          */
@@ -2188,11 +2188,11 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster snapshot attribute to modify. To manage authorization for other AWS accounts to copy or restore a manual DB cluster snapshot, set this value to restore.
          */
-    var AttributeName: java.lang.String
+    var AttributeName: String
     /**
          * The identifier for the DB cluster snapshot to modify the attributes for.
          */
-    var DBClusterSnapshotIdentifier: java.lang.String
+    var DBClusterSnapshotIdentifier: String
     /**
          * A list of DB cluster snapshot attributes to add to the attribute specified by AttributeName. To authorize other AWS accounts to copy or restore a manual DB cluster snapshot, set this list to include one or more AWS account IDs, or all to make the manual DB cluster snapshot restorable by any AWS account. Do not add the all value for any manual DB cluster snapshots that contain private information that you don't want available to all AWS accounts.
          */
@@ -2217,11 +2217,11 @@ object NeptuneNs extends js.Object {
     /**
          * Indicates that major version upgrades are allowed. Changing this parameter doesn't result in an outage and the change is asynchronously applied as soon as possible. Constraints: This parameter must be set to true when specifying a value for the EngineVersion parameter that is a different major version than the DB instance's current version.
          */
-    var AllowMajorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB instance.   If this parameter is set to false, changes to the DB instance are applied during the next maintenance window. Some parameter changes can cause an outage and are applied on the next call to RebootDBInstance, or the next failure reboot.  Default: false 
          */
-    var ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined
+    var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
     /**
          *  Indicates that minor version upgrades are applied automatically to the DB instance during the maintenance window. Changing this parameter doesn't result in an outage except in the following case and the change is asynchronously applied as soon as possible. An outage will result if this parameter is set to true during the maintenance window, and a newer minor version is available, and Neptune has enabled auto patching for that engine version. 
          */
@@ -2233,7 +2233,7 @@ object NeptuneNs extends js.Object {
     /**
          * Indicates the certificate that needs to be associated with the instance.
          */
-    var CACertificateIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var CACertificateIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The configuration setting for the log types to be enabled for export to CloudWatch Logs for a specific DB instance or DB cluster.
          */
@@ -2245,15 +2245,15 @@ object NeptuneNs extends js.Object {
     /**
          * The new compute and memory capacity of the DB instance, for example, db.m4.large. Not all DB instance classes are available in all AWS Regions.  If you modify the DB instance class, an outage occurs during the change. The change is applied during the next maintenance window, unless ApplyImmediately is specified as true for this request.  Default: Uses existing setting
          */
-    var DBInstanceClass: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceClass: js.UndefOr[String] = js.undefined
     /**
          * The DB instance identifier. This value is stored as a lowercase string. Constraints:   Must match the identifier of an existing DBInstance.  
          */
-    var DBInstanceIdentifier: java.lang.String
+    var DBInstanceIdentifier: String
     /**
          * The name of the DB parameter group to apply to the DB instance. Changing this setting doesn't result in an outage. The parameter group name itself is changed immediately, but the actual parameter changes are not applied until you reboot the instance without failover. The db instance will NOT be rebooted automatically and the parameter changes will NOT be applied during the next maintenance window. Default: Uses existing setting Constraints: The DB parameter group must be in the same DB parameter group family as this DB instance.
          */
-    var DBParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * The port number on which the database accepts connections. The value of the DBPortNumber parameter must not match any of the port values specified for options in the option group for the DB instance. Your database will restart when you change the DBPortNumber value regardless of the value of the ApplyImmediately parameter.  Default: 8182 
          */
@@ -2265,15 +2265,15 @@ object NeptuneNs extends js.Object {
     /**
          * The new DB subnet group for the DB instance. You can use this parameter to move your DB instance to a different VPC.  Changing the subnet group causes an outage during the change. The change is applied during the next maintenance window, unless you specify true for the ApplyImmediately parameter.  Constraints: If supplied, must match the name of an existing DBSubnetGroup. Example: mySubnetGroup 
          */
-    var DBSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * Not supported. 
          */
-    var Domain: js.UndefOr[java.lang.String] = js.undefined
+    var Domain: js.UndefOr[String] = js.undefined
     /**
          * Not supported
          */
-    var DomainIAMRoleName: js.UndefOr[java.lang.String] = js.undefined
+    var DomainIAMRoleName: js.UndefOr[String] = js.undefined
     /**
          * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. You can enable IAM database authentication for the following database engines Not applicable. Mapping AWS IAM accounts to database accounts is managed by the DB cluster. For more information, see ModifyDBCluster. Default: false 
          */
@@ -2285,7 +2285,7 @@ object NeptuneNs extends js.Object {
     /**
          *  The version number of the database engine to upgrade to. Changing this parameter results in an outage and the change is applied during the next maintenance window unless the ApplyImmediately parameter is set to true for this request.  For major version upgrades, if a nondefault DB parameter group is currently in use, a new DB parameter group in the DB parameter group family for the new engine version must be specified. The new DB parameter group can be the default for that DB parameter group family.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The new Provisioned IOPS (I/O operations per second) value for the instance.  Changing this setting doesn't result in an outage and the change is applied during the next maintenance window unless the ApplyImmediately parameter is set to true for this request. Default: Uses existing setting
          */
@@ -2293,11 +2293,11 @@ object NeptuneNs extends js.Object {
     /**
          * The license model for the DB instance. Valid values: license-included | bring-your-own-license | general-public-license 
          */
-    var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseModel: js.UndefOr[String] = js.undefined
     /**
          * The new password for the master user. The password can include any printable ASCII character except "/", """, or "@". Not applicable.  Default: Uses existing setting
          */
-    var MasterUserPassword: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUserPassword: js.UndefOr[String] = js.undefined
     /**
          * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. If MonitoringRoleArn is specified, then you must also set MonitoringInterval to a value other than 0. Valid Values: 0, 1, 5, 10, 15, 30, 60 
          */
@@ -2305,7 +2305,7 @@ object NeptuneNs extends js.Object {
     /**
          * The ARN for the IAM role that permits Neptune to send enhanced monitoring metrics to Amazon CloudWatch Logs. For example, arn:aws:iam:123456789012:role/emaccess.  If MonitoringInterval is set to a value other than 0, then you must supply a MonitoringRoleArn value.
          */
-    var MonitoringRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var MonitoringRoleArn: js.UndefOr[String] = js.undefined
     /**
          * Specifies if the DB instance is a Multi-AZ deployment. Changing this parameter doesn't result in an outage and the change is applied during the next maintenance window unless the ApplyImmediately parameter is set to true for this request. 
          */
@@ -2313,23 +2313,23 @@ object NeptuneNs extends js.Object {
     /**
          *  The new DB instance identifier for the DB instance when renaming a DB instance. When you change the DB instance identifier, an instance reboot will occur immediately if you set Apply Immediately to true, or will occur during the next maintenance window if Apply Immediately to false. This value is stored as a lowercase string.  Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   The first character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: mydbinstance 
          */
-    var NewDBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var NewDBInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          *  Indicates that the DB instance should be associated with the specified option group. Changing this parameter doesn't result in an outage except in the following case and the change is applied during the next maintenance window unless the ApplyImmediately parameter is set to true for this request. If the parameter change results in an option group that enables OEM, this change can cause a brief (sub-second) period during which new connections are rejected but existing connections are not interrupted.  Permanent options, such as the TDE option for Oracle Advanced Security TDE, can't be removed from an option group, and that option group can't be removed from a DB instance once it is associated with a DB instance
          */
-    var OptionGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var OptionGroupName: js.UndefOr[String] = js.undefined
     /**
          * The AWS KMS key identifier for encryption of Performance Insights data. The KMS key ID is the Amazon Resource Name (ARN), KMS key identifier, or the KMS key alias for the KMS encryption key.
          */
-    var PerformanceInsightsKMSKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
     /**
          *  The daily time range during which automated backups are created if automated backups are enabled.  Not applicable. The daily time range for creating automated backups is managed by the DB cluster. For more information, see ModifyDBCluster. Constraints:   Must be in the format hh24:mi-hh24:mi   Must be in Universal Time Coordinated (UTC)   Must not conflict with the preferred maintenance window   Must be at least 30 minutes  
          */
-    var PreferredBackupWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredBackupWindow: js.UndefOr[String] = js.undefined
     /**
          * The weekly time range (in UTC) during which system maintenance can occur, which might result in an outage. Changing this parameter doesn't result in an outage, except in the following situation, and the change is asynchronously applied as soon as possible. If there are pending actions that cause a reboot, and the maintenance window is changed to include the current time, then changing this parameter will cause a reboot of the DB instance. If moving this window to the current time, there must be at least 30 minutes between the current time and end of the window to ensure pending changes are applied. Default: Uses existing setting Format: ddd:hh24:mi-ddd:hh24:mi Valid Days: Mon | Tue | Wed | Thu | Fri | Sat | Sun Constraints: Must be at least 30 minutes
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * A value that specifies the order in which a Read Replica is promoted to the primary instance after a failure of the existing primary instance.  Default: 1 Valid Values: 0 - 15
          */
@@ -2341,15 +2341,15 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the storage type to be associated with the DB instance.  If you specify Provisioned IOPS (io1), you must also include a value for the Iops parameter.  If you choose to migrate your DB instance from using standard storage to using Provisioned IOPS, or from using Provisioned IOPS to using standard storage, the process can take time. The duration of the migration depends on several factors such as database load, storage size, storage type (standard or Provisioned IOPS), amount of IOPS provisioned (if any), and the number of prior scale storage operations. Typical migration times are under 24 hours, but the process can take up to several days in some cases. During the migration, the DB instance is available for use, but might experience performance degradation. While the migration takes place, nightly backups for the instance are suspended. No other Amazon Neptune operations can take place for the instance, including modifying the instance, rebooting the instance, deleting the instance, creating a Read Replica for the instance, and creating a DB snapshot of the instance.   Valid values: standard | gp2 | io1  Default: io1 if the Iops parameter is specified, otherwise standard 
          */
-    var StorageType: js.UndefOr[java.lang.String] = js.undefined
+    var StorageType: js.UndefOr[String] = js.undefined
     /**
          * The ARN from the key store with which to associate the instance for TDE encryption.
          */
-    var TdeCredentialArn: js.UndefOr[java.lang.String] = js.undefined
+    var TdeCredentialArn: js.UndefOr[String] = js.undefined
     /**
          * The password for the given ARN from the key store in order to access the device.
          */
-    var TdeCredentialPassword: js.UndefOr[java.lang.String] = js.undefined
+    var TdeCredentialPassword: js.UndefOr[String] = js.undefined
     /**
          * A list of EC2 VPC security groups to authorize on this DB instance. This change is asynchronously applied as soon as possible. Not applicable. The associated list of EC2 VPC security groups is managed by the DB cluster. For more information, see ModifyDBCluster. Constraints:   If supplied, must match existing VpcSecurityGroupIds.  
          */
@@ -2366,7 +2366,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB parameter group. Constraints:   If supplied, must match the name of an existing DBParameterGroup.  
          */
-    var DBParameterGroupName: java.lang.String
+    var DBParameterGroupName: String
     /**
          * An array of parameter names, values, and the apply method for the parameter update. At least one parameter name, value, and apply method must be supplied; subsequent arguments are optional. A maximum of 20 parameters can be modified in a single request. Valid Values (for the application method): immediate | pending-reboot   You can use the immediate value with dynamic parameters only. You can use the pending-reboot value for both dynamic and static parameters, and changes are applied when you reboot the DB instance without failover. 
          */
@@ -2378,11 +2378,11 @@ object NeptuneNs extends js.Object {
     /**
          * The description for the DB subnet group.
          */
-    var DBSubnetGroupDescription: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupDescription: js.UndefOr[String] = js.undefined
     /**
          * The name for the DB subnet group. This value is stored as a lowercase string. You can't modify the default subnet group.  Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
          */
-    var DBSubnetGroupName: java.lang.String
+    var DBSubnetGroupName: String
     /**
          * The EC2 subnet IDs for the DB subnet group.
          */
@@ -2407,15 +2407,15 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the SNS topic created for event notification. The ARN is created by Amazon SNS when you create a topic and subscribe to it.
          */
-    var SnsTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicArn: js.UndefOr[String] = js.undefined
     /**
          * The type of source that is generating the events. For example, if you want to be notified of events generated by a DB instance, you would set this parameter to db-instance. if this value is not specified, all events are returned. Valid values: db-instance | db-parameter-group | db-security-group | db-snapshot
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
     /**
          * The name of the event notification subscription.
          */
-    var SubscriptionName: java.lang.String
+    var SubscriptionName: String
   }
   
   
@@ -2428,11 +2428,11 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the option group that the instance belongs to.
          */
-    var OptionGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var OptionGroupName: js.UndefOr[String] = js.undefined
     /**
          * The status of the DB instance's option group membership. Valid values are: in-sync, pending-apply, pending-removal, pending-maintenance-apply, pending-maintenance-removal, applying, removing, and failed. 
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2444,19 +2444,19 @@ object NeptuneNs extends js.Object {
     /**
          * The DB instance class for a DB instance.
          */
-    var DBInstanceClass: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceClass: js.UndefOr[String] = js.undefined
     /**
          * The engine type of a DB instance.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The engine version of a DB instance.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The license model for a DB instance.
          */
-    var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseModel: js.UndefOr[String] = js.undefined
     /**
          * Maximum total provisioned IOPS for a DB instance.
          */
@@ -2484,39 +2484,39 @@ object NeptuneNs extends js.Object {
     /**
          * Indicates whether a DB instance is Multi-AZ capable.
          */
-    var MultiAZCapable: js.UndefOr[scala.Boolean] = js.undefined
+    var MultiAZCapable: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether a DB instance can have a Read Replica.
          */
-    var ReadReplicaCapable: js.UndefOr[scala.Boolean] = js.undefined
+    var ReadReplicaCapable: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates the storage type for a DB instance.
          */
-    var StorageType: js.UndefOr[java.lang.String] = js.undefined
+    var StorageType: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether a DB instance supports Enhanced Monitoring at intervals from 1 to 60 seconds.
          */
-    var SupportsEnhancedMonitoring: js.UndefOr[scala.Boolean] = js.undefined
+    var SupportsEnhancedMonitoring: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether a DB instance supports IAM database authentication.
          */
-    var SupportsIAMDatabaseAuthentication: js.UndefOr[scala.Boolean] = js.undefined
+    var SupportsIAMDatabaseAuthentication: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether a DB instance supports provisioned IOPS.
          */
-    var SupportsIops: js.UndefOr[scala.Boolean] = js.undefined
+    var SupportsIops: js.UndefOr[Boolean] = js.undefined
     /**
          * True if a DB instance supports Performance Insights, otherwise false.
          */
-    var SupportsPerformanceInsights: js.UndefOr[scala.Boolean] = js.undefined
+    var SupportsPerformanceInsights: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether a DB instance supports encrypted storage.
          */
-    var SupportsStorageEncryption: js.UndefOr[scala.Boolean] = js.undefined
+    var SupportsStorageEncryption: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether a DB instance is in a VPC.
          */
-    var Vpc: js.UndefOr[scala.Boolean] = js.undefined
+    var Vpc: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2524,7 +2524,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous OrderableDBInstanceOptions request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * An OrderableDBInstanceOption structure containing information about orderable options for the DB instance.
          */
@@ -2536,7 +2536,7 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the valid range of values for the parameter.
          */
-    var AllowedValues: js.UndefOr[java.lang.String] = js.undefined
+    var AllowedValues: js.UndefOr[String] = js.undefined
     /**
          * Indicates when to apply parameter updates.
          */
@@ -2544,35 +2544,35 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the engine specific parameters type.
          */
-    var ApplyType: js.UndefOr[java.lang.String] = js.undefined
+    var ApplyType: js.UndefOr[String] = js.undefined
     /**
          * Specifies the valid data type for the parameter.
          */
-    var DataType: js.UndefOr[java.lang.String] = js.undefined
+    var DataType: js.UndefOr[String] = js.undefined
     /**
          * Provides a description of the parameter.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          *  Indicates whether (true) or not (false) the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed. 
          */
-    var IsModifiable: js.UndefOr[scala.Boolean] = js.undefined
+    var IsModifiable: js.UndefOr[Boolean] = js.undefined
     /**
          * The earliest engine version to which the parameter can apply.
          */
-    var MinimumEngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var MinimumEngineVersion: js.UndefOr[String] = js.undefined
     /**
          * Specifies the name of the parameter.
          */
-    var ParameterName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the value of the parameter.
          */
-    var ParameterValue: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterValue: js.UndefOr[String] = js.undefined
     /**
          * Indicates the source of the parameter value.
          */
-    var Source: js.UndefOr[java.lang.String] = js.undefined
+    var Source: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2592,7 +2592,7 @@ object NeptuneNs extends js.Object {
     /**
          * The type of pending maintenance action that is available for the resource.
          */
-    var Action: js.UndefOr[java.lang.String] = js.undefined
+    var Action: js.UndefOr[String] = js.undefined
     /**
          * The date of the maintenance window when the action is applied. The maintenance action is applied to the resource during its first maintenance window after this date. If this date is specified, any next-maintenance opt-in requests are ignored.
          */
@@ -2604,7 +2604,7 @@ object NeptuneNs extends js.Object {
     /**
          * A description providing more detail about the maintenance action.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The date when the maintenance action is automatically applied. The maintenance action is applied to the resource on this date regardless of the maintenance window for the resource. If this date is specified, any immediate opt-in requests are ignored.
          */
@@ -2612,7 +2612,7 @@ object NeptuneNs extends js.Object {
     /**
          * Indicates the type of opt-in request that has been received for the resource.
          */
-    var OptInStatus: js.UndefOr[java.lang.String] = js.undefined
+    var OptInStatus: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2620,7 +2620,7 @@ object NeptuneNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous DescribePendingMaintenanceActions request. If this parameter is specified, the response includes only records beyond the marker, up to a number of records specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * A list of the pending maintenance actions for the resource.
          */
@@ -2640,23 +2640,23 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the identifier of the CA certificate for the DB instance.
          */
-    var CACertificateIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var CACertificateIdentifier: js.UndefOr[String] = js.undefined
     /**
          *  Contains the new DBInstanceClass for the DB instance that will be applied or is currently being applied. 
          */
-    var DBInstanceClass: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceClass: js.UndefOr[String] = js.undefined
     /**
          *  Contains the new DBInstanceIdentifier for the DB instance that will be applied or is currently being applied. 
          */
-    var DBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The new DB subnet group for the DB instance. 
          */
-    var DBSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * Indicates the database engine version.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * Specifies the new Provisioned IOPS value for the DB instance that will be applied or is currently being applied.
          */
@@ -2664,11 +2664,11 @@ object NeptuneNs extends js.Object {
     /**
          * The license model for the DB instance. Valid values: license-included | bring-your-own-license | general-public-license 
          */
-    var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseModel: js.UndefOr[String] = js.undefined
     /**
          * Contains the pending or currently-in-progress change of the master credentials for the DB instance.
          */
-    var MasterUserPassword: js.UndefOr[java.lang.String] = js.undefined
+    var MasterUserPassword: js.UndefOr[String] = js.undefined
     /**
          * Indicates that the Single-AZ DB instance is to change to a Multi-AZ deployment.
          */
@@ -2681,7 +2681,7 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the storage type to be associated with the DB instance.
          */
-    var StorageType: js.UndefOr[java.lang.String] = js.undefined
+    var StorageType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2689,7 +2689,7 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier of the DB cluster Read Replica to promote. This parameter is not case-sensitive.  Constraints:   Must match the identifier of an existing DBCluster Read Replica.   Example: my-cluster-replica1 
          */
-    var DBClusterIdentifier: java.lang.String
+    var DBClusterIdentifier: String
   }
   
   
@@ -2718,7 +2718,7 @@ object NeptuneNs extends js.Object {
     /**
          * The DB instance identifier. This parameter is stored as a lowercase string. Constraints:   Must match the identifier of an existing DBInstance.  
          */
-    var DBInstanceIdentifier: java.lang.String
+    var DBInstanceIdentifier: String
     /**
          *  When true, the reboot is conducted through a MultiAZ failover.  Constraint: You can't specify true if the instance is not configured for MultiAZ.
          */
@@ -2735,11 +2735,11 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster to disassociate the IAM role from.
          */
-    var DBClusterIdentifier: java.lang.String
+    var DBClusterIdentifier: String
     /**
          * The Amazon Resource Name (ARN) of the IAM role to disassociate from the DB cluster, for example arn:aws:iam::123456789012:role/NeptuneAccessRole.
          */
-    var RoleArn: java.lang.String
+    var RoleArn: String
   }
   
   
@@ -2747,11 +2747,11 @@ object NeptuneNs extends js.Object {
     /**
          *  The source identifier to be removed from the subscription, such as the DB instance identifier for a DB instance or the name of a security group. 
          */
-    var SourceIdentifier: java.lang.String
+    var SourceIdentifier: String
     /**
          * The name of the event notification subscription you want to remove a source identifier from.
          */
-    var SubscriptionName: java.lang.String
+    var SubscriptionName: String
   }
   
   
@@ -2764,7 +2764,7 @@ object NeptuneNs extends js.Object {
     /**
          * The Amazon Neptune resource that the tags are removed from. This value is an Amazon Resource Name (ARN). For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN).
          */
-    var ResourceName: java.lang.String
+    var ResourceName: String
     /**
          * The tag key (name) of the tag to be removed.
          */
@@ -2776,7 +2776,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster parameter group to reset.
          */
-    var DBClusterParameterGroupName: java.lang.String
+    var DBClusterParameterGroupName: String
     /**
          * A list of parameter names in the DB cluster parameter group to reset to the default values. You can't use this parameter if the ResetAllParameters parameter is set to true.
          */
@@ -2784,7 +2784,7 @@ object NeptuneNs extends js.Object {
     /**
          * A value that is set to true to reset all parameters in the DB cluster parameter group to their default values, and false otherwise. You can't use this parameter if there is a list of parameter names specified for the Parameters parameter.
          */
-    var ResetAllParameters: js.UndefOr[scala.Boolean] = js.undefined
+    var ResetAllParameters: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2792,7 +2792,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB parameter group. Constraints:   Must match the name of an existing DBParameterGroup.  
          */
-    var DBParameterGroupName: java.lang.String
+    var DBParameterGroupName: String
     /**
          * To reset the entire DB parameter group, specify the DBParameterGroup name and ResetAllParameters parameters. To reset specific parameters, provide a list of the following: ParameterName and ApplyMethod. A maximum of 20 parameters can be modified in a single request. Valid Values (for Apply method): pending-reboot 
          */
@@ -2800,7 +2800,7 @@ object NeptuneNs extends js.Object {
     /**
          *  Specifies whether (true) or not (false) to reset all parameters in the DB parameter group to default values.  Default: true 
          */
-    var ResetAllParameters: js.UndefOr[scala.Boolean] = js.undefined
+    var ResetAllParameters: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2812,7 +2812,7 @@ object NeptuneNs extends js.Object {
     /**
          * The ARN of the resource that has pending maintenance actions.
          */
-    var ResourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceIdentifier: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2824,15 +2824,15 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the DB cluster to create from the DB snapshot or DB cluster snapshot. This parameter isn't case-sensitive. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens   Example: my-snapshot-id 
          */
-    var DBClusterIdentifier: java.lang.String
+    var DBClusterIdentifier: String
     /**
          * The name of the DB subnet group to use for the new DB cluster. Constraints: If supplied, must match the name of an existing DBSubnetGroup. Example: mySubnetgroup 
          */
-    var DBSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * The database name for the restored DB cluster.
          */
-    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    var DatabaseName: js.UndefOr[String] = js.undefined
     /**
          * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
          */
@@ -2840,19 +2840,19 @@ object NeptuneNs extends js.Object {
     /**
          * The database engine to use for the new DB cluster. Default: The same as source Constraint: Must be compatible with the engine of the source
          */
-    var Engine: java.lang.String
+    var Engine: String
     /**
          * The version of the database engine to use for the new DB cluster.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The AWS KMS key identifier to use when restoring an encrypted DB cluster from a DB snapshot or DB cluster snapshot. The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are restoring a DB cluster with the same AWS account that owns the KMS encryption key used to encrypt the new DB cluster, then you can use the KMS key alias instead of the ARN for the KMS encryption key. If you do not specify a value for the KmsKeyId parameter, then the following will occur:   If the DB snapshot or DB cluster snapshot in SnapshotIdentifier is encrypted, then the restored DB cluster is encrypted using the KMS key that was used to encrypt the DB snapshot or DB cluster snapshot.   If the DB snapshot or DB cluster snapshot in SnapshotIdentifier is not encrypted, then the restored DB cluster is not encrypted.  
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The name of the option group to use for the restored DB cluster.
          */
-    var OptionGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var OptionGroupName: js.UndefOr[String] = js.undefined
     /**
          * The port number on which the new DB cluster accepts connections. Constraints: Value must be 1150-65535  Default: The same port as the original DB cluster.
          */
@@ -2860,7 +2860,7 @@ object NeptuneNs extends js.Object {
     /**
          * The identifier for the DB snapshot or DB cluster snapshot to restore from. You can use either the name or the Amazon Resource Name (ARN) to specify a DB cluster snapshot. However, you can use only the ARN to specify a DB snapshot. Constraints:   Must match the identifier of an existing Snapshot.  
          */
-    var SnapshotIdentifier: java.lang.String
+    var SnapshotIdentifier: String
     /**
          * The tags to be assigned to the restored DB cluster.
          */
@@ -2881,11 +2881,11 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the new DB cluster to be created. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens  
          */
-    var DBClusterIdentifier: java.lang.String
+    var DBClusterIdentifier: String
     /**
          * The DB subnet group name to use for the new DB cluster. Constraints: If supplied, must match the name of an existing DBSubnetGroup. Example: mySubnetgroup 
          */
-    var DBSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var DBSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
          */
@@ -2893,11 +2893,11 @@ object NeptuneNs extends js.Object {
     /**
          * The AWS KMS key identifier to use when restoring an encrypted DB cluster from an encrypted DB cluster. The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are restoring a DB cluster with the same AWS account that owns the KMS encryption key used to encrypt the new DB cluster, then you can use the KMS key alias instead of the ARN for the KMS encryption key. You can restore to a new DB cluster and encrypt the new DB cluster with a KMS key that is different than the KMS key used to encrypt the source DB cluster. The new DB cluster is encrypted with the KMS key identified by the KmsKeyId parameter. If you do not specify a value for the KmsKeyId parameter, then the following will occur:   If the DB cluster is encrypted, then the restored DB cluster is encrypted using the KMS key that was used to encrypt the source DB cluster.   If the DB cluster is not encrypted, then the restored DB cluster is not encrypted.   If DBClusterIdentifier refers to a DB cluster that is not encrypted, then the restore request is rejected.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The name of the option group for the new DB cluster.
          */
-    var OptionGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var OptionGroupName: js.UndefOr[String] = js.undefined
     /**
          * The port number on which the new DB cluster accepts connections. Constraints: Value must be 1150-65535  Default: The same port as the original DB cluster.
          */
@@ -2909,16 +2909,16 @@ object NeptuneNs extends js.Object {
     /**
          * The type of restore to be performed. You can specify one of the following values:    full-copy - The new DB cluster is restored as a full copy of the source DB cluster.    copy-on-write - The new DB cluster is restored as a clone of the source DB cluster.   Constraints: You can't specify copy-on-write if the engine version of the source DB cluster is earlier than 1.11. If you don't specify a RestoreType value, then the new DB cluster is restored as a full copy of the source DB cluster.
          */
-    var RestoreType: js.UndefOr[java.lang.String] = js.undefined
+    var RestoreType: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the source DB cluster from which to restore. Constraints:   Must match the identifier of an existing DBCluster.  
          */
-    var SourceDBClusterIdentifier: java.lang.String
+    var SourceDBClusterIdentifier: String
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
          * A value that is set to true to restore the DB cluster to the latest restorable backup time, and false otherwise.  Default: false  Constraints: Cannot be specified if RestoreToTime parameter is provided.
          */
-    var UseLatestRestorableTime: js.UndefOr[scala.Boolean] = js.undefined
+    var UseLatestRestorableTime: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of VPC security groups that the new DB cluster belongs to.
          */
@@ -2936,11 +2936,11 @@ object NeptuneNs extends js.Object {
     /**
          * Specifies the identifier of the subnet.
          */
-    var SubnetIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Specifies the status of the subnet.
          */
-    var SubnetStatus: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetStatus: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2948,11 +2948,11 @@ object NeptuneNs extends js.Object {
     /**
          * A key is the required name of the tag. The string value can be from 1 to 128 Unicode characters in length and can't be prefixed with "aws:" or "rds:". The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', '/', '=', '+', '-' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * A value is the optional value of the tag. The string value can be from 1 to 256 Unicode characters in length and can't be prefixed with "aws:" or "rds:". The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', '/', '=', '+', '-' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2968,7 +2968,7 @@ object NeptuneNs extends js.Object {
     /**
          * The name of the time zone.
          */
-    var TimezoneName: js.UndefOr[java.lang.String] = js.undefined
+    var TimezoneName: js.UndefOr[String] = js.undefined
   }
   
   @js.native
@@ -4640,23 +4640,23 @@ object NeptuneNs extends js.Object {
     /**
          * A value that indicates whether the target version is applied to any source DB instances that have AutoMinorVersionUpgrade set to true.
          */
-    var AutoUpgrade: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoUpgrade: js.UndefOr[Boolean] = js.undefined
     /**
          * The version of the database engine that a DB instance can be upgraded to.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The name of the upgrade target database engine.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The version number of the upgrade target database engine.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * A value that indicates whether a database engine is upgraded to a major version.
          */
-    var IsMajorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
+    var IsMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -4684,7 +4684,7 @@ object NeptuneNs extends js.Object {
     /**
          * The valid storage types for your DB instance. For example, gp2, io1. 
          */
-    var StorageType: js.UndefOr[java.lang.String] = js.undefined
+    var StorageType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4692,18 +4692,18 @@ object NeptuneNs extends js.Object {
     /**
          * The status of the VPC security group.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The name of the VPC security group.
          */
-    var VpcSecurityGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcSecurityGroupId: js.UndefOr[String] = js.undefined
   }
   
   val TypesNs: this.type = js.native
   type ApplyMethod = awsDashSdkLib.awsDashSdkLibStrings.immediate | awsDashSdkLib.awsDashSdkLibStrings.`pending-reboot` | java.lang.String
-  type AttributeValueList = js.Array[java.lang.String]
+  type AttributeValueList = js.Array[String]
   type AvailabilityZoneList = js.Array[AvailabilityZone]
-  type AvailabilityZones = js.Array[java.lang.String]
+  type AvailabilityZones = js.Array[String]
   type Boolean = scala.Boolean
   type BooleanOptional = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -4720,35 +4720,35 @@ object NeptuneNs extends js.Object {
   type DBParameterGroupList = js.Array[DBParameterGroup]
   type DBParameterGroupStatusList = js.Array[DBParameterGroupStatus]
   type DBSecurityGroupMembershipList = js.Array[DBSecurityGroupMembership]
-  type DBSecurityGroupNameList = js.Array[java.lang.String]
+  type DBSecurityGroupNameList = js.Array[String]
   type DBSubnetGroups = js.Array[DBSubnetGroup]
   type DomainMembershipList = js.Array[DomainMembership]
   type Double = scala.Double
   type DoubleOptional = scala.Double
   type DoubleRangeList = js.Array[DoubleRange]
-  type EventCategoriesList = js.Array[java.lang.String]
+  type EventCategoriesList = js.Array[String]
   type EventCategoriesMapList = js.Array[EventCategoriesMap]
   type EventList = js.Array[Event]
   type EventSubscriptionsList = js.Array[EventSubscription]
   type FilterList = js.Array[Filter]
-  type FilterValueList = js.Array[java.lang.String]
+  type FilterValueList = js.Array[String]
   type Integer = scala.Double
   type IntegerOptional = scala.Double
-  type KeyList = js.Array[java.lang.String]
-  type LogTypeList = js.Array[java.lang.String]
+  type KeyList = js.Array[String]
+  type LogTypeList = js.Array[String]
   type OptionGroupMembershipList = js.Array[OptionGroupMembership]
   type OrderableDBInstanceOptionsList = js.Array[OrderableDBInstanceOption]
   type ParametersList = js.Array[Parameter]
   type PendingMaintenanceActionDetails = js.Array[PendingMaintenanceAction]
   type PendingMaintenanceActions = js.Array[ResourcePendingMaintenanceActions]
   type RangeList = js.Array[Range]
-  type ReadReplicaDBClusterIdentifierList = js.Array[java.lang.String]
-  type ReadReplicaDBInstanceIdentifierList = js.Array[java.lang.String]
-  type ReadReplicaIdentifierList = js.Array[java.lang.String]
-  type SourceIdsList = js.Array[java.lang.String]
+  type ReadReplicaDBClusterIdentifierList = js.Array[String]
+  type ReadReplicaDBInstanceIdentifierList = js.Array[String]
+  type ReadReplicaIdentifierList = js.Array[String]
+  type SourceIdsList = js.Array[String]
   type SourceType = awsDashSdkLib.awsDashSdkLibStrings.`db-instance` | awsDashSdkLib.awsDashSdkLibStrings.`db-parameter-group` | awsDashSdkLib.awsDashSdkLibStrings.`db-security-group` | awsDashSdkLib.awsDashSdkLibStrings.`db-snapshot` | awsDashSdkLib.awsDashSdkLibStrings.`db-cluster` | awsDashSdkLib.awsDashSdkLibStrings.`db-cluster-snapshot` | java.lang.String
   type String = java.lang.String
-  type SubnetIdentifierList = js.Array[java.lang.String]
+  type SubnetIdentifierList = js.Array[String]
   type SubnetList = js.Array[Subnet]
   type SupportedCharacterSetsList = js.Array[CharacterSet]
   type SupportedTimezonesList = js.Array[Timezone]
@@ -4756,7 +4756,7 @@ object NeptuneNs extends js.Object {
   type TagList = js.Array[Tag]
   type ValidStorageOptionsList = js.Array[ValidStorageOptions]
   type ValidUpgradeTargetList = js.Array[UpgradeTarget]
-  type VpcSecurityGroupIdList = js.Array[java.lang.String]
+  type VpcSecurityGroupIdList = js.Array[String]
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2014-10-31` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

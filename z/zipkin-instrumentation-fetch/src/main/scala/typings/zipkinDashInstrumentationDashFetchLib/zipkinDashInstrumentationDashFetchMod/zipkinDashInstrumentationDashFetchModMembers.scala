@@ -12,13 +12,13 @@ object zipkinDashInstrumentationDashFetchModMembers extends js.Object {
     rawFetch: js.Function2[
       /* url */ nodeDashFetchLib.nodeDashFetchMod.Request, 
       /* init */ nodeDashFetchLib.nodeDashFetchMod.RequestInit, 
-      stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response]
+      js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response]
     ],
     options: Options
   ): js.Function2[
     /* url */ nodeDashFetchLib.nodeDashFetchMod.Request, 
     /* init */ nodeDashFetchLib.nodeDashFetchMod.RequestInit, 
-    stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response]
+    js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response]
   ] = js.native
 }
 

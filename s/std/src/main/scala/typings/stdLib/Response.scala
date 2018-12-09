@@ -12,7 +12,7 @@ trait Response extends Body {
   val redirected: scala.Boolean
   val status: scala.Double
   val statusText: java.lang.String
-  val trailer: Promise[Headers]
+  val trailer: js.Promise[Headers]
   val `type`: ResponseType
   val url: java.lang.String
 }

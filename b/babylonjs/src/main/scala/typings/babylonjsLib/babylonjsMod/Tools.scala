@@ -402,7 +402,7 @@ object Tools extends js.Object {
            * @param delay Number of milliseconds to delay
            * @returns Promise that resolves after the given amount of time
            */
-  def DelayAsync(delay: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def DelayAsync(delay: scala.Double): js.Promise[scala.Unit] = js.native
   /**
            * Downloads a blob in the browser
            * @param blob defines the blob to download

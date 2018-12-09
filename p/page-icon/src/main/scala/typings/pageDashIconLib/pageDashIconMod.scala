@@ -12,7 +12,7 @@ object pageDashIconMod
       js.Function2[
         /* url */ java.lang.String, 
         /* opts */ js.UndefOr[pageDashIconLib.PageIconNs.FetchOptions], 
-        stdLib.Promise[pageDashIconLib.PageIconNs.Icon]
+        js.Promise[pageDashIconLib.PageIconNs.Icon]
       ]
     ]
 

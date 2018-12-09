@@ -16,12 +16,12 @@ object gcpDashMetadataModMembers extends js.Object {
   val HEADER_NAME: /* Metadata-Flavor */ java.lang.String = js.native
   val HEADER_VALUE: /* Google */ java.lang.String = js.native
   val HOST_ADDRESS: /* http://metadata.google.internal */ java.lang.String = js.native
-  def instance(): stdLib.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
-  def instance(options: Options): stdLib.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
-  def instance(options: java.lang.String): stdLib.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
-  def isAvailable(): stdLib.Promise[scala.Boolean] = js.native
-  def project(): stdLib.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
-  def project(options: Options): stdLib.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
-  def project(options: java.lang.String): stdLib.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
+  def instance(): js.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
+  def instance(options: Options): js.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
+  def instance(options: java.lang.String): js.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
+  def isAvailable(): js.Promise[scala.Boolean] = js.native
+  def project(): js.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
+  def project(options: Options): js.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
+  def project(options: java.lang.String): js.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
 }
 

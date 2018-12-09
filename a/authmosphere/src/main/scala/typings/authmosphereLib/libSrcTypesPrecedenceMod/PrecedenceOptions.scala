@@ -13,6 +13,6 @@ trait PrecedenceOptions extends js.Object {
     req: expressLib.expressMod.eNs.Request,
     res: expressLib.expressMod.eNs.Response,
     next: expressLib.expressMod.eNs.NextFunction
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
 }
 

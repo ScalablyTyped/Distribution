@@ -13,7 +13,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotWebfontsLib.gapiDotClientDotWebfontsLibStrings.webfonts,
     version: gapiDotClientDotWebfontsLib.gapiDotClientDotWebfontsLibStrings.v1
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotWebfontsLib.gapiDotClientDotWebfontsLibStrings.webfonts,
     version: gapiDotClientDotWebfontsLib.gapiDotClientDotWebfontsLibStrings.v1,

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped String */ @js.native
-trait Colors extends js.Object {
+@js.native
+trait Colors
+  extends stdLib.String {
   var bgBlack: this.type = js.native
   var bgBlue: this.type = js.native
   var bgBrightBlack: this.type = js.native

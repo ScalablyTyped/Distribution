@@ -19,16 +19,16 @@ object graphqlModMembers extends js.Object {
   val specifiedRules: js.Array[ValidationRule] = js.native
   def buildClientSchema(introspection: IntrospectionQuery): GraphQLSchema = js.native
   def formatError(error: GraphQLError): GraphQLFormattedError = js.native
-  def graphql(schema: GraphQLSchema, requestString: java.lang.String): stdLib.Promise[GraphQLResult] = js.native
-  def graphql(schema: GraphQLSchema, requestString: java.lang.String, rootValue: js.Any): stdLib.Promise[GraphQLResult] = js.native
-  def graphql(schema: GraphQLSchema, requestString: java.lang.String, rootValue: js.Any, contextValue: js.Any): stdLib.Promise[GraphQLResult] = js.native
+  def graphql(schema: GraphQLSchema, requestString: java.lang.String): js.Promise[GraphQLResult] = js.native
+  def graphql(schema: GraphQLSchema, requestString: java.lang.String, rootValue: js.Any): js.Promise[GraphQLResult] = js.native
+  def graphql(schema: GraphQLSchema, requestString: java.lang.String, rootValue: js.Any, contextValue: js.Any): js.Promise[GraphQLResult] = js.native
   def graphql(
     schema: GraphQLSchema,
     requestString: java.lang.String,
     rootValue: js.Any,
     contextValue: js.Any,
     variableValues: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): stdLib.Promise[GraphQLResult] = js.native
+  ): js.Promise[GraphQLResult] = js.native
   def graphql(
     schema: GraphQLSchema,
     requestString: java.lang.String,
@@ -36,7 +36,7 @@ object graphqlModMembers extends js.Object {
     contextValue: js.Any,
     variableValues: ScalablyTyped.runtime.StringDictionary[js.Any],
     operationName: java.lang.String
-  ): stdLib.Promise[GraphQLResult] = js.native
+  ): js.Promise[GraphQLResult] = js.native
   def validate(schema: GraphQLSchema, ast: Document): js.Array[GraphQLError] = js.native
   def validate(schema: GraphQLSchema, ast: Document, rules: js.Array[_]): js.Array[GraphQLError] = js.native
 }

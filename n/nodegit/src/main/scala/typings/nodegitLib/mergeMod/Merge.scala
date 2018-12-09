@@ -12,8 +12,8 @@ class Merge () extends js.Object
 @JSImport("nodegit/merge", "Merge")
 @js.native
 object Merge extends js.Object {
-  def base(repo: nodegitLib.repositoryMod.Repository, one: nodegitLib.oidMod.Oid, two: nodegitLib.oidMod.Oid): stdLib.Promise[nodegitLib.oidMod.Oid] = js.native
-  def bases(repo: nodegitLib.repositoryMod.Repository, one: nodegitLib.oidMod.Oid, two: nodegitLib.oidMod.Oid): stdLib.Promise[nodegitLib.oidDashArrayMod.Oidarray] = js.native
+  def base(repo: nodegitLib.repositoryMod.Repository, one: nodegitLib.oidMod.Oid, two: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.oidMod.Oid] = js.native
+  def bases(repo: nodegitLib.repositoryMod.Repository, one: nodegitLib.oidMod.Oid, two: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.oidDashArrayMod.Oidarray] = js.native
   def commits(
     repo: nodegitLib.repositoryMod.Repository,
     ourCommit: nodegitLib.commitMod.Commit,
@@ -47,13 +47,13 @@ object Merge extends js.Object {
     ancestorTree: nodegitLib.treeMod.Tree,
     ourTree: nodegitLib.treeMod.Tree,
     theirTree: nodegitLib.treeMod.Tree
-  ): stdLib.Promise[nodegitLib.nodegitMod.Index] = js.native
+  ): js.Promise[nodegitLib.nodegitMod.Index] = js.native
   def trees(
     repo: nodegitLib.repositoryMod.Repository,
     ancestorTree: nodegitLib.treeMod.Tree,
     ourTree: nodegitLib.treeMod.Tree,
     theirTree: nodegitLib.treeMod.Tree,
     opts: nodegitLib.mergeDashOptionsMod.MergeOptions
-  ): stdLib.Promise[nodegitLib.nodegitMod.Index] = js.native
+  ): js.Promise[nodegitLib.nodegitMod.Index] = js.native
 }
 

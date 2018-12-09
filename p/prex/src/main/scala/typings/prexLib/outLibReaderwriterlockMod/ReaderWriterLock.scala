@@ -38,38 +38,38 @@ class ReaderWriterLock () extends js.Object {
        *
        * @param token A CancellationToken used to cancel the request.
        */
-  def read(): stdLib.Promise[LockHandle] = js.native
+  def read(): js.Promise[LockHandle] = js.native
   /**
        * Asynchronously waits for and takes a read lock on a resource.
        *
        * @param token A CancellationToken used to cancel the request.
        */
-  def read(token: prexLib.outLibCancellationMod.CancellationToken): stdLib.Promise[LockHandle] = js.native
+  def read(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[LockHandle] = js.native
   /**
        * Asynchronously waits for and takes a read lock on a resource
        * that can later be upgraded to a write lock.
        *
        * @param token A CancellationToken used to cancel the request.
        */
-  def upgradeableRead(): stdLib.Promise[UpgradeableLockHandle] = js.native
+  def upgradeableRead(): js.Promise[UpgradeableLockHandle] = js.native
   /**
        * Asynchronously waits for and takes a read lock on a resource
        * that can later be upgraded to a write lock.
        *
        * @param token A CancellationToken used to cancel the request.
        */
-  def upgradeableRead(token: prexLib.outLibCancellationMod.CancellationToken): stdLib.Promise[UpgradeableLockHandle] = js.native
+  def upgradeableRead(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[UpgradeableLockHandle] = js.native
   /**
        * Asynchronously waits for and takes a write lock on a resource.
        *
        * @param token A CancellationToken used to cancel the request.
        */
-  def write(): stdLib.Promise[LockHandle] = js.native
+  def write(): js.Promise[LockHandle] = js.native
   /**
        * Asynchronously waits for and takes a write lock on a resource.
        *
        * @param token A CancellationToken used to cancel the request.
        */
-  def write(token: prexLib.outLibCancellationMod.CancellationToken): stdLib.Promise[LockHandle] = js.native
+  def write(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[LockHandle] = js.native
 }
 

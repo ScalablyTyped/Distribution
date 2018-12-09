@@ -21,7 +21,7 @@ package object estreeMod {
   type LogicalOperator = estreeLib.estreeLibStrings.`||` | estreeLib.estreeLibStrings.`&&`
   type ModuleDeclaration = ImportDeclaration | ExportNamedDeclaration | ExportDefaultDeclaration | ExportAllDeclaration
   type ModuleSpecifier = ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier | ExportSpecifier
-  type Node = Identifier | Literal | Program | js.Function | SwitchCase | CatchClause | VariableDeclarator | Statement | estreeLib.Expression | Property | AssignmentProperty | Super | TemplateElement | SpreadElement | Pattern | ClassBody | Class | MethodDefinition | ModuleDeclaration | ModuleSpecifier
+  type Node = Identifier | Literal | Program | Function | SwitchCase | CatchClause | VariableDeclarator | Statement | estreeLib.Expression | Property | AssignmentProperty | Super | TemplateElement | SpreadElement | Pattern | ClassBody | Class | MethodDefinition | ModuleDeclaration | ModuleSpecifier
   type Pattern = Identifier | ObjectPattern | ArrayPattern | RestElement | AssignmentPattern | MemberExpression
   type Statement = ExpressionStatement | BlockStatement | EmptyStatement | DebuggerStatement | WithStatement | ReturnStatement | LabeledStatement | BreakStatement | ContinueStatement | IfStatement | SwitchStatement | ThrowStatement | TryStatement | WhileStatement | DoWhileStatement | ForStatement | ForInStatement | ForOfStatement | Declaration
   type UnaryOperator = estreeLib.estreeLibStrings.`-` | estreeLib.estreeLibStrings.`+` | estreeLib.estreeLibStrings.`!` | estreeLib.estreeLibStrings.`~` | estreeLib.estreeLibStrings.typeof | estreeLib.estreeLibStrings.void | estreeLib.estreeLibStrings.delete

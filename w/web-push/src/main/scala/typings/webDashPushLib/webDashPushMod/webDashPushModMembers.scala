@@ -87,12 +87,12 @@ object webDashPushModMembers extends js.Object {
     contentEncoding: webDashPushLib.webDashPushLibStrings.aesgcm,
     expiration: scala.Double
   ): webDashPushLib.Anon_CryptoKey = js.native
-  def sendNotification(subscription: PushSubscription): stdLib.Promise[SendResult] = js.native
-  def sendNotification(subscription: PushSubscription, payload: java.lang.String): stdLib.Promise[SendResult] = js.native
-  def sendNotification(subscription: PushSubscription, payload: java.lang.String, options: RequestOptions): stdLib.Promise[SendResult] = js.native
-  def sendNotification(subscription: PushSubscription, payload: nodeLib.Buffer): stdLib.Promise[SendResult] = js.native
-  def sendNotification(subscription: PushSubscription, payload: nodeLib.Buffer, options: RequestOptions): stdLib.Promise[SendResult] = js.native
-  def sendNotification(subscription: PushSubscription, payload: scala.Null, options: RequestOptions): stdLib.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: java.lang.String): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: java.lang.String, options: RequestOptions): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: nodeLib.Buffer): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: nodeLib.Buffer, options: RequestOptions): js.Promise[SendResult] = js.native
+  def sendNotification(subscription: PushSubscription, payload: scala.Null, options: RequestOptions): js.Promise[SendResult] = js.native
   def setGCMAPIKey(): scala.Unit = js.native
   def setGCMAPIKey(apiKey: java.lang.String): scala.Unit = js.native
   def setVapidDetails(subject: java.lang.String, publicKey: java.lang.String, privateKey: java.lang.String): scala.Unit = js.native

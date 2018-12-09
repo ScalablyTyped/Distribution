@@ -151,6 +151,6 @@ class WebVRFreeCamera protected () extends FreeCamera {
            * Enables the standing matrix when supported. This can be used to position the user's view the correct height from the ground.
            * @returns A promise with a boolean set to if the standing matrix is supported.
            */
-  def useStandingMatrixAsync(): stdLib.Promise[scala.Boolean] = js.native
+  def useStandingMatrixAsync(): js.Promise[scala.Boolean] = js.native
 }
 

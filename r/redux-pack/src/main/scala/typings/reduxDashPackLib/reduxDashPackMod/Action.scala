@@ -15,6 +15,6 @@ trait Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPay
     (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]) with TMetaPayload
   ] = js.undefined
   var payload: js.UndefOr[TSuccessPayload | TErrorPayload | TStartPayload] = js.undefined
-  var promise: js.UndefOr[stdLib.Promise[TSuccessPayload]] = js.undefined
+  var promise: js.UndefOr[js.Promise[TSuccessPayload]] = js.undefined
 }
 

@@ -39,6 +39,6 @@ object cleartextNs extends js.Object {
           @param text
        */
   def fromText(text: java.lang.String): CleartextMessage = js.native
-  def readArmored(armoredText: java.lang.String): stdLib.Promise[CleartextMessage] = js.native
+  def readArmored(armoredText: java.lang.String): js.Promise[CleartextMessage] = js.native
 }
 

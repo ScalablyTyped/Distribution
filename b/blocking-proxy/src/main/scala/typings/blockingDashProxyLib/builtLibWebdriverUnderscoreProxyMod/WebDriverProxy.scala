@@ -12,6 +12,6 @@ class WebDriverProxy protected () extends js.Object {
   var barriers: js.Array[WebDriverBarrier] = js.native
   var seleniumAddress: java.lang.String = js.native
   def addBarrier(barrier: WebDriverBarrier): scala.Unit = js.native
-  def handleRequest(originalRequest: nodeLib.httpMod.IncomingMessage, response: nodeLib.httpMod.ServerResponse): stdLib.Promise[scala.Unit] = js.native
+  def handleRequest(originalRequest: nodeLib.httpMod.IncomingMessage, response: nodeLib.httpMod.ServerResponse): js.Promise[scala.Unit] = js.native
 }
 

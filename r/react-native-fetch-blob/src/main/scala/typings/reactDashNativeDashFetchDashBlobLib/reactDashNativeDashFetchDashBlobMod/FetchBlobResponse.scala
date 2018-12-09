@@ -20,7 +20,7 @@ trait FetchBlobResponse extends js.Object {
        * Convert result to javascript RNFetchBlob object.
        * @return Return a promise resolves Blob object.
        */
-  def blob(contentType: java.lang.String, sliceSize: scala.Double): stdLib.Promise[PolyfillBlob]
+  def blob(contentType: java.lang.String, sliceSize: scala.Double): js.Promise[PolyfillBlob]
   /**
        * Remove cahced file
        */
@@ -40,7 +40,7 @@ trait FetchBlobResponse extends js.Object {
        * a file path, show warning message
        * @param  encode Encode type, should be one of `base64`, `ascrii`, `utf8`.
        */
-  def readFile(encode: reactDashNativeDashFetchDashBlobLib.Encoding): stdLib.Promise[_] | scala.Null
+  def readFile(encode: reactDashNativeDashFetchDashBlobLib.Encoding): js.Promise[_] | scala.Null
   /**
        * Start read stream from cached file
        * @param  encode Encode type, should be one of `base64`, `ascrii`, `utf8`.
@@ -51,6 +51,6 @@ trait FetchBlobResponse extends js.Object {
        * Convert result to text.
        * @return Decoded base64 string.
        */
-  def text(): java.lang.String | stdLib.Promise[_]
+  def text(): java.lang.String | js.Promise[_]
 }
 

@@ -44,12 +44,12 @@ trait RequestValidation extends js.Object {
   def assert(item: scala.Double): Validator = js.native
   def assert(item: scala.Double, message: js.Any): Validator = js.native
   def assert(schema: js.Object): Validator = js.native
-  def asyncValidationErrors(): stdLib.Promise[js.Array[_] | (stdLib.Record[java.lang.String, _])] = js.native
-  def asyncValidationErrors(mapped: scala.Boolean): stdLib.Promise[js.Array[_] | (stdLib.Record[java.lang.String, _])] = js.native
+  def asyncValidationErrors(): js.Promise[js.Array[_] | (stdLib.Record[java.lang.String, _])] = js.native
+  def asyncValidationErrors(mapped: scala.Boolean): js.Promise[js.Array[_] | (stdLib.Record[java.lang.String, _])] = js.native
   @JSName("asyncValidationErrors")
-  def asyncValidationErrors_T[T](): stdLib.Promise[js.Array[T] | (stdLib.Record[java.lang.String, T])] = js.native
+  def asyncValidationErrors_T[T](): js.Promise[js.Array[T] | (stdLib.Record[java.lang.String, T])] = js.native
   @JSName("asyncValidationErrors")
-  def asyncValidationErrors_T[T](mapped: scala.Boolean): stdLib.Promise[js.Array[T] | (stdLib.Record[java.lang.String, T])] = js.native
+  def asyncValidationErrors_T[T](mapped: scala.Boolean): js.Promise[js.Array[T] | (stdLib.Record[java.lang.String, T])] = js.native
   def check(item: java.lang.String): Validator = js.native
   def check(item: java.lang.String, message: js.Any): Validator = js.native
   def check(item: js.Array[java.lang.String]): Validator = js.native
@@ -93,7 +93,7 @@ trait RequestValidation extends js.Object {
   def checkQuery(item: scala.Double, message: js.Any): Validator = js.native
   def checkQuery(schema: js.Object): Validator = js.native
   def filter(item: java.lang.String): Sanitizer = js.native
-  def getValidationResult(): stdLib.Promise[expressDashValidatorLib.checkValidationDashResultMod.Result[_]] = js.native
+  def getValidationResult(): js.Promise[expressDashValidatorLib.checkValidationDashResultMod.Result[_]] = js.native
   def sanitize(item: java.lang.String): Sanitizer = js.native
   def sanitizeBody(item: java.lang.String): Sanitizer = js.native
   def sanitizeCookies(item: java.lang.String): Sanitizer = js.native

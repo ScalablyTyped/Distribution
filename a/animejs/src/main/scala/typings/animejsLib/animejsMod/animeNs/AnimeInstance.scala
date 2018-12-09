@@ -20,7 +20,7 @@ trait AnimeInstance extends js.Object {
   var delay: scala.Double = js.native
   var direction: java.lang.String = js.native
   var duration: scala.Double = js.native
-  var finished: stdLib.Promise[scala.Unit] = js.native
+  var finished: js.Promise[scala.Unit] = js.native
   var loop: scala.Double | scala.Boolean = js.native
   var offset: scala.Double = js.native
   var paused: scala.Boolean = js.native

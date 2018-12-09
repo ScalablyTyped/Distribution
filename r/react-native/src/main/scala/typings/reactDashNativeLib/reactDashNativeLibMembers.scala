@@ -12,8 +12,8 @@ object reactDashNativeLibMembers extends js.Object {
   def clearImmediate(handle: scala.Double): scala.Unit = js.native
   def clearInterval(handle: scala.Double): scala.Unit = js.native
   def clearTimeout(handle: scala.Double): scala.Unit = js.native
-  def fetch(input: RequestInfo): stdLib.Promise[Response] = js.native
-  def fetch(input: RequestInfo, init: RequestInit): stdLib.Promise[Response] = js.native
+  def fetch(input: RequestInfo): js.Promise[Response] = js.native
+  def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   def fetchBundle(
     bundleId: scala.Double,
     callback: js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]

@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
 
 trait Relation extends BaseObject {
   var key: java.lang.String
-  var parent: js.Object
+  var parent: Object
   var targetClassName: java.lang.String
   //Adds a AV.Object or an array of AV.Objects to the relation.
-  def add(`object`: js.Object): scala.Unit
+  def add(`object`: Object): scala.Unit
   // Returns a AV.Query that is limited to objects in this relation.
   def query(): Query
   // Removes a AV.Object or an array of AV.Objects from this relation.
-  def remove(`object`: js.Object): scala.Unit
+  def remove(`object`: Object): scala.Unit
 }
 

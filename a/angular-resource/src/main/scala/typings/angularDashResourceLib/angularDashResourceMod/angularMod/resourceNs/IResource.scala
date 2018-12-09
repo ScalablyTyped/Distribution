@@ -21,61 +21,81 @@ trait IResource[T] extends js.Object {
   @JSName("$delete")
   def $delete(params: js.Object): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$delete")
-  def $delete(params: js.Object, success: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $delete(params: js.Object, success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$delete")
-  def $delete(params: js.Object, success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $delete(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$delete")
-  def $delete(success: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $delete(success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$delete")
-  def $delete(success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $delete(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$get")
   def $get(): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$get")
   def $get(params: js.Object): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$get")
-  def $get(params: js.Object, success: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $get(params: js.Object, success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$get")
-  def $get(params: js.Object, success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $get(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$get")
-  def $get(success: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $get(success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$get")
-  def $get(success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $get(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$query")
   def $query(): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
   @JSName("$query")
   def $query(params: js.Object): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
   @JSName("$query")
-  def $query(params: js.Object, success: js.Function): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
+  def $query(params: js.Object, success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
   @JSName("$query")
-  def $query(params: js.Object, success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
+  def $query(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
   @JSName("$query")
-  def $query(success: js.Function): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
+  def $query(success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
   @JSName("$query")
-  def $query(success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
+  def $query(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[IResourceArray[T]] = js.native
   @JSName("$remove")
   def $remove(): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$remove")
   def $remove(params: js.Object): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$remove")
-  def $remove(params: js.Object, success: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $remove(params: js.Object, success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$remove")
-  def $remove(params: js.Object, success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $remove(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$remove")
-  def $remove(success: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $remove(success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$remove")
-  def $remove(success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $remove(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$save")
   def $save(): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$save")
   def $save(params: js.Object): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$save")
-  def $save(params: js.Object, success: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $save(params: js.Object, success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$save")
-  def $save(params: js.Object, success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $save(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$save")
-  def $save(success: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $save(success: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   @JSName("$save")
-  def $save(success: js.Function, error: js.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
+  def $save(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): angularLib.angularMod.angularNs.IPromise[T] = js.native
   def toJSON(): T = js.native
 }
 

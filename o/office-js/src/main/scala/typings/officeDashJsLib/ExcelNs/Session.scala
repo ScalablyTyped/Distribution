@@ -17,7 +17,7 @@ class Session () extends js.Object {
   /**
            * Close the session.
            */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
 }
 
 /**

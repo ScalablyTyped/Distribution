@@ -251,9 +251,9 @@ object interactionNs extends js.Object {
        * @param options Options.
        * @api
        */
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ @js.native
-  class Interaction protected () extends js.Object {
+  @js.native
+  class Interaction protected ()
+    extends openlayersLib.openlayersMod.Object {
     /**
              * @classdesc
              * Abstract base class; normally only used for creating subclasses and not

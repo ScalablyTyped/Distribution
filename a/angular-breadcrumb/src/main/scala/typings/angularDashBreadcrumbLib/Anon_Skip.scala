@@ -14,7 +14,7 @@ trait Anon_Skip extends js.Object {
   /**
                    * Override the parent state (only for the breadcrumb)
                    **/
-  var parent: js.UndefOr[java.lang.String | js.Function] = js.undefined
+  var parent: js.UndefOr[java.lang.String | angularLib.angularMod.Global.Function] = js.undefined
   /**
                   * When defined to true, the state is never included in the chain of states and never appears in the breadcrumb
                   **/

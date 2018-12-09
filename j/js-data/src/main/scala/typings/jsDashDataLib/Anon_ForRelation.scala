@@ -68,9 +68,9 @@ trait Anon_ForRelation extends js.Object {
   def plainCopy(from: js.Any): js.Any = js.native
   def possibleConstructorReturn(self: js.Object, call: js.Function): js.Object = js.native
   def possibleConstructorReturn(self: js.Object, call: js.Object): js.Object = js.native
-  def reject(value: js.Any): stdLib.Promise[_] = js.native
+  def reject(value: js.Any): js.Promise[_] = js.native
   def remove(array: js.Array[_], fn: js.Function): scala.Unit = js.native
-  def resolve(value: js.Any): stdLib.Promise[_] = js.native
+  def resolve(value: js.Any): js.Promise[_] = js.native
   def set(`object`: js.Object, path: java.lang.String): scala.Unit = js.native
   def set(`object`: js.Object, path: java.lang.String, value: js.Any): scala.Unit = js.native
   def toJson(value: js.Any): java.lang.String = js.native

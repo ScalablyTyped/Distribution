@@ -13,23 +13,23 @@ object AppStreamNs extends js.Object {
     /**
          * The application name for display.
          */
-    var DisplayName: js.UndefOr[java.lang.String] = js.undefined
+    var DisplayName: js.UndefOr[String] = js.undefined
     /**
          * If there is a problem, the application can be disabled after image creation.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The URL for the application icon. This URL might be time-limited.
          */
-    var IconURL: js.UndefOr[java.lang.String] = js.undefined
+    var IconURL: js.UndefOr[String] = js.undefined
     /**
          * The arguments that are passed to the application at launch.
          */
-    var LaunchParameters: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchParameters: js.UndefOr[String] = js.undefined
     /**
          * The path to the application executable in the instance.
          */
-    var LaunchPath: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchPath: js.UndefOr[String] = js.undefined
     /**
          * Additional attributes that describe the application.
          */
@@ -37,7 +37,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the application.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -45,7 +45,7 @@ object AppStreamNs extends js.Object {
     /**
          * Enables or disables persistent application settings for users during their streaming sessions. 
          */
-    var Enabled: scala.Boolean
+    var Enabled: Boolean
     /**
          * The path prefix for the S3 bucket where users’ persistent application settings are stored. You can allow the same persistent application settings to be used across multiple stacks by specifying the same settings group for each stack. 
          */
@@ -57,11 +57,11 @@ object AppStreamNs extends js.Object {
     /**
          * Specifies whether persistent application settings are enabled for users during their streaming sessions.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The S3 bucket where users’ persistent application settings are stored. When persistent application settings are enabled for the first time for an account in an AWS Region, an S3 bucket is created. The bucket is unique to the AWS account and the Region. 
          */
-    var S3BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var S3BucketName: js.UndefOr[String] = js.undefined
     /**
          * The path prefix for the S3 bucket where users’ persistent application settings are stored.
          */
@@ -73,11 +73,11 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the fleet. 
          */
-    var FleetName: java.lang.String
+    var FleetName: String
     /**
          * The name of the stack.
          */
-    var StackName: java.lang.String
+    var StackName: String
   }
   
   
@@ -240,11 +240,11 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the image used to create the fleet.
          */
-    var ImageName: js.UndefOr[java.lang.String] = js.undefined
+    var ImageName: js.UndefOr[String] = js.undefined
     /**
          * The instance type to use when launching fleet instances. The following instance types are available:   stream.standard.medium   stream.standard.large   stream.compute.large   stream.compute.xlarge   stream.compute.2xlarge   stream.compute.4xlarge   stream.compute.8xlarge   stream.memory.large   stream.memory.xlarge   stream.memory.2xlarge   stream.memory.4xlarge   stream.memory.8xlarge   stream.graphics-design.large   stream.graphics-design.xlarge   stream.graphics-design.2xlarge   stream.graphics-design.4xlarge   stream.graphics-desktop.2xlarge   stream.graphics-pro.4xlarge   stream.graphics-pro.8xlarge   stream.graphics-pro.16xlarge  
          */
-    var InstanceType: java.lang.String
+    var InstanceType: String
     /**
          * The maximum time that a streaming session can run, in seconds. Specify a value between 600 and 57600.
          */
@@ -296,11 +296,11 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the image used to create the builder.
          */
-    var ImageName: js.UndefOr[java.lang.String] = js.undefined
+    var ImageName: js.UndefOr[String] = js.undefined
     /**
          * The instance type to use when launching the image builder.
          */
-    var InstanceType: java.lang.String
+    var InstanceType: String
     /**
          * A unique name for the image builder.
          */
@@ -324,7 +324,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the image builder.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The time that the streaming URL will be valid, in seconds. Specify a value between 1 and 604800 seconds. The default is 3600 seconds.
          */
@@ -340,7 +340,7 @@ object AppStreamNs extends js.Object {
     /**
          * The URL to start the AppStream 2.0 streaming session.
          */
-    var StreamingURL: js.UndefOr[java.lang.String] = js.undefined
+    var StreamingURL: js.UndefOr[String] = js.undefined
   }
   
   
@@ -392,19 +392,19 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the application to launch after the session starts. This is the name that you specified as Name in the Image Assistant.
          */
-    var ApplicationId: js.UndefOr[java.lang.String] = js.undefined
+    var ApplicationId: js.UndefOr[String] = js.undefined
     /**
          * The name of the fleet.
          */
-    var FleetName: java.lang.String
+    var FleetName: String
     /**
          * The session context. For more information, see Session Context in the Amazon AppStream 2.0 Developer Guide.
          */
-    var SessionContext: js.UndefOr[java.lang.String] = js.undefined
+    var SessionContext: js.UndefOr[String] = js.undefined
     /**
          * The name of the stack.
          */
-    var StackName: java.lang.String
+    var StackName: String
     /**
          * The ID of the user.
          */
@@ -424,7 +424,7 @@ object AppStreamNs extends js.Object {
     /**
          * The URL to start the AppStream 2.0 streaming session.
          */
-    var StreamingURL: js.UndefOr[java.lang.String] = js.undefined
+    var StreamingURL: js.UndefOr[String] = js.undefined
   }
   
   
@@ -470,7 +470,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the fleet.
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -528,7 +528,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the stack.
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -562,7 +562,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -574,7 +574,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -586,7 +586,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -598,7 +598,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -614,7 +614,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -626,7 +626,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -642,7 +642,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The 12-digit ID of one or more AWS accounts with which the image is shared.
          */
@@ -658,7 +658,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The permissions for a private image that you own. 
          */
@@ -682,7 +682,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The type of image (public, private, or shared) to describe. 
          */
@@ -698,7 +698,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -710,7 +710,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the fleet. This value is case-sensitive.
          */
-    var FleetName: java.lang.String
+    var FleetName: String
     /**
          * The size of each page of results. The default value is 20 and the maximum value is 50.
          */
@@ -718,11 +718,11 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the stack. This value is case-sensitive.
          */
-    var StackName: java.lang.String
+    var StackName: String
     /**
          * The user ID.
          */
@@ -734,7 +734,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the streaming sessions.
          */
@@ -750,7 +750,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -758,7 +758,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the stacks.
          */
@@ -778,11 +778,11 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the stack that is associated with the user.
          */
-    var StackName: js.UndefOr[java.lang.String] = js.undefined
+    var StackName: js.UndefOr[String] = js.undefined
     /**
          * The email address of the user who is associated with the stack.
          */
@@ -794,7 +794,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The UserStackAssociation objects.
          */
@@ -814,7 +814,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -822,7 +822,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about users in the user pool.
          */
@@ -869,11 +869,11 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the fleet.
          */
-    var FleetName: java.lang.String
+    var FleetName: String
     /**
          * The name of the stack.
          */
-    var StackName: java.lang.String
+    var StackName: String
   }
   
   
@@ -911,7 +911,7 @@ object AppStreamNs extends js.Object {
     /**
          * The ID of the streaming session.
          */
-    var SessionId: java.lang.String
+    var SessionId: String
   }
   
   
@@ -934,7 +934,7 @@ object AppStreamNs extends js.Object {
     /**
          * The description for display.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The time after disconnection when a session is considered to have ended, in seconds. If a user who was disconnected reconnects within this time interval, the user is connected to their previous session. Specify a value between 60 and 57600.
          */
@@ -942,7 +942,7 @@ object AppStreamNs extends js.Object {
     /**
          * The fleet name for display.
          */
-    var DisplayName: js.UndefOr[java.lang.String] = js.undefined
+    var DisplayName: js.UndefOr[String] = js.undefined
     /**
          * The information needed to join a Microsoft Active Directory domain.
          */
@@ -966,11 +966,11 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the image used to create the fleet.
          */
-    var ImageName: js.UndefOr[java.lang.String] = js.undefined
+    var ImageName: js.UndefOr[String] = js.undefined
     /**
          * The instance type to use when launching fleet instances.
          */
-    var InstanceType: java.lang.String
+    var InstanceType: String
     /**
          * The maximum time that a streaming session can run, in seconds. Specify a value between 600 and 57600.
          */
@@ -978,7 +978,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the fleet.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The current state for the fleet.
          */
@@ -998,7 +998,7 @@ object AppStreamNs extends js.Object {
     /**
          * The error message.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1026,15 +1026,15 @@ object AppStreamNs extends js.Object {
     /**
          * The description for display.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The image name for display.
          */
-    var DisplayName: js.UndefOr[java.lang.String] = js.undefined
+    var DisplayName: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether an image builder can be launched from this image.
          */
-    var ImageBuilderSupported: js.UndefOr[scala.Boolean] = js.undefined
+    var ImageBuilderSupported: js.UndefOr[Boolean] = js.undefined
     /**
          * The permissions to provide to the destination AWS account for the specified image.
          */
@@ -1042,7 +1042,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the image.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The operating system platform of the image.
          */
@@ -1082,11 +1082,11 @@ object AppStreamNs extends js.Object {
     /**
          * The description for display.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The image builder name for display.
          */
-    var DisplayName: js.UndefOr[java.lang.String] = js.undefined
+    var DisplayName: js.UndefOr[String] = js.undefined
     /**
          * The information needed to join a Microsoft Active Directory domain.
          */
@@ -1106,11 +1106,11 @@ object AppStreamNs extends js.Object {
     /**
          * The instance type for the image builder.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The name of the image builder.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The operating system platform of the image builder.
          */
@@ -1138,7 +1138,7 @@ object AppStreamNs extends js.Object {
     /**
          * The state change reason message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1162,7 +1162,7 @@ object AppStreamNs extends js.Object {
     /**
          * The state change reason message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1170,11 +1170,11 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the stack.
          */
-    var StackName: java.lang.String
+    var StackName: String
   }
   
   
@@ -1186,7 +1186,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1194,11 +1194,11 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the fleet.
          */
-    var FleetName: java.lang.String
+    var FleetName: String
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1210,7 +1210,7 @@ object AppStreamNs extends js.Object {
     /**
          * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1231,18 +1231,18 @@ object AppStreamNs extends js.Object {
   
   
   trait Metadata
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait NetworkAccessConfiguration extends js.Object {
     /**
          * The resource identifier of the elastic network interface that is attached to instances in your VPC. All network interfaces have the eni-xxxxxxxx resource identifier.
          */
-    var EniId: js.UndefOr[java.lang.String] = js.undefined
+    var EniId: js.UndefOr[String] = js.undefined
     /**
          * The private IP address of the elastic network interface that is attached to instances in your VPC.
          */
-    var EniPrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var EniPrivateIpAddress: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1254,7 +1254,7 @@ object AppStreamNs extends js.Object {
     /**
          * The error message.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The time the error occurred.
          */
@@ -1282,11 +1282,11 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the fleet for the streaming session.
          */
-    var FleetName: java.lang.String
+    var FleetName: String
     /**
          * The ID of the streaming session.
          */
-    var Id: java.lang.String
+    var Id: String
     /**
          * The network details for the streaming session.
          */
@@ -1294,7 +1294,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the stack for the streaming session.
          */
-    var StackName: java.lang.String
+    var StackName: String
     /**
          * The current state of the streaming session.
          */
@@ -1334,11 +1334,11 @@ object AppStreamNs extends js.Object {
     /**
          * The description for display.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The stack name for display.
          */
-    var DisplayName: js.UndefOr[java.lang.String] = js.undefined
+    var DisplayName: js.UndefOr[String] = js.undefined
     /**
          * The URL that users are redirected to after they click the Send Feedback link. If no URL is specified, no Send Feedback link is displayed.
          */
@@ -1346,7 +1346,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the stack.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The URL that users are redirected to after their streaming session ends.
          */
@@ -1374,7 +1374,7 @@ object AppStreamNs extends js.Object {
     /**
          * The error message.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1382,7 +1382,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the fleet.
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -1397,7 +1397,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the image builder.
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -1413,7 +1413,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the fleet.
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -1424,7 +1424,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the image builder.
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -2873,7 +2873,7 @@ object AppStreamNs extends js.Object {
     /**
          * Deletes the VPC association for the specified fleet.
          */
-    var DeleteVpcConfig: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteVpcConfig: js.UndefOr[Boolean] = js.undefined
     /**
          * The description for display.
          */
@@ -2901,11 +2901,11 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the image used to create the fleet.
          */
-    var ImageName: js.UndefOr[java.lang.String] = js.undefined
+    var ImageName: js.UndefOr[String] = js.undefined
     /**
          * The instance type to use when launching fleet instances. The following instance types are available:   stream.standard.medium   stream.standard.large   stream.compute.large   stream.compute.xlarge   stream.compute.2xlarge   stream.compute.4xlarge   stream.compute.8xlarge   stream.memory.large   stream.memory.xlarge   stream.memory.2xlarge   stream.memory.4xlarge   stream.memory.8xlarge   stream.graphics-design.large   stream.graphics-design.xlarge   stream.graphics-design.2xlarge   stream.graphics-design.4xlarge   stream.graphics-desktop.2xlarge   stream.graphics-pro.4xlarge   stream.graphics-pro.8xlarge   stream.graphics-pro.16xlarge  
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The maximum time that a streaming session can run, in seconds. Specify a value between 600 and 57600.
          */
@@ -2913,7 +2913,7 @@ object AppStreamNs extends js.Object {
     /**
          * A unique name for the fleet.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The VPC configuration for the fleet.
          */
@@ -2960,7 +2960,7 @@ object AppStreamNs extends js.Object {
     /**
          * Deletes the storage connectors currently enabled for the stack.
          */
-    var DeleteStorageConnectors: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteStorageConnectors: js.UndefOr[Boolean] = js.undefined
     /**
          * The description for display.
          */
@@ -2976,7 +2976,7 @@ object AppStreamNs extends js.Object {
     /**
          * The name of the stack.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The URL that users are redirected to after their streaming session ends.
          */
@@ -3016,7 +3016,7 @@ object AppStreamNs extends js.Object {
     /**
          * Specifies whether the user in the user pool is enabled.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The first name, or given name, of the user.
          */
@@ -3028,7 +3028,7 @@ object AppStreamNs extends js.Object {
     /**
          * The status of the user in the user pool. The status can be one of the following:   UNCONFIRMED – The user is created but not confirmed.   CONFIRMED – The user is confirmed.   ARCHIVED – The user is no longer active.   COMPROMISED – The user is disabled because of a potential security threat.   UNKNOWN – The user status is not known.  
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The email address of the user.
          */
@@ -3056,11 +3056,11 @@ object AppStreamNs extends js.Object {
     /**
          * Specifies whether a welcome email is sent to a user after the user is created in the user pool.
          */
-    var SendEmailNotification: js.UndefOr[scala.Boolean] = js.undefined
+    var SendEmailNotification: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the stack that is associated with the user.
          */
-    var StackName: java.lang.String
+    var StackName: String
     /**
          * The email address of the user who is associated with the stack.
          */
@@ -3076,7 +3076,7 @@ object AppStreamNs extends js.Object {
     /**
          * The error message for the error that is returned when a user can’t be associated with or disassociated from a stack.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * Information about the user and associated stack.
          */
@@ -3144,7 +3144,7 @@ object AppStreamNs extends js.Object {
   type RegionName = java.lang.String
   type ResourceErrors = js.Array[ResourceError]
   type ResourceIdentifier = java.lang.String
-  type SecurityGroupIdList = js.Array[java.lang.String]
+  type SecurityGroupIdList = js.Array[String]
   type SessionList = js.Array[Session]
   type SessionState = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.EXPIRED | java.lang.String
   type SettingsGroup = java.lang.String
@@ -3158,8 +3158,8 @@ object AppStreamNs extends js.Object {
   type StorageConnectorType = awsDashSdkLib.awsDashSdkLibStrings.HOMEFOLDERS | awsDashSdkLib.awsDashSdkLibStrings.GOOGLE_DRIVE | awsDashSdkLib.awsDashSdkLibStrings.ONE_DRIVE | java.lang.String
   type StreamingUrlUserId = java.lang.String
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
-  type SubnetIdList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
+  type SubnetIdList = js.Array[String]
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagValue = java.lang.String

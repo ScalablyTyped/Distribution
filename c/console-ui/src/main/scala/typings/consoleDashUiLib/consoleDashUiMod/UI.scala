@@ -16,7 +16,7 @@ trait UI extends js.Object {
        * Launch the prompt interface (inquiry session) with (Array of Questions || Question)
        * See [Inquirer.js#question](https://github.com/SBoudrias/Inquirer.js#question) for Question properties
        */
-  def prompt[T](questions: inquirerLib.inquirerMod.inquirerNs.Questions[T]): stdLib.Promise[T] = js.native
+  def prompt[T](questions: inquirerLib.inquirerMod.inquirerNs.Questions[T]): js.Promise[T] = js.native
   /**
        * Launch the prompt interface (inquiry session) with (Array of Questions || Question)
        * See [Inquirer.js#question](https://github.com/SBoudrias/Inquirer.js#question) for Question properties
@@ -24,7 +24,7 @@ trait UI extends js.Object {
   def prompt[T](
     questions: inquirerLib.inquirerMod.inquirerNs.Questions[T],
     callback: js.Function1[/* answers */ T, scala.Unit]
-  ): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
        * Sets the write level for the UI. Valid write levels are 'DEBUG', 'INFO',
        * 'WARNING', and 'ERROR'.

@@ -29,7 +29,7 @@ class CommServer protected ()
        */
   var port: scala.Double = js.native
   var server: js.UndefOr[wsLib.wsMod.Server] = js.native
-  def start(): stdLib.Promise[scala.Unit] = js.native
-  def stop(): stdLib.Promise[scala.Unit] = js.native
+  def start(): js.Promise[scala.Unit] = js.native
+  def stop(): js.Promise[scala.Unit] = js.native
 }
 

@@ -21,7 +21,7 @@ object idleNsMembers extends js.Object {
        * @param detectionIntervalInSeconds The system is considered idle if detectionIntervalInSeconds seconds have
        *     elapsed since the last user input detected.
        */
-  def queryState(detectionIntervalInSeconds: scala.Double): stdLib.Promise[IdleState] = js.native
+  def queryState(detectionIntervalInSeconds: scala.Double): js.Promise[IdleState] = js.native
   /**
        * Sets the interval, in seconds, used to determine when the system is in an idle state for onStateChanged events.
        * The default interval is 60 seconds.

@@ -12,8 +12,8 @@ class EventEmitter2 () extends js.Object {
   def addListener(event: java.lang.String, listener: Listener): this.type = js.native
   def emit(event: java.lang.String, values: js.Any*): scala.Boolean = js.native
   def emit(event: js.Array[java.lang.String], values: js.Any*): scala.Boolean = js.native
-  def emitAsync(event: java.lang.String, values: js.Any*): stdLib.Promise[js.Array[_]] = js.native
-  def emitAsync(event: js.Array[java.lang.String], values: js.Any*): stdLib.Promise[js.Array[_]] = js.native
+  def emitAsync(event: java.lang.String, values: js.Any*): js.Promise[js.Array[_]] = js.native
+  def emitAsync(event: js.Array[java.lang.String], values: js.Any*): js.Promise[js.Array[_]] = js.native
   def eventNames(): js.Array[java.lang.String] = js.native
   def listeners(event: java.lang.String): js.Array[Listener] = js.native
   def listeners(event: js.Array[java.lang.String]): js.Array[Listener] = js.native

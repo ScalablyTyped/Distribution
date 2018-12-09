@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Boolean */ 
-trait FlashBoolean extends js.Object {
+
+trait FlashBoolean
+  extends stdLib.Boolean {
   var blocked: scala.Boolean
 }
 

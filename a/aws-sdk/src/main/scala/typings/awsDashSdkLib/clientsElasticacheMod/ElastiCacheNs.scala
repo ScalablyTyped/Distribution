@@ -13,7 +13,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource to which the tags are to be added, for example arn:aws:elasticache:us-west-2:0123456789:cluster:myCluster or arn:aws:elasticache:us-west-2:0123456789:snapshot:mySnapshot. ElastiCache resources are cluster and snapshot. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
          */
-    var ResourceName: java.lang.String
+    var ResourceName: String
     /**
          * A list of cost allocation tags to be added to this resource. A tag is a key-value pair. A tag key must be accompanied by a tag value.
          */
@@ -33,15 +33,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cache security group that allows network ingress.
          */
-    var CacheSecurityGroupName: java.lang.String
+    var CacheSecurityGroupName: String
     /**
          * The Amazon EC2 security group to be authorized for ingress to the cache security group.
          */
-    var EC2SecurityGroupName: java.lang.String
+    var EC2SecurityGroupName: String
     /**
          * The AWS account number of the Amazon EC2 security group owner. Note that this is not the same thing as an AWS access key ID - you must provide a valid AWS account number for this parameter.
          */
-    var EC2SecurityGroupOwnerId: java.lang.String
+    var EC2SecurityGroupOwnerId: String
   }
   
   
@@ -54,7 +54,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the Availability Zone.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -70,7 +70,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * This parameter is currently disabled.
          */
-    var AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
     /**
          * The date and time when the cluster was created.
          */
@@ -78,15 +78,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The user-supplied identifier of the cluster. This identifier is a unique key that identifies a cluster.
          */
-    var CacheClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheClusterId: js.UndefOr[String] = js.undefined
     /**
          * The current state of this cluster, one of the following values: available, creating, deleted, deleting, incompatible-network, modifying, rebooting cluster nodes, restore-failed, or snapshotting.
          */
-    var CacheClusterStatus: js.UndefOr[java.lang.String] = js.undefined
+    var CacheClusterStatus: js.UndefOr[String] = js.undefined
     /**
          * The name of the compute and memory capacity node type for the cluster. The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge    Previous generation: (not recommended)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge      Compute optimized:   Previous generation: (not recommended)  C1 node types: cache.c1.xlarge      Memory optimized:   Current generation:   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge   R4 node types; cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge       Notes:    All T2 instances are created in an Amazon Virtual Private Cloud (Amazon VPC).   Redis (cluster mode disabled): Redis backup/restore is not supported on T1 and T2 instances.    Redis (cluster mode enabled): Backup/restore is not supported on T1 instances.   Redis Append-only files (AOF) functionality is not supported for T1 or T2 instances.   For a complete listing of node types and specifications, see:    Amazon ElastiCache Product Features and Details     Cache Node Type-Specific Parameters for Memcached     Cache Node Type-Specific Parameters for Redis   
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * A list of cache nodes that are members of the cluster.
          */
@@ -102,11 +102,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache subnet group associated with the cluster.
          */
-    var CacheSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * The URL of the web page where you can download the latest ElastiCache client library.
          */
-    var ClientDownloadLandingPage: js.UndefOr[java.lang.String] = js.undefined
+    var ClientDownloadLandingPage: js.UndefOr[String] = js.undefined
     /**
          * Represents a Memcached cluster endpoint which, if Automatic Discovery is enabled on the cluster, can be used by an application to connect to any node in the cluster. The configuration endpoint will always have .cfg in it. Example: mem-3.9dvc4r.cfg.usw2.cache.amazonaws.com:11211 
          */
@@ -114,11 +114,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache engine (memcached or redis) to be used for this cluster.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The version of the cache engine that is used in this cluster.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * Describes a notification topic and its status. Notification topics are used for publishing ElastiCache events to subscribers using Amazon Simple Notification Service (SNS). 
          */
@@ -131,15 +131,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the Availability Zone in which the cluster is located or "Multiple" if the cache nodes are located in different Availability Zones.
          */
-    var PreferredAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are:    sun     mon     tue     wed     thu     fri     sat    Example: sun:23:00-mon:01:30 
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * The replication group to which this cluster belongs. If this field is empty, the cluster is not associated with any replication group.
          */
-    var ReplicationGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupId: js.UndefOr[String] = js.undefined
     /**
          * A list of VPC Security Groups associated with the cluster.
          */
@@ -151,7 +151,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your cluster. Example: 05:00-09:00 
          */
-    var SnapshotWindow: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotWindow: js.UndefOr[String] = js.undefined
     /**
          * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6 or 4.x. Default: false 
          */
@@ -167,7 +167,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -175,23 +175,23 @@ object ElastiCacheNs extends js.Object {
     /**
          * The description of the cache engine.
          */
-    var CacheEngineDescription: js.UndefOr[java.lang.String] = js.undefined
+    var CacheEngineDescription: js.UndefOr[String] = js.undefined
     /**
          * The description of the cache engine version.
          */
-    var CacheEngineVersionDescription: js.UndefOr[java.lang.String] = js.undefined
+    var CacheEngineVersionDescription: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache parameter group family associated with this cache engine. Valid values are: memcached1.4 | redis2.6 | redis2.8 | redis3.2 | redis4.0 
          */
-    var CacheParameterGroupFamily: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupFamily: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache engine.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The version number of the cache engine.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
   }
   
   
@@ -203,7 +203,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -215,15 +215,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cache node identifier. A node ID is a numeric identifier (0001, 0002, etc.). The combination of cluster ID and node ID uniquely identifies every cache node used in a customer's AWS account.
          */
-    var CacheNodeId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeId: js.UndefOr[String] = js.undefined
     /**
          * The current state of this cache node.
          */
-    var CacheNodeStatus: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeStatus: js.UndefOr[String] = js.undefined
     /**
          * The Availability Zone where this node was created and now resides.
          */
-    var CustomerAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var CustomerAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The hostname for connecting to this cache node.
          */
@@ -231,11 +231,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The status of the parameter group applied to this cache node.
          */
-    var ParameterGroupStatus: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterGroupStatus: js.UndefOr[String] = js.undefined
     /**
          * The ID of the primary node to which this read replica node is synchronized. If this field is empty, this node is not associated with a primary cluster.
          */
-    var SourceCacheNodeId: js.UndefOr[java.lang.String] = js.undefined
+    var SourceCacheNodeId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -243,7 +243,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The valid range of values for the parameter.
          */
-    var AllowedValues: js.UndefOr[java.lang.String] = js.undefined
+    var AllowedValues: js.UndefOr[String] = js.undefined
     /**
          * A list of cache node types and their corresponding values for this parameter.
          */
@@ -255,27 +255,27 @@ object ElastiCacheNs extends js.Object {
     /**
          * The valid data type for the parameter.
          */
-    var DataType: js.UndefOr[java.lang.String] = js.undefined
+    var DataType: js.UndefOr[String] = js.undefined
     /**
          * A description of the parameter.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether (true) or not (false) the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed.
          */
-    var IsModifiable: js.UndefOr[scala.Boolean] = js.undefined
+    var IsModifiable: js.UndefOr[Boolean] = js.undefined
     /**
          * The earliest cache engine version to which the parameter can apply.
          */
-    var MinimumEngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var MinimumEngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The name of the parameter.
          */
-    var ParameterName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterName: js.UndefOr[String] = js.undefined
     /**
          * The source of the parameter value.
          */
-    var Source: js.UndefOr[java.lang.String] = js.undefined
+    var Source: js.UndefOr[String] = js.undefined
   }
   
   
@@ -283,11 +283,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cache node type for which this value applies.
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The value for the cache node type.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -295,15 +295,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache parameter group family that this cache parameter group is compatible with. Valid values are: memcached1.4 | redis2.6 | redis2.8 | redis3.2 | redis4.0 
          */
-    var CacheParameterGroupFamily: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupFamily: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache parameter group.
          */
-    var CacheParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * The description for this cache parameter group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
   }
   
   
@@ -315,7 +315,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * A list of Parameter instances.
          */
@@ -327,7 +327,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache parameter group.
          */
-    var CacheParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -339,11 +339,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache parameter group.
          */
-    var CacheParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * The status of parameter updates.
          */
-    var ParameterApplyStatus: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterApplyStatus: js.UndefOr[String] = js.undefined
   }
   
   
@@ -355,7 +355,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -363,11 +363,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache security group.
          */
-    var CacheSecurityGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSecurityGroupName: js.UndefOr[String] = js.undefined
     /**
          * The description of the cache security group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * A list of Amazon EC2 security groups that are associated with this cache security group.
          */
@@ -375,7 +375,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The AWS account ID of the cache security group owner.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -383,11 +383,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache security group.
          */
-    var CacheSecurityGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSecurityGroupName: js.UndefOr[String] = js.undefined
     /**
          * The membership status in the cache security group. The status changes when a cache security group is modified, or when the cache security groups assigned to a cluster are modified.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -399,7 +399,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -407,11 +407,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The description of the cache subnet group.
          */
-    var CacheSubnetGroupDescription: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSubnetGroupDescription: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache subnet group.
          */
-    var CacheSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * A list of subnets associated with the cache subnet group.
          */
@@ -419,7 +419,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The Amazon Virtual Private Cloud identifier (VPC ID) of the cache subnet group.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -431,7 +431,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -463,15 +463,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of an existing snapshot from which to make a copy.
          */
-    var SourceSnapshotName: java.lang.String
+    var SourceSnapshotName: String
     /**
          * The Amazon S3 bucket to which the snapshot is exported. This parameter is used only when exporting a snapshot for external access. When using this parameter to export a snapshot, be sure Amazon ElastiCache has the needed permissions to this S3 bucket. For more information, see Step 2: Grant ElastiCache Access to Your Amazon S3 Bucket in the Amazon ElastiCache User Guide. For more information, see Exporting a Snapshot in the Amazon ElastiCache User Guide.
          */
-    var TargetBucket: js.UndefOr[java.lang.String] = js.undefined
+    var TargetBucket: js.UndefOr[String] = js.undefined
     /**
          * A name for the snapshot copy. ElastiCache does not permit overwriting a snapshot, therefore this name must be unique within its context - ElastiCache or an Amazon S3 bucket if exporting.
          */
-    var TargetSnapshotName: java.lang.String
+    var TargetSnapshotName: String
   }
   
   
@@ -488,7 +488,7 @@ object ElastiCacheNs extends js.Object {
     /**
          *  Reserved parameter. The password used to access a password protected server. Password constraints:   Must be only printable ASCII characters.   Must be at least 16 characters and no more than 128 characters in length.   Cannot contain any of the following characters: '/', '"', or '@'.    For more information, see AUTH password at http://redis.io/commands/AUTH.
          */
-    var AuthToken: js.UndefOr[java.lang.String] = js.undefined
+    var AuthToken: js.UndefOr[String] = js.undefined
     /**
          * This parameter is currently disabled.
          */
@@ -496,15 +496,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The node group (shard) identifier. This parameter is stored as a lowercase string.  Constraints:    A name must contain from 1 to 20 alphanumeric characters or hyphens.   The first character must be a letter.   A name cannot end with a hyphen or contain two consecutive hyphens.  
          */
-    var CacheClusterId: java.lang.String
+    var CacheClusterId: String
     /**
          * The compute and memory capacity of the nodes in the node group (shard). The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge    Previous generation: (not recommended)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge      Compute optimized:   Previous generation: (not recommended)  C1 node types: cache.c1.xlarge      Memory optimized:   Current generation:   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge   R4 node types; cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge       Notes:    All T2 instances are created in an Amazon Virtual Private Cloud (Amazon VPC).   Redis (cluster mode disabled): Redis backup/restore is not supported on T1 and T2 instances.    Redis (cluster mode enabled): Backup/restore is not supported on T1 instances.   Redis Append-only files (AOF) functionality is not supported for T1 or T2 instances.   For a complete listing of node types and specifications, see:    Amazon ElastiCache Product Features and Details     Cache Node Type-Specific Parameters for Memcached     Cache Node Type-Specific Parameters for Redis   
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The name of the parameter group to associate with this cluster. If this argument is omitted, the default parameter group for the specified engine is used. You cannot use any parameter group which has cluster-enabled='yes' when creating a cluster.
          */
-    var CacheParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * A list of security group names to associate with this cluster. Use this parameter only when you are creating a cluster outside of an Amazon Virtual Private Cloud (Amazon VPC).
          */
@@ -512,19 +512,19 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the subnet group to be used for the cluster. Use this parameter only when you are creating a cluster in an Amazon Virtual Private Cloud (Amazon VPC).  If you're going to launch your cluster in an Amazon VPC, you need to create a subnet group before you start creating a cluster. For more information, see Subnets and Subnet Groups. 
          */
-    var CacheSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache engine to be used for this cluster. Valid values for this parameter are: memcached | redis 
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The version number of the cache engine to be used for this cluster. To view the supported cache engine versions, use the DescribeCacheEngineVersions operation.  Important: You can upgrade to a newer engine version (see Selecting a Cache Engine and Version), but you cannot downgrade to an earlier engine version. If you want to use an earlier engine version, you must delete the existing cluster or replication group and create it anew with the earlier engine version. 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic to which notifications are sent.  The Amazon SNS topic owner must be the same as the cluster owner. 
          */
-    var NotificationTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var NotificationTopicArn: js.UndefOr[String] = js.undefined
     /**
          * The initial number of cache nodes that the cluster has. For clusters running Redis, this value must be 1. For clusters running Memcached, this value must be between 1 and 20. If you need more than 20 nodes for your Memcached cluster, please fill out the ElastiCache Limit Increase Request form at http://aws.amazon.com/contact-us/elasticache-node-limit-request/.
          */
@@ -536,7 +536,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The EC2 Availability Zone in which the cluster is created. All nodes belonging to this Memcached cluster are placed in the preferred Availability Zone. If you want to create your nodes across multiple Availability Zones, use PreferredAvailabilityZones. Default: System chosen Availability Zone.
          */
-    var PreferredAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * A list of the Availability Zones in which cache nodes are created. The order of the zones in the list is not important. This option is only supported on Memcached.  If you are creating your cluster in an Amazon VPC (recommended) you can only locate nodes in Availability Zones that are associated with the subnets in the selected subnet group. The number of Availability Zones listed must equal the value of NumCacheNodes.  If you want all the nodes in the same Availability Zone, use PreferredAvailabilityZone instead, or repeat the Availability Zone multiple times in the list. Default: System chosen Availability Zones.
          */
@@ -544,11 +544,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are: Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are:    sun     mon     tue     wed     thu     fri     sat    Example: sun:23:00-mon:01:30 
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * The ID of the replication group to which this cluster should belong. If this parameter is specified, the cluster is added to the specified replication group as a read replica; otherwise, the cluster is a standalone primary that is not part of any replication group. If the specified replication group is Multi-AZ enabled and the Availability Zone is not specified, the cluster is created in Availability Zones that provide the best spread of read replicas across Availability Zones.  This parameter is only valid if the Engine parameter is redis. 
          */
-    var ReplicationGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupId: js.UndefOr[String] = js.undefined
     /**
          * One or more VPC security groups associated with the cluster. Use this parameter only when you are creating a cluster in an Amazon Virtual Private Cloud (Amazon VPC).
          */
@@ -560,7 +560,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of a Redis snapshot from which to restore data into the new node group (shard). The snapshot status changes to restoring while the new node group (shard) is being created.  This parameter is only valid if the Engine parameter is redis. 
          */
-    var SnapshotName: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotName: js.UndefOr[String] = js.undefined
     /**
          * The number of days for which ElastiCache retains automatic snapshots before deleting them. For example, if you set SnapshotRetentionLimit to 5, a snapshot taken today is retained for 5 days before being deleted.  This parameter is only valid if the Engine parameter is redis.  Default: 0 (i.e., automatic backups are disabled for this cache cluster).
          */
@@ -568,7 +568,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your node group (shard). Example: 05:00-09:00  If you do not specify this parameter, ElastiCache automatically chooses an appropriate time range.  This parameter is only valid if the Engine parameter is redis. 
          */
-    var SnapshotWindow: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotWindow: js.UndefOr[String] = js.undefined
     /**
          * A list of cost allocation tags to be added to this resource.
          */
@@ -585,15 +585,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache parameter group family that the cache parameter group can be used with. Valid values are: memcached1.4 | redis2.6 | redis2.8 | redis3.2 | redis4.0 
          */
-    var CacheParameterGroupFamily: java.lang.String
+    var CacheParameterGroupFamily: String
     /**
          * A user-specified name for the cache parameter group.
          */
-    var CacheParameterGroupName: java.lang.String
+    var CacheParameterGroupName: String
     /**
          * A user-specified description for the cache parameter group.
          */
-    var Description: java.lang.String
+    var Description: String
   }
   
   
@@ -606,11 +606,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * A name for the cache security group. This value is stored as a lowercase string. Constraints: Must contain no more than 255 alphanumeric characters. Cannot be the word "Default". Example: mysecuritygroup 
          */
-    var CacheSecurityGroupName: java.lang.String
+    var CacheSecurityGroupName: String
     /**
          * A description for the cache security group.
          */
-    var Description: java.lang.String
+    var Description: String
   }
   
   
@@ -623,11 +623,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * A description for the cache subnet group.
          */
-    var CacheSubnetGroupDescription: java.lang.String
+    var CacheSubnetGroupDescription: String
     /**
          * A name for the cache subnet group. This value is stored as a lowercase string. Constraints: Must contain no more than 255 alphanumeric characters or hyphens. Example: mysubnetgroup 
          */
-    var CacheSubnetGroupName: java.lang.String
+    var CacheSubnetGroupName: String
     /**
          * A list of VPC subnet IDs for the cache subnet group.
          */
@@ -648,7 +648,7 @@ object ElastiCacheNs extends js.Object {
     /**
          *  Reserved parameter. The password used to access a password protected server.  AuthToken can be specified only on replication groups where TransitEncryptionEnabled is true.  For HIPAA compliance, you must specify TransitEncryptionEnabled as true, an AuthToken, and a CacheSubnetGroup.  Password constraints:   Must be only printable ASCII characters.   Must be at least 16 characters and no more than 128 characters in length.   Cannot contain any of the following characters: '/', '"', or '@'.    For more information, see AUTH password at http://redis.io/commands/AUTH.
          */
-    var AuthToken: js.UndefOr[java.lang.String] = js.undefined
+    var AuthToken: js.UndefOr[String] = js.undefined
     /**
          * This parameter is currently disabled.
          */
@@ -660,11 +660,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The compute and memory capacity of the nodes in the node group (shard). The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge    Previous generation: (not recommended)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge      Compute optimized:   Previous generation: (not recommended)  C1 node types: cache.c1.xlarge      Memory optimized:   Current generation:   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge   R4 node types; cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge       Notes:    All T2 instances are created in an Amazon Virtual Private Cloud (Amazon VPC).   Redis (cluster mode disabled): Redis backup/restore is not supported on T1 and T2 instances.    Redis (cluster mode enabled): Backup/restore is not supported on T1 instances.   Redis Append-only files (AOF) functionality is not supported for T1 or T2 instances.   For a complete listing of node types and specifications, see:    Amazon ElastiCache Product Features and Details     Cache Node Type-Specific Parameters for Memcached     Cache Node Type-Specific Parameters for Redis   
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The name of the parameter group to associate with this replication group. If this argument is omitted, the default cache parameter group for the specified engine is used. If you are running Redis version 3.2.4 or later, only one node group (shard), and want to use a default parameter group, we recommend that you specify the parameter group by name.    To create a Redis (cluster mode disabled) replication group, use CacheParameterGroupName=default.redis3.2.   To create a Redis (cluster mode enabled) replication group, use CacheParameterGroupName=default.redis3.2.cluster.on.  
          */
-    var CacheParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * A list of cache security group names to associate with this replication group.
          */
@@ -672,15 +672,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache subnet group to be used for the replication group.  If you're going to launch your cluster in an Amazon VPC, you need to create a subnet group before you start creating a cluster. For more information, see Subnets and Subnet Groups. 
          */
-    var CacheSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache engine to be used for the clusters in this replication group.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The version number of the cache engine to be used for the clusters in this replication group. To view the supported cache engine versions, use the DescribeCacheEngineVersions operation.  Important: You can upgrade to a newer engine version (see Selecting a Cache Engine and Version) in the ElastiCache User Guide, but you cannot downgrade to an earlier engine version. If you want to use an earlier engine version, you must delete the existing cluster or replication group and create it anew with the earlier engine version. 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * A list of node group (shard) configuration options. Each node group (shard) configuration has the following members: PrimaryAvailabilityZone, ReplicaAvailabilityZones, ReplicaCount, and Slots. If you're creating a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group, you can use this parameter to individually configure each node group (shard), or you can omit this parameter. However, when seeding a Redis (cluster mode enabled) cluster from a S3 rdb file, you must configure each node group (shard) using this parameter because you must specify the slots for each node group.
          */
@@ -688,7 +688,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic to which notifications are sent.  The Amazon SNS topic owner must be the same as the cluster owner. 
          */
-    var NotificationTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var NotificationTopicArn: js.UndefOr[String] = js.undefined
     /**
          * The number of clusters this replication group initially has. This parameter is not used if there is more than one node group (shard). You should use ReplicasPerNodeGroup instead. If AutomaticFailoverEnabled is true, the value of this parameter must be at least 2. If AutomaticFailoverEnabled is false you can omit this parameter (it will default to 1), or you can explicitly set it to a value between 2 and 6. The maximum permitted value for NumCacheClusters is 6 (1 primary plus 5 replicas).
          */
@@ -708,11 +708,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are: Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are:    sun     mon     tue     wed     thu     fri     sat    Example: sun:23:00-mon:01:30 
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the cluster that serves as the primary for this replication group. This cluster must already exist and have a status of available. This parameter is not required if NumCacheClusters, NumNodeGroups, or ReplicasPerNodeGroup is specified.
          */
-    var PrimaryClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var PrimaryClusterId: js.UndefOr[String] = js.undefined
     /**
          * An optional parameter that specifies the number of replica nodes in each node group (shard). Valid values are 0 to 5.
          */
@@ -720,11 +720,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * A user-created description for the replication group.
          */
-    var ReplicationGroupDescription: java.lang.String
+    var ReplicationGroupDescription: String
     /**
          * The replication group identifier. This parameter is stored as a lowercase string. Constraints:   A name must contain from 1 to 20 alphanumeric characters or hyphens.   The first character must be a letter.   A name cannot end with a hyphen or contain two consecutive hyphens.  
          */
-    var ReplicationGroupId: java.lang.String
+    var ReplicationGroupId: String
     /**
          * One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud (Amazon VPC).
          */
@@ -736,7 +736,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of a snapshot from which to restore data into the new replication group. The snapshot status changes to restoring while the new replication group is being created.
          */
-    var SnapshotName: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotName: js.UndefOr[String] = js.undefined
     /**
          * The number of days for which ElastiCache retains automatic snapshots before deleting them. For example, if you set SnapshotRetentionLimit to 5, a snapshot that was taken today is retained for 5 days before being deleted. Default: 0 (i.e., automatic backups are disabled for this cluster).
          */
@@ -744,7 +744,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your node group (shard). Example: 05:00-09:00  If you do not specify this parameter, ElastiCache automatically chooses an appropriate time range.
          */
-    var SnapshotWindow: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotWindow: js.UndefOr[String] = js.undefined
     /**
          * A list of cost allocation tags to be added to this resource. A tag is a key-value pair.
          */
@@ -765,15 +765,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The identifier of an existing cluster. The snapshot is created from this cluster.
          */
-    var CacheClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheClusterId: js.UndefOr[String] = js.undefined
     /**
          * The identifier of an existing replication group. The snapshot is created from this replication group.
          */
-    var ReplicationGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupId: js.UndefOr[String] = js.undefined
     /**
          * A name for the snapshot being created.
          */
-    var SnapshotName: java.lang.String
+    var SnapshotName: String
   }
   
   
@@ -786,7 +786,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * If True, the number of replica nodes is decreased immediately. If False, the number of replica nodes is decreased during the next maintenance window.
          */
-    var ApplyImmediately: scala.Boolean
+    var ApplyImmediately: Boolean
     /**
          * The number of read replica nodes you want at the completion of this operation. For Redis (cluster mode disabled) replication groups, this is the number of replica nodes in the replication group. For Redis (cluster mode enabled) replication groups, this is the number of replica nodes in each of the replication group's node groups. The minimum number of replicas in a shard or replication group is:   Redis (cluster mode disabled)   If Multi-AZ with Automatic Failover is enabled: 1   If Multi-AZ with Automatic Failover is not enabled: 0     Redis (cluster mode enabled): 0 (though you will not be able to failover to a replica if your primary node fails)  
          */
@@ -802,7 +802,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The id of the replication group from which you want to remove replica nodes.
          */
-    var ReplicationGroupId: java.lang.String
+    var ReplicationGroupId: String
   }
   
   
@@ -815,11 +815,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cluster identifier for the cluster to be deleted. This parameter is not case sensitive.
          */
-    var CacheClusterId: java.lang.String
+    var CacheClusterId: String
     /**
          * The user-supplied name of a final cluster snapshot. This is the unique name that identifies the snapshot. ElastiCache creates the snapshot, and then deletes the cluster immediately afterward.
          */
-    var FinalSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var FinalSnapshotIdentifier: js.UndefOr[String] = js.undefined
   }
   
   
@@ -832,7 +832,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache parameter group to delete.  The specified cache security group must not be associated with any clusters. 
          */
-    var CacheParameterGroupName: java.lang.String
+    var CacheParameterGroupName: String
   }
   
   
@@ -840,7 +840,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache security group to delete.  You cannot delete the default security group. 
          */
-    var CacheSecurityGroupName: java.lang.String
+    var CacheSecurityGroupName: String
   }
   
   
@@ -848,7 +848,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache subnet group to delete. Constraints: Must contain no more than 255 alphanumeric characters or hyphens.
          */
-    var CacheSubnetGroupName: java.lang.String
+    var CacheSubnetGroupName: String
   }
   
   
@@ -856,11 +856,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of a final node group (shard) snapshot. ElastiCache creates the snapshot from the primary node in the cluster, rather than one of the replicas; this is to ensure that it captures the freshest data. After the final snapshot is taken, the replication group is immediately deleted.
          */
-    var FinalSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var FinalSnapshotIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The identifier for the cluster to be deleted. This parameter is not case sensitive.
          */
-    var ReplicationGroupId: java.lang.String
+    var ReplicationGroupId: String
     /**
          * If set to true, all of the read replicas are deleted, but the primary node is retained.
          */
@@ -877,7 +877,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the snapshot to be deleted.
          */
-    var SnapshotName: java.lang.String
+    var SnapshotName: String
   }
   
   
@@ -890,11 +890,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The user-supplied cluster identifier. If this parameter is specified, only information about that specific cluster is returned. This parameter isn't case sensitive.
          */
-    var CacheClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheClusterId: js.UndefOr[String] = js.undefined
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -914,23 +914,23 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of a specific cache parameter group family to return details for. Valid values are: memcached1.4 | redis2.6 | redis2.8 | redis3.2 | redis4.0  Constraints:   Must be 1 to 255 alphanumeric characters   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens  
          */
-    var CacheParameterGroupFamily: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupFamily: js.UndefOr[String] = js.undefined
     /**
          * If true, specifies that only the default version of the specified engine or engine and major version combination is to be returned.
          */
-    var DefaultOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var DefaultOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * The cache engine to return. Valid values: memcached | redis 
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The cache engine version to return. Example: 1.4.14 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -942,11 +942,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of a specific cache parameter group to return details for.
          */
-    var CacheParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -958,11 +958,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of a specific cache parameter group to return details for.
          */
-    var CacheParameterGroupName: java.lang.String
+    var CacheParameterGroupName: String
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -970,7 +970,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The parameter types to return. Valid values: user | system | engine-default 
          */
-    var Source: js.UndefOr[java.lang.String] = js.undefined
+    var Source: js.UndefOr[String] = js.undefined
   }
   
   
@@ -978,11 +978,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache security group to return details for.
          */
-    var CacheSecurityGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSecurityGroupName: js.UndefOr[String] = js.undefined
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -994,11 +994,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache subnet group to return details for.
          */
-    var CacheSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -1010,11 +1010,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache parameter group family. Valid values are: memcached1.4 | redis2.6 | redis2.8 | redis3.2 | redis4.0 
          */
-    var CacheParameterGroupFamily: java.lang.String
+    var CacheParameterGroupFamily: String
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -1039,7 +1039,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -1047,7 +1047,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The identifier of the event source for which events are returned. If not specified, all sources are included in the response.
          */
-    var SourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SourceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The event source to retrieve events for. If no value is specified, all events are returned.
          */
@@ -1063,7 +1063,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -1071,7 +1071,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The identifier for the replication group to be described. This parameter is not case sensitive. If you do not specify this parameter, information about all replication groups is returned.
          */
-    var ReplicationGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1079,15 +1079,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cache node type filter value. Use this parameter to show only those reservations matching the specified cache node type. The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge    Previous generation: (not recommended)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge      Compute optimized:   Previous generation: (not recommended)  C1 node types: cache.c1.xlarge      Memory optimized:   Current generation:   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge   R4 node types; cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge       Notes:    All T2 instances are created in an Amazon Virtual Private Cloud (Amazon VPC).   Redis (cluster mode disabled): Redis backup/restore is not supported on T1 and T2 instances.    Redis (cluster mode enabled): Backup/restore is not supported on T1 instances.   Redis Append-only files (AOF) functionality is not supported for T1 or T2 instances.   For a complete listing of node types and specifications, see:    Amazon ElastiCache Product Features and Details     Cache Node Type-Specific Parameters for Memcached     Cache Node Type-Specific Parameters for Redis   
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The duration filter value, specified in years or seconds. Use this parameter to show only reservations for this duration. Valid Values: 1 | 3 | 31536000 | 94608000 
          */
-    var Duration: js.UndefOr[java.lang.String] = js.undefined
+    var Duration: js.UndefOr[String] = js.undefined
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -1095,19 +1095,19 @@ object ElastiCacheNs extends js.Object {
     /**
          * The offering type filter value. Use this parameter to show only the available offerings matching the specified offering type. Valid values: "Light Utilization"|"Medium Utilization"|"Heavy Utilization" 
          */
-    var OfferingType: js.UndefOr[java.lang.String] = js.undefined
+    var OfferingType: js.UndefOr[String] = js.undefined
     /**
          * The product description filter value. Use this parameter to show only those reservations matching the specified product description.
          */
-    var ProductDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ProductDescription: js.UndefOr[String] = js.undefined
     /**
          * The reserved cache node identifier filter value. Use this parameter to show only the reservation that matches the specified reservation ID.
          */
-    var ReservedCacheNodeId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedCacheNodeId: js.UndefOr[String] = js.undefined
     /**
          * The offering identifier filter value. Use this parameter to show only purchased reservations matching the specified offering identifier.
          */
-    var ReservedCacheNodesOfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedCacheNodesOfferingId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1115,15 +1115,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cache node type filter value. Use this parameter to show only the available offerings matching the specified cache node type. The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge    Previous generation: (not recommended)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge      Compute optimized:   Previous generation: (not recommended)  C1 node types: cache.c1.xlarge      Memory optimized:   Current generation:   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge   R4 node types; cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge       Notes:    All T2 instances are created in an Amazon Virtual Private Cloud (Amazon VPC).   Redis (cluster mode disabled): Redis backup/restore is not supported on T1 and T2 instances.    Redis (cluster mode enabled): Backup/restore is not supported on T1 instances.   Redis Append-only files (AOF) functionality is not supported for T1 or T2 instances.   For a complete listing of node types and specifications, see:    Amazon ElastiCache Product Features and Details     Cache Node Type-Specific Parameters for Memcached     Cache Node Type-Specific Parameters for Redis   
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * Duration filter value, specified in years or seconds. Use this parameter to show only reservations for a given duration. Valid Values: 1 | 3 | 31536000 | 94608000 
          */
-    var Duration: js.UndefOr[java.lang.String] = js.undefined
+    var Duration: js.UndefOr[String] = js.undefined
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: minimum 20; maximum 100.
          */
@@ -1131,15 +1131,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The offering type filter value. Use this parameter to show only the available offerings matching the specified offering type. Valid Values: "Light Utilization"|"Medium Utilization"|"Heavy Utilization" 
          */
-    var OfferingType: js.UndefOr[java.lang.String] = js.undefined
+    var OfferingType: js.UndefOr[String] = js.undefined
     /**
          * The product description filter value. Use this parameter to show only the available offerings matching the specified product description.
          */
-    var ProductDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ProductDescription: js.UndefOr[String] = js.undefined
     /**
          * The offering identifier filter value. Use this parameter to show only the available offering that matches the specified reservation identifier. Example: 438012d3-4052-4cc7-b2e3-8d3372e0e706 
          */
-    var ReservedCacheNodesOfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedCacheNodesOfferingId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1147,7 +1147,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * A list of snapshots. Each item in the list contains detailed information about one snapshot.
          */
@@ -1159,11 +1159,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * A user-supplied cluster identifier. If this parameter is specified, only snapshots associated with that specific cluster are described.
          */
-    var CacheClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheClusterId: js.UndefOr[String] = js.undefined
     /**
          * An optional marker returned from a prior request. Use this marker for pagination of results from this operation. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a marker is included in the response so that the remaining results can be retrieved. Default: 50 Constraints: minimum 20; maximum 50.
          */
@@ -1171,7 +1171,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * A user-supplied replication group identifier. If this parameter is specified, only snapshots associated with that specific replication group are described.
          */
-    var ReplicationGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupId: js.UndefOr[String] = js.undefined
     /**
          * A Boolean value which if true, the node group (shard) configuration is included in the snapshot description.
          */
@@ -1179,11 +1179,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * A user-supplied name of the snapshot. If this parameter is specified, only this snapshot are described.
          */
-    var SnapshotName: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotName: js.UndefOr[String] = js.undefined
     /**
          * If set to system, the output shows snapshots that were automatically created by ElastiCache. If set to user the output shows snapshots that were manually created. If omitted, the output shows both automatically and manually created snapshots.
          */
-    var SnapshotSource: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotSource: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1191,15 +1191,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the Amazon EC2 security group.
          */
-    var EC2SecurityGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var EC2SecurityGroupName: js.UndefOr[String] = js.undefined
     /**
          * The AWS account ID of the Amazon EC2 security group owner.
          */
-    var EC2SecurityGroupOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The status of the Amazon EC2 security group.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1207,7 +1207,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The DNS hostname of the cache node.
          */
-    var Address: js.UndefOr[java.lang.String] = js.undefined
+    var Address: js.UndefOr[String] = js.undefined
     /**
          * The port number that the cache engine is listening on.
          */
@@ -1223,11 +1223,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * Specifies the name of the cache parameter group family to which the engine default parameters apply. Valid values are: memcached1.4 | redis2.6 | redis2.8 | redis3.2 | redis4.0 
          */
-    var CacheParameterGroupFamily: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupFamily: js.UndefOr[String] = js.undefined
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * Contains a list of engine default parameters.
          */
@@ -1243,11 +1243,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The text of the event.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * The identifier for the source of the event. For example, if the event occurred at the cluster level, the identifier would be the name of the cluster.
          */
-    var SourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SourceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Specifies the origin of this event - a cluster, a parameter group, a security group, etc.
          */
@@ -1263,7 +1263,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1271,7 +1271,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * If True, the number of replica nodes is increased immediately. If False, the number of replica nodes is increased during the next maintenance window.
          */
-    var ApplyImmediately: scala.Boolean
+    var ApplyImmediately: Boolean
     /**
          * The number of read replica nodes you want at the completion of this operation. For Redis (cluster mode disabled) replication groups, this is the number of replica nodes in the replication group. For Redis (cluster mode enabled) replication groups, this is the number of replica nodes in each of the replication group's node groups.
          */
@@ -1283,7 +1283,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The id of the replication group to which you want to add replica nodes.
          */
-    var ReplicationGroupId: java.lang.String
+    var ReplicationGroupId: String
   }
   
   
@@ -1296,11 +1296,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cluster you want to scale up to a larger node instanced type. ElastiCache uses the cluster id to identify the current node type of this cluster and from that to create a list of node types you can scale up to.  You must provide a value for either the CacheClusterId or the ReplicationGroupId. 
          */
-    var CacheClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheClusterId: js.UndefOr[String] = js.undefined
     /**
          * The name of the replication group want to scale up to a larger node type. ElastiCache uses the replication group id to identify the current node type being used by this replication group, and from that to create a list of node types you can scale up to.  You must provide a value for either the CacheClusterId or the ReplicationGroupId. 
          */
-    var ReplicationGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1308,7 +1308,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource for which you want the list of tags, for example arn:aws:elasticache:us-west-2:0123456789:cluster:myCluster or arn:aws:elasticache:us-west-2:0123456789:snapshot:mySnapshot. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
          */
-    var ResourceName: java.lang.String
+    var ResourceName: String
   }
   
   
@@ -1320,7 +1320,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * If true, this parameter causes the modifications in this request and any pending modifications to be applied, asynchronously and as soon as possible, regardless of the PreferredMaintenanceWindow setting for the cluster. If false, changes to the cluster are applied on the next maintenance reboot, or the next failure reboot, whichever occurs first.  If you perform a ModifyCacheCluster before a pending modification is applied, the pending modification is replaced by the newer modification.  Valid values: true | false  Default: false 
          */
-    var ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined
+    var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
     /**
          * This parameter is currently disabled.
          */
@@ -1328,7 +1328,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cluster identifier. This value is stored as a lowercase string.
          */
-    var CacheClusterId: java.lang.String
+    var CacheClusterId: String
     /**
          * A list of cache node IDs to be removed. A node ID is a numeric identifier (0001, 0002, etc.). This parameter is only valid when NumCacheNodes is less than the existing number of cache nodes. The number of cache node IDs supplied in this parameter must match the difference between the existing number of cache nodes in the cluster or pending cache nodes, whichever is greater, and the value of NumCacheNodes in the request. For example: If you have 3 active cache nodes, 7 pending cache nodes, and the number of cache nodes in this ModifyCacheCluster call is 5, you must list 2 (7 - 5) cache node IDs to remove.
          */
@@ -1336,11 +1336,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * A valid cache node type that you want to scale this cluster up to.
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache parameter group to apply to this cluster. This change is asynchronously applied as soon as possible for parameters when the ApplyImmediately parameter is specified as true for this request.
          */
-    var CacheParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * A list of cache security group names to authorize on this cluster. This change is asynchronously applied as soon as possible. You can use this parameter only with clusters that are created outside of an Amazon Virtual Private Cloud (Amazon VPC). Constraints: Must contain no more than 255 alphanumeric characters. Must not be "Default".
          */
@@ -1348,7 +1348,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The upgraded version of the cache engine to be run on the cache nodes.  Important: You can upgrade to a newer engine version (see Selecting a Cache Engine and Version), but you cannot downgrade to an earlier engine version. If you want to use an earlier engine version, you must delete the existing cluster and create it anew with the earlier engine version. 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The list of Availability Zones where the new Memcached cache nodes are created. This parameter is only valid when NumCacheNodes in the request is greater than the sum of the number of active cache nodes and the number of cache nodes pending creation (which may be zero). The number of Availability Zones supplied in this list must match the cache nodes being added in this request. This option is only supported on Memcached clusters. Scenarios:    Scenario 1: You have 3 active nodes and wish to add 2 nodes. Specify NumCacheNodes=5 (3 + 2) and optionally specify two Availability Zones for the two new nodes.    Scenario 2: You have 3 active nodes and 2 nodes pending creation (from the scenario 1 call) and want to add 1 more node. Specify NumCacheNodes=6 ((3 + 2) + 1) and optionally specify an Availability Zone for the new node.    Scenario 3: You want to cancel all pending operations. Specify NumCacheNodes=3 to cancel all pending operations.   The Availability Zone placement of nodes pending creation cannot be modified. If you wish to cancel any nodes pending creation, add 0 nodes by setting NumCacheNodes to the number of current nodes. If cross-az is specified, existing Memcached nodes remain in their current Availability Zone. Only newly created nodes can be located in different Availability Zones. For guidance on how to move existing Memcached nodes to different Availability Zones, see the Availability Zone Considerations section of Cache Node Considerations for Memcached.  Impact of new add/remove requests upon pending requests    Scenario-1   Pending Action: Delete   New Request: Delete   Result: The new delete, pending or immediate, replaces the pending delete.     Scenario-2   Pending Action: Delete   New Request: Create   Result: The new create, pending or immediate, replaces the pending delete.     Scenario-3   Pending Action: Create   New Request: Delete   Result: The new delete, pending or immediate, replaces the pending create.     Scenario-4   Pending Action: Create   New Request: Create   Result: The new create is added to the pending create.   Important: If the new create request is Apply Immediately - Yes, all creates are performed immediately. If the new create request is Apply Immediately - No, all creates are pending.     
          */
@@ -1356,11 +1356,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the Amazon SNS topic to which notifications are sent.  The Amazon SNS topic owner must be same as the cluster owner. 
          */
-    var NotificationTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var NotificationTopicArn: js.UndefOr[String] = js.undefined
     /**
          * The status of the Amazon SNS notification topic. Notifications are sent only if the status is active. Valid values: active | inactive 
          */
-    var NotificationTopicStatus: js.UndefOr[java.lang.String] = js.undefined
+    var NotificationTopicStatus: js.UndefOr[String] = js.undefined
     /**
          * The number of cache nodes that the cluster should have. If the value for NumCacheNodes is greater than the sum of the number of current cache nodes and the number of cache nodes pending creation (which may be zero), more nodes are added. If the value is less than the number of existing cache nodes, nodes are removed. If the value is equal to the number of current cache nodes, any pending add or remove requests are canceled. If you are removing cache nodes, you must use the CacheNodeIdsToRemove parameter to provide the IDs of the specific cache nodes to remove. For clusters running Redis, this value must be 1. For clusters running Memcached, this value must be between 1 and 20.  Adding or removing Memcached cache nodes can be applied immediately or as a pending operation (see ApplyImmediately). A pending operation to modify the number of cache nodes in a cluster during its maintenance window, whether by adding or removing nodes in accordance with the scale out architecture, is not queued. The customer's latest request to add or remove nodes to the cluster overrides any previous pending operations to modify the number of cache nodes in the cluster. For example, a request to remove 2 nodes would override a previous pending operation to remove 3 nodes. Similarly, a request to add 2 nodes would override a previous pending operation to remove 3 nodes and vice versa. As Memcached cache nodes may now be provisioned in different Availability Zones with flexible cache node placement, a request to add nodes does not automatically override a previous pending operation to add nodes. The customer can modify the previous pending operation to add more nodes or explicitly cancel the pending request and retry the new request. To cancel pending operations to modify the number of cache nodes in a cluster, use the ModifyCacheCluster request and set NumCacheNodes equal to the number of cache nodes currently in the cluster. 
          */
@@ -1368,7 +1368,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are:    sun     mon     tue     wed     thu     fri     sat    Example: sun:23:00-mon:01:30 
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * Specifies the VPC Security Groups associated with the cluster. This parameter can be used only with clusters that are created in an Amazon Virtual Private Cloud (Amazon VPC).
          */
@@ -1380,7 +1380,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your cluster. 
          */
-    var SnapshotWindow: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotWindow: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1393,7 +1393,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache parameter group to modify.
          */
-    var CacheParameterGroupName: java.lang.String
+    var CacheParameterGroupName: String
     /**
          * An array of parameter names and values for the parameter update. You must supply at least one parameter name and value; subsequent arguments are optional. A maximum of 20 parameters may be modified per request.
          */
@@ -1405,11 +1405,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * A description of the cache subnet group.
          */
-    var CacheSubnetGroupDescription: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSubnetGroupDescription: js.UndefOr[String] = js.undefined
     /**
          * The name for the cache subnet group. This value is stored as a lowercase string. Constraints: Must contain no more than 255 alphanumeric characters or hyphens. Example: mysubnetgroup 
          */
-    var CacheSubnetGroupName: java.lang.String
+    var CacheSubnetGroupName: String
     /**
          * The EC2 subnet IDs for the cache subnet group.
          */
@@ -1426,7 +1426,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * If true, this parameter causes the modifications in this request and any pending modifications to be applied, asynchronously and as soon as possible, regardless of the PreferredMaintenanceWindow setting for the replication group. If false, changes to the nodes in the replication group are applied on the next maintenance reboot, or the next failure reboot, whichever occurs first. Valid values: true | false  Default: false 
          */
-    var ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined
+    var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
     /**
          * This parameter is currently disabled.
          */
@@ -1438,11 +1438,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * A valid cache node type that you want to scale this replication group to.
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache parameter group to apply to all of the clusters in this replication group. This change is asynchronously applied as soon as possible for parameters when the ApplyImmediately parameter is specified as true for this request.
          */
-    var CacheParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * A list of cache security group names to authorize for the clusters in this replication group. This change is asynchronously applied as soon as possible. This parameter can be used only with replication group containing clusters running outside of an Amazon Virtual Private Cloud (Amazon VPC). Constraints: Must contain no more than 255 alphanumeric characters. Must not be Default.
          */
@@ -1450,35 +1450,35 @@ object ElastiCacheNs extends js.Object {
     /**
          * The upgraded version of the cache engine to be run on the clusters in the replication group.  Important: You can upgrade to a newer engine version (see Selecting a Cache Engine and Version), but you cannot downgrade to an earlier engine version. If you want to use an earlier engine version, you must delete the existing replication group and create it anew with the earlier engine version. 
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * Deprecated. This parameter is not used.
          */
-    var NodeGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var NodeGroupId: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the Amazon SNS topic to which notifications are sent.  The Amazon SNS topic owner must be same as the replication group owner.  
          */
-    var NotificationTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var NotificationTopicArn: js.UndefOr[String] = js.undefined
     /**
          * The status of the Amazon SNS notification topic for the replication group. Notifications are sent only if the status is active. Valid values: active | inactive 
          */
-    var NotificationTopicStatus: js.UndefOr[java.lang.String] = js.undefined
+    var NotificationTopicStatus: js.UndefOr[String] = js.undefined
     /**
          * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are:    sun     mon     tue     wed     thu     fri     sat    Example: sun:23:00-mon:01:30 
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * For replication groups with a single primary, if this parameter is specified, ElastiCache promotes the specified cluster in the specified replication group to the primary role. The nodes of all other clusters in the replication group are read replicas.
          */
-    var PrimaryClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var PrimaryClusterId: js.UndefOr[String] = js.undefined
     /**
          * A description for the replication group. Maximum length is 255 characters.
          */
-    var ReplicationGroupDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupDescription: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the replication group to modify.
          */
-    var ReplicationGroupId: java.lang.String
+    var ReplicationGroupId: String
     /**
          * Specifies the VPC Security Groups associated with the clusters in the replication group. This parameter can be used only with replication group containing clusters running in an Amazon Virtual Private Cloud (Amazon VPC).
          */
@@ -1490,11 +1490,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of the node group (shard) specified by SnapshottingClusterId. Example: 05:00-09:00  If you do not specify this parameter, ElastiCache automatically chooses an appropriate time range.
          */
-    var SnapshotWindow: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotWindow: js.UndefOr[String] = js.undefined
     /**
          * The cluster ID that is used as the daily snapshot source for the replication group. This parameter cannot be set for Redis (cluster mode enabled) replication groups.
          */
-    var SnapshottingClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshottingClusterId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1507,7 +1507,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Indicates that the shard reconfiguration process begins immediately. At present, the only permitted value for this parameter is true. Value: true
          */
-    var ApplyImmediately: scala.Boolean
+    var ApplyImmediately: Boolean
     /**
          * The number of node groups (shards) that results from the modification of the shard configuration.
          */
@@ -1523,7 +1523,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the Redis (cluster mode enabled) cluster (replication group) on which the shards are to be configured.
          */
-    var ReplicationGroupId: java.lang.String
+    var ReplicationGroupId: String
     /**
          * Specifies the preferred availability zones for each node group in the cluster. If the value of NodeGroupCount is greater than the current number of node groups (shards), you can use this parameter to specify the preferred availability zones of the cluster's shards. If you omit this parameter ElastiCache selects availability zones for you. You can specify this parameter only if the value of NodeGroupCount is greater than the current number of node groups (shards).
          */
@@ -1540,7 +1540,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The identifier for the node group (shard). A Redis (cluster mode disabled) replication group contains only 1 node group; therefore, the node group ID is 0001. A Redis (cluster mode enabled) replication group contains 1 to 15 node groups numbered 0001 to 0015. 
          */
-    var NodeGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var NodeGroupId: js.UndefOr[String] = js.undefined
     /**
          * A list containing information about individual nodes within the node group (shard).
          */
@@ -1552,11 +1552,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The keyspace for this node group (shard).
          */
-    var Slots: js.UndefOr[java.lang.String] = js.undefined
+    var Slots: js.UndefOr[String] = js.undefined
     /**
          * The current state of this replication group - creating, available, etc.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1568,7 +1568,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The Availability Zone where the primary node of this node group (shard) is launched.
          */
-    var PrimaryAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var PrimaryAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * A list of Availability Zones to be used for the read replicas. The number of Availability Zones in this list must match the value of ReplicaCount or ReplicasPerNodeGroup if not specified.
          */
@@ -1580,7 +1580,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * A string that specifies the keyspace for a particular node group. Keyspaces range from 0 to 16,383. The string is in the format startkey-endkey. Example: "0-3999" 
          */
-    var Slots: js.UndefOr[java.lang.String] = js.undefined
+    var Slots: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1588,19 +1588,19 @@ object ElastiCacheNs extends js.Object {
     /**
          * The ID of the cluster to which the node belongs.
          */
-    var CacheClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheClusterId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the node within its cluster. A node ID is a numeric identifier (0001, 0002, etc.).
          */
-    var CacheNodeId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeId: js.UndefOr[String] = js.undefined
     /**
          * The role that is currently assigned to the node - primary or replica. This member is only applicable for Redis (cluster mode disabled) replication groups.
          */
-    var CurrentRole: js.UndefOr[java.lang.String] = js.undefined
+    var CurrentRole: js.UndefOr[String] = js.undefined
     /**
          * The name of the Availability Zone in which the node is located.
          */
-    var PreferredAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The information required for client programs to connect to a node for read operations. The read endpoint is only applicable on Redis (cluster mode disabled) clusters.
          */
@@ -1612,7 +1612,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * A unique identifier for the source cluster.
          */
-    var CacheClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheClusterId: js.UndefOr[String] = js.undefined
     /**
          * The date and time when the cache node was created in the source cluster.
          */
@@ -1620,11 +1620,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cache node identifier for the node in the source cluster.
          */
-    var CacheNodeId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeId: js.UndefOr[String] = js.undefined
     /**
          * The size of the cache on the source cache node.
          */
-    var CacheSize: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSize: js.UndefOr[String] = js.undefined
     /**
          * The configuration for the source node group (shard).
          */
@@ -1632,7 +1632,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * A unique identifier for the source node group (shard).
          */
-    var NodeGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var NodeGroupId: js.UndefOr[String] = js.undefined
     /**
          * The date and time when the source node's metadata and cache data set was obtained for the snapshot.
          */
@@ -1644,11 +1644,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) that identifies the topic.
          */
-    var TopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var TopicArn: js.UndefOr[String] = js.undefined
     /**
          * The current state of the topic.
          */
-    var TopicStatus: js.UndefOr[java.lang.String] = js.undefined
+    var TopicStatus: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1656,7 +1656,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The valid range of values for the parameter.
          */
-    var AllowedValues: js.UndefOr[java.lang.String] = js.undefined
+    var AllowedValues: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether a change to the parameter is applied immediately or requires a reboot for the change to be applied. You can force a reboot or wait until the next maintenance window's reboot. For more information, see Rebooting a Cluster.
          */
@@ -1664,31 +1664,31 @@ object ElastiCacheNs extends js.Object {
     /**
          * The valid data type for the parameter.
          */
-    var DataType: js.UndefOr[java.lang.String] = js.undefined
+    var DataType: js.UndefOr[String] = js.undefined
     /**
          * A description of the parameter.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether (true) or not (false) the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed.
          */
-    var IsModifiable: js.UndefOr[scala.Boolean] = js.undefined
+    var IsModifiable: js.UndefOr[Boolean] = js.undefined
     /**
          * The earliest cache engine version to which the parameter can apply.
          */
-    var MinimumEngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var MinimumEngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The name of the parameter.
          */
-    var ParameterName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterName: js.UndefOr[String] = js.undefined
     /**
          * The value of the parameter.
          */
-    var ParameterValue: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterValue: js.UndefOr[String] = js.undefined
     /**
          * The source of the parameter.
          */
-    var Source: js.UndefOr[java.lang.String] = js.undefined
+    var Source: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1696,11 +1696,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the parameter.
          */
-    var ParameterName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterName: js.UndefOr[String] = js.undefined
     /**
          * The value of the parameter.
          */
-    var ParameterValue: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterValue: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1712,11 +1712,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cache node type that this cluster or replication group is scaled to.
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The new cache engine version that the cluster runs.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The new number of cache nodes for the cluster. For clusters running Redis, this value must be 1. For clusters running Memcached, this value must be between 1 and 20.
          */
@@ -1732,11 +1732,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * A customer-specified identifier to track this reservation.  The Reserved Cache Node ID is an unique customer-specified identifier to track this reservation. If this parameter is not specified, ElastiCache automatically generates an identifier for the reservation.  Example: myreservationID
          */
-    var ReservedCacheNodeId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedCacheNodeId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the reserved cache node offering to purchase. Example: 438012d3-4052-4cc7-b2e3-8d3372e0e706 
          */
-    var ReservedCacheNodesOfferingId: java.lang.String
+    var ReservedCacheNodesOfferingId: String
   }
   
   
@@ -1749,7 +1749,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cluster identifier. This parameter is stored as a lowercase string.
          */
-    var CacheClusterId: java.lang.String
+    var CacheClusterId: String
     /**
          * A list of cache node IDs to reboot. A node ID is a numeric identifier (0001, 0002, etc.). To reboot an entire cluster, specify all of the cache node IDs.
          */
@@ -1770,7 +1770,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The frequency of the recurring charge.
          */
-    var RecurringChargeFrequency: js.UndefOr[java.lang.String] = js.undefined
+    var RecurringChargeFrequency: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1778,7 +1778,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the resource from which you want the tags removed, for example arn:aws:elasticache:us-west-2:0123456789:cluster:myCluster or arn:aws:elasticache:us-west-2:0123456789:snapshot:mySnapshot. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
          */
-    var ResourceName: java.lang.String
+    var ResourceName: String
     /**
          * A list of TagKeys identifying the tags you want removed from the named resource.
          */
@@ -1802,7 +1802,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the compute and memory capacity node type for each node in the replication group.
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * A flag indicating whether or not this replication group is cluster enabled; i.e., whether its data can be partitioned across multiple shards (API/CLI: node groups). Valid values: true | false 
          */
@@ -1814,7 +1814,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The user supplied description of the replication group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The names of all the cache clusters that are part of this replication group.
          */
@@ -1830,7 +1830,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The identifier for the replication group.
          */
-    var ReplicationGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupId: js.UndefOr[String] = js.undefined
     /**
          * The number of days for which ElastiCache retains automatic cluster snapshots before deleting them. For example, if you set SnapshotRetentionLimit to 5, a snapshot that was taken today is retained for 5 days before being deleted.   If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off. 
          */
@@ -1838,15 +1838,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your node group (shard). Example: 05:00-09:00  If you do not specify this parameter, ElastiCache automatically chooses an appropriate time range.  This parameter is only valid if the Engine parameter is redis. 
          */
-    var SnapshotWindow: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotWindow: js.UndefOr[String] = js.undefined
     /**
          * The cluster ID that is used as the daily snapshot source for the replication group.
          */
-    var SnapshottingClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshottingClusterId: js.UndefOr[String] = js.undefined
     /**
          * The current state of this replication group - creating, available, modifying, deleting, create-failed, snapshotting.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6 or 4.x. Default: false 
          */
@@ -1858,7 +1858,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * A list of replication groups. Each item in the list contains detailed information about one replication group.
          */
@@ -1874,7 +1874,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The primary cluster ID that is applied immediately (if --apply-immediately was specified), or during the next maintenance window.
          */
-    var PrimaryClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var PrimaryClusterId: js.UndefOr[String] = js.undefined
     /**
          * The status of an online resharding operation.
          */
@@ -1890,7 +1890,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cache node type for the reserved cache nodes. The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge    Previous generation: (not recommended)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge      Compute optimized:   Previous generation: (not recommended)  C1 node types: cache.c1.xlarge      Memory optimized:   Current generation:   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge   R4 node types; cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge       Notes:    All T2 instances are created in an Amazon Virtual Private Cloud (Amazon VPC).   Redis (cluster mode disabled): Redis backup/restore is not supported on T1 and T2 instances.    Redis (cluster mode enabled): Backup/restore is not supported on T1 instances.   Redis Append-only files (AOF) functionality is not supported for T1 or T2 instances.   For a complete listing of node types and specifications, see:    Amazon ElastiCache Product Features and Details     Cache Node Type-Specific Parameters for Memcached     Cache Node Type-Specific Parameters for Redis   
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The duration of the reservation in seconds.
          */
@@ -1902,11 +1902,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The offering type of this reserved cache node.
          */
-    var OfferingType: js.UndefOr[java.lang.String] = js.undefined
+    var OfferingType: js.UndefOr[String] = js.undefined
     /**
          * The description of the reserved cache node.
          */
-    var ProductDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ProductDescription: js.UndefOr[String] = js.undefined
     /**
          * The recurring price charged to run this reserved cache node.
          */
@@ -1914,15 +1914,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the reserved cache node. Example: arn:aws:elasticache:us-east-1:123456789012:reserved-instance:ri-2017-03-27-08-33-25-582 
          */
-    var ReservationARN: js.UndefOr[java.lang.String] = js.undefined
+    var ReservationARN: js.UndefOr[String] = js.undefined
     /**
          * The unique identifier for the reservation.
          */
-    var ReservedCacheNodeId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedCacheNodeId: js.UndefOr[String] = js.undefined
     /**
          * The offering identifier.
          */
-    var ReservedCacheNodesOfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedCacheNodesOfferingId: js.UndefOr[String] = js.undefined
     /**
          * The time the reservation started.
          */
@@ -1930,7 +1930,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The state of the reserved cache node.
          */
-    var State: js.UndefOr[java.lang.String] = js.undefined
+    var State: js.UndefOr[String] = js.undefined
     /**
          * The hourly price charged for this reserved cache node.
          */
@@ -1942,7 +1942,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * A list of reserved cache nodes. Each element in the list contains detailed information about one node.
          */
@@ -1954,7 +1954,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The cache node type for the reserved cache node. The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge    Previous generation: (not recommended)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge      Compute optimized:   Previous generation: (not recommended)  C1 node types: cache.c1.xlarge      Memory optimized:   Current generation:   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge   R4 node types; cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge       Notes:    All T2 instances are created in an Amazon Virtual Private Cloud (Amazon VPC).   Redis (cluster mode disabled): Redis backup/restore is not supported on T1 and T2 instances.    Redis (cluster mode enabled): Backup/restore is not supported on T1 instances.   Redis Append-only files (AOF) functionality is not supported for T1 or T2 instances.   For a complete listing of node types and specifications, see:    Amazon ElastiCache Product Features and Details     Cache Node Type-Specific Parameters for Memcached     Cache Node Type-Specific Parameters for Redis   
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The duration of the offering. in seconds.
          */
@@ -1966,11 +1966,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The offering type.
          */
-    var OfferingType: js.UndefOr[java.lang.String] = js.undefined
+    var OfferingType: js.UndefOr[String] = js.undefined
     /**
          * The cache engine used by the offering.
          */
-    var ProductDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ProductDescription: js.UndefOr[String] = js.undefined
     /**
          * The recurring price charged to run this reserved cache node.
          */
@@ -1978,7 +1978,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * A unique identifier for the reserved cache node offering.
          */
-    var ReservedCacheNodesOfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedCacheNodesOfferingId: js.UndefOr[String] = js.undefined
     /**
          * The hourly price charged for this offering.
          */
@@ -1990,7 +1990,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * A list of reserved cache node offerings. Each element in the list contains detailed information about one offering.
          */
@@ -2002,7 +2002,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache parameter group to reset.
          */
-    var CacheParameterGroupName: java.lang.String
+    var CacheParameterGroupName: String
     /**
          * An array of parameter names to reset to their default values. If ResetAllParameters is true, do not use ParameterNameValues. If ResetAllParameters is false, you must specify the name of at least one parameter to reset.
          */
@@ -2010,7 +2010,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * If true, all parameters in the cache parameter group are reset to their default values. If false, only the parameters listed by ParameterNameValues are reset to their default values. Valid values: true | false 
          */
-    var ResetAllParameters: js.UndefOr[scala.Boolean] = js.undefined
+    var ResetAllParameters: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2038,15 +2038,15 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the cache security group to revoke ingress from.
          */
-    var CacheSecurityGroupName: java.lang.String
+    var CacheSecurityGroupName: String
     /**
          * The name of the Amazon EC2 security group to revoke access from.
          */
-    var EC2SecurityGroupName: java.lang.String
+    var EC2SecurityGroupName: String
     /**
          * The AWS account number of the Amazon EC2 security group owner. Note that this is not the same thing as an AWS access key ID - you must provide a valid AWS account number for this parameter.
          */
-    var EC2SecurityGroupOwnerId: java.lang.String
+    var EC2SecurityGroupOwnerId: String
   }
   
   
@@ -2059,11 +2059,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The identifier of the cache security group.
          */
-    var SecurityGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var SecurityGroupId: js.UndefOr[String] = js.undefined
     /**
          * The status of the cache security group membership. The status changes whenever a cache security group is modified, or when the cache security groups assigned to a cluster are modified.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2079,7 +2079,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * This parameter is currently disabled.
          */
-    var AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates the status of Multi-AZ with automatic failover for the source Redis replication group. Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 and T2 cache node types.   Redis (cluster mode enabled): T1 node types.  
          */
@@ -2091,27 +2091,27 @@ object ElastiCacheNs extends js.Object {
     /**
          * The user-supplied identifier of the source cluster.
          */
-    var CacheClusterId: js.UndefOr[java.lang.String] = js.undefined
+    var CacheClusterId: js.UndefOr[String] = js.undefined
     /**
          * The name of the compute and memory capacity node type for the source cluster. The following node types are supported by ElastiCache. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.   General purpose:   Current generation:   T2 node types: cache.t2.micro, cache.t2.small, cache.t2.medium   M3 node types: cache.m3.medium, cache.m3.large, cache.m3.xlarge, cache.m3.2xlarge   M4 node types: cache.m4.large, cache.m4.xlarge, cache.m4.2xlarge, cache.m4.4xlarge, cache.m4.10xlarge    Previous generation: (not recommended)  T1 node types: cache.t1.micro   M1 node types: cache.m1.small, cache.m1.medium, cache.m1.large, cache.m1.xlarge      Compute optimized:   Previous generation: (not recommended)  C1 node types: cache.c1.xlarge      Memory optimized:   Current generation:   R3 node types: cache.r3.large, cache.r3.xlarge, cache.r3.2xlarge, cache.r3.4xlarge, cache.r3.8xlarge   R4 node types; cache.r4.large, cache.r4.xlarge, cache.r4.2xlarge, cache.r4.4xlarge, cache.r4.8xlarge, cache.r4.16xlarge    Previous generation: (not recommended)  M2 node types: cache.m2.xlarge, cache.m2.2xlarge, cache.m2.4xlarge       Notes:    All T2 instances are created in an Amazon Virtual Private Cloud (Amazon VPC).   Redis (cluster mode disabled): Redis backup/restore is not supported on T1 and T2 instances.    Redis (cluster mode enabled): Backup/restore is not supported on T1 instances.   Redis Append-only files (AOF) functionality is not supported for T1 or T2 instances.   For a complete listing of node types and specifications, see:    Amazon ElastiCache Product Features and Details     Cache Node Type-Specific Parameters for Memcached     Cache Node Type-Specific Parameters for Redis   
          */
-    var CacheNodeType: js.UndefOr[java.lang.String] = js.undefined
+    var CacheNodeType: js.UndefOr[String] = js.undefined
     /**
          * The cache parameter group that is associated with the source cluster.
          */
-    var CacheParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache subnet group associated with the source cluster.
          */
-    var CacheSubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var CacheSubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * The name of the cache engine (memcached or redis) used by the source cluster.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * The version of the cache engine version that is used by the source cluster.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * A list of the cache nodes in the source cluster.
          */
@@ -2131,23 +2131,23 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the Availability Zone in which the source cluster is located.
          */
-    var PreferredAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * Specifies the weekly time range during which maintenance on the cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are:    sun     mon     tue     wed     thu     fri     sat    Example: sun:23:00-mon:01:30 
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * A description of the source replication group.
          */
-    var ReplicationGroupDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupDescription: js.UndefOr[String] = js.undefined
     /**
          * The unique identifier of the source replication group.
          */
-    var ReplicationGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationGroupId: js.UndefOr[String] = js.undefined
     /**
          * The name of a snapshot. For an automatic snapshot, the name is system-generated. For a manual snapshot, this is the user-provided name.
          */
-    var SnapshotName: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotName: js.UndefOr[String] = js.undefined
     /**
          * For an automatic snapshot, the number of days for which ElastiCache retains the snapshot before deleting it. For manual snapshots, this field reflects the SnapshotRetentionLimit for the source cluster when the snapshot was created. This field is otherwise ignored: Manual snapshots do not expire, and can only be deleted using the DeleteSnapshot operation.   Important If the value of SnapshotRetentionLimit is set to zero (0), backups are turned off.
          */
@@ -2155,23 +2155,23 @@ object ElastiCacheNs extends js.Object {
     /**
          * Indicates whether the snapshot is from an automatic backup (automated) or was created manually (manual).
          */
-    var SnapshotSource: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotSource: js.UndefOr[String] = js.undefined
     /**
          * The status of the snapshot. Valid values: creating | available | restoring | copying | deleting.
          */
-    var SnapshotStatus: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotStatus: js.UndefOr[String] = js.undefined
     /**
          * The daily time range during which ElastiCache takes daily snapshots of the source cluster.
          */
-    var SnapshotWindow: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotWindow: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for the topic used by the source cluster for publishing notifications.
          */
-    var TopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var TopicArn: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Virtual Private Cloud identifier (VPC ID) of the cache subnet group for the source cluster.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2183,7 +2183,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The unique identifier for the subnet.
          */
-    var SubnetIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetIdentifier: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2191,11 +2191,11 @@ object ElastiCacheNs extends js.Object {
     /**
          * The key for the tag. May not be null.
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * The tag's value. May be null.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2215,7 +2215,7 @@ object ElastiCacheNs extends js.Object {
     /**
          * The name of the replication group (console: cluster) whose automatic failover is being tested by this operation.
          */
-    var ReplicationGroupId: java.lang.String
+    var ReplicationGroupId: String
   }
   
   
@@ -3548,54 +3548,54 @@ object ElastiCacheNs extends js.Object {
   type AZMode = awsDashSdkLib.awsDashSdkLibStrings.`single-az` | awsDashSdkLib.awsDashSdkLibStrings.`cross-az` | java.lang.String
   type AllowedNodeGroupId = java.lang.String
   type AutomaticFailoverStatus = awsDashSdkLib.awsDashSdkLibStrings.enabled | awsDashSdkLib.awsDashSdkLibStrings.disabled | awsDashSdkLib.awsDashSdkLibStrings.enabling | awsDashSdkLib.awsDashSdkLibStrings.disabling | java.lang.String
-  type AvailabilityZonesList = js.Array[java.lang.String]
+  type AvailabilityZonesList = js.Array[String]
   type Boolean = scala.Boolean
   type BooleanOptional = scala.Boolean
   type CacheClusterList = js.Array[CacheCluster]
   type CacheEngineVersionList = js.Array[CacheEngineVersion]
-  type CacheNodeIdsList = js.Array[java.lang.String]
+  type CacheNodeIdsList = js.Array[String]
   type CacheNodeList = js.Array[CacheNode]
   type CacheNodeTypeSpecificParametersList = js.Array[CacheNodeTypeSpecificParameter]
   type CacheNodeTypeSpecificValueList = js.Array[CacheNodeTypeSpecificValue]
   type CacheParameterGroupList = js.Array[CacheParameterGroup]
   type CacheSecurityGroupMembershipList = js.Array[CacheSecurityGroupMembership]
-  type CacheSecurityGroupNameList = js.Array[java.lang.String]
+  type CacheSecurityGroupNameList = js.Array[String]
   type CacheSecurityGroups = js.Array[CacheSecurityGroup]
   type CacheSubnetGroups = js.Array[CacheSubnetGroup]
   type ChangeType = awsDashSdkLib.awsDashSdkLibStrings.immediate | awsDashSdkLib.awsDashSdkLibStrings.`requires-reboot` | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ClusterIdList = js.Array[java.lang.String]
+  type ClusterIdList = js.Array[String]
   type Double = scala.Double
   type EC2SecurityGroupList = js.Array[EC2SecurityGroup]
   type EventList = js.Array[Event]
   type Integer = scala.Double
   type IntegerOptional = scala.Double
-  type KeyList = js.Array[java.lang.String]
+  type KeyList = js.Array[String]
   type NodeGroupConfigurationList = js.Array[NodeGroupConfiguration]
   type NodeGroupList = js.Array[NodeGroup]
   type NodeGroupMemberList = js.Array[NodeGroupMember]
   type NodeGroupsToRemoveList = js.Array[AllowedNodeGroupId]
   type NodeGroupsToRetainList = js.Array[AllowedNodeGroupId]
   type NodeSnapshotList = js.Array[NodeSnapshot]
-  type NodeTypeList = js.Array[java.lang.String]
+  type NodeTypeList = js.Array[String]
   type ParameterNameValueList = js.Array[ParameterNameValue]
   type ParametersList = js.Array[Parameter]
   type PendingAutomaticFailoverStatus = awsDashSdkLib.awsDashSdkLibStrings.enabled | awsDashSdkLib.awsDashSdkLibStrings.disabled | java.lang.String
-  type PreferredAvailabilityZoneList = js.Array[java.lang.String]
+  type PreferredAvailabilityZoneList = js.Array[String]
   type RecurringChargeList = js.Array[RecurringCharge]
-  type RemoveReplicasList = js.Array[java.lang.String]
+  type RemoveReplicasList = js.Array[String]
   type ReplicaConfigurationList = js.Array[ConfigureShard]
   type ReplicationGroupList = js.Array[ReplicationGroup]
   type ReservedCacheNodeList = js.Array[ReservedCacheNode]
   type ReservedCacheNodesOfferingList = js.Array[ReservedCacheNodesOffering]
   type ReshardingConfigurationList = js.Array[ReshardingConfiguration]
-  type SecurityGroupIdsList = js.Array[java.lang.String]
+  type SecurityGroupIdsList = js.Array[String]
   type SecurityGroupMembershipList = js.Array[SecurityGroupMembership]
-  type SnapshotArnsList = js.Array[java.lang.String]
+  type SnapshotArnsList = js.Array[String]
   type SnapshotList = js.Array[Snapshot]
   type SourceType = awsDashSdkLib.awsDashSdkLibStrings.`cache-cluster` | awsDashSdkLib.awsDashSdkLibStrings.`cache-parameter-group` | awsDashSdkLib.awsDashSdkLibStrings.`cache-security-group` | awsDashSdkLib.awsDashSdkLibStrings.`cache-subnet-group` | awsDashSdkLib.awsDashSdkLibStrings.`replication-group` | java.lang.String
   type String = java.lang.String
-  type SubnetIdentifierList = js.Array[java.lang.String]
+  type SubnetIdentifierList = js.Array[String]
   type SubnetList = js.Array[Subnet]
   type TStamp = stdLib.Date
   type TagList = js.Array[Tag]

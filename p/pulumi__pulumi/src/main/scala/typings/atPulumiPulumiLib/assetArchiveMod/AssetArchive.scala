@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class AssetArchive protected () extends Archive {
   def this(assets: AssetMap) = this()
-  def this(assets: stdLib.Promise[AssetMap]) = this()
+  def this(assets: js.Promise[AssetMap]) = this()
   /**
        * A map of names to assets.
        */
-  val assets: stdLib.Promise[AssetMap] = js.native
+  val assets: js.Promise[AssetMap] = js.native
 }
 

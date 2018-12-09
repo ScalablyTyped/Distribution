@@ -145,7 +145,7 @@ trait ProtractorPlugin extends js.Object {
        *     for the promise to resolve before continuing.  If the promise is
        *     rejected, a failed assertion is added to the test results.
        */
-  var onPrepare: js.UndefOr[js.Function0[scala.Unit | stdLib.Promise[scala.Unit]]] = js.undefined
+  var onPrepare: js.UndefOr[js.Function0[scala.Unit | js.Promise[scala.Unit]]] = js.undefined
   /**
        * Called after the test results have been finalized and any jobs have been
        * updated (if applicable).
@@ -159,7 +159,7 @@ trait ProtractorPlugin extends js.Object {
        *     for the promise to resolve before continuing.  If the promise is
        *     rejected, an error is logged to the console.
        */
-  var postResults: js.UndefOr[js.Function0[scala.Unit | stdLib.Promise[scala.Unit]]] = js.undefined
+  var postResults: js.UndefOr[js.Function0[scala.Unit | js.Promise[scala.Unit]]] = js.undefined
   /**
        * Called after each test block (in Jasmine, this means an `it` block)
        * completes.
@@ -181,7 +181,7 @@ trait ProtractorPlugin extends js.Object {
     js.Function2[
       /* passed */ scala.Boolean, 
       /* testInfo */ js.Any, 
-      scala.Unit | stdLib.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ]
   ] = js.undefined
   /**
@@ -197,7 +197,7 @@ trait ProtractorPlugin extends js.Object {
        *     for the promise to resolve before continuing.  If the promise is
        *     rejected, a failed assertion is added to the test results.
        */
-  var setup: js.UndefOr[js.Function0[scala.Unit | stdLib.Promise[scala.Unit]]] = js.undefined
+  var setup: js.UndefOr[js.Function0[scala.Unit | js.Promise[scala.Unit]]] = js.undefined
   /**
        * Used to turn off default checks for angular stability
        *
@@ -227,7 +227,7 @@ trait ProtractorPlugin extends js.Object {
        *     for the promise to resolve before continuing.  If the promise is
        *     rejected, a failed assertion is added to the test results.
        */
-  var teardown: js.UndefOr[js.Function0[scala.Unit | stdLib.Promise[scala.Unit]]] = js.undefined
+  var teardown: js.UndefOr[js.Function0[scala.Unit | js.Promise[scala.Unit]]] = js.undefined
   /**
        * Between every webdriver action, Protractor calls browser.waitForAngular() to
        * make sure that Angular has no outstanding $http or $timeout calls.

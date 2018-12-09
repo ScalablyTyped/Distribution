@@ -3006,7 +3006,7 @@ trait LoDashExplicitAsyncWrapper[TValue]
   def wrap[TResult](wrapper: js.Function2[/* value */ TValue, /* repeated */js.Any, TResult]): LoDashExplicitAsyncWrapper[js.Function1[/* repeated */_, TResult]] = js.native
   @JSName("wrap")
   def wrap_TArgsTResult[TArgs, TResult](wrapper: js.Function2[/* value */ TValue, /* repeated */TArgs, TResult]): LoDashExplicitAsyncWrapper[js.Function1[/* repeated */TArgs, TResult]] = js.native
-  def write(): stdLib.Promise[TValue] = js.native
+  def write(): js.Promise[TValue] = js.native
   def xor[T](
     `this`: LoDashExplicitAsyncWrapper[js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null]],
     arrays: (js.UndefOr[lodashLib.lodashMod.underscoreNs.List[T] | scala.Null])*

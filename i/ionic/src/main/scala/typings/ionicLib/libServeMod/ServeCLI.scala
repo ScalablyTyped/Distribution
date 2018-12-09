@@ -37,7 +37,7 @@ abstract class ServeCLI[T /* <: ServeCLIOptions */] protected ()
   /**
        * Build the arguments for starting this Serve CLI. Called by `this.start()`.
        */
-  /* protected */ def buildArgs(options: T): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  /* protected */ def buildArgs(options: T): js.Promise[js.Array[java.lang.String]] = js.native
   /* protected */ def createLoggerStream(): nodeLib.NodeJSNs.WritableStream = js.native
   /* protected */ def createStreamFilter(filter: js.Function1[/* line */ java.lang.String, scala.Boolean]): nodeLib.streamMod.Transform = js.native
   @JSName("emit")
@@ -46,11 +46,11 @@ abstract class ServeCLI[T /* <: ServeCLIOptions */] protected ()
   def on_ready(event: ionicLib.ionicLibStrings.ready, handler: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
   def once_ready(event: ionicLib.ionicLibStrings.ready, handler: js.Function0[scala.Unit]): this.type = js.native
-  /* protected */ def promptToInstall(): stdLib.Promise[scala.Boolean] = js.native
-  /* protected */ def resolveProgram(): stdLib.Promise[java.lang.String] = js.native
-  def serve(options: T): stdLib.Promise[scala.Unit] = js.native
-  /* protected */ def spawn(options: T): stdLib.Promise[scala.Unit] = js.native
-  /* protected */ def spawnWrapper(options: T): stdLib.Promise[scala.Unit] = js.native
+  /* protected */ def promptToInstall(): js.Promise[scala.Boolean] = js.native
+  /* protected */ def resolveProgram(): js.Promise[java.lang.String] = js.native
+  def serve(options: T): js.Promise[scala.Unit] = js.native
+  /* protected */ def spawn(options: T): js.Promise[scala.Unit] = js.native
+  /* protected */ def spawnWrapper(options: T): js.Promise[scala.Unit] = js.native
   /**
        * Called whenever a line of stderr is received.
        *

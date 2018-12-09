@@ -13,8 +13,8 @@ trait QFieldValue extends js.Object {
   var qNum: js.UndefOr[java.lang.String] = js.native
   var qState: js.Any = js.native
   var qText: java.lang.String = js.native
-  def select(): stdLib.Promise[_] = js.native
-  def select(toggle: scala.Boolean): stdLib.Promise[_] = js.native
-  def select(toggle: scala.Boolean, softlock: scala.Boolean): stdLib.Promise[_] = js.native
+  def select(): js.Promise[_] = js.native
+  def select(toggle: scala.Boolean): js.Promise[_] = js.native
+  def select(toggle: scala.Boolean, softlock: scala.Boolean): js.Promise[_] = js.native
 }
 

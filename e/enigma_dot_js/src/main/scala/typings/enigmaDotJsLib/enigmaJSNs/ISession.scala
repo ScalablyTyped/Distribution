@@ -14,7 +14,7 @@ trait ISession extends js.Object {
            * Note: you need to manually invoke this when you want to close a session and config.suspendOnClose is true.
            * @return Promise.
            */
-  def close(): stdLib.Promise[_] = js.native
+  def close(): js.Promise[_] = js.native
   /**
            * Handle opened state. This event is triggered whenever the websocket is connected and ready for communication.
            *
@@ -118,7 +118,7 @@ trait ISession extends js.Object {
            * Establishes the websocket against the configured URL. Eventually resolved with the QIX global interface when the connection has been established.
            * @return Promise.
            */
-  def open[T /* <: IGeneratedAPI */](): stdLib.Promise[T] = js.native
+  def open[T /* <: IGeneratedAPI */](): js.Promise[T] = js.native
   /**
            * Resume a previously suspended enigma.js session by re-creating the websocket and, if possible, re-open the document
            * as well as refreshing the internal caches. If successful, changed events will be triggered on all generated APIs,
@@ -128,7 +128,7 @@ trait ISession extends js.Object {
            * Note: Eventually resolved when the websocket (and potentially the previously opened document, and generated APIs) has been restored,
            * rejected when it fails any of those steps, or when onlyIfAttached is true and a new QIX Engine session was created.
            */
-  def resume(): stdLib.Promise[_] = js.native
+  def resume(): js.Promise[_] = js.native
   /**
            * Resume a previously suspended enigma.js session by re-creating the websocket and, if possible, re-open the document
            * as well as refreshing the internal caches. If successful, changed events will be triggered on all generated APIs,
@@ -138,11 +138,11 @@ trait ISession extends js.Object {
            * Note: Eventually resolved when the websocket (and potentially the previously opened document, and generated APIs) has been restored,
            * rejected when it fails any of those steps, or when onlyIfAttached is true and a new QIX Engine session was created.
            */
-  def resume(onlyIfAttached: scala.Boolean): stdLib.Promise[_] = js.native
+  def resume(onlyIfAttached: scala.Boolean): js.Promise[_] = js.native
   /**
            * Suspends the enigma.js session by closing the websocket and rejecting all method calls until it has been resumed again.
            * @return Promise.
            */
-  def suspend(): stdLib.Promise[_] = js.native
+  def suspend(): js.Promise[_] = js.native
 }
 

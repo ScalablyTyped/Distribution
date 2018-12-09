@@ -150,7 +150,7 @@ trait IComboBoxProps
   var onResolveOptions: js.UndefOr[
     js.Function1[
       /* options */ js.Array[IComboBoxOption], 
-      js.Array[IComboBoxOption] | stdLib.PromiseLike[js.Array[IComboBoxOption]]
+      js.Array[IComboBoxOption] | js.Thenable[js.Array[IComboBoxOption]]
     ]
   ] = js.undefined
   /**

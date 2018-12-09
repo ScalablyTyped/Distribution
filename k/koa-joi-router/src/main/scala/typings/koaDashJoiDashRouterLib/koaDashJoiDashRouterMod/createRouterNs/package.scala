@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object createRouterNs {
   type FullHandler = js.Function2[
     /* ctx */ koaLib.koaMod.ApplicationNs.Context, 
-    /* next */ js.Function0[stdLib.Promise[js.Any]], 
+    /* next */ js.Function0[js.Promise[js.Any]], 
     js.Any
   ]
   type Handler = PartialHandler | FullHandler | NestedHandler

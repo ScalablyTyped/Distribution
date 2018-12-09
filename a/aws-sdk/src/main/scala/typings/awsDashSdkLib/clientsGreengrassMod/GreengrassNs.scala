@@ -5720,7 +5720,7 @@ object GreengrassNs extends js.Object {
   type __listOfCore = js.Array[Core]
   type __listOfDefinitionInformation = js.Array[DefinitionInformation]
   type __listOfDevice = js.Array[Device]
-  type __listOfFunction = js.Array[js.Function]
+  type __listOfFunction = js.Array[Function]
   type __listOfGroupCertificateAuthorityProperties = js.Array[GroupCertificateAuthorityProperties]
   type __listOfGroupInformation = js.Array[GroupInformation]
   type __listOfLogger = js.Array[Logger]

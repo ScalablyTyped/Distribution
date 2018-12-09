@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait CollectionPage[T /* <: Record */] extends js.Object {
   var records: js.Array[T]
-  def next(): stdLib.Promise[CollectionPage[T]]
-  def prev(): stdLib.Promise[CollectionPage[T]]
+  def next(): js.Promise[CollectionPage[T]]
+  def prev(): js.Promise[CollectionPage[T]]
 }
 

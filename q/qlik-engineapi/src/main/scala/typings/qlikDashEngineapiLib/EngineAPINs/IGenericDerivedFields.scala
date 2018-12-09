@@ -11,33 +11,33 @@ trait IGenericDerivedFields
   /**
            * @returns qField
            */
-  def getDerivedField(qId: java.lang.String): stdLib.Promise[_]
+  def getDerivedField(qId: java.lang.String): js.Promise[_]
   /**
            * @returns qData
            */
-  def getDerivedFieldData(): stdLib.Promise[_]
+  def getDerivedFieldData(): js.Promise[_]
   /**
            * @returns qFields
            */
-  def getDerivedFields(): stdLib.Promise[_]
+  def getDerivedFields(): js.Promise[_]
   /**
            * @returns qGroups
            */
-  def getDerivedGroups(): stdLib.Promise[_]
+  def getDerivedGroups(): js.Promise[_]
   /**
            * @returns qInfo
            */
-  def getInfo(): stdLib.Promise[_]
+  def getInfo(): js.Promise[_]
   /**
            * @returns qListData
            */
-  def getListData(): stdLib.Promise[_]
+  def getListData(): js.Promise[_]
   /**
            * Shows the properties of an object.
            * Returns the identifier and the definition of the derived field.
            *
            * @returns - A Promise IGenericDerivedFieldProperties
            */
-  def getProperties(): stdLib.Promise[IGenericDerivedFieldProperties]
+  def getProperties(): js.Promise[IGenericDerivedFieldProperties]
 }
 

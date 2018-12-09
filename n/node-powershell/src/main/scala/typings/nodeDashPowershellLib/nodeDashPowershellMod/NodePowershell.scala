@@ -21,7 +21,7 @@ trait NodePowershell extends js.Object {
            * @param {array} optional - {name: ‘’, value: ‘’} - {name: value} - ‘switch’
            * @returns Every command currently in the pipeline.
            */
-  def addCommand(command: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def addCommand(command: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   /**
            * Adds a command to the end of the pipeline of the shell object.
            * @param {string} required - PowerShell command - PowerShell script
@@ -31,17 +31,17 @@ trait NodePowershell extends js.Object {
   def addCommand(
     command: java.lang.String,
     params: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String] | java.lang.String]
-  ): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  ): js.Promise[js.Array[java.lang.String]] = js.native
   /**
            * Releases all resources used by the shell object and closes the PowerShell child_process.
            * @returns Promise with the error message.
            */
-  def dispose(): stdLib.Promise[java.lang.String] = js.native
+  def dispose(): js.Promise[java.lang.String] = js.native
   /**
            * Runs the commands of the shell object pipeline.
            * @returns Promise with the command output.
            */
-  def invoke(): stdLib.Promise[java.lang.String] = js.native
+  def invoke(): js.Promise[java.lang.String] = js.native
   /**
            * Listens to events emitted from the shell.
            * @param eventName required - Possible events:

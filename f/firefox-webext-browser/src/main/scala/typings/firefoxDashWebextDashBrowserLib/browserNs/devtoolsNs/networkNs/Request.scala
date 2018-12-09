@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 
 trait Request extends js.Object {
   /** Returns content of the response body. */
-  def getContent(): stdLib.Promise[js.Object]
+  def getContent(): js.Promise[js.Object]
 }
 

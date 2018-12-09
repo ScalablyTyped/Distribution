@@ -31,7 +31,7 @@ package object JQueryNs {
   // region Easing
   // #region Easing
   type EasingMethod = js.Function1[/* percent */ scala.Double, scala.Double]
-  type EventHandler[TCurrentTarget, TData] = EventHandlerBase[TCurrentTarget, TriggeredEvent[js.Any, TData, js.Any, js.Any]]
+  type EventHandler[TCurrentTarget, TData] = EventHandlerBase[TCurrentTarget, TriggeredEvent[TCurrentTarget, TData, js.Any, js.Any]]
   // Extra parameters can be passed from trigger()
   type EventHandlerBase[TContext, T] = js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */js.Any, js.Any]
   type Node = stdLib.Element | stdLib.Text | stdLib.Comment | stdLib.DocumentFragment
@@ -88,7 +88,7 @@ package object JQueryNs {
        * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
        */
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type SpecialEventHook[TTarget, TData] = jqueryLib.Anon_NoBubble | jqueryLib.Anon_BindType | jqueryLib.Anon_DelegateType | (jqueryLib.Anon_Setup[TTarget, TData]) | jqueryLib.Anon_Teardown[TTarget] | (jqueryLib.Anon_Add[TTarget, TData]) | (jqueryLib.Anon_Remove[TTarget, TData]) | (jqueryLib.Anon_Trigger[TTarget, TData]) | jqueryLib.Anon_Default[TData] | (jqueryLib.Anon_Handle[TTarget, TData]) | jqueryLib.Anon_PreDispatch[TTarget] | jqueryLib.Anon_PostDispatch[TTarget] | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
+  type SpecialEventHook[TTarget, TData] = jqueryLib.Anon_NoBubble | jqueryLib.Anon_BindType | jqueryLib.Anon_DelegateType | (jqueryLib.Anon_Setup[TTarget, TData]) | jqueryLib.Anon_Teardown[TTarget] | (jqueryLib.Anon_Add[TTarget, TData]) | (jqueryLib.Anon_Remove[TTarget, TData]) | (jqueryLib.Anon_Trigger[TTarget, TData]) | (jqueryLib.Anon_Default[TTarget, TData]) | (jqueryLib.Anon_Handle[TTarget, TData]) | jqueryLib.Anon_PreDispatch[TTarget] | jqueryLib.Anon_PostDispatch[TTarget] | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Speed
   // #region Speed
@@ -100,7 +100,7 @@ package object JQueryNs {
   /**
        * Any object that has a then method.
        */
-  type Thenable[T] = stdLib.PromiseLike[T]
+  type Thenable[T] = js.Thenable[T]
   /**
        * A "Tweener" is a function responsible for creating a tween object, and you might want to override these if you want to implement complex values ( like a clip/transform array matrix ) in a single property.
        * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweeners }\`

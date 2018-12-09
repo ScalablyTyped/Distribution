@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Users protected () extends js.Object {
   def this(options: UsersOptions) = this()
   /* tslint:disable-next-line no-unnecessary-generics */
-  def getUser[T](parameters: GetUserParams): stdLib.Promise[Auth0User[T]] = js.native
-  def patchUser[T](parameters: PatchUserParams[T]): stdLib.Promise[Auth0User[T]] = js.native
+  def getUser[T](parameters: GetUserParams): js.Promise[Auth0User[T]] = js.native
+  def patchUser[T](parameters: PatchUserParams[T]): js.Promise[Auth0User[T]] = js.native
 }
 

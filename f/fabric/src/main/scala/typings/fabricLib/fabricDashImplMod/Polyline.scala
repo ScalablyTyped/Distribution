@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Polyline")
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IPolylineOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+@JSImport("fabric/fabric-impl", "Polyline")
 @js.native
-class Polyline protected () extends IPolylineOptions {
+class Polyline protected () extends Object {
   /**
   	 * Constructor
   	 * @param points Array of points (where each point is an object with x and y)
@@ -23,25 +23,8 @@ class Polyline protected () extends IPolylineOptions {
   	 * @param [skipOffset] Whether points offsetting should be skipped
   	 */
   def this(points: js.Array[fabricLib.Anon_Y], options: IPolylineOptions) = this()
-  /**
-  	 * Returns complexity of an instance
-  	 * @return complexity of this instance
-  	 */
-  def complexity(): scala.Double = js.native
   def initialize(points: js.Array[Point]): scala.Unit = js.native
   def initialize(points: js.Array[Point], options: IPolylineOptions): scala.Unit = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return Object representation of an instance
-  	 */
-  def toObject(): js.Any = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return Object representation of an instance
-  	 */
-  def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Returns SVG representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
@@ -56,8 +39,7 @@ class Polyline protected () extends IPolylineOptions {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Polyline")
+@JSImport("fabric/fabric-impl", "Polyline")
 @js.native
 object Polyline extends js.Object {
   /**

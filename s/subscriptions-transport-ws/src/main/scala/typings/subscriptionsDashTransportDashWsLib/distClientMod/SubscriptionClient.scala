@@ -58,7 +58,7 @@ class SubscriptionClient protected () extends js.Object {
   var wasKeepAliveReceived: js.Any = js.native
   var wsImpl: js.Any = js.native
   var wsTimeout: js.Any = js.native
-  def applyMiddlewares(options: OperationOptions): stdLib.Promise[OperationOptions] = js.native
+  def applyMiddlewares(options: OperationOptions): js.Promise[OperationOptions] = js.native
   def close(): scala.Unit = js.native
   def close(isForced: scala.Boolean): scala.Unit = js.native
   def close(isForced: scala.Boolean, closedByUser: scala.Boolean): scala.Unit = js.native

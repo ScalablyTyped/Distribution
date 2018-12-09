@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object resourceMod {
   type ID = java.lang.String
-  type Input[T] = T | stdLib.Promise[T] | Output[T]
+  type Input[T] = T | js.Promise[T] | Output[T]
   type Inputs = stdLib.Record[java.lang.String, Input[js.Any]]
   type URN = java.lang.String
   type Unwrap[T] = UnwrapSimple[T] | UnwrapSimple[js.Any]

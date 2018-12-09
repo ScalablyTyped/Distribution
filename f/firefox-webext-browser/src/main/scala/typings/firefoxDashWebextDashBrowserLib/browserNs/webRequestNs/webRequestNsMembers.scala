@@ -24,7 +24,7 @@ object webRequestNsMembers extends js.Object {
   val onAuthRequired: _WebRequestOnAuthRequiredEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_StatusCodeMethod, 
-      BlockingResponse | stdLib.Promise[BlockingResponse] | scala.Unit
+      BlockingResponse | js.Promise[BlockingResponse] | scala.Unit
     ]
   ] = js.native
   /** Fired when a server-initiated redirect is about to occur. */
@@ -43,7 +43,7 @@ object webRequestNsMembers extends js.Object {
   val onBeforeRequest: _WebRequestOnBeforeRequestEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_MethodFrameId, 
-      BlockingResponse | stdLib.Promise[BlockingResponse] | scala.Unit
+      BlockingResponse | js.Promise[BlockingResponse] | scala.Unit
     ]
   ] = js.native
   /**
@@ -55,7 +55,7 @@ object webRequestNsMembers extends js.Object {
   val onBeforeSendHeaders: _WebRequestOnBeforeSendHeadersEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_Method, 
-      BlockingResponse | stdLib.Promise[BlockingResponse] | scala.Unit
+      BlockingResponse | js.Promise[BlockingResponse] | scala.Unit
     ]
   ] = js.native
   /** Fired when a request is completed. */
@@ -74,7 +74,7 @@ object webRequestNsMembers extends js.Object {
   val onHeadersReceived: _WebRequestOnHeadersReceivedEvent[
     js.Function1[
       /* details */ firefoxDashWebextDashBrowserLib.Anon_StatusCodeMethodStatusLine, 
-      BlockingResponse | stdLib.Promise[BlockingResponse] | scala.Unit
+      BlockingResponse | js.Promise[BlockingResponse] | scala.Unit
     ]
   ] = js.native
   /**
@@ -96,16 +96,16 @@ object webRequestNsMembers extends js.Object {
   /**
        * Retrieves the security information for the request. Returns a promise that will resolve to a SecurityInfo object.
        */
-  def getSecurityInfo(requestId: java.lang.String): stdLib.Promise[SecurityInfo] = js.native
+  def getSecurityInfo(requestId: java.lang.String): js.Promise[SecurityInfo] = js.native
   /**
        * Retrieves the security information for the request. Returns a promise that will resolve to a SecurityInfo object.
        */
-  def getSecurityInfo(requestId: java.lang.String, options: firefoxDashWebextDashBrowserLib.Anon_RawDER): stdLib.Promise[SecurityInfo] = js.native
+  def getSecurityInfo(requestId: java.lang.String, options: firefoxDashWebextDashBrowserLib.Anon_RawDER): js.Promise[SecurityInfo] = js.native
   /* webRequest functions */
   /**
        * Needs to be called when the behavior of the webRequest handlers has changed to prevent incorrect handling due to
        * caching. This function call is expensive. Don't call it often.
        */
-  def handlerBehaviorChanged(): stdLib.Promise[scala.Unit] = js.native
+  def handlerBehaviorChanged(): js.Promise[scala.Unit] = js.native
 }
 

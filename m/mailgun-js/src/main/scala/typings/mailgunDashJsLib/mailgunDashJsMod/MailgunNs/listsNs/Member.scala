@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Member extends js.Object {
-  def update(data: MemberUpdateData): stdLib.Promise[_] = js.native
+  def update(data: MemberUpdateData): js.Promise[_] = js.native
   def update(
     data: MemberUpdateData,
     callback: js.Function2[
@@ -15,6 +15,6 @@ trait Member extends js.Object {
       /* data */ js.Any, 
       scala.Unit
     ]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
 }
 

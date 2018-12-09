@@ -30,7 +30,7 @@ abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlat
   val platform: appDashBuilderDashLibLib.outMod.Platform = js.native
   val platformSpecificBuildOptions: DC = js.native
   val projectDir: java.lang.String = js.native
-  val resourceList: stdLib.Promise[js.Array[java.lang.String]] = js.native
+  val resourceList: js.Promise[js.Array[java.lang.String]] = js.native
   var sanityCheckPackage: js.Any = js.native
   /* protected */ def computeAppOutDir(outDir: java.lang.String, arch: builderDashUtilLib.outArchMod.Arch): java.lang.String = js.native
   def computeSafeArtifactName(suggestedName: java.lang.String, ext: java.lang.String): java.lang.String | scala.Null = js.native
@@ -98,33 +98,33 @@ abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlat
     ]
   ): scala.Unit = js.native
   /* protected */ def createTransformerForExtraFiles(packContext: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext): builderDashUtilLib.outFsMod.FileTransformer | scala.Null = js.native
-  def dispatchArtifactCreated(file: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def dispatchArtifactCreated(file: java.lang.String, target: appDashBuilderDashLibLib.outMod.Target): stdLib.Promise[scala.Unit] = js.native
+  def dispatchArtifactCreated(file: java.lang.String): js.Promise[scala.Unit] = js.native
+  def dispatchArtifactCreated(file: java.lang.String, target: appDashBuilderDashLibLib.outMod.Target): js.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
     target: appDashBuilderDashLibLib.outMod.Target,
     arch: builderDashUtilLib.outArchMod.Arch
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
     target: appDashBuilderDashLibLib.outMod.Target,
     arch: builderDashUtilLib.outArchMod.Arch,
     safeArtifactName: java.lang.String
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
     target: appDashBuilderDashLibLib.outMod.Target,
     arch: scala.Null,
     safeArtifactName: java.lang.String
-  ): stdLib.Promise[scala.Unit] = js.native
-  def dispatchArtifactCreated(file: java.lang.String, target: scala.Null, arch: builderDashUtilLib.outArchMod.Arch): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
+  def dispatchArtifactCreated(file: java.lang.String, target: scala.Null, arch: builderDashUtilLib.outArchMod.Arch): js.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
     target: scala.Null,
     arch: builderDashUtilLib.outArchMod.Arch,
     safeArtifactName: java.lang.String
-  ): stdLib.Promise[scala.Unit] = js.native
-  def dispatchArtifactCreated(file: java.lang.String, target: scala.Null, arch: scala.Null, safeArtifactName: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
+  def dispatchArtifactCreated(file: java.lang.String, target: scala.Null, arch: scala.Null, safeArtifactName: java.lang.String): js.Promise[scala.Unit] = js.native
   /* protected */ def doGetCscPassword(): js.UndefOr[java.lang.String | scala.Null] = js.native
   /* protected */ def doPack(
     outDir: java.lang.String,
@@ -133,7 +133,7 @@ abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlat
     arch: builderDashUtilLib.outArchMod.Arch,
     platformSpecificBuildOptions: DC,
     targets: js.Array[appDashBuilderDashLibLib.outMod.Target]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def expandArtifactBeautyNamePattern(
     targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String
@@ -269,19 +269,19 @@ abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlat
   def getDefaultFrameworkIcon(): java.lang.String | scala.Null = js.native
   def getElectronDestinationDir(appOutDir: java.lang.String): java.lang.String = js.native
   def getElectronSrcDir(dist: java.lang.String): java.lang.String = js.native
-  def getIconPath(): stdLib.Promise[java.lang.String | scala.Null] = js.native
+  def getIconPath(): js.Promise[java.lang.String | scala.Null] = js.native
   def getMacOsResourcesDir(appOutDir: java.lang.String): java.lang.String = js.native
-  /* protected */ def getOrConvertIcon(format: IconFormat): stdLib.Promise[java.lang.String | scala.Null] = js.native
-  def getResource(custom: java.lang.String, names: java.lang.String*): stdLib.Promise[java.lang.String | scala.Null] = js.native
-  def getResource(names: java.lang.String*): stdLib.Promise[java.lang.String | scala.Null] = js.native
+  /* protected */ def getOrConvertIcon(format: IconFormat): js.Promise[java.lang.String | scala.Null] = js.native
+  def getResource(custom: java.lang.String, names: java.lang.String*): js.Promise[java.lang.String | scala.Null] = js.native
+  def getResource(names: java.lang.String*): js.Promise[java.lang.String | scala.Null] = js.native
   def getResourcesDir(appOutDir: java.lang.String): java.lang.String = js.native
-  def getTempFile(suffix: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def getTempFile(suffix: java.lang.String): js.Promise[java.lang.String] = js.native
   def pack(
     outDir: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
     targets: js.Array[appDashBuilderDashLibLib.outMod.Target],
     taskManager: builderDashUtilLib.builderDashUtilMod.AsyncTaskManager
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /* protected */ def packageInDistributableFormat(
     appOutDir: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
@@ -293,8 +293,8 @@ abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlat
     sources: js.Array[java.lang.String],
     fallbackSources: js.Array[java.lang.String],
     outputFormat: IconFormat
-  ): stdLib.Promise[js.Array[IconInfo]] = js.native
-  /* protected */ def signApp(packContext: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, isAsar: scala.Boolean): stdLib.Promise[_] = js.native
+  ): js.Promise[js.Array[IconInfo]] = js.native
+  /* protected */ def signApp(packContext: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, isAsar: scala.Boolean): js.Promise[_] = js.native
 }
 
 @JSImport("app-builder-lib/out/platformPackager", "PlatformPackager")

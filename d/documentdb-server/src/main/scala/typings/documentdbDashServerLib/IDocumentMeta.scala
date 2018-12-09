@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ 
-trait IDocumentMeta extends js.Object {
+
+trait IDocumentMeta
+  extends stdLib.Object {
   var _attachments: js.UndefOr[java.lang.String] = js.undefined
   var _etag: js.UndefOr[java.lang.String] = js.undefined
   var _rid: js.UndefOr[java.lang.String] = js.undefined

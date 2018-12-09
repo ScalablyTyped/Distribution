@@ -87,8 +87,8 @@ trait Assertion extends js.Object {
   def fail(): this.type = js.native
   def `false`(): this.type = js.native
   def `false`(message: java.lang.String): this.type = js.native
-  def fulfilled(): stdLib.Promise[_] = js.native
-  def fulfilledWith(obj: js.Any): stdLib.Promise[_] = js.native
+  def fulfilled(): js.Promise[_] = js.native
+  def fulfilledWith(obj: js.Any): js.Promise[_] = js.native
   def generator(): this.type = js.native
   def greaterThan(value: scala.Double): this.type = js.native
   def greaterThan(value: scala.Double, description: java.lang.String): this.type = js.native
@@ -177,16 +177,16 @@ trait Assertion extends js.Object {
   def propertyByPath(path: js.Array[java.lang.String]): this.type = js.native
   // property
   def propertyWithDescriptor(name: java.lang.String, descriptor: js.Object): this.type = js.native
-  def rejected(): stdLib.Promise[_] = js.native
-  def rejectedWith(msg: java.lang.String): stdLib.Promise[_] = js.native
-  def rejectedWith(msg: java.lang.String, properties: js.Object): stdLib.Promise[_] = js.native
-  def rejectedWith(msg: stdLib.Error): stdLib.Promise[_] = js.native
-  def rejectedWith(msg: stdLib.Error, properties: js.Object): stdLib.Promise[_] = js.native
-  def rejectedWith(msg: stdLib.RegExp): stdLib.Promise[_] = js.native
-  def rejectedWith(msg: stdLib.RegExp, properties: js.Object): stdLib.Promise[_] = js.native
-  def rejectedWith(properties: js.Object): stdLib.Promise[_] = js.native
-  def resolved(): stdLib.Promise[_] = js.native
-  def resolvedWith(obj: js.Any): stdLib.Promise[_] = js.native
+  def rejected(): js.Promise[_] = js.native
+  def rejectedWith(msg: java.lang.String): js.Promise[_] = js.native
+  def rejectedWith(msg: java.lang.String, properties: js.Object): js.Promise[_] = js.native
+  def rejectedWith(msg: stdLib.Error): js.Promise[_] = js.native
+  def rejectedWith(msg: stdLib.Error, properties: js.Object): js.Promise[_] = js.native
+  def rejectedWith(msg: stdLib.RegExp): js.Promise[_] = js.native
+  def rejectedWith(msg: stdLib.RegExp, properties: js.Object): js.Promise[_] = js.native
+  def rejectedWith(properties: js.Object): js.Promise[_] = js.native
+  def resolved(): js.Promise[_] = js.native
+  def resolvedWith(obj: js.Any): js.Promise[_] = js.native
   def size(value: scala.Double): this.type = js.native
   //string
   def startWith(prefix: java.lang.String): this.type = js.native

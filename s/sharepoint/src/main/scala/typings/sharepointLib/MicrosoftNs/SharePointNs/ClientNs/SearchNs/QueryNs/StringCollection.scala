@@ -12,7 +12,7 @@ class StringCollection protected ()
   def this(context: sharepointLib.SPNs.ClientContext) = this()
   def add(property: java.lang.String): scala.Unit = js.native
   def clear(): scala.Unit = js.native
-  def get_childItemType(): java.lang.String = js.native
+  def get_childItemType(): stdLib.StringConstructor = js.native
   def get_item(index: scala.Double): java.lang.String = js.native
   def itemAt(index: scala.Double): java.lang.String = js.native
 }

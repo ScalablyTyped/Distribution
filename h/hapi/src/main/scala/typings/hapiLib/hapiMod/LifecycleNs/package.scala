@@ -48,6 +48,6 @@ package object LifecycleNs {
        * - a promise object that resolve to any of the above values
        * For more info please [See docs](https://github.com/hapijs/hapi/blob/master/API.md#lifecycle-methods)
        */
-  type ReturnValue = ReturnValueTypes | stdLib.Promise[ReturnValueTypes]
+  type ReturnValue = ReturnValueTypes | js.Promise[ReturnValueTypes]
   type ReturnValueTypes = scala.Null | java.lang.String | scala.Double | scala.Boolean | nodeLib.Buffer | nodeLib.Error | boomLib.boomMod.namespaced[js.Any] | nodeLib.streamMod.Stream | js.Object | js.Array[js.Object] | js.Symbol | hapiLib.hapiMod.ResponseToolkit
 }

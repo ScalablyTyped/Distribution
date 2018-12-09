@@ -22,7 +22,7 @@ trait PersistedModel extends Model {
                * Deletes the model from persistence.
                * Triggers `destroy` hook (async) before and after destroying object.
                */
-  def destroy(): stdLib.Promise[scala.Unit] = js.native
+  def destroy(): js.Promise[scala.Unit] = js.native
   /**
                * Deletes the model from persistence.
                * Triggers `destroy` hook (async) before and after destroying object.
@@ -47,7 +47,7 @@ trait PersistedModel extends Model {
   /**
                * Reload object from persistence.  Requires `id` member of `object` to be able to call `find`.
                */
-  def reload[T](): stdLib.Promise[T] = js.native
+  def reload[T](): js.Promise[T] = js.native
   /**
                * Reload object from persistence.  Requires `id` member of `object` to be able to call `find`.
                * @callback {() => void} callback Callback function called with `(err, instance)` arguments.  Required.
@@ -62,7 +62,7 @@ trait PersistedModel extends Model {
                * @options {any} [options] Options for replace
                * @property {boolean} validate Perform validation before saving.  Default is true.
                */
-  def replaceAttributes[T](data: js.Any): stdLib.Promise[T] = js.native
+  def replaceAttributes[T](data: js.Any): js.Promise[T] = js.native
   /**
                * Replace attributes for a model instance and persist it into the datasource.
                * Performs validation before replacing
@@ -79,7 +79,7 @@ trait PersistedModel extends Model {
                * @options {any} [options] Options for replace
                * @property {boolean} validate Perform validation before saving.  Default is true.
                */
-  def replaceAttributes[T](data: js.Any, options: loopbackLib.Anon_Validate): stdLib.Promise[T] = js.native
+  def replaceAttributes[T](data: js.Any, options: loopbackLib.Anon_Validate): js.Promise[T] = js.native
   /**
                * Replace attributes for a model instance and persist it into the datasource.
                * Performs validation before replacing
@@ -99,7 +99,7 @@ trait PersistedModel extends Model {
                * @property {boolean} throws If true, throw a validation error; WARNING: This can crash Node.
                * If false, report the error via callback.  Default is false.
                */
-  def save[T](): stdLib.Promise[T] = js.native
+  def save[T](): js.Promise[T] = js.native
   /**
                * Save model instance. If the instance doesn't have an ID, then calls [create](#persistedmodelcreatedata-cb) instead.
                * Triggers: validate, save, update, or create.
@@ -116,7 +116,7 @@ trait PersistedModel extends Model {
                * @property {boolean} throws If true, throw a validation error; WARNING: This can crash Node.
                * If false, report the error via callback.  Default is false.
                */
-  def save[T](options: loopbackLib.Anon_Throws): stdLib.Promise[T] = js.native
+  def save[T](options: loopbackLib.Anon_Throws): js.Promise[T] = js.native
   /**
                * Save model instance. If the instance doesn't have an ID, then calls [create](#persistedmodelcreatedata-cb) instead.
                * Triggers: validate, save, update, or create.
@@ -142,7 +142,7 @@ trait PersistedModel extends Model {
                * @param {string} name Name of property.
                * @param {any} value Value of property.
                */
-  def updateAttribute[T](name: java.lang.String, value: js.Any): stdLib.Promise[T] = js.native
+  def updateAttribute[T](name: java.lang.String, value: js.Any): js.Promise[T] = js.native
   /**
                * Update a single attribute.
                * Equivalent to `updateAttributes({name: 'value'}, cb)
@@ -158,7 +158,7 @@ trait PersistedModel extends Model {
                * Triggers: `validation`, `save` and `update` hooks
                * @param {any} data Data to update.
                */
-  def updateAttributes[T](data: js.Any): stdLib.Promise[T] = js.native
+  def updateAttributes[T](data: js.Any): js.Promise[T] = js.native
   /**
                * Update set of attributes.  Performs validation before updating
                * Triggers: `validation`, `save` and `update` hooks

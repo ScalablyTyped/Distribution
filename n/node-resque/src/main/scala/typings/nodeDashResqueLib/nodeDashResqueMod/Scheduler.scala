@@ -11,8 +11,8 @@ class Scheduler protected ()
   extends nodeLib.NodeJSNs.EventEmitter {
   def this(options: SchedulerOptions) = this()
   def this(options: SchedulerOptions, jobs: JobsHash) = this()
-  def connect(): stdLib.Promise[scala.Unit] = js.native
-  def end(): stdLib.Promise[scala.Unit] = js.native
+  def connect(): js.Promise[scala.Unit] = js.native
+  def end(): js.Promise[scala.Unit] = js.native
   @JSName("on")
   def on_cleanStuckWorker(
     event: nodeDashResqueLib.nodeDashResqueLibStrings.cleanStuckWorker,
@@ -80,6 +80,6 @@ class Scheduler protected ()
     cb: js.Function1[/* timestamp */ scala.Double, scala.Unit]
   ): this.type = js.native
   def removeAllListeners(event: SchedulerEvent): this.type = js.native
-  def start(): stdLib.Promise[scala.Unit] = js.native
+  def start(): js.Promise[scala.Unit] = js.native
 }
 

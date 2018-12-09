@@ -14,7 +14,7 @@ trait Observable[T] extends js.Object {
       zenDashObservableDashTsLib.libTypesMod.ZenObservableNs.ObservableLike[R]
     ]
   ): Observable[R] = js.native
-  def forEach(fn: js.Function1[/* value */ T, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def forEach(fn: js.Function1[/* value */ T, scala.Unit]): js.Promise[scala.Unit] = js.native
   def from[R](observable: stdLib.ArrayLike[R]): Observable[R] = js.native
   def from[R](observable: zenDashObservableDashTsLib.libTypesMod.ZenObservableNs.ObservableLike[R]): Observable[R] = js.native
   def from[R](observable: Observable[R]): Observable[R] = js.native

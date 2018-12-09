@@ -11,7 +11,7 @@ object ShareDialogNs extends js.Object {
   /**
        * Check if the dialog can be shown.
        */
-  def canShow(shareContent: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareContent): stdLib.Promise[scala.Boolean] = js.native
+  def canShow(shareContent: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareContent): js.Promise[scala.Boolean] = js.native
   /**
        * Sets the mode for the share dialog.
        */
@@ -23,6 +23,6 @@ object ShareDialogNs extends js.Object {
   /**
        * Shows the dialog using the specified content.
        */
-  def show(shareContent: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareContent): stdLib.Promise[_] = js.native
+  def show(shareContent: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareContent): js.Promise[_] = js.native
 }
 

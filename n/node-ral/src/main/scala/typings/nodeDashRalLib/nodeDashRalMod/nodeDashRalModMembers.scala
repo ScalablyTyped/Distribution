@@ -24,7 +24,7 @@ object nodeDashRalModMembers extends js.Object {
   ] = js.native
   def RAL(serviceName: java.lang.String): nodeDashRalLib.nodeDashRalMod.RALNs.RalRunner = js.native
   def RAL(serviceName: java.lang.String, options: js.Object): nodeDashRalLib.nodeDashRalMod.RALNs.RalRunner = js.native
-  def RALPromise[T](name: java.lang.String): stdLib.Promise[T] = js.native
-  def RALPromise[T](name: java.lang.String, options: js.Object): stdLib.Promise[T] = js.native
+  def RALPromise[T](name: java.lang.String): js.Promise[T] = js.native
+  def RALPromise[T](name: java.lang.String, options: js.Object): js.Promise[T] = js.native
 }
 

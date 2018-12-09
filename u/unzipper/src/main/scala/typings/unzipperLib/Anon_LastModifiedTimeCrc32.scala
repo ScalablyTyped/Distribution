@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_LastModifiedTimeCrc32 extends js.Object {
-  var buffer: js.Function1[/* password */ js.UndefOr[java.lang.String], stdLib.Promise[nodeLib.Buffer]]
+  var buffer: js.Function1[/* password */ js.UndefOr[java.lang.String], js.Promise[nodeLib.Buffer]]
   var comment: java.lang.String
   var compressedSize: scala.Double
   var compressionMethod: scala.Double

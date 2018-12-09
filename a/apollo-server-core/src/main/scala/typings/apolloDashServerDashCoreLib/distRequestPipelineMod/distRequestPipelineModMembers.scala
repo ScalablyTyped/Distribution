@@ -13,6 +13,6 @@ object distRequestPipelineModMembers extends js.Object {
     requestContext: Mutable[
       apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext]
     ]
-  ): stdLib.Promise[apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse] = js.native
+  ): js.Promise[apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse] = js.native
 }
 

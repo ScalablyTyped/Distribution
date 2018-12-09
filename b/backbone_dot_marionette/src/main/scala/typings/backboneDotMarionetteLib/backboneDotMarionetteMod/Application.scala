@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("backbone.marionette", "Application")
+@JSImport("backbone.marionette", "Application")
 @js.native
-class Application () extends js.Object {
+class Application () extends Object {
   def this(options: ApplicationOptions) = this()
   /**
        * Root entry point for the View tree of your Application.

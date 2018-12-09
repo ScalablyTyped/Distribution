@@ -20,6 +20,6 @@ trait Anon_AuthorizeURL[ClientIdName /* <: java.lang.String */] extends js.Objec
     params: simpleDashOauth2Lib.simpleDashOauth2LibStrings.Anon_AuthorizeURL with js.Any with Anon_Redirecturi
   ): java.lang.String = js.native
   /** Returns the Access Token object */
-  def getToken(params: simpleDashOauth2Lib.simpleDashOauth2Mod.AuthorizationTokenConfig): stdLib.Promise[simpleDashOauth2Lib.simpleDashOauth2Mod.Token] = js.native
+  def getToken(params: simpleDashOauth2Lib.simpleDashOauth2Mod.AuthorizationTokenConfig): js.Promise[simpleDashOauth2Lib.simpleDashOauth2Mod.Token] = js.native
 }
 

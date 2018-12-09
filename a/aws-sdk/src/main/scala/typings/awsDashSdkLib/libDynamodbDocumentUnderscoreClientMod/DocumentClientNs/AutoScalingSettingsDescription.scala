@@ -14,7 +14,7 @@ trait AutoScalingSettingsDescription extends js.Object {
   /**
        * Role ARN used for configuring autoScaling policy.
        */
-  var AutoScalingRoleArn: js.UndefOr[java.lang.String] = js.undefined
+  var AutoScalingRoleArn: js.UndefOr[String] = js.undefined
   /**
        * The maximum capacity units that a global table or global secondary index should be scaled up to.
        */

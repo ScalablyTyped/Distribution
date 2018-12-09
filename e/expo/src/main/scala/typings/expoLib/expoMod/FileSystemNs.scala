@@ -33,9 +33,9 @@ object FileSystemNs extends js.Object {
     def this(url: java.lang.String, fileUri: java.lang.String, options: DownloadOptions) = this()
     def this(url: java.lang.String, fileUri: java.lang.String, options: DownloadOptions, callback: DownloadProgressCallback) = this()
     def this(url: java.lang.String, fileUri: java.lang.String, options: DownloadOptions, callback: DownloadProgressCallback, resumeData: java.lang.String) = this()
-    def downloadAsync(): stdLib.Promise[DownloadResult] = js.native
-    def pauseAsync(): stdLib.Promise[PauseResult] = js.native
-    def resumeAsync(): stdLib.Promise[DownloadResult] = js.native
+    def downloadAsync(): js.Promise[DownloadResult] = js.native
+    def pauseAsync(): js.Promise[PauseResult] = js.native
+    def resumeAsync(): js.Promise[DownloadResult] = js.native
     def savable(): PauseResult = js.native
   }
   
@@ -49,7 +49,7 @@ object FileSystemNs extends js.Object {
   
   val cacheDirectory: java.lang.String = js.native
   val documentDirectory: java.lang.String = js.native
-  def copyAsync(options: expoLib.Anon_From): stdLib.Promise[scala.Unit] = js.native
+  def copyAsync(options: expoLib.Anon_From): js.Promise[scala.Unit] = js.native
   def createDownloadResumable(uri: java.lang.String, fileUri: java.lang.String): DownloadResumable = js.native
   def createDownloadResumable(uri: java.lang.String, fileUri: java.lang.String, options: DownloadOptions): DownloadResumable = js.native
   def createDownloadResumable(
@@ -73,18 +73,18 @@ object FileSystemNs extends js.Object {
     ],
     resumeData: java.lang.String
   ): DownloadResumable = js.native
-  def deleteAsync(fileUri: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def deleteAsync(fileUri: java.lang.String, options: expoLib.Anon_Idempotent): stdLib.Promise[scala.Unit] = js.native
-  def downloadAsync(uri: java.lang.String, fileUri: java.lang.String): stdLib.Promise[DownloadResult] = js.native
-  def downloadAsync(uri: java.lang.String, fileUri: java.lang.String, options: expoLib.Anon_Md5): stdLib.Promise[DownloadResult] = js.native
-  def getInfoAsync(fileUri: java.lang.String): stdLib.Promise[FileInfo] = js.native
-  def getInfoAsync(fileUri: java.lang.String, options: expoLib.Anon_Size): stdLib.Promise[FileInfo] = js.native
-  def makeDirectoryAsync(dirUri: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def makeDirectoryAsync(dirUri: java.lang.String, options: expoLib.Anon_Intermediates): stdLib.Promise[scala.Unit] = js.native
-  def moveAsync(options: expoLib.Anon_From): stdLib.Promise[scala.Unit] = js.native
-  def readAsStringAsync(fileUri: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-  def readDirectoryAsync(dirUri: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
-  def writeAsStringAsync(fileUri: java.lang.String, contents: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def deleteAsync(fileUri: java.lang.String): js.Promise[scala.Unit] = js.native
+  def deleteAsync(fileUri: java.lang.String, options: expoLib.Anon_Idempotent): js.Promise[scala.Unit] = js.native
+  def downloadAsync(uri: java.lang.String, fileUri: java.lang.String): js.Promise[DownloadResult] = js.native
+  def downloadAsync(uri: java.lang.String, fileUri: java.lang.String, options: expoLib.Anon_Md5): js.Promise[DownloadResult] = js.native
+  def getInfoAsync(fileUri: java.lang.String): js.Promise[FileInfo] = js.native
+  def getInfoAsync(fileUri: java.lang.String, options: expoLib.Anon_Size): js.Promise[FileInfo] = js.native
+  def makeDirectoryAsync(dirUri: java.lang.String): js.Promise[scala.Unit] = js.native
+  def makeDirectoryAsync(dirUri: java.lang.String, options: expoLib.Anon_Intermediates): js.Promise[scala.Unit] = js.native
+  def moveAsync(options: expoLib.Anon_From): js.Promise[scala.Unit] = js.native
+  def readAsStringAsync(fileUri: java.lang.String): js.Promise[java.lang.String] = js.native
+  def readDirectoryAsync(dirUri: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+  def writeAsStringAsync(fileUri: java.lang.String, contents: java.lang.String): js.Promise[scala.Unit] = js.native
   type DownloadProgressCallback = js.Function1[/* data */ DownloadProgressData, scala.Unit]
   type FileInfo = expoLib.Anon_SizeModificationTime | expoLib.Anon_IsDirectory
 }

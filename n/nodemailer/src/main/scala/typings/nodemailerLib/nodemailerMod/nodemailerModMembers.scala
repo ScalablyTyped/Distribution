@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("nodemailer", JSImport.Namespace)
 @js.native
 object nodemailerModMembers extends js.Object {
-  def createTestAccount(): stdLib.Promise[TestAccount] = js.native
-  def createTestAccount(apiUrl: java.lang.String): stdLib.Promise[TestAccount] = js.native
+  def createTestAccount(): js.Promise[TestAccount] = js.native
+  def createTestAccount(apiUrl: java.lang.String): js.Promise[TestAccount] = js.native
   def createTestAccount(
     apiUrl: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* testAccount */ TestAccount, scala.Unit]

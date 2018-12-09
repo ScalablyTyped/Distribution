@@ -11,6 +11,6 @@ object asyncDashRetryModMembers extends js.Object {
   def apply[A](
     fn: asyncDashRetryLib.asyncDashRetryMod.AsyncRetryNs.RetryFunction[A],
     opts: asyncDashRetryLib.asyncDashRetryMod.AsyncRetryNs.Options
-  ): stdLib.Promise[A] = js.native
+  ): js.Promise[A] = js.native
 }
 

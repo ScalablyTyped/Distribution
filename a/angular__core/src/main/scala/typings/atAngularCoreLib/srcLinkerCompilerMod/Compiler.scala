@@ -19,7 +19,7 @@ class Compiler () extends js.Object {
   /**
        * Same as {@link #compileModuleAsync} but also creates ComponentFactories for all components.
        */
-  def compileModuleAndAllComponentsAsync[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): stdLib.Promise[ModuleWithComponentFactories[T]] = js.native
+  def compileModuleAndAllComponentsAsync[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): js.Promise[ModuleWithComponentFactories[T]] = js.native
   /**
        * Same as {@link #compileModuleSync} but also creates ComponentFactories for all components.
        */
@@ -27,7 +27,7 @@ class Compiler () extends js.Object {
   /**
        * Compiles the given NgModule and all of its components
        */
-  def compileModuleAsync[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): stdLib.Promise[
+  def compileModuleAsync[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): js.Promise[
     atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[T]
   ] = js.native
   /**

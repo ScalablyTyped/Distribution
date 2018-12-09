@@ -31,7 +31,7 @@ trait Lasso
   def getJavaScriptDependencyHtml(url: java.lang.String, attributes: js.Any): java.lang.String = js.native
   def getLassoCache(lassoContext: lassoLib.libLassoContextMod.default): js.Any = js.native
   def initPlugins(): scala.Unit = js.native
-  def lassoPage(options: PageConfig): stdLib.Promise[_] = js.native
+  def lassoPage(options: PageConfig): js.Promise[_] = js.native
   def lassoPage(
     options: PageConfig,
     callback: js.Function2[
@@ -39,7 +39,7 @@ trait Lasso
       /* result */ lassoLib.libLassoPageResultMod.LassoPageResult, 
       scala.Unit
     ]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def lassoResource(path: java.lang.String): scala.Unit = js.native
   def lassoResource(path: java.lang.String, options: js.Any): scala.Unit = js.native
   def lassoResource(path: java.lang.String, options: js.Any, callback: Callback): scala.Unit = js.native

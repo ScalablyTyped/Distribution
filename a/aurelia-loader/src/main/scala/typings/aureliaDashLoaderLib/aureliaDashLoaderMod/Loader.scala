@@ -32,25 +32,25 @@ class Loader () extends js.Object {
       * @param ids The set of module ids to load.
       * @return A Promise for an array of loaded modules.
       */
-  def loadAllModules(ids: js.Array[java.lang.String]): stdLib.Promise[js.Array[_]] = js.native
+  def loadAllModules(ids: js.Array[java.lang.String]): js.Promise[js.Array[_]] = js.native
   /**
       * Loads a module.
       * @param id The module id to normalize.
       * @return A Promise for the loaded module.
       */
-  def loadModule(id: java.lang.String): stdLib.Promise[_] = js.native
+  def loadModule(id: java.lang.String): js.Promise[_] = js.native
   /**
       * Loads a template.
       * @param url The url of the template to load.
       * @return A Promise for a TemplateRegistryEntry containing the template.
       */
-  def loadTemplate(url: java.lang.String): stdLib.Promise[TemplateRegistryEntry] = js.native
+  def loadTemplate(url: java.lang.String): js.Promise[TemplateRegistryEntry] = js.native
   /**
       * Loads a text-based resource.
       * @param url The url of the text file to load.
       * @return A Promise for text content.
       */
-  def loadText(url: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def loadText(url: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
       * Maps a module id to a source.
       * @param id The module id.
@@ -63,7 +63,7 @@ class Loader () extends js.Object {
       * @param relativeTo What the module id should be normalized relative to.
       * @return A promise for the normalized module id.
       */
-  def normalize(moduleId: java.lang.String, relativeTo: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def normalize(moduleId: java.lang.String, relativeTo: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
       * Normalizes a module id.
       * @param moduleId The module id to normalize.

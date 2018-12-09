@@ -13,11 +13,11 @@ trait ILayer extends IChild[IControlParent] {
     js.Function2[
       /* coords */ js.Array[scala.Double], 
       /* zoom */ scala.Double, 
-      stdLib.Promise[js.Array[java.lang.String | stdLib.HTMLElement]]
+      js.Promise[js.Array[java.lang.String | stdLib.HTMLElement]]
     ]
   ] = js.native
   var getZoomRange: js.UndefOr[
-    js.Function1[/* point */ js.Array[scala.Double], stdLib.Promise[js.Array[scala.Double]]]
+    js.Function1[/* point */ js.Array[scala.Double], js.Promise[js.Array[scala.Double]]]
   ] = js.native
 }
 

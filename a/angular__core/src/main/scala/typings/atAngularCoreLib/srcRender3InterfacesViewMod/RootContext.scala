@@ -12,7 +12,7 @@ trait RootContext extends js.Object {
        *
        * This promise is overwritten every time a first call to {@link markDirty} is invoked.
        */
-  var clean: stdLib.Promise[scala.Null]
+  var clean: js.Promise[scala.Null]
   /**
        * RootComponents - The components that were instantiated by the call to
        * {@link renderComponent}.

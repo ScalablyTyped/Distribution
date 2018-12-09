@@ -13,9 +13,9 @@ trait TypeComparison extends js.Object {
   var instanceof_Original: InstanceOf = js.native
   def apply(`type`: java.lang.String): Assertion = js.native
   def apply(`type`: java.lang.String, message: java.lang.String): Assertion = js.native
-  def instanceOf(constructor: js.Object): Assertion = js.native
-  def instanceOf(constructor: js.Object, message: java.lang.String): Assertion = js.native
-  def instanceof(constructor: js.Object): Assertion = js.native
-  def instanceof(constructor: js.Object, message: java.lang.String): Assertion = js.native
+  def instanceOf(constructor: jqueryDotAjaxfileLib.Object): Assertion = js.native
+  def instanceOf(constructor: jqueryDotAjaxfileLib.Object, message: java.lang.String): Assertion = js.native
+  def instanceof(constructor: jqueryDotAjaxfileLib.Object): Assertion = js.native
+  def instanceof(constructor: jqueryDotAjaxfileLib.Object, message: java.lang.String): Assertion = js.native
 }
 

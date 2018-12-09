@@ -45,7 +45,7 @@ object MarketplaceMeteringNs extends js.Object {
     /**
          * Checks whether you have the permissions required for the action, but does not make the request. If you have the permissions, the request returns DryRunOperation; otherwise, it returns UnauthorizedException.
          */
-    var DryRun: scala.Boolean
+    var DryRun: Boolean
     /**
          * Product code is used to uniquely identify a product in AWS Marketplace. The product code should be the same as the one used during the publishing of a new product.
          */
@@ -69,7 +69,7 @@ object MarketplaceMeteringNs extends js.Object {
     /**
          * Metering record id.
          */
-    var MeteringRecordId: js.UndefOr[java.lang.String] = js.undefined
+    var MeteringRecordId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -268,7 +268,7 @@ object MarketplaceMeteringNs extends js.Object {
     /**
          * The MeteringRecordId is a unique identifier for this metering event.
          */
-    var MeteringRecordId: js.UndefOr[java.lang.String] = js.undefined
+    var MeteringRecordId: js.UndefOr[String] = js.undefined
     /**
          * The UsageRecordResult Status indicates the status of an individual UsageRecord processed by BatchMeterUsage.    Success- The UsageRecord was accepted and honored by BatchMeterUsage.    CustomerNotSubscribed- The CustomerIdentifier specified is not subscribed to your product. The UsageRecord was not honored. Future UsageRecords for this customer will fail until the customer subscribes to your product.    DuplicateRecord- Indicates that the UsageRecord was invalid and not honored. A previously metered UsageRecord had the same customer, dimension, and time, but a different quantity.  
          */

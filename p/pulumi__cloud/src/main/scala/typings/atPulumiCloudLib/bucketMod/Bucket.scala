@@ -13,14 +13,14 @@ trait Bucket extends js.Object {
        * @param key The key of the blob to delete.
        * @returns A promise for the success or failure of the delete.
        */
-  def delete(key: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def delete(key: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
        * Get a blob from the bucket.
        *
        * @param key The key of the blog to retrieve.
        * @returns A promise for the success or failure of the get.
        */
-  def get(key: java.lang.String): stdLib.Promise[nodeLib.Buffer] = js.native
+  def get(key: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
   /**
        * Registers a handler to be notified when blobs are deleted from the bucket.
        *
@@ -59,6 +59,6 @@ trait Bucket extends js.Object {
        * @param key The key to use for retreiving this blob later.
        * @returns A promise for the success or failure of the put.
        */
-  def put(key: java.lang.String, contents: nodeLib.Buffer): stdLib.Promise[scala.Unit] = js.native
+  def put(key: java.lang.String, contents: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
 }
 

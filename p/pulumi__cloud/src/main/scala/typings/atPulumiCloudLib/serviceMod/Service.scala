@@ -27,7 +27,7 @@ trait Service extends js.Object {
        *
        * Only usable on the inside.
         */
-  def getEndpoint(): stdLib.Promise[Endpoint] = js.native
+  def getEndpoint(): js.Promise[Endpoint] = js.native
   /**
         * The exposed hostname and port for connecting to the given containerName
        * on the given containerPort.  If containerName is not provided, the first
@@ -36,7 +36,7 @@ trait Service extends js.Object {
        *
        * Only usable on the inside.
         */
-  def getEndpoint(containerName: java.lang.String): stdLib.Promise[Endpoint] = js.native
+  def getEndpoint(containerName: java.lang.String): js.Promise[Endpoint] = js.native
   /**
         * The exposed hostname and port for connecting to the given containerName
        * on the given containerPort.  If containerName is not provided, the first
@@ -45,6 +45,6 @@ trait Service extends js.Object {
        *
        * Only usable on the inside.
         */
-  def getEndpoint(containerName: java.lang.String, containerPort: scala.Double): stdLib.Promise[Endpoint] = js.native
+  def getEndpoint(containerName: java.lang.String, containerPort: scala.Double): js.Promise[Endpoint] = js.native
 }
 

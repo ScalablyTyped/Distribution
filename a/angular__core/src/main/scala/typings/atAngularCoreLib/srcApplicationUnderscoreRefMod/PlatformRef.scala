@@ -35,7 +35,7 @@ class PlatformRef () extends js.Object {
        * ```
        *
        */
-  def bootstrapModule[M](moduleType: atAngularCoreLib.srcTypeMod.Type[M]): stdLib.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
+  def bootstrapModule[M](moduleType: atAngularCoreLib.srcTypeMod.Type[M]): js.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
   /**
        * Creates an instance of an `@NgModule` for a given platform using the given runtime compiler.
        *
@@ -55,7 +55,7 @@ class PlatformRef () extends js.Object {
   def bootstrapModule[M](
     moduleType: atAngularCoreLib.srcTypeMod.Type[M],
     compilerOptions: atAngularCoreLib.srcLinkerCompilerMod.CompilerOptions with BootstrapOptions
-  ): stdLib.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
+  ): js.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
   /**
        * Creates an instance of an `@NgModule` for a given platform using the given runtime compiler.
        *
@@ -75,7 +75,7 @@ class PlatformRef () extends js.Object {
   def bootstrapModule[M](
     moduleType: atAngularCoreLib.srcTypeMod.Type[M],
     compilerOptions: js.Array[atAngularCoreLib.srcLinkerCompilerMod.CompilerOptions with BootstrapOptions]
-  ): stdLib.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
+  ): js.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
   /**
        * Creates an instance of an `@NgModule` for the given platform
        * for offline compilation.
@@ -98,7 +98,7 @@ class PlatformRef () extends js.Object {
        * let moduleRef = platformBrowser().bootstrapModuleFactory(MyModuleNgFactory);
        * ```
        */
-  def bootstrapModuleFactory[M](moduleFactory: atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[M]): stdLib.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
+  def bootstrapModuleFactory[M](moduleFactory: atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[M]): js.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
   /**
        * Creates an instance of an `@NgModule` for the given platform
        * for offline compilation.
@@ -124,7 +124,7 @@ class PlatformRef () extends js.Object {
   def bootstrapModuleFactory[M](
     moduleFactory: atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[M],
     options: BootstrapOptions
-  ): stdLib.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
+  ): js.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
   /**
        * Destroy the Angular platform and all Angular applications on the page.
        */

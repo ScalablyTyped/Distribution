@@ -33,7 +33,7 @@ trait Knex
   def transaction[T](
     transactionScope: js.Function1[
       /* trx */ knexLib.knexMod.KnexNs.Transaction, 
-      stdLib.Promise[T] | bluebirdLib.bluebirdMod.namespaced[T] | scala.Unit
+      js.Promise[T] | bluebirdLib.bluebirdMod.namespaced[T] | scala.Unit
     ]
   ): bluebirdLib.bluebirdMod.namespaced[T] = js.native
 }

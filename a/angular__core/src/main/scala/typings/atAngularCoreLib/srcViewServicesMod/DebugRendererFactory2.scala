@@ -16,6 +16,6 @@ class DebugRendererFactory2 protected ()
   @JSName("end")
   def end_MDebugRendererFactory2(): scala.Unit = js.native
   @JSName("whenRenderingDone")
-  def whenRenderingDone_MDebugRendererFactory2(): stdLib.Promise[_] = js.native
+  def whenRenderingDone_MDebugRendererFactory2(): js.Promise[_] = js.native
 }
 

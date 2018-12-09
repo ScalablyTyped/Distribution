@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Path")
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IPathOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+@JSImport("fabric/fabric-impl", "Path")
 @js.native
-class Path () extends IPathOptions {
+class Path () extends Object {
   /**
   	 * Constructor
   	 * @param path Path data (sequence of coordinates and corresponding "command" tokens)
@@ -34,44 +34,9 @@ class Path () extends IPathOptions {
   	 */
   def this(path: js.Array[_], options: IPathOptions) = this()
   var pathOffset: Point = js.native
-  /**
-  	 * Returns number representation of an instance complexity
-  	 * @return complexity of this instance
-  	 */
-  def complexity(): scala.Double = js.native
   def initialize(): Path = js.native
   def initialize(path: js.Array[_]): Path = js.native
   def initialize(path: js.Array[_], options: IPathOptions): Path = js.native
-  /**
-  	 * Renders path on a specified context
-  	 * @param ctx context to render path on
-  	 * @param [noTransform] When true, context is not transformed
-  	 */
-  def render(ctx: stdLib.CanvasRenderingContext2D, noTransform: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * Returns dataless object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toDatalessObject(): js.Any = js.native
-  /**
-  	 * Returns dataless object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toDatalessObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(): js.Any = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Returns svg representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
@@ -86,8 +51,7 @@ class Path () extends IPathOptions {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Path")
+@JSImport("fabric/fabric-impl", "Path")
 @js.native
 object Path extends js.Object {
   /**

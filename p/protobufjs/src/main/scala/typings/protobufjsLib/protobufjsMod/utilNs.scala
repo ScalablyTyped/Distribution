@@ -179,7 +179,7 @@ object utilNs extends js.Object {
        * @param params Function arguments
        * @returns Promisified function
        */
-  def asPromise(fn: protobufjsLib.asPromiseCallback, ctx: js.Any, params: js.Any*): stdLib.Promise[_] = js.native
+  def asPromise(fn: protobufjsLib.asPromiseCallback, ctx: js.Any, params: js.Any*): js.Promise[_] = js.native
   /**
        * Converts a string to camel case.
        * @param str String to convert
@@ -256,7 +256,7 @@ object utilNs extends js.Object {
        * @param [options] Fetch options
        * @returns Promise
        */
-  def fetch(path: java.lang.String): stdLib.Promise[java.lang.String | stdLib.Uint8Array] = js.native
+  def fetch(path: java.lang.String): js.Promise[java.lang.String | stdLib.Uint8Array] = js.native
   /**
        * Fetches the contents of a file.
        * @param path File path or url
@@ -269,7 +269,7 @@ object utilNs extends js.Object {
        * @param [options] Fetch options
        * @returns Promise
        */
-  def fetch(path: java.lang.String, options: protobufjsLib.protobufjsMod.IFetchOptions): stdLib.Promise[java.lang.String | stdLib.Uint8Array] = js.native
+  def fetch(path: java.lang.String, options: protobufjsLib.protobufjsMod.IFetchOptions): js.Promise[java.lang.String | stdLib.Uint8Array] = js.native
   /**
        * Requires a module only if available.
        * @param moduleName Module to require

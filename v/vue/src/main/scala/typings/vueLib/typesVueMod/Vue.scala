@@ -158,7 +158,7 @@ trait Vue extends js.Object {
   @JSName("$mount")
   def $mount(elementOrSelector: stdLib.Element, hydrating: scala.Boolean): this.type = js.native
   @JSName("$nextTick")
-  def $nextTick(): stdLib.Promise[scala.Unit] = js.native
+  def $nextTick(): js.Promise[scala.Unit] = js.native
   @JSName("$nextTick")
   def $nextTick(callback: js.ThisFunction0[/* this */ this.type, scala.Unit]): scala.Unit = js.native
   @JSName("$off")

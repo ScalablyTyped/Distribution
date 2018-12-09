@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 @JSImport("child_process", "exec")
 @js.native
 object execNs extends js.Object {
-  def `__promisify__`(command: java.lang.String): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+  def `__promisify__`(command: java.lang.String): js.Promise[nodeLib.Anon_Stdout] = js.native
   def `__promisify__`(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecOptions
-  ): stdLib.Promise[nodeLib.Anon_StdoutStderrString] = js.native
+  ): js.Promise[nodeLib.Anon_StdoutStderrString] = js.native
   def `__promisify__`(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingBuffer with nodeLib.childUnderscoreProcessMod.ExecOptions
-  ): stdLib.Promise[nodeLib.Anon_StdoutStderr] = js.native
+  ): js.Promise[nodeLib.Anon_StdoutStderr] = js.native
   def `__promisify__`(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingBufferEncoding with nodeLib.childUnderscoreProcessMod.ExecOptions
-  ): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
-  def `__promisify__`(command: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecOptions): stdLib.Promise[nodeLib.Anon_Stdout] = js.native
+  ): js.Promise[nodeLib.Anon_Stdout] = js.native
+  def `__promisify__`(command: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecOptions): js.Promise[nodeLib.Anon_Stdout] = js.native
 }
 

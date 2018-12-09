@@ -13,7 +13,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
        * @param doc - the document to insert. Should contain an _id if docId is not specified
        * If the document already exists, then the Promise will just resolve immediately.
        */
-  def putIfNotExists[Model](doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.Document[Content with Model]): stdLib.Promise[UpsertResponse] = js.native
+  def putIfNotExists[Model](doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.Document[Content with Model]): js.Promise[UpsertResponse] = js.native
   //
   /**
        * Put a new document with the given docId, if it doesn't already exist.  If a callback is not provided,
@@ -41,7 +41,7 @@ trait Database[Content /* <: js.Object */] extends js.Object {
   def upsert[Model](
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     diffFun: UpsertDiffCallback[Content with Model]
-  ): stdLib.Promise[UpsertResponse] = js.native
+  ): js.Promise[UpsertResponse] = js.native
   /**
        * Perform an upsert (update or insert) operation. If a callback is not provided, the Promise based version
        * of this function will be called.

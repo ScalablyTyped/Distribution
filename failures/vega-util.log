@@ -1,4 +1,4 @@
-[error] PhaseRes.scala:75 Caught exception [id => vega-util, phase => typescript] java.lang.RuntimeException: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/vega-util/tsconfig.json: io.circe.ParsingFailure: expected json value got ] (line 13, column 313)
+[error] PhaseRes.scala:75 Caught exception: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/vega-util/tsconfig.json: io.circe.ParsingFailure: expected json value got ] (line 13, column 313) [id => vega-util, phase => typescript] java.lang.RuntimeException: Error while parsing: /home/tso/tmp/tso-cache/npm/node_modules/vega-util/tsconfig.json: io.circe.ParsingFailure: expected json value got ] (line 13, column 313)
 	at scala.sys.package$.error(package.scala:26)
 	at com.olvind.tso.importer.Json$.apply(Json.scala:12)
 	at com.olvind.tso.importer.Json$.opt(Json.scala:17)

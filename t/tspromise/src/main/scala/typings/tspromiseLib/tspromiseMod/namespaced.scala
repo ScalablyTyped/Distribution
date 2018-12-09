@@ -24,7 +24,7 @@ object namespaced extends js.Object {
   def async[T1, T2, TR](callback: js.Function2[/* p1 */ T1, /* p2 */ T2, TR]): js.Function2[/* p1 */ T1, /* p2 */ T2, tspromiseLib.Thenable[TR]] = js.native
   def async[T1, T2, T3, TR](callback: js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, TR]): js.Function3[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, tspromiseLib.Thenable[TR]] = js.native
   def async[T1, T2, T3, T4, TR](callback: js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, TR]): js.Function4[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, tspromiseLib.Thenable[TR]] = js.native
-  def nfcall[T](obj: js.Any, methodName: java.lang.String, args: js.Any*): tspromiseLib.Thenable[T] = js.native
+  def nfcall[T](obj: js.Any, methodName: nodeLib.String, args: js.Any*): tspromiseLib.Thenable[T] = js.native
   def reject[T](error: nodeLib.Error): tspromiseLib.Thenable[T] = js.native
   def resolve[T](): tspromiseLib.Thenable[T] = js.native
   def resolve[T](promise: tspromiseLib.Thenable[T]): tspromiseLib.Thenable[T] = js.native

@@ -191,7 +191,7 @@ class TinderClient () extends js.Object {
            * @param {String} id is the facebook id of the job
            * @param {Function} callback the callback to invoke when the request completes
            */
-  def updateJob(id: java.lang.String, callback: Callback[_]): scala.Unit = js.native
+  def updateJob(id: nodeLib.String, callback: Callback[_]): scala.Unit = js.native
   /**
            * Update the passport location
            * @param {Number} lon the longitude
@@ -228,7 +228,7 @@ class TinderClient () extends js.Object {
            * @param {String} id is the facebook id of the school
            * @param {Function} callback the callback to invoke when the request completes
            */
-  def updateSchool(id: java.lang.String, callback: Callback[_]): scala.Unit = js.native
+  def updateSchool(id: nodeLib.String, callback: Callback[_]): scala.Unit = js.native
   /**
            * Post a new picture to the current account from Facebook
            * @param {String} pictureId is the facebook id of the picture

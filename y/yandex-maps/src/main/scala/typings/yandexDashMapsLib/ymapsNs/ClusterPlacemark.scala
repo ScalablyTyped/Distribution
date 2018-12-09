@@ -21,7 +21,7 @@ class ClusterPlacemark protected ()
   var state: yandexDashMapsLib.ymapsNs.dataNs.Manager = js.native
   def getBounds(): js.Array[js.Array[scala.Double]] | scala.Null = js.native
   def getGeoObjects(): js.Array[IGeoObject] = js.native
-  def getOverlay(): stdLib.Promise[IOverlay | scala.Null] = js.native
+  def getOverlay(): js.Promise[IOverlay | scala.Null] = js.native
   def getOverlaySync(): IOverlay | scala.Null = js.native
 }
 

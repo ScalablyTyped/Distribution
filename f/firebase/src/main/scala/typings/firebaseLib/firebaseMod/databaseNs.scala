@@ -16,7 +16,7 @@ object databaseNs extends js.Object {
   @JSName("ServerValue")
   @js.native
   object ServerValueNs extends js.Object {
-    var TIMESTAMP: js.Object = js.native
+    var TIMESTAMP: coreDashJsLib.Object = js.native
   }
   
 }

@@ -12,6 +12,6 @@ trait IAuthService extends js.Object {
   def loginCancelled(data: js.Any, reason: js.Any): scala.Unit = js.native
   def loginConfirmed(): scala.Unit = js.native
   def loginConfirmed(data: js.Any): scala.Unit = js.native
-  def loginConfirmed(data: js.Any, configUpdater: js.Function): scala.Unit = js.native
+  def loginConfirmed(data: js.Any, configUpdater: angularLib.angularMod.Global.Function): scala.Unit = js.native
 }
 

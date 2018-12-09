@@ -15,7 +15,7 @@ package object swDashPrecacheMod {
         scala.Unit
       ]
     ], 
-    stdLib.Promise[java.lang.String]
+    js.Promise[java.lang.String]
   ]
   type Handler = swDashPrecacheLib.swDashPrecacheLibStrings.networkFirst | swDashPrecacheLib.swDashPrecacheLibStrings.cacheFirst | swDashPrecacheLib.swDashPrecacheLibStrings.fastest | swDashPrecacheLib.swDashPrecacheLibStrings.cacheOnly | swDashPrecacheLib.swDashPrecacheLibStrings.networkOnly | swDashToolboxLib.swDashToolboxMod.Handler
   type Method = swDashPrecacheLib.swDashPrecacheLibStrings.get | swDashPrecacheLib.swDashPrecacheLibStrings.post | swDashPrecacheLib.swDashPrecacheLibStrings.put | swDashPrecacheLib.swDashPrecacheLibStrings.delete | swDashPrecacheLib.swDashPrecacheLibStrings.head
@@ -23,6 +23,6 @@ package object swDashPrecacheMod {
     /* filePath */ java.lang.String, 
     /* options */ js.UndefOr[Options], 
     /* callback */ js.UndefOr[js.Function1[/* error */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]], 
-    stdLib.Promise[java.lang.String]
+    js.Promise[java.lang.String]
   ]
 }

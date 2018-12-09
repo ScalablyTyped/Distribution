@@ -14,7 +14,7 @@ trait SourcesPanel extends js.Object {
            * @deprecated Unsupported on Firefox at this time.
            */
   var createSidebarPane: js.UndefOr[
-    js.Function1[/* title */ java.lang.String, stdLib.Promise[js.UndefOr[ExtensionSidebarPane]]]
+    js.Function1[/* title */ java.lang.String, js.Promise[js.UndefOr[ExtensionSidebarPane]]]
   ] = js.undefined
   /**
            * Fired when an object is selected in the panel.

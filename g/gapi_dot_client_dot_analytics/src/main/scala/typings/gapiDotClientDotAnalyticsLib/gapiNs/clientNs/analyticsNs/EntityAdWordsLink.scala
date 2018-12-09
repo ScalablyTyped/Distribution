@@ -10,7 +10,7 @@ trait EntityAdWordsLink extends js.Object {
   /** A list of AdWords client accounts. These cannot be MCC accounts. This field is required when creating an AdWords link. It cannot be empty. */
   var adWordsAccounts: js.UndefOr[js.Array[AdWordsAccount]] = js.undefined
   /** Web property being linked. */
-  var entity: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_WebPropertyRef_60910529] = js.undefined
+  var entity: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_WebPropertyRefOptional] = js.undefined
   /** Entity AdWords link ID */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** Resource type for entity AdWords link. */

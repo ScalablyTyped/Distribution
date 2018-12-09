@@ -145,9 +145,9 @@ object i18nNs extends js.Object {
   // keep in mind that locale must be loaded first (if it is not bundled)
   def runWithLocale(locale: java.lang.String, func: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
   // locale setter / getter
-  def setLocale(locale: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def setLocale(locale: java.lang.String): js.Promise[scala.Unit] = js.native
   // locale setter / getter
-  def setLocale(locale: java.lang.String, params: meteorDashUniverseDashI18nLib.`universe:i18nMod`.LocateParams): stdLib.Promise[scala.Unit] = js.native
+  def setLocale(locale: java.lang.String, params: meteorDashUniverseDashI18nLib.`universe:i18nMod`.LocateParams): js.Promise[scala.Unit] = js.native
   def setLocaleOnConnection(locale: java.lang.String): scala.Unit = js.native
   def setLocaleOnConnection(locale: java.lang.String, connectionId: scala.Double): scala.Unit = js.native
   // options setter

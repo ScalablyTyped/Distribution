@@ -14,14 +14,14 @@ class Paginator[T /* <: ionicLib.definitionsMod.Response[js.Array[js.Object]] */
   @JSName("guard")
   var guard_Original: ionicLib.definitionsMod.PaginatorGuard[T] = js.native
   @JSName(ScalablyTyped.runtime.Symbol.iterator)
-  var iterator: js.Function0[this.type] = js.native
+  var iterator: js.Function0[Paginator[T]] = js.native
   var max: js.UndefOr[scala.Double] = js.native
   @JSName("reqgen")
   var reqgen_Original: ionicLib.definitionsMod.PaginatorRequestGenerator = js.native
   /* CompleteClass */
   override val state: ionicLib.definitionsMod.PagePaginatorState = js.native
   /* protected */ def guard(res: ionicLib.definitionsMod.APIResponseSuccess): /* is T */scala.Boolean = js.native
-  def next(): nodeLib.IteratorResult[stdLib.Promise[T]] = js.native
-  /* protected */ def reqgen(): stdLib.Promise[ionicLib.Anon_Req] = js.native
+  def next(): nodeLib.IteratorResult[js.Promise[T]] = js.native
+  /* protected */ def reqgen(): js.Promise[ionicLib.Anon_Req] = js.native
 }
 

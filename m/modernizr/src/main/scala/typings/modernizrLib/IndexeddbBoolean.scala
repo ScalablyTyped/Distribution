@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Boolean */ 
-trait IndexeddbBoolean extends js.Object {
+
+trait IndexeddbBoolean
+  extends stdLib.Boolean {
   var deletedatabase: scala.Boolean
 }
 

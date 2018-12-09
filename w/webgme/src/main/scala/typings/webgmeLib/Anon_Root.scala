@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Root extends js.Object {
-  def apply(root: webgmeLib.CoreNs.Node, patch: webgmeLib.CoreNs.DataObject): stdLib.Promise[webgmeLib.CoreNs.DataObject] = js.native
+  def apply(root: webgmeLib.CoreNs.Node, patch: webgmeLib.CoreNs.DataObject): js.Promise[webgmeLib.CoreNs.DataObject] = js.native
   def apply(
     root: webgmeLib.CoreNs.Node,
     patch: webgmeLib.CoreNs.DataObject,

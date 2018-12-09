@@ -79,7 +79,7 @@ trait IBasePickerProps[T]
   var onEmptyInputFocus: js.UndefOr[
     js.Function1[
       /* selectedItems */ js.UndefOr[js.Array[T]], 
-      js.Array[T] | stdLib.PromiseLike[js.Array[T]]
+      js.Array[T] | js.Thenable[js.Array[T]]
     ]
   ] = js.native
   /**
@@ -97,7 +97,7 @@ trait IBasePickerProps[T]
     js.Function2[
       /* filter */ java.lang.String, 
       /* selectedItems */ js.UndefOr[js.Array[T]], 
-      js.Array[T] | stdLib.PromiseLike[js.Array[T]]
+      js.Array[T] | js.Thenable[js.Array[T]]
     ]
   ] = js.native
   /**
@@ -108,9 +108,7 @@ trait IBasePickerProps[T]
        * A callback to process a selection after the user selects something from the picker. If the callback returns null,
        * the item will not be added to the picker.
        */
-  var onItemSelected: js.UndefOr[
-    js.Function1[/* selectedItem */ js.UndefOr[T], T | stdLib.PromiseLike[T] | scala.Null]
-  ] = js.native
+  var onItemSelected: js.UndefOr[js.Function1[/* selectedItem */ js.UndefOr[T], T | js.Thenable[T] | scala.Null]] = js.native
   /**
        * A callback for when a persona is removed from the suggestion list
        */
@@ -176,12 +174,12 @@ trait IBasePickerProps[T]
        * Returns the already selected items so the resolver can filter them out.
        * If used in conjunction with resolveDelay this will ony kick off after the delay throttle.
        */
-  def onResolveSuggestions(filter: java.lang.String): js.Array[T] | stdLib.PromiseLike[js.Array[T]] = js.native
+  def onResolveSuggestions(filter: java.lang.String): js.Array[T] | js.Thenable[js.Array[T]] = js.native
   /**
        * A callback for what should happen when a person types text into the input.
        * Returns the already selected items so the resolver can filter them out.
        * If used in conjunction with resolveDelay this will ony kick off after the delay throttle.
        */
-  def onResolveSuggestions(filter: java.lang.String, selectedItems: js.Array[T]): js.Array[T] | stdLib.PromiseLike[js.Array[T]] = js.native
+  def onResolveSuggestions(filter: java.lang.String, selectedItems: js.Array[T]): js.Array[T] | js.Thenable[js.Array[T]] = js.native
 }
 

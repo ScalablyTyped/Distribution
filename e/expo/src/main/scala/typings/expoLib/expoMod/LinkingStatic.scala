@@ -11,6 +11,6 @@ trait LinkingStatic
   def makeUrl(path: java.lang.String): java.lang.String = js.native
   def makeUrl(path: java.lang.String, queryParams: HashMap): java.lang.String = js.native
   def parse(url: java.lang.String): LinkInfo = js.native
-  def parseInitialURLAsync(): stdLib.Promise[LinkInfo] = js.native
+  def parseInitialURLAsync(): js.Promise[LinkInfo] = js.native
 }
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Data extends js.Object {
-  var data: js.Function0[stdLib.Promise[js.Array[java.lang.String]]]
+  var data: js.Function0[js.Promise[js.Array[java.lang.String]]]
 }
 

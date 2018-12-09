@@ -72,25 +72,25 @@ class Object ()
 @JSImport("leanengine", "Object")
 @js.native
 object Object extends js.Object {
-  def destroyAll[T](list: js.Array[js.Object]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+  def destroyAll[T](list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
   def destroyAll[T](
-    list: js.Array[js.Object],
+    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object],
     options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.ObjectNs.DestroyAllOptions
   ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
   def extend(className: java.lang.String): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any, classProps: js.Any): js.Any = js.native
   def fetchAll[T](
-    list: js.Array[js.Object],
+    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object],
     options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SuccessFailureOptions
   ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
   def fetchAllIfNeeded[T](
-    list: js.Array[js.Object],
+    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object],
     options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SuccessFailureOptions
   ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
-  def saveAll[T](list: js.Array[js.Object]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
+  def saveAll[T](list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object]): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
   def saveAll[T](
-    list: js.Array[js.Object],
+    list: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object],
     options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.ObjectNs.SaveAllOptions
   ): avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T] = js.native
 }

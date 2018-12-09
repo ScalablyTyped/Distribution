@@ -18,10 +18,9 @@ import scala.scalajs.js.annotation._
      * A Parse.Role is a local representation of a role persisted to the Parse
      * cloud.
      */
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSGlobal("Parse.Role")
+@JSGlobal("Parse.Role")
 @js.native
-class Role protected () extends js.Object {
+class Role protected () extends Object {
   def this(name: java.lang.String, acl: ACL) = this()
   def getName(): java.lang.String = js.native
   def getRoles(): Relation[Role, Role] = js.native

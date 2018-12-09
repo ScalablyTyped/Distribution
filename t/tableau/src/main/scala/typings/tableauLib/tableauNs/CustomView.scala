@@ -21,7 +21,7 @@ class CustomView () extends js.Object {
   /** Gets the Workbook to which this CustomView belongs. */
   def getWorkbook(): Workbook = js.native
   /** After saveAsync() is called, the result of the getUrl method is no longer blank. */
-  def saveAsync(): stdLib.Promise[CustomView] = js.native
+  def saveAsync(): js.Promise[CustomView] = js.native
   /** Indicates whether the custom view is public or private. */
   def setAdvertised(bool: scala.Boolean): scala.Boolean = js.native
   /** User-friendly name for the custom view */

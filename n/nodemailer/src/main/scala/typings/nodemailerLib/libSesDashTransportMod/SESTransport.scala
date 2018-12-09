@@ -39,7 +39,7 @@ trait SESTransport
   @JSName("prependOnceListener")
   def prependOnceListener_idle(event: nodemailerLib.nodemailerLibStrings.idle, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("verify")
-  def verify_MSESTransport(): stdLib.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
+  def verify_MSESTransport(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
   /** Verifies SES configuration */
   @JSName("verify")
   def verify_MSESTransport(

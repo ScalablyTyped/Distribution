@@ -38,7 +38,7 @@ class Observable[T] ()
        * @return {Promise} a promise that either resolves on observable completion or
        *  rejects with the handled error
        */
-  def forEach(next: js.Function1[/* value */ T, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def forEach(next: js.Function1[/* value */ T, scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
        * @method forEach
        * @param {Function} next a handler for each value emitted by the observable
@@ -46,7 +46,7 @@ class Observable[T] ()
        * @return {Promise} a promise that either resolves on observable completion or
        *  rejects with the handled error
        */
-  def forEach(next: js.Function1[/* value */ T, scala.Unit], promiseCtor: stdLib.PromiseConstructorLike): stdLib.Promise[scala.Unit] = js.native
+  def forEach(next: js.Function1[/* value */ T, scala.Unit], promiseCtor: stdLib.PromiseConstructorLike): js.Promise[scala.Unit] = js.native
   /**
        * Creates a new Observable, with this Observable as the source, and the passed
        * operator defined as the new observable's operator.
@@ -129,9 +129,9 @@ class Observable[T] ()
     op9: rxjsLib.internalTypesMod.OperatorFunction[H, I],
     operations: (rxjsLib.internalTypesMod.OperatorFunction[_, _])*
   ): Observable[js.Object] = js.native
-  def toPromise[T](`this`: Observable[T]): stdLib.Promise[T] = js.native
-  def toPromise[T](`this`: Observable[T], PromiseCtor: stdLib.PromiseConstructor): stdLib.Promise[T] = js.native
-  def toPromise[T](`this`: Observable[T], PromiseCtor: stdLib.PromiseConstructorLike): stdLib.Promise[T] = js.native
+  def toPromise[T](`this`: Observable[T]): js.Promise[T] = js.native
+  def toPromise[T](`this`: Observable[T], PromiseCtor: stdLib.PromiseConstructor): js.Promise[T] = js.native
+  def toPromise[T](`this`: Observable[T], PromiseCtor: stdLib.PromiseConstructorLike): js.Promise[T] = js.native
 }
 
 @JSImport("rxjs/internal/Observable", "Observable")

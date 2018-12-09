@@ -32,7 +32,7 @@ object Downloader extends js.Object {
     fileName: java.lang.String,
     outputDir: java.lang.String,
     contentLength: scala.Double
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
        * Http get the file. Check the content length of the file before writing the file.
        * If the content length does not match, remove it and download the file.
@@ -53,6 +53,6 @@ object Downloader extends js.Object {
     outputDir: java.lang.String,
     contentLength: scala.Double,
     callback: js.Function
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
 }
 

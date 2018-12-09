@@ -48,7 +48,7 @@ class JWT protected ()
        * @param callback Optional callback.
        * @returns Promise that resolves with credentials
        */
-  def authorize(): stdLib.Promise[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials] = js.native
+  def authorize(): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials] = js.native
   def authorize(
     callback: js.Function2[
       /* err */ nodeLib.Error | scala.Null, 
@@ -96,7 +96,7 @@ class JWT protected ()
        * @param inputStream The input stream.
        * @param callback Optional callback.
        */
-  def fromStream(inputStream: nodeLib.streamMod.Readable): stdLib.Promise[scala.Unit] = js.native
+  def fromStream(inputStream: nodeLib.streamMod.Readable): js.Promise[scala.Unit] = js.native
   def fromStream(
     inputStream: nodeLib.streamMod.Readable,
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
@@ -105,6 +105,6 @@ class JWT protected ()
        * Using the key or keyFile on the JWT client, obtain an object that contains
        * the key and the client email.
        */
-  def getCredentials(): stdLib.Promise[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody] = js.native
+  def getCredentials(): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody] = js.native
 }
 

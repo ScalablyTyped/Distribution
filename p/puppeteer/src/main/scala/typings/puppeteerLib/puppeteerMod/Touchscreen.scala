@@ -12,6 +12,6 @@ trait Touchscreen extends js.Object {
      * @param x The x position.
      * @param y The y position.
      */
-  def tap(x: scala.Double, y: scala.Double): stdLib.Promise[scala.Unit]
+  def tap(x: scala.Double, y: scala.Double): js.Promise[scala.Unit]
 }
 

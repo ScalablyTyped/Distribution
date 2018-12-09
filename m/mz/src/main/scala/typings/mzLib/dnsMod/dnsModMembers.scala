@@ -37,8 +37,8 @@ object dnsModMembers extends js.Object {
   val TIMEOUT: java.lang.String = js.native
   val V4MAPPED: scala.Double = js.native
   def getServers(): js.Array[java.lang.String] = js.native
-  def lookup(domain: java.lang.String): stdLib.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
-  def lookup(domain: java.lang.String, family: scala.Double): stdLib.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
+  def lookup(domain: java.lang.String): js.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
+  def lookup(domain: java.lang.String, family: scala.Double): js.Promise[js.Tuple2[java.lang.String, scala.Double]] = js.native
   def lookup(
     hostname: java.lang.String,
     callback: js.Function3[
@@ -97,8 +97,8 @@ object dnsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolve(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
-  def resolve(domain: java.lang.String, rrtype: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolve(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+  def resolve(domain: java.lang.String, rrtype: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolve(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -116,7 +116,7 @@ object dnsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolve4(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolve4(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolve4(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -143,7 +143,7 @@ object dnsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolve6(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolve6(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolve6(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -178,7 +178,7 @@ object dnsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveCname(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolveCname(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolveCname(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -187,7 +187,7 @@ object dnsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveMx(domain: java.lang.String): stdLib.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
+  def resolveMx(domain: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.MxRecord]] = js.native
   def resolveMx(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -204,7 +204,7 @@ object dnsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveNs(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolveNs(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolveNs(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -229,7 +229,7 @@ object dnsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveSrv(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolveSrv(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolveSrv(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -238,7 +238,7 @@ object dnsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def resolveTxt(domain: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def resolveTxt(domain: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def resolveTxt(
     hostname: java.lang.String,
     callback: js.Function2[
@@ -357,7 +357,7 @@ object dnsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def reverse(ip: java.lang.String): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def reverse(ip: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def reverse(
     ip: java.lang.String,
     callback: js.Function2[

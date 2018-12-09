@@ -159,6 +159,6 @@ class Animatable protected () extends js.Object {
            * Wait asynchronously for the animation to end
            * @returns a promise which will be fullfilled when the animation ends
            */
-  def waitAsync(): stdLib.Promise[Animatable] = js.native
+  def waitAsync(): js.Promise[Animatable] = js.native
 }
 

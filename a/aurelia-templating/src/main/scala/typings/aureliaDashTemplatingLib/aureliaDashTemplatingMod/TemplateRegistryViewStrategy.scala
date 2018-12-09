@@ -22,7 +22,7 @@ class TemplateRegistryViewStrategy protected () extends js.Object {
       * @param target A class from which to extract metadata of additional resources to load.
       * @return A promise for the view factory that is produced by this strategy.
       */
-  def loadViewFactory(viewEngine: ViewEngine, compileInstruction: ViewCompileInstruction): stdLib.Promise[ViewFactory] = js.native
+  def loadViewFactory(viewEngine: ViewEngine, compileInstruction: ViewCompileInstruction): js.Promise[ViewFactory] = js.native
   /**
       * Loads a view factory.
       * @param viewEngine The view engine to use during the load process.
@@ -35,7 +35,7 @@ class TemplateRegistryViewStrategy protected () extends js.Object {
     viewEngine: ViewEngine,
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext
-  ): stdLib.Promise[ViewFactory] = js.native
+  ): js.Promise[ViewFactory] = js.native
   /**
       * Loads a view factory.
       * @param viewEngine The view engine to use during the load process.
@@ -49,6 +49,6 @@ class TemplateRegistryViewStrategy protected () extends js.Object {
     compileInstruction: ViewCompileInstruction,
     loadContext: ResourceLoadContext,
     target: js.Any
-  ): stdLib.Promise[ViewFactory] = js.native
+  ): js.Promise[ViewFactory] = js.native
 }
 

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @js.native
-trait Application extends js.Object {
+@js.native
+trait Application extends Object {
   var APP_EVENTS: js.Array[java.lang.String] = js.native
   var ROUTE_VERBS: js.Array[java.lang.String] = js.native
   var last_location: js.Array[java.lang.String] = js.native
@@ -42,7 +41,6 @@ trait Application extends js.Object {
   def helpers(extensions: js.Any): js.Any = js.native
    // Behaviour similar to _.extend
   def isRunning(): scala.Boolean = js.native
-  def log(params: js.Any*): scala.Unit = js.native
   def lookupRoute(verb: java.lang.String, path: java.lang.String): js.Any = js.native
   def mapRoutes(route_array: js.Array[_]): Application = js.native
   def notFound(verb: java.lang.String, path: java.lang.String): js.Any = js.native

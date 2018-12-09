@@ -208,10 +208,10 @@ object MongoNs extends js.Object {
     var removed: js.UndefOr[js.Function1[/* id */ java.lang.String, scala.Unit]] = js.undefined
   }
   
-  /* RemoveDifficultInheritance: 
-  - Dropped Object */ 
+  
   trait Selector
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+    extends stdLib.Object
+       with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
   
   
   trait SortSpecifier extends js.Object

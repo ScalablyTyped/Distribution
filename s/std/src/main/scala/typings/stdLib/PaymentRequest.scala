@@ -13,7 +13,7 @@ trait PaymentRequest extends EventTarget {
   val shippingAddress: PaymentAddress | scala.Null = js.native
   val shippingOption: java.lang.String | scala.Null = js.native
   val shippingType: PaymentShippingType | scala.Null = js.native
-  def abort(): Promise[scala.Unit] = js.native
+  def abort(): js.Promise[scala.Unit] = js.native
   @JSName("addEventListener")
   def addEventListener_shippingaddresschange(
     `type`: stdLib.stdLibStrings.shippingaddresschange,
@@ -48,7 +48,7 @@ trait PaymentRequest extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  def canMakePayment(): Promise[scala.Boolean] = js.native
+  def canMakePayment(): js.Promise[scala.Boolean] = js.native
   @JSName("removeEventListener")
   def removeEventListener_shippingaddresschange(
     `type`: stdLib.stdLibStrings.shippingaddresschange,
@@ -83,7 +83,7 @@ trait PaymentRequest extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
-  def show(): Promise[PaymentResponse] = js.native
+  def show(): js.Promise[PaymentResponse] = js.native
 }
 
 @JSGlobal("PaymentRequest")

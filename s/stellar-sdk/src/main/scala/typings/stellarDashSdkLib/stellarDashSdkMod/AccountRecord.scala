@@ -27,16 +27,16 @@ trait AccountRecord extends Record {
   var thresholds: stellarDashSdkLib.Anon_Medthreshold = js.native
   @JSName("trades")
   var trades_Original: CallCollectionFunction[TradeRecord] = js.native
-  def data(options: stellarDashSdkLib.Anon_Value): stdLib.Promise[stellarDashSdkLib.Anon_Value] = js.native
-  def effects(): stdLib.Promise[CollectionRecord[EffectRecord]] = js.native
-  def effects(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[EffectRecord]] = js.native
-  def offers(): stdLib.Promise[CollectionRecord[OfferRecord]] = js.native
-  def offers(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[OfferRecord]] = js.native
-  def operations(): stdLib.Promise[CollectionRecord[OperationRecord]] = js.native
-  def operations(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[OperationRecord]] = js.native
-  def payments(): stdLib.Promise[CollectionRecord[PaymentOperationRecord]] = js.native
-  def payments(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[PaymentOperationRecord]] = js.native
-  def trades(): stdLib.Promise[CollectionRecord[TradeRecord]] = js.native
-  def trades(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[TradeRecord]] = js.native
+  def data(options: stellarDashSdkLib.Anon_Value): js.Promise[stellarDashSdkLib.Anon_Value] = js.native
+  def effects(): js.Promise[CollectionRecord[EffectRecord]] = js.native
+  def effects(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[EffectRecord]] = js.native
+  def offers(): js.Promise[CollectionRecord[OfferRecord]] = js.native
+  def offers(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[OfferRecord]] = js.native
+  def operations(): js.Promise[CollectionRecord[OperationRecord]] = js.native
+  def operations(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[OperationRecord]] = js.native
+  def payments(): js.Promise[CollectionRecord[PaymentOperationRecord]] = js.native
+  def payments(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[PaymentOperationRecord]] = js.native
+  def trades(): js.Promise[CollectionRecord[TradeRecord]] = js.native
+  def trades(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[TradeRecord]] = js.native
 }
 

@@ -97,56 +97,56 @@ trait KnockoutStatic extends js.Object {
   def renderTemplate(
     template: js.Any,
     dataOrBindingContext: KnockoutBindingContext,
-    options: js.Object,
+    options: Object,
     targetNodeOrNodeArray: js.Array[stdLib.Node],
     renderMode: java.lang.String
   ): js.Any = js.native
   def renderTemplate(
     template: js.Any,
     dataOrBindingContext: KnockoutBindingContext,
-    options: js.Object,
+    options: Object,
     targetNodeOrNodeArray: stdLib.Node,
     renderMode: java.lang.String
   ): js.Any = js.native
   def renderTemplate(
     template: js.Any,
     dataOrBindingContext: js.Any,
-    options: js.Object,
+    options: Object,
     targetNodeOrNodeArray: js.Array[stdLib.Node],
     renderMode: java.lang.String
   ): js.Any = js.native
   def renderTemplate(
     template: js.Any,
     dataOrBindingContext: js.Any,
-    options: js.Object,
+    options: Object,
     targetNodeOrNodeArray: stdLib.Node,
     renderMode: java.lang.String
   ): js.Any = js.native
   def renderTemplate(
     template: js.Function,
     dataOrBindingContext: KnockoutBindingContext,
-    options: js.Object,
+    options: Object,
     targetNodeOrNodeArray: js.Array[stdLib.Node],
     renderMode: java.lang.String
   ): js.Any = js.native
   def renderTemplate(
     template: js.Function,
     dataOrBindingContext: KnockoutBindingContext,
-    options: js.Object,
+    options: Object,
     targetNodeOrNodeArray: stdLib.Node,
     renderMode: java.lang.String
   ): js.Any = js.native
   def renderTemplate(
     template: js.Function,
     dataOrBindingContext: js.Any,
-    options: js.Object,
+    options: Object,
     targetNodeOrNodeArray: js.Array[stdLib.Node],
     renderMode: java.lang.String
   ): js.Any = js.native
   def renderTemplate(
     template: js.Function,
     dataOrBindingContext: js.Any,
-    options: js.Object,
+    options: Object,
     targetNodeOrNodeArray: stdLib.Node,
     renderMode: java.lang.String
   ): js.Any = js.native
@@ -157,28 +157,28 @@ trait KnockoutStatic extends js.Object {
   def renderTemplateForEach(
     template: js.Any,
     arrayOrObservableArray: KnockoutObservable[_],
-    options: js.Object,
+    options: Object,
     targetNode: stdLib.Node,
     parentBindingContext: KnockoutBindingContext
   ): js.Any = js.native
   def renderTemplateForEach(
     template: js.Any,
     arrayOrObservableArray: js.Array[_],
-    options: js.Object,
+    options: Object,
     targetNode: stdLib.Node,
     parentBindingContext: KnockoutBindingContext
   ): js.Any = js.native
   def renderTemplateForEach(
     template: js.Function,
     arrayOrObservableArray: KnockoutObservable[_],
-    options: js.Object,
+    options: Object,
     targetNode: stdLib.Node,
     parentBindingContext: KnockoutBindingContext
   ): js.Any = js.native
   def renderTemplateForEach(
     template: js.Function,
     arrayOrObservableArray: js.Array[_],
-    options: js.Object,
+    options: Object,
     targetNode: stdLib.Node,
     parentBindingContext: KnockoutBindingContext
   ): js.Any = js.native

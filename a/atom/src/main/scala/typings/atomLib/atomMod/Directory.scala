@@ -24,17 +24,17 @@ class Directory protected () extends js.Object {
        *  Creates the directory on disk that corresponds to ::getPath() if no such
        *  directory already exists.
        */
-  def create(): stdLib.Promise[scala.Boolean] = js.native
+  def create(): js.Promise[scala.Boolean] = js.native
   /**
        *  Creates the directory on disk that corresponds to ::getPath() if no such
        *  directory already exists.
        */
-  def create(mode: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def create(mode: scala.Double): js.Promise[scala.Boolean] = js.native
   /**
        *  Returns a promise that resolves to a boolean, true if the directory
        *  exists, false otherwise.
        */
-  def exists(): stdLib.Promise[scala.Boolean] = js.native
+  def exists(): js.Promise[scala.Boolean] = js.native
   /** Returns a boolean, true if the directory exists, false otherwise. */
   def existsSync(): scala.Boolean = js.native
   /** Returns the string basename of the directory. */

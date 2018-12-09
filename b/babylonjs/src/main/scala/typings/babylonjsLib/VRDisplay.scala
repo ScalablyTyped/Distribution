@@ -50,7 +50,7 @@ trait VRDisplay
        * Stops presenting to the VRDisplay.
        * @returns a promise to know when it stopped
        */
-  def exitPresent(): stdLib.Promise[scala.Unit] = js.native
+  def exitPresent(): js.Promise[scala.Unit] = js.native
   /**
        * Return the current VREyeParameters for the given eye.
        * @param whichEye Define the eye we want the parameter for
@@ -103,7 +103,7 @@ trait VRDisplay
        * @param layers Define the list of layer to present
        * @returns a promise to know when the request has been fulfilled
        */
-  def requestPresent(layers: js.Array[VRLayer]): stdLib.Promise[scala.Unit] = js.native
+  def requestPresent(layers: js.Array[VRLayer]): js.Promise[scala.Unit] = js.native
   /**
        * Reset the pose for this display, treating its current position and
        * orientation as the "origin/zero" values. VRPose.position,

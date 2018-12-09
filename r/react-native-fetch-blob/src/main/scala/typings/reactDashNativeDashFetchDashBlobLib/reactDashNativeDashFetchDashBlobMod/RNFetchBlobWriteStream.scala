@@ -11,6 +11,6 @@ trait RNFetchBlobWriteStream extends js.Object {
   var encoding: java.lang.String
   var id: java.lang.String
   def close(): scala.Unit
-  def write(data: java.lang.String): stdLib.Promise[scala.Unit]
+  def write(data: java.lang.String): js.Promise[scala.Unit]
 }
 

@@ -52,7 +52,7 @@ object notificationsNsMembers extends js.Object {
        * Clears an existing notification.
        * @param notificationId The id of the notification to be updated.
        */
-  def clear(notificationId: java.lang.String): stdLib.Promise[js.UndefOr[scala.Boolean]] = js.native
+  def clear(notificationId: java.lang.String): js.Promise[js.UndefOr[scala.Boolean]] = js.native
   /**
        * Creates and displays a notification.
        * @param notificationId Identifier of the notification. If it is empty, this method generates an id. If it matches
@@ -60,26 +60,26 @@ object notificationsNsMembers extends js.Object {
        *     operation.
        * @param options Contents of the notification.
        */
-  def create(notificationId: java.lang.String, options: CreateNotificationOptions): stdLib.Promise[js.UndefOr[java.lang.String]] = js.native
+  def create(notificationId: java.lang.String, options: CreateNotificationOptions): js.Promise[js.UndefOr[java.lang.String]] = js.native
   /* notifications functions */
   /**
        * Creates and displays a notification.
        * @param options Contents of the notification.
        */
-  def create(options: CreateNotificationOptions): stdLib.Promise[js.UndefOr[java.lang.String]] = js.native
+  def create(options: CreateNotificationOptions): js.Promise[js.UndefOr[java.lang.String]] = js.native
   /** Retrieves all the notifications. */
-  def getAll(): stdLib.Promise[CreateNotificationOptions] = js.native
+  def getAll(): js.Promise[CreateNotificationOptions] = js.native
   /**
        * Retrieves whether the user has enabled notifications from this app or extension.
        * @deprecated Unsupported on Firefox at this time.
        */
-  def getPermissionLevel(): stdLib.Promise[PermissionLevel] = js.native
+  def getPermissionLevel(): js.Promise[PermissionLevel] = js.native
   /**
        * Updates an existing notification.
        * @param notificationId The id of the notification to be updated.
        * @param options Contents of the notification to update to.
        * @deprecated Unsupported on Firefox at this time.
        */
-  def update(notificationId: java.lang.String, options: UpdateNotificationOptions): stdLib.Promise[js.UndefOr[scala.Boolean]] = js.native
+  def update(notificationId: java.lang.String, options: UpdateNotificationOptions): js.Promise[js.UndefOr[scala.Boolean]] = js.native
 }
 

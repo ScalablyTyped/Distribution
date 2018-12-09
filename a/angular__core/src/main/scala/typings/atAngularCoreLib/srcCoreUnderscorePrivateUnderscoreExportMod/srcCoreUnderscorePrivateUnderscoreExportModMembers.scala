@@ -68,9 +68,9 @@ object srcCoreUnderscorePrivateUnderscoreExportModMembers extends js.Object {
   def ɵresolveComponentResources(
     resourceResolver: js.Function1[
       /* url */ java.lang.String, 
-      stdLib.Promise[java.lang.String | atAngularCoreLib.Anon_Text]
+      js.Promise[java.lang.String | atAngularCoreLib.Anon_Text]
     ]
-  ): stdLib.Promise[scala.Null] = js.native
+  ): js.Promise[scala.Null] = js.native
   def ɵsetCurrentInjector(): js.UndefOr[atAngularCoreLib.srcDiInjectorMod.Injector | scala.Null] = js.native
   def ɵsetCurrentInjector(injector: atAngularCoreLib.srcDiInjectorMod.Injector): js.UndefOr[atAngularCoreLib.srcDiInjectorMod.Injector | scala.Null] = js.native
   def ɵstringify(token: js.Any): java.lang.String = js.native

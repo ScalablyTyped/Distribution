@@ -206,7 +206,7 @@ object reactModMembers extends js.Object {
   ] = js.native
   def isValidElement[P](): /* is ReactElement */scala.Boolean = js.native
   def isValidElement[P](`object`: js.Object): /* is ReactElement */scala.Boolean = js.native
-  def `lazy`[T /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](factory: js.Function0[stdLib.Promise[reactLib.Anon_Default[T]]]): reactLib.reactMod.ReactNs.LazyExoticComponent[T] = js.native
+  def `lazy`[T /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](factory: js.Function0[js.Promise[reactLib.Anon_Default[T]]]): reactLib.reactMod.ReactNs.LazyExoticComponent[T] = js.native
   def memo[T /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](Component: T): reactLib.reactMod.ReactNs.MemoExoticComponent[T] = js.native
   def memo[T /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](
     Component: T,

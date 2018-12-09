@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "phonegap-plugin-barcodescanner"
-version := "0.0-unknown-dt-20180910Z-3547b9"
+version := "0.0-unknown-dt-20180910Z-1f3fb0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
+  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

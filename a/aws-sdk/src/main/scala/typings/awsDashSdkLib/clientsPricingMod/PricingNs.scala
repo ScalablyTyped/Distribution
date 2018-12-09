@@ -13,7 +13,7 @@ object PricingNs extends js.Object {
     /**
          * The specific value of an attributeName.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -29,7 +29,7 @@ object PricingNs extends js.Object {
     /**
          * The format version that you want the response to be in. Valid values are: aws_v1 
          */
-    var FormatVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FormatVersion: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of results that you want returned in the response.
          */
@@ -37,11 +37,11 @@ object PricingNs extends js.Object {
     /**
          * The pagination token that indicates the next set of results that you want to retrieve.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The code for the service whose information you want to retrieve, such as AmazonEC2. You can use the ServiceCode to filter the results in a GetProducts call. To retrieve a list of all services, leave this blank.
          */
-    var ServiceCode: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceCode: js.UndefOr[String] = js.undefined
   }
   
   
@@ -49,11 +49,11 @@ object PricingNs extends js.Object {
     /**
          * The format version of the response. For example, aws_v1.
          */
-    var FormatVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FormatVersion: js.UndefOr[String] = js.undefined
     /**
          * The pagination token for the next set of retreivable results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The service metadata for the service or services in the response.
          */
@@ -65,7 +65,7 @@ object PricingNs extends js.Object {
     /**
          * The product metadata field that you want to filter on. You can filter by just the service code to see all products for a specific service, filter by just the attribute name to see a specific attribute for multiple services, or use both a service code and an attribute name to retrieve only products that match both fields. Valid values include: ServiceCode, and all attribute names For example, you can filter by the AmazonEC2 service code and the volumeType attribute name to get the prices for only Amazon EC2 volumes.
          */
-    var Field: java.lang.String
+    var Field: String
     /**
          * The type of filter that you want to use. Valid values are: TERM_MATCH. TERM_MATCH returns only products that match both the given filter field and the given value.
          */
@@ -73,7 +73,7 @@ object PricingNs extends js.Object {
     /**
          * The service code or attribute value that you want to filter by. If you are filtering by service code this is the actual service code, such as AmazonEC2. If you are filtering by attribute name, this is the attribute value that you want the returned products to match, such as a Provisioned IOPS volume.
          */
-    var Value: java.lang.String
+    var Value: String
   }
   
   
@@ -81,7 +81,7 @@ object PricingNs extends js.Object {
     /**
          * The name of the attribute that you want to retrieve the values for, such as volumeType.
          */
-    var AttributeName: java.lang.String
+    var AttributeName: String
     /**
          * The maximum number of results to return in response.
          */
@@ -89,11 +89,11 @@ object PricingNs extends js.Object {
     /**
          * The pagination token that indicates the next set of results that you want to retrieve.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The service code for the service whose attributes you want to retrieve. For example, if you want the retrieve an EC2 attribute, use AmazonEC2.
          */
-    var ServiceCode: java.lang.String
+    var ServiceCode: String
   }
   
   
@@ -105,7 +105,7 @@ object PricingNs extends js.Object {
     /**
          * The pagination token that indicates the next set of results to retrieve.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -117,7 +117,7 @@ object PricingNs extends js.Object {
     /**
          * The format version that you want the response to be in. Valid values are: aws_v1 
          */
-    var FormatVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FormatVersion: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of results to return in the response.
          */
@@ -125,11 +125,11 @@ object PricingNs extends js.Object {
     /**
          * The pagination token that indicates the next set of results that you want to retrieve.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The code for the service whose products you want to retrieve. 
          */
-    var ServiceCode: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceCode: js.UndefOr[String] = js.undefined
   }
   
   
@@ -137,11 +137,11 @@ object PricingNs extends js.Object {
     /**
          * The format version of the response. For example, aws_v1.
          */
-    var FormatVersion: js.UndefOr[java.lang.String] = js.undefined
+    var FormatVersion: js.UndefOr[String] = js.undefined
     /**
          * The pagination token that indicates the next set of results to retrieve.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The list of products that match your filters. The list contains both the product metadata and the price information.
          */
@@ -157,7 +157,7 @@ object PricingNs extends js.Object {
     /**
          * The code for the AWS service.
          */
-    var ServiceCode: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceCode: js.UndefOr[String] = js.undefined
   }
   
   @js.native
@@ -255,7 +255,7 @@ object PricingNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
-  type AttributeNameList = js.Array[java.lang.String]
+  type AttributeNameList = js.Array[String]
   type AttributeValueList = js.Array[AttributeValue]
   type BoxedInteger = scala.Double
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions

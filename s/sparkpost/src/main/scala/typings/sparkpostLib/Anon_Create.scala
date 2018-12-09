@@ -27,7 +27,7 @@ trait Anon_Create extends js.Object {
            * @param relayWebhookId The webhook id
            * @returns Promise void
            */
-  def delete(relayWebhookId: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def delete(relayWebhookId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Delete a relay webhook by specifying the webhook ID in the URI path.
            * @param relayWebhookId The webhook id

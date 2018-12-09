@@ -28,10 +28,10 @@ object DataSourceNs extends js.Object {
     var system: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): stdLib.Promise[DataSources] = js.native
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ListDataSourcesParams): stdLib.Promise[DataSources] = js.native
-  def create(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, data: DataSource): stdLib.Promise[DataSource] = js.native
-  def destroy(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[js.Object] = js.native
-  def retrieve(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[DataSource] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): js.Promise[DataSources] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ListDataSourcesParams): js.Promise[DataSources] = js.native
+  def create(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, data: DataSource): js.Promise[DataSource] = js.native
+  def destroy(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[js.Object] = js.native
+  def retrieve(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[DataSource] = js.native
 }
 

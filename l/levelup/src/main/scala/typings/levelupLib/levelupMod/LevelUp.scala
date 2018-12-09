@@ -12,7 +12,7 @@ trait LevelUp[DB]
   var get: levelupLib.InferDBGet[DB] = js.native
   var put: levelupLib.InferDBPut[DB] = js.native
   def batch(): LevelUpChain[_, _] = js.native
-  def batch(array: js.Array[abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractBatch[_, _]]): stdLib.Promise[scala.Unit] = js.native
+  def batch(array: js.Array[abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractBatch[_, _]]): js.Promise[scala.Unit] = js.native
   def batch(
     array: js.Array[abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractBatch[_, _]],
     callback: js.Function1[/* err */ js.UndefOr[js.Any], _]
@@ -20,16 +20,16 @@ trait LevelUp[DB]
   def batch(
     array: js.Array[abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractBatch[_, _]],
     options: js.Any
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def batch(
     array: js.Array[abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractBatch[_, _]],
     options: js.Any,
     callback: js.Function1[/* err */ js.UndefOr[js.Any], _]
   ): scala.Unit = js.native
-  def close(): scala.Unit = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   def close(callback: abstractDashLeveldownLib.abstractDashLeveldownMod.ErrorCallback): scala.Unit = js.native
   @JSName("close")
-  def close_Promise(): stdLib.Promise[scala.Unit] = js.native
+  def close_Unit(): scala.Unit = js.native
   def createKeyStream(): nodeLib.NodeJSNs.ReadableStream = js.native
   def createKeyStream(options: abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractIteratorOptions[_]): nodeLib.NodeJSNs.ReadableStream = js.native
   def createReadStream(): nodeLib.NodeJSNs.ReadableStream = js.native
@@ -81,9 +81,9 @@ trait LevelUp[DB]
       */
   @JSName("on")
   def on_ready(event: levelupLib.levelupLibStrings.ready, cb: js.Function0[scala.Unit]): this.type = js.native
-  def open(): scala.Unit = js.native
+  def open(): js.Promise[scala.Unit] = js.native
   def open(callback: abstractDashLeveldownLib.abstractDashLeveldownMod.ErrorCallback): scala.Unit = js.native
   @JSName("open")
-  def open_Promise(): stdLib.Promise[scala.Unit] = js.native
+  def open_Unit(): scala.Unit = js.native
 }
 

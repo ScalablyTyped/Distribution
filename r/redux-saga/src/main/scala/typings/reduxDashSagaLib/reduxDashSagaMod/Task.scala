@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Task extends js.Object {
-  var done: stdLib.Promise[_] = js.native
+  var done: js.Promise[_] = js.native
   def cancel(): scala.Unit = js.native
   def error(): js.UndefOr[_] = js.native
   def isCancelled(): scala.Boolean = js.native

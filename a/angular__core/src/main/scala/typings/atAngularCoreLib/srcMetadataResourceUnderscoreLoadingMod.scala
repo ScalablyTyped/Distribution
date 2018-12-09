@@ -14,8 +14,8 @@ object srcMetadataResourceUnderscoreLoadingMod extends js.Object {
   def resolveComponentResources(
     resourceResolver: js.Function1[
       /* url */ java.lang.String, 
-      stdLib.Promise[java.lang.String | atAngularCoreLib.Anon_Text]
+      js.Promise[java.lang.String | atAngularCoreLib.Anon_Text]
     ]
-  ): stdLib.Promise[scala.Null] = js.native
+  ): js.Promise[scala.Null] = js.native
 }
 

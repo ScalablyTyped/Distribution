@@ -228,10 +228,10 @@ trait Promise[T] extends js.Object {
     this.type
   ]) | (js.Function1[/* repeated */js.Any, this.type]) = js.native
   var props: (js.ThisFunction0[
-    /* this */ stdLib.PromiseLike[stdLib.Map[_, bluebirdLib.Resolvable[_]]], 
+    /* this */ js.Thenable[stdLib.Map[_, bluebirdLib.Resolvable[_]]], 
     bluebirdLib.bluebirdMod.Bluebird[stdLib.Map[_, _]]
   ]) | (js.ThisFunction0[
-    /* this */ stdLib.PromiseLike[bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[_]], 
+    /* this */ js.Thenable[bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ]) = js.native
   var race: js.Function0[bluebirdLib.bluebirdMod.Bluebird[bluebirdLib.IterableItem[T]]] = js.native
@@ -333,39 +333,30 @@ trait Promise[T] extends js.Object {
            */
   def `catch`(
     predicate: js.Function1[/* error */ js.Any, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ js.Any, 
-      T | stdLib.PromiseLike[T] | scala.Unit | stdLib.PromiseLike[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ js.Any, T | js.Thenable[T] | scala.Unit | js.Thenable[scala.Unit]]
   ): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def `catch`(
     predicate: js.Object,
-    onReject: js.Function1[
-      /* error */ js.Any, 
-      T | stdLib.PromiseLike[T] | scala.Unit | stdLib.PromiseLike[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ js.Any, T | js.Thenable[T] | scala.Unit | js.Thenable[scala.Unit]]
   ): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def `catch`[TResult](): Promise[T | TResult] = js.native
   def `catch`[E /* <: stdLib.Error */](
     ErrorClass: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E],
-    onReject: js.Function1[
-      /* error */ E, 
-      T | stdLib.PromiseLike[T] | scala.Unit | stdLib.PromiseLike[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E, T | js.Thenable[T] | scala.Unit | js.Thenable[scala.Unit]]
   ): bluebirdLib.bluebirdMod.namespaced[T] = js.native
-  def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | stdLib.PromiseLike[TResult]]): Promise[T | TResult] = js.native
+  def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): Promise[T | TResult] = js.native
   @JSName("catch")
   def catch_EErrorU[E /* <: stdLib.Error */, U](
     ErrorClass: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E],
-    onReject: js.Function1[/* error */ E, U | stdLib.PromiseLike[U]]
+    onReject: js.Function1[/* error */ E, U | js.Thenable[U]]
   ): bluebirdLib.bluebirdMod.namespaced[U | T] = js.native
   @JSName("catch")
   def catch_U[U](
     predicate: js.Function1[/* error */ js.Any, scala.Boolean],
-    onReject: js.Function1[/* error */ js.Any, U | stdLib.PromiseLike[U]]
+    onReject: js.Function1[/* error */ js.Any, U | js.Thenable[U]]
   ): bluebirdLib.bluebirdMod.namespaced[U | T] = js.native
   @JSName("catch")
-  def catch_U[U](predicate: js.Object, onReject: js.Function1[/* error */ js.Any, U | stdLib.PromiseLike[U]]): bluebirdLib.bluebirdMod.namespaced[U | T] = js.native
+  def catch_U[U](predicate: js.Object, onReject: js.Function1[/* error */ js.Any, U | js.Thenable[U]]): bluebirdLib.bluebirdMod.namespaced[U | T] = js.native
   /*
            * See comments above `then` for the reason why this is needed. Taken from es2018.promise.d.ts.
            *
@@ -399,7 +390,7 @@ trait Promise[T] extends js.Object {
            *
            * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
            */
-  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | stdLib.PromiseLike[TResult1]]): Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): Promise[TResult1 | TResult2] = js.native
   /*
            * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
            * in line with the standard lib.
@@ -409,8 +400,8 @@ trait Promise[T] extends js.Object {
            * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
            */
   def `then`[TResult1, TResult2](
-    onfulfilled: js.Function1[/* value */ T, TResult1 | stdLib.PromiseLike[TResult1]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | stdLib.PromiseLike[TResult2]]
+    onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): Promise[TResult1 | TResult2] = js.native
   /*
            * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
@@ -422,7 +413,7 @@ trait Promise[T] extends js.Object {
            */
   def `then`[TResult1, TResult2](
     onfulfilled: js.UndefOr[scala.Nothing],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | stdLib.PromiseLike[TResult2]]
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): Promise[TResult1 | TResult2] = js.native
   /*
            * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not
@@ -434,7 +425,7 @@ trait Promise[T] extends js.Object {
            */
   def `then`[TResult1, TResult2](
     onfulfilled: scala.Null,
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | stdLib.PromiseLike[TResult2]]
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): Promise[TResult1 | TResult2] = js.native
 }
 

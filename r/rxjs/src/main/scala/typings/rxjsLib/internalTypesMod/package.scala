@@ -15,7 +15,7 @@ package object internalTypesMod {
     rxjsLib.internalObservableMod.Observable[R]
   ]
   type PartialObserver[T] = NextObserver[T] | ErrorObserver[T] | CompletionObserver[T]
-  type SubscribableOrPromise[T] = Subscribable[T] | Subscribable[scala.Nothing] | stdLib.PromiseLike[T] | InteropObservable[T]
+  type SubscribableOrPromise[T] = Subscribable[T] | Subscribable[scala.Nothing] | js.Thenable[T] | InteropObservable[T]
   type TeardownLogic = Unsubscribable | js.Function | scala.Unit
   type UnaryFunction[T, R] = js.Function1[/* source */ T, R]
 }

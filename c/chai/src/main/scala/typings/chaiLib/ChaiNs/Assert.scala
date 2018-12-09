@@ -158,7 +158,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def containsAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def containsAllDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` contains all of the `keys` provided.
            * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -171,7 +171,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def containsAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def containsAllDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts that `object` has all of the `keys` provided but may have more keys not listed.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -204,7 +204,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def containsAllKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def containsAllKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` has all of the `keys` provided but may have more keys not listed.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -215,7 +215,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def containsAllKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def containsAllKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts that a function decreases an object property.
            *
@@ -516,7 +516,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` contains all of the `keys` provided.
            * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -529,7 +529,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def doesNotHaveAllDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts that `object` does not have at least one of the `keys` provided.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -562,7 +562,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` does not have at least one of the `keys` provided.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -573,7 +573,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def doesNotHaveAllKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts that `object` contains all of the `keys` provided.
            * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -612,7 +612,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` contains all of the `keys` provided.
            * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -625,7 +625,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def doesNotHaveAnyDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts that `object` has none of the `keys` provided.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -658,7 +658,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` has none of the `keys` provided.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -669,7 +669,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def doesNotHaveAnyKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts that a function does not increase an object property.
            *
@@ -898,7 +898,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def hasAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def hasAllDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` has all and only all of the `keys` provided.
            * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -911,7 +911,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def hasAllDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def hasAllDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts that `object` has all and only all of the `keys` provided.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -944,7 +944,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def hasAllKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def hasAllKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` has all and only all of the `keys` provided.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -955,7 +955,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def hasAllKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def hasAllKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts that `object` has at least one of the `keys` provided.
            * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -994,7 +994,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def hasAnyDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def hasAnyDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` has at least one of the `keys` provided.
            * Since Sets and Maps can have objects as keys you can use this assertion to perform
@@ -1007,7 +1007,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def hasAnyDeepKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def hasAnyDeepKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts that `object` has at least one of the `keys` provided.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -1040,7 +1040,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def hasAnyKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String]): scala.Unit = js.native
+  def hasAnyKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String]): scala.Unit = js.native
   /**
            * Asserts that `object` has at least one of the `keys` provided.
            * You can also provide a single object instead of a `keys` array and its keys
@@ -1051,7 +1051,7 @@ trait Assert extends js.Object {
            * @param keys   Keys to check
            * @param message    Message to display on error.
            */
-  def hasAnyKeys[T](`object`: T, keys: js.Array[js.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
+  def hasAnyKeys[T](`object`: T, keys: js.Array[chaiLib.Object | java.lang.String], message: java.lang.String): scala.Unit = js.native
   /**
            * Asserts if value is not a false value, and throws if it is a true value.
            *

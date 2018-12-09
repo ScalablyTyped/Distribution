@@ -15,7 +15,7 @@ trait PrecacheController extends js.Object {
   	 * @param {IActivateOptions} options
   	 * @returns {Promise<ICleanupResult>} Resolves with an object containing details of the deleted cache requests and precache revision details.
   	 */
-  def activate(options: stdLib.Partial[IActivateOptions]): stdLib.Promise[ICleanupResult] = js.native
+  def activate(options: stdLib.Partial[IActivateOptions]): js.Promise[ICleanupResult] = js.native
   /**
   	 * This method will add items to the precache list, removing duplicates and ensuring the information is valid.
   	 * @param {(string | IPrecacheEntry)[]} entries - Array of entries to precache.
@@ -31,12 +31,12 @@ trait PrecacheController extends js.Object {
   	 * @param {Partial<IInstallOptions>} options
   	 * @returns {Promise<IInstallResult>}
   	 */
-  def install(): stdLib.Promise[IInstallResult] = js.native
+  def install(): js.Promise[IInstallResult] = js.native
   /**
   	 * Call this method from a service work install event to start precaching assets.
   	 * @param {Partial<IInstallOptions>} options
   	 * @returns {Promise<IInstallResult>}
   	 */
-  def install(options: stdLib.Partial[IInstallOptions]): stdLib.Promise[IInstallResult] = js.native
+  def install(options: stdLib.Partial[IInstallOptions]): js.Promise[IInstallResult] = js.native
 }
 

@@ -24,9 +24,9 @@ class PublishManager protected ()
   val publishOptions: js.Any = js.native
   val taskManager: js.Any = js.native
   val updateFileWriteTask: js.Any = js.native
-  def awaitTasks(): stdLib.Promise[scala.Unit] = js.native
+  def awaitTasks(): js.Promise[scala.Unit] = js.native
   def cancelTasks(): scala.Unit = js.native
-  def getGlobalPublishConfigurations(): stdLib.Promise[
+  def getGlobalPublishConfigurations(): js.Promise[
     js.Array[builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration] | scala.Null
   ] = js.native
 }

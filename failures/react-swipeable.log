@@ -4,8 +4,6 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(react-swipeable)) [id => react-swipeable, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(react-swipeable) [id => react-swipeable, phase => typescript] 
 [info ] PreferTypeAlias.scala:97 Could not simplify ReactSwipeable to function type alias because of circular references Vector(TsIdentNamespace(ReactSwipeable)) [id => react-swipeable, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-swipeable) / TsDeclInterface(ReactSwipeable))] 
-[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(S) at TreeScope(TsParsedFile() / TsDeclModule(react-swipeable) / TsDeclInterface(ReactSwipeable) / TsTypeRef()) [id => react-swipeable, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-swipeable) / TsDeclInterface(ReactSwipeable) / TsTypeRef())] 
-[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(SS) at TreeScope(TsParsedFile() / TsDeclModule(react-swipeable) / TsDeclInterface(ReactSwipeable) / TsTypeRef()) [id => react-swipeable, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-swipeable) / TsDeclInterface(ReactSwipeable) / TsTypeRef())] 
 [debug] PhaseRunner.scala:78 Success [id => react-swipeable, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing react-swipeable [id => react-swipeable, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => react-swipeable, phase => scala.js] 

@@ -33,7 +33,7 @@ object ComprehendMedicalNs extends js.Object {
     /**
          *  The segment of input text extracted as this attribute.
          */
-    var Text: js.UndefOr[java.lang.String] = js.undefined
+    var Text: js.UndefOr[String] = js.undefined
     /**
          *  Contextual information for this attribute. 
          */
@@ -69,7 +69,7 @@ object ComprehendMedicalNs extends js.Object {
     /**
          *  If the result of the previous request to DetectEntities was truncated, include the Paginationtoken to fetch the next page of entities.
          */
-    var PaginationToken: js.UndefOr[java.lang.String] = js.undefined
+    var PaginationToken: js.UndefOr[String] = js.undefined
     /**
          *  Attributes extracted from the input text that we were unable to relate to an entity.
          */
@@ -93,7 +93,7 @@ object ComprehendMedicalNs extends js.Object {
     /**
          *  If the result of the previous request to DetectPHI was truncated, include the Paginationtoken to fetch the next page of PHI entities. 
          */
-    var PaginationToken: js.UndefOr[java.lang.String] = js.undefined
+    var PaginationToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -125,7 +125,7 @@ object ComprehendMedicalNs extends js.Object {
     /**
          *  The segment of input text extracted as this entity.
          */
-    var Text: js.UndefOr[java.lang.String] = js.undefined
+    var Text: js.UndefOr[String] = js.undefined
     /**
          * Contextual information for the entity
          */

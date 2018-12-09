@@ -18,55 +18,55 @@ class Document[Schema /* <: DocumentSchema */] ()
   		 *
   		 * @returns {Promise<number>} Number of deleted documents.
   		 */
-  def delete(): stdLib.Promise[scala.Double] = js.native
+  def delete(): js.Promise[scala.Double] = js.native
   /**
   		 * post-delete hook.
   		 *
   		 * @protected
   		 * @returns {Promise<any>}
   		 */
-  /* protected */ def postDelete(): stdLib.Promise[_] = js.native
+  /* protected */ def postDelete(): js.Promise[_] = js.native
   /**
   		 * post-save hook.
   		 *
   		 * @protected
   		 * @returns {Promise<any>}
   		 */
-  /* protected */ def postSave(): stdLib.Promise[_] = js.native
+  /* protected */ def postSave(): js.Promise[_] = js.native
   /**
   		 * post-validate hook.
   		 *
   		 * @protected
   		 * @returns {Promise<any>}
   		 */
-  /* protected */ def postValidate(): stdLib.Promise[_] = js.native
+  /* protected */ def postValidate(): js.Promise[_] = js.native
   /**
   		 * pre-delete hook.
   		 *
   		 * @protected
   		 * @returns {Promise<any>}
   		 */
-  /* protected */ def preDelete(): stdLib.Promise[_] = js.native
+  /* protected */ def preDelete(): js.Promise[_] = js.native
   /**
   		 * pre-save hook.
   		 *
   		 * @protected
   		 * @returns {Promise<any>}
   		 */
-  /* protected */ def preSave(): stdLib.Promise[_] = js.native
+  /* protected */ def preSave(): js.Promise[_] = js.native
   /**
   		 * pre-validate hook.
   		 *
   		 * @protected
   		 * @returns {Promise<any>}
   		 */
-  /* protected */ def preValidate(): stdLib.Promise[_] = js.native
+  /* protected */ def preValidate(): js.Promise[_] = js.native
   /**
   		 * Saves the document instance to the database.
   		 *
   		 * @returns {Promise<Schema>}
   		 */
-  def save(): stdLib.Promise[Schema] = js.native
+  def save(): js.Promise[Schema] = js.native
   /**
   		 * Sets the schema (to be used on the constructor).
   		 *
@@ -101,7 +101,7 @@ object Document extends js.Object {
   		 * @param {*} query Count query.
   		 * @returns {Promise<number>}
   		 */
-  def count(query: js.Any): stdLib.Promise[scala.Double] = js.native
+  def count(query: js.Any): js.Promise[scala.Double] = js.native
   /**
   		 * Creates a camo document instance.
   		 *
@@ -118,7 +118,7 @@ object Document extends js.Object {
   		 * @param {*} query Delete query.
   		 * @returns {Promise<number>} Number of deleted documents.
   		 */
-  def deleteMany(query: js.Any): stdLib.Promise[scala.Double] = js.native
+  def deleteMany(query: js.Any): js.Promise[scala.Double] = js.native
   /**
   		 * Removes the first document found, even if multiple documents match the query.
   		 *
@@ -126,7 +126,7 @@ object Document extends js.Object {
   		 * @param {*} query Delete query.
   		 * @returns {Promise<number>} Number of deleted documents.
   		 */
-  def deleteOne(query: js.Any): stdLib.Promise[scala.Double] = js.native
+  def deleteOne(query: js.Any): js.Promise[scala.Double] = js.native
   /**
   		 * Return all documents matching the query.
   		 *
@@ -136,7 +136,7 @@ object Document extends js.Object {
   		 * @param {FindOptions} options
   		 * @returns {Promise<StaticSchema>}
   		 */
-  def find[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any): stdLib.Promise[js.Array[StaticSchema]] = js.native
+  def find[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any): js.Promise[js.Array[StaticSchema]] = js.native
   /**
   		 * Return all documents matching the query.
   		 *
@@ -146,7 +146,7 @@ object Document extends js.Object {
   		 * @param {FindOptions} options
   		 * @returns {Promise<StaticSchema>}
   		 */
-  def find[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any, options: camoLib.camoMod.FindOptions): stdLib.Promise[js.Array[StaticSchema]] = js.native
+  def find[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any, options: camoLib.camoMod.FindOptions): js.Promise[js.Array[StaticSchema]] = js.native
   /**
   		 * Return the first document found, even if multiple documents match the query.
   		 *
@@ -156,7 +156,7 @@ object Document extends js.Object {
   		 * @param {FindOneOptions} options findOne method options.
   		 * @returns {Promise<StaticSchema>}
   		 */
-  def findOne[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any): stdLib.Promise[StaticSchema] = js.native
+  def findOne[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any): js.Promise[StaticSchema] = js.native
   /**
   		 * Return the first document found, even if multiple documents match the query.
   		 *
@@ -166,7 +166,7 @@ object Document extends js.Object {
   		 * @param {FindOneOptions} options findOne method options.
   		 * @returns {Promise<StaticSchema>}
   		 */
-  def findOne[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any, options: camoLib.camoMod.FindOneOptions): stdLib.Promise[StaticSchema] = js.native
+  def findOne[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any, options: camoLib.camoMod.FindOneOptions): js.Promise[StaticSchema] = js.native
   /**
   		 * Find the first document and delete it.
   		 *
@@ -175,7 +175,7 @@ object Document extends js.Object {
   		 * @param {*} options Database Options for findOneAndDelete method.
   		 * @returns {Promise<number>} Number of deleted documents.
   		 */
-  def findOneAndDelete(query: js.Any): stdLib.Promise[scala.Double] = js.native
+  def findOneAndDelete(query: js.Any): js.Promise[scala.Double] = js.native
   /**
   		 * Find the first document and delete it.
   		 *
@@ -184,7 +184,7 @@ object Document extends js.Object {
   		 * @param {*} options Database Options for findOneAndDelete method.
   		 * @returns {Promise<number>} Number of deleted documents.
   		 */
-  def findOneAndDelete(query: js.Any, options: js.Any): stdLib.Promise[scala.Double] = js.native
+  def findOneAndDelete(query: js.Any, options: js.Any): js.Promise[scala.Double] = js.native
   /**
   		 * Find and update (or insert) a document in one atomic operation (atomic for MongoDB only).
   		 *
@@ -195,7 +195,7 @@ object Document extends js.Object {
   		 * @param {FindOneAndUpdateOptions} options findOneAndUpdate method options.
   		 * @returns {Promise<StaticSchema>}
   		 */
-  def findOneAndUpdate[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any, values: StaticSchema): stdLib.Promise[StaticSchema] = js.native
+  def findOneAndUpdate[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any, values: StaticSchema): js.Promise[StaticSchema] = js.native
   /**
   		 * Find and update (or insert) a document in one atomic operation (atomic for MongoDB only).
   		 *
@@ -206,6 +206,6 @@ object Document extends js.Object {
   		 * @param {FindOneAndUpdateOptions} options findOneAndUpdate method options.
   		 * @returns {Promise<StaticSchema>}
   		 */
-  def findOneAndUpdate[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any, values: StaticSchema, options: camoLib.camoMod.FindOneAndUpdateOptions): stdLib.Promise[StaticSchema] = js.native
+  def findOneAndUpdate[StaticSchema /* <: camoLib.camoMod.DocumentSchema */](query: js.Any, values: StaticSchema, options: camoLib.camoMod.FindOneAndUpdateOptions): js.Promise[StaticSchema] = js.native
 }
 

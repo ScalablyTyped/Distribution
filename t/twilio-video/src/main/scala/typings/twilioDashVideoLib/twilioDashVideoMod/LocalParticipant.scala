@@ -16,10 +16,10 @@ class LocalParticipant () extends Participant {
   var tracks_LocalParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalTrackPublication] = js.native
   @JSName("videoTracks")
   var videoTracks_LocalParticipant: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, LocalVideoTrackPublication] = js.native
-  def publishTrack(mediaStreamTrack: stdLib.MediaStreamTrack): stdLib.Promise[LocalTrackPublication] = js.native
-  def publishTrack(mediaStreamTrack: stdLib.MediaStreamTrack, options: LocalTrackOptions): stdLib.Promise[LocalTrackPublication] = js.native
-  def publishTrack(track: LocalTrack): stdLib.Promise[LocalTrackPublication] = js.native
-  def publishTracks(tracks: js.Array[stdLib.MediaStreamTrack | LocalTrack]): stdLib.Promise[js.Array[LocalTrackPublication]] = js.native
+  def publishTrack(mediaStreamTrack: stdLib.MediaStreamTrack): js.Promise[LocalTrackPublication] = js.native
+  def publishTrack(mediaStreamTrack: stdLib.MediaStreamTrack, options: LocalTrackOptions): js.Promise[LocalTrackPublication] = js.native
+  def publishTrack(track: LocalTrack): js.Promise[LocalTrackPublication] = js.native
+  def publishTracks(tracks: js.Array[stdLib.MediaStreamTrack | LocalTrack]): js.Promise[js.Array[LocalTrackPublication]] = js.native
   def setParameters(): LocalParticipant = js.native
   def setParameters(encodingParameters: EncodingParameters): LocalParticipant = js.native
   def unpublishTrack(track: LocalTrack): LocalTrackPublication = js.native

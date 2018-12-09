@@ -21,7 +21,7 @@ trait BasicOCSPResponse extends js.Object {
   def getCertificateStatus(
     certificate: pkijsLib.srcCertificateMod.default,
     issuerCertificate: pkijsLib.srcCertificateMod.default
-  ): stdLib.PromiseLike[GetCertificateStatusResult] = js.native
+  ): js.Thenable[GetCertificateStatusResult] = js.native
   /**
            * Make signature for current OCSP Basic Response
            * 
@@ -29,7 +29,7 @@ trait BasicOCSPResponse extends js.Object {
            * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
            * @returns {PromiseLike<ArrayBuffer>}
            */
-  def sign(privateKey: stdLib.CryptoKey): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def sign(privateKey: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
            * Make signature for current OCSP Basic Response
            * 
@@ -37,7 +37,7 @@ trait BasicOCSPResponse extends js.Object {
            * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
            * @returns {PromiseLike<ArrayBuffer>}
            */
-  def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): js.Thenable[stdLib.ArrayBuffer] = js.native
   def toJSON(): js.Any = js.native
   def toSchema(): js.Any = js.native
   /**
@@ -46,13 +46,13 @@ trait BasicOCSPResponse extends js.Object {
            * @param {{ trustedCerts?: Certificate[] }} parameters Additional parameters
            * @returns {PromiseLike<boolean>}
            */
-  def verify(): stdLib.PromiseLike[scala.Boolean] = js.native
+  def verify(): js.Thenable[scala.Boolean] = js.native
   /**
            * Verify existing OCSP Basic Response
            * 
            * @param {{ trustedCerts?: Certificate[] }} parameters Additional parameters
            * @returns {PromiseLike<boolean>}
            */
-  def verify(parameters: pkijsLib.Anon_TrustedCerts): stdLib.PromiseLike[scala.Boolean] = js.native
+  def verify(parameters: pkijsLib.Anon_TrustedCerts): js.Thenable[scala.Boolean] = js.native
 }
 

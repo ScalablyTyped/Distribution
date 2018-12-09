@@ -11,7 +11,7 @@ class IMonkManager () extends js.Object {
   val _state: monkLib.monkLibStrings.closed | monkLib.monkLibStrings.opening | monkLib.monkLibStrings.open = js.native
   def addListener(event: java.lang.String, handler: js.Function1[/* event */ js.Any, _]): scala.Unit = js.native
   def addMiddleware(middleware: TMiddleware): scala.Unit = js.native
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   def create[T](name: java.lang.String): ICollection[T] = js.native
   def create[T](name: java.lang.String, creationOption: js.Object): ICollection[T] = js.native
   def create[T](name: java.lang.String, creationOption: js.Object, options: js.Object): ICollection[T] = js.native

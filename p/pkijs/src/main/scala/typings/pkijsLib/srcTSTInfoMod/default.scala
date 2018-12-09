@@ -26,7 +26,7 @@ class default () extends TSTInfo {
   /* CompleteClass */
   override def toSchema(): js.Any = js.native
   /* CompleteClass */
-  override def verify(params: VerifyParams): stdLib.PromiseLike[scala.Boolean] = js.native
+  override def verify(params: VerifyParams): js.Thenable[scala.Boolean] = js.native
 }
 
 @JSImport("pkijs/src/TSTInfo", JSImport.Default)

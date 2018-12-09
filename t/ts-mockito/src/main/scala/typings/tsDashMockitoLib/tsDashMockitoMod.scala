@@ -80,6 +80,6 @@ object tsDashMockitoMod extends js.Object {
   def strictEqual(expectedValue: js.Any): js.Any = js.native
   def verify[T](method: T): tsDashMockitoLib.libMethodStubVerificatorMod.MethodStubVerificator[T] = js.native
   def when[T](method: T): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[T, scala.Unit, scala.Unit] = js.native
-  def when[T](method: stdLib.Promise[T]): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[stdLib.Promise[T], T, _] = js.native
+  def when[T](method: js.Promise[T]): tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[js.Promise[T], T, _] = js.native
 }
 

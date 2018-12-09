@@ -41,7 +41,7 @@ trait TabProps
   /**
      * Callback function that is fired when the tab is activated.
      */
-  var onActive: js.UndefOr[js.Function] = js.undefined
+  var onActive: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Classnames object defining the component style.
      */

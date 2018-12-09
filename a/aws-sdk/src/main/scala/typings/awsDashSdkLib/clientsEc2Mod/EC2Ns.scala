@@ -13,7 +13,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The IDs of the Convertible Reserved Instances to exchange for another Convertible Reserved Instance of the same or higher value.
          */
@@ -29,7 +29,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the successful exchange.
          */
-    var ExchangeId: js.UndefOr[java.lang.String] = js.undefined
+    var ExchangeId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -37,11 +37,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: java.lang.String
+    var TransitGatewayAttachmentId: String
   }
   
   
@@ -57,11 +57,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the endpoint service.
          */
-    var ServiceId: java.lang.String
+    var ServiceId: String
     /**
          * The IDs of one or more interface VPC endpoints.
          */
@@ -81,11 +81,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC peering connection. You must specify this parameter in the request.
          */
-    var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcPeeringConnectionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -101,7 +101,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the account attribute.
          */
-    var AttributeName: js.UndefOr[java.lang.String] = js.undefined
+    var AttributeName: js.UndefOr[String] = js.undefined
     /**
          * One or more values for the account attribute.
          */
@@ -113,7 +113,7 @@ object EC2Ns extends js.Object {
     /**
          * The value of the attribute.
          */
-    var AttributeValue: js.UndefOr[java.lang.String] = js.undefined
+    var AttributeValue: js.UndefOr[String] = js.undefined
   }
   
   
@@ -125,15 +125,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The instance type.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Spot Instance request.
          */
-    var SpotInstanceRequestId: js.UndefOr[java.lang.String] = js.undefined
+    var SpotInstanceRequestId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -141,11 +141,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID representing the allocation of the address for use with EC2-VPC.
          */
-    var AllocationId: js.UndefOr[java.lang.String] = js.undefined
+    var AllocationId: js.UndefOr[String] = js.undefined
     /**
          * The ID representing the association of the address with an instance in a VPC.
          */
-    var AssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether this Elastic IP address is for use with instances in EC2-Classic (standard) or instances in a VPC (vpc).
          */
@@ -153,27 +153,27 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance that the address is associated with (if any).
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that owns the network interface.
          */
-    var NetworkInterfaceOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The private IP address associated with the Elastic IP address.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The Elastic IP address.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
     /**
          * The ID of an address pool.
          */
-    var PublicIpv4Pool: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIpv4Pool: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the Elastic IP address.
          */
@@ -185,11 +185,11 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 address range, in CIDR notation.
          */
-    var Cidr: java.lang.String
+    var Cidr: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -205,7 +205,7 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The Elastic IP address to recover or an IPv4 address from an address pool.
          */
-    var Address: js.UndefOr[java.lang.String] = js.undefined
+    var Address: js.UndefOr[String] = js.undefined
     /**
          * Set to vpc to allocate the address for use with instances in a VPC. Default: The address is for use with instances in EC2-Classic.
          */
@@ -213,11 +213,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of an address pool that you own. Use this parameter to let Amazon EC2 select an address from the address pool. To specify a specific address from the address pool, use the Address parameter instead.
          */
-    var PublicIpv4Pool: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIpv4Pool: js.UndefOr[String] = js.undefined
   }
   
   
@@ -225,7 +225,7 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The ID that AWS assigns to represent the allocation of the Elastic IP address for use with instances in a VPC.
          */
-    var AllocationId: js.UndefOr[java.lang.String] = js.undefined
+    var AllocationId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether this Elastic IP address is for use with instances in EC2-Classic (standard) or instances in a VPC (vpc).
          */
@@ -233,11 +233,11 @@ object EC2Ns extends js.Object {
     /**
          * The Elastic IP address.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
     /**
          * The ID of an address pool.
          */
-    var PublicIpv4Pool: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIpv4Pool: js.UndefOr[String] = js.undefined
   }
   
   
@@ -249,15 +249,15 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone for the Dedicated Hosts.
          */
-    var AvailabilityZone: java.lang.String
+    var AvailabilityZone: String
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency in the Amazon Elastic Compute Cloud User Guide. 
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Specify the instance type for which to configure your Dedicated Hosts. When you specify the instance type, that is the only instance type that you can launch onto that host.
          */
-    var InstanceType: java.lang.String
+    var InstanceType: String
     /**
          * The number of Dedicated Hosts to allocate to your account with these parameters.
          */
@@ -281,7 +281,7 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the principal.
          */
-    var Principal: js.UndefOr[java.lang.String] = js.undefined
+    var Principal: js.UndefOr[String] = js.undefined
     /**
          * The type of principal.
          */
@@ -301,7 +301,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
   }
   
   
@@ -313,7 +313,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -321,11 +321,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether to allow an IP address that is already assigned to another network interface or instance to be reassigned to the specified network interface.
          */
-    var AllowReassignment: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowReassignment: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
     /**
          * One or more IP addresses to be assigned as a secondary private IP address to the network interface. You can't specify this parameter when also specifying a number of secondary IP addresses. If you don't specify an IP address, Amazon EC2 automatically selects an IP address within the subnet range.
          */
@@ -341,31 +341,31 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The allocation ID. This is required for EC2-VPC.
          */
-    var AllocationId: js.UndefOr[java.lang.String] = js.undefined
+    var AllocationId: js.UndefOr[String] = js.undefined
     /**
          * [EC2-VPC] For a VPC in an EC2-Classic account, specify true to allow an Elastic IP address that is already associated with an instance or network interface to be reassociated with the specified instance or network interface. Otherwise, the operation fails. In a VPC in an EC2-VPC-only account, reassociation is automatic, therefore you can specify false to ensure the operation fails if the Elastic IP address is already associated with another resource.
          */
-    var AllowReassociation: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowReassociation: js.UndefOr[Boolean] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance. This is required for EC2-Classic. For EC2-VPC, you can specify either the instance ID or the network interface ID, but not both. The operation fails if you specify an instance ID unless exactly one network interface is attached.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * [EC2-VPC] The ID of the network interface. If the instance has more than one network interface, you must specify a network interface ID.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * [EC2-VPC] The primary or secondary private IP address to associate with the Elastic IP address. If no private IP address is specified, the Elastic IP address is associated with the primary private IP address.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The Elastic IP address. This is required for EC2-Classic.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
   }
   
   
@@ -373,7 +373,7 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The ID that represents the association of the Elastic IP address with an instance.
          */
-    var AssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -381,15 +381,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the DHCP options set, or default to associate no DHCP options with the VPC.
          */
-    var DhcpOptionsId: java.lang.String
+    var DhcpOptionsId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -401,7 +401,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -417,15 +417,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the route table.
          */
-    var RouteTableId: java.lang.String
+    var RouteTableId: String
     /**
          * The ID of the subnet.
          */
-    var SubnetId: java.lang.String
+    var SubnetId: String
   }
   
   
@@ -433,7 +433,7 @@ object EC2Ns extends js.Object {
     /**
          * The route table association ID. This ID is required for disassociating the route table.
          */
-    var AssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -441,11 +441,11 @@ object EC2Ns extends js.Object {
     /**
          * The IPv6 CIDR block for your subnet. The subnet must have a /64 prefix length.
          */
-    var Ipv6CidrBlock: java.lang.String
+    var Ipv6CidrBlock: String
     /**
          * The ID of your subnet.
          */
-    var SubnetId: java.lang.String
+    var SubnetId: String
   }
   
   
@@ -457,7 +457,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -465,15 +465,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: java.lang.String
+    var TransitGatewayAttachmentId: String
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -489,15 +489,15 @@ object EC2Ns extends js.Object {
     /**
          * Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IPv6 addresses, or the size of the CIDR block.
          */
-    var AmazonProvidedIpv6CidrBlock: js.UndefOr[scala.Boolean] = js.undefined
+    var AmazonProvidedIpv6CidrBlock: js.UndefOr[Boolean] = js.undefined
     /**
          * An IPv4 CIDR block to associate with the VPC.
          */
-    var CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -513,7 +513,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -521,7 +521,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of one or more of the VPC's security groups. You cannot specify security groups from a different VPC.
          */
@@ -529,11 +529,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of an EC2-Classic instance to link to the ClassicLink-enabled VPC.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The ID of a ClassicLink-enabled VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -541,7 +541,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -549,15 +549,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the internet gateway.
          */
-    var InternetGatewayId: java.lang.String
+    var InternetGatewayId: String
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -569,15 +569,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
   }
   
   
@@ -585,7 +585,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface attachment.
          */
-    var AttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var AttachmentId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -593,19 +593,19 @@ object EC2Ns extends js.Object {
     /**
          * The device name (for example, /dev/sdh or xvdh).
          */
-    var Device: java.lang.String
+    var Device: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The ID of the EBS volume. The volume and instance must be within the same Availability Zone.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -613,15 +613,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
     /**
          * The ID of the virtual private gateway.
          */
-    var VpnGatewayId: java.lang.String
+    var VpnGatewayId: String
   }
   
   
@@ -637,7 +637,7 @@ object EC2Ns extends js.Object {
     /**
          * The attribute value. The valid values are true or false.
          */
-    var Value: js.UndefOr[scala.Boolean] = js.undefined
+    var Value: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -645,7 +645,7 @@ object EC2Ns extends js.Object {
     /**
          * The attribute value. The value is case-sensitive.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -653,11 +653,11 @@ object EC2Ns extends js.Object {
     /**
          * Not supported. Use a set of IP permissions to specify the CIDR.
          */
-    var CidrIp: js.UndefOr[java.lang.String] = js.undefined
+    var CidrIp: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Not supported. Use a set of IP permissions to specify the port.
          */
@@ -665,7 +665,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the security group.
          */
-    var GroupId: java.lang.String
+    var GroupId: String
     /**
          * One or more sets of IP permissions. You can't specify a destination security group and a CIDR IP address range in the same set of permissions.
          */
@@ -673,15 +673,15 @@ object EC2Ns extends js.Object {
     /**
          * Not supported. Use a set of IP permissions to specify the protocol name or number.
          */
-    var IpProtocol: js.UndefOr[java.lang.String] = js.undefined
+    var IpProtocol: js.UndefOr[String] = js.undefined
     /**
          * Not supported. Use a set of IP permissions to specify a destination security group.
          */
-    var SourceSecurityGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var SourceSecurityGroupName: js.UndefOr[String] = js.undefined
     /**
          * Not supported. Use a set of IP permissions to specify a destination security group.
          */
-    var SourceSecurityGroupOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
     /**
          * Not supported. Use a set of IP permissions to specify the port.
          */
@@ -693,11 +693,11 @@ object EC2Ns extends js.Object {
     /**
          * The CIDR IPv4 address range. You can't specify this parameter when specifying a source security group.
          */
-    var CidrIp: js.UndefOr[java.lang.String] = js.undefined
+    var CidrIp: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type number. For the ICMP/ICMPv6 type number, use -1 to specify all types. If you specify all ICMP/ICMPv6 types, you must specify all codes.
          */
@@ -705,11 +705,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the security group. You must specify either the security group ID or the security group name in the request. For security groups in a nondefault VPC, you must specify the security group ID.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * [EC2-Classic, default VPC] The name of the security group. You must specify either the security group ID or the security group name in the request.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * One or more sets of IP permissions. Can be used to specify multiple rules in a single command.
          */
@@ -717,15 +717,15 @@ object EC2Ns extends js.Object {
     /**
          * The IP protocol name (tcp, udp, icmp) or number (see Protocol Numbers). (VPC only) Use -1 to specify all protocols. If you specify -1, or a protocol number other than tcp, udp, icmp, or 58 (ICMPv6), traffic on all ports is allowed, regardless of any ports you specify. For tcp, udp, and icmp, you must specify a port range. For protocol 58 (ICMPv6), you can optionally specify a port range; if you don't, traffic for all types and codes is allowed.
          */
-    var IpProtocol: js.UndefOr[java.lang.String] = js.undefined
+    var IpProtocol: js.UndefOr[String] = js.undefined
     /**
          * [EC2-Classic, default VPC] The name of the source security group. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the start of the port range, the IP protocol, and the end of the port range. Creates rules that grant full ICMP, UDP, and TCP access. To create a rule with a specific IP protocol and port range, use a set of IP permissions instead. For EC2-VPC, the source security group must be in the same VPC.
          */
-    var SourceSecurityGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var SourceSecurityGroupName: js.UndefOr[String] = js.undefined
     /**
          * [EC2-Classic] The AWS account ID for the source security group, if the source security group is in a different account. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the IP protocol, the start of the port range, and the end of the port range. Creates rules that grant full ICMP, UDP, and TCP access. To create a rule with a specific IP protocol and port range, use a set of IP permissions instead.
          */
-    var SourceSecurityGroupOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code number. For the ICMP/ICMPv6 code number, use -1 to specify all codes. If you specify all ICMP/ICMPv6 types, you must specify all codes.
          */
@@ -741,7 +741,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the region.
          */
-    var RegionName: js.UndefOr[java.lang.String] = js.undefined
+    var RegionName: js.UndefOr[String] = js.undefined
     /**
          * The state of the Availability Zone.
          */
@@ -749,11 +749,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Availability Zone.
          */
-    var ZoneId: js.UndefOr[java.lang.String] = js.undefined
+    var ZoneId: js.UndefOr[String] = js.undefined
     /**
          * The name of the Availability Zone.
          */
-    var ZoneName: js.UndefOr[java.lang.String] = js.undefined
+    var ZoneName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -761,7 +761,7 @@ object EC2Ns extends js.Object {
     /**
          * The message about the Availability Zone.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -786,7 +786,7 @@ object EC2Ns extends js.Object {
     /**
          * The device name (for example, /dev/sdh or xvdh).
          */
-    var DeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceName: js.UndefOr[String] = js.undefined
     /**
          * Parameters used to automatically set up EBS volumes when the instance is launched.
          */
@@ -794,11 +794,11 @@ object EC2Ns extends js.Object {
     /**
          * Suppresses the specified device included in the block device mapping of the AMI.
          */
-    var NoDevice: js.UndefOr[java.lang.String] = js.undefined
+    var NoDevice: js.UndefOr[String] = js.undefined
     /**
          * The virtual device name (ephemeralN). Instance store volumes are numbered starting from 0. An instance type with 2 available instance store volumes can specify mappings for ephemeral0 and ephemeral1. The number of available instance store volumes depends on the instance type. After you connect to the instance, you must mount the volume. NVMe instance store volumes are automatically enumerated and assigned a device name. Including them in your block device mapping has no effect. Constraints: For M3 instances, you must specify instance store volumes in the block device mapping for the instance. When you launch an M3 instance, we ignore any instance store volumes specified in the block device mapping for the AMI.
          */
-    var VirtualName: js.UndefOr[java.lang.String] = js.undefined
+    var VirtualName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -806,11 +806,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance to bundle. Type: String Default: None Required: Yes
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The bucket in which to store the AMI. You can specify a bucket that you already own or a new bucket that Amazon EC2 creates on your behalf. If you specify a bucket that belongs to someone else, Amazon EC2 returns an error.
          */
@@ -830,7 +830,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the bundle task.
          */
-    var BundleId: js.UndefOr[java.lang.String] = js.undefined
+    var BundleId: js.UndefOr[String] = js.undefined
     /**
          * If the task fails, a description of the error.
          */
@@ -838,11 +838,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance associated with this bundle task.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The level of task completion, as a percent (for example, 20%).
          */
-    var Progress: js.UndefOr[java.lang.String] = js.undefined
+    var Progress: js.UndefOr[String] = js.undefined
     /**
          * The time this task started.
          */
@@ -866,11 +866,11 @@ object EC2Ns extends js.Object {
     /**
          * The error code.
          */
-    var Code: js.UndefOr[java.lang.String] = js.undefined
+    var Code: js.UndefOr[String] = js.undefined
     /**
          * The error message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -878,11 +878,11 @@ object EC2Ns extends js.Object {
     /**
          * The public IPv4 address range, in CIDR notation.
          */
-    var Cidr: js.UndefOr[java.lang.String] = js.undefined
+    var Cidr: js.UndefOr[String] = js.undefined
     /**
          * The description of the address range.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The state of the address pool.
          */
@@ -890,7 +890,7 @@ object EC2Ns extends js.Object {
     /**
          * Upon success, contains the ID of the address pool. Otherwise, contains an error message.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -898,11 +898,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the bundle task.
          */
-    var BundleId: java.lang.String
+    var BundleId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -918,11 +918,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Capacity Reservation to be cancelled.
          */
-    var CapacityReservationId: java.lang.String
+    var CapacityReservationId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -930,7 +930,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -938,15 +938,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the conversion task.
          */
-    var ConversionTaskId: java.lang.String
+    var ConversionTaskId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The reason for canceling the conversion task.
          */
-    var ReasonMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ReasonMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -954,7 +954,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the export task. This is the ID returned by CreateInstanceExportTask.
          */
-    var ExportTaskId: java.lang.String
+    var ExportTaskId: String
   }
   
   
@@ -962,15 +962,15 @@ object EC2Ns extends js.Object {
     /**
          * The reason for canceling the task.
          */
-    var CancelReason: js.UndefOr[java.lang.String] = js.undefined
+    var CancelReason: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the import image or import snapshot task to be canceled.
          */
-    var ImportTaskId: js.UndefOr[java.lang.String] = js.undefined
+    var ImportTaskId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -978,15 +978,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the task being canceled.
          */
-    var ImportTaskId: js.UndefOr[java.lang.String] = js.undefined
+    var ImportTaskId: js.UndefOr[String] = js.undefined
     /**
          * The current state of the task being canceled.
          */
-    var PreviousState: js.UndefOr[java.lang.String] = js.undefined
+    var PreviousState: js.UndefOr[String] = js.undefined
     /**
          * The current state of the task being canceled.
          */
-    var State: js.UndefOr[java.lang.String] = js.undefined
+    var State: js.UndefOr[String] = js.undefined
   }
   
   
@@ -994,7 +994,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Reserved Instance listing.
          */
-    var ReservedInstancesListingId: java.lang.String
+    var ReservedInstancesListingId: String
   }
   
   
@@ -1014,7 +1014,7 @@ object EC2Ns extends js.Object {
     /**
          * The description for the error code.
          */
-    var Message: java.lang.String
+    var Message: String
   }
   
   
@@ -1026,7 +1026,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: java.lang.String
+    var SpotFleetRequestId: String
   }
   
   
@@ -1034,7 +1034,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The IDs of the Spot Fleet requests.
          */
@@ -1042,7 +1042,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether to terminate instances for a Spot Fleet request if it is canceled successfully.
          */
-    var TerminateInstances: scala.Boolean
+    var TerminateInstances: Boolean
   }
   
   
@@ -1070,7 +1070,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: java.lang.String
+    var SpotFleetRequestId: String
   }
   
   
@@ -1078,7 +1078,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more Spot Instance request IDs.
          */
@@ -1098,7 +1098,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Instance request.
          */
-    var SpotInstanceRequestId: js.UndefOr[java.lang.String] = js.undefined
+    var SpotInstanceRequestId: js.UndefOr[String] = js.undefined
     /**
          * The state of the Spot Instance request.
          */
@@ -1110,7 +1110,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which the capacity is reserved.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The remaining capacity. Indicates the number of instances that can be launched in the Capacity Reservation.
          */
@@ -1118,7 +1118,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Capacity Reservation.
          */
-    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
+    var CapacityReservationId: js.UndefOr[String] = js.undefined
     /**
          * The date and time at which the Capacity Reservation was created.
          */
@@ -1126,7 +1126,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the Capacity Reservation supports EBS-optimized instances. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS- optimized instance.
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time.
          */
@@ -1138,7 +1138,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
          */
-    var EphemeralStorage: js.UndefOr[scala.Boolean] = js.undefined
+    var EphemeralStorage: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates the type of instance launches that the Capacity Reservation accepts. The options include:    open - The Capacity Reservation accepts all instances that have matching attributes (instance type, platform, and Availability Zone). Instances that have matching attributes launch into the Capacity Reservation automatically without specifying any additional parameters.    targeted - The Capacity Reservation only accepts instances that have matching attributes (instance type, platform, and Availability Zone), and explicitly target the Capacity Reservation. This ensures that only permitted instances can use the reserved capacity.   
          */
@@ -1150,7 +1150,7 @@ object EC2Ns extends js.Object {
     /**
          * The type of instance for which the Capacity Reservation reserves capacity.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The current state of the Capacity Reservation. A Capacity Reservation can be in one of the following states:    active - The Capacity Reservation is active and the capacity is available for your use.    cancelled - The Capacity Reservation expired automatically at the date and time specified in your request. The reserved capacity is no longer available for your use.    expired - The Capacity Reservation was manually cancelled. The reserved capacity is no longer available for your use.    pending - The Capacity Reservation request was successful but the capacity provisioning is still pending.    failed - The Capacity Reservation request has failed. A request might fail due to invalid request parameters, capacity constraints, or instance limit constraints. Failed requests are retained for 60 minutes.  
          */
@@ -1198,7 +1198,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Capacity Reservation.
          */
-    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
+    var CapacityReservationId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1206,7 +1206,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Capacity Reservation.
          */
-    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
+    var CapacityReservationId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1214,11 +1214,11 @@ object EC2Ns extends js.Object {
     /**
          * The plain-text authorization message for the prefix and account.
          */
-    var Message: java.lang.String
+    var Message: String
     /**
          * The signed authorization message for the prefix and account.
          */
-    var Signature: java.lang.String
+    var Signature: String
   }
   
   
@@ -1226,7 +1226,7 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 CIDR block.
          */
-    var CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var CidrBlock: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1234,11 +1234,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether ClassicLink DNS support is enabled for the VPC.
          */
-    var ClassicLinkDnsSupported: js.UndefOr[scala.Boolean] = js.undefined
+    var ClassicLinkDnsSupported: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1250,7 +1250,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the instance.
          */
@@ -1258,7 +1258,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1266,7 +1266,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the load balancer.
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -1290,7 +1290,7 @@ object EC2Ns extends js.Object {
     /**
          * A user-defined comment about the disk upload.
          */
-    var Comment: js.UndefOr[java.lang.String] = js.undefined
+    var Comment: js.UndefOr[String] = js.undefined
     /**
          * The time that the disk upload ends.
          */
@@ -1310,15 +1310,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The product code. This must be a product code that you own.
          */
-    var ProductCode: java.lang.String
+    var ProductCode: String
   }
   
   
@@ -1326,11 +1326,11 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID of the instance owner. This is only present if the product code is attached to the instance.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The return value of the request. Returns true if the specified product code is owned by the requester and associated with the specified instance.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1342,11 +1342,11 @@ object EC2Ns extends js.Object {
     /**
          * The ARN of the SNS topic for the notification.
          */
-    var ConnectionNotificationArn: js.UndefOr[java.lang.String] = js.undefined
+    var ConnectionNotificationArn: js.UndefOr[String] = js.undefined
     /**
          * The ID of the notification.
          */
-    var ConnectionNotificationId: js.UndefOr[java.lang.String] = js.undefined
+    var ConnectionNotificationId: js.UndefOr[String] = js.undefined
     /**
          * The state of the notification.
          */
@@ -1358,11 +1358,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the endpoint service.
          */
-    var ServiceId: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC endpoint.
          */
-    var VpcEndpointId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcEndpointId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1370,11 +1370,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the conversion task.
          */
-    var ConversionTaskId: js.UndefOr[java.lang.String] = js.undefined
+    var ConversionTaskId: js.UndefOr[String] = js.undefined
     /**
          * The time when the task expires. If the upload isn't complete before the expiration time, we automatically cancel the task.
          */
-    var ExpirationTime: js.UndefOr[java.lang.String] = js.undefined
+    var ExpirationTime: js.UndefOr[String] = js.undefined
     /**
          * If the task is for importing an instance, this contains information about the import instance task.
          */
@@ -1390,7 +1390,7 @@ object EC2Ns extends js.Object {
     /**
          * The status message related to the conversion task.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the task.
          */
@@ -1402,27 +1402,27 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The description for the new AFI.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The name for the new AFI. The default is the name of the source AFI.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The ID of the source AFI.
          */
-    var SourceFpgaImageId: java.lang.String
+    var SourceFpgaImageId: String
     /**
          * The region that contains the source AFI.
          */
-    var SourceRegion: java.lang.String
+    var SourceRegion: String
   }
   
   
@@ -1430,7 +1430,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the new AFI.
          */
-    var FpgaImageId: js.UndefOr[java.lang.String] = js.undefined
+    var FpgaImageId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1438,35 +1438,35 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see How to Ensure Idempotency in the Amazon Elastic Compute Cloud User Guide.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * A description for the new AMI in the destination region.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the destination snapshots of the copied image should be encrypted. You can encrypt a copy of an unencrypted snapshot, but you cannot create an unencrypted copy of an encrypted snapshot. The default CMK for EBS is used unless you specify a non-default AWS Key Management Service (AWS KMS) CMK using KmsKeyId. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * An identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume. This parameter is only required if you want to use a non-default CMK; if this parameter is not specified, the default CMK for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The CMK identifier may be provided in any of the following formats:    Key ID   Key alias, in the form alias/ExampleAlias     ARN using key ID. The ID ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.    ARN using key alias. The alias ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    AWS parses KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. This action will eventually report failure.  The specified CMK must exist in the region that the snapshot is being copied to. 
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The name of the new AMI in the destination region.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The ID of the AMI to copy.
          */
-    var SourceImageId: java.lang.String
+    var SourceImageId: String
     /**
          * The name of the region that contains the AMI to copy.
          */
-    var SourceRegion: java.lang.String
+    var SourceRegion: String
   }
   
   
@@ -1474,7 +1474,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the new AMI.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1482,35 +1482,35 @@ object EC2Ns extends js.Object {
     /**
          * A description for the EBS snapshot.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The destination region to use in the PresignedUrl parameter of a snapshot copy operation. This parameter is only valid for specifying the destination region in a PresignedUrl parameter, where it is required. The snapshot copy is sent to the regional endpoint that you sent the HTTP request to (for example, ec2.us-east-1.amazonaws.com). With the AWS CLI, this is specified using the --region parameter or the default region in your AWS configuration file.
          */
-    var DestinationRegion: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationRegion: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the destination snapshot should be encrypted. You can encrypt a copy of an unencrypted snapshot, but you cannot use it to create an unencrypted copy of an encrypted snapshot. Your default CMK for EBS is used unless you specify a non-default AWS Key Management Service (AWS KMS) CMK using KmsKeyId. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * An identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume. This parameter is only required if you want to use a non-default CMK; if this parameter is not specified, the default CMK for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The CMK identifier may be provided in any of the following formats:    Key ID   Key alias   ARN using key ID. The ID ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.    ARN using key alias. The alias ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    AWS parses KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. The action will eventually fail. 
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * When you copy an encrypted source snapshot using the Amazon EC2 Query API, you must supply a pre-signed URL. This parameter is optional for unencrypted snapshots. For more information, see Query Requests. The PresignedUrl should use the snapshot source endpoint, the CopySnapshot action, and include the SourceRegion, SourceSnapshotId, and DestinationRegion parameters. The PresignedUrl must be signed using AWS Signature Version 4. Because EBS snapshots are stored in Amazon S3, the signing algorithm for this parameter uses the same logic that is described in Authenticating Requests by Using Query Parameters (AWS Signature Version 4) in the Amazon Simple Storage Service API Reference. An invalid or improperly signed PresignedUrl will cause the copy operation to fail asynchronously, and the snapshot will move to an error state.
          */
-    var PresignedUrl: js.UndefOr[java.lang.String] = js.undefined
+    var PresignedUrl: js.UndefOr[String] = js.undefined
     /**
          * The ID of the region that contains the snapshot to be copied.
          */
-    var SourceRegion: java.lang.String
+    var SourceRegion: String
     /**
          * The ID of the EBS snapshot to copy.
          */
-    var SourceSnapshotId: java.lang.String
+    var SourceSnapshotId: String
   }
   
   
@@ -1518,7 +1518,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the new snapshot.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1550,19 +1550,19 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which to create the Capacity Reservation.
          */
-    var AvailabilityZone: java.lang.String
+    var AvailabilityZone: String
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency. Constraint: Maximum 64 ASCII characters.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the Capacity Reservation supports EBS-optimized instances. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS- optimized instance.
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time. You must provide an EndDate value if EndDateType is limited. Omit EndDate if EndDateType is unlimited. If the EndDateType is limited, the Capacity Reservation is cancelled within an hour from the specified time. For example, if you specify 5/31/2019, 13:30:55, the Capacity Reservation is guaranteed to end between 13:30:55 and 14:30:55 on 5/31/2019.
          */
@@ -1574,7 +1574,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
          */
-    var EphemeralStorage: js.UndefOr[scala.Boolean] = js.undefined
+    var EphemeralStorage: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of instances for which to reserve capacity.
          */
@@ -1590,7 +1590,7 @@ object EC2Ns extends js.Object {
     /**
          * The instance type for which to reserve capacity. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
          */
-    var InstanceType: java.lang.String
+    var InstanceType: String
     /**
          * The tags to apply to the Capacity Reservation during launch.
          */
@@ -1618,11 +1618,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The Internet-routable IP address for the customer gateway's outside interface. The address must be static.
          */
-    var PublicIp: java.lang.String
+    var PublicIp: String
     /**
          * The type of VPN connection that this customer gateway supports (ipsec.1).
          */
@@ -1642,11 +1642,11 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which to create the default subnet.
          */
-    var AvailabilityZone: java.lang.String
+    var AvailabilityZone: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1662,7 +1662,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1682,7 +1682,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1698,15 +1698,15 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC for which to create the egress-only internet gateway.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -1714,7 +1714,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the egress-only internet gateway.
          */
@@ -1726,11 +1726,11 @@ object EC2Ns extends js.Object {
     /**
          * The error code that indicates why the instance could not be launched. For more information about error codes, see Error Codes.
          */
-    var ErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The error message that describes why the instance could not be launched. For more information about error messages, see ee Error Codes.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The launch templates and overrides that were used for launching the instances. Any parameters that you specify in the Overrides override the same parameters in the launch template.
          */
@@ -1770,11 +1770,11 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2 Fleet.
          */
@@ -1790,7 +1790,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether EC2 Fleet should replace unhealthy instances.
          */
-    var ReplaceUnhealthyInstances: js.UndefOr[scala.Boolean] = js.undefined
+    var ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined
     /**
          * Describes the configuration of Spot Instances in an EC2 Fleet.
          */
@@ -1806,7 +1806,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether running instances should be terminated when the EC2 Fleet expires.
          */
-    var TerminateInstancesWithExpiration: js.UndefOr[scala.Boolean] = js.undefined
+    var TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined
     /**
          * The type of the request. By default, the EC2 Fleet places an asynchronous request for your desired capacity, and maintains it by replenishing interrupted Spot Instances (maintain). A value of instant places a synchronous one-time request, and returns errors for any instances that could not be launched. A value of request places an asynchronous one-time request without maintaining capacity or submitting requests in alternative capacity pools if capacity is unavailable. For more information, see EC2 Fleet Request Types in the Amazon Elastic Compute Cloud User Guide.
          */
@@ -1842,19 +1842,19 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The ARN for the IAM role that's used to post flow logs to a log group.
          */
-    var DeliverLogsPermissionArn: js.UndefOr[java.lang.String] = js.undefined
+    var DeliverLogsPermissionArn: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies the destination to which the flow log data is to be published. Flow log data can be published to an CloudWatch Logs log group or an Amazon S3 bucket. The value specified for this parameter depends on the value specified for LogDestinationType. If LogDestinationType is not specified or cloud-watch-logs, specify the Amazon Resource Name (ARN) of the CloudWatch Logs log group. If LogDestinationType is s3, specify the ARN of the Amazon S3 bucket. You can also specify a subfolder in the bucket. To specify a subfolder in the bucket, use the following ARN format: bucket_ARN/subfolder_name/. For example, to specify a subfolder named my-logs in a bucket named my-bucket, use the following ARN: arn:aws:s3:::my-bucket/my-logs/. You cannot use AWSLogs as a subfolder name. This is a reserved term.
          */
-    var LogDestination: js.UndefOr[java.lang.String] = js.undefined
+    var LogDestination: js.UndefOr[String] = js.undefined
     /**
          * Specifies the type of destination to which the flow log data is to be published. Flow log data can be published to CloudWatch Logs or Amazon S3. To publish flow log data to CloudWatch Logs, specify cloud-watch-logs. To publish flow log data to Amazon S3, specify s3. Default: cloud-watch-logs 
          */
@@ -1862,7 +1862,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the log group.
          */
-    var LogGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var LogGroupName: js.UndefOr[String] = js.undefined
     /**
          * One or more subnet, network interface, or VPC IDs. Constraints: Maximum of 1000 resources
          */
@@ -1882,7 +1882,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The IDs of the flow logs.
          */
@@ -1898,15 +1898,15 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * A description for the AFI.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The location of the encrypted design checkpoint in Amazon S3. The input must be a tarball.
          */
@@ -1918,7 +1918,7 @@ object EC2Ns extends js.Object {
     /**
          * A name for the AFI.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1926,11 +1926,11 @@ object EC2Ns extends js.Object {
     /**
          * The global FPGA image identifier (AGFI ID).
          */
-    var FpgaImageGlobalId: js.UndefOr[java.lang.String] = js.undefined
+    var FpgaImageGlobalId: js.UndefOr[String] = js.undefined
     /**
          * The FPGA image identifier (AFI ID).
          */
-    var FpgaImageId: js.UndefOr[java.lang.String] = js.undefined
+    var FpgaImageId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1942,23 +1942,23 @@ object EC2Ns extends js.Object {
     /**
          * A description for the new image.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * A name for the new image. Constraints: 3-128 alphanumeric characters, parentheses (()), square brackets ([]), spaces ( ), periods (.), slashes (/), dashes (-), single quotes ('), at-signs (@), or underscores(_)
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * By default, Amazon EC2 attempts to shut down and reboot the instance before creating the image. If the 'No Reboot' option is set, Amazon EC2 doesn't shut down the instance before creating the image. When this option is used, file system integrity on the created image can't be guaranteed.
          */
-    var NoReboot: js.UndefOr[scala.Boolean] = js.undefined
+    var NoReboot: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -1966,7 +1966,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the new AMI.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1974,7 +1974,7 @@ object EC2Ns extends js.Object {
     /**
          * A description for the conversion task or the resource being exported. The maximum length is 255 bytes.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The format and location for an instance export task.
          */
@@ -1982,7 +1982,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The target virtualization environment.
          */
@@ -2002,7 +2002,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2018,11 +2018,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * A unique name for the key pair. Constraints: Up to 255 ASCII characters
          */
-    var KeyName: java.lang.String
+    var KeyName: String
   }
   
   
@@ -2030,11 +2030,11 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The information for the launch template.
          */
@@ -2062,11 +2062,11 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The information for the launch template.
          */
@@ -2074,7 +2074,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
@@ -2082,7 +2082,7 @@ object EC2Ns extends js.Object {
     /**
          * The version number of the launch template version on which to base the new version. The new version inherits the same launch parameters as the source version, except for parameters that you specify in LaunchTemplateData.
          */
-    var SourceVersion: js.UndefOr[java.lang.String] = js.undefined
+    var SourceVersion: js.UndefOr[String] = js.undefined
     /**
          * A description for the version of the launch template.
          */
@@ -2102,15 +2102,15 @@ object EC2Ns extends js.Object {
     /**
          * The allocation ID of an Elastic IP address to associate with the NAT gateway. If the Elastic IP address is associated with another resource, you must first disassociate it.
          */
-    var AllocationId: java.lang.String
+    var AllocationId: String
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency. Constraint: Maximum 64 ASCII characters.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The subnet in which to create the NAT gateway.
          */
-    var SubnetId: java.lang.String
+    var SubnetId: String
   }
   
   
@@ -2118,7 +2118,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier to ensure the idempotency of the request. Only returned if a client token was provided in the request.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the NAT gateway.
          */
@@ -2130,15 +2130,15 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 network range to allow or deny, in CIDR notation (for example 172.16.0.0/24).
          */
-    var CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether this is an egress rule (rule is applied to traffic leaving the subnet).
          */
-    var Egress: scala.Boolean
+    var Egress: Boolean
     /**
          * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying protocol 1 (ICMP) or protocol 58 (ICMPv6) with an IPv6 CIDR block.
          */
@@ -2146,11 +2146,11 @@ object EC2Ns extends js.Object {
     /**
          * The IPv6 network range to allow or deny, in CIDR notation (for example 2001:db8:1234:1a00::/64).
          */
-    var Ipv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The ID of the network ACL.
          */
-    var NetworkAclId: java.lang.String
+    var NetworkAclId: String
     /**
          * TCP or UDP protocols: The range of ports the rule applies to. Required if specifying protocol 6 (TCP) or 17 (UDP).
          */
@@ -2158,7 +2158,7 @@ object EC2Ns extends js.Object {
     /**
          * The protocol number. A value of "-1" means all protocols. If you specify "-1" or a protocol number other than "6" (TCP), "17" (UDP), or "1" (ICMP), traffic on all ports is allowed, regardless of any ports or ICMP types or codes that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
          */
-    var Protocol: java.lang.String
+    var Protocol: String
     /**
          * Indicates whether to allow or deny the traffic that matches the rule.
          */
@@ -2174,11 +2174,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -2194,19 +2194,19 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID.
          */
-    var AwsAccountId: js.UndefOr[java.lang.String] = js.undefined
+    var AwsAccountId: js.UndefOr[String] = js.undefined
     /**
          * The AWS service. Currently not supported.
          */
-    var AwsService: js.UndefOr[java.lang.String] = js.undefined
+    var AwsService: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
     /**
          * The type of permission to grant.
          */
@@ -2226,11 +2226,11 @@ object EC2Ns extends js.Object {
     /**
          * A description for the network interface.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The IDs of one or more security groups.
          */
@@ -2246,7 +2246,7 @@ object EC2Ns extends js.Object {
     /**
          * The primary private IPv4 address of the network interface. If you don't specify an IPv4 address, Amazon EC2 selects one for you from the subnet's IPv4 CIDR range. If you specify an IP address, you cannot indicate any IP addresses specified in privateIpAddresses as primary (only one IP address can be designated as primary).
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * One or more private IPv4 addresses.
          */
@@ -2258,7 +2258,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet to associate with the network interface.
          */
-    var SubnetId: java.lang.String
+    var SubnetId: String
   }
   
   
@@ -2274,11 +2274,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * A name for the placement group. Must be unique within the scope of your account for the region. Constraints: Up to 255 ASCII characters
          */
-    var GroupName: java.lang.String
+    var GroupName: String
     /**
          * The placement strategy.
          */
@@ -2290,7 +2290,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure idempotency of your listings. This helps avoid duplicate listings. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: java.lang.String
+    var ClientToken: String
     /**
          * The number of instances that are a part of a Reserved Instance account to be listed in the Reserved Instance Marketplace. This number should be less than or equal to the instance count associated with the Reserved Instance ID specified in this call.
          */
@@ -2302,7 +2302,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the active Standard Reserved Instance.
          */
-    var ReservedInstancesId: java.lang.String
+    var ReservedInstancesId: String
   }
   
   
@@ -2318,47 +2318,47 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 CIDR address block used for the destination match. Routing decisions are based on the most specific match.
          */
-    var DestinationCidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationCidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The IPv6 CIDR block used for the destination match. Routing decisions are based on the most specific match.
          */
-    var DestinationIpv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationIpv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * [IPv6 traffic only] The ID of an egress-only internet gateway.
          */
-    var EgressOnlyInternetGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var EgressOnlyInternetGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of an internet gateway or virtual private gateway attached to your VPC.
          */
-    var GatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var GatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a NAT instance in your VPC. The operation fails if you specify an instance ID unless exactly one network interface is attached.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * [IPv4 traffic only] The ID of a NAT gateway.
          */
-    var NatGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var NatGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the route table for the route.
          */
-    var RouteTableId: java.lang.String
+    var RouteTableId: String
     /**
          * The ID of a transit gateway.
          */
-    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a VPC peering connection.
          */
-    var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcPeeringConnectionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2366,7 +2366,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2374,11 +2374,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -2394,19 +2394,19 @@ object EC2Ns extends js.Object {
     /**
          * A description for the security group. This is informational only. Constraints: Up to 255 characters in length Constraints for EC2-Classic: ASCII characters Constraints for EC2-VPC: a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=&amp;;{}!$*
          */
-    var Description: java.lang.String
+    var Description: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the security group. Constraints: Up to 255 characters in length. Cannot start with sg-. Constraints for EC2-Classic: ASCII characters Constraints for EC2-VPC: a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=&amp;;{}!$*
          */
-    var GroupName: java.lang.String
+    var GroupName: String
     /**
          * [EC2-VPC] The ID of the VPC. Required for EC2-VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2414,7 +2414,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the security group.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2422,11 +2422,11 @@ object EC2Ns extends js.Object {
     /**
          * A description for the snapshot.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The tags to apply to the snapshot during creation.
          */
@@ -2434,7 +2434,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the EBS volume.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -2442,15 +2442,15 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon S3 bucket in which to store the Spot Instance data feed.
          */
-    var Bucket: java.lang.String
+    var Bucket: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * A prefix for the data feed file names.
          */
-    var Prefix: js.UndefOr[java.lang.String] = js.undefined
+    var Prefix: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2466,27 +2466,27 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone for the subnet. Default: AWS selects one for you. If you create more than one subnet in your VPC, we may not necessarily select a different zone for each subnet.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The AZ ID of the subnet.
          */
-    var AvailabilityZoneId: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZoneId: js.UndefOr[String] = js.undefined
     /**
          * The IPv4 network range for the subnet, in CIDR notation. For example, 10.0.0.0/24.
          */
-    var CidrBlock: java.lang.String
+    var CidrBlock: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The IPv6 network range for the subnet, in CIDR notation. The subnet size must use a /64 prefix length.
          */
-    var Ipv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -2502,7 +2502,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The IDs of one or more resources, separated by spaces.
          */
@@ -2518,11 +2518,11 @@ object EC2Ns extends js.Object {
     /**
          * A description of the transit gateway.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The transit gateway options.
          */
@@ -2546,23 +2546,23 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether traffic matching this route is to be dropped.
          */
-    var Blackhole: js.UndefOr[scala.Boolean] = js.undefined
+    var Blackhole: js.UndefOr[Boolean] = js.undefined
     /**
          * The CIDR range used for destination matches. Routing decisions are based on the most specific match.
          */
-    var DestinationCidrBlock: java.lang.String
+    var DestinationCidrBlock: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -2578,7 +2578,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The tags to apply to the transit gateway route table.
          */
@@ -2586,7 +2586,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the transit gateway.
          */
-    var TransitGatewayId: java.lang.String
+    var TransitGatewayId: String
   }
   
   
@@ -2602,7 +2602,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The VPC attachment options.
          */
@@ -2618,11 +2618,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the transit gateway.
          */
-    var TransitGatewayId: java.lang.String
+    var TransitGatewayId: String
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -2654,7 +2654,7 @@ object EC2Ns extends js.Object {
     /**
          * The specific AWS account ID that is to be added or removed from a volume's list of create volume permissions.
          */
-    var UserId: js.UndefOr[java.lang.String] = js.undefined
+    var UserId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2674,15 +2674,15 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which to create the volume. Use DescribeAvailabilityZones to list the Availability Zones that are currently available to you.
          */
-    var AvailabilityZone: java.lang.String
+    var AvailabilityZone: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the volume should be encrypted. Encrypted Amazon EBS volumes may only be attached to instances that support Amazon EBS encryption. Volumes that are created from encrypted snapshots are automatically encrypted. There is no way to create an encrypted volume from an unencrypted snapshot or vice versa. If your AMI uses encrypted volumes, you can only launch it on supported instance types. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of I/O operations per second (IOPS) to provision for the volume, with a maximum ratio of 50 IOPS/GiB. Range is 100 to 64,000IOPS for volumes in most regions. Maximum IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. This parameter is valid only for Provisioned IOPS SSD (io1) volumes.
          */
@@ -2690,7 +2690,7 @@ object EC2Ns extends js.Object {
     /**
          * An identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume. This parameter is only required if you want to use a non-default CMK; if this parameter is not specified, the default CMK for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The CMK identifier may be provided in any of the following formats:    Key ID   Key alias   ARN using key ID. The ID ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.    ARN using key alias. The alias ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    AWS parses KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. The action will eventually fail. 
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The size of the volume, in GiBs. Constraints: 1-16,384 for gp2, 4-16,384 for io1, 500-16,384 for st1, 500-16,384 for sc1, and 1-1,024 for standard. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
          */
@@ -2698,7 +2698,7 @@ object EC2Ns extends js.Object {
     /**
          * The snapshot from which to create the volume.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * The tags to apply to the volume during creation.
          */
@@ -2714,7 +2714,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * One or more endpoint events for which to receive notifications. Valid values are Accept, Connect, Delete, and Reject.
          */
@@ -2722,19 +2722,19 @@ object EC2Ns extends js.Object {
     /**
          * The ARN of the SNS topic for the notifications.
          */
-    var ConnectionNotificationArn: java.lang.String
+    var ConnectionNotificationArn: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the endpoint service.
          */
-    var ServiceId: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the endpoint. 
          */
-    var VpcEndpointId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcEndpointId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2742,7 +2742,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the notification.
          */
@@ -2754,19 +2754,19 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * (Gateway endpoint) A policy to attach to the endpoint that controls access to the service. The policy must be in valid JSON format. If this parameter is not specified, we attach a default policy that allows full access to the service.
          */
-    var PolicyDocument: js.UndefOr[java.lang.String] = js.undefined
+    var PolicyDocument: js.UndefOr[String] = js.undefined
     /**
          * (Interface endpoint) Indicate whether to associate a private hosted zone with the specified VPC. The private hosted zone contains a record set for the default public DNS name for the service for the region (for example, kinesis.us-east-1.amazonaws.com) which resolves to the private IP addresses of the endpoint network interfaces in the VPC. This enables you to make requests to the default public DNS name for the service instead of the public DNS names that are automatically generated by the VPC endpoint service. To use a private hosted zone, you must set the following VPC attributes to true: enableDnsHostnames and enableDnsSupport. Use ModifyVpcAttribute to set the VPC attributes. Default: false 
          */
-    var PrivateDnsEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * (Gateway endpoint) One or more route table IDs.
          */
@@ -2778,7 +2778,7 @@ object EC2Ns extends js.Object {
     /**
          * The service name. To get a list of available services, use the DescribeVpcEndpointServices request, or get the name from the service provider.
          */
-    var ServiceName: java.lang.String
+    var ServiceName: String
     /**
          * (Interface endpoint) The ID of one or more subnets in which to create an endpoint network interface.
          */
@@ -2790,7 +2790,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC in which the endpoint will be used.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -2798,7 +2798,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the endpoint.
          */
@@ -2810,15 +2810,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicate whether requests from service consumers to create an endpoint to your service must be accepted. To accept a request, use AcceptVpcEndpointConnections.
          */
-    var AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined
+    var AcceptanceRequired: js.UndefOr[Boolean] = js.undefined
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Names (ARNs) of one or more Network Load Balancers for your service.
          */
@@ -2830,7 +2830,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the service configuration.
          */
@@ -2842,23 +2842,23 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The AWS account ID of the owner of the accepter VPC. Default: Your AWS account ID
          */
-    var PeerOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var PeerOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The region code for the accepter VPC, if the accepter VPC is located in a region other than the region in which you make the request. Default: The region in which you make the request.
          */
-    var PeerRegion: js.UndefOr[java.lang.String] = js.undefined
+    var PeerRegion: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC with which you are creating the VPC peering connection. You must specify this parameter in the request.
          */
-    var PeerVpcId: js.UndefOr[java.lang.String] = js.undefined
+    var PeerVpcId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the requester VPC. You must specify this parameter in the request.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2874,15 +2874,15 @@ object EC2Ns extends js.Object {
     /**
          * Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block.
          */
-    var AmazonProvidedIpv6CidrBlock: js.UndefOr[scala.Boolean] = js.undefined
+    var AmazonProvidedIpv6CidrBlock: js.UndefOr[Boolean] = js.undefined
     /**
          * The IPv4 network range for the VPC, in CIDR notation. For example, 10.0.0.0/16.
          */
-    var CidrBlock: java.lang.String
+    var CidrBlock: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The tenancy options for instances launched into the VPC. For default, instances are launched with shared tenancy by default. You can launch instances with any tenancy into a shared tenancy VPC. For dedicated, instances are launched as dedicated tenancy instances by default. You can only launch instances with a tenancy of dedicated or host into a dedicated tenancy VPC.   Important: The host value cannot be used with this parameter. Use the default or dedicated values only. Default: default 
          */
@@ -2902,11 +2902,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the customer gateway.
          */
-    var CustomerGatewayId: java.lang.String
+    var CustomerGatewayId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The options for the VPN connection.
          */
@@ -2914,15 +2914,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the transit gateway. If you specify a transit gateway, you cannot specify a virtual private gateway.
          */
-    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The type of VPN connection (ipsec.1).
          */
-    var Type: java.lang.String
+    var Type: String
     /**
          * The ID of the virtual private gateway. If you specify a virtual private gateway, you cannot specify a transit gateway.
          */
-    var VpnGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var VpnGatewayId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2938,11 +2938,11 @@ object EC2Ns extends js.Object {
     /**
          * The CIDR block associated with the local subnet of the customer network.
          */
-    var DestinationCidrBlock: java.lang.String
+    var DestinationCidrBlock: String
     /**
          * The ID of the VPN connection.
          */
-    var VpnConnectionId: java.lang.String
+    var VpnConnectionId: String
   }
   
   
@@ -2954,11 +2954,11 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone for the virtual private gateway.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The type of VPN connection this virtual private gateway supports.
          */
@@ -2978,7 +2978,7 @@ object EC2Ns extends js.Object {
     /**
          * The credit option for CPU usage of a T2 or T3 instance. Valid values are standard and unlimited.
          */
-    var CpuCredits: js.UndefOr[java.lang.String] = js.undefined
+    var CpuCredits: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2986,7 +2986,7 @@ object EC2Ns extends js.Object {
     /**
          * The credit option for CPU usage of a T2 or T3 instance. Valid values are standard and unlimited.
          */
-    var CpuCredits: java.lang.String
+    var CpuCredits: String
   }
   
   
@@ -2994,19 +2994,19 @@ object EC2Ns extends js.Object {
     /**
          * The customer gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
          */
-    var BgpAsn: js.UndefOr[java.lang.String] = js.undefined
+    var BgpAsn: js.UndefOr[String] = js.undefined
     /**
          * The ID of the customer gateway.
          */
-    var CustomerGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var CustomerGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The Internet-routable IP address of the customer gateway's outside interface.
          */
-    var IpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var IpAddress: js.UndefOr[String] = js.undefined
     /**
          * The current state of the customer gateway (pending | available | deleting | deleted).
          */
-    var State: js.UndefOr[java.lang.String] = js.undefined
+    var State: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the customer gateway.
          */
@@ -3014,7 +3014,7 @@ object EC2Ns extends js.Object {
     /**
          * The type of VPN connection the customer gateway supports (ipsec.1).
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3022,11 +3022,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the customer gateway.
          */
-    var CustomerGatewayId: java.lang.String
+    var CustomerGatewayId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3034,11 +3034,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the DHCP options set.
          */
-    var DhcpOptionsId: java.lang.String
+    var DhcpOptionsId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3046,7 +3046,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the egress-only internet gateway.
          */
@@ -3058,7 +3058,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var ReturnCode: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnCode: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3070,7 +3070,7 @@ object EC2Ns extends js.Object {
     /**
          * The description for the error code.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3106,7 +3106,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The IDs of the EC2 Fleets.
          */
@@ -3114,7 +3114,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether to terminate instances for an EC2 Fleet if it is deleted successfully.
          */
-    var TerminateInstances: scala.Boolean
+    var TerminateInstances: Boolean
   }
   
   
@@ -3134,7 +3134,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more flow log IDs.
          */
@@ -3154,11 +3154,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AFI.
          */
-    var FpgaImageId: java.lang.String
+    var FpgaImageId: String
   }
   
   
@@ -3166,7 +3166,7 @@ object EC2Ns extends js.Object {
     /**
          * Is true if the request succeeds, and an error otherwise.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3174,11 +3174,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the internet gateway.
          */
-    var InternetGatewayId: java.lang.String
+    var InternetGatewayId: String
   }
   
   
@@ -3186,11 +3186,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the key pair.
          */
-    var KeyName: java.lang.String
+    var KeyName: String
   }
   
   
@@ -3198,11 +3198,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
@@ -3222,11 +3222,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
@@ -3242,11 +3242,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the launch template.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template.
          */
-    var LaunchTemplateName: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateName: js.UndefOr[String] = js.undefined
     /**
          * Information about the error.
          */
@@ -3262,11 +3262,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the launch template.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template.
          */
-    var LaunchTemplateName: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateName: js.UndefOr[String] = js.undefined
     /**
          * The version number of the launch template.
          */
@@ -3290,7 +3290,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the NAT gateway.
          */
-    var NatGatewayId: java.lang.String
+    var NatGatewayId: String
   }
   
   
@@ -3298,7 +3298,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the NAT gateway.
          */
-    var NatGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var NatGatewayId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3306,15 +3306,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the rule is an egress rule.
          */
-    var Egress: scala.Boolean
+    var Egress: Boolean
     /**
          * The ID of the network ACL.
          */
-    var NetworkAclId: java.lang.String
+    var NetworkAclId: String
     /**
          * The rule number of the entry to delete.
          */
@@ -3326,11 +3326,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the network ACL.
          */
-    var NetworkAclId: java.lang.String
+    var NetworkAclId: String
   }
   
   
@@ -3338,15 +3338,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Specify true to remove the permission even if the network interface is attached to an instance.
          */
-    var Force: js.UndefOr[scala.Boolean] = js.undefined
+    var Force: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the network interface permission.
          */
-    var NetworkInterfacePermissionId: java.lang.String
+    var NetworkInterfacePermissionId: String
   }
   
   
@@ -3354,7 +3354,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds, otherwise returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3362,11 +3362,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
   }
   
   
@@ -3374,11 +3374,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the placement group.
          */
-    var GroupName: java.lang.String
+    var GroupName: String
   }
   
   
@@ -3386,19 +3386,19 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 CIDR range for the route. The value you specify must match the CIDR for the route exactly.
          */
-    var DestinationCidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationCidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The IPv6 CIDR range for the route. The value you specify must match the CIDR for the route exactly.
          */
-    var DestinationIpv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationIpv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the route table.
          */
-    var RouteTableId: java.lang.String
+    var RouteTableId: String
   }
   
   
@@ -3406,11 +3406,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the route table.
          */
-    var RouteTableId: java.lang.String
+    var RouteTableId: String
   }
   
   
@@ -3418,15 +3418,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the security group. Required for a nondefault VPC.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * [EC2-Classic, default VPC] The name of the security group. You can specify either the security group name or the security group ID.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3434,11 +3434,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the EBS snapshot.
          */
-    var SnapshotId: java.lang.String
+    var SnapshotId: String
   }
   
   
@@ -3446,7 +3446,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3454,11 +3454,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the subnet.
          */
-    var SubnetId: java.lang.String
+    var SubnetId: String
   }
   
   
@@ -3466,7 +3466,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The IDs of one or more resources, separated by spaces.
          */
@@ -3482,11 +3482,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the transit gateway.
          */
-    var TransitGatewayId: java.lang.String
+    var TransitGatewayId: String
   }
   
   
@@ -3502,15 +3502,15 @@ object EC2Ns extends js.Object {
     /**
          * The CIDR range for the route. This must match the CIDR for the route exactly.
          */
-    var DestinationCidrBlock: java.lang.String
+    var DestinationCidrBlock: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -3526,11 +3526,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -3546,11 +3546,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: java.lang.String
+    var TransitGatewayAttachmentId: String
   }
   
   
@@ -3566,11 +3566,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the volume.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -3582,7 +3582,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3598,7 +3598,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The IDs of one or more services.
          */
@@ -3618,7 +3618,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more VPC endpoint IDs.
          */
@@ -3638,11 +3638,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC peering connection.
          */
-    var VpcPeeringConnectionId: java.lang.String
+    var VpcPeeringConnectionId: String
   }
   
   
@@ -3650,7 +3650,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3658,11 +3658,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -3670,11 +3670,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPN connection.
          */
-    var VpnConnectionId: java.lang.String
+    var VpnConnectionId: String
   }
   
   
@@ -3682,11 +3682,11 @@ object EC2Ns extends js.Object {
     /**
          * The CIDR block associated with the local subnet of the customer network.
          */
-    var DestinationCidrBlock: java.lang.String
+    var DestinationCidrBlock: String
     /**
          * The ID of the VPN connection.
          */
-    var VpnConnectionId: java.lang.String
+    var VpnConnectionId: String
   }
   
   
@@ -3694,11 +3694,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the virtual private gateway.
          */
-    var VpnGatewayId: java.lang.String
+    var VpnGatewayId: String
   }
   
   
@@ -3706,11 +3706,11 @@ object EC2Ns extends js.Object {
     /**
          * The public IPv4 address range, in CIDR notation. The prefix must be the same prefix that you specified when you provisioned the address range.
          */
-    var Cidr: java.lang.String
+    var Cidr: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3726,11 +3726,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AMI.
          */
-    var ImageId: java.lang.String
+    var ImageId: String
   }
   
   
@@ -3742,7 +3742,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3762,7 +3762,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. Filter names and values are case-sensitive.    allocation-id - [EC2-VPC] The allocation ID for the address.    association-id - [EC2-VPC] The association ID for the address.    domain - Indicates whether the address is for use in EC2-Classic (standard) or in a VPC (vpc).    instance-id - The ID of the instance the address is associated with, if any.    network-interface-id - [EC2-VPC] The ID of the network interface that the address is associated with, if any.    network-interface-owner-id - The AWS account ID of the owner.    private-ip-address - [EC2-VPC] The private IP address associated with the Elastic IP address.    public-ip - The Elastic IP address.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
          */
@@ -3786,7 +3786,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3798,7 +3798,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether all resource types in the region are configured to use longer IDs. This value is only true if all users are configured to use longer IDs for all resources types in the region.
          */
-    var UseLongIdsAggregated: js.UndefOr[scala.Boolean] = js.undefined
+    var UseLongIdsAggregated: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3806,7 +3806,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    message - Information about the Availability Zone.    region-name - The name of the region for the Availability Zone (for example, us-east-1).    state - The state of the Availability Zone (available | information | impaired | unavailable).    zone-id - The ID of the Availability Zone (for example, use1-az1).    zone-name - The name of the Availability Zone (for example, us-east-1a).  
          */
@@ -3838,7 +3838,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    bundle-id - The ID of the bundle task.    error-code - If the task failed, the error code returned.    error-message - If the task failed, the error message returned.    instance-id - The ID of the instance.    progress - The level of task completion, as a percentage (for example, 20%).    s3-bucket - The Amazon S3 bucket to store the AMI.    s3-prefix - The beginning of the AMI name.    start-time - The time the task started (for example, 2013-09-15T17:15:20.000Z).    state - The state of the task (pending | waiting-for-shutdown | bundling | storing | cancelling | complete | failed).    update-time - The time of the most recent update for the task.  
          */
@@ -3858,7 +3858,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
          */
@@ -3878,7 +3878,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3890,7 +3890,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.
          */
@@ -3902,7 +3902,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3914,7 +3914,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3922,7 +3922,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    group-id - The ID of a VPC security group that's associated with the instance.    instance-id - The ID of the instance.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC to which the instance is linked.  vpc-id - The ID of the VPC that the instance is linked to.  
          */
@@ -3938,7 +3938,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3950,7 +3950,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -3962,7 +3962,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3982,7 +3982,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    bgp-asn - The customer gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).    customer-gateway-id - The ID of the customer gateway.    ip-address - The IP address of the customer gateway's Internet-routable external interface.    state - The state of the customer gateway (pending | available | deleting | deleted).    type - The type of customer gateway. Currently, the only supported type is ipsec.1.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
          */
@@ -4006,7 +4006,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    dhcp-options-id - The ID of a DHCP options set.    key - The key for one of the options (for example, domain-name).    value - The value for one of the options.    owner-id - The ID of the AWS account that owns the DHCP options set.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
          */
@@ -4026,7 +4026,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more egress-only internet gateway IDs.
          */
@@ -4038,7 +4038,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4050,7 +4050,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4058,7 +4058,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more Elastic Graphics accelerator IDs.
          */
@@ -4074,7 +4074,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to request the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4090,7 +4090,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4114,11 +4114,11 @@ object EC2Ns extends js.Object {
     /**
          * The error code that indicates why the instance could not be launched. For more information about error codes, see Error Codes.
          */
-    var ErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The error message that describes why the instance could not be launched. For more information about error messages, see ee Error Codes.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The launch templates and overrides that were used for launching the instances. Any parameters that you specify in the Overrides override the same parameters in the launch template.
          */
@@ -4134,7 +4134,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The type of events to describe. By default, all events are described.
          */
@@ -4150,7 +4150,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The start date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
          */
@@ -4174,7 +4174,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The start date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
          */
@@ -4186,7 +4186,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    instance-type - The instance type.  
          */
@@ -4202,7 +4202,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4218,7 +4218,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4250,7 +4250,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    activity-status - The progress of the EC2 Fleet ( error | pending-fulfillment | pending-termination | fulfilled).    excess-capacity-termination-policy - Indicates whether to terminate running instances if the target capacity is decreased below the current EC2 Fleet size (true | false).    fleet-state - The state of the EC2 Fleet (submitted | active | deleted | failed | deleted-running | deleted-terminating | modifying).    replace-unhealthy-instances - Indicates whether EC2 Fleet should replace unhealthy instances (true | false).    type - The type of request (instant | request | maintain).  
          */
@@ -4266,7 +4266,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4278,7 +4278,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4286,7 +4286,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    deliver-log-status - The status of the logs delivery (SUCCESS | FAILED).    log-destination-type - The type of destination to which the flow log publishes data. Possible destination types include cloud-watch-logs and S3.    flow-log-id - The ID of the flow log.    log-group-name - The name of the log group.    resource-id - The ID of the VPC, subnet, or network interface.    traffic-type - The type of traffic (ACCEPT | REJECT | ALL).  
          */
@@ -4302,7 +4302,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4314,7 +4314,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4326,11 +4326,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AFI.
          */
-    var FpgaImageId: java.lang.String
+    var FpgaImageId: String
   }
   
   
@@ -4346,7 +4346,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    create-time - The creation time of the AFI.    fpga-image-id - The FPGA image identifier (AFI ID).    fpga-image-global-id - The global FPGA image identifier (AGFI ID).    name - The name of the AFI.    owner-id - The AWS account ID of the AFI owner.    product-code - The product code.    shell-version - The version of the AWS Shell that was used to create the bitstream.    state - The state of the AFI (pending | failed | available | unavailable).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    update-time - The time of the most recent update.  
          */
@@ -4402,11 +4402,11 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the reservation offering.
          */
-    var OfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var OfferingId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4414,7 +4414,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the offerings.
          */
@@ -4438,7 +4438,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4450,7 +4450,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4470,7 +4470,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4482,7 +4482,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4522,7 +4522,7 @@ object EC2Ns extends js.Object {
     /**
          * The type of resource: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway 
          */
-    var Resource: js.UndefOr[java.lang.String] = js.undefined
+    var Resource: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4538,11 +4538,11 @@ object EC2Ns extends js.Object {
     /**
          * The ARN of the principal, which can be an IAM role, IAM user, or the root user.
          */
-    var PrincipalArn: java.lang.String
+    var PrincipalArn: String
     /**
          * The type of resource: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway 
          */
-    var Resource: js.UndefOr[java.lang.String] = js.undefined
+    var Resource: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4562,11 +4562,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AMI.
          */
-    var ImageId: java.lang.String
+    var ImageId: String
   }
   
   
@@ -4574,7 +4574,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Scopes the images by users with explicit launch permissions. Specify an AWS account ID, self (the sender of the request), or all (public AMIs).
          */
@@ -4606,7 +4606,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Filter tasks using the task-state filter and one of the following values: active, completed, deleting, deleted.
          */
@@ -4622,7 +4622,7 @@ object EC2Ns extends js.Object {
     /**
          * A token that indicates the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4634,7 +4634,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to get the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4642,7 +4642,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.
          */
@@ -4658,7 +4658,7 @@ object EC2Ns extends js.Object {
     /**
          * A token that indicates the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4670,7 +4670,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to get the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4682,11 +4682,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -4694,7 +4694,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    instance-id - The ID of the instance.  
          */
@@ -4710,7 +4710,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4722,7 +4722,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4730,7 +4730,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    availability-zone - The Availability Zone of the instance.    event.code - The code for the scheduled event (instance-reboot | system-reboot | system-maintenance | instance-retirement | instance-stop).    event.description - A description of the event.    event.not-after - The latest end time for the scheduled event (for example, 2014-09-15T17:15:20.000Z).    event.not-before - The earliest start time for the scheduled event (for example, 2014-09-15T17:15:20.000Z).    instance-state-code - The code for the instance state, as a 16-bit unsigned integer. The high byte is used for internal purposes and should be ignored. The low byte is set based on the state represented. The valid values are 0 (pending), 16 (running), 32 (shutting-down), 48 (terminated), 64 (stopping), and 80 (stopped).    instance-state-name - The state of the instance (pending | running | shutting-down | terminated | stopping | stopped).    instance-status.reachability - Filters on instance status where the name is reachability (passed | failed | initializing | insufficient-data).    instance-status.status - The status of the instance (ok | impaired | initializing | insufficient-data | not-applicable).    system-status.reachability - Filters on system status where the name is reachability (passed | failed | initializing | insufficient-data).    system-status.status - The system status of the instance (ok | impaired | initializing | insufficient-data | not-applicable).  
          */
@@ -4738,7 +4738,7 @@ object EC2Ns extends js.Object {
     /**
          * When true, includes the health status for all instances. When false, includes the health status for running instances only. Default: false 
          */
-    var IncludeAllInstances: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludeAllInstances: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more instance IDs. Default: Describes all your instances. Constraints: Maximum 100 explicitly specified instance IDs.
          */
@@ -4750,7 +4750,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4762,7 +4762,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4770,7 +4770,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    affinity - The affinity setting for an instance running on a Dedicated Host (default | host).    architecture - The instance architecture (i386 | x86_64).    availability-zone - The Availability Zone of the instance.    block-device-mapping.attach-time - The attach time for an EBS volume mapped to the instance, for example, 2010-09-15T17:15:20.000Z.    block-device-mapping.delete-on-termination - A Boolean that indicates whether the EBS volume is deleted on instance termination.    block-device-mapping.device-name - The device name specified in the block device mapping (for example, /dev/sdh or xvdh).    block-device-mapping.status - The status for the EBS volume (attaching | attached | detaching | detached).    block-device-mapping.volume-id - The volume ID of the EBS volume.    client-token - The idempotency token you provided when you launched the instance.    dns-name - The public DNS name of the instance.    group-id - The ID of the security group for the instance. EC2-Classic only.    group-name - The name of the security group for the instance. EC2-Classic only.    hibernation-options.configured - A Boolean that indicates whether the instance is enabled for hibernation. A value of true means that the instance is enabled for hibernation.     host-id - The ID of the Dedicated Host on which the instance is running, if applicable.    hypervisor - The hypervisor type of the instance (ovm | xen).    iam-instance-profile.arn - The instance profile associated with the instance. Specified as an ARN.    image-id - The ID of the image used to launch the instance.    instance-id - The ID of the instance.    instance-lifecycle - Indicates whether this is a Spot Instance or a Scheduled Instance (spot | scheduled).    instance-state-code - The state of the instance, as a 16-bit unsigned integer. The high byte is used for internal purposes and should be ignored. The low byte is set based on the state represented. The valid values are: 0 (pending), 16 (running), 32 (shutting-down), 48 (terminated), 64 (stopping), and 80 (stopped).    instance-state-name - The state of the instance (pending | running | shutting-down | terminated | stopping | stopped).    instance-type - The type of instance (for example, t2.micro).    instance.group-id - The ID of the security group for the instance.     instance.group-name - The name of the security group for the instance.     ip-address - The public IPv4 address of the instance.    kernel-id - The kernel ID.    key-name - The name of the key pair used when the instance was launched.    launch-index - When launching multiple instances, this is the index for the instance in the launch group (for example, 0, 1, 2, and so on).     launch-time - The time when the instance was launched.    monitoring-state - Indicates whether detailed monitoring is enabled (disabled | enabled).    network-interface.addresses.private-ip-address - The private IPv4 address associated with the network interface.    network-interface.addresses.primary - Specifies whether the IPv4 address of the network interface is the primary private IPv4 address.    network-interface.addresses.association.public-ip - The ID of the association of an Elastic IP address (IPv4) with a network interface.    network-interface.addresses.association.ip-owner-id - The owner ID of the private IPv4 address associated with the network interface.    network-interface.association.public-ip - The address of the Elastic IP address (IPv4) bound to the network interface.    network-interface.association.ip-owner-id - The owner of the Elastic IP address (IPv4) associated with the network interface.    network-interface.association.allocation-id - The allocation ID returned when you allocated the Elastic IP address (IPv4) for your network interface.    network-interface.association.association-id - The association ID returned when the network interface was associated with an IPv4 address.    network-interface.attachment.attachment-id - The ID of the interface attachment.    network-interface.attachment.instance-id - The ID of the instance to which the network interface is attached.    network-interface.attachment.instance-owner-id - The owner ID of the instance to which the network interface is attached.    network-interface.attachment.device-index - The device index to which the network interface is attached.    network-interface.attachment.status - The status of the attachment (attaching | attached | detaching | detached).    network-interface.attachment.attach-time - The time that the network interface was attached to an instance.    network-interface.attachment.delete-on-termination - Specifies whether the attachment is deleted when an instance is terminated.    network-interface.availability-zone - The Availability Zone for the network interface.    network-interface.description - The description of the network interface.    network-interface.group-id - The ID of a security group associated with the network interface.    network-interface.group-name - The name of a security group associated with the network interface.    network-interface.ipv6-addresses.ipv6-address - The IPv6 address associated with the network interface.    network-interface.mac-address - The MAC address of the network interface.    network-interface.network-interface-id - The ID of the network interface.    network-interface.owner-id - The ID of the owner of the network interface.    network-interface.private-dns-name - The private DNS name of the network interface.    network-interface.requester-id - The requester ID for the network interface.    network-interface.requester-managed - Indicates whether the network interface is being managed by AWS.    network-interface.status - The status of the network interface (available) | in-use).    network-interface.source-dest-check - Whether the network interface performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the network interface to perform network address translation (NAT) in your VPC.    network-interface.subnet-id - The ID of the subnet for the network interface.    network-interface.vpc-id - The ID of the VPC for the network interface.    owner-id - The AWS account ID of the instance owner.    placement-group-name - The name of the placement group for the instance.    platform - The platform. Use windows if you have Windows instances; otherwise, leave blank.    private-dns-name - The private IPv4 DNS name of the instance.    private-ip-address - The private IPv4 address of the instance.    product-code - The product code associated with the AMI used to launch the instance.    product-code.type - The type of product code (devpay | marketplace).    ramdisk-id - The RAM disk ID.    reason - The reason for the current state of the instance (for example, shows "User Initiated [date]" when you stop or terminate the instance). Similar to the state-reason-code filter.    requester-id - The ID of the entity that launched the instance on your behalf (for example, AWS Management Console, Auto Scaling, and so on).    reservation-id - The ID of the instance's reservation. A reservation ID is created any time you launch an instance. A reservation ID has a one-to-one relationship with an instance launch request, but can be associated with more than one instance if you launch multiple instances using the same launch request. For example, if you launch one instance, you get one reservation ID. If you launch ten instances using the same launch request, you also get one reservation ID.    root-device-name - The device name of the root device volume (for example, /dev/sda1).    root-device-type - The type of the root device volume (ebs | instance-store).    source-dest-check - Indicates whether the instance performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the instance to perform network address translation (NAT) in your VPC.     spot-instance-request-id - The ID of the Spot Instance request.    state-reason-code - The reason code for the state change.    state-reason-message - A message that describes the state change.    subnet-id - The ID of the subnet for the instance.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources that have a tag with a specific key, regardless of the tag value.    tenancy - The tenancy of an instance (dedicated | default | host).    virtualization-type - The virtualization type of the instance (paravirtual | hvm).    vpc-id - The ID of the VPC that the instance is running in.  
          */
@@ -4786,7 +4786,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to request the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4794,7 +4794,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Zero or more reservations.
          */
@@ -4806,7 +4806,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    attachment.state - The current state of the attachment between the gateway and the VPC (available). Present only if a VPC is attached.    attachment.vpc-id - The ID of an attached VPC.    internet-gateway-id - The ID of the Internet gateway.    owner-id - The ID of the AWS account that owns the internet gateway.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
          */
@@ -4830,7 +4830,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    fingerprint - The fingerprint of the key pair.    key-name - The name of the key pair.  
          */
@@ -4854,7 +4854,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    create-time - The time the launch template version was created.    ebs-optimized - A boolean that indicates whether the instance is optimized for Amazon EBS I/O.    iam-instance-profile - The ARN of the IAM instance profile.    image-id - The ID of the AMI.    instance-type - The instance type.    is-default-version - A boolean that indicates whether the launch template version is the default version.    kernel-id - The kernel ID.    ram-disk-id - The RAM disk ID.  
          */
@@ -4862,7 +4862,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
@@ -4874,15 +4874,15 @@ object EC2Ns extends js.Object {
     /**
          * The version number up to which to describe launch template versions.
          */
-    var MaxVersion: js.UndefOr[java.lang.String] = js.undefined
+    var MaxVersion: js.UndefOr[String] = js.undefined
     /**
          * The version number after which to describe launch template versions.
          */
-    var MinVersion: js.UndefOr[java.lang.String] = js.undefined
+    var MinVersion: js.UndefOr[String] = js.undefined
     /**
          * The token to request the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more versions of the launch template.
          */
@@ -4898,7 +4898,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4906,7 +4906,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    create-time - The time the launch template was created.    launch-template-name - The name of the launch template.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
          */
@@ -4926,7 +4926,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to request the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4938,7 +4938,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4946,7 +4946,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    moving-status - The status of the Elastic IP address (MovingToVpc | RestoringToClassic).  
          */
@@ -4958,7 +4958,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more Elastic IP addresses.
          */
@@ -4974,7 +4974,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4994,7 +4994,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5006,7 +5006,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5014,7 +5014,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    association.association-id - The ID of an association ID for the ACL.    association.network-acl-id - The ID of the network ACL involved in the association.    association.subnet-id - The ID of the subnet involved in the association.    default - Indicates whether the ACL is the default network ACL for the VPC.    entry.cidr - The IPv4 CIDR range specified in the entry.    entry.icmp.code - The ICMP code specified in the entry, if any.    entry.icmp.type - The ICMP type specified in the entry, if any.    entry.ipv6-cidr - The IPv6 CIDR range specified in the entry.    entry.port-range.from - The start of the port range specified in the entry.     entry.port-range.to - The end of the port range specified in the entry.     entry.protocol - The protocol specified in the entry (tcp | udp | icmp or a protocol number).    entry.rule-action - Allows or denies the matching traffic (allow | deny).    entry.rule-number - The number of an entry (in other words, rule) in the set of ACL entries.    network-acl-id - The ID of the network ACL.    owner-id - The ID of the AWS account that owns the network ACL.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC for the network ACL.  
          */
@@ -5042,11 +5042,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
   }
   
   
@@ -5066,7 +5066,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether source/destination checking is enabled.
          */
@@ -5090,7 +5090,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to request the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5102,7 +5102,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5110,7 +5110,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    addresses.private-ip-address - The private IPv4 addresses associated with the network interface.    addresses.primary - Whether the private IPv4 address is the primary IP address associated with the network interface.     addresses.association.public-ip - The association ID returned when the network interface was associated with the Elastic IP address (IPv4).    addresses.association.owner-id - The owner ID of the addresses associated with the network interface.    association.association-id - The association ID returned when the network interface was associated with an IPv4 address.    association.allocation-id - The allocation ID returned when you allocated the Elastic IP address (IPv4) for your network interface.    association.ip-owner-id - The owner of the Elastic IP address (IPv4) associated with the network interface.    association.public-ip - The address of the Elastic IP address (IPv4) bound to the network interface.    association.public-dns-name - The public DNS name for the network interface (IPv4).    attachment.attachment-id - The ID of the interface attachment.    attachment.attach.time - The time that the network interface was attached to an instance.    attachment.delete-on-termination - Indicates whether the attachment is deleted when an instance is terminated.    attachment.device-index - The device index to which the network interface is attached.    attachment.instance-id - The ID of the instance to which the network interface is attached.    attachment.instance-owner-id - The owner ID of the instance to which the network interface is attached.    attachment.nat-gateway-id - The ID of the NAT gateway to which the network interface is attached.    attachment.status - The status of the attachment (attaching | attached | detaching | detached).    availability-zone - The Availability Zone of the network interface.    description - The description of the network interface.    group-id - The ID of a security group associated with the network interface.    group-name - The name of a security group associated with the network interface.    ipv6-addresses.ipv6-address - An IPv6 address associated with the network interface.    mac-address - The MAC address of the network interface.    network-interface-id - The ID of the network interface.    owner-id - The AWS account ID of the network interface owner.    private-ip-address - The private IPv4 address or addresses of the network interface.    private-dns-name - The private DNS name of the network interface (IPv4).    requester-id - The ID of the entity that launched the instance on your behalf (for example, AWS Management Console, Auto Scaling, and so on).    requester-managed - Indicates whether the network interface is being managed by an AWS service (for example, AWS Management Console, Auto Scaling, and so on).    source-desk-check - Indicates whether the network interface performs source/destination checking. A value of true means checking is enabled, and false means checking is disabled. The value must be false for the network interface to perform network address translation (NAT) in your VPC.     status - The status of the network interface. If the network interface is not attached to an instance, the status is available; if a network interface is attached to an instance the status is in-use.    subnet-id - The ID of the subnet for the network interface.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC for the network interface.  
          */
@@ -5126,7 +5126,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5138,7 +5138,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5146,7 +5146,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    group-name - The name of the placement group.    state - The state of the placement group (pending | available | deleting | deleted).    strategy - The strategy of the placement group (cluster | spread).  
          */
@@ -5170,7 +5170,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    prefix-list-id: The ID of a prefix list.    prefix-list-name: The name of a prefix list.  
          */
@@ -5182,7 +5182,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of items to return. (You received this token from a prior call.)
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more prefix list IDs.
          */
@@ -5194,7 +5194,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * All available prefix lists.
          */
@@ -5206,7 +5206,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. 
          */
@@ -5214,7 +5214,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to request the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The type of resource: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | instance | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | reservation | route-table | route-table-association | security-group | snapshot | subnet | subnet-cidr-block-association | volume | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway 
          */
@@ -5226,7 +5226,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the ID format settings for the ARN.
          */
@@ -5254,7 +5254,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the address pools.
          */
@@ -5266,7 +5266,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    endpoint - The endpoint of the region (for example, ec2.us-east-1.amazonaws.com).    region-name - The name of the region (for example, us-east-1).  
          */
@@ -5294,11 +5294,11 @@ object EC2Ns extends js.Object {
     /**
          * One or more Reserved Instance IDs.
          */
-    var ReservedInstancesId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesId: js.UndefOr[String] = js.undefined
     /**
          * One or more Reserved Instance listing IDs.
          */
-    var ReservedInstancesListingId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesListingId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5318,7 +5318,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * IDs for the submitted modification request.
          */
@@ -5330,7 +5330,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The Reserved Instance modification information.
          */
@@ -5342,11 +5342,11 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which the Reserved Instance can be used.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    availability-zone - The Availability Zone where the Reserved Instance can be used.    duration - The duration of the Reserved Instance (for example, one year or three years), in seconds (31536000 | 94608000).    fixed-price - The purchase price of the Reserved Instance (for example, 9800.0).    instance-type - The instance type that is covered by the reservation.    marketplace - Set to true to show only Reserved Instance Marketplace offerings. When this filter is not used, which is the default behavior, all offerings from both AWS and the Reserved Instance Marketplace are listed.    product-description - The Reserved Instance product platform description. Instances that include (Amazon VPC) in the product platform description will only be displayed to EC2-Classic account holders and are for use with Amazon VPC. (Linux/UNIX | Linux/UNIX (Amazon VPC) | SUSE Linux | SUSE Linux (Amazon VPC) | Red Hat Enterprise Linux | Red Hat Enterprise Linux (Amazon VPC) | Windows | Windows (Amazon VPC) | Windows with SQL Server Standard | Windows with SQL Server Standard (Amazon VPC) | Windows with SQL Server Web |  Windows with SQL Server Web (Amazon VPC) | Windows with SQL Server Enterprise | Windows with SQL Server Enterprise (Amazon VPC))     reserved-instances-offering-id - The Reserved Instances offering ID.    scope - The scope of the Reserved Instance (Availability Zone or Region).    usage-price - The usage price of the Reserved Instance, per hour (for example, 0.84).  
          */
@@ -5354,7 +5354,7 @@ object EC2Ns extends js.Object {
     /**
          * Include Reserved Instance Marketplace offerings in the response.
          */
-    var IncludeMarketplace: js.UndefOr[scala.Boolean] = js.undefined
+    var IncludeMarketplace: js.UndefOr[Boolean] = js.undefined
     /**
          * The tenancy of the instances covered by the reservation. A Reserved Instance with a tenancy of dedicated is applied to instances that run in a VPC on single-tenant hardware (i.e., Dedicated Instances).  Important: The host value cannot be used with this parameter. Use the default or dedicated values only. Default: default 
          */
@@ -5382,7 +5382,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The offering class of the Reserved Instance. Can be standard or convertible.
          */
@@ -5406,7 +5406,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list of Reserved Instances offerings.
          */
@@ -5418,7 +5418,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    availability-zone - The Availability Zone where the Reserved Instance can be used.    duration - The duration of the Reserved Instance (one year or three years), in seconds (31536000 | 94608000).    end - The time when the Reserved Instance expires (for example, 2015-08-07T11:54:42.000Z).    fixed-price - The purchase price of the Reserved Instance (for example, 9800.0).    instance-type - The instance type that is covered by the reservation.    scope - The scope of the Reserved Instance (Region or Availability Zone).    product-description - The Reserved Instance product platform description. Instances that include (Amazon VPC) in the product platform description will only be displayed to EC2-Classic account holders and are for use with Amazon VPC (Linux/UNIX | Linux/UNIX (Amazon VPC) | SUSE Linux | SUSE Linux (Amazon VPC) | Red Hat Enterprise Linux | Red Hat Enterprise Linux (Amazon VPC) | Windows | Windows (Amazon VPC) | Windows with SQL Server Standard | Windows with SQL Server Standard (Amazon VPC) | Windows with SQL Server Web | Windows with SQL Server Web (Amazon VPC) | Windows with SQL Server Enterprise | Windows with SQL Server Enterprise (Amazon VPC)).    reserved-instances-id - The ID of the Reserved Instance.    start - The time at which the Reserved Instance purchase request was placed (for example, 2014-08-07T11:54:42.000Z).    state - The state of the Reserved Instance (payment-pending | active | payment-failed | retired).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    usage-price - The usage price of the Reserved Instance, per hour (for example, 0.84).  
          */
@@ -5450,7 +5450,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    association.route-table-association-id - The ID of an association ID for the route table.    association.route-table-id - The ID of the route table involved in the association.    association.subnet-id - The ID of the subnet involved in the association.    association.main - Indicates whether the route table is the main route table for the VPC (true | false). Route tables that do not have an association ID are not returned in the response.    owner-id - The ID of the AWS account that owns the route table.    route-table-id - The ID of the route table.    route.destination-cidr-block - The IPv4 CIDR range specified in a route in the table.    route.destination-ipv6-cidr-block - The IPv6 CIDR range specified in a route in the route table.    route.destination-prefix-list-id - The ID (prefix) of the AWS service specified in a route in the table.    route.egress-only-internet-gateway-id - The ID of an egress-only Internet gateway specified in a route in the route table.    route.gateway-id - The ID of a gateway specified in a route in the table.    route.instance-id - The ID of an instance specified in a route in the table.    route.nat-gateway-id - The ID of a NAT gateway.    route.transit-gateway-id - The ID of a transit gateway.    route.origin - Describes how the route was created. CreateRouteTable indicates that the route was automatically created when the route table was created; CreateRoute indicates that the route was manually added to the route table; EnableVgwRoutePropagation indicates that the route was propagated by route propagation.    route.state - The state of a route in the route table (active | blackhole). The blackhole state indicates that the route's target isn't available (for example, the specified gateway isn't attached to the VPC, the specified NAT instance has been terminated, and so on).    route.vpc-peering-connection-id - The ID of a VPC peering connection specified in a route in the table.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    transit-gateway-id - The ID of a transit gateway.    vpc-id - The ID of the VPC for the route table.  
          */
@@ -5462,7 +5462,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more route table IDs. Default: Describes all your route tables.
          */
@@ -5474,7 +5474,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about one or more route tables.
          */
@@ -5486,7 +5486,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    availability-zone - The Availability Zone (for example, us-west-2a).    instance-type - The instance type (for example, c4.large).    network-platform - The network platform (EC2-Classic or EC2-VPC).    platform - The platform (Linux/UNIX or Windows).  
          */
@@ -5510,7 +5510,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The schedule recurrence.
          */
@@ -5522,7 +5522,7 @@ object EC2Ns extends js.Object {
     /**
          * The token required to retrieve the next set of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the available Scheduled Instances.
          */
@@ -5534,7 +5534,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    availability-zone - The Availability Zone (for example, us-west-2a).    instance-type - The instance type (for example, c4.large).    network-platform - The network platform (EC2-Classic or EC2-VPC).    platform - The platform (Linux/UNIX or Windows).  
          */
@@ -5546,7 +5546,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more Scheduled Instance IDs.
          */
@@ -5562,7 +5562,7 @@ object EC2Ns extends js.Object {
     /**
          * The token required to retrieve the next set of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the Scheduled Instances.
          */
@@ -5574,7 +5574,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more security group IDs in your account.
          */
@@ -5594,7 +5594,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. If using multiple filters for rules, the results include security groups for which any combination of rules - not necessarily a single rule - match all filters.    description - The description of the security group.    egress.ip-permission.cidr - An IPv4 CIDR block for an outbound security group rule.    egress.ip-permission.from-port - For an outbound rule, the start of port range for the TCP and UDP protocols, or an ICMP type number.    egress.ip-permission.group-id - The ID of a security group that has been referenced in an outbound security group rule.    egress.ip-permission.group-name - The name of a security group that has been referenced in an outbound security group rule.    egress.ip-permission.ipv6-cidr - An IPv6 CIDR block for an outbound security group rule.    egress.ip-permission.prefix-list-id - The ID (prefix) of the AWS service to which a security group rule allows outbound access.    egress.ip-permission.protocol - The IP protocol for an outbound security group rule (tcp | udp | icmp or a protocol number).    egress.ip-permission.to-port - For an outbound rule, the end of port range for the TCP and UDP protocols, or an ICMP code.    egress.ip-permission.user-id - The ID of an AWS account that has been referenced in an outbound security group rule.    group-id - The ID of the security group.     group-name - The name of the security group.    ip-permission.cidr - An IPv4 CIDR block for an inbound security group rule.    ip-permission.from-port - For an inbound rule, the start of port range for the TCP and UDP protocols, or an ICMP type number.    ip-permission.group-id - The ID of a security group that has been referenced in an inbound security group rule.    ip-permission.group-name - The name of a security group that has been referenced in an inbound security group rule.    ip-permission.ipv6-cidr - An IPv6 CIDR block for an inbound security group rule.    ip-permission.prefix-list-id - The ID (prefix) of the AWS service from which a security group rule allows inbound access.    ip-permission.protocol - The IP protocol for an inbound security group rule (tcp | udp | icmp or a protocol number).    ip-permission.to-port - For an inbound rule, the end of port range for the TCP and UDP protocols, or an ICMP code.    ip-permission.user-id - The ID of an AWS account that has been referenced in an inbound security group rule.    owner-id - The AWS account ID of the owner of the security group.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC specified when the security group was created.  
          */
@@ -5614,7 +5614,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to request the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5622,7 +5622,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about one or more security groups.
          */
@@ -5638,11 +5638,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the EBS snapshot.
          */
-    var SnapshotId: java.lang.String
+    var SnapshotId: String
   }
   
   
@@ -5658,7 +5658,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the EBS snapshot.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5666,7 +5666,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    description - A description of the snapshot.    owner-alias - Value from an Amazon-maintained list (amazon | aws-marketplace | microsoft) of snapshot owners. Not to be confused with the user-configured AWS account alias, which is set from the IAM console.    owner-id - The ID of the AWS account that owns the snapshot.    progress - The progress of the snapshot, as a percentage (for example, 80%).    snapshot-id - The snapshot ID.    start-time - The time stamp when the snapshot was initiated.    status - The status of the snapshot (pending | completed | error).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    volume-id - The ID of the volume the snapshot is for.    volume-size - The size of the volume, in GiB.  
          */
@@ -5678,7 +5678,7 @@ object EC2Ns extends js.Object {
     /**
          * The NextToken value returned from a previous paginated DescribeSnapshots request where MaxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the NextToken value. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Returns the snapshots owned by the specified owner. Multiple owners can be specified.
          */
@@ -5698,7 +5698,7 @@ object EC2Ns extends js.Object {
     /**
          * The NextToken value to include in a future DescribeSnapshots request. When the results of a DescribeSnapshots request exceed MaxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the snapshots.
          */
@@ -5710,7 +5710,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -5726,7 +5726,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of results to return in a single call. Specify a value between 1 and 1000. The default value is 1000. To retrieve the remaining results, make another call with the returned NextToken value.
          */
@@ -5734,11 +5734,11 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: java.lang.String
+    var SpotFleetRequestId: String
   }
   
   
@@ -5750,11 +5750,11 @@ object EC2Ns extends js.Object {
     /**
          * The token required to retrieve the next set of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: java.lang.String
+    var SpotFleetRequestId: String
   }
   
   
@@ -5762,7 +5762,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The type of events to describe. By default, all events are described.
          */
@@ -5774,11 +5774,11 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: java.lang.String
+    var SpotFleetRequestId: String
     /**
          * The starting date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
          */
@@ -5798,11 +5798,11 @@ object EC2Ns extends js.Object {
     /**
          * The token required to retrieve the next set of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: java.lang.String
+    var SpotFleetRequestId: String
     /**
          * The starting date and time for the events, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
          */
@@ -5814,7 +5814,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of results to return in a single call. Specify a value between 1 and 1000. The default value is 1000. To retrieve the remaining results, make another call with the returned NextToken value.
          */
@@ -5822,7 +5822,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The IDs of the Spot Fleet requests.
          */
@@ -5834,7 +5834,7 @@ object EC2Ns extends js.Object {
     /**
          * The token required to retrieve the next set of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the configuration of your Spot Fleet.
          */
@@ -5846,7 +5846,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    availability-zone-group - The Availability Zone group.    create-time - The time stamp when the Spot Instance request was created.    fault-code - The fault code related to the request.    fault-message - The fault message related to the request.    instance-id - The ID of the instance that fulfilled the request.    launch-group - The Spot Instance launch group.    launch.block-device-mapping.delete-on-termination - Indicates whether the EBS volume is deleted on instance termination.    launch.block-device-mapping.device-name - The device name for the volume in the block device mapping (for example, /dev/sdh or xvdh).    launch.block-device-mapping.snapshot-id - The ID of the snapshot for the EBS volume.    launch.block-device-mapping.volume-size - The size of the EBS volume, in GiB.    launch.block-device-mapping.volume-type - The type of EBS volume: gp2 for General Purpose SSD, io1 for Provisioned IOPS SSD, st1 for Throughput Optimized HDD, sc1for Cold HDD, or standard for Magnetic.    launch.group-id - The ID of the security group for the instance.    launch.group-name - The name of the security group for the instance.    launch.image-id - The ID of the AMI.    launch.instance-type - The type of instance (for example, m3.medium).    launch.kernel-id - The kernel ID.    launch.key-name - The name of the key pair the instance launched with.    launch.monitoring-enabled - Whether detailed monitoring is enabled for the Spot Instance.    launch.ramdisk-id - The RAM disk ID.    launched-availability-zone - The Availability Zone in which the request is launched.    network-interface.addresses.primary - Indicates whether the IP address is the primary private IP address.    network-interface.delete-on-termination - Indicates whether the network interface is deleted when the instance is terminated.    network-interface.description - A description of the network interface.    network-interface.device-index - The index of the device for the network interface attachment on the instance.    network-interface.group-id - The ID of the security group associated with the network interface.    network-interface.network-interface-id - The ID of the network interface.    network-interface.private-ip-address - The primary private IP address of the network interface.    network-interface.subnet-id - The ID of the subnet for the instance.    product-description - The product description associated with the instance (Linux/UNIX | Windows).    spot-instance-request-id - The Spot Instance request ID.    spot-price - The maximum hourly price for any Spot Instance launched to fulfill the request.    state - The state of the Spot Instance request (open | active | closed | cancelled | failed). Spot request status information can help you track your Amazon EC2 Spot Instance requests. For more information, see Spot Request Status in the Amazon EC2 User Guide for Linux Instances.    status-code - The short code describing the most recent evaluation of your Spot Instance request.    status-message - The message explaining the status of the Spot Instance request.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    type - The type of Spot Instance request (one-time | persistent).    valid-from - The start date of the request.    valid-until - The end date of the request.  
          */
@@ -5870,11 +5870,11 @@ object EC2Ns extends js.Object {
     /**
          * Filters the results by the specified Availability Zone.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The date and time, up to the current date, from which to stop retrieving the price history data, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
          */
@@ -5894,7 +5894,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Filters the results by the specified basic product descriptions.
          */
@@ -5910,7 +5910,7 @@ object EC2Ns extends js.Object {
     /**
          * The token required to retrieve the next set of results. This value is null or an empty string when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The historical Spot prices.
          */
@@ -5922,7 +5922,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.
          */
@@ -5934,7 +5934,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -5942,7 +5942,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the stale security groups.
          */
@@ -5954,7 +5954,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    availability-zone - The Availability Zone for the subnet. You can also use availabilityZone as the filter name.    availability-zone-id - The ID of the Availability Zone for the subnet. You can also use availabilityZoneId as the filter name.    available-ip-address-count - The number of IPv4 addresses in the subnet that are available.    cidr-block - The IPv4 CIDR block of the subnet. The CIDR block you specify must exactly match the subnet's CIDR block for information to be returned for the subnet. You can also use cidr or cidrBlock as the filter names.    default-for-az - Indicates whether this is the default subnet for the Availability Zone. You can also use defaultForAz as the filter name.    ipv6-cidr-block-association.ipv6-cidr-block - An IPv6 CIDR block associated with the subnet.    ipv6-cidr-block-association.association-id - An association ID for an IPv6 CIDR block associated with the subnet.    ipv6-cidr-block-association.state - The state of an IPv6 CIDR block associated with the subnet.    owner-id - The ID of the AWS account that owns the subnet.    state - The state of the subnet (pending | available).    subnet-arn - The Amazon Resource Name (ARN) of the subnet.    subnet-id - The ID of the subnet.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC for the subnet.  
          */
@@ -5978,7 +5978,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    key - The tag key.    resource-id - The ID of the resource.    resource-type - The resource type (customer-gateway | dedicated-host | dhcp-options | elastic-ip | fleet | fpga-image | image | instance | internet-gateway | launch-template | natgateway | network-acl | network-interface | reserved-instances | route-table | security-group | snapshot | spot-instances-request | subnet | volume | vpc | vpc-peering-connection | vpn-connection | vpn-gateway).    tag:&lt;key&gt; - The key/value combination of the tag. For example, specify "tag:Owner" for the filter name and "TeamA" for the filter value to find resources with the tag "Owner=TeamA".    value - The tag value.  
          */
@@ -5990,7 +5990,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5998,7 +5998,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The tags.
          */
@@ -6010,7 +6010,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. The possible values are:    association-id - The ID of the association.    association-route-table-id - The ID of the route table for the transit gateway.    associate-state - The state of the association (associating | associated | disassociating).    resource-id - The ID of the resource.    resource-type - The resource type (vpc | vpn).    state - The state of the attachment (pendingAcceptance | pending | available | modifying | deleting | deleted | failed | rejected).    transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-id - The ID of the transit gateway.    transit-gateway-owner - The ID of the AWS account that owns the transit gateway.  
          */
@@ -6022,7 +6022,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The IDs of the attachments.
          */
@@ -6034,7 +6034,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the attachments.
          */
@@ -6046,7 +6046,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. The possible values are:    default-association-route-table - Indicates whether this is the default association route table for the transit gateway (true | false).    default-propagation-route-table - Indicates whether this is the default propagation route table for the transit gateway (true | false).    transit-gateway-id - The ID of the transit gateway.    transit-gateway-route-table-id - The ID of the transit gateway route table.    transit-gateway-route-table-state - The state (pending | available | deleting | deleted).  
          */
@@ -6058,7 +6058,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The IDs of the transit gateway route tables.
          */
@@ -6070,7 +6070,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the transit gateway route tables.
          */
@@ -6082,7 +6082,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. The possible values are:    transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-attachment-state - The state of the attachment (pendingAcceptance | pending | available | modifying | deleting | deleted | failed | rejected).    transit-gateway-id - The ID of the transit gateway.    vpc-id - The ID of the VPC.  
          */
@@ -6094,7 +6094,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The IDs of the attachments.
          */
@@ -6106,7 +6106,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the VPC attachments.
          */
@@ -6118,7 +6118,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. The possible values are:    amazon-side-asn - The private ASN for the Amazon side of a BGP session.    association-default-route-table-id - The ID of the default association route table.    default-route-table-association - Indicates whether resource attachments are automatically associated with the default association route table (enable | disable).    default-route-table-propagation - Indicates whether resource attachments automatically propagate routes to the default propagation route table (enable | disable).    owner-account-id - The ID of the AWS account that owns the transit gateway.    propagation-default-route-table-id - The ID of the default propagation route table.    transit-gateway-id - The ID of the transit gateway.    transit-gateway-state - The state of the transit gateway (pending | available | deleting | deleted).  
          */
@@ -6130,7 +6130,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The IDs of the transit gateways.
          */
@@ -6142,7 +6142,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the transit gateways.
          */
@@ -6158,11 +6158,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the volume.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -6178,7 +6178,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the volume.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6186,7 +6186,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    action.code - The action code for the event (for example, enable-volume-io).    action.description - A description of the action.    action.event-id - The event ID associated with the action.    availability-zone - The Availability Zone of the instance.    event.description - A description of the event.    event.event-id - The event ID.    event.event-type - The event type (for io-enabled: passed | failed; for io-performance: io-performance:degraded | io-performance:severely-degraded | io-performance:stalled).    event.not-after - The latest end time for the event.    event.not-before - The earliest start time for the event.    volume-status.details-name - The cause for volume-status.status (io-enabled | io-performance).    volume-status.details-status - The status of volume-status.details-name (for io-enabled: passed | failed; for io-performance: normal | degraded | severely-degraded | stalled).    volume-status.status - The status of the volume (ok | impaired | warning | insufficient-data).  
          */
@@ -6198,7 +6198,7 @@ object EC2Ns extends js.Object {
     /**
          * The NextToken value to include in a future DescribeVolumeStatus request. When the results of the request exceed MaxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more volume IDs. Default: Describes all your volumes.
          */
@@ -6210,7 +6210,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list of volumes.
          */
@@ -6222,7 +6222,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. Supported filters: volume-id, modification-state, target-size, target-iops, target-volume-type, original-size, original-iops, original-volume-type, start-time. 
          */
@@ -6234,7 +6234,7 @@ object EC2Ns extends js.Object {
     /**
          * The nextToken value returned by a previous paginated request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more volume IDs for which in-progress modifications will be described.
          */
@@ -6246,7 +6246,7 @@ object EC2Ns extends js.Object {
     /**
          * Token for pagination, null if there are no more results 
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list of returned VolumeModification objects.
          */
@@ -6258,7 +6258,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    attachment.attach-time - The time stamp when the attachment initiated.    attachment.delete-on-termination - Whether the volume is deleted on instance termination.    attachment.device - The device name specified in the block device mapping (for example, /dev/sda1).    attachment.instance-id - The ID of the instance the volume is attached to.    attachment.status - The attachment state (attaching | attached | detaching).    availability-zone - The Availability Zone in which the volume was created.    create-time - The time stamp when the volume was created.    encrypted - The encryption status of the volume.    size - The size of the volume, in GiB.    snapshot-id - The snapshot from which the volume was created.    status - The status of the volume (creating | available | in-use | deleting | deleted | error).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    volume-id - The volume ID.    volume-type - The Amazon EBS volume type. This can be gp2 for General Purpose SSD, io1 for Provisioned IOPS SSD, st1 for Throughput Optimized HDD, sc1 for Cold HDD, or standard for Magnetic volumes.  
          */
@@ -6270,7 +6270,7 @@ object EC2Ns extends js.Object {
     /**
          * The NextToken value returned from a previous paginated DescribeVolumes request where MaxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the NextToken value. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more volume IDs.
          */
@@ -6282,7 +6282,7 @@ object EC2Ns extends js.Object {
     /**
          * The NextToken value to include in a future DescribeVolumes request. When the results of a DescribeVolumes request exceed MaxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the volumes.
          */
@@ -6298,11 +6298,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -6318,7 +6318,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6354,7 +6354,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    is-classic-link-enabled - Whether the VPC is enabled for ClassicLink (true | false).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
          */
@@ -6378,11 +6378,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the notification.
          */
-    var ConnectionNotificationId: js.UndefOr[java.lang.String] = js.undefined
+    var ConnectionNotificationId: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    connection-notification-arn - The ARN of SNS topic for the notification.    connection-notification-id - The ID of the notification.    connection-notification-state - The state of the notification (Enabled | Disabled).    connection-notification-type - The type of notification (Topic).    service-id - The ID of the endpoint service.    vpc-endpoint-id - The ID of the VPC endpoint.  
          */
@@ -6394,7 +6394,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to request the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6406,7 +6406,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6414,7 +6414,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    service-id - The ID of the service.    vpc-endpoint-owner - The AWS account number of the owner of the endpoint.    vpc-endpoint-state - The state of the endpoint (pendingAcceptance | pending | available | deleting | deleted | rejected | failed).    vpc-endpoint-id - The ID of the endpoint.  
          */
@@ -6426,7 +6426,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6434,7 +6434,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about one or more VPC endpoint connections.
          */
@@ -6446,7 +6446,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    service-name - The name of the service.    service-id - The ID of the service.    service-state - The state of the service (Pending | Available | Deleting | Deleted | Failed).   
          */
@@ -6458,7 +6458,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The IDs of one or more services.
          */
@@ -6470,7 +6470,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about one or more services.
          */
@@ -6482,7 +6482,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    principal - The ARN of the principal.    principal-type - The principal type (All | Service | OrganizationUnit | Account | User | Role).  
          */
@@ -6494,11 +6494,11 @@ object EC2Ns extends js.Object {
     /**
          * The token to retrieve the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the service.
          */
-    var ServiceId: java.lang.String
+    var ServiceId: String
   }
   
   
@@ -6510,7 +6510,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6518,7 +6518,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    service-name: The name of the service.  
          */
@@ -6530,7 +6530,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of items to return. (You received this token from a prior call.)
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more service names.
          */
@@ -6542,7 +6542,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the service.
          */
@@ -6558,7 +6558,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    service-name: The name of the service.    vpc-id: The ID of the VPC in which the endpoint resides.    vpc-endpoint-id: The ID of the endpoint.    vpc-endpoint-state: The state of the endpoint. (pending | available | deleting | deleted)  
          */
@@ -6570,7 +6570,7 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next set of items to return. (You received this token from a prior call.)
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * One or more endpoint IDs.
          */
@@ -6582,7 +6582,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the endpoints.
          */
@@ -6594,7 +6594,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    accepter-vpc-info.cidr-block - The IPv4 CIDR block of the accepter VPC.    accepter-vpc-info.owner-id - The AWS account ID of the owner of the accepter VPC.    accepter-vpc-info.vpc-id - The ID of the accepter VPC.    expiration-time - The expiration date and time for the VPC peering connection.    requester-vpc-info.cidr-block - The IPv4 CIDR block of the requester's VPC.    requester-vpc-info.owner-id - The AWS account ID of the owner of the requester VPC.    requester-vpc-info.vpc-id - The ID of the requester VPC.    status-code - The status of the VPC peering connection (pending-acceptance | failed | expired | provisioning | active | deleting | deleted | rejected).    status-message - A message that provides more information about the status of the VPC peering connection, if applicable.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-peering-connection-id - The ID of the VPC peering connection.  
          */
@@ -6618,7 +6618,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    cidr - The primary IPv4 CIDR block of the VPC. The CIDR block you specify must exactly match the VPC's CIDR block for information to be returned for the VPC. Must contain the slash followed by one or two digits (for example, /28).    cidr-block-association.cidr-block - An IPv4 CIDR block associated with the VPC.    cidr-block-association.association-id - The association ID for an IPv4 CIDR block associated with the VPC.    cidr-block-association.state - The state of an IPv4 CIDR block associated with the VPC.    dhcp-options-id - The ID of a set of DHCP options.    ipv6-cidr-block-association.ipv6-cidr-block - An IPv6 CIDR block associated with the VPC.    ipv6-cidr-block-association.association-id - The association ID for an IPv6 CIDR block associated with the VPC.    ipv6-cidr-block-association.state - The state of an IPv6 CIDR block associated with the VPC.    isDefault - Indicates whether the VPC is the default VPC.    owner-id - The ID of the AWS account that owns the VPC.    state - The state of the VPC (pending | available).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC.  
          */
@@ -6642,7 +6642,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    customer-gateway-configuration - The configuration information for the customer gateway.    customer-gateway-id - The ID of a customer gateway associated with the VPN connection.    state - The state of the VPN connection (pending | available | deleting | deleted).    option.static-routes-only - Indicates whether the connection has static routes only. Used for devices that do not support Border Gateway Protocol (BGP).    route.destination-cidr-block - The destination CIDR block. This corresponds to the subnet used in a customer data center.    bgp-asn - The BGP Autonomous System Number (ASN) associated with a BGP device.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    type - The type of VPN connection. Currently the only supported type is ipsec.1.    vpn-connection-id - The ID of the VPN connection.    vpn-gateway-id - The ID of a virtual private gateway associated with the VPN connection.  
          */
@@ -6666,7 +6666,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters.    amazon-side-asn - The Autonomous System Number (ASN) for the Amazon side of the gateway.    attachment.state - The current state of the attachment between the gateway and the VPC (attaching | attached | detaching | detached).    attachment.vpc-id - The ID of an attached VPC.    availability-zone - The Availability Zone for the virtual private gateway (if applicable).    state - The state of the virtual private gateway (pending | available | deleting | deleted).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    type - The type of virtual private gateway. Currently the only supported type is ipsec.1.    vpn-gateway-id - The ID of the virtual private gateway.  
          */
@@ -6690,15 +6690,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance to unlink from the VPC.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The ID of the VPC to which the instance is linked.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -6706,7 +6706,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -6714,15 +6714,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the internet gateway.
          */
-    var InternetGatewayId: java.lang.String
+    var InternetGatewayId: String
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -6730,15 +6730,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the attachment.
          */
-    var AttachmentId: java.lang.String
+    var AttachmentId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether to force a detachment.
          */
-    var Force: js.UndefOr[scala.Boolean] = js.undefined
+    var Force: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -6746,23 +6746,23 @@ object EC2Ns extends js.Object {
     /**
          * The device name.
          */
-    var Device: js.UndefOr[java.lang.String] = js.undefined
+    var Device: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Forces detachment if the previous detachment attempt did not occur cleanly (for example, logging into an instance, unmounting the volume, and detaching normally). This option can lead to data loss or a corrupted file system. Use this option only as a last resort to detach a volume from a failed instance. The instance won't have an opportunity to flush file system caches or file system metadata. If you use this option, you must perform file system check and repair procedures.
          */
-    var Force: js.UndefOr[scala.Boolean] = js.undefined
+    var Force: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the volume.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -6770,15 +6770,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
     /**
          * The ID of the virtual private gateway.
          */
-    var VpnGatewayId: java.lang.String
+    var VpnGatewayId: String
   }
   
   
@@ -6786,7 +6786,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of a DHCP option.
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * One or more values for the DHCP option.
          */
@@ -6802,11 +6802,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the set of DHCP options.
          */
-    var DhcpOptionsId: js.UndefOr[java.lang.String] = js.undefined
+    var DhcpOptionsId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that owns the DHCP options set.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the DHCP options set.
          */
@@ -6818,15 +6818,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: java.lang.String
+    var TransitGatewayAttachmentId: String
     /**
          * The ID of the propagation route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -6842,11 +6842,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the virtual private gateway.
          */
-    var GatewayId: java.lang.String
+    var GatewayId: String
     /**
          * The ID of the route table.
          */
-    var RouteTableId: java.lang.String
+    var RouteTableId: String
   }
   
   
@@ -6854,7 +6854,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6862,7 +6862,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -6870,11 +6870,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -6882,7 +6882,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -6890,15 +6890,15 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The association ID. Required for EC2-VPC.
          */
-    var AssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationId: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * [EC2-Classic] The Elastic IP address. Required for EC2-Classic.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6906,7 +6906,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the IAM instance profile association.
          */
-    var AssociationId: java.lang.String
+    var AssociationId: String
   }
   
   
@@ -6922,11 +6922,11 @@ object EC2Ns extends js.Object {
     /**
          * The association ID representing the current association between the route table and subnet.
          */
-    var AssociationId: java.lang.String
+    var AssociationId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -6934,7 +6934,7 @@ object EC2Ns extends js.Object {
     /**
          * The association ID for the CIDR block.
          */
-    var AssociationId: java.lang.String
+    var AssociationId: String
   }
   
   
@@ -6946,7 +6946,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -6954,15 +6954,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: java.lang.String
+    var TransitGatewayAttachmentId: String
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -6978,7 +6978,7 @@ object EC2Ns extends js.Object {
     /**
          * The association ID for the CIDR block.
          */
-    var AssociationId: java.lang.String
+    var AssociationId: String
   }
   
   
@@ -6994,7 +6994,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7002,7 +7002,7 @@ object EC2Ns extends js.Object {
     /**
          * A description of the disk image.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Information about the disk image.
          */
@@ -7018,7 +7018,7 @@ object EC2Ns extends js.Object {
     /**
          * The checksum computed for the disk image.
          */
-    var Checksum: js.UndefOr[java.lang.String] = js.undefined
+    var Checksum: js.UndefOr[String] = js.undefined
     /**
          * The disk image format.
          */
@@ -7026,7 +7026,7 @@ object EC2Ns extends js.Object {
     /**
          * A presigned URL for the import manifest stored in Amazon S3. For information about creating a presigned URL for an Amazon S3 object, read the "Query String Request Authentication Alternative" section of the Authenticating REST Requests topic in the Amazon Simple Storage Service Developer Guide. For information about the import manifest referenced by this API action, see VM Import Manifest.
          */
-    var ImportManifestUrl: js.UndefOr[java.lang.String] = js.undefined
+    var ImportManifestUrl: js.UndefOr[String] = js.undefined
     /**
          * The size of the disk image, in GiB.
          */
@@ -7046,7 +7046,7 @@ object EC2Ns extends js.Object {
     /**
          * A presigned URL for the import manifest stored in Amazon S3 and presented here as an Amazon S3 presigned URL. For information about creating a presigned URL for an Amazon S3 object, read the "Query String Request Authentication Alternative" section of the Authenticating REST Requests topic in the Amazon Simple Storage Service Developer Guide. For information about the import manifest referenced by this API action, see VM Import Manifest.
          */
-    var ImportManifestUrl: java.lang.String
+    var ImportManifestUrl: String
   }
   
   
@@ -7054,7 +7054,7 @@ object EC2Ns extends js.Object {
     /**
          * The volume identifier.
          */
-    var Id: js.UndefOr[java.lang.String] = js.undefined
+    var Id: js.UndefOr[String] = js.undefined
     /**
          * The size of the volume, in GiB.
          */
@@ -7066,11 +7066,11 @@ object EC2Ns extends js.Object {
     /**
          * The DNS name.
          */
-    var DnsName: js.UndefOr[java.lang.String] = js.undefined
+    var DnsName: js.UndefOr[String] = js.undefined
     /**
          * The ID of the private hosted zone.
          */
-    var HostedZoneId: js.UndefOr[java.lang.String] = js.undefined
+    var HostedZoneId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7078,11 +7078,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the EBS volume is deleted on instance termination.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the EBS volume is encrypted. Encrypted volumes can only be attached to instances that support Amazon EBS encryption.  If you are creating a volume from a snapshot, you cannot specify an encryption value. This is because only blank volumes can be encrypted on creation. If you are creating a snapshot from an existing EBS volume, you cannot specify an encryption value that differs from that of the EBS volume. We recommend that you omit the encryption value from the block device mappings when creating an image from an instance.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of I/O operations per second (IOPS) that the volume supports. For io1, this represents the number of IOPS that are provisioned for the volume. For gp2, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-10,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
          */
@@ -7090,11 +7090,11 @@ object EC2Ns extends js.Object {
     /**
          * Identifier (key ID, key alias, ID ARN, or alias ARN) for a user-managed CMK under which the EBS volume is encrypted. This parameter is only supported on BlockDeviceMapping objects called by RunInstances, RequestSpotFleet, and RequestSpotInstances.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the snapshot.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * The size of the volume, in GiB. Constraints: 1-16384 for General Purpose SSD (gp2), 4-16384 for Provisioned IOPS SSD (io1), 500-16384 for Throughput Optimized HDD (st1), 500-16384 for Cold HDD (sc1), and 1-1024 for Magnetic (standard) volumes. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
          */
@@ -7114,7 +7114,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the volume is deleted on instance termination.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * The attachment state.
          */
@@ -7122,7 +7122,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the EBS volume.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7130,11 +7130,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the volume is deleted on instance termination.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the EBS volume.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7154,19 +7154,19 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the association.
          */
-    var ElasticGpuAssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticGpuAssociationId: js.UndefOr[String] = js.undefined
     /**
          * The state of the association between the instance and the Elastic Graphics accelerator.
          */
-    var ElasticGpuAssociationState: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticGpuAssociationState: js.UndefOr[String] = js.undefined
     /**
          * The time the Elastic Graphics accelerator was associated with the instance.
          */
-    var ElasticGpuAssociationTime: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticGpuAssociationTime: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Elastic Graphics accelerator.
          */
-    var ElasticGpuId: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticGpuId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7182,7 +7182,7 @@ object EC2Ns extends js.Object {
     /**
          * The type of Elastic Graphics accelerator.
          */
-    var Type: java.lang.String
+    var Type: String
   }
   
   
@@ -7190,7 +7190,7 @@ object EC2Ns extends js.Object {
     /**
          * The elastic GPU type.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7198,7 +7198,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in the which the Elastic Graphics accelerator resides.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The status of the Elastic Graphics accelerator.
          */
@@ -7206,7 +7206,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Elastic Graphics accelerator.
          */
-    var ElasticGpuId: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticGpuId: js.UndefOr[String] = js.undefined
     /**
          * The state of the Elastic Graphics accelerator.
          */
@@ -7214,11 +7214,11 @@ object EC2Ns extends js.Object {
     /**
          * The type of Elastic Graphics accelerator.
          */
-    var ElasticGpuType: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticGpuType: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance to which the Elastic Graphics accelerator is attached.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7226,7 +7226,7 @@ object EC2Ns extends js.Object {
     /**
          *  The type of elastic inference accelerator. The possible values are eia1.small, eia1.medium, and eia1.large. 
          */
-    var Type: java.lang.String
+    var Type: String
   }
   
   
@@ -7234,15 +7234,15 @@ object EC2Ns extends js.Object {
     /**
          *  The Amazon Resource Name (ARN) of the elastic inference accelerator. 
          */
-    var ElasticInferenceAcceleratorArn: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticInferenceAcceleratorArn: js.UndefOr[String] = js.undefined
     /**
          *  The ID of the association. 
          */
-    var ElasticInferenceAcceleratorAssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticInferenceAcceleratorAssociationId: js.UndefOr[String] = js.undefined
     /**
          *  The state of the elastic inference accelerator. 
          */
-    var ElasticInferenceAcceleratorAssociationState: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticInferenceAcceleratorAssociationState: js.UndefOr[String] = js.undefined
     /**
          *  The time at which the elastic inference accelerator is associated with an instance. 
          */
@@ -7254,15 +7254,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: java.lang.String
+    var TransitGatewayAttachmentId: String
     /**
          * The ID of the propagation route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -7278,11 +7278,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the virtual private gateway.
          */
-    var GatewayId: java.lang.String
+    var GatewayId: String
     /**
          * The ID of the route table.
          */
-    var RouteTableId: java.lang.String
+    var RouteTableId: String
   }
   
   
@@ -7290,11 +7290,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the volume.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -7302,7 +7302,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7310,7 +7310,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -7318,11 +7318,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -7330,7 +7330,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -7338,15 +7338,15 @@ object EC2Ns extends js.Object {
     /**
          * The description of the event.
          */
-    var EventDescription: js.UndefOr[java.lang.String] = js.undefined
+    var EventDescription: js.UndefOr[String] = js.undefined
     /**
          * The event. The following are the error events:    iamFleetRoleInvalid - The Spot Fleet did not have the required permissions either to launch or terminate an instance.    launchSpecTemporarilyBlacklisted - The configuration is not valid and several attempts to launch instances have failed. For more information, see the description of the event.    spotFleetRequestConfigurationInvalid - The configuration is not valid. For more information, see the description of the event.    spotInstanceCountLimitExceeded - You've reached the limit on the number of Spot Instances that you can launch.   The following are the fleetRequestChange events:    active - The Spot Fleet has been validated and Amazon EC2 is attempting to maintain the target number of running Spot Instances.    cancelled - The Spot Fleet is canceled and has no running Spot Instances. The Spot Fleet will be deleted two days after its instances were terminated.    cancelled_running - The Spot Fleet is canceled and does not launch additional Spot Instances. Existing Spot Instances continue to run until they are interrupted or terminated.    cancelled_terminating - The Spot Fleet is canceled and its Spot Instances are terminating.    expired - The Spot Fleet request has expired. A subsequent event indicates that the instances were terminated, if the request was created with TerminateInstancesWithExpiration set.    modify_in_progress - A request to modify the Spot Fleet request was accepted and is in progress.    modify_successful - The Spot Fleet request was modified.    price_update - The price for a launch configuration was adjusted because it was too high. This change is permanent.    submitted - The Spot Fleet request is being evaluated and Amazon EC2 is preparing to launch the target number of Spot Instances.   The following are the instanceChange events:    launched - A request was fulfilled and a new instance was launched.    terminated - An instance was terminated by the user.   The following are the Information events:    launchSpecUnusable - The price in a launch specification is not valid because it is below the Spot price or the Spot price is above the On-Demand price.    fleetProgressHalted - The price in every launch specification is not valid. A launch specification might become valid if the Spot price changes.  
          */
-    var EventSubType: js.UndefOr[java.lang.String] = js.undefined
+    var EventSubType: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance. This information is available only for instanceChange events.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7354,11 +7354,11 @@ object EC2Ns extends js.Object {
     /**
          * A description of the resource being exported.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the export task.
          */
-    var ExportTaskId: js.UndefOr[java.lang.String] = js.undefined
+    var ExportTaskId: js.UndefOr[String] = js.undefined
     /**
          * Information about the export task.
          */
@@ -7374,7 +7374,7 @@ object EC2Ns extends js.Object {
     /**
          * The status message related to the export task.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7390,11 +7390,11 @@ object EC2Ns extends js.Object {
     /**
          * The S3 bucket for the destination image. The destination bucket must exist and grant WRITE and READ_ACP permissions to the AWS account vm-import-export@amazon.com.
          */
-    var S3Bucket: js.UndefOr[java.lang.String] = js.undefined
+    var S3Bucket: js.UndefOr[String] = js.undefined
     /**
          * The encryption key for your S3 bucket.
          */
-    var S3Key: js.UndefOr[java.lang.String] = js.undefined
+    var S3Key: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7410,11 +7410,11 @@ object EC2Ns extends js.Object {
     /**
          * The S3 bucket for the destination image. The destination bucket must exist and grant WRITE and READ_ACP permissions to the AWS account vm-import-export@amazon.com.
          */
-    var S3Bucket: js.UndefOr[java.lang.String] = js.undefined
+    var S3Bucket: js.UndefOr[String] = js.undefined
     /**
          * The image is written to a single object in the S3 bucket at the S3 key s3prefix + exportTaskId + '.' + diskImageFormat.
          */
-    var S3Prefix: js.UndefOr[java.lang.String] = js.undefined
+    var S3Prefix: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7422,7 +7422,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. The possible values are:    transit-gateway-route-destination-cidr-block - The CIDR range.    transit-gateway-route-state - The state of the route (active | blackhole).    transit-gateway-route-transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-route-type - The route type (static | propagated).    transit-gateway-route-vpn-connection-id - The ID of the VPN connection.  
          */
@@ -7430,11 +7430,11 @@ object EC2Ns extends js.Object {
     /**
          * The name of the S3 bucket.
          */
-    var S3Bucket: java.lang.String
+    var S3Bucket: String
     /**
          * The ID of the route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -7442,7 +7442,7 @@ object EC2Ns extends js.Object {
     /**
          * The URL of the exported file in Amazon S3. For example, s3://bucket_name/VPCTransitGateway/TransitGatewayRouteTables/file_name.
          */
-    var S3Location: js.UndefOr[java.lang.String] = js.undefined
+    var S3Location: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7450,7 +7450,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the filter. Filter names are case-sensitive.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * One or more filter values. Filter values are case-sensitive.
          */
@@ -7466,7 +7466,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraints: Maximum 64 ASCII characters
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The creation date and time of the EC2 Fleet.
          */
@@ -7510,7 +7510,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether EC2 Fleet should replace unhealthy instances.
          */
-    var ReplaceUnhealthyInstances: js.UndefOr[scala.Boolean] = js.undefined
+    var ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined
     /**
          * The configuration of Spot Instances in an EC2 Fleet.
          */
@@ -7526,7 +7526,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether running instances should be terminated when the EC2 Fleet expires. 
          */
-    var TerminateInstancesWithExpiration: js.UndefOr[scala.Boolean] = js.undefined
+    var TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined
     /**
          * The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. If you request a certain target capacity, EC2 Fleet only places the required requests; it does not attempt to replenish instances if capacity is diminished, and does not submit requests in alternative capacity pools if capacity is unavailable. To maintain a certain target capacity, EC2 Fleet places the required requests to meet this target capacity. It also automatically replenishes any interrupted Spot Instances. Default: maintain.
          */
@@ -7570,7 +7570,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which to launch the instances.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The instance type.
          */
@@ -7578,7 +7578,7 @@ object EC2Ns extends js.Object {
     /**
          * The maximum price per unit hour that you are willing to pay for a Spot Instance.
          */
-    var MaxPrice: js.UndefOr[java.lang.String] = js.undefined
+    var MaxPrice: js.UndefOr[String] = js.undefined
     /**
          * The location where the instance launched, if applicable.
          */
@@ -7590,7 +7590,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet in which to launch the instances.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The number of units provided by the specified instance type.
          */
@@ -7602,7 +7602,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which to launch the instances.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The instance type.
          */
@@ -7610,7 +7610,7 @@ object EC2Ns extends js.Object {
     /**
          * The maximum price per unit hour that you are willing to pay for a Spot Instance.
          */
-    var MaxPrice: js.UndefOr[java.lang.String] = js.undefined
+    var MaxPrice: js.UndefOr[String] = js.undefined
     /**
          * The location where the instance launched, if applicable.
          */
@@ -7622,7 +7622,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet in which to launch the instances.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The number of units provided by the specified instance type.
          */
@@ -7634,7 +7634,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the launch template. You must specify either a template ID or a template name.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template. You must specify either a template name or a template ID.
          */
@@ -7642,7 +7642,7 @@ object EC2Ns extends js.Object {
     /**
          * The version number of the launch template. You must specify a version number.
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7650,7 +7650,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the launch template.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template.
          */
@@ -7658,7 +7658,7 @@ object EC2Ns extends js.Object {
     /**
          * The version number of the launch template. 
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7670,27 +7670,27 @@ object EC2Ns extends js.Object {
     /**
          * Information about the error that occurred. Rate limited indicates that CloudWatch Logs throttling has been applied for one or more network interfaces, or that you've reached the limit on the number of log groups that you can create. Access error indicates that the IAM role associated with the flow log does not have sufficient permissions to publish to CloudWatch Logs. Unknown error indicates an internal error.
          */
-    var DeliverLogsErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var DeliverLogsErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the IAM role that posts logs to CloudWatch Logs.
          */
-    var DeliverLogsPermissionArn: js.UndefOr[java.lang.String] = js.undefined
+    var DeliverLogsPermissionArn: js.UndefOr[String] = js.undefined
     /**
          * The status of the logs delivery (SUCCESS | FAILED).
          */
-    var DeliverLogsStatus: js.UndefOr[java.lang.String] = js.undefined
+    var DeliverLogsStatus: js.UndefOr[String] = js.undefined
     /**
          * The flow log ID.
          */
-    var FlowLogId: js.UndefOr[java.lang.String] = js.undefined
+    var FlowLogId: js.UndefOr[String] = js.undefined
     /**
          * The status of the flow log (ACTIVE).
          */
-    var FlowLogStatus: js.UndefOr[java.lang.String] = js.undefined
+    var FlowLogStatus: js.UndefOr[String] = js.undefined
     /**
          * Specifies the destination to which the flow log data is published. Flow log data can be published to an CloudWatch Logs log group or an Amazon S3 bucket. If the flow log publishes to CloudWatch Logs, this element indicates the Amazon Resource Name (ARN) of the CloudWatch Logs log group to which the data is published. If the flow log publishes to Amazon S3, this element indicates the ARN of the Amazon S3 bucket to which the data is published.
          */
-    var LogDestination: js.UndefOr[java.lang.String] = js.undefined
+    var LogDestination: js.UndefOr[String] = js.undefined
     /**
          * Specifies the type of destination to which the flow log data is published. Flow log data can be published to CloudWatch Logs or Amazon S3.
          */
@@ -7698,11 +7698,11 @@ object EC2Ns extends js.Object {
     /**
          * The name of the flow log group.
          */
-    var LogGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var LogGroupName: js.UndefOr[String] = js.undefined
     /**
          * The ID of the resource on which the flow log was created.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * The type of traffic captured for the flow log.
          */
@@ -7718,27 +7718,27 @@ object EC2Ns extends js.Object {
     /**
          * The description of the AFI.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The global FPGA image identifier (AGFI ID).
          */
-    var FpgaImageGlobalId: js.UndefOr[java.lang.String] = js.undefined
+    var FpgaImageGlobalId: js.UndefOr[String] = js.undefined
     /**
          * The FPGA image identifier (AFI ID).
          */
-    var FpgaImageId: js.UndefOr[java.lang.String] = js.undefined
+    var FpgaImageId: js.UndefOr[String] = js.undefined
     /**
          * The name of the AFI.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The alias of the AFI owner. Possible values include self, amazon, and aws-marketplace.
          */
-    var OwnerAlias: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerAlias: js.UndefOr[String] = js.undefined
     /**
          * The AWS account ID of the AFI owner.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * Information about the PCI bus.
          */
@@ -7750,11 +7750,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the AFI is public.
          */
-    var Public: js.UndefOr[scala.Boolean] = js.undefined
+    var Public: js.UndefOr[Boolean] = js.undefined
     /**
          * The version of the AWS Shell that was used to create the bitstream.
          */
-    var ShellVersion: js.UndefOr[java.lang.String] = js.undefined
+    var ShellVersion: js.UndefOr[String] = js.undefined
     /**
          * Information about the state of the AFI.
          */
@@ -7774,11 +7774,11 @@ object EC2Ns extends js.Object {
     /**
          * The description of the AFI.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AFI.
          */
-    var FpgaImageId: js.UndefOr[java.lang.String] = js.undefined
+    var FpgaImageId: js.UndefOr[String] = js.undefined
     /**
          * One or more load permissions.
          */
@@ -7786,7 +7786,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the AFI.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * One or more product codes.
          */
@@ -7802,7 +7802,7 @@ object EC2Ns extends js.Object {
     /**
          * If the state is failed, this is the error message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7810,15 +7810,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * When enabled, retrieves the latest console output for the instance. Default: disabled (false)
          */
-    var Latest: js.UndefOr[scala.Boolean] = js.undefined
+    var Latest: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -7826,11 +7826,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The console output, base64-encoded. If you are using a command line tool, the tool decodes the output for you.
          */
-    var Output: js.UndefOr[java.lang.String] = js.undefined
+    var Output: js.UndefOr[String] = js.undefined
     /**
          * The time at which the output was last updated.
          */
@@ -7842,15 +7842,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * When set to true, acts as keystroke input and wakes up an instance that's in standby or "sleep" mode.
          */
-    var WakeUp: js.UndefOr[scala.Boolean] = js.undefined
+    var WakeUp: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -7858,11 +7858,11 @@ object EC2Ns extends js.Object {
     /**
          * The data that comprises the image.
          */
-    var ImageData: js.UndefOr[java.lang.String] = js.undefined
+    var ImageData: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7874,7 +7874,7 @@ object EC2Ns extends js.Object {
     /**
          * The offering ID of the reservation.
          */
-    var OfferingId: java.lang.String
+    var OfferingId: String
   }
   
   
@@ -7890,11 +7890,11 @@ object EC2Ns extends js.Object {
     /**
          * The potential total hourly price of the reservation per hour.
          */
-    var TotalHourlyPrice: js.UndefOr[java.lang.String] = js.undefined
+    var TotalHourlyPrice: js.UndefOr[String] = js.undefined
     /**
          * The potential total upfront price. This is billed immediately.
          */
-    var TotalUpfrontPrice: js.UndefOr[java.lang.String] = js.undefined
+    var TotalUpfrontPrice: js.UndefOr[String] = js.undefined
   }
   
   
@@ -7902,11 +7902,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -7922,11 +7922,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the Windows instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -7934,11 +7934,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Windows instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The password of the instance. Returns an empty string if the password is not available.
          */
-    var PasswordData: js.UndefOr[java.lang.String] = js.undefined
+    var PasswordData: js.UndefOr[String] = js.undefined
     /**
          * The time the data was last updated.
          */
@@ -7950,7 +7950,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The IDs of the Convertible Reserved Instances to exchange.
          */
@@ -7966,11 +7966,11 @@ object EC2Ns extends js.Object {
     /**
          * The currency of the transaction.
          */
-    var CurrencyCode: js.UndefOr[java.lang.String] = js.undefined
+    var CurrencyCode: js.UndefOr[String] = js.undefined
     /**
          * If true, the exchange is valid. If false, the exchange cannot be completed.
          */
-    var IsValidExchange: js.UndefOr[scala.Boolean] = js.undefined
+    var IsValidExchange: js.UndefOr[Boolean] = js.undefined
     /**
          * The new end date of the reservation term.
          */
@@ -7978,7 +7978,7 @@ object EC2Ns extends js.Object {
     /**
          * The total true upfront charge for the exchange.
          */
-    var PaymentDue: js.UndefOr[java.lang.String] = js.undefined
+    var PaymentDue: js.UndefOr[String] = js.undefined
     /**
          * The cost associated with the Reserved Instance.
          */
@@ -7998,7 +7998,7 @@ object EC2Ns extends js.Object {
     /**
          * Describes the reason why the exchange cannot be completed.
          */
-    var ValidationFailureReason: js.UndefOr[java.lang.String] = js.undefined
+    var ValidationFailureReason: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8006,7 +8006,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. The possible values are:    transit-gateway-route-table-id - The ID of the transit gateway route table.  
          */
@@ -8018,11 +8018,11 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: java.lang.String
+    var TransitGatewayAttachmentId: String
   }
   
   
@@ -8030,7 +8030,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the propagation route tables.
          */
@@ -8042,7 +8042,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. The possible values are:    association-id - The ID of the association.    resource-id - The ID of the resource.    resource-type - The resource type (vpc | vpn).    transit-gateway-attachment-id - The ID of the attachment.  
          */
@@ -8054,11 +8054,11 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -8070,7 +8070,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8078,7 +8078,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. The possible values are:    resource-id - The ID of the resource.    resource-type - The resource type (vpc | vpn).    transit-gateway-attachment-id - The ID of the attachment.  
          */
@@ -8090,11 +8090,11 @@ object EC2Ns extends js.Object {
     /**
          * The token for the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -8102,7 +8102,7 @@ object EC2Ns extends js.Object {
     /**
          * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Information about the route table propagations.
          */
@@ -8114,11 +8114,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the security group.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * The name of the security group.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8126,7 +8126,7 @@ object EC2Ns extends js.Object {
     /**
          * If this parameter is set to true, your instance is enabled for hibernation; otherwise, it is not enabled for hibernation.
          */
-    var Configured: js.UndefOr[scala.Boolean] = js.undefined
+    var Configured: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -8134,7 +8134,7 @@ object EC2Ns extends js.Object {
     /**
          * If you set this parameter to true, your instance is enabled for hibernation. Default: false 
          */
-    var Configured: js.UndefOr[scala.Boolean] = js.undefined
+    var Configured: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -8182,7 +8182,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone of the Dedicated Host.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The number of new instances that can be launched onto the Dedicated Host.
          */
@@ -8190,11 +8190,11 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that you provide to ensure idempotency of the request. For more information, see How to Ensure Idempotency in the Amazon Elastic Compute Cloud User Guide. 
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Dedicated Host.
          */
-    var HostId: js.UndefOr[java.lang.String] = js.undefined
+    var HostId: js.UndefOr[String] = js.undefined
     /**
          * The hardware specifications of the Dedicated Host.
          */
@@ -8202,7 +8202,7 @@ object EC2Ns extends js.Object {
     /**
          * The reservation ID of the Dedicated Host. This returns a null response if the Dedicated Host doesn't have an associated reservation.
          */
-    var HostReservationId: js.UndefOr[java.lang.String] = js.undefined
+    var HostReservationId: js.UndefOr[String] = js.undefined
     /**
          * The IDs and instance type that are currently running on the Dedicated Host.
          */
@@ -8226,11 +8226,11 @@ object EC2Ns extends js.Object {
     /**
          * the IDs of instances that are running on the Dedicated Host.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The instance type size (for example, m3.medium) of the running instance.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8246,15 +8246,15 @@ object EC2Ns extends js.Object {
     /**
          * The hourly price of the offering.
          */
-    var HourlyPrice: js.UndefOr[java.lang.String] = js.undefined
+    var HourlyPrice: js.UndefOr[String] = js.undefined
     /**
          * The instance family of the offering.
          */
-    var InstanceFamily: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceFamily: js.UndefOr[String] = js.undefined
     /**
          * The ID of the offering.
          */
-    var OfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var OfferingId: js.UndefOr[String] = js.undefined
     /**
          * The available payment option.
          */
@@ -8262,7 +8262,7 @@ object EC2Ns extends js.Object {
     /**
          * The upfront price of the offering. Does not apply to No Upfront offerings.
          */
-    var UpfrontPrice: js.UndefOr[java.lang.String] = js.undefined
+    var UpfrontPrice: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8274,7 +8274,7 @@ object EC2Ns extends js.Object {
     /**
          * The instance type size that the Dedicated Host supports (for example, m3.medium).
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The number of sockets on the Dedicated Host.
          */
@@ -8310,19 +8310,19 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the reservation that specifies the associated Dedicated Hosts.
          */
-    var HostReservationId: js.UndefOr[java.lang.String] = js.undefined
+    var HostReservationId: js.UndefOr[String] = js.undefined
     /**
          * The hourly price of the reservation.
          */
-    var HourlyPrice: js.UndefOr[java.lang.String] = js.undefined
+    var HourlyPrice: js.UndefOr[String] = js.undefined
     /**
          * The instance family of the Dedicated Host Reservation. The instance family on the Dedicated Host must be the same in order for it to benefit from the reservation.
          */
-    var InstanceFamily: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceFamily: js.UndefOr[String] = js.undefined
     /**
          * The ID of the reservation. This remains the same regardless of which Dedicated Hosts are associated with it.
          */
-    var OfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var OfferingId: js.UndefOr[String] = js.undefined
     /**
          * The payment option selected for this reservation.
          */
@@ -8338,7 +8338,7 @@ object EC2Ns extends js.Object {
     /**
          * The upfront price of the reservation.
          */
-    var UpfrontPrice: js.UndefOr[java.lang.String] = js.undefined
+    var UpfrontPrice: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8346,11 +8346,11 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the instance profile.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance profile.
          */
-    var Id: js.UndefOr[java.lang.String] = js.undefined
+    var Id: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8358,7 +8358,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the association.
          */
-    var AssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationId: js.UndefOr[String] = js.undefined
     /**
          * The IAM instance profile.
          */
@@ -8366,7 +8366,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The state of the association.
          */
@@ -8382,11 +8382,11 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the instance profile.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The name of the instance profile.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8410,11 +8410,11 @@ object EC2Ns extends js.Object {
     /**
          * The type of resource.
          */
-    var Resource: js.UndefOr[java.lang.String] = js.undefined
+    var Resource: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether longer IDs (17-character IDs) are enabled for the resource.
          */
-    var UseLongIds: js.UndefOr[scala.Boolean] = js.undefined
+    var UseLongIds: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -8430,15 +8430,15 @@ object EC2Ns extends js.Object {
     /**
          * The date and time the image was created.
          */
-    var CreationDate: js.UndefOr[java.lang.String] = js.undefined
+    var CreationDate: js.UndefOr[String] = js.undefined
     /**
          * The description of the AMI that was provided during image creation.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether enhanced networking with ENA is enabled.
          */
-    var EnaSupport: js.UndefOr[scala.Boolean] = js.undefined
+    var EnaSupport: js.UndefOr[Boolean] = js.undefined
     /**
          * The hypervisor type of the image.
          */
@@ -8446,15 +8446,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AMI.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * The location of the AMI.
          */
-    var ImageLocation: js.UndefOr[java.lang.String] = js.undefined
+    var ImageLocation: js.UndefOr[String] = js.undefined
     /**
          * The AWS account alias (for example, amazon, self) or the AWS account ID of the AMI owner.
          */
-    var ImageOwnerAlias: js.UndefOr[java.lang.String] = js.undefined
+    var ImageOwnerAlias: js.UndefOr[String] = js.undefined
     /**
          * The type of image.
          */
@@ -8462,15 +8462,15 @@ object EC2Ns extends js.Object {
     /**
          * The kernel associated with the image, if any. Only applicable for machine images.
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * The name of the AMI that was provided during image creation.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The AWS account ID of the image owner.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The value is Windows for Windows AMIs; otherwise blank.
          */
@@ -8482,15 +8482,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the image has public launch permissions. The value is true if this image has public launch permissions or false if it has only implicit and explicit launch permissions.
          */
-    var Public: js.UndefOr[scala.Boolean] = js.undefined
+    var Public: js.UndefOr[Boolean] = js.undefined
     /**
          * The RAM disk associated with the image, if any. Only applicable for machine images.
          */
-    var RamdiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamdiskId: js.UndefOr[String] = js.undefined
     /**
          * The device name of the root device volume (for example, /dev/sda1).
          */
-    var RootDeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var RootDeviceName: js.UndefOr[String] = js.undefined
     /**
          * The type of root device used by the AMI. The AMI can use an EBS volume or an instance store volume.
          */
@@ -8498,7 +8498,7 @@ object EC2Ns extends js.Object {
     /**
          * Specifies whether enhanced networking with the Intel 82599 Virtual Function interface is enabled.
          */
-    var SriovNetSupport: js.UndefOr[java.lang.String] = js.undefined
+    var SriovNetSupport: js.UndefOr[String] = js.undefined
     /**
          * The current state of the AMI. If the state is available, the image is successfully registered and can be used to launch an instance.
          */
@@ -8530,7 +8530,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AMI.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * The kernel ID.
          */
@@ -8558,23 +8558,23 @@ object EC2Ns extends js.Object {
     /**
          * The description of the disk image.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The block device mapping for the disk.
          */
-    var DeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceName: js.UndefOr[String] = js.undefined
     /**
          * The format of the disk image being imported. Valid values: VHD | VMDK | OVA 
          */
-    var Format: js.UndefOr[java.lang.String] = js.undefined
+    var Format: js.UndefOr[String] = js.undefined
     /**
          * The ID of the EBS snapshot to be used for importing the snapshot.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * The URL to the Amazon S3-based disk image being imported. The URL can either be a https URL (https://..) or an Amazon S3 URL (s3://..)
          */
-    var Url: js.UndefOr[java.lang.String] = js.undefined
+    var Url: js.UndefOr[String] = js.undefined
     /**
          * The S3 bucket for the disk image.
          */
@@ -8586,7 +8586,7 @@ object EC2Ns extends js.Object {
     /**
          * The architecture of the virtual machine. Valid values: i386 | x86_64 
          */
-    var Architecture: js.UndefOr[java.lang.String] = js.undefined
+    var Architecture: js.UndefOr[String] = js.undefined
     /**
          * The client-specific data.
          */
@@ -8594,11 +8594,11 @@ object EC2Ns extends js.Object {
     /**
          * The token to enable idempotency for VM import requests.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * A description string for the import image task.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Information about the disk containers.
          */
@@ -8606,31 +8606,31 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the destination AMI of the imported image should be encrypted. The default CMK for EBS is used unless you specify a non-default AWS Key Management Service (AWS KMS) CMK using KmsKeyId. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The target hypervisor platform. Valid values: xen 
          */
-    var Hypervisor: js.UndefOr[java.lang.String] = js.undefined
+    var Hypervisor: js.UndefOr[String] = js.undefined
     /**
          * An identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted AMI. This parameter is only required if you want to use a non-default CMK; if this parameter is not specified, the default CMK for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The CMK identifier may be provided in any of the following formats:    Key ID   Key alias, in the form alias/ExampleAlias     ARN using key ID. The ID ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.   ARN using key alias. The alias ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    AWS parses KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. This action will eventually report failure.  The specified CMK must exist in the region that the AMI is being copied to. 
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The license type to be used for the Amazon Machine Image (AMI) after importing.  Note: You may only use BYOL if you have existing licenses with rights to use these licenses in a third party cloud like AWS. For more information, see Prerequisites in the VM Import/Export User Guide. Valid values: AWS | BYOL 
          */
-    var LicenseType: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseType: js.UndefOr[String] = js.undefined
     /**
          * The operating system of the virtual machine. Valid values: Windows | Linux 
          */
-    var Platform: js.UndefOr[java.lang.String] = js.undefined
+    var Platform: js.UndefOr[String] = js.undefined
     /**
          * The name of the role to use when not using the default role, 'vmimport'.
          */
-    var RoleName: js.UndefOr[java.lang.String] = js.undefined
+    var RoleName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8638,43 +8638,43 @@ object EC2Ns extends js.Object {
     /**
          * The architecture of the virtual machine.
          */
-    var Architecture: js.UndefOr[java.lang.String] = js.undefined
+    var Architecture: js.UndefOr[String] = js.undefined
     /**
          * A description of the import task.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the AMI is encypted.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The target hypervisor of the import task.
          */
-    var Hypervisor: js.UndefOr[java.lang.String] = js.undefined
+    var Hypervisor: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Amazon Machine Image (AMI) created by the import task.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * The task ID of the import image task.
          */
-    var ImportTaskId: js.UndefOr[java.lang.String] = js.undefined
+    var ImportTaskId: js.UndefOr[String] = js.undefined
     /**
          * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted AMI.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The license type of the virtual machine.
          */
-    var LicenseType: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseType: js.UndefOr[String] = js.undefined
     /**
          * The operating system of the virtual machine.
          */
-    var Platform: js.UndefOr[java.lang.String] = js.undefined
+    var Platform: js.UndefOr[String] = js.undefined
     /**
          * The progress of the task.
          */
-    var Progress: js.UndefOr[java.lang.String] = js.undefined
+    var Progress: js.UndefOr[String] = js.undefined
     /**
          * Information about the snapshots.
          */
@@ -8682,11 +8682,11 @@ object EC2Ns extends js.Object {
     /**
          * A brief status of the task.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * A detailed status message of the import task.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8694,43 +8694,43 @@ object EC2Ns extends js.Object {
     /**
          * The architecture of the virtual machine. Valid values: i386 | x86_64 
          */
-    var Architecture: js.UndefOr[java.lang.String] = js.undefined
+    var Architecture: js.UndefOr[String] = js.undefined
     /**
          * A description of the import task.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the image is encrypted.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The target hypervisor for the import task. Valid values: xen 
          */
-    var Hypervisor: js.UndefOr[java.lang.String] = js.undefined
+    var Hypervisor: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Amazon Machine Image (AMI) of the imported virtual machine.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the import image task.
          */
-    var ImportTaskId: js.UndefOr[java.lang.String] = js.undefined
+    var ImportTaskId: js.UndefOr[String] = js.undefined
     /**
          * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted image.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The license type of the virtual machine.
          */
-    var LicenseType: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseType: js.UndefOr[String] = js.undefined
     /**
          * The description string for the import image task.
          */
-    var Platform: js.UndefOr[java.lang.String] = js.undefined
+    var Platform: js.UndefOr[String] = js.undefined
     /**
          * The percentage of progress of the import image task.
          */
-    var Progress: js.UndefOr[java.lang.String] = js.undefined
+    var Progress: js.UndefOr[String] = js.undefined
     /**
          * Information about the snapshots.
          */
@@ -8738,11 +8738,11 @@ object EC2Ns extends js.Object {
     /**
          * A brief status for the import image task.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * A descriptive status message for the import image task.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8750,7 +8750,7 @@ object EC2Ns extends js.Object {
     /**
          * Reserved.
          */
-    var AdditionalInfo: js.UndefOr[java.lang.String] = js.undefined
+    var AdditionalInfo: js.UndefOr[String] = js.undefined
     /**
          * The architecture of the instance.
          */
@@ -8774,7 +8774,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether monitoring is enabled.
          */
-    var Monitoring: js.UndefOr[scala.Boolean] = js.undefined
+    var Monitoring: js.UndefOr[Boolean] = js.undefined
     /**
          * The placement information for the instance.
          */
@@ -8782,11 +8782,11 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] An available IP address from the IP address range of the subnet.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * [EC2-VPC] The ID of the subnet in which to launch the instance.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The Base64-encoded user data to make available to the instance.
          */
@@ -8798,7 +8798,7 @@ object EC2Ns extends js.Object {
     /**
          * A description for the instance being imported.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The disk image.
          */
@@ -8806,7 +8806,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The launch specification.
          */
@@ -8830,11 +8830,11 @@ object EC2Ns extends js.Object {
     /**
          * A description of the task.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The instance operating system.
          */
@@ -8850,7 +8850,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone where the resulting instance will reside.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The number of bytes converted so far.
          */
@@ -8858,7 +8858,7 @@ object EC2Ns extends js.Object {
     /**
          * A description of the task.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The image.
          */
@@ -8866,11 +8866,11 @@ object EC2Ns extends js.Object {
     /**
          * The status of the import of this particular disk image.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The status information or errors related to the disk image.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
     /**
          * The volume.
          */
@@ -8882,11 +8882,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * A unique name for the key pair.
          */
-    var KeyName: java.lang.String
+    var KeyName: String
     /**
          * The public key. For API calls, the text must be base64-encoded. For command line tools, base64 encoding is performed for you.
          */
@@ -8898,11 +8898,11 @@ object EC2Ns extends js.Object {
     /**
          * The MD5 public key fingerprint as specified in section 4 of RFC 4716.
          */
-    var KeyFingerprint: js.UndefOr[java.lang.String] = js.undefined
+    var KeyFingerprint: js.UndefOr[String] = js.undefined
     /**
          * The key pair name you provided.
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8914,11 +8914,11 @@ object EC2Ns extends js.Object {
     /**
          * Token to enable idempotency for VM import requests.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The description string for the import snapshot task.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Information about the disk container.
          */
@@ -8926,19 +8926,19 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the destination snapshot of the imported image should be encrypted. The default CMK for EBS is used unless you specify a non-default AWS Key Management Service (AWS KMS) CMK using KmsKeyId. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * An identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted snapshot. This parameter is only required if you want to use a non-default CMK; if this parameter is not specified, the default CMK for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The CMK identifier may be provided in any of the following formats:    Key ID   Key alias, in the form alias/ExampleAlias     ARN using key ID. The ID ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.   ARN using key alias. The alias ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    AWS parses KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. This action will eventually report failure.  The specified CMK must exist in the region that the snapshot is being copied to. 
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The name of the role to use when not using the default role, 'vmimport'.
          */
-    var RoleName: js.UndefOr[java.lang.String] = js.undefined
+    var RoleName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -8946,11 +8946,11 @@ object EC2Ns extends js.Object {
     /**
          * A description of the import snapshot task.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the import snapshot task.
          */
-    var ImportTaskId: js.UndefOr[java.lang.String] = js.undefined
+    var ImportTaskId: js.UndefOr[String] = js.undefined
     /**
          * Information about the import snapshot task.
          */
@@ -8962,11 +8962,11 @@ object EC2Ns extends js.Object {
     /**
          * A description of the import snapshot task.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the import snapshot task.
          */
-    var ImportTaskId: js.UndefOr[java.lang.String] = js.undefined
+    var ImportTaskId: js.UndefOr[String] = js.undefined
     /**
          * Describes an import snapshot task.
          */
@@ -8978,15 +8978,15 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone for the resulting EBS volume.
          */
-    var AvailabilityZone: java.lang.String
+    var AvailabilityZone: String
     /**
          * A description of the volume.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The disk image.
          */
@@ -9010,7 +9010,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone where the resulting volume will reside.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The number of bytes converted so far.
          */
@@ -9018,7 +9018,7 @@ object EC2Ns extends js.Object {
     /**
          * The description you provided when starting the import volume task.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The image.
          */
@@ -9046,7 +9046,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Capacity Reservation.
          */
-    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
+    var CapacityReservationId: js.UndefOr[String] = js.undefined
     /**
          * Information about the Capacity Reservation targeting option.
          */
@@ -9054,7 +9054,7 @@ object EC2Ns extends js.Object {
     /**
          * The idempotency token you provided when you launched the instance, if applicable.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The CPU options for the instance.
          */
@@ -9062,7 +9062,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance.
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The Elastic GPU associated with the instance.
          */
@@ -9074,7 +9074,7 @@ object EC2Ns extends js.Object {
     /**
          * Specifies whether enhanced networking with ENA is enabled.
          */
-    var EnaSupport: js.UndefOr[scala.Boolean] = js.undefined
+    var EnaSupport: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the instance is enabled for hibernation.
          */
@@ -9090,11 +9090,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AMI used to launch the instance.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether this is a Spot Instance or a Scheduled Instance.
          */
@@ -9106,11 +9106,11 @@ object EC2Ns extends js.Object {
     /**
          * The kernel associated with this instance, if applicable.
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair, if this instance was launched with an associated key pair.
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
     /**
          * The time the instance was launched.
          */
@@ -9138,11 +9138,11 @@ object EC2Ns extends js.Object {
     /**
          * (IPv4 only) The private DNS hostname name assigned to the instance. This DNS hostname can only be used inside the Amazon EC2 network. This name is not available until the instance enters the running state.  [EC2-VPC] The Amazon-provided DNS server resolves Amazon-provided private DNS hostnames if you've enabled DNS resolution and DNS hostnames in your VPC. If you are not using the Amazon-provided DNS server in your VPC, your custom domain name servers must resolve the hostname as appropriate.
          */
-    var PrivateDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateDnsName: js.UndefOr[String] = js.undefined
     /**
          * The private IPv4 address assigned to the instance.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The product codes attached to this instance, if applicable.
          */
@@ -9150,19 +9150,19 @@ object EC2Ns extends js.Object {
     /**
          * (IPv4 only) The public DNS name assigned to the instance. This name is not available until the instance enters the running state. For EC2-VPC, this name is only available if you've enabled DNS hostnames for your VPC.
          */
-    var PublicDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PublicDnsName: js.UndefOr[String] = js.undefined
     /**
          * The public IPv4 address assigned to the instance, if applicable.
          */
-    var PublicIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The RAM disk associated with this instance, if applicable.
          */
-    var RamdiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamdiskId: js.UndefOr[String] = js.undefined
     /**
          * The device name of the root device volume (for example, /dev/sda1).
          */
-    var RootDeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var RootDeviceName: js.UndefOr[String] = js.undefined
     /**
          * The root device type used by the AMI. The AMI can use an EBS volume or an instance store volume.
          */
@@ -9174,15 +9174,15 @@ object EC2Ns extends js.Object {
     /**
          * Specifies whether to enable an instance launched in a VPC to perform NAT. This controls whether source/destination checking is enabled on the instance. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the instance to perform NAT. For more information, see NAT Instances in the Amazon Virtual Private Cloud User Guide.
          */
-    var SourceDestCheck: js.UndefOr[scala.Boolean] = js.undefined
+    var SourceDestCheck: js.UndefOr[Boolean] = js.undefined
     /**
          * If the request is a Spot Instance request, the ID of the request.
          */
-    var SpotInstanceRequestId: js.UndefOr[java.lang.String] = js.undefined
+    var SpotInstanceRequestId: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether enhanced networking with the Intel 82599 Virtual Function interface is enabled.
          */
-    var SriovNetSupport: js.UndefOr[java.lang.String] = js.undefined
+    var SriovNetSupport: js.UndefOr[String] = js.undefined
     /**
          * The current state of the instance.
          */
@@ -9194,11 +9194,11 @@ object EC2Ns extends js.Object {
     /**
          * The reason for the most recent state transition. This might be an empty string.
          */
-    var StateTransitionReason: js.UndefOr[java.lang.String] = js.undefined
+    var StateTransitionReason: js.UndefOr[String] = js.undefined
     /**
          * [EC2-VPC] The ID of the subnet in which the instance is running.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the instance.
          */
@@ -9210,7 +9210,7 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The ID of the VPC in which the instance is running.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9238,7 +9238,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown).
          */
@@ -9282,7 +9282,7 @@ object EC2Ns extends js.Object {
     /**
          * The device name (for example, /dev/sdh or xvdh).
          */
-    var DeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceName: js.UndefOr[String] = js.undefined
     /**
          * Parameters used to automatically set up EBS volumes when the instance is launched.
          */
@@ -9294,7 +9294,7 @@ object EC2Ns extends js.Object {
     /**
          * The device name (for example, /dev/sdh or xvdh).
          */
-    var DeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceName: js.UndefOr[String] = js.undefined
     /**
          * Parameters used to automatically set up EBS volumes when the instance is launched.
          */
@@ -9302,11 +9302,11 @@ object EC2Ns extends js.Object {
     /**
          * suppress the specified device included in the block device mapping.
          */
-    var NoDevice: js.UndefOr[java.lang.String] = js.undefined
+    var NoDevice: js.UndefOr[String] = js.undefined
     /**
          * The virtual device name.
          */
-    var VirtualName: js.UndefOr[java.lang.String] = js.undefined
+    var VirtualName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9318,7 +9318,7 @@ object EC2Ns extends js.Object {
     /**
          * The instance type size supported by the Dedicated Host.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The total number of instances that can be launched onto the Dedicated Host.
          */
@@ -9342,11 +9342,11 @@ object EC2Ns extends js.Object {
     /**
          * The credit option for CPU usage of the instance. Valid values are standard and unlimited.
          */
-    var CpuCredits: js.UndefOr[java.lang.String] = js.undefined
+    var CpuCredits: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9354,11 +9354,11 @@ object EC2Ns extends js.Object {
     /**
          * The credit option for CPU usage of the instance. Valid values are standard and unlimited.
          */
-    var CpuCredits: js.UndefOr[java.lang.String] = js.undefined
+    var CpuCredits: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9366,7 +9366,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the resource being exported.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The target virtualization environment.
          */
@@ -9378,7 +9378,7 @@ object EC2Ns extends js.Object {
     /**
          * The IPv6 address.
          */
-    var Ipv6Address: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6Address: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9386,7 +9386,7 @@ object EC2Ns extends js.Object {
     /**
          * The IPv6 address.
          */
-    var Ipv6Address: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6Address: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9406,7 +9406,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The monitoring for the instance.
          */
@@ -9426,7 +9426,7 @@ object EC2Ns extends js.Object {
     /**
          * The description.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * One or more security groups.
          */
@@ -9438,23 +9438,23 @@ object EC2Ns extends js.Object {
     /**
          * The MAC address.
          */
-    var MacAddress: js.UndefOr[java.lang.String] = js.undefined
+    var MacAddress: js.UndefOr[String] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that created the network interface.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The private DNS name.
          */
-    var PrivateDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateDnsName: js.UndefOr[String] = js.undefined
     /**
          * The IPv4 address of the network interface within the subnet.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * One or more private IPv4 addresses associated with the network interface.
          */
@@ -9462,7 +9462,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether to validate network traffic to or from this network interface.
          */
-    var SourceDestCheck: js.UndefOr[scala.Boolean] = js.undefined
+    var SourceDestCheck: js.UndefOr[Boolean] = js.undefined
     /**
          * The status of the network interface.
          */
@@ -9470,11 +9470,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9482,15 +9482,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the owner of the Elastic IP address.
          */
-    var IpOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var IpOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The public DNS name.
          */
-    var PublicDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PublicDnsName: js.UndefOr[String] = js.undefined
     /**
          * The public IP address or Elastic IP address bound to the network interface.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9502,11 +9502,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface attachment.
          */
-    var AttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var AttachmentId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the network interface is deleted when the instance is terminated.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * The index of the device on the instance for the network interface attachment.
          */
@@ -9522,15 +9522,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether to assign a public IPv4 address to an instance you launch in a VPC. The public IP address can only be assigned to a network interface for eth0, and can only be assigned to a new network interface, not an existing one. You cannot specify more than one network interface in the request. If launching into a default subnet, the default value is true.
          */
-    var AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined
+    var AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
     /**
          * If set to true, the interface is deleted when the instance is terminated. You can specify true only if creating a new network interface when launching an instance.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * The description of the network interface. Applies only if creating a network interface when launching an instance.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The index of the device on the instance for the network interface attachment. If you are specifying a network interface in a RunInstances request, you must provide the device index.
          */
@@ -9550,11 +9550,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The private IPv4 address of the network interface. Applies only if creating a network interface when launching an instance. You cannot specify this option if you're launching more than one instance in a RunInstances request.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * One or more private IPv4 addresses to assign to the network interface. Only one private IPv4 address can be designated as primary. You cannot specify this option if you're launching more than one instance in a RunInstances request.
          */
@@ -9566,7 +9566,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet associated with the network string. Applies only if creating a network interface when launching an instance.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9578,15 +9578,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether this IPv4 address is the primary private IP address of the network interface.
          */
-    var Primary: js.UndefOr[scala.Boolean] = js.undefined
+    var Primary: js.UndefOr[Boolean] = js.undefined
     /**
          * The private IPv4 DNS name.
          */
-    var PrivateDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateDnsName: js.UndefOr[String] = js.undefined
     /**
          * The private IPv4 address of the network interface.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9610,7 +9610,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The previous state of the instance.
          */
@@ -9622,7 +9622,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone of the instance.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * Any scheduled events associated with the instance.
          */
@@ -9630,7 +9630,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The intended state of the instance. DescribeInstanceStatus requires that an instance be in the running state.
          */
@@ -9670,7 +9670,7 @@ object EC2Ns extends js.Object {
     /**
          * A description of the event. After a scheduled event is completed, it can still be described for up to a week. If the event has been completed, this description starts with the following text: [Completed].
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The latest scheduled end time for the event.
          */
@@ -9702,11 +9702,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the internet gateway.
          */
-    var InternetGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var InternetGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that owns the internet gateway.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the internet gateway.
          */
@@ -9722,7 +9722,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9734,7 +9734,7 @@ object EC2Ns extends js.Object {
     /**
          * The IP protocol name (tcp, udp, icmp) or number (see Protocol Numbers).  [EC2-VPC only] Use -1 to specify all protocols. When authorizing security group rules, specifying -1 or a protocol number other than tcp, udp, icmp, or 58 (ICMPv6) allows traffic on all ports, regardless of any port range you specify. For tcp, udp, and icmp, you must specify a port range. For 58 (ICMPv6), you can optionally specify a port range; if you don't, traffic for all types and codes is allowed when authorizing rules. 
          */
-    var IpProtocol: js.UndefOr[java.lang.String] = js.undefined
+    var IpProtocol: js.UndefOr[String] = js.undefined
     /**
          * One or more IPv4 ranges.
          */
@@ -9762,11 +9762,11 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 CIDR range. You can either specify a CIDR range or a source security group, not both. To specify a single IPv4 address, use the /32 prefix length.
          */
-    var CidrIp: js.UndefOr[java.lang.String] = js.undefined
+    var CidrIp: js.UndefOr[String] = js.undefined
     /**
          * A description for the security group rule that references this IPv4 address range. Constraints: Up to 255 characters in length. Allowed characters are a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=;{}!$*
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9774,7 +9774,7 @@ object EC2Ns extends js.Object {
     /**
          * The IPv6 CIDR block.
          */
-    var Ipv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6CidrBlock: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9782,11 +9782,11 @@ object EC2Ns extends js.Object {
     /**
          * The IPv6 CIDR range. You can either specify a CIDR range or a source security group, not both. To specify a single IPv6 address, use the /128 prefix length.
          */
-    var CidrIpv6: js.UndefOr[java.lang.String] = js.undefined
+    var CidrIpv6: js.UndefOr[String] = js.undefined
     /**
          * A description for the security group rule that references this IPv6 address range. Constraints: Up to 255 characters in length. Allowed characters are a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=;{}!$*
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9794,15 +9794,15 @@ object EC2Ns extends js.Object {
     /**
          * The SHA-1 digest of the DER encoded private key.
          */
-    var KeyFingerprint: js.UndefOr[java.lang.String] = js.undefined
+    var KeyFingerprint: js.UndefOr[String] = js.undefined
     /**
          * An unencrypted PEM encoded RSA private key.
          */
-    var KeyMaterial: js.UndefOr[java.lang.String] = js.undefined
+    var KeyMaterial: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair.
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9810,11 +9810,11 @@ object EC2Ns extends js.Object {
     /**
          * If you used CreateKeyPair to create the key pair, this is the SHA-1 digest of the DER encoded private key. If you used ImportKeyPair to provide AWS the public key, this is the MD5 public key fingerprint as specified in section 4 of RFC4716.
          */
-    var KeyFingerprint: js.UndefOr[java.lang.String] = js.undefined
+    var KeyFingerprint: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair.
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9826,7 +9826,7 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID.
          */
-    var UserId: js.UndefOr[java.lang.String] = js.undefined
+    var UserId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9846,7 +9846,7 @@ object EC2Ns extends js.Object {
     /**
          * Deprecated.
          */
-    var AddressingType: js.UndefOr[java.lang.String] = js.undefined
+    var AddressingType: js.UndefOr[String] = js.undefined
     /**
          * One or more block device mapping entries.
          */
@@ -9854,7 +9854,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the instance is optimized for EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance. Default: false 
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The IAM instance profile.
          */
@@ -9862,7 +9862,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AMI.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * The instance type.
          */
@@ -9870,11 +9870,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the kernel.
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair.
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
     var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
     /**
          * One or more network interfaces. If you specify a network interface, you must specify subnet IDs and security group IDs using the network interface.
@@ -9887,7 +9887,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the RAM disk.
          */
-    var RamdiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamdiskId: js.UndefOr[String] = js.undefined
     /**
          * One or more security groups. When requesting instances in a VPC, you must specify the IDs of the security groups. When requesting instances in EC2-Classic, you can specify the names or the IDs of the security groups.
          */
@@ -9895,11 +9895,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet in which to launch the instance.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The Base64-encoded user data for the instance.
          */
-    var UserData: js.UndefOr[java.lang.String] = js.undefined
+    var UserData: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9911,7 +9911,7 @@ object EC2Ns extends js.Object {
     /**
          * The principal that created the launch template. 
          */
-    var CreatedBy: js.UndefOr[java.lang.String] = js.undefined
+    var CreatedBy: js.UndefOr[String] = js.undefined
     /**
          * The version number of the default version of the launch template.
          */
@@ -9923,7 +9923,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the launch template.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template.
          */
@@ -9951,7 +9951,7 @@ object EC2Ns extends js.Object {
     /**
          * The device name.
          */
-    var DeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceName: js.UndefOr[String] = js.undefined
     /**
          * Information about the block device for an EBS volume.
          */
@@ -9959,11 +9959,11 @@ object EC2Ns extends js.Object {
     /**
          * Suppresses the specified device included in the block device mapping of the AMI.
          */
-    var NoDevice: js.UndefOr[java.lang.String] = js.undefined
+    var NoDevice: js.UndefOr[String] = js.undefined
     /**
          * The virtual device name (ephemeralN).
          */
-    var VirtualName: js.UndefOr[java.lang.String] = js.undefined
+    var VirtualName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -9971,7 +9971,7 @@ object EC2Ns extends js.Object {
     /**
          * The device name (for example, /dev/sdh or xvdh).
          */
-    var DeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceName: js.UndefOr[String] = js.undefined
     /**
          * Parameters used to automatically set up EBS volumes when the instance is launched.
          */
@@ -9979,11 +9979,11 @@ object EC2Ns extends js.Object {
     /**
          * Suppresses the specified device included in the block device mapping of the AMI.
          */
-    var NoDevice: js.UndefOr[java.lang.String] = js.undefined
+    var NoDevice: js.UndefOr[String] = js.undefined
     /**
          * The virtual device name (ephemeralN). Instance store volumes are numbered starting from 0. An instance type with 2 available instance store volumes can specify mappings for ephemeral0 and ephemeral1. The number of available instance store volumes depends on the instance type. After you connect to the instance, you must mount the volume.
          */
-    var VirtualName: js.UndefOr[java.lang.String] = js.undefined
+    var VirtualName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10051,11 +10051,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the EBS volume is deleted on instance termination.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the EBS volume is encrypted.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of I/O operations per second (IOPS) that the volume supports. 
          */
@@ -10063,11 +10063,11 @@ object EC2Ns extends js.Object {
     /**
          * The ARN of the AWS Key Management Service (AWS KMS) CMK used for encryption.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the snapshot.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * The size of the volume, in GiB.
          */
@@ -10083,11 +10083,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the EBS volume is deleted on instance termination.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the EBS volume is encrypted. Encrypted volumes can only be attached to instances that support Amazon EBS encryption. If you are creating a volume from a snapshot, you can't specify an encryption value.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of I/O operations per second (IOPS) that the volume supports. For io1, this represents the number of IOPS that are provisioned for the volume. For gp2, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
          */
@@ -10095,11 +10095,11 @@ object EC2Ns extends js.Object {
     /**
          * The ARN of the AWS Key Management Service (AWS KMS) CMK used for encryption.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the snapshot.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * The size of the volume, in GiB. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
          */
@@ -10115,7 +10115,7 @@ object EC2Ns extends js.Object {
     /**
          *  The type of elastic inference accelerator. The possible values are eia1.medium, eia1.large, and eia1.xlarge. 
          */
-    var Type: java.lang.String
+    var Type: String
   }
   
   
@@ -10123,7 +10123,7 @@ object EC2Ns extends js.Object {
     /**
          *  The type of elastic inference accelerator. The possible values are eia1.medium, eia1.large, and eia1.xlarge. 
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10131,7 +10131,7 @@ object EC2Ns extends js.Object {
     /**
          * If this parameter is set to true, the instance is enabled for hibernation; otherwise, it is not enabled for hibernation.
          */
-    var Configured: js.UndefOr[scala.Boolean] = js.undefined
+    var Configured: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -10139,7 +10139,7 @@ object EC2Ns extends js.Object {
     /**
          * If you set this parameter to true, the instance is enabled for hibernation. Default: false 
          */
-    var Configured: js.UndefOr[scala.Boolean] = js.undefined
+    var Configured: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -10147,11 +10147,11 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the instance profile.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The name of the instance profile.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10159,11 +10159,11 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the instance profile.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The name of the instance profile.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10195,15 +10195,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether to associate a public IPv4 address with eth0 for a new network interface.
          */
-    var AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined
+    var AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the network interface is deleted when the instance is terminated.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * A description for the network interface.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The device index for the network interface attachment.
          */
@@ -10223,11 +10223,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The primary private IPv4 address of the network interface.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * One or more private IPv4 addresses.
          */
@@ -10239,7 +10239,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet for the network interface.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10247,15 +10247,15 @@ object EC2Ns extends js.Object {
     /**
          * Associates a public IPv4 address with eth0 for a new network interface.
          */
-    var AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined
+    var AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the network interface is deleted when the instance is terminated.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * A description for the network interface.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The device index for the network interface attachment.
          */
@@ -10275,11 +10275,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The primary private IPv4 address of the network interface.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * One or more private IPv4 addresses.
          */
@@ -10291,7 +10291,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet for the network interface.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10299,7 +10299,7 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the license configuration.
          */
-    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10307,7 +10307,7 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the license configuration.
          */
-    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10315,7 +10315,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which to launch the instances.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The instance type.
          */
@@ -10327,11 +10327,11 @@ object EC2Ns extends js.Object {
     /**
          * The maximum price per unit hour that you are willing to pay for a Spot Instance.
          */
-    var SpotPrice: js.UndefOr[java.lang.String] = js.undefined
+    var SpotPrice: js.UndefOr[String] = js.undefined
     /**
          * The ID of the subnet in which to launch the instances.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The number of units provided by the specified instance type.
          */
@@ -10343,23 +10343,23 @@ object EC2Ns extends js.Object {
     /**
          * The affinity setting for the instance on the Dedicated Host.
          */
-    var Affinity: js.UndefOr[java.lang.String] = js.undefined
+    var Affinity: js.UndefOr[String] = js.undefined
     /**
          * The Availability Zone of the instance.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The name of the placement group for the instance.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Dedicated Host for the instance.
          */
-    var HostId: js.UndefOr[java.lang.String] = js.undefined
+    var HostId: js.UndefOr[String] = js.undefined
     /**
          * Reserved for future use.
          */
-    var SpreadDomain: js.UndefOr[java.lang.String] = js.undefined
+    var SpreadDomain: js.UndefOr[String] = js.undefined
     /**
          * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. 
          */
@@ -10371,23 +10371,23 @@ object EC2Ns extends js.Object {
     /**
          * The affinity setting for an instance on a Dedicated Host.
          */
-    var Affinity: js.UndefOr[java.lang.String] = js.undefined
+    var Affinity: js.UndefOr[String] = js.undefined
     /**
          * The Availability Zone for the instance.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The name of the placement group for the instance.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Dedicated Host for the instance.
          */
-    var HostId: js.UndefOr[java.lang.String] = js.undefined
+    var HostId: js.UndefOr[String] = js.undefined
     /**
          * Reserved for future use.
          */
-    var SpreadDomain: js.UndefOr[java.lang.String] = js.undefined
+    var SpreadDomain: js.UndefOr[String] = js.undefined
     /**
          * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware.
          */
@@ -10399,15 +10399,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the launch template.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template.
          */
-    var LaunchTemplateName: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateName: js.UndefOr[String] = js.undefined
     /**
          * The version number of the launch template. Default: The default version for the launch template.
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10423,7 +10423,7 @@ object EC2Ns extends js.Object {
     /**
          * The maximum hourly price you're willing to pay for the Spot Instances.
          */
-    var MaxPrice: js.UndefOr[java.lang.String] = js.undefined
+    var MaxPrice: js.UndefOr[String] = js.undefined
     /**
          * The Spot Instance request type.
          */
@@ -10447,7 +10447,7 @@ object EC2Ns extends js.Object {
     /**
          * The maximum hourly price you're willing to pay for the Spot Instances.
          */
-    var MaxPrice: js.UndefOr[java.lang.String] = js.undefined
+    var MaxPrice: js.UndefOr[String] = js.undefined
     /**
          * The Spot Instance request type.
          */
@@ -10491,11 +10491,11 @@ object EC2Ns extends js.Object {
     /**
          * The principal that created the version.
          */
-    var CreatedBy: js.UndefOr[java.lang.String] = js.undefined
+    var CreatedBy: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the version is the default version.
          */
-    var DefaultVersion: js.UndefOr[scala.Boolean] = js.undefined
+    var DefaultVersion: js.UndefOr[Boolean] = js.undefined
     /**
          * Information about the launch template.
          */
@@ -10503,7 +10503,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the launch template.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template.
          */
@@ -10523,7 +10523,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether detailed monitoring is enabled. Otherwise, basic monitoring is enabled.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -10531,7 +10531,7 @@ object EC2Ns extends js.Object {
     /**
          * Specify true to enable detailed monitoring. Otherwise, basic monitoring is enabled.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -10539,7 +10539,7 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the license configuration.
          */
-    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10547,7 +10547,7 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the license configuration.
          */
-    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+    var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10571,7 +10571,7 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID.
          */
-    var UserId: js.UndefOr[java.lang.String] = js.undefined
+    var UserId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10595,7 +10595,7 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID.
          */
-    var UserId: js.UndefOr[java.lang.String] = js.undefined
+    var UserId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10603,11 +10603,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Capacity Reservation.
          */
-    var CapacityReservationId: java.lang.String
+    var CapacityReservationId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time. The Capacity Reservation is cancelled within an hour from the specified time. For example, if you specify 5/31/2019, 13:30:55, the Capacity Reservation is guaranteed to end between 13:30:55 and 14:30:55 on 5/31/2019. You must provide an EndDate value if EndDateType is limited. Omit EndDate if EndDateType is unlimited.
          */
@@ -10627,7 +10627,7 @@ object EC2Ns extends js.Object {
     /**
          * Information about the Capacity Reservation.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -10635,7 +10635,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2 Fleet.
          */
@@ -10655,7 +10655,7 @@ object EC2Ns extends js.Object {
     /**
          * Is true if the request succeeds, and an error otherwise.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -10667,15 +10667,15 @@ object EC2Ns extends js.Object {
     /**
          * A description for the AFI.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AFI.
          */
-    var FpgaImageId: java.lang.String
+    var FpgaImageId: String
     /**
          * The load permission for the AFI.
          */
@@ -10683,7 +10683,7 @@ object EC2Ns extends js.Object {
     /**
          * A name for the AFI.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The operation type.
          */
@@ -10739,11 +10739,11 @@ object EC2Ns extends js.Object {
     /**
          * The type of resource: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. Alternatively, use the all-current option to include all resource types that are currently within their opt-in period for longer IDs.
          */
-    var Resource: java.lang.String
+    var Resource: String
     /**
          * Indicate whether the resource should use longer IDs (17-character IDs).
          */
-    var UseLongIds: scala.Boolean
+    var UseLongIds: Boolean
   }
   
   
@@ -10751,15 +10751,15 @@ object EC2Ns extends js.Object {
     /**
          * The ARN of the principal, which can be an IAM user, IAM role, or the root user. Specify all to modify the ID format for all IAM users, IAM roles, and the root user of the account.
          */
-    var PrincipalArn: java.lang.String
+    var PrincipalArn: String
     /**
          * The type of resource: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. Alternatively, use the all-current option to include all resource types that are currently within their opt-in period for longer IDs.
          */
-    var Resource: java.lang.String
+    var Resource: String
     /**
          * Indicates whether the resource should use longer IDs (17-character IDs)
          */
-    var UseLongIds: scala.Boolean
+    var UseLongIds: Boolean
   }
   
   
@@ -10767,7 +10767,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the attribute to modify. The valid values are description, launchPermission, and productCodes.
          */
-    var Attribute: js.UndefOr[java.lang.String] = js.undefined
+    var Attribute: js.UndefOr[String] = js.undefined
     /**
          * A new description for the AMI.
          */
@@ -10775,11 +10775,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AMI.
          */
-    var ImageId: java.lang.String
+    var ImageId: String
     /**
          * A new launch permission for the AMI.
          */
@@ -10803,7 +10803,7 @@ object EC2Ns extends js.Object {
     /**
          * The value of the attribute being modified. This parameter can be used only when the Attribute parameter is description or productCodes.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10823,7 +10823,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance.
          */
@@ -10839,7 +10839,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * Specifies whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown).
          */
@@ -10871,7 +10871,7 @@ object EC2Ns extends js.Object {
     /**
          * A new value for the attribute. Use only with the kernel, ramdisk, userData, disableApiTermination, or instanceInitiatedShutdownBehavior attribute.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -10883,11 +10883,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance to be modified.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -10895,7 +10895,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -10903,11 +10903,11 @@ object EC2Ns extends js.Object {
     /**
          * A unique, case-sensitive token that you provide to ensure idempotency of your modification request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Information about the credit option for CPU usage.
          */
@@ -10935,15 +10935,15 @@ object EC2Ns extends js.Object {
     /**
          * The name of the placement group in which to place the instance. For spread placement groups, the instance must have a tenancy of default. For cluster placement groups, the instance must have a tenancy of default or dedicated. To remove an instance from a placement group, specify an empty string ("").
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Dedicated Host with which to associate the instance.
          */
-    var HostId: js.UndefOr[java.lang.String] = js.undefined
+    var HostId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance that you are modifying.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The tenancy for the instance.
          */
@@ -10955,7 +10955,7 @@ object EC2Ns extends js.Object {
     /**
          * Is true if the request succeeds, and an error otherwise.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -10963,19 +10963,19 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The version number of the launch template to set as the default version.
          */
-    var DefaultVersion: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultVersion: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
-    var LaunchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
          */
@@ -11003,7 +11003,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Changes the security groups for the network interface. The new set of groups you specify replaces the current set. You must specify at least one group, even if it's just the default security group in the VPC. You must specify the ID of the security group, not the name.
          */
@@ -11011,7 +11011,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
     /**
          * Indicates whether source/destination checking is enabled. A value of true means checking is enabled, and false means checking is disabled. This value must be false for a NAT instance to perform NAT. For more information, see NAT Instances in the Amazon Virtual Private Cloud User Guide.
          */
@@ -11023,7 +11023,7 @@ object EC2Ns extends js.Object {
     /**
          * A unique, case-sensitive token you provide to ensure idempotency of your modification request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The IDs of the Reserved Instances to modify.
          */
@@ -11039,7 +11039,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID for the modification.
          */
-    var ReservedInstancesModificationId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesModificationId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11055,7 +11055,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The group to modify for the snapshot.
          */
@@ -11067,7 +11067,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the snapshot.
          */
-    var SnapshotId: java.lang.String
+    var SnapshotId: String
     /**
          * The account ID to modify for the snapshot.
          */
@@ -11083,7 +11083,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: java.lang.String
+    var SpotFleetRequestId: String
     /**
          * The size of the fleet.
          */
@@ -11095,7 +11095,7 @@ object EC2Ns extends js.Object {
     /**
          * Is true if the request succeeds, and an error otherwise.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11111,7 +11111,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet.
          */
-    var SubnetId: java.lang.String
+    var SubnetId: String
   }
   
   
@@ -11123,7 +11123,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The new VPC attachment options.
          */
@@ -11135,7 +11135,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: java.lang.String
+    var TransitGatewayAttachmentId: String
   }
   
   
@@ -11167,11 +11167,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the volume.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -11179,7 +11179,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The target IOPS rate of the volume. This is only valid for Provisioned IOPS SSD (io1) volumes. For more information, see Provisioned IOPS SSD (io1) Volumes. Default: If no IOPS value is specified, the existing value is retained.
          */
@@ -11191,7 +11191,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the volume.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
     /**
          * The target EBS volume type of the volume. Default: If no type is specified, the existing type is retained.
          */
@@ -11219,7 +11219,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -11231,15 +11231,15 @@ object EC2Ns extends js.Object {
     /**
          * The ARN for the SNS topic for the notification.
          */
-    var ConnectionNotificationArn: js.UndefOr[java.lang.String] = js.undefined
+    var ConnectionNotificationArn: js.UndefOr[String] = js.undefined
     /**
          * The ID of the notification.
          */
-    var ConnectionNotificationId: java.lang.String
+    var ConnectionNotificationId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11247,7 +11247,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var ReturnValue: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnValue: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11267,15 +11267,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * (Gateway endpoint) A policy document to attach to the endpoint. The policy must be in valid JSON format.
          */
-    var PolicyDocument: js.UndefOr[java.lang.String] = js.undefined
+    var PolicyDocument: js.UndefOr[String] = js.undefined
     /**
          * (Interface endpoint) Indicate whether a private hosted zone is associated with the VPC.
          */
-    var PrivateDnsEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * (Gateway endpoint) One or more route table IDs to disassociate from the endpoint.
          */
@@ -11291,11 +11291,11 @@ object EC2Ns extends js.Object {
     /**
          * (Gateway endpoint) Specify true to reset the policy document to the default policy. The default policy allows full access to the service.
          */
-    var ResetPolicy: js.UndefOr[scala.Boolean] = js.undefined
+    var ResetPolicy: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the endpoint.
          */
-    var VpcEndpointId: java.lang.String
+    var VpcEndpointId: String
   }
   
   
@@ -11303,7 +11303,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11311,7 +11311,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicate whether requests to create an endpoint to your service must be accepted.
          */
-    var AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined
+    var AcceptanceRequired: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Names (ARNs) of Network Load Balancers to add to your service configuration.
          */
@@ -11319,7 +11319,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Names (ARNs) of Network Load Balancers to remove from your service configuration.
          */
@@ -11327,7 +11327,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the service.
          */
-    var ServiceId: java.lang.String
+    var ServiceId: String
   }
   
   
@@ -11335,7 +11335,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11347,7 +11347,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Names (ARN) of one or more principals. Permissions are revoked for principals in this list.
          */
@@ -11355,7 +11355,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the service.
          */
-    var ServiceId: java.lang.String
+    var ServiceId: String
   }
   
   
@@ -11363,7 +11363,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var ReturnValue: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnValue: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11375,7 +11375,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The VPC peering connection options for the requester VPC.
          */
@@ -11383,7 +11383,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC peering connection.
          */
-    var VpcPeeringConnectionId: java.lang.String
+    var VpcPeeringConnectionId: String
   }
   
   
@@ -11403,7 +11403,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance tenancy attribute for the VPC. 
          */
@@ -11411,7 +11411,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: java.lang.String
+    var VpcId: String
   }
   
   
@@ -11419,7 +11419,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, returns an error.
          */
-    var ReturnValue: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnValue: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11427,7 +11427,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more instance IDs.
          */
@@ -11455,11 +11455,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The Elastic IP address.
          */
-    var PublicIp: java.lang.String
+    var PublicIp: String
   }
   
   
@@ -11467,7 +11467,7 @@ object EC2Ns extends js.Object {
     /**
          * The allocation ID for the Elastic IP address.
          */
-    var AllocationId: js.UndefOr[java.lang.String] = js.undefined
+    var AllocationId: js.UndefOr[String] = js.undefined
     /**
          * The status of the move of the IP address.
          */
@@ -11483,7 +11483,7 @@ object EC2Ns extends js.Object {
     /**
          * The Elastic IP address.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11499,11 +11499,11 @@ object EC2Ns extends js.Object {
     /**
          * If the NAT gateway could not be created, specifies the error code for the failure. (InsufficientFreeAddressesInSubnet | Gateway.NotAttached | InvalidAllocationID.NotFound | Resource.AlreadyAssociated | InternalError | InvalidSubnetID.NotFound)
          */
-    var FailureCode: js.UndefOr[java.lang.String] = js.undefined
+    var FailureCode: js.UndefOr[String] = js.undefined
     /**
          * If the NAT gateway could not be created, specifies the error message for the failure, that corresponds to the error code.   For InsufficientFreeAddressesInSubnet: "Subnet has insufficient free addresses to create this NAT gateway"   For Gateway.NotAttached: "Network vpc-xxxxxxxx has no Internet gateway attached"   For InvalidAllocationID.NotFound: "Elastic IP address eipalloc-xxxxxxxx could not be associated with this NAT gateway"   For Resource.AlreadyAssociated: "Elastic IP address eipalloc-xxxxxxxx is already associated"   For InternalError: "Network interface eni-xxxxxxxx, created and used internally by this NAT gateway is in an invalid state. Please try again."   For InvalidSubnetID.NotFound: "The specified subnet subnet-xxxxxxxx does not exist or could not be found."  
          */
-    var FailureMessage: js.UndefOr[java.lang.String] = js.undefined
+    var FailureMessage: js.UndefOr[String] = js.undefined
     /**
          * Information about the IP addresses and network interface associated with the NAT gateway.
          */
@@ -11511,7 +11511,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the NAT gateway.
          */
-    var NatGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var NatGatewayId: js.UndefOr[String] = js.undefined
     /**
          * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
          */
@@ -11523,7 +11523,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet in which the NAT gateway is located.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The tags for the NAT gateway.
          */
@@ -11531,7 +11531,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC in which the NAT gateway is located.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11539,19 +11539,19 @@ object EC2Ns extends js.Object {
     /**
          * The allocation ID of the Elastic IP address that's associated with the NAT gateway.
          */
-    var AllocationId: js.UndefOr[java.lang.String] = js.undefined
+    var AllocationId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the network interface associated with the NAT gateway.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The private IP address associated with the Elastic IP address.
          */
-    var PrivateIp: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIp: js.UndefOr[String] = js.undefined
     /**
          * The Elastic IP address associated with the NAT gateway.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11567,15 +11567,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether this is the default network ACL for the VPC.
          */
-    var IsDefault: js.UndefOr[scala.Boolean] = js.undefined
+    var IsDefault: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the network ACL.
          */
-    var NetworkAclId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkAclId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that owns the network ACL.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the network ACL.
          */
@@ -11583,7 +11583,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC for the network ACL.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11591,15 +11591,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the association between a network ACL and a subnet.
          */
-    var NetworkAclAssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkAclAssociationId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the network ACL.
          */
-    var NetworkAclId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkAclId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the subnet.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11607,11 +11607,11 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 network range to allow or deny, in CIDR notation.
          */
-    var CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the rule is an egress rule (applied to traffic leaving the subnet).
          */
-    var Egress: js.UndefOr[scala.Boolean] = js.undefined
+    var Egress: js.UndefOr[Boolean] = js.undefined
     /**
          * ICMP protocol: The ICMP type and code.
          */
@@ -11619,7 +11619,7 @@ object EC2Ns extends js.Object {
     /**
          * The IPv6 network range to allow or deny, in CIDR notation.
          */
-    var Ipv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * TCP or UDP protocols: The range of ports the rule applies to.
          */
@@ -11627,7 +11627,7 @@ object EC2Ns extends js.Object {
     /**
          * The protocol number. A value of "-1" means all protocols.
          */
-    var Protocol: js.UndefOr[java.lang.String] = js.undefined
+    var Protocol: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether to allow or deny the traffic that matches the rule.
          */
@@ -11651,11 +11651,11 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * A description.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Any security groups for the network interface.
          */
@@ -11671,23 +11671,23 @@ object EC2Ns extends js.Object {
     /**
          * The MAC address.
          */
-    var MacAddress: js.UndefOr[java.lang.String] = js.undefined
+    var MacAddress: js.UndefOr[String] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The AWS account ID of the owner of the network interface.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The private DNS name.
          */
-    var PrivateDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateDnsName: js.UndefOr[String] = js.undefined
     /**
          * The IPv4 address of the network interface within the subnet.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The private IPv4 addresses associated with the network interface.
          */
@@ -11695,15 +11695,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the entity that launched the instance on your behalf (for example, AWS Management Console or Auto Scaling).
          */
-    var RequesterId: js.UndefOr[java.lang.String] = js.undefined
+    var RequesterId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the network interface is being managed by AWS.
          */
-    var RequesterManaged: js.UndefOr[scala.Boolean] = js.undefined
+    var RequesterManaged: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether traffic to or from the instance is validated.
          */
-    var SourceDestCheck: js.UndefOr[scala.Boolean] = js.undefined
+    var SourceDestCheck: js.UndefOr[Boolean] = js.undefined
     /**
          * The status of the network interface.
          */
@@ -11711,7 +11711,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the network interface.
          */
@@ -11719,7 +11719,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11727,23 +11727,23 @@ object EC2Ns extends js.Object {
     /**
          * The allocation ID.
          */
-    var AllocationId: js.UndefOr[java.lang.String] = js.undefined
+    var AllocationId: js.UndefOr[String] = js.undefined
     /**
          * The association ID.
          */
-    var AssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Elastic IP address owner.
          */
-    var IpOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var IpOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The public DNS name.
          */
-    var PublicDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PublicDnsName: js.UndefOr[String] = js.undefined
     /**
          * The address of the Elastic IP address bound to the network interface.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11755,11 +11755,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface attachment.
          */
-    var AttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var AttachmentId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the network interface is deleted when the instance is terminated.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * The device index of the network interface attachment on the instance.
          */
@@ -11767,11 +11767,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The AWS account ID of the owner of the instance.
          */
-    var InstanceOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The attachment state.
          */
@@ -11783,11 +11783,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface attachment.
          */
-    var AttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var AttachmentId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the network interface is deleted when the instance is terminated.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11795,7 +11795,7 @@ object EC2Ns extends js.Object {
     /**
          * The IPv6 address.
          */
-    var Ipv6Address: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6Address: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11803,19 +11803,19 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID.
          */
-    var AwsAccountId: js.UndefOr[java.lang.String] = js.undefined
+    var AwsAccountId: js.UndefOr[String] = js.undefined
     /**
          * The AWS service.
          */
-    var AwsService: js.UndefOr[java.lang.String] = js.undefined
+    var AwsService: js.UndefOr[String] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the network interface permission.
          */
-    var NetworkInterfacePermissionId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfacePermissionId: js.UndefOr[String] = js.undefined
     /**
          * The type of permission.
          */
@@ -11835,7 +11835,7 @@ object EC2Ns extends js.Object {
     /**
          * A status message, if applicable.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11847,20 +11847,20 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether this IPv4 address is the primary private IPv4 address of the network interface.
          */
-    var Primary: js.UndefOr[scala.Boolean] = js.undefined
+    var Primary: js.UndefOr[Boolean] = js.undefined
     /**
          * The private DNS name.
          */
-    var PrivateDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateDnsName: js.UndefOr[String] = js.undefined
     /**
          * The private IPv4 address.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
   }
   
   
   trait NewDhcpConfiguration extends js.Object {
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     var Values: js.UndefOr[ValueStringList] = js.undefined
   }
   
@@ -11877,7 +11877,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates that the fleet uses a single instance type to launch all On-Demand Instances in the fleet.
          */
-    var SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
+    var SingleInstanceType: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11893,7 +11893,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates that the fleet uses a single instance type to launch all On-Demand Instances in the fleet.
          */
-    var SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
+    var SingleInstanceType: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11901,19 +11901,19 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the device.
          */
-    var DeviceId: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the subsystem.
          */
-    var SubsystemId: js.UndefOr[java.lang.String] = js.undefined
+    var SubsystemId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the vendor for the subsystem.
          */
-    var SubsystemVendorId: js.UndefOr[java.lang.String] = js.undefined
+    var SubsystemVendorId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the vendor.
          */
-    var VendorId: js.UndefOr[java.lang.String] = js.undefined
+    var VendorId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -11921,15 +11921,15 @@ object EC2Ns extends js.Object {
     /**
          * If true, the public DNS hostnames of instances in the specified VPC resolve to private IP addresses when queried from instances in the peer VPC.
          */
-    var AllowDnsResolutionFromRemoteVpc: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowDnsResolutionFromRemoteVpc: js.UndefOr[Boolean] = js.undefined
     /**
          * If true, enables outbound communication from an EC2-Classic instance that's linked to a local VPC using ClassicLink to instances in a peer VPC.
          */
-    var AllowEgressFromLocalClassicLinkToRemoteVpc: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowEgressFromLocalClassicLinkToRemoteVpc: js.UndefOr[Boolean] = js.undefined
     /**
          * If true, enables outbound communication from instances in a local VPC to an EC2-Classic instance that's linked to a peer VPC using ClassicLink.
          */
-    var AllowEgressFromLocalVpcToRemoteClassicLink: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowEgressFromLocalVpcToRemoteClassicLink: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11937,15 +11937,15 @@ object EC2Ns extends js.Object {
     /**
          * If true, enables a local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.
          */
-    var AllowDnsResolutionFromRemoteVpc: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowDnsResolutionFromRemoteVpc: js.UndefOr[Boolean] = js.undefined
     /**
          * If true, enables outbound communication from an EC2-Classic instance that's linked to a local VPC using ClassicLink to instances in a peer VPC.
          */
-    var AllowEgressFromLocalClassicLinkToRemoteVpc: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowEgressFromLocalClassicLinkToRemoteVpc: js.UndefOr[Boolean] = js.undefined
     /**
          * If true, enables outbound communication from instances in a local VPC to an EC2-Classic instance that's linked to a peer VPC using ClassicLink.
          */
-    var AllowEgressFromLocalVpcToRemoteClassicLink: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowEgressFromLocalVpcToRemoteClassicLink: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -11953,23 +11953,23 @@ object EC2Ns extends js.Object {
     /**
          * The affinity setting for the instance on the Dedicated Host. This parameter is not supported for the ImportInstance command.
          */
-    var Affinity: js.UndefOr[java.lang.String] = js.undefined
+    var Affinity: js.UndefOr[String] = js.undefined
     /**
          * The Availability Zone of the instance.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The name of the placement group the instance is in.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Dedicated Host on which the instance resides. This parameter is not supported for the ImportInstance command.
          */
-    var HostId: js.UndefOr[java.lang.String] = js.undefined
+    var HostId: js.UndefOr[String] = js.undefined
     /**
          * Reserved for future use.
          */
-    var SpreadDomain: js.UndefOr[java.lang.String] = js.undefined
+    var SpreadDomain: js.UndefOr[String] = js.undefined
     /**
          * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. The host tenancy is not supported for the ImportInstance command.
          */
@@ -11981,7 +11981,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the placement group.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * The state of the placement group.
          */
@@ -11997,7 +11997,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the placement group the instance is in.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12021,11 +12021,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the prefix.
          */
-    var PrefixListId: js.UndefOr[java.lang.String] = js.undefined
+    var PrefixListId: js.UndefOr[String] = js.undefined
     /**
          * The name of the prefix.
          */
-    var PrefixListName: js.UndefOr[java.lang.String] = js.undefined
+    var PrefixListName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12033,11 +12033,11 @@ object EC2Ns extends js.Object {
     /**
          * A description for the security group rule that references this prefix list ID. Constraints: Up to 255 characters in length. Allowed characters are a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=;{}!$*
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the prefix.
          */
-    var PrefixListId: js.UndefOr[java.lang.String] = js.undefined
+    var PrefixListId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12045,7 +12045,7 @@ object EC2Ns extends js.Object {
     /**
          * The current price schedule, as determined by the term remaining for the Reserved Instance in the listing. A specific price schedule is always in effect, but only one price schedule can be active at any time. Take, for example, a Reserved Instance listing that has five months remaining in its term. When you specify price schedules for five months and two months, this means that schedule 1, covering the first three months of the remaining term, will be active during months 5, 4, and 3. Then schedule 2, covering the last two months of the term, will be active for months 2 and 1.
          */
-    var Active: js.UndefOr[scala.Boolean] = js.undefined
+    var Active: js.UndefOr[Boolean] = js.undefined
     /**
          * The currency for transacting the Reserved Instance resale. At this time, the only supported currency is USD.
          */
@@ -12093,7 +12093,7 @@ object EC2Ns extends js.Object {
     /**
          * PrincipalIdFormatARN description
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * PrincipalIdFormatStatuses description
          */
@@ -12105,11 +12105,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the private IPv4 address is the primary private IPv4 address. Only one IPv4 address can be designated as primary.
          */
-    var Primary: js.UndefOr[scala.Boolean] = js.undefined
+    var Primary: js.UndefOr[Boolean] = js.undefined
     /**
          * The private IPv4 addresses.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12117,7 +12117,7 @@ object EC2Ns extends js.Object {
     /**
          * The product code.
          */
-    var ProductCodeId: js.UndefOr[java.lang.String] = js.undefined
+    var ProductCodeId: js.UndefOr[String] = js.undefined
     /**
          * The type of product code.
          */
@@ -12129,7 +12129,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the virtual private gateway.
          */
-    var GatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var GatewayId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12137,7 +12137,7 @@ object EC2Ns extends js.Object {
     /**
          * The public IPv4 address range, in CIDR notation. The most specific prefix that you can specify is /24. The address range cannot overlap with another address range that you've brought to this or another region.
          */
-    var Cidr: java.lang.String
+    var Cidr: String
     /**
          * A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP.
          */
@@ -12145,11 +12145,11 @@ object EC2Ns extends js.Object {
     /**
          * A description for the address range and the address pool.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -12169,7 +12169,7 @@ object EC2Ns extends js.Object {
     /**
          * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
          */
-    var Provisioned: js.UndefOr[java.lang.String] = js.undefined
+    var Provisioned: js.UndefOr[String] = js.undefined
     /**
          * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
          */
@@ -12177,11 +12177,11 @@ object EC2Ns extends js.Object {
     /**
          * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
          */
-    var Requested: js.UndefOr[java.lang.String] = js.undefined
+    var Requested: js.UndefOr[String] = js.undefined
     /**
          * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12189,7 +12189,7 @@ object EC2Ns extends js.Object {
     /**
          * A description of the address pool.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The address ranges.
          */
@@ -12197,7 +12197,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the IPv4 address pool.
          */
-    var PoolId: js.UndefOr[java.lang.String] = js.undefined
+    var PoolId: js.UndefOr[String] = js.undefined
     /**
          * The total number of addresses.
          */
@@ -12221,11 +12221,11 @@ object EC2Ns extends js.Object {
     /**
          * The first IP address in the range.
          */
-    var FirstAddress: js.UndefOr[java.lang.String] = js.undefined
+    var FirstAddress: js.UndefOr[String] = js.undefined
     /**
          * The last IP address in the range.
          */
-    var LastAddress: js.UndefOr[java.lang.String] = js.undefined
+    var LastAddress: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12245,15 +12245,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the reservation.
          */
-    var HostReservationId: js.UndefOr[java.lang.String] = js.undefined
+    var HostReservationId: js.UndefOr[String] = js.undefined
     /**
          * The hourly price of the reservation per hour.
          */
-    var HourlyPrice: js.UndefOr[java.lang.String] = js.undefined
+    var HourlyPrice: js.UndefOr[String] = js.undefined
     /**
          * The instance family on the Dedicated Host that the reservation can be associated with.
          */
-    var InstanceFamily: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceFamily: js.UndefOr[String] = js.undefined
     /**
          * The payment option for the reservation.
          */
@@ -12261,7 +12261,7 @@ object EC2Ns extends js.Object {
     /**
          * The upfront price of the reservation.
          */
-    var UpfrontPrice: js.UndefOr[java.lang.String] = js.undefined
+    var UpfrontPrice: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12269,7 +12269,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see How to Ensure Idempotency in the Amazon Elastic Compute Cloud User Guide.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The currency in which the totalUpfrontPrice, LimitPrice, and totalHourlyPrice amounts are specified. At this time, the only supported currency is USD.
          */
@@ -12281,11 +12281,11 @@ object EC2Ns extends js.Object {
     /**
          * The specified limit is checked against the total upfront cost of the reservation (calculated as the offering's upfront cost multiplied by the host count). If the total upfront cost is greater than the specified price limit, the request fails. This is used to ensure that the purchase does not exceed the expected upfront cost of the purchase. At this time, the only supported currency is USD. For example, to indicate a limit price of USD 100, specify 100.00.
          */
-    var LimitPrice: js.UndefOr[java.lang.String] = js.undefined
+    var LimitPrice: js.UndefOr[String] = js.undefined
     /**
          * The ID of the offering.
          */
-    var OfferingId: java.lang.String
+    var OfferingId: String
   }
   
   
@@ -12293,7 +12293,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see How to Ensure Idempotency in the Amazon Elastic Compute Cloud User Guide.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The currency in which the totalUpfrontPrice and totalHourlyPrice amounts are specified. At this time, the only supported currency is USD.
          */
@@ -12305,11 +12305,11 @@ object EC2Ns extends js.Object {
     /**
          * The total hourly price of the reservation calculated per hour.
          */
-    var TotalHourlyPrice: js.UndefOr[java.lang.String] = js.undefined
+    var TotalHourlyPrice: js.UndefOr[String] = js.undefined
     /**
          * The total amount charged to your account when you purchase the reservation.
          */
-    var TotalUpfrontPrice: js.UndefOr[java.lang.String] = js.undefined
+    var TotalUpfrontPrice: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12321,7 +12321,7 @@ object EC2Ns extends js.Object {
     /**
          * The purchase token.
          */
-    var PurchaseToken: java.lang.String
+    var PurchaseToken: String
   }
   
   
@@ -12329,7 +12329,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of Reserved Instances to purchase.
          */
@@ -12341,7 +12341,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Reserved Instance offering to purchase.
          */
-    var ReservedInstancesOfferingId: java.lang.String
+    var ReservedInstancesOfferingId: String
   }
   
   
@@ -12349,7 +12349,7 @@ object EC2Ns extends js.Object {
     /**
          * The IDs of the purchased Reserved Instances.
          */
-    var ReservedInstancesId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12357,11 +12357,11 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that ensures the idempotency of the request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more purchase requests.
          */
@@ -12381,7 +12381,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more instance IDs.
          */
@@ -12405,11 +12405,11 @@ object EC2Ns extends js.Object {
     /**
          * The region service endpoint.
          */
-    var Endpoint: js.UndefOr[java.lang.String] = js.undefined
+    var Endpoint: js.UndefOr[String] = js.undefined
     /**
          * The name of the region.
          */
-    var RegionName: js.UndefOr[java.lang.String] = js.undefined
+    var RegionName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12429,43 +12429,43 @@ object EC2Ns extends js.Object {
     /**
          * A description for your AMI.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Set to true to enable enhanced networking with ENA for the AMI and any instances that you launch from the AMI. This option is supported only for HVM AMIs. Specifying this option with a PV AMI can make instances launched from the AMI unreachable.
          */
-    var EnaSupport: js.UndefOr[scala.Boolean] = js.undefined
+    var EnaSupport: js.UndefOr[Boolean] = js.undefined
     /**
          * The full path to your AMI manifest in Amazon S3 storage.
          */
-    var ImageLocation: js.UndefOr[java.lang.String] = js.undefined
+    var ImageLocation: js.UndefOr[String] = js.undefined
     /**
          * The ID of the kernel.
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * A name for your AMI. Constraints: 3-128 alphanumeric characters, parentheses (()), square brackets ([]), spaces ( ), periods (.), slashes (/), dashes (-), single quotes ('), at-signs (@), or underscores(_)
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The ID of the RAM disk.
          */
-    var RamdiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamdiskId: js.UndefOr[String] = js.undefined
     /**
          * The device name of the root device volume (for example, /dev/sda1).
          */
-    var RootDeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var RootDeviceName: js.UndefOr[String] = js.undefined
     /**
          * Set to simple to enable enhanced networking with the Intel 82599 Virtual Function interface for the AMI and any instances that you launch from the AMI. There is no way to disable sriovNetSupport at this time. This option is supported only for HVM AMIs. Specifying this option with a PV AMI can make instances launched from the AMI unreachable.
          */
-    var SriovNetSupport: js.UndefOr[java.lang.String] = js.undefined
+    var SriovNetSupport: js.UndefOr[String] = js.undefined
     /**
          * The type of virtualization (hvm | paravirtual). Default: paravirtual 
          */
-    var VirtualizationType: js.UndefOr[java.lang.String] = js.undefined
+    var VirtualizationType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12473,7 +12473,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the newly registered AMI.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12481,11 +12481,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: java.lang.String
+    var TransitGatewayAttachmentId: String
   }
   
   
@@ -12501,11 +12501,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the service.
          */
-    var ServiceId: java.lang.String
+    var ServiceId: String
     /**
          * The IDs of one or more VPC endpoints.
          */
@@ -12525,11 +12525,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC peering connection.
          */
-    var VpcPeeringConnectionId: java.lang.String
+    var VpcPeeringConnectionId: String
   }
   
   
@@ -12537,7 +12537,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, it returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -12545,15 +12545,15 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The allocation ID. Required for EC2-VPC.
          */
-    var AllocationId: js.UndefOr[java.lang.String] = js.undefined
+    var AllocationId: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * [EC2-Classic] The Elastic IP address. Required for EC2-Classic.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12581,7 +12581,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the existing IAM instance profile association.
          */
-    var AssociationId: java.lang.String
+    var AssociationId: String
     /**
          * The IAM instance profile.
          */
@@ -12601,15 +12601,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the current association between the original network ACL and the subnet.
          */
-    var AssociationId: java.lang.String
+    var AssociationId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the new network ACL to associate with the subnet.
          */
-    var NetworkAclId: java.lang.String
+    var NetworkAclId: String
   }
   
   
@@ -12617,7 +12617,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the new association.
          */
-    var NewAssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var NewAssociationId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12625,15 +12625,15 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 network range to allow or deny, in CIDR notation (for example 172.16.0.0/24).
          */
-    var CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether to replace the egress rule. Default: If no value is specified, we replace the ingress rule.
          */
-    var Egress: scala.Boolean
+    var Egress: Boolean
     /**
          * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying protocol 1 (ICMP) or protocol 58 (ICMPv6) with an IPv6 CIDR block.
          */
@@ -12641,11 +12641,11 @@ object EC2Ns extends js.Object {
     /**
          * The IPv6 network range to allow or deny, in CIDR notation (for example 2001:bd8:1234:1a00::/64).
          */
-    var Ipv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The ID of the ACL.
          */
-    var NetworkAclId: java.lang.String
+    var NetworkAclId: String
     /**
          * TCP or UDP protocols: The range of ports the rule applies to. Required if specifying protocol 6 (TCP) or 17 (UDP).
          */
@@ -12653,7 +12653,7 @@ object EC2Ns extends js.Object {
     /**
          * The protocol number. A value of "-1" means all protocols. If you specify "-1" or a protocol number other than "6" (TCP), "17" (UDP), or "1" (ICMP), traffic on all ports is allowed, regardless of any ports or ICMP types or codes that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
          */
-    var Protocol: java.lang.String
+    var Protocol: String
     /**
          * Indicates whether to allow or deny the traffic that matches the rule.
          */
@@ -12669,47 +12669,47 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 CIDR address block used for the destination match. The value that you provide must match the CIDR of an existing route in the table.
          */
-    var DestinationCidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationCidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The IPv6 CIDR address block used for the destination match. The value that you provide must match the CIDR of an existing route in the table.
          */
-    var DestinationIpv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationIpv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * [IPv6 traffic only] The ID of an egress-only internet gateway.
          */
-    var EgressOnlyInternetGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var EgressOnlyInternetGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of an internet gateway or virtual private gateway.
          */
-    var GatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var GatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a NAT instance in your VPC.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * [IPv4 traffic only] The ID of a NAT gateway.
          */
-    var NatGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var NatGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the route table.
          */
-    var RouteTableId: java.lang.String
+    var RouteTableId: String
     /**
          * The ID of a transit gateway.
          */
-    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a VPC peering connection.
          */
-    var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcPeeringConnectionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12717,15 +12717,15 @@ object EC2Ns extends js.Object {
     /**
          * The association ID.
          */
-    var AssociationId: java.lang.String
+    var AssociationId: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the new route table to associate with the subnet.
          */
-    var RouteTableId: java.lang.String
+    var RouteTableId: String
   }
   
   
@@ -12733,7 +12733,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the new association.
          */
-    var NewAssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var NewAssociationId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12741,23 +12741,23 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether traffic matching this route is to be dropped.
          */
-    var Blackhole: js.UndefOr[scala.Boolean] = js.undefined
+    var Blackhole: js.UndefOr[Boolean] = js.undefined
     /**
          * The CIDR range used for the destination match. Routing decisions are based on the most specific match.
          */
-    var DestinationCidrBlock: java.lang.String
+    var DestinationCidrBlock: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -12773,11 +12773,11 @@ object EC2Ns extends js.Object {
     /**
          * Descriptive text about the health state of your instance.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The time at which the reported instance health state ended.
          */
@@ -12821,11 +12821,11 @@ object EC2Ns extends js.Object {
     /**
          * If set to true, you can't terminate the instance using the Amazon EC2 console, CLI, or API. To change this attribute to false after launch, use ModifyInstanceAttribute.
          */
-    var DisableApiTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DisableApiTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal Amazon EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS-optimized instance.
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * An elastic GPU to associate with the instance.
          */
@@ -12845,7 +12845,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AMI, which you can get by using DescribeImages.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown). Default: stop 
          */
@@ -12861,11 +12861,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the kernel.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see User Provided Kernels in the Amazon Elastic Compute Cloud User Guide. 
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair. You can create a key pair using CreateKeyPair or ImportKeyPair.  If you do not specify a key pair, you can't connect to the instance unless you choose an AMI that is configured to allow users another way to log in. 
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
     /**
          * The license configurations.
          */
@@ -12885,7 +12885,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the RAM disk.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see User Provided Kernels in the Amazon Elastic Compute Cloud User Guide. 
          */
-    var RamDiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamDiskId: js.UndefOr[String] = js.undefined
     /**
          * One or more security group IDs. You can create a security group using CreateSecurityGroup. You cannot specify both a security group ID and security name in the same request.
          */
@@ -12901,7 +12901,7 @@ object EC2Ns extends js.Object {
     /**
          * The Base64-encoded user data to make available to the instance. For more information, see Running Commands on Your Linux Instance at Launch (Linux) and Adding User Data (Windows).
          */
-    var UserData: js.UndefOr[java.lang.String] = js.undefined
+    var UserData: js.UndefOr[String] = js.undefined
   }
   
   
@@ -12909,7 +12909,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The configuration for the Spot Fleet request.
          */
@@ -12921,7 +12921,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: java.lang.String
+    var SpotFleetRequestId: String
   }
   
   
@@ -12929,7 +12929,7 @@ object EC2Ns extends js.Object {
     /**
          * The user-specified name for a logical grouping of requests. When you specify an Availability Zone group in a Spot Instance request, all Spot Instances in the request are launched in the same Availability Zone. Instance proximity is maintained with this parameter, but the choice of Availability Zone is not. The group applies only to requests for Spot Instances of the same instance type. Any additional Spot Instance requests that are specified with the same Availability Zone group name are launched in that same Availability Zone, as long as at least one instance from the group is still active. If there is no active instance running in the Availability Zone group that you specify for a new Spot Instance request (all instances are terminated, the request is expired, or the maximum price you specified falls below current Spot price), then Amazon EC2 launches the instance in any Availability Zone where the constraint can be met. Consequently, the subsequent set of Spot Instances could be placed in a different zone from the original request, even if you specified the same Availability Zone group. Default: Instances are launched in any available Availability Zone.
          */
-    var AvailabilityZoneGroup: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZoneGroup: js.UndefOr[String] = js.undefined
     /**
          * The required duration for the Spot Instances (also known as Spot blocks), in minutes. This value must be a multiple of 60 (60, 120, 180, 240, 300, or 360). The duration period starts as soon as your Spot Instance receives its instance ID. At the end of the duration period, Amazon EC2 marks the Spot Instance for termination and provides a Spot Instance termination notice, which gives the instance a two-minute warning before it terminates. You can't specify an Availability Zone group or a launch group if you specify a duration.
          */
@@ -12937,11 +12937,11 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency in the Amazon EC2 User Guide for Linux Instances.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of Spot Instances to launch. Default: 1
          */
@@ -12953,7 +12953,7 @@ object EC2Ns extends js.Object {
     /**
          * The instance launch group. Launch groups are Spot Instances that launch together and terminate together. Default: Instances are launched and terminated individually
          */
-    var LaunchGroup: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchGroup: js.UndefOr[String] = js.undefined
     /**
          * The launch specification.
          */
@@ -12961,7 +12961,7 @@ object EC2Ns extends js.Object {
     /**
          * The maximum price per hour that you are willing to pay for a Spot Instance. The default is the On-Demand price.
          */
-    var SpotPrice: js.UndefOr[java.lang.String] = js.undefined
+    var SpotPrice: js.UndefOr[String] = js.undefined
     /**
          * The Spot Instance request type. Default: one-time 
          */
@@ -12989,7 +12989,7 @@ object EC2Ns extends js.Object {
     /**
          * Deprecated.
          */
-    var AddressingType: js.UndefOr[java.lang.String] = js.undefined
+    var AddressingType: js.UndefOr[String] = js.undefined
     /**
          * One or more block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
          */
@@ -12997,7 +12997,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the instance is optimized for EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance. Default: false 
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The IAM instance profile.
          */
@@ -13005,7 +13005,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AMI.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * The instance type.
          */
@@ -13013,11 +13013,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the kernel.
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair.
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether basic or detailed monitoring is enabled for the instance. Default: Disabled
          */
@@ -13033,7 +13033,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the RAM disk.
          */
-    var RamdiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamdiskId: js.UndefOr[String] = js.undefined
     /**
          * One or more security group IDs.
          */
@@ -13045,11 +13045,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet in which to launch the instance.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The Base64-encoded user data for the instance.
          */
-    var UserData: js.UndefOr[java.lang.String] = js.undefined
+    var UserData: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13065,15 +13065,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AWS account that owns the reservation.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the requester that launched the instances on your behalf (for example, AWS Management Console or Auto Scaling).
          */
-    var RequesterId: js.UndefOr[java.lang.String] = js.undefined
+    var RequesterId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the reservation.
          */
-    var ReservationId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservationId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13081,15 +13081,15 @@ object EC2Ns extends js.Object {
     /**
          * The hourly rate of the reservation.
          */
-    var HourlyPrice: js.UndefOr[java.lang.String] = js.undefined
+    var HourlyPrice: js.UndefOr[String] = js.undefined
     /**
          * The balance of the total value (the sum of remainingUpfrontValue + hourlyPrice * number of hours remaining).
          */
-    var RemainingTotalValue: js.UndefOr[java.lang.String] = js.undefined
+    var RemainingTotalValue: js.UndefOr[String] = js.undefined
     /**
          * The remaining upfront cost of the reservation.
          */
-    var RemainingUpfrontValue: js.UndefOr[java.lang.String] = js.undefined
+    var RemainingUpfrontValue: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13113,7 +13113,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Convertible Reserved Instance that you are exchanging.
          */
-    var ReservedInstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13121,7 +13121,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which the Reserved Instance can be used.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The currency of the Reserved Instance. It's specified using ISO 4217 standard currency codes. At this time, the only supported currency is USD.
          */
@@ -13169,7 +13169,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Reserved Instance.
          */
-    var ReservedInstancesId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesId: js.UndefOr[String] = js.undefined
     /**
          * The scope of the Reserved Instance.
          */
@@ -13197,7 +13197,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone for the modified Reserved Instances.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The number of modified Reserved Instances.
          */
@@ -13209,7 +13209,7 @@ object EC2Ns extends js.Object {
     /**
          * The network platform of the modified Reserved Instances, which is either EC2-Classic or EC2-VPC.
          */
-    var Platform: js.UndefOr[java.lang.String] = js.undefined
+    var Platform: js.UndefOr[String] = js.undefined
     /**
          * Whether the Reserved Instance is applied to instances in a region or instances in a specific Availability Zone.
          */
@@ -13221,7 +13221,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Reserved Instance.
          */
-    var ReservedInstancesId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13229,7 +13229,7 @@ object EC2Ns extends js.Object {
     /**
          * A unique, case-sensitive key supplied by the client to ensure that the request is idempotent. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The time the listing was created.
          */
@@ -13245,11 +13245,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Reserved Instance.
          */
-    var ReservedInstancesId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Reserved Instance listing.
          */
-    var ReservedInstancesListingId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesListingId: js.UndefOr[String] = js.undefined
     /**
          * The status of the Reserved Instance listing.
          */
@@ -13257,7 +13257,7 @@ object EC2Ns extends js.Object {
     /**
          * The reason for the current status of the Reserved Instance listing. The response can be blank.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the resource.
          */
@@ -13273,7 +13273,7 @@ object EC2Ns extends js.Object {
     /**
          * A unique, case-sensitive key supplied by the client to ensure that the request is idempotent. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The time when the modification request was created.
          */
@@ -13293,15 +13293,15 @@ object EC2Ns extends js.Object {
     /**
          * A unique ID for the Reserved Instance modification.
          */
-    var ReservedInstancesModificationId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesModificationId: js.UndefOr[String] = js.undefined
     /**
          * The status of the Reserved Instances modification request.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The reason for the status.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
     /**
          * The time when the modification request was last updated.
          */
@@ -13313,7 +13313,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID for the Reserved Instances that were created as part of the modification request. This field is only available when the modification is fulfilled.
          */
-    var ReservedInstancesId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesId: js.UndefOr[String] = js.undefined
     /**
          * The target Reserved Instances configurations supplied as part of the modification request.
          */
@@ -13325,7 +13325,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which the Reserved Instance can be used.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The currency of the Reserved Instance offering you are purchasing. It's specified using ISO 4217 standard currency codes. At this time, the only supported currency is USD.
          */
@@ -13349,7 +13349,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the offering is available through the Reserved Instance Marketplace (resale) or AWS. If it's a Reserved Instance Marketplace offering, this is true.
          */
-    var Marketplace: js.UndefOr[scala.Boolean] = js.undefined
+    var Marketplace: js.UndefOr[Boolean] = js.undefined
     /**
          * If convertible it can be exchanged for Reserved Instances of the same or higher monetary value, with different configurations. If standard, it is not possible to perform an exchange.
          */
@@ -13373,7 +13373,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Reserved Instance offering. This is the offering ID used in GetReservedInstancesExchangeQuote to confirm that an exchange can be made.
          */
-    var ReservedInstancesOfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var ReservedInstancesOfferingId: js.UndefOr[String] = js.undefined
     /**
          * Whether the Reserved Instance is applied to instances in a region or an Availability Zone.
          */
@@ -13393,11 +13393,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AFI.
          */
-    var FpgaImageId: java.lang.String
+    var FpgaImageId: String
   }
   
   
@@ -13405,7 +13405,7 @@ object EC2Ns extends js.Object {
     /**
          * Is true if the request succeeds, and an error otherwise.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -13417,11 +13417,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AMI.
          */
-    var ImageId: java.lang.String
+    var ImageId: String
   }
   
   
@@ -13433,11 +13433,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -13445,15 +13445,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
     /**
          * The source/destination checking attribute. Resets the value to true.
          */
-    var SourceDestCheck: js.UndefOr[java.lang.String] = js.undefined
+    var SourceDestCheck: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13465,11 +13465,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the snapshot.
          */
-    var SnapshotId: java.lang.String
+    var SnapshotId: String
   }
   
   
@@ -13481,7 +13481,7 @@ object EC2Ns extends js.Object {
     /**
          * The error message, if applicable.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13505,11 +13505,11 @@ object EC2Ns extends js.Object {
     /**
          * If set to true, indicates that the instance cannot be terminated using the Amazon EC2 console, command line tool, or API.
          */
-    var DisableApiTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DisableApiTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the instance is optimized for Amazon EBS I/O. 
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The elastic GPU specification.
          */
@@ -13529,7 +13529,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AMI that was used to launch the instance.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown).
          */
@@ -13545,11 +13545,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the kernel, if applicable.
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair.
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
     /**
          * The license configurations.
          */
@@ -13569,7 +13569,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the RAM disk, if applicable.
          */
-    var RamDiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamDiskId: js.UndefOr[String] = js.undefined
     /**
          * The security group IDs.
          */
@@ -13585,7 +13585,7 @@ object EC2Ns extends js.Object {
     /**
          * The user data for the instance. 
          */
-    var UserData: js.UndefOr[java.lang.String] = js.undefined
+    var UserData: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13593,11 +13593,11 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The Elastic IP address.
          */
-    var PublicIp: java.lang.String
+    var PublicIp: String
   }
   
   
@@ -13605,7 +13605,7 @@ object EC2Ns extends js.Object {
     /**
          * The Elastic IP address.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
     /**
          * The move status for the IP address.
          */
@@ -13617,11 +13617,11 @@ object EC2Ns extends js.Object {
     /**
          * Not supported. Use a set of IP permissions to specify the CIDR.
          */
-    var CidrIp: js.UndefOr[java.lang.String] = js.undefined
+    var CidrIp: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Not supported. Use a set of IP permissions to specify the port.
          */
@@ -13629,7 +13629,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the security group.
          */
-    var GroupId: java.lang.String
+    var GroupId: String
     /**
          * One or more sets of IP permissions. You can't specify a destination security group and a CIDR IP address range in the same set of permissions.
          */
@@ -13637,15 +13637,15 @@ object EC2Ns extends js.Object {
     /**
          * Not supported. Use a set of IP permissions to specify the protocol name or number.
          */
-    var IpProtocol: js.UndefOr[java.lang.String] = js.undefined
+    var IpProtocol: js.UndefOr[String] = js.undefined
     /**
          * Not supported. Use a set of IP permissions to specify a destination security group.
          */
-    var SourceSecurityGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var SourceSecurityGroupName: js.UndefOr[String] = js.undefined
     /**
          * Not supported. Use a set of IP permissions to specify a destination security group.
          */
-    var SourceSecurityGroupOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
     /**
          * Not supported. Use a set of IP permissions to specify the port.
          */
@@ -13657,11 +13657,11 @@ object EC2Ns extends js.Object {
     /**
          * The CIDR IP address range. You can't specify this parameter when specifying a source security group.
          */
-    var CidrIp: js.UndefOr[java.lang.String] = js.undefined
+    var CidrIp: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The start of port range for the TCP and UDP protocols, or an ICMP type number. For the ICMP type number, use -1 to specify all ICMP types.
          */
@@ -13669,11 +13669,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the security group. You must specify either the security group ID or the security group name in the request. For security groups in a nondefault VPC, you must specify the security group ID.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * [EC2-Classic, default VPC] The name of the security group. You must specify either the security group ID or the security group name in the request.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * One or more sets of IP permissions. You can't specify a source security group and a CIDR IP address range in the same set of permissions.
          */
@@ -13681,15 +13681,15 @@ object EC2Ns extends js.Object {
     /**
          * The IP protocol name (tcp, udp, icmp) or number (see Protocol Numbers). Use -1 to specify all.
          */
-    var IpProtocol: js.UndefOr[java.lang.String] = js.undefined
+    var IpProtocol: js.UndefOr[String] = js.undefined
     /**
          * [EC2-Classic, default VPC] The name of the source security group. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the start of the port range, the IP protocol, and the end of the port range. For EC2-VPC, the source security group must be in the same VPC. To revoke a specific rule for an IP protocol and port range, use a set of IP permissions instead.
          */
-    var SourceSecurityGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var SourceSecurityGroupName: js.UndefOr[String] = js.undefined
     /**
          * [EC2-Classic] The AWS account ID of the source security group, if the source security group is in a different account. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the IP protocol, the start of the port range, and the end of the port range. To revoke a specific rule for an IP protocol and port range, use a set of IP permissions instead.
          */
-    var SourceSecurityGroupOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The end of port range for the TCP and UDP protocols, or an ICMP code number. For the ICMP code number, use -1 to specify all ICMP codes for the ICMP type.
          */
@@ -13701,39 +13701,39 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 CIDR block used for the destination match.
          */
-    var DestinationCidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationCidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The IPv6 CIDR block used for the destination match.
          */
-    var DestinationIpv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationIpv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The prefix of the AWS service.
          */
-    var DestinationPrefixListId: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationPrefixListId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the egress-only internet gateway.
          */
-    var EgressOnlyInternetGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var EgressOnlyInternetGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a gateway attached to your VPC.
          */
-    var GatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var GatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a NAT instance in your VPC.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The AWS account ID of the owner of the instance.
          */
-    var InstanceOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a NAT gateway.
          */
-    var NatGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var NatGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * Describes how the route was created.    CreateRouteTable - The route was automatically created when the route table was created.    CreateRoute - The route was manually added to the route table.    EnableVgwRoutePropagation - The route was propagated by route propagation.  
          */
@@ -13745,11 +13745,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of a transit gateway.
          */
-    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of a VPC peering connection.
          */
-    var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcPeeringConnectionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13761,7 +13761,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AWS account that owns the route table.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * Any virtual private gateway (VGW) propagating routes.
          */
@@ -13769,7 +13769,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the route table.
          */
-    var RouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    var RouteTableId: js.UndefOr[String] = js.undefined
     /**
          * The routes in the route table.
          */
@@ -13781,7 +13781,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13789,19 +13789,19 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether this is the main route table.
          */
-    var Main: js.UndefOr[scala.Boolean] = js.undefined
+    var Main: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the association between a route table and a subnet.
          */
-    var RouteTableAssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var RouteTableAssociationId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the route table.
          */
-    var RouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    var RouteTableId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the subnet. A subnet ID is not returned for an implicit association.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13809,7 +13809,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether detailed monitoring is enabled. Otherwise, basic monitoring is enabled.
          */
-    var Enabled: scala.Boolean
+    var Enabled: Boolean
   }
   
   
@@ -13817,7 +13817,7 @@ object EC2Ns extends js.Object {
     /**
          * Reserved.
          */
-    var AdditionalInfo: js.UndefOr[java.lang.String] = js.undefined
+    var AdditionalInfo: js.UndefOr[String] = js.undefined
     /**
          * One or more block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
          */
@@ -13829,7 +13829,7 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraints: Maximum 64 ASCII characters
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * The CPU options for the instance. For more information, see Optimizing CPU Options in the Amazon Elastic Compute Cloud User Guide.
          */
@@ -13841,15 +13841,15 @@ object EC2Ns extends js.Object {
     /**
          * If you set this parameter to true, you can't terminate the instance using the Amazon EC2 console, CLI, or API; otherwise, you can. To change this attribute to false after launch, use ModifyInstanceAttribute. Alternatively, if you set InstanceInitiatedShutdownBehavior to terminate, you can terminate the instance by running the shutdown command from the instance. Default: false 
          */
-    var DisableApiTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DisableApiTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the instance is optimized for Amazon EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal Amazon EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS-optimized instance. Default: false 
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * An elastic GPU to associate with the instance.
          */
@@ -13869,7 +13869,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AMI, which you can get by calling DescribeImages. An AMI is required to launch an instance and must be specified here or in a launch template.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether an instance stops or terminates when you initiate shutdown from the instance (using the operating system command for system shutdown). Default: stop 
          */
@@ -13893,11 +13893,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the kernel.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see  PV-GRUB in the Amazon Elastic Compute Cloud User Guide. 
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair. You can create a key pair using CreateKeyPair or ImportKeyPair.  If you do not specify a key pair, you can't connect to the instance unless you choose an AMI that is configured to allow users another way to log in. 
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
     /**
          * The launch template to use to launch the instances. Any parameters that you specify in RunInstances override the same parameters in the launch template. You can specify either the name or ID of a launch template, but not both.
          */
@@ -13929,11 +13929,11 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The primary IPv4 address. You must specify a value from the IPv4 address range of the subnet. Only one private IP address can be designated as primary. You can't specify this option if you've specified the option to designate a private IP address as the primary IP address in a network interface specification. You cannot specify this option if you're launching more than one instance in the request.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The ID of the RAM disk.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see  PV-GRUB in the Amazon Elastic Compute Cloud User Guide. 
          */
-    var RamdiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamdiskId: js.UndefOr[String] = js.undefined
     /**
          * One or more security group IDs. You can create a security group using CreateSecurityGroup. Default: Amazon EC2 uses the default security group.
          */
@@ -13945,7 +13945,7 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The ID of the subnet to launch the instance into.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The tags to apply to the resources during launch. You can only tag instances and volumes on launch. The specified tags are applied to all instances or volumes that are created during launch. To tag a resource after it has been created, see CreateTags.
          */
@@ -13953,7 +13953,7 @@ object EC2Ns extends js.Object {
     /**
          * The user data to make available to the instance. For more information, see Running Commands on Your Linux Instance at Launch (Linux) and Adding User Data (Windows). If you are using a command line tool, base64-encoding is performed for you, and you can load the text from a file. Otherwise, you must provide base64-encoded text.
          */
-    var UserData: js.UndefOr[java.lang.String] = js.undefined
+    var UserData: js.UndefOr[String] = js.undefined
   }
   
   
@@ -13961,11 +13961,11 @@ object EC2Ns extends js.Object {
     /**
          * Unique, case-sensitive identifier that ensures the idempotency of the request. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of instances. Default: 1
          */
@@ -13977,7 +13977,7 @@ object EC2Ns extends js.Object {
     /**
          * The Scheduled Instance ID.
          */
-    var ScheduledInstanceId: java.lang.String
+    var ScheduledInstanceId: String
   }
   
   
@@ -13993,15 +13993,15 @@ object EC2Ns extends js.Object {
     /**
          * The access key ID of the owner of the bucket. Before you specify a value for your access key ID, review and follow the guidance in Best Practices for Managing AWS Access Keys.
          */
-    var AWSAccessKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var AWSAccessKeyId: js.UndefOr[String] = js.undefined
     /**
          * The bucket in which to store the AMI. You can specify a bucket that you already own or a new bucket that Amazon EC2 creates on your behalf. If you specify a bucket that belongs to someone else, Amazon EC2 returns an error.
          */
-    var Bucket: js.UndefOr[java.lang.String] = js.undefined
+    var Bucket: js.UndefOr[String] = js.undefined
     /**
          * The beginning of the file name of the AMI.
          */
-    var Prefix: js.UndefOr[java.lang.String] = js.undefined
+    var Prefix: js.UndefOr[String] = js.undefined
     /**
          * An Amazon S3 upload policy that gives Amazon EC2 permission to upload items into Amazon S3 on your behalf.
          */
@@ -14009,7 +14009,7 @@ object EC2Ns extends js.Object {
     /**
          * The signature of the JSON document.
          */
-    var UploadPolicySignature: js.UndefOr[java.lang.String] = js.undefined
+    var UploadPolicySignature: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14017,7 +14017,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The date when the Scheduled Instance was purchased.
          */
@@ -14025,7 +14025,7 @@ object EC2Ns extends js.Object {
     /**
          * The hourly price for a single instance.
          */
-    var HourlyPrice: js.UndefOr[java.lang.String] = js.undefined
+    var HourlyPrice: js.UndefOr[String] = js.undefined
     /**
          * The number of instances.
          */
@@ -14033,11 +14033,11 @@ object EC2Ns extends js.Object {
     /**
          * The instance type.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The network platform (EC2-Classic or EC2-VPC).
          */
-    var NetworkPlatform: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkPlatform: js.UndefOr[String] = js.undefined
     /**
          * The time for the next schedule to start.
          */
@@ -14045,7 +14045,7 @@ object EC2Ns extends js.Object {
     /**
          * The platform (Linux/UNIX or Windows).
          */
-    var Platform: js.UndefOr[java.lang.String] = js.undefined
+    var Platform: js.UndefOr[String] = js.undefined
     /**
          * The time that the previous schedule ended or will end.
          */
@@ -14057,7 +14057,7 @@ object EC2Ns extends js.Object {
     /**
          * The Scheduled Instance ID.
          */
-    var ScheduledInstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var ScheduledInstanceId: js.UndefOr[String] = js.undefined
     /**
          * The number of hours in the schedule.
          */
@@ -14081,7 +14081,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The number of available instances.
          */
@@ -14093,11 +14093,11 @@ object EC2Ns extends js.Object {
     /**
          * The hourly price for a single instance.
          */
-    var HourlyPrice: js.UndefOr[java.lang.String] = js.undefined
+    var HourlyPrice: js.UndefOr[String] = js.undefined
     /**
          * The instance type. You can specify one of the C3, C4, M4, or R3 instance types.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The maximum term. The only possible value is 365 days.
          */
@@ -14109,15 +14109,15 @@ object EC2Ns extends js.Object {
     /**
          * The network platform (EC2-Classic or EC2-VPC).
          */
-    var NetworkPlatform: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkPlatform: js.UndefOr[String] = js.undefined
     /**
          * The platform (Linux/UNIX or Windows).
          */
-    var Platform: js.UndefOr[java.lang.String] = js.undefined
+    var Platform: js.UndefOr[String] = js.undefined
     /**
          * The purchase token. This token expires in two hours.
          */
-    var PurchaseToken: js.UndefOr[java.lang.String] = js.undefined
+    var PurchaseToken: js.UndefOr[String] = js.undefined
     /**
          * The schedule recurrence.
          */
@@ -14137,7 +14137,7 @@ object EC2Ns extends js.Object {
     /**
          * The frequency (Daily, Weekly, or Monthly).
          */
-    var Frequency: js.UndefOr[java.lang.String] = js.undefined
+    var Frequency: js.UndefOr[String] = js.undefined
     /**
          * The interval quantity. The interval unit depends on the value of frequency. For example, every 2 weeks or every 2 months.
          */
@@ -14149,11 +14149,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the occurrence is relative to the end of the specified week or month.
          */
-    var OccurrenceRelativeToEnd: js.UndefOr[scala.Boolean] = js.undefined
+    var OccurrenceRelativeToEnd: js.UndefOr[Boolean] = js.undefined
     /**
          * The unit for occurrenceDaySet (DayOfWeek or DayOfMonth).
          */
-    var OccurrenceUnit: js.UndefOr[java.lang.String] = js.undefined
+    var OccurrenceUnit: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14161,7 +14161,7 @@ object EC2Ns extends js.Object {
     /**
          * The frequency (Daily, Weekly, or Monthly).
          */
-    var Frequency: js.UndefOr[java.lang.String] = js.undefined
+    var Frequency: js.UndefOr[String] = js.undefined
     /**
          * The interval quantity. The interval unit depends on the value of Frequency. For example, every 2 weeks or every 2 months.
          */
@@ -14173,11 +14173,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the occurrence is relative to the end of the specified week or month. You can't specify this value with a daily schedule.
          */
-    var OccurrenceRelativeToEnd: js.UndefOr[scala.Boolean] = js.undefined
+    var OccurrenceRelativeToEnd: js.UndefOr[Boolean] = js.undefined
     /**
          * The unit for OccurrenceDays (DayOfWeek or DayOfMonth). This value is required for a monthly schedule. You can't specify DayOfWeek with a weekly schedule. You can't specify this value with a daily schedule.
          */
-    var OccurrenceUnit: js.UndefOr[java.lang.String] = js.undefined
+    var OccurrenceUnit: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14185,7 +14185,7 @@ object EC2Ns extends js.Object {
     /**
          * The device name (for example, /dev/sdh or xvdh).
          */
-    var DeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceName: js.UndefOr[String] = js.undefined
     /**
          * Parameters used to set up EBS volumes automatically when the instance is launched.
          */
@@ -14193,11 +14193,11 @@ object EC2Ns extends js.Object {
     /**
          * Suppresses the specified device included in the block device mapping of the AMI.
          */
-    var NoDevice: js.UndefOr[java.lang.String] = js.undefined
+    var NoDevice: js.UndefOr[String] = js.undefined
     /**
          * The virtual device name (ephemeralN). Instance store volumes are numbered starting from 0. An instance type with two available instance store volumes can specify mappings for ephemeral0 and ephemeral1. The number of available instance store volumes depends on the instance type. After you connect to the instance, you must mount the volume. Constraints: For M3 instances, you must specify instance store volumes in the block device mapping for the instance. When you launch an M3 instance, we ignore any instance store volumes specified in the block device mapping for the AMI.
          */
-    var VirtualName: js.UndefOr[java.lang.String] = js.undefined
+    var VirtualName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14205,11 +14205,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the volume is deleted on instance termination.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the volume is encrypted. You can attached encrypted volumes only to instances that support them.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of I/O operations per second (IOPS) that the volume supports. For io1 volumes, this represents the number of IOPS that are provisioned for the volume. For gp2 volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about gp2 baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraint: Range is 100-20000 IOPS for io1 volumes and 100-10000 IOPS for gp2 volumes. Condition: This parameter is required for requests to create io1volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
          */
@@ -14217,7 +14217,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the snapshot.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * The size of the volume, in GiB. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
          */
@@ -14225,7 +14225,7 @@ object EC2Ns extends js.Object {
     /**
          * The volume type. gp2 for General Purpose SSD, io1 for Provisioned IOPS SSD, Throughput Optimized HDD for st1, Cold HDD for sc1, or standard for Magnetic. Default: standard 
          */
-    var VolumeType: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14233,11 +14233,11 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN).
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14257,7 +14257,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the instances are optimized for EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS-optimized instance. Default: false 
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The IAM instance profile.
          */
@@ -14265,19 +14265,19 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Amazon Machine Image (AMI).
          */
-    var ImageId: java.lang.String
+    var ImageId: String
     /**
          * The instance type.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The ID of the kernel.
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair.
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
     /**
          * Enable or disable monitoring for the instances.
          */
@@ -14293,7 +14293,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the RAM disk.
          */
-    var RamdiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamdiskId: js.UndefOr[String] = js.undefined
     /**
          * The IDs of one or more security groups.
          */
@@ -14301,11 +14301,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet in which to launch the instances.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The base64-encoded MIME user data.
          */
-    var UserData: js.UndefOr[java.lang.String] = js.undefined
+    var UserData: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14313,7 +14313,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether monitoring is enabled.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -14321,15 +14321,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether to assign a public IPv4 address to instances launched in a VPC. The public IPv4 address can only be assigned to a network interface for eth0, and can only be assigned to a new network interface, not an existing one. You cannot specify more than one network interface in the request. If launching into a default subnet, the default value is true.
          */
-    var AssociatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined
+    var AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether to delete the interface when the instance is terminated.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * The description.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The index of the device for the network interface attachment.
          */
@@ -14349,11 +14349,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The IPv4 address of the network interface within the subnet.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The private IPv4 addresses.
          */
@@ -14365,7 +14365,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the subnet.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14373,11 +14373,11 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The name of the placement group.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14385,11 +14385,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether this is a primary IPv4 address. Otherwise, this is a secondary IPv4 address.
          */
-    var Primary: js.UndefOr[scala.Boolean] = js.undefined
+    var Primary: js.UndefOr[Boolean] = js.undefined
     /**
          * The IPv4 address.
          */
-    var PrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIpAddress: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14397,7 +14397,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more filters. The possible values are:    transit-gateway-route-destination-cidr-block - The CIDR range.    transit-gateway-route-state - The state of the route (active | blackhole).    transit-gateway-route-transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-route-type - The route type (static | propagated).    transit-gateway-route-vpn-connection-id - The ID of the VPN connection.  
          */
@@ -14409,7 +14409,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: java.lang.String
+    var TransitGatewayRouteTableId: String
   }
   
   
@@ -14417,7 +14417,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether there are additional routes available.
          */
-    var AdditionalRoutesAvailable: js.UndefOr[scala.Boolean] = js.undefined
+    var AdditionalRoutesAvailable: js.UndefOr[Boolean] = js.undefined
     /**
          * Information about the routes.
          */
@@ -14429,15 +14429,15 @@ object EC2Ns extends js.Object {
     /**
          * A description of the security group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the security group.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * The name of the security group.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * One or more inbound rules associated with the security group.
          */
@@ -14449,7 +14449,7 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID of the owner of the security group.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the security group.
          */
@@ -14457,7 +14457,7 @@ object EC2Ns extends js.Object {
     /**
          * [EC2-VPC] The ID of the VPC for the security group.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14465,11 +14465,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the security group.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * The name of the security group.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14477,15 +14477,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of your security group.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC with the referencing security group.
          */
-    var ReferencingVpcId: js.UndefOr[java.lang.String] = js.undefined
+    var ReferencingVpcId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC peering connection.
          */
-    var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcPeeringConnectionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -14493,7 +14493,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether requests from other AWS accounts to create an endpoint to the service must first be accepted.
          */
-    var AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined
+    var AcceptanceRequired: js.UndefOr[Boolean] = js.undefined
     /**
          * In the Availability Zones in which the service is available.
          */
@@ -14509,15 +14509,15 @@ object EC2Ns extends js.Object {
     /**
          * The private DNS name for the service.
          */
-    var PrivateDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateDnsName: js.UndefOr[String] = js.undefined
     /**
          * The ID of the service.
          */
-    var ServiceId: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceId: js.UndefOr[String] = js.undefined
     /**
          * The name of the service.
          */
-    var ServiceName: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceName: js.UndefOr[String] = js.undefined
     /**
          * The service state.
          */
@@ -14533,7 +14533,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether VPC endpoint connection requests to the service must be accepted by the service owner.
          */
-    var AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined
+    var AcceptanceRequired: js.UndefOr[Boolean] = js.undefined
     /**
          * The Availability Zones in which the service is available.
          */
@@ -14545,15 +14545,15 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID of the service owner.
          */
-    var Owner: js.UndefOr[java.lang.String] = js.undefined
+    var Owner: js.UndefOr[String] = js.undefined
     /**
          * The private DNS name for the service.
          */
-    var PrivateDnsName: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateDnsName: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the service.
          */
-    var ServiceName: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceName: js.UndefOr[String] = js.undefined
     /**
          * The type of service.
          */
@@ -14561,7 +14561,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the service supports endpoint policies.
          */
-    var VpcEndpointPolicySupported: js.UndefOr[scala.Boolean] = js.undefined
+    var VpcEndpointPolicySupported: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -14601,35 +14601,35 @@ object EC2Ns extends js.Object {
     /**
          * The data encryption key identifier for the snapshot. This value is a unique identifier that corresponds to the data encryption key that was used to encrypt the original volume or snapshot copy. Because data encryption keys are inherited by volumes created from snapshots, and vice versa, if snapshots share the same data encryption key identifier, then they belong to the same volume/snapshot lineage. This parameter is only returned by the DescribeSnapshots API operation.
          */
-    var DataEncryptionKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var DataEncryptionKeyId: js.UndefOr[String] = js.undefined
     /**
          * The description for the snapshot.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether the snapshot is encrypted.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The full ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the parent volume.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          *  Value from an Amazon-maintained list (amazon | aws-marketplace | microsoft) of snapshot owners. Not to be confused with the user-configured AWS account alias, which is set from the IAM console. 
          */
-    var OwnerAlias: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerAlias: js.UndefOr[String] = js.undefined
     /**
          * The AWS account ID of the EBS snapshot owner.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The progress of the snapshot, as a percentage.
          */
-    var Progress: js.UndefOr[java.lang.String] = js.undefined
+    var Progress: js.UndefOr[String] = js.undefined
     /**
          * The ID of the snapshot. Each snapshot receives a unique identifier when it is created.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * The time stamp when the snapshot was initiated.
          */
@@ -14641,7 +14641,7 @@ object EC2Ns extends js.Object {
     /**
          * Encrypted Amazon EBS snapshots are copied asynchronously. If a snapshot copy operation fails (for example, if the proper AWS Key Management Service (AWS KMS) permissions are not obtained) this field displays error state details to help you diagnose why the error occurred. This parameter is only returned by the DescribeSnapshots API operation.
          */
-    var StateMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StateMessage: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the snapshot.
          */
@@ -14649,7 +14649,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the volume that was used to create the snapshot. Snapshots created by the CopySnapshot action have an arbitrary volume ID that should not be used for any purpose.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
     /**
          * The size of the volume, in GiB.
          */
@@ -14661,11 +14661,11 @@ object EC2Ns extends js.Object {
     /**
          * A description for the snapshot.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The block device mapping for the snapshot.
          */
-    var DeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceName: js.UndefOr[String] = js.undefined
     /**
          * The size of the disk in the snapshot, in GiB.
          */
@@ -14673,27 +14673,27 @@ object EC2Ns extends js.Object {
     /**
          * The format of the disk image from which the snapshot is created.
          */
-    var Format: js.UndefOr[java.lang.String] = js.undefined
+    var Format: js.UndefOr[String] = js.undefined
     /**
          * The percentage of progress for the task.
          */
-    var Progress: js.UndefOr[java.lang.String] = js.undefined
+    var Progress: js.UndefOr[String] = js.undefined
     /**
          * The snapshot ID of the disk being imported.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * A brief status of the snapshot creation.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * A detailed status message for the snapshot creation.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
     /**
          * The URL used to access the disk image.
          */
-    var Url: js.UndefOr[java.lang.String] = js.undefined
+    var Url: js.UndefOr[String] = js.undefined
     /**
          * The S3 bucket for the disk image.
          */
@@ -14705,15 +14705,15 @@ object EC2Ns extends js.Object {
     /**
          * The description of the disk image being imported.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The format of the disk image being imported. Valid values: VHD | VMDK | OVA 
          */
-    var Format: js.UndefOr[java.lang.String] = js.undefined
+    var Format: js.UndefOr[String] = js.undefined
     /**
          * The URL to the Amazon S3-based disk image being imported. It can either be a https URL (https://..) or an Amazon S3 URL (s3://..).
          */
-    var Url: js.UndefOr[java.lang.String] = js.undefined
+    var Url: js.UndefOr[String] = js.undefined
     /**
          * The S3 bucket for the disk image.
          */
@@ -14725,7 +14725,7 @@ object EC2Ns extends js.Object {
     /**
          * The description of the snapshot.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The size of the disk in the snapshot, in GiB.
          */
@@ -14733,35 +14733,35 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the snapshot is encrypted.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The format of the disk image from which the snapshot is created.
          */
-    var Format: js.UndefOr[java.lang.String] = js.undefined
+    var Format: js.UndefOr[String] = js.undefined
     /**
          * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted snapshot.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The percentage of completion for the import snapshot task.
          */
-    var Progress: js.UndefOr[java.lang.String] = js.undefined
+    var Progress: js.UndefOr[String] = js.undefined
     /**
          * The snapshot ID of the disk being imported.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * A brief status for the import snapshot task.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * A detailed status message for the import snapshot task.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
     /**
          * The URL of the disk image from which the snapshot is created.
          */
-    var Url: js.UndefOr[java.lang.String] = js.undefined
+    var Url: js.UndefOr[String] = js.undefined
     /**
          * The S3 bucket for the disk image.
          */
@@ -14773,7 +14773,7 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon S3 bucket where the Spot Instance data feed is located.
          */
-    var Bucket: js.UndefOr[java.lang.String] = js.undefined
+    var Bucket: js.UndefOr[String] = js.undefined
     /**
          * The fault codes for the Spot Instance request, if any.
          */
@@ -14781,11 +14781,11 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID of the account.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The prefix that is prepended to data feed files.
          */
-    var Prefix: js.UndefOr[java.lang.String] = js.undefined
+    var Prefix: js.UndefOr[String] = js.undefined
     /**
          * The state of the Spot Instance data feed subscription.
          */
@@ -14797,7 +14797,7 @@ object EC2Ns extends js.Object {
     /**
          * Deprecated.
          */
-    var AddressingType: js.UndefOr[java.lang.String] = js.undefined
+    var AddressingType: js.UndefOr[String] = js.undefined
     /**
          * One or more block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
          */
@@ -14805,7 +14805,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the instances are optimized for EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance. Default: false 
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The IAM instance profile.
          */
@@ -14813,7 +14813,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AMI.
          */
-    var ImageId: js.UndefOr[java.lang.String] = js.undefined
+    var ImageId: js.UndefOr[String] = js.undefined
     /**
          * The instance type.
          */
@@ -14821,11 +14821,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the kernel.
          */
-    var KernelId: js.UndefOr[java.lang.String] = js.undefined
+    var KernelId: js.UndefOr[String] = js.undefined
     /**
          * The name of the key pair.
          */
-    var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    var KeyName: js.UndefOr[String] = js.undefined
     /**
          * Enable or disable monitoring for the instances.
          */
@@ -14841,7 +14841,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the RAM disk.
          */
-    var RamdiskId: js.UndefOr[java.lang.String] = js.undefined
+    var RamdiskId: js.UndefOr[String] = js.undefined
     /**
          * One or more security groups. When requesting instances in a VPC, you must specify the IDs of the security groups. When requesting instances in EC2-Classic, you can specify the names or the IDs of the security groups.
          */
@@ -14849,11 +14849,11 @@ object EC2Ns extends js.Object {
     /**
          * The maximum price per unit hour that you are willing to pay for a Spot Instance. If this value is not specified, the default is the Spot price specified for the fleet. To determine the Spot price per unit hour, divide the Spot price by the value of WeightedCapacity.
          */
-    var SpotPrice: js.UndefOr[java.lang.String] = js.undefined
+    var SpotPrice: js.UndefOr[String] = js.undefined
     /**
          * The ID of the subnet in which to launch the instances. To specify multiple subnets, separate them using commas; for example, "subnet-a61dafcf, subnet-65ea5f08".
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The tags to apply during creation.
          */
@@ -14861,7 +14861,7 @@ object EC2Ns extends js.Object {
     /**
          * The Base64-encoded user data to make available to the instances.
          */
-    var UserData: js.UndefOr[java.lang.String] = js.undefined
+    var UserData: js.UndefOr[String] = js.undefined
     /**
          * The number of units provided by the specified instance type. These are the same units that you chose to set the target capacity in terms (instances or a performance characteristic such as vCPUs, memory, or I/O). If the target capacity divided by this value is not a whole number, we round the number of instances to the next whole number. If this value is not specified, the default is 1.
          */
@@ -14873,7 +14873,7 @@ object EC2Ns extends js.Object {
     /**
          * Enables monitoring for the instance. Default: false 
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -14893,7 +14893,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Fleet request.
          */
-    var SpotFleetRequestId: java.lang.String
+    var SpotFleetRequestId: String
     /**
          * The state of the Spot Fleet request.
          */
@@ -14909,7 +14909,7 @@ object EC2Ns extends js.Object {
     /**
          * A unique, case-sensitive identifier that you provide to ensure the idempotency of your listings. This helps to avoid duplicate listings. For more information, see Ensuring Idempotency.
          */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientToken: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether running Spot Instances should be terminated if the target capacity of the Spot Fleet request is decreased below the current size of the Spot Fleet.
          */
@@ -14921,7 +14921,7 @@ object EC2Ns extends js.Object {
     /**
          * Grants the Spot Fleet permission to terminate Spot Instances on your behalf when you cancel its Spot Fleet request using CancelSpotFleetRequests or when the Spot Fleet request expires, if you set terminateInstancesWithExpiration.
          */
-    var IamFleetRole: java.lang.String
+    var IamFleetRole: String
     /**
          * The behavior when a Spot Instance is interrupted. The default is terminate.
          */
@@ -14957,11 +14957,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether Spot Fleet should replace unhealthy instances.
          */
-    var ReplaceUnhealthyInstances: js.UndefOr[scala.Boolean] = js.undefined
+    var ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum price per unit hour that you are willing to pay for a Spot Instance. The default is the On-Demand price.
          */
-    var SpotPrice: js.UndefOr[java.lang.String] = js.undefined
+    var SpotPrice: js.UndefOr[String] = js.undefined
     /**
          * The number of units to request. You can choose to set the target capacity in terms of instances or a performance characteristic that is important to your application workload, such as vCPUs, memory, or I/O. If the request type is maintain, you can specify a target capacity of 0 and add capacity later.
          */
@@ -14969,7 +14969,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether running Spot Instances should be terminated when the Spot Fleet request expires.
          */
-    var TerminateInstancesWithExpiration: js.UndefOr[scala.Boolean] = js.undefined
+    var TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined
     /**
          * The type of request. Indicates whether the Spot Fleet only requests the target capacity or also attempts to maintain it. When this value is request, the Spot Fleet only places the required requests. It does not attempt to replenish Spot Instances if capacity is diminished, nor does it submit requests in alternative Spot pools if capacity is not available. To maintain a certain target capacity, the Spot Fleet places the required requests to meet capacity and automatically replenishes any interrupted instances. Default: maintain.
          */
@@ -15001,11 +15001,11 @@ object EC2Ns extends js.Object {
     /**
          * If you specified a duration and your Spot Instance request was fulfilled, this is the fixed hourly price in effect for the Spot Instance while it runs.
          */
-    var ActualBlockHourlyPrice: js.UndefOr[java.lang.String] = js.undefined
+    var ActualBlockHourlyPrice: js.UndefOr[String] = js.undefined
     /**
          * The Availability Zone group. If you specify the same Availability Zone group for all Spot Instance requests, all Spot Instances are launched in the same Availability Zone.
          */
-    var AvailabilityZoneGroup: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZoneGroup: js.UndefOr[String] = js.undefined
     /**
          * The duration for the Spot Instance, in minutes.
          */
@@ -15021,7 +15021,7 @@ object EC2Ns extends js.Object {
     /**
          * The instance ID, if an instance has been launched to fulfill the Spot Instance request.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The behavior when a Spot Instance is interrupted.
          */
@@ -15029,7 +15029,7 @@ object EC2Ns extends js.Object {
     /**
          * The instance launch group. Launch groups are Spot Instances that launch together and terminate together.
          */
-    var LaunchGroup: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchGroup: js.UndefOr[String] = js.undefined
     /**
          * Additional information for launching instances.
          */
@@ -15037,7 +15037,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone in which the request is launched.
          */
-    var LaunchedAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var LaunchedAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The product description associated with the Spot Instance.
          */
@@ -15045,11 +15045,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Spot Instance request.
          */
-    var SpotInstanceRequestId: js.UndefOr[java.lang.String] = js.undefined
+    var SpotInstanceRequestId: js.UndefOr[String] = js.undefined
     /**
          * The maximum price per hour that you are willing to pay for a Spot Instance.
          */
-    var SpotPrice: js.UndefOr[java.lang.String] = js.undefined
+    var SpotPrice: js.UndefOr[String] = js.undefined
     /**
          * The state of the Spot Instance request. Spot status information helps track your Spot Instance requests. For more information, see Spot Status in the Amazon EC2 User Guide for Linux Instances.
          */
@@ -15081,11 +15081,11 @@ object EC2Ns extends js.Object {
     /**
          * The reason code for the Spot Instance state change.
          */
-    var Code: js.UndefOr[java.lang.String] = js.undefined
+    var Code: js.UndefOr[String] = js.undefined
     /**
          * The message for the Spot Instance state change.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15093,11 +15093,11 @@ object EC2Ns extends js.Object {
     /**
          * The status code. For a list of status codes, see Spot Status Codes in the Amazon EC2 User Guide for Linux Instances.
          */
-    var Code: js.UndefOr[java.lang.String] = js.undefined
+    var Code: js.UndefOr[String] = js.undefined
     /**
          * The description for the status code.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * The date and time of the most recent status update, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
          */
@@ -15117,7 +15117,7 @@ object EC2Ns extends js.Object {
     /**
          * The maximum hourly price you're willing to pay for the Spot Instances. The default is the On-Demand price.
          */
-    var MaxPrice: js.UndefOr[java.lang.String] = js.undefined
+    var MaxPrice: js.UndefOr[String] = js.undefined
     /**
          * The Spot Instance request type. For RunInstances, persistent Spot Instance requests are only supported when InstanceInterruptionBehavior is set to either hibernate or stop.
          */
@@ -15149,7 +15149,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates that the fleet uses a single instance type to launch all Spot Instances in the fleet.
          */
-    var SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
+    var SingleInstanceType: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -15173,7 +15173,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates that the fleet uses a single instance type to launch all Spot Instances in the fleet.
          */
-    var SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
+    var SingleInstanceType: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -15181,11 +15181,11 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone. [Spot Fleet only] To specify multiple Availability Zones, separate them using commas; for example, "us-west-2a, us-west-2b".
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The name of the placement group.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. The host tenancy is not supported for Spot Instances.
          */
@@ -15197,7 +15197,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The instance type.
          */
@@ -15209,7 +15209,7 @@ object EC2Ns extends js.Object {
     /**
          * The maximum price per hour that you are willing to pay for a Spot Instance.
          */
-    var SpotPrice: js.UndefOr[java.lang.String] = js.undefined
+    var SpotPrice: js.UndefOr[String] = js.undefined
     /**
          * The date and time the request was created, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
          */
@@ -15225,7 +15225,7 @@ object EC2Ns extends js.Object {
     /**
          * The IP protocol name (for tcp, udp, and icmp) or number (see Protocol Numbers).
          */
-    var IpProtocol: js.UndefOr[java.lang.String] = js.undefined
+    var IpProtocol: js.UndefOr[String] = js.undefined
     /**
          * One or more IP ranges. Not applicable for stale security group rules.
          */
@@ -15249,15 +15249,15 @@ object EC2Ns extends js.Object {
     /**
          * The description of the security group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the security group.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * The name of the security group.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * Information about the stale inbound rules in the security group.
          */
@@ -15269,7 +15269,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC for the security group.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15277,11 +15277,11 @@ object EC2Ns extends js.Object {
     /**
          * Reserved.
          */
-    var AdditionalInfo: js.UndefOr[java.lang.String] = js.undefined
+    var AdditionalInfo: js.UndefOr[String] = js.undefined
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more instance IDs.
          */
@@ -15301,11 +15301,11 @@ object EC2Ns extends js.Object {
     /**
          * The reason code for the state change.
          */
-    var Code: js.UndefOr[java.lang.String] = js.undefined
+    var Code: js.UndefOr[String] = js.undefined
     /**
          * The message for the state change.    Server.InsufficientInstanceCapacity: There was insufficient capacity available to satisfy the launch request.    Server.InternalError: An internal error caused the instance to terminate during launch.    Server.ScheduledStop: The instance was stopped due to a scheduled retirement.    Server.SpotInstanceShutdown: The instance was stopped because the number of Spot requests with a maximum price equal to or higher than the Spot price exceeded available capacity or because of an increase in the Spot price.    Server.SpotInstanceTermination: The instance was terminated because the number of Spot requests with a maximum price equal to or higher than the Spot price exceeded available capacity or because of an increase in the Spot price.    Client.InstanceInitiatedShutdown: The instance was shut down using the shutdown -h command from the instance.    Client.InstanceTerminated: The instance was terminated or rebooted during AMI creation.    Client.InternalError: A client error caused the instance to terminate during launch.    Client.InvalidSnapshot.NotFound: The specified snapshot was not found.    Client.UserInitiatedHibernate: Hibernation was initiated on the instance.    Client.UserInitiatedShutdown: The instance was shut down using the Amazon EC2 API.    Client.VolumeLimitExceeded: The limit on the number of EBS volumes or total storage was exceeded. Decrease usage or request an increase in your account limits.  
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15313,15 +15313,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * Forces the instances to stop. The instances do not have an opportunity to flush file system caches or file system metadata. If you use this option, you must perform file system check and repair procedures. This option is not recommended for Windows instances. Default: false 
          */
-    var Force: js.UndefOr[scala.Boolean] = js.undefined
+    var Force: js.UndefOr[Boolean] = js.undefined
     /**
          * Hibernates the instance if the instance was enabled for hibernation at launch. If the instance cannot hibernate successfully, a normal shutdown occurs. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.  Default: false 
          */
-    var Hibernate: js.UndefOr[scala.Boolean] = js.undefined
+    var Hibernate: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more instance IDs.
          */
@@ -15349,11 +15349,11 @@ object EC2Ns extends js.Object {
     /**
          * The name of the S3 bucket.
          */
-    var Bucket: js.UndefOr[java.lang.String] = js.undefined
+    var Bucket: js.UndefOr[String] = js.undefined
     /**
          * The key.
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15361,15 +15361,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether a network interface created in this subnet (including a network interface created by RunInstances) receives an IPv6 address.
          */
-    var AssignIpv6AddressOnCreation: js.UndefOr[scala.Boolean] = js.undefined
+    var AssignIpv6AddressOnCreation: js.UndefOr[Boolean] = js.undefined
     /**
          * The Availability Zone of the subnet.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The AZ ID of the subnet.
          */
-    var AvailabilityZoneId: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZoneId: js.UndefOr[String] = js.undefined
     /**
          * The number of unused private IPv4 addresses in the subnet. The IPv4 addresses for any stopped instances are considered unavailable.
          */
@@ -15377,11 +15377,11 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 CIDR block assigned to the subnet.
          */
-    var CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether this is the default subnet for the Availability Zone.
          */
-    var DefaultForAz: js.UndefOr[scala.Boolean] = js.undefined
+    var DefaultForAz: js.UndefOr[Boolean] = js.undefined
     /**
          * Information about the IPv6 CIDR blocks associated with the subnet.
          */
@@ -15389,11 +15389,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether instances launched in this subnet receive a public IPv4 address.
          */
-    var MapPublicIpOnLaunch: js.UndefOr[scala.Boolean] = js.undefined
+    var MapPublicIpOnLaunch: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AWS account that owns the subnet.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The current state of the subnet.
          */
@@ -15401,11 +15401,11 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the subnet.
          */
-    var SubnetArn: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetArn: js.UndefOr[String] = js.undefined
     /**
          * The ID of the subnet.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * Any tags assigned to the subnet.
          */
@@ -15413,7 +15413,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC the subnet is in.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15425,7 +15425,7 @@ object EC2Ns extends js.Object {
     /**
          * A message about the status of the CIDR block, if applicable.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15433,11 +15433,11 @@ object EC2Ns extends js.Object {
     /**
          * The association ID for the CIDR block.
          */
-    var AssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationId: js.UndefOr[String] = js.undefined
     /**
          * The IPv6 CIDR block.
          */
-    var Ipv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Information about the state of the CIDR block.
          */
@@ -15449,7 +15449,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15457,11 +15457,11 @@ object EC2Ns extends js.Object {
     /**
          * The key of the tag. Constraints: Tag keys are case-sensitive and accept a maximum of 127 Unicode characters. May not begin with aws:.
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * The value of the tag. Constraints: Tag values are case-sensitive and accept a maximum of 255 Unicode characters.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15469,11 +15469,11 @@ object EC2Ns extends js.Object {
     /**
          * The tag key.
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * The ID of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * The resource type.
          */
@@ -15481,7 +15481,7 @@ object EC2Ns extends js.Object {
     /**
          * The tag value.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15545,7 +15545,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the Convertible Reserved Instance offering.
          */
-    var OfferingId: js.UndefOr[java.lang.String] = js.undefined
+    var OfferingId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15557,7 +15557,7 @@ object EC2Ns extends js.Object {
     /**
          * The Convertible Reserved Instance offering ID.
          */
-    var OfferingId: java.lang.String
+    var OfferingId: String
   }
   
   
@@ -15565,7 +15565,7 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the target group.
          */
-    var Arn: java.lang.String
+    var Arn: String
   }
   
   
@@ -15593,7 +15593,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more instance IDs. Constraints: Up to 1000 instance IDs. We recommend breaking up this request into smaller batches.
          */
@@ -15617,7 +15617,7 @@ object EC2Ns extends js.Object {
     /**
          * The description of the transit gateway.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The transit gateway options.
          */
@@ -15625,7 +15625,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the AWS account ID that owns the transit gateway.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The state of the transit gateway.
          */
@@ -15637,11 +15637,11 @@ object EC2Ns extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the transit gateway.
          */
-    var TransitGatewayArn: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayArn: js.UndefOr[String] = js.undefined
     /**
          * The ID of the transit gateway.
          */
-    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15649,7 +15649,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * The resource type.
          */
@@ -15661,11 +15661,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayRouteTableId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15681,11 +15681,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that owns the resource.
          */
-    var ResourceOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceOwnerId: js.UndefOr[String] = js.undefined
     /**
          * The resource type.
          */
@@ -15701,15 +15701,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the transit gateway.
          */
-    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that owns the transit gateway.
          */
-    var TransitGatewayOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayOwnerId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15721,7 +15721,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the route table for the transit gateway.
          */
-    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayRouteTableId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15733,7 +15733,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the propagation route table.
          */
-    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayRouteTableId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15745,7 +15745,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the default association route table.
          */
-    var AssociationDefaultRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationDefaultRouteTableId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether attachment requests are automatically accepted.
          */
@@ -15765,7 +15765,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the default propagation route table.
          */
-    var PropagationDefaultRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    var PropagationDefaultRouteTableId: js.UndefOr[String] = js.undefined
     /**
          * Indicates whether Equal Cost Multipath Protocol support is enabled.
          */
@@ -15777,7 +15777,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * The resource type.
          */
@@ -15789,11 +15789,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayRouteTableId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15829,7 +15829,7 @@ object EC2Ns extends js.Object {
     /**
          * The CIDR block used for destination matches.
          */
-    var DestinationCidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationCidrBlock: js.UndefOr[String] = js.undefined
     /**
          * The state of the route.
          */
@@ -15849,7 +15849,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * The resource type.
          */
@@ -15857,7 +15857,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15869,11 +15869,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether this is the default association route table for the transit gateway.
          */
-    var DefaultAssociationRouteTable: js.UndefOr[scala.Boolean] = js.undefined
+    var DefaultAssociationRouteTable: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether this is the default propagation route table for the transit gateway.
          */
-    var DefaultPropagationRouteTable: js.UndefOr[scala.Boolean] = js.undefined
+    var DefaultPropagationRouteTable: js.UndefOr[Boolean] = js.undefined
     /**
          * The state of the transit gateway route table.
          */
@@ -15885,11 +15885,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the transit gateway.
          */
-    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the transit gateway route table.
          */
-    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayRouteTableId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15897,7 +15897,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * The resource type.
          */
@@ -15909,7 +15909,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15917,7 +15917,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
     /**
          * The type of resource.
          */
@@ -15929,7 +15929,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -15957,19 +15957,19 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the attachment.
          */
-    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the transit gateway.
          */
-    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS account that owns the VPC.
          */
-    var VpcOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcOwnerId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25696,7 +25696,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
   }
   
   
@@ -25704,7 +25704,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: js.UndefOr[java.lang.String] = js.undefined
+    var NetworkInterfaceId: js.UndefOr[String] = js.undefined
     /**
          * The IPv6 addresses that have been unassigned from the network interface.
          */
@@ -25716,7 +25716,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the network interface.
          */
-    var NetworkInterfaceId: java.lang.String
+    var NetworkInterfaceId: String
     /**
          * The secondary private IP addresses to unassign from the network interface. You can specify this option multiple times to unassign more than one IP address.
          */
@@ -25728,7 +25728,7 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * One or more instance IDs.
          */
@@ -25752,7 +25752,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25764,7 +25764,7 @@ object EC2Ns extends js.Object {
     /**
          * The applicable error message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25776,7 +25776,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the resource.
          */
-    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25784,11 +25784,11 @@ object EC2Ns extends js.Object {
     /**
          * The error code.
          */
-    var Code: java.lang.String
+    var Code: String
     /**
          * The error message accompanying the error code.
          */
-    var Message: java.lang.String
+    var Message: String
   }
   
   
@@ -25796,15 +25796,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the security group. You must specify either the security group ID or the security group name in the request. For security groups in a nondefault VPC, you must specify the security group ID.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * [Default VPC] The name of the security group. You must specify either the security group ID or the security group name in the request.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * The IP permissions for the security group rule.
          */
@@ -25816,7 +25816,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -25824,15 +25824,15 @@ object EC2Ns extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the security group. You must specify either the security group ID or the security group name in the request. For security groups in a nondefault VPC, you must specify the security group ID.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * [EC2-Classic, default VPC] The name of the security group. You must specify either the security group ID or the security group name in the request.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * The IP permissions for the security group rule. 
          */
@@ -25844,7 +25844,7 @@ object EC2Ns extends js.Object {
     /**
          * Returns true if the request succeeds; otherwise, returns an error.
          */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
+    var Return: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -25852,11 +25852,11 @@ object EC2Ns extends js.Object {
     /**
          * The name of the S3 bucket where the disk image is located.
          */
-    var S3Bucket: js.UndefOr[java.lang.String] = js.undefined
+    var S3Bucket: js.UndefOr[String] = js.undefined
     /**
          * The file name of the disk image.
          */
-    var S3Key: js.UndefOr[java.lang.String] = js.undefined
+    var S3Key: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25864,11 +25864,11 @@ object EC2Ns extends js.Object {
     /**
          * The S3 bucket from which the disk image was created.
          */
-    var S3Bucket: js.UndefOr[java.lang.String] = js.undefined
+    var S3Bucket: js.UndefOr[String] = js.undefined
     /**
          * The file name of the disk image.
          */
-    var S3Key: js.UndefOr[java.lang.String] = js.undefined
+    var S3Key: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25876,7 +25876,7 @@ object EC2Ns extends js.Object {
     /**
          * The user data. If you are using an AWS SDK or command line tool, Base64-encoding is performed for you, and you can load the text from a file. Otherwise, you must provide Base64-encoded text.
          */
-    var Data: js.UndefOr[java.lang.String] = js.undefined
+    var Data: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25884,31 +25884,31 @@ object EC2Ns extends js.Object {
     /**
          * A description for the security group rule that references this user ID group pair. Constraints: Up to 255 characters in length. Allowed characters are a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=;{}!$*
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the security group.
          */
-    var GroupId: js.UndefOr[java.lang.String] = js.undefined
+    var GroupId: js.UndefOr[String] = js.undefined
     /**
          * The name of the security group. In a request, use this parameter for a security group in EC2-Classic or a default VPC only. For a security group in a nondefault VPC, use the security group ID.  For a referenced security group in another VPC, this value is not returned if the referenced security group is deleted.
          */
-    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+    var GroupName: js.UndefOr[String] = js.undefined
     /**
          * The status of a VPC peering connection, if applicable.
          */
-    var PeeringStatus: js.UndefOr[java.lang.String] = js.undefined
+    var PeeringStatus: js.UndefOr[String] = js.undefined
     /**
          * The ID of an AWS account. For a referenced security group in another VPC, the account ID of the referenced security group is returned in the response. If the referenced security group is deleted, this value is not returned. [EC2-Classic] Required when adding or removing rules that reference a security group in another AWS account.
          */
-    var UserId: js.UndefOr[java.lang.String] = js.undefined
+    var UserId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC for the referenced security group, if applicable.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC peering connection, if applicable.
          */
-    var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcPeeringConnectionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25924,7 +25924,7 @@ object EC2Ns extends js.Object {
     /**
          * The Internet-routable IP address of the virtual private gateway's outside interface.
          */
-    var OutsideIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var OutsideIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The status of the VPN tunnel.
          */
@@ -25932,7 +25932,7 @@ object EC2Ns extends js.Object {
     /**
          * If an error occurs, a description of the error.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25944,7 +25944,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone for the volume.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The time stamp when volume creation was initiated.
          */
@@ -25952,7 +25952,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the volume will be encrypted.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of I/O operations per second (IOPS) that the volume supports. For Provisioned IOPS SSD volumes, this represents the number of IOPS that are provisioned for the volume. For General Purpose SSD volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-10,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
          */
@@ -25960,7 +25960,7 @@ object EC2Ns extends js.Object {
     /**
          * The full ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the volume.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The size of the volume, in GiBs.
          */
@@ -25968,7 +25968,7 @@ object EC2Ns extends js.Object {
     /**
          * The snapshot from which the volume was created, if applicable.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * The volume state.
          */
@@ -25980,7 +25980,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the volume.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
     /**
          * The volume type. This can be gp2 for General Purpose SSD, io1 for Provisioned IOPS SSD, st1 for Throughput Optimized HDD, sc1 for Cold HDD, or standard for Magnetic volumes.
          */
@@ -25996,15 +25996,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the EBS volume is deleted on instance termination.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * The device name.
          */
-    var Device: js.UndefOr[java.lang.String] = js.undefined
+    var Device: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The attachment state of the volume.
          */
@@ -26012,7 +26012,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the volume.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26056,7 +26056,7 @@ object EC2Ns extends js.Object {
     /**
          * A status message about the modification progress or failure.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
     /**
          * The target IOPS rate of the volume.
          */
@@ -26072,7 +26072,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the volume.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26080,19 +26080,19 @@ object EC2Ns extends js.Object {
     /**
          * The code identifying the operation, for example, enable-volume-io.
          */
-    var Code: js.UndefOr[java.lang.String] = js.undefined
+    var Code: js.UndefOr[String] = js.undefined
     /**
          * A description of the operation.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of the event associated with this operation.
          */
-    var EventId: js.UndefOr[java.lang.String] = js.undefined
+    var EventId: js.UndefOr[String] = js.undefined
     /**
          * The event type associated with this operation.
          */
-    var EventType: js.UndefOr[java.lang.String] = js.undefined
+    var EventType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26104,7 +26104,7 @@ object EC2Ns extends js.Object {
     /**
          * The intended status of the volume status.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26112,15 +26112,15 @@ object EC2Ns extends js.Object {
     /**
          * A description of the event.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The ID of this event.
          */
-    var EventId: js.UndefOr[java.lang.String] = js.undefined
+    var EventId: js.UndefOr[String] = js.undefined
     /**
          * The type of this event.
          */
-    var EventType: js.UndefOr[java.lang.String] = js.undefined
+    var EventType: js.UndefOr[String] = js.undefined
     /**
          * The latest end time of the event.
          */
@@ -26152,7 +26152,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone of the volume.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * A list of events associated with the volume.
          */
@@ -26160,7 +26160,7 @@ object EC2Ns extends js.Object {
     /**
          * The volume ID.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
     /**
          * The volume status.
          */
@@ -26172,7 +26172,7 @@ object EC2Ns extends js.Object {
     /**
          * The primary IPv4 CIDR block for the VPC.
          */
-    var CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Information about the IPv4 CIDR blocks associated with the VPC.
          */
@@ -26180,7 +26180,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the set of DHCP options you've associated with the VPC (or default if the default options are associated with the VPC).
          */
-    var DhcpOptionsId: js.UndefOr[java.lang.String] = js.undefined
+    var DhcpOptionsId: js.UndefOr[String] = js.undefined
     /**
          * The allowed tenancy of instances launched into the VPC.
          */
@@ -26192,11 +26192,11 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the VPC is the default VPC.
          */
-    var IsDefault: js.UndefOr[scala.Boolean] = js.undefined
+    var IsDefault: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the AWS account that owns the VPC.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * The current state of the VPC.
          */
@@ -26208,7 +26208,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26220,7 +26220,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26228,11 +26228,11 @@ object EC2Ns extends js.Object {
     /**
          * The association ID for the IPv4 CIDR block.
          */
-    var AssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationId: js.UndefOr[String] = js.undefined
     /**
          * The IPv4 CIDR block.
          */
-    var CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Information about the state of the CIDR block.
          */
@@ -26248,7 +26248,7 @@ object EC2Ns extends js.Object {
     /**
          * A message about the status of the CIDR block, if applicable.
          */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StatusMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26256,7 +26256,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the VPC is enabled for ClassicLink.
          */
-    var ClassicLinkEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ClassicLinkEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Any tags assigned to the VPC.
          */
@@ -26264,7 +26264,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26288,11 +26288,11 @@ object EC2Ns extends js.Object {
     /**
          * The policy document associated with the endpoint, if applicable.
          */
-    var PolicyDocument: js.UndefOr[java.lang.String] = js.undefined
+    var PolicyDocument: js.UndefOr[String] = js.undefined
     /**
          * (Interface endpoint) Indicates whether the VPC is associated with a private hosted zone.
          */
-    var PrivateDnsEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * (Gateway endpoint) One or more route tables associated with the endpoint.
          */
@@ -26300,7 +26300,7 @@ object EC2Ns extends js.Object {
     /**
          * The name of the service to which the endpoint is associated.
          */
-    var ServiceName: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceName: js.UndefOr[String] = js.undefined
     /**
          * The state of the VPC endpoint.
          */
@@ -26312,7 +26312,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC endpoint.
          */
-    var VpcEndpointId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcEndpointId: js.UndefOr[String] = js.undefined
     /**
          * The type of endpoint.
          */
@@ -26320,7 +26320,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC to which the endpoint is associated.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26332,15 +26332,15 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the service to which the endpoint is connected.
          */
-    var ServiceId: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC endpoint.
          */
-    var VpcEndpointId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcEndpointId: js.UndefOr[String] = js.undefined
     /**
          * The AWS account ID of the owner of the VPC endpoint.
          */
-    var VpcEndpointOwner: js.UndefOr[java.lang.String] = js.undefined
+    var VpcEndpointOwner: js.UndefOr[String] = js.undefined
     /**
          * The state of the VPC endpoint.
          */
@@ -26352,11 +26352,11 @@ object EC2Ns extends js.Object {
     /**
          * The association ID for the IPv6 CIDR block.
          */
-    var AssociationId: js.UndefOr[java.lang.String] = js.undefined
+    var AssociationId: js.UndefOr[String] = js.undefined
     /**
          * The IPv6 CIDR block.
          */
-    var Ipv6CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var Ipv6CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Information about the state of the CIDR block.
          */
@@ -26388,7 +26388,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPC peering connection.
          */
-    var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcPeeringConnectionId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26396,15 +26396,15 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether a local VPC can resolve public DNS hostnames to private IP addresses when queried from instances in a peer VPC.
          */
-    var AllowDnsResolutionFromRemoteVpc: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowDnsResolutionFromRemoteVpc: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether a local ClassicLink connection can communicate with the peer VPC over the VPC peering connection.
          */
-    var AllowEgressFromLocalClassicLinkToRemoteVpc: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowEgressFromLocalClassicLinkToRemoteVpc: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether a local VPC can communicate with a ClassicLink connection in the peer VPC over the VPC peering connection.
          */
-    var AllowEgressFromLocalVpcToRemoteClassicLink: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowEgressFromLocalVpcToRemoteClassicLink: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -26416,7 +26416,7 @@ object EC2Ns extends js.Object {
     /**
          * A message that provides more information about the status, if applicable.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26424,7 +26424,7 @@ object EC2Ns extends js.Object {
     /**
          * The IPv4 CIDR block for the VPC.
          */
-    var CidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var CidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Information about the IPv4 CIDR blocks for the VPC.
          */
@@ -26436,7 +26436,7 @@ object EC2Ns extends js.Object {
     /**
          * The AWS account ID of the VPC owner.
          */
-    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    var OwnerId: js.UndefOr[String] = js.undefined
     /**
          * Information about the VPC peering connection options for the accepter or requester VPC.
          */
@@ -26444,11 +26444,11 @@ object EC2Ns extends js.Object {
     /**
          * The region in which the VPC is located.
          */
-    var Region: js.UndefOr[java.lang.String] = js.undefined
+    var Region: js.UndefOr[String] = js.undefined
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26456,15 +26456,15 @@ object EC2Ns extends js.Object {
     /**
          * The category of the VPN connection. A value of VPN indicates an AWS VPN connection. A value of VPN-Classic indicates an AWS Classic VPN connection. For more information, see AWS Managed VPN Categories in the Amazon Virtual Private Cloud User Guide.
          */
-    var Category: js.UndefOr[java.lang.String] = js.undefined
+    var Category: js.UndefOr[String] = js.undefined
     /**
          * The configuration information for the VPN connection's customer gateway (in the native XML format). This element is always present in the CreateVpnConnection response; however, it's present in the DescribeVpnConnections response only if the VPN connection is in the pending or available state.
          */
-    var CustomerGatewayConfiguration: js.UndefOr[java.lang.String] = js.undefined
+    var CustomerGatewayConfiguration: js.UndefOr[String] = js.undefined
     /**
          * The ID of the customer gateway at your end of the VPN connection.
          */
-    var CustomerGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var CustomerGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The VPN connection options.
          */
@@ -26484,7 +26484,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the transit gateway associated with the VPN connection.
          */
-    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var TransitGatewayId: js.UndefOr[String] = js.undefined
     /**
          * The type of VPN connection.
          */
@@ -26496,11 +26496,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the VPN connection.
          */
-    var VpnConnectionId: js.UndefOr[java.lang.String] = js.undefined
+    var VpnConnectionId: js.UndefOr[String] = js.undefined
     /**
          * The ID of the virtual private gateway at the AWS side of the VPN connection.
          */
-    var VpnGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var VpnGatewayId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26508,7 +26508,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicates whether the VPN connection uses static routes only. Static routes must be used for devices that don't support BGP.
          */
-    var StaticRoutesOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var StaticRoutesOnly: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -26516,7 +26516,7 @@ object EC2Ns extends js.Object {
     /**
          * Indicate whether the VPN connection uses static routes only. If you are creating a VPN connection for a device that does not support BGP, you must specify true. Use CreateVpnConnectionRoute to create a static route. Default: false 
          */
-    var StaticRoutesOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var StaticRoutesOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * The tunnel options for the VPN connection.
          */
@@ -26532,7 +26532,7 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone where the virtual private gateway was created, if applicable. This field may be empty or not returned.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The current state of the virtual private gateway.
          */
@@ -26552,7 +26552,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the virtual private gateway.
          */
-    var VpnGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    var VpnGatewayId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26560,7 +26560,7 @@ object EC2Ns extends js.Object {
     /**
          * The CIDR block associated with the local subnet of the customer data center.
          */
-    var DestinationCidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    var DestinationCidrBlock: js.UndefOr[String] = js.undefined
     /**
          * Indicates how the routes were provided.
          */
@@ -26576,11 +26576,11 @@ object EC2Ns extends js.Object {
     /**
          * The pre-shared key (PSK) to establish initial authentication between the virtual private gateway and customer gateway. Constraints: Allowed characters are alphanumeric characters and ._. Must be between 8 and 64 characters in length and cannot start with zero (0).
          */
-    var PreSharedKey: js.UndefOr[java.lang.String] = js.undefined
+    var PreSharedKey: js.UndefOr[String] = js.undefined
     /**
          * The range of inside IP addresses for the tunnel. Any specified CIDR blocks must be unique across all VPN connections that use the same virtual private gateway.  Constraints: A size /30 CIDR block from the 169.254.0.0/16 range. The following CIDR blocks are reserved and cannot be used:    169.254.0.0/30     169.254.1.0/30     169.254.2.0/30     169.254.3.0/30     169.254.4.0/30     169.254.5.0/30     169.254.169.252/30   
          */
-    var TunnelInsideCidr: js.UndefOr[java.lang.String] = js.undefined
+    var TunnelInsideCidr: js.UndefOr[String] = js.undefined
   }
   
   
@@ -26588,11 +26588,11 @@ object EC2Ns extends js.Object {
     /**
          * The public IPv4 address range, in CIDR notation.
          */
-    var Cidr: java.lang.String
+    var Cidr: String
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    var DryRun: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -26612,12 +26612,12 @@ object EC2Ns extends js.Object {
   type ActivityStatus = awsDashSdkLib.awsDashSdkLibStrings.error | awsDashSdkLib.awsDashSdkLibStrings.pending_fulfillment | awsDashSdkLib.awsDashSdkLibStrings.pending_termination | awsDashSdkLib.awsDashSdkLibStrings.fulfilled | java.lang.String
   type AddressList = js.Array[Address]
   type Affinity = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.host | java.lang.String
-  type AllocationIdList = js.Array[java.lang.String]
+  type AllocationIdList = js.Array[String]
   type AllocationState = awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.`under-assessment` | awsDashSdkLib.awsDashSdkLibStrings.`permanent-failure` | awsDashSdkLib.awsDashSdkLibStrings.released | awsDashSdkLib.awsDashSdkLibStrings.`released-permanent-failure` | java.lang.String
   type AllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.lowestPrice | awsDashSdkLib.awsDashSdkLibStrings.diversified | java.lang.String
   type AllowedPrincipalSet = js.Array[AllowedPrincipal]
   type ArchitectureValues = awsDashSdkLib.awsDashSdkLibStrings.i386 | awsDashSdkLib.awsDashSdkLibStrings.x86_64 | awsDashSdkLib.awsDashSdkLibStrings.arm64 | java.lang.String
-  type AssociationIdList = js.Array[java.lang.String]
+  type AssociationIdList = js.Array[String]
   type AttachmentStatus = awsDashSdkLib.awsDashSdkLibStrings.attaching | awsDashSdkLib.awsDashSdkLibStrings.attached | awsDashSdkLib.awsDashSdkLibStrings.detaching | awsDashSdkLib.awsDashSdkLibStrings.detached | java.lang.String
   type AutoAcceptSharedAttachmentsValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
   type AutoPlacement = awsDashSdkLib.awsDashSdkLibStrings.on | awsDashSdkLib.awsDashSdkLibStrings.off | java.lang.String
@@ -26626,11 +26626,11 @@ object EC2Ns extends js.Object {
   type AvailabilityZoneState = awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.information | awsDashSdkLib.awsDashSdkLibStrings.impaired | awsDashSdkLib.awsDashSdkLibStrings.unavailable | java.lang.String
   type AvailableInstanceCapacityList = js.Array[InstanceCapacity]
   type BatchState = awsDashSdkLib.awsDashSdkLibStrings.submitted | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.cancelled_running | awsDashSdkLib.awsDashSdkLibStrings.cancelled_terminating | awsDashSdkLib.awsDashSdkLibStrings.modifying | java.lang.String
-  type BillingProductList = js.Array[java.lang.String]
+  type BillingProductList = js.Array[String]
   type BlockDeviceMappingList = js.Array[BlockDeviceMapping]
   type BlockDeviceMappingRequestList = js.Array[BlockDeviceMapping]
   type Boolean = scala.Boolean
-  type BundleIdStringList = js.Array[java.lang.String]
+  type BundleIdStringList = js.Array[String]
   type BundleTaskList = js.Array[BundleTask]
   type BundleTaskState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.`waiting-for-shutdown` | awsDashSdkLib.awsDashSdkLibStrings.bundling | awsDashSdkLib.awsDashSdkLibStrings.storing | awsDashSdkLib.awsDashSdkLibStrings.cancelling | awsDashSdkLib.awsDashSdkLibStrings.complete | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
   type ByoipCidrSet = js.Array[ByoipCidr]
@@ -26640,7 +26640,7 @@ object EC2Ns extends js.Object {
   type CancelSpotFleetRequestsSuccessSet = js.Array[CancelSpotFleetRequestsSuccessItem]
   type CancelSpotInstanceRequestState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.closed | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
   type CancelledSpotInstanceRequestList = js.Array[CancelledSpotInstanceRequest]
-  type CapacityReservationIdSet = js.Array[java.lang.String]
+  type CapacityReservationIdSet = js.Array[String]
   type CapacityReservationInstancePlatform = awsDashSdkLib.awsDashSdkLibStrings.`Linux/UNIX` | (awsDashSdkLib.awsDashSdkLibStrings.`Red Hat Enterprise Linux`) | (awsDashSdkLib.awsDashSdkLibStrings.`SUSE Linux`) | awsDashSdkLib.awsDashSdkLibStrings.Windows | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Enterprise`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Standard`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Web`) | java.lang.String
   type CapacityReservationPreference = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.none | java.lang.String
   type CapacityReservationSet = js.Array[CapacityReservation]
@@ -26655,13 +26655,13 @@ object EC2Ns extends js.Object {
   type ConnectionNotificationState = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Disabled | java.lang.String
   type ConnectionNotificationType = awsDashSdkLib.awsDashSdkLibStrings.Topic | java.lang.String
   type ContainerFormat = awsDashSdkLib.awsDashSdkLibStrings.ova | java.lang.String
-  type ConversionIdStringList = js.Array[java.lang.String]
+  type ConversionIdStringList = js.Array[String]
   type ConversionTaskState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.cancelling | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
   type CreateFleetErrorsSet = js.Array[CreateFleetError]
   type CreateFleetInstancesSet = js.Array[CreateFleetInstance]
   type CreateVolumePermissionList = js.Array[CreateVolumePermission]
   type CurrencyCodeValues = awsDashSdkLib.awsDashSdkLibStrings.USD | java.lang.String
-  type CustomerGatewayIdStringList = js.Array[java.lang.String]
+  type CustomerGatewayIdStringList = js.Array[String]
   type CustomerGatewayList = js.Array[CustomerGateway]
   type DatafeedSubscriptionState = awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Inactive | java.lang.String
   type DateTime = stdLib.Date
@@ -26679,7 +26679,7 @@ object EC2Ns extends js.Object {
   type DeviceType = awsDashSdkLib.awsDashSdkLibStrings.ebs | awsDashSdkLib.awsDashSdkLibStrings.`instance-store` | java.lang.String
   type DhcpConfigurationList = js.Array[DhcpConfiguration]
   type DhcpConfigurationValueList = js.Array[AttributeValue]
-  type DhcpOptionsIdStringList = js.Array[java.lang.String]
+  type DhcpOptionsIdStringList = js.Array[String]
   type DhcpOptionsList = js.Array[DhcpOptions]
   type DiskImageFormat = awsDashSdkLib.awsDashSdkLibStrings.VMDK | awsDashSdkLib.awsDashSdkLibStrings.RAW | awsDashSdkLib.awsDashSdkLibStrings.VHD | java.lang.String
   type DiskImageList = js.Array[DiskImage]
@@ -26691,7 +26691,7 @@ object EC2Ns extends js.Object {
   type EgressOnlyInternetGatewayIdList = js.Array[EgressOnlyInternetGatewayId]
   type EgressOnlyInternetGatewayList = js.Array[EgressOnlyInternetGateway]
   type ElasticGpuAssociationList = js.Array[ElasticGpuAssociation]
-  type ElasticGpuIdSet = js.Array[java.lang.String]
+  type ElasticGpuIdSet = js.Array[String]
   type ElasticGpuSet = js.Array[ElasticGpus]
   type ElasticGpuSpecificationList = js.Array[ElasticGpuSpecification]
   type ElasticGpuSpecificationResponseList = js.Array[ElasticGpuSpecificationResponse]
@@ -26704,9 +26704,9 @@ object EC2Ns extends js.Object {
   type EventCode = awsDashSdkLib.awsDashSdkLibStrings.`instance-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-maintenance` | awsDashSdkLib.awsDashSdkLibStrings.`instance-retirement` | awsDashSdkLib.awsDashSdkLibStrings.`instance-stop` | java.lang.String
   type EventType = awsDashSdkLib.awsDashSdkLibStrings.instanceChange | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestChange | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
   type ExcessCapacityTerminationPolicy = awsDashSdkLib.awsDashSdkLibStrings.noTermination | awsDashSdkLib.awsDashSdkLibStrings.default | java.lang.String
-  type ExecutableByStringList = js.Array[java.lang.String]
+  type ExecutableByStringList = js.Array[String]
   type ExportEnvironment = awsDashSdkLib.awsDashSdkLibStrings.citrix | awsDashSdkLib.awsDashSdkLibStrings.vmware | awsDashSdkLib.awsDashSdkLibStrings.microsoft | java.lang.String
-  type ExportTaskIdStringList = js.Array[java.lang.String]
+  type ExportTaskIdStringList = js.Array[String]
   type ExportTaskList = js.Array[ExportTask]
   type ExportTaskState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.cancelling | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
   type FilterList = js.Array[Filter]
@@ -26727,21 +26727,21 @@ object EC2Ns extends js.Object {
   type FlowLogSet = js.Array[FlowLog]
   type FlowLogsResourceType = awsDashSdkLib.awsDashSdkLibStrings.VPC | awsDashSdkLib.awsDashSdkLibStrings.Subnet | awsDashSdkLib.awsDashSdkLibStrings.NetworkInterface | java.lang.String
   type FpgaImageAttributeName = awsDashSdkLib.awsDashSdkLibStrings.description | awsDashSdkLib.awsDashSdkLibStrings.name | awsDashSdkLib.awsDashSdkLibStrings.loadPermission | awsDashSdkLib.awsDashSdkLibStrings.productCodes | java.lang.String
-  type FpgaImageIdList = js.Array[java.lang.String]
+  type FpgaImageIdList = js.Array[String]
   type FpgaImageList = js.Array[FpgaImage]
   type FpgaImageStateCode = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.unavailable | java.lang.String
   type GatewayType = awsDashSdkLib.awsDashSdkLibStrings.ipsecDOT1 | java.lang.String
-  type GroupIdStringList = js.Array[java.lang.String]
+  type GroupIdStringList = js.Array[String]
   type GroupIdentifierList = js.Array[GroupIdentifier]
   type GroupIdentifierSet = js.Array[SecurityGroupIdentifier]
-  type GroupIds = js.Array[java.lang.String]
-  type GroupNameStringList = js.Array[java.lang.String]
+  type GroupIds = js.Array[String]
+  type GroupNameStringList = js.Array[String]
   type HistoryRecordSet = js.Array[HistoryRecordEntry]
   type HistoryRecords = js.Array[HistoryRecord]
   type HostInstanceList = js.Array[HostInstance]
   type HostList = js.Array[Host]
   type HostOfferingSet = js.Array[HostOffering]
-  type HostReservationIdSet = js.Array[java.lang.String]
+  type HostReservationIdSet = js.Array[String]
   type HostReservationSet = js.Array[HostReservation]
   type HostTenancy = awsDashSdkLib.awsDashSdkLibStrings.dedicated | awsDashSdkLib.awsDashSdkLibStrings.host | java.lang.String
   type HypervisorType = awsDashSdkLib.awsDashSdkLibStrings.ovm | awsDashSdkLib.awsDashSdkLibStrings.xen | java.lang.String
@@ -26750,14 +26750,14 @@ object EC2Ns extends js.Object {
   type IdFormatList = js.Array[IdFormat]
   type ImageAttributeName = awsDashSdkLib.awsDashSdkLibStrings.description | awsDashSdkLib.awsDashSdkLibStrings.kernel | awsDashSdkLib.awsDashSdkLibStrings.ramdisk | awsDashSdkLib.awsDashSdkLibStrings.launchPermission | awsDashSdkLib.awsDashSdkLibStrings.productCodes | awsDashSdkLib.awsDashSdkLibStrings.blockDeviceMapping | awsDashSdkLib.awsDashSdkLibStrings.sriovNetSupport | java.lang.String
   type ImageDiskContainerList = js.Array[ImageDiskContainer]
-  type ImageIdStringList = js.Array[java.lang.String]
+  type ImageIdStringList = js.Array[String]
   type ImageList = js.Array[Image]
   type ImageState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.invalid | awsDashSdkLib.awsDashSdkLibStrings.deregistered | awsDashSdkLib.awsDashSdkLibStrings.transient | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
   type ImageTypeValues = awsDashSdkLib.awsDashSdkLibStrings.machine | awsDashSdkLib.awsDashSdkLibStrings.kernel | awsDashSdkLib.awsDashSdkLibStrings.ramdisk | java.lang.String
   type ImportImageTaskList = js.Array[ImportImageTask]
   type ImportInstanceVolumeDetailSet = js.Array[ImportInstanceVolumeDetailItem]
   type ImportSnapshotTaskList = js.Array[ImportSnapshotTask]
-  type ImportTaskIdList = js.Array[java.lang.String]
+  type ImportTaskIdList = js.Array[String]
   type InstanceAttributeName = awsDashSdkLib.awsDashSdkLibStrings.instanceType | awsDashSdkLib.awsDashSdkLibStrings.kernel | awsDashSdkLib.awsDashSdkLibStrings.ramdisk | awsDashSdkLib.awsDashSdkLibStrings.userData | awsDashSdkLib.awsDashSdkLibStrings.disableApiTermination | awsDashSdkLib.awsDashSdkLibStrings.instanceInitiatedShutdownBehavior | awsDashSdkLib.awsDashSdkLibStrings.rootDeviceName | awsDashSdkLib.awsDashSdkLibStrings.blockDeviceMapping | awsDashSdkLib.awsDashSdkLibStrings.productCodes | awsDashSdkLib.awsDashSdkLibStrings.sourceDestCheck | awsDashSdkLib.awsDashSdkLibStrings.groupSet | awsDashSdkLib.awsDashSdkLibStrings.ebsOptimized | awsDashSdkLib.awsDashSdkLibStrings.sriovNetSupport | awsDashSdkLib.awsDashSdkLibStrings.enaSupport | java.lang.String
   type InstanceBlockDeviceMappingList = js.Array[InstanceBlockDeviceMapping]
   type InstanceBlockDeviceMappingSpecificationList = js.Array[InstanceBlockDeviceMappingSpecification]
@@ -26766,8 +26766,8 @@ object EC2Ns extends js.Object {
   type InstanceCreditSpecificationListRequest = js.Array[InstanceCreditSpecificationRequest]
   type InstanceHealthStatus = awsDashSdkLib.awsDashSdkLibStrings.healthy | awsDashSdkLib.awsDashSdkLibStrings.unhealthy | java.lang.String
   type InstanceId = java.lang.String
-  type InstanceIdSet = js.Array[java.lang.String]
-  type InstanceIdStringList = js.Array[java.lang.String]
+  type InstanceIdSet = js.Array[String]
+  type InstanceIdStringList = js.Array[String]
   type InstanceIdsSet = js.Array[InstanceId]
   type InstanceInterruptionBehavior = awsDashSdkLib.awsDashSdkLibStrings.hibernate | awsDashSdkLib.awsDashSdkLibStrings.stop | awsDashSdkLib.awsDashSdkLibStrings.terminate | java.lang.String
   type InstanceIpv6AddressList = js.Array[InstanceIpv6Address]
@@ -26793,13 +26793,13 @@ object EC2Ns extends js.Object {
   type InternetGatewayList = js.Array[InternetGateway]
   type IpPermissionList = js.Array[IpPermission]
   type IpRangeList = js.Array[IpRange]
-  type IpRanges = js.Array[java.lang.String]
+  type IpRanges = js.Array[String]
   type Ipv6Address = java.lang.String
-  type Ipv6AddressList = js.Array[java.lang.String]
+  type Ipv6AddressList = js.Array[String]
   type Ipv6CidrBlockSet = js.Array[Ipv6CidrBlock]
   type Ipv6RangeList = js.Array[Ipv6Range]
   type Ipv6SupportValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
-  type KeyNameStringList = js.Array[java.lang.String]
+  type KeyNameStringList = js.Array[String]
   type KeyPairList = js.Array[KeyPairInfo]
   type LaunchPermissionList = js.Array[LaunchPermission]
   type LaunchSpecsList = js.Array[SpotFleetLaunchSpecification]
@@ -26840,10 +26840,10 @@ object EC2Ns extends js.Object {
   type NetworkAclEntryList = js.Array[NetworkAclEntry]
   type NetworkAclList = js.Array[NetworkAcl]
   type NetworkInterfaceAttribute = awsDashSdkLib.awsDashSdkLibStrings.description | awsDashSdkLib.awsDashSdkLibStrings.groupSet | awsDashSdkLib.awsDashSdkLibStrings.sourceDestCheck | awsDashSdkLib.awsDashSdkLibStrings.attachment | java.lang.String
-  type NetworkInterfaceIdList = js.Array[java.lang.String]
+  type NetworkInterfaceIdList = js.Array[String]
   type NetworkInterfaceIpv6AddressesList = js.Array[NetworkInterfaceIpv6Address]
   type NetworkInterfaceList = js.Array[NetworkInterface]
-  type NetworkInterfacePermissionIdList = js.Array[java.lang.String]
+  type NetworkInterfacePermissionIdList = js.Array[String]
   type NetworkInterfacePermissionList = js.Array[NetworkInterfacePermission]
   type NetworkInterfacePermissionStateCode = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.granted | awsDashSdkLib.awsDashSdkLibStrings.revoking | awsDashSdkLib.awsDashSdkLibStrings.revoked | java.lang.String
   type NetworkInterfacePrivateIpAddressList = js.Array[NetworkInterfacePrivateIpAddress]
@@ -26857,17 +26857,17 @@ object EC2Ns extends js.Object {
   type OfferingTypeValues = (awsDashSdkLib.awsDashSdkLibStrings.`Heavy Utilization`) | (awsDashSdkLib.awsDashSdkLibStrings.`Medium Utilization`) | (awsDashSdkLib.awsDashSdkLibStrings.`Light Utilization`) | (awsDashSdkLib.awsDashSdkLibStrings.`No Upfront`) | (awsDashSdkLib.awsDashSdkLibStrings.`Partial Upfront`) | (awsDashSdkLib.awsDashSdkLibStrings.`All Upfront`) | java.lang.String
   type OnDemandAllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.lowestPrice | awsDashSdkLib.awsDashSdkLibStrings.prioritized | java.lang.String
   type OperationType = awsDashSdkLib.awsDashSdkLibStrings.add | awsDashSdkLib.awsDashSdkLibStrings.remove | java.lang.String
-  type OwnerStringList = js.Array[java.lang.String]
+  type OwnerStringList = js.Array[String]
   type PaymentOption = awsDashSdkLib.awsDashSdkLibStrings.AllUpfront | awsDashSdkLib.awsDashSdkLibStrings.PartialUpfront | awsDashSdkLib.awsDashSdkLibStrings.NoUpfront | java.lang.String
   type PermissionGroup = awsDashSdkLib.awsDashSdkLibStrings.all | java.lang.String
   type PlacementGroupList = js.Array[PlacementGroup]
   type PlacementGroupState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
-  type PlacementGroupStringList = js.Array[java.lang.String]
+  type PlacementGroupStringList = js.Array[String]
   type PlacementStrategy = awsDashSdkLib.awsDashSdkLibStrings.cluster | awsDashSdkLib.awsDashSdkLibStrings.spread | java.lang.String
   type PlatformValues = awsDashSdkLib.awsDashSdkLibStrings.Windows | java.lang.String
   type PoolMaxResults = scala.Double
   type PrefixListIdList = js.Array[PrefixListId]
-  type PrefixListIdSet = js.Array[java.lang.String]
+  type PrefixListIdSet = js.Array[String]
   type PrefixListSet = js.Array[PrefixList]
   type PriceScheduleList = js.Array[PriceSchedule]
   type PriceScheduleSpecificationList = js.Array[PriceScheduleSpecification]
@@ -26876,13 +26876,13 @@ object EC2Ns extends js.Object {
   type PrincipalType = awsDashSdkLib.awsDashSdkLibStrings.All | awsDashSdkLib.awsDashSdkLibStrings.Service | awsDashSdkLib.awsDashSdkLibStrings.OrganizationUnit | awsDashSdkLib.awsDashSdkLibStrings.Account | awsDashSdkLib.awsDashSdkLibStrings.User | awsDashSdkLib.awsDashSdkLibStrings.Role | java.lang.String
   type PrivateIpAddressConfigSet = js.Array[ScheduledInstancesPrivateIpAddressConfig]
   type PrivateIpAddressSpecificationList = js.Array[PrivateIpAddressSpecification]
-  type PrivateIpAddressStringList = js.Array[java.lang.String]
+  type PrivateIpAddressStringList = js.Array[String]
   type ProductCodeList = js.Array[ProductCode]
-  type ProductCodeStringList = js.Array[java.lang.String]
+  type ProductCodeStringList = js.Array[String]
   type ProductCodeValues = awsDashSdkLib.awsDashSdkLibStrings.devpay | awsDashSdkLib.awsDashSdkLibStrings.marketplace | java.lang.String
-  type ProductDescriptionList = js.Array[java.lang.String]
+  type ProductDescriptionList = js.Array[String]
   type PropagatingVgwList = js.Array[PropagatingVgw]
-  type PublicIpStringList = js.Array[java.lang.String]
+  type PublicIpStringList = js.Array[String]
   type PublicIpv4PoolRangeSet = js.Array[PublicIpv4PoolRange]
   type PublicIpv4PoolSet = js.Array[PublicIpv4Pool]
   type PurchaseRequestSet = js.Array[PurchaseRequest]
@@ -26893,34 +26893,34 @@ object EC2Ns extends js.Object {
   type RecurringChargeFrequency = awsDashSdkLib.awsDashSdkLibStrings.Hourly | java.lang.String
   type RecurringChargesList = js.Array[RecurringCharge]
   type RegionList = js.Array[Region]
-  type RegionNameStringList = js.Array[java.lang.String]
+  type RegionNameStringList = js.Array[String]
   type ReportInstanceReasonCodes = awsDashSdkLib.awsDashSdkLibStrings.`instance-stuck-in-state` | awsDashSdkLib.awsDashSdkLibStrings.unresponsive | awsDashSdkLib.awsDashSdkLibStrings.`not-accepting-credentials` | awsDashSdkLib.awsDashSdkLibStrings.`password-not-available` | awsDashSdkLib.awsDashSdkLibStrings.`performance-network` | awsDashSdkLib.awsDashSdkLibStrings.`performance-instance-store` | awsDashSdkLib.awsDashSdkLibStrings.`performance-ebs-volume` | awsDashSdkLib.awsDashSdkLibStrings.`performance-other` | awsDashSdkLib.awsDashSdkLibStrings.other | java.lang.String
   type ReportStatusType = awsDashSdkLib.awsDashSdkLibStrings.ok | awsDashSdkLib.awsDashSdkLibStrings.impaired | java.lang.String
-  type RequestHostIdList = js.Array[java.lang.String]
-  type RequestHostIdSet = js.Array[java.lang.String]
+  type RequestHostIdList = js.Array[String]
+  type RequestHostIdSet = js.Array[String]
   type ReservationList = js.Array[Reservation]
   type ReservationState = awsDashSdkLib.awsDashSdkLibStrings.`payment-pending` | awsDashSdkLib.awsDashSdkLibStrings.`payment-failed` | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.retired | java.lang.String
-  type ReservedInstanceIdSet = js.Array[java.lang.String]
+  type ReservedInstanceIdSet = js.Array[String]
   type ReservedInstanceReservationValueSet = js.Array[ReservedInstanceReservationValue]
   type ReservedInstanceState = awsDashSdkLib.awsDashSdkLibStrings.`payment-pending` | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.`payment-failed` | awsDashSdkLib.awsDashSdkLibStrings.retired | java.lang.String
   type ReservedInstancesConfigurationList = js.Array[ReservedInstancesConfiguration]
-  type ReservedInstancesIdStringList = js.Array[java.lang.String]
+  type ReservedInstancesIdStringList = js.Array[String]
   type ReservedInstancesList = js.Array[ReservedInstances]
   type ReservedInstancesListingList = js.Array[ReservedInstancesListing]
-  type ReservedInstancesModificationIdStringList = js.Array[java.lang.String]
+  type ReservedInstancesModificationIdStringList = js.Array[String]
   type ReservedInstancesModificationList = js.Array[ReservedInstancesModification]
   type ReservedInstancesModificationResultList = js.Array[ReservedInstancesModificationResult]
-  type ReservedInstancesOfferingIdStringList = js.Array[java.lang.String]
+  type ReservedInstancesOfferingIdStringList = js.Array[String]
   type ReservedInstancesOfferingList = js.Array[ReservedInstancesOffering]
   type ReservedIntancesIds = js.Array[ReservedInstancesId]
   type ResetFpgaImageAttributeName = awsDashSdkLib.awsDashSdkLibStrings.loadPermission | java.lang.String
   type ResetImageAttributeName = awsDashSdkLib.awsDashSdkLibStrings.launchPermission | java.lang.String
-  type ResourceIdList = js.Array[java.lang.String]
-  type ResourceList = js.Array[java.lang.String]
+  type ResourceIdList = js.Array[String]
+  type ResourceList = js.Array[String]
   type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.`customer-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`dedicated-host` | awsDashSdkLib.awsDashSdkLibStrings.`dhcp-options` | awsDashSdkLib.awsDashSdkLibStrings.`elastic-ip` | awsDashSdkLib.awsDashSdkLibStrings.fleet | awsDashSdkLib.awsDashSdkLibStrings.`fpga-image` | awsDashSdkLib.awsDashSdkLibStrings.image | awsDashSdkLib.awsDashSdkLibStrings.instance | awsDashSdkLib.awsDashSdkLibStrings.`internet-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`launch-template` | awsDashSdkLib.awsDashSdkLibStrings.natgateway | awsDashSdkLib.awsDashSdkLibStrings.`network-acl` | awsDashSdkLib.awsDashSdkLibStrings.`network-interface` | awsDashSdkLib.awsDashSdkLibStrings.`reserved-instances` | awsDashSdkLib.awsDashSdkLibStrings.`route-table` | awsDashSdkLib.awsDashSdkLibStrings.`security-group` | awsDashSdkLib.awsDashSdkLibStrings.snapshot | awsDashSdkLib.awsDashSdkLibStrings.`spot-instances-request` | awsDashSdkLib.awsDashSdkLibStrings.subnet | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-attachment` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-route-table` | awsDashSdkLib.awsDashSdkLibStrings.volume | awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.`vpc-peering-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-gateway` | java.lang.String
-  type ResponseHostIdList = js.Array[java.lang.String]
-  type ResponseHostIdSet = js.Array[java.lang.String]
-  type RestorableByStringList = js.Array[java.lang.String]
+  type ResponseHostIdList = js.Array[String]
+  type ResponseHostIdSet = js.Array[String]
+  type RestorableByStringList = js.Array[String]
   type RouteList = js.Array[Route]
   type RouteOrigin = awsDashSdkLib.awsDashSdkLibStrings.CreateRouteTable | awsDashSdkLib.awsDashSdkLibStrings.CreateRoute | awsDashSdkLib.awsDashSdkLibStrings.EnableVgwRoutePropagation | java.lang.String
   type RouteState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.blackhole | java.lang.String
@@ -26928,16 +26928,16 @@ object EC2Ns extends js.Object {
   type RouteTableList = js.Array[RouteTable]
   type RuleAction = awsDashSdkLib.awsDashSdkLibStrings.allow | awsDashSdkLib.awsDashSdkLibStrings.deny | java.lang.String
   type ScheduledInstanceAvailabilitySet = js.Array[ScheduledInstanceAvailability]
-  type ScheduledInstanceIdRequestSet = js.Array[java.lang.String]
+  type ScheduledInstanceIdRequestSet = js.Array[String]
   type ScheduledInstanceSet = js.Array[ScheduledInstance]
   type ScheduledInstancesBlockDeviceMappingSet = js.Array[ScheduledInstancesBlockDeviceMapping]
   type ScheduledInstancesIpv6AddressList = js.Array[ScheduledInstancesIpv6Address]
   type ScheduledInstancesNetworkInterfaceSet = js.Array[ScheduledInstancesNetworkInterface]
-  type ScheduledInstancesSecurityGroupIdSet = js.Array[java.lang.String]
-  type SecurityGroupIdStringList = js.Array[java.lang.String]
+  type ScheduledInstancesSecurityGroupIdSet = js.Array[String]
+  type SecurityGroupIdStringList = js.Array[String]
   type SecurityGroupList = js.Array[SecurityGroup]
   type SecurityGroupReferences = js.Array[SecurityGroupReference]
-  type SecurityGroupStringList = js.Array[java.lang.String]
+  type SecurityGroupStringList = js.Array[String]
   type ServiceConfigurationSet = js.Array[ServiceConfiguration]
   type ServiceDetailSet = js.Array[ServiceDetail]
   type ServiceState = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Available | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Deleted | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
@@ -26946,14 +26946,14 @@ object EC2Ns extends js.Object {
   type ShutdownBehavior = awsDashSdkLib.awsDashSdkLibStrings.stop | awsDashSdkLib.awsDashSdkLibStrings.terminate | java.lang.String
   type SnapshotAttributeName = awsDashSdkLib.awsDashSdkLibStrings.productCodes | awsDashSdkLib.awsDashSdkLibStrings.createVolumePermission | java.lang.String
   type SnapshotDetailList = js.Array[SnapshotDetail]
-  type SnapshotIdStringList = js.Array[java.lang.String]
+  type SnapshotIdStringList = js.Array[String]
   type SnapshotList = js.Array[Snapshot]
   type SnapshotState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.completed | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
   type SpotAllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.`lowest-price` | awsDashSdkLib.awsDashSdkLibStrings.diversified | java.lang.String
   type SpotFleetRequestConfigSet = js.Array[SpotFleetRequestConfig]
   type SpotFleetTagSpecificationList = js.Array[SpotFleetTagSpecification]
   type SpotInstanceInterruptionBehavior = awsDashSdkLib.awsDashSdkLibStrings.hibernate | awsDashSdkLib.awsDashSdkLibStrings.stop | awsDashSdkLib.awsDashSdkLibStrings.terminate | java.lang.String
-  type SpotInstanceRequestIdList = js.Array[java.lang.String]
+  type SpotInstanceRequestIdList = js.Array[String]
   type SpotInstanceRequestList = js.Array[SpotInstanceRequest]
   type SpotInstanceState = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.closed | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
   type SpotInstanceType = awsDashSdkLib.awsDashSdkLibStrings.`one-time` | awsDashSdkLib.awsDashSdkLibStrings.persistent | java.lang.String
@@ -26966,7 +26966,7 @@ object EC2Ns extends js.Object {
   type StatusType = awsDashSdkLib.awsDashSdkLibStrings.passed | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.`insufficient-data` | awsDashSdkLib.awsDashSdkLibStrings.initializing | java.lang.String
   type String = java.lang.String
   type SubnetCidrBlockStateCode = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | awsDashSdkLib.awsDashSdkLibStrings.failing | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
-  type SubnetIdStringList = js.Array[java.lang.String]
+  type SubnetIdStringList = js.Array[String]
   type SubnetIpv6CidrBlockAssociationSet = js.Array[SubnetIpv6CidrBlockAssociation]
   type SubnetList = js.Array[Subnet]
   type SubnetState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | java.lang.String
@@ -26982,12 +26982,12 @@ object EC2Ns extends js.Object {
   type Tenancy = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.dedicated | awsDashSdkLib.awsDashSdkLibStrings.host | java.lang.String
   type TrafficType = awsDashSdkLib.awsDashSdkLibStrings.ACCEPT | awsDashSdkLib.awsDashSdkLibStrings.REJECT | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
   type TransitGatewayAssociationState = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | java.lang.String
-  type TransitGatewayAttachmentIdStringList = js.Array[java.lang.String]
+  type TransitGatewayAttachmentIdStringList = js.Array[String]
   type TransitGatewayAttachmentList = js.Array[TransitGatewayAttachment]
   type TransitGatewayAttachmentPropagationList = js.Array[TransitGatewayAttachmentPropagation]
   type TransitGatewayAttachmentResourceType = awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.vpn | java.lang.String
   type TransitGatewayAttachmentState = awsDashSdkLib.awsDashSdkLibStrings.pendingAcceptance | awsDashSdkLib.awsDashSdkLibStrings.rollingBack | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.modifying | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.rejected | awsDashSdkLib.awsDashSdkLibStrings.rejecting | awsDashSdkLib.awsDashSdkLibStrings.failing | java.lang.String
-  type TransitGatewayIdStringList = js.Array[java.lang.String]
+  type TransitGatewayIdStringList = js.Array[String]
   type TransitGatewayList = js.Array[TransitGateway]
   type TransitGatewayMaxResults = scala.Double
   type TransitGatewayPropagationState = awsDashSdkLib.awsDashSdkLibStrings.enabling | awsDashSdkLib.awsDashSdkLibStrings.enabled | awsDashSdkLib.awsDashSdkLibStrings.disabling | awsDashSdkLib.awsDashSdkLibStrings.disabled | java.lang.String
@@ -26995,7 +26995,7 @@ object EC2Ns extends js.Object {
   type TransitGatewayRouteList = js.Array[TransitGatewayRoute]
   type TransitGatewayRouteState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.blackhole | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
   type TransitGatewayRouteTableAssociationList = js.Array[TransitGatewayRouteTableAssociation]
-  type TransitGatewayRouteTableIdStringList = js.Array[java.lang.String]
+  type TransitGatewayRouteTableIdStringList = js.Array[String]
   type TransitGatewayRouteTableList = js.Array[TransitGatewayRouteTable]
   type TransitGatewayRouteTablePropagationList = js.Array[TransitGatewayRouteTablePropagation]
   type TransitGatewayRouteTableState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
@@ -27007,19 +27007,19 @@ object EC2Ns extends js.Object {
   type UnsuccessfulInstanceCreditSpecificationSet = js.Array[UnsuccessfulInstanceCreditSpecificationItem]
   type UnsuccessfulItemList = js.Array[UnsuccessfulItem]
   type UnsuccessfulItemSet = js.Array[UnsuccessfulItem]
-  type UserGroupStringList = js.Array[java.lang.String]
+  type UserGroupStringList = js.Array[String]
   type UserIdGroupPairList = js.Array[UserIdGroupPair]
   type UserIdGroupPairSet = js.Array[UserIdGroupPair]
-  type UserIdStringList = js.Array[java.lang.String]
-  type ValueStringList = js.Array[java.lang.String]
+  type UserIdStringList = js.Array[String]
+  type ValueStringList = js.Array[String]
   type VersionDescription = java.lang.String
-  type VersionStringList = js.Array[java.lang.String]
+  type VersionStringList = js.Array[String]
   type VgwTelemetryList = js.Array[VgwTelemetry]
   type VirtualizationType = awsDashSdkLib.awsDashSdkLibStrings.hvm | awsDashSdkLib.awsDashSdkLibStrings.paravirtual | java.lang.String
   type VolumeAttachmentList = js.Array[VolumeAttachment]
   type VolumeAttachmentState = awsDashSdkLib.awsDashSdkLibStrings.attaching | awsDashSdkLib.awsDashSdkLibStrings.attached | awsDashSdkLib.awsDashSdkLibStrings.detaching | awsDashSdkLib.awsDashSdkLibStrings.detached | awsDashSdkLib.awsDashSdkLibStrings.busy | java.lang.String
   type VolumeAttributeName = awsDashSdkLib.awsDashSdkLibStrings.autoEnableIO | awsDashSdkLib.awsDashSdkLibStrings.productCodes | java.lang.String
-  type VolumeIdStringList = js.Array[java.lang.String]
+  type VolumeIdStringList = js.Array[String]
   type VolumeList = js.Array[Volume]
   type VolumeModificationList = js.Array[VolumeModification]
   type VolumeModificationState = awsDashSdkLib.awsDashSdkLibStrings.modifying | awsDashSdkLib.awsDashSdkLibStrings.optimizing | awsDashSdkLib.awsDashSdkLibStrings.completed | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
@@ -27035,28 +27035,28 @@ object EC2Ns extends js.Object {
   type VpcAttributeName = awsDashSdkLib.awsDashSdkLibStrings.enableDnsSupport | awsDashSdkLib.awsDashSdkLibStrings.enableDnsHostnames | java.lang.String
   type VpcCidrBlockAssociationSet = js.Array[VpcCidrBlockAssociation]
   type VpcCidrBlockStateCode = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | awsDashSdkLib.awsDashSdkLibStrings.failing | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
-  type VpcClassicLinkIdList = js.Array[java.lang.String]
+  type VpcClassicLinkIdList = js.Array[String]
   type VpcClassicLinkList = js.Array[VpcClassicLink]
   type VpcEndpointConnectionSet = js.Array[VpcEndpointConnection]
   type VpcEndpointSet = js.Array[VpcEndpoint]
   type VpcEndpointType = awsDashSdkLib.awsDashSdkLibStrings.Interface | awsDashSdkLib.awsDashSdkLibStrings.Gateway | java.lang.String
-  type VpcIdStringList = js.Array[java.lang.String]
+  type VpcIdStringList = js.Array[String]
   type VpcIpv6CidrBlockAssociationSet = js.Array[VpcIpv6CidrBlockAssociation]
   type VpcList = js.Array[Vpc]
   type VpcPeeringConnectionList = js.Array[VpcPeeringConnection]
   type VpcPeeringConnectionStateReasonCode = awsDashSdkLib.awsDashSdkLibStrings.`initiating-request` | awsDashSdkLib.awsDashSdkLibStrings.`pending-acceptance` | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.rejected | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.expired | awsDashSdkLib.awsDashSdkLibStrings.provisioning | awsDashSdkLib.awsDashSdkLibStrings.deleting | java.lang.String
   type VpcState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | java.lang.String
   type VpcTenancy = awsDashSdkLib.awsDashSdkLibStrings.default | java.lang.String
-  type VpnConnectionIdStringList = js.Array[java.lang.String]
+  type VpnConnectionIdStringList = js.Array[String]
   type VpnConnectionList = js.Array[VpnConnection]
   type VpnEcmpSupportValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
-  type VpnGatewayIdStringList = js.Array[java.lang.String]
+  type VpnGatewayIdStringList = js.Array[String]
   type VpnGatewayList = js.Array[VpnGateway]
   type VpnState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
   type VpnStaticRouteList = js.Array[VpnStaticRoute]
   type VpnStaticRouteSource = awsDashSdkLib.awsDashSdkLibStrings.Static | java.lang.String
-  type ZoneIdStringList = js.Array[java.lang.String]
-  type ZoneNameStringList = js.Array[java.lang.String]
+  type ZoneIdStringList = js.Array[String]
+  type ZoneNameStringList = js.Array[String]
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsEc2Mod.Blob | java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-06-15` | awsDashSdkLib.awsDashSdkLibStrings.`2013-10-15` | awsDashSdkLib.awsDashSdkLibStrings.`2014-02-01` | awsDashSdkLib.awsDashSdkLibStrings.`2014-05-01` | awsDashSdkLib.awsDashSdkLibStrings.`2014-06-15` | awsDashSdkLib.awsDashSdkLibStrings.`2014-09-01` | awsDashSdkLib.awsDashSdkLibStrings.`2014-10-01` | awsDashSdkLib.awsDashSdkLibStrings.`2015-03-01` | awsDashSdkLib.awsDashSdkLibStrings.`2015-04-15` | awsDashSdkLib.awsDashSdkLibStrings.`2015-10-01` | awsDashSdkLib.awsDashSdkLibStrings.`2016-04-01` | awsDashSdkLib.awsDashSdkLibStrings.`2016-09-15` | awsDashSdkLib.awsDashSdkLibStrings.`2016-11-15` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
   type scope = (awsDashSdkLib.awsDashSdkLibStrings.`Availability Zone`) | awsDashSdkLib.awsDashSdkLibStrings.Region | java.lang.String

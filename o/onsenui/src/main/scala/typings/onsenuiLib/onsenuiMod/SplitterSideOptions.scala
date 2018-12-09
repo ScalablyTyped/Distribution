@@ -11,6 +11,6 @@ trait SplitterSideOptions extends js.Object {
      * @description This function will be called after the menu has been opened.
      * @return {Function}
      */
-  var callback: js.UndefOr[js.Function] = js.undefined
+  var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
 }
 

@@ -26,7 +26,7 @@ object tarModMembers extends js.Object {
     /* options */ ReplaceOptions, 
     /* fileList */ js.UndefOr[js.Array[java.lang.String]], 
     /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
-    stdLib.Promise[scala.Unit]
+    js.Promise[scala.Unit]
   ] = js.native
   val t: js.Function2[
     /* options */ ListOptions with FileOptions with tarLib.Anon_Sync, 
@@ -38,7 +38,7 @@ object tarModMembers extends js.Object {
     /* options */ ReplaceOptions, 
     /* fileList */ js.UndefOr[js.Array[java.lang.String]], 
     /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
-    stdLib.Promise[scala.Unit]
+    js.Promise[scala.Unit]
   ] = js.native
   val x: js.Function3[
     /* options */ ExtractOptions with FileOptions, 
@@ -58,7 +58,7 @@ object tarModMembers extends js.Object {
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): nodeLib.streamMod.Readable = js.native
   @JSName("create")
-  def create_Promise(options: CreateOptions with FileOptions, fileList: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def create_Promise(options: CreateOptions with FileOptions, fileList: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   @JSName("create")
   def create_Unit(
     options: CreateOptions with FileOptions with tarLib.Anon_Sync,
@@ -70,22 +70,18 @@ object tarModMembers extends js.Object {
     fileList: js.Array[java.lang.String],
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): scala.Unit = js.native
+  def extract(options: ExtractOptions with FileOptions): js.Promise[scala.Unit] = js.native
+  def extract(options: ExtractOptions with FileOptions, fileList: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   def extract(
     options: ExtractOptions with FileOptions,
     fileList: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): scala.Unit = js.native
-  def extract(options: ExtractOptions): nodeLib.streamMod.Writable = js.native
-  def extract(options: ExtractOptions, fileList: js.Array[java.lang.String]): nodeLib.streamMod.Writable = js.native
   def extract(
     options: ExtractOptions,
     fileList: js.Array[java.lang.String],
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): nodeLib.streamMod.Writable = js.native
-  @JSName("extract")
-  def extract_Promise(options: ExtractOptions with FileOptions): stdLib.Promise[scala.Unit] = js.native
-  @JSName("extract")
-  def extract_Promise(options: ExtractOptions with FileOptions, fileList: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
   @JSName("extract")
   def extract_Unit(options: ExtractOptions with FileOptions with tarLib.Anon_Sync): scala.Unit = js.native
   @JSName("extract")
@@ -99,45 +95,49 @@ object tarModMembers extends js.Object {
     fileList: js.Array[java.lang.String],
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): scala.Unit = js.native
+  @JSName("extract")
+  def extract_Writable(options: ExtractOptions): nodeLib.streamMod.Writable = js.native
+  @JSName("extract")
+  def extract_Writable(options: ExtractOptions, fileList: js.Array[java.lang.String]): nodeLib.streamMod.Writable = js.native
   def list(): nodeLib.streamMod.Writable = js.native
-  def list(options: ListOptions): nodeLib.streamMod.Writable = js.native
-  def list(options: ListOptions, fileList: js.Array[java.lang.String]): nodeLib.streamMod.Writable = js.native
+  def list(options: ListOptions with FileOptions): js.Promise[scala.Unit] = js.native
+  def list(options: ListOptions with FileOptions, fileList: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   def list(
     options: ListOptions,
     fileList: js.Array[java.lang.String],
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): nodeLib.streamMod.Writable = js.native
   @JSName("list")
-  def list_Promise(options: ListOptions with FileOptions): stdLib.Promise[scala.Unit] = js.native
-  @JSName("list")
-  def list_Promise(options: ListOptions with FileOptions, fileList: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
-  @JSName("list")
   def list_Unit(options: ListOptions with FileOptions with tarLib.Anon_Sync): scala.Unit = js.native
   @JSName("list")
   def list_Unit(options: ListOptions with FileOptions with tarLib.Anon_Sync, fileList: js.Array[java.lang.String]): scala.Unit = js.native
-  def replace(options: ReplaceOptions): stdLib.Promise[scala.Unit] = js.native
-  def replace(options: ReplaceOptions, fileList: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  @JSName("list")
+  def list_Writable(options: ListOptions): nodeLib.streamMod.Writable = js.native
+  @JSName("list")
+  def list_Writable(options: ListOptions, fileList: js.Array[java.lang.String]): nodeLib.streamMod.Writable = js.native
+  def replace(options: ReplaceOptions): js.Promise[scala.Unit] = js.native
+  def replace(options: ReplaceOptions, fileList: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   def replace(
     options: ReplaceOptions,
     fileList: js.Array[java.lang.String],
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def replace(
     options: ReplaceOptions,
     fileList: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
-  def update(options: ReplaceOptions): stdLib.Promise[scala.Unit] = js.native
-  def update(options: ReplaceOptions, fileList: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
+  def update(options: ReplaceOptions): js.Promise[scala.Unit] = js.native
+  def update(options: ReplaceOptions, fileList: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   def update(
     options: ReplaceOptions,
     fileList: js.Array[java.lang.String],
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def update(
     options: ReplaceOptions,
     fileList: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

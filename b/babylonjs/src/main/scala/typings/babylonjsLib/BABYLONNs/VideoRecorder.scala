@@ -53,7 +53,7 @@ class VideoRecorder protected () extends js.Object {
            * It default to 7 seconds. A value of zero will not stop automatically, you would need to call stopRecording manually.
            * @return a promise callback at the end of the recording with the video data in Blob.
            */
-  def startRecording(): stdLib.Promise[stdLib.Blob] = js.native
+  def startRecording(): js.Promise[stdLib.Blob] = js.native
   /**
            * Starts recording the canvas for a max duration specified in parameters.
            * @param fileName Defines the name of the file to be downloaded when the recording stop. If null no automatic download will start and you can rely on the promise to get the data back.
@@ -61,7 +61,7 @@ class VideoRecorder protected () extends js.Object {
            * It default to 7 seconds. A value of zero will not stop automatically, you would need to call stopRecording manually.
            * @return a promise callback at the end of the recording with the video data in Blob.
            */
-  def startRecording(fileName: Nullable[java.lang.String]): stdLib.Promise[stdLib.Blob] = js.native
+  def startRecording(fileName: Nullable[java.lang.String]): js.Promise[stdLib.Blob] = js.native
   /**
            * Starts recording the canvas for a max duration specified in parameters.
            * @param fileName Defines the name of the file to be downloaded when the recording stop. If null no automatic download will start and you can rely on the promise to get the data back.
@@ -69,7 +69,7 @@ class VideoRecorder protected () extends js.Object {
            * It default to 7 seconds. A value of zero will not stop automatically, you would need to call stopRecording manually.
            * @return a promise callback at the end of the recording with the video data in Blob.
            */
-  def startRecording(fileName: Nullable[java.lang.String], maxDuration: scala.Double): stdLib.Promise[stdLib.Blob] = js.native
+  def startRecording(fileName: Nullable[java.lang.String], maxDuration: scala.Double): js.Promise[stdLib.Blob] = js.native
   /**
            * Stops the current recording before the default capture timeout passed in the startRecording
            * functions.

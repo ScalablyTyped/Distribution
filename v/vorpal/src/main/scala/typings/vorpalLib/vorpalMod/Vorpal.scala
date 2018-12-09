@@ -14,8 +14,8 @@ trait Vorpal extends js.Object {
   def command(command: java.lang.String): vorpalLib.vorpalMod.VorpalNs.Command = js.native
   def command(command: java.lang.String, description: java.lang.String): vorpalLib.vorpalMod.VorpalNs.Command = js.native
   def delimiter(value: java.lang.String): this.type = js.native
-  def exec(command: java.lang.String): stdLib.Promise[js.Object] = js.native
-  def execSync(command: java.lang.String): stdLib.Promise[js.Object] = js.native
+  def exec(command: java.lang.String): js.Promise[js.Object] = js.native
+  def execSync(command: java.lang.String): js.Promise[js.Object] = js.native
   def find(command: java.lang.String): vorpalLib.vorpalMod.VorpalNs.Command = js.native
   def help(value: js.Function1[/* cmd */ java.lang.String, java.lang.String]): this.type = js.native
   def hide(): this.type = js.native

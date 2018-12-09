@@ -32,13 +32,13 @@ trait IGradient extends IGradientOptions {
   	 * @param normalize Whether coords should be normalized
   	 * @return SVG representation of an gradient (linear/radial)
   	 */
-  def toSVG(`object`: js.Object): java.lang.String = js.native
+  def toSVG(`object`: Object): java.lang.String = js.native
   /**
   	 * Returns SVG representation of an gradient
   	 * @param object Object to create a gradient for
   	 * @param normalize Whether coords should be normalized
   	 * @return SVG representation of an gradient (linear/radial)
   	 */
-  def toSVG(`object`: js.Object, normalize: scala.Boolean): java.lang.String = js.native
+  def toSVG(`object`: Object, normalize: scala.Boolean): java.lang.String = js.native
 }
 

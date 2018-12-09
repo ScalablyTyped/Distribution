@@ -33,13 +33,13 @@ class Canvas protected () extends StaticCanvas {
   	 * @param [options] Options object
   	 */
   def this(element: stdLib.HTMLCanvasElement, options: ICanvasOptions) = this()
-  var _objects: js.Array[js.Object] = js.native
+  var _objects: js.Array[Object] = js.native
   /**
   	 * Checks if point is contained within an area of given object
   	 * @param e Event object
   	 * @param target Object to test against
   	 */
-  def containsPoint(e: stdLib.Event, target: js.Object): scala.Boolean = js.native
+  def containsPoint(e: stdLib.Event, target: Object): scala.Boolean = js.native
   /**
   	 * Deactivates all objects on canvas, removing any active group or object
   	 * @return thisArg
@@ -98,7 +98,7 @@ class Canvas protected () extends StaticCanvas {
   	 * Returns an array with the current selected objects
   	 * @return {Object[]} array of active objects
   	 */
-  def getActiveObjects(): js.Array[js.Object] = js.native
+  def getActiveObjects(): js.Array[Object] = js.native
   /**
   	 * Returns pointer coordinates relative to canvas.
   	 * @return object with "x" and "y" number values
@@ -128,7 +128,7 @@ class Canvas protected () extends StaticCanvas {
   	 * @param x Left coordinate
   	 * @param y Top coordinate
   	 */
-  def isTargetTransparent(target: js.Object, x: scala.Double, y: scala.Double): scala.Boolean = js.native
+  def isTargetTransparent(target: Object, x: scala.Double, y: scala.Double): scala.Boolean = js.native
   /**
   	 * Removes all event listeners
   	 */
@@ -150,13 +150,13 @@ class Canvas protected () extends StaticCanvas {
   	 * @param object Object to set as an active one
   	 * @param [e] Event (passed along when firing "object:selected")
   	 */
-  def setActiveObject(`object`: js.Object): Canvas = js.native
+  def setActiveObject(`object`: Object): Canvas = js.native
   /**
   	 * Sets given object as the only active object on canvas
   	 * @param object Object to set as an active one
   	 * @param [e] Event (passed along when firing "object:selected")
   	 */
-  def setActiveObject(`object`: js.Object, e: stdLib.Event): Canvas = js.native
+  def setActiveObject(`object`: Object, e: stdLib.Event): Canvas = js.native
   /**
   	 * Set the cursor type of the canvas element
   	 * @param value Cursor type of the canvas element.

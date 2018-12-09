@@ -12,7 +12,7 @@ trait Anon_Group extends js.Object {
     /* expand */ js.UndefOr[scala.Boolean], 
     /* startIndex */ js.UndefOr[scala.Double], 
     /* maxResults */ js.UndefOr[scala.Double], 
-    stdLib.Promise[
+    js.Promise[
       js.Array[java.lang.String] | js.Array[atlassianDashCrowdDashClientLib.libModelsGroupMod.namespaced]
     ]
   ]
@@ -21,7 +21,7 @@ trait Anon_Group extends js.Object {
     /* expand */ js.UndefOr[scala.Boolean], 
     /* startIndex */ js.UndefOr[scala.Double], 
     /* maxResults */ js.UndefOr[scala.Double], 
-    stdLib.Promise[
+    js.Promise[
       js.Array[java.lang.String] | js.Array[atlassianDashCrowdDashClientLib.libModelsUserMod.namespaced]
     ]
   ]

@@ -10,6 +10,6 @@ trait Resolve[T] extends js.Object {
   def resolve(
     route: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot,
     state: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot
-  ): rxjsLib.rxjsMod.Observable[T] | stdLib.Promise[T] | T
+  ): rxjsLib.rxjsMod.Observable[T] | js.Promise[T] | T
 }
 

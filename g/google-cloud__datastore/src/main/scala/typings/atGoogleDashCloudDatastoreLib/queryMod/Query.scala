@@ -19,9 +19,9 @@ class Query protected () extends js.Object {
   def offset(n: scala.Double): this.type = js.native
   def order(property: java.lang.String): this.type = js.native
   def order(property: java.lang.String, options: OrderOptions): this.type = js.native
-  def run(): stdLib.Promise[QueryResult] = js.native
+  def run(): js.Promise[QueryResult] = js.native
   def run(callback: QueryCallback): scala.Unit = js.native
-  def run(options: QueryOptions): stdLib.Promise[QueryResult] = js.native
+  def run(options: QueryOptions): js.Promise[QueryResult] = js.native
   def run(options: QueryOptions, callback: QueryCallback): scala.Unit = js.native
   def runStream(): nodeLib.NodeJSNs.ReadableStream = js.native
   def select(properties: java.lang.String): this.type = js.native

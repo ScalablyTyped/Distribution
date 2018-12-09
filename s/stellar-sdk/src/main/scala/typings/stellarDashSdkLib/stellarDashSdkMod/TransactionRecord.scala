@@ -37,14 +37,14 @@ trait TransactionRecord extends Record {
   var source_account_sequence: java.lang.String = js.native
   @JSName("succeeds")
   var succeeds_Original: CallFunction[TransactionRecord] = js.native
-  def account(): stdLib.Promise[AccountRecord] = js.native
-  def effects(): stdLib.Promise[CollectionRecord[EffectRecord]] = js.native
-  def effects(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[EffectRecord]] = js.native
-  def ledger(): stdLib.Promise[LedgerRecord] = js.native
-  def operations(): stdLib.Promise[CollectionRecord[OperationRecord]] = js.native
-  def operations(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[OperationRecord]] = js.native
-  def precedes(): stdLib.Promise[TransactionRecord] = js.native
-  def self(): stdLib.Promise[TransactionRecord] = js.native
-  def succeeds(): stdLib.Promise[TransactionRecord] = js.native
+  def account(): js.Promise[AccountRecord] = js.native
+  def effects(): js.Promise[CollectionRecord[EffectRecord]] = js.native
+  def effects(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[EffectRecord]] = js.native
+  def ledger(): js.Promise[LedgerRecord] = js.native
+  def operations(): js.Promise[CollectionRecord[OperationRecord]] = js.native
+  def operations(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[OperationRecord]] = js.native
+  def precedes(): js.Promise[TransactionRecord] = js.native
+  def self(): js.Promise[TransactionRecord] = js.native
+  def succeeds(): js.Promise[TransactionRecord] = js.native
 }
 

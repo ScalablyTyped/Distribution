@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object es6DashPromisifyModMembers extends js.Object {
   def promisify(original: CallbackFunction): PromiseFunction = js.native
-  def promisify[T, U](original: js.Function2[/* param1 */ U, /* cb */ Callback[T], _]): js.Function1[/* param1 */ U, stdLib.Promise[T]] = js.native
-  def promisify[T, U, V](original: js.Function3[/* param1 */ U, /* param2 */ V, /* cb */ Callback[T], _]): js.Function2[/* param1 */ U, /* param2 */ V, stdLib.Promise[T]] = js.native
-  def promisify[T, U, V, W](original: js.Function4[/* param1 */ U, /* param2 */ V, /* param3 */ W, /* cb */ Callback[T], _]): js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, stdLib.Promise[T]] = js.native
+  def promisify[T, U](original: js.Function2[/* param1 */ U, /* cb */ Callback[T], _]): js.Function1[/* param1 */ U, js.Promise[T]] = js.native
+  def promisify[T, U, V](original: js.Function3[/* param1 */ U, /* param2 */ V, /* cb */ Callback[T], _]): js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]] = js.native
+  def promisify[T, U, V, W](original: js.Function4[/* param1 */ U, /* param2 */ V, /* param3 */ W, /* cb */ Callback[T], _]): js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]] = js.native
   @JSName("promisify")
-  def promisify_TFunction0[T](original: js.Function1[/* cb */ Callback[T], _]): js.Function0[stdLib.Promise[T]] = js.native
+  def promisify_TFunction0[T](original: js.Function1[/* cb */ Callback[T], _]): js.Function0[js.Promise[T]] = js.native
 }
 

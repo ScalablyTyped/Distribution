@@ -397,16 +397,16 @@ object coreModMembers extends js.Object {
   def ɵangular_packages_core_core_h(
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
   def ɵangular_packages_core_core_i[T](
-    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
+    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any]],
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
@@ -545,7 +545,7 @@ object coreModMembers extends js.Object {
     injector: atAngularCoreLib.srcDiMod.Injector,
     options: atAngularCoreLib.srcLinkerCompilerMod.CompilerOptions,
     moduleType: atAngularCoreLib.srcTypeMod.Type[M]
-  ): stdLib.Promise[
+  ): js.Promise[
     atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[M]
   ] = js.native
   def ɵcompilePipe(`type`: atAngularCoreLib.srcTypeMod.Type[_], meta: atAngularCoreLib.srcMetadataDirectivesMod.Pipe): scala.Unit = js.native
@@ -789,6 +789,15 @@ object coreModMembers extends js.Object {
     index: scala.Double,
     styleIndex: scala.Double,
     value: java.lang.String,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String): scala.Unit = js.native
+  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String, suffix: java.lang.String): scala.Unit = js.native
+  def ɵelementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: nodeLib.String,
     suffix: java.lang.String,
     directiveIndex: scala.Double
   ): scala.Unit = js.native
@@ -1525,9 +1534,9 @@ object coreModMembers extends js.Object {
   def ɵresolveComponentResources(
     resourceResolver: js.Function1[
       /* url */ java.lang.String, 
-      stdLib.Promise[java.lang.String | atAngularCoreLib.Anon_Text]
+      js.Promise[java.lang.String | atAngularCoreLib.Anon_Text]
     ]
-  ): stdLib.Promise[scala.Null] = js.native
+  ): js.Promise[scala.Null] = js.native
   def ɵrestoreView(viewToRestore: atAngularCoreLib.srcRender3InterfacesViewMod.OpaqueViewState): scala.Unit = js.native
   def ɵsanitizeHtml(unsafeHtml: js.Any): java.lang.String = js.native
   def ɵsanitizeResourceUrl(unsafeResourceUrl: js.Any): java.lang.String = js.native
@@ -1887,6 +1896,6 @@ object coreModMembers extends js.Object {
     updateDirectives: scala.Null,
     updateRenderer: atAngularCoreLib.srcViewTypesMod.ViewUpdateFn
   ): atAngularCoreLib.srcViewTypesMod.ViewDefinition = js.native
-  def ɵwhenRendered(component: js.Any): stdLib.Promise[scala.Null] = js.native
+  def ɵwhenRendered(component: js.Any): js.Promise[scala.Null] = js.native
 }
 

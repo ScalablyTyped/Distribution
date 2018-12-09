@@ -19,13 +19,13 @@ object themeNsMembers extends js.Object {
        * Returns the current theme for the specified window or the last focused window.
        * @param [windowId] The window for which we want the theme.
        */
-  def getCurrent(): stdLib.Promise[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeType] = js.native
+  def getCurrent(): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeType] = js.native
   /* theme functions */
   /**
        * Returns the current theme for the specified window or the last focused window.
        * @param [windowId] The window for which we want the theme.
        */
-  def getCurrent(windowId: scala.Double): stdLib.Promise[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeType] = js.native
+  def getCurrent(windowId: scala.Double): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeType] = js.native
   /**
        * Removes the updates made to the theme.
        * @param [windowId] The id of the window to reset. No id resets all windows.

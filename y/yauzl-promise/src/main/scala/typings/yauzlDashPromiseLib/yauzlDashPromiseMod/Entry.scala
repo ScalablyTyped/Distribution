@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Entry ()
   extends yauzlLib.yauzlMod.Entry {
-  def openReadStream(): stdLib.Promise[nodeLib.streamMod.Readable] = js.native
-  def openReadStream(options: yauzlLib.yauzlMod.ZipFileOptions): stdLib.Promise[nodeLib.streamMod.Readable] = js.native
+  def openReadStream(): js.Promise[nodeLib.streamMod.Readable] = js.native
+  def openReadStream(options: yauzlLib.yauzlMod.ZipFileOptions): js.Promise[nodeLib.streamMod.Readable] = js.native
 }
 

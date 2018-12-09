@@ -14,9 +14,9 @@ trait RunContext
   /**
   	 * Promise `.catch()` duck typing
   	 */
-  var `catch`: (js.Function0[stdLib.Promise[java.lang.String | _]]) | (js.Function1[
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | stdLib.PromiseLike[_]], 
-    stdLib.Promise[java.lang.String | _]
+  var `catch`: (js.Function0[js.Promise[java.lang.String | _]]) | (js.Function1[
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[java.lang.String | _]
   ]) = js.native
   var dependencies: js.Array[Dependency] = js.native
   var inDirSet: scala.Boolean = js.native
@@ -24,21 +24,21 @@ trait RunContext
   /**
   	 * Promise `.then()` duck typing
   	 */
-  var `then`: js.Function0[stdLib.Promise[_]] | (js.Function1[
-    /* onfulfilled */ js.Function1[/* value */ java.lang.String, _ | stdLib.PromiseLike[_]], 
-    stdLib.Promise[_]
+  var `then`: js.Function0[js.Promise[_]] | (js.Function1[
+    /* onfulfilled */ js.Function1[/* value */ java.lang.String, _ | js.Thenable[_]], 
+    js.Promise[_]
   ]) | (js.Function2[
-    /* onfulfilled */ js.Function1[/* value */ java.lang.String, _ | stdLib.PromiseLike[_]], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | stdLib.PromiseLike[_]], 
-    stdLib.Promise[_]
+    /* onfulfilled */ js.Function1[/* value */ java.lang.String, _ | js.Thenable[_]], 
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[_]
   ]) | (js.Function2[
     /* onfulfilled */ js.UndefOr[scala.Nothing], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | stdLib.PromiseLike[_]], 
-    stdLib.Promise[_]
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[_]
   ]) | (js.Function2[
     /* onfulfilled */ scala.Null, 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | stdLib.PromiseLike[_]], 
-    stdLib.Promise[_]
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[_]
   ]) = js.native
   /**
   	 * Hold the execution until the returned callback is triggered
@@ -86,7 +86,7 @@ trait RunContext
   	 * Return a promise representing the generator run process
   	 * @return Promise resolved on end or rejected on error
   	 */
-  def toPromise(): stdLib.Promise[java.lang.String] = js.native
+  def toPromise(): js.Promise[java.lang.String] = js.native
   /**
   	 * Provide arguments to the run context
   	 * @param  args - command line arguments as Array or space separated string

@@ -11,8 +11,8 @@ trait ValidateJS extends js.Object {
   var validators: js.Any = js.native
   def apply(attributes: js.Any, constraints: js.Any): js.Any = js.native
   def apply(attributes: js.Any, constraints: js.Any, options: ValidateOption): js.Any = js.native
-  def async(attributes: js.Any, constraints: js.Any): stdLib.Promise[_] = js.native
-  def async(attributes: js.Any, constraints: js.Any, options: AsyncValidateOption): stdLib.Promise[_] = js.native
+  def async(attributes: js.Any, constraints: js.Any): js.Promise[_] = js.native
+  def async(attributes: js.Any, constraints: js.Any, options: AsyncValidateOption): js.Promise[_] = js.native
   def capitalize(value: java.lang.String): java.lang.String = js.native
   def cleanAttributes(attributes: js.Any, whitelist: js.Any): js.Any = js.native
   def collectFormValues(form: js.Any): js.Any = js.native

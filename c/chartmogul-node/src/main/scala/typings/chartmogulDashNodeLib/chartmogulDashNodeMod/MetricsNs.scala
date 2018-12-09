@@ -70,15 +70,15 @@ object MetricsNs extends js.Object {
     var plans: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): stdLib.Promise[All] = js.native
-  def arpa(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): stdLib.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[ARPA]] = js.native
-  def arr(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): stdLib.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[ARR]] = js.native
-  def asp(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): stdLib.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[ASP]] = js.native
-  def customerChurnRate(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ParamsNoInterval): stdLib.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[CustomerChurnRate]] = js.native
-  def customerCount(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): stdLib.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[CustomerCount]] = js.native
-  def ltv(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ParamsNoInterval): stdLib.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[LTV]] = js.native
-  def mrr(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): stdLib.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[MRR]] = js.native
-  def mrrChurnRate(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ParamsNoInterval): stdLib.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[MRRChurnRate]] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): js.Promise[All] = js.native
+  def arpa(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): js.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[ARPA]] = js.native
+  def arr(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): js.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[ARR]] = js.native
+  def asp(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): js.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[ASP]] = js.native
+  def customerChurnRate(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ParamsNoInterval): js.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[CustomerChurnRate]] = js.native
+  def customerCount(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): js.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[CustomerCount]] = js.native
+  def ltv(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ParamsNoInterval): js.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[LTV]] = js.native
+  def mrr(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: Params): js.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[MRR]] = js.native
+  def mrrChurnRate(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ParamsNoInterval): js.Promise[chartmogulDashNodeLib.commonMod.EntriesSummary[MRRChurnRate]] = js.native
   @JSName("Customer")
   @js.native
   object CustomerNs extends js.Object {
@@ -103,18 +103,18 @@ object MetricsNs extends js.Object {
       var status: java.lang.String
     }
     
-    def activities(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[chartmogulDashNodeLib.commonMod.Entries[MetricsActivity]] = js.native
+    def activities(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[chartmogulDashNodeLib.commonMod.Entries[MetricsActivity]] = js.native
     def activities(
       config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
       uuid: java.lang.String,
       params: chartmogulDashNodeLib.commonMod.CursorParams
-    ): stdLib.Promise[chartmogulDashNodeLib.commonMod.Entries[MetricsActivity]] = js.native
-    def subscriptions(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[chartmogulDashNodeLib.commonMod.Entries[MetricsSubscription]] = js.native
+    ): js.Promise[chartmogulDashNodeLib.commonMod.Entries[MetricsActivity]] = js.native
+    def subscriptions(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[chartmogulDashNodeLib.commonMod.Entries[MetricsSubscription]] = js.native
     def subscriptions(
       config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
       uuid: java.lang.String,
       params: chartmogulDashNodeLib.commonMod.CursorParams
-    ): stdLib.Promise[chartmogulDashNodeLib.commonMod.Entries[MetricsSubscription]] = js.native
+    ): js.Promise[chartmogulDashNodeLib.commonMod.Entries[MetricsSubscription]] = js.native
   }
   
 }

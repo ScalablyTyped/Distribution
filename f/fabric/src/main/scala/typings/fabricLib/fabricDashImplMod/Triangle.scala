@@ -5,20 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Triangle")
+@JSImport("fabric/fabric-impl", "Triangle")
 @js.native
-class Triangle () extends js.Object {
+class Triangle () extends Object {
   /**
   	 * Constructor
   	 * @param [options] Options object
   	 */
   def this(options: ITriangleOptions) = this()
-  /**
-  	 * Returns complexity of an instance
-  	 * @return complexity of this instance
-  	 */
-  def complexity(): scala.Double = js.native
   /**
   	 * Returns SVG representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
@@ -33,8 +27,7 @@ class Triangle () extends js.Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Triangle")
+@JSImport("fabric/fabric-impl", "Triangle")
 @js.native
 object Triangle extends js.Object {
   /**

@@ -20,11 +20,11 @@ class Store[S] protected () extends js.Object {
   def commit(`type`: java.lang.String, payload: js.Any, options: CommitOptions): scala.Unit = js.native
   def commit[P /* <: Payload */](payloadWithType: P): scala.Unit = js.native
   def commit[P /* <: Payload */](payloadWithType: P, options: CommitOptions): scala.Unit = js.native
-  def dispatch(`type`: java.lang.String): stdLib.Promise[_] = js.native
-  def dispatch(`type`: java.lang.String, payload: js.Any): stdLib.Promise[_] = js.native
-  def dispatch(`type`: java.lang.String, payload: js.Any, options: DispatchOptions): stdLib.Promise[_] = js.native
-  def dispatch[P /* <: Payload */](payloadWithType: P): stdLib.Promise[_] = js.native
-  def dispatch[P /* <: Payload */](payloadWithType: P, options: DispatchOptions): stdLib.Promise[_] = js.native
+  def dispatch(`type`: java.lang.String): js.Promise[_] = js.native
+  def dispatch(`type`: java.lang.String, payload: js.Any): js.Promise[_] = js.native
+  def dispatch(`type`: java.lang.String, payload: js.Any, options: DispatchOptions): js.Promise[_] = js.native
+  def dispatch[P /* <: Payload */](payloadWithType: P): js.Promise[_] = js.native
+  def dispatch[P /* <: Payload */](payloadWithType: P, options: DispatchOptions): js.Promise[_] = js.native
   def hotUpdate(options: vuexLib.Anon_MutationsGetters[S]): scala.Unit = js.native
   def registerModule[T](path: java.lang.String, module: Module[T, S]): scala.Unit = js.native
   def registerModule[T](path: java.lang.String, module: Module[T, S], options: ModuleOptions): scala.Unit = js.native

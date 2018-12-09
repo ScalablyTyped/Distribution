@@ -15,7 +15,11 @@ package object ChaiNs {
     Assertion
   ]
   type Equal = js.Function2[/* value */ js.Any, /* message */ js.UndefOr[java.lang.String], Assertion]
-  type InstanceOf = js.Function2[/* constructor */ js.Object, /* message */ js.UndefOr[java.lang.String], Assertion]
+  type InstanceOf = js.Function2[
+    /* constructor */ chaiLib.Object, 
+    /* message */ js.UndefOr[java.lang.String], 
+    Assertion
+  ]
   type Match = js.Function2[/* regexp */ stdLib.RegExp, /* message */ js.UndefOr[java.lang.String], Assertion]
   type Members = js.Function2[/* set */ js.Array[js.Any], /* message */ js.UndefOr[java.lang.String], Assertion]
   type NumberComparer = js.Function2[
@@ -33,7 +37,7 @@ package object ChaiNs {
     Assertion
   ]
   type PropertyChange = js.Function3[
-    /* object */ js.Object, 
+    /* object */ chaiLib.Object, 
     /* property */ java.lang.String, 
     /* message */ js.UndefOr[java.lang.String], 
     Assertion

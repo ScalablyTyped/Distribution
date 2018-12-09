@@ -48,7 +48,7 @@ trait VRDisplay
   /**
        * Stops presenting to the VRDisplay.
        */
-  def exitPresent(): stdLib.Promise[scala.Unit] = js.native
+  def exitPresent(): js.Promise[scala.Unit] = js.native
   /* Return the current VREyeParameters for the given eye. */
   def getEyeParameters(whichEye: VREye_dt_alias): VREyeParameters = js.native
   /**
@@ -89,7 +89,7 @@ trait VRDisplay
        * Begin presenting to the VRDisplay. Must be called in response to a user gesture.
        * Repeat calls while already presenting will update the VRLayers being displayed.
        */
-  def requestPresent(layers: js.Array[VRLayer]): stdLib.Promise[scala.Unit] = js.native
+  def requestPresent(layers: js.Array[VRLayer]): js.Promise[scala.Unit] = js.native
   /**
        * Reset the pose for this display, treating its current position and
        * orientation as the "origin/zero" values. VRPose.position,

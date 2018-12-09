@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Relation
   extends parseLib.ParseNs.IBaseObject {
-  var removed: js.Array[js.Object]
-  def added(): js.Array[js.Object]
+  var removed: js.Array[parseLib.ParseNs.Object]
+  def added(): js.Array[parseLib.ParseNs.Object]
 }
 

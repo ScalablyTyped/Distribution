@@ -18,7 +18,7 @@ trait Payments extends js.Object {
            * @throws INVALID_PARAM
            * @throws NETWORK_FAILURE
            */
-  def consumePurchaseAsync(purchaseToken: java.lang.String): stdLib.Promise[scala.Unit]
+  def consumePurchaseAsync(purchaseToken: java.lang.String): js.Promise[scala.Unit]
   /**
            * Fetches the game's product catalog.
            *
@@ -27,7 +27,7 @@ trait Payments extends js.Object {
            * @throws PAYMENTS_NOT_INITIALIZED
            * @throws NETWORK_FAILURE
            */
-  def getCatalogAsync(): stdLib.Promise[js.Array[Product]]
+  def getCatalogAsync(): js.Promise[js.Array[Product]]
   /**
            * Fetches all of the player's unconsumed purchases. As a best practice, the game should fetch the current player's purchases
            * as soon as the client indicates that it is ready to perform payments-related operations. The game can then process and consume
@@ -38,7 +38,7 @@ trait Payments extends js.Object {
            * @throws PAYMENTS_NOT_INITIALIZED
            * @throws NETWORK_FAILURE
            */
-  def getPurchasesAsync(): stdLib.Promise[js.Array[Purchase]]
+  def getPurchasesAsync(): js.Promise[js.Array[Purchase]]
   /**
            * Sets a callback to be triggered when Payments operations are available.
            * @param callback The callback function to be executed when Payments are available.
@@ -55,6 +55,6 @@ trait Payments extends js.Object {
            * @throws NETWORK_FAILURE
            * @throws INVALID_OPERATION
            */
-  def purchaseAsync(purchaseConfig: PurchaseConfig): stdLib.Promise[Purchase]
+  def purchaseAsync(purchaseConfig: PurchaseConfig): js.Promise[Purchase]
 }
 

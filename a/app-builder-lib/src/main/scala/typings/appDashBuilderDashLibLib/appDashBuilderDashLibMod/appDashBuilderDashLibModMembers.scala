@@ -13,15 +13,15 @@ object appDashBuilderDashLibModMembers extends js.Object {
   def archFromString(name: java.lang.String): builderDashUtilLib.outArchMod.Arch = js.native
   def build(
     options: appDashBuilderDashLibLib.outPackagerApiMod.PackagerOptions with electronDashPublishLib.electronDashPublishMod.PublishOptions
-  ): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  ): js.Promise[js.Array[java.lang.String]] = js.native
   def build(
     options: appDashBuilderDashLibLib.outPackagerApiMod.PackagerOptions with electronDashPublishLib.electronDashPublishMod.PublishOptions,
     packager: appDashBuilderDashLibLib.outPackagerMod.Packager
-  ): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  ): js.Promise[js.Array[java.lang.String]] = js.native
   def buildForge(
     forgeOptions: appDashBuilderDashLibLib.outForgeDashMakerMod.ForgeOptions,
     options: appDashBuilderDashLibLib.outPackagerApiMod.PackagerOptions
-  ): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  ): js.Promise[js.Array[java.lang.String]] = js.native
   def checkBuildRequestOptions(
     options: appDashBuilderDashLibLib.outPackagerApiMod.PackagerOptions with electronDashPublishLib.electronDashPublishMod.PublishOptions
   ): scala.Unit = js.native

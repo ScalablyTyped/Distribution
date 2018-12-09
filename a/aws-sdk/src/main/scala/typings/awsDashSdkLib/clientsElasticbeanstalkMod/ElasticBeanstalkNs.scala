@@ -97,7 +97,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The ARN of an IAM service role that Elastic Beanstalk has permission to assume. The ServiceRole property is required the first time that you provide a VersionLifecycleConfig for the application in one of the supporting calls (CreateApplication or UpdateApplicationResourceLifecycle). After you provide it once, in either one of the calls, Elastic Beanstalk persists the Service Role with the application, and you don't need to specify it again in subsequent UpdateApplicationResourceLifecycle calls. You can, however, specify it in subsequent calls to change the Service Role to another value.
          */
-    var ServiceRole: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceRole: js.UndefOr[String] = js.undefined
     /**
          * The application version lifecycle configuration.
          */
@@ -129,7 +129,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * Reference to the artifact from the AWS CodeBuild build.
          */
-    var BuildArn: js.UndefOr[java.lang.String] = js.undefined
+    var BuildArn: js.UndefOr[String] = js.undefined
     /**
          * The creation date of the application version.
          */
@@ -197,15 +197,15 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The action ID of the scheduled managed action to execute.
          */
-    var ActionId: java.lang.String
+    var ActionId: String
     /**
          * The environment ID of the target environment.
          */
-    var EnvironmentId: js.UndefOr[java.lang.String] = js.undefined
+    var EnvironmentId: js.UndefOr[String] = js.undefined
     /**
          * The name of the target environment.
          */
-    var EnvironmentName: js.UndefOr[java.lang.String] = js.undefined
+    var EnvironmentName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -213,11 +213,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * A description of the managed action.
          */
-    var ActionDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ActionDescription: js.UndefOr[String] = js.undefined
     /**
          * The action ID of the managed action.
          */
-    var ActionId: js.UndefOr[java.lang.String] = js.undefined
+    var ActionId: js.UndefOr[String] = js.undefined
     /**
          * The type of managed action.
          */
@@ -225,7 +225,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The status of the managed action.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -241,7 +241,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The name of the artifact of the CodeBuild build. If provided, Elastic Beanstalk stores the build artifact in the S3 location S3-bucket/resources/application-name/codebuild/codebuild-version-label-artifact-name.zip. If not provided, Elastic Beanstalk stores the build artifact in the S3 location S3-bucket/resources/application-name/codebuild/codebuild-version-label.zip. 
          */
-    var ArtifactName: js.UndefOr[java.lang.String] = js.undefined
+    var ArtifactName: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
          */
@@ -773,11 +773,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The status of the deployment:    In Progress : The deployment is in progress.    Deployed : The deployment succeeded.    Failed : The deployment failed.  
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The version label of the application version in the deployment.
          */
-    var VersionLabel: js.UndefOr[java.lang.String] = js.undefined
+    var VersionLabel: js.UndefOr[String] = js.undefined
   }
   
   
@@ -889,7 +889,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The health color of the environment.
          */
-    var Color: js.UndefOr[java.lang.String] = js.undefined
+    var Color: js.UndefOr[String] = js.undefined
     /**
          * The environment's name.
          */
@@ -897,7 +897,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The health status of the environment. For example, Ok.
          */
-    var HealthStatus: js.UndefOr[java.lang.String] = js.undefined
+    var HealthStatus: js.UndefOr[String] = js.undefined
     /**
          * Summary health information for the instances in the environment.
          */
@@ -929,7 +929,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The pagination token returned by a previous request.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -941,7 +941,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * A pagination token that you pass to DescribeEnvironmentManagedActionHistory to get the next page of results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -949,11 +949,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The environment ID of the target environment.
          */
-    var EnvironmentId: js.UndefOr[java.lang.String] = js.undefined
+    var EnvironmentId: js.UndefOr[String] = js.undefined
     /**
          * The name of the target environment.
          */
-    var EnvironmentName: js.UndefOr[java.lang.String] = js.undefined
+    var EnvironmentName: js.UndefOr[String] = js.undefined
     /**
          * To show only actions with a particular status, specify a status.
          */
@@ -1241,11 +1241,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The name of the linked environment (the dependency).
          */
-    var EnvironmentName: js.UndefOr[java.lang.String] = js.undefined
+    var EnvironmentName: js.UndefOr[String] = js.undefined
     /**
          * The name of the link.
          */
-    var LinkName: js.UndefOr[java.lang.String] = js.undefined
+    var LinkName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1301,15 +1301,15 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The name of this environment tier.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The type of this environment tier.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
     /**
          * The version of this environment tier. When you don't set a value to it, Elastic Beanstalk uses the latest compatible worker tier version.  This member is deprecated. Any specific version that you set may become out of date. We recommend leaving it unspecified. 
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1509,7 +1509,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The protocol that is used by the Listener.
          */
-    var Protocol: js.UndefOr[java.lang.String] = js.undefined
+    var Protocol: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1525,7 +1525,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The domain name of the LoadBalancer.
          */
-    var Domain: js.UndefOr[java.lang.String] = js.undefined
+    var Domain: js.UndefOr[String] = js.undefined
     /**
          * A list of Listeners used by the LoadBalancer.
          */
@@ -1533,7 +1533,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The name of the LoadBalancer.
          */
-    var LoadBalancerName: js.UndefOr[java.lang.String] = js.undefined
+    var LoadBalancerName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1541,11 +1541,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * A description of the managed action.
          */
-    var ActionDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ActionDescription: js.UndefOr[String] = js.undefined
     /**
          * A unique identifier for the managed action.
          */
-    var ActionId: js.UndefOr[java.lang.String] = js.undefined
+    var ActionId: js.UndefOr[String] = js.undefined
     /**
          * The type of managed action.
          */
@@ -1565,11 +1565,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * A description of the managed action.
          */
-    var ActionDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ActionDescription: js.UndefOr[String] = js.undefined
     /**
          * A unique identifier for the managed action.
          */
-    var ActionId: js.UndefOr[java.lang.String] = js.undefined
+    var ActionId: js.UndefOr[String] = js.undefined
     /**
          * The type of the managed action.
          */
@@ -1581,7 +1581,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * If the action failed, a description of the failure.
          */
-    var FailureDescription: js.UndefOr[java.lang.String] = js.undefined
+    var FailureDescription: js.UndefOr[String] = js.undefined
     /**
          * If the action failed, the type of failure.
          */
@@ -1753,11 +1753,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The name of the framework.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The version of the framework.
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1765,11 +1765,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The name of the programming language.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The version of the programming language.
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1813,11 +1813,11 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The name of the queue.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The URL of the queue.
          */
-    var URL: js.UndefOr[java.lang.String] = js.undefined
+    var URL: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1949,7 +1949,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The availability zone in which the instance runs.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * Represents the causes, which provide more information about the current health status.
          */
@@ -1957,7 +1957,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * Represents the color indicator that gives you information about the health of the EC2 instance. For more information, see Health Colors and Statuses.
          */
-    var Color: js.UndefOr[java.lang.String] = js.undefined
+    var Color: js.UndefOr[String] = js.undefined
     /**
          * Information about the most recent deployment to an instance.
          */
@@ -1965,7 +1965,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * Returns the health status of the specified instance. For more information, see Health Colors and Statuses.
          */
-    var HealthStatus: js.UndefOr[java.lang.String] = js.undefined
+    var HealthStatus: js.UndefOr[String] = js.undefined
     /**
          * The ID of the Amazon EC2 instance.
          */
@@ -1973,7 +1973,7 @@ object ElasticBeanstalkNs extends js.Object {
     /**
          * The instance's type.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The time at which the EC2 instance was launched.
          */

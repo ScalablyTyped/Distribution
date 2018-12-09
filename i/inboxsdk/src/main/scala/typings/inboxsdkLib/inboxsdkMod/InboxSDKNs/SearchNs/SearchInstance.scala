@@ -11,7 +11,7 @@ trait SearchInstance extends js.Object {
   def registerSearchSuggestionsProvider(
     handler: js.Function1[
       /* query */ java.lang.String, 
-      js.Array[AutocompleteSearchResult] | stdLib.Promise[js.Array[AutocompleteSearchResult]]
+      js.Array[AutocompleteSearchResult] | js.Promise[js.Array[AutocompleteSearchResult]]
     ]
   ): scala.Unit
 }

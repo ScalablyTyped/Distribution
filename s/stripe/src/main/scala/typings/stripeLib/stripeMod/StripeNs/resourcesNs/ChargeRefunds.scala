@@ -28,24 +28,24 @@ trait ChargeRefunds
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]) with (js.Function2[
       /* data */ stripeLib.stripeMod.StripeNs.refundsNs.IRefundCreationOptions, 
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]) with (js.Function2[
       /* options */ stripeLib.stripeMod.StripeNs.HeaderOptions, 
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]) with (js.Function1[
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ])
   ] = js.undefined
   /**
@@ -62,7 +62,7 @@ trait ChargeRefunds
           stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
         ]
       ], 
-      stdLib.Promise[
+      js.Promise[
         stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ]
     ]) with (js.Function2[
@@ -72,7 +72,7 @@ trait ChargeRefunds
           stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
         ]
       ], 
-      stdLib.Promise[
+      js.Promise[
         stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ]
     ]) with (js.Function2[
@@ -82,7 +82,7 @@ trait ChargeRefunds
           stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
         ]
       ], 
-      stdLib.Promise[
+      js.Promise[
         stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ]
     ]) with (js.Function1[
@@ -91,7 +91,7 @@ trait ChargeRefunds
           stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
         ]
       ], 
-      stdLib.Promise[
+      js.Promise[
         stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ]
     ])
@@ -107,27 +107,27 @@ trait ChargeRefunds
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]) with (js.Function3[
       /* id */ java.lang.String, 
       /* data */ stripeLib.stripeMod.StripeNs.IDataOptions, 
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]) with (js.Function3[
       /* id */ java.lang.String, 
       /* options */ stripeLib.stripeMod.StripeNs.HeaderOptions, 
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]) with (js.Function2[
       /* id */ java.lang.String, 
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ])
   ] = js.undefined
   /**
@@ -144,14 +144,14 @@ trait ChargeRefunds
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]) with (js.Function3[
       /* id */ java.lang.String, 
       /* data */ stripeLib.stripeMod.StripeNs.IDataOptionsWithMetadata, 
       /* response */ js.UndefOr[
         stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
       ], 
-      stdLib.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
+      js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ])
   ] = js.undefined
 }

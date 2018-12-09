@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PaymentRequestUpdateEvent extends Event {
-  def updateWith(detailsPromise: Promise[PaymentDetailsUpdate]): scala.Unit = js.native
+  def updateWith(detailsPromise: js.Promise[PaymentDetailsUpdate]): scala.Unit = js.native
 }
 
 @JSGlobal("PaymentRequestUpdateEvent")

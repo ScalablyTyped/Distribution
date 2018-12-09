@@ -17,7 +17,7 @@ trait PromiseQueue extends js.Object {
        * @returns A promise that forwards the resolution/rejection of the promise returned by `promiseGenerator`,
        *          or immediately rejects if `maxQueuedPromise` is exceeded.
        */
-  def add[T](promiseGenerator: js.Function0[stdLib.Promise[T]]): stdLib.Promise[T]
+  def add[T](promiseGenerator: js.Function0[js.Promise[T]]): js.Promise[T]
   /**
        * Returns the number of promiseGenerators waiting in queue.
        */

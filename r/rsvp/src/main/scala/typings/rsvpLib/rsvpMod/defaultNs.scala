@@ -1364,7 +1364,7 @@ object defaultNs extends js.Object {
           rsvpLib.rsvpMod.RSVPNs.Arg[T7], 
           rsvpLib.rsvpMod.RSVPNs.Arg[T8], 
           rsvpLib.rsvpMod.RSVPNs.Arg[T9], 
-          T10 | stdLib.PromiseLike[T10]
+          T10 | js.Thenable[T10]
         ]
     ): rsvpLib.rsvpMod.RSVPNs.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native
     def race[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
@@ -1378,7 +1378,7 @@ object defaultNs extends js.Object {
           rsvpLib.rsvpMod.RSVPNs.Arg[T7], 
           rsvpLib.rsvpMod.RSVPNs.Arg[T8], 
           rsvpLib.rsvpMod.RSVPNs.Arg[T9], 
-          T10 | stdLib.PromiseLike[T10]
+          T10 | js.Thenable[T10]
         ],
       label: java.lang.String
     ): rsvpLib.rsvpMod.RSVPNs.Promise[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10] = js.native

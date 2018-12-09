@@ -19,6 +19,6 @@ trait Cache extends js.Object {
   def remove(cacheIndex: js.Object): scala.Unit
   def resolve(cacheIndex: js.Object, db: mongodbLib.mongodbMod.Db, client: mongodbLib.mongodbMod.MongoClient): scala.Unit
   def set(cacheIndex: js.Object, value: js.Object): scala.Unit
-  def waitFor(cacheIndex: js.Object): stdLib.Promise[js.Object]
+  def waitFor(cacheIndex: js.Object): js.Promise[js.Object]
 }
 

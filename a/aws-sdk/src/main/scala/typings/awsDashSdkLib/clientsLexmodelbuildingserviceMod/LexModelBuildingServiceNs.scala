@@ -21,7 +21,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the bot alias.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * The date that the bot alias was created.
          */
@@ -65,7 +65,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * If status is FAILED, Amazon Lex provides the reason that it failed to create the association.
          */
-    var failureReason: js.UndefOr[java.lang.String] = js.undefined
+    var failureReason: js.UndefOr[String] = js.undefined
     /**
          * The name of the association between the bot and the channel. 
          */
@@ -125,7 +125,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * A list of the slots defined for the intent.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -142,7 +142,7 @@ object LexModelBuildingServiceNs extends js.Object {
   
   
   trait ChannelConfigurationMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait ClientApiVersions extends js.Object {
@@ -169,7 +169,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Identifies a specific revision of the $LATEST version of the bot. If you specify a checksum and the $LATEST version of the bot has a different checksum, a PreconditionFailedException exception is returned and Amazon Lex doesn't publish a new version. If you don't specify a checksum, Amazon Lex publishes the $LATEST version.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * The name of the bot that you want to create a new version of. The name is case sensitive. 
          */
@@ -185,11 +185,11 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum identifying the version of the bot that was created.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * For each Amazon Lex bot created with the Amazon Lex Model Building Service, you must specify whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to the Children's Online Privacy Protection Act (COPPA) by specifying true or false in the childDirected field. By specifying true in the childDirected field, you confirm that your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. By specifying false in the childDirected field, you confirm that your use of Amazon Lex is not related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. You may not specify a default value for the childDirected field that does not accurately reflect whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. If your use of Amazon Lex relates to a website, program, or other application that is directed in whole or in part, to children under age 13, you must obtain any required verifiable parental consent under COPPA. For information regarding the use of Amazon Lex in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13, see the Amazon Lex FAQ. 
          */
-    var childDirected: js.UndefOr[scala.Boolean] = js.undefined
+    var childDirected: js.UndefOr[Boolean] = js.undefined
     /**
          * The message that Amazon Lex uses when it doesn't understand the user's request. For more information, see PutBot. 
          */
@@ -205,7 +205,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * If status is FAILED, Amazon Lex provides the reason that it failed to build the bot.
          */
-    var failureReason: js.UndefOr[java.lang.String] = js.undefined
+    var failureReason: js.UndefOr[String] = js.undefined
     /**
          * The maximum time in seconds that Amazon Lex retains the data gathered in a conversation. For more information, see PutBot.
          */
@@ -237,7 +237,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * The Amazon Polly voice ID that Amazon Lex uses for voice interactions with the user.
          */
-    var voiceId: js.UndefOr[java.lang.String] = js.undefined
+    var voiceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -245,7 +245,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the $LATEST version of the intent that should be used to create the new version. If you specify a checksum and the $LATEST version of the intent has a different checksum, Amazon Lex returns a PreconditionFailedException exception and doesn't publish a new version. If you don't specify a checksum, Amazon Lex publishes the $LATEST version.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * The name of the intent that you want to create a new version of. The name is case sensitive. 
          */
@@ -257,7 +257,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the intent version created.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * After the Lambda function specified in the fulfillmentActivity field fulfills the intent, Amazon Lex conveys this statement to the user. 
          */
@@ -321,7 +321,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum for the $LATEST version of the slot type that you want to publish. If you specify a checksum and the $LATEST version of the slot type has a different checksum, Amazon Lex returns a PreconditionFailedException exception and doesn't publish the new version. If you don't specify a checksum, Amazon Lex publishes the $LATEST version.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * The name of the slot type that you want to create a new version for. The name is case sensitive. 
          */
@@ -333,7 +333,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the $LATEST version of the slot type.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * The date that the slot type was created.
          */
@@ -525,7 +525,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the bot alias.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * The date that the bot alias was created.
          */
@@ -617,7 +617,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * If status is FAILED, Amazon Lex provides the reason that it failed to create the association.
          */
-    var failureReason: js.UndefOr[java.lang.String] = js.undefined
+    var failureReason: js.UndefOr[String] = js.undefined
     /**
          * The name of the association between the bot and the channel.
          */
@@ -677,7 +677,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * The version or alias of the bot.
          */
-    var versionOrAlias: java.lang.String
+    var versionOrAlias: String
   }
   
   
@@ -689,11 +689,11 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the bot used to identify a specific revision of the bot's $LATEST version.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * For each Amazon Lex bot created with the Amazon Lex Model Building Service, you must specify whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to the Children's Online Privacy Protection Act (COPPA) by specifying true or false in the childDirected field. By specifying true in the childDirected field, you confirm that your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. By specifying false in the childDirected field, you confirm that your use of Amazon Lex is not related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. You may not specify a default value for the childDirected field that does not accurately reflect whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. If your use of Amazon Lex relates to a website, program, or other application that is directed in whole or in part, to children under age 13, you must obtain any required verifiable parental consent under COPPA. For information regarding the use of Amazon Lex in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13, see the Amazon Lex FAQ. 
          */
-    var childDirected: js.UndefOr[scala.Boolean] = js.undefined
+    var childDirected: js.UndefOr[Boolean] = js.undefined
     /**
          * The message Amazon Lex uses when it doesn't understand the user's request. For more information, see PutBot. 
          */
@@ -709,7 +709,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * If status is FAILED, Amazon Lex explains why it failed to build the bot.
          */
-    var failureReason: js.UndefOr[java.lang.String] = js.undefined
+    var failureReason: js.UndefOr[String] = js.undefined
     /**
          * The maximum time in seconds that Amazon Lex retains the data gathered in a conversation. For more information, see PutBot.
          */
@@ -741,7 +741,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * The Amazon Polly voice ID that Amazon Lex uses for voice interaction with the user. For more information, see PutBot.
          */
-    var voiceId: js.UndefOr[java.lang.String] = js.undefined
+    var voiceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -841,7 +841,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Substring to match in built-in intent signatures. An intent will be returned if any part of its signature matches the substring. For example, "xyz" matches both "xyzabc" and "abcxyz." To find the signature for an intent, see Standard Built-in Intents in the Alexa Skills Kit.
          */
-    var signatureContains: js.UndefOr[java.lang.String] = js.undefined
+    var signatureContains: js.UndefOr[String] = js.undefined
   }
   
   
@@ -873,7 +873,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Substring to match in built-in slot type signatures. A slot type will be returned if any part of its signature matches the substring. For example, "xyz" matches both "xyzabc" and "abcxyz."
          */
-    var signatureContains: js.UndefOr[java.lang.String] = js.undefined
+    var signatureContains: js.UndefOr[String] = js.undefined
   }
   
   
@@ -921,7 +921,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * If status is FAILED, Amazon Lex provides the reason that it failed to export the resource.
          */
-    var failureReason: js.UndefOr[java.lang.String] = js.undefined
+    var failureReason: js.UndefOr[String] = js.undefined
     /**
          * The name of the bot being exported.
          */
@@ -933,7 +933,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * An S3 pre-signed URL that provides the location of the exported resource. The exported resource is a ZIP archive that contains the exported resource in JSON format. The structure of the archive may change. Your code should not rely on the archive structure.
          */
-    var url: js.UndefOr[java.lang.String] = js.undefined
+    var url: js.UndefOr[String] = js.undefined
     /**
          * The version of the bot being exported.
          */
@@ -945,7 +945,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * The identifier of the import job information to return.
          */
-    var importId: java.lang.String
+    var importId: String
   }
   
   
@@ -961,7 +961,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * The identifier for the specific import job.
          */
-    var importId: js.UndefOr[java.lang.String] = js.undefined
+    var importId: js.UndefOr[String] = js.undefined
     /**
          * The status of the import job. If the status is FAILED, you can get the reason for the failure from the failureReason field.
          */
@@ -997,7 +997,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the intent.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * After the Lambda function specified in the fulfillmentActivity element fulfills the intent, Amazon Lex conveys this statement to the user.
          */
@@ -1129,7 +1129,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the $LATEST version of the slot type.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * The date that the slot type was created.
          */
@@ -1325,7 +1325,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Identifies a specific revision of the $LATEST version. When you create a new bot alias, leave the checksum field blank. If you specify a checksum you get a BadRequestException exception. When you want to update a bot alias, set the checksum field to the checksum of the most recent revision of the $LATEST version. If you don't specify the  checksum field, or if the checksum does not match the $LATEST version, you get a PreconditionFailedException exception.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * A description of the alias.
          */
@@ -1349,7 +1349,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * The checksum for the current version of the alias.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * The date that the bot alias was created.
          */
@@ -1377,16 +1377,16 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Identifies a specific revision of the $LATEST version. When you create a new bot, leave the checksum field blank. If you specify a checksum you get a BadRequestException exception. When you want to update a bot, set the checksum field to the checksum of the most recent revision of the $LATEST version. If you don't specify the  checksum field, or if the checksum does not match the $LATEST version, you get a PreconditionFailedException exception.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * For each Amazon Lex bot created with the Amazon Lex Model Building Service, you must specify whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to the Children's Online Privacy Protection Act (COPPA) by specifying true or false in the childDirected field. By specifying true in the childDirected field, you confirm that your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. By specifying false in the childDirected field, you confirm that your use of Amazon Lex is not related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. You may not specify a default value for the childDirected field that does not accurately reflect whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. If your use of Amazon Lex relates to a website, program, or other application that is directed in whole or in part, to children under age 13, you must obtain any required verifiable parental consent under COPPA. For information regarding the use of Amazon Lex in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13, see the Amazon Lex FAQ. 
          */
-    var childDirected: scala.Boolean
+    var childDirected: Boolean
     /**
          * When Amazon Lex doesn't understand the user's intent, it uses this message to get clarification. To specify how many times Amazon Lex should repeate the clarification prompt, use the maxAttempts field. If Amazon Lex still doesn't understand, it sends the message in the abortStatement field.  When you create a clarification prompt, make sure that it suggests the correct response from the user. for example, for a bot that orders pizza and drinks, you might create this clarification prompt: "What would you like to do? You can say 'Order a pizza' or 'Order a drink.'"
          */
     var clarificationPrompt: js.UndefOr[Prompt] = js.undefined
-    var createVersion: js.UndefOr[scala.Boolean] = js.undefined
+    var createVersion: js.UndefOr[Boolean] = js.undefined
     /**
          * A description of the bot.
          */
@@ -1414,7 +1414,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * The Amazon Polly voice ID that you want Amazon Lex to use for voice interactions with the user. The locale configured for the voice must match the locale of the bot. For more information, see Available Voices in the Amazon Polly Developer Guide.
          */
-    var voiceId: js.UndefOr[java.lang.String] = js.undefined
+    var voiceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1426,16 +1426,16 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the bot that you created.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * For each Amazon Lex bot created with the Amazon Lex Model Building Service, you must specify whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to the Children's Online Privacy Protection Act (COPPA) by specifying true or false in the childDirected field. By specifying true in the childDirected field, you confirm that your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. By specifying false in the childDirected field, you confirm that your use of Amazon Lex is not related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. You may not specify a default value for the childDirected field that does not accurately reflect whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. If your use of Amazon Lex relates to a website, program, or other application that is directed in whole or in part, to children under age 13, you must obtain any required verifiable parental consent under COPPA. For information regarding the use of Amazon Lex in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13, see the Amazon Lex FAQ. 
          */
-    var childDirected: js.UndefOr[scala.Boolean] = js.undefined
+    var childDirected: js.UndefOr[Boolean] = js.undefined
     /**
          *  The prompts that Amazon Lex uses when it doesn't understand the user's intent. For more information, see PutBot. 
          */
     var clarificationPrompt: js.UndefOr[Prompt] = js.undefined
-    var createVersion: js.UndefOr[scala.Boolean] = js.undefined
+    var createVersion: js.UndefOr[Boolean] = js.undefined
     /**
          * The date that the bot was created.
          */
@@ -1447,7 +1447,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * If status is FAILED, Amazon Lex provides the reason that it failed to build the bot.
          */
-    var failureReason: js.UndefOr[java.lang.String] = js.undefined
+    var failureReason: js.UndefOr[String] = js.undefined
     /**
          * The maximum length of time that Amazon Lex retains the data gathered in a conversation. For more information, see PutBot.
          */
@@ -1479,7 +1479,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * The Amazon Polly voice ID that Amazon Lex uses for voice interaction with the user. For more information, see PutBot.
          */
-    var voiceId: js.UndefOr[java.lang.String] = js.undefined
+    var voiceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1487,7 +1487,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Identifies a specific revision of the $LATEST version. When you create a new intent, leave the checksum field blank. If you specify a checksum you get a BadRequestException exception. When you want to update a intent, set the checksum field to the checksum of the most recent revision of the $LATEST version. If you don't specify the  checksum field, or if the checksum does not match the $LATEST version, you get a PreconditionFailedException exception.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          *  The statement that you want Amazon Lex to convey to the user after the intent is successfully fulfilled by the Lambda function.  This element is relevant only if you provide a Lambda function in the fulfillmentActivity. If you return the intent to the client application, you can't specify this element.  The followUpPrompt and conclusionStatement are mutually exclusive. You can specify only one. 
          */
@@ -1496,7 +1496,7 @@ object LexModelBuildingServiceNs extends js.Object {
          * Prompts the user to confirm the intent. This question should have a yes or no answer. Amazon Lex uses this prompt to ensure that the user acknowledges that the intent is ready for fulfillment. For example, with the OrderPizza intent, you might want to confirm that the order is correct before placing it. For other intents, such as intents that simply respond to user questions, you might not need to ask the user for confirmation before providing the information.   You you must provide both the rejectionStatement and the confirmationPrompt, or neither. 
          */
     var confirmationPrompt: js.UndefOr[Prompt] = js.undefined
-    var createVersion: js.UndefOr[scala.Boolean] = js.undefined
+    var createVersion: js.UndefOr[Boolean] = js.undefined
     /**
          * A description of the intent.
          */
@@ -1540,7 +1540,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the $LATESTversion of the intent created or updated.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
     /**
          * After the Lambda function specified in thefulfillmentActivityintent fulfills the intent, Amazon Lex conveys this statement to the user.
          */
@@ -1549,7 +1549,7 @@ object LexModelBuildingServiceNs extends js.Object {
          * If defined in the intent, Amazon Lex prompts the user to confirm the intent before fulfilling it.
          */
     var confirmationPrompt: js.UndefOr[Prompt] = js.undefined
-    var createVersion: js.UndefOr[scala.Boolean] = js.undefined
+    var createVersion: js.UndefOr[Boolean] = js.undefined
     /**
          * The date that the intent was created.
          */
@@ -1605,8 +1605,8 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Identifies a specific revision of the $LATEST version. When you create a new slot type, leave the checksum field blank. If you specify a checksum you get a BadRequestException exception. When you want to update a slot type, set the checksum field to the checksum of the most recent revision of the $LATEST version. If you don't specify the  checksum field, or if the checksum does not match the $LATEST version, you get a PreconditionFailedException exception.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
-    var createVersion: js.UndefOr[scala.Boolean] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
+    var createVersion: js.UndefOr[Boolean] = js.undefined
     /**
          * A description of the slot type.
          */
@@ -1630,8 +1630,8 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * Checksum of the $LATEST version of the slot type.
          */
-    var checksum: js.UndefOr[java.lang.String] = js.undefined
-    var createVersion: js.UndefOr[scala.Boolean] = js.undefined
+    var checksum: js.UndefOr[String] = js.undefined
+    var createVersion: js.UndefOr[Boolean] = js.undefined
     /**
          * The date that the slot type was created.
          */
@@ -1751,7 +1751,7 @@ object LexModelBuildingServiceNs extends js.Object {
     /**
          * The identifier for the specific import job.
          */
-    var importId: js.UndefOr[java.lang.String] = js.undefined
+    var importId: js.UndefOr[String] = js.undefined
     /**
          * The status of the import job. If the status is FAILED, you can get the reason for the failure using the GetImport operation.
          */
@@ -2834,7 +2834,7 @@ object LexModelBuildingServiceNs extends js.Object {
   type Status = awsDashSdkLib.awsDashSdkLibStrings.BUILDING | awsDashSdkLib.awsDashSdkLibStrings.READY | awsDashSdkLib.awsDashSdkLibStrings.READY_BASIC_TESTING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.NOT_BUILT | java.lang.String
   type StatusType = awsDashSdkLib.awsDashSdkLibStrings.Detected | awsDashSdkLib.awsDashSdkLibStrings.Missed | java.lang.String
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type SynonymList = js.Array[Value]
   type Timestamp = stdLib.Date
   type UserId = java.lang.String

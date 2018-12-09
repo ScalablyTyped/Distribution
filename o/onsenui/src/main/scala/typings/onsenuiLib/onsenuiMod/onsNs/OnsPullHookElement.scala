@@ -23,13 +23,13 @@ trait OnsPullHookElement
   /**
        * @description Define the function that will be called in the `"action"` state.
        */
-  var onAction: js.UndefOr[js.Function] = js.native
+  var onAction: js.UndefOr[coreDashJsLib.Function] = js.native
   /**
        * @param {Number} ratio Pulled ratio (scroll / height).
        * @param {Object} animationOptions Object containing duration and timing.
        * @description Hook called whenever the user pulls the element.
        **/
-  var onPull: js.UndefOr[js.Function] = js.native
+  var onPull: js.UndefOr[coreDashJsLib.Function] = js.native
   /**
       * @description The current number of pixels the pull hook has moved.
       */

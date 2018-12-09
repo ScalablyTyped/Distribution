@@ -11,7 +11,7 @@ object metadataNs extends js.Object {
   @JSName("column")
   @js.native
   object columnNs extends js.Object {
-    def list(): stdLib.Promise[_] = js.native
+    def list(): js.Promise[_] = js.native
   }
   
 }

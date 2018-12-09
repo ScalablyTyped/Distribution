@@ -32,7 +32,7 @@ class Publisher protected ()
     listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): this.type = js.native
   /* protected */ def sayHello(): scala.Unit = js.native
-  def start(): stdLib.Promise[scala.Unit] = js.native
+  def start(): js.Promise[scala.Unit] = js.native
   def stop(): scala.Unit = js.native
 }
 

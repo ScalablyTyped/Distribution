@@ -15,7 +15,7 @@ class FileCopier () extends js.Object {
   var isUseHardLink: scala.Boolean = js.native
   val isUseHardLinkFunction: js.UndefOr[js.Any] = js.native
   val transformer: js.UndefOr[js.Any] = js.native
-  def copy(src: java.lang.String, dest: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def copy(src: java.lang.String, dest: java.lang.String, stat: fsDashExtraDashPLib.fsDashExtraDashPMod.Stats): stdLib.Promise[scala.Unit] = js.native
+  def copy(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
+  def copy(src: java.lang.String, dest: java.lang.String, stat: fsDashExtraDashPLib.fsDashExtraDashPMod.Stats): js.Promise[scala.Unit] = js.native
 }
 

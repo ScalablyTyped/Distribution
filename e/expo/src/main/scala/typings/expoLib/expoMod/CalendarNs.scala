@@ -270,78 +270,78 @@ object CalendarNs extends js.Object {
   
   /** Available on Android only. Creates a new attendee record and adds it to the specified event. Note that if eventId specifies a recurring event, this will add the attendee to every instance of the event. */
   def createAttendeeAsync(/**  ID of the event to add this attendee to. Required. */
-  eventId: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  eventId: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Available on Android only. Creates a new attendee record and adds it to the specified event. Note that if eventId specifies a recurring event, this will add the attendee to every instance of the event. */
   def createAttendeeAsync(
     /**  ID of the event to add this attendee to. Required. */
   eventId: java.lang.String,
     /** A map of details for the attendee to be created  */
   details: Attendee
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /** Creates a new calendar on the device, allowing events to be added later and displayed. */
-  def createCalendarAsync(details: Calendar): stdLib.Promise[java.lang.String] = js.native
+  def createCalendarAsync(details: Calendar): js.Promise[java.lang.String] = js.native
   /** Creates a new event on the specified calendar. */
   def createEventAsync(/** ID of the calendar to create this event in. Required. */
-  calendarId: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  calendarId: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Creates a new event on the specified calendar. */
   def createEventAsync(
     /** ID of the calendar to create this event in. Required. */
   calendarId: java.lang.String,
     details: Event
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /** Available on iOS only. Creates a new reminder on the specified calendar. */
   def createReminderAsync(/** ID of the calendar to create this reminder in. Required. */
-  calendarId: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  calendarId: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Available on iOS only. Creates a new reminder on the specified calendar. */
   def createReminderAsync(
     /** ID of the calendar to create this reminder in. Required. */
   calendarId: java.lang.String,
     /** A map of details for the reminder to be created */
   details: Reminder
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /** Available on Android only. Deletes an existing attendee record from the device. Use with caution. */
-  def deleteAttendeeAsync(id: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def deleteAttendeeAsync(id: java.lang.String): js.Promise[scala.Unit] = js.native
   /** Deletes an existing calendar and all associated events/reminders/attendees from the device. Use with caution. */
-  def deleteCalendarAsync(id: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def deleteCalendarAsync(id: java.lang.String): js.Promise[scala.Unit] = js.native
   /** Deletes an existing event from the device. Use with caution. */
   def deleteEventAsync(/** ID of the event to be deleted. Required. */
-  id: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  id: java.lang.String): js.Promise[scala.Unit] = js.native
   /** Deletes an existing event from the device. Use with caution. */
   def deleteEventAsync(
     /** ID of the event to be deleted. Required. */
   id: java.lang.String,
     /** A map of options for recurring events */
   recurringEventOptions: RecurringEventOptions
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /** Available on iOS only. Deletes an existing reminder from the device. Use with caution. */
-  def deleteReminderAsync(id: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def deleteReminderAsync(id: java.lang.String): js.Promise[scala.Unit] = js.native
   /** Gets all attendees for a given event (or instance of a recurring event). */
   def getAttendeesForEventAsync(/** ID of the event to return attendees for. Required. */
-  eventId: java.lang.String): stdLib.Promise[js.Array[Attendee]] = js.native
+  eventId: java.lang.String): js.Promise[js.Array[Attendee]] = js.native
   /** Gets all attendees for a given event (or instance of a recurring event). */
   def getAttendeesForEventAsync(
     /** ID of the event to return attendees for. Required. */
   eventId: java.lang.String,
     /** A map of options for recurring events */
   recurrentEventOptions: RecurringEventOptions
-  ): stdLib.Promise[js.Array[Attendee]] = js.native
+  ): js.Promise[js.Array[Attendee]] = js.native
   /** Gets an array of calendar objects with details about the different calendars stored on the device. */
-  def getCalendarsAsync(): stdLib.Promise[js.Array[Calendar]] = js.native
+  def getCalendarsAsync(): js.Promise[js.Array[Calendar]] = js.native
   /** Gets an array of calendar objects with details about the different calendars stored on the device. */
   def getCalendarsAsync(
     /** (iOS only) Not required, but if defined, filters the returned calendars to a specific entity type.  */
   entityType: EntityTypes
-  ): stdLib.Promise[js.Array[Calendar]] = js.native
+  ): js.Promise[js.Array[Calendar]] = js.native
   /** Returns a specific event selected by ID. If a specific instance of a recurring event is desired, the start date of this instance must also be provided, as instances of recurring events do not have their own unique and stable IDs on either iOS or Android. */
   def getEventAsync(/** ID of the event to return. Required. */
-  id: java.lang.String): stdLib.Promise[Event] = js.native
+  id: java.lang.String): js.Promise[Event] = js.native
   /** Returns a specific event selected by ID. If a specific instance of a recurring event is desired, the start date of this instance must also be provided, as instances of recurring events do not have their own unique and stable IDs on either iOS or Android. */
   def getEventAsync(
     /** ID of the event to return. Required. */
   id: java.lang.String,
     /** A map of options for recurring events */
   recurringEventOptions: RecurringEventOptions
-  ): stdLib.Promise[Event] = js.native
+  ): js.Promise[Event] = js.native
   /** Returns all events in a given set of calendars over a specified time period. */
   def getEventsAsync(
     /** Array of IDs of calendars to search for events in. Required. */
@@ -350,20 +350,20 @@ object CalendarNs extends js.Object {
   startDate: stdLib.Date,
     /** End of time period to search for events in. Required. */
   endDate: stdLib.Date
-  ): stdLib.Promise[js.Array[Event]] = js.native
+  ): js.Promise[js.Array[Event]] = js.native
   /** Available on iOS only. Returns a specific reminder selected by ID. */
-  def getReminderAsync(id: java.lang.String): stdLib.Promise[Reminder] = js.native
+  def getReminderAsync(id: java.lang.String): js.Promise[Reminder] = js.native
   /** Available on iOS only. Returns a list of reminders matching the provided criteria. */
   def getRemindersAsync(
     /**  Array of IDs of calendars to search for reminders in. Required. */
   calendarIds: js.Array[java.lang.String]
-  ): stdLib.Promise[js.Array[Reminder]] = js.native
+  ): js.Promise[js.Array[Reminder]] = js.native
   /** Available on iOS only. Returns a list of reminders matching the provided criteria. */
   def getRemindersAsync(
     /**  Array of IDs of calendars to search for reminders in. Required. */
   calendarIds: js.Array[java.lang.String],
     status: ReminderStatus
-  ): stdLib.Promise[js.Array[Reminder]] = js.native
+  ): js.Promise[js.Array[Reminder]] = js.native
   /** Available on iOS only. Returns a list of reminders matching the provided criteria. */
   def getRemindersAsync(
     /**  Array of IDs of calendars to search for reminders in. Required. */
@@ -371,7 +371,7 @@ object CalendarNs extends js.Object {
     status: ReminderStatus,
     /** Beginning of time period to search for reminders in. Required if status is defined. */
   startDate: stdLib.Date
-  ): stdLib.Promise[js.Array[Reminder]] = js.native
+  ): js.Promise[js.Array[Reminder]] = js.native
   /** Available on iOS only. Returns a list of reminders matching the provided criteria. */
   def getRemindersAsync(
     /**  Array of IDs of calendars to search for reminders in. Required. */
@@ -381,38 +381,38 @@ object CalendarNs extends js.Object {
   startDate: stdLib.Date,
     /** End of time period to search for reminders in. Required if status is defined. */
   endDate: stdLib.Date
-  ): stdLib.Promise[js.Array[Reminder]] = js.native
+  ): js.Promise[js.Array[Reminder]] = js.native
   /** Available on iOS only. Returns a specific source selected by ID. */
-  def getSourceAsync(id: java.lang.String): stdLib.Promise[Source] = js.native
+  def getSourceAsync(id: java.lang.String): js.Promise[Source] = js.native
   /** Available on iOS only. */
-  def getSourcesAsync(): stdLib.Promise[js.Array[Source]] = js.native
+  def getSourcesAsync(): js.Promise[js.Array[Source]] = js.native
   /** Available on Android only. Sends an intent to open the specified event in the OS Calendar app. */
   def openEventInCalendar(/** ID of the event to open. Required. */
   id: java.lang.String): scala.Unit = js.native
   /** Available on Android only. Updates an existing attendee record. To remove a property, explicitly set it to null in details. */
   def updateAttendeeAsync(/** ID of the attendee record to be updated. Required. */
-  id: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  id: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Available on Android only. Updates an existing attendee record. To remove a property, explicitly set it to null in details. */
   def updateAttendeeAsync(
     /** ID of the attendee record to be updated. Required. */
   id: java.lang.String,
     /** A map of properties to be updated  */
   details: Attendee
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /** Updates the provided details of an existing calendar stored on the device. To remove a property, explicitly set it to null in details */
-  def updateCalendarAsync(id: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def updateCalendarAsync(id: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Updates the provided details of an existing calendar stored on the device. To remove a property, explicitly set it to null in details */
-  def updateCalendarAsync(id: java.lang.String, details: Calendar): stdLib.Promise[java.lang.String] = js.native
+  def updateCalendarAsync(id: java.lang.String, details: Calendar): js.Promise[java.lang.String] = js.native
   /** Updates the provided details of an existing calendar stored on the device. To remove a property, explicitly set it to null in details */
   def updateEventAsync(/** ID of the event to be updated. Required. */
-  id: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  id: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Updates the provided details of an existing calendar stored on the device. To remove a property, explicitly set it to null in details */
   def updateEventAsync(
     /** ID of the event to be updated. Required. */
   id: java.lang.String,
     /** A map of properties to be updated  */
   details: Event
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /** Updates the provided details of an existing calendar stored on the device. To remove a property, explicitly set it to null in details */
   def updateEventAsync(
     /** ID of the event to be updated. Required. */
@@ -421,7 +421,7 @@ object CalendarNs extends js.Object {
   details: Event,
     /** A map of options for recurring events */
   recurrentEventOptions: RecurringEventOptions
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /** Updates the provided details of an existing calendar stored on the device. To remove a property, explicitly set it to null in details */
   def updateEventAsync(
     /** ID of the event to be updated. Required. */
@@ -430,17 +430,17 @@ object CalendarNs extends js.Object {
   details: scala.Null,
     /** A map of options for recurring events */
   recurrentEventOptions: RecurringEventOptions
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   /** Available on iOS only. Updates the provided details of an existing reminder stored on the device. To remove a property, explicitly set it to null in details. */
   def updateReminderAsync(/** ID of the reminder to be updated. Required. */
-  id: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  id: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Available on iOS only. Updates the provided details of an existing reminder stored on the device. To remove a property, explicitly set it to null in details. */
   def updateReminderAsync(
     /** ID of the reminder to be updated. Required. */
   id: java.lang.String,
     /** A map of properties to be updated */
   details: Reminder
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   @js.native
   object AlarmMethod extends js.Object {
     @js.native

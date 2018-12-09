@@ -523,11 +523,11 @@ class Engine protected () extends js.Object {
     ]
   ): IFileRequest = js.native
   /** @hidden */
-  def _loadFileAsync(url: java.lang.String): stdLib.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
+  def _loadFileAsync(url: java.lang.String): js.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
   /** @hidden */
-  def _loadFileAsync(url: java.lang.String, database: Database): stdLib.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
+  def _loadFileAsync(url: java.lang.String, database: Database): js.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
   /** @hidden */
-  def _loadFileAsync(url: java.lang.String, database: Database, useArrayBuffer: scala.Boolean): stdLib.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
+  def _loadFileAsync(url: java.lang.String, database: Database, useArrayBuffer: scala.Boolean): js.Promise[java.lang.String | stdLib.ArrayBuffer] = js.native
   /** @hidden */
   def _readTexturePixels(texture: InternalTexture, width: scala.Double, height: scala.Double): stdLib.ArrayBufferView = js.native
   /** @hidden */
@@ -2162,7 +2162,7 @@ class Engine protected () extends js.Object {
            * The onVRDisplayChangedObservable will be notified upon these changes
            * @returns A promise containing a VRDisplay and if vr is supported
            */
-  def initWebVRAsync(): stdLib.Promise[IDisplayChangedEventArgs] = js.native
+  def initWebVRAsync(): js.Promise[IDisplayChangedEventArgs] = js.native
   /**
            * Gets a boolean indicating that the engine is running in deterministic lock step mode
            * @see http://doc.babylonjs.com/babylon101/animations#deterministic-lockstep

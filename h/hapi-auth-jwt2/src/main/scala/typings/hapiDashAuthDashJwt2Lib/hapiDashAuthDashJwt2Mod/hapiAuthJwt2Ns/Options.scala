@@ -42,7 +42,7 @@ trait Options extends js.Object {
            * The secret key used to check the signature of the token *or* a *key lookup function*
            */
   var key: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | stdLib.Promise[hapiDashAuthDashJwt2Lib.Anon_Key]
+    java.lang.String | js.Array[java.lang.String] | js.Promise[hapiDashAuthDashJwt2Lib.Anon_Key]
   ] = js.undefined
   /**
            * function called to decorate the response with authentication headers
@@ -79,6 +79,6 @@ trait Options extends js.Object {
            * @param decoded the *decoded* and *verified* JWT received from the client in *request.headers.authorization*
            * @param request the original *request* received from the client
            */
-  def validate(decoded: js.Object, request: hapiLib.hapiMod.Request, tk: hapiLib.hapiMod.ResponseToolkit): ValidationResult | stdLib.Promise[ValidationResult]
+  def validate(decoded: js.Object, request: hapiLib.hapiMod.Request, tk: hapiLib.hapiMod.ResponseToolkit): ValidationResult | js.Promise[ValidationResult]
 }
 

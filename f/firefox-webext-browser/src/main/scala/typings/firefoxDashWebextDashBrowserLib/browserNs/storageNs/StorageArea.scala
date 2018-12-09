@@ -16,49 +16,49 @@ trait StorageArea extends js.Object {
   var getBytesInUse: js.UndefOr[
     js.Function1[
       /* keys */ js.UndefOr[java.lang.String | js.Array[java.lang.String]], 
-      stdLib.Promise[scala.Double]
+      js.Promise[scala.Double]
     ]
   ] = js.native
   /** Removes all items from storage. */
-  def clear(): stdLib.Promise[scala.Unit] = js.native
+  def clear(): js.Promise[scala.Unit] = js.native
   /**
            * Gets one or more items from storage.
            * @param [keys] A single key to get, list of keys to get, or a dictionary specifying default values (see
            *     description of the object). An empty list or object will return an empty result object. Pass in `null`
            *     to get the entire contents of storage.
            */
-  def get(): stdLib.Promise[_] = js.native
+  def get(): js.Promise[_] = js.native
   /**
            * Gets one or more items from storage.
            * @param [keys] A single key to get, list of keys to get, or a dictionary specifying default values (see
            *     description of the object). An empty list or object will return an empty result object. Pass in `null`
            *     to get the entire contents of storage.
            */
-  def get(keys: java.lang.String): stdLib.Promise[_] = js.native
+  def get(keys: java.lang.String): js.Promise[_] = js.native
   /**
            * Gets one or more items from storage.
            * @param [keys] A single key to get, list of keys to get, or a dictionary specifying default values (see
            *     description of the object). An empty list or object will return an empty result object. Pass in `null`
            *     to get the entire contents of storage.
            */
-  def get(keys: js.Array[java.lang.String]): stdLib.Promise[_] = js.native
+  def get(keys: js.Array[java.lang.String]): js.Promise[_] = js.native
   /**
            * Gets one or more items from storage.
            * @param [keys] A single key to get, list of keys to get, or a dictionary specifying default values (see
            *     description of the object). An empty list or object will return an empty result object. Pass in `null`
            *     to get the entire contents of storage.
            */
-  def get(keys: js.Object): stdLib.Promise[_] = js.native
+  def get(keys: js.Object): js.Promise[_] = js.native
   /**
            * Removes one or more items from storage.
            * @param keys A single key or a list of keys for items to remove.
            */
-  def remove(keys: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def remove(keys: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Removes one or more items from storage.
            * @param keys A single key or a list of keys for items to remove.
            */
-  def remove(keys: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def remove(keys: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
   /**
            * Sets multiple items.
            * @param items An object which gives each key/value pair to update storage with. Any other key/value pairs in
@@ -68,6 +68,6 @@ trait StorageArea extends js.Object {
            *     `"function"` will typically serialize to `{}`, with the exception of `Array` (serializes as expected),
            *     `Date`, and `Regex` (serialize using their `String` representation).
            */
-  def set(items: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def set(items: js.Any): js.Promise[scala.Unit] = js.native
 }
 

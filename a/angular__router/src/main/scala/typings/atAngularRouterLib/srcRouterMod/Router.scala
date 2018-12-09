@@ -230,7 +230,7 @@ class Router protected () extends js.Object {
        * or the one provided in the `relativeTo` property of the second parameter (the
        * `NavigationExtras`).
        */
-  def navigate(commands: js.Array[_]): stdLib.Promise[scala.Boolean] = js.native
+  def navigate(commands: js.Array[_]): js.Promise[scala.Boolean] = js.native
   /**
        * Navigate based on the provided array of commands and a starting point.
        * If no starting route is provided, the navigation is absolute.
@@ -255,7 +255,7 @@ class Router protected () extends js.Object {
        * or the one provided in the `relativeTo` property of the second parameter (the
        * `NavigationExtras`).
        */
-  def navigate(commands: js.Array[_], extras: NavigationExtras): stdLib.Promise[scala.Boolean] = js.native
+  def navigate(commands: js.Array[_], extras: NavigationExtras): js.Promise[scala.Boolean] = js.native
   /**
        * Navigate based on the provided url. This navigation is always absolute.
        *
@@ -280,7 +280,7 @@ class Router protected () extends js.Object {
        * in the second parameter (the `NavigationExtras`) that would change the
        * provided URL.
        */
-  def navigateByUrl(url: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree): stdLib.Promise[scala.Boolean] = js.native
+  def navigateByUrl(url: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree): js.Promise[scala.Boolean] = js.native
   /**
        * Navigate based on the provided url. This navigation is always absolute.
        *
@@ -305,7 +305,7 @@ class Router protected () extends js.Object {
        * in the second parameter (the `NavigationExtras`) that would change the
        * provided URL.
        */
-  def navigateByUrl(url: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree, extras: NavigationExtras): stdLib.Promise[scala.Boolean] = js.native
+  def navigateByUrl(url: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree, extras: NavigationExtras): js.Promise[scala.Boolean] = js.native
   /**
        * Navigate based on the provided url. This navigation is always absolute.
        *
@@ -330,7 +330,7 @@ class Router protected () extends js.Object {
        * in the second parameter (the `NavigationExtras`) that would change the
        * provided URL.
        */
-  def navigateByUrl(url: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def navigateByUrl(url: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
        * Navigate based on the provided url. This navigation is always absolute.
        *
@@ -355,7 +355,7 @@ class Router protected () extends js.Object {
        * in the second parameter (the `NavigationExtras`) that would change the
        * provided URL.
        */
-  def navigateByUrl(url: java.lang.String, extras: NavigationExtras): stdLib.Promise[scala.Boolean] = js.native
+  def navigateByUrl(url: java.lang.String, extras: NavigationExtras): js.Promise[scala.Boolean] = js.native
   /** @docsNotRequired */
   def ngOnDestroy(): scala.Unit = js.native
   /** Parses a string into a `UrlTree` */

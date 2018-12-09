@@ -22,7 +22,7 @@ object AppMeshNs extends js.Object {
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the
     request. Up to 36 letters, numbers, hyphens, and underscores are allowed.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The name to use for the service mesh.
          */
@@ -43,7 +43,7 @@ object AppMeshNs extends js.Object {
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the
     request. Up to 36 letters, numbers, hyphens, and underscores are allowed.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the service mesh in which to create the route.
          */
@@ -76,7 +76,7 @@ object AppMeshNs extends js.Object {
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the
     request. Up to 36 letters, numbers, hyphens, and underscores are allowed.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the service mesh in which to create the virtual node.
          */
@@ -105,7 +105,7 @@ object AppMeshNs extends js.Object {
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the
     request. Up to 36 letters, numbers, hyphens, and underscores are allowed.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the service mesh in which to create the virtual router.
          */
@@ -310,7 +310,7 @@ object AppMeshNs extends js.Object {
     /**
          * The destination path for the health check request.
          */
-    var path: js.UndefOr[java.lang.String] = js.undefined
+    var path: js.UndefOr[String] = js.undefined
     /**
          * The destination port for the health check request.
          */
@@ -362,7 +362,7 @@ object AppMeshNs extends js.Object {
                 my-service.local/metrics, then your prefix should be
              /metrics.
          */
-    var prefix: js.UndefOr[java.lang.String] = js.undefined
+    var prefix: js.UndefOr[String] = js.undefined
   }
   
   
@@ -388,7 +388,7 @@ object AppMeshNs extends js.Object {
                     retrieve the next items in a list and not for other programmatic purposes.
             
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -404,7 +404,7 @@ object AppMeshNs extends js.Object {
              results. This value is null when there are no more results to
              return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -430,7 +430,7 @@ object AppMeshNs extends js.Object {
              results exceeded the value of that parameter. Pagination continues from the end of the
              previous results that returned the nextToken value.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the virtual router in which to list routes.
          */
@@ -446,7 +446,7 @@ object AppMeshNs extends js.Object {
              results. This value is null when there are no more results to
              return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The list of existing routes for the specified service mesh and virtual router.
          */
@@ -476,7 +476,7 @@ object AppMeshNs extends js.Object {
              results exceeded the value of that parameter. Pagination continues from the end of the
              previous results that returned the nextToken value.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -488,7 +488,7 @@ object AppMeshNs extends js.Object {
              results. This value is null when there are no more results to
              return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The list of existing virtual nodes for the specified service mesh.
          */
@@ -518,7 +518,7 @@ object AppMeshNs extends js.Object {
              results exceeded the value of that parameter. Pagination continues from the end of the
              previous results that returned the nextToken value.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -530,7 +530,7 @@ object AppMeshNs extends js.Object {
              results. This value is null when there are no more results to
              return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The list of existing virtual routers for the specified service mesh.
          */
@@ -628,7 +628,7 @@ object AppMeshNs extends js.Object {
     /**
          * The unique identifier for the resource.
          */
-    var uid: js.UndefOr[java.lang.String] = js.undefined
+    var uid: js.UndefOr[String] = js.undefined
     /**
          * The version of the resource. Resources are created at version 1, and this version is
              incremented each time they are updated.
@@ -1412,7 +1412,7 @@ object AppMeshNs extends js.Object {
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the
     request. Up to 36 letters, numbers, hyphens, and underscores are allowed.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the service mesh in which the route resides.
          */
@@ -1445,7 +1445,7 @@ object AppMeshNs extends js.Object {
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the
     request. Up to 36 letters, numbers, hyphens, and underscores are allowed.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the service mesh in which the virtual node resides.
          */
@@ -1474,7 +1474,7 @@ object AppMeshNs extends js.Object {
          * Unique, case-sensitive identifier that you provide to ensure the idempotency of the
     request. Up to 36 letters, numbers, hyphens, and underscores are allowed.
          */
-    var clientToken: js.UndefOr[java.lang.String] = js.undefined
+    var clientToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the service mesh in which the virtual router resides.
          */

@@ -29,7 +29,7 @@ class excelviewer () extends baseview {
   var on_dblclick_Original: webixLib.webixNs.WebixCallback = js.native
   @JSName("on_mouse_move")
   var on_mouse_move_Original: webixLib.webixNs.WebixCallback = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   @JSName("$customPrint")
   def $customPrint(args: js.Any*): js.Any = js.native
   @JSName("$drag")
@@ -210,9 +210,9 @@ class excelviewer () extends baseview {
   def hideOverlay(): scala.Unit = js.native
   def isColumnVisible(id: java.lang.String): scala.Boolean = js.native
   def isColumnVisible(id: scala.Double): scala.Boolean = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,

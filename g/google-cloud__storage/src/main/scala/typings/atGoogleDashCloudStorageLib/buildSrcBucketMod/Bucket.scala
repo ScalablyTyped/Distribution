@@ -300,7 +300,7 @@ class Bucket protected ()
        *   }
        * }, function(err, apiResponse) {});
        */
-  def addLifecycleRule(rule: LifecycleRule): stdLib.Promise[SetBucketMetadataResponse] = js.native
+  def addLifecycleRule(rule: LifecycleRule): js.Promise[SetBucketMetadataResponse] = js.native
   def addLifecycleRule(rule: LifecycleRule, callback: SetBucketMetadataCallback): scala.Unit = js.native
   /**
        * Add an object lifecycle management rule to the bucket.
@@ -398,7 +398,7 @@ class Bucket protected ()
        *   }
        * }, function(err, apiResponse) {});
        */
-  def addLifecycleRule(rule: LifecycleRule, options: AddLifecycleRuleOptions): stdLib.Promise[SetBucketMetadataResponse] = js.native
+  def addLifecycleRule(rule: LifecycleRule, options: AddLifecycleRuleOptions): js.Promise[SetBucketMetadataResponse] = js.native
   def addLifecycleRule(rule: LifecycleRule, options: AddLifecycleRuleOptions, callback: SetBucketMetadataCallback): scala.Unit = js.native
   def combine(
     sources: js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File | java.lang.String],
@@ -448,7 +448,7 @@ class Bucket protected ()
     sources: js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File | java.lang.String],
     destination: atGoogleDashCloudStorageLib.buildSrcFileMod.File,
     options: CombineOptions
-  ): stdLib.Promise[CombineResponse] = js.native
+  ): js.Promise[CombineResponse] = js.native
   def combine(
     sources: js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File | java.lang.String],
     destination: atGoogleDashCloudStorageLib.buildSrcFileMod.File,
@@ -503,7 +503,7 @@ class Bucket protected ()
     sources: js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File | java.lang.String],
     destination: java.lang.String,
     options: CombineOptions
-  ): stdLib.Promise[CombineResponse] = js.native
+  ): js.Promise[CombineResponse] = js.native
   def combine(
     sources: js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File | java.lang.String],
     destination: java.lang.String,
@@ -548,7 +548,7 @@ class Bucket protected ()
        *   const apiResponse = data[1];
        * });
        */
-  def createChannel(id: java.lang.String, config: CreateChannelConfig): stdLib.Promise[CreateChannelResponse] = js.native
+  def createChannel(id: java.lang.String, config: CreateChannelConfig): js.Promise[CreateChannelResponse] = js.native
   def createChannel(id: java.lang.String, config: CreateChannelConfig, callback: CreateChannelCallback): scala.Unit = js.native
   /**
        * Create a channel that will be notified when objects in this bucket changes.
@@ -588,7 +588,7 @@ class Bucket protected ()
        *   const apiResponse = data[1];
        * });
        */
-  def createChannel(id: java.lang.String, config: CreateChannelConfig, options: CreateChannelOptions): stdLib.Promise[CreateChannelResponse] = js.native
+  def createChannel(id: java.lang.String, config: CreateChannelConfig, options: CreateChannelOptions): js.Promise[CreateChannelResponse] = js.native
   def createChannel(
     id: java.lang.String,
     config: CreateChannelConfig,
@@ -649,7 +649,7 @@ class Bucket protected ()
        * region_tag:storage_create_notification
        * Another example:
        */
-  def createNotification(topic: java.lang.String): stdLib.Promise[CreateNotificationResponse] = js.native
+  def createNotification(topic: java.lang.String): js.Promise[CreateNotificationResponse] = js.native
   def createNotification(topic: java.lang.String, callback: CreateNotificationCallback): scala.Unit = js.native
   /**
        * Creates a notification subscription for the bucket.
@@ -705,7 +705,7 @@ class Bucket protected ()
        * region_tag:storage_create_notification
        * Another example:
        */
-  def createNotification(topic: java.lang.String, options: CreateNotificationOptions): stdLib.Promise[CreateNotificationResponse] = js.native
+  def createNotification(topic: java.lang.String, options: CreateNotificationOptions): js.Promise[CreateNotificationResponse] = js.native
   def createNotification(topic: java.lang.String, options: CreateNotificationOptions, callback: CreateNotificationCallback): scala.Unit = js.native
   def delete(callback: DeleteBucketCallback): scala.Unit = js.native
   /**
@@ -734,7 +734,7 @@ class Bucket protected ()
        * region_tag:storage_delete_bucket
        * Another example:
        */
-  def delete(options: DeleteBucketOptions): stdLib.Promise[DeleteBucketResponse] = js.native
+  def delete(options: DeleteBucketOptions): js.Promise[DeleteBucketResponse] = js.native
   def delete(options: DeleteBucketOptions, callback: DeleteBucketCallback): scala.Unit = js.native
   /**
        * Iterate over the bucket's files, calling `file.delete()` on each.
@@ -797,7 +797,7 @@ class Bucket protected ()
        * //-
        * bucket.deleteFiles().then(function() {});
        */
-  def deleteFiles(): stdLib.Promise[scala.Unit] = js.native
+  def deleteFiles(): js.Promise[scala.Unit] = js.native
   def deleteFiles(callback: DeleteFilesCallback): scala.Unit = js.native
   /**
        * Iterate over the bucket's files, calling `file.delete()` on each.
@@ -860,7 +860,7 @@ class Bucket protected ()
        * //-
        * bucket.deleteFiles().then(function() {});
        */
-  def deleteFiles(query: DeleteFilesOptions): stdLib.Promise[scala.Unit] = js.native
+  def deleteFiles(query: DeleteFilesOptions): js.Promise[scala.Unit] = js.native
   def deleteFiles(query: DeleteFilesOptions, callback: DeleteFilesCallback): scala.Unit = js.native
   /**
        * Delete one or more labels from this bucket.
@@ -900,7 +900,7 @@ class Bucket protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def deleteLabels(): stdLib.Promise[DeleteLabelsResponse] = js.native
+  def deleteLabels(): js.Promise[DeleteLabelsResponse] = js.native
   def deleteLabels(callback: DeleteLabelsCallback): scala.Unit = js.native
   /**
        * Delete one or more labels from this bucket.
@@ -940,7 +940,7 @@ class Bucket protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def deleteLabels(labels: java.lang.String): stdLib.Promise[DeleteLabelsResponse] = js.native
+  def deleteLabels(labels: java.lang.String): js.Promise[DeleteLabelsResponse] = js.native
   def deleteLabels(labels: java.lang.String, callback: DeleteLabelsCallback): scala.Unit = js.native
   /**
        * Delete one or more labels from this bucket.
@@ -980,7 +980,7 @@ class Bucket protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def deleteLabels(labels: js.Array[java.lang.String]): stdLib.Promise[DeleteLabelsResponse] = js.native
+  def deleteLabels(labels: js.Array[java.lang.String]): js.Promise[DeleteLabelsResponse] = js.native
   def deleteLabels(labels: js.Array[java.lang.String], callback: DeleteLabelsCallback): scala.Unit = js.native
   /**
        * <div class="notice">
@@ -1017,7 +1017,7 @@ class Bucket protected ()
        * region_tag:storage_disable_requester_pays
        * Example of disabling requester pays:
        */
-  def disableRequesterPays(): stdLib.Promise[DisableRequesterPaysResponse] = js.native
+  def disableRequesterPays(): js.Promise[DisableRequesterPaysResponse] = js.native
   def disableRequesterPays(callback: DisableRequesterPaysCallback): scala.Unit = js.native
   /**
        * <div class="notice">
@@ -1056,7 +1056,7 @@ class Bucket protected ()
        * region_tag:storage_enable_requester_pays
        * Example of enabling requester pays:
        */
-  def enableRequesterPays(): stdLib.Promise[EnableRequesterPaysResponse] = js.native
+  def enableRequesterPays(): js.Promise[EnableRequesterPaysResponse] = js.native
   def enableRequesterPays(callback: EnableRequesterPaysCallback): scala.Unit = js.native
   /**
        * Check if the bucket exists.
@@ -1079,7 +1079,7 @@ class Bucket protected ()
        *   const exists = data[0];
        * });
        */
-  def exists(options: BucketExistsOptions): stdLib.Promise[BucketExistsResponse] = js.native
+  def exists(options: BucketExistsOptions): js.Promise[BucketExistsResponse] = js.native
   def exists(options: BucketExistsOptions, callback: BucketExistsCallback): scala.Unit = js.native
   /**
        * Create a {@link File} object. See {@link File} to see how to handle
@@ -1159,7 +1159,7 @@ class Bucket protected ()
        *   const apiResponse = data[1];
        * });
        */
-  def get(options: GetBucketOptions): stdLib.Promise[GetBucketResponse] = js.native
+  def get(options: GetBucketOptions): js.Promise[GetBucketResponse] = js.native
   def get(options: GetBucketOptions, callback: GetBucketCallback): scala.Unit = js.native
   /**
        * @typedef {array} GetFilesResponse
@@ -1233,7 +1233,7 @@ class Bucket protected ()
        * region_tag:storage_list_files_with_prefix
        * Example of listing files, filtered by a prefix:
        */
-  def getFiles(): stdLib.Promise[js.Array[js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File]]] = js.native
+  def getFiles(): js.Promise[js.Array[js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File]]] = js.native
   def getFiles(callback: GetFilesCallback): scala.Unit = js.native
   /**
        * @typedef {array} GetFilesResponse
@@ -1307,7 +1307,7 @@ class Bucket protected ()
        * region_tag:storage_list_files_with_prefix
        * Example of listing files, filtered by a prefix:
        */
-  def getFiles(query: GetFilesOptions): stdLib.Promise[js.Array[js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File]]] = js.native
+  def getFiles(query: GetFilesOptions): js.Promise[js.Array[js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File]]] = js.native
   def getFiles(query: GetFilesOptions, callback: GetFilesCallback): scala.Unit = js.native
   def getId(): java.lang.String = js.native
   def getLabels(callback: GetLabelsCallback): scala.Unit = js.native
@@ -1343,7 +1343,7 @@ class Bucket protected ()
        *   const labels = data[0];
        * });
        */
-  def getLabels(options: GetLabelsOptions): stdLib.Promise[GetLabelsResponse] = js.native
+  def getLabels(options: GetLabelsOptions): js.Promise[GetLabelsResponse] = js.native
   def getLabels(options: GetLabelsOptions, callback: GetLabelsCallback): scala.Unit = js.native
   /**
        * Get the bucket's metadata.
@@ -1375,7 +1375,7 @@ class Bucket protected ()
        * region_tag:storage_get_requester_pays_status
        * Example of retrieving the requester pays status of a bucket:
        */
-  def getMetadata(options: GetBucketMetadataOptions): stdLib.Promise[GetBucketMetadataResponse] = js.native
+  def getMetadata(options: GetBucketMetadataOptions): js.Promise[GetBucketMetadataResponse] = js.native
   def getMetadata(options: GetBucketMetadataOptions, callback: GetBucketMetadataCallback): scala.Unit = js.native
   /**
        * Retrieves a list of notification subscriptions for a given bucket.
@@ -1409,7 +1409,7 @@ class Bucket protected ()
        * region_tag:storage_list_notifications
        * Another example:
        */
-  def getNotifications(): stdLib.Promise[GetNotificationsResponse] = js.native
+  def getNotifications(): js.Promise[GetNotificationsResponse] = js.native
   def getNotifications(callback: GetNotificationsCallback): scala.Unit = js.native
   /**
        * Retrieves a list of notification subscriptions for a given bucket.
@@ -1443,7 +1443,7 @@ class Bucket protected ()
        * region_tag:storage_list_notifications
        * Another example:
        */
-  def getNotifications(options: GetNotificationsOptions): stdLib.Promise[GetNotificationsResponse] = js.native
+  def getNotifications(options: GetNotificationsOptions): js.Promise[GetNotificationsResponse] = js.native
   def getNotifications(options: GetNotificationsOptions, callback: GetNotificationsCallback): scala.Unit = js.native
   /**
        * Lock a previously-defined retention policy. This will prevent changes to
@@ -1471,7 +1471,7 @@ class Bucket protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def lock(metageneration: java.lang.String): stdLib.Promise[BucketLockResponse] = js.native
+  def lock(metageneration: java.lang.String): js.Promise[BucketLockResponse] = js.native
   def lock(metageneration: java.lang.String, callback: BucketLockCallback): scala.Unit = js.native
   /**
        * Lock a previously-defined retention policy. This will prevent changes to
@@ -1499,7 +1499,7 @@ class Bucket protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def lock(metageneration: scala.Double): stdLib.Promise[BucketLockResponse] = js.native
+  def lock(metageneration: scala.Double): js.Promise[BucketLockResponse] = js.native
   def lock(metageneration: scala.Double, callback: BucketLockCallback): scala.Unit = js.native
   /**
        * Iterate over all of a bucket's files, calling `file.makePublic()` (public)
@@ -1516,7 +1516,7 @@ class Bucket protected ()
        *
        * @return {Promise<MakeAllFilesPublicPrivateResponse>}
        */
-  def `makeAllFilesPublicPrivate_`(): stdLib.Promise[MakeAllFilesPublicPrivateResponse] = js.native
+  def `makeAllFilesPublicPrivate_`(): js.Promise[MakeAllFilesPublicPrivateResponse] = js.native
   def `makeAllFilesPublicPrivate_`(callback: MakeAllFilesPublicPrivateCallback): scala.Unit = js.native
   /**
        * Iterate over all of a bucket's files, calling `file.makePublic()` (public)
@@ -1533,7 +1533,7 @@ class Bucket protected ()
        *
        * @return {Promise<MakeAllFilesPublicPrivateResponse>}
        */
-  def `makeAllFilesPublicPrivate_`(options: MakeAllFilesPublicPrivateOptions): stdLib.Promise[MakeAllFilesPublicPrivateResponse] = js.native
+  def `makeAllFilesPublicPrivate_`(options: MakeAllFilesPublicPrivateOptions): js.Promise[MakeAllFilesPublicPrivateResponse] = js.native
   def `makeAllFilesPublicPrivate_`(options: MakeAllFilesPublicPrivateOptions, callback: MakeAllFilesPublicPrivateCallback): scala.Unit = js.native
   /**
        * Make the bucket listing private.
@@ -1606,7 +1606,7 @@ class Bucket protected ()
        *   const files = data[0];
        * });
        */
-  def makePrivate(): stdLib.Promise[MakeBucketPrivateResponse] = js.native
+  def makePrivate(): js.Promise[MakeBucketPrivateResponse] = js.native
   def makePrivate(callback: MakeBucketPrivateCallback): scala.Unit = js.native
   /**
        * Make the bucket listing private.
@@ -1679,7 +1679,7 @@ class Bucket protected ()
        *   const files = data[0];
        * });
        */
-  def makePrivate(options: MakeBucketPrivateOptions): stdLib.Promise[MakeBucketPrivateResponse] = js.native
+  def makePrivate(options: MakeBucketPrivateOptions): js.Promise[MakeBucketPrivateResponse] = js.native
   def makePrivate(options: MakeBucketPrivateOptions, callback: MakeBucketPrivateCallback): scala.Unit = js.native
   /**
        * Make the bucket publicly readable.
@@ -1752,7 +1752,7 @@ class Bucket protected ()
        *   const files = data[0];
        * });
        */
-  def makePublic(): stdLib.Promise[MakeBucketPublicResponse] = js.native
+  def makePublic(): js.Promise[MakeBucketPublicResponse] = js.native
   def makePublic(callback: MakeBucketPublicCallback): scala.Unit = js.native
   /**
        * Make the bucket publicly readable.
@@ -1825,7 +1825,7 @@ class Bucket protected ()
        *   const files = data[0];
        * });
        */
-  def makePublic(options: MakeBucketPublicOptions): stdLib.Promise[MakeBucketPublicResponse] = js.native
+  def makePublic(options: MakeBucketPublicOptions): js.Promise[MakeBucketPublicResponse] = js.native
   def makePublic(options: MakeBucketPublicOptions, callback: MakeBucketPublicCallback): scala.Unit = js.native
   /**
        * Get a reference to a Cloud Pub/Sub Notification.
@@ -1861,7 +1861,7 @@ class Bucket protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def removeRetentionPeriod(): stdLib.Promise[SetBucketMetadataResponse] = js.native
+  def removeRetentionPeriod(): js.Promise[SetBucketMetadataResponse] = js.native
   def removeRetentionPeriod(callback: SetBucketMetadataCallback): scala.Unit = js.native
   def setLabels(labels: Labels, callback: SetLabelsCallback): scala.Unit = js.native
   /**
@@ -1899,7 +1899,7 @@ class Bucket protected ()
        *   const metadata = data[0];
        * });
        */
-  def setLabels(labels: Labels, options: SetLabelsOptions): stdLib.Promise[SetLabelsResponse] = js.native
+  def setLabels(labels: Labels, options: SetLabelsOptions): js.Promise[SetLabelsResponse] = js.native
   def setLabels(labels: Labels, options: SetLabelsOptions, callback: SetLabelsCallback): scala.Unit = js.native
   /**
        * Set the bucket's metadata.
@@ -1970,7 +1970,7 @@ class Bucket protected ()
   def setMetadata(
     metadata: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata,
     options: SetBucketMetadataOptions
-  ): stdLib.Promise[SetBucketMetadataResponse] = js.native
+  ): js.Promise[SetBucketMetadataResponse] = js.native
   def setMetadata(
     metadata: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata,
     options: SetBucketMetadataOptions,
@@ -2011,7 +2011,7 @@ class Bucket protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def setRetentionPeriod(duration: scala.Double): stdLib.Promise[SetBucketMetadataResponse] = js.native
+  def setRetentionPeriod(duration: scala.Double): js.Promise[SetBucketMetadataResponse] = js.native
   def setRetentionPeriod(duration: scala.Double, callback: SetBucketMetadataCallback): scala.Unit = js.native
   def setStorageClass(storageClass: java.lang.String, callback: SetBucketStorageClassCallback): scala.Unit = js.native
   /**
@@ -2046,7 +2046,7 @@ class Bucket protected ()
        * //-
        * bucket.setStorageClass('regional').then(function() {});
        */
-  def setStorageClass(storageClass: java.lang.String, options: SetBucketStorageClassOptions): stdLib.Promise[SetBucketMetadataResponse] = js.native
+  def setStorageClass(storageClass: java.lang.String, options: SetBucketStorageClassOptions): js.Promise[SetBucketMetadataResponse] = js.native
   def setStorageClass(
     storageClass: java.lang.String,
     options: SetBucketStorageClassOptions,
@@ -2203,7 +2203,7 @@ class Bucket protected ()
        * region_tag:storage_upload_encrypted_file
        * Example of uploading an encrypted file:
        */
-  def upload(pathString: java.lang.String): stdLib.Promise[UploadResponse] = js.native
+  def upload(pathString: java.lang.String): js.Promise[UploadResponse] = js.native
   def upload(pathString: java.lang.String, callback: UploadCallback): scala.Unit = js.native
   /**
        * Upload a file to the bucket. This is a convenience method that wraps
@@ -2342,7 +2342,7 @@ class Bucket protected ()
        * region_tag:storage_upload_encrypted_file
        * Example of uploading an encrypted file:
        */
-  def upload(pathString: java.lang.String, options: UploadOptions): stdLib.Promise[UploadResponse] = js.native
+  def upload(pathString: java.lang.String, options: UploadOptions): js.Promise[UploadResponse] = js.native
   def upload(pathString: java.lang.String, options: UploadOptions, callback: UploadCallback): scala.Unit = js.native
 }
 

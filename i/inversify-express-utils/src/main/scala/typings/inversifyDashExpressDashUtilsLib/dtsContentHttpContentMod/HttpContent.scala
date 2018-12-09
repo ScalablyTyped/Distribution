@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 abstract class HttpContent () extends js.Object {
   var _headers: js.Any = js.native
   val headers: nodeLib.httpMod.OutgoingHttpHeaders = js.native
-  def readAsStringAsync(): stdLib.Promise[java.lang.String] = js.native
+  def readAsStringAsync(): js.Promise[java.lang.String] = js.native
 }
 

@@ -25,7 +25,7 @@ object DAXNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) that uniquely identifies the cluster. 
          */
-    var ClusterArn: js.UndefOr[java.lang.String] = js.undefined
+    var ClusterArn: js.UndefOr[String] = js.undefined
     /**
          * The configuration endpoint for this DAX cluster, consisting of a DNS name and a port number. Client applications can specify this endpoint, rather than an individual node endpoint, and allow the DAX client software to intelligently route requests and responses to nodes in the DAX cluster.
          */
@@ -33,15 +33,15 @@ object DAXNs extends js.Object {
     /**
          * The name of the DAX cluster.
          */
-    var ClusterName: js.UndefOr[java.lang.String] = js.undefined
+    var ClusterName: js.UndefOr[String] = js.undefined
     /**
          * The description of the cluster.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * A valid Amazon Resource Name (ARN) that identifies an IAM role. At runtime, DAX will assume this role and use the role's permissions to access DynamoDB on your behalf.
          */
-    var IamRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamRoleArn: js.UndefOr[String] = js.undefined
     /**
          * A list of nodes to be removed from the cluster.
          */
@@ -49,7 +49,7 @@ object DAXNs extends js.Object {
     /**
          * The node type for the nodes in the cluster. (All nodes in a DAX cluster are of the same type.)
          */
-    var NodeType: js.UndefOr[java.lang.String] = js.undefined
+    var NodeType: js.UndefOr[String] = js.undefined
     /**
          * A list of nodes that are currently in the cluster.
          */
@@ -65,7 +65,7 @@ object DAXNs extends js.Object {
     /**
          * A range of time when maintenance of DAX cluster software will be performed. For example: sun:01:00-sun:09:00. Cluster maintenance normally takes less than 30 minutes, and is performed automatically within the maintenance window.
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * The description of the server-side encryption status on the specified DAX cluster.
          */
@@ -77,11 +77,11 @@ object DAXNs extends js.Object {
     /**
          * The current status of the cluster.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The subnet group where the DAX cluster is running.
          */
-    var SubnetGroup: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetGroup: js.UndefOr[String] = js.undefined
     /**
          * The total number of nodes in the cluster.
          */
@@ -97,31 +97,31 @@ object DAXNs extends js.Object {
     /**
          * The cluster identifier. This parameter is stored as a lowercase string.  Constraints:    A name must contain from 1 to 20 alphanumeric characters or hyphens.   The first character must be a letter.   A name cannot end with a hyphen or contain two consecutive hyphens.  
          */
-    var ClusterName: java.lang.String
+    var ClusterName: String
     /**
          * A description of the cluster.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * A valid Amazon Resource Name (ARN) that identifies an IAM role. At runtime, DAX will assume this role and use the role's permissions to access DynamoDB on your behalf.
          */
-    var IamRoleArn: java.lang.String
+    var IamRoleArn: String
     /**
          * The compute and memory capacity of the nodes in the cluster.
          */
-    var NodeType: java.lang.String
+    var NodeType: String
     /**
          * The Amazon Resource Name (ARN) of the Amazon SNS topic to which notifications will be sent.  The Amazon SNS topic owner must be same as the DAX cluster owner. 
          */
-    var NotificationTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var NotificationTopicArn: js.UndefOr[String] = js.undefined
     /**
          * The parameter group to be associated with the DAX cluster.
          */
-    var ParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the weekly time range during which maintenance on the DAX cluster is performed. It is specified as a range in the format ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period. Valid values for ddd are:    sun     mon     tue     wed     thu     fri     sat    Example: sun:05:00-sun:09:00   If you don't specify a preferred maintenance window when you create or modify a cache cluster, DAX assigns a 60-minute maintenance window on a randomly selected day of the week. 
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * The number of nodes in the DAX cluster. A replication factor of 1 will create a single-node cluster, without any read replicas. For additional fault tolerance, you can create a multiple node cluster with one or more read replicas. To do this, set ReplicationFactor to 2 or more.  AWS recommends that you have at least two read replicas per cluster. 
          */
@@ -137,7 +137,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the subnet group to be used for the replication group.  DAX clusters can only run in an Amazon VPC environment. All of the subnets that you specify in a subnet group must exist in the same VPC. 
          */
-    var SubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * A set of tags to associate with the DAX cluster. 
          */
@@ -157,11 +157,11 @@ object DAXNs extends js.Object {
     /**
          * A description of the parameter group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The name of the parameter group to apply to all of the clusters in this replication group.
          */
-    var ParameterGroupName: java.lang.String
+    var ParameterGroupName: String
   }
   
   
@@ -177,11 +177,11 @@ object DAXNs extends js.Object {
     /**
          * A description for the subnet group
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * A name for the subnet group. This value is stored as a lowercase string. 
          */
-    var SubnetGroupName: java.lang.String
+    var SubnetGroupName: String
     /**
          * A list of VPC subnet IDs for the subnet group.
          */
@@ -205,7 +205,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the DAX cluster from which you want to remove nodes.
          */
-    var ClusterName: java.lang.String
+    var ClusterName: String
     /**
          * The new number of nodes for the DAX cluster.
          */
@@ -229,7 +229,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the cluster to be deleted.
          */
-    var ClusterName: java.lang.String
+    var ClusterName: String
   }
   
   
@@ -245,7 +245,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the parameter group to delete.
          */
-    var ParameterGroupName: java.lang.String
+    var ParameterGroupName: String
   }
   
   
@@ -253,7 +253,7 @@ object DAXNs extends js.Object {
     /**
          * A user-specified message for this action (i.e., a reason for deleting the parameter group).
          */
-    var DeletionMessage: js.UndefOr[java.lang.String] = js.undefined
+    var DeletionMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -261,7 +261,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the subnet group to delete.
          */
-    var SubnetGroupName: java.lang.String
+    var SubnetGroupName: String
   }
   
   
@@ -269,7 +269,7 @@ object DAXNs extends js.Object {
     /**
          * A user-specified message for this action (i.e., a reason for deleting the subnet group).
          */
-    var DeletionMessage: js.UndefOr[java.lang.String] = js.undefined
+    var DeletionMessage: js.UndefOr[String] = js.undefined
   }
   
   
@@ -285,7 +285,7 @@ object DAXNs extends js.Object {
     /**
          * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -297,7 +297,7 @@ object DAXNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -309,7 +309,7 @@ object DAXNs extends js.Object {
     /**
          * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -317,7 +317,7 @@ object DAXNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list of parameters. Each element in the list represents one parameter.
          */
@@ -341,11 +341,11 @@ object DAXNs extends js.Object {
     /**
          * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the event source for which events will be returned. If not specified, then all sources are included in the response.
          */
-    var SourceName: js.UndefOr[java.lang.String] = js.undefined
+    var SourceName: js.UndefOr[String] = js.undefined
     /**
          * The event source to retrieve events for. If no value is specified, all events are returned.
          */
@@ -365,7 +365,7 @@ object DAXNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -377,7 +377,7 @@ object DAXNs extends js.Object {
     /**
          * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The names of the parameter groups.
          */
@@ -389,7 +389,7 @@ object DAXNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * An array of parameter groups. Each element in the array represents one parameter group.
          */
@@ -405,15 +405,15 @@ object DAXNs extends js.Object {
     /**
          * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the parameter group.
          */
-    var ParameterGroupName: java.lang.String
+    var ParameterGroupName: String
     /**
          * How the parameter is defined. For example, system denotes a system-defined parameter.
          */
-    var Source: js.UndefOr[java.lang.String] = js.undefined
+    var Source: js.UndefOr[String] = js.undefined
   }
   
   
@@ -421,7 +421,7 @@ object DAXNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list of parameters within a parameter group. Each element in the list represents one parameter.
          */
@@ -437,7 +437,7 @@ object DAXNs extends js.Object {
     /**
          * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the subnet group.
          */
@@ -449,7 +449,7 @@ object DAXNs extends js.Object {
     /**
          * Provides an identifier to allow retrieval of paginated results.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * An array of subnet groups. Each element in the array represents a single subnet group.
          */
@@ -461,7 +461,7 @@ object DAXNs extends js.Object {
     /**
          * The DNS hostname of the endpoint.
          */
-    var Address: js.UndefOr[java.lang.String] = js.undefined
+    var Address: js.UndefOr[String] = js.undefined
     /**
          * The port number that applications should use to connect to the endpoint.
          */
@@ -477,11 +477,11 @@ object DAXNs extends js.Object {
     /**
          * A user-defined message associated with the event.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * The source of the event. For example, if the event occurred at the node level, the source would be the node ID.
          */
-    var SourceName: js.UndefOr[java.lang.String] = js.undefined
+    var SourceName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the origin of this event - a cluster, a parameter group, a node ID, etc.
          */
@@ -497,7 +497,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the DAX cluster that will receive additional nodes.
          */
-    var ClusterName: java.lang.String
+    var ClusterName: String
     /**
          * The new number of nodes for the DAX cluster.
          */
@@ -517,11 +517,11 @@ object DAXNs extends js.Object {
     /**
          * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The name of the DAX resource to which the tags belong.
          */
-    var ResourceName: java.lang.String
+    var ResourceName: String
   }
   
   
@@ -529,7 +529,7 @@ object DAXNs extends js.Object {
     /**
          * If this value is present, there are additional results to be displayed. To retrieve them, call ListTags again, with NextToken set to this value.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list of tags currently associated with the DAX cluster.
          */
@@ -541,7 +541,7 @@ object DAXNs extends js.Object {
     /**
          * The Availability Zone (AZ) in which the node has been deployed.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The endpoint for the node, consisting of a DNS name and a port number. Client applications can connect directly to a node endpoint, if desired (as an alternative to allowing DAX client software to intelligently route requests and responses to nodes in the DAX cluster.
          */
@@ -553,15 +553,15 @@ object DAXNs extends js.Object {
     /**
          * A system-generated identifier for the node.
          */
-    var NodeId: js.UndefOr[java.lang.String] = js.undefined
+    var NodeId: js.UndefOr[String] = js.undefined
     /**
          * The current status of the node. For example: available.
          */
-    var NodeStatus: js.UndefOr[java.lang.String] = js.undefined
+    var NodeStatus: js.UndefOr[String] = js.undefined
     /**
          * The status of the parameter group associated with this node. For example, in-sync.
          */
-    var ParameterGroupStatus: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterGroupStatus: js.UndefOr[String] = js.undefined
   }
   
   
@@ -569,11 +569,11 @@ object DAXNs extends js.Object {
     /**
          * A node type to which the parameter value applies.
          */
-    var NodeType: js.UndefOr[java.lang.String] = js.undefined
+    var NodeType: js.UndefOr[String] = js.undefined
     /**
          * The parameter value for this node type.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -581,11 +581,11 @@ object DAXNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) that identifies the topic. 
          */
-    var TopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var TopicArn: js.UndefOr[String] = js.undefined
     /**
          * The current state of the topic.
          */
-    var TopicStatus: js.UndefOr[java.lang.String] = js.undefined
+    var TopicStatus: js.UndefOr[String] = js.undefined
   }
   
   
@@ -593,7 +593,7 @@ object DAXNs extends js.Object {
     /**
          * A range of values within which the parameter can be set.
          */
-    var AllowedValues: js.UndefOr[java.lang.String] = js.undefined
+    var AllowedValues: js.UndefOr[String] = js.undefined
     /**
          * The conditions under which changes to this parameter can be applied. For example, requires-reboot indicates that a new value for this parameter will only take effect if a node is rebooted.
          */
@@ -601,11 +601,11 @@ object DAXNs extends js.Object {
     /**
          * The data type of the parameter. For example, integer:
          */
-    var DataType: js.UndefOr[java.lang.String] = js.undefined
+    var DataType: js.UndefOr[String] = js.undefined
     /**
          * A description of the parameter
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * Whether the customer is allowed to modify the parameter.
          */
@@ -617,7 +617,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the parameter.
          */
-    var ParameterName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterName: js.UndefOr[String] = js.undefined
     /**
          * Determines whether the parameter can be applied to any nodes, or only nodes of a particular type.
          */
@@ -625,11 +625,11 @@ object DAXNs extends js.Object {
     /**
          * The value for the parameter.
          */
-    var ParameterValue: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterValue: js.UndefOr[String] = js.undefined
     /**
          * How the parameter is defined. For example, system denotes a system-defined parameter.
          */
-    var Source: js.UndefOr[java.lang.String] = js.undefined
+    var Source: js.UndefOr[String] = js.undefined
   }
   
   
@@ -637,11 +637,11 @@ object DAXNs extends js.Object {
     /**
          * A description of the parameter group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The name of the parameter group.
          */
-    var ParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterGroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -653,11 +653,11 @@ object DAXNs extends js.Object {
     /**
          * The status of parameter updates. 
          */
-    var ParameterApplyStatus: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterApplyStatus: js.UndefOr[String] = js.undefined
     /**
          * The name of the parameter group.
          */
-    var ParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterGroupName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -665,11 +665,11 @@ object DAXNs extends js.Object {
     /**
          * The name of the parameter.
          */
-    var ParameterName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterName: js.UndefOr[String] = js.undefined
     /**
          * The value of the parameter.
          */
-    var ParameterValue: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterValue: js.UndefOr[String] = js.undefined
   }
   
   
@@ -677,11 +677,11 @@ object DAXNs extends js.Object {
     /**
          * The name of the DAX cluster containing the node to be rebooted.
          */
-    var ClusterName: java.lang.String
+    var ClusterName: String
     /**
          * The system-assigned ID of the node to be rebooted.
          */
-    var NodeId: java.lang.String
+    var NodeId: String
   }
   
   
@@ -713,11 +713,11 @@ object DAXNs extends js.Object {
     /**
          * The unique ID for this security group.
          */
-    var SecurityGroupIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SecurityGroupIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The status of this security group.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -725,11 +725,11 @@ object DAXNs extends js.Object {
     /**
          * The Availability Zone (AZ) for subnet subnet.
          */
-    var SubnetAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The system-assigned identifier for the subnet.
          */
-    var SubnetIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetIdentifier: js.UndefOr[String] = js.undefined
   }
   
   
@@ -737,11 +737,11 @@ object DAXNs extends js.Object {
     /**
          * The description of the subnet group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The name of the subnet group.
          */
-    var SubnetGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetGroupName: js.UndefOr[String] = js.undefined
     /**
          * A list of subnets associated with the subnet group. 
          */
@@ -749,7 +749,7 @@ object DAXNs extends js.Object {
     /**
          * The Amazon Virtual Private Cloud identifier (VPC ID) of the subnet group.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -757,11 +757,11 @@ object DAXNs extends js.Object {
     /**
          * The key for the tag. Tag keys are case sensitive. Every DAX cluster can only have one tag with the same key. If you try to add an existing tag (same key), the existing tag value will be updated to the new value.
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * The value of the tag. Tag values are case-sensitive and can be null. 
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -769,7 +769,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the DAX resource to which tags should be added.
          */
-    var ResourceName: java.lang.String
+    var ResourceName: String
     /**
          * The tags to be assigned to the DAX resource. 
          */
@@ -1405,7 +1405,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the DAX resource from which the tags should be removed.
          */
-    var ResourceName: java.lang.String
+    var ResourceName: String
     /**
          * A list of tag keys. If the DAX cluster has any tags with these keys, then the tags are removed from the cluster.
          */
@@ -1425,27 +1425,27 @@ object DAXNs extends js.Object {
     /**
          * The name of the DAX cluster to be modified.
          */
-    var ClusterName: java.lang.String
+    var ClusterName: String
     /**
          * A description of the changes being made to the cluster.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) that identifies the topic.
          */
-    var NotificationTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var NotificationTopicArn: js.UndefOr[String] = js.undefined
     /**
          * The current state of the topic.
          */
-    var NotificationTopicStatus: js.UndefOr[java.lang.String] = js.undefined
+    var NotificationTopicStatus: js.UndefOr[String] = js.undefined
     /**
          * The name of a parameter group for this cluster.
          */
-    var ParameterGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var ParameterGroupName: js.UndefOr[String] = js.undefined
     /**
          * A range of time when maintenance of DAX cluster software will be performed. For example: sun:01:00-sun:09:00. Cluster maintenance normally takes less than 30 minutes, and is performed automatically within the maintenance window.
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * A list of user-specified security group IDs to be assigned to each node in the DAX cluster. If this parameter is not specified, DAX assigns the default VPC security group to each node.
          */
@@ -1465,7 +1465,7 @@ object DAXNs extends js.Object {
     /**
          * The name of the parameter group.
          */
-    var ParameterGroupName: java.lang.String
+    var ParameterGroupName: String
     /**
          * An array of name-value pairs for the parameters in the group. Each element in the array represents a single parameter.
          */
@@ -1485,11 +1485,11 @@ object DAXNs extends js.Object {
     /**
          * A description of the subnet group.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The name of the subnet group.
          */
-    var SubnetGroupName: java.lang.String
+    var SubnetGroupName: String
     /**
          * A list of subnet IDs in the subnet group.
          */
@@ -1505,33 +1505,33 @@ object DAXNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
-  type AvailabilityZoneList = js.Array[java.lang.String]
+  type AvailabilityZoneList = js.Array[String]
   type ChangeType = awsDashSdkLib.awsDashSdkLibStrings.IMMEDIATE | awsDashSdkLib.awsDashSdkLibStrings.REQUIRES_REBOOT | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClusterList = js.Array[Cluster]
-  type ClusterNameList = js.Array[java.lang.String]
+  type ClusterNameList = js.Array[String]
   type EventList = js.Array[Event]
   type Integer = scala.Double
   type IntegerOptional = scala.Double
   type IsModifiable = awsDashSdkLib.awsDashSdkLibStrings.TRUE | awsDashSdkLib.awsDashSdkLibStrings.FALSE | awsDashSdkLib.awsDashSdkLibStrings.CONDITIONAL | java.lang.String
-  type KeyList = js.Array[java.lang.String]
-  type NodeIdentifierList = js.Array[java.lang.String]
+  type KeyList = js.Array[String]
+  type NodeIdentifierList = js.Array[String]
   type NodeList = js.Array[Node]
   type NodeTypeSpecificValueList = js.Array[NodeTypeSpecificValue]
   type ParameterGroupList = js.Array[ParameterGroup]
-  type ParameterGroupNameList = js.Array[java.lang.String]
+  type ParameterGroupNameList = js.Array[String]
   type ParameterList = js.Array[Parameter]
   type ParameterNameValueList = js.Array[ParameterNameValue]
   type ParameterType = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.NODE_TYPE_SPECIFIC | java.lang.String
   type SSEEnabled = scala.Boolean
   type SSEStatus = awsDashSdkLib.awsDashSdkLibStrings.ENABLING | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLING | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type SecurityGroupIdentifierList = js.Array[java.lang.String]
+  type SecurityGroupIdentifierList = js.Array[String]
   type SecurityGroupMembershipList = js.Array[SecurityGroupMembership]
   type SourceType = awsDashSdkLib.awsDashSdkLibStrings.CLUSTER | awsDashSdkLib.awsDashSdkLibStrings.PARAMETER_GROUP | awsDashSdkLib.awsDashSdkLibStrings.SUBNET_GROUP | java.lang.String
   type String = java.lang.String
   type SubnetGroupList = js.Array[SubnetGroup]
-  type SubnetGroupNameList = js.Array[java.lang.String]
-  type SubnetIdentifierList = js.Array[java.lang.String]
+  type SubnetGroupNameList = js.Array[String]
+  type SubnetIdentifierList = js.Array[String]
   type SubnetList = js.Array[Subnet]
   type TStamp = stdLib.Date
   type TagList = js.Array[Tag]

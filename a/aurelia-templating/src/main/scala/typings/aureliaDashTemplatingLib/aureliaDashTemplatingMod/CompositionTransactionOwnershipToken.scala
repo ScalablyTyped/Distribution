@@ -17,6 +17,6 @@ class CompositionTransactionOwnershipToken () extends js.Object {
       * Allows the transaction owner to wait for the completion of all child compositions.
       * @return A promise that resolves when all child compositions are done.
       */
-  def waitForCompositionComplete(): stdLib.Promise[scala.Unit] = js.native
+  def waitForCompositionComplete(): js.Promise[scala.Unit] = js.native
 }
 

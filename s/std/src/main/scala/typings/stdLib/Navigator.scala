@@ -34,7 +34,7 @@ trait Navigator
   val pointerEnabled: scala.Boolean = js.native
   val serviceWorker: ServiceWorkerContainer = js.native
   def getGamepads(): js.Array[Gamepad | scala.Null] = js.native
-  def getVRDisplays(): Promise[js.Array[VRDisplay]] = js.native
+  def getVRDisplays(): js.Promise[js.Array[VRDisplay]] = js.native
   def javaEnabled(): scala.Boolean = js.native
   def msLaunchUri(uri: java.lang.String): scala.Unit = js.native
   def msLaunchUri(uri: java.lang.String, successCallback: MSLaunchUriCallback): scala.Unit = js.native
@@ -43,7 +43,7 @@ trait Navigator
     successCallback: MSLaunchUriCallback,
     noHandlerCallback: MSLaunchUriCallback
   ): scala.Unit = js.native
-  def requestMediaKeySystemAccess(keySystem: java.lang.String, supportedConfigurations: js.Array[MediaKeySystemConfiguration]): Promise[MediaKeySystemAccess] = js.native
+  def requestMediaKeySystemAccess(keySystem: java.lang.String, supportedConfigurations: js.Array[MediaKeySystemConfiguration]): js.Promise[MediaKeySystemAccess] = js.native
   def vibrate(pattern: js.Array[scala.Double]): scala.Boolean = js.native
   def vibrate(pattern: scala.Double): scala.Boolean = js.native
 }

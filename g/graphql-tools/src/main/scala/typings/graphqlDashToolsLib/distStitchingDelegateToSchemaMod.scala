@@ -11,7 +11,7 @@ object distStitchingDelegateToSchemaMod extends js.Object {
   def default(
     options: graphqlDashToolsLib.distInterfacesMod.IDelegateToSchemaOptions[ScalablyTyped.runtime.StringDictionary[_]],
     args: js.Any*
-  ): stdLib.Promise[_] = js.native
-  def default(options: graphqlLib.graphqlMod.GraphQLSchema, args: js.Any*): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
+  def default(options: graphqlLib.graphqlMod.GraphQLSchema, args: js.Any*): js.Promise[_] = js.native
 }
 

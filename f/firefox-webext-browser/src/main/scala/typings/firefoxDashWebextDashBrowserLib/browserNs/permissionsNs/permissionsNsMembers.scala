@@ -24,17 +24,17 @@ object permissionsNsMembers extends js.Object {
     firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* permissions */ Permissions, scala.Unit]]
   ] = js.native
   /** Check if the extension has the given permissions. */
-  def contains(permissions: AnyPermissions): stdLib.Promise[scala.Boolean] = js.native
+  def contains(permissions: AnyPermissions): js.Promise[scala.Boolean] = js.native
   /* permissions functions */
   /** Get a list of all the extension's permissions. */
-  def getAll(): stdLib.Promise[AnyPermissions] = js.native
+  def getAll(): js.Promise[AnyPermissions] = js.native
   /** Relinquish the given permissions. */
-  def remove(permissions: Permissions): stdLib.Promise[scala.Unit] = js.native
+  def remove(permissions: Permissions): js.Promise[scala.Unit] = js.native
   /**
        * Request the given permissions.
        *
        * Not allowed in: Devtools pages
        */
-  def request(permissions: Permissions): stdLib.Promise[scala.Boolean] = js.native
+  def request(permissions: Permissions): js.Promise[scala.Boolean] = js.native
 }
 

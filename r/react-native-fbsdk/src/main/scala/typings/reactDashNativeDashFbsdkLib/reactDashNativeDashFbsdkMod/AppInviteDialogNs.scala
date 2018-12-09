@@ -11,10 +11,10 @@ object AppInviteDialogNs extends js.Object {
   /**
        * Check if the dialog can be shown.
        */
-  def canShow(): stdLib.Promise[_] = js.native
+  def canShow(): js.Promise[_] = js.native
   /**
        * Shows the dialog using the specified content.
        */
-  def show(appInviteContent: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AppInviteContent): stdLib.Promise[_] = js.native
+  def show(appInviteContent: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AppInviteContent): js.Promise[_] = js.native
 }
 

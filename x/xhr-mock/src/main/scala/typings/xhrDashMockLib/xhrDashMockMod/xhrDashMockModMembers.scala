@@ -15,6 +15,6 @@ object xhrDashMockModMembers extends js.Object {
   def delay(mock: xhrDashMockLib.libTypesMod.MockObject, ms: scala.Double): xhrDashMockLib.libTypesMod.MockFunction = js.native
   def once(mock: xhrDashMockLib.libTypesMod.MockFunction): xhrDashMockLib.libTypesMod.MockFunction = js.native
   def once(mock: xhrDashMockLib.libTypesMod.MockObject): xhrDashMockLib.libTypesMod.MockFunction = js.native
-  def proxy(req: xhrDashMockLib.libMockRequestMod.default, res: xhrDashMockLib.libMockResponseMod.default): stdLib.Promise[xhrDashMockLib.libMockResponseMod.default] = js.native
+  def proxy(req: xhrDashMockLib.libMockRequestMod.default, res: xhrDashMockLib.libMockResponseMod.default): js.Promise[xhrDashMockLib.libMockResponseMod.default] = js.native
 }
 

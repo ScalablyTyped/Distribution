@@ -16,7 +16,7 @@ class Manager ()
   def enableLookup(): scala.Unit = js.native
   def getPlayer(): Player = js.native
   def isLookupEnabled(): scala.Boolean = js.native
-  def openPlayer(panorama: js.Array[yandexDashMapsLib.ymapsNs.IPanorama]): stdLib.Promise[scala.Unit] = js.native
-  def openPlayer(panorama: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def openPlayer(panorama: js.Array[yandexDashMapsLib.ymapsNs.IPanorama]): js.Promise[scala.Unit] = js.native
+  def openPlayer(panorama: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

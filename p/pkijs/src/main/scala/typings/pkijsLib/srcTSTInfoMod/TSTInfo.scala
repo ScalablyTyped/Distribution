@@ -20,6 +20,6 @@ trait TSTInfo extends js.Object {
   def fromSchema(schema: js.Any): scala.Unit
   def toJSON(): js.Any
   def toSchema(): js.Any
-  def verify(params: VerifyParams): stdLib.PromiseLike[scala.Boolean]
+  def verify(params: VerifyParams): js.Thenable[scala.Boolean]
 }
 

@@ -10,8 +10,8 @@ trait UIViewAnimData extends js.Object {
   @JSName("$$animLeave")
   var $$animLeave: atUirouterAngularjsLib.Anon_Resolve
   @JSName("$animEnter")
-  var $animEnter: stdLib.Promise[_]
+  var $animEnter: js.Promise[_]
   @JSName("$animLeave")
-  var $animLeave: stdLib.Promise[_]
+  var $animLeave: js.Promise[_]
 }
 

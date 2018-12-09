@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 trait UnorderedBulkOperation extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/lib_bulk_unordered.js.html line 339 */
   var length: scala.Double = js.native
-  def execute(): stdLib.Promise[BulkWriteResult] = js.native
+  def execute(): js.Promise[BulkWriteResult] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/UnorderedBulkOperation.html#execute */
   def execute(callback: MongoCallback[BulkWriteResult]): scala.Unit = js.native
-  def execute(options: FSyncOptions): stdLib.Promise[BulkWriteResult] = js.native
+  def execute(options: FSyncOptions): js.Promise[BulkWriteResult] = js.native
   def execute(options: FSyncOptions, callback: MongoCallback[BulkWriteResult]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/UnorderedBulkOperation.html#find */
   def find(selector: js.Object): FindOperatorsUnordered = js.native

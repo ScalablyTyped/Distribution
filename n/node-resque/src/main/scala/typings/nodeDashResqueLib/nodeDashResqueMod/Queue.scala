@@ -11,10 +11,10 @@ class Queue protected ()
   extends nodeLib.NodeJSNs.EventEmitter {
   def this(options: QueueOptions) = this()
   def this(options: QueueOptions, jobs: JobsHash) = this()
-  def connect(): stdLib.Promise[scala.Unit] = js.native
-  def end(): stdLib.Promise[scala.Unit] = js.native
-  def enqueue(queue: java.lang.String, jobName: java.lang.String, args: js.Array[_]): stdLib.Promise[scala.Unit] = js.native
-  def enqueueIn(milliseconds: scala.Double, queue: java.lang.String, jobName: java.lang.String, args: js.Array[_]): stdLib.Promise[scala.Unit] = js.native
+  def connect(): js.Promise[scala.Unit] = js.native
+  def end(): js.Promise[scala.Unit] = js.native
+  def enqueue(queue: java.lang.String, jobName: java.lang.String, args: js.Array[_]): js.Promise[scala.Unit] = js.native
+  def enqueueIn(milliseconds: scala.Double, queue: java.lang.String, jobName: java.lang.String, args: js.Array[_]): js.Promise[scala.Unit] = js.native
   @JSName("on")
   def on_error(
     event: nodeDashResqueLib.nodeDashResqueLibStrings.error,

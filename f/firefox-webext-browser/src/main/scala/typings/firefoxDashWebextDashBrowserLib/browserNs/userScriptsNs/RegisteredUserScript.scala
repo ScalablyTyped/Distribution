@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 
 trait RegisteredUserScript extends js.Object {
   /** Unregister a user script registered programmatically */
-  def unregister(): stdLib.Promise[_]
+  def unregister(): js.Promise[_]
 }
 

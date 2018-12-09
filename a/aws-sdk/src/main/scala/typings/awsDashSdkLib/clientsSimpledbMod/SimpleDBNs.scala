@@ -13,19 +13,19 @@ object SimpleDBNs extends js.Object {
     /**
          * 
          */
-    var AlternateNameEncoding: js.UndefOr[java.lang.String] = js.undefined
+    var AlternateNameEncoding: js.UndefOr[String] = js.undefined
     /**
          * 
          */
-    var AlternateValueEncoding: js.UndefOr[java.lang.String] = js.undefined
+    var AlternateValueEncoding: js.UndefOr[String] = js.undefined
     /**
          * The name of the attribute.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The value of the attribute.
          */
-    var Value: java.lang.String
+    var Value: String
   }
   
   
@@ -33,7 +33,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the domain in which the attributes are being deleted.
          */
-    var DomainName: java.lang.String
+    var DomainName: String
     /**
          * A list of items on which to perform the operation.
          */
@@ -45,7 +45,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the domain in which the attributes are being stored.
          */
-    var DomainName: java.lang.String
+    var DomainName: String
     /**
          * A list of items on which to perform the operation.
          */
@@ -65,7 +65,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the domain to create. The name can range between 3 and 255 characters and can contain the following characters: a-z, A-Z, 0-9, '_', '-', and '.'.
          */
-    var DomainName: java.lang.String
+    var DomainName: String
   }
   
   
@@ -73,17 +73,17 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the attribute.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The value of the attribute.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
   trait DeletableItem extends js.Object {
     var Attributes: js.UndefOr[DeletableAttributeList] = js.undefined
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -95,7 +95,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the domain in which to perform the operation.
          */
-    var DomainName: java.lang.String
+    var DomainName: String
     /**
          * The update condition which, if specified, determines whether the specified attributes will be deleted or not. The update condition must be satisfied in order for this request to be processed and the attributes to be deleted.
          */
@@ -103,7 +103,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the item. Similar to rows on a spreadsheet, items represent individual objects that contain one or more value-attribute pairs.
          */
-    var ItemName: java.lang.String
+    var ItemName: String
   }
   
   
@@ -111,7 +111,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the domain to delete.
          */
-    var DomainName: java.lang.String
+    var DomainName: String
   }
   
   
@@ -119,7 +119,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the domain for which to display the metadata of.
          */
-    var DomainName: java.lang.String
+    var DomainName: String
   }
   
   
@@ -163,15 +163,15 @@ object SimpleDBNs extends js.Object {
     /**
          * Determines whether or not strong consistency should be enforced when data is read from SimpleDB. If true, any data previously written to SimpleDB will be returned. Otherwise, results will be consistent eventually, and the client may not see data that was written immediately before your read.
          */
-    var ConsistentRead: js.UndefOr[scala.Boolean] = js.undefined
+    var ConsistentRead: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain in which to perform the operation.
          */
-    var DomainName: java.lang.String
+    var DomainName: String
     /**
          * The name of the item.
          */
-    var ItemName: java.lang.String
+    var ItemName: String
   }
   
   
@@ -187,7 +187,7 @@ object SimpleDBNs extends js.Object {
     /**
          * 
          */
-    var AlternateNameEncoding: js.UndefOr[java.lang.String] = js.undefined
+    var AlternateNameEncoding: js.UndefOr[String] = js.undefined
     /**
          * A list of attributes.
          */
@@ -195,7 +195,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the item.
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -207,7 +207,7 @@ object SimpleDBNs extends js.Object {
     /**
          * A string informing Amazon SimpleDB where to start the next list of domain names.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -219,7 +219,7 @@ object SimpleDBNs extends js.Object {
     /**
          * An opaque token indicating that there are more domains than the specified MaxNumberOfDomains still available.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -231,7 +231,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the domain in which to perform the operation.
          */
-    var DomainName: java.lang.String
+    var DomainName: String
     /**
          * The update condition which, if specified, determines whether the specified attributes will be updated or not. The update condition must be satisfied in order for this request to be processed and the attributes to be updated.
          */
@@ -239,7 +239,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the item.
          */
-    var ItemName: java.lang.String
+    var ItemName: String
   }
   
   
@@ -247,15 +247,15 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the replaceable attribute.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * A flag specifying whether or not to replace the attribute/value pair or to add a new attribute/value pair. The default setting is false.
          */
-    var Replace: js.UndefOr[scala.Boolean] = js.undefined
+    var Replace: js.UndefOr[Boolean] = js.undefined
     /**
          * The value of the replaceable attribute.
          */
-    var Value: java.lang.String
+    var Value: String
   }
   
   
@@ -267,7 +267,7 @@ object SimpleDBNs extends js.Object {
     /**
          * The name of the replaceable item.
          */
-    var Name: java.lang.String
+    var Name: String
   }
   
   
@@ -275,15 +275,15 @@ object SimpleDBNs extends js.Object {
     /**
          * Determines whether or not strong consistency should be enforced when data is read from SimpleDB. If true, any data previously written to SimpleDB will be returned. Otherwise, results will be consistent eventually, and the client may not see data that was written immediately before your read.
          */
-    var ConsistentRead: js.UndefOr[scala.Boolean] = js.undefined
+    var ConsistentRead: js.UndefOr[Boolean] = js.undefined
     /**
          * A string informing Amazon SimpleDB where to start the next list of ItemNames.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The expression used to query the domain.
          */
-    var SelectExpression: java.lang.String
+    var SelectExpression: String
   }
   
   
@@ -295,7 +295,7 @@ object SimpleDBNs extends js.Object {
     /**
          * An opaque token indicating that more items than MaxNumberOfItems were matched, the response size exceeded 1 megabyte, or the execution time exceeded 5 seconds.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   @js.native
@@ -544,25 +544,25 @@ object SimpleDBNs extends js.Object {
     /**
          * A value specifying whether or not the specified attribute must exist with the specified value in order for the update condition to be satisfied. Specify true if the attribute must exist for the update condition to be satisfied. Specify false if the attribute should not exist in order for the update condition to be satisfied.
          */
-    var Exists: js.UndefOr[scala.Boolean] = js.undefined
+    var Exists: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the attribute involved in the condition.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The value of an attribute. This value can only be specified when the Exists parameter is equal to true.
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   val TypesNs: this.type = js.native
   type AttributeList = js.Array[Attribute]
-  type AttributeNameList = js.Array[java.lang.String]
+  type AttributeNameList = js.Array[String]
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DeletableAttributeList = js.Array[DeletableAttribute]
   type DeletableItemList = js.Array[DeletableItem]
-  type DomainNameList = js.Array[java.lang.String]
+  type DomainNameList = js.Array[String]
   type Integer = scala.Double
   type ItemList = js.Array[Item]
   type Long = scala.Double

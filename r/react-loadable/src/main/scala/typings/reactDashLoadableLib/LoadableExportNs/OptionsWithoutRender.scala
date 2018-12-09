@@ -12,7 +12,7 @@ trait OptionsWithoutRender[Props] extends CommonOptions {
            *
            * Resulting React component receives all the props passed to the generated component.
            */
-  def loader(): stdLib.Promise[
+  def loader(): js.Promise[
     reactLib.reactMod.ReactNs.ComponentType[Props] | reactDashLoadableLib.Anon_Default[Props]
   ]
 }

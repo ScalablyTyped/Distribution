@@ -17,7 +17,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The agent version.
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -25,7 +25,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The app ID.
          */
-    var AppId: js.UndefOr[java.lang.String] = js.undefined
+    var AppId: js.UndefOr[String] = js.undefined
     /**
          * A Source object that describes the app repository.
          */
@@ -37,7 +37,7 @@ object OpsWorksNs extends js.Object {
     /**
          * When the app was created.
          */
-    var CreatedAt: js.UndefOr[java.lang.String] = js.undefined
+    var CreatedAt: js.UndefOr[String] = js.undefined
     /**
          * The app's data sources.
          */
@@ -45,7 +45,7 @@ object OpsWorksNs extends js.Object {
     /**
          * A description of the app.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The app vhost settings with multiple domains separated by commas. For example: 'www.example.com, example.com' 
          */
@@ -53,7 +53,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to enable SSL for the app.
          */
-    var EnableSsl: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableSsl: js.UndefOr[Boolean] = js.undefined
     /**
          * An array of EnvironmentVariable objects that specify environment variables to be associated with the app. After you deploy the app, these variables are defined on the associated app server instances. For more information, see  Environment Variables.   There is no specific limit on the number of environment variables. However, the size of the associated data structure - which includes the variable names, values, and protected flag values - cannot exceed 10 KB (10240 Bytes). This limit should accommodate most if not all use cases, but if you do exceed it, you will cause an exception (API) with an "Environment: is too large (maximum is 10KB)" message. 
          */
@@ -61,11 +61,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The app name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The app's short name.
          */
-    var Shortname: js.UndefOr[java.lang.String] = js.undefined
+    var Shortname: js.UndefOr[String] = js.undefined
     /**
          * An SslConfiguration object with the SSL configuration.
          */
@@ -73,7 +73,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The app stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
     /**
          * The app type.
          */
@@ -82,14 +82,14 @@ object OpsWorksNs extends js.Object {
   
   
   trait AppAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait AssignInstanceRequest extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The layer ID, which must correspond to a custom layer. You cannot assign a registered instance to a built-in layer.
          */
@@ -101,11 +101,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The volume ID.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -113,11 +113,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The Elastic IP address.
          */
-    var ElasticIp: java.lang.String
+    var ElasticIp: String
     /**
          * The instance ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -125,11 +125,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The Elastic Load Balancing instance's name.
          */
-    var ElasticLoadBalancerName: java.lang.String
+    var ElasticLoadBalancerName: String
     /**
          * The ID of the layer to which the Elastic Load Balancing instance is to be attached.
          */
-    var LayerId: java.lang.String
+    var LayerId: String
   }
   
   
@@ -169,7 +169,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The device name that is exposed to the instance, such as /dev/sdh. For the root device, you can use the explicit device name or you can set this parameter to ROOT_DEVICE and AWS OpsWorks Stacks will provide the correct device name.
          */
-    var DeviceName: js.UndefOr[java.lang.String] = js.undefined
+    var DeviceName: js.UndefOr[String] = js.undefined
     /**
          * An EBSBlockDevice that defines how to configure an Amazon EBS volume when the instance is launched.
          */
@@ -177,11 +177,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Suppresses the specified device included in the AMI's block device mapping.
          */
-    var NoDevice: js.UndefOr[java.lang.String] = js.undefined
+    var NoDevice: js.UndefOr[String] = js.undefined
     /**
          * The virtual device name. For more information, see BlockDeviceMapping.
          */
-    var VirtualName: js.UndefOr[java.lang.String] = js.undefined
+    var VirtualName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -189,11 +189,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The Berkshelf version.
          */
-    var BerkshelfVersion: js.UndefOr[java.lang.String] = js.undefined
+    var BerkshelfVersion: js.UndefOr[String] = js.undefined
     /**
          * Whether to enable Berkshelf.
          */
-    var ManageBerkshelf: js.UndefOr[scala.Boolean] = js.undefined
+    var ManageBerkshelf: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -209,7 +209,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The default AWS OpsWorks Stacks agent version. You have the following options:   Auto-update - Set this parameter to LATEST. AWS OpsWorks Stacks automatically installs new agent versions on the stack's instances as soon as they are available.   Fixed version - Set this parameter to your preferred agent version. To update the agent version, you must edit the stack configuration and specify a new version. AWS OpsWorks Stacks then automatically installs that version on the stack's instances.   The default setting is LATEST. To specify an agent version, you must use the complete version number, not the abbreviated number shown on the console. For a list of available agent version numbers, call DescribeAgentVersions. AgentVersion cannot be set to Chef 12.2.  You can also specify an agent version when you create or update an instance, which overrides the stack's default setting. 
          */
-    var AgentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var AgentVersion: js.UndefOr[String] = js.undefined
     /**
          * A list of stack attributes and values as key/value pairs to be added to the cloned stack.
          */
@@ -225,7 +225,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to clone the source stack's permissions.
          */
-    var ClonePermissions: js.UndefOr[scala.Boolean] = js.undefined
+    var ClonePermissions: js.UndefOr[Boolean] = js.undefined
     /**
          * The configuration manager. When you clone a stack we recommend that you use the configuration manager to specify the Chef version: 12, 11.10, or 11.4 for Linux stacks, or 12.2 for Windows stacks. The default value for Linux stacks is currently 12.
          */
@@ -234,19 +234,19 @@ object OpsWorksNs extends js.Object {
     /**
          * A string that contains user-defined, custom JSON. It is used to override the corresponding default stack configuration JSON values. The string should be in the following format:  "{\"key1\": \"value1\", \"key2\": \"value2\",...}"  For more information about custom JSON, see Use Custom JSON to Modify the Stack Configuration Attributes 
          */
-    var CustomJson: js.UndefOr[java.lang.String] = js.undefined
+    var CustomJson: js.UndefOr[String] = js.undefined
     /**
          * The cloned stack's default Availability Zone, which must be in the specified region. For more information, see Regions and Endpoints. If you also specify a value for DefaultSubnetId, the subnet must be in the same zone. For more information, see the VpcId parameter description. 
          */
-    var DefaultAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of an IAM profile that is the default profile for all of the stack's EC2 instances. For more information about IAM ARNs, see Using Identifiers.
          */
-    var DefaultInstanceProfileArn: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultInstanceProfileArn: js.UndefOr[String] = js.undefined
     /**
          * The stack's operating system, which must be set to one of the following.   A supported Linux operating system: An Amazon Linux version, such as Amazon Linux 2017.09, Amazon Linux 2017.03, Amazon Linux 2016.09, Amazon Linux 2016.03, Amazon Linux 2015.09, or Amazon Linux 2015.03.   A supported Ubuntu operating system, such as Ubuntu 16.04 LTS, Ubuntu 14.04 LTS, or Ubuntu 12.04 LTS.    CentOS Linux 7     Red Hat Enterprise Linux 7     Microsoft Windows Server 2012 R2 Base, Microsoft Windows Server 2012 R2 with SQL Server Express, Microsoft Windows Server 2012 R2 with SQL Server Standard, or Microsoft Windows Server 2012 R2 with SQL Server Web.   A custom AMI: Custom. You specify the custom AMI you want to use when you create instances. For more information about how to use custom AMIs with OpsWorks, see Using Custom AMIs.   The default option is the parent stack's operating system. For more information about supported operating systems, see AWS OpsWorks Stacks Operating Systems.  You can specify a different Linux operating system for the cloned stack, but you cannot change from Linux to Windows or Windows to Linux. 
          */
-    var DefaultOs: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultOs: js.UndefOr[String] = js.undefined
     /**
          * The default root device type. This value is used by default for all instances in the cloned stack, but you can override it when you create an instance. For more information, see Storage for the Root Device.
          */
@@ -254,43 +254,43 @@ object OpsWorksNs extends js.Object {
     /**
          * A default Amazon EC2 key pair name. The default value is none. If you specify a key pair name, AWS OpsWorks installs the public key on the instance and you can use the private key with an SSH client to log in to the instance. For more information, see  Using SSH to Communicate with an Instance and  Managing SSH Access. You can override this setting by specifying a different key pair, or no key pair, when you  create an instance. 
          */
-    var DefaultSshKeyName: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultSshKeyName: js.UndefOr[String] = js.undefined
     /**
          * The stack's default VPC subnet ID. This parameter is required if you specify a value for the VpcId parameter. All instances are launched into this subnet unless you specify otherwise when you create the instance. If you also specify a value for DefaultAvailabilityZone, the subnet must be in that zone. For information on default values and when this parameter is required, see the VpcId parameter description. 
          */
-    var DefaultSubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultSubnetId: js.UndefOr[String] = js.undefined
     /**
          * The stack's host name theme, with spaces are replaced by underscores. The theme is used to generate host names for the stack's instances. By default, HostnameTheme is set to Layer_Dependent, which creates host names by appending integers to the layer's short name. The other themes are:    Baked_Goods     Clouds     Europe_Cities     Fruits     Greek_Deities     Legendary_creatures_from_Japan     Planets_and_Moons     Roman_Deities     Scottish_Islands     US_Cities     Wild_Cats    To obtain a generated host name, call GetHostNameSuggestion, which returns a host name based on the current theme.
          */
-    var HostnameTheme: js.UndefOr[java.lang.String] = js.undefined
+    var HostnameTheme: js.UndefOr[String] = js.undefined
     /**
          * The cloned stack name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The cloned stack AWS region, such as "ap-northeast-2". For more information about AWS regions, see Regions and Endpoints.
          */
-    var Region: js.UndefOr[java.lang.String] = js.undefined
+    var Region: js.UndefOr[String] = js.undefined
     /**
          * The stack AWS Identity and Access Management (IAM) role, which allows AWS OpsWorks Stacks to work with AWS resources on your behalf. You must set this parameter to the Amazon Resource Name (ARN) for an existing IAM role. If you create a stack by using the AWS OpsWorks Stacks console, it creates the role for you. You can obtain an existing stack's IAM ARN programmatically by calling DescribePermissions. For more information about IAM ARNs, see Using Identifiers.  You must set this parameter to a valid service role ARN or the action will fail; there is no default value. You can specify the source stack's service role ARN, if you prefer, but you must do so explicitly. 
          */
-    var ServiceRoleArn: java.lang.String
+    var ServiceRoleArn: String
     /**
          * The source stack ID.
          */
-    var SourceStackId: java.lang.String
+    var SourceStackId: String
     /**
          * Whether to use custom cookbooks.
          */
-    var UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined
+    var UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether to associate the AWS OpsWorks Stacks built-in security groups with the stack's layers. AWS OpsWorks Stacks provides a standard set of built-in security groups, one for each layer, which are associated with layers by default. With UseOpsworksSecurityGroups you can instead provide your own custom security groups. UseOpsworksSecurityGroups has the following settings:    True - AWS OpsWorks Stacks automatically associates the appropriate built-in security group with each layer (default setting). You can associate additional security groups with a layer after you create it but you cannot delete the built-in security group.   False - AWS OpsWorks Stacks does not associate built-in security groups with layers. You must create appropriate Amazon Elastic Compute Cloud (Amazon EC2) security groups and associate a security group with each layer that you create. However, you can still manually associate a built-in security group with a layer on creation; custom security groups are required only for those layers that need custom settings.   For more information, see Create a New Stack.
          */
-    var UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined
+    var UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC that the cloned stack is to be launched into. It must be in the specified region. All instances are launched into this VPC, and you cannot change the ID later.   If your account supports EC2 Classic, the default value is no VPC.   If your account does not support EC2 Classic, the default value is the default VPC for the specified region.   If the VPC ID corresponds to a default VPC and you have specified either the DefaultAvailabilityZone or the DefaultSubnetId parameter only, AWS OpsWorks Stacks infers the value of the other parameter. If you specify neither parameter, AWS OpsWorks Stacks sets these parameters to the first valid Availability Zone for the specified region and the corresponding default VPC subnet ID, respectively.  If you specify a nondefault VPC ID, note the following:   It must belong to a VPC in your account that is in the specified region.   You must specify a value for DefaultSubnetId.   For more information about how to use AWS OpsWorks Stacks with a VPC, see Running a Stack in a VPC. For more information about default VPC and EC2 Classic, see Supported Platforms. 
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -298,7 +298,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The cloned stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -306,7 +306,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether CloudWatch Logs is enabled for a layer.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of configuration options for CloudWatch Logs.
          */
@@ -330,7 +330,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Specifies how the time stamp is extracted from logs. For more information, see the CloudWatch Logs Agent Reference.
          */
-    var DatetimeFormat: js.UndefOr[java.lang.String] = js.undefined
+    var DatetimeFormat: js.UndefOr[String] = js.undefined
     /**
          * Specifies the encoding of the log file so that the file can be read correctly. The default is utf_8. Encodings supported by Python codecs.decode() can be used here.
          */
@@ -338,11 +338,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Specifies log files that you want to push to CloudWatch Logs.  File can point to a specific file or multiple files (by using wild card characters such as /var/log/system.log*). Only the latest file is pushed to CloudWatch Logs, based on file modification time. We recommend that you use wild card characters to specify a series of files of the same type, such as access_log.2014-06-01-01, access_log.2014-06-01-02, and so on by using a pattern like access_log.*. Don't use a wildcard to match multiple file types, such as access_log_80 and access_log_443. To specify multiple, different file types, add another log stream entry to the configuration file, so that each log file type is stored in a different log group. Zipped files are not supported.
          */
-    var File: js.UndefOr[java.lang.String] = js.undefined
+    var File: js.UndefOr[String] = js.undefined
     /**
          * Specifies the range of lines for identifying a file. The valid values are one number, or two dash-delimited numbers, such as '1', '2-5'. The default value is '1', meaning the first line is used to calculate the fingerprint. Fingerprint lines are not sent to CloudWatch Logs unless all specified lines are available.
          */
-    var FileFingerprintLines: js.UndefOr[java.lang.String] = js.undefined
+    var FileFingerprintLines: js.UndefOr[String] = js.undefined
     /**
          * Specifies where to start to read data (start_of_file or end_of_file). The default is start_of_file. This setting is only used if there is no state persisted for that log stream.
          */
@@ -350,11 +350,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Specifies the destination log group. A log group is created automatically if it doesn't already exist. Log group names can be between 1 and 512 characters long. Allowed characters include a-z, A-Z, 0-9, '_' (underscore), '-' (hyphen), '/' (forward slash), and '.' (period).
          */
-    var LogGroupName: js.UndefOr[java.lang.String] = js.undefined
+    var LogGroupName: js.UndefOr[String] = js.undefined
     /**
          * Specifies the pattern for identifying the start of a log message.
          */
-    var MultiLineStartPattern: js.UndefOr[java.lang.String] = js.undefined
+    var MultiLineStartPattern: js.UndefOr[String] = js.undefined
     /**
          * Specifies the time zone of log event time stamps.
          */
@@ -370,7 +370,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The command ID.
          */
-    var CommandId: js.UndefOr[java.lang.String] = js.undefined
+    var CommandId: js.UndefOr[String] = js.undefined
     /**
          * Date when the command completed.
          */
@@ -382,7 +382,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The command deployment ID.
          */
-    var DeploymentId: js.UndefOr[java.lang.String] = js.undefined
+    var DeploymentId: js.UndefOr[String] = js.undefined
     /**
          * The command exit code.
          */
@@ -390,19 +390,19 @@ object OpsWorksNs extends js.Object {
     /**
          * The ID of the instance where the command was executed.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The URL of the command log.
          */
-    var LogUrl: js.UndefOr[java.lang.String] = js.undefined
+    var LogUrl: js.UndefOr[String] = js.undefined
     /**
          * The command status:   failed   successful   skipped   pending  
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The command type:    configure     deploy     execute_recipes     install_dependencies     restart     rollback     setup     start     stop     undeploy     update_custom_cookbooks     update_dependencies   
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -422,7 +422,7 @@ object OpsWorksNs extends js.Object {
     /**
          * A description of the app.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The app virtual host settings, with multiple domains separated by commas. For example: 'www.example.com, example.com' 
          */
@@ -430,7 +430,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to enable SSL for the app.
          */
-    var EnableSsl: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableSsl: js.UndefOr[Boolean] = js.undefined
     /**
          * An array of EnvironmentVariable objects that specify environment variables to be associated with the app. After you deploy the app, these variables are defined on the associated app server instance. For more information, see  Environment Variables. There is no specific limit on the number of environment variables. However, the size of the associated data structure - which includes the variables' names, values, and protected flag values - cannot exceed 10 KB (10240 Bytes). This limit should accommodate most if not all use cases. Exceeding it will cause an exception with the message, "Environment: is too large (maximum is 10KB)."  This parameter is supported only by Chef 11.10 stacks. If you have specified one or more environment variables, you cannot modify the stack's Chef version. 
          */
@@ -438,11 +438,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The app name.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The app's short name.
          */
-    var Shortname: js.UndefOr[java.lang.String] = js.undefined
+    var Shortname: js.UndefOr[String] = js.undefined
     /**
          * An SslConfiguration object with the SSL configuration.
          */
@@ -450,7 +450,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
     /**
          * The app type. Each supported type is associated with a particular layer. For example, PHP applications are associated with a PHP layer. AWS OpsWorks Stacks deploys an application to those instances that are members of the corresponding layer. If your app isn't one of the standard types, or you prefer to implement your own Deploy recipes, specify other.
          */
@@ -462,7 +462,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The app ID.
          */
-    var AppId: js.UndefOr[java.lang.String] = js.undefined
+    var AppId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -470,7 +470,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The app ID. This parameter is required for app deployments, but not for other deployment commands.
          */
-    var AppId: js.UndefOr[java.lang.String] = js.undefined
+    var AppId: js.UndefOr[String] = js.undefined
     /**
          * A DeploymentCommand object that specifies the deployment command and any associated arguments.
          */
@@ -478,11 +478,11 @@ object OpsWorksNs extends js.Object {
     /**
          * A user-defined comment.
          */
-    var Comment: js.UndefOr[java.lang.String] = js.undefined
+    var Comment: js.UndefOr[String] = js.undefined
     /**
          * A string that contains user-defined, custom JSON. It is used to override the corresponding default stack configuration JSON values. The string should be in the following format:  "{\"key1\": \"value1\", \"key2\": \"value2\",...}"  For more information about custom JSON, see Use Custom JSON to Modify the Stack Configuration Attributes.
          */
-    var CustomJson: js.UndefOr[java.lang.String] = js.undefined
+    var CustomJson: js.UndefOr[String] = js.undefined
     /**
          * The instance IDs for the deployment targets.
          */
@@ -494,7 +494,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -502,7 +502,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The deployment ID, which can be used with other requests to identify the deployment.
          */
-    var DeploymentId: js.UndefOr[java.lang.String] = js.undefined
+    var DeploymentId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -510,11 +510,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The default AWS OpsWorks Stacks agent version. You have the following options:    INHERIT - Use the stack's default agent version setting.    version_number - Use the specified agent version. This value overrides the stack's default setting. To update the agent version, edit the instance configuration and specify a new version. AWS OpsWorks Stacks then automatically installs that version on the instance.   The default setting is INHERIT. To specify an agent version, you must use the complete version number, not the abbreviated number shown on the console. For a list of available agent version numbers, call DescribeAgentVersions. AgentVersion cannot be set to Chef 12.2.
          */
-    var AgentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var AgentVersion: js.UndefOr[String] = js.undefined
     /**
          * A custom AMI ID to be used to create the instance. The AMI should be based on one of the supported operating systems. For more information, see Using Custom AMIs.  If you specify a custom AMI, you must set Os to Custom. 
          */
-    var AmiId: js.UndefOr[java.lang.String] = js.undefined
+    var AmiId: js.UndefOr[String] = js.undefined
     /**
          * The instance architecture. The default option is x86_64. Instance types do not necessarily support both architectures. For a list of the architectures that are supported by the different instance types, see Instance Families and Types.
          */
@@ -526,7 +526,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance Availability Zone. For more information, see Regions and Endpoints.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * An array of BlockDeviceMapping objects that specify the instance's block devices. For more information, see Block Device Mapping. Note that block device mappings are not supported for custom AMIs.
          */
@@ -534,19 +534,19 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to create an Amazon EBS-optimized instance.
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance host name.
          */
-    var Hostname: js.UndefOr[java.lang.String] = js.undefined
+    var Hostname: js.UndefOr[String] = js.undefined
     /**
          * Whether to install operating system and package updates when the instance boots. The default value is true. To control when updates are installed, set this value to false. You must then update your instances manually by using CreateDeployment to run the update_dependencies stack command or by manually running yum (Amazon Linux) or apt-get (Ubuntu) on the instances.   We strongly recommend using the default value of true to ensure that your instances have the latest security updates. 
          */
-    var InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined
+    var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance type, such as t2.micro. For a list of supported instance types, open the stack in the console, choose Instances, and choose + Instance. The Size list contains the currently supported types. For more information, see Instance Families and Types. The parameter values that you use to specify the various types are in the API Name column of the Available Instance Types table.
          */
-    var InstanceType: java.lang.String
+    var InstanceType: String
     /**
          * An array that contains the instance's layer IDs.
          */
@@ -554,7 +554,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's operating system, which must be set to one of the following.   A supported Linux operating system: An Amazon Linux version, such as Amazon Linux 2017.09, Amazon Linux 2017.03, Amazon Linux 2016.09, Amazon Linux 2016.03, Amazon Linux 2015.09, or Amazon Linux 2015.03.   A supported Ubuntu operating system, such as Ubuntu 16.04 LTS, Ubuntu 14.04 LTS, or Ubuntu 12.04 LTS.    CentOS Linux 7     Red Hat Enterprise Linux 7    A supported Windows operating system, such as Microsoft Windows Server 2012 R2 Base, Microsoft Windows Server 2012 R2 with SQL Server Express, Microsoft Windows Server 2012 R2 with SQL Server Standard, or Microsoft Windows Server 2012 R2 with SQL Server Web.   A custom AMI: Custom.   For more information about the supported operating systems, see AWS OpsWorks Stacks Operating Systems. The default option is the current Amazon Linux version. If you set this parameter to Custom, you must use the CreateInstance action's AmiId parameter to specify the custom AMI that you want to use. Block device mappings are not supported if the value is Custom. For more information about supported operating systems, see Operating SystemsFor more information about how to use custom AMIs with AWS OpsWorks Stacks, see Using Custom AMIs.
          */
-    var Os: js.UndefOr[java.lang.String] = js.undefined
+    var Os: js.UndefOr[String] = js.undefined
     /**
          * The instance root device type. For more information, see Storage for the Root Device.
          */
@@ -562,23 +562,23 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's Amazon EC2 key-pair name.
          */
-    var SshKeyName: js.UndefOr[java.lang.String] = js.undefined
+    var SshKeyName: js.UndefOr[String] = js.undefined
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
     /**
          * The ID of the instance's subnet. If the stack is running in a VPC, you can use this parameter to override the stack's default subnet ID value and direct AWS OpsWorks Stacks to launch the instance in a different subnet.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The instance's tenancy option. The default option is no tenancy, or if the instance is running in a VPC, inherit tenancy settings from the VPC. The following are valid values for this parameter: dedicated, default, or host. Because there are costs associated with changes in tenancy options, we recommend that you research tenancy options before choosing them for your instances. For more information about dedicated hosts, see Dedicated Hosts Overview and Amazon EC2 Dedicated Hosts. For more information about dedicated instances, see Dedicated Instances and Amazon EC2 Dedicated Instances.
          */
-    var Tenancy: js.UndefOr[java.lang.String] = js.undefined
+    var Tenancy: js.UndefOr[String] = js.undefined
     /**
          * The instance's virtualization type, paravirtual or hvm.
          */
-    var VirtualizationType: js.UndefOr[java.lang.String] = js.undefined
+    var VirtualizationType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -586,7 +586,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -598,11 +598,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to automatically assign an Elastic IP address to the layer's instances. For more information, see How to Edit a Layer.
          */
-    var AutoAssignElasticIps: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoAssignElasticIps: js.UndefOr[Boolean] = js.undefined
     /**
          * For stacks that are running in a VPC, whether to automatically assign a public IP address to the layer's instances. For more information, see How to Edit a Layer.
          */
-    var AutoAssignPublicIps: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoAssignPublicIps: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies CloudWatch Logs configuration options for the layer. For more information, see CloudWatchLogsLogStream.
          */
@@ -610,11 +610,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The ARN of an IAM profile to be used for the layer's EC2 instances. For more information about IAM ARNs, see Using Identifiers.
          */
-    var CustomInstanceProfileArn: js.UndefOr[java.lang.String] = js.undefined
+    var CustomInstanceProfileArn: js.UndefOr[String] = js.undefined
     /**
          * A JSON-formatted string containing custom stack configuration and deployment attributes to be installed on the layer's instances. For more information, see  Using Custom JSON. This feature is supported as of version 1.7.42 of the AWS CLI. 
          */
-    var CustomJson: js.UndefOr[java.lang.String] = js.undefined
+    var CustomJson: js.UndefOr[String] = js.undefined
     /**
          * A LayerCustomRecipes object that specifies the layer custom recipes.
          */
@@ -626,11 +626,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to disable auto healing for the layer.
          */
-    var EnableAutoHealing: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableAutoHealing: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether to install operating system and package updates when the instance boots. The default value is true. To control when updates are installed, set this value to false. You must then update your instances manually by using CreateDeployment to run the update_dependencies stack command or by manually running yum (Amazon Linux) or apt-get (Ubuntu) on the instances.   To ensure that your instances have the latest security updates, we strongly recommend using the default value of true. 
          */
-    var InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined
+    var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined
     /**
          * A LifeCycleEventConfiguration object that you can use to configure the Shutdown event to specify an execution timeout and enable or disable Elastic Load Balancer connection draining.
          */
@@ -638,7 +638,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The layer name, which is used by the console.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * An array of Package objects that describes the layer packages.
          */
@@ -646,11 +646,11 @@ object OpsWorksNs extends js.Object {
     /**
          * For custom layers only, use this parameter to specify the layer's short name, which is used internally by AWS OpsWorks Stacks and by Chef recipes. The short name is also used as the name for the directory where your app files are installed. It can have a maximum of 200 characters, which are limited to the alphanumeric characters, '-', '_', and '.'. The built-in layers' short names are defined by AWS OpsWorks Stacks. For more information, see the Layer Reference.
          */
-    var Shortname: java.lang.String
+    var Shortname: String
     /**
          * The layer stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
     /**
          * The layer type. A stack cannot have more than one built-in layer of the same type. It can have any number of custom layers. Built-in layers are not available in Chef 12 stacks.
          */
@@ -658,7 +658,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to use Amazon EBS-optimized instances.
          */
-    var UseEbsOptimizedInstances: js.UndefOr[scala.Boolean] = js.undefined
+    var UseEbsOptimizedInstances: js.UndefOr[Boolean] = js.undefined
     /**
          * A VolumeConfigurations object that describes the layer's Amazon EBS volumes.
          */
@@ -670,7 +670,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The layer ID.
          */
-    var LayerId: js.UndefOr[java.lang.String] = js.undefined
+    var LayerId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -678,7 +678,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The default AWS OpsWorks Stacks agent version. You have the following options:   Auto-update - Set this parameter to LATEST. AWS OpsWorks Stacks automatically installs new agent versions on the stack's instances as soon as they are available.   Fixed version - Set this parameter to your preferred agent version. To update the agent version, you must edit the stack configuration and specify a new version. AWS OpsWorks Stacks then automatically installs that version on the stack's instances.   The default setting is the most recent release of the agent. To specify an agent version, you must use the complete version number, not the abbreviated number shown on the console. For a list of available agent version numbers, call DescribeAgentVersions. AgentVersion cannot be set to Chef 12.2.  You can also specify an agent version when you create or update an instance, which overrides the stack's default setting. 
          */
-    var AgentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var AgentVersion: js.UndefOr[String] = js.undefined
     /**
          * One or more user-defined key-value pairs to be added to the stack attributes.
          */
@@ -695,19 +695,19 @@ object OpsWorksNs extends js.Object {
     /**
          * A string that contains user-defined, custom JSON. It can be used to override the corresponding default stack configuration attribute values or to pass data to recipes. The string should be in the following format:  "{\"key1\": \"value1\", \"key2\": \"value2\",...}"  For more information about custom JSON, see Use Custom JSON to Modify the Stack Configuration Attributes.
          */
-    var CustomJson: js.UndefOr[java.lang.String] = js.undefined
+    var CustomJson: js.UndefOr[String] = js.undefined
     /**
          * The stack's default Availability Zone, which must be in the specified region. For more information, see Regions and Endpoints. If you also specify a value for DefaultSubnetId, the subnet must be in the same zone. For more information, see the VpcId parameter description. 
          */
-    var DefaultAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of an IAM profile that is the default profile for all of the stack's EC2 instances. For more information about IAM ARNs, see Using Identifiers.
          */
-    var DefaultInstanceProfileArn: java.lang.String
+    var DefaultInstanceProfileArn: String
     /**
          * The stack's default operating system, which is installed on every instance unless you specify a different operating system when you create the instance. You can specify one of the following.   A supported Linux operating system: An Amazon Linux version, such as Amazon Linux 2017.09, Amazon Linux 2017.03, Amazon Linux 2016.09, Amazon Linux 2016.03, Amazon Linux 2015.09, or Amazon Linux 2015.03.   A supported Ubuntu operating system, such as Ubuntu 16.04 LTS, Ubuntu 14.04 LTS, or Ubuntu 12.04 LTS.    CentOS Linux 7     Red Hat Enterprise Linux 7    A supported Windows operating system, such as Microsoft Windows Server 2012 R2 Base, Microsoft Windows Server 2012 R2 with SQL Server Express, Microsoft Windows Server 2012 R2 with SQL Server Standard, or Microsoft Windows Server 2012 R2 with SQL Server Web.   A custom AMI: Custom. You specify the custom AMI you want to use when you create instances. For more information, see  Using Custom AMIs.   The default option is the current Amazon Linux version. For more information about supported operating systems, see AWS OpsWorks Stacks Operating Systems.
          */
-    var DefaultOs: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultOs: js.UndefOr[String] = js.undefined
     /**
          * The default root device type. This value is the default for all instances in the stack, but you can override it when you create an instance. The default option is instance-store. For more information, see Storage for the Root Device.
          */
@@ -715,39 +715,39 @@ object OpsWorksNs extends js.Object {
     /**
          * A default Amazon EC2 key pair name. The default value is none. If you specify a key pair name, AWS OpsWorks installs the public key on the instance and you can use the private key with an SSH client to log in to the instance. For more information, see  Using SSH to Communicate with an Instance and  Managing SSH Access. You can override this setting by specifying a different key pair, or no key pair, when you  create an instance. 
          */
-    var DefaultSshKeyName: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultSshKeyName: js.UndefOr[String] = js.undefined
     /**
          * The stack's default VPC subnet ID. This parameter is required if you specify a value for the VpcId parameter. All instances are launched into this subnet unless you specify otherwise when you create the instance. If you also specify a value for DefaultAvailabilityZone, the subnet must be in that zone. For information on default values and when this parameter is required, see the VpcId parameter description. 
          */
-    var DefaultSubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultSubnetId: js.UndefOr[String] = js.undefined
     /**
          * The stack's host name theme, with spaces replaced by underscores. The theme is used to generate host names for the stack's instances. By default, HostnameTheme is set to Layer_Dependent, which creates host names by appending integers to the layer's short name. The other themes are:    Baked_Goods     Clouds     Europe_Cities     Fruits     Greek_Deities     Legendary_creatures_from_Japan     Planets_and_Moons     Roman_Deities     Scottish_Islands     US_Cities     Wild_Cats    To obtain a generated host name, call GetHostNameSuggestion, which returns a host name based on the current theme.
          */
-    var HostnameTheme: js.UndefOr[java.lang.String] = js.undefined
+    var HostnameTheme: js.UndefOr[String] = js.undefined
     /**
          * The stack name.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The stack's AWS region, such as ap-south-1. For more information about Amazon regions, see Regions and Endpoints.  In the AWS CLI, this API maps to the --stack-region parameter. If the --stack-region parameter and the AWS CLI common parameter --region are set to the same value, the stack uses a regional endpoint. If the --stack-region parameter is not set, but the AWS CLI --region parameter is, this also results in a stack with a regional endpoint. However, if the --region parameter is set to us-east-1, and the --stack-region parameter is set to one of the following, then the stack uses a legacy or classic region: us-west-1, us-west-2, sa-east-1, eu-central-1, eu-west-1, ap-northeast-1, ap-southeast-1, ap-southeast-2. In this case, the actual API endpoint of the stack is in us-east-1. Only the preceding regions are supported as classic regions in the us-east-1 API endpoint. Because it is a best practice to choose the regional endpoint that is closest to where you manage AWS, we recommend that you use regional endpoints for new stacks. The AWS CLI common --region parameter always specifies a regional API endpoint; it cannot be used to specify a classic AWS OpsWorks Stacks region. 
          */
-    var Region: java.lang.String
+    var Region: String
     /**
          * The stack's AWS Identity and Access Management (IAM) role, which allows AWS OpsWorks Stacks to work with AWS resources on your behalf. You must set this parameter to the Amazon Resource Name (ARN) for an existing IAM role. For more information about IAM ARNs, see Using Identifiers.
          */
-    var ServiceRoleArn: java.lang.String
+    var ServiceRoleArn: String
     /**
          * Whether the stack uses custom cookbooks.
          */
-    var UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined
+    var UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether to associate the AWS OpsWorks Stacks built-in security groups with the stack's layers. AWS OpsWorks Stacks provides a standard set of built-in security groups, one for each layer, which are associated with layers by default. With UseOpsworksSecurityGroups you can instead provide your own custom security groups. UseOpsworksSecurityGroups has the following settings:    True - AWS OpsWorks Stacks automatically associates the appropriate built-in security group with each layer (default setting). You can associate additional security groups with a layer after you create it, but you cannot delete the built-in security group.   False - AWS OpsWorks Stacks does not associate built-in security groups with layers. You must create appropriate EC2 security groups and associate a security group with each layer that you create. However, you can still manually associate a built-in security group with a layer on creation; custom security groups are required only for those layers that need custom settings.   For more information, see Create a New Stack.
          */
-    var UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined
+    var UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the VPC that the stack is to be launched into. The VPC must be in the stack's region. All instances are launched into this VPC. You cannot change the ID later.   If your account supports EC2-Classic, the default value is no VPC.   If your account does not support EC2-Classic, the default value is the default VPC for the specified region.   If the VPC ID corresponds to a default VPC and you have specified either the DefaultAvailabilityZone or the DefaultSubnetId parameter only, AWS OpsWorks Stacks infers the value of the other parameter. If you specify neither parameter, AWS OpsWorks Stacks sets these parameters to the first valid Availability Zone for the specified region and the corresponding default VPC subnet ID, respectively. If you specify a nondefault VPC ID, note the following:   It must belong to a VPC in your account that is in the specified region.   You must specify a value for DefaultSubnetId.   For more information about how to use AWS OpsWorks Stacks with a VPC, see Running a Stack in a VPC. For more information about default VPC and EC2-Classic, see Supported Platforms. 
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -755,7 +755,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID, which is an opaque string that you use to identify the stack when performing actions such as DescribeStacks.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -763,19 +763,19 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether users can specify their own SSH public key through the My Settings page. For more information, see Setting an IAM User's Public SSH Key.
          */
-    var AllowSelfManagement: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowSelfManagement: js.UndefOr[Boolean] = js.undefined
     /**
          * The user's IAM ARN; this can also be a federated user's ARN.
          */
-    var IamUserArn: java.lang.String
+    var IamUserArn: String
     /**
          * The user's public SSH key.
          */
-    var SshPublicKey: js.UndefOr[java.lang.String] = js.undefined
+    var SshPublicKey: js.UndefOr[String] = js.undefined
     /**
          * The user's SSH user name. The allowable characters are [a-z], [A-Z], [0-9], '-', and '_'. If the specified name includes other punctuation marks, AWS OpsWorks Stacks removes them. For example, my.name will be changed to myname. If you do not specify an SSH user name, AWS OpsWorks Stacks generates one from the IAM user name. 
          */
-    var SshUsername: js.UndefOr[java.lang.String] = js.undefined
+    var SshUsername: js.UndefOr[String] = js.undefined
   }
   
   
@@ -783,7 +783,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The user's IAM ARN.
          */
-    var IamUserArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamUserArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -795,15 +795,15 @@ object OpsWorksNs extends js.Object {
     /**
          * The data source's ARN.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The database name.
          */
-    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    var DatabaseName: js.UndefOr[String] = js.undefined
     /**
          * The data source's type, AutoSelectOpsworksMysqlInstance, OpsworksMysqlInstance, RdsDbInstance, or None.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -811,7 +811,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The app ID.
          */
-    var AppId: java.lang.String
+    var AppId: String
   }
   
   
@@ -819,15 +819,15 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to delete the instance Elastic IP address.
          */
-    var DeleteElasticIp: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteElasticIp: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether to delete the instance's Amazon EBS volumes.
          */
-    var DeleteVolumes: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteVolumes: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -835,7 +835,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The layer ID.
          */
-    var LayerId: java.lang.String
+    var LayerId: String
   }
   
   
@@ -843,7 +843,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -851,7 +851,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The user's IAM ARN. This can also be a federated user's ARN.
          */
-    var IamUserArn: java.lang.String
+    var IamUserArn: String
   }
   
   
@@ -859,12 +859,12 @@ object OpsWorksNs extends js.Object {
     /**
          * The app ID.
          */
-    var AppId: js.UndefOr[java.lang.String] = js.undefined
+    var AppId: js.UndefOr[String] = js.undefined
     var Command: js.UndefOr[DeploymentCommand] = js.undefined
     /**
          * A user-defined comment.
          */
-    var Comment: js.UndefOr[java.lang.String] = js.undefined
+    var Comment: js.UndefOr[String] = js.undefined
     /**
          * Date when the deployment completed.
          */
@@ -876,11 +876,11 @@ object OpsWorksNs extends js.Object {
     /**
          * A string that contains user-defined custom JSON. It can be used to override the corresponding default stack configuration attribute values for stack or to pass data to recipes. The string should be in the following format:  "{\"key1\": \"value1\", \"key2\": \"value2\",...}"  For more information on custom JSON, see Use Custom JSON to Modify the Stack Configuration Attributes.
          */
-    var CustomJson: js.UndefOr[java.lang.String] = js.undefined
+    var CustomJson: js.UndefOr[String] = js.undefined
     /**
          * The deployment ID.
          */
-    var DeploymentId: js.UndefOr[java.lang.String] = js.undefined
+    var DeploymentId: js.UndefOr[String] = js.undefined
     /**
          * The deployment duration.
          */
@@ -888,7 +888,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The user's IAM ARN.
          */
-    var IamUserArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamUserArn: js.UndefOr[String] = js.undefined
     /**
          * The IDs of the target instances.
          */
@@ -896,11 +896,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
     /**
          * The deployment status:   running   successful   failed  
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -924,7 +924,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The cluster's Amazon Resource Number (ARN).
          */
-    var EcsClusterArn: java.lang.String
+    var EcsClusterArn: String
   }
   
   
@@ -932,7 +932,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The Elastic IP address.
          */
-    var ElasticIp: java.lang.String
+    var ElasticIp: String
   }
   
   
@@ -940,7 +940,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -948,7 +948,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The Amazon RDS instance's ARN.
          */
-    var RdsDbInstanceArn: java.lang.String
+    var RdsDbInstanceArn: String
   }
   
   
@@ -956,7 +956,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The AWS OpsWorks Stacks volume ID, which is the GUID that AWS OpsWorks Stacks assigned to the instance when you registered the volume with the stack, not the Amazon EC2 volume ID.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -968,7 +968,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -988,7 +988,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The app stack ID. If you use this parameter, DescribeApps returns a description of the apps in the specified stack.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1008,11 +1008,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The deployment ID. If you include this parameter, DescribeCommands returns a description of the commands associated with the specified deployment.
          */
-    var DeploymentId: js.UndefOr[java.lang.String] = js.undefined
+    var DeploymentId: js.UndefOr[String] = js.undefined
     /**
          * The instance ID. If you include this parameter, DescribeCommands returns a description of the commands associated with the specified instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1028,7 +1028,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The app ID. If you include this parameter, the command returns a description of the commands associated with the specified app.
          */
-    var AppId: js.UndefOr[java.lang.String] = js.undefined
+    var AppId: js.UndefOr[String] = js.undefined
     /**
          * An array of deployment IDs to be described. If you include this parameter, the command returns a description of the specified deployments. Otherwise, it returns a description of every deployment.
          */
@@ -1036,7 +1036,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID. If you include this parameter, the command returns a description of the commands associated with the specified stack.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1060,11 +1060,11 @@ object OpsWorksNs extends js.Object {
     /**
          * If the previous paginated request did not return all of the remaining results, the response object'sNextToken parameter value is set to a token. To retrieve the next set of results, call DescribeEcsClusters again and assign that token to the request object's NextToken parameter. If there are no remaining results, the previous response object's NextToken parameter is set to null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A stack ID. DescribeEcsClusters returns a description of the cluster that is registered with the stack.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1076,7 +1076,7 @@ object OpsWorksNs extends js.Object {
     /**
          * If a paginated request does not return all of the remaining results, this parameter is set to a token that you can assign to the request object's NextToken parameter to retrieve the next set of results. If the previous paginated request returned all of the remaining results, this parameter is set to null.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1084,7 +1084,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID. If you include this parameter, DescribeElasticIps returns a description of the Elastic IP addresses associated with the specified instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * An array of Elastic IP addresses to be described. If you include this parameter, DescribeElasticIps returns a description of the specified Elastic IP addresses. Otherwise, it returns a description of every Elastic IP address.
          */
@@ -1092,7 +1092,7 @@ object OpsWorksNs extends js.Object {
     /**
          * A stack ID. If you include this parameter, DescribeElasticIps returns a description of the Elastic IP addresses that are registered with the specified stack.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1112,7 +1112,7 @@ object OpsWorksNs extends js.Object {
     /**
          * A stack ID. The action describes the stack's Elastic Load Balancing instances.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1132,11 +1132,11 @@ object OpsWorksNs extends js.Object {
     /**
          * A layer ID. If you use this parameter, DescribeInstances returns descriptions of the instances associated with the specified layer.
          */
-    var LayerId: js.UndefOr[java.lang.String] = js.undefined
+    var LayerId: js.UndefOr[String] = js.undefined
     /**
          * A stack ID. If you use this parameter, DescribeInstances returns descriptions of the instances associated with the specified stack.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1156,7 +1156,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1204,11 +1204,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The user's IAM ARN. This can also be a federated user's ARN. For more information about IAM ARNs, see Using Identifiers.
          */
-    var IamUserArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamUserArn: js.UndefOr[String] = js.undefined
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1224,7 +1224,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID. If you use this parameter, DescribeRaidArrays returns descriptions of the RAID arrays associated with the specified instance. 
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * An array of RAID array IDs. If you use this parameter, DescribeRaidArrays returns descriptions of the specified arrays. Otherwise, it returns a description of every array.
          */
@@ -1232,7 +1232,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1252,7 +1252,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The ID of the stack with which the instances are registered. The operation returns descriptions of all registered Amazon RDS instances.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -1268,7 +1268,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID. If you use this parameter, DescribeServiceErrors returns descriptions of the errors associated with the specified instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * An array of service error IDs. If you use this parameter, DescribeServiceErrors returns descriptions of the specified errors. Otherwise, it returns a description of every error.
          */
@@ -1276,7 +1276,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID. If you use this parameter, DescribeServiceErrors returns descriptions of the errors associated with the specified stack.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1292,7 +1292,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -1300,7 +1300,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The AWS OpsWorks Stacks agent installer's URL.
          */
-    var AgentInstallerUrl: js.UndefOr[java.lang.String] = js.undefined
+    var AgentInstallerUrl: js.UndefOr[String] = js.undefined
     /**
          * An embedded object that contains the provisioning parameters.
          */
@@ -1312,7 +1312,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -1376,15 +1376,15 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID. If you use this parameter, DescribeVolumes returns descriptions of the volumes associated with the specified instance.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The RAID array ID. If you use this parameter, DescribeVolumes returns descriptions of the volumes associated with the specified RAID array.
          */
-    var RaidArrayId: js.UndefOr[java.lang.String] = js.undefined
+    var RaidArrayId: js.UndefOr[String] = js.undefined
     /**
          * A stack ID. The action describes the stack's registered Amazon EBS volumes.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
     /**
          * Am array of volume IDs. If you use this parameter, DescribeVolumes returns descriptions of the specified volumes. Otherwise, it returns a description of every volume.
          */
@@ -1404,11 +1404,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The Elastic Load Balancing instance's name.
          */
-    var ElasticLoadBalancerName: java.lang.String
+    var ElasticLoadBalancerName: String
     /**
          * The ID of the layer that the Elastic Load Balancing instance is attached to.
          */
-    var LayerId: java.lang.String
+    var LayerId: String
   }
   
   
@@ -1416,7 +1416,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The Elastic IP address.
          */
-    var ElasticIp: java.lang.String
+    var ElasticIp: String
   }
   
   
@@ -1424,7 +1424,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether the volume is deleted on instance termination.
          */
-    var DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+    var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of I/O operations per second (IOPS) that the volume supports. For more information, see EbsBlockDevice.
          */
@@ -1432,7 +1432,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The snapshot ID.
          */
-    var SnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var SnapshotId: js.UndefOr[String] = js.undefined
     /**
          * The volume size, in GiB. For more information, see EbsBlockDevice.
          */
@@ -1448,11 +1448,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The cluster's ARN.
          */
-    var EcsClusterArn: js.UndefOr[java.lang.String] = js.undefined
+    var EcsClusterArn: js.UndefOr[String] = js.undefined
     /**
          * The cluster name.
          */
-    var EcsClusterName: js.UndefOr[java.lang.String] = js.undefined
+    var EcsClusterName: js.UndefOr[String] = js.undefined
     /**
          * The time and date that the cluster was registered with the stack.
          */
@@ -1460,7 +1460,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1468,23 +1468,23 @@ object OpsWorksNs extends js.Object {
     /**
          * The domain.
          */
-    var Domain: js.UndefOr[java.lang.String] = js.undefined
+    var Domain: js.UndefOr[String] = js.undefined
     /**
          * The ID of the instance that the address is attached to.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The IP address.
          */
-    var Ip: js.UndefOr[java.lang.String] = js.undefined
+    var Ip: js.UndefOr[String] = js.undefined
     /**
          * The name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The AWS region. For more information, see Regions and Endpoints.
          */
-    var Region: js.UndefOr[java.lang.String] = js.undefined
+    var Region: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1496,7 +1496,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's public DNS name.
          */
-    var DnsName: js.UndefOr[java.lang.String] = js.undefined
+    var DnsName: js.UndefOr[String] = js.undefined
     /**
          * A list of the EC2 instances that the Elastic Load Balancing instance is managing traffic for.
          */
@@ -1504,19 +1504,19 @@ object OpsWorksNs extends js.Object {
     /**
          * The Elastic Load Balancing instance's name.
          */
-    var ElasticLoadBalancerName: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticLoadBalancerName: js.UndefOr[String] = js.undefined
     /**
          * The ID of the layer that the instance is attached to.
          */
-    var LayerId: js.UndefOr[java.lang.String] = js.undefined
+    var LayerId: js.UndefOr[String] = js.undefined
     /**
          * The instance's AWS region.
          */
-    var Region: js.UndefOr[java.lang.String] = js.undefined
+    var Region: js.UndefOr[String] = js.undefined
     /**
          * The ID of the stack that the instance is associated with.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
     /**
          * A list of subnet IDs, if the stack is running in a VPC.
          */
@@ -1524,7 +1524,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The VPC ID.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1532,15 +1532,15 @@ object OpsWorksNs extends js.Object {
     /**
          * (Required) The environment variable's name, which can consist of up to 64 characters and must be specified. The name can contain upper- and lowercase letters, numbers, and underscores (_), but it must start with a letter or underscore.
          */
-    var Key: java.lang.String
+    var Key: String
     /**
          * (Optional) Whether the variable's value will be returned by the DescribeApps action. To conceal an environment variable's value, set Secure to true. DescribeApps then returns *****FILTERED***** instead of the actual value. The default value for Secure is false. 
          */
-    var Secure: js.UndefOr[scala.Boolean] = js.undefined
+    var Secure: js.UndefOr[Boolean] = js.undefined
     /**
          * (Optional) The environment variable's value, which can be left empty. If you specify a value, it can contain up to 256 characters, which must all be printable.
          */
-    var Value: java.lang.String
+    var Value: String
   }
   
   
@@ -1548,7 +1548,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The layer ID.
          */
-    var LayerId: java.lang.String
+    var LayerId: String
   }
   
   
@@ -1556,11 +1556,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The generated host name.
          */
-    var Hostname: js.UndefOr[java.lang.String] = js.undefined
+    var Hostname: js.UndefOr[String] = js.undefined
     /**
          * The layer ID.
          */
-    var LayerId: js.UndefOr[java.lang.String] = js.undefined
+    var LayerId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1568,7 +1568,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's AWS OpsWorks Stacks ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The length of time (in minutes) that the grant is valid. When the grant expires at the end of this period, the user will no longer be able to use the credentials to log in. If the user is logged in at the time, he or she automatically will be logged out.
          */
@@ -1588,11 +1588,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The agent version. This parameter is set to INHERIT if the instance inherits the default stack setting or to a a version number for a fixed agent version.
          */
-    var AgentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var AgentVersion: js.UndefOr[String] = js.undefined
     /**
          * A custom AMI ID to be used to create the instance. For more information, see Instances 
          */
-    var AmiId: js.UndefOr[java.lang.String] = js.undefined
+    var AmiId: js.UndefOr[String] = js.undefined
     /**
          * The instance architecture: "i386" or "x86_64".
          */
@@ -1600,7 +1600,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's Amazon Resource Number (ARN).
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * For load-based or time-based instances, the type.
          */
@@ -1608,7 +1608,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance Availability Zone. For more information, see Regions and Endpoints.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * An array of BlockDeviceMapping objects that specify the instance's block device mappings.
          */
@@ -1620,51 +1620,51 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether this is an Amazon EBS-optimized instance.
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The ID of the associated Amazon EC2 instance.
          */
-    var Ec2InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var Ec2InstanceId: js.UndefOr[String] = js.undefined
     /**
          * For container instances, the Amazon ECS cluster's ARN.
          */
-    var EcsClusterArn: js.UndefOr[java.lang.String] = js.undefined
+    var EcsClusterArn: js.UndefOr[String] = js.undefined
     /**
          * For container instances, the instance's ARN.
          */
-    var EcsContainerInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var EcsContainerInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The instance Elastic IP address .
          */
-    var ElasticIp: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticIp: js.UndefOr[String] = js.undefined
     /**
          * The instance host name.
          */
-    var Hostname: js.UndefOr[java.lang.String] = js.undefined
+    var Hostname: js.UndefOr[String] = js.undefined
     /**
          * For registered instances, the infrastructure class: ec2 or on-premises.
          */
-    var InfrastructureClass: js.UndefOr[java.lang.String] = js.undefined
+    var InfrastructureClass: js.UndefOr[String] = js.undefined
     /**
          * Whether to install operating system and package updates when the instance boots. The default value is true. If this value is set to false, you must then update your instances manually by using CreateDeployment to run the update_dependencies stack command or by manually running yum (Amazon Linux) or apt-get (Ubuntu) on the instances.   We strongly recommend using the default value of true, to ensure that your instances have the latest security updates. 
          */
-    var InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined
+    var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The ARN of the instance's IAM profile. For more information about IAM ARNs, see Using Identifiers.
          */
-    var InstanceProfileArn: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceProfileArn: js.UndefOr[String] = js.undefined
     /**
          * The instance type, such as t2.micro.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The ID of the last service error. For more information, call DescribeServiceErrors.
          */
-    var LastServiceErrorId: js.UndefOr[java.lang.String] = js.undefined
+    var LastServiceErrorId: js.UndefOr[String] = js.undefined
     /**
          * An array containing the instance layer IDs.
          */
@@ -1672,35 +1672,35 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's operating system.
          */
-    var Os: js.UndefOr[java.lang.String] = js.undefined
+    var Os: js.UndefOr[String] = js.undefined
     /**
          * The instance's platform.
          */
-    var Platform: js.UndefOr[java.lang.String] = js.undefined
+    var Platform: js.UndefOr[String] = js.undefined
     /**
          * The instance's private DNS name.
          */
-    var PrivateDns: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateDns: js.UndefOr[String] = js.undefined
     /**
          * The instance's private IP address.
          */
-    var PrivateIp: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIp: js.UndefOr[String] = js.undefined
     /**
          * The instance public DNS name.
          */
-    var PublicDns: js.UndefOr[java.lang.String] = js.undefined
+    var PublicDns: js.UndefOr[String] = js.undefined
     /**
          * The instance public IP address.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
     /**
          * For registered instances, who performed the registration.
          */
-    var RegisteredBy: js.UndefOr[java.lang.String] = js.undefined
+    var RegisteredBy: js.UndefOr[String] = js.undefined
     /**
          * The instance's reported AWS OpsWorks Stacks agent version.
          */
-    var ReportedAgentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var ReportedAgentVersion: js.UndefOr[String] = js.undefined
     /**
          * For registered instances, the reported operating system.
          */
@@ -1712,7 +1712,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The root device volume ID.
          */
-    var RootDeviceVolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var RootDeviceVolumeId: js.UndefOr[String] = js.undefined
     /**
          * An array containing the instance security group IDs.
          */
@@ -1720,31 +1720,31 @@ object OpsWorksNs extends js.Object {
     /**
          * The SSH key's Deep Security Agent (DSA) fingerprint.
          */
-    var SshHostDsaKeyFingerprint: js.UndefOr[java.lang.String] = js.undefined
+    var SshHostDsaKeyFingerprint: js.UndefOr[String] = js.undefined
     /**
          * The SSH key's RSA fingerprint.
          */
-    var SshHostRsaKeyFingerprint: js.UndefOr[java.lang.String] = js.undefined
+    var SshHostRsaKeyFingerprint: js.UndefOr[String] = js.undefined
     /**
          * The instance's Amazon EC2 key-pair name.
          */
-    var SshKeyName: js.UndefOr[java.lang.String] = js.undefined
+    var SshKeyName: js.UndefOr[String] = js.undefined
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
     /**
          * The instance status:    booting     connection_lost     online     pending     rebooting     requested     running_setup     setup_failed     shutting_down     start_failed     stop_failed     stopped     stopping     terminated     terminating   
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The instance's subnet ID; applicable only if the stack is running in a VPC.
          */
-    var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetId: js.UndefOr[String] = js.undefined
     /**
          * The instance's tenancy option, such as dedicated or host.
          */
-    var Tenancy: js.UndefOr[java.lang.String] = js.undefined
+    var Tenancy: js.UndefOr[String] = js.undefined
     /**
          * The instance's virtualization type: paravirtual or hvm.
          */
@@ -1756,11 +1756,11 @@ object OpsWorksNs extends js.Object {
     /**
          * A JSON document that contains the metadata.
          */
-    var Document: js.UndefOr[java.lang.String] = js.undefined
+    var Document: js.UndefOr[String] = js.undefined
     /**
          * A signature that can be used to verify the document's accuracy and authenticity.
          */
-    var Signature: js.UndefOr[java.lang.String] = js.undefined
+    var Signature: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1852,7 +1852,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The Amazon Resource Number (ARN) of a layer.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The layer attributes. For the HaproxyStatsPassword, MysqlRootPassword, and GangliaPassword attributes, AWS OpsWorks Stacks returns *****FILTERED***** instead of the actual value For an ECS Cluster layer, AWS OpsWorks Stacks the EcsClusterArn attribute is set to the cluster's ARN.
          */
@@ -1860,11 +1860,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to automatically assign an Elastic IP address to the layer's instances. For more information, see How to Edit a Layer.
          */
-    var AutoAssignElasticIps: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoAssignElasticIps: js.UndefOr[Boolean] = js.undefined
     /**
          * For stacks that are running in a VPC, whether to automatically assign a public IP address to the layer's instances. For more information, see How to Edit a Layer.
          */
-    var AutoAssignPublicIps: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoAssignPublicIps: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon CloudWatch Logs configuration settings for the layer.
          */
@@ -1876,11 +1876,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The ARN of the default IAM profile to be used for the layer's EC2 instances. For more information about IAM ARNs, see Using Identifiers.
          */
-    var CustomInstanceProfileArn: js.UndefOr[java.lang.String] = js.undefined
+    var CustomInstanceProfileArn: js.UndefOr[String] = js.undefined
     /**
          * A JSON formatted string containing the layer's custom stack configuration and deployment attributes.
          */
-    var CustomJson: js.UndefOr[java.lang.String] = js.undefined
+    var CustomJson: js.UndefOr[String] = js.undefined
     /**
          * A LayerCustomRecipes object that specifies the layer's custom recipes.
          */
@@ -1897,15 +1897,15 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether auto healing is disabled for the layer.
          */
-    var EnableAutoHealing: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableAutoHealing: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether to install operating system and package updates when the instance boots. The default value is true. If this value is set to false, you must then update your instances manually by using CreateDeployment to run the update_dependencies stack command or manually running yum (Amazon Linux) or apt-get (Ubuntu) on the instances.   We strongly recommend using the default value of true, to ensure that your instances have the latest security updates. 
          */
-    var InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined
+    var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined
     /**
          * The layer ID.
          */
-    var LayerId: js.UndefOr[java.lang.String] = js.undefined
+    var LayerId: js.UndefOr[String] = js.undefined
     /**
          * A LifeCycleEventConfiguration object that specifies the Shutdown event configuration.
          */
@@ -1913,7 +1913,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The layer name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * An array of Package objects that describe the layer's packages.
          */
@@ -1921,11 +1921,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The layer short name.
          */
-    var Shortname: js.UndefOr[java.lang.String] = js.undefined
+    var Shortname: js.UndefOr[String] = js.undefined
     /**
          * The layer stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
     /**
          * The layer type.
          */
@@ -1933,7 +1933,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether the layer uses Amazon EBS-optimized instances.
          */
-    var UseEbsOptimizedInstances: js.UndefOr[scala.Boolean] = js.undefined
+    var UseEbsOptimizedInstances: js.UndefOr[Boolean] = js.undefined
     /**
          * A VolumeConfigurations object that describes the layer's Amazon EBS volumes.
          */
@@ -1942,7 +1942,7 @@ object OpsWorksNs extends js.Object {
   
   
   trait LayerAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait LifecycleEventConfiguration extends js.Object {
@@ -1989,11 +1989,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether load-based auto scaling is enabled for the layer.
          */
-    var Enable: js.UndefOr[scala.Boolean] = js.undefined
+    var Enable: js.UndefOr[Boolean] = js.undefined
     /**
          * The layer ID.
          */
-    var LayerId: js.UndefOr[java.lang.String] = js.undefined
+    var LayerId: js.UndefOr[String] = js.undefined
     /**
          * An AutoScalingThresholds object that describes the upscaling configuration, which defines how and when AWS OpsWorks Stacks increases the number of instances.
          */
@@ -2009,27 +2009,27 @@ object OpsWorksNs extends js.Object {
     /**
          * The ID of a supported operating system, such as Amazon Linux 2017.09.
          */
-    var Id: js.UndefOr[java.lang.String] = js.undefined
+    var Id: js.UndefOr[String] = js.undefined
     /**
          * The name of the operating system, such as Amazon Linux 2017.09.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * A short name for the operating system manufacturer.
          */
-    var ReportedName: js.UndefOr[java.lang.String] = js.undefined
+    var ReportedName: js.UndefOr[String] = js.undefined
     /**
          * The version of the operating system, including the release and edition, if applicable.
          */
-    var ReportedVersion: js.UndefOr[java.lang.String] = js.undefined
+    var ReportedVersion: js.UndefOr[String] = js.undefined
     /**
          * Indicates that an operating system is not supported for new instances.
          */
-    var Supported: js.UndefOr[scala.Boolean] = js.undefined
+    var Supported: js.UndefOr[Boolean] = js.undefined
     /**
          * The type of a supported operating system, either Linux or Windows.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2037,39 +2037,39 @@ object OpsWorksNs extends js.Object {
     /**
          * The name of the configuration manager, which is Chef.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The versions of the configuration manager that are supported by an operating system.
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
   trait Parameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait Permission extends js.Object {
     /**
          * Whether the user can use SSH.
          */
-    var AllowSsh: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowSsh: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the user can use sudo.
          */
-    var AllowSudo: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowSudo: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for an AWS Identity and Access Management (IAM) role. For more information about IAM ARNs, see Using Identifiers.
          */
-    var IamUserArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamUserArn: js.UndefOr[String] = js.undefined
     /**
          * The user's permission level, which must be the following:    deny     show     deploy     manage     iam_only    For more information on the permissions associated with these levels, see Managing User Permissions 
          */
-    var Level: js.UndefOr[java.lang.String] = js.undefined
+    var Level: js.UndefOr[String] = js.undefined
     /**
          * A stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2077,7 +2077,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The array's Availability Zone. For more information, see Regions and Endpoints.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * When the RAID array was created.
          */
@@ -2085,11 +2085,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The array's Linux device. For example /dev/mdadm0.
          */
-    var Device: js.UndefOr[java.lang.String] = js.undefined
+    var Device: js.UndefOr[String] = js.undefined
     /**
          * The instance ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * For PIOPS volumes, the IOPS per disk.
          */
@@ -2097,11 +2097,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The array's mount point.
          */
-    var MountPoint: js.UndefOr[java.lang.String] = js.undefined
+    var MountPoint: js.UndefOr[String] = js.undefined
     /**
          * The array name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The number of disks in the array.
          */
@@ -2109,7 +2109,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The array ID.
          */
-    var RaidArrayId: js.UndefOr[java.lang.String] = js.undefined
+    var RaidArrayId: js.UndefOr[String] = js.undefined
     /**
          * The RAID level.
          */
@@ -2121,11 +2121,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
     /**
          * The volume type, standard or PIOPS.
          */
-    var VolumeType: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2133,39 +2133,39 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's address.
          */
-    var Address: js.UndefOr[java.lang.String] = js.undefined
+    var Address: js.UndefOr[String] = js.undefined
     /**
          * The DB instance identifier.
          */
-    var DbInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DbInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * AWS OpsWorks Stacks returns *****FILTERED***** instead of the actual value.
          */
-    var DbPassword: js.UndefOr[java.lang.String] = js.undefined
+    var DbPassword: js.UndefOr[String] = js.undefined
     /**
          * The master user name.
          */
-    var DbUser: js.UndefOr[java.lang.String] = js.undefined
+    var DbUser: js.UndefOr[String] = js.undefined
     /**
          * The instance's database engine.
          */
-    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    var Engine: js.UndefOr[String] = js.undefined
     /**
          * Set to true if AWS OpsWorks Stacks is unable to discover the Amazon RDS instance. AWS OpsWorks Stacks attempts to discover the instance only once. If this value is set to true, you must deregister the instance, and then register it again.
          */
-    var MissingOnRds: js.UndefOr[scala.Boolean] = js.undefined
+    var MissingOnRds: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance's ARN.
          */
-    var RdsDbInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var RdsDbInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The instance's AWS region.
          */
-    var Region: js.UndefOr[java.lang.String] = js.undefined
+    var Region: js.UndefOr[String] = js.undefined
     /**
          * The ID of the stack with which the instance is registered.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2173,7 +2173,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -2205,11 +2205,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The cluster's ARN.
          */
-    var EcsClusterArn: java.lang.String
+    var EcsClusterArn: String
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -2217,7 +2217,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The cluster's ARN.
          */
-    var EcsClusterArn: js.UndefOr[java.lang.String] = js.undefined
+    var EcsClusterArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2225,11 +2225,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The Elastic IP address.
          */
-    var ElasticIp: java.lang.String
+    var ElasticIp: String
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -2237,7 +2237,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The Elastic IP address.
          */
-    var ElasticIp: js.UndefOr[java.lang.String] = js.undefined
+    var ElasticIp: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2245,7 +2245,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's hostname.
          */
-    var Hostname: js.UndefOr[java.lang.String] = js.undefined
+    var Hostname: js.UndefOr[String] = js.undefined
     /**
          * An InstanceIdentity object that contains the instance's identity.
          */
@@ -2253,23 +2253,23 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's private IP address.
          */
-    var PrivateIp: js.UndefOr[java.lang.String] = js.undefined
+    var PrivateIp: js.UndefOr[String] = js.undefined
     /**
          * The instance's public IP address.
          */
-    var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    var PublicIp: js.UndefOr[String] = js.undefined
     /**
          * The instances public RSA key. This key is used to encrypt communication between the instance and the service.
          */
-    var RsaPublicKey: js.UndefOr[java.lang.String] = js.undefined
+    var RsaPublicKey: js.UndefOr[String] = js.undefined
     /**
          * The instances public RSA key fingerprint.
          */
-    var RsaPublicKeyFingerprint: js.UndefOr[java.lang.String] = js.undefined
+    var RsaPublicKeyFingerprint: js.UndefOr[String] = js.undefined
     /**
          * The ID of the stack that the instance is to be registered with.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -2277,7 +2277,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The registered instance's AWS OpsWorks Stacks ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2285,19 +2285,19 @@ object OpsWorksNs extends js.Object {
     /**
          * The database password.
          */
-    var DbPassword: java.lang.String
+    var DbPassword: String
     /**
          * The database's master user name.
          */
-    var DbUser: java.lang.String
+    var DbUser: String
     /**
          * The Amazon RDS instance's ARN.
          */
-    var RdsDbInstanceArn: java.lang.String
+    var RdsDbInstanceArn: String
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -2305,11 +2305,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The Amazon EBS volume ID.
          */
-    var Ec2VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var Ec2VolumeId: js.UndefOr[String] = js.undefined
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -2317,7 +2317,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The volume ID.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2325,15 +2325,15 @@ object OpsWorksNs extends js.Object {
     /**
          * The operating system family.
          */
-    var Family: js.UndefOr[java.lang.String] = js.undefined
+    var Family: js.UndefOr[String] = js.undefined
     /**
          * The operating system name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The operating system version.
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2341,19 +2341,19 @@ object OpsWorksNs extends js.Object {
     /**
          * The user's IAM ARN.
          */
-    var IamUserArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamUserArn: js.UndefOr[String] = js.undefined
     /**
          * The user's name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The user's SSH public key.
          */
-    var SshPublicKey: js.UndefOr[java.lang.String] = js.undefined
+    var SshPublicKey: js.UndefOr[String] = js.undefined
     /**
          * The user's SSH user name.
          */
-    var SshUsername: js.UndefOr[java.lang.String] = js.undefined
+    var SshUsername: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2365,23 +2365,23 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * A message that describes the error.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          * The error ID.
          */
-    var ServiceErrorId: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceErrorId: js.UndefOr[String] = js.undefined
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
     /**
          * The error type.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2393,11 +2393,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Enables load-based auto scaling for the layer.
          */
-    var Enable: js.UndefOr[scala.Boolean] = js.undefined
+    var Enable: js.UndefOr[Boolean] = js.undefined
     /**
          * The layer ID.
          */
-    var LayerId: java.lang.String
+    var LayerId: String
     /**
          * An AutoScalingThresholds object with the upscaling threshold configuration. If the load exceeds these thresholds for a specified amount of time, AWS OpsWorks Stacks starts a specified number of instances.
          */
@@ -2409,23 +2409,23 @@ object OpsWorksNs extends js.Object {
     /**
          * The user is allowed to use SSH to communicate with the instance.
          */
-    var AllowSsh: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowSsh: js.UndefOr[Boolean] = js.undefined
     /**
          * The user is allowed to use sudo to elevate privileges.
          */
-    var AllowSudo: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowSudo: js.UndefOr[Boolean] = js.undefined
     /**
          * The user's IAM ARN. This can also be a federated user's ARN.
          */
-    var IamUserArn: java.lang.String
+    var IamUserArn: String
     /**
          * The user's permission level, which must be set to one of the following strings. You cannot set your own permissions level.    deny     show     deploy     manage     iam_only    For more information about the permissions associated with these levels, see Managing User Permissions.
          */
-    var Level: js.UndefOr[java.lang.String] = js.undefined
+    var Level: js.UndefOr[String] = js.undefined
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -2437,7 +2437,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -2445,7 +2445,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to enable Elastic Load Balancing connection draining. For more information, see Connection Draining 
          */
-    var DelayUntilElbConnectionsDrained: js.UndefOr[scala.Boolean] = js.undefined
+    var DelayUntilElbConnectionsDrained: js.UndefOr[Boolean] = js.undefined
     /**
          * The time, in seconds, that AWS OpsWorks Stacks will wait after triggering a Shutdown event before shutting down an instance.
          */
@@ -2457,15 +2457,15 @@ object OpsWorksNs extends js.Object {
     /**
          * When included in a request, the parameter depends on the repository type.   For Amazon S3 bundles, set Password to the appropriate IAM secret access key.   For HTTP bundles and Subversion repositories, set Password to the password.   For more information on how to safely handle IAM credentials, see http://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html. In responses, AWS OpsWorks Stacks returns *****FILTERED***** instead of the actual value.
          */
-    var Password: js.UndefOr[java.lang.String] = js.undefined
+    var Password: js.UndefOr[String] = js.undefined
     /**
          * The application's version. AWS OpsWorks Stacks enables you to easily deploy new versions of an application. One of the simplest approaches is to have branches or revisions in your repository that represent different versions that can potentially be deployed.
          */
-    var Revision: js.UndefOr[java.lang.String] = js.undefined
+    var Revision: js.UndefOr[String] = js.undefined
     /**
          * In requests, the repository's SSH key. In responses, AWS OpsWorks Stacks returns *****FILTERED***** instead of the actual value.
          */
-    var SshKey: js.UndefOr[java.lang.String] = js.undefined
+    var SshKey: js.UndefOr[String] = js.undefined
     /**
          * The repository type.
          */
@@ -2473,11 +2473,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The source URL. The following is an example of an Amazon S3 source URL: https://s3.amazonaws.com/opsworks-demo-bucket/opsworks_cookbook_demo.tar.gz.
          */
-    var Url: js.UndefOr[java.lang.String] = js.undefined
+    var Url: js.UndefOr[String] = js.undefined
     /**
          * This parameter depends on the repository type.   For Amazon S3 bundles, set Username to the appropriate IAM access key ID.   For HTTP bundles, Git repositories, and Subversion repositories, set Username to the user name.  
          */
-    var Username: js.UndefOr[java.lang.String] = js.undefined
+    var Username: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2485,15 +2485,15 @@ object OpsWorksNs extends js.Object {
     /**
          * The contents of the certificate's domain.crt file.
          */
-    var Certificate: java.lang.String
+    var Certificate: String
     /**
          * Optional. Can be used to specify an intermediate certificate authority key or client authentication.
          */
-    var Chain: js.UndefOr[java.lang.String] = js.undefined
+    var Chain: js.UndefOr[String] = js.undefined
     /**
          * The private key; the contents of the certificate's domain.kex file.
          */
-    var PrivateKey: java.lang.String
+    var PrivateKey: String
   }
   
   
@@ -2501,11 +2501,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The agent version. This parameter is set to LATEST for auto-update. or a version number for a fixed agent version.
          */
-    var AgentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var AgentVersion: js.UndefOr[String] = js.undefined
     /**
          * The stack's ARN.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * The stack's attributes.
          */
@@ -2526,19 +2526,19 @@ object OpsWorksNs extends js.Object {
     /**
          * A JSON object that contains user-defined attributes to be added to the stack configuration and deployment attributes. You can use custom JSON to override the corresponding default stack configuration attribute values or to pass data to recipes. The string should be in the following format:  "{\"key1\": \"value1\", \"key2\": \"value2\",...}"  For more information on custom JSON, see Use Custom JSON to Modify the Stack Configuration Attributes.
          */
-    var CustomJson: js.UndefOr[java.lang.String] = js.undefined
+    var CustomJson: js.UndefOr[String] = js.undefined
     /**
          * The stack's default Availability Zone. For more information, see Regions and Endpoints.
          */
-    var DefaultAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The ARN of an IAM profile that is the default profile for all of the stack's EC2 instances. For more information about IAM ARNs, see Using Identifiers.
          */
-    var DefaultInstanceProfileArn: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultInstanceProfileArn: js.UndefOr[String] = js.undefined
     /**
          * The stack's default operating system.
          */
-    var DefaultOs: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultOs: js.UndefOr[String] = js.undefined
     /**
          * The default root device type. This value is used by default for all instances in the stack, but you can override it when you create an instance. For more information, see Storage for the Root Device.
          */
@@ -2546,59 +2546,59 @@ object OpsWorksNs extends js.Object {
     /**
          * A default Amazon EC2 key pair for the stack's instances. You can override this value when you create or update an instance.
          */
-    var DefaultSshKeyName: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultSshKeyName: js.UndefOr[String] = js.undefined
     /**
          * The default subnet ID; applicable only if the stack is running in a VPC.
          */
-    var DefaultSubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultSubnetId: js.UndefOr[String] = js.undefined
     /**
          * The stack host name theme, with spaces replaced by underscores.
          */
-    var HostnameTheme: js.UndefOr[java.lang.String] = js.undefined
+    var HostnameTheme: js.UndefOr[String] = js.undefined
     /**
          * The stack name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The stack AWS region, such as "ap-northeast-2". For more information about AWS regions, see Regions and Endpoints.
          */
-    var Region: js.UndefOr[java.lang.String] = js.undefined
+    var Region: js.UndefOr[String] = js.undefined
     /**
          * The stack AWS Identity and Access Management (IAM) role.
          */
-    var ServiceRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
     /**
          * Whether the stack uses custom cookbooks.
          */
-    var UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined
+    var UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the stack automatically associates the AWS OpsWorks Stacks built-in security groups with the stack's layers.
          */
-    var UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined
+    var UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined
     /**
          * The VPC ID; applicable only if the stack is running in a VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
   trait StackAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait StackConfigurationManager extends js.Object {
     /**
          * The name. This parameter must be set to "Chef".
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The Chef version. This parameter must be set to 12, 11.10, or 11.4 for Linux stacks, and to 12.2 for Windows stacks. The default value for Linux stacks is 11.4.
          */
-    var Version: js.UndefOr[java.lang.String] = js.undefined
+    var Version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2610,7 +2610,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack's ARN.
          */
-    var Arn: js.UndefOr[java.lang.String] = js.undefined
+    var Arn: js.UndefOr[String] = js.undefined
     /**
          * An InstancesCount object with the number of instances in each status.
          */
@@ -2622,11 +2622,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The stack ID.
          */
-    var StackId: js.UndefOr[java.lang.String] = js.undefined
+    var StackId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2634,7 +2634,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -2642,7 +2642,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -2650,11 +2650,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Specifies whether to force an instance to stop.
          */
-    var Force: js.UndefOr[scala.Boolean] = js.undefined
+    var Force: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -2662,7 +2662,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
   }
   
   
@@ -2686,15 +2686,15 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's AWS OpsWorks Stacks ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * The password.
          */
-    var Password: js.UndefOr[java.lang.String] = js.undefined
+    var Password: js.UndefOr[String] = js.undefined
     /**
          * The user name.
          */
-    var Username: js.UndefOr[java.lang.String] = js.undefined
+    var Username: js.UndefOr[String] = js.undefined
     /**
          * The length of time (in minutes) that the grant is valid. When the grant expires, at the end of this period, the user will no longer be able to use the credentials to log in. If they are logged in at the time, they will be automatically logged out.
          */
@@ -2710,7 +2710,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
   }
   
   @js.native
@@ -4749,7 +4749,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
   }
   
   
@@ -4757,7 +4757,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The volume ID.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -4777,7 +4777,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The app ID.
          */
-    var AppId: java.lang.String
+    var AppId: String
     /**
          * A Source object that specifies the app repository.
          */
@@ -4793,7 +4793,7 @@ object OpsWorksNs extends js.Object {
     /**
          * A description of the app.
          */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
+    var Description: js.UndefOr[String] = js.undefined
     /**
          * The app's virtual host settings, with multiple domains separated by commas. For example: 'www.example.com, example.com' 
          */
@@ -4801,7 +4801,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether SSL is enabled for the app.
          */
-    var EnableSsl: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableSsl: js.UndefOr[Boolean] = js.undefined
     /**
          * An array of EnvironmentVariable objects that specify environment variables to be associated with the app. After you deploy the app, these variables are defined on the associated app server instances.For more information, see  Environment Variables. There is no specific limit on the number of environment variables. However, the size of the associated data structure - which includes the variables' names, values, and protected flag values - cannot exceed 10 KB (10240 Bytes). This limit should accommodate most if not all use cases. Exceeding it will cause an exception with the message, "Environment: is too large (maximum is 10KB)."  This parameter is supported only by Chef 11.10 stacks. If you have specified one or more environment variables, you cannot modify the stack's Chef version. 
          */
@@ -4809,7 +4809,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The app name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * An SslConfiguration object with the SSL configuration.
          */
@@ -4825,11 +4825,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The IP address for which you want to update the name.
          */
-    var ElasticIp: java.lang.String
+    var ElasticIp: String
     /**
          * The new name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4837,11 +4837,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The default AWS OpsWorks Stacks agent version. You have the following options:    INHERIT - Use the stack's default agent version setting.    version_number - Use the specified agent version. This value overrides the stack's default setting. To update the agent version, you must edit the instance configuration and specify a new version. AWS OpsWorks Stacks then automatically installs that version on the instance.   The default setting is INHERIT. To specify an agent version, you must use the complete version number, not the abbreviated number shown on the console. For a list of available agent version numbers, call DescribeAgentVersions. AgentVersion cannot be set to Chef 12.2.
          */
-    var AgentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var AgentVersion: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AMI that was used to create the instance. The value of this parameter must be the same AMI ID that the instance is already using. You cannot apply a new AMI to an instance by running UpdateInstance. UpdateInstance does not work on instances that are using custom AMIs. 
          */
-    var AmiId: js.UndefOr[java.lang.String] = js.undefined
+    var AmiId: js.UndefOr[String] = js.undefined
     /**
          * The instance architecture. Instance types do not necessarily support both architectures. For a list of the architectures that are supported by the different instance types, see Instance Families and Types.
          */
@@ -4853,23 +4853,23 @@ object OpsWorksNs extends js.Object {
     /**
          * This property cannot be updated.
          */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    var EbsOptimized: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance host name.
          */
-    var Hostname: js.UndefOr[java.lang.String] = js.undefined
+    var Hostname: js.UndefOr[String] = js.undefined
     /**
          * Whether to install operating system and package updates when the instance boots. The default value is true. To control when updates are installed, set this value to false. You must then update your instances manually by using CreateDeployment to run the update_dependencies stack command or by manually running yum (Amazon Linux) or apt-get (Ubuntu) on the instances.   We strongly recommend using the default value of true, to ensure that your instances have the latest security updates. 
          */
-    var InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined
+    var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance ID.
          */
-    var InstanceId: java.lang.String
+    var InstanceId: String
     /**
          * The instance type, such as t2.micro. For a list of supported instance types, open the stack in the console, choose Instances, and choose + Instance. The Size list contains the currently supported types. For more information, see Instance Families and Types. The parameter values that you use to specify the various types are in the API Name column of the Available Instance Types table.
          */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceType: js.UndefOr[String] = js.undefined
     /**
          * The instance's layer IDs.
          */
@@ -4877,11 +4877,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The instance's operating system, which must be set to one of the following. You cannot update an instance that is using a custom AMI.   A supported Linux operating system: An Amazon Linux version, such as Amazon Linux 2017.09, Amazon Linux 2017.03, Amazon Linux 2016.09, Amazon Linux 2016.03, Amazon Linux 2015.09, or Amazon Linux 2015.03.   A supported Ubuntu operating system, such as Ubuntu 16.04 LTS, Ubuntu 14.04 LTS, or Ubuntu 12.04 LTS.    CentOS Linux 7     Red Hat Enterprise Linux 7    A supported Windows operating system, such as Microsoft Windows Server 2012 R2 Base, Microsoft Windows Server 2012 R2 with SQL Server Express, Microsoft Windows Server 2012 R2 with SQL Server Standard, or Microsoft Windows Server 2012 R2 with SQL Server Web.   For more information about supported operating systems, see AWS OpsWorks Stacks Operating Systems. The default option is the current Amazon Linux version. If you set this parameter to Custom, you must use the AmiId parameter to specify the custom AMI that you want to use. For more information about supported operating systems, see Operating Systems. For more information about how to use custom AMIs with OpsWorks, see Using Custom AMIs.  You can specify a different Linux operating system for the updated stack, but you cannot change from Linux to Windows or Windows to Linux. 
          */
-    var Os: js.UndefOr[java.lang.String] = js.undefined
+    var Os: js.UndefOr[String] = js.undefined
     /**
          * The instance's Amazon EC2 key name.
          */
-    var SshKeyName: js.UndefOr[java.lang.String] = js.undefined
+    var SshKeyName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4893,11 +4893,11 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to automatically assign an Elastic IP address to the layer's instances. For more information, see How to Edit a Layer.
          */
-    var AutoAssignElasticIps: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoAssignElasticIps: js.UndefOr[Boolean] = js.undefined
     /**
          * For stacks that are running in a VPC, whether to automatically assign a public IP address to the layer's instances. For more information, see How to Edit a Layer.
          */
-    var AutoAssignPublicIps: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoAssignPublicIps: js.UndefOr[Boolean] = js.undefined
     /**
          * Specifies CloudWatch Logs configuration options for the layer. For more information, see CloudWatchLogsLogStream.
          */
@@ -4905,11 +4905,11 @@ object OpsWorksNs extends js.Object {
     /**
          * The ARN of an IAM profile to be used for all of the layer's EC2 instances. For more information about IAM ARNs, see Using Identifiers.
          */
-    var CustomInstanceProfileArn: js.UndefOr[java.lang.String] = js.undefined
+    var CustomInstanceProfileArn: js.UndefOr[String] = js.undefined
     /**
          * A JSON-formatted string containing custom stack configuration and deployment attributes to be installed on the layer's instances. For more information, see  Using Custom JSON. 
          */
-    var CustomJson: js.UndefOr[java.lang.String] = js.undefined
+    var CustomJson: js.UndefOr[String] = js.undefined
     /**
          * A LayerCustomRecipes object that specifies the layer's custom recipes.
          */
@@ -4921,15 +4921,15 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether to disable auto healing for the layer.
          */
-    var EnableAutoHealing: js.UndefOr[scala.Boolean] = js.undefined
+    var EnableAutoHealing: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether to install operating system and package updates when the instance boots. The default value is true. To control when updates are installed, set this value to false. You must then update your instances manually by using CreateDeployment to run the update_dependencies stack command or manually running yum (Amazon Linux) or apt-get (Ubuntu) on the instances.   We strongly recommend using the default value of true, to ensure that your instances have the latest security updates. 
          */
-    var InstallUpdatesOnBoot: js.UndefOr[scala.Boolean] = js.undefined
+    var InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined
     /**
          * The layer ID.
          */
-    var LayerId: java.lang.String
+    var LayerId: String
     /**
          * 
          */
@@ -4937,7 +4937,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The layer name, which is used by the console.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * An array of Package objects that describe the layer's packages.
          */
@@ -4945,11 +4945,11 @@ object OpsWorksNs extends js.Object {
     /**
          * For custom layers only, use this parameter to specify the layer's short name, which is used internally by AWS OpsWorks Stacks and by Chef. The short name is also used as the name for the directory where your app files are installed. It can have a maximum of 200 characters and must be in the following format: /\A[a-z0-9\-\_\.]+\Z/. The built-in layers' short names are defined by AWS OpsWorks Stacks. For more information, see the Layer Reference 
          */
-    var Shortname: js.UndefOr[java.lang.String] = js.undefined
+    var Shortname: js.UndefOr[String] = js.undefined
     /**
          * Whether to use Amazon EBS-optimized instances.
          */
-    var UseEbsOptimizedInstances: js.UndefOr[scala.Boolean] = js.undefined
+    var UseEbsOptimizedInstances: js.UndefOr[Boolean] = js.undefined
     /**
          * A VolumeConfigurations object that describes the layer's Amazon EBS volumes.
          */
@@ -4961,7 +4961,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The user's SSH public key.
          */
-    var SshPublicKey: js.UndefOr[java.lang.String] = js.undefined
+    var SshPublicKey: js.UndefOr[String] = js.undefined
   }
   
   
@@ -4969,15 +4969,15 @@ object OpsWorksNs extends js.Object {
     /**
          * The database password.
          */
-    var DbPassword: js.UndefOr[java.lang.String] = js.undefined
+    var DbPassword: js.UndefOr[String] = js.undefined
     /**
          * The master user name.
          */
-    var DbUser: js.UndefOr[java.lang.String] = js.undefined
+    var DbUser: js.UndefOr[String] = js.undefined
     /**
          * The Amazon RDS instance's ARN.
          */
-    var RdsDbInstanceArn: java.lang.String
+    var RdsDbInstanceArn: String
   }
   
   
@@ -4985,7 +4985,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The default AWS OpsWorks Stacks agent version. You have the following options:   Auto-update - Set this parameter to LATEST. AWS OpsWorks Stacks automatically installs new agent versions on the stack's instances as soon as they are available.   Fixed version - Set this parameter to your preferred agent version. To update the agent version, you must edit the stack configuration and specify a new version. AWS OpsWorks Stacks then automatically installs that version on the stack's instances.   The default setting is LATEST. To specify an agent version, you must use the complete version number, not the abbreviated number shown on the console. For a list of available agent version numbers, call DescribeAgentVersions. AgentVersion cannot be set to Chef 12.2.  You can also specify an agent version when you create or update an instance, which overrides the stack's default setting. 
          */
-    var AgentVersion: js.UndefOr[java.lang.String] = js.undefined
+    var AgentVersion: js.UndefOr[String] = js.undefined
     /**
          * One or more user-defined key-value pairs to be added to the stack attributes.
          */
@@ -5002,19 +5002,19 @@ object OpsWorksNs extends js.Object {
     /**
          * A string that contains user-defined, custom JSON. It can be used to override the corresponding default stack configuration JSON values or to pass data to recipes. The string should be in the following format:  "{\"key1\": \"value1\", \"key2\": \"value2\",...}"  For more information about custom JSON, see Use Custom JSON to Modify the Stack Configuration Attributes.
          */
-    var CustomJson: js.UndefOr[java.lang.String] = js.undefined
+    var CustomJson: js.UndefOr[String] = js.undefined
     /**
          * The stack's default Availability Zone, which must be in the stack's region. For more information, see Regions and Endpoints. If you also specify a value for DefaultSubnetId, the subnet must be in the same zone. For more information, see CreateStack. 
          */
-    var DefaultAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The ARN of an IAM profile that is the default profile for all of the stack's EC2 instances. For more information about IAM ARNs, see Using Identifiers.
          */
-    var DefaultInstanceProfileArn: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultInstanceProfileArn: js.UndefOr[String] = js.undefined
     /**
          * The stack's operating system, which must be set to one of the following:   A supported Linux operating system: An Amazon Linux version, such as Amazon Linux 2017.09, Amazon Linux 2017.03, Amazon Linux 2016.09, Amazon Linux 2016.03, Amazon Linux 2015.09, or Amazon Linux 2015.03.   A supported Ubuntu operating system, such as Ubuntu 16.04 LTS, Ubuntu 14.04 LTS, or Ubuntu 12.04 LTS.    CentOS Linux 7     Red Hat Enterprise Linux 7    A supported Windows operating system, such as Microsoft Windows Server 2012 R2 Base, Microsoft Windows Server 2012 R2 with SQL Server Express, Microsoft Windows Server 2012 R2 with SQL Server Standard, or Microsoft Windows Server 2012 R2 with SQL Server Web.   A custom AMI: Custom. You specify the custom AMI you want to use when you create instances. For more information about how to use custom AMIs with OpsWorks, see Using Custom AMIs.   The default option is the stack's current operating system. For more information about supported operating systems, see AWS OpsWorks Stacks Operating Systems.
          */
-    var DefaultOs: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultOs: js.UndefOr[String] = js.undefined
     /**
          * The default root device type. This value is used by default for all instances in the stack, but you can override it when you create an instance. For more information, see Storage for the Root Device.
          */
@@ -5022,35 +5022,35 @@ object OpsWorksNs extends js.Object {
     /**
          * A default Amazon EC2 key-pair name. The default value is none. If you specify a key-pair name, AWS OpsWorks Stacks installs the public key on the instance and you can use the private key with an SSH client to log in to the instance. For more information, see  Using SSH to Communicate with an Instance and  Managing SSH Access. You can override this setting by specifying a different key pair, or no key pair, when you  create an instance. 
          */
-    var DefaultSshKeyName: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultSshKeyName: js.UndefOr[String] = js.undefined
     /**
          * The stack's default VPC subnet ID. This parameter is required if you specify a value for the VpcId parameter. All instances are launched into this subnet unless you specify otherwise when you create the instance. If you also specify a value for DefaultAvailabilityZone, the subnet must be in that zone. For information on default values and when this parameter is required, see the VpcId parameter description. 
          */
-    var DefaultSubnetId: js.UndefOr[java.lang.String] = js.undefined
+    var DefaultSubnetId: js.UndefOr[String] = js.undefined
     /**
          * The stack's new host name theme, with spaces replaced by underscores. The theme is used to generate host names for the stack's instances. By default, HostnameTheme is set to Layer_Dependent, which creates host names by appending integers to the layer's short name. The other themes are:    Baked_Goods     Clouds     Europe_Cities     Fruits     Greek_Deities     Legendary_creatures_from_Japan     Planets_and_Moons     Roman_Deities     Scottish_Islands     US_Cities     Wild_Cats    To obtain a generated host name, call GetHostNameSuggestion, which returns a host name based on the current theme.
          */
-    var HostnameTheme: js.UndefOr[java.lang.String] = js.undefined
+    var HostnameTheme: js.UndefOr[String] = js.undefined
     /**
          * The stack's new name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * Do not use this parameter. You cannot update a stack's service role.
          */
-    var ServiceRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The stack ID.
          */
-    var StackId: java.lang.String
+    var StackId: String
     /**
          * Whether the stack uses custom cookbooks.
          */
-    var UseCustomCookbooks: js.UndefOr[scala.Boolean] = js.undefined
+    var UseCustomCookbooks: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether to associate the AWS OpsWorks Stacks built-in security groups with the stack's layers. AWS OpsWorks Stacks provides a standard set of built-in security groups, one for each layer, which are associated with layers by default. UseOpsworksSecurityGroups allows you to provide your own custom security groups instead of using the built-in groups. UseOpsworksSecurityGroups has the following settings:    True - AWS OpsWorks Stacks automatically associates the appropriate built-in security group with each layer (default setting). You can associate additional security groups with a layer after you create it, but you cannot delete the built-in security group.   False - AWS OpsWorks Stacks does not associate built-in security groups with layers. You must create appropriate EC2 security groups and associate a security group with each layer that you create. However, you can still manually associate a built-in security group with a layer on. Custom security groups are required only for those layers that need custom settings.   For more information, see Create a New Stack.
          */
-    var UseOpsworksSecurityGroups: js.UndefOr[scala.Boolean] = js.undefined
+    var UseOpsworksSecurityGroups: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -5058,19 +5058,19 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether users can specify their own SSH public key through the My Settings page. For more information, see Managing User Permissions.
          */
-    var AllowSelfManagement: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowSelfManagement: js.UndefOr[Boolean] = js.undefined
     /**
          * The user IAM ARN. This can also be a federated user's ARN.
          */
-    var IamUserArn: java.lang.String
+    var IamUserArn: String
     /**
          * The user's new SSH public key.
          */
-    var SshPublicKey: js.UndefOr[java.lang.String] = js.undefined
+    var SshPublicKey: js.UndefOr[String] = js.undefined
     /**
          * The user's SSH user name. The allowable characters are [a-z], [A-Z], [0-9], '-', and '_'. If the specified name includes other punctuation marks, AWS OpsWorks Stacks removes them. For example, my.name will be changed to myname. If you do not specify an SSH user name, AWS OpsWorks Stacks generates one from the IAM user name. 
          */
-    var SshUsername: js.UndefOr[java.lang.String] = js.undefined
+    var SshUsername: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5078,15 +5078,15 @@ object OpsWorksNs extends js.Object {
     /**
          * The new mount point.
          */
-    var MountPoint: js.UndefOr[java.lang.String] = js.undefined
+    var MountPoint: js.UndefOr[String] = js.undefined
     /**
          * The new name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The volume ID.
          */
-    var VolumeId: java.lang.String
+    var VolumeId: String
   }
   
   
@@ -5094,23 +5094,23 @@ object OpsWorksNs extends js.Object {
     /**
          * Whether users can specify their own SSH public key through the My Settings page. For more information, see Managing User Permissions.
          */
-    var AllowSelfManagement: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowSelfManagement: js.UndefOr[Boolean] = js.undefined
     /**
          * The user's IAM ARN.
          */
-    var IamUserArn: js.UndefOr[java.lang.String] = js.undefined
+    var IamUserArn: js.UndefOr[String] = js.undefined
     /**
          * The user's name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The user's SSH public key.
          */
-    var SshPublicKey: js.UndefOr[java.lang.String] = js.undefined
+    var SshPublicKey: js.UndefOr[String] = js.undefined
     /**
          * The user's SSH user name.
          */
-    var SshUsername: js.UndefOr[java.lang.String] = js.undefined
+    var SshUsername: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5118,23 +5118,23 @@ object OpsWorksNs extends js.Object {
     /**
          * The volume Availability Zone. For more information, see Regions and Endpoints.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The device name.
          */
-    var Device: js.UndefOr[java.lang.String] = js.undefined
+    var Device: js.UndefOr[String] = js.undefined
     /**
          * The Amazon EC2 volume ID.
          */
-    var Ec2VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var Ec2VolumeId: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether an Amazon EBS volume is encrypted. For more information, see Amazon EBS Encryption.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * The instance ID.
          */
-    var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+    var InstanceId: js.UndefOr[String] = js.undefined
     /**
          * For PIOPS volumes, the IOPS per disk.
          */
@@ -5142,19 +5142,19 @@ object OpsWorksNs extends js.Object {
     /**
          * The volume mount point. For example, "/mnt/disk1".
          */
-    var MountPoint: js.UndefOr[java.lang.String] = js.undefined
+    var MountPoint: js.UndefOr[String] = js.undefined
     /**
          * The volume name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The RAID array ID.
          */
-    var RaidArrayId: js.UndefOr[java.lang.String] = js.undefined
+    var RaidArrayId: js.UndefOr[String] = js.undefined
     /**
          * The AWS region. For more information about AWS regions, see Regions and Endpoints.
          */
-    var Region: js.UndefOr[java.lang.String] = js.undefined
+    var Region: js.UndefOr[String] = js.undefined
     /**
          * The volume size.
          */
@@ -5162,15 +5162,15 @@ object OpsWorksNs extends js.Object {
     /**
          * The value returned by DescribeVolumes.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The volume ID.
          */
-    var VolumeId: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeId: js.UndefOr[String] = js.undefined
     /**
          * The volume type. For more information, see  Amazon EBS Volume Types.    standard - Magnetic. Magnetic volumes must have a minimum size of 1 GiB and a maximum size of 1024 GiB.    io1 - Provisioned IOPS (SSD). PIOPS volumes must have a minimum size of 4 GiB and a maximum size of 16384 GiB.    gp2 - General Purpose (SSD). General purpose volumes must have a minimum size of 1 GiB and a maximum size of 16384 GiB.    st1 - Throughput Optimized hard disk drive (HDD). Throughput optimized HDD volumes must have a minimum size of 500 GiB and a maximum size of 16384 GiB.    sc1 - Cold HDD. Cold HDD volumes must have a minimum size of 500 GiB and a maximum size of 16384 GiB.  
          */
-    var VolumeType: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5178,7 +5178,7 @@ object OpsWorksNs extends js.Object {
     /**
          * Specifies whether an Amazon EBS volume is encrypted. For more information, see Amazon EBS Encryption.
          */
-    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
          * For PIOPS volumes, the IOPS per disk.
          */
@@ -5186,7 +5186,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The volume mount point. For example "/dev/sdh".
          */
-    var MountPoint: java.lang.String
+    var MountPoint: String
     /**
          * The number of disks in the volume.
          */
@@ -5202,7 +5202,7 @@ object OpsWorksNs extends js.Object {
     /**
          * The volume type. For more information, see  Amazon EBS Volume Types.    standard - Magnetic. Magnetic volumes must have a minimum size of 1 GiB and a maximum size of 1024 GiB.    io1 - Provisioned IOPS (SSD). PIOPS volumes must have a minimum size of 4 GiB and a maximum size of 16384 GiB.    gp2 - General Purpose (SSD). General purpose volumes must have a minimum size of 1 GiB and a maximum size of 16384 GiB.    st1 - Throughput Optimized hard disk drive (HDD). Throughput optimized HDD volumes must have a minimum size of 500 GiB and a maximum size of 16384 GiB.    sc1 - Cold HDD. Cold HDD volumes must have a minimum size of 500 GiB and a maximum size of 16384 GiB.  
          */
-    var VolumeType: js.UndefOr[java.lang.String] = js.undefined
+    var VolumeType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -5283,7 +5283,7 @@ object OpsWorksNs extends js.Object {
   type StackAttributesKeys = awsDashSdkLib.awsDashSdkLibStrings.Color | java.lang.String
   type Stacks = js.Array[Stack]
   type String = java.lang.String
-  type Strings = js.Array[java.lang.String]
+  type Strings = js.Array[String]
   type Switch = java.lang.String
   type TagKey = java.lang.String
   type TagKeys = js.Array[TagKey]

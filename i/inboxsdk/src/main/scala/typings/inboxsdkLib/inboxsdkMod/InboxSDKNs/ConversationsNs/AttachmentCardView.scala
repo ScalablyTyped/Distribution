@@ -13,7 +13,7 @@ trait AttachmentCardView extends js.Object {
   /**
          * @deprecated. Use AttachmentCardClickEvent.getDownloadURL() instead
          */
-  def getDownloadURL(): stdLib.Promise[java.lang.String]
+  def getDownloadURL(): js.Promise[java.lang.String]
   def getMessageView(): MessageView | scala.Null
   def getTitle(): java.lang.String
   @JSName("on")

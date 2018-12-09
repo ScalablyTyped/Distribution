@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Group")
+@JSImport("fabric/fabric-impl", "Group")
 @js.native
-class Group () extends ICollection[Group] {
+class Group ()
+  extends Object
+     with ICollection[Group] {
   /**
   	 * Constructor
   	 * @param objects Group objects
@@ -27,8 +28,13 @@ class Group () extends ICollection[Group] {
   	 * @return thisArg
   	 * @chainable
   	 */
-  def addWithUpdate(`object`: js.Object): Group = js.native
-  def containsPoint(point: Point): scala.Boolean = js.native
+  def addWithUpdate(`object`: Object): Group = js.native
+  /**
+  	 * Returns number representation of a collection complexity
+  	 * @return complexity
+  	 */
+  /* InferMemberOverrides */
+  override def complexity(): scala.Double = js.native
   /**
   	 * Destroys a group (restoring state of its objects)
   	 * @return thisArg
@@ -45,12 +51,7 @@ class Group () extends ICollection[Group] {
   	 * @return thisArg
   	 * @chainable
   	 */
-  def removeWithUpdate(`object`: js.Object): Group = js.native
-  /**
-  	 * Renders instance on a given context
-  	 * @param ctx context to render instance on
-  	 */
-  def render(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  def removeWithUpdate(`object`: Object): Group = js.native
   /**
   	 * Saves coordinates of this instance (to be used together with `hasMoved`)
   	 * @saveCoords
@@ -72,18 +73,6 @@ class Group () extends ICollection[Group] {
        */
   def toActiveSelection(): ActiveSelection = js.native
   /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(): js.Any = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
-  /**
   	 * Returns svg representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
   	 * @return svg representation of an instance
@@ -97,8 +86,7 @@ class Group () extends ICollection[Group] {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Group")
+@JSImport("fabric/fabric-impl", "Group")
 @js.native
 object Group extends js.Object {
   /**

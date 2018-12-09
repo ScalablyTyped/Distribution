@@ -133,11 +133,11 @@ object TranslateNs extends js.Object {
     /**
          * The source text of the term being translated by the custom terminology.
          */
-    var SourceText: js.UndefOr[java.lang.String] = js.undefined
+    var SourceText: js.UndefOr[String] = js.undefined
     /**
          * The target text of the term being translated by the custom terminology.
          */
-    var TargetText: js.UndefOr[java.lang.String] = js.undefined
+    var TargetText: js.UndefOr[String] = js.undefined
   }
   
   
@@ -157,11 +157,11 @@ object TranslateNs extends js.Object {
     /**
          * The location of the custom terminology data.
          */
-    var Location: java.lang.String
+    var Location: String
     /**
          * The repository type for the custom terminology data.
          */
-    var RepositoryType: java.lang.String
+    var RepositoryType: String
   }
   
   
@@ -245,7 +245,7 @@ object TranslateNs extends js.Object {
     /**
          * The the translated text. The maximum length of this text is 5kb.
          */
-    var TranslatedText: java.lang.String
+    var TranslatedText: String
   }
   
   @js.native

@@ -18,24 +18,24 @@ trait IGenericVariable
            * Note: Applying a patch takes less time than resetting all the properties.
            * @param qPatches - Array of NxPatch
            */
-  def applyPatches(qPatches: js.Array[INxPatch]): stdLib.Promise[scala.Unit]
+  def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[scala.Unit]
   /**
            * Returns the type and identifier of the object.
            */
-  def getInfo(): stdLib.Promise[INxInfo]
+  def getInfo(): js.Promise[INxInfo]
   /**
            * Evaluates an object and displays its properties including the dynamic properties.
            * If the member delta is set to true in the request object, only the delta is evaluated.
            * @returns GenericVariableLayout Information on the object
            */
-  def getLayout(): stdLib.Promise[IGenericVariableLayout]
+  def getLayout(): js.Promise[IGenericVariableLayout]
   /**
            * Shows the properties of an object.
            *
            * Note: If the member delta is set to true in the request, only the delta is retrieved.
            * @returns GenericVariableProperties Information about the generic object
            */
-  def getProperties(): stdLib.Promise[IGenericVariableProperties]
+  def getProperties(): js.Promise[IGenericVariableProperties]
   /**
            * Sets the value of a dual variable.
            *
@@ -46,14 +46,14 @@ trait IGenericVariable
            * @param qNum - Numeric representation of a dual value.
            * >> This parameter is mandatory.
            */
-  def setDualValue(qText: java.lang.String, qNum: scala.Double): stdLib.Promise[scala.Unit]
+  def setDualValue(qText: java.lang.String, qNum: scala.Double): js.Promise[scala.Unit]
   /**
            * Sets a numerical value to a variable.
            *
            * Note: These changes are not persistent. They only last the duration of the engine session.
            * @param qVal - Value of the variable.
            */
-  def setNumValue(qVal: scala.Double): stdLib.Promise[scala.Unit]
+  def setNumValue(qVal: scala.Double): js.Promise[scala.Unit]
   /**
            * Sets some properties for a variable.
            *
@@ -62,12 +62,12 @@ trait IGenericVariable
            * @param - Information about the variable.
            * >> This parameter is mandatory.
            */
-  def setProperties(qProp: IGenericVariableProperties): stdLib.Promise[scala.Unit]
+  def setProperties(qProp: IGenericVariableProperties): js.Promise[scala.Unit]
   /**
            * Sets a string value to a variable.
            * Note: These changes are not persistent. They only last the duration of the engine session.
            * @param qVal - Value of the variable. The string can contain an expression.
            */
-  def setStringValue(qVal: java.lang.String): stdLib.Promise[scala.Unit]
+  def setStringValue(qVal: java.lang.String): js.Promise[scala.Unit]
 }
 

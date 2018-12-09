@@ -26,7 +26,7 @@ object notificationNs extends js.Object {
        *   The content of the message can be either simple text or HTML
        *   Must specify either message or messageHTML
        */
-  def alert(message: java.lang.String): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def alert(message: java.lang.String): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Alert message
@@ -42,7 +42,7 @@ object notificationNs extends js.Object {
        *   The content of the message can be either simple text or HTML
        *   Must specify either message or messageHTML
        */
-  def alert(message: java.lang.String, options: onsenuiLib.onsenuiMod.AlertOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def alert(message: java.lang.String, options: onsenuiLib.onsenuiMod.AlertOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Alert message
@@ -58,7 +58,7 @@ object notificationNs extends js.Object {
        *   The content of the message can be either simple text or HTML
        *   Must specify either message or messageHTML
        */
-  def alert(message: onsenuiLib.onsenuiMod.AlertOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def alert(message: onsenuiLib.onsenuiMod.AlertOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Alert message
@@ -74,7 +74,7 @@ object notificationNs extends js.Object {
        *   The content of the message can be either simple text or HTML
        *   Must specify either message or messageHTML
        */
-  def alert(message: onsenuiLib.onsenuiMod.AlertOptions, options: onsenuiLib.onsenuiMod.AlertOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def alert(message: onsenuiLib.onsenuiMod.AlertOptions, options: onsenuiLib.onsenuiMod.AlertOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Confirmation question
@@ -94,7 +94,7 @@ object notificationNs extends js.Object {
        *   The default button labels are "Cancel" and "OK" but they can be customized
        *   Must specify either message or messageHTML
        */
-  def confirm(message: java.lang.String): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def confirm(message: java.lang.String): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Confirmation question
@@ -114,7 +114,7 @@ object notificationNs extends js.Object {
        *   The default button labels are "Cancel" and "OK" but they can be customized
        *   Must specify either message or messageHTML
        */
-  def confirm(message: java.lang.String, options: onsenuiLib.onsenuiMod.AlertOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def confirm(message: java.lang.String, options: onsenuiLib.onsenuiMod.AlertOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Confirmation question
@@ -134,7 +134,7 @@ object notificationNs extends js.Object {
        *   The default button labels are "Cancel" and "OK" but they can be customized
        *   Must specify either message or messageHTML
        */
-  def confirm(message: onsenuiLib.onsenuiMod.AlertOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def confirm(message: onsenuiLib.onsenuiMod.AlertOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Confirmation question
@@ -154,7 +154,7 @@ object notificationNs extends js.Object {
        *   The default button labels are "Cancel" and "OK" but they can be customized
        *   Must specify either message or messageHTML
        */
-  def confirm(message: onsenuiLib.onsenuiMod.AlertOptions, options: onsenuiLib.onsenuiMod.AlertOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def confirm(message: onsenuiLib.onsenuiMod.AlertOptions, options: onsenuiLib.onsenuiMod.AlertOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Prompt question
@@ -173,7 +173,7 @@ object notificationNs extends js.Object {
        *   Display a dialog with a prompt to ask the user a question
        *   Must specify either message or messageHTML
        */
-  def prompt(message: java.lang.String): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def prompt(message: java.lang.String): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Prompt question
@@ -192,7 +192,7 @@ object notificationNs extends js.Object {
        *   Display a dialog with a prompt to ask the user a question
        *   Must specify either message or messageHTML
        */
-  def prompt(message: java.lang.String, options: onsenuiLib.onsenuiMod.AlertOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def prompt(message: java.lang.String, options: onsenuiLib.onsenuiMod.AlertOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Prompt question
@@ -211,7 +211,7 @@ object notificationNs extends js.Object {
        *   Display a dialog with a prompt to ask the user a question
        *   Must specify either message or messageHTML
        */
-  def prompt(message: onsenuiLib.onsenuiMod.AlertOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def prompt(message: onsenuiLib.onsenuiMod.AlertOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Object} options Parameter object
        * @param {String} [options.message] Prompt question
@@ -230,7 +230,7 @@ object notificationNs extends js.Object {
        *   Display a dialog with a prompt to ask the user a question
        *   Must specify either message or messageHTML
        */
-  def prompt(message: onsenuiLib.onsenuiMod.AlertOptions, options: onsenuiLib.onsenuiMod.AlertOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def prompt(message: onsenuiLib.onsenuiMod.AlertOptions, options: onsenuiLib.onsenuiMod.AlertOptions): js.Promise[stdLib.HTMLElement] = js.native
   def toast(args: js.Any*): js.Any = js.native
 }
 

@@ -30,7 +30,7 @@ class ODBCStatement () extends js.Object {
   def execute(
     cb: js.Function3[/* err */ stdLib.Error, /* result */ js.Array[_], /* outparams */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def execute(params: js.Array[_]): stdLib.Promise[ibmUnderscoreDbLib.Anon_Result] = js.native
+  def execute(params: js.Array[_]): js.Promise[ibmUnderscoreDbLib.Anon_Result] = js.native
   def execute(
     params: js.Array[_],
     cb: js.Function3[/* err */ stdLib.Error, /* result */ js.Array[_], /* outparams */ js.Any, scala.Unit]
@@ -39,9 +39,9 @@ class ODBCStatement () extends js.Object {
     sql: java.lang.String,
     cb: js.Function2[/* err */ stdLib.Error, /* result */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
-  def executeNonQuery(): stdLib.Promise[scala.Unit] = js.native
+  def executeNonQuery(): js.Promise[scala.Unit] = js.native
   def executeNonQuery(cb: js.Function2[/* err */ stdLib.Error, /* res */ js.Array[_], scala.Unit]): scala.Unit = js.native
-  def executeNonQuery(params: js.Array[_]): stdLib.Promise[scala.Unit] = js.native
+  def executeNonQuery(params: js.Array[_]): js.Promise[scala.Unit] = js.native
   def executeNonQuery(params: js.Array[_], cb: js.Function2[/* err */ stdLib.Error, /* res */ js.Array[_], scala.Unit]): scala.Unit = js.native
   def executeSync(): ODBCResult = js.native
   def executeSync(params: js.Array[_]): ODBCResult = js.native

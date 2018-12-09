@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ConnectionContext extends js.Object {
-  var initPromise: js.UndefOr[stdLib.Promise[_]] = js.undefined
+  var initPromise: js.UndefOr[js.Promise[_]] = js.undefined
   var isLegacy: scala.Boolean
   var operations: ScalablyTyped.runtime.StringDictionary[ExecutionIterator]
   var request: nodeLib.httpMod.IncomingMessage

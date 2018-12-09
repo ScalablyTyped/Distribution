@@ -52,7 +52,7 @@ class Channel protected ()
        *   const apiResponse = data[0];
        * });
        */
-  def stop(): stdLib.Promise[requestLib.requestMod.requestNs.Response] = js.native
+  def stop(): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
   def stop(callback: StopCallback): scala.Unit = js.native
 }
 

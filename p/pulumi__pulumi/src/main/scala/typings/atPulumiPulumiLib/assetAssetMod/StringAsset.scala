@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class StringAsset protected () extends Asset {
   def this(text: java.lang.String) = this()
-  def this(text: stdLib.Promise[java.lang.String]) = this()
+  def this(text: js.Promise[java.lang.String]) = this()
   /**
        * The string contents.
        */
-  val text: stdLib.Promise[java.lang.String] = js.native
+  val text: js.Promise[java.lang.String] = js.native
 }
 

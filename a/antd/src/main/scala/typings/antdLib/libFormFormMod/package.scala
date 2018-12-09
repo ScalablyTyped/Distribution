@@ -9,10 +9,7 @@ package object libFormFormMod {
   type ComponentDecorator = js.Function1[
     /* component */ (reactLib.reactMod.ReactNs.ComponentClass[FormComponentProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[FormComponentProps], 
     reactLib.reactMod.ReactNs.ComponentClass[
-      RcBaseFormProps with (antdLib.libUnderscoreUtilTypeMod.Omit[
-        RcBaseFormProps with (antdLib.libUnderscoreUtilTypeMod.Omit[FormComponentProps, antdLib.antdLibStrings.form]), 
-        antdLib.antdLibStrings.form
-      ]), 
+      RcBaseFormProps with (antdLib.libUnderscoreUtilTypeMod.Omit[FormComponentProps, antdLib.antdLibStrings.form]), 
       reactLib.reactMod.ReactNs.ComponentState
     ]
   ]

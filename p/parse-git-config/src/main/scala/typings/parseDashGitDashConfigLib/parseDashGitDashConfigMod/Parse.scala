@@ -12,7 +12,7 @@ trait Parse extends js.Object {
        * Resolves with `null` if unable to resolve path to the git config file.
        * If no arguments are passed, the .git/config file relative to process.cwd() is used.
        */
-  def apply(): stdLib.Promise[Config | scala.Null] = js.native
+  def apply(): js.Promise[Config | scala.Null] = js.native
   /**
        * Asynchronously parse a .git/config file.
        * If only the callback is passed, the .git/config file relative to process.cwd() is used.
@@ -23,7 +23,7 @@ trait Parse extends js.Object {
        * Resolves with `null` if unable to resolve path to the git config file.
        * If no arguments are passed, the .git/config file relative to process.cwd() is used.
        */
-  def apply(options: java.lang.String): stdLib.Promise[Config | scala.Null] = js.native
+  def apply(options: java.lang.String): js.Promise[Config | scala.Null] = js.native
   /**
        * Asynchronously parse a .git/config file.
        * If only the callback is passed, the .git/config file relative to process.cwd() is used.
@@ -34,7 +34,7 @@ trait Parse extends js.Object {
        * Resolves with `null` if unable to resolve path to the git config file.
        * If no arguments are passed, the .git/config file relative to process.cwd() is used.
        */
-  def apply(options: js.Object): stdLib.Promise[Config | scala.Null] = js.native
+  def apply(options: js.Object): js.Promise[Config | scala.Null] = js.native
   /**
        * Asynchronously parse a .git/config file.
        * If only the callback is passed, the .git/config file relative to process.cwd() is used.
@@ -45,7 +45,7 @@ trait Parse extends js.Object {
        * Resolves with `null` if unable to resolve path to the git config file.
        * If no arguments are passed, the .git/config file relative to process.cwd() is used.
        */
-  def apply(options: Options): stdLib.Promise[Config | scala.Null] = js.native
+  def apply(options: Options): js.Promise[Config | scala.Null] = js.native
   /**
        * Asynchronously parse a .git/config file.
        * If only the callback is passed, the .git/config file relative to process.cwd() is used.
@@ -60,25 +60,25 @@ trait Parse extends js.Object {
        * Resolves with `null` if unable to resolve path to the git config file.
        * If no arguments are passed, the .git/config file relative to process.cwd() is used.
        */
-  def promise(): stdLib.Promise[Config | scala.Null] = js.native
+  def promise(): js.Promise[Config | scala.Null] = js.native
   /**
        * Asynchronously parse a .git/config file. Returns a promise.
        * Resolves with `null` if unable to resolve path to the git config file.
        * If no arguments are passed, the .git/config file relative to process.cwd() is used.
        */
-  def promise(options: java.lang.String): stdLib.Promise[Config | scala.Null] = js.native
+  def promise(options: java.lang.String): js.Promise[Config | scala.Null] = js.native
   /**
        * Asynchronously parse a .git/config file. Returns a promise.
        * Resolves with `null` if unable to resolve path to the git config file.
        * If no arguments are passed, the .git/config file relative to process.cwd() is used.
        */
-  def promise(options: js.Object): stdLib.Promise[Config | scala.Null] = js.native
+  def promise(options: js.Object): js.Promise[Config | scala.Null] = js.native
   /**
        * Asynchronously parse a .git/config file. Returns a promise.
        * Resolves with `null` if unable to resolve path to the git config file.
        * If no arguments are passed, the .git/config file relative to process.cwd() is used.
        */
-  def promise(options: Options): stdLib.Promise[Config | scala.Null] = js.native
+  def promise(options: Options): js.Promise[Config | scala.Null] = js.native
   /**
        * Synchronously parse a .git/config file.
        * If no arguments are passed, the .git/config file relative to process.cwd() is used.

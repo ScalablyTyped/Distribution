@@ -35,7 +35,7 @@ object reduxDashPersistModMembers extends js.Object {
     ]
   ): reduxDashPersistLib.esCreateTransformMod.Transform[S, R] = js.native
   def createWebStorage(`type`: java.lang.String): reduxDashPersistLib.esTypesMod.WebStorage = js.native
-  def getStoredState(config: reduxDashPersistLib.esTypesMod.PersistConfig): stdLib.Promise[_ | scala.Unit] = js.native
+  def getStoredState(config: reduxDashPersistLib.esTypesMod.PersistConfig): js.Promise[_ | scala.Unit] = js.native
   def persistCombineReducers[S](
     config: reduxDashPersistLib.esTypesMod.PersistConfig,
     reducers: reduxLib.reduxMod.ReducersMapObject[_, reduxLib.reduxMod.Action[_]]

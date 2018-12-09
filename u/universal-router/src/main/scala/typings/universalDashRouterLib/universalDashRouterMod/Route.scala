@@ -15,7 +15,7 @@ trait Route[C /* <: Context */, R] extends js.Object {
     js.Function2[
       /* context */ (ActionContext[C, R]) with C, 
       /* params */ Params, 
-      R | stdLib.Promise[R] | scala.Unit
+      R | js.Promise[R] | scala.Unit
     ]
   ] = js.undefined
   /**

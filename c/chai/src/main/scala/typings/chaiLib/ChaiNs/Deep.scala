@@ -27,10 +27,10 @@ trait Deep extends js.Object {
   def equal(value: js.Any, message: java.lang.String): Assertion = js.native
   def equals(value: js.Any): Assertion = js.native
   def equals(value: js.Any, message: java.lang.String): Assertion = js.native
+  def include(value: chaiLib.Object): Assertion = js.native
+  def include(value: chaiLib.Object, message: java.lang.String): Assertion = js.native
   def include(value: java.lang.String): Assertion = js.native
   def include(value: java.lang.String, message: java.lang.String): Assertion = js.native
-  def include(value: js.Object): Assertion = js.native
-  def include(value: js.Object, message: java.lang.String): Assertion = js.native
   def include(value: scala.Double): Assertion = js.native
   def include(value: scala.Double, message: java.lang.String): Assertion = js.native
   def members(set: js.Array[_]): Assertion = js.native

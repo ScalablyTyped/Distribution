@@ -16,6 +16,6 @@ object aspromiseMod extends js.Object {
    * @param {...*} params Function arguments
    * @returns {Promise<*>} Promisified function
    */
-  def apply(fn: atProtobufjsAspromiseLib.asPromiseCallback, ctx: js.Any, params: js.Any*): stdLib.Promise[_] = js.native
+  def apply(fn: atProtobufjsAspromiseLib.asPromiseCallback, ctx: js.Any, params: js.Any*): js.Promise[_] = js.native
 }
 

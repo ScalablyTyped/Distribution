@@ -17,17 +17,17 @@ class PriceRuleDiscounts protected ()
   def create(
     priceRuleId: scala.Double,
     discount: shopifyDashPrimeLib.distModelsPriceUnderscoreRuleUnderscoreDiscountUnderscoreCodeMod.PriceRuleDiscountCode
-  ): stdLib.Promise[
+  ): js.Promise[
     shopifyDashPrimeLib.distModelsPriceUnderscoreRuleUnderscoreDiscountUnderscoreCodeMod.PriceRuleDiscountCode
   ] = js.native
   /**
        * Deletes an existing discount code object.
        */
-  def delete(priceRuleId: scala.Double, id: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def delete(priceRuleId: scala.Double, id: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * Returns details about a single discount code object.
        */
-  def get(priceRuleId: scala.Double, id: scala.Double): stdLib.Promise[
+  def get(priceRuleId: scala.Double, id: scala.Double): js.Promise[
     shopifyDashPrimeLib.distModelsPriceUnderscoreRuleUnderscoreDiscountUnderscoreCodeMod.PriceRuleDiscountCode
   ] = js.native
   /* private */ def getPath(priceRuleId: js.Any, path: js.Any): js.Any = js.native
@@ -35,7 +35,7 @@ class PriceRuleDiscounts protected ()
        * Returns a list of discount codes belonging to a specified price rule.
        * @param options Options for filtering the results.
        */
-  def list(priceRuleId: scala.Double): stdLib.Promise[
+  def list(priceRuleId: scala.Double): js.Promise[
     js.Array[
       shopifyDashPrimeLib.distModelsPriceUnderscoreRuleUnderscoreDiscountUnderscoreCodeMod.PriceRuleDiscountCode
     ]
@@ -44,7 +44,7 @@ class PriceRuleDiscounts protected ()
        * Returns a list of discount codes belonging to a specified price rule.
        * @param options Options for filtering the results.
        */
-  def list(priceRuleId: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.ListOptions): stdLib.Promise[
+  def list(priceRuleId: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.ListOptions): js.Promise[
     js.Array[
       shopifyDashPrimeLib.distModelsPriceUnderscoreRuleUnderscoreDiscountUnderscoreCodeMod.PriceRuleDiscountCode
     ]
@@ -57,7 +57,7 @@ class PriceRuleDiscounts protected ()
        *
        * // https://your-store-domain.myshopify.com/admin/discount_codes/lookup?code=discountCode
        */
-  def lookup(priceRuleId: scala.Double, code: java.lang.String): stdLib.Promise[
+  def lookup(priceRuleId: scala.Double, code: java.lang.String): js.Promise[
     shopifyDashPrimeLib.distModelsPriceUnderscoreRuleUnderscoreDiscountUnderscoreCodeMod.PriceRuleDiscountCode
   ] = js.native
   /**
@@ -67,7 +67,7 @@ class PriceRuleDiscounts protected ()
     priceRuleId: scala.Double,
     id: scala.Double,
     discount: shopifyDashPrimeLib.distModelsPriceUnderscoreRuleUnderscoreDiscountUnderscoreCodeMod.PriceRuleDiscountCode
-  ): stdLib.Promise[
+  ): js.Promise[
     shopifyDashPrimeLib.distModelsPriceUnderscoreRuleUnderscoreDiscountUnderscoreCodeMod.PriceRuleDiscountCode
   ] = js.native
 }

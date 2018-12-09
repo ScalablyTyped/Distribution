@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait NativeMongoPromiseOptions extends DefaultOptions {
-  var dbPromise: stdLib.Promise[mongodbLib.mongodbMod.Db]
+  var dbPromise: js.Promise[mongodbLib.mongodbMod.Db]
 }
 

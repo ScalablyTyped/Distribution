@@ -75,7 +75,7 @@ trait AnimationManipulation extends js.Object {
            * completing the animation or frame for the next frame of the animation.
            * http://js.cytoscape.org/#ani.promise
            */
-  def promise(): stdLib.Promise[EventObject] = js.native
+  def promise(): js.Promise[EventObject] = js.native
   /**
            * Get a promise that is fulfilled with the specified animation event.
            * @param animationEvent A string for the event name; completed or complete for
@@ -83,7 +83,7 @@ trait AnimationManipulation extends js.Object {
            * http://js.cytoscape.org/#ani.promise
            */
   @JSName("promise")
-  def promise_complete(animationEvent: cytoscapeLib.cytoscapeLibStrings.complete): stdLib.Promise[EventObject] = js.native
+  def promise_complete(animationEvent: cytoscapeLib.cytoscapeLibStrings.complete): js.Promise[EventObject] = js.native
   /**
            * Get a promise that is fulfilled with the specified animation event.
            * @param animationEvent A string for the event name; completed or complete for
@@ -91,7 +91,7 @@ trait AnimationManipulation extends js.Object {
            * http://js.cytoscape.org/#ani.promise
            */
   @JSName("promise")
-  def promise_completed(animationEvent: cytoscapeLib.cytoscapeLibStrings.completed): stdLib.Promise[EventObject] = js.native
+  def promise_completed(animationEvent: cytoscapeLib.cytoscapeLibStrings.completed): js.Promise[EventObject] = js.native
   /**
            * Get a promise that is fulfilled with the specified animation event.
            * @param animationEvent A string for the event name; completed or complete for
@@ -99,7 +99,7 @@ trait AnimationManipulation extends js.Object {
            * http://js.cytoscape.org/#ani.promise
            */
   @JSName("promise")
-  def promise_frame(animationEvent: cytoscapeLib.cytoscapeLibStrings.frame): stdLib.Promise[EventObject] = js.native
+  def promise_frame(animationEvent: cytoscapeLib.cytoscapeLibStrings.frame): js.Promise[EventObject] = js.native
   /**
            * Reverse the animation such that its starting
            * conditions and ending conditions are reversed.

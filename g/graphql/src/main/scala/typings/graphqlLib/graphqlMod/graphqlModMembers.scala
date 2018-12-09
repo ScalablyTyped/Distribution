@@ -96,25 +96,25 @@ object graphqlModMembers extends js.Object {
     path: graphqlLib.utilitiesCoerceValueMod.Path
   ): graphqlLib.utilitiesCoerceValueMod.CoercedValue = js.native
   def concatAST(asts: js.Array[graphqlLib.languageAstMod.DocumentNode]): graphqlLib.languageAstMod.DocumentNode = js.native
-  def createSourceEventStream[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, document: graphqlLib.languageAstMod.DocumentNode): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def createSourceEventStream[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, document: graphqlLib.languageAstMod.DocumentNode): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any,
     variableValues: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
@@ -122,7 +122,7 @@ object graphqlModMembers extends js.Object {
     contextValue: js.Any,
     variableValues: ScalablyTyped.runtime.StringDictionary[js.Any],
     operationName: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String]
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def createSourceEventStream[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
@@ -133,7 +133,7 @@ object graphqlModMembers extends js.Object {
     fieldResolver: graphqlLib.tsutilsMaybeMod.Maybe[
       graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
     ]
-  ): stdLib.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def doTypesOverlap(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     typeA: graphqlLib.typeDefinitionMod.GraphQLCompositeType,
@@ -235,26 +235,26 @@ object graphqlModMembers extends js.Object {
     kind: java.lang.String,
     isLeaving: scala.Boolean
   ): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageVisitorMod.VisitFn[_, _]] = js.native
-  def graphql[TData](args: graphqlLib.graphqlGraphqlMod.GraphQLArgs): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
-  def graphql[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: graphqlLib.languageSourceMod.Source): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def graphql[TData](args: graphqlLib.graphqlGraphqlMod.GraphQLArgs): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def graphql[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: graphqlLib.languageSourceMod.Source): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     source: graphqlLib.languageSourceMod.Source,
     rootValue: js.Any
-  ): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     source: graphqlLib.languageSourceMod.Source,
     rootValue: js.Any,
     contextValue: js.Any
-  ): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     source: graphqlLib.languageSourceMod.Source,
     rootValue: js.Any,
     contextValue: js.Any,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]]
-  ): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     source: graphqlLib.languageSourceMod.Source,
@@ -262,7 +262,7 @@ object graphqlModMembers extends js.Object {
     contextValue: js.Any,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]],
     operationName: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String]
-  ): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     source: graphqlLib.languageSourceMod.Source,
@@ -273,22 +273,22 @@ object graphqlModMembers extends js.Object {
     fieldResolver: graphqlLib.tsutilsMaybeMod.Maybe[
       graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
     ]
-  ): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
-  def graphql[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: java.lang.String): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
-  def graphql[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: java.lang.String, rootValue: js.Any): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def graphql[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: java.lang.String): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def graphql[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: java.lang.String, rootValue: js.Any): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     source: java.lang.String,
     rootValue: js.Any,
     contextValue: js.Any
-  ): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     source: java.lang.String,
     rootValue: js.Any,
     contextValue: js.Any,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]]
-  ): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     source: java.lang.String,
@@ -296,7 +296,7 @@ object graphqlModMembers extends js.Object {
     contextValue: js.Any,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]],
     operationName: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String]
-  ): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphql[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     source: java.lang.String,
@@ -307,7 +307,7 @@ object graphqlModMembers extends js.Object {
     fieldResolver: graphqlLib.tsutilsMaybeMod.Maybe[
       graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
     ]
-  ): stdLib.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): js.Promise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def graphqlSync[TData](args: graphqlLib.graphqlGraphqlMod.GraphQLArgs): graphqlLib.executionExecuteMod.ExecutionResult[TData] = js.native
   def graphqlSync[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, source: graphqlLib.languageSourceMod.Source): graphqlLib.executionExecuteMod.ExecutionResult[TData] = js.native
   def graphqlSync[TData](
@@ -464,7 +464,7 @@ object graphqlModMembers extends js.Object {
   ): java.lang.String = js.native
   def responsePathAsArray(path: graphqlLib.typeDefinitionMod.ResponsePath): js.Array[java.lang.String | scala.Double] = js.native
   def separateOperations(documentAST: graphqlLib.languageAstMod.DocumentNode): ScalablyTyped.runtime.StringDictionary[graphqlLib.languageAstMod.DocumentNode] = js.native
-  def subscribe[TData](args: graphqlLib.Anon_FieldResolver): stdLib.Promise[
+  def subscribe[TData](args: graphqlLib.Anon_FieldResolver): js.Promise[
     stdLib.AsyncIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
   ] = js.native
   def subscribe[TData](
@@ -484,7 +484,7 @@ object graphqlModMembers extends js.Object {
         graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
       ]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stdLib.AsyncIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
   ] = js.native
   def typeFromAST(schema: graphqlLib.typeSchemaMod.GraphQLSchema, typeNode: graphqlLib.languageAstMod.ListTypeNode): js.UndefOr[graphqlLib.typeDefinitionMod.GraphQLList[_]] = js.native

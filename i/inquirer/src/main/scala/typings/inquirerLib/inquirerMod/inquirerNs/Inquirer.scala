@@ -20,7 +20,7 @@ trait Inquirer extends js.Object {
            * @param opt Object specifying input and output streams for the prompt
            */
   def createPromptModule(opt: StreamOptions): PromptModule = js.native
-  def prompt[T](questions: Questions[T]): stdLib.Promise[T] = js.native
+  def prompt[T](questions: Questions[T]): js.Promise[T] = js.native
   /**
            * Public CLI helper interface
            * @param questions Questions settings array

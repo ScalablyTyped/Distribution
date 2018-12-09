@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Box extends js.Object {
-  def apply(sel: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object]): scala.Unit = js.native
+  def apply(
+    sel: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
+  ): scala.Unit = js.native
   def domain(): js.Function0[js.Array[scala.Double]] = js.native
   def domain(x: js.Array[scala.Double]): Box = js.native
   def duration(): scala.Double = js.native

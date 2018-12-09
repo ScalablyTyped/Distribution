@@ -12,6 +12,6 @@ object atomModMembers extends js.Object {
     rootPath: java.lang.String,
     options: js.Object,
     eventCallback: js.Function1[/* events */ FilesystemChangeEvent, scala.Unit]
-  ): stdLib.Promise[PathWatcher] = js.native
+  ): js.Promise[PathWatcher] = js.native
 }
 

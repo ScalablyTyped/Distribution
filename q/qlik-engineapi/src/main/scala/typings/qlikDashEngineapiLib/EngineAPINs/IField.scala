@@ -17,7 +17,7 @@ trait IField extends js.Object {
            * Note: The operation is successful if qReturn is set to true.
            * @returns - A promise true or false
            */
-  def clear(): stdLib.Promise[scala.Boolean] = js.native
+  def clear(): js.Promise[scala.Boolean] = js.native
   /**
            * Maintains the selections in the current field while clearing the selections in the other fields.
            * @param qSoftLock - Set to true to ignore locks; in that case, locked fields can be selected.
@@ -25,7 +25,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise of a Qlik engine reply.
            */
-  def clearAllButThis(): stdLib.Promise[scala.Boolean] = js.native
+  def clearAllButThis(): js.Promise[scala.Boolean] = js.native
   /**
            * Maintains the selections in the current field while clearing the selections in the other fields.
            * @param qSoftLock - Set to true to ignore locks; in that case, locked fields can be selected.
@@ -33,33 +33,33 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise of a Qlik engine reply.
            */
-  def clearAllButThis(qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def clearAllButThis(qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Returns the AND mode status of a field.
            *
            * Note: The field is in AND mode if qReturn is set to true.
            * @returns - A promise true or false
            */
-  def getAndMode(): stdLib.Promise[scala.Boolean] = js.native
+  def getAndMode(): js.Promise[scala.Boolean] = js.native
   /**
            * Retrieves the number of distinct values in a field.
            *
            * Note: The field is in AND mode if qReturn is set to true.
            * @returns - A promise a number <cardinal value>
            */
-  def getCardinal(): stdLib.Promise[scala.Double] = js.native
+  def getCardinal(): js.Promise[scala.Double] = js.native
   /**
            * Gets the properties of a field.
            * @returns - A promise of NxFieldProperties
            */
-  def getNxProperties(): stdLib.Promise[INxFieldProperties] = js.native
+  def getNxProperties(): js.Promise[INxFieldProperties] = js.native
   /**
            * Locks all selected values of a specific field.
            *
            * Note: The operation is successful if Return is set to true.
            * @returns - A promise true or false
            */
-  def lock(): stdLib.Promise[scala.Boolean] = js.native
+  def lock(): js.Promise[scala.Boolean] = js.native
   /**
            * Selects some values in a field, by entering the element numbers related to the values to select.
            *
@@ -73,7 +73,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise of a Qlik engine reply.
            */
-  def lowLevelSelect(qValues: js.Array[scala.Double], qToggleMode: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def lowLevelSelect(qValues: js.Array[scala.Double], qToggleMode: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects some values in a field, by entering the element numbers related to the values to select.
            *
@@ -87,7 +87,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise of a Qlik engine reply.
            */
-  def lowLevelSelect(qValues: js.Array[scala.Double], qToggleMode: scala.Boolean, qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def lowLevelSelect(qValues: js.Array[scala.Double], qToggleMode: scala.Boolean, qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects field values matching a search string.
            *
@@ -100,7 +100,7 @@ trait IField extends js.Object {
            * @param qExcludedValuesMode - Include excluded values in search. This parameter is optional.
            * @returns - A promise true or false
            */
-  def select(qMatch: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def select(qMatch: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Selects field values matching a search string.
            *
@@ -113,7 +113,7 @@ trait IField extends js.Object {
            * @param qExcludedValuesMode - Include excluded values in search. This parameter is optional.
            * @returns - A promise true or false
            */
-  def select(qMatch: java.lang.String, qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def select(qMatch: java.lang.String, qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects field values matching a search string.
            *
@@ -126,7 +126,7 @@ trait IField extends js.Object {
            * @param qExcludedValuesMode - Include excluded values in search. This parameter is optional.
            * @returns - A promise true or false
            */
-  def select(qMatch: java.lang.String, qSoftLock: scala.Boolean, qExcludedValuesMode: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def select(qMatch: java.lang.String, qSoftLock: scala.Boolean, qExcludedValuesMode: scala.Double): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all values of a field. Excluded values are also selected.
            *
@@ -136,7 +136,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectAll(): stdLib.Promise[scala.Boolean] = js.native
+  def selectAll(): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all values of a field. Excluded values are also selected.
            *
@@ -146,7 +146,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectAll(qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectAll(qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all alternatives values in a specific field.
            *
@@ -156,7 +156,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectAlternative(): stdLib.Promise[scala.Boolean] = js.native
+  def selectAlternative(): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all alternatives values in a specific field.
            *
@@ -166,7 +166,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectAlternative(qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectAlternative(qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Inverts the current selections.
            *
@@ -176,7 +176,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectExcluded(): stdLib.Promise[scala.Boolean] = js.native
+  def selectExcluded(): js.Promise[scala.Boolean] = js.native
   /**
            * Inverts the current selections.
            *
@@ -186,7 +186,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectExcluded(qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectExcluded(qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all possible values in a specific field.
            *
@@ -196,7 +196,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectPossible(): stdLib.Promise[scala.Boolean] = js.native
+  def selectPossible(): js.Promise[scala.Boolean] = js.native
   /**
            * Selects all possible values in a specific field.
            *
@@ -206,7 +206,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectPossible(qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectPossible(qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects some values in a field, by entering the values to select.
            *
@@ -218,7 +218,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectValues(qFieldValues: js.Array[IFieldValue]): stdLib.Promise[scala.Boolean] = js.native
+  def selectValues(qFieldValues: js.Array[IFieldValue]): js.Promise[scala.Boolean] = js.native
   /**
            * Selects some values in a field, by entering the values to select.
            *
@@ -230,7 +230,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Selects some values in a field, by entering the values to select.
            *
@@ -242,7 +242,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: scala.Boolean, qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def selectValues(qFieldValues: js.Array[IFieldValue], qToggleMode: scala.Boolean, qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Sets a field in the AND mode.
            *
@@ -252,7 +252,7 @@ trait IField extends js.Object {
            * >> This parameter is mandatory.
            * @returns - A promise of a Qlik engine reply.
            */
-  def setAndMode(qAndMode: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def setAndMode(qAndMode: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
            * Sets some properties to a field.
            *
@@ -260,7 +260,7 @@ trait IField extends js.Object {
            * @param qProperties - Information about the properties of the field
            * @returns - A promise of a Qlik engine reply.
            */
-  def setNxProperties(qProperties: INxFieldProperties): stdLib.Promise[scala.Unit] = js.native
+  def setNxProperties(qProperties: INxFieldProperties): js.Promise[scala.Unit] = js.native
   /**
            * Toggle selects field values matching a search string.
            *
@@ -273,7 +273,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def toggleSelect(qMatch: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def toggleSelect(qMatch: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Toggle selects field values matching a search string.
            *
@@ -286,7 +286,7 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def toggleSelect(qMatch: java.lang.String, qSoftLock: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def toggleSelect(qMatch: java.lang.String, qSoftLock: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
            * Toggle selects field values matching a search string.
            *
@@ -299,11 +299,11 @@ trait IField extends js.Object {
            * This parameter is optional.
            * @returns - A promise true or false
            */
-  def toggleSelect(qMatch: java.lang.String, qSoftLock: scala.Boolean, qExcludedValuesMode: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def toggleSelect(qMatch: java.lang.String, qSoftLock: scala.Boolean, qExcludedValuesMode: scala.Double): js.Promise[scala.Boolean] = js.native
   /**
            * Unlocks all selected values of a specific field if the target (or handle ) is a field.
            * @returns - A promise true or false
            */
-  def unlock(): stdLib.Promise[scala.Boolean] = js.native
+  def unlock(): js.Promise[scala.Boolean] = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("google-translate-api", JSImport.Namespace)
 @js.native
 object googleDashTranslateDashApiModMembers extends js.Object {
-  def apply(text: java.lang.String): stdLib.Promise[TranslateResult] = js.native
-  def apply(text: java.lang.String, options: TranslateOption): stdLib.Promise[TranslateResult] = js.native
+  def apply(text: java.lang.String): js.Promise[TranslateResult] = js.native
+  def apply(text: java.lang.String, options: TranslateOption): js.Promise[TranslateResult] = js.native
 }
 

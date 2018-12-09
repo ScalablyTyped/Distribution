@@ -19,6 +19,32 @@ trait IGridGroupingApi[TEntity] extends js.Object {
                * a custom aggregation function.
                * @param {string} [aggregationLabel] The label to use for aggregation
                */
+  def aggregateColumn(columnName: java.lang.String, or: angularLib.angularMod.Global.Function): scala.Unit = js.native
+  // Methods
+  /**
+               * Sets the aggregation type on a column.
+               * If the column is currently grouped then it removes the grouping first.
+               * If the aggregationDef is null then will result in the aggregation being removed.
+               * @param {string} columnName The name of the column we want to aggregate
+               * @param {string | function} or aggregationDef one of the recognised types from uiGridGroupingConstants or
+               * a custom aggregation function.
+               * @param {string} [aggregationLabel] The label to use for aggregation
+               */
+  def aggregateColumn(
+    columnName: java.lang.String,
+    or: angularLib.angularMod.Global.Function,
+    aggregationLabel: java.lang.String
+  ): scala.Unit = js.native
+  // Methods
+  /**
+               * Sets the aggregation type on a column.
+               * If the column is currently grouped then it removes the grouping first.
+               * If the aggregationDef is null then will result in the aggregation being removed.
+               * @param {string} columnName The name of the column we want to aggregate
+               * @param {string | function} or aggregationDef one of the recognised types from uiGridGroupingConstants or
+               * a custom aggregation function.
+               * @param {string} [aggregationLabel] The label to use for aggregation
+               */
   def aggregateColumn(columnName: java.lang.String, or: java.lang.String): scala.Unit = js.native
   // Methods
   /**
@@ -31,28 +57,6 @@ trait IGridGroupingApi[TEntity] extends js.Object {
                * @param {string} [aggregationLabel] The label to use for aggregation
                */
   def aggregateColumn(columnName: java.lang.String, or: java.lang.String, aggregationLabel: java.lang.String): scala.Unit = js.native
-  // Methods
-  /**
-               * Sets the aggregation type on a column.
-               * If the column is currently grouped then it removes the grouping first.
-               * If the aggregationDef is null then will result in the aggregation being removed.
-               * @param {string} columnName The name of the column we want to aggregate
-               * @param {string | function} or aggregationDef one of the recognised types from uiGridGroupingConstants or
-               * a custom aggregation function.
-               * @param {string} [aggregationLabel] The label to use for aggregation
-               */
-  def aggregateColumn(columnName: java.lang.String, or: js.Function): scala.Unit = js.native
-  // Methods
-  /**
-               * Sets the aggregation type on a column.
-               * If the column is currently grouped then it removes the grouping first.
-               * If the aggregationDef is null then will result in the aggregation being removed.
-               * @param {string} columnName The name of the column we want to aggregate
-               * @param {string | function} or aggregationDef one of the recognised types from uiGridGroupingConstants or
-               * a custom aggregation function.
-               * @param {string} [aggregationLabel] The label to use for aggregation
-               */
-  def aggregateColumn(columnName: java.lang.String, or: js.Function, aggregationLabel: java.lang.String): scala.Unit = js.native
   /**
                * Clear any grouped columns and any aggregations.
                * Doesn't remove sorting, as we don't know whether that sorting was added by grouping or was there

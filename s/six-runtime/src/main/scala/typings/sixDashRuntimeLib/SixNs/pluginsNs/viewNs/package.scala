@@ -10,6 +10,6 @@ package object viewNs {
     /* name */ java.lang.String, 
     /* runtimeConf */ js.UndefOr[runtimeConf | scala.Null], 
     /* data */ js.UndefOr[js.Object], 
-    stdLib.Promise[js.Any]
+    js.Promise[js.Any]
   ]
 }

@@ -11,11 +11,11 @@ class default protected () extends Recorder {
   def this(audioContext: stdLib.AudioContext) = this()
   def this(audioContext: stdLib.AudioContext, config: recorderDashJsLib.recorderDashJsMod.RecorderNs.RecorderConfig) = this()
   /* CompleteClass */
-  override def init(stream: stdLib.MediaStream): stdLib.Promise[scala.Unit] = js.native
+  override def init(stream: stdLib.MediaStream): js.Promise[scala.Unit] = js.native
   /* CompleteClass */
-  override def start(): stdLib.Promise[js.UndefOr[stdLib.MediaStream]] = js.native
+  override def start(): js.Promise[js.UndefOr[stdLib.MediaStream]] = js.native
   /* CompleteClass */
-  override def stop(): stdLib.Promise[recorderDashJsLib.recorderDashJsMod.RecorderNs.RecorderResult] = js.native
+  override def stop(): js.Promise[recorderDashJsLib.recorderDashJsMod.RecorderNs.RecorderResult] = js.native
 }
 
 @JSImport("recorder-js", JSImport.Default)

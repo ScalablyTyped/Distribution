@@ -35,11 +35,11 @@ trait SliderProps
   /**
      * Callback function that will be invoked when the slider value changes.
      */
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback function that will be invoked when the slider stops being dragged.
      */
-  var onDragStop: js.UndefOr[js.Function] = js.undefined
+  var onDragStop: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * If true, a pin with numeric value label is shown when the slider thumb is pressed. Use for settings for which users need to know the exact value of the setting.
      * @default false

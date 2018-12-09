@@ -3,8 +3,6 @@
 [info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-draft-wysiwyg/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-draft-wysiwyg),TsIdentLibrarySimple(react-draft-wysiwyg)),TsIdentModule(None,List(react-draft-wysiwyg))) [id => react-draft-wysiwyg, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(react-draft-wysiwyg)) [id => react-draft-wysiwyg, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(react-draft-wysiwyg) [id => react-draft-wysiwyg, phase => typescript] 
-[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(S) at TreeScope(TsParsedFile() / TsDeclModule(react-draft-wysiwyg) / TsDeclClass(Editor) / TsTypeRef()) [id => react-draft-wysiwyg, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-draft-wysiwyg) / TsDeclClass(Editor) / TsTypeRef())] 
-[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(SS) at TreeScope(TsParsedFile() / TsDeclModule(react-draft-wysiwyg) / TsDeclClass(Editor) / TsTypeRef()) [id => react-draft-wysiwyg, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-draft-wysiwyg) / TsDeclClass(Editor) / TsTypeRef())] 
 [debug] PhaseRunner.scala:78 Success [id => react-draft-wysiwyg, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing react-draft-wysiwyg [id => react-draft-wysiwyg, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => react-draft-wysiwyg, phase => scala.js] 

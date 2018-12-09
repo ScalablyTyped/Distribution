@@ -46,7 +46,7 @@ trait IAttributes
            * interpolated value changes.
            */
   @JSName("$observe")
-  def $observe[T](name: java.lang.String, fn: js.Function1[/* value */ js.UndefOr[T], _]): js.Function
+  def $observe[T](name: java.lang.String, fn: js.Function1[/* value */ js.UndefOr[T], _]): angularLib.angularMod.Global.Function
   /**
            * Removes the CSS class value specified by the classVal parameter from the
            * element. If animations are enabled then an animation will be triggered for

@@ -11,19 +11,19 @@ object LoginManagerNs extends js.Object {
   /**
        * Getter for the default audience.
        */
-  def getDefaultAudience(): stdLib.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.DefaultAudience] = js.native
+  def getDefaultAudience(): js.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.DefaultAudience] = js.native
   /**
        * Getter for the login behavior.
        */
-  def getLoginBehavior(): stdLib.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehavior] = js.native
+  def getLoginBehavior(): js.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehavior] = js.native
   /**
        * Logs the user in with the requested publish permissions.
        */
-  def logInWithPublishPermissions(permissions: js.Array[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.Permissions]): stdLib.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginResult] = js.native
+  def logInWithPublishPermissions(permissions: js.Array[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.Permissions]): js.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginResult] = js.native
   /**
        * Logs the user in with the requested read permissions.
        */
-  def logInWithReadPermissions(permissions: js.Array[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.Permissions]): stdLib.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginResult] = js.native
+  def logInWithReadPermissions(permissions: js.Array[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.Permissions]): js.Promise[reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginResult] = js.native
   /**
        * Logs out the user.
        */

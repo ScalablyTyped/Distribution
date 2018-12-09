@@ -266,7 +266,7 @@ object CloudHSMV2Ns extends js.Object {
          * The NextToken value that you received in the previous response. Use this value to get more backups.
          */
     var NextToken: js.UndefOr[NextToken] = js.undefined
-    var SortAscending: js.UndefOr[scala.Boolean] = js.undefined
+    var SortAscending: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -354,7 +354,7 @@ object CloudHSMV2Ns extends js.Object {
     /**
          * A description of the HSM's state.
          */
-    var StateMessage: js.UndefOr[java.lang.String] = js.undefined
+    var StateMessage: js.UndefOr[String] = js.undefined
     /**
          * The subnet that contains the HSM's elastic network interface (ENI).
          */
@@ -885,7 +885,7 @@ object CloudHSMV2Ns extends js.Object {
   type SecurityGroup = java.lang.String
   type StateMessage = java.lang.String
   type String = java.lang.String
-  type Strings = js.Array[java.lang.String]
+  type Strings = js.Array[String]
   type SubnetId = java.lang.String
   type SubnetIds = js.Array[SubnetId]
   type TagKey = java.lang.String

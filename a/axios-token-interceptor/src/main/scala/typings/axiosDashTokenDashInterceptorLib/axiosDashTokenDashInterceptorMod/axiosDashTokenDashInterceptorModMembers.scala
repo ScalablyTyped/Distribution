@@ -13,7 +13,7 @@ object axiosDashTokenDashInterceptorModMembers extends js.Object {
     Options: axiosDashTokenDashInterceptorLib.axiosDashTokenDashInterceptorMod.AxiosTokenProviderNs.InterceptorOptions
   ): axiosDashTokenDashInterceptorLib.axiosDashTokenDashInterceptorMod.AxiosTokenProviderNs.TokenProvider = js.native
   def tokenCache(
-    getToken: stdLib.Promise[java.lang.String],
+    getToken: js.Promise[java.lang.String],
     options: axiosDashTokenDashInterceptorLib.axiosDashTokenDashInterceptorMod.AxiosTokenProviderNs.TokenCacheOptions
   ): axiosDashTokenDashInterceptorLib.axiosDashTokenDashInterceptorMod.AxiosTokenProviderNs.TokenCache = js.native
 }

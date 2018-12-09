@@ -9,23 +9,23 @@ import scala.scalajs.js.annotation._
 @js.native
 object pDashReduceMod extends js.Object {
   def apply[T, U](
-    input: stdLib.Iterable[stdLib.PromiseLike[T] | T],
+    input: stdLib.Iterable[js.Thenable[T] | T],
     reducer: js.Function3[
       /* previousValue */ U, 
       /* currentValue */ T, 
       /* index */ scala.Double, 
-      stdLib.Promise[U] | U
+      js.Promise[U] | U
     ]
-  ): stdLib.Promise[U] = js.native
+  ): js.Promise[U] = js.native
   def apply[T, U](
-    input: stdLib.Iterable[stdLib.PromiseLike[T] | T],
+    input: stdLib.Iterable[js.Thenable[T] | T],
     reducer: js.Function3[
       /* previousValue */ U, 
       /* currentValue */ T, 
       /* index */ scala.Double, 
-      stdLib.Promise[U] | U
+      js.Promise[U] | U
     ],
     initialValue: U
-  ): stdLib.Promise[U] = js.native
+  ): js.Promise[U] = js.native
 }
 

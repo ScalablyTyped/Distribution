@@ -30,7 +30,7 @@ object argon2Ns extends js.Object {
   @js.native
   sealed trait ArgonType extends js.Object
   
-  def hash(options: Argon2BrowserHashOptions): stdLib.Promise[Argon2BrowserHashResult] = js.native
+  def hash(options: Argon2BrowserHashOptions): js.Promise[Argon2BrowserHashResult] = js.native
   @js.native
   object ArgonType extends js.Object {
     @js.native

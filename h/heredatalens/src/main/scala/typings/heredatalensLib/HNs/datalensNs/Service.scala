@@ -27,7 +27,7 @@ class Service ()
            * @param onError - Callback called on an unsuccessful request with the Error object
            * @returns - Response Promise
            */
-  def fetchLayer(layerName: java.lang.String): stdLib.Promise[_] = js.native
+  def fetchLayer(layerName: java.lang.String): js.Promise[_] = js.native
   /**
            * This method fetches a layer of geometries (eg buildings or administrative boundaries).
            * @param layerName - The name of the layer
@@ -36,7 +36,7 @@ class Service ()
            * @param onError - Callback called on an unsuccessful request with the Error object
            * @returns - Response Promise
            */
-  def fetchLayer(layerName: java.lang.String, params: js.Any): stdLib.Promise[_] = js.native
+  def fetchLayer(layerName: java.lang.String, params: js.Any): js.Promise[_] = js.native
   /**
            * This method fetches a layer of geometries (eg buildings or administrative boundaries).
            * @param layerName - The name of the layer
@@ -49,7 +49,7 @@ class Service ()
     layerName: java.lang.String,
     params: js.Any,
     onResult: js.Function1[/* result */ js.Any, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
            * This method fetches a layer of geometries (eg buildings or administrative boundaries).
            * @param layerName - The name of the layer
@@ -63,7 +63,7 @@ class Service ()
     params: js.Any,
     onResult: js.Function1[/* result */ js.Any, scala.Unit],
     onError: js.Function1[/* error */ js.Any, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
            * This method fetches vector tile data from the layer.
            * @param x - Tile columns
@@ -79,7 +79,7 @@ class Service ()
     x: heredatalensLib.HNs.datalensNs.QueryTileProviderNs.X,
     y: heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Y,
     z: heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom
-  ): stdLib.Promise[stdLib.Uint8Array] = js.native
+  ): js.Promise[stdLib.Uint8Array] = js.native
   /**
            * This method fetches vector tile data from the layer.
            * @param x - Tile columns
@@ -96,7 +96,7 @@ class Service ()
     y: heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Y,
     z: heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom,
     params: js.Any
-  ): stdLib.Promise[stdLib.Uint8Array] = js.native
+  ): js.Promise[stdLib.Uint8Array] = js.native
   /**
            * This method fetches vector tile data from the layer.
            * @param x - Tile columns
@@ -114,7 +114,7 @@ class Service ()
     z: heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom,
     params: js.Any,
     onResult: js.Function1[/* result */ js.Any, scala.Unit]
-  ): stdLib.Promise[stdLib.Uint8Array] = js.native
+  ): js.Promise[stdLib.Uint8Array] = js.native
   /**
            * This method fetches vector tile data from the layer.
            * @param x - Tile columns
@@ -133,7 +133,7 @@ class Service ()
     params: js.Any,
     onResult: js.Function1[/* result */ js.Any, scala.Unit],
     onError: js.Function1[/* error */ js.Any, scala.Unit]
-  ): stdLib.Promise[stdLib.Uint8Array] = js.native
+  ): js.Promise[stdLib.Uint8Array] = js.native
   /**
            * This method fetches query data for a given query ID.
            * This method can be used when implementing a custom provider.
@@ -144,7 +144,7 @@ class Service ()
            * @param onError - Callback called on an unsuccessful request with the Error object
            * @returns - Response Promise
            */
-  def fetchQueryData(queryId: java.lang.String): stdLib.Promise[_] = js.native
+  def fetchQueryData(queryId: java.lang.String): js.Promise[_] = js.native
   /**
            * This method fetches query data for a given query ID.
            * This method can be used when implementing a custom provider.
@@ -155,7 +155,7 @@ class Service ()
            * @param onError - Callback called on an unsuccessful request with the Error object
            * @returns - Response Promise
            */
-  def fetchQueryData(queryId: java.lang.String, params: js.Any): stdLib.Promise[_] = js.native
+  def fetchQueryData(queryId: java.lang.String, params: js.Any): js.Promise[_] = js.native
   /**
            * This method fetches query data for a given query ID.
            * This method can be used when implementing a custom provider.
@@ -166,7 +166,7 @@ class Service ()
            * @param onError - Callback called on an unsuccessful request with the Error object
            * @returns - Response Promise
            */
-  def fetchQueryData(queryId: java.lang.String, params: js.Any, onResult: js.Function1[/* result */ js.Any, scala.Unit]): stdLib.Promise[_] = js.native
+  def fetchQueryData(queryId: java.lang.String, params: js.Any, onResult: js.Function1[/* result */ js.Any, scala.Unit]): js.Promise[_] = js.native
   /**
            * This method fetches query data for a given query ID.
            * This method can be used when implementing a custom provider.
@@ -182,7 +182,7 @@ class Service ()
     params: js.Any,
     onResult: js.Function1[/* result */ js.Any, scala.Unit],
     onError: js.Function1[/* error */ js.Any, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
            * This method fetches statistical data for the Data Lens query (eg minimum and maximum values for the query metric).
            * It can be used to define visualization boundaries, scales and legends.
@@ -192,7 +192,7 @@ class Service ()
            * @param onError - Callback called on an unsuccessful request with the Error object
            * @returns - Response Promise
            */
-  def fetchQueryStats(queryId: java.lang.String, statsQuery: js.Any): stdLib.Promise[_] = js.native
+  def fetchQueryStats(queryId: java.lang.String, statsQuery: js.Any): js.Promise[_] = js.native
   /**
            * This method fetches statistical data for the Data Lens query (eg minimum and maximum values for the query metric).
            * It can be used to define visualization boundaries, scales and legends.
@@ -206,7 +206,7 @@ class Service ()
     queryId: java.lang.String,
     statsQuery: js.Any,
     onResult: js.Function1[/* result */ js.Any, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
            * This method fetches statistical data for the Data Lens query (eg minimum and maximum values for the query metric).
            * It can be used to define visualization boundaries, scales and legends.
@@ -221,7 +221,7 @@ class Service ()
     statsQuery: js.Any,
     onResult: js.Function1[/* result */ js.Any, scala.Unit],
     onError: js.Function1[/* error */ js.Any, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
            * This method makes an HTTP request to the Data Lens REST API.
            * It makes any CRUD request (GET, PUT, POST, DELETE).
@@ -235,7 +235,7 @@ class Service ()
            * @param onError - Callback called on an unsuccessful request with the Error object
            * @returns - Response Promise
            */
-  def request(method: java.lang.String, endpoint: java.lang.String): stdLib.Promise[_] = js.native
+  def request(method: java.lang.String, endpoint: java.lang.String): js.Promise[_] = js.native
   /**
            * This method makes an HTTP request to the Data Lens REST API.
            * It makes any CRUD request (GET, PUT, POST, DELETE).
@@ -249,7 +249,7 @@ class Service ()
            * @param onError - Callback called on an unsuccessful request with the Error object
            * @returns - Response Promise
            */
-  def request(method: java.lang.String, endpoint: java.lang.String, params: js.Any): stdLib.Promise[_] = js.native
+  def request(method: java.lang.String, endpoint: java.lang.String, params: js.Any): js.Promise[_] = js.native
   /**
            * This method makes an HTTP request to the Data Lens REST API.
            * It makes any CRUD request (GET, PUT, POST, DELETE).
@@ -263,7 +263,7 @@ class Service ()
            * @param onError - Callback called on an unsuccessful request with the Error object
            * @returns - Response Promise
            */
-  def request(method: java.lang.String, endpoint: java.lang.String, params: js.Any, body: js.Any): stdLib.Promise[_] = js.native
+  def request(method: java.lang.String, endpoint: java.lang.String, params: js.Any, body: js.Any): js.Promise[_] = js.native
   /**
            * This method makes an HTTP request to the Data Lens REST API.
            * It makes any CRUD request (GET, PUT, POST, DELETE).
@@ -283,7 +283,7 @@ class Service ()
     params: js.Any,
     body: js.Any,
     onResult: js.Function1[/* result */ js.Any, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
            * This method makes an HTTP request to the Data Lens REST API.
            * It makes any CRUD request (GET, PUT, POST, DELETE).
@@ -304,7 +304,7 @@ class Service ()
     body: js.Any,
     onResult: js.Function1[/* result */ js.Any, scala.Unit],
     onError: js.Function1[/* error */ js.Any, scala.Unit]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
            * Sets the access and refresh tokens used to authenticate all requests against the Data Lens REST API.
            * Use this method to implement custom authentication to the Data Lens REST API.

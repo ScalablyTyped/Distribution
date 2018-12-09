@@ -30,7 +30,7 @@ object runtimeResourceMod extends js.Object {
   ): scala.Unit = js.native
   def registerResourceOutputs(
     res: atPulumiPulumiLib.resourceMod.Resource,
-    outputs: stdLib.Promise[atPulumiPulumiLib.resourceMod.Inputs]
+    outputs: js.Promise[atPulumiPulumiLib.resourceMod.Inputs]
   ): scala.Unit = js.native
 }
 

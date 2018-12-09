@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Builder extends js.Object {
   def bind(values: js.Any*): Builder
-  def exec(): stdLib.Promise[js.Array[js.Object]]
+  def exec(): js.Promise[js.Array[js.Object]]
   def explain(): java.lang.String
   def toSql(): java.lang.String
 }

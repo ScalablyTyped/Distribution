@@ -12,7 +12,7 @@ trait Anon_GetDomain extends js.Object {
            * @param createOpts a hash of [inbound domain attributes]{@link https://developers.sparkpost.com/api/inbound-domains#header-inbound-domains-attributes}
            * @returns Promise void
            */
-  def create(createOpts: sparkpostLib.sparkpostMod.SparkPostNs.CreateOpts): stdLib.Promise[scala.Unit] = js.native
+  def create(createOpts: sparkpostLib.sparkpostMod.SparkPostNs.CreateOpts): js.Promise[scala.Unit] = js.native
   /**
            * Create an inbound domain by providing an inbound domains object as the POST request body.
            * @param createOpts a hash of [inbound domain attributes]{@link https://developers.sparkpost.com/api/inbound-domains#header-inbound-domains-attributes}
@@ -27,7 +27,7 @@ trait Anon_GetDomain extends js.Object {
            * @param domain Domain name
            * @returns Promise void
            */
-  def delete(domain: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def delete(domain: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
            * Delete an inbound domain by specifying its domain name in the URI path.
            * @param domain Domain name

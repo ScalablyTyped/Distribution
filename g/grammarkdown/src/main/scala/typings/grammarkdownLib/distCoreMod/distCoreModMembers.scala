@@ -34,13 +34,10 @@ object distCoreModMembers extends js.Object {
   def first[T](iterable: stdLib.Iterable[T]): js.UndefOr[T] = js.native
   def forEach[T, U](array: js.Array[T], cb: js.Function1[/* value */ T, js.UndefOr[U]]): js.UndefOr[U] = js.native
   def forEach[T, U](array: js.UndefOr[scala.Nothing], cb: js.Function1[/* value */ T, js.UndefOr[U]]): js.UndefOr[U] = js.native
-  def forEachPossiblyAsync[T, U](
-    iterable: stdLib.Iterable[T],
-    callback: js.Function1[/* value */ T, js.UndefOr[stdLib.Promise[U] | U]]
-  ): scala.Unit | stdLib.Promise[scala.Unit] = js.native
+  def forEachPossiblyAsync[T, U](iterable: stdLib.Iterable[T], callback: js.Function1[/* value */ T, js.UndefOr[js.Promise[U] | U]]): scala.Unit | js.Promise[scala.Unit] = js.native
   def isPromise[T](): /* is Promise */scala.Boolean = js.native
   def isPromise[T](value: T): /* is Promise */scala.Boolean = js.native
-  def isPromise[T](value: stdLib.Promise[T]): /* is Promise */scala.Boolean = js.native
+  def isPromise[T](value: js.Promise[T]): /* is Promise */scala.Boolean = js.native
   def last[T](): js.UndefOr[T] = js.native
   def last[T](iterable: js.Array[T]): js.UndefOr[T] = js.native
   def last[T](iterable: stdLib.Iterable[T]): js.UndefOr[T] = js.native
@@ -50,31 +47,28 @@ object distCoreModMembers extends js.Object {
   def only[T](): js.UndefOr[T] = js.native
   def only[T](iterable: js.Array[T]): js.UndefOr[T] = js.native
   def only[T](iterable: stdLib.Iterable[T]): js.UndefOr[T] = js.native
+  def pipe[T, U](result: T, next: js.Function1[(/* value */ T) | (/* value */ js.UndefOr[T]), U | js.Promise[U]]): U | js.Promise[U] = js.native
   def pipe[T, U](
-    result: T,
-    next: js.Function1[(/* value */ T) | (/* value */ js.UndefOr[T]), U | stdLib.Promise[U]]
-  ): U | stdLib.Promise[U] = js.native
+    result: js.Promise[T],
+    next: js.Function1[(/* value */ T) | (/* value */ js.UndefOr[T]), U | js.Promise[U]]
+  ): U | js.Promise[U] = js.native
   def pipe[T, U](
     result: js.UndefOr[scala.Nothing],
-    next: js.Function1[/* value */ js.UndefOr[T], U | stdLib.Promise[U]]
-  ): U | stdLib.Promise[U] = js.native
-  def pipe[T, U](
-    result: stdLib.Promise[T],
-    next: js.Function1[(/* value */ T) | (/* value */ js.UndefOr[T]), U | stdLib.Promise[U]]
-  ): U | stdLib.Promise[U] = js.native
+    next: js.Function1[/* value */ js.UndefOr[T], U | js.Promise[U]]
+  ): U | js.Promise[U] = js.native
   @JSName("pipe")
-  def pipe_TUUndefOr[T, U](result: T, next: js.Function1[/* value */ js.UndefOr[T], js.UndefOr[U | stdLib.Promise[U]]]): js.UndefOr[U | stdLib.Promise[U]] = js.native
+  def pipe_TUUndefOr[T, U](result: T, next: js.Function1[/* value */ js.UndefOr[T], js.UndefOr[U | js.Promise[U]]]): js.UndefOr[U | js.Promise[U]] = js.native
+  @JSName("pipe")
+  def pipe_TUUndefOr[T, U](
+    result: js.Promise[T],
+    next: js.Function1[/* value */ js.UndefOr[T], js.UndefOr[U | js.Promise[U]]]
+  ): js.UndefOr[U | js.Promise[U]] = js.native
   @JSName("pipe")
   def pipe_TUUndefOr[T, U](
     result: js.UndefOr[scala.Nothing],
-    next: js.Function1[/* value */ js.UndefOr[T], js.UndefOr[U | stdLib.Promise[U]]]
-  ): js.UndefOr[U | stdLib.Promise[U]] = js.native
-  @JSName("pipe")
-  def pipe_TUUndefOr[T, U](
-    result: stdLib.Promise[T],
-    next: js.Function1[/* value */ js.UndefOr[T], js.UndefOr[U | stdLib.Promise[U]]]
-  ): js.UndefOr[U | stdLib.Promise[U]] = js.native
-  def promiseFinally[T](promise: stdLib.Promise[T], onFinally: js.Function0[scala.Unit]): stdLib.Promise[T] = js.native
+    next: js.Function1[/* value */ js.UndefOr[T], js.UndefOr[U | js.Promise[U]]]
+  ): js.UndefOr[U | js.Promise[U]] = js.native
+  def promiseFinally[T](promise: js.Promise[T], onFinally: js.Function0[scala.Unit]): js.Promise[T] = js.native
   def stableSort[T](array: js.Array[T], comparer: js.Function2[/* a */ T, /* b */ T, scala.Double]): js.Array[T] = js.native
 }
 

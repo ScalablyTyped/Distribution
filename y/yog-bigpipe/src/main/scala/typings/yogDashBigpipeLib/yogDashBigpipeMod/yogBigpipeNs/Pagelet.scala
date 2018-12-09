@@ -38,7 +38,7 @@ trait Pagelet
   def addStyles(css: java.lang.String): scala.Unit = js.native
   def addStyles(css: js.Array[java.lang.String]): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
-  def start(provider: stdLib.Promise[_], sync: scala.Boolean): scala.Unit = js.native
+  def start(provider: js.Promise[_], sync: scala.Boolean): scala.Unit = js.native
   def toJson(): PageletData = js.native
 }
 

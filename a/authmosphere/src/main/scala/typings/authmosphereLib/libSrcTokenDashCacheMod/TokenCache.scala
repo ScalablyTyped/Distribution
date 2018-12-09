@@ -54,7 +54,7 @@ class TokenCache protected () extends js.Object {
        * @param tokenName
        * @returns {Promise<Token>}
        */
-  def get(tokenName: java.lang.String): stdLib.Promise[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]] = js.native
+  def get(tokenName: java.lang.String): js.Promise[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]] = js.native
   /**
        * Forces the cache to delete present tokens and request new ones.
        * Will resolve with an hashmap of the newly requested tokens if the request was successful.
@@ -62,7 +62,7 @@ class TokenCache protected () extends js.Object {
        *
        * @returns {Promise<Token>}
        */
-  def refreshAllTokens(): stdLib.Promise[TokenMap] = js.native
+  def refreshAllTokens(): js.Promise[TokenMap] = js.native
   /**
        * Forces the cache to delete present token for the given name.
        * Will resolve the newly requested token if the request was successful.
@@ -71,7 +71,7 @@ class TokenCache protected () extends js.Object {
        * @param tokenName
        * @returns {Promise<Token>}
        */
-  def refreshToken(tokenName: java.lang.String): stdLib.Promise[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]] = js.native
+  def refreshToken(tokenName: java.lang.String): js.Promise[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]] = js.native
   /**
        * The resolveAccessTokenFactory function, creates a function,
        * which resolves a specific access_token.
@@ -79,6 +79,6 @@ class TokenCache protected () extends js.Object {
        * @param {string} The key configured on the tokenCache instance
        * @return {Promise<string>} the resolved access_token
        */
-  def resolveAccessTokenFactory(key: java.lang.String): js.Function0[stdLib.Promise[java.lang.String]] = js.native
+  def resolveAccessTokenFactory(key: java.lang.String): js.Function0[js.Promise[java.lang.String]] = js.native
 }
 

@@ -40,6 +40,6 @@ trait ServerCache extends js.Object {
        * Note that if the server has been initialized or started, the cache will be automatically started to match the state of any other provisioned server cache.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-servercacheprovisionoptions)
        */
-  def provision(options: ServerOptionsCache): stdLib.Promise[scala.Unit] = js.native
+  def provision(options: ServerOptionsCache): js.Promise[scala.Unit] = js.native
 }
 

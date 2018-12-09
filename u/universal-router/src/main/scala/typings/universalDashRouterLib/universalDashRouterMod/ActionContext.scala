@@ -35,18 +35,18 @@ trait ActionContext[C /* <: Context */, R] extends PathnameContext {
   /**
        * Middleware style function which can continue resolving.
        */
-  def next(): stdLib.Promise[R] = js.native
+  def next(): js.Promise[R] = js.native
   /**
        * Middleware style function which can continue resolving.
        */
-  def next(resume: scala.Boolean): stdLib.Promise[R] = js.native
+  def next(resume: scala.Boolean): js.Promise[R] = js.native
   /**
        * Middleware style function which can continue resolving.
        */
-  def next(resume: scala.Boolean, parent: Route[_, _]): stdLib.Promise[R] = js.native
+  def next(resume: scala.Boolean, parent: Route[_, _]): js.Promise[R] = js.native
   /**
        * Middleware style function which can continue resolving.
        */
-  def next(resume: scala.Boolean, parent: Route[_, _], prevResult: js.Any): stdLib.Promise[R] = js.native
+  def next(resume: scala.Boolean, parent: Route[_, _], prevResult: js.Any): js.Promise[R] = js.native
 }
 

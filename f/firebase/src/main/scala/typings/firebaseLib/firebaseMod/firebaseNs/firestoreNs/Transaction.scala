@@ -20,7 +20,7 @@ trait Transaction extends js.Object {
        * @param documentRef A reference to the document to be read.
        * @return A DocumentSnapshot for the read data.
        */
-  def get(documentRef: DocumentReference): stdLib.Promise[DocumentSnapshot] = js.native
+  def get(documentRef: DocumentReference): js.Promise[DocumentSnapshot] = js.native
   /**
        * Writes to the document referred to by the provided `DocumentReference`.
        * If the document does not exist yet, it will be created. If you pass

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait ServerYar extends js.Object {
-  def revoke(id: catboxLib.catboxMod.Id): stdLib.Promise[scala.Unit]
+  def revoke(id: catboxLib.catboxMod.Id): js.Promise[scala.Unit]
 }
 

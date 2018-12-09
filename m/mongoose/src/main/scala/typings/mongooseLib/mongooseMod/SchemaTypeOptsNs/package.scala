@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SchemaTypeOptsNs {
-  type AsyncPromiseValidationFn[T] = js.Function1[/* value */ T, stdLib.Promise[scala.Boolean]]
+  type AsyncPromiseValidationFn[T] = js.Function1[/* value */ T, js.Promise[scala.Boolean]]
   type AsyncValidateFn[T] = js.Function2[
     /* value */ T, 
     /* done */ js.Function1[/* result */ scala.Boolean, scala.Unit], 

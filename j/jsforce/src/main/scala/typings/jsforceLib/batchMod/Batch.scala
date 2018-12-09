@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Batch ()
   extends nodeLib.streamMod.Writable {
-  def check(): stdLib.Promise[BatchInfo] = js.native
-  def check(callback: js.Function1[/* batchInfo */ BatchInfo, scala.Unit]): stdLib.Promise[BatchInfo] = js.native
+  def check(): js.Promise[BatchInfo] = js.native
+  def check(callback: js.Function1[/* batchInfo */ BatchInfo, scala.Unit]): js.Promise[BatchInfo] = js.native
   def execute(): Batch = js.native
   def execute(input: java.lang.String): Batch = js.native
   def execute(
@@ -40,13 +40,13 @@ class Batch ()
     ]
   ): Batch = js.native
   def poll(interval: scala.Double, timeout: scala.Double): scala.Unit = js.native
-  def retrieve(): stdLib.Promise[
+  def retrieve(): js.Promise[
     js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo]
   ] = js.native
-  def retrieve(callback: js.Function1[/* batchInfo */ BatchInfo, scala.Unit]): stdLib.Promise[
+  def retrieve(callback: js.Function1[/* batchInfo */ BatchInfo, scala.Unit]): js.Promise[
     js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo]
   ] = js.native
-  def `then`(): stdLib.Promise[_] = js.native
+  def `then`(): js.Promise[_] = js.native
   def thenAll(callback: js.Function1[/* data */ js.Any, scala.Unit]): scala.Unit = js.native
 }
 

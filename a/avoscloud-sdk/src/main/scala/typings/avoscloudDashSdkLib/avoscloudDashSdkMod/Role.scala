@@ -23,5 +23,7 @@ import scala.scalajs.js.annotation._
 class Role protected ()
   extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Role {
   def this(name: java.lang.String, acl: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.ACL) = this()
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 

@@ -17,13 +17,13 @@ object Object extends js.Object {
     repo: nodegitLib.repositoryMod.Repository,
     id: nodegitLib.oidMod.Oid,
     `type`: nodegitLib.objectMod.ObjectNs.TYPE
-  ): stdLib.Promise[js.Object] = js.native
+  ): js.Promise[nodegitLib.objectMod.Object] = js.native
   def lookupPrefix(
     repo: nodegitLib.repositoryMod.Repository,
     id: nodegitLib.oidMod.Oid,
     len: scala.Double,
     `type`: nodegitLib.objectMod.ObjectNs.TYPE
-  ): stdLib.Promise[js.Object] = js.native
+  ): js.Promise[nodegitLib.objectMod.Object] = js.native
   def size(`type`: nodegitLib.objectMod.ObjectNs.TYPE): scala.Double = js.native
   def string2Type(str: java.lang.String): nodegitLib.objectMod.ObjectNs.TYPE = js.native
   def type2String(`type`: nodegitLib.objectMod.ObjectNs.TYPE): java.lang.String = js.native

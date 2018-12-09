@@ -58,6 +58,6 @@ trait SettingType[TItem] extends js.Object {
   /**
        * Called after each keystroke to get data what the suggestion list should display (array or promise resolving array).
        */
-  def dataProvider(token: java.lang.String): stdLib.Promise[js.Array[TItem]] | js.Array[TItem] = js.native
+  def dataProvider(token: java.lang.String): js.Promise[js.Array[TItem]] | js.Array[TItem] = js.native
 }
 

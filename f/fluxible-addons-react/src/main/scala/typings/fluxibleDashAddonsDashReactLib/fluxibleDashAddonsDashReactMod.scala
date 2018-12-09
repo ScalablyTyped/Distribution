@@ -11,7 +11,7 @@ object fluxibleDashAddonsDashReactMod extends js.Object {
   def connectToStores(
     Component: ScalablyTyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
-      reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+      reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ],
     stores: js.Array[
       (ScalablyTyped.runtime.Instantiable1[
@@ -22,12 +22,12 @@ object fluxibleDashAddonsDashReactMod extends js.Object {
     getStateFromStores: js.Function2[/* context */ fluxibleLib.fluxibleMod.ComponentContext, /* props */ js.Any, _]
   ): ScalablyTyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
-    reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+    reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native
   def connectToStores(
     Component: ScalablyTyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
-      reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+      reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ],
     stores: js.Array[
       (ScalablyTyped.runtime.Instantiable1[
@@ -39,26 +39,26 @@ object fluxibleDashAddonsDashReactMod extends js.Object {
     customContextTypes: js.Any
   ): ScalablyTyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
-    reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+    reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native
   def provideContext(
     Component: ScalablyTyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
-      reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+      reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ]
   ): ScalablyTyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
-    reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+    reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native
   def provideContext(
     Component: ScalablyTyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
-      reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+      reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ],
     customContextTypes: js.Any
   ): ScalablyTyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
-    reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+    reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native
 }
 

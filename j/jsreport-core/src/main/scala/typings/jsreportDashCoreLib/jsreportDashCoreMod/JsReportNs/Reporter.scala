@@ -19,8 +19,8 @@ trait Reporter extends js.Object {
   var version: java.lang.String = js.native
   def createListenerCollection(): ListenerCollection = js.native
   def discover(): Reporter = js.native
-  def init(): stdLib.Promise[Reporter] = js.native
-  def render(options: stdLib.Partial[Request]): stdLib.Promise[Response] = js.native
+  def init(): js.Promise[Reporter] = js.native
+  def render(options: stdLib.Partial[Request]): js.Promise[Response] = js.native
   def use(extension: Extension): Reporter = js.native
   def use(extension: ExtensionDefinition): Reporter = js.native
 }

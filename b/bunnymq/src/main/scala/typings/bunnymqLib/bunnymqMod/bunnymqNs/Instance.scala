@@ -15,13 +15,13 @@ trait Instance extends js.Object {
            *
            * @return The consumer response.
            */
-  def publish[T](queueName: java.lang.String, message: js.Any): stdLib.Promise[T] = js.native
+  def publish[T](queueName: java.lang.String, message: js.Any): js.Promise[T] = js.native
   /**
            * Publisher to send messages to a named queue.
            *
            * @return The consumer response.
            */
-  def publish[T](queueName: java.lang.String, message: js.Any, options: ProducerOptions): stdLib.Promise[T] = js.native
+  def publish[T](queueName: java.lang.String, message: js.Any, options: ProducerOptions): js.Promise[T] = js.native
   /**
            * Subscriber to handle messages from a named queue.
            *

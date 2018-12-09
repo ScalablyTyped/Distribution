@@ -14,20 +14,20 @@ class MetadataStore () extends js.Object {
   def addDataService(dataService: DataService, shouldOverwrite: scala.Boolean): scala.Unit = js.native
   def addEntityType(structuralType: IStructuralType): scala.Unit = js.native
   def exportMetadata(): java.lang.String = js.native
-  def fetchMetadata(dataService: DataService): stdLib.Promise[_] = js.native
-  def fetchMetadata(dataService: DataService, callback: js.Function1[/* data */ js.Any, scala.Unit]): stdLib.Promise[_] = js.native
+  def fetchMetadata(dataService: DataService): js.Promise[_] = js.native
+  def fetchMetadata(dataService: DataService, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Promise[_] = js.native
   def fetchMetadata(
     dataService: DataService,
     callback: js.Function1[/* data */ js.Any, scala.Unit],
     errorCallback: breezeLib.breezeNs.coreNs.ErrorCallback
-  ): stdLib.Promise[_] = js.native
-  def fetchMetadata(dataService: java.lang.String): stdLib.Promise[_] = js.native
-  def fetchMetadata(dataService: java.lang.String, callback: js.Function1[/* data */ js.Any, scala.Unit]): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
+  def fetchMetadata(dataService: java.lang.String): js.Promise[_] = js.native
+  def fetchMetadata(dataService: java.lang.String, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Promise[_] = js.native
   def fetchMetadata(
     dataService: java.lang.String,
     callback: js.Function1[/* data */ js.Any, scala.Unit],
     errorCallback: breezeLib.breezeNs.coreNs.ErrorCallback
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   def getDataService(serviceName: java.lang.String): DataService = js.native
   def getEntityType(entityTypeName: java.lang.String): IStructuralType = js.native
   def getEntityType(entityTypeName: java.lang.String, okIfNotFound: scala.Boolean): IStructuralType = js.native

@@ -12,6 +12,6 @@ class AuthConnectionClient protected ()
      with ionicLib.definitionsMod.ResourceClientLoad[AuthConnection] {
   def this(e: AuthClientDeps) = this()
   val e: AuthClientDeps = js.native
-  def load(email: java.lang.String): stdLib.Promise[AuthConnection] = js.native
+  def load(email: java.lang.String): js.Promise[AuthConnection] = js.native
 }
 

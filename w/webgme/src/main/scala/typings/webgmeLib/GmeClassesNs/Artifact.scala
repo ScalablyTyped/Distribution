@@ -38,7 +38,7 @@ trait Artifact extends js.Object {
   @JSName("save")
   var save_Original: webgmeLib.Anon_CallbackMessage = js.native
   /** Adds content to the artifact as a file. */
-  def addFile(name: webgmeLib.GmeCommonNs.Name, content: webgmeLib.BlobsNs.ObjectBlob): stdLib.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  def addFile(name: webgmeLib.GmeCommonNs.Name, content: webgmeLib.BlobsNs.ObjectBlob): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   /** Adds content to the artifact as a file. */
   def addFile(
     name: webgmeLib.GmeCommonNs.Name,
@@ -46,7 +46,7 @@ trait Artifact extends js.Object {
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]
   ): scala.Unit = js.native
   /** Adds files as soft-link. */
-  def addFileAsSoftLink(name: webgmeLib.GmeCommonNs.Name, content: webgmeLib.BlobsNs.ObjectBlob): stdLib.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  def addFileAsSoftLink(name: webgmeLib.GmeCommonNs.Name, content: webgmeLib.BlobsNs.ObjectBlob): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   /** Adds files as soft-link. */
   def addFileAsSoftLink(
     name: webgmeLib.GmeCommonNs.Name,
@@ -54,27 +54,27 @@ trait Artifact extends js.Object {
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]
   ): scala.Unit = js.native
   /** Adds multiple files. */
-  def addFiles(files: ScalablyTyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob]): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] | stdLib.Promise[java.lang.String] = js.native
+  def addFiles(files: ScalablyTyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob]): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] | js.Promise[java.lang.String] = js.native
   /** Adds multiple files. */
   def addFiles(
     files: ScalablyTyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob],
     callback: webgmeLib.GmeCommonNs.ResultCallback[js.Array[webgmeLib.GmeCommonNs.MetadataHash]]
   ): scala.Unit = js.native
   /** Adds multiple files as soft-links. */
-  def addFilesAsSoftLinks(files: ScalablyTyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob]): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
+  def addFilesAsSoftLinks(files: ScalablyTyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob]): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
   /** Adds multiple files as soft-links. */
   def addFilesAsSoftLinks(
     files: ScalablyTyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob],
     callback: webgmeLib.GmeCommonNs.ResultCallback[js.Array[webgmeLib.GmeCommonNs.MetadataHash]]
   ): scala.Unit = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
-  def addMetadataHash(name: webgmeLib.GmeCommonNs.Name, metadataHash: webgmeLib.GmeCommonNs.MetadataHash): stdLib.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  def addMetadataHash(name: webgmeLib.GmeCommonNs.Name, metadataHash: webgmeLib.GmeCommonNs.MetadataHash): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
   def addMetadataHash(
     name: webgmeLib.GmeCommonNs.Name,
     metadataHash: webgmeLib.GmeCommonNs.MetadataHash,
     size: scala.Double
-  ): stdLib.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  ): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
   def addMetadataHash(
     name: webgmeLib.GmeCommonNs.Name,
@@ -83,20 +83,20 @@ trait Artifact extends js.Object {
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]
   ): scala.Unit = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
-  def addMetadataHash(objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String]): stdLib.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  def addMetadataHash(objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
   def addMetadataHash(
     objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String],
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]
   ): scala.Unit = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
-  def addMetadataHashes(name: webgmeLib.GmeCommonNs.Name, metadataHash: webgmeLib.GmeCommonNs.MetadataHash): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
+  def addMetadataHashes(name: webgmeLib.GmeCommonNs.Name, metadataHash: webgmeLib.GmeCommonNs.MetadataHash): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
   def addMetadataHashes(
     name: webgmeLib.GmeCommonNs.Name,
     metadataHash: webgmeLib.GmeCommonNs.MetadataHash,
     size: scala.Double
-  ): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
+  ): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
   def addMetadataHashes(
     name: webgmeLib.GmeCommonNs.Name,
@@ -105,14 +105,14 @@ trait Artifact extends js.Object {
     callback: webgmeLib.GmeCommonNs.ResultCallback[js.Array[webgmeLib.GmeCommonNs.MetadataHash]]
   ): scala.Unit = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
-  def addMetadataHashes(objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String]): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
+  def addMetadataHashes(objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
   def addMetadataHashes(
     objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String],
     callback: webgmeLib.GmeCommonNs.ResultCallback[js.Array[webgmeLib.GmeCommonNs.MetadataHash]]
   ): scala.Unit = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
-  def addObjectHash(name: webgmeLib.GmeCommonNs.Name, metadataHash: webgmeLib.GmeCommonNs.MetadataHash): stdLib.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  def addObjectHash(name: webgmeLib.GmeCommonNs.Name, metadataHash: webgmeLib.GmeCommonNs.MetadataHash): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
   def addObjectHash(
     name: webgmeLib.GmeCommonNs.Name,
@@ -120,17 +120,17 @@ trait Artifact extends js.Object {
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]
   ): scala.Unit = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
-  def addObjectHashes(objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String]): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
+  def addObjectHashes(objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
   def addObjectHashes(
     objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String],
     callback: webgmeLib.GmeCommonNs.ResultCallback[js.Array[webgmeLib.GmeCommonNs.MetadataHash]]
   ): scala.Unit = js.native
   /** Saves this artifact and uploads the metadata to the server's storage. */
-  def save(): stdLib.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  def save(): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   /** Saves this artifact and uploads the metadata to the server's storage. */
   def save(callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]): scala.Unit = js.native
   /** Saves this artifact and uploads the metadata to the server's storage. */
-  def save(message: java.lang.String): stdLib.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  def save(message: java.lang.String): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
 }
 

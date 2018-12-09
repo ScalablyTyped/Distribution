@@ -25,7 +25,7 @@ trait PollyConfig extends js.Object {
   var recordIfExpired: js.UndefOr[scala.Boolean] = js.undefined
   var recordIfMissing: js.UndefOr[scala.Boolean] = js.undefined
   var timing: js.UndefOr[
-    (js.Function1[/* ms */ scala.Double, stdLib.Promise[scala.Unit]]) | js.Function0[stdLib.Promise[scala.Unit]]
+    (js.Function1[/* ms */ scala.Double, js.Promise[scala.Unit]]) | js.Function0[js.Promise[scala.Unit]]
   ] = js.undefined
 }
 

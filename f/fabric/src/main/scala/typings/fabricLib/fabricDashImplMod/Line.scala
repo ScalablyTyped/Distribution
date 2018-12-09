@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Line")
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.ILineOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+@JSImport("fabric/fabric-impl", "Line")
 @js.native
-class Line () extends ILineOptions {
+class Line () extends Object {
   /**
   	 * Constructor
   	 * @param [points] Array of points
@@ -21,41 +21,9 @@ class Line () extends ILineOptions {
   	 * @param [options] Options object
   	 */
   def this(points: js.Array[scala.Double], objObjects: IObjectOptions) = this()
-  /**
-  	 * x value or first line edge
-  	 */
-  /* CompleteClass */
-  override var x1: scala.Double = js.native
-  /**
-  	 * x value or second line edge
-  	 */
-  /* CompleteClass */
-  override var x2: scala.Double = js.native
-  /**
-  	 * y value or first line edge
-  	 */
-  /* CompleteClass */
-  override var y1: scala.Double = js.native
-  /**
-  	 * y value or second line edge
-  	 */
-  /* CompleteClass */
-  override var y2: scala.Double = js.native
-  /**
-  	 * Returns complexity of an instance
-  	 * @return complexity
-  	 */
-  def complexity(): scala.Double = js.native
   def initialize(): Line = js.native
   def initialize(points: js.Array[scala.Double]): Line = js.native
   def initialize(points: js.Array[scala.Double], options: ILineOptions): Line = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @methd toObject
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Returns SVG representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
@@ -70,8 +38,7 @@ class Line () extends ILineOptions {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Line")
+@JSImport("fabric/fabric-impl", "Line")
 @js.native
 object Line extends js.Object {
   var ATTRIBUTE_NAMES: js.Array[java.lang.String] = js.native

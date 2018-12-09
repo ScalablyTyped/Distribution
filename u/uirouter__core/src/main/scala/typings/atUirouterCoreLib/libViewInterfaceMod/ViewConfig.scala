@@ -15,6 +15,6 @@ trait ViewConfig extends js.Object {
   /** The normalized view declaration from [[State.views]] */
   var viewDecl: atUirouterCoreLib.libStateInterfaceMod._ViewDeclaration
   /** Fetches templates, runs dynamic (controller|template)Provider code, lazy loads Components, etc */
-  def load(): stdLib.Promise[ViewConfig]
+  def load(): js.Promise[ViewConfig]
 }
 

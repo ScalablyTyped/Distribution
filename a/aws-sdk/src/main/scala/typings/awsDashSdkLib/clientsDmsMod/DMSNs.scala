@@ -13,7 +13,7 @@ object DMSNs extends js.Object {
     /**
          * The name of the AWS DMS quota for this AWS account.
          */
-    var AccountQuotaName: js.UndefOr[java.lang.String] = js.undefined
+    var AccountQuotaName: js.UndefOr[String] = js.undefined
     /**
          * The maximum allowed value for the quota.
          */
@@ -29,7 +29,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the AWS DMS resource the tag is to be added to. AWS DMS resources include a replication instance, endpoint, and a replication task.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
     /**
          * The tag to be assigned to the DMS resource.
          */
@@ -44,7 +44,7 @@ object DMSNs extends js.Object {
     /**
          * The name of the availability zone.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -52,7 +52,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the certificate.
          */
-    var CertificateArn: js.UndefOr[java.lang.String] = js.undefined
+    var CertificateArn: js.UndefOr[String] = js.undefined
     /**
          * The date that the certificate was created.
          */
@@ -60,15 +60,15 @@ object DMSNs extends js.Object {
     /**
          * The customer-assigned name of the certificate. Valid characters are A-z and 0-9.
          */
-    var CertificateIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var CertificateIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The owner of the certificate.
          */
-    var CertificateOwner: js.UndefOr[java.lang.String] = js.undefined
+    var CertificateOwner: js.UndefOr[String] = js.undefined
     /**
          * The contents of the .pem X.509 certificate file for the certificate.
          */
-    var CertificatePem: js.UndefOr[java.lang.String] = js.undefined
+    var CertificatePem: js.UndefOr[String] = js.undefined
     /**
          * The location of the imported Oracle Wallet certificate for use with SSL.
          */
@@ -80,7 +80,7 @@ object DMSNs extends js.Object {
     /**
          * The signing algorithm for the certificate.
          */
-    var SigningAlgorithm: js.UndefOr[java.lang.String] = js.undefined
+    var SigningAlgorithm: js.UndefOr[String] = js.undefined
     /**
          * The beginning date that the certificate is valid.
          */
@@ -104,27 +104,27 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var EndpointArn: js.UndefOr[java.lang.String] = js.undefined
+    var EndpointArn: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the endpoint. Identifiers must begin with a letter; must contain only ASCII letters, digits, and hyphens; and must not end with a hyphen or contain two consecutive hyphens.
          */
-    var EndpointIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var EndpointIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The error message when the connection last failed.
          */
-    var LastFailureMessage: js.UndefOr[java.lang.String] = js.undefined
+    var LastFailureMessage: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The replication instance identifier. This parameter is stored as a lowercase string.
          */
-    var ReplicationInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The connection status.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -132,11 +132,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the certificate.
          */
-    var CertificateArn: js.UndefOr[java.lang.String] = js.undefined
+    var CertificateArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the endpoint database.
          */
-    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    var DatabaseName: js.UndefOr[String] = js.undefined
     /**
          * The settings in JSON format for the DMS transfer type of source endpoint.  Possible attributes include the following:    serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.    bucketName - The name of the S3 bucket to use.    compressionType - An optional parameter to use GZIP to compress the target files. To use GZIP, set this value to NONE (the default). To keep the files uncompressed, don't use this value.    Shorthand syntax for these attributes is as follows: ServiceAccessRoleArn=string,BucketName=string,CompressionType=string  JSON syntax for these attributes is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
          */
@@ -152,7 +152,7 @@ object DMSNs extends js.Object {
     /**
          * The database endpoint identifier. Identifiers must begin with a letter; must contain only ASCII letters, digits, and hyphens; and must not end with a hyphen or contain two consecutive hyphens.
          */
-    var EndpointIdentifier: java.lang.String
+    var EndpointIdentifier: String
     /**
          * The type of endpoint.
          */
@@ -160,15 +160,15 @@ object DMSNs extends js.Object {
     /**
          * The type of engine for the endpoint. Valid values, depending on the EndPointType value, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
          */
-    var EngineName: java.lang.String
+    var EngineName: String
     /**
          * The external table definition. 
          */
-    var ExternalTableDefinition: js.UndefOr[java.lang.String] = js.undefined
+    var ExternalTableDefinition: js.UndefOr[String] = js.undefined
     /**
          * Additional attributes associated with the connection.
          */
-    var ExtraConnectionAttributes: js.UndefOr[java.lang.String] = js.undefined
+    var ExtraConnectionAttributes: js.UndefOr[String] = js.undefined
     /**
          * Settings in JSON format for the target Amazon Kinesis Data Streams endpoint. For more information about the available settings, see Using Object Mapping to Migrate Data to a Kinesis Data Stream in the AWS Database Migration User Guide. 
          */
@@ -176,7 +176,7 @@ object DMSNs extends js.Object {
     /**
          * The AWS KMS key identifier to use to encrypt the connection parameters. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * Settings in JSON format for the source MongoDB endpoint. For more information about the available settings, see the configuration properties section in  Using MongoDB as a Target for AWS Database Migration Service in the AWS Database Migration Service User Guide. 
          */
@@ -196,11 +196,11 @@ object DMSNs extends js.Object {
     /**
          * The name of the server where the endpoint database resides.
          */
-    var ServerName: js.UndefOr[java.lang.String] = js.undefined
+    var ServerName: js.UndefOr[String] = js.undefined
     /**
          *  The Amazon Resource Name (ARN) for the service access role that you want to use to create the endpoint. 
          */
-    var ServiceAccessRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The Secure Sockets Layer (SSL) mode to use for the SSL connection. The SSL mode can be one of four values: none, require, verify-ca, verify-full. The default value is none.
          */
@@ -212,7 +212,7 @@ object DMSNs extends js.Object {
     /**
          * The user name to be used to log in to the endpoint database.
          */
-    var Username: js.UndefOr[java.lang.String] = js.undefined
+    var Username: js.UndefOr[String] = js.undefined
   }
   
   
@@ -236,7 +236,7 @@ object DMSNs extends js.Object {
     /**
          *  The Amazon Resource Name (ARN) of the Amazon SNS topic created for event notification. The ARN is created by Amazon SNS when you create a topic and subscribe to it. 
          */
-    var SnsTopicArn: java.lang.String
+    var SnsTopicArn: String
     /**
          *  The list of identifiers of the event sources for which events will be returned. If not specified, then all sources are included in the response. An identifier must begin with a letter and must contain only ASCII letters, digits, and hyphens; it cannot end with a hyphen or contain two consecutive hyphens. 
          */
@@ -244,11 +244,11 @@ object DMSNs extends js.Object {
     /**
          *  The type of AWS DMS resource that generates the events. For example, if you want to be notified of events generated by a replication instance, you set this parameter to replication-instance. If this value is not specified, all events are returned.  Valid values: replication-instance | migration-task
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
     /**
          * The name of the AWS DMS event notification subscription.  Constraints: The name must be less than 255 characters. 
          */
-    var SubscriptionName: java.lang.String
+    var SubscriptionName: String
     /**
          * A tag to be attached to the event subscription.
          */
@@ -276,19 +276,19 @@ object DMSNs extends js.Object {
     /**
          * The EC2 Availability Zone that the replication instance will be created in. Default: A random, system-chosen Availability Zone in the endpoint's region.  Example: us-east-1d 
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * A list of DNS name servers supported for the replication instance.
          */
-    var DnsNameServers: js.UndefOr[java.lang.String] = js.undefined
+    var DnsNameServers: js.UndefOr[String] = js.undefined
     /**
          * The engine version number of the replication instance.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          *  Specifies if the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
          */
@@ -296,7 +296,7 @@ object DMSNs extends js.Object {
     /**
          * The weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).  Format: ddd:hh24:mi-ddd:hh24:mi  Default: A 30-minute window selected at random from an 8-hour block of time per region, occurring on a random day of the week. Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun Constraints: Minimum 30-minute window.
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          *  Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address. The default value is true. 
          */
@@ -304,15 +304,15 @@ object DMSNs extends js.Object {
     /**
          * The compute and memory capacity of the replication instance as specified by the replication instance class.  Valid Values: dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge  
          */
-    var ReplicationInstanceClass: java.lang.String
+    var ReplicationInstanceClass: String
     /**
          * The replication instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: myrepinstance 
          */
-    var ReplicationInstanceIdentifier: java.lang.String
+    var ReplicationInstanceIdentifier: String
     /**
          * A subnet group to associate with the replication instance.
          */
-    var ReplicationSubnetGroupIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationSubnetGroupIdentifier: js.UndefOr[String] = js.undefined
     /**
          * Tags to be associated with the replication instance.
          */
@@ -336,11 +336,11 @@ object DMSNs extends js.Object {
     /**
          * The description for the subnet group.
          */
-    var ReplicationSubnetGroupDescription: java.lang.String
+    var ReplicationSubnetGroupDescription: String
     /**
          * The name for the replication subnet group. This value is stored as a lowercase string. Constraints: Must contain no more than 255 alphanumeric characters, periods, spaces, underscores, or hyphens. Must not be "default". Example: mySubnetgroup 
          */
-    var ReplicationSubnetGroupIdentifier: java.lang.String
+    var ReplicationSubnetGroupIdentifier: String
     /**
          * The EC2 subnet IDs for the subnet group.
          */
@@ -364,7 +364,7 @@ object DMSNs extends js.Object {
     /**
          * Indicates when you want a change data capture (CDC) operation to start. Use either CdcStartPosition or CdcStartTime to specify when you want a CDC operation to start. Specifying both values results in an error.  The value can be in date, checkpoint, or LSN/SCN format. Date Example: --cdc-start-position “2018-03-08T12:12:12” Checkpoint Example: --cdc-start-position "checkpoint:V1#27#mysql-bin-changelog.157832:1975:-1:2002:677883278264080:mysql-bin-changelog.157832:1876#0#0#*#0#93" LSN Example: --cdc-start-position “mysql-bin-changelog.000024:373”
          */
-    var CdcStartPosition: js.UndefOr[java.lang.String] = js.undefined
+    var CdcStartPosition: js.UndefOr[String] = js.undefined
     /**
          * Indicates the start time for a change data capture (CDC) operation. Use either CdcStartTime or CdcStartPosition to specify when you want a CDC operation to start. Specifying both values results in an error. Timestamp Example: --cdc-start-time “2018-03-08T12:12:12”
          */
@@ -372,7 +372,7 @@ object DMSNs extends js.Object {
     /**
          * Indicates when you want a change data capture (CDC) operation to stop. The value can be either server time or commit time. Server time example: --cdc-stop-position “server_time:3018-02-09T12:12:12” Commit time example: --cdc-stop-position “commit_time: 3018-02-09T12:12:12 “
          */
-    var CdcStopPosition: js.UndefOr[java.lang.String] = js.undefined
+    var CdcStopPosition: js.UndefOr[String] = js.undefined
     /**
          * The migration type.
          */
@@ -380,23 +380,23 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: java.lang.String
+    var ReplicationInstanceArn: String
     /**
          * The replication task identifier. Constraints:   Must contain from 1 to 255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
          */
-    var ReplicationTaskIdentifier: java.lang.String
+    var ReplicationTaskIdentifier: String
     /**
          * Settings for the task, such as target metadata settings. For a complete list of task settings, see Task Settings for AWS Database Migration Service Tasks in the AWS Database Migration User Guide. 
          */
-    var ReplicationTaskSettings: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskSettings: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var SourceEndpointArn: java.lang.String
+    var SourceEndpointArn: String
     /**
          * When using the AWS CLI or boto3, provide the path of the JSON file that contains the table mappings. Precede the path with "file://". When working with the DMS API, provide the JSON as the parameter value. For example, --table-mappings file://mappingfile.json
          */
-    var TableMappings: java.lang.String
+    var TableMappings: String
     /**
          * Tags to be added to the replication instance.
          */
@@ -404,7 +404,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var TargetEndpointArn: java.lang.String
+    var TargetEndpointArn: String
   }
   
   
@@ -420,7 +420,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the deleted certificate.
          */
-    var CertificateArn: java.lang.String
+    var CertificateArn: String
   }
   
   
@@ -436,7 +436,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var EndpointArn: java.lang.String
+    var EndpointArn: String
   }
   
   
@@ -452,7 +452,7 @@ object DMSNs extends js.Object {
     /**
          * The name of the DMS event notification subscription to be deleted.
          */
-    var SubscriptionName: java.lang.String
+    var SubscriptionName: String
   }
   
   
@@ -468,7 +468,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication instance to be deleted.
          */
-    var ReplicationInstanceArn: java.lang.String
+    var ReplicationInstanceArn: String
   }
   
   
@@ -484,7 +484,7 @@ object DMSNs extends js.Object {
     /**
          * The subnet group name of the replication instance.
          */
-    var ReplicationSubnetGroupIdentifier: java.lang.String
+    var ReplicationSubnetGroupIdentifier: String
   }
   
   
@@ -495,7 +495,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication task to be deleted.
          */
-    var ReplicationTaskArn: java.lang.String
+    var ReplicationTaskArn: String
   }
   
   
@@ -526,7 +526,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 10
          */
@@ -542,7 +542,7 @@ object DMSNs extends js.Object {
     /**
          * The pagination token.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -554,7 +554,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -570,7 +570,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -582,7 +582,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -594,7 +594,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The type of endpoints that are supported.
          */
@@ -610,7 +610,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -626,7 +626,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -638,7 +638,7 @@ object DMSNs extends js.Object {
     /**
          *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | migration-task
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -658,7 +658,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -666,7 +666,7 @@ object DMSNs extends js.Object {
     /**
          * The name of the AWS DMS event subscription to be described.
          */
-    var SubscriptionName: js.UndefOr[java.lang.String] = js.undefined
+    var SubscriptionName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -678,7 +678,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -702,7 +702,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -710,7 +710,7 @@ object DMSNs extends js.Object {
     /**
          *  The identifier of the event source. An identifier must begin with a letter and must contain only ASCII letters, digits, and hyphens. It cannot end with a hyphen or contain two consecutive hyphens. 
          */
-    var SourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SourceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The type of AWS DMS resource that generates events. Valid values: replication-instance | migration-task
          */
@@ -730,7 +730,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
   }
   
   
@@ -738,7 +738,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -750,7 +750,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The order-able replication instances available.
          */
@@ -762,7 +762,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var EndpointArn: java.lang.String
+    var EndpointArn: String
   }
   
   
@@ -778,7 +778,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -786,7 +786,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: java.lang.String
+    var ReplicationInstanceArn: String
   }
   
   
@@ -794,11 +794,11 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * An array of replication task log metadata. Each member of the array contains the replication task name, ARN, and task log size (in bytes). 
          */
@@ -814,7 +814,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -826,7 +826,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The replication instances described.
          */
@@ -842,7 +842,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -854,7 +854,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * A description of the replication subnet groups.
          */
@@ -866,7 +866,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -874,7 +874,7 @@ object DMSNs extends js.Object {
     /**
          * - The Amazon Resource Name (ARN) string that uniquely identifies the task. When this input parameter is specified the API will return only one result and ignore the values of the max-records and marker parameters. 
          */
-    var ReplicationTaskArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -882,11 +882,11 @@ object DMSNs extends js.Object {
     /**
          * - The Amazon S3 bucket where the task assessment report is located. 
          */
-    var BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var BucketName: js.UndefOr[String] = js.undefined
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The task assessment report. 
          */
@@ -902,7 +902,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -914,7 +914,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * A description of the replication tasks.
          */
@@ -926,11 +926,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var EndpointArn: java.lang.String
+    var EndpointArn: String
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
          */
@@ -942,7 +942,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The described schema.
          */
@@ -958,7 +958,7 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 500.
          */
@@ -966,7 +966,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication task.
          */
-    var ReplicationTaskArn: java.lang.String
+    var ReplicationTaskArn: String
   }
   
   
@@ -974,11 +974,11 @@ object DMSNs extends js.Object {
     /**
          *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
-    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    var Marker: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the replication task.
          */
-    var ReplicationTaskArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskArn: js.UndefOr[String] = js.undefined
     /**
          * The table statistics.
          */
@@ -990,11 +990,11 @@ object DMSNs extends js.Object {
     /**
          *  The name of the S3 bucket to use. 
          */
-    var BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var BucketName: js.UndefOr[String] = js.undefined
     /**
          *  The IAM role that has permission to access the Amazon S3 bucket. 
          */
-    var ServiceAccessRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1002,7 +1002,7 @@ object DMSNs extends js.Object {
     /**
          *  The Amazon Resource Name (ARN) used by the service access IAM role. 
          */
-    var ServiceAccessRoleArn: java.lang.String
+    var ServiceAccessRoleArn: String
   }
   
   
@@ -1010,7 +1010,7 @@ object DMSNs extends js.Object {
     /**
          * The endpoint for the ElasticSearch cluster.
          */
-    var EndpointUri: java.lang.String
+    var EndpointUri: String
     /**
          * The maximum number of seconds that DMS retries failed API requests to the Elasticsearch cluster.
          */
@@ -1022,7 +1022,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) used by service to access the IAM role.
          */
-    var ServiceAccessRoleArn: java.lang.String
+    var ServiceAccessRoleArn: String
   }
   
   
@@ -1030,11 +1030,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) used for SSL connection to the endpoint.
          */
-    var CertificateArn: js.UndefOr[java.lang.String] = js.undefined
+    var CertificateArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the database at the endpoint.
          */
-    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    var DatabaseName: js.UndefOr[String] = js.undefined
     /**
          * The settings in JSON format for the DMS transfer type of source endpoint.  Possible attributes include the following:    serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.    bucketName - The name of the S3 bucket to use.    compressionType - An optional parameter to use GZIP to compress the target files. To use GZIP, set this value to NONE (the default). To keep the files uncompressed, don't use this value.    Shorthand syntax for these attributes is as follows: ServiceAccessRoleArn=string,BucketName=string,CompressionType=string  JSON syntax for these attributes is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
          */
@@ -1050,11 +1050,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var EndpointArn: js.UndefOr[java.lang.String] = js.undefined
+    var EndpointArn: js.UndefOr[String] = js.undefined
     /**
          * The database endpoint identifier. Identifiers must begin with a letter; must contain only ASCII letters, digits, and hyphens; and must not end with a hyphen or contain two consecutive hyphens.
          */
-    var EndpointIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var EndpointIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The type of endpoint.
          */
@@ -1062,23 +1062,23 @@ object DMSNs extends js.Object {
     /**
          * The expanded name for the engine name. For example, if the EngineName parameter is "aurora," this value would be "Amazon Aurora MySQL."
          */
-    var EngineDisplayName: js.UndefOr[java.lang.String] = js.undefined
+    var EngineDisplayName: js.UndefOr[String] = js.undefined
     /**
          * The database engine name. Valid values, depending on the EndPointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, sybase, dynamodb, mongodb, and sqlserver.
          */
-    var EngineName: js.UndefOr[java.lang.String] = js.undefined
+    var EngineName: js.UndefOr[String] = js.undefined
     /**
          *  Value returned by a call to CreateEndpoint that can be used for cross-account validation. Use it on a subsequent call to CreateEndpoint to create the endpoint with a cross-account. 
          */
-    var ExternalId: js.UndefOr[java.lang.String] = js.undefined
+    var ExternalId: js.UndefOr[String] = js.undefined
     /**
          * The external table definition.
          */
-    var ExternalTableDefinition: js.UndefOr[java.lang.String] = js.undefined
+    var ExternalTableDefinition: js.UndefOr[String] = js.undefined
     /**
          * Additional connection attributes used to connect to the endpoint.
          */
-    var ExtraConnectionAttributes: js.UndefOr[java.lang.String] = js.undefined
+    var ExtraConnectionAttributes: js.UndefOr[String] = js.undefined
     /**
          * The settings for the Amazon Kinesis source endpoint. For more information, see the KinesisSettings structure.
          */
@@ -1086,7 +1086,7 @@ object DMSNs extends js.Object {
     /**
          * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          * The settings for the MongoDB source endpoint. For more information, see the MongoDbSettings structure.
          */
@@ -1102,11 +1102,11 @@ object DMSNs extends js.Object {
     /**
          * The name of the server at the endpoint.
          */
-    var ServerName: js.UndefOr[java.lang.String] = js.undefined
+    var ServerName: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) used by the service access IAM role.
          */
-    var ServiceAccessRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The SSL mode used to connect to the endpoint. SSL mode can be one of four values: none, require, verify-ca, verify-full.  The default value is none.
          */
@@ -1114,11 +1114,11 @@ object DMSNs extends js.Object {
     /**
          * The status of the endpoint.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The user name used to connect to the endpoint.
          */
-    var Username: js.UndefOr[java.lang.String] = js.undefined
+    var Username: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1134,11 +1134,11 @@ object DMSNs extends js.Object {
     /**
          * The event message.
          */
-    var Message: js.UndefOr[java.lang.String] = js.undefined
+    var Message: js.UndefOr[String] = js.undefined
     /**
          *  The identifier of the event source. An identifier must begin with a letter and must contain only ASCII letters, digits, and hyphens; it cannot end with a hyphen or contain two consecutive hyphens.  Constraints:replication instance, endpoint, migration task
          */
-    var SourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SourceIdentifier: js.UndefOr[String] = js.undefined
     /**
          *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | endpoint | migration-task
          */
@@ -1154,7 +1154,7 @@ object DMSNs extends js.Object {
     /**
          *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | migration-task
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1162,15 +1162,15 @@ object DMSNs extends js.Object {
     /**
          * The AWS DMS event notification subscription Id.
          */
-    var CustSubscriptionId: js.UndefOr[java.lang.String] = js.undefined
+    var CustSubscriptionId: js.UndefOr[String] = js.undefined
     /**
          * The AWS customer account associated with the AWS DMS event notification subscription.
          */
-    var CustomerAwsId: js.UndefOr[java.lang.String] = js.undefined
+    var CustomerAwsId: js.UndefOr[String] = js.undefined
     /**
          * Boolean value that indicates if the event subscription is enabled.
          */
-    var Enabled: js.UndefOr[scala.Boolean] = js.undefined
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A lists of event categories.
          */
@@ -1178,7 +1178,7 @@ object DMSNs extends js.Object {
     /**
          * The topic ARN of the AWS DMS event notification subscription.
          */
-    var SnsTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicArn: js.UndefOr[String] = js.undefined
     /**
          * A list of source Ids for the event subscription.
          */
@@ -1186,15 +1186,15 @@ object DMSNs extends js.Object {
     /**
          *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | migration-task
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
     /**
          * The status of the AWS DMS event notification subscription. Constraints: Can be one of the following: creating | modifying | deleting | active | no-permission | topic-not-exist The status "no-permission" indicates that AWS DMS no longer has permission to post to the SNS topic. The status "topic-not-exist" indicates that the topic was deleted after the subscription was created.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The time the RDS event notification subscription was created.
          */
-    var SubscriptionCreationTime: js.UndefOr[java.lang.String] = js.undefined
+    var SubscriptionCreationTime: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1202,7 +1202,7 @@ object DMSNs extends js.Object {
     /**
          * The name of the filter.
          */
-    var Name: java.lang.String
+    var Name: String
     /**
          * The filter value.
          */
@@ -1214,11 +1214,11 @@ object DMSNs extends js.Object {
     /**
          * The customer-assigned name of the certificate. Valid characters are A-z and 0-9.
          */
-    var CertificateIdentifier: java.lang.String
+    var CertificateIdentifier: String
     /**
          * The contents of the .pem X.509 certificate file for the certificate.
          */
-    var CertificatePem: js.UndefOr[java.lang.String] = js.undefined
+    var CertificatePem: js.UndefOr[String] = js.undefined
     /**
          * The location of the imported Oracle Wallet certificate for use with SSL.
          */
@@ -1246,11 +1246,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the IAM role that DMS uses to write to the Amazon Kinesis data stream.
          */
-    var ServiceAccessRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for the Amazon Kinesis Data Streams endpoint.
          */
-    var StreamArn: js.UndefOr[java.lang.String] = js.undefined
+    var StreamArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1258,7 +1258,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the AWS DMS resource.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
   }
   
   
@@ -1274,11 +1274,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the certificate used for SSL connection.
          */
-    var CertificateArn: js.UndefOr[java.lang.String] = js.undefined
+    var CertificateArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the endpoint database.
          */
-    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    var DatabaseName: js.UndefOr[String] = js.undefined
     /**
          * The settings in JSON format for the DMS transfer type of source endpoint.  Attributes include the following:   serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.   BucketName - The name of the S3 bucket to use.   compressionType - An optional parameter to use GZIP to compress the target files. Set to NONE (the default) or do not use to leave the files uncompressed.   Shorthand syntax: ServiceAccessRoleArn=string ,BucketName=string,CompressionType=string JSON syntax:  { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" } 
          */
@@ -1294,11 +1294,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var EndpointArn: java.lang.String
+    var EndpointArn: String
     /**
          * The database endpoint identifier. Identifiers must begin with a letter; must contain only ASCII letters, digits, and hyphens; and must not end with a hyphen or contain two consecutive hyphens.
          */
-    var EndpointIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var EndpointIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The type of endpoint.
          */
@@ -1306,15 +1306,15 @@ object DMSNs extends js.Object {
     /**
          * The type of engine for the endpoint. Valid values, depending on the EndPointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, sybase, dynamodb, mongodb, and sqlserver.
          */
-    var EngineName: js.UndefOr[java.lang.String] = js.undefined
+    var EngineName: js.UndefOr[String] = js.undefined
     /**
          * The external table definition.
          */
-    var ExternalTableDefinition: js.UndefOr[java.lang.String] = js.undefined
+    var ExternalTableDefinition: js.UndefOr[String] = js.undefined
     /**
          * Additional attributes associated with the connection. To reset this parameter, pass the empty string ("") as an argument.
          */
-    var ExtraConnectionAttributes: js.UndefOr[java.lang.String] = js.undefined
+    var ExtraConnectionAttributes: js.UndefOr[String] = js.undefined
     /**
          * Settings in JSON format for the target Amazon Kinesis Data Streams endpoint. For more information about the available settings, see Using Object Mapping to Migrate Data to a Kinesis Data Stream in the AWS Database Migration User Guide. 
          */
@@ -1338,11 +1338,11 @@ object DMSNs extends js.Object {
     /**
          * The name of the server where the endpoint database resides.
          */
-    var ServerName: js.UndefOr[java.lang.String] = js.undefined
+    var ServerName: js.UndefOr[String] = js.undefined
     /**
          *  The Amazon Resource Name (ARN) for the service access role you want to use to modify the endpoint. 
          */
-    var ServiceAccessRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The SSL mode to be used. SSL mode can be one of four values: none, require, verify-ca, verify-full.  The default value is none.
          */
@@ -1350,7 +1350,7 @@ object DMSNs extends js.Object {
     /**
          * The user name to be used to login to the endpoint database.
          */
-    var Username: js.UndefOr[java.lang.String] = js.undefined
+    var Username: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1374,15 +1374,15 @@ object DMSNs extends js.Object {
     /**
          *  The Amazon Resource Name (ARN) of the Amazon SNS topic created for event notification. The ARN is created by Amazon SNS when you create a topic and subscribe to it.
          */
-    var SnsTopicArn: js.UndefOr[java.lang.String] = js.undefined
+    var SnsTopicArn: js.UndefOr[String] = js.undefined
     /**
          *  The type of AWS DMS resource that generates the events you want to subscribe to.  Valid values: replication-instance | migration-task
          */
-    var SourceType: js.UndefOr[java.lang.String] = js.undefined
+    var SourceType: js.UndefOr[String] = js.undefined
     /**
          * The name of the AWS DMS event notification subscription to be modified.
          */
-    var SubscriptionName: java.lang.String
+    var SubscriptionName: String
   }
   
   
@@ -1402,11 +1402,11 @@ object DMSNs extends js.Object {
     /**
          * Indicates that major version upgrades are allowed. Changing this parameter does not result in an outage and the change is asynchronously applied as soon as possible. Constraints: This parameter must be set to true when specifying a value for the EngineVersion parameter that is a different major version than the replication instance's current version.
          */
-    var AllowMajorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
+    var AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
     /**
          * Indicates whether the changes should be applied immediately or during the next maintenance window.
          */
-    var ApplyImmediately: js.UndefOr[scala.Boolean] = js.undefined
+    var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
     /**
          *  Indicates that minor version upgrades will be applied automatically to the replication instance during the maintenance window. Changing this parameter does not result in an outage except in the following case and the change is asynchronously applied as soon as possible. An outage will result if this parameter is set to true during the maintenance window, and a newer minor version is available, and AWS DMS has enabled auto patching for that engine version. 
          */
@@ -1414,7 +1414,7 @@ object DMSNs extends js.Object {
     /**
          * The engine version number of the replication instance.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          *  Specifies if the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
          */
@@ -1422,19 +1422,19 @@ object DMSNs extends js.Object {
     /**
          * The weekly time range (in UTC) during which system maintenance can occur, which might result in an outage. Changing this parameter does not result in an outage, except in the following situation, and the change is asynchronously applied as soon as possible. If moving this window to the current time, there must be at least 30 minutes between the current time and end of the window to ensure pending changes are applied. Default: Uses existing setting Format: ddd:hh24:mi-ddd:hh24:mi Valid Days: Mon | Tue | Wed | Thu | Fri | Sat | Sun Constraints: Must be at least 30 minutes
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: java.lang.String
+    var ReplicationInstanceArn: String
     /**
          * The compute and memory capacity of the replication instance.  Valid Values: dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge  
          */
-    var ReplicationInstanceClass: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
     /**
          * The replication instance identifier. This parameter is stored as a lowercase string.
          */
-    var ReplicationInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          *  Specifies the VPC security group to be used with the replication instance. The VPC security group must work with the VPC containing the replication instance. 
          */
@@ -1454,11 +1454,11 @@ object DMSNs extends js.Object {
     /**
          * The description of the replication instance subnet group.
          */
-    var ReplicationSubnetGroupDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationSubnetGroupDescription: js.UndefOr[String] = js.undefined
     /**
          * The name of the replication instance subnet group.
          */
-    var ReplicationSubnetGroupIdentifier: java.lang.String
+    var ReplicationSubnetGroupIdentifier: String
     /**
          * A list of subnet IDs.
          */
@@ -1478,7 +1478,7 @@ object DMSNs extends js.Object {
     /**
          * Indicates when you want a change data capture (CDC) operation to start. Use either CdcStartPosition or CdcStartTime to specify when you want a CDC operation to start. Specifying both values results in an error.  The value can be in date, checkpoint, or LSN/SCN format. Date Example: --cdc-start-position “2018-03-08T12:12:12” Checkpoint Example: --cdc-start-position "checkpoint:V1#27#mysql-bin-changelog.157832:1975:-1:2002:677883278264080:mysql-bin-changelog.157832:1876#0#0#*#0#93" LSN Example: --cdc-start-position “mysql-bin-changelog.000024:373”
          */
-    var CdcStartPosition: js.UndefOr[java.lang.String] = js.undefined
+    var CdcStartPosition: js.UndefOr[String] = js.undefined
     /**
          * Indicates the start time for a change data capture (CDC) operation. Use either CdcStartTime or CdcStartPosition to specify when you want a CDC operation to start. Specifying both values results in an error. Timestamp Example: --cdc-start-time “2018-03-08T12:12:12”
          */
@@ -1486,7 +1486,7 @@ object DMSNs extends js.Object {
     /**
          * Indicates when you want a change data capture (CDC) operation to stop. The value can be either server time or commit time. Server time example: --cdc-stop-position “server_time:3018-02-09T12:12:12” Commit time example: --cdc-stop-position “commit_time: 3018-02-09T12:12:12 “
          */
-    var CdcStopPosition: js.UndefOr[java.lang.String] = js.undefined
+    var CdcStopPosition: js.UndefOr[String] = js.undefined
     /**
          * The migration type. Valid values: full-load | cdc | full-load-and-cdc
          */
@@ -1494,19 +1494,19 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication task.
          */
-    var ReplicationTaskArn: java.lang.String
+    var ReplicationTaskArn: String
     /**
          * The replication task identifier. Constraints:   Must contain from 1 to 255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
          */
-    var ReplicationTaskIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskIdentifier: js.UndefOr[String] = js.undefined
     /**
          * JSON file that contains settings for the task, such as target metadata settings.
          */
-    var ReplicationTaskSettings: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskSettings: js.UndefOr[String] = js.undefined
     /**
          * When using the AWS CLI or boto3, provide the path of the JSON file that contains the table mappings. Precede the path with "file://". When working with the DMS API, provide the JSON as the parameter value. For example, --table-mappings file://mappingfile.json
          */
-    var TableMappings: js.UndefOr[java.lang.String] = js.undefined
+    var TableMappings: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1526,7 +1526,7 @@ object DMSNs extends js.Object {
     /**
          *  The MongoDB database name. This attribute is not used when authType=NO.  The default is admin.
          */
-    var AuthSource: js.UndefOr[java.lang.String] = js.undefined
+    var AuthSource: js.UndefOr[String] = js.undefined
     /**
          *  The authentication type you use to access the MongoDB source endpoint. Valid values: NO, PASSWORD  When NO is selected, user name and password parameters are not used and can be empty. 
          */
@@ -1534,19 +1534,19 @@ object DMSNs extends js.Object {
     /**
          *  The database name on the MongoDB source endpoint. 
          */
-    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    var DatabaseName: js.UndefOr[String] = js.undefined
     /**
          *  Indicates the number of documents to preview to determine the document organization. Use this attribute when NestingLevel is set to ONE.  Must be a positive value greater than 0. Default value is 1000.
          */
-    var DocsToInvestigate: js.UndefOr[java.lang.String] = js.undefined
+    var DocsToInvestigate: js.UndefOr[String] = js.undefined
     /**
          *  Specifies the document ID. Use this attribute when NestingLevel is set to NONE.  Default value is false. 
          */
-    var ExtractDocId: js.UndefOr[java.lang.String] = js.undefined
+    var ExtractDocId: js.UndefOr[String] = js.undefined
     /**
          * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          *  Specifies either document or table mode.  Valid values: NONE, ONE Default value is NONE. Specify NONE to use document mode. Specify ONE to use table mode.
          */
@@ -1562,11 +1562,11 @@ object DMSNs extends js.Object {
     /**
          *  The name of the server on the MongoDB source endpoint. 
          */
-    var ServerName: js.UndefOr[java.lang.String] = js.undefined
+    var ServerName: js.UndefOr[String] = js.undefined
     /**
          * The user name you use to access the MongoDB source endpoint. 
          */
-    var Username: js.UndefOr[java.lang.String] = js.undefined
+    var Username: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1578,7 +1578,7 @@ object DMSNs extends js.Object {
     /**
          * The version of the replication engine.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          * The amount of storage (in gigabytes) that is allocated for the replication instance.
          */
@@ -1594,11 +1594,11 @@ object DMSNs extends js.Object {
     /**
          * The compute and memory capacity of the replication instance.  Valid Values: dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge  
          */
-    var ReplicationInstanceClass: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
     /**
          * The type of storage used by the replication instance.
          */
-    var StorageType: js.UndefOr[java.lang.String] = js.undefined
+    var StorageType: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1610,7 +1610,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: java.lang.String
+    var ReplicationInstanceArn: String
   }
   
   
@@ -1626,11 +1626,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var EndpointArn: java.lang.String
+    var EndpointArn: String
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: java.lang.String
+    var ReplicationInstanceArn: String
   }
   
   
@@ -1646,11 +1646,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var EndpointArn: js.UndefOr[java.lang.String] = js.undefined
+    var EndpointArn: js.UndefOr[String] = js.undefined
     /**
          * The last failure message for the schema.
          */
-    var LastFailureMessage: js.UndefOr[java.lang.String] = js.undefined
+    var LastFailureMessage: js.UndefOr[String] = js.undefined
     /**
          * The date the schema was last refreshed.
          */
@@ -1658,7 +1658,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The status of the schema.
          */
@@ -1674,7 +1674,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication task. 
          */
-    var ReplicationTaskArn: java.lang.String
+    var ReplicationTaskArn: String
     /**
          * The name and schema of the table to be reloaded. 
          */
@@ -1686,7 +1686,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication task. 
          */
-    var ReplicationTaskArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1694,7 +1694,7 @@ object DMSNs extends js.Object {
     /**
          * &gt;The Amazon Resource Name (ARN) of the AWS DMS resource the tag is to be removed from.
          */
-    var ResourceArn: java.lang.String
+    var ResourceArn: String
     /**
          * The tag key (name) of the tag to be removed.
          */
@@ -1713,19 +1713,19 @@ object DMSNs extends js.Object {
     /**
          * Boolean value indicating if minor version upgrades will be automatically applied to the instance.
          */
-    var AutoMinorVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
+    var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
     /**
          * The Availability Zone for the instance.
          */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The DNS name servers for the replication instance.
          */
-    var DnsNameServers: js.UndefOr[java.lang.String] = js.undefined
+    var DnsNameServers: js.UndefOr[String] = js.undefined
     /**
          * The engine version number of the replication instance.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          *  The expiration date of the free replication instance that is part of the Free DMS program. 
          */
@@ -1737,11 +1737,11 @@ object DMSNs extends js.Object {
     /**
          * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
-    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
          *  Specifies if the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
          */
-    var MultiAZ: js.UndefOr[scala.Boolean] = js.undefined
+    var MultiAZ: js.UndefOr[Boolean] = js.undefined
     /**
          * The pending modification values.
          */
@@ -1749,27 +1749,27 @@ object DMSNs extends js.Object {
     /**
          * The maintenance window times for the replication instance.
          */
-    var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
+    var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
     /**
          *  Specifies the accessibility options for the replication instance. A value of true represents an instance with a public IP address. A value of false represents an instance with a private IP address. The default value is true. 
          */
-    var PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined
+    var PubliclyAccessible: js.UndefOr[Boolean] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The compute and memory capacity of the replication instance.  Valid Values: dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge  
          */
-    var ReplicationInstanceClass: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
     /**
          * The replication instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: myrepinstance 
          */
-    var ReplicationInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The private IP address of the replication instance.
          */
-    var ReplicationInstancePrivateIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstancePrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The private IP address of the replication instance.
          */
@@ -1777,7 +1777,7 @@ object DMSNs extends js.Object {
     /**
          * The public IP address of the replication instance.
          */
-    var ReplicationInstancePublicIpAddress: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstancePublicIpAddress: js.UndefOr[String] = js.undefined
     /**
          * The public IP address of the replication instance.
          */
@@ -1785,7 +1785,7 @@ object DMSNs extends js.Object {
     /**
          * The status of the replication instance.
          */
-    var ReplicationInstanceStatus: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceStatus: js.UndefOr[String] = js.undefined
     /**
          * The subnet group for the replication instance.
          */
@@ -1793,7 +1793,7 @@ object DMSNs extends js.Object {
     /**
          * The availability zone of the standby replication instance in a Multi-AZ deployment.
          */
-    var SecondaryAvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    var SecondaryAvailabilityZone: js.UndefOr[String] = js.undefined
     /**
          * The VPC security group for the instance.
          */
@@ -1809,11 +1809,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the replication task.
          */
-    var ReplicationTaskArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the replication task.
          */
-    var ReplicationTaskName: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1825,7 +1825,7 @@ object DMSNs extends js.Object {
     /**
          * The engine version number of the replication instance.
          */
-    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    var EngineVersion: js.UndefOr[String] = js.undefined
     /**
          *  Specifies if the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
          */
@@ -1833,7 +1833,7 @@ object DMSNs extends js.Object {
     /**
          * The compute and memory capacity of the replication instance.  Valid Values: dms.t2.micro | dms.t2.small | dms.t2.medium | dms.t2.large | dms.c4.large | dms.c4.xlarge | dms.c4.2xlarge | dms.c4.4xlarge  
          */
-    var ReplicationInstanceClass: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1841,15 +1841,15 @@ object DMSNs extends js.Object {
     /**
          * The description of the replication subnet group.
          */
-    var ReplicationSubnetGroupDescription: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationSubnetGroupDescription: js.UndefOr[String] = js.undefined
     /**
          * The identifier of the replication instance subnet group.
          */
-    var ReplicationSubnetGroupIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationSubnetGroupIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The status of the subnet group.
          */
-    var SubnetGroupStatus: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetGroupStatus: js.UndefOr[String] = js.undefined
     /**
          * The subnets that are in the subnet group.
          */
@@ -1857,7 +1857,7 @@ object DMSNs extends js.Object {
     /**
          * The ID of the VPC.
          */
-    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1865,15 +1865,15 @@ object DMSNs extends js.Object {
     /**
          * Indicates when you want a change data capture (CDC) operation to start. Use either CdcStartPosition or CdcStartTime to specify when you want a CDC operation to start. Specifying both values results in an error.  The value can be in date, checkpoint, or LSN/SCN format. Date Example: --cdc-start-position “2018-03-08T12:12:12” Checkpoint Example: --cdc-start-position "checkpoint:V1#27#mysql-bin-changelog.157832:1975:-1:2002:677883278264080:mysql-bin-changelog.157832:1876#0#0#*#0#93" LSN Example: --cdc-start-position “mysql-bin-changelog.000024:373”
          */
-    var CdcStartPosition: js.UndefOr[java.lang.String] = js.undefined
+    var CdcStartPosition: js.UndefOr[String] = js.undefined
     /**
          * Indicates when you want a change data capture (CDC) operation to stop. The value can be either server time or commit time. Server time example: --cdc-stop-position “server_time:3018-02-09T12:12:12” Commit time example: --cdc-stop-position “commit_time: 3018-02-09T12:12:12 “
          */
-    var CdcStopPosition: js.UndefOr[java.lang.String] = js.undefined
+    var CdcStopPosition: js.UndefOr[String] = js.undefined
     /**
          * The last error (failure) message generated for the replication instance.
          */
-    var LastFailureMessage: js.UndefOr[java.lang.String] = js.undefined
+    var LastFailureMessage: js.UndefOr[String] = js.undefined
     /**
          * The type of migration.
          */
@@ -1881,15 +1881,15 @@ object DMSNs extends js.Object {
     /**
          * Indicates the last checkpoint that occurred during a change data capture (CDC) operation. You can provide this value to the CdcStartPosition parameter to start a CDC operation that begins at that checkpoint.
          */
-    var RecoveryCheckpoint: js.UndefOr[java.lang.String] = js.undefined
+    var RecoveryCheckpoint: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the replication task.
          */
-    var ReplicationTaskArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskArn: js.UndefOr[String] = js.undefined
     /**
          * The date the replication task was created.
          */
@@ -1897,11 +1897,11 @@ object DMSNs extends js.Object {
     /**
          * The user-assigned replication task identifier or name. Constraints:   Must contain from 1 to 255 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
          */
-    var ReplicationTaskIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The settings for the replication task.
          */
-    var ReplicationTaskSettings: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskSettings: js.UndefOr[String] = js.undefined
     /**
          * The date the replication task is scheduled to start.
          */
@@ -1913,23 +1913,23 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var SourceEndpointArn: js.UndefOr[java.lang.String] = js.undefined
+    var SourceEndpointArn: js.UndefOr[String] = js.undefined
     /**
          * The status of the replication task.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The reason the replication task was stopped.
          */
-    var StopReason: js.UndefOr[java.lang.String] = js.undefined
+    var StopReason: js.UndefOr[String] = js.undefined
     /**
          * Table mappings specified in the task.
          */
-    var TableMappings: js.UndefOr[java.lang.String] = js.undefined
+    var TableMappings: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var TargetEndpointArn: js.UndefOr[java.lang.String] = js.undefined
+    var TargetEndpointArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1937,23 +1937,23 @@ object DMSNs extends js.Object {
     /**
          *  The task assessment results in JSON format. 
          */
-    var AssessmentResults: js.UndefOr[java.lang.String] = js.undefined
+    var AssessmentResults: js.UndefOr[String] = js.undefined
     /**
          *  The file containing the results of the task assessment. 
          */
-    var AssessmentResultsFile: js.UndefOr[java.lang.String] = js.undefined
+    var AssessmentResultsFile: js.UndefOr[String] = js.undefined
     /**
          *  The status of the task assessment. 
          */
-    var AssessmentStatus: js.UndefOr[java.lang.String] = js.undefined
+    var AssessmentStatus: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the replication task. 
          */
-    var ReplicationTaskArn: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskArn: js.UndefOr[String] = js.undefined
     /**
          *  The replication task identifier of the task on which the task assessment was run. 
          */
-    var ReplicationTaskIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var ReplicationTaskIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The date the task assessment was completed. 
          */
@@ -1961,7 +1961,7 @@ object DMSNs extends js.Object {
     /**
          *  The URL of the S3 object containing the task assessment results. 
          */
-    var S3ObjectUrl: js.UndefOr[java.lang.String] = js.undefined
+    var S3ObjectUrl: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1997,11 +1997,11 @@ object DMSNs extends js.Object {
     /**
          *  An optional parameter to set a folder name in the S3 bucket. If provided, tables are created in the path &lt;bucketFolder&gt;/&lt;schema_name&gt;/&lt;table_name&gt;/. If this parameter is not specified, then the path used is &lt;schema_name&gt;/&lt;table_name&gt;/. 
          */
-    var BucketFolder: js.UndefOr[java.lang.String] = js.undefined
+    var BucketFolder: js.UndefOr[String] = js.undefined
     /**
          *  The name of the S3 bucket. 
          */
-    var BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var BucketName: js.UndefOr[String] = js.undefined
     /**
          *  An optional parameter to use GZIP to compress the target files. Set to GZIP to compress the target files. Set to NONE (the default) or do not use to leave the files uncompressed. 
          */
@@ -2009,19 +2009,19 @@ object DMSNs extends js.Object {
     /**
          *  The delimiter used to separate columns in the source files. The default is a comma. 
          */
-    var CsvDelimiter: js.UndefOr[java.lang.String] = js.undefined
+    var CsvDelimiter: js.UndefOr[String] = js.undefined
     /**
          *  The delimiter used to separate rows in the source files. The default is a carriage return (\n). 
          */
-    var CsvRowDelimiter: js.UndefOr[java.lang.String] = js.undefined
+    var CsvRowDelimiter: js.UndefOr[String] = js.undefined
     /**
          *  The external table definition. 
          */
-    var ExternalTableDefinition: js.UndefOr[java.lang.String] = js.undefined
+    var ExternalTableDefinition: js.UndefOr[String] = js.undefined
     /**
          *  The Amazon Resource Name (ARN) used by the service access IAM role. 
          */
-    var ServiceAccessRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2029,7 +2029,7 @@ object DMSNs extends js.Object {
     /**
          *  The Amazon Resource Name (ARN) of the replication task. 
          */
-    var ReplicationTaskArn: java.lang.String
+    var ReplicationTaskArn: String
   }
   
   
@@ -2045,7 +2045,7 @@ object DMSNs extends js.Object {
     /**
          * Indicates when you want a change data capture (CDC) operation to start. Use either CdcStartPosition or CdcStartTime to specify when you want a CDC operation to start. Specifying both values results in an error.  The value can be in date, checkpoint, or LSN/SCN format. Date Example: --cdc-start-position “2018-03-08T12:12:12” Checkpoint Example: --cdc-start-position "checkpoint:V1#27#mysql-bin-changelog.157832:1975:-1:2002:677883278264080:mysql-bin-changelog.157832:1876#0#0#*#0#93" LSN Example: --cdc-start-position “mysql-bin-changelog.000024:373”
          */
-    var CdcStartPosition: js.UndefOr[java.lang.String] = js.undefined
+    var CdcStartPosition: js.UndefOr[String] = js.undefined
     /**
          * Indicates the start time for a change data capture (CDC) operation. Use either CdcStartTime or CdcStartPosition to specify when you want a CDC operation to start. Specifying both values results in an error. Timestamp Example: --cdc-start-time “2018-03-08T12:12:12”
          */
@@ -2053,11 +2053,11 @@ object DMSNs extends js.Object {
     /**
          * Indicates when you want a change data capture (CDC) operation to stop. The value can be either server time or commit time. Server time example: --cdc-stop-position “server_time:3018-02-09T12:12:12” Commit time example: --cdc-stop-position “commit_time: 3018-02-09T12:12:12 “
          */
-    var CdcStopPosition: js.UndefOr[java.lang.String] = js.undefined
+    var CdcStopPosition: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the replication task to be started.
          */
-    var ReplicationTaskArn: java.lang.String
+    var ReplicationTaskArn: String
     /**
          * The type of replication task.
          */
@@ -2077,7 +2077,7 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name(ARN) of the replication task to be stopped.
          */
-    var ReplicationTaskArn: java.lang.String
+    var ReplicationTaskArn: String
   }
   
   
@@ -2097,11 +2097,11 @@ object DMSNs extends js.Object {
     /**
          * The subnet identifier.
          */
-    var SubnetIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetIdentifier: js.UndefOr[String] = js.undefined
     /**
          * The status of the subnet.
          */
-    var SubnetStatus: js.UndefOr[java.lang.String] = js.undefined
+    var SubnetStatus: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2113,15 +2113,15 @@ object DMSNs extends js.Object {
     /**
          * The expanded name for the engine name. For example, if the EngineName parameter is "aurora," this value would be "Amazon Aurora MySQL."
          */
-    var EngineDisplayName: js.UndefOr[java.lang.String] = js.undefined
+    var EngineDisplayName: js.UndefOr[String] = js.undefined
     /**
          * The database engine name. Valid values, depending on the EndPointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, sybase, dynamodb, mongodb, and sqlserver.
          */
-    var EngineName: js.UndefOr[java.lang.String] = js.undefined
+    var EngineName: js.UndefOr[String] = js.undefined
     /**
          * Indicates if Change Data Capture (CDC) is supported.
          */
-    var SupportsCDC: js.UndefOr[scala.Boolean] = js.undefined
+    var SupportsCDC: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -2157,15 +2157,15 @@ object DMSNs extends js.Object {
     /**
          * The schema name.
          */
-    var SchemaName: js.UndefOr[java.lang.String] = js.undefined
+    var SchemaName: js.UndefOr[String] = js.undefined
     /**
          * The name of the table.
          */
-    var TableName: js.UndefOr[java.lang.String] = js.undefined
+    var TableName: js.UndefOr[String] = js.undefined
     /**
          * The state of the tables described. Valid states: Table does not exist | Before load | Full load | Table completed | Table cancelled | Table error | Table all | Table updates | Table is being reloaded
          */
-    var TableState: js.UndefOr[java.lang.String] = js.undefined
+    var TableState: js.UndefOr[String] = js.undefined
     /**
          * The number of update actions performed on a table.
          */
@@ -2181,11 +2181,11 @@ object DMSNs extends js.Object {
     /**
          * The validation state of the table. The parameter can have the following values   Not enabled—Validation is not enabled for the table in the migration task.   Pending records—Some records in the table are waiting for validation.   Mismatched records—Some records in the table do not match between the source and target.   Suspended records—Some records in the table could not be validated.   No primary key—The table could not be validated because it had no primary key.   Table error—The table was not validated because it was in an error state and some data was not migrated.   Validated—All rows in the table were validated. If the table is updated, the status can change from Validated.   Error—The table could not be validated because of an unexpected error.  
          */
-    var ValidationState: js.UndefOr[java.lang.String] = js.undefined
+    var ValidationState: js.UndefOr[String] = js.undefined
     /**
          * Additional details about the state of validation.
          */
-    var ValidationStateDetails: js.UndefOr[java.lang.String] = js.undefined
+    var ValidationStateDetails: js.UndefOr[String] = js.undefined
     /**
          * The number of records that could not be validated.
          */
@@ -2197,11 +2197,11 @@ object DMSNs extends js.Object {
     /**
          * The schema name of the table to be reloaded.
          */
-    var SchemaName: js.UndefOr[java.lang.String] = js.undefined
+    var SchemaName: js.UndefOr[String] = js.undefined
     /**
          * The table name of the table to be reloaded.
          */
-    var TableName: js.UndefOr[java.lang.String] = js.undefined
+    var TableName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2209,11 +2209,11 @@ object DMSNs extends js.Object {
     /**
          * A key is the required name of the tag. The string value can be from 1 to 128 Unicode characters in length and cannot be prefixed with "aws:" or "dms:". The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', '/', '=', '+', '-' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").
          */
-    var Key: js.UndefOr[java.lang.String] = js.undefined
+    var Key: js.UndefOr[String] = js.undefined
     /**
          * A value is the optional value of the tag. The string value can be from 1 to 256 Unicode characters in length and cannot be prefixed with "aws:" or "dms:". The string can only contain only the set of Unicode letters, digits, white-space, '_', '.', '/', '=', '+', '-' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").
          */
-    var Value: js.UndefOr[java.lang.String] = js.undefined
+    var Value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -2221,11 +2221,11 @@ object DMSNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
-    var EndpointArn: java.lang.String
+    var EndpointArn: String
     /**
          * The Amazon Resource Name (ARN) of the replication instance.
          */
-    var ReplicationInstanceArn: java.lang.String
+    var ReplicationInstanceArn: String
   }
   
   
@@ -3840,11 +3840,11 @@ object DMSNs extends js.Object {
     /**
          * The status of the VPC security group.
          */
-    var Status: js.UndefOr[java.lang.String] = js.undefined
+    var Status: js.UndefOr[String] = js.undefined
     /**
          * The VPC security group Id.
          */
-    var VpcSecurityGroupId: js.UndefOr[java.lang.String] = js.undefined
+    var VpcSecurityGroupId: js.UndefOr[String] = js.undefined
   }
   
   val TypesNs: this.type = js.native
@@ -3860,15 +3860,15 @@ object DMSNs extends js.Object {
   type ConnectionList = js.Array[Connection]
   type DmsSslModeValue = awsDashSdkLib.awsDashSdkLibStrings.none | awsDashSdkLib.awsDashSdkLibStrings.require | awsDashSdkLib.awsDashSdkLibStrings.`verify-ca` | awsDashSdkLib.awsDashSdkLibStrings.`verify-full` | java.lang.String
   type EndpointList = js.Array[Endpoint]
-  type EventCategoriesList = js.Array[java.lang.String]
+  type EventCategoriesList = js.Array[String]
   type EventCategoryGroupList = js.Array[EventCategoryGroup]
   type EventList = js.Array[Event]
   type EventSubscriptionsList = js.Array[EventSubscription]
   type FilterList = js.Array[Filter]
-  type FilterValueList = js.Array[java.lang.String]
+  type FilterValueList = js.Array[String]
   type Integer = scala.Double
   type IntegerOptional = scala.Double
-  type KeyList = js.Array[java.lang.String]
+  type KeyList = js.Array[String]
   type Long = scala.Double
   type MessageFormatValue = awsDashSdkLib.awsDashSdkLibStrings.json | java.lang.String
   type MigrationTypeValue = awsDashSdkLib.awsDashSdkLibStrings.`full-load` | awsDashSdkLib.awsDashSdkLibStrings.cdc | awsDashSdkLib.awsDashSdkLibStrings.`full-load-and-cdc` | java.lang.String
@@ -3878,26 +3878,26 @@ object DMSNs extends js.Object {
   type ReloadOptionValue = awsDashSdkLib.awsDashSdkLibStrings.`data-reload` | awsDashSdkLib.awsDashSdkLibStrings.`validate-only` | java.lang.String
   type ReplicationEndpointTypeValue = awsDashSdkLib.awsDashSdkLibStrings.source | awsDashSdkLib.awsDashSdkLibStrings.target | java.lang.String
   type ReplicationInstanceList = js.Array[ReplicationInstance]
-  type ReplicationInstancePrivateIpAddressList = js.Array[java.lang.String]
-  type ReplicationInstancePublicIpAddressList = js.Array[java.lang.String]
+  type ReplicationInstancePrivateIpAddressList = js.Array[String]
+  type ReplicationInstancePublicIpAddressList = js.Array[String]
   type ReplicationInstanceTaskLogsList = js.Array[ReplicationInstanceTaskLog]
   type ReplicationSubnetGroups = js.Array[ReplicationSubnetGroup]
   type ReplicationTaskAssessmentResultList = js.Array[ReplicationTaskAssessmentResult]
   type ReplicationTaskList = js.Array[ReplicationTask]
-  type SchemaList = js.Array[java.lang.String]
+  type SchemaList = js.Array[String]
   type SecretString = java.lang.String
-  type SourceIdsList = js.Array[java.lang.String]
+  type SourceIdsList = js.Array[String]
   type SourceType = awsDashSdkLib.awsDashSdkLibStrings.`replication-instance` | java.lang.String
   type StartReplicationTaskTypeValue = awsDashSdkLib.awsDashSdkLibStrings.`start-replication` | awsDashSdkLib.awsDashSdkLibStrings.`resume-processing` | awsDashSdkLib.awsDashSdkLibStrings.`reload-target` | java.lang.String
   type String = java.lang.String
-  type SubnetIdentifierList = js.Array[java.lang.String]
+  type SubnetIdentifierList = js.Array[String]
   type SubnetList = js.Array[Subnet]
   type SupportedEndpointTypeList = js.Array[SupportedEndpointType]
   type TStamp = stdLib.Date
   type TableListToReload = js.Array[TableToReload]
   type TableStatisticsList = js.Array[TableStatistics]
   type TagList = js.Array[Tag]
-  type VpcSecurityGroupIdList = js.Array[java.lang.String]
+  type VpcSecurityGroupIdList = js.Array[String]
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-01-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

@@ -14,7 +14,7 @@ trait WriteBatch extends js.Object {
        * successfully written to the backend as an atomic unit. Note that it won't
        * resolve while you're offline.
        */
-  def commit(): stdLib.Promise[scala.Unit] = js.native
+  def commit(): js.Promise[scala.Unit] = js.native
   /**
        * Deletes the document referred to by the provided `DocumentReference`.
        *

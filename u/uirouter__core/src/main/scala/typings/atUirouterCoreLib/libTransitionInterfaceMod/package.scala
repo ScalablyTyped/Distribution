@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object libTransitionInterfaceMod {
   type HookFn = TransitionHookFn | TransitionStateHookFn | TransitionCreateHookFn
   type HookMatchCriterion = java.lang.String | IStateMatch | scala.Boolean
-  type HookResult = scala.Boolean | atUirouterCoreLib.libStateTargetStateMod.TargetState | scala.Unit | (stdLib.Promise[
+  type HookResult = scala.Boolean | atUirouterCoreLib.libStateTargetStateMod.TargetState | scala.Unit | (js.Promise[
     scala.Boolean | atUirouterCoreLib.libStateTargetStateMod.TargetState | scala.Unit
   ])
   type IHookRegistration = js.Function3[

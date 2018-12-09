@@ -88,6 +88,6 @@ class TaskEither[L, A] protected () extends js.Object {
        */
   def orElse[M](f: js.Function1[/* l */ L, TaskEither[M, A]]): TaskEither[M, A] = js.native
   /** Runs the inner `Task` */
-  def run(): stdLib.Promise[fpDashTsLib.libEitherMod.Either[L, A]] = js.native
+  def run(): js.Promise[fpDashTsLib.libEitherMod.Either[L, A]] = js.native
 }
 

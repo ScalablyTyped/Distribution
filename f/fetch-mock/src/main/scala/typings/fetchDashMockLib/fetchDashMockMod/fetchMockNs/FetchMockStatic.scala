@@ -179,7 +179,7 @@ trait FetchMockStatic extends js.Object {
            * Returns a promise that resolves once all fetches handled by fetch-mock
            * have resolved.
            */
-  def flush(): stdLib.Promise[js.Array[MockResponse]] = js.native
+  def flush(): js.Promise[js.Array[MockResponse]] = js.native
   /**
            * Replaces fetch() with a stub which records its calls, grouped by
            * route, and optionally returns a mocked Response object or passes the

@@ -65,7 +65,7 @@ class Credentials protected () extends js.Object {
        * a promise that will be fulfilled immediately (if no refresh is necessary)
        * or when the refresh has completed.
        */
-  def getPromise(): stdLib.Promise[scala.Unit] = js.native
+  def getPromise(): js.Promise[scala.Unit] = js.native
   /**
        * Returns whether the credentials object should call refresh()
        */
@@ -82,7 +82,7 @@ class Credentials protected () extends js.Object {
        * when the refresh has completed or rejected when the refresh has failed.
        * Users should call get() before attempting to forcibly refresh credentials.
        */
-  def refreshPromise(): stdLib.Promise[scala.Unit] = js.native
+  def refreshPromise(): js.Promise[scala.Unit] = js.native
 }
 
 @JSImport("aws-sdk/lib/credentials", "Credentials")

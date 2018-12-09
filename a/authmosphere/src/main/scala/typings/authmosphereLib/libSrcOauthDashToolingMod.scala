@@ -57,7 +57,7 @@ object libSrcOauthDashToolingMod extends js.Object {
    * @param logger - optional logger
    * @returns {Promise<T>}
    */
-  def getAccessToken(options: authmosphereLib.libSrcTypesOAuthConfigMod.OAuthConfig): stdLib.Promise[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]] = js.native
+  def getAccessToken(options: authmosphereLib.libSrcTypesOAuthConfigMod.OAuthConfig): js.Promise[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]] = js.native
   /**
    * Requests a token based on the given configuration (which specifies the grant type and corresponding parameters).
    *
@@ -71,6 +71,6 @@ object libSrcOauthDashToolingMod extends js.Object {
   def getAccessToken(
     options: authmosphereLib.libSrcTypesOAuthConfigMod.OAuthConfig,
     logger: authmosphereLib.libSrcTypesLoggerMod.Logger
-  ): stdLib.Promise[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]] = js.native
+  ): js.Promise[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]] = js.native
 }
 

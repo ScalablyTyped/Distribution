@@ -19,7 +19,7 @@ trait PaymentOperationRecord extends BaseOperationRecord {
   var to: java.lang.String = js.native
   @JSName("type")
   var type_PaymentOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.payment = js.native
-  def receiver(): stdLib.Promise[AccountRecord] = js.native
-  def sender(): stdLib.Promise[AccountRecord] = js.native
+  def receiver(): js.Promise[AccountRecord] = js.native
+  def sender(): js.Promise[AccountRecord] = js.native
 }
 

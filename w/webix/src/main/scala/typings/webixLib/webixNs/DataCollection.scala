@@ -10,7 +10,7 @@ trait DataCollection extends js.Object {
   var config: DataCollectionConfig = js.native
   var data: DataStore = js.native
   var name: java.lang.String = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
   def addBind(source: js.Any, rule: java.lang.String, format: java.lang.String): scala.Unit = js.native
@@ -60,9 +60,9 @@ trait DataCollection extends js.Object {
   def getPrevId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
   def isVisible(): scala.Boolean = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): js.Promise[_] = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,

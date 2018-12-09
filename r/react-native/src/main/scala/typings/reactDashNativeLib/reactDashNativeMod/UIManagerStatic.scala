@@ -83,7 +83,7 @@ trait UIManagerStatic extends js.Object {
        * Returns a Promise<string> (tempFilePath)
        * @platform ios
        */
-  def takeSnapshot(): stdLib.Promise[java.lang.String] = js.native
+  def takeSnapshot(): js.Promise[java.lang.String] = js.native
   /**
        * Capture an image of the screen, window or an individual view. The image
        * will be stored in a temporary file that will only exist for as long as the
@@ -101,7 +101,7 @@ trait UIManagerStatic extends js.Object {
        * Returns a Promise<string> (tempFilePath)
        * @platform ios
        */
-  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement[_]): stdLib.Promise[java.lang.String] = js.native
+  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement[_]): js.Promise[java.lang.String] = js.native
   /**
        * Capture an image of the screen, window or an individual view. The image
        * will be stored in a temporary file that will only exist for as long as the
@@ -119,7 +119,7 @@ trait UIManagerStatic extends js.Object {
        * Returns a Promise<string> (tempFilePath)
        * @platform ios
        */
-  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement[_], options: reactDashNativeLib.Anon_Quality): stdLib.Promise[java.lang.String] = js.native
+  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement[_], options: reactDashNativeLib.Anon_Quality): js.Promise[java.lang.String] = js.native
   /**
        * Capture an image of the screen, window or an individual view. The image
        * will be stored in a temporary file that will only exist for as long as the
@@ -137,7 +137,7 @@ trait UIManagerStatic extends js.Object {
        * Returns a Promise<string> (tempFilePath)
        * @platform ios
        */
-  def takeSnapshot(view: scala.Double): stdLib.Promise[java.lang.String] = js.native
+  def takeSnapshot(view: scala.Double): js.Promise[java.lang.String] = js.native
   /**
        * Capture an image of the screen, window or an individual view. The image
        * will be stored in a temporary file that will only exist for as long as the
@@ -155,7 +155,7 @@ trait UIManagerStatic extends js.Object {
        * Returns a Promise<string> (tempFilePath)
        * @platform ios
        */
-  def takeSnapshot(view: scala.Double, options: reactDashNativeLib.Anon_Quality): stdLib.Promise[java.lang.String] = js.native
+  def takeSnapshot(view: scala.Double, options: reactDashNativeLib.Anon_Quality): js.Promise[java.lang.String] = js.native
   /**
        * Capture an image of the screen, window or an individual view. The image
        * will be stored in a temporary file that will only exist for as long as the
@@ -174,7 +174,7 @@ trait UIManagerStatic extends js.Object {
        * @platform ios
        */
   @JSName("takeSnapshot")
-  def takeSnapshot_window(view: reactDashNativeLib.reactDashNativeLibStrings.window): stdLib.Promise[java.lang.String] = js.native
+  def takeSnapshot_window(view: reactDashNativeLib.reactDashNativeLibStrings.window): js.Promise[java.lang.String] = js.native
   /**
        * Capture an image of the screen, window or an individual view. The image
        * will be stored in a temporary file that will only exist for as long as the
@@ -196,6 +196,6 @@ trait UIManagerStatic extends js.Object {
   def takeSnapshot_window(
     view: reactDashNativeLib.reactDashNativeLibStrings.window,
     options: reactDashNativeLib.Anon_Quality
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
 }
 

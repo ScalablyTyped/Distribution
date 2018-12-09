@@ -22,8 +22,8 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var fieldResolver: js.UndefOr[
     graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, ScalablyTyped.runtime.StringDictionary[_]]
   ] = js.undefined
-  var formatError: js.UndefOr[js.Function] = js.undefined
-  var formatResponse: js.UndefOr[js.Function] = js.undefined
+  var formatError: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var formatResponse: js.UndefOr[coreDashJsLib.Function] = js.undefined
   var persistedQueries: js.UndefOr[PersistedQueryOptions] = js.undefined
   var plugins: js.UndefOr[
     apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[

@@ -57,7 +57,7 @@ object PageableCollection extends js.Object {
   def noConflict(): ScalablyTyped.runtime.Instantiable2[
     /* models */ js.UndefOr[/* models */ js.Array[backboneLib.backboneMod.Model]], 
     /* options */ js.UndefOr[/* options */ backboneDotPaginatorLib.backboneMod.PageableInitialOptions], 
-    backboneDotPaginatorLib.backboneMod.PageableCollection[js.Object]
+    backboneDotPaginatorLib.backboneMod.PageableCollection[backboneLib.backboneMod.Model]
   ] = js.native
 }
 

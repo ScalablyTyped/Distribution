@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped String */ 
-trait RID extends js.Object {
+
+trait RID
+  extends nodeLib.String {
   var cluster: js.UndefOr[scala.Double] = js.undefined
   @JSName("equals")
   var equals_FRID: js.UndefOr[js.Function1[/* rid */ java.lang.String | this.type, scala.Boolean]] = js.undefined

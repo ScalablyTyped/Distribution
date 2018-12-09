@@ -25,30 +25,30 @@ class Navigation () extends js.Object {
   /**
        * Constants coming from native
        */
-  def constants(): stdLib.Promise[_] = js.native
+  def constants(): js.Promise[_] = js.native
   /**
        * Dismiss all Modals
        */
-  def dismissAllModals(): stdLib.Promise[_] = js.native
+  def dismissAllModals(): js.Promise[_] = js.native
   /**
        * Dismiss all Modals
        */
-  def dismissAllModals(mergeOptions: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options): stdLib.Promise[_] = js.native
+  def dismissAllModals(mergeOptions: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options): js.Promise[_] = js.native
   /**
        * Dismiss a modal by componentId. The dismissed modal can be anywhere in the stack.
        */
-  def dismissModal(componentId: java.lang.String): stdLib.Promise[_] = js.native
+  def dismissModal(componentId: java.lang.String): js.Promise[_] = js.native
   /**
        * Dismiss a modal by componentId. The dismissed modal can be anywhere in the stack.
        */
   def dismissModal(
     componentId: java.lang.String,
     mergeOptions: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * dismiss overlay by componentId
        */
-  def dismissOverlay(componentId: java.lang.String): stdLib.Promise[_] = js.native
+  def dismissOverlay(componentId: java.lang.String): js.Promise[_] = js.native
   /**
        * Obtain the events registry instance
        */
@@ -56,7 +56,7 @@ class Navigation () extends js.Object {
   /**
        * Resolves arguments passed on launch
        */
-  def getLaunchArgs(): stdLib.Promise[_] = js.native
+  def getLaunchArgs(): js.Promise[_] = js.native
   /**
        * Change a component's navigation options
        */
@@ -67,43 +67,43 @@ class Navigation () extends js.Object {
   /**
        * Pop a component from the stack, regardless of it's position.
        */
-  def pop(componentId: java.lang.String): stdLib.Promise[_] = js.native
+  def pop(componentId: java.lang.String): js.Promise[_] = js.native
   /**
        * Pop a component from the stack, regardless of it's position.
        */
   def pop(
     componentId: java.lang.String,
     mergeOptions: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * Pop the stack to a given component
        */
-  def popTo(componentId: java.lang.String): stdLib.Promise[_] = js.native
+  def popTo(componentId: java.lang.String): js.Promise[_] = js.native
   /**
        * Pop the stack to a given component
        */
   def popTo(
     componentId: java.lang.String,
     mergeOptions: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * Pop the component's stack to root.
        */
-  def popToRoot(componentId: java.lang.String): stdLib.Promise[_] = js.native
+  def popToRoot(componentId: java.lang.String): js.Promise[_] = js.native
   /**
        * Pop the component's stack to root.
        */
   def popToRoot(
     componentId: java.lang.String,
     mergeOptions: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * Push a new layout into this screen's navigation stack.
        */
   def push[P](
     componentId: java.lang.String,
     layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[P]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * Every navigation component in your app must be registered with a unique name.
        * The component itself is a traditional React component extending React.Component.
@@ -147,21 +147,21 @@ class Navigation () extends js.Object {
   /**
        * Reset the app to a new layout
        */
-  def setRoot(layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.LayoutRoot): stdLib.Promise[_] = js.native
+  def setRoot(layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.LayoutRoot): js.Promise[_] = js.native
   /**
        * Sets new root component to stack.
        */
   def setStackRoot(
     componentId: java.lang.String,
     layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
        * Show a screen as a modal.
        */
-  def showModal(layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]): stdLib.Promise[_] = js.native
+  def showModal(layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]): js.Promise[_] = js.native
   /**
        * Show overlay on top of the entire app
        */
-  def showOverlay(layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]): stdLib.Promise[_] = js.native
+  def showOverlay(layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]): js.Promise[_] = js.native
 }
 

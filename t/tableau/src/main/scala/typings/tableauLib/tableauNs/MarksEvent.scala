@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MarksEvent () extends TableauEvent {
   /** Gets the selected marks on the Worksheet that triggered the event. */
-  def getMarksAsync(): stdLib.Promise[js.Array[Mark]] = js.native
+  def getMarksAsync(): js.Promise[js.Array[Mark]] = js.native
   /** Gets the Worksheet object associated with the event. */
   def getWorksheet(): Worksheet = js.native
 }

@@ -23,7 +23,7 @@ trait Options extends js.Object {
       /* ctx */ koaLib.koaMod.ApplicationNs.Context, 
       /* decodedToken */ js.Object, 
       /* token */ java.lang.String, 
-      stdLib.Promise[scala.Boolean]
+      js.Promise[scala.Boolean]
     ]
   ] = js.undefined
   var issuer: js.UndefOr[java.lang.String] = js.undefined

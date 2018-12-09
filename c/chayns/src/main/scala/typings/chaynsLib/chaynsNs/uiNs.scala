@@ -56,7 +56,7 @@ object uiNs extends js.Object {
   @JSName("tooltip")
   @js.native
   object tooltipNs extends js.Object {
-    def init(config: chaynsLib.UiTooltipInitConfig, rootElement: js.Any): stdLib.Promise[scala.Boolean] = js.native
+    def init(config: chaynsLib.UiTooltipInitConfig, rootElement: js.Any): js.Promise[scala.Boolean] = js.native
   }
   
 }

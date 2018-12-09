@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait AttachmentCardClickEvent extends js.Object {
-  def getDownloadURL(): stdLib.Promise[java.lang.String]
+  def getDownloadURL(): js.Promise[java.lang.String]
 }
 

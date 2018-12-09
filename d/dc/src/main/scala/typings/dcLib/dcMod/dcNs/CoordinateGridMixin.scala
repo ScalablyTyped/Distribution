@@ -20,7 +20,7 @@ trait CoordinateGridMixin[T]
   var elasticY_Original: IGetSet[scala.Boolean, T] = js.native
   @JSName("g")
   var g_Original: IGetSet[
-    d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object], 
+    d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _], 
     T
   ] = js.native
   @JSName("mouseZoomable")
@@ -59,7 +59,7 @@ trait CoordinateGridMixin[T]
   var zoomScale_Original: IGetSet[js.Array[_], T] = js.native
   def brushOn(): scala.Boolean = js.native
   def brushOn(t: scala.Boolean): scala.Boolean = js.native
-  def chartBodyG(): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
+  def chartBodyG(): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
   def clipPadding(): scala.Double = js.native
   def clipPadding(t: scala.Double): scala.Double = js.native
   def elasticX(): scala.Boolean = js.native
@@ -68,8 +68,10 @@ trait CoordinateGridMixin[T]
   def elasticY(t: scala.Boolean): scala.Boolean = js.native
   def focus(): scala.Unit = js.native
   def focus(range: js.Array[_]): scala.Unit = js.native
-  def g(): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
-  def g(t: d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object]): d3DashSelectionLib.d3DashSelectionMod.Selection[_, js.Object, js.Object, js.Object] = js.native
+  def g(): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  def g(
+    t: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
   def isOrdinal(): scala.Boolean = js.native
   def mouseZoomable(): scala.Boolean = js.native
   def mouseZoomable(t: scala.Boolean): scala.Boolean = js.native

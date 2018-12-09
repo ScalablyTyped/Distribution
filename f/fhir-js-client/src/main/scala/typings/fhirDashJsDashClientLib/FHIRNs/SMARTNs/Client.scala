@@ -63,16 +63,16 @@ trait Client extends js.Object {
                * Fetch a resource as Binary/Blob
                * @param path Absolute or relative path to the resource to be fetched
                */
-  def fetchBinary(path: java.lang.String): stdLib.Promise[stdLib.Blob] = js.native
+  def fetchBinary(path: java.lang.String): js.Promise[stdLib.Blob] = js.native
   /**
                * Get the resources based on the resource type and id
                * @param params Resource type and id
                */
-  def get(params: ResourceParameter): stdLib.Promise[Response] = js.native
+  def get(params: ResourceParameter): js.Promise[Response] = js.native
   /**
                * Fetch a resource as Binary/Blob (Same as fetchBinary)
                * @param path Absolute url of the resource to be fetched
                */
-  def getBinary(path: java.lang.String): stdLib.Promise[stdLib.Blob] = js.native
+  def getBinary(path: java.lang.String): js.Promise[stdLib.Blob] = js.native
 }
 

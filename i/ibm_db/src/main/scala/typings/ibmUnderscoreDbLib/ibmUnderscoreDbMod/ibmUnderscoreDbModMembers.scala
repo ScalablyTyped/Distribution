@@ -20,17 +20,17 @@ object ibmUnderscoreDbModMembers extends js.Object {
   def default(): Database = js.native
   def default(options: Options): Database = js.native
   def getElapsedTime(): java.lang.String = js.native
-  def open(connStr: ConnStr): stdLib.Promise[Database] = js.native
+  def open(connStr: ConnStr): js.Promise[Database] = js.native
   def open(connStr: ConnStr, cb: js.Function2[/* err */ stdLib.Error, /* db */ Database, scala.Unit]): scala.Unit = js.native
-  def open(connStr: ConnStr, options: Options): stdLib.Promise[Database] = js.native
+  def open(connStr: ConnStr, options: Options): js.Promise[Database] = js.native
   def open(
     connStr: ConnStr,
     options: Options,
     cb: js.Function2[/* err */ stdLib.Error, /* db */ Database, scala.Unit]
   ): scala.Unit = js.native
-  def open(connStr: java.lang.String): stdLib.Promise[Database] = js.native
+  def open(connStr: java.lang.String): js.Promise[Database] = js.native
   def open(connStr: java.lang.String, cb: js.Function2[/* err */ stdLib.Error, /* db */ Database, scala.Unit]): scala.Unit = js.native
-  def open(connStr: java.lang.String, options: Options): stdLib.Promise[Database] = js.native
+  def open(connStr: java.lang.String, options: Options): js.Promise[Database] = js.native
   def open(
     connStr: java.lang.String,
     options: Options,

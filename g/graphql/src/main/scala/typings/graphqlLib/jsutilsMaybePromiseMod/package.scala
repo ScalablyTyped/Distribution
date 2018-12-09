@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jsutilsMaybePromiseMod {
-  type MaybePromise[T] = stdLib.Promise[T] | T
+  type MaybePromise[T] = js.Promise[T] | T
 }

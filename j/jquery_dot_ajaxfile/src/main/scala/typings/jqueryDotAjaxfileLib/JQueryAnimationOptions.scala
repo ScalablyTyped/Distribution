@@ -55,7 +55,7 @@ trait JQueryAnimationOptions extends js.Object {
   /**
        * A map of one or more of the CSS properties defined by the properties argument and their corresponding easing functions. (version added: 1.4)
        */
-  var specialEasing: js.UndefOr[js.Object] = js.undefined
+  var specialEasing: js.UndefOr[Object] = js.undefined
   /**
        * A function to call when the animation begins. (version added: 1.8)
        */

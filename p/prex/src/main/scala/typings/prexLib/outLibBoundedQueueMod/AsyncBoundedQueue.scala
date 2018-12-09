@@ -13,7 +13,7 @@ class AsyncBoundedQueue[T] () extends js.Object {
        *
        * @param iterable An optional iterable of values or promises.
        */
-  def this(iterable: stdLib.Iterable[T | stdLib.PromiseLike[T]]) = this()
+  def this(iterable: stdLib.Iterable[T | js.Thenable[T]]) = this()
   var _dequeue: js.Any = js.native
   var _queue: js.Any = js.native
   var _state: js.Any = js.native
@@ -36,7 +36,7 @@ class AsyncBoundedQueue[T] () extends js.Object {
        * ended, returns a Promise for `undefined`. If the queue is empty, returns a Promise
        * for the next value to be added to the queue.
        */
-  def get(): stdLib.Promise[js.UndefOr[T]] = js.native
+  def get(): js.Promise[js.UndefOr[T]] = js.native
   /**
        * Adds a value to the end of the queue. If the queue is empty but has a pending
        * dequeue request, the value will be dequeued and the request fulfilled.
@@ -50,6 +50,6 @@ class AsyncBoundedQueue[T] () extends js.Object {
        *
        * @param value A value or promise to add to the queue.
        */
-  def put(value: stdLib.PromiseLike[T]): scala.Unit = js.native
+  def put(value: js.Thenable[T]): scala.Unit = js.native
 }
 

@@ -14,14 +14,14 @@ class InventoryLevels protected ()
        * Adjusts the inventory level of an inventory item at a single location.
        * @param options Options for adjusting an inventory level.
        */
-  def adjust(inventoryItemId: scala.Double, locationId: scala.Double, availableAdjustment: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def adjust(inventoryItemId: scala.Double, locationId: scala.Double, availableAdjustment: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * Connects an inventory item to a location by creating an inventory level at that location.
        * @param inventoryItemId Id of the inventory item.
        * @param locationId Id of the location being retrieved.
        * @param options Options for connecting an inventory level.
        */
-  def connect(inventoryItemId: scala.Double, locationId: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def connect(inventoryItemId: scala.Double, locationId: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * Connects an inventory item to a location by creating an inventory level at that location.
        * @param inventoryItemId Id of the inventory item.
@@ -32,25 +32,25 @@ class InventoryLevels protected ()
     inventoryItemId: scala.Double,
     locationId: scala.Double,
     options: shopifyDashPrimeLib.Anon_Relocateifnecessary
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
        * Deletes an inventory level of an inventory item at a location.
        * @param inventoryItemId Id of the inventory item.
        * @param locationId Id of the location being retrieved.
        */
-  def delete(inventoryItemId: scala.Double, locationId: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def delete(inventoryItemId: scala.Double, locationId: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * Gets a list of up to 250 of the shop's inventory levels.
        * @param options Options for filtering the result.
        */
-  def list(): stdLib.Promise[
+  def list(): js.Promise[
     js.Array[shopifyDashPrimeLib.distModelsInventoryUnderscoreLevelMod.InventoryLevel]
   ] = js.native
   /**
        * Gets a list of up to 250 of the shop's inventory levels.
        * @param options Options for filtering the result.
        */
-  def list(options: shopifyDashPrimeLib.distOptionsInventoryUnderscoreLevelsMod.InventoryLevelListOptions): stdLib.Promise[
+  def list(options: shopifyDashPrimeLib.distOptionsInventoryUnderscoreLevelsMod.InventoryLevelListOptions): js.Promise[
     js.Array[shopifyDashPrimeLib.distModelsInventoryUnderscoreLevelMod.InventoryLevel]
   ] = js.native
   /**
@@ -58,7 +58,7 @@ class InventoryLevels protected ()
        * @param inventoryLevel Inventory level being set.
        * @param options Options for adjusting an inventory level.
        */
-  def set(inventoryLevel: shopifyDashPrimeLib.distModelsInventoryUnderscoreLevelMod.InventoryLevel): stdLib.Promise[scala.Unit] = js.native
+  def set(inventoryLevel: shopifyDashPrimeLib.distModelsInventoryUnderscoreLevelMod.InventoryLevel): js.Promise[scala.Unit] = js.native
   /**
        * Sets the inventory level for an inventory item at a location.
        * @param inventoryLevel Inventory level being set.
@@ -67,6 +67,6 @@ class InventoryLevels protected ()
   def set(
     inventoryLevel: shopifyDashPrimeLib.distModelsInventoryUnderscoreLevelMod.InventoryLevel,
     options: shopifyDashPrimeLib.Anon_Disconnectifnecessary
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

@@ -32,11 +32,11 @@ object PlanNs extends js.Object {
     var plans: js.Array[Plan]
   }
   
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): stdLib.Promise[Plans] = js.native
-  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ListPlansParams): stdLib.Promise[Plans] = js.native
-  def create(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, data: Plan): stdLib.Promise[Plan] = js.native
-  def destroy(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[js.Object] = js.native
-  def modify(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String, data: Plan): stdLib.Promise[Plan] = js.native
-  def retrieve(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): stdLib.Promise[Plan] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config): js.Promise[Plans] = js.native
+  def all(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, params: ListPlansParams): js.Promise[Plans] = js.native
+  def create(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, data: Plan): js.Promise[Plan] = js.native
+  def destroy(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[js.Object] = js.native
+  def modify(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String, data: Plan): js.Promise[Plan] = js.native
+  def retrieve(config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config, uuid: java.lang.String): js.Promise[Plan] = js.native
 }
 

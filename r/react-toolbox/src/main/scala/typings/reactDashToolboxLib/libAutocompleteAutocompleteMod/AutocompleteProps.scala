@@ -37,7 +37,7 @@ trait AutocompleteProps
   /**
      * Callback function that is fired when the components's query value changes.
      */
-  var onQueryChange: js.UndefOr[js.Function] = js.undefined
+  var onQueryChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Determines if the selected list is shown above or below input. It can be above or below.
      * @default above

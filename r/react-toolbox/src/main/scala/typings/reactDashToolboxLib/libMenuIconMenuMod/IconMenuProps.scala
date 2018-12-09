@@ -40,15 +40,15 @@ trait IconMenuProps
   /**
      * Callback that will be called when the menu is being hidden.
      */
-  var onHide: js.UndefOr[js.Function] = js.undefined
+  var onHide: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback that will be invoked when a menu item is selected.
      */
-  var onSelect: js.UndefOr[js.Function] = js.undefined
+  var onSelect: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback that will be invoked when the menu is being shown.
      */
-  var onShow: js.UndefOr[js.Function] = js.undefined
+  var onShow: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Determines the position of the menu. This property is transferred to the inner Menu component.
      * @default auto

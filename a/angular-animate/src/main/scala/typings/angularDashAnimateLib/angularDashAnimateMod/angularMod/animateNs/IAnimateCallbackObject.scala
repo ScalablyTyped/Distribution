@@ -11,7 +11,7 @@ trait IAnimateCallbackObject extends js.Object {
     js.Function4[
       /* element */ angularLib.JQuery, 
       /* addedClasses */ java.lang.String, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -21,7 +21,7 @@ trait IAnimateCallbackObject extends js.Object {
       /* element */ angularLib.JQuery, 
       /* fromStyles */ java.lang.String, 
       /* toStyles */ java.lang.String, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -30,7 +30,7 @@ trait IAnimateCallbackObject extends js.Object {
     js.Function4[
       /* element */ angularLib.JQuery, 
       /* addedClasses */ java.lang.String, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -39,7 +39,7 @@ trait IAnimateCallbackObject extends js.Object {
     js.Function4[
       /* element */ angularLib.JQuery, 
       /* removedClasses */ java.lang.String, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -49,7 +49,7 @@ trait IAnimateCallbackObject extends js.Object {
       /* element */ angularLib.JQuery, 
       /* addedClasses */ java.lang.String, 
       /* removedClasses */ java.lang.String, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -57,7 +57,7 @@ trait IAnimateCallbackObject extends js.Object {
   var enter: js.UndefOr[
     js.Function3[
       /* element */ angularLib.JQuery, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -65,7 +65,7 @@ trait IAnimateCallbackObject extends js.Object {
   var eventFn: js.UndefOr[
     js.Function3[
       /* element */ angularLib.JQuery, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -73,7 +73,7 @@ trait IAnimateCallbackObject extends js.Object {
   var leave: js.UndefOr[
     js.Function3[
       /* element */ angularLib.JQuery, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -81,7 +81,7 @@ trait IAnimateCallbackObject extends js.Object {
   var move: js.UndefOr[
     js.Function3[
       /* element */ angularLib.JQuery, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -90,7 +90,7 @@ trait IAnimateCallbackObject extends js.Object {
     js.Function4[
       /* element */ angularLib.JQuery, 
       /* removedClasses */ java.lang.String, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]
@@ -100,7 +100,7 @@ trait IAnimateCallbackObject extends js.Object {
       /* element */ angularLib.JQuery, 
       /* addedClasses */ java.lang.String, 
       /* removedClasses */ java.lang.String, 
-      /* doneFunction */ js.Function, 
+      /* doneFunction */ angularLib.angularMod.Global.Function, 
       /* options */ IAnimationOptions, 
       _
     ]

@@ -390,14 +390,14 @@ class Material protected () extends IAnimatable {
            * @param options defines additional options for compiling the shaders
            * @returns a promise that resolves when the compilation completes
            */
-  def forceCompilationAsync(mesh: AbstractMesh): stdLib.Promise[scala.Unit] = js.native
+  def forceCompilationAsync(mesh: AbstractMesh): js.Promise[scala.Unit] = js.native
   /**
            * Force shader compilation
            * @param mesh defines the mesh that will use this material
            * @param options defines additional options for compiling the shaders
            * @returns a promise that resolves when the compilation completes
            */
-  def forceCompilationAsync(mesh: AbstractMesh, options: stdLib.Partial[babylonjsLib.Anon_ClipPlane]): stdLib.Promise[scala.Unit] = js.native
+  def forceCompilationAsync(mesh: AbstractMesh, options: stdLib.Partial[babylonjsLib.Anon_ClipPlane]): js.Promise[scala.Unit] = js.native
   /**
            * Locks updates for the material
            */

@@ -74,6 +74,6 @@ trait SignedData extends js.Object {
            * @returns {*}
            */
   def toSchema(encodeFlag: scala.Boolean): js.Any = js.native
-  def verify(options: VerifyParams): stdLib.PromiseLike[VerifyResult] = js.native
+  def verify(options: VerifyParams): js.Thenable[VerifyResult] = js.native
 }
 

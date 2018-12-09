@@ -10,8 +10,8 @@ trait IAilment extends js.Object {
   val id: java.lang.String
   var `implicit`: scala.Boolean
   var projects: js.UndefOr[js.Array[ProjectType]] = js.undefined
-  def detected(): stdLib.Promise[scala.Boolean]
-  def getMessage(): stdLib.Promise[java.lang.String]
-  def getTreatmentSteps(): stdLib.Promise[js.Array[PatientTreatmentStep]]
+  def detected(): js.Promise[scala.Boolean]
+  def getMessage(): js.Promise[java.lang.String]
+  def getTreatmentSteps(): js.Promise[js.Array[PatientTreatmentStep]]
 }
 

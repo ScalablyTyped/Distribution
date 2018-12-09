@@ -11,7 +11,7 @@ object promiseDotPrototypeDotFinallyModMembers extends js.Object {
   def apply[T, U](promise: promiseDotPrototypeDotFinallyLib.promiseDotPrototypeDotFinallyMod.Global.Promise[T]): promiseDotPrototypeDotFinallyLib.promiseDotPrototypeDotFinallyMod.Global.Promise[T] = js.native
   def apply[T, U](
     promise: promiseDotPrototypeDotFinallyLib.promiseDotPrototypeDotFinallyMod.Global.Promise[T],
-    onFinally: js.Function0[U | stdLib.PromiseLike[U]]
+    onFinally: js.Function0[U | js.Thenable[U]]
   ): promiseDotPrototypeDotFinallyLib.promiseDotPrototypeDotFinallyMod.Global.Promise[T] = js.native
   def shim(): scala.Unit = js.native
 }

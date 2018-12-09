@@ -47,35 +47,35 @@ trait Viewer extends js.Object {
   val vrButton: VRButton = js.native
   def destroy(): scala.Unit = js.native
   def extend(mixin: cesiumLib.cesiumMod.CesiumNs.ViewerNs.ViewerMixin, options: js.Any): scala.Unit = js.native
-  def flyTo(target: DataSource): stdLib.Promise[scala.Boolean] = js.native
-  def flyTo(target: DataSource, options: cesiumLib.Anon_Offset): stdLib.Promise[scala.Boolean] = js.native
-  def flyTo(target: Entity): stdLib.Promise[scala.Boolean] = js.native
-  def flyTo(target: EntityCollection): stdLib.Promise[scala.Boolean] = js.native
-  def flyTo(target: EntityCollection, options: cesiumLib.Anon_Offset): stdLib.Promise[scala.Boolean] = js.native
-  def flyTo(target: Entity, options: cesiumLib.Anon_Offset): stdLib.Promise[scala.Boolean] = js.native
-  def flyTo(target: js.Array[Entity]): stdLib.Promise[scala.Boolean] = js.native
-  def flyTo(target: js.Array[Entity], options: cesiumLib.Anon_Offset): stdLib.Promise[scala.Boolean] = js.native
-  def flyTo(target: stdLib.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource]): stdLib.Promise[scala.Boolean] = js.native
+  def flyTo(target: DataSource): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: DataSource, options: cesiumLib.Anon_Offset): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: Entity): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: EntityCollection): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: EntityCollection, options: cesiumLib.Anon_Offset): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: Entity, options: cesiumLib.Anon_Offset): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: js.Array[Entity]): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: js.Array[Entity], options: cesiumLib.Anon_Offset): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: js.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource]): js.Promise[scala.Boolean] = js.native
   def flyTo(
-    target: stdLib.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource],
+    target: js.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource],
     options: cesiumLib.Anon_Offset
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   def forceResize(): scala.Unit = js.native
   def isDestroyed(): scala.Boolean = js.native
   def render(): scala.Unit = js.native
   def resize(): scala.Unit = js.native
-  def zoomTo(target: DataSource): stdLib.Promise[scala.Boolean] = js.native
-  def zoomTo(target: DataSource, offset: HeadingPitchRange): stdLib.Promise[scala.Boolean] = js.native
-  def zoomTo(target: Entity): stdLib.Promise[scala.Boolean] = js.native
-  def zoomTo(target: EntityCollection): stdLib.Promise[scala.Boolean] = js.native
-  def zoomTo(target: EntityCollection, offset: HeadingPitchRange): stdLib.Promise[scala.Boolean] = js.native
-  def zoomTo(target: Entity, offset: HeadingPitchRange): stdLib.Promise[scala.Boolean] = js.native
-  def zoomTo(target: js.Array[Entity]): stdLib.Promise[scala.Boolean] = js.native
-  def zoomTo(target: js.Array[Entity], offset: HeadingPitchRange): stdLib.Promise[scala.Boolean] = js.native
-  def zoomTo(target: stdLib.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource]): stdLib.Promise[scala.Boolean] = js.native
+  def zoomTo(target: DataSource): js.Promise[scala.Boolean] = js.native
+  def zoomTo(target: DataSource, offset: HeadingPitchRange): js.Promise[scala.Boolean] = js.native
+  def zoomTo(target: Entity): js.Promise[scala.Boolean] = js.native
+  def zoomTo(target: EntityCollection): js.Promise[scala.Boolean] = js.native
+  def zoomTo(target: EntityCollection, offset: HeadingPitchRange): js.Promise[scala.Boolean] = js.native
+  def zoomTo(target: Entity, offset: HeadingPitchRange): js.Promise[scala.Boolean] = js.native
+  def zoomTo(target: js.Array[Entity]): js.Promise[scala.Boolean] = js.native
+  def zoomTo(target: js.Array[Entity], offset: HeadingPitchRange): js.Promise[scala.Boolean] = js.native
+  def zoomTo(target: js.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource]): js.Promise[scala.Boolean] = js.native
   def zoomTo(
-    target: stdLib.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource],
+    target: js.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource],
     offset: HeadingPitchRange
-  ): stdLib.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
 }
 

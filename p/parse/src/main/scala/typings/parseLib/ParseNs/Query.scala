@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation._
      */
 @JSGlobal("Parse.Query")
 @js.native
-class Query[T /* <: js.Object */] protected () extends BaseObject {
+class Query[T /* <: Object */] protected () extends BaseObject {
   def this(objectClass: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]) = this()
   def this(objectClass: java.lang.String) = this()
   var className: java.lang.String = js.native
@@ -79,27 +79,27 @@ class Query[T /* <: js.Object */] protected () extends BaseObject {
   def containedIn(key: java.lang.String, values: js.Array[_]): Query[T] = js.native
   def contains(key: java.lang.String, substring: java.lang.String): Query[T] = js.native
   def containsAll(key: java.lang.String, values: js.Array[_]): Query[T] = js.native
-  def count(): stdLib.Promise[scala.Double] = js.native
-  def count(options: parseLib.ParseNs.QueryNs.CountOptions): stdLib.Promise[scala.Double] = js.native
+  def count(): js.Promise[scala.Double] = js.native
+  def count(options: parseLib.ParseNs.QueryNs.CountOptions): js.Promise[scala.Double] = js.native
   def descending(key: java.lang.String): Query[T] = js.native
   def descending(key: js.Array[java.lang.String]): Query[T] = js.native
   def distinct(key: java.lang.String): Query[T] = js.native
   def doesNotExist(key: java.lang.String): Query[T] = js.native
-  def doesNotMatchKeyInQuery[U /* <: js.Object */](key: java.lang.String, queryKey: java.lang.String, query: Query[U]): Query[T] = js.native
-  def doesNotMatchQuery[U /* <: js.Object */](key: java.lang.String, query: Query[U]): Query[T] = js.native
-  def each(callback: js.Function): stdLib.Promise[scala.Unit] = js.native
-  def each(callback: js.Function, options: parseLib.ParseNs.QueryNs.EachOptions): stdLib.Promise[scala.Unit] = js.native
+  def doesNotMatchKeyInQuery[U /* <: Object */](key: java.lang.String, queryKey: java.lang.String, query: Query[U]): Query[T] = js.native
+  def doesNotMatchQuery[U /* <: Object */](key: java.lang.String, query: Query[U]): Query[T] = js.native
+  def each(callback: js.Function): js.Promise[scala.Unit] = js.native
+  def each(callback: js.Function, options: parseLib.ParseNs.QueryNs.EachOptions): js.Promise[scala.Unit] = js.native
   def endsWith(key: java.lang.String, suffix: java.lang.String): Query[T] = js.native
   def equalTo(key: java.lang.String, value: js.Any): Query[T] = js.native
   def exists(key: java.lang.String): Query[T] = js.native
-  def find(): stdLib.Promise[js.Array[T]] = js.native
-  def find(options: parseLib.ParseNs.QueryNs.FindOptions): stdLib.Promise[js.Array[T]] = js.native
-  def first(): stdLib.Promise[js.UndefOr[T]] = js.native
-  def first(options: parseLib.ParseNs.QueryNs.FirstOptions): stdLib.Promise[js.UndefOr[T]] = js.native
+  def find(): js.Promise[js.Array[T]] = js.native
+  def find(options: parseLib.ParseNs.QueryNs.FindOptions): js.Promise[js.Array[T]] = js.native
+  def first(): js.Promise[js.UndefOr[T]] = js.native
+  def first(options: parseLib.ParseNs.QueryNs.FirstOptions): js.Promise[js.UndefOr[T]] = js.native
   def fullText(key: java.lang.String, value: java.lang.String): Query[T] = js.native
   def fullText(key: java.lang.String, value: java.lang.String, options: parseLib.ParseNs.QueryNs.FullTextOptions): Query[T] = js.native
-  def get(objectId: java.lang.String): stdLib.Promise[T] = js.native
-  def get(objectId: java.lang.String, options: parseLib.ParseNs.QueryNs.GetOptions): stdLib.Promise[T] = js.native
+  def get(objectId: java.lang.String): js.Promise[T] = js.native
+  def get(objectId: java.lang.String, options: parseLib.ParseNs.QueryNs.GetOptions): js.Promise[T] = js.native
   def greaterThan(key: java.lang.String, value: js.Any): Query[T] = js.native
   def greaterThanOrEqualTo(key: java.lang.String, value: js.Any): Query[T] = js.native
   def include(key: java.lang.String): Query[T] = js.native
@@ -108,8 +108,8 @@ class Query[T /* <: js.Object */] protected () extends BaseObject {
   def lessThanOrEqualTo(key: java.lang.String, value: js.Any): Query[T] = js.native
   def limit(n: scala.Double): Query[T] = js.native
   def matches(key: java.lang.String, regex: stdLib.RegExp, modifiers: js.Any): Query[T] = js.native
-  def matchesKeyInQuery[U /* <: js.Object */](key: java.lang.String, queryKey: java.lang.String, query: Query[U]): Query[T] = js.native
-  def matchesQuery[U /* <: js.Object */](key: java.lang.String, query: Query[U]): Query[T] = js.native
+  def matchesKeyInQuery[U /* <: Object */](key: java.lang.String, queryKey: java.lang.String, query: Query[U]): Query[T] = js.native
+  def matchesQuery[U /* <: Object */](key: java.lang.String, query: Query[U]): Query[T] = js.native
   def near(key: java.lang.String, point: GeoPoint): Query[T] = js.native
   def notContainedIn(key: java.lang.String, values: js.Array[_]): Query[T] = js.native
   def notEqualTo(key: java.lang.String, value: js.Any): Query[T] = js.native
@@ -182,6 +182,6 @@ class Query[T /* <: js.Object */] protected () extends BaseObject {
 @JSGlobal("Parse.Query")
 @js.native
 object Query extends js.Object {
-  def or[U /* <: js.Object */](var_args: parseLib.ParseNs.Query[U]*): parseLib.ParseNs.Query[U] = js.native
+  def or[U /* <: parseLib.ParseNs.Object */](var_args: parseLib.ParseNs.Query[U]*): parseLib.ParseNs.Query[U] = js.native
 }
 

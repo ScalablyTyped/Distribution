@@ -30,19 +30,19 @@ abstract class Binary () extends js.Object {
        *
        * @param {string} version The version we are looking for. This could also be 'latest'.
        */
-  def getUrl(): stdLib.Promise[BinaryUrl] = js.native
+  def getUrl(): js.Promise[BinaryUrl] = js.native
   /**
        * Gets the url to download the file set by the version. This will use the XML if available.
        * If not, it will download from an existing url.
        *
        * @param {string} version The version we are looking for. This could also be 'latest'.
        */
-  def getUrl(version: java.lang.String): stdLib.Promise[BinaryUrl] = js.native
+  def getUrl(version: java.lang.String): js.Promise[BinaryUrl] = js.native
   /**
        * Gets the list of available versions available based on the xml. If no XML exists, return an
        * empty list.
        */
-  def getVersionList(): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def getVersionList(): js.Promise[js.Array[java.lang.String]] = js.native
   /**
        * Gets the id of the binary.
        */

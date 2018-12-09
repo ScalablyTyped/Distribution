@@ -31,7 +31,7 @@ object Loader extends js.Object {
   		* @param paths Object a set of className: path mappings
   		* @returns Ext.Loader this
   		*/
-  def addClassPathMappings(paths: js.Object): senchaUnderscoreTouchLib.ExtNs.ILoader = js.native
+  def addClassPathMappings(paths: senchaUnderscoreTouchLib.ExtNs.Object): senchaUnderscoreTouchLib.ExtNs.ILoader = js.native
   /** [Method] Explicitly exclude files from being loaded
   		* @param excludes Array
   		* @returns Object object contains require method for chaining.

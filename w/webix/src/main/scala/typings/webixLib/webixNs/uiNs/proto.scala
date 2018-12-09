@@ -15,7 +15,7 @@ class proto () extends baseview {
   var data: webixLib.webixNs.DataStore = js.native
   var `type`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   var types: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var waitData: stdLib.Promise[_] = js.native
+  var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
   def addCss(id: java.lang.String, css: java.lang.String): scala.Unit = js.native
@@ -66,9 +66,9 @@ class proto () extends baseview {
   def hasCss(id: java.lang.String, css: java.lang.String): scala.Boolean = js.native
   def hasCss(id: scala.Double, css: java.lang.String): scala.Boolean = js.native
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
-  def load(url: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String): stdLib.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): stdLib.Promise[_] = js.native
+  def load(url: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixNs.WebixCallback): js.Promise[_] = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,

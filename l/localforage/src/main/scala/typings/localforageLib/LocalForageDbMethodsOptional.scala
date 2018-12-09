@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 trait LocalForageDbMethodsOptional extends js.Object {
   @JSName("dropInstance")
   var dropInstance_Original: LocalForageDropInstanceFn = js.native
-  def dropInstance(): stdLib.Promise[scala.Unit] = js.native
-  def dropInstance(dbInstanceOptions: LocalForageDbInstanceOptions): stdLib.Promise[scala.Unit] = js.native
+  def dropInstance(): js.Promise[scala.Unit] = js.native
+  def dropInstance(dbInstanceOptions: LocalForageDbInstanceOptions): js.Promise[scala.Unit] = js.native
   def dropInstance(
     dbInstanceOptions: LocalForageDbInstanceOptions,
     callback: js.Function1[/* err */ js.Any, scala.Unit]
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

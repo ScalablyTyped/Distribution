@@ -36,12 +36,12 @@ class CzmlDataSource ()
 @js.native
 object CzmlDataSource extends js.Object {
   var updaters: js.Array[_] = js.native
-  def load(czml: cesiumLib.cesiumMod.CesiumNs.Resource): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
-  def load(czml: cesiumLib.cesiumMod.CesiumNs.Resource, options: cesiumLib.Anon_SourceUri): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
-  def load(czml: java.lang.String): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
-  def load(czml: java.lang.String, options: cesiumLib.Anon_SourceUri): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
-  def load(czml: js.Object): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
-  def load(czml: js.Object, options: cesiumLib.Anon_SourceUri): stdLib.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
+  def load(czml: cesiumLib.cesiumMod.CesiumNs.Resource): js.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
+  def load(czml: cesiumLib.cesiumMod.CesiumNs.Resource, options: cesiumLib.Anon_SourceUri): js.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
+  def load(czml: java.lang.String): js.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
+  def load(czml: java.lang.String, options: cesiumLib.Anon_SourceUri): js.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
+  def load(czml: js.Object): js.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
+  def load(czml: js.Object, options: cesiumLib.Anon_SourceUri): js.Promise[cesiumLib.cesiumMod.CesiumNs.CzmlDataSource] = js.native
   def processMaterialPacketData(
     `object`: js.Object,
     propertyName: java.lang.String,

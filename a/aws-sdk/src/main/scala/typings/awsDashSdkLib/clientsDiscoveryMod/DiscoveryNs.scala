@@ -13,15 +13,15 @@ object DiscoveryNs extends js.Object {
     /**
          * The agent/connector ID.
          */
-    var agentId: js.UndefOr[java.lang.String] = js.undefined
+    var agentId: js.UndefOr[String] = js.undefined
     /**
          * A description of the operation performed.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * Information about the status of the StartDataCollection and StopDataCollection operations. The system has recorded the data collection operation. The agent/connector receives this command the next time it polls for a new command. 
          */
-    var operationSucceeded: js.UndefOr[scala.Boolean] = js.undefined
+    var operationSucceeded: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -37,15 +37,15 @@ object DiscoveryNs extends js.Object {
     /**
          * Type of agent.
          */
-    var agentType: js.UndefOr[java.lang.String] = js.undefined
+    var agentType: js.UndefOr[String] = js.undefined
     /**
          * Status of the collection process for an agent or connector.
          */
-    var collectionStatus: js.UndefOr[java.lang.String] = js.undefined
+    var collectionStatus: js.UndefOr[String] = js.undefined
     /**
          * The ID of the connector.
          */
-    var connectorId: js.UndefOr[java.lang.String] = js.undefined
+    var connectorId: js.UndefOr[String] = js.undefined
     /**
          * The health of the agent or connector.
          */
@@ -53,19 +53,19 @@ object DiscoveryNs extends js.Object {
     /**
          * The name of the host where the agent or connector resides. The host can be a server or virtual machine.
          */
-    var hostName: js.UndefOr[java.lang.String] = js.undefined
+    var hostName: js.UndefOr[String] = js.undefined
     /**
          * Time since agent or connector health was reported.
          */
-    var lastHealthPingTime: js.UndefOr[java.lang.String] = js.undefined
+    var lastHealthPingTime: js.UndefOr[String] = js.undefined
     /**
          * Agent's first registration timestamp in UTC.
          */
-    var registeredTime: js.UndefOr[java.lang.String] = js.undefined
+    var registeredTime: js.UndefOr[String] = js.undefined
     /**
          * The agent or connector version.
          */
-    var version: js.UndefOr[java.lang.String] = js.undefined
+    var version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -73,11 +73,11 @@ object DiscoveryNs extends js.Object {
     /**
          * The IP address for the host where the agent/connector resides.
          */
-    var ipAddress: js.UndefOr[java.lang.String] = js.undefined
+    var ipAddress: js.UndefOr[String] = js.undefined
     /**
          * The MAC address for the host where the agent/connector resides.
          */
-    var macAddress: js.UndefOr[java.lang.String] = js.undefined
+    var macAddress: js.UndefOr[String] = js.undefined
   }
   
   
@@ -105,7 +105,7 @@ object DiscoveryNs extends js.Object {
   
   
   trait Configuration
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait ConfigurationTag extends js.Object {
@@ -172,11 +172,11 @@ object DiscoveryNs extends js.Object {
     /**
          * Description of the application to be created.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * Name of the application to be created.
          */
-    var name: java.lang.String
+    var name: String
   }
   
   
@@ -184,7 +184,7 @@ object DiscoveryNs extends js.Object {
     /**
          * Configuration ID of an application to be created.
          */
-    var configurationId: js.UndefOr[java.lang.String] = js.undefined
+    var configurationId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -326,7 +326,7 @@ object DiscoveryNs extends js.Object {
   
   
   trait DescribeConfigurationsAttribute
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait DescribeConfigurationsRequest extends js.Object {
@@ -520,7 +520,7 @@ object DiscoveryNs extends js.Object {
     /**
          * If true, the export of agent information exceeded the size limit for a single export and the exported data is incomplete for the requested time range. To address this, select a smaller time range for the export by using startDate and endDate.
          */
-    var isTruncated: js.UndefOr[scala.Boolean] = js.undefined
+    var isTruncated: js.UndefOr[Boolean] = js.undefined
     /**
          * The endTime used in the StartExportTask request. If no endTime was requested, this result does not appear in ExportInfo.
          */
@@ -544,7 +544,7 @@ object DiscoveryNs extends js.Object {
     /**
          * The name of the filter.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * A string value on which to filter. For example, if you choose the destinationServer.osVersion filter name, you could specify Ubuntu for the value.
          */
@@ -635,11 +635,11 @@ object DiscoveryNs extends js.Object {
     /**
          * Token to retrieve the next set of results. For example, if you previously specified 100 IDs for ListServerNeighborsRequest$neighborConfigurationIds but set ListServerNeighborsRequest$maxResults to 10, you received a set of 10 results along with a token. Use that token in this query to get the next set of 10.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * Flag to indicate if port and protocol information is needed as part of the response.
          */
-    var portInformationNeeded: js.UndefOr[scala.Boolean] = js.undefined
+    var portInformationNeeded: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -655,7 +655,7 @@ object DiscoveryNs extends js.Object {
     /**
          * Token to retrieve the next set of results. For example, if you specified 100 IDs for ListServerNeighborsRequest$neighborConfigurationIds but set ListServerNeighborsRequest$maxResults to 10, you received a set of 10 results along with this token. Use this token in the next query to retrieve the next set of 10.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -679,7 +679,7 @@ object DiscoveryNs extends js.Object {
     /**
          * The network protocol used for the connection.
          */
-    var transportProtocol: js.UndefOr[java.lang.String] = js.undefined
+    var transportProtocol: js.UndefOr[String] = js.undefined
   }
   
   
@@ -687,7 +687,7 @@ object DiscoveryNs extends js.Object {
     /**
          * The field on which to order.
          */
-    var fieldName: java.lang.String
+    var fieldName: String
     /**
          * Ordering direction.
          */
@@ -696,7 +696,7 @@ object DiscoveryNs extends js.Object {
   
   
   trait SchemaStorageConfig
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait StartContinuousExportRequest extends js.Object
@@ -1492,11 +1492,11 @@ object DiscoveryNs extends js.Object {
     /**
          * New description of the application to be updated.
          */
-    var description: js.UndefOr[java.lang.String] = js.undefined
+    var description: js.UndefOr[String] = js.undefined
     /**
          * New name of the application to be updated.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
   }
   
   

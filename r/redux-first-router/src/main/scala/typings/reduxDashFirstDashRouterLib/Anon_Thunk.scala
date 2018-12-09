@@ -14,7 +14,7 @@ trait Anon_Thunk[TState, TKeys] extends js.Object {
     reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.LocationState[TKeys, TState], 
     reduxLib.reduxMod.AnyAction
   ]
-  def thunk(store: reduxLib.reduxMod.Store[TState, reduxLib.reduxMod.AnyAction]): stdLib.Promise[
+  def thunk(store: reduxLib.reduxMod.Store[TState, reduxLib.reduxMod.AnyAction]): js.Promise[
     reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.Nullable[reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.RouteThunk[TState]]
   ]
 }

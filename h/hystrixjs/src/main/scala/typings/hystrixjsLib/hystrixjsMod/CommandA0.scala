@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait CommandA0[R] extends js.Object {
-  def execute[R](): stdLib.PromiseLike[R]
+  def execute[R](): js.Thenable[R]
 }
 

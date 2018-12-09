@@ -10,14 +10,14 @@ trait ComposeView extends js.Object {
   var destroyed: scala.Boolean = js.native
   def addButton(buttonDescriptor: ComposeButtonDescriptor): scala.Unit = js.native
   def addStatusBar(statusBarDescriptor: StatusBarDescriptor): StatusBarView = js.native
-  def attachFiles(files: js.Array[stdLib.Blob]): stdLib.Promise[scala.Unit] = js.native
-  def attachInlineFiles(Files: js.Array[stdLib.Blob]): stdLib.Promise[scala.Unit] = js.native
+  def attachFiles(files: js.Array[stdLib.Blob]): js.Promise[scala.Unit] = js.native
+  def attachInlineFiles(Files: js.Array[stdLib.Blob]): js.Promise[scala.Unit] = js.native
   def close(): scala.Unit = js.native
   def getBccRecipients(): js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact] = js.native
   def getBodyElement(): stdLib.HTMLElement = js.native
   def getCcRecipients(): js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact] = js.native
-  def getCurrentDraftID(): stdLib.Promise[java.lang.String | scala.Null] = js.native
-  def getDraftID(): stdLib.Promise[java.lang.String] = js.native
+  def getCurrentDraftID(): js.Promise[java.lang.String | scala.Null] = js.native
+  def getDraftID(): js.Promise[java.lang.String] = js.native
   def getFromContact(): inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact = js.native
   def getFromContactChoices(): js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact] = js.native
   def getHTMLContent(): java.lang.String = js.native
@@ -109,7 +109,7 @@ trait ComposeView extends js.Object {
     name: inboxsdkLib.inboxsdkLibStrings.toContactRemoved,
     cb: js.Function1[/* event */ inboxsdkLib.Anon_Contact, scala.Unit]
   ): scala.Unit = js.native
-  def popOut(): stdLib.Promise[ComposeView] = js.native
+  def popOut(): js.Promise[ComposeView] = js.native
   def send(): scala.Unit = js.native
   def send(options: SendOptions): scala.Unit = js.native
   def setBccRecipients(emails: js.Array[java.lang.String]): scala.Unit = js.native

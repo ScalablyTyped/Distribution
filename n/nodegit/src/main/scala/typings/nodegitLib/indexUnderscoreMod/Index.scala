@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Index () extends js.Object {
   def add(sourceEntry: nodegitLib.indexDashEntryMod.IndexEntry): scala.Double = js.native
-  def addAll(pathspec: java.lang.String, flags: scala.Double): stdLib.Promise[scala.Double] = js.native
-  def addAll(pathspec: java.lang.String, flags: scala.Double, callback: js.Function): stdLib.Promise[scala.Double] = js.native
-  def addAll(pathspec: js.Array[java.lang.String], flags: scala.Double): stdLib.Promise[scala.Double] = js.native
-  def addAll(pathspec: js.Array[java.lang.String], flags: scala.Double, callback: js.Function): stdLib.Promise[scala.Double] = js.native
-  def addAll(pathspec: nodegitLib.strDashArrayMod.Strarray, flags: scala.Double): stdLib.Promise[scala.Double] = js.native
-  def addAll(pathspec: nodegitLib.strDashArrayMod.Strarray, flags: scala.Double, callback: js.Function): stdLib.Promise[scala.Double] = js.native
-  def addByPath(path: java.lang.String): stdLib.Promise[scala.Double] = js.native
+  def addAll(pathspec: java.lang.String, flags: scala.Double): js.Promise[scala.Double] = js.native
+  def addAll(pathspec: java.lang.String, flags: scala.Double, callback: js.Function): js.Promise[scala.Double] = js.native
+  def addAll(pathspec: js.Array[java.lang.String], flags: scala.Double): js.Promise[scala.Double] = js.native
+  def addAll(pathspec: js.Array[java.lang.String], flags: scala.Double, callback: js.Function): js.Promise[scala.Double] = js.native
+  def addAll(pathspec: nodegitLib.strDashArrayMod.Strarray, flags: scala.Double): js.Promise[scala.Double] = js.native
+  def addAll(pathspec: nodegitLib.strDashArrayMod.Strarray, flags: scala.Double, callback: js.Function): js.Promise[scala.Double] = js.native
+  def addByPath(path: java.lang.String): js.Promise[scala.Double] = js.native
   def caps(): scala.Double = js.native
   def checksum(): nodegitLib.oidMod.Oid = js.native
   def clear(): scala.Double = js.native
@@ -25,7 +25,7 @@ class Index () extends js.Object {
     theirEntry: nodegitLib.indexDashEntryMod.IndexEntry
   ): scala.Double = js.native
   def conflictCleanup(): scala.Double = js.native
-  def conflictGet(path: java.lang.String): stdLib.Promise[nodegitLib.indexDashEntryMod.IndexEntry] = js.native
+  def conflictGet(path: java.lang.String): js.Promise[nodegitLib.indexDashEntryMod.IndexEntry] = js.native
   def conflictRemove(path: java.lang.String): scala.Double = js.native
   def entries(): js.Array[nodegitLib.indexDashEntryMod.IndexEntry] = js.native
   def entryCount(): scala.Double = js.native
@@ -38,26 +38,26 @@ class Index () extends js.Object {
   def read(force: scala.Double): scala.Double = js.native
   def readTree(tree: nodegitLib.treeMod.Tree): scala.Double = js.native
   def remove(path: java.lang.String, stage: scala.Double): scala.Double = js.native
-  def removeAll(pathspec: java.lang.String): stdLib.Promise[scala.Double] = js.native
-  def removeAll(pathspec: java.lang.String, callback: js.Function): stdLib.Promise[scala.Double] = js.native
-  def removeAll(pathspec: js.Array[java.lang.String]): stdLib.Promise[scala.Double] = js.native
-  def removeAll(pathspec: js.Array[java.lang.String], callback: js.Function): stdLib.Promise[scala.Double] = js.native
-  def removeAll(pathspec: nodegitLib.strDashArrayMod.Strarray): stdLib.Promise[scala.Double] = js.native
-  def removeAll(pathspec: nodegitLib.strDashArrayMod.Strarray, callback: js.Function): stdLib.Promise[scala.Double] = js.native
-  def removeByPath(path: java.lang.String): stdLib.Promise[scala.Double] = js.native
+  def removeAll(pathspec: java.lang.String): js.Promise[scala.Double] = js.native
+  def removeAll(pathspec: java.lang.String, callback: js.Function): js.Promise[scala.Double] = js.native
+  def removeAll(pathspec: js.Array[java.lang.String]): js.Promise[scala.Double] = js.native
+  def removeAll(pathspec: js.Array[java.lang.String], callback: js.Function): js.Promise[scala.Double] = js.native
+  def removeAll(pathspec: nodegitLib.strDashArrayMod.Strarray): js.Promise[scala.Double] = js.native
+  def removeAll(pathspec: nodegitLib.strDashArrayMod.Strarray, callback: js.Function): js.Promise[scala.Double] = js.native
+  def removeByPath(path: java.lang.String): js.Promise[scala.Double] = js.native
   def removeDirectory(dir: java.lang.String, stage: scala.Double): scala.Double = js.native
   def setCaps(caps: scala.Double): scala.Double = js.native
   def setVersion(version: scala.Double): scala.Double = js.native
-  def updateAll(pathspec: java.lang.String): stdLib.Promise[scala.Double] = js.native
-  def updateAll(pathspec: java.lang.String, callback: js.Function): stdLib.Promise[scala.Double] = js.native
-  def updateAll(pathspec: js.Array[java.lang.String]): stdLib.Promise[scala.Double] = js.native
-  def updateAll(pathspec: js.Array[java.lang.String], callback: js.Function): stdLib.Promise[scala.Double] = js.native
-  def updateAll(pathspec: nodegitLib.strDashArrayMod.Strarray): stdLib.Promise[scala.Double] = js.native
-  def updateAll(pathspec: nodegitLib.strDashArrayMod.Strarray, callback: js.Function): stdLib.Promise[scala.Double] = js.native
+  def updateAll(pathspec: java.lang.String): js.Promise[scala.Double] = js.native
+  def updateAll(pathspec: java.lang.String, callback: js.Function): js.Promise[scala.Double] = js.native
+  def updateAll(pathspec: js.Array[java.lang.String]): js.Promise[scala.Double] = js.native
+  def updateAll(pathspec: js.Array[java.lang.String], callback: js.Function): js.Promise[scala.Double] = js.native
+  def updateAll(pathspec: nodegitLib.strDashArrayMod.Strarray): js.Promise[scala.Double] = js.native
+  def updateAll(pathspec: nodegitLib.strDashArrayMod.Strarray, callback: js.Function): js.Promise[scala.Double] = js.native
   def version(): scala.Double = js.native
   def write(): scala.Double = js.native
-  def writeTree(): stdLib.Promise[nodegitLib.oidMod.Oid] = js.native
-  def writeTreeTo(repo: nodegitLib.repositoryMod.Repository): stdLib.Promise[nodegitLib.oidMod.Oid] = js.native
+  def writeTree(): js.Promise[nodegitLib.oidMod.Oid] = js.native
+  def writeTreeTo(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.oidMod.Oid] = js.native
 }
 
 @JSImport("nodegit/index_", "Index")
@@ -65,6 +65,6 @@ class Index () extends js.Object {
 object Index extends js.Object {
   def entryIsConflict(entry: nodegitLib.indexDashEntryMod.IndexEntry): scala.Boolean = js.native
   def entryStage(entry: nodegitLib.indexDashEntryMod.IndexEntry): scala.Double = js.native
-  def open(indexPath: java.lang.String): stdLib.Promise[nodegitLib.indexUnderscoreMod.Index] = js.native
+  def open(indexPath: java.lang.String): js.Promise[nodegitLib.indexUnderscoreMod.Index] = js.native
 }
 

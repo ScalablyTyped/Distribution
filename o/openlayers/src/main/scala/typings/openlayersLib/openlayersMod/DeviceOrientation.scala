@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("openlayers", "DeviceOrientation")
+@JSImport("openlayers", "DeviceOrientation")
 @js.native
-class DeviceOrientation () extends js.Object {
+class DeviceOrientation () extends Object {
   /**
        * @classdesc
        * The ol.DeviceOrientation class provides access to information from

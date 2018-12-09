@@ -404,7 +404,7 @@ object publicUnderscoreApiModMembers extends js.Object {
     injector: atAngularCoreLib.srcDiMod.Injector,
     options: atAngularCoreLib.srcLinkerCompilerMod.CompilerOptions,
     moduleType: atAngularCoreLib.srcTypeMod.Type[M]
-  ): stdLib.Promise[
+  ): js.Promise[
     atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[M]
   ] = js.native
   def ɵcompilePipe(`type`: atAngularCoreLib.srcTypeMod.Type[_], meta: atAngularCoreLib.srcMetadataDirectivesMod.Pipe): scala.Unit = js.native
@@ -648,6 +648,15 @@ object publicUnderscoreApiModMembers extends js.Object {
     index: scala.Double,
     styleIndex: scala.Double,
     value: java.lang.String,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String): scala.Unit = js.native
+  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String, suffix: java.lang.String): scala.Unit = js.native
+  def ɵelementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: nodeLib.String,
     suffix: java.lang.String,
     directiveIndex: scala.Double
   ): scala.Unit = js.native
@@ -1384,9 +1393,9 @@ object publicUnderscoreApiModMembers extends js.Object {
   def ɵresolveComponentResources(
     resourceResolver: js.Function1[
       /* url */ java.lang.String, 
-      stdLib.Promise[java.lang.String | atAngularCoreLib.Anon_Text]
+      js.Promise[java.lang.String | atAngularCoreLib.Anon_Text]
     ]
-  ): stdLib.Promise[scala.Null] = js.native
+  ): js.Promise[scala.Null] = js.native
   def ɵrestoreView(viewToRestore: atAngularCoreLib.srcRender3InterfacesViewMod.OpaqueViewState): scala.Unit = js.native
   def ɵsanitizeHtml(unsafeHtml: js.Any): java.lang.String = js.native
   def ɵsanitizeResourceUrl(unsafeResourceUrl: js.Any): java.lang.String = js.native
@@ -1746,6 +1755,6 @@ object publicUnderscoreApiModMembers extends js.Object {
     updateDirectives: scala.Null,
     updateRenderer: atAngularCoreLib.srcViewTypesMod.ViewUpdateFn
   ): atAngularCoreLib.srcViewTypesMod.ViewDefinition = js.native
-  def ɵwhenRendered(component: js.Any): stdLib.Promise[scala.Null] = js.native
+  def ɵwhenRendered(component: js.Any): js.Promise[scala.Null] = js.native
 }
 

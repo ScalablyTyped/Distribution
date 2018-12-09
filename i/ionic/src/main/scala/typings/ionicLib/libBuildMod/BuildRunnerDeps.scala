@@ -13,8 +13,8 @@ trait BuildRunnerDeps extends js.Object {
   @JSName("prompt")
   val prompt_Original: atIonicCliDashFrameworkLib.libPromptsMod.PromptModule = js.native
   val shell: ionicLib.definitionsMod.IShell = js.native
-  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionCheckbox): stdLib.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueCheckbox] = js.native
-  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionConfirm): stdLib.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueConfirm] = js.native
-  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionOther): stdLib.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueOther] = js.native
+  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionCheckbox): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueCheckbox] = js.native
+  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionConfirm): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueConfirm] = js.native
+  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionOther): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueOther] = js.native
 }
 

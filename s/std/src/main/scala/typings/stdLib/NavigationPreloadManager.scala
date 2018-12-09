@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait NavigationPreloadManager extends js.Object {
-  def disable(): Promise[scala.Unit]
-  def enable(): Promise[scala.Unit]
-  def getState(): Promise[NavigationPreloadState]
-  def setHeaderValue(value: java.lang.String): Promise[scala.Unit]
+  def disable(): js.Promise[scala.Unit]
+  def enable(): js.Promise[scala.Unit]
+  def getState(): js.Promise[NavigationPreloadState]
+  def setHeaderValue(value: java.lang.String): js.Promise[scala.Unit]
 }
 
 @JSGlobal("NavigationPreloadManager")

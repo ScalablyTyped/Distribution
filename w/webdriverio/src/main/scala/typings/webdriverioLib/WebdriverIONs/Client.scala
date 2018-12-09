@@ -1065,25 +1065,25 @@ trait Client[T] extends js.Object {
   def waitForVisible_PClient[P](selector: java.lang.String, milliseconds: scala.Double, reverse: scala.Boolean): Client[P] = js.native
   def waitUntil(
     condition: js.Function0[
-      (scala.Boolean | stdLib.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
+      (scala.Boolean | js.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
     ]
   ): Client[scala.Boolean] with js.Any = js.native
   def waitUntil(
     condition: js.Function0[
-      (scala.Boolean | stdLib.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
+      (scala.Boolean | js.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
     ],
     timeout: scala.Double
   ): Client[scala.Boolean] with js.Any = js.native
   def waitUntil(
     condition: js.Function0[
-      (scala.Boolean | stdLib.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
+      (scala.Boolean | js.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
     ],
     timeout: scala.Double,
     timeoutMsg: java.lang.String
   ): Client[scala.Boolean] with js.Any = js.native
   def waitUntil(
     condition: js.Function0[
-      (scala.Boolean | stdLib.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
+      (scala.Boolean | js.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
     ],
     timeout: scala.Double,
     timeoutMsg: java.lang.String,
@@ -1092,20 +1092,20 @@ trait Client[T] extends js.Object {
   @JSName("waitUntil")
   def waitUntil_PClient[P](
     condition: js.Function0[
-      (scala.Boolean | stdLib.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
+      (scala.Boolean | js.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
     ]
   ): Client[P] = js.native
   @JSName("waitUntil")
   def waitUntil_PClient[P](
     condition: js.Function0[
-      (scala.Boolean | stdLib.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
+      (scala.Boolean | js.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
     ],
     timeout: scala.Double
   ): Client[P] = js.native
   @JSName("waitUntil")
   def waitUntil_PClient[P](
     condition: js.Function0[
-      (scala.Boolean | stdLib.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
+      (scala.Boolean | js.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
     ],
     timeout: scala.Double,
     timeoutMsg: java.lang.String
@@ -1113,7 +1113,7 @@ trait Client[T] extends js.Object {
   @JSName("waitUntil")
   def waitUntil_PClient[P](
     condition: js.Function0[
-      (scala.Boolean | stdLib.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
+      (scala.Boolean | js.Promise[scala.Boolean] | Client[RawResult[_]]) with RawResult[_]
     ],
     timeout: scala.Double,
     timeoutMsg: java.lang.String,

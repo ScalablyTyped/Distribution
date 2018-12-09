@@ -15,10 +15,7 @@ object reactDashFauxDashDomModMembers extends js.Object {
   def withFauxDOM[P](
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]
   ): reactLib.reactMod.ReactNs.ComponentClass[
-    stdLib.Pick[
-      stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]], 
-      stdLib.Exclude[java.lang.String, java.lang.String]
-    ], 
+    stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]], 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
 }

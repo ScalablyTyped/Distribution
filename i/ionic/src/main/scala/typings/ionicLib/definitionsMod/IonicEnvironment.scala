@@ -16,9 +16,9 @@ trait IonicEnvironment extends js.Object {
   val prompt_Original: atIonicCliDashFrameworkLib.libPromptsMod.PromptModule = js.native
   val session: ISession = js.native
   val shell: IShell = js.native
-  def getInfo(): stdLib.Promise[js.Array[InfoItem]] = js.native
-  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionCheckbox): stdLib.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueCheckbox] = js.native
-  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionConfirm): stdLib.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueConfirm] = js.native
-  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionOther): stdLib.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueOther] = js.native
+  def getInfo(): js.Promise[js.Array[InfoItem]] = js.native
+  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionCheckbox): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueCheckbox] = js.native
+  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionConfirm): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueConfirm] = js.native
+  def prompt(question: atIonicCliDashFrameworkLib.libPromptsMod.PromptQuestionOther): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptValueOther] = js.native
 }
 

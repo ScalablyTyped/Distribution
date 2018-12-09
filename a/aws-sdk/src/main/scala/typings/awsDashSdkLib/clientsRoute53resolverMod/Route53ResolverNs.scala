@@ -517,7 +517,7 @@ object Route53ResolverNs extends js.Object {
     /**
          * Whether the PutResolverRulePolicy request was successful.
          */
-    var ReturnValue: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnValue: js.UndefOr[Boolean] = js.undefined
   }
   
   

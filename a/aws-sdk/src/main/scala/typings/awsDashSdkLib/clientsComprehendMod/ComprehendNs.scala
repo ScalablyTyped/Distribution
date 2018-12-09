@@ -193,11 +193,11 @@ object ComprehendNs extends js.Object {
     /**
          * The numeric error code of the error.
          */
-    var ErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorCode: js.UndefOr[String] = js.undefined
     /**
          * A text description of the error.
          */
-    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var ErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The zero-based index of the document in the input list.
          */
@@ -471,7 +471,7 @@ object ComprehendNs extends js.Object {
     /**
          * A UTF-8 text string. Each string should contain at least 20 characters and must contain fewer that 5,000 bytes of UTF-8 encoded characters.
          */
-    var Text: java.lang.String
+    var Text: String
   }
   
   
@@ -491,7 +491,7 @@ object ComprehendNs extends js.Object {
     /**
          * A UTF-8 text string. Each string must contain fewer that 5,000 bytes of UTF-8 encoded characters.
          */
-    var Text: java.lang.String
+    var Text: String
   }
   
   
@@ -511,7 +511,7 @@ object ComprehendNs extends js.Object {
     /**
          * A UTF-8 text string. Each string must contain fewer that 5,000 bytes of UTF-8 encoded characters.
          */
-    var Text: java.lang.String
+    var Text: String
   }
   
   
@@ -531,7 +531,7 @@ object ComprehendNs extends js.Object {
     /**
          * A UTF-8 text string. Each string must contain fewer that 5,000 bytes of UTF-8 encoded characters.
          */
-    var Text: java.lang.String
+    var Text: String
   }
   
   
@@ -555,7 +555,7 @@ object ComprehendNs extends js.Object {
     /**
          * A UTF-8 string. Each string must contain fewer that 5,000 bytes of UTF encoded characters.
          */
-    var Text: java.lang.String
+    var Text: String
   }
   
   
@@ -707,7 +707,7 @@ object ComprehendNs extends js.Object {
     /**
          * The RFC 5646 language code for the dominant language. For more information about RFC 5646, see Tags for Identifying Languages on the IETF Tools web site.
          */
-    var LanguageCode: js.UndefOr[java.lang.String] = js.undefined
+    var LanguageCode: js.UndefOr[String] = js.undefined
     /**
          * The level of confidence that Amazon Comprehend has in the accuracy of the detection.
          */
@@ -859,7 +859,7 @@ object ComprehendNs extends js.Object {
     /**
          * The text of the entity.
          */
-    var Text: js.UndefOr[java.lang.String] = js.undefined
+    var Text: js.UndefOr[String] = js.undefined
     /**
          * The entity's type.
          */
@@ -1055,7 +1055,7 @@ object ComprehendNs extends js.Object {
     /**
          * The text of a key noun phrase.
          */
-    var Text: js.UndefOr[java.lang.String] = js.undefined
+    var Text: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1135,7 +1135,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1147,7 +1147,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1163,7 +1163,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1175,7 +1175,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1191,7 +1191,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1203,7 +1203,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1219,7 +1219,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1231,7 +1231,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1247,7 +1247,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1259,7 +1259,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1275,7 +1275,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1287,7 +1287,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1303,7 +1303,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1311,7 +1311,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list containing the properties of each job that is returned.
          */
@@ -1331,7 +1331,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1339,7 +1339,7 @@ object ComprehendNs extends js.Object {
     /**
          * Identifies the next page of results to return.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * A list containing the properties of each job that is returned.
          */
@@ -1787,7 +1787,7 @@ object ComprehendNs extends js.Object {
     /**
          * The word that was recognized in the source text.
          */
-    var Text: js.UndefOr[java.lang.String] = js.undefined
+    var Text: js.UndefOr[String] = js.undefined
     /**
          * A unique identifier for a token.
          */
@@ -3065,7 +3065,7 @@ object ComprehendNs extends js.Object {
   type SentimentDetectionJobPropertiesList = js.Array[SentimentDetectionJobProperties]
   type SentimentType = awsDashSdkLib.awsDashSdkLibStrings.POSITIVE | awsDashSdkLib.awsDashSdkLibStrings.NEGATIVE | awsDashSdkLib.awsDashSdkLibStrings.NEUTRAL | awsDashSdkLib.awsDashSdkLibStrings.MIXED | java.lang.String
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type SyntaxLanguageCode = awsDashSdkLib.awsDashSdkLibStrings.en | awsDashSdkLib.awsDashSdkLibStrings.es | awsDashSdkLib.awsDashSdkLibStrings.fr | awsDashSdkLib.awsDashSdkLibStrings.de | awsDashSdkLib.awsDashSdkLibStrings.it | awsDashSdkLib.awsDashSdkLibStrings.pt | java.lang.String
   type Timestamp = stdLib.Date
   type TopicsDetectionJobPropertiesList = js.Array[TopicsDetectionJobProperties]

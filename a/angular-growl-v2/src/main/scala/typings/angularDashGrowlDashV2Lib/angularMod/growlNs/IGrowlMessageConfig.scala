@@ -13,8 +13,8 @@ trait IGrowlMessageConfig extends js.Object {
   var disableCloseButton: js.UndefOr[scala.Boolean] = js.undefined
   var disableCountDown: js.UndefOr[scala.Boolean] = js.undefined
   var disableIcons: js.UndefOr[scala.Boolean] = js.undefined
-  var onclose: js.UndefOr[js.Function] = js.undefined
-  var onopen: js.UndefOr[js.Function] = js.undefined
+  var onclose: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
+  var onopen: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
   var position: js.UndefOr[java.lang.String] = js.undefined
   var referenceId: js.UndefOr[scala.Double] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined

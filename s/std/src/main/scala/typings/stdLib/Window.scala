@@ -657,9 +657,9 @@ trait Window
   def confirm(message: java.lang.String): scala.Boolean = js.native
   def departFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): scala.Unit = js.native
   /* InferMemberOverrides */
-  override def fetch(input: RequestInfo): Promise[Response] = js.native
+  override def fetch(input: RequestInfo): js.Promise[Response] = js.native
   /* InferMemberOverrides */
-  override def fetch(input: RequestInfo, init: RequestInit): Promise[Response] = js.native
+  override def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   def focus(): scala.Unit = js.native
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native

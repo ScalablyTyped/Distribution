@@ -61,7 +61,7 @@ trait JQueryStatic extends js.Object {
        * @param html A string defining a single, standalone, HTML element (e.g. <div/> or <div></div>).
        * @param attributes An object of attributes, events, and methods to call on the newly-created element.
        */
-  def apply(html: java.lang.String, attributes: js.Object): JQuery = js.native
+  def apply(html: java.lang.String, attributes: Object): JQuery = js.native
   /**
        * Creates DOM elements on the fly from the provided string of raw HTML.
        *
@@ -332,7 +332,7 @@ trait JQueryStatic extends js.Object {
        * @param success A callback function that is executed if the request succeeds.
        * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, or html).
        */
-  def get(url: java.lang.String, data: js.Object): JQueryXHR = js.native
+  def get(url: java.lang.String, data: Object): JQueryXHR = js.native
   /**
        * Load data from the server using a HTTP GET request.
        *
@@ -343,7 +343,7 @@ trait JQueryStatic extends js.Object {
        */
   def get(
     url: java.lang.String,
-    data: js.Object,
+    data: Object,
     success: js.Function3[/* data */ js.Any, /* textStatus */ java.lang.String, /* jqXHR */ JQueryXHR, _]
   ): JQueryXHR = js.native
   /**
@@ -356,7 +356,7 @@ trait JQueryStatic extends js.Object {
        */
   def get(
     url: java.lang.String,
-    data: js.Object,
+    data: Object,
     success: js.Function3[/* data */ js.Any, /* textStatus */ java.lang.String, /* jqXHR */ JQueryXHR, _],
     dataType: java.lang.String
   ): JQueryXHR = js.native
@@ -417,7 +417,7 @@ trait JQueryStatic extends js.Object {
        * @param data A plain object or string that is sent to the server with the request.
        * @param success A callback function that is executed if the request succeeds.
        */
-  def getJSON(url: java.lang.String, data: js.Object): JQueryXHR = js.native
+  def getJSON(url: java.lang.String, data: Object): JQueryXHR = js.native
   /**
        * Load JSON-encoded data from the server using a GET HTTP request.
        *
@@ -427,7 +427,7 @@ trait JQueryStatic extends js.Object {
        */
   def getJSON(
     url: java.lang.String,
-    data: js.Object,
+    data: Object,
     success: js.Function3[/* data */ js.Any, /* textStatus */ java.lang.String, /* jqXHR */ JQueryXHR, _]
   ): JQueryXHR = js.native
   /**
@@ -596,13 +596,13 @@ trait JQueryStatic extends js.Object {
        *
        * @param removeAll A Boolean indicating whether to remove all jQuery variables from the global scope (including jQuery itself).
        */
-  def noConflict(): js.Object = js.native
+  def noConflict(): Object = js.native
   /**
        * Relinquish jQuery's control of the $ variable.
        *
        * @param removeAll A Boolean indicating whether to remove all jQuery variables from the global scope (including jQuery itself).
        */
-  def noConflict(removeAll: scala.Boolean): js.Object = js.native
+  def noConflict(removeAll: scala.Boolean): Object = js.native
   /**
        * An empty function.
        */
@@ -734,7 +734,7 @@ trait JQueryStatic extends js.Object {
        * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but can be null in that case.
        * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
        */
-  def post(url: java.lang.String, data: js.Object): JQueryXHR = js.native
+  def post(url: java.lang.String, data: Object): JQueryXHR = js.native
   /**
        * Load data from the server using a HTTP POST request.
        *
@@ -745,7 +745,7 @@ trait JQueryStatic extends js.Object {
        */
   def post(
     url: java.lang.String,
-    data: js.Object,
+    data: Object,
     success: js.Function3[/* data */ js.Any, /* textStatus */ java.lang.String, /* jqXHR */ JQueryXHR, _]
   ): JQueryXHR = js.native
   /**
@@ -758,7 +758,7 @@ trait JQueryStatic extends js.Object {
        */
   def post(
     url: java.lang.String,
-    data: js.Object,
+    data: Object,
     success: js.Function3[/* data */ js.Any, /* textStatus */ java.lang.String, /* jqXHR */ JQueryXHR, _],
     dataType: java.lang.String
   ): JQueryXHR = js.native
@@ -792,7 +792,7 @@ trait JQueryStatic extends js.Object {
        * @param name The name of the function whose context will be changed (should be a property of the context object).
        * @param additionalArguments Any number of arguments to be passed to the function named in the name argument.
        */
-  def proxy(context: js.Object, name: java.lang.String, additionalArguments: js.Any*): js.Any = js.native
+  def proxy(context: Object, name: java.lang.String, additionalArguments: js.Any*): js.Any = js.native
   /**
        * Takes a function and returns a new one that will always have a particular context.
        *
@@ -800,7 +800,7 @@ trait JQueryStatic extends js.Object {
        * @param context The object to which the context (this) of the function should be set.
        * @param additionalArguments Any number of arguments to be passed to the function referenced in the function argument.
        */
-  def proxy(fnction: js.Function1[/* repeated */js.Any, _], context: js.Object, additionalArguments: js.Any*): js.Any = js.native
+  def proxy(fnction: js.Function1[/* repeated */js.Any, _], context: Object, additionalArguments: js.Any*): js.Any = js.native
   /**
        * Show the queue of functions to be executed on the matched element.
        *

@@ -67,7 +67,7 @@ trait GoogleAnalyticsTracker extends js.Object {
        * @example tracker.dispatch().then(done => console.log("Dispatch is done: ", done));
        * @returns {Promise<boolean>} Returns when done
        */
-  def dispatch(): stdLib.Promise[scala.Boolean] = js.native
+  def dispatch(): js.Promise[scala.Boolean] = js.native
   /**
        * The same as `dispatch`, but also gives you the ability to time out
        * the Promise in case dispatch takes too long.
@@ -78,7 +78,7 @@ trait GoogleAnalyticsTracker extends js.Object {
        * @param {number} timeout The timeout. Default value is 15 sec.
        * @returns {Promise<boolean>} Returns when done or timed out
        */
-  def dispatchWithTimeout(): stdLib.Promise[scala.Boolean] = js.native
+  def dispatchWithTimeout(): js.Promise[scala.Boolean] = js.native
   /**
        * The same as `dispatch`, but also gives you the ability to time out
        * the Promise in case dispatch takes too long.
@@ -89,13 +89,13 @@ trait GoogleAnalyticsTracker extends js.Object {
        * @param {number} timeout The timeout. Default value is 15 sec.
        * @returns {Promise<boolean>} Returns when done or timed out
        */
-  def dispatchWithTimeout(timeout: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def dispatchWithTimeout(timeout: scala.Double): js.Promise[scala.Boolean] = js.native
   /**
        * Get the client id to be used for purpose of logging etc.
        * @example tracker.getClientId().then(clientId => console.log("Client id is: ", clientId));
        * @returns {Promise<string>}
        */
-  def getClientId(): stdLib.Promise[java.lang.String] = js.native
+  def getClientId(): js.Promise[java.lang.String] = js.native
   /**
        * Sets if AnonymizeIp is enabled
        * If enabled the last octet of the IP address will be removed

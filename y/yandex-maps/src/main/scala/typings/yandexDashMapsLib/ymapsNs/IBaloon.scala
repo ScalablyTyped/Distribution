@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 trait IBaloon[T]
   extends IPopup[T]
      with IFreezable {
-  def autoPan(): stdLib.Promise[T] = js.native
+  def autoPan(): js.Promise[T] = js.native
 }
 

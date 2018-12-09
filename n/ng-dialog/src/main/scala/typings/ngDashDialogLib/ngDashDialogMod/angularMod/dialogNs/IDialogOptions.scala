@@ -99,7 +99,7 @@ trait IDialogOptions extends js.Object {
   			 *
   			 * more: https://github.com/likeastore/ngDialog#preclosecallback-string--function
   			 */
-  var preCloseCallback: js.UndefOr[java.lang.String | js.Function] = js.undefined
+  var preCloseCallback: js.UndefOr[java.lang.String | angularLib.angularMod.Global.Function] = js.undefined
   /**
   			 * When true, closing the dialog restores focus to the element that launched it. Designed to improve keyboard
   			 * accessibility. Default value is true

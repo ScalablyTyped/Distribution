@@ -14,7 +14,7 @@ trait IResponseInterceptors extends js.Object {
            * @param error is whatever the previous interceptor resolved with.
            */
   var onFulfilled: js.UndefOr[
-    js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, stdLib.Promise[_]]
+    js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, js.Promise[_]]
   ] = js.undefined
   /**
            * This method is invoked when a previous interceptor has rejected the promise, use this to handle for example errors before they are sent into mixins.
@@ -23,7 +23,7 @@ trait IResponseInterceptors extends js.Object {
            * @param error is whatever the previous interceptor rejected with.
            */
   var onRejected: js.UndefOr[
-    js.Function3[/* session */ ISession, /* request */ js.Any, /* error */ js.Any, stdLib.Promise[_]]
+    js.Function3[/* session */ ISession, /* request */ js.Any, /* error */ js.Any, js.Promise[_]]
   ] = js.undefined
 }
 

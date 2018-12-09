@@ -14,7 +14,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
     ],
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TContainerNode,
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
@@ -25,7 +25,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
     ],
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TElementContainerNode,
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
@@ -36,7 +36,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
     ],
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TElementNode,
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
@@ -44,16 +44,16 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
   def createElementRef(
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
   def createTemplateRef[T](
-    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
+    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any]],
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
@@ -67,15 +67,15 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
   def injectElementRef(
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ]
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
   def injectRenderer2(): atAngularCoreLib.srcRenderApiMod.Renderer2 = js.native
   def injectTemplateRef[T](
-    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
+    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any]],
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ]
   ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[T] | scala.Null = js.native
   def injectViewContainerRef(
@@ -84,7 +84,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
     ],
     ElementRefToken: ScalablyTyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ]
   ): atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef = js.native
 }

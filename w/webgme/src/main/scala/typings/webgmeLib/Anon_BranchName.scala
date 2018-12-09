@@ -13,7 +13,7 @@ trait Anon_BranchName extends js.Object {
     rootHash: webgmeLib.CoreNs.ObjectHash,
     coreObjects: webgmeLib.CoreNs.DataObject,
     msg: java.lang.String
-  ): stdLib.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
+  ): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   def apply(
     branchName: java.lang.String,
     parents: js.Array[webgmeLib.GmeStorageNs.CommitHash],

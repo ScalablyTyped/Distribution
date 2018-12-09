@@ -32,18 +32,18 @@ import scala.scalajs.js.annotation._
 trait Collection[T]
   extends Events
      with IBaseObject {
-  var model: js.Object = js.native
-  var models: js.Array[js.Object] = js.native
+  var model: Object = js.native
+  var models: js.Array[Object] = js.native
   var query: Query = js.native
   def add(models: js.Array[_]): Collection[T] = js.native
   def add(models: js.Array[_], options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.CollectionNs.AddOptions): Collection[T] = js.native
-  def at(index: scala.Double): js.Object = js.native
-  def comparator(`object`: js.Object): js.Any = js.native
-  def create(model: js.Object): js.Object = js.native
-  def create(model: js.Object, options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.CollectionNs.CreateOptions): js.Object = js.native
+  def at(index: scala.Double): Object = js.native
+  def comparator(`object`: Object): js.Any = js.native
+  def create(model: Object): Object = js.native
+  def create(model: Object, options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.CollectionNs.CreateOptions): Object = js.native
   def fetch(): Promise[T] = js.native
   def fetch(options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.CollectionNs.FetchOptions): Promise[T] = js.native
-  def get(id: java.lang.String): js.Object = js.native
+  def get(id: java.lang.String): Object = js.native
   def getByCid(cid: js.Any): js.Any = js.native
   def initialize(): scala.Unit = js.native
   def pluck(attr: java.lang.String): js.Array[_] = js.native

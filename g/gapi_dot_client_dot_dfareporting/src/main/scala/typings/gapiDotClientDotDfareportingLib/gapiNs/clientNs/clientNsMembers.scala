@@ -72,7 +72,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotDfareportingLib.gapiDotClientDotDfareportingLibStrings.dfareporting,
     version: gapiDotClientDotDfareportingLib.gapiDotClientDotDfareportingLibStrings.v2DOT8
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotDfareportingLib.gapiDotClientDotDfareportingLibStrings.dfareporting,
     version: gapiDotClientDotDfareportingLib.gapiDotClientDotDfareportingLibStrings.v2DOT8,

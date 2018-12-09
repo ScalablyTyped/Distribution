@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation._
      */
 @JSImport("parse", "Query")
 @js.native
-class Query[T /* <: js.Object */] protected ()
+class Query[T /* <: parseLib.ParseNs.Object */] protected ()
   extends parseLib.nodeMod.Query[T] {
   def this(objectClass: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]) = this()
   def this(objectClass: java.lang.String) = this()
@@ -128,6 +128,6 @@ class Query[T /* <: js.Object */] protected ()
 @JSImport("parse", "Query")
 @js.native
 object Query extends js.Object {
-  def or[U /* <: js.Object */](var_args: parseLib.ParseNs.Query[U]*): parseLib.ParseNs.Query[U] = js.native
+  def or[U /* <: parseLib.ParseNs.Object */](var_args: parseLib.ParseNs.Query[U]*): parseLib.ParseNs.Query[U] = js.native
 }
 

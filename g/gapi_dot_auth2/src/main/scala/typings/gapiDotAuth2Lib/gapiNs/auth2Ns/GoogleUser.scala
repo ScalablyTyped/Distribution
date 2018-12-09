@@ -67,7 +67,7 @@ trait GoogleUser extends js.Object {
   /**
        * Forces a refresh of the access token, and then returns a Promise for the new AuthResponse.
        */
-  def reloadAuthResponse(): stdLib.Promise[AuthResponse] = js.native
+  def reloadAuthResponse(): js.Promise[AuthResponse] = js.native
   /**
        * Signs in the user. Use this method to request additional scopes for incremental
        * authorization or to sign in a user after the user has signed out.

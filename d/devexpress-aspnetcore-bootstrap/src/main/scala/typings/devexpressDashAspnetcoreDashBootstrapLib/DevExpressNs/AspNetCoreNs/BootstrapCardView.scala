@@ -631,7 +631,7 @@ class BootstrapCardView () extends BootstrapGridBase {
     eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.selectionChanged,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[CardViewSelectionEventArgs], scala.Unit]
   ): this.type = js.native
-  def performCallback(data: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def performCallback(data: js.Any): js.Promise[scala.Unit] = js.native
   def performCallback(data: js.Any, onSuccess: js.Function0[scala.Unit]): scala.Unit = js.native
   def prevPage(): scala.Unit = js.native
   def refresh(): scala.Unit = js.native

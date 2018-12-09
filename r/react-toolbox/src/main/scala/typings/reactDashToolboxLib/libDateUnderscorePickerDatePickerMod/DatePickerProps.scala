@@ -46,7 +46,7 @@ trait DatePickerProps
   /**
      * Function to format the date displayed on the input.
      */
-  var inputFormat: js.UndefOr[js.Function] = js.undefined
+  var inputFormat: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * The text string to use for the floating label element in the input component.
      */
@@ -78,23 +78,23 @@ trait DatePickerProps
   /**
      * Callback called when the picker value is changed.
      */
-  var onChange: js.UndefOr[js.Function] = js.undefined
+  var onChange: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback fired after dismissing the Dialog.
      */
-  var onDismiss: js.UndefOr[js.Function] = js.undefined
+  var onDismiss: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback called when the ESC key is pressed with the overlay active.
      */
-  var onEscKeyDown: js.UndefOr[js.Function] = js.undefined
+  var onEscKeyDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback invoked on Input key press.
      */
-  var onKeyPress: js.UndefOr[js.Function] = js.undefined
+  var onKeyPress: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * Callback to be invoked when the dialog overlay is clicked.
      */
-  var onOverlayClick: js.UndefOr[js.Function] = js.undefined
+  var onOverlayClick: js.UndefOr[coreDashJsLib.Function] = js.undefined
   /**
      * The input element will be readonly and look like disabled.
      */

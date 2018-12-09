@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Plugin extends js.Object {
-  var hooks: ScalablyTyped.runtime.StringDictionary[stdLib.Promise[_]]
+  var hooks: ScalablyTyped.runtime.StringDictionary[js.Promise[_]]
 }
 

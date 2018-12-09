@@ -36,19 +36,19 @@ class Client () extends Base {
       scala.Unit
     ]
   ): this.type = js.native
-  def search(serviceType: java.lang.String): scala.Unit | stdLib.Promise[scala.Unit] = js.native
+  def search(serviceType: java.lang.String): scala.Unit | js.Promise[scala.Unit] = js.native
   /**
   	 * Start the listener for multicast notifications from SSDP devices
   	 * @param cb callback to socket.bind
   	 * @returns promise when socket.bind is ready
   	 */
-  def start(): stdLib.Promise[scala.Unit] = js.native
+  def start(): js.Promise[scala.Unit] = js.native
   /**
   	 * Start the listener for multicast notifications from SSDP devices
   	 * @param cb callback to socket.bind
   	 * @returns promise when socket.bind is ready
   	 */
-  def start(cb: js.Function1[/* error */ nodeLib.Error, scala.Unit]): stdLib.Promise[scala.Unit] = js.native
+  def start(cb: js.Function1[/* error */ nodeLib.Error, scala.Unit]): js.Promise[scala.Unit] = js.native
   /**
   	 * Close UDP socket.
   	 */

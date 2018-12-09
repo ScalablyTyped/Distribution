@@ -53,7 +53,7 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the Amazon ECS container instance that hosts the job attempt.
          */
-    var containerInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var containerInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The exit code for the job attempt. A non-zero exit code is considered a failure.
          */
@@ -61,7 +61,7 @@ object BatchNs extends js.Object {
     /**
          * The name of the CloudWatch Logs log stream associated with the container. The log group for AWS Batch jobs is /aws/batch/job. Each container attempt receives a log stream name when they reach the RUNNING status.
          */
-    var logStreamName: js.UndefOr[java.lang.String] = js.undefined
+    var logStreamName: js.UndefOr[String] = js.undefined
     /**
          * The network interfaces associated with the job attempt.
          */
@@ -69,11 +69,11 @@ object BatchNs extends js.Object {
     /**
          * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
          */
-    var reason: js.UndefOr[java.lang.String] = js.undefined
+    var reason: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the Amazon ECS task that is associated with the job attempt. Each container attempt receives a task ARN when they reach the STARTING status.
          */
-    var taskArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskArn: js.UndefOr[String] = js.undefined
   }
   
   
@@ -89,7 +89,7 @@ object BatchNs extends js.Object {
     /**
          * A short, human-readable string to provide additional details about the current status of the job attempt.
          */
-    var statusReason: js.UndefOr[java.lang.String] = js.undefined
+    var statusReason: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp (in seconds and milliseconds) for when the attempt was stopped (when the attempt transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
          */
@@ -101,11 +101,11 @@ object BatchNs extends js.Object {
     /**
          * The AWS Batch job ID of the job to cancel.
          */
-    var jobId: java.lang.String
+    var jobId: String
     /**
          * A message to attach to the job that explains the reason for canceling it. This message is returned by future DescribeJobs operations on the job. This message is also recorded in the AWS Batch activity logs. 
          */
-    var reason: java.lang.String
+    var reason: String
   }
   
   
@@ -124,11 +124,11 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the compute environment. 
          */
-    var computeEnvironmentArn: java.lang.String
+    var computeEnvironmentArn: String
     /**
          * The name of the compute environment. 
          */
-    var computeEnvironmentName: java.lang.String
+    var computeEnvironmentName: String
     /**
          * The compute resources defined for the compute environment. 
          */
@@ -136,11 +136,11 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment. 
          */
-    var ecsClusterArn: java.lang.String
+    var ecsClusterArn: String
     /**
          * The service role associated with the compute environment that allows AWS Batch to make calls to AWS API operations on your behalf.
          */
-    var serviceRole: js.UndefOr[java.lang.String] = js.undefined
+    var serviceRole: js.UndefOr[String] = js.undefined
     /**
          * The state of the compute environment. The valid values are ENABLED or DISABLED.  If the state is ENABLED, then the AWS Batch scheduler can attempt to place jobs from an associated job queue on the compute resources within the environment. If the compute environment is managed, then it can scale its instances out or in automatically, based on the job queue demand. If the state is DISABLED, then the AWS Batch scheduler does not attempt to place jobs within the environment. Jobs in a STARTING or RUNNING state continue to progress normally. Managed compute environments in the DISABLED state do not scale out. However, they scale in to minvCpus value after instances become idle.
          */
@@ -152,7 +152,7 @@ object BatchNs extends js.Object {
     /**
          * A short, human-readable string to provide additional details about the current status of the compute environment.
          */
-    var statusReason: js.UndefOr[java.lang.String] = js.undefined
+    var statusReason: js.UndefOr[String] = js.undefined
     /**
          * The type of the compute environment.
          */
@@ -164,7 +164,7 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the compute environment.
          */
-    var computeEnvironment: java.lang.String
+    var computeEnvironment: String
     /**
          * The order of the compute environment.
          */
@@ -184,15 +184,15 @@ object BatchNs extends js.Object {
     /**
          * The EC2 key pair that is used for instances launched in the compute environment.
          */
-    var ec2KeyPair: js.UndefOr[java.lang.String] = js.undefined
+    var ec2KeyPair: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Machine Image (AMI) ID used for instances launched in the compute environment.
          */
-    var imageId: js.UndefOr[java.lang.String] = js.undefined
+    var imageId: js.UndefOr[String] = js.undefined
     /**
          * The Amazon ECS instance profile applied to Amazon EC2 instances in a compute environment. You can specify the short name or full Amazon Resource Name (ARN) of an instance profile. For example, ecsInstanceRole or arn:aws:iam::&lt;aws_account_id&gt;:instance-profile/ecsInstanceRole. For more information, see Amazon ECS Instance Role in the AWS Batch User Guide.
          */
-    var instanceRole: java.lang.String
+    var instanceRole: String
     /**
          * The instances types that may be launched. You can specify instance families to launch any instance type within those families (for example, c4 or p3), or you can specify specific sizes within a family (such as c4.8xlarge). You can also choose optimal to pick instance types (from the latest C, M, and R instance families) on the fly that match the demand of your job queues.
          */
@@ -212,7 +212,7 @@ object BatchNs extends js.Object {
     /**
          * The Amazon EC2 placement group to associate with your compute resources. If you intend to submit multi-node parallel jobs to your compute environment, you should consider creating a cluster placement group and associate it with your compute resources. This keeps your multi-node parallel job on a logical grouping of instances within a single Availability Zone with high network flow potential. For more information, see Placement Groups in the Amazon EC2 User Guide for Linux Instances.
          */
-    var placementGroup: js.UndefOr[java.lang.String] = js.undefined
+    var placementGroup: js.UndefOr[String] = js.undefined
     /**
          * The EC2 security group that is associated with instances launched in the compute environment. 
          */
@@ -220,7 +220,7 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment.
          */
-    var spotIamFleetRole: js.UndefOr[java.lang.String] = js.undefined
+    var spotIamFleetRole: js.UndefOr[String] = js.undefined
     /**
          * The VPC subnets into which the compute resources are launched. 
          */
@@ -260,7 +260,7 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the container instance on which the container is running.
          */
-    var containerInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    var containerInstanceArn: js.UndefOr[String] = js.undefined
     /**
          * The environment variables to pass to a container.  Environment variables must not start with AWS_BATCH; this naming convention is reserved for variables that are set by the AWS Batch service. 
          */
@@ -272,19 +272,19 @@ object BatchNs extends js.Object {
     /**
          * The image used to start the container.
          */
-    var image: js.UndefOr[java.lang.String] = js.undefined
+    var image: js.UndefOr[String] = js.undefined
     /**
          * The instance type of the underlying host infrastructure of a multi-node parallel job.
          */
-    var instanceType: js.UndefOr[java.lang.String] = js.undefined
+    var instanceType: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) associated with the job upon execution. 
          */
-    var jobRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var jobRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the CloudWatch Logs log stream associated with the container. The log group for AWS Batch jobs is /aws/batch/job. Each container attempt receives a log stream name when they reach the RUNNING status.
          */
-    var logStreamName: js.UndefOr[java.lang.String] = js.undefined
+    var logStreamName: js.UndefOr[String] = js.undefined
     /**
          * The number of MiB of memory reserved for the job.
          */
@@ -300,19 +300,19 @@ object BatchNs extends js.Object {
     /**
          * When this parameter is true, the container is given elevated privileges on the host container instance (similar to the root user).
          */
-    var privileged: js.UndefOr[scala.Boolean] = js.undefined
+    var privileged: js.UndefOr[Boolean] = js.undefined
     /**
          * When this parameter is true, the container is given read-only access to its root file system.
          */
-    var readonlyRootFilesystem: js.UndefOr[scala.Boolean] = js.undefined
+    var readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined
     /**
          * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
          */
-    var reason: js.UndefOr[java.lang.String] = js.undefined
+    var reason: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the Amazon ECS task that is associated with the container job. Each container attempt receives a task ARN when they reach the STARTING status.
          */
-    var taskArn: js.UndefOr[java.lang.String] = js.undefined
+    var taskArn: js.UndefOr[String] = js.undefined
     /**
          * A list of ulimit values to set in the container.
          */
@@ -320,7 +320,7 @@ object BatchNs extends js.Object {
     /**
          * The user name to use inside the container.
          */
-    var user: js.UndefOr[java.lang.String] = js.undefined
+    var user: js.UndefOr[String] = js.undefined
     /**
          * The number of VCPUs allocated for the job. 
          */
@@ -344,7 +344,7 @@ object BatchNs extends js.Object {
     /**
          * The instance type to use for a multi-node parallel job. This parameter is not valid for single-node container jobs.
          */
-    var instanceType: js.UndefOr[java.lang.String] = js.undefined
+    var instanceType: js.UndefOr[String] = js.undefined
     /**
          * The number of MiB of memory reserved for the job. This value overrides the value set in the job definition.
          */
@@ -368,15 +368,15 @@ object BatchNs extends js.Object {
     /**
          * The image used to start a container. This string is passed directly to the Docker daemon. Images in the Docker Hub registry are available by default. Other repositories are specified with  repository-url/image:tag . Up to 255 letters (uppercase and lowercase), numbers, hyphens, underscores, colons, periods, forward slashes, and number signs are allowed. This parameter maps to Image in the Create a container section of the Docker Remote API and the IMAGE parameter of docker run.   Images in Amazon ECR repositories use the full registry and repository URI (for example, 012345678910.dkr.ecr.&lt;region-name&gt;.amazonaws.com/&lt;repository-name&gt;).    Images in official repositories on Docker Hub use a single name (for example, ubuntu or mongo).   Images in other repositories on Docker Hub are qualified with an organization name (for example, amazon/amazon-ecs-agent).   Images in other online repositories are qualified further by a domain name (for example, quay.io/assemblyline/ubuntu).  
          */
-    var image: js.UndefOr[java.lang.String] = js.undefined
+    var image: js.UndefOr[String] = js.undefined
     /**
          * The instance type to use for a multi-node parallel job. Currently all node groups in a multi-node parallel job must use the same instance type. This parameter is not valid for single-node container jobs.
          */
-    var instanceType: js.UndefOr[java.lang.String] = js.undefined
+    var instanceType: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the IAM role that the container can assume for AWS permissions.
          */
-    var jobRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var jobRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The hard limit (in MiB) of memory to present to the container. If your container attempts to exceed the memory specified here, the container is killed. This parameter maps to Memory in the Create a container section of the Docker Remote API and the --memory option to docker run. You must specify at least 4 MiB of memory for a job.  If you are trying to maximize your resource utilization by providing your jobs as much memory as possible for a particular instance type, see Memory Management in the AWS Batch User Guide. 
          */
@@ -388,11 +388,11 @@ object BatchNs extends js.Object {
     /**
          * When this parameter is true, the container is given elevated privileges on the host container instance (similar to the root user). This parameter maps to Privileged in the Create a container section of the Docker Remote API and the --privileged option to docker run.
          */
-    var privileged: js.UndefOr[scala.Boolean] = js.undefined
+    var privileged: js.UndefOr[Boolean] = js.undefined
     /**
          * When this parameter is true, the container is given read-only access to its root file system. This parameter maps to ReadonlyRootfs in the Create a container section of the Docker Remote API and the --read-only option to docker run.
          */
-    var readonlyRootFilesystem: js.UndefOr[scala.Boolean] = js.undefined
+    var readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of ulimits to set in the container. This parameter maps to Ulimits in the Create a container section of the Docker Remote API and the --ulimit option to docker run.
          */
@@ -400,7 +400,7 @@ object BatchNs extends js.Object {
     /**
          * The user name to use inside the container. This parameter maps to User in the Create a container section of the Docker Remote API and the --user option to docker run.
          */
-    var user: js.UndefOr[java.lang.String] = js.undefined
+    var user: js.UndefOr[String] = js.undefined
     /**
          * The number of vCPUs reserved for the container. This parameter maps to CpuShares in the Create a container section of the Docker Remote API and the --cpu-shares option to docker run. Each vCPU is equivalent to 1,024 CPU shares. You must specify at least one vCPU.
          */
@@ -420,7 +420,7 @@ object BatchNs extends js.Object {
     /**
          * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
          */
-    var reason: js.UndefOr[java.lang.String] = js.undefined
+    var reason: js.UndefOr[String] = js.undefined
   }
   
   
@@ -428,7 +428,7 @@ object BatchNs extends js.Object {
     /**
          * The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
          */
-    var computeEnvironmentName: java.lang.String
+    var computeEnvironmentName: String
     /**
          * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments.
          */
@@ -436,7 +436,7 @@ object BatchNs extends js.Object {
     /**
          * The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf. If your specified role has a path other than /, then you must either specify the full role ARN (this is recommended) or prefix the role name with the path.  Depending on how you created your AWS Batch service role, its ARN may contain the service-role path prefix. When you only specify the name of the service role, AWS Batch assumes that your ARN does not use the service-role path prefix. Because of this, we recommend that you specify the full ARN of your service role when you create compute environments. 
          */
-    var serviceRole: java.lang.String
+    var serviceRole: String
     /**
          * The state of the compute environment. If the state is ENABLED, then the compute environment accepts jobs from a queue and can scale out automatically based on queues.
          */
@@ -452,11 +452,11 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the compute environment. 
          */
-    var computeEnvironmentArn: js.UndefOr[java.lang.String] = js.undefined
+    var computeEnvironmentArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the compute environment.
          */
-    var computeEnvironmentName: js.UndefOr[java.lang.String] = js.undefined
+    var computeEnvironmentName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -468,7 +468,7 @@ object BatchNs extends js.Object {
     /**
          * The name of the job queue.
          */
-    var jobQueueName: java.lang.String
+    var jobQueueName: String
     /**
          * The priority of the job queue. Job queues with a higher priority (or a higher integer value for the priority parameter) are evaluated first when associated with the same compute environment. Priority is determined in descending order, for example, a job queue with a priority value of 10 is given scheduling preference over a job queue with a priority value of 1.
          */
@@ -484,11 +484,11 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the job queue.
          */
-    var jobQueueArn: java.lang.String
+    var jobQueueArn: String
     /**
          * The name of the job queue.
          */
-    var jobQueueName: java.lang.String
+    var jobQueueName: String
   }
   
   
@@ -496,7 +496,7 @@ object BatchNs extends js.Object {
     /**
          * The name or Amazon Resource Name (ARN) of the compute environment to delete. 
          */
-    var computeEnvironment: java.lang.String
+    var computeEnvironment: String
   }
   
   
@@ -507,7 +507,7 @@ object BatchNs extends js.Object {
     /**
          * The short name or full Amazon Resource Name (ARN) of the queue to delete. 
          */
-    var jobQueue: java.lang.String
+    var jobQueue: String
   }
   
   
@@ -518,7 +518,7 @@ object BatchNs extends js.Object {
     /**
          * The name and revision (name:revision) or full Amazon Resource Name (ARN) of the job definition to deregister. 
          */
-    var jobDefinition: java.lang.String
+    var jobDefinition: String
   }
   
   
@@ -537,7 +537,7 @@ object BatchNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated DescribeComputeEnvironments request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value. This value is null when there are no more results to return.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -549,7 +549,7 @@ object BatchNs extends js.Object {
     /**
          * The nextToken value to include in a future DescribeComputeEnvironments request. When the results of a DescribeJobDefinitions request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -557,7 +557,7 @@ object BatchNs extends js.Object {
     /**
          * The name of the job definition to describe.
          */
-    var jobDefinitionName: js.UndefOr[java.lang.String] = js.undefined
+    var jobDefinitionName: js.UndefOr[String] = js.undefined
     /**
          * A space-separated list of up to 100 job definition names or full Amazon Resource Name (ARN) entries.
          */
@@ -569,11 +569,11 @@ object BatchNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated DescribeJobDefinitions request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value. This value is null when there are no more results to return.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * The status with which to filter job definitions.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
   }
   
   
@@ -585,7 +585,7 @@ object BatchNs extends js.Object {
     /**
          * The nextToken value to include in a future DescribeJobDefinitions request. When the results of a DescribeJobDefinitions request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -601,7 +601,7 @@ object BatchNs extends js.Object {
     /**
          * The nextToken value returned from a previous paginated DescribeJobQueues request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value. This value is null when there are no more results to return.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -613,7 +613,7 @@ object BatchNs extends js.Object {
     /**
          * The nextToken value to include in a future DescribeJobQueues request. When the results of a DescribeJobQueues request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -637,7 +637,7 @@ object BatchNs extends js.Object {
     /**
          * The path on the host container instance that is presented to the container. If this parameter is empty, then the Docker daemon has assigned a host path for you. If the host parameter contains a sourcePath file location, then the data volume persists at the specified location on the host container instance until you delete it manually. If the sourcePath value does not exist on the host container instance, the Docker daemon creates it. If the location does exist, the contents of the source path folder are exported.
          */
-    var sourcePath: js.UndefOr[java.lang.String] = js.undefined
+    var sourcePath: js.UndefOr[String] = js.undefined
   }
   
   
@@ -649,11 +649,11 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) for the job definition. 
          */
-    var jobDefinitionArn: java.lang.String
+    var jobDefinitionArn: String
     /**
          * The name of the job definition. 
          */
-    var jobDefinitionName: java.lang.String
+    var jobDefinitionName: String
     /**
          * An object with various properties specific to multi-node parallel jobs.
          */
@@ -673,7 +673,7 @@ object BatchNs extends js.Object {
     /**
          * The status of the job definition.
          */
-    var status: js.UndefOr[java.lang.String] = js.undefined
+    var status: js.UndefOr[String] = js.undefined
     /**
          * The timeout configuration for jobs that are submitted with this job definition. You can specify a timeout duration after which AWS Batch terminates your jobs if they have not finished.
          */
@@ -681,7 +681,7 @@ object BatchNs extends js.Object {
     /**
          * The type of job definition.
          */
-    var `type`: java.lang.String
+    var `type`: String
   }
   
   
@@ -689,7 +689,7 @@ object BatchNs extends js.Object {
     /**
          * The job ID of the AWS Batch job associated with this dependency.
          */
-    var jobId: js.UndefOr[java.lang.String] = js.undefined
+    var jobId: js.UndefOr[String] = js.undefined
     /**
          * The type of the job dependency.
          */
@@ -721,19 +721,19 @@ object BatchNs extends js.Object {
     /**
          * The job definition that is used by this job.
          */
-    var jobDefinition: java.lang.String
+    var jobDefinition: String
     /**
          * The ID for the job.
          */
-    var jobId: java.lang.String
+    var jobId: String
     /**
          * The name of the job.
          */
-    var jobName: java.lang.String
+    var jobName: String
     /**
          * The Amazon Resource Name (ARN) of the job queue with which the job is associated.
          */
-    var jobQueue: java.lang.String
+    var jobQueue: String
     /**
          * An object representing the details of a node that is associated with a multi-node parallel job.
          */
@@ -761,7 +761,7 @@ object BatchNs extends js.Object {
     /**
          * A short, human-readable string to provide additional details about the current status of the job. 
          */
-    var statusReason: js.UndefOr[java.lang.String] = js.undefined
+    var statusReason: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp (in seconds and milliseconds) for when the job was stopped (when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
          */
@@ -781,11 +781,11 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the job queue.
          */
-    var jobQueueArn: java.lang.String
+    var jobQueueArn: String
     /**
          * The name of the job queue.
          */
-    var jobQueueName: java.lang.String
+    var jobQueueName: String
     /**
          * The priority of the job queue. 
          */
@@ -801,7 +801,7 @@ object BatchNs extends js.Object {
     /**
          * A short, human-readable string to provide additional details about the current status of the job queue.
          */
-    var statusReason: js.UndefOr[java.lang.String] = js.undefined
+    var statusReason: js.UndefOr[String] = js.undefined
   }
   
   
@@ -821,11 +821,11 @@ object BatchNs extends js.Object {
     /**
          * The ID of the job.
          */
-    var jobId: java.lang.String
+    var jobId: String
     /**
          * The name of the job.
          */
-    var jobName: java.lang.String
+    var jobName: String
     /**
          * The node properties for a single node in a job summary list.
          */
@@ -841,7 +841,7 @@ object BatchNs extends js.Object {
     /**
          * A short, human-readable string to provide additional details about the current status of the job.
          */
-    var statusReason: js.UndefOr[java.lang.String] = js.undefined
+    var statusReason: js.UndefOr[String] = js.undefined
     /**
          * The Unix timestamp for when the job was stopped (when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
          */
@@ -861,11 +861,11 @@ object BatchNs extends js.Object {
     /**
          * The name of the key-value pair. For environment variables, this is the name of the environment variable.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * The value of the key-value pair. For environment variables, this is the value of the environment variable.
          */
-    var value: js.UndefOr[java.lang.String] = js.undefined
+    var value: js.UndefOr[String] = js.undefined
   }
   
   
@@ -873,15 +873,15 @@ object BatchNs extends js.Object {
     /**
          * The ID of the launch template.
          */
-    var launchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    var launchTemplateId: js.UndefOr[String] = js.undefined
     /**
          * The name of the launch template.
          */
-    var launchTemplateName: js.UndefOr[java.lang.String] = js.undefined
+    var launchTemplateName: js.UndefOr[String] = js.undefined
     /**
          * The version number of the launch template. Default: The default version of the launch template.
          */
-    var version: js.UndefOr[java.lang.String] = js.undefined
+    var version: js.UndefOr[String] = js.undefined
   }
   
   
@@ -889,11 +889,11 @@ object BatchNs extends js.Object {
     /**
          * The job ID for an array job. Specifying an array job ID with this parameter lists all child jobs from within the specified array.
          */
-    var arrayJobId: js.UndefOr[java.lang.String] = js.undefined
+    var arrayJobId: js.UndefOr[String] = js.undefined
     /**
          * The name or full Amazon Resource Name (ARN) of the job queue with which to list jobs.
          */
-    var jobQueue: js.UndefOr[java.lang.String] = js.undefined
+    var jobQueue: js.UndefOr[String] = js.undefined
     /**
          * The job status with which to filter jobs in the specified queue. If you do not specify a status, only RUNNING jobs are returned.
          */
@@ -905,11 +905,11 @@ object BatchNs extends js.Object {
     /**
          * The job ID for a multi-node parallel job. Specifying a multi-node parallel job ID with this parameter lists all nodes that are associated with the specified job.
          */
-    var multiNodeJobId: js.UndefOr[java.lang.String] = js.undefined
+    var multiNodeJobId: js.UndefOr[String] = js.undefined
     /**
          * The nextToken value returned from a previous paginated ListJobs request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value. This value is null when there are no more results to return.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -921,7 +921,7 @@ object BatchNs extends js.Object {
     /**
          * The nextToken value to include in a future ListJobs request. When the results of a ListJobs request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -929,15 +929,15 @@ object BatchNs extends js.Object {
     /**
          * The path on the container at which to mount the host volume.
          */
-    var containerPath: js.UndefOr[java.lang.String] = js.undefined
+    var containerPath: js.UndefOr[String] = js.undefined
     /**
          * If this value is true, the container has read-only access to the volume; otherwise, the container can write to the volume. The default value is false.
          */
-    var readOnly: js.UndefOr[scala.Boolean] = js.undefined
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the volume to mount.
          */
-    var sourceVolume: js.UndefOr[java.lang.String] = js.undefined
+    var sourceVolume: js.UndefOr[String] = js.undefined
   }
   
   
@@ -945,15 +945,15 @@ object BatchNs extends js.Object {
     /**
          * The attachment ID for the network interface.
          */
-    var attachmentId: js.UndefOr[java.lang.String] = js.undefined
+    var attachmentId: js.UndefOr[String] = js.undefined
     /**
          * The private IPv6 address for the network interface.
          */
-    var ipv6Address: js.UndefOr[java.lang.String] = js.undefined
+    var ipv6Address: js.UndefOr[String] = js.undefined
     /**
          * The private IPv4 address for the network interface.
          */
-    var privateIpv4Address: js.UndefOr[java.lang.String] = js.undefined
+    var privateIpv4Address: js.UndefOr[String] = js.undefined
   }
   
   
@@ -961,7 +961,7 @@ object BatchNs extends js.Object {
     /**
          * Specifies whether the current node is the main node for a multi-node parallel job.
          */
-    var isMainNode: js.UndefOr[scala.Boolean] = js.undefined
+    var isMainNode: js.UndefOr[Boolean] = js.undefined
     /**
          * The node index for the node. Node index numbering begins at zero. This index is also available on the node with the AWS_BATCH_JOB_NODE_INDEX environment variable.
          */
@@ -997,7 +997,7 @@ object BatchNs extends js.Object {
     /**
          * Specifies whether the current node is the main node for a multi-node parallel job.
          */
-    var isMainNode: js.UndefOr[scala.Boolean] = js.undefined
+    var isMainNode: js.UndefOr[Boolean] = js.undefined
     /**
          * The node index for the node. Node index numbering begins at zero. This index is also available on the node with the AWS_BATCH_JOB_NODE_INDEX environment variable.
          */
@@ -1017,7 +1017,7 @@ object BatchNs extends js.Object {
     /**
          * The range of nodes, using node index values, with which to override. A range of 0:3 indicates nodes with index values of 0 through 3. If the starting range value is omitted (:n), then 0 is used to start the range. If the ending range value is omitted (n:), then the highest possible node index is used to end the range.
          */
-    var targetNodes: java.lang.String
+    var targetNodes: String
   }
   
   
@@ -1029,12 +1029,12 @@ object BatchNs extends js.Object {
     /**
          * The range of nodes, using node index values. A range of 0:3 indicates nodes with index values of 0 through 3. If the starting range value is omitted (:n), then 0 is used to start the range. If the ending range value is omitted (n:), then the highest possible node index is used to end the range. Your accumulative node ranges must account for all nodes (0:n). You may nest node ranges, for example 0:10 and 4:5, in which case the 4:5 range properties override the 0:10 properties. 
          */
-    var targetNodes: java.lang.String
+    var targetNodes: String
   }
   
   
   trait ParametersMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait RegisterJobDefinitionRequest extends js.Object {
@@ -1045,7 +1045,7 @@ object BatchNs extends js.Object {
     /**
          * The name of the job definition to register. Up to 128 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
          */
-    var jobDefinitionName: java.lang.String
+    var jobDefinitionName: String
     /**
          * An object with various properties specific to multi-node parallel jobs. If you specify node properties for a job, it becomes a multi-node parallel job. For more information, see Multi-node Parallel Jobs in the AWS Batch User Guide. If the job definition's type parameter is container, then you must specify either containerProperties or nodeProperties.
          */
@@ -1073,11 +1073,11 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the job definition. 
          */
-    var jobDefinitionArn: java.lang.String
+    var jobDefinitionArn: String
     /**
          * The name of the job definition.
          */
-    var jobDefinitionName: java.lang.String
+    var jobDefinitionName: String
     /**
          * The revision of the job definition.
          */
@@ -1109,15 +1109,15 @@ object BatchNs extends js.Object {
     /**
          * The job definition used by this job. This value can be either a name:revision or the Amazon Resource Name (ARN) for the job definition.
          */
-    var jobDefinition: java.lang.String
+    var jobDefinition: String
     /**
          * The name of the job. The first character must be alphanumeric, and up to 128 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. 
          */
-    var jobName: java.lang.String
+    var jobName: String
     /**
          * The job queue into which the job is submitted. You can specify either the name or the Amazon Resource Name (ARN) of the queue. 
          */
-    var jobQueue: java.lang.String
+    var jobQueue: String
     /**
          * A list of node overrides in JSON format that specify the node range to target and the container overrides for that node range.
          */
@@ -1141,27 +1141,27 @@ object BatchNs extends js.Object {
     /**
          * The unique identifier for the job.
          */
-    var jobId: java.lang.String
+    var jobId: String
     /**
          * The name of the job. 
          */
-    var jobName: java.lang.String
+    var jobName: String
   }
   
   
   trait TagsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait TerminateJobRequest extends js.Object {
     /**
          * The AWS Batch job ID of the job to terminate.
          */
-    var jobId: java.lang.String
+    var jobId: String
     /**
          * A message to attach to the job that explains the reason for canceling it. This message is returned by future DescribeJobs operations on the job. This message is also recorded in the AWS Batch activity logs. 
          */
-    var reason: java.lang.String
+    var reason: String
   }
   
   
@@ -1647,7 +1647,7 @@ object BatchNs extends js.Object {
     /**
          * The type of the ulimit.
          */
-    var name: java.lang.String
+    var name: String
     /**
          * The soft limit for the ulimit type.
          */
@@ -1659,7 +1659,7 @@ object BatchNs extends js.Object {
     /**
          * The name or full Amazon Resource Name (ARN) of the compute environment to update.
          */
-    var computeEnvironment: java.lang.String
+    var computeEnvironment: String
     /**
          * Details of the compute resources managed by the compute environment. Required for a managed compute environment.
          */
@@ -1667,7 +1667,7 @@ object BatchNs extends js.Object {
     /**
          * The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf. If your specified role has a path other than /, then you must either specify the full role ARN (this is recommended) or prefix the role name with the path.  Depending on how you created your AWS Batch service role, its ARN may contain the service-role path prefix. When you only specify the name of the service role, AWS Batch assumes that your ARN does not use the service-role path prefix. Because of this, we recommend that you specify the full ARN of your service role when you create compute environments. 
          */
-    var serviceRole: js.UndefOr[java.lang.String] = js.undefined
+    var serviceRole: js.UndefOr[String] = js.undefined
     /**
          * The state of the compute environment. Compute environments in the ENABLED state can accept jobs from a queue and scale in or out automatically based on the workload demand of its associated queues.
          */
@@ -1679,11 +1679,11 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the compute environment. 
          */
-    var computeEnvironmentArn: js.UndefOr[java.lang.String] = js.undefined
+    var computeEnvironmentArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the compute environment.
          */
-    var computeEnvironmentName: js.UndefOr[java.lang.String] = js.undefined
+    var computeEnvironmentName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1695,7 +1695,7 @@ object BatchNs extends js.Object {
     /**
          * The name or the Amazon Resource Name (ARN) of the job queue.
          */
-    var jobQueue: java.lang.String
+    var jobQueue: String
     /**
          * The priority of the job queue. Job queues with a higher priority (or a higher integer value for the priority parameter) are evaluated first when associated with the same compute environment. Priority is determined in descending order, for example, a job queue with a priority value of 10 is given scheduling preference over a job queue with a priority value of 1.
          */
@@ -1711,11 +1711,11 @@ object BatchNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the job queue.
          */
-    var jobQueueArn: js.UndefOr[java.lang.String] = js.undefined
+    var jobQueueArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the job queue.
          */
-    var jobQueueName: js.UndefOr[java.lang.String] = js.undefined
+    var jobQueueName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1727,7 +1727,7 @@ object BatchNs extends js.Object {
     /**
          * The name of the volume. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. This name is referenced in the sourceVolume parameter of container definition mountPoints.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
   }
   
   val TypesNs: this.type = js.native
@@ -1758,7 +1758,7 @@ object BatchNs extends js.Object {
   type NodePropertyOverrides = js.Array[NodePropertyOverride]
   type NodeRangeProperties = js.Array[NodeRangeProperty]
   type String = java.lang.String
-  type StringList = js.Array[java.lang.String]
+  type StringList = js.Array[String]
   type Ulimits = js.Array[Ulimit]
   type Volumes = js.Array[Volume]
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-08-10` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String

@@ -773,7 +773,7 @@ object namespaced extends js.Object {
   // object
   def props[T](`object`: bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[T]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   // trusted promise for object
-  def props[T](`object`: stdLib.PromiseLike[bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[T]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
+  def props[T](`object`: js.Thenable[bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[T]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   /**
      * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled.
      *
@@ -877,23 +877,18 @@ object namespaced extends js.Object {
      */
   def using[R, T](
     disposer: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R],
-    executor: js.Function1[/* transaction */ R, stdLib.PromiseLike[T]]
+    executor: js.Function1[/* transaction */ R, js.Thenable[T]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def using[R1, R2, T](
     disposer: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R1],
     disposer2: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R2],
-    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, stdLib.PromiseLike[T]]
+    executor: js.Function2[/* transaction1 */ R1, /* transaction2 */ R2, js.Thenable[T]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def using[R1, R2, R3, T](
     disposer: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R1],
     disposer2: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R2],
     disposer3: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R3],
-    executor: js.Function3[
-      /* transaction1 */ R1, 
-      /* transaction2 */ R2, 
-      /* transaction3 */ R3, 
-      stdLib.PromiseLike[T]
-    ]
+    executor: js.Function3[/* transaction1 */ R1, /* transaction2 */ R2, /* transaction3 */ R3, js.Thenable[T]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
 }
 

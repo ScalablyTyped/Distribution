@@ -12,7 +12,7 @@ trait PersistConfig extends js.Object {
   /**
            * Used for migrations.
            */
-  var getStoredState: js.UndefOr[js.Function1[/* config */ PersistConfig, stdLib.Promise[PersistedState]]] = js.undefined
+  var getStoredState: js.UndefOr[js.Function1[/* config */ PersistConfig, js.Promise[PersistedState]]] = js.undefined
   var key: java.lang.String
   /**
            * **Depricated:** keyPrefix is going to be removed in v6.
@@ -22,7 +22,7 @@ trait PersistConfig extends js.Object {
     js.Function2[
       /* state */ PersistedState, 
       /* versionKey */ scala.Double, 
-      stdLib.Promise[PersistedState]
+      js.Promise[PersistedState]
     ]
   ] = js.undefined
   var serialize: js.UndefOr[scala.Boolean] = js.undefined

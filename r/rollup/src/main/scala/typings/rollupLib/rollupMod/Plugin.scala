@@ -12,14 +12,14 @@ trait Plugin extends js.Object {
     js.ThisFunction1[
       /* this */ PluginContext, 
       /* err */ js.UndefOr[js.Any], 
-      stdLib.Promise[scala.Unit] | scala.Unit
+      js.Promise[scala.Unit] | scala.Unit
     ]
   ] = js.undefined
   var buildStart: js.UndefOr[
     js.ThisFunction1[
       /* this */ PluginContext, 
       /* options */ InputOptions, 
-      stdLib.Promise[scala.Unit] | scala.Unit
+      js.Promise[scala.Unit] | scala.Unit
     ]
   ] = js.undefined
   var cacheKey: js.UndefOr[java.lang.String] = js.undefined
@@ -30,7 +30,7 @@ trait Plugin extends js.Object {
       /* options */ OutputOptions, 
       /* bundle */ OutputBundle, 
       /* isWrite */ scala.Boolean, 
-      scala.Unit | stdLib.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ]
   ] = js.undefined
   var intro: js.UndefOr[AddonHook] = js.undefined
@@ -42,7 +42,7 @@ trait Plugin extends js.Object {
       /* this */ PluginContext, 
       /* options */ OutputOptions, 
       /* chunk */ OutputChunk, 
-      scala.Unit | stdLib.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ]
   ] = js.undefined
   // TODO: deprecate
@@ -51,7 +51,7 @@ trait Plugin extends js.Object {
       /* this */ PluginContext, 
       /* options */ OutputOptions, 
       /* chunk */ OutputChunk, 
-      scala.Unit | stdLib.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ]
   ] = js.undefined
   var options: js.UndefOr[js.Function1[/* options */ InputOptions, InputOptions | scala.Unit | scala.Null]] = js.undefined

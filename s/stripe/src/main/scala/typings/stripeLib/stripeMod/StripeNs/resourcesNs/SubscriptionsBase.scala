@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SubscriptionsBase
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def del(subscriptionId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  def del(subscriptionId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   def del(
     subscriptionId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionCancellationOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   /**
                * Cancels a customer's subscription. If you set the at_period_end parameter to true, the subscription will remain active until
                * the end of the period, at which point it will be canceled and not renewed. By default, the subscription is terminated
@@ -35,7 +35,7 @@ trait SubscriptionsBase
     subscriptionId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionCancellationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   /**
                * Cancels a customer's subscription. If you set the at_period_end parameter to true, the subscription will remain active until
                * the end of the period, at which point it will be canceled and not renewed. By default, the subscription is terminated
@@ -59,23 +59,23 @@ trait SubscriptionsBase
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionCancellationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   def del(
     subscriptionId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionCancellationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
-  def del(subscriptionId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  def del(subscriptionId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   def del(
     subscriptionId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   def del(
     subscriptionId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
-  def deleteDiscount(subscriptionId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  def deleteDiscount(subscriptionId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**
                * Removes the currently applied discount on a subscription.
                *
@@ -84,7 +84,7 @@ trait SubscriptionsBase
                *
                * @param subscriptionId The ID of the subscription.
                */
-  def deleteDiscount(subscriptionId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  def deleteDiscount(subscriptionId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   /**
                * Removes the currently applied discount on a subscription.
                *
@@ -97,15 +97,15 @@ trait SubscriptionsBase
     subscriptionId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IDeleteConfirmation]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
   def deleteDiscount(
     subscriptionId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.IDeleteConfirmation]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
-  def list(): stdLib.Promise[
+  ): js.Promise[stripeLib.stripeMod.StripeNs.IDeleteConfirmation] = js.native
+  def list(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
   ] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionListOptions): stdLib.Promise[
+  def list(data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
   ] = js.native
   /**
@@ -121,7 +121,7 @@ trait SubscriptionsBase
   def list(
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
   ] = js.native
   /**
@@ -140,7 +140,7 @@ trait SubscriptionsBase
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
   ] = js.native
   def list(
@@ -148,10 +148,10 @@ trait SubscriptionsBase
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
   ] = js.native
-  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[
+  def list(options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
   ] = js.native
   def list(
@@ -159,17 +159,17 @@ trait SubscriptionsBase
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
   ] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
   ] = js.native
-  def retrieve(subscriptionId: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  def retrieve(subscriptionId: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   /**
                * By default, you can see the 10 most recent active subscriptions stored on a customer directly on the customer
                * object, but you can also retrieve details about a specific active subscription for a customer.
@@ -178,7 +178,7 @@ trait SubscriptionsBase
                *
                * @param subscriptionId The ID of the subscription to retrieve
                */
-  def retrieve(subscriptionId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  def retrieve(subscriptionId: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   /**
                * By default, you can see the 10 most recent active subscriptions stored on a customer directly on the customer
                * object, but you can also retrieve details about a specific active subscription for a customer.
@@ -191,15 +191,15 @@ trait SubscriptionsBase
     subscriptionId: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   def retrieve(
     subscriptionId: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   def update(
     subscriptionId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionUpdateOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   /**
                * Updates an existing subscription on a customer to match the specified parameters. When changing plans or quantities,
                * we will optionally prorate the price we charge next month to make up for any price changes.
@@ -228,7 +228,7 @@ trait SubscriptionsBase
     subscriptionId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   /**
                * Updates an existing subscription on a customer to match the specified parameters. When changing plans or quantities,
                * we will optionally prorate the price we charge next month to make up for any price changes.
@@ -258,11 +258,11 @@ trait SubscriptionsBase
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
   def update(
     subscriptionId: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscriptionUpdateOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription] = js.native
 }
 

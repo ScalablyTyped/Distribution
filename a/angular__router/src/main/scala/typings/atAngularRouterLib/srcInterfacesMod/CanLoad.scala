@@ -10,6 +10,6 @@ trait CanLoad extends js.Object {
   def canLoad(
     route: atAngularRouterLib.srcConfigMod.Route,
     segments: js.Array[atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSegment]
-  ): rxjsLib.rxjsMod.Observable[scala.Boolean] | stdLib.Promise[scala.Boolean] | scala.Boolean
+  ): rxjsLib.rxjsMod.Observable[scala.Boolean] | js.Promise[scala.Boolean] | scala.Boolean
 }
 

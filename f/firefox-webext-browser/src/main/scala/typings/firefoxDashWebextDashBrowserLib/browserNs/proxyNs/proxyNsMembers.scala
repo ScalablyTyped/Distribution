@@ -22,13 +22,13 @@ object proxyNsMembers extends js.Object {
   val settings: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting = js.native
   /* proxy functions */
   /** Registers the proxy script for the extension. */
-  def register(url: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def register(url: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
        * Registers the proxy script for the extension.
        * @deprecated Please use `proxy.register`
        */
-  def registerProxyScript(url: java.lang.String): stdLib.Promise[_] = js.native
+  def registerProxyScript(url: java.lang.String): js.Promise[_] = js.native
   /** Unregisters the proxy script for the extension. */
-  def unregister(): stdLib.Promise[scala.Unit] = js.native
+  def unregister(): js.Promise[scala.Unit] = js.native
 }
 

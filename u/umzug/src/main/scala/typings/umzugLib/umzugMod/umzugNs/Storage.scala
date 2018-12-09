@@ -13,18 +13,18 @@ import scala.scalajs.js.annotation._
 
 trait Storage extends js.Object {
   /** Gets list of executed migrations. */
-  def executed(): stdLib.Promise[js.Array[java.lang.String]]
+  def executed(): js.Promise[js.Array[nodeLib.String]]
   /**
            * Logs migration to be considered as executed.
            *
            * @param migrationName - Name of the migration to be logged.
            */
-  def logMigration(migrationName: java.lang.String): stdLib.Promise[scala.Unit]
+  def logMigration(migrationName: java.lang.String): js.Promise[scala.Unit]
   /**
            * Unlogs migration to be considered as pending.
            *
            * @param migrationName - Name of the migration to be unlogged.
            */
-  def unlogMigration(migrationName: java.lang.String): stdLib.Promise[scala.Unit]
+  def unlogMigration(migrationName: java.lang.String): js.Promise[scala.Unit]
 }
 

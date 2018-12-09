@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IRequestHandler extends js.Object {
   def canHandleAuthentication(response: IHttpClientResponse): scala.Boolean
-  def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): stdLib.Promise[IHttpClientResponse]
+  def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): js.Promise[IHttpClientResponse]
   def prepareRequest(options: nodeLib.httpMod.RequestOptions): scala.Unit
 }
 

@@ -88,7 +88,7 @@ trait Ajv extends js.Object {
       * @param {Function} callback optional node-style callback, it is always called with 2 parameters: error (or null) and validating function.
       * @return {PromiseLike<ValidateFunction>} validating function
       */
-  def compileAsync(schema: js.Object): stdLib.PromiseLike[ValidateFunction] = js.native
+  def compileAsync(schema: js.Object): js.Thenable[ValidateFunction] = js.native
   /**
       * Creates validating function for passed schema with asynchronous loading of missing schemas.
       * `loadSchema` option should be a function that accepts schema uri and node-style callback.
@@ -98,7 +98,7 @@ trait Ajv extends js.Object {
       * @param {Function} callback optional node-style callback, it is always called with 2 parameters: error (or null) and validating function.
       * @return {PromiseLike<ValidateFunction>} validating function
       */
-  def compileAsync(schema: js.Object, meta: scala.Boolean): stdLib.PromiseLike[ValidateFunction] = js.native
+  def compileAsync(schema: js.Object, meta: scala.Boolean): js.Thenable[ValidateFunction] = js.native
   /**
       * Creates validating function for passed schema with asynchronous loading of missing schemas.
       * `loadSchema` option should be a function that accepts schema uri and node-style callback.
@@ -112,7 +112,7 @@ trait Ajv extends js.Object {
     schema: js.Object,
     meta: scala.Boolean,
     callback: js.Function2[/* err */ stdLib.Error, /* validate */ ValidateFunction, _]
-  ): stdLib.PromiseLike[ValidateFunction] = js.native
+  ): js.Thenable[ValidateFunction] = js.native
   /**
       * Creates validating function for passed schema with asynchronous loading of missing schemas.
       * `loadSchema` option should be a function that accepts schema uri and node-style callback.
@@ -122,7 +122,7 @@ trait Ajv extends js.Object {
       * @param {Function} callback optional node-style callback, it is always called with 2 parameters: error (or null) and validating function.
       * @return {PromiseLike<ValidateFunction>} validating function
       */
-  def compileAsync(schema: scala.Boolean): stdLib.PromiseLike[ValidateFunction] = js.native
+  def compileAsync(schema: scala.Boolean): js.Thenable[ValidateFunction] = js.native
   /**
       * Creates validating function for passed schema with asynchronous loading of missing schemas.
       * `loadSchema` option should be a function that accepts schema uri and node-style callback.
@@ -132,7 +132,7 @@ trait Ajv extends js.Object {
       * @param {Function} callback optional node-style callback, it is always called with 2 parameters: error (or null) and validating function.
       * @return {PromiseLike<ValidateFunction>} validating function
       */
-  def compileAsync(schema: scala.Boolean, meta: scala.Boolean): stdLib.PromiseLike[ValidateFunction] = js.native
+  def compileAsync(schema: scala.Boolean, meta: scala.Boolean): js.Thenable[ValidateFunction] = js.native
   /**
       * Creates validating function for passed schema with asynchronous loading of missing schemas.
       * `loadSchema` option should be a function that accepts schema uri and node-style callback.
@@ -146,7 +146,7 @@ trait Ajv extends js.Object {
     schema: scala.Boolean,
     meta: scala.Boolean,
     callback: js.Function2[/* err */ stdLib.Error, /* validate */ ValidateFunction, _]
-  ): stdLib.PromiseLike[ValidateFunction] = js.native
+  ): js.Thenable[ValidateFunction] = js.native
   /**
       * Convert array of error message objects to string
       * @param  {Array<object>} errors optional array of validation errors, if not passed errors from the instance are used.
@@ -247,7 +247,7 @@ trait Ajv extends js.Object {
       * @param  {Any} data to be validated
       * @return {Boolean} validation result. Errors from the last validation will be available in `ajv.errors` (and also in compiled schema: `schema.errors`).
       */
-  def validate(schemaKeyRef: java.lang.String, data: js.Any): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  def validate(schemaKeyRef: java.lang.String, data: js.Any): scala.Boolean | js.Thenable[_] = js.native
   /**
       * Validate data using schema
       * Schema will be compiled and cached (using serialized JSON as key, [fast-json-stable-stringify](https://github.com/epoberezkin/fast-json-stable-stringify) is used to serialize by default).
@@ -255,7 +255,7 @@ trait Ajv extends js.Object {
       * @param  {Any} data to be validated
       * @return {Boolean} validation result. Errors from the last validation will be available in `ajv.errors` (and also in compiled schema: `schema.errors`).
       */
-  def validate(schemaKeyRef: js.Object, data: js.Any): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  def validate(schemaKeyRef: js.Object, data: js.Any): scala.Boolean | js.Thenable[_] = js.native
   /**
       * Validate data using schema
       * Schema will be compiled and cached (using serialized JSON as key, [fast-json-stable-stringify](https://github.com/epoberezkin/fast-json-stable-stringify) is used to serialize by default).
@@ -263,7 +263,7 @@ trait Ajv extends js.Object {
       * @param  {Any} data to be validated
       * @return {Boolean} validation result. Errors from the last validation will be available in `ajv.errors` (and also in compiled schema: `schema.errors`).
       */
-  def validate(schemaKeyRef: scala.Boolean, data: js.Any): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  def validate(schemaKeyRef: scala.Boolean, data: js.Any): scala.Boolean | js.Thenable[_] = js.native
   /**
       * Validate schema
       * @param {object|Boolean} schema schema to validate

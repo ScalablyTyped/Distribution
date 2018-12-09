@@ -10,14 +10,14 @@ trait LanguageService extends js.Object {
   var toLineColumnOffset: js.UndefOr[
     js.Function2[/* fileName */ java.lang.String, /* position */ scala.Double, LineAndCharacter]
   ] = js.native
-  def applyCodeActionCommand(action: js.Array[CodeActionCommand]): stdLib.Promise[js.Array[ApplyCodeActionCommandResult]] = js.native
-  def applyCodeActionCommand(action: js.Array[CodeActionCommand], formatSettings: FormatCodeSettings): stdLib.Promise[js.Array[ApplyCodeActionCommandResult]] = js.native
-  def applyCodeActionCommand(action: CodeActionCommand): stdLib.Promise[ApplyCodeActionCommandResult] = js.native
-  def applyCodeActionCommand(action: CodeActionCommand, formatSettings: FormatCodeSettings): stdLib.Promise[ApplyCodeActionCommandResult] = js.native
+  def applyCodeActionCommand(action: js.Array[CodeActionCommand]): js.Promise[js.Array[ApplyCodeActionCommandResult]] = js.native
+  def applyCodeActionCommand(action: js.Array[CodeActionCommand], formatSettings: FormatCodeSettings): js.Promise[js.Array[ApplyCodeActionCommandResult]] = js.native
+  def applyCodeActionCommand(action: CodeActionCommand): js.Promise[ApplyCodeActionCommandResult] = js.native
+  def applyCodeActionCommand(action: CodeActionCommand, formatSettings: FormatCodeSettings): js.Promise[ApplyCodeActionCommandResult] = js.native
   /** @deprecated `fileName` will be ignored */
-  def applyCodeActionCommand(fileName: java.lang.String, action: js.Array[CodeActionCommand]): stdLib.Promise[js.Array[ApplyCodeActionCommandResult]] = js.native
+  def applyCodeActionCommand(fileName: java.lang.String, action: js.Array[CodeActionCommand]): js.Promise[js.Array[ApplyCodeActionCommandResult]] = js.native
   /** @deprecated `fileName` will be ignored */
-  def applyCodeActionCommand(fileName: java.lang.String, action: CodeActionCommand): stdLib.Promise[ApplyCodeActionCommandResult] = js.native
+  def applyCodeActionCommand(fileName: java.lang.String, action: CodeActionCommand): js.Promise[ApplyCodeActionCommandResult] = js.native
   def cleanupSemanticCache(): scala.Unit = js.native
   def dispose(): scala.Unit = js.native
   def findReferences(fileName: java.lang.String, position: scala.Double): js.UndefOr[js.Array[ReferencedSymbol]] = js.native

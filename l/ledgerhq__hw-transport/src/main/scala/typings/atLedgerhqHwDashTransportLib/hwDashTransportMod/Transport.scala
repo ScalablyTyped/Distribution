@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Transport[TDescriptor /* <: Descriptor */] extends js.Object {
-  def close(): stdLib.Promise[scala.Unit] = js.native
-  def exchange(apdu: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
+  def exchange(apdu: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def off(eventName: java.lang.String, cb: js.Any): scala.Unit = js.native
   def on(eventName: java.lang.String, cb: js.Any): scala.Unit = js.native
   def send(
@@ -18,7 +18,7 @@ trait Transport[TDescriptor /* <: Descriptor */] extends js.Object {
     p2: scala.Double,
     data: nodeLib.Buffer,
     statusList: js.Array[scala.Double]
-  ): stdLib.Promise[nodeLib.Buffer] = js.native
+  ): js.Promise[nodeLib.Buffer] = js.native
   def setDebugMode(debug: js.Function1[/* log */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def setDebugMode(debug: scala.Boolean): scala.Unit = js.native
   def setExchangeTimeout(exchangeTimeout: scala.Double): scala.Unit = js.native

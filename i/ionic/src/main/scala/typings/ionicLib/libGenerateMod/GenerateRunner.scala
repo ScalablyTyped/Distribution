@@ -17,9 +17,9 @@ abstract class GenerateRunner[T /* <: ionicLib.definitionsMod.GenerateOptions */
   def ensureCommandLine(
     inputs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineInputs,
     options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions
-  ): stdLib.Promise[scala.Unit] = js.native
-  def getCommandMetadata(): stdLib.Promise[stdLib.Partial[ionicLib.definitionsMod.CommandMetadata]] = js.native
+  ): js.Promise[scala.Unit] = js.native
+  def getCommandMetadata(): js.Promise[stdLib.Partial[ionicLib.definitionsMod.CommandMetadata]] = js.native
   /* CompleteClass */
-  override def run(options: T): stdLib.Promise[scala.Unit] = js.native
+  override def run(options: T): js.Promise[scala.Unit] = js.native
 }
 

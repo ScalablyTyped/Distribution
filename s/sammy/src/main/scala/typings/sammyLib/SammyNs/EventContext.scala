@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @js.native
+@js.native
 trait EventContext
-  extends ScalablyTyped.runtime.Instantiable5[
+  extends Object
+     with ScalablyTyped.runtime.Instantiable5[
       /* app */ js.Any, 
       /* verb */ js.Any, 
       /* path */ js.Any, 

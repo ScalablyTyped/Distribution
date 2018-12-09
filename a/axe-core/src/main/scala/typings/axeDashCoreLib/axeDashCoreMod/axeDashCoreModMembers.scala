@@ -56,7 +56,7 @@ object axeDashCoreModMembers extends js.Object {
   	 * @param   {RunCallback}    callback Optional The function to invoke when analysis is complete.
   	 * @returns {Promise<AxeResults>|void} If the callback was not defined, aXe will return a Promise.
   	 */
-  def run(): stdLib.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults] = js.native
+  def run(): js.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults] = js.native
   def run(
     callback: js.Function2[
       /* error */ stdLib.Error, 
@@ -72,7 +72,7 @@ object axeDashCoreModMembers extends js.Object {
   	 * @param   {RunCallback}    callback Optional The function to invoke when analysis is complete.
   	 * @returns {Promise<AxeResults>|void} If the callback was not defined, aXe will return a Promise.
   	 */
-  def run(context: axeDashCoreLib.axeDashCoreMod.axeNs.ElementContext): stdLib.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults] = js.native
+  def run(context: axeDashCoreLib.axeDashCoreMod.axeNs.ElementContext): js.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults] = js.native
   def run(
     context: axeDashCoreLib.axeDashCoreMod.axeNs.ElementContext,
     callback: axeDashCoreLib.axeDashCoreMod.axeNs.RunCallback
@@ -80,13 +80,13 @@ object axeDashCoreModMembers extends js.Object {
   def run(
     context: axeDashCoreLib.axeDashCoreMod.axeNs.ElementContext,
     options: axeDashCoreLib.axeDashCoreMod.axeNs.RunOptions
-  ): stdLib.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults] = js.native
+  ): js.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults] = js.native
   def run(
     context: axeDashCoreLib.axeDashCoreMod.axeNs.ElementContext,
     options: axeDashCoreLib.axeDashCoreMod.axeNs.RunOptions,
     callback: axeDashCoreLib.axeDashCoreMod.axeNs.RunCallback
   ): scala.Unit = js.native
-  def run(options: axeDashCoreLib.axeDashCoreMod.axeNs.RunOptions): stdLib.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults] = js.native
+  def run(options: axeDashCoreLib.axeDashCoreMod.axeNs.RunOptions): js.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults] = js.native
   def run(
     options: axeDashCoreLib.axeDashCoreMod.axeNs.RunOptions,
     callback: axeDashCoreLib.axeDashCoreMod.axeNs.RunCallback

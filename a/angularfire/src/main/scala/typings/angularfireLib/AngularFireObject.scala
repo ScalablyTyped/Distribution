@@ -119,7 +119,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 * @returns {Function} invoke to stop observing events
   	 */
   @JSName("$watch")
-  def $watch(callback: js.Function): js.Function = js.native
+  def $watch(callback: angularLib.angularMod.Global.Function): angularLib.angularMod.Global.Function = js.native
   /**
   	 * Listeners passed into this method are notified whenever a new change is received
   	 * from the server. Each invocation is sent an object containing
@@ -132,6 +132,6 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 * @returns {Function} invoke to stop observing events
   	 */
   @JSName("$watch")
-  def $watch(callback: js.Function, context: js.Any): js.Function = js.native
+  def $watch(callback: angularLib.angularMod.Global.Function, context: js.Any): angularLib.angularMod.Global.Function = js.native
 }
 

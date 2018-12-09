@@ -12,7 +12,7 @@ class Sheet () extends js.Object {
            * Sets the size information on a sheet. Note that if the sheet is a Worksheet,
            * only SheetSizeBehavior.AUTOMATIC is allowed since you can’t actually set a Worksheet to a fixed size.
            */
-  def changeSizeAsync(options: SheetSizeOptions): stdLib.Promise[SheetSizeOptions] = js.native
+  def changeSizeAsync(options: SheetSizeOptions): js.Promise[SheetSizeOptions] = js.native
   /** Gets the index of the sheet within the published tabs. Note that hidden tabs are still counted in the ordering, as long as they are published. */
   def getIndex(): scala.Double = js.native
   /** Gets a value indicating whether the sheet is the currently active sheet. */

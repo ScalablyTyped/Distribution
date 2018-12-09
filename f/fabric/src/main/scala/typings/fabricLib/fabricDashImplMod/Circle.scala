@@ -5,16 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Circle")
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.ICircleOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+@JSImport("fabric/fabric-impl", "Circle")
 @js.native
-class Circle () extends ICircleOptions {
+class Circle () extends Object {
   def this(options: ICircleOptions) = this()
-  /**
-  	 * Returns complexity of an instance
-  	 * @return complexity of this instance
-  	 */
-  def complexity(): scala.Double = js.native
   /**
   	 * Returns horizontal radius of an object (according to how an object is scaled)
   	 */
@@ -27,18 +22,6 @@ class Circle () extends ICircleOptions {
   	 * Sets radius of an object (and updates width accordingly)
   	 */
   def setRadius(value: scala.Double): scala.Double = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(): js.Any = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return object representation of an instance
-  	 */
-  def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Returns svg representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
@@ -53,8 +36,7 @@ class Circle () extends ICircleOptions {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Circle")
+@JSImport("fabric/fabric-impl", "Circle")
 @js.native
 object Circle extends js.Object {
   /**

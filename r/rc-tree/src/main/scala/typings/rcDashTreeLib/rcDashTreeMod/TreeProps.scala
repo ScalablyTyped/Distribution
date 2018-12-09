@@ -74,7 +74,7 @@ trait TreeProps extends js.Object {
   /**
        * load data asynchronously
        */
-  var loadData: js.UndefOr[js.Function1[/* node */ InternalTreeNode, stdLib.Promise[_]]] = js.undefined
+  var loadData: js.UndefOr[js.Function1[/* node */ InternalTreeNode, js.Promise[_]]] = js.undefined
   /**
        * whether multiple select
        */

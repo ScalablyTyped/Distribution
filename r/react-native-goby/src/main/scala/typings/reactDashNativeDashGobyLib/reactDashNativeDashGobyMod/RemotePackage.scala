@@ -16,12 +16,12 @@ trait RemotePackage extends Package {
        *
        * @param downloadProgressCallback An optional callback that allows tracking the progress of the update while it is being downloaded.
        */
-  def download(): stdLib.Promise[LocalPackage] = js.native
+  def download(): js.Promise[LocalPackage] = js.native
   /**
        * Downloads the available update from the Goby service.
        *
        * @param downloadProgressCallback An optional callback that allows tracking the progress of the update while it is being downloaded.
        */
-  def download(downloadProgressCallback: DownloadProgressCallback): stdLib.Promise[LocalPackage] = js.native
+  def download(downloadProgressCallback: DownloadProgressCallback): js.Promise[LocalPackage] = js.native
 }
 

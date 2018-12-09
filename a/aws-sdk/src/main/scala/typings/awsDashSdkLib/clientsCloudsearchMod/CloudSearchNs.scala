@@ -23,19 +23,19 @@ object CloudSearchNs extends js.Object {
     /**
          * A JSON array that contains a collection of terms, tokens, readings and part of speech for Japanese Tokenizaiton. The Japanese tokenization dictionary enables you to override the default tokenization for selected terms. This is only valid for Japanese language fields.
          */
-    var JapaneseTokenizationDictionary: js.UndefOr[java.lang.String] = js.undefined
+    var JapaneseTokenizationDictionary: js.UndefOr[String] = js.undefined
     /**
          * A JSON object that contains a collection of string:value pairs that each map a term to its stem. For example, {"term1": "stem1", "term2": "stem2", "term3": "stem3"}. The stemming dictionary is applied in addition to any algorithmic stemming. This enables you to override the results of the algorithmic stemming to correct specific cases of overstemming or understemming. The maximum size of a stemming dictionary is 500 KB.
          */
-    var StemmingDictionary: js.UndefOr[java.lang.String] = js.undefined
+    var StemmingDictionary: js.UndefOr[String] = js.undefined
     /**
          * A JSON array of terms to ignore during indexing and searching. For example, ["a", "an", "the", "of"]. The stopwords dictionary must explicitly list each word you want to ignore. Wildcards and regular expressions are not supported. 
          */
-    var Stopwords: js.UndefOr[java.lang.String] = js.undefined
+    var Stopwords: js.UndefOr[String] = js.undefined
     /**
          * A JSON object that defines synonym groups and aliases. A synonym group is an array of arrays, where each sub-array is a group of terms where each term in the group is considered a synonym of every other term in the group. The aliases value is an object that contains a collection of string:value pairs where the string specifies a term and the array of values specifies each of the aliases for that term. An alias is considered a synonym of the specified term, but the term is not considered a synonym of the alias. For more information about specifying synonyms, see Synonyms in the Amazon CloudSearch Developer Guide.
          */
-    var Synonyms: js.UndefOr[java.lang.String] = js.undefined
+    var Synonyms: js.UndefOr[String] = js.undefined
   }
   
   
@@ -100,15 +100,15 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether facet information can be returned for the field.
          */
-    var FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var FacetEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field are searchable.
          */
-    var SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SearchEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of source fields to map to the field. 
          */
@@ -124,19 +124,19 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether facet information can be returned for the field.
          */
-    var FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var FacetEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field are searchable.
          */
-    var SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SearchEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the field can be used to sort the search results.
          */
-    var SortEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SortEnabled: js.UndefOr[Boolean] = js.undefined
     var SourceField: js.UndefOr[FieldName] = js.undefined
   }
   
@@ -277,7 +277,7 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.
          */
-    var Deployed: js.UndefOr[scala.Boolean] = js.undefined
+    var Deployed: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain you want to describe.
          */
@@ -297,7 +297,7 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.
          */
-    var Deployed: js.UndefOr[scala.Boolean] = js.undefined
+    var Deployed: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain you want to describe.
          */
@@ -330,7 +330,7 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.
          */
-    var Deployed: js.UndefOr[scala.Boolean] = js.undefined
+    var Deployed: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain you want to describe.
          */
@@ -354,7 +354,7 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.
          */
-    var Deployed: js.UndefOr[scala.Boolean] = js.undefined
+    var Deployed: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain you want to describe.
          */
@@ -388,7 +388,7 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.
          */
-    var Deployed: js.UndefOr[scala.Boolean] = js.undefined
+    var Deployed: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain you want to describe.
          */
@@ -408,7 +408,7 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.
          */
-    var Deployed: js.UndefOr[scala.Boolean] = js.undefined
+    var Deployed: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the domain you want to describe.
          */
@@ -436,7 +436,7 @@ object CloudSearchNs extends js.Object {
     /**
          * An expression that computes a score for each suggestion to control how they are sorted. The scores are rounded to the nearest integer, with a floor of 0 and a ceiling of 2^31-1. A document's relevance score is not computed for suggestions, so sort expressions cannot reference the _score value. To sort suggestions using a numeric field or existing expression, simply specify the name of the field or expression. If no expression is configured for the suggester, the suggestions are sorted with the closest matches listed first.
          */
-    var SortExpression: js.UndefOr[java.lang.String] = js.undefined
+    var SortExpression: js.UndefOr[String] = js.undefined
     /**
          * The name of the index field you want to use for suggestions. 
          */
@@ -453,11 +453,11 @@ object CloudSearchNs extends js.Object {
     /**
          * True if the search domain is created. It can take several minutes to initialize a domain when CreateDomain is called. Newly created search domains are returned from DescribeDomains with a false value for Created until domain creation is complete.
          */
-    var Created: js.UndefOr[scala.Boolean] = js.undefined
+    var Created: js.UndefOr[Boolean] = js.undefined
     /**
          * True if the search domain has been deleted. The system must clean up resources dedicated to the search domain when DeleteDomain is called. Newly deleted search domains are returned from DescribeDomains with a true value for IsDeleted for several minutes until resource cleanup is complete.
          */
-    var Deleted: js.UndefOr[scala.Boolean] = js.undefined
+    var Deleted: js.UndefOr[Boolean] = js.undefined
     /**
          * The service endpoint for updating documents in a search domain.
          */
@@ -468,11 +468,11 @@ object CloudSearchNs extends js.Object {
     /**
          * True if processing is being done to activate the current domain configuration.
          */
-    var Processing: js.UndefOr[scala.Boolean] = js.undefined
+    var Processing: js.UndefOr[Boolean] = js.undefined
     /**
          * True if IndexDocuments needs to be called to activate the current domain configuration.
          */
-    var RequiresIndexDocuments: scala.Boolean
+    var RequiresIndexDocuments: Boolean
     /**
          * The number of search instances that are available to process search requests.
          */
@@ -500,15 +500,15 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether facet information can be returned for the field.
          */
-    var FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var FacetEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field are searchable.
          */
-    var SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SearchEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of source fields to map to the field. 
          */
@@ -524,19 +524,19 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether facet information can be returned for the field.
          */
-    var FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var FacetEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field are searchable.
          */
-    var SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SearchEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the field can be used to sort the search results.
          */
-    var SortEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SortEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the source field to map to the field. 
          */
@@ -606,15 +606,15 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether facet information can be returned for the field.
          */
-    var FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var FacetEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field are searchable.
          */
-    var SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SearchEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of source fields to map to the field. 
          */
@@ -630,19 +630,19 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether facet information can be returned for the field.
          */
-    var FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var FacetEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field are searchable.
          */
-    var SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SearchEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the field can be used to sort the search results.
          */
-    var SortEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SortEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * The name of the source field to map to the field. 
          */
@@ -658,19 +658,19 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether facet information can be returned for the field.
          */
-    var FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var FacetEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field are searchable.
          */
-    var SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SearchEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the field can be used to sort the search results.
          */
-    var SortEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SortEnabled: js.UndefOr[Boolean] = js.undefined
     var SourceField: js.UndefOr[FieldName] = js.undefined
   }
   
@@ -697,15 +697,15 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether facet information can be returned for the field.
          */
-    var FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var FacetEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field are searchable.
          */
-    var SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SearchEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of source fields to map to the field. 
          */
@@ -721,19 +721,19 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether facet information can be returned for the field.
          */
-    var FacetEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var FacetEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field are searchable.
          */
-    var SearchEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SearchEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the field can be used to sort the search results.
          */
-    var SortEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SortEnabled: js.UndefOr[Boolean] = js.undefined
     var SourceField: js.UndefOr[FieldName] = js.undefined
   }
   
@@ -746,7 +746,7 @@ object CloudSearchNs extends js.Object {
     /**
          * Indicates that the option will be deleted once processing is complete.
          */
-    var PendingDeletion: js.UndefOr[scala.Boolean] = js.undefined
+    var PendingDeletion: js.UndefOr[Boolean] = js.undefined
     /**
          * The state of processing a change to an option. Possible values:   RequiresIndexDocuments: the option's latest value will not be deployed until IndexDocuments has been called and indexing is complete.  Processing: the option's latest value is in the process of being activated.   Active: the option's latest value is completely deployed.  FailedToValidate: the option value is not compatible with the domain's data and cannot be used to index the data. You must either modify the option value or update or remove the incompatible documents. 
          */
@@ -813,11 +813,11 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether highlights can be returned for the field.
          */
-    var HighlightEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var HighlightEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * A list of source fields to map to the field. 
          */
@@ -837,15 +837,15 @@ object CloudSearchNs extends js.Object {
     /**
          * Whether highlights can be returned for the field.
          */
-    var HighlightEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var HighlightEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the contents of the field can be returned in the search results.
          */
-    var ReturnEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
     /**
          * Whether the field can be used to sort the search results.
          */
-    var SortEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    var SortEnabled: js.UndefOr[Boolean] = js.undefined
     var SourceField: js.UndefOr[FieldName] = js.undefined
   }
   
@@ -1543,7 +1543,7 @@ object CloudSearchNs extends js.Object {
     /**
          * You expand an existing search domain to a second Availability Zone by setting the Multi-AZ option to true. Similarly, you can turn off the Multi-AZ option to downgrade the domain to a single Availability Zone by setting the Multi-AZ option to false. 
          */
-    var MultiAZ: scala.Boolean
+    var MultiAZ: Boolean
   }
   
   

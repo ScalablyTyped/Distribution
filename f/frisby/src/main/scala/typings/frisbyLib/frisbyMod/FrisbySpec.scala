@@ -35,7 +35,7 @@ class FrisbySpec protected () extends js.Object {
   def patch(url: java.lang.String, params: js.Object): FrisbySpec = js.native
   def post(url: java.lang.String): FrisbySpec = js.native
   def post(url: java.lang.String, params: js.Object): FrisbySpec = js.native
-  def promise(): stdLib.Promise[frisbyLib.frisbyMod.nodeFetchNs.Response] = js.native
+  def promise(): js.Promise[frisbyLib.frisbyMod.nodeFetchNs.Response] = js.native
   def put(url: java.lang.String): FrisbySpec = js.native
   def put(url: java.lang.String, params: js.Object): FrisbySpec = js.native
   def setup(opts: js.Object, replace: scala.Boolean): FrisbySpec = js.native

@@ -19,7 +19,7 @@ object GoogleNs extends js.Object {
     var webClientId: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  def logInAsync(config: LogInConfig): stdLib.Promise[LogInResult] = js.native
+  def logInAsync(config: LogInConfig): js.Promise[LogInResult] = js.native
   type LogInResult = expoLib.Anon_TypeCancel | expoLib.Anon_ServerAuthCode
 }
 

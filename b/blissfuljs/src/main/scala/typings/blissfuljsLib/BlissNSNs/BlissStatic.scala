@@ -334,8 +334,8 @@ trait BlissStatic extends js.Object {
   def extend_TT[T](target: js.Object, source: js.Any, whitelist: js.Function): T = js.native
   @JSName("extend")
   def extend_TT[T](target: js.Object, source: js.Any, whitelist: stdLib.RegExp): T = js.native
-  def fetch(url: java.lang.String): stdLib.Promise[stdLib.XMLHttpRequest] = js.native
-  def fetch(url: java.lang.String, options: blissfuljsLib.Anon_PropertyName): stdLib.Promise[stdLib.XMLHttpRequest] = js.native
+  def fetch(url: java.lang.String): js.Promise[stdLib.XMLHttpRequest] = js.native
+  def fetch(url: java.lang.String, options: blissfuljsLib.Anon_PropertyName): js.Promise[stdLib.XMLHttpRequest] = js.native
   def fire[T](subject: blissfuljsLib.Array[BlissDecoratedElement[T]], `type`: java.lang.String): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def fire[T](
     subject: blissfuljsLib.Array[BlissDecoratedElement[T]],
@@ -348,8 +348,8 @@ trait BlissStatic extends js.Object {
     `type`: java.lang.String,
     properties: ScalablyTyped.runtime.StringDictionary[js.Any]
   ): BlissDecoratedElement[T] = js.native
-  def include(condition: js.Any, url: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def include(url: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def include(condition: js.Any, url: java.lang.String): js.Promise[scala.Unit] = js.native
+  def include(url: java.lang.String): js.Promise[scala.Unit] = js.native
   def inside[T](subject: BlissDecoratedElement[T], element: blissfuljsLib.Element): BlissDecoratedElement[T] = js.native
   def `lazy`(`object`: js.Object, properties: ScalablyTyped.runtime.StringDictionary[js.Function0[_]]): js.Object = js.native
   def `lazy`(`object`: js.Object, property: java.lang.String, getter: js.Function0[_]): js.Object = js.native
@@ -378,22 +378,22 @@ trait BlissStatic extends js.Object {
   def once[T](subject: BlissDecoratedElement[T], handlers: blissfuljsLib.Element): BlissDecoratedElement[T] = js.native
   def properties[T](subject: blissfuljsLib.Array[BlissDecoratedElement[T]], props: js.Object): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def properties[T](subject: BlissDecoratedElement[T], props: js.Object): BlissDecoratedElement[T] = js.native
-  def ready(): stdLib.Promise[_] = js.native
-  def ready(context: stdLib.Document): stdLib.Promise[_] = js.native
+  def ready(): js.Promise[_] = js.native
+  def ready(context: stdLib.Document): js.Promise[_] = js.native
   def remove(subject: BlissStatic): scala.Unit = js.native
   def remove(subject: blissfuljsLib.Element): scala.Unit = js.native
   def set[T](subject: BlissDecoratedElement[T], options: js.Object): BlissDecoratedElement[T] = js.native
   def start[T](subject: BlissDecoratedElement[T], element: blissfuljsLib.Element): BlissDecoratedElement[T] = js.native
   def style[T](subject: blissfuljsLib.Array[BlissDecoratedElement[T]], properties: js.Object): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def style[T](subject: BlissDecoratedElement[T], properties: js.Object): BlissDecoratedElement[T] = js.native
-  def transition[T](subject: blissfuljsLib.Array[BlissDecoratedElement[T]], properties: js.Object): stdLib.Promise[T] = js.native
+  def transition[T](subject: blissfuljsLib.Array[BlissDecoratedElement[T]], properties: js.Object): js.Promise[T] = js.native
   def transition[T](
     subject: blissfuljsLib.Array[BlissDecoratedElement[T]],
     properties: js.Object,
     duration: scala.Double
-  ): stdLib.Promise[T] = js.native
-  def transition[T](subject: BlissDecoratedElement[T], properties: js.Object): stdLib.Promise[T] = js.native
-  def transition[T](subject: BlissDecoratedElement[T], properties: js.Object, duration: scala.Double): stdLib.Promise[T] = js.native
+  ): js.Promise[T] = js.native
+  def transition[T](subject: BlissDecoratedElement[T], properties: js.Object): js.Promise[T] = js.native
+  def transition[T](subject: BlissDecoratedElement[T], properties: js.Object, duration: scala.Double): js.Promise[T] = js.native
   def `type`(`object`: js.Object): java.lang.String = js.native
   def value(obj: js.Object, properties: java.lang.String*): js.Any = js.native
   def value(property: java.lang.String, properties: java.lang.String*): js.Any = js.native

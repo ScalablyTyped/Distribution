@@ -30,7 +30,7 @@ object authNs extends js.Object {
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   @js.native
@@ -41,7 +41,7 @@ object authNs extends js.Object {
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   @js.native
@@ -52,7 +52,7 @@ object authNs extends js.Object {
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   @js.native
@@ -63,7 +63,7 @@ object authNs extends js.Object {
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   @js.native
@@ -74,7 +74,7 @@ object authNs extends js.Object {
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   @js.native
@@ -85,7 +85,7 @@ object authNs extends js.Object {
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   @js.native
@@ -104,7 +104,7 @@ object authNs extends js.Object {
     override def verifyPhoneNumber(
       phoneNumber: java.lang.String,
       applicationVerifier: firebaseLib.firebaseMod.firebaseNs.authNs.ApplicationVerifier
-    ): stdLib.Promise[java.lang.String] = js.native
+    ): js.Promise[java.lang.String] = js.native
   }
   
   @js.native
@@ -117,7 +117,7 @@ object authNs extends js.Object {
     override def verifyPhoneNumber(
       phoneNumber: java.lang.String,
       applicationVerifier: firebaseLib.firebaseMod.firebaseNs.authNs.ApplicationVerifier
-    ): stdLib.Promise[java.lang.String] = js.native
+    ): js.Promise[java.lang.String] = js.native
   }
   
   @js.native
@@ -128,9 +128,9 @@ object authNs extends js.Object {
     /* CompleteClass */
     override def clear(): scala.Unit = js.native
     /* CompleteClass */
-    override def render(): stdLib.Promise[scala.Double] = js.native
+    override def render(): js.Promise[scala.Double] = js.native
     /* CompleteClass */
-    override def verify(): stdLib.Promise[java.lang.String] = js.native
+    override def verify(): js.Promise[java.lang.String] = js.native
   }
   
   @js.native
@@ -138,20 +138,20 @@ object authNs extends js.Object {
     extends firebaseLib.firebaseMod.firebaseNs.authNs.RecaptchaVerifier_Instance {
     def this(container: java.lang.String) = this()
     def this(container: js.Any) = this()
-    def this(container: java.lang.String, parameters: js.Object) = this()
-    def this(container: js.Any, parameters: js.Object) = this()
-    def this(container: java.lang.String, parameters: js.Object, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
+    def this(container: java.lang.String, parameters: coreDashJsLib.Object) = this()
+    def this(container: js.Any, parameters: coreDashJsLib.Object) = this()
+    def this(container: java.lang.String, parameters: coreDashJsLib.Object, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
     def this(container: java.lang.String, parameters: scala.Null, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
-    def this(container: js.Any, parameters: js.Object, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
+    def this(container: js.Any, parameters: coreDashJsLib.Object, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
     def this(container: js.Any, parameters: scala.Null, app: firebaseLib.firebaseMod.firebaseNs.appNs.App) = this()
     /* CompleteClass */
     override var `type`: java.lang.String = js.native
     /* CompleteClass */
     override def clear(): scala.Unit = js.native
     /* CompleteClass */
-    override def render(): stdLib.Promise[scala.Double] = js.native
+    override def render(): js.Promise[scala.Double] = js.native
     /* CompleteClass */
-    override def verify(): stdLib.Promise[java.lang.String] = js.native
+    override def verify(): js.Promise[java.lang.String] = js.native
   }
   
   @js.native
@@ -167,7 +167,7 @@ object authNs extends js.Object {
     /* CompleteClass */
     override var providerId: java.lang.String = js.native
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   @js.native
@@ -176,7 +176,7 @@ object authNs extends js.Object {
     /* CompleteClass */
     override var providerId: java.lang.String = js.native
     /* CompleteClass */
-    override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
+    override def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   @JSName("Auth")

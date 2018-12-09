@@ -13,7 +13,7 @@ package object NodeJSNs {
   type MessageListener = js.Function2[/* message */ js.Any, /* sendHandle */ js.Any, scala.Unit]
   type MultipleResolveListener = js.Function3[
     /* type */ MultipleResolveType, 
-    /* promise */ stdLib.Promise[js.Any], 
+    /* promise */ js.Promise[js.Any], 
     /* value */ js.Any, 
     scala.Unit
   ]
@@ -24,7 +24,7 @@ package object NodeJSNs {
     scala.Unit
   ]
   type Platform = nodeLib.nodeLibStrings.aix | nodeLib.nodeLibStrings.android | nodeLib.nodeLibStrings.darwin | nodeLib.nodeLibStrings.freebsd | nodeLib.nodeLibStrings.linux | nodeLib.nodeLibStrings.openbsd | nodeLib.nodeLibStrings.sunos | nodeLib.nodeLibStrings.win32 | nodeLib.nodeLibStrings.cygwin
-  type RejectionHandledListener = js.Function1[/* promise */ stdLib.Promise[js.Any], scala.Unit]
+  type RejectionHandledListener = js.Function1[/* promise */ js.Promise[js.Any], scala.Unit]
   type RemoveListenerListener = js.Function2[
     /* type */ java.lang.String | js.Symbol, 
     /* listener */ js.Function1[/* repeated */js.Any, scala.Unit], 
@@ -34,6 +34,6 @@ package object NodeJSNs {
   type SignalsListener = js.Function1[/* signal */ Signals, scala.Unit]
   type TypedArray = stdLib.Uint8Array | stdLib.Uint8ClampedArray | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Float32Array | stdLib.Float64Array
   type UncaughtExceptionListener = js.Function1[/* error */ nodeLib.Error, scala.Unit]
-  type UnhandledRejectionListener = js.Function2[/* reason */ js.Any, /* promise */ stdLib.Promise[js.Any], scala.Unit]
+  type UnhandledRejectionListener = js.Function2[/* reason */ js.Any, /* promise */ js.Promise[js.Any], scala.Unit]
   type WarningListener = js.Function1[/* warning */ nodeLib.Error, scala.Unit]
 }

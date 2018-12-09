@@ -19,5 +19,5 @@ package object MeteorAstronomyNs {
   type RemoveCallback = js.Function2[/* err */ js.Any, /* result */ js.Any, scala.Unit]
   type SaveAndValidateCallback = js.Function2[/* err */ js.Any, /* id */ js.Any, scala.Unit]
   type TypeOptions = TypeOptionsPrimitives | js.Array[TypeOptionsPrimitives] | Class[js.Any] | Enum[js.Any]
-  type TypeOptionsPrimitives = java.lang.String | stdLib.DateConstructor | scala.Boolean | js.Object | stdLib.NumberConstructor
+  type TypeOptionsPrimitives = stdLib.StringConstructor | stdLib.DateConstructor | stdLib.BooleanConstructor | stdLib.ObjectConstructor | stdLib.NumberConstructor
 }

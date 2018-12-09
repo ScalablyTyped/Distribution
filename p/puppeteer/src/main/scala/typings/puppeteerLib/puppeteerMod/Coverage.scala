@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Coverage extends js.Object {
-  def startCSSCoverage(): stdLib.Promise[scala.Unit] = js.native
-  def startCSSCoverage(options: StartCoverageOptions): stdLib.Promise[scala.Unit] = js.native
-  def startJSCoverage(): stdLib.Promise[scala.Unit] = js.native
-  def startJSCoverage(options: StartCoverageOptions): stdLib.Promise[scala.Unit] = js.native
-  def stopCSSCoverage(): stdLib.Promise[js.Array[CoverageEntry]] = js.native
-  def stopJSCoverage(): stdLib.Promise[js.Array[CoverageEntry]] = js.native
+  def startCSSCoverage(): js.Promise[scala.Unit] = js.native
+  def startCSSCoverage(options: StartCoverageOptions): js.Promise[scala.Unit] = js.native
+  def startJSCoverage(): js.Promise[scala.Unit] = js.native
+  def startJSCoverage(options: StartCoverageOptions): js.Promise[scala.Unit] = js.native
+  def stopCSSCoverage(): js.Promise[js.Array[CoverageEntry]] = js.native
+  def stopJSCoverage(): js.Promise[js.Array[CoverageEntry]] = js.native
 }
 

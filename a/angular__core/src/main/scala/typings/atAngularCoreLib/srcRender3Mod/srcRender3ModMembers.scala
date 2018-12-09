@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcRender3ModMembers extends js.Object {
   val NO_CHANGE: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
-  val QueryList: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[js.Object]] = js.native
+  val QueryList: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[js.Any]] = js.native
   val WRAP_RENDERER_FACTORY2: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[
     js.Function1[
       /* rf */ atAngularCoreLib.srcRenderApiMod.RendererFactory2, 
@@ -163,6 +163,15 @@ object srcRender3ModMembers extends js.Object {
     index: scala.Double,
     styleIndex: scala.Double,
     value: java.lang.String,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String): scala.Unit = js.native
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: nodeLib.String, suffix: java.lang.String): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: nodeLib.String,
     suffix: java.lang.String,
     directiveIndex: scala.Double
   ): scala.Unit = js.native
@@ -1101,6 +1110,6 @@ object srcRender3ModMembers extends js.Object {
   def textBinding[T](index: scala.Double, value: T): scala.Unit = js.native
   def textBinding[T](index: scala.Double, value: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
   def tick[T](component: T): scala.Unit = js.native
-  def whenRendered(component: js.Any): stdLib.Promise[scala.Null] = js.native
+  def whenRendered(component: js.Any): js.Promise[scala.Null] = js.native
 }
 

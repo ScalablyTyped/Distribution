@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Invoices
   extends stripeLib.stripeMod.StripeNs.StripeResource {
-  def create(data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceCreationOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def create(data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceCreationOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * If you need to invoice your customer outside the regular billing cycle, you can create an invoice that
                * pulls in all pending invoice items, including prorations. The customer's billing cycle and regular subscription
@@ -23,7 +23,7 @@ trait Invoices
   def create(
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * If you need to invoice your customer outside the regular billing cycle, you can create an invoice that
                * pulls in all pending invoice items, including prorations. The customer's billing cycle and regular subscription
@@ -39,15 +39,15 @@ trait Invoices
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def create(
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceCreationOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def list(): stdLib.Promise[
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def list(): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
   ] = js.native
-  def list(data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceListOptions): stdLib.Promise[
+  def list(data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceListOptions): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
   ] = js.native
   /**
@@ -62,7 +62,7 @@ trait Invoices
   def list(
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceListOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
   ] = js.native
   /**
@@ -80,7 +80,7 @@ trait Invoices
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
   ] = js.native
   def list(
@@ -88,18 +88,18 @@ trait Invoices
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
   ] = js.native
   def list(
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
     ]
-  ): stdLib.Promise[
+  ): js.Promise[
     stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
   ] = js.native
-  def pay(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def pay(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoicePayOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def pay(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def pay(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoicePayOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * Stripe automatically creates and then attempts to pay invoices for customers on subscriptions. We'll also retry unpaid
                * invoices according to your retry settings. However, if you'd like to attempt to collect payment on an invoice out of the
@@ -113,7 +113,7 @@ trait Invoices
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoicePayOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * Stripe automatically creates and then attempts to pay invoices for customers on subscriptions. We'll also retry unpaid
                * invoices according to your retry settings. However, if you'd like to attempt to collect payment on an invoice out of the
@@ -128,24 +128,24 @@ trait Invoices
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoicePayOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def pay(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoicePayOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def pay(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def pay(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def pay(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def pay(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def retrieve(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def retrieve(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.IDataOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * Retrieves the invoice with the given ID. The invoice object contains a
                * lines hash that contains information about the subscriptions and invoice items that have been applied to the
@@ -168,7 +168,7 @@ trait Invoices
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * Retrieves the invoice with the given ID. The invoice object contains a
                * lines hash that contains information about the subscriptions and invoice items that have been applied to the
@@ -192,27 +192,27 @@ trait Invoices
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def retrieve(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.IDataOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def retrieve(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def retrieve(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def retrieve(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def retrieveLines(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def retrieveLines(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
   def retrieveLines(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItemRetrievalOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
   /**
                * When retrieving an invoice, you'll get a lines property containing the total count of line items and the first
                * handful of those items. There is also a URL where you can retrieve the full (paginated) list of line items.
@@ -226,7 +226,7 @@ trait Invoices
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItemRetrievalOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
   /**
                * When retrieving an invoice, you'll get a lines property containing the total count of line items and the first
                * handful of those items. There is also a URL where you can retrieve the full (paginated) list of line items.
@@ -243,30 +243,30 @@ trait Invoices
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
     ]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
   def retrieveLines(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItemRetrievalOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
     ]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
-  def retrieveLines(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  def retrieveLines(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
   def retrieveLines(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
     ]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
   def retrieveLines(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
     ]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
-  def retrieveUpcoming(id: java.lang.String): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def retrieveUpcoming(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpcomingOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  def retrieveUpcoming(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def retrieveUpcoming(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpcomingOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * At any time, you can preview the upcoming invoice for a customer. This will show you all the charges that are pending,
                * including subscription renewal charges, invoice item charges, etc. It will also show you any discount that is applicable
@@ -283,7 +283,7 @@ trait Invoices
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpcomingOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * At any time, you can preview the upcoming invoice for a customer. This will show you all the charges that are pending,
                * including subscription renewal charges, invoice item charges, etc. It will also show you any discount that is applicable
@@ -301,23 +301,23 @@ trait Invoices
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpcomingOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def retrieveUpcoming(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpcomingOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def retrieveUpcoming(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def retrieveUpcoming(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def retrieveUpcoming(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def retrieveUpcoming(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpdateOptions): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  def update(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpdateOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * Until an invoice is paid, it is marked as open (closed=false). If you'd like to stop Stripe from automatically attempting
                * payment on an invoice or would simply like to close the invoice out as no longer owed by the customer, you can update the
@@ -332,7 +332,7 @@ trait Invoices
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**
                * Until an invoice is paid, it is marked as open (closed=false). If you'd like to stop Stripe from automatically attempting
                * payment on an invoice or would simply like to close the invoice out as no longer owed by the customer, you can update the
@@ -348,11 +348,11 @@ trait Invoices
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpdateOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def update(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpdateOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
-  ): stdLib.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
+  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
 }
 

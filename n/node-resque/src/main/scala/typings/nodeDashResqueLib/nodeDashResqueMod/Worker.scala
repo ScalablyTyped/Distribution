@@ -11,8 +11,8 @@ class Worker protected ()
   extends nodeLib.NodeJSNs.EventEmitter {
   def this(options: WorkerOptions) = this()
   def this(options: WorkerOptions, jobs: JobsHash) = this()
-  def connect(): stdLib.Promise[scala.Unit] = js.native
-  def end(): stdLib.Promise[scala.Unit] = js.native
+  def connect(): js.Promise[scala.Unit] = js.native
+  def end(): js.Promise[scala.Unit] = js.native
   @JSName("on")
   def on_cleaning_worker(
     event: nodeDashResqueLib.nodeDashResqueLibStrings.cleaning_worker,
@@ -116,6 +116,6 @@ class Worker protected ()
     cb: js.Function3[/* queue */ java.lang.String, /* job */ Job[_], /* result */ js.Any, scala.Unit]
   ): this.type = js.native
   def removeAllListeners(event: WorkerEvent): this.type = js.native
-  def start(): stdLib.Promise[scala.Unit] = js.native
+  def start(): js.Promise[scala.Unit] = js.native
 }
 

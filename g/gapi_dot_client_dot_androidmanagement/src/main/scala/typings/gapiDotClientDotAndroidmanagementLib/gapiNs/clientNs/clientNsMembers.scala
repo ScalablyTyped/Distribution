@@ -14,7 +14,7 @@ object clientNsMembers extends js.Object {
   def load(
     name: gapiDotClientDotAndroidmanagementLib.gapiDotClientDotAndroidmanagementLibStrings.androidmanagement,
     version: gapiDotClientDotAndroidmanagementLib.gapiDotClientDotAndroidmanagementLibStrings.v1
-  ): stdLib.PromiseLike[scala.Unit] = js.native
+  ): js.Thenable[scala.Unit] = js.native
   def load(
     name: gapiDotClientDotAndroidmanagementLib.gapiDotClientDotAndroidmanagementLibStrings.androidmanagement,
     version: gapiDotClientDotAndroidmanagementLib.gapiDotClientDotAndroidmanagementLibStrings.v1,

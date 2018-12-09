@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Table
-  extends stdLib.Array[js.Object]
+  extends stdLib.Array[js.Any]
 

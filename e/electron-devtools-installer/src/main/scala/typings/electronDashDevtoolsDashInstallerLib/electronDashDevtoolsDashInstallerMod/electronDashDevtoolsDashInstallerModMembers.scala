@@ -19,11 +19,11 @@ object electronDashDevtoolsDashInstallerModMembers extends js.Object {
   val REACT_PERF: ExtensionReference = js.native
   val REDUX_DEVTOOLS: ExtensionReference = js.native
   val VUEJS_DEVTOOLS: ExtensionReference = js.native
-  def default(extensionReference: ExtensionReference): stdLib.Promise[java.lang.String] = js.native
-  def default(extensionReference: ExtensionReference, forceDownload: scala.Boolean): stdLib.Promise[java.lang.String] = js.native
-  def default(extensionReference: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-  def default(extensionReference: java.lang.String, forceDownload: scala.Boolean): stdLib.Promise[java.lang.String] = js.native
-  def default(extensionReference: js.Array[ExtensionReference | java.lang.String]): stdLib.Promise[java.lang.String] = js.native
-  def default(extensionReference: js.Array[ExtensionReference | java.lang.String], forceDownload: scala.Boolean): stdLib.Promise[java.lang.String] = js.native
+  def default(extensionReference: ExtensionReference): js.Promise[java.lang.String] = js.native
+  def default(extensionReference: ExtensionReference, forceDownload: scala.Boolean): js.Promise[java.lang.String] = js.native
+  def default(extensionReference: java.lang.String): js.Promise[java.lang.String] = js.native
+  def default(extensionReference: java.lang.String, forceDownload: scala.Boolean): js.Promise[java.lang.String] = js.native
+  def default(extensionReference: js.Array[ExtensionReference | java.lang.String]): js.Promise[java.lang.String] = js.native
+  def default(extensionReference: js.Array[ExtensionReference | java.lang.String], forceDownload: scala.Boolean): js.Promise[java.lang.String] = js.native
 }
 

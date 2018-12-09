@@ -133,7 +133,7 @@ object SignerNs extends js.Object {
     /**
          * A list of partner entities that use the target signing platform.
          */
-    var partner: js.UndefOr[java.lang.String] = js.undefined
+    var partner: js.UndefOr[String] = js.undefined
     /**
          * The ID of the target signing platform.
          */
@@ -149,7 +149,7 @@ object SignerNs extends js.Object {
     /**
          * The validation template that is used by the target signing platform.
          */
-    var target: js.UndefOr[java.lang.String] = js.undefined
+    var target: js.UndefOr[String] = js.undefined
   }
   
   
@@ -241,7 +241,7 @@ object SignerNs extends js.Object {
     /**
          * The category type of a signing platform.
          */
-    var category: js.UndefOr[java.lang.String] = js.undefined
+    var category: js.UndefOr[String] = js.undefined
     /**
          * The maximum number of results to be returned by this operation.
          */
@@ -249,15 +249,15 @@ object SignerNs extends js.Object {
     /**
          * Value for specifying the next set of paginated results to return. After you receive a response with truncated results, use this parameter in a subsequent request. Set it to the value of nextToken from the response that you just received.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * Any partner entities connected to a signing platform.
          */
-    var partner: js.UndefOr[java.lang.String] = js.undefined
+    var partner: js.UndefOr[String] = js.undefined
     /**
          * The validation template that is used by the target signing platform.
          */
-    var target: js.UndefOr[java.lang.String] = js.undefined
+    var target: js.UndefOr[String] = js.undefined
   }
   
   
@@ -265,7 +265,7 @@ object SignerNs extends js.Object {
     /**
          * Value for specifying the next set of paginated results to return.
          */
-    var nextToken: js.UndefOr[java.lang.String] = js.undefined
+    var nextToken: js.UndefOr[String] = js.undefined
     /**
          * A list of all platforms that match the request parameters.
          */
@@ -277,7 +277,7 @@ object SignerNs extends js.Object {
     /**
          * Designates whether to include profiles with the status of CANCELED.
          */
-    var includeCanceled: js.UndefOr[scala.Boolean] = js.undefined
+    var includeCanceled: js.UndefOr[bool] = js.undefined
     /**
          * The maximum number of profiles to be returned.
          */
@@ -465,7 +465,7 @@ object SignerNs extends js.Object {
     /**
          * The display name of an AWS Signer platform.
          */
-    var displayName: js.UndefOr[java.lang.String] = js.undefined
+    var displayName: js.UndefOr[String] = js.undefined
     /**
          * The maximum size (in MB) of code that can be signed by a AWS Signer platform.
          */
@@ -473,11 +473,11 @@ object SignerNs extends js.Object {
     /**
          * Any partner entities linked to an AWS Signer platform.
          */
-    var partner: js.UndefOr[java.lang.String] = js.undefined
+    var partner: js.UndefOr[String] = js.undefined
     /**
          * The ID of an AWS Signer platform.
          */
-    var platformId: js.UndefOr[java.lang.String] = js.undefined
+    var platformId: js.UndefOr[String] = js.undefined
     /**
          * The configuration of an AWS Signer platform. This includes the designated hash algorithm and encryption algorithm of a signing platform.
          */
@@ -489,7 +489,7 @@ object SignerNs extends js.Object {
     /**
          * The types of targets that can be signed by an AWS Signer platform.
          */
-    var target: js.UndefOr[java.lang.String] = js.undefined
+    var target: js.UndefOr[String] = js.undefined
   }
   
   

@@ -39,7 +39,7 @@ trait SMTPPool
   @JSName("prependOnceListener")
   def prependOnceListener_idle(event: nodemailerLib.nodemailerLibStrings.idle, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("verify")
-  def verify_MSMTPPool(): stdLib.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
+  def verify_MSMTPPool(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
   /** Verifies SMTP configuration */
   @JSName("verify")
   def verify_MSMTPPool(

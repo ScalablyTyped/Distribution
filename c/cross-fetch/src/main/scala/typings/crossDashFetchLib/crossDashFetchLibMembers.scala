@@ -11,7 +11,7 @@ object crossDashFetchLibMembers extends js.Object {
   val fet: js.Function2[
     /* input */ stdLib.RequestInfo, 
     /* init */ stdLib.RequestInit, 
-    stdLib.Promise[stdLib.Response]
+    js.Promise[stdLib.Response]
   ] = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait PromiseAction[R]
   extends reduxLib.reduxMod.Action[js.Any] {
-  var payload: stdLib.Promise[R]
+  var payload: js.Promise[R]
 }
 

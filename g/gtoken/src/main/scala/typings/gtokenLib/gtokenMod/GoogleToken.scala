@@ -41,13 +41,13 @@ class GoogleToken () extends js.Object {
        * @param keyFile Path to a json, pem, or p12 file that contains the key.
        * @returns an object with privateKey and clientEmail properties
        */
-  def getCredentials(keyFile: java.lang.String): stdLib.Promise[Credentials] = js.native
+  def getCredentials(keyFile: java.lang.String): js.Promise[Credentials] = js.native
   /**
        * Returns a cached token or retrieves a new one from Google.
        *
        * @param callback The callback function.
        */
-  def getToken(): stdLib.Promise[js.UndefOr[java.lang.String | scala.Null]] = js.native
+  def getToken(): js.Promise[js.UndefOr[java.lang.String | scala.Null]] = js.native
   def getToken(
     callback: js.Function2[
       /* err */ nodeLib.Error | scala.Null, 
@@ -71,7 +71,7 @@ class GoogleToken () extends js.Object {
        *
        * @param callback The callback function.
        */
-  def revokeToken(): stdLib.Promise[scala.Unit] = js.native
+  def revokeToken(): js.Promise[scala.Unit] = js.native
   def revokeToken(callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
   /* private */ def revokeTokenAsync(): js.Any = js.native
 }

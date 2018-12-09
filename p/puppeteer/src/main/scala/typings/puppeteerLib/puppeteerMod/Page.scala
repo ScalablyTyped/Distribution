@@ -23,43 +23,43 @@ trait Page
      * Provide credentials for http authentication.
      * To disable authentication, pass `null`.
      */
-  def authenticate(): stdLib.Promise[scala.Unit] = js.native
+  def authenticate(): js.Promise[scala.Unit] = js.native
   /**
      * Provide credentials for http authentication.
      * To disable authentication, pass `null`.
      */
-  def authenticate(credentials: AuthOptions): stdLib.Promise[scala.Unit] = js.native
+  def authenticate(credentials: AuthOptions): js.Promise[scala.Unit] = js.native
   /** Brings page to front (activates tab). */
-  def bringToFront(): stdLib.Promise[scala.Unit] = js.native
+  def bringToFront(): js.Promise[scala.Unit] = js.native
   /** Get the browser the page belongs to. */
   def browser(): Browser = js.native
   /** Closes the current page. */
-  def close(): stdLib.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   /** Closes the current page. */
-  def close(options: PageCloseOptions): stdLib.Promise[scala.Unit] = js.native
+  def close(options: PageCloseOptions): js.Promise[scala.Unit] = js.native
   /**
      * Gets the cookies.
      * If no URLs are specified, this method returns cookies for the current page URL.
      * If URLs are specified, only cookies for those URLs are returned.
      */
-  def cookies(urls: java.lang.String*): stdLib.Promise[js.Array[Cookie]] = js.native
+  def cookies(urls: java.lang.String*): js.Promise[js.Array[Cookie]] = js.native
   /**
      * Deletes the specified cookies.
      */
-  def deleteCookie(cookies: DeleteCookie*): stdLib.Promise[scala.Unit] = js.native
+  def deleteCookie(cookies: DeleteCookie*): js.Promise[scala.Unit] = js.native
   /** Emulates given device metrics and user agent. This method is a shortcut for `setUserAgent` and `setViewport`.  */
-  def emulate(options: EmulateOptions): stdLib.Promise[scala.Unit] = js.native
+  def emulate(options: EmulateOptions): js.Promise[scala.Unit] = js.native
   /** Emulates the media. */
-  def emulateMedia(): stdLib.Promise[scala.Unit] = js.native
+  def emulateMedia(): js.Promise[scala.Unit] = js.native
   /** Emulates the media. */
-  def emulateMedia(mediaType: MediaType): stdLib.Promise[scala.Unit] = js.native
+  def emulateMedia(mediaType: MediaType): js.Promise[scala.Unit] = js.native
   /**
      * Adds a function which would be invoked in one of the following scenarios: whenever the page is navigated; whenever the child frame is attached or navigated.
      * The function is invoked after the document was created but before any of its scripts were run. This is useful to amend JavaScript environment, e.g. to seed Math.random.
      * @param fn The function to be evaluated in browser context.
      * @param args The arguments to pass to the `fn`.
      */
-  def evaluateOnNewDocument(fn: EvaluateFn, args: js.Any*): stdLib.Promise[scala.Unit] = js.native
+  def evaluateOnNewDocument(fn: EvaluateFn, args: js.Any*): js.Promise[scala.Unit] = js.native
   /**
      * The method adds a function called name on the page's `window` object.
      * When called, the function executes `puppeteerFunction` in node.js and returns a
@@ -67,35 +67,35 @@ trait Page
      * @param name The name of the function on the window object.
      * @param fn Callback function which will be called in Puppeteer's context.
      */
-  def exposeFunction(name: java.lang.String, puppeteerFunction: js.Function1[/* repeated */js.Any, _]): stdLib.Promise[scala.Unit] = js.native
+  def exposeFunction(name: java.lang.String, puppeteerFunction: js.Function1[/* repeated */js.Any, _]): js.Promise[scala.Unit] = js.native
   /** An array of all frames attached to the page. */
   def frames(): js.Array[Frame] = js.native
   /**
      * Navigate to the previous page in history.
      * @param options The navigation parameters.
      */
-  def goBack(): stdLib.Promise[Response | scala.Null] = js.native
+  def goBack(): js.Promise[Response | scala.Null] = js.native
   /**
      * Navigate to the previous page in history.
      * @param options The navigation parameters.
      */
-  def goBack(options: NavigationOptions): stdLib.Promise[Response | scala.Null] = js.native
+  def goBack(options: NavigationOptions): js.Promise[Response | scala.Null] = js.native
   /**
      * Navigate to the next page in history.
      * @param options The navigation parameters.
      */
-  def goForward(): stdLib.Promise[Response | scala.Null] = js.native
+  def goForward(): js.Promise[Response | scala.Null] = js.native
   /**
      * Navigate to the next page in history.
      * @param options The navigation parameters.
      */
-  def goForward(options: NavigationOptions): stdLib.Promise[Response | scala.Null] = js.native
+  def goForward(options: NavigationOptions): js.Promise[Response | scala.Null] = js.native
   /** Indicates that the page has been closed. */
   def isClosed(): scala.Boolean = js.native
   /** Page is guaranteed to have a main frame which persists during navigation's. */
   def mainFrame(): Frame = js.native
   /** Gets the page metrics. */
-  def metrics(): stdLib.Promise[Metrics] = js.native
+  def metrics(): js.Promise[Metrics] = js.native
   /**
      * Adds the listener function to the end of the listeners array for the event named `eventName`.
      * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
@@ -469,62 +469,62 @@ trait Page
      * To generate a pdf with `screen` media, call `page.emulateMedia('screen')` before calling `page.pdf()`:
      * @param options The PDF parameters.
      */
-  def pdf(): stdLib.Promise[nodeLib.Buffer] = js.native
+  def pdf(): js.Promise[nodeLib.Buffer] = js.native
   /**
      * Generates a PDF of the page with `print` css media.
      * To generate a pdf with `screen` media, call `page.emulateMedia('screen')` before calling `page.pdf()`:
      * @param options The PDF parameters.
      */
-  def pdf(options: PDFOptions): stdLib.Promise[nodeLib.Buffer] = js.native
+  def pdf(options: PDFOptions): js.Promise[nodeLib.Buffer] = js.native
   /**
      * The method iterates JavaScript heap and finds all the objects with the given prototype.
      * @param prototypeHandle A handle to the object prototype.
      */
-  def queryObjects(prototypeHandle: JSHandle): stdLib.Promise[JSHandle] = js.native
+  def queryObjects(prototypeHandle: JSHandle): js.Promise[JSHandle] = js.native
   /**
      * Reloads the current page.
      * @param options The navigation parameters.
      */
-  def reload(): stdLib.Promise[Response] = js.native
+  def reload(): js.Promise[Response] = js.native
   /**
      * Reloads the current page.
      * @param options The navigation parameters.
      */
-  def reload(options: NavigationOptions): stdLib.Promise[Response] = js.native
+  def reload(options: NavigationOptions): js.Promise[Response] = js.native
   /**
      * Captures a screenshot of the page.
      * @param options The screenshot options.
      */
-  def screenshot(): stdLib.Promise[java.lang.String] = js.native
+  def screenshot(): js.Promise[java.lang.String] = js.native
   /**
      * Captures a screenshot of the page.
      * @param options The screenshot options.
      */
-  def screenshot(options: Base64ScreenShotOptions): stdLib.Promise[java.lang.String] = js.native
-  def screenshot(options: BinaryScreenShotOptions): stdLib.Promise[nodeLib.Buffer] = js.native
-  def screenshot(options: ScreenshotOptions): stdLib.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  def screenshot(options: Base64ScreenShotOptions): js.Promise[java.lang.String] = js.native
+  def screenshot(options: BinaryScreenShotOptions): js.Promise[nodeLib.Buffer] = js.native
+  def screenshot(options: ScreenshotOptions): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   /**
      * Toggles bypassing page's Content-Security-Policy.
      * NOTE CSP bypassing happens at the moment of CSP initialization rather then evaluation.
      * Usually this means that page.setBypassCSP should be called before navigating to the domain.
      * @param enabled sets bypassing of page's Content-Security-Policy.
      */
-  def setBypassCSP(enabled: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def setBypassCSP(enabled: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
      * Determines whether cache is enabled on the page.
      * @param [enabled=true] Whether or not to enable cache on the page.
      */
-  def setCacheEnabled(): stdLib.Promise[scala.Unit] = js.native
+  def setCacheEnabled(): js.Promise[scala.Unit] = js.native
   /**
      * Determines whether cache is enabled on the page.
      * @param [enabled=true] Whether or not to enable cache on the page.
      */
-  def setCacheEnabled(enabled: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def setCacheEnabled(enabled: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
      * Sets the cookies on the page.
      * @param cookies The cookies to set.
      */
-  def setCookie(cookies: SetCookie*): stdLib.Promise[scala.Unit] = js.native
+  def setCookie(cookies: SetCookie*): js.Promise[scala.Unit] = js.native
   /**
      * This setting will change the default maximum navigation time of 30 seconds for the following methods:
      * - `page.goto`
@@ -538,48 +538,48 @@ trait Page
      * The extra HTTP headers will be sent with every request the page initiates.
      * @param headers An object containing additional http headers to be sent with every request. All header values must be strings.
      */
-  def setExtraHTTPHeaders(headers: Headers): stdLib.Promise[scala.Unit] = js.native
+  def setExtraHTTPHeaders(headers: Headers): js.Promise[scala.Unit] = js.native
   /**
      * Sets the page's geolocation.
      */
-  def setGeolocation(options: GeoOptions): stdLib.Promise[scala.Unit] = js.native
+  def setGeolocation(options: GeoOptions): js.Promise[scala.Unit] = js.native
   /**
      * Determines whether JavaScript is enabled on the page.
      * @param enable Whether or not to enable JavaScript on the page.
      */
-  def setJavaScriptEnabled(enabled: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def setJavaScriptEnabled(enabled: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
      * Determines whether the offline mode is enabled.
      * @param enabled When `true`, enables the offline mode for the page.
      */
-  def setOfflineMode(enabled: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def setOfflineMode(enabled: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
      * Determines whether the request interception is enabled.
      * @param enabled When `true` the methods `request.abort`, `request.continue` and `request.respond` must be used.
      */
-  def setRequestInterception(enabled: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def setRequestInterception(enabled: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
      * Specifies the User-Agent used in this page.
      * @param userAgent The user-agent to be used in the page.
      */
-  def setUserAgent(userAgent: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def setUserAgent(userAgent: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
      * Sets the viewport of the page.
      * @param viewport The viewport parameters.
      */
-  def setViewport(viewport: Viewport): stdLib.Promise[scala.Unit] = js.native
+  def setViewport(viewport: Viewport): js.Promise[scala.Unit] = js.native
   /** @returns The target this page was created from */
   def target(): Target = js.native
   /** Gets the page viewport. */
   def viewport(): Viewport = js.native
-  def waitForRequest(urlOrPredicate: java.lang.String): stdLib.Promise[Request] = js.native
-  def waitForRequest(urlOrPredicate: java.lang.String, options: Timeoutable): stdLib.Promise[Request] = js.native
-  def waitForRequest(urlOrPredicate: js.Function1[/* req */ Request, scala.Boolean]): stdLib.Promise[Request] = js.native
-  def waitForRequest(urlOrPredicate: js.Function1[/* req */ Request, scala.Boolean], options: Timeoutable): stdLib.Promise[Request] = js.native
-  def waitForResponse(urlOrPredicate: java.lang.String): stdLib.Promise[Response] = js.native
-  def waitForResponse(urlOrPredicate: java.lang.String, options: Timeoutable): stdLib.Promise[Response] = js.native
-  def waitForResponse(urlOrPredicate: js.Function1[/* res */ Response, scala.Boolean]): stdLib.Promise[Response] = js.native
-  def waitForResponse(urlOrPredicate: js.Function1[/* res */ Response, scala.Boolean], options: Timeoutable): stdLib.Promise[Response] = js.native
+  def waitForRequest(urlOrPredicate: java.lang.String): js.Promise[Request] = js.native
+  def waitForRequest(urlOrPredicate: java.lang.String, options: Timeoutable): js.Promise[Request] = js.native
+  def waitForRequest(urlOrPredicate: js.Function1[/* req */ Request, scala.Boolean]): js.Promise[Request] = js.native
+  def waitForRequest(urlOrPredicate: js.Function1[/* req */ Request, scala.Boolean], options: Timeoutable): js.Promise[Request] = js.native
+  def waitForResponse(urlOrPredicate: java.lang.String): js.Promise[Response] = js.native
+  def waitForResponse(urlOrPredicate: java.lang.String, options: Timeoutable): js.Promise[Response] = js.native
+  def waitForResponse(urlOrPredicate: js.Function1[/* res */ Response, scala.Boolean]): js.Promise[Response] = js.native
+  def waitForResponse(urlOrPredicate: js.Function1[/* res */ Response, scala.Boolean], options: Timeoutable): js.Promise[Response] = js.native
   /** This method returns all of the dedicated WebWorkers associated with the page. */
   def workers(): js.Array[Worker] = js.native
 }

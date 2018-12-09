@@ -49,7 +49,7 @@ class default () extends EnvelopedData {
            * @returns {Promise}
            */
   /* CompleteClass */
-  override def decrypt(recipientIndex: scala.Double, parameters: pkijsLib.Anon_RecipientPrivateKey): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  override def decrypt(recipientIndex: scala.Double, parameters: pkijsLib.Anon_RecipientPrivateKey): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
            * Create a new CMS Enveloped Data content with encrypted data
            * @param {Algorithm} contentEncryptionAlgorithm WebCrypto algorithm. For the moment here could be only "AES-CBC" or "AES-GCM" algorithms.
@@ -57,7 +57,7 @@ class default () extends EnvelopedData {
            * @returns {Promise}
            */
   /* CompleteClass */
-  override def encrypt(contentEncryptionAlgorithm: stdLib.Algorithm, contentToEncrypt: stdLib.ArrayBuffer): stdLib.PromiseLike[stdLib.ArrayBuffer] = js.native
+  override def encrypt(contentEncryptionAlgorithm: stdLib.Algorithm, contentToEncrypt: stdLib.ArrayBuffer): js.Thenable[stdLib.ArrayBuffer] = js.native
   /* CompleteClass */
   override def fromSchema(schema: js.Any): scala.Unit = js.native
   /* CompleteClass */

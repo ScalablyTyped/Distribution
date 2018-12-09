@@ -11,7 +11,7 @@ object reduxModMembers extends js.Object {
   val createStore: StoreCreator = js.native
   def applyMiddleware(): StoreEnhancer[js.Object, js.Object] = js.native
   def applyMiddleware[Ext1, S](middleware1: Middleware[Ext1, S, _]): StoreEnhancer[reduxLib.Anon_Dispatch[Ext1], js.Object] = js.native
-  def applyMiddleware[Ext, S](middlewares: (Middleware[_, S, _])*): StoreEnhancer[reduxLib.Anon_DispatchAnonDispatchExt[Ext], js.Object] = js.native
+  def applyMiddleware[Ext, S](middlewares: (Middleware[_, S, _])*): StoreEnhancer[reduxLib.Anon_DispatchExt[Ext], js.Object] = js.native
   def applyMiddleware[Ext1, Ext2, S](middleware1: Middleware[Ext1, S, _], middleware2: Middleware[Ext2, S, _]): StoreEnhancer[reduxLib.Anon_DispatchExt1[Ext1, Ext2], js.Object] = js.native
   def applyMiddleware[Ext1, Ext2, Ext3, S](
     middleware1: Middleware[Ext1, S, _],
@@ -31,13 +31,13 @@ object reduxModMembers extends js.Object {
     middleware4: Middleware[Ext4, S, _],
     middleware5: Middleware[Ext5, S, _]
   ): StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2Ext3Ext4[Ext4, Ext3, Ext5, Ext1, Ext2], js.Object] = js.native
-  def bindActionCreators[A, C /* <: ActionCreator[A] */](actionCreator: C, dispatch: Dispatch[AnyAction]): C = js.native
+  def bindActionCreators[M /* <: ActionCreatorsMapObject[_] */, N /* <: ActionCreatorsMapObject[_] */](actionCreators: M, dispatch: Dispatch[AnyAction]): N = js.native
   @JSName("bindActionCreators")
   def bindActionCreators_AActionCreatorBActionCreatorB[A /* <: ActionCreator[_] */, B /* <: ActionCreator[_] */](actionCreator: A, dispatch: Dispatch[AnyAction]): B = js.native
   @JSName("bindActionCreators")
-  def bindActionCreators_AMActionCreatorsMapObjectM[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = js.native
+  def bindActionCreators_ACActionCreatorC[A, C /* <: ActionCreator[A] */](actionCreator: C, dispatch: Dispatch[AnyAction]): C = js.native
   @JSName("bindActionCreators")
-  def bindActionCreators_MActionCreatorsMapObjectNActionCreatorsMapObjectN[M /* <: ActionCreatorsMapObject[_] */, N /* <: ActionCreatorsMapObject[_] */](actionCreators: M, dispatch: Dispatch[AnyAction]): N = js.native
+  def bindActionCreators_AMActionCreatorsMapObjectM[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = js.native
   def combineReducers[S](reducers: ReducersMapObject[S, _]): Reducer[S, AnyAction] = js.native
   @JSName("combineReducers")
   def combineReducers_SAAction[S, A /* <: Action[_] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = js.native

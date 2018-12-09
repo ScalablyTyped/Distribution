@@ -15,84 +15,84 @@ trait ValidateFunction extends js.Object {
   var root: js.UndefOr[ValidateFunction | js.Object] = js.native
   var schema: js.UndefOr[js.Object | scala.Boolean] = js.native
   var source: js.UndefOr[js.Object] = js.native
-  def apply(data: js.Any): scala.Boolean | stdLib.PromiseLike[_] = js.native
-  def apply(data: js.Any, dataPath: java.lang.String): scala.Boolean | stdLib.PromiseLike[_] = js.native
-  def apply(data: js.Any, dataPath: java.lang.String, parentData: js.Array[_]): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  def apply(data: js.Any): scala.Boolean | js.Thenable[_] = js.native
+  def apply(data: js.Any, dataPath: java.lang.String): scala.Boolean | js.Thenable[_] = js.native
+  def apply(data: js.Any, dataPath: java.lang.String, parentData: js.Array[_]): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Array[_],
     parentDataProperty: java.lang.String
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Array[_],
     parentDataProperty: java.lang.String,
     rootData: js.Array[_]
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Array[_],
     parentDataProperty: java.lang.String,
     rootData: js.Object
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Array[_],
     parentDataProperty: scala.Double
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Array[_],
     parentDataProperty: scala.Double,
     rootData: js.Array[_]
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Array[_],
     parentDataProperty: scala.Double,
     rootData: js.Object
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
-  def apply(data: js.Any, dataPath: java.lang.String, parentData: js.Object): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
+  def apply(data: js.Any, dataPath: java.lang.String, parentData: js.Object): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Object,
     parentDataProperty: java.lang.String
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Object,
     parentDataProperty: java.lang.String,
     rootData: js.Array[_]
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Object,
     parentDataProperty: java.lang.String,
     rootData: js.Object
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
-  def apply(data: js.Any, dataPath: java.lang.String, parentData: js.Object, parentDataProperty: scala.Double): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
+  def apply(data: js.Any, dataPath: java.lang.String, parentData: js.Object, parentDataProperty: scala.Double): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Object,
     parentDataProperty: scala.Double,
     rootData: js.Array[_]
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
     dataPath: java.lang.String,
     parentData: js.Object,
     parentDataProperty: scala.Double,
     rootData: js.Object
-  ): scala.Boolean | stdLib.PromiseLike[_] = js.native
+  ): scala.Boolean | js.Thenable[_] = js.native
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object esIntegrationGetStoredStateMigrateV4ModMembers extends js.Object {
   def getStoredState(v4Config: V4Config): js.Function1[
     /* config */ reduxDashPersistLib.esTypesMod.PersistConfig, 
-    stdLib.Promise[_ | scala.Unit]
+    js.Promise[_ | scala.Unit]
   ] = js.native
 }
 

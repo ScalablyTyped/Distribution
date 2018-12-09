@@ -20,11 +20,11 @@ trait PermissionsAndroidStatic
        * Returns a promise resolving to a boolean value as to whether the specified
        * permissions has been granted
        */
-  def check(permission: Permission): stdLib.Promise[scala.Boolean] = js.native
+  def check(permission: Permission): js.Promise[scala.Boolean] = js.native
   /**
        * Deprecated
        */
-  def checkPermission(permission: Permission): stdLib.Promise[scala.Boolean] = js.native
+  def checkPermission(permission: Permission): js.Promise[scala.Boolean] = js.native
   /**
        * Prompts the user to enable a permission and returns a promise resolving to a
        * string value indicating whether the user allowed or denied the request
@@ -35,7 +35,7 @@ trait PermissionsAndroidStatic
        * (https://developer.android.com/training/permissions/requesting.html#explain)
        * and then shows the system permission dialog
        */
-  def request(permission: Permission): stdLib.Promise[java.lang.String] = js.native
+  def request(permission: Permission): js.Promise[java.lang.String] = js.native
   /**
        * Prompts the user to enable a permission and returns a promise resolving to a
        * string value indicating whether the user allowed or denied the request
@@ -46,20 +46,20 @@ trait PermissionsAndroidStatic
        * (https://developer.android.com/training/permissions/requesting.html#explain)
        * and then shows the system permission dialog
        */
-  def request(permission: Permission, rationale: Rationale): stdLib.Promise[java.lang.String] = js.native
+  def request(permission: Permission, rationale: Rationale): js.Promise[java.lang.String] = js.native
   /**
        * Prompts the user to enable multiple permissions in the same dialog and
        * returns an object with the permissions as keys and strings as values
        * indicating whether the user allowed or denied the request
        */
-  def requestMultiple(permissions: js.Array[java.lang.String]): stdLib.Promise[ScalablyTyped.runtime.StringDictionary[PermissionStatus]] = js.native
+  def requestMultiple(permissions: js.Array[java.lang.String]): js.Promise[ScalablyTyped.runtime.StringDictionary[PermissionStatus]] = js.native
   /**
        * Deprecated
        */
-  def requestPermission(permission: Permission): stdLib.Promise[scala.Boolean] = js.native
+  def requestPermission(permission: Permission): js.Promise[scala.Boolean] = js.native
   /**
        * Deprecated
        */
-  def requestPermission(permission: Permission, rationale: Rationale): stdLib.Promise[scala.Boolean] = js.native
+  def requestPermission(permission: Permission, rationale: Rationale): js.Promise[scala.Boolean] = js.native
 }
 

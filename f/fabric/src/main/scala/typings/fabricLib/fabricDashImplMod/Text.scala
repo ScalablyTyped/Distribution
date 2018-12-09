@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Text")
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.ITextOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+@JSImport("fabric/fabric-impl", "Text")
 @js.native
-class Text protected () extends ITextOptions {
+class Text protected () extends Object {
   /**
   	 * Constructor
   	 * @param text Text string
@@ -21,10 +21,6 @@ class Text protected () extends ITextOptions {
   	 * @param [options] Options object
   	 */
   def this(text: java.lang.String, options: ITextOptions) = this()
-  /**
-  	 * Returns complexity of an instance
-  	 */
-  def complexity(): scala.Double = js.native
   /**
        * Retrieves object's charSpacing
        */
@@ -77,11 +73,6 @@ class Text protected () extends ITextOptions {
        * Retrieves object's underline
        */
   def getUnderline(): scala.Boolean = js.native
-  /**
-  	 * Renders text instance on a specified context
-  	 * @param ctx Context to render on
-  	 */
-  def render(ctx: stdLib.CanvasRenderingContext2D, noTransform: scala.Boolean): scala.Unit = js.native
   /**
        * Sets object's charSpacing
        * @param charSpacing Character spacing
@@ -153,16 +144,6 @@ class Text protected () extends ITextOptions {
        */
   def setUnderline(underline: scala.Boolean): Text = js.native
   /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 */
-  def toObject(): js.Any = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 */
-  def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
-  /**
   	 * Returns SVG representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
   	 */
@@ -174,8 +155,7 @@ class Text protected () extends ITextOptions {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Text")
+@JSImport("fabric/fabric-impl", "Text")
 @js.native
 object Text extends js.Object {
   /**

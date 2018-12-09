@@ -141,7 +141,7 @@ trait ITextFieldProps
   var onGetErrorMessage: js.UndefOr[
     js.Function1[
       /* value */ java.lang.String, 
-      js.UndefOr[java.lang.String | stdLib.PromiseLike[java.lang.String]]
+      js.UndefOr[java.lang.String | js.Thenable[java.lang.String]]
     ]
   ] = js.undefined
   /**

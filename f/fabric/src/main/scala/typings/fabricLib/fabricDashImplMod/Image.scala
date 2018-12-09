@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Image")
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IImageOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+@JSImport("fabric/fabric-impl", "Image")
 @js.native
-class Image protected () extends IImageOptions {
+class Image protected () extends Object {
   /**
   	 * Constructor
   	 * @param element Image element
@@ -33,11 +33,6 @@ class Image protected () extends IImageOptions {
   	 */
   def clone(callback: js.Function, propertiesToInclude: js.Array[java.lang.String]): scala.Unit = js.native
   /**
-  	 * Returns complexity of an instance
-  	 * @return complexity of this instance
-  	 */
-  def complexity(): scala.Double = js.native
-  /**
   	 * Returns image element which this instance if based on
   	 * @return Image element
   	 */
@@ -57,7 +52,6 @@ class Image protected () extends IImageOptions {
   def initialize(element: java.lang.String, options: IImageOptions): scala.Unit = js.native
   def initialize(element: stdLib.HTMLImageElement): scala.Unit = js.native
   def initialize(element: stdLib.HTMLImageElement, options: IImageOptions): scala.Unit = js.native
-  def render(ctx: stdLib.CanvasRenderingContext2D, noTransform: scala.Boolean): scala.Unit = js.native
   /**
   	 * Sets crossOrigin value (on an instance and corresponding image element)
   	 */
@@ -92,18 +86,6 @@ class Image protected () extends IImageOptions {
   	 */
   def setSrc(src: java.lang.String, callback: js.Function, options: IImageOptions): Image = js.native
   /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return Object representation of an instance
-  	 */
-  def toObject(): js.Any = js.native
-  /**
-  	 * Returns object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 * @return Object representation of an instance
-  	 */
-  def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
-  /**
   	 * Returns SVG representation of an instance
   	 * @param [reviver] Method for further parsing of svg representation.
   	 * @return svg representation of an instance
@@ -117,8 +99,7 @@ class Image protected () extends IImageOptions {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "Image")
+@JSImport("fabric/fabric-impl", "Image")
 @js.native
 object Image extends js.Object {
   /**

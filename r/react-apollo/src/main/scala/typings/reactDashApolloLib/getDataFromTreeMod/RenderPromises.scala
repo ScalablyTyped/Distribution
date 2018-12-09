@@ -14,7 +14,7 @@ class RenderPromises () extends js.Object {
     queryInstance: reactDashApolloLib.queryMod.default[TData, TVariables],
     finish: js.Function0[reactLib.reactMod.ReactNs.ReactNode]
   ): reactLib.reactMod.ReactNs.ReactNode = js.native
-  def consumeAndAwaitPromises(): stdLib.Promise[js.Array[_]] = js.native
+  def consumeAndAwaitPromises(): js.Promise[js.Array[_]] = js.native
   def hasPromises(): scala.Boolean = js.native
 }
 

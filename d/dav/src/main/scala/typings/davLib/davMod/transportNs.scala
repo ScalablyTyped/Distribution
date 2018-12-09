@@ -32,8 +32,8 @@ object transportNs extends js.Object {
              * @param credentials user authorization.
              */
     def this(credentials: davLib.davMod.Credentials) = this()
-    def send(request: davLib.davMod.Request, url: java.lang.String): stdLib.Promise[_] = js.native
-    def send(request: davLib.davMod.Request, url: java.lang.String, options: TransportOptions): stdLib.Promise[_] = js.native
+    def send(request: davLib.davMod.Request, url: java.lang.String): js.Promise[_] = js.native
+    def send(request: davLib.davMod.Request, url: java.lang.String, options: TransportOptions): js.Promise[_] = js.native
   }
   
   

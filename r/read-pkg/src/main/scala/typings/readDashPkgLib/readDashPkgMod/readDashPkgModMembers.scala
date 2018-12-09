@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("read-pkg", JSImport.Namespace)
 @js.native
 object readDashPkgModMembers extends js.Object {
-  def apply(): stdLib.Promise[
+  def apply(): js.Promise[
     normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package
   ] = js.native
   def apply(
     options: (readDashPkgLib.readDashPkgMod.ReadPkgNs.Options with readDashPkgLib.Anon_Normalize) | readDashPkgLib.readDashPkgMod.ReadPkgNs.Options
-  ): stdLib.Promise[
+  ): js.Promise[
     normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package
   ] = js.native
-  def apply(path: java.lang.String): stdLib.Promise[
+  def apply(path: java.lang.String): js.Promise[
     normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package
   ] = js.native
   def apply(
     path: java.lang.String,
     options: (readDashPkgLib.readDashPkgMod.ReadPkgNs.Options with readDashPkgLib.Anon_Normalize) | readDashPkgLib.readDashPkgMod.ReadPkgNs.Options
-  ): stdLib.Promise[
+  ): js.Promise[
     normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package
   ] = js.native
   def sync(): normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package = js.native

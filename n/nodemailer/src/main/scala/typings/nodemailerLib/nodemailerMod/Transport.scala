@@ -18,7 +18,7 @@ trait Transport extends js.Object {
         scala.Unit
       ], 
       scala.Unit
-    ]) with js.Function0[stdLib.Promise[nodemailerLib.nodemailerLibNumbers.`true`]]
+    ]) with js.Function0[js.Promise[nodemailerLib.nodemailerLibNumbers.`true`]]
   ] = js.undefined
   var version: java.lang.String
   def send(

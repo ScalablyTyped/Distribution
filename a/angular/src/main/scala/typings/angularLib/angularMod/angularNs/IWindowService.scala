@@ -32,9 +32,9 @@ trait IWindowService
   /* InferMemberOverrides */
   override def btoa(data: java.lang.String): java.lang.String = js.native
   /* InferMemberOverrides */
-  override def fetch(input: stdLib.RequestInfo): stdLib.Promise[stdLib.Response] = js.native
+  override def fetch(input: stdLib.RequestInfo): js.Promise[stdLib.Response] = js.native
   /* InferMemberOverrides */
-  override def fetch(input: stdLib.RequestInfo, init: stdLib.RequestInit): stdLib.Promise[stdLib.Response] = js.native
+  override def fetch(input: stdLib.RequestInfo, init: stdLib.RequestInit): js.Promise[stdLib.Response] = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
   /* InferMemberOverrides */

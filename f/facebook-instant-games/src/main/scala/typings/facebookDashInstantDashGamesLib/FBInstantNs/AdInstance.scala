@@ -21,7 +21,7 @@ trait AdInstance extends js.Object {
            * @throws INVALID_PARAM
            * @throws NETWORK_FAILURE
            */
-  def loadAsync(): stdLib.Promise[scala.Unit]
+  def loadAsync(): js.Promise[scala.Unit]
   /**
            * Present the ad. The returned promise resolves when user finished watching the ad, and rejects if it failed to present or was closed during the ad.
            * @throws ADS_NOT_LOADED
@@ -29,6 +29,6 @@ trait AdInstance extends js.Object {
            * @throws NETWORK_FAILURE
            * @throws INVALID_OPERATION
            */
-  def showAsync(): stdLib.Promise[scala.Unit]
+  def showAsync(): js.Promise[scala.Unit]
 }
 

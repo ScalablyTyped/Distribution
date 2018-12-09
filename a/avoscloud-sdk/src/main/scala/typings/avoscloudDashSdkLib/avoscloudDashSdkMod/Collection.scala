@@ -32,8 +32,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Collection[T] ()
   extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Collection[T] {
-  def this(models: js.Array[js.Object]) = this()
-  def this(models: js.Array[js.Object], options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.CollectionNs.Options) = this()
+  def this(models: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object]) = this()
+  def this(models: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object], options: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.CollectionNs.Options) = this()
   /* CompleteClass */
   override def toJSON(): js.Any = js.native
 }

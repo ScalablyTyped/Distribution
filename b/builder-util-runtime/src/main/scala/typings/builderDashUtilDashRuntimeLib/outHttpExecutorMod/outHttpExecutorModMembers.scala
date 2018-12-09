@@ -50,7 +50,7 @@ object outHttpExecutorModMembers extends js.Object {
   def configureRequestUrl(url: nodeLib.urlMod.URL, options: nodeLib.httpMod.RequestOptions): scala.Unit = js.native
   def createHttpError(response: nodeLib.httpMod.IncomingMessage): HttpError = js.native
   def createHttpError(response: nodeLib.httpMod.IncomingMessage, description: js.Any): HttpError = js.native
-  def parseJson(result: stdLib.Promise[java.lang.String | scala.Null]): stdLib.Promise[_] = js.native
+  def parseJson(result: js.Promise[java.lang.String | scala.Null]): js.Promise[_] = js.native
   def safeGetHeader(response: js.Any, headerKey: java.lang.String): js.Any = js.native
   def safeStringifyJson(data: js.Any): java.lang.String = js.native
   def safeStringifyJson(data: js.Any, skippedNames: nodeLib.Set[java.lang.String]): java.lang.String = js.native

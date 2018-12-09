@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("command-exists", JSImport.Namespace)
 @js.native
 object commandDashExistsMod extends js.Object {
-  def apply(commandName: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def apply(commandName: java.lang.String): js.Promise[java.lang.String] = js.native
   def apply(
     commandName: java.lang.String,
     cb: js.Function2[/* error */ scala.Null, /* exists */ scala.Boolean, scala.Unit]

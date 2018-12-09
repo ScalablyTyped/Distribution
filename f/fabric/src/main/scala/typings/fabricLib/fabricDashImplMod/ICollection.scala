@@ -15,7 +15,7 @@ trait ICollection[T] extends js.Object {
   	 * Objects should be instances of (or inherit from) fabric.Object
   	 * @param object Zero or more fabric instances
   	 */
-  def add(`object`: js.Object*): T = js.native
+  def add(`object`: Object*): T = js.native
   /**
   	 * Returns number representation of a collection complexity
   	 * @return complexity
@@ -26,7 +26,7 @@ trait ICollection[T] extends js.Object {
   	 * @param object Object to check against
   	 * @return `true` if collection contains an object
   	 */
-  def contains(`object`: js.Object): scala.Boolean = js.native
+  def contains(`object`: Object): scala.Boolean = js.native
   /**
   	 * Executes given function for each object in this group
   	 * @param context Context (aka thisObject)
@@ -34,9 +34,9 @@ trait ICollection[T] extends js.Object {
   	 */
   def forEachObject(
     callback: js.Function3[
-      /* element */ js.Object, 
+      /* element */ Object, 
       /* index */ scala.Double, 
-      /* array */ js.Array[js.Object], 
+      /* array */ js.Array[Object], 
       scala.Unit
     ]
   ): T = js.native
@@ -47,9 +47,9 @@ trait ICollection[T] extends js.Object {
   	 */
   def forEachObject(
     callback: js.Function3[
-      /* element */ js.Object, 
+      /* element */ Object, 
       /* index */ scala.Double, 
-      /* array */ js.Array[js.Object], 
+      /* array */ js.Array[Object], 
       scala.Unit
     ],
     context: js.Any
@@ -59,13 +59,13 @@ trait ICollection[T] extends js.Object {
   	 * Type parameter introduced in 1.3.10
   	 * @param [type] When specified, only objects of this type are returned
   	 */
-  def getObjects(): js.Array[js.Object] = js.native
+  def getObjects(): js.Array[Object] = js.native
   /**
   	 * Returns an array of children objects of this instance
   	 * Type parameter introduced in 1.3.10
   	 * @param [type] When specified, only objects of this type are returned
   	 */
-  def getObjects(`type`: java.lang.String): js.Array[js.Object] = js.native
+  def getObjects(`type`: java.lang.String): js.Array[Object] = js.native
   /**
   	 * Inserts an object into collection at specified index, then renders canvas (if `renderOnAddRemove` is not `false`)
   	 * An object should be an instance of (or inherit from) fabric.Object
@@ -75,7 +75,7 @@ trait ICollection[T] extends js.Object {
   	 * @return thisArg
   	 * @chainable
   	 */
-  def insertAt(`object`: js.Object, index: scala.Double, nonSplicing: scala.Boolean): T = js.native
+  def insertAt(`object`: Object, index: scala.Double, nonSplicing: scala.Boolean): T = js.native
   /**
   	 * Returns true if collection contains no objects
   	 * @return true if collection is empty
@@ -92,7 +92,7 @@ trait ICollection[T] extends js.Object {
   	 * @return thisArg
   	 * @chainable
   	 */
-  def remove(`object`: js.Object*): T = js.native
+  def remove(`object`: Object*): T = js.native
   /**
   	 * Returns a size of a collection (i.e: length of an array containing its objects)
   	 * @return Collection size

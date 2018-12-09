@@ -43,7 +43,7 @@ class namespaced () extends PromiseQueue {
        *          or immediately rejects if `maxQueuedPromise` is exceeded.
        */
   /* CompleteClass */
-  override def add[T](promiseGenerator: js.Function0[stdLib.Promise[T]]): stdLib.Promise[T] = js.native
+  override def add[T](promiseGenerator: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
   /**
        * Returns the number of promiseGenerators waiting in queue.
        */

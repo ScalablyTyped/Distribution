@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait CallRoute extends Route {
-  def call(callPath: RoutePathSet, args: js.Array[_]): CallRouteResult | stdLib.Promise[CallRouteResult]
+  def call(callPath: RoutePathSet, args: js.Array[_]): CallRouteResult | js.Promise[CallRouteResult]
 }
 

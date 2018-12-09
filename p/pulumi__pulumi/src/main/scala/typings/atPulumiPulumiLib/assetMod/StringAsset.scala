@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class StringAsset protected ()
   extends atPulumiPulumiLib.assetAssetMod.StringAsset {
   def this(text: java.lang.String) = this()
-  def this(text: stdLib.Promise[java.lang.String]) = this()
+  def this(text: js.Promise[java.lang.String]) = this()
 }
 

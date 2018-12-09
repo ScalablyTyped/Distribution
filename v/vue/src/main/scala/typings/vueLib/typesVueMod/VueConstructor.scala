@@ -116,7 +116,7 @@ ScalablyTyped.runtime.Instantiable0[
     ]
   ): this.type = js.native
   def mixin(mixin: VueConstructor[Vue]): this.type = js.native
-  def nextTick(): stdLib.Promise[scala.Unit] = js.native
+  def nextTick(): js.Promise[scala.Unit] = js.native
   def nextTick(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def nextTick(callback: js.Function0[scala.Unit], context: js.Array[_]): scala.Unit = js.native
   def set[T](array: js.Array[T], key: scala.Double, value: T): T = js.native

@@ -18,7 +18,7 @@ trait IGulpCacheOptions extends js.Object {
     js.Function2[
       /* file */ vinylLib.vinylMod.File, 
       /* callback */ js.UndefOr[js.Function2[/* err */ js.Any, /* result */ java.lang.String, scala.Unit]], 
-      java.lang.String | stdLib.Promise[java.lang.String]
+      java.lang.String | js.Promise[java.lang.String]
     ]
   ] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait IGulpCacheOptions extends js.Object {
            * Content that is to be cached.
            */
   var value: js.UndefOr[
-    js.Function1[/* result */ js.Any, js.Object | stdLib.Promise[js.Object] | java.lang.String]
+    js.Function1[/* result */ js.Any, js.Object | js.Promise[js.Object] | java.lang.String]
   ] = js.undefined
 }
 

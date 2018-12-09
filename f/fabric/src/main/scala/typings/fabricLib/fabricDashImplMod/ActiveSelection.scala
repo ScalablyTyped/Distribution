@@ -5,22 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "ActiveSelection")
+@JSImport("fabric/fabric-impl", "ActiveSelection")
 @js.native
-class ActiveSelection () extends ICollection[Group] {
+class ActiveSelection ()
+  extends Object
+     with ICollection[Group] {
   /**
   	 * Constructor
   	 * @param objects ActiveSelection objects
   	 * @param [options] Options object
   	 */
-  def this(items: js.Array[js.Object]) = this()
+  def this(items: js.Array[Object]) = this()
   /**
   	 * Constructor
   	 * @param objects ActiveSelection objects
   	 * @param [options] Options object
   	 */
-  def this(items: js.Array[js.Object], options: IObjectOptions) = this()
+  def this(items: js.Array[Object], options: IObjectOptions) = this()
+  /**
+  	 * Returns number representation of a collection complexity
+  	 * @return complexity
+  	 */
+  /* InferMemberOverrides */
+  override def complexity(): scala.Double = js.native
   /**
        * Change te activeSelection to a normal group,
        * High level function that automatically adds it to canvas as
@@ -29,8 +36,7 @@ class ActiveSelection () extends ICollection[Group] {
   def toGroup(): Group = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ @JSImport("fabric/fabric-impl", "ActiveSelection")
+@JSImport("fabric/fabric-impl", "ActiveSelection")
 @js.native
 object ActiveSelection extends js.Object {
   /**

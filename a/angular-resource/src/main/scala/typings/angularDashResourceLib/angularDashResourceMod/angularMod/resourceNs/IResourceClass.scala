@@ -39,47 +39,92 @@ trait IResourceClass[T]
   def delete(): T = js.native
   def delete(params: js.Object): T = js.native
   def delete(params: js.Object, data: js.Object): T = js.native
-  def delete(params: js.Object, data: js.Object, success: js.Function): T = js.native
-  def delete(params: js.Object, data: js.Object, success: js.Function, error: js.Function): T = js.native
-  def delete(params: js.Object, success: js.Function): T = js.native
-  def delete(params: js.Object, success: js.Function, error: js.Function): T = js.native
-  def delete(success: js.Function): T = js.native
-  def delete(success: js.Function, error: js.Function): T = js.native
+  def delete(params: js.Object, data: js.Object, success: angularLib.angularMod.Global.Function): T = js.native
+  def delete(
+    params: js.Object,
+    data: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): T = js.native
+  def delete(params: js.Object, success: angularLib.angularMod.Global.Function): T = js.native
+  def delete(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): T = js.native
+  def delete(success: angularLib.angularMod.Global.Function): T = js.native
+  def delete(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): T = js.native
   def get(): T = js.native
   def get(params: js.Object): T = js.native
   def get(params: js.Object, data: js.Object): T = js.native
-  def get(params: js.Object, data: js.Object, success: js.Function): T = js.native
-  def get(params: js.Object, data: js.Object, success: js.Function, error: js.Function): T = js.native
-  def get(params: js.Object, success: js.Function): T = js.native
-  def get(params: js.Object, success: js.Function, error: js.Function): T = js.native
-  def get(success: js.Function): T = js.native
-  def get(success: js.Function, error: js.Function): T = js.native
+  def get(params: js.Object, data: js.Object, success: angularLib.angularMod.Global.Function): T = js.native
+  def get(
+    params: js.Object,
+    data: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): T = js.native
+  def get(params: js.Object, success: angularLib.angularMod.Global.Function): T = js.native
+  def get(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): T = js.native
+  def get(success: angularLib.angularMod.Global.Function): T = js.native
+  def get(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): T = js.native
   def query(): IResourceArray[T] = js.native
   def query(params: js.Object): IResourceArray[T] = js.native
   def query(params: js.Object, data: js.Object): IResourceArray[T] = js.native
-  def query(params: js.Object, data: js.Object, success: js.Function): IResourceArray[T] = js.native
-  def query(params: js.Object, data: js.Object, success: js.Function, error: js.Function): IResourceArray[T] = js.native
-  def query(params: js.Object, success: js.Function): IResourceArray[T] = js.native
-  def query(params: js.Object, success: js.Function, error: js.Function): IResourceArray[T] = js.native
-  def query(success: js.Function): IResourceArray[T] = js.native
-  def query(success: js.Function, error: js.Function): IResourceArray[T] = js.native
+  def query(params: js.Object, data: js.Object, success: angularLib.angularMod.Global.Function): IResourceArray[T] = js.native
+  def query(
+    params: js.Object,
+    data: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): IResourceArray[T] = js.native
+  def query(params: js.Object, success: angularLib.angularMod.Global.Function): IResourceArray[T] = js.native
+  def query(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): IResourceArray[T] = js.native
+  def query(success: angularLib.angularMod.Global.Function): IResourceArray[T] = js.native
+  def query(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): IResourceArray[T] = js.native
   def remove(): T = js.native
   def remove(params: js.Object): T = js.native
   def remove(params: js.Object, data: js.Object): T = js.native
-  def remove(params: js.Object, data: js.Object, success: js.Function): T = js.native
-  def remove(params: js.Object, data: js.Object, success: js.Function, error: js.Function): T = js.native
-  def remove(params: js.Object, success: js.Function): T = js.native
-  def remove(params: js.Object, success: js.Function, error: js.Function): T = js.native
-  def remove(success: js.Function): T = js.native
-  def remove(success: js.Function, error: js.Function): T = js.native
+  def remove(params: js.Object, data: js.Object, success: angularLib.angularMod.Global.Function): T = js.native
+  def remove(
+    params: js.Object,
+    data: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): T = js.native
+  def remove(params: js.Object, success: angularLib.angularMod.Global.Function): T = js.native
+  def remove(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): T = js.native
+  def remove(success: angularLib.angularMod.Global.Function): T = js.native
+  def remove(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): T = js.native
   def save(): T = js.native
   def save(params: js.Object): T = js.native
   def save(params: js.Object, data: js.Object): T = js.native
-  def save(params: js.Object, data: js.Object, success: js.Function): T = js.native
-  def save(params: js.Object, data: js.Object, success: js.Function, error: js.Function): T = js.native
-  def save(params: js.Object, success: js.Function): T = js.native
-  def save(params: js.Object, success: js.Function, error: js.Function): T = js.native
-  def save(success: js.Function): T = js.native
-  def save(success: js.Function, error: js.Function): T = js.native
+  def save(params: js.Object, data: js.Object, success: angularLib.angularMod.Global.Function): T = js.native
+  def save(
+    params: js.Object,
+    data: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): T = js.native
+  def save(params: js.Object, success: angularLib.angularMod.Global.Function): T = js.native
+  def save(
+    params: js.Object,
+    success: angularLib.angularMod.Global.Function,
+    error: angularLib.angularMod.Global.Function
+  ): T = js.native
+  def save(success: angularLib.angularMod.Global.Function): T = js.native
+  def save(success: angularLib.angularMod.Global.Function, error: angularLib.angularMod.Global.Function): T = js.native
 }
 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RTCStatsProvider extends EventTarget {
-  def getStats(): Promise[RTCStatsReport] = js.native
-  def msGetStats(): Promise[RTCStatsReport] = js.native
+  def getStats(): js.Promise[RTCStatsReport] = js.native
+  def msGetStats(): js.Promise[RTCStatsReport] = js.native
 }
 
 @JSGlobal("RTCStatsProvider")

@@ -14,14 +14,14 @@ object getDashStreamModMembers extends js.Object {
    * stream, indicating that there is no more data to be read.
    * The stream is switched to flowing mode.
    */
-  def apply(stream: nodeLib.streamMod.Stream): stdLib.Promise[java.lang.String] = js.native
+  def apply(stream: nodeLib.streamMod.Stream): js.Promise[java.lang.String] = js.native
   /**
    * Get the stream as a string.
    * The methods returns a promise that resolves when the end event fires on the
    * stream, indicating that there is no more data to be read.
    * The stream is switched to flowing mode.
    */
-  def apply(stream: nodeLib.streamMod.Stream, options: Options): stdLib.Promise[java.lang.String] = js.native
+  def apply(stream: nodeLib.streamMod.Stream, options: Options): js.Promise[java.lang.String] = js.native
   /**
        * Get the `stream` as an array of values.
        *
@@ -40,7 +40,7 @@ object getDashStreamModMembers extends js.Object {
        *   `maxBuffer` refers to the summed character lengths of every string in the array.
        *
        */
-  def array[T](stream: nodeLib.streamMod.Stream): stdLib.Promise[js.Array[T]] = js.native
+  def array[T](stream: nodeLib.streamMod.Stream): js.Promise[js.Array[T]] = js.native
   /**
        * Get the `stream` as an array of values.
        *
@@ -59,20 +59,20 @@ object getDashStreamModMembers extends js.Object {
        *   `maxBuffer` refers to the summed character lengths of every string in the array.
        *
        */
-  def array[T](stream: nodeLib.streamMod.Stream, options: Options): stdLib.Promise[js.Array[T]] = js.native
+  def array[T](stream: nodeLib.streamMod.Stream, options: Options): js.Promise[js.Array[T]] = js.native
   /**
        * Get the stream as a buffer.
        *
        * It honors the maxBuffer option as above, but it refers to byte length
        * rather than string length.
        */
-  def buffer(stream: nodeLib.streamMod.Stream): stdLib.Promise[nodeLib.Buffer] = js.native
+  def buffer(stream: nodeLib.streamMod.Stream): js.Promise[nodeLib.Buffer] = js.native
   /**
        * Get the stream as a buffer.
        *
        * It honors the maxBuffer option as above, but it refers to byte length
        * rather than string length.
        */
-  def buffer(stream: nodeLib.streamMod.Stream, options: Options): stdLib.Promise[nodeLib.Buffer] = js.native
+  def buffer(stream: nodeLib.streamMod.Stream, options: Options): js.Promise[nodeLib.Buffer] = js.native
 }
 

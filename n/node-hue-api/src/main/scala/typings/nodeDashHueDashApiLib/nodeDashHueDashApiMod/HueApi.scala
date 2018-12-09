@@ -43,7 +43,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set activate the scene, or {null} if a callback was provided.
            */
-  def activateScene(sceneId: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def activateScene(sceneId: java.lang.String): js.Promise[scala.Boolean] = js.native
   //modifySceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Helper-function that recalls a scene for a group using setGroupLightState. Reason for existence is simplicity for
@@ -55,7 +55,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set activate the scene, or {null} if a callback was provided.
            */
-  def activateScene(sceneId: java.lang.String, groupIdFilter: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def activateScene(sceneId: java.lang.String, groupIdFilter: java.lang.String): js.Promise[scala.Boolean] = js.native
   //modifySceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Helper-function that recalls a scene for a group using setGroupLightState. Reason for existence is simplicity for
@@ -67,7 +67,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set activate the scene, or {null} if a callback was provided.
            */
-  def activateScene(sceneId: java.lang.String, groupIdFilter: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def activateScene(sceneId: java.lang.String, groupIdFilter: scala.Double): js.Promise[scala.Boolean] = js.native
   //modifySceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Helper-function that recalls a scene for a group using setGroupLightState. Reason for existence is simplicity for
@@ -79,7 +79,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set activate the scene, or {null} if a callback was provided.
            */
-  def activateScene(sceneId: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def activateScene(sceneId: scala.Double): js.Promise[scala.Boolean] = js.native
   //modifySceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Helper-function that recalls a scene for a group using setGroupLightState. Reason for existence is simplicity for
@@ -91,7 +91,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set activate the scene, or {null} if a callback was provided.
            */
-  def activateScene(sceneId: scala.Double, groupIdFilter: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def activateScene(sceneId: scala.Double, groupIdFilter: java.lang.String): js.Promise[scala.Boolean] = js.native
   //modifySceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Helper-function that recalls a scene for a group using setGroupLightState. Reason for existence is simplicity for
@@ -103,7 +103,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set activate the scene, or {null} if a callback was provided.
            */
-  def activateScene(sceneId: scala.Double, groupIdFilter: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def activateScene(sceneId: scala.Double, groupIdFilter: scala.Double): js.Promise[scala.Boolean] = js.native
   //getDescription(cb: (err: NodeJS.ErrnoException, data: IBridgeDescription) => void): void;
   /**
            * Reads the bridge configuration and returns it as a JSON object.
@@ -111,7 +111,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use the promise for results.
            * @return {Q.promise} A promise with the result, or <null> if a callback function was provided.
            */
-  def config(): stdLib.Promise[IBridgeConfig] = js.native
+  def config(): js.Promise[IBridgeConfig] = js.native
   //createBasicScene(lightIds: string[] | number[], name: string, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Provides scene creation for >= 1.11.x firmware versions of the Hue Bridge.
@@ -120,7 +120,7 @@ class HueApi () extends js.Object {
            * @return {*} A promise that will return the id of the scene that was created (as well as the values that make up the scene),
            * or null if a callback was provided.
            */
-  def createAdvancedScene(scene: IScene): stdLib.Promise[IScene] = js.native
+  def createAdvancedScene(scene: IScene): js.Promise[IScene] = js.native
   //createScene(scene: IScene, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   //createScene(lightIds: string[] | number[], cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
@@ -131,7 +131,7 @@ class HueApi () extends js.Object {
            * @return {*} A promise that will return the id of the scene that was created (as well as the values that make up the scene),
            * or null if a callback was provided.
            */
-  def createBasicScene(lightIds: js.Array[java.lang.String | scala.Double], name: java.lang.String): stdLib.Promise[IScene] = js.native
+  def createBasicScene(lightIds: js.Array[java.lang.String | scala.Double], name: java.lang.String): js.Promise[IScene] = js.native
   /**
            * Creates a new light Group.
            *
@@ -140,8 +140,8 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return {*} A promise that will return the id of the group that was created, or null if a callback was provided.
            */
-  def createGroup(name: java.lang.String, lightIds: js.Array[java.lang.String]): stdLib.Promise[java.lang.String] = js.native
-  def createScene(lightIds: js.Array[java.lang.String | scala.Double], name: java.lang.String): stdLib.Promise[IScene] = js.native
+  def createGroup(name: java.lang.String, lightIds: js.Array[java.lang.String]): js.Promise[java.lang.String] = js.native
+  def createScene(lightIds: js.Array[java.lang.String | scala.Double], name: java.lang.String): js.Promise[IScene] = js.native
   //deleteScene(id: string | number, cb: (err: NodeJS.ErrnoException, data: Object) => void): void;
   /**
            * Creates a new Scene.
@@ -159,13 +159,13 @@ class HueApi () extends js.Object {
            * @return {*} A promise that will return the id of the scene that was created (as well as the values that make up the scene),
            * or null if a callback was provided.
            */
-  def createScene(scene: IScene): stdLib.Promise[IScene] = js.native
+  def createScene(scene: IScene): js.Promise[IScene] = js.native
   //scheduleEvent(schedule: ISchedule, cb: (err: NodeJS.ErrnoException, data: string) => void): void;
-  def createSchedule(schedule: ISchedule): stdLib.Promise[java.lang.String] = js.native
+  def createSchedule(schedule: ISchedule): js.Promise[java.lang.String] = js.native
   //registerUser(host: string, deviceDescription?: string, cb: (err: NodeJS.ErrnoException, data: string) => void): void;
-  def createUser(host: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def createUser(host: java.lang.String): js.Promise[java.lang.String] = js.native
   //registerUser(host: string, deviceDescription?: string, cb: (err: NodeJS.ErrnoException, data: string) => void): void;
-  def createUser(host: java.lang.String, deviceDescription: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def createUser(host: java.lang.String, deviceDescription: java.lang.String): js.Promise[java.lang.String] = js.native
   //createGroup(name: string, lightIds: string[], cb: (err: NodeJS.ErrnoException, data: string) => void): void;
   /**
            * Deletes a group with the specified id, returning <true> if the action was successful.
@@ -174,7 +174,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return {*} A promise that will return <true> if the deletion was successful, or null if a callback was provided.
            */
-  def deleteGroup(id: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def deleteGroup(id: java.lang.String): js.Promise[scala.Boolean] = js.native
   //createGroup(name: string, lightIds: string[], cb: (err: NodeJS.ErrnoException, data: string) => void): void;
   /**
            * Deletes a group with the specified id, returning <true> if the action was successful.
@@ -183,7 +183,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return {*} A promise that will return <true> if the deletion was successful, or null if a callback was provided.
            */
-  def deleteGroup(id: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def deleteGroup(id: scala.Double): js.Promise[scala.Boolean] = js.native
   //getScene(id: string | number, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Deletes a Scene (that is stored inside the bridge, not in the lights).
@@ -191,7 +191,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @returns {*} A promise that will return the result from deleting the scene or null if a callback was provided.
            */
-  def deleteScene(id: java.lang.String): stdLib.Promise[js.Object] = js.native
+  def deleteScene(id: java.lang.String): js.Promise[js.Object] = js.native
   //getScene(id: string | number, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Deletes a Scene (that is stored inside the bridge, not in the lights).
@@ -199,7 +199,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @returns {*} A promise that will return the result from deleting the scene or null if a callback was provided.
            */
-  def deleteScene(id: scala.Double): stdLib.Promise[js.Object] = js.native
+  def deleteScene(id: scala.Double): js.Promise[js.Object] = js.native
   //createSchedule(schedule: ISchedule, cb: (err: NodeJS.ErrnoException, data: string) => void): void;
   /**
            * Deletes a schedule by id, returning {true} if the deletion was successful.
@@ -208,7 +208,7 @@ class HueApi () extends js.Object {
            * @param cb An option callback function to use if you do not want to use a promise for the results.
            * @return {Q.promise} A promise that will return the result of the deletion, or <null> if a callback was provided.
            */
-  def deleteSchedule(id: java.lang.String): stdLib.Promise[js.Object] = js.native
+  def deleteSchedule(id: java.lang.String): js.Promise[js.Object] = js.native
   //createSchedule(schedule: ISchedule, cb: (err: NodeJS.ErrnoException, data: string) => void): void;
   /**
            * Deletes a schedule by id, returning {true} if the deletion was successful.
@@ -217,7 +217,7 @@ class HueApi () extends js.Object {
            * @param cb An option callback function to use if you do not want to use a promise for the results.
            * @return {Q.promise} A promise that will return the result of the deletion, or <null> if a callback was provided.
            */
-  def deleteSchedule(id: scala.Double): stdLib.Promise[js.Object] = js.native
+  def deleteSchedule(id: scala.Double): js.Promise[js.Object] = js.native
   //pressLinkButton(cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Deletes an existing user from the Phillips Hue Bridge.
@@ -226,7 +226,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to get the result via a promise chain.
            * @returns {Q.promise} A promise with the result of the deletion, or <null> if a callback was provided.
            */
-  def deleteUser(username: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def deleteUser(username: java.lang.String): js.Promise[scala.Boolean] = js.native
   //version(cb: (err: NodeJS.ErrnoException, data: IBridgeVersion) => void): void;
   /**
            * Loads the description for the Philips Hue.
@@ -234,15 +234,15 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function if you don't want to be informed via a promise.
            * @return {Q.promise} A promise that will be provided with a description object, or {null} if a callback was provided.
            */
-  def description(): stdLib.Promise[IBridgeDescription] = js.native
+  def description(): js.Promise[IBridgeDescription] = js.native
   //getFullState(cb: (err: NodeJS.ErrnoException, data: IState) => void): void;
-  def fullState(): stdLib.Promise[IState] = js.native
+  def fullState(): js.Promise[IState] = js.native
   //getGroups(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
-  def getAllGroups(): stdLib.Promise[js.Array[ILightGroup]] = js.native
+  def getAllGroups(): js.Promise[js.Array[ILightGroup]] = js.native
   //config(cb: (err: NodeJS.ErrnoException, data: IBridgeConfig) => void): void;
-  def getConfig(): stdLib.Promise[IBridgeConfig] = js.native
+  def getConfig(): js.Promise[IBridgeConfig] = js.native
   //description(cb: (err: NodeJS.ErrnoException, data: IBridgeDescription) => void): void;
-  def getDescription(): stdLib.Promise[IBridgeDescription] = js.native
+  def getDescription(): js.Promise[IBridgeDescription] = js.native
   //getConfig(cb: (err: NodeJS.ErrnoException, data: IBridgeConfig) => void): void;
   /**
            * Obtains the complete state for the Bridge. This is considered to be a very expensive operation and should not be invoked
@@ -251,7 +251,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function if you don't want to be informed via a promise.
            * @returns {Q.promise} A promise with the result, or {null} if a callback function was provided
            */
-  def getFullState(): stdLib.Promise[IState] = js.native
+  def getFullState(): js.Promise[IState] = js.native
   //getLightGroups(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
   /**
            * Obtains the details for a specified group in a format of {id: {*}, name: {*}, lights: [], lastAction: {*}}.
@@ -260,7 +260,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set the specified state on the light, or {null} if a callback was provided.
            */
-  def getGroup(id: java.lang.String): stdLib.Promise[ILightGroup] = js.native
+  def getGroup(id: java.lang.String): js.Promise[ILightGroup] = js.native
   //getLightGroups(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
   /**
            * Obtains the details for a specified group in a format of {id: {*}, name: {*}, lights: [], lastAction: {*}}.
@@ -269,42 +269,42 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set the specified state on the light, or {null} if a callback was provided.
            */
-  def getGroup(id: scala.Double): stdLib.Promise[ILightGroup] = js.native
+  def getGroup(id: scala.Double): js.Promise[ILightGroup] = js.native
   //groups(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
-  def getGroups(): stdLib.Promise[js.Array[ILightGroup]] = js.native
+  def getGroups(): js.Promise[js.Array[ILightGroup]] = js.native
   //lightGroups(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
-  def getLightGroups(): stdLib.Promise[js.Array[ILightGroup]] = js.native
+  def getLightGroups(): js.Promise[js.Array[ILightGroup]] = js.native
   //lightSources(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
-  def getLightSources(): stdLib.Promise[js.Array[ILightGroup]] = js.native
+  def getLightSources(): js.Promise[js.Array[ILightGroup]] = js.native
   //lightStatus(id: string|number, cb: (err: NodeJS.ErrnoException, data: ILight) => void): void;
-  def getLightStatus(id: java.lang.String): stdLib.Promise[ILight] = js.native
+  def getLightStatus(id: java.lang.String): js.Promise[ILight] = js.native
   //lightStatus(id: string|number, cb: (err: NodeJS.ErrnoException, data: ILight) => void): void;
-  def getLightStatus(id: scala.Double): stdLib.Promise[ILight] = js.native
+  def getLightStatus(id: scala.Double): js.Promise[ILight] = js.native
   //lightStatusWithRGB(id: string|number, cb: (err: NodeJS.ErrnoException, data: ILight) => void): void;
-  def getLightStatusWithRGB(id: java.lang.String): stdLib.Promise[ILight] = js.native
+  def getLightStatusWithRGB(id: java.lang.String): js.Promise[ILight] = js.native
   //lightStatusWithRGB(id: string|number, cb: (err: NodeJS.ErrnoException, data: ILight) => void): void;
-  def getLightStatusWithRGB(id: scala.Double): stdLib.Promise[ILight] = js.native
+  def getLightStatusWithRGB(id: scala.Double): js.Promise[ILight] = js.native
   //lights(cb: (err: NodeJS.ErrnoException, data: ILightsApiResponse) => void): void;
-  def getLights(): stdLib.Promise[ILightsApiResponse] = js.native
+  def getLights(): js.Promise[ILightsApiResponse] = js.native
   //luminaires(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
-  def getLuminaires(): stdLib.Promise[js.Array[ILightGroup]] = js.native
+  def getLuminaires(): js.Promise[js.Array[ILightGroup]] = js.native
   //newLights(cb: (err: NodeJS.ErrnoException, data: INewLightsResponse) => void): void;
-  def getNewLights(): stdLib.Promise[INewLightsResponse] = js.native
+  def getNewLights(): js.Promise[INewLightsResponse] = js.native
   //registeredUsers(cb: (err: NodeJS.ErrnoException, data: IRegisteredUser) => void): void;
-  def getRegisteredUsers(): stdLib.Promise[IRegisteredUser] = js.native
+  def getRegisteredUsers(): js.Promise[IRegisteredUser] = js.native
   //scene(id: string | number, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def getScene(id: java.lang.String): stdLib.Promise[IScene] = js.native
+  def getScene(id: java.lang.String): js.Promise[IScene] = js.native
   //scene(id: string | number, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def getScene(id: scala.Double): stdLib.Promise[IScene] = js.native
-  def getScenes(): stdLib.Promise[js.Array[IScene]] = js.native
+  def getScene(id: scala.Double): js.Promise[IScene] = js.native
+  def getScenes(): js.Promise[js.Array[IScene]] = js.native
   //schedule(id: string | number, cb: (err: NodeJS.ErrnoException, data: ISchedule) => void): void;
-  def getSchedule(id: java.lang.String): stdLib.Promise[ISchedule] = js.native
+  def getSchedule(id: java.lang.String): js.Promise[ISchedule] = js.native
   //schedule(id: string | number, cb: (err: NodeJS.ErrnoException, data: ISchedule) => void): void;
-  def getSchedule(id: scala.Double): stdLib.Promise[ISchedule] = js.native
+  def getSchedule(id: scala.Double): js.Promise[ISchedule] = js.native
   //schedules(cb: (err: NodeJS.ErrnoException, data: ISchedule[]) => void): void;
-  def getSchedules(): stdLib.Promise[js.Array[ISchedule]] = js.native
+  def getSchedules(): js.Promise[js.Array[ISchedule]] = js.native
   //sensors(cb: (err: NodeJS.ErrnoException, data: ISensorsApiResponse) => void): void;
-  def getSensors(): stdLib.Promise[ISensorsApiResponse] = js.native
+  def getSensors(): js.Promise[ISensorsApiResponse] = js.native
   //recallScene(sceneId: string|number, groupIdFilter: string|number, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Obtains all the allowed timezones from the bridge.
@@ -312,7 +312,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return {*} A promise that will return the id of the scene that was created, or null if a callback was provided.
            */
-  def getTimezones(): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def getTimezones(): js.Promise[js.Array[java.lang.String]] = js.native
   /**
            * Gets the version data for the Philips Hue Bridge.
            *
@@ -320,9 +320,9 @@ class HueApi () extends js.Object {
            * @returns {Q.promise} A promise will be provided that will resolve to the version data for the bridge, or {null} if a
            * callback was provided.
            */
-  def getVersion(): stdLib.Promise[IBridgeVersion] = js.native
-  def group(id: java.lang.String): stdLib.Promise[ILightGroup] = js.native
-  def group(id: scala.Double): stdLib.Promise[ILightGroup] = js.native
+  def getVersion(): js.Promise[IBridgeVersion] = js.native
+  def group(id: java.lang.String): js.Promise[ILightGroup] = js.native
+  def group(id: scala.Double): js.Promise[ILightGroup] = js.native
   //setGroupLightState(id: string|number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Obtains all the groups from the Hue Bridge as an Array of {id: {*}, name: {*}} objects.
@@ -330,7 +330,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will obtain the groups, or {null} if a callback was provided.
            */
-  def groups(): stdLib.Promise[js.Array[ILightGroup]] = js.native
+  def groups(): js.Promise[js.Array[ILightGroup]] = js.native
   //getLightSources(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
   /**
            * Obtains all the LightGroups from the Hue Bridge as an Array of {id: {*}, name: {*}} objects.
@@ -338,7 +338,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will obtain the LightGroups, or {null} if a callback was provided.
            */
-  def lightGroups(): stdLib.Promise[js.Array[ILightGroup]] = js.native
+  def lightGroups(): js.Promise[js.Array[ILightGroup]] = js.native
   //getLuminaires(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
   /**
            * Obtains all the LightSources from the Hue Bridge as an Array of {id: {*}, name: {*}} objects.
@@ -346,7 +346,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will obtain the lightsources, or {null} if a callback was provided.
            */
-  def lightSources(): stdLib.Promise[js.Array[ILightGroup]] = js.native
+  def lightSources(): js.Promise[js.Array[ILightGroup]] = js.native
   //getLights(cb: (err: NodeJS.ErrnoException, data: ILightsApiResponse) => void): void;
   /**
            * Obtains the status of the specified light.
@@ -356,7 +356,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return A promise that will be provided with the light status, or {null} if a callback function was provided.
            */
-  def lightStatus(id: java.lang.String): stdLib.Promise[ILight] = js.native
+  def lightStatus(id: java.lang.String): js.Promise[ILight] = js.native
   //getLights(cb: (err: NodeJS.ErrnoException, data: ILightsApiResponse) => void): void;
   /**
            * Obtains the status of the specified light.
@@ -366,11 +366,11 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return A promise that will be provided with the light status, or {null} if a callback function was provided.
            */
-  def lightStatus(id: scala.Double): stdLib.Promise[ILight] = js.native
+  def lightStatus(id: scala.Double): js.Promise[ILight] = js.native
   //getLightStatus(id: string|number, cb: (err: NodeJS.ErrnoException, data: ILight) => void): void;
-  def lightStatusWithRGB(id: java.lang.String): stdLib.Promise[ILight] = js.native
+  def lightStatusWithRGB(id: java.lang.String): js.Promise[ILight] = js.native
   //getLightStatus(id: string|number, cb: (err: NodeJS.ErrnoException, data: ILight) => void): void;
-  def lightStatusWithRGB(id: scala.Double): stdLib.Promise[ILight] = js.native
+  def lightStatusWithRGB(id: scala.Double): js.Promise[ILight] = js.native
   //getSensors(cb: (err: NodeJS.ErrnoException, data: ISensorsApiResponse) => void): void;
   /**
            * Obtains the details of the individual lights that are attached to the Philips Hue.
@@ -378,7 +378,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return A promise that will be provided with the lights object, or {null} if a callback function was provided.
            */
-  def lights(): stdLib.Promise[ILightsApiResponse] = js.native
+  def lights(): js.Promise[ILightsApiResponse] = js.native
   //getAllGroups(cb: (err: NodeJS.ErrnoException, data: ILightGroup) => void): void;
   /**
            * Obtains all the Luminaires from the Hue Bridge as an Array of {id: {*}, name: {*}} objects.
@@ -386,43 +386,43 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will obtain the luminaires, or {null} if a callback was provided.
            */
-  def luminaires(): stdLib.Promise[js.Array[ILightGroup]] = js.native
+  def luminaires(): js.Promise[js.Array[ILightGroup]] = js.native
   //updateScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def modifyScene(sceneId: java.lang.String, scene: IScene, storeLightState: scala.Boolean): stdLib.Promise[IScene] = js.native
+  def modifyScene(sceneId: java.lang.String, scene: IScene, storeLightState: scala.Boolean): js.Promise[IScene] = js.native
   //updateScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def modifyScene(sceneId: scala.Double, scene: IScene, storeLightState: scala.Boolean): stdLib.Promise[IScene] = js.native
+  def modifyScene(sceneId: scala.Double, scene: IScene, storeLightState: scala.Boolean): js.Promise[IScene] = js.native
   //updateSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def modifySceneLightState(sceneId: java.lang.String, lightId: java.lang.String, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def modifySceneLightState(sceneId: java.lang.String, lightId: java.lang.String, stateValues: js.Object): js.Promise[IScene] = js.native
   //updateSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   def modifySceneLightState(
     sceneId: java.lang.String,
     lightId: java.lang.String,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //updateSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def modifySceneLightState(sceneId: java.lang.String, lightId: scala.Double, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def modifySceneLightState(sceneId: java.lang.String, lightId: scala.Double, stateValues: js.Object): js.Promise[IScene] = js.native
   //updateSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   def modifySceneLightState(
     sceneId: java.lang.String,
     lightId: scala.Double,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //updateSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def modifySceneLightState(sceneId: scala.Double, lightId: java.lang.String, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def modifySceneLightState(sceneId: scala.Double, lightId: java.lang.String, stateValues: js.Object): js.Promise[IScene] = js.native
   //updateSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   def modifySceneLightState(
     sceneId: scala.Double,
     lightId: java.lang.String,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //updateSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def modifySceneLightState(sceneId: scala.Double, lightId: scala.Double, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def modifySceneLightState(sceneId: scala.Double, lightId: scala.Double, stateValues: js.Object): js.Promise[IScene] = js.native
   //updateSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   def modifySceneLightState(
     sceneId: scala.Double,
     lightId: scala.Double,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //getLightStatusWithRGB(id: string|number, cb: (err: NodeJS.ErrnoException, data: ILight) => void): void;
   /**
            * Obtains the new lights found by the bridge, dependant upon the last search.
@@ -430,7 +430,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return A promise that will be provided with the new lights search result, or {null} if a callback function was provided.
            */
-  def newLights(): stdLib.Promise[INewLightsResponse] = js.native
+  def newLights(): js.Promise[INewLightsResponse] = js.native
   //createUser(host: string, deviceDescription?: string, cb: (err: NodeJS.ErrnoException, data: string) => void): void;
   /**
            * Presses the Link Button on the Bridge (without the user actually having to do it). If successful then {true} will be
@@ -439,19 +439,19 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use the promise returned.
            * @return {Q.promise} A promise with the result, or <null> if a callback was provided.
            */
-  def pressLinkButton(): stdLib.Promise[scala.Boolean] = js.native
+  def pressLinkButton(): js.Promise[scala.Boolean] = js.native
   //activateScene(sceneId: string|number, groupIdFilter: string|number, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
-  def recallScene(sceneId: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def recallScene(sceneId: java.lang.String): js.Promise[scala.Boolean] = js.native
   //activateScene(sceneId: string|number, groupIdFilter: string|number, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
-  def recallScene(sceneId: java.lang.String, groupIdFilter: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def recallScene(sceneId: java.lang.String, groupIdFilter: java.lang.String): js.Promise[scala.Boolean] = js.native
   //activateScene(sceneId: string|number, groupIdFilter: string|number, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
-  def recallScene(sceneId: java.lang.String, groupIdFilter: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def recallScene(sceneId: java.lang.String, groupIdFilter: scala.Double): js.Promise[scala.Boolean] = js.native
   //activateScene(sceneId: string|number, groupIdFilter: string|number, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
-  def recallScene(sceneId: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def recallScene(sceneId: scala.Double): js.Promise[scala.Boolean] = js.native
   //activateScene(sceneId: string|number, groupIdFilter: string|number, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
-  def recallScene(sceneId: scala.Double, groupIdFilter: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def recallScene(sceneId: scala.Double, groupIdFilter: java.lang.String): js.Promise[scala.Boolean] = js.native
   //activateScene(sceneId: string|number, groupIdFilter: string|number, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
-  def recallScene(sceneId: scala.Double, groupIdFilter: scala.Double): stdLib.Promise[scala.Boolean] = js.native
+  def recallScene(sceneId: scala.Double, groupIdFilter: scala.Double): js.Promise[scala.Boolean] = js.native
   //fullState(cb: (err: NodeJS.ErrnoException, data: IState) => void): void;
   /**
            * Allows a new user/device to be registered with the Philips Hue Bridge. This will return the name of the user that was
@@ -466,7 +466,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return {Q.promise} A promise with the result, or <null> if a callback was provided.
            */
-  def registerUser(host: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def registerUser(host: java.lang.String): js.Promise[java.lang.String] = js.native
   //fullState(cb: (err: NodeJS.ErrnoException, data: IState) => void): void;
   /**
            * Allows a new user/device to be registered with the Philips Hue Bridge. This will return the name of the user that was
@@ -481,7 +481,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return {Q.promise} A promise with the result, or <null> if a callback was provided.
            */
-  def registerUser(host: java.lang.String, deviceDescription: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def registerUser(host: java.lang.String, deviceDescription: java.lang.String): js.Promise[java.lang.String] = js.native
   //unregisterUser(username: string, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void
   /**
            * Obtain a list of registered "users" or "devices" that can interact with the Philips Hue.
@@ -489,21 +489,21 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function if you do not want to use the promise to obtain the results.
            * @return A promise that will provide the results of registered users, or <null> if a callback was provided.
            */
-  def registeredUsers(): stdLib.Promise[IRegisteredUser] = js.native
+  def registeredUsers(): js.Promise[IRegisteredUser] = js.native
   /**
            * Obtains a scene by a given id.
            * @param sceneId {String} The id of the scene to obtain.
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will return the scene or <null> if a callback was provided.
            */
-  def scene(id: java.lang.String): stdLib.Promise[IScene] = js.native
+  def scene(id: java.lang.String): js.Promise[IScene] = js.native
   /**
            * Obtains a scene by a given id.
            * @param sceneId {String} The id of the scene to obtain.
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will return the scene or <null> if a callback was provided.
            */
-  def scene(id: scala.Double): stdLib.Promise[IScene] = js.native
+  def scene(id: scala.Double): js.Promise[IScene] = js.native
   //updateSchedule(id: string | number, schedule: ISchedule, cb: (err: NodeJS.ErrnoException, data: ISchedule) => void): void;
   /**
            * Gets the scenes on the Bridge, as an array of {"id": {String}, "name": {String}, "lights": {Array}, "active": {Boolean}}
@@ -512,7 +512,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will return the results or <null> if a callback was provided.
            */
-  def scenes(): stdLib.Promise[js.Array[IScene]] = js.native
+  def scenes(): js.Promise[js.Array[IScene]] = js.native
   //getSchedules(cb: (err: NodeJS.ErrnoException, data: ISchedule[]) => void): void;
   /**
            * Gets the specified schedule by id, which is in an identical format the the Hue API documentation, with the addition
@@ -522,7 +522,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @returns A promise that will return the results or <null> if a callback was provided.
            */
-  def schedule(id: java.lang.String): stdLib.Promise[ISchedule] = js.native
+  def schedule(id: java.lang.String): js.Promise[ISchedule] = js.native
   //getSchedules(cb: (err: NodeJS.ErrnoException, data: ISchedule[]) => void): void;
   /**
            * Gets the specified schedule by id, which is in an identical format the the Hue API documentation, with the addition
@@ -532,7 +532,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @returns A promise that will return the results or <null> if a callback was provided.
            */
-  def schedule(id: scala.Double): stdLib.Promise[ISchedule] = js.native
+  def schedule(id: scala.Double): js.Promise[ISchedule] = js.native
   //getSchedule(id: string | number, cb: (err: NodeJS.ErrnoException, data: ISchedule) => void): void;
   /**
            * Creates a one time scheduled event. The results from this function is the id of the created schedule. The bridge only
@@ -542,7 +542,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will return the id value of the schedule that was created, or <null> if a callback was provided.
            */
-  def scheduleEvent(schedule: ISchedule): stdLib.Promise[java.lang.String] = js.native
+  def scheduleEvent(schedule: ISchedule): js.Promise[java.lang.String] = js.native
   //deleteGroup(id: string|number, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Gets the schedules on the Bridge, as an array of {"id": {String}, "name": {String}} objects.
@@ -550,7 +550,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will return the results or <null> if a callback was provided.
            */
-  def schedules(): stdLib.Promise[js.Array[ISchedule]] = js.native
+  def schedules(): js.Promise[js.Array[ISchedule]] = js.native
   //getNewLights(cb: (err: NodeJS.ErrnoException, data: INewLightsResponse) => void): void;
   /**
            * Starts a search for new lights.
@@ -558,7 +558,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return A promise that will be provided with the new lights, or {null} if a callback function was provided.
            */
-  def searchForNewLights(): stdLib.Promise[scala.Boolean] = js.native
+  def searchForNewLights(): js.Promise[scala.Boolean] = js.native
   //getRegisteredUsers(cb: (err: NodeJS.ErrnoException, data: IRegisteredUser) => void): void;
   /**
            * Obtains the details of the individual sensors that are attached to the Philips Hue.
@@ -566,7 +566,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return A promise that will be provided with the lights object, or {null} if a callback function was provided.
            */
-  def sensors(): stdLib.Promise[ISensorsApiResponse] = js.native
+  def sensors(): js.Promise[ISensorsApiResponse] = js.native
   //setLightState(id: string|number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the light state to the provided values for an entire group.
@@ -576,7 +576,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return {Q.promise} A promise that will set the specified state on the group, or {null} if a callback was provided.
            */
-  def setGroupLightState(id: java.lang.String, stateValues: js.Object): stdLib.Promise[scala.Boolean] = js.native
+  def setGroupLightState(id: java.lang.String, stateValues: js.Object): js.Promise[scala.Boolean] = js.native
   //setLightState(id: string|number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the light state to the provided values for an entire group.
@@ -586,7 +586,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return {Q.promise} A promise that will set the specified state on the group, or {null} if a callback was provided.
            */
-  def setGroupLightState(id: java.lang.String, stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State): stdLib.Promise[scala.Boolean] = js.native
+  def setGroupLightState(id: java.lang.String, stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State): js.Promise[scala.Boolean] = js.native
   //setLightState(id: string|number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the light state to the provided values for an entire group.
@@ -596,7 +596,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return {Q.promise} A promise that will set the specified state on the group, or {null} if a callback was provided.
            */
-  def setGroupLightState(id: scala.Double, stateValues: js.Object): stdLib.Promise[scala.Boolean] = js.native
+  def setGroupLightState(id: scala.Double, stateValues: js.Object): js.Promise[scala.Boolean] = js.native
   //setLightState(id: string|number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the light state to the provided values for an entire group.
@@ -606,7 +606,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return {Q.promise} A promise that will set the specified state on the group, or {null} if a callback was provided.
            */
-  def setGroupLightState(id: scala.Double, stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State): stdLib.Promise[scala.Boolean] = js.native
+  def setGroupLightState(id: scala.Double, stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State): js.Promise[scala.Boolean] = js.native
   //searchForNewLights(cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the name of a light on the Bridge.
@@ -616,7 +616,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return A promise that will be provided with the results of setting the name, or {null} if a callback function was provided.
            */
-  def setLightName(id: java.lang.String, name: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def setLightName(id: java.lang.String, name: java.lang.String): js.Promise[scala.Boolean] = js.native
   //searchForNewLights(cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the name of a light on the Bridge.
@@ -626,7 +626,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want a promise returned.
            * @return A promise that will be provided with the results of setting the name, or {null} if a callback function was provided.
            */
-  def setLightName(id: scala.Double, name: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def setLightName(id: scala.Double, name: java.lang.String): js.Promise[scala.Boolean] = js.native
   //setLightName(id: string|number, name: string, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the light state to the provided values.
@@ -636,7 +636,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set the specified state on the light, or {null} if a callback was provided.
            */
-  def setLightState(id: java.lang.String, stateValues: js.Object): stdLib.Promise[scala.Boolean] = js.native
+  def setLightState(id: java.lang.String, stateValues: js.Object): js.Promise[scala.Boolean] = js.native
   //setLightName(id: string|number, name: string, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the light state to the provided values.
@@ -646,7 +646,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set the specified state on the light, or {null} if a callback was provided.
            */
-  def setLightState(id: java.lang.String, stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State): stdLib.Promise[scala.Boolean] = js.native
+  def setLightState(id: java.lang.String, stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State): js.Promise[scala.Boolean] = js.native
   //setLightName(id: string|number, name: string, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the light state to the provided values.
@@ -656,7 +656,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set the specified state on the light, or {null} if a callback was provided.
            */
-  def setLightState(id: scala.Double, stateValues: js.Object): stdLib.Promise[scala.Boolean] = js.native
+  def setLightState(id: scala.Double, stateValues: js.Object): js.Promise[scala.Boolean] = js.native
   //setLightName(id: string|number, name: string, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
   /**
            * Sets the light state to the provided values.
@@ -666,7 +666,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will set the specified state on the light, or {null} if a callback was provided.
            */
-  def setLightState(id: scala.Double, stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State): stdLib.Promise[scala.Boolean] = js.native
+  def setLightState(id: scala.Double, stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State): js.Promise[scala.Boolean] = js.native
   //modifyScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Modifies the light state of one of the lights in a scene.
@@ -678,7 +678,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will return the state values on the light, or {null} if a callback was provided.
            */
-  def setSceneLightState(sceneId: java.lang.String, lightId: java.lang.String, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def setSceneLightState(sceneId: java.lang.String, lightId: java.lang.String, stateValues: js.Object): js.Promise[IScene] = js.native
   //modifyScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Modifies the light state of one of the lights in a scene.
@@ -694,7 +694,7 @@ class HueApi () extends js.Object {
     sceneId: java.lang.String,
     lightId: java.lang.String,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //modifyScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Modifies the light state of one of the lights in a scene.
@@ -706,7 +706,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will return the state values on the light, or {null} if a callback was provided.
            */
-  def setSceneLightState(sceneId: java.lang.String, lightId: scala.Double, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def setSceneLightState(sceneId: java.lang.String, lightId: scala.Double, stateValues: js.Object): js.Promise[IScene] = js.native
   //modifyScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Modifies the light state of one of the lights in a scene.
@@ -722,7 +722,7 @@ class HueApi () extends js.Object {
     sceneId: java.lang.String,
     lightId: scala.Double,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //modifyScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Modifies the light state of one of the lights in a scene.
@@ -734,7 +734,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will return the state values on the light, or {null} if a callback was provided.
            */
-  def setSceneLightState(sceneId: scala.Double, lightId: java.lang.String, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def setSceneLightState(sceneId: scala.Double, lightId: java.lang.String, stateValues: js.Object): js.Promise[IScene] = js.native
   //modifyScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Modifies the light state of one of the lights in a scene.
@@ -750,7 +750,7 @@ class HueApi () extends js.Object {
     sceneId: scala.Double,
     lightId: java.lang.String,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //modifyScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Modifies the light state of one of the lights in a scene.
@@ -762,7 +762,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to use a promise for the results.
            * @return A promise that will return the state values on the light, or {null} if a callback was provided.
            */
-  def setSceneLightState(sceneId: scala.Double, lightId: scala.Double, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def setSceneLightState(sceneId: scala.Double, lightId: scala.Double, stateValues: js.Object): js.Promise[IScene] = js.native
   //modifyScene(sceneId: string | number, scene: IScene, storeLightState: boolean, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Modifies the light state of one of the lights in a scene.
@@ -778,11 +778,11 @@ class HueApi () extends js.Object {
     sceneId: scala.Double,
     lightId: scala.Double,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //getTimezones(cb: (err: NodeJS.ErrnoException, data: string[]) => void): void;
-  def timezones(): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def timezones(): js.Promise[js.Array[java.lang.String]] = js.native
   //deleteUser(username: string, cb: (err: NodeJS.ErrnoException, data: boolean) => void): void;
-  def unregisterUser(username: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+  def unregisterUser(username: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
            * Updates a light group to the specified name and/or lights ids. The name and light ids can be specified independently or
            * together when calling this function.
@@ -795,7 +795,7 @@ class HueApi () extends js.Object {
            * @return A promise with a result of <true> if the update was successful, or null if a callback was provided.
            */
   
-  def updateGroup(id: java.lang.String, name: java.lang.String, lightIds: js.Array[java.lang.String]): stdLib.Promise[scala.Boolean] = js.native
+  def updateGroup(id: java.lang.String, name: java.lang.String, lightIds: js.Array[java.lang.String]): js.Promise[scala.Boolean] = js.native
   def updateGroup(
     id: java.lang.String,
     name: java.lang.String,
@@ -814,7 +814,7 @@ class HueApi () extends js.Object {
            * @return A promise with a result of <true> if the update was successful, or null if a callback was provided.
            */
   
-  def updateGroup(id: scala.Double, name: java.lang.String, lightIds: js.Array[java.lang.String]): stdLib.Promise[scala.Boolean] = js.native
+  def updateGroup(id: scala.Double, name: java.lang.String, lightIds: js.Array[java.lang.String]): js.Promise[scala.Boolean] = js.native
   def updateGroup(
     id: scala.Double,
     name: java.lang.String,
@@ -835,7 +835,7 @@ class HueApi () extends js.Object {
            * @return {*} A promise that will return the id of the scene that was updated and the light ids that are now set,
            * or null if a callback was provided.
            */
-  def updateScene(sceneId: java.lang.String, scene: IScene, storeLightState: scala.Boolean): stdLib.Promise[IScene] = js.native
+  def updateScene(sceneId: java.lang.String, scene: IScene, storeLightState: scala.Boolean): js.Promise[IScene] = js.native
   //createAdvancedScene(scene: IScene, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   /**
            * Update the lights and/or name associated with a scene (or will create a new one if the
@@ -850,39 +850,39 @@ class HueApi () extends js.Object {
            * @return {*} A promise that will return the id of the scene that was updated and the light ids that are now set,
            * or null if a callback was provided.
            */
-  def updateScene(sceneId: scala.Double, scene: IScene, storeLightState: scala.Boolean): stdLib.Promise[IScene] = js.native
+  def updateScene(sceneId: scala.Double, scene: IScene, storeLightState: scala.Boolean): js.Promise[IScene] = js.native
   //setSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def updateSceneLightState(sceneId: java.lang.String, lightId: java.lang.String, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def updateSceneLightState(sceneId: java.lang.String, lightId: java.lang.String, stateValues: js.Object): js.Promise[IScene] = js.native
   //setSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   def updateSceneLightState(
     sceneId: java.lang.String,
     lightId: java.lang.String,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //setSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def updateSceneLightState(sceneId: java.lang.String, lightId: scala.Double, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def updateSceneLightState(sceneId: java.lang.String, lightId: scala.Double, stateValues: js.Object): js.Promise[IScene] = js.native
   //setSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   def updateSceneLightState(
     sceneId: java.lang.String,
     lightId: scala.Double,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //setSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def updateSceneLightState(sceneId: scala.Double, lightId: java.lang.String, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def updateSceneLightState(sceneId: scala.Double, lightId: java.lang.String, stateValues: js.Object): js.Promise[IScene] = js.native
   //setSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   def updateSceneLightState(
     sceneId: scala.Double,
     lightId: java.lang.String,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //setSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
-  def updateSceneLightState(sceneId: scala.Double, lightId: scala.Double, stateValues: js.Object): stdLib.Promise[IScene] = js.native
+  def updateSceneLightState(sceneId: scala.Double, lightId: scala.Double, stateValues: js.Object): js.Promise[IScene] = js.native
   //setSceneLightState(sceneId: string | number, lightId: string | number, stateValues: lightState.State | Object, cb: (err: NodeJS.ErrnoException, data: IScene) => void): void;
   def updateSceneLightState(
     sceneId: scala.Double,
     lightId: scala.Double,
     stateValues: nodeDashHueDashApiLib.nodeDashHueDashApiMod.lightStateNs.State
-  ): stdLib.Promise[IScene] = js.native
+  ): js.Promise[IScene] = js.native
   //deleteSchedule(id: string | number, cb: (err: NodeJS.ErrnoException, data: Object) => void): void;
   /**
            * Updates an existing schedule event with the provided details.
@@ -892,7 +892,7 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to deal with a promise for the results.
            * @return {Q.promise} A promise that will return the result, or <null> if a callback was provided.
            */
-  def updateSchedule(id: java.lang.String, schedule: ISchedule): stdLib.Promise[ISchedule] = js.native
+  def updateSchedule(id: java.lang.String, schedule: ISchedule): js.Promise[ISchedule] = js.native
   //deleteSchedule(id: string | number, cb: (err: NodeJS.ErrnoException, data: Object) => void): void;
   /**
            * Updates an existing schedule event with the provided details.
@@ -902,8 +902,8 @@ class HueApi () extends js.Object {
            * @param cb An optional callback function to use if you do not want to deal with a promise for the results.
            * @return {Q.promise} A promise that will return the result, or <null> if a callback was provided.
            */
-  def updateSchedule(id: scala.Double, schedule: ISchedule): stdLib.Promise[ISchedule] = js.native
+  def updateSchedule(id: scala.Double, schedule: ISchedule): js.Promise[ISchedule] = js.native
   //getVersion(cb: (err: NodeJS.ErrnoException, data: IBridgeVersion) => void): void;
-  def version(): stdLib.Promise[IBridgeVersion] = js.native
+  def version(): js.Promise[IBridgeVersion] = js.native
 }
 

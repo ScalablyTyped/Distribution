@@ -156,7 +156,7 @@ trait IQService
            *
            * @param value Value or a promise
            */
-  def resolve[T](value: stdLib.PromiseLike[T]): IPromise[T] = js.native
+  def resolve[T](value: js.Thenable[T]): IPromise[T] = js.native
   /**
            * @deprecated Since TS 2.4, inference is stricter and no longer produces the desired type when T1 !== T2.
            * To use resolve with two different types, pass a union type to the single-type-argument overload.
@@ -168,7 +168,7 @@ trait IQService
            * To use resolve with two different types, pass a union type to the single-type-argument overload.
            */
   @JSName("resolve")
-  def resolve_T1T2[T1, T2](value: stdLib.PromiseLike[T1]): IPromise[T1 | T2] = js.native
+  def resolve_T1T2[T1, T2](value: js.Thenable[T1]): IPromise[T1 | T2] = js.native
   /**
            * Wraps an object that might be a value or a (3rd party) then-able promise into a $q promise. This is useful when you are dealing with an object that might or might not be a promise, or if the promise comes from a source that can't be trusted.
            */
@@ -184,52 +184,49 @@ trait IQService
            *
            * @param value Value or a promise
            */
-  def when[T](value: stdLib.PromiseLike[T]): IPromise[T] = js.native
+  def when[T](value: js.Thenable[T]): IPromise[T] = js.native
+  def when[TResult, T](value: T, successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult]): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
-    successCallback: js.Function1[/* promiseValue */ T, stdLib.PromiseLike[TResult] | TResult]
-  ): IPromise[TResult] = js.native
-  def when[TResult, T](
-    value: T,
-    successCallback: js.Function1[/* promiseValue */ T, stdLib.PromiseLike[TResult] | TResult],
+    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
     errorCallback: js.Function1[/* reason */ js.Any, _]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
-    successCallback: js.Function1[/* promiseValue */ T, stdLib.PromiseLike[TResult] | TResult],
+    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
     errorCallback: js.Function1[/* reason */ js.Any, _],
     notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
-    successCallback: js.Function1[/* promiseValue */ T, stdLib.PromiseLike[TResult] | TResult],
+    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
     errorCallback: js.UndefOr[scala.Nothing],
     notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
-    successCallback: js.Function1[/* promiseValue */ T, stdLib.PromiseLike[TResult] | TResult],
+    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
     errorCallback: scala.Null,
     notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
-    value: stdLib.PromiseLike[T],
-    successCallback: js.Function1[/* promiseValue */ T, stdLib.PromiseLike[TResult] | TResult]
+    value: js.Thenable[T],
+    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult]
   ): IPromise[TResult] = js.native
   def when[TResult, TResult2, T](
-    value: stdLib.PromiseLike[T],
-    successCallback: js.Function1[/* promiseValue */ T, stdLib.PromiseLike[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, TResult2 | stdLib.PromiseLike[TResult2]]
+    value: js.Thenable[T],
+    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
+    errorCallback: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): IPromise[TResult | TResult2] = js.native
   def when[TResult, TResult2, T](
-    value: stdLib.PromiseLike[T],
-    successCallback: js.Function1[/* promiseValue */ T, stdLib.PromiseLike[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, TResult2 | stdLib.PromiseLike[TResult2]],
+    value: js.Thenable[T],
+    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
+    errorCallback: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]],
     notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult | TResult2] = js.native
   @JSName("when")
   def when_T1T2[T1, T2](value: T2): IPromise[T1 | T2] = js.native
   @JSName("when")
-  def when_T1T2[T1, T2](value: stdLib.PromiseLike[T1]): IPromise[T1 | T2] = js.native
+  def when_T1T2[T1, T2](value: js.Thenable[T1]): IPromise[T1 | T2] = js.native
 }
 

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("fabric/fabric-impl", "Object")
 @js.native
 class Object ()
-  extends IObservable[js.Object]
+  extends IObservable[Object]
      with IObjectOptions
-     with IObjectAnimation[js.Object] {
+     with IObjectAnimation[Object] {
   var overlayFill: java.lang.String = js.native
   var stateProperties: js.Array[_] = js.native
   /**
@@ -94,7 +94,7 @@ class Object ()
   	 * Requires public options: cornerSize, padding
   	 * @param ctx Context to draw on
   	 */
-  def drawCorners(context: stdLib.CanvasRenderingContext2D): js.Object = js.native
+  def drawCorners(context: stdLib.CanvasRenderingContext2D): Object = js.native
   /**
   	 * Same as straighten but with animation
   	 */
@@ -163,7 +163,7 @@ class Object ()
   def getPointByOrigin(): Point = js.native
   def getScaleX(): scala.Double = js.native
   def getScaleY(): scala.Double = js.native
-  def getShadow(): js.Object = js.native
+  def getShadow(): Object = js.native
   def getSkewX(): scala.Double = js.native
   def getSkewY(): scala.Double = js.native
   // functions from object svg export mixin
@@ -196,7 +196,7 @@ class Object ()
   	 * Checks if object intersects with another object
   	 * @param other Object to test
   	 */
-  def intersectsWithObject(other: js.Object): scala.Boolean = js.native
+  def intersectsWithObject(other: Object): scala.Boolean = js.native
   /**
   	 * Checks if object intersects with an area formed by 2 points
   	 * @param pointTL top-left point of area
@@ -207,7 +207,7 @@ class Object ()
   	 * Checks if object is fully contained within area of another object
   	 * @param other Object to test
   	 */
-  def isContainedWithinObject(other: js.Object): scala.Boolean = js.native
+  def isContainedWithinObject(other: Object): scala.Boolean = js.native
   /**
   	 * Checks if object is fully contained within area formed by 2 points
   	 * @param pointTL top-left point of area
@@ -232,7 +232,7 @@ class Object ()
   /**
   	 * Removes object from canvas to which it was added last
   	 */
-  def remove(): js.Object = js.native
+  def remove(): Object = js.native
   /**
   	 * Renders an object on a specified context
   	 * @param ctx Context to render on
@@ -324,14 +324,14 @@ class Object ()
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeThis(),Left(TsIdentSimple(K))) */js.Any
     ]
   ): this.type = js.native
-  def setAngle(value: scala.Double): js.Object = js.native
+  def setAngle(value: scala.Double): Object = js.native
   /**
   	 * Sets "angle" of an instance
   	 * @param angle Angle value
   	 */
   @JSName("setAngle")
   def `setAngle_<this>`(angle: scala.Double): this.type = js.native
-  def setBorderColor(value: java.lang.String): js.Object = js.native
+  def setBorderColor(value: java.lang.String): Object = js.native
   /**
   	 * Sets "color" of an instance (alias of `set('fill', …)`)
   	 * @param color Color value
@@ -360,11 +360,11 @@ class Object ()
   	 * See https://github.com/kangax/fabric.js/wiki/When-to-call-setCoords
   	 */
   def setCoords(): this.type = js.native
-  def setCornersize(value: scala.Double): js.Object = js.native
-  def setFill(value: java.lang.String): js.Object = js.native
-  def setFillRule(value: java.lang.String): js.Object = js.native
-  def setFlipX(value: scala.Boolean): js.Object = js.native
-  def setFlipY(value: scala.Boolean): js.Object = js.native
+  def setCornersize(value: scala.Double): Object = js.native
+  def setFill(value: java.lang.String): Object = js.native
+  def setFillRule(value: java.lang.String): Object = js.native
+  def setFlipX(value: scala.Boolean): Object = js.native
+  def setFlipY(value: scala.Boolean): Object = js.native
   /**
   	 * Sets gradient (fill or stroke) of an object
   	 * **Backwards incompatibility note:** This method was named "setGradientFill" until v1.1.0
@@ -381,9 +381,9 @@ class Object ()
   	 */
   @JSName("setGradient")
   def setGradient_stroke(property: fabricLib.fabricLibStrings.stroke, options: IGradientOptions): this.type = js.native
-  def setHeight(value: scala.Double): js.Object = js.native
-  def setLeft(value: scala.Double): js.Object = js.native
-  def setOpacity(value: scala.Double): js.Object = js.native
+  def setHeight(value: scala.Double): Object = js.native
+  def setLeft(value: scala.Double): Object = js.native
+  def setOpacity(value: scala.Double): Object = js.native
   /* * Sets object's properties from options
   		* @param {Object} [options] Options object
   		*/
@@ -393,7 +393,7 @@ class Object ()
   	 * @param [options] Options object
   	 */
   def setOptions(options: js.Any): scala.Unit = js.native
-  def setOverlayFill(value: java.lang.String): js.Object = js.native
+  def setOverlayFill(value: java.lang.String): Object = js.native
   /**
   	 * Sets pattern fill of an object
   	 * @param options Options object
@@ -406,8 +406,8 @@ class Object ()
   	 * @param originY Vertical origin: 'top', 'center' or 'bottom'
   	 */
   def setPositionByOrigin(pos: Point, originX: java.lang.String, originY: java.lang.String): scala.Unit = js.native
-  def setScaleX(value: scala.Double): js.Object = js.native
-  def setScaleY(value: scala.Double): js.Object = js.native
+  def setScaleX(value: scala.Double): Object = js.native
+  def setScaleY(value: scala.Double): Object = js.native
   /**
   	 * Sets shadow of an object
   	 * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
@@ -423,22 +423,22 @@ class Object ()
   	 * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
   	 */
   def setShadow(options: java.lang.String): this.type = js.native
-  def setShadow(options: js.Any): js.Object = js.native
-  def setSkewX(value: scala.Double): js.Object = js.native
-  def setSkewY(value: scala.Double): js.Object = js.native
+  def setShadow(options: js.Any): Object = js.native
+  def setSkewX(value: scala.Double): Object = js.native
+  def setSkewY(value: scala.Double): Object = js.native
   /**
   	 * Sets sourcePath of an object
   	 * @param value Value to set sourcePath to
   	 */
-  def setSourcePath(value: java.lang.String): js.Object = js.native
+  def setSourcePath(value: java.lang.String): Object = js.native
   /**
   	 * Sets sourcePath of an object
   	 * @param value Value to set sourcePath to
   	 */
   @JSName("setSourcePath")
   def `setSourcePath_<this>`(value: java.lang.String): this.type = js.native
-  def setTop(value: scala.Double): js.Object = js.native
-  def setWidth(value: scala.Double): js.Object = js.native
+  def setTop(value: scala.Double): Object = js.native
+  def setWidth(value: scala.Double): Object = js.native
   /**
   	 * Setups state of an object
   	 */

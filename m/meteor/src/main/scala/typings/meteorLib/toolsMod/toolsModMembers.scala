@@ -12,8 +12,8 @@ object toolsModMembers extends js.Object {
   def execFileAsync(command: java.lang.String): js.Any = js.native
   def execFileAsync(command: java.lang.String, args: js.Array[_]): js.Any = js.native
   def execFileAsync(command: java.lang.String, args: js.Array[_], options: meteorLib.Anon_Stdio): js.Any = js.native
-  def execFileSync(command: java.lang.String): java.lang.String = js.native
-  def execFileSync(command: java.lang.String, args: js.Array[_]): java.lang.String = js.native
-  def execFileSync(command: java.lang.String, args: js.Array[_], options: meteorLib.Anon_Stdio): java.lang.String = js.native
+  def execFileSync(command: java.lang.String): nodeLib.String = js.native
+  def execFileSync(command: java.lang.String, args: js.Array[_]): nodeLib.String = js.native
+  def execFileSync(command: java.lang.String, args: js.Array[_], options: meteorLib.Anon_Stdio): nodeLib.String = js.native
 }
 

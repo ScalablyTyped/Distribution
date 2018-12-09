@@ -319,7 +319,7 @@ trait TextBuffer extends js.Object {
                *  given callback returns a promise, then the buffer will not be saved until
                *  the promise resolves.
                */
-  def onWillSave(callback: js.Function0[stdLib.Promise[scala.Unit] | scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
+  def onWillSave(callback: js.Function0[js.Promise[scala.Unit] | scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /** Invoke the given callback when there is an error in watching the file. */
   def onWillThrowWatchError(
     callback: js.Function1[
@@ -356,9 +356,9 @@ trait TextBuffer extends js.Object {
   def revertToCheckpoint(checkpoint: scala.Double): scala.Boolean = js.native
   // Buffer Operations
   /** Save the buffer. */
-  def save(): stdLib.Promise[scala.Unit] = js.native
+  def save(): js.Promise[scala.Unit] = js.native
   /** Save the buffer at a specific path. */
-  def saveAs(filePath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def saveAs(filePath: java.lang.String): js.Promise[scala.Unit] = js.native
   // Search and Replace
   /**
                *  Scan regular expression matches in the entire buffer, calling the given

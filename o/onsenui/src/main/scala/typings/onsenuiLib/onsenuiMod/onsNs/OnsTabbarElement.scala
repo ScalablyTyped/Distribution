@@ -16,7 +16,7 @@ trait OnsTabbarElement
        * @param {Object} animationOptions Object containing duration and timing.
        * @description Hook called whenever the user slides the tabbar.
        **/
-  var onSwipe: js.UndefOr[js.Function] = js.native
+  var onSwipe: js.UndefOr[coreDashJsLib.Function] = js.native
   /**
        * @description true if the tabbar is swipeable.
        **/
@@ -32,13 +32,13 @@ trait OnsTabbarElement
        * @return Resolves to the new page element.
        * @description Displays a new page without changing the active index
        */
-  def loadPage(page: js.Any): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def loadPage(page: js.Any): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {*} url Page URL. Can be either an HTML document or an <code>&lt;ons-template&gt;</code>
        * @return Resolves to the new page element.
        * @description Displays a new page without changing the active index
        */
-  def loadPage(page: js.Any, options: onsenuiLib.onsenuiMod.TabbarOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def loadPage(page: js.Any, options: onsenuiLib.onsenuiMod.TabbarOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Number} index Tab index
        * @param {Object} [options] Parameter object
@@ -47,7 +47,7 @@ trait OnsTabbarElement
        * @return Resolves to the new page element.
        * @description Show specified tab page. Animations and other options can be specified by the second parameter
        */
-  def setActiveTab(index: scala.Double): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def setActiveTab(index: scala.Double): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @param {Number} index Tab index
        * @param {Object} [options] Parameter object
@@ -56,7 +56,7 @@ trait OnsTabbarElement
        * @return Resolves to the new page element.
        * @description Show specified tab page. Animations and other options can be specified by the second parameter
        */
-  def setActiveTab(index: scala.Double, options: onsenuiLib.onsenuiMod.TabbarOptions): stdLib.Promise[stdLib.HTMLElement] = js.native
+  def setActiveTab(index: scala.Double, options: onsenuiLib.onsenuiMod.TabbarOptions): js.Promise[stdLib.HTMLElement] = js.native
   /**
        * @description Used to hide or show the tab bar.
        */

@@ -20,7 +20,7 @@ abstract class HttpPublisher protected () extends Publisher {
       /* reject */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
       scala.Unit
     ]
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /* protected */ def doUpload(
     fileName: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
@@ -31,6 +31,6 @@ abstract class HttpPublisher protected () extends Publisher {
       scala.Unit
     ],
     file: java.lang.String
-  ): stdLib.Promise[_] = js.native
+  ): js.Promise[_] = js.native
 }
 

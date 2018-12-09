@@ -15,6 +15,6 @@ object pDashSomeModMembers extends js.Object {
   def apply[T](
     values: js.Array[pDashSomeLib.Value[T]] | stdLib.Iterable[pDashSomeLib.Value[T]],
     options: pDashSomeLib.pDashSomeMod.pSomeNs.Options[T]
-  ): stdLib.Promise[js.Array[T]] = js.native
+  ): js.Promise[js.Array[T]] = js.native
 }
 

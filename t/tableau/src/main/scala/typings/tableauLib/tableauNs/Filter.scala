@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Filter () extends js.Object {
   /** Gets the field that is currently being filtered. */
-  def getFieldAsync(): stdLib.Promise[Field] = js.native
+  def getFieldAsync(): js.Promise[Field] = js.native
   /** Gets the name of the field being filtered. Note that this is the caption as shown in the UI and not the actual database field name. */
   def getFieldName(): java.lang.String = js.native
   /** Gets the type of the filter. See FilterType Enum for the values in the enum. */

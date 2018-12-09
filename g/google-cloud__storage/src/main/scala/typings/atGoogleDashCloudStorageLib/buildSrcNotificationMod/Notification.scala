@@ -64,7 +64,7 @@ class Notification protected ()
        * region_tag:storage_delete_notification
        * Another example:
        */
-  def delete(options: DeleteNotificationOptions): stdLib.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
+  def delete(options: DeleteNotificationOptions): js.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
   def delete(options: DeleteNotificationOptions, callback: DeleteNotificationCallback): scala.Unit = js.native
   /**
        * Get a notification and its metadata if it exists.
@@ -98,7 +98,7 @@ class Notification protected ()
        *   const apiResponse = data[1];
        * });
        */
-  def get(options: GetNotificationOptions): stdLib.Promise[GetNotificationResponse] = js.native
+  def get(options: GetNotificationOptions): js.Promise[GetNotificationResponse] = js.native
   def get(options: GetNotificationOptions, callback: GetNotificationCallback): scala.Unit = js.native
   /**
        * Get the notification's metadata.
@@ -131,7 +131,7 @@ class Notification protected ()
        * region_tag:storage_notifications_get_metadata
        * Another example:
        */
-  def getMetadata(options: GetNotificationMetadataOptions): stdLib.Promise[GetNotificationMetadataResponse] = js.native
+  def getMetadata(options: GetNotificationMetadataOptions): js.Promise[GetNotificationMetadataResponse] = js.native
   def getMetadata(
     options: GetNotificationMetadataOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.GetMetadataCallback

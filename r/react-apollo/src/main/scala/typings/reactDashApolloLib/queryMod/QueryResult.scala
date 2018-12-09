@@ -13,10 +13,10 @@ trait QueryResult[TData, TVariables] extends js.Object {
   var error: js.UndefOr[apolloDashClientLib.apolloDashClientMod.ApolloError] = js.undefined
   var fetchMore: (js.Function1[
     /* fetchMoreOptions */ (apolloDashClientLib.coreWatchQueryOptionsMod.FetchMoreQueryOptions[TVariables, java.lang.String]) with (apolloDashClientLib.coreObservableQueryMod.FetchMoreOptions[TData, TVariables]), 
-    stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]]
+    js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]]
   ]) with (js.Function1[
     /* fetchMoreOptions */ reactDashApolloLib.Anon_Query with (apolloDashClientLib.coreWatchQueryOptionsMod.FetchMoreQueryOptions[_, java.lang.String]) with (apolloDashClientLib.coreObservableQueryMod.FetchMoreOptions[_, _]), 
-    stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]]
+    js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]]
   ])
   var loading: scala.Boolean
   var networkStatus: apolloDashClientLib.coreNetworkStatusMod.NetworkStatus

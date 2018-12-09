@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped String */ 
-trait TrustedString extends js.Object
+
+trait TrustedString
+  extends nodeLib.String
 

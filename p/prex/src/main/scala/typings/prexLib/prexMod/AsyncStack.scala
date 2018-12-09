@@ -14,6 +14,6 @@ class AsyncStack[T] ()
        *
        * @param iterable An optional iterable of values or promises.
        */
-  def this(iterable: stdLib.Iterable[T | stdLib.PromiseLike[T]]) = this()
+  def this(iterable: stdLib.Iterable[T | js.Thenable[T]]) = this()
 }
 

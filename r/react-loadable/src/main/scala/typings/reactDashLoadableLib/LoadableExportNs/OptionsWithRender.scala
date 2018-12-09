@@ -10,7 +10,7 @@ trait OptionsWithRender[Props, Exports /* <: js.Object */] extends CommonOptions
   /**
            * Function returning a promise which returns an object to be passed to `render` on success.
            */
-  def loader(): stdLib.Promise[Exports]
+  def loader(): js.Promise[Exports]
   /**
            * If you want to customize what gets rendered from your loader you can also pass `render`.
            *

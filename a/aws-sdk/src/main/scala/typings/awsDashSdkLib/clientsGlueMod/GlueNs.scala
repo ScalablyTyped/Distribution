@@ -265,7 +265,7 @@ object GlueNs extends js.Object {
     /**
          * True if the migration has completed, or False otherwise.
          */
-    var ImportCompleted: js.UndefOr[scala.Boolean] = js.undefined
+    var ImportCompleted: js.UndefOr[Boolean] = js.undefined
     /**
          * The time that the migration was started.
          */
@@ -357,7 +357,7 @@ object GlueNs extends js.Object {
     /**
          * True if the value is used as a parameter.
          */
-    var Param: js.UndefOr[scala.Boolean] = js.undefined
+    var Param: js.UndefOr[Boolean] = js.undefined
     /**
          * The value of the argument or property.
          */
@@ -565,7 +565,7 @@ object GlueNs extends js.Object {
     /**
          * True if the crawler is still estimating how long it will take to complete this run.
          */
-    var StillEstimating: js.UndefOr[scala.Boolean] = js.undefined
+    var StillEstimating: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of tables created by this crawler.
          */
@@ -3164,7 +3164,7 @@ object GlueNs extends js.Object {
     /**
          * True if the data in the table is compressed, or False if not.
          */
-    var Compressed: js.UndefOr[scala.Boolean] = js.undefined
+    var Compressed: js.UndefOr[Boolean] = js.undefined
     /**
          * The input format: SequenceFileInputFormat (binary), or TextInputFormat, or a custom format.
          */
@@ -3200,7 +3200,7 @@ object GlueNs extends js.Object {
     /**
          * True if the table data is stored in subdirectories, or False if not.
          */
-    var StoredAsSubDirectories: js.UndefOr[scala.Boolean] = js.undefined
+    var StoredAsSubDirectories: js.UndefOr[Boolean] = js.undefined
   }
   
   

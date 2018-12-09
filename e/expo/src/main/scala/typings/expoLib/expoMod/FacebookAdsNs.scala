@@ -51,7 +51,7 @@ object FacebookAdsNs extends js.Object {
   @JSName("InterstitialAdManager")
   @js.native
   object InterstitialAdManagerNs extends js.Object {
-    def showAd(placementId: java.lang.String): stdLib.Promise[scala.Boolean] = js.native
+    def showAd(placementId: java.lang.String): js.Promise[scala.Boolean] = js.native
   }
   
   /**

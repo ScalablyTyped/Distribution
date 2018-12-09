@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
      */
 @JSImport("parse/react-native", "Relation")
 @js.native
-class Relation[S /* <: js.Object */, T /* <: js.Object */] ()
+class Relation[S /* <: parseLib.ParseNs.Object */, T /* <: parseLib.ParseNs.Object */] ()
   extends parseLib.nodeMod.Relation[S, T] {
   def this(parent: S) = this()
   def this(parent: S, key: java.lang.String) = this()

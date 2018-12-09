@@ -12,7 +12,7 @@ trait UploadedFile extends js.Object {
   var mimetype: java.lang.String = js.native
   var name: java.lang.String = js.native
   var truncated: scala.Boolean = js.native
-  def mv(path: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def mv(path: java.lang.String): js.Promise[scala.Unit] = js.native
   def mv(path: java.lang.String, callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
 }
 

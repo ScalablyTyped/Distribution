@@ -16,20 +16,20 @@ class Host () extends HostBase {
   var writeFileCallback: js.UndefOr[js.Any] = js.native
   var writeFilePossiblyAsync: js.Any = js.native
   var writeFileSyncCallback: js.UndefOr[js.Any] = js.native
-  def getSourceFile(file: java.lang.String): stdLib.Promise[js.UndefOr[grammarkdownLib.distNodesMod.SourceFile]] = js.native
-  def getSourceFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): stdLib.Promise[js.UndefOr[grammarkdownLib.distNodesMod.SourceFile]] = js.native
+  def getSourceFile(file: java.lang.String): js.Promise[js.UndefOr[grammarkdownLib.distNodesMod.SourceFile]] = js.native
+  def getSourceFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): js.Promise[js.UndefOr[grammarkdownLib.distNodesMod.SourceFile]] = js.native
   def getSourceFileSync(file: java.lang.String): js.UndefOr[grammarkdownLib.distNodesMod.SourceFile] = js.native
   def getSourceFileSync(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): js.UndefOr[grammarkdownLib.distNodesMod.SourceFile] = js.native
-  def readFile(file: java.lang.String): stdLib.Promise[js.UndefOr[java.lang.String]] = js.native
-  def readFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): stdLib.Promise[js.UndefOr[java.lang.String]] = js.native
+  def readFile(file: java.lang.String): js.Promise[js.UndefOr[java.lang.String]] = js.native
+  def readFile(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): js.Promise[js.UndefOr[java.lang.String]] = js.native
   def readFileSync(file: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def readFileSync(file: java.lang.String, cancellationToken: prexLib.prexMod.CancellationToken): js.UndefOr[java.lang.String] = js.native
-  def writeFile(file: java.lang.String, text: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def writeFile(file: java.lang.String, text: java.lang.String): js.Promise[scala.Unit] = js.native
   def writeFile(
     file: java.lang.String,
     text: java.lang.String,
     cancellationToken: prexLib.prexMod.CancellationToken
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def writeFileSync(file: java.lang.String, text: java.lang.String): scala.Unit = js.native
   def writeFileSync(
     file: java.lang.String,

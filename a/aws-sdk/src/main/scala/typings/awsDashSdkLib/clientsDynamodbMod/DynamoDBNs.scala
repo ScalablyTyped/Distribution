@@ -117,7 +117,7 @@ object DynamoDBNs extends js.Object {
     /**
          * Role ARN used for configuring autoScaling policy.
          */
-    var AutoScalingRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    var AutoScalingRoleArn: js.UndefOr[String] = js.undefined
     /**
          * The maximum capacity units that a global table or global secondary index should be scaled up to.
          */
@@ -1090,7 +1090,7 @@ object DynamoDBNs extends js.Object {
   
   
   trait Endpoint extends js.Object {
-    var Address: java.lang.String
+    var Address: String
     var CachePeriodInMinutes: Long
   }
   
@@ -1220,7 +1220,7 @@ object DynamoDBNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) that uniquely identifies the index.
          */
-    var IndexArn: js.UndefOr[java.lang.String] = js.undefined
+    var IndexArn: js.UndefOr[String] = js.undefined
     /**
          * The name of the global secondary index.
          */
@@ -1548,7 +1548,7 @@ object DynamoDBNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) that uniquely identifies the index.
          */
-    var IndexArn: js.UndefOr[java.lang.String] = js.undefined
+    var IndexArn: js.UndefOr[String] = js.undefined
     /**
          * Represents the name of the local secondary index.
          */
@@ -2283,7 +2283,7 @@ object DynamoDBNs extends js.Object {
     /**
          * A timestamp, in ISO 8601 format, for this stream. Note that LatestStreamLabel is not a unique identifier for the stream, because it is possible that a stream from another table might have the same timestamp. However, the combination of the following three elements is guaranteed to be unique:   the AWS customer ID.   the table name.   the StreamLabel.  
          */
-    var LatestStreamLabel: js.UndefOr[java.lang.String] = js.undefined
+    var LatestStreamLabel: js.UndefOr[String] = js.undefined
     /**
          * Represents one or more local secondary indexes on the table. Each index is scoped to a given partition key value. Tables with one or more local secondary indexes are subject to an item collection size limit, where the amount of data within a given item collection cannot exceed 10 GB. Each element is composed of:    IndexName - The name of the local secondary index.    KeySchema - Specifies the complete index key schema. The attribute names in the key schema must be between 1 and 255 characters (inclusive). The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      IndexSizeBytes - Represents the total size of the index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.    ItemCount - Represents the number of items in the index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.   If the table is in the DELETING state, no information about indexes will be returned.
          */
@@ -2307,7 +2307,7 @@ object DynamoDBNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) that uniquely identifies the table.
          */
-    var TableArn: js.UndefOr[java.lang.String] = js.undefined
+    var TableArn: js.UndefOr[String] = js.undefined
     /**
          * Unique identifier for the table for which the backup was created. 
          */
@@ -2431,7 +2431,7 @@ object DynamoDBNs extends js.Object {
     /**
          * Providing a ClientRequestToken makes the call to TransactWriteItems idempotent, meaning that multiple identical calls have the same effect as one single call. Although multiple identical calls using the same client request token produce the same result on the server (no side effects), the responses to the calls may not be the same. If the ReturnConsumedCapacity&gt; parameter is set, then the initial TransactWriteItems call returns the amount of write capacity units consumed in making the changes, and subsequent TransactWriteItems calls with the same client token return the amount of read capacity units consumed in reading the item. A client request token is valid for 10 minutes after the first request that uses it completes. After 10 minutes, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 10 minutes or the result may not be idempotent. If you submit a request with the same client token but a change in other parameters within the 10 minute idempotency window, DynamoDB returns an IdempotentParameterMismatch exception.
          */
-    var ClientRequestToken: js.UndefOr[java.lang.String] = js.undefined
+    var ClientRequestToken: js.UndefOr[String] = js.undefined
     var ReturnConsumedCapacity: js.UndefOr[ReturnConsumedCapacity] = js.undefined
     /**
          * Determines whether item collection metrics are returned. If set to SIZE, the response includes statistics about item collections (if any), that were modified during the operation and are returned in the response. If set to NONE (the default), no statistics are returned. 
@@ -3919,7 +3919,7 @@ object DynamoDBNs extends js.Object {
       /**
            * Role ARN used for configuring autoScaling policy.
            */
-      var AutoScalingRoleArn: js.UndefOr[java.lang.String] = js.undefined
+      var AutoScalingRoleArn: js.UndefOr[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.String] = js.undefined
       /**
            * The maximum capacity units that a global table or global secondary index should be scaled up to.
            */
@@ -4870,7 +4870,7 @@ object DynamoDBNs extends js.Object {
     
     
     trait Endpoint extends js.Object {
-      var Address: java.lang.String
+      var Address: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.String
       var CachePeriodInMinutes: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Long
     }
     
@@ -5036,7 +5036,7 @@ object DynamoDBNs extends js.Object {
       /**
            * The Amazon Resource Name (ARN) that uniquely identifies the index.
            */
-      var IndexArn: js.UndefOr[java.lang.String] = js.undefined
+      var IndexArn: js.UndefOr[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.String] = js.undefined
       /**
            * The name of the global secondary index.
            */
@@ -5430,7 +5430,7 @@ object DynamoDBNs extends js.Object {
       /**
            * The Amazon Resource Name (ARN) that uniquely identifies the index.
            */
-      var IndexArn: js.UndefOr[java.lang.String] = js.undefined
+      var IndexArn: js.UndefOr[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.String] = js.undefined
       /**
            * Represents the name of the local secondary index.
            */
@@ -6347,7 +6347,7 @@ object DynamoDBNs extends js.Object {
       /**
            * A timestamp, in ISO 8601 format, for this stream. Note that LatestStreamLabel is not a unique identifier for the stream, because it is possible that a stream from another table might have the same timestamp. However, the combination of the following three elements is guaranteed to be unique:   the AWS customer ID.   the table name.   the StreamLabel.  
            */
-      var LatestStreamLabel: js.UndefOr[java.lang.String] = js.undefined
+      var LatestStreamLabel: js.UndefOr[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.String] = js.undefined
       /**
            * Represents one or more local secondary indexes on the table. Each index is scoped to a given partition key value. Tables with one or more local secondary indexes are subject to an item collection size limit, where the amount of data within a given item collection cannot exceed 10 GB. Each element is composed of:    IndexName - The name of the local secondary index.    KeySchema - Specifies the complete index key schema. The attribute names in the key schema must be between 1 and 255 characters (inclusive). The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      IndexSizeBytes - Represents the total size of the index, in bytes. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.    ItemCount - Represents the number of items in the index. DynamoDB updates this value approximately every six hours. Recent changes might not be reflected in this value.   If the table is in the DELETING state, no information about indexes will be returned.
            */
@@ -6381,7 +6381,7 @@ object DynamoDBNs extends js.Object {
       /**
            * The Amazon Resource Name (ARN) that uniquely identifies the table.
            */
-      var TableArn: js.UndefOr[java.lang.String] = js.undefined
+      var TableArn: js.UndefOr[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.String] = js.undefined
       /**
            * Unique identifier for the table for which the backup was created. 
            */
@@ -6519,7 +6519,7 @@ object DynamoDBNs extends js.Object {
       /**
            * Providing a ClientRequestToken makes the call to TransactWriteItems idempotent, meaning that multiple identical calls have the same effect as one single call. Although multiple identical calls using the same client request token produce the same result on the server (no side effects), the responses to the calls may not be the same. If the ReturnConsumedCapacity&gt; parameter is set, then the initial TransactWriteItems call returns the amount of write capacity units consumed in making the changes, and subsequent TransactWriteItems calls with the same client token return the amount of read capacity units consumed in reading the item. A client request token is valid for 10 minutes after the first request that uses it completes. After 10 minutes, any request with the same client token is treated as a new request. Do not resubmit the same request with the same client token for more than 10 minutes or the result may not be idempotent. If you submit a request with the same client token but a change in other parameters within the 10 minute idempotency window, DynamoDB returns an IdempotentParameterMismatch exception.
            */
-      var ClientRequestToken: js.UndefOr[java.lang.String] = js.undefined
+      var ClientRequestToken: js.UndefOr[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.String] = js.undefined
       var ReturnConsumedCapacity: js.UndefOr[
             awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ReturnConsumedCapacity
           ] = js.undefined

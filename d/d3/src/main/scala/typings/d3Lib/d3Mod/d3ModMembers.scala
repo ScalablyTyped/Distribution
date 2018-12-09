@@ -191,14 +191,14 @@ object d3ModMembers extends js.Object {
   def bisectRight(array: stdLib.ArrayLike[stdLib.Date], x: stdLib.Date, lo: scala.Double, hi: scala.Double): scala.Double = js.native
   def bisector[T, U](accessor: js.Function1[/* x */ T, U]): d3DashArrayLib.d3DashArrayMod.Bisector[T, U] = js.native
   def bisector[T, U](comparator: js.Function2[/* a */ T, /* b */ U, scala.Double]): d3DashArrayLib.d3DashArrayMod.Bisector[T, U] = js.native
-  def blob(url: java.lang.String): stdLib.Promise[stdLib.Blob] = js.native
-  def blob(url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[stdLib.Blob] = js.native
+  def blob(url: java.lang.String): js.Promise[stdLib.Blob] = js.native
+  def blob(url: java.lang.String, init: stdLib.RequestInit): js.Promise[stdLib.Blob] = js.native
   def brush[Datum](): d3DashBrushLib.d3DashBrushMod.BrushBehavior[Datum] = js.native
   def brushSelection(node: stdLib.SVGGElement): d3DashBrushLib.d3DashBrushMod.BrushSelection | scala.Null = js.native
   def brushX[Datum](): d3DashBrushLib.d3DashBrushMod.BrushBehavior[Datum] = js.native
   def brushY[Datum](): d3DashBrushLib.d3DashBrushMod.BrushBehavior[Datum] = js.native
-  def buffer(url: java.lang.String): stdLib.Promise[stdLib.ArrayBuffer] = js.native
-  def buffer(url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[stdLib.ArrayBuffer] = js.native
+  def buffer(url: java.lang.String): js.Promise[stdLib.ArrayBuffer] = js.native
+  def buffer(url: java.lang.String, init: stdLib.RequestInit): js.Promise[stdLib.ArrayBuffer] = js.native
   def chord(): d3DashChordLib.d3DashChordMod.ChordLayout = js.native
   def clientPoint(
     container: d3DashSelectionLib.d3DashSelectionMod.ContainerElement,
@@ -1745,8 +1745,8 @@ object d3ModMembers extends js.Object {
   def creator_wbr(name: d3Lib.d3LibStrings.wbr): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   def cross[S, T](a: stdLib.ArrayLike[S], b: stdLib.ArrayLike[T]): js.Array[js.Tuple2[S, T]] = js.native
   def cross[S, T, U](a: stdLib.ArrayLike[S], b: stdLib.ArrayLike[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = js.native
-  def csv(url: java.lang.String): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
-  def csv(url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
+  def csv(url: java.lang.String): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
+  def csv(url: java.lang.String, init: stdLib.RequestInit): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
   def csv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
     url: java.lang.String,
     init: stdLib.RequestInit,
@@ -1756,7 +1756,7 @@ object d3ModMembers extends js.Object {
       /* columns */ js.Array[java.lang.String], 
       js.UndefOr[ParsedRow | scala.Null]
     ]
-  ): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
   def csv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
     url: java.lang.String,
     row: js.Function3[
@@ -1765,7 +1765,7 @@ object d3ModMembers extends js.Object {
       /* columns */ js.Array[java.lang.String], 
       js.UndefOr[ParsedRow | scala.Null]
     ]
-  ): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
   def csvFormat[T /* <: js.Object */](rows: js.Array[T]): java.lang.String = js.native
   def csvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[java.lang.String]): java.lang.String = js.native
   def csvFormatRows(rows: js.Array[js.Array[java.lang.String]]): java.lang.String = js.native
@@ -1817,8 +1817,8 @@ object d3ModMembers extends js.Object {
   def dragEnable(window: stdLib.Window, noClick: scala.Boolean): scala.Unit = js.native
   @JSName("drag")
   def drag_GElementDraggedElementBaseTypeDatumSubject[GElement /* <: d3DashDragLib.d3DashDragMod.DraggedElementBaseType */, Datum, Subject](): d3DashDragLib.d3DashDragMod.DragBehavior[GElement, Datum, Subject] = js.native
-  def dsv(delimiter: java.lang.String, url: java.lang.String): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
-  def dsv(delimiter: java.lang.String, url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
+  def dsv(delimiter: java.lang.String, url: java.lang.String): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
+  def dsv(delimiter: java.lang.String, url: java.lang.String, init: stdLib.RequestInit): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
   def dsv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
     delimiter: java.lang.String,
     url: java.lang.String,
@@ -1829,7 +1829,7 @@ object d3ModMembers extends js.Object {
       /* columns */ js.Array[java.lang.String], 
       js.UndefOr[ParsedRow | scala.Null]
     ]
-  ): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
   def dsv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
     delimiter: java.lang.String,
     url: java.lang.String,
@@ -1839,7 +1839,7 @@ object d3ModMembers extends js.Object {
       /* columns */ js.Array[java.lang.String], 
       js.UndefOr[ParsedRow | scala.Null]
     ]
-  ): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
   def dsvFormat(delimiter: java.lang.String): d3DashDsvLib.d3DashDsvMod.DSV = js.native
   def easeBounce(normalizedTime: scala.Double): scala.Double = js.native
   def easeBounceIn(normalizedTime: scala.Double): scala.Double = js.native
@@ -2198,10 +2198,10 @@ object d3ModMembers extends js.Object {
   def histogram_DatumValueUndefOrHistogramGenerator[Datum, Value /* <: js.UndefOr[scala.Double | stdLib.Date] */](): d3DashArrayLib.d3DashArrayMod.HistogramGenerator[Datum, Value] = js.native
   @JSName("histogram")
   def histogram_DatumValueUndefOrHistogramGeneratorDate[Datum, Value /* <: js.UndefOr[stdLib.Date] */](): d3DashArrayLib.d3DashArrayMod.HistogramGeneratorDate[Datum, Value] = js.native
-  def html(url: java.lang.String): stdLib.Promise[stdLib.Document] = js.native
-  def html(url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[stdLib.Document] = js.native
-  def image(url: java.lang.String): stdLib.Promise[stdLib.HTMLImageElement] = js.native
-  def image(url: java.lang.String, init: ScalablyTyped.runtime.StringDictionary[js.Any]): stdLib.Promise[stdLib.HTMLImageElement] = js.native
+  def html(url: java.lang.String): js.Promise[stdLib.Document] = js.native
+  def html(url: java.lang.String, init: stdLib.RequestInit): js.Promise[stdLib.Document] = js.native
+  def image(url: java.lang.String): js.Promise[stdLib.HTMLImageElement] = js.native
+  def image(url: java.lang.String, init: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Promise[stdLib.HTMLImageElement] = js.native
   def interpolate(
     a: d3DashColorLib.d3DashColorMod.ColorCommonInstance,
     b: d3DashColorLib.d3DashColorMod.ColorCommonInstance
@@ -2327,8 +2327,8 @@ object d3ModMembers extends js.Object {
   ): d3DashTimerLib.d3DashTimerMod.Timer = js.native
   def isoFormat(date: stdLib.Date): java.lang.String = js.native
   def isoParse(dateString: java.lang.String): stdLib.Date | scala.Null = js.native
-  def json[ParsedJSONObject /* <: js.Any */](url: java.lang.String): stdLib.Promise[ParsedJSONObject] = js.native
-  def json[ParsedJSONObject /* <: js.Any */](url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[ParsedJSONObject] = js.native
+  def json[ParsedJSONObject /* <: js.Any */](url: java.lang.String): js.Promise[ParsedJSONObject] = js.native
+  def json[ParsedJSONObject /* <: js.Any */](url: java.lang.String, init: stdLib.RequestInit): js.Promise[ParsedJSONObject] = js.native
   def keys(obj: js.Object): js.Array[java.lang.String] = js.native
   def line(): d3DashShapeLib.d3DashShapeMod.Line[js.Tuple2[scala.Double, scala.Double]] = js.native
   def lineRadial(): d3DashShapeLib.d3DashShapeMod.LineRadial[js.Tuple2[scala.Double, scala.Double]] = js.native
@@ -2671,15 +2671,15 @@ object d3ModMembers extends js.Object {
       js.UndefOr[scala.Double | scala.Null]
     ]
   ): scala.Double = js.native
-  def svg(url: java.lang.String): stdLib.Promise[stdLib.Document] = js.native
-  def svg(url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[stdLib.Document] = js.native
+  def svg(url: java.lang.String): js.Promise[stdLib.Document] = js.native
+  def svg(url: java.lang.String, init: stdLib.RequestInit): js.Promise[stdLib.Document] = js.native
   def symbol(): d3DashShapeLib.d3DashShapeMod.Symbol[_, _] = js.native
   @JSName("symbol")
   def symbol_Datum[Datum](): d3DashShapeLib.d3DashShapeMod.Symbol[_, Datum] = js.native
   @JSName("symbol")
   def symbol_ThisDatum[This, Datum](): d3DashShapeLib.d3DashShapeMod.Symbol[This, Datum] = js.native
-  def text(url: java.lang.String): stdLib.Promise[java.lang.String] = js.native
-  def text(url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[java.lang.String] = js.native
+  def text(url: java.lang.String): js.Promise[java.lang.String] = js.native
+  def text(url: java.lang.String, init: stdLib.RequestInit): js.Promise[java.lang.String] = js.native
   def thresholdFreedmanDiaconis(values: stdLib.ArrayLike[js.UndefOr[scala.Double]], min: scala.Double, max: scala.Double): scala.Double = js.native
   def thresholdScott(values: stdLib.ArrayLike[js.UndefOr[scala.Double]], min: scala.Double, max: scala.Double): scala.Double = js.native
   def thresholdSturges(values: stdLib.ArrayLike[js.UndefOr[scala.Double]]): scala.Double = js.native
@@ -2799,8 +2799,8 @@ object d3ModMembers extends js.Object {
     x1: scala.Double,
     y1: scala.Double
   ): scala.Unit = js.native
-  def tsv(url: java.lang.String): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
-  def tsv(url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
+  def tsv(url: java.lang.String): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
+  def tsv(url: java.lang.String, init: stdLib.RequestInit): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[d3DashDsvLib.d3DashDsvMod.DSVRowString]] = js.native
   def tsv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
     url: java.lang.String,
     init: stdLib.RequestInit,
@@ -2810,7 +2810,7 @@ object d3ModMembers extends js.Object {
       /* columns */ js.Array[java.lang.String], 
       js.UndefOr[ParsedRow | scala.Null]
     ]
-  ): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
   def tsv[ParsedRow /* <: d3DashDsvLib.d3DashDsvMod.DSVRowAny */](
     url: java.lang.String,
     row: js.Function3[
@@ -2819,7 +2819,7 @@ object d3ModMembers extends js.Object {
       /* columns */ js.Array[java.lang.String], 
       js.UndefOr[ParsedRow | scala.Null]
     ]
-  ): stdLib.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
+  ): js.Promise[d3DashDsvLib.d3DashDsvMod.DSVParsedArray[ParsedRow]] = js.native
   def tsvFormat[T /* <: js.Object */](rows: js.Array[T]): java.lang.String = js.native
   def tsvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[java.lang.String]): java.lang.String = js.native
   def tsvFormatRows(rows: js.Array[js.Array[java.lang.String]]): java.lang.String = js.native
@@ -2891,8 +2891,8 @@ object d3ModMembers extends js.Object {
   def window(DOMNode: stdLib.Document): stdLib.Window = js.native
   def window(DOMNode: stdLib.Element): stdLib.Window = js.native
   def window(DOMNode: stdLib.Window): stdLib.Window = js.native
-  def xml(url: java.lang.String): stdLib.Promise[stdLib.XMLDocument] = js.native
-  def xml(url: java.lang.String, init: stdLib.RequestInit): stdLib.Promise[stdLib.XMLDocument] = js.native
+  def xml(url: java.lang.String): js.Promise[stdLib.XMLDocument] = js.native
+  def xml(url: java.lang.String, init: stdLib.RequestInit): js.Promise[stdLib.XMLDocument] = js.native
   def zip[T](arrays: stdLib.ArrayLike[T]*): js.Array[js.Array[T]] = js.native
   def zoom[ZoomRefElement /* <: d3DashZoomLib.d3DashZoomMod.ZoomedElementBaseType */, Datum](): d3DashZoomLib.d3DashZoomMod.ZoomBehavior[ZoomRefElement, Datum] = js.native
   def zoomTransform(node: d3DashZoomLib.d3DashZoomMod.ZoomedElementBaseType): d3DashZoomLib.d3DashZoomMod.ZoomTransform = js.native

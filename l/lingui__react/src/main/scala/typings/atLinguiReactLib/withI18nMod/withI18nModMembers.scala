@@ -11,20 +11,14 @@ object withI18nModMembers extends js.Object {
   def default(): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
     reactLib.reactMod.ReactNs.ComponentClass[
-      stdLib.Pick[
-        stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
-        stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]
-      ], 
+      stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
       reactLib.reactMod.ReactNs.ComponentState
     ]
   ] = js.native
   def default(options: withI18nOptions): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
     reactLib.reactMod.ReactNs.ComponentClass[
-      stdLib.Pick[
-        stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
-        stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]
-      ], 
+      stdLib.Pick[_, stdLib.Exclude[java.lang.String, atLinguiReactLib.atLinguiReactLibStrings.i18n]], 
       reactLib.reactMod.ReactNs.ComponentState
     ]
   ] = js.native

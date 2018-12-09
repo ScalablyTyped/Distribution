@@ -87,7 +87,7 @@ trait Dock extends js.Object {
        *      If this function returns a Promise, then the item will not be destroyed
        *      until the promise resolves.
        */
-  def onWillDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, scala.Unit | stdLib.Promise[scala.Unit]]): Disposable
+  def onWillDestroyPaneItem(callback: js.Function1[/* event */ PaneItemObservedEvent, scala.Unit | js.Promise[scala.Unit]]): Disposable
   /** Show the dock without focusing it. */
   def show(): scala.Unit
   /**

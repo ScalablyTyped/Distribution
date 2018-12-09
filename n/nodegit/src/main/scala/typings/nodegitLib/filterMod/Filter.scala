@@ -20,7 +20,7 @@ class Filter () extends js.Object {
 object Filter extends js.Object {
   def listContains(filters: js.Any, name: java.lang.String): scala.Double = js.native
   def listLength(fl: js.Any): scala.Double = js.native
-  def listNew(repo: nodegitLib.repositoryMod.Repository, mode: scala.Double, options: scala.Double): stdLib.Promise[_] = js.native
+  def listNew(repo: nodegitLib.repositoryMod.Repository, mode: scala.Double, options: scala.Double): js.Promise[_] = js.native
   def listStreamBlob(filters: js.Any, blob: nodegitLib.blobMod.Blob, target: nodeLib.fsMod.WriteStream): scala.Double = js.native
   def listStreamData(filters: js.Any, data: nodegitLib.bufMod.Buf, target: nodeLib.fsMod.WriteStream): scala.Double = js.native
   def listStreamFile(

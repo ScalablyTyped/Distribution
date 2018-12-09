@@ -12,7 +12,7 @@ package object feathersMod {
   ]
   type Hook = js.Function1[
     /* hook */ HookContext[js.Any], 
-    (stdLib.Promise[HookContext[js.Any] | SkipSymbol | scala.Unit]) | HookContext[js.Any] | SkipSymbol | scala.Unit
+    (js.Promise[HookContext[js.Any] | SkipSymbol | scala.Unit]) | HookContext[js.Any] | SkipSymbol | scala.Unit
   ]
   type Id = scala.Double | java.lang.String
   type NullableId = Id | scala.Null

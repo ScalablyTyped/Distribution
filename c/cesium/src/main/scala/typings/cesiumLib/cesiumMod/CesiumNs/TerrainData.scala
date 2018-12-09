@@ -19,7 +19,7 @@ trait TerrainData extends js.Object {
     descendantX: scala.Double,
     descendantY: scala.Double,
     descendantLevel: scala.Double
-  ): stdLib.Promise[TerrainData]
+  ): js.Promise[TerrainData]
   def wasCreatedByUpsampling(): scala.Boolean
 }
 

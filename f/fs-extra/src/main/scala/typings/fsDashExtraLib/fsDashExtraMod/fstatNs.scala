@@ -13,6 +13,6 @@ object fstatNs extends js.Object {
            * Asynchronous fstat(2) - Get file status.
            * @param fd A file descriptor.
            */
-  def `__promisify__`(fd: scala.Double): stdLib.Promise[nodeLib.fsMod.Stats] = js.native
+  def `__promisify__`(fd: scala.Double): js.Promise[nodeLib.fsMod.Stats] = js.native
 }
 

@@ -17,7 +17,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * If true, aggregate existing AWS Config regions and future regions.
          */
-    var AllAwsRegions: js.UndefOr[scala.Boolean] = js.undefined
+    var AllAwsRegions: js.UndefOr[Boolean] = js.undefined
     /**
          * The source regions being aggregated.
          */
@@ -121,11 +121,11 @@ object ConfigServiceNs extends js.Object {
     /**
          * The error code that AWS Config returned when the source account aggregation last failed.
          */
-    var LastErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var LastErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The message indicating that the source account aggregation failed due to an error.
          */
-    var LastErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var LastErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * Filters the last updated status type.   Valid value FAILED indicates errors while moving data.   Valid value SUCCEEDED indicates the data was successfully moved.   Valid value OUTDATED indicates the data is not the most recent.  
          */
@@ -137,7 +137,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The source account ID or an organization.
          */
-    var SourceId: js.UndefOr[java.lang.String] = js.undefined
+    var SourceId: js.UndefOr[String] = js.undefined
     /**
          * The source account or an organization.
          */
@@ -149,7 +149,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the aggregation object.
          */
-    var AggregationAuthorizationArn: js.UndefOr[java.lang.String] = js.undefined
+    var AggregationAuthorizationArn: js.UndefOr[String] = js.undefined
     /**
          * The 12-digit account ID of the account authorized to aggregate data.
          */
@@ -321,7 +321,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * Indicates whether the maximum count is reached.
          */
-    var CapExceeded: js.UndefOr[scala.Boolean] = js.undefined
+    var CapExceeded: js.UndefOr[Boolean] = js.undefined
     /**
          * The number of AWS resources or AWS Config rules responsible for the current compliance of the item.
          */
@@ -365,11 +365,11 @@ object ConfigServiceNs extends js.Object {
     /**
          * The error code from the last attempted delivery.
          */
-    var lastErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var lastErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The error message from the last attempted delivery.
          */
-    var lastErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var lastErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * Status of the last attempted delivery.
          */
@@ -389,11 +389,11 @@ object ConfigServiceNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the AWS Config rule.
          */
-    var ConfigRuleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ConfigRuleArn: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS Config rule.
          */
-    var ConfigRuleId: js.UndefOr[java.lang.String] = js.undefined
+    var ConfigRuleId: js.UndefOr[String] = js.undefined
     /**
          * The name that you assign to the AWS Config rule. The name is required if you are adding a new rule.
          */
@@ -465,11 +465,11 @@ object ConfigServiceNs extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the AWS Config rule.
          */
-    var ConfigRuleArn: js.UndefOr[java.lang.String] = js.undefined
+    var ConfigRuleArn: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS Config rule.
          */
-    var ConfigRuleId: js.UndefOr[java.lang.String] = js.undefined
+    var ConfigRuleId: js.UndefOr[String] = js.undefined
     /**
          * The name of the AWS Config rule.
          */
@@ -481,15 +481,15 @@ object ConfigServiceNs extends js.Object {
     /**
          * Indicates whether AWS Config has evaluated your resources against the rule at least once.    true - AWS Config has evaluated your AWS resources against the rule at least once.    false - AWS Config has not once finished evaluating your AWS resources against the rule.  
          */
-    var FirstEvaluationStarted: js.UndefOr[scala.Boolean] = js.undefined
+    var FirstEvaluationStarted: js.UndefOr[Boolean] = js.undefined
     /**
          * The error code that AWS Config returned when the rule last failed.
          */
-    var LastErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var LastErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The error message that AWS Config returned when the rule last failed.
          */
-    var LastErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var LastErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The time that AWS Config last failed to evaluate your AWS resources against the rule.
          */
@@ -521,11 +521,11 @@ object ConfigServiceNs extends js.Object {
     /**
          * The error code from the last attempted delivery.
          */
-    var lastErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var lastErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The error message from the last attempted delivery.
          */
-    var lastErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var lastErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * Status of the last attempted delivery.  Note Providing an SNS topic on a DeliveryChannel for AWS Config is optional. If the SNS delivery is turned off, the last status will be Not_Applicable.
          */
@@ -653,7 +653,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * Amazon Resource Name (ARN) of the IAM role used to describe the AWS resources associated with the account.
          */
-    var roleARN: js.UndefOr[java.lang.String] = js.undefined
+    var roleARN: js.UndefOr[String] = js.undefined
   }
   
   
@@ -661,11 +661,11 @@ object ConfigServiceNs extends js.Object {
     /**
          * The error code indicating that the recording failed.
          */
-    var lastErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var lastErrorCode: js.UndefOr[String] = js.undefined
     /**
          * The message indicating that the recording failed due to an error.
          */
-    var lastErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    var lastErrorMessage: js.UndefOr[String] = js.undefined
     /**
          * The time the recorder was last started.
          */
@@ -685,11 +685,11 @@ object ConfigServiceNs extends js.Object {
     /**
          * The name of the configuration recorder.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
     /**
          * Specifies whether or not the recorder is currently recording.
          */
-    var recording: js.UndefOr[scala.Boolean] = js.undefined
+    var recording: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -780,7 +780,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The ID of the snapshot that is being created.
          */
-    var configSnapshotId: js.UndefOr[java.lang.String] = js.undefined
+    var configSnapshotId: js.UndefOr[String] = js.undefined
   }
   
   
@@ -796,15 +796,15 @@ object ConfigServiceNs extends js.Object {
     /**
          * The name of the Amazon S3 bucket to which AWS Config delivers configuration snapshots and configuration history files. If you specify a bucket that belongs to another AWS account, that bucket must have policies that grant access permissions to AWS Config. For more information, see Permissions for the Amazon S3 Bucket in the AWS Config Developer Guide.
          */
-    var s3BucketName: js.UndefOr[java.lang.String] = js.undefined
+    var s3BucketName: js.UndefOr[String] = js.undefined
     /**
          * The prefix for the specified Amazon S3 bucket.
          */
-    var s3KeyPrefix: js.UndefOr[java.lang.String] = js.undefined
+    var s3KeyPrefix: js.UndefOr[String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the Amazon SNS topic to which AWS Config sends notifications about configuration changes. If you choose a topic from another account, the topic must have policies that grant access permissions to AWS Config. For more information, see Permissions for the Amazon SNS Topic in the AWS Config Developer Guide.
          */
-    var snsTopicARN: js.UndefOr[java.lang.String] = js.undefined
+    var snsTopicARN: js.UndefOr[String] = js.undefined
   }
   
   
@@ -824,7 +824,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The name of the delivery channel.
          */
-    var name: js.UndefOr[java.lang.String] = js.undefined
+    var name: js.UndefOr[String] = js.undefined
   }
   
   
@@ -868,7 +868,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -880,7 +880,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -896,7 +896,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -908,7 +908,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The string that you use in a subsequent request to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -960,7 +960,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -972,7 +972,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The string that you use in a subsequent request to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -984,7 +984,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -996,7 +996,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The string that you use in a subsequent request to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1012,7 +1012,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Filters the status type.   Valid value FAILED indicates errors while moving data.   Valid value SUCCEEDED indicates the data was successfully moved.   Valid value OUTDATED indicates the data is not the most recent.  
          */
@@ -1028,7 +1028,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1044,7 +1044,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1056,7 +1056,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1132,7 +1132,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1140,7 +1140,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * Returns a PendingAggregationRequests object.
          */
@@ -1220,7 +1220,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * An encrypted token that associates an evaluation with an AWS Config rule. The token identifies the rule, the AWS resource being evaluated, and the event that triggered the evaluation.
          */
-    var ResultToken: js.UndefOr[java.lang.String] = js.undefined
+    var ResultToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1440,7 +1440,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
          * The ID of the AWS resource for which you want compliance information.
          */
@@ -1460,7 +1460,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * The string that you use in a subsequent request to get the next page of results in a paginated response.
          */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   
   
@@ -1616,7 +1616,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * Specifies whether AWS Config includes deleted resources in the results. By default, deleted resources are not included.
          */
-    var includeDeletedResources: js.UndefOr[scala.Boolean] = js.undefined
+    var includeDeletedResources: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of resource identifiers returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
          */
@@ -1656,7 +1656,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * If true, aggregate existing AWS Config regions and future regions.
          */
-    var AllAwsRegions: js.UndefOr[scala.Boolean] = js.undefined
+    var AllAwsRegions: js.UndefOr[Boolean] = js.undefined
     /**
          * The source regions being aggregated.
          */
@@ -1664,7 +1664,7 @@ object ConfigServiceNs extends js.Object {
     /**
          * ARN of the IAM role used to retreive AWS Organization details associated with the aggregator account.
          */
-    var RoleArn: java.lang.String
+    var RoleArn: String
   }
   
   
@@ -1756,11 +1756,11 @@ object ConfigServiceNs extends js.Object {
     /**
          * An encrypted token that associates an evaluation with an AWS Config rule. Identifies the rule and the event that triggered the evaluation.
          */
-    var ResultToken: java.lang.String
+    var ResultToken: String
     /**
          * Use this parameter to specify a test run for PutEvaluations. You can verify whether your AWS Lambda function will deliver evaluation results to AWS Config. No updates occur to your existing evaluations, and evaluation results are not sent to AWS Config.  When TestMode is true, PutEvaluations doesn't require a valid value for the ResultToken parameter, but the value cannot be null. 
          */
-    var TestMode: js.UndefOr[scala.Boolean] = js.undefined
+    var TestMode: js.UndefOr[Boolean] = js.undefined
   }
   
   
@@ -3322,7 +3322,7 @@ object ConfigServiceNs extends js.Object {
   type AggregatedSourceStatusTypeList = js.Array[AggregatedSourceStatusType]
   type AggregatedSourceType = awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT | awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATION | java.lang.String
   type AggregationAuthorizationList = js.Array[AggregationAuthorization]
-  type AggregatorRegionList = js.Array[java.lang.String]
+  type AggregatorRegionList = js.Array[String]
   type AllSupported = scala.Boolean
   type AvailabilityZone = java.lang.String
   type AwsRegion = java.lang.String

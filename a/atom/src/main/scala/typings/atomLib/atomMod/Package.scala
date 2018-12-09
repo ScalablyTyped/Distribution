@@ -26,6 +26,6 @@ trait Package extends js.Object {
        *  Rebuild native modules in this package's dependencies for the current
        *  version of Atom.
        */
-  def rebuild(): stdLib.Promise[atomLib.Anon_Code]
+  def rebuild(): js.Promise[atomLib.Anon_Code]
 }
 

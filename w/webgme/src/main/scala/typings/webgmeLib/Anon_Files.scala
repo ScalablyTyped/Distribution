@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Files extends js.Object {
-  def apply(files: ScalablyTyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob]): stdLib.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
+  def apply(files: ScalablyTyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob]): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
   def apply(
     files: ScalablyTyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob],
     callback: webgmeLib.GmeCommonNs.ResultCallback[js.Array[webgmeLib.GmeCommonNs.MetadataHash]]

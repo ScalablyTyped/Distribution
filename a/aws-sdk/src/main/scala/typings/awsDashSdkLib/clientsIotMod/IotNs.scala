@@ -866,23 +866,23 @@ object IotNs extends js.Object {
     /**
          * The CloudWatch metric name.
          */
-    var metricName: java.lang.String
+    var metricName: String
     /**
          * The CloudWatch metric namespace name.
          */
-    var metricNamespace: java.lang.String
+    var metricNamespace: String
     /**
          * An optional Unix timestamp.
          */
-    var metricTimestamp: js.UndefOr[java.lang.String] = js.undefined
+    var metricTimestamp: js.UndefOr[String] = js.undefined
     /**
          * The metric unit supported by CloudWatch.
          */
-    var metricUnit: java.lang.String
+    var metricUnit: String
     /**
          * The CloudWatch metric value.
          */
-    var metricValue: java.lang.String
+    var metricValue: String
     /**
          * The IAM role that allows access to the CloudWatch metric.
          */
@@ -5427,7 +5427,7 @@ object IotNs extends js.Object {
   
   
   trait StringMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
   
   
   trait Tag extends js.Object {
@@ -5593,7 +5593,7 @@ object IotNs extends js.Object {
     /**
          * True if the thing is connected to the AWS IoT service, false if it is not connected.
          */
-    var connected: js.UndefOr[scala.Boolean] = js.undefined
+    var connected: js.UndefOr[Boolean] = js.undefined
     /**
          * The epoch time (in milliseconds) when the thing last connected or disconnected. Note that if the thing has been disconnected for more than a few weeks, the time value can be missing.
          */
@@ -5733,7 +5733,7 @@ object IotNs extends js.Object {
     /**
          * Whether the thing type is deprecated. If true, no new things could be associated with this type.
          */
-    var deprecated: js.UndefOr[scala.Boolean] = js.undefined
+    var deprecated: js.UndefOr[Boolean] = js.undefined
     /**
          * The date and time when the thing type was deprecated.
          */

@@ -149,7 +149,7 @@ trait AtomEnvironment extends js.Object {
   def open(params: atomLib.Anon_PathsToOpen): scala.Unit = js.native
   // Managing the Dev Tools
   /** Open the dev tools for the current window. */
-  def openDevTools(): stdLib.Promise[scala.Null] = js.native
+  def openDevTools(): js.Promise[scala.Null] = js.native
   /** Prompt the user to select one or more folders. */
   def pickFolder(callback: js.Function1[/* paths */ js.Array[java.lang.String] | scala.Null, scala.Unit]): scala.Unit = js.native
   /** Reload the current window. */
@@ -165,7 +165,7 @@ trait AtomEnvironment extends js.Object {
   /** Show the current window. */
   def show(): scala.Unit = js.native
   /** Toggle the visibility of the dev tools for the current window. */
-  def toggleDevTools(): stdLib.Promise[scala.Null] = js.native
+  def toggleDevTools(): js.Promise[scala.Null] = js.native
   /** Toggle the full screen state of the current window. */
   def toggleFullScreen(): scala.Unit = js.native
   /**

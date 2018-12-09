@@ -13,7 +13,7 @@ trait IGrandientStatic
   	 * Returns instance from an SVG element
   	 * @param el SVG gradient element
   	 */
-  def fromElement(el: stdLib.SVGGradientElement, instance: js.Object): IGradient = js.native
+  def fromElement(el: stdLib.SVGGradientElement, instance: Object): IGradient = js.native
   /**
   	 * Returns instance from its object representation
   	 * @param [options] Options object

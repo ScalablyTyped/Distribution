@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EventHandler[TInput] () extends js.Object {
   val handlers: js.Any = js.native
-  def handleAsync(value: TInput): stdLib.Promise[scala.Unit] = js.native
+  def handleAsync(value: TInput): js.Promise[scala.Unit] = js.native
   def register(
     pred: typescriptDashEventDashHandlerLib.distFuncMod.Predicate[TInput],
     handler: typescriptDashEventDashHandlerLib.distFuncMod.Action[TInput]

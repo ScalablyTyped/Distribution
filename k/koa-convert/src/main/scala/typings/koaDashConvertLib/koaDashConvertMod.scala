@@ -11,7 +11,7 @@ object koaDashConvertMod extends js.Object {
   def apply(
     mw: js.Function2[
       /* context */ koaLib.koaMod.ApplicationNs.Context, 
-      /* next */ js.Function0[stdLib.Promise[_]], 
+      /* next */ js.Function0[js.Promise[_]], 
       stdLib.Generator
     ]
   ): koaLib.koaMod.ApplicationNs.Middleware = js.native

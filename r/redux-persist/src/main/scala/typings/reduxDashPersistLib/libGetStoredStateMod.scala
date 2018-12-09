@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-persist/lib/getStoredState", JSImport.Namespace)
 @js.native
 object libGetStoredStateMod extends js.Object {
-  def getStoredState(config: reduxDashPersistLib.esTypesMod.PersistConfig): stdLib.Promise[_ | scala.Unit] = js.native
+  def getStoredState(config: reduxDashPersistLib.esTypesMod.PersistConfig): js.Promise[_ | scala.Unit] = js.native
 }
 

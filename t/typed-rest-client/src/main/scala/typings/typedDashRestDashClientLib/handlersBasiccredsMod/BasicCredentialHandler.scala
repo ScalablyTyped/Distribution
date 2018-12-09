@@ -19,7 +19,7 @@ class BasicCredentialHandler protected ()
     httpClient: typedDashRestDashClientLib.interfacesMod.IHttpClient,
     requestInfo: typedDashRestDashClientLib.interfacesMod.IRequestInfo,
     objs: js.Any
-  ): stdLib.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native
+  ): js.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native
   def prepareRequest(options: js.Any): scala.Unit = js.native
   /* CompleteClass */
   override def prepareRequest(options: nodeLib.httpMod.RequestOptions): scala.Unit = js.native

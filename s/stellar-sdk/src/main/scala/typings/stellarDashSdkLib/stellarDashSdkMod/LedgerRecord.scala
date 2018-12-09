@@ -32,12 +32,12 @@ trait LedgerRecord extends Record {
   var transaction_count: scala.Double = js.native
   @JSName("transactions")
   var transactions_Original: CallCollectionFunction[TransactionRecord] = js.native
-  def effects(): stdLib.Promise[CollectionRecord[EffectRecord]] = js.native
-  def effects(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[EffectRecord]] = js.native
-  def operations(): stdLib.Promise[CollectionRecord[OperationRecord]] = js.native
-  def operations(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[OperationRecord]] = js.native
-  def self(): stdLib.Promise[LedgerRecord] = js.native
-  def transactions(): stdLib.Promise[CollectionRecord[TransactionRecord]] = js.native
-  def transactions(options: CallFunctionTemplateOptions): stdLib.Promise[CollectionRecord[TransactionRecord]] = js.native
+  def effects(): js.Promise[CollectionRecord[EffectRecord]] = js.native
+  def effects(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[EffectRecord]] = js.native
+  def operations(): js.Promise[CollectionRecord[OperationRecord]] = js.native
+  def operations(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[OperationRecord]] = js.native
+  def self(): js.Promise[LedgerRecord] = js.native
+  def transactions(): js.Promise[CollectionRecord[TransactionRecord]] = js.native
+  def transactions(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[TransactionRecord]] = js.native
 }
 

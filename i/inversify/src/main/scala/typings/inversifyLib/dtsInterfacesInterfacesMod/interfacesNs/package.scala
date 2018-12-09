@@ -11,7 +11,7 @@ package object interfacesNs {
     /* unbind */ Unbind, 
     /* isBound */ IsBound, 
     /* rebind */ Rebind, 
-    stdLib.Promise[scala.Unit]
+    js.Promise[scala.Unit]
   ]
   type Bind = js.Function1[/* serviceIdentifier */ ServiceIdentifier[js.Any], BindingToSyntax[js.Any]]
   type BindingScope = inversifyLib.inversifyLibStrings.Singleton | inversifyLib.inversifyLibStrings.Transient | inversifyLib.inversifyLibStrings.Request
@@ -31,7 +31,7 @@ package object interfacesNs {
   type Next = js.Function1[/* args */ NextArgs, js.Any | js.Array[js.Any]]
   type Provider[T] = js.Function1[
     /* repeated */js.Any, 
-    (js.Function1[/* repeated */js.Any, stdLib.Promise[T]]) | stdLib.Promise[T]
+    (js.Function1[/* repeated */js.Any, js.Promise[T]]) | js.Promise[T]
   ]
   type ProviderCreator[T] = js.Function1[/* context */ Context, Provider[T]]
   type Rebind = js.Function1[/* serviceIdentifier */ ServiceIdentifier[js.Any], BindingToSyntax[js.Any]]

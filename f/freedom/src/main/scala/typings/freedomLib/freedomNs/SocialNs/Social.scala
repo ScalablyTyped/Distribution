@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait Social extends js.Object {
   // Forget any tokens/credentials used for logging in with the last used
   // userId.
-  def clearCachedCredentials(): stdLib.Promise[scala.Unit] = js.native
-  def getClients(): stdLib.Promise[Clients] = js.native
-  def getUsers(): stdLib.Promise[Users] = js.native
-  def login(loginRequest: LoginRequest): stdLib.Promise[ClientState] = js.native
+  def clearCachedCredentials(): js.Promise[scala.Unit] = js.native
+  def getClients(): js.Promise[Clients] = js.native
+  def getUsers(): js.Promise[Users] = js.native
+  def login(loginRequest: LoginRequest): js.Promise[ClientState] = js.native
   // Logs the user out of the social network. After the logout promise, the
   // user status is OFFLINE.
-  def logout(): stdLib.Promise[scala.Unit] = js.native
+  def logout(): js.Promise[scala.Unit] = js.native
   // Generic Freedom Event stuff. |on| binds an event handler to event type
   // |eventType|. Every time |eventType|  event is raised, the function |f|
   // will be called.
@@ -49,6 +49,6 @@ trait Social extends js.Object {
   // If the message is sent to a userId, it is sent to all clients
   // If the message is sent to a clientId, it is sent to just that one client
   // If the destination id is not specified or invalid, promise rejects.
-  def sendMessage(destinationId: java.lang.String, message: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def sendMessage(destinationId: java.lang.String, message: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

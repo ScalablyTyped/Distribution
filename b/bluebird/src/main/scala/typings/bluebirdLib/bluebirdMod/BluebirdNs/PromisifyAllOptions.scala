@@ -25,7 +25,7 @@ trait PromisifyAllOptions[T] extends PromisifyOptions {
         /* repeated */js.Any, 
         js.Function1[/* repeated */_, bluebirdLib.bluebirdMod.Bluebird[_]]
       ], 
-      js.Function0[stdLib.PromiseLike[_]]
+      js.Function0[js.Thenable[_]]
     ]
   ] = js.undefined
   var suffix: js.UndefOr[java.lang.String] = js.undefined

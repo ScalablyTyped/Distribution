@@ -182,7 +182,7 @@ trait AngularFireArray
       /* prevChild */ java.lang.String, 
       scala.Unit
     ]
-  ): js.Function = js.native
+  ): angularLib.angularMod.Global.Function = js.native
   /**
   	 * Listeners passed into this method are notified whenever a new change (add, updated,
   	 * move, remove) is received from the server. Each invocation is sent an object
@@ -207,6 +207,6 @@ trait AngularFireArray
       scala.Unit
     ],
     context: js.Any
-  ): js.Function = js.native
+  ): angularLib.angularMod.Global.Function = js.native
 }
 

@@ -32,15 +32,15 @@ trait Pane extends js.Object {
   /** Close the pane and destroy all its items. */
   def destroy(): scala.Unit = js.native
   /** Destroy the active item and activate the next item. */
-  def destroyActiveItem(): stdLib.Promise[scala.Boolean] = js.native
+  def destroyActiveItem(): js.Promise[scala.Boolean] = js.native
   /** Destroy all items except for the active item. */
-  def destroyInactiveItems(): stdLib.Promise[js.Array[scala.Boolean]] = js.native
+  def destroyInactiveItems(): js.Promise[js.Array[scala.Boolean]] = js.native
   /** Destroy the given item. */
-  def destroyItem(item: js.Object): stdLib.Promise[scala.Boolean] = js.native
+  def destroyItem(item: js.Object): js.Promise[scala.Boolean] = js.native
   /** Destroy the given item. */
-  def destroyItem(item: js.Object, force: scala.Boolean): stdLib.Promise[scala.Boolean] = js.native
+  def destroyItem(item: js.Object, force: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /** Destroy all items. */
-  def destroyItems(): stdLib.Promise[js.Array[scala.Boolean]] = js.native
+  def destroyItems(): js.Promise[js.Array[scala.Boolean]] = js.native
   /** Get the active pane item in this pane. */
   def getActiveItem(): js.Object = js.native
   /** Get the index of the active item. */
@@ -116,33 +116,33 @@ trait Pane extends js.Object {
   /** Invoke the given callback before an item is removed from the pane. */
   def onWillRemoveItem(callback: js.Function1[/* event */ PaneListItemShiftedEvent, scala.Unit]): Disposable = js.native
   /** Save the active item. */
-  def saveActiveItem[T](): js.UndefOr[stdLib.Promise[T]] = js.native
+  def saveActiveItem[T](): js.UndefOr[js.Promise[T]] = js.native
   /** Save the active item. */
-  def saveActiveItem[T](nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[stdLib.Promise[T]] = js.native
+  def saveActiveItem[T](nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
   /**
        *  Prompt the user for a location and save the active item with the path
        *  they select.
        */
-  def saveActiveItemAs[T](): js.UndefOr[stdLib.Promise[T]] = js.native
+  def saveActiveItemAs[T](): js.UndefOr[js.Promise[T]] = js.native
   /**
        *  Prompt the user for a location and save the active item with the path
        *  they select.
        */
-  def saveActiveItemAs[T](nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[stdLib.Promise[T]] = js.native
+  def saveActiveItemAs[T](nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
   /** Save the given item. */
-  def saveItem[T](item: js.Object): js.UndefOr[stdLib.Promise[T]] = js.native
+  def saveItem[T](item: js.Object): js.UndefOr[js.Promise[T]] = js.native
   /** Save the given item. */
-  def saveItem[T](item: js.Object, nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[stdLib.Promise[T]] = js.native
+  def saveItem[T](item: js.Object, nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
   /**
        *  Prompt the user for a location and save the active item with the path
        *  they select.
        */
-  def saveItemAs[T](item: js.Object): js.UndefOr[stdLib.Promise[T]] = js.native
+  def saveItemAs[T](item: js.Object): js.UndefOr[js.Promise[T]] = js.native
   /**
        *  Prompt the user for a location and save the active item with the path
        *  they select.
        */
-  def saveItemAs[T](item: js.Object, nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[stdLib.Promise[T]] = js.native
+  def saveItemAs[T](item: js.Object, nextAction: js.Function1[/* error */ js.UndefOr[nodeLib.Error], T]): js.UndefOr[js.Promise[T]] = js.native
   /** Save all items. */
   def saveItems(): scala.Unit = js.native
   /** Creates a new pane below the receiver. */

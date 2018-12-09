@@ -22,28 +22,28 @@ class WinPackager protected ()
     appDashBuilderDashLibLib.outCodeSignWindowsCodeSignMod.CertificateInfo | scala.Null
   ] = js.native
   val vm: lazyDashValLib.lazyDashValMod.Lazy[appDashBuilderDashLibLib.outVmVmMod.VmManager] = js.native
-  def sign(file: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def sign(file: java.lang.String, logMessagePrefix: java.lang.String): stdLib.Promise[scala.Unit] = js.native
-  def signAndEditResources(file: java.lang.String, arch: builderDashUtilLib.outArchMod.Arch, outDir: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def sign(file: java.lang.String): js.Promise[scala.Unit] = js.native
+  def sign(file: java.lang.String, logMessagePrefix: java.lang.String): js.Promise[scala.Unit] = js.native
+  def signAndEditResources(file: java.lang.String, arch: builderDashUtilLib.outArchMod.Arch, outDir: java.lang.String): js.Promise[scala.Unit] = js.native
   def signAndEditResources(
     file: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
     outDir: java.lang.String,
     internalName: java.lang.String
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def signAndEditResources(
     file: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
     outDir: java.lang.String,
     internalName: java.lang.String,
     requestedExecutionLevel: appDashBuilderDashLibLib.outOptionsWinOptionsMod.RequestedExecutionLevel
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
   def signAndEditResources(
     file: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch,
     outDir: java.lang.String,
     internalName: scala.Null,
     requestedExecutionLevel: appDashBuilderDashLibLib.outOptionsWinOptionsMod.RequestedExecutionLevel
-  ): stdLib.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

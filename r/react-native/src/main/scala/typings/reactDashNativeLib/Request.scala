@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ 
-trait Request extends Body {
+
+trait Request
+  extends stdLib.Object
+     with Body {
   val credentials: `RequestCredentials_`
   val headers: Headers
   val method: java.lang.String

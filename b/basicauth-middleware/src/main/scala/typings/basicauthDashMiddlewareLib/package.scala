@@ -15,7 +15,7 @@ package object basicauthDashMiddlewareLib {
   type checkFunctionPromise = js.Function2[
     /* username */ java.lang.String, 
     /* password */ java.lang.String, 
-    stdLib.PromiseLike[scala.Boolean]
+    js.Thenable[scala.Boolean]
   ]
   type checkFunctionSync = js.Function2[/* username */ java.lang.String, /* password */ java.lang.String, scala.Boolean]
 }

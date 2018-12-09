@@ -16,7 +16,7 @@ package object libLassoMod {
         scala.Unit
       ]
     ], 
-    stdLib.Promise[js.Any]
+    js.Promise[js.Any]
   ]
   type LassoResource = js.Function3[
     /* path */ java.lang.String, 

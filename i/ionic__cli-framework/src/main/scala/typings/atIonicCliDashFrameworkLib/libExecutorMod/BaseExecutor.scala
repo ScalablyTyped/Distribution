@@ -17,11 +17,11 @@ class BaseExecutor[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C,
     event: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`operation-rpc`,
     rpc: atIonicCliDashFrameworkLib.utilsIpcMod.RPCProcess
   ): scala.Boolean = js.native
-  def formatHelp(location: atIonicCliDashFrameworkLib.definitionsMod.NamespaceLocateResult[C, N, M, I, O]): stdLib.Promise[java.lang.String] = js.native
+  def formatHelp(location: atIonicCliDashFrameworkLib.definitionsMod.NamespaceLocateResult[C, N, M, I, O]): js.Promise[java.lang.String] = js.native
   def formatHelp(
     location: atIonicCliDashFrameworkLib.definitionsMod.NamespaceLocateResult[C, N, M, I, O],
     hasFormat: BaseExecutorFormatHelpOptions
-  ): stdLib.Promise[java.lang.String] = js.native
+  ): js.Promise[java.lang.String] = js.native
   @JSName("on")
   def `on_operation-rpc`(
     event: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`operation-rpc`,
@@ -33,6 +33,6 @@ class BaseExecutor[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C,
        * This means the CLI has been executed by a parent Node process with an IPC
        * channel, allowing request/response communication via RPC.
        */
-  def rpc(): stdLib.Promise[scala.Unit] = js.native
+  def rpc(): js.Promise[scala.Unit] = js.native
 }
 

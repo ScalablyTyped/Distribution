@@ -87,7 +87,7 @@ trait User extends PersistedModel {
                * @param {string|Error} err The error string or object
                * @param {AccessToken} token The generated access token object
                */
-  def createAccessToken(ttl: scala.Double): stdLib.Promise[AccessToken] | scala.Unit = js.native
+  def createAccessToken(ttl: scala.Double): js.Promise[AccessToken] | scala.Unit = js.native
   /**
                * Create access token for the logged in user. This method can be overridden to
                * customize how access tokens are generate
@@ -97,7 +97,7 @@ trait User extends PersistedModel {
                * @param {string|Error} err The error string or object
                * @param {AccessToken} token The generated access token object
                */
-  def createAccessToken(ttl: scala.Double, options: js.Any): stdLib.Promise[AccessToken] | scala.Unit = js.native
+  def createAccessToken(ttl: scala.Double, options: js.Any): js.Promise[AccessToken] | scala.Unit = js.native
   /**
                * Create access token for the logged in user. This method can be overridden to
                * customize how access tokens are generate
@@ -111,7 +111,7 @@ trait User extends PersistedModel {
     ttl: scala.Double,
     options: js.Any,
     callback: js.Function2[/* err */ java.lang.String | nodeLib.Error, /* token */ AccessToken, scala.Unit]
-  ): stdLib.Promise[AccessToken] | scala.Unit = js.native
+  ): js.Promise[AccessToken] | scala.Unit = js.native
   /**
                * Compare the given `password` with the users hashed password
                * @param {string} password The plain text password
@@ -119,7 +119,7 @@ trait User extends PersistedModel {
                * @param {Error} err Error object
                * @param {boolean} isMatch Returns true if the given `password` matches recor
                */
-  def hasPassword(password: java.lang.String): stdLib.Promise[scala.Boolean] | scala.Unit = js.native
+  def hasPassword(password: java.lang.String): js.Promise[scala.Boolean] | scala.Unit = js.native
   /**
                * Compare the given `password` with the users hashed password
                * @param {string} password The plain text password
@@ -130,7 +130,7 @@ trait User extends PersistedModel {
   def hasPassword(
     password: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* isMatch */ scala.Boolean, scala.Unit]
-  ): stdLib.Promise[scala.Boolean] | scala.Unit = js.native
+  ): js.Promise[scala.Boolean] | scala.Unit = js.native
   /**
                * Verify a user's identity by sending them a confirmation email
                *  ```js

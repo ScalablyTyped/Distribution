@@ -53,7 +53,7 @@ object zlibModMembers extends js.Object {
   def createInflateRaw(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.InflateRaw = js.native
   def createUnzip(): nodeLib.zlibMod.Unzip = js.native
   def createUnzip(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Unzip = js.native
-  def deflate(buf: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def deflate(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def deflate(
     buf: nodeLib.Buffer,
     callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
@@ -67,7 +67,7 @@ object zlibModMembers extends js.Object {
     options: nodeLib.zlibMod.ZlibOptions,
     callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  def deflateRaw(buf: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def deflateRaw(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def deflateRaw(
     buf: nodeLib.Buffer,
     callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
@@ -85,7 +85,7 @@ object zlibModMembers extends js.Object {
   def deflateRawSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
   def deflateSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
   def deflateSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def gunzip(buf: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def gunzip(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def gunzip(
     buf: nodeLib.Buffer,
     callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
@@ -101,7 +101,7 @@ object zlibModMembers extends js.Object {
   ): scala.Unit = js.native
   def gunzipSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
   def gunzipSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def gzip(buf: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def gzip(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def gzip(
     buf: nodeLib.Buffer,
     callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
@@ -117,7 +117,7 @@ object zlibModMembers extends js.Object {
   ): scala.Unit = js.native
   def gzipSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
   def gzipSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def inflate(buf: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def inflate(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def inflate(
     buf: nodeLib.Buffer,
     callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
@@ -131,7 +131,7 @@ object zlibModMembers extends js.Object {
     options: nodeLib.zlibMod.ZlibOptions,
     callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  def inflateRaw(buf: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def inflateRaw(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def inflateRaw(
     buf: nodeLib.Buffer,
     callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]
@@ -149,7 +149,7 @@ object zlibModMembers extends js.Object {
   def inflateRawSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
   def inflateSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
   def inflateSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def unzip(buf: nodeLib.Buffer): stdLib.Promise[nodeLib.Buffer] = js.native
+  def unzip(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def unzip(
     buf: nodeLib.Buffer,
     callback: js.Function2[/* error */ nodeLib.Error, /* result */ nodeLib.Buffer, scala.Unit]

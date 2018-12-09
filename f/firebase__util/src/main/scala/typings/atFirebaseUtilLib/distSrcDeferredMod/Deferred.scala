@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/util/dist/src/deferred", "Deferred")
 @js.native
 class Deferred[R] () extends js.Object {
-  var promise: stdLib.Promise[R] = js.native
+  var promise: js.Promise[R] = js.native
   var reject: js.Any = js.native
   var resolve: js.Any = js.native
   /**

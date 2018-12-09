@@ -95,7 +95,7 @@ object ShieldNs extends js.Object {
     /**
          * The unique identifier (ID) of the attack.
          */
-    var AttackId: js.UndefOr[java.lang.String] = js.undefined
+    var AttackId: js.UndefOr[String] = js.undefined
     /**
          * The list of attacks for a specified time period.
          */
@@ -107,7 +107,7 @@ object ShieldNs extends js.Object {
     /**
          * The ARN (Amazon Resource Name) of the resource that was attacked.
          */
-    var ResourceArn: js.UndefOr[java.lang.String] = js.undefined
+    var ResourceArn: js.UndefOr[String] = js.undefined
     /**
          * The start time of the attack, in Unix time in seconds. For more information see timestamp.
          */
@@ -119,7 +119,7 @@ object ShieldNs extends js.Object {
     /**
          * The attack type. Valid values:   UDP_TRAFFIC   UDP_FRAGMENT   GENERIC_UDP_REFLECTION   DNS_REFLECTION   NTP_REFLECTION   CHARGEN_REFLECTION   SSDP_REFLECTION   PORT_MAPPER   RIP_REFLECTION   SNMP_REFLECTION   MSSQL_REFLECTION   NET_BIOS_REFLECTION   SYN_FLOOD   ACK_FLOOD   REQUEST_FLOOD  
          */
-    var VectorType: java.lang.String
+    var VectorType: String
   }
   
   
@@ -135,7 +135,7 @@ object ShieldNs extends js.Object {
     /**
          * The name of the contributor. This is dependent on the AttackPropertyIdentifier. For example, if the AttackPropertyIdentifier is SOURCE_COUNTRY, the Name could be United States.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The contribution of this contributor expressed in Protection units. For example 10,000.
          */
@@ -299,7 +299,7 @@ object ShieldNs extends js.Object {
     /**
          * The type of protection.
          */
-    var Type: js.UndefOr[java.lang.String] = js.undefined
+    var Type: js.UndefOr[String] = js.undefined
   }
   
   
@@ -367,7 +367,7 @@ object ShieldNs extends js.Object {
     /**
          * The name of the mitigation taken for this attack.
          */
-    var MitigationName: js.UndefOr[java.lang.String] = js.undefined
+    var MitigationName: js.UndefOr[String] = js.undefined
   }
   
   
@@ -399,7 +399,7 @@ object ShieldNs extends js.Object {
     /**
          * The unique identifier (ID) of the SubResource.
          */
-    var Id: js.UndefOr[java.lang.String] = js.undefined
+    var Id: js.UndefOr[String] = js.undefined
     /**
          * The SubResource type.
          */
@@ -439,7 +439,7 @@ object ShieldNs extends js.Object {
     /**
          * The attack type, for example, SNMP reflection or SYN flood.
          */
-    var VectorType: java.lang.String
+    var VectorType: String
   }
   
   
@@ -459,7 +459,7 @@ object ShieldNs extends js.Object {
     /**
          * The counter name.
          */
-    var Name: js.UndefOr[java.lang.String] = js.undefined
+    var Name: js.UndefOr[String] = js.undefined
     /**
          * The total of counter values for a specified time period.
          */
@@ -467,7 +467,7 @@ object ShieldNs extends js.Object {
     /**
          * The unit of the counters.
          */
-    var Unit: js.UndefOr[java.lang.String] = js.undefined
+    var Unit: js.UndefOr[String] = js.undefined
   }
   
   

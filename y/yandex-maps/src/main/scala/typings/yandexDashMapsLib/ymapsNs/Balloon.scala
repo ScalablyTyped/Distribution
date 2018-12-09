@@ -38,7 +38,7 @@ class Balloon protected () extends Popup[Balloon] {
     context: js.Object,
     priority: scala.Double
   ): this.type = js.native
-  def autoPan(): stdLib.Promise[Balloon] = js.native
+  def autoPan(): js.Promise[Balloon] = js.native
   def fire(`type`: java.lang.String, eventobject: js.Object): this.type = js.native
   def fire(`type`: java.lang.String, eventobject: IEvent): this.type = js.native
   def freeze(): IFreezable = js.native

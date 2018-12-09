@@ -14,37 +14,37 @@ class ProductVariants protected ()
        * Counts the variants on the given product.
        * @param productId Id of the product that the variants belong to.
        */
-  def count(productId: scala.Double): stdLib.Promise[scala.Double] = js.native
+  def count(productId: scala.Double): js.Promise[scala.Double] = js.native
   /**
        * Deletes the variant with the given variantId.
        * @param productId Id of the product that the varaint belongs to.
        * @param variantId Id of the variant to delete.
        */
-  def delete(productId: scala.Double, variantId: scala.Double): stdLib.Promise[scala.Unit] = js.native
+  def delete(productId: scala.Double, variantId: scala.Double): js.Promise[scala.Unit] = js.native
   /**
        * Gets a variant with the given id.
        * @param id Id of the variant being retrieved.
        * @param options Options for filtering the result.
        */
-  def get(id: scala.Double): stdLib.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
+  def get(id: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
   /**
        * Gets a variant with the given id.
        * @param id Id of the variant being retrieved.
        * @param options Options for filtering the result.
        */
-  def get(id: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions): stdLib.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
+  def get(id: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions): js.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
   /**
        * Lists up to 250 variants for the given product.
        * @param productId Id of the product that the variants belong to.
        * @param options Options for filtering the results.
        */
-  def list(productId: scala.Double): stdLib.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
+  def list(productId: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
   /**
        * Lists up to 250 variants for the given product.
        * @param productId Id of the product that the variants belong to.
        * @param options Options for filtering the results.
        */
-  def list(productId: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions): stdLib.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
+  def list(productId: scala.Double, options: shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions): js.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
   /**
        * Updates an variant with the given id.
        * @param id Id of the variant.
@@ -53,6 +53,6 @@ class ProductVariants protected ()
   def update(
     id: scala.Double,
     variant: shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant
-  ): stdLib.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
+  ): js.Promise[shopifyDashPrimeLib.distModelsProductUnderscoreVariantMod.ProductVariant] = js.native
 }
 

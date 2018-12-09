@@ -57,7 +57,7 @@ class Service protected () extends js.Object {
        *
        * @param {function} callback - The callback function.
        */
-  def getProjectId(): stdLib.Promise[java.lang.String] = js.native
+  def getProjectId(): js.Promise[java.lang.String] = js.native
   def getProjectId(
     callback: js.Function2[
       /* err */ nodeLib.Error | scala.Null, 
@@ -65,7 +65,7 @@ class Service protected () extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /* protected */ def getProjectIdAsync(): stdLib.Promise[java.lang.String] = js.native
+  /* protected */ def getProjectIdAsync(): js.Promise[java.lang.String] = js.native
   def makeAuthenticatedRequest(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): scala.Unit | atGoogleDashCloudCommonLib.buildSrcUtilMod.Abortable = js.native
   def makeAuthenticatedRequest(
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
@@ -86,7 +86,7 @@ class Service protected () extends js.Object {
        * @param {string} reqOpts.uri - A URI relative to the baseUrl.
        * @param {function} callback - The callback function passed to `request`.
        */
-  def request(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): stdLib.Promise[requestLib.requestMod.requestNs.Response] = js.native
+  def request(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
   def request(
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
@@ -110,6 +110,6 @@ class Service protected () extends js.Object {
        * @param {function} callback - The callback function passed to `request`.
        */
   def `request_`(reqOpts: StreamRequestOptions): requestLib.requestMod.requestNs.Request = js.native
-  def `request_`(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): stdLib.Promise[requestLib.requestMod.requestNs.Response] = js.native
+  def `request_`(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
 }
 

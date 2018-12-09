@@ -23,7 +23,7 @@ package object ymapsNs {
     /* geometry */ IPixelLineStringGeometry, 
     /* data */ IDataManager | js.Object, 
     /* options */ js.Object, 
-    stdLib.Promise[java.lang.String | IClassConstructor[IOverlay]]
+    js.Promise[java.lang.String | IClassConstructor[IOverlay]]
   ])
   type PresetKey = java.lang.String
 }

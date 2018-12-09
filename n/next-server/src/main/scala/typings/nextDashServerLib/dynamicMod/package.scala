@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dynamicMod {
-  type AsyncComponent[P] = stdLib.Promise[reactLib.reactMod.ReactNs.ComponentType[P]]
+  type AsyncComponent[P] = js.Promise[reactLib.reactMod.ReactNs.ComponentType[P]]
   type AsyncComponentLoader[P] = js.Function0[AsyncComponent[P]]
   type DynamicComponent[P] = reactLib.reactMod.ReactNs.ComponentType[P] with reactDashLoadableLib.LoadableExportNs.LoadableComponent
   type LoadedModuleMapping = stdLib.Record[java.lang.String, reactLib.reactMod.ReactNs.ComponentType[js.Object]]

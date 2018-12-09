@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Connection protected ()
   extends nodeLib.NodeJSNs.EventEmitter {
   def this(options: ConnectionOptions) = this()
-  def connect(): stdLib.Promise[scala.Unit] = js.native
-  def end(): stdLib.Promise[scala.Unit] = js.native
+  def connect(): js.Promise[scala.Unit] = js.native
+  def end(): js.Promise[scala.Unit] = js.native
 }
 

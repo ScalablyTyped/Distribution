@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped Object */ 
-trait Response extends Body {
+
+trait Response
+  extends stdLib.Object
+     with Body {
   val headers: Headers
   val ok: scala.Boolean
   val redirected: scala.Boolean

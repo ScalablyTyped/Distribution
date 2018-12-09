@@ -43,9 +43,9 @@ class JitCompiler protected () extends js.Object {
   var getExtraNgModuleProviders: js.Any = js.native
   def clearCache(): scala.Unit = js.native
   def clearCacheFor(`type`: atAngularCompilerLib.srcCoreMod.Type): scala.Unit = js.native
-  def compileModuleAndAllComponentsAsync(moduleType: atAngularCompilerLib.srcCoreMod.Type): stdLib.Promise[ModuleWithComponentFactories] = js.native
+  def compileModuleAndAllComponentsAsync(moduleType: atAngularCompilerLib.srcCoreMod.Type): js.Promise[ModuleWithComponentFactories] = js.native
   def compileModuleAndAllComponentsSync(moduleType: atAngularCompilerLib.srcCoreMod.Type): ModuleWithComponentFactories = js.native
-  def compileModuleAsync(moduleType: atAngularCompilerLib.srcCoreMod.Type): stdLib.Promise[js.Object] = js.native
+  def compileModuleAsync(moduleType: atAngularCompilerLib.srcCoreMod.Type): js.Promise[js.Object] = js.native
   def compileModuleSync(moduleType: atAngularCompilerLib.srcCoreMod.Type): js.Object = js.native
   def getComponentFactory(component: atAngularCompilerLib.srcCoreMod.Type): js.Object = js.native
   def hasAotSummary(ref: atAngularCompilerLib.srcCoreMod.Type): scala.Boolean = js.native

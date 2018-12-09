@@ -90,6 +90,6 @@ object TransformsNs extends js.Object {
     point: cesiumLib.cesiumMod.CesiumNs.Cartesian3,
     result: cesiumLib.cesiumMod.CesiumNs.Cartesian2
   ): cesiumLib.cesiumMod.CesiumNs.Cartesian2 = js.native
-  def preloadIcrfFixed(timeInterval: cesiumLib.cesiumMod.CesiumNs.TimeInterval): stdLib.Promise[scala.Unit] = js.native
+  def preloadIcrfFixed(timeInterval: cesiumLib.cesiumMod.CesiumNs.TimeInterval): js.Promise[scala.Unit] = js.native
 }
 

@@ -19,7 +19,7 @@ trait Model extends js.Object {
   var minimumPixelSize: scala.Double
   var modelMatrix: Matrix4
   var ready: scala.Boolean
-  var readyPromise: stdLib.Promise[Model]
+  var readyPromise: js.Promise[Model]
   var scale: scala.Double
   var show: scala.Boolean
   def destroy(): scala.Unit

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait AxiosStatic extends AxiosInstance {
   var Cancel: CancelStatic = js.native
   var CancelToken: CancelTokenStatic = js.native
-  def all[T](values: js.Array[T | stdLib.Promise[T]]): stdLib.Promise[js.Array[T]] = js.native
+  def all[T](values: js.Array[T | js.Promise[T]]): js.Promise[js.Array[T]] = js.native
   def create(): AxiosInstance = js.native
   def create(config: AxiosRequestConfig): AxiosInstance = js.native
   def isCancel(value: js.Any): scala.Boolean = js.native

@@ -23,6 +23,6 @@ trait Patient extends js.Object {
                * Get the Patient resource in context
                * GET BASEURL/Patient/{id}
                */
-  def read(): stdLib.Promise[Response]
+  def read(): js.Promise[Response]
 }
 

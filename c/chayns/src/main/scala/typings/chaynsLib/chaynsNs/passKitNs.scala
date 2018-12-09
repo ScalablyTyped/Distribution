@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chayns.passKit")
 @js.native
 object passKitNs extends js.Object {
-  def getInstalled(): stdLib.Promise[_] = js.native
-  def isInstalled(identifier: java.lang.String): stdLib.Promise[_] = js.native
+  def getInstalled(): js.Promise[_] = js.native
+  def isInstalled(identifier: java.lang.String): js.Promise[_] = js.native
 }
 

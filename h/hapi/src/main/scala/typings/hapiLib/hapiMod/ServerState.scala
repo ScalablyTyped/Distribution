@@ -43,7 +43,7 @@ trait ServerState extends js.Object {
        * Note that this utility uses the server configuration but does not change the server state. It is provided for manual cookie formating (e.g. when headers are set manually).
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-async-serverstatesformatcookies)
        */
-  def format(cookies: ServerStateFormat): stdLib.Promise[java.lang.String] = js.native
+  def format(cookies: ServerStateFormat): js.Promise[java.lang.String] = js.native
   /**
        * Formats an HTTP 'Set-Cookie' header based on the server.options.state where:
        * @param cookies - a single object or an array of object where each contains:
@@ -54,7 +54,7 @@ trait ServerState extends js.Object {
        * Note that this utility uses the server configuration but does not change the server state. It is provided for manual cookie formating (e.g. when headers are set manually).
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-async-serverstatesformatcookies)
        */
-  def format(cookies: js.Array[ServerStateFormat]): stdLib.Promise[java.lang.String] = js.native
+  def format(cookies: js.Array[ServerStateFormat]): js.Promise[java.lang.String] = js.native
   /**
        * Parses an HTTP 'Cookies' header based on the server.options.state where:
        * @param header - the HTTP header.
@@ -62,6 +62,6 @@ trait ServerState extends js.Object {
        * Note that this utility uses the server configuration but does not change the server state. It is provided for manual cookie parsing (e.g. when server parsing is disabled).
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-async-serverstatesparseheader)
        */
-  def parse(header: java.lang.String): stdLib.Promise[hapiLib.hapiMod.UtilNs.Dictionary[java.lang.String]] = js.native
+  def parse(header: java.lang.String): js.Promise[hapiLib.hapiMod.UtilNs.Dictionary[java.lang.String]] = js.native
 }
 

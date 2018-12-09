@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 
 trait RegisteredContentScript extends js.Object {
   /** Unregister a content script registered programmatically */
-  def unregister(): stdLib.Promise[_]
+  def unregister(): js.Promise[_]
 }
 
