@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "markdown-it-lazy-headers"
-version := "0.13-dt-20181104Z-6e28a1"
+version := "0.13-dt-20181104Z-def383"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "linkify-it" % "2.0.3-dt-20181018Z-d059d1",
-  "org.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20181104Z-1898d6",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "linkify-it" % "2.0.3-dt-20181018Z-6bb5e6",
+  "org.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20181104Z-91c500",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

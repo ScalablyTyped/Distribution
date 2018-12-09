@@ -22,7 +22,7 @@ class PercentPipe protected ()
        *   - `minFractionDigits`: The minimum number of digits after the decimal point.
        * Default is `0`.
        *   - `maxFractionDigits`: The maximum number of digits after the decimal point.
-       * Default is `3`.
+       * Default is `0`.
        * @param locale A locale code for the locale format rules to use.
        * When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default.
        * See [Setting your app locale](guide/i18n#setting-up-the-locale-of-your-app).
@@ -41,7 +41,7 @@ class PercentPipe protected ()
        *   - `minFractionDigits`: The minimum number of digits after the decimal point.
        * Default is `0`.
        *   - `maxFractionDigits`: The maximum number of digits after the decimal point.
-       * Default is `3`.
+       * Default is `0`.
        * @param locale A locale code for the locale format rules to use.
        * When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default.
        * See [Setting your app locale](guide/i18n#setting-up-the-locale-of-your-app).
@@ -58,7 +58,7 @@ class PercentPipe protected ()
        *   - `minFractionDigits`: The minimum number of digits after the decimal point.
        * Default is `0`.
        *   - `maxFractionDigits`: The maximum number of digits after the decimal point.
-       * Default is `3`.
+       * Default is `0`.
        * @param locale A locale code for the locale format rules to use.
        * When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default.
        * See [Setting your app locale](guide/i18n#setting-up-the-locale-of-your-app).

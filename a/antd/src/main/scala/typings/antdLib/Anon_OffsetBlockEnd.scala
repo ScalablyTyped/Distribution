@@ -44,9 +44,11 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var MozBackfaceVisibility: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
+  var MozBackgroundClip: js.UndefOr[java.lang.String] = js.undefined
   var MozBackgroundInlinePolicy: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clone | antdLib.antdLibStrings.slice
   ] = js.undefined
+  var MozBackgroundOrigin: js.UndefOr[java.lang.String] = js.undefined
   var MozBackgroundSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozBinding: js.UndefOr[java.lang.String] = js.undefined
   var MozBorderBottomColors: js.UndefOr[java.lang.String] = js.undefined
@@ -127,9 +129,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var MozOutlineRadiusBottomright: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozOutlineRadiusTopleft: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozOutlineRadiusTopright: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var MozOutlineStyle: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.dotted | antdLib.antdLibStrings.double | antdLib.antdLibStrings.groove | antdLib.antdLibStrings.inset | antdLib.antdLibStrings.outset | antdLib.antdLibStrings.ridge | antdLib.antdLibStrings.solid
-  ] = js.undefined
+  var MozOutlineStyle: js.UndefOr[java.lang.String] = js.undefined
   var MozOutlineWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozPaddingEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozPaddingStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -222,6 +222,8 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var WebkitBackfaceVisibility: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
+  var WebkitBackgroundClip: js.UndefOr[java.lang.String] = js.undefined
+  var WebkitBackgroundOrigin: js.UndefOr[java.lang.String] = js.undefined
   var WebkitBackgroundSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var WebkitBorderBefore: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var WebkitBorderBeforeColor: js.UndefOr[java.lang.String] = js.undefined
@@ -346,9 +348,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var WebkitPerspectiveOrigin: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var WebkitScrollSnapPointsX: js.UndefOr[java.lang.String] = js.undefined
   var WebkitScrollSnapPointsY: js.UndefOr[java.lang.String] = js.undefined
-  var WebkitScrollSnapType: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.mandatory | antdLib.antdLibStrings.proximity
-  ] = js.undefined
+  var WebkitScrollSnapType: js.UndefOr[java.lang.String] = js.undefined
   var WebkitShapeMargin: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var WebkitTapHighlightColor: js.UndefOr[java.lang.String] = js.undefined
   var WebkitTextCombine: js.UndefOr[java.lang.String] = js.undefined
@@ -413,7 +413,6 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var appearance: js.UndefOr[
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
-  var azimuth: js.UndefOr[java.lang.String] = js.undefined
   var backdropFilter: js.UndefOr[java.lang.String] = js.undefined
   var backfaceVisibility: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -703,7 +702,6 @@ trait Anon_OffsetBlockEnd extends js.Object {
     scala.Double | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var lineHeight: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var lineHeightStep: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var listStyle: js.UndefOr[java.lang.String] = js.undefined
   var listStyleImage: js.UndefOr[java.lang.String] = js.undefined
   var listStylePosition: js.UndefOr[
@@ -758,8 +756,8 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var mixBlendMode: js.UndefOr[
     antdLib.antdLibStrings.color | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`color-burn` | antdLib.antdLibStrings.`color-dodge` | antdLib.antdLibStrings.darken | antdLib.antdLibStrings.difference | antdLib.antdLibStrings.exclusion | antdLib.antdLibStrings.`hard-light` | antdLib.antdLibStrings.hue | antdLib.antdLibStrings.lighten | antdLib.antdLibStrings.luminosity | antdLib.antdLibStrings.multiply | antdLib.antdLibStrings.overlay | antdLib.antdLibStrings.saturation | antdLib.antdLibStrings.screen | antdLib.antdLibStrings.`soft-light`
   ] = js.undefined
-  var motion: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var motionDistance: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var motion: js.UndefOr[java.lang.String] = js.undefined
+  var motionOffset: js.UndefOr[java.lang.String] = js.undefined
   var motionPath: js.UndefOr[java.lang.String] = js.undefined
   var motionRotation: js.UndefOr[java.lang.String] = js.undefined
   var msAccelerator: js.UndefOr[
@@ -888,17 +886,11 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.fill | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.cover | antdLib.antdLibStrings.`scale-down`
   ] = js.undefined
   var objectPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var offset: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var offsetAnchor: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var offsetBlockEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var offsetBlockStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var offsetDistance: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var offsetInlineEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var offsetInlineStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var offsetPath: js.UndefOr[java.lang.String] = js.undefined
   var offsetPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var offsetRotate: js.UndefOr[java.lang.String] = js.undefined
-  var offsetRotation: js.UndefOr[java.lang.String] = js.undefined
   var opacity: js.UndefOr[
     scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
@@ -911,9 +903,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var outline: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var outlineColor: js.UndefOr[java.lang.String] = js.undefined
   var outlineOffset: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var outlineStyle: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.dotted | antdLib.antdLibStrings.double | antdLib.antdLibStrings.groove | antdLib.antdLibStrings.inset | antdLib.antdLibStrings.outset | antdLib.antdLibStrings.ridge | antdLib.antdLibStrings.solid
-  ] = js.undefined
+  var outlineStyle: js.UndefOr[java.lang.String] = js.undefined
   var outlineWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var overflow: js.UndefOr[java.lang.String] = js.undefined
   var overflowAnchor: js.UndefOr[
@@ -989,19 +979,44 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var scrollBehavior: js.UndefOr[
     antdLib.antdLibStrings.auto | antdLib.antdLibStrings.smooth | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
+  var scrollMargin: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginBlock: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginBlockEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginBlockStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginBottom: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginInlineEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginInlineStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginLeft: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginRight: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginTop: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPadding: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingBlock: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingBlockEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingBlockStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingBottom: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingInline: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingInlineEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingInlineStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingLeft: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingRight: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollPaddingTop: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollSnapAlign: js.UndefOr[java.lang.String] = js.undefined
   var scrollSnapCoordinate: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var scrollSnapDestination: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var scrollSnapPointsX: js.UndefOr[java.lang.String] = js.undefined
   var scrollSnapPointsY: js.UndefOr[java.lang.String] = js.undefined
-  var scrollSnapType: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.mandatory | antdLib.antdLibStrings.proximity
+  var scrollSnapStop: js.UndefOr[
+    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.always
   ] = js.undefined
+  var scrollSnapType: js.UndefOr[java.lang.String] = js.undefined
   var scrollSnapTypeX: js.UndefOr[
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.mandatory | antdLib.antdLibStrings.proximity
   ] = js.undefined
   var scrollSnapTypeY: js.UndefOr[
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.mandatory | antdLib.antdLibStrings.proximity
   ] = js.undefined
+  var scrollbarColor: js.UndefOr[java.lang.String] = js.undefined
+  var scrollbarWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var shapeImageThreshold: js.UndefOr[
     scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined

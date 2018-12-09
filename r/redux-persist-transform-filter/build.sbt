@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "redux-persist-transform-filter"
-version := "0.0-dt-20181018Z-5172c1"
+version := "0.0-dt-20181018Z-be7e7a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-000ab2",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-1b8e7c",
-  "org.scalablytyped" %%% "redux" % "4.0.1-5c98ab",
-  "org.scalablytyped" %%% "redux-persist" % "5.10.0-bb2d6a",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-46014e")
+  "org.scalablytyped" %%% "csstype" % "2.5.8-b451f0",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-87c4ee",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-d83ef6",
+  "org.scalablytyped" %%% "redux" % "4.0.1-580107",
+  "org.scalablytyped" %%% "redux-persist" % "5.10.0-67569b",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-e3ebb0")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

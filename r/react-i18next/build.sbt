@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "react-i18next"
-version := "8.3.8-1a9050"
+version := "8.3.8-b409a0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "create-react-context" % "0.2.3-768e43",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-2965d0",
-  "org.scalablytyped" %%% "i18next" % "12.1-dt-20181128Z-534128",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-000ab2",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-1b8e7c",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "create-react-context" % "0.2.3-fae7dc",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-b451f0",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-dc38e6",
+  "org.scalablytyped" %%% "i18next" % "12.1-dt-20181128Z-7d4130",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-87c4ee",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-d83ef6",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

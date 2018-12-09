@@ -90,7 +90,6 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   var offsetX_EventBase: js.UndefOr[scala.Nothing]
   @JSName("offsetY")
   var offsetY_EventBase: js.UndefOr[scala.Nothing]
-  var originalEvent: js.UndefOr[jqueryLib._Event] = js.undefined
   /**
            * The mouse position relative to the left edge of the document.
            * @see \`{@link https://api.jquery.com/event.pageX/ }\`

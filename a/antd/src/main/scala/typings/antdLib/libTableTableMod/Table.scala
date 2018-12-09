@@ -15,6 +15,7 @@ trait Table[T]
   var CheckboxPropsCache: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   var columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]] = js.native
   var components: antdLib.libTableInterfaceMod.TableComponents = js.native
+  var getColumnTitle: js.Any = js.native
   var row: reactLib.reactMod.ReactNs.ComponentType[_] = js.native
   var store: antdLib.libTableCreateStoreMod.Store = js.native
   @JSName("componentWillReceiveProps")
@@ -43,6 +44,8 @@ trait Table[T]
   def getFlatData(): js.Array[_] = js.native
   def getLocalData(): js.Array[T] = js.native
   def getLocalData(state: antdLib.libTableInterfaceMod.TableState[T]): js.Array[T] = js.native
+  def getLocalData(state: antdLib.libTableInterfaceMod.TableState[T], filter: scala.Boolean): js.Array[T] = js.native
+  def getLocalData(state: scala.Null, filter: scala.Boolean): js.Array[T] = js.native
   def getMaxCurrent(total: scala.Double): js.UndefOr[scala.Double] = js.native
   def getPopupContainer(): reactLib.HTMLElement = js.native
   def getRecordKey(record: T, index: scala.Double): js.Any = js.native

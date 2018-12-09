@@ -14,24 +14,24 @@ class CancellationTokenSource () extends js.Object {
        * @param linkedTokens An optional iterable of tokens to which to link this source.
        */
   def this(linkedTokens: stdLib.Iterable[CancellationToken]) = this()
-  var _linkingRegistrations: js.Any = js.native
-  var _registrations: js.Any = js.native
-  var _state: js.Any = js.native
-  var _token: js.Any = js.native
-  /**
-       * Gets a CancellationToken linked to this source.
-       */
-  val token: CancellationToken = js.native
   /**
        * Executes the provided callback.
        *
        * @param callback The callback to execute.
        */
-  /* private */ def _executeCallback(callback: js.Any): js.Any = js.native
+  var _executeCallback: js.Any = js.native
+  var _linkingRegistrations: js.Any = js.native
+  var _registrations: js.Any = js.native
+  var _state: js.Any = js.native
+  var _token: js.Any = js.native
   /**
        * Unlinks the source from any linked tokens.
        */
-  /* private */ def _unlink(): js.Any = js.native
+  var _unlink: js.Any = js.native
+  /**
+       * Gets a CancellationToken linked to this source.
+       */
+  val token: CancellationToken = js.native
   /**
        * Cancels the source, evaluating any registered callbacks. If any callback raises an exception,
        * the exception is propagated to a host specific unhanedle exception mechanism.

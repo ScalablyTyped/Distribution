@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "material__textfield"
-version := "0.35-dt-20180910Z-ede0af"
+version := "0.35-dt-20180910Z-ba68a0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "material__base" % "0.35-dt-20180910Z-f5b3ba",
-  "org.scalablytyped" %%% "material__floating-label" % "0.35-dt-20180910Z-b58a57",
-  "org.scalablytyped" %%% "material__line-ripple" % "0.35-dt-20180910Z-57059f",
-  "org.scalablytyped" %%% "material__notched-outline" % "0.35-dt-20180910Z-81f14f",
-  "org.scalablytyped" %%% "material__ripple" % "0.35-dt-20180910Z-7815c0",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "material__base" % "0.35-dt-20180910Z-e6ba81",
+  "org.scalablytyped" %%% "material__floating-label" % "0.35-dt-20180910Z-34d725",
+  "org.scalablytyped" %%% "material__line-ripple" % "0.35-dt-20180910Z-299ab0",
+  "org.scalablytyped" %%% "material__notched-outline" % "0.35-dt-20180910Z-31ec18",
+  "org.scalablytyped" %%% "material__ripple" % "0.35-dt-20180910Z-cefd99",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

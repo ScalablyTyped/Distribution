@@ -14,6 +14,7 @@ class AsyncBoundedQueue[T] () extends js.Object {
        * @param iterable An optional iterable of values or promises.
        */
   def this(iterable: stdLib.Iterable[T | stdLib.PromiseLike[T]]) = this()
+  var _dequeue: js.Any = js.native
   var _queue: js.Any = js.native
   var _state: js.Any = js.native
   /**
@@ -22,7 +23,6 @@ class AsyncBoundedQueue[T] () extends js.Object {
        * When negative, indicates the number of requests waiting to be fulfilled.
        */
   val size: scala.Double = js.native
-  /* private */ def _dequeue(): js.Any = js.native
   /**
        * Consumes all items in the queue until the queue ends.
        */

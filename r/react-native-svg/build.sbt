@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "react-native-svg"
-version := "8.0.8-436867"
+version := "8.0.9-94126c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "color" % "3.0-dt-20180910Z-6f1148",
-  "org.scalablytyped" %%% "color-convert" % "1.9-dt-20180910Z-320d29",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-2e1e39",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-3dc8be",
-  "org.scalablytyped" %%% "pegjs" % "v0.10.0-dt-20180910Z-7b8de7",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-000ab2",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-1b8e7c",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20181208Z-3d0fe7",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "color" % "3.0-dt-20180910Z-129cf0",
+  "org.scalablytyped" %%% "color-convert" % "1.9-dt-20180910Z-925f70",
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-1e18f5",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-b451f0",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-e3741e",
+  "org.scalablytyped" %%% "pegjs" % "v0.10.0-dt-20180910Z-78bd16",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-87c4ee",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-d83ef6",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20181208Z-981dfe",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

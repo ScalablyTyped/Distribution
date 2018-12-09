@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Anon_Callback
   extends ScalablyTyped.runtime.Instantiable1[
       /* callback */ resizeDashObserverDashPolyfillLib.resizeDashObserverDashPolyfillMod.Global.ResizeObserverCallback, 
-      resizeDashObserverDashPolyfillLib.resizeDashObserverDashPolyfillMod.Global.ResizeObserver
+      resizeDashObserverDashPolyfillLib.resizeDashObserverDashPolyfillMod.ResizeObserver
     ]
 

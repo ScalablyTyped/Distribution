@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "graphql-resolvers"
-version := "0.2-dt-20181027Z-b30026"
+version := "0.2-dt-20181027Z-2ebc61"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.4-f5ddbe",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.0.26-181e22",
-  "org.scalablytyped" %%% "deprecated-decorator" % "0.1.6-e6f621",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-f94ee7",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.3-152255",
-  "org.scalablytyped" %%% "iterall" % "1.2.2-5ff71a",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180910Z-00c113",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-cf13fe",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.11-203351")
+  "org.scalablytyped" %%% "apollo-link" % "1.2.4-d81515",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.0.26-6eebd1",
+  "org.scalablytyped" %%% "deprecated-decorator" % "0.1.6-049e25",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-505dae",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.3-eeaab2",
+  "org.scalablytyped" %%% "iterall" % "1.2.2-8bc400",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-646a31",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b",
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180910Z-ba3729",
+  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-671f25",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.11-74d34a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

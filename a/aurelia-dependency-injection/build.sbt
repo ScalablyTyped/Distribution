@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "aurelia-dependency-injection"
-version := "1.4.1-04de4f"
+version := "1.4.1-e20a2a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "aurelia-metadata" % "1.0.4-fb3c81",
-  "org.scalablytyped" %%% "aurelia-pal" % "1.8.0-fa3a3e",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "aurelia-metadata" % "1.0.4-b2a725",
+  "org.scalablytyped" %%% "aurelia-pal" % "1.8.0-84932f",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

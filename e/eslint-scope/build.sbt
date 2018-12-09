@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "eslint-scope"
-version := "3.7-dt-20180910Z-470a2f"
+version := "3.7-dt-20180910Z-f83767"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "eslint" % "4.16-dt-20181203Z-fa1c50",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20180910Z-cc85a5",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20180920Z-016b8b",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "eslint" % "4.16-dt-20181203Z-21d841",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20180910Z-8cc4ab",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20180920Z-2d8a40",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "joigoose"
-version := "2.0-dt-20180910Z-9f3327"
+version := "2.0-dt-20180910Z-f8b8ea"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bson" % "1.0.6-dt-20180910Z-6478ed",
-  "org.scalablytyped" %%% "joi" % "14.0-dt-20181031Z-f53b7a",
-  "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181203Z-200d30",
-  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181208Z-ac428c",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "bson" % "1.0.6-dt-20180910Z-526327",
+  "org.scalablytyped" %%% "joi" % "14.0-dt-20181031Z-9abdd3",
+  "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181203Z-eb9959",
+  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181208Z-f72718",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-646a31",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

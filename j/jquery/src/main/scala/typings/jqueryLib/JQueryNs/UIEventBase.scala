@@ -20,7 +20,8 @@ trait UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigg
   var detail_UIEventBase: scala.Double
   @JSName("eventPhase")
   var eventPhase_UIEventBase: scala.Double
-  var originalEvent: js.UndefOr[jqueryLib._UIEvent] = js.undefined
+  @JSName("originalEvent")
+  var originalEvent_UIEventBase: js.UndefOr[jqueryLib._UIEvent] = js.undefined
   @JSName("view")
   var view_UIEventBase: stdLib.Window
 }

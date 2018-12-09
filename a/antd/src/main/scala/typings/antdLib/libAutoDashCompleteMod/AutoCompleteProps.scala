@@ -11,7 +11,7 @@ trait AutoCompleteProps
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var backfill: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[
-    ValidInputElement | reactLib.reactMod.ReactNs.ReactElement[antdLib.libSelectMod.OptionProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[antdLib.libSelectMod.OptionProps]]
+    ValidInputElement | reactLib.reactMod.ReactNs.ReactElement[antdLib.libInputInputMod.InputProps] | reactLib.reactMod.ReactNs.ReactElement[antdLib.libSelectMod.OptionProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[antdLib.libSelectMod.OptionProps]]
   ] = js.undefined
   var dataSource: js.UndefOr[js.Array[DataSourceItemType]] = js.undefined
   var defaultValue: js.UndefOr[antdLib.libSelectMod.SelectValue] = js.undefined

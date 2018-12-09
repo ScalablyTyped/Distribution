@@ -12,7 +12,7 @@ trait Menu
   var switchingModeFromInline: scala.Boolean = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MMenu(nextProps: MenuProps, nextContext: antdLib.libLayoutSiderMod.SiderContext): scala.Unit = js.native
-  def getChildContext(): antdLib.Anon_AntdMenuThemeLight = js.native
+  def getChildContext(): antdLib.Anon_AntdMenuThemeDark = js.native
   def getInlineCollapsed(): js.Any = js.native
   def getMenuOpenAnimation(menuMode: MenuMode): js.UndefOr[js.Object] = js.native
   def getRealMenuMode(): js.UndefOr[

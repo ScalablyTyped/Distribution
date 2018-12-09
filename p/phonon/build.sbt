@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "phonon"
-version := "1.4-dt-20180910Z-3528ea"
+version := "1.4-dt-20180910Z-0b8e8b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "awesomplete" % "1.1-dt-20180910Z-1bb726",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "awesomplete" % "1.1-dt-20180910Z-d679cf",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "peerjs"
-version := "0.0-unknown-dt-20180910Z-5c9559"
+version := "0.0-unknown-dt-20180910Z-182202"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
-  "org.scalablytyped" %%% "webrtc" % "2016-09-13-dt-20180910Z-d9278b")
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b",
+  "org.scalablytyped" %%% "webrtc" % "2016-09-13-dt-20180910Z-bea2d0")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

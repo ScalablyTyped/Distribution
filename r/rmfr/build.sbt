@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "rmfr"
-version := "2.0-dt-20180910Z-c86af9"
+version := "2.0-dt-20180910Z-663f40"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-63ba70",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-4563df",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
-  "org.scalablytyped" %%% "rimraf" % "2.0-dt-20180910Z-017a29",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-82c87b",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-937a94",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-646a31",
+  "org.scalablytyped" %%% "rimraf" % "2.0-dt-20180910Z-3d2f63",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

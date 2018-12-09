@@ -12,7 +12,6 @@ trait Anon_TransitionName extends js.Object {
   var inputPrefixCls: java.lang.String
   var notFoundContent: java.lang.String
   var options: js.Array[scala.Nothing]
-  var placeholder: java.lang.String
   var popupPlacement: java.lang.String
   var prefixCls: java.lang.String
   var transitionName: java.lang.String

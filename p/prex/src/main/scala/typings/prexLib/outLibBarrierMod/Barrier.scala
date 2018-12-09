@@ -22,11 +22,15 @@ class Barrier protected () extends js.Object {
        * @param postPhaseAction An action to execute between each phase.
        */
   def this(participantCount: scala.Double, postPhaseAction: js.Function1[/* barrier */ Barrier, scala.Unit | stdLib.PromiseLike[scala.Unit]]) = this()
+  var _finishPhase: js.Any = js.native
   var _isExecutingPostPhaseAction: js.Any = js.native
+  var _nextPhase: js.Any = js.native
   var _participantCount: js.Any = js.native
   var _phaseNumber: js.Any = js.native
   var _postPhaseAction: js.Any = js.native
+  var _rejectNextPhase: js.Any = js.native
   var _remainingParticipants: js.Any = js.native
+  var _resolveNextPhase: js.Any = js.native
   var _waiters: js.Any = js.native
   /**
        * Gets the number of the Barrier's current phase.
@@ -40,10 +44,6 @@ class Barrier protected () extends js.Object {
        * Gets the number of participants in the barrier that haven't yet signaled in the current phase.
        */
   val remainingParticipants: scala.Double = js.native
-  /* private */ def _finishPhase(): js.Any = js.native
-  /* private */ def _nextPhase(): js.Any = js.native
-  /* private */ def _rejectNextPhase(error: js.Any): js.Any = js.native
-  /* private */ def _resolveNextPhase(): js.Any = js.native
   /**
        * Notifies the Barrier there will be additional participants.
        *

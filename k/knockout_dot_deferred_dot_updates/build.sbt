@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_deferred_dot_updates"
-version := "0.0-unknown-dt-20180910Z-002a45"
+version := "0.0-unknown-dt-20180910Z-b5b10b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20181120Z-86a7d3",
-  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20181120Z-5f8b09",
+  "org.scalablytyped" %%% "std" % "3.2.2-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
