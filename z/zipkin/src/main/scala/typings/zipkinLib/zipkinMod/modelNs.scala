@@ -13,7 +13,7 @@ object modelNs extends js.Object {
     extends zipkinLib.zipkinMod.zipkinNs.modelNs.Endpoint {
     def this(args: zipkinLib.Anon_Ipv4) = this()
     /* CompleteClass */
-    override def isEmpty(): scala.Unit = js.native
+    override def isEmpty(): scala.Boolean = js.native
     /* CompleteClass */
     override def setIpv4(ipv4: java.lang.String): scala.Unit = js.native
     /* CompleteClass */

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Some[T] extends IOption[T] {
-  @JSName("present")
-  var present_Some: zipkinLib.zipkinLibNumbers.`true` = js.native
-  def getOrElse(): T = js.native
+trait Some[T] extends Option[T] {
+  val present: zipkinLib.zipkinLibNumbers.`true` = js.native
+  val `type`: zipkinLib.zipkinLibStrings.Some = js.native
 }
 

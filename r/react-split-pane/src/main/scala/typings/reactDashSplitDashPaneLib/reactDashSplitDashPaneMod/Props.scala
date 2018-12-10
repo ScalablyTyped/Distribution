@@ -20,7 +20,6 @@ trait Props extends js.Object {
   var pane1Style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var pane2Style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var paneStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var prefixer: js.UndefOr[js.Any] = js.undefined
   var primary: js.UndefOr[
     reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.first | reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.second
   ] = js.undefined

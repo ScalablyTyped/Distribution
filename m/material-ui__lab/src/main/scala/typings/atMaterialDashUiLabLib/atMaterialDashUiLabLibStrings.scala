@@ -106,6 +106,12 @@ object atMaterialDashUiLabLibStrings {
   sealed trait thumb extends js.Object
   
   @js.native
+  sealed trait thumbIcon extends js.Object
+  
+  @js.native
+  sealed trait thumbIconWrapper extends js.Object
+  
+  @js.native
   sealed trait top extends js.Object
   
   @js.native
@@ -162,6 +168,8 @@ object atMaterialDashUiLabLibStrings {
   def root: root = "root".asInstanceOf[root]
   def selected: selected = "selected".asInstanceOf[selected]
   def thumb: thumb = "thumb".asInstanceOf[thumb]
+  def thumbIcon: thumbIcon = "thumbIcon".asInstanceOf[thumbIcon]
+  def thumbIconWrapper: thumbIconWrapper = "thumbIconWrapper".asInstanceOf[thumbIconWrapper]
   def top: top = "top".asInstanceOf[top]
   def `top-end`: `top-end` = "top-end".asInstanceOf[`top-end`]
   def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]

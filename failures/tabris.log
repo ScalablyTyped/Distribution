@@ -60,12 +60,6 @@
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(_CanvasProperties))] 
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(CanvasEvents))] 
 [error] PhaseRes.scala:78 StackOverflowError [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at java.lang.String.valueOf(String.java:2994)
-	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:199)
-	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:358)
-	at scala.collection.immutable.List.foreach(List.scala:388)
-	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:356)
-	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:352)
 	at scala.collection.AbstractTraversable.addString(Traversable.scala:104)
 	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:322)
 	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:321)
@@ -1084,6 +1078,12 @@
 	at scala.collection.immutable.List.map(List.scala:294)
 	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:82)
 	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$3.applyOrElse(ExpandCallables.scala:100)
+	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$3.applyOrElse(ExpandCallables.scala:91)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:144)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:131)
+	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:104)
+	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:91)
+	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:82)
 
 [debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 

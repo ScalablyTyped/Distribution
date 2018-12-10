@@ -1,19 +1,15 @@
 organization := "org.scalablytyped"
 name := "apollo-engine-reporting"
-version := "0.1.3-258269"
+version := "0.1.3-c0208b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.1.0-6b5175",
-  "org.scalablytyped" %%% "apollo-env" % "0.2.5-89be6e",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-2990fb",
-  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.9-2a2946",
   "org.scalablytyped" %%% "async-retry" % "1.2-dt-20180910Z-305986",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-2f8c45",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-1de855",
-  "org.scalablytyped" %%% "graphql-extensions" % "0.3.3-c52343",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-93340d",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180910Z-3aa15f",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",

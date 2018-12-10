@@ -85,7 +85,7 @@ trait StrictDropdownProps extends js.Object {
   /** A selection dropdown can allow multiple selections. */
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   /** Message to display when there are no results. */
-  var noResultsMessage: js.UndefOr[java.lang.String] = js.undefined
+  var noResultsMessage: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
      * Called when a user adds a new item. Use this to update the options list.
      *

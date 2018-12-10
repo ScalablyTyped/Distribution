@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "0.5.0-7dde57"
+version := "0.5.0-ec5c2b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -33,7 +33,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "tsutils" % "2.29.0-2e7056",
   "org.scalablytyped" %%% "typescript" % "3.2.2-445e51",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181018Z-3c1589",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20181129Z-961d35")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20181210Z-33d6fc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

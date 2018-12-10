@@ -46,7 +46,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   ] = js.undefined
   var MozBackgroundClip: js.UndefOr[java.lang.String] = js.undefined
   var MozBackgroundInlinePolicy: js.UndefOr[
-    antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clone | antdLib.antdLibStrings.slice
+    antdLib.antdLibStrings.slice | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clone
   ] = js.undefined
   var MozBackgroundOrigin: js.UndefOr[java.lang.String] = js.undefined
   var MozBackgroundSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -111,7 +111,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
     scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var MozHyphens: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.manual | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.manual | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var MozImageRegion: js.UndefOr[java.lang.String] = js.undefined
   var MozMarginEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -143,10 +143,10 @@ trait Anon_OffsetBlockEnd extends js.Object {
   ] = js.undefined
   var MozTabSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozTextAlignLast: js.UndefOr[
-    antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.justify
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.justify
   ] = js.undefined
   var MozTextBlink: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.blink
+    antdLib.antdLibStrings.blink | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var MozTextDecorationColor: js.UndefOr[java.lang.String] = js.undefined
   var MozTextDecorationLine: js.UndefOr[java.lang.String] = js.undefined
@@ -167,13 +167,13 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.ignore | antdLib.antdLibStrings.`select-after` | antdLib.antdLibStrings.`select-all` | antdLib.antdLibStrings.`select-before` | antdLib.antdLibStrings.`select-menu` | antdLib.antdLibStrings.`select-same`
   ] = js.undefined
   var MozUserInput: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.disabled | antdLib.antdLibStrings.enabled | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.disabled | antdLib.antdLibStrings.enabled | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var MozUserModify: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`read-only` | antdLib.antdLibStrings.`read-write` | antdLib.antdLibStrings.`write-only`
   ] = js.undefined
   var MozUserSelect: js.UndefOr[
-    antdLib.antdLibStrings.all | antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.text | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.`-moz-none` | antdLib.antdLibStrings.element
+    antdLib.antdLibStrings.all | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.text | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.`-moz-none` | antdLib.antdLibStrings.element
   ] = js.undefined
   var MozWindowDragging: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.drag | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`no-drag`
@@ -193,7 +193,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var OBackgroundSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var OBorderImage: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var OObjectFit: js.UndefOr[
-    antdLib.antdLibStrings.fill | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.cover | antdLib.antdLibStrings.`scale-down`
+    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.cover | antdLib.antdLibStrings.fill | antdLib.antdLibStrings.`scale-down`
   ] = js.undefined
   var OObjectPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var OTabSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -240,7 +240,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.stretch | antdLib.antdLibStrings.baseline
   ] = js.undefined
   var WebkitBoxDecorationBreak: js.UndefOr[
-    antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clone | antdLib.antdLibStrings.slice
+    antdLib.antdLibStrings.slice | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clone
   ] = js.undefined
   var WebkitBoxDirection: js.UndefOr[
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.reverse | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -303,15 +303,15 @@ trait Anon_OffsetBlockEnd extends js.Object {
   ] = js.undefined
   var WebkitFontFeatureSettings: js.UndefOr[java.lang.String] = js.undefined
   var WebkitFontKerning: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var WebkitFontVariantLigatures: js.UndefOr[java.lang.String] = js.undefined
   var WebkitHyphens: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.manual | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.manual | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var WebkitJustifyContent: js.UndefOr[java.lang.String] = js.undefined
   var WebkitLineBreak: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.strict | antdLib.antdLibStrings.loose
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.strict | antdLib.antdLibStrings.loose
   ] = js.undefined
   var WebkitLineClamp: js.UndefOr[
     scala.Double | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -329,10 +329,10 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var WebkitMaskPositionY: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var WebkitMaskRepeat: js.UndefOr[java.lang.String] = js.undefined
   var WebkitMaskRepeatX: js.UndefOr[
-    antdLib.antdLibStrings.round | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`no-repeat` | antdLib.antdLibStrings.repeat | antdLib.antdLibStrings.space
+    antdLib.antdLibStrings.repeat | antdLib.antdLibStrings.round | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`no-repeat` | antdLib.antdLibStrings.space
   ] = js.undefined
   var WebkitMaskRepeatY: js.UndefOr[
-    antdLib.antdLibStrings.round | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`no-repeat` | antdLib.antdLibStrings.repeat | antdLib.antdLibStrings.space
+    antdLib.antdLibStrings.repeat | antdLib.antdLibStrings.round | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`no-repeat` | antdLib.antdLibStrings.space
   ] = js.undefined
   var WebkitMaskSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var WebkitMaxInlineSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -387,7 +387,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`read-only` | antdLib.antdLibStrings.`read-write` | antdLib.antdLibStrings.`read-write-plaintext-only`
   ] = js.undefined
   var WebkitUserSelect: js.UndefOr[
-    antdLib.antdLibStrings.all | antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.text | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.`-moz-none` | antdLib.antdLibStrings.element
+    antdLib.antdLibStrings.all | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.text | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.`-moz-none` | antdLib.antdLibStrings.element
   ] = js.undefined
   var WebkitWritingMode: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`horizontal-tb` | antdLib.antdLibStrings.`sideways-lr` | antdLib.antdLibStrings.`sideways-rl` | antdLib.antdLibStrings.`vertical-lr` | antdLib.antdLibStrings.`vertical-rl`
@@ -496,7 +496,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.stretch | antdLib.antdLibStrings.baseline
   ] = js.undefined
   var boxDecorationBreak: js.UndefOr[
-    antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clone | antdLib.antdLibStrings.slice
+    antdLib.antdLibStrings.slice | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clone
   ] = js.undefined
   var boxDirection: js.UndefOr[
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.reverse | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -524,16 +524,16 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`border-box` | antdLib.antdLibStrings.`content-box`
   ] = js.undefined
   var breakAfter: js.UndefOr[
-    antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid | antdLib.antdLibStrings.`avoid-column` | antdLib.antdLibStrings.`avoid-page` | antdLib.antdLibStrings.`avoid-region` | antdLib.antdLibStrings.column | antdLib.antdLibStrings.page | antdLib.antdLibStrings.recto | antdLib.antdLibStrings.region | antdLib.antdLibStrings.verso
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid | antdLib.antdLibStrings.`avoid-column` | antdLib.antdLibStrings.`avoid-page` | antdLib.antdLibStrings.`avoid-region` | antdLib.antdLibStrings.column | antdLib.antdLibStrings.page | antdLib.antdLibStrings.recto | antdLib.antdLibStrings.region | antdLib.antdLibStrings.verso
   ] = js.undefined
   var breakBefore: js.UndefOr[
-    antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid | antdLib.antdLibStrings.`avoid-column` | antdLib.antdLibStrings.`avoid-page` | antdLib.antdLibStrings.`avoid-region` | antdLib.antdLibStrings.column | antdLib.antdLibStrings.page | antdLib.antdLibStrings.recto | antdLib.antdLibStrings.region | antdLib.antdLibStrings.verso
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid | antdLib.antdLibStrings.`avoid-column` | antdLib.antdLibStrings.`avoid-page` | antdLib.antdLibStrings.`avoid-region` | antdLib.antdLibStrings.column | antdLib.antdLibStrings.page | antdLib.antdLibStrings.recto | antdLib.antdLibStrings.region | antdLib.antdLibStrings.verso
   ] = js.undefined
   var breakInside: js.UndefOr[
     antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid | antdLib.antdLibStrings.`avoid-column` | antdLib.antdLibStrings.`avoid-page` | antdLib.antdLibStrings.`avoid-region`
   ] = js.undefined
   var captionSide: js.UndefOr[
-    antdLib.antdLibStrings.bottom | antdLib.antdLibStrings.top | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`block-end` | antdLib.antdLibStrings.`block-start` | antdLib.antdLibStrings.`inline-end` | antdLib.antdLibStrings.`inline-start`
+    antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.top | antdLib.antdLibStrings.bottom | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`block-end` | antdLib.antdLibStrings.`block-start` | antdLib.antdLibStrings.`inline-end` | antdLib.antdLibStrings.`inline-start`
   ] = js.undefined
   var caretColor: js.UndefOr[java.lang.String] = js.undefined
   var clear: js.UndefOr[
@@ -619,11 +619,11 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined
   var fontFeatureSettings: js.UndefOr[java.lang.String] = js.undefined
   var fontKerning: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var fontLanguageOverride: js.UndefOr[java.lang.String] = js.undefined
   var fontOpticalSizing: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var fontSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var fontSizeAdjust: js.UndefOr[
@@ -641,11 +641,11 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var fontVariantLigatures: js.UndefOr[java.lang.String] = js.undefined
   var fontVariantNumeric: js.UndefOr[java.lang.String] = js.undefined
   var fontVariantPosition: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.sub | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`super`
+    antdLib.antdLibStrings.sub | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`super`
   ] = js.undefined
   var fontVariationSettings: js.UndefOr[java.lang.String] = js.undefined
   var fontWeight: js.UndefOr[
-    scala.Double | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.bold | antdLib.antdLibStrings.bolder | antdLib.antdLibStrings.lighter
+    scala.Double | antdLib.antdLibStrings.bold | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.bolder | antdLib.antdLibStrings.lighter
   ] = js.undefined
   var gap: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var glyphOrientationVertical: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -670,7 +670,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var hangingPunctuation: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var hyphens: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.manual | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.manual | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var imageOrientation: js.UndefOr[java.lang.String] = js.undefined
   var imageRendering: js.UndefOr[
@@ -678,7 +678,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   ] = js.undefined
   var imageResolution: js.UndefOr[java.lang.String] = js.undefined
   var imeMode: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.active | antdLib.antdLibStrings.disabled | antdLib.antdLibStrings.inactive | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.active | antdLib.antdLibStrings.disabled | antdLib.antdLibStrings.inactive | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var initialLetter: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var inlineSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -696,7 +696,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var letterSpacing: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var lightingColor: js.UndefOr[java.lang.String] = js.undefined
   var lineBreak: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.strict | antdLib.antdLibStrings.loose
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.strict | antdLib.antdLibStrings.loose
   ] = js.undefined
   var lineClamp: js.UndefOr[
     scala.Double | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -754,7 +754,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var minInlineSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var minWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var mixBlendMode: js.UndefOr[
-    antdLib.antdLibStrings.color | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`color-burn` | antdLib.antdLibStrings.`color-dodge` | antdLib.antdLibStrings.darken | antdLib.antdLibStrings.difference | antdLib.antdLibStrings.exclusion | antdLib.antdLibStrings.`hard-light` | antdLib.antdLibStrings.hue | antdLib.antdLibStrings.lighten | antdLib.antdLibStrings.luminosity | antdLib.antdLibStrings.multiply | antdLib.antdLibStrings.overlay | antdLib.antdLibStrings.saturation | antdLib.antdLibStrings.screen | antdLib.antdLibStrings.`soft-light`
+    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.color | antdLib.antdLibStrings.`color-burn` | antdLib.antdLibStrings.`color-dodge` | antdLib.antdLibStrings.darken | antdLib.antdLibStrings.difference | antdLib.antdLibStrings.exclusion | antdLib.antdLibStrings.`hard-light` | antdLib.antdLibStrings.hue | antdLib.antdLibStrings.lighten | antdLib.antdLibStrings.luminosity | antdLib.antdLibStrings.multiply | antdLib.antdLibStrings.overlay | antdLib.antdLibStrings.saturation | antdLib.antdLibStrings.screen | antdLib.antdLibStrings.`soft-light`
   ] = js.undefined
   var motion: js.UndefOr[java.lang.String] = js.undefined
   var motionOffset: js.UndefOr[java.lang.String] = js.undefined
@@ -779,7 +779,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.mandatory | antdLib.antdLibStrings.proximity
   ] = js.undefined
   var msContentZooming: js.UndefOr[
-    antdLib.antdLibStrings.zoom | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.zoom
   ] = js.undefined
   var msFilter: js.UndefOr[java.lang.String] = js.undefined
   var msFlex: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -794,7 +794,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var msGridColumns: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var msGridRows: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var msHighContrastAdjust: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var msHyphenateLimitChars: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var msHyphenateLimitLines: js.UndefOr[
@@ -802,28 +802,28 @@ trait Anon_OffsetBlockEnd extends js.Object {
   ] = js.undefined
   var msHyphenateLimitZone: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var msHyphens: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.manual | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.manual | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var msImeAlign: js.UndefOr[
     antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.after
   ] = js.undefined
   var msImeMode: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.active | antdLib.antdLibStrings.disabled | antdLib.antdLibStrings.inactive | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.active | antdLib.antdLibStrings.disabled | antdLib.antdLibStrings.inactive | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var msLineBreak: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.strict | antdLib.antdLibStrings.loose
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.strict | antdLib.antdLibStrings.loose
   ] = js.undefined
   var msOrder: js.UndefOr[
     scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var msOverflowStyle: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`-ms-autohiding-scrollbar` | antdLib.antdLibStrings.scrollbar
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`-ms-autohiding-scrollbar` | antdLib.antdLibStrings.scrollbar
   ] = js.undefined
   var msOverflowX: js.UndefOr[
-    antdLib.antdLibStrings.clip | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.scroll | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.scroll | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clip
   ] = js.undefined
   var msOverflowY: js.UndefOr[
-    antdLib.antdLibStrings.clip | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.scroll | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.scroll | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clip
   ] = js.undefined
   var msScrollChaining: js.UndefOr[
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.chained
@@ -873,7 +873,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`break-word` | antdLib.antdLibStrings.`break-all` | antdLib.antdLibStrings.`keep-all`
   ] = js.undefined
   var msWrapFlow: js.UndefOr[
-    antdLib.antdLibStrings.clear | antdLib.antdLibStrings.both | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.start | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.maximum
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.both | antdLib.antdLibStrings.start | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clear | antdLib.antdLibStrings.maximum
   ] = js.undefined
   var msWrapMargin: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var msWrapThrough: js.UndefOr[
@@ -883,7 +883,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`horizontal-tb` | antdLib.antdLibStrings.`sideways-lr` | antdLib.antdLibStrings.`sideways-rl` | antdLib.antdLibStrings.`vertical-lr` | antdLib.antdLibStrings.`vertical-rl`
   ] = js.undefined
   var objectFit: js.UndefOr[
-    antdLib.antdLibStrings.fill | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.cover | antdLib.antdLibStrings.`scale-down`
+    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.cover | antdLib.antdLibStrings.fill | antdLib.antdLibStrings.`scale-down`
   ] = js.undefined
   var objectPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var offsetBlockEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -907,7 +907,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var outlineWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var overflow: js.UndefOr[java.lang.String] = js.undefined
   var overflowAnchor: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var overflowBlock: js.UndefOr[java.lang.String] = js.undefined
   var overflowClipBox: js.UndefOr[
@@ -918,17 +918,17 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`break-word`
   ] = js.undefined
   var overflowX: js.UndefOr[
-    antdLib.antdLibStrings.clip | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.scroll | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.scroll | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clip
   ] = js.undefined
   var overflowY: js.UndefOr[
-    antdLib.antdLibStrings.clip | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.scroll | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.scroll | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clip
   ] = js.undefined
   var overscrollBehavior: js.UndefOr[java.lang.String] = js.undefined
   var overscrollBehaviorX: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain
   ] = js.undefined
   var overscrollBehaviorY: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain
   ] = js.undefined
   var padding: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var paddingBlockEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -940,10 +940,10 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var paddingRight: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var paddingTop: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var pageBreakAfter: js.UndefOr[
-    antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid | antdLib.antdLibStrings.recto | antdLib.antdLibStrings.verso | antdLib.antdLibStrings.always
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid | antdLib.antdLibStrings.recto | antdLib.antdLibStrings.verso | antdLib.antdLibStrings.always
   ] = js.undefined
   var pageBreakBefore: js.UndefOr[
-    antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid | antdLib.antdLibStrings.recto | antdLib.antdLibStrings.verso | antdLib.antdLibStrings.always
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid | antdLib.antdLibStrings.recto | antdLib.antdLibStrings.verso | antdLib.antdLibStrings.always
   ] = js.undefined
   var pageBreakInside: js.UndefOr[
     antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.avoid
@@ -954,10 +954,10 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var placeContent: js.UndefOr[java.lang.String] = js.undefined
   var placeItems: js.UndefOr[java.lang.String] = js.undefined
   var pointerEvents: js.UndefOr[
-    antdLib.antdLibStrings.all | antdLib.antdLibStrings.fill | antdLib.antdLibStrings.stroke | antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.painted | antdLib.antdLibStrings.visibleFill | antdLib.antdLibStrings.visiblePainted | antdLib.antdLibStrings.visibleStroke
+    antdLib.antdLibStrings.all | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.fill | antdLib.antdLibStrings.stroke | antdLib.antdLibStrings.painted | antdLib.antdLibStrings.visibleFill | antdLib.antdLibStrings.visiblePainted | antdLib.antdLibStrings.visibleStroke
   ] = js.undefined
   var position: js.UndefOr[
-    antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.fixed | antdLib.antdLibStrings.`-webkit-sticky` | antdLib.antdLibStrings.absolute | antdLib.antdLibStrings.relative | antdLib.antdLibStrings.static | antdLib.antdLibStrings.sticky
+    antdLib.antdLibStrings.fixed | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`-webkit-sticky` | antdLib.antdLibStrings.absolute | antdLib.antdLibStrings.relative | antdLib.antdLibStrings.static | antdLib.antdLibStrings.sticky
   ] = js.undefined
   var quotes: js.UndefOr[java.lang.String] = js.undefined
   var resize: js.UndefOr[
@@ -1047,13 +1047,13 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var strokeWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var tabSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var tableLayout: js.UndefOr[
-    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.fixed
+    antdLib.antdLibStrings.fixed | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var textAlign: js.UndefOr[
     antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.justify | antdLib.antdLibStrings.`match-parent`
   ] = js.undefined
   var textAlignLast: js.UndefOr[
-    antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.justify
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.justify
   ] = js.undefined
   var textAnchor: js.UndefOr[
     antdLib.antdLibStrings.start | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.middle | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -1065,7 +1065,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var textDecorationLine: js.UndefOr[java.lang.String] = js.undefined
   var textDecorationSkip: js.UndefOr[java.lang.String] = js.undefined
   var textDecorationSkipInk: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var textDecorationStyle: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.dotted | antdLib.antdLibStrings.double | antdLib.antdLibStrings.solid | antdLib.antdLibStrings.wavy
@@ -1076,7 +1076,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
   var textEmphasisStyle: js.UndefOr[java.lang.String] = js.undefined
   var textIndent: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var textJustify: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`inter-character` | antdLib.antdLibStrings.`inter-word`
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`inter-character` | antdLib.antdLibStrings.`inter-word`
   ] = js.undefined
   var textOrientation: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.mixed | antdLib.antdLibStrings.sideways | antdLib.antdLibStrings.upright
@@ -1111,7 +1111,7 @@ trait Anon_OffsetBlockEnd extends js.Object {
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.embed | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.isolate | antdLib.antdLibStrings.`-moz-isolate` | antdLib.antdLibStrings.`-moz-isolate-override` | antdLib.antdLibStrings.`-moz-plaintext` | antdLib.antdLibStrings.`-webkit-isolate` | antdLib.antdLibStrings.`bidi-override` | antdLib.antdLibStrings.`isolate-override` | antdLib.antdLibStrings.plaintext
   ] = js.undefined
   var userSelect: js.UndefOr[
-    antdLib.antdLibStrings.all | antdLib.antdLibStrings.none | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.text | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.`-moz-none` | antdLib.antdLibStrings.element
+    antdLib.antdLibStrings.all | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.text | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.`-moz-none` | antdLib.antdLibStrings.element
   ] = js.undefined
   var vectorEffect: js.UndefOr[
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`non-scaling-stroke`

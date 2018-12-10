@@ -15,6 +15,8 @@ trait StrictPaginationProps extends js.Object {
   var boundaryRange: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /** Initial activePage value. */
   var defaultActivePage: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  /** A pagination can be disabled. */
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /** A shorthand for PaginationItem. */
   var ellipsisItem: js.UndefOr[
     semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[

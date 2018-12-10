@@ -15,6 +15,7 @@ trait Tracer extends js.Object {
   def letId[V](traceId: TraceId, callback: js.Function0[V]): V = js.native
   def local[V](name: java.lang.String, callback: js.Function0[V]): V = js.native
   def recordAnnotation(annotation: IAnnotation): scala.Unit = js.native
+  def recordAnnotation(annotation: IAnnotation, timestamp: scala.Double): scala.Unit = js.native
   def recordBinary(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def recordBinary(key: java.lang.String, value: scala.Boolean): scala.Unit = js.native
   def recordBinary(key: java.lang.String, value: scala.Double): scala.Unit = js.native

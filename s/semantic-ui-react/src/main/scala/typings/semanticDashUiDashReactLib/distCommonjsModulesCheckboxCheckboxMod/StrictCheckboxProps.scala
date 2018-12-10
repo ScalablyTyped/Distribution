@@ -70,6 +70,19 @@ trait StrictCheckboxProps extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
+  /**
+     * Called when the user releases the mouse.
+     *
+     * @param {SyntheticEvent} event - React's original SyntheticEvent.
+     * @param {object} data - All props and current checked/indeterminate state.
+     */
+  var onMouseUp: js.UndefOr[
+    js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement], 
+      /* data */ CheckboxProps, 
+      scala.Unit
+    ]
+  ] = js.undefined
   /** Format as a radio element. This means it is an exclusive option. */
   var radio: js.UndefOr[scala.Boolean] = js.undefined
   /** A checkbox can be read-only and unable to change states. */

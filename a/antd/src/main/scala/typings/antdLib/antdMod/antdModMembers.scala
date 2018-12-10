@@ -14,7 +14,7 @@ object antdModMembers extends js.Object {
   val Layout: (reactLib.reactMod.ReactNs.ComponentClass[antdLib.libLayoutLayoutMod.BasicProps, reactLib.reactMod.ReactNs.ComponentState]) with antdLib.Anon_Content = js.native
   val message: antdLib.libMessageMod.MessageApi = js.native
   val notification: antdLib.libNotificationMod.NotificationApi = js.native
-  var version: antdLib.antdLibStrings.`3DOT11DOT1` = js.native
+  var version: antdLib.antdLibStrings.`3DOT11DOT2` = js.native
   def Divider(hasPrefixClsTypeOrientationClassNameChildrenDashedRestProps: antdLib.libDividerMod.DividerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

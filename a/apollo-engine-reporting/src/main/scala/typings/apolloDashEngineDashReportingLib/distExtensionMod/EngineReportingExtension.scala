@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("apollo-engine-reporting/dist/extension", "EngineReportingExtension")
+/* RemoveDifficultInheritance: 
+- Dropped any */ @JSImport("apollo-engine-reporting/dist/extension", "EngineReportingExtension")
 @js.native
-class EngineReportingExtension[TContext] protected ()
-  extends graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[TContext] {
+class EngineReportingExtension[TContext] protected () extends js.Object {
   def this(options: apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[TContext], addTrace: js.Function3[
       /* signature */ java.lang.String, 
       /* operationName */ java.lang.String, 
@@ -26,18 +26,14 @@ class EngineReportingExtension[TContext] protected ()
   var queryString: js.UndefOr[js.Any] = js.native
   var startHrTime: js.Any = js.native
   var trace: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.Trace = js.native
-  @JSName("executionDidStart")
-  def executionDidStart_MEngineReportingExtension(o: apolloDashEngineDashReportingLib.Anon_ExecutionArgs): scala.Unit = js.native
-  @JSName("requestDidStart")
-  def requestDidStart_MEngineReportingExtension(o: apolloDashEngineDashReportingLib.Anon_ParsedQuery[TContext]): graphqlDashExtensionsLib.graphqlDashExtensionsMod.EndHandler = js.native
-  @JSName("willResolveField")
-  def willResolveField_MEngineReportingExtension(
+  def executionDidStart(o: apolloDashEngineDashReportingLib.Anon_ExecutionArgs): scala.Unit = js.native
+  def requestDidStart(o: apolloDashEngineDashReportingLib.Anon_ParsedQuery[TContext]): js.Any = js.native
+  def willResolveField(
     _source: js.Any,
     _args: ScalablyTyped.runtime.StringDictionary[js.Any],
     _context: TContext,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
   ): (js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ js.Any, scala.Unit]) | scala.Unit = js.native
-  @JSName("willSendResponse")
-  def willSendResponse_MEngineReportingExtension(o: apolloDashEngineDashReportingLib.Anon_GraphqlResponse): scala.Unit = js.native
+  def willSendResponse(o: apolloDashEngineDashReportingLib.Anon_GraphqlResponse): scala.Unit = js.native
 }
 

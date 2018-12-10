@@ -77,5 +77,7 @@ trait StrictStickyProps extends js.Object {
   var pushing: js.UndefOr[scala.Boolean] = js.undefined
   /** Context which sticky should attach onscroll events. */
   var scrollContext: js.UndefOr[js.Object] = js.undefined
+  /** Custom style for sticky element. */
+  var styleElement: js.UndefOr[js.Object] = js.undefined
 }
 

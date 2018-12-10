@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TextArea
   extends reactLib.reactMod.Component[TextAreaProps, TextAreaState, js.Any] {
   var nextFrameActionId: scala.Double = js.native
-  var resizeObserver: resizeDashObserverDashPolyfillLib.resizeDashObserverDashPolyfillMod.Global.ResizeObserver | scala.Null = js.native
+  var resizeObserver: resizeDashObserverDashPolyfillLib.resizeDashObserverDashPolyfillMod.ResizeObserver | scala.Null = js.native
   @JSName("state")
   var state_TextArea: antdLib.Anon_TextareaStyles = js.native
   var textAreaRef: js.Any = js.native

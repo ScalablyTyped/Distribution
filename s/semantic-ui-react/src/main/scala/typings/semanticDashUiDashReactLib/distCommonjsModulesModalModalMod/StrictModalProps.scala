@@ -101,7 +101,7 @@ trait StrictModalProps
   var onUnmount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ scala.Null, /* data */ ModalProps, scala.Unit]] = js.undefined
   /** A modal can vary in size. */
   var size: js.UndefOr[
-    semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fullscreen | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny
+    semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fullscreen
   ] = js.undefined
   /** Custom styles. */
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

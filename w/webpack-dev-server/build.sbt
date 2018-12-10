@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-dev-server"
-version := "3.1-dt-20180917Z-64452c"
+version := "3.1-dt-20180917Z-c5f70f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180910Z-a6cca8",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181018Z-3c1589",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20181129Z-961d35")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20181210Z-33d6fc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

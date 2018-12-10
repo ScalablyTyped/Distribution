@@ -11,6 +11,11 @@ trait SpeedDialActionProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SpeedDialActionClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps]] = js.undefined
+  var TooltipClasses: js.UndefOr[
+    stdLib.Partial[
+      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey]
+    ]
+  ] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined
   var icon: reactLib.reactMod.ReactNs.ReactNode
   var tooltipOpen: js.UndefOr[scala.Boolean] = js.undefined

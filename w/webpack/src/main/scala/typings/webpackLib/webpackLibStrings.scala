@@ -178,6 +178,12 @@ object webpackLibStrings {
   sealed trait initial extends js.Object
   
   @js.native
+  sealed trait `inline-cheap-module-source-map` extends js.Object
+  
+  @js.native
+  sealed trait `inline-cheap-source-map` extends js.Object
+  
+  @js.native
   sealed trait `inline-source-map` extends js.Object
   
   @js.native
@@ -327,6 +333,8 @@ object webpackLibStrings {
   def hex: hex = "hex".asInstanceOf[hex]
   def `hidden-source-map`: `hidden-source-map` = "hidden-source-map".asInstanceOf[`hidden-source-map`]
   def initial: initial = "initial".asInstanceOf[initial]
+  def `inline-cheap-module-source-map`: `inline-cheap-module-source-map` = "inline-cheap-module-source-map".asInstanceOf[`inline-cheap-module-source-map`]
+  def `inline-cheap-source-map`: `inline-cheap-source-map` = "inline-cheap-source-map".asInstanceOf[`inline-cheap-source-map`]
   def `inline-source-map`: `inline-source-map` = "inline-source-map".asInstanceOf[`inline-source-map`]
   def `javascript/auto`: `javascript/auto` = "javascript/auto".asInstanceOf[`javascript/auto`]
   def `javascript/dynamic`: `javascript/dynamic` = "javascript/dynamic".asInstanceOf[`javascript/dynamic`]

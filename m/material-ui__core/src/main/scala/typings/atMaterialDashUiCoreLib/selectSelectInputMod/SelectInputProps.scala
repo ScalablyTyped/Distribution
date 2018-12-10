@@ -41,16 +41,12 @@ trait SelectInputProps extends js.Object {
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var renderValue: js.UndefOr[
     js.Function1[
-      /* value */ js.UndefOr[
-        java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean])
-      ], 
+      /* value */ java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean]), 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
-  var value: js.UndefOr[
-    java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean])
-  ] = js.undefined
+  var value: java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean])
   var variant: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled
   ] = js.undefined

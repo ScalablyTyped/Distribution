@@ -32,7 +32,8 @@ trait IRatingProps
     js.Function2[/* rating */ scala.Double, /* max */ scala.Double, java.lang.String]
   ] = js.undefined
   /**
-       * Custom icon, defaults to FavoriteStar
+       * Custom icon
+       * @defaultvalue FavoriteStarFill
        */
   var icon: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -80,5 +81,11 @@ trait IRatingProps
        * Theme (provided through customization.)
        */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
+  /**
+       * Custom icon for unselected rating elements.
+       * If an `icon` property is provided, defaults to the value of the `icon` property.
+       * @defaultvalue FavoriteStarFill
+       */
+  var unselectedIcon: js.UndefOr[java.lang.String] = js.undefined
 }
 

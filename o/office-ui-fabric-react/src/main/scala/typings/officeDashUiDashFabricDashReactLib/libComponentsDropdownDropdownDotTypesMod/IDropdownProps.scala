@@ -81,7 +81,7 @@ trait IDropdownProps
     atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IDropdownOption | js.Array[IDropdownOption]]
   ] = js.undefined
   /**
-       * Options for the dropdown.
+       * Options for the dropdown. It is recommended to treat this as pure for performance reasons.
        */
   @JSName("options")
   var options_IDropdownProps: js.Array[IDropdownOption]

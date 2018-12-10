@@ -23,7 +23,9 @@ trait NativeSelectInputProps extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var value: js.UndefOr[java.lang.String | scala.Double | scala.Boolean] = js.undefined
+  var value: js.UndefOr[
+    (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean
+  ] = js.undefined
   var variant: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled
   ] = js.undefined
