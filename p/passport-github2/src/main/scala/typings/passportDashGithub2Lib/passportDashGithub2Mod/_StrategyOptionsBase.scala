@@ -12,7 +12,7 @@ trait _StrategyOptionsBase extends js.Object {
   var callbackURL: java.lang.String
   var clientID: java.lang.String
   var clientSecret: java.lang.String
-  var customHeaders: js.UndefOr[java.lang.String] = js.undefined
+  var customHeaders: js.UndefOr[nodeLib.httpMod.OutgoingHttpHeaders] = js.undefined
   var scope: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var scopeSeparator: js.UndefOr[java.lang.String] = js.undefined
   var state: js.UndefOr[java.lang.String] = js.undefined

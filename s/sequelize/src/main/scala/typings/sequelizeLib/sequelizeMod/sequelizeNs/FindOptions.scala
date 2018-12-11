@@ -62,9 +62,7 @@ trait FindOptions[T]
            * `order: [['name', 'DESC']]`. In this way the column will be escaped, but the direction will not.
            */
   var order: js.UndefOr[
-    java.lang.String | col | literal | (js.Array[java.lang.String | scala.Double | (Model[_, _]) | sequelizeLib.Anon_Model]) | (js.Array[
-      java.lang.String | col | literal | (js.Array[java.lang.String | scala.Double | (Model[_, _]) | sequelizeLib.Anon_Model])
-    ])
+    java.lang.String | col | literal | FindOptionsOrderArray | fn | (js.Array[java.lang.String | col | literal | FindOptionsOrderArray | fn])
   ] = js.undefined
   /**
            * If true, only non-deleted records will be returned. If false, both deleted and non-deleted records will

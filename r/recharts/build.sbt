@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "recharts"
-version := "1.1-dt-20181206Z-150f0f"
+version := "1.1-dt-20181211Z-717b44"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 
 trait ICoachmarkProps
-  extends reactLib.reactMod.ReactNs.ClassAttributes[officeDashUiDashFabricDashReactLib.libComponentsCoachmarkCoachmarkMod.Coachmark] {
+  extends reactLib.reactMod.ReactNs.ClassAttributes[
+      officeDashUiDashFabricDashReactLib.libComponentsCoachmarkCoachmarkDotBaseMod.CoachmarkBase
+    ] {
   /**
        * Text to announce to screen reader / narrator when Coachmark is displayed
        */
@@ -125,10 +127,7 @@ trait ICoachmarkProps
        * Call to provide customized styling that will layer on top of the variant rules
        */
   var styles: js.UndefOr[
-    atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[
-      officeDashUiDashFabricDashReactLib.libComponentsCoachmarkCoachmarkDotStylesMod.ICoachmarkStyleProps, 
-      officeDashUiDashFabricDashReactLib.libComponentsCoachmarkCoachmarkDotStylesMod.ICoachmarkStyles
-    ]
+    atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[ICoachmarkStyleProps, ICoachmarkStyles]
   ] = js.undefined
   /**
        * The target that the Coachmark should try to position itself based on.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "intro_dot_js"
-version := "2.4-dt-20180910Z-75e61a"
+version := "2.4-dt-20181211Z-d53a50"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

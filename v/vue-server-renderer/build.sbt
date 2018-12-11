@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-server-renderer"
-version := "2.5.19-80f7f0"
+version := "2.5.20-873bb1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "source-map" % "0.7.3-6ade85",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-d7a900",
-  "org.scalablytyped" %%% "vue" % "2.5.19-74e75f")
+  "org.scalablytyped" %%% "vue" % "2.5.20-06d59b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

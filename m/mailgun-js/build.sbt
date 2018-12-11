@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mailgun-js"
-version := "0.16-dt-20181121Z-5f5b9e"
+version := "0.16-dt-20181211Z-94aab5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

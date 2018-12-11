@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PropGetters[Item] extends js.Object {
-  def getInputProps(): js.Any = js.native
-  def getInputProps(options: GetInputPropsOptions): js.Any = js.native
+  def getInputProps[T](): T with GetInputPropsOptions = js.native
+  def getInputProps[T](options: T): T with GetInputPropsOptions = js.native
   def getItemProps(options: GetItemPropsOptions[Item]): js.Any = js.native
   def getLabelProps(): js.Any = js.native
   def getLabelProps(options: GetLabelPropsOptions): js.Any = js.native

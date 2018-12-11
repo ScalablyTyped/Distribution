@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "office-ui-fabric-react"
-version := "6.111.2-2b68de"
+version := "6.112.0-7c2177"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "electron-notifications"
-version := "v0.0.3-dt-20181018Z-a6fb7e"
+version := "v0.0.3-dt-20181018Z-70436c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "electron" % "3.0.10-540dbf",
+  "org.scalablytyped" %%% "electron" % "3.0.11-540dbf",
   "org.scalablytyped" %%% "extract-zip" % "1.6-dt-20180910Z-1d8f20",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")

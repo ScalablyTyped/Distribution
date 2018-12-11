@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-oauth2"
-version := "1.4-dt-20181018Z-453e73"
+version := "1.4-dt-20181211Z-31eb2e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

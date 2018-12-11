@@ -30,6 +30,10 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionProps, 
     reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
+  val Coachmark: js.Function1[
+    /* props */ officeDashUiDashFabricDashReactLib.libComponentsCoachmarkCoachmarkDotTypesMod.ICoachmarkProps, 
+    reactLib.reactMod.Global.JSXNs.Element
+  ] = js.native
   val ColorClassNames: atUifabricStylingLib.libClassNamesColorClassNamesMod.IColorClassNames = js.native
   val ColorPicker: js.Function1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsColorPickerColorPickerDotTypesMod.IColorPickerProps, 

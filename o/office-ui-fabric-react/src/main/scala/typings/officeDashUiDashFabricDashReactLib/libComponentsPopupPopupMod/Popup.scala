@@ -16,13 +16,10 @@ class Popup protected ()
   var _containsFocus: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   var _originalFocusedElement: js.Any = js.native
-  @JSName("_root")
-  var _root_Original: officeDashUiDashFabricDashReactLib.Anon_Component = js.native
+  var _root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
   /* private */ def _getScrollBar(): js.Any = js.native
   /* private */ def _onBlur(ev: js.Any): js.Any = js.native
   /* private */ def _onFocus(): js.Any = js.native
-  def _root(): scala.Unit = js.native
-  def _root(component: reactLib.HTMLDivElement): scala.Unit = js.native
   /* private */ def _updateScrollBarAsync(): js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MPopup(): scala.Unit = js.native

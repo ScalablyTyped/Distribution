@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sequelize"
-version := "4.27.10-dt-20181128Z-2f1ee7"
+version := "4.27.11-dt-20181211Z-5ccc07"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

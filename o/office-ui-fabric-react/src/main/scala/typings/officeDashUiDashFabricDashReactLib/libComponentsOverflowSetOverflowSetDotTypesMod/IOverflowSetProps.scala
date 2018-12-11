@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IOverflowSetProps
-  extends reactLib.reactMod.ReactNs.Props[
+  extends reactLib.reactMod.ReactNs.ClassAttributes[
       officeDashUiDashFabricDashReactLib.libComponentsOverflowSetOverflowSetDotBaseMod.OverflowSetBase
     ] {
   /**

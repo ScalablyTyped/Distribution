@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-publish"
-version := "20.38.2-7e5ab2"
+version := "20.38.3-931ddf"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.0-1456ae",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-b88fdf",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.6-460360",
-  "org.scalablytyped" %%% "builder-util" % "9.6.0-ef43f9",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.0.2-6396c4",
+  "org.scalablytyped" %%% "builder-util" % "9.6.0-87252e",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.1.0-6396c4",
   "org.scalablytyped" %%% "chalk" % "2.4.1-de9d5d",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-f388aa",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-c10888",

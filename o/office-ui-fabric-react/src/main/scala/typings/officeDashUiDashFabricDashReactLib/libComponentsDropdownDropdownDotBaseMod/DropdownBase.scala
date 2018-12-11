@@ -83,6 +83,8 @@ class DropdownBase protected ()
   /* private */ def _moveIndex(event: js.Any, stepValue: js.Any, index: js.Any, selectedIndex: js.Any): js.Any = js.native
   /* private */ def _onItemMouseEnter(item: js.Any, ev: js.Any): js.Any = js.native
   /* private */ def _onItemMouseMove(item: js.Any, ev: js.Any): js.Any = js.native
+  /** Wrap item list in a FocusZone */
+  /* private */ def _renderFocusableList(props: js.Any): js.Any = js.native
   /* private */ def _renderHeader(item: js.Any): js.Any = js.native
   /* private */ def _renderSeparator(item: js.Any): js.Any = js.native
   /**

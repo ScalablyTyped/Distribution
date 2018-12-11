@@ -8,42 +8,18 @@ import scala.scalajs.js.annotation._
 @JSImport("favicons", JSImport.Namespace)
 @js.native
 object faviconsModMembers extends js.Object {
-  val config: Configuration = js.native
+  /** You can programmatically access Favicons configuration (icon filenames, HTML, manifest files, etc) with this export */
+  val config: faviconsLib.faviconsMod.faviconsNs.Configuration = js.native
   /**
    * Generate favicons
    * @param source Source image(s)
    * @param configuration
    * @param callback
    */
-  def default(source: java.lang.String): scala.Unit = js.native
-  /**
-   * Generate favicons
-   * @param source Source image(s)
-   * @param configuration
-   * @param callback
-   */
-  def default(source: java.lang.String, callback: Callback): scala.Unit = js.native
-  def default(source: java.lang.String, configuration: stdLib.Partial[Configuration]): scala.Unit = js.native
-  def default(source: java.lang.String, configuration: stdLib.Partial[Configuration], callback: Callback): scala.Unit = js.native
-  /**
-   * Generate favicons
-   * @param source Source image(s)
-   * @param configuration
-   * @param callback
-   */
-  def default(source: js.Array[java.lang.String]): scala.Unit = js.native
-  /**
-   * Generate favicons
-   * @param source Source image(s)
-   * @param configuration
-   * @param callback
-   */
-  def default(source: js.Array[java.lang.String], callback: Callback): scala.Unit = js.native
-  def default(source: js.Array[java.lang.String], configuration: stdLib.Partial[Configuration]): scala.Unit = js.native
-  def default(
-    source: js.Array[java.lang.String],
-    configuration: stdLib.Partial[Configuration],
-    callback: Callback
+  def apply(source: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String]): js.Promise[faviconsLib.faviconsMod.faviconsNs.FavIconResponse] = js.native
+  def apply(
+    source: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String],
+    callback: faviconsLib.faviconsMod.faviconsNs.Callback
   ): scala.Unit = js.native
   /**
    * Generate favicons
@@ -51,15 +27,16 @@ object faviconsModMembers extends js.Object {
    * @param configuration
    * @param callback
    */
-  def default(source: nodeLib.Buffer): scala.Unit = js.native
-  /**
-   * Generate favicons
-   * @param source Source image(s)
-   * @param configuration
-   * @param callback
-   */
-  def default(source: nodeLib.Buffer, callback: Callback): scala.Unit = js.native
-  def default(source: nodeLib.Buffer, configuration: stdLib.Partial[Configuration]): scala.Unit = js.native
-  def default(source: nodeLib.Buffer, configuration: stdLib.Partial[Configuration], callback: Callback): scala.Unit = js.native
+  def apply(
+    source: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String],
+    configuration: stdLib.Partial[faviconsLib.faviconsMod.faviconsNs.Configuration]
+  ): js.Promise[faviconsLib.faviconsMod.faviconsNs.FavIconResponse] = js.native
+  def apply(
+    source: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String],
+    configuration: stdLib.Partial[faviconsLib.faviconsMod.faviconsNs.Configuration],
+    callback: faviconsLib.faviconsMod.faviconsNs.Callback
+  ): scala.Unit = js.native
+  def stream(): nodeLib.streamMod.Duplex = js.native
+  def stream(configuration: faviconsLib.faviconsMod.faviconsNs.Configuration): nodeLib.streamMod.Duplex = js.native
 }
 

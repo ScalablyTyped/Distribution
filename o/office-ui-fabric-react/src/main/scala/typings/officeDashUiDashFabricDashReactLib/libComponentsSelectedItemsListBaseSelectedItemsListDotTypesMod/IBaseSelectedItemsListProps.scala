@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IBaseSelectedItemsListProps[T]
-  extends reactLib.reactMod.ReactNs.Props[js.Any] {
+  extends reactLib.reactMod.ReactNs.ClassAttributes[js.Any] {
   /**
        * A callback on whether this item can be deleted
        */

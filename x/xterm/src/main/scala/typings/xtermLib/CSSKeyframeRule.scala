@@ -1,0 +1,18 @@
+package typings
+package xtermLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait CSSKeyframeRule extends CSSRule {
+  var keyText: java.lang.String
+  val style: CSSStyleDeclaration
+}
+
+@JSGlobal("CSSKeyframeRule")
+@js.native
+object CSSKeyframeRule
+  extends ScalablyTyped.runtime.Instantiable0[CSSKeyframeRule]
+

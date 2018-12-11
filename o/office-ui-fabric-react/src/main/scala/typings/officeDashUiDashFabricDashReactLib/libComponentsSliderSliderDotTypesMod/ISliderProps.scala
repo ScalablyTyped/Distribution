@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ISliderProps
-  extends reactLib.reactMod.ReactNs.Props[
+  extends reactLib.reactMod.ReactNs.ClassAttributes[
       officeDashUiDashFabricDashReactLib.libComponentsSliderSliderDotBaseMod.SliderBase
     ] {
   /**

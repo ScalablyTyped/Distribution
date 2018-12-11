@@ -5,16 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
+// passport--bnet accepts any options that passport-oauth2 accepts, but add the option region and makes authorizationURL and tokenURL optional
+/* RemoveDifficultInheritance: 
+- Lifted 1 members from Set(std.Partial) */ 
 trait _BaseBnetOptions extends js.Object {
-  var authorizationURL: js.UndefOr[java.lang.String] = js.undefined
-  var callbackURL: js.UndefOr[java.lang.String] = js.undefined
   var clientID: java.lang.String
   var clientSecret: java.lang.String
-  var customHeaders: js.UndefOr[js.Object] = js.undefined
   var region: js.UndefOr[java.lang.String] = js.undefined
-  var scope: js.UndefOr[java.lang.String] = js.undefined
-  var scopeSeparator: js.UndefOr[java.lang.String] = js.undefined
-  var tokenURL: js.UndefOr[java.lang.String] = js.undefined
 }
 

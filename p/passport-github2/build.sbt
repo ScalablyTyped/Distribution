@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-github2"
-version := "1.2-dt-20181104Z-6a4432"
+version := "1.2-dt-20181211Z-a2f894"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
   "org.scalablytyped" %%% "oauth" % "0.9-dt-20181018Z-3f257e",
   "org.scalablytyped" %%% "passport" % "0.4-dt-20181104Z-cb1abd",
-  "org.scalablytyped" %%% "passport-oauth2" % "1.4-dt-20181018Z-453e73",
+  "org.scalablytyped" %%% "passport-oauth2" % "1.4-dt-20181211Z-31eb2e",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181208Z-85fa0c",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-8ad61a",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")

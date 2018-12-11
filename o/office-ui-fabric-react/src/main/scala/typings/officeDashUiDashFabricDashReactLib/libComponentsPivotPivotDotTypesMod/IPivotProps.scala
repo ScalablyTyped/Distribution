@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactLib.reactMod.ReactNs.Props because Would inherit conflicting mutable fields List(children))*/
 
 trait IPivotProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.ClassAttributes[officeDashUiDashFabricDashReactLib.libComponentsPivotPivotDotBaseMod.PivotBase]
+     with reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
   /**
        * Optional callback to access the IPivot interface. Use this instead of ref for accessing
        * the public methods and properties of the component.

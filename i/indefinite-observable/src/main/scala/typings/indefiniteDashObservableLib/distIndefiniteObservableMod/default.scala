@@ -17,9 +17,5 @@ class default[T] protected () extends IndefiniteObservable[T] {
        * source.
        */
   def this(connect: indefiniteDashObservableLib.distTypesMod.Connect[T]) = this()
-  /* CompleteClass */
-  override var _connect: js.Any = js.native
-  /* CompleteClass */
-  override def subscribe(observerOrNext: indefiniteDashObservableLib.distTypesMod.ObserverOrNext[T]): indefiniteDashObservableLib.distTypesMod.Subscription = js.native
 }
 

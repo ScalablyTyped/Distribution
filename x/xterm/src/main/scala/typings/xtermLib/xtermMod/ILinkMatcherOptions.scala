@@ -13,7 +13,7 @@ trait ILinkMatcherOptions extends js.Object {
        */
   var leaveCallback: js.UndefOr[
     js.Function2[
-      /* event */ stdLib.MouseEvent, 
+      /* event */ xtermLib.MouseEvent, 
       /* uri */ java.lang.String, 
       scala.Boolean | scala.Unit
     ]
@@ -34,7 +34,7 @@ trait ILinkMatcherOptions extends js.Object {
        */
   var tooltipCallback: js.UndefOr[
     js.Function2[
-      /* event */ stdLib.MouseEvent, 
+      /* event */ xtermLib.MouseEvent, 
       /* uri */ java.lang.String, 
       scala.Boolean | scala.Unit
     ]
@@ -57,7 +57,7 @@ trait ILinkMatcherOptions extends js.Object {
        * mouse event will continue propagation (eg. double click to select word).
        */
   var willLinkActivate: js.UndefOr[
-    js.Function2[/* event */ stdLib.MouseEvent, /* uri */ java.lang.String, scala.Boolean]
+    js.Function2[/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String, scala.Boolean]
   ] = js.undefined
 }
 

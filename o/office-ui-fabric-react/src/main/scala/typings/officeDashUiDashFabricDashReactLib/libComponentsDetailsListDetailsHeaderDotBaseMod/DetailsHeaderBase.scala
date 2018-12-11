@@ -88,7 +88,7 @@ class DetailsHeaderBase protected ()
   /* private */ def _resetDropHints(): js.Any = js.native
   /* private */ def _updateDragInfo(props: js.Any): js.Any = js.native
   /* private */ def _updateDragInfo(props: js.Any, event: js.Any): js.Any = js.native
-  /* private */ def _updateDropHintElement(element: js.Any, property: js.Any): js.Any = js.native
+  /* private */ def _updateDropHintElement(element: js.Any, displayProperty: js.Any): js.Any = js.native
   /* private */ def _updateDroppingState(newValue: js.Any, event: js.Any): js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MDetailsHeaderBase(): scala.Unit = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-ui__lab"
-version := "3.0.0-alpha.25-eb0218"
+version := "3.0.0-alpha.25-e1556f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,12 +11,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "debounce" % "1.2-dt-20181203Z-06d923",
   "org.scalablytyped" %%% "deepmerge" % "3.0.0-b7a925",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-8c5da3",
-  "org.scalablytyped" %%% "indefinite-observable" % "1.0.2-bf8ba6",
+  "org.scalablytyped" %%% "indefinite-observable" % "2.0.0-352386",
   "org.scalablytyped" %%% "is-plain-object" % "2.0.4-4e2273",
   "org.scalablytyped" %%% "isobject" % "3.0.1-391574",
-  "org.scalablytyped" %%% "jss" % "9.5-dt-20181018Z-468888",
+  "org.scalablytyped" %%% "jss" % "9.5-dt-20181018Z-c8e3bd",
   "org.scalablytyped" %%% "keycode" % "2.2.0-9acf8a",
-  "org.scalablytyped" %%% "material-ui__core" % "3.6.2-833703",
+  "org.scalablytyped" %%% "material-ui__core" % "3.6.2-5fc55c",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
   "org.scalablytyped" %%% "normalize-scroll-left" % "0.1.2-7fb1bc",
   "org.scalablytyped" %%% "popper_dot_js" % "1.14.6-4cdde6",
