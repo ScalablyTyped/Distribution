@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libComponentsTextFieldModMembers extends js.Object {
   val DEFAULT_MASK_CHAR: /* _ */ java.lang.String = js.native
-  val TextField: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
+  def TextField(
+    props: officeDashUiDashFabricDashReactLib.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

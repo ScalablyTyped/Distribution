@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "connect-mongo"
-version := "0.0-unknown-dt-20180910Z-7689fa"
+version := "0.0-unknown-dt-20181211Z-d12059"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object libUtilsUtilsModMembers extends js.Object {
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
   val OBFUSCATED_ERROR: /* An invariant failed, however the error is obfuscated because this is an production build. */ java.lang.String = js.native
-  val noop: js.Function0[scala.Unit] = js.native
   def addHiddenFinalProp(`object`: js.Any, propName: stdLib.PropertyKey, value: js.Any): scala.Unit = js.native
   def addHiddenProp(`object`: js.Any, propName: stdLib.PropertyKey, value: js.Any): scala.Unit = js.native
   def assertPropertyConfigurable(`object`: js.Any, prop: stdLib.PropertyKey): scala.Unit = js.native
@@ -41,6 +40,7 @@ object libUtilsUtilsModMembers extends js.Object {
   def isPlainObject(value: js.Any): scala.Boolean = js.native
   def isPropertyConfigurable(`object`: js.Any, prop: stdLib.PropertyKey): scala.Boolean = js.native
   def makeNonEnumerable(`object`: js.Any, propNames: js.Array[stdLib.PropertyKey]): scala.Unit = js.native
+  def noop(): scala.Unit = js.native
   def once(func: Lambda): Lambda = js.native
   def toPrimitive(value: js.Any): js.Any = js.native
   def unique[T](list: js.Array[T]): js.Array[T] = js.native

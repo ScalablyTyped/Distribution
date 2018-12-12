@@ -10,11 +10,6 @@ import scala.scalajs.js.annotation._
 object apolloDashServerDashCoreModMembers extends js.Object {
   val GraphQLUpload: graphqlLib.graphqlMod.GraphQLScalarType = js.native
   val defaultPlaygroundOptions: apolloDashServerDashCoreLib.Anon_Settings = js.native
-  val gql: js.Function2[
-    /* template */ stdLib.TemplateStringsArray | java.lang.String, 
-    /* repeated */js.Any, 
-    graphqlLib.languageAstMod.DocumentNode
-  ] = js.native
   def convertNodeHttpToRequest(req: nodeLib.httpMod.IncomingMessage): apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request = js.native
   def createPlaygroundOptions(): js.UndefOr[
     atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.RenderPageOptions
@@ -24,6 +19,8 @@ object apolloDashServerDashCoreModMembers extends js.Object {
   ] = js.native
   def formatApolloErrors(errors: js.Array[stdLib.Error]): js.Array[apolloDashServerDashErrorsLib.apolloDashServerDashErrorsMod.ApolloError] = js.native
   def formatApolloErrors(errors: js.Array[stdLib.Error], options: apolloDashServerDashErrorsLib.Anon_Formatter): js.Array[apolloDashServerDashErrorsLib.apolloDashServerDashErrorsMod.ApolloError] = js.native
+  def gql(template: java.lang.String, substitutions: js.Any*): graphqlLib.languageAstMod.DocumentNode = js.native
+  def gql(template: stdLib.TemplateStringsArray, substitutions: js.Any*): graphqlLib.languageAstMod.DocumentNode = js.native
   def resolveGraphqlOptions(
     options: apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _],
     args: js.Any*

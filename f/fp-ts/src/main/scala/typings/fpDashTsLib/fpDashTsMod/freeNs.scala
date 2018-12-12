@@ -21,11 +21,6 @@ object freeNs extends js.Object {
   }
   
   val URI: /* Free */ java.lang.String = js.native
-  val liftF: js.Function1[
-    /* fa */ fpDashTsLib.libHKTMod.HKT[js.Any, js.Any], 
-    fpDashTsLib.libFreeMod.Free[js.Any, js.Any]
-  ] = js.native
-  val of: js.Function1[/* a */ js.Any, fpDashTsLib.libFreeMod.Free[js.Any, js.Any]] = js.native
   def foldFree[M](M: fpDashTsLib.libMonadMod.Monad[M]): js.Function2[
     /* nt */ js.Function1[/* fa */ fpDashTsLib.libHKTMod.HKT[_, _], fpDashTsLib.libHKTMod.HKT[M, _]], 
     /* fa */ fpDashTsLib.libFreeMod.Free[_, _], 
@@ -60,5 +55,7 @@ object freeNs extends js.Object {
   ): js.Function1[/* fa */ fpDashTsLib.libFreeMod.Free[F, _], fpDashTsLib.libFreeMod.Free[G, _]] = js.native
   @JSName("hoistFree")
   def hoistFree_FURISGURIS[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDashTsLib.libHKTMod.URIS */](nt: js.Function1[/* fa */ fpDashTsLib.libHKTMod.Type[F, _], fpDashTsLib.libHKTMod.Type[G, _]]): js.Function1[/* fa */ fpDashTsLib.libFreeMod.Free[F, _], fpDashTsLib.libFreeMod.Free[G, _]] = js.native
+  def liftF[F, A](fa: fpDashTsLib.libHKTMod.HKT[F, A]): fpDashTsLib.libFreeMod.Free[F, A] = js.native
+  def of[F, A](a: A): fpDashTsLib.libFreeMod.Free[F, A] = js.native
 }
 

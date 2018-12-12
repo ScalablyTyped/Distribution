@@ -15,23 +15,16 @@ object taskNs extends js.Object {
   }
   
   val URI: /* Task */ java.lang.String = js.native
-  val delay: js.Function2[/* millis */ scala.Double, /* a */ js.Any, fpDashTsLib.libTaskMod.Task[js.Any]] = js.native
-  val fromIO: js.Function1[/* io */ fpDashTsLib.libIOMod.IO[js.Any], fpDashTsLib.libTaskMod.Task[js.Any]] = js.native
-  val getMonoid: js.Function1[
-    /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libTaskMod.Task[js.Any]]
-  ] = js.native
-  val getRaceMonoid: js.Function0[fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libTaskMod.Task[js.Any]]] = js.native
-  val getSemigroup: js.Function1[
-    /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
-    fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTaskMod.Task[js.Any]]
-  ] = js.native
   val task: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[fpDashTsLib.libTaskMod.URI] = js.native
   val taskSeq: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[fpDashTsLib.libTaskMod.URI] = js.native
-  val tryCatch: js.Function2[
-    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Promise[js.Any]], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, js.Any], 
-    fpDashTsLib.libTaskMod.Task[fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
-  ] = js.native
+  def delay[A](millis: scala.Double, a: A): fpDashTsLib.libTaskMod.Task[A] = js.native
+  def fromIO[A](io: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libTaskMod.Task[A] = js.native
+  def getMonoid[A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libTaskMod.Task[A]] = js.native
+  def getRaceMonoid[A](): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libTaskMod.Task[A]] = js.native
+  def getSemigroup[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTaskMod.Task[A]] = js.native
+  def tryCatch[L, A](
+    f: fpDashTsLib.libFunctionMod.Lazy[js.Promise[A]],
+    onrejected: js.Function1[/* reason */ js.Any, L]
+  ): fpDashTsLib.libTaskMod.Task[fpDashTsLib.libEitherMod.Either[L, A]] = js.native
 }
 

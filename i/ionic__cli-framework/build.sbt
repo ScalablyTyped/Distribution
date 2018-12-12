@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "ionic__cli-framework"
-version := "1.5.0-e7e397"
+version := "1.5.0-d4722c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-ed6428",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-de9d5d",
+  "org.scalablytyped" %%% "chalk" % "2.4.1-76fe8f",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-f388aa",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-c10888",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-7b17da",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-404a30",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-eb50b6",
   "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180910Z-d4d2df",
-  "org.scalablytyped" %%% "ionic__utils-fs" % "0.0.5-1e75ac",
+  "org.scalablytyped" %%% "ionic__utils-fs" % "0.0.5-71f1d7",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-93340d",
   "org.scalablytyped" %%% "log-update" % "2.0-dt-20180910Z-4306d9",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-45414c",

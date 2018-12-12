@@ -10,15 +10,7 @@ import scala.scalajs.js.annotation._
 object randomNs extends js.Object {
   val random: fpDashTsLib.libIOMod.IO[scala.Double] = js.native
   val randomBool: fpDashTsLib.libIOMod.IO[scala.Boolean] = js.native
-  val randomInt: js.Function2[
-    /* low */ scala.Double, 
-    /* high */ scala.Double, 
-    fpDashTsLib.libIOMod.IO[scala.Double]
-  ] = js.native
-  val randomRange: js.Function2[
-    /* min */ scala.Double, 
-    /* max */ scala.Double, 
-    fpDashTsLib.libIOMod.IO[scala.Double]
-  ] = js.native
+  def randomInt(low: scala.Double, high: scala.Double): fpDashTsLib.libIOMod.IO[scala.Double] = js.native
+  def randomRange(min: scala.Double, max: scala.Double): fpDashTsLib.libIOMod.IO[scala.Double] = js.native
 }
 

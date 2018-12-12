@@ -8,11 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("striptags", JSImport.Namespace)
 @js.native
 object striptagsModMembers extends js.Object {
-  val init_streaming_mode: js.Function2[
-    /* allowedTags */ js.UndefOr[java.lang.String | js.Array[java.lang.String]], 
-    /* tagReplacement */ js.UndefOr[java.lang.String], 
-    js.Function1[/* html */ java.lang.String, java.lang.String]
-  ] = js.native
   /**
    * Creates an array of elements split into groups the length of size. If collection can’t be split evenly, the
    * final chunk will be the remaining elements.
@@ -47,5 +42,10 @@ object striptagsModMembers extends js.Object {
     allowedTags: java.lang.String | js.Array[java.lang.String],
     tagReplacement: java.lang.String
   ): java.lang.String = js.native
+  def init_streaming_mode(): js.Function1[/* html */ java.lang.String, java.lang.String] = js.native
+  def init_streaming_mode(allowedTags: java.lang.String): js.Function1[/* html */ java.lang.String, java.lang.String] = js.native
+  def init_streaming_mode(allowedTags: java.lang.String, tagReplacement: java.lang.String): js.Function1[/* html */ java.lang.String, java.lang.String] = js.native
+  def init_streaming_mode(allowedTags: js.Array[java.lang.String]): js.Function1[/* html */ java.lang.String, java.lang.String] = js.native
+  def init_streaming_mode(allowedTags: js.Array[java.lang.String], tagReplacement: java.lang.String): js.Function1[/* html */ java.lang.String, java.lang.String] = js.native
 }
 

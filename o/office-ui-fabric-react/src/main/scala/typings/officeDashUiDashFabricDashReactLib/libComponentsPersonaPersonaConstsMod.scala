@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Persona/PersonaConsts", JSImport.Namespace)
 @js.native
 object libComponentsPersonaPersonaConstsMod extends js.Object {
-  val presenceBoolean: js.Function1[
-    /* presence */ officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaPresence, 
-    officeDashUiDashFabricDashReactLib.Anon_IsBusy
-  ] = js.native
-  val sizeBoolean: js.Function1[
-    /* size */ officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize, 
-    officeDashUiDashFabricDashReactLib.Anon_IsSize48
-  ] = js.native
+  def presenceBoolean(
+    presence: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaPresence
+  ): officeDashUiDashFabricDashReactLib.Anon_IsBusy = js.native
+  def sizeBoolean(size: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize): officeDashUiDashFabricDashReactLib.Anon_IsSize48 = js.native
   @JSName("personaPresenceSize")
   @js.native
   object personaPresenceSizeNs extends js.Object {

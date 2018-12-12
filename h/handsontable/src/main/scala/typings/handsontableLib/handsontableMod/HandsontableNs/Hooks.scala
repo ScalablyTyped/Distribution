@@ -15,7 +15,7 @@ trait Hooks extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var afterBeginEdting: js.UndefOr[js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit]] = js.undefined
+  var afterBeginEditing: js.UndefOr[js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit]] = js.undefined
   var afterCellMetaReset: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterChange: js.UndefOr[
     js.Function2[
@@ -73,9 +73,28 @@ trait Hooks extends js.Object {
   var afterDestroy: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterDetachChild: js.UndefOr[js.Function2[/* parent */ js.Object, /* element */ js.Object, scala.Unit]] = js.undefined
   var afterDocumentKeyDown: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
+  var afterDrawSelection: js.UndefOr[
+    js.Function4[
+      /* currentRow */ scala.Double, 
+      /* currentColumn */ scala.Double, 
+      /* cornersOfSelection */ js.Array[scala.Double], 
+      /* layerLevel */ scala.Double | scala.Unit, 
+      java.lang.String | scala.Unit
+    ]
+  ] = js.undefined
   var afterDropdownMenuDefaultOptions: js.UndefOr[js.Function1[/* predefinedItems */ js.Array[_], scala.Unit]] = js.undefined
-  var afterDropdownMenuHide: js.UndefOr[js.Function1[/* instance */ js.Any, scala.Unit]] = js.undefined
-  var afterDropdownMenuShow: js.UndefOr[js.Function1[/* instance */ js.Any, scala.Unit]] = js.undefined
+  var afterDropdownMenuHide: js.UndefOr[
+    js.Function1[
+      /* instance */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu, 
+      scala.Unit
+    ]
+  ] = js.undefined
+  var afterDropdownMenuShow: js.UndefOr[
+    js.Function1[
+      /* instance */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var afterFilter: js.UndefOr[js.Function1[/* formulasStack */ js.Array[_], scala.Unit]] = js.undefined
   var afterGetCellMeta: js.UndefOr[
     js.Function3[
@@ -90,7 +109,17 @@ trait Hooks extends js.Object {
   var afterGetRowHeader: js.UndefOr[js.Function2[/* row */ scala.Double, /* TH */ stdLib.Element, scala.Unit]] = js.undefined
   var afterGetRowHeaderRenderers: js.UndefOr[js.Function1[/* array */ js.Array[_], scala.Unit]] = js.undefined
   var afterInit: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var afterLanguageChange: js.UndefOr[js.Function1[/* languageCode */ java.lang.String, scala.Unit]] = js.undefined
+  var afterListen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterLoadData: js.UndefOr[js.Function1[/* firstTime */ scala.Boolean, scala.Unit]] = js.undefined
+  var afterMergeCells: js.UndefOr[
+    js.Function3[
+      /* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
+      /* mergeParent */ js.Object, 
+      /* auto */ scala.Boolean, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var afterModifyTransformEnd: js.UndefOr[
     js.Function3[
       /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
@@ -109,22 +138,59 @@ trait Hooks extends js.Object {
   ] = js.undefined
   var afterMomentumScroll: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterOnCellContextMenu: js.UndefOr[
-    js.Function3[/* event */ js.Object, /* coords */ js.Object, /* TD */ stdLib.Element, scala.Unit]
+    js.Function3[
+      /* event */ stdLib.MouseEvent, 
+      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
+      /* TD */ stdLib.Element, 
+      scala.Unit
+    ]
   ] = js.undefined
-  var afterOnCellCornerDblClick: js.UndefOr[js.Function1[/* event */ js.Object, scala.Unit]] = js.undefined
-  var afterOnCellCornerMouseDown: js.UndefOr[js.Function1[/* event */ js.Object, scala.Unit]] = js.undefined
+  var afterOnCellCornerDblClick: js.UndefOr[js.Function1[/* event */ stdLib.MouseEvent, scala.Unit]] = js.undefined
+  var afterOnCellCornerMouseDown: js.UndefOr[js.Function1[/* event */ stdLib.MouseEvent, scala.Unit]] = js.undefined
   var afterOnCellMouseDown: js.UndefOr[
-    js.Function3[/* event */ js.Object, /* coords */ js.Object, /* TD */ stdLib.Element, scala.Unit]
+    js.Function3[
+      /* event */ stdLib.MouseEvent, 
+      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
+      /* TD */ stdLib.Element, 
+      scala.Unit
+    ]
   ] = js.undefined
   var afterOnCellMouseOut: js.UndefOr[
-    js.Function3[/* event */ js.Object, /* coords */ js.Object, /* TD */ stdLib.Element, scala.Unit]
+    js.Function3[
+      /* event */ stdLib.MouseEvent, 
+      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
+      /* TD */ stdLib.Element, 
+      scala.Unit
+    ]
   ] = js.undefined
   var afterOnCellMouseOver: js.UndefOr[
-    js.Function3[/* event */ js.Object, /* coords */ js.Object, /* TD */ stdLib.Element, scala.Unit]
+    js.Function3[
+      /* event */ stdLib.MouseEvent, 
+      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
+      /* TD */ stdLib.Element, 
+      scala.Unit
+    ]
+  ] = js.undefined
+  var afterOnCellMouseUp: js.UndefOr[
+    js.Function3[
+      /* event */ stdLib.MouseEvent, 
+      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
+      /* TD */ stdLib.Element, 
+      scala.Unit
+    ]
   ] = js.undefined
   var afterPaste: js.UndefOr[js.Function2[/* data */ js.Array[_], /* coords */ js.Array[_], scala.Unit]] = js.undefined
   var afterPluginsInitialized: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterRedo: js.UndefOr[js.Function1[/* action */ js.Object, scala.Unit]] = js.undefined
+  var afterRemoveCellMeta: js.UndefOr[
+    js.Function4[
+      /* row */ scala.Double, 
+      /* column */ scala.Double, 
+      /* key */ java.lang.String, 
+      /* value */ js.Any, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var afterRemoveCol: js.UndefOr[js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit]] = js.undefined
   var afterRemoveRow: js.UndefOr[js.Function2[/* index */ scala.Double, /* amount */ scala.Double, scala.Unit]] = js.undefined
   var afterRender: js.UndefOr[js.Function1[/* isForced */ scala.Boolean, scala.Unit]] = js.undefined
@@ -209,6 +275,14 @@ trait Hooks extends js.Object {
   ] = js.undefined
   var afterTrimRow: js.UndefOr[js.Function1[/* rows */ js.Array[_], scala.Unit]] = js.undefined
   var afterUndo: js.UndefOr[js.Function1[/* action */ js.Object, scala.Unit]] = js.undefined
+  var afterUnlisten: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var afterUnmergeCells: js.UndefOr[
+    js.Function2[
+      /* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
+      /* auto */ scala.Boolean, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var afterUntrimRow: js.UndefOr[js.Function1[/* rows */ js.Array[_], scala.Unit]] = js.undefined
   var afterUpdateSettings: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterValidate: js.UndefOr[
@@ -310,7 +384,12 @@ trait Hooks extends js.Object {
     js.Function2[/* corners */ js.Array[_], /* borderClassName */ java.lang.String, scala.Unit]
   ] = js.undefined
   var beforeDropdownMenuSetItems: js.UndefOr[js.Function1[/* menuItems */ js.Array[_], scala.Unit]] = js.undefined
-  var beforeDropdownMenuShow: js.UndefOr[js.Function1[/* instance */ js.Any, scala.Unit]] = js.undefined
+  var beforeDropdownMenuShow: js.UndefOr[
+    js.Function1[
+      /* instance */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var beforeFilter: js.UndefOr[js.Function1[/* formulasStack */ js.Array[_], scala.Unit]] = js.undefined
   var beforeGetCellMeta: js.UndefOr[
     js.Function3[
@@ -323,6 +402,14 @@ trait Hooks extends js.Object {
   var beforeInit: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var beforeInitWalkontable: js.UndefOr[js.Function1[/* walkontableConfig */ js.Object, scala.Unit]] = js.undefined
   var beforeKeyDown: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
+  var beforeLanguageChange: js.UndefOr[js.Function1[/* languageCode */ java.lang.String, scala.Unit]] = js.undefined
+  var beforeMergeCells: js.UndefOr[
+    js.Function2[
+      /* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
+      /* auto */ scala.Boolean, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var beforeOnCellContextMenu: js.UndefOr[
     js.Function3[/* event */ js.Object, /* coords */ js.Object, /* TD */ stdLib.Element, scala.Unit]
   ] = js.undefined
@@ -331,7 +418,7 @@ trait Hooks extends js.Object {
       /* event */ stdLib.Event, 
       /* coords */ js.Object, 
       /* TD */ stdLib.Element, 
-      /* blockCalculations */ js.Object, 
+      /* controller */ js.Object, 
       scala.Unit
     ]
   ] = js.undefined
@@ -348,12 +435,31 @@ trait Hooks extends js.Object {
       /* event */ stdLib.Event, 
       /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
       /* TD */ stdLib.Element, 
-      /* blockCalculations */ js.Object, 
+      /* controller */ js.Object, 
+      scala.Unit
+    ]
+  ] = js.undefined
+  var beforeOnCellMouseUp: js.UndefOr[
+    js.Function4[
+      /* event */ stdLib.Event, 
+      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
+      /* TD */ stdLib.Element, 
+      /* controller */ js.Object, 
       scala.Unit
     ]
   ] = js.undefined
   var beforePaste: js.UndefOr[js.Function2[/* data */ js.Array[_], /* coords */ js.Array[_], _]] = js.undefined
   var beforeRedo: js.UndefOr[js.Function1[/* action */ js.Object, scala.Unit]] = js.undefined
+  var beforeRemoveCellClassNames: js.UndefOr[js.Function0[js.Array[java.lang.String] | scala.Unit]] = js.undefined
+  var beforeRemoveCellMeta: js.UndefOr[
+    js.Function4[
+      /* row */ scala.Double, 
+      /* column */ scala.Double, 
+      /* key */ java.lang.String, 
+      /* value */ js.Any, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var beforeRemoveCol: js.UndefOr[
     js.Function3[
       /* index */ scala.Double, 
@@ -407,11 +513,24 @@ trait Hooks extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
+  var beforeSetRangeStartOnly: js.UndefOr[
+    js.Function1[
+      /* coords */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var beforeStretchingColumnWidth: js.UndefOr[
     js.Function2[/* stretchedWidth */ scala.Double, /* column */ scala.Double, scala.Unit]
   ] = js.undefined
   var beforeTouchScroll: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var beforeUndo: js.UndefOr[js.Function1[/* action */ js.Object, scala.Unit]] = js.undefined
+  var beforeUnmergeCells: js.UndefOr[
+    js.Function2[
+      /* cellRange */ handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
+      /* auto */ scala.Boolean, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var beforeValidate: js.UndefOr[
     js.Function4[
       /* value */ js.Any, 
@@ -434,6 +553,7 @@ trait Hooks extends js.Object {
   var modifyCol: js.UndefOr[js.Function1[/* col */ scala.Double, scala.Unit]] = js.undefined
   var modifyColHeader: js.UndefOr[js.Function1[/* column */ scala.Double, scala.Unit]] = js.undefined
   var modifyColWidth: js.UndefOr[js.Function2[/* width */ scala.Double, /* col */ scala.Double, scala.Unit]] = js.undefined
+  var modifyColumnHeaderHeight: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var modifyCopyableRange: js.UndefOr[js.Function1[/* copyableRanges */ js.Array[_], scala.Unit]] = js.undefined
   var modifyData: js.UndefOr[
     js.Function4[
@@ -444,7 +564,16 @@ trait Hooks extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
+  var modifyGetCellCoords: js.UndefOr[
+    js.Function3[
+      /* row */ scala.Double, 
+      /* column */ scala.Double, 
+      /* topmost */ scala.Boolean, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var modifyRow: js.UndefOr[js.Function1[/* row */ scala.Double, scala.Unit]] = js.undefined
+  var modifyRowData: js.UndefOr[js.Function1[/* row */ scala.Double, scala.Unit]] = js.undefined
   var modifyRowHeader: js.UndefOr[js.Function1[/* row */ scala.Double, scala.Unit]] = js.undefined
   var modifyRowHeaderWidth: js.UndefOr[js.Function1[/* rowHeaderWidth */ scala.Double, scala.Unit]] = js.undefined
   var modifyRowHeight: js.UndefOr[js.Function2[/* height */ scala.Double, /* row */ scala.Double, scala.Unit]] = js.undefined

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("zipkin", JSImport.Namespace)
 @js.native
 object zipkinModMembers extends js.Object {
-  val createNoopTracer: js.Function0[scala.Unit] = js.native
-  val randomTraceId: js.Function0[java.lang.String] = js.native
+  def createNoopTracer(): scala.Unit = js.native
+  def randomTraceId(): java.lang.String = js.native
 }
 

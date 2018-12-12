@@ -175,6 +175,47 @@ trait MediaStore
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Removes an object lifecycle policy from a container.
+     */
+  def deleteLifecyclePolicy(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an object lifecycle policy from a container.
+     */
+  def deleteLifecyclePolicy(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an object lifecycle policy from a container.
+     */
+  def deleteLifecyclePolicy(params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an object lifecycle policy from a container.
+     */
+  def deleteLifecyclePolicy(
+    params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Retrieves the properties of the requested container. This request is commonly used to retrieve the endpoint of a container. An endpoint is a value assigned by the service when a new container is created. A container's endpoint does not change after it has been assigned. The DescribeContainer request returns a single Container object based on ContainerName. To return all Container objects that are associated with a specified AWS account, use ListContainers.
      */
   def describeContainer(): awsDashSdkLib.libRequestMod.Request[
@@ -298,6 +339,47 @@ trait MediaStore
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Retrieves the object lifecycle policy that is assigned to a container.
+     */
+  def getLifecyclePolicy(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.GetLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the object lifecycle policy that is assigned to a container.
+     */
+  def getLifecyclePolicy(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.GetLifecyclePolicyOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.GetLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the object lifecycle policy that is assigned to a container.
+     */
+  def getLifecyclePolicy(params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.GetLifecyclePolicyInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.GetLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the object lifecycle policy that is assigned to a container.
+     */
+  def getLifecyclePolicy(
+    params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.GetLifecyclePolicyInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.GetLifecyclePolicyOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.GetLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Lists the properties of all containers in AWS Elemental MediaStore.  You can query to receive all the containers in one response. Or you can include the MaxResults parameter to receive a limited number of containers in each response. In this case, the response includes a token. To get the next set of containers, send the command again, this time with the NextToken parameter (with the returned token as its value). The next set of responses appears, with a token if there are still more containers to receive.  See also DescribeContainer, which gets the properties of one container. 
      */
   def listContainers(): awsDashSdkLib.libRequestMod.Request[
@@ -418,6 +500,47 @@ trait MediaStore
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutCorsPolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+     */
+  def putLifecyclePolicy(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+     */
+  def putLifecyclePolicy(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+     */
+  def putLifecyclePolicy(params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+     */
+  def putLifecyclePolicy(
+    params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
 }

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-css-transition-replace"
-version := "2.1-dt-20180910Z-c64ea8"
+version := "2.1-dt-20180910Z-d725ff"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-c640d3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-df71a8",
-  "org.scalablytyped" %%% "react-addons-css-transition-group" % "15.0-dt-20180910Z-db88f9",
-  "org.scalablytyped" %%% "react-addons-transition-group" % "15.0-dt-20180910Z-dddcf0",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181212Z-14da82",
+  "org.scalablytyped" %%% "react-addons-css-transition-group" % "15.0-dt-20180910Z-075689",
+  "org.scalablytyped" %%% "react-addons-transition-group" % "15.0-dt-20180910Z-11897e",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

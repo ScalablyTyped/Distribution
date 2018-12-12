@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object databaseModMembers extends js.Object {
   val ServerValue: atFirebaseDatabaseLib.Anon_TIMESTAMP = js.native
-  val enableLogging: js.Function2[
-    /* logger_ */ js.UndefOr[scala.Boolean | (js.Function1[/* a */ java.lang.String, scala.Unit])], 
-    /* persistent */ js.UndefOr[scala.Boolean], 
-    scala.Unit
-  ] = js.native
+  def enableLogging(): scala.Unit = js.native
+  def enableLogging(`logger_`: js.Function1[/* a */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def enableLogging(`logger_`: js.Function1[/* a */ java.lang.String, scala.Unit], persistent: scala.Boolean): scala.Unit = js.native
+  def enableLogging(`logger_`: scala.Boolean): scala.Unit = js.native
+  def enableLogging(`logger_`: scala.Boolean, persistent: scala.Boolean): scala.Unit = js.native
   def registerDatabase(instance: atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseNamespace): scala.Unit = js.native
 }
 

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("vue-resource", JSImport.Namespace)
 @js.native
-object vueDashResourceMod
-  extends ScalablyTyped.runtime.TopLevel[js.Function1[/* vue */ vueDashResourceLib.vuejsNs.VueStatic, scala.Unit]]
+object vueDashResourceMod extends js.Object {
+  def apply(vue: vueDashResourceLib.vuejsNs.VueStatic): scala.Unit = js.native
+}
 

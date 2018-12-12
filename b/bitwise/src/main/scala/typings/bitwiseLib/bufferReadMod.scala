@@ -8,11 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("bitwise/buffer/read", JSImport.Namespace)
 @js.native
 object bufferReadMod extends js.Object {
-  val default: js.Function3[
-    /* buffer */ nodeLib.Buffer, 
-    /* offset */ js.UndefOr[scala.Double], 
-    /* length */ js.UndefOr[scala.Double], 
-    js.Array[js.Any]
-  ] = js.native
+  def default(buffer: nodeLib.Buffer): js.Array[_] = js.native
+  def default(buffer: nodeLib.Buffer, offset: scala.Double): js.Array[_] = js.native
+  def default(buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Array[_] = js.native
 }
 

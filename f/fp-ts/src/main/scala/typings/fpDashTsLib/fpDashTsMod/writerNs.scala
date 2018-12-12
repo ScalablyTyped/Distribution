@@ -15,29 +15,12 @@ object writerNs extends js.Object {
   }
   
   val URI: /* Writer */ java.lang.String = js.native
-  val censor: js.Function2[
-    /* fa */ fpDashTsLib.libWriterMod.Writer[js.Any, js.Any], 
-    /* f */ js.Function1[/* w */ js.Any, js.Any], 
-    fpDashTsLib.libWriterMod.Writer[js.Any, js.Any]
-  ] = js.native
-  val getMonad: js.Function1[
-    /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-    fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Writer, js.Any]
-  ] = js.native
-  val listen: js.Function1[
-    /* fa */ fpDashTsLib.libWriterMod.Writer[js.Any, js.Any], 
-    fpDashTsLib.libWriterMod.Writer[js.Any, js.Tuple2[js.Any, js.Any]]
-  ] = js.native
-  val listens: js.Function2[
-    /* fa */ fpDashTsLib.libWriterMod.Writer[js.Any, js.Any], 
-    /* f */ js.Function1[/* w */ js.Any, js.Any], 
-    fpDashTsLib.libWriterMod.Writer[js.Any, js.Tuple2[js.Any, js.Any]]
-  ] = js.native
-  val pass: js.Function1[
-    /* fa */ fpDashTsLib.libWriterMod.Writer[js.Any, js.Tuple2[js.Any, js.Function1[/* w */ js.Any, js.Any]]], 
-    fpDashTsLib.libWriterMod.Writer[js.Any, js.Any]
-  ] = js.native
-  val tell: js.Function1[/* w */ js.Any, fpDashTsLib.libWriterMod.Writer[js.Any, scala.Unit]] = js.native
   val writer: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libWriterMod.URI] = js.native
+  def censor[W, A](fa: fpDashTsLib.libWriterMod.Writer[W, A], f: js.Function1[/* w */ W, W]): fpDashTsLib.libWriterMod.Writer[W, A] = js.native
+  def getMonad[W](M: fpDashTsLib.libMonoidMod.Monoid[W]): fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Writer, W] = js.native
+  def listen[W, A](fa: fpDashTsLib.libWriterMod.Writer[W, A]): fpDashTsLib.libWriterMod.Writer[W, js.Tuple2[A, W]] = js.native
+  def listens[W, A, B](fa: fpDashTsLib.libWriterMod.Writer[W, A], f: js.Function1[/* w */ W, B]): fpDashTsLib.libWriterMod.Writer[W, js.Tuple2[A, B]] = js.native
+  def pass[W, A](fa: fpDashTsLib.libWriterMod.Writer[W, js.Tuple2[A, js.Function1[/* w */ W, W]]]): fpDashTsLib.libWriterMod.Writer[W, A] = js.native
+  def tell[W](w: W): fpDashTsLib.libWriterMod.Writer[W, scala.Unit] = js.native
 }
 

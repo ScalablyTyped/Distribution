@@ -15,6 +15,6 @@ trait ComponentClass[P, S]
   var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
   var defaultProps: js.UndefOr[stdLib.Partial[P]] = js.native
   var displayName: js.UndefOr[java.lang.String] = js.native
-  var propTypes: js.UndefOr[ValidationMap[P]] = js.native
+  var propTypes: js.UndefOr[WeakValidationMap[P]] = js.native
 }
 

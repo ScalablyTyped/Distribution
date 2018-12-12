@@ -9,15 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libFieldModMembers extends js.Object {
   val fieldNumber: Field[scala.Double] = js.native
-  val gcd: js.Function2[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    /* field */ Field[js.Any], 
-    js.Function2[/* x */ js.Any, /* y */ js.Any, js.Any]
-  ] = js.native
-  val lcm: js.Function2[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    /* F */ Field[js.Any], 
-    js.Function2[/* x */ js.Any, /* y */ js.Any, js.Any]
-  ] = js.native
+  def gcd[A](S: fpDashTsLib.libSetoidMod.Setoid[A], field: Field[A]): js.Function2[/* x */ A, /* y */ A, A] = js.native
+  def lcm[A](S: fpDashTsLib.libSetoidMod.Setoid[A], F: Field[A]): js.Function2[/* x */ A, /* y */ A, A] = js.native
 }
 

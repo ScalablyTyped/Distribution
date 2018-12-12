@@ -9,12 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object typingsModulesStateModMembers extends js.Object {
   var default: SwalState = js.native
-  val resetState: js.Function0[scala.Unit] = js.native
-  val setActionOptionsFor: js.Function2[
-    /* buttonKey */ java.lang.String, 
-    /* hasCloseModal */ js.UndefOr[sweetalertLib.Anon_CloseModalBoolean], 
-    scala.Unit
-  ] = js.native
-  val setActionValue: js.Function1[/* opts */ java.lang.String | ActionOptions, scala.Unit] = js.native
+  def resetState(): scala.Unit = js.native
+  def setActionOptionsFor(buttonKey: java.lang.String): scala.Unit = js.native
+  def setActionOptionsFor(buttonKey: java.lang.String, hasCloseModal: sweetalertLib.Anon_CloseModalBoolean): scala.Unit = js.native
+  def setActionValue(opts: java.lang.String): scala.Unit = js.native
+  def setActionValue(opts: ActionOptions): scala.Unit = js.native
 }
 

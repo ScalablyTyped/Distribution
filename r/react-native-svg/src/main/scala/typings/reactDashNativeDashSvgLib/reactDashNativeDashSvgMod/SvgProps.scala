@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait SvgProps
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
-  var height: reactDashNativeDashSvgLib.NumberProp
+  var height: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
   var viewBox: js.UndefOr[java.lang.String] = js.undefined
-  var width: reactDashNativeDashSvgLib.NumberProp
+  var width: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
 }
 

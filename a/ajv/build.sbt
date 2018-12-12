@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ajv"
-version := "6.6.1-529687"
+version := "6.6.1-99a2a0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-0a22d4",
+  "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-8b11a1",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181208Z-6a1d55",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "uri-js" % "4.2.2-ca563f")

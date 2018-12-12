@@ -15,63 +15,8 @@ object strmapNs extends js.Object {
   }
   
   val URI: /* StrMap */ java.lang.String = js.native
-  val collect: js.Function2[
-    /* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
-    /* f */ js.Function2[/* k */ java.lang.String, /* a */ js.Any, js.Any], 
-    fpDashTsLib.libArrayMod.Global.Array[js.Any]
-  ] = js.native
-  val getMonoid: js.Function1[
-    /* S */ js.UndefOr[fpDashTsLib.libSemigroupMod.Semigroup[js.Any]], 
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libStrMapMod.StrMap[js.Any]]
-  ] = js.native
-  val getSetoid: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libStrMapMod.StrMap[js.Any]]
-  ] = js.native
-  val insert: js.Function3[
-    /* k */ java.lang.String, 
-    /* a */ js.Any, 
-    /* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
-    fpDashTsLib.libStrMapMod.StrMap[js.Any]
-  ] = js.native
-  val isEmpty: js.Function1[/* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], scala.Boolean] = js.native
-  val isSubdictionary: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[
-      /* d1 */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
-      /* d2 */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
-      scala.Boolean
-    ]
-  ] = js.native
-  val lookup: js.Function2[
-    /* k */ java.lang.String, 
-    /* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
-    fpDashTsLib.libOptionMod.Option[js.Any]
-  ] = js.native
-  val pop: js.Function2[
-    /* k */ java.lang.String, 
-    /* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
-    fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, fpDashTsLib.libStrMapMod.StrMap[js.Any]]]
-  ] = js.native
-  val remove: js.Function2[
-    /* k */ java.lang.String, 
-    /* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
-    fpDashTsLib.libStrMapMod.StrMap[js.Any]
-  ] = js.native
-  val singleton: js.Function2[/* k */ java.lang.String, /* a */ js.Any, fpDashTsLib.libStrMapMod.StrMap[js.Any]] = js.native
-  val size: js.Function1[/* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], scala.Double] = js.native
   val strmap: (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[fpDashTsLib.libStrMapMod.URI, java.lang.String]) with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libStrMapMod.URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[fpDashTsLib.libStrMapMod.URI, java.lang.String]) with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libStrMapMod.URI] with (fpDashTsLib.libFilterableWithIndexMod.FilterableWithIndex1[fpDashTsLib.libStrMapMod.URI, java.lang.String]) with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libStrMapMod.URI] with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.libStrMapMod.URI, java.lang.String]) = js.native
-  val toArray: js.Function1[
-    /* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
-    fpDashTsLib.libArrayMod.Global.Array[js.Tuple2[java.lang.String, js.Any]]
-  ] = js.native
-  val toUnfoldable: js.Function1[
-    /* U */ fpDashTsLib.libUnfoldableMod.Unfoldable[js.Any], 
-    js.Function1[
-      /* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
-      fpDashTsLib.libHKTMod.HKT[js.Any, js.Tuple2[java.lang.String, js.Any]]
-    ]
-  ] = js.native
+  def collect[A, B](d: fpDashTsLib.libStrMapMod.StrMap[A], f: js.Function2[/* k */ java.lang.String, /* a */ A, B]): fpDashTsLib.libArrayMod.Global.Array[B] = js.native
   def fromFoldable[F](F: fpDashTsLib.libFoldableMod.Foldable[F]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[F, js.Tuple2[java.lang.String, _]], 
     /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
@@ -91,6 +36,26 @@ object strmapNs extends js.Object {
     /* ta */ fpDashTsLib.libHKTMod.Type3[F, _, _, js.Tuple2[java.lang.String, _]], 
     /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     fpDashTsLib.libStrMapMod.StrMap[_]
+  ] = js.native
+  def getMonoid[A](): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libStrMapMod.StrMap[A]] = js.native
+  def getMonoid[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libStrMapMod.StrMap[A]] = js.native
+  def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libStrMapMod.StrMap[A]] = js.native
+  def insert[A](k: java.lang.String, a: A, d: fpDashTsLib.libStrMapMod.StrMap[A]): fpDashTsLib.libStrMapMod.StrMap[A] = js.native
+  def isEmpty[A](d: fpDashTsLib.libStrMapMod.StrMap[A]): scala.Boolean = js.native
+  def isSubdictionary[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[
+    /* d1 */ fpDashTsLib.libStrMapMod.StrMap[A], 
+    /* d2 */ fpDashTsLib.libStrMapMod.StrMap[A], 
+    scala.Boolean
+  ] = js.native
+  def lookup[A](k: java.lang.String, d: fpDashTsLib.libStrMapMod.StrMap[A]): fpDashTsLib.libOptionMod.Option[A] = js.native
+  def pop[A](k: java.lang.String, d: fpDashTsLib.libStrMapMod.StrMap[A]): fpDashTsLib.libOptionMod.Option[js.Tuple2[A, fpDashTsLib.libStrMapMod.StrMap[A]]] = js.native
+  def remove[A](k: java.lang.String, d: fpDashTsLib.libStrMapMod.StrMap[A]): fpDashTsLib.libStrMapMod.StrMap[A] = js.native
+  def singleton[A](k: java.lang.String, a: A): fpDashTsLib.libStrMapMod.StrMap[A] = js.native
+  def size[A](d: fpDashTsLib.libStrMapMod.StrMap[A]): scala.Double = js.native
+  def toArray[A](d: fpDashTsLib.libStrMapMod.StrMap[A]): fpDashTsLib.libArrayMod.Global.Array[js.Tuple2[java.lang.String, A]] = js.native
+  def toUnfoldable[F](U: fpDashTsLib.libUnfoldableMod.Unfoldable[F]): js.Function1[
+    /* d */ fpDashTsLib.libStrMapMod.StrMap[_], 
+    fpDashTsLib.libHKTMod.HKT[F, js.Tuple2[java.lang.String, _]]
   ] = js.native
   def traverseWithKey[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function2[
     /* ta */ fpDashTsLib.libStrMapMod.StrMap[_], 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash-decorators"
-version := "6.0.0-c1f517"
+version := "6.0.0-db5972"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

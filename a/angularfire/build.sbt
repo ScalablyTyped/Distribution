@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angularfire"
-version := "0.8.2-dt-20181206Z-01d992"
+version := "0.8.2-dt-20181206Z-9a9bc4"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,24 +8,24 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-b4446a",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-2f8c45",
-  "org.scalablytyped" %%% "firebase" % "5.7.0-6980a0",
-  "org.scalablytyped" %%% "firebase__app" % "0.3.5-8fd839",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.3.2-16fd78",
-  "org.scalablytyped" %%% "firebase__auth" % "0.9.0-43ff3f",
-  "org.scalablytyped" %%% "firebase__auth-types" % "0.5.0-415ad8",
-  "org.scalablytyped" %%% "firebase__database" % "0.3.7-450ccc",
-  "org.scalablytyped" %%% "firebase__database-types" % "0.3.2-259782",
-  "org.scalablytyped" %%% "firebase__firestore" % "0.9.0-4ed8fb",
-  "org.scalablytyped" %%% "firebase__firestore-types" % "0.8.0-8a1b79",
-  "org.scalablytyped" %%% "firebase__functions" % "0.3.3-37a74b",
+  "org.scalablytyped" %%% "firebase" % "5.7.0-7ade72",
+  "org.scalablytyped" %%% "firebase__app" % "0.3.5-f5c7a1",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.3.2-8d890d",
+  "org.scalablytyped" %%% "firebase__auth" % "0.9.0-4c29fb",
+  "org.scalablytyped" %%% "firebase__auth-types" % "0.5.0-649445",
+  "org.scalablytyped" %%% "firebase__database" % "0.3.7-3dd8a3",
+  "org.scalablytyped" %%% "firebase__database-types" % "0.3.2-45e715",
+  "org.scalablytyped" %%% "firebase__firestore" % "0.9.0-e9f707",
+  "org.scalablytyped" %%% "firebase__firestore-types" % "0.8.0-6528b5",
+  "org.scalablytyped" %%% "firebase__functions" % "0.3.3-c6854d",
   "org.scalablytyped" %%% "firebase__functions-types" % "0.2.1-f656c9",
   "org.scalablytyped" %%% "firebase__logger" % "0.1.2-c4393c",
-  "org.scalablytyped" %%% "firebase__messaging" % "0.3.7-f7c595",
-  "org.scalablytyped" %%% "firebase__messaging-types" % "0.2.3-1d536c",
+  "org.scalablytyped" %%% "firebase__messaging" % "0.3.7-d674d8",
+  "org.scalablytyped" %%% "firebase__messaging-types" % "0.2.3-460868",
   "org.scalablytyped" %%% "firebase__polyfill" % "0.3.3-977729",
-  "org.scalablytyped" %%% "firebase__storage" % "0.2.4-843d14",
-  "org.scalablytyped" %%% "firebase__storage-types" % "0.2.3-ce2d19",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.3-e3b965",
+  "org.scalablytyped" %%% "firebase__storage" % "0.2.4-590ec2",
+  "org.scalablytyped" %%% "firebase__storage-types" % "0.2.3-6cb68c",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.3-ec9c8e",
   "org.scalablytyped" %%% "grpc" % "1.16.1-eae5ff",
   "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20180910Z-fcf52e",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-93340d",

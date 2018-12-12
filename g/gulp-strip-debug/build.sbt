@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-strip-debug"
-version := "v1.1.0-dt-20180910Z-899fee"
+version := "v1.1.0-dt-20180910Z-f68e2e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

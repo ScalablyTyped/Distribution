@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "apollo-link-ws"
-version := "1.0.10-693d86"
+version := "1.0.10-5ab144"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.4-5ebd88",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.4-835191",
   "org.scalablytyped" %%% "apollo-utilities" % "1.0.26-7c4334",
   "org.scalablytyped" %%% "backo2" % "1.0-dt-20180910Z-57f2af",
   "org.scalablytyped" %%% "eventemitter3" % "3.1.0-1206f1",

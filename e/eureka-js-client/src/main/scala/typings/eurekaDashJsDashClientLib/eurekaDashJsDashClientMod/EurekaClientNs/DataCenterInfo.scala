@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait DataCenterInfo extends js.Object {
+  var `@class`: js.UndefOr[java.lang.String] = js.undefined
   var name: DataCenterName
 }
 

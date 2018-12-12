@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/DistributiveLattice", JSImport.Namespace)
 @js.native
 object libDistributiveLatticeModMembers extends js.Object {
-  val getMinMaxDistributiveLattice: js.Function1[/* O */ fpDashTsLib.libOrdMod.Ord[js.Any], DistributiveLattice[js.Any]] = js.native
+  def getMinMaxDistributiveLattice[A](O: fpDashTsLib.libOrdMod.Ord[A]): DistributiveLattice[A] = js.native
 }
 

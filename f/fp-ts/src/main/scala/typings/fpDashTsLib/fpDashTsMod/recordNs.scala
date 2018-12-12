@@ -8,163 +8,40 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts", "record")
 @js.native
 object recordNs extends js.Object {
-  val collect: js.Function2[
-    /* d */ stdLib.Record[java.lang.String, js.Any], 
-    /* f */ js.Function2[/* k */ java.lang.String, /* a */ js.Any, js.Any], 
-    fpDashTsLib.libArrayMod.Global.Array[js.Any]
-  ] = js.native
-  val compact: js.Function1[
-    /* fa */ stdLib.Record[java.lang.String, fpDashTsLib.libOptionMod.Option[js.Any]], 
-    stdLib.Record[java.lang.String, js.Any]
-  ] = js.native
   val empty: stdLib.Record[java.lang.String, scala.Nothing] = js.native
-  val filterMap: js.Function2[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
-    stdLib.Record[java.lang.String, js.Any]
-  ] = js.native
-  val filterMapWithIndex: js.Function2[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* f */ js.Function2[/* key */ java.lang.String, /* a */ js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
-    stdLib.Record[java.lang.String, js.Any]
-  ] = js.native
-  val filterWithIndex: js.Function2[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* p */ js.Function2[/* key */ java.lang.String, /* a */ js.Any, scala.Boolean], 
-    stdLib.Record[java.lang.String, js.Any]
-  ] = js.native
-  val foldMap: js.Function1[
-    /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-    js.Function2[
-      /* fa */ stdLib.Record[java.lang.String, js.Any], 
-      /* f */ js.Function1[/* a */ js.Any, js.Any], 
-      js.Any
-    ]
-  ] = js.native
-  val foldMapWithKey: js.Function1[
-    /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-    js.Function2[
-      /* fa */ stdLib.Record[java.lang.String, js.Any], 
-      /* f */ js.Function2[/* k */ java.lang.String, /* a */ js.Any, js.Any], 
-      js.Any
-    ]
-  ] = js.native
-  val foldr: js.Function3[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* b */ js.Any, 
-    /* f */ js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any], 
-    js.Any
-  ] = js.native
-  val foldrWithKey: js.Function3[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* b */ js.Any, 
-    /* f */ js.Function3[/* k */ java.lang.String, /* a */ js.Any, /* b */ js.Any, js.Any], 
-    js.Any
-  ] = js.native
-  val getMonoid: js.Function1[
-    /* S */ js.Any, 
-    fpDashTsLib.libMonoidMod.Monoid[ScalablyTyped.runtime.StringDictionary[js.Any]]
-  ] = js.native
-  val getSetoid: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    fpDashTsLib.libSetoidMod.Setoid[stdLib.Record[java.lang.String, js.Any]]
-  ] = js.native
-  val insert: js.Function3[
-    /* k */ java.lang.String, 
-    /* a */ js.Any, 
-    /* d */ stdLib.Record[java.lang.String, js.Any], 
-    stdLib.Record[java.lang.String, js.Any]
-  ] = js.native
-  val isEmpty: js.Function1[/* d */ stdLib.Record[java.lang.String, js.Any], scala.Boolean] = js.native
-  val isSubdictionary: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[
-      /* d1 */ stdLib.Record[java.lang.String, js.Any], 
-      /* d2 */ stdLib.Record[java.lang.String, js.Any], 
-      scala.Boolean
-    ]
-  ] = js.native
-  val lookup: js.Function2[
-    /* key */ java.lang.String, 
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    fpDashTsLib.libOptionMod.Option[js.Any]
-  ] = js.native
-  val map: js.Function2[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* f */ js.Function1[/* a */ js.Any, js.Any], 
-    stdLib.Record[java.lang.String, js.Any]
-  ] = js.native
-  val mapWithKey: js.Function2[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* f */ js.Function2[/* k */ java.lang.String, /* a */ js.Any, js.Any], 
-    stdLib.Record[java.lang.String, js.Any]
-  ] = js.native
-  val partition: js.Function2[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* p */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, js.Any], stdLib.Record[java.lang.String, js.Any]]
-  ] = js.native
-  val partitionMap: js.Function2[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
-    fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, js.Any], stdLib.Record[java.lang.String, js.Any]]
-  ] = js.native
-  val partitionMapWithIndex: js.Function2[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* f */ js.Function2[
-      /* key */ java.lang.String, 
-      /* a */ js.Any, 
-      fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
-    ], 
-    fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, js.Any], stdLib.Record[java.lang.String, js.Any]]
-  ] = js.native
-  val partitionWithIndex: js.Function2[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* p */ js.Function2[/* key */ java.lang.String, /* a */ js.Any, scala.Boolean], 
-    fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, js.Any], stdLib.Record[java.lang.String, js.Any]]
-  ] = js.native
-  val pop: js.Function2[
-    /* k */ java.lang.String, 
-    /* d */ stdLib.Record[java.lang.String, js.Any], 
-    fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, stdLib.Record[java.lang.String, js.Any]]]
-  ] = js.native
-  val reduce: js.Function3[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* b */ js.Any, 
-    /* f */ js.Function2[/* b */ js.Any, /* a */ js.Any, js.Any], 
-    js.Any
-  ] = js.native
-  val reduceWithKey: js.Function3[
-    /* fa */ stdLib.Record[java.lang.String, js.Any], 
-    /* b */ js.Any, 
-    /* f */ js.Function3[/* k */ java.lang.String, /* b */ js.Any, /* a */ js.Any, js.Any], 
-    js.Any
-  ] = js.native
-  val remove: js.Function2[
-    /* k */ java.lang.String, 
-    /* d */ stdLib.Record[java.lang.String, js.Any], 
-    stdLib.Record[java.lang.String, js.Any]
-  ] = js.native
-  val separate: js.Function1[
-    /* fa */ stdLib.Record[java.lang.String, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
-    fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, js.Any], stdLib.Record[java.lang.String, js.Any]]
-  ] = js.native
-  val singleton: js.Function2[/* k */ java.lang.String, /* a */ js.Any, stdLib.Record[java.lang.String, js.Any]] = js.native
-  val size: js.Function1[/* d */ stdLib.Record[java.lang.String, js.Any], scala.Double] = js.native
-  val toArray: js.Function1[
-    /* d */ stdLib.Record[java.lang.String, js.Any], 
-    fpDashTsLib.libArrayMod.Global.Array[js.Tuple2[java.lang.String, js.Any]]
-  ] = js.native
-  val toUnfoldable: js.Function1[
-    /* unfoldable */ fpDashTsLib.libUnfoldableMod.Unfoldable[js.Any], 
-    js.Function1[
-      /* d */ stdLib.Record[java.lang.String, js.Any], 
-      fpDashTsLib.libHKTMod.HKT[js.Any, js.Tuple2[java.lang.String, js.Any]]
-    ]
-  ] = js.native
+  def collect[A, B](d: stdLib.Record[java.lang.String, A], f: js.Function2[/* k */ java.lang.String, /* a */ A, B]): fpDashTsLib.libArrayMod.Global.Array[B] = js.native
+  def compact[A](fa: stdLib.Record[java.lang.String, fpDashTsLib.libOptionMod.Option[A]]): stdLib.Record[java.lang.String, A] = js.native
   def filter[A](fa: stdLib.Record[java.lang.String, A], p: fpDashTsLib.libFunctionMod.Predicate[A]): stdLib.Record[java.lang.String, A] = js.native
+  def filterMap[A, B](
+    fa: stdLib.Record[java.lang.String, A],
+    f: js.Function1[/* a */ A, fpDashTsLib.libOptionMod.Option[B]]
+  ): stdLib.Record[java.lang.String, B] = js.native
+  def filterMapWithIndex[A, B](
+    fa: stdLib.Record[java.lang.String, A],
+    f: js.Function2[/* key */ java.lang.String, /* a */ A, fpDashTsLib.libOptionMod.Option[B]]
+  ): stdLib.Record[java.lang.String, B] = js.native
+  def filterWithIndex[A](
+    fa: stdLib.Record[java.lang.String, A],
+    p: js.Function2[/* key */ java.lang.String, /* a */ A, scala.Boolean]
+  ): stdLib.Record[java.lang.String, A] = js.native
   @JSName("filter")
   def filter_ABA[A, B /* <: A */](fa: stdLib.Record[java.lang.String, A], p: fpDashTsLib.libFunctionMod.Refinement[A, B]): stdLib.Record[java.lang.String, B] = js.native
+  def foldMap[M](M: fpDashTsLib.libMonoidMod.Monoid[M]): js.Function2[
+    /* fa */ stdLib.Record[java.lang.String, _], 
+    /* f */ js.Function1[/* a */ js.Any, M], 
+    M
+  ] = js.native
+  def foldMapWithKey[M](M: fpDashTsLib.libMonoidMod.Monoid[M]): js.Function2[
+    /* fa */ stdLib.Record[java.lang.String, _], 
+    /* f */ js.Function2[/* k */ java.lang.String, /* a */ js.Any, M], 
+    M
+  ] = js.native
+  def foldr[A, B](fa: stdLib.Record[java.lang.String, A], b: B, f: js.Function2[/* a */ A, /* b */ B, B]): B = js.native
+  def foldrWithKey[A, B](
+    fa: stdLib.Record[java.lang.String, A],
+    b: B,
+    f: js.Function3[/* k */ java.lang.String, /* a */ A, /* b */ B, B]
+  ): B = js.native
   def fromFoldable[F](F: fpDashTsLib.libFoldableMod.Foldable[F]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[F, js.Tuple2[java.lang.String, _]], 
     /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
@@ -185,6 +62,40 @@ object recordNs extends js.Object {
     /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Record[java.lang.String, _]
   ] = js.native
+  def getMonoid[A](S: js.Any): fpDashTsLib.libMonoidMod.Monoid[ScalablyTyped.runtime.StringDictionary[A]] = js.native
+  def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[stdLib.Record[java.lang.String, A]] = js.native
+  def insert[A](k: java.lang.String, a: A, d: stdLib.Record[java.lang.String, A]): stdLib.Record[java.lang.String, A] = js.native
+  def isEmpty[A](d: stdLib.Record[java.lang.String, A]): scala.Boolean = js.native
+  def isSubdictionary[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[
+    /* d1 */ stdLib.Record[java.lang.String, A], 
+    /* d2 */ stdLib.Record[java.lang.String, A], 
+    scala.Boolean
+  ] = js.native
+  def lookup[A](key: java.lang.String, fa: stdLib.Record[java.lang.String, A]): fpDashTsLib.libOptionMod.Option[A] = js.native
+  def map[A, B](fa: stdLib.Record[java.lang.String, A], f: js.Function1[/* a */ A, B]): stdLib.Record[java.lang.String, B] = js.native
+  def mapWithKey[A, B](fa: stdLib.Record[java.lang.String, A], f: js.Function2[/* k */ java.lang.String, /* a */ A, B]): stdLib.Record[java.lang.String, B] = js.native
+  def partition[A](fa: stdLib.Record[java.lang.String, A], p: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, A], stdLib.Record[java.lang.String, A]] = js.native
+  def partitionMap[RL, RR, A](
+    fa: stdLib.Record[java.lang.String, A],
+    f: js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[RL, RR]]
+  ): fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, RL], stdLib.Record[java.lang.String, RR]] = js.native
+  def partitionMapWithIndex[RL, RR, A](
+    fa: stdLib.Record[java.lang.String, A],
+    f: js.Function2[/* key */ java.lang.String, /* a */ A, fpDashTsLib.libEitherMod.Either[RL, RR]]
+  ): fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, RL], stdLib.Record[java.lang.String, RR]] = js.native
+  def partitionWithIndex[A](
+    fa: stdLib.Record[java.lang.String, A],
+    p: js.Function2[/* key */ java.lang.String, /* a */ A, scala.Boolean]
+  ): fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, A], stdLib.Record[java.lang.String, A]] = js.native
+  def pop[A](k: java.lang.String, d: stdLib.Record[java.lang.String, A]): fpDashTsLib.libOptionMod.Option[js.Tuple2[A, stdLib.Record[java.lang.String, A]]] = js.native
+  def reduce[A, B](fa: stdLib.Record[java.lang.String, A], b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native
+  def reduceWithKey[A, B](
+    fa: stdLib.Record[java.lang.String, A],
+    b: B,
+    f: js.Function3[/* k */ java.lang.String, /* b */ B, /* a */ A, B]
+  ): B = js.native
+  def remove[A](k: java.lang.String, d: stdLib.Record[java.lang.String, A]): stdLib.Record[java.lang.String, A] = js.native
+  def separate[RL, RR](fa: stdLib.Record[java.lang.String, fpDashTsLib.libEitherMod.Either[RL, RR]]): fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, RL], stdLib.Record[java.lang.String, RR]] = js.native
   def sequence[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function1[
     /* ta */ stdLib.Record[java.lang.String, fpDashTsLib.libHKTMod.HKT[F, _]], 
     fpDashTsLib.libHKTMod.HKT[F, stdLib.Record[java.lang.String, _]]
@@ -208,6 +119,13 @@ object recordNs extends js.Object {
   def sequence[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L](F: fpDashTsLib.libApplicativeMod.Applicative3C[F, U, L]): js.Function1[
     /* ta */ stdLib.Record[java.lang.String, fpDashTsLib.libHKTMod.Type3[F, U, L, _]], 
     fpDashTsLib.libHKTMod.Type3[F, U, L, stdLib.Record[java.lang.String, _]]
+  ] = js.native
+  def singleton[A](k: java.lang.String, a: A): stdLib.Record[java.lang.String, A] = js.native
+  def size[A](d: stdLib.Record[java.lang.String, A]): scala.Double = js.native
+  def toArray[A](d: stdLib.Record[java.lang.String, A]): fpDashTsLib.libArrayMod.Global.Array[js.Tuple2[java.lang.String, A]] = js.native
+  def toUnfoldable[F](unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable[F]): js.Function1[
+    /* d */ stdLib.Record[java.lang.String, _], 
+    fpDashTsLib.libHKTMod.HKT[F, js.Tuple2[java.lang.String, _]]
   ] = js.native
   def traverse[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function2[
     /* ta */ stdLib.Record[java.lang.String, _], 

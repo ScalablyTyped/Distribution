@@ -12,10 +12,8 @@ object libResizeGroupModMembers extends js.Object {
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotTypesMod.IResizeGroupProps, 
     officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotBaseMod.ResizeGroupBase
   ] = js.native
-  val getMeasurementCache: js.Function0[officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement] = js.native
-  val getNextResizeGroupStateProvider: js.Function1[
-    /* measurementCache */ js.UndefOr[officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement], 
-    officeDashUiDashFabricDashReactLib.Anon_GetNextState
-  ] = js.native
+  def getMeasurementCache(): officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement = js.native
+  def getNextResizeGroupStateProvider(): officeDashUiDashFabricDashReactLib.Anon_GetNextState = js.native
+  def getNextResizeGroupStateProvider(measurementCache: officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement): officeDashUiDashFabricDashReactLib.Anon_GetNextState = js.native
 }
 

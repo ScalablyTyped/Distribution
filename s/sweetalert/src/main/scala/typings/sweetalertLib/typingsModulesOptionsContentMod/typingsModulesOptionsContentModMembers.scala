@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sweetalert/typings/modules/options/content", JSImport.Namespace)
 @js.native
 object typingsModulesOptionsContentModMembers extends js.Object {
-  val getContentOpts: js.Function1[/* contentParam */ java.lang.String | js.Object, ContentOptions] = js.native
+  def getContentOpts(contentParam: java.lang.String): ContentOptions = js.native
+  def getContentOpts(contentParam: js.Object): ContentOptions = js.native
 }
 

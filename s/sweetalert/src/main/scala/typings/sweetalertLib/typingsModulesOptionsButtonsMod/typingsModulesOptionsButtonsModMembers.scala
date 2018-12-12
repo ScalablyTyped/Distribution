@@ -11,6 +11,8 @@ object typingsModulesOptionsButtonsModMembers extends js.Object {
   val CANCEL_KEY: /* cancel */ java.lang.String = js.native
   val CONFIRM_KEY: /* confirm */ java.lang.String = js.native
   val defaultButtonList: ButtonList = js.native
-  val getButtonListOpts: js.Function1[/* opts */ java.lang.String | scala.Boolean | js.Object, ButtonList] = js.native
+  def getButtonListOpts(opts: java.lang.String): ButtonList = js.native
+  def getButtonListOpts(opts: js.Object): ButtonList = js.native
+  def getButtonListOpts(opts: scala.Boolean): ButtonList = js.native
 }
 

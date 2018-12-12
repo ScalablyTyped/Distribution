@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mobx/lib/core/reaction", JSImport.Namespace)
 @js.native
 object libCoreReactionModMembers extends js.Object {
-  val isReaction: js.Function1[/* x */ js.Any, /* is Reaction */scala.Boolean] = js.native
+  def isReaction(x: js.Any): /* is Reaction */scala.Boolean = js.native
   def onReactionError(
     handler: js.Function2[
       /* error */ js.Any, 

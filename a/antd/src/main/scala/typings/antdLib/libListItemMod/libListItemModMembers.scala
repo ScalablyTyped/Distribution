@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/list/Item", JSImport.Namespace)
 @js.native
 object libListItemModMembers extends js.Object {
-  val Meta: js.Function1[/* props */ ListItemMetaProps, reactLib.reactMod.Global.JSXNs.Element] = js.native
+  def Meta(props: ListItemMetaProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

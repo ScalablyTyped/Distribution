@@ -14,6 +14,6 @@ object ioRefNs extends js.Object {
     def this(value: A) = this()
   }
   
-  val newIORef: js.Function1[/* a */ js.Any, fpDashTsLib.libIOMod.IO[fpDashTsLib.libIORefMod.IORef[js.Any]]] = js.native
+  def newIORef[A](a: A): fpDashTsLib.libIOMod.IO[fpDashTsLib.libIORefMod.IORef[A]] = js.native
 }
 

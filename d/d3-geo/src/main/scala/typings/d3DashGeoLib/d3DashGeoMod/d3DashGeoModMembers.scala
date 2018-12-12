@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-geo", JSImport.Namespace)
 @js.native
 object d3DashGeoModMembers extends js.Object {
-  val geoClipAntimeridian: js.Function1[/* stream */ GeoStream, GeoStream] = js.native
   def geoAlbers(): GeoConicProjection = js.native
   def geoAlbersUsa(): GeoProjection = js.native
   def geoArea(
@@ -50,6 +49,7 @@ object d3DashGeoModMembers extends js.Object {
   def geoCircle_Datum[Datum](): GeoCircleGenerator[_, Datum] = js.native
   @JSName("geoCircle")
   def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = js.native
+  def geoClipAntimeridian(stream: GeoStream): GeoStream = js.native
   def geoClipCircle(angle: scala.Double): js.Function1[/* stream */ GeoStream, GeoStream] = js.native
   def geoClipRectangle(x0: scala.Double, y0: scala.Double, x1: scala.Double, y1: scala.Double): js.Function1[/* stream */ GeoStream, GeoStream] = js.native
   def geoConicConformal(): GeoConicProjection = js.native

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "graphql-resolvers"
-version := "0.2-dt-20181027Z-fa8e5d"
+version := "0.2-dt-20181027Z-69d938"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.4-5ebd88",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.4-835191",
   "org.scalablytyped" %%% "apollo-utilities" % "1.0.26-7c4334",
   "org.scalablytyped" %%% "deprecated-decorator" % "0.1.6-a5e214",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-1de855",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.3-47f2cb",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.3-13d375",
   "org.scalablytyped" %%% "iterall" % "1.2.2-0da489",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",

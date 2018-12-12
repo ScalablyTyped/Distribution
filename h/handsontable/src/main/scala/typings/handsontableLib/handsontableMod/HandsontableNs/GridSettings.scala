@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait GridSettings extends Hooks {
+  var activeHeaderClassName: js.UndefOr[java.lang.String] = js.undefined
   var allowEmpty: js.UndefOr[scala.Boolean] = js.undefined
   var allowHtml: js.UndefOr[scala.Boolean] = js.undefined
   var allowInsertColumn: js.UndefOr[scala.Boolean] = js.undefined
@@ -68,6 +69,7 @@ trait GridSettings extends Hooks {
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var defaultDate: js.UndefOr[java.lang.String] = js.undefined
   var disableVisualSelection: js.UndefOr[scala.Boolean | java.lang.String | js.Array[_]] = js.undefined
+  var dragToScroll: js.UndefOr[scala.Boolean] = js.undefined
   var dropdownMenu: js.UndefOr[scala.Boolean | js.Object | js.Array[_]] = js.undefined
    // pro
   var editor: js.UndefOr[java.lang.String | js.Function0[scala.Unit] | scala.Boolean] = js.undefined

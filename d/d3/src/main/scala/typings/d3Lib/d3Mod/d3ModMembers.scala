@@ -48,10 +48,6 @@ object d3ModMembers extends js.Object {
   val easePolyInOut: d3DashEaseLib.d3DashEaseMod.PolynomialEasingFactory = js.native
   val easePolyOut: d3DashEaseLib.d3DashEaseMod.PolynomialEasingFactory = js.native
   val event: js.Any = js.native
-  val geoClipAntimeridian: js.Function1[
-    /* stream */ d3DashGeoLib.d3DashGeoMod.GeoStream, 
-    d3DashGeoLib.d3DashGeoMod.GeoStream
-  ] = js.native
   val gray: d3DashColorLib.d3DashColorMod.GrayColorFactory = js.native
   val hcl: d3DashColorLib.d3DashColorMod.HCLColorFactory = js.native
   val hsl: d3DashColorLib.d3DashColorMod.HSLColorFactory = js.native
@@ -2046,6 +2042,7 @@ object d3ModMembers extends js.Object {
   def geoCircle_Datum[Datum](): d3DashGeoLib.d3DashGeoMod.GeoCircleGenerator[_, Datum] = js.native
   @JSName("geoCircle")
   def geoCircle_ThisDatum[This, Datum](): d3DashGeoLib.d3DashGeoMod.GeoCircleGenerator[This, Datum] = js.native
+  def geoClipAntimeridian(stream: d3DashGeoLib.d3DashGeoMod.GeoStream): d3DashGeoLib.d3DashGeoMod.GeoStream = js.native
   def geoClipCircle(angle: scala.Double): js.Function1[
     /* stream */ d3DashGeoLib.d3DashGeoMod.GeoStream, 
     d3DashGeoLib.d3DashGeoMod.GeoStream

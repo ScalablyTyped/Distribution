@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/ScrollablePane", JSImport.Namespace)
 @js.native
 object libComponentsScrollablePaneModMembers extends js.Object {
-  val ScrollablePane: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val ScrollbarVisibility: officeDashUiDashFabricDashReactLib.Anon_Always = js.native
+  def ScrollablePane(
+    props: officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

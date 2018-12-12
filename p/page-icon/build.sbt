@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "page-icon"
-version := "0.3.0-dt-20180910Z-ee944d"
+version := "0.3.0-dt-20180910Z-189a8f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

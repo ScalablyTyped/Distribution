@@ -8,16 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("polished", JSImport.Namespace)
 @js.native
 object polishedMod extends js.Object {
-  val em: js.Function2[
-    /* value */ java.lang.String | scala.Double, 
-    /* base */ js.UndefOr[java.lang.String | scala.Double], 
-    java.lang.String
-  ] = js.native
-  val rem: js.Function2[
-    /* value */ java.lang.String | scala.Double, 
-    /* base */ js.UndefOr[java.lang.String | scala.Double], 
-    java.lang.String
-  ] = js.native
   def adjustHue(degree: java.lang.String): js.Function1[/* color */ java.lang.String, java.lang.String] = js.native
   def adjustHue(degree: java.lang.String, color: java.lang.String): java.lang.String = js.native
   def adjustHue(degree: scala.Double): js.Function1[/* color */ java.lang.String, java.lang.String] = js.native
@@ -63,6 +53,12 @@ object polishedMod extends js.Object {
   def ellipsis(): polishedLib.libTypesStyleMod.Styles = js.native
   def ellipsis(width: java.lang.String): polishedLib.libTypesStyleMod.Styles = js.native
   def ellipsis(width: scala.Double): polishedLib.libTypesStyleMod.Styles = js.native
+  def em(value: java.lang.String): java.lang.String = js.native
+  def em(value: java.lang.String, base: java.lang.String): java.lang.String = js.native
+  def em(value: java.lang.String, base: scala.Double): java.lang.String = js.native
+  def em(value: scala.Double): java.lang.String = js.native
+  def em(value: scala.Double, base: java.lang.String): java.lang.String = js.native
+  def em(value: scala.Double, base: scala.Double): java.lang.String = js.native
   def fluidRange(cssProp: js.Array[polishedLib.libTypesFluidRangeConfigurationMod.FluidRangeConfiguration]): polishedLib.libTypesStyleMod.Styles = js.native
   def fluidRange(
     cssProp: js.Array[polishedLib.libTypesFluidRangeConfigurationMod.FluidRangeConfiguration],
@@ -156,6 +152,12 @@ object polishedMod extends js.Object {
     hasColorStopsExtentFallbackPositionShape: polishedLib.libTypesRadialGradientConfigurationMod.RadialGradientConfiguration
   ): polishedLib.libTypesStyleMod.Styles = js.native
   def readableColor(color: java.lang.String): java.lang.String = js.native
+  def rem(value: java.lang.String): java.lang.String = js.native
+  def rem(value: java.lang.String, base: java.lang.String): java.lang.String = js.native
+  def rem(value: java.lang.String, base: scala.Double): java.lang.String = js.native
+  def rem(value: scala.Double): java.lang.String = js.native
+  def rem(value: scala.Double, base: java.lang.String): java.lang.String = js.native
+  def rem(value: scala.Double, base: scala.Double): java.lang.String = js.native
   def retinaImage(filename: java.lang.String): polishedLib.libTypesStyleMod.Styles = js.native
   def retinaImage(filename: java.lang.String, backgroundSize: java.lang.String): polishedLib.libTypesStyleMod.Styles = js.native
   def retinaImage(filename: java.lang.String, backgroundSize: java.lang.String, extension: java.lang.String): polishedLib.libTypesStyleMod.Styles = js.native

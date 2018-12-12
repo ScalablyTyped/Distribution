@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jui-grid"
-version := "2.0-dt-20180910Z-8bd9ca"
+version := "2.0-dt-20180910Z-df5a51"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181209Z-f8f791",
-  "org.scalablytyped" %%% "jui-core" % "2.0-dt-20180910Z-e71765",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181212Z-994342",
+  "org.scalablytyped" %%% "jui-core" % "2.0-dt-20180910Z-28fb86",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-27b737",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false

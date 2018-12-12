@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "postcss-modules-resolve-imports"
-version := "1.3-dt-20181104Z-4e34dd"
+version := "1.3-dt-20181104Z-e884ed"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-ed6428",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-de9d5d",
+  "org.scalablytyped" %%% "chalk" % "2.4.1-76fe8f",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-f388aa",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-7b17da",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-404a30",
   "org.scalablytyped" %%% "js-base64" % "2.3-dt-20180910Z-95a564",
-  "org.scalablytyped" %%% "postcss" % "5.2.18-2f0fb9",
+  "org.scalablytyped" %%% "postcss" % "5.2.18-4adc80",
   "org.scalablytyped" %%% "source-map" % "0.7.3-6ade85",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-d7a900")

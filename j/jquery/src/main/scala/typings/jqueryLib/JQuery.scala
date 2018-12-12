@@ -4068,7 +4068,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def contents(): JQuery[TElement | stdLib.Text | stdLib.Comment] = js.native
+  def contents(): JQuery[TElement | stdLib.Text | stdLib.Comment | stdLib.Document] = js.native
   /**
        * Bind an event handler to the "contextmenu" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.

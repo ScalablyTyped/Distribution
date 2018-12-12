@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webdriver-manager"
-version := "12.1.0-f064db"
+version := "12.1.0-68a61c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "adm-zip" % "v0.4.4-dt-20180910Z-909578",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-ed6428",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-4e4989",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-de9d5d",
+  "org.scalablytyped" %%% "chalk" % "2.4.1-76fe8f",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-f388aa",
   "org.scalablytyped" %%% "del" % "3.0-dt-20180910Z-fd91ab",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-7b17da",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-404a30",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-8a5f77",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-eb50b6",
   "org.scalablytyped" %%% "ini" % "v1.3.3-dt-20181129Z-251b37",

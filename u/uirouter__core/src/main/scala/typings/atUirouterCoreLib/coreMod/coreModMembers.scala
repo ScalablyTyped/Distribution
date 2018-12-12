@@ -13,114 +13,29 @@ object coreModMembers extends js.Object {
   @JSName("$q")
   val $q: js.Any = js.native
   val NATIVE_INJECTOR_TOKEN: java.lang.String = js.native
-  val all: js.Function1[
-    /* fn1 */ atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any], 
-    js.Function1[/* arr */ js.Array[js.Any], scala.Boolean]
-  ] = js.native
-  val allTrueR: js.Function2[/* memo */ scala.Boolean, /* elem */ js.Any, js.Any] = js.native
-  val any: js.Function1[
-    /* fn1 */ atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any], 
-    js.Function1[/* arr */ js.Array[js.Any], scala.Boolean]
-  ] = js.native
-  val anyTrueR: js.Function2[/* memo */ scala.Boolean, /* elem */ js.Any, js.Any] = js.native
-  val assertMap: js.Function2[
-    /* mapFn */ js.Function1[/* t */ js.Any, js.Any], 
-    /* errMsg */ java.lang.String | js.Function, 
-    js.Function1[/* t */ js.Any, js.Any]
-  ] = js.native
-  val assertPredicate: js.Function2[
-    /* predicate */ atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any], 
-    /* errMsg */ java.lang.String | js.Function, 
-    atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any]
-  ] = js.native
-  val beforeAfterSubstr: js.Function1[
-    /* char */ java.lang.String, 
-    js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]]
-  ] = js.native
-  val buildUrl: js.Function1[
-    /* loc */ atUirouterCoreLib.libCommonCoreservicesMod.LocationServices, 
-    java.lang.String
-  ] = js.native
   var defaultResolvePolicy: atUirouterCoreLib.libResolveInterfaceMod.ResolvePolicy = js.native
   var defaultTransOpts: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions = js.native
-  val deregAll: js.Function1[/* functions */ js.Array[js.Function], scala.Unit] = js.native
-  @JSName("eq")
-  val eq_FcoreModMembers: js.Function1[/* comp */ js.Any, atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any]] = js.native
   @JSName("equals")
   val equals_FcoreModMembers: js.Any = js.native
   val extend: atUirouterCoreLib.Anon_Target = js.native
-  val flatten: js.Function1[/* arr */ js.Array[js.Any], js.Any] = js.native
-  val flattenR: js.Function2[/* memo */ js.Array[js.Any], /* elem */ js.Any, js.Any] = js.native
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
-  val getParams: js.Function1[/* queryString */ java.lang.String, js.Any] = js.native
-  val hashLocationPlugin: js.Function1[
-    /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin
-  ] = js.native
   val hostRegex: stdLib.RegExp = js.native
   val inArray: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, scala.Boolean]] = js.native
-  val inherit: js.Function2[
-    /* parent */ atUirouterCoreLib.libCommonCommonMod.Obj, 
-    /* extra */ js.UndefOr[atUirouterCoreLib.libCommonCommonMod.Obj], 
-    js.Any
-  ] = js.native
-  val is: js.Function1[
-    /* ctor */ ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any], 
-    js.Function1[/* obj */ js.Any, /* is any */scala.Boolean]
-  ] = js.native
-  val isArray: js.Function1[/* arg */ js.Any, /* is Array */scala.Boolean] = js.native
-  val isDate: js.Function1[/* x */ js.Any, /* is Date */scala.Boolean] = js.native
   val isDefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
-  val isFunction: js.Function1[/* x */ js.Any, /* is Function */scala.Boolean] = js.native
-  val isNull: js.Function1[/* o */ js.Any, scala.Boolean] = js.native
   val isNullOrUndefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
-  val isNumber: js.Function1[/* x */ js.Any, /* is number */scala.Boolean] = js.native
-  val isObject: js.Function1[/* x */ js.Any, scala.Boolean] = js.native
-  val isPromise: js.Function1[/* x */ js.Any, /* is Promise */scala.Boolean] = js.native
-  val isRegExp: js.Function1[/* x */ js.Any, /* is RegExp */scala.Boolean] = js.native
-  val isString: js.Function1[/* x */ js.Any, /* is string */scala.Boolean] = js.native
-  val isUndefined: js.Function1[/* x */ js.Any, scala.Boolean] = js.native
-  val keyValsToObjectR: js.Function2[/* accum */ js.Any, /* hasKeyVal */ js.Tuple2[js.Any, js.Any], js.Any] = js.native
-  val makeStub: js.Function2[/* service */ java.lang.String, /* methods */ js.Array[java.lang.String], js.Any] = js.native
   var mapObj: js.Function3[
     /* collection */ ScalablyTyped.runtime.StringDictionary[js.Any], 
     /* callback */ atUirouterCoreLib.libCommonCommonMod.Mapper[js.Any, js.Any], 
     /* target */ js.UndefOr[js.Any], 
     ScalablyTyped.runtime.StringDictionary[js.Any]
   ] = js.native
-  val memoryLocationPlugin: js.Function1[
-    /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin
-  ] = js.native
-  val mergeR: js.Function2[
-    /* memo */ atUirouterCoreLib.libCommonCommonMod.Obj, 
-    /* item */ atUirouterCoreLib.libCommonCommonMod.Obj, 
-    atUirouterCoreLib.libCommonCommonMod.Obj
-  ] = js.native
-  val not: js.Function1[
-    /* fn */ atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any], 
-    atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any]
-  ] = js.native
-  val pairs: js.Function1[/* obj */ atUirouterCoreLib.libCommonCommonMod.Obj, js.Array[js.Array[js.Any]]] = js.native
-  val parse: js.Function1[/* name */ java.lang.String, js.Any] = js.native
-  val prop: js.Function1[/* name */ java.lang.String, js.Function1[/* obj */ js.Any, js.Any]] = js.native
   val propEq: js.Function = js.native
-  val pushStateLocationPlugin: js.Function1[
-    /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin
-  ] = js.native
   val pushTo: js.Function1[/* arr */ js.Array[js.Any], js.Function1[/* val */ js.Any, js.Any]] = js.native
   val removeFrom: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, js.Array[js.Any]]] = js.native
   var resolvePolicies: atUirouterCoreLib.Anon_When = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
-  val silenceUncaughtInPromise: js.Function1[/* promise */ js.Promise[js.Any], js.Promise[js.Any]] = js.native
-  val silentRejection: js.Function1[/* error */ js.Any, js.Promise[js.Any]] = js.native
-  val splitEqual: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
-  val splitHash: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
-  val splitQuery: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
-  val stripLastPathElement: js.Function1[/* str */ java.lang.String, java.lang.String] = js.native
   val toJson: js.Any = js.native
   /**
    * The [[Trace]] singleton
@@ -132,12 +47,6 @@ object coreModMembers extends js.Object {
    * ```
    */
   val trace: atUirouterCoreLib.libCommonTraceMod.Trace = js.native
-  val trimHashVal: js.Function1[/* str */ java.lang.String, java.lang.String] = js.native
-  val uniqR: js.Function2[/* acc */ js.Array[js.Any], /* token */ js.Any, js.Array[js.Any]] = js.native
-  val unnest: js.Function1[/* arr */ js.Array[js.Any], js.Any] = js.native
-  val unnestR: js.Function2[/* memo */ js.Array[js.Any], /* elem */ js.Array[js.Any], js.Array[js.Any]] = js.native
-  val `val`: js.Function1[/* v */ js.Any, js.Function0[js.Any]] = js.native
-  val values: js.Function1[/* obj */ atUirouterCoreLib.libCommonCommonMod.TypedMap[js.Any], js.Array[js.Any]] = js.native
   def _extend(
     toObj: atUirouterCoreLib.libCommonCommonMod.Obj,
     fromObjs: atUirouterCoreLib.libCommonCommonMod.Obj*
@@ -148,6 +57,8 @@ object coreModMembers extends js.Object {
   def _pushTo[T](arr: js.Array[T], `val`: T): T = js.native
   def _removeFrom[T](array: js.Array[T]): js.Function1[/* obj */ T, js.Array[T]] = js.native
   def _removeFrom[T](array: js.Array[T], obj: T): js.Array[T] = js.native
+  def all(fn1: atUirouterCoreLib.libCommonCommonMod.Predicate[_]): js.Function1[/* arr */ js.Array[_], scala.Boolean] = js.native
+  def allTrueR(memo: scala.Boolean, elem: js.Any): js.Any = js.native
   def ancestors(
     first: atUirouterCoreLib.libStateStateObjectMod.StateObject,
     second: atUirouterCoreLib.libStateStateObjectMod.StateObject
@@ -156,11 +67,19 @@ object coreModMembers extends js.Object {
     fn1: atUirouterCoreLib.libCommonCommonMod.Predicate[_],
     fn2: atUirouterCoreLib.libCommonCommonMod.Predicate[_]
   ): atUirouterCoreLib.libCommonCommonMod.Predicate[_] = js.native
+  def any(fn1: atUirouterCoreLib.libCommonCommonMod.Predicate[_]): js.Function1[/* arr */ js.Array[_], scala.Boolean] = js.native
+  def anyTrueR(memo: scala.Boolean, elem: js.Any): js.Any = js.native
   def applyPairs(memo: atUirouterCoreLib.libCommonCommonMod.TypedMap[_], keyValTuple: js.Array[_]): atUirouterCoreLib.libCommonCommonMod.TypedMap[_] = js.native
   def arrayTuples(args: js.Any*): js.Array[_] = js.native
   def assertFn(predicateOrMap: js.Function): js.Any = js.native
   def assertFn(predicateOrMap: js.Function, errMsg: java.lang.String): js.Any = js.native
   def assertFn(predicateOrMap: js.Function, errMsg: js.Function): js.Any = js.native
+  def assertMap[T, U](mapFn: js.Function1[/* t */ T, U], errMsg: java.lang.String): js.Function1[/* t */ T, U] = js.native
+  def assertMap[T, U](mapFn: js.Function1[/* t */ T, U], errMsg: js.Function): js.Function1[/* t */ T, U] = js.native
+  def assertPredicate[T](predicate: atUirouterCoreLib.libCommonCommonMod.Predicate[T], errMsg: java.lang.String): atUirouterCoreLib.libCommonCommonMod.Predicate[T] = js.native
+  def assertPredicate[T](predicate: atUirouterCoreLib.libCommonCommonMod.Predicate[T], errMsg: js.Function): atUirouterCoreLib.libCommonCommonMod.Predicate[T] = js.native
+  def beforeAfterSubstr(char: java.lang.String): js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
+  def buildUrl(loc: atUirouterCoreLib.libCommonCoreservicesMod.LocationServices): java.lang.String = js.native
   def compose(): js.Function0[_] = js.native
   def copy(src: atUirouterCoreLib.libCommonCommonMod.Obj): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
   def copy(src: atUirouterCoreLib.libCommonCommonMod.Obj, dest: atUirouterCoreLib.libCommonCommonMod.Obj): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
@@ -180,6 +99,8 @@ object coreModMembers extends js.Object {
   ): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
   def curry(fn: js.Function): js.Function = js.native
   def defaults(opts: js.Any, defaultsList: atUirouterCoreLib.libCommonCommonMod.Obj*): js.Any = js.native
+  def deregAll(functions: js.Array[js.Function]): scala.Unit = js.native
+  def eq(comp: js.Any): atUirouterCoreLib.libCommonCommonMod.Predicate[_] = js.native
   def filter[T](
     collection: atUirouterCoreLib.libCommonCommonMod.TypedMap[T],
     callback: js.Function2[/* t */ T, /* key */ js.UndefOr[java.lang.String], scala.Boolean]
@@ -193,14 +114,32 @@ object coreModMembers extends js.Object {
     callback: atUirouterCoreLib.libCommonCommonMod.Predicate[T]
   ): T = js.native
   def find[T](collection: js.Array[T], callback: atUirouterCoreLib.libCommonCommonMod.Predicate[T]): T = js.native
+  def flatten(arr: js.Array[_]): js.Any = js.native
+  def flattenR(memo: js.Array[_], elem: js.Any): js.Any = js.native
   def fnToString(fn: atUirouterCoreLib.libCommonCommonMod.IInjectable): js.Any = js.native
   def functionToString(fn: js.Function): js.Any = js.native
+  def getParams(queryString: java.lang.String): js.Any = js.native
+  def hashLocationPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin = js.native
   def identity(x: js.Any): js.Any = js.native
+  def inherit(parent: atUirouterCoreLib.libCommonCommonMod.Obj): js.Any = js.native
+  def inherit(parent: atUirouterCoreLib.libCommonCommonMod.Obj, extra: atUirouterCoreLib.libCommonCommonMod.Obj): js.Any = js.native
   def invoke(fnName: java.lang.String): js.Function = js.native
   def invoke(fnName: java.lang.String, args: js.Array[_]): js.Function = js.native
+  def is[T](ctor: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): js.Function1[/* obj */ js.Any, /* is T */scala.Boolean] = js.native
+  def isArray(arg: js.Any): /* is Array */scala.Boolean = js.native
+  def isDate(x: js.Any): /* is Date */scala.Boolean = js.native
+  def isFunction(x: js.Any): /* is Function */scala.Boolean = js.native
   def isInjectable(`val`: js.Any): scala.Boolean = js.native
+  def isNull(o: js.Any): scala.Boolean = js.native
+  def isNumber(x: js.Any): /* is number */scala.Boolean = js.native
+  def isObject(x: js.Any): scala.Boolean = js.native
+  def isPromise(x: js.Any): /* is Promise */scala.Boolean = js.native
+  def isRegExp(x: js.Any): /* is RegExp */scala.Boolean = js.native
+  def isString(x: js.Any): /* is string */scala.Boolean = js.native
+  def isUndefined(x: js.Any): scala.Boolean = js.native
   def joinNeighborsR(acc: js.Array[_], x: js.Any): js.Array[_] = js.native
   def kebobString(camelCase: java.lang.String): java.lang.String = js.native
+  def keyValsToObjectR(accum: js.Any, hasKeyVal: js.Tuple2[_, _]): js.Any = js.native
   def locationPluginFactory(
     name: java.lang.String,
     isHtml5: scala.Boolean,
@@ -220,6 +159,7 @@ object coreModMembers extends js.Object {
     /* options */ js.UndefOr[js.Object], 
     _
   ] = js.native
+  def makeStub[T](service: java.lang.String, methods: js.Array[java.lang.String]): T = js.native
   def map[T, U](
     collection: ScalablyTyped.runtime.StringDictionary[T],
     callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U]
@@ -240,24 +180,43 @@ object coreModMembers extends js.Object {
     criterion: atUirouterCoreLib.libTransitionInterfaceMod.HookMatchCriterion
   ): scala.Boolean = js.native
   def maxLength(max: scala.Double, str: java.lang.String): java.lang.String = js.native
+  def memoryLocationPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin = js.native
+  def mergeR(memo: atUirouterCoreLib.libCommonCommonMod.Obj, item: atUirouterCoreLib.libCommonCommonMod.Obj): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
   def noop(): js.Any = js.native
+  def not(fn: atUirouterCoreLib.libCommonCommonMod.Predicate[_]): atUirouterCoreLib.libCommonCommonMod.Predicate[_] = js.native
   def omit(obj: atUirouterCoreLib.libCommonCommonMod.Obj, propNames: js.Array[java.lang.String]): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
   def or(
     fn1: atUirouterCoreLib.libCommonCommonMod.Predicate[_],
     fn2: atUirouterCoreLib.libCommonCommonMod.Predicate[_]
   ): atUirouterCoreLib.libCommonCommonMod.Predicate[_] = js.native
   def padString(length: scala.Double, str: java.lang.String): java.lang.String = js.native
+  def pairs(obj: atUirouterCoreLib.libCommonCommonMod.Obj): js.Array[js.Array[_]] = js.native
+  def parse(name: java.lang.String): js.Any = js.native
   def parseUrl(url: java.lang.String): atUirouterCoreLib.Anon_Hash = js.native
   def pattern(struct: js.Array[js.Array[js.Function]]): js.Function = js.native
   def pick(obj: atUirouterCoreLib.libCommonCommonMod.Obj, propNames: js.Array[java.lang.String]): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
   def pipe(funcs: js.Function*): js.Function1[/* obj */ js.Any, _] = js.native
   def pluck(collection: ScalablyTyped.runtime.StringDictionary[js.Any], propName: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   def pluck[T](collection: js.Array[atUirouterCoreLib.libCommonCommonMod.Obj], propName: java.lang.String): js.Array[T] = js.native
+  def prop(name: java.lang.String): js.Function1[/* obj */ js.Any, _] = js.native
   def pushR(arr: js.Array[_], obj: js.Any): js.Array[_] = js.native
+  def pushStateLocationPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin = js.native
   def resolvablesBuilder(state: atUirouterCoreLib.libStateStateObjectMod.StateObject): js.Array[atUirouterCoreLib.libResolveResolvableMod.Resolvable] = js.native
   def servicesPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.ServicesPlugin = js.native
+  def silenceUncaughtInPromise(promise: js.Promise[_]): js.Promise[_] = js.native
+  def silentRejection(error: js.Any): js.Promise[_] = js.native
+  def splitEqual(str: java.lang.String): js.Array[java.lang.String] = js.native
+  def splitHash(str: java.lang.String): js.Array[java.lang.String] = js.native
   def splitOnDelim(delim: java.lang.String): js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
+  def splitQuery(str: java.lang.String): js.Array[java.lang.String] = js.native
   def stringify(o: js.Any): java.lang.String = js.native
+  def stripLastPathElement(str: java.lang.String): java.lang.String = js.native
   def tail[T](arr: js.Array[T]): T = js.native
+  def trimHashVal(str: java.lang.String): java.lang.String = js.native
+  def uniqR[T](acc: js.Array[T], token: T): js.Array[T] = js.native
+  def unnest(arr: js.Array[_]): js.Any = js.native
+  def unnestR(memo: js.Array[_], elem: js.Array[_]): js.Array[_] = js.native
+  def `val`[T](v: T): js.Function0[T] = js.native
+  def values[T](obj: atUirouterCoreLib.libCommonCommonMod.TypedMap[T]): js.Array[T] = js.native
 }
 

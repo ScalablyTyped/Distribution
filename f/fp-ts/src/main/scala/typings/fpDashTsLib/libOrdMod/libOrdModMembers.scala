@@ -8,32 +8,23 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Ord", JSImport.Namespace)
 @js.native
 object libOrdModMembers extends js.Object {
-  val between: js.Function1[
-    /* O */ Ord[js.Any], 
-    js.Function2[/* low */ js.Any, /* hi */ js.Any, js.Function1[/* x */ js.Any, scala.Boolean]]
-  ] = js.native
-  val clamp: js.Function1[
-    /* O */ Ord[js.Any], 
-    js.Function2[/* low */ js.Any, /* hi */ js.Any, js.Function1[/* x */ js.Any, js.Any]]
-  ] = js.native
-  val contramap: js.Function2[/* f */ js.Function1[/* b */ js.Any, js.Any], /* fa */ Ord[js.Any], Ord[js.Any]] = js.native
-  val fromCompare: js.Function1[
-    /* compare */ js.Function2[/* x */ js.Any, /* y */ js.Any, fpDashTsLib.libOrderingMod.Ordering], 
-    Ord[js.Any]
-  ] = js.native
-  val getDualOrd: js.Function1[/* O */ Ord[js.Any], Ord[js.Any]] = js.native
-  val getProductOrd: js.Function2[/* OA */ Ord[js.Any], /* OB */ Ord[js.Any], Ord[js.Tuple2[js.Any, js.Any]]] = js.native
-  val getSemigroup: js.Function0[fpDashTsLib.libSemigroupMod.Semigroup[Ord[js.Any]]] = js.native
-  val greaterThan: js.Function1[/* O */ Ord[js.Any], js.Function2[/* x */ js.Any, /* y */ js.Any, scala.Boolean]] = js.native
-  val greaterThanOrEq: js.Function1[/* O */ Ord[js.Any], js.Function2[/* x */ js.Any, /* y */ js.Any, scala.Boolean]] = js.native
-  val lessThan: js.Function1[/* O */ Ord[js.Any], js.Function2[/* x */ js.Any, /* y */ js.Any, scala.Boolean]] = js.native
-  val lessThanOrEq: js.Function1[/* O */ Ord[js.Any], js.Function2[/* x */ js.Any, /* y */ js.Any, scala.Boolean]] = js.native
-  val max: js.Function1[/* O */ Ord[js.Any], js.Function2[/* x */ js.Any, /* y */ js.Any, js.Any]] = js.native
-  val min: js.Function1[/* O */ Ord[js.Any], js.Function2[/* x */ js.Any, /* y */ js.Any, js.Any]] = js.native
   val ordBoolean: Ord[scala.Boolean] = js.native
   val ordDate: Ord[stdLib.Date] = js.native
   val ordNumber: Ord[scala.Double] = js.native
   val ordString: Ord[java.lang.String] = js.native
-  val unsafeCompare: js.Function2[/* x */ js.Any, /* y */ js.Any, fpDashTsLib.libOrderingMod.Ordering] = js.native
+  def between[A](O: Ord[A]): js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, scala.Boolean]] = js.native
+  def clamp[A](O: Ord[A]): js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, A]] = js.native
+  def contramap[A, B](f: js.Function1[/* b */ B, A], fa: Ord[A]): Ord[B] = js.native
+  def fromCompare[A](compare: js.Function2[/* x */ A, /* y */ A, fpDashTsLib.libOrderingMod.Ordering]): Ord[A] = js.native
+  def getDualOrd[A](O: Ord[A]): Ord[A] = js.native
+  def getProductOrd[A, B](OA: Ord[A], OB: Ord[B]): Ord[js.Tuple2[A, B]] = js.native
+  def getSemigroup[A](): fpDashTsLib.libSemigroupMod.Semigroup[Ord[A]] = js.native
+  def greaterThan[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
+  def greaterThanOrEq[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
+  def lessThan[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
+  def lessThanOrEq[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
+  def max[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, A] = js.native
+  def min[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, A] = js.native
+  def unsafeCompare(x: js.Any, y: js.Any): fpDashTsLib.libOrderingMod.Ordering = js.native
 }
 

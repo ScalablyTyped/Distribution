@@ -357,10 +357,12 @@ trait Core extends js.Object {
   def getSourceDataAtCell(row: scala.Double, column: scala.Double): js.Any = js.native
   def getSourceDataAtCol(column: scala.Double): js.Array[_] = js.native
   def getSourceDataAtRow(row: scala.Double): js.Array[_] | js.Object = js.native
+  def getTranslatedPhrase(dictionaryKey: java.lang.String, extraArguments: js.Any): java.lang.String | scala.Null = js.native
   def getValue(): js.Any = js.native
   def hasColHeaders(): scala.Boolean = js.native
   def hasHook(key: java.lang.String): scala.Boolean = js.native
   def hasRowHeaders(): scala.Boolean = js.native
+  def isColumnModificationAllowed(): scala.Boolean = js.native
   def isEmptyCol(col: scala.Double): scala.Boolean = js.native
   def isEmptyRow(row: scala.Double): scala.Boolean = js.native
   def isListening(): scala.Boolean = js.native
@@ -497,5 +499,7 @@ trait Core extends js.Object {
   def unlisten(): scala.Unit = js.native
   def updateSettings(settings: handsontableLib.handsontableMod.HandsontableNs.DefaultSettings, init: scala.Boolean): scala.Unit = js.native
   def validateCells(callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def validateColumns(columns: js.Array[scala.Double], callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def validateRows(rows: js.Array[scala.Double], callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit = js.native
 }
 

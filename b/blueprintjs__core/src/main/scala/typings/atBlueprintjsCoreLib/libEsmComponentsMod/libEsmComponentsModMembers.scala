@@ -51,15 +51,6 @@ object libEsmComponentsModMembers extends js.Object {
   val UL: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLUListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLUListElement]
   ] = js.native
-  val getKeyCombo: js.Function1[
-    /* e */ reactLib.KeyboardEvent, 
-    atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo
-  ] = js.native
-  val getKeyComboString: js.Function1[/* e */ reactLib.KeyboardEvent, java.lang.String] = js.native
-  val parseKeyCombo: js.Function1[
-    /* combo */ java.lang.String, 
-    atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo
-  ] = js.native
   def ContextMenuTarget[T /* <: atBlueprintjsCoreLib.libEsmCommonConstructorMod.IConstructor[
     atBlueprintjsCoreLib.libEsmComponentsContextDashMenuContextMenuTargetMod.IContextMenuTargetComponent
   ] */](WrappedComponent: T): atBlueprintjsCoreLib.Anon_DisplayNameArgs with T = js.native
@@ -70,7 +61,10 @@ object libEsmComponentsModMembers extends js.Object {
     a: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo,
     b: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo
   ): scala.Boolean = js.native
+  def getKeyCombo(e: reactLib.KeyboardEvent): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
+  def getKeyComboString(e: reactLib.KeyboardEvent): java.lang.String = js.native
   def hideHotkeysDialog(): scala.Unit = js.native
+  def parseKeyCombo(combo: java.lang.String): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
   def setHotkeysDialogProps(
     props: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysDialogMod.IHotkeysDialogProps]
   ): scala.Unit = js.native

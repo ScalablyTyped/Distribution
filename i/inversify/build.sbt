@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inversify"
-version := "5.0.1-0b5530"
+version := "5.0.1-813886"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MongoStore
-  extends expressDashSessionLib.expressDashSessionMod.Store
+  extends expressDashSessionLib.expressDashSessionMod.Store {
+  def close(): scala.Unit = js.native
+}
 

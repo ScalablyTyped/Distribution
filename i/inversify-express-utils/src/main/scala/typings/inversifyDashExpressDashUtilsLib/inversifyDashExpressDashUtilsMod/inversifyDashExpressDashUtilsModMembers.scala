@@ -9,21 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object inversifyDashExpressDashUtilsModMembers extends js.Object {
   val TYPE: inversifyDashExpressDashUtilsLib.Anon_HttpContext = js.native
-  val cookies: js.Function1[/* cookieName */ js.UndefOr[java.lang.String], stdLib.ParameterDecorator] = js.native
-  val injectHttpContext: js.Function3[
-    /* target */ js.Any, 
-    /* targetKey */ java.lang.String, 
-    /* index */ js.UndefOr[scala.Double], 
-    scala.Unit
-  ] = js.native
-  val next: js.Function0[stdLib.ParameterDecorator] = js.native
-  val principal: js.Function0[stdLib.ParameterDecorator] = js.native
-  val queryParam: js.Function1[/* queryParamName */ js.UndefOr[java.lang.String], stdLib.ParameterDecorator] = js.native
-  val request: js.Function0[stdLib.ParameterDecorator] = js.native
-  val requestBody: js.Function0[stdLib.ParameterDecorator] = js.native
-  val requestHeaders: js.Function1[/* headerName */ js.UndefOr[java.lang.String], stdLib.ParameterDecorator] = js.native
-  val requestParam: js.Function1[/* paramName */ js.UndefOr[java.lang.String], stdLib.ParameterDecorator] = js.native
-  val response: js.Function0[stdLib.ParameterDecorator] = js.native
   def all(
     path: java.lang.String,
     middleware: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Middleware*
@@ -33,6 +18,8 @@ object inversifyDashExpressDashUtilsModMembers extends js.Object {
     path: java.lang.String,
     middleware: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Middleware*
   ): js.Function1[/* target */ js.Any, scala.Unit] = js.native
+  def cookies(): stdLib.ParameterDecorator = js.native
+  def cookies(cookieName: java.lang.String): stdLib.ParameterDecorator = js.native
   def getRawMetadata(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container): js.Array[inversifyDashExpressDashUtilsLib.Anon_MethodMetadata] = js.native
   def getRouteInfo(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container): js.Array[inversifyDashExpressDashUtilsLib.Anon_Endpoints] = js.native
   def httpDelete(
@@ -64,5 +51,18 @@ object inversifyDashExpressDashUtilsModMembers extends js.Object {
     path: java.lang.String,
     middleware: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Middleware*
   ): inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.HandlerDecorator = js.native
+  def injectHttpContext(target: js.Any, targetKey: java.lang.String): scala.Unit = js.native
+  def injectHttpContext(target: js.Any, targetKey: java.lang.String, index: scala.Double): scala.Unit = js.native
+  def next(): stdLib.ParameterDecorator = js.native
+  def principal(): stdLib.ParameterDecorator = js.native
+  def queryParam(): stdLib.ParameterDecorator = js.native
+  def queryParam(queryParamName: java.lang.String): stdLib.ParameterDecorator = js.native
+  def request(): stdLib.ParameterDecorator = js.native
+  def requestBody(): stdLib.ParameterDecorator = js.native
+  def requestHeaders(): stdLib.ParameterDecorator = js.native
+  def requestHeaders(headerName: java.lang.String): stdLib.ParameterDecorator = js.native
+  def requestParam(): stdLib.ParameterDecorator = js.native
+  def requestParam(paramName: java.lang.String): stdLib.ParameterDecorator = js.native
+  def response(): stdLib.ParameterDecorator = js.native
 }
 

@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/DatePicker", JSImport.Namespace)
 @js.native
 object libComponentsDatePickerModMembers extends js.Object {
-  val DatePicker: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDatePickerDatePickerDotTypesMod.IDatePickerProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
+  def DatePicker(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDatePickerDatePickerDotTypesMod.IDatePickerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

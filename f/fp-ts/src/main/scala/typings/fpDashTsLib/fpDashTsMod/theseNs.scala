@@ -27,39 +27,18 @@ object theseNs extends js.Object {
   }
   
   val URI: /* These */ java.lang.String = js.native
-  val both: js.Function2[/* l */ js.Any, /* a */ js.Any, fpDashTsLib.libTheseMod.These[js.Any, js.Any]] = js.native
-  val fromThese: js.Function2[
-    /* defaultThis */ js.Any, 
-    /* defaultThat */ js.Any, 
-    js.Function1[/* fa */ fpDashTsLib.libTheseMod.These[js.Any, js.Any], js.Tuple2[js.Any, js.Any]]
-  ] = js.native
-  val getMonad: js.Function1[
-    /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
-    fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.These, js.Any]
-  ] = js.native
-  val getSemigroup: js.Function2[
-    /* SL */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
-    /* SA */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
-    fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTheseMod.These[js.Any, js.Any]]
-  ] = js.native
-  val getSetoid: js.Function2[
-    /* SL */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    /* SA */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libTheseMod.These[js.Any, js.Any]]
-  ] = js.native
-  val isBoth: js.Function1[/* fa */ fpDashTsLib.libTheseMod.These[js.Any, js.Any], /* is Both */scala.Boolean] = js.native
-  val isThat: js.Function1[/* fa */ fpDashTsLib.libTheseMod.These[js.Any, js.Any], /* is That */scala.Boolean] = js.native
-  val isThis: js.Function1[/* fa */ fpDashTsLib.libTheseMod.These[js.Any, js.Any], /* is This */scala.Boolean] = js.native
-  val that: js.Function1[/* a */ js.Any, fpDashTsLib.libTheseMod.These[js.Any, js.Any]] = js.native
   val these: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libTheseMod.URI] = js.native
-  val theseLeft: js.Function1[
-    /* fa */ fpDashTsLib.libTheseMod.These[js.Any, js.Any], 
-    fpDashTsLib.libOptionMod.Option[js.Any]
-  ] = js.native
-  val theseRight: js.Function1[
-    /* fa */ fpDashTsLib.libTheseMod.These[js.Any, js.Any], 
-    fpDashTsLib.libOptionMod.Option[js.Any]
-  ] = js.native
-  val `this_`: js.Function1[/* l */ js.Any, fpDashTsLib.libTheseMod.These[js.Any, js.Any]] = js.native
+  def both[L, A](l: L, a: A): fpDashTsLib.libTheseMod.These[L, A] = js.native
+  def fromThese[L, A](defaultThis: L, defaultThat: A): js.Function1[/* fa */ fpDashTsLib.libTheseMod.These[L, A], js.Tuple2[L, A]] = js.native
+  def getMonad[L](S: fpDashTsLib.libSemigroupMod.Semigroup[L]): fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.These, L] = js.native
+  def getSemigroup[L, A](SL: fpDashTsLib.libSemigroupMod.Semigroup[L], SA: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTheseMod.These[L, A]] = js.native
+  def getSetoid[L, A](SL: fpDashTsLib.libSetoidMod.Setoid[L], SA: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libTheseMod.These[L, A]] = js.native
+  def isBoth[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): /* is Both */scala.Boolean = js.native
+  def isThat[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): /* is That */scala.Boolean = js.native
+  def isThis[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): /* is This */scala.Boolean = js.native
+  def that[L, A](a: A): fpDashTsLib.libTheseMod.These[L, A] = js.native
+  def theseLeft[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): fpDashTsLib.libOptionMod.Option[L] = js.native
+  def theseRight[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): fpDashTsLib.libOptionMod.Option[A] = js.native
+  def `this_`[L, A](l: L): fpDashTsLib.libTheseMod.These[L, A] = js.native
 }
 

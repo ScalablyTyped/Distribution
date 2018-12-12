@@ -12,16 +12,6 @@ object distExportsModMembers extends js.Object {
   val attachConnectorsToContext: js.Function = js.native
   val defaultMergedResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
   val defaultPlaygroundOptions: apolloDashServerDashCoreLib.Anon_Settings = js.native
-  val gql: js.Function2[
-    /* template */ stdLib.TemplateStringsArray | java.lang.String, 
-    /* repeated */js.Any, 
-    graphqlLib.languageAstMod.DocumentNode
-  ] = js.native
-  val withFilter: js.Function2[
-    /* asyncIteratorFn */ graphqlDashSubscriptionsLib.distWithDashFilterMod.ResolverFn, 
-    /* filterFn */ graphqlDashSubscriptionsLib.distWithDashFilterMod.FilterFn, 
-    graphqlDashSubscriptionsLib.distWithDashFilterMod.ResolverFn
-  ] = js.native
   def addCatchUndefinedToSchema(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native
   def addErrorLoggingToSchema(schema: graphqlLib.graphqlMod.GraphQLSchema, logger: graphqlDashToolsLib.distInterfacesMod.ILogger): scala.Unit = js.native
   def addMockFunctionsToSchema(hasSchemaMocksPreserveResolvers: graphqlDashToolsLib.distInterfacesMod.IMockOptions): scala.Unit = js.native
@@ -106,6 +96,8 @@ object distExportsModMembers extends js.Object {
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     fn: graphqlDashToolsLib.distInterfacesMod.IFieldIteratorFn
   ): scala.Unit = js.native
+  def gql(template: java.lang.String, substitutions: js.Any*): graphqlLib.languageAstMod.DocumentNode = js.native
+  def gql(template: stdLib.TemplateStringsArray, substitutions: js.Any*): graphqlLib.languageAstMod.DocumentNode = js.native
   def introspectSchema(fetcher: apolloDashLinkLib.apolloDashLinkMod.ApolloLink): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
   def introspectSchema(
     fetcher: apolloDashLinkLib.apolloDashLinkMod.ApolloLink,
@@ -144,5 +136,9 @@ object distExportsModMembers extends js.Object {
     targetSchema: graphqlLib.graphqlMod.GraphQLSchema,
     transforms: js.Array[graphqlDashToolsLib.distInterfacesMod.Transform]
   ): graphqlLib.graphqlMod.GraphQLSchema with graphqlDashToolsLib.Anon_Transforms = js.native
+  def withFilter(
+    asyncIteratorFn: graphqlDashSubscriptionsLib.distWithDashFilterMod.ResolverFn,
+    filterFn: graphqlDashSubscriptionsLib.distWithDashFilterMod.FilterFn
+  ): graphqlDashSubscriptionsLib.distWithDashFilterMod.ResolverFn = js.native
 }
 

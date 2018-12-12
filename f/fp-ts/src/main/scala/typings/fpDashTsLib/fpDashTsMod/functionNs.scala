@@ -8,49 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts", "function")
 @js.native
 object functionNs extends js.Object {
-  val and: js.Function2[
-    /* p1 */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    /* p2 */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    fpDashTsLib.libFunctionMod.Predicate[js.Any]
-  ] = js.native
-  @JSName("apply")
-  val apply: js.Function1[/* f */ js.Function1[/* a */ js.Any, js.Any], js.Function1[/* a */ js.Any, js.Any]] = js.native
-  val applyFlipped: js.Function1[/* a */ js.Any, js.Function1[/* f */ js.Function1[/* a */ js.Any, js.Any], js.Any]] = js.native
-  val concat: js.Function2[
-    /* x */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
-    /* y */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
-    fpDashTsLib.libArrayMod.Global.Array[js.Any]
-  ] = js.native
-  val constFalse: js.Function0[scala.Boolean] = js.native
-  val constIdentity: js.Function0[js.Function1[/* a */ js.Any, js.Any]] = js.native
-  val constNull: js.Function0[scala.Null] = js.native
-  val constTrue: js.Function0[scala.Boolean] = js.native
-  val constUndefined: js.Function0[js.UndefOr[scala.Nothing]] = js.native
-  val constant: js.Function1[/* a */ js.Any, fpDashTsLib.libFunctionMod.Lazy[js.Any]] = js.native
-  val decrement: js.Function1[/* n */ scala.Double, scala.Double] = js.native
-  val flip: js.Function1[
-    /* f */ fpDashTsLib.libFunctionMod.Curried2[js.Any, js.Any, js.Any], 
-    fpDashTsLib.libFunctionMod.Curried2[js.Any, js.Any, js.Any]
-  ] = js.native
-  val identity: js.Function1[/* a */ js.Any, js.Any] = js.native
-  val increment: js.Function1[/* n */ scala.Double, scala.Double] = js.native
-  val not: js.Function1[
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    fpDashTsLib.libFunctionMod.Predicate[js.Any]
-  ] = js.native
-  val on: js.Function1[
-    /* op */ fpDashTsLib.libFunctionMod.BinaryOperation[js.Any, js.Any], 
-    js.Function1[
-      /* f */ js.Function1[/* a */ js.Any, js.Any], 
-      fpDashTsLib.libFunctionMod.BinaryOperation[js.Any, js.Any]
-    ]
-  ] = js.native
   val phantom: js.Any = js.native
-  @JSName("toString")
-  val toString_FfunctionNs: js.Function1[/* x */ js.Any, java.lang.String] = js.native
-  val tuple: js.Function2[/* a */ js.Any, /* b */ js.Any, js.Tuple2[js.Any, js.Any]] = js.native
-  val tupleCurried: js.Function1[/* a */ js.Any, js.Function1[/* b */ js.Any, js.Tuple2[js.Any, js.Any]]] = js.native
-  val unsafeCoerce: js.Function1[/* a */ js.Any, js.Any] = js.native
+  def and[A](p1: fpDashTsLib.libFunctionMod.Predicate[A], p2: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libFunctionMod.Predicate[A] = js.native
+  @JSName("apply")
+  def apply[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = js.native
+  def applyFlipped[A](a: A): js.Function1[/* f */ js.Function1[/* a */ A, _], _] = js.native
   def compose[A, B, C](bc: js.Function1[/* b */ B, C], ab: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, C] = js.native
   def compose[A, B, C, D](cd: js.Function1[/* c */ C, D], bc: js.Function1[/* b */ B, C], ab: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, D] = js.native
   def compose[A, B, C, D, E](
@@ -104,6 +66,13 @@ object functionNs extends js.Object {
     bc: js.Function1[/* b */ B, C],
     ab: js.Function1[/* a */ A, B]
   ): js.Function1[/* a */ A, J] = js.native
+  def concat[A](x: fpDashTsLib.libArrayMod.Global.Array[A], y: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
+  def constFalse(): scala.Boolean = js.native
+  def constIdentity(): js.Function1[/* a */ js.Any, _] = js.native
+  def constNull(): scala.Null = js.native
+  def constTrue(): scala.Boolean = js.native
+  def constUndefined(): js.UndefOr[scala.Nothing] = js.native
+  def constant[A](a: A): fpDashTsLib.libFunctionMod.Lazy[A] = js.native
   def curried(f: js.Function, n: scala.Double, acc: fpDashTsLib.libArrayMod.Global.Array[_]): js.ThisFunction1[/* this */ js.Any, /* x */ js.Any, _] = js.native
   def curry[A, B, C](f: fpDashTsLib.libFunctionMod.Function2[A, B, C]): fpDashTsLib.libFunctionMod.Curried2[A, B, C] = js.native
   def curry[A, B, C, D](f: fpDashTsLib.libFunctionMod.Function3[A, B, C, D]): fpDashTsLib.libFunctionMod.Curried3[A, B, C, D] = js.native
@@ -113,6 +82,15 @@ object functionNs extends js.Object {
   def curry[A, B, C, D, E, F, G, H](f: fpDashTsLib.libFunctionMod.Function7[A, B, C, D, E, F, G, H]): fpDashTsLib.libFunctionMod.Curried7[A, B, C, D, E, F, G, H] = js.native
   def curry[A, B, C, D, E, F, G, H, I](f: fpDashTsLib.libFunctionMod.Function8[A, B, C, D, E, F, G, H, I]): fpDashTsLib.libFunctionMod.Curried8[A, B, C, D, E, F, G, H, I] = js.native
   def curry[A, B, C, D, E, F, G, H, I, J](f: fpDashTsLib.libFunctionMod.Function9[A, B, C, D, E, F, G, H, I, J]): fpDashTsLib.libFunctionMod.Curried9[A, B, C, D, E, F, G, H, I, J] = js.native
+  def decrement(n: scala.Double): scala.Double = js.native
+  def flip[A, B, C](f: fpDashTsLib.libFunctionMod.Curried2[A, B, C]): fpDashTsLib.libFunctionMod.Curried2[B, A, C] = js.native
+  def identity[A](a: A): A = js.native
+  def increment(n: scala.Double): scala.Double = js.native
+  def not[A](predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libFunctionMod.Predicate[A] = js.native
+  def on[B, C](op: fpDashTsLib.libFunctionMod.BinaryOperation[B, C]): js.Function1[
+    /* f */ js.Function1[/* a */ js.Any, B], 
+    fpDashTsLib.libFunctionMod.BinaryOperation[_, C]
+  ] = js.native
   def or[A](p1: fpDashTsLib.libFunctionMod.Predicate[A], p2: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libFunctionMod.Predicate[A] = js.native
   @JSName("or")
   def or_AB1AB2ARefinement[A, B1 /* <: A */, B2 /* <: A */](p1: fpDashTsLib.libFunctionMod.Refinement[A, B1], p2: fpDashTsLib.libFunctionMod.Refinement[A, B2]): fpDashTsLib.libFunctionMod.Refinement[A, B1 | B2] = js.native
@@ -169,5 +147,9 @@ object functionNs extends js.Object {
     hi: js.Function1[/* h */ H, I],
     ij: js.Function1[/* i */ I, J]
   ): js.Function1[/* a */ A, J] = js.native
+  def toString(x: js.Any): java.lang.String = js.native
+  def tuple[A, B](a: A, b: B): js.Tuple2[A, B] = js.native
+  def tupleCurried[A](a: A): js.Function1[/* b */ js.Any, js.Tuple2[A, _]] = js.native
+  def unsafeCoerce[A, B](a: A): B = js.native
 }
 

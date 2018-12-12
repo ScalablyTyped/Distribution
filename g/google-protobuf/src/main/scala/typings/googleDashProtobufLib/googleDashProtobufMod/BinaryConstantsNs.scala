@@ -20,7 +20,6 @@ object BinaryConstantsNs extends js.Object {
   val FLOAT64_EPS: scala.Double = js.native
   val FLOAT64_MAX: scala.Double = js.native
   val FLOAT64_MIN: scala.Double = js.native
-  val FieldTypeToWireType: js.Function1[/* fieldType */ FieldType, WireType] = js.native
   val INVALID_FIELD_NUMBER: scala.Double = js.native
   val TWO_TO_20: scala.Double = js.native
   val TWO_TO_23: scala.Double = js.native
@@ -30,6 +29,7 @@ object BinaryConstantsNs extends js.Object {
   val TWO_TO_63: scala.Double = js.native
   val TWO_TO_64: scala.Double = js.native
   val ZERO_HASH: java.lang.String = js.native
+  def FieldTypeToWireType(fieldType: FieldType): WireType = js.native
   @js.native
   object FieldType extends js.Object {
     @js.native

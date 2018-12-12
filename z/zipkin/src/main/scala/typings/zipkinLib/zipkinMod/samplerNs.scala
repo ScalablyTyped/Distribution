@@ -24,7 +24,7 @@ object samplerNs extends js.Object {
     override def shouldSample(traceId: zipkinLib.zipkinMod.zipkinNs.TraceId): zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[scala.Boolean] = js.native
   }
   
-  val alwaysSample: js.Function1[/* traceId */ zipkinLib.zipkinMod.zipkinNs.TraceId, scala.Boolean] = js.native
-  val neverSample: js.Function1[/* traceId */ zipkinLib.zipkinMod.zipkinNs.TraceId, scala.Boolean] = js.native
+  def alwaysSample(traceId: zipkinLib.zipkinMod.zipkinNs.TraceId): scala.Boolean = js.native
+  def neverSample(traceId: zipkinLib.zipkinMod.zipkinNs.TraceId): scala.Boolean = js.native
 }
 

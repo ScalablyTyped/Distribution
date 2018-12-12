@@ -9,14 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libIOModMembers extends js.Object {
   val URI: /* IO */ java.lang.String = js.native
-  val getMonoid: js.Function1[
-    /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-    fpDashTsLib.libMonoidMod.Monoid[IO[js.Any]]
-  ] = js.native
-  val getSemigroup: js.Function1[
-    /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
-    fpDashTsLib.libSemigroupMod.Semigroup[IO[js.Any]]
-  ] = js.native
   val io: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libMonadIOMod.MonadIO1[URI] = js.native
+  def getMonoid[A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[IO[A]] = js.native
+  def getSemigroup[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[IO[A]] = js.native
 }
 

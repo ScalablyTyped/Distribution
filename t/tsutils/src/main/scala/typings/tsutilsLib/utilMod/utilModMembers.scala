@@ -8,21 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("tsutils/util", JSImport.Namespace)
 @js.native
 object utilModMembers extends js.Object {
-  val isNodeFlagSet: js.Function2[
-    /* node */ typescriptLib.typescriptMod.tsNs.Node, 
-    /* flag */ typescriptLib.typescriptMod.tsNs.NodeFlags, 
-    scala.Boolean
-  ] = js.native
-  val isSymbolFlagSet: js.Function2[
-    /* symbol */ typescriptLib.typescriptMod.tsNs.Symbol, 
-    /* flag */ typescriptLib.typescriptMod.tsNs.SymbolFlags, 
-    scala.Boolean
-  ] = js.native
-  val isTypeFlagSet: js.Function2[
-    /* type */ typescriptLib.typescriptMod.tsNs.Type, 
-    /* flag */ typescriptLib.typescriptMod.tsNs.TypeFlags, 
-    scala.Boolean
-  ] = js.native
   def canHaveJsDoc(node: typescriptLib.typescriptMod.tsNs.Node): /* is HasJSDoc */scala.Boolean = js.native
   def collectVariableUsage(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): stdLib.Map[typescriptLib.typescriptMod.tsNs.Identifier, tsutilsLib.utilUsageMod.VariableInfo] = js.native
   def convertAst(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): tsutilsLib.utilConvertDashAstMod.ConvertedAst = js.native
@@ -162,6 +147,7 @@ object utilModMembers extends js.Object {
     flag: typescriptLib.typescriptMod.tsNs.ModifierFlags
   ): scala.Boolean = js.native
   def isModifierFlagSet(node: typescriptLib.typescriptMod.tsNs.Node, flag: typescriptLib.typescriptMod.tsNs.ModifierFlags): scala.Boolean = js.native
+  def isNodeFlagSet(node: typescriptLib.typescriptMod.tsNs.Node, flag: typescriptLib.typescriptMod.tsNs.NodeFlags): scala.Boolean = js.native
   def isNodeKind(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): scala.Boolean = js.native
   def isObjectFlagSet(
     objectType: typescriptLib.typescriptMod.tsNs.ObjectType,
@@ -182,6 +168,10 @@ object utilModMembers extends js.Object {
     options: typescriptLib.typescriptMod.tsNs.CompilerOptions,
     option: tsutilsLib.utilUtilMod.StrictCompilerOption
   ): scala.Boolean = js.native
+  def isSymbolFlagSet(
+    symbol: typescriptLib.typescriptMod.tsNs.Symbol,
+    flag: typescriptLib.typescriptMod.tsNs.SymbolFlags
+  ): scala.Boolean = js.native
   def isThenableType(
     checker: typescriptLib.typescriptMod.tsNs.TypeChecker,
     node: typescriptLib.typescriptMod.tsNs.Expression
@@ -201,6 +191,7 @@ object utilModMembers extends js.Object {
     checker: typescriptLib.typescriptMod.tsNs.TypeChecker,
     `type`: typescriptLib.typescriptMod.tsNs.Type
   ): scala.Boolean = js.native
+  def isTypeFlagSet(`type`: typescriptLib.typescriptMod.tsNs.Type, flag: typescriptLib.typescriptMod.tsNs.TypeFlags): scala.Boolean = js.native
   def isTypeNodeKind(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): scala.Boolean = js.native
   def isValidIdentifier(text: java.lang.String): scala.Boolean = js.native
   def isValidNumericLiteral(text: java.lang.String): scala.Boolean = js.native

@@ -19,6 +19,9 @@ object reactDashRouterLibStrings {
   sealed trait REPLACE extends js.Object
   
   @js.native
+  sealed trait RouteChildrenProps extends js.Object
+  
+  @js.native
   sealed trait RouteComponentProps extends js.Object
   
   @js.native
@@ -34,6 +37,7 @@ object reactDashRouterLibStrings {
   def Anon_Route: Anon_Route = "Anon_Route".asInstanceOf[Anon_Route]
   def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
   def REPLACE: REPLACE = "REPLACE".asInstanceOf[REPLACE]
+  def RouteChildrenProps: RouteChildrenProps = "RouteChildrenProps".asInstanceOf[RouteChildrenProps]
   def RouteComponentProps: RouteComponentProps = "RouteComponentProps".asInstanceOf[RouteComponentProps]
   def RouterChildContext: RouterChildContext = "RouterChildContext".asInstanceOf[RouterChildContext]
   def `match`: `match` = "match".asInstanceOf[`match`]

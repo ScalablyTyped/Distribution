@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "striptags"
-version := "3.1.1-0d3a69"
+version := "3.1.1-6a296c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

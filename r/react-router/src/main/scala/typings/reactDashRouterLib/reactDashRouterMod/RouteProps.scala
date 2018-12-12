@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait RouteProps extends js.Object {
   var children: js.UndefOr[
     (js.Function1[
-      /* props */ RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState], 
+      /* props */ RouteChildrenProps[_, historyLib.historyMod.LocationState], 
       reactLib.reactMod.ReactNs.ReactNode
     ]) | reactLib.reactMod.ReactNs.ReactNode
   ] = js.undefined

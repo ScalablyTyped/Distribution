@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object componentsMenuModMembers extends js.Object {
   val Menu: reactLib.reactMod.ReactNs.StatelessComponent[MenuProps] = js.native
   val MenuItem: reactLib.reactMod.ReactNs.StatelessComponent[MenuItemProps] = js.native
-  val MenuText: js.Function1[/* props */ MenuItemProps, reactLib.reactMod.Global.JSXNs.Element] = js.native
+  def MenuText(props: MenuItemProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

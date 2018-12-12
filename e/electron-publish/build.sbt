@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-publish"
-version := "20.38.3-931ddf"
+version := "20.38.3-3fb3b5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,12 +11,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.0-1456ae",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-b88fdf",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.6-460360",
-  "org.scalablytyped" %%% "builder-util" % "9.6.0-87252e",
+  "org.scalablytyped" %%% "builder-util" % "9.6.0-a5be1c",
   "org.scalablytyped" %%% "builder-util-runtime" % "8.1.0-6396c4",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-de9d5d",
+  "org.scalablytyped" %%% "chalk" % "2.4.1-76fe8f",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-f388aa",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-c10888",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-7b17da",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-404a30",
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20180910Z-4e7716",
   "org.scalablytyped" %%% "fs-extra-p" % "7.0.0-0b071e",
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180910Z-c063b2",

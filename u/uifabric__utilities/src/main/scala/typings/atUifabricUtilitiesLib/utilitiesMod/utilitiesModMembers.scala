@@ -13,11 +13,6 @@ object utilitiesModMembers extends js.Object {
   val DATA_PORTAL_ATTRIBUTE: /* data-portal-element */ java.lang.String = js.native
   val IsFocusVisibleClassName: /* ms-Fabric--isFocusVisible */ java.lang.String = js.native
   val KeyCodes: atUifabricUtilitiesLib.Anon_E = js.native
-  val allowScrollOnElement: js.Function2[
-    /* element */ reactLib.HTMLElement | scala.Null, 
-    /* events */ atUifabricUtilitiesLib.libEventGroupMod.EventGroup, 
-    scala.Unit
-  ] = js.native
   val anchorProperties: js.Array[java.lang.String] = js.native
   val baseElementEvents: js.Array[java.lang.String] = js.native
   val baseElementProperties: js.Array[java.lang.String] = js.native
@@ -26,10 +21,11 @@ object utilitiesModMembers extends js.Object {
   val htmlElementProperties: js.Array[java.lang.String] = js.native
   val imageProperties: js.Array[java.lang.String] = js.native
   val inputProperties: js.Array[java.lang.String] = js.native
-  val isIOS: js.Function0[scala.Boolean] = js.native
   val textAreaProperties: js.Array[java.lang.String] = js.native
   def addDirectionalKeyCode(which: scala.Double): scala.Unit = js.native
   def addElementAtIndex[T](array: js.Array[T], index: scala.Double, itemToAdd: T): js.Array[T] = js.native
+  def allowScrollOnElement(element: reactLib.HTMLElement, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
+  def allowScrollOnElement(element: scala.Null, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
   def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): scala.Boolean = js.native
   def asAsync[TProps](options: atUifabricUtilitiesLib.libAsAsyncMod.IAsAsyncOptions[TProps]): reactLib.reactMod.ReactNs.ComponentType[TProps with atUifabricUtilitiesLib.Anon_AsyncPlaceholder] = js.native
   def assertNever(x: scala.Nothing): scala.Nothing = js.native
@@ -201,6 +197,7 @@ object utilitiesModMembers extends js.Object {
   def isElementTabbable(element: reactLib.HTMLElement, checkTabIndex: scala.Boolean): scala.Boolean = js.native
   def isElementVisible(): scala.Boolean = js.native
   def isElementVisible(element: reactLib.HTMLElement): scala.Boolean = js.native
+  def isIOS(): scala.Boolean = js.native
   def isMac(): scala.Boolean = js.native
   def isMac(reset: scala.Boolean): scala.Boolean = js.native
   def mapEnumByName[T](

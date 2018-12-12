@@ -36,16 +36,17 @@ object ProjNs extends js.Object {
     var transformation: js.UndefOr[leafletLib.leafletMod.Transformation] = js.undefined
   }
   
-  val geoJson: js.Function2[
-    /* geojson */ js.UndefOr[proj4leafletLib.proj4leafletMod.Proj4GeoJSONFeature], 
-    /* options */ js.UndefOr[leafletLib.leafletMod.GeoJSONOptions[js.Any]], 
-    GeoJSON
-  ] = js.native
-  val imageOverlay: js.Function3[
-    /* imageUrl */ java.lang.String, 
-    /* bounds */ leafletLib.leafletMod.LatLngBoundsExpression, 
-    /* options */ js.UndefOr[leafletLib.leafletMod.ImageOverlayOptions], 
-    ImageOverlay
-  ] = js.native
+  def geoJson(): GeoJSON = js.native
+  def geoJson(geojson: proj4leafletLib.proj4leafletMod.Proj4GeoJSONFeature): GeoJSON = js.native
+  def geoJson(
+    geojson: proj4leafletLib.proj4leafletMod.Proj4GeoJSONFeature,
+    options: leafletLib.leafletMod.GeoJSONOptions[_]
+  ): GeoJSON = js.native
+  def imageOverlay(imageUrl: java.lang.String, bounds: leafletLib.leafletMod.LatLngBoundsExpression): ImageOverlay = js.native
+  def imageOverlay(
+    imageUrl: java.lang.String,
+    bounds: leafletLib.leafletMod.LatLngBoundsExpression,
+    options: leafletLib.leafletMod.ImageOverlayOptions
+  ): ImageOverlay = js.native
 }
 

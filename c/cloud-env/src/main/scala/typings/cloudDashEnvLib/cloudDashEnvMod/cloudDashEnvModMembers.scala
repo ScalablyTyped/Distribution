@@ -27,10 +27,7 @@ object cloudDashEnvModMembers extends js.Object {
   val POSTGRESQL_DB_PORT: cloudDashEnvLib.MaybeNum = js.native
   val POSTGRESQL_DB_URL: cloudDashEnvLib.MaybeStr = js.native
   val POSTGRESQL_DB_USERNAME: cloudDashEnvLib.MaybeStr = js.native
-  val get: js.Function2[
-    /* key */ java.lang.String, 
-    /* default_key */ js.UndefOr[java.lang.String], 
-    cloudDashEnvLib.MaybeStr
-  ] = js.native
+  def get(key: java.lang.String): cloudDashEnvLib.MaybeStr = js.native
+  def get(key: java.lang.String, default_key: java.lang.String): cloudDashEnvLib.MaybeStr = js.native
 }
 

@@ -5,9 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
- * These are keys in the options object you can pass to the progress bar along with total as seen in the example above.
- */
 
 trait ProgressBarOptions extends js.Object {
   /**

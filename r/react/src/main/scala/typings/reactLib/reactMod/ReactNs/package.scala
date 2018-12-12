@@ -165,5 +165,6 @@ package object ReactNs {
   // React.PropTypes
   // ----------------------------------------------------------------------
   type Validator[T] = propDashTypesLib.propDashTypesMod.Validator[T]
+  type WeakValidationMap[T] = reactLib.reactLibStrings.WeakValidationMap with T
   type WheelEventHandler[T] = EventHandler[WheelEvent[T]]
 }

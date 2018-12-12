@@ -10,15 +10,7 @@ import scala.scalajs.js.annotation._
 object booleanAlgebraNs extends js.Object {
   val booleanAlgebraBoolean: fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[scala.Boolean] = js.native
   val booleanAlgebraVoid: fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[scala.Unit] = js.native
-  val getDualBooleanAlgebra: js.Function1[
-    /* B */ fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[js.Any], 
-    fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[js.Any]
-  ] = js.native
-  val getFunctionBooleanAlgebra: js.Function1[
-    /* B */ fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[js.Any], 
-    js.Function0[
-      fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[js.Function1[/* a */ js.Any, js.Any]]
-    ]
-  ] = js.native
+  def getDualBooleanAlgebra[A](B: fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[A]): fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[A] = js.native
+  def getFunctionBooleanAlgebra[B](B: fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[B]): js.Function0[fpDashTsLib.libBooleanAlgebraMod.BooleanAlgebra[js.Function1[/* a */ _, B]]] = js.native
 }
 

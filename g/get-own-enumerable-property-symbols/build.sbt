@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "get-own-enumerable-property-symbols"
-version := "3.0.0-438489"
+version := "3.0.0-675036"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

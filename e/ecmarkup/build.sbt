@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ecmarkup"
-version := "3.16.0-8c3660"
+version := "3.16.0-82c7e8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-ed6428",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-b88fdf",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-de9d5d",
+  "org.scalablytyped" %%% "chalk" % "2.4.1-76fe8f",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-f388aa",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-7b17da",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-404a30",
   "org.scalablytyped" %%% "grammarkdown" % "2.0.11-99f581",
   "org.scalablytyped" %%% "he" % "v1.1.1-dt-20180910Z-508801",
   "org.scalablytyped" %%% "highlight_dot_js" % "v9.12-dt-20180910Z-bebe09",

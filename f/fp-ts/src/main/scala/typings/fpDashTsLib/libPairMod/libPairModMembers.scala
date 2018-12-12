@@ -9,19 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object libPairModMembers extends js.Object {
   val URI: /* Pair */ java.lang.String = js.native
-  val getMonoid: js.Function1[
-    /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-    fpDashTsLib.libMonoidMod.Monoid[Pair[js.Any]]
-  ] = js.native
-  val getOrd: js.Function1[/* O */ fpDashTsLib.libOrdMod.Ord[js.Any], fpDashTsLib.libOrdMod.Ord[Pair[js.Any]]] = js.native
-  val getSemigroup: js.Function1[
-    /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
-    fpDashTsLib.libSemigroupMod.Semigroup[Pair[js.Any]]
-  ] = js.native
-  val getSetoid: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    fpDashTsLib.libSetoidMod.Setoid[Pair[js.Any]]
-  ] = js.native
   val pair: fpDashTsLib.libApplicativeMod.Applicative1[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[URI] with fpDashTsLib.libComonadMod.Comonad1[URI] = js.native
+  def getMonoid[A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[Pair[A]] = js.native
+  def getOrd[A](O: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libOrdMod.Ord[Pair[A]] = js.native
+  def getSemigroup[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[Pair[A]] = js.native
+  def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[Pair[A]] = js.native
 }
 

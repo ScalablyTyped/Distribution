@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/Fabric", JSImport.Namespace)
 @js.native
 object libFabricModMembers extends js.Object {
-  val Fabric: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsFabricFabricDotTypesMod.IFabricProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
+  def Fabric(props: officeDashUiDashFabricDashReactLib.libComponentsFabricFabricDotTypesMod.IFabricProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

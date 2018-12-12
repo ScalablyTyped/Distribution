@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/MessageBar", JSImport.Namespace)
 @js.native
 object libMessageBarModMembers extends js.Object {
-  val MessageBar: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsMessageBarMessageBarDotTypesMod.IMessageBarProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
+  def MessageBar(
+    props: officeDashUiDashFabricDashReactLib.libComponentsMessageBarMessageBarDotTypesMod.IMessageBarProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

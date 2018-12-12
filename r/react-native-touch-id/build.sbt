@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-touch-id"
-version := "4.0.2-dt-20180910Z-b1fba5"
+version := "4.0.2-dt-20180910Z-c9aa36"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

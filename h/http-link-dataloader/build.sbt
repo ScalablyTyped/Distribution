@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "http-link-dataloader"
-version := "0.1.6-1c2a2f"
+version := "0.1.6-9d9805"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.4-5ebd88",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.4-835191",
   "org.scalablytyped" %%% "apollo-utilities" % "1.0.26-7c4334",
   "org.scalablytyped" %%% "cross-fetch" % "3.0.0-a02f0d",
   "org.scalablytyped" %%% "dataloader" % "1.4.0-955234",

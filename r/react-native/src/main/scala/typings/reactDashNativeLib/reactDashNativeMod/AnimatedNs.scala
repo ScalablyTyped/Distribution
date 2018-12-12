@@ -201,11 +201,6 @@ object AnimatedNs extends js.Object {
   val ScrollView: js.Any = js.native
   val Text: js.Any = js.native
   val View: js.Any = js.native
-  val timing: js.Function2[
-    /* value */ AnimatedValue | AnimatedValueXY, 
-    /* config */ TimingAnimationConfig, 
-    CompositeAnimation
-  ] = js.native
   def add(a: Animated, b: Animated): AnimatedAddition = js.native
   def createAnimatedComponent(component: js.Any): js.Any = js.native
   def decay(value: AnimatedValueXY, config: DecayAnimationConfig): CompositeAnimation = js.native
@@ -225,6 +220,8 @@ object AnimatedNs extends js.Object {
   def spring(value: AnimatedValueXY, config: SpringAnimationConfig): CompositeAnimation = js.native
   def spring(value: AnimatedValue, config: SpringAnimationConfig): CompositeAnimation = js.native
   def stagger(time: scala.Double, animations: js.Array[CompositeAnimation]): CompositeAnimation = js.native
+  def timing(value: AnimatedValueXY, config: TimingAnimationConfig): CompositeAnimation = js.native
+  def timing(value: AnimatedValue, config: TimingAnimationConfig): CompositeAnimation = js.native
   type AnimatedValue = Value
   type AnimatedValueXY = ValueXY
   type Base = Animated

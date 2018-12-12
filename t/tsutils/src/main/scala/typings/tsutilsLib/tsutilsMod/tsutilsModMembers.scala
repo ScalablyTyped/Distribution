@@ -8,21 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("tsutils", JSImport.Namespace)
 @js.native
 object tsutilsModMembers extends js.Object {
-  val isNodeFlagSet: js.Function2[
-    /* node */ typescriptLib.typescriptMod.tsNs.Node, 
-    /* flag */ typescriptLib.typescriptMod.tsNs.NodeFlags, 
-    scala.Boolean
-  ] = js.native
-  val isSymbolFlagSet: js.Function2[
-    /* symbol */ typescriptLib.typescriptMod.tsNs.Symbol, 
-    /* flag */ typescriptLib.typescriptMod.tsNs.SymbolFlags, 
-    scala.Boolean
-  ] = js.native
-  val isTypeFlagSet: js.Function2[
-    /* type */ typescriptLib.typescriptMod.tsNs.Type, 
-    /* flag */ typescriptLib.typescriptMod.tsNs.TypeFlags, 
-    scala.Boolean
-  ] = js.native
   def canHaveJsDoc(node: typescriptLib.typescriptMod.tsNs.Node): /* is HasJSDoc */scala.Boolean = js.native
   def collectVariableUsage(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): stdLib.Map[typescriptLib.typescriptMod.tsNs.Identifier, tsutilsLib.utilUsageMod.VariableInfo] = js.native
   def convertAst(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): tsutilsLib.utilConvertDashAstMod.ConvertedAst = js.native
@@ -275,6 +260,7 @@ object tsutilsModMembers extends js.Object {
   def isNamespaceImport(node: typescriptLib.typescriptMod.tsNs.Node): /* is NamespaceImport */scala.Boolean = js.native
   def isNewExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is NewExpression */scala.Boolean = js.native
   def isNoSubstitutionTemplateLiteral(node: typescriptLib.typescriptMod.tsNs.Node): /* is NoSubstitutionTemplateLiteral */scala.Boolean = js.native
+  def isNodeFlagSet(node: typescriptLib.typescriptMod.tsNs.Node, flag: typescriptLib.typescriptMod.tsNs.NodeFlags): scala.Boolean = js.native
   def isNodeKind(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): scala.Boolean = js.native
   def isNonNullExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is NonNullExpression */scala.Boolean = js.native
   def isNumericLiteral(node: typescriptLib.typescriptMod.tsNs.Node): /* is NumericLiteral */scala.Boolean = js.native
@@ -322,6 +308,10 @@ object tsutilsModMembers extends js.Object {
   def isStringLiteral(node: typescriptLib.typescriptMod.tsNs.Node): /* is StringLiteral */scala.Boolean = js.native
   def isSubstitutionType(`type`: typescriptLib.typescriptMod.tsNs.Type): /* is SubstitutionType */scala.Boolean = js.native
   def isSwitchStatement(node: typescriptLib.typescriptMod.tsNs.Node): /* is SwitchStatement */scala.Boolean = js.native
+  def isSymbolFlagSet(
+    symbol: typescriptLib.typescriptMod.tsNs.Symbol,
+    flag: typescriptLib.typescriptMod.tsNs.SymbolFlags
+  ): scala.Boolean = js.native
   def isSyntaxList(node: typescriptLib.typescriptMod.tsNs.Node): /* is SyntaxList */scala.Boolean = js.native
   def isTaggedTemplateExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is TaggedTemplateExpression */scala.Boolean = js.native
   def isTemplateExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is TemplateExpression */scala.Boolean = js.native
@@ -351,6 +341,7 @@ object tsutilsModMembers extends js.Object {
     checker: typescriptLib.typescriptMod.tsNs.TypeChecker,
     `type`: typescriptLib.typescriptMod.tsNs.Type
   ): scala.Boolean = js.native
+  def isTypeFlagSet(`type`: typescriptLib.typescriptMod.tsNs.Type, flag: typescriptLib.typescriptMod.tsNs.TypeFlags): scala.Boolean = js.native
   def isTypeLiteralNode(node: typescriptLib.typescriptMod.tsNs.Node): /* is TypeLiteralNode */scala.Boolean = js.native
   def isTypeNodeKind(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): scala.Boolean = js.native
   def isTypeOfExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is TypeOfExpression */scala.Boolean = js.native

@@ -45,15 +45,15 @@ object MediaStoreNs extends js.Object {
     /**
          * Specifies which headers are allowed in a preflight OPTIONS request through the Access-Control-Request-Headers header. Each header name that is specified in Access-Control-Request-Headers must have a corresponding entry in the rule. Only the headers that were requested are sent back.  This element can contain only one wildcard character (*).
          */
-    var AllowedHeaders: js.UndefOr[AllowedHeaders] = js.undefined
+    var AllowedHeaders: AllowedHeaders
     /**
-         * Identifies an HTTP method that the origin that is specified in the rule is allowed to execute. Each CORS rule must contain at least one AllowedMethod and one AllowedOrigin element.
+         * Identifies an HTTP method that the origin that is specified in the rule is allowed to execute. Each CORS rule must contain at least one AllowedMethods and one AllowedOrigins element.
          */
     var AllowedMethods: js.UndefOr[AllowedMethods] = js.undefined
     /**
-         * One or more response headers that you want users to be able to access from their applications (for example, from a JavaScript XMLHttpRequest object). Each CORS rule must have at least one AllowedOrigin element. The string value can include only one wildcard character (*), for example, http:// *.example.com. Additionally, you can specify only one wildcard character to allow cross-origin access for all origins.
+         * One or more response headers that you want users to be able to access from their applications (for example, from a JavaScript XMLHttpRequest object). Each CORS rule must have at least one AllowedOrigins element. The string value can include only one wildcard character (*), for example, http:// *.example.com. Additionally, you can specify only one wildcard character to allow cross-origin access for all origins.
          */
-    var AllowedOrigins: js.UndefOr[AllowedOrigins] = js.undefined
+    var AllowedOrigins: AllowedOrigins
     /**
          * One or more headers in the response that you want users to be able to access from their applications (for example, from a JavaScript XMLHttpRequest object). This element is optional for each rule.
          */
@@ -114,6 +114,17 @@ object MediaStoreNs extends js.Object {
   trait DeleteCorsPolicyOutput extends js.Object
   
   
+  trait DeleteLifecyclePolicyInput extends js.Object {
+    /**
+         * The name of the container that holds the object lifecycle policy.
+         */
+    var ContainerName: ContainerName
+  }
+  
+  
+  trait DeleteLifecyclePolicyOutput extends js.Object
+  
+  
   trait DescribeContainerInput extends js.Object {
     /**
          * The name of the container to query.
@@ -155,7 +166,26 @@ object MediaStoreNs extends js.Object {
   
   
   trait GetCorsPolicyOutput extends js.Object {
+    /**
+         * The CORS policy assigned to the container.
+         */
     var CorsPolicy: CorsPolicy
+  }
+  
+  
+  trait GetLifecyclePolicyInput extends js.Object {
+    /**
+         * The name of the container that the object lifecycle policy is assigned to.
+         */
+    var ContainerName: ContainerName
+  }
+  
+  
+  trait GetLifecyclePolicyOutput extends js.Object {
+    /**
+         * The object lifecycle policy that is assigned to the container.
+         */
+    var LifecyclePolicy: LifecyclePolicy
   }
   
   
@@ -211,6 +241,21 @@ object MediaStoreNs extends js.Object {
   
   
   trait PutCorsPolicyOutput extends js.Object
+  
+  
+  trait PutLifecyclePolicyInput extends js.Object {
+    /**
+         * The name of the container that you want to assign the object lifecycle policy to.
+         */
+    var ContainerName: ContainerName
+    /**
+         * The object lifecycle policy to apply to the container.
+         */
+    var LifecyclePolicy: LifecyclePolicy
+  }
+  
+  
+  trait PutLifecyclePolicyOutput extends js.Object
   
   @js.native
   trait Types
@@ -334,6 +379,35 @@ object MediaStoreNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteCorsPolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Removes an object lifecycle policy from a container.
+       */
+    def deleteLifecyclePolicy(): awsDashSdkLib.libRequestMod.Request[DeleteLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an object lifecycle policy from a container.
+       */
+    def deleteLifecyclePolicy(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteLifecyclePolicyOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an object lifecycle policy from a container.
+       */
+    def deleteLifecyclePolicy(params: DeleteLifecyclePolicyInput): awsDashSdkLib.libRequestMod.Request[DeleteLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an object lifecycle policy from a container.
+       */
+    def deleteLifecyclePolicy(
+      params: DeleteLifecyclePolicyInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteLifecyclePolicyOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Retrieves the properties of the requested container. This request is commonly used to retrieve the endpoint of a container. An endpoint is a value assigned by the service when a new container is created. A container's endpoint does not change after it has been assigned. The DescribeContainer request returns a single Container object based on ContainerName. To return all Container objects that are associated with a specified AWS account, use ListContainers.
        */
     def describeContainer(): awsDashSdkLib.libRequestMod.Request[DescribeContainerOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -421,6 +495,35 @@ object MediaStoreNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetCorsPolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Retrieves the object lifecycle policy that is assigned to a container.
+       */
+    def getLifecyclePolicy(): awsDashSdkLib.libRequestMod.Request[GetLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the object lifecycle policy that is assigned to a container.
+       */
+    def getLifecyclePolicy(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLifecyclePolicyOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the object lifecycle policy that is assigned to a container.
+       */
+    def getLifecyclePolicy(params: GetLifecyclePolicyInput): awsDashSdkLib.libRequestMod.Request[GetLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the object lifecycle policy that is assigned to a container.
+       */
+    def getLifecyclePolicy(
+      params: GetLifecyclePolicyInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLifecyclePolicyOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Lists the properties of all containers in AWS Elemental MediaStore.  You can query to receive all the containers in one response. Or you can include the MaxResults parameter to receive a limited number of containers in each response. In this case, the response includes a token. To get the next set of containers, send the command again, this time with the NextToken parameter (with the returned token as its value). The next set of responses appears, with a token if there are still more containers to receive.  See also DescribeContainer, which gets the properties of one container. 
        */
     def listContainers(): awsDashSdkLib.libRequestMod.Request[ListContainersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -507,6 +610,35 @@ object MediaStoreNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutCorsPolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+       */
+    def putLifecyclePolicy(): awsDashSdkLib.libRequestMod.Request[PutLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+       */
+    def putLifecyclePolicy(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutLifecyclePolicyOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+       */
+    def putLifecyclePolicy(params: PutLifecyclePolicyInput): awsDashSdkLib.libRequestMod.Request[PutLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+       */
+    def putLifecyclePolicy(
+      params: PutLifecyclePolicyInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutLifecyclePolicyOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutLifecyclePolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   val TypesNs: this.type = js.native
@@ -524,6 +656,7 @@ object MediaStoreNs extends js.Object {
   type Endpoint = java.lang.String
   type ExposeHeaders = js.Array[Header]
   type Header = java.lang.String
+  type LifecyclePolicy = java.lang.String
   type MaxAgeSeconds = scala.Double
   type MethodName = awsDashSdkLib.awsDashSdkLibStrings.PUT | awsDashSdkLib.awsDashSdkLibStrings.GET | awsDashSdkLib.awsDashSdkLibStrings.DELETE | awsDashSdkLib.awsDashSdkLibStrings.HEAD | java.lang.String
   type Origin = java.lang.String

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-jsonschema-form"
-version := "1.0.1-dt-20181129Z-9354b5"
+version := "1.0.1-dt-20181129Z-04c5ed"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20180920Z-1aaea6",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-c640d3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-df71a8",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181212Z-14da82",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

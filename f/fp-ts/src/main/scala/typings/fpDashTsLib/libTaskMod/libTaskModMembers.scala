@@ -9,23 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object libTaskModMembers extends js.Object {
   val URI: /* Task */ java.lang.String = js.native
-  val delay: js.Function2[/* millis */ scala.Double, /* a */ js.Any, Task[js.Any]] = js.native
-  val fromIO: js.Function1[/* io */ fpDashTsLib.libIOMod.IO[js.Any], Task[js.Any]] = js.native
-  val getMonoid: js.Function1[
-    /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-    fpDashTsLib.libMonoidMod.Monoid[Task[js.Any]]
-  ] = js.native
-  val getRaceMonoid: js.Function0[fpDashTsLib.libMonoidMod.Monoid[Task[js.Any]]] = js.native
-  val getSemigroup: js.Function1[
-    /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
-    fpDashTsLib.libSemigroupMod.Semigroup[Task[js.Any]]
-  ] = js.native
   val task: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libMonadIOMod.MonadIO1[URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[URI] = js.native
   val taskSeq: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libMonadIOMod.MonadIO1[URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[URI] = js.native
-  val tryCatch: js.Function2[
-    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Promise[js.Any]], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, js.Any], 
-    Task[fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
-  ] = js.native
+  def delay[A](millis: scala.Double, a: A): Task[A] = js.native
+  def fromIO[A](io: fpDashTsLib.libIOMod.IO[A]): Task[A] = js.native
+  def getMonoid[A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[Task[A]] = js.native
+  def getRaceMonoid[A](): fpDashTsLib.libMonoidMod.Monoid[Task[A]] = js.native
+  def getSemigroup[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[Task[A]] = js.native
+  def tryCatch[L, A](
+    f: fpDashTsLib.libFunctionMod.Lazy[js.Promise[A]],
+    onrejected: js.Function1[/* reason */ js.Any, L]
+  ): Task[fpDashTsLib.libEitherMod.Either[L, A]] = js.native
 }
 

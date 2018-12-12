@@ -15,16 +15,10 @@ object stateNs extends js.Object {
   }
   
   val URI: /* State */ java.lang.String = js.native
-  val get: js.Function0[fpDashTsLib.libStateMod.State[js.Any, js.Any]] = js.native
-  val gets: js.Function1[
-    /* f */ js.Function1[/* s */ js.Any, js.Any], 
-    fpDashTsLib.libStateMod.State[js.Any, js.Any]
-  ] = js.native
-  val modify: js.Function1[
-    /* f */ js.Function1[/* s */ js.Any, js.Any], 
-    fpDashTsLib.libStateMod.State[js.Any, js.UndefOr[scala.Nothing]]
-  ] = js.native
-  val put: js.Function1[/* s */ js.Any, fpDashTsLib.libStateMod.State[js.Any, scala.Unit]] = js.native
   val state: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libStateMod.URI] = js.native
+  def get[S](): fpDashTsLib.libStateMod.State[S, S] = js.native
+  def gets[S, A](f: js.Function1[/* s */ S, A]): fpDashTsLib.libStateMod.State[S, A] = js.native
+  def modify[S](f: js.Function1[/* s */ S, S]): fpDashTsLib.libStateMod.State[S, js.UndefOr[scala.Nothing]] = js.native
+  def put[S](s: S): fpDashTsLib.libStateMod.State[S, scala.Unit] = js.native
 }
 

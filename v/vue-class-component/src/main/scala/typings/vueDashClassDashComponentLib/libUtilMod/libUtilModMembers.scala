@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libUtilModMembers extends js.Object {
   val hasProto: scala.Boolean = js.native
-  val noop: js.Function0[scala.Unit] = js.native
   def createDecorator(
     factory: js.Function3[
       /* options */ vueLib.typesOptionsMod.ComponentOptions[
@@ -50,6 +49,7 @@ object libUtilModMembers extends js.Object {
     CtorD: vueDashClassDashComponentLib.libDeclarationsMod.VueClass[D],
     CtorE: vueDashClassDashComponentLib.libDeclarationsMod.VueClass[E]
   ): vueDashClassDashComponentLib.libDeclarationsMod.VueClass[A with B with C with D with E] = js.native
+  def noop(): scala.Unit = js.native
   def warn(message: java.lang.String): scala.Unit = js.native
 }
 

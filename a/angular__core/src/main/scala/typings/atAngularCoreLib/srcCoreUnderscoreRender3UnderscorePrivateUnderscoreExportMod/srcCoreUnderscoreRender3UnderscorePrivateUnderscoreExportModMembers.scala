@@ -41,7 +41,6 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
     /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, element_ref)), TsIdentSimple(ElementRef)))) *//* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
   ] = js.native
-  val `ɵSWITCH_INJECTOR_FACTORY__POST_R3__`: js.Function0[atAngularCoreLib.srcRender3DiMod.NodeInjector] = js.native
   val `ɵSWITCH_IVY_ENABLED__POST_R3__`: /* true */ scala.Boolean = js.native
   val `ɵSWITCH_RENDERER2_FACTORY__POST_R3__`: js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
   val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: js.Function2[
@@ -60,7 +59,6 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
       atAngularCoreLib.srcRenderApiMod.RendererFactory2
     ]
   ] = js.native
-  val ɵdefineDirective: js.Function1[/* directiveDefinition */ atAngularCoreLib.Anon_Features[js.Any], scala.Nothing] = js.native
   def ɵInheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
   def ɵInheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[_]): scala.Unit = js.native
   def ɵLifecycleHooksFeature(component: js.Any, `def`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
@@ -76,6 +74,7 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
     /* definition */ atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[T], 
     scala.Unit
   ] = js.native
+  def `ɵSWITCH_INJECTOR_FACTORY__POST_R3__`(): atAngularCoreLib.srcRender3DiMod.NodeInjector = js.native
   def ɵaddPlayer(
     ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance,
     player: atAngularCoreLib.srcRender3InterfacesPlayerMod.Player
@@ -121,6 +120,7 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
   def ɵcontainerRefreshStart(index: scala.Double): scala.Unit = js.native
   def ɵdefineBase[T](baseDefinition: atAngularCoreLib.Anon_Outputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
   def ɵdefineComponent[T](componentDefinition: atAngularCoreLib.Anon_Directives[T]): scala.Nothing = js.native
+  def ɵdefineDirective[T](directiveDefinition: atAngularCoreLib.Anon_Features[T]): scala.Nothing = js.native
   def ɵdefineNgModule[T](
     `def`: atAngularCoreLib.Anon_TypeT[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
   ): scala.Nothing = js.native

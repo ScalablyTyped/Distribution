@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts", "trace")
 @js.native
 object traceNs extends js.Object {
-  val spy: js.Function1[/* a */ js.Any, js.Any] = js.native
-  val trace: js.Function2[/* message */ js.Any, /* out */ fpDashTsLib.libFunctionMod.Lazy[js.Any], js.Any] = js.native
+  def spy[A](a: A): A = js.native
+  def trace[A](message: js.Any, out: fpDashTsLib.libFunctionMod.Lazy[A]): A = js.native
   def traceA[F /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libApplicativeMod.Applicative1[F]): js.Function1[/* message */ js.Any, fpDashTsLib.libHKTMod.Type[F, scala.Unit]] = js.native
   def traceA[F /* <: fpDashTsLib.libHKTMod.URIS2 */](F: fpDashTsLib.libApplicativeMod.Applicative2[F]): js.Function1[/* message */ js.Any, fpDashTsLib.libHKTMod.Type2[F, _, scala.Unit]] = js.native
   def traceA[F /* <: fpDashTsLib.libHKTMod.URIS3 */](F: fpDashTsLib.libApplicativeMod.Applicative3[F]): js.Function1[/* message */ js.Any, fpDashTsLib.libHKTMod.Type3[F, _, _, scala.Unit]] = js.native

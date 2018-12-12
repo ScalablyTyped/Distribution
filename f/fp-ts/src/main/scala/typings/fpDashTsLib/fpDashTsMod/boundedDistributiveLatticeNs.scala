@@ -8,13 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts", "boundedDistributiveLattice")
 @js.native
 object boundedDistributiveLatticeNs extends js.Object {
-  val getMinMaxBoundedDistributiveLattice: js.Function1[
-    /* O */ fpDashTsLib.libOrdMod.Ord[js.Any], 
-    js.Function2[
-      /* min */ js.Any, 
-      /* max */ js.Any, 
-      fpDashTsLib.libBoundedDistributiveLatticeMod.BoundedDistributiveLattice[js.Any]
-    ]
+  def getMinMaxBoundedDistributiveLattice[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function2[
+    /* min */ A, 
+    /* max */ A, 
+    fpDashTsLib.libBoundedDistributiveLatticeMod.BoundedDistributiveLattice[A]
   ] = js.native
 }
 

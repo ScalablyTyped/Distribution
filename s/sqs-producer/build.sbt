@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sqs-producer"
-version := "1.5-dt-20180910Z-69f4b2"
+version := "1.5-dt-20180910Z-500246"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "aws-sdk" % "2.373.0-a50a67",
+  "org.scalablytyped" %%% "aws-sdk" % "2.374.0-e1524c",
   "org.scalablytyped" %%% "events" % "1.2-dt-20180910Z-b61ae0",
   "org.scalablytyped" %%% "jmespath" % "0.15-dt-20180910Z-a98480",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",

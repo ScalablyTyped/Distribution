@@ -8,128 +8,54 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts", "set")
 @js.native
 object setNs extends js.Object {
-  val chain: js.Function1[
-    /* bset */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[
-      /* x */ stdLib.Set[js.Any], 
-      /* f */ js.Function1[/* x */ js.Any, stdLib.Set[js.Any]], 
-      stdLib.Set[js.Any]
-    ]
+  def chain[B](bset: fpDashTsLib.libSetoidMod.Setoid[B]): js.Function2[
+    /* x */ stdLib.Set[_], 
+    /* f */ js.Function1[/* x */ js.Any, stdLib.Set[B]], 
+    stdLib.Set[B]
   ] = js.native
-  val compact: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function1[/* fa */ stdLib.Set[fpDashTsLib.libOptionMod.Option[js.Any]], stdLib.Set[js.Any]]
-  ] = js.native
-  val difference: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[/* x */ stdLib.Set[js.Any], /* y */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
-  ] = js.native
-  val difference2v: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[/* x */ stdLib.Set[js.Any], /* y */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
-  ] = js.native
-  val every: js.Function2[
-    /* x */ stdLib.Set[js.Any], 
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    scala.Boolean
-  ] = js.native
-  val filterMap: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[
-      /* fa */ stdLib.Set[js.Any], 
-      /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
-      stdLib.Set[js.Any]
-    ]
-  ] = js.native
-  val fromArray: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function1[/* as */ fpDashTsLib.libArrayMod.Global.Array[js.Any], stdLib.Set[js.Any]]
-  ] = js.native
-  val getIntersectionSemigroup: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    fpDashTsLib.libSemigroupMod.Semigroup[stdLib.Set[js.Any]]
-  ] = js.native
-  val getSetoid: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    fpDashTsLib.libSetoidMod.Setoid[stdLib.Set[js.Any]]
-  ] = js.native
-  val getUnionMonoid: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    fpDashTsLib.libMonoidMod.Monoid[stdLib.Set[js.Any]]
-  ] = js.native
-  val insert: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[/* a */ js.Any, /* x */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
-  ] = js.native
-  val intersection: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[/* x */ stdLib.Set[js.Any], /* y */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
-  ] = js.native
-  val map: js.Function1[
-    /* bset */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[
-      /* x */ stdLib.Set[js.Any], 
-      /* f */ js.Function1[/* x */ js.Any, js.Any], 
-      stdLib.Set[js.Any]
-    ]
-  ] = js.native
-  val member: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function1[/* x */ stdLib.Set[js.Any], js.Function1[/* a */ js.Any, scala.Boolean]]
-  ] = js.native
-  val partitionMap: js.Function2[
-    /* SL */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    /* SR */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[
-      /* x */ stdLib.Set[js.Any], 
-      /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
-      fpDashTsLib.libCompactableMod.Separated[stdLib.Set[js.Any], stdLib.Set[js.Any]]
-    ]
-  ] = js.native
-  val reduce: js.Function1[
-    /* O */ fpDashTsLib.libOrdMod.Ord[js.Any], 
-    js.Function3[
-      /* fa */ stdLib.Set[js.Any], 
-      /* b */ js.Any, 
-      /* f */ js.Function2[/* b */ js.Any, /* a */ js.Any, js.Any], 
-      js.Any
-    ]
-  ] = js.native
-  val remove: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[/* a */ js.Any, /* x */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
-  ] = js.native
-  val separate: js.Function2[
-    /* SL */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    /* SR */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function1[
-      /* fa */ stdLib.Set[fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
-      fpDashTsLib.libCompactableMod.Separated[stdLib.Set[js.Any], stdLib.Set[js.Any]]
-    ]
-  ] = js.native
-  val singleton: js.Function1[/* a */ js.Any, stdLib.Set[js.Any]] = js.native
-  val some: js.Function2[
-    /* x */ stdLib.Set[js.Any], 
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    scala.Boolean
-  ] = js.native
-  val subset: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[/* x */ stdLib.Set[js.Any], /* y */ stdLib.Set[js.Any], scala.Boolean]
-  ] = js.native
-  val toArray: js.Function1[
-    /* O */ fpDashTsLib.libOrdMod.Ord[js.Any], 
-    js.Function1[/* x */ stdLib.Set[js.Any], fpDashTsLib.libArrayMod.Global.Array[js.Any]]
-  ] = js.native
-  val union: js.Function1[
-    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
-    js.Function2[/* x */ stdLib.Set[js.Any], /* y */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
-  ] = js.native
+  def compact[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[/* fa */ stdLib.Set[fpDashTsLib.libOptionMod.Option[A]], stdLib.Set[A]] = js.native
+  def difference[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* x */ stdLib.Set[A], /* y */ stdLib.Set[A], stdLib.Set[A]] = js.native
+  def difference2v[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* x */ stdLib.Set[A], /* y */ stdLib.Set[A], stdLib.Set[A]] = js.native
+  def every[A](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): scala.Boolean = js.native
   def filter[A](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): stdLib.Set[A] = js.native
+  def filterMap[B](S: fpDashTsLib.libSetoidMod.Setoid[B]): js.Function2[
+    /* fa */ stdLib.Set[_], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libOptionMod.Option[B]], 
+    stdLib.Set[B]
+  ] = js.native
   @JSName("filter")
   def filter_ABA[A, B /* <: A */](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Refinement[A, B]): stdLib.Set[B] = js.native
+  def fromArray[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[/* as */ fpDashTsLib.libArrayMod.Global.Array[A], stdLib.Set[A]] = js.native
+  def getIntersectionSemigroup[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSemigroupMod.Semigroup[stdLib.Set[A]] = js.native
+  def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[stdLib.Set[A]] = js.native
+  def getUnionMonoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libMonoidMod.Monoid[stdLib.Set[A]] = js.native
+  def insert[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* a */ A, /* x */ stdLib.Set[A], stdLib.Set[A]] = js.native
+  def intersection[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* x */ stdLib.Set[A], /* y */ stdLib.Set[A], stdLib.Set[A]] = js.native
+  def map[B](bset: fpDashTsLib.libSetoidMod.Setoid[B]): js.Function2[/* x */ stdLib.Set[_], /* f */ js.Function1[/* x */ js.Any, B], stdLib.Set[B]] = js.native
+  def member[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[/* x */ stdLib.Set[A], js.Function1[/* a */ A, scala.Boolean]] = js.native
   def partition[A](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libCompactableMod.Separated[stdLib.Set[A], stdLib.Set[A]] = js.native
+  def partitionMap[L, R](SL: fpDashTsLib.libSetoidMod.Setoid[L], SR: fpDashTsLib.libSetoidMod.Setoid[R]): js.Function2[
+    /* x */ stdLib.Set[_], 
+    /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libEitherMod.Either[L, R]], 
+    fpDashTsLib.libCompactableMod.Separated[stdLib.Set[L], stdLib.Set[R]]
+  ] = js.native
   @JSName("partition")
   def partition_ABA[A, B /* <: A */](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Refinement[A, B]): fpDashTsLib.libCompactableMod.Separated[stdLib.Set[A], stdLib.Set[B]] = js.native
+  def reduce[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function3[
+    /* fa */ stdLib.Set[A], 
+    /* b */ js.Any, 
+    /* f */ js.Function2[/* b */ js.Any, /* a */ A, _], 
+    _
+  ] = js.native
+  def remove[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* a */ A, /* x */ stdLib.Set[A], stdLib.Set[A]] = js.native
+  def separate[L, R](SL: fpDashTsLib.libSetoidMod.Setoid[L], SR: fpDashTsLib.libSetoidMod.Setoid[R]): js.Function1[
+    /* fa */ stdLib.Set[fpDashTsLib.libEitherMod.Either[L, R]], 
+    fpDashTsLib.libCompactableMod.Separated[stdLib.Set[L], stdLib.Set[R]]
+  ] = js.native
+  def singleton[A](a: A): stdLib.Set[A] = js.native
+  def some[A](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): scala.Boolean = js.native
+  def subset[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* x */ stdLib.Set[A], /* y */ stdLib.Set[A], scala.Boolean] = js.native
+  def toArray[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function1[/* x */ stdLib.Set[A], fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
+  def union[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* x */ stdLib.Set[A], /* y */ stdLib.Set[A], stdLib.Set[A]] = js.native
 }
 

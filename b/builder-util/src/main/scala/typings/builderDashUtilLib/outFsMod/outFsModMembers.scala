@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object outFsModMembers extends js.Object {
   val CONCURRENCY: builderDashUtilLib.Anon_Concurrency = js.native
-  val DO_NOT_USE_HARD_LINKS: js.Function1[/* file */ java.lang.String, scala.Boolean] = js.native
   val MAX_FILE_REQUESTS: /* 8 */ scala.Double = js.native
-  val USE_HARD_LINKS: js.Function1[/* file */ java.lang.String, scala.Boolean] = js.native
+  def DO_NOT_USE_HARD_LINKS(file: java.lang.String): scala.Boolean = js.native
+  def USE_HARD_LINKS(file: java.lang.String): scala.Boolean = js.native
   def copyDir(src: java.lang.String, destination: java.lang.String): js.Promise[_] = js.native
   def copyDir(src: java.lang.String, destination: java.lang.String, options: CopyDirOptions): js.Promise[_] = js.native
   def copyFile(src: java.lang.String, dest: java.lang.String): js.Promise[_] = js.native

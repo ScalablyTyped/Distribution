@@ -15,14 +15,8 @@ object ioNs extends js.Object {
   }
   
   val URI: /* IO */ java.lang.String = js.native
-  val getMonoid: js.Function1[
-    /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
-    fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libIOMod.IO[js.Any]]
-  ] = js.native
-  val getSemigroup: js.Function1[
-    /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
-    fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libIOMod.IO[js.Any]]
-  ] = js.native
   val io: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libIOMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO1[fpDashTsLib.libIOMod.URI] = js.native
+  def getMonoid[A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libIOMod.IO[A]] = js.native
+  def getSemigroup[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libIOMod.IO[A]] = js.native
 }
 

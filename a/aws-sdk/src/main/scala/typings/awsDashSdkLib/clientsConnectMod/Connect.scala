@@ -196,6 +196,47 @@ trait Connect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Retrieves the contact attributes associated with a contact.
+     */
+  def getContactAttributes(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConnectMod.ConnectNs.GetContactAttributesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the contact attributes associated with a contact.
+     */
+  def getContactAttributes(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConnectMod.ConnectNs.GetContactAttributesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConnectMod.ConnectNs.GetContactAttributesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the contact attributes associated with a contact.
+     */
+  def getContactAttributes(params: awsDashSdkLib.clientsConnectMod.ConnectNs.GetContactAttributesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConnectMod.ConnectNs.GetContactAttributesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the contact attributes associated with a contact.
+     */
+  def getContactAttributes(
+    params: awsDashSdkLib.clientsConnectMod.ConnectNs.GetContactAttributesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConnectMod.ConnectNs.GetContactAttributesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConnectMod.ConnectNs.GetContactAttributesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * The GetCurrentMetricData operation retrieves current metric data from your Amazon Connect instance. If you are using an IAM account, it must have permission to the connect:GetCurrentMetricData action.
      */
   def getCurrentMetricData(): awsDashSdkLib.libRequestMod.Request[
@@ -483,14 +524,14 @@ trait Connect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action.
+     * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, the call fails.
      */
   def startOutboundVoiceContact(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsConnectMod.ConnectNs.StartOutboundVoiceContactResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action.
+     * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, the call fails.
      */
   def startOutboundVoiceContact(
     callback: js.Function2[
@@ -503,14 +544,14 @@ trait Connect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action.
+     * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, the call fails.
      */
   def startOutboundVoiceContact(params: awsDashSdkLib.clientsConnectMod.ConnectNs.StartOutboundVoiceContactRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsConnectMod.ConnectNs.StartOutboundVoiceContactResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action.
+     * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, the call fails.
      */
   def startOutboundVoiceContact(
     params: awsDashSdkLib.clientsConnectMod.ConnectNs.StartOutboundVoiceContactRequest,

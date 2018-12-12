@@ -9,13 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object libStateModMembers extends js.Object {
   val URI: /* State */ java.lang.String = js.native
-  val get: js.Function0[State[js.Any, js.Any]] = js.native
-  val gets: js.Function1[/* f */ js.Function1[/* s */ js.Any, js.Any], State[js.Any, js.Any]] = js.native
-  val modify: js.Function1[
-    /* f */ js.Function1[/* s */ js.Any, js.Any], 
-    State[js.Any, js.UndefOr[scala.Nothing]]
-  ] = js.native
-  val put: js.Function1[/* s */ js.Any, State[js.Any, scala.Unit]] = js.native
   val state: fpDashTsLib.libMonadMod.Monad2[URI] = js.native
+  def get[S](): State[S, S] = js.native
+  def gets[S, A](f: js.Function1[/* s */ S, A]): State[S, A] = js.native
+  def modify[S](f: js.Function1[/* s */ S, S]): State[S, js.UndefOr[scala.Nothing]] = js.native
+  def put[S](s: S): State[S, scala.Unit] = js.native
 }
 

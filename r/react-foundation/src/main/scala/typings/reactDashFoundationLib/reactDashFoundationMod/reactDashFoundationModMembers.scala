@@ -41,10 +41,6 @@ object reactDashFoundationModMembers extends js.Object {
   val Menu: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsMenuMod.MenuProps] = js.native
   val MenuIcon: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsResponsiveMod.MenuIconProps] = js.native
   val MenuItem: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsMenuMod.MenuItemProps] = js.native
-  val MenuText: js.Function1[
-    /* props */ reactDashFoundationLib.componentsMenuMod.MenuItemProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val NativeProgress: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsProgressDashBarMod.NativeProgressProps] = js.native
   val Pagination: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsPaginationMod.PaginationProps] = js.native
   val PaginationEllipsis: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsPaginationMod.PaginationItemProps] = js.native
@@ -78,5 +74,6 @@ object reactDashFoundationModMembers extends js.Object {
   val TopBarLeft: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsTopDashBarMod.TopBarProps] = js.native
   val TopBarRight: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsTopDashBarMod.TopBarProps] = js.native
   val TopBarTitle: reactLib.reactMod.ReactNs.StatelessComponent[reactDashFoundationLib.componentsTopDashBarMod.TopBarProps] = js.native
+  def MenuText(props: reactDashFoundationLib.componentsMenuMod.MenuItemProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

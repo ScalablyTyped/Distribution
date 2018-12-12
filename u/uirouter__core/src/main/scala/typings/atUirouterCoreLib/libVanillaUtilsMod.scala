@@ -8,12 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core/lib/vanilla/utils", JSImport.Namespace)
 @js.native
 object libVanillaUtilsMod extends js.Object {
-  val buildUrl: js.Function1[
-    /* loc */ atUirouterCoreLib.libCommonCoreservicesMod.LocationServices, 
-    java.lang.String
-  ] = js.native
-  val getParams: js.Function1[/* queryString */ java.lang.String, js.Any] = js.native
-  val keyValsToObjectR: js.Function2[/* accum */ js.Any, /* hasKeyVal */ js.Tuple2[js.Any, js.Any], js.Any] = js.native
+  def buildUrl(loc: atUirouterCoreLib.libCommonCoreservicesMod.LocationServices): java.lang.String = js.native
+  def getParams(queryString: java.lang.String): js.Any = js.native
+  def keyValsToObjectR(accum: js.Any, hasKeyVal: js.Tuple2[_, _]): js.Any = js.native
   def locationPluginFactory(
     name: java.lang.String,
     isHtml5: scala.Boolean,

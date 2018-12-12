@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 /**
  * Flexible ascii progress bar.
  */
-@JSImport("progress", JSImport.Namespace)
+@JSImport("progress", JSImport.Default)
 @js.native
-class namespaced protected () extends ProgressBar {
+class default protected () extends ProgressBar {
   def this(format: java.lang.String, options: ProgressBarOptions) = this()
   /**
        * Initialize a `ProgressBar` with the given `fmt` string and `options` or

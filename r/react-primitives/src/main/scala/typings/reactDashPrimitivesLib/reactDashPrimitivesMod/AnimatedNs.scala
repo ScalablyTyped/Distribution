@@ -56,11 +56,6 @@ object AnimatedNs extends js.Object {
   val ScrollView: js.Any = js.native
   val Text: js.Any = js.native
   val View: js.Any = js.native
-  val timing: js.Function2[
-    /* value */ reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValue | reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValueXY, 
-    /* config */ reactDashNativeLib.reactDashNativeMod.AnimatedNs.TimingAnimationConfig, 
-    reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation
-  ] = js.native
   def add(
     a: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Animated,
     b: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Animated
@@ -112,6 +107,14 @@ object AnimatedNs extends js.Object {
   def stagger(
     time: scala.Double,
     animations: js.Array[reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation]
+  ): reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation = js.native
+  def timing(
+    value: reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValueXY,
+    config: reactDashNativeLib.reactDashNativeMod.AnimatedNs.TimingAnimationConfig
+  ): reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation = js.native
+  def timing(
+    value: reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValue,
+    config: reactDashNativeLib.reactDashNativeMod.AnimatedNs.TimingAnimationConfig
   ): reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation = js.native
 }
 

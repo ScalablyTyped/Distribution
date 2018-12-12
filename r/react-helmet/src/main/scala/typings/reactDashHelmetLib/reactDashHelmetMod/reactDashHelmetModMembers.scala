@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashHelmetModMembers extends js.Object {
   val canUseDOM: scala.Boolean = js.native
-  val peek: js.Function0[HelmetData] = js.native
-  val renderStatic: js.Function0[HelmetData] = js.native
-  val rewind: js.Function0[HelmetData] = js.native
+  def peek(): HelmetData = js.native
+  def renderStatic(): HelmetData = js.native
+  def rewind(): HelmetData = js.native
 }
 

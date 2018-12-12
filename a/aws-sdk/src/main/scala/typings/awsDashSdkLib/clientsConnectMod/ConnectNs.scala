@@ -55,7 +55,7 @@ object ConnectNs extends js.Object {
          */
     var SecurityProfileIds: SecurityProfileIds
     /**
-         * The user name in Amazon Connect for the account to create.
+         * The user name in Amazon Connect for the account to create. If you are using SAML for identity management in your Amazon Connect, the value for Username can include up to 64 characters from [a-zA-Z0-9_-.\@]+.
          */
     var Username: AgentUsername
   }
@@ -221,9 +221,29 @@ object ConnectNs extends js.Object {
   }
   
   
+  trait GetContactAttributesRequest extends js.Object {
+    /**
+         * The ID for the initial contact in Amazon Connect associated with the attributes to update.
+         */
+    var InitialContactId: ContactId
+    /**
+         * The instance ID for the instance from which to retrieve contact attributes.
+         */
+    var InstanceId: InstanceId
+  }
+  
+  
+  trait GetContactAttributesResponse extends js.Object {
+    /**
+         * The attributes to update.
+         */
+    var Attributes: js.UndefOr[Attributes] = js.undefined
+  }
+  
+  
   trait GetCurrentMetricDataRequest extends js.Object {
     /**
-         * A list of CurrentMetric objects for the metrics to retrieve. Each CurrentMetric includes a name of a metric to retrieve and the unit to use for it. The following metrics are available:  AGENTS_AVAILABLE  Unit: COUNT  AGENTS_ONLINE  Unit: COUNT  AGENTS_ON_CALL  Unit: COUNT  AGENTS_STAFFED  Unit: COUNT  AGENTS_AFTER_CONTACT_WORK  Unit: COUNT  AGENTS_NON_PRODUCTIVE  Unit: COUNT  AGENTS_ERROR  Unit: COUNT  CONTACTS_IN_QUEUE  Unit: COUNT  OLDEST_CONTACT_AGE  Unit: SECONDS  CONTACTS_SCHEDULED  Unit: COUNT  
+         * A list of CurrentMetric objects for the metrics to retrieve. Each CurrentMetric includes a name of a metric to retrieve and the unit to use for it. You must list each metric to retrieve data for in the request. The following metrics are available:  AGENTS_AVAILABLE  Unit: COUNT  AGENTS_ONLINE  Unit: COUNT  AGENTS_ON_CALL  Unit: COUNT  AGENTS_STAFFED  Unit: COUNT  AGENTS_AFTER_CONTACT_WORK  Unit: COUNT  AGENTS_NON_PRODUCTIVE  Unit: COUNT  AGENTS_ERROR  Unit: COUNT  CONTACTS_IN_QUEUE  Unit: COUNT  OLDEST_CONTACT_AGE  Unit: SECONDS  CONTACTS_SCHEDULED  Unit: COUNT  
          */
     var CurrentMetrics: CurrentMetrics
     /**
@@ -231,7 +251,7 @@ object ConnectNs extends js.Object {
          */
     var Filters: Filters
     /**
-         * The grouping applied to the metrics returned. For example, when grouped by QUEUE, the metrics returned apply to each queue rather than aggregated for all queues. If you group by CHANNEL, you should include a Channels filter. The only supported channel is VOICE. If no Grouping is included in the request, a summary of CurrentMetrics is returned. 
+         * The grouping applied to the metrics returned. For example, when grouped by QUEUE, the metrics returned apply to each queue rather than aggregated for all queues. If you group by CHANNEL, you should include a Channels filter. The only supported channel is VOICE. If no Grouping is included in the request, a summary of CurrentMetrics is returned.
          */
     var Groupings: js.UndefOr[Groupings] = js.undefined
     /**
@@ -295,7 +315,7 @@ object ConnectNs extends js.Object {
          */
     var Groupings: js.UndefOr[Groupings] = js.undefined
     /**
-         * A list of HistoricalMetric objects that contain the metrics to retrieve with the request. A HistoricalMetric object contains: HistoricalMetricName, Statistic, Threshold, and Unit. For each historical metric you include in the request, you must include a Unit and a Statistic.  The following historical metrics are available:  CONTACTS_QUEUED  Unit: COUNT Statistic: SUM  CONTACTS_HANDLED  Unit: COUNT Statistics: SUM  CONTACTS_ABANDONED  Unit: COUNT Statistics: SUM  CONTACTS_CONSULTED  Unit: COUNT Statistics: SUM  CONTACTS_AGENT_HUNG_UP_FIRST  Unit: COUNT Statistics: SUM  CONTACTS_HANDLED_INCOMING  Unit: COUNT Statistics: SUM  CONTACTS_HANDLED_OUTBOUND  Unit: COUNT Statistics: SUM  CONTACTS_HOLD_ABANDONS  Unit: COUNT Statistics: SUM  CONTACTS_TRANSFERRED_IN  Unit: COUNT Statistics: SUM  CONTACTS_TRANSFERRED_OUT  Unit: COUNT Statistics: SUM  CONTACTS_TRANSFERRED_IN_FROM_QUEUE  Unit: COUNT Statistics: SUM  CONTACTS_TRANSFERRED_OUT_FROM_QUEUE  Unit: COUNT Statistics: SUM  CALLBACK_CONTACTS_HANDLED  Unit: COUNT Statistics: SUM  CALLBACK_CONTACTS_HANDLED  Unit: COUNT Statistics: SUM  API_CONTACTS_HANDLED  Unit: COUNT Statistics: SUM  CONTACTS_MISSED  Unit: COUNT Statistics: SUM  OCCUPANCY  Unit: PERCENT Statistics: AVG  HANDLE_TIME  Unit: SECONDS Statistics: AVG  AFTER_CONTACT_WORK_TIME  Unit: SECONDS Statistics: AVG  QUEUED_TIME  Unit: SECONDS Statistics: MAX  ABANDON_TIME  Unit: COUNT Statistics: SUM  QUEUE_ANSWER_TIME  Unit: SECONDS Statistics: AVG  HOLD_TIME  Unit: SECONDS Statistics: AVG  INTERACTION_TIME  Unit: SECONDS Statistics: AVG  INTERACTION_AND_HOLD_TIME  Unit: SECONDS Statistics: AVG  SERVICE_LEVEL  Unit: PERCENT Statistics: AVG Threshold: Only "Less than" comparisons are supported, with the following service level thresholds: 15, 20, 25, 30, 45, 60, 90, 120, 180, 240, 300, 600  
+         * A list of HistoricalMetric objects that contain the metrics to retrieve with the request. A HistoricalMetric object contains: HistoricalMetricName, Statistic, Threshold, and Unit. You must list each metric to retrieve data for in the request. For each historical metric you include in the request, you must include a Unit and a Statistic.  The following historical metrics are available:  CONTACTS_QUEUED  Unit: COUNT Statistic: SUM  CONTACTS_HANDLED  Unit: COUNT Statistics: SUM  CONTACTS_ABANDONED  Unit: COUNT Statistics: SUM  CONTACTS_CONSULTED  Unit: COUNT Statistics: SUM  CONTACTS_AGENT_HUNG_UP_FIRST  Unit: COUNT Statistics: SUM  CONTACTS_HANDLED_INCOMING  Unit: COUNT Statistics: SUM  CONTACTS_HANDLED_OUTBOUND  Unit: COUNT Statistics: SUM  CONTACTS_HOLD_ABANDONS  Unit: COUNT Statistics: SUM  CONTACTS_TRANSFERRED_IN  Unit: COUNT Statistics: SUM  CONTACTS_TRANSFERRED_OUT  Unit: COUNT Statistics: SUM  CONTACTS_TRANSFERRED_IN_FROM_QUEUE  Unit: COUNT Statistics: SUM  CONTACTS_TRANSFERRED_OUT_FROM_QUEUE  Unit: COUNT Statistics: SUM  CALLBACK_CONTACTS_HANDLED  Unit: COUNT Statistics: SUM  CALLBACK_CONTACTS_HANDLED  Unit: COUNT Statistics: SUM  API_CONTACTS_HANDLED  Unit: COUNT Statistics: SUM  CONTACTS_MISSED  Unit: COUNT Statistics: SUM  OCCUPANCY  Unit: PERCENT Statistics: AVG  HANDLE_TIME  Unit: SECONDS Statistics: AVG  AFTER_CONTACT_WORK_TIME  Unit: SECONDS Statistics: AVG  QUEUED_TIME  Unit: SECONDS Statistics: MAX  ABANDON_TIME  Unit: COUNT Statistics: SUM  QUEUE_ANSWER_TIME  Unit: SECONDS Statistics: AVG  HOLD_TIME  Unit: SECONDS Statistics: AVG  INTERACTION_TIME  Unit: SECONDS Statistics: AVG  INTERACTION_AND_HOLD_TIME  Unit: SECONDS Statistics: AVG  SERVICE_LEVEL  Unit: PERCENT Statistics: AVG Threshold: Only "Less than" comparisons are supported, with the following service level thresholds: 15, 20, 25, 30, 45, 60, 90, 120, 180, 240, 300, 600  
          */
     var HistoricalMetrics: HistoricalMetrics
     /**
@@ -439,7 +459,7 @@ object ConnectNs extends js.Object {
          */
     var Name: js.UndefOr[HistoricalMetricName] = js.undefined
     /**
-         * The statistic for the metric: SUM, MAX, or SUM.
+         * The statistic for the metric.
          */
     var Statistic: js.UndefOr[Statistic] = js.undefined
     /**
@@ -447,7 +467,7 @@ object ConnectNs extends js.Object {
          */
     var Threshold: js.UndefOr[Threshold] = js.undefined
     /**
-         * The unit for the metric: COUNT, PERCENT, or SECONDS.
+         * The unit for the metric.
          */
     var Unit: js.UndefOr[Unit] = js.undefined
   }
@@ -635,7 +655,7 @@ object ConnectNs extends js.Object {
   
   trait StartOutboundVoiceContactRequest extends js.Object {
     /**
-         * Specify a custom key-value pair using an attribute map. The attributes are standard Amazon Connect attributes, and can be accessed in contact flows just like any other contact attributes. There can be up to 32,768 UTF-8 bytes across all key-value pairs. Attribute keys can include only alphanumeric, dash, and underscore characters. For example, if you want play a greeting when the customer answers the call, you can pass the customer name in attributes similar to the following:
+         * Specify a custom key-value pair using an attribute map. The attributes are standard Amazon Connect attributes, and can be accessed in contact flows just like any other contact attributes. There can be up to 32,768 UTF-8 bytes across all key-value pairs per contact. Attribute keys can include only alphanumeric, dash, and underscore characters. For example, if you want play a greeting when the customer answers the call, you can pass the customer name in attributes similar to the following:
          */
     var Attributes: js.UndefOr[Attributes] = js.undefined
     /**
@@ -842,6 +862,35 @@ object ConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeUserHierarchyStructureResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Retrieves the contact attributes associated with a contact.
+       */
+    def getContactAttributes(): awsDashSdkLib.libRequestMod.Request[GetContactAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the contact attributes associated with a contact.
+       */
+    def getContactAttributes(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetContactAttributesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetContactAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the contact attributes associated with a contact.
+       */
+    def getContactAttributes(params: GetContactAttributesRequest): awsDashSdkLib.libRequestMod.Request[GetContactAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the contact attributes associated with a contact.
+       */
+    def getContactAttributes(
+      params: GetContactAttributesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetContactAttributesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetContactAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * The GetCurrentMetricData operation retrieves current metric data from your Amazon Connect instance. If you are using an IAM account, it must have permission to the connect:GetCurrentMetricData action.
        */
     def getCurrentMetricData(): awsDashSdkLib.libRequestMod.Request[GetCurrentMetricDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1045,11 +1094,11 @@ object ConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action.
+       * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, the call fails.
        */
     def startOutboundVoiceContact(): awsDashSdkLib.libRequestMod.Request[StartOutboundVoiceContactResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action.
+       * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, the call fails.
        */
     def startOutboundVoiceContact(
       callback: js.Function2[
@@ -1059,11 +1108,11 @@ object ConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartOutboundVoiceContactResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action.
+       * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, the call fails.
        */
     def startOutboundVoiceContact(params: StartOutboundVoiceContactRequest): awsDashSdkLib.libRequestMod.Request[StartOutboundVoiceContactResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action.
+       * The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, the call fails.
        */
     def startOutboundVoiceContact(
       params: StartOutboundVoiceContactRequest,
@@ -1241,7 +1290,7 @@ object ConnectNs extends js.Object {
   
   trait UpdateContactAttributesRequest extends js.Object {
     /**
-         * The key-value pairs for the attribute to update.
+         * Specify a custom key-value pair using an attribute map. The attributes are standard Amazon Connect attributes, and can be accessed in contact flows just like any other contact attributes. There can be up to 32,768 UTF-8 bytes across all key-value pairs per contact. Attribute keys can include only alphanumeric, dash, and underscore characters.
          */
     var Attributes: Attributes
     /**

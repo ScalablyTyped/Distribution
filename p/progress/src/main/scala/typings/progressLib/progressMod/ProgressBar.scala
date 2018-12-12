@@ -30,7 +30,7 @@ trait ProgressBar extends js.Object {
   def render(tokens: js.Any): scala.Unit = js.native
   /**
        * Terminates a progress bar.
-       */ 
+       */
   def terminate(): scala.Unit = js.native
   /**
        * "tick" the progress bar with optional `len` and optional `tokens`.

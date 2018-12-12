@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "authmosphere"
-version := "2.2.1-040413"
+version := "2.2.1-69e7f8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

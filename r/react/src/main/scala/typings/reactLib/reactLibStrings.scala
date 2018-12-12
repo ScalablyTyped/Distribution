@@ -22,6 +22,9 @@ object reactLibStrings {
   sealed trait ReactPropTypes extends js.Object
   
   @js.native
+  sealed trait WeakValidationMap extends js.Object
+  
+  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -278,6 +281,7 @@ object reactLibStrings {
   def Empty: Empty = "".asInstanceOf[Empty]
   def I: I = "I".asInstanceOf[I]
   def ReactPropTypes: ReactPropTypes = "ReactPropTypes".asInstanceOf[ReactPropTypes]
+  def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
   def a: a = "a".asInstanceOf[a]
   def additions: additions = "additions".asInstanceOf[additions]
   def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]

@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Shimmer/ShimmerElementsGroup/ShimmerElementsGroup", JSImport.Namespace)
 @js.native
 object libComponentsShimmerShimmerElementsGroupShimmerElementsGroupMod extends js.Object {
-  val ShimmerElementsGroup: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDotTypesMod.IShimmerElementsGroupProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
+  def ShimmerElementsGroup(
+    props: officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDotTypesMod.IShimmerElementsGroupProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

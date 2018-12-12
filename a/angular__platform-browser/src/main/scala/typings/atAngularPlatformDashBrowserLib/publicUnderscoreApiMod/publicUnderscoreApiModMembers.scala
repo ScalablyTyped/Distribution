@@ -21,10 +21,6 @@ object publicUnderscoreApiModMembers extends js.Object {
     atAngularPlatformDashBrowserLib.srcDomEventsHammerUnderscoreGesturesMod.HammerLoader
   ] = js.native
   val VERSION: atAngularCoreLib.coreMod.Version = js.native
-  val platformBrowser: js.Function1[
-    /* extraProviders */ js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]], 
-    atAngularCoreLib.coreMod.PlatformRef
-  ] = js.native
   val ɵBROWSER_SANITIZATION_PROVIDERS: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider] = js.native
   val ɵELEMENT_PROBE_PROVIDERS: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] = js.native
   val ɵINTERNAL_BROWSER_PLATFORM_PROVIDERS: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider] = js.native
@@ -32,6 +28,8 @@ object publicUnderscoreApiModMembers extends js.Object {
   def disableDebugTools(): scala.Unit = js.native
   def enableDebugTools[T](ref: atAngularCoreLib.coreMod.ComponentRef[T]): atAngularCoreLib.coreMod.ComponentRef[T] = js.native
   def makeStateKey[T](key: java.lang.String): atAngularPlatformDashBrowserLib.srcBrowserTransferUnderscoreStateMod.StateKey[T] = js.native
+  def platformBrowser(): atAngularCoreLib.coreMod.PlatformRef = js.native
+  def platformBrowser(extraProviders: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]): atAngularCoreLib.coreMod.PlatformRef = js.native
   def ɵescapeHtml(text: java.lang.String): java.lang.String = js.native
   def ɵflattenStyles(compId: java.lang.String, styles: js.Array[_ | js.Array[_]], target: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def ɵgetDOM(): atAngularPlatformDashBrowserLib.srcDomDomUnderscoreAdapterMod.DomAdapter = js.native

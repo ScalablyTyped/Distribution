@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server-express/dist/ApolloServer", JSImport.Namespace)
 @js.native
 object distApolloServerModMembers extends js.Object {
-  val registerServer: js.Function0[scala.Nothing] = js.native
+  def registerServer(): scala.Nothing = js.native
 }
 

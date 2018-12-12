@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_filtertable"
-version := "v1.5.7-dt-20180910Z-9c4c5e"
+version := "v1.5.7-dt-20180910Z-e54121"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181209Z-f8f791",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181212Z-994342",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-27b737",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false

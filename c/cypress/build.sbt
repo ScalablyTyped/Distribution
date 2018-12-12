@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.3-d49070"
+version := "3.1.3-0a58d3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,14 +11,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-b88fdf",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-4e4989",
   "org.scalablytyped" %%% "chai" % "4.1-dt-20181027Z-6866ba",
-  "org.scalablytyped" %%% "chai-jquery" % "1.1.1-dt-20181109Z-9ee7e5",
-  "org.scalablytyped" %%% "chalk" % "2.4.1-de9d5d",
+  "org.scalablytyped" %%% "chai-jquery" % "1.1.1-dt-20181109Z-d048af",
+  "org.scalablytyped" %%% "chalk" % "2.4.1-76fe8f",
   "org.scalablytyped" %%% "check-more-types" % "2.24.0-ae73cc",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-f388aa",
   "org.scalablytyped" %%% "commander" % "2.19.0-a52ac3",
   "org.scalablytyped" %%% "common-tags" % "1.8-dt-20181208Z-f968ee",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-c10888",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-7b17da",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-404a30",
   "org.scalablytyped" %%% "execa" % "0.9-dt-20180910Z-5e5aa0",
   "org.scalablytyped" %%% "extract-zip" % "1.6-dt-20180910Z-1d8f20",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-8a5f77",
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "getos" % "3.0-dt-20180910Z-eaef43",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-eb50b6",
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180910Z-c063b2",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181209Z-f8f791",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181212Z-994342",
   "org.scalablytyped" %%% "lazy-ass" % "1.6.0-fe726e",
   "org.scalablytyped" %%% "listr" % "0.13-dt-20180910Z-6afee1",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-93340d",

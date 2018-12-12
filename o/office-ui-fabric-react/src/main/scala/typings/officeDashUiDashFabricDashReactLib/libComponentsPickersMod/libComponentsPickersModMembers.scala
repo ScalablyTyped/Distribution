@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/pickers", JSImport.Namespace)
 @js.native
 object libComponentsPickersModMembers extends js.Object {
-  val TagItem: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagItemMod.ITagItemProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
+  def TagItem(props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagItemMod.ITagItemProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def createGenericItem(
     name: java.lang.String,
     currentValidationState: officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState,

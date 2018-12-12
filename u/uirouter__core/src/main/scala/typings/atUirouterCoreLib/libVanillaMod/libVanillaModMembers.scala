@@ -12,24 +12,10 @@ object libVanillaModMembers extends js.Object {
   val $injector: js.Any = js.native
   @JSName("$q")
   val $q: js.Any = js.native
-  val buildUrl: js.Function1[
-    /* loc */ atUirouterCoreLib.libCommonCoreservicesMod.LocationServices, 
-    java.lang.String
-  ] = js.native
-  val getParams: js.Function1[/* queryString */ java.lang.String, js.Any] = js.native
-  val hashLocationPlugin: js.Function1[
-    /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin
-  ] = js.native
-  val keyValsToObjectR: js.Function2[/* accum */ js.Any, /* hasKeyVal */ js.Tuple2[js.Any, js.Any], js.Any] = js.native
-  val memoryLocationPlugin: js.Function1[
-    /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin
-  ] = js.native
-  val pushStateLocationPlugin: js.Function1[
-    /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin
-  ] = js.native
+  def buildUrl(loc: atUirouterCoreLib.libCommonCoreservicesMod.LocationServices): java.lang.String = js.native
+  def getParams(queryString: java.lang.String): js.Any = js.native
+  def hashLocationPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin = js.native
+  def keyValsToObjectR(accum: js.Any, hasKeyVal: js.Tuple2[_, _]): js.Any = js.native
   def locationPluginFactory(
     name: java.lang.String,
     isHtml5: scala.Boolean,
@@ -39,7 +25,9 @@ object libVanillaModMembers extends js.Object {
     /* uiRouter */ atUirouterCoreLib.libRouterMod.UIRouter, 
     atUirouterCoreLib.Anon_Dispose
   ] = js.native
+  def memoryLocationPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin = js.native
   def parseUrl(url: java.lang.String): atUirouterCoreLib.Anon_Hash = js.native
+  def pushStateLocationPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin = js.native
   def servicesPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.ServicesPlugin = js.native
 }
 

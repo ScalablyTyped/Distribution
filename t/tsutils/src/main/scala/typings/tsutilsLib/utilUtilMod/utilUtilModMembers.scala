@@ -8,21 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("tsutils/util/util", JSImport.Namespace)
 @js.native
 object utilUtilModMembers extends js.Object {
-  val isNodeFlagSet: js.Function2[
-    /* node */ typescriptLib.typescriptMod.tsNs.Node, 
-    /* flag */ typescriptLib.typescriptMod.tsNs.NodeFlags, 
-    scala.Boolean
-  ] = js.native
-  val isSymbolFlagSet: js.Function2[
-    /* symbol */ typescriptLib.typescriptMod.tsNs.Symbol, 
-    /* flag */ typescriptLib.typescriptMod.tsNs.SymbolFlags, 
-    scala.Boolean
-  ] = js.native
-  val isTypeFlagSet: js.Function2[
-    /* type */ typescriptLib.typescriptMod.tsNs.Type, 
-    /* flag */ typescriptLib.typescriptMod.tsNs.TypeFlags, 
-    scala.Boolean
-  ] = js.native
   def canHaveJsDoc(node: typescriptLib.typescriptMod.tsNs.Node): /* is HasJSDoc */scala.Boolean = js.native
   def endsControlFlow(statement: typescriptLib.typescriptMod.tsNs.BlockLike): scala.Boolean = js.native
   def endsControlFlow(statement: typescriptLib.typescriptMod.tsNs.Statement): scala.Boolean = js.native
@@ -146,6 +131,7 @@ object utilUtilModMembers extends js.Object {
     flag: typescriptLib.typescriptMod.tsNs.ModifierFlags
   ): scala.Boolean = js.native
   def isModifierFlagSet(node: typescriptLib.typescriptMod.tsNs.Node, flag: typescriptLib.typescriptMod.tsNs.ModifierFlags): scala.Boolean = js.native
+  def isNodeFlagSet(node: typescriptLib.typescriptMod.tsNs.Node, flag: typescriptLib.typescriptMod.tsNs.NodeFlags): scala.Boolean = js.native
   def isNodeKind(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): scala.Boolean = js.native
   def isObjectFlagSet(
     objectType: typescriptLib.typescriptMod.tsNs.ObjectType,
@@ -163,8 +149,13 @@ object utilUtilModMembers extends js.Object {
   def isScopeBoundary(node: typescriptLib.typescriptMod.tsNs.Node): ScopeBoundary = js.native
   def isStatementInAmbientContext(node: typescriptLib.typescriptMod.tsNs.Statement): scala.Boolean = js.native
   def isStrictCompilerOptionEnabled(options: typescriptLib.typescriptMod.tsNs.CompilerOptions, option: StrictCompilerOption): scala.Boolean = js.native
+  def isSymbolFlagSet(
+    symbol: typescriptLib.typescriptMod.tsNs.Symbol,
+    flag: typescriptLib.typescriptMod.tsNs.SymbolFlags
+  ): scala.Boolean = js.native
   def isThisParameter(parameter: typescriptLib.typescriptMod.tsNs.ParameterDeclaration): scala.Boolean = js.native
   def isTokenKind(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): scala.Boolean = js.native
+  def isTypeFlagSet(`type`: typescriptLib.typescriptMod.tsNs.Type, flag: typescriptLib.typescriptMod.tsNs.TypeFlags): scala.Boolean = js.native
   def isTypeNodeKind(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): scala.Boolean = js.native
   def isValidIdentifier(text: java.lang.String): scala.Boolean = js.native
   def isValidNumericLiteral(text: java.lang.String): scala.Boolean = js.native

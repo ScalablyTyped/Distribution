@@ -9,12 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ldclientDashJsModMembers extends js.Object {
   val default: ldclientDashJsLib.Anon_Initialize = js.native
-  val initialize: js.Function3[
-    /* envKey */ java.lang.String, 
-    /* user */ LDUser, 
-    /* options */ js.UndefOr[LDOptions], 
-    LDClient
-  ] = js.native
   val version: java.lang.String = js.native
+  def initialize(envKey: java.lang.String, user: LDUser): LDClient = js.native
+  def initialize(envKey: java.lang.String, user: LDUser, options: LDOptions): LDClient = js.native
 }
 

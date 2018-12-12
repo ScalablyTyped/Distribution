@@ -12,39 +12,6 @@ object inversifyModMembers extends js.Object {
   val BindingTypeEnum: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingTypeEnum = js.native
   val METADATA_KEY: js.Any = js.native
   val TargetTypeEnum: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.TargetTypeEnum = js.native
-  val multiBindToService: js.Function1[
-    /* container */ inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container, 
-    js.Function1[
-      /* service */ java.lang.String | js.Symbol | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Newable[js.Any] | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Abstract[js.Any], 
-      js.Function1[
-        /* repeated */java.lang.String | js.Symbol | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Newable[js.Any] | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Abstract[js.Any], 
-        scala.Unit
-      ]
-    ]
-  ] = js.native
-  val namedConstraint: js.Function1[
-    /* value */ js.Any, 
-    inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ConstraintFunction
-  ] = js.native
-  val taggedConstraint: js.Function1[
-    /* key */ stdLib.PropertyKey, 
-    js.Function1[
-      /* value */ js.Any, 
-      inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ConstraintFunction
-    ]
-  ] = js.native
-  val traverseAncerstors: js.Function2[
-    /* request */ inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Request, 
-    /* constraint */ inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ConstraintFunction, 
-    scala.Boolean
-  ] = js.native
-  val typeConstraint: js.Function1[
-    /* type */ java.lang.String | js.Function, 
-    js.Function1[
-      /* request */ inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Request | scala.Null, 
-      scala.Boolean
-    ]
-  ] = js.native
   def decorate(decorator: stdLib.MethodDecorator | stdLib.ParameterDecorator, target: js.Any): scala.Unit = js.native
   def decorate(
     decorator: stdLib.MethodDecorator | stdLib.ParameterDecorator,
@@ -68,6 +35,13 @@ object inversifyModMembers extends js.Object {
     scala.Unit
   ] = js.native
   def injectable(): js.Function1[/* target */ js.Any, _] = js.native
+  def multiBindToService(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container): js.Function1[
+    /* service */ java.lang.String | js.Symbol | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Newable[_] | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Abstract[_], 
+    js.Function1[
+      /* repeated */java.lang.String | js.Symbol | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Newable[_] | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Abstract[_], 
+      scala.Unit
+    ]
+  ] = js.native
   def multiInject(serviceIdentifier: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ServiceIdentifier[_]): js.Function3[
     /* target */ js.Any, 
     /* targetKey */ java.lang.String, 
@@ -92,6 +66,7 @@ object inversifyModMembers extends js.Object {
     /* index */ js.UndefOr[scala.Double], 
     scala.Unit
   ] = js.native
+  def namedConstraint(value: js.Any): inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ConstraintFunction = js.native
   def optional(): js.Function3[
     /* target */ js.Any, 
     /* targetKey */ java.lang.String, 
@@ -122,11 +97,27 @@ object inversifyModMembers extends js.Object {
     /* index */ js.UndefOr[scala.Double], 
     scala.Unit
   ] = js.native
+  def taggedConstraint(key: stdLib.PropertyKey): js.Function1[
+    /* value */ js.Any, 
+    inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ConstraintFunction
+  ] = js.native
   def targetName(name: java.lang.String): js.Function3[
     /* target */ js.Any, 
     /* targetKey */ java.lang.String, 
     /* index */ scala.Double, 
     scala.Unit
+  ] = js.native
+  def traverseAncerstors(
+    request: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Request,
+    constraint: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ConstraintFunction
+  ): scala.Boolean = js.native
+  def typeConstraint(`type`: java.lang.String): js.Function1[
+    /* request */ inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Request | scala.Null, 
+    scala.Boolean
+  ] = js.native
+  def typeConstraint(`type`: js.Function): js.Function1[
+    /* request */ inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Request | scala.Null, 
+    scala.Boolean
   ] = js.native
   def unmanaged(): js.Function3[
     /* target */ js.Any, 

@@ -12,11 +12,6 @@ object distCommonjsTableModMembers extends js.Object {
   val SortIndicator: reactLib.reactMod.ReactNs.StatelessComponent[reactDashVirtualizedLib.Anon_SortDirection] = js.native
   val defaultCellDataGetter: reactDashVirtualizedLib.distEsTableMod.TableCellDataGetter = js.native
   val defaultCellRenderer: reactDashVirtualizedLib.distEsTableMod.TableCellRenderer = js.native
-  val defaultHeaderRenderer: js.Function0[
-    js.Array[
-      reactLib.reactMod.ReactNs.ReactElement[reactDashVirtualizedLib.distEsTableMod.TableHeaderProps]
-    ]
-  ] = js.native
   val defaultHeaderRowRenderer: reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer = js.native
   val defaultRowRenderer: reactDashVirtualizedLib.distEsTableMod.TableRowRenderer = js.native
   def createMultiSort(sortCallback: js.Function1[/* params */ reactDashVirtualizedLib.Anon_SortBy, scala.Unit]): reactDashVirtualizedLib.distEsTableMod.MultiSortReturn = js.native
@@ -24,5 +19,8 @@ object distCommonjsTableModMembers extends js.Object {
     sortCallback: js.Function1[/* params */ reactDashVirtualizedLib.Anon_SortBy, scala.Unit],
     options: reactDashVirtualizedLib.distEsTableMod.MultiSortOptions
   ): reactDashVirtualizedLib.distEsTableMod.MultiSortReturn = js.native
+  def defaultHeaderRenderer(): js.Array[
+    reactLib.reactMod.ReactNs.ReactElement[reactDashVirtualizedLib.distEsTableMod.TableHeaderProps]
+  ] = js.native
 }
 

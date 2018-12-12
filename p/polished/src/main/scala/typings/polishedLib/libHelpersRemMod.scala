@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("polished/lib/helpers/rem", JSImport.Namespace)
 @js.native
 object libHelpersRemMod extends js.Object {
-  val default: js.Function2[
-    /* value */ java.lang.String | scala.Double, 
-    /* base */ js.UndefOr[java.lang.String | scala.Double], 
-    java.lang.String
-  ] = js.native
+  def default(value: java.lang.String): java.lang.String = js.native
+  def default(value: java.lang.String, base: java.lang.String): java.lang.String = js.native
+  def default(value: java.lang.String, base: scala.Double): java.lang.String = js.native
+  def default(value: scala.Double): java.lang.String = js.native
+  def default(value: scala.Double, base: java.lang.String): java.lang.String = js.native
+  def default(value: scala.Double, base: scala.Double): java.lang.String = js.native
 }
 

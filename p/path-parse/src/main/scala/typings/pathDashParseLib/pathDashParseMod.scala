@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("path-parse", JSImport.Namespace)
 @js.native
-object pathDashParseMod
-  extends ScalablyTyped.runtime.TopLevel[js.Function1[/* src */ java.lang.String, nodeLib.pathMod.ParsedPath]]
+object pathDashParseMod extends js.Object {
+  def apply(src: java.lang.String): nodeLib.pathMod.ParsedPath = js.native
+}
 

@@ -15,10 +15,8 @@ object ixIONs extends js.Object {
   }
   
   val URI: /* IxIO */ java.lang.String = js.native
-  val getMonad: js.Function0[
-    fpDashTsLib.libMonadMod.Monad3C[fpDashTsLib.fpDashTsLibStrings.IxIO, js.Any, js.Any]
-  ] = js.native
-  val iof: js.Function1[/* a */ js.Any, fpDashTsLib.libIxIOMod.IxIO[js.Any, js.Any, js.Any]] = js.native
   val ixIO: fpDashTsLib.libIxMonadMod.IxMonad3[fpDashTsLib.libIxIOMod.URI] = js.native
+  def getMonad[I](): fpDashTsLib.libMonadMod.Monad3C[fpDashTsLib.fpDashTsLibStrings.IxIO, I, I] = js.native
+  def iof[I, A](a: A): fpDashTsLib.libIxIOMod.IxIO[I, I, A] = js.native
 }
 

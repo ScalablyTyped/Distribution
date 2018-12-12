@@ -21,8 +21,8 @@ object unistDashUtilDashIsModMembers extends js.Object {
    * @param context Context object to invoke `test` with
    * @returns Whether test passed and `node` is a `Node` (object with `type` set to non-empty `string`).
    */
-  def apply[C](
-    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test[C] | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test[C]],
+  def apply(
+    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test],
     node: js.Any
   ): scala.Boolean = js.native
   /**
@@ -38,8 +38,8 @@ object unistDashUtilDashIsModMembers extends js.Object {
    * @param context Context object to invoke `test` with
    * @returns Whether test passed and `node` is a `Node` (object with `type` set to non-empty `string`).
    */
-  def apply[C](
-    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test[C] | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test[C]],
+  def apply(
+    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test],
     node: js.Any,
     index: scala.Double
   ): scala.Boolean = js.native
@@ -56,8 +56,8 @@ object unistDashUtilDashIsModMembers extends js.Object {
    * @param context Context object to invoke `test` with
    * @returns Whether test passed and `node` is a `Node` (object with `type` set to non-empty `string`).
    */
-  def apply[C](
-    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test[C] | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test[C]],
+  def apply(
+    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test],
     node: js.Any,
     index: scala.Double,
     parent: unistLib.unistMod.Parent
@@ -75,8 +75,8 @@ object unistDashUtilDashIsModMembers extends js.Object {
    * @param context Context object to invoke `test` with
    * @returns Whether test passed and `node` is a `Node` (object with `type` set to non-empty `string`).
    */
-  def apply[C](
-    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test[C] | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test[C]],
+  def apply(
+    test: unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test | js.Array[unistDashUtilDashIsLib.unistDashUtilDashIsMod.unistUtilIsNs.Test],
     node: js.Any,
     index: scala.Double,
     parent: unistLib.unistMod.Parent,

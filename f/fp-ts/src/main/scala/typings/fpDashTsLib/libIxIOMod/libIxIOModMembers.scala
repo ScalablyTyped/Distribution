@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libIxIOModMembers extends js.Object {
   val URI: /* IxIO */ java.lang.String = js.native
-  val getMonad: js.Function0[
-    fpDashTsLib.libMonadMod.Monad3C[fpDashTsLib.fpDashTsLibStrings.IxIO, js.Any, js.Any]
-  ] = js.native
-  val iof: js.Function1[/* a */ js.Any, IxIO[js.Any, js.Any, js.Any]] = js.native
   val ixIO: fpDashTsLib.libIxMonadMod.IxMonad3[URI] = js.native
+  def getMonad[I](): fpDashTsLib.libMonadMod.Monad3C[fpDashTsLib.fpDashTsLibStrings.IxIO, I, I] = js.native
+  def iof[I, A](a: A): IxIO[I, I, A] = js.native
 }
 

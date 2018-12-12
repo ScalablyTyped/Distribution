@@ -14,197 +14,33 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     officeDashUiDashFabricDashReactLib.libComponentsBreadcrumbBreadcrumbDotTypesMod.IBreadcrumbProps
   ] = js.native
   val COACHMARK_ATTRIBUTE_NAME: /* data-coachmarkid */ java.lang.String = js.native
-  val Check: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsCheckCheckDotTypesMod.ICheckProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Checkbox: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsCheckboxCheckboxDotTypesMod.ICheckboxProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ChoiceGroup: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ChoiceGroupOption: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Coachmark: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsCoachmarkCoachmarkDotTypesMod.ICoachmarkProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val ColorClassNames: atUifabricStylingLib.libClassNamesColorClassNamesMod.IColorClassNames = js.native
-  val ColorPicker: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsColorPickerColorPickerDotTypesMod.IColorPickerProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ColorPickerGridCell: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsSwatchColorPickerColorPickerGridCellDotTypesMod.IColorPickerGridCellProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val CommandBar: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsCommandBarCommandBarDotTypesMod.ICommandBarProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val CommandButton: ScalablyTyped.runtime.Instantiable0[
     officeDashUiDashFabricDashReactLib.libComponentsButtonActionButtonActionButtonMod.ActionButton
-  ] = js.native
-  val ContextualMenu: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ContextualMenuItem: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuItemDotTypesMod.IContextualMenuItemProps, 
-    reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
   val CustomizerContext: reactLib.reactMod.ReactNs.Context[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
   val DATA_IS_SCROLLABLE_ATTRIBUTE: /* data-is-scrollable */ java.lang.String = js.native
   val DATA_PORTAL_ATTRIBUTE: /* data-portal-element */ java.lang.String = js.native
   val DEFAULT_MASK_CHAR: /* _ */ java.lang.String = js.native
-  val DatePicker: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDatePickerDatePickerDotTypesMod.IDatePickerProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val DefaultFontStyles: atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles = js.native
   val DefaultPalette: atUifabricStylingLib.libInterfacesIPaletteMod.IPalette = js.native
-  val DetailsList: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IDetailsListProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val DetailsRow: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsRowDotTypesMod.IDetailsRowBaseProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val DetailsRowCheck: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsRowCheckDotTypesMod.IDetailsRowCheckProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val Dialog: reactLib.reactMod.ReactNs.StatelessComponent[
     officeDashUiDashFabricDashReactLib.libComponentsDialogDialogDotTypesMod.IDialogProps
   ] = js.native
-  val DialogContent: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDialogDialogContentDotTypesMod.IDialogContentProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val DialogFooter: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDialogDialogFooterDotTypesMod.IDialogFooterProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge = js.native
-  val Dropdown: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDropdownDropdownDotTypesMod.IDropdownProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ExpandingCard: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsHoverCardExpandingCardDotTypesMod.IExpandingCardProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Fabric: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsFabricFabricDotTypesMod.IFabricProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Facepile: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsFacepileFacepileDotTypesMod.IFacepileProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val FocusZoneTabbableElements: officeDashUiDashFabricDashReactLib.Anon_None = js.native
-  val Grid: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libUtilitiesGridGridDotTypesMod.IGridProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val GroupedList: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupedListDotTypesMod.IGroupedListProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val HighContrastSelector: /* @media screen and (-ms-high-contrast: active) */ java.lang.String = js.native
   val HighContrastSelectorBlack: /* @media screen and (-ms-high-contrast: white-on-black) */ java.lang.String = js.native
   val HighContrastSelectorWhite: /* @media screen and (-ms-high-contrast: black-on-white) */ java.lang.String = js.native
-  val HoverCard: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.IHoverCardProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Icon: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsIconIconDotTypesMod.IIconProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Image: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.IImageProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val InjectionMode: atUifabricMergeDashStylesLib.Anon_None = js.native
   val IsFocusVisibleClassName: /* ms-Fabric--isFocusVisible */ java.lang.String = js.native
   val KeyCodes: atUifabricUtilitiesLib.Anon_E = js.native
-  val KeytipLayer: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsKeytipLayerKeytipLayerDotTypesMod.IKeytipLayerProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Label: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsLabelLabelDotTypesMod.ILabelProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Layer: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotTypesMod.ILayerProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val Link: reactLib.reactMod.ReactNs.StatelessComponent[officeDashUiDashFabricDashReactLib.libComponentsLinkLinkDotTypesMod.ILinkProps] = js.native
   val MAX_COLOR_HUE: /* 359 */ scala.Double = js.native
   val MAX_COLOR_RGBA: /* 255 */ scala.Double = js.native
   val MAX_COLOR_SATURATION: /* 100 */ scala.Double = js.native
   val MAX_COLOR_VALUE: /* 100 */ scala.Double = js.native
-  val MarqueeSelection: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsMarqueeSelectionMarqueeSelectionDotTypesMod.IMarqueeSelectionProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val MessageBar: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsMessageBarMessageBarDotTypesMod.IMessageBarProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Modal: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsModalModalDotTypesMod.IModalProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Nav: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsNavNavDotTypesMod.INavProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val OverflowSet: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsOverflowSetOverflowSetDotTypesMod.IOverflowSetProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Overlay: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsOverlayOverlayDotTypesMod.IOverlayProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Panel: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsPanelPanelDotTypesMod.IPanelProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Persona: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val PersonaCoin: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaCoinProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Pivot: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsPivotPivotDotTypesMod.IPivotProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val PlainCard: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsHoverCardPlainCardPlainCardDotTypesMod.IPlainCardProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ProgressIndicator: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsProgressIndicatorProgressIndicatorDotTypesMod.IProgressIndicatorProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val PulsingBeaconAnimationStyles: atUifabricStylingLib.Anon_CreateDefaultAnimation = js.native
-  val Rating: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsRatingRatingDotTypesMod.IRatingProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val ResizeGroup: ScalablyTyped.runtime.Instantiable1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotTypesMod.IResizeGroupProps, 
     officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotBaseMod.ResizeGroupBase
@@ -223,98 +59,16 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   val ScreenWidthMinXXLarge: /* 1366 */ scala.Double = js.native
   val ScreenWidthMinXXXLarge: /* 1920 */ scala.Double = js.native
   val ScrollToMode: officeDashUiDashFabricDashReactLib.Anon_Bottom = js.native
-  val ScrollablePane: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val ScrollbarVisibility: officeDashUiDashFabricDashReactLib.Anon_Always = js.native
-  val SearchBox: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsSearchBoxSearchBoxDotTypesMod.ISearchBoxProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Shimmer: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerDotTypesMod.IShimmerProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ShimmerCircle: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerCircleShimmerCircleDotTypesMod.IShimmerCircleProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ShimmerElementsGroup: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDotTypesMod.IShimmerElementsGroupProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ShimmerGap: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerGapShimmerGapDotTypesMod.IShimmerGapProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ShimmerLine: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerLineShimmerLineDotTypesMod.IShimmerLineProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val ShimmeredDetailsList: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListShimmeredDetailsListDotTypesMod.IShimmeredDetailsListProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Slider: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsSliderSliderDotTypesMod.ISliderProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val Spinner: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsSpinnerSpinnerDotTypesMod.ISpinnerProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val SwatchColorPicker: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsSwatchColorPickerSwatchColorPickerDotTypesMod.ISwatchColorPickerProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val TagItem: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagItemMod.ITagItemProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val TeachingBubble: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val TeachingBubbleContent: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val TextField: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val ThemeSettingName: /* theme */ java.lang.String = js.native
   val Toggle: reactLib.reactMod.ReactNs.StatelessComponent[
     officeDashUiDashFabricDashReactLib.libComponentsToggleToggleDotTypesMod.IToggleProps
-  ] = js.native
-  val Tooltip: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipDotTypesMod.ITooltipProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val TooltipHost: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val VerticalDivider: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val allowScrollOnElement: js.Function2[
-    /* element */ reactLib.HTMLElement | scala.Null, 
-    /* events */ atUifabricUtilitiesLib.libEventGroupMod.EventGroup, 
-    scala.Unit
   ] = js.native
   val anchorProperties: js.Array[java.lang.String] = js.native
   val baseElementEvents: js.Array[java.lang.String] = js.native
   val baseElementProperties: js.Array[java.lang.String] = js.native
   val buttonProperties: js.Array[java.lang.String] = js.native
   val divProperties: js.Array[java.lang.String] = js.native
-  val getMeasurementCache: js.Function0[officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement] = js.native
-  val getNextResizeGroupStateProvider: js.Function1[
-    /* measurementCache */ js.UndefOr[officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement], 
-    officeDashUiDashFabricDashReactLib.Anon_GetNextState
-  ] = js.native
   val groupOne: js.Array[
     officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.IExtendedPersonaProps
   ] = js.native
@@ -325,7 +79,6 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   val htmlElementProperties: js.Array[java.lang.String] = js.native
   val imageProperties: js.Array[java.lang.String] = js.native
   val inputProperties: js.Array[java.lang.String] = js.native
-  val isIOS: js.Function0[scala.Boolean] = js.native
   val mru: js.Array[
     officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.IExtendedPersonaProps
   ] = js.native
@@ -334,17 +87,142 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   val people: js.Array[
     officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.IExtendedPersonaProps with officeDashUiDashFabricDashReactLib.Anon_Key
   ] = js.native
-  val presenceBoolean: js.Function1[
-    /* presence */ officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaPresence, 
-    officeDashUiDashFabricDashReactLib.Anon_IsBusy
-  ] = js.native
-  val sizeBoolean: js.Function1[
-    /* size */ officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize, 
-    officeDashUiDashFabricDashReactLib.Anon_IsSize48
-  ] = js.native
   val textAreaProperties: js.Array[java.lang.String] = js.native
+  def Check(props: officeDashUiDashFabricDashReactLib.libComponentsCheckCheckDotTypesMod.ICheckProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Checkbox(props: officeDashUiDashFabricDashReactLib.libComponentsCheckboxCheckboxDotTypesMod.ICheckboxProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ChoiceGroup(
+    props: officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ChoiceGroupOption(
+    props: officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Coachmark(
+    props: officeDashUiDashFabricDashReactLib.libComponentsCoachmarkCoachmarkDotTypesMod.ICoachmarkProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ColorPicker(
+    props: officeDashUiDashFabricDashReactLib.libComponentsColorPickerColorPickerDotTypesMod.IColorPickerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ColorPickerGridCell(
+    props: officeDashUiDashFabricDashReactLib.libComponentsSwatchColorPickerColorPickerGridCellDotTypesMod.IColorPickerGridCellProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def CommandBar(
+    props: officeDashUiDashFabricDashReactLib.libComponentsCommandBarCommandBarDotTypesMod.ICommandBarProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ContextualMenu(
+    props: officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ContextualMenuItem(
+    props: officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuItemDotTypesMod.IContextualMenuItemProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def DatePicker(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDatePickerDatePickerDotTypesMod.IDatePickerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def DetailsList(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IDetailsListProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def DetailsRow(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsRowDotTypesMod.IDetailsRowBaseProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def DetailsRowCheck(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsRowCheckDotTypesMod.IDetailsRowCheckProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def DialogContent(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDialogDialogContentDotTypesMod.IDialogContentProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def DialogFooter(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDialogDialogFooterDotTypesMod.IDialogFooterProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Dropdown(props: officeDashUiDashFabricDashReactLib.libComponentsDropdownDropdownDotTypesMod.IDropdownProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ExpandingCard(
+    props: officeDashUiDashFabricDashReactLib.libComponentsHoverCardExpandingCardDotTypesMod.IExpandingCardProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Fabric(props: officeDashUiDashFabricDashReactLib.libComponentsFabricFabricDotTypesMod.IFabricProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Facepile(props: officeDashUiDashFabricDashReactLib.libComponentsFacepileFacepileDotTypesMod.IFacepileProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Grid(props: officeDashUiDashFabricDashReactLib.libUtilitiesGridGridDotTypesMod.IGridProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def GroupedList(
+    props: officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupedListDotTypesMod.IGroupedListProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def HoverCard(
+    props: officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.IHoverCardProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Icon(props: officeDashUiDashFabricDashReactLib.libComponentsIconIconDotTypesMod.IIconProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Image(props: officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.IImageProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def KeytipLayer(
+    props: officeDashUiDashFabricDashReactLib.libComponentsKeytipLayerKeytipLayerDotTypesMod.IKeytipLayerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Label(props: officeDashUiDashFabricDashReactLib.libComponentsLabelLabelDotTypesMod.ILabelProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Layer(props: officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotTypesMod.ILayerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def MarqueeSelection(
+    props: officeDashUiDashFabricDashReactLib.libComponentsMarqueeSelectionMarqueeSelectionDotTypesMod.IMarqueeSelectionProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def MessageBar(
+    props: officeDashUiDashFabricDashReactLib.libComponentsMessageBarMessageBarDotTypesMod.IMessageBarProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Modal(props: officeDashUiDashFabricDashReactLib.libComponentsModalModalDotTypesMod.IModalProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Nav(props: officeDashUiDashFabricDashReactLib.libComponentsNavNavDotTypesMod.INavProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def OverflowSet(
+    props: officeDashUiDashFabricDashReactLib.libComponentsOverflowSetOverflowSetDotTypesMod.IOverflowSetProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Overlay(props: officeDashUiDashFabricDashReactLib.libComponentsOverlayOverlayDotTypesMod.IOverlayProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Panel(props: officeDashUiDashFabricDashReactLib.libComponentsPanelPanelDotTypesMod.IPanelProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Persona(props: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def PersonaCoin(props: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaCoinProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Pivot(props: officeDashUiDashFabricDashReactLib.libComponentsPivotPivotDotTypesMod.IPivotProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def PlainCard(
+    props: officeDashUiDashFabricDashReactLib.libComponentsHoverCardPlainCardPlainCardDotTypesMod.IPlainCardProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ProgressIndicator(
+    props: officeDashUiDashFabricDashReactLib.libComponentsProgressIndicatorProgressIndicatorDotTypesMod.IProgressIndicatorProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Rating(props: officeDashUiDashFabricDashReactLib.libComponentsRatingRatingDotTypesMod.IRatingProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ScrollablePane(
+    props: officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def SearchBox(
+    props: officeDashUiDashFabricDashReactLib.libComponentsSearchBoxSearchBoxDotTypesMod.ISearchBoxProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Shimmer(props: officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerDotTypesMod.IShimmerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ShimmerCircle(
+    props: officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerCircleShimmerCircleDotTypesMod.IShimmerCircleProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ShimmerElementsGroup(
+    props: officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDotTypesMod.IShimmerElementsGroupProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ShimmerGap(
+    props: officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerGapShimmerGapDotTypesMod.IShimmerGapProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ShimmerLine(
+    props: officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerLineShimmerLineDotTypesMod.IShimmerLineProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ShimmeredDetailsList(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDetailsListShimmeredDetailsListDotTypesMod.IShimmeredDetailsListProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Slider(props: officeDashUiDashFabricDashReactLib.libComponentsSliderSliderDotTypesMod.ISliderProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Spinner(props: officeDashUiDashFabricDashReactLib.libComponentsSpinnerSpinnerDotTypesMod.ISpinnerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def SwatchColorPicker(
+    props: officeDashUiDashFabricDashReactLib.libComponentsSwatchColorPickerSwatchColorPickerDotTypesMod.ISwatchColorPickerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagItem(props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagItemMod.ITagItemProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TeachingBubble(
+    props: officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TeachingBubbleContent(
+    props: officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TextField(
+    props: officeDashUiDashFabricDashReactLib.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def Tooltip(props: officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipDotTypesMod.ITooltipProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TooltipHost(
+    props: officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def VerticalDivider(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def addDirectionalKeyCode(which: scala.Double): scala.Unit = js.native
   def addElementAtIndex[T](array: js.Array[T], index: scala.Double, itemToAdd: T): js.Array[T] = js.native
+  def allowScrollOnElement(element: reactLib.HTMLElement, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
+  def allowScrollOnElement(element: scala.Null, events: atUifabricUtilitiesLib.libEventGroupMod.EventGroup): scala.Unit = js.native
   def arraysEqual[T](array1: js.Array[T], array2: js.Array[T]): scala.Boolean = js.native
   def asAsync[TProps](options: atUifabricUtilitiesLib.libAsAsyncMod.IAsAsyncOptions[TProps]): reactLib.reactMod.ReactNs.ComponentType[TProps with atUifabricUtilitiesLib.Anon_AsyncPlaceholder] = js.native
   def assertNever(x: scala.Nothing): scala.Nothing = js.native
@@ -1085,6 +963,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     currentElement: reactLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
   ): reactLib.HTMLElement | scala.Null = js.native
+  def getMeasurementCache(): officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement = js.native
   def getNativeProps[T](props: js.Object, allowedPropNames: js.Array[java.lang.String]): T = js.native
   def getNativeProps[T](
     props: js.Object,
@@ -1111,6 +990,8 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     allowFocusRoot: js.UndefOr[scala.Boolean],
     tabbable: js.UndefOr[scala.Boolean]
   ): reactLib.HTMLElement | scala.Null = js.native
+  def getNextResizeGroupStateProvider(): officeDashUiDashFabricDashReactLib.Anon_GetNextState = js.native
+  def getNextResizeGroupStateProvider(measurementCache: officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement): officeDashUiDashFabricDashReactLib.Anon_GetNextState = js.native
   def getParent(child: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
   def getParent(child: reactLib.HTMLElement, allowVirtualParents: scala.Boolean): reactLib.HTMLElement | scala.Null = js.native
   def getPreviousElement(
@@ -1194,6 +1075,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def isElementTabbable(element: reactLib.HTMLElement, checkTabIndex: scala.Boolean): scala.Boolean = js.native
   def isElementVisible(): scala.Boolean = js.native
   def isElementVisible(element: reactLib.HTMLElement): scala.Boolean = js.native
+  def isIOS(): scala.Boolean = js.native
   def isMac(): scala.Boolean = js.native
   def isMac(reset: scala.Boolean): scala.Boolean = js.native
   def isRelativeUrl(url: java.lang.String): scala.Boolean = js.native
@@ -1498,6 +1380,9 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def portalContainsElement(target: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Boolean = js.native
   def precisionRound(value: scala.Double, precision: scala.Double): scala.Double = js.native
   def precisionRound(value: scala.Double, precision: scala.Double, base: scala.Double): scala.Double = js.native
+  def presenceBoolean(
+    presence: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaPresence
+  ): officeDashUiDashFabricDashReactLib.Anon_IsBusy = js.native
   def provideContext[TContext, TProps](
     contextTypes: propDashTypesLib.propDashTypesMod.ValidationMap[TContext],
     mapPropsToContext: js.Function1[/* props */ TProps, TContext]
@@ -1541,6 +1426,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     element: reactLib.HTMLElement,
     noWrapDataAttribute: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.`data-no-vertical-wrap`
   ): scala.Boolean = js.native
+  def sizeBoolean(size: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize): officeDashUiDashFabricDashReactLib.Anon_IsSize48 = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
     Component: reactLib.reactMod.ReactNs.ComponentClass[TComponentProps, reactLib.reactMod.ReactNs.ComponentState],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]

@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsColumn", JSImport.Namespace)
 @js.native
 object libComponentsDetailsListDetailsColumnModMembers extends js.Object {
-  val DetailsColumn: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsColumnDotTypesMod.IDetailsColumnProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
+  def DetailsColumn(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsColumnDotTypesMod.IDetailsColumnProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

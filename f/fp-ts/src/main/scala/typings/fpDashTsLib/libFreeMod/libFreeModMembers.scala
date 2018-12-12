@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libFreeModMembers extends js.Object {
   val URI: /* Free */ java.lang.String = js.native
-  val liftF: js.Function1[/* fa */ fpDashTsLib.libHKTMod.HKT[js.Any, js.Any], Free[js.Any, js.Any]] = js.native
-  val of: js.Function1[/* a */ js.Any, Free[js.Any, js.Any]] = js.native
   def foldFree[M](M: fpDashTsLib.libMonadMod.Monad[M]): js.Function2[
     /* nt */ js.Function1[/* fa */ fpDashTsLib.libHKTMod.HKT[_, _], fpDashTsLib.libHKTMod.HKT[M, _]], 
     /* fa */ Free[_, _], 
@@ -45,5 +43,7 @@ object libFreeModMembers extends js.Object {
   ): js.Function1[/* fa */ Free[F, _], Free[G, _]] = js.native
   @JSName("hoistFree")
   def hoistFree_FURISGURIS[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDashTsLib.libHKTMod.URIS */](nt: js.Function1[/* fa */ fpDashTsLib.libHKTMod.Type[F, _], fpDashTsLib.libHKTMod.Type[G, _]]): js.Function1[/* fa */ Free[F, _], Free[G, _]] = js.native
+  def liftF[F, A](fa: fpDashTsLib.libHKTMod.HKT[F, A]): Free[F, A] = js.native
+  def of[F, A](a: A): Free[F, A] = js.native
 }
 

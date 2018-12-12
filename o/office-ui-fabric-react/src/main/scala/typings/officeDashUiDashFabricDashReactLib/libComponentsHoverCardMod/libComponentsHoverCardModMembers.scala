@@ -9,17 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object libComponentsHoverCardModMembers extends js.Object {
   val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge = js.native
-  val ExpandingCard: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsHoverCardExpandingCardDotTypesMod.IExpandingCardProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val HoverCard: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.IHoverCardProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val PlainCard: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsHoverCardPlainCardPlainCardDotTypesMod.IPlainCardProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
+  def ExpandingCard(
+    props: officeDashUiDashFabricDashReactLib.libComponentsHoverCardExpandingCardDotTypesMod.IExpandingCardProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def HoverCard(
+    props: officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.IHoverCardProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def PlainCard(
+    props: officeDashUiDashFabricDashReactLib.libComponentsHoverCardPlainCardPlainCardDotTypesMod.IPlainCardProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

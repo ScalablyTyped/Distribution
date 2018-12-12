@@ -19,7 +19,7 @@ trait EurekaInstanceConfig extends js.Object {
   var isCoordinatingDiscoveryServer: js.UndefOr[scala.Boolean] = js.undefined
   var leaseInfo: js.UndefOr[LeaseInfo] = js.undefined
   var overriddenstatus: js.UndefOr[InstanceStatus] = js.undefined
-  var port: js.UndefOr[scala.Double] = js.undefined
+  var port: js.UndefOr[scala.Double | LegacyPortWrapper] = js.undefined
   var secureHealthCheckUrl: js.UndefOr[java.lang.String] = js.undefined
   var securePort: js.UndefOr[PortWrapper] = js.undefined
   var secureVipAddress: js.UndefOr[java.lang.String] = js.undefined

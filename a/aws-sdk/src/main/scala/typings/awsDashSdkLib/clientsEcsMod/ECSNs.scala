@@ -1479,7 +1479,7 @@ object ECSNs extends js.Object {
          */
     var principalArn: js.UndefOr[String] = js.undefined
     /**
-         * The account setting value for the specified principal ARN. Accepted values are ENABLED and DISABLED.
+         * The account setting value for the specified principal ARN. Accepted values are enabled and disabled.
          */
     var value: String
   }
@@ -1919,7 +1919,7 @@ object ECSNs extends js.Object {
          */
     var principalArn: js.UndefOr[String] = js.undefined
     /**
-         * The current account setting for the resource name. If ENABLED, then the resource will receive the new Amazon Resource Name (ARN) and resource identifier (ID) format. If DISABLED, then the resource will receive the old Amazon Resource Name (ARN) and resource identifier (ID) format.
+         * The current account setting for the resource name. If enabled, then the resource will receive the new Amazon Resource Name (ARN) and resource identifier (ID) format. If disabled, then the resource will receive the old Amazon Resource Name (ARN) and resource identifier (ID) format.
          */
     var value: js.UndefOr[String] = js.undefined
   }

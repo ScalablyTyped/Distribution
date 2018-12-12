@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pulumi__pulumi"
-version := "0.16.7-a5ccdc"
+version := "0.16.7-213b9f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "arrify" % "1.0-dt-20180910Z-8cd3e7",
   "org.scalablytyped" %%% "buffer-from" % "1.1-dt-20180910Z-04210e",
   "org.scalablytyped" %%% "diff" % "3.5-dt-20181105Z-eeb72f",
-  "org.scalablytyped" %%% "google-protobuf" % "3.2-dt-20180910Z-256311",
+  "org.scalablytyped" %%% "google-protobuf" % "3.2-dt-20180910Z-1dd67e",
   "org.scalablytyped" %%% "grpc" % "1.16.1-eae5ff",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-93340d",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180910Z-3aa15f",

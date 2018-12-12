@@ -148,6 +148,13 @@ object AWSNs extends js.Object {
   }
   
   @js.native
+  class ChainableTemporaryCredentials ()
+    extends awsDashSdkLib.awsDashSdkMod.ChainableTemporaryCredentials {
+    def this(options: awsDashSdkLib.libCredentialsChainableUnderscoreTemporaryUnderscoreCredentialsMod.ChainableTemporaryCredentialsNs.ChainableTemporaryCredentialsOptions) = this()
+    def this(options: awsDashSdkLib.libCredentialsChainableUnderscoreTemporaryUnderscoreCredentialsMod.ChainableTemporaryCredentialsNs.ChainableTemporaryCredentialsOptions, masterCredentials: awsDashSdkLib.libCredentialsMod.Credentials) = this()
+  }
+  
+  @js.native
   class Chime ()
     extends awsDashSdkLib.awsDashSdkMod.Chime {
     /**
@@ -2042,6 +2049,11 @@ object AWSNs extends js.Object {
     }
     
   }
+  
+  // Needed to expose interfaces on the class
+  @JSName("ChainableTemporaryCredentials")
+  @js.native
+  object ChainableTemporaryCredentialsNs extends js.Object
   
   @JSName("Chime")
   @js.native

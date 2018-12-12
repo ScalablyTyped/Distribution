@@ -50,18 +50,6 @@ object publicUnderscoreApiModMembers extends js.Object {
   val VERSION: atAngularCoreLib.srcVersionMod.Version = js.native
   val ViewChild: atAngularCoreLib.srcMetadataDiMod.ViewChildDecorator = js.native
   val ViewChildren: atAngularCoreLib.srcMetadataDiMod.ViewChildrenDecorator = js.native
-  val platformCore: js.Function1[
-    /* extraProviders */ js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]], 
-    atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef
-  ] = js.native
-  val wtfCreateScope: js.Function2[
-    /* signature */ java.lang.String, 
-    /* flags */ js.UndefOr[js.Any], 
-    atAngularCoreLib.srcProfileWtfUnderscoreImplMod.WtfScopeFn
-  ] = js.native
-  val wtfEndTimeRange: js.Function1[/* range */ js.Any, scala.Unit] = js.native
-  val wtfLeave: js.Function2[/* scope */ js.Any, /* returnValue */ js.UndefOr[js.Any], js.Any] = js.native
-  val wtfStartTimeRange: js.Function2[/* rangeType */ java.lang.String, /* action */ java.lang.String, js.Any] = js.native
   val ɵALLOW_MULTIPLE_PLATFORMS: atAngularCoreLib.srcDiMod.InjectionToken[scala.Boolean] = js.native
   val ɵAPP_ID_RANDOM_PROVIDER: atAngularCoreLib.Anon_Deps = js.native
   val ɵAPP_ROOT: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[scala.Boolean] = js.native
@@ -99,7 +87,6 @@ object publicUnderscoreApiModMembers extends js.Object {
     /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, element_ref)), TsIdentSimple(ElementRef)))) *//* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
   ] = js.native
-  val `ɵSWITCH_INJECTOR_FACTORY__POST_R3__`: js.Function0[atAngularCoreLib.srcRender3DiMod.NodeInjector] = js.native
   val `ɵSWITCH_IVY_ENABLED__POST_R3__`: /* true */ scala.Boolean = js.native
   val `ɵSWITCH_RENDERER2_FACTORY__POST_R3__`: js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
   val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: js.Function2[
@@ -120,7 +107,6 @@ object publicUnderscoreApiModMembers extends js.Object {
   ] = js.native
   val ɵdefaultIterableDiffers: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDiffers = js.native
   val ɵdefaultKeyValueDiffers: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDiffers = js.native
-  val ɵdefineDirective: js.Function1[/* directiveDefinition */ atAngularCoreLib.Anon_Features[js.Any], scala.Nothing] = js.native
   var ɵglobal: nodeLib.NodeJSNs.Global = js.native
   val ɵivyEnabled: /* false */ scala.Boolean = js.native
   def asNativeElements(debugEls: js.Array[atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement]): js.Any = js.native
@@ -194,8 +180,16 @@ object publicUnderscoreApiModMembers extends js.Object {
   @JSName("inject")
   def inject_TT[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T = js.native
   def isDevMode(): scala.Boolean = js.native
+  def platformCore(): atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef = js.native
+  def platformCore(extraProviders: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]): atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef = js.native
   def resolveForwardRef[T](`type`: T): T = js.native
   def setTestabilityGetter(getter: atAngularCoreLib.srcTestabilityTestabilityMod.GetTestability): scala.Unit = js.native
+  def wtfCreateScope(signature: java.lang.String): atAngularCoreLib.srcProfileWtfUnderscoreImplMod.WtfScopeFn = js.native
+  def wtfCreateScope(signature: java.lang.String, flags: js.Any): atAngularCoreLib.srcProfileWtfUnderscoreImplMod.WtfScopeFn = js.native
+  def wtfEndTimeRange(range: js.Any): scala.Unit = js.native
+  def wtfLeave[T](scope: js.Any): T = js.native
+  def wtfLeave[T](scope: js.Any, returnValue: T): T = js.native
+  def wtfStartTimeRange(rangeType: java.lang.String, action: java.lang.String): js.Any = js.native
   def ɵInheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
   def ɵInheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[_]): scala.Unit = js.native
   def ɵLifecycleHooksFeature(component: js.Any, `def`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
@@ -211,6 +205,7 @@ object publicUnderscoreApiModMembers extends js.Object {
     /* definition */ atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[T], 
     scala.Unit
   ] = js.native
+  def `ɵSWITCH_INJECTOR_FACTORY__POST_R3__`(): atAngularCoreLib.srcRender3DiMod.NodeInjector = js.native
   def ɵ_sanitizeHtml(defaultDoc: js.Any, unsafeHtmlInput: java.lang.String): java.lang.String = js.native
   def ɵ_sanitizeStyle(value: java.lang.String): java.lang.String = js.native
   def ɵ_sanitizeUrl(url: java.lang.String): java.lang.String = js.native
@@ -414,6 +409,7 @@ object publicUnderscoreApiModMembers extends js.Object {
   def ɵcrt(values: atAngularCoreLib.Anon_Encapsulation): atAngularCoreLib.srcRenderApiMod.RendererType2 = js.native
   def ɵdefineBase[T](baseDefinition: atAngularCoreLib.Anon_Outputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
   def ɵdefineComponent[T](componentDefinition: atAngularCoreLib.Anon_Directives[T]): scala.Nothing = js.native
+  def ɵdefineDirective[T](directiveDefinition: atAngularCoreLib.Anon_Features[T]): scala.Nothing = js.native
   def ɵdefineNgModule[T](
     `def`: atAngularCoreLib.Anon_TypeT[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
   ): scala.Nothing = js.native

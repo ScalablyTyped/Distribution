@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Semiring", JSImport.Namespace)
 @js.native
 object libSemiringModMembers extends js.Object {
-  val getFunctionSemiring: js.Function1[/* S */ Semiring[js.Any], Semiring[js.Function1[/* a */ js.Any, js.Any]]] = js.native
+  def getFunctionSemiring[A, B](S: Semiring[B]): Semiring[js.Function1[/* a */ A, B]] = js.native
 }
 

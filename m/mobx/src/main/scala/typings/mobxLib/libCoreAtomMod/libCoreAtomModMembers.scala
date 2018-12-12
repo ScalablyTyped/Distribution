@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object libCoreAtomModMembers extends js.Object {
   @JSName("$mobx")
   val $mobx: js.Symbol = js.native
-  val isAtom: js.Function1[/* x */ js.Any, /* is Atom */scala.Boolean] = js.native
   def createAtom(name: java.lang.String): IAtom = js.native
   def createAtom(name: java.lang.String, onBecomeObservedHandler: js.Function0[scala.Unit]): IAtom = js.native
   def createAtom(
@@ -18,5 +17,6 @@ object libCoreAtomModMembers extends js.Object {
     onBecomeObservedHandler: js.Function0[scala.Unit],
     onBecomeUnobservedHandler: js.Function0[scala.Unit]
   ): IAtom = js.native
+  def isAtom(x: js.Any): /* is Atom */scala.Boolean = js.native
 }
 

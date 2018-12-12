@@ -9,20 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object libIOEitherModMembers extends js.Object {
   val URI: /* IOEither */ java.lang.String = js.native
-  val fromEither: js.Function1[/* fa */ fpDashTsLib.libEitherMod.Either[js.Any, js.Any], IOEither[js.Any, js.Any]] = js.native
-  val fromLeft: js.Function1[/* l */ js.Any, IOEither[js.Any, js.Any]] = js.native
   val ioEither: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] = js.native
-  val left: js.Function1[/* fa */ fpDashTsLib.libIOMod.IO[js.Any], IOEither[js.Any, js.Any]] = js.native
-  val right: js.Function1[/* fa */ fpDashTsLib.libIOMod.IO[js.Any], IOEither[js.Any, js.Any]] = js.native
-  val tryCatch: js.Function2[
-    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], 
-    /* onerror */ js.UndefOr[js.Function1[/* reason */ js.Any, stdLib.Error]], 
-    IOEither[stdLib.Error, js.Any]
-  ] = js.native
-  val tryCatch2v: js.Function2[
-    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], 
-    /* onerror */ js.Function1[/* reason */ js.Any, js.Any], 
-    IOEither[js.Any, js.Any]
-  ] = js.native
+  def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): IOEither[L, A] = js.native
+  def fromLeft[L, A](l: L): IOEither[L, A] = js.native
+  def left[L, A](fa: fpDashTsLib.libIOMod.IO[L]): IOEither[L, A] = js.native
+  def right[L, A](fa: fpDashTsLib.libIOMod.IO[A]): IOEither[L, A] = js.native
+  def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A]): IOEither[stdLib.Error, A] = js.native
+  def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A], onerror: js.Function1[/* reason */ js.Any, stdLib.Error]): IOEither[stdLib.Error, A] = js.native
+  def tryCatch2v[L, A](f: fpDashTsLib.libFunctionMod.Lazy[A], onerror: js.Function1[/* reason */ js.Any, L]): IOEither[L, A] = js.native
 }
 

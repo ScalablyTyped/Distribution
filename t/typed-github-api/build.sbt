@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "typed-github-api"
-version := "1.2.6-82dd96"
+version := "1.2.6-293727"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "async" % "2.0.1-dt-20181020Z-6d9978",
-  "org.scalablytyped" %%% "blow-http-statuses" % "0.2.4-0d2808",
+  "org.scalablytyped" %%% "blow-http-statuses" % "0.2.4-85da1d",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-1e3d17",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-2435e6",
   "org.scalablytyped" %%% "crypto-js" % "v3.1.8-dt-20180910Z-40a6ec",

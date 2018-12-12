@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcRender3DefinitionMod extends js.Object {
   val EMPTY_ARRAY: js.Array[js.Any] = js.native
-  val defineDirective: js.Function1[/* directiveDefinition */ atAngularCoreLib.Anon_Features[js.Any], scala.Nothing] = js.native
   def defineBase[T](baseDefinition: atAngularCoreLib.Anon_Outputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
   def defineComponent[T](componentDefinition: atAngularCoreLib.Anon_Directives[T]): scala.Nothing = js.native
+  def defineDirective[T](directiveDefinition: atAngularCoreLib.Anon_Features[T]): scala.Nothing = js.native
   def defineNgModule[T](
     `def`: atAngularCoreLib.Anon_TypeT[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
   ): scala.Nothing = js.native

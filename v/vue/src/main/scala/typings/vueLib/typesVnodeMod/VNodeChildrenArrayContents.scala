@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait VNodeChildrenArrayContents
-  extends stdLib.Array[VNode | java.lang.String | VNodeChildrenArrayContents]
+  extends stdLib.Array[VNodeChildren | VNode]
 

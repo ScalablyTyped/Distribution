@@ -16,7 +16,6 @@ object srcRender3ModMembers extends js.Object {
       atAngularCoreLib.srcRenderApiMod.RendererFactory2
     ]
   ] = js.native
-  val defineDirective: js.Function1[/* directiveDefinition */ atAngularCoreLib.Anon_Features[js.Any], scala.Nothing] = js.native
   def InheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
   def InheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[_]): scala.Unit = js.native
   def LifecycleHooksFeature(component: js.Any, `def`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
@@ -38,6 +37,7 @@ object srcRender3ModMembers extends js.Object {
   def containerRefreshStart(index: scala.Double): scala.Unit = js.native
   def defineBase[T](baseDefinition: atAngularCoreLib.Anon_Outputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
   def defineComponent[T](componentDefinition: atAngularCoreLib.Anon_Directives[T]): scala.Nothing = js.native
+  def defineDirective[T](directiveDefinition: atAngularCoreLib.Anon_Features[T]): scala.Nothing = js.native
   def defineNgModule[T](
     `def`: atAngularCoreLib.Anon_TypeT[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
   ): scala.Nothing = js.native

@@ -15,29 +15,13 @@ object ioEitherNs extends js.Object {
   }
   
   val URI: /* IOEither */ java.lang.String = js.native
-  val fromEither: js.Function1[
-    /* fa */ fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
-    fpDashTsLib.libIOEitherMod.IOEither[js.Any, js.Any]
-  ] = js.native
-  val fromLeft: js.Function1[/* l */ js.Any, fpDashTsLib.libIOEitherMod.IOEither[js.Any, js.Any]] = js.native
   val ioEither: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libIOEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libIOEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libIOEitherMod.URI] = js.native
-  val left: js.Function1[
-    /* fa */ fpDashTsLib.libIOMod.IO[js.Any], 
-    fpDashTsLib.libIOEitherMod.IOEither[js.Any, js.Any]
-  ] = js.native
-  val right: js.Function1[
-    /* fa */ fpDashTsLib.libIOMod.IO[js.Any], 
-    fpDashTsLib.libIOEitherMod.IOEither[js.Any, js.Any]
-  ] = js.native
-  val tryCatch: js.Function2[
-    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], 
-    /* onerror */ js.UndefOr[js.Function1[/* reason */ js.Any, stdLib.Error]], 
-    fpDashTsLib.libIOEitherMod.IOEither[stdLib.Error, js.Any]
-  ] = js.native
-  val tryCatch2v: js.Function2[
-    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], 
-    /* onerror */ js.Function1[/* reason */ js.Any, js.Any], 
-    fpDashTsLib.libIOEitherMod.IOEither[js.Any, js.Any]
-  ] = js.native
+  def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
+  def fromLeft[L, A](l: L): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
+  def left[L, A](fa: fpDashTsLib.libIOMod.IO[L]): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
+  def right[L, A](fa: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
+  def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A]): fpDashTsLib.libIOEitherMod.IOEither[stdLib.Error, A] = js.native
+  def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A], onerror: js.Function1[/* reason */ js.Any, stdLib.Error]): fpDashTsLib.libIOEitherMod.IOEither[stdLib.Error, A] = js.native
+  def tryCatch2v[L, A](f: fpDashTsLib.libFunctionMod.Lazy[A], onerror: js.Function1[/* reason */ js.Any, L]): fpDashTsLib.libIOEitherMod.IOEither[L, A] = js.native
 }
 

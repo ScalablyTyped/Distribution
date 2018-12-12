@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "mobx-react-devtools"
-version := "6.0.3-8cd43c"
+version := "6.0.3-bef991"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-8c5da3",
-  "org.scalablytyped" %%% "mobx" % "5.7.0-8194bb",
-  "org.scalablytyped" %%% "mobx-react" % "5.4.2-962809",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-c640d3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-df71a8",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-3e4f60",
+  "org.scalablytyped" %%% "mobx" % "5.7.0-36559e",
+  "org.scalablytyped" %%% "mobx-react" % "5.4.3-63c48f",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181212Z-14da82",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
