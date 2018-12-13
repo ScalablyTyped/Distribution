@@ -4,5 +4,5 @@
 // Definitions by: Thiago Temple <https://github.com/vintem>
 //                 Tim Stackhouse <https://github.com/tstackhouse>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
+// TypeScript Version: 2.8
 ```

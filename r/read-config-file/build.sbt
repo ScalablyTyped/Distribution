@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "read-config-file"
-version := "3.2.0-62bfd0"
+version := "3.2.0-5fbfde"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,15 +9,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ajv" % "6.6.1-99a2a0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-b88fdf",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.6-460360",
-  "org.scalablytyped" %%% "dotenv" % "6.1-dt-20181109Z-71d1a2",
+  "org.scalablytyped" %%% "dotenv" % "6.1-dt-20181109Z-0ae168",
   "org.scalablytyped" %%% "dotenv-expand" % "4.2.0-fdd8a7",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-8b11a1",
-  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20180910Z-4e7716",
-  "org.scalablytyped" %%% "fs-extra-p" % "7.0.0-0b071e",
+  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20180910Z-f3b2ad",
+  "org.scalablytyped" %%% "fs-extra-p" % "7.0.0-c8e76c",
   "org.scalablytyped" %%% "js-yaml" % "3.11-dt-20180910Z-0e1a20",
   "org.scalablytyped" %%% "json5" % "0.0-unknown-dt-20180910Z-24c2f9",
   "org.scalablytyped" %%% "lazy-val" % "1.0.3-82e4de",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181208Z-6a1d55",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "uri-js" % "4.2.2-ca563f")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server-express", JSImport.Namespace)
 @js.native
 object apolloDashServerDashExpressModMembers extends js.Object {
-  val GraphQLUpload: graphqlLib.graphqlMod.GraphQLScalarType = js.native
+  val GraphQLUpload: js.UndefOr[graphqlLib.graphqlMod.GraphQLScalarType] = js.native
   val attachConnectorsToContext: js.Function = js.native
   val defaultMergedResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
   val defaultPlaygroundOptions: apolloDashServerDashCoreLib.Anon_Settings = js.native

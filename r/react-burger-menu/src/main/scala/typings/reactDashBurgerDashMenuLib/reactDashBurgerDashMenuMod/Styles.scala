@@ -13,6 +13,7 @@ trait Styles extends js.Object {
   var bmCrossButton: stdLib.Partial[stdLib.CSSStyleDeclaration]
   var bmItemList: stdLib.Partial[stdLib.CSSStyleDeclaration]
   var bmMenu: stdLib.Partial[stdLib.CSSStyleDeclaration]
+  var bmMenuWrap: stdLib.Partial[stdLib.CSSStyleDeclaration]
   var bmMorphShape: stdLib.Partial[stdLib.CSSStyleDeclaration]
   var bmOverlay: stdLib.Partial[stdLib.CSSStyleDeclaration]
 }

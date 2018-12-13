@@ -1007,10 +1007,7 @@ trait Cypress extends js.Object {
        * @see https://on.cypress.io/catalog-of-events#App-Events
        */
   @JSName("off")
-  def `off_window:alert`(
-    action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
-  ): scala.Unit = js.native
+  def `off_window:alert`(action: cypressLib.cypressLibStrings.`window:alert`, fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.alert()` method.
        * Cypress will auto accept alerts. You cannot change this behavior.
@@ -1076,7 +1073,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_window:confirm`(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
+    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]
   ): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.confirm()` method.
@@ -1335,10 +1332,7 @@ trait Cypress extends js.Object {
        * @see https://on.cypress.io/catalog-of-events#App-Events
        */
   @JSName("on")
-  def `on_window:alert`(
-    action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
-  ): scala.Unit = js.native
+  def `on_window:alert`(action: cypressLib.cypressLibStrings.`window:alert`, fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.alert()` method.
        * Cypress will auto accept alerts. You cannot change this behavior.
@@ -1404,7 +1398,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_window:confirm`(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
+    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]
   ): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.confirm()` method.

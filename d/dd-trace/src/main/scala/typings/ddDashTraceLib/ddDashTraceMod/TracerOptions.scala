@@ -13,6 +13,11 @@ trait TracerOptions extends js.Object {
        */
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   /**
+       * Whether to enable the tracer.
+       * @default true
+       */
+  var enabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
        * Experimental features can be enabled all at once by using true or individually using key / value pairs.
        * @default {}
        */

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SinonSpyCall[TArgs /* <: js.Array[_] */, TReturnValue] extends SinonSpyCallApi[TArgs, TReturnValue] {
+trait SinonSpyCall extends SinonSpyCallApi {
   /**
            * This property is a convenience for a call’s callback.
            * When the last argument in a call is a Function, then callback will reference that. Otherwise it will be undefined.
@@ -23,7 +23,7 @@ trait SinonSpyCall[TArgs /* <: js.Array[_] */, TReturnValue] extends SinonSpyCal
   /**
            * Return value.
            */
-  var returnValue: TReturnValue = js.native
+  var returnValue: js.Any = js.native
   /**
            * The call’s this value.
            */
@@ -32,11 +32,11 @@ trait SinonSpyCall[TArgs /* <: js.Array[_] */, TReturnValue] extends SinonSpyCal
            * Returns true if the spy call occurred after another spy call.
            * @param call
            */
-  def calledAfter(call: SinonSpyCall[js.Array[_], _]): scala.Boolean = js.native
+  def calledAfter(call: SinonSpyCall): scala.Boolean = js.native
   /**
            * Returns true if the spy call occurred before another spy call.
            * @param call
            */
-  def calledBefore(call: SinonSpyCall[js.Array[_], _]): scala.Boolean = js.native
+  def calledBefore(call: SinonSpyCall): scala.Boolean = js.native
 }
 

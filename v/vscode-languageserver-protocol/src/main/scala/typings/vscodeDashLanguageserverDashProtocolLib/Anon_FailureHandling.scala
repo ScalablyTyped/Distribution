@@ -18,7 +18,7 @@ trait Anon_FailureHandling extends js.Object {
   var failureHandling: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.libProtocolMod.FailureHandlingKind] = js.undefined
   /**
            * The resource operations the client supports. Clients should at least
-           * support 'create', 'rename' and 'delete'.
+           * support 'create', 'rename' and 'delete' files and folders.
            */
   var resourceOperations: js.UndefOr[
     js.Array[vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ResourceOperationKind]

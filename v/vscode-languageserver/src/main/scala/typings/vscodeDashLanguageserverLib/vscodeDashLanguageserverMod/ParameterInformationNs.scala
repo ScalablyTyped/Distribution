@@ -22,5 +22,19 @@ object ParameterInformationNs extends js.Object {
        * @param documentation A doc string.
        */
   def create(label: java.lang.String, documentation: java.lang.String): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ParameterInformation = js.native
+  /**
+       * Creates a new parameter information literal.
+       *
+       * @param label A label string.
+       * @param documentation A doc string.
+       */
+  def create(label: js.Tuple2[scala.Double, scala.Double]): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ParameterInformation = js.native
+  /**
+       * Creates a new parameter information literal.
+       *
+       * @param label A label string.
+       * @param documentation A doc string.
+       */
+  def create(label: js.Tuple2[scala.Double, scala.Double], documentation: java.lang.String): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ParameterInformation = js.native
 }
 

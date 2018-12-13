@@ -12,10 +12,16 @@ trait WorkspaceEdit extends js.Object {
        */
   var changes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Array[TextEdit]]] = js.undefined
   /**
-       * An array of `TextDocumentEdit`s to express changes to n different text documents
-       * where each text document edit addresses a specific version of a text document.
+       * Depending on the client capability `workspace.workspaceEdit.resourceOperations` document changes
+       * are either an array of `TextDocumentEdit`s to express changes to n different text documents
+       * where each text document edit addresses a specific version of a text document. Or it can contain
+       * above `TextDocumentEdit`s mixed with create, rename and delete file / folder operations.
+       *
        * Whether a client supports versioned document edits is expressed via
-       * `WorkspaceClientCapabilites.workspaceEdit.documentChanges`.
+       * `workspace.workspaceEdit.documentChanges` client capability.
+       *
+       * If a client neither supports `documentChanges` nor `workspace.workspaceEdit.resourceOperations` then
+       * only plain `TextEdit`s using the `changes` property are supported.
        */
   var documentChanges: js.UndefOr[js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]] = js.undefined
 }

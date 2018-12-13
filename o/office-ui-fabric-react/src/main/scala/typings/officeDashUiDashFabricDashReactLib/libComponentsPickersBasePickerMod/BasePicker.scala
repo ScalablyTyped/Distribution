@@ -82,6 +82,7 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   ): scala.Unit = js.native
   /* protected */ def getActiveDescendant(): js.UndefOr[java.lang.String] = js.native
   /* protected */ def getSuggestionsAlert(): js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.native
+  /* protected */ def getSuggestionsAlert(suggestionAlertClassName: java.lang.String): js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.native
   /* protected */ def input(): scala.Unit = js.native
   /* protected */ def input(component: officeDashUiDashFabricDashReactLib.libComponentsAutofillAutofillDotTypesMod.IAutofill): scala.Unit = js.native
   /* protected */ def onBackspace(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native

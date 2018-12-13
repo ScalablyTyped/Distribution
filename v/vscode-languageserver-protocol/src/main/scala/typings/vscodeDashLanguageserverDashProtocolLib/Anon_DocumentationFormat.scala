@@ -16,5 +16,9 @@ trait Anon_DocumentationFormat extends js.Object {
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.MarkupKind
     ]
   ] = js.undefined
+  /**
+               * Client capabilities specific to parameter information.
+               */
+  var parameterInformation: js.UndefOr[Anon_LabelOffsetSupport] = js.undefined
 }
 

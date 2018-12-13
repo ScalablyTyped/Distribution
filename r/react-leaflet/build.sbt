@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-leaflet"
-version := "1.1-dt-20180910Z-b3a1c1"
+version := "1.1-dt-20180910Z-4a1391"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-04a914",
   "org.scalablytyped" %%% "leaflet" % "1.2-dt-20181109Z-7b979c",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181212Z-14da82",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

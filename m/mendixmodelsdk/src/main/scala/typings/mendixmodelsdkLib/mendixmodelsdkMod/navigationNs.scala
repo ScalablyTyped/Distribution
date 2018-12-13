@@ -28,6 +28,15 @@ object navigationNs extends js.Object {
   }
   
   /**
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  class NativeNavigationProfile protected ()
+    extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.navigationNs.NativeNavigationProfile {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  /**
        * See: {@link https://docs.mendix.com/refguide7/navigation relevant section in reference guide}
        */
   @js.native
@@ -42,6 +51,23 @@ object navigationNs extends js.Object {
   @js.native
   class NavigationProfile protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.navigationNs.NavigationProfile {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  @js.native
+  abstract class NavigationProfileBase protected ()
+    extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.navigationNs.NavigationProfileBase {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  class OfflineEntityConfig protected ()
+    extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.navigationNs.OfflineEntityConfig {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
@@ -91,6 +117,30 @@ object navigationNs extends js.Object {
   object HomePageBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+  }
+  
+  /**
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  object NativeNavigationProfile extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new NativeNavigationProfile instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile = js.native
+    /**
+             * Creates and returns a new NativeNavigationProfile instance in the SDK and on the server.
+             * The new NativeNavigationProfile will be automatically stored in the 'profiles' property
+             * of the parent NavigationDocument element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.22.0 and higher
+             */
+    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile = js.native
   }
   
   /**
@@ -210,6 +260,38 @@ object navigationNs extends js.Object {
              *  6.0.0 to 7.1.0
              */
     def createInNavigationDocumentUnderTabletProfile(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
+  }
+  
+  @js.native
+  object NavigationProfileBase extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+  }
+  
+  /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  object OfflineEntityConfig extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
+    /**
+             * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
+             * The new OfflineEntityConfig will be automatically stored in the 'offlineEntityConfigs' property
+             * of the parent NavigationProfile element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.22.0 and higher
+             */
+    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
   }
   
   @js.native

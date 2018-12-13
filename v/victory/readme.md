@@ -1,5 +1,5 @@
 ```
-// Type definitions for Victory 0.9.3
+// Type definitions for Victory 31.0
 // Project: https://github.com/FormidableLabs/victory
 // Definitions by: Alexey Svetliakov <https://github.com/asvetliakov>
 //                 snerks <https://github.com/snerks>

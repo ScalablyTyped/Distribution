@@ -27,7 +27,7 @@ package object recomposeMod {
   type ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance] = (_ReactLifeCycleFunctionsThisArguments[TProps, TState]) with TInstance
   // withStateHandlers: https://github.com/acdlite/recompose/blob/master/docs/API.md#withstatehandlers
   type StateHandler[TState] = js.Function1[/* repeated */js.Any, js.UndefOr[stdLib.Partial[TState]]]
-  type StateUpdaters[TOutter, TState, TUpdaters] = recomposeLib.recomposeLibStrings.StateUpdaters with js.Any
+  type StateUpdaters[TOutter, TState, TUpdaters] = recomposeLib.recomposeLibStrings.StateUpdaters with TUpdaters
   // createEagerFactory: https://github.com/acdlite/recompose/blob/master/docs/API.md#createEagerFactory
   type componentFactory = js.Function2[
     /* props */ js.UndefOr[js.Object], 

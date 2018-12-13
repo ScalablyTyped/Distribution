@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SinonChromeStub
-  extends sinonLib.sinonMod.SinonNs.SinonStub[js.Array[js.Any], js.Any] {
+  extends sinonLib.sinonMod.SinonNs.SinonStub {
   def flush(): scala.Unit = js.native
 }
 

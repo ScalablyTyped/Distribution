@@ -25,6 +25,7 @@ trait Duration extends js.Object {
   def hours(): scala.Double = js.native
   def humanize(): java.lang.String = js.native
   def humanize(withSuffix: scala.Boolean): java.lang.String = js.native
+  def isValid(): scala.Boolean = js.native
   /**
        * @deprecated since version 2.8.0
        */

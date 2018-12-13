@@ -30,16 +30,16 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
        */
   var cursorLabel: js.UndefOr[js.Function1[/* point */ CursorData, scala.Unit]] = js.undefined
   /**
-       * The cursorLabelComponent prop takes a component instance which will be 
-       * used to render a label for the cursor. The new element created from the passed 
+       * The cursorLabelComponent prop takes a component instance which will be
+       * used to render a label for the cursor. The new element created from the passed
        * cursorLabelComponent will be supplied with the following props: x, y,
        * active, text. If cursorLabelComponent is omitted, a new VictoryLabel will be created with the props described above.
        * @default cursorLabelComponent={<VictoryLabel/>}
        */
   var cursorLabelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-       * The cursorLabelOffset prop determines the pixel offset of the cursor label 
-       * from the cursor point. This prop should be an Object with x and y properties, or a 
+       * The cursorLabelOffset prop determines the pixel offset of the cursor label
+       * from the cursor point. This prop should be an Object with x and y properties, or a
        * number to be used for both dimensions.
        * @default "{ x: 5, y: -10 }"
        */

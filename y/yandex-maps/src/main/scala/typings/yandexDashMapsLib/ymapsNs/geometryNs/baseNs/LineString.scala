@@ -51,7 +51,6 @@ class LineString ()
 @JSGlobal("ymaps.geometry.base.LineString")
 @js.native
 object LineString extends js.Object {
-  //tslint:disable-line no-shadowed-variable
   def fromEncodedCoordinates(encodedCoordinates: java.lang.String): yandexDashMapsLib.ymapsNs.geometryNs.LineString = js.native
    //tslint:disable-line function-name
   def toEncodedCoordinates(geometry: yandexDashMapsLib.ymapsNs.geometryNs.LineString): java.lang.String = js.native

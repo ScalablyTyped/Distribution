@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swiper"
-version := "4.2-dt-20181031Z-1971f7"
+version := "4.4-dt-20181213Z-dbc057"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

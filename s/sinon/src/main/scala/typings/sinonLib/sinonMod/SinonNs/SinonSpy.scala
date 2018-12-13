@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ @js.native
-trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Object {
+@js.native
+trait SinonSpy extends SinonSpyCallApi {
   /**
            * Array of arguments received, spy.args[0] is an array of arguments received in the first call.
            */
-  var args: js.Array[TArgs] = js.native
+  @JSName("args")
+  var args_SinonSpy: js.Array[js.Array[_]] = js.native
   // Properties
   /**
            * The number of recorded calls.
@@ -41,11 +41,11 @@ trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Object {
   /**
            * The first call
            */
-  var firstCall: SinonSpyCall[TArgs, TReturnValue] = js.native
+  var firstCall: SinonSpyCall = js.native
   /**
            * The last call
            */
-  var lastCall: SinonSpyCall[TArgs, TReturnValue] = js.native
+  var lastCall: SinonSpyCall = js.native
   /**
            * true if the spy was not called
            */
@@ -54,15 +54,15 @@ trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Object {
            * Array of return values, spy.returnValues[0] is the return value of the first call.
            * If the call did not explicitly return a value, the value at the call’s location in .returnValues will be undefined.
            */
-  var returnValues: js.Array[TReturnValue] = js.native
+  var returnValues: js.Array[_] = js.native
   /**
            * The second call
            */
-  var secondCall: SinonSpyCall[TArgs, TReturnValue] = js.native
+  var secondCall: SinonSpyCall = js.native
   /**
            * The third call
            */
-  var thirdCall: SinonSpyCall[TArgs, TReturnValue] = js.native
+  var thirdCall: SinonSpyCall = js.native
   /**
            * Array of this objects, spy.thisValues[0] is the this object for the first call.
            */
@@ -77,24 +77,18 @@ trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Object {
   /**
            * Returns true if spy was always called with the provided arguments (and possibly others).
            */
-  def alwaysCalledWith(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def alwaysCalledWith(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if spy was always called with the exact provided arguments.
            * @param args
            */
-  def alwaysCalledWithExactly(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def alwaysCalledWithExactly(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if spy was always called with matching arguments (and possibly others).
            * This behaves the same as spy.alwaysCalledWith(sinon.match(arg1), sinon.match(arg2), ...).
            * @param args
            */
-  def alwaysCalledWithMatch(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def alwaysCalledWithMatch(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if spy always returned the provided value.
            * @param obj
@@ -116,60 +110,54 @@ trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Object {
            * Returns true if the spy was called after @param anotherSpy
            * @param anotherSpy
            */
-  def calledAfter(anotherSpy: SinonSpy[js.Array[_], _]): scala.Boolean = js.native
+  def calledAfter(anotherSpy: SinonSpy): scala.Boolean = js.native
   /**
            * Returns true if the spy was called before @param anotherSpy
            * @param anotherSpy
            */
-  def calledBefore(anotherSpy: SinonSpy[js.Array[_], _]): scala.Boolean = js.native
+  def calledBefore(anotherSpy: SinonSpy): scala.Boolean = js.native
   /**
            * Returns true if spy was called after @param anotherSpy, and no spy calls occurred between @param anotherSpy and spy.
            * @param anotherSpy
            */
-  def calledImmediatelyAfter(anotherSpy: SinonSpy[js.Array[_], _]): scala.Boolean = js.native
+  def calledImmediatelyAfter(anotherSpy: SinonSpy): scala.Boolean = js.native
   /**
            * Returns true if spy was called before @param anotherSpy, and no spy calls occurred between spy and @param anotherSpy.
            * @param anotherSpy
            */
-  def calledImmediatelyBefore(anotherSpy: SinonSpy[js.Array[_], _]): scala.Boolean = js.native
+  def calledImmediatelyBefore(anotherSpy: SinonSpy): scala.Boolean = js.native
   /**
            * Returns the nth call.
            * Accessing individual calls helps with more detailed behavior verification when the spy is called more than once.
            * @param n
            */
-  def getCall(n: scala.Double): SinonSpyCall[TArgs, TReturnValue] = js.native
+  def getCall(n: scala.Double): SinonSpyCall = js.native
   /**
            * Returns an Array of all calls recorded by the spy.
            */
-  def getCalls(): js.Array[SinonSpyCall[TArgs, TReturnValue]] = js.native
+  def getCalls(): js.Array[SinonSpyCall] = js.native
   /**
            * Invoke callbacks passed to the stub with the given arguments.
            * If the stub was never called with a function argument, yield throws an error.
            * Returns an Array with all callbacks return values in the order they were called, if no error is thrown.
            */
-  def invokeCallback(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Unit = js.native
+  def invokeCallback(args: js.Any*): scala.Unit = js.native
   /**
            * Set the displayName of the spy or stub.
            * @param name
            */
-  def named(name: java.lang.String): SinonSpy[TArgs, TReturnValue] = js.native
+  def named(name: java.lang.String): SinonSpy = js.native
   /**
            * Returns true if the spy/stub was never called with the provided arguments.
            * @param args
            */
-  def neverCalledWith(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def neverCalledWith(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if the spy/stub was never called with matching arguments.
            * This behaves the same as spy.neverCalledWith(sinon.match(arg1), sinon.match(arg2), ...).
            * @param args
            */
-  def neverCalledWithMatch(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def neverCalledWithMatch(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns the passed format string with the following replacements performed:
            * * %n - the name of the spy "spy" by default)
@@ -196,8 +184,6 @@ trait SinonSpy[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Object {
            * This is useful to be more expressive in your assertions, where you can access the spy with the same call.
            * @param args Expected args
            */
-  def withArgs(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): SinonSpy[TArgs, TReturnValue] = js.native
+  def withArgs(args: js.Any*): SinonSpy = js.native
 }
 

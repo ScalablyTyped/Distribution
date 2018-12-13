@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Agent[A /* <: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _] */] extends js.Object {
+trait Agent[A /* <: sinonLib.sinonMod.SinonNs.SinonSpy */] extends js.Object {
   /**
        * Saves current spy / stub under an alias.
        * @see https://on.cypress.io/stubs-spies-and-clocks

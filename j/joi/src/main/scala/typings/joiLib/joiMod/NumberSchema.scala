@@ -72,5 +72,13 @@ trait NumberSchema extends AnySchema {
        * @param limit - the maximum number of decimal places allowed.
        */
   def precision(limit: scala.Double): this.type = js.native
+  /**
+       * Allows the number to be outside of JavaScript's safety range (Number.MIN_SAFE_INTEGER & Number.MAX_SAFE_INTEGER).
+       */
+  def unsafe(): this.type = js.native
+  /**
+       * Allows the number to be outside of JavaScript's safety range (Number.MIN_SAFE_INTEGER & Number.MAX_SAFE_INTEGER).
+       */
+  def unsafe(enabled: scala.Boolean): this.type = js.native
 }
 

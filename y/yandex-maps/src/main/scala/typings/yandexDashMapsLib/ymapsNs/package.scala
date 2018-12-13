@@ -14,6 +14,7 @@ package object ymapsNs {
   type ICopyrightsAccessor = ICopyrightsProvider
   type IDomEventEmitter = IEventEmitter
   type IExpandableControlLayout = ILayout
+  type IGeometryEditorRootModel = IGeometryEditorModel
   type IHintManager[T] = IPopupManager[T]
   type IMultiRouteReferencePoint = java.lang.String | js.Array[scala.Double] | yandexDashMapsLib.ymapsNs.geometryNs.Point
   type ISearchControlLayout = IExpandableControlLayout

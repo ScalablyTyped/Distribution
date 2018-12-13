@@ -106,8 +106,10 @@ object projectsNs extends js.Object {
     @JSName("model")
     val model_IModuleDocument: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     def asLoaded(): ModuleDocument = js.native
+    def load(): js.Promise[ModuleDocument] = js.native
     def load(callback: js.Function1[/* element */ ModuleDocument, scala.Unit]): scala.Unit = js.native
     def load(callback: js.Function1[/* element */ ModuleDocument, scala.Unit], forceRefresh: scala.Boolean): scala.Unit = js.native
+    def load(forceRefresh: scala.Boolean): js.Promise[ModuleDocument] = js.native
   }
   
   /**
@@ -134,8 +136,10 @@ object projectsNs extends js.Object {
     @JSName("model")
     val model_IProjectConversion: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     def asLoaded(): ProjectConversion = js.native
+    def load(): js.Promise[ProjectConversion] = js.native
     def load(callback: js.Function1[/* element */ ProjectConversion, scala.Unit]): scala.Unit = js.native
     def load(callback: js.Function1[/* element */ ProjectConversion, scala.Unit], forceRefresh: scala.Boolean): scala.Unit = js.native
+    def load(forceRefresh: scala.Boolean): js.Promise[ProjectConversion] = js.native
   }
   
   /**
@@ -148,8 +152,10 @@ object projectsNs extends js.Object {
     @JSName("model")
     val model_IProjectDocument: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     def asLoaded(): ProjectDocument = js.native
+    def load(): js.Promise[ProjectDocument] = js.native
     def load(callback: js.Function1[/* element */ ProjectDocument, scala.Unit]): scala.Unit = js.native
     def load(callback: js.Function1[/* element */ ProjectDocument, scala.Unit], forceRefresh: scala.Boolean): scala.Unit = js.native
+    def load(forceRefresh: scala.Boolean): js.Promise[ProjectDocument] = js.native
   }
   
   /**

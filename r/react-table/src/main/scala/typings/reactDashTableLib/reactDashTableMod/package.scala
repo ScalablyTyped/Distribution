@@ -39,7 +39,12 @@ package object reactDashTableMod {
   ]
   type DefaultFilterFunction = js.Function3[/* filter */ Filter, /* row */ js.Any, /* column */ js.Any, scala.Boolean]
   type ExpandedChangeFunction = js.Function3[/* column */ js.Any, /* event */ js.Any, /* isTouch */ scala.Boolean, scala.Unit]
-  type FilterFunction = js.Function3[/* filter */ Filter, /* rows */ js.Array[js.Any], /* column */ js.Any, scala.Boolean]
+  type FilterFunction = js.Function3[
+    /* filter */ Filter, 
+    /* rows */ js.Array[js.Any], 
+    /* column */ js.Any, 
+    js.Array[js.Any]
+  ]
   type FilterRender = js.Function1[
     /* params */ reactDashTableLib.Anon_Filter, 
     reactLib.reactMod.ReactNs.ReactElement[js.Any]

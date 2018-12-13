@@ -1,0 +1,18 @@
+package typings
+package officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("office-ui-fabric-react", "NormalPeoplePickerBase")
+@js.native
+class NormalPeoplePickerBase ()
+  extends officeDashUiDashFabricDashReactLib.libPickersMod.NormalPeoplePickerBase
+
+@JSImport("office-ui-fabric-react", "NormalPeoplePickerBase")
+@js.native
+object NormalPeoplePickerBase extends js.Object {
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_CreateGenericItem = js.native
+}
+

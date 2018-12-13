@@ -7,29 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("apollo-engine-reporting-protobuf", "StatsReport")
 @js.native
-class StatsReport () extends IStatsReport {
+class StatsReport ()
+  extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport {
   /**
        * Constructs a new StatsReport.
        * @param [properties] Properties to set
        */
-  def this(properties: IStatsReport) = this()
-  /** StatsReport legacyPerQueryImplicitOperationName. */
-  @JSName("legacyPerQueryImplicitOperationName")
-  var legacyPerQueryImplicitOperationName_StatsReport: ScalablyTyped.runtime.StringDictionary[IQueryStats] = js.native
-  /** StatsReport perQuery. */
-  @JSName("perQuery")
-  var perQuery_StatsReport: ScalablyTyped.runtime.StringDictionary[IQueryStats] = js.native
-  /** StatsReport realtimeDuration. */
-  @JSName("realtimeDuration")
-  var realtimeDuration_StatsReport: scala.Double = js.native
-  /** StatsReport type. */
-  @JSName("type")
-  var type_StatsReport: js.Array[IType] = js.native
-  /**
-       * Converts this StatsReport to JSON.
-       * @returns JSON object
-       */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IStatsReport) = this()
 }
 
 @JSImport("apollo-engine-reporting-protobuf", "StatsReport")
@@ -40,15 +24,13 @@ object StatsReport extends js.Object {
        * @param [properties] Properties to set
        * @returns StatsReport instance
        */
-  def create(): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport = js.native
+  def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
   /**
        * Creates a new StatsReport instance using the specified properties.
        * @param [properties] Properties to set
        * @returns StatsReport instance
        */
-  def create(
-    properties: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IStatsReport
-  ): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport = js.native
+  def create(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IStatsReport): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
   /**
        * Decodes a StatsReport message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -57,7 +39,7 @@ object StatsReport extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport = js.native
+  def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
   /**
        * Decodes a StatsReport message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -66,7 +48,7 @@ object StatsReport extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport = js.native
+  def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
   /**
        * Decodes a StatsReport message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -75,7 +57,7 @@ object StatsReport extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport = js.native
+  def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
   /**
        * Decodes a StatsReport message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -84,7 +66,7 @@ object StatsReport extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport = js.native
+  def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
   /**
        * Decodes a StatsReport message from the specified reader or buffer, length delimited.
        * @param reader Reader or buffer to decode from
@@ -92,7 +74,7 @@ object StatsReport extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport = js.native
+  def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
   /**
        * Decodes a StatsReport message from the specified reader or buffer, length delimited.
        * @param reader Reader or buffer to decode from
@@ -100,7 +82,14 @@ object StatsReport extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport = js.native
+  def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
+  /**
+       * Encodes the specified StatsReport message. Does not implicitly {@link StatsReport.verify|verify} messages.
+       * @param message StatsReport message or plain object to encode
+       * @param [writer] Writer to encode to
+       * @returns Writer
+       */
+  def encode(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IStatsReport): protobufjsLib.protobufjsMod.Writer = js.native
   /**
        * Encodes the specified StatsReport message. Does not implicitly {@link StatsReport.verify|verify} messages.
        * @param message StatsReport message or plain object to encode
@@ -108,16 +97,7 @@ object StatsReport extends js.Object {
        * @returns Writer
        */
   def encode(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IStatsReport
-  ): protobufjsLib.protobufjsMod.Writer = js.native
-  /**
-       * Encodes the specified StatsReport message. Does not implicitly {@link StatsReport.verify|verify} messages.
-       * @param message StatsReport message or plain object to encode
-       * @param [writer] Writer to encode to
-       * @returns Writer
-       */
-  def encode(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IStatsReport,
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IStatsReport,
     writer: protobufjsLib.protobufjsMod.Writer
   ): protobufjsLib.protobufjsMod.Writer = js.native
   /**
@@ -126,9 +106,7 @@ object StatsReport extends js.Object {
        * @param [writer] Writer to encode to
        * @returns Writer
        */
-  def encodeDelimited(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IStatsReport
-  ): protobufjsLib.protobufjsMod.Writer = js.native
+  def encodeDelimited(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IStatsReport): protobufjsLib.protobufjsMod.Writer = js.native
   /**
        * Encodes the specified StatsReport message, length delimited. Does not implicitly {@link StatsReport.verify|verify} messages.
        * @param message StatsReport message or plain object to encode
@@ -136,7 +114,7 @@ object StatsReport extends js.Object {
        * @returns Writer
        */
   def encodeDelimited(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IStatsReport,
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IStatsReport,
     writer: protobufjsLib.protobufjsMod.Writer
   ): protobufjsLib.protobufjsMod.Writer = js.native
   /**
@@ -144,7 +122,14 @@ object StatsReport extends js.Object {
        * @param object Plain object
        * @returns StatsReport
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport = js.native
+  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
+  /**
+       * Creates a plain object from a StatsReport message. Also converts values to other types if specified.
+       * @param message StatsReport
+       * @param [options] Conversion options
+       * @returns Plain object
+       */
+  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a StatsReport message. Also converts values to other types if specified.
        * @param message StatsReport
@@ -152,16 +137,7 @@ object StatsReport extends js.Object {
        * @returns Plain object
        */
   def toObject(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  /**
-       * Creates a plain object from a StatsReport message. Also converts values to other types if specified.
-       * @param message StatsReport
-       * @param [options] Conversion options
-       * @returns Plain object
-       */
-  def toObject(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.StatsReport,
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport,
     options: protobufjsLib.protobufjsMod.IConversionOptions
   ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   /**

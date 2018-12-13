@@ -21,6 +21,7 @@ object ioDashTsModMembers extends js.Object {
   val `object`: ObjectType = js.native
   val string: StringType = js.native
   val undefined: UndefinedType = js.native
+  val unknown: UnknownType = js.native
   val void: VoidType = js.native
   val voidType: VoidType = js.native
   def alias[A, O, P, I](`type`: InterfaceType[P, A, O, I]): js.Function0[InterfaceType[_, _, _, I]] = js.native

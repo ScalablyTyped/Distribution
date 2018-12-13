@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server-core", JSImport.Namespace)
 @js.native
 object apolloDashServerDashCoreModMembers extends js.Object {
-  val GraphQLUpload: graphqlLib.graphqlMod.GraphQLScalarType = js.native
+  val GraphQLUpload: js.UndefOr[graphqlLib.graphqlMod.GraphQLScalarType] = js.native
   val defaultPlaygroundOptions: apolloDashServerDashCoreLib.Anon_Settings = js.native
+  val processFileUploads: js.UndefOr[js.Any] = js.native
   def convertNodeHttpToRequest(req: nodeLib.httpMod.IncomingMessage): apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request = js.native
   def createPlaygroundOptions(): js.UndefOr[
     atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.RenderPageOptions

@@ -22,5 +22,6 @@ trait FillExtrusionPaint extends js.Object {
     mapboxDashGlLib.mapboxDashGlLibStrings.map | mapboxDashGlLib.mapboxDashGlLibStrings.viewport
   ] = js.undefined
   var `fill-extrusion-translate-transition`: js.UndefOr[Transition] = js.undefined
+  var `fill-extrusion-vertical-gradient`: js.UndefOr[scala.Boolean] = js.undefined
 }
 

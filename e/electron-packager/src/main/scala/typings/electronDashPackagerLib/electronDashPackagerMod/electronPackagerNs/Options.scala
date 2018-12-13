@@ -54,6 +54,10 @@ trait Options extends js.Object {
            */
   var buildVersion: js.UndefOr[java.lang.String] = js.undefined
   /**
+           * Forces support for Mojave (macOS 10.14) dark mode in the packaged app.
+           */
+  var darwinDarkModeSupport: js.UndefOr[scala.Boolean] = js.undefined
+  /**
            * Whether symlinks should be dereferenced during the copying of the application source.
            */
   var derefSymlinks: js.UndefOr[scala.Boolean] = js.undefined
@@ -98,6 +102,10 @@ trait Options extends js.Object {
            */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
+           * If present, notarizes OS X target apps when the host platform is OS X and XCode is installed.
+           */
+  var osxNotarize: js.UndefOr[ElectronNotarizeOptions] = js.undefined
+  /**
            * If present, signs OS X target apps when the host platform is OS X and XCode is installed.
            */
   var osxSign: js.UndefOr[scala.Boolean | ElectronOsXSignOptions] = js.undefined
@@ -108,13 +116,13 @@ trait Options extends js.Object {
            */
   var overwrite: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * The package manager used to prune devDependencies modules from the outputted Electron app
-           */
-  var packageManager: js.UndefOr[packageManager] = js.undefined
-  /**
            * The target platform(s) to build for. Not required if the all option is set.
            */
   var platform: js.UndefOr[platform] = js.undefined
+  /**
+           * The path to a prebuilt ASAR file.
+           */
+  var prebuiltAsar: js.UndefOr[java.lang.String] = js.undefined
   /** The URL protocol schemes the app supports. */
   var protocols: js.UndefOr[js.Array[electronDashPackagerLib.Anon_Name]] = js.undefined
   /**

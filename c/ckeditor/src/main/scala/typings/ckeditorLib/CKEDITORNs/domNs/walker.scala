@@ -14,6 +14,7 @@ class walker protected () extends js.Object {
   def end(): scala.Unit = js.native
   def evaluator(node: node): scala.Boolean = js.native
   def guard(node: node): scala.Boolean = js.native
+  def guard(node: node, movingOut: scala.Boolean): scala.Boolean = js.native
   def lastBackward(): node = js.native
   def lastForward(): node = js.native
   def next(): node = js.native

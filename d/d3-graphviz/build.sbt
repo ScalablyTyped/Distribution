@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-graphviz"
-version := "2.6-dt-20181105Z-2f674f"
+version := "2.6-dt-20181105Z-3c9c5e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-interpolate" % "1.3-dt-20180927Z-a09bc5",
   "org.scalablytyped" %%% "d3-selection" % "1.3-dt-20181206Z-560b20",
   "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20181116Z-c9d739",
-  "org.scalablytyped" %%% "d3-zoom" % "1.7-dt-20181206Z-820cb1",
+  "org.scalablytyped" %%% "d3-zoom" % "1.7-dt-20181213Z-f59893",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

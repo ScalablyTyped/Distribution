@@ -12,6 +12,10 @@ trait IBasePickerProps[T]
        * ClassName for the picker.
        */
   var className: js.UndefOr[java.lang.String] = js.native
+  /**
+       * Optional callback to access the IBasePicker interface. Use this instead of ref for accessing
+       * the public methods and properties of the component.
+       */
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IBasePicker[T]]] = js.native
   /**
        * Function that specifies how arbitrary text entered into the well is handled.
@@ -169,6 +173,16 @@ trait IBasePickerProps[T]
        * If this is provided then the picker will act as a controlled component.
        */
   var selectedItems: js.UndefOr[js.Array[T]] = js.native
+  /**
+       * Call to provide customized styling that will layer on top of the variant rules.
+       */
+  var styles: js.UndefOr[
+    atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[IBasePickerStyleProps, IBasePickerStyles]
+  ] = js.native
+  /**
+       * Theme provided by styled() function
+       */
+  var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.native
   /**
        * A callback for what should happen when a person types text into the input.
        * Returns the already selected items so the resolver can filter them out.

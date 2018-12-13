@@ -1,5 +1,5 @@
 ```
-// Type definitions for dd-trace-js 0.6
+// Type definitions for dd-trace-js 0.7
 // Project: https://github.com/DataDog/dd-trace-js
 // Definitions by: Colin Bradley <https://github.com/ColinBradley>
 //                 Eloy Durán <https://github.com/alloy>

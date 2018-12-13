@@ -2169,6 +2169,10 @@ object SageMakerNs extends js.Object {
          * Specifies the search strategy for hyperparameters. Currently, the only valid value is Bayesian.
          */
     var Strategy: HyperParameterTuningJobStrategyType
+    /**
+         * Specifies whether to use early stopping for training jobs launched by the hyperparameter tuning job. One of the following values:  OFF  Training jobs launched by the hyperparameter tuning job do not use early stopping.  AUTO  Amazon SageMaker stops training jobs launched by the hyperparameter tuning job when they are no longer improving as measured by the objective metric of the tuning job.  
+         */
+    var TrainingJobEarlyStoppingType: js.UndefOr[TrainingJobEarlyStoppingType] = js.undefined
   }
   
   
@@ -7257,6 +7261,7 @@ object SageMakerNs extends js.Object {
   type TrainingInstanceType = awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT10xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT12xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT24xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT9xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT18xlarge | java.lang.String
   type TrainingInstanceTypes = js.Array[TrainingInstanceType]
   type TrainingJobArn = java.lang.String
+  type TrainingJobEarlyStoppingType = awsDashSdkLib.awsDashSdkLibStrings.Off | awsDashSdkLib.awsDashSdkLibStrings.Auto | java.lang.String
   type TrainingJobName = java.lang.String
   type TrainingJobSortByOptions = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | awsDashSdkLib.awsDashSdkLibStrings.Status | awsDashSdkLib.awsDashSdkLibStrings.FinalObjectiveMetricValue | java.lang.String
   type TrainingJobStatus = awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Stopped | java.lang.String

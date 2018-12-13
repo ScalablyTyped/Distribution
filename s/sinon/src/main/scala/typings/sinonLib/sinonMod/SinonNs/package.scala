@@ -16,7 +16,7 @@ package object SinonNs {
   /**
        * Replaces a type with a Sinon stub if it's a function.
        */
-  type SinonStubbedMember[T] = T | (SinonStub[js.Array[js.Any], js.Any])
+  type SinonStubbedMember[T] = T | SinonStub
   type SinonTimerId = scala.Double | sinonLib.Anon_Id
   /**
        * Stubbed type of an object with members replaced by stubs.

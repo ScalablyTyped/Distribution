@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-virtual-keyboard"
-version := "1.0-dt-20180910Z-271144"
+version := "1.0-dt-20180910Z-53444f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20181212Z-994342",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181212Z-14da82",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-27b737",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "virtual-keyboard" % "1.26-dt-20180910Z-554fb0")

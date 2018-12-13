@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grasp"
-version := "0.6-dt-20180915Z-ecf7dd"
+version := "0.6-dt-20180915Z-4ff18a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "cli-color" % "0.3.2-dt-20180910Z-2f751e",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20180910Z-8c7819",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

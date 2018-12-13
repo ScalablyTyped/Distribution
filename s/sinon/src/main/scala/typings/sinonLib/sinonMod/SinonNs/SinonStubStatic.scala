@@ -10,7 +10,7 @@ trait SinonStubStatic extends js.Object {
   /**
            * Creates an anonymous stub function
            */
-  def apply(): SinonStub[js.Array[_], _] = js.native
+  def apply(): SinonStub = js.native
   /**
            * Stubs all the object’s methods.
            * Note that it’s usually better practice to stub individual methods, particularly on objects that you don’t understand or control all the methods for (e.g. library dependencies).
@@ -23,6 +23,6 @@ trait SinonStubStatic extends js.Object {
            * An exception is thrown if the property is not already a function.
            * The original function can be restored by calling object.method.restore(); (or stub.restore();).
            */
-  def apply[T, K /* <: java.lang.String */](obj: T, method: K): (SinonStub[js.Array[_], _]) | (SinonStub[_, _]) = js.native
+  def apply[T](obj: T, method: java.lang.String): SinonStub = js.native
 }
 

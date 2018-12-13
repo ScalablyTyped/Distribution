@@ -112,6 +112,9 @@ object ioDashTsLibStrings {
   sealed trait UnionType extends js.Object
   
   @js.native
+  sealed trait UnknownType extends js.Object
+  
+  @js.native
   sealed trait VoidType extends js.Object
   
   def AnyArrayType: AnyArrayType = "AnyArrayType".asInstanceOf[AnyArrayType]
@@ -149,6 +152,7 @@ object ioDashTsLibStrings {
   def TypeOfProps: TypeOfProps = "TypeOfProps".asInstanceOf[TypeOfProps]
   def UndefinedType: UndefinedType = "UndefinedType".asInstanceOf[UndefinedType]
   def UnionType: UnionType = "UnionType".asInstanceOf[UnionType]
+  def UnknownType: UnknownType = "UnknownType".asInstanceOf[UnknownType]
   def VoidType: VoidType = "VoidType".asInstanceOf[VoidType]
 }
 

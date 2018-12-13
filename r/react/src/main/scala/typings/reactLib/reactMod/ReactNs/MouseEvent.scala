@@ -14,6 +14,8 @@ trait MouseEvent[T] extends SyntheticEvent[T] {
   var clientY: scala.Double
   var ctrlKey: scala.Boolean
   var metaKey: scala.Boolean
+  var movementX: scala.Double
+  var movementY: scala.Double
   @JSName("nativeEvent")
   var nativeEvent_MouseEvent: reactLib.NativeMouseEvent
   var pageX: scala.Double

@@ -1534,6 +1534,15 @@ object pluginwidgetsNs extends js.Object {
     def createInMasterDetailRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailRegion): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
     /**
              * Creates and returns a new PluginWidget instance in the SDK and on the server.
+             * The new PluginWidget will be automatically stored in the 'headerWidget' property
+             * of the parent nativepages.NativeLayout element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.22.0 and higher
+             */
+    def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
+    /**
+             * Creates and returns a new PluginWidget instance in the SDK and on the server.
              * The new PluginWidget will be automatically stored in the 'widgets' property
              * of the parent nativepages.NativeLayout element passed as argument.
              *

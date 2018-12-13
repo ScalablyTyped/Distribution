@@ -37,6 +37,7 @@ trait Anon_BlkioDeviceWriteBps extends js.Object {
   var MemoryReservation: js.UndefOr[scala.Double] = js.undefined
   var MemorySwap: js.UndefOr[scala.Double] = js.undefined
   var MemorySwappiness: js.UndefOr[scala.Double] = js.undefined
+  var Mounts: js.UndefOr[dockerodeLib.dockerodeMod.DockerodeNs.MountConfig] = js.undefined
   var NetworkMode: js.UndefOr[java.lang.String] = js.undefined
   var OomKillDisable: js.UndefOr[scala.Boolean] = js.undefined
   var OomScoreAdj: js.UndefOr[scala.Double] = js.undefined

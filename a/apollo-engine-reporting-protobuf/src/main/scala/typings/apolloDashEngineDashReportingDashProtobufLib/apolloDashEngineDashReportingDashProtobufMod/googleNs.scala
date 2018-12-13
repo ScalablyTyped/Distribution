@@ -12,34 +12,15 @@ object googleNs extends js.Object {
   @JSName("protobuf")
   @js.native
   object protobufNs extends js.Object {
-    /** Properties of a Timestamp. */
-    
-    trait ITimestamp extends js.Object {
-      /** Timestamp nanos */
-      var nanos: js.UndefOr[scala.Double | scala.Null] = js.undefined
-      /** Timestamp seconds */
-      var seconds: js.UndefOr[scala.Double | scala.Null] = js.undefined
-    }
-    
     /** Represents a Timestamp. */
     @js.native
-    class Timestamp () extends ITimestamp {
+    class Timestamp ()
+      extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp {
       /**
                    * Constructs a new Timestamp.
                    * @param [properties] Properties to set
                    */
-      def this(properties: ITimestamp) = this()
-      /** Timestamp nanos. */
-      @JSName("nanos")
-      var nanos_Timestamp: scala.Double = js.native
-      /** Timestamp seconds. */
-      @JSName("seconds")
-      var seconds_Timestamp: scala.Double = js.native
-      /**
-                   * Converts this Timestamp to JSON.
-                   * @returns JSON object
-                   */
-      def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+      def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.ITimestamp) = this()
     }
     
     /** Represents a Timestamp. */
@@ -50,15 +31,15 @@ object googleNs extends js.Object {
                    * @param [properties] Properties to set
                    * @returns Timestamp instance
                    */
-      def create(): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp = js.native
+      def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Creates a new Timestamp instance using the specified properties.
                    * @param [properties] Properties to set
                    * @returns Timestamp instance
                    */
       def create(
-        properties: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.ITimestamp
-      ): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp = js.native
+        properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.ITimestamp
+      ): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Decodes a Timestamp message from the specified reader or buffer.
                    * @param reader Reader or buffer to decode from
@@ -67,7 +48,7 @@ object googleNs extends js.Object {
                    * @throws {Error} If the payload is not a reader or valid buffer
                    * @throws {$protobuf.util.ProtocolError} If required fields are missing
                    */
-      def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp = js.native
+      def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Decodes a Timestamp message from the specified reader or buffer.
                    * @param reader Reader or buffer to decode from
@@ -76,7 +57,7 @@ object googleNs extends js.Object {
                    * @throws {Error} If the payload is not a reader or valid buffer
                    * @throws {$protobuf.util.ProtocolError} If required fields are missing
                    */
-      def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp = js.native
+      def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Decodes a Timestamp message from the specified reader or buffer.
                    * @param reader Reader or buffer to decode from
@@ -85,7 +66,7 @@ object googleNs extends js.Object {
                    * @throws {Error} If the payload is not a reader or valid buffer
                    * @throws {$protobuf.util.ProtocolError} If required fields are missing
                    */
-      def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp = js.native
+      def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Decodes a Timestamp message from the specified reader or buffer.
                    * @param reader Reader or buffer to decode from
@@ -94,7 +75,7 @@ object googleNs extends js.Object {
                    * @throws {Error} If the payload is not a reader or valid buffer
                    * @throws {$protobuf.util.ProtocolError} If required fields are missing
                    */
-      def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp = js.native
+      def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Decodes a Timestamp message from the specified reader or buffer, length delimited.
                    * @param reader Reader or buffer to decode from
@@ -102,7 +83,7 @@ object googleNs extends js.Object {
                    * @throws {Error} If the payload is not a reader or valid buffer
                    * @throws {$protobuf.util.ProtocolError} If required fields are missing
                    */
-      def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp = js.native
+      def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Decodes a Timestamp message from the specified reader or buffer, length delimited.
                    * @param reader Reader or buffer to decode from
@@ -110,7 +91,7 @@ object googleNs extends js.Object {
                    * @throws {Error} If the payload is not a reader or valid buffer
                    * @throws {$protobuf.util.ProtocolError} If required fields are missing
                    */
-      def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp = js.native
+      def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Encodes the specified Timestamp message. Does not implicitly {@link google.protobuf.Timestamp.verify|verify} messages.
                    * @param message Timestamp message or plain object to encode
@@ -118,7 +99,7 @@ object googleNs extends js.Object {
                    * @returns Writer
                    */
       def encode(
-        message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.ITimestamp
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.ITimestamp
       ): protobufjsLib.protobufjsMod.Writer = js.native
       /**
                    * Encodes the specified Timestamp message. Does not implicitly {@link google.protobuf.Timestamp.verify|verify} messages.
@@ -127,7 +108,7 @@ object googleNs extends js.Object {
                    * @returns Writer
                    */
       def encode(
-        message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.ITimestamp,
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.ITimestamp,
         writer: protobufjsLib.protobufjsMod.Writer
       ): protobufjsLib.protobufjsMod.Writer = js.native
       /**
@@ -137,7 +118,7 @@ object googleNs extends js.Object {
                    * @returns Writer
                    */
       def encodeDelimited(
-        message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.ITimestamp
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.ITimestamp
       ): protobufjsLib.protobufjsMod.Writer = js.native
       /**
                    * Encodes the specified Timestamp message, length delimited. Does not implicitly {@link google.protobuf.Timestamp.verify|verify} messages.
@@ -146,7 +127,7 @@ object googleNs extends js.Object {
                    * @returns Writer
                    */
       def encodeDelimited(
-        message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.ITimestamp,
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.ITimestamp,
         writer: protobufjsLib.protobufjsMod.Writer
       ): protobufjsLib.protobufjsMod.Writer = js.native
       /**
@@ -154,7 +135,7 @@ object googleNs extends js.Object {
                    * @param object Plain object
                    * @returns Timestamp
                    */
-      def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp = js.native
+      def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Creates a plain object from a Timestamp message. Also converts values to other types if specified.
                    * @param message Timestamp
@@ -162,7 +143,7 @@ object googleNs extends js.Object {
                    * @returns Plain object
                    */
       def toObject(
-        message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp
       ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
       /**
                    * Creates a plain object from a Timestamp message. Also converts values to other types if specified.
@@ -171,7 +152,7 @@ object googleNs extends js.Object {
                    * @returns Plain object
                    */
       def toObject(
-        message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.googleNs.protobufNs.Timestamp,
+        message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp,
         options: protobufjsLib.protobufjsMod.IConversionOptions
       ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
       /**

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait Event
   extends chromeLib.chromeNs.eventsNs.Event[js.Function] {
   @JSName("addListener")
-  var addListener_Original: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _] = js.native
+  var addListener_Original: sinonLib.sinonMod.SinonNs.SinonSpy = js.native
   @JSName("hasListener")
-  var hasListener_Original: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _] = js.native
+  var hasListener_Original: sinonLib.sinonMod.SinonNs.SinonSpy = js.native
   @JSName("removeListener")
-  var removeListener_Original: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _] = js.native
+  var removeListener_Original: sinonLib.sinonMod.SinonNs.SinonSpy = js.native
   @JSName("removeListeners")
-  var removeListeners_Original: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _] = js.native
+  var removeListeners_Original: sinonLib.sinonMod.SinonNs.SinonSpy = js.native
   // Methods
   def addListener(args: js.Any*): js.Any = js.native
   def applyTrigger(args: js.Array[_]): scala.Unit = js.native

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "promise-pg"
-version := "0.0-unknown-dt-20180910Z-a60404"
+version := "0.0-unknown-dt-20180910Z-36d4b5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "moment" % "2.22.2-90ee67",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
-  "org.scalablytyped" %%% "pg" % "7.4-dt-20181009Z-ec2646",
-  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180910Z-0e0323",
+  "org.scalablytyped" %%% "moment" % "2.23.0-1a181b",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "pg" % "7.4-dt-20181009Z-b96390",
+  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180910Z-b2c884",
   "org.scalablytyped" %%% "q" % "1.5-dt-20181206Z-a3f1d8",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false

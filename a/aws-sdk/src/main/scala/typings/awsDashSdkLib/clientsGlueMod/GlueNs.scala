@@ -399,7 +399,7 @@ object GlueNs extends js.Object {
   
   trait Connection extends js.Object {
     /**
-         * These key-value pairs define parameters for the connection:    HOST - The host URI: either the fully qualified domain name (FQDN) or the IPv4 address of the database host.    PORT - The port number, between 1024 and 65535, of the port on which the database host is listening for database connections.    USER_NAME - The name under which to log in to the database. The value string for USER_NAME is "USERNAME".    PASSWORD - A password, if one is used, for the user name.    JDBC_DRIVER_JAR_URI - The S3 path of the a jar file that contains the JDBC driver to use.    JDBC_DRIVER_CLASS_NAME - The class name of the JDBC driver to use.    JDBC_ENGINE - The name of the JDBC engine to use.    JDBC_ENGINE_VERSION - The version of the JDBC engine to use.    CONFIG_FILES - (Reserved for future use).    INSTANCE_ID - The instance ID to use.    JDBC_CONNECTION_URL - The URL for the JDBC connection.    JDBC_ENFORCE_SSL - A Boolean string (true, false) specifying whether SSL with hostname matching will be enforced for the JDBC connection on the client. The default is false.  
+         * These key-value pairs define parameters for the connection:    HOST - The host URI: either the fully qualified domain name (FQDN) or the IPv4 address of the database host.    PORT - The port number, between 1024 and 65535, of the port on which the database host is listening for database connections.    USER_NAME - The name under which to log in to the database. The value string for USER_NAME is "USERNAME".    PASSWORD - A password, if one is used, for the user name.    ENCRYPTED_PASSWORD - When you enable connection password protection by setting ConnectionPasswordEncryption in the Data Catalog encryption settings, this field stores the key you designate to encrypt the password.    JDBC_DRIVER_JAR_URI - The S3 path of the a jar file that contains the JDBC driver to use.    JDBC_DRIVER_CLASS_NAME - The class name of the JDBC driver to use.    JDBC_ENGINE - The name of the JDBC engine to use.    JDBC_ENGINE_VERSION - The version of the JDBC engine to use.    CONFIG_FILES - (Reserved for future use).    INSTANCE_ID - The instance ID to use.    JDBC_CONNECTION_URL - The URL for the JDBC connection.    JDBC_ENFORCE_SSL - A Boolean string (true, false) specifying whether SSL with hostname matching will be enforced for the JDBC connection on the client. The default is false.  
          */
     var ConnectionProperties: js.UndefOr[ConnectionProperties] = js.undefined
     /**
@@ -462,6 +462,18 @@ object GlueNs extends js.Object {
          * A map of physical connection requirements, such as VPC and SecurityGroup, needed for making this connection successfully.
          */
     var PhysicalConnectionRequirements: js.UndefOr[PhysicalConnectionRequirements] = js.undefined
+  }
+  
+  
+  trait ConnectionPasswordEncryption extends js.Object {
+    /**
+         * A KMS key used to protect access to the JDBC source.  All users in your account should be granted the kms:encrypt permission to encrypt passwords before storing them in the Data Catalog (through the AWS Glue CreateConnection operation). The decrypt permission should be granted only to KMS key admins and IAM roles designated for AWS Glue crawlers.
+         */
+    var AwsKmsKeyId: js.UndefOr[NameString] = js.undefined
+    /**
+         * When the ReturnConnectionPasswordEncrypted flag is set to "true", passwords remain encrypted in the responses of GetConnection and GetConnections. This encryption takes effect independently from catalog encryption. 
+         */
+    var ReturnConnectionPasswordEncrypted: Boolean
   }
   
   
@@ -1076,6 +1088,10 @@ object GlueNs extends js.Object {
   
   trait DataCatalogEncryptionSettings extends js.Object {
     /**
+         * When password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption.
+         */
+    var ConnectionPasswordEncryption: js.UndefOr[ConnectionPasswordEncryption] = js.undefined
+    /**
          * Specifies encryption-at-rest configuration for the Data Catalog.
          */
     var EncryptionAtRest: js.UndefOr[EncryptionAtRest] = js.undefined
@@ -1553,6 +1569,10 @@ object GlueNs extends js.Object {
          */
     var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
     /**
+         * Allow you to retrieve the connection metadata without displaying the password. For instance, the AWS Glue console uses this flag to retrieve connections, since the console does not display passwords. Set this parameter where the caller may not have permission to use the KMS key to decrypt the password, but does have permission to access the rest of the connection metadata (that is, the other connection properties).
+         */
+    var HidePassword: js.UndefOr[Boolean] = js.undefined
+    /**
          * The name of the connection definition to retrieve.
          */
     var Name: NameString
@@ -1588,6 +1608,10 @@ object GlueNs extends js.Object {
          * A filter that controls which connections will be returned.
          */
     var Filter: js.UndefOr[GetConnectionsFilter] = js.undefined
+    /**
+         * Allow you to retrieve the connection metadata without displaying the password. For instance, the AWS Glue console uses this flag to retrieve connections, since the console does not display passwords. Set this parameter where the caller may not have permission to use the KMS key to decrypt the password, but does have permission to access the rest of the connection metadata (that is, the other connection properties).
+         */
+    var HidePassword: js.UndefOr[Boolean] = js.undefined
     /**
          * The maximum number of connections to return in one response.
          */
@@ -3242,7 +3266,7 @@ object GlueNs extends js.Object {
          */
     var Parameters: js.UndefOr[ParametersMap] = js.undefined
     /**
-         * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys.
+         * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys. When creating a table used by Athena, and you do not specify any partitionKeys, you must at least set the value of partitionKeys to an empty list. For example:  "PartitionKeys": [] 
          */
     var PartitionKeys: js.UndefOr[ColumnList] = js.undefined
     /**
@@ -3310,7 +3334,7 @@ object GlueNs extends js.Object {
          */
     var Parameters: js.UndefOr[ParametersMap] = js.undefined
     /**
-         * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys.
+         * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys. When creating a table used by Athena, and you do not specify any partitionKeys, you must at least set the value of partitionKeys to an empty list. For example:  "PartitionKeys": [] 
          */
     var PartitionKeys: js.UndefOr[ColumnList] = js.undefined
     /**
@@ -6359,7 +6383,7 @@ object GlueNs extends js.Object {
   type ConditionList = js.Array[Condition]
   type ConnectionList = js.Array[Connection]
   type ConnectionName = java.lang.String
-  type ConnectionPropertyKey = awsDashSdkLib.awsDashSdkLibStrings.HOST | awsDashSdkLib.awsDashSdkLibStrings.PORT | awsDashSdkLib.awsDashSdkLibStrings.USERNAME | awsDashSdkLib.awsDashSdkLibStrings.PASSWORD | awsDashSdkLib.awsDashSdkLibStrings.JDBC_DRIVER_JAR_URI | awsDashSdkLib.awsDashSdkLibStrings.JDBC_DRIVER_CLASS_NAME | awsDashSdkLib.awsDashSdkLibStrings.JDBC_ENGINE | awsDashSdkLib.awsDashSdkLibStrings.JDBC_ENGINE_VERSION | awsDashSdkLib.awsDashSdkLibStrings.CONFIG_FILES | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_ID | awsDashSdkLib.awsDashSdkLibStrings.JDBC_CONNECTION_URL | awsDashSdkLib.awsDashSdkLibStrings.JDBC_ENFORCE_SSL | java.lang.String
+  type ConnectionPropertyKey = awsDashSdkLib.awsDashSdkLibStrings.HOST | awsDashSdkLib.awsDashSdkLibStrings.PORT | awsDashSdkLib.awsDashSdkLibStrings.USERNAME | awsDashSdkLib.awsDashSdkLibStrings.PASSWORD | awsDashSdkLib.awsDashSdkLibStrings.ENCRYPTED_PASSWORD | awsDashSdkLib.awsDashSdkLibStrings.JDBC_DRIVER_JAR_URI | awsDashSdkLib.awsDashSdkLibStrings.JDBC_DRIVER_CLASS_NAME | awsDashSdkLib.awsDashSdkLibStrings.JDBC_ENGINE | awsDashSdkLib.awsDashSdkLibStrings.JDBC_ENGINE_VERSION | awsDashSdkLib.awsDashSdkLibStrings.CONFIG_FILES | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_ID | awsDashSdkLib.awsDashSdkLibStrings.JDBC_CONNECTION_URL | awsDashSdkLib.awsDashSdkLibStrings.JDBC_ENFORCE_SSL | java.lang.String
   type ConnectionType = awsDashSdkLib.awsDashSdkLibStrings.JDBC | awsDashSdkLib.awsDashSdkLibStrings.SFTP | java.lang.String
   type CrawlerConfiguration = java.lang.String
   type CrawlerList = js.Array[Crawler]

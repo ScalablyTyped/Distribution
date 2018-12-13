@@ -13,9 +13,12 @@ trait ParameterInformation extends js.Object {
        */
   var documentation: js.UndefOr[java.lang.String | MarkupContent] = js.undefined
   /**
-       * The label of this signature. Will be shown in
-       * the UI.
+       * The label of this parameter information.
+       *
+       * Either a string or inclusive start and exclusive end offsets within its containing
+       * [signature label](#SignatureInformation.label). *Note*: A label of type string must be
+       * a substring of its containing signature information's [label](#SignatureInformation.label).
        */
-  var label: java.lang.String
+  var label: java.lang.String | (js.Tuple2[scala.Double, scala.Double])
 }
 

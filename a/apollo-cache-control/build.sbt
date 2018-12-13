@@ -1,19 +1,15 @@
 organization := "org.scalablytyped"
 name := "apollo-cache-control"
-version := "0.3.3-c3df77"
+version := "0.4.0-204de1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-env" % "0.2.5-89be6e",
-  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-2990fb",
-  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.9-2a2946",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-2f8c45",
+  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-c950a7",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-1de855",
-  "org.scalablytyped" %%% "graphql-extensions" % "0.3.3-c52343",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-ebe499",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-4dc81b",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "util_dot_promisify" % "1.0-dt-20180910Z-1eb4cb")
 publishArtifact in packageDoc := false

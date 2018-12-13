@@ -976,6 +976,17 @@ object microflowsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
+  /**
+       * See: {@link https://docs.mendix.com/refguide7/synchronize relevant section in reference guide}
+       *
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  class SynchronizeAction protected ()
+    extends mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.SynchronizeAction {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
   @js.native
   class Tail protected ()
     extends mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.Tail {
@@ -3469,6 +3480,32 @@ object microflowsNs extends js.Object {
              * of the parent ListOperationAction element passed as argument.
              */
     def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ListOperationAction): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.Subtract = js.native
+  }
+  
+  /**
+       * See: {@link https://docs.mendix.com/refguide7/synchronize relevant section in reference guide}
+       *
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  object SynchronizeAction extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new SynchronizeAction instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.SynchronizeAction = js.native
+    /**
+             * Creates and returns a new SynchronizeAction instance in the SDK and on the server.
+             * The new SynchronizeAction will be automatically stored in the 'action' property
+             * of the parent ActionActivity element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.22.0 and higher
+             */
+    def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ActionActivity): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.SynchronizeAction = js.native
   }
   
   @js.native

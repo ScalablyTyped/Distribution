@@ -20,6 +20,7 @@ abstract class AbstractModel protected () extends IAbstractModel {
   def handleError(message: java.lang.String, errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback): scala.Unit = js.native
   def importModuleMpk(mpkPath: java.lang.String, callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback): scala.Unit = js.native
   def importModuleMpk(mpkPath: stdLib.Blob, callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback): scala.Unit = js.native
+  def loadUnitById[T /* <: mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit */](id: java.lang.String): js.Promise[T] = js.native
   /**
        * Fetches a complete unit. The result might be returned from the cache.
        */
@@ -53,7 +54,7 @@ object AbstractModel extends js.Object {
     workingCopyId: java.lang.String,
     connectionConfig: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ISdkConfig,
     instance: CT,
-    callback: js.Function1[/* model */ IT, scala.Unit],
+    callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[IT],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
 }

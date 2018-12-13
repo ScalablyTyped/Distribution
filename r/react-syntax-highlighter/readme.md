@@ -1,5 +1,5 @@
 ```
-// Type definitions for react-syntax-highlighter
+// Type definitions for react-syntax-highlighter 10.1
 // Project: https://github.com/conorhastings/react-syntax-highlighter
 // Definitions by: Ivo Stratev <https://github.com/NoHomey>
 //                 Aimee Gamble-Milner <https://github.com/ajgamble-milner>

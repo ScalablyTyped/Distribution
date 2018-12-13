@@ -11,6 +11,21 @@ trait VictoryBarProps
      with VictoryCommonProps
      with VictoryDatableProps {
   /**
+       * The barRatio prop specifies an approximate ratio between bar widths and spaces between bars.
+       * When width is not specified via the barWidth prop or in bar styles, the barRatio prop will
+       * be used to calculate a default width for each bar given the total number of bars in the data series
+       * and the overall width of the chart.
+       */
+  var barRatio: js.UndefOr[scala.Double] = js.undefined
+  /**
+       * The barWidth prop is used to specify the width of each bar. This prop may be given as
+       * a number of pixels or as a function that returns a number. When this prop is given as
+       * a function, it will be evaluated with the arguments datum, and active. When this value
+       * is not given, a default value will be calculated based on the overall dimensions of
+       * the chart, and the number of bars.
+       */
+  var barWidth: js.UndefOr[NumberOrCallback] = js.undefined
+  /**
        * Similar to data accessor props `x` and `y`, this prop may be used to functionally
        * assign eventKeys to data
        */

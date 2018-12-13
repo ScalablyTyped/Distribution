@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "react-virtualized-select"
-version := "3.0-dt-20180910Z-da864f"
+version := "3.0-dt-20180910Z-5c6499"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181212Z-14da82",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-93dab0",
-  "org.scalablytyped" %%% "react-select" % "2.0-dt-20181013Z-af8e1f",
-  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20180910Z-671ec1",
-  "org.scalablytyped" %%% "react-virtualized" % "9.18-dt-20181116Z-8c2d55",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-c9a723",
+  "org.scalablytyped" %%% "react-select" % "2.0-dt-20181013Z-5e1be9",
+  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20180910Z-4f97e6",
+  "org.scalablytyped" %%% "react-virtualized" % "9.18-dt-20181116Z-69622a",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

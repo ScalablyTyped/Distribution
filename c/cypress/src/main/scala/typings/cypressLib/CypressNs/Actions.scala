@@ -140,10 +140,7 @@ trait Actions extends js.Object {
        *    })
        * @see https://on.cypress.io/catalog-of-events#App-Events
        */
-  def apply(
-    action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
-  ): scala.Unit = js.native
+  def apply(action: cypressLib.cypressLibStrings.`window:alert`, fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.alert()` method.
        * Cypress will auto accept alerts. You cannot change this behavior.
@@ -189,7 +186,7 @@ trait Actions extends js.Object {
        */
   def apply(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
+    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]
   ): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.confirm()` method.

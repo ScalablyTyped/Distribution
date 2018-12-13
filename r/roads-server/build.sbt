@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "roads-server"
-version := "1.0-dt-20180910Z-86c6f8"
+version := "1.0-dt-20180910Z-4dd119"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
-  "org.scalablytyped" %%% "roads" % "5.0-dt-20180910Z-37e24c",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "roads" % "5.0-dt-20180910Z-aea671",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

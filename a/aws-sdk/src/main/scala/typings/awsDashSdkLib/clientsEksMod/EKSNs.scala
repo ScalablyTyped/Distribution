@@ -35,11 +35,11 @@ object EKSNs extends js.Object {
          */
     var certificateAuthority: js.UndefOr[Certificate] = js.undefined
     /**
-         * Unique, case-sensitive identifier you provide to ensure the idempotency of the request.
+         * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
     var clientRequestToken: js.UndefOr[String] = js.undefined
     /**
-         * The Unix epoch time stamp in seconds for when the cluster was created.
+         * The Unix epoch timestamp in seconds for when the cluster was created.
          */
     var createdAt: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -75,7 +75,7 @@ object EKSNs extends js.Object {
   
   trait CreateClusterRequest extends js.Object {
     /**
-         * Unique, case-sensitive identifier you provide to ensure the idempotency of the request.
+         * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
          */
     var clientRequestToken: js.UndefOr[String] = js.undefined
     /**
@@ -83,7 +83,7 @@ object EKSNs extends js.Object {
          */
     var name: ClusterName
     /**
-         * The VPC subnets and security groups used by the cluster control plane. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see Cluster VPC Considerations and Cluster Security Group Considerations in the Amazon EKS User Guide. You must specify at least two subnets. You may specify up to 5 security groups, but we recommend that you use a dedicated security group for your cluster control plane.
+         * The VPC subnets and security groups used by the cluster control plane. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see Cluster VPC Considerations and Cluster Security Group Considerations in the Amazon EKS User Guide. You must specify at least two subnets. You may specify up to five security groups, but we recommend that you use a dedicated security group for your cluster control plane.
          */
     var resourcesVpcConfig: VpcConfigRequest
     /**
@@ -137,6 +137,42 @@ object EKSNs extends js.Object {
   }
   
   
+  trait DescribeUpdateRequest extends js.Object {
+    /**
+         * The name of the Amazon EKS cluster to update.
+         */
+    var name: String
+    /**
+         * The ID of the update to describe.
+         */
+    var updateId: String
+  }
+  
+  
+  trait DescribeUpdateResponse extends js.Object {
+    /**
+         * The full description of the specified update.
+         */
+    var update: js.UndefOr[Update] = js.undefined
+  }
+  
+  
+  trait ErrorDetail extends js.Object {
+    /**
+         * A brief description of the error.     SubnetNotFound: One of the subnets associated with the cluster could not be found.    SecurityGroupNotFound: One of the security groups associated with the cluster could not be found.    EniLimitReached: You have reached the elastic network interface limit for your account.    IpNotAvailable: A subnet associated with the cluster does not have any free IP addresses.    AccessDenied: You do not have permissions to perform the specified operation.    OperationNotPermitted: The service role associated with the cluster does not have the required access permissions for Amazon EKS.    VpcIdNotFound: The VPC associated with the cluster could not be found.  
+         */
+    var errorCode: js.UndefOr[ErrorCode] = js.undefined
+    /**
+         * A more complete description of the error.
+         */
+    var errorMessage: js.UndefOr[String] = js.undefined
+    /**
+         * An optional field that contains the resource IDs associated with the error.
+         */
+    var resourceIds: js.UndefOr[StringList] = js.undefined
+  }
+  
+  
   trait ListClustersRequest extends js.Object {
     /**
          * The maximum number of cluster results returned by ListClusters in paginated output. When this parameter is used, ListClusters only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListClusters request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListClusters returns up to 100 results and a nextToken value if applicable.
@@ -158,6 +194,34 @@ object EKSNs extends js.Object {
          * The nextToken value to include in a future ListClusters request. When the results of a ListClusters request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
          */
     var nextToken: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait ListUpdatesRequest extends js.Object {
+    /**
+         * The maximum number of update results returned by ListUpdates in paginated output. When this parameter is used, ListUpdates only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListUpdates request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListUpdates returns up to 100 results and a nextToken value if applicable.
+         */
+    var maxResults: js.UndefOr[ListUpdatesRequestMaxResults] = js.undefined
+    /**
+         * The name of the Amazon EKS cluster for which to list updates.
+         */
+    var name: String
+    /**
+         * The nextToken value returned from a previous paginated ListUpdates request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value.
+         */
+    var nextToken: js.UndefOr[String] = js.undefined
+  }
+  
+  
+  trait ListUpdatesResponse extends js.Object {
+    /**
+         * The nextToken value to include in a future ListUpdates request. When the results of a ListUpdates request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var nextToken: js.UndefOr[String] = js.undefined
+    /**
+         * A list of all the updates for the specified cluster and Region.
+         */
+    var updateIds: js.UndefOr[StringList] = js.undefined
   }
   
   @js.native
@@ -253,6 +317,35 @@ object EKSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeClusterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Returns descriptive information about an update against your Amazon EKS cluster. When the status of the update is Succeeded, the update is complete. If an update fails, the status is Failed, and an error detail explains the reason for the failure.
+       */
+    def describeUpdate(): awsDashSdkLib.libRequestMod.Request[DescribeUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns descriptive information about an update against your Amazon EKS cluster. When the status of the update is Succeeded, the update is complete. If an update fails, the status is Failed, and an error detail explains the reason for the failure.
+       */
+    def describeUpdate(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeUpdateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns descriptive information about an update against your Amazon EKS cluster. When the status of the update is Succeeded, the update is complete. If an update fails, the status is Failed, and an error detail explains the reason for the failure.
+       */
+    def describeUpdate(params: DescribeUpdateRequest): awsDashSdkLib.libRequestMod.Request[DescribeUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns descriptive information about an update against your Amazon EKS cluster. When the status of the update is Succeeded, the update is complete. If an update fails, the status is Failed, and an error detail explains the reason for the failure.
+       */
+    def describeUpdate(
+      params: DescribeUpdateRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeUpdateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeUpdateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Lists the Amazon EKS clusters in your AWS account in the specified Region.
        */
     def listClusters(): awsDashSdkLib.libRequestMod.Request[ListClustersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -281,6 +374,64 @@ object EKSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListClustersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the updates associated with an Amazon EKS cluster in your AWS account, in the specified Region.
+       */
+    def listUpdates(): awsDashSdkLib.libRequestMod.Request[ListUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the updates associated with an Amazon EKS cluster in your AWS account, in the specified Region.
+       */
+    def listUpdates(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListUpdatesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the updates associated with an Amazon EKS cluster in your AWS account, in the specified Region.
+       */
+    def listUpdates(params: ListUpdatesRequest): awsDashSdkLib.libRequestMod.Request[ListUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the updates associated with an Amazon EKS cluster in your AWS account, in the specified Region.
+       */
+    def listUpdates(
+      params: ListUpdatesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListUpdatesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+       */
+    def updateClusterVersion(): awsDashSdkLib.libRequestMod.Request[UpdateClusterVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+       */
+    def updateClusterVersion(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateClusterVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateClusterVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+       */
+    def updateClusterVersion(params: UpdateClusterVersionRequest): awsDashSdkLib.libRequestMod.Request[UpdateClusterVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+       */
+    def updateClusterVersion(
+      params: UpdateClusterVersionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateClusterVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateClusterVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Waits for the clusterActive state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
        */
@@ -360,9 +511,73 @@ object EKSNs extends js.Object {
   }
   
   
+  trait Update extends js.Object {
+    /**
+         * The Unix epoch timestamp in seconds for when the update was created.
+         */
+    var createdAt: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * Any errors associated with a Failed update.
+         */
+    var errors: js.UndefOr[ErrorDetails] = js.undefined
+    /**
+         * A UUID that is used to track the update.
+         */
+    var id: js.UndefOr[String] = js.undefined
+    /**
+         * A key-value map that contains the parameters associated with the update.
+         */
+    var params: js.UndefOr[UpdateParams] = js.undefined
+    /**
+         * The current status of the update.
+         */
+    var status: js.UndefOr[UpdateStatus] = js.undefined
+    /**
+         * The type of the update.
+         */
+    var `type`: js.UndefOr[UpdateType] = js.undefined
+  }
+  
+  
+  trait UpdateClusterVersionRequest extends js.Object {
+    /**
+         * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+         */
+    var clientRequestToken: js.UndefOr[String] = js.undefined
+    /**
+         * The name of the Amazon EKS cluster to update.
+         */
+    var name: String
+    /**
+         * The desired Kubernetes version following a successful update.
+         */
+    var version: String
+  }
+  
+  
+  trait UpdateClusterVersionResponse extends js.Object {
+    /**
+         * The full description of the specified update
+         */
+    var update: js.UndefOr[Update] = js.undefined
+  }
+  
+  
+  trait UpdateParam extends js.Object {
+    /**
+         * The keys associated with an update request.
+         */
+    var `type`: js.UndefOr[UpdateParamType] = js.undefined
+    /**
+         * The value of the keys submitted as part of an update request.
+         */
+    var value: js.UndefOr[String] = js.undefined
+  }
+  
+  
   trait VpcConfigRequest extends js.Object {
     /**
-         * Specify one or more security groups for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane.
+         * Specify one or more security groups for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane. If you do not specify a security group, the default security group for your VPC is used.
          */
     var securityGroupIds: js.UndefOr[StringList] = js.undefined
     /**
@@ -391,10 +606,17 @@ object EKSNs extends js.Object {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClusterName = java.lang.String
   type ClusterStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type ErrorCode = awsDashSdkLib.awsDashSdkLibStrings.SubnetNotFound | awsDashSdkLib.awsDashSdkLibStrings.SecurityGroupNotFound | awsDashSdkLib.awsDashSdkLibStrings.EniLimitReached | awsDashSdkLib.awsDashSdkLibStrings.IpNotAvailable | awsDashSdkLib.awsDashSdkLibStrings.AccessDenied | awsDashSdkLib.awsDashSdkLibStrings.OperationNotPermitted | awsDashSdkLib.awsDashSdkLibStrings.VpcIdNotFound | awsDashSdkLib.awsDashSdkLibStrings.Unknown | java.lang.String
+  type ErrorDetails = js.Array[ErrorDetail]
   type ListClustersRequestMaxResults = scala.Double
+  type ListUpdatesRequestMaxResults = scala.Double
   type String = java.lang.String
   type StringList = js.Array[String]
   type Timestamp = stdLib.Date
+  type UpdateParamType = awsDashSdkLib.awsDashSdkLibStrings.Version | awsDashSdkLib.awsDashSdkLibStrings.PlatformVersion | java.lang.String
+  type UpdateParams = js.Array[UpdateParam]
+  type UpdateStatus = awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Cancelled | awsDashSdkLib.awsDashSdkLibStrings.Successful | java.lang.String
+  type UpdateType = awsDashSdkLib.awsDashSdkLibStrings.VersionUpdate | java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }
 

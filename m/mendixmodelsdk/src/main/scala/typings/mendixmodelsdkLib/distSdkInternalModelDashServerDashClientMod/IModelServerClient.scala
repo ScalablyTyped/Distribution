@@ -16,7 +16,7 @@ trait IModelServerClient extends js.Object {
   /**
        * Commits the contents of the working copy with the given id to the team server
        */
-  def commit(
+  def commitToTeamServer(
     workingCopyId: java.lang.String,
     branchName: java.lang.String,
     message: java.lang.String,
@@ -279,9 +279,12 @@ trait IModelServerClient extends js.Object {
   ): scala.Unit = js.native
   /**
        * Unlock the working copy (will be unlocked for the currently authenticated openid, will fail if it's locked by another openid)
+       *
+       * @param lockType if specified, only unlock if the working copy has this specified lock
        */
   def unlockWorkingCopy(
     workingCopyId: java.lang.String,
+    lockType: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType | js.UndefOr[scala.Nothing],
     callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native

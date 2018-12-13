@@ -319,10 +319,7 @@ trait Chainable[Subject] extends js.Object {
        * @see https://on.cypress.io/and
        */
   @JSName("and")
-  def and_becalledAfter(
-    chainer: cypressLib.cypressLibStrings.beDOTcalledAfter,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
-  ): Chainable[Subject] = js.native
+  def and_becalledAfter(chainer: cypressLib.cypressLibStrings.beDOTcalledAfter, spy: sinonLib.sinonMod.SinonNs.SinonSpy): Chainable[Subject] = js.native
   /**
        * Assert spy was called before `anotherSpy`
        * @see http://sinonjs.org/releases/v4.1.3/spies/#spycalledbeforeanotherspy
@@ -335,10 +332,7 @@ trait Chainable[Subject] extends js.Object {
        * @see https://on.cypress.io/and
        */
   @JSName("and")
-  def and_becalledBefore(
-    chainer: cypressLib.cypressLibStrings.beDOTcalledBefore,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
-  ): Chainable[Subject] = js.native
+  def and_becalledBefore(chainer: cypressLib.cypressLibStrings.beDOTcalledBefore, spy: sinonLib.sinonMod.SinonNs.SinonSpy): Chainable[Subject] = js.native
   /**
        * Assert spy was called at least once with `obj` as `this`. `calledOn` also accepts a matcher (see [matchers](http://sinonjs.org/releases/v4.1.3/spies/#matchers)).
        * @see http://sinonjs.org/releases/v4.1.3/spies/#spycalledonobj
@@ -1866,7 +1860,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_notbecalledAfter(
     chainer: cypressLib.cypressLibStrings.notDOTbeDOTcalledAfter,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
+    spy: sinonLib.sinonMod.SinonNs.SinonSpy
   ): Chainable[Subject] = js.native
   /**
        * Assert spy was not called before `anotherSpy`
@@ -1882,7 +1876,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_notbecalledBefore(
     chainer: cypressLib.cypressLibStrings.notDOTbeDOTcalledBefore,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
+    spy: sinonLib.sinonMod.SinonNs.SinonSpy
   ): Chainable[Subject] = js.native
   /**
        * Assert spy was not called at least once with `obj` as `this`. `calledOn` also accepts a matcher (see [matchers](http://sinonjs.org/releases/v4.1.3/spies/#matchers)).
@@ -25882,10 +25876,7 @@ trait Chainable[Subject] extends js.Object {
        * @see https://on.cypress.io/catalog-of-events#App-Events
        */
   @JSName("off")
-  def `off_window:alert`(
-    action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
-  ): scala.Unit = js.native
+  def `off_window:alert`(action: cypressLib.cypressLibStrings.`window:alert`, fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.alert()` method.
        * Cypress will auto accept alerts. You cannot change this behavior.
@@ -25951,7 +25942,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("off")
   def `off_window:confirm`(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
+    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]
   ): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.confirm()` method.
@@ -26210,10 +26201,7 @@ trait Chainable[Subject] extends js.Object {
        * @see https://on.cypress.io/catalog-of-events#App-Events
        */
   @JSName("on")
-  def `on_window:alert`(
-    action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
-  ): scala.Unit = js.native
+  def `on_window:alert`(action: cypressLib.cypressLibStrings.`window:alert`, fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.alert()` method.
        * Cypress will auto accept alerts. You cannot change this behavior.
@@ -26279,7 +26267,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("on")
   def `on_window:confirm`(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]]
+    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]
   ): scala.Unit = js.native
   /**
        * Fires when your app calls the global `window.confirm()` method.
@@ -40677,10 +40665,7 @@ trait Chainable[Subject] extends js.Object {
        * @see https://on.cypress.io/should
        */
   @JSName("should")
-  def should_becalledAfter(
-    chainer: cypressLib.cypressLibStrings.beDOTcalledAfter,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
-  ): Chainable[Subject] = js.native
+  def should_becalledAfter(chainer: cypressLib.cypressLibStrings.beDOTcalledAfter, spy: sinonLib.sinonMod.SinonNs.SinonSpy): Chainable[Subject] = js.native
   /**
        * Assert spy was called before `anotherSpy`
        * @see http://sinonjs.org/releases/v4.1.3/spies/#spycalledbeforeanotherspy
@@ -40692,10 +40677,7 @@ trait Chainable[Subject] extends js.Object {
        * @see https://on.cypress.io/should
        */
   @JSName("should")
-  def should_becalledBefore(
-    chainer: cypressLib.cypressLibStrings.beDOTcalledBefore,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
-  ): Chainable[Subject] = js.native
+  def should_becalledBefore(chainer: cypressLib.cypressLibStrings.beDOTcalledBefore, spy: sinonLib.sinonMod.SinonNs.SinonSpy): Chainable[Subject] = js.native
   /**
        * Assert spy was called at least once with `obj` as `this`. `calledOn` also accepts a matcher (see [matchers](http://sinonjs.org/releases/v4.1.3/spies/#matchers)).
        * @see http://sinonjs.org/releases/v4.1.3/spies/#spycalledonobj
@@ -42124,7 +42106,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_notbecalledAfter(
     chainer: cypressLib.cypressLibStrings.notDOTbeDOTcalledAfter,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
+    spy: sinonLib.sinonMod.SinonNs.SinonSpy
   ): Chainable[Subject] = js.native
   /**
        * Assert spy was not called before `anotherSpy`
@@ -42139,7 +42121,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_notbecalledBefore(
     chainer: cypressLib.cypressLibStrings.notDOTbeDOTcalledBefore,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
+    spy: sinonLib.sinonMod.SinonNs.SinonSpy
   ): Chainable[Subject] = js.native
   /**
        * Assert spy was not called at least once with `obj` as `this`. `calledOn` also accepts a matcher (see [matchers](http://sinonjs.org/releases/v4.1.3/spies/#matchers)).
@@ -45782,7 +45764,7 @@ trait Chainable[Subject] extends js.Object {
        *    expect(fn).to.have.been.calledOnce
        *    expect(fn).to.have.always.been.calledWithExactly(42)
        */
-  def spy(): Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]] = js.native
+  def spy(): Agent[sinonLib.sinonMod.SinonNs.SinonSpy] = js.native
   /**
        * Wraps existing function and spies on it, while passing arguments and results.
        * @see https://on.cypress.io/spy
@@ -45792,7 +45774,7 @@ trait Chainable[Subject] extends js.Object {
        *    expect(spy(2, 3)).to.equal(5)
        *    expect(spy).to.have.been.calledWithExactly(2, 3)
        */
-  def spy(func: js.Function1[/* repeated */js.Any, _]): Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]] = js.native
+  def spy(func: js.Function1[/* repeated */js.Any, _]): Agent[sinonLib.sinonMod.SinonNs.SinonSpy] = js.native
   /**
        * Spy on a method.
        * @see https://on.cypress.io/spy
@@ -45802,7 +45784,7 @@ trait Chainable[Subject] extends js.Object {
        *    App.start()
        *    expect(util.addListeners).to.be.called
        */
-  def spy[T](obj: T, method: java.lang.String): Agent[sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]] = js.native
+  def spy[T](obj: T, method: java.lang.String): Agent[sinonLib.sinonMod.SinonNs.SinonSpy] = js.native
   /**
        * Replace a function, record its usage and control its behavior.
        * > Note: `.stub()` assumes you are already familiar with our guide:
@@ -45815,7 +45797,7 @@ trait Chainable[Subject] extends js.Object {
        *    expect(fn).to.have.been.calledOnce
        *    expect(fn).to.have.always.been.calledWithExactly(42)
        */
-  def stub(): Agent[sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]] = js.native
+  def stub(): Agent[sinonLib.sinonMod.SinonNs.SinonStub] = js.native
   /**
        * Stubs all the object’s methods.
        *
@@ -45832,7 +45814,7 @@ trait Chainable[Subject] extends js.Object {
        * expect(o.toString()).to.equal(undefined)
        * expect(o.toString).to.have.been.calledOnce
        */
-  def stub(obj: js.Any): Agent[sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]] = js.native
+  def stub(obj: js.Any): Agent[sinonLib.sinonMod.SinonNs.SinonStub] = js.native
   /**
        * Stubs single method of an object.
        *
@@ -45844,13 +45826,13 @@ trait Chainable[Subject] extends js.Object {
        *    expect(o.toString()).to.equal('foo')
        *    expect(o.toString).to.have.been.calledOnce
        */
-  def stub[T](obj: T, method: java.lang.String): Agent[sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]] = js.native
+  def stub[T](obj: T, method: java.lang.String): Agent[sinonLib.sinonMod.SinonNs.SinonStub] = js.native
   /**
        * Stubs a method on an object
        *
        * @deprecated Use `cy.stub(object, name).callsFake(fn)` instead
        */
-  def stub[T](obj: T, method: java.lang.String, func: js.Function1[/* repeated */js.Any, _]): Agent[sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]] = js.native
+  def stub[T](obj: T, method: java.lang.String, func: js.Function1[/* repeated */js.Any, _]): Agent[sinonLib.sinonMod.SinonNs.SinonStub] = js.native
   /**
        * Submit a form.
        *

@@ -44,6 +44,17 @@ object restNs extends js.Object {
   }
   
   /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  class ODataNavigationProperty protected ()
+    extends mendixmodelsdkLib.distGenRestMod.restNs.ODataNavigationProperty {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  /**
        * See: {@link https://docs.mendix.com/refguide7/published-odata-services relevant section in reference guide}
        */
   @js.native
@@ -183,6 +194,32 @@ object restNs extends js.Object {
              *  7.18.0 and higher
              */
     def createIn(container: mendixmodelsdkLib.distGenRestMod.restNs.ConsumedODataService): mendixmodelsdkLib.distGenRestMod.restNs.ODataEntity = js.native
+  }
+  
+  /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  object ODataNavigationProperty extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenRestMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new ODataNavigationProperty instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenRestMod.restNs.ODataNavigationProperty = js.native
+    /**
+             * Creates and returns a new ODataNavigationProperty instance in the SDK and on the server.
+             * The new ODataNavigationProperty will be automatically stored in the 'navigationProperties' property
+             * of the parent ODataEntity element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.22.0 and higher
+             */
+    def createIn(container: mendixmodelsdkLib.distGenRestMod.restNs.ODataEntity): mendixmodelsdkLib.distGenRestMod.restNs.ODataNavigationProperty = js.native
   }
   
   /**

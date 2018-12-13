@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-elements"
-version := "0.19.1-17cc82"
+version := "0.19.1-723aef"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,9 +11,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash_dot_isempty" % "4.4-dt-20180910Z-372842",
   "org.scalablytyped" %%% "lodash_dot_times" % "4.3-dt-20180910Z-0fd6e7",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181212Z-14da82",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20181208Z-ba08ae",
-  "org.scalablytyped" %%% "react-native-vector-icons" % "4.6-dt-20181109Z-c8091f",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20181208Z-7b782a",
+  "org.scalablytyped" %%% "react-native-vector-icons" % "4.6-dt-20181109Z-48237d",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

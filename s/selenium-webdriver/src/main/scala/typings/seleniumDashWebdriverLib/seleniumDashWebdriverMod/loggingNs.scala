@@ -214,6 +214,15 @@ object loggingNs extends js.Object {
          * @param {string} name the logger's name.
          * @return {!Logger} the requested logger.
          */
+    def getLogger(): Logger = js.native
+    /**
+         * Retrieves a named logger, creating it in the process. This function will
+         * implicitly create the requested logger, and any of its parents, if they
+         * do not yet exist.
+         *
+         * @param {string} name the logger's name.
+         * @return {!Logger} the requested logger.
+         */
     def getLogger(name: java.lang.String): Logger = js.native
   }
   
@@ -414,6 +423,22 @@ object loggingNs extends js.Object {
      */
   val Type: IType = js.native
   /**
+     * Adds the console handler to the given logger. The console handler will log
+     * all messages using the JavaScript Console API.
+     *
+     * @param {Logger=} opt_logger The logger to add the handler to; defaults
+     *     to the root logger.
+     */
+  def addConsoleHandler(): scala.Unit = js.native
+  /**
+     * Adds the console handler to the given logger. The console handler will log
+     * all messages using the JavaScript Console API.
+     *
+     * @param {Logger=} opt_logger The logger to add the handler to; defaults
+     *     to the root logger.
+     */
+  def addConsoleHandler(opt_logger: Logger): scala.Unit = js.native
+  /**
      * Converts a level name or value to a {@link logging.Level} value.
      * If the name/value is not recognized, {@link logging.Level.ALL}
      * will be returned.
@@ -431,6 +456,40 @@ object loggingNs extends js.Object {
      * @return {!logging.Level} The converted level.
      */
   def getLevel(nameOrValue: scala.Double): Level = js.native
+  /**
+     * Retrieves a named logger, creating it in the process. This function will
+     * implicitly create the requested logger, and any of its parents, if they
+     * do not yet exist.
+     *
+     * @param {string} name the logger's name.
+     * @return {!Logger} the requested logger.
+     */
+  def getLogger(): Logger = js.native
+  /**
+     * Retrieves a named logger, creating it in the process. This function will
+     * implicitly create the requested logger, and any of its parents, if they
+     * do not yet exist.
+     *
+     * @param {string} name the logger's name.
+     * @return {!Logger} the requested logger.
+     */
+  def getLogger(name: java.lang.String): Logger = js.native
+  /**
+     * Removes the console log handler from the given logger.
+     *
+     * @param {Logger=} opt_logger The logger to remove the handler from; defaults
+     *     to the root logger.
+     * @see exports.addConsoleHandler
+     */
+  def removeConsoleHandler(): scala.Unit = js.native
+  /**
+     * Removes the console log handler from the given logger.
+     *
+     * @param {Logger=} opt_logger The logger to remove the handler from; defaults
+     *     to the root logger.
+     * @see exports.addConsoleHandler
+     */
+  def removeConsoleHandler(opt_logger: Logger): scala.Unit = js.native
   /**
      * Defines a message level that may be used to control logging output.
      *

@@ -14,7 +14,7 @@ trait TextDocumentClientCapabilities extends js.Object {
   /**
        * Capabilities specific to the `textDocument/codeLens`
        */
-  var codeLens: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var codeLens: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to the `textDocument/completion`
        */
@@ -26,11 +26,11 @@ trait TextDocumentClientCapabilities extends js.Object {
   /**
        * Capabilities specific to the `textDocument/documentHighlight`
        */
-  var documentHighlight: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var documentHighlight: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to the `textDocument/documentLink`
        */
-  var documentLink: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var documentLink: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to the `textDocument/documentSymbol`
        */
@@ -40,7 +40,7 @@ trait TextDocumentClientCapabilities extends js.Object {
   /**
        * Capabilities specific to the `textDocument/formatting`
        */
-  var formatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var formatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to the `textDocument/hover`
        */
@@ -48,7 +48,7 @@ trait TextDocumentClientCapabilities extends js.Object {
   /**
        * Capabilities specific to the `textDocument/onTypeFormatting`
        */
-  var onTypeFormatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var onTypeFormatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to `textDocument/publishDiagnostics`.
        */
@@ -56,11 +56,11 @@ trait TextDocumentClientCapabilities extends js.Object {
   /**
        * Capabilities specific to the `textDocument/rangeFormatting`
        */
-  var rangeFormatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var rangeFormatting: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to the `textDocument/references`
        */
-  var references: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var references: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to the `textDocument/rename`
        */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "portfinder"
-version := "1.0.20-5fbcc2"
+version := "1.0.20-bdae4a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "async" % "2.0.1-dt-20181020Z-6d9978",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-c10888",
-  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180910Z-9d5a07",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
+  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180910Z-ca7068",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

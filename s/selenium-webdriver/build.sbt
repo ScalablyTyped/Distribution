@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "selenium-webdriver"
-version := "3.0-dt-20181109Z-29396f"
+version := "3.0-dt-20181213Z-fbc0bd"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

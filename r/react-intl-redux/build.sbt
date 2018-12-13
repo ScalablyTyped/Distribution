@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-intl-redux"
-version := "v0.1.0-dt-20181208Z-923c06"
+version := "v0.1.0-dt-20181208Z-6dd0c5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181212Z-14da82",
-  "org.scalablytyped" %%% "react-intl" % "2.3-dt-20181128Z-22c330",
-  "org.scalablytyped" %%% "react-redux" % "6.0-dt-20181208Z-a4f053",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
+  "org.scalablytyped" %%% "react-intl" % "2.3-dt-20181128Z-5bebcf",
+  "org.scalablytyped" %%% "react-redux" % "6.0-dt-20181208Z-54ca8c",
   "org.scalablytyped" %%% "redux" % "4.0.1-7c9b0b",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-343133")

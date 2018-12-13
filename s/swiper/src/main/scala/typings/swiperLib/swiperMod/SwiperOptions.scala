@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait SwiperOptions extends js.Object {
   var a11y: js.UndefOr[A11yOptions | scala.Boolean] = js.undefined
   var allowSlideNext: js.UndefOr[scala.Boolean] = js.undefined
-  // Swiping / No swiping
   var allowSlidePrev: js.UndefOr[scala.Boolean] = js.undefined
   var allowTouchMove: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -21,6 +20,8 @@ trait SwiperOptions extends js.Object {
   var autoplay: js.UndefOr[AutoplayOptions | scala.Boolean] = js.undefined
   // Breakpoints
   var breakpoints: js.UndefOr[ScalablyTyped.runtime.NumberDictionary[SwiperOptions]] = js.undefined
+  var breakpointsInverse: js.UndefOr[scala.Boolean] = js.undefined
+  var centerInsufficientSlides: js.UndefOr[scala.Boolean] = js.undefined
   var centeredSlides: js.UndefOr[scala.Boolean] = js.undefined
   // Namespace
   var containerModifierClass: js.UndefOr[java.lang.String] = js.undefined
@@ -100,6 +101,7 @@ trait SwiperOptions extends js.Object {
   var nested: js.UndefOr[scala.Boolean] = js.undefined
   var noSwiping: js.UndefOr[scala.Boolean] = js.undefined
   var noSwipingClass: js.UndefOr[java.lang.String] = js.undefined
+  var noSwipingSelector: js.UndefOr[java.lang.String] = js.undefined
   var normalizeSlideIndex: js.UndefOr[scala.Boolean] = js.undefined
   var observeParents: js.UndefOr[scala.Boolean] = js.undefined
   // Observer
@@ -116,6 +118,8 @@ trait SwiperOptions extends js.Object {
   // Clicks
   var preventClicks: js.UndefOr[scala.Boolean] = js.undefined
   var preventClicksPropagation: js.UndefOr[scala.Boolean] = js.undefined
+  // Swiping / No swiping
+  var preventInteractionOnTransition: js.UndefOr[scala.Boolean] = js.undefined
   // Touch Resistance
   var resistance: js.UndefOr[scala.Boolean] = js.undefined
   var resistanceRatio: js.UndefOr[scala.Double] = js.undefined
@@ -165,7 +169,6 @@ trait SwiperOptions extends js.Object {
        * @default 300
        */
   var speed: js.UndefOr[scala.Double] = js.undefined
-  // noSwipingSelector?: string;
   var swipeHandler: js.UndefOr[SelectableElement] = js.undefined
   var threshold: js.UndefOr[scala.Double] = js.undefined
   var touchAngle: js.UndefOr[scala.Double] = js.undefined
@@ -175,6 +178,8 @@ trait SwiperOptions extends js.Object {
   var touchMoveStopPropagation: js.UndefOr[scala.Boolean] = js.undefined
   var touchRatio: js.UndefOr[scala.Double] = js.undefined
   var touchReleaseOnEdges: js.UndefOr[scala.Boolean] = js.undefined
+  var touchStartForcePreventDefault: js.UndefOr[scala.Boolean] = js.undefined
+  var touchStartPreventDefault: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * If enabled (by default) and navigation elements' parameters passed as a string (like ".pagination")
        * then Swiper will look for such elements through child elements first.

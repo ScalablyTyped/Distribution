@@ -259,19 +259,13 @@ trait Chainer[Subject] extends js.Object {
        * @see http://sinonjs.org/releases/v4.1.3/spies/#spycalledafteranotherspy
        * @see https://on.cypress.io/assertions
        */
-  def apply(
-    chainer: cypressLib.cypressLibStrings.beDOTcalledAfter,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
-  ): Chainable[Subject] = js.native
+  def apply(chainer: cypressLib.cypressLibStrings.beDOTcalledAfter, spy: sinonLib.sinonMod.SinonNs.SinonSpy): Chainable[Subject] = js.native
   /**
        * Assert spy was called before `anotherSpy`
        * @see http://sinonjs.org/releases/v4.1.3/spies/#spycalledbeforeanotherspy
        * @see https://on.cypress.io/assertions
        */
-  def apply(
-    chainer: cypressLib.cypressLibStrings.beDOTcalledBefore,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
-  ): Chainable[Subject] = js.native
+  def apply(chainer: cypressLib.cypressLibStrings.beDOTcalledBefore, spy: sinonLib.sinonMod.SinonNs.SinonSpy): Chainable[Subject] = js.native
   /**
        * Assert spy was called exactly once
        * @see http://sinonjs.org/releases/v4.1.3/spies/#spycalledonce
@@ -1090,7 +1084,7 @@ trait Chainer[Subject] extends js.Object {
        */
   def apply(
     chainer: cypressLib.cypressLibStrings.notDOTbeDOTcalledAfter,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
+    spy: sinonLib.sinonMod.SinonNs.SinonSpy
   ): Chainable[Subject] = js.native
   /**
        * Assert spy was not called before `anotherSpy`
@@ -1099,7 +1093,7 @@ trait Chainer[Subject] extends js.Object {
        */
   def apply(
     chainer: cypressLib.cypressLibStrings.notDOTbeDOTcalledBefore,
-    spy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]
+    spy: sinonLib.sinonMod.SinonNs.SinonSpy
   ): Chainable[Subject] = js.native
   /**
        * Assert spy was not called exactly once

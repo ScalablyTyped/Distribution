@@ -119,14 +119,14 @@ trait SinonSandbox extends js.Object {
   /**
            * Works exactly like sinon.spy
            */
-  def spy(): SinonSpy[js.Array[_], _] = js.native
+  def spy(): SinonSpy = js.native
   /**
            * Spies on the provided function
            */
   /**
            * Works exactly like sinon.spy
            */
-  def spy(func: js.Function): SinonSpy[js.Array[_], _] = js.native
+  def spy(func: js.Function): SinonSpy = js.native
   /**
            * Creates a spy for object.method and replaces the original method with the spy.
            * An exception is thrown if the property is not already a function.
@@ -137,14 +137,14 @@ trait SinonSandbox extends js.Object {
   /**
            * Works exactly like sinon.spy
            */
-  def spy[T, K /* <: java.lang.String */](obj: T, method: K): (SinonSpy[js.Array[_], _]) | (SinonSpy[_, _]) = js.native
+  def spy[T](obj: T, method: java.lang.String): SinonSpy = js.native
   /**
            * Creates an anonymous stub function
            */
   /**
            * Works exactly like sinon.stub.
            */
-  def stub(): SinonStub[js.Array[_], _] = js.native
+  def stub(): SinonStub = js.native
   /**
            * Stubs all the object’s methods.
            * Note that it’s usually better practice to stub individual methods, particularly on objects that you don’t understand or control all the methods for (e.g. library dependencies).
@@ -163,7 +163,7 @@ trait SinonSandbox extends js.Object {
   /**
            * Works exactly like sinon.stub.
            */
-  def stub[T, K /* <: java.lang.String */](obj: T, method: K): (SinonStub[js.Array[_], _]) | (SinonStub[_, _]) = js.native
+  def stub[T](obj: T, method: java.lang.String): SinonStub = js.native
   /**
            * Fakes XHR and binds a server object to the sandbox such that it too is restored when calling sandbox.restore().
            * Access requests through sandbox.requests and server through sandbox.server

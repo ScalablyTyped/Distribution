@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Image extends js.Object {
-  var id: js.UndefOr[java.lang.String] = js.native
+  var id: java.lang.String = js.native
   var modem: js.Any = js.native
   def get(): js.Promise[nodeLib.NodeJSNs.ReadableStream] = js.native
   def get(callback: dockerodeLib.Callback[nodeLib.NodeJSNs.ReadableStream]): scala.Unit = js.native

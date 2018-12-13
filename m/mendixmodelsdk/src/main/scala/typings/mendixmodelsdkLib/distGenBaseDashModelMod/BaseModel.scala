@@ -102,6 +102,7 @@ abstract class BaseModel ()
   def findNanoflowByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflow = js.native
   def findNanoflowParameterByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflowParameter = js.native
   def findNativeLayoutByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayout = js.native
+  def findNativePageByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativePage = js.native
   def findNavigationProfileByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile = js.native
   def findPageByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenPagesMod.pagesNs.IPage = js.native
   def findRegularExpressionByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenRegularexpressionsMod.regularexpressionsNs.IRegularExpression = js.native

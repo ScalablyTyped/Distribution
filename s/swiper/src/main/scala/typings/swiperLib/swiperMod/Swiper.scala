@@ -194,6 +194,36 @@ trait Swiper extends js.Object {
        */
   var zoom: js.UndefOr[swiperLib.distJsSwiperDotEsmMod.Zoom] = js.native
   /**
+       * Add new slides to the required index. slides could be HTMLElement or HTML string with new slide or array with such slides, for example:
+       *
+       * @example addSlide(1, '<div class="swiper-slide">Slide 10"</div>')
+       * @example addSlide(1, [
+       *  '<div class="swiper-slide">Slide 10"</div>',
+       *  '<div class="swiper-slide">Slide 11"</div>'
+       * ]);
+       */
+  def addSlide(index: scala.Double, slides: java.lang.String): scala.Unit = js.native
+  /**
+       * Add new slides to the required index. slides could be HTMLElement or HTML string with new slide or array with such slides, for example:
+       *
+       * @example addSlide(1, '<div class="swiper-slide">Slide 10"</div>')
+       * @example addSlide(1, [
+       *  '<div class="swiper-slide">Slide 10"</div>',
+       *  '<div class="swiper-slide">Slide 11"</div>'
+       * ]);
+       */
+  def addSlide(index: scala.Double, slides: js.Array[java.lang.String]): scala.Unit = js.native
+  /**
+       * Add new slides to the required index. slides could be HTMLElement or HTML string with new slide or array with such slides, for example:
+       *
+       * @example addSlide(1, '<div class="swiper-slide">Slide 10"</div>')
+       * @example addSlide(1, [
+       *  '<div class="swiper-slide">Slide 10"</div>',
+       *  '<div class="swiper-slide">Slide 11"</div>'
+       * ]);
+       */
+  def addSlide(index: scala.Double, slides: stdLib.HTMLElement): scala.Unit = js.native
+  /**
        * Add new slides to the end. slides could be
        * HTMLElement or HTML string with new slide or
        * array with such slides, for example:
@@ -316,6 +346,10 @@ trait Swiper extends js.Object {
        */
   def prependSlide(slides: stdLib.HTMLElement): scala.Unit = js.native
   /**
+       * Remove all slides
+       */
+  def removeAllSlides(): js.Any = js.native
+  /**
        * Remove selected slides. slideIndex could be a number with slide index to remove or array with indexes.
        *
        * @example removeSlide(0); // remove first slide
@@ -391,6 +425,33 @@ trait Swiper extends js.Object {
        */
   def slidePrev(speed: scala.Double, runCallbacks: scala.Boolean): scala.Unit = js.native
   /**
+       * Reset swiper position to currently active slide for the duration equal to 'speed'
+       * parameter.
+       *
+       * @param speed Transition duration (in ms).
+       * @param runCallbacks Set it to false (by default it is true) and transition will
+       *  not produce transition events.
+       */
+  def slideReset(): scala.Unit = js.native
+  /**
+       * Reset swiper position to currently active slide for the duration equal to 'speed'
+       * parameter.
+       *
+       * @param speed Transition duration (in ms).
+       * @param runCallbacks Set it to false (by default it is true) and transition will
+       *  not produce transition events.
+       */
+  def slideReset(speed: scala.Double): scala.Unit = js.native
+  /**
+       * Reset swiper position to currently active slide for the duration equal to 'speed'
+       * parameter.
+       *
+       * @param speed Transition duration (in ms).
+       * @param runCallbacks Set it to false (by default it is true) and transition will
+       *  not produce transition events.
+       */
+  def slideReset(speed: scala.Double, runCallbacks: scala.Boolean): scala.Unit = js.native
+  /**
        * Run transition to the slide with index number equal to 'index' parameter for the
        *  duration equal to 'speed' parameter.
        *
@@ -421,6 +482,60 @@ trait Swiper extends js.Object {
        */
   def slideTo(index: scala.Double, speed: scala.Double, runCallbacks: scala.Boolean): scala.Unit = js.native
   /**
+       * Reset swiper position to closest slide/snap point for the duration equal to 'speed' parameter.
+       *
+       * @param speed Transition duration (in ms).
+       * @param runCallbacks Set it to false (by default it is true) and transition will
+       *  not produce transition events.
+       */
+  def slideToClosest(): scala.Unit = js.native
+  /**
+       * Reset swiper position to closest slide/snap point for the duration equal to 'speed' parameter.
+       *
+       * @param speed Transition duration (in ms).
+       * @param runCallbacks Set it to false (by default it is true) and transition will
+       *  not produce transition events.
+       */
+  def slideToClosest(speed: scala.Double): scala.Unit = js.native
+  /**
+       * Reset swiper position to closest slide/snap point for the duration equal to 'speed' parameter.
+       *
+       * @param speed Transition duration (in ms).
+       * @param runCallbacks Set it to false (by default it is true) and transition will
+       *  not produce transition events.
+       */
+  def slideToClosest(speed: scala.Double, runCallbacks: scala.Boolean): scala.Unit = js.native
+  /**
+       * Does the same as .slideTo but for the case when used with enabled loop. So this
+       * method will slide to slides with realIndex matching to passed index
+       *
+       * @param index Index number of slide.
+       * @param speed Transition duration (in ms).
+       * @param runCallbacks Set it to false (by default it is true) and transition will
+       *  not produce transition events.
+       */
+  def slideToLoop(index: scala.Double): scala.Unit = js.native
+  /**
+       * Does the same as .slideTo but for the case when used with enabled loop. So this
+       * method will slide to slides with realIndex matching to passed index
+       *
+       * @param index Index number of slide.
+       * @param speed Transition duration (in ms).
+       * @param runCallbacks Set it to false (by default it is true) and transition will
+       *  not produce transition events.
+       */
+  def slideToLoop(index: scala.Double, speed: scala.Double): scala.Unit = js.native
+  /**
+       * Does the same as .slideTo but for the case when used with enabled loop. So this
+       * method will slide to slides with realIndex matching to passed index
+       *
+       * @param index Index number of slide.
+       * @param speed Transition duration (in ms).
+       * @param runCallbacks Set it to false (by default it is true) and transition will
+       *  not produce transition events.
+       */
+  def slideToLoop(index: scala.Double, speed: scala.Double, runCallbacks: scala.Boolean): scala.Unit = js.native
+  /**
        * Unset grab cursor
        */
   def unsetGrabCursor(): scala.Unit = js.native
@@ -432,6 +547,20 @@ trait Swiper extends js.Object {
        * methods which you can use separately:
        */
   def update(): scala.Unit = js.native
+  /**
+       * Force swiper to update its height (when autoHeight enabled) for the duration equal to
+       * 'speed' parameter
+       *
+       * @param speed Transition duration (in ms).
+       */
+  def updateAutoHeight(): scala.Unit = js.native
+  /**
+       * Force swiper to update its height (when autoHeight enabled) for the duration equal to
+       * 'speed' parameter
+       *
+       * @param speed Transition duration (in ms).
+       */
+  def updateAutoHeight(speed: scala.Double): scala.Unit = js.native
   /**
        * recalculate swiper progress
        */

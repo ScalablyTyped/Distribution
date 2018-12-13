@@ -26,7 +26,7 @@ object AbstractModel extends js.Object {
     workingCopyId: java.lang.String,
     connectionConfig: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ISdkConfig,
     instance: CT,
-    callback: js.Function1[/* model */ IT, scala.Unit],
+    callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[IT],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
 }

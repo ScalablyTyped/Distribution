@@ -7,11 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Transaction extends js.Object {
-  var database: Database = js.native
-  var source: java.lang.String = js.native
-  def bind(params: js.Any*): this.type = js.native
-  def run(params: js.Any*): betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.RunResult = js.native
-  def safeIntegers(): this.type = js.native
-  def safeIntegers(toggleState: scala.Boolean): this.type = js.native
+  def apply(params: js.Any*): js.Any = js.native
+  def default(params: js.Any*): js.Any = js.native
+  def deferred(params: js.Any*): js.Any = js.native
+  def exclusive(params: js.Any*): js.Any = js.native
+  def immediate(params: js.Any*): js.Any = js.native
 }
 

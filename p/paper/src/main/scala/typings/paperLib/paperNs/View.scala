@@ -49,7 +49,7 @@ class View () extends js.Object {
   /**
            * The current scale factor of the view, as described by its matrix.
            */
-  var scaling: scala.Double = js.native
+  var scaling: Point = js.native
   /**
            * The size of the visible area in project coordinates.
            * Read only.

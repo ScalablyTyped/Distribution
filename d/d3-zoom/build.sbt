@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-zoom"
-version := "1.7-dt-20181206Z-820cb1"
+version := "1.7-dt-20181213Z-f59893"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

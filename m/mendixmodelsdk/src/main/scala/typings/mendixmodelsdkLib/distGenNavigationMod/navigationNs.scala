@@ -34,6 +34,12 @@ object navigationNs extends js.Object {
   }
   
   /**
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  trait INativeNavigationProfile extends INavigationProfileBase
+  
+  /**
        * See: {@link https://docs.mendix.com/refguide7/navigation relevant section in reference guide}
        */
   @js.native
@@ -42,23 +48,40 @@ object navigationNs extends js.Object {
     /**
              * In version 7.2.0: introduced
              */
-    val profiles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[INavigationProfile] = js.native
+    val profiles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[INavigationProfileBase] = js.native
   }
   
   /**
        * In version 7.2.0: added public
        */
   @js.native
-  trait INavigationProfile
+  trait INavigationProfile extends INavigationProfileBase
+  
+  @js.native
+  trait INavigationProfileBase
     extends mendixmodelsdkLib.distSdkInternalElementsMod.IElement
        with mendixmodelsdkLib.distSdkInternalElementsMod.IByNameReferrable {
     val containerAsNavigationDocument: INavigationDocument = js.native
     @JSName("model")
-    val model_INavigationProfile: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
+    val model_INavigationProfileBase: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     /**
              * In version 7.2.0: introduced
              */
     val name: java.lang.String = js.native
+  }
+  
+  /**
+       * In version 7.22.0: introduced
+       */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenNavigationMod.navigationNs.INativeNavigationProfile because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  @js.native
+  class NativeNavigationProfile protected () extends NavigationProfileBase {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    /**
+             * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+             */
+    var homePage: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativePage | scala.Null = js.native
+    val homePageQualifiedName: java.lang.String | scala.Null = js.native
   }
   
   /**
@@ -104,7 +127,7 @@ object navigationNs extends js.Object {
     /**
              * In version 7.2.0: introduced
              */
-    val profiles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[NavigationProfile] = js.native
+    val profiles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[NavigationProfileBase] = js.native
     /**
              * In version 7.2.0: deleted
              */
@@ -116,11 +139,9 @@ object navigationNs extends js.Object {
        */
   /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
   @js.native
-  class NavigationProfile protected ()
-    extends mendixmodelsdkLib.distSdkInternalMod.Element {
+  class NavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var applicationTitle: java.lang.String = js.native
-    val containerAsNavigationDocument: NavigationDocument = js.native
     /**
              * In version 7.2.0: deleted
              */
@@ -135,12 +156,6 @@ object navigationNs extends js.Object {
              */
     var loginPageSettings: mendixmodelsdkLib.distGenPagesMod.pagesNs.PageSettings = js.native
     var menuItemCollection: mendixmodelsdkLib.distGenMenusMod.menusNs.MenuItemCollection = js.native
-    @JSName("model")
-    var model_NavigationProfile: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
-    /**
-             * In version 7.2.0: introduced
-             */
-    var name: java.lang.String = js.native
     /**
              * In version 7.2.0: deleted
              * In version 7.0.2: introduced
@@ -151,8 +166,49 @@ object navigationNs extends js.Object {
              * In version 6.10.4: introduced
              */
     var offlineEnabled6: scala.Boolean = js.native
-    val qualifiedName: java.lang.String | scala.Null = js.native
+    /**
+             * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+             *
+             * In version 7.22.0: introduced
+             */
+    val offlineEntityConfigs: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[OfflineEntityConfig] | scala.Null = js.native
     val roleBasedHomePages: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[RoleBasedHomePage] = js.native
+  }
+  
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfileBase because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  @js.native
+  abstract class NavigationProfileBase protected ()
+    extends mendixmodelsdkLib.distSdkInternalMod.Element {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    val containerAsNavigationDocument: NavigationDocument = js.native
+    @JSName("model")
+    var model_NavigationProfileBase: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
+    /**
+             * In version 7.2.0: introduced
+             */
+    var name: java.lang.String = js.native
+    val qualifiedName: java.lang.String | scala.Null = js.native
+  }
+  
+  /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  class OfflineEntityConfig protected ()
+    extends mendixmodelsdkLib.distSdkInternalMod.Element {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    /**
+             * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
+             */
+    var constraint: java.lang.String = js.native
+    val containerAsNavigationProfile: NavigationProfile = js.native
+    var entity: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEntity = js.native
+    val entityQualifiedName: java.lang.String = js.native
+    @JSName("model")
+    var model_OfflineEntityConfig: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
+    var shouldDownload: scala.Boolean = js.native
   }
   
   @js.native
@@ -202,6 +258,30 @@ object navigationNs extends js.Object {
   object HomePageBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+  }
+  
+  /**
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  object NativeNavigationProfile extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new NativeNavigationProfile instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile = js.native
+    /**
+             * Creates and returns a new NativeNavigationProfile instance in the SDK and on the server.
+             * The new NativeNavigationProfile will be automatically stored in the 'profiles' property
+             * of the parent NavigationDocument element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.22.0 and higher
+             */
+    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile = js.native
   }
   
   /**
@@ -321,6 +401,38 @@ object navigationNs extends js.Object {
              *  6.0.0 to 7.1.0
              */
     def createInNavigationDocumentUnderTabletProfile(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
+  }
+  
+  @js.native
+  object NavigationProfileBase extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+  }
+  
+  /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.22.0: introduced
+       */
+  @js.native
+  object OfflineEntityConfig extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
+    /**
+             * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
+             * The new OfflineEntityConfig will be automatically stored in the 'offlineEntityConfigs' property
+             * of the parent NavigationProfile element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.22.0 and higher
+             */
+    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
   }
   
   @js.native

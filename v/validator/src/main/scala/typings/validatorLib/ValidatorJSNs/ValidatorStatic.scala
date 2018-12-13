@@ -91,6 +91,8 @@ trait ValidatorStatic extends js.Object {
   def isEmail(str: java.lang.String, options: IsEmailOptions): scala.Boolean = js.native
   // check if the string has a length of zero.
   def isEmpty(str: java.lang.String): scala.Boolean = js.native
+  // check if the string has a length of zero.
+  def isEmpty(str: java.lang.String, options: IsEmptyOptions): scala.Boolean = js.native
   // check if the string is a fully qualified domain name (e.g. domain.com).
   def isFQDN(str: java.lang.String): scala.Boolean = js.native
   // check if the string is a fully qualified domain name (e.g. domain.com).

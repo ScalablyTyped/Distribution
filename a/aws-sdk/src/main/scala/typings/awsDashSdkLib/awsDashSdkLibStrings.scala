@@ -3718,6 +3718,9 @@ object awsDashSdkLibStrings {
   sealed trait ENCODE_SILENCE extends js.Object
   
   @js.native
+  sealed trait ENCRYPTED_PASSWORD extends js.Object
+  
+  @js.native
   sealed trait ENCRYPT_DECRYPT extends js.Object
   
   @js.native
@@ -3935,6 +3938,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait EncryptionStatus extends js.Object
+  
+  @js.native
+  sealed trait EniLimitReached extends js.Object
   
   @js.native
   sealed trait EnteringStandby extends js.Object
@@ -5626,6 +5632,9 @@ object awsDashSdkLibStrings {
   sealed trait InvokedBefore extends js.Object
   
   @js.native
+  sealed trait IpNotAvailable extends js.Object
+  
+  @js.native
   sealed trait IsMultipartUploaded extends js.Object
   
   @js.native
@@ -7222,6 +7231,9 @@ object awsDashSdkLibStrings {
   sealed trait ObjectLockRetainUntilDate extends js.Object
   
   @js.native
+  sealed trait Off extends js.Object
+  
+  @js.native
   sealed trait Ok extends js.Object
   
   @js.native
@@ -7250,6 +7262,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait OpenInstancePublicPorts extends js.Object
+  
+  @js.native
+  sealed trait OperationNotPermitted extends js.Object
   
   @js.native
   sealed trait Optional extends js.Object
@@ -7826,6 +7841,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PlatformUpdate extends js.Object
+  
+  @js.native
+  sealed trait PlatformVersion extends js.Object
   
   @js.native
   sealed trait Plus extends js.Object
@@ -9562,6 +9580,9 @@ object awsDashSdkLibStrings {
   sealed trait SecureString extends js.Object
   
   @js.native
+  sealed trait SecurityGroupNotFound extends js.Object
+  
+  @js.native
   sealed trait Select extends js.Object
   
   @js.native
@@ -9806,6 +9827,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SubnetIpLimitExceeded extends js.Object
+  
+  @js.native
+  sealed trait SubnetNotFound extends js.Object
   
   @js.native
   sealed trait SucceedStateEntered extends js.Object
@@ -10930,10 +10954,16 @@ object awsDashSdkLibStrings {
   sealed trait VersionCount extends js.Object
   
   @js.native
+  sealed trait VersionUpdate extends js.Object
+  
+  @js.native
   sealed trait VersionsPerPolicyQuota extends js.Object
   
   @js.native
   sealed trait VisibilityTimeout extends js.Object
+  
+  @js.native
+  sealed trait VpcIdNotFound extends js.Object
   
   @js.native
   sealed trait WAF extends js.Object
@@ -12083,6 +12113,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `eu-central-1` extends js.Object
+  
+  @js.native
+  sealed trait `eu-north-1` extends js.Object
   
   @js.native
   sealed trait `eu-west-1` extends js.Object
@@ -15544,6 +15577,7 @@ object awsDashSdkLibStrings {
   def ENABLING: ENABLING = "ENABLING".asInstanceOf[ENABLING]
   def ENCIPHER_ONLY: ENCIPHER_ONLY = "ENCIPHER_ONLY".asInstanceOf[ENCIPHER_ONLY]
   def ENCODE_SILENCE: ENCODE_SILENCE = "ENCODE_SILENCE".asInstanceOf[ENCODE_SILENCE]
+  def ENCRYPTED_PASSWORD: ENCRYPTED_PASSWORD = "ENCRYPTED_PASSWORD".asInstanceOf[ENCRYPTED_PASSWORD]
   def ENCRYPT_DECRYPT: ENCRYPT_DECRYPT = "ENCRYPT_DECRYPT".asInstanceOf[ENCRYPT_DECRYPT]
   def END: END = "END".asInstanceOf[END]
   def ENDED: ENDED = "ENDED".asInstanceOf[ENDED]
@@ -15617,6 +15651,7 @@ object awsDashSdkLibStrings {
   def Enabled: Enabled = "Enabled".asInstanceOf[Enabled]
   def Encrypt: Encrypt = "Encrypt".asInstanceOf[Encrypt]
   def EncryptionStatus: EncryptionStatus = "EncryptionStatus".asInstanceOf[EncryptionStatus]
+  def EniLimitReached: EniLimitReached = "EniLimitReached".asInstanceOf[EniLimitReached]
   def EnteringStandby: EnteringStandby = "EnteringStandby".asInstanceOf[EnteringStandby]
   def Enterprise: Enterprise = "Enterprise".asInstanceOf[Enterprise]
   def EnterpriseDirectory: EnterpriseDirectory = "EnterpriseDirectory".asInstanceOf[EnterpriseDirectory]
@@ -16180,6 +16215,7 @@ object awsDashSdkLibStrings {
   def Invoke: Invoke = "Invoke".asInstanceOf[Invoke]
   def InvokedAfter: InvokedAfter = "InvokedAfter".asInstanceOf[InvokedAfter]
   def InvokedBefore: InvokedBefore = "InvokedBefore".asInstanceOf[InvokedBefore]
+  def IpNotAvailable: IpNotAvailable = "IpNotAvailable".asInstanceOf[IpNotAvailable]
   def IsMultipartUploaded: IsMultipartUploaded = "IsMultipartUploaded".asInstanceOf[IsMultipartUploaded]
   def IteratorAgeMilliseconds: IteratorAgeMilliseconds = "IteratorAgeMilliseconds".asInstanceOf[IteratorAgeMilliseconds]
   def JAR: JAR = "JAR".asInstanceOf[JAR]
@@ -16712,6 +16748,7 @@ object awsDashSdkLibStrings {
   def ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = "ObjectLockLegalHoldStatus".asInstanceOf[ObjectLockLegalHoldStatus]
   def ObjectLockMode: ObjectLockMode = "ObjectLockMode".asInstanceOf[ObjectLockMode]
   def ObjectLockRetainUntilDate: ObjectLockRetainUntilDate = "ObjectLockRetainUntilDate".asInstanceOf[ObjectLockRetainUntilDate]
+  def Off: Off = "Off".asInstanceOf[Off]
   def Ok: Ok = "Ok".asInstanceOf[Ok]
   def `One-Way: Incoming`: `One-Way: Incoming` = "One-Way: Incoming".asInstanceOf[`One-Way: Incoming`]
   def `One-Way: Outgoing`: `One-Way: Outgoing` = "One-Way: Outgoing".asInstanceOf[`One-Way: Outgoing`]
@@ -16722,6 +16759,7 @@ object awsDashSdkLibStrings {
   def One_Hour: One_Hour = "One_Hour".asInstanceOf[One_Hour]
   def Online: Online = "Online".asInstanceOf[Online]
   def OpenInstancePublicPorts: OpenInstancePublicPorts = "OpenInstancePublicPorts".asInstanceOf[OpenInstancePublicPorts]
+  def OperationNotPermitted: OperationNotPermitted = "OperationNotPermitted".asInstanceOf[OperationNotPermitted]
   def Optional: Optional = "Optional".asInstanceOf[Optional]
   def Or: Or = "Or".asInstanceOf[Or]
   def OrganizationUnit: OrganizationUnit = "OrganizationUnit".asInstanceOf[OrganizationUnit]
@@ -16914,6 +16952,7 @@ object awsDashSdkLibStrings {
   def PlainText: PlainText = "PlainText".asInstanceOf[PlainText]
   def PlatformTypes: PlatformTypes = "PlatformTypes".asInstanceOf[PlatformTypes]
   def PlatformUpdate: PlatformUpdate = "PlatformUpdate".asInstanceOf[PlatformUpdate]
+  def PlatformVersion: PlatformVersion = "PlatformVersion".asInstanceOf[PlatformVersion]
   def Plus: Plus = "Plus".asInstanceOf[Plus]
   def Policies: Policies = "Policies".asInstanceOf[Policies]
   def PoliciesQuota: PoliciesQuota = "PoliciesQuota".asInstanceOf[PoliciesQuota]
@@ -17492,6 +17531,7 @@ object awsDashSdkLibStrings {
   def SearchQuery: SearchQuery = "SearchQuery".asInstanceOf[SearchQuery]
   def Seconds: Seconds = "Seconds".asInstanceOf[Seconds]
   def SecureString: SecureString = "SecureString".asInstanceOf[SecureString]
+  def SecurityGroupNotFound: SecurityGroupNotFound = "SecurityGroupNotFound".asInstanceOf[SecurityGroupNotFound]
   def Select: Select = "Select".asInstanceOf[Select]
   def SenderId: SenderId = "SenderId".asInstanceOf[SenderId]
   def Sent: Sent = "Sent".asInstanceOf[Sent]
@@ -17574,6 +17614,7 @@ object awsDashSdkLibStrings {
   def Submitted: Submitted = "Submitted".asInstanceOf[Submitted]
   def Subnet: Subnet = "Subnet".asInstanceOf[Subnet]
   def SubnetIpLimitExceeded: SubnetIpLimitExceeded = "SubnetIpLimitExceeded".asInstanceOf[SubnetIpLimitExceeded]
+  def SubnetNotFound: SubnetNotFound = "SubnetNotFound".asInstanceOf[SubnetNotFound]
   def SucceedStateEntered: SucceedStateEntered = "SucceedStateEntered".asInstanceOf[SucceedStateEntered]
   def SucceedStateExited: SucceedStateExited = "SucceedStateExited".asInstanceOf[SucceedStateExited]
   def Succeeded: Succeeded = "Succeeded".asInstanceOf[Succeeded]
@@ -17948,8 +17989,10 @@ object awsDashSdkLibStrings {
   def Verifying: Verifying = "Verifying".asInstanceOf[Verifying]
   def Version: Version = "Version".asInstanceOf[Version]
   def VersionCount: VersionCount = "VersionCount".asInstanceOf[VersionCount]
+  def VersionUpdate: VersionUpdate = "VersionUpdate".asInstanceOf[VersionUpdate]
   def VersionsPerPolicyQuota: VersionsPerPolicyQuota = "VersionsPerPolicyQuota".asInstanceOf[VersionsPerPolicyQuota]
   def VisibilityTimeout: VisibilityTimeout = "VisibilityTimeout".asInstanceOf[VisibilityTimeout]
+  def VpcIdNotFound: VpcIdNotFound = "VpcIdNotFound".asInstanceOf[VpcIdNotFound]
   def WAF: WAF = "WAF".asInstanceOf[WAF]
   def WAITING: WAITING = "WAITING".asInstanceOf[WAITING]
   def WAITING_FOR_DATA_COLLECTION: WAITING_FOR_DATA_COLLECTION = "WAITING_FOR_DATA_COLLECTION".asInstanceOf[WAITING_FOR_DATA_COLLECTION]
@@ -18333,6 +18376,7 @@ object awsDashSdkLibStrings {
   def `es-US`: `es-US` = "es-US".asInstanceOf[`es-US`]
   def eu: eu = "eu".asInstanceOf[eu]
   def `eu-central-1`: `eu-central-1` = "eu-central-1".asInstanceOf[`eu-central-1`]
+  def `eu-north-1`: `eu-north-1` = "eu-north-1".asInstanceOf[`eu-north-1`]
   def `eu-west-1`: `eu-west-1` = "eu-west-1".asInstanceOf[`eu-west-1`]
   def `eu-west-2`: `eu-west-2` = "eu-west-2".asInstanceOf[`eu-west-2`]
   def `eu-west-3`: `eu-west-3` = "eu-west-3".asInstanceOf[`eu-west-3`]

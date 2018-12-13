@@ -12,7 +12,7 @@ package object unitOfTimeNs {
   type DurationAs = Base
   type DurationConstructor = Base | _quarter
   type MomentConstructor = Base | _date
-  type StartOf = Base | _quarter | _isoWeek | _date
+  type StartOf = Base | _quarter | _isoWeek | _date | scala.Unit
   type _date = momentLib.momentLibStrings.date | momentLib.momentLibStrings.dates | momentLib.momentLibStrings.D
   type _isoWeek = momentLib.momentLibStrings.isoWeek | momentLib.momentLibStrings.isoWeeks | momentLib.momentLibStrings.W
   type _quarter = momentLib.momentLibStrings.quarter | momentLib.momentLibStrings.quarters | momentLib.momentLibStrings.Q

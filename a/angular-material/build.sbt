@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-material"
-version := "1.1-dt-20181120Z-0fc68f"
+version := "1.1-dt-20181213Z-e33628"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

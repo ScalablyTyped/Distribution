@@ -68,8 +68,10 @@ object securityNs extends js.Object {
     val model_IModuleSecurity: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     val moduleRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IModuleRole] = js.native
     def asLoaded(): ModuleSecurity = js.native
+    def load(): js.Promise[ModuleSecurity] = js.native
     def load(callback: js.Function1[/* element */ ModuleSecurity, scala.Unit]): scala.Unit = js.native
     def load(callback: js.Function1[/* element */ ModuleSecurity, scala.Unit], forceRefresh: scala.Boolean): scala.Unit = js.native
+    def load(forceRefresh: scala.Boolean): js.Promise[ModuleSecurity] = js.native
   }
   
   /**

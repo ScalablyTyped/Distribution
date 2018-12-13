@@ -108,6 +108,9 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def CommandBar(
     props: officeDashUiDashFabricDashReactLib.libComponentsCommandBarCommandBarDotTypesMod.ICommandBarProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def CompactPeoplePicker(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerMod.IPeoplePickerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def ContextualMenu(
     props: officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
@@ -152,6 +155,9 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Label(props: officeDashUiDashFabricDashReactLib.libComponentsLabelLabelDotTypesMod.ILabelProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Layer(props: officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotTypesMod.ILayerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def ListPeoplePicker(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerMod.IPeoplePickerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def MarqueeSelection(
     props: officeDashUiDashFabricDashReactLib.libComponentsMarqueeSelectionMarqueeSelectionDotTypesMod.IMarqueeSelectionProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
@@ -160,6 +166,9 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Modal(props: officeDashUiDashFabricDashReactLib.libComponentsModalModalDotTypesMod.IModalProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Nav(props: officeDashUiDashFabricDashReactLib.libComponentsNavNavDotTypesMod.INavProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def NormalPeoplePicker(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerMod.IPeoplePickerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def OverflowSet(
     props: officeDashUiDashFabricDashReactLib.libComponentsOverflowSetOverflowSetDotTypesMod.IOverflowSetProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
@@ -203,6 +212,9 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     props: officeDashUiDashFabricDashReactLib.libComponentsSwatchColorPickerSwatchColorPickerDotTypesMod.ISwatchColorPickerProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def TagItem(props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagItemMod.ITagItemProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagPicker(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerMod.ITagPickerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def TeachingBubble(
     props: officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
@@ -727,8 +739,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def createFontStyles(localeCode: java.lang.String): atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles = js.native
   def createGenericItem(
     name: java.lang.String,
-    currentValidationState: officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState,
-    allowPhoneInitials: scala.Boolean
+    currentValidationState: officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState
   ): officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerMod.IGenericItem with officeDashUiDashFabricDashReactLib.Anon_Key_902091276 = js.native
   def createItem(name: java.lang.String, isValid: scala.Boolean): officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[
     officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps

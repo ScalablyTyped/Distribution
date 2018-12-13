@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object electronPackagerNs {
-  type arch = electronDashPackagerLib.electronDashPackagerLibStrings.ia32 | electronDashPackagerLib.electronDashPackagerLibStrings.x64 | electronDashPackagerLib.electronDashPackagerLibStrings.armv7l | electronDashPackagerLib.electronDashPackagerLibStrings.arm64 | electronDashPackagerLib.electronDashPackagerLibStrings.all
+  type arch = electronDashPackagerLib.electronDashPackagerLibStrings.ia32 | electronDashPackagerLib.electronDashPackagerLibStrings.x64 | electronDashPackagerLib.electronDashPackagerLibStrings.armv7l | electronDashPackagerLib.electronDashPackagerLibStrings.arm64 | electronDashPackagerLib.electronDashPackagerLibStrings.mips64el | electronDashPackagerLib.electronDashPackagerLibStrings.all
   /**
        * Callback which is called when electron-packager is done.
        *
@@ -27,6 +27,5 @@ package object electronPackagerNs {
     /* callbackFn */ js.Function0[scala.Unit], 
     scala.Unit
   ]
-  type packageManager = electronDashPackagerLib.electronDashPackagerLibStrings.npm | electronDashPackagerLib.electronDashPackagerLibStrings.cnpm | electronDashPackagerLib.electronDashPackagerLibStrings.yarn | electronDashPackagerLib.electronDashPackagerLibNumbers.`false`
   type platform = electronDashPackagerLib.electronDashPackagerLibStrings.linux | electronDashPackagerLib.electronDashPackagerLibStrings.win32 | electronDashPackagerLib.electronDashPackagerLibStrings.darwin | electronDashPackagerLib.electronDashPackagerLibStrings.mas | electronDashPackagerLib.electronDashPackagerLibStrings.all
 }

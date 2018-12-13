@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait GetParameters extends js.Object {
   // Query parameters
-  var requestMask: js.UndefOr[gapiDotPeopleLib.gapiNs.clientNs.peopleNs.RequestMask] = js.undefined
+  var personFields: java.lang.String
   var resourceName: java.lang.String
 }
 

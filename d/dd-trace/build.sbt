@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dd-trace"
-version := "0.6-dt-20181104Z-5b24f2"
+version := "0.7-dt-20181213Z-1fa39d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

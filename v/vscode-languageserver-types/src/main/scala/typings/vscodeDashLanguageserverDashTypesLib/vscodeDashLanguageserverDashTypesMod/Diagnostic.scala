@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 
 trait Diagnostic extends js.Object {
   /**
-       * The diagnostic's code, which might appear in the user interface.
+       * The diagnostic's code, which usually appear in the user interface.
        */
   var code: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
-       * The diagnostic's message.
+       * The diagnostic's message. It usually appears in the user interface
        */
   var message: java.lang.String
   /**
@@ -31,7 +31,8 @@ trait Diagnostic extends js.Object {
   var severity: js.UndefOr[DiagnosticSeverity] = js.undefined
   /**
        * A human-readable string describing the source of this
-       * diagnostic, e.g. 'typescript' or 'super lint'.
+       * diagnostic, e.g. 'typescript' or 'super lint'. It usually
+       * appears in the user interface.
        */
   var source: js.UndefOr[java.lang.String] = js.undefined
 }

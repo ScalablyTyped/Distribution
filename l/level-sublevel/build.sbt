@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "level-sublevel"
-version := "0.0-unknown-dt-20180918Z-867d40"
+version := "0.0-unknown-dt-20180918Z-7b072c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "abstract-leveldown" % "5.0-dt-20180915Z-00a909",
-  "org.scalablytyped" %%% "levelup" % "3.1-dt-20180918Z-53905c",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
+  "org.scalablytyped" %%% "levelup" % "3.1-dt-20180918Z-d7e39a",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

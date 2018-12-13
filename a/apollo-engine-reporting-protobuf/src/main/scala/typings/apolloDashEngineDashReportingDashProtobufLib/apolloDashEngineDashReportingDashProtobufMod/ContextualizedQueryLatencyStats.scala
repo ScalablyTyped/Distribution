@@ -7,17 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("apollo-engine-reporting-protobuf", "ContextualizedQueryLatencyStats")
 @js.native
-class ContextualizedQueryLatencyStats () extends IContextualizedQueryLatencyStats {
+class ContextualizedQueryLatencyStats ()
+  extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats {
   /**
        * Constructs a new ContextualizedQueryLatencyStats.
        * @param [properties] Properties to set
        */
-  def this(properties: IContextualizedQueryLatencyStats) = this()
-  /**
-       * Converts this ContextualizedQueryLatencyStats to JSON.
-       * @returns JSON object
-       */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IContextualizedQueryLatencyStats) = this()
 }
 
 @JSImport("apollo-engine-reporting-protobuf", "ContextualizedQueryLatencyStats")
@@ -28,15 +24,15 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @param [properties] Properties to set
        * @returns ContextualizedQueryLatencyStats instance
        */
-  def create(): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats = js.native
+  def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Creates a new ContextualizedQueryLatencyStats instance using the specified properties.
        * @param [properties] Properties to set
        * @returns ContextualizedQueryLatencyStats instance
        */
   def create(
-    properties: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IContextualizedQueryLatencyStats
-  ): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats = js.native
+    properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IContextualizedQueryLatencyStats
+  ): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Decodes a ContextualizedQueryLatencyStats message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -45,7 +41,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats = js.native
+  def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Decodes a ContextualizedQueryLatencyStats message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -54,7 +50,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats = js.native
+  def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Decodes a ContextualizedQueryLatencyStats message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -63,7 +59,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats = js.native
+  def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Decodes a ContextualizedQueryLatencyStats message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -72,7 +68,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats = js.native
+  def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Decodes a ContextualizedQueryLatencyStats message from the specified reader or buffer, length delimited.
        * @param reader Reader or buffer to decode from
@@ -80,7 +76,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats = js.native
+  def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Decodes a ContextualizedQueryLatencyStats message from the specified reader or buffer, length delimited.
        * @param reader Reader or buffer to decode from
@@ -88,7 +84,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats = js.native
+  def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Encodes the specified ContextualizedQueryLatencyStats message. Does not implicitly {@link ContextualizedQueryLatencyStats.verify|verify} messages.
        * @param message ContextualizedQueryLatencyStats message or plain object to encode
@@ -96,7 +92,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @returns Writer
        */
   def encode(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IContextualizedQueryLatencyStats
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IContextualizedQueryLatencyStats
   ): protobufjsLib.protobufjsMod.Writer = js.native
   /**
        * Encodes the specified ContextualizedQueryLatencyStats message. Does not implicitly {@link ContextualizedQueryLatencyStats.verify|verify} messages.
@@ -105,7 +101,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @returns Writer
        */
   def encode(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IContextualizedQueryLatencyStats,
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IContextualizedQueryLatencyStats,
     writer: protobufjsLib.protobufjsMod.Writer
   ): protobufjsLib.protobufjsMod.Writer = js.native
   /**
@@ -115,7 +111,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @returns Writer
        */
   def encodeDelimited(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IContextualizedQueryLatencyStats
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IContextualizedQueryLatencyStats
   ): protobufjsLib.protobufjsMod.Writer = js.native
   /**
        * Encodes the specified ContextualizedQueryLatencyStats message, length delimited. Does not implicitly {@link ContextualizedQueryLatencyStats.verify|verify} messages.
@@ -124,7 +120,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @returns Writer
        */
   def encodeDelimited(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IContextualizedQueryLatencyStats,
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IContextualizedQueryLatencyStats,
     writer: protobufjsLib.protobufjsMod.Writer
   ): protobufjsLib.protobufjsMod.Writer = js.native
   /**
@@ -132,7 +128,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @param object Plain object
        * @returns ContextualizedQueryLatencyStats
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats = js.native
+  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Creates a plain object from a ContextualizedQueryLatencyStats message. Also converts values to other types if specified.
        * @param message ContextualizedQueryLatencyStats
@@ -140,7 +136,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @returns Plain object
        */
   def toObject(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats
   ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a ContextualizedQueryLatencyStats message. Also converts values to other types if specified.
@@ -149,7 +145,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @returns Plain object
        */
   def toObject(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.ContextualizedQueryLatencyStats,
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats,
     options: protobufjsLib.protobufjsMod.IConversionOptions
   ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   /**

@@ -132,6 +132,22 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     ]
   ): scala.Unit = js.native
   /**
+       * Installs a handler for the `Declaration` request.
+       *
+       * @param handler The corresponding handler.
+       */
+  def onDeclaration(
+    handler: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.RequestHandler[
+      vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentPositionParams, 
+      js.UndefOr[
+        vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Declaration | (js.Array[
+          vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DeclarationLink
+        ]) | scala.Null
+      ], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
        * Installs a handler for the `Definition` request.
        *
        * @param handler The corresponding handler.
@@ -140,7 +156,9 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     handler: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.RequestHandler[
       vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentPositionParams, 
       js.UndefOr[
-        vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition | scala.Null
+        vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition | (js.Array[
+          vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DefinitionLink
+        ]) | scala.Null
       ], 
       scala.Unit
     ]

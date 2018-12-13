@@ -28,7 +28,6 @@ trait PropTypes extends js.Object {
   var onSelect: js.UndefOr[
     js.Function2[/* address */ java.lang.String, /* placeID */ java.lang.String, scala.Unit]
   ] = js.undefined
-  var options: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_Location] = js.undefined
   var renderFooter: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var renderSuggestion: js.UndefOr[
     js.Function2[
@@ -37,6 +36,7 @@ trait PropTypes extends js.Object {
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
+  var searchOptions: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_Location] = js.undefined
   var shouldFetchSuggestions: js.UndefOr[js.Function1[/* value */ java.lang.String, scala.Boolean]] = js.undefined
   var styles: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_Root] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined

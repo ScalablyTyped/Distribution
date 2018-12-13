@@ -5,5 +5,5 @@
 //                 Jed Mao <https://github.com/jedmao>
 //                 Eyal Lapid <https://github.com/elpdpt>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
+// TypeScript Version: 2.8
 ```

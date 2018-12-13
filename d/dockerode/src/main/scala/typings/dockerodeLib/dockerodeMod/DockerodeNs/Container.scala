@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Container extends js.Object {
-  var id: js.UndefOr[java.lang.String] = js.native
+  var id: java.lang.String = js.native
   var modem: js.Any = js.native
-  def attach(options: js.Object): js.Promise[nodeLib.NodeJSNs.ReadableStream] = js.native
-  def attach(options: js.Object, callback: dockerodeLib.Callback[nodeLib.NodeJSNs.ReadableStream]): scala.Unit = js.native
+  def attach(options: js.Object): js.Promise[nodeLib.NodeJSNs.ReadWriteStream] = js.native
+  def attach(options: js.Object, callback: dockerodeLib.Callback[nodeLib.NodeJSNs.ReadWriteStream]): scala.Unit = js.native
   def changes(): js.Promise[_] = js.native
   def changes(callback: dockerodeLib.Callback[_]): scala.Unit = js.native
   def commit(): js.Promise[_] = js.native
@@ -88,10 +88,10 @@ trait Container extends js.Object {
   def start(callback: dockerodeLib.Callback[_]): scala.Unit = js.native
   def start(options: js.Object): js.Promise[_] = js.native
   def start(options: js.Object, callback: dockerodeLib.Callback[_]): scala.Unit = js.native
-  def stats(): js.Promise[_] = js.native
-  def stats(callback: dockerodeLib.Callback[_]): scala.Unit = js.native
-  def stats(options: js.Object): js.Promise[_] = js.native
-  def stats(options: js.Object, callback: dockerodeLib.Callback[_]): scala.Unit = js.native
+  def stats(): js.Promise[ContainerStats] = js.native
+  def stats(callback: dockerodeLib.Callback[ContainerStats]): scala.Unit = js.native
+  def stats(options: js.Object): js.Promise[ContainerStats] = js.native
+  def stats(options: js.Object, callback: dockerodeLib.Callback[ContainerStats]): scala.Unit = js.native
   def stop(): js.Promise[_] = js.native
   def stop(callback: dockerodeLib.Callback[_]): scala.Unit = js.native
   def stop(options: js.Object): js.Promise[_] = js.native

@@ -16,15 +16,15 @@ trait WorkspaceClientCapabilities extends js.Object {
   /**
        * Capabilities specific to the `workspace/didChangeConfiguration` notification.
        */
-  var didChangeConfiguration: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var didChangeConfiguration: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to the `workspace/didChangeWatchedFiles` notification.
        */
-  var didChangeWatchedFiles: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var didChangeWatchedFiles: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to the `workspace/executeCommand` request.
        */
-  var executeCommand: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration] = js.undefined
+  var executeCommand: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationBoolean] = js.undefined
   /**
        * Capabilities specific to the `workspace/symbol` request.
        */

@@ -19,6 +19,8 @@ trait DOMAttributes[T] extends js.Object {
   // Animation Events
   var onAnimationStart: js.UndefOr[AnimationEventHandler[T]] = js.undefined
   var onAnimationStartCapture: js.UndefOr[AnimationEventHandler[T]] = js.undefined
+  var onBeforeInput: js.UndefOr[FormEventHandler[T]] = js.undefined
+  var onBeforeInputCapture: js.UndefOr[FormEventHandler[T]] = js.undefined
   var onBlur: js.UndefOr[FocusEventHandler[T]] = js.undefined
   var onBlurCapture: js.UndefOr[FocusEventHandler[T]] = js.undefined
   var onCanPlay: js.UndefOr[ReactEventHandler[T]] = js.undefined

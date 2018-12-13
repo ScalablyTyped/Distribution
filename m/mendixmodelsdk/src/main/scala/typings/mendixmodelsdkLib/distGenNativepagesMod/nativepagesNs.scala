@@ -39,6 +39,10 @@ object nativepagesNs extends js.Object {
   class NativeLayout protected ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.FormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
+    /**
+             * In version 7.22.0: introduced
+             */
+    var headerWidget: mendixmodelsdkLib.distGenPagesMod.pagesNs.Widget | scala.Null = js.native
     val widgets: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[mendixmodelsdkLib.distGenPagesMod.pagesNs.Widget] = js.native
   }
   

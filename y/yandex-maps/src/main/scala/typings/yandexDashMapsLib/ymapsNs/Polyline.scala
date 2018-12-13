@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ymaps.Polyline")
 @js.native
 class Polyline protected () extends GeoObject {
+  def this(geometry: js.Array[js.Array[scala.Double]]) = this()
+  def this(geometry: js.Object) = this()
+  def this(geometry: ILineStringGeometry) = this()
   def this(geometry: js.Array[js.Array[scala.Double]], properties: js.Object) = this()
   def this(geometry: js.Array[js.Array[scala.Double]], properties: IDataManager) = this()
   def this(geometry: js.Object, properties: js.Object) = this()

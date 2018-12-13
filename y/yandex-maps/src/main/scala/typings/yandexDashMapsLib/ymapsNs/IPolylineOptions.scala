@@ -6,8 +6,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait IPolylineOptions
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+trait IPolylineOptions extends js.Object {
   var cursor: js.UndefOr[java.lang.String] = js.undefined
+  var draggable: js.UndefOr[scala.Boolean] = js.undefined
+  var hasBalloon: js.UndefOr[scala.Boolean] = js.undefined
+  var hasHint: js.UndefOr[scala.Boolean] = js.undefined
+  var interactiveZIndex: js.UndefOr[scala.Boolean] = js.undefined
+  var interactivityModel: js.UndefOr[java.lang.String] = js.undefined
+  var lineStringOverlay: js.UndefOr[js.Function0[js.Object | java.lang.String]] = js.undefined
+  var opacity: js.UndefOr[scala.Double] = js.undefined
+  var openBalloonOnClick: js.UndefOr[scala.Boolean] = js.undefined
+  var openEmptyBalloon: js.UndefOr[scala.Boolean] = js.undefined
+  var openEmptyHint: js.UndefOr[scala.Boolean] = js.undefined
+  var openHintOnHover: js.UndefOr[scala.Boolean] = js.undefined
+  var pane: js.UndefOr[java.lang.String] = js.undefined
+  var strokeColor: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var strokeOpacity: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
+  var strokeStyle: js.UndefOr[java.lang.String | js.Array[java.lang.String] | js.Object | js.Array[js.Object]] = js.undefined
+  var strokeWidth: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
+  var syncOverlayInit: js.UndefOr[scala.Boolean] = js.undefined
+  var useMapMarginInDragging: js.UndefOr[scala.Boolean] = js.undefined
+  var visible: js.UndefOr[scala.Boolean] = js.undefined
+  var zIndex: js.UndefOr[scala.Double] = js.undefined
+  var zIndexActive: js.UndefOr[scala.Double] = js.undefined
+  var zIndexDrag: js.UndefOr[scala.Double] = js.undefined
+  var zIndexHover: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation._
 object TypeDefinitionRequestNs extends js.Object {
   val `type`: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.RequestType[
     vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentPositionParams, 
-    vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition, 
+    vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Location | (js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Location
+    ]) | (js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.LocationLink
+    ]) | scala.Null, 
     scala.Unit, 
     vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentRegistrationOptions
   ] = js.native

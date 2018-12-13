@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SinonSpyCallApi[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Object {
+trait SinonSpyCallApi extends js.Object {
   // Properties
   /**
            * Array of received arguments.
            */
-  var args: TArgs = js.native
+  var args: js.Array[_] = js.native
   /**
            * Like yield, but with an explicit argument number specifying which callback to call.
            * Useful if a function is called with more than one callback, and simply calling the first callback is not desired.
@@ -35,35 +35,25 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Objec
            * Returns true if spy was called at exactly once with the provided arguments.
            * @param args
            */
-  def calledOnceWith(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
-  def calledOnceWithExactly(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def calledOnceWith(args: js.Any*): scala.Boolean = js.native
+  def calledOnceWithExactly(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if spy was called at least once with the provided arguments.
            * Can be used for partial matching, Sinon only checks the provided arguments against actual arguments,
            * so a call that received the provided arguments (in the same spots) and possibly others as well will return true.
            * @param args
            */
-  def calledWith(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def calledWith(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if spy was called at least once with the provided arguments and no others.
            */
-  def calledWithExactly(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def calledWithExactly(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if spy was called with matching arguments (and possibly others).
            * This behaves the same as spy.calledWith(sinon.match(arg1), sinon.match(arg2), ...).
            * @param args
            */
-  def calledWithMatch(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def calledWithMatch(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if spy/stub was called the new operator.
            * Beware that this is inferred based on the value of the this object and the spy function’s prototype,
@@ -74,23 +64,19 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Objec
            * Returns true if call did not receive provided arguments.
            * @param args
            */
-  def notCalledWith(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def notCalledWith(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if call did not receive matching arguments.
            * This behaves the same as spyCall.notCalledWith(sinon.match(arg1), sinon.match(arg2), ...).
            * @param args
            */
-  def notCalledWithMatch(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
-  ): scala.Boolean = js.native
+  def notCalledWithMatch(args: js.Any*): scala.Boolean = js.native
   /**
            * Returns true if spy returned the provided value at least once.
            * Uses deep comparison for objects and arrays. Use spy.returned(sinon.match.same(obj)) for strict comparison (see matchers).
            * @param value
            */
-  def returned(value: TReturnValue): scala.Boolean = js.native
+  def returned(value: js.Any): scala.Boolean = js.native
   /**
            * Returns true if spy threw an exception at least once.
            */

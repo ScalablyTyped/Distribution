@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-coverage"
-version := "1.1-dt-20181203Z-1f5975"
+version := "1.1-dt-20181203Z-63c096"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,9 +10,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "circular-json" % "0.4-dt-20180910Z-142721",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-c10888",
   "org.scalablytyped" %%% "istanbul" % "v0.4.0-dt-20180910Z-931d8f",
-  "org.scalablytyped" %%% "karma" % "3.0-dt-20181203Z-3865a0",
+  "org.scalablytyped" %%% "karma" % "3.0-dt-20181203Z-26e834",
   "org.scalablytyped" %%% "log4js" % "3.0.6-ab1e70",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

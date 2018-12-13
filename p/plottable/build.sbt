@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "plottable"
-version := "3.8.3-dfde03"
+version := "3.8.3-896b30"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "d3" % "5.0-dt-20181018Z-3312b2",
+  "org.scalablytyped" %%% "d3" % "5.0-dt-20181018Z-28e486",
   "org.scalablytyped" %%% "d3-array" % "1.2-dt-20181018Z-7c4d6e",
   "org.scalablytyped" %%% "d3-axis" % "1.0-dt-20180927Z-66e7e4",
   "org.scalablytyped" %%% "d3-brush" % "1.0-dt-20181206Z-fccb78",
@@ -31,13 +31,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-scale" % "2.0-dt-20180927Z-9e5424",
   "org.scalablytyped" %%% "d3-scale-chromatic" % "1.3-dt-20180920Z-2e874a",
   "org.scalablytyped" %%% "d3-selection" % "1.3-dt-20181206Z-560b20",
-  "org.scalablytyped" %%% "d3-shape" % "1.2-dt-20181116Z-c64ebc",
+  "org.scalablytyped" %%% "d3-shape" % "1.2-dt-20181213Z-c64ebc",
   "org.scalablytyped" %%% "d3-time" % "1.0-dt-20180918Z-6f1ea1",
   "org.scalablytyped" %%% "d3-time-format" % "2.1-dt-20180910Z-6fa62a",
   "org.scalablytyped" %%% "d3-timer" % "1.0-dt-20180918Z-801ca7",
   "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20181116Z-c9d739",
   "org.scalablytyped" %%% "d3-voronoi" % "1.1-dt-20180910Z-d9b5ba",
-  "org.scalablytyped" %%% "d3-zoom" % "1.7-dt-20181206Z-820cb1",
+  "org.scalablytyped" %%% "d3-zoom" % "1.7-dt-20181213Z-f59893",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-04a914",
   "org.scalablytyped" %%% "is-plain-object" % "2.0.4-4e2273",
   "org.scalablytyped" %%% "isobject" % "3.0.1-391574",

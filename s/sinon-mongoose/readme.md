@@ -3,5 +3,5 @@
 // Project: https://github.com/underscopeio/sinon-mongoose
 // Definitions by: stevehipwell <https://github.com/stevehipwell>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
+// TypeScript Version: 2.8
 ```

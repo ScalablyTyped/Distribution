@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "react-native-goby"
-version := "0.0.5-4cdf3c"
+version := "0.0.5-d49400"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-eb50b6",
-  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180910Z-d4d2df",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-b7b8a8",
+  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180910Z-dcb539",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-45414c",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-df5d12",
-  "org.scalablytyped" %%% "plist" % "3.0-dt-20181031Z-508edf",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "plist" % "3.0-dt-20181031Z-21d701",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181212Z-14da82",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20181208Z-ba08ae",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20181208Z-7b782a",
   "org.scalablytyped" %%% "rx" % "4.1-dt-20180910Z-01905d",
   "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180910Z-9a7fbb",
   "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180910Z-1bda7e",
@@ -29,7 +29,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180910Z-368028",
   "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180910Z-863d71",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180910Z-5334c9",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180910Z-8fb826",
   "org.scalablytyped" %%% "xmlbuilder" % "0.0-unknown-dt-20180927Z-61c1cf")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

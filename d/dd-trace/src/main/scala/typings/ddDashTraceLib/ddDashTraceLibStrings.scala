@@ -16,6 +16,9 @@ object ddDashTraceLibStrings {
   sealed trait amqplib extends js.Object
   
   @js.native
+  sealed trait bluebird extends js.Object
+  
+  @js.native
   sealed trait elasticsearch extends js.Object
   
   @js.native
@@ -52,14 +55,21 @@ object ddDashTraceLibStrings {
   sealed trait pg extends js.Object
   
   @js.native
+  sealed trait q extends js.Object
+  
+  @js.native
   sealed trait redis extends js.Object
   
   @js.native
   sealed trait restify extends js.Object
   
+  @js.native
+  sealed trait when extends js.Object
+  
   def PluginConfiguration: PluginConfiguration = "PluginConfiguration".asInstanceOf[PluginConfiguration]
   def amqp10: amqp10 = "amqp10".asInstanceOf[amqp10]
   def amqplib: amqplib = "amqplib".asInstanceOf[amqplib]
+  def bluebird: bluebird = "bluebird".asInstanceOf[bluebird]
   def elasticsearch: elasticsearch = "elasticsearch".asInstanceOf[elasticsearch]
   def express: express = "express".asInstanceOf[express]
   def graphql: graphql = "graphql".asInstanceOf[graphql]
@@ -72,7 +82,9 @@ object ddDashTraceLibStrings {
   def mysql: mysql = "mysql".asInstanceOf[mysql]
   def mysql2: mysql2 = "mysql2".asInstanceOf[mysql2]
   def pg: pg = "pg".asInstanceOf[pg]
+  def q: q = "q".asInstanceOf[q]
   def redis: redis = "redis".asInstanceOf[redis]
   def restify: restify = "restify".asInstanceOf[restify]
+  def when: when = "when".asInstanceOf[when]
 }
 

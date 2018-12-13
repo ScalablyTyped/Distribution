@@ -7,32 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("apollo-engine-reporting-protobuf", "QueryStats")
 @js.native
-class QueryStats () extends IQueryStats {
+class QueryStats ()
+  extends apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats {
   /**
        * Constructs a new QueryStats.
        * @param [properties] Properties to set
        */
-  def this(properties: IQueryStats) = this()
-  /** QueryStats perClientName. */
-  @JSName("perClientName")
-  var perClientName_QueryStats: ScalablyTyped.runtime.StringDictionary[IClientNameStats] = js.native
-  /** QueryStats perTypeStat. */
-  @JSName("perTypeStat")
-  var perTypeStat_QueryStats: ScalablyTyped.runtime.StringDictionary[ITypeStat] = js.native
-  /** QueryStats perType. */
-  @JSName("perType")
-  var perType_QueryStats: js.Array[ITypeStat] = js.native
-  /** QueryStats queryStatsWithContext. */
-  @JSName("queryStatsWithContext")
-  var queryStatsWithContext_QueryStats: js.Array[IContextualizedQueryLatencyStats] = js.native
-  /** QueryStats typeStatsWithContext. */
-  @JSName("typeStatsWithContext")
-  var typeStatsWithContext_QueryStats: js.Array[IContextualizedTypeStats] = js.native
-  /**
-       * Converts this QueryStats to JSON.
-       * @returns JSON object
-       */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IQueryStats) = this()
 }
 
 @JSImport("apollo-engine-reporting-protobuf", "QueryStats")
@@ -43,15 +24,13 @@ object QueryStats extends js.Object {
        * @param [properties] Properties to set
        * @returns QueryStats instance
        */
-  def create(): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats = js.native
+  def create(): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
   /**
        * Creates a new QueryStats instance using the specified properties.
        * @param [properties] Properties to set
        * @returns QueryStats instance
        */
-  def create(
-    properties: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IQueryStats
-  ): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats = js.native
+  def create(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IQueryStats): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
   /**
        * Decodes a QueryStats message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -60,7 +39,7 @@ object QueryStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats = js.native
+  def decode(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
   /**
        * Decodes a QueryStats message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -69,7 +48,7 @@ object QueryStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats = js.native
+  def decode(reader: protobufjsLib.protobufjsMod.Reader, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
   /**
        * Decodes a QueryStats message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -78,7 +57,7 @@ object QueryStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats = js.native
+  def decode(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
   /**
        * Decodes a QueryStats message from the specified reader or buffer.
        * @param reader Reader or buffer to decode from
@@ -87,7 +66,7 @@ object QueryStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats = js.native
+  def decode(reader: stdLib.Uint8Array, length: scala.Double): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
   /**
        * Decodes a QueryStats message from the specified reader or buffer, length delimited.
        * @param reader Reader or buffer to decode from
@@ -95,7 +74,7 @@ object QueryStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats = js.native
+  def decodeDelimited(reader: protobufjsLib.protobufjsMod.Reader): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
   /**
        * Decodes a QueryStats message from the specified reader or buffer, length delimited.
        * @param reader Reader or buffer to decode from
@@ -103,7 +82,14 @@ object QueryStats extends js.Object {
        * @throws {Error} If the payload is not a reader or valid buffer
        * @throws {$protobuf.util.ProtocolError} If required fields are missing
        */
-  def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats = js.native
+  def decodeDelimited(reader: stdLib.Uint8Array): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
+  /**
+       * Encodes the specified QueryStats message. Does not implicitly {@link QueryStats.verify|verify} messages.
+       * @param message QueryStats message or plain object to encode
+       * @param [writer] Writer to encode to
+       * @returns Writer
+       */
+  def encode(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IQueryStats): protobufjsLib.protobufjsMod.Writer = js.native
   /**
        * Encodes the specified QueryStats message. Does not implicitly {@link QueryStats.verify|verify} messages.
        * @param message QueryStats message or plain object to encode
@@ -111,16 +97,7 @@ object QueryStats extends js.Object {
        * @returns Writer
        */
   def encode(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IQueryStats
-  ): protobufjsLib.protobufjsMod.Writer = js.native
-  /**
-       * Encodes the specified QueryStats message. Does not implicitly {@link QueryStats.verify|verify} messages.
-       * @param message QueryStats message or plain object to encode
-       * @param [writer] Writer to encode to
-       * @returns Writer
-       */
-  def encode(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IQueryStats,
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IQueryStats,
     writer: protobufjsLib.protobufjsMod.Writer
   ): protobufjsLib.protobufjsMod.Writer = js.native
   /**
@@ -129,9 +106,7 @@ object QueryStats extends js.Object {
        * @param [writer] Writer to encode to
        * @returns Writer
        */
-  def encodeDelimited(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IQueryStats
-  ): protobufjsLib.protobufjsMod.Writer = js.native
+  def encodeDelimited(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IQueryStats): protobufjsLib.protobufjsMod.Writer = js.native
   /**
        * Encodes the specified QueryStats message, length delimited. Does not implicitly {@link QueryStats.verify|verify} messages.
        * @param message QueryStats message or plain object to encode
@@ -139,7 +114,7 @@ object QueryStats extends js.Object {
        * @returns Writer
        */
   def encodeDelimited(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.IQueryStats,
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IQueryStats,
     writer: protobufjsLib.protobufjsMod.Writer
   ): protobufjsLib.protobufjsMod.Writer = js.native
   /**
@@ -147,7 +122,14 @@ object QueryStats extends js.Object {
        * @param object Plain object
        * @returns QueryStats
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats = js.native
+  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
+  /**
+       * Creates a plain object from a QueryStats message. Also converts values to other types if specified.
+       * @param message QueryStats
+       * @param [options] Conversion options
+       * @returns Plain object
+       */
+  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a QueryStats message. Also converts values to other types if specified.
        * @param message QueryStats
@@ -155,16 +137,7 @@ object QueryStats extends js.Object {
        * @returns Plain object
        */
   def toObject(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  /**
-       * Creates a plain object from a QueryStats message. Also converts values to other types if specified.
-       * @param message QueryStats
-       * @param [options] Conversion options
-       * @returns Plain object
-       */
-  def toObject(
-    message: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.QueryStats,
+    message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats,
     options: protobufjsLib.protobufjsMod.IConversionOptions
   ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   /**

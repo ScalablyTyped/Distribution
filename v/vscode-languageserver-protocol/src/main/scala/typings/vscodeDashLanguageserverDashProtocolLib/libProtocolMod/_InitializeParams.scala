@@ -19,7 +19,7 @@ trait _InitializeParams extends js.Object {
        * The process Id of the parent process that started
        * the server.
        */
-  var processId: scala.Double
+  var processId: scala.Double | scala.Null
   /**
        * The rootPath of the workspace. Is null
        * if no folder is open.

@@ -28,12 +28,5 @@ trait IScheme extends js.Object {
        * Avoid using it until it is finalized.
        */
   var spacing: atUifabricStylingLib.libInterfacesISpacingMod.ISpacing
-  /**
-       * @internal
-       * The typography property is still in an experimental phase. The intent is to have it
-       * eventually replace IFontStyles in a future release, but it is still undergoing review.
-       * Avoid using it until it is finalized.
-       */
-  var typography: atUifabricStylingLib.libInterfacesITypographyMod.ITypography
 }
 

@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 trait IAbstractElement
   extends mendixmodelsdkLib.distSdkInternalStructuresMod.IStructure {
   def asLoaded(): IAbstractElement = js.native
+  def load(): js.Promise[IAbstractElement] = js.native
   def load(callback: js.Function1[/* element */ this.type, scala.Unit]): scala.Unit = js.native
   def load(callback: js.Function1[/* element */ this.type, scala.Unit], forceRefresh: scala.Boolean): scala.Unit = js.native
+  def load(forceRefresh: scala.Boolean): js.Promise[IAbstractElement] = js.native
 }
 

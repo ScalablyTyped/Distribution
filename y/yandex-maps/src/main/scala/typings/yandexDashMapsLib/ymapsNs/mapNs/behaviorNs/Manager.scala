@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// tslint:disable-line no-shadowed-variable
+//tslint:disable-line no-shadowed-variable
 @JSGlobal("ymaps.map.behavior.Manager")
 @js.native
 class Manager protected ()

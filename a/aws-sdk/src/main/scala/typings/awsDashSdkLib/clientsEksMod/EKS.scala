@@ -134,6 +134,47 @@ trait EKS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Returns descriptive information about an update against your Amazon EKS cluster. When the status of the update is Succeeded, the update is complete. If an update fails, the status is Failed, and an error detail explains the reason for the failure.
+     */
+  def describeUpdate(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeUpdateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns descriptive information about an update against your Amazon EKS cluster. When the status of the update is Succeeded, the update is complete. If an update fails, the status is Failed, and an error detail explains the reason for the failure.
+     */
+  def describeUpdate(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.DescribeUpdateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeUpdateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns descriptive information about an update against your Amazon EKS cluster. When the status of the update is Succeeded, the update is complete. If an update fails, the status is Failed, and an error detail explains the reason for the failure.
+     */
+  def describeUpdate(params: awsDashSdkLib.clientsEksMod.EKSNs.DescribeUpdateRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeUpdateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns descriptive information about an update against your Amazon EKS cluster. When the status of the update is Succeeded, the update is complete. If an update fails, the status is Failed, and an error detail explains the reason for the failure.
+     */
+  def describeUpdate(
+    params: awsDashSdkLib.clientsEksMod.EKSNs.DescribeUpdateRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.DescribeUpdateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeUpdateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Lists the Amazon EKS clusters in your AWS account in the specified Region.
      */
   def listClusters(): awsDashSdkLib.libRequestMod.Request[
@@ -172,6 +213,88 @@ trait EKS
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEksMod.EKSNs.ListClustersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the updates associated with an Amazon EKS cluster in your AWS account, in the specified Region.
+     */
+  def listUpdates(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.ListUpdatesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the updates associated with an Amazon EKS cluster in your AWS account, in the specified Region.
+     */
+  def listUpdates(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.ListUpdatesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.ListUpdatesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the updates associated with an Amazon EKS cluster in your AWS account, in the specified Region.
+     */
+  def listUpdates(params: awsDashSdkLib.clientsEksMod.EKSNs.ListUpdatesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.ListUpdatesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the updates associated with an Amazon EKS cluster in your AWS account, in the specified Region.
+     */
+  def listUpdates(
+    params: awsDashSdkLib.clientsEksMod.EKSNs.ListUpdatesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.ListUpdatesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.ListUpdatesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+     */
+  def updateClusterVersion(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+     */
+  def updateClusterVersion(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+     */
+  def updateClusterVersion(params: awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterVersionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+     */
+  def updateClusterVersion(
+    params: awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterVersionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterVersionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

@@ -1,5 +1,5 @@
 ```
-// Type definitions for Sinon 5.0
+// Type definitions for Sinon 7.0
 // Project: http://sinonjs.org/
 // Definitions by: William Sears <https://github.com/mrbigdog2u>
 //                 Jonathan Little <https://github.com/rationull>
@@ -10,7 +10,7 @@
 //                 Greg Jednaszewski <https://github.com/gjednaszewski>
 //                 John Wood <https://github.com/johnjesse>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
+// TypeScript Version: 2.8
 // sinon uses DOM dependencies which are absent in browser-less environment like node.js
 // to avoid compiler errors this monkey patch is used
 // see more details in https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11351

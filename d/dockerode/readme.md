@@ -8,6 +8,7 @@
 //                 Marius Meisenzahl <https://github.com/meisenzahl>
 //                 Rob Moran <https://github.com/thegecko>
 //                 Cameron Diver <https://github.com/CameronDiver>
+//                 Pascal Sthamer <https://github.com/p4sca1>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 ```
