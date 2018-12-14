@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emotion-theming"
-version := "10.0.4-9a578c"
+version := "10.0.5-9a578c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

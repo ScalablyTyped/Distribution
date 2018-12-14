@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "match-media-mock"
-version := "0.1.0-dt-20180910Z-c3e458"
+version := "0.1.0-dt-20181214Z-c3e458"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

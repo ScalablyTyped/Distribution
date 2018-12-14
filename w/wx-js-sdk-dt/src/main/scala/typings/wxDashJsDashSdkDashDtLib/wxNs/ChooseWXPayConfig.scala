@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 
 trait ChooseWXPayConfig extends js.Object {
   /**
+           * 支付取消后的回调函数
+           */
+  var cancel: js.UndefOr[js.Function1[/* res */ js.Any, scala.Unit]] = js.undefined
+  /**
+           * 支付失败后的回调函数
+           */
+  var fail: js.UndefOr[js.Function1[/* res */ js.Any, scala.Unit]] = js.undefined
+  /**
            * 支付签名随机串，不长于 32 位
            */
   var nonceStr: java.lang.String

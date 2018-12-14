@@ -136,6 +136,49 @@ trait PinpointEmail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
+     */
+  def createDeliverabilityTestReport(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
+     */
+  def createDeliverabilityTestReport(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
+     */
+  def createDeliverabilityTestReport(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
+     */
+  def createDeliverabilityTestReport(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.CreateDeliverabilityTestReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Verifies an email identity for use with Amazon Pinpoint. In Amazon Pinpoint, an identity is an email address or domain that you use when you send email. Before you can use an identity to send email with Amazon Pinpoint, you first have to verify it. By verifying an address, you demonstrate that you're the owner of the address, and that you've given Amazon Pinpoint permission to send email from the address. When you verify an email address, Amazon Pinpoint sends an email to the address. Your email address is verified as soon as you follow the link in the verification email.  When you verify a domain, this operation provides a set of DKIM tokens, which you can convert into CNAME tokens. You add these CNAME tokens to the DNS configuration for your domain. Your domain is verified when Amazon Pinpoint detects these records in the DNS configuration for your domain. It usually takes around 72 hours to complete the domain verification process.
      */
   def createEmailIdentity(): awsDashSdkLib.libRequestMod.Request[
@@ -384,6 +427,47 @@ trait PinpointEmail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
+     */
+  def getBlacklistReports(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
+     */
+  def getBlacklistReports(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
+     */
+  def getBlacklistReports(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
+     */
+  def getBlacklistReports(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetBlacklistReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Get information about an existing configuration set, including the dedicated IP pool that it's associated with, whether or not it's enabled for sending email, and more. In Amazon Pinpoint, configuration sets are groups of rules that you can apply to the emails you send. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email.
      */
   def getConfigurationSet(): awsDashSdkLib.libRequestMod.Request[
@@ -550,6 +634,131 @@ trait PinpointEmail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+     */
+  def getDeliverabilityDashboardOptions(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+     */
+  def getDeliverabilityDashboardOptions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+     */
+  def getDeliverabilityDashboardOptions(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+     */
+  def getDeliverabilityDashboardOptions(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityDashboardOptionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve the results of a predictive inbox placement test.
+     */
+  def getDeliverabilityTestReport(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve the results of a predictive inbox placement test.
+     */
+  def getDeliverabilityTestReport(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve the results of a predictive inbox placement test.
+     */
+  def getDeliverabilityTestReport(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve the results of a predictive inbox placement test.
+     */
+  def getDeliverabilityTestReport(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDeliverabilityTestReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve inbox placement and engagement rates for the domains that you use to send email.
+     */
+  def getDomainStatisticsReport(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve inbox placement and engagement rates for the domains that you use to send email.
+     */
+  def getDomainStatisticsReport(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve inbox placement and engagement rates for the domains that you use to send email.
+     */
+  def getDomainStatisticsReport(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieve inbox placement and engagement rates for the domains that you use to send email.
+     */
+  def getDomainStatisticsReport(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.GetDomainStatisticsReportResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Provides information about a specific identity associated with your Amazon Pinpoint account, including the identity's verification status, its DKIM authentication status, and its custom Mail-From settings.
      */
   def getEmailIdentity(): awsDashSdkLib.libRequestMod.Request[
@@ -670,6 +879,47 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDedicatedIpPoolsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
+     */
+  def listDeliverabilityTestReports(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
+     */
+  def listDeliverabilityTestReports(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
+     */
+  def listDeliverabilityTestReports(params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
+     */
+  def listDeliverabilityTestReports(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ListDeliverabilityTestReportsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1051,6 +1301,49 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDedicatedIpWarmupAttributesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+     */
+  def putDeliverabilityDashboardOption(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+     */
+  def putDeliverabilityDashboardOption(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+     */
+  def putDeliverabilityDashboardOption(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+     */
+  def putDeliverabilityDashboardOption(
+    params: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PutDeliverabilityDashboardOptionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

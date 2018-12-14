@@ -226,6 +226,39 @@ object nodeLibStrings {
   sealed trait NS extends js.Object
   
   @js.native
+  sealed trait NodeTracingDOTdataCollected extends js.Object
+  
+  @js.native
+  sealed trait NodeTracingDOTgetCategories extends js.Object
+  
+  @js.native
+  sealed trait NodeTracingDOTstart extends js.Object
+  
+  @js.native
+  sealed trait NodeTracingDOTstop extends js.Object
+  
+  @js.native
+  sealed trait NodeTracingDOTtracingComplete extends js.Object
+  
+  @js.native
+  sealed trait NodeWorkerDOTattachedToWorker extends js.Object
+  
+  @js.native
+  sealed trait NodeWorkerDOTdetachedFromWorker extends js.Object
+  
+  @js.native
+  sealed trait NodeWorkerDOTdisable extends js.Object
+  
+  @js.native
+  sealed trait NodeWorkerDOTenable extends js.Object
+  
+  @js.native
+  sealed trait NodeWorkerDOTreceivedMessageFromWorker extends js.Object
+  
+  @js.native
+  sealed trait NodeWorkerDOTsendMessageToWorker extends js.Object
+  
+  @js.native
   sealed trait OCSPRequest extends js.Object
   
   @js.native
@@ -862,6 +895,17 @@ object nodeLibStrings {
   def MX: MX = "MX".asInstanceOf[MX]
   def NAPTR: NAPTR = "NAPTR".asInstanceOf[NAPTR]
   def NS: NS = "NS".asInstanceOf[NS]
+  def NodeTracingDOTdataCollected: NodeTracingDOTdataCollected = "NodeTracing.dataCollected".asInstanceOf[NodeTracingDOTdataCollected]
+  def NodeTracingDOTgetCategories: NodeTracingDOTgetCategories = "NodeTracing.getCategories".asInstanceOf[NodeTracingDOTgetCategories]
+  def NodeTracingDOTstart: NodeTracingDOTstart = "NodeTracing.start".asInstanceOf[NodeTracingDOTstart]
+  def NodeTracingDOTstop: NodeTracingDOTstop = "NodeTracing.stop".asInstanceOf[NodeTracingDOTstop]
+  def NodeTracingDOTtracingComplete: NodeTracingDOTtracingComplete = "NodeTracing.tracingComplete".asInstanceOf[NodeTracingDOTtracingComplete]
+  def NodeWorkerDOTattachedToWorker: NodeWorkerDOTattachedToWorker = "NodeWorker.attachedToWorker".asInstanceOf[NodeWorkerDOTattachedToWorker]
+  def NodeWorkerDOTdetachedFromWorker: NodeWorkerDOTdetachedFromWorker = "NodeWorker.detachedFromWorker".asInstanceOf[NodeWorkerDOTdetachedFromWorker]
+  def NodeWorkerDOTdisable: NodeWorkerDOTdisable = "NodeWorker.disable".asInstanceOf[NodeWorkerDOTdisable]
+  def NodeWorkerDOTenable: NodeWorkerDOTenable = "NodeWorker.enable".asInstanceOf[NodeWorkerDOTenable]
+  def NodeWorkerDOTreceivedMessageFromWorker: NodeWorkerDOTreceivedMessageFromWorker = "NodeWorker.receivedMessageFromWorker".asInstanceOf[NodeWorkerDOTreceivedMessageFromWorker]
+  def NodeWorkerDOTsendMessageToWorker: NodeWorkerDOTsendMessageToWorker = "NodeWorker.sendMessageToWorker".asInstanceOf[NodeWorkerDOTsendMessageToWorker]
   def OCSPRequest: OCSPRequest = "OCSPRequest".asInstanceOf[OCSPRequest]
   def OCSPResponse: OCSPResponse = "OCSPResponse".asInstanceOf[OCSPResponse]
   def PTR: PTR = "PTR".asInstanceOf[PTR]

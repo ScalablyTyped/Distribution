@@ -2447,8 +2447,8 @@ object d3ModMembers extends js.Object {
   def nest[Datum, RollupType](): d3DashCollectionLib.d3DashCollectionMod.Nest[Datum, RollupType] = js.native
   def now(): scala.Double = js.native
   def pack[Datum](): d3DashHierarchyLib.d3DashHierarchyMod.PackLayout[Datum] = js.native
-  def packEnclose[Datum /* <: d3DashHierarchyLib.d3DashHierarchyMod.PackCircle */](circles: js.Array[Datum]): d3DashHierarchyLib.Anon_Y = js.native
-  def packSiblings[Datum /* <: d3DashHierarchyLib.d3DashHierarchyMod.PackCircle */](circles: js.Array[Datum]): js.Array[Datum] = js.native
+  def packEnclose[Datum /* <: d3DashHierarchyLib.d3DashHierarchyMod.PackCircle */](circles: js.Array[Datum]): d3DashHierarchyLib.d3DashHierarchyMod.PackCircle = js.native
+  def packSiblings[Datum /* <: d3DashHierarchyLib.d3DashHierarchyMod.PackRadius */](circles: js.Array[Datum]): js.Array[Datum with d3DashHierarchyLib.d3DashHierarchyMod.PackCircle] = js.native
   def pairs[T](array: stdLib.ArrayLike[T]): js.Array[js.Tuple2[T, T]] = js.native
   def pairs[T, U](array: stdLib.ArrayLike[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = js.native
   def partition[Datum](): d3DashHierarchyLib.d3DashHierarchyMod.PartitionLayout[Datum] = js.native

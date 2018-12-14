@@ -61,5 +61,38 @@ object browserModMembers extends js.Object {
       reactDashApolloLib.typesMod.ChildProps[TProps, TResult, reactDashApolloLib.typesMod.OperationVariables]
     ]
   ): reactLib.reactMod.ReactNs.ComponentClass[TProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def withMutation[TProps /* <: TGraphQLVariables | js.Object */, TData, TGraphQLVariables, TChildProps](document: graphqlLib.languageAstMod.DocumentNode): js.Function1[
+    /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[TChildProps with TProps], 
+    reactLib.reactMod.ReactNs.ComponentClass[TProps, _]
+  ] = js.native
+  def withMutation[TProps /* <: TGraphQLVariables | js.Object */, TData, TGraphQLVariables, TChildProps](
+    document: graphqlLib.languageAstMod.DocumentNode,
+    operationOptions: reactDashApolloLib.typesMod.OperationOption[TProps, TData, TGraphQLVariables, TChildProps]
+  ): js.Function1[
+    /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[TChildProps with TProps], 
+    reactLib.reactMod.ReactNs.ComponentClass[TProps, _]
+  ] = js.native
+  def withQuery[TProps /* <: TGraphQLVariables | js.Object */, TData, TGraphQLVariables, TChildProps](document: graphqlLib.languageAstMod.DocumentNode): js.Function1[
+    /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[TChildProps with TProps], 
+    reactLib.reactMod.ReactNs.ComponentClass[TProps, _]
+  ] = js.native
+  def withQuery[TProps /* <: TGraphQLVariables | js.Object */, TData, TGraphQLVariables, TChildProps](
+    document: graphqlLib.languageAstMod.DocumentNode,
+    operationOptions: reactDashApolloLib.typesMod.OperationOption[TProps, TData, TGraphQLVariables, TChildProps]
+  ): js.Function1[
+    /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[TChildProps with TProps], 
+    reactLib.reactMod.ReactNs.ComponentClass[TProps, _]
+  ] = js.native
+  def withSubscription[TProps /* <: TGraphQLVariables | js.Object */, TData, TGraphQLVariables, TChildProps](document: graphqlLib.languageAstMod.DocumentNode): js.Function1[
+    /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[TChildProps with TProps], 
+    reactLib.reactMod.ReactNs.ComponentClass[TProps, _]
+  ] = js.native
+  def withSubscription[TProps /* <: TGraphQLVariables | js.Object */, TData, TGraphQLVariables, TChildProps](
+    document: graphqlLib.languageAstMod.DocumentNode,
+    operationOptions: reactDashApolloLib.typesMod.OperationOption[TProps, TData, TGraphQLVariables, TChildProps]
+  ): js.Function1[
+    /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[TChildProps with TProps], 
+    reactLib.reactMod.ReactNs.ComponentClass[TProps, _]
+  ] = js.native
 }
 

@@ -16798,273 +16798,6 @@ trait JQuery[TElement]
   def off(event: jqueryLib.JQueryNs.TriggeredEvent[TElement, _, _, _]): this.type = js.native
   /**
        * Remove an event handler.
-       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
-       *               "click", "keydown.myPlugin", or ".myPlugin".
-       * @param selector_handler _&#x40;param_ `selector_handler`
-       * <br>
-       * * `selector` — A selector which should match the one originally passed to `.on()` when attaching event handlers. <br>
-       * * `handler` — A handler function previously attached for the event(s), or the special value `false`.
-       * @see \`{@link https://api.jquery.com/off/ }\`
-       * @since 1.7
-       * @example ​ ````Remove all delegated click handlers from all paragraphs:
-  ```javascript
-  $( "p" ).off( "click", "**" );
-  ```
-       * @example ​ ````Unbind all delegated event handlers by their namespace:
-  ```javascript
-  var validate = function() {
-    // Code to validate form entries
-  };
-  ​
-  // Delegate events under the ".validator" namespace
-  $( "form" ).on( "click.validator", "button", validate );
-  ​
-  $( "form" ).on( "keypress.validator", "input[type='text']", validate );
-  ​
-  // Remove event handlers in the ".validator" namespace
-  $( "form" ).off( ".validator" );
-  ```
-       */
-  def off(events: java.lang.String): this.type = js.native
-  /**
-       * Remove an event handler.
-       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
-       *               "click", "keydown.myPlugin", or ".myPlugin".
-       * @param selector_handler _&#x40;param_ `selector_handler`
-       * <br>
-       * * `selector` — A selector which should match the one originally passed to `.on()` when attaching event handlers. <br>
-       * * `handler` — A handler function previously attached for the event(s), or the special value `false`.
-       * @see \`{@link https://api.jquery.com/off/ }\`
-       * @since 1.7
-       * @example ​ ````Remove all delegated click handlers from all paragraphs:
-  ```javascript
-  $( "p" ).off( "click", "**" );
-  ```
-       * @example ​ ````Unbind all delegated event handlers by their namespace:
-  ```javascript
-  var validate = function() {
-    // Code to validate form entries
-  };
-  ​
-  // Delegate events under the ".validator" namespace
-  $( "form" ).on( "click.validator", "button", validate );
-  ​
-  $( "form" ).on( "keypress.validator", "input[type='text']", validate );
-  ​
-  // Remove event handlers in the ".validator" namespace
-  $( "form" ).off( ".validator" );
-  ```
-       */
-  def off(events: java.lang.String, selector_handler: jqueryLib.JQueryNs.Selector): this.type = js.native
-  /**
-       * Remove an event handler.
-       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
-       *               "click", "keydown.myPlugin", or ".myPlugin".
-       * @param selector_handler _&#x40;param_ `selector_handler`
-       * <br>
-       * * `selector` — A selector which should match the one originally passed to `.on()` when attaching event handlers. <br>
-       * * `handler` — A handler function previously attached for the event(s), or the special value `false`.
-       * @see \`{@link https://api.jquery.com/off/ }\`
-       * @since 1.7
-       * @example ​ ````Remove all delegated click handlers from all paragraphs:
-  ```javascript
-  $( "p" ).off( "click", "**" );
-  ```
-       * @example ​ ````Unbind all delegated event handlers by their namespace:
-  ```javascript
-  var validate = function() {
-    // Code to validate form entries
-  };
-  ​
-  // Delegate events under the ".validator" namespace
-  $( "form" ).on( "click.validator", "button", validate );
-  ​
-  $( "form" ).on( "keypress.validator", "input[type='text']", validate );
-  ​
-  // Remove event handlers in the ".validator" namespace
-  $( "form" ).off( ".validator" );
-  ```
-       */
-  def off(
-    events: java.lang.String,
-    selector_handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, java.lang.String]
-  ): this.type = js.native
-  /**
-       * Remove an event handler.
-       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
-       *               "click", "keydown.myPlugin", or ".myPlugin".
-       * @param selector_handler _&#x40;param_ `selector_handler`
-       * <br>
-       * * `selector` — A selector which should match the one originally passed to `.on()` when attaching event handlers. <br>
-       * * `handler` — A handler function previously attached for the event(s), or the special value `false`.
-       * @see \`{@link https://api.jquery.com/off/ }\`
-       * @since 1.7
-       * @example ​ ````Remove all delegated click handlers from all paragraphs:
-  ```javascript
-  $( "p" ).off( "click", "**" );
-  ```
-       * @example ​ ````Unbind all delegated event handlers by their namespace:
-  ```javascript
-  var validate = function() {
-    // Code to validate form entries
-  };
-  ​
-  // Delegate events under the ".validator" namespace
-  $( "form" ).on( "click.validator", "button", validate );
-  ​
-  $( "form" ).on( "keypress.validator", "input[type='text']", validate );
-  ​
-  // Remove event handlers in the ".validator" namespace
-  $( "form" ).off( ".validator" );
-  ```
-       */
-  def off(events: java.lang.String, selector_handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
-  /**
-       * Remove an event handler.
-       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
-       *               "click", "keydown.myPlugin", or ".myPlugin".
-       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
-       * @param handler A function to execute each time the event is triggered.
-       * @see \`{@link https://api.jquery.com/off/ }\`
-       * @since 1.7
-       * @example ​ ````Add and remove event handlers on the colored button.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>off demo</title>
-    <style>
-    button {
-      margin: 5px;
-    }
-    button#theone {
-      color: red;
-      background: yellow;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button id="theone">Does nothing...</button>
-  <button id="bind">Add Click</button>
-  <button id="unbind">Remove Click</button>
-  <div style="display:none;">Click!</div>
-  ​
-  <script>
-  function flash() {
-    $( "div" ).show().fadeOut( "slow" );
-  }
-  $( "#bind" ).click(function() {
-    $( "body" )
-      .on( "click", "#theone", flash )
-      .find( "#theone" )
-        .text( "Can Click!" );
-  });
-  $( "#unbind" ).click(function() {
-    $( "body" )
-      .off( "click", "#theone", flash )
-      .find( "#theone" )
-        .text( "Does nothing..." );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Remove just one previously bound handler by passing it as the third argument:
-  ```javascript
-  var foo = function() {
-    // Code to handle some kind of event
-  };
-  ​
-  // ... Now foo will be called when paragraphs are clicked ...
-  $( "body" ).on( "click", "p", foo );
-  ​
-  // ... Foo will no longer be called.
-  $( "body" ).off( "click", "p", foo );
-  ```
-       */
-  def off(
-    events: java.lang.String,
-    selector: jqueryLib.JQueryNs.Selector,
-    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, java.lang.String]
-  ): this.type = js.native
-  /**
-       * Remove an event handler.
-       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
-       *               "click", "keydown.myPlugin", or ".myPlugin".
-       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
-       * @param handler A function to execute each time the event is triggered.
-       * @see \`{@link https://api.jquery.com/off/ }\`
-       * @since 1.7
-       * @example ​ ````Add and remove event handlers on the colored button.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>off demo</title>
-    <style>
-    button {
-      margin: 5px;
-    }
-    button#theone {
-      color: red;
-      background: yellow;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button id="theone">Does nothing...</button>
-  <button id="bind">Add Click</button>
-  <button id="unbind">Remove Click</button>
-  <div style="display:none;">Click!</div>
-  ​
-  <script>
-  function flash() {
-    $( "div" ).show().fadeOut( "slow" );
-  }
-  $( "#bind" ).click(function() {
-    $( "body" )
-      .on( "click", "#theone", flash )
-      .find( "#theone" )
-        .text( "Can Click!" );
-  });
-  $( "#unbind" ).click(function() {
-    $( "body" )
-      .off( "click", "#theone", flash )
-      .find( "#theone" )
-        .text( "Does nothing..." );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Remove just one previously bound handler by passing it as the third argument:
-  ```javascript
-  var foo = function() {
-    // Code to handle some kind of event
-  };
-  ​
-  // ... Now foo will be called when paragraphs are clicked ...
-  $( "body" ).on( "click", "p", foo );
-  ​
-  // ... Foo will no longer be called.
-  $( "body" ).off( "click", "p", foo );
-  ```
-       */
-  def off(
-    events: java.lang.String,
-    selector: jqueryLib.JQueryNs.Selector,
-    handler: jqueryLib.jqueryLibNumbers.`false`
-  ): this.type = js.native
-  /**
-       * Remove an event handler.
        * @param events An object where the string keys represent one or more space-separated event types and optional
        *               namespaces, and the values represent handler functions previously attached for the event(s).
        * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
@@ -17084,6 +16817,266 @@ trait JQuery[TElement]
     events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, _, _, _],
     selector: jqueryLib.JQueryNs.Selector
   ): this.type = js.native
+  /**
+       * Remove an event handler.
+       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
+       *               "click", "keydown.myPlugin", or ".myPlugin".
+       * @param selector_handler _&#x40;param_ `selector_handler`
+       * <br>
+       * * `selector` — A selector which should match the one originally passed to `.on()` when attaching event handlers. <br>
+       * * `handler` — A handler function previously attached for the event(s), or the special value `false`.
+       * @see \`{@link https://api.jquery.com/off/ }\`
+       * @since 1.7
+       * @example ​ ````Remove all delegated click handlers from all paragraphs:
+  ```javascript
+  $( "p" ).off( "click", "**" );
+  ```
+       * @example ​ ````Unbind all delegated event handlers by their namespace:
+  ```javascript
+  var validate = function() {
+    // Code to validate form entries
+  };
+  ​
+  // Delegate events under the ".validator" namespace
+  $( "form" ).on( "click.validator", "button", validate );
+  ​
+  $( "form" ).on( "keypress.validator", "input[type='text']", validate );
+  ​
+  // Remove event handlers in the ".validator" namespace
+  $( "form" ).off( ".validator" );
+  ```
+       */
+  def off[TType /* <: java.lang.String */](events: TType): this.type = js.native
+  /**
+       * Remove an event handler.
+       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
+       *               "click", "keydown.myPlugin", or ".myPlugin".
+       * @param selector_handler _&#x40;param_ `selector_handler`
+       * <br>
+       * * `selector` — A selector which should match the one originally passed to `.on()` when attaching event handlers. <br>
+       * * `handler` — A handler function previously attached for the event(s), or the special value `false`.
+       * @see \`{@link https://api.jquery.com/off/ }\`
+       * @since 1.7
+       * @example ​ ````Remove all delegated click handlers from all paragraphs:
+  ```javascript
+  $( "p" ).off( "click", "**" );
+  ```
+       * @example ​ ````Unbind all delegated event handlers by their namespace:
+  ```javascript
+  var validate = function() {
+    // Code to validate form entries
+  };
+  ​
+  // Delegate events under the ".validator" namespace
+  $( "form" ).on( "click.validator", "button", validate );
+  ​
+  $( "form" ).on( "keypress.validator", "input[type='text']", validate );
+  ​
+  // Remove event handlers in the ".validator" namespace
+  $( "form" ).off( ".validator" );
+  ```
+       */
+  def off[TType /* <: java.lang.String */](events: TType, selector_handler: jqueryLib.JQueryNs.Selector): this.type = js.native
+  /**
+       * Remove an event handler.
+       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
+       *               "click", "keydown.myPlugin", or ".myPlugin".
+       * @param selector_handler _&#x40;param_ `selector_handler`
+       * <br>
+       * * `selector` — A selector which should match the one originally passed to `.on()` when attaching event handlers. <br>
+       * * `handler` — A handler function previously attached for the event(s), or the special value `false`.
+       * @see \`{@link https://api.jquery.com/off/ }\`
+       * @since 1.7
+       * @example ​ ````Remove all delegated click handlers from all paragraphs:
+  ```javascript
+  $( "p" ).off( "click", "**" );
+  ```
+       * @example ​ ````Unbind all delegated event handlers by their namespace:
+  ```javascript
+  var validate = function() {
+    // Code to validate form entries
+  };
+  ​
+  // Delegate events under the ".validator" namespace
+  $( "form" ).on( "click.validator", "button", validate );
+  ​
+  $( "form" ).on( "keypress.validator", "input[type='text']", validate );
+  ​
+  // Remove event handlers in the ".validator" namespace
+  $( "form" ).off( ".validator" );
+  ```
+       */
+  def off[TType /* <: java.lang.String */](events: TType, selector_handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, TType]): this.type = js.native
+  /**
+       * Remove an event handler.
+       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
+       *               "click", "keydown.myPlugin", or ".myPlugin".
+       * @param selector_handler _&#x40;param_ `selector_handler`
+       * <br>
+       * * `selector` — A selector which should match the one originally passed to `.on()` when attaching event handlers. <br>
+       * * `handler` — A handler function previously attached for the event(s), or the special value `false`.
+       * @see \`{@link https://api.jquery.com/off/ }\`
+       * @since 1.7
+       * @example ​ ````Remove all delegated click handlers from all paragraphs:
+  ```javascript
+  $( "p" ).off( "click", "**" );
+  ```
+       * @example ​ ````Unbind all delegated event handlers by their namespace:
+  ```javascript
+  var validate = function() {
+    // Code to validate form entries
+  };
+  ​
+  // Delegate events under the ".validator" namespace
+  $( "form" ).on( "click.validator", "button", validate );
+  ​
+  $( "form" ).on( "keypress.validator", "input[type='text']", validate );
+  ​
+  // Remove event handlers in the ".validator" namespace
+  $( "form" ).off( ".validator" );
+  ```
+       */
+  def off[TType /* <: java.lang.String */](events: TType, selector_handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  /**
+       * Remove an event handler.
+       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
+       *               "click", "keydown.myPlugin", or ".myPlugin".
+       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
+       * @param handler A function to execute each time the event is triggered.
+       * @see \`{@link https://api.jquery.com/off/ }\`
+       * @since 1.7
+       * @example ​ ````Add and remove event handlers on the colored button.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>off demo</title>
+    <style>
+    button {
+      margin: 5px;
+    }
+    button#theone {
+      color: red;
+      background: yellow;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <button id="theone">Does nothing...</button>
+  <button id="bind">Add Click</button>
+  <button id="unbind">Remove Click</button>
+  <div style="display:none;">Click!</div>
+  ​
+  <script>
+  function flash() {
+    $( "div" ).show().fadeOut( "slow" );
+  }
+  $( "#bind" ).click(function() {
+    $( "body" )
+      .on( "click", "#theone", flash )
+      .find( "#theone" )
+        .text( "Can Click!" );
+  });
+  $( "#unbind" ).click(function() {
+    $( "body" )
+      .off( "click", "#theone", flash )
+      .find( "#theone" )
+        .text( "Does nothing..." );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````Remove just one previously bound handler by passing it as the third argument:
+  ```javascript
+  var foo = function() {
+    // Code to handle some kind of event
+  };
+  ​
+  // ... Now foo will be called when paragraphs are clicked ...
+  $( "body" ).on( "click", "p", foo );
+  ​
+  // ... Foo will no longer be called.
+  $( "body" ).off( "click", "p", foo );
+  ```
+       */
+  def off[TType /* <: java.lang.String */](
+    events: TType,
+    selector: jqueryLib.JQueryNs.Selector,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, TType]
+  ): this.type = js.native
+  /**
+       * Remove an event handler.
+       * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
+       *               "click", "keydown.myPlugin", or ".myPlugin".
+       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
+       * @param handler A function to execute each time the event is triggered.
+       * @see \`{@link https://api.jquery.com/off/ }\`
+       * @since 1.7
+       * @example ​ ````Add and remove event handlers on the colored button.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>off demo</title>
+    <style>
+    button {
+      margin: 5px;
+    }
+    button#theone {
+      color: red;
+      background: yellow;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <button id="theone">Does nothing...</button>
+  <button id="bind">Add Click</button>
+  <button id="unbind">Remove Click</button>
+  <div style="display:none;">Click!</div>
+  ​
+  <script>
+  function flash() {
+    $( "div" ).show().fadeOut( "slow" );
+  }
+  $( "#bind" ).click(function() {
+    $( "body" )
+      .on( "click", "#theone", flash )
+      .find( "#theone" )
+        .text( "Can Click!" );
+  });
+  $( "#unbind" ).click(function() {
+    $( "body" )
+      .off( "click", "#theone", flash )
+      .find( "#theone" )
+        .text( "Does nothing..." );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````Remove just one previously bound handler by passing it as the third argument:
+  ```javascript
+  var foo = function() {
+    // Code to handle some kind of event
+  };
+  ​
+  // ... Now foo will be called when paragraphs are clicked ...
+  $( "body" ).on( "click", "p", foo );
+  ​
+  // ... Foo will no longer be called.
+  $( "body" ).off( "click", "p", foo );
+  ```
+       */
+  def off[TType /* <: java.lang.String */](events: TType, selector: jqueryLib.JQueryNs.Selector, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Get the current coordinates of the first element in the set of matched elements, relative to the document.
        * @see \`{@link https://api.jquery.com/offset/ }\`
@@ -29275,145 +29268,6 @@ trait JQuery[TElement]
   /**
        * Remove a previously-attached event handler from the elements.
        * @param event A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
-       * @param handler A function to execute each time the event is triggered.
-       * @see \`{@link https://api.jquery.com/unbind/ }\`
-       * @since 1.0
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link off }\`.
-       *
-       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
-       *
-       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
-       * @example ​ ````Can bind and unbind events to the colored button.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>unbind demo</title>
-    <style>
-    button {
-      margin: 5px;
-    }
-    button#theone {
-      color: red;
-      background: yellow;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button id="theone">Does nothing...</button>
-  <button id="bind">Bind Click</button>
-  <button id="unbind">Unbind Click</button>
-  <div style="display:none;">Click!</div>
-  ​
-  <script>
-  function aClick() {
-    $( "div" ).show().fadeOut( "slow" );
-  }
-  $( "#bind" ).click(function() {
-    $( "#theone" )
-      .bind( "click", aClick )
-      .text( "Can Click!" );
-  });
-  $( "#unbind" ).click(function() {
-    $( "#theone" )
-      .unbind( "click", aClick )
-      .text( "Does nothing..." );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To unbind just one previously bound handler, pass the function in as the second argument:
-  ```javascript
-  var foo = function() {
-    // Code to handle some kind of event
-  };
-  ​
-  $( "p" ).bind( "click", foo ); // ... Now foo will be called when paragraphs are clicked ...
-  ​
-  $( "p" ).unbind( "click", foo ); // ... foo will no longer be called.
-  ```
-       */
-  def unbind(
-    event: java.lang.String,
-    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, TElement, TElement, java.lang.String]
-  ): this.type = js.native
-  /**
-       * Remove a previously-attached event handler from the elements.
-       * @param event A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
-       * @param handler A function to execute each time the event is triggered.
-       * @see \`{@link https://api.jquery.com/unbind/ }\`
-       * @since 1.0
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link off }\`.
-       *
-       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
-       *
-       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
-       * @example ​ ````Can bind and unbind events to the colored button.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>unbind demo</title>
-    <style>
-    button {
-      margin: 5px;
-    }
-    button#theone {
-      color: red;
-      background: yellow;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button id="theone">Does nothing...</button>
-  <button id="bind">Bind Click</button>
-  <button id="unbind">Unbind Click</button>
-  <div style="display:none;">Click!</div>
-  ​
-  <script>
-  function aClick() {
-    $( "div" ).show().fadeOut( "slow" );
-  }
-  $( "#bind" ).click(function() {
-    $( "#theone" )
-      .bind( "click", aClick )
-      .text( "Can Click!" );
-  });
-  $( "#unbind" ).click(function() {
-    $( "#theone" )
-      .unbind( "click", aClick )
-      .text( "Does nothing..." );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To unbind just one previously bound handler, pass the function in as the second argument:
-  ```javascript
-  var foo = function() {
-    // Code to handle some kind of event
-  };
-  ​
-  $( "p" ).bind( "click", foo ); // ... Now foo will be called when paragraphs are clicked ...
-  ​
-  $( "p" ).unbind( "click", foo ); // ... foo will no longer be called.
-  ```
-       */
-  def unbind(event: java.lang.String, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
-  /**
-       * Remove a previously-attached event handler from the elements.
-       * @param event A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
        *              A jQuery.Event object.
        * @see \`{@link https://api.jquery.com/unbind/ }\`
        * @since 1.0
@@ -29432,6 +29286,142 @@ trait JQuery[TElement]
   ```
        */
   def unbind(event: jqueryLib.JQueryNs.TriggeredEvent[TElement, _, _, _]): this.type = js.native
+  /**
+       * Remove a previously-attached event handler from the elements.
+       * @param event A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
+       * @param handler A function to execute each time the event is triggered.
+       * @see \`{@link https://api.jquery.com/unbind/ }\`
+       * @since 1.0
+       * @since 1.4.3
+       * @deprecated ​ Deprecated since 3.0. Use \`{@link off }\`.
+       *
+       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
+       *
+       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
+       * @example ​ ````Can bind and unbind events to the colored button.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>unbind demo</title>
+    <style>
+    button {
+      margin: 5px;
+    }
+    button#theone {
+      color: red;
+      background: yellow;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <button id="theone">Does nothing...</button>
+  <button id="bind">Bind Click</button>
+  <button id="unbind">Unbind Click</button>
+  <div style="display:none;">Click!</div>
+  ​
+  <script>
+  function aClick() {
+    $( "div" ).show().fadeOut( "slow" );
+  }
+  $( "#bind" ).click(function() {
+    $( "#theone" )
+      .bind( "click", aClick )
+      .text( "Can Click!" );
+  });
+  $( "#unbind" ).click(function() {
+    $( "#theone" )
+      .unbind( "click", aClick )
+      .text( "Does nothing..." );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````To unbind just one previously bound handler, pass the function in as the second argument:
+  ```javascript
+  var foo = function() {
+    // Code to handle some kind of event
+  };
+  ​
+  $( "p" ).bind( "click", foo ); // ... Now foo will be called when paragraphs are clicked ...
+  ​
+  $( "p" ).unbind( "click", foo ); // ... foo will no longer be called.
+  ```
+       */
+  def unbind[TType /* <: java.lang.String */](event: TType, handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, TElement, TElement, TType]): this.type = js.native
+  /**
+       * Remove a previously-attached event handler from the elements.
+       * @param event A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
+       * @param handler A function to execute each time the event is triggered.
+       * @see \`{@link https://api.jquery.com/unbind/ }\`
+       * @since 1.0
+       * @since 1.4.3
+       * @deprecated ​ Deprecated since 3.0. Use \`{@link off }\`.
+       *
+       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
+       *
+       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
+       * @example ​ ````Can bind and unbind events to the colored button.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>unbind demo</title>
+    <style>
+    button {
+      margin: 5px;
+    }
+    button#theone {
+      color: red;
+      background: yellow;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <button id="theone">Does nothing...</button>
+  <button id="bind">Bind Click</button>
+  <button id="unbind">Unbind Click</button>
+  <div style="display:none;">Click!</div>
+  ​
+  <script>
+  function aClick() {
+    $( "div" ).show().fadeOut( "slow" );
+  }
+  $( "#bind" ).click(function() {
+    $( "#theone" )
+      .bind( "click", aClick )
+      .text( "Can Click!" );
+  });
+  $( "#unbind" ).click(function() {
+    $( "#theone" )
+      .unbind( "click", aClick )
+      .text( "Does nothing..." );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````To unbind just one previously bound handler, pass the function in as the second argument:
+  ```javascript
+  var foo = function() {
+    // Code to handle some kind of event
+  };
+  ​
+  $( "p" ).bind( "click", foo ); // ... Now foo will be called when paragraphs are clicked ...
+  ​
+  $( "p" ).unbind( "click", foo ); // ... foo will no longer be called.
+  ```
+       */
+  def unbind[TType /* <: java.lang.String */](event: TType, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
        * @param namespace A selector which will be used to filter the event results.
@@ -29608,10 +29598,10 @@ trait JQuery[TElement]
   $( "body" ).undelegate( "p", "click", foo );
   ```
        */
-  def undelegate(
+  def undelegate[TType /* <: java.lang.String */](
     selector: jqueryLib.JQueryNs.Selector,
-    eventType: java.lang.String,
-    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, java.lang.String]
+    eventType: TType,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, TType]
   ): this.type = js.native
   /**
        * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
@@ -29682,9 +29672,9 @@ trait JQuery[TElement]
   $( "body" ).undelegate( "p", "click", foo );
   ```
        */
-  def undelegate(
+  def undelegate[TType /* <: java.lang.String */](
     selector: jqueryLib.JQueryNs.Selector,
-    eventType: java.lang.String,
+    eventType: TType,
     handler: jqueryLib.jqueryLibNumbers.`false`
   ): this.type = js.native
   /**

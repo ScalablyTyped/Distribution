@@ -9,6 +9,26 @@ import scala.scalajs.js.annotation._
 @js.native
 object PinpointEmailNs extends js.Object {
   
+  trait BlacklistEntry extends js.Object {
+    /**
+         * Additional information about the blacklisting event, as provided by the blacklist maintainer.
+         */
+    var Description: js.UndefOr[BlacklistingDescription] = js.undefined
+    /**
+         * The time when the blacklisting event occurred, shown in Unix time format.
+         */
+    var ListingTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The name of the blacklist that the IP address appears on.
+         */
+    var RblName: js.UndefOr[RblName] = js.undefined
+  }
+  
+  
+  trait BlacklistReport
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[BlacklistEntries]
+  
+  
   trait Body extends js.Object {
     /**
          * An object that represents the version of the message that is displayed in email clients that support HTML. HTML messages can include formatted text, hyperlinks, images, and more. 
@@ -122,6 +142,34 @@ object PinpointEmailNs extends js.Object {
   trait CreateDedicatedIpPoolResponse extends js.Object
   
   
+  trait CreateDeliverabilityTestReportRequest extends js.Object {
+    /**
+         * The HTML body of the message that you sent when you performed the predictive inbox placement test.
+         */
+    var Content: EmailContent
+    /**
+         * The email address that the predictive inbox placement test email was sent from.
+         */
+    var FromEmailAddress: EmailAddress
+    /**
+         * A unique name that helps you to identify the predictive inbox placement test when you retrieve the results.
+         */
+    var ReportName: js.UndefOr[ReportName] = js.undefined
+  }
+  
+  
+  trait CreateDeliverabilityTestReportResponse extends js.Object {
+    /**
+         * The status of the predictive inbox placement test. If the status is IN_PROGRESS, then the predictive inbox placement test is currently running. Predictive inbox placement tests are usually complete within 24 hours of creating the test. If the status is COMPLETE, then the test is finished, and you can use the GetDeliverabilityTestReport to view the results of the test.
+         */
+    var DeliverabilityTestStatus: DeliverabilityTestStatus
+    /**
+         * A unique string that identifies the predictive inbox placement test.
+         */
+    var ReportId: ReportId
+  }
+  
+  
   trait CreateEmailIdentityRequest extends js.Object {
     /**
          * The email address or domain that you want to verify.
@@ -143,6 +191,22 @@ object PinpointEmailNs extends js.Object {
          * Specifies whether or not the identity is verified. In Amazon Pinpoint, you can only send email from verified email addresses or domains. For more information about verifying identities, see the Amazon Pinpoint User Guide.
          */
     var VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
+  }
+  
+  
+  trait DailyVolume extends js.Object {
+    /**
+         * An object that contains inbox placement metrics for a specifid day in the analysis period, broken out by the recipient's email provider.
+         */
+    var DomainIspPlacements: js.UndefOr[DomainIspPlacements] = js.undefined
+    /**
+         * The date that the DailyVolume metrics apply to, in Unix time.
+         */
+    var StartDate: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * An object that contains inbox placement metrics for a specific day in the analysis period.
+         */
+    var VolumeStatistics: js.UndefOr[VolumeStatistics] = js.undefined
   }
   
   
@@ -214,6 +278,34 @@ object PinpointEmailNs extends js.Object {
   trait DeleteEmailIdentityResponse extends js.Object
   
   
+  trait DeliverabilityTestReport extends js.Object {
+    /**
+         * The date and time when the predictive inbox placement test was created, in Unix time format.
+         */
+    var CreateDate: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The status of the predictive inbox placement test. If the status is IN_PROGRESS, then the predictive inbox placement test is currently running. Predictive inbox placement tests are usually complete within 24 hours of creating the test. If the status is COMPLETE, then the test is finished, and you can use the GetDeliverabilityTestReport to view the results of the test.
+         */
+    var DeliverabilityTestStatus: js.UndefOr[DeliverabilityTestStatus] = js.undefined
+    /**
+         * The sender address that you specified for the predictive inbox placement test.
+         */
+    var FromEmailAddress: js.UndefOr[EmailAddress] = js.undefined
+    /**
+         * A unique string that identifies the predictive inbox placement test.
+         */
+    var ReportId: js.UndefOr[ReportId] = js.undefined
+    /**
+         * A name that helps you identify a predictive inbox placement test report.
+         */
+    var ReportName: js.UndefOr[ReportName] = js.undefined
+    /**
+         * The subject line for an email that you submitted in a predictive inbox placement test.
+         */
+    var Subject: js.UndefOr[DeliverabilityTestSubject] = js.undefined
+  }
+  
+  
   trait DeliveryOptions extends js.Object {
     /**
          * The name of the dedicated IP pool that you want to associate with the configuration set.
@@ -251,6 +343,30 @@ object PinpointEmailNs extends js.Object {
          * A set of unique strings that you use to create a set of CNAME records that you add to the DNS configuration for your domain. When Amazon Pinpoint detects these records in the DNS configuration for your domain, the DKIM authentication process is complete. Amazon Pinpoint usually detects these records within about 72 hours of adding them to the DNS configuration for your domain.
          */
     var Tokens: js.UndefOr[DnsTokenList] = js.undefined
+  }
+  
+  
+  trait DomainIspPlacement extends js.Object {
+    /**
+         * The percentage of messages that were sent from the selected domain to the specified email provider that arrived in recipients' inboxes.
+         */
+    var InboxPercentage: js.UndefOr[Percentage] = js.undefined
+    /**
+         * The total number of messages that were sent from the selected domain to the specified email provider that arrived in recipients' inboxes.
+         */
+    var InboxRawCount: js.UndefOr[Volume] = js.undefined
+    /**
+         * The name of the email provider that the inbox placement data applies to.
+         */
+    var IspName: js.UndefOr[IspName] = js.undefined
+    /**
+         * The percentage of messages that were sent from the selected domain to the specified email provider that arrived in recipients' spam or junk mail folders.
+         */
+    var SpamPercentage: js.UndefOr[Percentage] = js.undefined
+    /**
+         * The total number of messages that were sent from the selected domain to the specified email provider that arrived in recipients' spam or junk mail folders.
+         */
+    var SpamRawCount: js.UndefOr[Volume] = js.undefined
   }
   
   
@@ -353,6 +469,22 @@ object PinpointEmailNs extends js.Object {
   }
   
   
+  trait GetBlacklistReportsRequest extends js.Object {
+    /**
+         * A list of IP addresses that you want to retrieve blacklist information about. You can only specify the dedicated IP addresses that you use to send email using Amazon Pinpoint or Amazon SES.
+         */
+    var BlacklistItemNames: BlacklistItemNames
+  }
+  
+  
+  trait GetBlacklistReportsResponse extends js.Object {
+    /**
+         * An object that contains information about a blacklist that one of your dedicated IP addresses appears on.
+         */
+    var BlacklistReport: BlacklistReport
+  }
+  
+  
   trait GetConfigurationSetEventDestinationsRequest extends js.Object {
     /**
          * The name of the configuration set that contains the event destination.
@@ -445,6 +577,73 @@ object PinpointEmailNs extends js.Object {
   }
   
   
+  trait GetDeliverabilityDashboardOptionsRequest extends js.Object
+  
+  
+  trait GetDeliverabilityDashboardOptionsResponse extends js.Object {
+    /**
+         * Indicates whether the Deliverability dashboard is enabled. If the value is true, then the dashboard is enabled.
+         */
+    var DashboardEnabled: Enabled
+  }
+  
+  
+  trait GetDeliverabilityTestReportRequest extends js.Object {
+    /**
+         * A unique string that identifies the predictive inbox placement test.
+         */
+    var ReportId: ReportId
+  }
+  
+  
+  trait GetDeliverabilityTestReportResponse extends js.Object {
+    /**
+         * An object that contains the results of the predictive inbox placement test.
+         */
+    var DeliverabilityTestReport: DeliverabilityTestReport
+    /**
+         * An object that describes how the test email was handled by several email providers, including Gmail, Hotmail, Yahoo, AOL, and others.
+         */
+    var IspPlacements: IspPlacements
+    /**
+         * An object that contains the message that you sent when you performed this predictive inbox placement test.
+         */
+    var Message: js.UndefOr[MessageContent] = js.undefined
+    /**
+         * An object that specifies how many test messages that were sent during the predictive inbox placement test were delivered to recipients' inboxes, how many were sent to recipients' spam folders, and how many weren't delivered.
+         */
+    var OverallPlacement: PlacementStatistics
+  }
+  
+  
+  trait GetDomainStatisticsReportRequest extends js.Object {
+    /**
+         * The domain that you want to obtain deliverability metrics for.
+         */
+    var Domain: Identity
+    /**
+         * The last day (in Unix time) that you want to obtain domain deliverability metrics for. The EndDate that you specify has to be less than or equal to 30 days after the StartDate.
+         */
+    var EndDate: Timestamp
+    /**
+         * The first day (in Unix time) that you want to obtain domain deliverability metrics for.
+         */
+    var StartDate: Timestamp
+  }
+  
+  
+  trait GetDomainStatisticsReportResponse extends js.Object {
+    /**
+         * An object that contains deliverability metrics for the domain that you specified. This object contains data for each day, starting on the StartDate and ending on the EndDate.
+         */
+    var DailyVolumes: DailyVolumes
+    /**
+         * An object that contains deliverability metrics for the domain that you specified. The data in this object is a summary of all of the data that was collected from the StartDate to the EndDate.
+         */
+    var OverallVolume: OverallVolume
+  }
+  
+  
   trait GetEmailIdentityRequest extends js.Object {
     /**
          * The email identity that you want to retrieve details for.
@@ -490,6 +689,18 @@ object PinpointEmailNs extends js.Object {
          * Indicates whether or not you can send email from the identity. In Amazon Pinpoint, an identity is an email address or domain that you send email from. Before you can send email from an identity, you have to demostrate that you own the identity, and that you authorize Amazon Pinpoint to send email from that identity.
          */
     var SendingEnabled: js.UndefOr[Enabled] = js.undefined
+  }
+  
+  
+  trait IspPlacement extends js.Object {
+    /**
+         * The name of the email provider that the inbox placement data applies to.
+         */
+    var IspName: js.UndefOr[IspName] = js.undefined
+    /**
+         * An object that contains inbox placement metrics for a specific email provider.
+         */
+    var PlacementStatistics: js.UndefOr[PlacementStatistics] = js.undefined
   }
   
   
@@ -548,6 +759,30 @@ object PinpointEmailNs extends js.Object {
     var DedicatedIpPools: js.UndefOr[ListOfDedicatedIpPools] = js.undefined
     /**
          * A token that indicates that there are additional IP pools to list. To view additional IP pools, issue another request to ListDedicatedIpPools, passing this token in the NextToken parameter.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait ListDeliverabilityTestReportsRequest extends js.Object {
+    /**
+         * A token returned from a previous call to ListDeliverabilityTestReports to indicate the position in the list of predictive inbox placement tests.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * The number of results to show in a single call to ListDeliverabilityTestReports. If the number of results is larger than the number you specified in this parameter, then the response includes a NextToken element, which you can use to obtain additional results. The value you specify has to be at least 0, and can be no more than 1000.
+         */
+    var PageSize: js.UndefOr[MaxItems] = js.undefined
+  }
+  
+  
+  trait ListDeliverabilityTestReportsResponse extends js.Object {
+    /**
+         * An object that contains a lists of predictive inbox placement tests that you've performed.
+         */
+    var DeliverabilityTestReports: DeliverabilityTestReports
+    /**
+         * A token that indicates that there are additional predictive inbox placement tests to list. To view additional predictive inbox placement tests, issue another request to ListDeliverabilityTestReports, and pass this token in the NextToken parameter.
          */
     var NextToken: js.UndefOr[NextToken] = js.undefined
   }
@@ -617,11 +852,51 @@ object PinpointEmailNs extends js.Object {
   }
   
   
+  trait OverallVolume extends js.Object {
+    /**
+         * An object that contains inbox and junk mail placement metrics for individual email providers.
+         */
+    var DomainIspPlacements: js.UndefOr[DomainIspPlacements] = js.undefined
+    /**
+         * The percentage of emails that were sent from the domain that were read by their recipients.
+         */
+    var ReadRatePercent: js.UndefOr[Percentage] = js.undefined
+    /**
+         * An object that contains information about the numbers of messages that arrived in recipients' inboxes and junk mail folders.
+         */
+    var VolumeStatistics: js.UndefOr[VolumeStatistics] = js.undefined
+  }
+  
+  
   trait PinpointDestination extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the Amazon Pinpoint project that you want to send email events to.
          */
     var ApplicationArn: js.UndefOr[AmazonResourceName] = js.undefined
+  }
+  
+  
+  trait PlacementStatistics extends js.Object {
+    /**
+         * The percentage of emails that were authenticated by using DomainKeys Identified Mail (DKIM) during the predictive inbox placement test.
+         */
+    var DkimPercentage: js.UndefOr[Percentage] = js.undefined
+    /**
+         * The percentage of emails that arrived in recipients' inboxes during the predictive inbox placement test.
+         */
+    var InboxPercentage: js.UndefOr[Percentage] = js.undefined
+    /**
+         * The percentage of emails that didn't arrive in recipients' inboxes at all during the predictive inbox placement test.
+         */
+    var MissingPercentage: js.UndefOr[Percentage] = js.undefined
+    /**
+         * The percentage of emails that arrived in recipients' spam or junk mail folders during the predictive inbox placement test.
+         */
+    var SpamPercentage: js.UndefOr[Percentage] = js.undefined
+    /**
+         * The percentage of emails that were authenticated by using Sender Policy Framework (SPF) during the predictive inbox placement test.
+         */
+    var SpfPercentage: js.UndefOr[Percentage] = js.undefined
   }
   
   
@@ -737,6 +1012,17 @@ object PinpointEmailNs extends js.Object {
   trait PutDedicatedIpWarmupAttributesResponse extends js.Object
   
   
+  trait PutDeliverabilityDashboardOptionRequest extends js.Object {
+    /**
+         * Indicates whether the Deliverability dashboard is enabled. If the value is true, then the dashboard is enabled.
+         */
+    var DashboardEnabled: Enabled
+  }
+  
+  
+  trait PutDeliverabilityDashboardOptionResponse extends js.Object
+  
+  
   trait PutEmailIdentityDkimAttributesRequest extends js.Object {
     /**
          * The email identity that you want to change the DKIM settings for.
@@ -796,7 +1082,7 @@ object PinpointEmailNs extends js.Object {
   
   trait ReputationOptions extends js.Object {
     /**
-         * The date and time when the reputation metrics were last given a fresh start. When your account is given a fresh start, your reputation metrics are calculated starting from the date of the fresh start.
+         * The date and time (in Unix time) when the reputation metrics were last given a fresh start. When your account is given a fresh start, your reputation metrics are calculated starting from the date of the fresh start.
          */
     var LastFreshStart: js.UndefOr[LastFreshStart] = js.undefined
     /**
@@ -978,6 +1264,35 @@ object PinpointEmailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDedicatedIpPoolResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
+       */
+    def createDeliverabilityTestReport(): awsDashSdkLib.libRequestMod.Request[CreateDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
+       */
+    def createDeliverabilityTestReport(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateDeliverabilityTestReportResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
+       */
+    def createDeliverabilityTestReport(params: CreateDeliverabilityTestReportRequest): awsDashSdkLib.libRequestMod.Request[CreateDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Create a new predictive inbox placement test. Predictive inbox placement tests can help you predict how your messages will be handled by various email providers around the world. When you perform a predictive inbox placement test, you provide a sample message that contains the content that you plan to send to your customers. Amazon Pinpoint then sends that message to special email addresses spread across several major email providers. After about 24 hours, the test is complete, and you can use the GetDeliverabilityTestReport operation to view the results of the test.
+       */
+    def createDeliverabilityTestReport(
+      params: CreateDeliverabilityTestReportRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateDeliverabilityTestReportResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Verifies an email identity for use with Amazon Pinpoint. In Amazon Pinpoint, an identity is an email address or domain that you use when you send email. Before you can use an identity to send email with Amazon Pinpoint, you first have to verify it. By verifying an address, you demonstrate that you're the owner of the address, and that you've given Amazon Pinpoint permission to send email from the address. When you verify an email address, Amazon Pinpoint sends an email to the address. Your email address is verified as soon as you follow the link in the verification email.  When you verify a domain, this operation provides a set of DKIM tokens, which you can convert into CNAME tokens. You add these CNAME tokens to the DNS configuration for your domain. Your domain is verified when Amazon Pinpoint detects these records in the DNS configuration for your domain. It usually takes around 72 hours to complete the domain verification process.
        */
     def createEmailIdentity(): awsDashSdkLib.libRequestMod.Request[CreateEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1152,6 +1467,35 @@ object PinpointEmailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
+       */
+    def getBlacklistReports(): awsDashSdkLib.libRequestMod.Request[GetBlacklistReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
+       */
+    def getBlacklistReports(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetBlacklistReportsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetBlacklistReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
+       */
+    def getBlacklistReports(params: GetBlacklistReportsRequest): awsDashSdkLib.libRequestMod.Request[GetBlacklistReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve a list of the blacklists that your dedicated IP addresses appear on.
+       */
+    def getBlacklistReports(
+      params: GetBlacklistReportsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetBlacklistReportsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetBlacklistReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Get information about an existing configuration set, including the dedicated IP pool that it's associated with, whether or not it's enabled for sending email, and more. In Amazon Pinpoint, configuration sets are groups of rules that you can apply to the emails you send. You apply a configuration set to an email by including a reference to the configuration set in the headers of the email. When you apply a configuration set to an email, all of the rules in that configuration set are applied to the email.
        */
     def getConfigurationSet(): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1268,6 +1612,93 @@ object PinpointEmailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+       */
+    def getDeliverabilityDashboardOptions(): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+       */
+    def getDeliverabilityDashboardOptions(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetDeliverabilityDashboardOptionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+       */
+    def getDeliverabilityDashboardOptions(params: GetDeliverabilityDashboardOptionsRequest): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+       */
+    def getDeliverabilityDashboardOptions(
+      params: GetDeliverabilityDashboardOptionsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetDeliverabilityDashboardOptionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve the results of a predictive inbox placement test.
+       */
+    def getDeliverabilityTestReport(): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve the results of a predictive inbox placement test.
+       */
+    def getDeliverabilityTestReport(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetDeliverabilityTestReportResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve the results of a predictive inbox placement test.
+       */
+    def getDeliverabilityTestReport(params: GetDeliverabilityTestReportRequest): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve the results of a predictive inbox placement test.
+       */
+    def getDeliverabilityTestReport(
+      params: GetDeliverabilityTestReportRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetDeliverabilityTestReportResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve inbox placement and engagement rates for the domains that you use to send email.
+       */
+    def getDomainStatisticsReport(): awsDashSdkLib.libRequestMod.Request[GetDomainStatisticsReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve inbox placement and engagement rates for the domains that you use to send email.
+       */
+    def getDomainStatisticsReport(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetDomainStatisticsReportResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetDomainStatisticsReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve inbox placement and engagement rates for the domains that you use to send email.
+       */
+    def getDomainStatisticsReport(params: GetDomainStatisticsReportRequest): awsDashSdkLib.libRequestMod.Request[GetDomainStatisticsReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieve inbox placement and engagement rates for the domains that you use to send email.
+       */
+    def getDomainStatisticsReport(
+      params: GetDomainStatisticsReportRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetDomainStatisticsReportResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetDomainStatisticsReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Provides information about a specific identity associated with your Amazon Pinpoint account, including the identity's verification status, its DKIM authentication status, and its custom Mail-From settings.
        */
     def getEmailIdentity(): awsDashSdkLib.libRequestMod.Request[GetEmailIdentityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1354,6 +1785,35 @@ object PinpointEmailNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDedicatedIpPoolsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
+       */
+    def listDeliverabilityTestReports(): awsDashSdkLib.libRequestMod.Request[ListDeliverabilityTestReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
+       */
+    def listDeliverabilityTestReports(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListDeliverabilityTestReportsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListDeliverabilityTestReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
+       */
+    def listDeliverabilityTestReports(params: ListDeliverabilityTestReportsRequest): awsDashSdkLib.libRequestMod.Request[ListDeliverabilityTestReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the GetDeliverabilityTestReport operation to view the results.
+       */
+    def listDeliverabilityTestReports(
+      params: ListDeliverabilityTestReportsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListDeliverabilityTestReportsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListDeliverabilityTestReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Returns a list of all of the email identities that are associated with your Amazon Pinpoint account. An identity can be either an email address or a domain. This operation returns identities that are verified as well as those that aren't.
        */
@@ -1616,6 +2076,35 @@ object PinpointEmailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+       */
+    def putDeliverabilityDashboardOption(): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+       */
+    def putDeliverabilityDashboardOption(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutDeliverabilityDashboardOptionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+       */
+    def putDeliverabilityDashboardOption(params: PutDeliverabilityDashboardOptionRequest): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+       */
+    def putDeliverabilityDashboardOption(
+      params: PutDeliverabilityDashboardOptionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutDeliverabilityDashboardOptionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Used to enable or disable DKIM authentication for an email identity.
        */
     def putEmailIdentityDkimAttributes(): awsDashSdkLib.libRequestMod.Request[PutEmailIdentityDkimAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1781,22 +2270,51 @@ object PinpointEmailNs extends js.Object {
   
   trait UpdateConfigurationSetEventDestinationResponse extends js.Object
   
+  
+  trait VolumeStatistics extends js.Object {
+    /**
+         * The total number of emails that arrived in recipients' inboxes.
+         */
+    var InboxRawCount: js.UndefOr[Volume] = js.undefined
+    /**
+         * An estimate of the percentage of emails sent from the current domain that will arrive in recipients' inboxes.
+         */
+    var ProjectedInbox: js.UndefOr[Volume] = js.undefined
+    /**
+         * An estimate of the percentage of emails sent from the current domain that will arrive in recipients' spam or junk mail folders.
+         */
+    var ProjectedSpam: js.UndefOr[Volume] = js.undefined
+    /**
+         * The total number of emails that arrived in recipients' spam or junk mail folders.
+         */
+    var SpamRawCount: js.UndefOr[Volume] = js.undefined
+  }
+  
   val TypesNs: this.type = js.native
   type AmazonResourceName = java.lang.String
   type BehaviorOnMxFailure = awsDashSdkLib.awsDashSdkLibStrings.USE_DEFAULT_VALUE | awsDashSdkLib.awsDashSdkLibStrings.REJECT_MESSAGE | java.lang.String
+  type BlacklistEntries = js.Array[BlacklistEntry]
+  type BlacklistItemName = java.lang.String
+  type BlacklistItemNames = js.Array[BlacklistItemName]
+  type BlacklistingDescription = java.lang.String
   type Charset = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CloudWatchDimensionConfigurations = js.Array[CloudWatchDimensionConfiguration]
   type ConfigurationSetName = java.lang.String
   type ConfigurationSetNameList = js.Array[ConfigurationSetName]
   type CustomRedirectDomain = java.lang.String
+  type DailyVolumes = js.Array[DailyVolume]
   type DedicatedIpList = js.Array[DedicatedIp]
   type DefaultDimensionValue = java.lang.String
+  type DeliverabilityTestReports = js.Array[DeliverabilityTestReport]
+  type DeliverabilityTestStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | java.lang.String
+  type DeliverabilityTestSubject = java.lang.String
   type DimensionName = java.lang.String
   type DimensionValueSource = awsDashSdkLib.awsDashSdkLibStrings.MESSAGE_TAG | awsDashSdkLib.awsDashSdkLibStrings.EMAIL_HEADER | awsDashSdkLib.awsDashSdkLibStrings.LINK_TAG | java.lang.String
   type DkimStatus = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TEMPORARY_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.NOT_STARTED | java.lang.String
   type DnsToken = java.lang.String
   type DnsTokenList = js.Array[DnsToken]
+  type DomainIspPlacements = js.Array[DomainIspPlacement]
   type EmailAddress = java.lang.String
   type EmailAddressList = js.Array[EmailAddress]
   type Enabled = scala.Boolean
@@ -1809,6 +2327,8 @@ object PinpointEmailNs extends js.Object {
   type IdentityInfoList = js.Array[IdentityInfo]
   type IdentityType = awsDashSdkLib.awsDashSdkLibStrings.EMAIL_ADDRESS | awsDashSdkLib.awsDashSdkLibStrings.DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.MANAGED_DOMAIN | java.lang.String
   type Ip = java.lang.String
+  type IspName = java.lang.String
+  type IspPlacements = js.Array[IspPlacement]
   type LastFreshStart = stdLib.Date
   type ListOfDedicatedIpPools = js.Array[PoolName]
   type MailFromDomainName = java.lang.String
@@ -1816,17 +2336,24 @@ object PinpointEmailNs extends js.Object {
   type Max24HourSend = scala.Double
   type MaxItems = scala.Double
   type MaxSendRate = scala.Double
+  type MessageContent = java.lang.String
   type MessageData = java.lang.String
   type MessageTagList = js.Array[MessageTag]
   type MessageTagName = java.lang.String
   type MessageTagValue = java.lang.String
   type NextToken = java.lang.String
   type OutboundMessageId = java.lang.String
+  type Percentage = scala.Double
   type Percentage100Wrapper = scala.Double
   type PoolName = java.lang.String
   type RawMessageData = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsPinpointemailMod.Blob | java.lang.String
+  type RblName = java.lang.String
+  type ReportId = java.lang.String
+  type ReportName = java.lang.String
   type SendingPoolName = java.lang.String
   type SentLast24Hours = scala.Double
+  type Timestamp = stdLib.Date
+  type Volume = scala.Double
   type WarmupStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DONE | java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-07-26` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

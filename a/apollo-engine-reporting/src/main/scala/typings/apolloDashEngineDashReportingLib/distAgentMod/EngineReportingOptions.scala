@@ -23,8 +23,12 @@ trait EngineReportingOptions[TContext] extends js.Object {
   var maxAttempts: js.UndefOr[scala.Double] = js.undefined
   var maxUncompressedReportSize: js.UndefOr[scala.Double] = js.undefined
   var minimumRetryDelayMs: js.UndefOr[scala.Double] = js.undefined
-  var privateHeaders: js.UndefOr[js.Array[nodeLib.String] | scala.Boolean] = js.undefined
-  var privateVariables: js.UndefOr[js.Array[nodeLib.String] | scala.Boolean] = js.undefined
+  var privateHeaders: js.UndefOr[
+    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[nodeLib.String] | scala.Boolean
+  ] = js.undefined
+  var privateVariables: js.UndefOr[
+    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[nodeLib.String] | scala.Boolean
+  ] = js.undefined
   var reportErrorFunction: js.UndefOr[js.Function1[/* err */ nodeLib.Error, scala.Unit]] = js.undefined
   var reportIntervalMs: js.UndefOr[scala.Double] = js.undefined
   var requestAgent: js.UndefOr[

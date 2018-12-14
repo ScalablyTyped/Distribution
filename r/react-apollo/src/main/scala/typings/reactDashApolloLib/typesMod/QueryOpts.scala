@@ -12,6 +12,7 @@ trait QueryOpts[TGraphQLVariables] extends js.Object {
   var errorPolicy: js.UndefOr[apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy] = js.undefined
   var fetchPolicy: js.UndefOr[apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy] = js.undefined
   var notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined
+  var partialRefetch: js.UndefOr[scala.Boolean] = js.undefined
   var pollInterval: js.UndefOr[scala.Double] = js.undefined
   var ssr: js.UndefOr[scala.Boolean] = js.undefined
   var variables: js.UndefOr[TGraphQLVariables] = js.undefined

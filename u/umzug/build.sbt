@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "umzug"
-version := "v2.2.0-dt-20180910Z-ea4e48"
+version := "v2.2.0-dt-20180910Z-87c148"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-b88fdf",
-  "org.scalablytyped" %%% "bson" % "1.0.6-dt-20180910Z-d9a75f",
-  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20180910Z-98b3ff",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181214Z-e561d3",
+  "org.scalablytyped" %%% "bson" % "1.0.6-dt-20180910Z-9880e9",
+  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20180910Z-ccbe98",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-93340d",
-  "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181203Z-2392b9",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
-  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20181211Z-47f37a",
+  "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181203Z-b7de20",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
+  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20181211Z-eb2172",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "validator" % "v9.4-dt-20181213Z-c8893f")
 publishArtifact in packageDoc := false

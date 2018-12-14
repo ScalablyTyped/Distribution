@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "chai-jquery"
-version := "1.1.1-dt-20181109Z-d048af"
+version := "1.1.1-dt-20181109Z-589942"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "chai" % "4.1-dt-20181027Z-6866ba",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181212Z-994342",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181214Z-702232",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-27b737",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false

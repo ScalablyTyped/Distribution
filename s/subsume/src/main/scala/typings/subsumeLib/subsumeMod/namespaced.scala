@@ -27,5 +27,7 @@ class namespaced () extends Subsume {
 @js.native
 object namespaced extends js.Object {
   def parse(text: java.lang.String, id: java.lang.String): subsumeLib.subsumeMod.SubsumeNs.ParseResult = js.native
+  def parseAll(text: java.lang.String): subsumeLib.subsumeMod.SubsumeNs.ParseResults = js.native
+  def parseAll(text: java.lang.String, ids: js.Array[java.lang.String]): subsumeLib.subsumeMod.SubsumeNs.ParseResults = js.native
 }
 

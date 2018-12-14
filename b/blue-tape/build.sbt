@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "blue-tape"
-version := "v0.1.11-dt-20180910Z-19f97f"
+version := "v0.1.11-dt-20180910Z-79a7fd"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "tape" % "v4.2.30-dt-20180910Z-882c8a")
+  "org.scalablytyped" %%% "tape" % "v4.2.30-dt-20180910Z-f4e432")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

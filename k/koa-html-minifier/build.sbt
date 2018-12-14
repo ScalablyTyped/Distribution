@@ -1,28 +1,28 @@
 organization := "org.scalablytyped"
 name := "koa-html-minifier"
-version := "1.0-dt-20180910Z-b31f1f"
+version := "1.0-dt-20180910Z-92fb3b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180910Z-8771e0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-4656cd",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180910Z-43d569",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-984ce4",
   "org.scalablytyped" %%% "clean-css" % "v3.4.9-dt-20180910Z-00da7e",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-d4abef",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180910Z-47baa6",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20180910Z-a3132b",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-a3aa42",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-3335a7",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180910Z-3da929",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20180910Z-420192",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-ec2aeb",
   "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20180910Z-946099",
   "org.scalablytyped" %%% "http-assert" % "1.3-dt-20181121Z-f2e347",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180910Z-c19616",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20181120Z-fa9d40",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20181120Z-3bb500",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180910Z-96bbad",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-08f14a",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181208Z-85fa0c",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20180910Z-29cd98",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-1add06",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-06fcdd",
   "org.scalablytyped" %%% "source-map" % "0.7.3-6ade85",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181018Z-3c1589")

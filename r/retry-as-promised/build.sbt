@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "retry-as-promised"
-version := "2.3-dt-20180910Z-441fb9"
+version := "2.3-dt-20180910Z-140e9b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-b88fdf",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181214Z-e561d3",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

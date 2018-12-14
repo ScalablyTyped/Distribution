@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "router5"
-version := "6.6.2-cb3e0d"
+version := "6.6.2-e33ff6"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,6 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "path-parser" % "4.2.0-714f8a",
   "org.scalablytyped" %%% "route-node" % "3.4.2-68392f",
-  "org.scalablytyped" %%% "router5-transition-path" % "5.4.0-b7ba9b",
   "org.scalablytyped" %%% "search-params" % "2.1.3-1be8bf",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-343133")

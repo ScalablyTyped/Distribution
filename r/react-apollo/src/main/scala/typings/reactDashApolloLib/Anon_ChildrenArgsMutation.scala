@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_ChildrenArgsMutation extends js.Object {
   var awaitRefetchQueries: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   var children: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */_, _]]
+  var fetchPolicy: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var mutation: propDashTypesLib.propDashTypesMod.Validator[js.Object]
   var onCompleted: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]
   var onError: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */_, _]]

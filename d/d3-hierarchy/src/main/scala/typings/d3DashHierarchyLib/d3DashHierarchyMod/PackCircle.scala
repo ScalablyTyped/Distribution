@@ -14,10 +14,10 @@ trait PackCircle extends js.Object {
   /**
        * The x-coordinate of the circle’s center.
        */
-  var x: js.UndefOr[scala.Double] = js.undefined
+  var x: scala.Double
   /**
        * The y-coordinate of the circle’s center.
        */
-  var y: js.UndefOr[scala.Double] = js.undefined
+  var y: scala.Double
 }
 

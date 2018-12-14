@@ -129,6 +129,26 @@ trait Cypress extends js.Object {
        *    }
        */
   var version: java.lang.String = js.native
+  /**
+       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+       * @param element A DOM element to wrap in a jQuery object.
+       * @see \`{@link https://api.jquery.com/jQuery/ }\`
+       * @since 1.0
+       * @example ​ ````Set the background color of the page to black.
+  ```javascript
+  $( document.body ).css( "background", "black" );
+  ```
+       */
+  // NOTE: `HTMLSelectElement` is both an Element and an Array-Like Object but jQuery treats it as an Element.
+  /**
+       * jQuery library
+       *
+       * @see https://on.cypress.io/$
+       * @example
+       *    Cypress.$('p')
+       */
+  @JSName("$")
+  def $(element: stdLib.HTMLSelectElement): jqueryLib.JQuery[stdLib.HTMLSelectElement] = js.native
   // HACK: This is the factory function returned when importing jQuery without a DOM. Declaring it separately breaks using the type parameter on JQueryStatic.
   // HACK: The discriminator parameter handles the edge case of passing a Window object to JQueryStatic. It doesn't actually exist on the factory function.
   /**
@@ -185,36 +205,21 @@ trait Cypress extends js.Object {
   def $[TElement](callback: js.ThisFunction1[/* this */ stdLib.Document, /* $ */ this.type, scala.Unit]): jqueryLib.JQuery[TElement] = js.native
   /**
        * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-       * @param elementArray An array containing a set of DOM elements to wrap in a jQuery object.
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Hide all the input elements within a form.
-  ```javascript
-  $( myForm.elements ).hide();
-  ```
-       */
-  // Using a unified signature is not possible due to a TypeScript 2.4 bug (DefinitelyTyped#27810)
-  // tslint:disable-next-line:unified-signatures
-  /**
-       * jQuery library
-       *
-       * @see https://on.cypress.io/$
-       * @example
-       *    Cypress.$('p')
-       */
-  @JSName("$")
-  def $[T /* <: stdLib.Element */](elementArray: js.Array[T]): jqueryLib.JQuery[T] = js.native
-  /**
-       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-       * @param element A DOM element to wrap in a jQuery object.
+       * @param element_elementArray _&#x40;param_ `element_elementArray`
+       * <br>
+       * * `element` — A DOM element to wrap in a jQuery object. <br>
+       * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
        * @see \`{@link https://api.jquery.com/jQuery/ }\`
        * @since 1.0
        * @example ​ ````Set the background color of the page to black.
   ```javascript
   $( document.body ).css( "background", "black" );
   ```
+       * @example ​ ````Hide all the input elements within a form.
+  ```javascript
+  $( myForm.elements ).hide();
+  ```
        */
-  // Using a unified signature is not possible due to a TypeScript 2.4 bug (DefinitelyTyped#27810)
   /**
        * jQuery library
        *
@@ -223,7 +228,33 @@ trait Cypress extends js.Object {
        *    Cypress.$('p')
        */
   @JSName("$")
-  def $[T /* <: stdLib.Element */](element: T): jqueryLib.JQuery[T] = js.native
+  def $[T /* <: stdLib.Element */](element_elementArray: T): jqueryLib.JQuery[T] = js.native
+  /**
+       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+       * @param element_elementArray _&#x40;param_ `element_elementArray`
+       * <br>
+       * * `element` — A DOM element to wrap in a jQuery object. <br>
+       * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+       * @see \`{@link https://api.jquery.com/jQuery/ }\`
+       * @since 1.0
+       * @example ​ ````Set the background color of the page to black.
+  ```javascript
+  $( document.body ).css( "background", "black" );
+  ```
+       * @example ​ ````Hide all the input elements within a form.
+  ```javascript
+  $( myForm.elements ).hide();
+  ```
+       */
+  /**
+       * jQuery library
+       *
+       * @see https://on.cypress.io/$
+       * @example
+       *    Cypress.$('p')
+       */
+  @JSName("$")
+  def $[T /* <: stdLib.Element */](element_elementArray: stdLib.ArrayLike[T]): jqueryLib.JQuery[T] = js.native
   /**
        * Creates DOM elements on the fly from the provided string of raw HTML.
        * @param html _&#x40;param_ `html`

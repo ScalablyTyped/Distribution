@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IPersonaSharedProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotBaseMod.PersonaBase
+      officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotBaseMod.PersonaBase | reactLib.HTMLDivElement
     ] {
   /**
        * Whether initials are calculated for phone numbers and number sequences.
@@ -19,7 +19,7 @@ trait IPersonaSharedProps
   /**
        * Optional HTML element props for Persona coin.
        */
-  var coinProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var coinProps: js.UndefOr[IPersonaCoinProps] = js.undefined
   /**
        * Optional custom persona coin size in pixel.
        */

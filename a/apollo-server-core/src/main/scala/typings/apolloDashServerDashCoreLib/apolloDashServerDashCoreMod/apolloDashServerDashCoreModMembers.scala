@@ -10,7 +10,14 @@ import scala.scalajs.js.annotation._
 object apolloDashServerDashCoreModMembers extends js.Object {
   val GraphQLUpload: js.UndefOr[graphqlLib.graphqlMod.GraphQLScalarType] = js.native
   val defaultPlaygroundOptions: apolloDashServerDashCoreLib.Anon_Settings = js.native
-  val processFileUploads: js.UndefOr[js.Any] = js.native
+  val processFileUploads: js.UndefOr[
+    js.Function3[
+      /* request */ apolloDashServerDashCoreLib.graphqlDashUploadMod.Request, 
+      /* response */ apolloDashServerDashCoreLib.graphqlDashUploadMod.Response, 
+      /* options */ js.UndefOr[apolloDashServerDashCoreLib.graphqlDashUploadMod.ApolloUploadOptions], 
+      js.Promise[js.Any]
+    ]
+  ] = js.native
   def convertNodeHttpToRequest(req: nodeLib.httpMod.IncomingMessage): apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request = js.native
   def createPlaygroundOptions(): js.UndefOr[
     atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.RenderPageOptions

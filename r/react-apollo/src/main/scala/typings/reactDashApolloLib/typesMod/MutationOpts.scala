@@ -11,6 +11,7 @@ trait MutationOpts[TData, TGraphQLVariables] extends js.Object {
   var client: js.UndefOr[apolloDashClientLib.apolloDashClientMod.default[_]] = js.undefined
   var context: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
   var errorPolicy: js.UndefOr[apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy] = js.undefined
+  var fetchPolicy: js.UndefOr[apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy] = js.undefined
   var notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined
   var onCompleted: js.UndefOr[js.Function1[/* data */ TData, scala.Unit]] = js.undefined
   var onError: js.UndefOr[

@@ -74,7 +74,7 @@ object ckeditor5DashUtilsModMembers extends js.Object {
   def isText(obj: js.Any): /* is Text */scala.Boolean = js.native
   def isWindow(obj: js.Any): /* is Window */scala.Boolean = js.native
   def mapsEqual[K, V](mapsA: stdLib.Map[K, V], mapsB: stdLib.Map[K, V]): scala.Boolean = js.native
-  def mix(baseClass: atCkeditorCkeditor5DashUtilsLib.Anon_Any, mixins: js.Any*): scala.Unit = js.native
+  def mix[T](baseClass: atCkeditorCkeditor5DashUtilsLib.Anon_P[T], mixins: stdLib.Partial[T]*): scala.Unit = js.native
   def nth[T](index: scala.Double, iterable: stdLib.Iterable[T]): T = js.native
   def objectToMap[T /* <: js.Object */](obj: T): stdLib.Map[
     java.lang.String, 

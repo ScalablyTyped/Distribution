@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "backbone_dot_localstorage"
-version := "1.0.0-dt-20180910Z-12c2c6"
+version := "1.0.0-dt-20180910Z-fb3c7b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181206Z-d3c228",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181212Z-994342",
+  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181206Z-885162",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181214Z-702232",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-27b737",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "underscore" % "1.8-dt-20180910Z-057dfb")

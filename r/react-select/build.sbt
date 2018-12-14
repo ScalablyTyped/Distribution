@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-select"
-version := "2.0-dt-20181013Z-5e1be9"
+version := "2.0-dt-20181013Z-9db1de"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
   "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-c9a723",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-0f3c05",
   "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20180910Z-4f97e6",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false

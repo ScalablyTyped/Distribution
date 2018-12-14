@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ecmarkup"
-version := "3.16.0-ab03e0"
+version := "3.16.0-5bae7e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-ed6428",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-b88fdf",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181214Z-e561d3",
   "org.scalablytyped" %%% "chalk" % "2.4.1-76fe8f",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-f388aa",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-404a30",
@@ -15,8 +15,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "he" % "v1.1.1-dt-20180910Z-508801",
   "org.scalablytyped" %%% "highlight_dot_js" % "v9.12-dt-20180910Z-bebe09",
   "org.scalablytyped" %%% "js-yaml" % "3.11-dt-20180910Z-0e1a20",
-  "org.scalablytyped" %%% "jsdom" % "12.2-dt-20181121Z-719ca7",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "jsdom" % "12.2-dt-20181121Z-1fae80",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
   "org.scalablytyped" %%% "nomnom" % "0.0-unknown-dt-20180910Z-e92966",
   "org.scalablytyped" %%% "parse5" % "5.0-dt-20180910Z-ced19d",
   "org.scalablytyped" %%% "prex" % "0.4.5-91f3f0",

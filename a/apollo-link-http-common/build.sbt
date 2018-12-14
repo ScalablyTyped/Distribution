@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-link-http-common"
-version := "0.2.6-84f1d7"
+version := "0.2.7-84f1d7"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

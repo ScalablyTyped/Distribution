@@ -45,14 +45,14 @@ object recomposeModMembers extends js.Object {
   def defaultProps[T](props: T): DefaultingInferableComponentEnhancer[T] = js.native
   def flattenProp(propName: java.lang.String): ComponentEnhancer[_, _] = js.native
   def fromRenderProps[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: reactLib.reactMod.ReactNs.StatelessComponent[_],
-    propsMapper: js.Function1[/* props */ TRenderProps, stdLib.Partial[TInner]]
-  ): ComponentEnhancer[TInner, TOutter] = js.native
+    RenderPropsComponent: reactLib.reactMod.ReactNs.ComponentType[_],
+    propsMapper: js.Function1[/* props */ TRenderProps, TInner]
+  ): ComponentEnhancer[TInner with TOutter, TOutter] = js.native
   def fromRenderProps[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: reactLib.reactMod.ReactNs.StatelessComponent[_],
-    propsMapper: js.Function1[/* props */ TRenderProps, stdLib.Partial[TInner]],
+    RenderPropsComponent: reactLib.reactMod.ReactNs.ComponentType[_],
+    propsMapper: js.Function1[/* props */ TRenderProps, TInner],
     renderPropName: java.lang.String
-  ): ComponentEnhancer[TInner, TOutter] = js.native
+  ): ComponentEnhancer[TInner with TOutter, TOutter] = js.native
   def getContext[TContext](contextTypes: reactLib.reactMod.ReactNs.ValidationMap[TContext]): InferableComponentEnhancer[TContext] = js.native
   def getDisplayName(component: reactLib.reactMod.ReactNs.ComponentType[_]): java.lang.String = js.native
   def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps]): InferableComponentEnhancer[TProps] = js.native

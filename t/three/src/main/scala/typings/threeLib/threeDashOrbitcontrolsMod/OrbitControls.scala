@@ -24,7 +24,7 @@ class OrbitControls protected () extends js.Object {
   // API
   var enabled: scala.Boolean = js.native
   var keyPanSpeed: scala.Double = js.native
-  var keys: threeLib.Anon_RIGHT = js.native
+  var keys: threeLib.Anon_RIGHTUP = js.native
   var maxAzimuthAngle: scala.Double = js.native
   var maxDistance: scala.Double = js.native
   var maxPolarAngle: scala.Double = js.native

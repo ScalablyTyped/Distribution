@@ -115,6 +115,57 @@ class Session ()
   ): this.type = js.native
   @JSName("addListener")
   def addListener_HeapProfilerresetProfiles(event: nodeLib.nodeLibStrings.HeapProfilerDOTresetProfiles, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Contains an bucket of collected trace events.
+           */
+  @JSName("addListener")
+  def addListener_NodeTracingdataCollected(
+    event: nodeLib.nodeLibStrings.NodeTracingDOTdataCollected,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeTracingNs.DataCollectedEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+           * delivered via dataCollected events.
+           */
+  @JSName("addListener")
+  def addListener_NodeTracingtracingComplete(event: nodeLib.nodeLibStrings.NodeTracingDOTtracingComplete, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Issued when attached to a worker.
+           */
+  @JSName("addListener")
+  def addListener_NodeWorkerattachedToWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTattachedToWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.AttachedToWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Issued when detached from the worker.
+           */
+  @JSName("addListener")
+  def addListener_NodeWorkerdetachedFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTdetachedFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.DetachedFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Notifies about a new protocol message received from the session
+           * (session ID is provided in attachedToWorker notification).
+           */
+  @JSName("addListener")
+  def addListener_NodeWorkerreceivedMessageFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTreceivedMessageFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.ReceivedMessageFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_ProfilerconsoleProfileFinished(
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileFinished,
@@ -279,6 +330,28 @@ class Session ()
   @JSName("emit")
   def emit_HeapProfilerresetProfiles(event: nodeLib.nodeLibStrings.HeapProfilerDOTresetProfiles): scala.Boolean = js.native
   @JSName("emit")
+  def emit_NodeTracingdataCollected(
+    event: nodeLib.nodeLibStrings.NodeTracingDOTdataCollected,
+    message: InspectorNotification[nodeLib.inspectorMod.NodeTracingNs.DataCollectedEventDataType]
+  ): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_NodeTracingtracingComplete(event: nodeLib.nodeLibStrings.NodeTracingDOTtracingComplete): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_NodeWorkerattachedToWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTattachedToWorker,
+    message: InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.AttachedToWorkerEventDataType]
+  ): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_NodeWorkerdetachedFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTdetachedFromWorker,
+    message: InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.DetachedFromWorkerEventDataType]
+  ): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_NodeWorkerreceivedMessageFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTreceivedMessageFromWorker,
+    message: InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.ReceivedMessageFromWorkerEventDataType]
+  ): scala.Boolean = js.native
+  @JSName("emit")
   def emit_ProfilerconsoleProfileFinished(
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileFinished,
     message: InspectorNotification[nodeLib.inspectorMod.ProfilerNs.ConsoleProfileFinishedEventDataType]
@@ -425,6 +498,57 @@ class Session ()
   ): this.type = js.native
   @JSName("on")
   def on_HeapProfilerresetProfiles(event: nodeLib.nodeLibStrings.HeapProfilerDOTresetProfiles, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Contains an bucket of collected trace events.
+           */
+  @JSName("on")
+  def on_NodeTracingdataCollected(
+    event: nodeLib.nodeLibStrings.NodeTracingDOTdataCollected,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeTracingNs.DataCollectedEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+           * delivered via dataCollected events.
+           */
+  @JSName("on")
+  def on_NodeTracingtracingComplete(event: nodeLib.nodeLibStrings.NodeTracingDOTtracingComplete, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Issued when attached to a worker.
+           */
+  @JSName("on")
+  def on_NodeWorkerattachedToWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTattachedToWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.AttachedToWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Issued when detached from the worker.
+           */
+  @JSName("on")
+  def on_NodeWorkerdetachedFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTdetachedFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.DetachedFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Notifies about a new protocol message received from the session
+           * (session ID is provided in attachedToWorker notification).
+           */
+  @JSName("on")
+  def on_NodeWorkerreceivedMessageFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTreceivedMessageFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.ReceivedMessageFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
   @JSName("on")
   def on_ProfilerconsoleProfileFinished(
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileFinished,
@@ -630,6 +754,57 @@ class Session ()
   ): this.type = js.native
   @JSName("once")
   def once_HeapProfilerresetProfiles(event: nodeLib.nodeLibStrings.HeapProfilerDOTresetProfiles, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Contains an bucket of collected trace events.
+           */
+  @JSName("once")
+  def once_NodeTracingdataCollected(
+    event: nodeLib.nodeLibStrings.NodeTracingDOTdataCollected,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeTracingNs.DataCollectedEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+           * delivered via dataCollected events.
+           */
+  @JSName("once")
+  def once_NodeTracingtracingComplete(event: nodeLib.nodeLibStrings.NodeTracingDOTtracingComplete, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Issued when attached to a worker.
+           */
+  @JSName("once")
+  def once_NodeWorkerattachedToWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTattachedToWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.AttachedToWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Issued when detached from the worker.
+           */
+  @JSName("once")
+  def once_NodeWorkerdetachedFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTdetachedFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.DetachedFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Notifies about a new protocol message received from the session
+           * (session ID is provided in attachedToWorker notification).
+           */
+  @JSName("once")
+  def once_NodeWorkerreceivedMessageFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTreceivedMessageFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.ReceivedMessageFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
   @JSName("once")
   def once_ProfilerconsoleProfileFinished(
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileFinished,
@@ -1826,6 +2001,135 @@ class Session ()
     params: nodeLib.inspectorMod.HeapProfilerNs.TakeHeapSnapshotParameterType,
     callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
+  /**
+           * Gets supported tracing categories.
+           */
+  @JSName("post")
+  def post_NodeTracinggetCategories(method: nodeLib.nodeLibStrings.NodeTracingDOTgetCategories): scala.Unit = js.native
+  /**
+           * Gets supported tracing categories.
+           */
+  @JSName("post")
+  def post_NodeTracinggetCategories(
+    method: nodeLib.nodeLibStrings.NodeTracingDOTgetCategories,
+    callback: js.Function2[
+      /* err */ nodeLib.Error | scala.Null, 
+      /* params */ nodeLib.inspectorMod.NodeTracingNs.GetCategoriesReturnType, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+           * Start trace events collection.
+           */
+  @JSName("post")
+  def post_NodeTracingstart(method: nodeLib.nodeLibStrings.NodeTracingDOTstart): scala.Unit = js.native
+  @JSName("post")
+  def post_NodeTracingstart(
+    method: nodeLib.nodeLibStrings.NodeTracingDOTstart,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+           * Start trace events collection.
+           */
+  @JSName("post")
+  def post_NodeTracingstart(
+    method: nodeLib.nodeLibStrings.NodeTracingDOTstart,
+    params: nodeLib.inspectorMod.NodeTracingNs.StartParameterType
+  ): scala.Unit = js.native
+  /**
+           * Start trace events collection.
+           */
+  @JSName("post")
+  def post_NodeTracingstart(
+    method: nodeLib.nodeLibStrings.NodeTracingDOTstart,
+    params: nodeLib.inspectorMod.NodeTracingNs.StartParameterType,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+           * Stop trace events collection. Remaining collected events will be sent as a sequence of
+           * dataCollected events followed by tracingComplete event.
+           */
+  @JSName("post")
+  def post_NodeTracingstop(method: nodeLib.nodeLibStrings.NodeTracingDOTstop): scala.Unit = js.native
+  /**
+           * Stop trace events collection. Remaining collected events will be sent as a sequence of
+           * dataCollected events followed by tracingComplete event.
+           */
+  @JSName("post")
+  def post_NodeTracingstop(
+    method: nodeLib.nodeLibStrings.NodeTracingDOTstop,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+           * Detaches from all running workers and disables attaching to new workers as they are started.
+           */
+  @JSName("post")
+  def post_NodeWorkerdisable(method: nodeLib.nodeLibStrings.NodeWorkerDOTdisable): scala.Unit = js.native
+  /**
+           * Detaches from all running workers and disables attaching to new workers as they are started.
+           */
+  @JSName("post")
+  def post_NodeWorkerdisable(
+    method: nodeLib.nodeLibStrings.NodeWorkerDOTdisable,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+           * Instructs the inspector to attach to running workers. Will also attach to new workers
+           * as they start
+           */
+  @JSName("post")
+  def post_NodeWorkerenable(method: nodeLib.nodeLibStrings.NodeWorkerDOTenable): scala.Unit = js.native
+  @JSName("post")
+  def post_NodeWorkerenable(
+    method: nodeLib.nodeLibStrings.NodeWorkerDOTenable,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+           * Instructs the inspector to attach to running workers. Will also attach to new workers
+           * as they start
+           */
+  @JSName("post")
+  def post_NodeWorkerenable(
+    method: nodeLib.nodeLibStrings.NodeWorkerDOTenable,
+    params: nodeLib.inspectorMod.NodeWorkerNs.EnableParameterType
+  ): scala.Unit = js.native
+  /**
+           * Instructs the inspector to attach to running workers. Will also attach to new workers
+           * as they start
+           */
+  @JSName("post")
+  def post_NodeWorkerenable(
+    method: nodeLib.nodeLibStrings.NodeWorkerDOTenable,
+    params: nodeLib.inspectorMod.NodeWorkerNs.EnableParameterType,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+           * Sends protocol message over session with given id.
+           */
+  @JSName("post")
+  def post_NodeWorkersendMessageToWorker(method: nodeLib.nodeLibStrings.NodeWorkerDOTsendMessageToWorker): scala.Unit = js.native
+  @JSName("post")
+  def post_NodeWorkersendMessageToWorker(
+    method: nodeLib.nodeLibStrings.NodeWorkerDOTsendMessageToWorker,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+           * Sends protocol message over session with given id.
+           */
+  @JSName("post")
+  def post_NodeWorkersendMessageToWorker(
+    method: nodeLib.nodeLibStrings.NodeWorkerDOTsendMessageToWorker,
+    params: nodeLib.inspectorMod.NodeWorkerNs.SendMessageToWorkerParameterType
+  ): scala.Unit = js.native
+  /**
+           * Sends protocol message over session with given id.
+           */
+  @JSName("post")
+  def post_NodeWorkersendMessageToWorker(
+    method: nodeLib.nodeLibStrings.NodeWorkerDOTsendMessageToWorker,
+    params: nodeLib.inspectorMod.NodeWorkerNs.SendMessageToWorkerParameterType,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
   @JSName("post")
   def post_Profilerdisable(method: nodeLib.nodeLibStrings.ProfilerDOTdisable): scala.Unit = js.native
   @JSName("post")
@@ -2611,6 +2915,57 @@ class Session ()
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_HeapProfilerresetProfiles(event: nodeLib.nodeLibStrings.HeapProfilerDOTresetProfiles, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Contains an bucket of collected trace events.
+           */
+  @JSName("prependListener")
+  def prependListener_NodeTracingdataCollected(
+    event: nodeLib.nodeLibStrings.NodeTracingDOTdataCollected,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeTracingNs.DataCollectedEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+           * delivered via dataCollected events.
+           */
+  @JSName("prependListener")
+  def prependListener_NodeTracingtracingComplete(event: nodeLib.nodeLibStrings.NodeTracingDOTtracingComplete, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Issued when attached to a worker.
+           */
+  @JSName("prependListener")
+  def prependListener_NodeWorkerattachedToWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTattachedToWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.AttachedToWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Issued when detached from the worker.
+           */
+  @JSName("prependListener")
+  def prependListener_NodeWorkerdetachedFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTdetachedFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.DetachedFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Notifies about a new protocol message received from the session
+           * (session ID is provided in attachedToWorker notification).
+           */
+  @JSName("prependListener")
+  def prependListener_NodeWorkerreceivedMessageFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTreceivedMessageFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.ReceivedMessageFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
   @JSName("prependListener")
   def prependListener_ProfilerconsoleProfileFinished(
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileFinished,
@@ -2816,6 +3171,57 @@ class Session ()
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_HeapProfilerresetProfiles(event: nodeLib.nodeLibStrings.HeapProfilerDOTresetProfiles, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Contains an bucket of collected trace events.
+           */
+  @JSName("prependOnceListener")
+  def prependOnceListener_NodeTracingdataCollected(
+    event: nodeLib.nodeLibStrings.NodeTracingDOTdataCollected,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeTracingNs.DataCollectedEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Signals that tracing is stopped and there is no trace buffers pending flush, all data were
+           * delivered via dataCollected events.
+           */
+  @JSName("prependOnceListener")
+  def prependOnceListener_NodeTracingtracingComplete(event: nodeLib.nodeLibStrings.NodeTracingDOTtracingComplete, listener: js.Function0[scala.Unit]): this.type = js.native
+  /**
+           * Issued when attached to a worker.
+           */
+  @JSName("prependOnceListener")
+  def prependOnceListener_NodeWorkerattachedToWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTattachedToWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.AttachedToWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Issued when detached from the worker.
+           */
+  @JSName("prependOnceListener")
+  def prependOnceListener_NodeWorkerdetachedFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTdetachedFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.DetachedFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+           * Notifies about a new protocol message received from the session
+           * (session ID is provided in attachedToWorker notification).
+           */
+  @JSName("prependOnceListener")
+  def prependOnceListener_NodeWorkerreceivedMessageFromWorker(
+    event: nodeLib.nodeLibStrings.NodeWorkerDOTreceivedMessageFromWorker,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.NodeWorkerNs.ReceivedMessageFromWorkerEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_ProfilerconsoleProfileFinished(
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileFinished,

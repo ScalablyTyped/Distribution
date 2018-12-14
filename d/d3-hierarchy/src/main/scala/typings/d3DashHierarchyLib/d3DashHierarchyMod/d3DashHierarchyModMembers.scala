@@ -14,8 +14,8 @@ object d3DashHierarchyModMembers extends js.Object {
   def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = js.native
   def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[js.Array[Datum] | scala.Null]]): HierarchyNode[Datum] = js.native
   def pack[Datum](): PackLayout[Datum] = js.native
-  def packEnclose[Datum /* <: PackCircle */](circles: js.Array[Datum]): d3DashHierarchyLib.Anon_Y = js.native
-  def packSiblings[Datum /* <: PackCircle */](circles: js.Array[Datum]): js.Array[Datum] = js.native
+  def packEnclose[Datum /* <: PackCircle */](circles: js.Array[Datum]): PackCircle = js.native
+  def packSiblings[Datum /* <: PackRadius */](circles: js.Array[Datum]): js.Array[Datum with PackCircle] = js.native
   def partition[Datum](): PartitionLayout[Datum] = js.native
   def stratify[Datum](): StratifyOperator[Datum] = js.native
   def tree[Datum](): TreeLayout[Datum] = js.native

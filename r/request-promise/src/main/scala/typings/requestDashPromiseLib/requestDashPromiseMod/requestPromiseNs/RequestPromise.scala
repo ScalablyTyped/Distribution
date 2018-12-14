@@ -13,11 +13,124 @@ trait RequestPromise
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ]) | js.Function0[bluebirdLib.bluebirdMod.Bluebird[_]] | (js.Function6[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* filter4 */ bluebirdLib.Constructor[_], 
+    /* filter5 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function6[
+    /* filter1 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
+    /* filter4 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
+    /* filter5 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* filter4 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* filter4 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* filter4 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* filter4 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* filter4 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* filter4 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* filter4 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
     /* filter1 */ bluebirdLib.CatchFilter[_], 
     /* filter2 */ bluebirdLib.CatchFilter[_], 
     /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* filter4 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
     /* filter4 */ bluebirdLib.CatchFilter[_], 
-    /* filter5 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* filter4 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* filter4 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* filter4 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* filter4 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* filter4 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function5[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* filter4 */ bluebirdLib.CatchFilter[_], 
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ]) | (js.Function5[
@@ -28,14 +141,75 @@ trait RequestPromise
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ]) | (js.Function4[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function4[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function4[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function4[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function4[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function4[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function4[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* filter3 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function4[
     /* filter1 */ bluebirdLib.CatchFilter[_], 
     /* filter2 */ bluebirdLib.CatchFilter[_], 
     /* filter3 */ bluebirdLib.CatchFilter[_], 
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ]) | (js.Function3[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function3[
+    /* filter1 */ bluebirdLib.CatchFilter[_], 
+    /* filter2 */ bluebirdLib.Constructor[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function3[
+    /* filter1 */ bluebirdLib.Constructor[_], 
+    /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function3[
     /* filter1 */ bluebirdLib.CatchFilter[_], 
     /* filter2 */ bluebirdLib.CatchFilter[_], 
+    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
+    bluebirdLib.bluebirdMod.Bluebird[_]
+  ]) | (js.Function2[
+    /* filter1 */ bluebirdLib.Constructor[_], 
     /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ]) | (js.Function2[

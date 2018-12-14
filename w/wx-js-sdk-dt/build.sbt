@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wx-js-sdk-dt"
-version := "1.2-dt-20181205Z-4f6fdf"
+version := "1.2-dt-20181214Z-94ebd6"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

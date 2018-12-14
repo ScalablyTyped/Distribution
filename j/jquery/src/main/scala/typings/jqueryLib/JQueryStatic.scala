@@ -74,6 +74,18 @@ trait JQueryStatic extends js.Object {
   var support: jqueryLib.JQueryNs.PlainObject[_] = js.native
   var timers: js.Array[jqueryLib.JQueryNs.TickFunction[_]] = js.native
   var valHooks: jqueryLib.JQueryNs.ValHooks = js.native
+  /**
+       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+       * @param element A DOM element to wrap in a jQuery object.
+       * @see \`{@link https://api.jquery.com/jQuery/ }\`
+       * @since 1.0
+       * @example ​ ````Set the background color of the page to black.
+  ```javascript
+  $( document.body ).css( "background", "black" );
+  ```
+       */
+  // NOTE: `HTMLSelectElement` is both an Element and an Array-Like Object but jQuery treats it as an Element.
+  def apply(element: stdLib.HTMLSelectElement): JQuery[stdLib.HTMLSelectElement] = js.native
   // HACK: This is the factory function returned when importing jQuery without a DOM. Declaring it separately breaks using the type parameter on JQueryStatic.
   // HACK: The discriminator parameter handles the edge case of passing a Window object to JQueryStatic. It doesn't actually exist on the factory function.
   def apply(window: stdLib.Window, discriminator: scala.Boolean): JQueryStatic = js.native
@@ -106,29 +118,40 @@ trait JQueryStatic extends js.Object {
   def apply[TElement](callback: js.ThisFunction1[/* this */ stdLib.Document, /* $ */ this.type, scala.Unit]): JQuery[TElement] = js.native
   /**
        * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-       * @param elementArray An array containing a set of DOM elements to wrap in a jQuery object.
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Hide all the input elements within a form.
-  ```javascript
-  $( myForm.elements ).hide();
-  ```
-       */
-  // Using a unified signature is not possible due to a TypeScript 2.4 bug (DefinitelyTyped#27810)
-  // tslint:disable-next-line:unified-signatures
-  def apply[T /* <: stdLib.Element */](elementArray: js.Array[T]): JQuery[T] = js.native
-  /**
-       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-       * @param element A DOM element to wrap in a jQuery object.
+       * @param element_elementArray _&#x40;param_ `element_elementArray`
+       * <br>
+       * * `element` — A DOM element to wrap in a jQuery object. <br>
+       * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
        * @see \`{@link https://api.jquery.com/jQuery/ }\`
        * @since 1.0
        * @example ​ ````Set the background color of the page to black.
   ```javascript
   $( document.body ).css( "background", "black" );
   ```
+       * @example ​ ````Hide all the input elements within a form.
+  ```javascript
+  $( myForm.elements ).hide();
+  ```
        */
-  // Using a unified signature is not possible due to a TypeScript 2.4 bug (DefinitelyTyped#27810)
-  def apply[T /* <: stdLib.Element */](element: T): JQuery[T] = js.native
+  def apply[T /* <: stdLib.Element */](element_elementArray: T): JQuery[T] = js.native
+  /**
+       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+       * @param element_elementArray _&#x40;param_ `element_elementArray`
+       * <br>
+       * * `element` — A DOM element to wrap in a jQuery object. <br>
+       * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+       * @see \`{@link https://api.jquery.com/jQuery/ }\`
+       * @since 1.0
+       * @example ​ ````Set the background color of the page to black.
+  ```javascript
+  $( document.body ).css( "background", "black" );
+  ```
+       * @example ​ ````Hide all the input elements within a form.
+  ```javascript
+  $( myForm.elements ).hide();
+  ```
+       */
+  def apply[T /* <: stdLib.Element */](element_elementArray: stdLib.ArrayLike[T]): JQuery[T] = js.native
   /**
        * Creates DOM elements on the fly from the provided string of raw HTML.
        * @param html _&#x40;param_ `html`

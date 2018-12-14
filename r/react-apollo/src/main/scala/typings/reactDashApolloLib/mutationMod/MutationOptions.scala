@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait MutationOptions[TData, TVariables] extends js.Object {
   var awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined
   var context: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
+  var fetchPolicy: js.UndefOr[apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy] = js.undefined
   var optimisticResponse: js.UndefOr[TData] = js.undefined
   var refetchQueries: js.UndefOr[
     (js.Array[java.lang.String | apolloDashClientLib.coreTypesMod.PureQueryOptions]) | reactDashApolloLib.typesMod.RefetchQueriesProviderFn

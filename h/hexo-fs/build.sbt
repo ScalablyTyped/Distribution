@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "hexo-fs"
-version := "0.2-dt-20180910Z-9ad2f7"
+version := "0.2-dt-20180910Z-4debf1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-b88fdf",
-  "org.scalablytyped" %%% "chokidar" % "1.7-dt-20180910Z-97e53c",
-  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20180910Z-39dd65",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181214Z-e561d3",
+  "org.scalablytyped" %%% "chokidar" % "1.7-dt-20180910Z-da3710",
+  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20180910Z-7acb45",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

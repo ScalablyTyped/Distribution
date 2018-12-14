@@ -62,8 +62,13 @@ trait IColumn extends js.Object {
   var iconName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * If specified will allow the column to be collapsed when rendered in justified layout.
+       * @deprecated Use `isCollapsible`
        */
   var isCollapsable: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * If specified will allow the column to be collapsed when rendered in justified layout.
+       */
+  var isCollapsible: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Determines if the column is filtered, and if so shows a filter icon.
        */

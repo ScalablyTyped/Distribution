@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "apollo-server-env"
-version := "2.2.0-c950a7"
+version := "2.2.0-3df38f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-4dc81b",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-055952",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "util_dot_promisify" % "1.0-dt-20180910Z-1eb4cb")
 publishArtifact in packageDoc := false

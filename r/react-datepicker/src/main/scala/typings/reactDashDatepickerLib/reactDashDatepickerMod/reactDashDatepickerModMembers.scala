@@ -9,5 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashDatepickerModMembers extends js.Object {
   val default: reactLib.reactMod.ReactNs.ClassicComponentClass[ReactDatePickerProps] = js.native
+  def getDefaultLocale(): java.lang.String = js.native
+  def registerLocale(localeName: java.lang.String, localeData: js.Object): scala.Unit = js.native
+  def setDefaultLocale(localeName: java.lang.String): scala.Unit = js.native
 }
 

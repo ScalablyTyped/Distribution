@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_RIGHT extends js.Object {
-  var BOTTOM: scala.Double
-  var LEFT: scala.Double
-  var RIGHT: scala.Double
-  var UP: scala.Double
+  var LEFT: threeLib.threeDashCoreMod.MOUSE
+  var MIDDLE: threeLib.threeDashCoreMod.MOUSE
+  var RIGHT: threeLib.threeDashCoreMod.MOUSE
 }
 

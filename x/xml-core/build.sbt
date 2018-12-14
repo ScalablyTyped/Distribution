@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "xml-core"
-version := "1.0.15-a1a491"
+version := "1.0.15-3d2d9b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
   "org.scalablytyped" %%% "tslib" % "1.9.3-13238d")
 publishArtifact in packageDoc := false

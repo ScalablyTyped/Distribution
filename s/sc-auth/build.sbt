@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "sc-auth"
-version := "5.0-dt-20181205Z-300604"
+version := "5.0-dt-20181205Z-8b5d60"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20181104Z-21e3c3",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181213Z-bd3349",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20181104Z-ad5f0b",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
   "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
