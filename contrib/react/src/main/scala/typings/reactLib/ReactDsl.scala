@@ -1,6 +1,6 @@
 package typings.reactLib
 
-import ScalablyTyped.runtime.{Instantiable1, Instantiable2}
+import org.scalablytyped.runtime.{Instantiable1, Instantiable2}
 import typings.reactLib.reactMod.ReactNs._
 import typings.reactLib.reactMod.reactModMembers
 import typings.stdLib.stdLibMembers.{console, Object}
