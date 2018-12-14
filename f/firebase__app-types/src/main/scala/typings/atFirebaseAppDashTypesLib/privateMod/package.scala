@@ -14,7 +14,7 @@ package object privateMod {
   type FirebaseServiceFactory = js.Function3[
     /* app */ atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp, 
     /* extendApp */ js.UndefOr[
-      js.Function1[/* props */ ScalablyTyped.runtime.StringDictionary[js.Any], scala.Unit]
+      js.Function1[/* props */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
     ], 
     /* instanceString */ js.UndefOr[java.lang.String], 
     FirebaseService

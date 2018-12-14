@@ -19,5 +19,5 @@ trait AudioParamMap extends js.Object {
 @JSGlobal("AudioParamMap")
 @js.native
 object AudioParamMap
-  extends ScalablyTyped.runtime.Instantiable0[AudioParamMap]
+  extends org.scalablytyped.runtime.Instantiable0[AudioParamMap]
 

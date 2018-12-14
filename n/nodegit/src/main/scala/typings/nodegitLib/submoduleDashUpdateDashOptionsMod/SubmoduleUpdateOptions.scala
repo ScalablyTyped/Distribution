@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait SubmoduleUpdateOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var checkoutOpts: js.UndefOr[nodegitLib.checkoutDashOptionsMod.CheckoutOptions] = js.undefined
   var cloneCheckoutStrategy: js.UndefOr[scala.Double] = js.undefined
   var fetchOpts: js.UndefOr[nodegitLib.fetchDashOptionsMod.FetchOptions] = js.undefined

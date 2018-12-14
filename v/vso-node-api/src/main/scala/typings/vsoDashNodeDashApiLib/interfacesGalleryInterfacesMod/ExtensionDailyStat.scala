@@ -14,7 +14,7 @@ trait ExtensionDailyStat extends js.Object {
   /**
        * Generic key/value pair to store extended statistics. Used for sending paid extension stats like Upgrade, Downgrade, Cancel trend etc.
        */
-  var extendedStats: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var extendedStats: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * Timestamp of this data point
        */

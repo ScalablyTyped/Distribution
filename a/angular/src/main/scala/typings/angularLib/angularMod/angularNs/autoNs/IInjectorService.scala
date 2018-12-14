@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IInjectorService extends js.Object {
   /** An object map of all the modules that have been loaded into the injector. */
-  var modules: ScalablyTyped.runtime.StringDictionary[angularLib.angularMod.angularNs.IModule] = js.native
+  var modules: org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.angularNs.IModule] = js.native
   var strictDi: scala.Boolean = js.native
   def annotate(fn: angularLib.angularMod.Global.Function): js.Array[java.lang.String] = js.native
   def annotate(fn: angularLib.angularMod.Global.Function, strictDi: scala.Boolean): js.Array[java.lang.String] = js.native

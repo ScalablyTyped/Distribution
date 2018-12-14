@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CodeParser extends js.Object {
-  def collapseNames(obj: js.Any): ScalablyTyped.runtime.StringDictionary[js.Any]
-  def expandNames(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any
+  def collapseNames(obj: js.Any): org.scalablytyped.runtime.StringDictionary[js.Any]
+  def expandNames(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any
 }
 

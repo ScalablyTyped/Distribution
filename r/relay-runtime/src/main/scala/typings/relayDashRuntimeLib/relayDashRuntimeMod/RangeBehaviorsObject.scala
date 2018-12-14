@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait RangeBehaviorsObject
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[
       relayDashRuntimeLib.relayDashRuntimeLibStrings.APPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.IGNORE | relayDashRuntimeLib.relayDashRuntimeLibStrings.PREPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.REFETCH | relayDashRuntimeLib.relayDashRuntimeLibStrings.REMOVE
     ]
 

@@ -52,6 +52,6 @@ class default ()
        * @fires ol.ObjectEvent
        * @api
        */
-  def this(opt_values: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(opt_values: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("restling", JSImport.Namespace)
 @js.native
 object restlingModMembers extends js.Object {
-  def allAsync(requests: ScalablyTyped.runtime.StringDictionary[restlingLib.Anon_Url]): bluebirdLib.bluebirdMod.namespaced[ScalablyTyped.runtime.StringDictionary[RestlingResult]] = js.native
   def allAsync(requests: js.Array[restlingLib.Anon_Url]): bluebirdLib.bluebirdMod.namespaced[js.Array[RestlingResult]] = js.native
+  def allAsync(requests: org.scalablytyped.runtime.StringDictionary[restlingLib.Anon_Url]): bluebirdLib.bluebirdMod.namespaced[org.scalablytyped.runtime.StringDictionary[RestlingResult]] = js.native
   def del(url: java.lang.String): bluebirdLib.bluebirdMod.namespaced[RestlingResult] = js.native
   def del(url: java.lang.String, options: RestlingOptions): bluebirdLib.bluebirdMod.namespaced[RestlingResult] = js.native
   def get(url: java.lang.String): bluebirdLib.bluebirdMod.namespaced[RestlingResult] = js.native
@@ -37,7 +37,7 @@ object restlingModMembers extends js.Object {
   def putJson(url: java.lang.String, data: js.Any, options: RestlingOptions): bluebirdLib.bluebirdMod.namespaced[RestlingResult] = js.native
   def request(url: java.lang.String): bluebirdLib.bluebirdMod.namespaced[RestlingResult] = js.native
   def request(url: java.lang.String, options: RestlingOptions): bluebirdLib.bluebirdMod.namespaced[RestlingResult] = js.native
-  def settleAsync(requests: ScalablyTyped.runtime.StringDictionary[restlingLib.Anon_Url]): bluebirdLib.bluebirdMod.namespaced[ScalablyTyped.runtime.StringDictionary[RestlingResult]] = js.native
   def settleAsync(requests: js.Array[restlingLib.Anon_Url]): bluebirdLib.bluebirdMod.namespaced[js.Array[RestlingResult]] = js.native
+  def settleAsync(requests: org.scalablytyped.runtime.StringDictionary[restlingLib.Anon_Url]): bluebirdLib.bluebirdMod.namespaced[org.scalablytyped.runtime.StringDictionary[RestlingResult]] = js.native
 }
 

@@ -13,7 +13,7 @@ trait IPathOriginFunctionMap
   extends /**
          * Key is the type of a path, value is a function which accepts a path object a point object as its parameters.
          */
-/* type */ ScalablyTyped.runtime.StringDictionary[
+/* type */ org.scalablytyped.runtime.StringDictionary[
       js.Function4[
         /* id */ java.lang.String, 
         /* pathValue */ IPath, 

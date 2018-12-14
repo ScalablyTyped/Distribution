@@ -17,7 +17,7 @@ trait WPRequest
          * .author(). They are usually decided by WPAPI routes configuration
          * object.
          */
-/* customParamsMethod */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* customParamsMethod */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Set a request to use authentication, and optionally provide auth
            * credentials. If auth credentials were already specified when the WPAPI
@@ -226,47 +226,6 @@ trait WPRequest
            * parameter keys and their corresponding values
            * @param value The value of the parameter being set
            */
-  def param(props: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Array[_]]): WPRequest = js.native
-  /**
-           * Set a parameter to render into the final query URI.
-           *
-           * @param props The name of the parameter to set, or an object containing
-           * parameter keys and their corresponding values
-           * @param value The value of the parameter being set
-           */
-  def param(
-    props: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Array[_]],
-    value: java.lang.String
-  ): WPRequest = js.native
-  /**
-           * Set a parameter to render into the final query URI.
-           *
-           * @param props The name of the parameter to set, or an object containing
-           * parameter keys and their corresponding values
-           * @param value The value of the parameter being set
-           */
-  def param(
-    props: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Array[_]],
-    value: js.Array[_]
-  ): WPRequest = js.native
-  /**
-           * Set a parameter to render into the final query URI.
-           *
-           * @param props The name of the parameter to set, or an object containing
-           * parameter keys and their corresponding values
-           * @param value The value of the parameter being set
-           */
-  def param(
-    props: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Array[_]],
-    value: scala.Double
-  ): WPRequest = js.native
-  /**
-           * Set a parameter to render into the final query URI.
-           *
-           * @param props The name of the parameter to set, or an object containing
-           * parameter keys and their corresponding values
-           * @param value The value of the parameter being set
-           */
   def param(props: java.lang.String): WPRequest = js.native
   /**
            * Set a parameter to render into the final query URI.
@@ -293,6 +252,47 @@ trait WPRequest
            */
   def param(props: java.lang.String, value: scala.Double): WPRequest = js.native
   /**
+           * Set a parameter to render into the final query URI.
+           *
+           * @param props The name of the parameter to set, or an object containing
+           * parameter keys and their corresponding values
+           * @param value The value of the parameter being set
+           */
+  def param(props: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Array[_]]): WPRequest = js.native
+  /**
+           * Set a parameter to render into the final query URI.
+           *
+           * @param props The name of the parameter to set, or an object containing
+           * parameter keys and their corresponding values
+           * @param value The value of the parameter being set
+           */
+  def param(
+    props: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Array[_]],
+    value: java.lang.String
+  ): WPRequest = js.native
+  /**
+           * Set a parameter to render into the final query URI.
+           *
+           * @param props The name of the parameter to set, or an object containing
+           * parameter keys and their corresponding values
+           * @param value The value of the parameter being set
+           */
+  def param(
+    props: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Array[_]],
+    value: js.Array[_]
+  ): WPRequest = js.native
+  /**
+           * Set a parameter to render into the final query URI.
+           *
+           * @param props The name of the parameter to set, or an object containing
+           * parameter keys and their corresponding values
+           * @param value The value of the parameter being set
+           */
+  def param(
+    props: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | js.Array[_]],
+    value: scala.Double
+  ): WPRequest = js.native
+  /**
            * Set the number of items to be returned in a page of responses.
            *
            * @param itemsPerPage The number of items to return in one page of
@@ -312,22 +312,6 @@ trait WPRequest
            * names and their associated string values
            * @param value The value of the header being set
            */
-  def setHeaders(headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]): WPRequest = js.native
-  /**
-           * Specify one or more headers to send with the dispatched HTTP request.
-           *
-           * @param headers The name of the header to set, or an object of header
-           * names and their associated string values
-           * @param value The value of the header being set
-           */
-  def setHeaders(headers: ScalablyTyped.runtime.StringDictionary[java.lang.String], value: java.lang.String): WPRequest = js.native
-  /**
-           * Specify one or more headers to send with the dispatched HTTP request.
-           *
-           * @param headers The name of the header to set, or an object of header
-           * names and their associated string values
-           * @param value The value of the header being set
-           */
   def setHeaders(headers: java.lang.String): WPRequest = js.native
   /**
            * Specify one or more headers to send with the dispatched HTTP request.
@@ -337,6 +321,22 @@ trait WPRequest
            * @param value The value of the header being set
            */
   def setHeaders(headers: java.lang.String, value: java.lang.String): WPRequest = js.native
+  /**
+           * Specify one or more headers to send with the dispatched HTTP request.
+           *
+           * @param headers The name of the header to set, or an object of header
+           * names and their associated string values
+           * @param value The value of the header being set
+           */
+  def setHeaders(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): WPRequest = js.native
+  /**
+           * Specify one or more headers to send with the dispatched HTTP request.
+           *
+           * @param headers The name of the header to set, or an object of header
+           * names and their associated string values
+           * @param value The value of the header being set
+           */
+  def setHeaders(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String], value: java.lang.String): WPRequest = js.native
   /**
            * Set a component of the resource URL itself (as opposed to a query
            * parameter)

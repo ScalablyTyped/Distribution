@@ -3126,67 +3126,67 @@ object PinpointNs extends js.Object {
   
   
   trait MapOfAddressConfiguration
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AddressConfiguration]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AddressConfiguration]
   
   
   trait MapOfAttributeDimension
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeDimension]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeDimension]
   
   
   trait MapOfChannelResponse
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ChannelResponse]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ChannelResponse]
   
   
   trait MapOfEndpointMessageResult
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[EndpointMessageResult]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[EndpointMessageResult]
   
   
   trait MapOfEndpointSendConfiguration
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[EndpointSendConfiguration]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[EndpointSendConfiguration]
   
   
   trait MapOfEvent
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Event]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Event]
   
   
   trait MapOfEventItemResponse
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[EventItemResponse]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[EventItemResponse]
   
   
   trait MapOfEventsBatch
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[EventsBatch]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[EventsBatch]
   
   
   trait MapOfItemResponse
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ItemResponse]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ItemResponse]
   
   
   trait MapOfListOf__string
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ListOf__string]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ListOf__string]
   
   
   trait MapOfMapOfEndpointMessageResult
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MapOfEndpointMessageResult]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MapOfEndpointMessageResult]
   
   
   trait MapOfMessageResult
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MessageResult]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MessageResult]
   
   
   trait MapOfMetricDimension
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MetricDimension]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MetricDimension]
   
   
   trait MapOf__double
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[__double]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__double]
   
   
   trait MapOf__integer
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[__integer]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__integer]
   
   
   trait MapOf__string
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[__string]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   
   trait Message extends js.Object {

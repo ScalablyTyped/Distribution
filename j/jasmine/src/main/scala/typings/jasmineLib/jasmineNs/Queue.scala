@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Queue
-  extends ScalablyTyped.runtime.Instantiable1[/* env */ js.Any, js.Any] {
+  extends org.scalablytyped.runtime.Instantiable1[/* env */ js.Any, js.Any] {
   var abort: scala.Boolean = js.native
   var blocks: js.Array[Block] = js.native
   var ensured: js.Array[scala.Boolean] = js.native

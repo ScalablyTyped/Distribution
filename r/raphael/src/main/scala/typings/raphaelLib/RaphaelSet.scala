@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RaphaelSet
-  extends /* key */ ScalablyTyped.runtime.NumberDictionary[RaphaelElement] {
+  extends /* key */ org.scalablytyped.runtime.NumberDictionary[RaphaelElement] {
   var id: java.lang.String = js.native
   var length: scala.Double = js.native
   var matrix: RaphaelMatrix = js.native
@@ -17,10 +17,14 @@ trait RaphaelSet
   @JSName("raphael")
   var raphael_Original: RaphaelStatic = js.native
   def animate(animation: RaphaelAnimation): RaphaelSet = js.native
-  def animate(params: ScalablyTyped.runtime.StringDictionary[js.Any], ms: scala.Double): RaphaelSet = js.native
-  def animate(params: ScalablyTyped.runtime.StringDictionary[js.Any], ms: scala.Double, easing: java.lang.String): RaphaelSet = js.native
+  def animate(params: org.scalablytyped.runtime.StringDictionary[js.Any], ms: scala.Double): RaphaelSet = js.native
   def animate(
-    params: ScalablyTyped.runtime.StringDictionary[js.Any],
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
+    ms: scala.Double,
+    easing: java.lang.String
+  ): RaphaelSet = js.native
+  def animate(
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
     ms: scala.Double,
     easing: java.lang.String,
     callback: js.Function
@@ -45,7 +49,7 @@ trait RaphaelSet
   def attr(attrName: java.lang.String): js.Any = js.native
   def attr(attrName: java.lang.String, value: js.Any): RaphaelSet = js.native
   def attr(attrNames: js.Array[java.lang.String]): js.Array[_] = js.native
-  def attr(params: ScalablyTyped.runtime.StringDictionary[js.Any]): RaphaelSet = js.native
+  def attr(params: org.scalablytyped.runtime.StringDictionary[js.Any]): RaphaelSet = js.native
   def clear(): scala.Unit = js.native
   def click(handler: js.Function): RaphaelSet = js.native
   def data(key: java.lang.String): js.Any = js.native

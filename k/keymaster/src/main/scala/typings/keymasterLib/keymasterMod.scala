@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("keymaster", JSImport.Namespace)
 @js.native
 object keymasterMod
-  extends ScalablyTyped.runtime.TopLevel[Keymaster]
+  extends org.scalablytyped.runtime.TopLevel[Keymaster]
 

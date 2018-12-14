@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait StatusOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var flags: js.UndefOr[scala.Double] = js.undefined
   var pathspec: js.UndefOr[
     nodegitLib.strDashArrayMod.Strarray | java.lang.String | js.Array[java.lang.String]

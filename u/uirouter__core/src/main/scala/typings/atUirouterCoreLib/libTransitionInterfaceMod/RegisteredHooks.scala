@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RegisteredHooks
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Array[atUirouterCoreLib.libTransitionHookRegistryMod.RegisteredHook]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[atUirouterCoreLib.libTransitionHookRegistryMod.RegisteredHook]]
 

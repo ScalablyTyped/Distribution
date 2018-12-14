@@ -13,5 +13,5 @@ trait castStatic
          * @param val The value to cast
          * @param type The type to cast it to
          */
-ScalablyTyped.runtime.Instantiable2[/* val */ js.Any, /* type */ java.lang.String, cast]
+org.scalablytyped.runtime.Instantiable2[/* val */ js.Any, /* type */ java.lang.String, cast]
 

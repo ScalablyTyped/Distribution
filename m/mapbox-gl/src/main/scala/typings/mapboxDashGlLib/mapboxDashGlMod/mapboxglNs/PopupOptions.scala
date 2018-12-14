@@ -11,6 +11,6 @@ trait PopupOptions extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closeButton: js.UndefOr[scala.Boolean] = js.undefined
   var closeOnClick: js.UndefOr[scala.Boolean] = js.undefined
-  var offset: js.UndefOr[scala.Double | PointLike | ScalablyTyped.runtime.StringDictionary[PointLike]] = js.undefined
+  var offset: js.UndefOr[scala.Double | PointLike | org.scalablytyped.runtime.StringDictionary[PointLike]] = js.undefined
 }
 

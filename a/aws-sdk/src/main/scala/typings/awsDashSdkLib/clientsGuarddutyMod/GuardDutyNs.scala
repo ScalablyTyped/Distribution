@@ -2799,11 +2799,11 @@ object GuardDutyNs extends js.Object {
   
   
   trait __mapOfCondition
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Condition]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Condition]
   
   
   trait __mapOfCountBySeverityFindingStatistic
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[CountBySeverityFindingStatistic]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[CountBySeverityFindingStatistic]
   
   val TypesNs: this.type = js.native
   type AccountDetails = js.Array[AccountDetail]

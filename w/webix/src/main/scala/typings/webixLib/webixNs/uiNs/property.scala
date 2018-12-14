@@ -14,14 +14,14 @@ class property () extends baseview {
   var config_property: propertyConfig = js.native
   @JSName("on_click")
   var on_click_Original: webixLib.webixNs.WebixCallback = js.native
-  var on_context: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("on_dblclick")
   var on_dblclick_Original: webixLib.webixNs.WebixCallback = js.native
-  var on_edit: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var on_edit: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("on_mouse_move")
   var on_mouse_move_Original: webixLib.webixNs.WebixCallback = js.native
-  var on_render: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var `type`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var on_render: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def attachEvent(`type`: propertyEventName, functor: webixLib.webixNs.WebixCallback): java.lang.String | scala.Double = js.native
   def attachEvent(`type`: propertyEventName, functor: webixLib.webixNs.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
   def blockEvent(): scala.Unit = js.native
@@ -41,7 +41,7 @@ class property () extends baseview {
   def getItemNode(id: java.lang.String): stdLib.HTMLElement = js.native
   def getItemNode(id: scala.Double): stdLib.HTMLElement = js.native
   def getScrollState(): js.Any = js.native
-  def getValues(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getValues(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
   def load(url: java.lang.String): js.Promise[_] = js.native
   def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait IAbstractValidationRule[T] extends js.Object {
-  var Children: ScalablyTyped.runtime.StringDictionary[IAbstractValidationRule[_]]
-  var Rules: ScalablyTyped.runtime.StringDictionary[IPropertyValidationRule[T]]
+  var Children: org.scalablytyped.runtime.StringDictionary[IAbstractValidationRule[_]]
+  var Rules: org.scalablytyped.runtime.StringDictionary[IPropertyValidationRule[T]]
   var ValidationResult: IValidationResult
-  var Validators: ScalablyTyped.runtime.StringDictionary[IValidator]
+  var Validators: org.scalablytyped.runtime.StringDictionary[IValidator]
   def Validate(context: T): IValidationResult
   def ValidateAll(context: T): qLib.qMod.QNs.Promise[IValidationResult]
   def ValidateAsync(context: T): qLib.qMod.QNs.Promise[IValidationResult]

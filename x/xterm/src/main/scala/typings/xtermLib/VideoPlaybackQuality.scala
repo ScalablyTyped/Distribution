@@ -17,5 +17,5 @@ trait VideoPlaybackQuality extends js.Object {
 @JSGlobal("VideoPlaybackQuality")
 @js.native
 object VideoPlaybackQuality
-  extends ScalablyTyped.runtime.Instantiable0[VideoPlaybackQuality]
+  extends org.scalablytyped.runtime.Instantiable0[VideoPlaybackQuality]
 

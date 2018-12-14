@@ -20,15 +20,15 @@ class ICollection[T] () extends js.Object {
   def count(query: TQuery): js.Promise[scala.Double] = js.native
   def count(query: TQuery, options: js.Object): js.Promise[scala.Double] = js.native
   def createIndex(): js.Promise[java.lang.String] = js.native
-  def createIndex(
-    fields: ScalablyTyped.runtime.StringDictionary[monkLib.monkLibNumbers.`1` | monkLib.monkLibNumbers.`-1`]
-  ): js.Promise[java.lang.String] = js.native
-  def createIndex(
-    fields: ScalablyTyped.runtime.StringDictionary[monkLib.monkLibNumbers.`1` | monkLib.monkLibNumbers.`-1`],
-    options: js.Object
-  ): js.Promise[java.lang.String] = js.native
   def createIndex(fields: TFields): js.Promise[java.lang.String] = js.native
   def createIndex(fields: TFields, options: js.Object): js.Promise[java.lang.String] = js.native
+  def createIndex(
+    fields: org.scalablytyped.runtime.StringDictionary[monkLib.monkLibNumbers.`1` | monkLib.monkLibNumbers.`-1`]
+  ): js.Promise[java.lang.String] = js.native
+  def createIndex(
+    fields: org.scalablytyped.runtime.StringDictionary[monkLib.monkLibNumbers.`1` | monkLib.monkLibNumbers.`-1`],
+    options: js.Object
+  ): js.Promise[java.lang.String] = js.native
   def distinct(field: java.lang.String): js.Promise[scala.Double] = js.native
   def distinct(field: java.lang.String, query: TQuery): js.Promise[scala.Double] = js.native
   def distinct(field: java.lang.String, query: TQuery, options: js.Object): js.Promise[scala.Double] = js.native
@@ -70,7 +70,7 @@ class ICollection[T] () extends js.Object {
   ): js.Promise[_] = js.native
   def indexes(): js.Promise[
     js.Array[
-      ScalablyTyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.StringDictionary[
         js.Array[
           js.Tuple2[java.lang.String, monkLib.monkLibNumbers.`1` | monkLib.monkLibNumbers.`-1`]
         ]

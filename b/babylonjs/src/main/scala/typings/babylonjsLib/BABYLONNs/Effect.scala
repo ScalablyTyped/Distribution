@@ -524,11 +524,11 @@ object Effect extends js.Object {
   /**
            * Store of each included file for a shader (The can be looked up using effect.key)
            */
-  var IncludesShadersStore: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var IncludesShadersStore: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
            * Store of each shader (The can be looked up using effect.key)
            */
-  var ShadersStore: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var ShadersStore: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var _baseCache: js.Any = js.native
   var _uniqueIdSeed: js.Any = js.native
   /**

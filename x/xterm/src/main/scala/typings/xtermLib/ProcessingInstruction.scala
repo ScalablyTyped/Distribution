@@ -13,5 +13,5 @@ trait ProcessingInstruction extends CharacterData {
 @JSGlobal("ProcessingInstruction")
 @js.native
 object ProcessingInstruction
-  extends ScalablyTyped.runtime.Instantiable0[ProcessingInstruction]
+  extends org.scalablytyped.runtime.Instantiable0[ProcessingInstruction]
 

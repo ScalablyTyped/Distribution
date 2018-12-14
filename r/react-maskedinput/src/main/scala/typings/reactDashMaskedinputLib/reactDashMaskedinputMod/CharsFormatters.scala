@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CharsFormatters
-  extends /* char */ ScalablyTyped.runtime.StringDictionary[FormatCharacter]
+  extends /* char */ org.scalablytyped.runtime.StringDictionary[FormatCharacter]
 

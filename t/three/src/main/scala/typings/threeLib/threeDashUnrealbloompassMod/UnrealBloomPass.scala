@@ -16,8 +16,8 @@ class UnrealBloomPass ()
   var bloomTintColors: js.Array[threeLib.threeDashCoreMod.Color] = js.native
   var camera: threeLib.threeDashCoreMod.OrthographicCamera = js.native
   var compositeMaterial: threeLib.threeDashCoreMod.ShaderMaterial = js.native
-  var copyUniforms: ScalablyTyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
-  var highPassUniforms: ScalablyTyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
+  var copyUniforms: org.scalablytyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
+  var highPassUniforms: org.scalablytyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
   var materialCopy: threeLib.threeDashCoreMod.ShaderMaterial = js.native
   var materialHighPassFilter: threeLib.threeDashCoreMod.ShaderMaterial = js.native
   var nMips: scala.Double = js.native

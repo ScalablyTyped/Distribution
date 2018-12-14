@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FileTransportInstance
   extends winstonDashTransportLib.winstonDashTransportMod.namespaced
-     with ScalablyTyped.runtime.Instantiable0[FileTransportInstance]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ FileTransportOptions, FileTransportInstance] {
+     with org.scalablytyped.runtime.Instantiable0[FileTransportInstance]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ FileTransportOptions, FileTransportInstance] {
   var dirname: java.lang.String = js.native
   var eol: java.lang.String = js.native
   var filename: java.lang.String = js.native

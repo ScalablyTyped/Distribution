@@ -35,7 +35,7 @@ trait Command extends js.Object {
                * @param specs The specifications of the options.
                * @returns The command.
                */
-  def options(specs: ScalablyTyped.runtime.StringDictionary[Option]): Command
+  def options(specs: org.scalablytyped.runtime.StringDictionary[Option]): Command
   /**
                * Sets the usage string for the command.
                * @param usage The usage string.

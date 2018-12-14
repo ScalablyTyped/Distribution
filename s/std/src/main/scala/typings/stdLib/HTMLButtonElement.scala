@@ -76,5 +76,5 @@ trait HTMLButtonElement extends HTMLElement {
 @JSGlobal("HTMLButtonElement")
 @js.native
 object HTMLButtonElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLButtonElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLButtonElement]
 

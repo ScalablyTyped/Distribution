@@ -12,7 +12,7 @@ trait ViewData extends js.Object {
   var `def`: ViewDefinition
   var disposables: js.Array[DisposableFn] | scala.Null
   var initIndex: scala.Double
-  var nodes: ScalablyTyped.runtime.NumberDictionary[NodeData]
+  var nodes: org.scalablytyped.runtime.NumberDictionary[NodeData]
   var oldValues: js.Array[_]
   var parent: ViewData | scala.Null
   var parentNodeDef: NodeDef | scala.Null

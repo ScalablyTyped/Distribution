@@ -12,7 +12,7 @@ trait Watchpack
   var aggregatedChanges: js.Array[java.lang.String] = js.native
   var dirWatchers: js.Array[watchpackLib.watcherMod.namespaced] = js.native
   var fileWatchers: js.Array[watchpackLib.watcherMod.namespaced] = js.native
-  var mtimes: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var mtimes: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   var options: watchpackLib.watchpackMod.WatchpackNs.WatchOptions = js.native
   var paused: scala.Boolean = js.native
   var watcherOptions: watchpackLib.watchpackMod.WatchpackNs.WatcherOptions = js.native
@@ -22,7 +22,7 @@ trait Watchpack
   def _onChange(item: java.lang.String, mtime: scala.Double, file: java.lang.String): scala.Unit = js.native
   def _onTimeout(): scala.Unit = js.native
   def close(): scala.Unit = js.native
-  def getTimes(): ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  def getTimes(): org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   def pause(): scala.Unit = js.native
   def watch(
     files: js.Array[java.lang.String],

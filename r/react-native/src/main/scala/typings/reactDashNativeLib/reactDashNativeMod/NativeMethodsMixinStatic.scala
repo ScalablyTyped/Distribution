@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait NativeMethodsMixinStatic extends js.Object {
-  var refs: ScalablyTyped.runtime.StringDictionary[reactLib.reactMod.Component[_, _, _]]
+  var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.Component[_, _, _]]
   /**
        * Removes focus from an input or view. This is the opposite of `focus()`.
        */

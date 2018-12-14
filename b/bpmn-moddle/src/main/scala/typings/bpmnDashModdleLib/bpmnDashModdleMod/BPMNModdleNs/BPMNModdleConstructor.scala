@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BPMNModdleConstructor
-  extends ScalablyTyped.runtime.Instantiable0[BPMNModdle]
-     with ScalablyTyped.runtime.Instantiable1[/* packages */ js.Any, BPMNModdle]
-     with ScalablyTyped.runtime.Instantiable2[/* packages */ js.Any, /* options */ Option, BPMNModdle]
+  extends org.scalablytyped.runtime.Instantiable0[BPMNModdle]
+     with org.scalablytyped.runtime.Instantiable1[/* packages */ js.Any, BPMNModdle]
+     with org.scalablytyped.runtime.Instantiable2[/* packages */ js.Any, /* options */ Option, BPMNModdle]
 

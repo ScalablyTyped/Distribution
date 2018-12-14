@@ -250,7 +250,7 @@ object editorNs extends js.Object {
   
   
   trait ICodeActionsOnSaveOptions
-    extends /* kind */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+    extends /* kind */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   
   @js.native
   trait ICodeEditor extends IEditor {
@@ -578,7 +578,7 @@ object editorNs extends js.Object {
   
   
   trait ICodeEditorViewState extends js.Object {
-    var contributionsState: ScalablyTyped.runtime.StringDictionary[js.Any]
+    var contributionsState: org.scalablytyped.runtime.StringDictionary[js.Any]
     var cursorState: js.Array[ICursorState]
     var viewState: IViewState
   }
@@ -596,7 +596,7 @@ object editorNs extends js.Object {
   
   
   trait IColors
-    extends /* colorId */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* colorId */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
   
   trait ICommand extends js.Object {
@@ -1790,7 +1790,7 @@ object editorNs extends js.Object {
   
   
   trait IEditorOverrideServices
-    extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any]
+    extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
   
   trait IEditorParameterHintOptions extends js.Object {

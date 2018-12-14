@@ -11,5 +11,5 @@ trait SVGTSpanElement extends SVGTextPositioningElement
 @JSGlobal("SVGTSpanElement")
 @js.native
 object SVGTSpanElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGTSpanElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGTSpanElement]
 

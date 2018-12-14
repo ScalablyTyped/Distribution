@@ -1617,7 +1617,7 @@ object DeviceFarmNs extends js.Object {
   
   
   trait MaxSlotMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Integer]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Integer]
   
   
   trait MonetaryAmount extends js.Object {
@@ -1741,7 +1741,7 @@ object DeviceFarmNs extends js.Object {
   
   
   trait OfferingStatusMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[OfferingStatus]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[OfferingStatus]
   
   
   trait OfferingTransaction extends js.Object {
@@ -1857,7 +1857,7 @@ object DeviceFarmNs extends js.Object {
   
   
   trait PurchasedDevicesMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Integer]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Integer]
   
   
   trait Radios extends js.Object {
@@ -2425,7 +2425,7 @@ object DeviceFarmNs extends js.Object {
   
   
   trait TestParameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait TrialMinutes extends js.Object {
@@ -4220,7 +4220,7 @@ object DeviceFarmNs extends js.Object {
   
   
   trait UniqueProblemsByExecutionResultMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[UniqueProblems]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[UniqueProblems]
   
   
   trait UpdateDeviceInstanceRequest extends js.Object {

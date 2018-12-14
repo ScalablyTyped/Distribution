@@ -11,6 +11,6 @@ trait FormatBlot
   extends parchmentLib.distSrcBlotAbstractContainerMod.default {
   var attributes: parchmentLib.distSrcAttributorStoreMod.default = js.native
   def format(name: java.lang.String, value: js.Any): scala.Unit = js.native
-  def formats(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def formats(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 

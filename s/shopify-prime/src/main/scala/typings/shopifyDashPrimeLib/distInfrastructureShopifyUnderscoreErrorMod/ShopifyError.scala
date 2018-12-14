@@ -17,7 +17,7 @@ class ShopifyError protected ()
        */
   var apiRateLimitReached: scala.Boolean = js.native
   var body: ErrorType1 | ErrorType2 | ErrorType3 = js.native
-  var errors: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
+  var errors: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   val isShopifyPrime: scala.Boolean = js.native
   var statusCode: scala.Double = js.native
   var statusText: java.lang.String = js.native

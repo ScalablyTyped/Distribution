@@ -10,7 +10,7 @@ trait IgHtmlEditorPopover
   extends /**
 	 * Option for igHtmlEditorPopover
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   @JSName("apply")
   var apply: js.UndefOr[ApplyEvent] = js.undefined
   var cancel: js.UndefOr[CancelEvent] = js.undefined

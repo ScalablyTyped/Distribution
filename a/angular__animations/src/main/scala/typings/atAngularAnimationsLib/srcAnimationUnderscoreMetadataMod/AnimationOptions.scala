@@ -19,6 +19,6 @@ trait AnimationOptions extends js.Object {
       * when an animation action starts. An array of key-value pairs, where the provided value
       * is used as a default.
       */
-  var params: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

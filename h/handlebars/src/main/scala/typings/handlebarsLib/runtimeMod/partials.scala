@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("handlebars/runtime", "partials")
 @js.native
 object partials
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

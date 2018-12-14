@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SymbolSchema extends AnySchema {
   // TODO: support number and symbol index
-  def map(iterable: ScalablyTyped.runtime.StringDictionary[js.Symbol]): this.type = js.native
+  def map(iterable: org.scalablytyped.runtime.StringDictionary[js.Symbol]): this.type = js.native
   // TODO: support number and symbol index
   def map(
     iterable: stdLib.Iterable[

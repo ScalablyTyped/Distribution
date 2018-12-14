@@ -594,7 +594,7 @@ object SecretsManagerNs extends js.Object {
   
   
   trait SecretVersionsToStagesMapType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[SecretVersionStagesType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[SecretVersionStagesType]
   
   
   trait Tag extends js.Object {

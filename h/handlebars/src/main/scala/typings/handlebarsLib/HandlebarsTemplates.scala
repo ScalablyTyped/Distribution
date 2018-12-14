@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait HandlebarsTemplates
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[HandlebarsTemplateDelegate[_]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[HandlebarsTemplateDelegate[_]]
 

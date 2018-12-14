@@ -18,5 +18,5 @@ trait FileUploadOptions extends js.Object {
 @JSGlobal("FileUploadOptions")
 @js.native
 object FileUploadOptions
-  extends ScalablyTyped.runtime.Instantiable0[FileUploadOptions]
+  extends org.scalablytyped.runtime.Instantiable0[FileUploadOptions]
 

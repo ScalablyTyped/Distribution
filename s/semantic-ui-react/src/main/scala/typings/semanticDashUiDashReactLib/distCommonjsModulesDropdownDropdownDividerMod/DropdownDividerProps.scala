@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait DropdownDividerProps
   extends StrictDropdownDividerProps
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

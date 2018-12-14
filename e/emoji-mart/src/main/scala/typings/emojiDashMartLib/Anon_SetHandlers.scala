@@ -12,6 +12,6 @@ trait Anon_SetHandlers extends js.Object {
   def setHandlers(): scala.Unit = js.native
   def setHandlers(handlers: emojiDashMartLib.distDashEsUtilsStoreMod.StoreHandlers): scala.Unit = js.native
   def setNamespace(namespace: java.lang.String): scala.Unit = js.native
-  def update(state: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def update(state: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
 }
 

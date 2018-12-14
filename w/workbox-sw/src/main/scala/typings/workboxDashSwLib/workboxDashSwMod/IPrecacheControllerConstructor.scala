@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait IPrecacheControllerConstructor
-  extends ScalablyTyped.runtime.Instantiable0[PrecacheController]
-     with ScalablyTyped.runtime.Instantiable1[/* cacheName */ java.lang.String, PrecacheController]
+  extends org.scalablytyped.runtime.Instantiable0[PrecacheController]
+     with org.scalablytyped.runtime.Instantiable1[/* cacheName */ java.lang.String, PrecacheController]
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DefinePlugin protected ()
   extends webpackLib.webpackMod.webpackNs.DefinePlugin {
-  def this(definitions: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(definitions: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /* CompleteClass */
   @JSName("apply")
   override def apply(args: js.Any*): scala.Unit = js.native

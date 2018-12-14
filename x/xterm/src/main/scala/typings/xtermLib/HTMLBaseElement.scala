@@ -20,5 +20,5 @@ trait HTMLBaseElement extends HTMLElement {
 @JSGlobal("HTMLBaseElement")
 @js.native
 object HTMLBaseElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLBaseElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLBaseElement]
 

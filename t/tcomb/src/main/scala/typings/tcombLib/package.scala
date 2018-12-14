@@ -14,5 +14,5 @@ package object tcombLib {
   type StructMixin = StructProps | js.Any
   type TypeGuardPredicate[T] = js.Function1[/* x */ js.Any, /* is T */scala.Boolean]
   type Update[T] = js.Function2[/* instance */ T, /* spec */ UpdatePatch, T]
-  type UpdatePatch = Command | ScalablyTyped.runtime.StringDictionary[js.Object]
+  type UpdatePatch = Command | org.scalablytyped.runtime.StringDictionary[js.Object]
 }

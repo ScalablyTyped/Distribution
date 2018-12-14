@@ -16,10 +16,14 @@ trait RaphaelElement extends js.Object {
   @JSName("raphael")
   var raphael_Original: RaphaelStatic = js.native
   def animate(animation: RaphaelAnimation): RaphaelElement = js.native
-  def animate(params: ScalablyTyped.runtime.StringDictionary[js.Any], ms: scala.Double): RaphaelElement = js.native
-  def animate(params: ScalablyTyped.runtime.StringDictionary[js.Any], ms: scala.Double, easing: java.lang.String): RaphaelElement = js.native
+  def animate(params: org.scalablytyped.runtime.StringDictionary[js.Any], ms: scala.Double): RaphaelElement = js.native
   def animate(
-    params: ScalablyTyped.runtime.StringDictionary[js.Any],
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
+    ms: scala.Double,
+    easing: java.lang.String
+  ): RaphaelElement = js.native
+  def animate(
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
     ms: scala.Double,
     easing: java.lang.String,
     callback: js.Function

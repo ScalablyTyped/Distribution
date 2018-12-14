@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CookieSessionObject
-  extends /* propertyName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Is true if the session has been changed during the request.
            */

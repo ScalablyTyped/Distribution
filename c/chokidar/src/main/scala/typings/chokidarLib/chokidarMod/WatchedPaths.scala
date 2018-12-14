@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait WatchedPaths
-  extends /* directory */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  extends /* directory */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 

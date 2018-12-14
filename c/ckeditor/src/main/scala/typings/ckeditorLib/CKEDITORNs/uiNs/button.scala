@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.ui.button")
 @js.native
 class button protected () extends js.Object {
-  def this(definition: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(definition: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   def getState(): scala.Double = js.native
   def render(editor: ckeditorLib.CKEDITORNs.editor, output: js.Array[java.lang.String]): scala.Unit = js.native
   def setState(state: scala.Double): scala.Unit = js.native

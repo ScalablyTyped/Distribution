@@ -20,7 +20,7 @@ trait RequestInfo extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
   var state: js.UndefOr[js.Any] = js.undefined
   var success: js.UndefOr[js.Function1[/* response */ ResponseInfo, scala.Unit]] = js.undefined

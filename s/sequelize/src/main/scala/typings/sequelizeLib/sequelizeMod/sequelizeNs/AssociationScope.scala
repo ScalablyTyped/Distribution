@@ -15,5 +15,5 @@ trait AssociationScope
   extends /**
          * The name of the column that will be used for the associated scope and it's value
          */
-/* scopeName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+/* scopeName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

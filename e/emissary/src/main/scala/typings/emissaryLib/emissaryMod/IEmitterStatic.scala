@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IEmitterStatic
   extends mixtoLib.MixtoNs.IMixinStatic
-     with ScalablyTyped.runtime.Instantiable0[IEmitter]
+     with org.scalablytyped.runtime.Instantiable0[IEmitter]
 

@@ -74,5 +74,5 @@ trait SVGScriptElement
 @JSGlobal("SVGScriptElement")
 @js.native
 object SVGScriptElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGScriptElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGScriptElement]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ResultObject
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var bounds: js.UndefOr[leafletLib.leafletMod.LatLngBoundsExpression] = js.undefined
   var geojson: js.UndefOr[leafletLib.leafletMod.GeoJSON[_]] = js.undefined
   var latlng: js.UndefOr[leafletLib.leafletMod.LatLngExpression] = js.undefined

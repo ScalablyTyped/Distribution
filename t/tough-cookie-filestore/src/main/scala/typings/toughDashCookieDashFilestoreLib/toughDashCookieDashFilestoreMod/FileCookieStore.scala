@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 
 trait FileCookieStore extends js.Object {
   var filePath: java.lang.String
-  var idx: ScalablyTyped.runtime.StringDictionary[
-    ScalablyTyped.runtime.StringDictionary[
-      ScalablyTyped.runtime.StringDictionary[
+  var idx: org.scalablytyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.StringDictionary[
         toughDashCookieDashFilestoreLib.toughDashCookieDashFilestoreMod.FileCookieStoreNs.Cookie
       ]
     ]

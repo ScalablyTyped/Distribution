@@ -11,7 +11,7 @@ trait ContainerBuild extends js.Object {
        * An optional map of named build-time argument variables to set during the Docker build.  This flag allows you
        * to pass built-time variables that can be accessed like environment variables inside the `RUN` instruction.
        */
-  var args: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var args: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * An optional CacheFrom object with information about the build stages to use for the Docker build cache.
        * This parameter maps to the --cache-from argument to the Docker CLI. If this parameter is `true`, only the final

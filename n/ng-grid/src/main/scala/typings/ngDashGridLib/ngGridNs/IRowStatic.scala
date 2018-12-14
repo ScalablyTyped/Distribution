@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IRowStatic
-  extends ScalablyTyped.runtime.Instantiable5[
+  extends org.scalablytyped.runtime.Instantiable5[
       /* entity */ js.Any, 
       /* config */ IRowConfig, 
       /* selectionProvider */ ISelectionProvider, 

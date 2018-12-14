@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-timeago", JSImport.Namespace)
 @js.native
 object reactDashTimeagoModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       reactLib.reactMod.ReactNs.ComponentClass[
         reactDashTimeagoLib.reactDashTimeagoMod.ReactTimeagoNs.ReactTimeagoProps, 
         reactLib.reactMod.ReactNs.ComponentState

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Gradient
   extends Container
-     with ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, Gradient] {
+     with org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, Gradient] {
   def at(): Stop = js.native
   def at(offset: scala.Double): Stop = js.native
   def at(offset: scala.Double, color: ColorAlias): Stop = js.native

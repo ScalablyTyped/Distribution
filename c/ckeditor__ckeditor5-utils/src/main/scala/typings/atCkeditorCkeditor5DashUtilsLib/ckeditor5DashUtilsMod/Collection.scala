@@ -13,7 +13,7 @@ class Collection[T] ()
   def this(options: atCkeditorCkeditor5DashUtilsLib.Anon_IdProperty[T]) = this()
   var first: T | scala.Null = js.native
   /* CompleteClass */
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   override var iterator: js.Function0[stdLib.Iterator[T]] = js.native
   var last: T | scala.Null = js.native
   var length: scala.Double = js.native

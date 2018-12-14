@@ -495,12 +495,16 @@ class Spreadsheet protected () extends Widget {
            * @returns {void}
            */
   def redo(): scala.Unit = js.native
-  /** This method is used to refresh the content in Spreadsheet.
+  /** This method destroys and re-creates the entire Spreadsheet control.
+           * @returns {void}
+           */
+  def refresh(): scala.Unit = js.native
+  /** This method is used to refresh the Spreadsheet based on the sheet model values.
            * @param {number} Pass the index of the sheet.
            * @returns {void}
            */
   def refreshContent(sheetIdx: scala.Double): scala.Unit = js.native
-  /** This method is used to refresh the Spreadsheet.
+  /** This method is used to refresh the Spreadsheet element based on the page layout.
            * @returns {void}
            */
   def refreshSpreadsheet(): scala.Unit = js.native

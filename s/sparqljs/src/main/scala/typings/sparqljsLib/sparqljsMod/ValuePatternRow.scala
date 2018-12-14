@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ValuePatternRow
-  extends /* variable */ ScalablyTyped.runtime.StringDictionary[Term]
+  extends /* variable */ org.scalablytyped.runtime.StringDictionary[Term]
 

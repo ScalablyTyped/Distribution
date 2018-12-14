@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Addon
-  extends /* addonName */ ScalablyTyped.runtime.StringDictionary[
+  extends /* addonName */ org.scalablytyped.runtime.StringDictionary[
       js.Function2[/* storyName */ java.lang.String, /* storyFn */ StoryFunction, scala.Unit]
     ]
 

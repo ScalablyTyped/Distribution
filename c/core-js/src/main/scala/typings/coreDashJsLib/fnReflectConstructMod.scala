@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/reflect/construct", JSImport.Namespace)
 @js.native
 object fnReflectConstructMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function2[/* target */ Function, /* argumentsList */ stdLib.ArrayLike[js.Any], js.Any]
     ]
 

@@ -11,7 +11,7 @@ trait GitCommitDiffs extends js.Object {
   var allChangesIncluded: scala.Boolean
   var baseCommit: java.lang.String
   var behindCount: scala.Double
-  var changeCounts: ScalablyTyped.runtime.NumberDictionary[scala.Double]
+  var changeCounts: org.scalablytyped.runtime.NumberDictionary[scala.Double]
   var changes: js.Array[GitChange]
   var commonCommit: java.lang.String
   var targetCommit: java.lang.String

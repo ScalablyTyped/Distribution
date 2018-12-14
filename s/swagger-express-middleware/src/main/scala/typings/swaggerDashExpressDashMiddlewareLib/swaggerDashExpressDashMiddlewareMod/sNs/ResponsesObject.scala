@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ResponsesObject
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[Response | js.Any] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[Response | js.Any] {
   var default: Response
 }
 

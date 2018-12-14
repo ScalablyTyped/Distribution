@@ -22,7 +22,7 @@ trait IPivotItemProps
        * Props for the header command button supporting native props - data-* and aria-* - for each pivot header/link element
        */
   var headerButtonProps: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
   ] = js.undefined
   /**
        * The text displayed of each pivot link.

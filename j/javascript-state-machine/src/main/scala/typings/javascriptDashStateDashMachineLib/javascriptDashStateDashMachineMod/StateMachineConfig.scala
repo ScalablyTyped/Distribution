@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait StateMachineConfig extends js.Object {
   var callbacks: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       js.Function4[
         /* event */ js.UndefOr[java.lang.String], 
         /* from */ js.UndefOr[java.lang.String], 

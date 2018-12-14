@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 @js.native
 trait IGulpCache
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ ICacheOptions, js.Any]
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ ICacheOptions, js.Any]
 

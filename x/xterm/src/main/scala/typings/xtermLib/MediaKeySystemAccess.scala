@@ -15,5 +15,5 @@ trait MediaKeySystemAccess extends js.Object {
 @JSGlobal("MediaKeySystemAccess")
 @js.native
 object MediaKeySystemAccess
-  extends ScalablyTyped.runtime.Instantiable0[MediaKeySystemAccess]
+  extends org.scalablytyped.runtime.Instantiable0[MediaKeySystemAccess]
 

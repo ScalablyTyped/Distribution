@@ -165,7 +165,7 @@ object KinesisVideoNs extends js.Object {
   
   
   trait ResourceTags
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   
   trait StreamInfo extends js.Object {

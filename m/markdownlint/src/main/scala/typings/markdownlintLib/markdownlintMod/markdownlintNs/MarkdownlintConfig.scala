@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MarkdownlintConfig
-  extends /* rule */ ScalablyTyped.runtime.StringDictionary[scala.Boolean | ScalablyTyped.runtime.StringDictionary[js.Any]]
+  extends /* rule */ org.scalablytyped.runtime.StringDictionary[scala.Boolean | org.scalablytyped.runtime.StringDictionary[js.Any]]
 

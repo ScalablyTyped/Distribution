@@ -146,7 +146,7 @@ object pkiNs extends js.Object {
   
   
   trait oids
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
   var oids: oids = js.native
   def certificateFromAsn1(obj: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1): Certificate = js.native

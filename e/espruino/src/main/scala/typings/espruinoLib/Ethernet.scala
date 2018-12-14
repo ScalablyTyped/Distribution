@@ -16,7 +16,7 @@ trait Ethernet
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[Ethernet] {
+org.scalablytyped.runtime.Instantiable0[Ethernet] {
   /**
        * <p>Get the current IP address, subnet, gateway and mac address.</p>
        * 

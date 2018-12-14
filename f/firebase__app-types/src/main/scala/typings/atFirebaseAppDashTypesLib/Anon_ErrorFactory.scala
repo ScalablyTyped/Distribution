@@ -14,7 +14,7 @@ trait Anon_ErrorFactory extends js.Object {
   /**
        * Service factories for each registered service.
        */
-  var factories: ScalablyTyped.runtime.StringDictionary[atFirebaseAppDashTypesLib.privateMod.FirebaseServiceFactory] = js.native
+  var factories: org.scalablytyped.runtime.StringDictionary[atFirebaseAppDashTypesLib.privateMod.FirebaseServiceFactory] = js.native
   /**
        * Just used for testing to start from a fresh namespace.
        */
@@ -43,7 +43,7 @@ trait Anon_ErrorFactory extends js.Object {
        * @prop props The top level properties of this object are copied to the
        *   namespace.
        */
-  def extendNamespace(props: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def extendNamespace(props: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * Internal API to register a Firebase Service into the firebase namespace.
        *
@@ -76,7 +76,7 @@ trait Anon_ErrorFactory extends js.Object {
   def registerService(
     name: java.lang.String,
     createService: atFirebaseAppDashTypesLib.privateMod.FirebaseServiceFactory,
-    serviceProperties: ScalablyTyped.runtime.StringDictionary[js.Any]
+    serviceProperties: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): atFirebaseAppDashTypesLib.privateMod.FirebaseServiceNamespace[atFirebaseAppDashTypesLib.privateMod.FirebaseService] = js.native
   /**
        * Internal API to register a Firebase Service into the firebase namespace.
@@ -95,7 +95,7 @@ trait Anon_ErrorFactory extends js.Object {
   def registerService(
     name: java.lang.String,
     createService: atFirebaseAppDashTypesLib.privateMod.FirebaseServiceFactory,
-    serviceProperties: ScalablyTyped.runtime.StringDictionary[js.Any],
+    serviceProperties: org.scalablytyped.runtime.StringDictionary[js.Any],
     appHook: atFirebaseAppDashTypesLib.privateMod.AppHook
   ): atFirebaseAppDashTypesLib.privateMod.FirebaseServiceNamespace[atFirebaseAppDashTypesLib.privateMod.FirebaseService] = js.native
   /**
@@ -115,7 +115,7 @@ trait Anon_ErrorFactory extends js.Object {
   def registerService(
     name: java.lang.String,
     createService: atFirebaseAppDashTypesLib.privateMod.FirebaseServiceFactory,
-    serviceProperties: ScalablyTyped.runtime.StringDictionary[js.Any],
+    serviceProperties: org.scalablytyped.runtime.StringDictionary[js.Any],
     appHook: atFirebaseAppDashTypesLib.privateMod.AppHook,
     allowMultipleInstances: scala.Boolean
   ): atFirebaseAppDashTypesLib.privateMod.FirebaseServiceNamespace[atFirebaseAppDashTypesLib.privateMod.FirebaseService] = js.native

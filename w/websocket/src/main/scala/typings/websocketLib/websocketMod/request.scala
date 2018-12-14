@@ -23,7 +23,7 @@ class request protected ()
        * If the client is not a web browser, origin may be `null` or "*".
        */
   var origin: java.lang.String = js.native
-  var protocolFullCaseMap: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var protocolFullCaseMap: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
        * Client's IP. If an `X-Forwarded-For` header is present, the value will be taken
        * from that header to facilitate WebSocket servers that live behind a reverse-proxy

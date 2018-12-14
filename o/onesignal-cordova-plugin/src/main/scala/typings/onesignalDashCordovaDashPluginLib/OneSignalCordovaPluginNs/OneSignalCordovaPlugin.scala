@@ -26,7 +26,7 @@ trait OneSignalCordovaPlugin extends js.Object {
   def promptLocation(): scala.Unit
   def registerForPushNotifications(): scala.Unit
   def sendTag(key: java.lang.String, value: java.lang.String): scala.Unit
-  def sendTags(tags: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit
+  def sendTags(tags: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit
   def setLogLevel(logLevel: onesignalDashCordovaDashPluginLib.Anon_VisualLevel): scala.Unit
   def setSubscription(enable: scala.Boolean): scala.Unit
   def startInit(appId: java.lang.String): OneSignalBuilder

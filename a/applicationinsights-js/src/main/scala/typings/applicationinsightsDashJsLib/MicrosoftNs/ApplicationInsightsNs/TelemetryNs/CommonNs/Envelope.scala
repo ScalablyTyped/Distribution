@@ -45,7 +45,7 @@ class Envelope protected ()
   /* CompleteClass */
   override var seq: java.lang.String = js.native
   /* CompleteClass */
-  override var tags: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  override var tags: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /* CompleteClass */
   override var time: java.lang.String = js.native
   /* CompleteClass */

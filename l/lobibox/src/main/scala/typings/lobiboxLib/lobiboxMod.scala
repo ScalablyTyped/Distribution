@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("Lobibox", JSImport.Namespace)
 @js.native
 object lobiboxMod
-  extends ScalablyTyped.runtime.TopLevel[lobiboxLib.LobiboxModuleNs.LobiboxStatic]
+  extends org.scalablytyped.runtime.TopLevel[lobiboxLib.LobiboxModuleNs.LobiboxStatic]
 

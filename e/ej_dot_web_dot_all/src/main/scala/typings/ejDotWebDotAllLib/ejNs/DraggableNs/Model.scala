@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait Model extends js.Object {
+  /** Used to enable auto scroll while drag and drop the element.
+               * @Default {'false'}
+               */
+  var autoScroll: js.UndefOr[scala.Boolean] = js.undefined
   /** If clone is specified.
                * @Default {false}
                */
@@ -48,5 +52,13 @@ trait Model extends js.Object {
                * @Default {'default'}
                */
   var scope: js.UndefOr[java.lang.String] = js.undefined
+  /** Represents when to start the scrolling inside the scroll container on dragging
+               * @Default {'20'}
+               */
+  var scrollSensitivity: js.UndefOr[scala.Double] = js.undefined
+  /** Specifies how much distance of scroll should move on dragging once reached scroll sensitivity area.
+               * @Default {'20'}
+               */
+  var scrollSpeed: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HealthStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* consul */ Consul, Health]
+  extends org.scalablytyped.runtime.Instantiable1[/* consul */ Consul, Health]
 

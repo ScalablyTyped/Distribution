@@ -23,7 +23,7 @@ package object AjaxNs {
   // region StatusCodeCallbacks
   // #region StatusCodeCallbacks
   type StatusCodeCallbacks[TContext] = jqueryLib.Anon_205[TContext] with (// Status codes not listed require type annotations when defining the callback
-  ScalablyTyped.runtime.NumberDictionary[SuccessCallback[TContext] | ErrorCallback[TContext]])
+  org.scalablytyped.runtime.NumberDictionary[SuccessCallback[TContext] | ErrorCallback[TContext]])
   type SuccessCallback[TContext] = js.ThisFunction3[
     /* this */ TContext, 
     /* data */ js.Any, 

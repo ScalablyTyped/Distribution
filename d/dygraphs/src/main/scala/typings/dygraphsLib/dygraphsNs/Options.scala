@@ -272,7 +272,7 @@ trait Options
            * 'fontWeight': 'bold' } will make the labels bold. In general, it is better to use CSS to
            * style the .dygraph-legend class than to use this property.
            */
-  var labelsDivStyles: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var labelsDivStyles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * Width (in pixels) of the div which shows information on the currently-highlighted points.
            */
@@ -346,7 +346,7 @@ trait Options
            * missing, it falls back on the old-style of per-series options comingled with global
            * options.
            */
-  var series: js.UndefOr[ScalablyTyped.runtime.StringDictionary[PerSeriesOptions]] = js.undefined
+  var series: js.UndefOr[org.scalablytyped.runtime.StringDictionary[PerSeriesOptions]] = js.undefined
   /**
            * Whether to show the legend upon mouseover.
            */

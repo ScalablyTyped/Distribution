@@ -32,7 +32,7 @@ trait IDBKeyRange extends js.Object {
 @JSGlobal("IDBKeyRange")
 @js.native
 object IDBKeyRange
-  extends ScalablyTyped.runtime.Instantiable0[IDBKeyRange] {
+  extends org.scalablytyped.runtime.Instantiable0[IDBKeyRange] {
   /**
        * Returns a new IDBKeyRange spanning from lower to upper.
        * If lowerOpen is true, lower is not included in the range.

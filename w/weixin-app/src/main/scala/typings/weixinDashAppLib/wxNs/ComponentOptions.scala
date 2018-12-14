@@ -66,6 +66,6 @@ trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, 
   /**
   		 * 组件间关系定义，参见 [组件间关系](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/relations.html)
   		 */
-  var relations: js.UndefOr[ScalablyTyped.runtime.StringDictionary[ComponentRelation[_, _]]] = js.undefined
+  var relations: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ComponentRelation[_, _]]] = js.undefined
 }
 

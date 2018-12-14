@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_T
-  extends ScalablyTyped.runtime.Instantiable0[chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function]]
+  extends org.scalablytyped.runtime.Instantiable0[chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function]]
 

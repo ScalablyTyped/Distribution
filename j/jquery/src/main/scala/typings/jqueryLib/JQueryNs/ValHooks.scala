@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait ValHooks
   extends // Set to HTMLElement to minimize breaks but should probably be Element.
-/* nodeName */ ScalablyTyped.runtime.StringDictionary[ValHook[stdLib.HTMLElement]]
+/* nodeName */ org.scalablytyped.runtime.StringDictionary[ValHook[stdLib.HTMLElement]]
 

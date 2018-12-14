@@ -82,5 +82,5 @@ trait SVGPatternElement
 @JSGlobal("SVGPatternElement")
 @js.native
 object SVGPatternElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGPatternElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPatternElement]
 

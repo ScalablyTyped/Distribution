@@ -66,7 +66,7 @@ object libInternalModMembers extends js.Object {
   def createDynamicObservableObject(base: js.Any): js.Any = js.native
   def createInstanceofPredicate[T](
     name: java.lang.String,
-    clazz: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
+    clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
   ): js.Function1[/* x */ js.Any, /* is T */scala.Boolean] = js.native
   def createObservableArray[T](initialValues: js.Array[_], enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T]): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
   def createObservableArray[T](
@@ -97,7 +97,7 @@ object libInternalModMembers extends js.Object {
     propertyCreator: mobxLib.libUtilsDecoratorsMod.PropertyCreator
   ): js.Function = js.native
   def decorate[T](
-    clazz: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
+    clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
     decorators: mobxLib.mobxLibStrings.decorate with js.Any
   ): scala.Unit = js.native
   def decorate[T](`object`: T, decorators: mobxLib.mobxLibStrings.decorate with js.Any): T = js.native
@@ -491,8 +491,8 @@ object libInternalModMembers extends js.Object {
   def runInAction[T](name: java.lang.String, block: js.Function0[T]): T = js.native
   def runReactions(): scala.Unit = js.native
   def set[T /* <: js.Object */](obj: T, key: java.lang.String, value: js.Any): js.Any = js.native
-  def set[T /* <: js.Object */](obj: T, values: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
-  def set[V](obj: ObservableMap[java.lang.String, V], values: ScalablyTyped.runtime.StringDictionary[V]): js.Any = js.native
+  def set[T /* <: js.Object */](obj: T, values: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def set[V](obj: ObservableMap[java.lang.String, V], values: org.scalablytyped.runtime.StringDictionary[V]): js.Any = js.native
   def set[T](obj: mobxLib.libTypesObservablearrayMod.IObservableArray[T], index: scala.Double, value: T): js.Any = js.native
   def set[K, V](obj: ObservableMap[K, V], key: K, value: V): js.Any = js.native
   def setReactionScheduler(fn: js.Function1[/* f */ js.Function0[scala.Unit], scala.Unit]): scala.Unit = js.native

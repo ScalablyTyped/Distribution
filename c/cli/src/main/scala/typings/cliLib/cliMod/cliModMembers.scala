@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cli", JSImport.Namespace)
 @js.native
 object cliModMembers
-  extends ScalablyTyped.runtime.TopLevel[CLI]
+  extends org.scalablytyped.runtime.TopLevel[CLI]
 

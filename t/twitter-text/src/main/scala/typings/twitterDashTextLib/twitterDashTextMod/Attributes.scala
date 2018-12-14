@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Attributes
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Null]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]
 

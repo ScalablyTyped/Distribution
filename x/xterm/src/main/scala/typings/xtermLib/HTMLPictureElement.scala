@@ -11,5 +11,5 @@ trait HTMLPictureElement extends HTMLElement
 @JSGlobal("HTMLPictureElement")
 @js.native
 object HTMLPictureElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLPictureElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLPictureElement]
 

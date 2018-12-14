@@ -10,7 +10,7 @@ trait IgGridResponsiveColumnSetting
   extends /**
 	 * Option for IgGridResponsiveColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A list of predefined classes to decide element's visibility on.
   	 *

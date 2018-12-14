@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IWindowService
   extends stdLib.Window
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
   /* InferMemberOverrides */

@@ -41,7 +41,7 @@ class diff_match_patch () extends js.Object {
   def diff_text2(diffs: js.Array[Diff]): java.lang.String = js.native
   def diff_toDelta(diffs: js.Array[Diff]): java.lang.String = js.native
   def diff_xIndex(diffs: js.Array[Diff], loc: scala.Double): scala.Double = js.native
-  def `match_alphabet_`(pattern: java.lang.String): ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  def `match_alphabet_`(pattern: java.lang.String): org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   def `match_bitap_`(text: java.lang.String, pattern: java.lang.String, loc: scala.Double): scala.Double = js.native
   def match_main(text: java.lang.String, pattern: java.lang.String, loc: scala.Double): scala.Double = js.native
   def `patch_addContext_`(patch: patch_obj, text: java.lang.String): scala.Unit = js.native

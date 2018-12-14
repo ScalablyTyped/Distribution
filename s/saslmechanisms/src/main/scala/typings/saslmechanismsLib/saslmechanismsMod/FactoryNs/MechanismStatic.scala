@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MechanismStatic
-  extends ScalablyTyped.runtime.Instantiable0[Mechanism]
+  extends org.scalablytyped.runtime.Instantiable0[Mechanism]
 

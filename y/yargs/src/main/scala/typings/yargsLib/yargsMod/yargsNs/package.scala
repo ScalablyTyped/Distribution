@@ -13,7 +13,7 @@ package object yargsNs {
     scala.Unit
   ]
   type Choices = js.Array[js.UndefOr[java.lang.String | yargsLib.yargsLibNumbers.`true`]]
-  type CommandBuilder = ScalablyTyped.runtime.StringDictionary[Options] | (js.Function1[/* args */ Argv, Argv])
+  type CommandBuilder = org.scalablytyped.runtime.StringDictionary[Options] | (js.Function1[/* args */ Argv, Argv])
   type MiddlewareFunction = js.Function1[/* args */ Arguments, scala.Unit]
   type ParseCallback = js.Function3[
     /* err */ js.UndefOr[stdLib.Error], 

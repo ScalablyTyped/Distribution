@@ -99,10 +99,10 @@ trait RTCDtmfSender extends EventTarget {
 @JSGlobal("RTCDTMFSender")
 @js.native
 object RTCDTMFSender
-  extends ScalablyTyped.runtime.Instantiable0[RTCDTMFSender]
+  extends org.scalablytyped.runtime.Instantiable0[RTCDTMFSender]
 
 @JSGlobal("RTCDtmfSender")
 @js.native
 object RTCDtmfSender
-  extends ScalablyTyped.runtime.Instantiable1[/* sender */ RTCRtpSender, RTCDtmfSender]
+  extends org.scalablytyped.runtime.Instantiable1[/* sender */ RTCRtpSender, RTCDtmfSender]
 

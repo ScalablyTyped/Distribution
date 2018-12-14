@@ -69,7 +69,7 @@ trait Yar extends js.Object {
   /**
            *  assigns values to multiple keys using each 'keysObject' top-level property. Returns the keysObject.
            */
-  def set[T /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](keysObject: T): T = js.native
+  def set[T /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keysObject: T): T = js.native
   /**
            * Manually notify the session of changes (when using get()
            * and changing the content of the returned reference directly without calling set()).

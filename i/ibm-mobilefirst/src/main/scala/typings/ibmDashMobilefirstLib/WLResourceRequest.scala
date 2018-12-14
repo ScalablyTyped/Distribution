@@ -29,7 +29,7 @@ class WLResourceRequest protected () extends js.Object {
   def setHeader(name: java.lang.String, value: scala.Double): scala.Unit = js.native
   def setHeaders(): scala.Unit = js.native
   def setHeaders(
-    requestHeaders: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    requestHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ): scala.Unit = js.native
   def setQueryParameter(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def setQueryParameter(name: java.lang.String, value: js.Object): scala.Unit = js.native
@@ -37,7 +37,7 @@ class WLResourceRequest protected () extends js.Object {
   def setQueryParameter(name: java.lang.String, value: scala.Double): scala.Unit = js.native
   def setQueryParameters(): scala.Unit = js.native
   def setQueryParameters(
-    parameters: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Object]
+    parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Object]
   ): scala.Unit = js.native
   def setTimeout(requestTimeout: scala.Double): scala.Unit = js.native
 }

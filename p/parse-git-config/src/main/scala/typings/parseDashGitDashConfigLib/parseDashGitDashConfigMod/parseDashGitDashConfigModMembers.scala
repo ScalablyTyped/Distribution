@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("parse-git-config", JSImport.Namespace)
 @js.native
 object parseDashGitDashConfigModMembers
-  extends ScalablyTyped.runtime.TopLevel[Parse]
+  extends org.scalablytyped.runtime.TopLevel[Parse]
 

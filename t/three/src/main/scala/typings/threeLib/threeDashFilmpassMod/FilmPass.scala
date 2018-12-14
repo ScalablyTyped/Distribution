@@ -17,6 +17,6 @@ class FilmPass ()
   var material: threeLib.threeDashCoreMod.ShaderMaterial = js.native
   var quad: threeLib.threeDashCoreMod.Mesh = js.native
   var scene: threeLib.threeDashCoreMod.Scene = js.native
-  var uniforms: ScalablyTyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
+  var uniforms: org.scalablytyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IStyleProviderStatic
-  extends ScalablyTyped.runtime.Instantiable2[/* $scope */ IGridScope, /* grid */ IGridInstance, IStyleProvider]
+  extends org.scalablytyped.runtime.Instantiable2[/* $scope */ IGridScope, /* grid */ IGridInstance, IStyleProvider]
 

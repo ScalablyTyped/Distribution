@@ -27,5 +27,5 @@ trait Touch extends js.Object {
 @JSGlobal("Touch")
 @js.native
 object Touch
-  extends ScalablyTyped.runtime.Instantiable1[/* touchInitDict */ TouchInit, Touch]
+  extends org.scalablytyped.runtime.Instantiable1[/* touchInitDict */ TouchInit, Touch]
 

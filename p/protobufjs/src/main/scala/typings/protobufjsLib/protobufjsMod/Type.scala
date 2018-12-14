@@ -19,7 +19,7 @@ class Type protected () extends NamespaceBase {
        * @param name Message name
        * @param [options] Declared options
        */
-  def this(name: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * The registered constructor, if any registered, otherwise a generic constructor.
        * Assigning a function replaces the internal constructor. If the function does not extend {@link Message} yet, its prototype will be setup accordingly and static methods will be populated. If it already extends {@link Message}, it will just replace the internal constructor.
@@ -28,13 +28,13 @@ class Type protected () extends NamespaceBase {
   /** Extension ranges, if any. */
   var extensions: js.Array[js.Array[scala.Double]] = js.native
   /** Message fields. */
-  var fields: ScalablyTyped.runtime.StringDictionary[Field] = js.native
+  var fields: org.scalablytyped.runtime.StringDictionary[Field] = js.native
   /** Fields of this message as an array for iteration. */
   val fieldsArray: js.Array[Field] = js.native
   /** Message fields by id. */
-  val fieldsById: ScalablyTyped.runtime.NumberDictionary[Field] = js.native
+  val fieldsById: org.scalablytyped.runtime.NumberDictionary[Field] = js.native
   /** Oneofs declared within this namespace, if any. */
-  var oneofs: ScalablyTyped.runtime.StringDictionary[OneOf] = js.native
+  var oneofs: org.scalablytyped.runtime.StringDictionary[OneOf] = js.native
   /** Oneofs of this message as an array for iteration. */
   val oneofsArray: js.Array[OneOf] = js.native
   /** Reserved ranges, if any. */
@@ -50,7 +50,7 @@ class Type protected () extends NamespaceBase {
        * @param [properties] Properties to set
        * @returns Message instance
        */
-  def create(properties: ScalablyTyped.runtime.StringDictionary[js.Any]): Message[js.Object] = js.native
+  def create(properties: org.scalablytyped.runtime.StringDictionary[js.Any]): Message[js.Object] = js.native
   /**
        * Decodes a message of this type.
        * @param reader Reader or buffer to decode from
@@ -109,14 +109,14 @@ class Type protected () extends NamespaceBase {
        * @param [writer] Writer to encode to
        * @returns writer
        */
-  def encode(message: ScalablyTyped.runtime.StringDictionary[js.Any]): Writer = js.native
+  def encode(message: org.scalablytyped.runtime.StringDictionary[js.Any]): Writer = js.native
   /**
        * Encodes a message of this type. Does not implicitly {@link Type#verify|verify} messages.
        * @param message Message instance or plain object
        * @param [writer] Writer to encode to
        * @returns writer
        */
-  def encode(message: ScalablyTyped.runtime.StringDictionary[js.Any], writer: Writer): Writer = js.native
+  def encode(message: org.scalablytyped.runtime.StringDictionary[js.Any], writer: Writer): Writer = js.native
   /**
        * Encodes a message of this type. Does not implicitly {@link Type#verify|verify} messages.
        * @param message Message instance or plain object
@@ -137,14 +137,14 @@ class Type protected () extends NamespaceBase {
        * @param [writer] Writer to encode to
        * @returns writer
        */
-  def encodeDelimited(message: ScalablyTyped.runtime.StringDictionary[js.Any]): Writer = js.native
+  def encodeDelimited(message: org.scalablytyped.runtime.StringDictionary[js.Any]): Writer = js.native
   /**
        * Encodes a message of this type preceeded by its byte length as a varint. Does not implicitly {@link Type#verify|verify} messages.
        * @param message Message instance or plain object
        * @param [writer] Writer to encode to
        * @returns writer
        */
-  def encodeDelimited(message: ScalablyTyped.runtime.StringDictionary[js.Any], writer: Writer): Writer = js.native
+  def encodeDelimited(message: org.scalablytyped.runtime.StringDictionary[js.Any], writer: Writer): Writer = js.native
   /**
        * Encodes a message of this type preceeded by its byte length as a varint. Does not implicitly {@link Type#verify|verify} messages.
        * @param message Message instance or plain object
@@ -164,7 +164,7 @@ class Type protected () extends NamespaceBase {
        * @param object Plain object to convert
        * @returns Message instance
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): Message[js.Object] = js.native
+  def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): Message[js.Object] = js.native
   /**
        * Tests if the specified id is reserved.
        * @param id Id to test
@@ -188,20 +188,20 @@ class Type protected () extends NamespaceBase {
        * @param [options] Conversion options
        * @returns Plain object
        */
-  def toObject(message: Message[js.Object]): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toObject(message: Message[js.Object]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a message of this type. Also converts values to other types if specified.
        * @param message Message instance
        * @param [options] Conversion options
        * @returns Plain object
        */
-  def toObject(message: Message[js.Object], options: IConversionOptions): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toObject(message: Message[js.Object], options: IConversionOptions): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Verifies that field values are valid and that required fields are present.
        * @param message Plain object to verify
        * @returns `null` if valid, otherwise the reason why it is not
        */
-  def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Null | java.lang.String = js.native
+  def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Null | java.lang.String = js.native
 }
 
 @JSImport("protobufjs", "Type")

@@ -75,7 +75,7 @@ trait IRequestHandler extends js.Object {
       /* url */ java.lang.String, 
       /* data */ java.lang.String | js.Object, 
       /* headers */ IHttpHeaders, 
-      /* params */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* params */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       js.Tuple4[scala.Double, java.lang.String | js.Object, IHttpHeaders, java.lang.String]
     ]
   ): IRequestHandler = js.native

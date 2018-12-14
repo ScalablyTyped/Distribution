@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object FilesizeNs {
-  type SiJedec = SiJedecBits with SiJedecBytes with ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  type SiJedec = SiJedecBits with SiJedecBytes with org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }

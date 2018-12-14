@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IndexedDates
-  extends /* date */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  extends /* date */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 

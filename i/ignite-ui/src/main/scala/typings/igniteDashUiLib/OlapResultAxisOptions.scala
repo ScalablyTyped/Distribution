@@ -10,7 +10,7 @@ trait OlapResultAxisOptions
   extends /**
 	 * Option for OlapResultAxisOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Optional="false" the count of the $.ig.OlapResultAxisMember objects of each tuple.
   	 */

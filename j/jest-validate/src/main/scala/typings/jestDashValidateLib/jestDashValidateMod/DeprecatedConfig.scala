@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait DeprecatedConfig
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* config */ js.Object, java.lang.String]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* config */ js.Object, java.lang.String]]
 

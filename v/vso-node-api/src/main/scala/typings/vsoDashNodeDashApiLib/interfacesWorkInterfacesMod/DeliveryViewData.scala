@@ -10,7 +10,7 @@ trait DeliveryViewData extends PlanViewData {
   /**
        * Work item child id to parenet id map
        */
-  var childIdToParentIdMap: ScalablyTyped.runtime.NumberDictionary[scala.Double]
+  var childIdToParentIdMap: org.scalablytyped.runtime.NumberDictionary[scala.Double]
   /**
        * Filter criteria status of the timeline
        */

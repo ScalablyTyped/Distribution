@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("prosemirror-markdown", "MarkdownSerializer")
 @js.native
 class MarkdownSerializer[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] protected () extends js.Object {
-  def this(nodes: ScalablyTyped.runtime.StringDictionary[
+  def this(nodes: org.scalablytyped.runtime.StringDictionary[
       js.Function4[
         /* state */ MarkdownSerializerState[S], 
         /* node */ prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], 
@@ -16,16 +16,16 @@ class MarkdownSerializer[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod
         /* index */ scala.Double, 
         scala.Unit
       ]
-    ], marks: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+    ], marks: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
      * The mark serializer info.
      */
-  var marks: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var marks: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
      * The node serializer
      * functions for this serializer.
      */
-  var nodes: ScalablyTyped.runtime.StringDictionary[
+  var nodes: org.scalablytyped.runtime.StringDictionary[
     js.Function2[
       /* p1 */ MarkdownSerializerState[S], 
       /* p2 */ prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], 
@@ -43,7 +43,7 @@ class MarkdownSerializer[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod
      */
   def serialize(
     content: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
-    options: ScalablyTyped.runtime.StringDictionary[js.Any]
+    options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): java.lang.String = js.native
 }
 

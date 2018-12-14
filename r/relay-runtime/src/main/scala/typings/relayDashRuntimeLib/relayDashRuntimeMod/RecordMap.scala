@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RecordMap
-  extends /* dataID */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[RelayInMemoryRecordSource | scala.Null]]
+  extends /* dataID */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[RelayInMemoryRecordSource | scala.Null]]
 

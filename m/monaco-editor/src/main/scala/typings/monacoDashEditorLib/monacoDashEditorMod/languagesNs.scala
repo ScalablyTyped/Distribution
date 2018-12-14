@@ -705,7 +705,7 @@ object languagesNs extends js.Object {
     /**
              * map from string to ILanguageRule[]
              */
-    var tokenizer: ScalablyTyped.runtime.StringDictionary[js.Array[IMonarchLanguageRule]]
+    var tokenizer: org.scalablytyped.runtime.StringDictionary[js.Array[IMonarchLanguageRule]]
   }
   
   
@@ -1550,7 +1550,7 @@ object languagesNs extends js.Object {
   object htmlNs extends js.Object {
     
     trait CompletionConfiguration
-      extends /* provider */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+      extends /* provider */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
     
     
     trait HTMLFormatConfiguration extends js.Object {
@@ -1632,7 +1632,7 @@ object languagesNs extends js.Object {
   object typescriptNs extends js.Object {
     
     trait CompilerOptions
-      extends /* option */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[CompilerOptionsValue]] {
+      extends /* option */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[CompilerOptionsValue]] {
       var allowJs: js.UndefOr[scala.Boolean] = js.undefined
       var allowSyntheticDefaultImports: js.UndefOr[scala.Boolean] = js.undefined
       var allowUnreachableCode: js.UndefOr[scala.Boolean] = js.undefined
@@ -1768,7 +1768,7 @@ object languagesNs extends js.Object {
     
     
     trait MapLike[T]
-      extends /* index */ ScalablyTyped.runtime.StringDictionary[T]
+      extends /* index */ org.scalablytyped.runtime.StringDictionary[T]
     
     @js.native
     sealed trait ModuleKind extends js.Object

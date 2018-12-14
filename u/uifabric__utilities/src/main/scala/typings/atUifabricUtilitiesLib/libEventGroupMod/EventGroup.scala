@@ -53,12 +53,12 @@ class EventGroup protected () extends js.Object {
   /** On the target, attach a set of events, where the events object is a name to function mapping. */
   def onAll(
     target: js.Any,
-    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit]]
+    events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit]]
   ): scala.Unit = js.native
   /** On the target, attach a set of events, where the events object is a name to function mapping. */
   def onAll(
     target: js.Any,
-    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit]],
+    events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit]],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /** Trigger the given event in the context of this instance of EventGroup. */

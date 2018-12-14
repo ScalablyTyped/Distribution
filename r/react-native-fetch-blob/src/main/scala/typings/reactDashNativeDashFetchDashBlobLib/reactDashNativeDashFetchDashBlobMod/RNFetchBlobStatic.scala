@@ -20,12 +20,12 @@ trait RNFetchBlobStatic extends js.Object {
   def fetch(
     method: reactDashNativeDashFetchDashBlobLib.Methods,
     url: java.lang.String,
-    headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): StatefulPromise[FetchBlobResponse] = js.native
   def fetch(
     method: reactDashNativeDashFetchDashBlobLib.Methods,
     url: java.lang.String,
-    headers: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     body: js.Any
   ): StatefulPromise[FetchBlobResponse] = js.native
   def session(name: java.lang.String): RNFetchBlobSession = js.native

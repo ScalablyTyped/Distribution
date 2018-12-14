@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-input-calendar", JSImport.Namespace)
 @js.native
 object reactDashInputDashCalendarMod
-  extends ScalablyTyped.runtime.TopLevel[
-      ScalablyTyped.runtime.Instantiable0[reactDashInputDashCalendarLib.reactInputCalendarNs.ReactInputCalendar]
+  extends org.scalablytyped.runtime.TopLevel[
+      org.scalablytyped.runtime.Instantiable0[reactDashInputDashCalendarLib.reactInputCalendarNs.ReactInputCalendar]
     ]
 

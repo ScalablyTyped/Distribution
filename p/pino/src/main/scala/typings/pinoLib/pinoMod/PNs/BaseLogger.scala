@@ -15,7 +15,7 @@ trait BaseLogger
   /**
            * Define additional logging levels.
            */
-  var customLevels: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var customLevels: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /**
            * Log at `'debug'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
            * If more args follows `msg`, these will be used to format `msg` using `util.format`.

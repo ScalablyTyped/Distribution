@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Attachments
-  extends /* attachmentId */ ScalablyTyped.runtime.StringDictionary[Attachment]
+  extends /* attachmentId */ org.scalablytyped.runtime.StringDictionary[Attachment]
 

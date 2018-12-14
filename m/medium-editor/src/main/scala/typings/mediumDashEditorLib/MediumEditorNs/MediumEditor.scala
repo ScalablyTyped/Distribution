@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MediumEditor
   extends // Initialization Functions
-ScalablyTyped.runtime.Instantiable1[/* elements */ elementType, MediumEditor]
+org.scalablytyped.runtime.Instantiable1[/* elements */ elementType, MediumEditor]
      with // Initialization Functions
-ScalablyTyped.runtime.Instantiable2[/* elements */ elementType, /* options */ CoreOptions, MediumEditor] {
+org.scalablytyped.runtime.Instantiable2[/* elements */ elementType, /* options */ CoreOptions, MediumEditor] {
   // Properties
   var version: mediumDashEditorLib.Anon_Revision = js.native
   def addElements(elements: elementType): scala.Unit = js.native

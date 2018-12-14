@@ -18,7 +18,7 @@ trait OverflowEvent extends UIEvent {
 @JSGlobal("OverflowEvent")
 @js.native
 object OverflowEvent
-  extends ScalablyTyped.runtime.Instantiable0[OverflowEvent] {
+  extends org.scalablytyped.runtime.Instantiable0[OverflowEvent] {
   val BOTH: scala.Double = js.native
   val HORIZONTAL: scala.Double = js.native
   val VERTICAL: scala.Double = js.native

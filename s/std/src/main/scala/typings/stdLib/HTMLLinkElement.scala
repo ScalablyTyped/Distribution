@@ -76,5 +76,5 @@ trait HTMLLinkElement
 @JSGlobal("HTMLLinkElement")
 @js.native
 object HTMLLinkElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLLinkElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLLinkElement]
 

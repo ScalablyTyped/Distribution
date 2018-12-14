@@ -10,7 +10,7 @@ trait GridExcelExporterCallbacks
   extends /**
 	 * Option for GridExcelExporterCallbacks
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A function to call after the cell is exported.
   	 * Function takes arguments sender and args.

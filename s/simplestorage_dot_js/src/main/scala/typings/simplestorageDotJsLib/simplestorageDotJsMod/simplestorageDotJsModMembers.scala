@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("simplestorage.js", JSImport.Namespace)
 @js.native
 object simplestorageDotJsModMembers
-  extends ScalablyTyped.runtime.TopLevel[simplestorageDotJsLib.simplestorageDotJsMod.simplestoragejsNs.SimpleStorage]
+  extends org.scalablytyped.runtime.TopLevel[simplestorageDotJsLib.simplestorageDotJsMod.simplestoragejsNs.SimpleStorage]
 

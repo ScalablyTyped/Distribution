@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait BigPipe
   extends nodeLib.streamMod.Readable {
   var Pagelet: PageletConstructor[Pagelet] = js.native
-  var map: ScalablyTyped.runtime.StringDictionary[Pagelet] = js.native
+  var map: org.scalablytyped.runtime.StringDictionary[Pagelet] = js.native
   var pagelets: js.Array[Pagelet] = js.native
   var parentQuicklings: js.Array[java.lang.String] = js.native
   var pipelines: js.Array[Pagelet] = js.native

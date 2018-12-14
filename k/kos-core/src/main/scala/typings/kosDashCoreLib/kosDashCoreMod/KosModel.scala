@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait KosModel[T] extends js.Object {
-  var asyncs: ScalablyTyped.runtime.StringDictionary[
+  var asyncs: org.scalablytyped.runtime.StringDictionary[
     js.Function3[
       /* dispatch */ KosDispatch, 
       /* getState */ GetKosState[T], 
@@ -23,7 +23,7 @@ trait KosModel[T] extends js.Object {
   ] = js.undefined
   var initial: T
   var namespace: java.lang.String
-  var reducers: ScalablyTyped.runtime.StringDictionary[
+  var reducers: org.scalablytyped.runtime.StringDictionary[
     js.Function2[/* state */ T, /* hasPayload */ kosDashCoreLib.Anon_Payload[T], scala.Unit]
   ]
   var setup: js.UndefOr[

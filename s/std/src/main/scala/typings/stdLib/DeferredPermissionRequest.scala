@@ -17,5 +17,5 @@ trait DeferredPermissionRequest extends js.Object {
 @JSGlobal("DeferredPermissionRequest")
 @js.native
 object DeferredPermissionRequest
-  extends ScalablyTyped.runtime.Instantiable0[DeferredPermissionRequest]
+  extends org.scalablytyped.runtime.Instantiable0[DeferredPermissionRequest]
 

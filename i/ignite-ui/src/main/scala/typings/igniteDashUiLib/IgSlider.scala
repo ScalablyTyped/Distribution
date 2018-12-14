@@ -10,7 +10,7 @@ trait IgSlider
   extends /**
 	 * Option for igSlider
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Get or set whether the slide handle will animate when it is moved.
   	 */

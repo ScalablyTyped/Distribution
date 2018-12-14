@@ -21,5 +21,5 @@ trait HTMLFontElement extends HTMLElement {
 @JSGlobal("HTMLFontElement")
 @js.native
 object HTMLFontElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLFontElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLFontElement]
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("void-elements", JSImport.Namespace)
 @js.native
 object voidDashElementsMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       stdLib.Partial[
         stdLib.Record[java.lang.String, voidDashElementsLib.voidDashElementsLibNumbers.`true`]
       ]

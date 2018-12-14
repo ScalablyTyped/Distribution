@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ref-union", JSImport.Namespace)
 @js.native
 object refDashUnionModMembers
-  extends ScalablyTyped.runtime.TopLevel[refDashUnionLib.Anon_Fields]
+  extends org.scalablytyped.runtime.TopLevel[refDashUnionLib.Anon_Fields]
 

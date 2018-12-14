@@ -20,7 +20,7 @@ class I18nPluralPipe protected ()
        * @param locale a `string` defining the locale to use (uses the current {@link LOCALE_ID} by
        * default).
        */
-  def transform(value: scala.Double, pluralMap: ScalablyTyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
+  def transform(value: scala.Double, pluralMap: org.scalablytyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
   /**
        * @param value the number to be formatted
        * @param pluralMap an object that mimics the ICU format, see
@@ -30,7 +30,7 @@ class I18nPluralPipe protected ()
        */
   def transform(
     value: scala.Double,
-    pluralMap: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    pluralMap: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     locale: java.lang.String
   ): java.lang.String = js.native
 }

@@ -17,5 +17,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait IPoint
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[scala.Double]
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[scala.Double]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SessionStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* consul */ Consul, Session]
+  extends org.scalablytyped.runtime.Instantiable1[/* consul */ Consul, Session]
 

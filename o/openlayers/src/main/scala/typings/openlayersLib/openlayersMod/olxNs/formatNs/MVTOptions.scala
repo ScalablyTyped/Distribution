@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait MVTOptions extends js.Object {
   var featureClass: js.UndefOr[
     (js.Function1[
-      /* geom */ openlayersLib.openlayersMod.geomNs.Geometry | ScalablyTyped.runtime.StringDictionary[js.Any], 
+      /* geom */ openlayersLib.openlayersMod.geomNs.Geometry | org.scalablytyped.runtime.StringDictionary[js.Any], 
       _
     ]) | (js.Function4[
       /* geom */ openlayersLib.openlayersMod.geomNs.GeometryType, 
       /* arg2 */ js.Array[scala.Double], 
       /* arg3 */ js.Array[scala.Double] | js.Array[js.Array[scala.Double]], 
-      /* arg4 */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+      /* arg4 */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       _
     ])
   ] = js.undefined

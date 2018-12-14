@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait VariantMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ThemeMap]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ThemeMap]
 

@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait DefineGetterMethodsOptions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Function0[_]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Function0[_]]
 

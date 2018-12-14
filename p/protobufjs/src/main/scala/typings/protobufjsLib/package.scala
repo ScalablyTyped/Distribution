@@ -17,7 +17,7 @@ package object protobufjsLib {
    * @throws {Error} If format parameter counts do not match
    */
   type Codegen = js.Function2[
-    /* formatStringOrScope */ js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* formatStringOrScope */ js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]], 
     /* repeated */js.Any, 
     js.Object | js.Function
   ]
@@ -147,7 +147,7 @@ package object protobufjsLib {
    */
   type WrapperFromObjectConverter = js.ThisFunction1[
     /* this */ js.Any, 
-    /* object */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* object */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     js.Any
   ]
   /**
@@ -160,7 +160,7 @@ package object protobufjsLib {
     /* this */ js.Any, 
     /* message */ js.Any, 
     /* options */ js.UndefOr[js.Any], 
-    ScalablyTyped.runtime.StringDictionary[js.Any]
+    org.scalablytyped.runtime.StringDictionary[js.Any]
   ]
   /**
    * Callback as used by {@link util.asPromise}.

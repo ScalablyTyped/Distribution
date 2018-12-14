@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 // number.js
 @js.native
 trait _Number
-  extends ScalablyTyped.runtime.Instantiable0[_Number]
-     with ScalablyTyped.runtime.Instantiable2[/* value */ scala.Double, /* unit */ js.Any, _Number]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[_Number]
+     with org.scalablytyped.runtime.Instantiable2[/* value */ scala.Double, /* unit */ js.Any, _Number]
+     with org.scalablytyped.runtime.Instantiable1[
       (/* value */ _Number) | (/* value */ java.lang.String) | (/* value */ scala.Double), 
       _Number
     ] {

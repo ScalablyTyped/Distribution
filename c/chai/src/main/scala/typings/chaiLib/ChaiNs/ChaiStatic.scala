@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ChaiStatic extends js.Object {
-  var AssertionError: ScalablyTyped.runtime.Instantiable3[
+  var AssertionError: org.scalablytyped.runtime.Instantiable3[
     /* message */ java.lang.String, 
     /* _props */ js.UndefOr[/* _props */ js.Any], 
     /* ssf */ js.UndefOr[/* ssf */ js.Function], 

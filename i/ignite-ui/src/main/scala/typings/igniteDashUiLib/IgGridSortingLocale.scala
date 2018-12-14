@@ -10,7 +10,7 @@ trait IgGridSortingLocale
   extends /**
 	 * Option for IgGridSortingLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Ascending text used for header title.
   	 *

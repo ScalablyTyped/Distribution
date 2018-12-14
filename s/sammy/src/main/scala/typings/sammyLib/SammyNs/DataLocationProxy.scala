@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DataLocationProxy
-  extends ScalablyTyped.runtime.Instantiable1[/* app */ js.Any, DataLocationProxy]
-     with ScalablyTyped.runtime.Instantiable2[/* app */ js.Any, /* run_interval_every */ js.Any, DataLocationProxy]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable1[/* app */ js.Any, DataLocationProxy]
+     with org.scalablytyped.runtime.Instantiable2[/* app */ js.Any, /* run_interval_every */ js.Any, DataLocationProxy]
+     with org.scalablytyped.runtime.Instantiable3[
       /* app */ js.Any, 
       /* data_name */ js.Any, 
       /* href_attribute */ js.Any, 

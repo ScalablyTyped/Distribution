@@ -29,7 +29,7 @@ trait TraceOptions extends js.Object {
   /**
        * Global tags that should be assigned to every span.
        */
-  var tags: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | java.lang.String] = js.undefined
+  var tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String] = js.undefined
   /**
        * The span type to be used for this span.
        */

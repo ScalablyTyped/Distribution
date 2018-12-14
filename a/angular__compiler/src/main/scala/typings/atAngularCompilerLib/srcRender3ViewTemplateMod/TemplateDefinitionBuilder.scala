@@ -109,10 +109,10 @@ class TemplateDefinitionBuilder protected ()
   def i18nAllocateRef(): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def i18nAppendBindings(expressions: js.Array[atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST]): scala.Unit = js.native
   def i18nBindProps(
-    props: ScalablyTyped.runtime.StringDictionary[
+    props: org.scalablytyped.runtime.StringDictionary[
       atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Text | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.BoundText
     ]
-  ): ScalablyTyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression] = js.native
   def i18nEnd(): scala.Unit = js.native
   def i18nEnd(span: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan): scala.Unit = js.native
   def i18nEnd(span: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan, selfClosing: scala.Boolean): scala.Unit = js.native
@@ -141,16 +141,16 @@ class TemplateDefinitionBuilder protected ()
   def i18nTranslate(message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def i18nTranslate(
     message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message,
-    params: ScalablyTyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression]
+    params: org.scalablytyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression]
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def i18nTranslate(
     message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message,
-    params: ScalablyTyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression],
+    params: org.scalablytyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression],
     ref: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def i18nTranslate(
     message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message,
-    params: ScalablyTyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression],
+    params: org.scalablytyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression],
     ref: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr,
     transformFn: js.Function1[
       /* raw */ atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr, 

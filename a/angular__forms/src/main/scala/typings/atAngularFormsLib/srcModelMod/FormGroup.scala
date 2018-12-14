@@ -21,7 +21,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl]) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl]) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -35,7 +35,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -49,7 +49,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: AbstractControlOptions) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: AbstractControlOptions) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -63,7 +63,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn]) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn]) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -77,7 +77,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn, asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn, asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -91,7 +91,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn, asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn, asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -105,7 +105,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: AbstractControlOptions, asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: AbstractControlOptions, asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -119,7 +119,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: AbstractControlOptions, asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: AbstractControlOptions, asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -133,7 +133,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn], asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn], asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -147,7 +147,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn], asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn], asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -161,7 +161,7 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: scala.Null, asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn) = this()
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: scala.Null, asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn) = this()
   /**
       * Creates a new `FormGroup` instance.
       *
@@ -175,8 +175,8 @@ class FormGroup protected () extends AbstractControl {
       * @param asyncValidator A single async validator or array of async validator functions
       *
       */
-  def this(controls: ScalablyTyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: scala.Null, asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]) = this()
-  var controls: ScalablyTyped.runtime.StringDictionary[AbstractControl] = js.native
+  def this(controls: org.scalablytyped.runtime.StringDictionary[AbstractControl], validatorOrOpts: scala.Null, asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]) = this()
+  var controls: org.scalablytyped.runtime.StringDictionary[AbstractControl] = js.native
   /**
        * Add a control to this group.
        *
@@ -238,7 +238,7 @@ class FormGroup protected () extends AbstractControl {
        * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
        * updateValueAndValidity} method.
        */
-  def patchValue(value: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def patchValue(value: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * Patches the value of the `FormGroup`. It accepts an object with control
        * names as keys, and does its best to match the values to the correct controls
@@ -272,7 +272,10 @@ class FormGroup protected () extends AbstractControl {
        * The configuration options are passed to the {@link AbstractControl#updateValueAndValidity
        * updateValueAndValidity} method.
        */
-  def patchValue(value: ScalablyTyped.runtime.StringDictionary[js.Any], options: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def patchValue(
+    value: org.scalablytyped.runtime.StringDictionary[js.Any],
+    options: atAngularFormsLib.Anon_OnlySelf
+  ): scala.Unit = js.native
   /**
        * Registers a control with the group's list of controls.
        *
@@ -389,7 +392,7 @@ class FormGroup protected () extends AbstractControl {
        * observables emit events with the latest status and value when the control value is updated.
        * When false, no events are emitted.
        */
-  def setValue(value: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def setValue(value: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * Sets the value of the `FormGroup`. It accepts an object that matches
        * the structure of the group, with control names as keys.
@@ -425,6 +428,9 @@ class FormGroup protected () extends AbstractControl {
        * observables emit events with the latest status and value when the control value is updated.
        * When false, no events are emitted.
        */
-  def setValue(value: ScalablyTyped.runtime.StringDictionary[js.Any], options: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def setValue(
+    value: org.scalablytyped.runtime.StringDictionary[js.Any],
+    options: atAngularFormsLib.Anon_OnlySelf
+  ): scala.Unit = js.native
 }
 

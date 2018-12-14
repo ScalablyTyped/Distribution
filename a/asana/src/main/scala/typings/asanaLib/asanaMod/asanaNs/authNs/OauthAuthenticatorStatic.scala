@@ -21,5 +21,5 @@ trait OauthAuthenticatorStatic
              *     field.
              * @constructor
              */
-ScalablyTyped.runtime.Instantiable1[/* options */ OauthAuthenticatorOptions, OauthAuthenticator]
+org.scalablytyped.runtime.Instantiable1[/* options */ OauthAuthenticatorOptions, OauthAuthenticator]
 

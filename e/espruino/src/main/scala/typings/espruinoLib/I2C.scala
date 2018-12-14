@@ -17,7 +17,7 @@ trait I2C
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[I2C] {
+org.scalablytyped.runtime.Instantiable0[I2C] {
   /**
        * <p>Try and find an I2C hardware device that will work on this pin (eg. <code>I2C1</code>)</p>
        * <p>May return undefined if no device can be found.</p>

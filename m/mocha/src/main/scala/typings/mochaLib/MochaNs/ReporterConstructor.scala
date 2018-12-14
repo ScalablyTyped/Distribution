@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ReporterConstructor
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* runner */ Runner, 
       /* options */ mochaLib.Anon_ReporterOptions, 
       mochaLib.MochaNs.reportersNs.Base

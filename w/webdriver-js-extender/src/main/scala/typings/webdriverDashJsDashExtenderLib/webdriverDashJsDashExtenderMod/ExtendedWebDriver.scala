@@ -12,7 +12,7 @@ trait ExtendedWebDriver
   def fullscreen(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
   def getAppStrings(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[java.lang.String]] = js.native
   def getAppStrings(language: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[java.lang.String]] = js.native
-  def getAppiumSettings(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def getAppiumSettings(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def getCurrentContext(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
   def getCurrentDeviceActivity(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
   def getDeviceTime(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
@@ -124,7 +124,7 @@ trait ExtendedWebDriver
   def sendAppToBackground(delay: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
   def sendChromiumCommand(cmd: java.lang.String, params: js.Object): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
   def sendChromiumCommandAndGetResult(cmd: java.lang.String, params: js.Object): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Object] = js.native
-  def setAppiumSettings(settings: ScalablyTyped.runtime.StringDictionary[js.Any]): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def setAppiumSettings(settings: org.scalablytyped.runtime.StringDictionary[js.Any]): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
   def setGeolocation(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
   def setGeolocation(latitude: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
   def setGeolocation(latitude: scala.Double, longitude: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native

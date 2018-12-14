@@ -21,7 +21,7 @@ trait resizerConfig extends js.Object {
   var minHeight: js.UndefOr[scala.Double] = js.undefined
   var minWidth: js.UndefOr[scala.Double] = js.undefined
   var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
-  var onContext: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var view: js.UndefOr[java.lang.String] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }

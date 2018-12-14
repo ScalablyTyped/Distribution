@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait InputValidationRequest extends js.Object {
-  var inputs: ScalablyTyped.runtime.StringDictionary[InputValidationItem]
+  var inputs: org.scalablytyped.runtime.StringDictionary[InputValidationItem]
 }
 

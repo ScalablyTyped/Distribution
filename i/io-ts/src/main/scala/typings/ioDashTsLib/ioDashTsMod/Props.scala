@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Props
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Mixed]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Mixed]
 

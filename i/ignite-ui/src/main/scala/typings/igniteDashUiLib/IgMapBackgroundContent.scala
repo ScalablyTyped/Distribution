@@ -10,7 +10,7 @@ trait IgMapBackgroundContent
   extends /**
 	 * Option for IgMapBackgroundContent
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets the bing maps url
   	 */

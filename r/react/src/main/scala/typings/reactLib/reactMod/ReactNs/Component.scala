@@ -33,7 +33,7 @@ trait Component[P, S, SS] extends ComponentLifecycle[P, S, SS] {
            * @deprecated
            * https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
            */
-  var refs: ScalablyTyped.runtime.StringDictionary[ReactInstance] = js.native
+  var refs: org.scalablytyped.runtime.StringDictionary[ReactInstance] = js.native
   var state: stdLib.Readonly[S] = js.native
   def forceUpdate(): scala.Unit = js.native
   def forceUpdate(callBack: js.Function0[scala.Unit]): scala.Unit = js.native

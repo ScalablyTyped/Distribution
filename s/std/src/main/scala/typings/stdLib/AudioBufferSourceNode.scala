@@ -20,8 +20,8 @@ trait AudioBufferSourceNode extends AudioScheduledSourceNode {
 @JSGlobal("AudioBufferSourceNode")
 @js.native
 object AudioBufferSourceNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, AudioBufferSourceNode]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, AudioBufferSourceNode]
+     with org.scalablytyped.runtime.Instantiable2[
       /* context */ BaseAudioContext, 
       /* options */ AudioBufferSourceOptions, 
       AudioBufferSourceNode

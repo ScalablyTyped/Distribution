@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Integrations
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 

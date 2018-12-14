@@ -11,7 +11,7 @@ class Linter () extends js.Object {
   var version: java.lang.String = js.native
   def defineParser(name: java.lang.String, parser: eslintLib.eslintMod.LinterNs.ParserModule): scala.Unit = js.native
   def defineRule(name: java.lang.String, rule: eslintLib.eslintMod.RuleNs.RuleModule): scala.Unit = js.native
-  def defineRules(rules: ScalablyTyped.runtime.StringDictionary[eslintLib.eslintMod.RuleNs.RuleModule]): scala.Unit = js.native
+  def defineRules(rules: org.scalablytyped.runtime.StringDictionary[eslintLib.eslintMod.RuleNs.RuleModule]): scala.Unit = js.native
   def getRules(): stdLib.Map[java.lang.String, eslintLib.eslintMod.RuleNs.RuleModule] = js.native
   def getSourceCode(): SourceCode = js.native
   def verify(code: SourceCode, config: eslintLib.eslintMod.LinterNs.Config): js.Array[eslintLib.eslintMod.LinterNs.LintMessage] = js.native

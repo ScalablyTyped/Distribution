@@ -18,11 +18,11 @@ trait Agent extends js.Object {
   /**
        * Exceptions to vendor prefix use.
        */
-  var prefix_exceptions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]] = js.undefined
+  var prefix_exceptions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]] = js.undefined
   /**
        * Release dates as seconds since epoch by version.
        */
-  var release_date: ScalablyTyped.runtime.StringDictionary[js.UndefOr[scala.Double]]
+  var release_date: org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]]
   /**
        * Global agent usage by version
        */

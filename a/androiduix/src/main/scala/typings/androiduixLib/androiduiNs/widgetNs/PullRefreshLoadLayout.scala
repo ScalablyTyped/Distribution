@@ -48,7 +48,7 @@ class PullRefreshLoadLayout protected ()
 @JSGlobal("androidui.widget.PullRefreshLoadLayout")
 @js.native
 object PullRefreshLoadLayout extends js.Object {
-  var StateChangeLimit: ScalablyTyped.runtime.NumberDictionary[js.Array[scala.Double]] = js.native
+  var StateChangeLimit: org.scalablytyped.runtime.NumberDictionary[js.Array[scala.Double]] = js.native
   var State_Disable: scala.Double = js.native
   var State_Footer_LoadFail: scala.Double = js.native
   var State_Footer_Loading: scala.Double = js.native

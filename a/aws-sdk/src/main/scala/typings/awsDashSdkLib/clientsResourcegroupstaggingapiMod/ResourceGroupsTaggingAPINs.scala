@@ -18,7 +18,7 @@ object ResourceGroupsTaggingAPINs extends js.Object {
   
   
   trait FailedResourcesMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[FailureInfo]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[FailureInfo]
   
   
   trait FailureInfo extends js.Object {
@@ -154,7 +154,7 @@ object ResourceGroupsTaggingAPINs extends js.Object {
   
   
   trait TagMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   
   trait TagResourcesInput extends js.Object {

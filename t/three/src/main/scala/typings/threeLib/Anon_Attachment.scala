@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Attachment
-  extends /* attachment */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* attachment */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var `type`: java.lang.String
 }
 

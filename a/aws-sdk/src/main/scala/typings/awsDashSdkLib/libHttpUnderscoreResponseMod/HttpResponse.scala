@@ -15,7 +15,7 @@ class HttpResponse () extends js.Object {
   /**
        * A map of response header keys and their respective values.
        */
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
        * The HTTP status code of the response (e.g., 200, 404).
        */

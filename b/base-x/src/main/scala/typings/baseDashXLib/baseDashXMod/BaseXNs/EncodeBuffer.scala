@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait EncodeBuffer
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[scala.Double] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[scala.Double] {
   var length: scala.Double
 }
 

@@ -13,7 +13,7 @@ class Composer[T /* <: Model */] protected () extends js.Object {
      * @param {Nodal.Model} Model The model class the composer is querying from
      * @param {Nodal.Composer} [parent=null] The composer's parent (another composer instance)
      */
-  def this(modelConstructor: ScalablyTyped.runtime.Instantiable3[
+  def this(modelConstructor: org.scalablytyped.runtime.Instantiable3[
       /* modelData */ js.Object, 
       /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
       /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
@@ -24,7 +24,7 @@ class Composer[T /* <: Model */] protected () extends js.Object {
      * @param {Nodal.Model} Model The model class the composer is querying from
      * @param {Nodal.Composer} [parent=null] The composer's parent (another composer instance)
      */
-  def this(modelConstructor: ScalablyTyped.runtime.Instantiable3[
+  def this(modelConstructor: org.scalablytyped.runtime.Instantiable3[
       /* modelData */ js.Object, 
       /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
       /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 

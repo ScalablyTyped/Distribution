@@ -17,7 +17,7 @@ class ClassicAuthenticator protected () extends Authenticator {
        * @param username Cluster administration username.
        * @param password Cluster administration password.
        */
-  def this(buckets: ScalablyTyped.runtime.StringDictionary[java.lang.String], username: java.lang.String, password: java.lang.String) = this()
+  def this(buckets: org.scalablytyped.runtime.StringDictionary[java.lang.String], username: java.lang.String, password: java.lang.String) = this()
   /* CompleteClass */
   override var password: java.lang.String = js.native
   /* CompleteClass */

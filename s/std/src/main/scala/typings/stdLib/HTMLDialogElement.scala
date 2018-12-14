@@ -18,5 +18,5 @@ trait HTMLDialogElement extends HTMLElement {
 @JSGlobal("HTMLDialogElement")
 @js.native
 object HTMLDialogElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLDialogElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLDialogElement]
 

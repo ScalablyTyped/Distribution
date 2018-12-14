@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Manifest
-  extends /* moduleId */ ScalablyTyped.runtime.StringDictionary[js.Array[Bundle]]
+  extends /* moduleId */ org.scalablytyped.runtime.StringDictionary[js.Array[Bundle]]
 

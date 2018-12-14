@@ -39,11 +39,11 @@ class BitmapText protected ()
 @js.native
 object BitmapText extends js.Object {
   var fonts: js.Any = js.native
+  def registerFont(xml: stdLib.XMLDocument, textures: js.Array[pixiDotJsLib.PIXINs.Texture]): js.Any = js.native
   def registerFont(
     xml: stdLib.XMLDocument,
-    textures: ScalablyTyped.runtime.StringDictionary[pixiDotJsLib.PIXINs.Texture]
+    textures: org.scalablytyped.runtime.StringDictionary[pixiDotJsLib.PIXINs.Texture]
   ): js.Any = js.native
-  def registerFont(xml: stdLib.XMLDocument, textures: js.Array[pixiDotJsLib.PIXINs.Texture]): js.Any = js.native
   def registerFont(xml: stdLib.XMLDocument, textures: pixiDotJsLib.PIXINs.Texture): js.Any = js.native
 }
 

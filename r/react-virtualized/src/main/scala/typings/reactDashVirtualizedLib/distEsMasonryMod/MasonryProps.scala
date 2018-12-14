@@ -14,7 +14,7 @@ trait MasonryProps
      * Check the following link if you want to know more
      * https://github.com/bvaughn/react-virtualized#pass-thru-props
      */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var autoHeight: scala.Boolean
   var cellCount: scala.Double
   var cellMeasurerCache: reactDashVirtualizedLib.distEsCellMeasurerMod.CellMeasurerCacheInterface

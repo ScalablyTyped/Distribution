@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PatternMap
-  extends /* pattern */ ScalablyTyped.runtime.StringDictionary[CallbackSignature]
+  extends /* pattern */ org.scalablytyped.runtime.StringDictionary[CallbackSignature]
 

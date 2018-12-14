@@ -19,7 +19,7 @@ class Mapper () extends Component {
   @JSName("notify")
   var notify_FMapper: scala.Boolean = js.native
   var raw: scala.Boolean = js.native
-  var recordClass: ScalablyTyped.runtime.Instantiable2[
+  var recordClass: org.scalablytyped.runtime.Instantiable2[
     /* props */ js.UndefOr[/* props */ js.Any], 
     /* opts */ js.UndefOr[/* opts */ js.Any], 
     Record

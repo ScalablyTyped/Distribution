@@ -14,5 +14,5 @@ trait MSAssertion extends js.Object {
 @JSGlobal("MSAssertion")
 @js.native
 object MSAssertion
-  extends ScalablyTyped.runtime.Instantiable0[MSAssertion]
+  extends org.scalablytyped.runtime.Instantiable0[MSAssertion]
 

@@ -11,7 +11,7 @@ trait AggregatedDataForResultTrend extends js.Object {
        * This is tests execution duration.
        */
   var duration: js.Any
-  var resultsByOutcome: ScalablyTyped.runtime.NumberDictionary[AggregatedResultsByOutcome]
+  var resultsByOutcome: org.scalablytyped.runtime.NumberDictionary[AggregatedResultsByOutcome]
   var testResultsContext: TestResultsContext
   var totalTests: scala.Double
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Font extends js.Object {
-  var glyphs: ScalablyTyped.runtime.NumberDictionary[Glyph]
+  var glyphs: org.scalablytyped.runtime.NumberDictionary[Glyph]
   var meta: Meta
 }
 

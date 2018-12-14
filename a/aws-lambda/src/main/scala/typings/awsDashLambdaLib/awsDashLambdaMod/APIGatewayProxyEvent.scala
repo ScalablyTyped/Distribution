@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 
 trait APIGatewayProxyEvent extends js.Object {
   var body: java.lang.String | scala.Null
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var httpMethod: java.lang.String
   var isBase64Encoded: scala.Boolean
-  var multiValueHeaders: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
-  var multiValueQueryStringParameters: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] | scala.Null
+  var multiValueHeaders: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  var multiValueQueryStringParameters: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | scala.Null
   var path: java.lang.String
-  var pathParameters: ScalablyTyped.runtime.StringDictionary[java.lang.String] | scala.Null
-  var queryStringParameters: ScalablyTyped.runtime.StringDictionary[java.lang.String] | scala.Null
+  var pathParameters: org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null
+  var queryStringParameters: org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null
   var requestContext: APIGatewayEventRequestContext
   var resource: java.lang.String
-  var stageVariables: ScalablyTyped.runtime.StringDictionary[java.lang.String] | scala.Null
+  var stageVariables: org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null
 }
 

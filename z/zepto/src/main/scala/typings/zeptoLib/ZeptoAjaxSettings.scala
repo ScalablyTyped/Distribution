@@ -28,7 +28,7 @@ trait ZeptoAjaxSettings extends js.Object {
     ]
   ] = js.undefined
   var global: js.UndefOr[scala.Boolean] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var jsonp: js.UndefOr[java.lang.String] = js.undefined
   var jsonpCallback: js.UndefOr[js.Any] = js.undefined
   var mimeType: js.UndefOr[java.lang.String] = js.undefined
@@ -48,6 +48,6 @@ trait ZeptoAjaxSettings extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
   var username: js.UndefOr[java.lang.String] = js.undefined
-  var xhrFields: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var xhrFields: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

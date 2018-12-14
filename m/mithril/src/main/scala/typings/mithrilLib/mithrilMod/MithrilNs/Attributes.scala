@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait Attributes
   extends Lifecycle[js.Any, js.Any]
      with /** Any other virtual element properties, including attributes and event handlers. */
-/* property */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* property */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** The class name(s) for this virtual element, as a space-separated list. */
   var `class`: js.UndefOr[java.lang.String] = js.undefined
   /** The class name(s) for this virtual element, as a space-separated list. */

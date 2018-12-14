@@ -114,8 +114,8 @@ object ioDashTsModMembers extends js.Object {
     mixed
   ] = js.native
   def isTagged[Tag /* <: java.lang.String */](tag: Tag): js.Function1[/* type */ Mixed, /* is Tagged */scala.Boolean] = js.native
-  def keyof[D /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](keys: D): KeyofType[D] = js.native
-  def keyof[D /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](keys: D, name: java.lang.String): KeyofType[D] = js.native
+  def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D): KeyofType[D] = js.native
+  def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D, name: java.lang.String): KeyofType[D] = js.native
   def literal[V /* <: java.lang.String | scala.Double | scala.Boolean */](value: V): LiteralType[V] = js.native
   def literal[V /* <: java.lang.String | scala.Double | scala.Boolean */](value: V, name: java.lang.String): LiteralType[V] = js.native
   def partial[P /* <: Props */](props: P): PartialType[P, TypeOfPartialProps[P], OutputOfPartialProps[P], _] = js.native

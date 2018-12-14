@@ -47,50 +47,54 @@ object angularModMembers extends js.Object {
   ): scala.Double = js.native
   def `object`[T](name: java.lang.String, value: T): T = js.native
   def `object`[T](name: java.lang.String, value: T, groupId: java.lang.String): T = js.native
-  def select[T /* <: scala.Double */](
-    name: java.lang.String,
-    options: ScalablyTyped.runtime.NumberDictionary[java.lang.String],
-    value: T
-  ): T = js.native
-  def select[T /* <: scala.Double */](
-    name: java.lang.String,
-    options: ScalablyTyped.runtime.NumberDictionary[java.lang.String],
-    value: T,
-    groupId: java.lang.String
-  ): T = js.native
-  def select[T /* <: java.lang.String */](
-    name: java.lang.String,
-    options: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    value: T
-  ): T = js.native
-  def select[T /* <: java.lang.String */](
-    name: java.lang.String,
-    options: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    value: T,
-    groupId: java.lang.String
-  ): T = js.native
   def select[T /* <: atStorybookAddonDashKnobsLib.addonDashKnobsMod.SelectValue */](name: java.lang.String, options: js.Array[T], value: T): T = js.native
   def select[T /* <: atStorybookAddonDashKnobsLib.addonDashKnobsMod.SelectValue */](name: java.lang.String, options: js.Array[T], value: T, groupId: java.lang.String): T = js.native
-  def selectV2[T /* <: java.lang.String | scala.Double */](name: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[T | js.Array[T]], value: T): T = js.native
-  def selectV2[T /* <: java.lang.String | scala.Double */](
+  def select[T /* <: scala.Double */](
     name: java.lang.String,
-    options: ScalablyTyped.runtime.StringDictionary[T | js.Array[T]],
+    options: org.scalablytyped.runtime.NumberDictionary[java.lang.String],
+    value: T
+  ): T = js.native
+  def select[T /* <: scala.Double */](
+    name: java.lang.String,
+    options: org.scalablytyped.runtime.NumberDictionary[java.lang.String],
     value: T,
     groupId: java.lang.String
   ): T = js.native
-  def selectV2[T /* <: java.lang.String | scala.Double */](
+  def select[T /* <: java.lang.String */](
     name: java.lang.String,
-    options: ScalablyTyped.runtime.StringDictionary[T | js.Array[T]],
-    value: js.Array[T]
+    options: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    value: T
   ): T = js.native
-  def selectV2[T /* <: java.lang.String | scala.Double */](
+  def select[T /* <: java.lang.String */](
     name: java.lang.String,
-    options: ScalablyTyped.runtime.StringDictionary[T | js.Array[T]],
-    value: js.Array[T],
+    options: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    value: T,
     groupId: java.lang.String
   ): T = js.native
   def selectV2[T /* <: atStorybookAddonDashKnobsLib.addonDashKnobsMod.SelectValue */](name: java.lang.String, options: js.Array[T], value: T): T = js.native
   def selectV2[T /* <: atStorybookAddonDashKnobsLib.addonDashKnobsMod.SelectValue */](name: java.lang.String, options: js.Array[T], value: T, groupId: java.lang.String): T = js.native
+  def selectV2[T /* <: java.lang.String | scala.Double */](
+    name: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[T | js.Array[T]],
+    value: T
+  ): T = js.native
+  def selectV2[T /* <: java.lang.String | scala.Double */](
+    name: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[T | js.Array[T]],
+    value: T,
+    groupId: java.lang.String
+  ): T = js.native
+  def selectV2[T /* <: java.lang.String | scala.Double */](
+    name: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[T | js.Array[T]],
+    value: js.Array[T]
+  ): T = js.native
+  def selectV2[T /* <: java.lang.String | scala.Double */](
+    name: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[T | js.Array[T]],
+    value: js.Array[T],
+    groupId: java.lang.String
+  ): T = js.native
   def text(name: java.lang.String): java.lang.String = js.native
   def text(name: java.lang.String, value: java.lang.String): java.lang.String = js.native
   def text(name: java.lang.String, value: java.lang.String, groupId: java.lang.String): java.lang.String = js.native

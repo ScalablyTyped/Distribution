@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
      */
 @js.native
 trait PromiseConstructor
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       /* callback */ js.Function3[
         /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[js.Object | js.Thenable[js.Object]], scala.Unit], 
         /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit], 

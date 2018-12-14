@@ -36,7 +36,7 @@ trait ISchema[T] extends js.Object {
   /**Custom messages for different constraints */
   var message: js.UndefOr[java.lang.String] = js.undefined
   /**Custom messages for different constraints */
-  var messages: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var messages: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**Value must contain more than expected number of items */
   var minItems: js.UndefOr[scala.Double] = js.undefined
   /**The length of value must be lesser than or equal to expected value */

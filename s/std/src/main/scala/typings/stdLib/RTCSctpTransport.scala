@@ -65,5 +65,5 @@ trait RTCSctpTransport extends js.Object {
 @JSGlobal("RTCSctpTransport")
 @js.native
 object RTCSctpTransport
-  extends ScalablyTyped.runtime.Instantiable0[RTCSctpTransport]
+  extends org.scalablytyped.runtime.Instantiable0[RTCSctpTransport]
 

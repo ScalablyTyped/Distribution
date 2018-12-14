@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Actions
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[Listenable]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[Listenable]
 

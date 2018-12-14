@@ -20,5 +20,5 @@ trait HTMLModElement extends HTMLElement {
 @JSGlobal("HTMLModElement")
 @js.native
 object HTMLModElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLModElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLModElement]
 

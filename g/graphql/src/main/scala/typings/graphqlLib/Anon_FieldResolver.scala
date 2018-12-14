@@ -11,7 +11,7 @@ trait Anon_FieldResolver extends js.Object {
   var document: graphqlLib.languageAstMod.DocumentNode
   var fieldResolver: js.UndefOr[
     graphqlLib.tsutilsMaybeMod.Maybe[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ] = js.undefined
   var operationName: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String]] = js.undefined
@@ -19,9 +19,9 @@ trait Anon_FieldResolver extends js.Object {
   var schema: graphqlLib.typeSchemaMod.GraphQLSchema
   var subscribeFieldResolver: js.UndefOr[
     graphqlLib.tsutilsMaybeMod.Maybe[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ] = js.undefined
-  var variableValues: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]]] = js.undefined
+  var variableValues: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 

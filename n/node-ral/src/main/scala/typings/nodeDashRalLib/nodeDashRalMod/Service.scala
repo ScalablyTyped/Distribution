@@ -12,7 +12,7 @@ trait Service extends js.Object {
   var encoding: js.UndefOr[
     nodeDashRalLib.nodeDashRalLibStrings.`utf-8` | nodeDashRalLib.nodeDashRalLibStrings.GBK
   ] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]] = js.undefined
   var hybird: js.UndefOr[scala.Boolean] = js.undefined
   var method: js.UndefOr[
     nodeDashRalLib.nodeDashRalLibStrings.GET | nodeDashRalLib.nodeDashRalLibStrings.POST

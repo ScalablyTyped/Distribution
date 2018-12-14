@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IService
-  extends /* portName */ ScalablyTyped.runtime.StringDictionary[IServicePort]
+  extends /* portName */ org.scalablytyped.runtime.StringDictionary[IServicePort]
 

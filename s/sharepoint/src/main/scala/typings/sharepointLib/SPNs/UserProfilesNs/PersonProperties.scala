@@ -38,7 +38,7 @@ class PersonProperties ()
                   The privacy settings affect which properties can be retrieved.
                   Multiple values are delimited by the vertical bar "|".
                   Null values are specified as empty strings. */
-  def get_userProfileProperties(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def get_userProfileProperties(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /** Specifies the URL for the person's profile. */
   def get_userUrl(): java.lang.String = js.native
 }

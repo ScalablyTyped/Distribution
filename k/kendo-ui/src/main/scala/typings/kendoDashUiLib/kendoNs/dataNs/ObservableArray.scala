@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObservableArray protected ()
   extends kendoDashUiLib.kendoNs.Observable
-     with /* index */ ScalablyTyped.runtime.NumberDictionary[js.Any] {
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[js.Any] {
   def this(array: js.Array[_]) = this()
   var length: scala.Double = js.native
   def empty(): scala.Unit = js.native

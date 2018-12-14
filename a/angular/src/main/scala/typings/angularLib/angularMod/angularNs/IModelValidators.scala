@@ -10,5 +10,5 @@ trait IModelValidators
   extends /**
          * viewValue is any because it can be an object that is called in the view like $viewValue.name:$viewValue.subName
          */
-/* index */ ScalablyTyped.runtime.StringDictionary[js.Function2[/* modelValue */ js.Any, /* viewValue */ js.Any, scala.Boolean]]
+/* index */ org.scalablytyped.runtime.StringDictionary[js.Function2[/* modelValue */ js.Any, /* viewValue */ js.Any, scala.Boolean]]
 

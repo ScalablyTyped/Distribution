@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
      */
 @js.native
 trait LinearGradient
-  extends ScalablyTyped.runtime.Instantiable6[
+  extends org.scalablytyped.runtime.Instantiable6[
       /* x */ js.UndefOr[/* x */ X], 
       /* y */ js.UndefOr[/* y */ Y], 
       /* x2 */ js.UndefOr[/* x2 */ X2], 

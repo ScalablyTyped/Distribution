@@ -14,7 +14,7 @@ trait GridCoreProps
      * Check the following link if you want to know more
      * https://github.com/bvaughn/react-virtualized#pass-thru-props
      */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var `aria-label`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-readonly`: js.UndefOr[scala.Boolean] = js.undefined
   /**

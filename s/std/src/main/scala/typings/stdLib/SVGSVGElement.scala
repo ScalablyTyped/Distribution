@@ -162,7 +162,7 @@ trait SVGSVGElement
 @JSGlobal("SVGSVGElement")
 @js.native
 object SVGSVGElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGSVGElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGSVGElement] {
   val SVG_ZOOMANDPAN_DISABLE: scala.Double = js.native
   val SVG_ZOOMANDPAN_MAGNIFY: scala.Double = js.native
   val SVG_ZOOMANDPAN_UNKNOWN: scala.Double = js.native

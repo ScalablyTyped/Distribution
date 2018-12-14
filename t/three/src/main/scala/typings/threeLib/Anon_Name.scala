@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Name
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[threeLib.threeDashCoreMod.Shader] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[threeLib.threeDashCoreMod.Shader] {
   var basic: threeLib.threeDashCoreMod.Shader
   var cube: threeLib.threeDashCoreMod.Shader
   var dashed: threeLib.threeDashCoreMod.Shader

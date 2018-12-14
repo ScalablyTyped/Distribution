@@ -12,7 +12,7 @@ trait GlobalConfig extends js.Object {
   var changedSince: java.lang.String
   var collectCoverage: scala.Boolean
   var collectCoverageFrom: js.Array[java.lang.String]
-  var collectCoverageOnlyFrom: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
+  var collectCoverageOnlyFrom: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
   var coverageDirectory: java.lang.String
   var coveragePathIgnorePatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var coverageReporters: js.Array[java.lang.String]
@@ -20,7 +20,7 @@ trait GlobalConfig extends js.Object {
   var detectLeaks: scala.Boolean
   var detectOpenHandles: scala.Boolean
   var enabledTestsMap: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[scala.Boolean]]
+    org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Boolean]]
   ] = js.undefined
   var errorOnDeprecated: scala.Boolean
   var expand: scala.Boolean

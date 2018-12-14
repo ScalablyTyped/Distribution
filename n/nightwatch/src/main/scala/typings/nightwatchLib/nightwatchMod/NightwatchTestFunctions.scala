@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait NightwatchTestFunctions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[NightwatchTest]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[NightwatchTest]
 

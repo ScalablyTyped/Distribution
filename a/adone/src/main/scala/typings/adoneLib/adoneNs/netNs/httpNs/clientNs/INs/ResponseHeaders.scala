@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ResponseHeaders
-  extends /* header */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
+  extends /* header */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
   var `accept-patch`: js.UndefOr[java.lang.String]
   var `accept-ranges`: js.UndefOr[java.lang.String]
   var `access-control-allow-credentials`: js.UndefOr[java.lang.String]

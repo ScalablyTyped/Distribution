@@ -20,7 +20,7 @@ trait nlobjRecord
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * Commit the current line in a sublist.
        *

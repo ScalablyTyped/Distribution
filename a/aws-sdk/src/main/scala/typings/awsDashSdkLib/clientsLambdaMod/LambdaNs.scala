@@ -138,7 +138,7 @@ object LambdaNs extends js.Object {
   
   
   trait AdditionalVersionWeights
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Weight]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Weight]
   
   
   trait AliasConfiguration extends js.Object {
@@ -406,7 +406,7 @@ object LambdaNs extends js.Object {
   
   
   trait EnvironmentVariables
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[EnvironmentVariableValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[EnvironmentVariableValue]
   
   
   trait EventSourceMappingConfiguration extends js.Object {
@@ -1245,7 +1245,7 @@ object LambdaNs extends js.Object {
   
   
   trait Tags
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   
   trait TracingConfig extends js.Object {

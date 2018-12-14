@@ -11,7 +11,7 @@ trait RequestParams extends js.Object {
   /**
                * 请求的参数
                */
-  var data: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
                * 返回的数据格式
                */
@@ -22,7 +22,7 @@ trait RequestParams extends js.Object {
   /**
                * 设置请求的 header，header 中不能设置 Referer
                */
-  var header: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var header: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
                * HTTP 请求方法
                */

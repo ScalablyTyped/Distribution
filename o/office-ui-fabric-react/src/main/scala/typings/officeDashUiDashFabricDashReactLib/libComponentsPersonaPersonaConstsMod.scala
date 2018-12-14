@@ -39,7 +39,7 @@ object libComponentsPersonaPersonaConstsMod extends js.Object {
   
   @js.native
   object sizeToPixels
-    extends /* key */ ScalablyTyped.runtime.NumberDictionary[scala.Double]
+    extends /* key */ org.scalablytyped.runtime.NumberDictionary[scala.Double]
   
 }
 

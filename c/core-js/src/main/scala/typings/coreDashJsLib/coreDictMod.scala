@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/core/dict", JSImport.Namespace)
 @js.native
 object coreDictMod
-  extends ScalablyTyped.runtime.TopLevel[DictConstructor]
+  extends org.scalablytyped.runtime.TopLevel[DictConstructor]
 

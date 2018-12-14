@@ -10,7 +10,7 @@ trait IgGridFeatureChooserPopover
   extends /**
 	 * Option for igGridFeatureChooserPopover
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Sets the time popover fades in and out when showing/hiding
   	 *

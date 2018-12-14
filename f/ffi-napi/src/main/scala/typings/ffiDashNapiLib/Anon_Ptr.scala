@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Ptr
-  extends ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable3[
+      /* ptr */ Buffer, 
+      (/* ret */ refDashNapiLib.refDashNapiMod.Type) | (/* ret */ java.lang.String), 
+      /* fixedArgs */ js.Array[js.Any], 
+      ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction
+    ]
+     with org.scalablytyped.runtime.Instantiable4[
       /* ptr */ Buffer, 
       (/* ret */ refDashNapiLib.refDashNapiMod.Type) | (/* ret */ java.lang.String), 
       /* fixedArgs */ js.Array[js.Any], 
       /* abi */ scala.Double, 
-      ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction
-    ]
-     with ScalablyTyped.runtime.Instantiable3[
-      /* ptr */ Buffer, 
-      (/* ret */ refDashNapiLib.refDashNapiMod.Type) | (/* ret */ java.lang.String), 
-      /* fixedArgs */ js.Array[js.Any], 
       ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction
     ] {
   def apply(ptr: Buffer, ret: java.lang.String, fixedArgs: js.Array[_]): ffiDashNapiLib.ffiDashNapiMod.VariadicForeignFunction = js.native

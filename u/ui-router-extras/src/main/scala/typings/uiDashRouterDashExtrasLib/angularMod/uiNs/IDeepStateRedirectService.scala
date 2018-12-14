@@ -27,7 +27,7 @@ trait IDeepStateRedirectService extends js.Object {
                */
   def reset(
     stateName: java.lang.String,
-    stateParams: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    stateParams: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ): scala.Unit = js.native
 }
 

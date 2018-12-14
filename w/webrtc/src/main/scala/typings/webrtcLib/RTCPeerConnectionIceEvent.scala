@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RTCPeerConnectionIceEvent
   extends stdLib.Event {
-  val url: java.lang.String = js.native
+  val url: java.lang.String | scala.Null = js.native
 }
 

@@ -14,6 +14,6 @@ trait TaskOrchestrationJob extends TaskOrchestrationItem {
   var instanceId: java.lang.String
   var name: java.lang.String
   var tasks: js.Array[TaskInstance]
-  var variables: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

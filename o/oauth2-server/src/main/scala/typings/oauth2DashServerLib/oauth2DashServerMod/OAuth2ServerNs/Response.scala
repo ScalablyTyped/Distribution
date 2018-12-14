@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait Response extends js.Object {
   var body: js.UndefOr[js.Any] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var status: js.UndefOr[scala.Double] = js.undefined
   /**
            * Returns the specified HTTP header field. The match is case-insensitive.

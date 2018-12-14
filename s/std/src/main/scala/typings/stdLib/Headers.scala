@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Headers extends js.Object {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native
   def append(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def delete(name: java.lang.String): scala.Unit = js.native
@@ -48,6 +48,6 @@ trait Headers extends js.Object {
 @JSGlobal("Headers")
 @js.native
 object Headers
-  extends ScalablyTyped.runtime.Instantiable0[Headers]
-     with ScalablyTyped.runtime.Instantiable1[/* init */ HeadersInit, Headers]
+  extends org.scalablytyped.runtime.Instantiable0[Headers]
+     with org.scalablytyped.runtime.Instantiable1[/* init */ HeadersInit, Headers]
 

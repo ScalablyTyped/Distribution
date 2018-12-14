@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait IBroadcastUpdatePluginConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* channelName */ java.lang.String, BroadcastUpdatePlugin]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* channelName */ java.lang.String, BroadcastUpdatePlugin]
+     with org.scalablytyped.runtime.Instantiable2[
       /* channelName */ java.lang.String, 
       /* options */ stdLib.Partial[IBroadcastCacheUpdateOptions], 
       BroadcastUpdatePlugin

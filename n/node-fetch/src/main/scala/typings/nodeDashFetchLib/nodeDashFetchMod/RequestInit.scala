@@ -15,7 +15,7 @@ trait RequestInit extends js.Object {
   var compress: js.UndefOr[scala.Boolean] = js.undefined
    // =true support gzip/deflate content encoding. false to disable
   var follow: js.UndefOr[scala.Double] = js.undefined
-  var headers: js.UndefOr[HeaderInit | ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[HeaderInit | org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
   var redirect: js.UndefOr[RequestRedirect] = js.undefined
    // =20 maximum redirect count. 0 to not follow redirect

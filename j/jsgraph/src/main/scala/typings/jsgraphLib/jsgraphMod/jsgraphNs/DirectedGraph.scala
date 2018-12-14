@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DirectedGraph
-  extends ScalablyTyped.runtime.Instantiable0[DirectedGraph] {
+  extends org.scalablytyped.runtime.Instantiable0[DirectedGraph] {
   //Edge functions
   def addEdge(request: EdgeRequest): JsGraphResponse = js.native
   //Vertex functions

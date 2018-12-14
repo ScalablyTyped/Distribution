@@ -19,13 +19,13 @@ import scala.scalajs.js.annotation._
 trait ConnectionBase
   extends nodeLib.eventsMod.EventEmitter {
   /** A hash of the collections associated with this connection */
-  var collections: ScalablyTyped.runtime.StringDictionary[Collection] = js.native
+  var collections: org.scalablytyped.runtime.StringDictionary[Collection] = js.native
   /** A hash of the global options that are associated with this connection */
   var config: js.Any = js.native
   /** The mongodb.Db instance, set when the connection is opened */
   var db: mongodbLib.mongodbMod.Db = js.native
   /** A hash of models registered with this connection */
-  var models: ScalablyTyped.runtime.StringDictionary[Model[_, js.Object]] = js.native
+  var models: org.scalablytyped.runtime.StringDictionary[Model[_, js.Object]] = js.native
   /**
        * Connection ready state
        * 0 = disconnected

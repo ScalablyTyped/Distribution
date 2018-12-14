@@ -49,9 +49,9 @@ class Axis[D] protected ()
        */
   /* protected */ def _coreSize(): scala.Double = js.native
   /* protected */ def _drawAnnotations(): scala.Unit = js.native
-  /* protected */ def _generateBaselineAttrHash(): ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
-  /* protected */ def _generateTickMarkAttrHash(): ScalablyTyped.runtime.StringDictionary[scala.Double | (js.Function1[/* d */ js.Any, scala.Double])] = js.native
-  /* protected */ def _generateTickMarkAttrHash(isEndTickMark: scala.Boolean): ScalablyTyped.runtime.StringDictionary[scala.Double | (js.Function1[/* d */ js.Any, scala.Double])] = js.native
+  /* protected */ def _generateBaselineAttrHash(): org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
+  /* protected */ def _generateTickMarkAttrHash(): org.scalablytyped.runtime.StringDictionary[scala.Double | (js.Function1[/* d */ js.Any, scala.Double])] = js.native
+  /* protected */ def _generateTickMarkAttrHash(isEndTickMark: scala.Boolean): org.scalablytyped.runtime.StringDictionary[scala.Double | (js.Function1[/* d */ js.Any, scala.Double])] = js.native
   /* protected */ def _getTickValues(): js.Array[D] = js.native
   /**
        * Responsible for hiding any tick labels that break out of the bounding

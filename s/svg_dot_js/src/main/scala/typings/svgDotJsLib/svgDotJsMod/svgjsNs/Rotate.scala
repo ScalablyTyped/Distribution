@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Rotate
   extends Transformation
-     with ScalablyTyped.runtime.Instantiable0[Rotate]
+     with org.scalablytyped.runtime.Instantiable0[Rotate]
 

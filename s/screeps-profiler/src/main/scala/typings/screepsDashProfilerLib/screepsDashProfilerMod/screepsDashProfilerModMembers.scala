@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("screeps-profiler", JSImport.Namespace)
 @js.native
 object screepsDashProfilerModMembers
-  extends ScalablyTyped.runtime.TopLevel[ScreepsProfilerStatic]
+  extends org.scalablytyped.runtime.TopLevel[ScreepsProfilerStatic]
 

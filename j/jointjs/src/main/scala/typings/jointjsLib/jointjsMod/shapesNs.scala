@@ -62,10 +62,10 @@ object shapesNs extends js.Object {
     @js.native
     class Circle () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[CircleSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[CircleSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[CircleSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGCircleSelector because Already inherited / * selector * / ScalablyTyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
+    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGCircleSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
     
     trait CircleSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
@@ -73,10 +73,10 @@ object shapesNs extends js.Object {
     @js.native
     class Ellipse () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EllipseSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EllipseSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EllipseSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGEllipseSelector because Already inherited / * selector * / ScalablyTyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
+    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGEllipseSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
     
     trait EllipseSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
@@ -88,10 +88,10 @@ object shapesNs extends js.Object {
     @js.native
     class Image () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[ImageSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[ImageSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[ImageSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGImageSelector because Already inherited / * selector * / ScalablyTyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
+    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGImageSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
     
     trait ImageSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
@@ -99,10 +99,10 @@ object shapesNs extends js.Object {
     @js.native
     class Path () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PathSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PathSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PathSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGPathSelector because Already inherited / * selector * / ScalablyTyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
+    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGPathSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
     
     trait PathSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
@@ -110,10 +110,10 @@ object shapesNs extends js.Object {
     @js.native
     class Polygon () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGPolygonSelector because Already inherited / * selector * / ScalablyTyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
+    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGPolygonSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
     
     trait PolygonSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
@@ -121,10 +121,10 @@ object shapesNs extends js.Object {
     @js.native
     class Polyline () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolylineSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolylineSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolylineSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGPolylineSelector because Already inherited / * selector * / ScalablyTyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
+    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGPolylineSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
     
     trait PolylineSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
@@ -132,10 +132,10 @@ object shapesNs extends js.Object {
     @js.native
     class Rect () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[RectSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[RectSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[RectSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGRectSelector because Already inherited / * selector * / ScalablyTyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
+    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGRectSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
     
     trait RectSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector
@@ -143,22 +143,22 @@ object shapesNs extends js.Object {
     @js.native
     class Rhombus () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PathSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PathSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PathSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
     class Text () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGTextSelector]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGTextSelector], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGTextSelector], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
     class TextBlock () extends Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[TextBlockSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[TextBlockSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[TextBlockSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
-    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGRectSelector because Already inherited / * selector * / ScalablyTyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
+    /* RemoveMultipleInheritance: Dropped parents List(jointjsLib.jointjsMod.shapesNs.SVGRectSelector because Already inherited / * selector * / org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]])*/
     
     trait TextBlockSelectors
       extends jointjsLib.jointjsMod.shapesNs.SVGTextSelector {
@@ -237,7 +237,7 @@ object shapesNs extends js.Object {
     class Model ()
       extends jointjsLib.jointjsMod.shapesNs.basicNs.Generic {
       def this(attributes: ModelAttributes) = this()
-      def this(attributes: ModelAttributes, opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: ModelAttributes, opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
       def addInPort(port: java.lang.String): this.type = js.native
       def addInPort(port: java.lang.String, opt: js.Any): this.type = js.native
       def addOutPort(port: java.lang.String): this.type = js.native
@@ -277,7 +277,7 @@ object shapesNs extends js.Object {
     class Attribute ()
       extends jointjsLib.jointjsMod.diaNs.Element {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EllipsoidSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EllipsoidSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EllipsoidSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
@@ -295,14 +295,14 @@ object shapesNs extends js.Object {
     class Entity ()
       extends jointjsLib.jointjsMod.shapesNs.basicNs.Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonalSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonalSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonalSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
     class ISA ()
       extends jointjsLib.jointjsMod.diaNs.Element {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.basicNs.PolygonSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.basicNs.PolygonSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.basicNs.PolygonSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
@@ -336,7 +336,7 @@ object shapesNs extends js.Object {
     class Relationship ()
       extends jointjsLib.jointjsMod.diaNs.Element {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonalSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonalSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[PolygonalSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
@@ -362,14 +362,14 @@ object shapesNs extends js.Object {
     class EndState ()
       extends jointjsLib.jointjsMod.diaNs.Element {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[CirculoidSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[CirculoidSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[CirculoidSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
     class StartState ()
       extends jointjsLib.jointjsMod.diaNs.Element {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGCircleSelector]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGCircleSelector], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGCircleSelector], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
@@ -393,7 +393,7 @@ object shapesNs extends js.Object {
     @js.native
     class Gate11 () extends Gate {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[Gate11Selectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[Gate11Selectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[Gate11Selectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     
@@ -408,7 +408,7 @@ object shapesNs extends js.Object {
     @js.native
     class Gate21 () extends Gate {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[Gate21Selectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[Gate21Selectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[Gate21Selectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     
@@ -434,7 +434,7 @@ object shapesNs extends js.Object {
     @js.native
     class IO () extends Gate {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.basicNs.CircleSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.basicNs.CircleSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.basicNs.CircleSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
@@ -495,7 +495,7 @@ object shapesNs extends js.Object {
     class Member ()
       extends jointjsLib.jointjsMod.diaNs.Element {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[MemberSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[MemberSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[MemberSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     
@@ -520,7 +520,7 @@ object shapesNs extends js.Object {
     class Place ()
       extends jointjsLib.jointjsMod.shapesNs.basicNs.Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.Attributes) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.Attributes, opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.Attributes, opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
@@ -533,7 +533,7 @@ object shapesNs extends js.Object {
     class Transition ()
       extends jointjsLib.jointjsMod.shapesNs.basicNs.Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGRectSelector]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGRectSelector], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.SVGRectSelector], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
   }
@@ -791,13 +791,13 @@ object shapesNs extends js.Object {
     @js.native
     class Abstract () extends Class {
       def this(attributes: ClassAttributes) = this()
-      def this(attributes: ClassAttributes, opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: ClassAttributes, opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
     class AbstractView () extends ClassView {
       def this(attributes: ClassAttributes) = this()
-      def this(attributes: ClassAttributes, opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: ClassAttributes, opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
@@ -812,7 +812,7 @@ object shapesNs extends js.Object {
     class Class ()
       extends jointjsLib.jointjsMod.shapesNs.basicNs.Generic {
       def this(attributes: ClassAttributes) = this()
-      def this(attributes: ClassAttributes, opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: ClassAttributes, opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
       def getClassName(): js.Array[java.lang.String] = js.native
       /* protected */ def updateRectangles(): scala.Unit = js.native
     }
@@ -837,7 +837,7 @@ object shapesNs extends js.Object {
     class EndState ()
       extends jointjsLib.jointjsMod.shapesNs.basicNs.Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EndStateSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EndStateSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[EndStateSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     
@@ -858,27 +858,27 @@ object shapesNs extends js.Object {
     @js.native
     class Interface () extends Class {
       def this(attributes: ClassAttributes) = this()
-      def this(attributes: ClassAttributes, opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: ClassAttributes, opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
     class InterfaceView () extends ClassView {
       def this(attributes: ClassAttributes) = this()
-      def this(attributes: ClassAttributes, opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: ClassAttributes, opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
     class StartState ()
       extends jointjsLib.jointjsMod.shapesNs.basicNs.Circle {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.basicNs.CircleSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.basicNs.CircleSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[jointjsLib.jointjsMod.shapesNs.basicNs.CircleSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     @js.native
     class State ()
       extends jointjsLib.jointjsMod.shapesNs.basicNs.Generic {
       def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[StateSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[StateSelectors], opt: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[StateSelectors], opt: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
       /* protected */ def updateEvents(): scala.Unit = js.native
       /* protected */ def updateName(): scala.Unit = js.native
       /* protected */ def updatePath(): scala.Unit = js.native

@@ -657,7 +657,7 @@ object CloudWatchEventsNs extends js.Object {
   
   
   trait TransformerPaths
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TargetInputPath]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TargetInputPath]
   
   @js.native
   trait Types

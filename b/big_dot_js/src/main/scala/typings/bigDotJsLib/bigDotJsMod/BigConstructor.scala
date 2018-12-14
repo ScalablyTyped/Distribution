@@ -17,7 +17,7 @@ trait BigConstructor
      *
      * @throws `NaN` on an invalid value.
      */
-ScalablyTyped.runtime.Instantiable1[/* value */ BigSource, Big] {
+org.scalablytyped.runtime.Instantiable1[/* value */ BigSource, Big] {
   /**
        * The maximum number of decimal places of the results of operations involving division.
        * It is relevant only to the div and sqrt methods, and the pow method when the exponent is negative.

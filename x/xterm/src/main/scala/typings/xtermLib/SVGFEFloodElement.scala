@@ -73,5 +73,5 @@ trait SVGFEFloodElement
 @JSGlobal("SVGFEFloodElement")
 @js.native
 object SVGFEFloodElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEFloodElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEFloodElement]
 

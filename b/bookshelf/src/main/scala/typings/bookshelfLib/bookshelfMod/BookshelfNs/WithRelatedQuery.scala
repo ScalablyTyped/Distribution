@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait WithRelatedQuery
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[
       js.Function1[
         /* query */ knexLib.knexMod.KnexNs.QueryBuilder, 
         knexLib.knexMod.KnexNs.QueryBuilder

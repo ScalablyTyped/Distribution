@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object GmeNs {
   type Connection = js.Any
-  type ProjectResult = js.Array[Project] | ScalablyTyped.runtime.StringDictionary[Project]
+  type ProjectResult = js.Array[Project] | org.scalablytyped.runtime.StringDictionary[Project]
   /**
        * The eventHandler is invoked whenever there are 
        * changes to the nodes matching any of the patterns.

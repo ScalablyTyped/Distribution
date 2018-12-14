@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-css-modules", JSImport.Namespace)
 @js.native
 object reactDashCssDashModulesModMembers
-  extends ScalablyTyped.runtime.TopLevel[CSSModules]
+  extends org.scalablytyped.runtime.TopLevel[CSSModules]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("meshblu", JSImport.Namespace)
 @js.native
 object meshbluMod
-  extends ScalablyTyped.runtime.TopLevel[MeshbluStatic]
+  extends org.scalablytyped.runtime.TopLevel[MeshbluStatic]
 

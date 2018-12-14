@@ -22,11 +22,11 @@ object DynamoDBNs extends js.Object {
   
   
   trait AttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait AttributeUpdates
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValueUpdate]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValueUpdate]
   
   
   trait AttributeValue extends js.Object {
@@ -315,11 +315,11 @@ object DynamoDBNs extends js.Object {
   
   
   trait BatchGetRequestMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[KeysAndAttributes]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[KeysAndAttributes]
   
   
   trait BatchGetResponseMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ItemList]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ItemList]
   
   
   trait BatchWriteItemInput extends js.Object {
@@ -352,7 +352,7 @@ object DynamoDBNs extends js.Object {
   
   
   trait BatchWriteItemRequestMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[WriteRequests]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[WriteRequests]
   
   
   trait BillingModeSummary extends js.Object {
@@ -1096,7 +1096,7 @@ object DynamoDBNs extends js.Object {
   
   
   trait ExpectedAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ExpectedAttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ExpectedAttributeValue]
   
   
   trait ExpectedAttributeValue extends js.Object {
@@ -1120,15 +1120,15 @@ object DynamoDBNs extends js.Object {
   
   
   trait ExpressionAttributeNameMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeName]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeName]
   
   
   trait ExpressionAttributeValueMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait FilterConditionMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Condition]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Condition]
   
   
   trait Get extends js.Object {
@@ -1341,7 +1341,7 @@ object DynamoDBNs extends js.Object {
   
   
   trait ItemCollectionKeyAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait ItemCollectionMetrics extends js.Object {
@@ -1357,7 +1357,7 @@ object DynamoDBNs extends js.Object {
   
   
   trait ItemCollectionMetricsPerTable
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ItemCollectionMetricsMultiple]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ItemCollectionMetricsMultiple]
   
   
   trait ItemResponse extends js.Object {
@@ -1369,11 +1369,11 @@ object DynamoDBNs extends js.Object {
   
   
   trait Key
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait KeyConditions
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Condition]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Condition]
   
   
   trait KeySchemaElement extends js.Object {
@@ -1589,7 +1589,7 @@ object DynamoDBNs extends js.Object {
   
   
   trait MapAttributeValue
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait PointInTimeRecoveryDescription extends js.Object {
@@ -1734,7 +1734,7 @@ object DynamoDBNs extends js.Object {
   
   
   trait PutItemInputAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait PutItemOutput extends js.Object {
@@ -2172,7 +2172,7 @@ object DynamoDBNs extends js.Object {
   
   
   trait SecondaryIndexesCapacityMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Capacity]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Capacity]
   
   
   trait SourceTableDetails extends js.Object {
@@ -3812,9 +3812,9 @@ object DynamoDBNs extends js.Object {
   object Converter extends js.Object {
     def input(data: js.Any): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue = js.native
     def input(data: js.Any, options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue = js.native
-    def marshall(data: ScalablyTyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap = js.native
+    def marshall(data: org.scalablytyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap = js.native
     def marshall(
-      data: ScalablyTyped.runtime.StringDictionary[js.Any],
+      data: org.scalablytyped.runtime.StringDictionary[js.Any],
       options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
     ): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap = js.native
     def output(data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue): js.Any = js.native
@@ -3822,11 +3822,11 @@ object DynamoDBNs extends js.Object {
       data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue,
       options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
     ): js.Any = js.native
-    def unmarshall(data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    def unmarshall(data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     def unmarshall(
       data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap,
       options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
-    ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   }
   
   @JSName("Converter")
@@ -3852,13 +3852,13 @@ object DynamoDBNs extends js.Object {
     
     
     trait AttributeMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.AttributeValue
             ]
     
     
     trait AttributeUpdates
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.AttributeValueUpdate
             ]
     
@@ -4167,13 +4167,13 @@ object DynamoDBNs extends js.Object {
     
     
     trait BatchGetRequestMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.KeysAndAttributes
             ]
     
     
     trait BatchGetResponseMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ItemList]
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ItemList]
     
     
     trait BatchWriteItemInput extends js.Object {
@@ -4216,7 +4216,7 @@ object DynamoDBNs extends js.Object {
     
     
     trait BatchWriteItemRequestMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.WriteRequests
             ]
     
@@ -4861,7 +4861,7 @@ object DynamoDBNs extends js.Object {
       /**
                * An optional map of parameters to bind to every request sent by this service object.
                */
-      var params: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+      var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
       /**
                * An optional pre-configured instance of the AWS.DynamoDB service object to use for requests. The object may bound parameters used by the document client.
                */
@@ -4876,7 +4876,7 @@ object DynamoDBNs extends js.Object {
     
     
     trait ExpectedAttributeMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ExpectedAttributeValue
             ]
     
@@ -4910,19 +4910,19 @@ object DynamoDBNs extends js.Object {
     
     
     trait ExpressionAttributeNameMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.AttributeName
             ]
     
     
     trait ExpressionAttributeValueMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.AttributeValue
             ]
     
     
     trait FilterConditionMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Condition]
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Condition]
     
     
     trait Get extends js.Object {
@@ -5181,7 +5181,7 @@ object DynamoDBNs extends js.Object {
     
     
     trait ItemCollectionKeyAttributeMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.AttributeValue
             ]
     
@@ -5203,7 +5203,7 @@ object DynamoDBNs extends js.Object {
     
     
     trait ItemCollectionMetricsPerTable
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.ItemCollectionMetricsMultiple
             ]
     
@@ -5219,13 +5219,13 @@ object DynamoDBNs extends js.Object {
     
     
     trait Key
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.AttributeValue
             ]
     
     
     trait KeyConditions
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Condition]
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Condition]
     
     
     trait KeySchemaElement extends js.Object {
@@ -5471,7 +5471,7 @@ object DynamoDBNs extends js.Object {
     
     
     trait MapAttributeValue
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.AttributeValue
             ]
     
@@ -5660,7 +5660,7 @@ object DynamoDBNs extends js.Object {
     
     
     trait PutItemInputAttributeMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[
               awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.AttributeValue
             ]
     
@@ -6208,7 +6208,7 @@ object DynamoDBNs extends js.Object {
     
     
     trait SecondaryIndexesCapacityMap
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Capacity]
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Capacity]
     
     
     trait SourceTableDetails extends js.Object {

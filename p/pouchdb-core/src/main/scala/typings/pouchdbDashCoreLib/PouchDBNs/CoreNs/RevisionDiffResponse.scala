@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RevisionDiffResponse
-  extends /* DocumentId */ ScalablyTyped.runtime.StringDictionary[RevisionDiff]
+  extends /* DocumentId */ org.scalablytyped.runtime.StringDictionary[RevisionDiff]
 

@@ -10,7 +10,7 @@ trait IgPivotGrid
   extends /**
 	 * Option for igPivotGrid
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Enables sorting of the header cells in columns.
   	 *

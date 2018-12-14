@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Style
-  extends /* additionalProperty */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* additionalProperty */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var alignment: js.UndefOr[Alignment] = js.undefined
   var background: js.UndefOr[js.Any] = js.undefined
   var bold: js.UndefOr[scala.Boolean] = js.undefined

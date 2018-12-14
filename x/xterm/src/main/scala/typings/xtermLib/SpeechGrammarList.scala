@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SpeechGrammarList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[SpeechGrammar] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[SpeechGrammar] {
   val length: scala.Double = js.native
   def addFromString(string: java.lang.String): scala.Unit = js.native
   def addFromString(string: java.lang.String, weight: scala.Double): scala.Unit = js.native
@@ -19,5 +19,5 @@ trait SpeechGrammarList
 @JSGlobal("SpeechGrammarList")
 @js.native
 object SpeechGrammarList
-  extends ScalablyTyped.runtime.Instantiable0[SpeechGrammarList]
+  extends org.scalablytyped.runtime.Instantiable0[SpeechGrammarList]
 

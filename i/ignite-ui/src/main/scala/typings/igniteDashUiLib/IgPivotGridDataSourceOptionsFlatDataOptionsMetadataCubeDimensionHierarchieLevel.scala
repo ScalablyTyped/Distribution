@@ -10,7 +10,7 @@ trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
   extends /**
 	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A caption for the level.
   	 */

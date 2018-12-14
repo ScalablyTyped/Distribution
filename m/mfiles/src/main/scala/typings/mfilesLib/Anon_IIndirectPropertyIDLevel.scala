@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IIndirectPropertyIDLevel
-  extends ScalablyTyped.runtime.Instantiable0[IIndirectPropertyIDLevel]
+  extends org.scalablytyped.runtime.Instantiable0[IIndirectPropertyIDLevel]
 

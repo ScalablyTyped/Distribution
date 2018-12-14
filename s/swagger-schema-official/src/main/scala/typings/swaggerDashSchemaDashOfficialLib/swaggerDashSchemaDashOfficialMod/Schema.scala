@@ -14,7 +14,7 @@ trait Schema extends BaseSchema {
   var discriminator: js.UndefOr[java.lang.String] = js.undefined
   var example: js.UndefOr[js.Any] = js.undefined
   var externalDocs: js.UndefOr[ExternalDocs] = js.undefined
-  var properties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[Schema]] = js.undefined
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Schema]] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var required: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var xml: js.UndefOr[XML] = js.undefined

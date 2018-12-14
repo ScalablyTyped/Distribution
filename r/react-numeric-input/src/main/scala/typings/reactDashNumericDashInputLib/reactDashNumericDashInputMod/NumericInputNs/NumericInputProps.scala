@@ -73,7 +73,7 @@ trait NumericInputProps extends js.Object {
   ] = js.undefined
   var strict: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties] | scala.Boolean
+    org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties] | scala.Boolean
   ] = js.undefined
   var value: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }

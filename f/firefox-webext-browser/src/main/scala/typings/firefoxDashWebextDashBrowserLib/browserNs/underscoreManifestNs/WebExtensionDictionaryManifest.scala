@@ -12,7 +12,7 @@ trait WebExtensionDictionaryManifest extends js.Object {
   var author: js.UndefOr[java.lang.String] = js.undefined
   var browser_specific_settings: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Gecko] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
-  var dictionaries: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var dictionaries: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var homepage_url: js.UndefOr[java.lang.String] = js.undefined
   var manifest_version: scala.Double
   var name: java.lang.String

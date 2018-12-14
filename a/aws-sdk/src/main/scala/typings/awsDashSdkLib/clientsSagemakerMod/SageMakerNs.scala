@@ -1881,7 +1881,7 @@ object SageMakerNs extends js.Object {
   
   
   trait EnvironmentMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[EnvironmentValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[EnvironmentValue]
   
   
   trait Filter extends js.Object {
@@ -2245,7 +2245,7 @@ object SageMakerNs extends js.Object {
   
   
   trait HyperParameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ParameterValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ParameterValue]
   
   
   trait InferenceSpecification extends js.Object {
@@ -4337,7 +4337,7 @@ object SageMakerNs extends js.Object {
   
   
   trait TransformEnvironmentMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TransformEnvironmentValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TransformEnvironmentValue]
   
   
   trait TransformInput extends js.Object {

@@ -11,7 +11,7 @@ trait Anon_CreateFlow extends js.Object {
   /**
      * Error used when the computation of a promise is cancelled.
      */
-  var CancellationError: ScalablyTyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.CancellationError] = js.native
+  var CancellationError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.CancellationError] = js.native
   /**
      * Handles the execution of scheduled tasks, each of which may be an
      * asynchronous operation. The control flow will ensure tasks are executed in
@@ -41,7 +41,7 @@ trait Anon_CreateFlow extends js.Object {
      * @extends {EventEmitter}
      * @final
      */
-  var ControlFlow: ScalablyTyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow] = js.native
+  var ControlFlow: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow] = js.native
   /**
      * Represents a value that will be resolved at some point in the future. This
      * class represents the protected 'producer' half of a Promise - each Deferred
@@ -54,7 +54,7 @@ trait Anon_CreateFlow extends js.Object {
      * {@link promise.ControlFlow} as an unhandled failure.
      *
      */
-  var Deferred: ScalablyTyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Deferred[js.Object]] = js.native
+  var Deferred: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Deferred[js.Object]] = js.native
   /**
      * Represents the eventual value of a completed operation. Each promise may be
      * in one of three states: pending, fulfilled, or rejected. Each promise starts
@@ -66,7 +66,7 @@ trait Anon_CreateFlow extends js.Object {
      * @template T
      * @see http://promises-aplus.github.io/promises-spec/
      */
-  var Promise: ScalablyTyped.runtime.Instantiable1[
+  var Promise: org.scalablytyped.runtime.Instantiable1[
     /* resolver */ js.Function2[
       /* resolve */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IFulfilledCallback[js.Object], 
       /* reject */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IRejectedCallback, 
@@ -81,7 +81,7 @@ trait Anon_CreateFlow extends js.Object {
      * @interface
      * @template T
      */
-  var Thenable: ScalablyTyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Thenable[js.Any]] = js.native
+  var Thenable: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Thenable[js.Any]] = js.native
   // region Functions
   /**
      * Set `USE_PROMISE_MANAGER` to `false` to disable the promise manager.

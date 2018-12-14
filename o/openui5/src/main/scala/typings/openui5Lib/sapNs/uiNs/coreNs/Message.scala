@@ -36,12 +36,12 @@ class Message protected () extends Element {
            * message has a higher level.
           */
   def compareByType(
-    oMessage1: ScalablyTyped.runtime.Instantiable2[
+    oMessage1: org.scalablytyped.runtime.Instantiable2[
       /* sId */ java.lang.String, 
       /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
       Message
     ],
-    oMessage2: ScalablyTyped.runtime.Instantiable2[
+    oMessage2: org.scalablytyped.runtime.Instantiable2[
       /* sId */ java.lang.String, 
       /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
       Message
@@ -57,7 +57,7 @@ class Message protected () extends Element {
            * message has a higher level.
           */
   def compareByType(
-    oOther: ScalablyTyped.runtime.Instantiable2[
+    oOther: org.scalablytyped.runtime.Instantiable2[
       /* sId */ java.lang.String, 
       /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
       Message
@@ -110,7 +110,7 @@ class Message protected () extends Element {
            * @param sIcon New value for property <code>icon</code>
            * @returns Reference to <code>this</code> in order to allow method chaining
           */
-  def setIcon(sIcon: js.Any): ScalablyTyped.runtime.Instantiable2[
+  def setIcon(sIcon: js.Any): org.scalablytyped.runtime.Instantiable2[
     /* sId */ java.lang.String, 
     /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
     Message
@@ -122,7 +122,7 @@ class Message protected () extends Element {
            * @param sLevel New value for property <code>level</code>
            * @returns Reference to <code>this</code> in order to allow method chaining
           */
-  def setLevel(sLevel: MessageType): ScalablyTyped.runtime.Instantiable2[
+  def setLevel(sLevel: MessageType): org.scalablytyped.runtime.Instantiable2[
     /* sId */ java.lang.String, 
     /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
     Message
@@ -137,7 +137,7 @@ class Message protected () extends Element {
            * @param bReadOnly New value for property <code>readOnly</code>
            * @returns Reference to <code>this</code> in order to allow method chaining
           */
-  def setReadOnly(bReadOnly: scala.Boolean): ScalablyTyped.runtime.Instantiable2[
+  def setReadOnly(bReadOnly: scala.Boolean): org.scalablytyped.runtime.Instantiable2[
     /* sId */ java.lang.String, 
     /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
     Message
@@ -148,7 +148,7 @@ class Message protected () extends Element {
            * @param sText New value for property <code>text</code>
            * @returns Reference to <code>this</code> in order to allow method chaining
           */
-  def setText(sText: java.lang.String): ScalablyTyped.runtime.Instantiable2[
+  def setText(sText: java.lang.String): org.scalablytyped.runtime.Instantiable2[
     /* sId */ java.lang.String, 
     /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
     Message
@@ -161,7 +161,7 @@ class Message protected () extends Element {
            * @param sTimestamp New value for property <code>timestamp</code>
            * @returns Reference to <code>this</code> in order to allow method chaining
           */
-  def setTimestamp(sTimestamp: java.lang.String): ScalablyTyped.runtime.Instantiable2[
+  def setTimestamp(sTimestamp: java.lang.String): org.scalablytyped.runtime.Instantiable2[
     /* sId */ java.lang.String, 
     /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
     Message

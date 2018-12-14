@@ -61,7 +61,7 @@ class DisplayObject ()
   /* CompleteClass */
   override var tabIndex: scala.Double = js.native
   /* CompleteClass */
-  override var trackedPointers: ScalablyTyped.runtime.NumberDictionary[pixiDotJsLib.PIXINs.interactionNs.InteractionTrackingData] = js.native
+  override var trackedPointers: org.scalablytyped.runtime.NumberDictionary[pixiDotJsLib.PIXINs.interactionNs.InteractionTrackingData] = js.native
   // end interactive target
   var transform: TransformBase = js.native
   var visible: scala.Boolean = js.native

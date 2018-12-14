@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SortDirectionMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[SortDirectionType]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[SortDirectionType]
 

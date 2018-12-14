@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 object BlazeNs extends js.Object {
   
   trait EventsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Function]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function]
   
   
   trait HelpersMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Function]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function]
   
   
   trait Template extends js.Object {
@@ -53,13 +53,13 @@ object BlazeNs extends js.Object {
   
   @js.native
   trait TemplateInstanceStatic
-    extends ScalablyTyped.runtime.Instantiable1[/* view */ View, TemplateInstance]
+    extends org.scalablytyped.runtime.Instantiable1[/* view */ View, TemplateInstance]
   
   @js.native
   trait TemplateStatic
-    extends ScalablyTyped.runtime.Instantiable0[Template]
-       with ScalablyTyped.runtime.Instantiable1[/* viewName */ java.lang.String, Template]
-       with ScalablyTyped.runtime.Instantiable2[/* viewName */ java.lang.String, /* renderFunction */ js.Function, Template] {
+    extends org.scalablytyped.runtime.Instantiable0[Template]
+       with org.scalablytyped.runtime.Instantiable1[/* viewName */ java.lang.String, Template]
+       with org.scalablytyped.runtime.Instantiable2[/* viewName */ java.lang.String, /* renderFunction */ js.Function, Template] {
     def currentData(): js.Any = js.native
     def instance(): TemplateInstance = js.native
     def parentData(numLevels: scala.Double): js.Any = js.native
@@ -86,9 +86,9 @@ object BlazeNs extends js.Object {
   
   @js.native
   trait ViewStatic
-    extends ScalablyTyped.runtime.Instantiable0[View]
-       with ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, View]
-       with ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* renderFunction */ js.Function, View]
+    extends org.scalablytyped.runtime.Instantiable0[View]
+       with org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, View]
+       with org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* renderFunction */ js.Function, View]
   
   var Template: TemplateStatic = js.native
   var TemplateInstance: TemplateInstanceStatic = js.native

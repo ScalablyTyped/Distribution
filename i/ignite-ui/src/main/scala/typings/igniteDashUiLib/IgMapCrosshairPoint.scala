@@ -10,7 +10,7 @@ trait IgMapCrosshairPoint
   extends /**
 	 * Option for IgMapCrosshairPoint
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * The x coordinate.
   	 */

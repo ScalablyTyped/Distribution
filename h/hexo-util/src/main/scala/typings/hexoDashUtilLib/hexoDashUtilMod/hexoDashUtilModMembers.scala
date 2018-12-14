@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object hexoDashUtilModMembers extends js.Object {
   val Pattern: hexoDashUtilLib.Anon_Rule = js.native
-  def camelCaseKeys(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def camelCaseKeys(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def escapeDiacritic(str: java.lang.String): java.lang.String = js.native
   def escapeHTML(str: java.lang.String): java.lang.String = js.native
   def escapeRegExp(str: java.lang.String): java.lang.String = js.native
@@ -18,14 +18,14 @@ object hexoDashUtilModMembers extends js.Object {
   def highlight(str: java.lang.String): java.lang.String = js.native
   def highlight(str: java.lang.String, options: hexoDashUtilLib.Anon_Hljs): java.lang.String = js.native
   def htmlTag(tag: java.lang.String): java.lang.String = js.native
-  def htmlTag(tag: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
-  def htmlTag(
-    tag: java.lang.String,
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
-    text: java.lang.String
-  ): java.lang.String = js.native
   def htmlTag(tag: java.lang.String, attrs: js.Array[java.lang.String]): java.lang.String = js.native
   def htmlTag(tag: java.lang.String, attrs: js.Array[java.lang.String], text: java.lang.String): java.lang.String = js.native
+  def htmlTag(tag: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  def htmlTag(
+    tag: java.lang.String,
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
+    text: java.lang.String
+  ): java.lang.String = js.native
   def htmlTag(tag: java.lang.String, attrs: stdLib.ArrayLike[java.lang.String]): java.lang.String = js.native
   def htmlTag(tag: java.lang.String, attrs: stdLib.ArrayLike[java.lang.String], text: java.lang.String): java.lang.String = js.native
   def slugize(str: java.lang.String): java.lang.String = js.native

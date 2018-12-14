@@ -10,7 +10,7 @@ trait OlapFlatDataSourceOptionsMetadataCube
   extends /**
 	 * Option for OlapFlatDataSourceOptionsMetadataCube
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A caption for the cube.
   	 */

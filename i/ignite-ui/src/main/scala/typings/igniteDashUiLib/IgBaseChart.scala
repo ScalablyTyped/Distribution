@@ -10,7 +10,7 @@ trait IgBaseChart
   extends /**
 	 * Option for igBaseChart
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event which is raised before data binding.
   	 * Return false in order to cancel data binding.

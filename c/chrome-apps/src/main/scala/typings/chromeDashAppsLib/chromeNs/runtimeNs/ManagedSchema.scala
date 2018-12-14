@@ -19,7 +19,7 @@ trait ManagedSchema extends js.Object {
                * top-level object, these keys are the policy names supported.
                */
   var properties: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       JSONSchemaBasicType | JSONSchemaArrayType | JSONSchemaObjectType | JSONSchemaRefType
     ]
   ] = js.undefined

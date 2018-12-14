@@ -37,7 +37,7 @@ trait Database extends js.Object {
   def _dropView(name: java.lang.String): scala.Unit = js.native
   // Global
   def _engine(): EngineType = js.native
-  def _engineStats(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def _engineStats(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def _executeTransaction(transaction: Transaction): scala.Unit = js.native
   def _exists(selector: ObjectWithId): DocumentMetadata = js.native
   def _exists(selector: java.lang.String): DocumentMetadata = js.native

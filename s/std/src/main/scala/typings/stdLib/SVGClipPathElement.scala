@@ -13,5 +13,5 @@ trait SVGClipPathElement extends SVGGraphicsElement {
 @JSGlobal("SVGClipPathElement")
 @js.native
 object SVGClipPathElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGClipPathElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGClipPathElement]
 

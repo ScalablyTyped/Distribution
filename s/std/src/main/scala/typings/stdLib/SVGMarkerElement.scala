@@ -49,7 +49,7 @@ trait SVGMarkerElement
 @JSGlobal("SVGMarkerElement")
 @js.native
 object SVGMarkerElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGMarkerElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGMarkerElement] {
   val SVG_MARKERUNITS_STROKEWIDTH: scala.Double = js.native
   val SVG_MARKERUNITS_UNKNOWN: scala.Double = js.native
   val SVG_MARKERUNITS_USERSPACEONUSE: scala.Double = js.native

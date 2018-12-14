@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait Animation extends js.Object {
   def camera(
     camera: Camera,
-    target: ScalablyTyped.runtime.StringDictionary[js.Any],
-    options: ScalablyTyped.runtime.StringDictionary[js.Any]
+    target: org.scalablytyped.runtime.StringDictionary[js.Any],
+    options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Double
 }
 

@@ -12,7 +12,10 @@ object ckeditor5DashUtilsModMembers extends js.Object {
   val EmitterMixin: Emitter = js.native
   val ObservableMixin: Observable = js.native
   val keyCodes: atCkeditorCkeditor5DashUtilsLib.Anon_Esc = js.native
-  def add(language: java.lang.String, translations: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def add(
+    language: java.lang.String,
+    translations: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): scala.Unit = js.native
   def as(Class: js.Function): scala.Unit = js.native
   def attachLinkToDocumentation(message: java.lang.String): java.lang.String = js.native
   def compareArrays[T](a: js.Array[T], b: js.Array[T]): scala.Double | ArrayRelation = js.native

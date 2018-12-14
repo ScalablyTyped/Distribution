@@ -10,10 +10,10 @@ trait ContributionNodeQueryResult extends js.Object {
   /**
        * Map of contribution ids to corresponding node.
        */
-  var nodes: ScalablyTyped.runtime.StringDictionary[ClientContributionNode]
+  var nodes: org.scalablytyped.runtime.StringDictionary[ClientContributionNode]
   /**
        * Map of provder ids to the corresponding provider details object.
        */
-  var providerDetails: ScalablyTyped.runtime.StringDictionary[ClientContributionProviderDetails]
+  var providerDetails: org.scalablytyped.runtime.StringDictionary[ClientContributionProviderDetails]
 }
 

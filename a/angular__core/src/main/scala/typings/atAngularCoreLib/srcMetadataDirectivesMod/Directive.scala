@@ -59,7 +59,7 @@ trait Directive extends js.Object {
        * event. A handler method can refer to the `$event` local variable.
        *
        */
-  var host: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var host: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * Enumerates the set of data-bound input properties for a directive
        *
@@ -200,7 +200,7 @@ trait Directive extends js.Object {
        * View queries are set before the `ngAfterViewInit` callback is called.
        *
        */
-  var queries: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var queries: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
        * The CSS selector that triggers the instantiation of a directive.
        *

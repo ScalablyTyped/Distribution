@@ -12,19 +12,19 @@ trait Constructor
          *
          * @param color - the color as one of the valid color input format.
          */
-ScalablyTyped.runtime.Instantiable0[Instance]
+org.scalablytyped.runtime.Instantiable0[Instance]
      with /**
          * Create a tinycolor instance of the color named.
          *
          * @param color - the color as one of the valid color input format.
          */
-ScalablyTyped.runtime.Instantiable1[/* color */ ColorInput, Instance]
+org.scalablytyped.runtime.Instantiable1[/* color */ ColorInput, Instance]
      with /**
          * Create a tinycolor instance of the color named.
          *
          * @param color - the color as one of the valid color input format.
          */
-ScalablyTyped.runtime.Instantiable2[/* color */ ColorInput, /* opts */ ConstructorOptions, Instance] {
+org.scalablytyped.runtime.Instantiable2[/* color */ ColorInput, /* opts */ ConstructorOptions, Instance] {
   /**
            * key: hex value
            * value: string name ex. hexnames["f00"] --> "red"

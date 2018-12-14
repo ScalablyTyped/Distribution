@@ -11,7 +11,7 @@ trait TaskGroupStep extends js.Object {
   var continueOnError: scala.Boolean
   var displayName: java.lang.String
   var enabled: scala.Boolean
-  var inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var task: TaskDefinitionReference
   var timeoutInMinutes: scala.Double
 }

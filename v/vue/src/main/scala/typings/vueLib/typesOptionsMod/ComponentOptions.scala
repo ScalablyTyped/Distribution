@@ -14,7 +14,7 @@ trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Compute
   var beforeUpdate: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var comments: js.UndefOr[scala.Boolean] = js.undefined
   var components: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[(Component[_, _, _, _]) | (AsyncComponent[_, _, _, _])]
+    org.scalablytyped.runtime.StringDictionary[(Component[_, _, _, _]) | (AsyncComponent[_, _, _, _])]
   ] = js.undefined
   var computed: js.UndefOr[Accessors[Computed]] = js.undefined
   var created: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -22,7 +22,7 @@ trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Compute
   var deactivated: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var delimiters: js.UndefOr[js.Tuple2[java.lang.String, java.lang.String]] = js.undefined
   var destroyed: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var directives: js.UndefOr[ScalablyTyped.runtime.StringDictionary[DirectiveFunction | DirectiveOptions]] = js.undefined
+  var directives: js.UndefOr[org.scalablytyped.runtime.StringDictionary[DirectiveFunction | DirectiveOptions]] = js.undefined
   var el: js.UndefOr[stdLib.Element | java.lang.String] = js.undefined
   var errorCaptured: js.UndefOr[
     js.Function3[
@@ -43,7 +43,7 @@ trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Compute
       DefaultProps
     ]) | vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue]
   ] = js.undefined
-  var filters: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Function]] = js.undefined
+  var filters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Function]] = js.undefined
   var inheritAttrs: js.UndefOr[scala.Boolean] = js.undefined
   var inject: js.UndefOr[InjectOptions] = js.undefined
   var methods: js.UndefOr[Methods] = js.undefined
@@ -87,7 +87,7 @@ trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Compute
     ]
   ] = js.undefined
   var template: js.UndefOr[java.lang.String] = js.undefined
-  var transitions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Object]] = js.undefined
+  var transitions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Object]] = js.undefined
   var updated: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var watch: js.UndefOr[
     stdLib.Record[java.lang.String, WatchOptionsWithHandler[_] | WatchHandler[_] | java.lang.String]

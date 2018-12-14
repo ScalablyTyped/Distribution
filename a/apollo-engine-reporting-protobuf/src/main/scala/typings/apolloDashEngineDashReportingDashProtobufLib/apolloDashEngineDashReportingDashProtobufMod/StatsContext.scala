@@ -122,14 +122,14 @@ object StatsContext extends js.Object {
        * @param object Plain object
        * @returns StatsContext
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsContext = js.native
+  def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsContext = js.native
   /**
        * Creates a plain object from a StatsContext message. Also converts values to other types if specified.
        * @param message StatsContext
        * @param [options] Conversion options
        * @returns Plain object
        */
-  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsContext): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsContext): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a StatsContext message. Also converts values to other types if specified.
        * @param message StatsContext
@@ -139,12 +139,12 @@ object StatsContext extends js.Object {
   def toObject(
     message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsContext,
     options: protobufjsLib.protobufjsMod.IConversionOptions
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Verifies a StatsContext message.
        * @param message Plain object to verify
        * @returns `null` if valid, otherwise the reason why it is not
        */
-  def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+  def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
 }
 

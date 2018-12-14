@@ -15,7 +15,7 @@ trait Rule
   def enforce_post(value: webpackDashChainLib.webpackDashChainLibStrings.post): this.type = js.native
   @JSName("enforce")
   def enforce_pre(value: webpackDashChainLib.webpackDashChainLibStrings.pre): this.type = js.native
-  def parser(value: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def parser(value: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   def post(): this.type = js.native
   def pre(): this.type = js.native
   def test(value: js.Array[webpackLib.webpackMod.webpackNs.Condition]): this.type = js.native

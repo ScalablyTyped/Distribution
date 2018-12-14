@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait AttributesContainer extends js.Object {
-  var attributes: ScalablyTyped.runtime.StringDictionary[ProfileAttribute]
+  var attributes: org.scalablytyped.runtime.StringDictionary[ProfileAttribute]
   var containerName: java.lang.String
   var revision: scala.Double
 }

@@ -18,7 +18,7 @@ class RouterLinkWithHref protected ()
   var preserve: js.Any = js.native
   var preserveFragment: scala.Boolean = js.native
   var preserveQueryParams: scala.Boolean = js.native
-  var queryParams: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var queryParams: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var queryParamsHandling: atAngularRouterLib.srcConfigMod.QueryParamsHandling = js.native
   var replaceUrl: scala.Boolean = js.native
   var route: js.Any = js.native

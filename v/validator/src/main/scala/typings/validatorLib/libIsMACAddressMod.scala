@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isMACAddress", JSImport.Namespace)
 @js.native
 object libIsMACAddressMod
-  extends ScalablyTyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Any]
 

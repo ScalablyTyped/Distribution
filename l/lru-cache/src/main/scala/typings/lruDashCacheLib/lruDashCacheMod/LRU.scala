@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LRU
-  extends ScalablyTyped.runtime.Instantiable0[lruDashCacheLib.lruDashCacheMod.LRUNs.Cache[js.Object, js.Object]]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[lruDashCacheLib.lruDashCacheMod.LRUNs.Cache[js.Object, js.Object]]
+     with org.scalablytyped.runtime.Instantiable1[
       (/* opts */ lruDashCacheLib.lruDashCacheMod.LRUNs.Options[js.Object, js.Object]) | (/* max */ scala.Double), 
       lruDashCacheLib.lruDashCacheMod.LRUNs.Cache[js.Object, js.Object]
     ] {

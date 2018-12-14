@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("browser-bunyan", JSImport.Namespace)
 @js.native
 object browserDashBunyanModMembers
-  extends ScalablyTyped.runtime.TopLevel[browserDashBunyanLib.BrowserBunyan]
+  extends org.scalablytyped.runtime.TopLevel[browserDashBunyanLib.BrowserBunyan]
 

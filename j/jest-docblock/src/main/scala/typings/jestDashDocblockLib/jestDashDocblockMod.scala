@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object jestDashDocblockMod extends js.Object {
   def extract(code: java.lang.String): java.lang.String = js.native
-  def parse(docblock: java.lang.String): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def parse(docblock: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 

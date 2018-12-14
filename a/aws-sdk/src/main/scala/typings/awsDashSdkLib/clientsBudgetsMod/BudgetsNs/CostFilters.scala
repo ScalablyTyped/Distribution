@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CostFilters
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[DimensionValues]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[DimensionValues]
 

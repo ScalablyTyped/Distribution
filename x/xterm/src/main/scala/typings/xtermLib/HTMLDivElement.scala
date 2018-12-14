@@ -17,5 +17,5 @@ trait HTMLDivElement extends HTMLElement {
 @JSGlobal("HTMLDivElement")
 @js.native
 object HTMLDivElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLDivElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLDivElement]
 

@@ -89,5 +89,5 @@ trait HTMLImageElement extends HTMLElement {
 @JSGlobal("HTMLImageElement")
 @js.native
 object HTMLImageElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLImageElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLImageElement]
 

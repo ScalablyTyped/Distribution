@@ -12,19 +12,19 @@ object srcSanitizationHtmlUnderscoreSanitizerMod extends js.Object {
   def getTemplateContent(el: stdLib.Node): stdLib.Node | scala.Null = js.native
   @js.native
   object SRCSET_ATTRS
-    extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+    extends /* k */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   
   @js.native
   object URI_ATTRS
-    extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+    extends /* k */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   
   @js.native
   object VALID_ATTRS
-    extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+    extends /* k */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   
   @js.native
   object VALID_ELEMENTS
-    extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+    extends /* k */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   
 }
 

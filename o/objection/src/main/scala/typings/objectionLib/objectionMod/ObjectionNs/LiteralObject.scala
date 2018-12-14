@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LiteralObject
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
 

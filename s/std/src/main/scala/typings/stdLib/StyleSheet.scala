@@ -19,5 +19,5 @@ trait StyleSheet extends js.Object {
 @JSGlobal("StyleSheet")
 @js.native
 object StyleSheet
-  extends ScalablyTyped.runtime.Instantiable0[StyleSheet]
+  extends org.scalablytyped.runtime.Instantiable0[StyleSheet]
 

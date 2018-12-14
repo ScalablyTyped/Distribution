@@ -17,7 +17,7 @@ trait OneWire
      * @param pin 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable1[/* pin */ Pin, js.Any] {
+org.scalablytyped.runtime.Instantiable1[/* pin */ Pin, js.Any] {
   /**
        * <p>Read a byte</p>
        * 

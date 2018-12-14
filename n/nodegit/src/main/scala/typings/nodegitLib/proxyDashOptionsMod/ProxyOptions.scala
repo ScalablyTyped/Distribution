@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("nodegit/proxy-options", "ProxyOptions")
 @js.native
 class ProxyOptions ()
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var certificateCheck: js.UndefOr[js.Function] = js.native
   var credentials: js.UndefOr[js.Function] = js.native
   var payload: js.UndefOr[js.Any] = js.native

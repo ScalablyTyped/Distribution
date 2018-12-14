@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pure-render-decorator", JSImport.Namespace)
 @js.native
 object pureDashRenderDashDecoratorMod
-  extends ScalablyTyped.runtime.TopLevel[stdLib.ClassDecorator]
+  extends org.scalablytyped.runtime.TopLevel[stdLib.ClassDecorator]
 

@@ -15,5 +15,5 @@ trait CaretPosition extends js.Object {
 @JSGlobal("CaretPosition")
 @js.native
 object CaretPosition
-  extends ScalablyTyped.runtime.Instantiable0[CaretPosition]
+  extends org.scalablytyped.runtime.Instantiable0[CaretPosition]
 

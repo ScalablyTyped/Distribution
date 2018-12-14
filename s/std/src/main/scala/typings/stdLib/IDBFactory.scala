@@ -42,5 +42,5 @@ trait IDBFactory extends js.Object {
 @JSGlobal("IDBFactory")
 @js.native
 object IDBFactory
-  extends ScalablyTyped.runtime.Instantiable0[IDBFactory]
+  extends org.scalablytyped.runtime.Instantiable0[IDBFactory]
 

@@ -201,5 +201,5 @@ trait MediaStreamTrack extends EventTarget {
 @JSGlobal("MediaStreamTrack")
 @js.native
 object MediaStreamTrack
-  extends ScalablyTyped.runtime.Instantiable0[MediaStreamTrack]
+  extends org.scalablytyped.runtime.Instantiable0[MediaStreamTrack]
 

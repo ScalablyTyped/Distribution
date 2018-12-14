@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("slocket", JSImport.Namespace)
 @js.native
 object slocketModMembers
-  extends ScalablyTyped.runtime.TopLevel[Slocket]
+  extends org.scalablytyped.runtime.TopLevel[Slocket]
 

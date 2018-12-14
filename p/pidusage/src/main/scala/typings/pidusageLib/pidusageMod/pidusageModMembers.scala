@@ -18,12 +18,12 @@ object pidusageModMembers extends js.Object {
     pid: scala.Double,
     callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* stats */ Stat, scala.Unit]
   ): scala.Unit = js.native
-  def default(pids: js.Array[scala.Double | java.lang.String]): js.Promise[ScalablyTyped.runtime.StringDictionary[Stat]] = js.native
+  def default(pids: js.Array[scala.Double | java.lang.String]): js.Promise[org.scalablytyped.runtime.StringDictionary[Stat]] = js.native
   def default(
     pids: js.Array[scala.Double | java.lang.String],
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
-      /* stats */ ScalablyTyped.runtime.StringDictionary[Stat], 
+      /* stats */ org.scalablytyped.runtime.StringDictionary[Stat], 
       scala.Unit
     ]
   ): scala.Unit = js.native

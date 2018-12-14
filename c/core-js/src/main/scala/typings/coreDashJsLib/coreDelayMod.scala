@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/core/delay", JSImport.Namespace)
 @js.native
 object coreDelayMod
-  extends ScalablyTyped.runtime.TopLevel[js.Function1[/* msec */ scala.Double, js.Promise[scala.Unit]]]
+  extends org.scalablytyped.runtime.TopLevel[js.Function1[/* msec */ scala.Double, js.Promise[scala.Unit]]]
 

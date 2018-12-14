@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait OptionsParsed
-  extends /* k */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var argv: noptLib.Anon_Remain
 }
 

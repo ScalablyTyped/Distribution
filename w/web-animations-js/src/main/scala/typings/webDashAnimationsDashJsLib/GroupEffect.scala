@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("GroupEffect")
 @js.native
-class GroupEffect protected () extends KeyframeEffect {
-  def this(effects: js.Array[KeyframeEffect]) = this()
+class GroupEffect protected ()
+  extends stdLib.KeyframeEffect {
+  def this(effects: js.Array[stdLib.KeyframeEffect]) = this()
 }
 

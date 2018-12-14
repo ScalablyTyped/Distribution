@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class NamespaceBase () extends ReflectionObject {
   /** Nested objects by name. */
-  var nested: js.UndefOr[ScalablyTyped.runtime.StringDictionary[ReflectionObject]] = js.native
+  var nested: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ReflectionObject]] = js.native
   /** Nested objects of this namespace as an array for iteration. */
   val nestedArray: js.Array[ReflectionObject] = js.native
   /**
@@ -25,7 +25,7 @@ abstract class NamespaceBase () extends ReflectionObject {
        * @param nestedJson Any nested object descriptors
        * @returns `this`
        */
-  def addJSON(nestedJson: ScalablyTyped.runtime.StringDictionary[protobufjsLib.AnyNestedObject]): Namespace = js.native
+  def addJSON(nestedJson: org.scalablytyped.runtime.StringDictionary[protobufjsLib.AnyNestedObject]): Namespace = js.native
   /**
        * Defines additial namespaces within this one if not yet existing.
        * @param path Path to create
@@ -67,7 +67,7 @@ abstract class NamespaceBase () extends ReflectionObject {
        * @returns Enum values
        * @throws {Error} If there is no such enum
        */
-  def getEnum(name: java.lang.String): ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  def getEnum(name: java.lang.String): org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /**
        * Looks up the reflection object at the specified path, relative to this namespace.
        * @param path Path to look up

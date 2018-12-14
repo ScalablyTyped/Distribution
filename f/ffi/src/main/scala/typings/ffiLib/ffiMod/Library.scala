@@ -12,15 +12,15 @@ trait Library
      * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
      * @param lib hash that will be extended
      */
-ScalablyTyped.runtime.Instantiable1[/* libFile */ java.lang.String, js.Any]
+org.scalablytyped.runtime.Instantiable1[/* libFile */ java.lang.String, js.Any]
      with /**
      * @param libFile name of library
      * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
      * @param lib hash that will be extended
      */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* libFile */ java.lang.String, 
-      /* funcs */ ScalablyTyped.runtime.StringDictionary[js.Array[js.Any]], 
+      /* funcs */ org.scalablytyped.runtime.StringDictionary[js.Array[js.Any]], 
       js.Any
     ]
      with /**
@@ -28,9 +28,9 @@ ScalablyTyped.runtime.Instantiable2[
      * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
      * @param lib hash that will be extended
      */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* libFile */ java.lang.String, 
-      /* funcs */ ScalablyTyped.runtime.StringDictionary[js.Array[js.Any]], 
+      /* funcs */ org.scalablytyped.runtime.StringDictionary[js.Array[js.Any]], 
       /* lib */ js.Object, 
       js.Any
     ] {
@@ -47,7 +47,7 @@ ScalablyTyped.runtime.Instantiable3[
        * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
        * @param lib hash that will be extended
        */
-  def apply(libFile: java.lang.String, funcs: ScalablyTyped.runtime.StringDictionary[js.Array[_]]): js.Any = js.native
+  def apply(libFile: java.lang.String, funcs: org.scalablytyped.runtime.StringDictionary[js.Array[_]]): js.Any = js.native
   /**
        * @param libFile name of library
        * @param funcs hash of [retType, [...argType], opts?: {abi?, async?, varargs?}]
@@ -55,7 +55,7 @@ ScalablyTyped.runtime.Instantiable3[
        */
   def apply(
     libFile: java.lang.String,
-    funcs: ScalablyTyped.runtime.StringDictionary[js.Array[_]],
+    funcs: org.scalablytyped.runtime.StringDictionary[js.Array[_]],
     lib: js.Object
   ): js.Any = js.native
 }

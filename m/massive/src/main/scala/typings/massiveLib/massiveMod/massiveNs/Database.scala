@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Database
-  extends /* tableName */ ScalablyTyped.runtime.StringDictionary[Writable | js.Any] {
+  extends /* tableName */ org.scalablytyped.runtime.StringDictionary[Writable | js.Any] {
   /** Attach an entity to the connected instance. */
   def attach(entities: js.Array[_]): js.Promise[js.Array[_]] = js.native
   /** Attach an entity to the connected instance. */

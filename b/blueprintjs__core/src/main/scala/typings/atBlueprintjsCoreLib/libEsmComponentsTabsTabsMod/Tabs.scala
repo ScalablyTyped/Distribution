@@ -48,7 +48,7 @@ object Tabs extends js.Object {
   /** Insert a `Tabs.Expander` between any two children to right-align all subsequent children. */
   @JSName("Expander")
   var Expander_Original: reactLib.reactMod.ReactNs.StatelessComponent[js.Object] = js.native
-  var Tab: ScalablyTyped.runtime.Instantiable0[atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.Tab] = js.native
+  var Tab: org.scalablytyped.runtime.Instantiable0[atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.Tab] = js.native
   var defaultProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsTabsTabsMod.ITabsProps] = js.native
   var displayName: java.lang.String = js.native
   /** Insert a `Tabs.Expander` between any two children to right-align all subsequent children. */

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sinon", JSImport.Namespace)
 @js.native
 object sinonModMembers
-  extends ScalablyTyped.runtime.TopLevel[sinonLib.sinonMod.SinonNs.SinonStatic]
+  extends org.scalablytyped.runtime.TopLevel[sinonLib.sinonMod.SinonNs.SinonStatic]
 

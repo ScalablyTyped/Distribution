@@ -27,8 +27,8 @@ trait BuildDefinitionStep extends js.Object {
        * Indicates whether the step is enabled.
        */
   var enabled: scala.Boolean
-  var environment: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var environment: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The reference name for this step.
        */

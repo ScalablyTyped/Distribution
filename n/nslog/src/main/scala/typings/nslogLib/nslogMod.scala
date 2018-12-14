@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("nslog", JSImport.Namespace)
 @js.native
 object nslogMod
-  extends ScalablyTyped.runtime.TopLevel[NSLog]
+  extends org.scalablytyped.runtime.TopLevel[NSLog]
 

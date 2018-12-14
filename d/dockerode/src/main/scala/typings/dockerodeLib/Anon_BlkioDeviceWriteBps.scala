@@ -48,9 +48,9 @@ trait Anon_BlkioDeviceWriteBps extends js.Object {
   var PublishAllPorts: js.UndefOr[scala.Boolean] = js.undefined
   var ReadonlyRootfs: js.UndefOr[scala.Boolean] = js.undefined
   var RestartPolicy: js.UndefOr[dockerodeLib.dockerodeMod.DockerodeNs.RestartPolicy] = js.undefined
-  var SecurityOpt: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var SecurityOpt: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var ShmSize: js.UndefOr[scala.Double] = js.undefined
-  var Sysctls: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var Sysctls: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var Ulimits: js.UndefOr[js.Array[js.Object]] = js.undefined
   var VolumeDriver: js.UndefOr[java.lang.String] = js.undefined
   var VolumesFrom: js.UndefOr[js.Array[java.lang.String]] = js.undefined

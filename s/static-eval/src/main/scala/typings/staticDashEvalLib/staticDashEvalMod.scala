@@ -13,6 +13,6 @@ object staticDashEvalMod extends js.Object {
   * @param ast [ESTree.Expression] An esprima expression derived from parse.body[].expression
   * @param vars Named variables, objects or functions which may be referenced in the expression.
   */
-  def apply(ast: estreeLib.Expression, vars: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def apply(ast: estreeLib.Expression, vars: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
 }
 

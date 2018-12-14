@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Store extends js.Object {
   var records: js.Array[yaysonLib.yaysonMod.yNs.Record] = js.native
-  var relations: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var relations: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def find(`type`: java.lang.String, id: java.lang.String): js.Any = js.native
   def findAll(`type`: java.lang.String): js.Array[_] = js.native
   def remove(`type`: java.lang.String): scala.Unit = js.native

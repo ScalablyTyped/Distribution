@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TextureDictionary
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[pixiDotJsLib.PIXINs.Texture]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[pixiDotJsLib.PIXINs.Texture]
 

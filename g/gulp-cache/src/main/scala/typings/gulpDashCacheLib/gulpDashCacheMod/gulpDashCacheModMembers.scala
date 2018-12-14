@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-cache", JSImport.Namespace)
 @js.native
 object gulpDashCacheModMembers
-  extends ScalablyTyped.runtime.TopLevel[gulpDashCacheLib.gulpDashCacheMod.gcNs.IGulpCacheStatic]
+  extends org.scalablytyped.runtime.TopLevel[gulpDashCacheLib.gulpDashCacheMod.gcNs.IGulpCacheStatic]
 

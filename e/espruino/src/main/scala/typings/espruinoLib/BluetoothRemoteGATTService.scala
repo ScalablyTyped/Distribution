@@ -17,7 +17,7 @@ trait BluetoothRemoteGATTService
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[BluetoothRemoteGATTService] {
+org.scalablytyped.runtime.Instantiable0[BluetoothRemoteGATTService] {
   /**
        * <p><strong>Note:</strong> This is only available on some devices</p>
        * 

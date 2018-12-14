@@ -48,7 +48,7 @@ trait SVGFECompositeElement
 @JSGlobal("SVGFECompositeElement")
 @js.native
 object SVGFECompositeElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFECompositeElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGFECompositeElement] {
   val SVG_FECOMPOSITE_OPERATOR_ARITHMETIC: scala.Double = js.native
   val SVG_FECOMPOSITE_OPERATOR_ATOP: scala.Double = js.native
   val SVG_FECOMPOSITE_OPERATOR_IN: scala.Double = js.native

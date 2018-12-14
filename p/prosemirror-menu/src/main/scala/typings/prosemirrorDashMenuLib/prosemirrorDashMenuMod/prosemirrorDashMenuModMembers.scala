@@ -13,18 +13,18 @@ object prosemirrorDashMenuModMembers extends js.Object {
   var selectParentNodeItem: MenuItem[js.Any] = js.native
   def blockTypeItem[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    options: ScalablyTyped.runtime.StringDictionary[js.Any]
+    options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): MenuItem[S] = js.native
   def menuBar[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](options: prosemirrorDashMenuLib.Anon_Floating[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S] = js.native
-  def redoItem(p: ScalablyTyped.runtime.StringDictionary[js.Any]): MenuItem[_] = js.native
+  def redoItem(p: org.scalablytyped.runtime.StringDictionary[js.Any]): MenuItem[_] = js.native
   def renderGrouped[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     view: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S],
     content: js.Array[MenuElement[S] | js.Array[MenuElement[S]]]
   ): prosemirrorDashMenuLib.Anon_UpdateP[S] = js.native
-  def undoItem(p: ScalablyTyped.runtime.StringDictionary[js.Any]): MenuItem[_] = js.native
+  def undoItem(p: org.scalablytyped.runtime.StringDictionary[js.Any]): MenuItem[_] = js.native
   def wrapItem[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    options: ScalablyTyped.runtime.StringDictionary[js.Any]
+    options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): MenuItem[S] = js.native
 }
 

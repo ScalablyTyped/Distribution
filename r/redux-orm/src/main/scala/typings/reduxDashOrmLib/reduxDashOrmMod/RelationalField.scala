@@ -12,7 +12,7 @@ class RelationalField protected () extends js.Object {
   def this(toModelName: java.lang.String) = this()
   def this(toModelName: java.lang.String, relatedName: java.lang.String) = this()
   @JSName("getClass")
-  var getClass_FRelationalField: ScalablyTyped.runtime.Instantiable2[
+  var getClass_FRelationalField: org.scalablytyped.runtime.Instantiable2[
     /* toModelName */ java.lang.String, 
     /* relatedName */ js.UndefOr[/* relatedName */ java.lang.String], 
     RelationalField

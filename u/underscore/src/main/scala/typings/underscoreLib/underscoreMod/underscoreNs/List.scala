@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait List[T]
   extends Collection[T]
-     with /* index */ ScalablyTyped.runtime.NumberDictionary[T] {
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[T] {
   var length: scala.Double
 }
 

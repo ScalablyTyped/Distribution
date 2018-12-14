@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Store
-  extends ScalablyTyped.runtime.Instantiable0[js.Any]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ js.Any, js.Any] {
+  extends org.scalablytyped.runtime.Instantiable0[js.Any]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ js.Any, js.Any] {
   var stores: js.Any = js.native
   def Cookie(name: js.Any, element: js.Any, options: js.Any): js.Any = js.native
   def Data(name: js.Any, element: js.Any): js.Any = js.native

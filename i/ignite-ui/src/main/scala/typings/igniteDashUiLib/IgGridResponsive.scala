@@ -10,7 +10,7 @@ trait IgGridResponsive
   extends /**
 	 * Option for igGridResponsive
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * When windowWidthToRenderVertically is null, determine minimal widths columns can take before
   	 * forcing vertical rendering for the grid

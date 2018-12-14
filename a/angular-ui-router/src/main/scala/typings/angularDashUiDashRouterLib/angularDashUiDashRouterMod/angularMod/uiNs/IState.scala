@@ -65,7 +65,7 @@ trait IState extends js.Object {
                * Boolean (default true). If false will not re-trigger the same state just because a search/query parameter has changed. Useful for when you'd like to modify $location.search() without triggering a reload.
                */
   var reloadOnSearch: js.UndefOr[scala.Boolean] = js.undefined
-  var resolve: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var resolve: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
                * String HTML content, or function that returns an HTML string
                */
@@ -87,6 +87,6 @@ trait IState extends js.Object {
   /**
                * Use the views property to set up multiple views. If you don't need multiple views within a single state this property is not needed. Tip: remember that often nested views are more useful and powerful than multiple sibling views.
                */
-  var views: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IState]] = js.undefined
+  var views: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IState]] = js.undefined
 }
 

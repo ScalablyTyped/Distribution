@@ -10,7 +10,7 @@ trait IgTreeGridTooltips
   extends /**
 	 * Option for igTreeGridTooltips
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A list of custom column settings that specify custom tooltip settings for a specific column (whether tooltips are enabled / disabled)
   	 *

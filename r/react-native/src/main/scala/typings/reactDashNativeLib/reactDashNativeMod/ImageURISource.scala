@@ -46,7 +46,7 @@ trait ImageURISource extends js.Object {
        * `headers` is an object representing the HTTP headers to send along with the
        * request for a remote image.
        */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
        * `method` is the HTTP Method to use. Defaults to GET if not specified.

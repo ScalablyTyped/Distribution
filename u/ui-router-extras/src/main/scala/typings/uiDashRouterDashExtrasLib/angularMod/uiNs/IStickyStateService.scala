@@ -24,7 +24,7 @@ trait IStickyStateService extends js.Object {
                */
   def reset(
     inactiveStateName: java.lang.String,
-    stateParams: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    stateParams: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ): scala.Unit = js.native
 }
 

@@ -26,7 +26,7 @@ trait ProcessConfiguration extends js.Object {
   /**
        * Type fields for the process configuration
        */
-  var typeFields: ScalablyTyped.runtime.StringDictionary[
+  var typeFields: org.scalablytyped.runtime.StringDictionary[
     vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemFieldReference
   ]
   var url: java.lang.String

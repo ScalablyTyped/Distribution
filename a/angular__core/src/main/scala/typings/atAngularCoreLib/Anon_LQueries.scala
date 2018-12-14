@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_LQueries
-  extends ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcRender3InterfacesQueryMod.LQueries]
+  extends org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcRender3InterfacesQueryMod.LQueries]
 

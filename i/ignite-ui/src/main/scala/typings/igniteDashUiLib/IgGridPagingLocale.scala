@@ -10,7 +10,7 @@ trait IgGridPagingLocale
   extends /**
 	 * Option for IgGridPagingLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Leading label text for the drop down from where the page index can be switched.
   	 *

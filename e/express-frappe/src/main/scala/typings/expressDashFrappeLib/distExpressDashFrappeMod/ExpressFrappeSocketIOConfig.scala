@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ExpressFrappeSocketIOConfig
-  extends /* namespace */ ScalablyTyped.runtime.StringDictionary[stdLib.Partial[expressDashFrappeLib.Anon_EventHandler]]
+  extends /* namespace */ org.scalablytyped.runtime.StringDictionary[stdLib.Partial[expressDashFrappeLib.Anon_EventHandler]]
 

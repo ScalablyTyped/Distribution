@@ -20,7 +20,7 @@ object Model extends js.Object {
   var JoinEagerAlgorithm: objectionLib.objectionMod.ObjectionNs.EagerAlgorithm = js.native
   var ManyToManyRelation: objectionLib.objectionMod.ObjectionNs.Relation = js.native
   var NaiveEagerAlgorithm: objectionLib.objectionMod.ObjectionNs.EagerAlgorithm = js.native
-  var QueryBuilder: ScalablyTyped.runtime.Instantiable0[
+  var QueryBuilder: org.scalablytyped.runtime.Instantiable0[
     objectionLib.objectionMod.ObjectionNs.QueryBuilder[
       objectionLib.objectionMod.ObjectionNs.Model, 
       js.Array[objectionLib.objectionMod.ObjectionNs.Model], 
@@ -70,7 +70,7 @@ object Model extends js.Object {
     json: objectionLib.objectionMod.ObjectionNs.Pojo,
     opt: objectionLib.objectionMod.ObjectionNs.ModelOptions
   ): M = js.native
-  def getRelations(): ScalablyTyped.runtime.StringDictionary[objectionLib.objectionMod.ObjectionNs.Relation] = js.native
+  def getRelations(): org.scalablytyped.runtime.StringDictionary[objectionLib.objectionMod.ObjectionNs.Relation] = js.native
   def knex(): knexLib.knexMod.Knex = js.native
   def knex(knex: knexLib.knexMod.Knex): knexLib.knexMod.Knex = js.native
   def knexQuery(): knexLib.knexMod.KnexNs.QueryBuilder = js.native
@@ -144,12 +144,12 @@ object Model extends js.Object {
   def tableMetadata(): objectionLib.objectionMod.ObjectionNs.TableMetadata = js.native
   def tableMetadata(opt: objectionLib.objectionMod.ObjectionNs.TableMetadataOptions): objectionLib.objectionMod.ObjectionNs.TableMetadata = js.native
   def traverse(
-    filterConstructor: ScalablyTyped.runtime.Instantiable0[objectionLib.objectionMod.ObjectionNs.Model],
+    filterConstructor: org.scalablytyped.runtime.Instantiable0[objectionLib.objectionMod.ObjectionNs.Model],
     models: js.Array[objectionLib.objectionMod.ObjectionNs.Model],
     traverser: objectionLib.objectionMod.ObjectionNs.TraverserFunction
   ): scala.Unit = js.native
   def traverse(
-    filterConstructor: ScalablyTyped.runtime.Instantiable0[objectionLib.objectionMod.ObjectionNs.Model],
+    filterConstructor: org.scalablytyped.runtime.Instantiable0[objectionLib.objectionMod.ObjectionNs.Model],
     models: objectionLib.objectionMod.ObjectionNs.Model,
     traverser: objectionLib.objectionMod.ObjectionNs.TraverserFunction
   ): scala.Unit = js.native

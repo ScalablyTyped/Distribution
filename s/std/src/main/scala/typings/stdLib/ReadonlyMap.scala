@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReadonlyMap[K, V] extends js.Object {
   /** Returns an iterable of entries in the map. */
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[K, V]]] = js.native
   val size: scala.Double = js.native
   /**

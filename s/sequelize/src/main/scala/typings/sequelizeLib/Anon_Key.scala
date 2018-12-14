@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Key
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Symbol] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Symbol] {
   @JSName("$adjacent")
   var $adjacent: js.Symbol
   @JSName("$all")

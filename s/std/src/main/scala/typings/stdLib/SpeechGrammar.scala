@@ -14,5 +14,5 @@ trait SpeechGrammar extends js.Object {
 @JSGlobal("SpeechGrammar")
 @js.native
 object SpeechGrammar
-  extends ScalablyTyped.runtime.Instantiable0[SpeechGrammar]
+  extends org.scalablytyped.runtime.Instantiable0[SpeechGrammar]
 

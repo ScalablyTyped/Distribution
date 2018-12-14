@@ -11,7 +11,7 @@ trait CameraConstants extends js.Object {
   val BarCodeType: expoLib.Anon_Upcean
   val FlashMode: expoLib.Anon_Auto
   val Type: expoLib.Anon_Back
-  val VideoQuality: ScalablyTyped.runtime.StringDictionary[scala.Double]
+  val VideoQuality: org.scalablytyped.runtime.StringDictionary[scala.Double]
   val WhiteBalance: expoLib.Anon_Cloudy
 }
 

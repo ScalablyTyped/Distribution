@@ -12,7 +12,7 @@ trait StateInline
        * Stores `{ start: end }` pairs. Useful for backtrack
        * optimization of pairs parse (emphasis, strikes).
        */
-  var cache: ScalablyTyped.runtime.NumberDictionary[scala.Double] = js.native
+  var cache: org.scalablytyped.runtime.NumberDictionary[scala.Double] = js.native
   /** Emphasis-like delimiters */
   var delimiters: js.Array[markdownDashItLib.libMod.MarkdownItNs.Delimiter] = js.native
   var pending: java.lang.String = js.native

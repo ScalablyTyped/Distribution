@@ -22,7 +22,7 @@ package object JQueryNs {
   // #region Callbacks
   type CallbacksStatic = js.Function1[/* flags */ js.UndefOr[java.lang.String], Callbacks[js.Function]]
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type CoordinatesPartial = (stdLib.Pick[Coordinates, jqueryLib.jqueryLibStrings.left]) | (stdLib.Pick[Coordinates, jqueryLib.jqueryLibStrings.top]) | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
+  type CoordinatesPartial = (stdLib.Pick[Coordinates, jqueryLib.jqueryLibStrings.left]) | (stdLib.Pick[Coordinates, jqueryLib.jqueryLibStrings.top]) | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Effects
   // #region Effects
@@ -68,7 +68,7 @@ package object JQueryNs {
        * @since 1.8
        */
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type PropHook[TElement] = jqueryLib.Anon_Get[TElement] | jqueryLib.Anon_Set[TElement] | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
+  type PropHook[TElement] = jqueryLib.Anon_Get[TElement] | jqueryLib.Anon_Set[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Queue
   // #region Queue
@@ -88,12 +88,12 @@ package object JQueryNs {
        * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
        */
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type SpecialEventHook[TTarget, TData] = jqueryLib.Anon_NoBubble | jqueryLib.Anon_BindType | jqueryLib.Anon_DelegateType | (jqueryLib.Anon_Setup[TTarget, TData]) | jqueryLib.Anon_Teardown[TTarget] | (jqueryLib.Anon_Add[TTarget, TData]) | (jqueryLib.Anon_Remove[TTarget, TData]) | (jqueryLib.Anon_Trigger[TTarget, TData]) | (jqueryLib.Anon_Default[TTarget, TData]) | (jqueryLib.Anon_Handle[TTarget, TData]) | jqueryLib.Anon_PreDispatch[TTarget] | jqueryLib.Anon_PostDispatch[TTarget] | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
+  type SpecialEventHook[TTarget, TData] = jqueryLib.Anon_NoBubble | jqueryLib.Anon_BindType | jqueryLib.Anon_DelegateType | (jqueryLib.Anon_Setup[TTarget, TData]) | jqueryLib.Anon_Teardown[TTarget] | (jqueryLib.Anon_Add[TTarget, TData]) | (jqueryLib.Anon_Remove[TTarget, TData]) | (jqueryLib.Anon_Trigger[TTarget, TData]) | (jqueryLib.Anon_Default[TTarget, TData]) | (jqueryLib.Anon_Handle[TTarget, TData]) | jqueryLib.Anon_PreDispatch[TTarget] | jqueryLib.Anon_PostDispatch[TTarget] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Speed
   // #region Speed
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type SpeedSettings[TElement] = jqueryLib.Anon_Duration | jqueryLib.Anon_Easing | jqueryLib.Anon_Complete[TElement] | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
+  type SpeedSettings[TElement] = jqueryLib.Anon_Duration | jqueryLib.Anon_Easing | jqueryLib.Anon_Complete[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Deferred
   // #region Deferred
@@ -118,7 +118,7 @@ package object JQueryNs {
   // region Val hooks
   // #region Val hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type ValHook[TElement] = jqueryLib.Anon_GetElem[TElement] | jqueryLib.Anon_SetElem[TElement] | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
+  type ValHook[TElement] = jqueryLib.Anon_GetElem[TElement] | jqueryLib.Anon_SetElem[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   type _Falsy = js.UndefOr[
     jqueryLib.jqueryLibNumbers.`false` | scala.Null | jqueryLib.jqueryLibNumbers.`0` | jqueryLib.jqueryLibStrings.Empty | js.Any

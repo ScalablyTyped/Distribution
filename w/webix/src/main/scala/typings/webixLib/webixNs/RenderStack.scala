@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RenderStack extends js.Object {
-  var `type`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var types: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def customize(obj: js.Any): scala.Unit = js.native
   def getItemNode(id: java.lang.String): stdLib.HTMLElement = js.native
   def getItemNode(id: scala.Double): stdLib.HTMLElement = js.native

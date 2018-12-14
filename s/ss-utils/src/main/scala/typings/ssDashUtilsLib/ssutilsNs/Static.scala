@@ -10,7 +10,7 @@ trait Static extends js.Object {
   var eventChannels: js.Array[java.lang.String] = js.native
   var eventReceivers: js.Any = js.native
   var eventSourceUrl: java.lang.String = js.native
-  var handlers: ScalablyTyped.runtime.StringDictionary[js.Function] = js.native
+  var handlers: org.scalablytyped.runtime.StringDictionary[js.Function] = js.native
   var listenOn: java.lang.String = js.native
   var onSubmitDisable: java.lang.String = js.native
   var updateSubscriberUrl: java.lang.String = js.native
@@ -34,7 +34,7 @@ trait Static extends js.Object {
   def postJSON(url: java.lang.String, data: js.Object): js.Any = js.native
   def postJSON(url: java.lang.String, data: js.Object, success: js.Function): js.Any = js.native
   def postJSON(url: java.lang.String, data: js.Object, success: js.Function, error: js.Function): js.Any = js.native
-  def queryString(url: java.lang.String): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def queryString(url: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def reconnectServerEvents(opt: ReconnectServerEventsOptions): js.Any = js.native
   def splitOnFirst(s: java.lang.String, delimiter: java.lang.String): js.Array[java.lang.String] = js.native
   def splitOnLast(s: java.lang.String, delimiter: java.lang.String): js.Array[java.lang.String] = js.native

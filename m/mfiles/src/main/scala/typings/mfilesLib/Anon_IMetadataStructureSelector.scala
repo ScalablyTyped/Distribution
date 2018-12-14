@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IMetadataStructureSelector
-  extends ScalablyTyped.runtime.Instantiable0[IMetadataStructureSelector]
+  extends org.scalablytyped.runtime.Instantiable0[IMetadataStructureSelector]
 

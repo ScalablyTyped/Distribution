@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Converters
-  extends /* converter */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* converter */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var blockquote: java.lang.String | js.Array[java.lang.String]
   var code: CodeInput
   var h1: java.lang.String | js.Array[java.lang.String]

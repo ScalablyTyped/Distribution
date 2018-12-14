@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 // object props type
 
 trait ObjectPropsType
-  extends /* keys */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* keys */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

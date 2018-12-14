@@ -15,7 +15,7 @@ trait StaticFunctions extends js.Object {
            *
            * @param table Selector string for table
            */
-  var Api: ScalablyTyped.runtime.Instantiable1[
+  var Api: org.scalablytyped.runtime.Instantiable1[
     /* selector */ java.lang.String | stdLib.Node | js.Array[stdLib.Node] | datatablesDotNetLib.JQuery, 
     Api
   ] = js.native

@@ -12,7 +12,7 @@ trait JasmineAjaxRequest
   var overriddenMimeType: java.lang.String = js.native
   var params: js.Any = js.native
   var password: java.lang.String = js.native
-  var requestHeaders: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var requestHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var url: java.lang.String = js.native
   var username: java.lang.String = js.native
   def data(): java.lang.String = js.native

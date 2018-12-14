@@ -13,7 +13,7 @@ trait TileWMSOptions extends js.Object {
   var gutter: js.UndefOr[scala.Double] = js.undefined
   var hidpi: js.UndefOr[scala.Boolean] = js.undefined
   var logo: js.UndefOr[java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions] = js.undefined
-  var params: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var params: org.scalablytyped.runtime.StringDictionary[js.Any]
   var projection: js.UndefOr[openlayersLib.openlayersMod.ProjectionLike] = js.undefined
   var reprojectionErrorThreshold: js.UndefOr[scala.Double] = js.undefined
   var serverType: js.UndefOr[openlayersLib.openlayersMod.sourceNs.wmsNs.ServerType | java.lang.String] = js.undefined

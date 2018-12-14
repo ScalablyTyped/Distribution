@@ -10,7 +10,7 @@ trait IgGridGroupBy
   extends /**
 	 * Option for igGridGroupBy
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * This option has been removed as of 2017.2 Volume release.
   	 * Specifies the collapse indicator tooltip for grouped rows. Use option [locale.collapseTooltip](ui.iggridgroupby#options:locale.collapseTooltip).

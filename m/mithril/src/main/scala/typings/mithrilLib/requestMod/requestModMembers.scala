@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mithril/request", JSImport.Namespace)
 @js.native
 object requestModMembers
-  extends ScalablyTyped.runtime.TopLevel[mithrilLib.requestMod.RequestServiceNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[mithrilLib.requestMod.RequestServiceNs.Static]
 

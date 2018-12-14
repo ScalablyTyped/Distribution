@@ -76,5 +76,5 @@ trait HTMLOptionsCollection extends HTMLCollectionOf[HTMLOptionElement] {
 @JSGlobal("HTMLOptionsCollection")
 @js.native
 object HTMLOptionsCollection
-  extends ScalablyTyped.runtime.Instantiable0[HTMLOptionsCollection]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLOptionsCollection]
 

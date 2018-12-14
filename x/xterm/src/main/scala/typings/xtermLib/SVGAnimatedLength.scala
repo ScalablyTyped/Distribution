@@ -14,5 +14,5 @@ trait SVGAnimatedLength extends js.Object {
 @JSGlobal("SVGAnimatedLength")
 @js.native
 object SVGAnimatedLength
-  extends ScalablyTyped.runtime.Instantiable0[SVGAnimatedLength]
+  extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedLength]
 

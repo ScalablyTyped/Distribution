@@ -16,5 +16,5 @@ trait SVGElementInstanceList extends js.Object {
 @JSGlobal("SVGElementInstanceList")
 @js.native
 object SVGElementInstanceList
-  extends ScalablyTyped.runtime.Instantiable0[SVGElementInstanceList]
+  extends org.scalablytyped.runtime.Instantiable0[SVGElementInstanceList]
 

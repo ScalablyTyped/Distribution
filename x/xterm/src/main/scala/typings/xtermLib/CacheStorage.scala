@@ -18,5 +18,5 @@ trait CacheStorage extends js.Object {
 @JSGlobal("CacheStorage")
 @js.native
 object CacheStorage
-  extends ScalablyTyped.runtime.Instantiable0[CacheStorage]
+  extends org.scalablytyped.runtime.Instantiable0[CacheStorage]
 

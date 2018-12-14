@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("credit-card-type", JSImport.Namespace)
 @js.native
 object creditDashCardDashTypeModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       creditDashCardDashTypeLib.creditDashCardDashTypeMod.creditCardTypeNs.CreditCardType
     ]
 

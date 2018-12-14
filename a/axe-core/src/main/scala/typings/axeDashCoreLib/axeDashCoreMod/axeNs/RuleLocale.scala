@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RuleLocale
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[axeDashCoreLib.Anon_Description]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[axeDashCoreLib.Anon_Description]
 

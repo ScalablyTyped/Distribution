@@ -12,7 +12,7 @@ trait JoinClause extends js.Object {
   def andOn(column1: java.lang.String, operator: java.lang.String, column2: java.lang.String): JoinClause = js.native
   def andOn(column1: java.lang.String, operator: java.lang.String, column2: Raw): JoinClause = js.native
   def andOn(column1: java.lang.String, raw: Raw): JoinClause = js.native
-  def andOn(columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | Raw]): JoinClause = js.native
+  def andOn(columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | Raw]): JoinClause = js.native
   def andOn(raw: Raw): JoinClause = js.native
   def andOnBetween(column1: java.lang.String, range: js.Tuple2[_, _]): JoinClause = js.native
   def andOnExists(callback: QueryCallback): JoinClause = js.native
@@ -27,7 +27,7 @@ trait JoinClause extends js.Object {
   def on(column1: java.lang.String, operator: java.lang.String, column2: java.lang.String): JoinClause = js.native
   def on(column1: java.lang.String, operator: java.lang.String, column2: Raw): JoinClause = js.native
   def on(column1: java.lang.String, raw: Raw): JoinClause = js.native
-  def on(columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | Raw]): JoinClause = js.native
+  def on(columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | Raw]): JoinClause = js.native
   def on(raw: Raw): JoinClause = js.native
   def onBetween(column1: java.lang.String, range: js.Tuple2[_, _]): JoinClause = js.native
   def onExists(callback: QueryCallback): JoinClause = js.native
@@ -42,7 +42,7 @@ trait JoinClause extends js.Object {
   def orOn(column1: java.lang.String, operator: java.lang.String, column2: java.lang.String): JoinClause = js.native
   def orOn(column1: java.lang.String, operator: java.lang.String, column2: Raw): JoinClause = js.native
   def orOn(column1: java.lang.String, raw: Raw): JoinClause = js.native
-  def orOn(columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | Raw]): JoinClause = js.native
+  def orOn(columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | Raw]): JoinClause = js.native
   def orOn(raw: Raw): JoinClause = js.native
   def orOnBetween(column1: java.lang.String, range: js.Tuple2[_, _]): JoinClause = js.native
   def orOnExists(callback: QueryCallback): JoinClause = js.native
@@ -53,9 +53,9 @@ trait JoinClause extends js.Object {
   def orOnNotNull(column1: java.lang.String): JoinClause = js.native
   def orOnNull(column1: java.lang.String): JoinClause = js.native
   def `type`(`type`: java.lang.String): JoinClause = js.native
-  def using(column: ScalablyTyped.runtime.StringDictionary[java.lang.String | Raw]): JoinClause = js.native
   def using(column: java.lang.String): JoinClause = js.native
   def using(column: js.Array[java.lang.String]): JoinClause = js.native
   def using(column: Raw): JoinClause = js.native
+  def using(column: org.scalablytyped.runtime.StringDictionary[java.lang.String | Raw]): JoinClause = js.native
 }
 

@@ -13,5 +13,5 @@ trait IPathFunctionMap
   extends /**
          * Key is the type of a path, value is a function which accepts a path object as its parameter.
          */
-/* type */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* pathValue */ IPath, scala.Unit]]
+/* type */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* pathValue */ IPath, scala.Unit]]
 

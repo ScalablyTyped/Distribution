@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class BaseBlock[T /* <: adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalValueBlock */] ()
   extends adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBaseBlock {
   def this(parameters: adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BaseBlockParams) = this()
-  def this(parameters: adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BaseBlockParams, valueBlockType: ScalablyTyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalValueBlock]) = this()
+  def this(parameters: adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BaseBlockParams, valueBlockType: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalValueBlock]) = this()
   var idBlock: adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalIdentificationBlock = js.native
   var lenBlock: adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalLengthBlock = js.native
   var valueBlock: T = js.native

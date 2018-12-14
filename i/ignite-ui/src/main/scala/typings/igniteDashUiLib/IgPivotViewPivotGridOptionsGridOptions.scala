@@ -10,7 +10,7 @@ trait IgPivotViewPivotGridOptionsGridOptions
   extends /**
 	 * Option for IgPivotViewPivotGridOptionsGridOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Enables/disables rendering of alternating row styles (odd and even rows receive different styling). Note that if a custom jQuery template is set, this has no effect and CSS for the row should be adjusted manually in the template contents.
   	 */

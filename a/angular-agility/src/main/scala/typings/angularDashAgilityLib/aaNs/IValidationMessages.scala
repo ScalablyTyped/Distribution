@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IValidationMessages
-  extends /* validationKey */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* validationKey */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

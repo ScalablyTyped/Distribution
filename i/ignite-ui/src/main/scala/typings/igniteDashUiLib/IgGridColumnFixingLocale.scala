@@ -10,7 +10,7 @@ trait IgGridColumnFixingLocale
   extends /**
 	 * Option for IgGridColumnFixingLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Text of the feature chooser button for fixing a currently unfixed column.
   	 *

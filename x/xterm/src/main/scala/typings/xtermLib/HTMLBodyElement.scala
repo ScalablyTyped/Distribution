@@ -124,5 +124,5 @@ trait HTMLBodyElement
 @JSGlobal("HTMLBodyElement")
 @js.native
 object HTMLBodyElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLBodyElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLBodyElement]
 

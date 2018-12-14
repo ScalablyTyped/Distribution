@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait InjectDecorator
-  extends ScalablyTyped.runtime.Instantiable1[/* token */ js.Any, Inject] {
+  extends org.scalablytyped.runtime.Instantiable1[/* token */ js.Any, Inject] {
   /**
        * A constructor parameter decorator that specifies a
        * custom provider of a dependency.

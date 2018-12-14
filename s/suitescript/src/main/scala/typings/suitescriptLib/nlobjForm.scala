@@ -18,7 +18,7 @@ trait nlobjForm
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[nlobjForm] {
+org.scalablytyped.runtime.Instantiable0[nlobjForm] {
   /**
        * add a button to this form.
        *

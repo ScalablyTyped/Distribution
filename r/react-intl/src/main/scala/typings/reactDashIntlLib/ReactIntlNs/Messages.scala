@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Messages
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[reactDashIntlLib.ReactIntlNs.FormattedMessageNs.MessageDescriptor]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[reactDashIntlLib.ReactIntlNs.FormattedMessageNs.MessageDescriptor]
 

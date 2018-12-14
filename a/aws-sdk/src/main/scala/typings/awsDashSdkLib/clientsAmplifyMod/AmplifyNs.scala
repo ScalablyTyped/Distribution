@@ -454,7 +454,7 @@ object AmplifyNs extends js.Object {
   
   
   trait EnvironmentVariables
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[EnvValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[EnvValue]
   
   
   trait GetAppRequest extends js.Object {
@@ -713,7 +713,7 @@ object AmplifyNs extends js.Object {
   
   
   trait Screenshots
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ThumbnailUrl]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ThumbnailUrl]
   
   
   trait StartJobRequest extends js.Object {
@@ -845,7 +845,7 @@ object AmplifyNs extends js.Object {
   
   
   trait Tags
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   @js.native
   trait Types

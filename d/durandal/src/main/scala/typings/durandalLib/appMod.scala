@@ -16,5 +16,5 @@ import scala.scalajs.js.annotation._
 @JSImport("durandal/app", JSImport.Namespace)
 @js.native
 object appMod
-  extends ScalablyTyped.runtime.TopLevel[DurandalAppModule]
+  extends org.scalablytyped.runtime.TopLevel[DurandalAppModule]
 

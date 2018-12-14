@@ -11,7 +11,7 @@ trait KnockoutBindingProvider extends js.Object {
     js.Function2[
       /* node */ stdLib.Node, 
       /* bindingContext */ KnockoutBindingContext, 
-      ScalablyTyped.runtime.StringDictionary[java.lang.String]
+      org.scalablytyped.runtime.StringDictionary[java.lang.String]
     ]
   ] = js.undefined
   def getBindings(node: stdLib.Node, bindingContext: KnockoutBindingContext): js.Object

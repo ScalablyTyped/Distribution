@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced protected () extends AggregateError {
   def this(errors: stdLib.Iterable[stdLib.Error | java.lang.String]) = this()
   /* CompleteClass */
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   override var iterator: js.Function0[stdLib.Iterator[stdLib.Error]] = js.native
   /* CompleteClass */
   override var message: java.lang.String = js.native

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MixinDescriptor
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[js.Function0[_]]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Function0[_]]
 

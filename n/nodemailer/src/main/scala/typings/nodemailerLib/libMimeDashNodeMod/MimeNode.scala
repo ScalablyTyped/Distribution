@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait MimeNode extends js.Object {
-  def addHeader(headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
   def addHeader(headers: js.Array[nodemailerLib.Anon_KeyValue]): this.type = js.native
+  def addHeader(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
   /**
        * Adds a header value. If the value for selected key exists, the value is appended
        * as a new field and old one is not touched.
@@ -81,8 +81,8 @@ trait MimeNode extends js.Object {
   def setContent(content: nodeLib.streamMod.Readable): this.type = js.native
   /** Sets envelope to be used instead of the generated one */
   def setEnvelope(envelope: nodemailerLib.libMailerMod.MailNs.Envelope): this.type = js.native
-  def setHeader(headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
   def setHeader(headers: js.Array[nodemailerLib.Anon_KeyValue]): this.type = js.native
+  def setHeader(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
   /**
        * Sets a header value. If the value for selected key exists, it is overwritten.
        * You can set multiple values as well by using [{key:'', value:''}] or

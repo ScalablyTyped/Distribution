@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FormErrors
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[FormError]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[FormError]
 

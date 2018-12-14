@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class StateMatcher protected ()
   extends atUirouterCoreLib.libStateStateMatcherMod.StateMatcher {
-  def this(_states: ScalablyTyped.runtime.StringDictionary[atUirouterCoreLib.libStateStateObjectMod.StateObject]) = this()
+  def this(_states: org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libStateStateObjectMod.StateObject]) = this()
 }
 

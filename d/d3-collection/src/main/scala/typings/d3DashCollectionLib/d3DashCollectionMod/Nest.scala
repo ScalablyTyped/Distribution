@@ -110,7 +110,7 @@ trait Nest[Datum, RollupType] extends js.Object {
        *
        * @param array An array to create a nested data structure from.
        */
-  def `object`(array: js.Array[Datum]): ScalablyTyped.runtime.StringDictionary[js.Any]
+  def `object`(array: js.Array[Datum]): org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * Specifies a rollup function to be applied on each group of leaf elements and returns this nest operator.
        * The return value of the rollup function will replace the array of leaf values in either the associative array returned by nest.map or nest.object;

@@ -11,7 +11,7 @@ trait Anon_DocumentUrlPatternsViewTypes extends js.Object {
   var contexts: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType]] = js.undefined
   var documentUrlPatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
-  var icons: js.UndefOr[ScalablyTyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
+  var icons: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
   /**
            * @param tab The details of the tab where the click took place. Note: this parameter only present for
            *     extensions.

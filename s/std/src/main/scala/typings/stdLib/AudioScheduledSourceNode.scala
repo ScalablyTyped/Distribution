@@ -51,5 +51,5 @@ trait AudioScheduledSourceNode extends AudioNode {
 @JSGlobal("AudioScheduledSourceNode")
 @js.native
 object AudioScheduledSourceNode
-  extends ScalablyTyped.runtime.Instantiable0[AudioScheduledSourceNode]
+  extends org.scalablytyped.runtime.Instantiable0[AudioScheduledSourceNode]
 

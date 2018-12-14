@@ -86,5 +86,5 @@ trait RTCIceGatherer extends RTCStatsProvider {
 @JSGlobal("RTCIceGatherer")
 @js.native
 object RTCIceGatherer
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ RTCIceGatherOptions, RTCIceGatherer]
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ RTCIceGatherOptions, RTCIceGatherer]
 

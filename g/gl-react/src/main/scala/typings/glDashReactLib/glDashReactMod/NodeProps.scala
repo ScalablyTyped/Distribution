@@ -16,7 +16,7 @@ trait NodeProps extends js.Object {
   var onDraw: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var shader: ShaderIdentifier | ShaderDefinition
   var sync: js.UndefOr[scala.Boolean] = js.undefined
-  var uniforms: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var uniforms: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var uniformsOptions: js.UndefOr[js.Any] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }

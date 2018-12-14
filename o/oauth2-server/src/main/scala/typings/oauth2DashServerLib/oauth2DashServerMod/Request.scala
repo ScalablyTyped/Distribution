@@ -16,12 +16,12 @@ class Request ()
            * Instantiates Request using the supplied options.
            *
            */
-  def this(options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(options: expressLib.expressMod.eNs.Request) = this()
   /**
            * Instantiates Request using the supplied options.
            *
            */
-  def this(options: expressLib.expressMod.eNs.Request) = this()
+  def this(options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
            * Returns the specified HTTP header field. The match is case-insensitive.
            *

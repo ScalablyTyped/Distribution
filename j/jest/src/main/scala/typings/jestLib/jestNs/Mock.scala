@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Mock[T]
   extends js.Function
      with MockInstance[T]
-     with ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T] {
+     with org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T] {
   def apply(args: js.Any*): js.Any = js.native
 }
 

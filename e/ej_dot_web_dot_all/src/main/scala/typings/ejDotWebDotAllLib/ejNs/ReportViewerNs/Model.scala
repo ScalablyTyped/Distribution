@@ -95,6 +95,10 @@ trait Model extends js.Object {
                * @Default {empty}
                */
   var serviceAuthorizationToken: js.UndefOr[java.lang.String] = js.undefined
+  /** Fires when user clicks on a failed report item in the rendered report, before displaying error details dialog. If you want to show custom error detail or perform any action before
+               * viewing error detail, you can make use of the showError event.
+               */
+  var showError: js.UndefOr[js.Function1[/* e */ ShowErrorEventArgs, scala.Unit]] = js.undefined
   /** This event will be triggered on rendering the Report Viewer toolbar.
                */
   var toolbarRendering: js.UndefOr[js.Function1[/* e */ ToolbarRenderingEventArgs, scala.Unit]] = js.undefined

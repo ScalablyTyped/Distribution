@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait RenderContext_InView extends RenderContext {
   var AllowCreateFolder: scala.Boolean
   var AllowGridMode: scala.Boolean
-  var BasePermissions: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  var BasePermissions: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   var CanShareLinkForNewDocument: scala.Boolean
   var CascadeDeleteWarningMessage: java.lang.String
    // not in View

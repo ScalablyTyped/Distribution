@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 // A collection of Mappings
 
 trait ActiveMappings
-  extends /* extPort */ ScalablyTyped.runtime.StringDictionary[Mapping]
+  extends /* extPort */ org.scalablytyped.runtime.StringDictionary[Mapping]
 

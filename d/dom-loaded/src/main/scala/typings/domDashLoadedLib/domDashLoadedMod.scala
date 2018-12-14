@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("dom-loaded", JSImport.Namespace)
 @js.native
 object domDashLoadedMod
-  extends ScalablyTyped.runtime.TopLevel[js.Promise[scala.Unit]]
+  extends org.scalablytyped.runtime.TopLevel[js.Promise[scala.Unit]]
 

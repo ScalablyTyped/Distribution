@@ -10,7 +10,7 @@ trait IgFunnelChart
   extends /**
 	 * Option for igFunnelChart
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets whether to allow slices to be selected.
   	 */

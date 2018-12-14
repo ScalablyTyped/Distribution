@@ -14,5 +14,5 @@ trait SVGAnimatedBoolean extends js.Object {
 @JSGlobal("SVGAnimatedBoolean")
 @js.native
 object SVGAnimatedBoolean
-  extends ScalablyTyped.runtime.Instantiable0[SVGAnimatedBoolean]
+  extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedBoolean]
 

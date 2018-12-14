@@ -25,10 +25,10 @@ object coreModMembers extends js.Object {
   val isDefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   val isNullOrUndefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   var mapObj: js.Function3[
-    /* collection */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* collection */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* callback */ atUirouterCoreLib.libCommonCommonMod.Mapper[js.Any, js.Any], 
     /* target */ js.UndefOr[js.Any], 
-    ScalablyTyped.runtime.StringDictionary[js.Any]
+    org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.native
   val propEq: js.Function = js.native
   val pushTo: js.Function1[/* arr */ js.Array[js.Any], js.Function1[/* val */ js.Any, js.Any]] = js.native
@@ -125,7 +125,7 @@ object coreModMembers extends js.Object {
   def inherit(parent: atUirouterCoreLib.libCommonCommonMod.Obj, extra: atUirouterCoreLib.libCommonCommonMod.Obj): js.Any = js.native
   def invoke(fnName: java.lang.String): js.Function = js.native
   def invoke(fnName: java.lang.String, args: js.Array[_]): js.Function = js.native
-  def is[T](ctor: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): js.Function1[/* obj */ js.Any, /* is T */scala.Boolean] = js.native
+  def is[T](ctor: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): js.Function1[/* obj */ js.Any, /* is T */scala.Boolean] = js.native
   def isArray(arg: js.Any): /* is Array */scala.Boolean = js.native
   def isDate(x: js.Any): /* is Date */scala.Boolean = js.native
   def isFunction(x: js.Any): /* is Function */scala.Boolean = js.native
@@ -160,21 +160,21 @@ object coreModMembers extends js.Object {
     _
   ] = js.native
   def makeStub[T](service: java.lang.String, methods: js.Array[java.lang.String]): T = js.native
-  def map[T, U](
-    collection: ScalablyTyped.runtime.StringDictionary[T],
-    callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U]
-  ): ScalablyTyped.runtime.StringDictionary[U] = js.native
-  def map[T, U](
-    collection: ScalablyTyped.runtime.StringDictionary[T],
-    callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U],
-    target: js.Any
-  ): ScalablyTyped.runtime.StringDictionary[U] = js.native
   def map[T, U](collection: js.Array[T], callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U]): js.Array[U] = js.native
   def map[T, U](
     collection: js.Array[T],
     callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U],
     target: js.Any
   ): js.Array[U] = js.native
+  def map[T, U](
+    collection: org.scalablytyped.runtime.StringDictionary[T],
+    callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U]
+  ): org.scalablytyped.runtime.StringDictionary[U] = js.native
+  def map[T, U](
+    collection: org.scalablytyped.runtime.StringDictionary[T],
+    callback: atUirouterCoreLib.libCommonCommonMod.Mapper[T, U],
+    target: js.Any
+  ): org.scalablytyped.runtime.StringDictionary[U] = js.native
   def matchState(
     state: atUirouterCoreLib.libStateStateObjectMod.StateObject,
     criterion: atUirouterCoreLib.libTransitionInterfaceMod.HookMatchCriterion
@@ -196,7 +196,7 @@ object coreModMembers extends js.Object {
   def pattern(struct: js.Array[js.Array[js.Function]]): js.Function = js.native
   def pick(obj: atUirouterCoreLib.libCommonCommonMod.Obj, propNames: js.Array[java.lang.String]): atUirouterCoreLib.libCommonCommonMod.Obj = js.native
   def pipe(funcs: js.Function*): js.Function1[/* obj */ js.Any, _] = js.native
-  def pluck(collection: ScalablyTyped.runtime.StringDictionary[js.Any], propName: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def pluck(collection: org.scalablytyped.runtime.StringDictionary[js.Any], propName: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def pluck[T](collection: js.Array[atUirouterCoreLib.libCommonCommonMod.Obj], propName: java.lang.String): js.Array[T] = js.native
   def prop(name: java.lang.String): js.Function1[/* obj */ js.Any, _] = js.native
   def pushR(arr: js.Array[_], obj: js.Any): js.Array[_] = js.native

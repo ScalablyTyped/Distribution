@@ -10,7 +10,7 @@ trait GridExcelExporterSettings
   extends /**
 	 * Option for GridExcelExporterSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * An array of strings containing the keys for the columns that will not be exported.
   	 *

@@ -26,7 +26,7 @@ trait ContactName extends js.Object {
 @js.native
 object ContactName
   extends /** Constructor for ContactName object */
-ScalablyTyped.runtime.Instantiable6[
+org.scalablytyped.runtime.Instantiable6[
       /* formatted */ js.UndefOr[/* formatted */ java.lang.String], 
       /* familyName */ js.UndefOr[/* familyName */ java.lang.String], 
       /* givenName */ js.UndefOr[/* givenName */ java.lang.String], 

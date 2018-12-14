@@ -11,5 +11,5 @@ trait Anon_SessionIEditSession
          * Creates a new `Selection` object.
          * @param session The session to use
         **/
-ScalablyTyped.runtime.Instantiable1[/* session */ aceLib.AceAjaxNs.IEditSession, aceLib.AceAjaxNs.Selection]
+org.scalablytyped.runtime.Instantiable1[/* session */ aceLib.AceAjaxNs.IEditSession, aceLib.AceAjaxNs.Selection]
 

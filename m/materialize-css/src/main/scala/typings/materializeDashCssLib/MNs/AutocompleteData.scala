@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait AutocompleteData
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Null]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]
 

@@ -77,7 +77,7 @@ class Result protected () extends DisplayControl {
 @js.native
 object Result extends js.Object {
   def getSelectedPropertiesFromMappingDictionary(propMappings: js.Any): js.Array[_] = js.native
-  def parsePropertyMappingWithSlotDisplayNames(mappings: js.Any): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  def parsePropertyMappingsString(mappings: js.Any): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def parsePropertyMappingWithSlotDisplayNames(mappings: js.Any): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def parsePropertyMappingsString(mappings: js.Any): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 

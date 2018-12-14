@@ -23,7 +23,7 @@ trait IModel extends js.Object {
   /**
            * Optional exporter options for this model.
            */
-  var exporterOptions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var exporterOptions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * Optional layer of this model.
            */

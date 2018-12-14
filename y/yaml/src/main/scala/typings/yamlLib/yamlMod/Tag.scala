@@ -10,7 +10,7 @@ trait Tag extends js.Object {
   /**
        * A JavaScript class that should be matched to this tag, e.g. `Date` for `!!timestamp`.
        */
-  var `class`: js.UndefOr[ScalablyTyped.runtime.Instantiable0[js.Any]] = js.native
+  var `class`: js.UndefOr[org.scalablytyped.runtime.Instantiable0[js.Any]] = js.native
   /**
        * If `true`, the tag should not be explicitly included when stringifying.
        */

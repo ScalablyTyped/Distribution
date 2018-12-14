@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ProviderFactory
-  extends ScalablyTyped.runtime.Instantiable1[/* callback */ ProviderCallback[js.Object], Provider[js.Object]]
+  extends org.scalablytyped.runtime.Instantiable1[/* callback */ ProviderCallback[js.Object], Provider[js.Object]]
 

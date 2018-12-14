@@ -40,8 +40,8 @@ trait calendarConfig extends js.Object {
   var multiselect: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var navigation: js.UndefOr[scala.Boolean] = js.undefined
   var on: js.UndefOr[webixLib.webixNs.EventHash] = js.undefined
-  var onClick: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var onContext: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var onDblClick: js.UndefOr[webixLib.webixNs.WebixCallback] = js.undefined
   var onMouseMove: js.UndefOr[webixLib.webixNs.WebixCallback] = js.undefined
   var select: js.UndefOr[scala.Boolean] = js.undefined

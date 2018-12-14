@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait OutputDecorator
-  extends ScalablyTyped.runtime.Instantiable0[js.Any]
-     with ScalablyTyped.runtime.Instantiable1[/* bindingPropertyName */ java.lang.String, js.Any] {
+  extends org.scalablytyped.runtime.Instantiable0[js.Any]
+     with org.scalablytyped.runtime.Instantiable1[/* bindingPropertyName */ java.lang.String, js.Any] {
   /**
       * Decorator that marks a class field as an output property and supplies configuration metadata.
       * Declares a data-bound output property, which Angular automatically updates

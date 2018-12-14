@@ -23,7 +23,7 @@ trait ITemplateScope extends js.Object {
   //The index of the field the form is on (in ng-repeat)
   var index: scala.Double
   //the model of the form (or the model specified by the field if it was specified).
-  var model: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var model: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var options: ITemplateScopeOptions
   //Shortcut to options.validation.errorExistsAndShouldBeVisible
   var showError: scala.Boolean

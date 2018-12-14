@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("malihu-custom-scrollbar-plugin", JSImport.Namespace)
 @js.native
 object malihuDashCustomDashScrollbarDashPluginMod
-  extends ScalablyTyped.runtime.TopLevel[mcustomscrollbarLib.MCustomScrollbarNs.Factory]
+  extends org.scalablytyped.runtime.TopLevel[mcustomscrollbarLib.MCustomScrollbarNs.Factory]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ReducedConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* value */ js.Object, Reduced[js.Object]]
+  extends org.scalablytyped.runtime.Instantiable1[/* value */ js.Object, Reduced[js.Object]]
 

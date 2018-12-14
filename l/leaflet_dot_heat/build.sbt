@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "leaflet_dot_heat"
-version := "0.2-dt-20180910Z-df01f2"
+version := "0.2-dt-20180910Z-fd6607"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-04a914",
-  "org.scalablytyped" %%% "leaflet" % "1.2-dt-20181109Z-7b979c",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-413c9e",
+  "org.scalablytyped" %%% "leaflet" % "1.2-dt-20181109Z-118d9f",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

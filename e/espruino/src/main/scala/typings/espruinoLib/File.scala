@@ -18,7 +18,7 @@ trait File
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[File] {
+org.scalablytyped.runtime.Instantiable0[File] {
   /**
        * <p>Close an open file.</p>
        * 

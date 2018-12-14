@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ComputedKeyframe
-  extends /* property */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Null]] {
+  extends /* property */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Null]] {
   var composite: CompositeOperationOrAuto
   var computedOffset: scala.Double
   var easing: java.lang.String

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
      */
 
 trait Token
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var accessToken: java.lang.String
   var accessTokenExpiresAt: js.UndefOr[stdLib.Date] = js.undefined
   var client: Client

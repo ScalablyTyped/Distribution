@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("nodal", "RelationshipNode")
 @js.native
 class RelationshipNode protected () extends js.Object {
-  def this(Graph: RelationshipGraph, mModel: ScalablyTyped.runtime.Instantiable3[
+  def this(Graph: RelationshipGraph, mModel: org.scalablytyped.runtime.Instantiable3[
       /* modelData */ js.Object, 
       /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
       /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
       Model
     ]) = this()
   var Graph: RelationshipGraph = js.native
-  var Model: ScalablyTyped.runtime.Instantiable3[
+  var Model: org.scalablytyped.runtime.Instantiable3[
     /* modelData */ js.Object, 
     /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
     /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
@@ -27,7 +27,7 @@ class RelationshipNode protected () extends js.Object {
   def find(name: java.lang.String): RelationshipPath | scala.Null = js.native
   def findExplicit(pathname: java.lang.String): RelationshipPath | scala.Null = js.native
   def joinsTo(
-    mModel: ScalablyTyped.runtime.Instantiable3[
+    mModel: org.scalablytyped.runtime.Instantiable3[
       /* modelData */ js.Object, 
       /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
       /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 

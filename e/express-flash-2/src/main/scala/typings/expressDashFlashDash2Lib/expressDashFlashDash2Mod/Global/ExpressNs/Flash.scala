@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Flash
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Array[_]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[_]]
 

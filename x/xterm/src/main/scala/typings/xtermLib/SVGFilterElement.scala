@@ -85,5 +85,5 @@ trait SVGFilterElement
 @JSGlobal("SVGFilterElement")
 @js.native
 object SVGFilterElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFilterElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFilterElement]
 

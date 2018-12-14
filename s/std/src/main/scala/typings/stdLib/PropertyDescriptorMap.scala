@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PropertyDescriptorMap
-  extends /* s */ ScalablyTyped.runtime.StringDictionary[PropertyDescriptor]
+  extends /* s */ org.scalablytyped.runtime.StringDictionary[PropertyDescriptor]
 

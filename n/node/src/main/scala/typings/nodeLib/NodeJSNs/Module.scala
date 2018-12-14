@@ -26,7 +26,7 @@ class Module protected () extends js.Object {
 @JSGlobal("NodeJS.Module")
 @js.native
 object Module extends js.Object {
-  var Module: ScalablyTyped.runtime.Instantiable2[
+  var Module: org.scalablytyped.runtime.Instantiable2[
     /* id */ java.lang.String, 
     /* parent */ js.UndefOr[/* parent */ nodeLib.NodeJSNs.Module], 
     nodeLib.NodeJSNs.Module

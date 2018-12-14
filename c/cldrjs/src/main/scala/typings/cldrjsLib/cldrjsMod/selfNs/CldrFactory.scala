@@ -28,7 +28,7 @@ trait CldrFactory
          *
          * @returns {cldr.CldrStatic} The instance of {@link cldr.CldrStatic} class.
          */
-ScalablyTyped.runtime.Instantiable1[/* locale */ java.lang.String, CldrStatic] {
+org.scalablytyped.runtime.Instantiable1[/* locale */ java.lang.String, CldrStatic] {
   /**
            * Allow user to override locale separator "-" (default) | "_".
            * According to http://www.unicode.org/reports/tr35/#Unicode_language_identifier, both "-" and "_" are valid locale separators (eg. "en_GB", "en-GB").

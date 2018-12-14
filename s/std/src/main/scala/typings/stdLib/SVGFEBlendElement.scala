@@ -54,7 +54,7 @@ trait SVGFEBlendElement
 @JSGlobal("SVGFEBlendElement")
 @js.native
 object SVGFEBlendElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEBlendElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEBlendElement] {
   val SVG_FEBLEND_MODE_COLOR: scala.Double = js.native
   val SVG_FEBLEND_MODE_COLOR_BURN: scala.Double = js.native
   val SVG_FEBLEND_MODE_COLOR_DODGE: scala.Double = js.native

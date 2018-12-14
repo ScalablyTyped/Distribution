@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ITransformConstructable
-  extends ScalablyTyped.runtime.Instantiable0[Transform]
+  extends org.scalablytyped.runtime.Instantiable0[Transform]
 

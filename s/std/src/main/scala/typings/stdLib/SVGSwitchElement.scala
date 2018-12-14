@@ -11,5 +11,5 @@ trait SVGSwitchElement extends SVGGraphicsElement
 @JSGlobal("SVGSwitchElement")
 @js.native
 object SVGSwitchElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGSwitchElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGSwitchElement]
 

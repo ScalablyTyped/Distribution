@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_HTMLAreaElement
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.HTMLAreaElement]
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.HTMLAreaElement]
 

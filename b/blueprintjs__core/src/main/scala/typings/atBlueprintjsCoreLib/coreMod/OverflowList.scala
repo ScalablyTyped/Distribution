@@ -17,7 +17,7 @@ object OverflowList extends js.Object {
     atBlueprintjsCoreLib.libEsmComponentsOverflowDashListOverflowListMod.IOverflowListProps[_]
   ] = js.native
   var displayName: java.lang.String = js.native
-  def ofType[T](): ScalablyTyped.runtime.Instantiable1[
+  def ofType[T](): org.scalablytyped.runtime.Instantiable1[
     /* props */ atBlueprintjsCoreLib.libEsmComponentsOverflowDashListOverflowListMod.IOverflowListProps[T], 
     atBlueprintjsCoreLib.libEsmComponentsOverflowDashListOverflowListMod.OverflowList[T]
   ] = js.native

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class AsyncResultLocator[T] ()
   extends nodeLib.eventsMod.EventEmitter
      with stdLib.Promise[T] {
-  @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
+  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   val toStringTag_AsyncResultLocator: jsforceLib.jsforceLibStrings.Promise = js.native
   def check(): js.Promise[T] = js.native
   def check(callback: jsforceLib.connectionMod.Callback[T]): js.Promise[T] = js.native

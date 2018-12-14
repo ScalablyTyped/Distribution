@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait GatewayRegistry extends js.Object {
-  var _children: ScalablyTyped.runtime.StringDictionary[
-    js.UndefOr[ScalablyTyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]]
+  var _children: org.scalablytyped.runtime.StringDictionary[
+    js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]]
   ]
-  var _containers: ScalablyTyped.runtime.StringDictionary[js.UndefOr[(reactLib.reactMod.Component[js.Object, js.Object, _]) | scala.Null]]
+  var _containers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[(reactLib.reactMod.Component[js.Object, js.Object, _]) | scala.Null]]
   var _currentId: scala.Double
   def _renderContainer(name: java.lang.String): scala.Unit
   def addChild(name: java.lang.String, gatewayId: java.lang.String, child: reactLib.reactMod.ReactNs.ReactNode): scala.Unit

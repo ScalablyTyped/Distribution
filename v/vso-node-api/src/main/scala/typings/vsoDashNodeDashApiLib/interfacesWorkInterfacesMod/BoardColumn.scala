@@ -13,6 +13,6 @@ trait BoardColumn extends js.Object {
   var isSplit: scala.Boolean
   var itemLimit: scala.Double
   var name: java.lang.String
-  var stateMappings: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var stateMappings: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

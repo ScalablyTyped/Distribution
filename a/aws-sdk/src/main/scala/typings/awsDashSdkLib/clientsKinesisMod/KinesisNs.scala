@@ -817,7 +817,7 @@ object KinesisNs extends js.Object {
   
   
   trait TagMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   @js.native
   trait Types

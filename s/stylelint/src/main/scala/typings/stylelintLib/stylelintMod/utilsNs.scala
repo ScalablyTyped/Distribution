@@ -13,7 +13,7 @@ object utilsNs extends js.Object {
     callback: js.Function1[/* warning */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def report(violation: stylelintLib.Anon_RuleName): scala.Unit = js.native
-  def ruleMessages(ruleName: java.lang.String, messages: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def ruleMessages(ruleName: java.lang.String, messages: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   def validateOptions(
     result: stylelintLib.stylelintMod.LintResult,
     ruleName: java.lang.String,

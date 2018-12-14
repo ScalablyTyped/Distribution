@@ -40,9 +40,9 @@ trait DOMException extends js.Object {
 @JSGlobal("DOMException")
 @js.native
 object DOMException
-  extends ScalablyTyped.runtime.Instantiable0[DOMException]
-     with ScalablyTyped.runtime.Instantiable1[/* message */ java.lang.String, DOMException]
-     with ScalablyTyped.runtime.Instantiable2[/* message */ java.lang.String, /* name */ java.lang.String, DOMException] {
+  extends org.scalablytyped.runtime.Instantiable0[DOMException]
+     with org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, DOMException]
+     with org.scalablytyped.runtime.Instantiable2[/* message */ java.lang.String, /* name */ java.lang.String, DOMException] {
   val ABORT_ERR: scala.Double = js.native
   val DATA_CLONE_ERR: scala.Double = js.native
   val DOMSTRING_SIZE_ERR: scala.Double = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IMethod extends js.Object {
   /** Method options */
-  var options: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /** Whether requests are streamed */
   var requestStream: js.UndefOr[scala.Boolean] = js.undefined
   /** Request type */

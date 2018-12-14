@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Programs
-  extends /* cmd */ ScalablyTyped.runtime.StringDictionary[Program]
+  extends /* cmd */ org.scalablytyped.runtime.StringDictionary[Program]
 

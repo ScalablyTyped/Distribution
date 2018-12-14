@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait ParsedHeaderValue extends HeaderValue {
   @JSName("params")
-  var params_ParsedHeaderValue: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var params_ParsedHeaderValue: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

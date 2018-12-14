@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Suite
   extends SuiteOrSpec
-     with ScalablyTyped.runtime.Instantiable4[
+     with org.scalablytyped.runtime.Instantiable4[
       /* env */ Env, 
       /* description */ java.lang.String, 
       /* specDefinitions */ js.Function0[scala.Unit], 

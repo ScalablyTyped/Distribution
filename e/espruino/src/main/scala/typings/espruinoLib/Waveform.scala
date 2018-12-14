@@ -19,7 +19,7 @@ trait Waveform
      * @param options 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable2[/* samples */ scala.Double, /* options */ js.Any, js.Any] {
+org.scalablytyped.runtime.Instantiable2[/* samples */ scala.Double, /* options */ js.Any, js.Any] {
   /**
        * <p>Will start inputting the waveform on the given pin that supports analog. If not repeating, it&#39;ll emit a <code>finish</code> event when it is done.</p>
        * 

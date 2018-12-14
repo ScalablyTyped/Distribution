@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LargeLocalStorageService
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ Options, LargeLocalStorageService] {
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ Options, LargeLocalStorageService] {
   var initialized: Promise[scala.Double] = js.native
   /**
            * Gets all attachments URLs for a document.

@@ -30,7 +30,7 @@ class ObjectLoader () extends js.Object {
    // Array of Classes that inherits from Matrial.
   def parseAnimations(json: js.Any): js.Array[AnimationClip] = js.native
   def parseGeometries(json: js.Any): js.Array[_] = js.native
-  def parseImages(json: js.Any, onLoad: js.Function0[scala.Unit]): ScalablyTyped.runtime.StringDictionary[stdLib.HTMLImageElement] = js.native
+  def parseImages(json: js.Any, onLoad: js.Function0[scala.Unit]): org.scalablytyped.runtime.StringDictionary[stdLib.HTMLImageElement] = js.native
    // Array of BufferGeometry or Geometry or Geometry2.
   def parseMaterials(json: js.Any, textures: js.Array[Texture]): js.Array[Material] = js.native
   def parseObject[T /* <: Object3D */](data: js.Any, geometries: js.Array[_], materials: js.Array[Material]): T = js.native

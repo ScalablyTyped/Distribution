@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Profile extends js.Object {
   var applicationContainer: AttributesContainer
-  var coreAttributes: ScalablyTyped.runtime.StringDictionary[CoreProfileAttribute]
+  var coreAttributes: org.scalablytyped.runtime.StringDictionary[CoreProfileAttribute]
   var coreRevision: scala.Double
   var id: java.lang.String
   var revision: scala.Double

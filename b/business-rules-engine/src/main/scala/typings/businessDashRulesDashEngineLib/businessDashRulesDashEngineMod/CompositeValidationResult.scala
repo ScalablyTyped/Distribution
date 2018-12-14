@@ -15,7 +15,7 @@ class CompositeValidationResult protected () extends IValidationResult {
   override var ErrorCount: scala.Double = js.native
   /* CompleteClass */
   override var ErrorMessage: java.lang.String = js.native
-  var Errors: ScalablyTyped.runtime.StringDictionary[IValidationResult] = js.native
+  var Errors: org.scalablytyped.runtime.StringDictionary[IValidationResult] = js.native
   var FlattenErros: js.Any = js.native
   /* CompleteClass */
   override var HasErrors: scala.Boolean = js.native

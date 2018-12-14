@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TestCase
-  extends ScalablyTyped.runtime.Instantiable1[/* template */ js.Object, TestCase] {
+  extends org.scalablytyped.runtime.Instantiable1[/* template */ js.Object, TestCase] {
   var DEFAULT_WAIT: scala.Double = js.native
   def assert(condition: scala.Boolean, message: java.lang.String): scala.Unit = js.native
   def callback(args: js.Any*): js.Function = js.native

@@ -25,5 +25,5 @@ trait DOMImplementation extends js.Object {
 @JSGlobal("DOMImplementation")
 @js.native
 object DOMImplementation
-  extends ScalablyTyped.runtime.Instantiable0[DOMImplementation]
+  extends org.scalablytyped.runtime.Instantiable0[DOMImplementation]
 

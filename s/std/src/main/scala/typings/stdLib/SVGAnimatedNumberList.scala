@@ -14,5 +14,5 @@ trait SVGAnimatedNumberList extends js.Object {
 @JSGlobal("SVGAnimatedNumberList")
 @js.native
 object SVGAnimatedNumberList
-  extends ScalablyTyped.runtime.Instantiable0[SVGAnimatedNumberList]
+  extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedNumberList]
 

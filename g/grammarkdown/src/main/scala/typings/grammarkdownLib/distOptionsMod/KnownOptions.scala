@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait KnownOptions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[stdLib.Partial[KnownOption]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[stdLib.Partial[KnownOption]]
 

@@ -16,10 +16,10 @@ class BoolValue ()
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "BoolValue")
 @js.native
 object BoolValue extends js.Object {
-  var extensions: ScalablyTyped.runtime.NumberDictionary[
+  var extensions: org.scalablytyped.runtime.NumberDictionary[
     googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
   ] = js.native
-  var extensionsBinary: ScalablyTyped.runtime.NumberDictionary[
+  var extensionsBinary: org.scalablytyped.runtime.NumberDictionary[
     googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldBinaryInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
   ] = js.native
   def deserializeBinary(bytes: stdLib.Uint8Array): googleDashProtobufLib.googleProtobufWrappersUnderscorePbMod.BoolValue = js.native

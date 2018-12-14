@@ -132,7 +132,7 @@ trait ReleaseEnvironment extends js.Object {
   /**
        * Gets the dictionary of variables.
        */
-  var variables: ScalablyTyped.runtime.StringDictionary[ConfigurationVariableValue]
+  var variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
   /**
        * Gets list of workflow tasks.
        */

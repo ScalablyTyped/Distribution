@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JsApiReporter
   extends Reporter
-     with ScalablyTyped.runtime.Instantiable0[js.Any] {
+     with org.scalablytyped.runtime.Instantiable0[js.Any] {
   var finished: scala.Boolean = js.native
   var messages: js.Any = js.native
   var result: js.Any = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ignore-styles", "oldHandlers")
 @js.native
 object oldHandlers
-  extends /* ext */ ScalablyTyped.runtime.StringDictionary[Handler]
+  extends /* ext */ org.scalablytyped.runtime.StringDictionary[Handler]
 

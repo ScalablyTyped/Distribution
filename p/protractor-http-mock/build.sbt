@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "protractor-http-mock"
-version := "0.0-unknown-dt-20180910Z-5cb2cc"
+version := "0.0-unknown-dt-20180910Z-ec070f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "selenium-webdriver" % "3.0-dt-20181213Z-fbc0bd",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "selenium-webdriver" % "3.0-dt-20181213Z-89c1db",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

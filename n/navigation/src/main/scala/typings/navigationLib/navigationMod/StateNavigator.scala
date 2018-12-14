@@ -31,7 +31,7 @@ class StateNavigator () extends js.Object {
   /**
        * Gets a list of States
        */
-  var states: ScalablyTyped.runtime.StringDictionary[State] = js.native
+  var states: org.scalablytyped.runtime.StringDictionary[State] = js.native
   /**
        * Determines if the distance specified is within the bounds of the
        * crumb trail represented by the Crumbs collection

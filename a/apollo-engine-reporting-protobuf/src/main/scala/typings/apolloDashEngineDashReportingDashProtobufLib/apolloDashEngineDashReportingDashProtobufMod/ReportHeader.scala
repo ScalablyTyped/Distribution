@@ -122,14 +122,14 @@ object ReportHeader extends js.Object {
        * @param object Plain object
        * @returns ReportHeader
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ReportHeader = js.native
+  def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ReportHeader = js.native
   /**
        * Creates a plain object from a ReportHeader message. Also converts values to other types if specified.
        * @param message ReportHeader
        * @param [options] Conversion options
        * @returns Plain object
        */
-  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ReportHeader): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ReportHeader): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a ReportHeader message. Also converts values to other types if specified.
        * @param message ReportHeader
@@ -139,12 +139,12 @@ object ReportHeader extends js.Object {
   def toObject(
     message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ReportHeader,
     options: protobufjsLib.protobufjsMod.IConversionOptions
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Verifies a ReportHeader message.
        * @param message Plain object to verify
        * @returns `null` if valid, otherwise the reason why it is not
        */
-  def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+  def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
 }
 

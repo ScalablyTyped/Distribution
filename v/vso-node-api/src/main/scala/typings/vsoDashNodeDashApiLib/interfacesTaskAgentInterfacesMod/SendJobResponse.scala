@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait SendJobResponse extends js.Object {
   var events: JobEventsConfig
-  var variables: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

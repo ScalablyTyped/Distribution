@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Async[OptionType] ()
   extends reactLib.reactMod.Component[Props[OptionType], State[OptionType], js.Any] {
   var mounted: scala.Boolean = js.native
-  var optionsCache: ScalablyTyped.runtime.StringDictionary[reactDashSelectLib.libTypesMod.OptionsType[OptionType]] = js.native
+  var optionsCache: org.scalablytyped.runtime.StringDictionary[reactDashSelectLib.libTypesMod.OptionsType[OptionType]] = js.native
   var select: reactLib.reactMod.ReactNs.Ref[_] = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Messages
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[
       java.lang.String | (js.Function1[
         /* context */ js.Function3[
           /* name */ java.lang.String, 

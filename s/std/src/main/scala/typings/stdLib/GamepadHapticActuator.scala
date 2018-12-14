@@ -14,5 +14,5 @@ trait GamepadHapticActuator extends js.Object {
 @JSGlobal("GamepadHapticActuator")
 @js.native
 object GamepadHapticActuator
-  extends ScalablyTyped.runtime.Instantiable0[GamepadHapticActuator]
+  extends org.scalablytyped.runtime.Instantiable0[GamepadHapticActuator]
 

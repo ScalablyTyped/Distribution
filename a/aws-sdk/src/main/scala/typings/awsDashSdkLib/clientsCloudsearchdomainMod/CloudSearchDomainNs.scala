@@ -46,11 +46,11 @@ object CloudSearchDomainNs extends js.Object {
   
   
   trait Exprs
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait Facets
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[BucketInfo]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[BucketInfo]
   
   
   trait FieldStats extends js.Object {
@@ -90,11 +90,11 @@ object CloudSearchDomainNs extends js.Object {
   
   
   trait Fields
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[FieldValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[FieldValue]
   
   
   trait Highlights
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait Hit extends js.Object {
@@ -230,7 +230,7 @@ object CloudSearchDomainNs extends js.Object {
   
   
   trait Stats
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[FieldStats]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[FieldStats]
   
   
   trait SuggestModel extends js.Object {

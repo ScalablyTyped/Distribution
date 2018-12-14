@@ -14,7 +14,7 @@ class DefaultNodeModel ()
   var color: java.lang.String = js.native
   var name: java.lang.String = js.native
   @JSName("ports")
-  var ports_DefaultNodeModel: ScalablyTyped.runtime.StringDictionary[
+  var ports_DefaultNodeModel: org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcDefaultsModelsDefaultPortModelMod.DefaultPortModel
   ] = js.native
   def addInPort(label: java.lang.String): stormDashReactDashDiagramsLib.distSrcDefaultsModelsDefaultPortModelMod.DefaultPortModel = js.native

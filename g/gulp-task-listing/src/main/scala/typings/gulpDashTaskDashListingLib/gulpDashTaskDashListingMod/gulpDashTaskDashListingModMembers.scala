@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-task-listing", JSImport.Namespace)
 @js.native
 object gulpDashTaskDashListingModMembers
-  extends ScalablyTyped.runtime.TopLevel[GulpTaskListing]
+  extends org.scalablytyped.runtime.TopLevel[GulpTaskListing]
 

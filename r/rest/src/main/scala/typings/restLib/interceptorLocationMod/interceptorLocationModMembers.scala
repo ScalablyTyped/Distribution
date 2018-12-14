@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rest/interceptor/location", JSImport.Namespace)
 @js.native
 object interceptorLocationModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       restLib.restMod.restNs.Interceptor[restLib.interceptorLocationMod.locationNs.Config]
     ]
 

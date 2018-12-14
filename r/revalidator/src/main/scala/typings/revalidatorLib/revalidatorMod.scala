@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("revalidator", JSImport.Namespace)
 @js.native
 object revalidatorMod
-  extends ScalablyTyped.runtime.TopLevel[revalidatorLib.RevalidatorNs.RevalidatorStatic]
+  extends org.scalablytyped.runtime.TopLevel[revalidatorLib.RevalidatorNs.RevalidatorStatic]
 

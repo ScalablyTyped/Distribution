@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait GraphQLResolveInfo extends js.Object {
   val fieldName: java.lang.String
   val fieldNodes: js.Array[graphqlLib.languageAstMod.FieldNode]
-  val fragments: ScalablyTyped.runtime.StringDictionary[graphqlLib.languageAstMod.FragmentDefinitionNode]
+  val fragments: org.scalablytyped.runtime.StringDictionary[graphqlLib.languageAstMod.FragmentDefinitionNode]
   val operation: graphqlLib.languageAstMod.OperationDefinitionNode
   val parentType: GraphQLObjectType
   val path: ResponsePath
   val returnType: GraphQLOutputType
   val rootValue: js.Any
   val schema: graphqlLib.typeSchemaMod.GraphQLSchema
-  val variableValues: ScalablyTyped.runtime.StringDictionary[js.Any]
+  val variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

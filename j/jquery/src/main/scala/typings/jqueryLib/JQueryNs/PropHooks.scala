@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait PropHooks
-  extends /* property */ ScalablyTyped.runtime.StringDictionary[PropHook[Node]]
+  extends /* property */ org.scalablytyped.runtime.StringDictionary[PropHook[Node]]
 

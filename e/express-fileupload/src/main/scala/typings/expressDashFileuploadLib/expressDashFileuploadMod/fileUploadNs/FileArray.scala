@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FileArray
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[UploadedFile | js.Array[UploadedFile]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[UploadedFile | js.Array[UploadedFile]]
 

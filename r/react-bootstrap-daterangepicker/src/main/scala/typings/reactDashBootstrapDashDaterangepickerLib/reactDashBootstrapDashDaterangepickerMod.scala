@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-bootstrap-daterangepicker", JSImport.Namespace)
 @js.native
 object reactDashBootstrapDashDaterangepickerMod
-  extends ScalablyTyped.runtime.TopLevel[
-      ScalablyTyped.runtime.Instantiable0[
+  extends org.scalablytyped.runtime.TopLevel[
+      org.scalablytyped.runtime.Instantiable0[
         reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.DateRangePicker
       ]
     ]

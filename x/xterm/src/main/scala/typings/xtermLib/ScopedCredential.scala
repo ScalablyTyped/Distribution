@@ -14,5 +14,5 @@ trait ScopedCredential extends js.Object {
 @JSGlobal("ScopedCredential")
 @js.native
 object ScopedCredential
-  extends ScalablyTyped.runtime.Instantiable0[ScopedCredential]
+  extends org.scalablytyped.runtime.Instantiable0[ScopedCredential]
 

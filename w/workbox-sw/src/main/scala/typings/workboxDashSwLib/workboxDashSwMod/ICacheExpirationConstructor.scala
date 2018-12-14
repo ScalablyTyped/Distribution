@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait ICacheExpirationConstructor
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* cacheName */ java.lang.String, 
       /* config */ stdLib.Partial[ICacheExpirationOptions], 
       CacheExpiration

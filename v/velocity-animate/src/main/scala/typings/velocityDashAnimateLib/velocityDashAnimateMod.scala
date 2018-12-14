@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("velocity-animate", JSImport.Namespace)
 @js.native
 object velocityDashAnimateMod
-  extends ScalablyTyped.runtime.TopLevel[velocityDashAnimateLib.jqueryNs.velocityNs.VelocityStatic]
+  extends org.scalablytyped.runtime.TopLevel[velocityDashAnimateLib.jqueryNs.velocityNs.VelocityStatic]
 

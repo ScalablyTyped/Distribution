@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "gulp-minify-css"
-version := "0.0-unknown-dt-20180910Z-a835f8"
+version := "0.0-unknown-dt-20180910Z-b889d3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "clean-css" % "v3.4.9-dt-20180910Z-00da7e",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "clean-css" % "v3.4.9-dt-20180910Z-13e987",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

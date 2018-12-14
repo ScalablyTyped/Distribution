@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQuery[TElement]
   extends Iterable[TElement]
-     with /* n */ ScalablyTyped.runtime.NumberDictionary[TElement] {
+     with /* n */ org.scalablytyped.runtime.NumberDictionary[TElement] {
   /**
        * A string containing the jQuery version number.
        * @see \`{@link https://api.jquery.com/jquery-2/#jquery1 }\`

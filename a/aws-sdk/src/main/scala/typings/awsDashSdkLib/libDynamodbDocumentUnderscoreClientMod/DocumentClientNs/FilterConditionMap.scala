@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FilterConditionMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Condition]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Condition]
 

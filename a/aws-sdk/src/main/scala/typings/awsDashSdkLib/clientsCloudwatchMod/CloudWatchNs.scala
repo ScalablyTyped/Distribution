@@ -110,7 +110,7 @@ object CloudWatchNs extends js.Object {
   
   
   trait DatapointValueMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DatapointValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DatapointValue]
   
   
   trait DeleteAlarmsInput extends js.Object {

@@ -772,23 +772,23 @@ object FlowNs extends js.Object {
     val roots: js.Array[java.lang.String] = js.native
     @js.native
     object diatonic_accidentals
-      extends /* diatonic_interval */ ScalablyTyped.runtime.StringDictionary[vexflowLib.Anon_Note]
+      extends /* diatonic_interval */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Note]
     
     @js.native
     object intervals
-      extends /* interval */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+      extends /* interval */ org.scalablytyped.runtime.StringDictionary[scala.Double]
     
     @js.native
     object noteValues
-      extends /* value */ ScalablyTyped.runtime.StringDictionary[vexflowLib.Anon_Intval]
+      extends /* value */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Intval]
     
     @js.native
     object root_indices
-      extends /* root */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+      extends /* root */ org.scalablytyped.runtime.StringDictionary[scala.Double]
     
     @js.native
     object scales
-      extends /* scale */ ScalablyTyped.runtime.StringDictionary[js.Array[scala.Double]]
+      extends /* scale */ org.scalablytyped.runtime.StringDictionary[js.Array[scala.Double]]
     
   }
   
@@ -829,7 +829,7 @@ object FlowNs extends js.Object {
   object PedalMarkingNs extends js.Object {
     @js.native
     object GLYPHS
-      extends /* name */ ScalablyTyped.runtime.StringDictionary[vexflowLib.Anon_Yshift]
+      extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Yshift]
     
     @js.native
     object Styles extends js.Object {
@@ -1175,7 +1175,7 @@ object FlowNs extends js.Object {
   object TextNoteNs extends js.Object {
     @js.native
     object GLYPHS
-      extends /* name */ ScalablyTyped.runtime.StringDictionary[vexflowLib.Anon_YshiftXshift]
+      extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_YshiftXshift]
     
     @js.native
     object Justification extends js.Object {
@@ -1199,7 +1199,7 @@ object FlowNs extends js.Object {
   object TimeSignatureNs extends js.Object {
     @js.native
     object glyphs
-      extends /* name */ ScalablyTyped.runtime.StringDictionary[vexflowLib.Anon_Point]
+      extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Point]
     
   }
   
@@ -1208,7 +1208,7 @@ object FlowNs extends js.Object {
   object TuningNs extends js.Object {
     @js.native
     object names
-      extends /* name */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+      extends /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
     
   }
   
@@ -1268,7 +1268,7 @@ object FlowNs extends js.Object {
   
   @js.native
   object unicode
-    extends /* name */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
 }
 

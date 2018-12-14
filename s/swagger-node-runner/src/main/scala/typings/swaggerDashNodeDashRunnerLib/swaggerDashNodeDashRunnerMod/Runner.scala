@@ -12,7 +12,7 @@ trait Runner
        * Nested Key Value description for _backpipes_ module
        * @see {@link https://github.com/apigee-127/bagpipes#pipes|Github Source}
        */
-  var bagpipes: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var bagpipes: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var config: ConfigInternal = js.native
   /**
        * Current OpenAPI Specification (formaly known as Swagger RESTful API Documentation Specification)

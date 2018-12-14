@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
      */
 @js.native
 trait Context
-  extends /* idx */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* idx */ org.scalablytyped.runtime.StringDictionary[js.Any]
      with /**
          * Initialize a new "request" `Context` with the given `path` and optional initial `state`.
          * @param {string} path  path
          * @param {any}    state state
          */
-ScalablyTyped.runtime.Instantiable1[/* path */ java.lang.String, Context]
+org.scalablytyped.runtime.Instantiable1[/* path */ java.lang.String, Context]
      with /**
          * Initialize a new "request" `Context` with the given `path` and optional initial `state`.
          * @param {string} path  path
          * @param {any}    state state
          */
-ScalablyTyped.runtime.Instantiable2[/* path */ java.lang.String, /* state */ js.Any, Context] {
+org.scalablytyped.runtime.Instantiable2[/* path */ java.lang.String, /* state */ js.Any, Context] {
   /**
            *  Pathname including the "base" (if any) and query string "/admin/login?foo=bar".
            */

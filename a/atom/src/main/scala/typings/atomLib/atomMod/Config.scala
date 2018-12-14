@@ -1416,14 +1416,14 @@ trait Config extends js.Object {
   // Managing Settings
   /** Retrieves the setting for the given key. */
   @JSName("get")
-  def get_corecustomFileTypes(keyPath: atomLib.atomLibStrings.coreDOTcustomFileTypes): ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
+  def get_corecustomFileTypes(keyPath: atomLib.atomLibStrings.coreDOTcustomFileTypes): org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   // Managing Settings
   /** Retrieves the setting for the given key. */
   @JSName("get")
   def get_corecustomFileTypes(
     keyPath: atomLib.atomLibStrings.coreDOTcustomFileTypes,
     options: atomLib.Anon_SourcesExcludeSources
-  ): ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   // Managing Settings
   /** Retrieves the setting for the given key. */
   @JSName("get")
@@ -2671,7 +2671,7 @@ trait Config extends js.Object {
   def observe_corecustomFileTypes(
     keyPath: atomLib.atomLibStrings.coreDOTcustomFileTypes,
     callback: js.Function1[
-      /* value */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]], 
+      /* value */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]], 
       scala.Unit
     ]
   ): Disposable = js.native
@@ -2684,7 +2684,7 @@ trait Config extends js.Object {
     keyPath: atomLib.atomLibStrings.coreDOTcustomFileTypes,
     options: atomLib.Anon_Scope,
     callback: js.Function1[
-      /* value */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]], 
+      /* value */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]], 
       scala.Unit
     ]
   ): Disposable = js.native
@@ -6143,7 +6143,7 @@ trait Config extends js.Object {
   @JSName("set")
   def set_corecustomFileTypes(
     keyPath: atomLib.atomLibStrings.coreDOTcustomFileTypes,
-    value: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+    value: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   ): scala.Unit = js.native
   /**
        *  Sets the value for a configuration setting.
@@ -6152,7 +6152,7 @@ trait Config extends js.Object {
   @JSName("set")
   def set_corecustomFileTypes(
     keyPath: atomLib.atomLibStrings.coreDOTcustomFileTypes,
-    value: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]],
+    value: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]],
     options: atomLib.Anon_ScopeSelector
   ): scala.Unit = js.native
   /**

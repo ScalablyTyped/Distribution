@@ -19,7 +19,7 @@ trait Join extends js.Object {
   def apply(tableName: knexLib.TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def apply(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def apply(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
   def apply(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
@@ -33,7 +33,7 @@ trait Join extends js.Object {
   def apply(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def apply(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def apply(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
 }

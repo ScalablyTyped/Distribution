@@ -11,7 +11,7 @@ trait InterpolationOptions extends js.Object {
            * 	global variables to use in interpolation replacements
            * @default undefined
            */
-  var defaultVariables: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var defaultVariables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * 	escape function
            * @default str => str

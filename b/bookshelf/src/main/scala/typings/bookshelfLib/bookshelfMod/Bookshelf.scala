@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Bookshelf
   extends bookshelfLib.bookshelfMod.BookshelfNs.Events[js.Any] {
-  var Collection: ScalablyTyped.runtime.Instantiable0[
+  var Collection: org.scalablytyped.runtime.Instantiable0[
     bookshelfLib.bookshelfMod.BookshelfNs.Collection[bookshelfLib.bookshelfMod.BookshelfNs.Model[js.Any]]
   ] = js.native
-  var Model: ScalablyTyped.runtime.Instantiable0[
+  var Model: org.scalablytyped.runtime.Instantiable0[
     bookshelfLib.bookshelfMod.BookshelfNs.Model[bookshelfLib.bookshelfMod.BookshelfNs.Model[js.Any]]
   ] = js.native
   var VERSION: java.lang.String = js.native

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ObjectIDStatic
-  extends ScalablyTyped.runtime.Instantiable0[ObjectID]
-     with ScalablyTyped.runtime.Instantiable1[/* hexString */ java.lang.String, ObjectID]
+  extends org.scalablytyped.runtime.Instantiable0[ObjectID]
+     with org.scalablytyped.runtime.Instantiable1[/* hexString */ java.lang.String, ObjectID]
 

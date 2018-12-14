@@ -10,7 +10,7 @@ trait IgGridColumnMoving
   extends /**
 	 * Option for igGridColumnMoving
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies if header cells should include an additional button that opens a moving helper dropdown.
   	 *

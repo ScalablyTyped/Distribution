@@ -55,7 +55,7 @@ class URI protected () extends js.Object {
            * console.log(q.c); // logs "3"
            * </code></pre>
            */
-  def getQuery(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def getQuery(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
            * @function
            * @name pc.URI#setQuery
@@ -67,6 +67,6 @@ class URI protected () extends js.Object {
            * uri.setQuery({"a":1,"b":2});
            * console.log(uri.toString()); // logs "http://example.com?a=1&b=2
            */
-  def setQuery(params: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]): scala.Unit = js.native
+  def setQuery(params: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): scala.Unit = js.native
 }
 

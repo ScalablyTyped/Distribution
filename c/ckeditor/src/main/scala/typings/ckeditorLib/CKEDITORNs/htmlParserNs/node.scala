@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.htmlParser.node")
 @js.native
 class node () extends js.Object {
-  def getAscendant(condition: ScalablyTyped.runtime.StringDictionary[java.lang.String]): element = js.native
   def getAscendant(condition: java.lang.String): element = js.native
   def getAscendant(condition: js.Function1[/* node */ element, scala.Boolean]): element = js.native
+  def getAscendant(condition: org.scalablytyped.runtime.StringDictionary[java.lang.String]): element = js.native
   def getIndex(): scala.Double = js.native
   def insertAfter(node: node): scala.Unit = js.native
   def insertBefore(node: node): scala.Unit = js.native

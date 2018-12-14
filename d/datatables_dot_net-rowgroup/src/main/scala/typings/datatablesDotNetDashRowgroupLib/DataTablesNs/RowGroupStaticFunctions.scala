@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RowGroupStaticFunctions
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* dt */ Api, 
       (/* settings */ scala.Boolean) | (/* settings */ RowGroupSettings), 
       js.UndefOr[scala.Nothing]

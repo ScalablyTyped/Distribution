@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CssJsConstructor
-  extends ScalablyTyped.runtime.Instantiable0[CssJs]
+  extends org.scalablytyped.runtime.Instantiable0[CssJs]
 

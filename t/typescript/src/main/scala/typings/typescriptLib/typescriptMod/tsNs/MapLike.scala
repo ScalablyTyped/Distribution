@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait MapLike[T]
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[T]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[T]
 

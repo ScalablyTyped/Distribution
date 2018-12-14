@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SubscriptionsMapObject
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Subscription]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Subscription]
 

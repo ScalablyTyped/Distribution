@@ -47,7 +47,7 @@ trait BankAccount extends js.Object {
   /**
        * Your own saved information with this bank account
        */
-  var metadata: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var metadata: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var `object`: stripejsLib.stripejsLibStrings.bank_account
   /**
        * The routing transit number for the bank account

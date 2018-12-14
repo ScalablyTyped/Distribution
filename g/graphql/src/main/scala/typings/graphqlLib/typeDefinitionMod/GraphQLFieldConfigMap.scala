@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait GraphQLFieldConfigMap[TSource, TContext]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[GraphQLFieldConfig[TSource, TContext, ScalablyTyped.runtime.StringDictionary[_]]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[
+      GraphQLFieldConfig[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]
+    ]
 

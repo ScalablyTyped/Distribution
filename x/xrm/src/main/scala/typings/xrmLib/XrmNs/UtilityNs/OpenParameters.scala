@@ -16,5 +16,5 @@ trait OpenParameters
              * to provide default field values for the form, or pass data to custom
              * parameters that have been customized for the form.
              */
-/* index */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+/* index */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
 

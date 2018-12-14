@@ -11,7 +11,7 @@ class GraphQLExtensionStack[TContext] protected () extends js.Object {
   def this(extensions: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[GraphQLExtension[TContext]]) = this()
   var extensions: js.Any = js.native
   var fieldResolver: js.UndefOr[
-    graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+    graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.native
   var handleDidStart: js.Any = js.native
   def executionDidStart(o: graphqlDashExtensionsLib.Anon_ExecutionArgs): EndHandler = js.native
@@ -21,7 +21,7 @@ class GraphQLExtensionStack[TContext] protected () extends js.Object {
   def validationDidStart(): EndHandler = js.native
   def willResolveField(
     source: js.Any,
-    args: ScalablyTyped.runtime.StringDictionary[js.Any],
+    args: org.scalablytyped.runtime.StringDictionary[js.Any],
     context: TContext,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
   ): js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], scala.Unit] = js.native

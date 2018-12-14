@@ -23,7 +23,7 @@ trait HTTPOptions extends js.Object {
                * The headers for the request.
                */
   var headers: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
   ] = js.undefined
   /**
                *The method of the request (i.e GET, POST, etc).

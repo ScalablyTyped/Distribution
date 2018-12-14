@@ -21,7 +21,7 @@ trait SqlBricksFn extends js.Object {
      * select().from('psn').join('addr', {'psn.addr_id': 'addr.id'});
      * // SELECT * FROM person psn INNER JOIN address addr ON psn.addr_id = addr.id
      */
-  def aliasExpansions(expansions: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def aliasExpansions(expansions: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
   //////////////////////////////////////////
   //////  Where Expression functions  //////
   //////////////////////////////////////////

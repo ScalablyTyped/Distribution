@@ -14,7 +14,7 @@ trait ColumnSizerProps
      * Check the following link if you want to know more
      * https://github.com/bvaughn/react-virtualized#pass-thru-props
      */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Function responsible for rendering a virtualized Grid.
        * This function should implement the following signature:

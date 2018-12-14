@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object protobufjsModMembers extends js.Object {
   val build: java.lang.String = js.native
-  def common(name: java.lang.String, json: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def common(name: java.lang.String, json: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def configure(): scala.Unit = js.native
   def decoder(mtype: Type): protobufjsLib.Codegen = js.native
   def encoder(mtype: Type): protobufjsLib.Codegen = js.native

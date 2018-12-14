@@ -124,5 +124,5 @@ trait MSInputMethodContext extends EventTarget {
 @JSGlobal("MSInputMethodContext")
 @js.native
 object MSInputMethodContext
-  extends ScalablyTyped.runtime.Instantiable0[MSInputMethodContext]
+  extends org.scalablytyped.runtime.Instantiable0[MSInputMethodContext]
 

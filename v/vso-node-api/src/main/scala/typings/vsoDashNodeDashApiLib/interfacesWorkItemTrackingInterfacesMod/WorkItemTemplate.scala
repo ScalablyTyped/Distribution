@@ -10,6 +10,6 @@ trait WorkItemTemplate extends WorkItemTemplateReference {
   /**
        * Mapping of field and its templated value.
        */
-  var fields: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var fields: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

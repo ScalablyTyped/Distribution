@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rsmq-worker", JSImport.Namespace)
 @js.native
 object rsmqDashWorkerModMembers
-  extends ScalablyTyped.runtime.TopLevel[RSMQWorkerStatic]
+  extends org.scalablytyped.runtime.TopLevel[RSMQWorkerStatic]
 

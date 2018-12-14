@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait HttpHeaders
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[scala.Double | java.lang.String | js.Array[java.lang.String]]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double | java.lang.String | js.Array[java.lang.String]]]
 

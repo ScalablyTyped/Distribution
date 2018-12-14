@@ -11,7 +11,7 @@ trait WaveSurfer
      with // [x: string]: any
 //   pluginName -> WaveSurferPlugin
 //   propertyNameAddedByPlugin -> any
-/* x */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* x */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var util: wavesurferDotJsLib.wavesurferDotJsMod.WaveSurferNs.WaveSurferUtil = js.native
   def destroy(): scala.Unit = js.native
   def empty(): scala.Unit = js.native

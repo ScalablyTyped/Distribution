@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_GetConf extends js.Object {
-  var NormalizerManager: ScalablyTyped.runtime.Instantiable0[nodeDashRalLib.nodeDashRalMod.RALNs.NormalizerManager] = js.native
-  var RalRunner: ScalablyTyped.runtime.Instantiable1[/* serviceName */ java.lang.String, nodeDashRalLib.nodeDashRalMod.RALNs.RalRunner] = js.native
+  var NormalizerManager: org.scalablytyped.runtime.Instantiable0[nodeDashRalLib.nodeDashRalMod.RALNs.NormalizerManager] = js.native
+  var RalRunner: org.scalablytyped.runtime.Instantiable1[/* serviceName */ java.lang.String, nodeDashRalLib.nodeDashRalMod.RALNs.RalRunner] = js.native
   def appendExtPath(extPath: java.lang.String): scala.Unit = js.native
   def getConf(name: java.lang.String): nodeDashRalLib.nodeDashRalMod.Config = js.native
   def getRawConf(name: java.lang.String): nodeDashRalLib.nodeDashRalMod.Config = js.native

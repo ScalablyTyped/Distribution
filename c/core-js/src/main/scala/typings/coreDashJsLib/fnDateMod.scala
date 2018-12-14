@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/date", JSImport.Namespace)
 @js.native
 object fnDateMod
-  extends ScalablyTyped.runtime.TopLevel[Anon_Now]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Now]
 

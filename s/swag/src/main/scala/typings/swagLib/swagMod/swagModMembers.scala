@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("swag", JSImport.Namespace)
 @js.native
 object swagModMembers
-  extends ScalablyTyped.runtime.TopLevel[SwagStatic]
+  extends org.scalablytyped.runtime.TopLevel[SwagStatic]
 

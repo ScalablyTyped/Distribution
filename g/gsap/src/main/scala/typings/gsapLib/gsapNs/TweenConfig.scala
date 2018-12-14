@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait TweenConfig
   extends /** Any tweenable property */
-/* p */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* p */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** If true atuomatically populates the css property for tween on DOM elements */
   var autoCSS: js.UndefOr[scala.Boolean] = js.undefined
   /** The scope to be used for all of the callbacks (onStart, onUpdate, onComplete, etc.). The scope is what "this" refers to inside any of the callbacks. */

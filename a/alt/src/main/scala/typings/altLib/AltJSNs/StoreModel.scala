@@ -15,7 +15,7 @@ trait StoreModel[S] extends js.Object {
   var bindActions: js.UndefOr[js.Function1[/* actions */ ActionsClass, scala.Unit]] = js.undefined
   var bindListeners: js.UndefOr[
     js.Function1[
-      /* config */ ScalablyTyped.runtime.StringDictionary[Action[_] | Actions], 
+      /* config */ org.scalablytyped.runtime.StringDictionary[Action[_] | Actions], 
       scala.Unit
     ]
   ] = js.undefined

@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait VertexConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Vertex]
-     with ScalablyTyped.runtime.Instantiable1[/* obj */ jugLib.VertexData, Vertex]
+  extends org.scalablytyped.runtime.Instantiable0[Vertex]
+     with org.scalablytyped.runtime.Instantiable1[/* obj */ jugLib.VertexData, Vertex]
 

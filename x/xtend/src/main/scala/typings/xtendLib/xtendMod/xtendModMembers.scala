@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("xtend", JSImport.Namespace)
 @js.native
 object xtendModMembers
-  extends ScalablyTyped.runtime.TopLevel[Xtend]
+  extends org.scalablytyped.runtime.TopLevel[Xtend]
 

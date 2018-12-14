@@ -12,7 +12,7 @@ class SimpleStore () extends Container {
   var _collections: js.Object = js.native
   var _completedQueries: js.Object = js.native
   var _pendingQueries: js.Object = js.native
-  var collectionClass: ScalablyTyped.runtime.Instantiable2[
+  var collectionClass: org.scalablytyped.runtime.Instantiable2[
     /* records */ js.UndefOr[/* records */ js.Array[js.Any]], 
     /* opts */ js.UndefOr[/* opts */ js.Any], 
     Collection

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("toastr", JSImport.Namespace)
 @js.native
 object toastrMod
-  extends ScalablyTyped.runtime.TopLevel[Toastr]
+  extends org.scalablytyped.runtime.TopLevel[Toastr]
 

@@ -14,7 +14,7 @@ trait FileError extends js.Object {
 @JSGlobal("FileError")
 @js.native
 object FileError
-  extends ScalablyTyped.runtime.Instantiable1[/* code */ scala.Double, FileError] {
+  extends org.scalablytyped.runtime.Instantiable1[/* code */ scala.Double, FileError] {
   var ABORT_ERR: scala.Double = js.native
   var ENCODING_ERR: scala.Double = js.native
   var INVALID_MODIFICATION_ERR: scala.Double = js.native

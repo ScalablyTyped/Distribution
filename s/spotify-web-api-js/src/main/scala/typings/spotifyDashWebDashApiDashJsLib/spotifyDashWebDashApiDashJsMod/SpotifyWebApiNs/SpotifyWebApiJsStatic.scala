@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
      */
 @js.native
 trait SpotifyWebApiJsStatic
-  extends ScalablyTyped.runtime.Instantiable0[SpotifyWebApiJs]
+  extends org.scalablytyped.runtime.Instantiable0[SpotifyWebApiJs]
 

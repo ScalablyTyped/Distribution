@@ -22,7 +22,7 @@ trait RequireConfig extends js.Object {
   	*	}
   	* });
   	**/
-  var bundles: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
+  var bundles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
   /**
   	* A function to pass to require that should be require after
   	* deps have been loaded.
@@ -33,7 +33,7 @@ trait RequireConfig extends js.Object {
   	* AMD configurations, use module.config() to access in
   	* define() functions
   	**/
-  var config: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Object]] = js.undefined
+  var config: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Object]] = js.undefined
   /**
   	* A name to give to a loading context.  This allows require.js
   	* to load multiple versions of modules in a page, as long as
@@ -68,7 +68,7 @@ trait RequireConfig extends js.Object {
   	* });
   	**/
   var map: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+    org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   ] = js.undefined
   /**
   	* Allow extending requirejs to support Subresource Integrity
@@ -91,7 +91,7 @@ trait RequireConfig extends js.Object {
   	* Path mappings for module names not found directly under
   	* baseUrl.
   	*/
-  var paths: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var paths: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
   	* Specify the value for the type="" attribute used for script
   	* tags inserted into the document by RequireJS.  Default is
@@ -103,7 +103,9 @@ trait RequireConfig extends js.Object {
   	* Dictionary of Shim's.
   	* Can be of type RequireShim or string[] of dependencies
   	*/
-  var shim: js.UndefOr[ScalablyTyped.runtime.StringDictionary[RequireShim | js.Array[java.lang.String]]] = js.undefined
+  var shim: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[RequireShim | js.Array[java.lang.String]]
+  ] = js.undefined
   /**
   	* If set to true, skips the data-main attribute scanning done
   	* to start module loading. Useful if RequireJS is embedded in

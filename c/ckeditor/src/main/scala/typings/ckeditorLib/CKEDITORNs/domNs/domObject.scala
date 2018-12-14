@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class domObject protected ()
   extends ckeditorLib.CKEDITORNs.event {
-  def this(nativeDomObject: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(nativeDomObject: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   @JSName("$")
   val $: js.Any = js.native
   def clearCustomData(): scala.Unit = js.native

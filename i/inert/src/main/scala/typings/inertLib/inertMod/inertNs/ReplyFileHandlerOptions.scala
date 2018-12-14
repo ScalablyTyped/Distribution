@@ -36,7 +36,7 @@ trait ReplyFileHandlerOptions extends js.Object {
   /**
            * lookupMap - an object which maps content encoding to expected file name extension. Defaults to `{ gzip: '.gz' }.
            */
-  var lookupMap: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var lookupMap: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * mode - specifies whether to include the 'Content-Disposition' header with the response. Available values:
            *  * false - header is not included. This is the default value.

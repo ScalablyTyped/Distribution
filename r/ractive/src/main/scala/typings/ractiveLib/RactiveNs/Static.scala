@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Static
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ NewOptions, Ractive] {
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ NewOptions, Ractive] {
   // Since 0.7.1
   var DEBUG: scala.Boolean = js.native
   // Undocumented method
@@ -19,11 +19,11 @@ trait Static
   // TODO: undocumented
   var decorators: DecoratorPlugins = js.native
   var defaults: DefaultsOptions = js.native
-  var easing: ScalablyTyped.runtime.StringDictionary[js.Function1[/* x */ scala.Double, scala.Double]] = js.native
+  var easing: org.scalablytyped.runtime.StringDictionary[js.Function1[/* x */ scala.Double, scala.Double]] = js.native
   // TODO: undocumented
   var events: EventPlugins = js.native
   // TODO: missing static properties documentation
-  var partials: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var partials: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   // TODO: missing static properties documentation
   var transitions: TransitionPlugins = js.native
   def extend(options: ExtendOptions): Static = js.native

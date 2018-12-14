@@ -50,7 +50,7 @@ object fractalNs extends js.Object {
       @js.native
       trait AssetSourceCollection
         extends atFrctlFractalLib.fractalMod.fractalNs.coreNs.mixinsNs.ConfigurableEmitter[js.Any] {
-        @JSName(ScalablyTyped.runtime.Symbol.iterator)
+        @JSName(org.scalablytyped.runtime.Symbol.iterator)
         var iterator: js.Function0[nodeLib.IterableIterator[AssetSource]] = js.native
         val label: java.lang.String = js.native
         val title: java.lang.String = js.native
@@ -132,7 +132,7 @@ object fractalNs extends js.Object {
         var label: js.UndefOr[java.lang.String] = js.undefined
         var path: js.UndefOr[java.lang.String] = js.undefined
         var statuses: js.UndefOr[
-                ScalablyTyped.runtime.StringDictionary[atFrctlFractalLib.fractalMod.fractalNs.coreNs.StatusInfo]
+                org.scalablytyped.runtime.StringDictionary[atFrctlFractalLib.fractalMod.fractalNs.coreNs.StatusInfo]
               ] = js.undefined
         var title: js.UndefOr[java.lang.String] = js.undefined
         var `yield`: js.UndefOr[java.lang.String] = js.undefined
@@ -258,7 +258,7 @@ object fractalNs extends js.Object {
         var `markdown.tables`: js.UndefOr[scala.Boolean] = js.undefined
         var path: js.UndefOr[java.lang.String] = js.undefined
         var statuses: js.UndefOr[
-                ScalablyTyped.runtime.StringDictionary[atFrctlFractalLib.fractalMod.fractalNs.coreNs.StatusInfo]
+                org.scalablytyped.runtime.StringDictionary[atFrctlFractalLib.fractalMod.fractalNs.coreNs.StatusInfo]
               ] = js.undefined
         var title: js.UndefOr[java.lang.String] = js.undefined
       }
@@ -597,7 +597,7 @@ object fractalNs extends js.Object {
         val isFile: js.UndefOr[scala.Nothing] = js.native
         val isVariant: js.UndefOr[scala.Nothing] = js.native
         val items: js.Array[T] = js.native
-        @JSName(ScalablyTyped.runtime.Symbol.iterator)
+        @JSName(org.scalablytyped.runtime.Symbol.iterator)
         var iterator: js.Function0[nodeLib.IterableIterator[T]] = js.native
         val size: scala.Double = js.native
         def collections(): this.type = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-if", JSImport.Namespace)
 @js.native
 object gulpDashIfModMembers
-  extends ScalablyTyped.runtime.TopLevel[GulpIf]
+  extends org.scalablytyped.runtime.TopLevel[GulpIf]
 

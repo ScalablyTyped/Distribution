@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("duplexify", JSImport.Namespace)
 @js.native
 object duplexifyModMembers
-  extends ScalablyTyped.runtime.TopLevel[DuplexifyConstructor]
+  extends org.scalablytyped.runtime.TopLevel[DuplexifyConstructor]
 

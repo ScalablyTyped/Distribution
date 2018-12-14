@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pouchdb-find", JSImport.Namespace)
 @js.native
 object pouchdbDashFindMod
-  extends ScalablyTyped.runtime.TopLevel[stdLib.Plugin]
+  extends org.scalablytyped.runtime.TopLevel[stdLib.Plugin]
 

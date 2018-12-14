@@ -20,7 +20,7 @@ trait nlobjFile
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * return the file description.
        * @return {string}

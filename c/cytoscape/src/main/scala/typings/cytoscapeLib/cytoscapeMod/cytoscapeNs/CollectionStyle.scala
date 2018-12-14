@@ -30,7 +30,7 @@ trait CollectionStyle extends js.Object {
   /**
            * Get a name-value pair object containing visual style properties and their values for the element.
            */
-  def css(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def css(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
            * Get a particular style property value.
            * @param name The name of the visual style property to get.
@@ -80,7 +80,7 @@ trait CollectionStyle extends js.Object {
   /**
            * Get a name-value pair object containing visual style properties and their values for the element.
            */
-  def style(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def style(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
            * Get a particular style property value.
            * @param name The name of the visual style property to get.

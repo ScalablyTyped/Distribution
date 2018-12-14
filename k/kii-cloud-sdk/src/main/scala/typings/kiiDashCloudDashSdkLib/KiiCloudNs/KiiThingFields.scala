@@ -10,7 +10,7 @@ trait KiiThingFields
   extends /**
          * custom fields.
          */
-/* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * firmware version given by thing vendor.
            */

@@ -152,7 +152,7 @@ object FBInstantNsMembers extends js.Object {
   def logEvent(
     eventName: java.lang.String,
     valueToSum: scala.Double,
-    parameters: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): APIError | scala.Null = js.native
   /**
        * Attempts to match the current player with other users looking for people to play with. If successful, a new Messenger group

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("socket.io-client", JSImport.Namespace)
 @js.native
 object socketDotIoDashClientMod
-  extends ScalablyTyped.runtime.TopLevel[SocketIOClientStatic]
+  extends org.scalablytyped.runtime.TopLevel[SocketIOClientStatic]
 

@@ -17,5 +17,5 @@ trait ReadableStreamBYOBReader extends js.Object {
 @JSGlobal("ReadableStreamBYOBReader")
 @js.native
 object ReadableStreamBYOBReader
-  extends ScalablyTyped.runtime.Instantiable1[/* stream */ ReadableStream[Uint8Array], ReadableStreamBYOBReader]
+  extends org.scalablytyped.runtime.Instantiable1[/* stream */ ReadableStream[Uint8Array], ReadableStreamBYOBReader]
 

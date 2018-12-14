@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ArrayList[T] () extends List[T] {
   def this(initialCapacity: scala.Double) = this()
   var array: js.Array[T] = js.native
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[js.Function0[stdLib.IterableIterator[T]]] = js.native
   def addAll(index: scala.Double, list: ArrayList[T]): js.Any = js.native
   def addAll(list: ArrayList[T]): js.Any = js.native

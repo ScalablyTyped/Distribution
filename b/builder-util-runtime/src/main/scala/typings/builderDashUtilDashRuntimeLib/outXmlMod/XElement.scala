@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class XElement protected () extends js.Object {
   def this(name: java.lang.String) = this()
-  var attributes: ScalablyTyped.runtime.StringDictionary[java.lang.String] | scala.Null = js.native
+  var attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null = js.native
   var elements: js.Array[XElement] | scala.Null = js.native
   var isCData: scala.Boolean = js.native
   val name: java.lang.String = js.native

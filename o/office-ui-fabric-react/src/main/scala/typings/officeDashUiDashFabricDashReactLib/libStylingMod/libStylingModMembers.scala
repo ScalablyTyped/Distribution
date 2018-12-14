@@ -644,7 +644,7 @@ object libStylingModMembers extends js.Object {
     scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
     theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
   ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
-  def keyframes(timeline: ScalablyTyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
+  def keyframes(timeline: org.scalablytyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme, depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def mergeStyleSets(

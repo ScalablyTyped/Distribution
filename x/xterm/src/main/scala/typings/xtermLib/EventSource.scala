@@ -22,6 +22,6 @@ trait EventSource extends EventTarget {
 @JSGlobal("EventSource")
 @js.native
 object EventSource
-  extends ScalablyTyped.runtime.Instantiable1[/* url */ java.lang.String, EventSource]
-     with ScalablyTyped.runtime.Instantiable2[/* url */ java.lang.String, /* eventSourceInitDict */ EventSourceInit, EventSource]
+  extends org.scalablytyped.runtime.Instantiable1[/* url */ java.lang.String, EventSource]
+     with org.scalablytyped.runtime.Instantiable2[/* url */ java.lang.String, /* eventSourceInitDict */ EventSourceInit, EventSource]
 

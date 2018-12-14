@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ProxyFunctions
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Function]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Function]
 

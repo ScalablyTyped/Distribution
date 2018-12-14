@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IXmlSerializableConstructor
-  extends ScalablyTyped.runtime.Instantiable0[IXmlSerializable]
+  extends org.scalablytyped.runtime.Instantiable0[IXmlSerializable]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait IConfiguredThemes
   extends IThemes
-     with /* name */ ScalablyTyped.runtime.StringDictionary[ITheme]
+     with /* name */ org.scalablytyped.runtime.StringDictionary[ITheme]
 

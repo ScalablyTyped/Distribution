@@ -95,7 +95,7 @@ trait Deluge extends js.Object {
            * @object cookies
            */
   def setCookies(
-    cookies: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    cookies: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     callback: js.Function3[
       /* error */ java.lang.String, 
       /* result */ scala.Boolean, 

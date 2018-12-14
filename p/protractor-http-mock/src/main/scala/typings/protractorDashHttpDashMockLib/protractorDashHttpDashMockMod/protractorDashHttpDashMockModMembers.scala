@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("protractor-http-mock", JSImport.Namespace)
 @js.native
 object protractorDashHttpDashMockModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.ProtractorHttpMock
     ]
 

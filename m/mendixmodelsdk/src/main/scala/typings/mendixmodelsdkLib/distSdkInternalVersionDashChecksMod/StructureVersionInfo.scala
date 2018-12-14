@@ -13,7 +13,7 @@ class StructureVersionInfo protected () extends VersionInfo {
   var defaultPropertyInfo: PropertyVersionInfo = js.native
   var isExperimental: ModifierValueHistory = js.native
   var isPublic: ModifierValueHistory = js.native
-  var properties: ScalablyTyped.runtime.StringDictionary[PropertyVersionInfo] = js.native
+  var properties: org.scalablytyped.runtime.StringDictionary[PropertyVersionInfo] = js.native
   var structureType: StructureType = js.native
   def checkStructureVersion(instance: mendixmodelsdkLib.distSdkInternalStructuresMod.IStructure): scala.Unit = js.native
   def getPropertyVersionInfo(name: java.lang.String): PropertyVersionInfo = js.native

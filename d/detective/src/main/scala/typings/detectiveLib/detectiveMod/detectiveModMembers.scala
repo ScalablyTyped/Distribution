@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("detective", JSImport.Namespace)
 @js.native
 object detectiveModMembers
-  extends ScalablyTyped.runtime.TopLevel[detectiveLib.detectiveMod.detectiveNs.Detective]
+  extends org.scalablytyped.runtime.TopLevel[detectiveLib.detectiveMod.detectiveNs.Detective]
 

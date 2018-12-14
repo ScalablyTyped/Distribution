@@ -21,7 +21,7 @@ trait LaunchOptions
      * @default `process.env`.
      */
   var env: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double]
   ] = js.undefined
   /**
      * Path to a Chromium executable to run instead of bundled Chromium. If

@@ -94,13 +94,13 @@ object publicUnderscoreApiModMembers extends js.Object {
     styles: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata,
     options: atAngularAnimationsLib.Anon_Params
   ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStateMetadata = js.native
-  def style(tokens: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata = js.native
+  def style(tokens: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata = js.native
   @JSName("style")
   def `style_*`(tokens: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata = js.native
   @JSName("style")
   def `style_*`(
     tokens: js.Array[
-      atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` | (ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double])
+      atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double])
     ]
   ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata = js.native
   def transition(
@@ -126,7 +126,7 @@ object publicUnderscoreApiModMembers extends js.Object {
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
       /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata
@@ -136,7 +136,7 @@ object publicUnderscoreApiModMembers extends js.Object {
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
       /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata,
@@ -147,7 +147,7 @@ object publicUnderscoreApiModMembers extends js.Object {
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
       /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]
@@ -157,7 +157,7 @@ object publicUnderscoreApiModMembers extends js.Object {
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
       /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata],

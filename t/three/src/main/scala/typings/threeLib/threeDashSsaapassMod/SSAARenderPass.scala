@@ -21,7 +21,7 @@ class SSAARenderPass protected ()
   var clearAlpha: scala.Double = js.native
   var clearColor: threeLib.threeDashCoreMod.Color | java.lang.String | scala.Double = js.native
   var copyMaterial: threeLib.threeDashCoreMod.ShaderMaterial = js.native
-  var copyUniforms: ScalablyTyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
+  var copyUniforms: org.scalablytyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
   var quad2: threeLib.threeDashCoreMod.Mesh = js.native
   var sampleLevel: scala.Double = js.native
   var scene: threeLib.threeDashCoreMod.Scene = js.native

@@ -23,7 +23,7 @@ trait Manager extends Emitter {
   		 * All the namespaces currently controlled by this Manager, and the Sockets
   		 * that we're using to communicate with them
   		 */
-  var nsps: ScalablyTyped.runtime.StringDictionary[Socket] = js.native
+  var nsps: org.scalablytyped.runtime.StringDictionary[Socket] = js.native
   /**
   		 * The connect options that we used when creating this Manager
   		 */

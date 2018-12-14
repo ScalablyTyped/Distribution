@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
    */
 
 trait SchemaDefinition
-  extends /* path */ ScalablyTyped.runtime.StringDictionary[SchemaTypeOpts[_] | Schema | SchemaType]
+  extends /* path */ org.scalablytyped.runtime.StringDictionary[SchemaTypeOpts[_] | Schema | SchemaType]
 

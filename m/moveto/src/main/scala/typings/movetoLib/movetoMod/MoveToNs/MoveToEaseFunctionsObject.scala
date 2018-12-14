@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MoveToEaseFunctionsObject
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[MoveToEaseFunction]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[MoveToEaseFunction]
 

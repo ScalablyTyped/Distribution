@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mock-require", JSImport.Namespace)
 @js.native
 object mockDashRequireModMembers
-  extends ScalablyTyped.runtime.TopLevel[Mock]
+  extends org.scalablytyped.runtime.TopLevel[Mock]
 

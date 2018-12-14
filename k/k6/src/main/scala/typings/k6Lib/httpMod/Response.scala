@@ -10,7 +10,7 @@ trait Response extends js.Object {
   var body: java.lang.String = js.native
   var cookies: js.Object = js.native
   var error: java.lang.String = js.native
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var ocsp: k6Lib.Anon_Producedat = js.native
   var proto: java.lang.String = js.native
   var remote_ip: java.lang.String = js.native

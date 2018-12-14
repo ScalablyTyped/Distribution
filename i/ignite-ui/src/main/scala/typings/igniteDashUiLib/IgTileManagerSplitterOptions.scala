@@ -10,7 +10,7 @@ trait IgTileManagerSplitterOptions
   extends /**
 	 * Option for IgTileManagerSplitterOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets whether the splitter should be initially collapsed.
   	 *

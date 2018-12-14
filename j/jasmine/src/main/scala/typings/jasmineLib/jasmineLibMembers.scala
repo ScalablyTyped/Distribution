@@ -67,16 +67,19 @@ object jasmineLibMembers extends js.Object {
   def expect(): jasmineLib.jasmineNs.NothingMatcher = js.native
   /**
    * Create an expectation for a spec.
+   * @checkReturnValue see https://tsetse.info/check-return-value
    * @param spy
    */
   def expect(spy: js.Function): jasmineLib.jasmineNs.Matchers[_] = js.native
   /**
    * Create an expectation for a spec.
+   * @checkReturnValue see https://tsetse.info/check-return-value
    * @param actual Actual computed value to test expectations against.
    */
   def expect[T](actual: T): jasmineLib.jasmineNs.Matchers[T] = js.native
   /**
    * Create an expectation for a spec.
+   * @checkReturnValue see https://tsetse.info/check-return-value
    * @param actual
    */
   def expect[T](actual: stdLib.ArrayLike[T]): jasmineLib.jasmineNs.ArrayLikeMatchers[T] = js.native

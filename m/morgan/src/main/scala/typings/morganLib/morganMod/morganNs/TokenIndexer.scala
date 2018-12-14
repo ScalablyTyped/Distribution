@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TokenIndexer
-  extends /* tokenName */ ScalablyTyped.runtime.StringDictionary[TokenCallbackFn]
+  extends /* tokenName */ org.scalablytyped.runtime.StringDictionary[TokenCallbackFn]
 

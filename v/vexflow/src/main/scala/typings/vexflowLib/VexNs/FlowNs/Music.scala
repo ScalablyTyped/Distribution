@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.Music")
 @js.native
 class Music () extends js.Object {
-  def createScaleMap(keySignature: java.lang.String): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def createScaleMap(keySignature: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def getCanonicalIntervalName(intervalValue: scala.Double): java.lang.String = js.native
   def getCanonicalNoteName(noteValue: scala.Double): java.lang.String = js.native
   def getIntervalBetween(note1: scala.Double, note2: scala.Double): scala.Double = js.native

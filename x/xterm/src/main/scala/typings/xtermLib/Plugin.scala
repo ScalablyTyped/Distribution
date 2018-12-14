@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Plugin
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[MimeType] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[MimeType] {
   val description: java.lang.String
   val filename: java.lang.String
   val length: scala.Double
@@ -20,5 +20,5 @@ trait Plugin
 @JSGlobal("Plugin")
 @js.native
 object Plugin
-  extends ScalablyTyped.runtime.Instantiable0[Plugin]
+  extends org.scalablytyped.runtime.Instantiable0[Plugin]
 

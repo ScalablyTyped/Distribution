@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait ChartTooltipsStaticConfiguration extends js.Object {
-  var positioners: ScalablyTyped.runtime.StringDictionary[ChartTooltipPositioner]
+  var positioners: org.scalablytyped.runtime.StringDictionary[ChartTooltipPositioner]
 }
 

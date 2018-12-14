@@ -487,7 +487,7 @@ object gNs extends js.Object {
   
   
   trait SegmentTypes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Segment]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Segment]
   
   
   trait SubdivisionsOpt extends PrecisionOpt {

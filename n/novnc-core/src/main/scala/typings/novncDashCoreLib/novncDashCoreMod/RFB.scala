@@ -30,7 +30,7 @@ trait RFB extends js.Object {
     /* rfb */ this.type, 
     /* msg */ java.lang.String, 
     /* level */ novncDashCoreLib.novncDashCoreLibStrings.normal | novncDashCoreLib.novncDashCoreLibStrings.warn | novncDashCoreLib.novncDashCoreLibStrings.error, 
-    /* options */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* options */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
     scala.Unit
   ] = js.native
   def get_onPasswordRequired(): js.Function2[/* rfb */ this.type, /* msg */ js.UndefOr[java.lang.String], scala.Unit] = js.native
@@ -71,7 +71,7 @@ trait RFB extends js.Object {
       /* rfb */ this.type, 
       /* msg */ java.lang.String, 
       /* level */ novncDashCoreLib.novncDashCoreLibStrings.normal | novncDashCoreLib.novncDashCoreLibStrings.warn | novncDashCoreLib.novncDashCoreLibStrings.error, 
-      /* options */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* options */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Unit
     ]
   ): scala.Unit = js.native

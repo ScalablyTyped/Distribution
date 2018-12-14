@@ -14,7 +14,7 @@ trait HttpRequestOptions extends js.Object {
   var compress: js.UndefOr[scala.Boolean] = js.undefined
   var follow: js.UndefOr[scala.Double] = js.undefined
   var form: js.UndefOr[js.Object | scala.Null] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var json: js.UndefOr[js.Object | js.Array[_] | scala.Null] = js.undefined
   var method: js.UndefOr[
     zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.POST | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.GET | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.OPTIONS | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.HEAD | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.DELETE | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.PATCH | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.PUT

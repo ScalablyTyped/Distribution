@@ -18,5 +18,5 @@ trait HTMLLegendElement extends HTMLElement {
 @JSGlobal("HTMLLegendElement")
 @js.native
 object HTMLLegendElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLLegendElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLLegendElement]
 

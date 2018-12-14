@@ -40,13 +40,13 @@ object srcAnimationUnderscoreMetadataModMembers extends js.Object {
     styles: AnimationStyleMetadata,
     options: atAngularAnimationsLib.Anon_Params
   ): AnimationStateMetadata = js.native
-  def style(tokens: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]): AnimationStyleMetadata = js.native
+  def style(tokens: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): AnimationStyleMetadata = js.native
   @JSName("style")
   def `style_*`(tokens: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`): AnimationStyleMetadata = js.native
   @JSName("style")
   def `style_*`(
     tokens: js.Array[
-      atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` | (ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double])
+      atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double])
     ]
   ): AnimationStyleMetadata = js.native
   def transition(stateChangeExpr: java.lang.String, steps: AnimationMetadata): AnimationTransitionMetadata = js.native
@@ -58,7 +58,7 @@ object srcAnimationUnderscoreMetadataModMembers extends js.Object {
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
       /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: AnimationMetadata
@@ -68,7 +68,7 @@ object srcAnimationUnderscoreMetadataModMembers extends js.Object {
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
       /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: AnimationMetadata,
@@ -79,7 +79,7 @@ object srcAnimationUnderscoreMetadataModMembers extends js.Object {
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
       /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: js.Array[AnimationMetadata]
@@ -89,7 +89,7 @@ object srcAnimationUnderscoreMetadataModMembers extends js.Object {
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
       /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: js.Array[AnimationMetadata],

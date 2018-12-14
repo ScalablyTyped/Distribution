@@ -36,7 +36,7 @@ class WebRequest () extends js.Object {
   def getResolvedUrl(): java.lang.String = js.native
   def get_body(): java.lang.String = js.native
   def get_executor(): WebRequestExecutor = js.native
-  def get_headers(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def get_headers(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def get_httpVerb(): java.lang.String = js.native
   def get_timeout(): scala.Double = js.native
   //#endregion

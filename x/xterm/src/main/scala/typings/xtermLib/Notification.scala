@@ -168,8 +168,8 @@ trait Notification extends EventTarget {
 @JSGlobal("Notification")
 @js.native
 object Notification
-  extends ScalablyTyped.runtime.Instantiable1[/* title */ java.lang.String, Notification]
-     with ScalablyTyped.runtime.Instantiable2[/* title */ java.lang.String, /* options */ NotificationOptions, Notification] {
+  extends org.scalablytyped.runtime.Instantiable1[/* title */ java.lang.String, Notification]
+     with org.scalablytyped.runtime.Instantiable2[/* title */ java.lang.String, /* options */ NotificationOptions, Notification] {
   val maxActions: scala.Double = js.native
   val permission: xtermLib.NotificationPermission = js.native
   def requestPermission(): js.Promise[xtermLib.NotificationPermission] = js.native

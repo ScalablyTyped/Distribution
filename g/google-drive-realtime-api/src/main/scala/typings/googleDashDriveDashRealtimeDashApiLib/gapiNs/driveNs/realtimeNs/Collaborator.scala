@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("gapi.drive.realtime.Collaborator")
 @js.native
 class Collaborator ()
-  extends ScalablyTyped.runtime.Instantiable8[
+  extends org.scalablytyped.runtime.Instantiable8[
       /* sessionId */ java.lang.String, 
       /* userId */ java.lang.String, 
       /* displayName */ java.lang.String, 

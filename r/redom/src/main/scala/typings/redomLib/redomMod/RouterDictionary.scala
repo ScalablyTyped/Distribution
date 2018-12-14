@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RouterDictionary
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[RedomComponentConstructor]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[RedomComponentConstructor]
 

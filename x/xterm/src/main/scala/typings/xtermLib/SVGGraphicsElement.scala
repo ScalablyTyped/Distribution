@@ -78,5 +78,5 @@ trait SVGGraphicsElement
 @JSGlobal("SVGGraphicsElement")
 @js.native
 object SVGGraphicsElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGGraphicsElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGGraphicsElement]
 

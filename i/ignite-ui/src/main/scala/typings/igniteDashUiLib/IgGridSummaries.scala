@@ -10,7 +10,7 @@ trait IgGridSummaries
   extends /**
 	 * Option for igGridSummaries
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies when calculations are made.
   	 *

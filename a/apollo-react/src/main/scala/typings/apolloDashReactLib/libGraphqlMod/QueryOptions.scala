@@ -16,6 +16,6 @@ trait QueryOptions extends js.Object {
   var returnPartialData: js.UndefOr[scala.Boolean] = js.undefined
   var skip: js.UndefOr[scala.Boolean] = js.undefined
   var ssr: js.UndefOr[scala.Boolean] = js.undefined
-  var variables: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

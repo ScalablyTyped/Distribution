@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SVGPathSegClosePath")
 @js.native
 object SVGPathSegClosePath
-  extends ScalablyTyped.runtime.Instantiable0[SVGPathSegClosePath]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPathSegClosePath]
 

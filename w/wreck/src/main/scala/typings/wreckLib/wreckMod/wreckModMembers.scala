@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("wreck", JSImport.Namespace)
 @js.native
 object wreckModMembers
-  extends ScalablyTyped.runtime.TopLevel[WreckObject]
+  extends org.scalablytyped.runtime.TopLevel[WreckObject]
 

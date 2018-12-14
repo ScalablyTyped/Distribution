@@ -112,5 +112,5 @@ trait ServiceWorker
 @JSGlobal("ServiceWorker")
 @js.native
 object ServiceWorker
-  extends ScalablyTyped.runtime.Instantiable0[ServiceWorker]
+  extends org.scalablytyped.runtime.Instantiable0[ServiceWorker]
 

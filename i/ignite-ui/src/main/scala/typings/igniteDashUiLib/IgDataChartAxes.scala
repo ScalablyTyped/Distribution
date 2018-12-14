@@ -10,7 +10,7 @@ trait IgDataChartAxes
   extends /**
 	 * Option for IgDataChartAxes
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets the coercion methods to use when loading data from data sources.
   	 * Should be specified before setting any member paths, if being used. Setting it later

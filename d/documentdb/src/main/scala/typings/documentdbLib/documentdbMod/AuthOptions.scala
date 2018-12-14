@@ -12,6 +12,6 @@ trait AuthOptions extends js.Object {
   /** An array of {@link Permission} objects. */
   var permissionFeed: js.UndefOr[js.Array[Permission]] = js.undefined
   /** An object that contains resources tokens. Keys for the object are resource Ids and values are the resource tokens. */
-  var resourceTokens: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var resourceTokens: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 

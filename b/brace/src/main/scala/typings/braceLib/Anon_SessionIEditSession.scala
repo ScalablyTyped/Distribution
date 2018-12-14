@@ -11,7 +11,7 @@ trait Anon_SessionIEditSession
          * Creates a new `Selection` object.
          * @param session The session to use
         **/
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       /* session */ braceLib.braceMod.AceAjaxNs.IEditSession, 
       braceLib.braceMod.AceAjaxNs.Selection
     ]

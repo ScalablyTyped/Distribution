@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line: interface-name
 
 trait ISPClientPeoplePickerEntity
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var Description: js.UndefOr[java.lang.String] = js.undefined
   var DisplayText: js.UndefOr[java.lang.String] = js.undefined
   var DomainText: js.UndefOr[java.lang.String] = js.undefined

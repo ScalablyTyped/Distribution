@@ -241,6 +241,8 @@ trait Ng1StateDeclaration
        * - controllerProvider
        */
   @JSName("views")
-  var views_Ng1StateDeclaration: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String | Ng1ViewDeclaration]] = js.undefined
+  var views_Ng1StateDeclaration: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | Ng1ViewDeclaration]
+  ] = js.undefined
 }
 

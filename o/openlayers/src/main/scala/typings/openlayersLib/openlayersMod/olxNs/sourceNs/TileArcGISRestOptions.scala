@@ -11,7 +11,7 @@ trait TileArcGISRestOptions extends js.Object {
   var cacheSize: js.UndefOr[scala.Double] = js.undefined
   var crossOrigin: js.UndefOr[java.lang.String] = js.undefined
   var logo: js.UndefOr[java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions] = js.undefined
-  var params: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var projection: js.UndefOr[openlayersLib.openlayersMod.ProjectionLike] = js.undefined
   var reprojectionErrorThreshold: js.UndefOr[scala.Double] = js.undefined
   var tileGrid: js.UndefOr[openlayersLib.openlayersMod.tilegridNs.TileGrid] = js.undefined

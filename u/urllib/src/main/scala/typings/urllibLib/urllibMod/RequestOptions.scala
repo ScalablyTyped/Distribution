@@ -71,7 +71,7 @@ trait RequestOptions extends js.Object {
   /** Accept gzip response content and auto decode it, default is false. */
   var gzip: js.UndefOr[scala.Boolean] = js.undefined
   /** Request headers. */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /** HTTPS Agent object. Set false if you does not use agent. */
   var httpsAgent: js.UndefOr[nodeLib.httpsMod.Agent] = js.undefined
   /**
@@ -100,7 +100,7 @@ trait RequestOptions extends js.Object {
   /** A string or Buffer containing the private key, certificate and CA certs of the server in PFX or PKCS12 format. */
   var pfx: js.UndefOr[java.lang.String | nodeLib.Buffer] = js.undefined
   /** proxy agent uri or options, default is null. */
-  var proxy: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var proxy: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
      * If true, the server certificate is verified against the list of supplied CAs.
      * An 'error' event is emitted if verification fails.Default: true.

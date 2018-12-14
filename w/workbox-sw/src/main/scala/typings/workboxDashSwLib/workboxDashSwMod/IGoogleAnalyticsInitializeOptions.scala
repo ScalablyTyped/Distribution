@@ -19,7 +19,7 @@ trait IGoogleAnalyticsInitializeOptions extends js.Object {
   	 * Measurement Protocol parameters, expressed as key/value pairs, to be added to replayed Google Analytics requests.
   	 * This can be used to, e.g., set a custom dimension indicating that the request was replayed.
   	 */
-  var parameterOverrides: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var parameterOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
   	 * A function that allows you to modify the hit parameters prior to replaying the hit. The function is invoked with the original hit's URLSearchParams object as its only argument.
   	 * @param {URLSearchParams} params

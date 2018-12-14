@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SecurityRequirementObject
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 

@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Constructor
   extends sugarLib.sugarjsNs.SugarNamespace
-     with ScalablyTyped.runtime.Instantiable1[
-      (/* d */ java.lang.String) | (/* d */ scala.Double) | (/* d */ stdLib.Date), 
-      Chainable[stdLib.Date]
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable0[Chainable[stdLib.Date]]
+     with org.scalablytyped.runtime.Instantiable2[
       (/* d */ java.lang.String) | (/* d */ scala.Double) | (/* d */ stdLib.Date), 
       /* options */ DateCreateOptions, 
       Chainable[stdLib.Date]
     ]
-     with ScalablyTyped.runtime.Instantiable0[Chainable[stdLib.Date]] {
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* d */ java.lang.String) | (/* d */ scala.Double) | (/* d */ stdLib.Date), 
+      Chainable[stdLib.Date]
+    ] {
   def apply(): Chainable[stdLib.Date] = js.native
   def apply(d: java.lang.String): Chainable[stdLib.Date] = js.native
   def apply(d: java.lang.String, options: DateCreateOptions): Chainable[stdLib.Date] = js.native

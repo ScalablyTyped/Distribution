@@ -22,7 +22,7 @@ trait Client extends js.Object {
   		 * A dictionary of all the namespaces for this client, with the Socket that
   		 * deals with that namespace
   		 */
-  var nsps: ScalablyTyped.runtime.StringDictionary[Socket]
+  var nsps: org.scalablytyped.runtime.StringDictionary[Socket]
   /**
   		 * The http.IncomingMessage request sent with the connection. Useful
   		 * for recovering headers etc
@@ -36,6 +36,6 @@ trait Client extends js.Object {
   		 * The dictionary of sockets currently connect via this client (i.e. to different
   		 * namespaces) where the Socket ID is the key
   		 */
-  var sockets: ScalablyTyped.runtime.StringDictionary[Socket]
+  var sockets: org.scalablytyped.runtime.StringDictionary[Socket]
 }
 

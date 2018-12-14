@@ -12,6 +12,6 @@ trait MimosOptions extends js.Object {
        *  * the key is the lower-cased correct mime-type. (Ex. "application/javascript").
        *  * the value should an object @see MimosOptionsValue
        */
-  var `override`: ScalablyTyped.runtime.StringDictionary[MimosOptionsValue]
+  var `override`: org.scalablytyped.runtime.StringDictionary[MimosOptionsValue]
 }
 

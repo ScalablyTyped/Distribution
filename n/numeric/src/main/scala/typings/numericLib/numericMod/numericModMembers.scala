@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("numeric", JSImport.Namespace)
 @js.native
 object numericModMembers
-  extends ScalablyTyped.runtime.TopLevel[Numeric]
+  extends org.scalablytyped.runtime.TopLevel[Numeric]
 

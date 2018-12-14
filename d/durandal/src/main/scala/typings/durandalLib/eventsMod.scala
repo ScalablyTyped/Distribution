@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("durandal/events", JSImport.Namespace)
 @js.native
 object eventsMod
-  extends ScalablyTyped.runtime.TopLevel[DurandalEventModule]
+  extends org.scalablytyped.runtime.TopLevel[DurandalEventModule]
 

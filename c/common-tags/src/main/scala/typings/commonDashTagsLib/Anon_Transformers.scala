@@ -11,12 +11,12 @@ trait Anon_Transformers
      * New Tag Constructor
      * @deprecated
      */
-ScalablyTyped.runtime.Instantiable0[commonDashTagsLib.commonDashTagsMod.TemplateTag]
+org.scalablytyped.runtime.Instantiable0[commonDashTagsLib.commonDashTagsMod.TemplateTag]
      with /**
      * New Tag Constructor
      * @deprecated
      */
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       (/* transformers */ js.Array[commonDashTagsLib.commonDashTagsMod.TemplateTransformer[js.Any]]) | (/* transformers (repeated) */ commonDashTagsLib.commonDashTagsMod.TemplateTransformer[js.Any]) | (/* pluginFunctions (repeated) */ commonDashTagsLib.commonDashTagsMod.PluginFunction), 
       commonDashTagsLib.commonDashTagsMod.TemplateTag
     ]

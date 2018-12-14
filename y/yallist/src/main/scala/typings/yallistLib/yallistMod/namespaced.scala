@@ -11,7 +11,7 @@ class namespaced[T] () extends Yallist[T] {
   def this(items: T*) = this()
   def this(list: yallistLib.yallistMod.YallistNs.ForEachIterable[T]) = this()
   /* CompleteClass */
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   override var iterator: js.Function0[stdLib.Iterator[T]] = js.native
 }
 

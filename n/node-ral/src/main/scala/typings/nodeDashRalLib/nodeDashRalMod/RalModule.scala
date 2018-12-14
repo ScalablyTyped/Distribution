@@ -15,7 +15,7 @@ abstract class RalModule () extends js.Object {
 @JSImport("node-ral", "RalModule")
 @js.native
 object RalModule extends js.Object {
-  var modules: ScalablyTyped.runtime.StringDictionary[nodeDashRalLib.nodeDashRalMod.RalModule] = js.native
+  var modules: org.scalablytyped.runtime.StringDictionary[nodeDashRalLib.nodeDashRalMod.RalModule] = js.native
   def clearCache(): scala.Unit = js.native
   def load(pathOrModule: java.lang.String): scala.Unit = js.native
   def load(pathOrModule: nodeDashRalLib.nodeDashRalMod.RalModule): scala.Unit = js.native

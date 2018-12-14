@@ -10,7 +10,7 @@ trait IgLayoutManagerItem
   extends /**
 	 * Option for IgLayoutManagerItem
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Column index of the item in the grid
   	 *

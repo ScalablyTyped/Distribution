@@ -25,19 +25,19 @@ class Spinner () extends js.Object {
 @JSImport("cli-spinner", "Spinner")
 @js.native
 object Spinner extends js.Object {
-  def setDefaultSpinnerDelay(spinnerDelay: scala.Double): ScalablyTyped.runtime.Instantiable1[
+  def setDefaultSpinnerDelay(spinnerDelay: scala.Double): org.scalablytyped.runtime.Instantiable1[
     /* titleOrOptions */ js.UndefOr[
       /* titleOrOptions */ java.lang.String | cliDashSpinnerLib.cliDashSpinnerMod.Options
     ], 
     cliDashSpinnerLib.cliDashSpinnerMod.Spinner
   ] = js.native
-  def setDefaultSpinnerString(spinnerString: java.lang.String): ScalablyTyped.runtime.Instantiable1[
+  def setDefaultSpinnerString(spinnerString: java.lang.String): org.scalablytyped.runtime.Instantiable1[
     /* titleOrOptions */ js.UndefOr[
       /* titleOrOptions */ java.lang.String | cliDashSpinnerLib.cliDashSpinnerMod.Options
     ], 
     cliDashSpinnerLib.cliDashSpinnerMod.Spinner
   ] = js.native
-  def setDefaultSpinnerString(spinnerString: scala.Double): ScalablyTyped.runtime.Instantiable1[
+  def setDefaultSpinnerString(spinnerString: scala.Double): org.scalablytyped.runtime.Instantiable1[
     /* titleOrOptions */ js.UndefOr[
       /* titleOrOptions */ java.lang.String | cliDashSpinnerLib.cliDashSpinnerMod.Options
     ], 

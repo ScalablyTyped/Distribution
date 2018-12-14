@@ -14,5 +14,5 @@ trait SVGCursorElement extends SVGElement {
 @JSGlobal("SVGCursorElement")
 @js.native
 object SVGCursorElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGCursorElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGCursorElement]
 

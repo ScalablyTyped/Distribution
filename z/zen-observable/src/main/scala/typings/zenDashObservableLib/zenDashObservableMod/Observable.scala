@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Observable[T] extends js.Object {
-  @JSName(ScalablyTyped.runtime.Symbol.observable)
+  @JSName(org.scalablytyped.runtime.Symbol.observable)
   var observable: js.Function0[Observable[T]] = js.native
   def concat[R](observable: Observable[R]*): Observable[R] = js.native
   def filter(callback: js.Function1[/* value */ T, scala.Boolean]): Observable[T] = js.native

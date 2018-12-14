@@ -270,6 +270,10 @@ trait Model extends js.Object {
   /** Gets or sets an object that indicates to customize the import behavior in the Spreadsheet.
                */
   var importSettings: js.UndefOr[ImportSettings] = js.undefined
+  /** Gets a value that indicates whether importing or not while loading the sheets in Spreadsheet.
+               * @Default {false}
+               */
+  var isImport: js.UndefOr[scala.Boolean] = js.undefined
   /** Gets or sets a value that indicates whether to enable or disable readonly support in the Spreadsheet.
                * @Default {false}
                */

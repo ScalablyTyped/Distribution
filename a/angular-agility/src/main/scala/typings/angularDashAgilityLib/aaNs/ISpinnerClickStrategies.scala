@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ISpinnerClickStrategies
-  extends /* strategyName */ ScalablyTyped.runtime.StringDictionary[
+  extends /* strategyName */ org.scalablytyped.runtime.StringDictionary[
       js.Function1[/* element */ angularLib.angularMod.angularNs.IAugmentedJQueryStatic, scala.Unit]
     ]
 

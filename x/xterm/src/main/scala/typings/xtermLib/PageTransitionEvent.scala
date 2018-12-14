@@ -13,5 +13,5 @@ trait PageTransitionEvent extends Event {
 @JSGlobal("PageTransitionEvent")
 @js.native
 object PageTransitionEvent
-  extends ScalablyTyped.runtime.Instantiable0[PageTransitionEvent]
+  extends org.scalablytyped.runtime.Instantiable0[PageTransitionEvent]
 

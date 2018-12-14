@@ -20,5 +20,5 @@ trait NodeIterator extends js.Object {
 @JSGlobal("NodeIterator")
 @js.native
 object NodeIterator
-  extends ScalablyTyped.runtime.Instantiable0[NodeIterator]
+  extends org.scalablytyped.runtime.Instantiable0[NodeIterator]
 

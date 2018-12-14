@@ -19,7 +19,7 @@ class namespaced () extends ScramSha1Mechanism {
   /* CompleteClass */
   override def challenge(chal: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
-  override def response(cred: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  override def response(cred: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   /* CompleteClass */
   override def response(cred: saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.ScramSha1MechanismNs.Credentials): java.lang.String = js.native
 }

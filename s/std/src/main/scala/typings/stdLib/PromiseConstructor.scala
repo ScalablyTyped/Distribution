@@ -13,7 +13,7 @@ trait PromiseConstructor
      * a resolve callback used to resolve the promise with a value or the result of another promise,
      * and a reject callback used to reject the promise with a provided reason or error.
      */
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       /* executor */ js.Function2[
         /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | js.Thenable[js.Object]], scala.Unit], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
@@ -21,7 +21,7 @@ ScalablyTyped.runtime.Instantiable1[
       ], 
       js.Promise[js.Object]
     ] {
-  @JSName(ScalablyTyped.runtime.Symbol.species)
+  @JSName(org.scalablytyped.runtime.Symbol.species)
   val species: PromiseConstructor = js.native
   /**
        * Creates a Promise that is resolved with an array of results when all of the provided Promises

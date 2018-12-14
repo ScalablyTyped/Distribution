@@ -11,5 +11,5 @@ trait SVGDescElement extends SVGElement
 @JSGlobal("SVGDescElement")
 @js.native
 object SVGDescElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGDescElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGDescElement]
 

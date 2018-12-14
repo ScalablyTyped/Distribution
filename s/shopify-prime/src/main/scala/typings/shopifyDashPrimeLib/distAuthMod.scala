@@ -40,14 +40,20 @@ object distAuthMod extends js.Object {
     state: java.lang.String,
     grants: js.Array[shopifyDashPrimeLib.distEnumsAuthUnderscoreGrantMod.AuthGrant]
   ): js.Promise[java.lang.String] = js.native
-  def isAuthenticProxyRequest(querystring: ScalablyTyped.runtime.StringDictionary[js.Any], shopifySecretKey: java.lang.String): js.Promise[scala.Boolean] = js.native
-  def isAuthenticRequest(querystring: ScalablyTyped.runtime.StringDictionary[js.Any], shopifySecretKey: java.lang.String): js.Promise[scala.Boolean] = js.native
-  def isAuthenticWebhook(
-    headers: ScalablyTyped.runtime.StringDictionary[js.Any],
-    requestBody: java.lang.String,
+  def isAuthenticProxyRequest(
+    querystring: org.scalablytyped.runtime.StringDictionary[js.Any],
+    shopifySecretKey: java.lang.String
+  ): js.Promise[scala.Boolean] = js.native
+  def isAuthenticRequest(
+    querystring: org.scalablytyped.runtime.StringDictionary[js.Any],
     shopifySecretKey: java.lang.String
   ): js.Promise[scala.Boolean] = js.native
   def isAuthenticWebhook(headers: java.lang.String, requestBody: java.lang.String, shopifySecretKey: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def isAuthenticWebhook(
+    headers: org.scalablytyped.runtime.StringDictionary[js.Any],
+    requestBody: java.lang.String,
+    shopifySecretKey: java.lang.String
+  ): js.Promise[scala.Boolean] = js.native
   def isValidShopifyDomain(shopifyDomain: java.lang.String): js.Promise[scala.Boolean] = js.native
 }
 

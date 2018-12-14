@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait i18nextkoResourceStore
-  extends /* language */ ScalablyTyped.runtime.StringDictionary[i18nextDashKoLib.Anon_Translation]
+  extends /* language */ org.scalablytyped.runtime.StringDictionary[i18nextDashKoLib.Anon_Translation]
 

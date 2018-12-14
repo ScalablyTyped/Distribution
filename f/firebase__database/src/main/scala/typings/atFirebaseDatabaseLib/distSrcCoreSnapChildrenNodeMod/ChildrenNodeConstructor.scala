@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ChildrenNodeConstructor
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* children_ */ atFirebaseDatabaseLib.distSrcCoreUtilSortedMapMod.SortedMap[java.lang.String, atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node], 
       (/* priorityNode_ */ atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node) | (/* priorityNode_ */ scala.Null), 
       /* indexMap_ */ atFirebaseDatabaseLib.distSrcCoreSnapIndexMapMod.IndexMap, 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("jsonwebtoken", JSImport.Namespace)
 @js.native
 object jsonwebtokenModMembers extends js.Object {
-  def decode(token: java.lang.String): scala.Null | ScalablyTyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
-  def decode(token: java.lang.String, options: DecodeOptions): scala.Null | ScalablyTyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
+  def decode(token: java.lang.String): scala.Null | org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
+  def decode(token: java.lang.String, options: DecodeOptions): scala.Null | org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
   def sign(payload: java.lang.String, secretOrPrivateKey: Secret): java.lang.String = js.native
   def sign(payload: java.lang.String, secretOrPrivateKey: Secret, callback: SignCallback): scala.Unit = js.native
   def sign(payload: java.lang.String, secretOrPrivateKey: Secret, options: SignOptions): java.lang.String = js.native

@@ -15,7 +15,7 @@ class ParticleContainer ()
   def this(maxSize: scala.Double, properties: ParticleContainerProperties, batchSize: scala.Double, autoResize: scala.Boolean) = this()
   var _batchSize: scala.Double = js.native
   var _bufferUpdateIDs: js.Array[scala.Double] = js.native
-  var _glBuffers: ScalablyTyped.runtime.NumberDictionary[stdLib.WebGLBuffer] = js.native
+  var _glBuffers: org.scalablytyped.runtime.NumberDictionary[stdLib.WebGLBuffer] = js.native
   var _maxSize: scala.Double = js.native
   var _properties: js.Array[scala.Boolean] = js.native
   var _tint: scala.Double = js.native

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait InverseCodesMap
-  extends /* key */ ScalablyTyped.runtime.NumberDictionary[java.lang.String]
+  extends /* key */ org.scalablytyped.runtime.NumberDictionary[java.lang.String]
 

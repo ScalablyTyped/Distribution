@@ -144,5 +144,5 @@ trait HTMLTextAreaElement extends HTMLElement {
 @JSGlobal("HTMLTextAreaElement")
 @js.native
 object HTMLTextAreaElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLTextAreaElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLTextAreaElement]
 

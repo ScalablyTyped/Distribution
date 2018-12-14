@@ -26,7 +26,7 @@ trait SVGTextContentElement extends SVGGraphicsElement {
 @JSGlobal("SVGTextContentElement")
 @js.native
 object SVGTextContentElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGTextContentElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGTextContentElement] {
   val LENGTHADJUST_SPACING: scala.Double = js.native
   val LENGTHADJUST_SPACINGANDGLYPHS: scala.Double = js.native
   val LENGTHADJUST_UNKNOWN: scala.Double = js.native

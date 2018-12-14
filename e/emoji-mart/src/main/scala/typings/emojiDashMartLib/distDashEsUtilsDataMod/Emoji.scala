@@ -39,7 +39,7 @@ trait Emoji extends js.Object {
   var sheet_x: js.UndefOr[scala.Double] = js.undefined
   var sheet_y: js.UndefOr[scala.Double] = js.undefined
   var short_names: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var skin_variations: js.UndefOr[ScalablyTyped.runtime.StringDictionary[SkinVariation]] = js.undefined
+  var skin_variations: js.UndefOr[org.scalablytyped.runtime.StringDictionary[SkinVariation]] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
   var unified: js.UndefOr[java.lang.String] = js.undefined
 }

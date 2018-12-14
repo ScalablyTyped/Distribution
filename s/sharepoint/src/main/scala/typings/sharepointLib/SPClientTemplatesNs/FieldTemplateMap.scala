@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FieldTemplateMap
-  extends /* fieldInternalName */ ScalablyTyped.runtime.StringDictionary[FieldTemplateOverrides]
+  extends /* fieldInternalName */ org.scalablytyped.runtime.StringDictionary[FieldTemplateOverrides]
 

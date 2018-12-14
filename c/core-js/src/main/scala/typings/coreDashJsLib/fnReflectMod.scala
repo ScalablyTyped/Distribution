@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/reflect", JSImport.Namespace)
 @js.native
 object fnReflectMod
-  extends ScalablyTyped.runtime.TopLevel[Anon_GetMetadata]
+  extends org.scalablytyped.runtime.TopLevel[Anon_GetMetadata]
 

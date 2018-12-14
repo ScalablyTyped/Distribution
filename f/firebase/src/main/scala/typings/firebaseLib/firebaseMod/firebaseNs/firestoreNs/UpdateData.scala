@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait UpdateData
-  extends /* fieldPath */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* fieldPath */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

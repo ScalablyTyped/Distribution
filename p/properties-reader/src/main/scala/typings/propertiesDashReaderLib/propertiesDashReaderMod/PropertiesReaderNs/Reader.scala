@@ -15,7 +15,7 @@ trait Reader extends js.Object {
     scope: T
   ): Reader = js.native
   def get(propertyName: java.lang.String): Value | scala.Null = js.native
-  def getAllProperties(): ScalablyTyped.runtime.StringDictionary[Value] = js.native
+  def getAllProperties(): org.scalablytyped.runtime.StringDictionary[Value] = js.native
   def getRaw(propertyName: java.lang.String): java.lang.String | scala.Null = js.native
   def path(): js.Object = js.native
   def read(properties: java.lang.String): Reader = js.native

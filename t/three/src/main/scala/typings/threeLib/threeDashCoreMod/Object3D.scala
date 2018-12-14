@@ -85,7 +85,7 @@ class Object3D () extends EventDispatcher {
   /**
        * An object that can be used to store custom data about the Object3d. It should not hold references to functions as these will not be cloned.
        */
-  var userData: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var userData: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        *
        */

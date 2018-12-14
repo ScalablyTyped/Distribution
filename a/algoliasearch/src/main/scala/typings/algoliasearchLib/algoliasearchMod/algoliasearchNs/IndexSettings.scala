@@ -195,7 +195,7 @@ trait IndexSettings extends js.Object {
        * default: {}
        * https://github.com/algolia/algoliasearch-client-js#placeholders
        */
-  var placeholders: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
+  var placeholders: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
   /**
        * Selects how the query words are interpreted
        * default: 'prefixLast'

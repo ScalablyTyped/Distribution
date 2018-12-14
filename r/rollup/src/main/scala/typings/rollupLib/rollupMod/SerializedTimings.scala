@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SerializedTimings
-  extends /* label */ ScalablyTyped.runtime.StringDictionary[js.Tuple3[scala.Double, scala.Double, scala.Double]]
+  extends /* label */ org.scalablytyped.runtime.StringDictionary[js.Tuple3[scala.Double, scala.Double, scala.Double]]
 

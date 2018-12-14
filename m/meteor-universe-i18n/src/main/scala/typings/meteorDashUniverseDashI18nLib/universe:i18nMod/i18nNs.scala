@@ -31,7 +31,7 @@ object i18nNs extends js.Object {
   def addTranslations(locale: java.lang.String, namespace: java.lang.String, translationsMap: js.Object): scala.Unit = js.native
   def addTranslations(locale: java.lang.String, translationsMap: js.Object): scala.Unit = js.native
   // component functions
-  def createComponent(): ScalablyTyped.runtime.Instantiable0[
+  def createComponent(): org.scalablytyped.runtime.Instantiable0[
     reactLib.reactMod.Component[
       meteorDashUniverseDashI18nLib.`universe:i18nMod`.ReactComponentProps, 
       js.Object, 
@@ -39,7 +39,7 @@ object i18nNs extends js.Object {
     ]
   ] = js.native
   // component functions
-  def createComponent(translator: meteorDashUniverseDashI18nLib.`universe:i18nMod`.Translator): ScalablyTyped.runtime.Instantiable0[
+  def createComponent(translator: meteorDashUniverseDashI18nLib.`universe:i18nMod`.Translator): org.scalablytyped.runtime.Instantiable0[
     reactLib.reactMod.Component[
       meteorDashUniverseDashI18nLib.`universe:i18nMod`.ReactComponentProps, 
       js.Object, 
@@ -47,7 +47,7 @@ object i18nNs extends js.Object {
     ]
   ] = js.native
   // component functions
-  def createComponent(translator: meteorDashUniverseDashI18nLib.`universe:i18nMod`.Translator, locale: java.lang.String): ScalablyTyped.runtime.Instantiable0[
+  def createComponent(translator: meteorDashUniverseDashI18nLib.`universe:i18nMod`.Translator, locale: java.lang.String): org.scalablytyped.runtime.Instantiable0[
     reactLib.reactMod.Component[
       meteorDashUniverseDashI18nLib.`universe:i18nMod`.ReactComponentProps, 
       js.Object, 
@@ -59,7 +59,7 @@ object i18nNs extends js.Object {
     translator: meteorDashUniverseDashI18nLib.`universe:i18nMod`.Translator,
     locale: java.lang.String,
     reactjs: reactLib.reactMod.ReactNs.ReactInstance
-  ): ScalablyTyped.runtime.Instantiable0[
+  ): org.scalablytyped.runtime.Instantiable0[
     reactLib.reactMod.Component[
       meteorDashUniverseDashI18nLib.`universe:i18nMod`.ReactComponentProps, 
       js.Object, 
@@ -72,14 +72,14 @@ object i18nNs extends js.Object {
     locale: java.lang.String,
     reactjs: reactLib.reactMod.ReactNs.ReactInstance,
     `type`: js.Any
-  ): ScalablyTyped.runtime.Instantiable0[
+  ): org.scalablytyped.runtime.Instantiable0[
     reactLib.reactMod.Component[
       meteorDashUniverseDashI18nLib.`universe:i18nMod`.ReactComponentProps, 
       js.Object, 
       js.Any
     ]
   ] = js.native
-  def createReactiveTranslator(namespace: java.lang.String, locale: java.lang.String): ScalablyTyped.runtime.Instantiable0[reactLib.reactMod.Component[js.Object, js.Object, js.Any]] = js.native
+  def createReactiveTranslator(namespace: java.lang.String, locale: java.lang.String): org.scalablytyped.runtime.Instantiable0[reactLib.reactMod.Component[js.Object, js.Object, js.Any]] = js.native
   // translator functions
   def createTranslator(namespace: java.lang.String): meteorDashUniverseDashI18nLib.`universe:i18nMod`.Translator = js.native
   // translator functions

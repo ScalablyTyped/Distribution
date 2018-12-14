@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/language/visitor", "QueryDocumentKeys")
 @js.native
 object QueryDocumentKeys
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 

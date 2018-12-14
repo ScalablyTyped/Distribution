@@ -28,7 +28,7 @@ class Watcher ()
   /**
                * Returns an object representing all the paths on the file system being watched by this watcher
                */
-  def getWatched(): ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
+  def getWatched(): org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   def on(
     event: adoneLib.adoneNs.fsNs.INs.WatcherNs.Event,
     callback: js.Function2[

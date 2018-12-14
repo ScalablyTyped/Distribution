@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("iban", JSImport.Namespace)
 @js.native
 object ibanMod
-  extends ScalablyTyped.runtime.TopLevel[IBANStatic]
+  extends org.scalablytyped.runtime.TopLevel[IBANStatic]
 

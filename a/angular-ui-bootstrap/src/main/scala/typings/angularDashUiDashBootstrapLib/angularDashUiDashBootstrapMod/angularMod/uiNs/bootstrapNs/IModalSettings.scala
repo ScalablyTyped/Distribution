@@ -93,7 +93,7 @@ trait IModalSettings extends js.Object {
                * If property value is an array, it must be in Inline Array Annotation format for injection (strings followed by factory method)
                */
   var resolve: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       java.lang.String | angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) | js.Object
     ]
   ] = js.undefined

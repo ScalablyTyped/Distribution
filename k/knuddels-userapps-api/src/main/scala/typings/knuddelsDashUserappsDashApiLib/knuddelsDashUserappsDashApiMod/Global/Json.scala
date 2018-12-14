@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Json
-  extends /* x */ ScalablyTyped.runtime.StringDictionary[
+  extends /* x */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.JsonData]
     ]
 

@@ -12,5 +12,5 @@ trait RoomTerrainConstructor
      * Get room terrain for the specified room. This method works for any room in the world even if you have no access to it.
      * @param roomName String name of the room.
      */
-ScalablyTyped.runtime.Instantiable1[/* roomName */ java.lang.String, RoomTerrain]
+org.scalablytyped.runtime.Instantiable1[/* roomName */ java.lang.String, RoomTerrain]
 

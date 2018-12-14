@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MetadataMap
-  extends /* propertyNameOrArgumentIndex */ ScalablyTyped.runtime.StringDictionary[js.Array[Metadata]]
+  extends /* propertyNameOrArgumentIndex */ org.scalablytyped.runtime.StringDictionary[js.Array[Metadata]]
 

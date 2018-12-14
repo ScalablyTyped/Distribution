@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EnginePrototype[T]
-  extends ScalablyTyped.runtime.Instantiable1[/* settings */ ClientOptions, ClientApi[T]]
+  extends org.scalablytyped.runtime.Instantiable1[/* settings */ ClientOptions, ClientApi[T]]
 

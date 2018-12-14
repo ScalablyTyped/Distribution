@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SystemConstructor[T /* <: js.Object */]
-  extends ScalablyTyped.runtime.Instantiable1[/* scene */ Scene, T with System[_]]
+  extends org.scalablytyped.runtime.Instantiable1[/* scene */ Scene, T with System[_]]
 

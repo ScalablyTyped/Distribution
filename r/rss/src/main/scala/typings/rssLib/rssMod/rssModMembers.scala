@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rss", JSImport.Namespace)
 @js.native
 object rssModMembers
-  extends ScalablyTyped.runtime.TopLevel[rssLib.rssMod.NodeRSSNs.RSSFactory]
+  extends org.scalablytyped.runtime.TopLevel[rssLib.rssMod.NodeRSSNs.RSSFactory]
 

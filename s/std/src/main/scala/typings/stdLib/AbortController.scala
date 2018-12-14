@@ -21,5 +21,5 @@ trait AbortController extends js.Object {
 @JSGlobal("AbortController")
 @js.native
 object AbortController
-  extends ScalablyTyped.runtime.Instantiable0[AbortController]
+  extends org.scalablytyped.runtime.Instantiable0[AbortController]
 

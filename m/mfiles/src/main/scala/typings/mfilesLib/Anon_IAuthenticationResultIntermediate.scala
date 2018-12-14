@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IAuthenticationResultIntermediate
-  extends ScalablyTyped.runtime.Instantiable0[IAuthenticationResultIntermediate]
+  extends org.scalablytyped.runtime.Instantiable0[IAuthenticationResultIntermediate]
 

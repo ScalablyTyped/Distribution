@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CommandLineOptions
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Command-line arguments not parsed by `commandLineArgs`.
            */

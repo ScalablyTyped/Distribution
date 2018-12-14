@@ -25,7 +25,7 @@ trait Model[T /* <: Document */, QueryHelpers]
      *   Model#ensureIndexes. If an error occurred it is passed with the event.
      *   The fields, options, and index name are also passed.
      */
-ScalablyTyped.runtime.Instantiable0[T]
+org.scalablytyped.runtime.Instantiable0[T]
      with /**
      * Model constructor
      * Provides the interface to MongoDB collections as well as creates document instances.
@@ -42,7 +42,7 @@ ScalablyTyped.runtime.Instantiable0[T]
      *   Model#ensureIndexes. If an error occurred it is passed with the event.
      *   The fields, options, and index name are also passed.
      */
-ScalablyTyped.runtime.Instantiable1[/* doc */ js.Any, T] {
+org.scalablytyped.runtime.Instantiable1[/* doc */ js.Any, T] {
   /**
        * Creates a Query and specifies a $where condition.
        * @param argument is a javascript string or anonymous function

@@ -74,7 +74,7 @@ object IoT1ClickDevicesServiceNs extends js.Object {
   
   
   trait DeviceAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[__string]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   
   trait DeviceDescription extends js.Object {

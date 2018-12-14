@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "swig-email-templates"
-version := "5.0-dt-20181018Z-7a09d1"
+version := "5.0-dt-20181018Z-993994"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181214Z-702232",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-27b737",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "swig" % "0.0-unknown-dt-20180910Z-b45d43")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181214Z-7b71e9",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-e65330",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
+  "org.scalablytyped" %%% "swig" % "0.0-unknown-dt-20180910Z-838571")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

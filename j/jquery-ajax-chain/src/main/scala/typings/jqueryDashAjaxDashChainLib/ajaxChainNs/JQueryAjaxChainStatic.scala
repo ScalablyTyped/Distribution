@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 @js.native
 trait JQueryAjaxChainStatic
-  extends ScalablyTyped.runtime.Instantiable0[JQueryAjaxChain]
+  extends org.scalablytyped.runtime.Instantiable0[JQueryAjaxChain]
 

@@ -10,7 +10,7 @@ trait IgLayoutManagerGridLayout
   extends /**
 	 * Option for IgLayoutManagerGridLayout
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies the duration of the animations in the layout manager"s grid layout
   	 *

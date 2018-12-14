@@ -38,7 +38,7 @@ trait ChartOptions extends js.Object {
     js.ThisFunction1[/* this */ chartDotJsLib.chartDotJsMod.Chart, /* newSize */ ChartSize, scala.Unit]
   ] = js.undefined
   // Plugins can require any options
-  var plugins: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var plugins: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var responsive: js.UndefOr[scala.Boolean] = js.undefined
   var responsiveAnimationDuration: js.UndefOr[scala.Double] = js.undefined
   var rotation: js.UndefOr[scala.Double] = js.undefined

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Renderers
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | Renderer[_]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | Renderer[_]]
 

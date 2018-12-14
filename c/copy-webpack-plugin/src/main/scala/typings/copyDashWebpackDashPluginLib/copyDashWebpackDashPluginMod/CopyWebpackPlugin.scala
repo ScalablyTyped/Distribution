@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CopyWebpackPlugin
-  extends ScalablyTyped.runtime.Instantiable0[webpackLib.webpackMod.Plugin]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.Plugin]
+     with org.scalablytyped.runtime.Instantiable1[
       /* patterns */ js.Array[java.lang.String | CopyPattern], 
       webpackLib.webpackMod.Plugin
     ]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* patterns */ js.Array[java.lang.String | CopyPattern], 
       /* options */ CopyWebpackPluginConfiguration, 
       webpackLib.webpackMod.Plugin

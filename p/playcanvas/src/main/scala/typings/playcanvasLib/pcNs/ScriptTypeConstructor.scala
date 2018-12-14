@@ -23,8 +23,8 @@ import scala.scalajs.js.annotation._
     */
 @js.native
 trait ScriptTypeConstructor[S /* <: ScriptType */]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
-     with ScalablyTyped.runtime.Instantiable1[/* args */ playcanvasLib.Anon_Entity, S] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
+     with org.scalablytyped.runtime.Instantiable1[/* args */ playcanvasLib.Anon_Entity, S] {
   /**
            * @private
            * @readonly
@@ -72,7 +72,10 @@ trait ScriptTypeConstructor[S /* <: ScriptType */]
            * })
            */
   var extend: js.UndefOr[
-    js.Function1[/* methods */ ScalablyTyped.runtime.StringDictionary[js.Function0[_]], scala.Unit]
+    js.Function1[
+      /* methods */ org.scalablytyped.runtime.StringDictionary[js.Function0[_]], 
+      scala.Unit
+    ]
   ] = js.native
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("js-money/lib/currency", JSImport.Namespace)
 @js.native
 object libCurrencyModMembers
-  extends ScalablyTyped.runtime.TopLevel[jsDashMoneyLib.libCurrencyMod.CurrenciesNs.Currencies]
+  extends org.scalablytyped.runtime.TopLevel[jsDashMoneyLib.libCurrencyMod.CurrenciesNs.Currencies]
 

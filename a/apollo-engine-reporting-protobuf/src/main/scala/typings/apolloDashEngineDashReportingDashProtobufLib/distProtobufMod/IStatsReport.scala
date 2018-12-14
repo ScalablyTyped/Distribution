@@ -14,11 +14,11 @@ trait IStatsReport extends js.Object {
   /** StatsReport header */
   var header: js.UndefOr[IReportHeader | scala.Null] = js.undefined
   /** StatsReport legacyPerQueryImplicitOperationName */
-  var legacyPerQueryImplicitOperationName: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IQueryStats] | scala.Null] = js.undefined
+  var legacyPerQueryImplicitOperationName: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IQueryStats] | scala.Null] = js.undefined
   /** StatsReport memStats */
   var memStats: js.UndefOr[IMemStats | scala.Null] = js.undefined
   /** StatsReport perQuery */
-  var perQuery: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IQueryStats] | scala.Null] = js.undefined
+  var perQuery: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IQueryStats] | scala.Null] = js.undefined
   /** StatsReport realtimeDuration */
   var realtimeDuration: js.UndefOr[scala.Double | scala.Null] = js.undefined
   /** StatsReport startTime */

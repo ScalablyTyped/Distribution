@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TReactCSSThemrTheme
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Object]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Object]
 

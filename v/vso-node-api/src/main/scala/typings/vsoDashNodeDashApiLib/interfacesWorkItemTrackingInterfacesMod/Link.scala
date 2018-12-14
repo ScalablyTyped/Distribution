@@ -10,7 +10,7 @@ trait Link extends js.Object {
   /**
        * Collection of link attributes.
        */
-  var attributes: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var attributes: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * Relation type.
        */

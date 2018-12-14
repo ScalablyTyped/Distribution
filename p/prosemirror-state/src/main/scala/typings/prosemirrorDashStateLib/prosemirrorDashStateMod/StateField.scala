@@ -13,7 +13,7 @@ trait StateField[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
      */
   var fromJSON: js.UndefOr[
     (js.Function3[
-      /* config */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+      /* config */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       /* value */ js.Any, 
       /* state */ EditorState[S], 
       T
@@ -38,6 +38,6 @@ trait StateField[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
      * that `instance` is a half-initialized state instance, and will
      * not have values for plugin fields initialized after this one.
      */
-  def init(config: ScalablyTyped.runtime.StringDictionary[js.Any], instance: EditorState[S]): T
+  def init(config: org.scalablytyped.runtime.StringDictionary[js.Any], instance: EditorState[S]): T
 }
 

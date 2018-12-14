@@ -49,7 +49,7 @@ trait ReactTagsProps extends js.Object {
   /**
        * An object containing additional attributes that will be applied to the underlying <input /> field.
        */
-  var inputAttributes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var inputAttributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
        * Maximum number of suggestions to display. Default: 6.
        */

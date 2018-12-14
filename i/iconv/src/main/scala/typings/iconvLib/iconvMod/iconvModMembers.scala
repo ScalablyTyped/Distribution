@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("iconv", JSImport.Namespace)
 @js.native
 object iconvModMembers
-  extends ScalablyTyped.runtime.TopLevel[iconvLib.iconvMod.IconvNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[iconvLib.iconvMod.IconvNs.Static]
 

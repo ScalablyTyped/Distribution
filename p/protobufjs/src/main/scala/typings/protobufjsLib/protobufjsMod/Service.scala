@@ -21,9 +21,9 @@ class Service protected () extends NamespaceBase {
        * @param [options] Service options
        * @throws {TypeError} If arguments are invalid
        */
-  def this(name: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /** Service methods. */
-  var methods: ScalablyTyped.runtime.StringDictionary[Method] = js.native
+  var methods: org.scalablytyped.runtime.StringDictionary[Method] = js.native
   /** Methods of this service as an array for iteration. */
   val methodsArray: js.Array[Method] = js.native
   /**

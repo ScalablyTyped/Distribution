@@ -16478,7 +16478,7 @@ class Functions ()
            * @param timeText Is a text string that gives a time in any one of the Microsoft Excel time formats (date information in the string is ignored).
            */
   def timevalue(timeText: scala.Double): FunctionResult[scala.Double] = js.native
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
            *
            * Returns the current date formatted as a date.

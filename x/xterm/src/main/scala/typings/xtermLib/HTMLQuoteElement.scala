@@ -16,5 +16,5 @@ trait HTMLQuoteElement extends HTMLElement {
 @JSGlobal("HTMLQuoteElement")
 @js.native
 object HTMLQuoteElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLQuoteElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLQuoteElement]
 

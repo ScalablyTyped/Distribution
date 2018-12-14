@@ -21,9 +21,9 @@ trait Response
 @JSGlobal("Response")
 @js.native
 object Response
-  extends ScalablyTyped.runtime.Instantiable0[Response]
-     with ScalablyTyped.runtime.Instantiable1[/* body */ `BodyInit_`, Response]
-     with ScalablyTyped.runtime.Instantiable2[/* body */ `BodyInit_`, /* init */ ResponseInit, Response] {
+  extends org.scalablytyped.runtime.Instantiable0[Response]
+     with org.scalablytyped.runtime.Instantiable1[/* body */ `BodyInit_`, Response]
+     with org.scalablytyped.runtime.Instantiable2[/* body */ `BodyInit_`, /* init */ ResponseInit, Response] {
   var error: js.Function0[reactDashNativeLib.Response] = js.native
   var redirect: js.Function2[
     /* url */ java.lang.String, 

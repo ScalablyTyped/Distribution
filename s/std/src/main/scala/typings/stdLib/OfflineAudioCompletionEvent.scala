@@ -13,7 +13,7 @@ trait OfflineAudioCompletionEvent extends Event {
 @JSGlobal("OfflineAudioCompletionEvent")
 @js.native
 object OfflineAudioCompletionEvent
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ OfflineAudioCompletionEventInit, 
       OfflineAudioCompletionEvent

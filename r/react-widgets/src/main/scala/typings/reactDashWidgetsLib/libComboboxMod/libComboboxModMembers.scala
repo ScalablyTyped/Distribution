@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-widgets/lib/Combobox", JSImport.Namespace)
 @js.native
 object libComboboxModMembers
-  extends ScalablyTyped.runtime.TopLevel[ComboBoxClass]
+  extends org.scalablytyped.runtime.TopLevel[ComboBoxClass]
 

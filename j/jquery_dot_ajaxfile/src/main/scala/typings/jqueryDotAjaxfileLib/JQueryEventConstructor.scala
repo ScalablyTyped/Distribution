@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait JQueryEventConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, JQueryEventObject]
-     with ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* eventProperties */ js.Any, JQueryEventObject] {
+  extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, JQueryEventObject]
+     with org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* eventProperties */ js.Any, JQueryEventObject] {
   def apply(name: java.lang.String): JQueryEventObject = js.native
   def apply(name: java.lang.String, eventProperties: js.Any): JQueryEventObject = js.native
 }

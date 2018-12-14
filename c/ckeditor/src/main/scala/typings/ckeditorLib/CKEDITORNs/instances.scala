@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.instances")
 @js.native
 object instances
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[editor]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[editor]
 

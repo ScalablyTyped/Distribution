@@ -44,5 +44,5 @@ trait HTMLFrameSetElement
 @JSGlobal("HTMLFrameSetElement")
 @js.native
 object HTMLFrameSetElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLFrameSetElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLFrameSetElement]
 

@@ -33,7 +33,7 @@ package object graspNs {
     /* getRaw */ js.Function1[/* node */ estreeLib.estreeMod.Node, java.lang.String], 
     /* node */ estreeLib.estreeMod.Node, 
     /* query */ js.Function1[/* q */ java.lang.String, js.Array[estreeLib.estreeMod.Node]], 
-    /* named */ ScalablyTyped.runtime.StringDictionary[java.lang.String | estreeLib.estreeMod.Node], 
+    /* named */ org.scalablytyped.runtime.StringDictionary[java.lang.String | estreeLib.estreeMod.Node], 
     java.lang.String
   ])
 }

@@ -10,7 +10,7 @@ trait IgGridAppendRowsOnDemandLocale
   extends /**
 	 * Option for IgGridAppendRowsOnDemandLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies caption text for the "load more data" button.
   	 *

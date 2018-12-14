@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IOpenJsCadOptionsMap
-  extends /* modelId */ ScalablyTyped.runtime.StringDictionary[IOpenJsCadOptions]
+  extends /* modelId */ org.scalablytyped.runtime.StringDictionary[IOpenJsCadOptions]
 

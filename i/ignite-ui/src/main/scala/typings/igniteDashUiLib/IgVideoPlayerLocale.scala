@@ -10,7 +10,7 @@ trait IgVideoPlayerLocale
   extends /**
 	 * Option for IgVideoPlayerLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets ad message text.
   	 *

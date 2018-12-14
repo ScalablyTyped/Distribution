@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait TaskAgentJobRequest extends js.Object {
   var assignTime: stdLib.Date
-  var data: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var data: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var definition: TaskOrchestrationOwner
   var demands: js.Array[_]
   var finishTime: stdLib.Date

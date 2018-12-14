@@ -13,5 +13,5 @@ trait RTCIceGathererEvent extends Event {
 @JSGlobal("RTCIceGathererEvent")
 @js.native
 object RTCIceGathererEvent
-  extends ScalablyTyped.runtime.Instantiable0[RTCIceGathererEvent]
+  extends org.scalablytyped.runtime.Instantiable0[RTCIceGathererEvent]
 

@@ -49,7 +49,7 @@ trait NavigationRouter[State, Options] extends js.Object {
      */
   def getScreenOptions(
     navigation: NavigationScreenProp[NavigationRoute[_], NavigationParams],
-    screenProps: ScalablyTyped.runtime.StringDictionary[js.Any]
+    screenProps: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Options = js.native
   /**
      * The reducer that outputs the new navigation state for a given action, with

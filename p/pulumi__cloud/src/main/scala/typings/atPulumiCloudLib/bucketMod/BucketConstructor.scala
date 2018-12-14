@@ -13,14 +13,14 @@ trait BucketConstructor
      * @param name A unique name for the bucket.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Bucket]
+org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Bucket]
      with /**
      * Creates a new Bucket.
      *
      * @param name A unique name for the bucket.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* name */ java.lang.String, 
       /* opts */ atPulumiPulumiLib.resourceMod.ResourceOptions, 
       Bucket

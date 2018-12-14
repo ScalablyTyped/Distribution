@@ -13,7 +13,7 @@ abstract class Project protected ()
   @JSName("config")
   val config_Project: ProjectConfig = js.native
   val e: ProjectDeps = js.native
-  var originalConfigFile: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  var originalConfigFile: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val packageJsonPath: java.lang.String = js.native
   /* protected */ def getIntegrations(): js.Promise[js.Array[ionicLib.definitionsMod.IIntegration]] = js.native
 }

@@ -28,5 +28,5 @@ trait MediaKeySession extends EventTarget {
 @JSGlobal("MediaKeySession")
 @js.native
 object MediaKeySession
-  extends ScalablyTyped.runtime.Instantiable0[MediaKeySession]
+  extends org.scalablytyped.runtime.Instantiable0[MediaKeySession]
 

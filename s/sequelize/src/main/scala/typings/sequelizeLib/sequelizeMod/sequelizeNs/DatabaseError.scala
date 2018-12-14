@@ -11,5 +11,5 @@ trait DatabaseError
      with /**
          * A base class for all database related errors.
          */
-ScalablyTyped.runtime.Instantiable1[/* parent */ nodeLib.Error, DatabaseError]
+org.scalablytyped.runtime.Instantiable1[/* parent */ nodeLib.Error, DatabaseError]
 

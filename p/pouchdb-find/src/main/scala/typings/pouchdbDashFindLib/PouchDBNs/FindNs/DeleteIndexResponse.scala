@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait DeleteIndexResponse[Content /* <: js.Object */]
-  extends /* propertyName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

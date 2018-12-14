@@ -16,5 +16,5 @@ trait PerformanceObserverEntryList extends js.Object {
 @JSGlobal("PerformanceObserverEntryList")
 @js.native
 object PerformanceObserverEntryList
-  extends ScalablyTyped.runtime.Instantiable0[PerformanceObserverEntryList]
+  extends org.scalablytyped.runtime.Instantiable0[PerformanceObserverEntryList]
 

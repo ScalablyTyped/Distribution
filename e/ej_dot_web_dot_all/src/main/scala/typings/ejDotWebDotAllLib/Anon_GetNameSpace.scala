@@ -7,410 +7,410 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_GetNameSpace extends js.Object {
-  var Accordion: ScalablyTyped.runtime.Instantiable2[
+  var Accordion: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.AccordionNs.Model], 
     ejDotWebDotAllLib.ejNs.Accordion
   ] = js.native
-  var Adaptor: ScalablyTyped.runtime.Instantiable1[/* ds */ js.Any, ejDotWebDotAllLib.ejNs.Adaptor] = js.native
-  var Autocomplete: ScalablyTyped.runtime.Instantiable2[
+  var Adaptor: org.scalablytyped.runtime.Instantiable1[/* ds */ js.Any, ejDotWebDotAllLib.ejNs.Adaptor] = js.native
+  var Autocomplete: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.AutocompleteNs.Model], 
     ejDotWebDotAllLib.ejNs.Autocomplete
   ] = js.native
-  var Button: ScalablyTyped.runtime.Instantiable2[
+  var Button: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ButtonNs.Model], 
     ejDotWebDotAllLib.ejNs.Button
   ] = js.native
-  var CacheAdaptor: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.CacheAdaptor] = js.native
-  var Calculate: ScalablyTyped.runtime.Instantiable2[
+  var CacheAdaptor: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.CacheAdaptor] = js.native
+  var Calculate: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.CalculateNs.Model], 
     ejDotWebDotAllLib.ejNs.Calculate
   ] = js.native
-  var Captcha: ScalablyTyped.runtime.Instantiable2[
+  var Captcha: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.CaptchaNs.Model], 
     ejDotWebDotAllLib.ejNs.Captcha
   ] = js.native
-  var CheckBox: ScalablyTyped.runtime.Instantiable2[
+  var CheckBox: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.CheckBoxNs.Model], 
     ejDotWebDotAllLib.ejNs.CheckBox
   ] = js.native
-  var ColorPicker: ScalablyTyped.runtime.Instantiable2[
+  var ColorPicker: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ColorPickerNs.Model], 
     ejDotWebDotAllLib.ejNs.ColorPicker
   ] = js.native
-  var ComboBox: ScalablyTyped.runtime.Instantiable2[
+  var ComboBox: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ComboBoxNs.Model], 
     ejDotWebDotAllLib.ejNs.ComboBox
   ] = js.native
-  var CurrencyTextbox: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.CurrencyTextbox] = js.native
-  var DataManager: ScalablyTyped.runtime.Instantiable3[
+  var CurrencyTextbox: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.CurrencyTextbox] = js.native
+  var DataManager: org.scalablytyped.runtime.Instantiable3[
     /* dataSource */ js.UndefOr[/* dataSource */ js.Any], 
     /* query */ js.UndefOr[/* query */ ejDotWebDotAllLib.ejNs.Query], 
     /* adaptor */ js.UndefOr[/* adaptor */ js.Any], 
     ejDotWebDotAllLib.ejNs.DataManager
   ] = js.native
-  var DatePicker: ScalablyTyped.runtime.Instantiable2[
+  var DatePicker: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.DatePickerNs.Model], 
     ejDotWebDotAllLib.ejNs.DatePicker
   ] = js.native
-  var DateRangePicker: ScalablyTyped.runtime.Instantiable2[
+  var DateRangePicker: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.DateRangePickerNs.Model], 
     ejDotWebDotAllLib.ejNs.DateRangePicker
   ] = js.native
-  var DateTimePicker: ScalablyTyped.runtime.Instantiable2[
+  var DateTimePicker: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.DateTimePickerNs.Model], 
     ejDotWebDotAllLib.ejNs.DateTimePicker
   ] = js.native
-  var Dialog: ScalablyTyped.runtime.Instantiable2[
+  var Dialog: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.DialogNs.Model], 
     ejDotWebDotAllLib.ejNs.Dialog
   ] = js.native
-  var DocumentEditor: ScalablyTyped.runtime.Instantiable2[
+  var DocumentEditor: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.DocumentEditorNs.Model], 
     ejDotWebDotAllLib.ejNs.DocumentEditor
   ] = js.native
-  var Draggable: ScalablyTyped.runtime.Instantiable2[
+  var Draggable: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.DraggableNs.Model], 
     ejDotWebDotAllLib.ejNs.Draggable
   ] = js.native
-  var DropDownList: ScalablyTyped.runtime.Instantiable2[
+  var DropDownList: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.DropDownListNs.Model], 
     ejDotWebDotAllLib.ejNs.DropDownList
   ] = js.native
-  var DropDownTree: ScalablyTyped.runtime.Instantiable2[
+  var DropDownTree: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.DropDownTreeNs.Model], 
     ejDotWebDotAllLib.ejNs.DropDownTree
   ] = js.native
-  var Droppable: ScalablyTyped.runtime.Instantiable2[
+  var Droppable: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.DroppableNs.Model], 
     ejDotWebDotAllLib.ejNs.Droppable
   ] = js.native
-  var Editor: ScalablyTyped.runtime.Instantiable2[
+  var Editor: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.EditorNs.Model], 
     ejDotWebDotAllLib.ejNs.Editor
   ] = js.native
-  var FileExplorer: ScalablyTyped.runtime.Instantiable2[
+  var FileExplorer: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.FileExplorerNs.Model], 
     ejDotWebDotAllLib.ejNs.FileExplorer
   ] = js.native
-  var ForeignKeyAdaptor: ScalablyTyped.runtime.Instantiable2[
+  var ForeignKeyAdaptor: org.scalablytyped.runtime.Instantiable2[
     /* data */ js.Any, 
     /* type */ java.lang.String, 
     ejDotWebDotAllLib.ejNs.ForeignKeyAdaptor
   ] = js.native
-  var Gantt: ScalablyTyped.runtime.Instantiable2[
+  var Gantt: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.GanttNs.Model], 
     ejDotWebDotAllLib.ejNs.Gantt
   ] = js.native
-  var Grid: ScalablyTyped.runtime.Instantiable2[
+  var Grid: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.GridNs.Model], 
     ejDotWebDotAllLib.ejNs.Grid
   ] = js.native
-  var GroupButton: ScalablyTyped.runtime.Instantiable2[
+  var GroupButton: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.GroupButtonNs.Model], 
     ejDotWebDotAllLib.ejNs.GroupButton
   ] = js.native
-  var JsonAdaptor: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.JsonAdaptor] = js.native
-  var Kanban: ScalablyTyped.runtime.Instantiable2[
+  var JsonAdaptor: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.JsonAdaptor] = js.native
+  var Kanban: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.KanbanNs.Model], 
     ejDotWebDotAllLib.ejNs.Kanban
   ] = js.native
-  var ListBox: ScalablyTyped.runtime.Instantiable2[
+  var ListBox: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ListBoxNs.Model], 
     ejDotWebDotAllLib.ejNs.ListBox
   ] = js.native
-  var ListView: ScalablyTyped.runtime.Instantiable2[
+  var ListView: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ListViewNs.Model], 
     ejDotWebDotAllLib.ejNs.ListView
   ] = js.native
-  var MaskEdit: ScalablyTyped.runtime.Instantiable2[
+  var MaskEdit: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.MaskEditNs.Model], 
     ejDotWebDotAllLib.ejNs.MaskEdit
   ] = js.native
-  var Menu: ScalablyTyped.runtime.Instantiable2[
+  var Menu: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.MenuNs.Model], 
     ejDotWebDotAllLib.ejNs.Menu
   ] = js.native
-  var Model: ScalablyTyped.runtime.Instantiable3[
+  var Model: org.scalablytyped.runtime.Instantiable3[
     /* json */ js.Any, 
     /* table */ java.lang.String, 
     /* name */ java.lang.String, 
     ejDotWebDotAllLib.ejNs.Model
   ] = js.native
-  var NavigationDrawer: ScalablyTyped.runtime.Instantiable2[
+  var NavigationDrawer: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.NavigationDrawerNs.Model], 
     ejDotWebDotAllLib.ejNs.NavigationDrawer
   ] = js.native
-  var NumericTextbox: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.NumericTextbox] = js.native
-  var ODataAdaptor: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.ODataAdaptor] = js.native
-  var ODataV4Adaptor: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.ODataV4Adaptor] = js.native
-  var Pager: ScalablyTyped.runtime.Instantiable2[
+  var NumericTextbox: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.NumericTextbox] = js.native
+  var ODataAdaptor: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.ODataAdaptor] = js.native
+  var ODataV4Adaptor: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.ODataV4Adaptor] = js.native
+  var Pager: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PagerNs.Model], 
     ejDotWebDotAllLib.ejNs.Pager
   ] = js.native
-  var PdfViewer: ScalablyTyped.runtime.Instantiable2[
+  var PdfViewer: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PdfViewerNs.Model], 
     ejDotWebDotAllLib.ejNs.PdfViewer
   ] = js.native
-  var PercentageTextbox: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.PercentageTextbox] = js.native
-  var PivotChart: ScalablyTyped.runtime.Instantiable2[
+  var PercentageTextbox: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.PercentageTextbox] = js.native
+  var PivotChart: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PivotChartNs.Model], 
     ejDotWebDotAllLib.ejNs.PivotChart
   ] = js.native
-  var PivotClient: ScalablyTyped.runtime.Instantiable2[
+  var PivotClient: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PivotClientNs.Model], 
     ejDotWebDotAllLib.ejNs.PivotClient
   ] = js.native
-  var PivotGauge: ScalablyTyped.runtime.Instantiable2[
+  var PivotGauge: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PivotGaugeNs.Model], 
     ejDotWebDotAllLib.ejNs.PivotGauge
   ] = js.native
-  var PivotGrid: ScalablyTyped.runtime.Instantiable2[
+  var PivotGrid: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PivotGridNs.Model], 
     ejDotWebDotAllLib.ejNs.PivotGrid
   ] = js.native
-  var PivotPager: ScalablyTyped.runtime.Instantiable2[
+  var PivotPager: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PivotPagerNs.Model], 
     ejDotWebDotAllLib.ejNs.PivotPager
   ] = js.native
-  var PivotSchemaDesigner: ScalablyTyped.runtime.Instantiable2[
+  var PivotSchemaDesigner: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PivotSchemaDesignerNs.Model], 
     ejDotWebDotAllLib.ejNs.PivotSchemaDesigner
   ] = js.native
-  var PivotTreeMap: ScalablyTyped.runtime.Instantiable2[
+  var PivotTreeMap: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PivotTreeMapNs.Model], 
     ejDotWebDotAllLib.ejNs.PivotTreeMap
   ] = js.native
-  var Predicate: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.Predicate] = js.native
-  var Print: ScalablyTyped.runtime.Instantiable2[
+  var Predicate: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.Predicate] = js.native
+  var Print: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.PrintNs.Model], 
     ejDotWebDotAllLib.ejNs.Print
   ] = js.native
-  var ProgressBar: ScalablyTyped.runtime.Instantiable2[
+  var ProgressBar: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ProgressBarNs.Model], 
     ejDotWebDotAllLib.ejNs.ProgressBar
   ] = js.native
-  var Query: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.Query] = js.native
-  var RTE: ScalablyTyped.runtime.Instantiable2[
+  var Query: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.Query] = js.native
+  var RTE: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.RTENs.Model], 
     ejDotWebDotAllLib.ejNs.RTE
   ] = js.native
-  var RadialMenu: ScalablyTyped.runtime.Instantiable2[
+  var RadialMenu: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.RadialMenuNs.Model], 
     ejDotWebDotAllLib.ejNs.RadialMenu
   ] = js.native
-  var RadialSlider: ScalablyTyped.runtime.Instantiable2[
+  var RadialSlider: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.RadialSliderNs.Model], 
     ejDotWebDotAllLib.ejNs.RadialSlider
   ] = js.native
-  var RadioButton: ScalablyTyped.runtime.Instantiable2[
+  var RadioButton: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.RadioButtonNs.Model], 
     ejDotWebDotAllLib.ejNs.RadioButton
   ] = js.native
-  var Rating: ScalablyTyped.runtime.Instantiable2[
+  var Rating: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.RatingNs.Model], 
     ejDotWebDotAllLib.ejNs.Rating
   ] = js.native
-  var RecurrenceEditor: ScalablyTyped.runtime.Instantiable2[
+  var RecurrenceEditor: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.RecurrenceEditorNs.Model], 
     ejDotWebDotAllLib.ejNs.RecurrenceEditor
   ] = js.native
-  var ReportDesigner: ScalablyTyped.runtime.Instantiable2[
+  var ReportDesigner: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ReportDesignerNs.Model], 
     ejDotWebDotAllLib.ejNs.ReportDesigner
   ] = js.native
-  var ReportViewer: ScalablyTyped.runtime.Instantiable2[
+  var ReportViewer: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ReportViewerNs.Model], 
     ejDotWebDotAllLib.ejNs.ReportViewer
   ] = js.native
-  var Resizable: ScalablyTyped.runtime.Instantiable2[
+  var Resizable: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ResizableNs.Model], 
     ejDotWebDotAllLib.ejNs.Resizable
   ] = js.native
-  var Ribbon: ScalablyTyped.runtime.Instantiable2[
+  var Ribbon: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.RibbonNs.Model], 
     ejDotWebDotAllLib.ejNs.Ribbon
   ] = js.native
-  var Rotator: ScalablyTyped.runtime.Instantiable2[
+  var Rotator: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.RotatorNs.Model], 
     ejDotWebDotAllLib.ejNs.Rotator
   ] = js.native
-  var Schedule: ScalablyTyped.runtime.Instantiable2[
+  var Schedule: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ScheduleNs.Model], 
     ejDotWebDotAllLib.ejNs.Schedule
   ] = js.native
-  var Scroller: ScalablyTyped.runtime.Instantiable2[
+  var Scroller: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ScrollerNs.Model], 
     ejDotWebDotAllLib.ejNs.Scroller
   ] = js.native
-  var Signature: ScalablyTyped.runtime.Instantiable2[
+  var Signature: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.SignatureNs.Model], 
     ejDotWebDotAllLib.ejNs.Signature
   ] = js.native
-  var Slider: ScalablyTyped.runtime.Instantiable2[
+  var Slider: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.SliderNs.Model], 
     ejDotWebDotAllLib.ejNs.Slider
   ] = js.native
-  var Sparkline: ScalablyTyped.runtime.Instantiable2[
+  var Sparkline: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.Model], 
     ejDotWebDotAllLib.ejNs.Sparkline
   ] = js.native
-  var SpellCheck: ScalablyTyped.runtime.Instantiable2[
+  var SpellCheck: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.SpellCheckNs.Model], 
     ejDotWebDotAllLib.ejNs.SpellCheck
   ] = js.native
-  var SplitButton: ScalablyTyped.runtime.Instantiable2[
+  var SplitButton: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.SplitButtonNs.Model], 
     ejDotWebDotAllLib.ejNs.SplitButton
   ] = js.native
-  var Splitter: ScalablyTyped.runtime.Instantiable2[
+  var Splitter: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.SplitterNs.Model], 
     ejDotWebDotAllLib.ejNs.Splitter
   ] = js.native
-  var Spreadsheet: ScalablyTyped.runtime.Instantiable2[
+  var Spreadsheet: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.SpreadsheetNs.Model], 
     ejDotWebDotAllLib.ejNs.Spreadsheet
   ] = js.native
-  var SunburstChart: ScalablyTyped.runtime.Instantiable2[
+  var SunburstChart: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.SunburstChartNs.Model], 
     ejDotWebDotAllLib.ejNs.SunburstChart
   ] = js.native
-  var Tab: ScalablyTyped.runtime.Instantiable2[
+  var Tab: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.TabNs.Model], 
     ejDotWebDotAllLib.ejNs.Tab
   ] = js.native
-  var TableModel: ScalablyTyped.runtime.Instantiable4[
+  var TableModel: org.scalablytyped.runtime.Instantiable4[
     /* name */ java.lang.String, 
     /* jsonArray */ js.Array[js.Any], 
     /* dataManager */ ejDotWebDotAllLib.ejNs.DataManager, 
     /* modelComputed */ js.Any, 
     ejDotWebDotAllLib.ejNs.TableModel
   ] = js.native
-  var TagCloud: ScalablyTyped.runtime.Instantiable2[
+  var TagCloud: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.TagCloudNs.Model], 
     ejDotWebDotAllLib.ejNs.TagCloud
   ] = js.native
-  var Tile: ScalablyTyped.runtime.Instantiable2[
+  var Tile: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.TileNs.Model], 
     ejDotWebDotAllLib.ejNs.Tile
   ] = js.native
-  var TimePicker: ScalablyTyped.runtime.Instantiable2[
+  var TimePicker: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.TimePickerNs.Model], 
     ejDotWebDotAllLib.ejNs.TimePicker
   ] = js.native
-  var ToggleButton: ScalablyTyped.runtime.Instantiable2[
+  var ToggleButton: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ToggleButtonNs.Model], 
     ejDotWebDotAllLib.ejNs.ToggleButton
   ] = js.native
-  var Toolbar: ScalablyTyped.runtime.Instantiable2[
+  var Toolbar: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.ToolbarNs.Model], 
     ejDotWebDotAllLib.ejNs.Toolbar
   ] = js.native
-  var Tooltip: ScalablyTyped.runtime.Instantiable2[
+  var Tooltip: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.TooltipNs.Model], 
     ejDotWebDotAllLib.ejNs.Tooltip
   ] = js.native
-  var TreeGrid: ScalablyTyped.runtime.Instantiable2[
+  var TreeGrid: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.TreeGridNs.Model], 
     ejDotWebDotAllLib.ejNs.TreeGrid
   ] = js.native
-  var TreeView: ScalablyTyped.runtime.Instantiable2[
+  var TreeView: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.TreeViewNs.Model], 
     ejDotWebDotAllLib.ejNs.TreeView
   ] = js.native
-  var Uploadbox: ScalablyTyped.runtime.Instantiable2[
+  var Uploadbox: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.UploadboxNs.Model], 
     ejDotWebDotAllLib.ejNs.Uploadbox
   ] = js.native
-  var UrlAdaptor: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.UrlAdaptor] = js.native
-  var WaitingPopup: ScalablyTyped.runtime.Instantiable2[
+  var UrlAdaptor: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.UrlAdaptor] = js.native
+  var WaitingPopup: org.scalablytyped.runtime.Instantiable2[
     /* element */ JQuery | stdLib.Element, 
     /* options */ js.UndefOr[/* options */ ejDotWebDotAllLib.ejNs.WaitingPopupNs.Model], 
     ejDotWebDotAllLib.ejNs.WaitingPopup
   ] = js.native
-  var WebApiAdaptor: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.WebApiAdaptor] = js.native
-  var WebMethodAdaptor: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.WebMethodAdaptor] = js.native
-  var Widget: ScalablyTyped.runtime.Instantiable3[
+  var WebApiAdaptor: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.WebApiAdaptor] = js.native
+  var WebMethodAdaptor: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.WebMethodAdaptor] = js.native
+  var Widget: org.scalablytyped.runtime.Instantiable3[
     /* pluginName */ java.lang.String, 
     /* className */ java.lang.String, 
     /* proto */ js.Any, 
     ejDotWebDotAllLib.ejNs.Widget
   ] = js.native
-  var WidgetBase: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.WidgetBase] = js.native
+  var WidgetBase: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.WidgetBase] = js.native
   val cssUA: java.lang.String = js.native
   val cultures: ejDotWebDotAllLib.ejNs.culture = js.native
   val dataUtil: ejDotWebDotAllLib.ejNs.dataUtil = js.native
   val globalize: ejDotWebDotAllLib.ejNs.globalize = js.native
-  var remoteSaveAdaptor: ScalablyTyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.remoteSaveAdaptor] = js.native
+  var remoteSaveAdaptor: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.remoteSaveAdaptor] = js.native
   val serverTimezoneOffset: scala.Double = js.native
   val template: js.Any = js.native
   val transform: java.lang.String = js.native

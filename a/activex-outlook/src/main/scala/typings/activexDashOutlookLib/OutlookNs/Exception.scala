@@ -13,7 +13,7 @@ class Exception protected () extends js.Object {
   val Class: OlObjectClass = js.native
   val Deleted: scala.Boolean = js.native
   val ItemProperties: ItemProperties = js.native
-  val OriginalDate: activexDashInteropLib.VarDate = js.native
+  val OriginalDate: stdLib.VarDate = js.native
   var `Outlook.Exception_typekey`: Exception = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native

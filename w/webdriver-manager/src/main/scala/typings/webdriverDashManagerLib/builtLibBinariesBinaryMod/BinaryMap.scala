@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait BinaryMap[T /* <: Binary */]
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[T]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[T]
 

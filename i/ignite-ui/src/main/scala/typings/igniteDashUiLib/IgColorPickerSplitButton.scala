@@ -10,7 +10,7 @@ trait IgColorPickerSplitButton
   extends /**
 	 * Option for igColorPickerSplitButton
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event fired when the button is clicked.
   	 *

@@ -15,7 +15,7 @@ object defaultNs extends js.Object {
   def language(): java.lang.String = js.native
   def languageData(): numbroLib.numbroMod.numbroNs.NumbroLanguage = js.native
   def languageData(tag: java.lang.String): numbroLib.numbroMod.numbroNs.NumbroLanguage = js.native
-  def languages(): ScalablyTyped.runtime.StringDictionary[numbroLib.numbroMod.numbroNs.NumbroLanguage] = js.native
+  def languages(): org.scalablytyped.runtime.StringDictionary[numbroLib.numbroMod.numbroNs.NumbroLanguage] = js.native
   def loadLanguagesInNode(): scala.Unit = js.native
   def registerLanguage(tag: numbroLib.numbroMod.numbroNs.NumbroLanguage): java.lang.String = js.native
   def registerLanguage(tag: numbroLib.numbroMod.numbroNs.NumbroLanguage, useLanguage: scala.Boolean): java.lang.String = js.native

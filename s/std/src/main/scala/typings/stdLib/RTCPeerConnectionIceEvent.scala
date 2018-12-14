@@ -14,8 +14,8 @@ trait RTCPeerConnectionIceEvent extends Event {
 @JSGlobal("RTCPeerConnectionIceEvent")
 @js.native
 object RTCPeerConnectionIceEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, RTCPeerConnectionIceEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, RTCPeerConnectionIceEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ RTCPeerConnectionIceEventInit, 
       RTCPeerConnectionIceEvent

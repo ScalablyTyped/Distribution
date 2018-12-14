@@ -61,5 +61,5 @@ trait ServiceWorkerRegistration extends EventTarget {
 @JSGlobal("ServiceWorkerRegistration")
 @js.native
 object ServiceWorkerRegistration
-  extends ScalablyTyped.runtime.Instantiable0[ServiceWorkerRegistration]
+  extends org.scalablytyped.runtime.Instantiable0[ServiceWorkerRegistration]
 

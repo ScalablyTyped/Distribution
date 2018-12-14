@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Class[T]
-  extends ScalablyTyped.runtime.Instantiable0[Model[T]]
-     with ScalablyTyped.runtime.Instantiable1[/* data */ stdLib.Partial[T], Model[T]] {
+  extends org.scalablytyped.runtime.Instantiable0[Model[T]]
+     with org.scalablytyped.runtime.Instantiable1[/* data */ stdLib.Partial[T], Model[T]] {
   def find(): meteorLib.MongoNs.Cursor[Model[T]] = js.native
   def find(selector: MongoQuery[T]): meteorLib.MongoNs.Cursor[Model[T]] = js.native
   def find(selector: MongoQuery[T], options: FindOptions): meteorLib.MongoNs.Cursor[Model[T]] = js.native

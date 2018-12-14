@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ICacheStore
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Object]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Object]
 

@@ -17,7 +17,7 @@ trait InitialOptions extends js.Object {
   var clearMocks: js.UndefOr[scala.Boolean] = js.undefined
   var collectCoverage: js.UndefOr[scala.Boolean] = js.undefined
   var collectCoverageFrom: js.UndefOr[js.Array[Glob]] = js.undefined
-  var collectCoverageOnlyFrom: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
+  var collectCoverageOnlyFrom: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
   var coverageDirectory: js.UndefOr[java.lang.String] = js.undefined
   var coveragePathIgnorePatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var coverageReporters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -43,7 +43,7 @@ trait InitialOptions extends js.Object {
   var moduleDirectories: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var moduleFileExtensions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var moduleLoader: js.UndefOr[Path] = js.undefined
-  var moduleNameMapper: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var moduleNameMapper: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var modulePathIgnorePatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var modulePaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
@@ -87,7 +87,7 @@ trait InitialOptions extends js.Object {
   var testRunner: js.UndefOr[java.lang.String] = js.undefined
   var testURL: js.UndefOr[java.lang.String] = js.undefined
   var timers: js.UndefOr[jestLib.jestLibStrings.real | jestLib.jestLibStrings.fake] = js.undefined
-  var transform: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var transform: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var transformIgnorePatterns: js.UndefOr[js.Array[Glob]] = js.undefined
   var unmockedModulePathPatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var updateSnapshot: js.UndefOr[scala.Boolean] = js.undefined

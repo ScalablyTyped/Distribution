@@ -15,5 +15,5 @@ trait SVGCircleElement extends SVGGraphicsElement {
 @JSGlobal("SVGCircleElement")
 @js.native
 object SVGCircleElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGCircleElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGCircleElement]
 

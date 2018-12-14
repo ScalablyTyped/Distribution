@@ -11,6 +11,6 @@ trait PeriodicWave extends js.Object
 @JSGlobal("PeriodicWave")
 @js.native
 object PeriodicWave
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, PeriodicWave]
-     with ScalablyTyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ PeriodicWaveOptions, PeriodicWave]
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, PeriodicWave]
+     with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ PeriodicWaveOptions, PeriodicWave]
 

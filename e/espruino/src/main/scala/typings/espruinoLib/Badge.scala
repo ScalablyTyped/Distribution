@@ -16,5 +16,5 @@ trait Badge
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[Badge]
+org.scalablytyped.runtime.Instantiable0[Badge]
 

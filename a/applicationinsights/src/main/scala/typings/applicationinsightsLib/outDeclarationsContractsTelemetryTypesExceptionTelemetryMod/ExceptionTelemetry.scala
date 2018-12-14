@@ -15,6 +15,6 @@ trait ExceptionTelemetry
   /**
        * Metrics associated with this exception, displayed in Metrics Explorer on the portal. Defaults to empty
        */
-  var measurements: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Double]] = js.undefined
+  var measurements: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
 }
 

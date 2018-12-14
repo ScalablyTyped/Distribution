@@ -10,7 +10,7 @@ trait IgGridRestSettingsUpdate
   extends /**
 	 * Option for IgGridRestSettingsUpdate
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies whether update requests will be sent in batches
   	 */

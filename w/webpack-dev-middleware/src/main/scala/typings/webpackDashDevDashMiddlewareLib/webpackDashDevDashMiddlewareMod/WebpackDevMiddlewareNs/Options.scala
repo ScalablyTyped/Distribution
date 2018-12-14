@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var filename: js.UndefOr[java.lang.String] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var index: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   var logLevel: js.UndefOr[java.lang.String] = js.undefined

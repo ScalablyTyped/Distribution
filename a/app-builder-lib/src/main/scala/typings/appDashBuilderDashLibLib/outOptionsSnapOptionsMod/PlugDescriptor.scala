@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PlugDescriptor
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null]
 

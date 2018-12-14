@@ -10,7 +10,7 @@ trait IgSpreadsheet
   extends /**
 	 * Option for igSpreadsheet
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Invoked when an action is executed on the Spreadsheet.
   	 */

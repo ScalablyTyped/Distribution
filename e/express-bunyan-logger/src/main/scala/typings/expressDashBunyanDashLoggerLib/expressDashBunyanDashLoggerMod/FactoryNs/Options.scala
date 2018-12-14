@@ -17,6 +17,8 @@ trait Options extends js.Object {
   var obfuscate: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var obfuscatePlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var parseUA: js.UndefOr[scala.Boolean] = js.undefined
-  var serializers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[bunyanLib.bunyanMod.LoggerNs.Serializer]] = js.undefined
+  var serializers: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[bunyanLib.bunyanMod.LoggerNs.Serializer]
+  ] = js.undefined
 }
 

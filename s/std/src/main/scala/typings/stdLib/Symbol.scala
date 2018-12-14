@@ -11,7 +11,7 @@ trait Symbol extends js.Object {
        * expose the [[Description]] internal slot of a symbol directly
        */
   val description: java.lang.String
-  @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
+  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   val toStringTag: java.lang.String
 }
 

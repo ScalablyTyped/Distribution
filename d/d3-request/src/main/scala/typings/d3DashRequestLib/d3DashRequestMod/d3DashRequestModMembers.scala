@@ -39,7 +39,7 @@ object d3DashRequestModMembers extends js.Object {
     callback: js.ThisFunction2[/* this */ Request, /* error */ js.Any, /* d */ stdLib.DocumentFragment, scala.Unit]
   ): Request = js.native
   def json(url: java.lang.String): Request = js.native
-  def json[ParsedObject /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](
+  def json[ParsedObject /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
     url: java.lang.String,
     callback: js.ThisFunction2[/* this */ Request, /* error */ js.Any, /* d */ ParsedObject, scala.Unit]
   ): Request = js.native

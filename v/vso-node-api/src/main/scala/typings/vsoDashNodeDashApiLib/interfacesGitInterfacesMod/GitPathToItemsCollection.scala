@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait GitPathToItemsCollection extends js.Object {
-  var items: ScalablyTyped.runtime.StringDictionary[js.Array[GitItem]]
+  var items: org.scalablytyped.runtime.StringDictionary[js.Array[GitItem]]
 }
 

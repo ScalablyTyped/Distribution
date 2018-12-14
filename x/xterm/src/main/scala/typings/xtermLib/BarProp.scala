@@ -13,5 +13,5 @@ trait BarProp extends js.Object {
 @JSGlobal("BarProp")
 @js.native
 object BarProp
-  extends ScalablyTyped.runtime.Instantiable0[BarProp]
+  extends org.scalablytyped.runtime.Instantiable0[BarProp]
 

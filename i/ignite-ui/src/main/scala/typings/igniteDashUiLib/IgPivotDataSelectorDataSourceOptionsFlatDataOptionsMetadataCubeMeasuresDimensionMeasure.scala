@@ -10,7 +10,7 @@ trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDim
   extends /**
 	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Optional="false" An aggregator function called when each cell is evaluated.
   	 * Returns a value for the cell. If the returned value is null, no cell will be created in for the data source result.

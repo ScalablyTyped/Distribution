@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait Options extends CustomOptions {
   // sets the list of built-ins to use, which by default is set in lib/builtins.js in this distribution.
   var builtins: js.UndefOr[
-    js.Array[java.lang.String] | ScalablyTyped.runtime.StringDictionary[java.lang.String] | scala.Boolean
+    js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Boolean
   ] = js.undefined
   // set if external modules should be bundled. Defaults to true.
   var bundleExternal: js.UndefOr[scala.Boolean] = js.undefined

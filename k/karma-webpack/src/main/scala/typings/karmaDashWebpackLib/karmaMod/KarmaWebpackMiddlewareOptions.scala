@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait KarmaWebpackMiddlewareOptions extends js.Object {
   var error: js.UndefOr[Logger] = js.undefined
   var filename: js.UndefOr[java.lang.String] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var index: js.UndefOr[java.lang.String] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   var log: js.UndefOr[Logger] = js.undefined

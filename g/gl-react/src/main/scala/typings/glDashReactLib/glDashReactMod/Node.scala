@@ -18,6 +18,6 @@ class Node ()
   var drawProps: NodeProps = js.native
   var framebuffer: js.UndefOr[Framebuffer] = js.native
   var id: scala.Double = js.native
-  var uniformsBus: ScalablyTyped.runtime.StringDictionary[js.Array[js.UndefOr[Bus]]] = js.native
+  var uniformsBus: org.scalablytyped.runtime.StringDictionary[js.Array[js.UndefOr[Bus]]] = js.native
 }
 

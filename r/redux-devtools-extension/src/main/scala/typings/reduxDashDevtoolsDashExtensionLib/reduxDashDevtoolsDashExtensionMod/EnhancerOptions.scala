@@ -11,7 +11,7 @@ trait EnhancerOptions extends js.Object {
      * action creators functions to be available in the Dispatcher.
      */
   var actionCreators: js.UndefOr[
-    js.Array[reduxLib.reduxMod.ActionCreator[_]] | ScalablyTyped.runtime.StringDictionary[reduxLib.reduxMod.ActionCreator[_]]
+    js.Array[reduxLib.reduxMod.ActionCreator[_]] | org.scalablytyped.runtime.StringDictionary[reduxLib.reduxMod.ActionCreator[_]]
   ] = js.undefined
   /**
      * function which takes `action` object and id number as arguments, and should return `action` object back.

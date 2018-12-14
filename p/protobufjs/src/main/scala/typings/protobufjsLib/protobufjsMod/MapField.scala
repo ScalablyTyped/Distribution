@@ -27,7 +27,7 @@ class MapField protected () extends FieldBase {
        * @param [options] Declared options
        * @param [comment] Comment associated with this field
        */
-  def this(name: java.lang.String, id: scala.Double, keyType: java.lang.String, `type`: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, id: scala.Double, keyType: java.lang.String, `type`: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new map field instance.
        * @param name Unique name within its namespace
@@ -37,7 +37,7 @@ class MapField protected () extends FieldBase {
        * @param [options] Declared options
        * @param [comment] Comment associated with this field
        */
-  def this(name: java.lang.String, id: scala.Double, keyType: java.lang.String, `type`: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, id: scala.Double, keyType: java.lang.String, `type`: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /** Key type. */
   var keyType: java.lang.String = js.native
   /** Resolved key type if not a basic type. */
@@ -54,7 +54,7 @@ object MapField extends js.Object {
        * @param fieldValueType Field value type
        * @returns Decorator function
        */
-  def d[T /* <: ScalablyTyped.runtime.StringDictionary[
+  def d[T /* <: org.scalablytyped.runtime.StringDictionary[
     scala.Double | protobufjsLib.protobufjsMod.Long | java.lang.String | scala.Boolean | stdLib.Uint8Array | protobufjsLib.protobufjsMod.Buffer | js.Array[scala.Double] | protobufjsLib.protobufjsMod.Message[js.Object]
   ] */](
     fieldId: scala.Double,

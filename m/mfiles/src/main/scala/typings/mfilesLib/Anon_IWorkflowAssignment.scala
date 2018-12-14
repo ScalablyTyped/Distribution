@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IWorkflowAssignment
-  extends ScalablyTyped.runtime.Instantiable0[IWorkflowAssignment]
+  extends org.scalablytyped.runtime.Instantiable0[IWorkflowAssignment]
 

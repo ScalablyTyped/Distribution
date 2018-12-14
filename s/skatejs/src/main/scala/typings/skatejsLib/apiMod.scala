@@ -32,10 +32,10 @@ object apiMod extends js.Object {
   def shadow(elem: stdLib.HTMLElement): stdLib.ShadowRoot = js.native
   def withChildren[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): skatejsLib.typesMod.Constructor[skatejsLib.typesMod.WithChildren] with T = js.native
   def withChildren[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](Base: T): skatejsLib.typesMod.Constructor[skatejsLib.typesMod.WithChildren] with T = js.native
-  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): ScalablyTyped.runtime.Instantiable0[
+  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): org.scalablytyped.runtime.Instantiable0[
     skatejsLib.typesMod.WithComponent[skatejsLib.typesMod.Mixed, skatejsLib.typesMod.Mixed, skatejsLib.typesMod.Mixed]
   ] = js.native
-  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](Base: T): ScalablyTyped.runtime.Instantiable0[
+  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](Base: T): org.scalablytyped.runtime.Instantiable0[
     skatejsLib.typesMod.WithComponent[skatejsLib.typesMod.Mixed, skatejsLib.typesMod.Mixed, skatejsLib.typesMod.Mixed]
   ] = js.native
   @JSName("withComponent")

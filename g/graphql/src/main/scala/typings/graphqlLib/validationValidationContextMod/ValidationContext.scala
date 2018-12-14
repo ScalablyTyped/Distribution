@@ -12,7 +12,7 @@ class ValidationContext protected () extends ASTValidationContext {
   def getArgument(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLArgument] = js.native
   def getDirective(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDirectivesMod.GraphQLDirective] = js.native
   def getFieldDef(): graphqlLib.tsutilsMaybeMod.Maybe[
-    graphqlLib.typeDefinitionMod.GraphQLField[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+    graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.native
   def getFragment(name: java.lang.String): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.FragmentDefinitionNode] = js.native
   def getFragmentSpreads(node: graphqlLib.languageAstMod.SelectionSetNode): js.Array[graphqlLib.languageAstMod.FragmentSpreadNode] = js.native

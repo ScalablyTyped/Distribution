@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("eq.js", JSImport.Namespace)
 @js.native
 object eqDotJsMod
-  extends ScalablyTyped.runtime.TopLevel[eqDotJsLib.eqNs.EqjsStatic]
+  extends org.scalablytyped.runtime.TopLevel[eqDotJsLib.eqNs.EqjsStatic]
 

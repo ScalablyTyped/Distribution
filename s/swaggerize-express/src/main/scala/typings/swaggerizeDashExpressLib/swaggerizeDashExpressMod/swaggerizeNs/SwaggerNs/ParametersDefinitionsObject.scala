@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ParametersDefinitionsObject
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[ParameterObject]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[ParameterObject]
 

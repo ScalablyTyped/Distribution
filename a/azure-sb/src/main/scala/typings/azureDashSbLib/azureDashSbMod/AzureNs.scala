@@ -26,7 +26,7 @@ object AzureNs extends js.Object {
     
     
     trait Dictionary[T]
-      extends /* k */ ScalablyTyped.runtime.StringDictionary[T]
+      extends /* k */ org.scalablytyped.runtime.StringDictionary[T]
     
     
     trait ErrorResponse extends Response {
@@ -222,7 +222,7 @@ object AzureNs extends js.Object {
         
         
         trait Subscription extends ExtendedBase {
-          var CountDetails: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+          var CountDetails: org.scalablytyped.runtime.StringDictionary[java.lang.String]
           var DeadLetteringOnFilterEvaluationExceptions: java.lang.String
           var DeadLetteringOnMessageExpiration: java.lang.String
           var LockDuration: java.lang.String
@@ -236,7 +236,7 @@ object AzureNs extends js.Object {
         
         trait Topic extends ExtendedBase {
           var AccessedAt: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.DateString
-          var CountDetails: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+          var CountDetails: org.scalablytyped.runtime.StringDictionary[java.lang.String]
           var EnableSubscriptionPartitioning: java.lang.String
           var FilteringMessagesBeforePublishing: java.lang.String
           var IsExpress: java.lang.String

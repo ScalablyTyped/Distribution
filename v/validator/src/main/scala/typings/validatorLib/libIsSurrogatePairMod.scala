@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isSurrogatePair", JSImport.Namespace)
 @js.native
 object libIsSurrogatePairMod
-  extends ScalablyTyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Any]
 

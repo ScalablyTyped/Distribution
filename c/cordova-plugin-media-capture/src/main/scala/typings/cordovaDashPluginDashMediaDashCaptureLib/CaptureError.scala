@@ -29,7 +29,7 @@ trait CaptureError extends js.Object {
 @js.native
 object CaptureError
   extends /** Constructor for CaptureError  */
-ScalablyTyped.runtime.Instantiable2[/* code */ scala.Double, /* message */ java.lang.String, CaptureError] {
+org.scalablytyped.runtime.Instantiable2[/* code */ scala.Double, /* message */ java.lang.String, CaptureError] {
   var CAPTURE_APPLICATION_BUSY: scala.Double = js.native
   var CAPTURE_INTERNAL_ERR: scala.Double = js.native
   var CAPTURE_INVALID_ARGUMENT: scala.Double = js.native

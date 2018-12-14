@@ -73,7 +73,7 @@ trait gettextCatalog extends js.Object {
          */
   def setStrings(
     language: java.lang.String,
-    strings: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    strings: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ): scala.Unit = js.native
 }
 

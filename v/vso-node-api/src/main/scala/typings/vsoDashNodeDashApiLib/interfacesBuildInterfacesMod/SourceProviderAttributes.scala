@@ -14,7 +14,7 @@ trait SourceProviderAttributes extends js.Object {
   /**
        * The capabilities supported by this source provider.
        */
-  var supportedCapabilities: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  var supportedCapabilities: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   /**
        * The types of triggers supported by this source provider.
        */

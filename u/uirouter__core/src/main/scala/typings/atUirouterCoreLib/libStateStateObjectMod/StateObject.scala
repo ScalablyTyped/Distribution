@@ -25,7 +25,7 @@ class StateObject () extends js.Object {
        * An object containing the parent States' names as keys and
        * true as their values.
        */
-  var includes: ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  var includes: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   /** The name used to register the state */
   var name: java.lang.String = js.native
   /** The nearest parent [[StateObject]] which has a URL */
@@ -40,7 +40,7 @@ class StateObject () extends js.Object {
   @JSName("onRetain")
   var onRetain_Original: atUirouterCoreLib.libTransitionInterfaceMod.TransitionStateHookFn = js.native
   /** The parameters for the state, built from the URL and [[StateDeclaration.params]] */
-  var params: ScalablyTyped.runtime.StringDictionary[atUirouterCoreLib.libParamsParamMod.Param] = js.native
+  var params: org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libParamsParamMod.Param] = js.native
   /** The parent [[StateObject]] */
   var parent: StateObject = js.native
   /** The parent [[StateObject]] objects from this state up to the root */
@@ -53,7 +53,7 @@ class StateObject () extends js.Object {
   /** A list of [[Resolvable]] objects.  The internal representation of [[resolve]]. */
   var resolvables: js.Array[atUirouterCoreLib.libResolveResolvableMod.Resolvable] = js.native
   /** Prototypally inherits from [[StateDeclaration.resolve]] */
-  var resolve: (ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[_] | js.Function]) | js.Array[_] = js.native
+  var resolve: (org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[_] | js.Function]) | js.Array[_] = js.native
   /** Prototypally inherits from [[StateDeclaration.resolvePolicy]] */
   var resolvePolicy: js.Any = js.native
   /**
@@ -68,7 +68,7 @@ class StateObject () extends js.Object {
        * Note: `@uirouter/core` does not register a builder for views.
        * The framework specific code should register a `views` builder.
        */
-  var views: ScalablyTyped.runtime.StringDictionary[atUirouterCoreLib.libStateInterfaceMod._ViewDeclaration] = js.native
+  var views: org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libStateInterfaceMod._ViewDeclaration] = js.native
   /**
        * @deprecated this does not properly handle dot notation
        * @returns Returns a dot-separated name of the state.

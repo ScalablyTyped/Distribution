@@ -14,8 +14,8 @@ trait MediaKeyMessageEvent extends Event {
 @JSGlobal("MediaKeyMessageEvent")
 @js.native
 object MediaKeyMessageEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, MediaKeyMessageEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, MediaKeyMessageEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ MediaKeyMessageEventInit, 
       MediaKeyMessageEvent

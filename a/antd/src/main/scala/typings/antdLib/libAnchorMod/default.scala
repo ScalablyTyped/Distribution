@@ -13,7 +13,7 @@ class default ()
 @JSImport("antd/lib/anchor", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Link: ScalablyTyped.runtime.Instantiable0[antdLib.libAnchorAnchorLinkMod.default] = js.native
+  var Link: org.scalablytyped.runtime.Instantiable0[antdLib.libAnchorAnchorLinkMod.default] = js.native
   var childContextTypes: antdLib.Anon_AntAnchorRequireable = js.native
   var defaultProps: antdLib.Anon_PrefixClsAffix = js.native
 }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 
 trait RTCIceServer extends js.Object {
   //urls: string | string[];
-  var credentialType: js.UndefOr[RTCIceCredentialType] = js.undefined
+  var credentialType: js.UndefOr[stdLib.RTCIceCredentialType] = js.undefined
 }
 

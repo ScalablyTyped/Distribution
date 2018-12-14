@@ -21,6 +21,6 @@ trait ElementAnimateOptionsBase extends js.Object {
   /** A function to call each time the animation steps. */
   var step: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** An object containing name-value pairs of style properties to animate. */
-  var style: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var style: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

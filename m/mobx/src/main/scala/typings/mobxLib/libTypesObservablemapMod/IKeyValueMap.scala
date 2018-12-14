@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IKeyValueMap[V]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[V]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[V]
 

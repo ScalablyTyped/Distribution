@@ -18,7 +18,7 @@ trait nlobjContext
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * return an array containing the names of all keys used to set session objects
        * @return {string[]}

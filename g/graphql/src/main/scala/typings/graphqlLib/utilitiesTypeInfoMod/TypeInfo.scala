@@ -24,7 +24,11 @@ class TypeInfo protected () extends js.Object {
   def getDefaultValue(): graphqlLib.tsutilsMaybeMod.Maybe[_] = js.native
   def getDirective(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDirectivesMod.GraphQLDirective] = js.native
   def getEnumValue(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLEnumValue] = js.native
-  def getFieldDef(): graphqlLib.typeDefinitionMod.GraphQLField[_, graphqlLib.tsutilsMaybeMod.Maybe[_], ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def getFieldDef(): graphqlLib.typeDefinitionMod.GraphQLField[
+    _, 
+    graphqlLib.tsutilsMaybeMod.Maybe[_], 
+    org.scalablytyped.runtime.StringDictionary[_]
+  ] = js.native
   def getInputType(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLInputType] = js.native
   def getParentInputType(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLInputType] = js.native
   def getParentType(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLCompositeType] = js.native

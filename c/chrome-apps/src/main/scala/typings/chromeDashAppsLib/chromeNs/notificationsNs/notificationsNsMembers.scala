@@ -118,7 +118,7 @@ object notificationsNsMembers extends js.Object {
            */
   def getAll(
     callback: js.Function1[
-      /* notifications */ ScalablyTyped.runtime.StringDictionary[chromeDashAppsLib.chromeDashAppsLibNumbers.`true`], 
+      /* notifications */ org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.chromeDashAppsLibNumbers.`true`], 
       scala.Unit
     ]
   ): scala.Unit = js.native

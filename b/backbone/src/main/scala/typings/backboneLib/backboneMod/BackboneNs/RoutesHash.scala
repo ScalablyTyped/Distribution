@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RoutesHash
-  extends /* routePattern */ ScalablyTyped.runtime.StringDictionary[java.lang.String | backboneLib.Anon_UrlParts]
+  extends /* routePattern */ org.scalablytyped.runtime.StringDictionary[java.lang.String | backboneLib.Anon_UrlParts]
 

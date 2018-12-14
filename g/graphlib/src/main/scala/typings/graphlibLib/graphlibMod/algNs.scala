@@ -35,7 +35,7 @@ object algNs extends js.Object {
   		 * for the purposes of shortest path traversal. By default this function uses the graph.outEdges.
   		 * @returns shortest pathes map that starts from node source
   		 */
-  def dijkstra(graph: graphlibLib.graphlibMod.Graph, source: java.lang.String): ScalablyTyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path] = js.native
+  def dijkstra(graph: graphlibLib.graphlibMod.Graph, source: java.lang.String): org.scalablytyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path] = js.native
   /**
   		 * This function is an implementation of Dijkstra's algorithm which finds the shortest
   		 * path from source to all other nodes in graph. This function returns a map of
@@ -58,7 +58,7 @@ object algNs extends js.Object {
     graph: graphlibLib.graphlibMod.Graph,
     source: java.lang.String,
     weightFn: js.Function1[/* e */ graphlibLib.graphlibMod.Edge, scala.Double]
-  ): ScalablyTyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path] = js.native
   /**
   		 * This function is an implementation of Dijkstra's algorithm which finds the shortest
   		 * path from source to all other nodes in graph. This function returns a map of
@@ -82,7 +82,7 @@ object algNs extends js.Object {
     source: java.lang.String,
     weightFn: js.Function1[/* e */ graphlibLib.graphlibMod.Edge, scala.Double],
     edgeFn: js.Function1[/* v */ java.lang.String, js.Array[graphlibLib.graphlibMod.Edge]]
-  ): ScalablyTyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path] = js.native
   /**
   		 * This function finds the shortest path from each node to every other reachable node in
   		 * the graph. It is similar to alg.dijkstra, but instead of returning a single-source
@@ -97,7 +97,7 @@ object algNs extends js.Object {
   		 * for the purposes of shortest path traversal. By default this function uses the graph.outEdges.
   		 * @returns shortest pathes map.
   		 */
-  def dijkstraAll(graph: graphlibLib.graphlibMod.Graph): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
+  def dijkstraAll(graph: graphlibLib.graphlibMod.Graph): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
   /**
   		 * This function finds the shortest path from each node to every other reachable node in
   		 * the graph. It is similar to alg.dijkstra, but instead of returning a single-source
@@ -115,7 +115,7 @@ object algNs extends js.Object {
   def dijkstraAll(
     graph: graphlibLib.graphlibMod.Graph,
     weightFn: js.Function1[/* e */ graphlibLib.graphlibMod.Edge, scala.Double]
-  ): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
   /**
   		 * This function finds the shortest path from each node to every other reachable node in
   		 * the graph. It is similar to alg.dijkstra, but instead of returning a single-source
@@ -134,7 +134,7 @@ object algNs extends js.Object {
     graph: graphlibLib.graphlibMod.Graph,
     weightFn: js.Function1[/* e */ graphlibLib.graphlibMod.Edge, scala.Double],
     edgeFn: js.Function1[/* v */ java.lang.String, js.Array[graphlibLib.graphlibMod.Edge]]
-  ): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
   /**
   		 * Given a Graph, graph, this function returns all nodes that are part of a cycle. As there
   		 * may be more than one cycle in a graph this function return an array of these cycles,
@@ -166,7 +166,7 @@ object algNs extends js.Object {
   		 * for the purposes of shortest path traversal. By default this function uses the graph.outEdges.
   		 * @returns shortest pathes map.
   		 */
-  def floydWarshall(graph: graphlibLib.graphlibMod.Graph): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
+  def floydWarshall(graph: graphlibLib.graphlibMod.Graph): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
   /**
   		 * This function is an implementation of the Floyd-Warshall algorithm, which finds the
   		 * shortest path from each node to every other reachable node in the graph. It is similar
@@ -189,7 +189,7 @@ object algNs extends js.Object {
   def floydWarshall(
     graph: graphlibLib.graphlibMod.Graph,
     weightFn: js.Function1[/* e */ graphlibLib.graphlibMod.Edge, scala.Double]
-  ): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
   /**
   		 * This function is an implementation of the Floyd-Warshall algorithm, which finds the
   		 * shortest path from each node to every other reachable node in the graph. It is similar
@@ -213,7 +213,7 @@ object algNs extends js.Object {
     graph: graphlibLib.graphlibMod.Graph,
     weightFn: js.Function1[/* e */ graphlibLib.graphlibMod.Edge, scala.Double],
     edgeFn: js.Function1[/* v */ java.lang.String, js.Array[graphlibLib.graphlibMod.Edge]]
-  ): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[graphlibLib.graphlibMod.Path]] = js.native
   /**
   		 * Given a Graph, graph, this function returns true if the graph has no cycles and returns false if it
   		 * does. This algorithm returns as soon as it detects the first cycle. You can use alg.findCycles

@@ -12,7 +12,7 @@ trait Fields
          * will include signature metadata as well as any fields provided to
          * s3.createPresignedPost
          */
-/* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String] {
+/* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   /**
            * A base64-encoded policy detailing what constitutes an acceptable POST
            * upload. Composed of the conditions and expiration provided to

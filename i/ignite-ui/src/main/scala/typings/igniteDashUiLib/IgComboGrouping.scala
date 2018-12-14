@@ -10,7 +10,7 @@ trait IgComboGrouping
   extends /**
 	 * Option for IgComboGrouping
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies the sort order - ascending or descending.
   	 *

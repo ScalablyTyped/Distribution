@@ -33,7 +33,7 @@ trait ContactAddress extends js.Object {
 @js.native
 object ContactAddress
   extends /** Constructor of ContactAddress object */
-ScalablyTyped.runtime.Instantiable8[
+org.scalablytyped.runtime.Instantiable8[
       /* pref */ js.UndefOr[/* pref */ scala.Boolean], 
       /* type */ js.UndefOr[/* type */ java.lang.String], 
       /* formatted */ js.UndefOr[/* formatted */ java.lang.String], 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IMessageHandlerMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[MessageHandler[_]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[MessageHandler[_]]
 

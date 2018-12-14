@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("type-check", JSImport.Namespace)
 @js.native
 object typeDashCheckMod
-  extends ScalablyTyped.runtime.TopLevel[typeDashCheckLib.TypeCheckNs.TC]
+  extends org.scalablytyped.runtime.TopLevel[typeDashCheckLib.TypeCheckNs.TC]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait JsonObject
-  extends /* x */ ScalablyTyped.runtime.StringDictionary[electronDashSettingsLib.JsonValue]
+  extends /* x */ org.scalablytyped.runtime.StringDictionary[electronDashSettingsLib.JsonValue]
 

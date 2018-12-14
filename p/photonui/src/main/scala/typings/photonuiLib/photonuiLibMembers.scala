@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object photonuiLibMembers extends js.Object {
   def `_`(string: java.lang.String): java.lang.String = js.native
-  def `_`(string: java.lang.String, replacements: ScalablyTyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
+  def `_`(
+    string: java.lang.String,
+    replacements: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): java.lang.String = js.native
 }
 

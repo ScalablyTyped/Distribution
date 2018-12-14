@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ConfigSpriteConfig
-  extends ScalablyTyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.SpriteConfig, kineticjsLib.KineticNs.ISprite]
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.SpriteConfig, kineticjsLib.KineticNs.ISprite]
 

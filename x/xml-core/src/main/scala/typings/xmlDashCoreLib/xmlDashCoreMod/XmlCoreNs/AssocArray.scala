@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait AssocArray[T]
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[T]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[T]
 

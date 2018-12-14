@@ -45,7 +45,10 @@ object screepsLibMembers extends js.Object {
   val CONTROLLER_NUKE_BLOCKED_UPGRADE: scala.Double = js.native
   val CONTROLLER_RESERVE: scala.Double = js.native
   val CONTROLLER_RESERVE_MAX: scala.Double = js.native
-  val CONTROLLER_STRUCTURES: stdLib.Record[BuildableStructureConstant, ScalablyTyped.runtime.NumberDictionary[scala.Double]] = js.native
+  val CONTROLLER_STRUCTURES: stdLib.Record[
+    BuildableStructureConstant, 
+    org.scalablytyped.runtime.NumberDictionary[scala.Double]
+  ] = js.native
   val CREEP_CLAIM_LIFE_TIME: screepsLib.screepsLibNumbers.`600` = js.native
   val CREEP_CORPSE_RATE: screepsLib.screepsLibNumbers.`0DOT2` = js.native
   val CREEP_LIFE_TIME: screepsLib.screepsLibNumbers.`1500` = js.native

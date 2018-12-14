@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_InstallVue extends js.Object {
-  var Store: ScalablyTyped.runtime.Instantiable1[
+  var Store: org.scalablytyped.runtime.Instantiable1[
     /* options */ vuexLib.typesMod.StoreOptions[js.Object], 
     vuexLib.typesMod.Store[js.Object]
   ]

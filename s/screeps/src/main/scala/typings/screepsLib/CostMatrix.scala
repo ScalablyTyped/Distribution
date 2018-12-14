@@ -14,7 +14,7 @@ trait CostMatrix
      * Creates a new CostMatrix containing 0's for all positions.
      * @constructor
      */
-ScalablyTyped.runtime.Instantiable0[CostMatrix] {
+org.scalablytyped.runtime.Instantiable0[CostMatrix] {
   /**
        * Static method which deserializes a new CostMatrix using the return value of serialize.
        * @param val Whatever serialize returned

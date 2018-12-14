@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait LoggerOptions
-  extends /* custom */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* custom */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var level: js.UndefOr[LogLevel] = js.undefined
   var name: java.lang.String
   var serializers: js.UndefOr[Serializers] = js.undefined

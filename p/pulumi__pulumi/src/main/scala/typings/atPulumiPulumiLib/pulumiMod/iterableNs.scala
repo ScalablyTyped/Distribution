@@ -19,7 +19,7 @@ object iterableNs extends js.Object {
         ]
       ]
     ]
-  ): atPulumiPulumiLib.resourceMod.Output[ScalablyTyped.runtime.StringDictionary[js.Array[V]]] = js.native
+  ): atPulumiPulumiLib.resourceMod.Output[org.scalablytyped.runtime.StringDictionary[js.Array[V]]] = js.native
   def toObject[T, V](
     iter: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[T]]],
     selector: js.Function1[
@@ -31,6 +31,6 @@ object iterableNs extends js.Object {
         ]
       ]
     ]
-  ): atPulumiPulumiLib.resourceMod.Output[ScalablyTyped.runtime.StringDictionary[V]] = js.native
+  ): atPulumiPulumiLib.resourceMod.Output[org.scalablytyped.runtime.StringDictionary[V]] = js.native
 }
 

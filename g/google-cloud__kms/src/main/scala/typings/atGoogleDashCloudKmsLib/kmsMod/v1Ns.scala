@@ -14,7 +14,7 @@ object v1Ns extends js.Object {
   
   trait CryptoKey extends js.Object {
     var createTime: googleDashProtobufLib.googleProtobufTimestampUnderscorePbMod.TimestampNs.AsObject
-    var labels: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    var labels: org.scalablytyped.runtime.StringDictionary[java.lang.String]
     var name: java.lang.String
     var nextRotationTime: js.UndefOr[
         googleDashProtobufLib.googleProtobufTimestampUnderscorePbMod.TimestampNs.AsObject

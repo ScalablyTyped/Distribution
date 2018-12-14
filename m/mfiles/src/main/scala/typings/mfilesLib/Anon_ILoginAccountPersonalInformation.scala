@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ILoginAccountPersonalInformation
-  extends ScalablyTyped.runtime.Instantiable0[ILoginAccountPersonalInformation]
+  extends org.scalablytyped.runtime.Instantiable0[ILoginAccountPersonalInformation]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CustomElementConstructor
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.HTMLElement]
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.HTMLElement]
 

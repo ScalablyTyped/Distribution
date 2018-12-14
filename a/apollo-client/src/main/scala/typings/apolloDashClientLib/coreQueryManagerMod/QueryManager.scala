@@ -71,7 +71,7 @@ class QueryManager[TStore] protected () extends js.Object {
   def getQueryWithPreviousResult[T](queryIdOrObservable: java.lang.String): apolloDashClientLib.Anon_PreviousResult = js.native
   def mutate[T](
     hasMutationVariablesOptimisticResponseUpdateQueriesRefetchQueriesAwaitRefetchQueriesUpdateErrorPolicyFetchPolicyContext: apolloDashClientLib.coreWatchQueryOptionsMod.MutationOptions[
-      ScalablyTyped.runtime.StringDictionary[_], 
+      org.scalablytyped.runtime.StringDictionary[_], 
       apolloDashClientLib.coreTypesMod.OperationVariables
     ]
   ): js.Promise[apolloDashLinkLib.libTypesMod.FetchResult[T, stdLib.Record[java.lang.String, _]]] = js.native

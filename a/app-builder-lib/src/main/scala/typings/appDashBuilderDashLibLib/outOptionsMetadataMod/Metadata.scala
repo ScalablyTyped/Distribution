@@ -13,7 +13,7 @@ trait Metadata extends js.Object {
        */
   val build: js.UndefOr[appDashBuilderDashLibLib.outConfigurationMod.Configuration] = js.undefined
   /** @private */
-  val dependencies: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  val dependencies: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * The application description.
        */

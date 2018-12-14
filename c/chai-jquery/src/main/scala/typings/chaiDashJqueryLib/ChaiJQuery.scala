@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait ChaiJQuery
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any]
-     with /* index */ ScalablyTyped.runtime.NumberDictionary[stdLib.HTMLElement] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any]
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[stdLib.HTMLElement] {
   /**
        * The DOM node context originally passed to jQuery(); if none was passed then context will likely be the document. (DEPRECATED from v1.10)
        */
@@ -690,7 +690,7 @@ trait ChaiJQuery
        *
        * @param obj An object of key-value pairs of data to update.
        */
-  def data(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): ChaiJQuery = js.native
+  def data(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): ChaiJQuery = js.native
   /**
        * Trigger the "dblclick" event on an element.
        */
@@ -1878,20 +1878,6 @@ trait ChaiJQuery
   /**
        * Remove an event handler.
        *
-       * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
-       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
-       */
-  def off(events: ScalablyTyped.runtime.StringDictionary[js.Any]): ChaiJQuery = js.native
-  /**
-       * Remove an event handler.
-       *
-       * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
-       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
-       */
-  def off(events: ScalablyTyped.runtime.StringDictionary[js.Any], selector: java.lang.String): ChaiJQuery = js.native
-  /**
-       * Remove an event handler.
-       *
        * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".
        * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
        * @param handler A handler function previously attached for the event(s), or the special value false.
@@ -1925,6 +1911,20 @@ trait ChaiJQuery
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): ChaiJQuery = js.native
   /**
+       * Remove an event handler.
+       *
+       * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
+       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
+       */
+  def off(events: org.scalablytyped.runtime.StringDictionary[js.Any]): ChaiJQuery = js.native
+  /**
+       * Remove an event handler.
+       *
+       * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
+       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
+       */
+  def off(events: org.scalablytyped.runtime.StringDictionary[js.Any], selector: java.lang.String): ChaiJQuery = js.native
+  /**
        * Get the current coordinates of the first element in the set of matched elements, relative to the document.
        */
   def offset(): jqueryLib.JQueryCoordinates = js.native
@@ -1950,37 +1950,6 @@ trait ChaiJQuery
        * Get the closest ancestor element that is positioned.
        */
   def offsetParent(): ChaiJQuery = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       */
-  def on(events: ScalablyTyped.runtime.StringDictionary[js.Any]): ChaiJQuery = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       */
-  def on(events: ScalablyTyped.runtime.StringDictionary[js.Any], data: js.Any): ChaiJQuery = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       */
-  def on(events: ScalablyTyped.runtime.StringDictionary[js.Any], selector: java.lang.String): ChaiJQuery = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       */
-  def on(events: ScalablyTyped.runtime.StringDictionary[js.Any], selector: java.lang.String, data: js.Any): ChaiJQuery = js.native
   /**
        * Attach an event handler function for one or more events to the selected elements.
        *
@@ -2030,36 +1999,40 @@ trait ChaiJQuery
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */js.Any, _]
   ): ChaiJQuery = js.native
   /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       * Attach an event handler function for one or more events to the selected elements.
        *
        * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
        * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
        * @param data Data to be passed to the handler in event.data when an event occurs.
        */
-  def one(events: ScalablyTyped.runtime.StringDictionary[js.Any]): ChaiJQuery = js.native
+  def on(events: org.scalablytyped.runtime.StringDictionary[js.Any]): ChaiJQuery = js.native
   /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       * Attach an event handler function for one or more events to the selected elements.
        *
        * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
        * @param data Data to be passed to the handler in event.data when an event occurs.
        */
-  def one(events: ScalablyTyped.runtime.StringDictionary[js.Any], data: js.Any): ChaiJQuery = js.native
+  def on(events: org.scalablytyped.runtime.StringDictionary[js.Any], data: js.Any): ChaiJQuery = js.native
   /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
-       *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       */
-  def one(events: ScalablyTyped.runtime.StringDictionary[js.Any], selector: java.lang.String): ChaiJQuery = js.native
-  /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       * Attach an event handler function for one or more events to the selected elements.
        *
        * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
        * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
        * @param data Data to be passed to the handler in event.data when an event occurs.
        */
-  def one(events: ScalablyTyped.runtime.StringDictionary[js.Any], selector: java.lang.String, data: js.Any): ChaiJQuery = js.native
+  def on(events: org.scalablytyped.runtime.StringDictionary[js.Any], selector: java.lang.String): ChaiJQuery = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       */
+  def on(
+    events: org.scalablytyped.runtime.StringDictionary[js.Any],
+    selector: java.lang.String,
+    data: js.Any
+  ): ChaiJQuery = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
        *
@@ -2104,6 +2077,41 @@ trait ChaiJQuery
     events: java.lang.String,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
+  ): ChaiJQuery = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       */
+  def one(events: org.scalablytyped.runtime.StringDictionary[js.Any]): ChaiJQuery = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       */
+  def one(events: org.scalablytyped.runtime.StringDictionary[js.Any], data: js.Any): ChaiJQuery = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       */
+  def one(events: org.scalablytyped.runtime.StringDictionary[js.Any], selector: java.lang.String): ChaiJQuery = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       */
+  def one(
+    events: org.scalablytyped.runtime.StringDictionary[js.Any],
+    selector: java.lang.String,
+    data: js.Any
   ): ChaiJQuery = js.native
   /**
        * Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin. Returns an integer (without "px") representation of the value or null if called on an empty set of elements.

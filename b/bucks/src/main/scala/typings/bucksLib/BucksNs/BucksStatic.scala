@@ -10,7 +10,7 @@ trait BucksStatic
   extends /**
      * Create bucks object.
      */
-ScalablyTyped.runtime.Instantiable0[Bucks] {
+org.scalablytyped.runtime.Instantiable0[Bucks] {
   /**
        * If set `true`, uncaught errors are logged.
        */

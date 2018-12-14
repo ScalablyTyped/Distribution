@@ -15,7 +15,7 @@ class namespaced protected () extends User {
   /* CompleteClass */
   override val active: scala.Boolean = js.native
   /* CompleteClass */
-  override val attributes: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  override val attributes: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /* CompleteClass */
   override val displayname: java.lang.String = js.native
   /* CompleteClass */

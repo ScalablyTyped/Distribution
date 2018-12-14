@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait NextConfig
   extends // Plugin can define their own keys.
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var assetPrefix: js.UndefOr[java.lang.String] = js.undefined
   var configOrigin: js.UndefOr[java.lang.String] = js.undefined
   var distDir: js.UndefOr[java.lang.String] = js.undefined

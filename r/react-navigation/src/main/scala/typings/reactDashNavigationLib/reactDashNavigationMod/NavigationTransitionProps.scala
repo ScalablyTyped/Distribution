@@ -28,6 +28,6 @@ trait NavigationTransitionProps extends js.Object {
   var scene: NavigationScene
   // All the scenes of the transitioner.
   var scenes: js.Array[NavigationScene]
-  var screenProps: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var screenProps: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

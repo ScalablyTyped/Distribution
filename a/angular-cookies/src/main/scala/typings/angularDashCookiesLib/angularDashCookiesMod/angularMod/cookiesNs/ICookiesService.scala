@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
          */
 @js.native
 trait ICookiesService
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def get(key: java.lang.String): java.lang.String = js.native
   def getAll(): js.Any = js.native
   def getObject(key: java.lang.String): js.Any = js.native

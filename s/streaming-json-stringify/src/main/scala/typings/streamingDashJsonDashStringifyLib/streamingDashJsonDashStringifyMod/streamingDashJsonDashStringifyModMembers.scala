@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("streaming-json-stringify", JSImport.Namespace)
 @js.native
 object streamingDashJsonDashStringifyModMembers
-  extends ScalablyTyped.runtime.TopLevel[StringifyFactory]
+  extends org.scalablytyped.runtime.TopLevel[StringifyFactory]
 

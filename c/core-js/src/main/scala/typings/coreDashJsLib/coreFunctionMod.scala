@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/core/function", JSImport.Namespace)
 @js.native
 object coreFunctionMod
-  extends ScalablyTyped.runtime.TopLevel[Anon_Part]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Part]
 

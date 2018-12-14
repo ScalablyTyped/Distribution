@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IResolverObject[TSource, TContext]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[
-      (IFieldResolver[TSource, TContext, ScalablyTyped.runtime.StringDictionary[_]]) | (IResolverOptions[TSource, TContext]) | js.Object
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[
+      (IFieldResolver[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]) | (IResolverOptions[TSource, TContext]) | js.Object
     ]
 

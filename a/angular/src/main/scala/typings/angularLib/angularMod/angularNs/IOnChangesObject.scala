@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IOnChangesObject
-  extends /* property */ ScalablyTyped.runtime.StringDictionary[IChangesObject[_]]
+  extends /* property */ org.scalablytyped.runtime.StringDictionary[IChangesObject[_]]
 

@@ -15,7 +15,7 @@ trait CommonWidgetProps extends js.Object {
      * https://community.algolia.com/react-instantsearch/guide/i18n.html
      */
   var translations: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | (js.Function1[/* repeated */js.Any, _])]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Function1[/* repeated */js.Any, _])]
   ] = js.undefined
 }
 

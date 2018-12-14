@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_KnockoutTemplateEngine
-  extends ScalablyTyped.runtime.Instantiable0[KnockoutTemplateEngine]
+  extends org.scalablytyped.runtime.Instantiable0[KnockoutTemplateEngine]
 

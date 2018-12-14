@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EnumerableStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* getEnumerator */ js.Function0[Enumerator[js.Object]], Enumerable[js.Object]] {
+  extends org.scalablytyped.runtime.Instantiable1[/* getEnumerator */ js.Function0[Enumerator[js.Object]], Enumerable[js.Object]] {
   def `case`[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[Enumerable[T]]
+    sources: org.scalablytyped.runtime.NumberDictionary[Enumerable[T]]
   ): Enumerable[T] = js.native
   def `case`[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[Enumerable[T]],
+    sources: org.scalablytyped.runtime.NumberDictionary[Enumerable[T]],
     defaultSource: Enumerable[T]
   ): Enumerable[T] = js.native
   def `case`[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[Enumerable[T]]
+    sources: org.scalablytyped.runtime.StringDictionary[Enumerable[T]]
   ): Enumerable[T] = js.native
   def `case`[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[Enumerable[T]],
+    sources: org.scalablytyped.runtime.StringDictionary[Enumerable[T]],
     defaultSource: Enumerable[T]
   ): Enumerable[T] = js.native
   def `catch`[T](sources: Enumerable[T]*): Enumerable[T] = js.native
@@ -61,20 +61,20 @@ trait EnumerableStatic
   ): scala.Boolean = js.native
   def switchCase[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[Enumerable[T]]
+    sources: org.scalablytyped.runtime.NumberDictionary[Enumerable[T]]
   ): Enumerable[T] = js.native
   def switchCase[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[Enumerable[T]],
+    sources: org.scalablytyped.runtime.NumberDictionary[Enumerable[T]],
     defaultSource: Enumerable[T]
   ): Enumerable[T] = js.native
   def switchCase[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[Enumerable[T]]
+    sources: org.scalablytyped.runtime.StringDictionary[Enumerable[T]]
   ): Enumerable[T] = js.native
   def switchCase[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[Enumerable[T]],
+    sources: org.scalablytyped.runtime.StringDictionary[Enumerable[T]],
     defaultSource: Enumerable[T]
   ): Enumerable[T] = js.native
   def `throw`[T](error: stdLib.Error): Enumerable[T] = js.native

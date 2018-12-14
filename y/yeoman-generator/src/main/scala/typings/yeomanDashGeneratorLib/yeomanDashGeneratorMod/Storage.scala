@@ -17,7 +17,7 @@ class Storage protected ()
   /* CompleteClass */
   override def get(key: java.lang.String): js.Any = js.native
   /* CompleteClass */
-  override def getAll(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  override def getAll(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /* CompleteClass */
   override def save(): scala.Unit = js.native
   /* CompleteClass */

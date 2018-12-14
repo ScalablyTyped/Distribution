@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-matchers", JSImport.Namespace)
 @js.native
 object jestDashMatchersMod
-  extends ScalablyTyped.runtime.TopLevel[jestLib.jestNs.Expect]
+  extends org.scalablytyped.runtime.TopLevel[jestLib.jestNs.Expect]
 

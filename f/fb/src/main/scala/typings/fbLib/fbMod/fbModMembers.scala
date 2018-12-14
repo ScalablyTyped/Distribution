@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fb", JSImport.Namespace)
 @js.native
 object fbModMembers
-  extends ScalablyTyped.runtime.TopLevel[fbLib.FBSDK]
+  extends org.scalablytyped.runtime.TopLevel[fbLib.FBSDK]
 

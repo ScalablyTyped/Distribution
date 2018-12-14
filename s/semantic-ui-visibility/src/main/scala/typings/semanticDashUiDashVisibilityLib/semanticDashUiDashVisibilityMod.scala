@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-visibility", JSImport.Namespace)
 @js.native
 object semanticDashUiDashVisibilityMod
-  extends ScalablyTyped.runtime.TopLevel[semanticDashUiDashVisibilityLib.SemanticUINs.Visibility]
+  extends org.scalablytyped.runtime.TopLevel[semanticDashUiDashVisibilityLib.SemanticUINs.Visibility]
 

@@ -10,7 +10,7 @@ trait System extends Config {
   /**
            * This represents the System base class, which can be extended or reinstantiated to create a custom System instance.
            */
-  var constructor: ScalablyTyped.runtime.Instantiable0[System] = js.native
+  var constructor: org.scalablytyped.runtime.Instantiable0[System] = js.native
   var env: java.lang.String = js.native
   var loaderErrorStack: scala.Boolean = js.native
   /**

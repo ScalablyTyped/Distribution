@@ -18,7 +18,7 @@ trait BluetoothRemoteGATTServer
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[BluetoothRemoteGATTServer] {
+org.scalablytyped.runtime.Instantiable0[BluetoothRemoteGATTServer] {
   /**
        * <p>Connect to a BLE device - returns a promise,
        * the argument of which is the <code>BluetoothRemoteGATTServer</code> connection.</p>

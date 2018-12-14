@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait page
   extends wepyLib.componentMod.default {
   @JSName("$preloadData")
-  var $preloadData: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  var $preloadData: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   var config: js.UndefOr[PageConfig] = js.native
   @JSName("$back")
   def $back(delta: scala.Double): js.Any = js.native
@@ -18,9 +18,9 @@ trait page
   @JSName("$init")
   def $init(wxpage: js.Any, $parent: js.Any): js.Any = js.native
   @JSName("$preload")
-  def $preload(key: ScalablyTyped.runtime.StringDictionary[js.Any], data: js.Any): js.Any = js.native
-  @JSName("$preload")
   def $preload(key: java.lang.String, data: js.Any): js.Any = js.native
+  @JSName("$preload")
+  def $preload(key: org.scalablytyped.runtime.StringDictionary[js.Any], data: js.Any): js.Any = js.native
   @JSName("$redirect")
   def $redirect(url: java.lang.String): js.Any = js.native
   @JSName("$redirect")
@@ -31,7 +31,7 @@ trait page
   def $route_navigateTo(
     `type`: wepyLib.wepyLibStrings.navigateTo,
     url: java.lang.String,
-    params: ScalablyTyped.runtime.StringDictionary[js.Any]
+    params: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Any = js.native
   @JSName("$route")
   def $route_navigateTo(`type`: wepyLib.wepyLibStrings.navigateTo, url: UrlParam): js.Any = js.native
@@ -39,7 +39,7 @@ trait page
   def $route_navigateTo(
     `type`: wepyLib.wepyLibStrings.navigateTo,
     url: UrlParam,
-    params: ScalablyTyped.runtime.StringDictionary[js.Any]
+    params: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Any = js.native
   @JSName("$route")
   def $route_redirectTo(`type`: wepyLib.wepyLibStrings.redirectTo, url: java.lang.String): js.Any = js.native
@@ -47,7 +47,7 @@ trait page
   def $route_redirectTo(
     `type`: wepyLib.wepyLibStrings.redirectTo,
     url: java.lang.String,
-    params: ScalablyTyped.runtime.StringDictionary[js.Any]
+    params: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Any = js.native
   @JSName("$route")
   def $route_redirectTo(`type`: wepyLib.wepyLibStrings.redirectTo, url: UrlParam): js.Any = js.native
@@ -55,7 +55,7 @@ trait page
   def $route_redirectTo(
     `type`: wepyLib.wepyLibStrings.redirectTo,
     url: UrlParam,
-    params: ScalablyTyped.runtime.StringDictionary[js.Any]
+    params: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Any = js.native
   @JSName("$switch")
   def $switch(url: java.lang.String): js.Any = js.native

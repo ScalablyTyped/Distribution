@@ -27,6 +27,6 @@ trait DumpOptions extends js.Object {
   // if true, sort keys when dumping YAML. If a function, use the function to sort the keys. (default: false)
   var sortKeys: js.UndefOr[scala.Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double])] = js.undefined
   // Each tag may have own set of styles.	- "tag" => "style" map.
-  var styles: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var styles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

@@ -10,5 +10,5 @@ trait UsersStatic
   extends /**
              * @param dispatcher
              */
-ScalablyTyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Users]
+org.scalablytyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Users]
 

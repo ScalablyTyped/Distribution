@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IStateConditions
-  extends ScalablyTyped.runtime.Instantiable0[IStateConditions]
+  extends org.scalablytyped.runtime.Instantiable0[IStateConditions]
 

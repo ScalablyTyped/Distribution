@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ITranslationTable
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | ITranslationTable]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | ITranslationTable]
 

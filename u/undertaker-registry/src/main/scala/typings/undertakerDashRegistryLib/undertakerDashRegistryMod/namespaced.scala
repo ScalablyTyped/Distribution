@@ -40,6 +40,6 @@ class namespaced () extends UndertakerRegistry {
        * Custom registries can override this when when inheriting from this default registry.
        */
   /* CompleteClass */
-  override def tasks(): ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]] = js.native
+  override def tasks(): org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]] = js.native
 }
 

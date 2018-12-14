@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object BigNumberNs {
-  type Constructor = ScalablyTyped.runtime.Instantiable2[
+  type Constructor = org.scalablytyped.runtime.Instantiable2[
     /* n */ Value, 
     /* base */ js.UndefOr[/* base */ scala.Double], 
     bignumberDotJsLib.bignumberDotJsMod.BigNumber

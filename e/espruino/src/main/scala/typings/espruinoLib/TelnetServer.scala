@@ -19,5 +19,5 @@ trait TelnetServer
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[TelnetServer]
+org.scalablytyped.runtime.Instantiable0[TelnetServer]
 

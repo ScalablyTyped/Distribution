@@ -22,6 +22,6 @@ trait RequestInfo extends js.Object {
   /**
            * The variable values used at runtime.
            */
-  var variables: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null]
+  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null]
 }
 

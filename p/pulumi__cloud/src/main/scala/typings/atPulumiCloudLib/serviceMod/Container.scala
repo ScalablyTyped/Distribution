@@ -36,14 +36,14 @@ trait Container extends js.Object {
        * run](https://docs.docker.com/engine/reference/run/).
        */
   var dockerLabels: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+    atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   ] = js.undefined
   /**
        * Optional environment variables to set and make available to the container
        * as it is running.
        */
   var environment: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
   ] = js.undefined
   /**
        * The function code to use as the implementation of the contaner.  If `function` is specified,

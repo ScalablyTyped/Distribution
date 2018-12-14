@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IColorExpression
-  extends /* cssPropertyName */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* cssPropertyName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

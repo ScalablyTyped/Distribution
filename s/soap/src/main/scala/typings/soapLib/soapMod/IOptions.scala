@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IOptions
   extends IWsdlBaseOptions
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var customDeserializer: js.UndefOr[js.Any] = js.undefined
   var disableCache: js.UndefOr[scala.Boolean] = js.undefined
   var endpoint: js.UndefOr[java.lang.String] = js.undefined

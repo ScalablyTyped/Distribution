@@ -15,8 +15,8 @@ class default[T] protected ()
 @JSImport("antd/lib/table", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Column: ScalablyTyped.runtime.Instantiable0[antdLib.libTableColumnMod.default[js.Any]] = js.native
-  var ColumnGroup: ScalablyTyped.runtime.Instantiable0[antdLib.libTableColumnGroupMod.default] = js.native
+  var Column: org.scalablytyped.runtime.Instantiable0[antdLib.libTableColumnMod.default[js.Any]] = js.native
+  var ColumnGroup: org.scalablytyped.runtime.Instantiable0[antdLib.libTableColumnGroupMod.default] = js.native
   var defaultProps: antdLib.Anon_Bordered = js.native
   var propTypes: antdLib.Anon_BorderedSize = js.native
 }

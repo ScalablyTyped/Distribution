@@ -146,7 +146,7 @@ trait OAuth2Service extends js.Object {
   /**
            * Sets the additional HTTP headers that should be sent when retrieving or refreshing the access token.
            */
-  def setTokenHeaders(tokenHeaders: ScalablyTyped.runtime.StringDictionary[java.lang.String]): OAuth2Service = js.native
+  def setTokenHeaders(tokenHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String]): OAuth2Service = js.native
   /**
            * Sets an additional function to invoke on the payload of the access token request.
            */

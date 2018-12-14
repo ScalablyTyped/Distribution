@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLAllCollection
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Element] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Element] {
   /**
        * Returns the number of elements in the collection.
        */
@@ -29,5 +29,5 @@ trait HTMLAllCollection
 @JSGlobal("HTMLAllCollection")
 @js.native
 object HTMLAllCollection
-  extends ScalablyTyped.runtime.Instantiable0[HTMLAllCollection]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLAllCollection]
 

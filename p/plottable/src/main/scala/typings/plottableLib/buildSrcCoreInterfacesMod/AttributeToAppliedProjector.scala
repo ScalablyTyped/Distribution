@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait AttributeToAppliedProjector
-  extends /* attr */ ScalablyTyped.runtime.StringDictionary[AppliedProjector]
+  extends /* attr */ org.scalablytyped.runtime.StringDictionary[AppliedProjector]
 

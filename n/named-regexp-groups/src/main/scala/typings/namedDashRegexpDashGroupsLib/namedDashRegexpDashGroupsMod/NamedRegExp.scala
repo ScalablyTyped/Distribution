@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 
 trait NamedRegExp extends js.Object {
-  @JSName(ScalablyTyped.runtime.Symbol.`match`)
+  @JSName(org.scalablytyped.runtime.Symbol.`match`)
   var `match`: js.Function1[/* str */ java.lang.String, NamedRegExpExecArray]
-  @JSName(ScalablyTyped.runtime.Symbol.replace)
+  @JSName(org.scalablytyped.runtime.Symbol.replace)
   var replace: js.Function2[
     /* str */ java.lang.String, 
     /* replacement */ java.lang.String | (js.Function2[/* match */ java.lang.String, /* repeated */java.lang.String, java.lang.String]), 
     java.lang.String
   ]
-  @JSName(ScalablyTyped.runtime.Symbol.search)
+  @JSName(org.scalablytyped.runtime.Symbol.search)
   var search: js.Function1[/* str */ java.lang.String, scala.Double]
-  @JSName(ScalablyTyped.runtime.Symbol.split)
+  @JSName(org.scalablytyped.runtime.Symbol.split)
   var split: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]]
   /**
        * Executes a search on a string using a regular expression pattern, and returns an array containing the results of that search.

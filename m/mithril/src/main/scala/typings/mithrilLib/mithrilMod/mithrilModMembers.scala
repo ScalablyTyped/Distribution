@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mithril", JSImport.Namespace)
 @js.native
 object mithrilModMembers
-  extends ScalablyTyped.runtime.TopLevel[mithrilLib.mithrilMod.MithrilNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[mithrilLib.mithrilMod.MithrilNs.Static]
 

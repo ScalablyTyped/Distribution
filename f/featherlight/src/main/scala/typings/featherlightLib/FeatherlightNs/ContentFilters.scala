@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ContentFilters
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[ContentFilter]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[ContentFilter]
 

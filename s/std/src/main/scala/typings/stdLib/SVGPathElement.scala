@@ -86,5 +86,5 @@ trait SVGPathElement extends SVGGraphicsElement {
 @JSGlobal("SVGPathElement")
 @js.native
 object SVGPathElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGPathElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPathElement]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("convict", JSImport.Namespace)
 @js.native
 object convictModMembers
-  extends ScalablyTyped.runtime.TopLevel[convict]
+  extends org.scalablytyped.runtime.TopLevel[convict]
 

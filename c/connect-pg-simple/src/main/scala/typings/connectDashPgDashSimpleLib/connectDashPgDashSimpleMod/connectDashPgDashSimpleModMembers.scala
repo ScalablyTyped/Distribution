@@ -13,7 +13,7 @@ object connectDashPgDashSimpleModMembers extends js.Object {
       /* options */ js.UndefOr[expressDashSessionLib.expressDashSessionMod.sessionNs.SessionOptions], 
       expressLib.expressMod.eNs.RequestHandler
     ]
-  ): ScalablyTyped.runtime.Instantiable1[
+  ): org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
       /* options */ connectDashPgDashSimpleLib.connectDashPgDashSimpleMod.connectPgSimpleNs.PGStoreOptions
     ], 

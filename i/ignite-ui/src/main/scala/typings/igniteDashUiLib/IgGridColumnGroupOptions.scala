@@ -10,7 +10,7 @@ trait IgGridColumnGroupOptions
   extends /**
 	 * Option for IgGridColumnGroupOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Sets whether expansion indicators are visible in the group header.
   	 *

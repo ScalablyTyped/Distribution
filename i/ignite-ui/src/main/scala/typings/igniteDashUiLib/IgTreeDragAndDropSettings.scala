@@ -10,7 +10,7 @@ trait IgTreeDragAndDropSettings
   extends /**
 	 * Option for IgTreeDragAndDropSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets whether the widget will accept drag and drop from other controls.
   	 *

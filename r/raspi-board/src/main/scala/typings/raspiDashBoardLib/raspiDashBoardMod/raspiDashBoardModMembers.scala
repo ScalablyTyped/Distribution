@@ -24,6 +24,6 @@ object raspiDashBoardModMembers extends js.Object {
   def getGpioNumber(alias: scala.Double): scala.Double | scala.Null = js.native
   def getPinNumber(alias: java.lang.String): scala.Double | scala.Null = js.native
   def getPinNumber(alias: scala.Double): scala.Double | scala.Null = js.native
-  def getPins(): ScalablyTyped.runtime.NumberDictionary[PinInfo] = js.native
+  def getPins(): org.scalablytyped.runtime.NumberDictionary[PinInfo] = js.native
 }
 

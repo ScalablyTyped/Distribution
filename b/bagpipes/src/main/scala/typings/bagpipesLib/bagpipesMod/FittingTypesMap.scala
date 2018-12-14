@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FittingTypesMap
-  extends /* fittingType */ ScalablyTyped.runtime.StringDictionary[FittingFactory]
+  extends /* fittingType */ org.scalablytyped.runtime.StringDictionary[FittingFactory]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Tags
-  extends /* tag */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  extends /* tag */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 

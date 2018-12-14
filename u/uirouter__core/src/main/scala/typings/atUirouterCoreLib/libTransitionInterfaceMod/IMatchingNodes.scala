@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IMatchingNodes
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode]] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode]] {
   var entering: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode]
   var exiting: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode]
   var from: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode]

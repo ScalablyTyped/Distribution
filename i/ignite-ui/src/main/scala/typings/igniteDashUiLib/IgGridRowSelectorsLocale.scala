@@ -10,7 +10,7 @@ trait IgGridRowSelectorsLocale
   extends /**
 	 * Option for IgGridRowSelectorsLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Deselect all text for the select/deselect all overlay.
   	 *

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object mongooseModMembers extends js.Object {
   var DocumentProvider: js.Any = js.native
   var Model: Model[js.Any, js.Object] = js.native
-  var Mongoose: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] = js.native
+  var Mongoose: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] = js.native
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
   var STATES: js.Any = js.native

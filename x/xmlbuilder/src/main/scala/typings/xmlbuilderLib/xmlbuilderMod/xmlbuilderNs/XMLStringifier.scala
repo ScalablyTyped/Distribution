@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait XMLStringifier
-  extends /* x */ ScalablyTyped.runtime.StringDictionary[(js.Function1[/* v */ js.Any, java.lang.String]) | java.lang.String]
+  extends /* x */ org.scalablytyped.runtime.StringDictionary[(js.Function1[/* v */ js.Any, java.lang.String]) | java.lang.String]
 

@@ -16,39 +16,39 @@ class TouchBar protected () extends EventEmitter {
 @JSGlobal("Electron.TouchBar")
 @js.native
 object TouchBar extends js.Object {
-  var TouchBarButton: ScalablyTyped.runtime.Instantiable1[
+  var TouchBarButton: org.scalablytyped.runtime.Instantiable1[
     /* options */ electronLib.ElectronNs.TouchBarButtonConstructorOptions, 
     electronLib.ElectronNs.TouchBarButton
   ] = js.native
-  var TouchBarColorPicker: ScalablyTyped.runtime.Instantiable1[
+  var TouchBarColorPicker: org.scalablytyped.runtime.Instantiable1[
     /* options */ electronLib.ElectronNs.TouchBarColorPickerConstructorOptions, 
     electronLib.ElectronNs.TouchBarColorPicker
   ] = js.native
-  var TouchBarGroup: ScalablyTyped.runtime.Instantiable1[
+  var TouchBarGroup: org.scalablytyped.runtime.Instantiable1[
     /* options */ electronLib.ElectronNs.TouchBarGroupConstructorOptions, 
     electronLib.ElectronNs.TouchBarGroup
   ] = js.native
-  var TouchBarLabel: ScalablyTyped.runtime.Instantiable1[
+  var TouchBarLabel: org.scalablytyped.runtime.Instantiable1[
     /* options */ electronLib.ElectronNs.TouchBarLabelConstructorOptions, 
     electronLib.ElectronNs.TouchBarLabel
   ] = js.native
-  var TouchBarPopover: ScalablyTyped.runtime.Instantiable1[
+  var TouchBarPopover: org.scalablytyped.runtime.Instantiable1[
     /* options */ electronLib.ElectronNs.TouchBarPopoverConstructorOptions, 
     electronLib.ElectronNs.TouchBarPopover
   ] = js.native
-  var TouchBarScrubber: ScalablyTyped.runtime.Instantiable1[
+  var TouchBarScrubber: org.scalablytyped.runtime.Instantiable1[
     /* options */ electronLib.ElectronNs.TouchBarScrubberConstructorOptions, 
     electronLib.ElectronNs.TouchBarScrubber
   ] = js.native
-  var TouchBarSegmentedControl: ScalablyTyped.runtime.Instantiable1[
+  var TouchBarSegmentedControl: org.scalablytyped.runtime.Instantiable1[
     /* options */ electronLib.ElectronNs.TouchBarSegmentedControlConstructorOptions, 
     electronLib.ElectronNs.TouchBarSegmentedControl
   ] = js.native
-  var TouchBarSlider: ScalablyTyped.runtime.Instantiable1[
+  var TouchBarSlider: org.scalablytyped.runtime.Instantiable1[
     /* options */ electronLib.ElectronNs.TouchBarSliderConstructorOptions, 
     electronLib.ElectronNs.TouchBarSlider
   ] = js.native
-  var TouchBarSpacer: ScalablyTyped.runtime.Instantiable1[
+  var TouchBarSpacer: org.scalablytyped.runtime.Instantiable1[
     /* options */ electronLib.ElectronNs.TouchBarSpacerConstructorOptions, 
     electronLib.ElectronNs.TouchBarSpacer
   ] = js.native

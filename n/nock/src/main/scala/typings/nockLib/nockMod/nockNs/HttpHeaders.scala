@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait HttpHeaders
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | nockLib.Anon_Req]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | nockLib.Anon_Req]
 

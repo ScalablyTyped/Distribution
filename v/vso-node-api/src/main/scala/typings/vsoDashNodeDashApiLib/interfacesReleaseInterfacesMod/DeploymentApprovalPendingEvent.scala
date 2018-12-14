@@ -10,7 +10,7 @@ trait DeploymentApprovalPendingEvent extends js.Object {
   var approval: ReleaseApproval
   var approvalOptions: ApprovalOptions
   var completedApprovals: js.Array[ReleaseApproval]
-  var data: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var data: org.scalablytyped.runtime.StringDictionary[js.Any]
   var deployment: Deployment
   var isMultipleRankApproval: scala.Boolean
   var pendingApprovals: js.Array[ReleaseApproval]

@@ -21,6 +21,10 @@ trait Model extends js.Object {
                * @Default {jsonp}
                */
   var ajaxDataType: js.UndefOr[java.lang.String] = js.undefined
+  /** To set either â€˜Postâ€™ or â€˜Getâ€™ for ajax request type which invokes when validate, get suggestion and dictionary action.Possible values are â€˜POSTâ€™ or â€˜GETâ€™
+               * @Default {GET}
+               */
+  var ajaxRequestType: js.UndefOr[java.lang.String] = js.undefined
   /** Triggers when the spell check operations completed through dialog mode.
                */
   var complete: js.UndefOr[js.Function1[/* e */ CompleteEventArgs, scala.Unit]] = js.undefined

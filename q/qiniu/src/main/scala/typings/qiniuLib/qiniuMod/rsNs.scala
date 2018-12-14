@@ -32,7 +32,7 @@ object rsNs extends js.Object {
     def changeHeaders(
       bucket: java.lang.String,
       key: java.lang.String,
-      headers: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+      headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
     /**
@@ -317,7 +317,7 @@ object rsNs extends js.Object {
   def changeHeadersOp(
     bucket: java.lang.String,
     key: java.lang.String,
-    headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): java.lang.String = js.native
   /**
        *

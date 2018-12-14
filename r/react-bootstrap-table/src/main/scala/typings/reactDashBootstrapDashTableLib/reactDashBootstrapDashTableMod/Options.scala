@@ -259,7 +259,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* onModalClose */ js.Function0[scala.Unit], 
       /* onSave */ js.Function1[/* row */ TRow, scala.Unit], 
       /* columns */ js.Array[InsertModalColumnDescription[TRow]], 
-      /* validateState */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* ignoreEditable */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactElement[_]
     ]
@@ -275,7 +275,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   var insertModalBody: js.UndefOr[
     js.Function3[
       /* columns */ js.Array[InsertModalColumnDescription[TRow]], 
-      /* validateState */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* ignoreEditable */ scala.Boolean, 
       reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with ModalBodyInterface[TRow]]
     ]

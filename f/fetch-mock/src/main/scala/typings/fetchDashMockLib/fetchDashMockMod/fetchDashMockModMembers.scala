@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fetch-mock", JSImport.Namespace)
 @js.native
 object fetchDashMockModMembers
-  extends ScalablyTyped.runtime.TopLevel[fetchDashMockLib.fetchDashMockMod.fetchMockNs.FetchMockStatic]
+  extends org.scalablytyped.runtime.TopLevel[fetchDashMockLib.fetchDashMockMod.fetchMockNs.FetchMockStatic]
 

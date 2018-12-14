@@ -10,5 +10,5 @@ trait IgGridFilteringColumnSettingDefaultExpressions
   extends /**
 	 * Option for IgGridFilteringColumnSettingDefaultExpressions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

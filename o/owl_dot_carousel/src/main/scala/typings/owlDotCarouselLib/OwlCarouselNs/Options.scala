@@ -75,7 +75,7 @@ trait Options extends js.Object {
   var pullDrag: js.UndefOr[scala.Boolean] = js.undefined
   // CLASSES
   var refreshClass: js.UndefOr[java.lang.String] = js.undefined
-  var responsive: js.UndefOr[ScalablyTyped.runtime.StringDictionary[Options]] = js.undefined
+  var responsive: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Options]] = js.undefined
   var responsiveBaseElement: js.UndefOr[stdLib.Element] = js.undefined
   var responsiveClass: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var responsiveRefreshRate: js.UndefOr[scala.Double] = js.undefined

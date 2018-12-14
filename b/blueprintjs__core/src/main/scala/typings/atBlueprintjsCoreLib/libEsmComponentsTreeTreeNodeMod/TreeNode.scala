@@ -24,7 +24,7 @@ class TreeNode[T] ()
 @js.native
 object TreeNode extends js.Object {
   var displayName: java.lang.String = js.native
-  def ofType[T](): ScalablyTyped.runtime.Instantiable1[
+  def ofType[T](): org.scalablytyped.runtime.Instantiable1[
     /* props */ atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNodeProps[T], 
     atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.TreeNode[T]
   ] = js.native

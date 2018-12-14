@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Manifest
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   // Optional
   var author: js.UndefOr[js.Any] = js.undefined
   var automation: js.UndefOr[js.Any] = js.undefined
@@ -18,7 +18,7 @@ trait Manifest
   var chrome_settings_overrides: js.UndefOr[chromeLib.Anon_Startuppages] = js.undefined
   var chrome_ui_overrides: js.UndefOr[chromeLib.Anon_Bookmarksui] = js.undefined
   var chrome_url_overrides: js.UndefOr[chromeLib.Anon_Bookmarks] = js.undefined
-  var commands: js.UndefOr[ScalablyTyped.runtime.StringDictionary[chromeLib.Anon_Suggestedkey]] = js.undefined
+  var commands: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeLib.Anon_Suggestedkey]] = js.undefined
   var content_capabilities: js.UndefOr[chromeLib.Anon_Matches] = js.undefined
   var content_scripts: js.UndefOr[js.Array[chromeLib.Anon_Excludeglobs]] = js.undefined
   var content_security_policy: js.UndefOr[java.lang.String] = js.undefined

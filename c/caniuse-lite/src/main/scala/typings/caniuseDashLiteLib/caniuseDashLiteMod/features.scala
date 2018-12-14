@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("caniuse-lite", "features")
 @js.native
 object features
-  extends /* featureID */ ScalablyTyped.runtime.StringDictionary[PackedFeature]
+  extends /* featureID */ org.scalablytyped.runtime.StringDictionary[PackedFeature]
 

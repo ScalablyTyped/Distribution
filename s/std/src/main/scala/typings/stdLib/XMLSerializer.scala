@@ -13,5 +13,5 @@ trait XMLSerializer extends js.Object {
 @JSGlobal("XMLSerializer")
 @js.native
 object XMLSerializer
-  extends ScalablyTyped.runtime.Instantiable0[XMLSerializer]
+  extends org.scalablytyped.runtime.Instantiable0[XMLSerializer]
 

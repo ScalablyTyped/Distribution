@@ -13,7 +13,7 @@ trait ThenPromiseConstructor
    * a resolve callback used resolve the promise with a value or the result of another promise,
    * and a reject callback used to reject the promise with a provided reason or error.
    */
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       /* executor */ js.Function2[
         /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | Thenable[js.Object]], scala.Unit], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 

@@ -15,7 +15,7 @@ trait HubOptions extends js.Object {
            * Collection of client side callbacks
            */
   var listeners: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, scala.Unit]]
+    org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, scala.Unit]]
   ] = js.undefined
   /**
            * Enable/disable logging
@@ -28,7 +28,7 @@ trait HubOptions extends js.Object {
   /**
            * Object representing additional query params to be sent on connection
            */
-  var queryParams: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var queryParams: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * Sets the root path for the SignalR web service
            */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait WebServerRequest extends js.Object {
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var httpVersion: scala.Double
   var method: java.lang.String
   var post: java.lang.String

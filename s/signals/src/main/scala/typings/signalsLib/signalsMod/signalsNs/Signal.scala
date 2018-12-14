@@ -12,7 +12,7 @@ trait Signal[T]
          * <br />- inspired by Robert Penner's AS3 Signals.
          * @author Miller Medeiros
          */
-ScalablyTyped.runtime.Instantiable0[Signal[T]] {
+org.scalablytyped.runtime.Instantiable0[Signal[T]] {
   /**
            * Signals Version Number
            */

@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class filter () extends js.Object {
   def this(rules: filterRulesDefinition) = this()
   var attributeNameRules: filterRulesGroup = js.native
-  var attributesRules: ScalablyTyped.runtime.StringDictionary[filterRulesGroup] = js.native
+  var attributesRules: org.scalablytyped.runtime.StringDictionary[filterRulesGroup] = js.native
   var commentRules: filterRulesGroup = js.native
   var elementNameRules: filterRulesGroup = js.native
-  var elementsRules: ScalablyTyped.runtime.StringDictionary[filterRulesGroup] = js.native
+  var elementsRules: org.scalablytyped.runtime.StringDictionary[filterRulesGroup] = js.native
   var id: scala.Double = js.native
   var rootRules: filterRulesGroup = js.native
   var textRules: filterRulesGroup = js.native

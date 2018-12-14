@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SjclHashStatic
-  extends ScalablyTyped.runtime.Instantiable0[SjclHash]
-     with ScalablyTyped.runtime.Instantiable1[/* hash */ SjclHash, SjclHash] {
+  extends org.scalablytyped.runtime.Instantiable0[SjclHash]
+     with org.scalablytyped.runtime.Instantiable1[/* hash */ SjclHash, SjclHash] {
   def hash(data: java.lang.String): BitArray = js.native
   def hash(data: BitArray): BitArray = js.native
 }

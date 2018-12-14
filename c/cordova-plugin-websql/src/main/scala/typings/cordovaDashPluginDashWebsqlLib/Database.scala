@@ -73,7 +73,7 @@ trait Database extends js.Object {
 @js.native
 object Database
   extends /** Constructor for Database object */
-ScalablyTyped.runtime.Instantiable5[
+org.scalablytyped.runtime.Instantiable5[
       /* name */ java.lang.String, 
       /* version */ java.lang.String, 
       /* displayname */ java.lang.String, 

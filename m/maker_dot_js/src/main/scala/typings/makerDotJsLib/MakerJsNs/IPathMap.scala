@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait IPathMap
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[IPath]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[IPath]
 

@@ -14,5 +14,5 @@ trait Crypto extends js.Object {
 @JSGlobal("Crypto")
 @js.native
 object Crypto
-  extends ScalablyTyped.runtime.Instantiable0[Crypto]
+  extends org.scalablytyped.runtime.Instantiable0[Crypto]
 

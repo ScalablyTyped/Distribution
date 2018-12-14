@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Roles
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[RoleActions]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[RoleActions]
 

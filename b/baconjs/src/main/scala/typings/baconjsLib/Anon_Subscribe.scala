@@ -28,7 +28,7 @@ trait Anon_Subscribe
          * @param {EventStream#new~subscribe} subscribe
          * @returns {EventStream<E, A>}
          */
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       /* subscribe */ js.Function1[
         /* sink */ js.Function1[
           /* value */ baconjsLib.BaconNs.More | baconjsLib.BaconNs.NoMore | js.Object | baconjsLib.BaconNs.Initial[js.Object] | baconjsLib.BaconNs.Next[js.Object] | baconjsLib.BaconNs.End[js.Object] | baconjsLib.BaconNs.Error[js.Object] | (js.Array[

@@ -12,7 +12,7 @@ trait Options extends js.Object {
   var directoryIndex: js.UndefOr[java.lang.String] = js.undefined
   var dontCacheBustUrlsMatching: js.UndefOr[stdLib.RegExp] = js.undefined
   var dynamicUrlToDependencies: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | nodeLib.Buffer | js.Array[java.lang.String]]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | nodeLib.Buffer | js.Array[java.lang.String]]
   ] = js.undefined
   var handleFetch: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreUrlParametersMatching: js.UndefOr[js.Array[stdLib.RegExp]] = js.undefined
@@ -28,7 +28,7 @@ trait Options extends js.Object {
   var skipWaiting: js.UndefOr[scala.Boolean] = js.undefined
   var staticFileGlobs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var stripPrefix: js.UndefOr[java.lang.String] = js.undefined
-  var stripPrefixMulti: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var stripPrefixMulti: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var templateFilePath: js.UndefOr[java.lang.String] = js.undefined
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }

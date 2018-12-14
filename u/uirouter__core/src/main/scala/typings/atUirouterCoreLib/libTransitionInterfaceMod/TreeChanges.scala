@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait TreeChanges
   extends /** @nodoc */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode]] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode]] {
   /**
        * The path of nodes that the transition is entering.
        *

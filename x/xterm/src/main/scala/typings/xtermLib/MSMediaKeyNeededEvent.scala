@@ -13,5 +13,5 @@ trait MSMediaKeyNeededEvent extends Event {
 @JSGlobal("MSMediaKeyNeededEvent")
 @js.native
 object MSMediaKeyNeededEvent
-  extends ScalablyTyped.runtime.Instantiable0[MSMediaKeyNeededEvent]
+  extends org.scalablytyped.runtime.Instantiable0[MSMediaKeyNeededEvent]
 

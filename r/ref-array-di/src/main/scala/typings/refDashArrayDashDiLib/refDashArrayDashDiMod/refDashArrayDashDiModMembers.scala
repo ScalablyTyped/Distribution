@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ref-array-di", JSImport.Namespace)
 @js.native
 object refDashArrayDashDiModMembers
-  extends ScalablyTyped.runtime.TopLevel[refDashArrayDashDiLib.Anon_Type]
+  extends org.scalablytyped.runtime.TopLevel[refDashArrayDashDiLib.Anon_Type]
 

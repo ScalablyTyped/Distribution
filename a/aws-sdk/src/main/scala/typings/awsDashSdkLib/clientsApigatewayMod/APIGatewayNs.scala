@@ -2018,43 +2018,43 @@ object APIGatewayNs extends js.Object {
   
   
   trait MapOfApiStageThrottleSettings
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ThrottleSettings]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ThrottleSettings]
   
   
   trait MapOfIntegrationResponse
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[IntegrationResponse]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[IntegrationResponse]
   
   
   trait MapOfKeyUsages
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ListOfUsage]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ListOfUsage]
   
   
   trait MapOfMethod
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Method]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Method]
   
   
   trait MapOfMethodResponse
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MethodResponse]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MethodResponse]
   
   
   trait MapOfMethodSettings
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MethodSetting]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MethodSetting]
   
   
   trait MapOfMethodSnapshot
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MethodSnapshot]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MethodSnapshot]
   
   
   trait MapOfStringToBoolean
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[NullableBoolean]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[NullableBoolean]
   
   
   trait MapOfStringToList
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ListOfString]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ListOfString]
   
   
   trait MapOfStringToString
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait Method extends js.Object {
@@ -2231,7 +2231,7 @@ object APIGatewayNs extends js.Object {
   
   
   trait PathToMapOfMethodSnapshot
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MapOfMethodSnapshot]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MapOfMethodSnapshot]
   
   
   trait PutGatewayResponseRequest extends js.Object {

@@ -17,5 +17,5 @@ trait Trig
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[Trig]
+org.scalablytyped.runtime.Instantiable0[Trig]
 

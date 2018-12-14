@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 package object rollupMod {
   type AddonHook = java.lang.String | (js.ThisFunction0[/* this */ PluginContext, java.lang.String | js.Promise[java.lang.String]])
   type ExternalOption = js.Array[java.lang.String] | IsExternal
-  type GlobalsOption = ScalablyTyped.runtime.StringDictionary[java.lang.String] | (js.Function1[/* name */ java.lang.String, java.lang.String])
-  type InputOption = java.lang.String | js.Array[java.lang.String] | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  type GlobalsOption = org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function1[/* name */ java.lang.String, java.lang.String])
+  type InputOption = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type IsExternal = js.Function3[
     /* id */ java.lang.String, 
     /* parentId */ java.lang.String, 

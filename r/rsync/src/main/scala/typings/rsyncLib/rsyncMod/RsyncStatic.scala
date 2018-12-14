@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RsyncStatic
-  extends ScalablyTyped.runtime.Instantiable0[Rsync]
+  extends org.scalablytyped.runtime.Instantiable0[Rsync]
 

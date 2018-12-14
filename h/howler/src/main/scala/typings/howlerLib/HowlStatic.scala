@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HowlStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* properties */ IHowlProperties, Howl]
+  extends org.scalablytyped.runtime.Instantiable1[/* properties */ IHowlProperties, Howl]
 

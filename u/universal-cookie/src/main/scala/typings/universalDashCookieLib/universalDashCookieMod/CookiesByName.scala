@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CookiesByName
-  extends /* cookieName */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* cookieName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

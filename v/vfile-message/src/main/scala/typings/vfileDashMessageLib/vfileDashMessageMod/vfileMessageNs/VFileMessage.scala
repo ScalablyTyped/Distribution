@@ -14,7 +14,7 @@ trait VFileMessage
      with /**
          * It’s OK to store custom data directly on the VMessage, some of those are handled by utilities.
          */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Starting column of error.
            */

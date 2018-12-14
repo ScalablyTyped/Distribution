@@ -10,7 +10,7 @@ trait IgSplitter
   extends /**
 	 * Option for igSplitter
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Fired after collapsing is performed
   	 *

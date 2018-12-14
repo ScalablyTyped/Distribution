@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-native-material-ui"
-version := "1.31-dt-20181018Z-2c0a1b"
+version := "1.31-dt-20181018Z-d5569f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20181208Z-7b782a",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "csstype" % "2.5.8-eb24f4",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-32d5ea",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-7d04f8",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20181208Z-df16e2",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("koa-helmet", JSImport.Namespace)
 @js.native
 object koaDashHelmetModMembers
-  extends ScalablyTyped.runtime.TopLevel[koaDashHelmetLib.koaDashHelmetMod.koaHelmetNs.KoaHelmet]
+  extends org.scalablytyped.runtime.TopLevel[koaDashHelmetLib.koaDashHelmetMod.koaHelmetNs.KoaHelmet]
 

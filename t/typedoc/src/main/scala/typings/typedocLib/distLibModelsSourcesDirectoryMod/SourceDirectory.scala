@@ -12,7 +12,7 @@ class SourceDirectory () extends js.Object {
   def this(name: java.lang.String, parent: SourceDirectory) = this()
   var categories: js.Array[typedocLib.distLibModelsReflectionCategoryMod.ReflectionCategory] = js.native
   var dirName: java.lang.String = js.native
-  var directories: ScalablyTyped.runtime.StringDictionary[SourceDirectory] = js.native
+  var directories: org.scalablytyped.runtime.StringDictionary[SourceDirectory] = js.native
   var files: js.Array[typedocLib.distLibModelsSourcesFileMod.SourceFile] = js.native
   var groups: js.Array[typedocLib.distLibModelsReflectionGroupMod.ReflectionGroup] = js.native
   var name: java.lang.String = js.native

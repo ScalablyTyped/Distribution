@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("html-to-text", JSImport.Namespace)
 @js.native
 object htmlDashToDashTextMod
-  extends ScalablyTyped.runtime.TopLevel[HtmlToTextStatic]
+  extends org.scalablytyped.runtime.TopLevel[HtmlToTextStatic]
 

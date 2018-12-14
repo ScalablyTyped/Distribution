@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BoxConstructor
-  extends ScalablyTyped.runtime.Instantiable1[(/* options */ Options) | (/* options */ java.lang.String), Box]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       (/* options */ Options) | (/* options */ java.lang.String), 
       (/* text */ Text) | (/* text */ java.lang.String), 
       Box
-    ] {
+    ]
+     with org.scalablytyped.runtime.Instantiable1[(/* options */ Options) | (/* options */ java.lang.String), Box] {
   var defaults: cliDashBoxLib.Anon_Marks_532567740 = js.native
   def apply(
     options: (stdLib.Exclude[Options, cliDashBoxLib.cliDashBoxLibStrings.stringify]) with cliDashBoxLib.Anon_Stringify

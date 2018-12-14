@@ -10,7 +10,7 @@ trait IgSchedulerMonthViewSettings
   extends /**
 	 * Option for IgSchedulerMonthViewSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets the scope of appointments that are displayed in a MonthView's AgendaView.
   	 *

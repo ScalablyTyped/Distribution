@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("nodegit/describe-options", "DescribeOptions")
 @js.native
 class DescribeOptions ()
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var describeStrategy: js.UndefOr[scala.Double] = js.native
   var maxCandidatesTags: js.UndefOr[scala.Double] = js.native
   var onlyFollowFirstParent: js.UndefOr[scala.Double] = js.native

@@ -53,8 +53,8 @@ trait args extends js.Object {
     init: argsLib.OptionInitFunction
   ): args = js.native
   def options(list: js.Array[Option]): args = js.native
-  def parse(argv: js.Array[java.lang.String]): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  def parse(argv: js.Array[java.lang.String], options: ConfigurationOptions): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def parse(argv: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def parse(argv: js.Array[java.lang.String], options: ConfigurationOptions): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def showHelp(): scala.Unit = js.native
 }
 

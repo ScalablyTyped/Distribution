@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/reflect/has", JSImport.Namespace)
 @js.native
 object libraryFnReflectHasMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function2[/* target */ js.Any, /* propertyKey */ java.lang.String | js.Symbol, scala.Boolean]
     ]
 

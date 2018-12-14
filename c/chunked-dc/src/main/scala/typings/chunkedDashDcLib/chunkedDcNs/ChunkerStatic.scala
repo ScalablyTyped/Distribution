@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ChunkerStatic
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* id */ scala.Double, 
       /* message */ stdLib.Uint8Array, 
       /* chunkSize */ scala.Double, 

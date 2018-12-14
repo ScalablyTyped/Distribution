@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/array/fill", JSImport.Namespace)
 @js.native
 object libraryFnArrayFillMod
-  extends ScalablyTyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Any]
 

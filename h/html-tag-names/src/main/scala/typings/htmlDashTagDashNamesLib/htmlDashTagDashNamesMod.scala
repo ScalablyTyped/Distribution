@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("html-tag-names", JSImport.Namespace)
 @js.native
 object htmlDashTagDashNamesMod
-  extends ScalablyTyped.runtime.TopLevel[js.Array[java.lang.String]]
+  extends org.scalablytyped.runtime.TopLevel[js.Array[java.lang.String]]
 

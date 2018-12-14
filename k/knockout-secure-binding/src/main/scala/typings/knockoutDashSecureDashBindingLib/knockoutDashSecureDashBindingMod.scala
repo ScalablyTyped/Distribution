@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("knockout-secure-binding", JSImport.Namespace)
 @js.native
 object knockoutDashSecureDashBindingMod
-  extends ScalablyTyped.runtime.TopLevel[Anon_Options]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Options]
 

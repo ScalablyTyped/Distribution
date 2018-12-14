@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Of
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       /* subscriber */ zenDashObservableDashTsLib.libZenObservableMod.Subscriber[js.Object], 
       zenDashObservableDashTsLib.libZenObservableMod.Observable[js.Object]
     ] {

@@ -10,6 +10,6 @@ trait IOneOf extends js.Object {
   /** Oneof field names */
   var oneof: js.Array[java.lang.String]
   /** Oneof options */
-  var options: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

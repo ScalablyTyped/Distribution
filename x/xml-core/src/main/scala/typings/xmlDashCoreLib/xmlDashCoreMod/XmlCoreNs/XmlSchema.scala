@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait XmlSchema extends js.Object {
   var items: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with xmlDashCoreLib.Anon_Type]
+    org.scalablytyped.runtime.StringDictionary[(XmlChildElementType[_] | XmlAttributeType[_]) with xmlDashCoreLib.Anon_Type]
   ] = js.undefined
   var localName: js.UndefOr[java.lang.String] = js.undefined
   var namespaceURI: js.UndefOr[java.lang.String | scala.Null] = js.undefined

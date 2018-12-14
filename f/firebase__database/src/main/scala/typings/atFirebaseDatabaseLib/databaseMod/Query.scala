@@ -15,7 +15,7 @@ class Query protected ()
 @JSImport("@firebase/database", "Query")
 @js.native
 object Query extends js.Object {
-  var __referenceConstructor: ScalablyTyped.runtime.Instantiable2[
+  var __referenceConstructor: org.scalablytyped.runtime.Instantiable2[
     /* repo */ atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, 
     /* path */ atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, 
     atFirebaseDatabaseLib.distSrcApiQueryMod.Query

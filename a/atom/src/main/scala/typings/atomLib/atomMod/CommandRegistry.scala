@@ -10,7 +10,7 @@ trait CommandRegistry extends js.Object {
   /** Register a single command. */
   def add[T /* <: stdLib.Node */](target: T, commandName: java.lang.String, listener: CommandRegistryListener[T]): Disposable = js.native
   /** Register multiple commands. */
-  def add[T /* <: stdLib.Node */](target: T, commands: ScalablyTyped.runtime.StringDictionary[CommandRegistryListener[T]]): CompositeDisposable = js.native
+  def add[T /* <: stdLib.Node */](target: T, commands: org.scalablytyped.runtime.StringDictionary[CommandRegistryListener[T]]): CompositeDisposable = js.native
   /** Register a single command. */
   @JSName("add")
   def `add_atom-text-editor`(
@@ -22,7 +22,7 @@ trait CommandRegistry extends js.Object {
   @JSName("add")
   def `add_atom-text-editor`(
     target: atomLib.atomLibStrings.`atom-text-editor`,
-    commands: ScalablyTyped.runtime.StringDictionary[CommandRegistryListener[TextEditorElement]]
+    commands: org.scalablytyped.runtime.StringDictionary[CommandRegistryListener[TextEditorElement]]
   ): CompositeDisposable = js.native
   /**
        *  Simulate the dispatch of a command on a DOM node.

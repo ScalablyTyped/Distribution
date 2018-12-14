@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IAccessControlLists
-  extends ScalablyTyped.runtime.Instantiable0[IAccessControlLists]
+  extends org.scalablytyped.runtime.Instantiable0[IAccessControlLists]
 

@@ -10,7 +10,7 @@ trait IgNotifier
   extends /**
 	 * Option for igNotifier
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Allows setting the respective state CSS on the target element (used to apply border color by default)
   	 *

@@ -18,7 +18,7 @@ class Cache () extends js.Object {
   def get(key: scala.Double, options: GetPutOptions): js.Any = js.native
   def info(key: java.lang.String): CacheInfo | ItemInfo = js.native
   def info(key: scala.Double): CacheInfo | ItemInfo = js.native
-  def keySet(): ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double] = js.native
+  def keySet(): org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double] = js.native
   def keys(): js.Array[java.lang.String | scala.Double] = js.native
   def put(key: java.lang.String, value: js.Any): js.Any = js.native
   def put(key: java.lang.String, value: js.Any, options: GetPutOptions): js.Any = js.native
@@ -27,7 +27,7 @@ class Cache () extends js.Object {
   def remove(key: java.lang.String): js.Any = js.native
   def remove(key: scala.Double): js.Any = js.native
   def removeAll(): scala.Unit = js.native
-  def removeExpired(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def removeExpired(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def setCacheFlushInterval(cacheFlushInterval: scala.Double): scala.Unit = js.native
   def setCapacity(capacity: scala.Double): scala.Unit = js.native
   def setDeleteOnExpire(deleteOnExpire: DeleteOnExpire): scala.Unit = js.native

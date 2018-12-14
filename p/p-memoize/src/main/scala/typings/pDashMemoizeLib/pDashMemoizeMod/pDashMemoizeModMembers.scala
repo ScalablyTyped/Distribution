@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("p-memoize", JSImport.Namespace)
 @js.native
 object pDashMemoizeModMembers
-  extends ScalablyTyped.runtime.TopLevel[pDashMemoizeLib.PMemoize]
+  extends org.scalablytyped.runtime.TopLevel[pDashMemoizeLib.PMemoize]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("morris", JSImport.Namespace)
 @js.native
 object morrisMod
-  extends ScalablyTyped.runtime.TopLevel[morrisDotJsLib.morrisNs.MorrisStatic]
+  extends org.scalablytyped.runtime.TopLevel[morrisDotJsLib.morrisNs.MorrisStatic]
 

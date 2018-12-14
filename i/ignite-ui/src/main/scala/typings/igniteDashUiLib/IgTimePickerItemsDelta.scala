@@ -10,7 +10,7 @@ trait IgTimePickerItemsDelta
   extends /**
 	 * Option for IgTimePickerItemsDelta
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var hours: js.UndefOr[scala.Double] = js.undefined
   var minutes: js.UndefOr[scala.Double] = js.undefined
 }

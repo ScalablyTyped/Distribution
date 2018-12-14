@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait BoardCardRuleSettings extends js.Object {
   var _links: js.Any
-  var rules: ScalablyTyped.runtime.StringDictionary[js.Array[Rule]]
+  var rules: org.scalablytyped.runtime.StringDictionary[js.Array[Rule]]
   var url: java.lang.String
 }
 

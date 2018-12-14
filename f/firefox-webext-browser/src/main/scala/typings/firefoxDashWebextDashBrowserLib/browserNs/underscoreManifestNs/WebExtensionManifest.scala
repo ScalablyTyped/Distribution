@@ -27,7 +27,7 @@ trait WebExtensionManifest extends js.Object {
   var experiment_apis: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.ExperimentAPI] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var homepage_url: js.UndefOr[java.lang.String] = js.undefined
-  var icons: js.UndefOr[ScalablyTyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
+  var icons: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
   var incognito: js.UndefOr[_WebExtensionManifestIncognito] = js.undefined
   var manifest_version: scala.Double
   var minimum_chrome_version: js.UndefOr[java.lang.String] = js.undefined

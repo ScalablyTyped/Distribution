@@ -1116,7 +1116,7 @@ object appsNs extends js.Object {
                    * The annotations to be updated to a deployment
                    */
       val updatedAnnotations: atPulumiPulumiLib.pulumiMod.Output[
-            ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+            org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.appsNs.v1beta1Ns.DeploymentRollback = js.native
     }

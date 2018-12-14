@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hellojs", JSImport.Namespace)
 @js.native
 object hellojsModMembers
-  extends ScalablyTyped.runtime.TopLevel[hellojsLib.hellojsMod.helloNs.HelloJSStatic]
+  extends org.scalablytyped.runtime.TopLevel[hellojsLib.hellojsMod.helloNs.HelloJSStatic]
 

@@ -10,7 +10,7 @@ trait IgPivotDataSelector
   extends /**
 	 * Option for igPivotDataSelector
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A function that will be called to determine if an item can be moved in or dropped on an area of the data selector.
   	 *

@@ -37,10 +37,10 @@ trait ListViewProps extends ScrollViewProps {
   var onChangeVisibleRows: js.UndefOr[
     js.Function2[
       /* visibleRows */ js.Array[
-        ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[scala.Boolean]]
+        org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Boolean]]
       ], 
       /* changedRows */ js.Array[
-        ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[scala.Boolean]]
+        org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Boolean]]
       ], 
       scala.Unit
     ]

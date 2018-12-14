@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TypeScript.Services.Formatting.Rules")
 @js.native
 class Rules ()
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var ControlOpenBraceLeftTokenRange: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.SharedNs.TokenRange = js.native
   var FunctionOpenBraceLeftTokenRange: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.SharedNs.TokenRange = js.native
   var HighPriorityCommonRules: js.Array[Rule] = js.native

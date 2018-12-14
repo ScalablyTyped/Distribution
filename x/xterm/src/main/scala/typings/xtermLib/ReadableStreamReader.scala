@@ -15,5 +15,5 @@ trait ReadableStreamReader[R] extends js.Object {
 @JSGlobal("ReadableStreamReader")
 @js.native
 object ReadableStreamReader
-  extends ScalablyTyped.runtime.Instantiable0[ReadableStreamReader[js.Any]]
+  extends org.scalablytyped.runtime.Instantiable0[ReadableStreamReader[js.Any]]
 

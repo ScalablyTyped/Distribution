@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait WsdlService extends XsdTypeBase {
-  var ports: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var ports: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

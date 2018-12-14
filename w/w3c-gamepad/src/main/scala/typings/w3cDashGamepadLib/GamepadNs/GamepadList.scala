@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait GamepadList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Gamepad] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Gamepad] {
   var length: scala.Double
 }
 

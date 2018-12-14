@@ -17,8 +17,9 @@ trait jsonStatic
          * @param value An optional value to compare against. Produces a string of the form "<json path> =
          *     '<value>'".
          */
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable2[
       (/* conditionsOrPath */ java.lang.String) | (/* conditionsOrPath */ js.Object), 
+      (/* value */ java.lang.String) | (/* value */ scala.Double) | (/* value */ scala.Boolean), 
       json
     ]
      with /**
@@ -31,9 +32,8 @@ ScalablyTyped.runtime.Instantiable1[
          * @param value An optional value to compare against. Produces a string of the form "<json path> =
          *     '<value>'".
          */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable1[
       (/* conditionsOrPath */ java.lang.String) | (/* conditionsOrPath */ js.Object), 
-      (/* value */ java.lang.String) | (/* value */ scala.Double) | (/* value */ scala.Boolean), 
       json
     ]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PropertyAliases
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[PropertyAliasValue]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[PropertyAliasValue]
 

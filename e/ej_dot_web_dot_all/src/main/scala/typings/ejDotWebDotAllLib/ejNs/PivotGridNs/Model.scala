@@ -135,6 +135,10 @@ trait Model extends js.Object {
                * @Default {false}
                */
   var enableMemberEditorPaging: js.UndefOr[scala.Boolean] = js.undefined
+  /** Enables/Disables sorting option in member editor dialog for the members of the respective field.
+               * @Default {false}
+               */
+  var enableMemberEditorSorting: js.UndefOr[scala.Boolean] = js.undefined
   /** Allows you to view the large amount of data by applying paging.
                * @Default {false}
                */

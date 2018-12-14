@@ -31,7 +31,7 @@ trait GmailDraftOptions extends js.Object {
          * A JavaScript object containing a mapping from image key (`String`) to image data (`BlobSource`) ; this assumes that the `htmlBody` parameter is used and contains references to these images in the format `<img src="cid:imageKey" />`.
          */
   var inlineImages: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource]
+    org.scalablytyped.runtime.StringDictionary[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource]
   ] = js.undefined
   /**
          * The name of the sender of the email (default: the user's name).

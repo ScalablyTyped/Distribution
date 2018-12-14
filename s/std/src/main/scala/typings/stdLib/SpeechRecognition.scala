@@ -406,5 +406,5 @@ trait SpeechRecognition extends EventTarget {
 @JSGlobal("SpeechRecognition")
 @js.native
 object SpeechRecognition
-  extends ScalablyTyped.runtime.Instantiable0[SpeechRecognition]
+  extends org.scalablytyped.runtime.Instantiable0[SpeechRecognition]
 

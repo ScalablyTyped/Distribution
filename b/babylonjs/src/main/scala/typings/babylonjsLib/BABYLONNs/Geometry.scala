@@ -76,7 +76,7 @@ class Geometry protected () extends IGetSetVerticesData {
   var _updateExtend: js.Any = js.native
   var _vertexArrayObjects: js.Any = js.native
   /** @hidden */
-  var _vertexBuffers: ScalablyTyped.runtime.StringDictionary[VertexBuffer] = js.native
+  var _vertexBuffers: org.scalablytyped.runtime.StringDictionary[VertexBuffer] = js.native
   /**
            *  Gets or sets the Bias Vector to apply on the bounding elements (box/sphere), the max extend is computed as v += v * bias.x + bias.y, the min is computed as v -= v * bias.x + bias.y
            */
@@ -170,7 +170,7 @@ class Geometry protected () extends IGetSetVerticesData {
            * Returns all vertex buffers
            * @return an object holding all vertex buffers indexed by kind
            */
-  def getVertexBuffers(): Nullable[ScalablyTyped.runtime.StringDictionary[VertexBuffer]] = js.native
+  def getVertexBuffers(): Nullable[org.scalablytyped.runtime.StringDictionary[VertexBuffer]] = js.native
   /**
            * Gets a list of all attached data kinds (Position, normal, etc...)
            * @returns a list of string containing all kinds

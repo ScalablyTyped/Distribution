@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lazy.js", JSImport.Namespace)
 @js.native
 object lazyDotJsMod
-  extends ScalablyTyped.runtime.TopLevel[lazyDotJsLib.LazyJSNs.LazyStatic]
+  extends org.scalablytyped.runtime.TopLevel[lazyDotJsLib.LazyJSNs.LazyStatic]
 

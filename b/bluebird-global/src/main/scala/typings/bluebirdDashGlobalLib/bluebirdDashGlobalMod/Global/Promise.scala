@@ -863,13 +863,13 @@ trait Promise[T] extends js.Object {
   ): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def `catch`[TResult](): Promise[T | TResult] = js.native
   def `catch`[E /* <: stdLib.Error */](
-    ErrorClass: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E],
+    ErrorClass: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E],
     onReject: js.Function1[/* error */ E, T | js.Thenable[T] | scala.Unit | js.Thenable[scala.Unit]]
   ): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): Promise[T | TResult] = js.native
   @JSName("catch")
   def catch_EErrorU[E /* <: stdLib.Error */, U](
-    ErrorClass: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E],
+    ErrorClass: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E],
     onReject: js.Function1[/* error */ E, U | js.Thenable[U]]
   ): bluebirdLib.bluebirdMod.namespaced[U | T] = js.native
   @JSName("catch")

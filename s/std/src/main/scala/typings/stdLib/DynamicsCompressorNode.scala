@@ -18,8 +18,8 @@ trait DynamicsCompressorNode extends AudioNode {
 @JSGlobal("DynamicsCompressorNode")
 @js.native
 object DynamicsCompressorNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, DynamicsCompressorNode]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, DynamicsCompressorNode]
+     with org.scalablytyped.runtime.Instantiable2[
       /* context */ BaseAudioContext, 
       /* options */ DynamicsCompressorOptions, 
       DynamicsCompressorNode

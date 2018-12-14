@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IVaultClassGroupOperations
-  extends ScalablyTyped.runtime.Instantiable0[IVaultClassGroupOperations]
+  extends org.scalablytyped.runtime.Instantiable0[IVaultClassGroupOperations]
 

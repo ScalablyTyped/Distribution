@@ -18,7 +18,7 @@ trait SupportedTrigger extends js.Object {
   /**
        * The capabilities supported by this trigger.
        */
-  var supportedCapabilities: ScalablyTyped.runtime.StringDictionary[SupportLevel]
+  var supportedCapabilities: org.scalablytyped.runtime.StringDictionary[SupportLevel]
   /**
        * The type of trigger.
        */

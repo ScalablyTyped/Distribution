@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gamepad", JSImport.Namespace)
 @js.native
 object gamepadModMembers
-  extends ScalablyTyped.runtime.TopLevel[NodeGamepad]
+  extends org.scalablytyped.runtime.TopLevel[NodeGamepad]
 

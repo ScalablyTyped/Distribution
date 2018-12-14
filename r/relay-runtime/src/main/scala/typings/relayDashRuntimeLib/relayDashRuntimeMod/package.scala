@@ -37,7 +37,7 @@ package object relayDashRuntimeMod {
   type PayloadData = js.Any
   type RangeBehaviors = RangeBehaviorsFunction | RangeBehaviorsObject
   type RangeBehaviorsFunction = js.Function1[
-    /* connectionArgs */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* connectionArgs */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     relayDashRuntimeLib.relayDashRuntimeLibStrings.APPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.IGNORE | relayDashRuntimeLib.relayDashRuntimeLibStrings.PREPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.REFETCH | relayDashRuntimeLib.relayDashRuntimeLibStrings.REMOVE
   ]
   type ReadyStateChangeCallback = js.Function1[/* readyState */ ReadyState, scala.Unit]
@@ -54,7 +54,7 @@ package object relayDashRuntimeMod {
     /* preventAutoRollback */ js.Function0[scala.Unit], 
     scala.Unit
   ]
-  type RelayMutationTransactionCommitSuccessCallback = js.Function1[/* response */ ScalablyTyped.runtime.StringDictionary[js.Any], scala.Unit]
+  type RelayMutationTransactionCommitSuccessCallback = js.Function1[/* response */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
   type RelayQL = js.Function2[/* strings */ js.Array[java.lang.String], /* repeated */js.Any, RelayConcreteNode]
   type RelayQueryRequest = js.Any
   type RelayResponsePayload = js.Any

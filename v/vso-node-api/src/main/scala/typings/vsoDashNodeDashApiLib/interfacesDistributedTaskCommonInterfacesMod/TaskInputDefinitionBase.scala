@@ -12,8 +12,8 @@ trait TaskInputDefinitionBase extends js.Object {
   var helpMarkDown: java.lang.String
   var label: java.lang.String
   var name: java.lang.String
-  var options: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var options: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var required: scala.Boolean
   var `type`: java.lang.String
   var visibleRule: java.lang.String

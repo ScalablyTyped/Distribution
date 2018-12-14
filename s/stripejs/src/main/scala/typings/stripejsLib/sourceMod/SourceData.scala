@@ -27,7 +27,7 @@ trait SourceData extends js.Object {
   /**
        * Extra data you want to add to the source object
        */
-  var metadata: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var metadata: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * Information about the owner of the payment instrument that may be used or
        * required by particular source types.

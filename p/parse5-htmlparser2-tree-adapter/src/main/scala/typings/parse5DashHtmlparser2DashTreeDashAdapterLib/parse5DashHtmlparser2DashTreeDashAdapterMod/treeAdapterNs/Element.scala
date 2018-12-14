@@ -13,7 +13,7 @@ trait Element extends ParentNode {
   /**
            * Element attributes.
            */
-  var attribs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var attribs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
            * The name of the node. Equals to element {@link tagName}.
            */
@@ -33,10 +33,10 @@ trait Element extends ParentNode {
   /**
            * Element attribute namespaces.
            */
-  var `x-attribsNamespace`: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var `x-attribsNamespace`: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
            * Element attribute namespace-related prefixes.
            */
-  var `x-attribsPrefix`: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var `x-attribsPrefix`: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

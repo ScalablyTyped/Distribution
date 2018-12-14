@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libApiDecorateMod extends js.Object {
   def decorate[T](
-    clazz: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
+    clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
     decorators: mobxLib.mobxLibStrings.decorate with js.Any
   ): scala.Unit = js.native
   def decorate[T](`object`: T, decorators: mobxLib.mobxLibStrings.decorate with js.Any): T = js.native

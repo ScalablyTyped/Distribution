@@ -318,7 +318,7 @@ object clusterNs extends js.Object {
   def setupMaster(settings: nodeLib.clusterMod.ClusterSettings): scala.Unit = js.native
   @js.native
   object workers
-    extends /* index */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[nodeLib.clusterMod.Worker]]
+    extends /* index */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[nodeLib.clusterMod.Worker]]
   
 }
 

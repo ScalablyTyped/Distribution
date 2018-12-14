@@ -34,8 +34,8 @@ object preludeDashLsMod extends js.Object {
   def capitalize(str: java.lang.String): java.lang.String = js.native
   def ceiling(x: scala.Double): scala.Double = js.native
   def chars(str: java.lang.String): js.Array[java.lang.String] = js.native
-  def compact[A](`object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
-  def compact[A](`object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[A] = js.native
+  def compact[A](`object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
+  def compact[A](`object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
   def compact[A](xs: js.Array[A]): js.Array[A] = js.native
   def concat[A](xss: js.Array[js.Array[A]]): js.Array[A] = js.native
   def concatMap[A, B](f: js.Function1[/* x */ A, js.Array[B]]): js.Function1[/* xs */ js.Array[A], js.Array[B]] = js.native
@@ -59,8 +59,8 @@ object preludeDashLsMod extends js.Object {
   @JSName("drop")
   def drop_A[A](n: scala.Double): js.Function1[/* xs */ js.Array[A], js.Array[A]] = js.native
   def each[A](f: js.Function1[/* x */ A, scala.Unit]): js.Function1[/* xs */ js.Array[A], js.Array[A]] = js.native
-  def each[A](f: js.Function1[/* x */ A, scala.Unit], `object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
-  def each[A](f: js.Function1[/* x */ A, scala.Unit], `object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[A] = js.native
+  def each[A](f: js.Function1[/* x */ A, scala.Unit], `object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
+  def each[A](f: js.Function1[/* x */ A, scala.Unit], `object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
   def each[A](f: js.Function1[/* x */ A, scala.Unit], xs: js.Array[A]): js.Array[A] = js.native
   def elemIndex[A](x: A): js.Function1[/* xs */ js.Array[A], scala.Double] = js.native
   def elemIndex[A](x: A, xs: js.Array[A]): scala.Double = js.native
@@ -72,12 +72,12 @@ object preludeDashLsMod extends js.Object {
   def even(x: scala.Double): scala.Boolean = js.native
   def exp(x: scala.Double): scala.Double = js.native
   def filter[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[/* xs */ js.Array[A], js.Array[A]] = js.native
-  def filter[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
-  def filter[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[A] = js.native
+  def filter[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
+  def filter[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
   def filter[A](f: js.Function1[/* x */ A, scala.Boolean], xs: js.Array[A]): js.Array[A] = js.native
   def find[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[/* xs */ js.Array[A], A] = js.native
-  def find[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.NumberDictionary[A]): A = js.native
-  def find[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.StringDictionary[A]): A = js.native
+  def find[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.NumberDictionary[A]): A = js.native
+  def find[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.StringDictionary[A]): A = js.native
   def find[A](f: js.Function1[/* x */ A, scala.Boolean], xs: js.Array[A]): A = js.native
   def findIndex[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[/* xs */ js.Array[A], scala.Double] = js.native
   def findIndex[A](f: js.Function1[/* x */ A, scala.Boolean], xs: js.Array[A]): scala.Double = js.native
@@ -117,20 +117,20 @@ object preludeDashLsMod extends js.Object {
   def isType[A](`type`: java.lang.String, x: A): scala.Boolean = js.native
   def join(separator: java.lang.String): js.Function1[/* xs */ js.Array[java.lang.String], java.lang.String] = js.native
   def join(separator: java.lang.String, xs: js.Array[java.lang.String]): java.lang.String = js.native
-  def keys[A](`object`: ScalablyTyped.runtime.NumberDictionary[A]): js.Array[scala.Double] = js.native
-  def keys[A](`object`: ScalablyTyped.runtime.StringDictionary[A]): js.Array[java.lang.String] = js.native
+  def keys[A](`object`: org.scalablytyped.runtime.NumberDictionary[A]): js.Array[scala.Double] = js.native
+  def keys[A](`object`: org.scalablytyped.runtime.StringDictionary[A]): js.Array[java.lang.String] = js.native
   def last[A](xs: js.Array[A]): A = js.native
   def lcm(x: scala.Double): js.Function1[/* y */ scala.Double, scala.Double] = js.native
   def lcm(x: scala.Double, y: scala.Double): scala.Double = js.native
   def lines(str: java.lang.String): js.Array[java.lang.String] = js.native
-  def listsToObj[A](keys: js.Array[java.lang.String | scala.Double]): js.Function1[/* values */ js.Array[A], ScalablyTyped.runtime.StringDictionary[A]] = js.native
-  def listsToObj[A](keys: js.Array[java.lang.String], values: js.Array[A]): ScalablyTyped.runtime.StringDictionary[A] = js.native
+  def listsToObj[A](keys: js.Array[java.lang.String | scala.Double]): js.Function1[/* values */ js.Array[A], org.scalablytyped.runtime.StringDictionary[A]] = js.native
+  def listsToObj[A](keys: js.Array[java.lang.String], values: js.Array[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
   @JSName("listsToObj")
-  def listsToObj_ANumberDictionary[A](keys: js.Array[scala.Double], values: js.Array[A]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
+  def listsToObj_ANumberDictionary[A](keys: js.Array[scala.Double], values: js.Array[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
   def ln(x: scala.Double): scala.Double = js.native
   def map[A, B](f: js.Function1[/* x */ A, B]): js.Function1[/* xs */ js.Array[A], js.Array[B]] = js.native
-  def map[A, B](f: js.Function1[/* x */ A, B], `object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[B] = js.native
-  def map[A, B](f: js.Function1[/* x */ A, B], `object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[B] = js.native
+  def map[A, B](f: js.Function1[/* x */ A, B], `object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[B] = js.native
+  def map[A, B](f: js.Function1[/* x */ A, B], `object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[B] = js.native
   def map[A, B](f: js.Function1[/* x */ A, B], xs: js.Array[A]): js.Array[B] = js.native
   def max[Comparable](x: Comparable): js.Function1[/* y */ Comparable, Comparable] = js.native
   def max[Comparable](x: Comparable, y: Comparable): Comparable = js.native
@@ -146,10 +146,10 @@ object preludeDashLsMod extends js.Object {
   def mod(x: scala.Double): js.Function1[/* y */ scala.Double, scala.Double] = js.native
   def mod(x: scala.Double, y: scala.Double): scala.Double = js.native
   def negate(x: scala.Double): scala.Double = js.native
-  def objToLists[A](`object`: ScalablyTyped.runtime.NumberDictionary[A]): js.Tuple2[js.Array[scala.Double], js.Array[A]] = js.native
-  def objToLists[A](`object`: ScalablyTyped.runtime.StringDictionary[A]): js.Tuple2[js.Array[java.lang.String], js.Array[A]] = js.native
-  def objToPairs[A](`object`: ScalablyTyped.runtime.NumberDictionary[A]): js.Array[js.Tuple2[scala.Double, A]] = js.native
-  def objToPairs[A](`object`: ScalablyTyped.runtime.StringDictionary[A]): js.Array[js.Tuple2[java.lang.String, A]] = js.native
+  def objToLists[A](`object`: org.scalablytyped.runtime.NumberDictionary[A]): js.Tuple2[js.Array[scala.Double], js.Array[A]] = js.native
+  def objToLists[A](`object`: org.scalablytyped.runtime.StringDictionary[A]): js.Tuple2[js.Array[java.lang.String], js.Array[A]] = js.native
+  def objToPairs[A](`object`: org.scalablytyped.runtime.NumberDictionary[A]): js.Array[js.Tuple2[scala.Double, A]] = js.native
+  def objToPairs[A](`object`: org.scalablytyped.runtime.StringDictionary[A]): js.Array[js.Tuple2[java.lang.String, A]] = js.native
   def odd(x: scala.Double): scala.Boolean = js.native
   def orList[A](xs: js.Array[A]): scala.Boolean = js.native
   def over[A, B, C](f: js.Function1[/* x */ B, js.Function1[/* y */ B, C]]): js.Function1[
@@ -170,17 +170,17 @@ object preludeDashLsMod extends js.Object {
     g: js.Function1[/* x */ A, B],
     x: A
   ): js.Function1[/* y */ A, C] = js.native
-  def pairsToObj[A](`object`: js.Array[js.Tuple2[java.lang.String, A]]): ScalablyTyped.runtime.StringDictionary[A] = js.native
+  def pairsToObj[A](`object`: js.Array[js.Tuple2[java.lang.String, A]]): org.scalablytyped.runtime.StringDictionary[A] = js.native
   @JSName("pairsToObj")
-  def pairsToObj_ANumberDictionary[A](`object`: js.Array[js.Tuple2[scala.Double, A]]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
+  def pairsToObj_ANumberDictionary[A](`object`: js.Array[js.Tuple2[scala.Double, A]]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
   def partition[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[/* xs */ js.Array[A], js.Tuple2[js.Array[A], js.Array[A]]] = js.native
-  def partition[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.NumberDictionary[A]): js.Tuple2[
-    ScalablyTyped.runtime.NumberDictionary[A], 
-    ScalablyTyped.runtime.NumberDictionary[A]
+  def partition[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.NumberDictionary[A]): js.Tuple2[
+    org.scalablytyped.runtime.NumberDictionary[A], 
+    org.scalablytyped.runtime.NumberDictionary[A]
   ] = js.native
-  def partition[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.StringDictionary[A]): js.Tuple2[
-    ScalablyTyped.runtime.StringDictionary[A], 
-    ScalablyTyped.runtime.StringDictionary[A]
+  def partition[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.StringDictionary[A]): js.Tuple2[
+    org.scalablytyped.runtime.StringDictionary[A], 
+    org.scalablytyped.runtime.StringDictionary[A]
   ] = js.native
   def partition[A](f: js.Function1[/* x */ A, scala.Boolean], xs: js.Array[A]): js.Tuple2[js.Array[A], js.Array[A]] = js.native
   def pow(x: scala.Double): js.Function1[/* y */ scala.Double, scala.Double] = js.native
@@ -190,8 +190,8 @@ object preludeDashLsMod extends js.Object {
   def quot(x: scala.Double, y: scala.Double): scala.Double = js.native
   def recip(x: scala.Double): scala.Double = js.native
   def reject[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[/* xs */ js.Array[A], js.Array[A]] = js.native
-  def reject[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
-  def reject[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[A] = js.native
+  def reject[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
+  def reject[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
   def reject[A](f: js.Function1[/* x */ A, scala.Boolean], xs: js.Array[A]): js.Array[A] = js.native
   def rem(x: scala.Double): js.Function1[/* y */ scala.Double, scala.Double] = js.native
   def rem(x: scala.Double, y: scala.Double): scala.Double = js.native
@@ -268,8 +268,8 @@ object preludeDashLsMod extends js.Object {
   def uniqueBy[A, B](f: js.Function1[/* x */ A, B], xs: js.Array[A]): js.Array[A] = js.native
   def unlines(xs: js.Array[java.lang.String]): java.lang.String = js.native
   def unwords(xs: js.Array[java.lang.String]): java.lang.String = js.native
-  def values[A](`object`: ScalablyTyped.runtime.NumberDictionary[A]): js.Array[A] = js.native
-  def values[A](`object`: ScalablyTyped.runtime.StringDictionary[A]): js.Array[A] = js.native
+  def values[A](`object`: org.scalablytyped.runtime.NumberDictionary[A]): js.Array[A] = js.native
+  def values[A](`object`: org.scalablytyped.runtime.StringDictionary[A]): js.Array[A] = js.native
   def words(str: java.lang.String): js.Array[java.lang.String] = js.native
   def zip[A, B](xs: js.Array[A]): js.Function1[/* ys */ js.Array[B], js.Array[js.Tuple2[A, B]]] = js.native
   def zip[A, B](xs: js.Array[A], ys: js.Array[B]): js.Array[js.Tuple2[A, B]] = js.native
@@ -281,51 +281,51 @@ object preludeDashLsMod extends js.Object {
   @JSName("Obj")
   @js.native
   object ObjNs extends js.Object {
-    def compact[A](`object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
-    def compact[A](`object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[A] = js.native
+    def compact[A](`object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
+    def compact[A](`object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
     def each[A](f: js.Function1[/* x */ A, scala.Unit]): js.Function1[
-        /* object */ ScalablyTyped.runtime.StringDictionary[A], 
-        ScalablyTyped.runtime.StringDictionary[A]
+        /* object */ org.scalablytyped.runtime.StringDictionary[A], 
+        org.scalablytyped.runtime.StringDictionary[A]
       ] = js.native
-    def each[A](f: js.Function1[/* x */ A, scala.Unit], `object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
-    def each[A](f: js.Function1[/* x */ A, scala.Unit], `object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[A] = js.native
+    def each[A](f: js.Function1[/* x */ A, scala.Unit], `object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
+    def each[A](f: js.Function1[/* x */ A, scala.Unit], `object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
     def empty[A](`object`: js.Any): scala.Boolean = js.native
     def filter[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[
-        /* object */ ScalablyTyped.runtime.StringDictionary[A], 
-        ScalablyTyped.runtime.StringDictionary[A]
+        /* object */ org.scalablytyped.runtime.StringDictionary[A], 
+        org.scalablytyped.runtime.StringDictionary[A]
       ] = js.native
-    def filter[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
-    def filter[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[A] = js.native
-    def find[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[/* object */ ScalablyTyped.runtime.StringDictionary[A], A] = js.native
-    def find[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.NumberDictionary[A]): A = js.native
-    def find[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.StringDictionary[A]): A = js.native
+    def filter[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
+    def filter[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
+    def find[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[/* object */ org.scalablytyped.runtime.StringDictionary[A], A] = js.native
+    def find[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.NumberDictionary[A]): A = js.native
+    def find[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.StringDictionary[A]): A = js.native
     def map[A, B](f: js.Function1[/* x */ A, B]): js.Function1[
-        /* object */ ScalablyTyped.runtime.StringDictionary[A], 
-        ScalablyTyped.runtime.StringDictionary[B]
+        /* object */ org.scalablytyped.runtime.StringDictionary[A], 
+        org.scalablytyped.runtime.StringDictionary[B]
       ] = js.native
-    def map[A, B](f: js.Function1[/* x */ A, B], `object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[B] = js.native
-    def map[A, B](f: js.Function1[/* x */ A, B], `object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[B] = js.native
+    def map[A, B](f: js.Function1[/* x */ A, B], `object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[B] = js.native
+    def map[A, B](f: js.Function1[/* x */ A, B], `object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[B] = js.native
     def partition[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[
-        /* object */ ScalablyTyped.runtime.StringDictionary[A], 
+        /* object */ org.scalablytyped.runtime.StringDictionary[A], 
         js.Tuple2[
-          ScalablyTyped.runtime.StringDictionary[A], 
-          ScalablyTyped.runtime.StringDictionary[A]
+          org.scalablytyped.runtime.StringDictionary[A], 
+          org.scalablytyped.runtime.StringDictionary[A]
         ]
       ] = js.native
-    def partition[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.NumberDictionary[A]): js.Tuple2[
-        ScalablyTyped.runtime.NumberDictionary[A], 
-        ScalablyTyped.runtime.NumberDictionary[A]
+    def partition[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.NumberDictionary[A]): js.Tuple2[
+        org.scalablytyped.runtime.NumberDictionary[A], 
+        org.scalablytyped.runtime.NumberDictionary[A]
       ] = js.native
-    def partition[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.StringDictionary[A]): js.Tuple2[
-        ScalablyTyped.runtime.StringDictionary[A], 
-        ScalablyTyped.runtime.StringDictionary[A]
+    def partition[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.StringDictionary[A]): js.Tuple2[
+        org.scalablytyped.runtime.StringDictionary[A], 
+        org.scalablytyped.runtime.StringDictionary[A]
       ] = js.native
     def reject[A](f: js.Function1[/* x */ A, scala.Boolean]): js.Function1[
-        /* object */ ScalablyTyped.runtime.StringDictionary[A], 
-        ScalablyTyped.runtime.StringDictionary[A]
+        /* object */ org.scalablytyped.runtime.StringDictionary[A], 
+        org.scalablytyped.runtime.StringDictionary[A]
       ] = js.native
-    def reject[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.NumberDictionary[A]): ScalablyTyped.runtime.NumberDictionary[A] = js.native
-    def reject[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: ScalablyTyped.runtime.StringDictionary[A]): ScalablyTyped.runtime.StringDictionary[A] = js.native
+    def reject[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.NumberDictionary[A]): org.scalablytyped.runtime.NumberDictionary[A] = js.native
+    def reject[A](f: js.Function1[/* x */ A, scala.Boolean], `object`: org.scalablytyped.runtime.StringDictionary[A]): org.scalablytyped.runtime.StringDictionary[A] = js.native
   }
   
   @JSName("Str")

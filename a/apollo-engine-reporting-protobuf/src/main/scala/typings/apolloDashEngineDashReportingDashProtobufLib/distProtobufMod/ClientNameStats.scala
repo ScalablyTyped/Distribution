@@ -15,7 +15,7 @@ class ClientNameStats () extends IClientNameStats {
   def this(properties: IClientNameStats) = this()
   /** ClientNameStats cacheHitsPerVersion. */
   @JSName("cacheHitsPerVersion")
-  var cacheHitsPerVersion_ClientNameStats: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var cacheHitsPerVersion_ClientNameStats: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /** ClientNameStats cacheLatencyCount. */
   @JSName("cacheLatencyCount")
   var cacheLatencyCount_ClientNameStats: js.Array[scala.Double] = js.native
@@ -24,10 +24,10 @@ class ClientNameStats () extends IClientNameStats {
   var latencyCount_ClientNameStats: js.Array[scala.Double] = js.native
   /** ClientNameStats persistedQueryHitsPerVersion. */
   @JSName("persistedQueryHitsPerVersion")
-  var persistedQueryHitsPerVersion_ClientNameStats: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var persistedQueryHitsPerVersion_ClientNameStats: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /** ClientNameStats persistedQueryMissesPerVersion. */
   @JSName("persistedQueryMissesPerVersion")
-  var persistedQueryMissesPerVersion_ClientNameStats: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var persistedQueryMissesPerVersion_ClientNameStats: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /** ClientNameStats privateCacheTtlCount. */
   @JSName("privateCacheTtlCount")
   var privateCacheTtlCount_ClientNameStats: js.Array[scala.Double] = js.native
@@ -36,7 +36,7 @@ class ClientNameStats () extends IClientNameStats {
   var publicCacheTtlCount_ClientNameStats: js.Array[scala.Double] = js.native
   /** ClientNameStats requestsCountPerVersion. */
   @JSName("requestsCountPerVersion")
-  var requestsCountPerVersion_ClientNameStats: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var requestsCountPerVersion_ClientNameStats: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /** ClientNameStats requestsWithErrorsCount. */
   @JSName("requestsWithErrorsCount")
   var requestsWithErrorsCount_ClientNameStats: scala.Double = js.native
@@ -44,7 +44,7 @@ class ClientNameStats () extends IClientNameStats {
        * Converts this ClientNameStats to JSON.
        * @returns JSON object
        */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "ClientNameStats")
@@ -153,14 +153,14 @@ object ClientNameStats extends js.Object {
        * @param object Plain object
        * @returns ClientNameStats
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ClientNameStats = js.native
+  def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ClientNameStats = js.native
   /**
        * Creates a plain object from a ClientNameStats message. Also converts values to other types if specified.
        * @param message ClientNameStats
        * @param [options] Conversion options
        * @returns Plain object
        */
-  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ClientNameStats): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ClientNameStats): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a ClientNameStats message. Also converts values to other types if specified.
        * @param message ClientNameStats
@@ -170,12 +170,12 @@ object ClientNameStats extends js.Object {
   def toObject(
     message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ClientNameStats,
     options: protobufjsLib.protobufjsMod.IConversionOptions
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Verifies a ClientNameStats message.
        * @param message Plain object to verify
        * @returns `null` if valid, otherwise the reason why it is not
        */
-  def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+  def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
 }
 

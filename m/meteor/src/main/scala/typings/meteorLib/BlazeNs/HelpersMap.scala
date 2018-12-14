@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait HelpersMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Function]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function]
 

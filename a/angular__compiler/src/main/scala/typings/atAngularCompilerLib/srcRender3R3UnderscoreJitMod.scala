@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object srcRender3R3UnderscoreJitMod extends js.Object {
   def jitExpression(
     `def`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
-    context: ScalablyTyped.runtime.StringDictionary[js.Any],
+    context: org.scalablytyped.runtime.StringDictionary[js.Any],
     sourceUrl: java.lang.String,
     preStatements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
   ): js.Any = js.native

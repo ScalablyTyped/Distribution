@@ -24,6 +24,6 @@ trait IRouteService extends js.Object {
                *
                * @param newParams Object.<string, string> mapping of URL parameter names to values
                */
-  def updateParams(newParams: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit
+  def updateParams(newParams: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit
 }
 

@@ -19,6 +19,6 @@ trait Headers extends js.Object {
 @JSGlobal("Headers")
 @js.native
 object Headers
-  extends ScalablyTyped.runtime.Instantiable0[Headers]
-     with ScalablyTyped.runtime.Instantiable1[/* init */ `HeadersInit_`, Headers]
+  extends org.scalablytyped.runtime.Instantiable0[Headers]
+     with org.scalablytyped.runtime.Instantiable1[/* init */ `HeadersInit_`, Headers]
 

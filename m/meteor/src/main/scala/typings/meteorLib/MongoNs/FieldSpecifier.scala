@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FieldSpecifier
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[stdLib.Number]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[stdLib.Number]
 

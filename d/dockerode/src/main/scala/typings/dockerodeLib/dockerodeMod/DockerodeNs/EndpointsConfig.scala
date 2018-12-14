@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait EndpointsConfig
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[EndpointSettings]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[EndpointSettings]
 

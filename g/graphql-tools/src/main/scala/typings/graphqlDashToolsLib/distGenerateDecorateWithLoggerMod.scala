@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object distGenerateDecorateWithLoggerMod extends js.Object {
   def default(
-    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]],
+    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     logger: graphqlDashToolsLib.distInterfacesMod.ILogger,
     hint: java.lang.String
-  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def default(
     fn: js.UndefOr[scala.Nothing],
     logger: graphqlDashToolsLib.distInterfacesMod.ILogger,
     hint: java.lang.String
-  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
 }
 

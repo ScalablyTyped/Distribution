@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Through2Constructor
   extends nodeLib.streamMod.Transform
-     with ScalablyTyped.runtime.Instantiable0[nodeLib.streamMod.Transform]
-     with ScalablyTyped.runtime.Instantiable1[/* opts */ nodeLib.streamMod.internalNs.DuplexOptions, nodeLib.streamMod.Transform] {
+     with org.scalablytyped.runtime.Instantiable0[nodeLib.streamMod.Transform]
+     with org.scalablytyped.runtime.Instantiable1[/* opts */ nodeLib.streamMod.internalNs.DuplexOptions, nodeLib.streamMod.Transform] {
   def apply(): nodeLib.streamMod.Transform = js.native
   def apply(opts: nodeLib.streamMod.internalNs.DuplexOptions): nodeLib.streamMod.Transform = js.native
   /* InferMemberOverrides */

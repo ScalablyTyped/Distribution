@@ -15,7 +15,7 @@ trait Props extends MessageDescriptor {
   ] = js.undefined
   var tagName: js.UndefOr[java.lang.String] = js.undefined
   var values: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       reactDashIntlLib.ReactIntlNs.MessageValue | reactLib.reactMod.Global.JSXNs.Element
     ]
   ] = js.undefined

@@ -19,10 +19,10 @@ object typeModMembers extends js.Object {
   val GraphQLNonNull: graphqlLib.typeDefinitionMod._GraphQLNonNull[graphqlLib.typeDefinitionMod.GraphQLNullableType] = js.native
   val GraphQLSkipDirective: graphqlLib.typeDirectivesMod.GraphQLDirective = js.native
   val GraphQLString: graphqlLib.typeDefinitionMod.GraphQLScalarType = js.native
-  val SchemaMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  val SchemaMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val TypeKind: graphqlLib.Anon_ENUM = js.native
-  val TypeMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
-  val TypeNameMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  val TypeMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
+  val TypeNameMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val __Directive: graphqlLib.typeDefinitionMod.GraphQLObjectType = js.native
   val __DirectiveLocation: graphqlLib.typeDefinitionMod.GraphQLEnumType = js.native
   val __EnumValue: graphqlLib.typeDefinitionMod.GraphQLObjectType = js.native

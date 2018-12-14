@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("each", JSImport.Namespace)
 @js.native
 object eachMod
-  extends ScalablyTyped.runtime.TopLevel[EachStatic]
+  extends org.scalablytyped.runtime.TopLevel[EachStatic]
 

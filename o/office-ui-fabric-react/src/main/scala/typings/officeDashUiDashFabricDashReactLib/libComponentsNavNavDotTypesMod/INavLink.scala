@@ -10,7 +10,7 @@ trait INavLink
   extends /**
      * (Optional) Any additional properties to apply to the rendered links.
      */
-/* propertyName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Deprecated at v0.68.1 and will be removed at \>= v1.0.0.
        * @deprecated Removed at v1.0.0.

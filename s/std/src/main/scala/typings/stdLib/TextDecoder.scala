@@ -67,7 +67,7 @@ trait TextDecoder extends js.Object {
 @JSGlobal("TextDecoder")
 @js.native
 object TextDecoder
-  extends ScalablyTyped.runtime.Instantiable0[TextDecoder]
-     with ScalablyTyped.runtime.Instantiable1[/* label */ java.lang.String, TextDecoder]
-     with ScalablyTyped.runtime.Instantiable2[/* label */ java.lang.String, /* options */ TextDecoderOptions, TextDecoder]
+  extends org.scalablytyped.runtime.Instantiable0[TextDecoder]
+     with org.scalablytyped.runtime.Instantiable1[/* label */ java.lang.String, TextDecoder]
+     with org.scalablytyped.runtime.Instantiable2[/* label */ java.lang.String, /* options */ TextDecoderOptions, TextDecoder]
 

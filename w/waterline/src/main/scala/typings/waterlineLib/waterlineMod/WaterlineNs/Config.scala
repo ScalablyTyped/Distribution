@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Config extends js.Object {
-  var adapters: ScalablyTyped.runtime.StringDictionary[Adapter]
-  var connections: ScalablyTyped.runtime.StringDictionary[Connection]
+  var adapters: org.scalablytyped.runtime.StringDictionary[Adapter]
+  var connections: org.scalablytyped.runtime.StringDictionary[Connection]
 }
 

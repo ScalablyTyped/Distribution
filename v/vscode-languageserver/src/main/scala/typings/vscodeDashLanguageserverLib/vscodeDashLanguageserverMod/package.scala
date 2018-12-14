@@ -9,8 +9,8 @@ package object vscodeDashLanguageserverMod {
   type ClientFeature[P] = Feature[RemoteClient, P]
   type ConsoleFeature[P] = Feature[RemoteConsole, P]
   type Feature[B, P] = js.Function1[
-    /* Base */ ScalablyTyped.runtime.Instantiable0[B], 
-    ScalablyTyped.runtime.Instantiable0[B with P]
+    /* Base */ org.scalablytyped.runtime.Instantiable0[B], 
+    org.scalablytyped.runtime.Instantiable0[B with P]
   ]
   type FoldingRangeKind = vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind
   type IConnection = Connection[`_`, `_`, `_`, `_`, `_`, `_`]

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait _PlainJSONObject
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[PlainJSONValue]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[PlainJSONValue]
 

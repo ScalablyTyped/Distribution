@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("qrcode-generator", JSImport.Namespace)
 @js.native
 object qrcodeDashGeneratorMod
-  extends ScalablyTyped.runtime.TopLevel[QRCodeFactory]
+  extends org.scalablytyped.runtime.TopLevel[QRCodeFactory]
 

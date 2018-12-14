@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CustomAttrs
-  extends /* attrKey */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
+  extends /* attrKey */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
 

@@ -18,7 +18,7 @@ trait nlobjSearchResult
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * return an array of all nlobjSearchColumn objects returned in this search.
        * @return {nlobjSearchColumn[]}

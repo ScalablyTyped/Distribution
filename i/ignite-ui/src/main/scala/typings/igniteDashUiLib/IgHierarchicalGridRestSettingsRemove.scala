@@ -10,7 +10,7 @@ trait IgHierarchicalGridRestSettingsRemove
   extends /**
 	 * Option for IgHierarchicalGridRestSettingsRemove
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies whether update requests will be sent in batches
   	 */

@@ -845,7 +845,7 @@ object SecurityHubNs extends js.Object {
   
   
   trait FieldMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[NonEmptyString]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[NonEmptyString]
   
   
   trait GetEnabledStandardsRequest extends js.Object {
@@ -1491,7 +1491,7 @@ object SecurityHubNs extends js.Object {
   
   
   trait StandardsInputParameterMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[NonEmptyString]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[NonEmptyString]
   
   
   trait StandardsSubscription extends js.Object {

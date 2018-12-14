@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IContext
-  extends ScalablyTyped.runtime.Instantiable0[IContext] {
+  extends org.scalablytyped.runtime.Instantiable0[IContext] {
   var bindings: js.Array[IBinding] = js.native
   def has(binding: IBinding): scala.Boolean = js.native
   def pop(): IBinding = js.native

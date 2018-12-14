@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Metadata extends js.Object {
-  var files: ScalablyTyped.runtime.StringDictionary[File]
+  var files: org.scalablytyped.runtime.StringDictionary[File]
 }
 

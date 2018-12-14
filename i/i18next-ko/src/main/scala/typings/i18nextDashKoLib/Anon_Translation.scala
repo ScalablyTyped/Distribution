@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Translation extends js.Object {
-  var translation: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var translation: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

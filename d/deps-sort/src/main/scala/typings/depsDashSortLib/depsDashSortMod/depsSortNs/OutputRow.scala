@@ -25,6 +25,6 @@ trait OutputRow extends js.Object {
   /**
            * like 'row.deps', but mapping to 'row.index' instead of 'row.id'
            */
-  var indexDeps: ScalablyTyped.runtime.StringDictionary[scala.Double]
+  var indexDeps: org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 

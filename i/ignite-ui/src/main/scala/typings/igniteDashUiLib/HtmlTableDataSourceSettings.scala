@@ -10,7 +10,7 @@ trait HtmlTableDataSourceSettings
   extends /**
 	 * Option for HtmlTableDataSourceSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Type of the data source.
   	 */

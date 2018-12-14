@@ -89,7 +89,7 @@ trait Response
        * @param    body    value to json.stringify
        * @param    [headers] headers to set on the response
        */
-  def json(body: js.Any, headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
+  def json(body: js.Any, headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
   /**
        * short hand method for:
        *     res.contentType = 'json';
@@ -110,7 +110,7 @@ trait Response
   def json(
     code: scala.Double,
     body: js.Any,
-    headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Any = js.native
   /**
        * sets the link heaader.
@@ -176,7 +176,7 @@ trait Response
        * @param    [headers]  any add'l headers to set
        * @returns  the response object
        */
-  def send(body: js.Any, headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
+  def send(body: js.Any, headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
   /**
        * sends the response object. pass through to internal __send that uses a
        * formatter based on the content-type header.
@@ -206,7 +206,7 @@ trait Response
   def send(
     code: scala.Double,
     body: js.Any,
-    headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Any = js.native
   /**
        * sends the response object. pass through to internal __send that skips
@@ -232,7 +232,7 @@ trait Response
        * @param    [headers]  any add'l headers to set
        * @returns  the response object
        */
-  def sendRaw(body: js.Any, headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
+  def sendRaw(body: js.Any, headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
   /**
        * sends the response object. pass through to internal __send that skips
        * formatters entirely and sends the content as is.
@@ -262,7 +262,7 @@ trait Response
   def sendRaw(
     code: scala.Double,
     body: js.Any,
-    headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Any = js.native
   /**
        * sets a header on the response.
@@ -275,7 +275,7 @@ trait Response
        * @param    val  object of headers
        * @returns       self, the response object
        */
-  def set(headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]): Response = js.native
+  def set(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Response = js.native
   /**
        * sets a header on the response.
        * @param    name name of the header

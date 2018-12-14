@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ComponentClass[T /* <: Component */, O /* <: ComponentHost */]
   extends js.Function
-     with ScalablyTyped.runtime.Instantiable1[/* owner */ O, T]
+     with org.scalablytyped.runtime.Instantiable1[/* owner */ O, T]
 

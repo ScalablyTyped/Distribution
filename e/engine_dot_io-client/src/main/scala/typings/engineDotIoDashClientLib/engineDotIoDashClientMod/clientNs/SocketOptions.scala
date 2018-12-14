@@ -35,7 +35,7 @@ trait SocketOptions extends js.Object {
   		 * Headers that will be passed for each request to the server (via xhr-polling and via websockets).
   		 * These values then can be used during handshake or for special proxies. Can only be used in Node.js client environment.
   		 */
-  var extraHeaders: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var extraHeaders: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
   		 * forces base 64 encoding for polling transport even when XHR2 responseType is available and WebSocket even if the used standard supports binary.
   		 */
@@ -114,7 +114,7 @@ trait SocketOptions extends js.Object {
   /**
   		 * hash of options, indexed by transport name, overriding the common options for the given transport
   		 */
-  var transportOptions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[SocketOptions]] = js.undefined
+  var transportOptions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[SocketOptions]] = js.undefined
   /**
   		 * a list of transports to try (in order). Defaults to ['polling', 'websocket']. Engine always attempts to connect directly with the first one, provided the feature detection test for it passes.
   		 */

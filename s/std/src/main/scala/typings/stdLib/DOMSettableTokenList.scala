@@ -11,5 +11,5 @@ trait DOMSettableTokenList extends DOMTokenList
 @JSGlobal("DOMSettableTokenList")
 @js.native
 object DOMSettableTokenList
-  extends ScalablyTyped.runtime.Instantiable0[DOMSettableTokenList]
+  extends org.scalablytyped.runtime.Instantiable0[DOMSettableTokenList]
 

@@ -36,7 +36,7 @@ object showdownModMembers extends js.Object {
   /**
        * @return all extensions.
        */
-  def getAllExtensions(): ScalablyTyped.runtime.StringDictionary[js.Array[showdownLib.showdownMod.ShowdownNs.ShowdownExtension]] = js.native
+  def getAllExtensions(): org.scalablytyped.runtime.StringDictionary[js.Array[showdownLib.showdownMod.ShowdownNs.ShowdownExtension]] = js.native
   /**
        * Retrieve the default options.
        */

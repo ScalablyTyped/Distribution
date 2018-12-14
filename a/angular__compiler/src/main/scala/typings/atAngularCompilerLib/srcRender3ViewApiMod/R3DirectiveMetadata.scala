@@ -24,7 +24,7 @@ trait R3DirectiveMetadata extends js.Object {
   /**
        * A mapping of input field names to the property names.
        */
-  var inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])]
+  var inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])]
   /**
        * Information about usage of specific lifecycle events which require special treatment in the
        * code generator.
@@ -37,7 +37,7 @@ trait R3DirectiveMetadata extends js.Object {
   /**
        * A mapping of output field names to the property names.
        */
-  var outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The list of providers defined in the directive.
        */

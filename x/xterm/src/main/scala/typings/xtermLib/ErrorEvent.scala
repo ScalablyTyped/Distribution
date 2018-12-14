@@ -17,6 +17,6 @@ trait ErrorEvent extends Event {
 @JSGlobal("ErrorEvent")
 @js.native
 object ErrorEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, ErrorEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ ErrorEventInit, ErrorEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, ErrorEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ ErrorEventInit, ErrorEvent]
 

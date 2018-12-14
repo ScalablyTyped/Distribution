@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isInt", JSImport.Namespace)
 @js.native
 object libIsIntMod
-  extends ScalablyTyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Any]
 

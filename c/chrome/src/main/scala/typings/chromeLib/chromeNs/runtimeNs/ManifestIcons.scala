@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ManifestIcons
-  extends /* size */ ScalablyTyped.runtime.NumberDictionary[java.lang.String]
+  extends /* size */ org.scalablytyped.runtime.NumberDictionary[java.lang.String]
 

@@ -44,7 +44,7 @@ trait SVGFEDisplacementMapElement
 @JSGlobal("SVGFEDisplacementMapElement")
 @js.native
 object SVGFEDisplacementMapElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEDisplacementMapElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEDisplacementMapElement] {
   val SVG_CHANNEL_A: scala.Double = js.native
   val SVG_CHANNEL_B: scala.Double = js.native
   val SVG_CHANNEL_G: scala.Double = js.native

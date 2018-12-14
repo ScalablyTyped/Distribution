@@ -10,7 +10,7 @@ trait IgPivotViewDataSourceOptionsXmlaOptions
   extends /**
 	 * Option for IgPivotViewDataSourceOptionsXmlaOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * The catalog name.
   	 */

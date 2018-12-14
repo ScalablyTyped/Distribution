@@ -29,7 +29,7 @@ trait SVGLength extends js.Object {
 @JSGlobal("SVGLength")
 @js.native
 object SVGLength
-  extends ScalablyTyped.runtime.Instantiable0[SVGLength] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGLength] {
   val SVG_LENGTHTYPE_CM: scala.Double = js.native
   val SVG_LENGTHTYPE_EMS: scala.Double = js.native
   val SVG_LENGTHTYPE_EXS: scala.Double = js.native

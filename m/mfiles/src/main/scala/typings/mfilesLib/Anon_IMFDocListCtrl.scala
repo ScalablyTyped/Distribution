@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IMFDocListCtrl
-  extends ScalablyTyped.runtime.Instantiable0[IMFDocListCtrl]
+  extends org.scalablytyped.runtime.Instantiable0[IMFDocListCtrl]
 

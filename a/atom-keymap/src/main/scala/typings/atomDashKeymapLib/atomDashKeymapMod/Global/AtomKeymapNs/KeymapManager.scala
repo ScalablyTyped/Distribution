@@ -16,12 +16,12 @@ trait KeymapManager extends js.Object {
   /** Add sets of key bindings grouped by CSS selector. */
   def add(
     source: java.lang.String,
-    bindings: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+    bindings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /** Add sets of key bindings grouped by CSS selector. */
   def add(
     source: java.lang.String,
-    bindings: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String]],
+    bindings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]],
     priority: scala.Double
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /** Customize translation of raw keyboard events to keystroke strings. */
@@ -35,13 +35,13 @@ trait KeymapManager extends js.Object {
   /** Construct KeyBindings from an object grouping them by CSS selector. */
   def build(
     source: java.lang.String,
-    bindings: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+    bindings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   ): js.Array[KeyBinding] = js.native
   // Adding and Removing Bindings
   /** Construct KeyBindings from an object grouping them by CSS selector. */
   def build(
     source: java.lang.String,
-    bindings: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String]],
+    bindings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]],
     priority: scala.Double
   ): js.Array[KeyBinding] = js.native
   /** Clear all registered key bindings and enqueued keystrokes. For use in tests. */

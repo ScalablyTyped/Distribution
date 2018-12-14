@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait GitTree
-  extends /* i */ ScalablyTyped.runtime.NumberDictionary[GitTreeElem]
+  extends /* i */ org.scalablytyped.runtime.NumberDictionary[GitTreeElem]
 

@@ -65,7 +65,7 @@ class StaticReflector protected ()
        */
   def getStaticSymbol(declarationFile: java.lang.String, name: java.lang.String, members: js.Array[java.lang.String]): atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = js.native
   def parameters(`type`: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol): js.Array[_] = js.native
-  def propMetadata(`type`: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol): ScalablyTyped.runtime.StringDictionary[js.Array[_]] = js.native
+  def propMetadata(`type`: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol): org.scalablytyped.runtime.StringDictionary[js.Array[_]] = js.native
   def resolveExternalReference(
     ref: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference,
     containingFile: java.lang.String

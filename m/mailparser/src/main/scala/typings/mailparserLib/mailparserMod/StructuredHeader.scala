@@ -23,7 +23,7 @@ trait StructuredHeader extends js.Object {
   /**
   	 * Additional arguments.
   	 */
-  var params: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var params: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
   	 * The main value.
   	 */

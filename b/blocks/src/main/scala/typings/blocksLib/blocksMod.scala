@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("blocks", JSImport.Namespace)
 @js.native
 object blocksMod
-  extends ScalablyTyped.runtime.TopLevel[BlocksStatic]
+  extends org.scalablytyped.runtime.TopLevel[BlocksStatic]
 

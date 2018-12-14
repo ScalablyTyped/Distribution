@@ -16,7 +16,7 @@ class Channel protected () extends js.Object {
        * @param credentials Channel credentials to use when connecting
        * @param options A map of channel options that will be passed to the core
        */
-  def this(target: java.lang.String, credentials: ChannelCredentials, options: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]) = this()
+  def this(target: java.lang.String, credentials: ChannelCredentials, options: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]) = this()
   /**
        * Close the channel. This has the same functionality as the existing grpc.Client.prototype.close
        */

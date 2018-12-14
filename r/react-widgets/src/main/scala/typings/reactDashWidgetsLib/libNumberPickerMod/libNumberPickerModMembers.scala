@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-widgets/lib/NumberPicker", JSImport.Namespace)
 @js.native
 object libNumberPickerModMembers
-  extends ScalablyTyped.runtime.TopLevel[NumberPickerClass]
+  extends org.scalablytyped.runtime.TopLevel[NumberPickerClass]
 

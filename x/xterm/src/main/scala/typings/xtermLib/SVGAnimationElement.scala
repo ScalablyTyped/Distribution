@@ -16,5 +16,5 @@ trait SVGAnimationElement extends SVGElement {
 @JSGlobal("SVGAnimationElement")
 @js.native
 object SVGAnimationElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGAnimationElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGAnimationElement]
 

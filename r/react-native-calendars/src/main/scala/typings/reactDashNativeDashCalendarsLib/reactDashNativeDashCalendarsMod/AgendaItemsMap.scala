@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait AgendaItemsMap[TItem]
-  extends /* date */ ScalablyTyped.runtime.StringDictionary[js.Array[TItem]]
+  extends /* date */ org.scalablytyped.runtime.StringDictionary[js.Array[TItem]]
 

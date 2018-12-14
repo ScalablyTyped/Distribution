@@ -25,7 +25,7 @@ class walker protected () extends js.Object {
 @JSGlobal("CKEDITOR.dom.walker")
 @js.native
 object walker extends js.Object {
-  var validEmptyBlockContainers: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var validEmptyBlockContainers: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def blockBoundary(customNodeNames: js.Any): js.Function1[/* node */ ckeditorLib.CKEDITORNs.domNs.node, scala.Boolean] = js.native
   def bogus(): js.Function1[/* node */ ckeditorLib.CKEDITORNs.domNs.node, scala.Boolean] = js.native
   def bogus(isReject: scala.Boolean): js.Function1[/* node */ ckeditorLib.CKEDITORNs.domNs.node, scala.Boolean] = js.native

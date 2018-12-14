@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait FieldProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]
-     with /* prop */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var autofocus: scala.Boolean
   var disabled: scala.Boolean
   var errorSchema: js.Object

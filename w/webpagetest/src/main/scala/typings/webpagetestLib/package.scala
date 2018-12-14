@@ -12,7 +12,7 @@ package object webpagetestLib {
     scala.Unit
   ]
   type TestScript = js.Array[TestScriptCommand]
-  type TestScriptCommand = java.lang.String | (ScalablyTyped.runtime.StringDictionary[
+  type TestScriptCommand = java.lang.String | (org.scalablytyped.runtime.StringDictionary[
     java.lang.String | scala.Double | js.Array[java.lang.String] | js.Array[scala.Double]
   ])
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Code
-  extends /* code */ ScalablyTyped.runtime.StringDictionary[httpDashErrorsLib.httpDashErrorsMod.createHttpErrorNs.HttpErrorConstructor] {
+  extends /* code */ org.scalablytyped.runtime.StringDictionary[httpDashErrorsLib.httpDashErrorsMod.createHttpErrorNs.HttpErrorConstructor] {
   var HttpError: httpDashErrorsLib.httpDashErrorsMod.createHttpErrorNs.HttpErrorConstructor
 }
 

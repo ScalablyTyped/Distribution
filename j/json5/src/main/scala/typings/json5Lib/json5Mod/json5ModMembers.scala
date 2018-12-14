@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("json5", JSImport.Namespace)
 @js.native
 object json5ModMembers
-  extends ScalablyTyped.runtime.TopLevel[JSON5]
+  extends org.scalablytyped.runtime.TopLevel[JSON5]
 

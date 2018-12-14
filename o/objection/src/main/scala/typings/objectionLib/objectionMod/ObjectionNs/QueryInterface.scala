@@ -271,7 +271,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def crossJoin(tableName: TableName, column1: ColumnRef, operator: java.lang.String, column2: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
   def crossJoin(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def crossJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def debug(): this.type = js.native
@@ -298,7 +298,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def fullOuterJoin(tableName: TableName, column1: ColumnRef, operator: java.lang.String, column2: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
   def fullOuterJoin(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def fullOuterJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def groupByRaw(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -408,7 +408,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def innerJoin(tableName: TableName, column1: ColumnRef, operator: java.lang.String, column2: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
   def innerJoin(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def innerJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def into(
@@ -435,7 +435,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   // Joins
   def join(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   // Joins
   def join(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -455,7 +455,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def leftJoin(tableName: TableName, column1: ColumnRef, operator: java.lang.String, column2: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
   def leftJoin(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def leftJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def leftOuterJoin(queryBuilder: QueryBuilder[Model, js.Array[Model], js.Array[Model]]): QueryBuilder[QM, RM, RV] = js.native
@@ -472,7 +472,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def leftOuterJoin(tableName: TableName, column1: ColumnRef, operator: java.lang.String, column2: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
   def leftOuterJoin(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def leftOuterJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def limit(limit: scala.Double): this.type = js.native
@@ -671,7 +671,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def outerJoin(tableName: TableName, column1: ColumnRef, operator: java.lang.String, column2: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
   def outerJoin(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def outerJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def pluck(column: java.lang.String): this.type = js.native
@@ -689,7 +689,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def rightJoin(tableName: TableName, column1: ColumnRef, operator: java.lang.String, column2: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
   def rightJoin(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def rightJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def rightOuterJoin(queryBuilder: QueryBuilder[Model, js.Array[Model], js.Array[Model]]): QueryBuilder[QM, RM, RV] = js.native
@@ -706,7 +706,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def rightOuterJoin(tableName: TableName, column1: ColumnRef, operator: java.lang.String, column2: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
   def rightOuterJoin(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def rightOuterJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def sum(columnName: java.lang.String): this.type = js.native

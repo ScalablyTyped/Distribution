@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DateConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Date]
-     with ScalablyTyped.runtime.Instantiable2[/* year */ scala.Double, /* month */ scala.Double, Date]
-     with ScalablyTyped.runtime.Instantiable3[/* year */ scala.Double, /* month */ scala.Double, /* date */ scala.Double, Date]
-     with ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable0[Date]
+     with org.scalablytyped.runtime.Instantiable2[/* year */ scala.Double, /* month */ scala.Double, Date]
+     with org.scalablytyped.runtime.Instantiable3[/* year */ scala.Double, /* month */ scala.Double, /* date */ scala.Double, Date]
+     with org.scalablytyped.runtime.Instantiable4[
       /* year */ scala.Double, 
       /* month */ scala.Double, 
       /* date */ scala.Double, 
       /* hours */ scala.Double, 
       Date
     ]
-     with ScalablyTyped.runtime.Instantiable5[
+     with org.scalablytyped.runtime.Instantiable5[
       /* year */ scala.Double, 
       /* month */ scala.Double, 
       /* date */ scala.Double, 
@@ -25,7 +25,7 @@ trait DateConstructor
       /* minutes */ scala.Double, 
       Date
     ]
-     with ScalablyTyped.runtime.Instantiable6[
+     with org.scalablytyped.runtime.Instantiable6[
       /* year */ scala.Double, 
       /* month */ scala.Double, 
       /* date */ scala.Double, 
@@ -34,7 +34,7 @@ trait DateConstructor
       /* seconds */ scala.Double, 
       Date
     ]
-     with ScalablyTyped.runtime.Instantiable7[
+     with org.scalablytyped.runtime.Instantiable7[
       /* year */ scala.Double, 
       /* month */ scala.Double, 
       /* date */ scala.Double, 
@@ -44,7 +44,7 @@ trait DateConstructor
       /* ms */ scala.Double, 
       Date
     ]
-     with ScalablyTyped.runtime.Instantiable1[
+     with org.scalablytyped.runtime.Instantiable1[
       (/* vd */ VarDate) | (/* value */ scala.Double) | (/* value */ java.lang.String) | (/* value */ Date), 
       Date
     ] {

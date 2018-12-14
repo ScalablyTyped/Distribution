@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 // #############################################################################################
 
 trait Dict[T]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[T]
-     with /* key */ ScalablyTyped.runtime.NumberDictionary[T]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[T]
+     with /* key */ org.scalablytyped.runtime.NumberDictionary[T]
 

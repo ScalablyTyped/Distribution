@@ -12,5 +12,5 @@ trait RTCStatsReport
 @JSGlobal("RTCStatsReport")
 @js.native
 object RTCStatsReport
-  extends ScalablyTyped.runtime.Instantiable0[RTCStatsReport]
+  extends org.scalablytyped.runtime.Instantiable0[RTCStatsReport]
 

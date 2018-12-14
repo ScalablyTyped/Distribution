@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait MDLHTMLAttributes
   extends // Allows aria- and data- Attributes
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   // RDFa Attributes
   var about: js.UndefOr[java.lang.String] = js.undefined
   // Standard HTML Attributes

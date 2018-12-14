@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait FiveQuartersSet
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Icon] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] {
   var blackCircle: Icon
   var circleWithOneWhiteQuarter: Icon
   var circleWithThreeWhiteQuarters: Icon

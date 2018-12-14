@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Config extends js.Object {
-  val colors: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  val levels: ScalablyTyped.runtime.StringDictionary[scala.Double]
+  val colors: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  val levels: org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 

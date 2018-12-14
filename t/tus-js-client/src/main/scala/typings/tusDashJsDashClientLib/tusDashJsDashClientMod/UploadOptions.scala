@@ -12,8 +12,8 @@ trait UploadOptions extends js.Object {
   var fingerprint: js.UndefOr[
     js.Function2[/* file */ stdLib.File, /* options */ js.UndefOr[UploadOptions], java.lang.String]
   ] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
-  var metadata: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var metadata: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var onChunkComplete: js.UndefOr[
     (js.Function3[
       /* chunkSize */ scala.Double, 

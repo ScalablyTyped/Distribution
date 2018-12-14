@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Other
-  extends /* other */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* other */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var expires: js.UndefOr[java.lang.String] = js.undefined
 }
 

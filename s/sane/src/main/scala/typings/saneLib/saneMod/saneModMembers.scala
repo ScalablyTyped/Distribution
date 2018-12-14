@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 @JSImport("sane", JSImport.Namespace)
 @js.native
 object saneModMembers extends js.Object {
-  val FSEventsWatcher: ScalablyTyped.runtime.Instantiable2[
+  val FSEventsWatcher: org.scalablytyped.runtime.Instantiable2[
     /* dir */ java.lang.String, 
     /* options */ js.UndefOr[/* options */ saneLib.saneMod.saneNs.Options], 
     SaneWatcher
   ] = js.native
-  val NodeWatcher: ScalablyTyped.runtime.Instantiable2[
+  val NodeWatcher: org.scalablytyped.runtime.Instantiable2[
     /* dir */ java.lang.String, 
     /* options */ js.UndefOr[/* options */ saneLib.saneMod.saneNs.Options], 
     SaneWatcher
   ] = js.native
-  val PollWatcher: ScalablyTyped.runtime.Instantiable2[
+  val PollWatcher: org.scalablytyped.runtime.Instantiable2[
     /* dir */ java.lang.String, 
     /* options */ js.UndefOr[/* options */ saneLib.saneMod.saneNs.Options], 
     SaneWatcher
   ] = js.native
-  val WatchmanWatcher: ScalablyTyped.runtime.Instantiable2[
+  val WatchmanWatcher: org.scalablytyped.runtime.Instantiable2[
     /* dir */ java.lang.String, 
     /* options */ js.UndefOr[/* options */ saneLib.saneMod.saneNs.Options], 
     SaneWatcher

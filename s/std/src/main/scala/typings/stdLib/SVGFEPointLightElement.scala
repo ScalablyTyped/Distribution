@@ -15,5 +15,5 @@ trait SVGFEPointLightElement extends SVGElement {
 @JSGlobal("SVGFEPointLightElement")
 @js.native
 object SVGFEPointLightElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEPointLightElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEPointLightElement]
 

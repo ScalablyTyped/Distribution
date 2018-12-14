@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait DetailedArguments extends js.Object {
-  var aliases: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  var aliases: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   var argv: Arguments
   var configuration: Configuration
   var error: stdLib.Error | scala.Null
-  var newAliases: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  var newAliases: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 }
 

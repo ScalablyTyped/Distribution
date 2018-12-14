@@ -14,5 +14,5 @@ trait SVGPathSegCurvetoQuadraticSmoothAbs extends SVGPathSeg {
 @JSGlobal("SVGPathSegCurvetoQuadraticSmoothAbs")
 @js.native
 object SVGPathSegCurvetoQuadraticSmoothAbs
-  extends ScalablyTyped.runtime.Instantiable0[SVGPathSegCurvetoQuadraticSmoothAbs]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPathSegCurvetoQuadraticSmoothAbs]
 

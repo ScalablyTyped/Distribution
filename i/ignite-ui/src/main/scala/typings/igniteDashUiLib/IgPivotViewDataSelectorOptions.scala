@@ -10,7 +10,7 @@ trait IgPivotViewDataSelectorOptions
   extends /**
 	 * Option for IgPivotViewDataSelectorOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A function that will be called to determine if an item can be moved in or dropped on an area of the data selector.
   	 * paramType="string" The location where the item will be moved - igPivotGrid, igPivotDataSelector, filters, rows, columns or measures.

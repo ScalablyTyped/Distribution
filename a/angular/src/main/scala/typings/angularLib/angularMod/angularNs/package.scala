@@ -36,7 +36,7 @@ package object angularNs {
        * Same as IController. Keeping it for compatibility with older versions of these type definitions.
        */
   type IComponentController = IController
-  type IControllerConstructor = (ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, IController]) | (js.Function1[/* repeated */js.Any, scala.Unit | IController])
+  type IControllerConstructor = (org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, IController]) | (js.Function1[/* repeated */js.Any, scala.Unit | IController])
   type IDirectiveCompileFn[TScope /* <: IScope */] = js.Function3[
     /* templateElement */ angularLib.JQLite, 
     /* templateAttributes */ IAttributes, 
@@ -54,7 +54,7 @@ package object angularNs {
     /* instanceElement */ angularLib.JQLite, 
     /* instanceAttributes */ IAttributes, 
     /* controller */ js.UndefOr[
-      IController | js.Array[IController] | ScalablyTyped.runtime.StringDictionary[IController]
+      IController | js.Array[IController] | org.scalablytyped.runtime.StringDictionary[IController]
     ], 
     /* transclude */ js.UndefOr[ITranscludeFunction], 
     scala.Unit

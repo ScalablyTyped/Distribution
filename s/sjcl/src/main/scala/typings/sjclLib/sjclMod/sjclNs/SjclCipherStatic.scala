@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SjclCipherStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* key */ js.Array[scala.Double], SjclCipher]
+  extends org.scalablytyped.runtime.Instantiable1[/* key */ js.Array[scala.Double], SjclCipher]
 

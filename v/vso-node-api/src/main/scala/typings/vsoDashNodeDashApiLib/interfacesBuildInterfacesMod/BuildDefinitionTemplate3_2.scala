@@ -11,7 +11,7 @@ trait BuildDefinitionTemplate3_2 extends js.Object {
   var category: java.lang.String
   var description: java.lang.String
   var iconTaskId: java.lang.String
-  var icons: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var icons: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var id: java.lang.String
   var name: java.lang.String
   var template: BuildDefinition3_2

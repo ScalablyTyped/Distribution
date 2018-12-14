@@ -47,7 +47,7 @@ class Node () extends js.Object {
        * Gets the substituted node for this one, according to the specified bindings
        * @param bindings Bindings of identifiers to nodes
        */
-  def substitute(bindings: ScalablyTyped.runtime.StringDictionary[Node]): Node = js.native
+  def substitute(bindings: org.scalablytyped.runtime.StringDictionary[Node]): Node = js.native
   /**
        * Gets the canonical string representation of this node
        */

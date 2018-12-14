@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IntercomError extends js.Object {
   var body: intercomDashClientLib.Anon_Requestid
-  var headers: intercomDashClientLib.Anon_Status with ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var headers: intercomDashClientLib.Anon_Status with org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var statusCode: scala.Double
 }
 

@@ -10,7 +10,7 @@ trait MouseWrapper
   extends /**
 	 * Option for mouseWrapper
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var cancel: js.UndefOr[java.lang.String] = js.undefined
   var capture: js.UndefOr[CaptureEvent] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined

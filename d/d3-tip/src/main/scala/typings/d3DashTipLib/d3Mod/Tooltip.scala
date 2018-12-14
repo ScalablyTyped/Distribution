@@ -19,7 +19,7 @@ trait Tooltip extends js.Object {
     ]
   ): Tooltip = js.native
   def attr[Datum](
-    obj: ScalablyTyped.runtime.StringDictionary[
+    obj: org.scalablytyped.runtime.StringDictionary[
       d3DashArrayLib.d3DashArrayMod.Primitive | (js.Function3[
         /* datum */ Datum, 
         /* index */ scala.Double, 
@@ -97,7 +97,7 @@ trait Tooltip extends js.Object {
     priority: java.lang.String
   ): Tooltip = js.native
   def style[Datum](
-    obj: ScalablyTyped.runtime.StringDictionary[
+    obj: org.scalablytyped.runtime.StringDictionary[
       d3DashArrayLib.d3DashArrayMod.Primitive | (js.Function3[
         /* datum */ Datum, 
         /* index */ scala.Double, 
@@ -107,7 +107,7 @@ trait Tooltip extends js.Object {
     ]
   ): Tooltip = js.native
   def style[Datum](
-    obj: ScalablyTyped.runtime.StringDictionary[
+    obj: org.scalablytyped.runtime.StringDictionary[
       d3DashArrayLib.d3DashArrayMod.Primitive | (js.Function3[
         /* datum */ Datum, 
         /* index */ scala.Double, 

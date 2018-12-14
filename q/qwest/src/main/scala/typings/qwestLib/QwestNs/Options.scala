@@ -16,7 +16,7 @@ trait Options extends js.Object {
   /** post (by default), json, text, arraybuffer, blob, document or formdata */
   var dataType: js.UndefOr[java.lang.String] = js.undefined
   /** javascript object containing headers to be sent */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /** the password to access to the URL, if needed */
   var password: js.UndefOr[java.lang.String] = js.undefined
   /** the response type; either auto (default), json, xml, text, arraybuffer, blob or document */

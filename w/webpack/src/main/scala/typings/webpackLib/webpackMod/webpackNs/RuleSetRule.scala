@@ -46,7 +46,7 @@ trait RuleSetRule extends js.Object {
   /**
            * Options for parsing
            */
-  var parser: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var parser: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * Shortcut for use.query
            */

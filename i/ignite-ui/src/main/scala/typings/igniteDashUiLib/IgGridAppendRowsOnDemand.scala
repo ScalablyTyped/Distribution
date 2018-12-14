@@ -10,7 +10,7 @@ trait IgGridAppendRowsOnDemand
   extends /**
 	 * Option for igGridAppendRowsOnDemand
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Denotes the name of the encoded URL parameter that will state what is the currently requested chunk index
   	 *

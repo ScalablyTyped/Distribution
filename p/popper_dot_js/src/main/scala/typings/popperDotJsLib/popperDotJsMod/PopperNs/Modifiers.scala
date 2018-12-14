@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Modifiers
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[BaseModifier with (stdLib.Record[java.lang.String, _])]] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[BaseModifier with (stdLib.Record[java.lang.String, _])]] {
   var applyStyle: js.UndefOr[BaseModifier with popperDotJsLib.Anon_OnLoad] = js.undefined
   var arrow: js.UndefOr[BaseModifier with popperDotJsLib.Anon_Element] = js.undefined
   var computeStyle: js.UndefOr[BaseModifier with popperDotJsLib.Anon_Y] = js.undefined

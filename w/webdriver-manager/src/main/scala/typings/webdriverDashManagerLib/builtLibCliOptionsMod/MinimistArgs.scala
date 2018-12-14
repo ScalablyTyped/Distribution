@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MinimistArgs
-  extends /* opt */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  extends /* opt */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 

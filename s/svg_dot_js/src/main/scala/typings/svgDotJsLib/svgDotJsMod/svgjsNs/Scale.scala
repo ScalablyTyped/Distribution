@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Scale
   extends Transformation
-     with ScalablyTyped.runtime.Instantiable0[Scale]
+     with org.scalablytyped.runtime.Instantiable0[Scale]
 

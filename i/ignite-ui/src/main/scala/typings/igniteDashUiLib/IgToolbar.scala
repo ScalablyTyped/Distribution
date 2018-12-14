@@ -10,7 +10,7 @@ trait IgToolbar
   extends /**
 	 * Option for igToolbar
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Get/Set whether the toolbar can be collapsed.
   	 *

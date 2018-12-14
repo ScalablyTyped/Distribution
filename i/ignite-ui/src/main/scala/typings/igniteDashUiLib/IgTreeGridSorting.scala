@@ -10,7 +10,7 @@ trait IgTreeGridSorting
   extends /**
 	 * Option for igTreeGridSorting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Enables/disables special styling for sorted columns. If false, sorted column cells will not have any special sort-related styling.
   	 *

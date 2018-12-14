@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait NamedRegExpExecArray
   extends stdLib.RegExpExecArray {
   @JSName("groups")
-  var groups_NamedRegExpExecArray: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var groups_NamedRegExpExecArray: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 

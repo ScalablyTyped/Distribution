@@ -23,7 +23,7 @@ trait BuildDefinitionTemplate extends js.Object {
        * The ID of the task whose icon is used when showing this template in the UI.
        */
   var iconTaskId: java.lang.String
-  var icons: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var icons: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The ID of the template.
        */

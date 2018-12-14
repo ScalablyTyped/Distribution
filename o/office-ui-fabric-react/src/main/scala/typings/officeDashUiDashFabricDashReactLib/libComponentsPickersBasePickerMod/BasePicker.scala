@@ -11,7 +11,7 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   extends officeDashUiDashFabricDashReactLib.libUtilitiesMod.BaseComponent[P, IBasePickerState]
      with officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.IBasePicker[T] {
   def this(basePickerProps: P) = this()
-  var SuggestionOfProperType: ScalablyTyped.runtime.Instantiable1[
+  var SuggestionOfProperType: org.scalablytyped.runtime.Instantiable1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionsProps[T], 
     officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsMod.Suggestions[T]
   ] = js.native

@@ -29,7 +29,7 @@ object propDashTypesModMembers extends js.Object {
     getStack: js.Function0[_]
   ): scala.Unit = js.native
   def exact[P /* <: ValidationMap[_] */](`type`: P): Requireable[stdLib.Required[InferProps[P]]] = js.native
-  def instanceOf[T](expectedClass: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): Requireable[T] = js.native
+  def instanceOf[T](expectedClass: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): Requireable[T] = js.native
   def objectOf[T](`type`: Validator[T]): Requireable[propDashTypesLib.propDashTypesLibStrings.objectOf with js.Any] = js.native
   def oneOf[T](types: js.Array[T]): Requireable[T] = js.native
   def oneOfType[T /* <: Validator[_] */](types: js.Array[T]): Requireable[stdLib.NonNullable[InferType[T]]] = js.native

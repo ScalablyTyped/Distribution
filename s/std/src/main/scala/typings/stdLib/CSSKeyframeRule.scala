@@ -14,5 +14,5 @@ trait CSSKeyframeRule extends CSSRule {
 @JSGlobal("CSSKeyframeRule")
 @js.native
 object CSSKeyframeRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSKeyframeRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSKeyframeRule]
 

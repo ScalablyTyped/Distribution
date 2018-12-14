@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Reference
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[java.lang.String] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   var rel: java.lang.String
   var uri: java.lang.String
 }

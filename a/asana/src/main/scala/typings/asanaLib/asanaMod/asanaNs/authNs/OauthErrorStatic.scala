@@ -15,5 +15,5 @@ trait OauthErrorStatic
              * @option {String} [error_description] A description of the error.
              * @constructor
              */
-ScalablyTyped.runtime.Instantiable1[/* options */ OauthErrorOptions, OauthError]
+org.scalablytyped.runtime.Instantiable1[/* options */ OauthErrorOptions, OauthError]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("knockout.validation", JSImport.Namespace)
 @js.native
 object knockoutDotValidationMod
-  extends ScalablyTyped.runtime.TopLevel[KnockoutValidationStatic]
+  extends org.scalablytyped.runtime.TopLevel[KnockoutValidationStatic]
 

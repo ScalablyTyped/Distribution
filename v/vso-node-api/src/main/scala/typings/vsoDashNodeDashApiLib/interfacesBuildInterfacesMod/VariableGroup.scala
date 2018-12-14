@@ -19,6 +19,6 @@ trait VariableGroup extends VariableGroupReference {
        * The type of the variable group.
        */
   var `type`: java.lang.String
-  var variables: ScalablyTyped.runtime.StringDictionary[BuildDefinitionVariable]
+  var variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
 }
 

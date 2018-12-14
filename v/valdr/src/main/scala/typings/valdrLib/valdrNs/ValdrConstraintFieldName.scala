@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ValdrConstraintFieldName
-  extends /* validatorName */ ScalablyTyped.runtime.StringDictionary[ValdrConstraintValidator]
+  extends /* validatorName */ org.scalablytyped.runtime.StringDictionary[ValdrConstraintValidator]
 

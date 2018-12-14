@@ -13,8 +13,8 @@ trait MediaStreamErrorEvent extends Event {
 @JSGlobal("MediaStreamErrorEvent")
 @js.native
 object MediaStreamErrorEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, MediaStreamErrorEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, MediaStreamErrorEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* typeArg */ java.lang.String, 
       /* eventInitDict */ MediaStreamErrorEventInit, 
       MediaStreamErrorEvent

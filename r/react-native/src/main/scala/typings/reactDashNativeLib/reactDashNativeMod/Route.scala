@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Route
   extends //anything else
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   //Commonly found properties
   var backButtonTitle: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined

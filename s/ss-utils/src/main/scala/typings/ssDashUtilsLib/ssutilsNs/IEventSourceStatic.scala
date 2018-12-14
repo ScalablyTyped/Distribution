@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IEventSourceStatic
   extends stdLib.EventTarget
-     with ScalablyTyped.runtime.Instantiable1[/* url */ java.lang.String, IEventSourceStatic]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable1[/* url */ java.lang.String, IEventSourceStatic]
+     with org.scalablytyped.runtime.Instantiable2[
       /* url */ java.lang.String, 
       /* eventSourceInitDict */ IEventSourceInit, 
       IEventSourceStatic

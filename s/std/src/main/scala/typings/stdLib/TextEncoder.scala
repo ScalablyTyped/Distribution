@@ -24,5 +24,5 @@ trait TextEncoder extends js.Object {
 @JSGlobal("TextEncoder")
 @js.native
 object TextEncoder
-  extends ScalablyTyped.runtime.Instantiable0[TextEncoder]
+  extends org.scalablytyped.runtime.Instantiable0[TextEncoder]
 

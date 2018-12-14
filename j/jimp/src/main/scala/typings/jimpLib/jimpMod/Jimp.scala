@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Jimp
   extends // Constructors
-// For custom constructors when using Jimp.appendConstructorOption
-ScalablyTyped.runtime.Instantiable1[
-      (/* path */ java.lang.String) | (/* urlOptions */ jimpLib.URLOptions) | (/* image */ Jimp) | (/* data */ nodeLib.Buffer) | (/* data */ Bitmap) | (/* args (repeated) */ js.Any), 
-      Jimp
-    ]
-     with // Constructors
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       (/* path */ java.lang.String) | (/* urlOptions */ jimpLib.URLOptions) | (/* image */ Jimp) | (/* data */ nodeLib.Buffer) | (/* data */ Bitmap) | (/* w */ scala.Double), 
       (/* cb */ jimpLib.ImageCallback[js.Any]) | (/* h */ scala.Double), 
       Jimp
     ]
-     with ScalablyTyped.runtime.Instantiable4[
+     with // Constructors
+// For custom constructors when using Jimp.appendConstructorOption
+org.scalablytyped.runtime.Instantiable1[
+      (/* path */ java.lang.String) | (/* urlOptions */ jimpLib.URLOptions) | (/* image */ Jimp) | (/* data */ nodeLib.Buffer) | (/* data */ Bitmap) | (/* args (repeated) */ js.Any), 
+      Jimp
+    ]
+     with org.scalablytyped.runtime.Instantiable3[
+      /* w */ scala.Double, 
+      /* h */ scala.Double, 
+      (/* cb */ jimpLib.ImageCallback[js.Any]) | (/* background */ scala.Double) | (/* background */ java.lang.String), 
+      Jimp
+    ]
+     with org.scalablytyped.runtime.Instantiable4[
       /* w */ scala.Double, 
       /* h */ scala.Double, 
       (/* background */ scala.Double) | (/* background */ java.lang.String), 
       /* cb */ jimpLib.ImageCallback[js.Any], 
-      Jimp
-    ]
-     with ScalablyTyped.runtime.Instantiable3[
-      /* w */ scala.Double, 
-      /* h */ scala.Double, 
-      (/* cb */ jimpLib.ImageCallback[js.Any]) | (/* background */ scala.Double) | (/* background */ java.lang.String), 
       Jimp
     ] {
   // Constants

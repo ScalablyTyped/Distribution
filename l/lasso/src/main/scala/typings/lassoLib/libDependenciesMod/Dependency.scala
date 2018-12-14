@@ -11,7 +11,7 @@ trait Dependency
      with DependencyConfig {
   var _packageDependency: js.UndefOr[scala.Boolean] = js.native
   var contentType: js.UndefOr[java.lang.String] = js.native
-  var properties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def apply(dependencyConfig: DependencyConfig, dirname: java.lang.String): Dependency = js.native
   def apply(dependencyConfig: DependencyConfig, dirname: java.lang.String, filename: java.lang.String): Dependency = js.native
   def calculateKey(lassoContext: lassoLib.libLassoContextMod.default, callback: Callback): js.Any = js.native

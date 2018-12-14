@@ -15,10 +15,10 @@ object cookieDashParserModMembers extends js.Object {
     options: cookieDashParserLib.cookieDashParserMod.cookieParserNs.CookieParseOptions
   ): expressLib.expressMod.eNs.RequestHandler = js.native
   def JSONCookie(jsonCookie: java.lang.String): js.UndefOr[js.Object] = js.native
-  def JSONCookies[T /* <: ScalablyTyped.runtime.StringDictionary[java.lang.String] */](jsonCookies: T): cookieDashParserLib.cookieDashParserLibStrings.JSONCookies with js.Any = js.native
+  def JSONCookies[T /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */](jsonCookies: T): cookieDashParserLib.cookieDashParserLibStrings.JSONCookies with js.Any = js.native
   def signedCookie(cookie: java.lang.String, secret: java.lang.String): java.lang.String | cookieDashParserLib.cookieDashParserLibNumbers.`false` = js.native
   def signedCookie(cookie: java.lang.String, secret: js.Array[java.lang.String]): java.lang.String | cookieDashParserLib.cookieDashParserLibNumbers.`false` = js.native
-  def signedCookies[T /* <: ScalablyTyped.runtime.StringDictionary[java.lang.String] */](cookies: T, secret: java.lang.String): cookieDashParserLib.cookieDashParserLibStrings.signedCookies with js.Any = js.native
-  def signedCookies[T /* <: ScalablyTyped.runtime.StringDictionary[java.lang.String] */](cookies: T, secret: js.Array[java.lang.String]): cookieDashParserLib.cookieDashParserLibStrings.signedCookies with js.Any = js.native
+  def signedCookies[T /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */](cookies: T, secret: java.lang.String): cookieDashParserLib.cookieDashParserLibStrings.signedCookies with js.Any = js.native
+  def signedCookies[T /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */](cookies: T, secret: js.Array[java.lang.String]): cookieDashParserLib.cookieDashParserLibStrings.signedCookies with js.Any = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("headers")
 @js.native
 object headers
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.Headers]
-     with ScalablyTyped.runtime.Instantiable1[/* init */ stdLib.HeadersInit, stdLib.Headers]
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.Headers]
+     with org.scalablytyped.runtime.Instantiable1[/* init */ stdLib.HeadersInit, stdLib.Headers]
 

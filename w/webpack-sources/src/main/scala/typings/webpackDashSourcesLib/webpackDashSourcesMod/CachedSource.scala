@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CachedSource protected () extends js.Object {
   def this(source: Source) = this()
-  var _cachedMaps: ScalablyTyped.runtime.StringDictionary[sourceDashMapLib.sourceDashMapMod.RawSourceMap] = js.native
+  var _cachedMaps: org.scalablytyped.runtime.StringDictionary[sourceDashMapLib.sourceDashMapMod.RawSourceMap] = js.native
   var _cachedSize: scala.Double = js.native
   var _cachedSource: java.lang.String = js.native
   var _source: Source = js.native

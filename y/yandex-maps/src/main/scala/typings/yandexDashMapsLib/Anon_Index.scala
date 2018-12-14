@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Index
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var activeRouteAutoSelection: js.UndefOr[scala.Boolean] = js.undefined
   var boundsAutoApply: js.UndefOr[scala.Boolean] = js.undefined
   var dragUpdateInterval: js.UndefOr[java.lang.String | scala.Double] = js.undefined

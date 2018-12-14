@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IOnNavigateAwayStrategies
-  extends /* strategyName */ ScalablyTyped.runtime.StringDictionary[
+  extends /* strategyName */ org.scalablytyped.runtime.StringDictionary[
       js.Function3[
         /* rootFormScope */ angularLib.angularMod.angularNs.IScope, 
         /* rootForm */ angularLib.angularMod.angularNs.IAugmentedJQueryStatic, 

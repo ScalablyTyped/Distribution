@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ClientRectList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[ClientRect] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[ClientRect] {
   val length: scala.Double
   def item(index: scala.Double): ClientRect
 }
@@ -15,5 +15,5 @@ trait ClientRectList
 @JSGlobal("ClientRectList")
 @js.native
 object ClientRectList
-  extends ScalablyTyped.runtime.Instantiable0[ClientRectList]
+  extends org.scalablytyped.runtime.Instantiable0[ClientRectList]
 

@@ -10,7 +10,7 @@ trait IgComboLocale
   extends /**
 	 * Option for IgComboLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets title for html element which represent the clear button.
   	 *

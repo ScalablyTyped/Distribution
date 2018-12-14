@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto-js/pad-nopadding", JSImport.Namespace)
 @js.native
 object padDashNopaddingMod
-  extends ScalablyTyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Any]
 

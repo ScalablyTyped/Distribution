@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CrossTableRow
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Array[Cell]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Array[Cell]]
 

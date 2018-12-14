@@ -12,6 +12,6 @@ trait ITypeStat extends js.Object {
   /** TypeStat name */
   var name: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /** TypeStat perFieldStat */
-  var perFieldStat: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IFieldStat] | scala.Null] = js.undefined
+  var perFieldStat: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IFieldStat] | scala.Null] = js.undefined
 }
 

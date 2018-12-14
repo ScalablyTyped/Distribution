@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-concat", JSImport.Namespace)
 @js.native
 object gulpDashConcatModMembers
-  extends ScalablyTyped.runtime.TopLevel[IConcat]
+  extends org.scalablytyped.runtime.TopLevel[IConcat]
 

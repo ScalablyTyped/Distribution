@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-embed", JSImport.Namespace)
 @js.native
 object semanticDashUiDashEmbedMod
-  extends ScalablyTyped.runtime.TopLevel[semanticDashUiDashEmbedLib.SemanticUINs.Embed]
+  extends org.scalablytyped.runtime.TopLevel[semanticDashUiDashEmbedLib.SemanticUINs.Embed]
 

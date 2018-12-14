@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait AnyProps
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Any]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Any]
 

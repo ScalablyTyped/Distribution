@@ -29,5 +29,5 @@ trait DirectoryEntry extends FileSystemEntry {
 @JSGlobal("DirectoryEntry")
 @js.native
 object DirectoryEntry
-  extends ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* root */ DirectoryEntry, DirectoryEntry]
+  extends org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* root */ DirectoryEntry, DirectoryEntry]
 

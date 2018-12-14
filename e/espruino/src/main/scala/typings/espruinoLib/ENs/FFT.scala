@@ -19,5 +19,5 @@ trait FFT
          * @param inverse 
          * @return  
          */
-ScalablyTyped.runtime.Instantiable3[/* arrReal */ js.Any, /* arrImage */ js.Any, /* inverse */ scala.Boolean, FFT]
+org.scalablytyped.runtime.Instantiable3[/* arrReal */ js.Any, /* arrImage */ js.Any, /* inverse */ scala.Boolean, FFT]
 

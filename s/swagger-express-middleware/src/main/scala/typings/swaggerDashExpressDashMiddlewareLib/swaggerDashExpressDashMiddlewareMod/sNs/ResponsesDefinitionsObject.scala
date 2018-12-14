@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ResponsesDefinitionsObject
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[ResponseObject]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[ResponseObject]
 

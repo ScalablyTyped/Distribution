@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FusionChartStatic
-  extends ScalablyTyped.runtime.Instantiable1[(/* chartObject */ ChartObject) | (/* chartObject */ js.Object), FusionCharts] {
+  extends org.scalablytyped.runtime.Instantiable1[(/* chartObject */ ChartObject) | (/* chartObject */ js.Object), FusionCharts] {
   var debugger: Debugger = js.native
   var version: js.Array[java.lang.String] = js.native
   def apply(chartId: java.lang.String): FusionCharts = js.native

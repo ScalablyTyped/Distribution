@@ -115,5 +115,5 @@ trait EventTarget extends js.Object {
 @JSGlobal("EventTarget")
 @js.native
 object EventTarget
-  extends ScalablyTyped.runtime.Instantiable0[EventTarget]
+  extends org.scalablytyped.runtime.Instantiable0[EventTarget]
 

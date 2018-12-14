@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MailNs {
-  type Headers = (ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | nodemailerLib.Anon_Prepared]) | js.Array[nodemailerLib.Anon_KeyValue]
+  type Headers = (org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | nodemailerLib.Anon_Prepared]) | js.Array[nodemailerLib.Anon_KeyValue]
   type ListHeader = java.lang.String | nodemailerLib.Anon_Comment
   type PluginFunction = js.Function2[
     /* mail */ nodemailerLib.libMailerMailDashMessageMod.namespaced, 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("jsx-chai", JSImport.Namespace)
 @js.native
 object jsxDashChaiModMembers
-  extends ScalablyTyped.runtime.TopLevel[JsxChaiStatic]
+  extends org.scalablytyped.runtime.TopLevel[JsxChaiStatic]
 

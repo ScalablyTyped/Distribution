@@ -18,7 +18,7 @@ class NullEngine () extends Engine {
   def _bindTexture(channel: scala.Double, texture: InternalTexture): scala.Unit = js.native
   /* protected */ def _bindTextureDirectly(target: scala.Double, texture: InternalTexture): scala.Boolean = js.native
   def bindBuffers(
-    vertexBuffers: ScalablyTyped.runtime.StringDictionary[VertexBuffer],
+    vertexBuffers: org.scalablytyped.runtime.StringDictionary[VertexBuffer],
     indexBuffer: babylonjsLib.WebGLBuffer,
     effect: Effect
   ): scala.Unit = js.native

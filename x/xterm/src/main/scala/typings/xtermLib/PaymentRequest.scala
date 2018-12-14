@@ -89,12 +89,12 @@ trait PaymentRequest extends EventTarget {
 @JSGlobal("PaymentRequest")
 @js.native
 object PaymentRequest
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* methodData */ js.Array[PaymentMethodData], 
       /* details */ PaymentDetailsInit, 
       PaymentRequest
     ]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable3[
       /* methodData */ js.Array[PaymentMethodData], 
       /* details */ PaymentDetailsInit, 
       /* options */ PaymentOptions, 

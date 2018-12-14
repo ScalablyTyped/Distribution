@@ -45,7 +45,7 @@ class Step[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] 
      * includes the step type's [JSON id](#transform.Step^jsonID) under
      * the `stepType` property.
      */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
 @JSImport("prosemirror-transform", "Step")
@@ -55,7 +55,7 @@ object Step extends js.Object {
      * Deserialize a step from its JSON representation. Will call
      * through to the step class' own implementation of this method.
      */
-  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, json: ScalablyTyped.runtime.StringDictionary[js.Any]): prosemirrorDashTransformLib.prosemirrorDashTransformMod.Step[S] = js.native
+  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, json: org.scalablytyped.runtime.StringDictionary[js.Any]): prosemirrorDashTransformLib.prosemirrorDashTransformMod.Step[S] = js.native
   /**
      * To be able to serialize steps to JSON, each step needs a string
      * ID to attach to its JSON representation. Use this method to

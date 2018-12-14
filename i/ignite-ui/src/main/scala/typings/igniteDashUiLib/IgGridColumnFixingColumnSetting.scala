@@ -10,7 +10,7 @@ trait IgGridColumnFixingColumnSetting
   extends /**
 	 * Option for IgGridColumnFixingColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies whether the column can be fixed or not. If allow fixing is false, then the fixing pin will not be rendered for the column.
   	 *

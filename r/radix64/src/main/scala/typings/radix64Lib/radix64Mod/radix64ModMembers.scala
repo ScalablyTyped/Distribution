@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("radix64", JSImport.Namespace)
 @js.native
 object radix64ModMembers
-  extends ScalablyTyped.runtime.TopLevel[Radix]
+  extends org.scalablytyped.runtime.TopLevel[Radix]
 

@@ -15,5 +15,5 @@ trait DeviceRotationRate extends js.Object {
 @JSGlobal("DeviceRotationRate")
 @js.native
 object DeviceRotationRate
-  extends ScalablyTyped.runtime.Instantiable0[DeviceRotationRate]
+  extends org.scalablytyped.runtime.Instantiable0[DeviceRotationRate]
 

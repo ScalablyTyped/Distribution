@@ -15,5 +15,5 @@ trait WebGLActiveInfo extends js.Object {
 @JSGlobal("WebGLActiveInfo")
 @js.native
 object WebGLActiveInfo
-  extends ScalablyTyped.runtime.Instantiable0[WebGLActiveInfo]
+  extends org.scalablytyped.runtime.Instantiable0[WebGLActiveInfo]
 

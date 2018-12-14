@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("promise", JSImport.Namespace)
 @js.native
 object promiseModMembers
-  extends ScalablyTyped.runtime.TopLevel[ThenPromiseConstructor]
+  extends org.scalablytyped.runtime.TopLevel[ThenPromiseConstructor]
 

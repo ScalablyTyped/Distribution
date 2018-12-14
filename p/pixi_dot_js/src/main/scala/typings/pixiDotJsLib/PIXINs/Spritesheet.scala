@@ -13,12 +13,12 @@ class Spritesheet protected () extends js.Object {
   var _batchIndex: scala.Double = js.native
   var _frameKeys: java.lang.String = js.native
   var _frames: js.Any = js.native
-  var animations: ScalablyTyped.runtime.StringDictionary[js.Array[Texture]] = js.native
+  var animations: org.scalablytyped.runtime.StringDictionary[js.Array[Texture]] = js.native
   var baseTexture: BaseTexture = js.native
   var data: js.Any = js.native
   var resolution: scala.Double = js.native
-  var textures: ScalablyTyped.runtime.StringDictionary[Texture] = js.native
-  /* protected */ def _callback(spriteSheet: this.type, textures: ScalablyTyped.runtime.StringDictionary[Texture]): scala.Unit = js.native
+  var textures: org.scalablytyped.runtime.StringDictionary[Texture] = js.native
+  /* protected */ def _callback(spriteSheet: this.type, textures: org.scalablytyped.runtime.StringDictionary[Texture]): scala.Unit = js.native
   /* protected */ def _nextBatch(): scala.Unit = js.native
   /* protected */ def _parseComplete(): scala.Unit = js.native
   /* protected */ def _processAnimations(): scala.Unit = js.native
@@ -29,7 +29,7 @@ class Spritesheet protected () extends js.Object {
   def parse(
     callback: js.Function2[
       /* spriteSheet */ this.type, 
-      /* textures */ ScalablyTyped.runtime.StringDictionary[Texture], 
+      /* textures */ org.scalablytyped.runtime.StringDictionary[Texture], 
       scala.Unit
     ]
   ): scala.Unit = js.native

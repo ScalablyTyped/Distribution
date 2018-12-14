@@ -26,7 +26,7 @@ class HtmlTagDefinition ()
   /* CompleteClass */
   override var parentToAdd: java.lang.String = js.native
   /* CompleteClass */
-  override var requiredParents: ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  override var requiredParents: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   /* CompleteClass */
   override def isClosedByChild(name: java.lang.String): scala.Boolean = js.native
   /* CompleteClass */

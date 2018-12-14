@@ -53,7 +53,7 @@ class BlobService () extends StorageServiceClient {
       * @param {object} sasToken                          The Shared Access Signature token.
       */
   def this(storageAccount: java.lang.String, storageAccessKey: java.lang.String, host: java.lang.String, sasToken: java.lang.String) = this()
-  var SpeedSummary: ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, SpeedSummary] = js.native
+  var SpeedSummary: org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, SpeedSummary] = js.native
   var parallelOperationThreadCount: scala.Double = js.native
   var singleBlobPutThresholdInBytes: scala.Double = js.native
   /**

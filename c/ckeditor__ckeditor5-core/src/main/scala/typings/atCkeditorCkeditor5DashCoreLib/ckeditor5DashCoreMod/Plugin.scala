@@ -22,7 +22,7 @@ object Plugin extends js.Object {
   val pluginName: js.UndefOr[java.lang.String] = js.native
   val requires: js.UndefOr[
     js.Array[
-      ScalablyTyped.runtime.Instantiable1[
+      org.scalablytyped.runtime.Instantiable1[
         /* editor */ atCkeditorCkeditor5DashCoreLib.ckeditor5DashCoreMod.editorNs.Editor, 
         atCkeditorCkeditor5DashCoreLib.ckeditor5DashCoreMod.Plugin[scala.Unit]
       ]

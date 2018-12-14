@@ -13,7 +13,7 @@ trait _Impl extends js.Object {
                * Named API action for query, originally specified in $.fn.settings.api
                */
   var action: java.lang.String | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false`
-  var api: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var api: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * Can be set to 'local' to cache successful returned AJAX responses when using a JSON API.
                * This helps avoid server round trips when API endpoints will return the same results when accessed repeatedly.

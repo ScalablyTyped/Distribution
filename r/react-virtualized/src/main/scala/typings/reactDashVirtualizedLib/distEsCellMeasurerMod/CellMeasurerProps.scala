@@ -14,7 +14,7 @@ trait CellMeasurerProps
      * Check the following link if you want to know more
      * https://github.com/bvaughn/react-virtualized#pass-thru-props
      */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var cache: CellMeasurerCacheInterface
   var children: (js.Function1[
     /* props */ reactDashVirtualizedLib.Anon_Measure, 

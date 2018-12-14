@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("request-promise-native", JSImport.Namespace)
 @js.native
 object requestDashPromiseDashNativeModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       requestLib.requestMod.requestNs.RequestAPI[
         requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.RequestPromise[js.Any], 
         requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.RequestPromiseOptions, 

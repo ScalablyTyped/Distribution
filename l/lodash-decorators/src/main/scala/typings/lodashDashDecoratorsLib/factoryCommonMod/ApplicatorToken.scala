@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ApplicatorToken
-  extends ScalablyTyped.runtime.Instantiable0[lodashDashDecoratorsLib.applicatorsMod.Applicator]
+  extends org.scalablytyped.runtime.Instantiable0[lodashDashDecoratorsLib.applicatorsMod.Applicator]
 

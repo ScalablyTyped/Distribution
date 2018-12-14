@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SubjectStatic
-  extends ScalablyTyped.runtime.Instantiable0[Subject[js.Object]] {
+  extends org.scalablytyped.runtime.Instantiable0[Subject[js.Object]] {
   def create[T](): ISubject[T] = js.native
   def create[T](observer: rxDashCoreLib.RxNs.Observer[T]): ISubject[T] = js.native
   def create[T](observer: rxDashCoreLib.RxNs.Observer[T], observable: Observable[T]): ISubject[T] = js.native

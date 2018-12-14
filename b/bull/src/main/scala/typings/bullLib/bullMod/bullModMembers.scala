@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("bull", JSImport.Namespace)
 @js.native
 object bullModMembers
-  extends ScalablyTyped.runtime.TopLevel[bullLib.Anon_QueueName]
+  extends org.scalablytyped.runtime.TopLevel[bullLib.Anon_QueueName]
 

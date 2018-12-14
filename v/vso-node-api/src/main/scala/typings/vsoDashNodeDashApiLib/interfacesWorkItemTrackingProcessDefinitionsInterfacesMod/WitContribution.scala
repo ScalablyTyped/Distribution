@@ -18,7 +18,7 @@ trait WitContribution extends js.Object {
   /**
        * A dictionary holding key value pairs for contribution inputs.
        */
-  var inputs: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var inputs: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * A value indicating if the contribution should be show on deleted workItem.
        */

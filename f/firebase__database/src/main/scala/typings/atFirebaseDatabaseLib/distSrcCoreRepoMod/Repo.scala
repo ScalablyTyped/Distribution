@@ -201,7 +201,7 @@ class Repo protected () extends js.Object {
        */
   def onDisconnectUpdate(
     path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path,
-    childrenToMerge: ScalablyTyped.runtime.StringDictionary[js.Any]
+    childrenToMerge: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   /**
        * @param {!Path} path
@@ -210,7 +210,7 @@ class Repo protected () extends js.Object {
        */
   def onDisconnectUpdate(
     path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path,
-    childrenToMerge: ScalablyTyped.runtime.StringDictionary[js.Any],
+    childrenToMerge: org.scalablytyped.runtime.StringDictionary[js.Any],
     onComplete: js.Function2[
       /* status */ stdLib.Error | scala.Null, 
       /* errorReason */ js.UndefOr[java.lang.String], 
@@ -323,7 +323,7 @@ class Repo protected () extends js.Object {
        */
   def update(
     path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path,
-    childrenToMerge: ScalablyTyped.runtime.StringDictionary[js.Any]
+    childrenToMerge: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   /**
        * @param {!Path} path
@@ -332,7 +332,7 @@ class Repo protected () extends js.Object {
        */
   def update(
     path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path,
-    childrenToMerge: ScalablyTyped.runtime.StringDictionary[js.Any],
+    childrenToMerge: org.scalablytyped.runtime.StringDictionary[js.Any],
     onComplete: js.Function2[
       /* status */ stdLib.Error | scala.Null, 
       /* errorReason */ js.UndefOr[java.lang.String], 

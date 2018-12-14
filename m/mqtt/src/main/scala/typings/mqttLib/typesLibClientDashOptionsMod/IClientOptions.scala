@@ -79,6 +79,6 @@ trait IClientOptions extends ISecureClientOptions {
      * a message that will sent by the broker automatically when the client disconnect badly.
      */
   var will: js.UndefOr[mqttLib.Anon_Retain] = js.undefined
-  var wsOptions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var wsOptions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

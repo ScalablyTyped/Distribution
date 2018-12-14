@@ -15,7 +15,7 @@ trait ExtendedLoaderContext extends js.Object {
   var loaderIndex: scala.Double
   var loaders: js.Array[Loader]
   var previousRequest: java.lang.String
-  var query: ScalablyTyped.runtime.StringDictionary[js.Any] | java.lang.String
+  var query: org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String
   var remainingRequest: java.lang.String
   var request: java.lang.String
   var resource: java.lang.String

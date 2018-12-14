@@ -17,7 +17,7 @@ trait ValidationErrorItem
          * @param path The field that triggered the validation error
          * @param value The value that generated the error
          */
-ScalablyTyped.runtime.Instantiable4[
+org.scalablytyped.runtime.Instantiable4[
       /* message */ java.lang.String, 
       /* type */ java.lang.String, 
       /* path */ java.lang.String, 

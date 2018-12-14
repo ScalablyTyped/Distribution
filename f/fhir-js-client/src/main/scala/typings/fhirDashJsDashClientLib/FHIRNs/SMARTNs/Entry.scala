@@ -13,7 +13,7 @@ trait Entry
   extends /**
              * Making this interface extendable since this is not a complete type definition of FHIR Entry
              */
-/* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
                * FHIR Resource
                */

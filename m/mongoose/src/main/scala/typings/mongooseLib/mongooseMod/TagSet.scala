@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TagSet
-  extends /* k */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* k */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

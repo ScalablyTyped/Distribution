@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LocaleMessages
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[LocaleMessageObject]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[LocaleMessageObject]
 

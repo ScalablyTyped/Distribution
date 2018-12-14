@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("angular-tooltips", JSImport.Namespace)
 @js.native
 object angularDashTooltipsModMembers
-  extends ScalablyTyped.runtime.TopLevel[angularDashTooltipsLib.angularDashTooltipsLibStrings.`720kbDOTtooltips`]
+  extends org.scalablytyped.runtime.TopLevel[angularDashTooltipsLib.angularDashTooltipsLibStrings.`720kbDOTtooltips`]
 

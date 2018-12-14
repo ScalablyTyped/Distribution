@@ -26,10 +26,10 @@ trait CheckType extends js.Object {
   
   @JSName("object")
   var object_Original: ObjectFunction = js.native
-  def all(arr: ScalablyTyped.runtime.StringDictionary[scala.Boolean]): scala.Boolean = js.native
   def all(arr: js.Array[scala.Boolean]): scala.Boolean = js.native
-  def any(arr: ScalablyTyped.runtime.StringDictionary[scala.Boolean]): scala.Boolean = js.native
+  def all(arr: org.scalablytyped.runtime.StringDictionary[scala.Boolean]): scala.Boolean = js.native
   def any(arr: js.Array[scala.Boolean]): scala.Boolean = js.native
+  def any(arr: org.scalablytyped.runtime.StringDictionary[scala.Boolean]): scala.Boolean = js.native
   /* Batch operations */
   
   /**
@@ -95,7 +95,7 @@ trait CheckType extends js.Object {
   def like[T /* <: js.Object */](a: js.Any, duck: T): /* is T */scala.Boolean = js.native
   // Also some difficulties with returning object with only defined in predicates object propertis.
   // Will gladly accept help or ideas. Now using any for returned object
-  def map[T /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](
+  def map[T /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
     arr: T,
     predicates: stdLib.Partial[checkDashTypesLib.checkDashTypesLibStrings.CheckType with js.Any]
   ): stdLib.Partial[checkDashTypesLib.checkDashTypesLibStrings.CheckType with js.Any] = js.native

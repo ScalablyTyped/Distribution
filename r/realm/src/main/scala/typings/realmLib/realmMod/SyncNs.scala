@@ -130,7 +130,7 @@ object SyncNs extends js.Object {
     def custom(
       providerName: java.lang.String,
       token: java.lang.String,
-      userInfo: ScalablyTyped.runtime.StringDictionary[js.Any]
+      userInfo: org.scalablytyped.runtime.StringDictionary[js.Any]
     ): realmLib.RealmNs.SyncNs.Credentials = js.native
     def facebook(token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
     def google(token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
@@ -159,7 +159,7 @@ object SyncNs extends js.Object {
        */
   @js.native
   object User extends js.Object {
-    val all: ScalablyTyped.runtime.StringDictionary[realmLib.RealmNs.SyncNs.User] = js.native
+    val all: org.scalablytyped.runtime.StringDictionary[realmLib.RealmNs.SyncNs.User] = js.native
     val current: realmLib.RealmNs.SyncNs.User = js.native
     // Deprecated
     /** @deprecated, to be removed in future versions */

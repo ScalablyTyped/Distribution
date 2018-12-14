@@ -13,14 +13,14 @@ trait TopicConstructor
      * @param name The unique name of the Topic.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Topic[js.Object]]
+org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Topic[js.Object]]
      with /**
      * Allocate a new Topic with a given name.
      *
      * @param name The unique name of the Topic.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* name */ java.lang.String, 
       /* opts */ atPulumiPulumiLib.resourceMod.ResourceOptions, 
       Topic[js.Object]

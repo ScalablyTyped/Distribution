@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("copy-webpack-plugin", JSImport.Namespace)
 @js.native
 object copyDashWebpackDashPluginModMembers
-  extends ScalablyTyped.runtime.TopLevel[CopyWebpackPlugin]
+  extends org.scalablytyped.runtime.TopLevel[CopyWebpackPlugin]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mariasql", JSImport.Namespace)
 @js.native
 object mariasqlModMembers
-  extends ScalablyTyped.runtime.TopLevel[mariasqlLib.mariasqlMod.mariasqlNs.Client]
+  extends org.scalablytyped.runtime.TopLevel[mariasqlLib.mariasqlMod.mariasqlNs.Client]
 

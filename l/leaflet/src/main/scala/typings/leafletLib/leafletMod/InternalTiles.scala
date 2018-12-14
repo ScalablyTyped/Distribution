@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait InternalTiles
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[leafletLib.Anon_Coords]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[leafletLib.Anon_Coords]
 

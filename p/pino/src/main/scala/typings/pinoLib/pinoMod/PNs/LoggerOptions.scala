@@ -10,7 +10,7 @@ trait LoggerOptions extends js.Object {
   /**
            * key-value object added as child logger to each log line. If set to null the base child logger is not added
            */
-  var base: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null] = js.undefined
+  var base: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null] = js.undefined
   /**
            * Browser only, see http://getpino.io/#/?id=pino-in-the-browser.
            */
@@ -23,7 +23,7 @@ trait LoggerOptions extends js.Object {
            * Use this option to define additional logging levels.
            * The keys of the object correspond the namespace of the log level, and the values should be the numerical value of the level.
            */
-  var customLevels: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Double]] = js.undefined
+  var customLevels: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
   /**
            * Enables logging. Default: `true`.
            */
@@ -78,7 +78,7 @@ trait LoggerOptions extends js.Object {
            * These functions should return an JSONifiable object and they should never throw. When logging an object,
            * each top-level property matching the exact key of a serializer will be serialized using the defined serializer.
            */
-  var serializers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[SerializerFn]] = js.undefined
+  var serializers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[SerializerFn]] = js.undefined
   /**
            * Enables or disables the inclusion of a timestamp in the log message. If a function is supplied, it must
            * synchronously return a JSON string representation of the time. If set to `false`, no timestamp will be included in the output.

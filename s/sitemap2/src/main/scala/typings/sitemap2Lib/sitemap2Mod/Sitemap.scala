@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Sitemap
-  extends ScalablyTyped.runtime.Instantiable0[Sitemap]
-     with ScalablyTyped.runtime.Instantiable1[/* conf */ SitemapConfig, Sitemap] {
+  extends org.scalablytyped.runtime.Instantiable0[Sitemap]
+     with org.scalablytyped.runtime.Instantiable1[/* conf */ SitemapConfig, Sitemap] {
   var childrens: js.Array[Sitemap] = js.native
   var fileName: java.lang.String = js.native
   var hostName: java.lang.String = js.native

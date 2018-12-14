@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
              */
 
 trait SymbolMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   var bang: java.lang.String
   var comma: java.lang.String
   var dot: java.lang.String

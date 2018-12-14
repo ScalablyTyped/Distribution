@@ -15,7 +15,7 @@ trait IToastOptions extends js.Object {
   var controllerAs: js.UndefOr[java.lang.String] = js.undefined
    // default: false
   var hideDelay: js.UndefOr[scala.Double | angularDashMaterialLib.angularDashMaterialLibNumbers.`false`] = js.undefined
-  var locals: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var locals: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var parent: js.UndefOr[java.lang.String | stdLib.Element | angularLib.JQuery] = js.undefined
    // default (ms): 3000
   var position: js.UndefOr[java.lang.String] = js.undefined

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "cwise-compiler"
-version := "1.1-dt-20180910Z-5457dc"
+version := "1.1-dt-20180910Z-58864a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "cwise-parser" % "1.0-dt-20180910Z-9409fc",
-  "org.scalablytyped" %%% "ndarray" % "1.0-dt-20180910Z-6e5454",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "cwise-parser" % "1.0-dt-20180910Z-9a9201",
+  "org.scalablytyped" %%% "ndarray" % "1.0-dt-20180910Z-31b306",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

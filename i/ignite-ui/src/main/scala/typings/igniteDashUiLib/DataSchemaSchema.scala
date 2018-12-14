@@ -10,7 +10,7 @@ trait DataSchemaSchema
   extends /**
 	 * Option for DataSchemaSchema
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * This is the property (xpath) in the data source where the child records of a record are located. Used in XML binding.
   	 */

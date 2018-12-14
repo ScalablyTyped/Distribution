@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Header
-  extends /* header */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* header */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

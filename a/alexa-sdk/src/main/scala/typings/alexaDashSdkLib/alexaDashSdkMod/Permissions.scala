@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Permissions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   /**
        * @deprecated
        */

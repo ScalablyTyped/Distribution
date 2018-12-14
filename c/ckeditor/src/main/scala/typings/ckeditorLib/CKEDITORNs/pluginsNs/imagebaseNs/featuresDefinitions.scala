@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.plugins.imagebase.featuresDefinitions")
 @js.native
 object featuresDefinitions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

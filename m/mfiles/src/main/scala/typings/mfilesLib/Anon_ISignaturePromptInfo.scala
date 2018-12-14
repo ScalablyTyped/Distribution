@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ISignaturePromptInfo
-  extends ScalablyTyped.runtime.Instantiable0[ISignaturePromptInfo]
+  extends org.scalablytyped.runtime.Instantiable0[ISignaturePromptInfo]
 

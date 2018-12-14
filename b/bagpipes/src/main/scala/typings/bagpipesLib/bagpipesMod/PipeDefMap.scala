@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PipeDefMap
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[PipeDef]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[PipeDef]
 

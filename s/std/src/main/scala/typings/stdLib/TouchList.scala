@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait TouchList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Touch] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Touch] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Touch]]
   val length: scala.Double
   def item(index: scala.Double): Touch | scala.Null
@@ -17,5 +17,5 @@ trait TouchList
 @JSGlobal("TouchList")
 @js.native
 object TouchList
-  extends ScalablyTyped.runtime.Instantiable0[TouchList]
+  extends org.scalablytyped.runtime.Instantiable0[TouchList]
 

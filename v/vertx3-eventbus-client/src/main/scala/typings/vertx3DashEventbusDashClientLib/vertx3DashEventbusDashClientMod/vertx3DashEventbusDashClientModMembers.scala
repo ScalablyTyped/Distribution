@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vertx3-eventbus-client", JSImport.Namespace)
 @js.native
 object vertx3DashEventbusDashClientModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       vertx3DashEventbusDashClientLib.vertx3DashEventbusDashClientMod.EventBusNs.EventBusStatic
     ]
 

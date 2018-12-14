@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ModelFields
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[Attribute | ForeignKey | ManyToMany | OneToOne]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[Attribute | ForeignKey | ManyToMany | OneToOne]
 

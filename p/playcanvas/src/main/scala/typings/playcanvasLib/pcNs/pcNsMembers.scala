@@ -1786,7 +1786,7 @@ object pcNsMembers extends js.Object {
        * @function
        * @description Create look up table for types
        */
-  def _typeLookup(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def _typeLookup(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * @function
        * @name pc.calculateNormals

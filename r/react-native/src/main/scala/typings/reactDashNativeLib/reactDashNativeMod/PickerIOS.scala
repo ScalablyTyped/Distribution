@@ -14,6 +14,6 @@ class PickerIOS () extends js.Object
 - Dropped TsTypeConstructor() */ @JSImport("react-native", "PickerIOS")
 @js.native
 object PickerIOS extends js.Object {
-  var Item: ScalablyTyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.PickerIOSItem] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.PickerIOSItem] = js.native
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IActionDefinition
-  extends ScalablyTyped.runtime.Instantiable0[IActionDefinition]
+  extends org.scalablytyped.runtime.Instantiable0[IActionDefinition]
 

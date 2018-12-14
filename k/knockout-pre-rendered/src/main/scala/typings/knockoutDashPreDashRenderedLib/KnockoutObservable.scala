@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(knockoutDashPreDashRenderedLib.KnockoutObservableFunctions because Already inherited / * key * / ScalablyTyped.runtime.StringDictionary[knockoutDashPreDashRenderedLib.KnockoutBindingHandler])*/
+/* RemoveMultipleInheritance: Dropped parents List(knockoutDashPreDashRenderedLib.KnockoutObservableFunctions because Already inherited / * key * / org.scalablytyped.runtime.StringDictionary[knockoutDashPreDashRenderedLib.KnockoutBindingHandler])*/
 @js.native
 trait KnockoutObservable[T] extends KnockoutSubscribable[T] {
   var valueHasMutated: js.UndefOr[Anon_Void] = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Datepicker
   extends Widget
      with DatepickerOptions {
-  var regional: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var regional: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def formatDate(format: java.lang.String, date: stdLib.Date): java.lang.String = js.native
   def formatDate(format: java.lang.String, date: stdLib.Date, settings: DatepickerFormatDateOptions): java.lang.String = js.native
   def iso8601Week(date: stdLib.Date): scala.Double = js.native

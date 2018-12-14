@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DOMParserStatic
-  extends ScalablyTyped.runtime.Instantiable0[DOMParser]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ Options, DOMParser]
+  extends org.scalablytyped.runtime.Instantiable0[DOMParser]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ Options, DOMParser]
 

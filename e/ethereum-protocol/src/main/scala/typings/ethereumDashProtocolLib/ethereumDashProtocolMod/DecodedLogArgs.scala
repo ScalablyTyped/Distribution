@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait DecodedLogArgs
-  extends /* argName */ ScalablyTyped.runtime.StringDictionary[ContractEventArg]
+  extends /* argName */ org.scalablytyped.runtime.StringDictionary[ContractEventArg]
 

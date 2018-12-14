@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Prefixes[I]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[I]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[I]
 

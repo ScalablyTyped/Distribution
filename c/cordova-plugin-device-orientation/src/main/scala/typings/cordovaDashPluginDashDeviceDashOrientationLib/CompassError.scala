@@ -20,7 +20,7 @@ trait CompassError extends js.Object {
 @js.native
 object CompassError
   extends /** Constructor for CompassError object */
-ScalablyTyped.runtime.Instantiable1[/* code */ scala.Double, CompassError] {
+org.scalablytyped.runtime.Instantiable1[/* code */ scala.Double, CompassError] {
   var COMPASS_INTERNAL_ERR: scala.Double = js.native
   var COMPASS_NOT_SUPPORTED: scala.Double = js.native
 }

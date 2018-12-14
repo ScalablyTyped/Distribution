@@ -84,7 +84,7 @@ trait AnalyticsService extends js.Object {
     label: java.lang.String,
     value: js.Any,
     nonInteractionFlag: scala.Boolean,
-    dimensions: ScalablyTyped.runtime.StringDictionary[js.Any]
+    dimensions: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def trackException(descrption: java.lang.String, isFatal: scala.Boolean): scala.Unit = js.native
   /**
@@ -110,7 +110,7 @@ trait AnalyticsService extends js.Object {
   def trackPage(
     pageURL: java.lang.String,
     title: java.lang.String,
-    dimensions: ScalablyTyped.runtime.StringDictionary[js.Any]
+    dimensions: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
 }
 

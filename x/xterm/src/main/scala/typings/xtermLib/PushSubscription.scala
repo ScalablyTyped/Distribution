@@ -18,5 +18,5 @@ trait PushSubscription extends js.Object {
 @JSGlobal("PushSubscription")
 @js.native
 object PushSubscription
-  extends ScalablyTyped.runtime.Instantiable0[PushSubscription]
+  extends org.scalablytyped.runtime.Instantiable0[PushSubscription]
 

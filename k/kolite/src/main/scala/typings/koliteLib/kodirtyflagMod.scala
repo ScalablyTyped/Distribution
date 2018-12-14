@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("kodirtyflag", JSImport.Namespace)
 @js.native
 object kodirtyflagMod
-  extends ScalablyTyped.runtime.TopLevel[KnockoutDirtyFlagStatic]
+  extends org.scalablytyped.runtime.TopLevel[KnockoutDirtyFlagStatic]
 

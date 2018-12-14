@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait DOMStringMap
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
 
 @JSGlobal("DOMStringMap")
 @js.native
 object DOMStringMap
-  extends ScalablyTyped.runtime.Instantiable0[DOMStringMap]
+  extends org.scalablytyped.runtime.Instantiable0[DOMStringMap]
 

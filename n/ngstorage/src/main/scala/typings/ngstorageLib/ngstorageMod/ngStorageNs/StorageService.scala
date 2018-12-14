@@ -10,7 +10,7 @@ trait StorageService
   extends /**
          * Access to the properties of the store.
          */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   @JSName("$apply")
   def $apply(): scala.Unit = js.native
   /**

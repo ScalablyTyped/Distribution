@@ -13,7 +13,7 @@ class Flow () extends js.Object {
   def consume(topic: java.lang.String): js.Promise[_] = js.native
   def consume(topic: java.lang.String, callback: ConsumerCallback): this.type = js.native
   def consume(topic: js.Array[java.lang.String], callback: ConsumerCallback): this.type = js.native
-  def consume(topics: js.Array[java.lang.String]): js.Promise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  def consume(topics: js.Array[java.lang.String]): js.Promise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def consumeStream(topic: java.lang.String): ReadableStream = js.native
   def consumeStream(topic: java.lang.String, callback: js.Function1[/* stream */ ReadableStream, scala.Unit]): this.type = js.native
   def define(topic: java.lang.String, data: js.Object): this.type = js.native

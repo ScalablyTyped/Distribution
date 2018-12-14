@@ -10,7 +10,7 @@ trait IgGridUpdatingRowEditDialogOptions
   extends /**
 	 * Option for IgGridUpdatingRowEditDialogOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies the animation duration for the opening and closing operations.
   	 *

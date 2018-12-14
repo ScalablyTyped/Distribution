@@ -11,6 +11,6 @@ trait SchemaContext extends js.Object {
   var options: Options
   var propertyPath: java.lang.String
   var schema: Schema
-  var schemas: ScalablyTyped.runtime.StringDictionary[Schema]
+  var schemas: org.scalablytyped.runtime.StringDictionary[Schema]
 }
 

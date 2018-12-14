@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait INetworkFirstConstructor
-  extends ScalablyTyped.runtime.Instantiable0[NetworkFirst]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ stdLib.Partial[INetworkFirstOptions], NetworkFirst]
+  extends org.scalablytyped.runtime.Instantiable0[NetworkFirst]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ stdLib.Partial[INetworkFirstOptions], NetworkFirst]
 

@@ -14,14 +14,14 @@ trait DataTypeVirtual
          * Accepts subtype any of the DataTypes
          * Array of required attributes that are available on the model
          */
-ScalablyTyped.runtime.Instantiable1[/* subtype */ DataTypeAbstract, DataTypeVirtual]
+org.scalablytyped.runtime.Instantiable1[/* subtype */ DataTypeAbstract, DataTypeVirtual]
      with /**
          * Virtual field
          *
          * Accepts subtype any of the DataTypes
          * Array of required attributes that are available on the model
          */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* subtype */ DataTypeAbstract, 
       /* requireAttributes */ js.Array[java.lang.String], 
       DataTypeVirtual

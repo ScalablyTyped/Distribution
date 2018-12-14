@@ -35,7 +35,7 @@ class AbstractTween ()
   def gotoAndStop(positionOrLabel: scala.Double): scala.Unit = js.native
   def resolve(positionOrLabel: java.lang.String): scala.Double = js.native
   def resolve(positionOrLabel: scala.Double): scala.Double = js.native
-  def setLabels(labels: js.Array[ScalablyTyped.runtime.StringDictionary[scala.Double]]): scala.Unit = js.native
+  def setLabels(labels: js.Array[org.scalablytyped.runtime.StringDictionary[scala.Double]]): scala.Unit = js.native
   def setPosition(rawPosition: scala.Double): scala.Unit = js.native
   def setPosition(rawPosition: scala.Double, ignoreActions: scala.Boolean): scala.Unit = js.native
   def setPosition(rawPosition: scala.Double, ignoreActions: scala.Boolean, jump: scala.Boolean): scala.Unit = js.native

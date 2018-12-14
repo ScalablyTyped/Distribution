@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IEventProviderStatic
-  extends ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable4[
       /* grid */ IGridInstance, 
       /* $scope */ IGridScope, 
       /* domUtilityService */ ngDashGridLib.ngGridNs.serviceNs.IDomUtilityService, 

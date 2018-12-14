@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Renderer
-  extends ScalablyTyped.runtime.Instantiable1[/* renderer */ pixiDotJsLib.PIXINs.CanvasRenderer, js.Any]
+  extends org.scalablytyped.runtime.Instantiable1[/* renderer */ pixiDotJsLib.PIXINs.CanvasRenderer, js.Any]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("argv", JSImport.Namespace)
 @js.native
 object argvMod
-  extends ScalablyTyped.runtime.TopLevel[argv]
+  extends org.scalablytyped.runtime.TopLevel[argv]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-widgets/lib/SelectList", JSImport.Namespace)
 @js.native
 object libSelectListModMembers
-  extends ScalablyTyped.runtime.TopLevel[SelectListClass]
+  extends org.scalablytyped.runtime.TopLevel[SelectListClass]
 

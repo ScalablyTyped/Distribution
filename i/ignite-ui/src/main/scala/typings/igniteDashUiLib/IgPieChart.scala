@@ -10,7 +10,7 @@ trait IgPieChart
   extends /**
 	 * Option for igPieChart
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets whether the slices can be exploded.
   	 */

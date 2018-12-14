@@ -350,11 +350,11 @@ object SQSNs extends js.Object {
   
   
   trait MessageBodyAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MessageAttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MessageAttributeValue]
   
   
   trait MessageSystemAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait PurgeQueueRequest extends js.Object {
@@ -366,7 +366,7 @@ object SQSNs extends js.Object {
   
   
   trait QueueAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait ReceiveMessageRequest extends js.Object {
@@ -558,7 +558,7 @@ object SQSNs extends js.Object {
   
   
   trait TagMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   
   trait TagQueueRequest extends js.Object {

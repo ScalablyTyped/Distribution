@@ -10,7 +10,7 @@ trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube
   extends /**
 	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCube
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A caption for the cube.
   	 */

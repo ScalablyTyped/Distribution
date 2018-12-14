@@ -10,7 +10,7 @@ trait IgPivotViewDataSourceOptionsFlatDataOptions
   extends /**
 	 * Option for IgPivotViewDataSourceOptionsFlatDataOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.
   	 */

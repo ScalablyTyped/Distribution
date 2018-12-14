@@ -14,7 +14,7 @@ trait NockDefinition extends js.Object {
   var path: java.lang.String
   var port: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var reqheaders: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | stdLib.RegExp | nockLib.Anon_HeaderValue]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | stdLib.RegExp | nockLib.Anon_HeaderValue]
   ] = js.undefined
   var response: js.UndefOr[java.lang.String | js.Any] = js.undefined
   var scope: java.lang.String

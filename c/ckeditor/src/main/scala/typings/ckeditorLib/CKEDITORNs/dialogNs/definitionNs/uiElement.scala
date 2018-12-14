@@ -22,7 +22,7 @@ trait uiElement extends js.Object {
     js.Function1[/* elem */ ckeditorLib.CKEDITORNs.uiNs.dialogNs.uiElement, scala.Unit]
   ] = js.undefined
   var requiredContent: js.UndefOr[
-    java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any] | ckeditorLib.CKEDITORNs.style
+    java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] | ckeditorLib.CKEDITORNs.style
   ] = js.undefined
   var setup: js.UndefOr[js.Function1[/* widget */ ckeditorLib.CKEDITORNs.pluginsNs.widget, scala.Unit]] = js.undefined
   var style: js.UndefOr[java.lang.String] = js.undefined

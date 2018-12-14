@@ -65,7 +65,7 @@ trait Socket
   		 * The list of rooms that this Socket is currently in, where
   		 * the ID the the room ID
   		 */
-  var rooms: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var rooms: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
   		 * The Server that our namespace is in
   		 */

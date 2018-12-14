@@ -10,7 +10,7 @@ trait IgTileManager
   extends /**
 	 * Option for igTileManager
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets the duration of the animations in the tile manager.
   	 *

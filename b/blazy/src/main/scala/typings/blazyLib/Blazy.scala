@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Blazy
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ BlazyOptions, BlazyInstance]
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ BlazyOptions, BlazyInstance]
 

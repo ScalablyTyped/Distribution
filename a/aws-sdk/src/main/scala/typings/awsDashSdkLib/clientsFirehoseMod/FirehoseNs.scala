@@ -46,7 +46,7 @@ object FirehoseNs extends js.Object {
   
   
   trait ColumnToJsonKeyMappings
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[NonEmptyString]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[NonEmptyString]
   
   
   trait CopyCommand extends js.Object {

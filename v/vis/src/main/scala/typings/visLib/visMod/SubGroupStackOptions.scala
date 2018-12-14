@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SubGroupStackOptions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 

@@ -261,7 +261,7 @@ trait HTMLMediaElement extends HTMLElement {
 @JSGlobal("HTMLMediaElement")
 @js.native
 object HTMLMediaElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLMediaElement] {
+  extends org.scalablytyped.runtime.Instantiable0[HTMLMediaElement] {
   val HAVE_CURRENT_DATA: scala.Double = js.native
   val HAVE_ENOUGH_DATA: scala.Double = js.native
   val HAVE_FUTURE_DATA: scala.Double = js.native

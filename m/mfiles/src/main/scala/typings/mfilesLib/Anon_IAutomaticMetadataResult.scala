@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IAutomaticMetadataResult
-  extends ScalablyTyped.runtime.Instantiable0[IAutomaticMetadataResult]
+  extends org.scalablytyped.runtime.Instantiable0[IAutomaticMetadataResult]
 

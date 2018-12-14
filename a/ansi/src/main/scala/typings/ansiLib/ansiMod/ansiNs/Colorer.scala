@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
      */
 
 trait Colorer
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, Cursor | Colorer]] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, Cursor | Colorer]] {
   /**
            * Write an ANSI color code, ensuring that the same code doesn't get rewritten.
            */

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ConfigStarConfig
-  extends ScalablyTyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.StarConfig, kineticjsLib.KineticNs.IStar]
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.StarConfig, kineticjsLib.KineticNs.IStar]
 

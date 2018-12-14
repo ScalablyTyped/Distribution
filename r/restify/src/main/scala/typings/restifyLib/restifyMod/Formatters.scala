@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Formatters
-  extends /* contentType */ ScalablyTyped.runtime.StringDictionary[Formatter]
+  extends /* contentType */ org.scalablytyped.runtime.StringDictionary[Formatter]
 

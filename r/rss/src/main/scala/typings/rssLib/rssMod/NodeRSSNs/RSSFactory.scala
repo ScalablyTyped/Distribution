@@ -12,5 +12,5 @@ trait RSSFactory
          * @param {FeedOptions} feedOptions - Options for the RSS feed.
          * @returns {RSS}
          */
-ScalablyTyped.runtime.Instantiable1[/* feedOptions */ FeedOptions, RSS]
+org.scalablytyped.runtime.Instantiable1[/* feedOptions */ FeedOptions, RSS]
 

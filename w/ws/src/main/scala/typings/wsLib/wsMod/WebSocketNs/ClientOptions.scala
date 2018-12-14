@@ -16,7 +16,7 @@ trait ClientOptions extends js.Object {
   var ciphers: js.UndefOr[java.lang.String] = js.undefined
   var family: js.UndefOr[scala.Double] = js.undefined
   var handshakeTimeout: js.UndefOr[scala.Double] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
   var key: js.UndefOr[CertMeta] = js.undefined
   var localAddress: js.UndefOr[java.lang.String] = js.undefined

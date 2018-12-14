@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_XLengthNumberTCollection[TCollection]
-  extends /* x */ ScalablyTyped.runtime.NumberDictionary[TCollection] {
+  extends /* x */ org.scalablytyped.runtime.NumberDictionary[TCollection] {
   var length: scala.Double
 }
 

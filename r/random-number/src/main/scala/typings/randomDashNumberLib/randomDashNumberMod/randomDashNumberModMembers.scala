@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("random-number", JSImport.Namespace)
 @js.native
 object randomDashNumberModMembers
-  extends ScalablyTyped.runtime.TopLevel[RandomNumber]
+  extends org.scalablytyped.runtime.TopLevel[RandomNumber]
 

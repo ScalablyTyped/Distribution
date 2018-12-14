@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait StateCore
   extends /** Return any for a yet untyped property */
-/* undocumented */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* undocumented */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var env: js.Any
   var level: scala.Double
   /** Link to parser instance */

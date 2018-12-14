@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("angular-q-extras", JSImport.Namespace)
 @js.native
 object angularDashQDashExtrasModMembers
-  extends ScalablyTyped.runtime.TopLevel[java.lang.String]
+  extends org.scalablytyped.runtime.TopLevel[java.lang.String]
 

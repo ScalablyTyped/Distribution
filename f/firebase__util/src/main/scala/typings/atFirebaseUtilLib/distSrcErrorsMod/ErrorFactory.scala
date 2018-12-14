@@ -14,6 +14,6 @@ class ErrorFactory[T /* <: java.lang.String */] protected () extends js.Object {
   var service: js.Any = js.native
   var serviceName: js.Any = js.native
   def create(code: T): FirebaseError = js.native
-  def create(code: T, data: ScalablyTyped.runtime.StringDictionary[StringLike]): FirebaseError = js.native
+  def create(code: T, data: org.scalablytyped.runtime.StringDictionary[StringLike]): FirebaseError = js.native
 }
 

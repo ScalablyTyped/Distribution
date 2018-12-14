@@ -37,7 +37,7 @@ trait SVGViewElement
 @JSGlobal("SVGViewElement")
 @js.native
 object SVGViewElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGViewElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGViewElement] {
   val SVG_ZOOMANDPAN_DISABLE: scala.Double = js.native
   val SVG_ZOOMANDPAN_MAGNIFY: scala.Double = js.native
   val SVG_ZOOMANDPAN_UNKNOWN: scala.Double = js.native

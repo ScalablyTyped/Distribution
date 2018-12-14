@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ProvidersMap
-  extends /* providerName */ ScalablyTyped.runtime.StringDictionary[ProviderConfig]
+  extends /* providerName */ org.scalablytyped.runtime.StringDictionary[ProviderConfig]
 

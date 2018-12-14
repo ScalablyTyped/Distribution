@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait IMultiProjectConfig extends js.Object {
   var defaultProject: js.UndefOr[java.lang.String] = js.undefined
-  var projects: ScalablyTyped.runtime.StringDictionary[js.UndefOr[IProjectConfig]]
+  var projects: org.scalablytyped.runtime.StringDictionary[js.UndefOr[IProjectConfig]]
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-addons-linked-state-mixin", JSImport.Namespace)
 @js.native
 object reactDashAddonsDashLinkedDashStateDashMixinModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       reactDashAddonsDashLinkedDashStateDashMixinLib.reactDashAddonsDashLinkedDashStateDashMixinMod.LinkedStateMixinNs.LinkedStateMixin
     ]
 

@@ -32,5 +32,5 @@ trait WebAuthentication extends js.Object {
 @JSGlobal("WebAuthentication")
 @js.native
 object WebAuthentication
-  extends ScalablyTyped.runtime.Instantiable0[WebAuthentication]
+  extends org.scalablytyped.runtime.Instantiable0[WebAuthentication]
 

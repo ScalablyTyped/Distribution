@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait TestResult extends js.Object {
   var directory: java.lang.String
-  var results: ScalablyTyped.runtime.StringDictionary[TestOutput | SkippedTest]
+  var results: org.scalablytyped.runtime.StringDictionary[TestOutput | SkippedTest]
 }
 

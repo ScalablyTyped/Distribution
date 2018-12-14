@@ -21,5 +21,5 @@ trait CharacterData
 @JSGlobal("CharacterData")
 @js.native
 object CharacterData
-  extends ScalablyTyped.runtime.Instantiable0[CharacterData]
+  extends org.scalablytyped.runtime.Instantiable0[CharacterData]
 

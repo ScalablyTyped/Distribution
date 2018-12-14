@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait GraphConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Graph]
+  extends org.scalablytyped.runtime.Instantiable0[Graph]
 

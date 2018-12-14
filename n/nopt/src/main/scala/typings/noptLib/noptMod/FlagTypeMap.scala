@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FlagTypeMap
-  extends /* k */ ScalablyTyped.runtime.StringDictionary[js.Object]
+  extends /* k */ org.scalablytyped.runtime.StringDictionary[js.Object]
 

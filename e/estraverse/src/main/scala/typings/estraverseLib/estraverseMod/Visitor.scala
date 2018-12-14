@@ -17,7 +17,7 @@ trait Visitor extends js.Object {
   var fallback: js.UndefOr[
     estraverseLib.estraverseLibStrings.iteration | (js.Function1[/* node */ estreeLib.estreeMod.Node, js.Array[java.lang.String]])
   ] = js.undefined
-  var keys: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
+  var keys: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
   var leave: js.UndefOr[
     js.Function2[
       /* node */ estreeLib.estreeMod.Node, 

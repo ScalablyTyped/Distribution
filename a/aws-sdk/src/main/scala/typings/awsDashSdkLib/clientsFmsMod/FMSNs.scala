@@ -42,7 +42,7 @@ object FMSNs extends js.Object {
   
   
   trait CustomerPolicyScopeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[CustomerPolicyScopeIdList]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[CustomerPolicyScopeIdList]
   
   
   trait DeleteNotificationChannelRequest extends js.Object
@@ -146,7 +146,7 @@ object FMSNs extends js.Object {
   
   
   trait IssueInfoMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DetailedInfo]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DetailedInfo]
   
   
   trait ListComplianceStatusRequest extends js.Object {

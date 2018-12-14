@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("p-any", JSImport.Namespace)
 @js.native
 object pDashAnyModMembers extends js.Object {
-  val AggregateError: ScalablyTyped.runtime.Instantiable1[
+  val AggregateError: org.scalablytyped.runtime.Instantiable1[
     /* errors */ stdLib.Iterable[stdLib.Error | java.lang.String], 
     aggregateDashErrorLib.aggregateDashErrorMod.namespaced
   ] = js.native

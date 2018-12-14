@@ -10,7 +10,7 @@ trait IgTree
   extends /**
 	 * Option for igTree
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets the duration of each animation such as the expand/collapse.
   	 *

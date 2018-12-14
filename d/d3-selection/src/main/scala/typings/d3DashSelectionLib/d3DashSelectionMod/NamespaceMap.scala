@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait NamespaceMap
-  extends /* prefix */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* prefix */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

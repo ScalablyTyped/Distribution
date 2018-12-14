@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
 //#region "SettingsLegacy"
 
 trait ArrayStringNode
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[stdLib.Node]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[stdLib.Node]
 

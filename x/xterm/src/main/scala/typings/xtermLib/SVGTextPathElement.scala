@@ -82,7 +82,7 @@ trait SVGTextPathElement
 @JSGlobal("SVGTextPathElement")
 @js.native
 object SVGTextPathElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGTextPathElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGTextPathElement] {
   val TEXTPATH_METHODTYPE_ALIGN: scala.Double = js.native
   val TEXTPATH_METHODTYPE_STRETCH: scala.Double = js.native
   val TEXTPATH_METHODTYPE_UNKNOWN: scala.Double = js.native

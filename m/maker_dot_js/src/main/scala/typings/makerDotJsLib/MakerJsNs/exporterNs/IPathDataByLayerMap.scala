@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait IPathDataByLayerMap
-  extends /* layer */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* layer */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

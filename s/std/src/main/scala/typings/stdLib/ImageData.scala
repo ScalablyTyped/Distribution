@@ -23,8 +23,8 @@ trait ImageData extends js.Object {
 @JSGlobal("ImageData")
 @js.native
 object ImageData
-  extends ScalablyTyped.runtime.Instantiable2[/* width */ scala.Double, /* height */ scala.Double, ImageData]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable2[/* width */ scala.Double, /* height */ scala.Double, ImageData]
+     with org.scalablytyped.runtime.Instantiable3[
       /* array */ Uint8ClampedArray, 
       /* width */ scala.Double, 
       /* height */ scala.Double, 

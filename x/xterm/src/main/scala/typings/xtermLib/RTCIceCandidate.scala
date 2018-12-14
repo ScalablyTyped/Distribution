@@ -27,6 +27,6 @@ trait RTCIceCandidate extends js.Object {
 @JSGlobal("RTCIceCandidate")
 @js.native
 object RTCIceCandidate
-  extends ScalablyTyped.runtime.Instantiable0[RTCIceCandidate]
-     with ScalablyTyped.runtime.Instantiable1[/* candidateInitDict */ RTCIceCandidateInit, RTCIceCandidate]
+  extends org.scalablytyped.runtime.Instantiable0[RTCIceCandidate]
+     with org.scalablytyped.runtime.Instantiable1[/* candidateInitDict */ RTCIceCandidateInit, RTCIceCandidate]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IServicePort
-  extends /* methodName */ ScalablyTyped.runtime.StringDictionary[ISoapServiceMethod]
+  extends /* methodName */ org.scalablytyped.runtime.StringDictionary[ISoapServiceMethod]
 

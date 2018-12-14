@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ScopeSchedulerStatic
   extends rxDashLiteLib.RxNs.SchedulerStatic
-     with ScalablyTyped.runtime.Instantiable1[/* $scope */ angularLib.angularMod.angularNs.IScope, ScopeScheduler]
+     with org.scalablytyped.runtime.Instantiable1[/* $scope */ angularLib.angularMod.angularNs.IScope, ScopeScheduler]
 

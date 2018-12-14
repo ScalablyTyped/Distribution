@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(androiduixLib.androidNs.textNs.Spanned because Already inherited / * index * / ScalablyTyped.runtime.NumberDictionary[java.lang.String])*/
+/* RemoveMultipleInheritance: Dropped parents List(androiduixLib.androidNs.textNs.Spanned because Already inherited / * index * / org.scalablytyped.runtime.NumberDictionary[java.lang.String])*/
 @JSGlobal("android.text.Layout.SpannedEllipsizer")
 @js.native
 class SpannedEllipsizer protected () extends Ellipsizer {

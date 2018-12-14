@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait oraFactory
-  extends ScalablyTyped.runtime.Instantiable1[(/* options */ Options) | (/* options */ java.lang.String), Ora]
-     with ScalablyTyped.runtime.Instantiable0[Ora] {
+  extends org.scalablytyped.runtime.Instantiable0[Ora]
+     with org.scalablytyped.runtime.Instantiable1[(/* options */ Options) | (/* options */ java.lang.String), Ora] {
   def apply(): Ora = js.native
   def apply(options: java.lang.String): Ora = js.native
   def apply(options: Options): Ora = js.native

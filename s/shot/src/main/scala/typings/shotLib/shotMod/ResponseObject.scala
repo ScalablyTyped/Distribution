@@ -20,6 +20,6 @@ trait ResponseObject extends js.Object {
   /** the HTTP status message. */
   var statusMessage: java.lang.String
   /** an object containing the response trailers. */
-  var trailers: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var trailers: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

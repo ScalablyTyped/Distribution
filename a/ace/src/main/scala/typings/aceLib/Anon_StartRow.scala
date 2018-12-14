@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_StartRow
-  extends ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable4[
       /* startRow */ scala.Double, 
       /* startColumn */ scala.Double, 
       /* endRow */ scala.Double, 

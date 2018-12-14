@@ -31,6 +31,10 @@ class DatePicker protected () extends Widget {
            * @returns {void}
            */
   def hide(): scala.Unit = js.native
+  /** sets the date value for the DatePicker.
+           * @returns {string}
+           */
+  def setValue(): java.lang.String = js.native
   /** Opens the DatePicker popup.
            * @returns {void}
            */

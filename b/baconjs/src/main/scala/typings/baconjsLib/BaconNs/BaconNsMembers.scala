@@ -43,7 +43,7 @@ object BaconNsMembers extends js.Object {
        * @returns {Property<E, A>}
        */
   def combineTemplate[E, A](
-    template: ScalablyTyped.runtime.StringDictionary[scala.Double | scala.Boolean | java.lang.String | js.Object | (Observable[E, _])]
+    template: org.scalablytyped.runtime.StringDictionary[scala.Double | scala.Boolean | java.lang.String | js.Object | (Observable[E, _])]
   ): Property[E, A] = js.native
   /**
        * @callback Property#combineWith~f

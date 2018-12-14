@@ -10,7 +10,7 @@ trait IgVideoPlayerCommercialsEmbeddedCommercial
   extends /**
 	 * Option for IgVideoPlayerCommercialsEmbeddedCommercial
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets the end second of the embedded commercial.
   	 *

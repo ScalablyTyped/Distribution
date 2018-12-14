@@ -15,7 +15,7 @@ trait EventSubscription
      * @param subscriber the subscriber that controls
      *   this subscription.
      */
-ScalablyTyped.runtime.Instantiable1[/* subscriber */ EventSubscriptionVendor, EventSubscription] {
+org.scalablytyped.runtime.Instantiable1[/* subscriber */ EventSubscriptionVendor, EventSubscription] {
   var eventType: java.lang.String = js.native
   var key: scala.Double = js.native
   var subscriber: EventSubscriptionVendor = js.native

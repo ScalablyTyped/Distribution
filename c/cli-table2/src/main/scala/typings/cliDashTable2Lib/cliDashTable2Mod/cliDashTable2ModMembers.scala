@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cli-table2", JSImport.Namespace)
 @js.native
 object cliDashTable2ModMembers
-  extends ScalablyTyped.runtime.TopLevel[CliTable2]
+  extends org.scalablytyped.runtime.TopLevel[CliTable2]
 

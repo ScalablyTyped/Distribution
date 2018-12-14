@@ -17,11 +17,11 @@ object langNs extends js.Object {
   ): scala.Unit = js.native
   @js.native
   object languages
-    extends /* code */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+    extends /* code */ org.scalablytyped.runtime.StringDictionary[scala.Double]
   
   @js.native
   object rtl
-    extends /* code */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+    extends /* code */ org.scalablytyped.runtime.StringDictionary[scala.Double]
   
 }
 

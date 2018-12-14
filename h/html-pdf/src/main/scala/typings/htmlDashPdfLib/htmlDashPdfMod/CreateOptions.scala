@@ -21,7 +21,7 @@ trait CreateOptions extends js.Object {
   // Papersize Options: http://phantomjs.org/api/webpage/property/paper-size.html
   var height: js.UndefOr[java.lang.String] = js.undefined
   // HTTP Headers that are used for requests
-  var httpHeaders: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var httpHeaders: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var orientation: js.UndefOr[
     htmlDashPdfLib.htmlDashPdfLibStrings.portrait | htmlDashPdfLib.htmlDashPdfLibStrings.landscape
   ] = js.undefined

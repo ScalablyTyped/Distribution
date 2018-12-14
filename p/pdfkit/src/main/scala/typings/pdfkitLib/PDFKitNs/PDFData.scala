@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
     */
 @js.native
 trait PDFData
-  extends ScalablyTyped.runtime.Instantiable1[/* data */ js.Array[js.Any], PDFData] {
+  extends org.scalablytyped.runtime.Instantiable1[/* data */ js.Array[js.Any], PDFData] {
   def byteAt(index: scala.Double): js.Any = js.native
   def read(length: scala.Double): js.Array[_] = js.native
   def readBool(): scala.Boolean = js.native

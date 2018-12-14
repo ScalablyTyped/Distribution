@@ -13,7 +13,7 @@ trait Game extends js.Object {
   /**
        * A hash containing all your construction sites with their id as hash keys.
        */
-  var constructionSites: ScalablyTyped.runtime.StringDictionary[ConstructionSite[BuildableStructureConstant]] = js.native
+  var constructionSites: org.scalablytyped.runtime.StringDictionary[ConstructionSite[BuildableStructureConstant]] = js.native
   /**
        * An object containing information about your CPU usage.
        */
@@ -21,11 +21,11 @@ trait Game extends js.Object {
   /**
        * A hash containing all your creeps with creep names as hash keys.
        */
-  var creeps: ScalablyTyped.runtime.StringDictionary[Creep] = js.native
+  var creeps: org.scalablytyped.runtime.StringDictionary[Creep] = js.native
   /**
        * A hash containing all your flags with flag names as hash keys.
        */
-  var flags: ScalablyTyped.runtime.StringDictionary[Flag] = js.native
+  var flags: org.scalablytyped.runtime.StringDictionary[Flag] = js.native
   /**
        * Your Global Control Level.
        */
@@ -41,12 +41,12 @@ trait Game extends js.Object {
   /**
        * An object with your global resources that are bound to the account, like subscription tokens. Each object key is a resource constant, values are resources amounts.
        */
-  var resources: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var resources: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * A hash containing all the rooms available to you with room names as hash keys.
        * A room is visible if you have a creep or an owned structure in it.
        */
-  var rooms: ScalablyTyped.runtime.StringDictionary[Room] = js.native
+  var rooms: org.scalablytyped.runtime.StringDictionary[Room] = js.native
   /**
        * An object describing the world shard where your script is currently being executed in.
        */
@@ -54,11 +54,11 @@ trait Game extends js.Object {
   /**
        * A hash containing all your spawns with spawn names as hash keys.
        */
-  var spawns: ScalablyTyped.runtime.StringDictionary[StructureSpawn] = js.native
+  var spawns: org.scalablytyped.runtime.StringDictionary[StructureSpawn] = js.native
   /**
        * A hash containing all your structures with structure id as hash keys.
        */
-  var structures: ScalablyTyped.runtime.StringDictionary[Structure[StructureConstant]] = js.native
+  var structures: org.scalablytyped.runtime.StringDictionary[Structure[StructureConstant]] = js.native
   /**
        * System game tick counter. It is automatically incremented on every tick.
        */

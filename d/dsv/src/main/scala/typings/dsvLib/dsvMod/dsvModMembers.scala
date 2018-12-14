@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("dsv", JSImport.Namespace)
 @js.native
 object dsvModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function2[
         /* delimiter */ java.lang.String, 
         /* encoding */ js.UndefOr[java.lang.String], 

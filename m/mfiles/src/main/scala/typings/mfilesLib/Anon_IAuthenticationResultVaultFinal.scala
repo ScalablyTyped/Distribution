@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IAuthenticationResultVaultFinal
-  extends ScalablyTyped.runtime.Instantiable0[IAuthenticationResultVaultFinal]
+  extends org.scalablytyped.runtime.Instantiable0[IAuthenticationResultVaultFinal]
 

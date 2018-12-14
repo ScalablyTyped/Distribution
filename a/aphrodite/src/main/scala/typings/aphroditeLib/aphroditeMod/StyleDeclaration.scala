@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait StyleDeclaration
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[OpenCSSProperties]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[OpenCSSProperties]
 

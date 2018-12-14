@@ -157,9 +157,9 @@ trait ExplicitChain[T] extends js.Object {
   def titleCase(): ExplicitChain[java.lang.String] = js.native
   def titleCase(ignoreWordsopt: js.Array[java.lang.String]): ExplicitChain[java.lang.String] = js.native
   def tr(): ExplicitChain[java.lang.String] = js.native
-  def tr(from: ScalablyTyped.runtime.StringDictionary[java.lang.String]): ExplicitChain[java.lang.String] = js.native
   def tr(from: java.lang.String): ExplicitChain[java.lang.String] = js.native
   def tr(from: java.lang.String, to: java.lang.String): ExplicitChain[java.lang.String] = js.native
+  def tr(from: org.scalablytyped.runtime.StringDictionary[java.lang.String]): ExplicitChain[java.lang.String] = js.native
   def trim(): ExplicitChain[java.lang.String] = js.native
   def trim(whitespace: java.lang.String): ExplicitChain[java.lang.String] = js.native
   def trimLeft(): ExplicitChain[java.lang.String] = js.native

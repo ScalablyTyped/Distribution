@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LookAtResultMatrix[K /* <: LookConstant */]
-  extends /* y */ ScalablyTyped.runtime.NumberDictionary[ScalablyTyped.runtime.NumberDictionary[js.Array[LookAtResult[K]]]]
+  extends /* y */ org.scalablytyped.runtime.NumberDictionary[org.scalablytyped.runtime.NumberDictionary[js.Array[LookAtResult[K]]]]
 

@@ -21,7 +21,7 @@ trait Join[QM /* <: Model */, RM, RV] extends js.Object {
   def apply(tableName: TableName, column1: ColumnRef, operator: java.lang.String, column2: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
   def apply(
     tableName: TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def apply(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
 }

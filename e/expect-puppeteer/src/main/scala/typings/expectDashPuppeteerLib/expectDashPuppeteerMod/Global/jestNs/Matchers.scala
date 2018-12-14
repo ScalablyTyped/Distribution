@@ -24,10 +24,10 @@ trait Matchers[R] extends js.Object {
     value: java.lang.String,
     options: expectDashPuppeteerLib.expectDashPuppeteerMod.ExpectTimingActions
   ): js.Promise[scala.Unit] = js.native
-  def toFillForm(selector: java.lang.String, value: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Promise[scala.Unit] = js.native
+  def toFillForm(selector: java.lang.String, value: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[scala.Unit] = js.native
   def toFillForm(
     selector: java.lang.String,
-    value: ScalablyTyped.runtime.StringDictionary[js.Any],
+    value: org.scalablytyped.runtime.StringDictionary[js.Any],
     options: expectDashPuppeteerLib.expectDashPuppeteerMod.ExpectTimingActions
   ): js.Promise[scala.Unit] = js.native
   def toMatch(selector: java.lang.String): js.Promise[scala.Unit] = js.native

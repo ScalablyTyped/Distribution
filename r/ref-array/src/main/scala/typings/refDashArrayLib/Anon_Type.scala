@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Type
-  extends ScalablyTyped.runtime.Instantiable1[
-      (/* type */ refLib.refMod.Type) | (/* type */ java.lang.String), 
-      refDashArrayLib.refDashArrayMod.ArrayType[js.Object]
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       (/* type */ refLib.refMod.Type) | (/* type */ java.lang.String), 
       /* length */ scala.Double, 
+      refDashArrayLib.refDashArrayMod.ArrayType[js.Object]
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* type */ refLib.refMod.Type) | (/* type */ java.lang.String), 
       refDashArrayLib.refDashArrayMod.ArrayType[js.Object]
     ] {
   def apply[T](`type`: java.lang.String): refDashArrayLib.refDashArrayMod.ArrayType[T] = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait StoreOptions
   extends // store-specific options
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var `type`: java.lang.String
 }
 

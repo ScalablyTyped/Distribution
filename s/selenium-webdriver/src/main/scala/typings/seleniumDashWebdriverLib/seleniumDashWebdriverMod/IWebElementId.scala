@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IWebElementId
-  extends /* ELEMENT */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* ELEMENT */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

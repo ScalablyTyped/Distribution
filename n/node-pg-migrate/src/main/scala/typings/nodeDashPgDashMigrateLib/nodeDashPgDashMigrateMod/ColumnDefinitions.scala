@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ColumnDefinitions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[ColumnDefinition | java.lang.String]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[ColumnDefinition | java.lang.String]
 

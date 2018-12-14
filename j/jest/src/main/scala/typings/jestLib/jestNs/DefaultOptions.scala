@@ -32,7 +32,7 @@ trait DefaultOptions extends js.Object {
   var haste: HasteConfig
   var moduleDirectories: js.Array[java.lang.String]
   var moduleFileExtensions: js.Array[java.lang.String]
-  var moduleNameMapper: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var moduleNameMapper: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var modulePathIgnorePatterns: js.Array[java.lang.String]
   var noStackTrace: scala.Boolean
   var notifyMode: java.lang.String
@@ -63,7 +63,7 @@ trait DefaultOptions extends js.Object {
   var testRunner: Maybe[java.lang.String]
   var testURL: java.lang.String
   var timers: jestLib.jestLibStrings.real | jestLib.jestLibStrings.fake
-  var transform: Maybe[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+  var transform: Maybe[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   var transformIgnorePatterns: js.Array[Glob]
   var useStderr: scala.Boolean
   var verbose: Maybe[scala.Boolean]

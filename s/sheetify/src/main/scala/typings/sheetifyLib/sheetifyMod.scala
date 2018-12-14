@@ -13,12 +13,12 @@ object sheetifyMod extends js.Object {
   def apply(
     src: java.lang.String | stdLib.TemplateStringsArray,
     filename: java.lang.String,
-    options: ScalablyTyped.runtime.StringDictionary[js.Any]
+    options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): java.lang.String = js.native
   def apply(
     src: java.lang.String | stdLib.TemplateStringsArray,
     filename: java.lang.String,
-    options: ScalablyTyped.runtime.StringDictionary[js.Any],
+    options: org.scalablytyped.runtime.StringDictionary[js.Any],
     done: js.Function3[
       /* err */ stdLib.Error, 
       /* css */ java.lang.String, 
@@ -28,7 +28,7 @@ object sheetifyMod extends js.Object {
   ): java.lang.String = js.native
   def apply(
     src: java.lang.String | stdLib.TemplateStringsArray,
-    options: ScalablyTyped.runtime.StringDictionary[js.Any]
+    options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def getPrefix(css: java.lang.String): java.lang.String = js.native
 }

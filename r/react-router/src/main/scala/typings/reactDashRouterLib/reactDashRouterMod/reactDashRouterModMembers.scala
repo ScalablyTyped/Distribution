@@ -11,7 +11,7 @@ object reactDashRouterModMembers extends js.Object {
   def generatePath(pattern: java.lang.String): java.lang.String = js.native
   def generatePath(
     pattern: java.lang.String,
-    params: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
   ): java.lang.String = js.native
   def matchPath[Params /* <: reactDashRouterLib.reactDashRouterLibStrings.matchPath with js.Any */](pathname: java.lang.String, props: java.lang.String): `match`[Params] | scala.Null = js.native
   def matchPath[Params /* <: reactDashRouterLib.reactDashRouterLibStrings.matchPath with js.Any */](pathname: java.lang.String, props: java.lang.String, parent: `match`[Params]): `match`[Params] | scala.Null = js.native

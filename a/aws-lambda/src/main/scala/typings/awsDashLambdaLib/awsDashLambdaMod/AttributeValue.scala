@@ -11,7 +11,7 @@ trait AttributeValue extends js.Object {
   var BOOL: js.UndefOr[scala.Boolean] = js.undefined
   var BS: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var L: js.UndefOr[js.Array[AttributeValue]] = js.undefined
-  var M: js.UndefOr[ScalablyTyped.runtime.StringDictionary[AttributeValue]] = js.undefined
+  var M: js.UndefOr[org.scalablytyped.runtime.StringDictionary[AttributeValue]] = js.undefined
   var N: js.UndefOr[java.lang.String] = js.undefined
   var NS: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var NULL: js.UndefOr[scala.Boolean] = js.undefined

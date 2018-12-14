@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait RendererInterface extends CommonInterface {
-  var BrowserWindowProxy: ScalablyTyped.runtime.Instantiable0[BrowserWindowProxy]
+  var BrowserWindowProxy: org.scalablytyped.runtime.Instantiable0[BrowserWindowProxy]
   var desktopCapturer: DesktopCapturer
   var ipcRenderer: IpcRenderer
   var remote: Remote

@@ -30,5 +30,5 @@ trait HTMLParamElement extends HTMLElement {
 @JSGlobal("HTMLParamElement")
 @js.native
 object HTMLParamElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLParamElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLParamElement]
 

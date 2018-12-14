@@ -11,7 +11,7 @@ trait ArrayObserver_static
 		 * Constructor
 		 * @param receiver the target for observation
 		 */
-ScalablyTyped.runtime.Instantiable1[/* receiver */ js.Array[js.Any], ArrayObserver_instance] {
+org.scalablytyped.runtime.Instantiable1[/* receiver */ js.Array[js.Any], ArrayObserver_instance] {
   /**
   		 * transforms a copy of an old state of an array into a copy of its current state.
   		 * @param previous array of old state

@@ -26,7 +26,7 @@ object PinpointEmailNs extends js.Object {
   
   
   trait BlacklistReport
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[BlacklistEntries]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[BlacklistEntries]
   
   
   trait Body extends js.Object {

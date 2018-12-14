@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 trait RTCRtpContributingSource extends js.Object {
   //readonly timestamp: number;
-  val source: scala.Double
+  var source: scala.Double
   //readonly audioLevel: number | null;
-  val voiceActivityFlag: scala.Boolean | scala.Null
+  val voiceActivityFlag: js.UndefOr[scala.Boolean] = js.undefined
 }
 

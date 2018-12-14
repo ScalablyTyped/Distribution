@@ -10,7 +10,7 @@ trait IgGridHiding
   extends /**
 	 * Option for igGridHiding
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies time of milliseconds for animation duration to show/hide modal dialog
   	 *

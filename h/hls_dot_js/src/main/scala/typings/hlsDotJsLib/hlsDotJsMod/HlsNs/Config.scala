@@ -151,7 +151,7 @@ trait Config extends js.Object {
            * This enables the manipulation of the fragment loader.
            * Note: This will overwrite the default loader, as well as your own loader function.
            */
-  var fLoader: js.UndefOr[ScalablyTyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader]] = js.undefined
+  var fLoader: js.UndefOr[org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader]] = js.undefined
   /**
            * (default: undefined)
            * Fetch customization callback for Fetch based loader.
@@ -269,7 +269,7 @@ trait Config extends js.Object {
            * Use this, if you want to overwrite both the fragment and the playlist loader.
            * Note: If fLoader or pLoader are used, they overwrite loader!
            */
-  var loader: ScalablyTyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader]
+  var loader: org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader]
   /**
            * (default: 0.5s)
            * media element is expected to play and if currentTime has not moved for more than lowBufferWatchdogPeriod and if there are less than maxBufferHole seconds buffered upfront,
@@ -403,7 +403,7 @@ trait Config extends js.Object {
            * This enables the manipulation of the playlist loader.
            * Note: This will overwrite the default loader, as well as your own loader function.
            */
-  var pLoader: js.UndefOr[ScalablyTyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader]] = js.undefined
+  var pLoader: js.UndefOr[org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader]] = js.undefined
   /**
            * (default: false)
            * Start prefetching start fragment although media not attached yet. Max number of append retries.

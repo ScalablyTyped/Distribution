@@ -15,5 +15,5 @@ trait PerformanceObserver extends js.Object {
 @JSGlobal("PerformanceObserver")
 @js.native
 object PerformanceObserver
-  extends ScalablyTyped.runtime.Instantiable1[/* callback */ PerformanceObserverCallback, PerformanceObserver]
+  extends org.scalablytyped.runtime.Instantiable1[/* callback */ PerformanceObserverCallback, PerformanceObserver]
 

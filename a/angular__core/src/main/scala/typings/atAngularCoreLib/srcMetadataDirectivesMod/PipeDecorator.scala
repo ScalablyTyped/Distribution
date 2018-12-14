@@ -10,7 +10,7 @@ trait PipeDecorator
   extends /**
      * See the `Pipe` decorator.
      */
-ScalablyTyped.runtime.Instantiable1[/* obj */ Pipe, Pipe] {
+org.scalablytyped.runtime.Instantiable1[/* obj */ Pipe, Pipe] {
   /**
        * Declares a reusable pipe function, and supplies configuration metadata.
        *

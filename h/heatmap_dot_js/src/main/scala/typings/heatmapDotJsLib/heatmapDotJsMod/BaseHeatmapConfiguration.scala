@@ -21,7 +21,7 @@ trait BaseHeatmapConfiguration[V /* <: java.lang.String */] extends js.Object {
        * An object that represents the gradient.
        * Syntax: {[key: number in range [0,1]]: color}
        */
-  var gradient: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var gradient: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * The maximal opacity the highest value in the heatmap will have. (will be
        * overridden if opacity set)

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@egjs/component", "options")
 @js.native
 object options
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

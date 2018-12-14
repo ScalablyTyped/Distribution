@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("flightplan", JSImport.Namespace)
 @js.native
 object flightplanMod
-  extends ScalablyTyped.runtime.TopLevel[flightplanLib.FlightplanInterfacesNs.Flightplan]
+  extends org.scalablytyped.runtime.TopLevel[flightplanLib.FlightplanInterfacesNs.Flightplan]
 

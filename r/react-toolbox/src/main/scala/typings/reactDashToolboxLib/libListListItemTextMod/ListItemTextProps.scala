@@ -11,7 +11,7 @@ trait ListItemTextProps
      with /**
    * Additional properties passed to root container.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Children to pass through the component.
      */

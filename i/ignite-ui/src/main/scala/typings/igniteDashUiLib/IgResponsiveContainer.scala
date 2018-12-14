@@ -10,7 +10,7 @@ trait IgResponsiveContainer
   extends /**
 	 * Option for igResponsiveContainer
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * The time between two resize checks in milliseconds.
   	 */

@@ -16,10 +16,10 @@ trait ConnectionConfig extends js.Object {
   var name: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var nodeType: ConnectionConfigNodeType
   var resolveCursor: js.UndefOr[
-    (graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]) | scala.Null
+    (graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Null
   ] = js.undefined
   var resolveNode: js.UndefOr[
-    (graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]) | scala.Null
+    (graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Null
   ] = js.undefined
 }
 

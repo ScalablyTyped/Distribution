@@ -39,8 +39,8 @@ trait menuConfig extends js.Object {
   var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var navigation: js.UndefOr[scala.Boolean] = js.undefined
   var on: js.UndefOr[webixLib.webixNs.EventHash] = js.undefined
-  var onClick: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var onContext: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var onDblClick: js.UndefOr[webixLib.webixNs.WebixCallback] = js.undefined
   var onMouseMove: js.UndefOr[webixLib.webixNs.WebixCallback] = js.undefined
   var openAction: js.UndefOr[java.lang.String] = js.undefined

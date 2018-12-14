@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Opts
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* opts */ nodeLib.streamMod.internalNs.WritableOptions, 
       /* write */ Write, 
       /* flush */ Flush, 
       nodeLib.streamMod.Writable
     ]
-     with ScalablyTyped.runtime.Instantiable1[/* write */ Write, nodeLib.streamMod.Writable]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable1[/* write */ Write, nodeLib.streamMod.Writable]
+     with org.scalablytyped.runtime.Instantiable2[
       (/* opts */ nodeLib.streamMod.internalNs.WritableOptions) | (/* write */ Write), 
       (/* write */ Write) | (/* flush */ Flush), 
       nodeLib.streamMod.Writable

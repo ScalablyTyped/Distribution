@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait OptionalDecorator
-  extends ScalablyTyped.runtime.Instantiable0[Optional] {
+  extends org.scalablytyped.runtime.Instantiable0[Optional] {
   /**
        * A constructor parameter decorator that marks a dependency as optional.
        *

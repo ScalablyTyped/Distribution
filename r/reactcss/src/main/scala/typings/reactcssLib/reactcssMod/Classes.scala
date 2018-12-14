@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Classes[T]
-  extends /* scope */ ScalablyTyped.runtime.StringDictionary[stdLib.Partial[T]] {
+  extends /* scope */ org.scalablytyped.runtime.StringDictionary[stdLib.Partial[T]] {
   var default: stdLib.Partial[T]
 }
 

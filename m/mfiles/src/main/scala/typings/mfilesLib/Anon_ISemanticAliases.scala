@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ISemanticAliases
-  extends ScalablyTyped.runtime.Instantiable0[ISemanticAliases]
+  extends org.scalablytyped.runtime.Instantiable0[ISemanticAliases]
 

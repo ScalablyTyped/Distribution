@@ -2,8 +2,10 @@
 
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
-This is the home of Scala.js typings for 5794 Javascript libraries,
+This is the home of Scala.js typings for **5793** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
+
+This should make it one of the biggest Scala repos on the planet with millions of lines of code
 
 ## Typing?
 Javascript is infamously unityped. Given a library function like this:
@@ -65,7 +67,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201812140358")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201812141113")
 ```
 
 ### `build.sbt`
@@ -97,14 +99,70 @@ As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
 For now we just have the following contrib-libs:
-- [react](contrib/react)
-- [react-japgolly](contrib/react-japgolly)
+
 
 These libraries can depend both on typings and external libraries, and
  will be versioned and published alongside ScalablyTyped typings.
 
 If you try one of the typings and end up writing a small facade feel free to PR it! :)
 
+
+## Haven't people already tried this?
+
+There are heaps of other projects which does this for different languages,
+with different levels of effort put into them, and different degrees of success.
+
+This is a small sample:
+- [DefinitelyScala](https://definitelyscala.com/)
+- [scala-js-ts-importer](http://github.com/sjrd/scala-js-ts-importer)
+- [Retyped for C#](https://retyped.com)
+- [ts2k for Kotlin](https://github.com/Kotlin/ts2kt)
+- [ReasonablyTyped for Reason ML](https://rrdelaney.github.io/ReasonablyTyped/)
+- [typescript2java](https://github.com/ltearno/typescript2java)
+
+You'll see there are two projects which target Scala.
+`scala-js-ts-importer` is Sébastien's original attempt from some years ago,
+ which forms the basis for both `DefinitelyScala` and `ScalablyTyped`.
+
+`DefinitelyScala` is an awesome project, but it's not finished.
+This project tries to pick up where it left off and finish the task.
+
+The converter, `tso`, powers `ScalablyTyped` with a huge set of features not frequently found elsewhere:
+- Parser for ~all of typescript 3.2
+- Keeps ~all comments
+- Full handling of dependencies between libraries, including those outside of `DefinitelyTyped`
+- Full implementation of the module system, which all useful javascript libraries rely on
+- ~All types and values are fully resolved, across library boundaries
+- A naming scheme to avoid name collisions
+- Scala.js must abide by JVM rules, so we handle erasure, overloads, overrides, default parameters, `var` conflicts, inheritance conflicts, etc.
+- Better user convenience by converting to `@ScalaJSDefined` traits
+- Bridges gap between structural and nominal typing somewhat by a strong bias towards type aliases instead of traits
+- Answers `typeof` queries and type lookups (`React.Props["children"]`)
+- Fills in defaulted type parameters
+
+All these features combined enable us to rewrite a very high percentage of all typings,
+somewhere around 97-98% of the newest version of all libraries in the current set.
+
+## Is it production ready?
+
+Typings should leave little to no trace of their existence in the finished
+javascript artifact, and hence not be directly responsible for runtime errors.
+
+That said... These typings are all just documentation, and we're working with Javascript here.
+Test well.
+
+Users should beware though, that we currently have limited space for published artifacts at Bintray.
+This necessarily means that we'll have to cull old versions of typings to make room for new ones.
+
+We'll probably establish some kind of regime with selected LTS (Long Term Support) releases
+ or something, but no promises for now.
+
+If you choose to depend on a typing now, be prepared to do one of the following:
+- keep updating to newest version of typings (breaking old builds)
+- locally cache/store typing artifacts
+- copy/paste the typing source code into your own repository
+- build typing artifacts from ScalablyTyped source code
+- donate money/server towards artifact hosting
 
 ## Anticipated questions about the encoding
 There are loads of details as to how the conversion is done.

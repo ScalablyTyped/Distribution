@@ -12,6 +12,6 @@ class default () extends Pagination
 @JSImport("semantic-ui-react/dist/commonjs/addons/Pagination/Pagination", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: ScalablyTyped.runtime.Instantiable0[semanticDashUiDashReactLib.distCommonjsAddonsPaginationPaginationItemMod.default] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[semanticDashUiDashReactLib.distCommonjsAddonsPaginationPaginationItemMod.default] = js.native
 }
 

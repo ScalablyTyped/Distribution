@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Params
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var paginate: js.UndefOr[
     atFeathersjsFeathersLib.atFeathersjsFeathersLibNumbers.`false` | (stdLib.Pick[PaginationOptions, atFeathersjsFeathersLib.atFeathersjsFeathersLibStrings.max])
   ] = js.undefined

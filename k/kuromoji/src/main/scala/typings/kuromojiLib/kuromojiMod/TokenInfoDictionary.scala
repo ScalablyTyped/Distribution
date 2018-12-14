@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait TokenInfoDictionary extends js.Object {
   def addMapping(source: scala.Double, target: scala.Double): scala.Unit
-  def buildDictionary(entries: js.Array[js.Array[_]]): ScalablyTyped.runtime.NumberDictionary[java.lang.String]
+  def buildDictionary(entries: js.Array[js.Array[_]]): org.scalablytyped.runtime.NumberDictionary[java.lang.String]
   def getFeatures(token_info_id_str: java.lang.String): java.lang.String
   def loadDictionary(array_buffer: stdLib.Uint8Array): TokenInfoDictionary
   def loadPosVector(array_buffer: stdLib.Uint8Array): TokenInfoDictionary

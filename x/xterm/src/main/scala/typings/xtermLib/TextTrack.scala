@@ -134,7 +134,7 @@ trait TextTrack extends EventTarget {
 @JSGlobal("TextTrack")
 @js.native
 object TextTrack
-  extends ScalablyTyped.runtime.Instantiable0[TextTrack] {
+  extends org.scalablytyped.runtime.Instantiable0[TextTrack] {
   val DISABLED: scala.Double = js.native
   val ERROR: scala.Double = js.native
   val HIDDEN: scala.Double = js.native

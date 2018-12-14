@@ -204,5 +204,5 @@ trait RTCDataChannel extends EventTarget {
 @JSGlobal("RTCDataChannel")
 @js.native
 object RTCDataChannel
-  extends ScalablyTyped.runtime.Instantiable0[RTCDataChannel]
+  extends org.scalablytyped.runtime.Instantiable0[RTCDataChannel]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("enigma.js", JSImport.Namespace)
 @js.native
 object enigmaDotJsMod
-  extends ScalablyTyped.runtime.TopLevel[IEnigmaClass]
+  extends org.scalablytyped.runtime.TopLevel[IEnigmaClass]
 

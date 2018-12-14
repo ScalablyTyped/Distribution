@@ -12,7 +12,7 @@ trait IDirective[TScope /* <: IScope */] extends js.Object {
            * the controller constructor is called, this use is now deprecated. Please place initialization code that
            * relies upon bindings inside a $onInit method on the controller, instead.
            */
-  var bindToController: js.UndefOr[scala.Boolean | ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var bindToController: js.UndefOr[scala.Boolean | org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var compile: js.UndefOr[IDirectiveCompileFn[TScope]] = js.undefined
   var controller: js.UndefOr[java.lang.String | Injectable[IControllerConstructor]] = js.undefined
   var controllerAs: js.UndefOr[java.lang.String] = js.undefined
@@ -24,10 +24,10 @@ trait IDirective[TScope /* <: IScope */] extends js.Object {
            */
   var replace: js.UndefOr[scala.Boolean] = js.undefined
   var require: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
   var restrict: js.UndefOr[java.lang.String] = js.undefined
-  var scope: js.UndefOr[scala.Boolean | ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var scope: js.UndefOr[scala.Boolean | org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var template: js.UndefOr[
     java.lang.String | (js.Function2[/* tElement */ angularLib.JQLite, /* tAttrs */ IAttributes, java.lang.String])
   ] = js.undefined
@@ -37,7 +37,7 @@ trait IDirective[TScope /* <: IScope */] extends js.Object {
   ] = js.undefined
   var terminal: js.UndefOr[scala.Boolean] = js.undefined
   var transclude: js.UndefOr[
-    scala.Boolean | angularLib.angularLibStrings.element | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    scala.Boolean | angularLib.angularLibStrings.element | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
 }
 

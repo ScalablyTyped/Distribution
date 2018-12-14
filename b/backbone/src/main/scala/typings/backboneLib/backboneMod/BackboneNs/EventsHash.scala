@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait EventsHash
-  extends /* selector */ ScalablyTyped.runtime.StringDictionary[java.lang.String | backboneLib.Anon_EventObject]
+  extends /* selector */ org.scalablytyped.runtime.StringDictionary[java.lang.String | backboneLib.Anon_EventObject]
 

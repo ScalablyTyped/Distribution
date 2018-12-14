@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends GatewayRegistry {
   /* CompleteClass */
-  override var _children: ScalablyTyped.runtime.StringDictionary[
-    js.UndefOr[ScalablyTyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]]
+  override var _children: org.scalablytyped.runtime.StringDictionary[
+    js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]]
   ] = js.native
   /* CompleteClass */
-  override var _containers: ScalablyTyped.runtime.StringDictionary[js.UndefOr[(reactLib.reactMod.Component[js.Object, js.Object, _]) | scala.Null]] = js.native
+  override var _containers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[(reactLib.reactMod.Component[js.Object, js.Object, _]) | scala.Null]] = js.native
   /* CompleteClass */
   override var _currentId: scala.Double = js.native
   /* CompleteClass */

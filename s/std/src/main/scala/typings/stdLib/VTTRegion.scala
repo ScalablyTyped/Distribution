@@ -20,5 +20,5 @@ trait VTTRegion extends js.Object {
 @JSGlobal("VTTRegion")
 @js.native
 object VTTRegion
-  extends ScalablyTyped.runtime.Instantiable0[VTTRegion]
+  extends org.scalablytyped.runtime.Instantiable0[VTTRegion]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-shape", JSImport.Namespace)
 @js.native
 object semanticDashUiDashShapeMod
-  extends ScalablyTyped.runtime.TopLevel[semanticDashUiDashShapeLib.SemanticUINs.Shape]
+  extends org.scalablytyped.runtime.TopLevel[semanticDashUiDashShapeLib.SemanticUINs.Shape]
 

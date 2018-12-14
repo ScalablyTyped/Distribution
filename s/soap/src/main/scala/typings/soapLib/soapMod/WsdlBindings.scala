@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait WsdlBindings
-  extends /* prop */ ScalablyTyped.runtime.StringDictionary[WsdlBinding]
+  extends /* prop */ org.scalablytyped.runtime.StringDictionary[WsdlBinding]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Blot
-  extends ScalablyTyped.runtime.Instantiable0[parchmentLib.distSrcBlotAbstractBlotMod.Blot]
+  extends org.scalablytyped.runtime.Instantiable0[parchmentLib.distSrcBlotAbstractBlotMod.Blot]
 

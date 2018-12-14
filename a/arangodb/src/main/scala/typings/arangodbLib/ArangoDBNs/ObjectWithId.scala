@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 // Document
 
 trait ObjectWithId
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var _id: java.lang.String
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fusioncharts", JSImport.Namespace)
 @js.native
 object fusionchartsModMembers
-  extends ScalablyTyped.runtime.TopLevel[fusionchartsLib.fusionchartsMod.FusionChartsNs.FusionChartStatic]
+  extends org.scalablytyped.runtime.TopLevel[fusionchartsLib.fusionchartsMod.FusionChartsNs.FusionChartStatic]
 

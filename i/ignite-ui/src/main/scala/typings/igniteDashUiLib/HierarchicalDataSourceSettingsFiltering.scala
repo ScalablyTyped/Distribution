@@ -10,5 +10,5 @@ trait HierarchicalDataSourceSettingsFiltering
   extends /**
 	 * Option for HierarchicalDataSourceSettingsFiltering
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

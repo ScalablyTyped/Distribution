@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Model
-  extends ScalablyTyped.runtime.Instantiable1[/* attrs */ ScalablyTyped.runtime.StringDictionary[js.Any], Item] {
+  extends org.scalablytyped.runtime.Instantiable1[/* attrs */ org.scalablytyped.runtime.StringDictionary[js.Any], Item] {
   def after(action: LifeCycleAction, listner: js.Function1[/* item */ Item, scala.Unit]): scala.Unit = js.native
   def batchGetItems(
-    items: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String] | java.lang.String],
+    items: js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]],
     callback: js.Function2[/* err */ nodeLib.Error, /* items */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
   def batchGetItems(
-    items: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String] | java.lang.String],
+    items: js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]],
     options: GetItemOptions,
     callback: js.Function2[/* err */ nodeLib.Error, /* items */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
@@ -61,11 +61,11 @@ trait Model
   def get(hashKey: js.Any, rangeKey: js.Any, options: GetItemOptions, callback: DynogelsItemCallback): scala.Unit = js.native
   def get(haskKey: js.Any, options: GetItemOptions, callback: DynogelsItemCallback): scala.Unit = js.native
   def getItems(
-    items: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String] | java.lang.String],
+    items: js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]],
     callback: js.Function2[/* err */ nodeLib.Error, /* items */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
   def getItems(
-    items: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String] | java.lang.String],
+    items: js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]],
     options: GetItemOptions,
     callback: js.Function2[/* err */ nodeLib.Error, /* items */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native

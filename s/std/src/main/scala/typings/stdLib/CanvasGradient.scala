@@ -20,5 +20,5 @@ trait CanvasGradient extends js.Object {
 @JSGlobal("CanvasGradient")
 @js.native
 object CanvasGradient
-  extends ScalablyTyped.runtime.Instantiable0[CanvasGradient]
+  extends org.scalablytyped.runtime.Instantiable0[CanvasGradient]
 

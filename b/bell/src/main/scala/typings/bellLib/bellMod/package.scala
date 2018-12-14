@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 package object bellMod {
   type AuthedRequest = js.Function2[
     /* uri */ java.lang.String, 
-    /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]], 
+    /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]], 
     js.Promise[js.Object]
   ]
   type BellOptions = CustomProviderOptions | KnownProviderOptions
   type ProfileGetter[C /* <: Credentials */] = js.ThisFunction3[
     /* this */ CustomProviderOptions, 
     /* credentials */ C, 
-    /* params */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+    /* params */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
     /* get */ AuthedRequest, 
     js.Promise[scala.Unit]
   ]

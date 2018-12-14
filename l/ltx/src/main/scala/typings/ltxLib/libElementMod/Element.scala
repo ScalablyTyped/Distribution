@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Element protected () extends js.Object {
   def this(name: java.lang.String) = this()
-  def this(name: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
   def this(name: java.lang.String, attrs: java.lang.String) = this()
-  var attrs: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def this(name: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  var attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var children: js.Array[Element] = js.native
   @JSName("clone")
   var clone_Original: js.Function1[/* el */ this.type, this.type] = js.native
@@ -23,7 +23,7 @@ class Element protected () extends js.Object {
   /** create child node and return it */
   def c(name: java.lang.String): Element = js.native
   /** create child node and return it */
-  def c(name: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): Element = js.native
+  def c(name: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): Element = js.native
   def childrenEquals(el: Element): scala.Boolean = js.native
   def clone[T /* <: Element */](el: T): T = js.native
   def cnode[T /* <: Element */](child: T): T = js.native
@@ -72,7 +72,7 @@ class Element protected () extends js.Object {
   /**
        * Recursiverly gets all xmlns defined, in the form of {url:prefix}
        */
-  def getXmlns(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def getXmlns(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
        * if (element.is('message', 'jabber:client')) ...
        */
@@ -108,8 +108,8 @@ class Element protected () extends js.Object {
   def remove(el: Element, xmlns: java.lang.String): this.type = js.native
   /** returns uppermost parent */
   def root(): Element | this.type = js.native
-  def setAttrs(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def setAttrs(attrs: java.lang.String): scala.Unit = js.native
+  def setAttrs(attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /** add text node and return element */
   def t(text: TextNode): this.type = js.native
   def text(): java.lang.String = js.native

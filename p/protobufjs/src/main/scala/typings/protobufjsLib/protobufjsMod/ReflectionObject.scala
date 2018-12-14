@@ -17,7 +17,7 @@ abstract class ReflectionObject () extends js.Object {
   /** Unique name within its namespace. */
   var name: java.lang.String = js.native
   /** Options. */
-  var options: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   /** Parent namespace. */
   var parent: Namespace | scala.Null = js.native
   /** Whether already resolved or not. */
@@ -67,18 +67,18 @@ abstract class ReflectionObject () extends js.Object {
        * @param [ifNotSet] Sets an option only if it isn't currently set
        * @returns `this`
        */
-  def setOptions(options: ScalablyTyped.runtime.StringDictionary[js.Any]): ReflectionObject = js.native
+  def setOptions(options: org.scalablytyped.runtime.StringDictionary[js.Any]): ReflectionObject = js.native
   /**
        * Sets multiple options.
        * @param options Options to set
        * @param [ifNotSet] Sets an option only if it isn't currently set
        * @returns `this`
        */
-  def setOptions(options: ScalablyTyped.runtime.StringDictionary[js.Any], ifNotSet: scala.Boolean): ReflectionObject = js.native
+  def setOptions(options: org.scalablytyped.runtime.StringDictionary[js.Any], ifNotSet: scala.Boolean): ReflectionObject = js.native
   /**
        * Converts this reflection object to its descriptor representation.
        * @returns Descriptor
        */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 

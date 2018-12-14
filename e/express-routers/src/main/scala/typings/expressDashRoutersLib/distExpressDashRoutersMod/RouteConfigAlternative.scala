@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait RouteConfigAlternative
-  extends /* path */ ScalablyTyped.runtime.StringDictionary[
+  extends /* path */ org.scalablytyped.runtime.StringDictionary[
       expressLib.expressMod.eNs.RequestHandler | js.Array[expressLib.expressMod.eNs.RequestHandler]
     ]
 

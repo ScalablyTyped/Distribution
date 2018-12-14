@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HostDecorator
-  extends ScalablyTyped.runtime.Instantiable0[Host] {
+  extends org.scalablytyped.runtime.Instantiable0[Host] {
   /**
        * A constructor parameter decorator that tells the DI framework
        * to retrieve a dependency from any injector until

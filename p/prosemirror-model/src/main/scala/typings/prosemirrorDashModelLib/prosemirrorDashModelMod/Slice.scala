@@ -44,7 +44,7 @@ class Slice[S /* <: Schema[_, _] */] protected () extends js.Object {
   /**
      * Convert a slice to a JSON-serializable representation.
      */
-  def toJSON(): js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null] = js.native
+  def toJSON(): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null] = js.native
 }
 
 @JSImport("prosemirror-model", "Slice")
@@ -61,7 +61,7 @@ object Slice extends js.Object {
   /**
      * Deserialize a slice from its JSON representation.
      */
-  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, json: ScalablyTyped.runtime.StringDictionary[js.Any]): prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S] = js.native
+  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, json: org.scalablytyped.runtime.StringDictionary[js.Any]): prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S] = js.native
   /**
      * Create a slice from a fragment by taking the maximum possible
      * open value on both side of the fragment.

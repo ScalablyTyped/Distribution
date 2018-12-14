@@ -16,7 +16,7 @@ trait httpCRq
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[httpCRq] {
+org.scalablytyped.runtime.Instantiable0[httpCRq] {
   /**
        * <p>Finish this HTTP request - optional data to append as an argument</p>
        * <p>See <code>Socket.write</code> for more information about the data argument</p>

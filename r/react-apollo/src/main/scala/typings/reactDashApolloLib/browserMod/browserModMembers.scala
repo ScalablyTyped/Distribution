@@ -11,7 +11,10 @@ object browserModMembers extends js.Object {
   val ApolloConsumer: reactLib.reactMod.ReactNs.StatelessComponent[reactDashApolloLib.apolloconsumerMod.ApolloConsumerProps] = js.native
   val compose: js.Any = js.native
   def getDataFromTree(tree: reactLib.reactMod.ReactNs.ReactNode): js.Promise[java.lang.String] = js.native
-  def getDataFromTree(tree: reactLib.reactMod.ReactNs.ReactNode, context: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Promise[java.lang.String] = js.native
+  def getDataFromTree(
+    tree: reactLib.reactMod.ReactNs.ReactNode,
+    context: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): js.Promise[java.lang.String] = js.native
   def getMarkupFromTree(hasTreeContextRenderFunction: reactDashApolloLib.getDataFromTreeMod.GetMarkupFromTreeOptions): js.Promise[java.lang.String] = js.native
   def graphql[TProps /* <: TGraphQLVariables | js.Object */, TData, TGraphQLVariables, TChildProps](document: graphqlLib.languageAstMod.DocumentNode): js.Function1[
     /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[TChildProps with TProps], 

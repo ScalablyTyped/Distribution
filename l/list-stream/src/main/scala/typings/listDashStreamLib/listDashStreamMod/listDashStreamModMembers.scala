@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("list-stream", JSImport.Namespace)
 @js.native
 object listDashStreamModMembers
-  extends ScalablyTyped.runtime.TopLevel[ListStreamConstructor]
+  extends org.scalablytyped.runtime.TopLevel[ListStreamConstructor]
 

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Bleno
   extends nodeLib.NodeJSNs.EventEmitter {
-  val Characteristic: ScalablyTyped.runtime.Instantiable1[/* options */ CharacteristicOptions, Characteristic] = js.native
-  val Descriptor: ScalablyTyped.runtime.Instantiable1[/* options */ DescriptorOptions, Descriptor] = js.native
-  val PrimaryService: ScalablyTyped.runtime.Instantiable1[/* options */ PrimaryServiceOptions, PrimaryService] = js.native
+  val Characteristic: org.scalablytyped.runtime.Instantiable1[/* options */ CharacteristicOptions, Characteristic] = js.native
+  val Descriptor: org.scalablytyped.runtime.Instantiable1[/* options */ DescriptorOptions, Descriptor] = js.native
+  val PrimaryService: org.scalablytyped.runtime.Instantiable1[/* options */ PrimaryServiceOptions, PrimaryService] = js.native
   val address: java.lang.String = js.native
   val mtu: scala.Double = js.native
   val platform: java.lang.String = js.native

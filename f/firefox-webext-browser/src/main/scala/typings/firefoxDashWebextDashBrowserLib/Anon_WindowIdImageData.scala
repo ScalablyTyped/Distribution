@@ -15,7 +15,7 @@ trait Anon_WindowIdImageData extends js.Object {
            * Note that 'details.imageData = foo' is equivalent to 'details.imageData = {'19': foo}'
            */
   var imageData: js.UndefOr[
-    firefoxDashWebextDashBrowserLib.browserNs.sidebarActionNs.ImageDataType | ScalablyTyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.sidebarActionNs.ImageDataType]
+    firefoxDashWebextDashBrowserLib.browserNs.sidebarActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.sidebarActionNs.ImageDataType]
   ] = js.undefined
   /**
            * Either a relative image path or a dictionary {size -> relative image path} pointing to icon to be set. If

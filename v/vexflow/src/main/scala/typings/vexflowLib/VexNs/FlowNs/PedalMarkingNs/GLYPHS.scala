@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.PedalMarking.GLYPHS")
 @js.native
 object GLYPHS
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[vexflowLib.Anon_Yshift]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Yshift]
 

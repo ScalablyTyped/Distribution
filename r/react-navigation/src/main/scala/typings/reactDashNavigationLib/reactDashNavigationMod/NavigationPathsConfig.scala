@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait NavigationPathsConfig
-  extends /* routeName */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* routeName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

@@ -14,5 +14,5 @@ trait MessageChannel extends js.Object {
 @JSGlobal("MessageChannel")
 @js.native
 object MessageChannel
-  extends ScalablyTyped.runtime.Instantiable0[MessageChannel]
+  extends org.scalablytyped.runtime.Instantiable0[MessageChannel]
 

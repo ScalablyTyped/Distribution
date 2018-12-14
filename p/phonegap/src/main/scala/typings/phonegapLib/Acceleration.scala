@@ -16,5 +16,5 @@ trait Acceleration extends js.Object {
 @JSGlobal("Acceleration")
 @js.native
 object Acceleration
-  extends ScalablyTyped.runtime.Instantiable0[Acceleration]
+  extends org.scalablytyped.runtime.Instantiable0[Acceleration]
 

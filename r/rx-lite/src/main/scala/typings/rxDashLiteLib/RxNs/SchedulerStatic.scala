@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SchedulerStatic
-  extends ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable4[
       /* now */ js.Function0[scala.Double], 
       /* schedule */ js.Function2[
         /* state */ js.Any, 

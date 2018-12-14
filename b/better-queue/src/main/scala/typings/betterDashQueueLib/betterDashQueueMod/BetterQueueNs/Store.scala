@@ -13,7 +13,7 @@ trait Store[T] extends js.Object {
     lockId: java.lang.String,
     cb: js.Function2[
       /* error */ js.Any, 
-      /* tasks */ ScalablyTyped.runtime.StringDictionary[T], 
+      /* tasks */ org.scalablytyped.runtime.StringDictionary[T], 
       scala.Unit
     ]
   ): scala.Unit

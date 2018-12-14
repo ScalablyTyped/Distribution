@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Set extends js.Object {
   var removed: js.Array[java.lang.String]
-  var set: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var set: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

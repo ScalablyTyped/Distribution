@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("anchor-js", JSImport.Namespace)
 @js.native
 object anchorDashJsModMembers
-  extends ScalablyTyped.runtime.TopLevel[anchorDashJsLib.anchorDashJsMod.anchorjsNs.AnchorStatic]
+  extends org.scalablytyped.runtime.TopLevel[anchorDashJsLib.anchorDashJsMod.anchorjsNs.AnchorStatic]
 

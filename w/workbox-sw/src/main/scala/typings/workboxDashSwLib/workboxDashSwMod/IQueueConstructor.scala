@@ -17,7 +17,7 @@ trait IQueueConstructor
 	 * @param {Partial<IQueueOptions>} options
 	 * @returns {Queue}
 	 */
-ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Queue]
+org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Queue]
      with /**
 	 * @param {string} name - The unique name for this queue. This name must be unique as it's used to register
 	 * sync events and store requests in IndexedDB specific to this instance. An error will be thrown if a
@@ -25,5 +25,5 @@ ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Queue]
 	 * @param {Partial<IQueueOptions>} options
 	 * @returns {Queue}
 	 */
-ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* options */ stdLib.Partial[IQueueOptions], Queue]
+org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* options */ stdLib.Partial[IQueueOptions], Queue]
 

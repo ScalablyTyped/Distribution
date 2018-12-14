@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait DOMStringList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[java.lang.String] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]]
   /**
        * Returns the number of strings in strings.
@@ -28,5 +28,5 @@ trait DOMStringList
 @JSGlobal("DOMStringList")
 @js.native
 object DOMStringList
-  extends ScalablyTyped.runtime.Instantiable0[DOMStringList]
+  extends org.scalablytyped.runtime.Instantiable0[DOMStringList]
 

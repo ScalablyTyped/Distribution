@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IRequestParameters
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[mssqlLib.Anon_Name]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[mssqlLib.Anon_Name]
 

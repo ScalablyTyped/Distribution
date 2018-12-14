@@ -18,8 +18,8 @@ trait SelectProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var dropdownClassName: js.UndefOr[java.lang.String] = js.undefined
   var dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined
-  var dropdownMenuStyle: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
-  var dropdownStyle: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var dropdownMenuStyle: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var dropdownStyle: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var filterOption: js.UndefOr[scala.Boolean] = js.undefined
   var getInputElement: js.UndefOr[js.Function0[stdLib.Node]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* trigger */ stdLib.Node, stdLib.Node]] = js.undefined

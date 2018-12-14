@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("layouts")
 @js.native
 object layouts
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[layout]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[layout]
 

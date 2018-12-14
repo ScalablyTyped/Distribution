@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.dom.document")
 @js.native
 class document protected () extends domObject {
-  def this(domDocument: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(domDocument: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   @JSName("$")
   val $_document: stdLib.Document = js.native
   val `type`: scala.Double = js.native

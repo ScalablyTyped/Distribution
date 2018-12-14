@@ -22,7 +22,7 @@ trait PriorityQueueOptions[T] extends js.Object {
                * Don't use BHeapStrategy, except as a lesson in how sometimes miracles in one programming language aren't great in other languages.
                */
   var strategy: js.UndefOr[
-    ScalablyTyped.runtime.Instantiable1[
+    org.scalablytyped.runtime.Instantiable1[
       /* options */ js.UndefOr[/* options */ js.Object], 
       jsDashPriorityDashQueueLib.jsDashPriorityDashQueueMod.AbstractPriorityQueue[js.Object]
     ]

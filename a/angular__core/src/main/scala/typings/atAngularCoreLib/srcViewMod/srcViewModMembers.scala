@@ -170,8 +170,8 @@ object srcViewModMembers extends js.Object {
     selector: java.lang.String,
     componentType: atAngularCoreLib.srcTypeMod.Type[_],
     viewDefFactory: atAngularCoreLib.srcViewTypesMod.ViewDefinitionFactory,
-    inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ngContentSelectors: js.Array[java.lang.String]
   ): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[_] = js.native
   def createComponentFactory(
@@ -179,7 +179,7 @@ object srcViewModMembers extends js.Object {
     componentType: atAngularCoreLib.srcTypeMod.Type[_],
     viewDefFactory: atAngularCoreLib.srcViewTypesMod.ViewDefinitionFactory,
     inputs: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ngContentSelectors: js.Array[java.lang.String]
   ): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[_] = js.native
   def createNgModuleFactory(
@@ -209,7 +209,7 @@ object srcViewModMembers extends js.Object {
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def directiveDef(
     checkIndex: scala.Double,
@@ -220,8 +220,8 @@ object srcViewModMembers extends js.Object {
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def directiveDef(
     checkIndex: scala.Double,
@@ -233,7 +233,7 @@ object srcViewModMembers extends js.Object {
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
     props: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def directiveDef(
     checkIndex: scala.Double,
@@ -250,7 +250,7 @@ object srcViewModMembers extends js.Object {
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def directiveDef(
     checkIndex: scala.Double,
@@ -259,8 +259,8 @@ object srcViewModMembers extends js.Object {
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def directiveDef(
     checkIndex: scala.Double,
@@ -270,7 +270,7 @@ object srcViewModMembers extends js.Object {
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
     props: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def elementDef(
     checkIndex: scala.Double,
@@ -365,12 +365,12 @@ object srcViewModMembers extends js.Object {
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def pureArrayDef(checkIndex: scala.Double, argCount: scala.Double): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
-  def pureObjectDef(checkIndex: scala.Double, propToIndex: ScalablyTyped.runtime.StringDictionary[scala.Double]): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def pureObjectDef(checkIndex: scala.Double, propToIndex: org.scalablytyped.runtime.StringDictionary[scala.Double]): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def purePipeDef(checkIndex: scala.Double, argCount: scala.Double): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def queryDef(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     id: scala.Double,
-    bindings: ScalablyTyped.runtime.StringDictionary[atAngularCoreLib.srcViewTypesMod.QueryBindingType]
+    bindings: org.scalablytyped.runtime.StringDictionary[atAngularCoreLib.srcViewTypesMod.QueryBindingType]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def rootRenderNodes(view: atAngularCoreLib.srcViewTypesMod.ViewData): js.Array[_] = js.native
   def shiftInitState(

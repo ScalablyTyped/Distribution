@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait RouterProps[Q] extends js.Object {
   val asPath: js.UndefOr[java.lang.String] = js.native
   // property fields
-  val components: ScalablyTyped.runtime.StringDictionary[nextDashServerLib.Anon_Component] = js.native
+  val components: org.scalablytyped.runtime.StringDictionary[nextDashServerLib.Anon_Component] = js.native
   // events API (6.1.1+)
   val events: nextDashServerLib.Anon_On = js.native
   // events (deprecated soonish)

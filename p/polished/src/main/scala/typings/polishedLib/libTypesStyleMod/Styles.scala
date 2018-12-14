@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Styles
-  extends /* ruleOrSelector */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Styles]
+  extends /* ruleOrSelector */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Styles]
 

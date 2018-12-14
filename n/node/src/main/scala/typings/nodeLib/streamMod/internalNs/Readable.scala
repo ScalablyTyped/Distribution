@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Readable
   extends nodeLib.streamMod.internal
      with nodeLib.NodeJSNs.ReadableStream {
-  @JSName(ScalablyTyped.runtime.Symbol.asyncIterator)
+  @JSName(org.scalablytyped.runtime.Symbol.asyncIterator)
   var asyncIterator_Readable: js.Function0[nodeLib.AsyncIterableIterator[_]] = js.native
   val readableHighWaterMark: scala.Double = js.native
   val readableLength: scala.Double = js.native

@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
 //
 
 trait StructProps
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Constructor[_]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Constructor[_]]
 

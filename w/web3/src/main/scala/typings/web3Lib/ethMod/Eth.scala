@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Eth extends js.Object {
-  var BatchRequest: ScalablyTyped.runtime.Instantiable0[web3Lib.ethTypesMod.BatchRequest] = js.native
-  var Contract: ScalablyTyped.runtime.Instantiable3[
+  var BatchRequest: org.scalablytyped.runtime.Instantiable0[web3Lib.ethTypesMod.BatchRequest] = js.native
+  var Contract: org.scalablytyped.runtime.Instantiable3[
     /* jsonInterface */ js.Array[js.Any], 
     /* address */ js.UndefOr[/* address */ java.lang.String], 
     /* options */ js.UndefOr[/* options */ web3Lib.ethContractMod.CustomOptions], 

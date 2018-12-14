@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("content-type", JSImport.Namespace)
 @js.native
 object contentDashTypeMod
-  extends ScalablyTyped.runtime.TopLevel[deoxxaDashContentDashTypeLib.ContentTypeNs.MediaTypeStatic]
+  extends org.scalablytyped.runtime.TopLevel[deoxxaDashContentDashTypeLib.ContentTypeNs.MediaTypeStatic]
 

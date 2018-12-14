@@ -13,7 +13,7 @@ trait Sink extends js.Object {
   var arch: js.UndefOr[java.lang.String] = js.undefined
   var body: js.UndefOr[java.lang.String] = js.undefined
   var head: js.UndefOr[java.lang.String] = js.undefined
-  var htmlById: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var htmlById: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var maybeMadeChanges: js.UndefOr[scala.Boolean] = js.undefined
   var renderIntoElementById: js.UndefOr[
     (js.Function2[/* id */ java.lang.String, /* html */ java.lang.String, scala.Unit]) with (js.Function2[/* id */ java.lang.String, /* html */ nodeLib.NodeJSNs.ReadableStream, scala.Unit])

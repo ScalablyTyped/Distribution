@@ -12,8 +12,7 @@ class Inspector protected () extends js.Object {
   val AttachmentSelection: AttachmentSelection = js.native
   val Caption: java.lang.String = js.native
   val Class: OlObjectClass = js.native
-  @JSName("CommandBars")
-  val CommandBars_Original: activexDashOfficeLib.OfficeNs.CommandBars = js.native
+  val CommandBars: js.Any = js.native
   val CurrentItem: js.Any = js.native
   val EditorType: OlEditorType = js.native
   val HTMLEditor: js.Any = js.native
@@ -29,8 +28,6 @@ class Inspector protected () extends js.Object {
   val WordEditor: js.Any = js.native
   def Activate(): scala.Unit = js.native
   def Close(SaveMode: OlInspectorClose): scala.Unit = js.native
-  def CommandBars(Index: java.lang.String): activexDashOfficeLib.OfficeNs.CommandBar = js.native
-  def CommandBars(Index: scala.Double): activexDashOfficeLib.OfficeNs.CommandBar = js.native
   def Display(): scala.Unit = js.native
   def Display(Modal: js.Any): scala.Unit = js.native
   def HideFormPage(PageName: java.lang.String): scala.Unit = js.native
@@ -40,7 +37,7 @@ class Inspector protected () extends js.Object {
   def SaveFormRegion(Page: js.Any, FileName: java.lang.String): scala.Unit = js.native
   def SetControlItemProperty(Control: js.Any, PropertyName: java.lang.String): scala.Unit = js.native
   def SetCurrentFormPage(PageName: java.lang.String): scala.Unit = js.native
-  def SetSchedulingStartTime(Start: activexDashInteropLib.VarDate): scala.Unit = js.native
+  def SetSchedulingStartTime(Start: stdLib.VarDate): scala.Unit = js.native
   def ShowFormPage(PageName: java.lang.String): scala.Unit = js.native
 }
 

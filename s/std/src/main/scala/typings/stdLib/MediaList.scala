@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait MediaList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[java.lang.String] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]]
   val length: scala.Double
   var mediaText: java.lang.String
@@ -20,5 +20,5 @@ trait MediaList
 @JSGlobal("MediaList")
 @js.native
 object MediaList
-  extends ScalablyTyped.runtime.Instantiable0[MediaList]
+  extends org.scalablytyped.runtime.Instantiable0[MediaList]
 

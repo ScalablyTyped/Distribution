@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StringConstructor
-  extends ScalablyTyped.runtime.Instantiable0[java.lang.String]
-     with ScalablyTyped.runtime.Instantiable1[/* value */ js.Any, java.lang.String] {
+  extends org.scalablytyped.runtime.Instantiable0[java.lang.String]
+     with org.scalablytyped.runtime.Instantiable1[/* value */ js.Any, java.lang.String] {
   def apply(): java.lang.String = js.native
   def apply(value: js.Any): java.lang.String = js.native
   def fromCharCode(codes: scala.Double*): java.lang.String = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ipcheck", JSImport.Namespace)
 @js.native
 object ipcheckModMembers
-  extends ScalablyTyped.runtime.TopLevel[ipcheckLib.ipcheckMod.ipcheckNs.IPCheckStatic]
+  extends org.scalablytyped.runtime.TopLevel[ipcheckLib.ipcheckMod.ipcheckNs.IPCheckStatic]
 

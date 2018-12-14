@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_KeyInvertGrep
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Default time to wait in ms before a test fails.
            */

@@ -11,6 +11,6 @@ trait Anon_ServerName extends js.Object {
   var key: java.lang.String
   var mode: java.lang.String
   var serverName: java.lang.String
-  var users: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var users: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

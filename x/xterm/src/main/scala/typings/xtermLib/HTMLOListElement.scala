@@ -20,5 +20,5 @@ trait HTMLOListElement extends HTMLElement {
 @JSGlobal("HTMLOListElement")
 @js.native
 object HTMLOListElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLOListElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLOListElement]
 

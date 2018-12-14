@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ActiveXObject
-  extends ScalablyTyped.runtime.Instantiable1[/* progid */ java.lang.String, js.Any]
+  extends org.scalablytyped.runtime.Instantiable1[/* progid */ java.lang.String, js.Any]
 

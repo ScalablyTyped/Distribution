@@ -11,5 +11,5 @@ trait ITypeHandlers
      * Mapping between the type of a value in an object to a function taking
      * this value and returning a replacement value.
      */
-/* type */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* value */ js.Any, _]]
+/* type */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* value */ js.Any, _]]
 

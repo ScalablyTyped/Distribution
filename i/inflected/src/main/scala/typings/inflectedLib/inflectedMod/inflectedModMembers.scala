@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("inflected", JSImport.Namespace)
 @js.native
 object inflectedModMembers
-  extends ScalablyTyped.runtime.TopLevel[Inflected]
+  extends org.scalablytyped.runtime.TopLevel[Inflected]
 

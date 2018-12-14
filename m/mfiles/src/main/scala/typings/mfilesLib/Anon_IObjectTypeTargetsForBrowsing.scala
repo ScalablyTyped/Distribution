@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IObjectTypeTargetsForBrowsing
-  extends ScalablyTyped.runtime.Instantiable0[IObjectTypeTargetsForBrowsing]
+  extends org.scalablytyped.runtime.Instantiable0[IObjectTypeTargetsForBrowsing]
 

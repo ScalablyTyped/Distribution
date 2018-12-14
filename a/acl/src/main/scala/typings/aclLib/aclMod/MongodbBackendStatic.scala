@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MongodbBackendStatic
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* db */ mongodbLib.mongodbMod.Db, 
       /* prefix */ java.lang.String, 
       /* useSingle */ scala.Boolean, 
       MongodbBackend
     ]
-     with ScalablyTyped.runtime.Instantiable2[/* db */ mongodbLib.mongodbMod.Db, /* prefix */ java.lang.String, MongodbBackend]
-     with ScalablyTyped.runtime.Instantiable1[/* db */ mongodbLib.mongodbMod.Db, MongodbBackend]
+     with org.scalablytyped.runtime.Instantiable2[/* db */ mongodbLib.mongodbMod.Db, /* prefix */ java.lang.String, MongodbBackend]
+     with org.scalablytyped.runtime.Instantiable1[/* db */ mongodbLib.mongodbMod.Db, MongodbBackend]
 

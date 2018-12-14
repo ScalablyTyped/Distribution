@@ -18,12 +18,12 @@ object transducersDotJsModMembers extends js.Object {
   def filter[TInput](pred: js.Function1[/* x */ TInput, scala.Boolean]): Transducer[TInput, TInput] = js.native
   def interpose[TInput](sep: TInput): Transducer[TInput, TInput] = js.native
   def into[TInput](to: java.lang.String, xf: Transducer[TInput, java.lang.String], from: stdLib.Iterable[TInput]): java.lang.String = js.native
+  def into[TInput, TOutput](to: js.Array[TOutput], xf: Transducer[TInput, TOutput], from: stdLib.Iterable[TInput]): js.Array[TOutput] = js.native
   def into[TInput, TOutput](
-    to: ScalablyTyped.runtime.StringDictionary[TOutput],
+    to: org.scalablytyped.runtime.StringDictionary[TOutput],
     xf: Transducer[TInput, js.Tuple2[java.lang.String, TOutput]],
     from: stdLib.Iterable[TInput]
-  ): ScalablyTyped.runtime.StringDictionary[TOutput] = js.native
-  def into[TInput, TOutput](to: js.Array[TOutput], xf: Transducer[TInput, TOutput], from: stdLib.Iterable[TInput]): js.Array[TOutput] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[TOutput] = js.native
   def isReduced(x: js.Any): scala.Boolean = js.native
   def iterator[T](coll: stdLib.Iterable[T]): stdLib.IterableIterator[T] = js.native
   def keep[TInput](): Transducer[js.UndefOr[TInput | scala.Null], TInput] = js.native
@@ -34,14 +34,14 @@ object transducersDotJsModMembers extends js.Object {
   def push[T](arr: js.Array[T], x: T): js.Array[T] = js.native
   def range(n: scala.Double): js.Array[scala.Double] = js.native
   def reduce[TResult, TInput](
-    coll: ScalablyTyped.runtime.StringDictionary[TInput],
+    coll: org.scalablytyped.runtime.StringDictionary[TInput],
     xf: Transformer[TResult, js.Tuple2[java.lang.String, TInput]],
     init: TResult
   ): TResult = js.native
   def reduce[TResult, TInput](coll: stdLib.Iterable[TInput], xf: Transformer[TResult, TInput], init: TResult): TResult = js.native
   @JSName("reduce")
   def reduce_TResultTCompleteResultTInputTCompleteResult[TResult, TCompleteResult, TInput](
-    coll: ScalablyTyped.runtime.StringDictionary[TInput],
+    coll: org.scalablytyped.runtime.StringDictionary[TInput],
     xf: CompletingTransformer[TResult, TCompleteResult, js.Tuple2[java.lang.String, TInput]],
     init: TResult
   ): TCompleteResult = js.native
@@ -53,37 +53,37 @@ object transducersDotJsModMembers extends js.Object {
   ): TCompleteResult = js.native
   def remove[TInput](pred: js.Function1[/* x */ TInput, scala.Boolean]): Transducer[TInput, TInput] = js.native
   def repeat[TInput](n: scala.Double): Transducer[TInput, TInput] = js.native
-  def seq[TInput, TOutput](
-    coll: ScalablyTyped.runtime.StringDictionary[TInput],
-    xf: Transducer[js.Tuple2[java.lang.String, TInput], js.Tuple2[java.lang.String, TOutput]]
-  ): ScalablyTyped.runtime.StringDictionary[TOutput] = js.native
   def seq[TInput, TOutput](coll: js.Array[TInput], xf: Transducer[TInput, TOutput]): js.Array[TOutput] = js.native
+  def seq[TInput, TOutput](
+    coll: org.scalablytyped.runtime.StringDictionary[TInput],
+    xf: Transducer[js.Tuple2[java.lang.String, TInput], js.Tuple2[java.lang.String, TOutput]]
+  ): org.scalablytyped.runtime.StringDictionary[TOutput] = js.native
   def seq[TInput, TOutput](coll: stdLib.Iterable[TInput], xf: Transducer[TInput, TOutput]): stdLib.IterableIterator[TOutput] = js.native
   def take[TInput](n: scala.Double): Transducer[TInput, TInput] = js.native
   def takeNth[TInput](n: scala.Double): Transducer[TInput, TInput] = js.native
   def takeWhile[TInput](pred: js.Function1[/* x */ TInput, scala.Boolean]): Transducer[TInput, TInput] = js.native
-  def toArray[TInput, TOutput](coll: ScalablyTyped.runtime.StringDictionary[TInput]): js.Array[TOutput] = js.native
+  def toArray[TInput, TOutput](coll: org.scalablytyped.runtime.StringDictionary[TInput]): js.Array[TOutput] = js.native
   def toArray[TInput, TOutput](
-    coll: ScalablyTyped.runtime.StringDictionary[TInput],
+    coll: org.scalablytyped.runtime.StringDictionary[TInput],
     xf: Transducer[js.Tuple2[java.lang.String, TInput], TOutput]
   ): js.Array[TOutput] = js.native
   def toArray[TInput, TOutput](coll: stdLib.Iterable[TInput]): js.Array[TOutput] = js.native
   def toArray[TInput, TOutput](coll: stdLib.Iterable[TInput], xf: Transducer[TInput, TOutput]): js.Array[TOutput] = js.native
-  def toIter[TInput, TOutput](coll: ScalablyTyped.runtime.StringDictionary[TInput]): stdLib.IterableIterator[TOutput] = js.native
+  def toIter[TInput, TOutput](coll: org.scalablytyped.runtime.StringDictionary[TInput]): stdLib.IterableIterator[TOutput] = js.native
   def toIter[TInput, TOutput](
-    coll: ScalablyTyped.runtime.StringDictionary[TInput],
+    coll: org.scalablytyped.runtime.StringDictionary[TInput],
     xf: Transducer[js.Tuple2[java.lang.String, TInput], TOutput]
   ): stdLib.IterableIterator[TOutput] = js.native
   def toIter[TInput, TOutput](coll: stdLib.Iterable[TInput]): stdLib.IterableIterator[TOutput] = js.native
   def toIter[TInput, TOutput](coll: stdLib.Iterable[TInput], xf: Transducer[TInput, TOutput]): stdLib.IterableIterator[TOutput] = js.native
   def toObj[TInput, TOutput](
-    coll: ScalablyTyped.runtime.StringDictionary[TInput],
+    coll: org.scalablytyped.runtime.StringDictionary[TInput],
     xf: Transducer[js.Tuple2[java.lang.String, TInput], js.Tuple2[java.lang.String, TOutput]]
-  ): ScalablyTyped.runtime.StringDictionary[TOutput] = js.native
-  def toObj[TInput, TOutput](coll: stdLib.Iterable[TInput]): ScalablyTyped.runtime.StringDictionary[TOutput] = js.native
-  def toObj[TInput, TOutput](coll: stdLib.Iterable[TInput], xf: Transducer[TInput, js.Tuple2[java.lang.String, TOutput]]): ScalablyTyped.runtime.StringDictionary[TOutput] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[TOutput] = js.native
+  def toObj[TInput, TOutput](coll: stdLib.Iterable[TInput]): org.scalablytyped.runtime.StringDictionary[TOutput] = js.native
+  def toObj[TInput, TOutput](coll: stdLib.Iterable[TInput], xf: Transducer[TInput, js.Tuple2[java.lang.String, TOutput]]): org.scalablytyped.runtime.StringDictionary[TOutput] = js.native
   def transduce[TResult, TInput, TOutput](
-    coll: ScalablyTyped.runtime.StringDictionary[TInput],
+    coll: org.scalablytyped.runtime.StringDictionary[TInput],
     xf: Transducer[js.Tuple2[java.lang.String, TInput], TOutput],
     f: Reducer[TResult, TOutput],
     init: TResult
@@ -95,12 +95,12 @@ object transducersDotJsModMembers extends js.Object {
     init: TResult
   ): TResult = js.native
   def transduce[TResult, TCompleteResult, TInput, TOutput](
-    coll: ScalablyTyped.runtime.StringDictionary[TInput],
+    coll: org.scalablytyped.runtime.StringDictionary[TInput],
     xf: Transducer[js.Tuple2[java.lang.String, TInput], TOutput],
     f: CompletingTransformer[TResult, TCompleteResult, TOutput]
   ): TCompleteResult = js.native
   def transduce[TResult, TCompleteResult, TInput, TOutput](
-    coll: ScalablyTyped.runtime.StringDictionary[TInput],
+    coll: org.scalablytyped.runtime.StringDictionary[TInput],
     xf: Transducer[js.Tuple2[java.lang.String, TInput], TOutput],
     f: CompletingTransformer[TResult, TCompleteResult, TOutput],
     init: TResult

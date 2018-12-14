@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lowdb/adapters/FileAsync", JSImport.Namespace)
 @js.native
 object adaptersFileAsyncMod
-  extends ScalablyTyped.runtime.TopLevel[lowdbLib.lowdbMod.LowdbNs.AdapterAsync[js.Any]]
+  extends org.scalablytyped.runtime.TopLevel[lowdbLib.lowdbMod.LowdbNs.AdapterAsync[js.Any]]
 

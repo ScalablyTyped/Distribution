@@ -12,7 +12,7 @@ object utilsModMembers extends js.Object {
   val GeneralPropTypes: reactDashFoundationLib.Anon_ShowForSrShowFor = js.native
   def addBreakpoint(prop: java.lang.String, size: java.lang.String): java.lang.String = js.native
   def createClassName(args: js.Any*): java.lang.String = js.native
-  def flexboxClassNames(props: FlexboxPropTypes): ScalablyTyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]] = js.native
+  def flexboxClassNames(props: FlexboxPropTypes): org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]] = js.native
   def generalClassNames(props: GeneralPropTypes): reactDashFoundationLib.Anon_Hideformediumonly = js.native
   def isDefined(value: js.Any): scala.Boolean = js.native
   def objectKeys(`object`: js.Object): js.Array[java.lang.String] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FormBuilder
-  extends ScalablyTyped.runtime.Instantiable2[/* name */ js.Any, /* object */ js.Any, js.Any] {
+  extends org.scalablytyped.runtime.Instantiable2[/* name */ js.Any, /* object */ js.Any, js.Any] {
   def checkbox(keypath: java.lang.String, value: js.Any, attributes: js.Any*): java.lang.String = js.native
   def close(): java.lang.String = js.native
   def hidden(keypath: java.lang.String, attributes: js.Any*): java.lang.String = js.native

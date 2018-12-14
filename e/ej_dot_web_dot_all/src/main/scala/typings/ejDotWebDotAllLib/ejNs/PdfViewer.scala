@@ -15,6 +15,10 @@ class PdfViewer protected () extends Widget {
   var defaults: ejDotWebDotAllLib.ejNs.PdfViewerNs.Model = js.native
   @JSName("model")
   var model_PdfViewer: ejDotWebDotAllLib.ejNs.PdfViewerNs.Model = js.native
+  /** Aborts the download operation.
+           * @returns {void}
+           */
+  def abortDownload(): scala.Unit = js.native
   /** Abort the printing function and restores the PDF viewer.
            * @returns {void}
            */
@@ -92,6 +96,11 @@ class PdfViewer protected () extends Widget {
            * @returns {void}
            */
   def searchText(targetText: java.lang.String): scala.Unit = js.native
+  /** Set the JSON data that are formed for rendering the document content in PDF viewer.
+           * @param {any} Set the JSON data that are formed for rendering the document content.
+           * @returns {void}
+           */
+  def setJSONData(jsonData: js.Any): scala.Unit = js.native
   /** Shows/hides the download tool in the toolbar.
            * @param {boolean} shows/hides download button in the toolbar
            * @returns {void}
@@ -127,6 +136,11 @@ class PdfViewer protected () extends Widget {
            * @returns {void}
            */
   def showTextMarkupAnnotationTools(show: scala.Boolean): scala.Unit = js.native
+  /** Shows/hides the search tool in the toolbar.
+           * @param {boolean} shows/hides search tool in the toolbar
+           * @returns {void}
+           */
+  def showTextSearchTool(show: scala.Boolean): scala.Unit = js.native
   /** Shows/hides the toolbar in the PDF viewer.
            * @param {boolean} shows/hides the toolbar
            * @returns {void}
@@ -140,6 +154,10 @@ class PdfViewer protected () extends Widget {
            * @returns {void}
            */
   def unload(): scala.Unit = js.native
+  /** Resize the viewer based on the parent element height.
+           * @returns {void}
+           */
+  def updateViewerSize(): scala.Unit = js.native
   /** Magnifies the page to the next value in the zoom drop down list.
            * @returns {void}
            */

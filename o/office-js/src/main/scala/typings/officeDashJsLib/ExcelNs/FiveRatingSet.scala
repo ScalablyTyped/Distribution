@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait FiveRatingSet
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Icon] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] {
   var fourBars: Icon
   var noBars: Icon
   var oneBar: Icon

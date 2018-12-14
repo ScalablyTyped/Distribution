@@ -17,5 +17,5 @@ trait NRF
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[NRF]
+org.scalablytyped.runtime.Instantiable0[NRF]
 

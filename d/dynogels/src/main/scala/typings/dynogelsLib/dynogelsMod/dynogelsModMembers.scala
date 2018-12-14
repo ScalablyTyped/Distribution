@@ -12,11 +12,11 @@ object dynogelsModMembers extends js.Object {
   var types: dynogelsLib.Anon_TimeUUID = js.native
   def Set(args: js.Any*): js.Any = js.native
   def createTables(callback: js.Function1[/* err */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def createTables(options: DynogelsGlobalOptions, callback: js.Function1[/* err */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def createTables(
-    options: ScalablyTyped.runtime.StringDictionary[CreateTablesOptions],
+    options: org.scalablytyped.runtime.StringDictionary[CreateTablesOptions],
     callback: js.Function1[/* err */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  def createTables(options: DynogelsGlobalOptions, callback: js.Function1[/* err */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def define(modelName: java.lang.String, config: ModelConfiguration): Model = js.native
   def dynamoDriver(dynamoDB: dynogelsLib.dynogelsMod.AWSNs.DynamoDB): dynogelsLib.dynogelsMod.AWSNs.DynamoDB = js.native
   def reset(): scala.Unit = js.native

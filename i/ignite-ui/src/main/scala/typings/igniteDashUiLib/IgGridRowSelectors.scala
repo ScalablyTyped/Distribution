@@ -10,7 +10,7 @@ trait IgGridRowSelectors
   extends /**
 	 * Option for igGridRowSelectors
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event fired after a row selector checkbox had changed state.
   	 */

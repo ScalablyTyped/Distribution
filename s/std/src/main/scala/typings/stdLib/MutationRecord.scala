@@ -49,5 +49,5 @@ trait MutationRecord extends js.Object {
 @JSGlobal("MutationRecord")
 @js.native
 object MutationRecord
-  extends ScalablyTyped.runtime.Instantiable0[MutationRecord]
+  extends org.scalablytyped.runtime.Instantiable0[MutationRecord]
 

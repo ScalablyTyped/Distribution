@@ -55,6 +55,6 @@ trait MSPointerEvent extends MouseEvent {
 @JSGlobal("MSPointerEvent")
 @js.native
 object MSPointerEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, MSPointerEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ PointerEventInit, MSPointerEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, MSPointerEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ PointerEventInit, MSPointerEvent]
 

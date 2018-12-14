@@ -12,10 +12,10 @@ class StorageItem protected () extends js.Object {
   val Attachments: Attachments = js.native
   var Body: java.lang.String = js.native
   val Class: OlObjectClass = js.native
-  val CreationTime: activexDashInteropLib.VarDate = js.native
+  val CreationTime: stdLib.VarDate = js.native
   var Creator: java.lang.String = js.native
   val EntryID: java.lang.String = js.native
-  val LastModificationTime: activexDashInteropLib.VarDate = js.native
+  val LastModificationTime: stdLib.VarDate = js.native
   var `Outlook.StorageItem_typekey`: StorageItem = js.native
   val Parent: js.Any = js.native
   val PropertyAccessor: PropertyAccessor = js.native

@@ -13,7 +13,7 @@ class DecoratorContainerSerializer ()
     ] {
   var serializeGroup: js.Any = js.native
   @JSName("serializeGroupSymbol")
-  var serializeGroupSymbol_DecoratorContainerSerializer: ScalablyTyped.runtime.Instantiable1[
+  var serializeGroupSymbol_DecoratorContainerSerializer: org.scalablytyped.runtime.Instantiable1[
     /* decorator */ typedocLib.distLibModelsReflectionsAbstractMod.Decorator, 
     typedocLib.distLibSerializationSerializersModelsDecoratorDashWrapperMod.DecoratorWrapper
   ] = js.native

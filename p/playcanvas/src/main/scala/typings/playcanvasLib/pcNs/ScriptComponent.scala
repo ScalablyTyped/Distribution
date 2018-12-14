@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ScriptComponent protected ()
   extends Component
-     with /* prop */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def this(system: ScriptComponentSystem, entity: Entity) = this()
   var scripts: js.Array[ScriptType] = js.native
   /**

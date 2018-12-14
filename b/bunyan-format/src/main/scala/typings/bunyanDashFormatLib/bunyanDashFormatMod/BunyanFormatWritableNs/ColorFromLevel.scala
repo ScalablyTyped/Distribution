@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ColorFromLevel
-  extends /* level */ ScalablyTyped.runtime.NumberDictionary[java.lang.String]
+  extends /* level */ org.scalablytyped.runtime.NumberDictionary[java.lang.String]
 

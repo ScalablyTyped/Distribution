@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SkipSelfDecorator
-  extends ScalablyTyped.runtime.Instantiable0[SkipSelf] {
+  extends org.scalablytyped.runtime.Instantiable0[SkipSelf] {
   /**
        * A constructor parameter decorator that tells the DI framework
        * that dependency resolution should start from the parent injector.

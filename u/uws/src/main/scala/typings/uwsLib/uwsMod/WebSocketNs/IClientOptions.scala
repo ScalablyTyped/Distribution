@@ -11,7 +11,7 @@ trait IClientOptions extends js.Object {
   var ca: js.UndefOr[js.Array[_]] = js.undefined
   var cert: js.UndefOr[js.Any] = js.undefined
   var ciphers: js.UndefOr[java.lang.String] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
   var key: js.UndefOr[js.Any] = js.undefined
   var origin: js.UndefOr[java.lang.String] = js.undefined

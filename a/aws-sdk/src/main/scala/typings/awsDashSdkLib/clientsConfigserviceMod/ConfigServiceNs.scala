@@ -1996,11 +1996,11 @@ object ConfigServiceNs extends js.Object {
   
   
   trait SupplementaryConfiguration
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[SupplementaryConfigurationValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[SupplementaryConfigurationValue]
   
   
   trait Tags
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
   
   @js.native
   trait Types

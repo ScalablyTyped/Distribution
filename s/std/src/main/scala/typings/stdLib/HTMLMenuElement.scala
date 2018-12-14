@@ -14,5 +14,5 @@ trait HTMLMenuElement extends HTMLElement {
 @JSGlobal("HTMLMenuElement")
 @js.native
 object HTMLMenuElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLMenuElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLMenuElement]
 

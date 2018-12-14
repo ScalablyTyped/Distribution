@@ -13,7 +13,7 @@ class default ()
 @JSImport("antd/lib/breadcrumb", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: ScalablyTyped.runtime.Instantiable0[antdLib.libBreadcrumbBreadcrumbItemMod.default] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[antdLib.libBreadcrumbBreadcrumbItemMod.default] = js.native
   var defaultProps: antdLib.Anon_PrefixClsSeparator = js.native
   var propTypes: antdLib.Anon_Routes = js.native
 }

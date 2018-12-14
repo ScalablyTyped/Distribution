@@ -12,7 +12,7 @@ trait PugOptions extends js.Object {
   var compileDebug: js.UndefOr[scala.Boolean] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var helperPath: js.UndefOr[
-    java.lang.String | (js.Array[java.lang.String | ScalablyTyped.runtime.StringDictionary[_]])
+    java.lang.String | (js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[_]])
   ] = js.undefined
   var locals: js.UndefOr[PugLocals] = js.undefined
   var noCache: js.UndefOr[scala.Boolean] = js.undefined

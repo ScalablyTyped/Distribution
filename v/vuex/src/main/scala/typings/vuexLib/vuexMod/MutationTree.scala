@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MutationTree[S]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Mutation[S]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Mutation[S]]
 

@@ -10,7 +10,7 @@ trait IgDataChartCrosshairPoint
   extends /**
 	 * Option for IgDataChartCrosshairPoint
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * The x coordinate.
   	 */

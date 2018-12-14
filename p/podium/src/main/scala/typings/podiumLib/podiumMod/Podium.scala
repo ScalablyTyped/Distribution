@@ -11,15 +11,15 @@ trait Podium
      * Creates a new podium emitter
      * @param events  if present, the value is passed to podium.registerEvent().
      */
-ScalablyTyped.runtime.Instantiable1[
-      (/* events */ js.Array[podiumLib.podiumMod.PodiumNs.Events]) | (/* events */ podiumLib.podiumMod.PodiumNs.Events), 
-      Podium
-    ]
+org.scalablytyped.runtime.Instantiable0[Podium]
      with /**
      * Creates a new podium emitter
      * @param events  if present, the value is passed to podium.registerEvent().
      */
-ScalablyTyped.runtime.Instantiable0[Podium] {
+org.scalablytyped.runtime.Instantiable1[
+      (/* events */ js.Array[podiumLib.podiumMod.PodiumNs.Events]) | (/* events */ podiumLib.podiumMod.PodiumNs.Events), 
+      Podium
+    ] {
   /**
        * podium.addListener(criteria, listener)
        * Same as podium.on()

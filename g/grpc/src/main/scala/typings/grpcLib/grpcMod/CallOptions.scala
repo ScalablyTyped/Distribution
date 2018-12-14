@@ -11,7 +11,7 @@ trait CallOptions
      * Additional custom call options. These can be used to pass additional
      * data per-call to client interceptors
      */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * The credentials that should be used to make this particular call.
        */

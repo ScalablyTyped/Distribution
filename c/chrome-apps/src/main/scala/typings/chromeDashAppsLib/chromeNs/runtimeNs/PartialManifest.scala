@@ -62,7 +62,7 @@ trait PartialManifest extends js.Object {
                * Use the commands API to add keyboard shortcuts that trigger actions in your app.
                * E.g. an action to open the browser action or send a command to the app.
                */
-  var commands: js.UndefOr[ScalablyTyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Suggestedkey]] = js.undefined
+  var commands: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Suggestedkey]] = js.undefined
   /**
                * An implementation detail (actually written by Chrome, not the app author).
                */
@@ -111,7 +111,7 @@ trait PartialManifest extends js.Object {
   /**
                * Triggers a launch of the app when one of these files are handled.
                */
-  var file_handlers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Extensions]] = js.undefined
+  var file_handlers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Extensions]] = js.undefined
   /**
                * Files app uses above information in order to render related UI elements approprietly.
                */
@@ -282,7 +282,7 @@ trait PartialManifest extends js.Object {
                * @see[Documentation]{@link https://developer.chrome.com/apps/manifest/url_handlers}
                *
                */
-  var url_handlers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Matches]] = js.undefined
+  var url_handlers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Matches]] = js.undefined
   /** The usbPrinters manifest property declares which USB printers are supported by an app using the printerProvider API. */
   var usb_printers: js.UndefOr[chromeDashAppsLib.Anon_FiltersArray] = js.undefined
   /**

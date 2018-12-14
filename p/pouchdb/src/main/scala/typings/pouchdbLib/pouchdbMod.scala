@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pouchdb", JSImport.Namespace)
 @js.native
 object pouchdbMod
-  extends ScalablyTyped.runtime.TopLevel[pouchdbDashAdapterDashFruitdownLib.PouchDBNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[pouchdbDashAdapterDashFruitdownLib.PouchDBNs.Static]
 

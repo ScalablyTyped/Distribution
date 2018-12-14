@@ -37,7 +37,7 @@ object highlightersNs extends js.Object {
   
   
   trait HighlighterArgumentsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Any]] {
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] {
     var addClass: AddClassHighlighterArguments
     var opacity: OpacityHighlighterArguments
     var stroke: StrokeHighlighterArguments

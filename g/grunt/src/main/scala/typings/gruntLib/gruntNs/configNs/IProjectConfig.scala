@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
          */
 
 trait IProjectConfig
-  extends /* plugin */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* plugin */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

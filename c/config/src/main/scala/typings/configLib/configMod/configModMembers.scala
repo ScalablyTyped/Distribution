@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("config", JSImport.Namespace)
 @js.native
 object configModMembers
-  extends ScalablyTyped.runtime.TopLevel[configLib.configMod.cNs.IConfig]
+  extends org.scalablytyped.runtime.TopLevel[configLib.configMod.cNs.IConfig]
 

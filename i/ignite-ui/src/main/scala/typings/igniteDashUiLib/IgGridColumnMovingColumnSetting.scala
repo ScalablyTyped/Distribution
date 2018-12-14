@@ -10,7 +10,7 @@ trait IgGridColumnMovingColumnSetting
   extends /**
 	 * Option for IgGridColumnMovingColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Allows the column to be moved.
   	 *

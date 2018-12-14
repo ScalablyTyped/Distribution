@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("enquire.js", JSImport.Namespace)
 @js.native
 object enquireDotJsModMembers
-  extends ScalablyTyped.runtime.TopLevel[EnquireJs]
+  extends org.scalablytyped.runtime.TopLevel[EnquireJs]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_INumber
-  extends ScalablyTyped.runtime.Instantiable0[INumber]
+  extends org.scalablytyped.runtime.Instantiable0[INumber]
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class StateQueueManager protected ()
   extends atUirouterCoreLib.libStateMod.StateQueueManager {
-  def this(router: atUirouterCoreLib.libRouterMod.UIRouter, states: ScalablyTyped.runtime.StringDictionary[atUirouterCoreLib.libStateStateObjectMod.StateObject], builder: atUirouterCoreLib.libStateStateBuilderMod.StateBuilder, listeners: js.Array[atUirouterCoreLib.libStateStateRegistryMod.StateRegistryListener]) = this()
+  def this(router: atUirouterCoreLib.libRouterMod.UIRouter, states: org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libStateStateObjectMod.StateObject], builder: atUirouterCoreLib.libStateStateBuilderMod.StateBuilder, listeners: js.Array[atUirouterCoreLib.libStateStateRegistryMod.StateRegistryListener]) = this()
 }
 

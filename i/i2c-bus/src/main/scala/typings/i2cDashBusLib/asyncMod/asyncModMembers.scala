@@ -488,50 +488,6 @@ object asyncModMembers extends js.Object {
     callback: AsyncResultArrayCallback[T, E]
   ): scala.Unit = js.native
   def transform[T, R, E](
-    arr: ScalablyTyped.runtime.StringDictionary[T],
-    acc: ScalablyTyped.runtime.StringDictionary[R],
-    iteratee: js.Function4[
-      /* acc */ ScalablyTyped.runtime.StringDictionary[R], 
-      /* item */ T, 
-      /* key */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def transform[T, R, E](
-    arr: ScalablyTyped.runtime.StringDictionary[T],
-    acc: ScalablyTyped.runtime.StringDictionary[R],
-    iteratee: js.Function4[
-      /* acc */ ScalablyTyped.runtime.StringDictionary[R], 
-      /* item */ T, 
-      /* key */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
-      scala.Unit
-    ],
-    callback: AsyncResultObjectCallback[T, E]
-  ): scala.Unit = js.native
-  def transform[T, R, E](
-    arr: ScalablyTyped.runtime.StringDictionary[T],
-    iteratee: js.Function4[
-      /* acc */ ScalablyTyped.runtime.StringDictionary[R], 
-      /* item */ T, 
-      /* key */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def transform[T, R, E](
-    arr: ScalablyTyped.runtime.StringDictionary[T],
-    iteratee: js.Function4[
-      /* acc */ ScalablyTyped.runtime.StringDictionary[R], 
-      /* item */ T, 
-      /* key */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
-      scala.Unit
-    ],
-    callback: AsyncResultObjectCallback[T, E]
-  ): scala.Unit = js.native
-  def transform[T, R, E](
     arr: js.Array[T],
     acc: js.Array[R],
     iteratee: js.Function4[
@@ -574,6 +530,50 @@ object asyncModMembers extends js.Object {
       scala.Unit
     ],
     callback: AsyncResultArrayCallback[T, E]
+  ): scala.Unit = js.native
+  def transform[T, R, E](
+    arr: org.scalablytyped.runtime.StringDictionary[T],
+    acc: org.scalablytyped.runtime.StringDictionary[R],
+    iteratee: js.Function4[
+      /* acc */ org.scalablytyped.runtime.StringDictionary[R], 
+      /* item */ T, 
+      /* key */ java.lang.String, 
+      /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def transform[T, R, E](
+    arr: org.scalablytyped.runtime.StringDictionary[T],
+    acc: org.scalablytyped.runtime.StringDictionary[R],
+    iteratee: js.Function4[
+      /* acc */ org.scalablytyped.runtime.StringDictionary[R], 
+      /* item */ T, 
+      /* key */ java.lang.String, 
+      /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
+      scala.Unit
+    ],
+    callback: AsyncResultObjectCallback[T, E]
+  ): scala.Unit = js.native
+  def transform[T, R, E](
+    arr: org.scalablytyped.runtime.StringDictionary[T],
+    iteratee: js.Function4[
+      /* acc */ org.scalablytyped.runtime.StringDictionary[R], 
+      /* item */ T, 
+      /* key */ java.lang.String, 
+      /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def transform[T, R, E](
+    arr: org.scalablytyped.runtime.StringDictionary[T],
+    iteratee: js.Function4[
+      /* acc */ org.scalablytyped.runtime.StringDictionary[R], 
+      /* item */ T, 
+      /* key */ java.lang.String, 
+      /* callback */ js.Function1[/* error */ js.UndefOr[E], scala.Unit], 
+      scala.Unit
+    ],
+    callback: AsyncResultObjectCallback[T, E]
   ): scala.Unit = js.native
   def unmemoize(fn: js.Function): js.Function = js.native
   def until[E](test: js.Function0[scala.Boolean], fn: AsyncVoidFunction[E], callback: ErrorCallback[E]): scala.Unit = js.native

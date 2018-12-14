@@ -42,7 +42,7 @@ trait uploaderConfig extends js.Object {
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var upload: js.UndefOr[java.lang.String] = js.undefined
-  var urlData: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var urlData: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var view: js.UndefOr[java.lang.String] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined

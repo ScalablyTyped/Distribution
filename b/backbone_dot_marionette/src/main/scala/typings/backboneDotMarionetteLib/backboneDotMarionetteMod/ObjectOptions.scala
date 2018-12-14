@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ObjectOptions
   extends RadioMixinOptions
-     with /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Initialize is called immediately after the Object has been instantiated,
        * and is invoked with the same arguments that the constructor received.

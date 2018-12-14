@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ISharedLinkPublicOperations
-  extends ScalablyTyped.runtime.Instantiable0[ISharedLinkPublicOperations]
+  extends org.scalablytyped.runtime.Instantiable0[ISharedLinkPublicOperations]
 

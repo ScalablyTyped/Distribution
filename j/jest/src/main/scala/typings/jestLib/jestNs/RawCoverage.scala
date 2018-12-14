@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RawCoverage
-  extends /* filePath */ ScalablyTyped.runtime.StringDictionary[RawFileCoverage]
+  extends /* filePath */ org.scalablytyped.runtime.StringDictionary[RawFileCoverage]
 

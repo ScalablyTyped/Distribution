@@ -10,7 +10,7 @@ trait IgVideoPlayerBookmark
   extends /**
 	 * Option for IgVideoPlayerBookmark
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets whether the bookmark is disabled or not.
   	 *

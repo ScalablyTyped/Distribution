@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PackageList[T]
-  extends /* packageName */ ScalablyTyped.runtime.StringDictionary[T]
+  extends /* packageName */ org.scalablytyped.runtime.StringDictionary[T]
 

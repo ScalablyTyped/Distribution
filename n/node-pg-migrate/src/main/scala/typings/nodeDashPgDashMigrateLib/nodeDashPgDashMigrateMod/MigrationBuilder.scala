@@ -28,8 +28,8 @@ trait MigrationBuilder extends js.Object {
   def addIndex(tableName: Name, columns: js.Array[java.lang.String]): scala.Unit = js.native
   def addIndex(tableName: Name, columns: js.Array[java.lang.String], options: CreateIndexOptions): scala.Unit = js.native
   def addToOperatorFamily(operatorFamilyName: Name, indexMethod: Name, operatorList: OperatorListDefinition): scala.Unit = js.native
-  def addType(typeName: Name, values: ScalablyTyped.runtime.StringDictionary[Type]): scala.Unit = js.native
   def addType(typeName: Name, values: js.Array[Value]): scala.Unit = js.native
+  def addType(typeName: Name, values: org.scalablytyped.runtime.StringDictionary[Type]): scala.Unit = js.native
   def addTypeAttribute(typeName: Name, attributeName: java.lang.String, attributeType: Type): scala.Unit = js.native
   def addTypeValue(typeName: Name, value: Value): scala.Unit = js.native
   def addTypeValue(typeName: Name, value: Value, options: nodeDashPgDashMigrateLib.Anon_IfNotExistsAfter): scala.Unit = js.native
@@ -111,22 +111,30 @@ trait MigrationBuilder extends js.Object {
   // Triggers
   def createTrigger(tableName: Name, triggerName: Name, triggerOptions: TriggerOptions, definition: Value): scala.Unit = js.native
   // Types
-  def createType(typeName: Name, values: ScalablyTyped.runtime.StringDictionary[Type]): scala.Unit = js.native
-  // Types
   def createType(typeName: Name, values: js.Array[Value]): scala.Unit = js.native
+  // Types
+  def createType(typeName: Name, values: org.scalablytyped.runtime.StringDictionary[Type]): scala.Unit = js.native
   def createView(viewName: Name, options: CreateViewOptions, definition: java.lang.String): scala.Unit = js.native
-  def dropColumn(tableName: Name, columns: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def dropColumn(tableName: Name, columns: ScalablyTyped.runtime.StringDictionary[js.Any], dropOptions: DropOptions): scala.Unit = js.native
   def dropColumn(tableName: Name, columns: java.lang.String): scala.Unit = js.native
   def dropColumn(tableName: Name, columns: java.lang.String, dropOptions: DropOptions): scala.Unit = js.native
   def dropColumn(tableName: Name, columns: js.Array[java.lang.String]): scala.Unit = js.native
   def dropColumn(tableName: Name, columns: js.Array[java.lang.String], dropOptions: DropOptions): scala.Unit = js.native
-  def dropColumns(tableName: Name, columns: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def dropColumns(tableName: Name, columns: ScalablyTyped.runtime.StringDictionary[js.Any], dropOptions: DropOptions): scala.Unit = js.native
+  def dropColumn(tableName: Name, columns: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def dropColumn(
+    tableName: Name,
+    columns: org.scalablytyped.runtime.StringDictionary[js.Any],
+    dropOptions: DropOptions
+  ): scala.Unit = js.native
   def dropColumns(tableName: Name, columns: java.lang.String): scala.Unit = js.native
   def dropColumns(tableName: Name, columns: java.lang.String, dropOptions: DropOptions): scala.Unit = js.native
   def dropColumns(tableName: Name, columns: js.Array[java.lang.String]): scala.Unit = js.native
   def dropColumns(tableName: Name, columns: js.Array[java.lang.String], dropOptions: DropOptions): scala.Unit = js.native
+  def dropColumns(tableName: Name, columns: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def dropColumns(
+    tableName: Name,
+    columns: org.scalablytyped.runtime.StringDictionary[js.Any],
+    dropOptions: DropOptions
+  ): scala.Unit = js.native
   def dropConstraint(tableName: Name, constraintName: java.lang.String): scala.Unit = js.native
   def dropConstraint(tableName: Name, constraintName: java.lang.String, options: DropOptions): scala.Unit = js.native
   def dropDomain(domainName: Name): scala.Unit = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Base
   extends /** Need to allow all properties for callback methods. */
-/* prop */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /* polymer-standard */
   
   
@@ -118,7 +118,7 @@ trait Base
   /* polymer-micro */
   
   // Attributes
-  var hostAttributes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var hostAttributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var importHref: js.UndefOr[
     js.Function3[
       /* href */ java.lang.String, 
@@ -146,7 +146,7 @@ trait Base
     ]
   ] = js.undefined
   // Events
-  var listeners: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var listeners: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var mixin: js.UndefOr[js.Function2[/* target */ js.Object, /* source */ js.Object, js.Object]] = js.undefined
   // NotifyPath
   var notifyPath: js.UndefOr[
@@ -158,7 +158,7 @@ trait Base
   var observers: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var pop: js.UndefOr[js.Function1[/* path */ java.lang.String, _]] = js.undefined
   // Properties
-  var properties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[PropConstructorType | PropObjectType]] = js.undefined
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[PropConstructorType | PropObjectType]] = js.undefined
   var push: js.UndefOr[js.Function2[/* path */ java.lang.String, /* repeated */js.Any, scala.Double]] = js.undefined
   /* polymer-mini */
   
@@ -255,7 +255,7 @@ trait Base
   // XStyling
   var updateStyles: js.UndefOr[
     js.Function1[
-      /* styles */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]], 
+      /* styles */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]], 
       scala.Unit
     ]
   ] = js.undefined

@@ -18,7 +18,7 @@ trait JQueryStatic extends js.Object {
   /**
        * A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
        */
-  def cookie(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def cookie(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
        * Gets a cookie by name
        * @param name The name of the cookie to get

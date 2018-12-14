@@ -11,7 +11,7 @@ trait NativeSVGAttributes
      with SVGPresentationAttributes
      with SVGConditionalProcessingAttributes
      with SVGXLinkAttributes
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var `class`: js.UndefOr[java.lang.String] = js.undefined
   var externalResourcesRequired: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined

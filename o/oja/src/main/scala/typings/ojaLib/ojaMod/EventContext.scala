@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("oja", "EventContext")
 @js.native
 class EventContext ()
-  extends ScalablyTyped.runtime.Instantiable1[(/* context */ EventContext) | (/* context */ js.Object), EventContext] {
+  extends org.scalablytyped.runtime.Instantiable1[(/* context */ EventContext) | (/* context */ js.Object), EventContext] {
   def emit(name: java.lang.String, value: js.Any): this.type = js.native
   def get(name: java.lang.String): js.Any = js.native
   def on(`type`: java.lang.String, handler: js.Function1[/* event */ js.Any, scala.Unit]): this.type = js.native

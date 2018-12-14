@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-popup", JSImport.Namespace)
 @js.native
 object semanticDashUiDashPopupMod
-  extends ScalablyTyped.runtime.TopLevel[semanticDashUiDashPopupLib.SemanticUINs.Popup]
+  extends org.scalablytyped.runtime.TopLevel[semanticDashUiDashPopupLib.SemanticUINs.Popup]
 

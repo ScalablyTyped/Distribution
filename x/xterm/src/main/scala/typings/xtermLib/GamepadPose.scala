@@ -20,5 +20,5 @@ trait GamepadPose extends js.Object {
 @JSGlobal("GamepadPose")
 @js.native
 object GamepadPose
-  extends ScalablyTyped.runtime.Instantiable0[GamepadPose]
+  extends org.scalablytyped.runtime.Instantiable0[GamepadPose]
 

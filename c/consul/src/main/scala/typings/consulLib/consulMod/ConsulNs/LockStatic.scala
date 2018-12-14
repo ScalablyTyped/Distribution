@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LockStatic
-  extends ScalablyTyped.runtime.Instantiable2[/* consul */ Consul, /* opts */ consulLib.consulMod.ConsulNs.LockNs.Options, Lock]
+  extends org.scalablytyped.runtime.Instantiable2[/* consul */ Consul, /* opts */ consulLib.consulMod.ConsulNs.LockNs.Options, Lock]
 

@@ -371,7 +371,7 @@ trait LoopBackApplication
                * ``
                *  @returns {Array} Array of model classes
                */
-  def models(): js.Array[ScalablyTyped.runtime.Instantiable1[/* data */ js.Any, Model]] = js.native
+  def models(): js.Array[org.scalablytyped.runtime.Instantiable1[/* data */ js.Any, Model]] = js.native
   /**
                * Get all remote objects.
                * @returns {any} [Remote objects](apidocs.strongloop.com/strong-remoting/#remoteObjectsoptions).

@@ -119,5 +119,5 @@ trait HTMLAnchorElement
 @JSGlobal("HTMLAnchorElement")
 @js.native
 object HTMLAnchorElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLAnchorElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLAnchorElement]
 

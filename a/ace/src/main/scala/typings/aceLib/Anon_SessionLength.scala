@@ -15,7 +15,7 @@ trait Anon_SessionLength
          * - @param mainClass (String):
          * - @param othersClass (String):
         **/
-ScalablyTyped.runtime.Instantiable6[
+org.scalablytyped.runtime.Instantiable6[
       /* session */ aceLib.AceAjaxNs.Document, 
       /* length */ scala.Double, 
       /* pos */ scala.Double, 
@@ -24,7 +24,7 @@ ScalablyTyped.runtime.Instantiable6[
       /* othersClass */ java.lang.String, 
       aceLib.AceAjaxNs.PlaceHolder
     ]
-     with ScalablyTyped.runtime.Instantiable4[
+     with org.scalablytyped.runtime.Instantiable4[
       /* session */ aceLib.AceAjaxNs.IEditSession, 
       /* length */ scala.Double, 
       /* pos */ aceLib.AceAjaxNs.Position, 

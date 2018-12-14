@@ -19,7 +19,7 @@ trait Anon_ErrorExistsAndShouldBeVisible extends js.Object {
   			 * like in this example.
   			 */
   var messages: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[angularDashFormlyLib.AngularFormlyNs.IExpressionFunction | java.lang.String]
+    org.scalablytyped.runtime.StringDictionary[angularDashFormlyLib.AngularFormlyNs.IExpressionFunction | java.lang.String]
   ] = js.undefined
   /**
   			 * A boolean you as the developer can set to specify to force options.validation.errorExistsAndShouldBeVisible

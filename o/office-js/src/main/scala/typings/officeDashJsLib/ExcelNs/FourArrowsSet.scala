@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait FourArrowsSet
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Icon] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] {
   var greenUpArrow: Icon
   var redDownArrow: Icon
   var yellowDownInclineArrow: Icon

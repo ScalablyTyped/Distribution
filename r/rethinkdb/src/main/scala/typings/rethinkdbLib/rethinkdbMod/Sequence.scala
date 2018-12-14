@@ -51,7 +51,7 @@ trait Sequence
   def eqJoin(leftAttribute: java.lang.String, rightSequence: Sequence, index: Index): Sequence = js.native
   def eqJoin(leftAttribute: ExpressionFunction[_], rightSequence: Sequence): Sequence = js.native
   def eqJoin(leftAttribute: ExpressionFunction[_], rightSequence: Sequence, index: Index): Sequence = js.native
-  def filter(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): Sequence = js.native
+  def filter(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): Sequence = js.native
   def filter(rql: Expression[scala.Boolean]): Sequence = js.native
   def filter(rql: ExpressionFunction[scala.Boolean]): Sequence = js.native
   def getField(prop: java.lang.String): Sequence = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SplitChunksOptions extends js.Object {
   /** Assign modules to a cache group (modules from different cache groups are tried to keep in separate chunks) */
   var cacheGroups: js.UndefOr[
-    webpackLib.webpackLibNumbers.`false` | java.lang.String | (js.Function1[/* repeated */js.Any, _]) | stdLib.RegExp | (ScalablyTyped.runtime.StringDictionary[CacheGroupsOptions | webpackLib.webpackLibNumbers.`false`])
+    webpackLib.webpackLibNumbers.`false` | java.lang.String | (js.Function1[/* repeated */js.Any, _]) | stdLib.RegExp | (org.scalablytyped.runtime.StringDictionary[CacheGroupsOptions | webpackLib.webpackLibNumbers.`false`])
   ] = js.undefined
   /** Select chunks for determining shared modules (defaults to \"async\", \"initial\" and \"all\" requires adding these chunks to the HTML) */
   var chunks: js.UndefOr[

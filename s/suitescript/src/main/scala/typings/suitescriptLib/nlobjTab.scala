@@ -18,7 +18,7 @@ trait nlobjTab
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * set helper text for this tab or subtab.
        *

@@ -51,7 +51,7 @@ object reduxDashDoghouseModMembers extends js.Object {
   def scopeActionCreators[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */](actionCreator: A, scopeID: scala.Double): A = js.native
   def scopeReducers(): reduxLib.reduxMod.Reducer[_, reduxLib.reduxMod.AnyAction] = js.native
   def scopeReducers(
-    reducers: ScalablyTyped.runtime.StringDictionary[reduxLib.reduxMod.Reducer[_, reduxLib.reduxMod.AnyAction]]
+    reducers: org.scalablytyped.runtime.StringDictionary[reduxLib.reduxMod.Reducer[_, reduxLib.reduxMod.AnyAction]]
   ): reduxLib.reduxMod.Reducer[_, reduxLib.reduxMod.AnyAction] = js.native
 }
 

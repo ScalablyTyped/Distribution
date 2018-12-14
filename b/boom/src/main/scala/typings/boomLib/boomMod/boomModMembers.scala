@@ -724,16 +724,16 @@ object boomModMembers extends js.Object {
   def unauthorized(
     message: java.lang.String,
     scheme: java.lang.String,
-    attributes: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): Boom[scala.Null] = js.native
   def unauthorized(message: java.lang.String, scheme: js.Array[java.lang.String]): Boom[scala.Null] = js.native
   def unauthorized(message: scala.Null, scheme: java.lang.String): Boom[scala.Null] = js.native
+  def unauthorized(message: scala.Null, scheme: java.lang.String, attributes: java.lang.String): Boom[scala.Null] = js.native
   def unauthorized(
     message: scala.Null,
     scheme: java.lang.String,
-    attributes: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): Boom[scala.Null] = js.native
-  def unauthorized(message: scala.Null, scheme: java.lang.String, attributes: java.lang.String): Boom[scala.Null] = js.native
   /**
        * Returns a 415 Unsupported Media Type error
        * @param message optional message.

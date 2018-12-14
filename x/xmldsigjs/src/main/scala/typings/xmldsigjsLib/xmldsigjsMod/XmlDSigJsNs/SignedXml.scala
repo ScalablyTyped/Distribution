@@ -36,7 +36,7 @@ trait SignedXml
            * Injects namespaces from dictionary to the target element
            */
   /* protected */ def InjectNamespaces(
-    namespaces: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    namespaces: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     target: stdLib.Element,
     ignoreDefault: scala.Boolean
   ): scala.Unit = js.native

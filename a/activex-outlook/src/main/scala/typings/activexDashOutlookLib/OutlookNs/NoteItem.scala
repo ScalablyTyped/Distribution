@@ -15,14 +15,14 @@ class NoteItem protected () extends js.Object {
   val Class: OlObjectClass = js.native
   var Color: OlNoteColor = js.native
   val Conflicts: Conflicts = js.native
-  val CreationTime: activexDashInteropLib.VarDate = js.native
+  val CreationTime: stdLib.VarDate = js.native
   val DownloadState: OlDownloadState = js.native
   val EntryID: java.lang.String = js.native
   val GetInspector: Inspector = js.native
   var Height: scala.Double = js.native
   val IsConflict: scala.Boolean = js.native
   val ItemProperties: ItemProperties = js.native
-  val LastModificationTime: activexDashInteropLib.VarDate = js.native
+  val LastModificationTime: stdLib.VarDate = js.native
   var Left: scala.Double = js.native
   val Links: Links = js.native
   var MarkForDownload: OlRemoteStatus = js.native

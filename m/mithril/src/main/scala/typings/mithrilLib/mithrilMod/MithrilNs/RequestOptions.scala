@@ -26,7 +26,7 @@ trait RequestOptions[T] extends js.Object {
   /** A hook to specify how the XMLHttpRequest response should be read. Useful for reading response headers and cookies. Defaults to a function that returns xhr.responseText */
   var extract: js.UndefOr[js.Function2[/* xhr */ stdLib.XMLHttpRequest, /* options */ this.type, T]] = js.undefined
   /** Headers to append to the request before sending it. */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** The HTTP method to use. */
   var method: js.UndefOr[java.lang.String] = js.undefined
   /** A password for HTTP authorization. */
@@ -34,7 +34,7 @@ trait RequestOptions[T] extends js.Object {
   /** A serialization method to be applied to data. Defaults to JSON.stringify, or if options.data is an instance of FormData, defaults to the identity function. */
   var serialize: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.undefined
   /** A constructor to be applied to each object in the response. */
-  var `type`: js.UndefOr[ScalablyTyped.runtime.Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
+  var `type`: js.UndefOr[org.scalablytyped.runtime.Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
   /**
   		 * Force the use of the HTTP body section for data in GET requests when set to true,
   		 * or the use of querystring for other HTTP methods when set to false.

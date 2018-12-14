@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ActionObject
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var copy: js.UndefOr[expressLib.expressMod.eNs.RequestHandler] = js.undefined
   var del: js.UndefOr[expressLib.expressMod.eNs.RequestHandler] = js.undefined
   var delete: js.UndefOr[expressLib.expressMod.eNs.RequestHandler] = js.undefined

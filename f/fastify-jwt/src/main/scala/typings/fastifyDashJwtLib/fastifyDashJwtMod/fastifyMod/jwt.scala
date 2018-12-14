@@ -12,8 +12,8 @@ trait jwt extends js.Object {
   var sign_Original: SignFunction = js.native
   @JSName("verify")
   var verify_Original: VerifyFunction = js.native
-  def decode(token: java.lang.String): scala.Null | ScalablyTyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
-  def decode(token: java.lang.String, options: jsonwebtokenLib.jsonwebtokenMod.DecodeOptions): scala.Null | ScalablyTyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
+  def decode(token: java.lang.String): scala.Null | org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
+  def decode(token: java.lang.String, options: jsonwebtokenLib.jsonwebtokenMod.DecodeOptions): scala.Null | org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String = js.native
   def sign(payload: java.lang.String): java.lang.String = js.native
   def sign(payload: java.lang.String, options: jsonwebtokenLib.jsonwebtokenMod.SignOptions): java.lang.String = js.native
   def sign(

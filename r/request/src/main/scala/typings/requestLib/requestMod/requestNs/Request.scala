@@ -38,7 +38,7 @@ trait Request
   var method: java.lang.String = js.native
   var passphrase: js.UndefOr[java.lang.String] = js.native
   var path: java.lang.String = js.native
-  var pool: requestLib.requestLibNumbers.`false` | (ScalablyTyped.runtime.StringDictionary[nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent]) = js.native
+  var pool: requestLib.requestLibNumbers.`false` | (org.scalablytyped.runtime.StringDictionary[nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent]) = js.native
   var port: js.UndefOr[scala.Double] = js.native
   var postambleCRLF: js.UndefOr[scala.Boolean] = js.native
   var preambleCRLF: js.UndefOr[scala.Boolean] = js.native

@@ -28,12 +28,12 @@ object effectsModMembers extends js.Object {
   val takem: js.Function1[/* pattern */ js.UndefOr[Pattern], TakeEffect] = js.native
   def actionChannel(pattern: Pattern): ActionChannelEffect = js.native
   def actionChannel(pattern: Pattern, buffer: reduxDashSagaLib.reduxDashSagaMod.Buffer[reduxLib.reduxMod.Action[_]]): ActionChannelEffect = js.native
-  def all(effects: ScalablyTyped.runtime.StringDictionary[Effect]): AllEffect = js.native
   def all(effects: js.Array[Effect]): AllEffect = js.native
-  @JSName("all")
-  def all_TGenericAllEffect[T](effects: ScalablyTyped.runtime.StringDictionary[T]): GenericAllEffect[T] = js.native
+  def all(effects: org.scalablytyped.runtime.StringDictionary[Effect]): AllEffect = js.native
   @JSName("all")
   def all_TGenericAllEffect[T](effects: js.Array[T]): GenericAllEffect[T] = js.native
+  @JSName("all")
+  def all_TGenericAllEffect[T](effects: org.scalablytyped.runtime.StringDictionary[T]): GenericAllEffect[T] = js.native
   @JSName("apply")
   def apply(context: js.Any, fn: Func0): CallEffect = js.native
   @JSName("apply")
@@ -100,9 +100,9 @@ object effectsModMembers extends js.Object {
     tasks: reduxDashSagaLib.reduxDashSagaMod.Task*
   ): js.Array[JoinEffect] = js.native
   def join(task: reduxDashSagaLib.reduxDashSagaMod.Task): JoinEffect = js.native
-  def race(effects: ScalablyTyped.runtime.StringDictionary[Effect]): RaceEffect = js.native
+  def race(effects: org.scalablytyped.runtime.StringDictionary[Effect]): RaceEffect = js.native
   @JSName("race")
-  def race_TGenericRaceEffect[T](effects: ScalablyTyped.runtime.StringDictionary[T]): GenericRaceEffect[T] = js.native
+  def race_TGenericRaceEffect[T](effects: org.scalablytyped.runtime.StringDictionary[T]): GenericRaceEffect[T] = js.native
   def select(): SelectEffect = js.native
   def select[S](selector: Func1[S]): SelectEffect = js.native
   def select[S, T1](selector: Func2[S, T1], arg1: T1): SelectEffect = js.native

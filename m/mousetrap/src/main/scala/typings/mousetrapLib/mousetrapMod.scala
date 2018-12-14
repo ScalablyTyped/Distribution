@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mousetrap", JSImport.Namespace)
 @js.native
 object mousetrapMod
-  extends ScalablyTyped.runtime.TopLevel[MousetrapStatic]
+  extends org.scalablytyped.runtime.TopLevel[MousetrapStatic]
 

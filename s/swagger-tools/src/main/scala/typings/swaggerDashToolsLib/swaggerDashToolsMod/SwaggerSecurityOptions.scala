@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SwaggerSecurityOptions
-  extends /* securityDefinitionName */ ScalablyTyped.runtime.StringDictionary[SwaggerSecurityHandler]
+  extends /* securityDefinitionName */ org.scalablytyped.runtime.StringDictionary[SwaggerSecurityHandler]
 

@@ -2733,7 +2733,7 @@ object ioBrokerNs extends js.Object {
   ]
   type GetEnumsCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
-    /* result */ ScalablyTyped.runtime.StringDictionary[stdLib.Record[java.lang.String, Enum]], 
+    /* result */ org.scalablytyped.runtime.StringDictionary[stdLib.Record[java.lang.String, Enum]], 
     scala.Unit
   ]
   type GetHistoryCallback = js.Function4[
@@ -2803,7 +2803,7 @@ object ioBrokerNs extends js.Object {
   type Object = StateObject | ChannelObject | DeviceObject | OtherObject
   type ObjectChangeHandler = js.Function2[/* id */ java.lang.String, /* obj */ js.UndefOr[Object | scala.Null], scala.Unit]
   type ObjectType = iobrokerLib.iobrokerLibStrings.state | iobrokerLib.iobrokerLibStrings.channel | iobrokerLib.iobrokerLibStrings.device
-  type OtherCommon = ObjectCommon with ScalablyTyped.runtime.StringDictionary[js.Any]
+  type OtherCommon = ObjectCommon with org.scalablytyped.runtime.StringDictionary[js.Any]
   type PartialObject = PartialStateObject | PartialChannelObject | PartialDeviceObject | PartialOtherObject
   type ReadDirCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 

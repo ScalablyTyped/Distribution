@@ -16,7 +16,7 @@ trait httpCRs
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[httpCRs] {
+org.scalablytyped.runtime.Instantiable0[httpCRs] {
   /**
        * <p>Return how many bytes are available to read. If there is a &#39;data&#39; event handler, this will always return 0.</p>
        * 

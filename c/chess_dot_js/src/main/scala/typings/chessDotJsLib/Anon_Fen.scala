@@ -12,13 +12,13 @@ trait Anon_Fen
      * the board configuration in Forsyth-Edwards Notation.
      * @param fen specifies the board configuration in Forsyth-Edwards Notation.
      */
-ScalablyTyped.runtime.Instantiable0[chessDotJsLib.chessDotJsMod.ChessInstance]
+org.scalablytyped.runtime.Instantiable0[chessDotJsLib.chessDotJsMod.ChessInstance]
      with /**
      * The Chess() constructor takes an optional parameter which specifies
      * the board configuration in Forsyth-Edwards Notation.
      * @param fen specifies the board configuration in Forsyth-Edwards Notation.
      */
-ScalablyTyped.runtime.Instantiable1[/* fen */ java.lang.String, chessDotJsLib.chessDotJsMod.ChessInstance] {
+org.scalablytyped.runtime.Instantiable1[/* fen */ java.lang.String, chessDotJsLib.chessDotJsMod.ChessInstance] {
   /**
        * The Chess() constructor takes an optional parameter which specifies
        * the board configuration in Forsyth-Edwards Notation.

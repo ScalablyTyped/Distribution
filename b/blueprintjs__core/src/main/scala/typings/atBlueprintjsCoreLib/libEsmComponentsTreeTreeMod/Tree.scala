@@ -44,7 +44,7 @@ object Tree extends js.Object {
     path: js.Array[scala.Double],
     treeNodes: js.Array[atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNode[js.Object]]
   ): atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNode[js.Object] = js.native
-  def ofType[T](): ScalablyTyped.runtime.Instantiable1[
+  def ofType[T](): org.scalablytyped.runtime.Instantiable1[
     /* props */ atBlueprintjsCoreLib.libEsmComponentsTreeTreeMod.ITreeProps[T], 
     atBlueprintjsCoreLib.libEsmComponentsTreeTreeMod.Tree[T]
   ] = js.native

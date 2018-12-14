@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("color", JSImport.Namespace)
 @js.native
 object colorModMembers
-  extends ScalablyTyped.runtime.TopLevel[ColorConstructor]
+  extends org.scalablytyped.runtime.TopLevel[ColorConstructor]
 

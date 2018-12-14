@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PublishParameters
-  extends /* property */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* property */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

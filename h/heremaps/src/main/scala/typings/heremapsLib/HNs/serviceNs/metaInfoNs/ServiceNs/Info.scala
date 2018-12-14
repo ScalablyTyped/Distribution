@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation._
                  */
 
 trait Info extends js.Object {
-  var formats: ScalablyTyped.runtime.StringDictionary[js.Any]
-  var languages: ScalablyTyped.runtime.StringDictionary[js.Any]
-  var maps: ScalablyTyped.runtime.StringDictionary[js.Any]
-  var resolutions: ScalablyTyped.runtime.StringDictionary[js.Any]
-  var schemes: ScalablyTyped.runtime.StringDictionary[js.Any]
-  var tiletypes: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var formats: org.scalablytyped.runtime.StringDictionary[js.Any]
+  var languages: org.scalablytyped.runtime.StringDictionary[js.Any]
+  var maps: org.scalablytyped.runtime.StringDictionary[js.Any]
+  var resolutions: org.scalablytyped.runtime.StringDictionary[js.Any]
+  var schemes: org.scalablytyped.runtime.StringDictionary[js.Any]
+  var tiletypes: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

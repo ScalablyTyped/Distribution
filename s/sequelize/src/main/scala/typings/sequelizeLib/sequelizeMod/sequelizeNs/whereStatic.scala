@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait whereStatic
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* attr */ js.Object, 
       (/* logic */ java.lang.String) | (/* logic */ js.Object), 
       where
@@ -30,7 +30,7 @@ trait whereStatic
          * @param logic The condition. Can be both a simply type, or a further condition (`.or`, `.and`, `.literal`
          *     etc.)
          */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* attr */ js.Object, 
       /* comparator */ java.lang.String, 
       (/* logic */ java.lang.String) | (/* logic */ js.Object), 

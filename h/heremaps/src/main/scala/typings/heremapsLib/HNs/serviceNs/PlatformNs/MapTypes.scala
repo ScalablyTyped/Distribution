@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
              */
 
 trait MapTypes
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[heremapsLib.HNs.serviceNs.MapType]] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[heremapsLib.HNs.serviceNs.MapType]] {
   var normal: js.UndefOr[heremapsLib.HNs.serviceNs.MapType] = js.undefined
   var satellite: js.UndefOr[heremapsLib.HNs.serviceNs.MapType] = js.undefined
   var terrain: js.UndefOr[heremapsLib.HNs.serviceNs.MapType] = js.undefined

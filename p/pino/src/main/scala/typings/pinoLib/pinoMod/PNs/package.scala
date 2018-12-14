@@ -15,7 +15,7 @@ package object PNs {
     scala.Unit
   ]
   type LevelWithSilent = Level | pinoLib.pinoLibStrings.silent
-  type Logger = BaseLogger with ScalablyTyped.runtime.StringDictionary[LogFn]
+  type Logger = BaseLogger with org.scalablytyped.runtime.StringDictionary[LogFn]
   type SerializerFn = js.Function1[/* value */ js.Any, js.Any]
   type TimeFn = js.Function0[java.lang.String]
   type WriteFn = js.Function1[/* o */ js.Object, scala.Unit]

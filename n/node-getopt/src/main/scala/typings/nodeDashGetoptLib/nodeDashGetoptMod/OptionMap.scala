@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait OptionMap
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | scala.Boolean]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | scala.Boolean]
 

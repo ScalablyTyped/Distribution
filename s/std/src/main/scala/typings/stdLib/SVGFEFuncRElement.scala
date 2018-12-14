@@ -11,5 +11,5 @@ trait SVGFEFuncRElement extends SVGComponentTransferFunctionElement
 @JSGlobal("SVGFEFuncRElement")
 @js.native
 object SVGFEFuncRElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEFuncRElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEFuncRElement]
 

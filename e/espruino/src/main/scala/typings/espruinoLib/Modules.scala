@@ -16,5 +16,5 @@ trait Modules
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[Modules]
+org.scalablytyped.runtime.Instantiable0[Modules]
 

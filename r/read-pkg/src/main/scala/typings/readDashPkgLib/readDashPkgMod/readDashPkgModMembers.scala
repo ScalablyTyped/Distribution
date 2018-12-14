@@ -26,12 +26,12 @@ object readDashPkgModMembers extends js.Object {
     normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package
   ] = js.native
   def sync(): normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package = js.native
-  def sync(options: readDashPkgLib.readDashPkgMod.ReadPkgNs.Options with readDashPkgLib.Anon_Normalize): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def sync(options: readDashPkgLib.readDashPkgMod.ReadPkgNs.Options with readDashPkgLib.Anon_Normalize): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def sync(path: java.lang.String): normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package = js.native
   def sync(
     path: java.lang.String,
     options: readDashPkgLib.readDashPkgMod.ReadPkgNs.Options with readDashPkgLib.Anon_Normalize
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("sync")
   def sync_Package(options: readDashPkgLib.readDashPkgMod.ReadPkgNs.Options): normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package = js.native
   @JSName("sync")

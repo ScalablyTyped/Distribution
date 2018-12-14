@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("chartist", JSImport.Namespace)
 @js.native
 object chartistModMembers
-  extends ScalablyTyped.runtime.TopLevel[chartistLib.chartistMod.ChartistNs.ChartistStatic]
+  extends org.scalablytyped.runtime.TopLevel[chartistLib.chartistMod.ChartistNs.ChartistStatic]
 

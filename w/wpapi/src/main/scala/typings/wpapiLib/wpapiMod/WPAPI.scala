@@ -17,7 +17,7 @@ trait WPAPI
      * .products(). They are usually decided by WPAPI namespaces configuration
      * object. They have WPRequest return type.
      */
-/* customRoutesMethod */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* customRoutesMethod */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Set the authentication to use for a WPAPI site handler instance. Accepts
        * basic HTTP authentication credentials (string username & password) or a

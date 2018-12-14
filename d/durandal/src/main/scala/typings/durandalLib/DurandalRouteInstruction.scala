@@ -10,7 +10,7 @@ trait DurandalRouteInstruction extends js.Object {
   var config: DurandalRouteConfiguration
   var fragment: java.lang.String
   var params: js.Array[_]
-  var queryParams: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var queryParams: org.scalablytyped.runtime.StringDictionary[js.Any]
   var queryString: java.lang.String
 }
 

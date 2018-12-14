@@ -10,7 +10,7 @@ trait IgGridGroupByLocale
   extends /**
 	 * Option for IgGridGroupByLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies the collapse groups button tooltip.
   	 *

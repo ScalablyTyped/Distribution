@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SharedState
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[State]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[State]
 

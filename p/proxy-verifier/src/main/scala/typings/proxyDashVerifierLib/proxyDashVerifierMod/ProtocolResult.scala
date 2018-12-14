@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ProtocolResult
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Result]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Result]
 

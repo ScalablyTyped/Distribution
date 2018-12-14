@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait SVGLengthList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[SVGLength] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[SVGLength] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[SVGLength]]
   val length: scala.Double
   val numberOfItems: scala.Double
@@ -24,5 +24,5 @@ trait SVGLengthList
 @JSGlobal("SVGLengthList")
 @js.native
 object SVGLengthList
-  extends ScalablyTyped.runtime.Instantiable0[SVGLengthList]
+  extends org.scalablytyped.runtime.Instantiable0[SVGLengthList]
 

@@ -10,7 +10,7 @@ trait Config extends js.Object {
   var acquireConnectionTimeout: js.UndefOr[scala.Double] = js.undefined
   var asyncStackTraces: js.UndefOr[scala.Boolean] = js.undefined
   var client: js.UndefOr[
-    java.lang.String | (ScalablyTyped.runtime.Instantiable1[/* config */ Config, Client])
+    java.lang.String | (org.scalablytyped.runtime.Instantiable1[/* config */ Config, Client])
   ] = js.undefined
   var connection: js.UndefOr[
     java.lang.String | ConnectionConfig | MariaSqlConnectionConfig | MySqlConnectionConfig | MsSqlConnectionConfig | Sqlite3ConnectionConfig | SocketConnectionConfig

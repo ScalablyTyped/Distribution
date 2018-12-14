@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IOCRZones
-  extends ScalablyTyped.runtime.Instantiable0[IOCRZones]
+  extends org.scalablytyped.runtime.Instantiable0[IOCRZones]
 

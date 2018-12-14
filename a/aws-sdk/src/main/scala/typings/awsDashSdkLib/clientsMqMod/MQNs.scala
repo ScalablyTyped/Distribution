@@ -1529,7 +1529,7 @@ object MQNs extends js.Object {
   
   
   trait __mapOf__string
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[__string]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   val TypesNs: this.type = js.native
   type BrokerState = awsDashSdkLib.awsDashSdkLibStrings.CREATION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.CREATION_FAILED | awsDashSdkLib.awsDashSdkLibStrings.DELETION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.REBOOT_IN_PROGRESS | java.lang.String

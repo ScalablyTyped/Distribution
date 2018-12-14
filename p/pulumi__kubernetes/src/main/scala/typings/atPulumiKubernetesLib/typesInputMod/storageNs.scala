@@ -66,7 +66,7 @@ object storageNs extends js.Object {
                    */
       var parameters: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -246,7 +246,7 @@ object storageNs extends js.Object {
                    */
       var attachmentMetadata: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -409,7 +409,7 @@ object storageNs extends js.Object {
                    */
       var attachmentMetadata: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -497,7 +497,7 @@ object storageNs extends js.Object {
                    */
       var parameters: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -677,7 +677,7 @@ object storageNs extends js.Object {
                    */
       var attachmentMetadata: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**

@@ -13,5 +13,5 @@ trait SVGNumber extends js.Object {
 @JSGlobal("SVGNumber")
 @js.native
 object SVGNumber
-  extends ScalablyTyped.runtime.Instantiable0[SVGNumber]
+  extends org.scalablytyped.runtime.Instantiable0[SVGNumber]
 

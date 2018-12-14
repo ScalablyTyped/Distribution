@@ -88,7 +88,7 @@ class Node () extends js.Object {
   def getValidChildrenTypes(): js.Array[webgmeLib.GmeCommonNs.NodeId] = js.native
   def getValidChildrenTypesDetailed(aspect: webgmeLib.GmeCommonNs.Aspect, noFilter: scala.Boolean): webgmeLib.GmeCommonNs.Dictionary[_] = js.native
   def getValidPointerNames(): js.Array[webgmeLib.GmeCommonNs.Name] = js.native
-  def getValidSetMemberTypesDetailed(setName: webgmeLib.GmeCommonNs.Name): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getValidSetMemberTypesDetailed(setName: webgmeLib.GmeCommonNs.Name): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getValidSetNames(): js.Array[webgmeLib.GmeCommonNs.Name] = js.native
   def getValildAttributeNames(): js.Array[webgmeLib.GmeCommonNs.Name] = js.native
   def isAbstract(): scala.Boolean = js.native

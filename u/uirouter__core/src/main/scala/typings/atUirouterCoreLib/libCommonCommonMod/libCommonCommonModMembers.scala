@@ -15,10 +15,10 @@ object libCommonCommonModMembers extends js.Object {
   val fromJson: js.Any = js.native
   val inArray: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, scala.Boolean]] = js.native
   var mapObj: js.Function3[
-    /* collection */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* collection */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* callback */ Mapper[js.Any, js.Any], 
     /* target */ js.UndefOr[js.Any], 
-    ScalablyTyped.runtime.StringDictionary[js.Any]
+    org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.native
   val pushTo: js.Function1[/* arr */ js.Array[js.Any], js.Function1[/* val */ js.Any, js.Any]] = js.native
   val removeFrom: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, js.Array[js.Any]]] = js.native
@@ -74,16 +74,16 @@ object libCommonCommonModMembers extends js.Object {
   def identity(x: js.Any): js.Any = js.native
   def inherit(parent: Obj): js.Any = js.native
   def inherit(parent: Obj, extra: Obj): js.Any = js.native
-  def map[T, U](collection: ScalablyTyped.runtime.StringDictionary[T], callback: Mapper[T, U]): ScalablyTyped.runtime.StringDictionary[U] = js.native
-  def map[T, U](collection: ScalablyTyped.runtime.StringDictionary[T], callback: Mapper[T, U], target: js.Any): ScalablyTyped.runtime.StringDictionary[U] = js.native
   def map[T, U](collection: js.Array[T], callback: Mapper[T, U]): js.Array[U] = js.native
   def map[T, U](collection: js.Array[T], callback: Mapper[T, U], target: js.Any): js.Array[U] = js.native
+  def map[T, U](collection: org.scalablytyped.runtime.StringDictionary[T], callback: Mapper[T, U]): org.scalablytyped.runtime.StringDictionary[U] = js.native
+  def map[T, U](collection: org.scalablytyped.runtime.StringDictionary[T], callback: Mapper[T, U], target: js.Any): org.scalablytyped.runtime.StringDictionary[U] = js.native
   def mergeR(memo: Obj, item: Obj): Obj = js.native
   def noop(): js.Any = js.native
   def omit(obj: Obj, propNames: js.Array[java.lang.String]): Obj = js.native
   def pairs(obj: Obj): js.Array[js.Array[_]] = js.native
   def pick(obj: Obj, propNames: js.Array[java.lang.String]): Obj = js.native
-  def pluck(collection: ScalablyTyped.runtime.StringDictionary[js.Any], propName: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def pluck(collection: org.scalablytyped.runtime.StringDictionary[js.Any], propName: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def pluck[T](collection: js.Array[Obj], propName: java.lang.String): js.Array[T] = js.native
   def pushR(arr: js.Array[_], obj: js.Any): js.Array[_] = js.native
   def silenceUncaughtInPromise(promise: js.Promise[_]): js.Promise[_] = js.native

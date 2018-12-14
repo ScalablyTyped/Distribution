@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("currency-formatter/currencies", JSImport.Namespace)
 @js.native
 object currenciesMod
-  extends ScalablyTyped.runtime.TopLevel[js.Array[currencyDashFormatterLib.currencyDashFormatterMod.Currency]]
+  extends org.scalablytyped.runtime.TopLevel[js.Array[currencyDashFormatterLib.currencyDashFormatterMod.Currency]]
 

@@ -911,9 +911,9 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
        * Converts this query to a customized, reusable query
        * constructor with all arguments and options retained.
        */
-  def toConstructor[T](): ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Query[T] with QueryHelpers] = js.native
+  def toConstructor[T](): org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Query[T] with QueryHelpers] = js.native
   @JSName("toConstructor")
-  def toConstructor_TDocDocument[T, Doc /* <: Document */](): ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, (DocumentQuery[T, Doc, js.Object]) with QueryHelpers] = js.native
+  def toConstructor_TDocDocument[T, Doc /* <: Document */](): org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, (DocumentQuery[T, Doc, js.Object]) with QueryHelpers] = js.native
   /**
        * Declare and/or execute this query as an update() operation.
        * All paths passed that are not $atomic operations will become $set ops.

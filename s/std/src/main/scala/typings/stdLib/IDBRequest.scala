@@ -108,5 +108,5 @@ trait IDBRequest[T] extends EventTarget {
 @JSGlobal("IDBRequest")
 @js.native
 object IDBRequest
-  extends ScalablyTyped.runtime.Instantiable0[IDBRequest[js.Any]]
+  extends org.scalablytyped.runtime.Instantiable0[IDBRequest[js.Any]]
 

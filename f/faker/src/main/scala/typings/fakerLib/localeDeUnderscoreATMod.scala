@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("faker/locale/de_AT", JSImport.Namespace)
 @js.native
 object localeDeUnderscoreATMod
-  extends ScalablyTyped.runtime.TopLevel[fakerLib.FakerNs.FakerStatic]
+  extends org.scalablytyped.runtime.TopLevel[fakerLib.FakerNs.FakerStatic]
 

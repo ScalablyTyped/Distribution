@@ -14,7 +14,7 @@ trait Operation extends js.Object {
   var operationId: js.UndefOr[java.lang.String] = js.undefined
   var parameters: js.UndefOr[js.Array[Parameter | Reference]] = js.undefined
   var produces: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var responses: ScalablyTyped.runtime.StringDictionary[Response | Reference]
+  var responses: org.scalablytyped.runtime.StringDictionary[Response | Reference]
   var schemes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var security: js.UndefOr[js.Array[Security]] = js.undefined
   var summary: js.UndefOr[java.lang.String] = js.undefined

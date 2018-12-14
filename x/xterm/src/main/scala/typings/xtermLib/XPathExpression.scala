@@ -14,5 +14,5 @@ trait XPathExpression extends js.Object {
 @JSGlobal("XPathExpression")
 @js.native
 object XPathExpression
-  extends ScalablyTyped.runtime.Instantiable0[XPathExpression]
+  extends org.scalablytyped.runtime.Instantiable0[XPathExpression]
 

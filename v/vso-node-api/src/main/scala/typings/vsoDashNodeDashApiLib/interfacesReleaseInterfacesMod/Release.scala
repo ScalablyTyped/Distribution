@@ -101,6 +101,6 @@ trait Release extends js.Object {
   /**
        * Gets or sets the dictionary of variables.
        */
-  var variables: ScalablyTyped.runtime.StringDictionary[ConfigurationVariableValue]
+  var variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
 }
 

@@ -23,7 +23,7 @@ class HttpRequest protected () extends js.Object {
   /**
        * A map of header keys and their respective values.
        */
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
        * The HTTP method of the request.
        */

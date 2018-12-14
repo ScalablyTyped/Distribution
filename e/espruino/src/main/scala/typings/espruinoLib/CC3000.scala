@@ -15,5 +15,5 @@ trait CC3000
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[CC3000]
+org.scalablytyped.runtime.Instantiable0[CC3000]
 

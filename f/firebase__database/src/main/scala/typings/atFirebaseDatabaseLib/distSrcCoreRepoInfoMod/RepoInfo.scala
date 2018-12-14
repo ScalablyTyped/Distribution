@@ -37,7 +37,7 @@ class RepoInfo protected () extends js.Object {
        * @param {Object} params list
        * @return {string} The URL for this repo
        */
-  def connectionURL(`type`: java.lang.String, params: ScalablyTyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
+  def connectionURL(`type`: java.lang.String, params: org.scalablytyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
   def isCacheableHost(): scala.Boolean = js.native
   def isCustomHost(): scala.Boolean = js.native
   def isDemoHost(): scala.Boolean = js.native

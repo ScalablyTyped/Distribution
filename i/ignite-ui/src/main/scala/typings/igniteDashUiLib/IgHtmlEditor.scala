@@ -10,7 +10,7 @@ trait IgHtmlEditor
   extends /**
 	 * Option for igHtmlEditor
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event fired after a toolbar item is clicked.
   	 */

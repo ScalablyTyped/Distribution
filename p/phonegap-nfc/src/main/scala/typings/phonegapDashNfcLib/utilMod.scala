@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("util", JSImport.Namespace)
 @js.native
 object utilMod
-  extends ScalablyTyped.runtime.TopLevel[phonegapDashNfcLib.PhoneGapNfcNs.Util]
+  extends org.scalablytyped.runtime.TopLevel[phonegapDashNfcLib.PhoneGapNfcNs.Util]
 

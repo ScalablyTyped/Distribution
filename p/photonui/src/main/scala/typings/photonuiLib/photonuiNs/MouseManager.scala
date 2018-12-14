@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class MouseManager () extends Base {
   def this(element: Widget) = this()
   def this(element: stdLib.HTMLElement) = this()
-  def this(params: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  def this(element: Widget, params: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  def this(element: stdLib.HTMLElement, params: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(params: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  def this(element: Widget, params: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  def this(element: stdLib.HTMLElement, params: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   var action: java.lang.String = js.native
    // readonly
   var btnLeft: scala.Boolean = js.native

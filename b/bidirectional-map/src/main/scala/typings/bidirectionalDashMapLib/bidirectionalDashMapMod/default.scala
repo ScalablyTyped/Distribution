@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("bidirectional-map", JSImport.Default)
 @js.native
 class default[TValue] () extends BiMap[TValue] {
-  def this(`object`: ScalablyTyped.runtime.StringDictionary[TValue]) = this()
+  def this(`object`: org.scalablytyped.runtime.StringDictionary[TValue]) = this()
   /* CompleteClass */
   override var size: scala.Double = js.native
   /* CompleteClass */

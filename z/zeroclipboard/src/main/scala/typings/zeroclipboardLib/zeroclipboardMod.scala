@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSImport("zeroclipboard", JSImport.Namespace)
 @js.native
 object zeroclipboardMod
-  extends ScalablyTyped.runtime.TopLevel[zeroclipboardLib.ZCNs.ZeroClipboardStatic]
+  extends org.scalablytyped.runtime.TopLevel[zeroclipboardLib.ZCNs.ZeroClipboardStatic]
 

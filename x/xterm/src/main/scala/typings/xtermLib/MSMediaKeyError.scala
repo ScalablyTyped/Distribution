@@ -20,7 +20,7 @@ trait MSMediaKeyError extends js.Object {
 @JSGlobal("MSMediaKeyError")
 @js.native
 object MSMediaKeyError
-  extends ScalablyTyped.runtime.Instantiable0[MSMediaKeyError] {
+  extends org.scalablytyped.runtime.Instantiable0[MSMediaKeyError] {
   val MS_MEDIA_KEYERR_CLIENT: scala.Double = js.native
   val MS_MEDIA_KEYERR_DOMAIN: scala.Double = js.native
   val MS_MEDIA_KEYERR_HARDWARECHANGE: scala.Double = js.native

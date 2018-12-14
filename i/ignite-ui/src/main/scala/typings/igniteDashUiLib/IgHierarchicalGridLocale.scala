@@ -10,7 +10,7 @@ trait IgHierarchicalGridLocale
   extends /**
 	 * Option for IgHierarchicalGridLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies the default tooltip applied to an expand column cell, that is currently expanded.
   	 *

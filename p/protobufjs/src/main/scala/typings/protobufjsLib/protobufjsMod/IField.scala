@@ -10,7 +10,7 @@ trait IField extends js.Object {
   /** Field id */
   var id: scala.Double
   /** Field options */
-  var options: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /** Field rule */
   var rule: js.UndefOr[java.lang.String] = js.undefined
   /** Field type */

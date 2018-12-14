@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("postman-collection", "Variable")
 @js.native
 class Variable () extends Property[VariableDefinition] {
-  def this(definition: ScalablyTyped.runtime.StringDictionary[VariableDefinition]) = this()
+  def this(definition: org.scalablytyped.runtime.StringDictionary[VariableDefinition]) = this()
   def this(definition: VariableDefinition) = this()
   var key: js.UndefOr[java.lang.String] = js.native
   var `type`: java.lang.String = js.native

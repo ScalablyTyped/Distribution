@@ -13,7 +13,7 @@ trait Resource
   extends /**
              * Making this interface extendable since this is not a complete type definition of FHIR Resource
              */
-/* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
                * The type of resource. All FHIR resources must have a resource type.
                */

@@ -23,7 +23,7 @@ class DropdownSubmenu[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sc
      * **`label`**`: string`
      * : The label to show on the submenu.
      */
-  def this(content: js.Array[MenuElement[S]], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(content: js.Array[MenuElement[S]], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
      * Renders the submenu.
      */

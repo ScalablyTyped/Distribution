@@ -11,7 +11,7 @@ class OutlinePass protected ()
   extends threeLib.threeDashEffectcomposerMod.Pass {
   def this(resolution: threeLib.threeDashCoreMod.Vector2, scene: threeLib.threeDashCoreMod.Scene, camera: threeLib.threeDashCoreMod.Camera) = this()
   def this(resolution: threeLib.threeDashCoreMod.Vector2, scene: threeLib.threeDashCoreMod.Scene, camera: threeLib.threeDashCoreMod.Camera, selectedObjects: js.Array[threeLib.threeDashCoreMod.Object3D]) = this()
-  var copyUniforms: ScalablyTyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
+  var copyUniforms: org.scalablytyped.runtime.StringDictionary[threeLib.threeDashCoreMod.IUniform] = js.native
   var downSampleRatio: scala.Double = js.native
   var edgeDetectionMaterial: threeLib.threeDashCoreMod.ShaderMaterial = js.native
   var edgeGlow: scala.Double = js.native

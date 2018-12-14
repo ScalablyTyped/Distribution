@@ -41,7 +41,7 @@ package object reactDashNavigationMod {
   type NavigationScreenOptions = NavigationStackScreenOptions with NavigationTabScreenOptions with NavigationDrawerScreenOptions
   type NavigationScreenOptionsGetter[Options] = js.Function2[
     /* navigation */ NavigationScreenProp[NavigationRoute[js.Any], NavigationParams], 
-    /* screenProps */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* screenProps */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
     Options
   ]
   type NavigationScreenRouteConfig = NavigationComponent | reactDashNavigationLib.Anon_Screen | reactDashNavigationLib.Anon_GetScreen

@@ -85,7 +85,9 @@ trait Matchers[T] extends js.Object {
        * Checks if all styles are present.
        * `styles` is an object, all styles given in that object will be checked.
        */
-  def toHaveCss(styles: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | stdLib.RegExp]): scala.Boolean = js.native
+  def toHaveCss(
+    styles: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | stdLib.RegExp]
+  ): scala.Boolean = js.native
   /**
        * Checks for length number of html elements.
        * Also works for plain Arrays.

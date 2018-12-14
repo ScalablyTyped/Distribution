@@ -107,17 +107,25 @@ object CKEDITORNsMembers extends js.Object {
   def appendTo(element: stdLib.HTMLElement, config: config, data: java.lang.String): editor = js.native
   // Event interface
   def capture(): scala.Unit = js.native
-  def define(name: java.lang.String, meta: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def define(name: java.lang.String, meta: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def domReady(): scala.Unit = js.native
   def editorConfig(config: config): scala.Unit = js.native
   def error(errorCode: java.lang.String): scala.Unit = js.native
   def error(errorCode: java.lang.String, additionalData: js.Any): scala.Unit = js.native
   def fire(eventName: java.lang.String): js.Any = js.native
-  def fire(eventName: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
-  def fire(eventName: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any], editor: editor): js.Any = js.native
+  def fire(eventName: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def fire(
+    eventName: java.lang.String,
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    editor: editor
+  ): js.Any = js.native
   def fireOnce(eventName: java.lang.String): js.Any = js.native
-  def fireOnce(eventName: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
-  def fireOnce(eventName: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any], editor: editor): js.Any = js.native
+  def fireOnce(eventName: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def fireOnce(
+    eventName: java.lang.String,
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    editor: editor
+  ): js.Any = js.native
   def getCss(): java.lang.String = js.native
   def getTemplate(name: java.lang.String): template = js.native
   def getUrl(resource: java.lang.String): java.lang.String = js.native
@@ -132,38 +140,38 @@ object CKEDITORNsMembers extends js.Object {
   def on(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def on(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any],
-    listenerData: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
+    listenerData: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def on(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any],
-    listenerData: ScalablyTyped.runtime.StringDictionary[js.Any],
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
+    listenerData: org.scalablytyped.runtime.StringDictionary[js.Any],
     priority: scala.Double
   ): scala.Unit = js.native
   def once(eventName: java.lang.String, listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit]): scala.Unit = js.native
   def once(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def once(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any],
-    listenerData: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
+    listenerData: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def once(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any],
-    listenerData: ScalablyTyped.runtime.StringDictionary[js.Any],
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
+    listenerData: org.scalablytyped.runtime.StringDictionary[js.Any],
     priority: scala.Double
   ): scala.Unit = js.native
   def removeAllListeners(): scala.Unit = js.native

@@ -12,7 +12,7 @@ abstract class RenderDebugInfo () extends js.Object {
   val context: js.Any = js.native
   val injector: atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   val providerTokens: js.Array[_] = js.native
-  val references: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  val references: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   val source: java.lang.String = js.native
 }
 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait IIconRecords
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[IIconRecord | js.Object] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[IIconRecord | js.Object] {
   var __options: IIconOptions
-  var __remapped: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var __remapped: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

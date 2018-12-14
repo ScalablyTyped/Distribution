@@ -10,7 +10,7 @@ trait MarkSpec extends js.Object {
   /**
      * The attributes that marks of this type get.
      */
-  var attrs: js.UndefOr[ScalablyTyped.runtime.StringDictionary[AttributeSpec] | scala.Null] = js.undefined
+  var attrs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[AttributeSpec] | scala.Null] = js.undefined
   /**
      * Determines which other marks this mark can coexist with. Should
      * be a space-separated strings naming other marks or groups of marks.

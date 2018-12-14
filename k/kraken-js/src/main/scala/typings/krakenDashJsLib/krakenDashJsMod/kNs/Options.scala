@@ -19,7 +19,7 @@ trait Options extends js.Object {
     ]
   ] = js.undefined
   var protocols: js.UndefOr[js.Object] = js.undefined
-  var startupHeaders: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var startupHeaders: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var uncaughtException: js.UndefOr[js.Function1[/* err */ nodeLib.Error, _]] = js.undefined
 }
 

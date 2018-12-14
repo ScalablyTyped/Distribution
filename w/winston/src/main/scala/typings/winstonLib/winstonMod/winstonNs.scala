@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object winstonNs extends js.Object {
   @js.native
   trait Container
-    extends ScalablyTyped.runtime.Instantiable0[Container]
-       with ScalablyTyped.runtime.Instantiable1[/* options */ LoggerOptions, Container] {
+    extends org.scalablytyped.runtime.Instantiable0[Container]
+       with org.scalablytyped.runtime.Instantiable1[/* options */ LoggerOptions, Container] {
     var loggers: stdLib.Map[java.lang.String, Logger] = js.native
     var options: LoggerOptions = js.native
     def add(id: java.lang.String): Logger = js.native
@@ -25,7 +25,7 @@ object winstonNs extends js.Object {
   
   @js.native
   trait ExceptionHandler
-    extends ScalablyTyped.runtime.Instantiable1[/* logger */ Logger, ExceptionHandler] {
+    extends org.scalablytyped.runtime.Instantiable1[/* logger */ Logger, ExceptionHandler] {
     var catcher: js.Function | scala.Boolean = js.native
     var handlers: stdLib.Map[_, _] = js.native
     var logger: Logger = js.native
@@ -48,7 +48,7 @@ object winstonNs extends js.Object {
   
   
   trait LogEntry
-    extends /* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+    extends /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     var level: java.lang.String
     var message: java.lang.String
   }
@@ -64,8 +64,8 @@ object winstonNs extends js.Object {
   @js.native
   trait Logger
     extends nodeLib.streamMod.Transform
-       with ScalablyTyped.runtime.Instantiable0[Logger]
-       with ScalablyTyped.runtime.Instantiable1[/* options */ LoggerOptions, Logger] {
+       with org.scalablytyped.runtime.Instantiable0[Logger]
+       with org.scalablytyped.runtime.Instantiable1[/* options */ LoggerOptions, Logger] {
     @JSName("alert")
     var alert_Original: LeveledLogMethod = js.native
     @JSName("crit")
@@ -337,11 +337,11 @@ object winstonNs extends js.Object {
       
       
       trait AbstractConfigSetColors
-        extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+        extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
       
       
       trait AbstractConfigSetLevels
-        extends /* key */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+        extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double]
       
       
       trait CliConfigSetColors
@@ -477,8 +477,8 @@ object winstonNs extends js.Object {
       @js.native
       trait ConsoleTransportInstance
         extends winstonDashTransportLib.winstonDashTransportMod.namespaced
-           with ScalablyTyped.runtime.Instantiable0[winstonLib.libWinstonTransportsMod.winstonNs.ConsoleTransportInstance]
-           with ScalablyTyped.runtime.Instantiable1[
+           with org.scalablytyped.runtime.Instantiable0[winstonLib.libWinstonTransportsMod.winstonNs.ConsoleTransportInstance]
+           with org.scalablytyped.runtime.Instantiable1[
                   /* options */ winstonLib.libWinstonTransportsMod.winstonNs.ConsoleTransportOptions, 
                   winstonLib.libWinstonTransportsMod.winstonNs.ConsoleTransportInstance
                 ] {
@@ -498,8 +498,8 @@ object winstonNs extends js.Object {
       @js.native
       trait FileTransportInstance
         extends winstonDashTransportLib.winstonDashTransportMod.namespaced
-           with ScalablyTyped.runtime.Instantiable0[winstonLib.libWinstonTransportsMod.winstonNs.FileTransportInstance]
-           with ScalablyTyped.runtime.Instantiable1[
+           with org.scalablytyped.runtime.Instantiable0[winstonLib.libWinstonTransportsMod.winstonNs.FileTransportInstance]
+           with org.scalablytyped.runtime.Instantiable1[
                   /* options */ winstonLib.libWinstonTransportsMod.winstonNs.FileTransportOptions, 
                   winstonLib.libWinstonTransportsMod.winstonNs.FileTransportInstance
                 ] {
@@ -533,8 +533,8 @@ object winstonNs extends js.Object {
       @js.native
       trait HttpTransportInstance
         extends winstonDashTransportLib.winstonDashTransportMod.namespaced
-           with ScalablyTyped.runtime.Instantiable0[winstonLib.libWinstonTransportsMod.winstonNs.HttpTransportInstance]
-           with ScalablyTyped.runtime.Instantiable1[
+           with org.scalablytyped.runtime.Instantiable0[winstonLib.libWinstonTransportsMod.winstonNs.HttpTransportInstance]
+           with org.scalablytyped.runtime.Instantiable1[
                   /* options */ winstonLib.libWinstonTransportsMod.winstonNs.HttpTransportOptions, 
                   winstonLib.libWinstonTransportsMod.winstonNs.HttpTransportInstance
                 ] {
@@ -562,8 +562,8 @@ object winstonNs extends js.Object {
       @js.native
       trait StreamTransportInstance
         extends winstonDashTransportLib.winstonDashTransportMod.namespaced
-           with ScalablyTyped.runtime.Instantiable0[winstonLib.libWinstonTransportsMod.winstonNs.StreamTransportInstance]
-           with ScalablyTyped.runtime.Instantiable1[
+           with org.scalablytyped.runtime.Instantiable0[winstonLib.libWinstonTransportsMod.winstonNs.StreamTransportInstance]
+           with org.scalablytyped.runtime.Instantiable1[
                   /* options */ winstonLib.libWinstonTransportsMod.winstonNs.StreamTransportOptions, 
                   winstonLib.libWinstonTransportsMod.winstonNs.StreamTransportInstance
                 ] {

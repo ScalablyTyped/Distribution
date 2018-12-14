@@ -13,7 +13,7 @@ trait RTCDTMFToneChangeEvent extends Event {
 @JSGlobal("RTCDTMFToneChangeEvent")
 @js.native
 object RTCDTMFToneChangeEvent
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ RTCDTMFToneChangeEventInit, 
       RTCDTMFToneChangeEvent

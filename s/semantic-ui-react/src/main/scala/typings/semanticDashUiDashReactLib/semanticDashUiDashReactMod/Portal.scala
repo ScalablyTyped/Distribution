@@ -13,6 +13,6 @@ class Portal ()
 @JSImport("semantic-ui-react", "Portal")
 @js.native
 object Portal extends js.Object {
-  var Inner: ScalablyTyped.runtime.Instantiable0[semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalInnerMod.default] = js.native
+  var Inner: org.scalablytyped.runtime.Instantiable0[semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalInnerMod.default] = js.native
 }
 

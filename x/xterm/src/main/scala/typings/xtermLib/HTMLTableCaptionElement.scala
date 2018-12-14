@@ -17,5 +17,5 @@ trait HTMLTableCaptionElement extends HTMLElement {
 @JSGlobal("HTMLTableCaptionElement")
 @js.native
 object HTMLTableCaptionElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLTableCaptionElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLTableCaptionElement]
 

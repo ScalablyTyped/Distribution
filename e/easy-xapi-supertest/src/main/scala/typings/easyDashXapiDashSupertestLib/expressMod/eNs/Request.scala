@@ -46,7 +46,7 @@ trait Request
                */
   var fresh: scala.Boolean = js.native
   @JSName("headers")
-  var headers_Request: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var headers_Request: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
                * @deprecated Use hostname instead.
                */

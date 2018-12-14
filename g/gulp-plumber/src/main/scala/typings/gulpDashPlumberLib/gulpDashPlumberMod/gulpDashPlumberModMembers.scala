@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-plumber", JSImport.Namespace)
 @js.native
 object gulpDashPlumberModMembers
-  extends ScalablyTyped.runtime.TopLevel[GulpPlumber]
+  extends org.scalablytyped.runtime.TopLevel[GulpPlumber]
 

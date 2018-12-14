@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SAXParser protected () extends js.Object {
   def this(strict: scala.Boolean) = this()
   def this(strict: scala.Boolean, opt: SAXOptions) = this()
-  var ENTITIES: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var ENTITIES: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var closed: scala.Boolean = js.native
   var column: scala.Double = js.native
   var error: nodeLib.Error = js.native

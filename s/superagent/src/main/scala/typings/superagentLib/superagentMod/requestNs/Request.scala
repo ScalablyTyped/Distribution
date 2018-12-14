@@ -28,7 +28,7 @@ trait Request
   def clearTimeout(): this.type = js.native
   def end(): this.type = js.native
   def end(callback: superagentLib.CallbackHandler): this.type = js.native
-  def field(fields: ScalablyTyped.runtime.StringDictionary[superagentLib.MultipartValue]): this.type = js.native
+  def field(fields: org.scalablytyped.runtime.StringDictionary[superagentLib.MultipartValue]): this.type = js.native
   def field(name: java.lang.String, `val`: superagentLib.MultipartValue): this.type = js.native
   def get(field: java.lang.String): java.lang.String = js.native
   def key(cert: java.lang.String): this.type = js.native

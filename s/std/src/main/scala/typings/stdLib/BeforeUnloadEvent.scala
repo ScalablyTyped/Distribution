@@ -11,5 +11,5 @@ trait BeforeUnloadEvent extends Event
 @JSGlobal("BeforeUnloadEvent")
 @js.native
 object BeforeUnloadEvent
-  extends ScalablyTyped.runtime.Instantiable0[BeforeUnloadEvent]
+  extends org.scalablytyped.runtime.Instantiable0[BeforeUnloadEvent]
 

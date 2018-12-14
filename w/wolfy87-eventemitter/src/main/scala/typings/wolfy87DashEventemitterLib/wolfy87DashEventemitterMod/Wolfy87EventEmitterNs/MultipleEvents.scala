@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait MultipleEvents
-  extends /* event */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* event */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IOptions
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var debugProtection: js.UndefOr[scala.Boolean] = js.undefined
   var debugProtectionInterval: js.UndefOr[scala.Boolean] = js.undefined

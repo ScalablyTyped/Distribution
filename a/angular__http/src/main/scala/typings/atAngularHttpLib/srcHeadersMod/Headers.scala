@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/http/src/headers", "Headers")
 @js.native
 class Headers () extends js.Object {
-  def this(headers: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
   def this(headers: Headers) = this()
+  def this(headers: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   var mayBeSetNormalizedName: js.Any = js.native
   /**
        * Appends a header to existing list of header values for a given header name.
@@ -58,7 +58,7 @@ class Headers () extends js.Object {
   /**
        * Returns string of all headers.
        */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Returns values of all headers.
        */

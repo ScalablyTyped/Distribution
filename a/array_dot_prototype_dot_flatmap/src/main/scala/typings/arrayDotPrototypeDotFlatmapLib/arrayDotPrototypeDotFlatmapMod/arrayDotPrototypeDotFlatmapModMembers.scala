@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("array.prototype.flatmap", JSImport.Namespace)
 @js.native
 object arrayDotPrototypeDotFlatmapModMembers
-  extends ScalablyTyped.runtime.TopLevel[FlatMap]
+  extends org.scalablytyped.runtime.TopLevel[FlatMap]
 

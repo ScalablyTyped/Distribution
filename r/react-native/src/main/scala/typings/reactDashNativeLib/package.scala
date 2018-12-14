@@ -11,12 +11,12 @@ package object reactDashNativeLib {
   type AccessibilityTrait = reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.link | reactDashNativeLib.reactDashNativeLibStrings.header | reactDashNativeLib.reactDashNativeLibStrings.search | reactDashNativeLib.reactDashNativeLibStrings.image | reactDashNativeLib.reactDashNativeLibStrings.selected | reactDashNativeLib.reactDashNativeLibStrings.plays | reactDashNativeLib.reactDashNativeLibStrings.key | reactDashNativeLib.reactDashNativeLibStrings.text | reactDashNativeLib.reactDashNativeLibStrings.summary | reactDashNativeLib.reactDashNativeLibStrings.disabled | reactDashNativeLib.reactDashNativeLibStrings.frequentUpdates | reactDashNativeLib.reactDashNativeLibStrings.startsMedia | reactDashNativeLib.reactDashNativeLibStrings.adjustable | reactDashNativeLib.reactDashNativeLibStrings.allowsDirectInteraction | reactDashNativeLib.reactDashNativeLibStrings.pageTurn
   type BackgroundPropType = js.Any
   type `BodyInit_` = Blob | stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Uint8ClampedArray | stdLib.Float32Array | stdLib.Float64Array | stdLib.DataView | stdLib.ArrayBuffer | FormData | java.lang.String | scala.Null
-  type Constructor[T] = ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
+  type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
   type DataDetectorTypes = reactDashNativeLib.reactDashNativeLibStrings.phoneNumber | reactDashNativeLib.reactDashNativeLibStrings.link | reactDashNativeLib.reactDashNativeLibStrings.address | reactDashNativeLib.reactDashNativeLibStrings.calendarEvent | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.all
   type ErrorHandlerCallback = js.Function2[/* error */ js.Any, /* isFatal */ js.UndefOr[scala.Boolean], scala.Unit]
   type Falsy = js.UndefOr[scala.Null | reactDashNativeLib.reactDashNativeLibNumbers.`false`]
   type FlexAlignType = reactDashNativeLib.reactDashNativeLibStrings.`flex-start` | reactDashNativeLib.reactDashNativeLibStrings.`flex-end` | reactDashNativeLib.reactDashNativeLibStrings.center | reactDashNativeLib.reactDashNativeLibStrings.stretch | reactDashNativeLib.reactDashNativeLibStrings.baseline
-  type `HeadersInit_` = Headers | js.Array[js.Array[java.lang.String]] | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  type `HeadersInit_` = Headers | js.Array[js.Array[java.lang.String]] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type NodeHandle = scala.Double
   /**
    * Receive events from native-code

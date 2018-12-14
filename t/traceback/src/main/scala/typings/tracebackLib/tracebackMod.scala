@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("traceback", JSImport.Namespace)
 @js.native
 object tracebackMod
-  extends ScalablyTyped.runtime.TopLevel[TracebackStatic]
+  extends org.scalablytyped.runtime.TopLevel[TracebackStatic]
 

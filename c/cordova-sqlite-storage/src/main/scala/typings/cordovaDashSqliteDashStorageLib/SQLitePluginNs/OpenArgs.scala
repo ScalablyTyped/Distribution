@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait OpenArgs
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var androidDatabaseImplementation: js.UndefOr[scala.Double] = js.undefined
   var androidLockWorkaround: js.UndefOr[scala.Double] = js.undefined
   var createFromLocation: js.UndefOr[scala.Double] = js.undefined

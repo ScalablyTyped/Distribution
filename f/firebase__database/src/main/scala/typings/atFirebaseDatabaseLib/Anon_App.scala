@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_App extends js.Object {
-  var Database: ScalablyTyped.runtime.Instantiable0[atFirebaseDatabaseDashTypesLib.databaseDashTypesMod.FirebaseDatabase] = js.native
+  var Database: org.scalablytyped.runtime.Instantiable0[atFirebaseDatabaseDashTypesLib.databaseDashTypesMod.FirebaseDatabase] = js.native
   var ServerValue: atFirebaseDatabaseDashTypesLib.databaseDashTypesMod.ServerValue = js.native
   var enableLogging: js.Function2[
     /* logger */ js.Function1[/* a */ java.lang.String, _], 

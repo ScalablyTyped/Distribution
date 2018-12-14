@@ -234,7 +234,7 @@ trait FileReader extends EventTarget {
 @JSGlobal("FileReader")
 @js.native
 object FileReader
-  extends ScalablyTyped.runtime.Instantiable0[FileReader] {
+  extends org.scalablytyped.runtime.Instantiable0[FileReader] {
   val DONE: scala.Double = js.native
   val EMPTY: scala.Double = js.native
   val LOADING: scala.Double = js.native

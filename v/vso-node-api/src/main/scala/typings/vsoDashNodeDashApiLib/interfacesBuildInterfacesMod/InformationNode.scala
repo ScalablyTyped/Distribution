@@ -10,7 +10,7 @@ trait InformationNode extends js.Object {
   /**
        * Fields of the information node
        */
-  var fields: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var fields: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Process or person that last modified this node
        */

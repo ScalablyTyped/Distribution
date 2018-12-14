@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait UpdateSpecPath
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[UpdateSpec]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[UpdateSpec]
 

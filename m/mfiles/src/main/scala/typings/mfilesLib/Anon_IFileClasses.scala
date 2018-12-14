@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IFileClasses
-  extends ScalablyTyped.runtime.Instantiable0[IFileClasses]
+  extends org.scalablytyped.runtime.Instantiable0[IFileClasses]
 

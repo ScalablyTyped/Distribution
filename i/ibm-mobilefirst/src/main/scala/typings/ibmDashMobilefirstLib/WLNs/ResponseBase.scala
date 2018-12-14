@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 class ResponseBase () extends js.Object {
   var errorCode: scala.Double = js.native
   var errorMsg: java.lang.String = js.native
-  var headerJSON: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var headerJSON: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var invocationContext: js.Any = js.native
    // JSON Object
   var readyState: scala.Double = js.native
   var request: js.Any = js.native
-  var responseJSON: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var responseJSON: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
    // JSON Object
   var responseText: java.lang.String = js.native
   var responseXML: java.lang.String = js.native

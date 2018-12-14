@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ILoginAccounts
-  extends ScalablyTyped.runtime.Instantiable0[ILoginAccounts]
+  extends org.scalablytyped.runtime.Instantiable0[ILoginAccounts]
 

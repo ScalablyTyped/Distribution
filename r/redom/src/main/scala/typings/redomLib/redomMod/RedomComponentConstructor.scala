@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RedomComponentConstructor
-  extends ScalablyTyped.runtime.Instantiable0[RedomComponent]
+  extends org.scalablytyped.runtime.Instantiable0[RedomComponent]
 

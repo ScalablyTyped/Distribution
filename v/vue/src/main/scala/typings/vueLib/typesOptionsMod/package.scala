@@ -34,7 +34,7 @@ package object typesOptionsMod {
     scala.Unit
   ]
   type InjectKey = java.lang.String | js.Symbol
-  type InjectOptions = (ScalablyTyped.runtime.StringDictionary[InjectKey | vueLib.Anon_From]) | js.Array[java.lang.String]
+  type InjectOptions = (org.scalablytyped.runtime.StringDictionary[InjectKey | vueLib.Anon_From]) | js.Array[java.lang.String]
   type Prop[T] = vueLib.Anon_T[T] | vueLib.Anon_Args[T]
   type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]

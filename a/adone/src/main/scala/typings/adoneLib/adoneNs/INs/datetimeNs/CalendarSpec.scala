@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait CalendarSpec
   extends // any additional properties might be used with datetime.calendarFormat
-/* x */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[CalendarSpecVal]] {
+/* x */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[CalendarSpecVal]] {
   var lastDay: js.UndefOr[CalendarSpecVal] = js.undefined
   var lastWeek: js.UndefOr[CalendarSpecVal] = js.undefined
   var nextDay: js.UndefOr[CalendarSpecVal] = js.undefined

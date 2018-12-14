@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CacheFactoryInfo extends CacheOptions {
-  var caches: ScalablyTyped.runtime.StringDictionary[CacheInfo]
+  var caches: org.scalablytyped.runtime.StringDictionary[CacheInfo]
   var size: scala.Double
 }
 

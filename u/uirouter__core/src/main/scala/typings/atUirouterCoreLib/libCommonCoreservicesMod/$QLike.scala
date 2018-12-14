@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait $QLike extends js.Object {
-  def all(promises: ScalablyTyped.runtime.StringDictionary[js.Promise[_]]): js.Promise[_] = js.native
   def all(promises: js.Array[js.Promise[_]]): js.Promise[js.Array[_]] = js.native
+  def all(promises: org.scalablytyped.runtime.StringDictionary[js.Promise[_]]): js.Promise[_] = js.native
   def defer(): $QLikeDeferred = js.native
   def reject[T](reason: js.Any): js.Promise[T] = js.native
   def when[T](): js.Promise[T] = js.native

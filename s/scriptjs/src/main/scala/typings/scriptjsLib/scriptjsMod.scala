@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("scriptjs", JSImport.Namespace)
 @js.native
 object scriptjsMod
-  extends ScalablyTyped.runtime.TopLevel[$script]
+  extends org.scalablytyped.runtime.TopLevel[$script]
 

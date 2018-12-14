@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CloudFrontHeaders
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Array[awsDashLambdaLib.Anon_KeyValue]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Array[awsDashLambdaLib.Anon_KeyValue]]
 

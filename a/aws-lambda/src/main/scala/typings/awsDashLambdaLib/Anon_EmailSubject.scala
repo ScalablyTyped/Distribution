@@ -25,9 +25,9 @@ trait Anon_EmailSubject extends js.Object {
   var forceAliasCreation: js.UndefOr[scala.Boolean] = js.undefined
   var issueTokens: js.UndefOr[scala.Boolean] = js.undefined
   var messageAction: js.UndefOr[awsDashLambdaLib.awsDashLambdaLibStrings.SUPPRESS] = js.undefined
-  var privateChallengeParameters: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
-  var publicChallengeParameters: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var privateChallengeParameters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var publicChallengeParameters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var smsMessage: js.UndefOr[java.lang.String] = js.undefined
-  var userAttributes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var userAttributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 

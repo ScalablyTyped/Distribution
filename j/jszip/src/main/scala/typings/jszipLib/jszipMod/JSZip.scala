@@ -18,7 +18,7 @@ trait JSZip
      * @param data Serialized zip archive
      * @param options Description of the serialized zip archive
      */
-ScalablyTyped.runtime.Instantiable0[JSZip]
+org.scalablytyped.runtime.Instantiable0[JSZip]
      with /**
      * Create JSZip instance
      */
@@ -30,7 +30,7 @@ ScalablyTyped.runtime.Instantiable0[JSZip]
      * @param data Serialized zip archive
      * @param options Description of the serialized zip archive
      */
-ScalablyTyped.runtime.Instantiable1[/* data */ jszipLib.InputFileFormat, JSZip]
+org.scalablytyped.runtime.Instantiable1[/* data */ jszipLib.InputFileFormat, JSZip]
      with /**
      * Create JSZip instance
      */
@@ -42,13 +42,13 @@ ScalablyTyped.runtime.Instantiable1[/* data */ jszipLib.InputFileFormat, JSZip]
      * @param data Serialized zip archive
      * @param options Description of the serialized zip archive
      */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* data */ jszipLib.InputFileFormat, 
       /* options */ jszipLib.jszipMod.JSZipNs.JSZipLoadOptions, 
       JSZip
     ] {
   var external: jszipLib.Anon_Promise = js.native
-  var files: ScalablyTyped.runtime.StringDictionary[jszipLib.jszipMod.JSZipNs.JSZipObject] = js.native
+  var files: org.scalablytyped.runtime.StringDictionary[jszipLib.jszipMod.JSZipNs.JSZipObject] = js.native
   var support: JSZipSupport = js.native
   var version: java.lang.String = js.native
   def apply(): JSZip = js.native

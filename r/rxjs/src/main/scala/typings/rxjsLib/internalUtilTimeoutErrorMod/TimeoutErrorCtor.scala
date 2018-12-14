@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TimeoutErrorCtor
-  extends ScalablyTyped.runtime.Instantiable0[TimeoutError]
+  extends org.scalablytyped.runtime.Instantiable0[TimeoutError]
 

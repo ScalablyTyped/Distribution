@@ -78,7 +78,7 @@ object CodePipelineNs extends js.Object {
   
   
   trait ActionConfigurationMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ActionConfigurationValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ActionConfigurationValue]
   
   
   trait ActionConfigurationProperty extends js.Object {
@@ -398,7 +398,7 @@ object CodePipelineNs extends js.Object {
   
   
   trait ArtifactStoreMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ArtifactStore]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ArtifactStore]
   
   
   trait BlockerDeclaration extends js.Object {
@@ -1284,7 +1284,7 @@ object CodePipelineNs extends js.Object {
   
   
   trait QueryParamMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ActionConfigurationQueryableValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ActionConfigurationQueryableValue]
   
   
   trait RegisterWebhookWithThirdPartyInput extends js.Object {

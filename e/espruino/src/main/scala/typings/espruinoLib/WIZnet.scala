@@ -16,5 +16,5 @@ trait WIZnet
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[WIZnet]
+org.scalablytyped.runtime.Instantiable0[WIZnet]
 

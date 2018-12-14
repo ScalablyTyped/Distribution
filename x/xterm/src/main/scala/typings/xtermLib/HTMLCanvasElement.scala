@@ -63,5 +63,5 @@ trait HTMLCanvasElement extends HTMLElement {
 @JSGlobal("HTMLCanvasElement")
 @js.native
 object HTMLCanvasElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLCanvasElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLCanvasElement]
 

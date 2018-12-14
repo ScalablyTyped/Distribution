@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IVaultNamedACLOperations
-  extends ScalablyTyped.runtime.Instantiable0[IVaultNamedACLOperations]
+  extends org.scalablytyped.runtime.Instantiable0[IVaultNamedACLOperations]
 

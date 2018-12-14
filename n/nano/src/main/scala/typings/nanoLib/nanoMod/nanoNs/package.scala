@@ -15,5 +15,5 @@ package object nanoNs {
     scala.Unit
   ]
   // http://docs.couchdb.org/en/latest/api/database/find.html#sort-syntax
-  type SortOrder = java.lang.String | js.Array[java.lang.String] | (ScalablyTyped.runtime.StringDictionary[nanoLib.nanoLibStrings.asc | nanoLib.nanoLibStrings.desc])
+  type SortOrder = java.lang.String | js.Array[java.lang.String] | (org.scalablytyped.runtime.StringDictionary[nanoLib.nanoLibStrings.asc | nanoLib.nanoLibStrings.desc])
 }

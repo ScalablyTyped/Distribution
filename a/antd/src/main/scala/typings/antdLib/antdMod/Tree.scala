@@ -13,7 +13,7 @@ class Tree ()
 @JSImport("antd", "Tree")
 @js.native
 object Tree extends js.Object {
-  var DirectoryTree: ScalablyTyped.runtime.Instantiable1[
+  var DirectoryTree: org.scalablytyped.runtime.Instantiable1[
     /* props */ antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps, 
     antdLib.libTreeDirectoryTreeMod.default
   ] = js.native

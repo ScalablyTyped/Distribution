@@ -24,7 +24,7 @@ trait StorageArea extends js.Object {
            * @param callback Callback with storage items, or on failure (in which case runtime.lastError will be set).
            * Parameter items: Object with items in their key-value mappings.
            */
-  def get(callback: js.Function1[/* items */ ScalablyTyped.runtime.StringDictionary[js.Any], scala.Unit]): scala.Unit = js.native
+  def get(callback: js.Function1[/* items */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]): scala.Unit = js.native
   /**
            * Gets one or more items from storage.
            * @param keys A single key to get, list of keys to get, or a dictionary specifying default values.
@@ -34,7 +34,7 @@ trait StorageArea extends js.Object {
            */
   def get(
     keys: java.lang.String,
-    callback: js.Function1[/* items */ ScalablyTyped.runtime.StringDictionary[js.Any], scala.Unit]
+    callback: js.Function1[/* items */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
   ): scala.Unit = js.native
   /**
            * Gets one or more items from storage.
@@ -45,7 +45,7 @@ trait StorageArea extends js.Object {
            */
   def get(
     keys: js.Array[java.lang.String],
-    callback: js.Function1[/* items */ ScalablyTyped.runtime.StringDictionary[js.Any], scala.Unit]
+    callback: js.Function1[/* items */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
   ): scala.Unit = js.native
   /**
            * Gets one or more items from storage.
@@ -56,7 +56,7 @@ trait StorageArea extends js.Object {
            */
   def get(
     keys: js.Object,
-    callback: js.Function1[/* items */ ScalablyTyped.runtime.StringDictionary[js.Any], scala.Unit]
+    callback: js.Function1[/* items */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
   ): scala.Unit = js.native
   /**
            * Gets one or more items from storage.
@@ -67,7 +67,7 @@ trait StorageArea extends js.Object {
            */
   def get(
     keys: scala.Null,
-    callback: js.Function1[/* items */ ScalablyTyped.runtime.StringDictionary[js.Any], scala.Unit]
+    callback: js.Function1[/* items */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
   ): scala.Unit = js.native
   /**
            * Gets the amount of space (in bytes) being used by one or more items.

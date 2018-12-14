@@ -58,6 +58,6 @@ trait BuildDefinition extends BuildDefinitionReference {
   var tags: js.Array[java.lang.String]
   var triggers: js.Array[BuildTrigger]
   var variableGroups: js.Array[VariableGroup]
-  var variables: ScalablyTyped.runtime.StringDictionary[BuildDefinitionVariable]
+  var variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
 }
 

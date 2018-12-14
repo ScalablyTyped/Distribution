@@ -20,7 +20,7 @@ object NeuronNs extends js.Object {
     var weight: scala.Double = js.native
   }
   
-  var connection: ScalablyTyped.runtime.Instantiable3[
+  var connection: org.scalablytyped.runtime.Instantiable3[
     /* from */ scala.Double, 
     /* to */ scala.Double, 
     /* weight */ js.UndefOr[/* weight */ scala.Double], 

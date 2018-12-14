@@ -17,7 +17,7 @@ trait IRouteConstructor
 	 * @param {string} [method] - The HTTP method to match the Route against.
 	 * @returns {Route}
 	 */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* match */ workboxDashSwLib.MatchCallback, 
       /* handler */ workboxDashSwLib.HandlerCallback, 
       Route
@@ -29,7 +29,7 @@ ScalablyTyped.runtime.Instantiable2[
 	 * @param {string} [method] - The HTTP method to match the Route against.
 	 * @returns {Route}
 	 */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* match */ workboxDashSwLib.MatchCallback, 
       /* handler */ workboxDashSwLib.HandlerCallback, 
       /* method */ java.lang.String, 

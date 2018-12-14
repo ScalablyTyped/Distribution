@@ -59,6 +59,6 @@ class $Refs ()
        * @param types (optional) Optionally only return values from certain locations ("file", "http", etc.)
        */
   /* CompleteClass */
-  override def values(types: java.lang.String*): ScalablyTyped.runtime.StringDictionary[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
+  override def values(types: java.lang.String*): org.scalablytyped.runtime.StringDictionary[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = js.native
 }
 

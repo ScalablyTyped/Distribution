@@ -1863,7 +1863,7 @@ object d3ModMembers extends js.Object {
   def easeSinInOut(normalizedTime: scala.Double): scala.Double = js.native
   def easeSinOut(normalizedTime: scala.Double): scala.Double = js.native
   def entries(obj: js.Object): js.Array[d3DashCollectionLib.Anon_KeyValue] = js.native
-  def entries[T](obj: ScalablyTyped.runtime.StringDictionary[T]): js.Array[d3DashCollectionLib.Anon_Key[T]] = js.native
+  def entries[T](obj: org.scalablytyped.runtime.StringDictionary[T]): js.Array[d3DashCollectionLib.Anon_Key[T]] = js.native
   def entries[T](obj: stdLib.ArrayLike[T]): js.Array[d3DashCollectionLib.Anon_Key[T]] = js.native
   def extent(array: stdLib.ArrayLike[java.lang.String]): (js.Tuple2[java.lang.String, java.lang.String]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
   def extent[T](
@@ -2198,7 +2198,7 @@ object d3ModMembers extends js.Object {
   def html(url: java.lang.String): js.Promise[stdLib.Document] = js.native
   def html(url: java.lang.String, init: stdLib.RequestInit): js.Promise[stdLib.Document] = js.native
   def image(url: java.lang.String): js.Promise[stdLib.HTMLImageElement] = js.native
-  def image(url: java.lang.String, init: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Promise[stdLib.HTMLImageElement] = js.native
+  def image(url: java.lang.String, init: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[stdLib.HTMLImageElement] = js.native
   def interpolate(
     a: d3DashColorLib.d3DashColorMod.ColorCommonInstance,
     b: d3DashColorLib.d3DashColorMod.ColorCommonInstance
@@ -2374,8 +2374,8 @@ object d3ModMembers extends js.Object {
     ]
   ): d3DashCollectionLib.d3DashCollectionMod.Map[T] = js.native
   def map[T](d3Map: d3DashCollectionLib.d3DashCollectionMod.Map[T]): d3DashCollectionLib.d3DashCollectionMod.Map[T] = js.native
-  def map[T](obj: ScalablyTyped.runtime.NumberDictionary[T]): d3DashCollectionLib.d3DashCollectionMod.Map[T] = js.native
-  def map[T](obj: ScalablyTyped.runtime.StringDictionary[T]): d3DashCollectionLib.d3DashCollectionMod.Map[T] = js.native
+  def map[T](obj: org.scalablytyped.runtime.NumberDictionary[T]): d3DashCollectionLib.d3DashCollectionMod.Map[T] = js.native
+  def map[T](obj: org.scalablytyped.runtime.StringDictionary[T]): d3DashCollectionLib.d3DashCollectionMod.Map[T] = js.native
   def matcher(selector: java.lang.String): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, scala.Boolean] = js.native
   def max(array: stdLib.ArrayLike[java.lang.String]): js.UndefOr[java.lang.String] = js.native
   def max[T](
@@ -2453,7 +2453,7 @@ object d3ModMembers extends js.Object {
   def pairs[T, U](array: stdLib.ArrayLike[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = js.native
   def partition[Datum](): d3DashHierarchyLib.d3DashHierarchyMod.PartitionLayout[Datum] = js.native
   def path(): d3DashPathLib.d3DashPathMod.Path = js.native
-  def permute[T](array: ScalablyTyped.runtime.NumberDictionary[T], keys: stdLib.ArrayLike[scala.Double]): js.Array[T] = js.native
+  def permute[T](array: org.scalablytyped.runtime.NumberDictionary[T], keys: stdLib.ArrayLike[scala.Double]): js.Array[T] = js.native
   def permute[T, K /* <: java.lang.String */](`object`: T, keys: stdLib.ArrayLike[K]): js.Array[
     /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
   ] = js.native
@@ -2639,7 +2639,7 @@ object d3ModMembers extends js.Object {
   def shuffle[T](array: js.Array[T]): js.Array[T] = js.native
   def shuffle[T](array: js.Array[T], lo: scala.Double): js.Array[T] = js.native
   def shuffle[T](array: js.Array[T], lo: scala.Double, hi: scala.Double): js.Array[T] = js.native
-  def stack(): d3DashShapeLib.d3DashShapeMod.Stack[_, ScalablyTyped.runtime.StringDictionary[scala.Double], java.lang.String] = js.native
+  def stack(): d3DashShapeLib.d3DashShapeMod.Stack[_, org.scalablytyped.runtime.StringDictionary[scala.Double], java.lang.String] = js.native
   def stackOffsetDiverging(series: d3DashShapeLib.d3DashShapeMod.Series[_, _], order: js.Array[scala.Double]): scala.Unit = js.native
   def stackOffsetExpand(series: d3DashShapeLib.d3DashShapeMod.Series[_, _], order: js.Array[scala.Double]): scala.Unit = js.native
   def stackOffsetNone(series: d3DashShapeLib.d3DashShapeMod.Series[_, _], order: js.Array[scala.Double]): scala.Unit = js.native
@@ -2872,7 +2872,7 @@ object d3ModMembers extends js.Object {
   def utcYears(start: stdLib.Date, stop: stdLib.Date): js.Array[stdLib.Date] = js.native
   def utcYears(start: stdLib.Date, stop: stdLib.Date, step: scala.Double): js.Array[stdLib.Date] = js.native
   def values(obj: js.Object): js.Array[_] = js.native
-  def values[T](obj: ScalablyTyped.runtime.StringDictionary[T]): js.Array[T] = js.native
+  def values[T](obj: org.scalablytyped.runtime.StringDictionary[T]): js.Array[T] = js.native
   def values[T](obj: stdLib.ArrayLike[T]): js.Array[T] = js.native
   def variance[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
   def variance[T](

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SchemaType
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[joiLib.joiMod.AnySchema | SchemaType]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[joiLib.joiMod.AnySchema | SchemaType]
 

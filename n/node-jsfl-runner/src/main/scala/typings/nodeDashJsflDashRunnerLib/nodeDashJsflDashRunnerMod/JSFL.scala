@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait JSFL
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def init(args: js.Any*): scala.Unit
 }
 

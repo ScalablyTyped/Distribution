@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("app-root-dir", JSImport.Namespace)
 @js.native
 object appDashRootDashDirModMembers
-  extends ScalablyTyped.runtime.TopLevel[AppRootDir]
+  extends org.scalablytyped.runtime.TopLevel[AppRootDir]
 

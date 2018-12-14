@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Theme extends js.Object {
   var borderRadius: scala.Double
-  var colors: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var colors: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var spacing: ThemeSpacing
 }
 

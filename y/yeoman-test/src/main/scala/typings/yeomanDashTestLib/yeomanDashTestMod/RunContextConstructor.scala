@@ -14,8 +14,9 @@ trait RunContextConstructor
 	 *                                      is provided, then namespace is assumed to be
 	 *                                      'gen:test' in all cases
 	 */
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable2[
       (/* Generator */ java.lang.String) | (/* Generator */ Constructor[yeomanDashGeneratorLib.yeomanDashGeneratorMod.namespaced]), 
+      /* settings */ RunContextSettings, 
       RunContext
     ]
      with /**
@@ -25,9 +26,8 @@ ScalablyTyped.runtime.Instantiable1[
 	 *                                      is provided, then namespace is assumed to be
 	 *                                      'gen:test' in all cases
 	 */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable1[
       (/* Generator */ java.lang.String) | (/* Generator */ Constructor[yeomanDashGeneratorLib.yeomanDashGeneratorMod.namespaced]), 
-      /* settings */ RunContextSettings, 
       RunContext
     ]
 

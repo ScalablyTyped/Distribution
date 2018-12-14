@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("nodegit/blame-options", "BlameOptions")
 @js.native
 class BlameOptions ()
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var flags: js.UndefOr[scala.Double] = js.native
   var maxLine: js.UndefOr[scala.Double] = js.native
   var minLine: js.UndefOr[scala.Double] = js.native

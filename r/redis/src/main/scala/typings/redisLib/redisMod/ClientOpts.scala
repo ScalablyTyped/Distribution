@@ -21,7 +21,7 @@ trait ClientOpts extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
   var port: js.UndefOr[scala.Double] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
-  var rename_commands: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String] | scala.Null] = js.undefined
+  var rename_commands: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null] = js.undefined
   var retry_max_delay: js.UndefOr[scala.Double] = js.undefined
   var retry_strategy: js.UndefOr[RetryStrategy] = js.undefined
   var retry_unfulfilled_commands: js.UndefOr[scala.Boolean] = js.undefined

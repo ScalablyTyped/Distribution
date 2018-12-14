@@ -14,6 +14,6 @@ trait Path2D extends CanvasPath {
 @JSGlobal("Path2D")
 @js.native
 object Path2D
-  extends ScalablyTyped.runtime.Instantiable1[(/* path */ Path2D) | (/* path */ java.lang.String), Path2D]
-     with ScalablyTyped.runtime.Instantiable0[Path2D]
+  extends org.scalablytyped.runtime.Instantiable0[Path2D]
+     with org.scalablytyped.runtime.Instantiable1[(/* path */ Path2D) | (/* path */ java.lang.String), Path2D]
 

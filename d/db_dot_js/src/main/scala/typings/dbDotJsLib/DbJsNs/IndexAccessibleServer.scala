@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IndexAccessibleServer
-  extends /* store */ ScalablyTyped.runtime.StringDictionary[TypedObjectStoreServer[_]]
+  extends /* store */ org.scalablytyped.runtime.StringDictionary[TypedObjectStoreServer[_]]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Name
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[KnockoutPageGenerator] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[KnockoutPageGenerator] {
   var sliding: KnockoutSlidingPageGenerator
 }
 

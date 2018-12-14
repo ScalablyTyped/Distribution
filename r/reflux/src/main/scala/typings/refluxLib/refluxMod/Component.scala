@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("reflux", "Component")
 @js.native
-class Component[TOfStore /* <: ScalablyTyped.runtime.Instantiable0[Store] */, P, S] ()
+class Component[TOfStore /* <: org.scalablytyped.runtime.Instantiable0[Store] */, P, S] ()
   extends reactLib.reactMod.Component[P, S, js.Any] {
   @JSName("props")
   var props_Component: P = js.native

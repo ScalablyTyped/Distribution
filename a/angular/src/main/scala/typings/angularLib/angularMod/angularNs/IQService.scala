@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
      */
 @js.native
 trait IQService
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       /* resolver */ js.Function2[
         /* resolve */ IQResolveReject[js.Object], 
         /* reject */ IQResolveReject[js.Any], 
@@ -118,13 +118,13 @@ trait IQService
            *
            * @param promises A list or hash of promises.
            */
-  def race[T](promises: ScalablyTyped.runtime.StringDictionary[IPromise[T]]): IPromise[T] = js.native
+  def race[T](promises: js.Array[IPromise[T]]): IPromise[T] = js.native
   /**
            * Returns a promise that resolves or rejects as soon as one of those promises resolves or rejects, with the value or reason from that promise.
            *
            * @param promises A list or hash of promises.
            */
-  def race[T](promises: js.Array[IPromise[T]]): IPromise[T] = js.native
+  def race[T](promises: org.scalablytyped.runtime.StringDictionary[IPromise[T]]): IPromise[T] = js.native
   /**
            * Creates a promise that is resolved as rejected with the specified reason. This api should be used to forward rejection in a chain of promises. If you are dealing with the last promise in a promise chain, you don't need to worry about it.
            *

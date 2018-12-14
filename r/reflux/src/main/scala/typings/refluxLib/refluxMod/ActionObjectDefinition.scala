@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ActionObjectDefinition
-  extends /* propertyName */ ScalablyTyped.runtime.StringDictionary[ActionParameters]
+  extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[ActionParameters]
 

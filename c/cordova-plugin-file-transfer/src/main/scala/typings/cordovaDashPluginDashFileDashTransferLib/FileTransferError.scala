@@ -33,7 +33,7 @@ trait FileTransferError extends js.Object {
 @js.native
 object FileTransferError
   extends /** Constructor for FileTransferError object */
-ScalablyTyped.runtime.Instantiable6[
+org.scalablytyped.runtime.Instantiable6[
       /* code */ js.UndefOr[/* code */ scala.Double], 
       /* source */ js.UndefOr[/* source */ java.lang.String], 
       /* target */ js.UndefOr[/* target */ java.lang.String], 

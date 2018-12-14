@@ -10,7 +10,7 @@ trait IgMap
   extends /**
 	 * Option for igMap
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Sets or gets the automatic height to add when automatically adding margins to the map.
   	 */

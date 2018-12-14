@@ -15,5 +15,5 @@ trait MSFIDOSignature extends js.Object {
 @JSGlobal("MSFIDOSignature")
 @js.native
 object MSFIDOSignature
-  extends ScalablyTyped.runtime.Instantiable0[MSFIDOSignature]
+  extends org.scalablytyped.runtime.Instantiable0[MSFIDOSignature]
 

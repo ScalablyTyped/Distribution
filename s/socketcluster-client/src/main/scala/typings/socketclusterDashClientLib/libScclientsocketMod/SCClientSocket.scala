@@ -16,7 +16,7 @@ trait SCClientSocket
   var UNAUTHENTICATED: socketclusterDashClientLib.socketclusterDashClientLibStrings.unauthenticated = js.native
   var authState: socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.AuthStates = js.native
   var authToken: js.Object | scala.Null = js.native
-  var channels: ScalablyTyped.runtime.StringDictionary[scDashChannelLib.scDashChannelMod.SCChannel] = js.native
+  var channels: org.scalablytyped.runtime.StringDictionary[scDashChannelLib.scDashChannelMod.SCChannel] = js.native
   var id: java.lang.String = js.native
   var pendingReconnect: scala.Boolean = js.native
   var pendingReconnectTimeout: scala.Double = js.native

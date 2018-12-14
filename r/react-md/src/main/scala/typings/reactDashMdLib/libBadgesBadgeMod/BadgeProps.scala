@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait BadgeProps
   extends reactDashMdLib.libMod.Props
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var badgeClassName: js.UndefOr[java.lang.String] = js.undefined
   var badgeContent: scala.Double | java.lang.String | reactLib.reactMod.ReactNs.ReactNode
   var badgeId: java.lang.String | scala.Double

@@ -16,7 +16,7 @@ trait httpSRs
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[httpSRs] {
+org.scalablytyped.runtime.Instantiable0[httpSRs] {
   /**
        * <p>See <code>Socket.write</code> for more information about the data argument</p>
        * 

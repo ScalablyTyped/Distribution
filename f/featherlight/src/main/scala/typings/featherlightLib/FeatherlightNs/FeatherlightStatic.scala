@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FeatherlightStatic
-  extends ScalablyTyped.runtime.Instantiable0[Featherlight]
-     with ScalablyTyped.runtime.Instantiable1[
-      (/* $content */ featherlightLib.JQuery) | (/* $content */ java.lang.String) | (/* config */ Config), 
-      Featherlight
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[Featherlight]
+     with org.scalablytyped.runtime.Instantiable2[
       (/* $content */ featherlightLib.JQuery) | (/* $content */ java.lang.String), 
       /* config */ Config, 
+      Featherlight
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* $content */ featherlightLib.JQuery) | (/* $content */ java.lang.String) | (/* config */ Config), 
       Featherlight
     ] {
   var autoBind: scala.Boolean | java.lang.String = js.native

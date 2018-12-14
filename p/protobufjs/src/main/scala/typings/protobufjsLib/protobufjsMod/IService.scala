@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait IService extends INamespace {
   /** Method descriptors */
-  var methods: ScalablyTyped.runtime.StringDictionary[IMethod]
+  var methods: org.scalablytyped.runtime.StringDictionary[IMethod]
 }
 

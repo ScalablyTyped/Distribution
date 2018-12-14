@@ -19,7 +19,7 @@ object srcRender3I18nMod extends js.Object {
   def i18nExp[T](expression: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
   def i18nPostprocess(
     message: java.lang.String,
-    replacements: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    replacements: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ): java.lang.String = js.native
   def i18nStart(index: scala.Double, message: java.lang.String): scala.Unit = js.native
   def i18nStart(index: scala.Double, message: java.lang.String, subTemplateIndex: scala.Double): scala.Unit = js.native

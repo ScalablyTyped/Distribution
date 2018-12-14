@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Node
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var height: scala.Double
   var width: scala.Double
   var x: scala.Double

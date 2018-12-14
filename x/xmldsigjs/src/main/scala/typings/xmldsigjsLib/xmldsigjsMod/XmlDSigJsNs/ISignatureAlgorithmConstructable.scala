@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ISignatureAlgorithmConstructable
-  extends ScalablyTyped.runtime.Instantiable0[ISignatureAlgorithm]
+  extends org.scalablytyped.runtime.Instantiable0[ISignatureAlgorithm]
 

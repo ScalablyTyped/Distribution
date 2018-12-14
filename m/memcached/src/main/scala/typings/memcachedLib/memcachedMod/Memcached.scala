@@ -134,7 +134,7 @@ trait Memcached
     cb: js.ThisFunction2[
       /* this */ js.UndefOr[scala.Nothing], 
       /* err */ js.Any, 
-      /* data */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+      /* data */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       scala.Unit
     ]
   ): scala.Unit = js.native

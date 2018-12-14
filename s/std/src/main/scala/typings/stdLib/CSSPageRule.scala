@@ -16,5 +16,5 @@ trait CSSPageRule extends CSSRule {
 @JSGlobal("CSSPageRule")
 @js.native
 object CSSPageRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSPageRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSPageRule]
 

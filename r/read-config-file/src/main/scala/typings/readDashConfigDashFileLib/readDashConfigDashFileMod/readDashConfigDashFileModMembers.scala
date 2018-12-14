@@ -12,7 +12,7 @@ object readDashConfigDashFileModMembers extends js.Object {
   def getConfig[T](request: ReadConfigRequest): js.Promise[ReadConfigResult[T] | scala.Null] = js.native
   def getConfig[T](request: ReadConfigRequest, configPath: java.lang.String): js.Promise[ReadConfigResult[T] | scala.Null] = js.native
   def loadConfig[T](request: ReadConfigRequest): js.Promise[ReadConfigResult[T] | scala.Null] = js.native
-  def loadEnv(envFile: java.lang.String): js.Promise[ScalablyTyped.runtime.StringDictionary[java.lang.String] | scala.Null] = js.native
+  def loadEnv(envFile: java.lang.String): js.Promise[org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null] = js.native
   def loadParentConfig[T](request: ReadConfigRequest, spec: java.lang.String): js.Promise[ReadConfigResult[T]] = js.native
   def orIfFileNotExist[T](promise: js.Promise[T], fallbackValue: T): js.Promise[T] = js.native
   def orNullIfFileNotExist[T](promise: js.Promise[T]): js.Promise[T | scala.Null] = js.native

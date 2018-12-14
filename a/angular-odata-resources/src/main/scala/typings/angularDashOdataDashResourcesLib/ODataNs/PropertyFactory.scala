@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PropertyFactory
-  extends ScalablyTyped.runtime.Instantiable1[/* value */ java.lang.String, Property]
+  extends org.scalablytyped.runtime.Instantiable1[/* value */ java.lang.String, Property]
 

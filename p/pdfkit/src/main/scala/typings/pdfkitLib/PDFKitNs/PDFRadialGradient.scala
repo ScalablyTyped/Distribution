@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PDFRadialGradient
   extends PDFGradient
-     with ScalablyTyped.runtime.Instantiable5[
+     with org.scalablytyped.runtime.Instantiable5[
       /* document */ js.Any, 
       /* x1 */ scala.Double, 
       /* y1 */ scala.Double, 

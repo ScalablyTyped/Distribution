@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait LogLevels
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var debug: lambdaDashLogLib.lambdaDashLogLibStrings.log | lambdaDashLogLib.lambdaDashLogLibNumbers.`false`
   var error: lambdaDashLogLib.lambdaDashLogLibStrings.error
   var info: lambdaDashLogLib.lambdaDashLogLibStrings.info

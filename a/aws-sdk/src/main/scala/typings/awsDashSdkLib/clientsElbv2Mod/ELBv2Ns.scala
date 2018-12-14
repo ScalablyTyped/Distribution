@@ -77,7 +77,7 @@ object ELBv2Ns extends js.Object {
   
   
   trait AuthenticateCognitoActionAuthenticationRequestExtraParams
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AuthenticateCognitoActionAuthenticationRequestParamValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AuthenticateCognitoActionAuthenticationRequestParamValue]
   
   
   trait AuthenticateCognitoActionConfig extends js.Object {
@@ -117,7 +117,7 @@ object ELBv2Ns extends js.Object {
   
   
   trait AuthenticateOidcActionAuthenticationRequestExtraParams
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AuthenticateOidcActionAuthenticationRequestParamValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AuthenticateOidcActionAuthenticationRequestParamValue]
   
   
   trait AuthenticateOidcActionConfig extends js.Object {

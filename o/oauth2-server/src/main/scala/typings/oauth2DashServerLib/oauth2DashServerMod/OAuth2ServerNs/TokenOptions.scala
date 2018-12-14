@@ -23,8 +23,8 @@ trait TokenOptions extends js.Object {
            * Additional supported grant types.
            */
   var extendedGrantTypes: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
-      ScalablyTyped.runtime.Instantiable1[/* options */ TokenOptions, AbstractGrantType]
+    org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.Instantiable1[/* options */ TokenOptions, AbstractGrantType]
     ]
   ] = js.undefined
   /**

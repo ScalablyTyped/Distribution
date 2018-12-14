@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class DebugElement protected () extends DebugNode {
   def this(nativeNode: js.Any, parent: js.Any, _debugContext: atAngularCoreLib.srcViewMod.DebugContext) = this()
-  var attributes: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Null] = js.native
+  var attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null] = js.native
   var childNodes: js.Array[DebugNode] = js.native
   val children: js.Array[DebugElement] = js.native
-  var classes: ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  var classes: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   var name: java.lang.String = js.native
   var nativeElement: js.Any = js.native
-  var properties: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var styles: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Null] = js.native
+  var properties: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var styles: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null] = js.native
   def addChild(child: DebugNode): scala.Unit = js.native
   def insertBefore(refChild: DebugNode, newChild: DebugNode): scala.Unit = js.native
   def insertChildrenAfter(child: DebugNode, newChildren: js.Array[DebugNode]): scala.Unit = js.native

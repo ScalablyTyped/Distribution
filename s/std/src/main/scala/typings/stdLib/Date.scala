@@ -39,7 +39,7 @@ trait Date extends js.Object {
        * @throws {TypeError} If 'hint' was given something other than "number", "string", or "default".
        * @returns A number if 'hint' was "number", a string if 'hint' was "string" or "default".
        */
-  @JSName(ScalablyTyped.runtime.Symbol.toPrimitive)
+  @JSName(org.scalablytyped.runtime.Symbol.toPrimitive)
   var toPrimitive: (js.Function1[stdLib.stdLibStrings.default, java.lang.String]) with (js.Function1[stdLib.stdLibStrings.string, java.lang.String]) with (js.Function1[stdLib.stdLibStrings.number, scala.Double]) with (js.Function1[/* hint */ java.lang.String, java.lang.String | scala.Double]) = js.native
   /** Gets the day-of-the-month, using local time. */
   def getDate(): scala.Double = js.native

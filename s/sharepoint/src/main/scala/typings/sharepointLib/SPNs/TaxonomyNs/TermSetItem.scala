@@ -11,7 +11,7 @@ class TermSetItem () extends TaxonomyItem {
   def createTerm(name: java.lang.String, lcid: scala.Double, newTermId: sharepointLib.SPNs.Guid): Term = js.native
   def deleteAllCustomProperties(): scala.Unit = js.native
   def deleteCustomProperty(name: java.lang.String): scala.Unit = js.native
-  def get_customProperties(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def get_customProperties(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def get_customSortOrder(): java.lang.String = js.native
   def get_isAvailableForTagging(): scala.Boolean = js.native
   def get_owner(): java.lang.String = js.native

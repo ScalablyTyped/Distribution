@@ -19,8 +19,8 @@ trait Options extends js.Object {
            * @default null
            */
   var configFiles: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
-      ScalablyTyped.runtime.StringDictionary[java.lang.String | finedLib.finedMod.finedNs.PathSpec]
+    org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.StringDictionary[java.lang.String | finedLib.finedMod.finedNs.PathSpec]
     ]
   ] = js.undefined
   /**

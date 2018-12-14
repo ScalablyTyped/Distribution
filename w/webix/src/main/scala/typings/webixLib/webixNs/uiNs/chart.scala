@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 class chart () extends baseview {
   @JSName("$scope")
   var $scope: js.Any = js.native
-  var colormap: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var colormap: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("config")
   var config_chart: chartConfig = js.native
   var data: webixLib.webixNs.DataStore = js.native
   @JSName("on_click")
   var on_click_Original: webixLib.webixNs.WebixCallback = js.native
-  var on_context: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("on_dblclick")
   var on_dblclick_Original: webixLib.webixNs.WebixCallback = js.native
   @JSName("on_mouse_move")
   var on_mouse_move_Original: webixLib.webixNs.WebixCallback = js.native
-  var presets: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var presets: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native

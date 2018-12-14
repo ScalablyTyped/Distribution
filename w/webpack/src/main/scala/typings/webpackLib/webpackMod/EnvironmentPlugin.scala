@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class EnvironmentPlugin protected ()
   extends webpackLib.webpackMod.webpackNs.EnvironmentPlugin {
-  def this(envs: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
   def this(envs: js.Array[java.lang.String]) = this()
+  def this(envs: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /* CompleteClass */
   @JSName("apply")
   override def apply(args: js.Any*): scala.Unit = js.native

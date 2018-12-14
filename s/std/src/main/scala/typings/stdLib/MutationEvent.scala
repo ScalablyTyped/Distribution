@@ -30,7 +30,7 @@ trait MutationEvent extends Event {
 @JSGlobal("MutationEvent")
 @js.native
 object MutationEvent
-  extends ScalablyTyped.runtime.Instantiable0[MutationEvent] {
+  extends org.scalablytyped.runtime.Instantiable0[MutationEvent] {
   val ADDITION: scala.Double = js.native
   val MODIFICATION: scala.Double = js.native
   val REMOVAL: scala.Double = js.native

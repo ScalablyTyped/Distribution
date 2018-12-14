@@ -45,7 +45,7 @@ class Dropdown[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_,
      * **`css`**`: string`
      * : When given, adds an extra set of CSS styles to the menu control.
      */
-  def this(content: js.Array[MenuElement[S]], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(content: js.Array[MenuElement[S]], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
      * Render the dropdown menu and sub-items.
      */

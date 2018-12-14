@@ -27,15 +27,15 @@ object MongoNs extends js.Object {
   
   @js.native
   trait Collection[T] extends js.Object {
-    def _dropIndex(keys: ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String]): scala.Unit = js.native
     def _dropIndex(keys: java.lang.String): scala.Unit = js.native
-    def _ensureIndex(keys: ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String]): scala.Unit = js.native
-    def _ensureIndex(
-      keys: ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String],
-      options: ScalablyTyped.runtime.StringDictionary[js.Any]
-    ): scala.Unit = js.native
+    def _dropIndex(keys: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]): scala.Unit = js.native
     def _ensureIndex(keys: java.lang.String): scala.Unit = js.native
-    def _ensureIndex(keys: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    def _ensureIndex(keys: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    def _ensureIndex(keys: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]): scala.Unit = js.native
+    def _ensureIndex(
+      keys: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String],
+      options: org.scalablytyped.runtime.StringDictionary[js.Any]
+    ): scala.Unit = js.native
     def allow(options: meteorDashTypingsLib.Anon_Insert[T]): scala.Boolean = js.native
     def deny(options: meteorDashTypingsLib.Anon_Insert[T]): scala.Boolean = js.native
     def find(): Cursor[T] = js.native
@@ -114,9 +114,9 @@ object MongoNs extends js.Object {
   
   @js.native
   trait CollectionStatic
-    extends ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Collection[js.Object]]
-       with ScalablyTyped.runtime.Instantiable0[Collection[js.Object]]
-       with ScalablyTyped.runtime.Instantiable2[
+    extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Collection[js.Object]]
+       with org.scalablytyped.runtime.Instantiable0[Collection[js.Object]]
+       with org.scalablytyped.runtime.Instantiable2[
           (/* name */ java.lang.String) | (/* name */ scala.Null), 
           /* options */ meteorDashTypingsLib.Anon_Transform, 
           Collection[js.Object]
@@ -143,11 +143,11 @@ object MongoNs extends js.Object {
   
   @js.native
   trait CursorStatic
-    extends ScalablyTyped.runtime.Instantiable0[Cursor[js.Object]]
+    extends org.scalablytyped.runtime.Instantiable0[Cursor[js.Object]]
   
   
   trait FieldSpecifier
-    extends /* id */ ScalablyTyped.runtime.StringDictionary[stdLib.Number]
+    extends /* id */ org.scalablytyped.runtime.StringDictionary[stdLib.Number]
   
   
   trait Modifier extends js.Object
@@ -157,8 +157,8 @@ object MongoNs extends js.Object {
   
   @js.native
   trait ObjectIDStatic
-    extends ScalablyTyped.runtime.Instantiable0[ObjectID]
-       with ScalablyTyped.runtime.Instantiable1[/* hexString */ java.lang.String, ObjectID]
+    extends org.scalablytyped.runtime.Instantiable0[ObjectID]
+       with org.scalablytyped.runtime.Instantiable1[/* hexString */ java.lang.String, ObjectID]
   
   
   trait ObserveCallbacks extends js.Object {
@@ -211,7 +211,7 @@ object MongoNs extends js.Object {
   
   trait Selector
     extends stdLib.Object
-       with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+       with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
   
   trait SortSpecifier extends js.Object

@@ -16,7 +16,7 @@ class Decoration () extends js.Object {
      * The spec provided when creating this decoration. Can be useful
      * if you've stored extra information in that object.
      */
-  var spec: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var spec: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
      * The end position. Will be the same as `from` for [widget
      * decorations](#view.Decoration^widget).
@@ -65,7 +65,7 @@ object Decoration extends js.Object {
     from: scala.Double,
     to: scala.Double,
     attrs: prosemirrorDashViewLib.prosemirrorDashViewMod.DecorationAttrs,
-    spec: ScalablyTyped.runtime.StringDictionary[js.Any]
+    spec: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
   /**
      * Creates a widget decoration, which is a DOM node that's shown in

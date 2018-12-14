@@ -10,11 +10,11 @@ trait SeparatorStatic
   extends /**
              * @param line Separation line content (facultative)
              */
-ScalablyTyped.runtime.Instantiable0[Separator]
+org.scalablytyped.runtime.Instantiable0[Separator]
      with /**
              * @param line Separation line content (facultative)
              */
-ScalablyTyped.runtime.Instantiable1[/* line */ java.lang.String, Separator] {
+org.scalablytyped.runtime.Instantiable1[/* line */ java.lang.String, Separator] {
   /**
                * Helper function returning false if object is a separator
                * @param obj object to test against

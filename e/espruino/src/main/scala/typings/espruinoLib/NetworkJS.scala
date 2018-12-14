@@ -16,5 +16,5 @@ trait NetworkJS
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[NetworkJS]
+org.scalablytyped.runtime.Instantiable0[NetworkJS]
 

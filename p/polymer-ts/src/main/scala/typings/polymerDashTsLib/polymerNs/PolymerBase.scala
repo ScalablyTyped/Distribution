@@ -17,7 +17,7 @@ class PolymerBase ()
   override val assignedSlot: stdLib.HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
-  var customStyle: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var customStyle: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

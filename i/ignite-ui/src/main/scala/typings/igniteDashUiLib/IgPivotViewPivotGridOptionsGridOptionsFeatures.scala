@@ -10,5 +10,5 @@ trait IgPivotViewPivotGridOptionsGridOptionsFeatures
   extends /**
 	 * Option for IgPivotViewPivotGridOptionsGridOptionsFeatures
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

@@ -48,5 +48,5 @@ trait DataTransfer extends js.Object {
 @JSGlobal("DataTransfer")
 @js.native
 object DataTransfer
-  extends ScalablyTyped.runtime.Instantiable0[DataTransfer]
+  extends org.scalablytyped.runtime.Instantiable0[DataTransfer]
 

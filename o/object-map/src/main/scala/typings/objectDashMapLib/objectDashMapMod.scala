@@ -9,25 +9,25 @@ import scala.scalajs.js.annotation._
 @js.native
 object objectDashMapMod extends js.Object {
   def apply[TInput, TOutput, TThis](
-    target: ScalablyTyped.runtime.StringDictionary[TInput],
+    target: org.scalablytyped.runtime.StringDictionary[TInput],
     callback: js.ThisFunction3[
       /* this */ TThis, 
       /* currentValue */ TInput, 
       /* key */ java.lang.String, 
-      /* object */ ScalablyTyped.runtime.StringDictionary[TInput], 
+      /* object */ org.scalablytyped.runtime.StringDictionary[TInput], 
       TOutput
     ]
-  ): ScalablyTyped.runtime.StringDictionary[TOutput] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[TOutput] = js.native
   def apply[TInput, TOutput, TThis](
-    target: ScalablyTyped.runtime.StringDictionary[TInput],
+    target: org.scalablytyped.runtime.StringDictionary[TInput],
     callback: js.ThisFunction3[
       /* this */ TThis, 
       /* currentValue */ TInput, 
       /* key */ java.lang.String, 
-      /* object */ ScalablyTyped.runtime.StringDictionary[TInput], 
+      /* object */ org.scalablytyped.runtime.StringDictionary[TInput], 
       TOutput
     ],
     thisArg: TThis
-  ): ScalablyTyped.runtime.StringDictionary[TOutput] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[TOutput] = js.native
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait EventMap
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[EventCallback]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[EventCallback]
 

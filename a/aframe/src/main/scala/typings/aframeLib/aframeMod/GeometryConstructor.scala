@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GeometryConstructor[T /* <: js.Object */]
-  extends ScalablyTyped.runtime.Instantiable0[T with Geometry[_]]
+  extends org.scalablytyped.runtime.Instantiable0[T with Geometry[_]]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("store/storages/sessionStorage", JSImport.Namespace)
 @js.native
 object storagesSessionStorageMod
-  extends ScalablyTyped.runtime.TopLevel[StoreJsStorage]
+  extends org.scalablytyped.runtime.TopLevel[StoreJsStorage]
 

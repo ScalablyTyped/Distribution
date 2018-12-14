@@ -10,7 +10,7 @@ trait MashupDataSourceMashupSettings
   extends /**
 	 * Option for MashupDataSourceMashupSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * An array of $.ig.DataSource instances holding the disperse data.
   	 */

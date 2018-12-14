@@ -41,14 +41,14 @@ trait SingularStyle extends js.Object {
            * http://js.cytoscape.org/#ele.numericStyleUnits
            */
   def numericStyleUnits(name: java.lang.String): js.Any = js.native
-  def renderedCss(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def renderedCss(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def renderedCss(name: java.lang.String): js.Any = js.native
   /**
            * Get a name-value pair object containing rendered visual
            * style properties and their values for the element.
            * @param name The name of the visual style property to get.
            */
-  def renderedStyle(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def renderedStyle(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def renderedStyle(name: java.lang.String): js.Any = js.native
   /**
            * Get whether the element's effective opacity is completely transparent,

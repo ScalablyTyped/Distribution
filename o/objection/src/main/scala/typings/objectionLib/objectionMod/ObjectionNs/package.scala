@@ -45,8 +45,8 @@ package object ObjectionNs {
   ]
   type PartialUpdate[QM /* <: Model */] = objectionLib.objectionLibStrings.PartialUpdate with QM
   type Plugin = js.Function1[
-    /* modelClass */ ScalablyTyped.runtime.Instantiable0[Model], 
-    ScalablyTyped.runtime.Instantiable0[Model]
+    /* modelClass */ org.scalablytyped.runtime.Instantiable0[Model], 
+    org.scalablytyped.runtime.Instantiable0[Model]
   ]
   type QueryBuilderYieldingOne[QM /* <: Model */] = QueryBuilder[QM, QM, QM]
   type QueryBuilderYieldingOneOrNone[QM /* <: Model */] = QueryBuilder[QM, QM, js.UndefOr[QM]]

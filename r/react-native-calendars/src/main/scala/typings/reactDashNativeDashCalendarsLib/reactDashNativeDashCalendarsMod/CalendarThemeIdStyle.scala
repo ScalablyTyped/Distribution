@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CalendarThemeIdStyle
-  extends /* themeId */ ScalablyTyped.runtime.StringDictionary[
+  extends /* themeId */ org.scalablytyped.runtime.StringDictionary[
       reactDashNativeLib.reactDashNativeMod.ViewStyle | reactDashNativeLib.reactDashNativeMod.TextStyle
     ]
 

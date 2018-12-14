@@ -11,7 +11,7 @@ trait Options
 		 * In addition to the options actually used by this plugin, you can use this hash to pass arbitrary data through
 		 * to your template.
 		 */
-/* option */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* option */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   		 * Emit the file only if it was changed.
   		 * Default: `true`.
@@ -73,7 +73,7 @@ trait Options
   		 * Default: `{}`.
   		 */
   var meta: js.UndefOr[
-    htmlDashWebpackDashPluginLib.htmlDashWebpackDashPluginLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[js.Any]
+    htmlDashWebpackDashPluginLib.htmlDashWebpackDashPluginLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.undefined
   /**
   		 * Pass a html-minifier options object to minify the output.
@@ -109,7 +109,7 @@ trait Options
       /* assets */ TemplateParametersAssets, 
       /* options */ this.type, 
       _
-    ]) | ScalablyTyped.runtime.StringDictionary[js.Any]
+    ]) | org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.undefined
   /**
   		 * The title to use for the generated HTML document.

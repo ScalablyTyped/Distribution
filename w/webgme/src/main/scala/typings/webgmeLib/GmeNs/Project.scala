@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Project extends js.Object {
-  var branches: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var branches: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var delete: scala.Boolean
   var name: java.lang.String
   /** should always be true */

@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 
 trait IBindingMap
   extends /** Gets a binding by name. */
-/* name */ ScalablyTyped.runtime.StringDictionary[js.Array[IBinding]]
+/* name */ org.scalablytyped.runtime.StringDictionary[js.Array[IBinding]]
 

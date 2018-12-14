@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Options
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var Date: js.UndefOr[
     rDashScriptLib.rDashScriptLibStrings.ISO8601 | rDashScriptLib.rDashScriptLibStrings.epoch
   ] = js.undefined

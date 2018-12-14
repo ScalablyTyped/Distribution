@@ -14,5 +14,5 @@ trait CompoundObserver_static
   extends /**
 		 * Constructor
 		 */
-ScalablyTyped.runtime.Instantiable0[CompoundObserver_instance]
+org.scalablytyped.runtime.Instantiable0[CompoundObserver_instance]
 

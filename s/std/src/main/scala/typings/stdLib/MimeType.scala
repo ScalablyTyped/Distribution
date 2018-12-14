@@ -16,5 +16,5 @@ trait MimeType extends js.Object {
 @JSGlobal("MimeType")
 @js.native
 object MimeType
-  extends ScalablyTyped.runtime.Instantiable0[MimeType]
+  extends org.scalablytyped.runtime.Instantiable0[MimeType]
 

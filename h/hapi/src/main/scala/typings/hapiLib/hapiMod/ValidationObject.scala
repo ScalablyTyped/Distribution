@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ValidationObject
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[joiLib.joiMod.AnySchema]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[joiLib.joiMod.AnySchema]
 

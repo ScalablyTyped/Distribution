@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait VerticalTableRow
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[Cell]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[Cell]
 

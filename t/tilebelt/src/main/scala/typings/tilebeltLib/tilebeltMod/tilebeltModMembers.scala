@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("tilebelt", JSImport.Namespace)
 @js.native
 object tilebeltModMembers
-  extends ScalablyTyped.runtime.TopLevel[tilebeltLib.tilebeltNs.TilebeltStatic]
+  extends org.scalablytyped.runtime.TopLevel[tilebeltLib.tilebeltNs.TilebeltStatic]
 

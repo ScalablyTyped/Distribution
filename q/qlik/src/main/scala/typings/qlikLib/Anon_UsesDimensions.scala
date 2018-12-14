@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_UsesDimensions extends js.Object {
-  var items: js.UndefOr[ScalablyTyped.runtime.StringDictionary[qlikLib.qlikMod.CustomProperty]] = js.undefined
+  var items: js.UndefOr[org.scalablytyped.runtime.StringDictionary[qlikLib.qlikMod.CustomProperty]] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
   var ref: js.UndefOr[java.lang.String] = js.undefined

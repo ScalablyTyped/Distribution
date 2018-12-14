@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object connectorsNs extends js.Object {
   
   trait ConnectorArgumentsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Any]] {
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] {
     var jumpover: JumpOverConnectorArguments
     var normal: NormalConnectorArguments
     var rounded: RoundedConnectorArguments

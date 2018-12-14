@@ -51,5 +51,5 @@ trait ScreenOrientation extends EventTarget {
 @JSGlobal("ScreenOrientation")
 @js.native
 object ScreenOrientation
-  extends ScalablyTyped.runtime.Instantiable0[ScreenOrientation]
+  extends org.scalablytyped.runtime.Instantiable0[ScreenOrientation]
 

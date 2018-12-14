@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait People extends js.Object {
-  def append(keys: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def append(keys: ScalablyTyped.runtime.StringDictionary[js.Any], callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def append(keys: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def append(keys: org.scalablytyped.runtime.StringDictionary[js.Any], callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
            * Append a value to a list-valued people analytics property.
            *
@@ -82,8 +82,8 @@ trait People extends js.Object {
            *
            */
   def delete_user(): scala.Unit = js.native
-  def increment(keys: ScalablyTyped.runtime.StringDictionary[scala.Double]): scala.Unit = js.native
-  def increment(keys: ScalablyTyped.runtime.StringDictionary[scala.Double], callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def increment(keys: org.scalablytyped.runtime.StringDictionary[scala.Double]): scala.Unit = js.native
+  def increment(keys: org.scalablytyped.runtime.StringDictionary[scala.Double], callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
            * Increment/decrement numeric people analytics properties.
            *
@@ -162,8 +162,8 @@ trait People extends js.Object {
            * @param callback If provided, the callback will be called after the tracking event
            */
   def increment(prop: java.lang.String, value: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def set(keys: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def set(keys: ScalablyTyped.runtime.StringDictionary[js.Any], callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def set(keys: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def set(keys: org.scalablytyped.runtime.StringDictionary[js.Any], callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
            * Set properties on a user record.
            *
@@ -204,8 +204,8 @@ trait People extends js.Object {
            * @param callback If provided, the callback will be called after the tracking event
            */
   def set(prop: java.lang.String, value: js.Any, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def set_once(keys: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def set_once(keys: ScalablyTyped.runtime.StringDictionary[js.Any], callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def set_once(keys: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def set_once(keys: org.scalablytyped.runtime.StringDictionary[js.Any], callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
            * Set properties on a user record, only if they do not yet exist.
            * This will not overwrite previous people property values, unlike
@@ -289,7 +289,7 @@ trait People extends js.Object {
            * @param properties An associative array of properties associated with the charge
            * @param callback If provided, the callback will be called when the server responds
            */
-  def track_charge(amount: scala.Double, properties: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def track_charge(amount: scala.Double, properties: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
            * Record that you have charged the current user a certain amount
            * of money. Charges recorded with `track_charge()` will appear in the
@@ -311,11 +311,11 @@ trait People extends js.Object {
            */
   def track_charge(
     amount: scala.Double,
-    properties: ScalablyTyped.runtime.StringDictionary[js.Any],
+    properties: org.scalablytyped.runtime.StringDictionary[js.Any],
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
-  def union(keys: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def union(keys: ScalablyTyped.runtime.StringDictionary[js.Any], callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def union(keys: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def union(keys: org.scalablytyped.runtime.StringDictionary[js.Any], callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
            * Merge a given list with a list-valued people analytics property,
            * excluding duplicate values.

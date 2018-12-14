@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Source
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Function0[SourceModel[_]]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Function0[SourceModel[_]]]
 

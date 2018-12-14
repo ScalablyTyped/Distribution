@@ -136,6 +136,8 @@ trait ContextDelegatedResponse extends js.Object {
        * Remove header `field`.
        */
   def remove(field: java.lang.String): scala.Unit = js.native
+  def set(field: java.lang.String, `val`: java.lang.String): scala.Unit = js.native
+  def set(field: java.lang.String, `val`: js.Array[java.lang.String]): scala.Unit = js.native
   /**
        * Set header `field` to `val`, or pass
        * an object of header fields.
@@ -146,9 +148,7 @@ trait ContextDelegatedResponse extends js.Object {
        *    this.set('Accept', 'application/json');
        *    this.set({ Accept: 'text/plain', 'X-API-Key': 'tobi' });
        */
-  def set(field: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
-  def set(field: java.lang.String, `val`: java.lang.String): scala.Unit = js.native
-  def set(field: java.lang.String, `val`: js.Array[java.lang.String]): scala.Unit = js.native
+  def set(field: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
   /**
        * Vary on `field`.
        */

@@ -397,7 +397,7 @@ class KiiUser () extends js.Object {
            *
            * @return Social network name as key and account info as value.
            */
-  def getLinkedSocialAccounts(): ScalablyTyped.runtime.StringDictionary[KiiSocialAccountInfo] = js.native
+  def getLinkedSocialAccounts(): org.scalablytyped.runtime.StringDictionary[KiiSocialAccountInfo] = js.native
   /**
            * Get the locale associated with this user
            *

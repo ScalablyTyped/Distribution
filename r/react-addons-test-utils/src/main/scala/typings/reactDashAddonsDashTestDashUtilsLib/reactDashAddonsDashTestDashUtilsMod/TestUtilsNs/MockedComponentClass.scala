@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MockedComponentClass
-  extends ScalablyTyped.runtime.Instantiable0[js.Any]
+  extends org.scalablytyped.runtime.Instantiable0[js.Any]
 

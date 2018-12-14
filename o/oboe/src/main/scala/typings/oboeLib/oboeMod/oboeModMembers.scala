@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("oboe", JSImport.Namespace)
 @js.native
 object oboeModMembers
-  extends ScalablyTyped.runtime.TopLevel[oboeLib.oboeMod.oboeNs.OboeFunction]
+  extends org.scalablytyped.runtime.TopLevel[oboeLib.oboeMod.oboeNs.OboeFunction]
 

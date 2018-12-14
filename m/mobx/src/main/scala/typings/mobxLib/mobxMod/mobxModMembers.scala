@@ -54,7 +54,7 @@ object mobxModMembers extends js.Object {
     onBecomeUnobservedHandler: js.Function0[scala.Unit]
   ): mobxLib.libCoreAtomMod.IAtom = js.native
   def decorate[T](
-    clazz: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
+    clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
     decorators: mobxLib.mobxLibStrings.decorate with js.Any
   ): scala.Unit = js.native
   def decorate[T](`object`: T, decorators: mobxLib.mobxLibStrings.decorate with js.Any): T = js.native
@@ -361,10 +361,10 @@ object mobxModMembers extends js.Object {
   def runInAction[T](block: js.Function0[T]): T = js.native
   def runInAction[T](name: java.lang.String, block: js.Function0[T]): T = js.native
   def set[T /* <: js.Object */](obj: T, key: java.lang.String, value: js.Any): js.Any = js.native
-  def set[T /* <: js.Object */](obj: T, values: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def set[T /* <: js.Object */](obj: T, values: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   def set[V](
     obj: mobxLib.libInternalMod.ObservableMap[java.lang.String, V],
-    values: ScalablyTyped.runtime.StringDictionary[V]
+    values: org.scalablytyped.runtime.StringDictionary[V]
   ): js.Any = js.native
   def set[T](obj: mobxLib.libTypesObservablearrayMod.IObservableArray[T], index: scala.Double, value: T): js.Any = js.native
   def set[K, V](obj: mobxLib.libInternalMod.ObservableMap[K, V], key: K, value: V): js.Any = js.native

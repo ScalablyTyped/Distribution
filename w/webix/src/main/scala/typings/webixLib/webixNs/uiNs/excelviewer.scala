@@ -24,7 +24,7 @@ class excelviewer () extends baseview {
   var headerContent: js.Any = js.native
   @JSName("on_click")
   var on_click_Original: webixLib.webixNs.WebixCallback = js.native
-  var on_context: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("on_dblclick")
   var on_dblclick_Original: webixLib.webixNs.WebixCallback = js.native
   @JSName("on_mouse_move")
@@ -162,8 +162,8 @@ class excelviewer () extends baseview {
   def getFirstId(): java.lang.String | scala.Double = js.native
   def getFooterNode(columnId: java.lang.String): stdLib.HTMLElement = js.native
   def getFooterNode(columnId: java.lang.String, rowIndex: scala.Double): stdLib.HTMLElement = js.native
-  def getHeaderContent(id: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  def getHeaderContent(id: scala.Double): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getHeaderContent(id: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def getHeaderContent(id: scala.Double): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getHeaderNode(columnId: java.lang.String): stdLib.HTMLElement = js.native
   def getHeaderNode(columnId: java.lang.String, rowIndex: scala.Double): stdLib.HTMLElement = js.native
   def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native

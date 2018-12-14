@@ -24,8 +24,8 @@ import scala.scalajs.js.annotation._
 // https://github.com/angular/js/blob/v1.2.0/src/ngResource/resource.js#L538-L549
 @js.native
 trait IResourceClass[T]
-  extends ScalablyTyped.runtime.Instantiable0[T with IResource[T]]
-     with ScalablyTyped.runtime.Instantiable1[/* dataOrParams */ js.Any, T with IResource[T]] {
+  extends org.scalablytyped.runtime.Instantiable0[T with IResource[T]]
+     with org.scalablytyped.runtime.Instantiable1[/* dataOrParams */ js.Any, T with IResource[T]] {
   @JSName("delete")
   var delete_Original: IResourceMethod[T] = js.native
   @JSName("get")

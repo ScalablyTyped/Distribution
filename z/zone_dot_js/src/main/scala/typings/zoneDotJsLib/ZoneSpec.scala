@@ -159,6 +159,6 @@ trait ZoneSpec extends js.Object {
   /**
        * A set of properties to be associated with Zone. Use [Zone.get] to retrieve them.
        */
-  var properties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

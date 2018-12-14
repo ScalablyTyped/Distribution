@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait PathTypes
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[PathType] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[PathType] {
   var entering: PathType
   var exiting: PathType
   var from: PathType

@@ -15,26 +15,26 @@ object srcRender3MetadataMod extends js.Object {
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: js.Array[_],
     ctorParameters: js.Array[_],
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def setClassMetadata(
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: js.Array[_],
     ctorParameters: scala.Null,
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def setClassMetadata(`type`: atAngularCoreLib.srcTypeMod.Type[_], decorators: scala.Null, ctorParameters: js.Array[_]): scala.Unit = js.native
   def setClassMetadata(
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: scala.Null,
     ctorParameters: js.Array[_],
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def setClassMetadata(
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: scala.Null,
     ctorParameters: scala.Null,
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
 }
 

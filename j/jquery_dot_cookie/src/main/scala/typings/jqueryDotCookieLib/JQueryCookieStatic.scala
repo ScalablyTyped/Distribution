@@ -29,7 +29,7 @@ trait JQueryCookieStatic extends js.Object {
   /**
        * Gets an object of cookies as key-value pairs
        */
-  def apply(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def apply(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
        * Gets a cookie by name
        * @param name The name of the cookie to get

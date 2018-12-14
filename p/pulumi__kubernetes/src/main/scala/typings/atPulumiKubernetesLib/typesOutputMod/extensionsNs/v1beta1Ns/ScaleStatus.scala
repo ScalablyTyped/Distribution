@@ -18,7 +18,7 @@ trait ScaleStatus extends js.Object {
                * label query over pods that should match the replicas count. More info:
                * http://kubernetes.io/docs/user-guide/labels#label-selectors
                */
-  val selector: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val selector: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * label selector for pods that should match the replicas count. This is a serializated
                * version of both map-based and more expressive set-based selectors. This is done to avoid

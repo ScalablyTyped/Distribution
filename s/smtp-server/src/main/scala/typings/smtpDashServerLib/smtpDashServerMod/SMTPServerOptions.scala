@@ -192,7 +192,7 @@ trait SMTPServerOptions
        * optional Map or an object of TLS options for SNI where servername is the key. Overrided by SNICallback.
        */
   var sniOptions: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[nodeLib.tlsMod.TlsOptions] | (stdLib.Map[java.lang.String, nodeLib.tlsMod.TlsOptions])
+    org.scalablytyped.runtime.StringDictionary[nodeLib.tlsMod.TlsOptions] | (stdLib.Map[java.lang.String, nodeLib.tlsMod.TlsOptions])
   ] = js.undefined
   /**
        * How many milliseconds of inactivity to allow before disconnecting the client (defaults to 1 minute)

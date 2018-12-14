@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/reflect/apply", JSImport.Namespace)
 @js.native
 object libraryFnReflectApplyMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function3[
         /* target */ Function, 
         /* thisArgument */ js.Any, 

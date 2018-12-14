@@ -11,7 +11,7 @@ class Document[Schema /* <: DocumentSchema */] ()
   extends /**
 		 * Index signature
 		 */
-/* property */ ScalablyTyped.runtime.StringDictionary[SchemaTypeExtended | java.lang.String | Document[_] | js.Function] {
+/* property */ org.scalablytyped.runtime.StringDictionary[SchemaTypeExtended | java.lang.String | Document[_] | js.Function] {
   /**
   		 * Removes documents from the database.
   		 * Should only be used on an instantiated document with a valid id.

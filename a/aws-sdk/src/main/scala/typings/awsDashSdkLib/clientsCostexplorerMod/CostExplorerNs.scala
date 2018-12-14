@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object CostExplorerNs extends js.Object {
   
   trait Attributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait ClientApiVersions extends js.Object {
@@ -639,7 +639,7 @@ object CostExplorerNs extends js.Object {
   
   
   trait Metrics
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MetricValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MetricValue]
   
   
   trait RDSInstanceDetails extends js.Object {

@@ -38,7 +38,7 @@ trait BaseModelEvent
 		 boolean
 		 True if the event originated from a redo call.
 		 */
-ScalablyTyped.runtime.Instantiable7[
+org.scalablytyped.runtime.Instantiable7[
       /* target */ CollaborativeObject, 
       /* sessionId */ java.lang.String, 
       /* userId */ java.lang.String, 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Struct[T]
   extends Type[T]
-     with ScalablyTyped.runtime.Instantiable1[/* value */ T, T] {
+     with org.scalablytyped.runtime.Instantiable1[/* value */ T, T] {
   @JSName("meta")
   var meta_Struct: tcombLib.Anon_DefaultProps = js.native
   @JSName("update")

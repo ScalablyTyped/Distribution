@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 abstract class namespaced protected () extends Plugin {
   def this(serverless: serverlessLib.serverlessMod.namespaced, options: serverlessLib.serverlessMod.ServerlessNs.Options) = this()
   /* CompleteClass */
-  override var hooks: ScalablyTyped.runtime.StringDictionary[js.Promise[_]] = js.native
+  override var hooks: org.scalablytyped.runtime.StringDictionary[js.Promise[_]] = js.native
 }
 

@@ -15,7 +15,7 @@ class namespaced () extends Context {
 @js.native
 object namespaced extends js.Object {
   var DefaultRoleName: java.lang.String = js.native
-  var appVersion: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var appVersion: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var sdkVersion: java.lang.String = js.native
 }
 

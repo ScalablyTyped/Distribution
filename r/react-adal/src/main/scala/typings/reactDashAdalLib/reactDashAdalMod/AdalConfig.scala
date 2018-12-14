@@ -36,7 +36,7 @@ trait AdalConfig extends js.Object {
   /**
        * Array of keywords or URIs. Adal will attach a token to outgoing requests that have these keywords or URIs.
        */
-  var endpoints: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var endpoints: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * If the cached token is about to be expired in the expireOffsetSeconds (in seconds), Adal will renew the token instead of using the cached token. Defaults to 300 seconds.
        */

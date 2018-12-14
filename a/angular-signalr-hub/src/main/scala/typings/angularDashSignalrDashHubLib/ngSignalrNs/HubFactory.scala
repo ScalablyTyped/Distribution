@@ -10,5 +10,5 @@ trait HubFactory
   extends /**
          * Creates a new Hub connection
          */
-ScalablyTyped.runtime.Instantiable2[/* hubName */ java.lang.String, /* options */ HubOptions, Hub]
+org.scalablytyped.runtime.Instantiable2[/* hubName */ java.lang.String, /* options */ HubOptions, Hub]
 

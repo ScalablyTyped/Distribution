@@ -13,5 +13,5 @@ trait RandomSource extends js.Object {
 @JSGlobal("RandomSource")
 @js.native
 object RandomSource
-  extends ScalablyTyped.runtime.Instantiable0[RandomSource]
+  extends org.scalablytyped.runtime.Instantiable0[RandomSource]
 

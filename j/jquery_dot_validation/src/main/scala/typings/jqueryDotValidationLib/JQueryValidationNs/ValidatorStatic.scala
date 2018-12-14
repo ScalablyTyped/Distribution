@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ValidatorStatic extends js.Object {
-  var messages: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
-  var methods: ScalablyTyped.runtime.StringDictionary[js.Function] = js.native
+  var messages: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+  var methods: org.scalablytyped.runtime.StringDictionary[js.Function] = js.native
   /**
            * Add a compound class method - useful to refactor common combinations of rules into a single class.
            *

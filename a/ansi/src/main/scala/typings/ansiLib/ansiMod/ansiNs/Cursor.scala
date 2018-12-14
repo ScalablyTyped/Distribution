@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Cursor
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[(js.Function1[/* repeated */js.Any, Cursor]) | Colorer] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[(js.Function1[/* repeated */js.Any, Cursor]) | Colorer] {
   var bg: Colorer = js.native
   var fg: Colorer = js.native
   def back(): Cursor = js.native

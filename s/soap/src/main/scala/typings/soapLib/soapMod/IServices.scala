@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IServices
-  extends /* serviceName */ ScalablyTyped.runtime.StringDictionary[IService]
+  extends /* serviceName */ org.scalablytyped.runtime.StringDictionary[IService]
 

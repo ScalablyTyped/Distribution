@@ -19,25 +19,25 @@ object commonModMembers extends js.Object {
   val ɵangular_packages_common_common_a: atAngularCoreLib.coreMod.InjectionToken[scala.Boolean] = js.native
   val ɵangular_packages_common_common_e: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] = js.native
   val ɵangular_packages_common_common_f: js.Array[
-    (ScalablyTyped.runtime.Instantiable1[
+    (org.scalablytyped.runtime.Instantiable1[
       /* _ref */ atAngularCoreLib.coreMod.ChangeDetectorRef, 
       atAngularCommonLib.srcPipesAsyncUnderscorePipeMod.AsyncPipe
-    ]) | ScalablyTyped.runtime.Instantiable0[atAngularCommonLib.srcPipesSliceUnderscorePipeMod.SlicePipe] | (ScalablyTyped.runtime.Instantiable1[
+    ]) | org.scalablytyped.runtime.Instantiable0[atAngularCommonLib.srcPipesSliceUnderscorePipeMod.SlicePipe] | (org.scalablytyped.runtime.Instantiable1[
       /* _locale */ java.lang.String, 
       atAngularCommonLib.srcPipesNumberUnderscorePipeMod.DecimalPipe
-    ]) | (ScalablyTyped.runtime.Instantiable1[
+    ]) | (org.scalablytyped.runtime.Instantiable1[
       /* _locale */ java.lang.String, 
       atAngularCommonLib.srcPipesNumberUnderscorePipeMod.PercentPipe
-    ]) | (ScalablyTyped.runtime.Instantiable1[
+    ]) | (org.scalablytyped.runtime.Instantiable1[
       /* _locale */ java.lang.String, 
       atAngularCommonLib.srcPipesNumberUnderscorePipeMod.CurrencyPipe
-    ]) | (ScalablyTyped.runtime.Instantiable1[
+    ]) | (org.scalablytyped.runtime.Instantiable1[
       /* locale */ java.lang.String, 
       atAngularCommonLib.srcPipesDateUnderscorePipeMod.DatePipe
-    ]) | (ScalablyTyped.runtime.Instantiable1[
+    ]) | (org.scalablytyped.runtime.Instantiable1[
       /* _localization */ atAngularCommonLib.srcI18nLocalizationMod.NgLocalization, 
       atAngularCommonLib.srcPipesI18nUnderscorePluralUnderscorePipeMod.I18nPluralPipe
-    ]) | ScalablyTyped.runtime.Instantiable0[atAngularCommonLib.srcPipesI18nUnderscoreSelectUnderscorePipeMod.I18nSelectPipe] | (ScalablyTyped.runtime.Instantiable1[
+    ]) | org.scalablytyped.runtime.Instantiable0[atAngularCommonLib.srcPipesI18nUnderscoreSelectUnderscorePipeMod.I18nSelectPipe] | (org.scalablytyped.runtime.Instantiable1[
       /* differs */ atAngularCoreLib.coreMod.KeyValueDiffers, 
       atAngularCommonLib.srcPipesKeyvalueUnderscorePipeMod.KeyValuePipe
     ])

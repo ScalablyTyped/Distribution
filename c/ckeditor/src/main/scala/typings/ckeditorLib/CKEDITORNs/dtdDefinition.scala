@@ -7,38 +7,38 @@ import scala.scalajs.js.annotation._
 
 
 trait dtdDefinition
-  extends /* outerTagName */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]] {
+  extends /* outerTagName */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]] {
   @JSName("$block")
-  var $block: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $block: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$blockLimit")
-  var $blockLimit: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $blockLimit: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$cdata")
-  var $cdata: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $cdata: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$editable")
-  var $editable: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $editable: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$empty")
-  var $empty: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $empty: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$inline")
-  var $inline: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $inline: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$intermediate")
-  var $intermediate: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $intermediate: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$list")
-  var $list: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $list: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$listItem")
-  var $listItem: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $listItem: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$nonBodyContent")
-  var $nonBodyContent: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $nonBodyContent: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$nonEditable")
-  var $nonEditable: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $nonEditable: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$object")
-  var $object: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $object: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$removeEmpty")
-  var $removeEmpty: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $removeEmpty: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$tabIndex")
-  var $tabIndex: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $tabIndex: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$tableContent")
-  var $tableContent: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $tableContent: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
   @JSName("$transparent")
-  var $transparent: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
+  var $transparent: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]
 }
 

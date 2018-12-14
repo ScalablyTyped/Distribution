@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("request", JSImport.Namespace)
 @js.native
 object requestModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       requestLib.requestMod.requestNs.RequestAPI[
         requestLib.requestMod.requestNs.Request, 
         requestLib.requestMod.requestNs.CoreOptions, 

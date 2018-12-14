@@ -199,11 +199,11 @@ object topojsonModMembers extends js.Object {
   ): topojsonDashSpecificationLib.topojsonDashSpecificationMod.Topology[T] = js.native
   def sphericalRingArea(ring: topojsonDashSimplifyLib.topojsonDashSimplifyMod.Ring, interior: scala.Boolean): scala.Double = js.native
   def sphericalTriangleArea(triangle: topojsonDashSimplifyLib.topojsonDashSimplifyMod.Triangle): scala.Double = js.native
-  def topology(objects: ScalablyTyped.runtime.StringDictionary[geojsonLib.geojsonMod.GeoJsonObject]): topojsonDashSpecificationLib.topojsonDashSpecificationMod.Topology[
+  def topology(objects: org.scalablytyped.runtime.StringDictionary[geojsonLib.geojsonMod.GeoJsonObject]): topojsonDashSpecificationLib.topojsonDashSpecificationMod.Topology[
     topojsonDashSpecificationLib.topojsonDashSpecificationMod.Objects[topojsonDashSpecificationLib.topojsonDashSpecificationMod.Properties]
   ] = js.native
   def topology(
-    objects: ScalablyTyped.runtime.StringDictionary[geojsonLib.geojsonMod.GeoJsonObject],
+    objects: org.scalablytyped.runtime.StringDictionary[geojsonLib.geojsonMod.GeoJsonObject],
     quantization: scala.Double
   ): topojsonDashSpecificationLib.topojsonDashSpecificationMod.Topology[
     topojsonDashSpecificationLib.topojsonDashSpecificationMod.Objects[topojsonDashSpecificationLib.topojsonDashSpecificationMod.Properties]

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait HttpHeaderType
-  extends /* requestType */ ScalablyTyped.runtime.StringDictionary[java.lang.String | (js.Function1[/* config */ IRequestConfig, java.lang.String])]
+  extends /* requestType */ org.scalablytyped.runtime.StringDictionary[java.lang.String | (js.Function1[/* config */ IRequestConfig, java.lang.String])]
 

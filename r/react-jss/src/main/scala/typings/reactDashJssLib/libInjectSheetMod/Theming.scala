@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Theming extends js.Object {
-  var ThemeProvider: ScalablyTyped.runtime.Instantiable0[themingLib.themingMod.ThemeProvider] = js.native
+  var ThemeProvider: org.scalablytyped.runtime.Instantiable0[themingLib.themingMod.ThemeProvider] = js.native
   var channel: java.lang.String = js.native
   @JSName("createTheming")
   var createTheming_Original: js.Function1[

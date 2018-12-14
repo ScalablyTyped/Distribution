@@ -102,7 +102,7 @@ class CanvasRenderer () extends SystemRenderer {
 @js.native
 object CanvasRenderer extends js.Object {
   // plugintarget mixin start
-  var __plugins: ScalablyTyped.runtime.StringDictionary[pixiDotJsLib.Anon_Renderer] = js.native
+  var __plugins: org.scalablytyped.runtime.StringDictionary[pixiDotJsLib.Anon_Renderer] = js.native
   def registerPlugin(pluginName: java.lang.String, ctor: pixiDotJsLib.Anon_Renderer): scala.Unit = js.native
 }
 

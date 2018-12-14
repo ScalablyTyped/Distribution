@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rbac-a", "AttributesManager")
 @js.native
 class AttributesManager () extends js.Object {
-  var _attributes: ScalablyTyped.runtime.StringDictionary[AttributeFunction] = js.native
+  var _attributes: org.scalablytyped.runtime.StringDictionary[AttributeFunction] = js.native
   /**
        * Undefine an attribute, by name or function and return removed
        * attribute function if one was found.

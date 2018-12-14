@@ -14,5 +14,5 @@ trait ListeningStateChangedEvent extends Event {
 @JSGlobal("ListeningStateChangedEvent")
 @js.native
 object ListeningStateChangedEvent
-  extends ScalablyTyped.runtime.Instantiable0[ListeningStateChangedEvent]
+  extends org.scalablytyped.runtime.Instantiable0[ListeningStateChangedEvent]
 

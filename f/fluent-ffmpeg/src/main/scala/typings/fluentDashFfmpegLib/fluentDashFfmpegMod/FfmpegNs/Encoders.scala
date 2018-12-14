@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Encoders
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Encoder]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Encoder]
 

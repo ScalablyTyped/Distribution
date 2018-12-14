@@ -10,7 +10,7 @@ trait IgCheckboxEditor
   extends /**
 	 * Option for igCheckboxEditor
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var allowNullValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * Fired when the input field of the editor loses focus.

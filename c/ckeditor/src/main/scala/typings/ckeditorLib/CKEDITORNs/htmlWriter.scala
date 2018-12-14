@@ -14,6 +14,6 @@ class htmlWriter ()
   var selfClosingEnd: java.lang.String = js.native
   def indentation(): scala.Unit = js.native
   def lineBreak(): scala.Unit = js.native
-  def setRules(tagName: java.lang.String, rules: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def setRules(tagName: java.lang.String, rules: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
 }
 

@@ -10,7 +10,7 @@ trait Cheerio
   extends // Document References
 // Cheerio https://github.com/cheeriojs/cheerio
 // JQuery http://api.jquery.com
-/* index */ ScalablyTyped.runtime.NumberDictionary[CheerioElement] {
+/* index */ org.scalablytyped.runtime.NumberDictionary[CheerioElement] {
   var length: scala.Double = js.native
   def add(element: CheerioElement): Cheerio = js.native
   def add(elements: js.Array[CheerioElement]): Cheerio = js.native
@@ -31,7 +31,7 @@ trait Cheerio
   // Manipulation
   def appendTo(target: Cheerio): Cheerio = js.native
   // Attributes
-  def attr(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def attr(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def attr(name: java.lang.String): java.lang.String = js.native
   def attr(name: java.lang.String, value: js.Any): Cheerio = js.native
   def before(content: Cheerio, contents: js.Any*): Cheerio = js.native

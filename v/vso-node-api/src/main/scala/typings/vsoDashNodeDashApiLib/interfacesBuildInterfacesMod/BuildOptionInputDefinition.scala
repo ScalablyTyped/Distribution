@@ -15,7 +15,7 @@ trait BuildOptionInputDefinition extends js.Object {
        * The name of the input group that this input belongs to.
        */
   var groupName: java.lang.String
-  var help: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var help: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The label for the input.
        */
@@ -24,7 +24,7 @@ trait BuildOptionInputDefinition extends js.Object {
        * The name of the input.
        */
   var name: java.lang.String
-  var options: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var options: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Indicates whether the input is required to have a value.
        */

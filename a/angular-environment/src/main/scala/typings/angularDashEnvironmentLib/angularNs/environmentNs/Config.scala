@@ -10,10 +10,10 @@ trait Config extends js.Object {
   /**
        * Map of domains to their environments
        */
-  var domains: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  var domains: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   /**
        * List of variables split by environment
        */
-  var vars: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Any]]
+  var vars: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
 }
 

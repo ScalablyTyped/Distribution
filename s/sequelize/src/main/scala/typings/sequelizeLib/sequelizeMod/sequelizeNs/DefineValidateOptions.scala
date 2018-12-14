@@ -31,7 +31,7 @@ trait DefineValidateOptions
          *
          * @see https://github.com/Microsoft/TypeScript/issues/1889
          */
-/* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * force specific substrings
            */

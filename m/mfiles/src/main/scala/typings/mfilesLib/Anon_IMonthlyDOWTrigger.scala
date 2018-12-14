@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IMonthlyDOWTrigger
-  extends ScalablyTyped.runtime.Instantiable0[IMonthlyDOWTrigger]
+  extends org.scalablytyped.runtime.Instantiable0[IMonthlyDOWTrigger]
 

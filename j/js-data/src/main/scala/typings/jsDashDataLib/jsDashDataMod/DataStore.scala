@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class DataStore () extends SimpleStore {
   @JSName("collectionClass")
-  var collectionClass_DataStore: ScalablyTyped.runtime.Instantiable0[LinkedCollection] = js.native
+  var collectionClass_DataStore: org.scalablytyped.runtime.Instantiable0[LinkedCollection] = js.native
 }
 

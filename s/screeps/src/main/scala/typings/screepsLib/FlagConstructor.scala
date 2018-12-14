@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FlagConstructor
   extends _Constructor[Flag]
-     with ScalablyTyped.runtime.Instantiable6[
+     with org.scalablytyped.runtime.Instantiable6[
       /* name */ java.lang.String, 
       /* color */ ColorConstant, 
       /* secondaryColor */ ColorConstant, 

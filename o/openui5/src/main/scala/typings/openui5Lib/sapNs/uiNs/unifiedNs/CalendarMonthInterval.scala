@@ -176,7 +176,7 @@ class CalendarMonthInterval protected ()
            * @param oDate JavaScript date object for displayed date. (The month of this date will be displayed.)
            * @returns <code>this</code> to allow method chaining
           */
-  def displayDate(oDate: js.Any): ScalablyTyped.runtime.Instantiable2[
+  def displayDate(oDate: js.Any): org.scalablytyped.runtime.Instantiable2[
     /* sId */ java.lang.String, 
     /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
     Calendar
@@ -205,7 +205,7 @@ class CalendarMonthInterval protected ()
            * @param oDate JavaScript date object for focused date. (The month of this date will be focused.)
            * @returns <code>this</code> to allow method chaining
           */
-  def focusDate(oDate: js.Any): ScalablyTyped.runtime.Instantiable2[
+  def focusDate(oDate: js.Any): org.scalablytyped.runtime.Instantiable2[
     /* sId */ java.lang.String, 
     /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
     Calendar

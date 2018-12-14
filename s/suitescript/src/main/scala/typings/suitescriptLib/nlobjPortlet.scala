@@ -18,7 +18,7 @@ trait nlobjPortlet
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * add a column (nlobjColumn) to this LIST portlet and return it.
        *

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SjclHmacStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* key */ BitArray, SjclHmac]
-     with ScalablyTyped.runtime.Instantiable2[/* key */ BitArray, /* Hash */ SjclHashStatic, SjclHmac]
+  extends org.scalablytyped.runtime.Instantiable1[/* key */ BitArray, SjclHmac]
+     with org.scalablytyped.runtime.Instantiable2[/* key */ BitArray, /* Hash */ SjclHashStatic, SjclHmac]
 

@@ -60,5 +60,5 @@ trait HTMLAreaElement
 @JSGlobal("HTMLAreaElement")
 @js.native
 object HTMLAreaElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLAreaElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLAreaElement]
 

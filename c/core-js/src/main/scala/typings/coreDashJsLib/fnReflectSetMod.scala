@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/reflect/set", JSImport.Namespace)
 @js.native
 object fnReflectSetMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function4[
         /* target */ js.Any, 
         /* propertyKey */ stdLib.PropertyKey, 

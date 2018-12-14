@@ -32,7 +32,7 @@ abstract class AsyncIterator[T] ()
   def each(callback: js.Function1[/* data */ T, scala.Unit], self: js.Any): scala.Unit = js.native
   def filter(filter: js.Function1[/* item */ T, scala.Boolean]): SimpleTransformIterator[T, T] = js.native
   def filter(filter: js.Function1[/* item */ T, scala.Boolean], self: js.Object): SimpleTransformIterator[T, T] = js.native
-  def getProperties(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getProperties(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getProperty(propertyName: java.lang.String): js.Any = js.native
   def getProperty(propertyName: java.lang.String, callback: js.Function1[/* value */ js.Any, scala.Unit]): js.Any = js.native
   def map[T2](mapper: js.Function1[/* item */ T, T2]): SimpleTransformIterator[T, T2] = js.native
@@ -40,7 +40,7 @@ abstract class AsyncIterator[T] ()
   def prepend(items: js.Array[T]): SimpleTransformIterator[T, T] = js.native
   def range[T](start: scala.Double, end: scala.Double): SimpleTransformIterator[T, T] = js.native
   def read(): T = js.native
-  def setProperties(properties: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def setProperties(properties: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def setProperty(propertyName: java.lang.String, value: js.Any): scala.Unit = js.native
   def skip[T](offset: scala.Double): SimpleTransformIterator[T, T] = js.native
   def surround[T](prepend: js.Array[T], append: js.Array[T]): SimpleTransformIterator[T, T] = js.native

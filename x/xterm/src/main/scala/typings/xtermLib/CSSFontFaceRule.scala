@@ -13,5 +13,5 @@ trait CSSFontFaceRule extends CSSRule {
 @JSGlobal("CSSFontFaceRule")
 @js.native
 object CSSFontFaceRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSFontFaceRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSFontFaceRule]
 

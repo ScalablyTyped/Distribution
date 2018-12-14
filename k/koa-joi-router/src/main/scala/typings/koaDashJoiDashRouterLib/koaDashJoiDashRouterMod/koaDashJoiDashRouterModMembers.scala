@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("koa-joi-router", JSImport.Namespace)
 @js.native
 object koaDashJoiDashRouterModMembers
-  extends ScalablyTyped.runtime.TopLevel[createRouter]
+  extends org.scalablytyped.runtime.TopLevel[createRouter]
 

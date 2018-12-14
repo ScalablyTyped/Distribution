@@ -22,6 +22,6 @@ trait BiquadFilterNode extends AudioNode {
 @JSGlobal("BiquadFilterNode")
 @js.native
 object BiquadFilterNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, BiquadFilterNode]
-     with ScalablyTyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ BiquadFilterOptions, BiquadFilterNode]
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, BiquadFilterNode]
+     with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ BiquadFilterOptions, BiquadFilterNode]
 

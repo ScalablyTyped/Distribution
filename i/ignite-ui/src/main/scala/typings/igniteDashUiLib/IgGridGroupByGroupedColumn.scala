@@ -10,7 +10,7 @@ trait IgGridGroupByGroupedColumn
   extends /**
 	 * Option for IgGridGroupByGroupedColumn
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * [column](ui.iggrid#options:columns) object for the column that is grouped
   	 *

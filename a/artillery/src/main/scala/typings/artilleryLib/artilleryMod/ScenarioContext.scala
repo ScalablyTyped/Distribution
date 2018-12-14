@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait ScenarioContext extends js.Object {
-  var vars: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var vars: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

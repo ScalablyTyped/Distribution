@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IfError extends js.Object {
-  var AssertionError: ScalablyTyped.runtime.Instantiable1[
+  var AssertionError: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[/* options */ Anon_StackStartFn], 
     nodeLib.assertMod.internalNs.AssertionError
   ] = js.native

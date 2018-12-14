@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DocumentSelectionState
   extends EventEmitter
-     with ScalablyTyped.runtime.Instantiable2[/* anchor */ scala.Double, /* focus */ scala.Double, DocumentSelectionState] {
+     with org.scalablytyped.runtime.Instantiable2[/* anchor */ scala.Double, /* focus */ scala.Double, DocumentSelectionState] {
   def blur(): scala.Unit = js.native
   /**
        * Given a max text length, constrain our selection offsets to ensure

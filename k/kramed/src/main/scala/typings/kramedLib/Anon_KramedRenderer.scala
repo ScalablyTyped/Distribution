@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_KramedRenderer
-  extends ScalablyTyped.runtime.Instantiable0[kramedLib.kramedMod.KramedRenderer]
+  extends org.scalablytyped.runtime.Instantiable0[kramedLib.kramedMod.KramedRenderer]
 

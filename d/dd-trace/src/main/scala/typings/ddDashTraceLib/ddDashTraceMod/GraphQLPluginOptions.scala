@@ -19,8 +19,8 @@ trait GraphQLPluginOptions extends BasePluginOptions {
        */
   var variables: js.UndefOr[
     js.Function1[
-      /* variables */ ScalablyTyped.runtime.StringDictionary[js.Any], 
-      stdLib.Partial[ScalablyTyped.runtime.StringDictionary[_]]
+      /* variables */ org.scalablytyped.runtime.StringDictionary[js.Any], 
+      stdLib.Partial[org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ] = js.undefined
 }

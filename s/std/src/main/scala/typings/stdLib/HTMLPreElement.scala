@@ -17,5 +17,5 @@ trait HTMLPreElement extends HTMLElement {
 @JSGlobal("HTMLPreElement")
 @js.native
 object HTMLPreElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLPreElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLPreElement]
 

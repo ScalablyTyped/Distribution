@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait StyleRules
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties]
 

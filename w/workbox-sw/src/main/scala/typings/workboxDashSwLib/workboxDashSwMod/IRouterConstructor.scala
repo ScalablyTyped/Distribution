@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait IRouterConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Router]
+  extends org.scalablytyped.runtime.Instantiable0[Router]
 

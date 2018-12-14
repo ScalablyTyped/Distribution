@@ -76,14 +76,14 @@ trait Media extends js.Object {
 @JSGlobal("Media")
 @js.native
 object Media
-  extends ScalablyTyped.runtime.Instantiable2[/* src */ java.lang.String, /* mediaSuccess */ js.Function0[scala.Unit], Media]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable2[/* src */ java.lang.String, /* mediaSuccess */ js.Function0[scala.Unit], Media]
+     with org.scalablytyped.runtime.Instantiable3[
       /* src */ java.lang.String, 
       /* mediaSuccess */ js.Function0[scala.Unit], 
       /* mediaError */ js.Function1[/* error */ stdLib.MediaError, js.Any], 
       Media
     ]
-     with ScalablyTyped.runtime.Instantiable4[
+     with org.scalablytyped.runtime.Instantiable4[
       /* src */ java.lang.String, 
       /* mediaSuccess */ js.Function0[scala.Unit], 
       /* mediaError */ js.Function1[/* error */ stdLib.MediaError, js.Any], 

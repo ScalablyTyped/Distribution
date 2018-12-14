@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ShortFlags
-  extends /* k */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String] | java.lang.String]
+  extends /* k */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String] | java.lang.String]
 

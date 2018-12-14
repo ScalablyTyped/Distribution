@@ -11,7 +11,7 @@ object libUtilitiesDecoratorsWithResponsiveModeModMembers extends js.Object {
   def setResponsiveMode(): scala.Unit = js.native
   def setResponsiveMode(responsiveMode: ResponsiveMode): scala.Unit = js.native
   def withResponsiveMode[TProps /* <: officeDashUiDashFabricDashReactLib.Anon_ResponsiveMode */, TState](
-    ComposedComponent: ScalablyTyped.runtime.Instantiable2[
+    ComposedComponent: org.scalablytyped.runtime.Instantiable2[
       /* props */ TProps, 
       /* args (repeated) */ js.Any, 
       reactLib.reactMod.Component[TProps, TState, js.Any]

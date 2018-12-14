@@ -11,7 +11,7 @@ trait TabProps
      with /**
    * Additional properties passed to Tab root container.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * If true, the current component is visible.
      */

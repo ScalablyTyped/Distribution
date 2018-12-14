@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait extractorExecOpts extends js.Object {
-  var exec: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var exec: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

@@ -23,14 +23,6 @@ class OneOf protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] Comment associated with this field
        */
-  def this(name: java.lang.String, fieldNames: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Constructs a new oneof instance.
-       * @param name Oneof name
-       * @param [fieldNames] Field names
-       * @param [options] Declared options
-       * @param [comment] Comment associated with this field
-       */
   def this(name: java.lang.String, fieldNames: js.Array[java.lang.String]) = this()
   /**
        * Constructs a new oneof instance.
@@ -39,7 +31,7 @@ class OneOf protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] Comment associated with this field
        */
-  def this(name: java.lang.String, fieldNames: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, fieldNames: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new oneof instance.
        * @param name Oneof name
@@ -47,7 +39,7 @@ class OneOf protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] Comment associated with this field
        */
-  def this(name: java.lang.String, fieldNames: js.Array[java.lang.String], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, fieldNames: js.Array[java.lang.String], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new oneof instance.
        * @param name Oneof name
@@ -55,7 +47,7 @@ class OneOf protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] Comment associated with this field
        */
-  def this(name: java.lang.String, fieldNames: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, fieldNames: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new oneof instance.
        * @param name Oneof name
@@ -63,7 +55,15 @@ class OneOf protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] Comment associated with this field
        */
-  def this(name: java.lang.String, fieldNames: js.Array[java.lang.String], options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, fieldNames: js.Array[java.lang.String], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  /**
+       * Constructs a new oneof instance.
+       * @param name Oneof name
+       * @param [fieldNames] Field names
+       * @param [options] Declared options
+       * @param [comment] Comment associated with this field
+       */
+  def this(name: java.lang.String, fieldNames: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /** Fields that belong to this oneof as an array for iteration. */
   val fieldsArray: js.Array[Field] = js.native
   /** Field names that belong to this oneof. */

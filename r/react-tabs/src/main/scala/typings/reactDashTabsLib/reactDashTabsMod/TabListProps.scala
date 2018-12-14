@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait TabListProps extends js.Object {
   var className: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+    java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   ] = js.undefined
 }
 

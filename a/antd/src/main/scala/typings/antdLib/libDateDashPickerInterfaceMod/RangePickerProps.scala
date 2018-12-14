@@ -40,7 +40,7 @@ trait RangePickerProps extends PickerProps {
     ]
   ] = js.undefined
   var placeholder: js.UndefOr[js.Tuple2[java.lang.String, java.lang.String]] = js.undefined
-  var ranges: js.UndefOr[ScalablyTyped.runtime.StringDictionary[RangePickerPresetRange]] = js.undefined
+  var ranges: js.UndefOr[org.scalablytyped.runtime.StringDictionary[RangePickerPresetRange]] = js.undefined
   var showTime: js.UndefOr[antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean] = js.undefined
   var value: js.UndefOr[RangePickerValue] = js.undefined
 }

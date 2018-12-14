@@ -23,7 +23,7 @@ class ShaderMaterial () extends Material {
   var morphNormals: scala.Boolean = js.native
   var morphTargets: scala.Boolean = js.native
   var skinning: scala.Boolean = js.native
-  var uniforms: ScalablyTyped.runtime.StringDictionary[IUniform] = js.native
+  var uniforms: org.scalablytyped.runtime.StringDictionary[IUniform] = js.native
   var vertexShader: java.lang.String = js.native
   var wireframe: scala.Boolean = js.native
   var wireframeLinewidth: scala.Double = js.native

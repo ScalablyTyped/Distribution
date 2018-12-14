@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DOMTokenList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[java.lang.String] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   /**
        * Returns the number of tokens.
        */
@@ -80,5 +80,5 @@ trait DOMTokenList
 @JSGlobal("DOMTokenList")
 @js.native
 object DOMTokenList
-  extends ScalablyTyped.runtime.Instantiable0[DOMTokenList]
+  extends org.scalablytyped.runtime.Instantiable0[DOMTokenList]
 

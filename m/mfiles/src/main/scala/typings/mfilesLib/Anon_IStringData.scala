@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IStringData
-  extends ScalablyTyped.runtime.Instantiable0[IStringData]
+  extends org.scalablytyped.runtime.Instantiable0[IStringData]
 

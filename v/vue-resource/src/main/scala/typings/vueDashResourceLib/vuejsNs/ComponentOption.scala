@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ComponentOption extends js.Object {
   var http: js.UndefOr[
-    HttpOptions with vueDashResourceLib.Anon_Headers with ScalablyTyped.runtime.StringDictionary[js.Any]
+    HttpOptions with vueDashResourceLib.Anon_Headers with org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.undefined
 }
 

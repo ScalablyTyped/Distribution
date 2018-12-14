@@ -17,5 +17,5 @@ trait VREyeParameters extends js.Object {
 @JSGlobal("VREyeParameters")
 @js.native
 object VREyeParameters
-  extends ScalablyTyped.runtime.Instantiable0[VREyeParameters]
+  extends org.scalablytyped.runtime.Instantiable0[VREyeParameters]
 

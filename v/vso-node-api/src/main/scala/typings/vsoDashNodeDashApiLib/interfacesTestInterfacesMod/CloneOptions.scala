@@ -26,7 +26,7 @@ trait CloneOptions extends js.Object {
   /**
        * Key value pairs where the key value is overridden by the value.
        */
-  var overrideParameters: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var overrideParameters: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Comment on the link that will link the new clone  test case to the original Set null for no comment
        */

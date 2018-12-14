@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("express-cluster", JSImport.Namespace)
 @js.native
 object expressDashClusterModMembers
-  extends ScalablyTyped.runtime.TopLevel[Cluster]
+  extends org.scalablytyped.runtime.TopLevel[Cluster]
 

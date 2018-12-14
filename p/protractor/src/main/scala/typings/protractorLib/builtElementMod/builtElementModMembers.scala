@@ -11,7 +11,7 @@ object builtElementModMembers extends js.Object {
   @JSName("build$")
   var build$: js.Function2[
     /* element */ protractorLib.builtBrowserMod.ElementHelper, 
-    /* by */ ScalablyTyped.runtime.Instantiable2[
+    /* by */ org.scalablytyped.runtime.Instantiable2[
       /* using */ java.lang.String, 
       /* value */ java.lang.String, 
       seleniumDashWebdriverLib.seleniumDashWebdriverMod.By
@@ -21,7 +21,7 @@ object builtElementModMembers extends js.Object {
   @JSName("build$$")
   var build$$: js.Function2[
     /* element */ protractorLib.builtBrowserMod.ElementHelper, 
-    /* by */ ScalablyTyped.runtime.Instantiable2[
+    /* by */ org.scalablytyped.runtime.Instantiable2[
       /* using */ java.lang.String, 
       /* value */ java.lang.String, 
       seleniumDashWebdriverLib.seleniumDashWebdriverMod.By

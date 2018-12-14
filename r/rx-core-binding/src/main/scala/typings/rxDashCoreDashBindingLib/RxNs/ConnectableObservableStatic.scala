@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ConnectableObservableStatic
-  extends ScalablyTyped.runtime.Instantiable0[ConnectableObservable[js.Object]]
+  extends org.scalablytyped.runtime.Instantiable0[ConnectableObservable[js.Object]]
 

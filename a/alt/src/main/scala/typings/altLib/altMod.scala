@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("alt", JSImport.Namespace)
 @js.native
 object altMod
-  extends ScalablyTyped.runtime.TopLevel[altLib.AltJSNs.AltFactory]
+  extends org.scalablytyped.runtime.TopLevel[altLib.AltJSNs.AltFactory]
 

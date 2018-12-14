@@ -50,5 +50,5 @@ trait ScriptProcessorNode extends AudioNode {
 @JSGlobal("ScriptProcessorNode")
 @js.native
 object ScriptProcessorNode
-  extends ScalablyTyped.runtime.Instantiable0[ScriptProcessorNode]
+  extends org.scalablytyped.runtime.Instantiable0[ScriptProcessorNode]
 

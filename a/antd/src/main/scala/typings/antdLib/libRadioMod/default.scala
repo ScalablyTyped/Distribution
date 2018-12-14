@@ -13,8 +13,8 @@ class default ()
 @JSImport("antd/lib/radio", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Button: ScalablyTyped.runtime.Instantiable0[antdLib.libRadioRadioButtonMod.default] = js.native
-  var Group: ScalablyTyped.runtime.Instantiable1[
+  var Button: org.scalablytyped.runtime.Instantiable0[antdLib.libRadioRadioButtonMod.default] = js.native
+  var Group: org.scalablytyped.runtime.Instantiable1[
     /* props */ antdLib.libRadioInterfaceMod.RadioGroupProps, 
     antdLib.libRadioGroupMod.default
   ] = js.native

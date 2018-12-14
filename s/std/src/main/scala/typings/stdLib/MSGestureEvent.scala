@@ -57,7 +57,7 @@ trait MSGestureEvent extends UIEvent {
 @JSGlobal("MSGestureEvent")
 @js.native
 object MSGestureEvent
-  extends ScalablyTyped.runtime.Instantiable0[MSGestureEvent] {
+  extends org.scalablytyped.runtime.Instantiable0[MSGestureEvent] {
   val MSGESTURE_FLAG_BEGIN: scala.Double = js.native
   val MSGESTURE_FLAG_CANCEL: scala.Double = js.native
   val MSGESTURE_FLAG_END: scala.Double = js.native

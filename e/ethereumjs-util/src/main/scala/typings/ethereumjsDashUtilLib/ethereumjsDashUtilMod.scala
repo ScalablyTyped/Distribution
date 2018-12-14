@@ -20,10 +20,10 @@ object ethereumjsDashUtilMod extends js.Object {
   def bufferToInt(buf: nodeLib.Buffer): scala.Double = js.native
   def bufferToInt(buf: stdLib.Uint8Array): scala.Double = js.native
   def defineProperties(
-    self: ScalablyTyped.runtime.StringDictionary[js.Any],
+    self: org.scalablytyped.runtime.StringDictionary[js.Any],
     fields: js.Array[java.lang.String],
-    data: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    data: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def ecrecover(msgHash: nodeLib.Buffer, v: scala.Double, r: nodeLib.Buffer, s: nodeLib.Buffer): nodeLib.Buffer | stdLib.Uint8Array = js.native
   def ecrecover(msgHash: nodeLib.Buffer, v: scala.Double, r: nodeLib.Buffer, s: stdLib.Uint8Array): nodeLib.Buffer | stdLib.Uint8Array = js.native
   def ecrecover(msgHash: nodeLib.Buffer, v: scala.Double, r: stdLib.Uint8Array, s: nodeLib.Buffer): nodeLib.Buffer | stdLib.Uint8Array = js.native
@@ -32,11 +32,11 @@ object ethereumjsDashUtilMod extends js.Object {
   def ecrecover(msgHash: stdLib.Uint8Array, v: scala.Double, r: nodeLib.Buffer, s: stdLib.Uint8Array): nodeLib.Buffer | stdLib.Uint8Array = js.native
   def ecrecover(msgHash: stdLib.Uint8Array, v: scala.Double, r: stdLib.Uint8Array, s: nodeLib.Buffer): nodeLib.Buffer | stdLib.Uint8Array = js.native
   def ecrecover(msgHash: stdLib.Uint8Array, v: scala.Double, r: stdLib.Uint8Array, s: stdLib.Uint8Array): nodeLib.Buffer | stdLib.Uint8Array = js.native
-  def ecsign(msgHash: nodeLib.Buffer, privateKey: nodeLib.Buffer): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  def ecsign(msgHash: nodeLib.Buffer, privateKey: stdLib.Uint8Array): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  def ecsign(msgHash: stdLib.Uint8Array, privateKey: nodeLib.Buffer): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  def ecsign(msgHash: stdLib.Uint8Array, privateKey: stdLib.Uint8Array): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  def fromRpcSig(sig: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def ecsign(msgHash: nodeLib.Buffer, privateKey: nodeLib.Buffer): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def ecsign(msgHash: nodeLib.Buffer, privateKey: stdLib.Uint8Array): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def ecsign(msgHash: stdLib.Uint8Array, privateKey: nodeLib.Buffer): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def ecsign(msgHash: stdLib.Uint8Array, privateKey: stdLib.Uint8Array): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def fromRpcSig(sig: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def fromSigned(num: nodeLib.Buffer): js.Any = js.native
   def fromSigned(num: stdLib.Uint8Array): js.Any = js.native
   def generateAddress(from: nodeLib.Buffer, nonce: nodeLib.Buffer): nodeLib.Buffer | stdLib.Uint8Array = js.native

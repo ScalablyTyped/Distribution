@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait LinkProps
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
   var replace: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined

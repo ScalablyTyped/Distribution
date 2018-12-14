@@ -28,7 +28,7 @@ trait CSSRule extends js.Object {
 @JSGlobal("CSSRule")
 @js.native
 object CSSRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSRule] {
+  extends org.scalablytyped.runtime.Instantiable0[CSSRule] {
   val CHARSET_RULE: scala.Double = js.native
   val FONT_FACE_RULE: scala.Double = js.native
   val IMPORT_RULE: scala.Double = js.native

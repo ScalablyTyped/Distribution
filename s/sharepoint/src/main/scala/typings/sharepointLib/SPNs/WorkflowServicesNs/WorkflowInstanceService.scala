@@ -37,7 +37,7 @@ class WorkflowInstanceService ()
   /** Starts a Workflow Manager Client 1.0 instance specified by the subscription and passes the supplied parameters.
               Returns GUID of the instance object.
               @param payload Object that contains name-value pairs of parameter names and values to pass into the workflow instance. */
-  def startWorkflow(subscription: WorkflowSubscription, payload: ScalablyTyped.runtime.StringDictionary[js.Any]): sharepointLib.SPNs.GuidResult = js.native
+  def startWorkflow(subscription: WorkflowSubscription, payload: org.scalablytyped.runtime.StringDictionary[js.Any]): sharepointLib.SPNs.GuidResult = js.native
   /** Starts a Workflow Manager Client 1.0 instance specified by the subscription and passes the supplied parameters.
               Returns GUID of the instance object.
               @param subscription The subscription associated with the workflow instance.
@@ -46,7 +46,7 @@ class WorkflowInstanceService ()
   def startWorkflowOnListItem(
     subscription: WorkflowSubscription,
     itemId: scala.Double,
-    payload: ScalablyTyped.runtime.StringDictionary[js.Any]
+    payload: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): sharepointLib.SPNs.GuidResult = js.native
   def suspendWorkflow(instance: WorkflowInstance): scala.Unit = js.native
   /** Terminate a workflow instance forcefully by deleting it from memory. The instance is not allowed to execute a cancellation scope */

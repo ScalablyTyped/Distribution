@@ -9,7 +9,7 @@ package object amqpMod {
   type Callback[T] = js.Function1[/* value */ T, scala.Unit]
   type SubscribeCallback = js.Function4[
     /* message */ js.Any, 
-    /* headers */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* headers */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* deliveryInfo */ DeliveryInfo, 
     /* ack */ Ack, 
     scala.Unit

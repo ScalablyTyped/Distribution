@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Name
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var quiet: scala.Boolean
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IDelegateToSchemaOptions[TContext] extends js.Object {
-  var args: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var args: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var context: TContext
   var fieldName: java.lang.String
   var info: IGraphQLToolsResolveInfo

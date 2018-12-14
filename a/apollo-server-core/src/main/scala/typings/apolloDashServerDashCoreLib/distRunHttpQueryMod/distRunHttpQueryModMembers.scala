@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distRunHttpQueryModMembers extends js.Object {
   def processHTTPRequest[TContext](
-    options: (apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.WithRequired[
+    options: (apolloDashEnvLib.WithRequired[
       apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[TContext, _], 
       apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.cache | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.plugins
     ]) with apolloDashServerDashCoreLib.Anon_Context[TContext],

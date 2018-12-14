@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Connection
   extends signalrLib.SignalRNs.Connection {
-  var proxies: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var proxies: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var transport: signalrLib.Anon_SupportsKeepAlive = js.native
   /**
               * Creates a new proxy object for the given hub connection that can be used to invoke

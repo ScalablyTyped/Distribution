@@ -14,14 +14,14 @@ trait VisualObjectInstance extends js.Object {
   /** The name of the object (as defined in VisualCapabilities). */
   var objectName: java.lang.String
   /** The set of property values for this object.  Some of these properties may be defaults provided by the IVisual. */
-  var properties: ScalablyTyped.runtime.StringDictionary[DataViewPropertyValue]
+  var properties: org.scalablytyped.runtime.StringDictionary[DataViewPropertyValue]
   /** (Optional) Set the required type for particular properties that support variant types. */
-  var propertyTypes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[ValueTypeDescriptor]] = js.undefined
+  var propertyTypes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ValueTypeDescriptor]] = js.undefined
   /** The selector that identifies this object. */
   var selector: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.Selector
   /** (Optional) Defines the constrained set of valid values for a property. */
   var validValues: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String] | ValidationOptions]
+    org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String] | ValidationOptions]
   ] = js.undefined
 }
 

@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "apollographql__apollo-tools"
-version := "0.2.9-5e2328"
+version := "0.2.9-ba95be"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-env" % "0.2.5-55fad4",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-102207",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-1de855",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-055952",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "apollo-env" % "0.2.5-6ccb23",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-3acce5",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-6c0a30",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-d32d36",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

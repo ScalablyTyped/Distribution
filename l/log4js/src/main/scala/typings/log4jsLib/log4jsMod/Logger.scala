@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("log4js", "Logger")
 @js.native
 class Logger ()
-  extends ScalablyTyped.runtime.Instantiable2[/* dispatch */ js.Function, /* name */ java.lang.String, Logger] {
+  extends org.scalablytyped.runtime.Instantiable2[/* dispatch */ js.Function, /* name */ java.lang.String, Logger] {
   var level: java.lang.String = js.native
   def _log(level: java.lang.String, data: js.Any): scala.Unit = js.native
   def addContext(key: java.lang.String, value: js.Any): scala.Unit = js.native

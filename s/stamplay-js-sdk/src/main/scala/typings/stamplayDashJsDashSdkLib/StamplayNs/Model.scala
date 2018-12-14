@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Model
-  extends ScalablyTyped.runtime.Instantiable0[Model] {
+  extends org.scalablytyped.runtime.Instantiable0[Model] {
   def destroy(): js.Promise[_] = js.native
   def fetch(id: js.Any): js.Promise[_] = js.native
    // This is suspicious, but tests show model instances being constructable...

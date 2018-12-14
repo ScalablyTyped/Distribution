@@ -12,7 +12,7 @@ package object goNs {
   type CircularEdge = LayoutEdge
   type CircularNetwork = LayoutNetwork
   /** A constructor */
-  type Constructor = ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Object]
+  type Constructor = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Object]
   type ForceDirectedNetwork = LayoutNetwork
   /** A Key is the type of the unique identifier managed by Models for each node data object. */
   type Key = java.lang.String | scala.Double

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait GetterTree[S, R]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Getter[S, R]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Getter[S, R]]
 

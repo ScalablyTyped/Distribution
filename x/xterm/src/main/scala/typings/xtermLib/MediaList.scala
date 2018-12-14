@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait MediaList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[java.lang.String] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   val length: scala.Double
   var mediaText: java.lang.String
   def appendMedium(medium: java.lang.String): scala.Unit
@@ -18,5 +18,5 @@ trait MediaList
 @JSGlobal("MediaList")
 @js.native
 object MediaList
-  extends ScalablyTyped.runtime.Instantiable0[MediaList]
+  extends org.scalablytyped.runtime.Instantiable0[MediaList]
 

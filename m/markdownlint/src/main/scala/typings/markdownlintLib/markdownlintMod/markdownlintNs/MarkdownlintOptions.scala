@@ -12,6 +12,6 @@ trait MarkdownlintOptions extends js.Object {
   var frontMatter: js.UndefOr[stdLib.RegExp] = js.undefined
   var noInlineConfig: js.UndefOr[scala.Boolean] = js.undefined
   var resultVersion: js.UndefOr[scala.Double] = js.undefined
-  var strings: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var strings: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 

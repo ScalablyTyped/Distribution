@@ -13,7 +13,10 @@ object firebaseNs extends js.Object {
     extends tabrisDashPluginDashFirebaseLib.tabrisDashPluginDashFirebaseMod.NativeObject
        with tabrisDashPluginDashFirebaseLib.tabrisDashPluginDashFirebaseMod.Global.firebaseNs.PropertyMixinsNs.Analytics {
     def logEvent(eventName: java.lang.String): scala.Unit = js.native
-    def logEvent(eventName: java.lang.String, parameters: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+    def logEvent(
+      eventName: java.lang.String,
+      parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+    ): scala.Unit = js.native
     def set(properties: AnalyticsProperties): this.type = js.native
     def setUserProperty(propertyName: java.lang.String, value: java.lang.String): scala.Unit = js.native
   }

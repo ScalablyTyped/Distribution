@@ -34,7 +34,7 @@ trait SVGPathSeg extends js.Object {
 @JSGlobal("SVGPathSeg")
 @js.native
 object SVGPathSeg
-  extends ScalablyTyped.runtime.Instantiable0[SVGPathSeg] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGPathSeg] {
   val PATHSEG_ARC_ABS: scala.Double = js.native
   val PATHSEG_ARC_REL: scala.Double = js.native
   val PATHSEG_CLOSEPATH: scala.Double = js.native

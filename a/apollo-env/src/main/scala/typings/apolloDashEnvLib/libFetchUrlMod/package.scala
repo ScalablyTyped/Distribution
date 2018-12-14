@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libFetchUrlMod {
-  type URLSearchParamsInit = URLSearchParams | java.lang.String | (ScalablyTyped.runtime.StringDictionary[
+  type URLSearchParamsInit = URLSearchParams | java.lang.String | (org.scalablytyped.runtime.StringDictionary[
     js.UndefOr[
       coreDashJsLib.Object | apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[coreDashJsLib.Object]
     ]

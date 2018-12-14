@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("durandal/system", JSImport.Namespace)
 @js.native
 object systemMod
-  extends ScalablyTyped.runtime.TopLevel[DurandalSystemModule]
+  extends org.scalablytyped.runtime.TopLevel[DurandalSystemModule]
 

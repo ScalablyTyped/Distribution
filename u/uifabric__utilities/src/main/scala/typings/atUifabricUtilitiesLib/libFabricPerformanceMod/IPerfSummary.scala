@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IPerfSummary
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[IPerfMeasurement]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[IPerfMeasurement]
 

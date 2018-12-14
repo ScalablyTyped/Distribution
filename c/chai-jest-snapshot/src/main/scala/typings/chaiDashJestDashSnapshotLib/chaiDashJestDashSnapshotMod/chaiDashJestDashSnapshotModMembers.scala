@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("chai-jest-snapshot", JSImport.Namespace)
 @js.native
 object chaiDashJestDashSnapshotModMembers
-  extends ScalablyTyped.runtime.TopLevel[ChaiJestSnapshot]
+  extends org.scalablytyped.runtime.TopLevel[ChaiJestSnapshot]
 

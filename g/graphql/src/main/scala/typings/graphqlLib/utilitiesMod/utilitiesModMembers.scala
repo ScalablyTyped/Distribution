@@ -121,7 +121,7 @@ object utilitiesModMembers extends js.Object {
     `type`: graphqlLib.typeDefinitionMod.GraphQLNamedType,
     options: graphqlLib.utilitiesSchemaPrinterMod.Options
   ): java.lang.String = js.native
-  def separateOperations(documentAST: graphqlLib.languageAstMod.DocumentNode): ScalablyTyped.runtime.StringDictionary[graphqlLib.languageAstMod.DocumentNode] = js.native
+  def separateOperations(documentAST: graphqlLib.languageAstMod.DocumentNode): org.scalablytyped.runtime.StringDictionary[graphqlLib.languageAstMod.DocumentNode] = js.native
   def typeFromAST(schema: graphqlLib.typeSchemaMod.GraphQLSchema, typeNode: graphqlLib.languageAstMod.ListTypeNode): js.UndefOr[graphqlLib.typeDefinitionMod.GraphQLList[_]] = js.native
   def typeFromAST(schema: graphqlLib.typeSchemaMod.GraphQLSchema, typeNode: graphqlLib.languageAstMod.NamedTypeNode): js.UndefOr[graphqlLib.typeDefinitionMod.GraphQLNamedType] = js.native
   def typeFromAST(
@@ -135,12 +135,12 @@ object utilitiesModMembers extends js.Object {
   def valueFromAST(
     valueNode: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.ValueNode],
     `type`: graphqlLib.typeDefinitionMod.GraphQLInputType,
-    variables: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]]
+    variables: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
   ): js.Any = js.native
   def valueFromASTUntyped(valueNode: graphqlLib.languageAstMod.ValueNode): js.Any = js.native
   def valueFromASTUntyped(
     valueNode: graphqlLib.languageAstMod.ValueNode,
-    variables: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]]
+    variables: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
   ): js.Any = js.native
 }
 

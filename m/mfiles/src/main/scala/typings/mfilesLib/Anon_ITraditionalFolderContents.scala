@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ITraditionalFolderContents
-  extends ScalablyTyped.runtime.Instantiable0[ITraditionalFolderContents]
+  extends org.scalablytyped.runtime.Instantiable0[ITraditionalFolderContents]
 

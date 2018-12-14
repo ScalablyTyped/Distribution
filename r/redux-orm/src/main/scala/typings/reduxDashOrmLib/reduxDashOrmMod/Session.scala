@@ -14,11 +14,11 @@ class Session[State /* <: ORMCommonState */] protected () extends js.Object {
   var db: DB = js.native
   var initialState: State = js.native
   var models: js.Array[
-    ScalablyTyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
+    org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
   ] = js.native
   var schema: ORM[State] = js.native
   var sessionBoundModels: js.Array[
-    ScalablyTyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
+    org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
   ] = js.native
   var state: State = js.native
   var withMutations: scala.Boolean = js.native

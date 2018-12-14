@@ -1850,7 +1850,7 @@ object CodeDeployNs extends js.Object {
   
   
   trait TargetFilters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[FilterValueList]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[FilterValueList]
   
   
   trait TargetGroupInfo extends js.Object {

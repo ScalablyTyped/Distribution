@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
          */
 @js.native
 trait Choice
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       (/* str */ java.lang.String) | (/* separator */ Separator) | (/* option */ ChoiceOption), 
       Choice
     ]

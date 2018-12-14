@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HostMapStatic
-  extends ScalablyTyped.runtime.Instantiable0[HostMap]
+  extends org.scalablytyped.runtime.Instantiable0[HostMap]
 

@@ -27,7 +27,7 @@ trait RawMemory extends js.Object {
        * An object with asynchronous memory segments available on this tick. Each object key is the segment ID with data in string values.
        * Use RawMemory.setActiveSegments to fetch segments on the next tick. Segments data is saved automatically in the end of the tick.
        */
-  var segments: ScalablyTyped.runtime.NumberDictionary[java.lang.String] = js.native
+  var segments: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = js.native
   /**
        * Get a raw string representation of the Memory object.
        */

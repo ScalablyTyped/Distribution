@@ -77,5 +77,5 @@ trait SVGFEGaussianBlurElement
 @JSGlobal("SVGFEGaussianBlurElement")
 @js.native
 object SVGFEGaussianBlurElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEGaussianBlurElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEGaussianBlurElement]
 

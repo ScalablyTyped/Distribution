@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FormData extends js.Object {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[java.lang.String, FormDataEntryValue]]] = js.native
   def append(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def append(name: java.lang.String, value: java.lang.String, fileName: java.lang.String): scala.Unit = js.native
@@ -55,6 +55,6 @@ trait FormData extends js.Object {
 @JSGlobal("FormData")
 @js.native
 object FormData
-  extends ScalablyTyped.runtime.Instantiable0[FormData]
-     with ScalablyTyped.runtime.Instantiable1[/* form */ HTMLFormElement, FormData]
+  extends org.scalablytyped.runtime.Instantiable0[FormData]
+     with org.scalablytyped.runtime.Instantiable1[/* form */ HTMLFormElement, FormData]
 

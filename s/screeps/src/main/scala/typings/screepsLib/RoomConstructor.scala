@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RoomConstructor
   extends _Constructor[Room]
-     with ScalablyTyped.runtime.Instantiable1[/* id */ java.lang.String, Room] {
+     with org.scalablytyped.runtime.Instantiable1[/* id */ java.lang.String, Room] {
   var Terrain: RoomTerrainConstructor = js.native
   /**
        * Deserialize a short string path representation into an array form.

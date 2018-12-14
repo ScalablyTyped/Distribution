@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait CP$Module
   extends /** Codepage Converters */
-/* cp */ ScalablyTyped.runtime.NumberDictionary[CP$Conv] {
+/* cp */ org.scalablytyped.runtime.NumberDictionary[CP$Conv] {
   /** Utility Functions */
   var utils: CP$Utils
   /** Version string */

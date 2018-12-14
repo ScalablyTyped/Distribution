@@ -14,8 +14,8 @@ trait Anon_EntryComponentsComponentViewType extends js.Object {
     atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileEntryComponentMetadata
   ]
   var exportAs: java.lang.String | scala.Null
-  var guards: ScalablyTyped.runtime.StringDictionary[js.Any]
-  var host: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var guards: org.scalablytyped.runtime.StringDictionary[js.Any]
+  var host: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var inputs: js.Array[java.lang.String]
   var isComponent: scala.Boolean
   var isHost: scala.Boolean

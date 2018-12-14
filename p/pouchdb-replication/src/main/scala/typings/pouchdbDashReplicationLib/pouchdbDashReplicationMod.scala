@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pouchdb-replication", JSImport.Namespace)
 @js.native
 object pouchdbDashReplicationMod
-  extends ScalablyTyped.runtime.TopLevel[pouchdbDashCoreLib.PouchDBNs.Plugin]
+  extends org.scalablytyped.runtime.TopLevel[pouchdbDashCoreLib.PouchDBNs.Plugin]
 

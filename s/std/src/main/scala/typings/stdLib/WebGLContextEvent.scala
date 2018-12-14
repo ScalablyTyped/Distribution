@@ -13,8 +13,8 @@ trait WebGLContextEvent extends Event {
 @JSGlobal("WebGLContextEvent")
 @js.native
 object WebGLContextEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, WebGLContextEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, WebGLContextEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInit */ WebGLContextEventInit, 
       WebGLContextEvent

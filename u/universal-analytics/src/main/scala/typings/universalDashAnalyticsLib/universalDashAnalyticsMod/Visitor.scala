@@ -13,9 +13,9 @@ class Visitor protected ()
   def this(accountID: universalDashAnalyticsLib.universalDashAnalyticsMod.uaNs.VisitorOptions) = this()
   def this(accountID: java.lang.String, uuid: java.lang.String) = this()
   def this(accountID: java.lang.String, uuid: universalDashAnalyticsLib.universalDashAnalyticsMod.uaNs.VisitorOptions) = this()
-  def this(accountID: java.lang.String, uuid: java.lang.String, context: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  def this(accountID: java.lang.String, uuid: universalDashAnalyticsLib.universalDashAnalyticsMod.uaNs.VisitorOptions, context: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  def this(accountID: java.lang.String, uuid: java.lang.String, context: ScalablyTyped.runtime.StringDictionary[js.Any], persistentParams: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  def this(accountID: java.lang.String, uuid: universalDashAnalyticsLib.universalDashAnalyticsMod.uaNs.VisitorOptions, context: ScalablyTyped.runtime.StringDictionary[js.Any], persistentParams: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(accountID: java.lang.String, uuid: java.lang.String, context: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  def this(accountID: java.lang.String, uuid: universalDashAnalyticsLib.universalDashAnalyticsMod.uaNs.VisitorOptions, context: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  def this(accountID: java.lang.String, uuid: java.lang.String, context: org.scalablytyped.runtime.StringDictionary[js.Any], persistentParams: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  def this(accountID: java.lang.String, uuid: universalDashAnalyticsLib.universalDashAnalyticsMod.uaNs.VisitorOptions, context: org.scalablytyped.runtime.StringDictionary[js.Any], persistentParams: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 

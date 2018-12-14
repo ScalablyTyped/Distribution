@@ -10,7 +10,7 @@ trait DataSourceSettingsSummaries
   extends /**
 	 * Option for DataSourceSettingsSummaries
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A list of column settings that specifies custom summaries options per column basis
   	 *

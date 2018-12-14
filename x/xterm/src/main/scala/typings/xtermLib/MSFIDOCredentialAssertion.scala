@@ -16,5 +16,5 @@ trait MSFIDOCredentialAssertion extends MSAssertion {
 @JSGlobal("MSFIDOCredentialAssertion")
 @js.native
 object MSFIDOCredentialAssertion
-  extends ScalablyTyped.runtime.Instantiable0[MSFIDOCredentialAssertion]
+  extends org.scalablytyped.runtime.Instantiable0[MSFIDOCredentialAssertion]
 

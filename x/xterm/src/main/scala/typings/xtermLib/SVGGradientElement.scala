@@ -80,7 +80,7 @@ trait SVGGradientElement
 @JSGlobal("SVGGradientElement")
 @js.native
 object SVGGradientElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGGradientElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGGradientElement] {
   val SVG_SPREADMETHOD_PAD: scala.Double = js.native
   val SVG_SPREADMETHOD_REFLECT: scala.Double = js.native
   val SVG_SPREADMETHOD_REPEAT: scala.Double = js.native

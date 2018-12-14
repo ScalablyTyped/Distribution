@@ -18,7 +18,7 @@ class Vault[T /* <: Valuable */] protected () extends js.Object {
   def create(name: java.lang.String, tags: js.Array[java.lang.String]): js.Promise[T] = js.native
   def delete(name: java.lang.String): js.Promise[scala.Unit] = js.native
   def deleteTag(tag: java.lang.String): js.Promise[scala.Boolean] = js.native
-  def entries(): js.Promise[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def entries(): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def get(name: java.lang.String): js.Promise[T] = js.native
   def getNotes(): java.lang.String = js.native
   def has(name: java.lang.String): scala.Boolean = js.native

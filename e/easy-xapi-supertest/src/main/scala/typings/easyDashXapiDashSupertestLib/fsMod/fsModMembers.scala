@@ -389,7 +389,7 @@ object fsModMembers extends js.Object {
   def realpath(path: java.lang.String): scala.Unit = js.native
   def realpath(
     path: java.lang.String,
-    cache: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    cache: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     callback: js.Function2[
       /* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ java.lang.String, 
@@ -405,7 +405,7 @@ object fsModMembers extends js.Object {
     ]
   ): scala.Unit = js.native
   def realpathSync(path: java.lang.String): java.lang.String = js.native
-  def realpathSync(path: java.lang.String, cache: ScalablyTyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
+  def realpathSync(path: java.lang.String, cache: org.scalablytyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
   def rename(oldPath: java.lang.String, newPath: java.lang.String): scala.Unit = js.native
   def rename(
     oldPath: java.lang.String,

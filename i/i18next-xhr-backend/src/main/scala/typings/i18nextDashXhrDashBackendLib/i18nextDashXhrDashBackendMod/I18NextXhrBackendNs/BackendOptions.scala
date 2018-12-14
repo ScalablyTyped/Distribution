@@ -38,7 +38,7 @@ trait BackendOptions extends js.Object {
   /**
            * @see https://github.com/i18next/i18next-xhr-backend/blob/281c7e235e1157b33122adacef1957252e5700f1/src/ajax.js#L52
            */
-  var customHeaders: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var customHeaders: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * path where resources get loaded from, or a function
            * returning a path:
@@ -55,7 +55,7 @@ trait BackendOptions extends js.Object {
   /**
            * adds parameters to resource URL. 'example.com' -> 'example.com?v=1.3.5'
            */
-  var queryStringParams: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var queryStringParams: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * allow credentials on cross domain requests
            */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Atomics extends js.Object {
-  @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
+  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   val toStringTag: stdLib.stdLibStrings.Atomics = js.native
   /**
        * Adds a value to the value at the given position in the array, returning the original value.

@@ -13,5 +13,5 @@ trait SVGFEMergeNodeElement extends SVGElement {
 @JSGlobal("SVGFEMergeNodeElement")
 @js.native
 object SVGFEMergeNodeElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEMergeNodeElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEMergeNodeElement]
 

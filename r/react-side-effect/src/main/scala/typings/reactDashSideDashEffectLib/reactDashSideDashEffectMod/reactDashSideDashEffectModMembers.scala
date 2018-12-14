@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-side-effect", JSImport.Namespace)
 @js.native
 object reactDashSideDashEffectModMembers
-  extends ScalablyTyped.runtime.TopLevel[WithSideEffect]
+  extends org.scalablytyped.runtime.TopLevel[WithSideEffect]
 

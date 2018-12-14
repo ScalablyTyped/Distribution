@@ -50,5 +50,5 @@ trait HTMLAppletElement extends HTMLElement {
 @JSGlobal("HTMLAppletElement")
 @js.native
 object HTMLAppletElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLAppletElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLAppletElement]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait VFileOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var basename: js.UndefOr[java.lang.String] = js.undefined
   var contents: js.UndefOr[VFileContents] = js.undefined
   var cwd: js.UndefOr[java.lang.String] = js.undefined

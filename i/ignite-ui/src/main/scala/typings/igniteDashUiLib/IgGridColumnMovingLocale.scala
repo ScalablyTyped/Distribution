@@ -10,7 +10,7 @@ trait IgGridColumnMovingLocale
   extends /**
 	 * Option for IgGridColumnMovingLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies caption for the move first dropdown button.
   	 *

@@ -30,7 +30,7 @@ object WebAppInternalsNs extends js.Object {
   ): scala.Unit = js.native
   @js.native
   object NpmModules
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[meteorLib.Anon_Module]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[meteorLib.Anon_Module]
   
 }
 

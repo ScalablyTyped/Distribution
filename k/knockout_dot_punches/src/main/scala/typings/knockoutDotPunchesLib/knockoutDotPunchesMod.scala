@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("knockout.punches", JSImport.Namespace)
 @js.native
 object knockoutDotPunchesMod
-  extends ScalablyTyped.runtime.TopLevel[KnockoutPunchesStatic]
+  extends org.scalablytyped.runtime.TopLevel[KnockoutPunchesStatic]
 

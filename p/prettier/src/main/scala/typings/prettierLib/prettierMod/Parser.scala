@@ -16,7 +16,7 @@ trait Parser extends js.Object {
   def locStart(node: js.Any): scala.Double
   def parse(
     text: java.lang.String,
-    parsers: ScalablyTyped.runtime.StringDictionary[Parser],
+    parsers: org.scalablytyped.runtime.StringDictionary[Parser],
     options: ParserOptions
   ): AST
 }

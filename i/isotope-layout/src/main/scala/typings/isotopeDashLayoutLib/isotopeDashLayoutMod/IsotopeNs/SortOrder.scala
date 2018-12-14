@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SortOrder
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 

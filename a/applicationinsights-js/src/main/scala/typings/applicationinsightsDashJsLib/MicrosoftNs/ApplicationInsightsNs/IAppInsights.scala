@@ -90,7 +90,7 @@ trait IAppInsights extends js.Object {
            * @param   properties  map[string, string] - additional data used to filter events and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
            */
-  def stopTrackEvent(name: java.lang.String, properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
+  def stopTrackEvent(name: java.lang.String, properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
   /**
            * Log an extended event that you started timing with `startTrackEvent`.
            * @param   name    The string you used to identify this event in `startTrackEvent`.
@@ -99,8 +99,8 @@ trait IAppInsights extends js.Object {
            */
   def stopTrackEvent(
     name: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    measurements: ScalablyTyped.runtime.StringDictionary[scala.Double]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    measurements: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): js.Any = js.native
   /**
            * Stops the timer that was started by calling `startTrackPage` and sends the pageview load time telemetry with the specified properties and measurements.
@@ -140,7 +140,7 @@ trait IAppInsights extends js.Object {
   def stopTrackPage(
     name: java.lang.String,
     url: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Any = js.native
   /**
            * Stops the timer that was started by calling `startTrackPage` and sends the pageview load time telemetry with the specified properties and measurements.
@@ -153,8 +153,8 @@ trait IAppInsights extends js.Object {
   def stopTrackPage(
     name: java.lang.String,
     url: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    measurements: ScalablyTyped.runtime.StringDictionary[scala.Double]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    measurements: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): js.Any = js.native
   /**
            * Log a dependency call
@@ -197,7 +197,7 @@ trait IAppInsights extends js.Object {
     totalTime: scala.Double,
     success: scala.Boolean,
     resultCode: scala.Double,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Any = js.native
   /**
            * Log a dependency call
@@ -219,8 +219,8 @@ trait IAppInsights extends js.Object {
     totalTime: scala.Double,
     success: scala.Boolean,
     resultCode: scala.Double,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    measurements: ScalablyTyped.runtime.StringDictionary[scala.Double]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    measurements: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): js.Any = js.native
   /**
            * Log a user action or other occurrence.
@@ -235,7 +235,7 @@ trait IAppInsights extends js.Object {
            * @param   properties  map[string, string] - additional data used to filter events and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
            */
-  def trackEvent(name: java.lang.String, properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
+  def trackEvent(name: java.lang.String, properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
   /**
            * Log a user action or other occurrence.
            * @param   name    A string to identify this event in the portal.
@@ -244,8 +244,8 @@ trait IAppInsights extends js.Object {
            */
   def trackEvent(
     name: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    measurements: ScalablyTyped.runtime.StringDictionary[scala.Double]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    measurements: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): js.Any = js.native
   /**
            * Log an exception you have caught.
@@ -273,7 +273,7 @@ trait IAppInsights extends js.Object {
   def trackException(
     exception: stdLib.Error,
     handledAt: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Any = js.native
   /**
            * Log an exception you have caught.
@@ -285,8 +285,8 @@ trait IAppInsights extends js.Object {
   def trackException(
     exception: stdLib.Error,
     handledAt: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    measurements: ScalablyTyped.runtime.StringDictionary[scala.Double]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    measurements: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): js.Any = js.native
   /**
            * Log an exception you have caught.
@@ -298,8 +298,8 @@ trait IAppInsights extends js.Object {
   def trackException(
     exception: stdLib.Error,
     handledAt: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    measurements: ScalablyTyped.runtime.StringDictionary[scala.Double],
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    measurements: org.scalablytyped.runtime.StringDictionary[scala.Double],
     severityLevel: applicationinsightsDashJsLib.AINs.SeverityLevel
   ): js.Any = js.native
   /**
@@ -368,7 +368,7 @@ trait IAppInsights extends js.Object {
     sampleCount: scala.Double,
     min: scala.Double,
     max: scala.Double,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Any = js.native
   /**
            * Logs that a page or other item was viewed.
@@ -408,7 +408,7 @@ trait IAppInsights extends js.Object {
   def trackPageView(
     name: java.lang.String,
     url: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Any = js.native
   /**
            * Logs that a page or other item was viewed.
@@ -421,8 +421,8 @@ trait IAppInsights extends js.Object {
   def trackPageView(
     name: java.lang.String,
     url: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    measurements: ScalablyTyped.runtime.StringDictionary[scala.Double]
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    measurements: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): js.Any = js.native
   /**
            * Logs that a page or other item was viewed.
@@ -435,8 +435,8 @@ trait IAppInsights extends js.Object {
   def trackPageView(
     name: java.lang.String,
     url: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    measurements: ScalablyTyped.runtime.StringDictionary[scala.Double],
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    measurements: org.scalablytyped.runtime.StringDictionary[scala.Double],
     duration: scala.Double
   ): js.Any = js.native
   /**
@@ -450,7 +450,10 @@ trait IAppInsights extends js.Object {
            * @param    message A message string
            * @param    properties  map[string, string] - additional data used to filter traces in the portal. Defaults to empty.
            */
-  def trackTrace(message: java.lang.String, properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
+  def trackTrace(
+    message: java.lang.String,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): js.Any = js.native
   /**
            * Log a diagnostic message.
            * @param    message A message string
@@ -458,7 +461,7 @@ trait IAppInsights extends js.Object {
            */
   def trackTrace(
     message: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     severityLevel: applicationinsightsDashJsLib.AINs.SeverityLevel
   ): js.Any = js.native
 }

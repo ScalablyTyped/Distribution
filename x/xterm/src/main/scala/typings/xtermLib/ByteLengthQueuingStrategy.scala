@@ -17,5 +17,5 @@ trait ByteLengthQueuingStrategy
 @JSGlobal("ByteLengthQueuingStrategy")
 @js.native
 object ByteLengthQueuingStrategy
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ Anon_HighWaterMarkNumber, ByteLengthQueuingStrategy]
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ Anon_HighWaterMarkNumber, ByteLengthQueuingStrategy]
 

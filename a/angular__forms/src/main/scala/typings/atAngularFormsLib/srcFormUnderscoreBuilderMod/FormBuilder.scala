@@ -582,7 +582,7 @@ class FormBuilder () extends js.Object {
        * * `asyncValidator`: A single async validator or array of async validator functions
        *
        */
-  def group(controlsConfig: ScalablyTyped.runtime.StringDictionary[js.Any]): atAngularFormsLib.srcModelMod.FormGroup = js.native
+  def group(controlsConfig: org.scalablytyped.runtime.StringDictionary[js.Any]): atAngularFormsLib.srcModelMod.FormGroup = js.native
   /**
        * @description
        * Construct a new `FormGroup` instance.
@@ -605,8 +605,8 @@ class FormBuilder () extends js.Object {
        *
        */
   def group(
-    controlsConfig: ScalablyTyped.runtime.StringDictionary[js.Any],
-    legacyOrOpts: ScalablyTyped.runtime.StringDictionary[js.Any]
+    controlsConfig: org.scalablytyped.runtime.StringDictionary[js.Any],
+    legacyOrOpts: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): atAngularFormsLib.srcModelMod.FormGroup = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_KeyIconClassName
   extends // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**

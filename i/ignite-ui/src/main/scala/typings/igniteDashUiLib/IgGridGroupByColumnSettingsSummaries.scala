@@ -10,7 +10,7 @@ trait IgGridGroupByColumnSettingsSummaries
   extends /**
 	 * Option for IgGridGroupByColumnSettingsSummaries
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies a custom summary function, which is called for each group, it should return the custom summary result.It takes as argument object with the following signature: {dataRecords: [], array: [], key: "", allGroupData: []} where,
   	 * dataRecords - array of grouped (for the [data view](ig.datasource#methods:dataView)) data records,

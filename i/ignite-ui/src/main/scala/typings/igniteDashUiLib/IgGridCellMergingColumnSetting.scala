@@ -10,7 +10,7 @@ trait IgGridCellMergingColumnSetting
   extends /**
 	 * Option for IgGridCellMergingColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Column index. This is a required property in every column setting if columnKey is not set.
   	 *

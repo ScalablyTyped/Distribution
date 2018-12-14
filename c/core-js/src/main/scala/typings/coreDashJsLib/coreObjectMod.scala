@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/core/object", JSImport.Namespace)
 @js.native
 object coreObjectMod
-  extends ScalablyTyped.runtime.TopLevel[Anon_GetOwnPropertyDescriptors]
+  extends org.scalablytyped.runtime.TopLevel[Anon_GetOwnPropertyDescriptors]
 

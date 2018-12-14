@@ -22,7 +22,7 @@ object nonEmptyArrayNs extends js.Object {
     /* as */ fpDashTsLib.libArrayMod.Global.Array[A], 
     fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]]
   ] = js.native
-  def groupBy[A](as: fpDashTsLib.libArrayMod.Global.Array[A], f: js.Function1[/* a */ A, java.lang.String]): ScalablyTyped.runtime.StringDictionary[fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]] = js.native
+  def groupBy[A](as: fpDashTsLib.libArrayMod.Global.Array[A], f: js.Function1[/* a */ A, java.lang.String]): org.scalablytyped.runtime.StringDictionary[fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]] = js.native
   def groupSort[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function1[
     /* as */ fpDashTsLib.libArrayMod.Global.Array[A], 
     fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]]

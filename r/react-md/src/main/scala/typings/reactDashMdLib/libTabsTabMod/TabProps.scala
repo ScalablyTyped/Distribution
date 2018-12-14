@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TabProps
   extends reactDashMdLib.libMod.BaseProps
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

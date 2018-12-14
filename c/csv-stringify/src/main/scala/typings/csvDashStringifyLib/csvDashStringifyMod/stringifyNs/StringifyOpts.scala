@@ -13,7 +13,7 @@ trait StringifyOpts extends js.Object {
            * columns are auto discovered when the user write object, see the "header" option on how to print columns names on the first line.
            */
   var columns: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String] | js.Array[java.lang.String]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String] | js.Array[java.lang.String]
   ] = js.undefined
   /**
            * Set the field delimiter, one character only, defaults to a comma.

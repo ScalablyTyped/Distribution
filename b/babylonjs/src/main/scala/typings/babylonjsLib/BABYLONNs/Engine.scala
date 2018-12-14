@@ -61,7 +61,7 @@ class Engine protected () extends js.Object {
   var _bindVertexBuffersAttributes: js.Any = js.native
   var _bindedRenderFunction: js.Any = js.native
   /** @hidden */
-  var _boundTexturesCache: ScalablyTyped.runtime.StringDictionary[Nullable[InternalTexture]] = js.native
+  var _boundTexturesCache: org.scalablytyped.runtime.StringDictionary[Nullable[InternalTexture]] = js.native
   var _boundUniforms: js.Any = js.native
   /** @hidden */
   var _cachedEffectForVertexBuffers: Nullable[Effect] = js.native
@@ -681,7 +681,7 @@ class Engine protected () extends js.Object {
            * @param effect defines the effect associated with the vertex buffers
            */
   def bindBuffers(
-    vertexBuffers: ScalablyTyped.runtime.StringDictionary[Nullable[VertexBuffer]],
+    vertexBuffers: org.scalablytyped.runtime.StringDictionary[Nullable[VertexBuffer]],
     indexBuffer: Nullable[babylonjsLib.WebGLBuffer],
     effect: Effect
   ): scala.Unit = js.native
@@ -2198,7 +2198,7 @@ class Engine protected () extends js.Object {
            * @returns the new vertex array object
            */
   def recordVertexArrayObject(
-    vertexBuffers: ScalablyTyped.runtime.StringDictionary[VertexBuffer],
+    vertexBuffers: org.scalablytyped.runtime.StringDictionary[VertexBuffer],
     indexBuffer: Nullable[babylonjsLib.WebGLBuffer],
     effect: Effect
   ): babylonjsLib.WebGLVertexArrayObject = js.native

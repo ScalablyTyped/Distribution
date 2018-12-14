@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Actions
-  extends /* action */ ScalablyTyped.runtime.StringDictionary[Action[_]]
+  extends /* action */ org.scalablytyped.runtime.StringDictionary[Action[_]]
 

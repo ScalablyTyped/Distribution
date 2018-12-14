@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("nprogress", JSImport.Namespace)
 @js.native
 object nprogressMod
-  extends ScalablyTyped.runtime.TopLevel[NProgressStatic]
+  extends org.scalablytyped.runtime.TopLevel[NProgressStatic]
 

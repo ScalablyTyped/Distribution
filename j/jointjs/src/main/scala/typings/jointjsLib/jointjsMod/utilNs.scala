@@ -11,8 +11,8 @@ object utilNs extends js.Object {
   
   trait DOMJSONDocument extends js.Object {
     var fragment: stdLib.DocumentFragment
-    var groupSelectors: ScalablyTyped.runtime.StringDictionary[js.Array[underscoreLib.underscoreMod.Global.Element]]
-    var selectors: ScalablyTyped.runtime.StringDictionary[underscoreLib.underscoreMod.Global.Element]
+    var groupSelectors: org.scalablytyped.runtime.StringDictionary[js.Array[underscoreLib.underscoreMod.Global.Element]]
+    var selectors: org.scalablytyped.runtime.StringDictionary[underscoreLib.underscoreMod.Global.Element]
   }
   
   var shapePerimeterConnectionPoint: jointjsLib.jointjsMod.diaNs.LinkViewNs.GetConnectionPoint = js.native
@@ -47,24 +47,24 @@ object utilNs extends js.Object {
   def downloadBlob(blob: stdLib.Blob, fileName: java.lang.String): scala.Unit = js.native
   def downloadDataUri(dataUri: java.lang.String, fileName: java.lang.String): scala.Unit = js.native
   def flattenDeep(array: js.Array[_]): js.Array[_] = js.native
-  def flattenObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
-  def flattenObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], delim: java.lang.String): js.Any = js.native
+  def flattenObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def flattenObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any], delim: java.lang.String): js.Any = js.native
   def flattenObject(
-    `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
     delim: java.lang.String,
     stop: js.Function1[/* node */ js.Any, scala.Boolean]
   ): js.Any = js.native
   def forIn(`object`: js.Object): js.Object = js.native
   def forIn(`object`: js.Object, iteratee: Iteratee): js.Object = js.native
-  def getByPath(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], path: java.lang.String): js.Any = js.native
+  def getByPath(`object`: org.scalablytyped.runtime.StringDictionary[js.Any], path: java.lang.String): js.Any = js.native
   def getByPath(
-    `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
     path: java.lang.String,
     delim: java.lang.String
   ): js.Any = js.native
-  def getByPath(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], path: js.Array[java.lang.String]): js.Any = js.native
+  def getByPath(`object`: org.scalablytyped.runtime.StringDictionary[js.Any], path: js.Array[java.lang.String]): js.Any = js.native
   def getByPath(
-    `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
     path: js.Array[java.lang.String],
     delim: java.lang.String
   ): js.Any = js.native
@@ -72,7 +72,7 @@ object utilNs extends js.Object {
   def groupBy(collection: Collection): js.Object = js.native
   def groupBy(collection: Collection, iteratee: Iteratee): js.Object = js.native
   def guid(): java.lang.String = js.native
-  def guid(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  def guid(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   def has(`object`: js.Object, path: PropertyPath): scala.Boolean = js.native
   def hashCode(str: java.lang.String): java.lang.String = js.native
   def imageToDataUri(
@@ -136,7 +136,7 @@ object utilNs extends js.Object {
   ): js.Object = js.native
   def mixin(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
   def nextFrame(callback: js.Function0[scala.Unit]): scala.Double = js.native
-  def nextFrame(callback: js.Function0[scala.Unit], context: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Double = js.native
+  def nextFrame(callback: js.Function0[scala.Unit], context: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Double = js.native
   def noop(): scala.Unit = js.native
   def normalizeEvent(evt: jqueryLib.JQueryNs.Event): jqueryLib.JQueryNs.Event = js.native
   def normalizeSides(sides: jointjsLib.jointjsMod.diaNs.Sides): jointjsLib.jointjsMod.diaNs.PaddingJSON = js.native
@@ -150,22 +150,26 @@ object utilNs extends js.Object {
   def sanitizeHTML(html: java.lang.String): java.lang.String = js.native
   def setAttributesBySelector(
     el: underscoreLib.underscoreMod.Global.Element,
-    attrs: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Any]]
+    attrs: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
   ): scala.Unit = js.native
-  def setByPath(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], path: java.lang.String, value: js.Any): js.Any = js.native
   def setByPath(
-    `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
+    path: java.lang.String,
+    value: js.Any
+  ): js.Any = js.native
+  def setByPath(
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
     path: java.lang.String,
     value: js.Any,
     delim: java.lang.String
   ): js.Any = js.native
   def setByPath(
-    `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
     path: js.Array[java.lang.String],
     value: js.Any
   ): js.Any = js.native
   def setByPath(
-    `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
     path: js.Array[java.lang.String],
     value: js.Any,
     delim: java.lang.String
@@ -208,15 +212,15 @@ object utilNs extends js.Object {
   def uniq(array: js.Array[_], iteratee: Iteratee): js.Array[_] = js.native
   def uniqueId(): java.lang.String = js.native
   def uniqueId(prefix: java.lang.String): java.lang.String = js.native
-  def unsetByPath(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], path: java.lang.String): js.Any = js.native
+  def unsetByPath(`object`: org.scalablytyped.runtime.StringDictionary[js.Any], path: java.lang.String): js.Any = js.native
   def unsetByPath(
-    `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
     path: java.lang.String,
     delim: java.lang.String
   ): js.Any = js.native
-  def unsetByPath(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], path: js.Array[java.lang.String]): js.Any = js.native
+  def unsetByPath(`object`: org.scalablytyped.runtime.StringDictionary[js.Any], path: js.Array[java.lang.String]): js.Any = js.native
   def unsetByPath(
-    `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
+    `object`: org.scalablytyped.runtime.StringDictionary[js.Any],
     path: js.Array[java.lang.String],
     delim: java.lang.String
   ): js.Any = js.native
@@ -280,7 +284,7 @@ object utilNs extends js.Object {
   object interpolateNs extends js.Object {
     var hexColor: InterpolateFunction[java.lang.String] = js.native
     var number: InterpolateFunction[scala.Double] = js.native
-    var `object`: InterpolateFunction[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+    var `object`: InterpolateFunction[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
     var unit: InterpolateFunction[java.lang.String] = js.native
     type InterpolateFunction[T] = js.Function2[/* start */ T, /* end */ T, js.Function1[/* time */ scala.Double, T]]
   }

@@ -10,7 +10,7 @@ trait IgGridScrollSettings
   extends /**
 	 * Option for IgGridScrollSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Sets gets the modifier for how long the inertia last on touch devices.
   	 *

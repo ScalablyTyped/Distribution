@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PackageDefinition
-  extends /* fullyQualifiedName */ ScalablyTyped.runtime.StringDictionary[ServiceDefinition[_]]
+  extends /* fullyQualifiedName */ org.scalablytyped.runtime.StringDictionary[ServiceDefinition[_]]
 

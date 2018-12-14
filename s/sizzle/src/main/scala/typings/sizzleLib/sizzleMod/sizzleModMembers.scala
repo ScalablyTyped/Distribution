@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sizzle", JSImport.Namespace)
 @js.native
 object sizzleModMembers
-  extends ScalablyTyped.runtime.TopLevel[SizzleStatic]
+  extends org.scalablytyped.runtime.TopLevel[SizzleStatic]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FilterData[CustomFilterValue /* <: js.Object */]
-  extends /* dataField */ ScalablyTyped.runtime.StringDictionary[FilterValue | CustomFilterValue]
+  extends /* dataField */ org.scalablytyped.runtime.StringDictionary[FilterValue | CustomFilterValue]
 

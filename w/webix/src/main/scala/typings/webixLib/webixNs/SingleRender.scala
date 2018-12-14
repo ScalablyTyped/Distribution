@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SingleRender extends js.Object {
-  var `type`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def customize(obj: js.Any): scala.Unit = js.native
   def render(id: java.lang.String, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
   def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native

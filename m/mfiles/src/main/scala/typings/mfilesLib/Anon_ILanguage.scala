@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ILanguage
-  extends ScalablyTyped.runtime.Instantiable0[ILanguage]
+  extends org.scalablytyped.runtime.Instantiable0[ILanguage]
 

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FingerprintStatic
-  extends ScalablyTyped.runtime.Instantiable0[Fingerprint]
+  extends org.scalablytyped.runtime.Instantiable0[Fingerprint]
      with /**
      * Create Fingerprint object.
      */
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       (/* hasher */ js.Function2[/* key */ java.lang.String, /* seed */ scala.Double, scala.Double]) | (/* option */ FingerprintOption), 
       Fingerprint
     ]

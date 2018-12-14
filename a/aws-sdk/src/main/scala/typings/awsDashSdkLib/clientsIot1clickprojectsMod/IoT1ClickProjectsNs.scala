@@ -79,7 +79,7 @@ object IoT1ClickProjectsNs extends js.Object {
   
   
   trait DefaultPlacementAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeDefaultValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeDefaultValue]
   
   
   trait DeletePlacementRequest extends js.Object {
@@ -145,11 +145,11 @@ object IoT1ClickProjectsNs extends js.Object {
   
   
   trait DeviceCallbackOverrideMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DeviceCallbackValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DeviceCallbackValue]
   
   
   trait DeviceMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DeviceId]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DeviceId]
   
   
   trait DeviceTemplate extends js.Object {
@@ -165,7 +165,7 @@ object IoT1ClickProjectsNs extends js.Object {
   
   
   trait DeviceTemplateMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DeviceTemplate]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DeviceTemplate]
   
   
   trait DisassociateDeviceFromPlacementRequest extends js.Object {
@@ -260,7 +260,7 @@ object IoT1ClickProjectsNs extends js.Object {
   
   
   trait PlacementAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait PlacementDescription extends js.Object {

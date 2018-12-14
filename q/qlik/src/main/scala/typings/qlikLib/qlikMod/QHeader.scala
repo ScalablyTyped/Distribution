@@ -18,7 +18,7 @@ trait QHeader extends js.Object {
   var qMin: js.UndefOr[scala.Double] = js.undefined
   var qReverseSort: scala.Boolean
   var qSortIndicator: qlikLib.qlikLibStrings.A | qlikLib.qlikLibStrings.B
-  var qStateCounts: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Double]] = js.undefined
+  var qStateCounts: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
   def orderBy(): scala.Unit
   def reverseOrder(): scala.Unit
   def selectRange(min: scala.Double, max: scala.Double, inclMin: scala.Boolean, inclMax: scala.Boolean): js.Promise[_]

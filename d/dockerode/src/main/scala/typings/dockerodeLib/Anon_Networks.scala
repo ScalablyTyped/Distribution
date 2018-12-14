@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Networks extends js.Object {
-  var Networks: ScalablyTyped.runtime.StringDictionary[dockerodeLib.dockerodeMod.DockerodeNs.NetworkInfo]
+  var Networks: org.scalablytyped.runtime.StringDictionary[dockerodeLib.dockerodeMod.DockerodeNs.NetworkInfo]
 }
 

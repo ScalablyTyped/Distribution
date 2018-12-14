@@ -23,7 +23,7 @@ object grpcModMembers extends js.Object {
   def load_proto[T](filename: Filename, format: grpcLib.grpcLibStrings.proto): T = js.native
   @JSName("load")
   def load_proto[T](filename: Filename, format: grpcLib.grpcLibStrings.proto, options: LoadOptions): T = js.native
-  def makeGenericClientConstructor(methods: ServiceDefinition[_], serviceName: java.lang.String, classOptions: GenericClientOptions): ScalablyTyped.runtime.Instantiable3[
+  def makeGenericClientConstructor(methods: ServiceDefinition[_], serviceName: java.lang.String, classOptions: GenericClientOptions): org.scalablytyped.runtime.Instantiable3[
     /* address */ java.lang.String, 
     /* credentials */ ChannelCredentials, 
     /* options */ js.UndefOr[/* options */ js.Object], 

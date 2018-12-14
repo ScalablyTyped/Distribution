@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DOMMatrix")
 @js.native
 object DOMMatrix
-  extends ScalablyTyped.runtime.Instantiable0[geometryDashDomLib.GeometryDomNs.DOMMatrix]
-     with ScalablyTyped.runtime.Instantiable6[
+  extends org.scalablytyped.runtime.Instantiable0[geometryDashDomLib.GeometryDomNs.DOMMatrix]
+     with org.scalablytyped.runtime.Instantiable6[
       /* a */ scala.Double, 
       /* b */ scala.Double, 
       /* c */ scala.Double, 
@@ -18,7 +18,7 @@ object DOMMatrix
       /* f */ scala.Double, 
       geometryDashDomLib.GeometryDomNs.DOMMatrix
     ]
-     with ScalablyTyped.runtime.Instantiable1[
+     with org.scalablytyped.runtime.Instantiable1[
       (/* transformList */ java.lang.String) | (/* other */ geometryDashDomLib.GeometryDomNs.DOMMatrixReadOnly) | (/* array */ js.Array[scala.Double]), 
       geometryDashDomLib.GeometryDomNs.DOMMatrix
     ]

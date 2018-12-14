@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class AsyncWriter ()
   extends asyncDashWriterLib.asyncDashWriterMod.asyncUnderscoreWriterNs.AsyncWriter {
   def this(writer: js.Any) = this()
-  def this(writer: js.Any, global: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  def this(writer: js.Any, global: ScalablyTyped.runtime.StringDictionary[js.Any], async: scala.Boolean) = this()
-  def this(writer: js.Any, global: ScalablyTyped.runtime.StringDictionary[js.Any], async: scala.Boolean, buffer: scala.Boolean) = this()
+  def this(writer: js.Any, global: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  def this(writer: js.Any, global: org.scalablytyped.runtime.StringDictionary[js.Any], async: scala.Boolean) = this()
+  def this(writer: js.Any, global: org.scalablytyped.runtime.StringDictionary[js.Any], async: scala.Boolean, buffer: scala.Boolean) = this()
 }
 
 @JSImport("async-writer", "AsyncWriter")

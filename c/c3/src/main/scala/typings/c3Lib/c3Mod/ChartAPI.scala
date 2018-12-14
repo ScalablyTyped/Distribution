@@ -310,12 +310,12 @@ trait ChartAPI extends js.Object {
        * Get and set x values for the chart.
        * @param x If x is given, x values of every target will be updated. If no argument is given, current x values will be returned as an Object whose keys are the target ids.
        */
-  def xs(): ScalablyTyped.runtime.StringDictionary[PrimitiveArray] = js.native
+  def xs(): org.scalablytyped.runtime.StringDictionary[PrimitiveArray] = js.native
   /**
        * Get and set x values for the chart.
        * @param x If x is given, x values of every target will be updated. If no argument is given, current x values will be returned as an Object whose keys are the target ids.
        */
-  def xs(xs: ScalablyTyped.runtime.StringDictionary[PrimitiveArray]): ScalablyTyped.runtime.StringDictionary[PrimitiveArray] = js.native
+  def xs(xs: org.scalablytyped.runtime.StringDictionary[PrimitiveArray]): org.scalablytyped.runtime.StringDictionary[PrimitiveArray] = js.native
   /**
        * Update the x/y grid lines.
        * @param grids X/Y grid lines will be replaced with this argument. The format of this argument is the same as grid.x.lines or grid.y.lines.

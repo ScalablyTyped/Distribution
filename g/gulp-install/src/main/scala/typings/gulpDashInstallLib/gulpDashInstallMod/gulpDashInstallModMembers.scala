@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-install", JSImport.Namespace)
 @js.native
 object gulpDashInstallModMembers
-  extends ScalablyTyped.runtime.TopLevel[Install]
+  extends org.scalablytyped.runtime.TopLevel[Install]
 

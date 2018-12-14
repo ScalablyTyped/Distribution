@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait SchemaObject
   extends IJsonSchema
-     with /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var discriminator: js.UndefOr[java.lang.String] = js.undefined
   var example: js.UndefOr[js.Any] = js.undefined
   var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined

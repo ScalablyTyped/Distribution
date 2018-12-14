@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Monitor
   extends nodeLib.eventsMod.EventEmitter {
-  var files: ScalablyTyped.runtime.StringDictionary[nodeLib.fsMod.Stats] = js.native
+  var files: org.scalablytyped.runtime.StringDictionary[nodeLib.fsMod.Stats] = js.native
   @JSName("on")
   def on_changed(
     event: watchLib.watchLibStrings.changed,

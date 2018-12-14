@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FormatObject[U /* <: Formatted */]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[U]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[U]
 

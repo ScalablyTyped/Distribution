@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait ITemplateLinkingFunctionOptions extends js.Object {
   var futureParentElement: js.UndefOr[angularLib.JQuery] = js.undefined
   var parentBoundTranscludeFn: js.UndefOr[ITranscludeFunction] = js.undefined
-  var transcludeControllers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[angularLib.Anon_Instance]] = js.undefined
+  var transcludeControllers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[angularLib.Anon_Instance]] = js.undefined
 }
 

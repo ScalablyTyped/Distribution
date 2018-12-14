@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait UpdatePayload extends js.Object {
   var removedGeometries: js.Array[java.lang.String]
   var removedMeshes: js.Array[scala.Double]
-  var updatedGeometries: ScalablyTyped.runtime.StringDictionary[SerializedGeometry]
-  var updatedMeshes: ScalablyTyped.runtime.NumberDictionary[SerializedMesh]
+  var updatedGeometries: org.scalablytyped.runtime.StringDictionary[SerializedGeometry]
+  var updatedMeshes: org.scalablytyped.runtime.NumberDictionary[SerializedMesh]
 }
 

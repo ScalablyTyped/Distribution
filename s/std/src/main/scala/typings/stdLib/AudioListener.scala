@@ -32,5 +32,5 @@ trait AudioListener extends js.Object {
 @JSGlobal("AudioListener")
 @js.native
 object AudioListener
-  extends ScalablyTyped.runtime.Instantiable0[AudioListener]
+  extends org.scalablytyped.runtime.Instantiable0[AudioListener]
 

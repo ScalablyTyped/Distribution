@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("testingbot-api", JSImport.Namespace)
 @js.native
 object testingbotDashApiModMembers
-  extends ScalablyTyped.runtime.TopLevel[testingbotDashApiLib.Anon_Options]
+  extends org.scalablytyped.runtime.TopLevel[testingbotDashApiLib.Anon_Options]
 

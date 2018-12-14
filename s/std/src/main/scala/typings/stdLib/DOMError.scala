@@ -13,5 +13,5 @@ trait DOMError extends js.Object {
 @JSGlobal("DOMError")
 @js.native
 object DOMError
-  extends ScalablyTyped.runtime.Instantiable0[DOMError]
+  extends org.scalablytyped.runtime.Instantiable0[DOMError]
 

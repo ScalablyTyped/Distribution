@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("less2sass", JSImport.Namespace)
 @js.native
 object less2sassModMembers
-  extends ScalablyTyped.runtime.TopLevel[Less2Sass]
+  extends org.scalablytyped.runtime.TopLevel[Less2Sass]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CreateProfileContext extends js.Object {
-  var cIData: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var cIData: org.scalablytyped.runtime.StringDictionary[js.Any]
   var contactWithOffers: scala.Boolean
   var countryName: java.lang.String
   var displayName: java.lang.String

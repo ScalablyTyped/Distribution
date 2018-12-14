@@ -10,7 +10,7 @@ trait ConstructorOptions
   extends /**
      * Any custom option properties will be directly assigned to the new Vinyl object.
      */
-/* customOption */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* customOption */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Used for relative pathing. Typically where a glob starts. Default: options.cwd
        */

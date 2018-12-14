@@ -21,13 +21,13 @@ class GraphQuery protected () extends js.Object {
      * @param {Number} maxDepth The maximum depth of graph to traverse
      * @param {Nodal.Model} [Model=null] The Model to base your query around (used for testing)
      */
-  def this(str: java.lang.String, maxDepth: scala.Double, mModel: ScalablyTyped.runtime.Instantiable3[
+  def this(str: java.lang.String, maxDepth: scala.Double, mModel: org.scalablytyped.runtime.Instantiable3[
       /* modelData */ js.Object, 
       /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
       /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
       Model
     ]) = this()
-  var Model: ScalablyTyped.runtime.Instantiable3[
+  var Model: org.scalablytyped.runtime.Instantiable3[
     /* modelData */ js.Object, 
     /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
     /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 

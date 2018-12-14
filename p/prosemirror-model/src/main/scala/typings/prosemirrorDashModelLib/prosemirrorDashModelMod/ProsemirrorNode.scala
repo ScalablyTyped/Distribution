@@ -26,7 +26,7 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends js.Object {
      * attributes allowed and required are
      * [determined](#model.NodeSpec.attrs) by the node type.
      */
-  var attrs: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
      * The number of children that the node has.
      */
@@ -245,14 +245,14 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends js.Object {
      * Check whether this node's markup correspond to the given type,
      * attributes, and marks.
      */
-  def hasMarkup(`type`: NodeType[S], attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
+  def hasMarkup(`type`: NodeType[S], attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
   /**
      * Check whether this node's markup correspond to the given type,
      * attributes, and marks.
      */
   def hasMarkup(
     `type`: NodeType[S],
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     marks: js.Array[Mark[S]]
   ): scala.Boolean = js.native
   /**
@@ -365,6 +365,6 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends js.Object {
   /**
      * Return a JSON-serializeable representation of this node.
      */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 

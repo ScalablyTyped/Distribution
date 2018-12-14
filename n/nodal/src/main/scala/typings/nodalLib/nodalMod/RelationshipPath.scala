@@ -12,7 +12,7 @@ class RelationshipPath protected () extends js.Object {
   var constructor: js.Any = js.native
   var path: js.Array[RelationshipEdge | RelationshipNode] = js.native
   def add(node: RelationshipNode, edge: RelationshipEdge): RelationshipPath = js.native
-  def getModel(): ScalablyTyped.runtime.Instantiable3[
+  def getModel(): org.scalablytyped.runtime.Instantiable3[
     /* modelData */ js.Object, 
     /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
     /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 

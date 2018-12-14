@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("envify", JSImport.Namespace)
 @js.native
 object envifyMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function2[
         /* file */ java.lang.String, 
-        /* environment */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+        /* environment */ org.scalablytyped.runtime.StringDictionary[js.Any], 
         nodeLib.NodeJSNs.ReadWriteStream
       ]
     ]

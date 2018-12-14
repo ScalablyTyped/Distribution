@@ -14,5 +14,5 @@ trait CSSNamespaceRule extends CSSRule {
 @JSGlobal("CSSNamespaceRule")
 @js.native
 object CSSNamespaceRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSNamespaceRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSNamespaceRule]
 

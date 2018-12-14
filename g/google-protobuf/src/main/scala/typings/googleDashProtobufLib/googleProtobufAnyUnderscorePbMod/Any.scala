@@ -25,10 +25,10 @@ class Any ()
 @JSImport("google-protobuf/google/protobuf/any_pb", "Any")
 @js.native
 object Any extends js.Object {
-  var extensions: ScalablyTyped.runtime.NumberDictionary[
+  var extensions: org.scalablytyped.runtime.NumberDictionary[
     googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
   ] = js.native
-  var extensionsBinary: ScalablyTyped.runtime.NumberDictionary[
+  var extensionsBinary: org.scalablytyped.runtime.NumberDictionary[
     googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldBinaryInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
   ] = js.native
   def deserializeBinary(bytes: stdLib.Uint8Array): googleDashProtobufLib.googleProtobufAnyUnderscorePbMod.Any = js.native

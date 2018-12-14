@@ -11,7 +11,7 @@ trait AdvancedSettings extends js.Object {
        * Define a custom backoff strategy
        */
   var backoffStrategies: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       js.Function2[/* attemptsMade */ scala.Double, /* err */ nodeLib.Error, scala.Double]
     ]
   ] = js.undefined

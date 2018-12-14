@@ -173,7 +173,7 @@ object ElasticTranscoderNs extends js.Object {
   
   
   trait CodecOptions
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[CodecOption]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[CodecOption]
   
   
   trait CreateJobOutput extends js.Object {
@@ -1805,7 +1805,7 @@ object ElasticTranscoderNs extends js.Object {
   
   
   trait UserMetadata
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait VideoParameters extends js.Object {

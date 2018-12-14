@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait CollectionBase[T /* <: Model[_] */] extends Events[T] {
   // See https://github.com/tgriesser/bookshelf/blob/0.9.4/src/base/collection.js#L573
   var length: scala.Double = js.native
-  def add(models: js.Array[ScalablyTyped.runtime.StringDictionary[_] | T]): Collection[T] = js.native
-  def add(models: js.Array[ScalablyTyped.runtime.StringDictionary[_] | T], options: CollectionAddOptions): Collection[T] = js.native
+  def add(models: js.Array[T | org.scalablytyped.runtime.StringDictionary[_]]): Collection[T] = js.native
+  def add(models: js.Array[T | org.scalablytyped.runtime.StringDictionary[_]], options: CollectionAddOptions): Collection[T] = js.native
   // lodash methods
   def all(): scala.Boolean = js.native
   // lodash methods
@@ -142,7 +142,7 @@ trait CollectionBase[T /* <: Model[_] */] extends Events[T] {
   def find(predicate: java.lang.String): T = js.native
   def find(predicate: java.lang.String, thisArg: js.Any): T = js.native
   def find[R /* <: js.Object */](predicate: R): T = js.native
-  def findWhere(`match`: ScalablyTyped.runtime.StringDictionary[js.Any]): T = js.native
+  def findWhere(`match`: org.scalablytyped.runtime.StringDictionary[js.Any]): T = js.native
   @JSName("find")
   def find_RObject[R /* <: js.Object */](): T = js.native
   def first(): T = js.native
@@ -289,8 +289,8 @@ trait CollectionBase[T /* <: Model[_] */] extends Events[T] {
   def select_RObject[R /* <: js.Object */](): js.Array[T] = js.native
   def serialize(): js.Array[_] = js.native
   def serialize(options: SerializeOptions): js.Array[_] = js.native
-  def set(models: js.Array[ScalablyTyped.runtime.StringDictionary[_] | T]): Collection[T] = js.native
-  def set(models: js.Array[ScalablyTyped.runtime.StringDictionary[_] | T], options: CollectionSetOptions): Collection[T] = js.native
+  def set(models: js.Array[T | org.scalablytyped.runtime.StringDictionary[_]]): Collection[T] = js.native
+  def set(models: js.Array[T | org.scalablytyped.runtime.StringDictionary[_]], options: CollectionSetOptions): Collection[T] = js.native
   def shift(): scala.Unit = js.native
   def shift(options: EventOptions): scala.Unit = js.native
   def shuffle(): js.Array[T] = js.native
@@ -332,7 +332,7 @@ trait CollectionBase[T /* <: Model[_] */] extends Events[T] {
   def toJSON(options: SerializeOptions): js.Array[_] = js.native
   def unshift(model: js.Any): scala.Unit = js.native
   def unshift(model: js.Any, options: CollectionAddOptions): scala.Unit = js.native
-  def where(`match`: ScalablyTyped.runtime.StringDictionary[js.Any], firstOnly: scala.Boolean): T | Collection[T] = js.native
+  def where(`match`: org.scalablytyped.runtime.StringDictionary[js.Any], firstOnly: scala.Boolean): T | Collection[T] = js.native
   def without(values: js.Any*): js.Array[T] = js.native
 }
 

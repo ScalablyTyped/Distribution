@@ -25,5 +25,5 @@ trait AudioParam extends js.Object {
 @JSGlobal("AudioParam")
 @js.native
 object AudioParam
-  extends ScalablyTyped.runtime.Instantiable0[AudioParam]
+  extends org.scalablytyped.runtime.Instantiable0[AudioParam]
 

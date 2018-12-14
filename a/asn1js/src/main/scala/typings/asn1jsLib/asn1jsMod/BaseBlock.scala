@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class BaseBlock[T /* <: asn1jsLib.asn1jsMod.Asn1jsNs.LocalValueBlock */] ()
   extends asn1jsLib.asn1jsMod.Asn1jsNs.BaseBlock[T] {
   def this(parameters: asn1jsLib.asn1jsMod.Asn1jsNs.BaseBlockParams) = this()
-  def this(parameters: asn1jsLib.asn1jsMod.Asn1jsNs.BaseBlockParams, valueBlockType: ScalablyTyped.runtime.Instantiable0[asn1jsLib.asn1jsMod.Asn1jsNs.LocalValueBlock]) = this()
+  def this(parameters: asn1jsLib.asn1jsMod.Asn1jsNs.BaseBlockParams, valueBlockType: org.scalablytyped.runtime.Instantiable0[asn1jsLib.asn1jsMod.Asn1jsNs.LocalValueBlock]) = this()
   /* CompleteClass */
   override var blockLength: scala.Double = js.native
   /* CompleteClass */

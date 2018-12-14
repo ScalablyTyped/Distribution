@@ -20,7 +20,7 @@ trait TestResult extends js.Object {
   var median: TestRun
   var mobile: scala.Double
   var plr: java.lang.String
-  var runs: ScalablyTyped.runtime.StringDictionary[TestRun]
+  var runs: org.scalablytyped.runtime.StringDictionary[TestRun]
   var standardDeviation: TestRun
   var successfulFVRuns: scala.Double
   var summary: java.lang.String

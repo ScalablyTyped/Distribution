@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("retry-as-promised", JSImport.Namespace)
 @js.native
 object retryDashAsDashPromisedModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       retryDashAsDashPromisedLib.retryDashAsDashPromisedMod.retryAsPromisedNs.RetryAsPromisedStatic
     ]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ParsedOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var `_`: js.Array[java.lang.String]
 }
 

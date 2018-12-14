@@ -10,7 +10,7 @@ trait IgGridHidingColumnSetting
   extends /**
 	 * Option for IgGridHidingColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Allows the column to be hidden.
   	 *

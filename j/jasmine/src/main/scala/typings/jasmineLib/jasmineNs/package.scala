@@ -16,6 +16,6 @@ package object jasmineNs {
   type PassedExpectation = CustomReportExpectation
   type SpecFunction = js.Function1[/* spec */ js.UndefOr[Spec], scala.Unit]
   type SpyObj[T] = T with jasmineLib.jasmineLibStrings.SpyObj with js.Any
-  type SpyObjMethodNames[T] = js.Array[java.lang.String] | (jasmineLib.jasmineLibStrings.SpyObjMethodNames with T) | ScalablyTyped.runtime.StringDictionary[js.Any]
+  type SpyObjMethodNames[T] = js.Array[java.lang.String] | (jasmineLib.jasmineLibStrings.SpyObjMethodNames with T) | org.scalablytyped.runtime.StringDictionary[js.Any]
   type StringPrettyPrinter = PrettyPrinter
 }

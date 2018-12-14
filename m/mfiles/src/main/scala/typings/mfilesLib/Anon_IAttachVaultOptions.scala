@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IAttachVaultOptions
-  extends ScalablyTyped.runtime.Instantiable0[IAttachVaultOptions]
+  extends org.scalablytyped.runtime.Instantiable0[IAttachVaultOptions]
 

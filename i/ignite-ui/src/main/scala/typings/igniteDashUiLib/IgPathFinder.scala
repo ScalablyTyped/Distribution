@@ -10,7 +10,7 @@ trait IgPathFinder
   extends /**
 	 * Option for igPathFinder
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var items: js.UndefOr[js.Any] = js.undefined
 }
 

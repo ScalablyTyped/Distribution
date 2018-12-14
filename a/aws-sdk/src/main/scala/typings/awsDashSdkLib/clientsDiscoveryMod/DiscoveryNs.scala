@@ -105,7 +105,7 @@ object DiscoveryNs extends js.Object {
   
   
   trait Configuration
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait ConfigurationTag extends js.Object {
@@ -326,7 +326,7 @@ object DiscoveryNs extends js.Object {
   
   
   trait DescribeConfigurationsAttribute
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait DescribeConfigurationsRequest extends js.Object {
@@ -696,7 +696,7 @@ object DiscoveryNs extends js.Object {
   
   
   trait SchemaStorageConfig
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait StartContinuousExportRequest extends js.Object

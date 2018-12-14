@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 
 trait SpeechRecognitionResult
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[SpeechRecognitionAlternative] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[SpeechRecognitionAlternative] {
   val isFinal: scala.Boolean
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[SpeechRecognitionAlternative]]
   val length: scala.Double
   def item(index: scala.Double): SpeechRecognitionAlternative
@@ -18,5 +18,5 @@ trait SpeechRecognitionResult
 @JSGlobal("SpeechRecognitionResult")
 @js.native
 object SpeechRecognitionResult
-  extends ScalablyTyped.runtime.Instantiable0[SpeechRecognitionResult]
+  extends org.scalablytyped.runtime.Instantiable0[SpeechRecognitionResult]
 

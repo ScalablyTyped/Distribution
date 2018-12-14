@@ -17,7 +17,7 @@ trait HASH
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[HASH] {
+org.scalablytyped.runtime.Instantiable0[HASH] {
   /**
        * 
        * @param message 

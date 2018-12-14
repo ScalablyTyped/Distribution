@@ -26,7 +26,7 @@ class MockSpan protected ()
   def debug(): DebugInfo = js.native
   def durationMs(): scala.Double = js.native
   def operationName(): java.lang.String = js.native
-  def tags(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def tags(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def uuid(): java.lang.String = js.native
 }
 

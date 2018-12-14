@@ -748,7 +748,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   
   
   trait AttributeMappingType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[StringType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[StringType]
   
   
   trait AttributeType extends js.Object {
@@ -800,7 +800,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   
   
   trait AuthParametersType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[StringType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[StringType]
   
   
   trait AuthenticationResultType extends js.Object {
@@ -832,7 +832,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   
   
   trait ChallengeParametersType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[StringType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[StringType]
   
   
   trait ChallengeResponseType extends js.Object {
@@ -848,7 +848,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   
   
   trait ChallengeResponsesType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[StringType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[StringType]
   
   
   trait ChangePasswordRequest extends js.Object {
@@ -879,7 +879,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   
   
   trait ClientMetadataType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[StringType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[StringType]
   
   
   trait CodeDeliveryDetailsType extends js.Object {
@@ -2543,7 +2543,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   
   
   trait ProviderDetailsType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[StringType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[StringType]
   
   
   trait ProviderUserIdentifierType extends js.Object {
@@ -6228,7 +6228,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   
   
   trait UserPoolTagsType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[StringType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[StringType]
   
   
   trait UserPoolType extends js.Object {

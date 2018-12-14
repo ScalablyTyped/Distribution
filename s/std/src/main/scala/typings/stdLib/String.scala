@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait String
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[java.lang.String] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   /** Iterator */
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
   /** Returns the length of a String object. */
   val length: scala.Double = js.native

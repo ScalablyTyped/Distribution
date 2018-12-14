@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Path
-  extends ScalablyTyped.runtime.Instantiable0[ffiDashNapiLib.ffiDashNapiMod.DynamicLibrary]
-     with ScalablyTyped.runtime.Instantiable1[/* path */ java.lang.String, ffiDashNapiLib.ffiDashNapiMod.DynamicLibrary]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[ffiDashNapiLib.ffiDashNapiMod.DynamicLibrary]
+     with org.scalablytyped.runtime.Instantiable1[/* path */ java.lang.String, ffiDashNapiLib.ffiDashNapiMod.DynamicLibrary]
+     with org.scalablytyped.runtime.Instantiable2[
       /* path */ java.lang.String, 
       /* mode */ scala.Double, 
       ffiDashNapiLib.ffiDashNapiMod.DynamicLibrary

@@ -11,5 +11,5 @@ trait HTMLMainElement extends HTMLElement
 @JSGlobal("HTMLMainElement")
 @js.native
 object HTMLMainElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLMainElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLMainElement]
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpsertExpression
   extends PartialStatement
-     with ScalablyTyped.runtime.Instantiable7[
+     with org.scalablytyped.runtime.Instantiable7[
       /* prev */ PartialStatement, 
       /* upsertExpr */ js.Any, 
       /* insertExpr */ js.Any, 

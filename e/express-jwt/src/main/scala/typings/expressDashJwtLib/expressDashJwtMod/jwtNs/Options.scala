@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Options
-  extends /* property */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* property */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var credentialsRequired: js.UndefOr[scala.Boolean] = js.undefined
   var getToken: js.UndefOr[GetTokenCallback] = js.undefined
   var isRevoked: js.UndefOr[IsRevokedCallback] = js.undefined

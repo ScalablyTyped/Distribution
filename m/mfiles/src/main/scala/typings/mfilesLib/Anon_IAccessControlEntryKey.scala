@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IAccessControlEntryKey
-  extends ScalablyTyped.runtime.Instantiable0[IAccessControlEntryKey]
+  extends org.scalablytyped.runtime.Instantiable0[IAccessControlEntryKey]
 

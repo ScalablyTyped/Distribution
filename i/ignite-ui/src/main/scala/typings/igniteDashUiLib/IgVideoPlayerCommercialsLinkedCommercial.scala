@@ -10,7 +10,7 @@ trait IgVideoPlayerCommercialsLinkedCommercial
   extends /**
 	 * Option for IgVideoPlayerCommercialsLinkedCommercial
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets the link to open on linked commercial click.
   	 *

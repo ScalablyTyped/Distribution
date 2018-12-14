@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cookies", JSImport.Namespace)
 @js.native
 object cookiesModMembers
-  extends ScalablyTyped.runtime.TopLevel[CookiesFunction]
+  extends org.scalablytyped.runtime.TopLevel[CookiesFunction]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IAggregateStatic
-  extends ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable4[
       /* aggEntity */ js.Any, 
       /* rowFactory */ IRowFactory, 
       /* rowHeight */ scala.Double, 

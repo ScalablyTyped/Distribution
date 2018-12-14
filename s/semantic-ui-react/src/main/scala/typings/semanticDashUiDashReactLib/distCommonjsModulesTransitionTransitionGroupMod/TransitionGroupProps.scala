@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait TransitionGroupProps
   extends StrictTransitionGroupProps
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

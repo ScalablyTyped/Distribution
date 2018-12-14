@@ -16,7 +16,7 @@ trait FormProps[T] extends js.Object {
   var autocomplete: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var enctype: js.UndefOr[java.lang.String] = js.undefined
-  var fields: js.UndefOr[ScalablyTyped.runtime.StringDictionary[Field]] = js.undefined
+  var fields: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Field]] = js.undefined
   var formContext: js.UndefOr[js.Any] = js.undefined
   var formData: js.UndefOr[T] = js.undefined
   // HTML Attributes
@@ -37,6 +37,6 @@ trait FormProps[T] extends js.Object {
   var transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]] = js.undefined
   var uiSchema: js.UndefOr[UiSchema] = js.undefined
   var validate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]] = js.undefined
-  var widgets: js.UndefOr[ScalablyTyped.runtime.StringDictionary[Widget]] = js.undefined
+  var widgets: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Widget]] = js.undefined
 }
 

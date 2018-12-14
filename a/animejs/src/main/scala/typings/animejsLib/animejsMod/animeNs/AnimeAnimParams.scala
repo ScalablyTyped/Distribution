@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait AnimeAnimParams
-  extends /* AnyAnimatedProperty */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* AnyAnimatedProperty */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var begin: js.UndefOr[animejsLib.AnimeCallbackFunction] = js.undefined
   var complete: js.UndefOr[animejsLib.AnimeCallbackFunction] = js.undefined
   var delay: js.UndefOr[scala.Double | animejsLib.FunctionBasedParameter] = js.undefined

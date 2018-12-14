@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait JQueryEasingFunctions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[JQueryEasingFunction] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[JQueryEasingFunction] {
   @JSName("linear")
   var linear_Original: JQueryEasingFunction = js.native
   @JSName("swing")

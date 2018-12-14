@@ -80,8 +80,8 @@ trait Map extends Evented {
   def getCanvasContainer(): stdLib.HTMLElement = js.native
   def getCenter(): LngLat = js.native
   def getContainer(): stdLib.HTMLElement = js.native
-  def getFeatureState(feature: mapboxDashGlLib.Anon_SourceLayerSource): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  def getFeatureState(feature: MapboxGeoJSONFeature): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getFeatureState(feature: mapboxDashGlLib.Anon_SourceLayerSource): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def getFeatureState(feature: MapboxGeoJSONFeature): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getFilter(layer: java.lang.String): js.Array[_] = js.native
   def getLayer(id: java.lang.String): Layer = js.native
   def getLayoutProperty(layer: java.lang.String, name: java.lang.String): js.Any = js.native
@@ -164,9 +164,9 @@ trait Map extends Evented {
   def setCenter(center: LngLatLike, eventData: EventData): this.type = js.native
   def setFeatureState(
     feature: mapboxDashGlLib.Anon_SourceLayerSource,
-    state: ScalablyTyped.runtime.StringDictionary[js.Any]
+    state: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
-  def setFeatureState(feature: MapboxGeoJSONFeature, state: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def setFeatureState(feature: MapboxGeoJSONFeature, state: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def setFilter(layer: java.lang.String): this.type = js.native
   def setFilter(layer: java.lang.String, filter: js.Array[_]): this.type = js.native
   def setLayerZoomRange(layerId: java.lang.String, minzoom: scala.Double, maxzoom: scala.Double): this.type = js.native

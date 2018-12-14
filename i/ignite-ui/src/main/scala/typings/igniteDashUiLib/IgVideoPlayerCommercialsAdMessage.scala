@@ -10,7 +10,7 @@ trait IgVideoPlayerCommercialsAdMessage
   extends /**
 	 * Option for IgVideoPlayerCommercialsAdMessage
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets whether to apply an animation effect when showing or hiding the ad message. If set to true, the animation is played for [animationDuration](ui.igvideoplayer#options:commercials.adMessage.animationDuration) in milliseconds.
   	 *

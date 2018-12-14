@@ -12,10 +12,10 @@ class Class () extends js.Object
 @JSImport("leaflet", "Class")
 @js.native
 object Class extends js.Object {
-  def addInitHook(initHookFn: js.Function0[scala.Unit]): js.Any with ScalablyTyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
-  def addInitHook(methodName: java.lang.String, args: js.Any*): js.Any with ScalablyTyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
-  def extend(props: js.Any): leafletLib.Anon_Args with ScalablyTyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
-  def include(props: js.Any): js.Any with ScalablyTyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
-  def mergeOptions(props: js.Any): js.Any with ScalablyTyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
+  def addInitHook(initHookFn: js.Function0[scala.Unit]): js.Any with org.scalablytyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
+  def addInitHook(methodName: java.lang.String, args: js.Any*): js.Any with org.scalablytyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
+  def extend(props: js.Any): leafletLib.Anon_Args with org.scalablytyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
+  def include(props: js.Any): js.Any with org.scalablytyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
+  def mergeOptions(props: js.Any): js.Any with org.scalablytyped.runtime.Instantiable0[leafletLib.leafletMod.Class] = js.native
 }
 

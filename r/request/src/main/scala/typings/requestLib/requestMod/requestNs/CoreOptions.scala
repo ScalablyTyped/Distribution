@@ -27,8 +27,8 @@ trait CoreOptions extends js.Object {
     scala.Boolean | (js.Function1[/* response */ nodeLib.httpMod.IncomingMessage, scala.Boolean])
   ] = js.undefined
   var forever: js.UndefOr[js.Any] = js.undefined
-  var form: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | java.lang.String] = js.undefined
-  var formData: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var form: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String] = js.undefined
+  var formData: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var gzip: js.UndefOr[scala.Boolean] = js.undefined
   var har: js.UndefOr[HttpArchiveRequest] = js.undefined
   var hawk: js.UndefOr[HawkOptions] = js.undefined

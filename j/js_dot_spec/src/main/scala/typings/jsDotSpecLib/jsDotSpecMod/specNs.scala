@@ -133,7 +133,7 @@ object specNs extends js.Object {
   def collection(
     name: java.lang.String,
     spec: jsDotSpecLib.jsDotSpecMod.SpecInput,
-    options: ScalablyTyped.runtime.StringDictionary[scala.Double]
+    options: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): jsDotSpecLib.jsDotSpecMod.Spec = js.native
   /**
        * Used to define the shape of maps. By default all keys are required. Use {symbol.optional} key to define
@@ -166,7 +166,7 @@ object specNs extends js.Object {
        */
   def or(
     name: java.lang.String,
-    alts: ScalablyTyped.runtime.StringDictionary[jsDotSpecLib.jsDotSpecMod.SpecInput]
+    alts: org.scalablytyped.runtime.StringDictionary[jsDotSpecLib.jsDotSpecMod.SpecInput]
   ): jsDotSpecLib.jsDotSpecMod.Spec = js.native
   /**
        * Used to define a predicate function as a Spec.

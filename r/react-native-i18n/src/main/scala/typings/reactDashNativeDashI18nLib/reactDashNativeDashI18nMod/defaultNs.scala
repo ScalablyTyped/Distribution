@@ -151,17 +151,17 @@ object defaultNs extends js.Object {
   ): java.lang.String = js.native
   @js.native
   object locales
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[
           java.lang.String | js.Array[java.lang.String] | (js.Function1[/* locale */ java.lang.String, java.lang.String | js.Array[java.lang.String]])
         ]
   
   @js.native
   object pluralization
-    extends /* locale */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* count */ scala.Double, js.Array[java.lang.String]]]
+    extends /* locale */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* count */ scala.Double, js.Array[java.lang.String]]]
   
   @js.native
   object translations
-    extends /* locale */ ScalablyTyped.runtime.StringDictionary[js.Object]
+    extends /* locale */ org.scalablytyped.runtime.StringDictionary[js.Object]
   
 }
 

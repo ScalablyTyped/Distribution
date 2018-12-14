@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Color () extends Base {
   def this(color: java.lang.String) = this()
-  def this(params: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(params: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   var alpha: scala.Double = js.native
   var blue: scala.Double = js.native
   var brightness: scala.Double = js.native

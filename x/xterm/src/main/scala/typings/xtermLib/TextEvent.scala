@@ -32,7 +32,7 @@ trait TextEvent extends UIEvent {
 @JSGlobal("TextEvent")
 @js.native
 object TextEvent
-  extends ScalablyTyped.runtime.Instantiable0[TextEvent] {
+  extends org.scalablytyped.runtime.Instantiable0[TextEvent] {
   val DOM_INPUT_METHOD_DROP: scala.Double = js.native
   val DOM_INPUT_METHOD_HANDWRITING: scala.Double = js.native
   val DOM_INPUT_METHOD_IME: scala.Double = js.native

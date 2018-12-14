@@ -12,7 +12,7 @@ trait Collection[TModel /* <: Model */] extends ModelBase {
            */
   var comparator: java.lang.String | (js.Function1[/* element */ TModel, scala.Double | java.lang.String]) | (js.Function2[/* compare */ TModel, /* to */ js.UndefOr[TModel], scala.Double]) = js.native
   var length: scala.Double = js.native
-  var model: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, TModel] = js.native
+  var model: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, TModel] = js.native
   var models: js.Array[TModel] = js.native
   /**
            * Sets the url property (or function) on a collection to reference its location on the server.

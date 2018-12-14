@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("dateArithmetic", JSImport.Namespace)
 @js.native
 object dateArithmeticMod
-  extends ScalablyTyped.runtime.TopLevel[dateArithmeticStatic]
+  extends org.scalablytyped.runtime.TopLevel[dateArithmeticStatic]
 

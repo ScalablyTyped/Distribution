@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IntervalConstructor[T]
-  extends ScalablyTyped.runtime.Instantiable2[/* from */ Endpoint[T], /* to */ Endpoint[T], Interval[T]] {
+  extends org.scalablytyped.runtime.Instantiable2[/* from */ Endpoint[T], /* to */ Endpoint[T], Interval[T]] {
   var empty: Interval[T] = js.native
   var negInf: Endpoint[T] = js.native
   var negativeInfinity: Endpoint[T] = js.native

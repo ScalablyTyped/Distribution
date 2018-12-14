@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ViewChildDecorator
-  extends ScalablyTyped.runtime.Instantiable1[
-      (/* selector */ atAngularCoreLib.srcTypeMod.Type[js.Any]) | (/* selector */ js.Function) | (/* selector */ java.lang.String), 
-      ViewChild
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       (/* selector */ atAngularCoreLib.srcTypeMod.Type[js.Any]) | (/* selector */ js.Function) | (/* selector */ java.lang.String), 
       /* opts */ atAngularCoreLib.Anon_Read, 
+      ViewChild
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* selector */ atAngularCoreLib.srcTypeMod.Type[js.Any]) | (/* selector */ js.Function) | (/* selector */ java.lang.String), 
       ViewChild
     ] {
   /**

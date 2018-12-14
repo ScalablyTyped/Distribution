@@ -15,8 +15,8 @@ trait IWsdlBaseOptions extends js.Object {
   var overrideRootElement: js.UndefOr[soapLib.Anon_Namespace] = js.undefined
   var returnFault: js.UndefOr[scala.Boolean] = js.undefined
   var valueKey: js.UndefOr[java.lang.String] = js.undefined
-  var wsdl_headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var wsdl_options: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var wsdl_headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var wsdl_options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var xmlKey: js.UndefOr[java.lang.String] = js.undefined
 }
 

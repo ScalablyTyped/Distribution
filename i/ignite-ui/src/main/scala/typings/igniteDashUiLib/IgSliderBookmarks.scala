@@ -10,7 +10,7 @@ trait IgSliderBookmarks
   extends /**
 	 * Option for IgSliderBookmarks
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Get or set a custom css class to be applied to the bookmark anchor element.
   	 */

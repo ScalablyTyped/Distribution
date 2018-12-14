@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait IOptionsMetadata
-  extends /* x */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]
+  extends /* x */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
 

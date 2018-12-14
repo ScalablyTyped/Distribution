@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hasher", JSImport.Namespace)
 @js.native
 object hasherModMembers
-  extends ScalablyTyped.runtime.TopLevel[hasherLib.hasherMod.HasherJsNs.HasherStatic]
+  extends org.scalablytyped.runtime.TopLevel[hasherLib.hasherMod.HasherJsNs.HasherStatic]
 

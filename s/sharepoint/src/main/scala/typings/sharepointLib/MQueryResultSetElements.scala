@@ -19,7 +19,7 @@ trait MQueryResultSetElements
     func: js.Function2[/* index */ scala.Double, /* attr */ js.Any, _]
   ): MQueryResultSetElements = js.native
   def attr(attributeName: java.lang.String, valueOrDelegate: js.Any): MQueryResultSetElements = js.native
-  def attr(map: ScalablyTyped.runtime.StringDictionary[js.Any]): MQueryResultSetElements = js.native
+  def attr(map: org.scalablytyped.runtime.StringDictionary[js.Any]): MQueryResultSetElements = js.native
   def bind(eventType: java.lang.String, handler: js.Function1[/* eventObject */ MQueryEvent, _]): MQueryResultSetElements = js.native
   def blur(): MQueryResultSetElements = js.native
   def blur(handler: js.Function1[/* eventObject */ MQueryEvent, _]): MQueryResultSetElements = js.native
@@ -38,7 +38,7 @@ trait MQueryResultSetElements
   def css(propertyName: js.Array[java.lang.String]): java.lang.String = js.native
   def data(key: java.lang.String): js.Any = js.native
   def data(key: java.lang.String, value: js.Any): MQueryResultSetElements = js.native
-  def data(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): MQueryResultSetElements = js.native
+  def data(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): MQueryResultSetElements = js.native
   def dblclick(): MQueryResultSetElements = js.native
   def dblclick(handler: js.Function1[/* eventObject */ MQueryEvent, _]): MQueryResultSetElements = js.native
   def detach(): MQueryResultSetElements = js.native

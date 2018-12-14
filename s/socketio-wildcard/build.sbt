@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "socketio-wildcard"
-version := "2.0-dt-20180910Z-c2482d"
+version := "2.0-dt-20180910Z-0765ea"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
-  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20181208Z-0bb175",
-  "org.scalablytyped" %%% "socket_dot_io-client" % "1.4.5-dt-20180910Z-b9f995",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
+  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20181208Z-d939eb",
+  "org.scalablytyped" %%% "socket_dot_io-client" % "1.4.5-dt-20180910Z-6ec6d1",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

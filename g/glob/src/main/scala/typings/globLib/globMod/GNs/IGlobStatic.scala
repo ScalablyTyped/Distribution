@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IGlobStatic
   extends nodeLib.eventsMod.EventEmitter
-     with ScalablyTyped.runtime.Instantiable1[/* pattern */ java.lang.String, IGlob]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable1[/* pattern */ java.lang.String, IGlob]
+     with org.scalablytyped.runtime.Instantiable3[
       /* pattern */ java.lang.String, 
       /* options */ IOptions, 
       /* cb */ js.Function2[
@@ -19,7 +19,7 @@ trait IGlobStatic
       ], 
       IGlob
     ]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* pattern */ java.lang.String, 
       (/* cb */ js.Function2[
         /* err */ nodeLib.Error | scala.Null, 

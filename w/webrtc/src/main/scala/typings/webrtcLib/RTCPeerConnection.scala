@@ -5,16 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// https://www.w3.org/TR/webrtc/#idl-def-rtcpeerconnection
 @js.native
 trait RTCPeerConnection
   extends stdLib.EventTarget {
-  val connectionState: RTCPeerConnectionState = js.native
+  val connectionState: stdLib.RTCPeerConnectionState = js.native
   val currentLocalDescription: stdLib.RTCSessionDescription | scala.Null = js.native
   val currentRemoteDescription: stdLib.RTCSessionDescription | scala.Null = js.native
   val localDescription: stdLib.RTCSessionDescription | scala.Null = js.native
-  @JSName("onconnectionstatechange")
-  var onconnectionstatechange_Original: EventHandler = js.native
+  var onconnectionstatechange: PeerConnectionEventHandler[stdLib.Event] = js.native
+  var ondatachannel: PeerConnectionEventHandler[RTCDataChannelEvent] = js.native
+  var onicecandidateerror: PeerConnectionEventHandler[RTCPeerConnectionIceErrorEvent] = js.native
+  var ontrack: PeerConnectionEventHandler[RTCTrackEvent] = js.native
   val pendingLocalDescription: stdLib.RTCSessionDescription | scala.Null = js.native
   val pendingRemoteDescription: stdLib.RTCSessionDescription | scala.Null = js.native
   val remoteDescription: stdLib.RTCSessionDescription | scala.Null = js.native
@@ -84,10 +85,6 @@ trait RTCPeerConnection
     failureCallback: stdLib.RTCPeerConnectionErrorCallback
   ): js.Promise[scala.Unit] = js.native
   def getTransceivers(): js.Array[RTCRtpTransceiver] = js.native
-  def onconnectionstatechange(event: stdLib.Event): scala.Unit = js.native
-  def ondatachannel(event: RTCDataChannelEvent): scala.Unit = js.native
-  def onicecandidateerror(event: RTCPeerConnectionIceErrorEvent): scala.Unit = js.native
-  def ontrack(event: RTCTrackEvent): scala.Unit = js.native
   def removeTrack(sender: RTCRtpSender): scala.Unit = js.native
   def setConfiguration(configuration: RTCConfiguration): scala.Unit = js.native
   def setLocalDescription(description: stdLib.RTCSessionDescriptionInit): js.Promise[scala.Unit] = js.native

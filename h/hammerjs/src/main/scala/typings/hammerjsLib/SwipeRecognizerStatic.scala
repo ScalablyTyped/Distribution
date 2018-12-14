@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SwipeRecognizerStatic
-  extends ScalablyTyped.runtime.Instantiable0[SwipeRecognizer]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ RecognizerOptions, SwipeRecognizer]
+  extends org.scalablytyped.runtime.Instantiable0[SwipeRecognizer]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ RecognizerOptions, SwipeRecognizer]
 

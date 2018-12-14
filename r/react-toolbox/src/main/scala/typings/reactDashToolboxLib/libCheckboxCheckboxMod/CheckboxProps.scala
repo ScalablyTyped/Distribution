@@ -11,7 +11,7 @@ trait CheckboxProps
      with /**
    * Additional properties passed to inner input element.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Value for the checkbox, can be true or false.
      * @default false

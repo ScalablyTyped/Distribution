@@ -403,7 +403,7 @@ object KMSNs extends js.Object {
   
   
   trait EncryptionContextType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[EncryptionContextValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[EncryptionContextValue]
   
   
   trait GenerateDataKeyRequest extends js.Object {

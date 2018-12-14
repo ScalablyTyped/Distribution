@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pouchdb-browser", JSImport.Namespace)
 @js.native
 object pouchdbDashBrowserMod
-  extends ScalablyTyped.runtime.TopLevel[pouchdbDashCoreLib.PouchDBNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[pouchdbDashCoreLib.PouchDBNs.Static]
 

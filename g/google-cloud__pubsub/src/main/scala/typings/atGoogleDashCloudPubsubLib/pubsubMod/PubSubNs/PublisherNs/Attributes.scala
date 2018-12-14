@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Attributes
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | nodeLib.Buffer | stdLib.ArrayBuffer]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | nodeLib.Buffer | stdLib.ArrayBuffer]
 

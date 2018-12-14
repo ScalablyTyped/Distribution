@@ -103,10 +103,10 @@ trait IWorkApi
     iterationId: java.lang.String
   ): js.Promise[js.Array[vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TeamMemberCapacity]] = js.native
   def setBoardOptions(
-    options: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    options: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     teamContext: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamContext,
     id: java.lang.String
-  ): js.Promise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  ): js.Promise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def updateBoardCardRuleSettings(
     boardCardRuleSettings: vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.BoardCardRuleSettings,
     teamContext: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamContext,
@@ -134,7 +134,7 @@ trait IWorkApi
     board: java.lang.String
   ): js.Promise[js.Array[vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.BoardRow]] = js.native
   def updateBoardUserSettings(
-    boardUserSettings: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    boardUserSettings: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     teamContext: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamContext,
     board: java.lang.String
   ): js.Promise[vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.BoardUserSettings] = js.native

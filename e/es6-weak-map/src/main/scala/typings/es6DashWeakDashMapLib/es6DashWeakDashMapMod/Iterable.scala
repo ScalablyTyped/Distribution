@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Iterable[T] extends js.Object {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[stdLib.Iterator[T]]
 }
 

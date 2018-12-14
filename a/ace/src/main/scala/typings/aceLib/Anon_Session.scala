@@ -13,7 +13,7 @@ trait Anon_Session
          * @param initialRow The row to start the tokenizing at
          * @param initialColumn The column to start the tokenizing at
         **/
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* session */ aceLib.AceAjaxNs.IEditSession, 
       /* initialRow */ scala.Double, 
       /* initialColumn */ scala.Double, 

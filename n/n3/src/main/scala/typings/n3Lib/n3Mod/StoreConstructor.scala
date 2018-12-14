@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StoreConstructor
-  extends ScalablyTyped.runtime.Instantiable0[N3Store[rdfDashJsLib.rdfDashJsMod.BaseQuad, BaseQuad]]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[N3Store[rdfDashJsLib.rdfDashJsMod.BaseQuad, BaseQuad]]
+     with org.scalablytyped.runtime.Instantiable1[
       /* triples */ js.Array[rdfDashJsLib.rdfDashJsMod.BaseQuad], 
       N3Store[rdfDashJsLib.rdfDashJsMod.BaseQuad, BaseQuad]
     ]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* triples */ js.Array[rdfDashJsLib.rdfDashJsMod.BaseQuad], 
       /* options */ StoreOptions, 
       N3Store[rdfDashJsLib.rdfDashJsMod.BaseQuad, BaseQuad]

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IKeyCodeTable
-  extends /* code */ ScalablyTyped.runtime.NumberDictionary[java.lang.String]
+  extends /* code */ org.scalablytyped.runtime.NumberDictionary[java.lang.String]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ActionCreatorsMapObject[A]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ActionCreator[A]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ActionCreator[A]]
 

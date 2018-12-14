@@ -16,7 +16,7 @@ trait Codec extends js.Object {
      */
   def addExtPacker[T](
     etype: scala.Double,
-    Class: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
+    Class: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
     packer: js.Function1[/* t */ T, nodeLib.Buffer | stdLib.Uint8Array]
   ): scala.Unit
   /**

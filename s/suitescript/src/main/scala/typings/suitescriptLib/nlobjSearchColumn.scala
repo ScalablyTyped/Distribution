@@ -27,7 +27,7 @@ class nlobjSearchColumn protected ()
      * @param summary
      * @return
      */
-ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, nlobjSearchColumn]
+org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, nlobjSearchColumn]
      with /**
      *
      * @param name
@@ -35,7 +35,7 @@ ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, nlobjSearchColu
      * @param summary
      * @return
      */
-ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* join */ java.lang.String, nlobjSearchColumn]
+org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* join */ java.lang.String, nlobjSearchColumn]
      with /**
      *
      * @param name
@@ -43,7 +43,7 @@ ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* join */ java
      * @param summary
      * @return
      */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* name */ java.lang.String, 
       /* join */ java.lang.String, 
       /* summary */ java.lang.String, 

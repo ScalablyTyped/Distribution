@@ -23,7 +23,7 @@ class genericDefinition ()
   var fakeKeystroke_genericDefinition: scala.Double = js.native
   val isIndent: scala.Boolean = js.native
   @JSName("modes")
-  var modes_genericDefinition: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var modes_genericDefinition: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("readOnly")
   var readOnly_genericDefinition: scala.Boolean = js.native
   @JSName("startDisabled")

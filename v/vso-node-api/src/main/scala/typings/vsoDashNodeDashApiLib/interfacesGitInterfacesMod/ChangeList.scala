@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ChangeList[T] extends js.Object {
   var allChangesIncluded: scala.Boolean
-  var changeCounts: ScalablyTyped.runtime.NumberDictionary[scala.Double]
+  var changeCounts: org.scalablytyped.runtime.NumberDictionary[scala.Double]
   var changes: js.Array[Change[T]]
   var comment: java.lang.String
   var commentTruncated: scala.Boolean

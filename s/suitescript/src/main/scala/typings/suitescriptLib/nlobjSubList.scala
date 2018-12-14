@@ -19,7 +19,7 @@ trait nlobjSubList
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * add a button to this sublist.
        *

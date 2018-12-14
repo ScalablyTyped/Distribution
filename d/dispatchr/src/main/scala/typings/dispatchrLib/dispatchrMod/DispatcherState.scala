@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait DispatcherState extends js.Object {
-  var stores: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var stores: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

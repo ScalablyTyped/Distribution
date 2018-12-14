@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CPUShardLimits
-  extends /* shard */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+  extends /* shard */ org.scalablytyped.runtime.StringDictionary[scala.Double]
 

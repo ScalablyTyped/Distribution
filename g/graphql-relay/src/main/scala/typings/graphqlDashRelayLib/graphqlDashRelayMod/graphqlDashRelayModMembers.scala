@@ -23,8 +23,8 @@ object graphqlDashRelayModMembers extends js.Object {
   def getOffsetWithDefault(cursor: ConnectionCursor): scala.Double = js.native
   def getOffsetWithDefault(cursor: ConnectionCursor, defaultOffset: scala.Double): scala.Double = js.native
   def getOffsetWithDefault(cursor: scala.Null, defaultOffset: scala.Double): scala.Double = js.native
-  def globalIdField(): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def globalIdField(typeName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def globalIdField(): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def globalIdField(typeName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def globalIdField(
     typeName: java.lang.String,
     idFetcher: js.Function3[
@@ -33,8 +33,8 @@ object graphqlDashRelayModMembers extends js.Object {
       /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
       java.lang.String
     ]
-  ): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def mutationWithClientMutationId(config: MutationConfig): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def mutationWithClientMutationId(config: MutationConfig): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def nodeDefinitions[TContext](
     idFetcher: js.Function3[
       /* id */ java.lang.String, 
@@ -53,7 +53,7 @@ object graphqlDashRelayModMembers extends js.Object {
     typeResolver: graphqlLib.typeDefinitionMod.GraphQLTypeResolver[_, TContext]
   ): GraphQLNodeDefinitions = js.native
   def offsetToCursor(offset: scala.Double): ConnectionCursor = js.native
-  def pluralIdentifyingRootField(config: PluralIdentifyingRootFieldConfig): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def pluralIdentifyingRootField(config: PluralIdentifyingRootFieldConfig): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def toGlobalId(`type`: java.lang.String, id: java.lang.String): java.lang.String = js.native
 }
 

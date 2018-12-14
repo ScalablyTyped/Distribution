@@ -18,7 +18,7 @@ trait RTCError extends Error {
 @JSGlobal("RTCError")
 @js.native
 object RTCError
-  extends ScalablyTyped.runtime.Instantiable0[RTCError]
-     with ScalablyTyped.runtime.Instantiable1[/* errorDetail */ java.lang.String, RTCError]
-     with ScalablyTyped.runtime.Instantiable2[/* errorDetail */ java.lang.String, /* message */ java.lang.String, RTCError]
+  extends org.scalablytyped.runtime.Instantiable0[RTCError]
+     with org.scalablytyped.runtime.Instantiable1[/* errorDetail */ java.lang.String, RTCError]
+     with org.scalablytyped.runtime.Instantiable2[/* errorDetail */ java.lang.String, /* message */ java.lang.String, RTCError]
 

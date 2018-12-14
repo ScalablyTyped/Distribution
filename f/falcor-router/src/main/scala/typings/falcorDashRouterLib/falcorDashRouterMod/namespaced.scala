@@ -15,13 +15,13 @@ class namespaced protected () extends FalcorRouter {
 @JSImport("falcor-router", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  def createClass(): ScalablyTyped.runtime.Instantiable1[
+  def createClass(): org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
       /* options */ falcorDashRouterLib.falcorDashRouterMod.FalcorRouterNs.RouterOptions
     ], 
     falcorDashRouterLib.falcorDashRouterMod.FalcorRouterNs.CreatedRouter
   ] = js.native
-  def createClass(routes: js.Array[falcorDashRouterLib.falcorDashRouterMod.FalcorRouterNs.RouteDefinition]): ScalablyTyped.runtime.Instantiable1[
+  def createClass(routes: js.Array[falcorDashRouterLib.falcorDashRouterMod.FalcorRouterNs.RouteDefinition]): org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
       /* options */ falcorDashRouterLib.falcorDashRouterMod.FalcorRouterNs.RouterOptions
     ], 

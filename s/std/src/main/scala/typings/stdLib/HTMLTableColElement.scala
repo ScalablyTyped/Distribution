@@ -32,5 +32,5 @@ trait HTMLTableColElement extends HTMLElement {
 @JSGlobal("HTMLTableColElement")
 @js.native
 object HTMLTableColElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLTableColElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLTableColElement]
 

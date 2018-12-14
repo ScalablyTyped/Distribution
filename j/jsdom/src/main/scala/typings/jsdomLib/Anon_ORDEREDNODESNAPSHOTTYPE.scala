@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ORDEREDNODESNAPSHOTTYPE
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.XPathResult] {
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.XPathResult] {
   val ANY_TYPE: scala.Double = js.native
   val ANY_UNORDERED_NODE_TYPE: scala.Double = js.native
   val BOOLEAN_TYPE: scala.Double = js.native

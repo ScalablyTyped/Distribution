@@ -11,7 +11,7 @@ trait Stanza
      with // This has to be used for the static class initializer new Client.Stanza(..). If there is a better way feel free to
 // contribute.
 // tslint:disable-next-line
-ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* attr */ js.Any, Stanza] {
+org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* attr */ js.Any, Stanza] {
   var from: java.lang.String = js.native
   var id: java.lang.String = js.native
   var to: java.lang.String = js.native

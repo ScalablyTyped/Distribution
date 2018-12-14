@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("milliseconds", JSImport.Namespace)
 @js.native
 object millisecondsMod
-  extends ScalablyTyped.runtime.TopLevel[Milliseconds]
+  extends org.scalablytyped.runtime.TopLevel[Milliseconds]
 

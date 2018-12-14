@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Constructor
   extends // tslint:disable-next-line:no-unnecessary-generics
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       /* db */ abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWN[js.Any, js.Any], 
       encodingDashDownLib.encodingDashDownMod.EncodingDown[js.Object, js.Object]
     ]
      with // tslint:disable-next-line:no-unnecessary-generics
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* db */ abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractLevelDOWN[js.Any, js.Any], 
       /* options */ levelDashCodecLib.levelDashCodecMod.CodecOptions, 
       encodingDashDownLib.encodingDashDownMod.EncodingDown[js.Object, js.Object]

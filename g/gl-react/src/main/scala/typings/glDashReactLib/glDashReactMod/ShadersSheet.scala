@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ShadersSheet
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ShaderIdentifier]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ShaderIdentifier]
 

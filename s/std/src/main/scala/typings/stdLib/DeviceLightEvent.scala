@@ -13,8 +13,8 @@ trait DeviceLightEvent extends Event {
 @JSGlobal("DeviceLightEvent")
 @js.native
 object DeviceLightEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, DeviceLightEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, DeviceLightEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* typeArg */ java.lang.String, 
       /* eventInitDict */ DeviceLightEventInit, 
       DeviceLightEvent

@@ -15,15 +15,15 @@ trait Anon_TimeoutError extends js.Object {
      *
      * `Promise.some` and `Promise.any` use `AggregateError` as rejection reason when they fail.
      */
-  var AggregateError: ScalablyTyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.AggregateError]
+  var AggregateError: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.AggregateError]
   /**
      * Signals that an operation has been aborted or cancelled. The default reason used by `.cancel`.
      */
-  var CancellationError: ScalablyTyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CancellationError]
+  var CancellationError: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.CancellationError]
   /**
      * returned by `Bluebird.disposer()`.
      */
-  var Disposer: ScalablyTyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[js.Any]]
+  var Disposer: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.Disposer[js.Any]]
   /**
      * Represents an error is an explicit promise rejection as opposed to a thrown error.
      *  For example, if an error is errbacked by a callback API promisified through undefined or undefined
@@ -32,11 +32,11 @@ trait Anon_TimeoutError extends js.Object {
      *
      * `OperationalError`s are caught in `.error` handlers.
      */
-  var OperationalError: ScalablyTyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.OperationalError]
+  var OperationalError: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.OperationalError]
   /**
      * Signals that an operation has timed out. Used as a custom cancellation reason in `.timeout`.
      */
-  var TimeoutError: ScalablyTyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.TimeoutError]
+  var TimeoutError: org.scalablytyped.runtime.Instantiable0[bluebirdDashLstLib.bluebirdDashLstMod.BluebirdNs.TimeoutError]
   /**
      * Returns a new independent copy of the Bluebird library.
      *

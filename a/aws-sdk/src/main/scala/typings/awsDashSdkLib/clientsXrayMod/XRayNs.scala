@@ -42,11 +42,11 @@ object XRayNs extends js.Object {
   
   
   trait Annotations
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ValuesWithServiceIds]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ValuesWithServiceIds]
   
   
   trait AttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait AvailabilityZoneDetail extends js.Object {

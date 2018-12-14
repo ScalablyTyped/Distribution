@@ -10,6 +10,6 @@ trait MulterIncomingMessage
   extends nodeLib.httpMod.IncomingMessage {
   var body: js.Any = js.native
   var file: File = js.native
-  var files: ScalablyTyped.runtime.StringDictionary[js.Array[File]] | js.Array[File] = js.native
+  var files: org.scalablytyped.runtime.StringDictionary[js.Array[File]] | js.Array[File] = js.native
 }
 

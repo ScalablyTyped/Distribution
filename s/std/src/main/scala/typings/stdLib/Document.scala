@@ -3295,5 +3295,5 @@ trait Document
 @JSGlobal("Document")
 @js.native
 object Document
-  extends ScalablyTyped.runtime.Instantiable0[Document]
+  extends org.scalablytyped.runtime.Instantiable0[Document]
 

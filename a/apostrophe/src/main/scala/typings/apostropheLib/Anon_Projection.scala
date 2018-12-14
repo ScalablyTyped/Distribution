@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Projection extends js.Object {
-  var projection: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Double]] = js.undefined
+  var projection: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
 }
 

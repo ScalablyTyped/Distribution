@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pubsub-js", JSImport.Namespace)
 @js.native
 object pubsubDashJsMod
-  extends ScalablyTyped.runtime.TopLevel[pubsubDashJsLib.PubSubJSNs.Base]
+  extends org.scalablytyped.runtime.TopLevel[pubsubDashJsLib.PubSubJSNs.Base]
 

@@ -11,7 +11,7 @@ trait CardActionsProps
      with /**
    * Additional properties passed to component root.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Children to pass through the component.
      */

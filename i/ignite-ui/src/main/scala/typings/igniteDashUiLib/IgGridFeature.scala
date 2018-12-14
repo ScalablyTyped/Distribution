@@ -10,7 +10,7 @@ trait IgGridFeature
   extends /**
 	 * Option for IgGridFeature
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Name of the feature to be enabled.
   	 */

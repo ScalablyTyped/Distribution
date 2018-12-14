@@ -38,8 +38,8 @@ trait WheelEvent extends MouseEvent {
 @JSGlobal("WheelEvent")
 @js.native
 object WheelEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, WheelEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ WheelEventInit, WheelEvent] {
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, WheelEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ WheelEventInit, WheelEvent] {
   val DOM_DELTA_LINE: scala.Double = js.native
   val DOM_DELTA_PAGE: scala.Double = js.native
   val DOM_DELTA_PIXEL: scala.Double = js.native

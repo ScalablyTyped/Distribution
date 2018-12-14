@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("uuid/v1", JSImport.Namespace)
 @js.native
 object v1Mod
-  extends ScalablyTyped.runtime.TopLevel[uuidLib.interfacesMod.v1]
+  extends org.scalablytyped.runtime.TopLevel[uuidLib.interfacesMod.v1]
 

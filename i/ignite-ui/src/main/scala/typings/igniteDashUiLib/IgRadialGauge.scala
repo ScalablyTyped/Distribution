@@ -10,7 +10,7 @@ trait IgRadialGauge
   extends /**
 	 * Option for igRadialGauge
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event which is raised when a label of the gauge is aligned along the scale.
   	 * Function takes first argument null and second argument ui.

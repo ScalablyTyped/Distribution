@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Session () extends js.Object {
   def this(workbookUrl: java.lang.String) = this()
-  def this(workbookUrl: java.lang.String, requestHeaders: ScalablyTyped.runtime.StringDictionary[java.lang.String]) = this()
-  def this(workbookUrl: java.lang.String, requestHeaders: ScalablyTyped.runtime.StringDictionary[java.lang.String], persisted: scala.Boolean) = this()
+  def this(workbookUrl: java.lang.String, requestHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String]) = this()
+  def this(workbookUrl: java.lang.String, requestHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String], persisted: scala.Boolean) = this()
   /**
            * Close the session.
            */

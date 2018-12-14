@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mustache", JSImport.Namespace)
 @js.native
 object mustacheModMembers
-  extends ScalablyTyped.runtime.TopLevel[MustacheStatic]
+  extends org.scalablytyped.runtime.TopLevel[MustacheStatic]
 

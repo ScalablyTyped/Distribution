@@ -296,6 +296,6 @@ object GoogleAuth extends js.Object {
   /**
        * Export DefaultTransporter as a static property of the class.
        */
-  var DefaultTransporter: ScalablyTyped.runtime.Instantiable0[googleDashAuthDashLibraryLib.buildSrcTransportersMod.DefaultTransporter] = js.native
+  var DefaultTransporter: org.scalablytyped.runtime.Instantiable0[googleDashAuthDashLibraryLib.buildSrcTransportersMod.DefaultTransporter] = js.native
 }
 

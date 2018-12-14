@@ -10,7 +10,7 @@ trait IgGridSummariesColumnSetting
   extends /**
 	 * Option for IgGridSummariesColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Enables disables summaries for the column
   	 *

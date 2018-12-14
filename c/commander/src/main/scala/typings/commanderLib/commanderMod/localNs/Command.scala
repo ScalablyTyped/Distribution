@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Command
   extends nodeLib.NodeJSNs.EventEmitter
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var args: js.Array[java.lang.String] = js.native
   /**
        * Register callback `fn` for the command.
@@ -566,7 +566,7 @@ trait Command
        *
        * @returns {{[key: string]: any}}
        */
-  def opts(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def opts(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Output help information for this command.
        *

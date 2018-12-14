@@ -82,5 +82,5 @@ trait HTMLStyleElement
 @JSGlobal("HTMLStyleElement")
 @js.native
 object HTMLStyleElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLStyleElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLStyleElement]
 

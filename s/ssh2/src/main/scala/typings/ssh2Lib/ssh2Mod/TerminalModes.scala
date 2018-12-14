@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait TerminalModes
-  extends /* mode */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[scala.Double]] {
+  extends /* mode */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]] {
   /** 7 bit mode. */
   var CS7: js.UndefOr[ssh2Lib.ssh2LibNumbers.`0` | ssh2Lib.ssh2LibNumbers.`1`] = js.undefined
   /** 8 bit mode. */

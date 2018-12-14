@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ioredis", JSImport.Namespace)
 @js.native
 object ioredisModMembers
-  extends ScalablyTyped.runtime.TopLevel[RedisStatic]
+  extends org.scalablytyped.runtime.TopLevel[RedisStatic]
 

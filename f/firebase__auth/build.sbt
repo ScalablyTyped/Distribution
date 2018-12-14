@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "firebase__auth"
-version := "0.9.0-4c29fb"
+version := "0.9.0-bd502c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "firebase__app" % "0.3.5-f5c7a1",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.3.2-8d890d",
-  "org.scalablytyped" %%% "firebase__auth-types" % "0.5.0-649445",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.3-ec9c8e",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-13238d")
+  "org.scalablytyped" %%% "firebase__app" % "0.3.5-00c7c1",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.3.2-bdd51e",
+  "org.scalablytyped" %%% "firebase__auth-types" % "0.5.0-abf1f8",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.3-18bc12",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-866b29")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IWallabyCompilers
-  extends /* pattern */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* pattern */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

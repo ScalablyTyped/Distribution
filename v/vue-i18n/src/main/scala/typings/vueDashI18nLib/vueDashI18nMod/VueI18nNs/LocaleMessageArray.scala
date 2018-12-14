@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LocaleMessageArray
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[LocaleMessage]
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[LocaleMessage]
 

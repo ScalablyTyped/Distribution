@@ -19,7 +19,7 @@ trait PerformanceNavigation extends js.Object {
 @JSGlobal("PerformanceNavigation")
 @js.native
 object PerformanceNavigation
-  extends ScalablyTyped.runtime.Instantiable0[PerformanceNavigation] {
+  extends org.scalablytyped.runtime.Instantiable0[PerformanceNavigation] {
   val TYPE_BACK_FORWARD: scala.Double = js.native
   val TYPE_NAVIGATE: scala.Double = js.native
   val TYPE_RELOAD: scala.Double = js.native

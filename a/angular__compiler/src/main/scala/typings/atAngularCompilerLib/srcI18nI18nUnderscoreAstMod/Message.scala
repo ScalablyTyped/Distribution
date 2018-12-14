@@ -16,13 +16,13 @@ class Message protected () extends js.Object {
        * @param description
        * @param id
        */
-  def this(nodes: js.Array[Node], placeholders: ScalablyTyped.runtime.StringDictionary[java.lang.String], placeholderToMessage: ScalablyTyped.runtime.StringDictionary[Message], meaning: java.lang.String, description: java.lang.String, id: java.lang.String) = this()
+  def this(nodes: js.Array[Node], placeholders: org.scalablytyped.runtime.StringDictionary[java.lang.String], placeholderToMessage: org.scalablytyped.runtime.StringDictionary[Message], meaning: java.lang.String, description: java.lang.String, id: java.lang.String) = this()
   var description: java.lang.String = js.native
   var id: java.lang.String = js.native
   var meaning: java.lang.String = js.native
   var nodes: js.Array[Node] = js.native
-  var placeholderToMessage: ScalablyTyped.runtime.StringDictionary[Message] = js.native
-  var placeholders: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var placeholderToMessage: org.scalablytyped.runtime.StringDictionary[Message] = js.native
+  var placeholders: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var sources: js.Array[MessageSpan] = js.native
 }
 

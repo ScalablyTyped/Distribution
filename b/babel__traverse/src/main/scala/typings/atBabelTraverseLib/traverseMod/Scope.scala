@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Scope protected () extends js.Object {
   def this(path: NodePath[Node]) = this()
   def this(path: NodePath[Node], parentScope: Scope) = this()
-  var bindings: ScalablyTyped.runtime.StringDictionary[Binding] = js.native
+  var bindings: org.scalablytyped.runtime.StringDictionary[Binding] = js.native
   var block: Node = js.native
   var hub: Hub = js.native
   var parent: Scope = js.native

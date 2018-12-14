@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
          */
 @js.native
 trait Choices
-  extends ScalablyTyped.runtime.Instantiable1[/* choices */ js.Array[java.lang.String | Separator | ChoiceOption], Choices]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* choices */ js.Array[java.lang.String | Separator | ChoiceOption], Choices]
+     with org.scalablytyped.runtime.Instantiable2[
       /* choices */ js.Array[java.lang.String | Separator | ChoiceOption], 
       /* answers */ js.Object, 
       Choices

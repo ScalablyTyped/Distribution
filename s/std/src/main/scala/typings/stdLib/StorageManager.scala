@@ -15,5 +15,5 @@ trait StorageManager extends js.Object {
 @JSGlobal("StorageManager")
 @js.native
 object StorageManager
-  extends ScalablyTyped.runtime.Instantiable0[StorageManager]
+  extends org.scalablytyped.runtime.Instantiable0[StorageManager]
 

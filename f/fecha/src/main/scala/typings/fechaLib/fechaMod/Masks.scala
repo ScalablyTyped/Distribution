@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Masks
-  extends /* myMask */ ScalablyTyped.runtime.StringDictionary[java.lang.String] {
+  extends /* myMask */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   var default: java.lang.String
   var fullDate: java.lang.String
   var longDate: java.lang.String

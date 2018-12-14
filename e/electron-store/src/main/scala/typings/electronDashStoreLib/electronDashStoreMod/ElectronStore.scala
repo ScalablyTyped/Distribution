@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ElectronStore[T]
   extends nodeLib.Iterable[js.Tuple2[java.lang.String, electronDashStoreLib.JSONValue]] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[nodeLib.Iterator[js.Tuple2[java.lang.String, electronDashStoreLib.JSONValue]]] = js.native
   /**
        * Get the path to the storage file.

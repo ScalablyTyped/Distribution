@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-newer", JSImport.Namespace)
 @js.native
 object gulpDashNewerModMembers
-  extends ScalablyTyped.runtime.TopLevel[IGulpNewer]
+  extends org.scalablytyped.runtime.TopLevel[IGulpNewer]
 

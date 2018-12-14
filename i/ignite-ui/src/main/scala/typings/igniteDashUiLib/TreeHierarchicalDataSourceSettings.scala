@@ -10,7 +10,7 @@ trait TreeHierarchicalDataSourceSettings
   extends /**
 	 * Option for TreeHierarchicalDataSourceSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Configure tree datasource specific settings
   	 */

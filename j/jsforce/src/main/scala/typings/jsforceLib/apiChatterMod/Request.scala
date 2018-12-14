@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Request[T] protected ()
   extends stdLib.Promise[T] {
   def this(chatter: Chatter, params: RequestParams) = this()
-  @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
+  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   val toStringTag_Request: jsforceLib.jsforceLibStrings.Promise = js.native
   def batchParams(): BatchRequestParams = js.native
   def promise(): js.Promise[T] = js.native

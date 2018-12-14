@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LocalizedName
-  extends /* lang */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* lang */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

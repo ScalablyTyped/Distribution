@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Storage
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Returns the number of key/value pairs currently present in the list associated with the
        * object.
@@ -39,5 +39,5 @@ trait Storage
 @JSGlobal("Storage")
 @js.native
 object Storage
-  extends ScalablyTyped.runtime.Instantiable0[Storage]
+  extends org.scalablytyped.runtime.Instantiable0[Storage]
 

@@ -17,7 +17,7 @@ trait Options extends js.Object {
   ] = js.undefined
   /** The environment variables that should be visible to the server process.
           Defaults to inheriting the current process's environment.*/
-  var env: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var env: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** The arguments to pass to the JVM. If a promise is provided, the service
           will wait for it to resolve before starting. */
   var jvmArgs: js.UndefOr[

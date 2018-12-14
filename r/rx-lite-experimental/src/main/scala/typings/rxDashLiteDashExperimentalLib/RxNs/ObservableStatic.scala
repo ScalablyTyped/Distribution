@@ -23,11 +23,11 @@ trait ObservableStatic extends js.Object {
            */
   def `case`[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]]
+    sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]]
   ): Observable[T] = js.native
   def `case`[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     elseSource: rxDashCoreLib.RxNs.IPromise[T]
   ): Observable[T] = js.native
   /**
@@ -44,7 +44,7 @@ trait ObservableStatic extends js.Object {
            */
   def `case`[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     elseSource: Observable[T]
   ): Observable[T] = js.native
   /**
@@ -63,7 +63,7 @@ trait ObservableStatic extends js.Object {
            */
   def `case`[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     scheduler: rxDashCoreLib.RxNs.IScheduler
   ): Observable[T] = js.native
   /**
@@ -82,11 +82,11 @@ trait ObservableStatic extends js.Object {
            */
   def `case`[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]]
+    sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]]
   ): Observable[T] = js.native
   def `case`[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     elseSource: rxDashCoreLib.RxNs.IPromise[T]
   ): Observable[T] = js.native
   /**
@@ -103,7 +103,7 @@ trait ObservableStatic extends js.Object {
            */
   def `case`[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     elseSource: Observable[T]
   ): Observable[T] = js.native
   /**
@@ -122,7 +122,7 @@ trait ObservableStatic extends js.Object {
            */
   def `case`[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     scheduler: rxDashCoreLib.RxNs.IScheduler
   ): Observable[T] = js.native
   /**
@@ -291,11 +291,11 @@ trait ObservableStatic extends js.Object {
            */
   def switchCase[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]]
+    sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]]
   ): Observable[T] = js.native
   def switchCase[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     elseSource: rxDashCoreLib.RxNs.IPromise[T]
   ): Observable[T] = js.native
   /**
@@ -312,7 +312,7 @@ trait ObservableStatic extends js.Object {
            */
   def switchCase[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     elseSource: Observable[T]
   ): Observable[T] = js.native
   /**
@@ -331,7 +331,7 @@ trait ObservableStatic extends js.Object {
            */
   def switchCase[T](
     selector: js.Function0[scala.Double],
-    sources: ScalablyTyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.NumberDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     scheduler: rxDashCoreLib.RxNs.IScheduler
   ): Observable[T] = js.native
   /**
@@ -350,11 +350,11 @@ trait ObservableStatic extends js.Object {
            */
   def switchCase[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]]
+    sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]]
   ): Observable[T] = js.native
   def switchCase[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     elseSource: rxDashCoreLib.RxNs.IPromise[T]
   ): Observable[T] = js.native
   /**
@@ -371,7 +371,7 @@ trait ObservableStatic extends js.Object {
            */
   def switchCase[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     elseSource: Observable[T]
   ): Observable[T] = js.native
   /**
@@ -390,7 +390,7 @@ trait ObservableStatic extends js.Object {
            */
   def switchCase[T](
     selector: js.Function0[java.lang.String],
-    sources: ScalablyTyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
+    sources: org.scalablytyped.runtime.StringDictionary[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]],
     scheduler: rxDashCoreLib.RxNs.IScheduler
   ): Observable[T] = js.native
   def `while`[T](condition: js.Function0[scala.Boolean], source: rxDashCoreLib.RxNs.IPromise[T]): Observable[T] = js.native

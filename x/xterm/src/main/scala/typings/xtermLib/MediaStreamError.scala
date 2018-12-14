@@ -15,5 +15,5 @@ trait MediaStreamError extends js.Object {
 @JSGlobal("MediaStreamError")
 @js.native
 object MediaStreamError
-  extends ScalablyTyped.runtime.Instantiable0[MediaStreamError]
+  extends org.scalablytyped.runtime.Instantiable0[MediaStreamError]
 

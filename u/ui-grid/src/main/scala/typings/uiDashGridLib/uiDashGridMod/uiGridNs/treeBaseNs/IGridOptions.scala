@@ -35,7 +35,9 @@ trait IGridOptions[TEntity] extends js.Object {
                * Defaults to {}
                * @default {}
                */
-  var treeCustomAggregations: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IGridTreeBaseCustomAggregation[TEntity]]] = js.undefined
+  var treeCustomAggregations: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[IGridTreeBaseCustomAggregation[TEntity]]
+  ] = js.undefined
   /**
                * Number of pixels of indent for the icon at each tree level, wider indents are visually more pleasing,
                * but will make the tree row header wider

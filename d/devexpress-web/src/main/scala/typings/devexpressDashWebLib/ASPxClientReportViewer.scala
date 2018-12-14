@@ -66,6 +66,6 @@ trait ASPxClientReportViewer extends ASPxClientControl {
        * Submits the values of the specified parameters.
        * @param parameters A dictionary containing the parameter names, along with their Object values.
        */
-  def SubmitParameters(parameters: ScalablyTyped.runtime.StringDictionary[js.Object]): scala.Unit = js.native
+  def SubmitParameters(parameters: org.scalablytyped.runtime.StringDictionary[js.Object]): scala.Unit = js.native
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TransitionPlugins
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[TransitionPlugin]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[TransitionPlugin]
 

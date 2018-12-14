@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ComponentSpec[P, S]
   extends Mixin[P, S]
-     with /* propertyName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def render(): ReactNode
 }
 

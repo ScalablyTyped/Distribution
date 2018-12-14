@@ -10,7 +10,7 @@ trait IgGridUpdating
   extends /**
 	 * Option for igGridUpdating
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * This option has been removed as of 2017.2 Volume release.
   	 * Specifies the label for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowLabel is used.

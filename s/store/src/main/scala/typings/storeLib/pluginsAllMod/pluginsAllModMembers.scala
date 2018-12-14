@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("store/plugins/all", JSImport.Namespace)
 @js.native
 object pluginsAllModMembers
-  extends ScalablyTyped.runtime.TopLevel[stdLib.FunctionConstructor]
+  extends org.scalablytyped.runtime.TopLevel[stdLib.FunctionConstructor]
 

@@ -59,12 +59,15 @@ trait CLI extends js.Object {
   def output(): scala.Unit = js.native
   def output(message: js.Any, optionalParams: js.Any*): scala.Unit = js.native
   def parse(): js.Any = js.native
-  def parse(opts: ScalablyTyped.runtime.StringDictionary[cliLib.Anon_2]): js.Any = js.native
+  def parse(opts: org.scalablytyped.runtime.StringDictionary[cliLib.Anon_2]): js.Any = js.native
   def parse(
-    opts: ScalablyTyped.runtime.StringDictionary[cliLib.Anon_2],
-    commands: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    opts: org.scalablytyped.runtime.StringDictionary[cliLib.Anon_2],
+    commands: js.Array[java.lang.String]
   ): js.Any = js.native
-  def parse(opts: ScalablyTyped.runtime.StringDictionary[cliLib.Anon_2], commands: js.Array[java.lang.String]): js.Any = js.native
+  def parse(
+    opts: org.scalablytyped.runtime.StringDictionary[cliLib.Anon_2],
+    commands: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): js.Any = js.native
   def parsePackageJson(): scala.Unit = js.native
   def parsePackageJson(path: java.lang.String): scala.Unit = js.native
   def progress(progress: scala.Double): scala.Unit = js.native

@@ -2512,7 +2512,7 @@ trait WebGL2RenderingContext
 @JSGlobal("WebGL2RenderingContext")
 @js.native
 object WebGL2RenderingContext
-  extends ScalablyTyped.runtime.Instantiable0[WebGL2RenderingContext] {
+  extends org.scalablytyped.runtime.Instantiable0[WebGL2RenderingContext] {
   /* WebGL1 constants */
   val ACTIVE_ATTRIBUTES: scala.Double = js.native
   val ACTIVE_TEXTURE: scala.Double = js.native

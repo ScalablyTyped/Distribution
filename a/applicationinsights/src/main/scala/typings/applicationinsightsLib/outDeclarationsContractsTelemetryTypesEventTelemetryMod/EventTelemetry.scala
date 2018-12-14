@@ -11,7 +11,7 @@ trait EventTelemetry
   /**
        * Metrics associated with this event, displayed in Metrics Explorer on the portal.
        */
-  var measurements: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Double]] = js.undefined
+  var measurements: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
   /**
        * Name of the event
        */

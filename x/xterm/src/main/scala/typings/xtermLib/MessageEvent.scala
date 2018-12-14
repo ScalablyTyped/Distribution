@@ -37,6 +37,6 @@ trait MessageEvent extends Event {
 @JSGlobal("MessageEvent")
 @js.native
 object MessageEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, MessageEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ MessageEventInit, MessageEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, MessageEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ MessageEventInit, MessageEvent]
 

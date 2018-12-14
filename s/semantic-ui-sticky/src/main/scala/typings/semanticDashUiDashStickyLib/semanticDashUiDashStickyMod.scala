@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-sticky", JSImport.Namespace)
 @js.native
 object semanticDashUiDashStickyMod
-  extends ScalablyTyped.runtime.TopLevel[semanticDashUiDashStickyLib.SemanticUINs.Sticky]
+  extends org.scalablytyped.runtime.TopLevel[semanticDashUiDashStickyLib.SemanticUINs.Sticky]
 

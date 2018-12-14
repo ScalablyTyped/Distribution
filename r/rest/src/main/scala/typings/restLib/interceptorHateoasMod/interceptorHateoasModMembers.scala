@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rest/interceptor/hateoas", JSImport.Namespace)
 @js.native
 object interceptorHateoasModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       restLib.restMod.restNs.Interceptor[restLib.interceptorHateoasMod.hateoasNs.Config]
     ]
 

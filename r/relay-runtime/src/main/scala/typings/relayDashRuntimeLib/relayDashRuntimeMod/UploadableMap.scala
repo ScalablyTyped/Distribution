@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait UploadableMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Uploadable]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Uploadable]
 

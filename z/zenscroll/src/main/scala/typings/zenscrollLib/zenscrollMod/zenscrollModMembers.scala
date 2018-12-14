@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("zenscroll", JSImport.Namespace)
 @js.native
 object zenscrollModMembers
-  extends ScalablyTyped.runtime.TopLevel[zenscrollLib.zenscrollMod.ZenScrollNs.zenscroll]
+  extends org.scalablytyped.runtime.TopLevel[zenscrollLib.zenscrollMod.ZenScrollNs.zenscroll]
 

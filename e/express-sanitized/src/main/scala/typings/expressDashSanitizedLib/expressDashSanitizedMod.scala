@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("express-sanitized", JSImport.Namespace)
 @js.native
 object expressDashSanitizedMod
-  extends ScalablyTyped.runtime.TopLevel[e]
+  extends org.scalablytyped.runtime.TopLevel[e]
 

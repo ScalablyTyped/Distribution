@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("faker/locale/nep", JSImport.Namespace)
 @js.native
 object localeNepMod
-  extends ScalablyTyped.runtime.TopLevel[fakerLib.FakerNs.FakerStatic]
+  extends org.scalablytyped.runtime.TopLevel[fakerLib.FakerNs.FakerStatic]
 

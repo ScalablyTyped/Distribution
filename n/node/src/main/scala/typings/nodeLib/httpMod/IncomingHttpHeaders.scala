@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 // incoming headers will never contain number
 
 trait IncomingHttpHeaders
-  extends /* header */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]] {
+  extends /* header */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]] {
   var accept: js.UndefOr[java.lang.String] = js.undefined
   var `accept-patch`: js.UndefOr[java.lang.String] = js.undefined
   var `accept-ranges`: js.UndefOr[java.lang.String] = js.undefined

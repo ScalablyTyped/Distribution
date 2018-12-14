@@ -145,8 +145,8 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     selector: java.lang.String,
     componentType: atAngularCoreLib.srcTypeMod.Type[_],
     viewDefFactory: atAngularCoreLib.srcViewTypesMod.ViewDefinitionFactory,
-    inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ngContentSelectors: js.Array[java.lang.String]
   ): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[_] = js.native
   def ɵccf(
@@ -154,7 +154,7 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     componentType: atAngularCoreLib.srcTypeMod.Type[_],
     viewDefFactory: atAngularCoreLib.srcViewTypesMod.ViewDefinitionFactory,
     inputs: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ngContentSelectors: js.Array[java.lang.String]
   ): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[_] = js.native
   def ɵcmf(
@@ -182,7 +182,7 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -193,8 +193,8 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -206,7 +206,7 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
     props: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -223,7 +223,7 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -232,8 +232,8 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -243,7 +243,7 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
     props: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵeld(
     checkIndex: scala.Double,
@@ -311,7 +311,7 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
-  def ɵpod(checkIndex: scala.Double, propToIndex: ScalablyTyped.runtime.StringDictionary[scala.Double]): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def ɵpod(checkIndex: scala.Double, propToIndex: org.scalablytyped.runtime.StringDictionary[scala.Double]): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵppd(checkIndex: scala.Double, argCount: scala.Double): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵprd(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
@@ -332,7 +332,7 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
   def ɵqud(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     id: scala.Double,
-    bindings: ScalablyTyped.runtime.StringDictionary[atAngularCoreLib.srcViewTypesMod.QueryBindingType]
+    bindings: org.scalablytyped.runtime.StringDictionary[atAngularCoreLib.srcViewTypesMod.QueryBindingType]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵregisterModuleFactory(
     id: java.lang.String,

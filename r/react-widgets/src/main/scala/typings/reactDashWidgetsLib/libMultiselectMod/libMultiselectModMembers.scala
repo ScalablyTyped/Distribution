@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-widgets/lib/Multiselect", JSImport.Namespace)
 @js.native
 object libMultiselectModMembers
-  extends ScalablyTyped.runtime.TopLevel[MultiselectClass]
+  extends org.scalablytyped.runtime.TopLevel[MultiselectClass]
 

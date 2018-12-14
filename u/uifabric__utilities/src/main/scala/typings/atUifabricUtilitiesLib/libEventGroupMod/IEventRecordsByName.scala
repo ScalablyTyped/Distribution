@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IEventRecordsByName
-  extends /* eventName */ ScalablyTyped.runtime.StringDictionary[IEventRecordList]
+  extends /* eventName */ org.scalablytyped.runtime.StringDictionary[IEventRecordList]
 

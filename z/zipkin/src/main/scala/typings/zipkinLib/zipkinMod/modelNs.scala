@@ -35,7 +35,7 @@ object modelNs extends js.Object {
     /* CompleteClass */
     override val shared: scala.Boolean = js.native
     /* CompleteClass */
-    override val tags: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+    override val tags: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     /* CompleteClass */
     override val traceId: java.lang.String = js.native
     /* CompleteClass */

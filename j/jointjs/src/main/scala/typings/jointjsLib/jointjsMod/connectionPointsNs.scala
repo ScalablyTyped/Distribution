@@ -19,7 +19,7 @@ object connectionPointsNs extends js.Object {
   
   
   trait ConnectionPointArgumentsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Any]] {
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] {
     var anchor: DefaultConnectionPointArguments
     var bbox: StrokeConnectionPointArguments
     var boundary: BoundaryConnectionPointArguments

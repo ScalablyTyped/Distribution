@@ -11,7 +11,7 @@ trait InjectableStore[S]
   def clearReducers(): scala.Unit = js.native
   def inject(namespace: java.lang.String, reducer: reduxLib.reduxMod.Reducer[_, reduxLib.reduxMod.AnyAction]): scala.Unit = js.native
   def injectAll(
-    reducers: ScalablyTyped.runtime.StringDictionary[reduxLib.reduxMod.Reducer[_, reduxLib.reduxMod.AnyAction]]
+    reducers: org.scalablytyped.runtime.StringDictionary[reduxLib.reduxMod.Reducer[_, reduxLib.reduxMod.AnyAction]]
   ): scala.Unit = js.native
 }
 

@@ -17,7 +17,7 @@ trait ILineChartOptions extends IChartOptions {
   var high: js.UndefOr[scala.Double] = js.undefined
   var lineSmooth: js.UndefOr[js.Function | scala.Boolean] = js.undefined
   var low: js.UndefOr[scala.Double] = js.undefined
-  var series: js.UndefOr[ScalablyTyped.runtime.StringDictionary[chartistLib.Anon_ShowPoint]] = js.undefined
+  var series: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chartistLib.Anon_ShowPoint]] = js.undefined
   var showArea: js.UndefOr[scala.Boolean] = js.undefined
   var showLine: js.UndefOr[scala.Boolean] = js.undefined
   var showPoint: js.UndefOr[scala.Boolean] = js.undefined

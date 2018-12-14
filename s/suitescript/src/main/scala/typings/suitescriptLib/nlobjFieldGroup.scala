@@ -20,7 +20,7 @@ trait nlobjFieldGroup
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * set collapsibility property for this field group.
        *

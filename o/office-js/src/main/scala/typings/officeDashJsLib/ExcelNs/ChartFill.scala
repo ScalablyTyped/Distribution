@@ -47,6 +47,6 @@ class ChartFill ()
            * @param color HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
            */
   def setSolidColor(color: java.lang.String): scala.Unit = js.native
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 

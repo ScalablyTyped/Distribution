@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hashset", JSImport.Namespace)
 @js.native
 object hashsetMod
-  extends ScalablyTyped.runtime.TopLevel[IHashSetStatic]
+  extends org.scalablytyped.runtime.TopLevel[IHashSetStatic]
 

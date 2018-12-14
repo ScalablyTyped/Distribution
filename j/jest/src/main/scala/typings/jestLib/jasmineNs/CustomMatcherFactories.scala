@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CustomMatcherFactories
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[CustomMatcherFactory]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[CustomMatcherFactory]
 

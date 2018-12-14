@@ -134,7 +134,7 @@ object PINs extends js.Object {
   
   
   trait DimensionMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait GetResourceMetricsRequest extends js.Object {
@@ -226,7 +226,7 @@ object PINs extends js.Object {
   
   
   trait MetricQueryFilterMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait ResponsePartitionKey extends js.Object {

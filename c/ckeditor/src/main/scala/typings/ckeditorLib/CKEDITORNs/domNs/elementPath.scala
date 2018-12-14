@@ -16,13 +16,6 @@ class elementPath protected () extends js.Object {
   val lastElement: element = js.native
   val root: element = js.native
   def compare(otherPath: elementPath): scala.Boolean = js.native
-  def contains(query: ScalablyTyped.runtime.StringDictionary[js.Any]): element = js.native
-  def contains(query: ScalablyTyped.runtime.StringDictionary[js.Any], excludeRoot: scala.Boolean): element = js.native
-  def contains(
-    query: ScalablyTyped.runtime.StringDictionary[js.Any],
-    excludeRoot: scala.Boolean,
-    fromTop: scala.Boolean
-  ): element = js.native
   def contains(query: element): element = js.native
   def contains(query: element, excludeRoot: scala.Boolean): element = js.native
   def contains(query: element, excludeRoot: scala.Boolean, fromTop: scala.Boolean): element = js.native
@@ -36,6 +29,13 @@ class elementPath protected () extends js.Object {
   def contains(query: js.Function1[/* element */ element, scala.Boolean], excludeRoot: scala.Boolean): element = js.native
   def contains(
     query: js.Function1[/* element */ element, scala.Boolean],
+    excludeRoot: scala.Boolean,
+    fromTop: scala.Boolean
+  ): element = js.native
+  def contains(query: org.scalablytyped.runtime.StringDictionary[js.Any]): element = js.native
+  def contains(query: org.scalablytyped.runtime.StringDictionary[js.Any], excludeRoot: scala.Boolean): element = js.native
+  def contains(
+    query: org.scalablytyped.runtime.StringDictionary[js.Any],
     excludeRoot: scala.Boolean,
     fromTop: scala.Boolean
   ): element = js.native

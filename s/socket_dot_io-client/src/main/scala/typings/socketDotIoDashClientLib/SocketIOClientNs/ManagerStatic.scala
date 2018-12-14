@@ -13,11 +13,11 @@ trait ManagerStatic
   extends /**
 		 * @see default constructor
 		 */
-ScalablyTyped.runtime.Instantiable2[/* uri */ java.lang.String, /* opts */ ConnectOpts, Manager]
+org.scalablytyped.runtime.Instantiable2[/* uri */ java.lang.String, /* opts */ ConnectOpts, Manager]
      with /**
 		 * @see default constructor
 		 */
-ScalablyTyped.runtime.Instantiable1[(/* uri */ java.lang.String) | (/* opts */ ConnectOpts), Manager] {
+org.scalablytyped.runtime.Instantiable1[(/* uri */ java.lang.String) | (/* opts */ ConnectOpts), Manager] {
   /**
   		 * Creates a new Manager with the default URI (window host)
   		 * @param opts Any connection options that we want to use (and pass to engine.io)

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
      */
 
 trait GiffferOptions extends js.Object {
-  var playButtonIconStyles: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var playButtonStyles: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var playButtonIconStyles: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var playButtonStyles: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

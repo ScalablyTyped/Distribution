@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Easings
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[EasingMethod]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[EasingMethod]
 

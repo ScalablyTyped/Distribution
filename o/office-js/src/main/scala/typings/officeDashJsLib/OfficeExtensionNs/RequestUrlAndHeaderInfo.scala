@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait RequestUrlAndHeaderInfo extends js.Object {
   /** Request headers */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** Request URL */
   var url: java.lang.String
 }

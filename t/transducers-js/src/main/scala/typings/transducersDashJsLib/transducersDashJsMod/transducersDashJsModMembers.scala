@@ -39,25 +39,25 @@ object transducersDashJsModMembers extends js.Object {
   def into[TInput](
     empty: java.lang.String,
     xf: Transducer[js.Tuple2[java.lang.String, TInput], java.lang.String],
-    coll: ScalablyTyped.runtime.StringDictionary[TInput]
+    coll: org.scalablytyped.runtime.StringDictionary[TInput]
   ): java.lang.String = js.native
   def into[TInput](empty: java.lang.String, xf: Transducer[TInput, java.lang.String], coll: stdLib.Iterable[TInput]): java.lang.String = js.native
   def into[TInput, TOutput](
-    empty: ScalablyTyped.runtime.StringDictionary[TOutput],
-    xf: Transducer[js.Tuple2[java.lang.String, TInput], js.Tuple2[java.lang.String, TOutput]],
-    coll: ScalablyTyped.runtime.StringDictionary[TInput]
-  ): ScalablyTyped.runtime.StringDictionary[TOutput] = js.native
-  def into[TInput, TOutput](
-    empty: ScalablyTyped.runtime.StringDictionary[TOutput],
-    xf: Transducer[TInput, js.Tuple2[java.lang.String, TOutput]],
-    coll: stdLib.Iterable[TInput]
-  ): ScalablyTyped.runtime.StringDictionary[TOutput] = js.native
-  def into[TInput, TOutput](
     empty: js.Array[TOutput],
     xf: Transducer[js.Tuple2[java.lang.String, TInput], TOutput],
-    coll: ScalablyTyped.runtime.StringDictionary[TInput]
+    coll: org.scalablytyped.runtime.StringDictionary[TInput]
   ): js.Array[TOutput] = js.native
   def into[TInput, TOutput](empty: js.Array[TOutput], xf: Transducer[TInput, TOutput], coll: stdLib.Iterable[TInput]): js.Array[TOutput] = js.native
+  def into[TInput, TOutput](
+    empty: org.scalablytyped.runtime.StringDictionary[TOutput],
+    xf: Transducer[js.Tuple2[java.lang.String, TInput], js.Tuple2[java.lang.String, TOutput]],
+    coll: org.scalablytyped.runtime.StringDictionary[TInput]
+  ): org.scalablytyped.runtime.StringDictionary[TOutput] = js.native
+  def into[TInput, TOutput](
+    empty: org.scalablytyped.runtime.StringDictionary[TOutput],
+    xf: Transducer[TInput, js.Tuple2[java.lang.String, TOutput]],
+    coll: stdLib.Iterable[TInput]
+  ): org.scalablytyped.runtime.StringDictionary[TOutput] = js.native
   def isReduced(x: js.Any): scala.Boolean = js.native
   def keep[TInput](f: js.Function1[/* x */ TInput, _]): Transducer[TInput, TInput] = js.native
   def keepIndexed[TInput](f: js.Function2[/* i */ scala.Double, /* x */ TInput, _]): Transducer[TInput, TInput] = js.native
@@ -68,20 +68,20 @@ object transducersDashJsModMembers extends js.Object {
   def reduce[TResult, TInput](
     xf: Reducer[TResult, js.Tuple2[java.lang.String, TInput]],
     init: TResult,
-    coll: ScalablyTyped.runtime.StringDictionary[TInput]
+    coll: org.scalablytyped.runtime.StringDictionary[TInput]
   ): TResult = js.native
   def reduce[TResult, TInput](xf: Reducer[TResult, TInput], init: TResult, coll: stdLib.Iterable[TInput]): TResult = js.native
   def reduce[TResult, TInput](
     xf: Transformer[TResult, js.Tuple2[java.lang.String, TInput]],
     init: TResult,
-    coll: ScalablyTyped.runtime.StringDictionary[TInput]
+    coll: org.scalablytyped.runtime.StringDictionary[TInput]
   ): TResult = js.native
   def reduce[TResult, TInput](xf: Transformer[TResult, TInput], init: TResult, coll: stdLib.Iterable[TInput]): TResult = js.native
   @JSName("reduce")
   def reduce_TResultTCompleteResultTInputTCompleteResult[TResult, TCompleteResult, TInput](
     xf: CompletingTransformer[TResult, TCompleteResult, js.Tuple2[java.lang.String, TInput]],
     init: TResult,
-    coll: ScalablyTyped.runtime.StringDictionary[TInput]
+    coll: org.scalablytyped.runtime.StringDictionary[TInput]
   ): TCompleteResult = js.native
   @JSName("reduce")
   def reduce_TResultTCompleteResultTInputTCompleteResult[TResult, TCompleteResult, TInput](
@@ -100,7 +100,7 @@ object transducersDashJsModMembers extends js.Object {
     xf: Transducer[js.Tuple2[java.lang.String, TInput], TOutput],
     f: Reducer[TResult, TOutput],
     init: TResult,
-    coll: ScalablyTyped.runtime.StringDictionary[TInput]
+    coll: org.scalablytyped.runtime.StringDictionary[TInput]
   ): TResult = js.native
   def transduce[TResult, TInput, TOutput](
     xf: Transducer[TInput, TOutput],
@@ -111,7 +111,7 @@ object transducersDashJsModMembers extends js.Object {
   def transduce[TResult, TCompleteResult, TInput, TOutput](
     xf: Transducer[js.Tuple2[java.lang.String, TInput], TOutput],
     f: CompletingTransformer[TResult, TCompleteResult, TOutput],
-    coll: ScalablyTyped.runtime.StringDictionary[TInput]
+    coll: org.scalablytyped.runtime.StringDictionary[TInput]
   ): TCompleteResult = js.native
   def transduce[TResult, TCompleteResult, TInput, TOutput](
     xf: Transducer[TInput, TOutput],
@@ -122,7 +122,7 @@ object transducersDashJsModMembers extends js.Object {
     xf: Transducer[js.Tuple2[java.lang.String, TInput], TOutput],
     f: CompletingTransformer[TResult, TCompleteResult, TOutput],
     init: TResult,
-    coll: ScalablyTyped.runtime.StringDictionary[TInput]
+    coll: org.scalablytyped.runtime.StringDictionary[TInput]
   ): TCompleteResult = js.native
   def transduce[TResult, TCompleteResult, TInput, TOutput](
     xf: Transducer[TInput, TOutput],

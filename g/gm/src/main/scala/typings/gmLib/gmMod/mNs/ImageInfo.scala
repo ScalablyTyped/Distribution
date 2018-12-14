@@ -28,10 +28,10 @@ trait ImageInfo extends js.Object {
   var `Matte Color`: java.lang.String
   var Orientation: java.lang.String
   var `Page geometry`: java.lang.String
-  var `Profile-EXIF`: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var `Profile-EXIF`: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var `Profile-XMP`: js.UndefOr[java.lang.String] = js.undefined
   var `Profile-color`: js.UndefOr[java.lang.String] = js.undefined
-  var `Profile-iptc`: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var `Profile-iptc`: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var Resolution: js.UndefOr[java.lang.String] = js.undefined
   var Signature: java.lang.String
   var Software: java.lang.String

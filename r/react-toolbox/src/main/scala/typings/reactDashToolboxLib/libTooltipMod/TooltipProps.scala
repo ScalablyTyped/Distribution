@@ -10,7 +10,7 @@ trait TooltipProps
   extends /**
    * Additional attributes passed to composed component.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Additional class added to composed component.
      */

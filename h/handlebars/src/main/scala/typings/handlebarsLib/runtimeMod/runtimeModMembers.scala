@@ -27,7 +27,7 @@ object runtimeModMembers extends js.Object {
   def registerHelper(name: handlebarsLib.HandlebarsNs.HelperDeclareSpec): scala.Unit = js.native
   def registerHelper(name: java.lang.String, fn: handlebarsLib.HandlebarsNs.HelperDelegate): scala.Unit = js.native
   def registerPartial(name: java.lang.String, fn: handlebarsLib.HandlebarsNs.Template[_]): scala.Unit = js.native
-  def registerPartial(spec: ScalablyTyped.runtime.StringDictionary[handlebarsLib.HandlebarsTemplateDelegate[_]]): scala.Unit = js.native
+  def registerPartial(spec: org.scalablytyped.runtime.StringDictionary[handlebarsLib.HandlebarsTemplateDelegate[_]]): scala.Unit = js.native
   def template[T](precompilation: handlebarsLib.TemplateSpecification): handlebarsLib.HandlebarsTemplateDelegate[T] = js.native
   def unregisterDecorator(name: java.lang.String): scala.Unit = js.native
   def unregisterHelper(name: java.lang.String): scala.Unit = js.native

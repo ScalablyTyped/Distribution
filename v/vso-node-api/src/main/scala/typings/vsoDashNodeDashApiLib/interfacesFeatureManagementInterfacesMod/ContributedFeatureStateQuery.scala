@@ -14,10 +14,10 @@ trait ContributedFeatureStateQuery extends js.Object {
   /**
        * The query result containing the current feature states for each of the queried feature ids
        */
-  var featureStates: ScalablyTyped.runtime.StringDictionary[ContributedFeatureState]
+  var featureStates: org.scalablytyped.runtime.StringDictionary[ContributedFeatureState]
   /**
        * A dictionary of scope values (project name, etc.) to use in the query (if querying across scopes)
        */
-  var scopeValues: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var scopeValues: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

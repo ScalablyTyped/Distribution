@@ -10,7 +10,7 @@ trait IgRadialGaugeRange
   extends /**
 	 * Option for IgRadialGaugeRange
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets the brush for the entire range.
   	 */

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MessagesToCodes
-  extends /* msg */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[scala.Double]]
+  extends /* msg */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]]
 

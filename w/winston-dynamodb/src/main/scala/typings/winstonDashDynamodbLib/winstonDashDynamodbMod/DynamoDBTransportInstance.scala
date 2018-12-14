@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 /* RemoveDifficultInheritance: 
 - Dropped any */ @js.native
 trait DynamoDBTransportInstance
-  extends ScalablyTyped.runtime.Instantiable0[DynamoDBTransportInstance]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ DynamoDBTransportOptions, DynamoDBTransportInstance]
+  extends org.scalablytyped.runtime.Instantiable0[DynamoDBTransportInstance]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ DynamoDBTransportOptions, DynamoDBTransportInstance]
 

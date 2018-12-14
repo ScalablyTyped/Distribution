@@ -200,10 +200,10 @@ trait QueryInterface extends js.Object {
   def clearOrder(): QueryBuilder = js.native
   def clearSelect(): QueryBuilder = js.native
   def clearWhere(): QueryBuilder = js.native
-  def column(aliases: ScalablyTyped.runtime.StringDictionary[java.lang.String]): QueryBuilder = js.native
+  def column(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String]): QueryBuilder = js.native
   def column(columnNames: knexLib.ColumnName*): QueryBuilder = js.native
   def column(columnNames: js.Array[knexLib.ColumnName]): QueryBuilder = js.native
-  def columns(aliases: ScalablyTyped.runtime.StringDictionary[java.lang.String]): QueryBuilder = js.native
+  def columns(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String]): QueryBuilder = js.native
   def columns(columnNames: knexLib.ColumnName*): QueryBuilder = js.native
   def columns(columnNames: js.Array[knexLib.ColumnName]): QueryBuilder = js.native
   def count(columnName: Raw): QueryBuilder = js.native
@@ -225,7 +225,7 @@ trait QueryInterface extends js.Object {
   def crossJoin(tableName: knexLib.TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def crossJoin(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def crossJoin(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
   def crossJoin(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
@@ -239,7 +239,7 @@ trait QueryInterface extends js.Object {
   def crossJoin(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def crossJoin(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def crossJoin(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
   def decrement(columnName: java.lang.String): QueryBuilder = js.native
@@ -251,7 +251,7 @@ trait QueryInterface extends js.Object {
   def delete(returning: java.lang.String): QueryBuilder = js.native
   def delete(returning: js.Array[java.lang.String]): QueryBuilder = js.native
   // Others
-  def first(aliases: ScalablyTyped.runtime.StringDictionary[java.lang.String]): QueryBuilder = js.native
+  def first(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String]): QueryBuilder = js.native
   // Others
   def first(columnNames: knexLib.ColumnName*): QueryBuilder = js.native
   // Others
@@ -276,7 +276,7 @@ trait QueryInterface extends js.Object {
   def fullOuterJoin(tableName: knexLib.TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def fullOuterJoin(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def fullOuterJoin(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
   def fullOuterJoin(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
@@ -290,7 +290,7 @@ trait QueryInterface extends js.Object {
   def fullOuterJoin(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def fullOuterJoin(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def fullOuterJoin(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
   def groupByRaw(raw: Raw): QueryBuilder = js.native
@@ -334,7 +334,7 @@ trait QueryInterface extends js.Object {
   def innerJoin(tableName: knexLib.TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def innerJoin(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def innerJoin(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
   def innerJoin(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
@@ -348,7 +348,7 @@ trait QueryInterface extends js.Object {
   def innerJoin(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def innerJoin(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def innerJoin(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
   def insert(data: js.Any): QueryBuilder = js.native
@@ -380,7 +380,7 @@ trait QueryInterface extends js.Object {
   // Joins
   def join(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   // Joins
   def join(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
@@ -400,7 +400,7 @@ trait QueryInterface extends js.Object {
   // Joins
   def join(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   // Joins
   def join(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
@@ -418,7 +418,7 @@ trait QueryInterface extends js.Object {
   def leftJoin(tableName: knexLib.TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def leftJoin(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def leftJoin(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
   def leftJoin(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
@@ -432,7 +432,7 @@ trait QueryInterface extends js.Object {
   def leftJoin(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def leftJoin(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def leftJoin(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
   def leftOuterJoin(raw: Raw): QueryBuilder = js.native
@@ -447,7 +447,7 @@ trait QueryInterface extends js.Object {
   def leftOuterJoin(tableName: knexLib.TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def leftOuterJoin(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def leftOuterJoin(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
   def leftOuterJoin(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
@@ -461,7 +461,7 @@ trait QueryInterface extends js.Object {
   def leftOuterJoin(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def leftOuterJoin(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def leftOuterJoin(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
   def limit(limit: scala.Double): QueryBuilder = js.native
@@ -564,7 +564,7 @@ trait QueryInterface extends js.Object {
   def outerJoin(tableName: knexLib.TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def outerJoin(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def outerJoin(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
   def outerJoin(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
@@ -578,7 +578,7 @@ trait QueryInterface extends js.Object {
   def outerJoin(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def outerJoin(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def outerJoin(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
   def pluck(column: java.lang.String): QueryBuilder = js.native
@@ -596,7 +596,7 @@ trait QueryInterface extends js.Object {
   def rightJoin(tableName: knexLib.TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def rightJoin(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def rightJoin(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
   def rightJoin(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
@@ -610,7 +610,7 @@ trait QueryInterface extends js.Object {
   def rightJoin(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def rightJoin(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def rightJoin(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
   def rightOuterJoin(raw: Raw): QueryBuilder = js.native
@@ -625,7 +625,7 @@ trait QueryInterface extends js.Object {
   def rightOuterJoin(tableName: knexLib.TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def rightOuterJoin(
     tableName: knexLib.TableName,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def rightOuterJoin(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
   def rightOuterJoin(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
@@ -639,10 +639,10 @@ trait QueryInterface extends js.Object {
   def rightOuterJoin(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
   def rightOuterJoin(
     tableName: QueryCallback,
-    columns: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
   def rightOuterJoin(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
-  def select(aliases: ScalablyTyped.runtime.StringDictionary[java.lang.String]): QueryBuilder = js.native
+  def select(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String]): QueryBuilder = js.native
   def select(columnNames: knexLib.ColumnName*): QueryBuilder = js.native
   def select(columnNames: js.Array[knexLib.ColumnName]): QueryBuilder = js.native
   def sum(columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder = js.native

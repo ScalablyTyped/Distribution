@@ -13,7 +13,7 @@ class Message () extends js.Object {
   var delayWhileIdle: scala.Boolean = js.native
   var dryRun: scala.Boolean = js.native
   var timeToLive: scala.Double = js.native
-  def addData(data: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def addData(data: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
   def addData(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def addNotification(key: java.lang.String, value: INotificationOptions): scala.Unit = js.native
   def addNotification(value: INotificationOptions): scala.Unit = js.native

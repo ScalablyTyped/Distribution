@@ -10,11 +10,11 @@ trait FieldsToEvaluate extends js.Object {
   /**
        * Updated field values to evaluate.
        */
-  var fieldUpdates: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var fieldUpdates: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * Initial field values.
        */
-  var fieldValues: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var fieldValues: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * List of fields to evaluate.
        */

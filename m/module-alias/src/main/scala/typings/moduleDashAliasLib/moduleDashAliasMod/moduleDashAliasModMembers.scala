@@ -23,7 +23,7 @@ object moduleDashAliasModMembers extends js.Object {
   /**
        * Register mutliple aliases
        */
-  def addAliases(aliases: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def addAliases(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
   /**
        * Register a custom modules directory
        */

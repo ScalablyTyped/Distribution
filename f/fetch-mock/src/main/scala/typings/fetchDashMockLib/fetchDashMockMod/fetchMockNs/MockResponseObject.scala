@@ -17,7 +17,7 @@ trait MockResponseObject extends js.Object {
   /**
            * Set the response headers.
            */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * Setting this property to true will automatically add the
            * content-length header

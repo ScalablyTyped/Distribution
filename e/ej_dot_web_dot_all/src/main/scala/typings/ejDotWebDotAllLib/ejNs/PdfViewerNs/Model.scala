@@ -13,12 +13,18 @@ trait Model extends js.Object {
   /** Triggers when the AJAX request is failed.
                */
   var ajaxRequestFailure: js.UndefOr[js.Function1[/* e */ AjaxRequestFailureEventArgs, scala.Unit]] = js.undefined
+  /** Triggers when the ajax request is Success.
+               */
+  var ajaxRequestSuccess: js.UndefOr[js.Function1[/* e */ AjaxRequestSuccessEventArgs, scala.Unit]] = js.undefined
   /** Enables or disables the buffering of the PDF pages in the client side.
                */
   var allowClientBuffering: js.UndefOr[scala.Boolean] = js.undefined
   /** Triggers when an annotation is added over the page of the PDF document.
                */
   var annotationAdd: js.UndefOr[js.Function1[/* e */ AnnotationAddEventArgs, scala.Unit]] = js.undefined
+  /** Enables/disables the annotation context menu.
+               */
+  var annotationContextMenu: js.UndefOr[AnnotationContextMenu] = js.undefined
   /** Triggers when the property of the annotation is changed in the page of the PDF document.
                */
   var annotationPropertiesChange: js.UndefOr[js.Function1[/* e */ AnnotationPropertiesChangeEventArgs, scala.Unit]] = js.undefined
@@ -37,6 +43,9 @@ trait Model extends js.Object {
   /** Triggers when the client buffering process starts.
                */
   var bufferStart: js.UndefOr[js.Function1[/* e */ BufferStartEventArgs, scala.Unit]] = js.undefined
+  /** Gets or sets the buffering mode of the PDF viewer control when allowClientBuffering is set to true.
+               */
+  var bufferingMode: js.UndefOr[BufferingMode | java.lang.String] = js.undefined
   /** Gets the number of the page being displayed in the PDF viewer.
                */
   var currentPageNumber: js.UndefOr[scala.Double] = js.undefined
@@ -52,6 +61,12 @@ trait Model extends js.Object {
   /** Triggers when the PDF document gets unloaded from the PDF viewer.
                */
   var documentUnload: js.UndefOr[js.Function1[/* e */ DocumentUnloadEventArgs, scala.Unit]] = js.undefined
+  /** Triggers when the download is completed or aborted.
+               */
+  var downloadEnd: js.UndefOr[js.Function1[/* e */ DownloadEndEventArgs, scala.Unit]] = js.undefined
+  /** Triggers when the download is started.
+               */
+  var downloadStart: js.UndefOr[js.Function1[/* e */ DownloadStartEventArgs, scala.Unit]] = js.undefined
   /** Enables or disables the highlight annotation.
                */
   var enableHighlightAnnotation: js.UndefOr[scala.Boolean] = js.undefined
@@ -133,6 +148,9 @@ trait Model extends js.Object {
   /** Gets/sets the settings of the strikethrough annotation.
                */
   var strikethroughSettings: js.UndefOr[StrikethroughSettings] = js.undefined
+  /** Enables/ disables the text selection context menu.
+               */
+  var textSelectionContextMenu: js.UndefOr[TextSelectionContextMenu] = js.undefined
   /** Specifies the toolbar settings.
                */
   var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined

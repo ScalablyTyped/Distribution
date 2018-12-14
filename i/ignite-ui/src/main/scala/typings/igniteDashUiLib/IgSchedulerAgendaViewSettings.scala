@@ -10,7 +10,7 @@ trait IgSchedulerAgendaViewSettings
   extends /**
 	 * Option for IgSchedulerAgendaViewSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets the number of days shown in AgendaView mode.
   	 *

@@ -10,7 +10,7 @@ trait DataSourceSettings
   extends /**
 	 * Option for DataSourceSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * If set to true, the following behavior will take place:
   	 * if a new row is added, and then deleted, there will be no transaction added to the log

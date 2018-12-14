@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait BooleanMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[scala.Boolean | BooleanMap]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Boolean | BooleanMap]
 

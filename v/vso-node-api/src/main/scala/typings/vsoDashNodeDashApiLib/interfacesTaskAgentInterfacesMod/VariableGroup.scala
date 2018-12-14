@@ -14,6 +14,6 @@ trait VariableGroup extends js.Object {
   var modifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   var modifiedOn: stdLib.Date
   var name: java.lang.String
-  var variables: ScalablyTyped.runtime.StringDictionary[VariableValue]
+  var variables: org.scalablytyped.runtime.StringDictionary[VariableValue]
 }
 

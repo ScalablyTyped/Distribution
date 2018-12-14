@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("acl", JSImport.Namespace)
 @js.native
 object aclModMembers
-  extends ScalablyTyped.runtime.TopLevel[AclStatic]
+  extends org.scalablytyped.runtime.TopLevel[AclStatic]
 

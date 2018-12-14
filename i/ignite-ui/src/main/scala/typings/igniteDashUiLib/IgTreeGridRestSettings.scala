@@ -10,5 +10,5 @@ trait IgTreeGridRestSettings
   extends /**
 	 * Option for IgTreeGridRestSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

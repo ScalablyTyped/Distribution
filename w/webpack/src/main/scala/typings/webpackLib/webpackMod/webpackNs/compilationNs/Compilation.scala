@@ -22,8 +22,8 @@ trait Compilation
   var compiler: webpackLib.webpackMod.webpackNs.Compiler = js.native
   var contextDependencies: webpackLib.webpackMod.webpackNs.SortableSet[java.lang.String] = js.native
   var contextTimestamps: stdLib.Map[java.lang.String, scala.Double] = js.native
-  var dependencyFactories: stdLib.Map[ScalablyTyped.runtime.Instantiable0[Dependency], tapableLib.tapableMod.Tapable] = js.native
-  var dependencyTemplates: stdLib.Map[ScalablyTyped.runtime.Instantiable0[Dependency], tapableLib.tapableMod.Tapable] = js.native
+  var dependencyFactories: stdLib.Map[org.scalablytyped.runtime.Instantiable0[Dependency], tapableLib.tapableMod.Tapable] = js.native
+  var dependencyTemplates: stdLib.Map[org.scalablytyped.runtime.Instantiable0[Dependency], tapableLib.tapableMod.Tapable] = js.native
   var entries: js.Array[_] = js.native
   var entrypoints: stdLib.Map[_, _] = js.native
   var errors: js.Array[_] = js.native

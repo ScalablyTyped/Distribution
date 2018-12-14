@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core/lib/state/stateMatcher", "StateMatcher")
 @js.native
 class StateMatcher protected () extends js.Object {
-  def this(_states: ScalablyTyped.runtime.StringDictionary[atUirouterCoreLib.libStateStateObjectMod.StateObject]) = this()
+  def this(_states: org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libStateStateObjectMod.StateObject]) = this()
   var _states: js.Any = js.native
   def find(stateOrName: atUirouterCoreLib.libStateInterfaceMod.StateOrName): atUirouterCoreLib.libStateStateObjectMod.StateObject = js.native
   def find(

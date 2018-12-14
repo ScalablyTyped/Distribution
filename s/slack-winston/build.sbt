@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "slack-winston"
-version := "0.0-dt-20180927Z-f44c3b"
+version := "0.0-dt-20180927Z-f667d1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "async" % "2.0.1-dt-20181020Z-6d9978",
-  "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180910Z-6472ea",
-  "org.scalablytyped" %%% "logform" % "1.2-dt-20180910Z-3326eb",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
-  "org.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20180910Z-dfb439",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "triple-beam" % "1.3-dt-20180910Z-c053bc",
-  "org.scalablytyped" %%% "winston" % "3.1.0-239e18",
-  "org.scalablytyped" %%% "winston-transport" % "4.2.0-d02ffa")
+  "org.scalablytyped" %%% "async" % "2.0.1-dt-20181020Z-6ba948",
+  "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180910Z-183e9d",
+  "org.scalablytyped" %%% "logform" % "1.2-dt-20180910Z-756084",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
+  "org.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20180910Z-51b373",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
+  "org.scalablytyped" %%% "triple-beam" % "1.3-dt-20180910Z-a38732",
+  "org.scalablytyped" %%% "winston" % "3.1.0-a9d3f9",
+  "org.scalablytyped" %%% "winston-transport" % "4.2.0-e5ffa5")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

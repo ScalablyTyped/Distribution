@@ -79,5 +79,5 @@ trait SVGUseElement
 @JSGlobal("SVGUseElement")
 @js.native
 object SVGUseElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGUseElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGUseElement]
 

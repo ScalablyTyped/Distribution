@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object DynamoDBStreamsNs extends js.Object {
   
   trait AttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait AttributeValue extends js.Object {
@@ -194,7 +194,7 @@ object DynamoDBStreamsNs extends js.Object {
   
   
   trait MapAttributeValue
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait Record extends js.Object {

@@ -11,5 +11,5 @@ trait HTMLTableHeaderCellElement extends HTMLTableCellElement
 @JSGlobal("HTMLTableHeaderCellElement")
 @js.native
 object HTMLTableHeaderCellElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLTableHeaderCellElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLTableHeaderCellElement]
 

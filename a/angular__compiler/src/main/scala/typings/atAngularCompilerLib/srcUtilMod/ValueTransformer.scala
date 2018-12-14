@@ -15,6 +15,6 @@ class ValueTransformer () extends ValueVisitor {
   /* CompleteClass */
   override def visitPrimitive(value: js.Any, context: js.Any): js.Any = js.native
   /* CompleteClass */
-  override def visitStringMap(map: ScalablyTyped.runtime.StringDictionary[js.Any], context: js.Any): js.Any = js.native
+  override def visitStringMap(map: org.scalablytyped.runtime.StringDictionary[js.Any], context: js.Any): js.Any = js.native
 }
 

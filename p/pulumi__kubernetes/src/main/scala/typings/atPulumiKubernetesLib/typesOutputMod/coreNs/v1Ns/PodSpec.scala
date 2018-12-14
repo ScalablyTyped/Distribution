@@ -103,7 +103,7 @@ trait PodSpec extends js.Object {
                * must match a node's labels for the pod to be scheduled on that node. More info:
                * https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
                */
-  val nodeSelector: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val nodeSelector: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * The priority value. Various system components use this field to find the priority of the
                * pod. When Priority Admission Controller is enabled, it prevents users from setting this

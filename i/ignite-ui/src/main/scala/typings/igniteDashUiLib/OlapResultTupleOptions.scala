@@ -10,7 +10,7 @@ trait OlapResultTupleOptions
   extends /**
 	 * Option for OlapResultTupleOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Optional="false" array of $.ig.OlapResultAxisMember objects which form the tuple object.
   	 */

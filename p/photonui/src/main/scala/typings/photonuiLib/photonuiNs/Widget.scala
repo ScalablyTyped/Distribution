@@ -14,7 +14,7 @@ class Widget () extends Base {
   var contextMenuName: java.lang.String = js.native
   var html: stdLib.HTMLElement = js.native
    // readonly
-  var layoutOptions: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var layoutOptions: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var name: java.lang.String = js.native
    // readonly
   var offsetHeight: scala.Double = js.native

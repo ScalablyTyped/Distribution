@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
      */
 
 trait ChangeEvent extends js.Object {
-  val changes: ScalablyTyped.runtime.StringDictionary[realmLib.RealmNs.CollectionChangeSet]
+  val changes: org.scalablytyped.runtime.StringDictionary[realmLib.RealmNs.CollectionChangeSet]
   val oldRealm: realmLib.Realm
   val path: java.lang.String
   val realm: realmLib.Realm

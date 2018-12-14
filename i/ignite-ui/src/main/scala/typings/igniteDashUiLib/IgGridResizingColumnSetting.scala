@@ -10,7 +10,7 @@ trait IgGridResizingColumnSetting
   extends /**
 	 * Option for IgGridResizingColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Enables disables resizing for the column.
   	 *

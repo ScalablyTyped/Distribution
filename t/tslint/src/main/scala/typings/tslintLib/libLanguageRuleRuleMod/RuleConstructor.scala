@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RuleConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ IOptions, IRule] {
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ IOptions, IRule] {
   var metadata: IRuleMetadata = js.native
 }
 

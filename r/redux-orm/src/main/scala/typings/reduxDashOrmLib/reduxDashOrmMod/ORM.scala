@@ -10,27 +10,27 @@ import scala.scalajs.js.annotation._
 class ORM[State /* <: ORMCommonState */] () extends js.Object {
   def this(opts: ORMOpts) = this()
   /* private */ def _attachQuerySetMethods(
-    model: ScalablyTyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
+    model: org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
   ): scala.Unit = js.native
   /* private */ def _setupModelPrototypes(
     models: js.Array[
-      ScalablyTyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
+      org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
     ]
   ): scala.Unit = js.native
   def generateSchemaSpec(): SchemaSpec = js.native
-  def get(modelName: java.lang.String): ScalablyTyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]] = js.native
+  def get(modelName: java.lang.String): org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]] = js.native
   def getDatabase(): DB = js.native
   def getEmptyState(): State = js.native
   def getModelClasses(): js.Array[
-    ScalablyTyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
+    org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
   ] = js.native
   def isFieldInstalled(modelName: java.lang.String, fieldName: java.lang.String): scala.Boolean = js.native
   def mutableSession(state: State): SessionWithModels[State] = js.native
   def register(
-    model: (ScalablyTyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]])*
+    model: (org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]])*
   ): scala.Unit = js.native
   def registerManyToManyModelsFor(
-    model: ScalablyTyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
+    model: org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
   ): scala.Unit = js.native
   @JSName("register")
   def register_M[M](

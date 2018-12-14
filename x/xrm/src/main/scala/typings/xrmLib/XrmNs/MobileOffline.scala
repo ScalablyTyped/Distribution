@@ -26,7 +26,7 @@ trait MobileOffline extends js.Object {
            * @deprecated Use {@link Xrm.WebApi.createRecord} instead.
            * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
            */
-  def createRecord(entityType: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any]): xrmLib.XrmNs.AsyncNs.PromiseLike[xrmLib.XrmNs.AsyncNs.OfflineOperationSuccessCallbackObject] = js.native
+  def createRecord(entityType: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[js.Any]): xrmLib.XrmNs.AsyncNs.PromiseLike[xrmLib.XrmNs.AsyncNs.OfflineOperationSuccessCallbackObject] = js.native
   /**
            * Deletes an entity record in mobile clients while working in the offline mode.
            * @param entityType The logical name of the entity.
@@ -66,7 +66,7 @@ trait MobileOffline extends js.Object {
            * @deprecated Use {@link Xrm.WebApi.retrieveMultipleRecords} instead.
            * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
            */
-  def retrieveMultipleRecords(entityType: java.lang.String): xrmLib.XrmNs.AsyncNs.PromiseLike[js.Array[ScalablyTyped.runtime.StringDictionary[_]]] = js.native
+  def retrieveMultipleRecords(entityType: java.lang.String): xrmLib.XrmNs.AsyncNs.PromiseLike[js.Array[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
            * Retrieves a collection of entity records in mobile clients while working in the offline mode.
            *
@@ -88,7 +88,7 @@ trait MobileOffline extends js.Object {
            * @deprecated Use {@link Xrm.WebApi.retrieveMultipleRecords} instead.
            * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
            */
-  def retrieveMultipleRecords(entityType: java.lang.String, options: java.lang.String): xrmLib.XrmNs.AsyncNs.PromiseLike[js.Array[ScalablyTyped.runtime.StringDictionary[_]]] = js.native
+  def retrieveMultipleRecords(entityType: java.lang.String, options: java.lang.String): xrmLib.XrmNs.AsyncNs.PromiseLike[js.Array[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
            * Retrieves a collection of entity records in mobile clients while working in the offline mode.
            *
@@ -110,7 +110,7 @@ trait MobileOffline extends js.Object {
            * @deprecated Use {@link Xrm.WebApi.retrieveMultipleRecords} instead.
            * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
            */
-  def retrieveMultipleRecords(entityType: java.lang.String, options: java.lang.String, maxPageSize: scala.Double): xrmLib.XrmNs.AsyncNs.PromiseLike[js.Array[ScalablyTyped.runtime.StringDictionary[_]]] = js.native
+  def retrieveMultipleRecords(entityType: java.lang.String, options: java.lang.String, maxPageSize: scala.Double): xrmLib.XrmNs.AsyncNs.PromiseLike[js.Array[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
            * Retrieves an entity record in mobile clients while working in the offline mode.
            *
@@ -164,7 +164,7 @@ trait MobileOffline extends js.Object {
   def updateRecord(
     entityType: java.lang.String,
     id: java.lang.String,
-    data: ScalablyTyped.runtime.StringDictionary[js.Any]
+    data: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): xrmLib.XrmNs.AsyncNs.PromiseLike[xrmLib.XrmNs.AsyncNs.OfflineOperationSuccessCallbackObject] = js.native
 }
 

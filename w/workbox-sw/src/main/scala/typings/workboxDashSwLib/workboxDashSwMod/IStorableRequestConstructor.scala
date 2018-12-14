@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait IStorableRequestConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ IStorableRequestOptions, StorableRequest] {
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ IStorableRequestOptions, StorableRequest] {
   def fromRequest(request: stdLib.Request): StorableRequest = js.native
 }
 

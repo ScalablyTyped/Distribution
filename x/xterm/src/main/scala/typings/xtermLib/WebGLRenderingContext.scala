@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WebGLRenderingContext")
 @js.native
 object WebGLRenderingContext
-  extends ScalablyTyped.runtime.Instantiable0[WebGLRenderingContext] {
+  extends org.scalablytyped.runtime.Instantiable0[WebGLRenderingContext] {
   val ACTIVE_ATTRIBUTES: xtermLib.GLenum = js.native
   val ACTIVE_TEXTURE: xtermLib.GLenum = js.native
   val ACTIVE_UNIFORMS: xtermLib.GLenum = js.native

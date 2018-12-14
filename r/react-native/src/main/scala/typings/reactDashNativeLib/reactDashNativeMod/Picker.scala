@@ -13,7 +13,7 @@ class Picker ()
 @JSImport("react-native", "Picker")
 @js.native
 object Picker extends js.Object {
-  var Item: ScalablyTyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.PickerItem] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.PickerItem] = js.native
   /**
        * On Android, display the options in a dialog.
        */

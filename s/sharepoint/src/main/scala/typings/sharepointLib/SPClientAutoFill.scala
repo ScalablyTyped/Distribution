@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SPClientAutoFill protected () extends js.Object {
   def this(elmTextId: java.lang.String, elmContainerId: java.lang.String, fnPopulateAutoFill: js.Function1[/* targetElement */ stdLib.HTMLInputElement, scala.Unit]) = this()
-  var AllOptionData: ScalablyTyped.runtime.StringDictionary[ISPClientAutoFillData] = js.native
+  var AllOptionData: org.scalablytyped.runtime.StringDictionary[ISPClientAutoFillData] = js.native
   var AutoFillCallbackTimeoutID: java.lang.String = js.native
   var AutoFillContainerId: java.lang.String = js.native
   var AutoFillMenuId: java.lang.String = js.native

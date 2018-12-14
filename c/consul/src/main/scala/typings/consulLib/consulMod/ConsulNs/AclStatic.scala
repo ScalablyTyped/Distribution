@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AclStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* consul */ Consul, Acl]
+  extends org.scalablytyped.runtime.Instantiable1[/* consul */ Consul, Acl]
 

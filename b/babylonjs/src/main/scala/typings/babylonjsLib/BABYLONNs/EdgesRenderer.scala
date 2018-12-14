@@ -47,7 +47,7 @@ class EdgesRenderer protected () extends IEdgesRenderer {
            * @param  generateEdgesLines - should generate Lines or only prepare resources.
            */
   def this(source: AbstractMesh, epsilon: scala.Double, checkVerticesInsteadOfIndices: scala.Boolean, generateEdgesLines: scala.Boolean) = this()
-  var _buffers: ScalablyTyped.runtime.StringDictionary[Nullable[VertexBuffer]] = js.native
+  var _buffers: org.scalablytyped.runtime.StringDictionary[Nullable[VertexBuffer]] = js.native
   var _checkVerticesInsteadOfIndices: scala.Boolean = js.native
   var _epsilon: scala.Double = js.native
   var _ib: babylonjsLib.WebGLBuffer = js.native

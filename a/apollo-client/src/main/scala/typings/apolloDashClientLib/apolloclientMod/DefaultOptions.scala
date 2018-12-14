@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DefaultOptions extends js.Object {
   var mutate: js.UndefOr[
     apolloDashClientLib.coreWatchQueryOptionsMod.MutationBaseOptions[
-      ScalablyTyped.runtime.StringDictionary[_], 
+      org.scalablytyped.runtime.StringDictionary[_], 
       apolloDashClientLib.coreTypesMod.OperationVariables
     ]
   ] = js.undefined

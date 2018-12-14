@@ -13,5 +13,5 @@ trait RTCIceTransportStateChangedEvent extends Event {
 @JSGlobal("RTCIceTransportStateChangedEvent")
 @js.native
 object RTCIceTransportStateChangedEvent
-  extends ScalablyTyped.runtime.Instantiable0[RTCIceTransportStateChangedEvent]
+  extends org.scalablytyped.runtime.Instantiable0[RTCIceTransportStateChangedEvent]
 

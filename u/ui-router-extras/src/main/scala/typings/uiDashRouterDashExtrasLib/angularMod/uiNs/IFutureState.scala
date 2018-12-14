@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
          */
 
 trait IFutureState
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
                * The placeholder state name (fully qualified).
                * Attempted transitions to this state (or any substates) will trigger a lazy load of the full UI-Router `state` represented by this FutureState.

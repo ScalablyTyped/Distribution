@@ -28,7 +28,7 @@ class Service () extends js.Object {
        * @param {string[]} versions - a list of versions that work with this service.
        * @param {Object} features - an object to attach to the prototype.
        */
-  def defineService(serviceIdentifier: java.lang.String, versions: js.Array[java.lang.String]): ScalablyTyped.runtime.Instantiable1[/* config */ js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
+  def defineService(serviceIdentifier: java.lang.String, versions: js.Array[java.lang.String]): org.scalablytyped.runtime.Instantiable1[/* config */ js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
   /**
        * Defines a new Service class using a service identifier and list of versions including an optional set of features (functions) to apply to the class prototype.
        * 
@@ -36,7 +36,7 @@ class Service () extends js.Object {
        * @param {string[]} versions - a list of versions that work with this service.
        * @param {Object} features - an object to attach to the prototype.
        */
-  def defineService(serviceIdentifier: java.lang.String, versions: js.Array[java.lang.String], features: js.Any): ScalablyTyped.runtime.Instantiable1[/* config */ js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
+  def defineService(serviceIdentifier: java.lang.String, versions: js.Array[java.lang.String], features: js.Any): org.scalablytyped.runtime.Instantiable1[/* config */ js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
   /**
        * Calls an operation on a service with the given input parameters.
        * 
@@ -50,7 +50,7 @@ class Service () extends js.Object {
        * @param {string} operation - the name of the operation to call on the service.
        * @param {map} params - a map of input options for the operation. 
        */
-  def makeRequest(operation: java.lang.String, params: ScalablyTyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def makeRequest(operation: java.lang.String, params: org.scalablytyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
        * Calls an operation on a service with the given input parameters.
        * 
@@ -59,7 +59,7 @@ class Service () extends js.Object {
        */
   def makeRequest(
     operation: java.lang.String,
-    params: ScalablyTyped.runtime.StringDictionary[js.Any],
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -75,7 +75,7 @@ class Service () extends js.Object {
        * @param {string} operation - the name of the operation to call on the service.
        * @param {map} params - a map of input options for the operation. 
        */
-  def makeUnauthenticatedRequest(operation: java.lang.String, params: ScalablyTyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def makeUnauthenticatedRequest(operation: java.lang.String, params: org.scalablytyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
        * Calls an operation on a service with the given input parameters, without any authentication data.
        * 
@@ -84,7 +84,7 @@ class Service () extends js.Object {
        */
   def makeUnauthenticatedRequest(
     operation: java.lang.String,
-    params: ScalablyTyped.runtime.StringDictionary[js.Any],
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**

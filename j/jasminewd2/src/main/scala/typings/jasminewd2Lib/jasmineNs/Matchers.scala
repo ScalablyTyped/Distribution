@@ -60,29 +60,37 @@ trait Matchers[T] extends js.Object {
   def toThrow(expected: js.Any): js.Promise[scala.Unit] = js.native
   def toThrowError(): js.Promise[scala.Unit] = js.native
   def toThrowError(
-    expected: ScalablyTyped.runtime.Instantiable1[
+    expected: org.scalablytyped.runtime.Instantiable1[
       /* args (repeated) */ js.Any, 
-      stdLib.Error | (js.Promise[ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]])
+      stdLib.Error | (js.Promise[
+        org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]
+      ])
     ]
   ): js.Promise[scala.Unit] = js.native
   def toThrowError(
-    expected: ScalablyTyped.runtime.Instantiable1[
+    expected: org.scalablytyped.runtime.Instantiable1[
       /* args (repeated) */ js.Any, 
-      stdLib.Error | (js.Promise[ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]])
+      stdLib.Error | (js.Promise[
+        org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]
+      ])
     ],
     message: java.lang.String
   ): js.Promise[scala.Unit] = js.native
   def toThrowError(
-    expected: ScalablyTyped.runtime.Instantiable1[
+    expected: org.scalablytyped.runtime.Instantiable1[
       /* args (repeated) */ js.Any, 
-      stdLib.Error | (js.Promise[ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]])
+      stdLib.Error | (js.Promise[
+        org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]
+      ])
     ],
     message: js.Promise[java.lang.String | stdLib.RegExp]
   ): js.Promise[scala.Unit] = js.native
   def toThrowError(
-    expected: ScalablyTyped.runtime.Instantiable1[
+    expected: org.scalablytyped.runtime.Instantiable1[
       /* args (repeated) */ js.Any, 
-      stdLib.Error | (js.Promise[ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]])
+      stdLib.Error | (js.Promise[
+        org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]
+      ])
     ],
     message: stdLib.RegExp
   ): js.Promise[scala.Unit] = js.native

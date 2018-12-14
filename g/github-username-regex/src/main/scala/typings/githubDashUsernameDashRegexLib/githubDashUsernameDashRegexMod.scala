@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("github-username-regex", JSImport.Namespace)
 @js.native
 object githubDashUsernameDashRegexMod
-  extends ScalablyTyped.runtime.TopLevel[stdLib.RegExp]
+  extends org.scalablytyped.runtime.TopLevel[stdLib.RegExp]
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/utilities/separateOperations", JSImport.Namespace)
 @js.native
 object utilitiesSeparateOperationsMod extends js.Object {
-  def separateOperations(documentAST: graphqlLib.languageAstMod.DocumentNode): ScalablyTyped.runtime.StringDictionary[graphqlLib.languageAstMod.DocumentNode] = js.native
+  def separateOperations(documentAST: graphqlLib.languageAstMod.DocumentNode): org.scalablytyped.runtime.StringDictionary[graphqlLib.languageAstMod.DocumentNode] = js.native
 }
 

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PermissionsAndroidStatic
-  extends ScalablyTyped.runtime.Instantiable0[PermissionsAndroidStatic] {
+  extends org.scalablytyped.runtime.Instantiable0[PermissionsAndroidStatic] {
   /**
        * A list of specified "dangerous" permissions that require prompting the user
        */
-  var PERMISSIONS: ScalablyTyped.runtime.StringDictionary[Permission] = js.native
+  var PERMISSIONS: org.scalablytyped.runtime.StringDictionary[Permission] = js.native
   /**
        * A list of permission results that are returned
        */
-  var RESULTS: ScalablyTyped.runtime.StringDictionary[PermissionStatus] = js.native
+  var RESULTS: org.scalablytyped.runtime.StringDictionary[PermissionStatus] = js.native
   /**
        * Returns a promise resolving to a boolean value as to whether the specified
        * permissions has been granted
@@ -52,7 +52,7 @@ trait PermissionsAndroidStatic
        * returns an object with the permissions as keys and strings as values
        * indicating whether the user allowed or denied the request
        */
-  def requestMultiple(permissions: js.Array[java.lang.String]): js.Promise[ScalablyTyped.runtime.StringDictionary[PermissionStatus]] = js.native
+  def requestMultiple(permissions: js.Array[java.lang.String]): js.Promise[org.scalablytyped.runtime.StringDictionary[PermissionStatus]] = js.native
   /**
        * Deprecated
        */

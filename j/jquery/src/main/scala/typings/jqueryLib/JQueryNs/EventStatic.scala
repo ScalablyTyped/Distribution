@@ -45,7 +45,7 @@ var e = jQuery.Event( "keydown", { keyCode: 64 } );
 jQuery( "body" ).trigger( e );
 ```
          */
-ScalablyTyped.runtime.Instantiable1[/* event */ java.lang.String, Event with js.Object]
+org.scalablytyped.runtime.Instantiable1[/* event */ java.lang.String, Event with js.Object]
      with /**
          * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
          *
@@ -69,7 +69,7 @@ var e = jQuery.Event( "keydown", { keyCode: 64 } );
 jQuery( "body" ).trigger( e );
 ```
          */
-ScalablyTyped.runtime.Instantiable2[/* event */ java.lang.String, /* properties */ js.Object, Event with js.Object] {
+org.scalablytyped.runtime.Instantiable2[/* event */ java.lang.String, /* properties */ js.Object, Event with js.Object] {
   /**
            * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
            *

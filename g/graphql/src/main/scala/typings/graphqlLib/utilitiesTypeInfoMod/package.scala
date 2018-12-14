@@ -11,7 +11,7 @@ package object utilitiesTypeInfoMod {
     /* parentType */ graphqlLib.typeDefinitionMod.GraphQLType, 
     /* fieldNode */ graphqlLib.languageAstMod.FieldNode, 
     graphqlLib.tsutilsMaybeMod.Maybe[
-      graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]]
+      graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
     ]
   ]
 }

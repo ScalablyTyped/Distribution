@@ -21,7 +21,7 @@ trait OpenClusterOptions extends js.Object {
      */
   def releaseFunction(
     clusterPosition: Position,
-    containedNodesPositions: ScalablyTyped.runtime.StringDictionary[Position]
-  ): ScalablyTyped.runtime.StringDictionary[Position]
+    containedNodesPositions: org.scalablytyped.runtime.StringDictionary[Position]
+  ): org.scalablytyped.runtime.StringDictionary[Position]
 }
 

@@ -106,7 +106,7 @@ trait Card extends js.Object {
   /**
        * Your own saved information with this card
        */
-  var metadata: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var metadata: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The name of the cardholder
        */

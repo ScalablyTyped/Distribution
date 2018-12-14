@@ -15,7 +15,7 @@ object defaultNs extends js.Object {
   @js.native
   class Promise[T] protected ()
     extends rsvpLib.rsvpMod.RSVPNs.Promise[T]
-       with ScalablyTyped.runtime.Instantiable1[
+       with org.scalablytyped.runtime.Instantiable1[
           /* executor */ js.Function2[
             /* resolve */ js.Function1[/* value */ js.UndefOr[rsvpLib.rsvpMod.RSVPNs.Arg[js.Object]], scala.Unit], 
             /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 

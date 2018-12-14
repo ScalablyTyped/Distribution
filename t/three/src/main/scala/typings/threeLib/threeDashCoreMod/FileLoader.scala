@@ -32,7 +32,7 @@ class FileLoader () extends js.Object {
   ): js.Any = js.native
   def setMimeType(mimeType: stdLib.MimeType): FileLoader = js.native
   def setPath(path: java.lang.String): FileLoader = js.native
-  def setRequestHeader(value: ScalablyTyped.runtime.StringDictionary[java.lang.String]): FileLoader = js.native
+  def setRequestHeader(value: org.scalablytyped.runtime.StringDictionary[java.lang.String]): FileLoader = js.native
   def setResponseType(responseType: java.lang.String): FileLoader = js.native
   def setWithCredentials(value: java.lang.String): FileLoader = js.native
 }

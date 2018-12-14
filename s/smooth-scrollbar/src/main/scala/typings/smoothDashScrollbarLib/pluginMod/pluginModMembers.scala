@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object pluginModMembers extends js.Object {
   val globalPlugins: PluginMap = js.native
   def addPlugins(
-    Plugins: (ScalablyTyped.runtime.Instantiable2[
+    Plugins: (org.scalablytyped.runtime.Instantiable2[
       /* scrollbar */ smoothDashScrollbarLib.scrollbarMod.Scrollbar, 
       /* options */ js.UndefOr[/* options */ js.Any], 
       ScrollbarPlugin

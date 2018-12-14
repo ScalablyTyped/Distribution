@@ -10,7 +10,7 @@ trait IgVideoPlayerRelatedVideo
   extends /**
 	 * Option for IgVideoPlayerRelatedVideo
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets custom CSS class to be applied on the related video element.
   	 *

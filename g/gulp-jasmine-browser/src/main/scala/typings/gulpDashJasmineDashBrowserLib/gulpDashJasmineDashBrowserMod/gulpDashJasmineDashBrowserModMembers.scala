@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-jasmine-browser", JSImport.Namespace)
 @js.native
 object gulpDashJasmineDashBrowserModMembers
-  extends ScalablyTyped.runtime.TopLevel[IJasmineBrowser]
+  extends org.scalablytyped.runtime.TopLevel[IJasmineBrowser]
 

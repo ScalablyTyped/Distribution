@@ -15,10 +15,10 @@ object libSharedModMembers extends js.Object {
   ): js.Function0[scala.Unit] = js.native
   def encodeXText(str: java.lang.String): java.lang.String = js.native
   def getLogger(): Logger = js.native
-  def getLogger(options: ScalablyTyped.runtime.StringDictionary[js.Any]): Logger = js.native
+  def getLogger(options: org.scalablytyped.runtime.StringDictionary[js.Any]): Logger = js.native
   def getLogger(
-    options: ScalablyTyped.runtime.StringDictionary[js.Any],
-    defaults: ScalablyTyped.runtime.StringDictionary[js.Any]
+    options: org.scalablytyped.runtime.StringDictionary[js.Any],
+    defaults: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Logger = js.native
   def parseConnectionUrl(url: java.lang.String): nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Options = js.native
   def resolveContent(data: js.Array[_], key: java.lang.String): js.Promise[nodeLib.Buffer | java.lang.String] = js.native

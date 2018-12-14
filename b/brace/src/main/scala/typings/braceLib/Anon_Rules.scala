@@ -12,7 +12,7 @@ trait Anon_Rules
          * @param rules The highlighting rules
          * @param flag Any additional regular expression flags to pass (like "i" for case insensitive)
         **/
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* rules */ js.Any, 
       /* flag */ java.lang.String, 
       braceLib.braceMod.AceAjaxNs.Tokenizer

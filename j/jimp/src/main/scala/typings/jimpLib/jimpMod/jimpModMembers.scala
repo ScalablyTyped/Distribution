@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("jimp", JSImport.Namespace)
 @js.native
 object jimpModMembers
-  extends ScalablyTyped.runtime.TopLevel[Jimp]
+  extends org.scalablytyped.runtime.TopLevel[Jimp]
 

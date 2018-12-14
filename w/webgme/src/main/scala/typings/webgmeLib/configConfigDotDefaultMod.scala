@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("webgme/config/config.default", JSImport.Namespace)
 @js.native
 object configConfigDotDefaultMod
-  extends ScalablyTyped.runtime.TopLevel[webgmeLib.GmeConfigNs.PluginConfig]
+  extends org.scalablytyped.runtime.TopLevel[webgmeLib.GmeConfigNs.PluginConfig]
 

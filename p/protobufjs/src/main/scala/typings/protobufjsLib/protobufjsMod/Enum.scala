@@ -25,7 +25,7 @@ class Enum protected () extends ReflectionObject {
        * @param [comment] The comment for this enum
        * @param [comments] The value comments for this enum
        */
-  def this(name: java.lang.String, values: ScalablyTyped.runtime.StringDictionary[scala.Double]) = this()
+  def this(name: java.lang.String, values: org.scalablytyped.runtime.StringDictionary[scala.Double]) = this()
   /**
        * Constructs a new enum instance.
        * @param name Unique name within its namespace
@@ -34,7 +34,7 @@ class Enum protected () extends ReflectionObject {
        * @param [comment] The comment for this enum
        * @param [comments] The value comments for this enum
        */
-  def this(name: java.lang.String, values: ScalablyTyped.runtime.StringDictionary[scala.Double], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, values: org.scalablytyped.runtime.StringDictionary[scala.Double], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new enum instance.
        * @param name Unique name within its namespace
@@ -43,7 +43,7 @@ class Enum protected () extends ReflectionObject {
        * @param [comment] The comment for this enum
        * @param [comments] The value comments for this enum
        */
-  def this(name: java.lang.String, values: ScalablyTyped.runtime.StringDictionary[scala.Double], options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, values: org.scalablytyped.runtime.StringDictionary[scala.Double], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /**
        * Constructs a new enum instance.
        * @param name Unique name within its namespace
@@ -52,15 +52,15 @@ class Enum protected () extends ReflectionObject {
        * @param [comment] The comment for this enum
        * @param [comments] The value comments for this enum
        */
-  def this(name: java.lang.String, values: ScalablyTyped.runtime.StringDictionary[scala.Double], options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String, comments: ScalablyTyped.runtime.StringDictionary[java.lang.String]) = this()
+  def this(name: java.lang.String, values: org.scalablytyped.runtime.StringDictionary[scala.Double], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String, comments: org.scalablytyped.runtime.StringDictionary[java.lang.String]) = this()
   /** Value comment texts, if any. */
-  var comments: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var comments: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /** Reserved ranges, if any. */
   var reserved: js.Array[js.Array[scala.Double] | java.lang.String] = js.native
   /** Enum values by name. */
-  var values: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var values: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /** Enum values by id. */
-  var valuesById: ScalablyTyped.runtime.NumberDictionary[java.lang.String] = js.native
+  var valuesById: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = js.native
   /**
        * Adds a value to this enum.
        * @param name Value name

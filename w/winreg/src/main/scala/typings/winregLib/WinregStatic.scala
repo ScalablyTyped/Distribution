@@ -23,7 +23,7 @@ trait WinregStatic
      *       key:  '\\Software\\Microsoft\\Windows\\CurrentVersion\\Run'
      *     });
      */
-ScalablyTyped.runtime.Instantiable1[/* options */ winregLib.WinregNs.Options, winregLib.WinregNs.Registry] {
+org.scalablytyped.runtime.Instantiable1[/* options */ winregLib.WinregNs.Options, winregLib.WinregNs.Registry] {
   /**
        * The name of the default value. May be used instead of the empty string literal for better readability.
        */

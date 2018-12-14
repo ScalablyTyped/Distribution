@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 /* RemoveDifficultInheritance: 
 - Lifted 3 members from Set(std.Pick, aphrodite.CSSProperties) */ 
 trait OpenCSSProperties
-  extends /* k */ ScalablyTyped.runtime.StringDictionary[
+  extends /* k */ org.scalablytyped.runtime.StringDictionary[
       (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(aphrodite), TsIdentSimple(CSSProperties))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(aphrodite), TsIdentSimple(CSSProperties))),List())))) */js.Any) | aphroditeLib.CSSProperties
     ] {
   var animationName: js.UndefOr[java.lang.String | js.Any | js.Array[_]] = js.undefined

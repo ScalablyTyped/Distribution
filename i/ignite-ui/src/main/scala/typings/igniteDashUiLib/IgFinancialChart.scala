@@ -10,7 +10,7 @@ trait IgFinancialChart
   extends /**
 	 * Option for igFinancialChart
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A FinancialChartRangeSelectorOptionCollection containing the available range selector options on the toolbar.
   	 * This will be the intersection of the user-defined range selector options, if any, and the range selector options which are automatically determined based on the range of data.

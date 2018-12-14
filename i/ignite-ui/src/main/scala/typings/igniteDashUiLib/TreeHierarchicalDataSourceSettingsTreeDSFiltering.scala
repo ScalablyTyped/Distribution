@@ -10,7 +10,7 @@ trait TreeHierarchicalDataSourceSettingsTreeDSFiltering
   extends /**
 	 * Option for TreeHierarchicalDataSourceSettingsTreeDSFiltering
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * If displayMode is showWithAncestorsAndDescendants, show all records that match filtering conditions and their child records, even if child records don't match filtering conditions. If displayMode is showWithAncestors show only those records that match filtering conditions and do not show child records(if any) that don't match filtering conditions
   	 */

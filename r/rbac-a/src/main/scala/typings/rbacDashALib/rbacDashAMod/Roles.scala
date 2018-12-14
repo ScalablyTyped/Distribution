@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Roles
-  extends /* _ */ ScalablyTyped.runtime.StringDictionary[scala.Double | Roles]
+  extends /* _ */ org.scalablytyped.runtime.StringDictionary[scala.Double | Roles]
 

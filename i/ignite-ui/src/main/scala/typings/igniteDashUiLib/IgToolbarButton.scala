@@ -10,7 +10,7 @@ trait IgToolbarButton
   extends /**
 	 * Option for igToolbarButton
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event fired after the toolbar button is activated.
   	 *                 Function takes arguments evt and ui.

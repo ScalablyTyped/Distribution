@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LogTimers
-  extends /* label */ ScalablyTyped.runtime.StringDictionary[stdLib.Date]
+  extends /* label */ org.scalablytyped.runtime.StringDictionary[stdLib.Date]
 

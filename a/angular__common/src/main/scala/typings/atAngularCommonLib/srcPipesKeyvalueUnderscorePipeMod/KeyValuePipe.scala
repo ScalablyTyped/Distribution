@@ -15,14 +15,14 @@ class KeyValuePipe protected ()
   var keyValues: js.Any = js.native
   /* CompleteClass */
   override def transform(value: js.Any, args: js.Any*): js.Any = js.native
-  def transform[V](input: ScalablyTyped.runtime.NumberDictionary[V]): js.Array[KeyValue[scala.Double, V]] = js.native
+  def transform[V](input: org.scalablytyped.runtime.NumberDictionary[V]): js.Array[KeyValue[scala.Double, V]] = js.native
   def transform[V](
-    input: ScalablyTyped.runtime.NumberDictionary[V],
+    input: org.scalablytyped.runtime.NumberDictionary[V],
     compareFn: js.Function2[/* a */ KeyValue[scala.Double, V], /* b */ KeyValue[scala.Double, V], scala.Double]
   ): js.Array[KeyValue[scala.Double, V]] = js.native
-  def transform[V](input: ScalablyTyped.runtime.StringDictionary[V]): js.Array[KeyValue[java.lang.String, V]] = js.native
+  def transform[V](input: org.scalablytyped.runtime.StringDictionary[V]): js.Array[KeyValue[java.lang.String, V]] = js.native
   def transform[V](
-    input: ScalablyTyped.runtime.StringDictionary[V],
+    input: org.scalablytyped.runtime.StringDictionary[V],
     compareFn: js.Function2[
       /* a */ KeyValue[java.lang.String, V], 
       /* b */ KeyValue[java.lang.String, V], 

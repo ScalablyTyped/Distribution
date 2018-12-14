@@ -135,7 +135,7 @@ trait Model extends js.Object {
                */
   var templateId: js.UndefOr[java.lang.String] = js.undefined
   /** Specifies the maximum number of items to be fetched. Note: This will work only with Virtual scrolling
-               * @Default {null}
+               * @Default {5}
                */
   var totalItemsCount: js.UndefOr[scala.Double] = js.undefined
   /** Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.

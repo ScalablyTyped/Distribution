@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NodeList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Node] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Node] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Node]] = js.native
   /**
        * Returns the number of nodes in the collection.
@@ -52,5 +52,5 @@ trait NodeList
 @JSGlobal("NodeList")
 @js.native
 object NodeList
-  extends ScalablyTyped.runtime.Instantiable0[NodeList]
+  extends org.scalablytyped.runtime.Instantiable0[NodeList]
 

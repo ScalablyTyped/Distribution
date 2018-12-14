@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait INamespace extends js.Object {
   /** Nested object descriptors */
-  var nested: js.UndefOr[ScalablyTyped.runtime.StringDictionary[protobufjsLib.AnyNestedObject]] = js.undefined
+  var nested: js.UndefOr[org.scalablytyped.runtime.StringDictionary[protobufjsLib.AnyNestedObject]] = js.undefined
   /** Namespace options */
-  var options: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

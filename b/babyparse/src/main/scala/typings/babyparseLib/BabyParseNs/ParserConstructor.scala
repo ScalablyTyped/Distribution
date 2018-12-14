@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ParserConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* config */ ParseConfig, Parser]
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ ParseConfig, Parser]
 

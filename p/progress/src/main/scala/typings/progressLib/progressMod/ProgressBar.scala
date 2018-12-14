@@ -15,6 +15,14 @@ trait ProgressBar extends js.Object {
        */
   var complete: scala.Boolean = js.native
   /**
+       * Current tick number.
+       */
+  var curr: scala.Double = js.native
+  /**
+       * Total number of ticks to complete.
+       */
+  var total: scala.Double = js.native
+  /**
        * "interrupt" the progress bar and write a message above it.
        */
   def interrupt(message: java.lang.String): scala.Unit = js.native

@@ -81,7 +81,7 @@ trait SVGFEColorMatrixElement
 @JSGlobal("SVGFEColorMatrixElement")
 @js.native
 object SVGFEColorMatrixElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEColorMatrixElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEColorMatrixElement] {
   val SVG_FECOLORMATRIX_TYPE_HUEROTATE: scala.Double = js.native
   val SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA: scala.Double = js.native
   val SVG_FECOLORMATRIX_TYPE_MATRIX: scala.Double = js.native

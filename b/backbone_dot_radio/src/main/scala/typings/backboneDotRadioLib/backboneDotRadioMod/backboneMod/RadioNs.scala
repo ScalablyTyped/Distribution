@@ -17,16 +17,16 @@ object RadioNs extends js.Object {
     def on(eventName: js.Any): js.Any = js.native
     def on(eventName: js.Any, callback: js.Any): js.Any = js.native
     def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native
-    def reply(commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Requests = js.native
+    def reply(commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Requests = js.native
     def reply(
-      commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+      commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
       context: js.Any
     ): Requests = js.native
     def reply(requestName: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): Requests = js.native
     def reply(requestName: java.lang.String, callback: js.Function1[/* repeated */js.Any, _], context: js.Any): Requests = js.native
-    def replyOnce(commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Requests = js.native
+    def replyOnce(commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Requests = js.native
     def replyOnce(
-      commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+      commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
       context: js.Any
     ): Requests = js.native
     def replyOnce(requestName: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): Requests = js.native
@@ -49,9 +49,9 @@ object RadioNs extends js.Object {
       callback: js.Function1[/* repeated */js.Any, scala.Unit],
       context: js.Any
     ): Commands = js.native
-    def comply(commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Commands = js.native
+    def comply(commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Commands = js.native
     def comply(
-      commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+      commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
       context: js.Any
     ): Commands = js.native
     def complyOnce(commandName: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): Commands = js.native
@@ -60,9 +60,9 @@ object RadioNs extends js.Object {
       callback: js.Function1[/* repeated */js.Any, scala.Unit],
       context: js.Any
     ): Commands = js.native
-    def complyOnce(commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Commands = js.native
+    def complyOnce(commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Commands = js.native
     def complyOnce(
-      commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+      commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
       context: js.Any
     ): Commands = js.native
     def stopComplying(): Commands = js.native
@@ -77,16 +77,16 @@ object RadioNs extends js.Object {
   
   @js.native
   class Requests () extends js.Object {
-    def reply(commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Requests = js.native
+    def reply(commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Requests = js.native
     def reply(
-      commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+      commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
       context: js.Any
     ): Requests = js.native
     def reply(requestName: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): Requests = js.native
     def reply(requestName: java.lang.String, callback: js.Function1[/* repeated */js.Any, _], context: js.Any): Requests = js.native
-    def replyOnce(commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Requests = js.native
+    def replyOnce(commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Requests = js.native
     def replyOnce(
-      commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+      commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
       context: js.Any
     ): Requests = js.native
     def replyOnce(requestName: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): Requests = js.native
@@ -118,11 +118,11 @@ object RadioNs extends js.Object {
   ): Commands = js.native
   def comply(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
   ): Commands = js.native
   def comply(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
     context: js.Any
   ): Commands = js.native
   def complyOnce(
@@ -138,11 +138,11 @@ object RadioNs extends js.Object {
   ): Commands = js.native
   def complyOnce(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
   ): Commands = js.native
   def complyOnce(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
     context: js.Any
   ): Commands = js.native
   def listenTo(channelName: java.lang.String, `object`: js.Any, events: java.lang.String, callback: js.Function): js.Any = js.native
@@ -162,11 +162,11 @@ object RadioNs extends js.Object {
   def once(channelName: java.lang.String, events: java.lang.String, callback: js.Function, context: js.Any): js.Any = js.native
   def reply(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
   ): Requests = js.native
   def reply(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
     context: js.Any
   ): Requests = js.native
   def reply(
@@ -182,11 +182,11 @@ object RadioNs extends js.Object {
   ): Requests = js.native
   def replyOnce(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
   ): Requests = js.native
   def replyOnce(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
     context: js.Any
   ): Requests = js.native
   def replyOnce(

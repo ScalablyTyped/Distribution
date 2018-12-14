@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
      */
 
 trait AuthorizationCode
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var authorizationCode: java.lang.String
   var client: Client
   var expiresAt: stdLib.Date

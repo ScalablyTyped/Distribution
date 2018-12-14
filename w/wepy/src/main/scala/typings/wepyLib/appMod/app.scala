@@ -11,9 +11,9 @@ trait app extends js.Object {
   @JSName("$init")
   def $init(wepy: js.Any, config: AppConfig): scala.Unit = js.native
   @JSName("$initAPI")
-  def $initAPI(wepy: js.Any, noPromiseAPI: ScalablyTyped.runtime.StringDictionary[scala.Boolean]): scala.Unit = js.native
-  @JSName("$initAPI")
   def $initAPI(wepy: js.Any, noPromiseAPI: js.Array[java.lang.String]): scala.Unit = js.native
+  @JSName("$initAPI")
+  def $initAPI(wepy: js.Any, noPromiseAPI: org.scalablytyped.runtime.StringDictionary[scala.Boolean]): scala.Unit = js.native
   def use(addonName: AddOn, args: js.Any*): scala.Unit = js.native
 }
 

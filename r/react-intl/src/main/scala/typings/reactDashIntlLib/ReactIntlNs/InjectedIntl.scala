@@ -11,18 +11,18 @@ trait InjectedIntl extends js.Object {
   var defaultLocale: java.lang.String = js.native
   var formats: js.Any = js.native
   var locale: java.lang.String = js.native
-  var messages: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var messages: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def formatDate(value: DateSource): java.lang.String = js.native
   def formatDate(value: DateSource, options: reactDashIntlLib.ReactIntlNs.FormattedDateNs.PropsBase): java.lang.String = js.native
   def formatHTMLMessage(messageDescriptor: reactDashIntlLib.ReactIntlNs.FormattedMessageNs.MessageDescriptor): java.lang.String = js.native
   def formatHTMLMessage(
     messageDescriptor: reactDashIntlLib.ReactIntlNs.FormattedMessageNs.MessageDescriptor,
-    values: ScalablyTyped.runtime.StringDictionary[MessageValue]
+    values: org.scalablytyped.runtime.StringDictionary[MessageValue]
   ): java.lang.String = js.native
   def formatMessage(messageDescriptor: reactDashIntlLib.ReactIntlNs.FormattedMessageNs.MessageDescriptor): java.lang.String = js.native
   def formatMessage(
     messageDescriptor: reactDashIntlLib.ReactIntlNs.FormattedMessageNs.MessageDescriptor,
-    values: ScalablyTyped.runtime.StringDictionary[MessageValue]
+    values: org.scalablytyped.runtime.StringDictionary[MessageValue]
   ): java.lang.String = js.native
   def formatNumber(value: scala.Double): java.lang.String = js.native
   def formatNumber(value: scala.Double, options: reactDashIntlLib.ReactIntlNs.FormattedNumberNs.PropsBase): java.lang.String = js.native

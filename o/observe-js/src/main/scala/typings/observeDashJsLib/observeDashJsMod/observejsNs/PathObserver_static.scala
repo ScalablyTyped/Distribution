@@ -17,14 +17,14 @@ trait PathObserver_static
 		 * @param path specifies the paht to observe. If path === '' the receiver itself gets observed.
 		 * @param defaultValue the defaultValue
 		 */
-ScalablyTyped.runtime.Instantiable2[/* receiver */ js.Any, /* path */ java.lang.String, PathObserver_instance]
+org.scalablytyped.runtime.Instantiable2[/* receiver */ js.Any, /* path */ java.lang.String, PathObserver_instance]
      with /**
 		 * Constructor
 		 * @param receiver the target for observation
 		 * @param path specifies the paht to observe. If path === '' the receiver itself gets observed.
 		 * @param defaultValue the defaultValue
 		 */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* receiver */ js.Any, 
       /* path */ java.lang.String, 
       /* defaultValue */ js.Any, 

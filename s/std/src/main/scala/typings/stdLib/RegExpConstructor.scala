@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RegExpConstructor
-  extends ScalablyTyped.runtime.Instantiable1[(/* pattern */ RegExp) | (/* pattern */ java.lang.String), RegExp]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       (/* pattern */ RegExp) | (/* pattern */ java.lang.String), 
       /* flags */ java.lang.String, 
       RegExp
-    ] {
+    ]
+     with org.scalablytyped.runtime.Instantiable1[(/* pattern */ RegExp) | (/* pattern */ java.lang.String), RegExp] {
   // Non-standard extensions
   @JSName("$1")
   var $1: java.lang.String = js.native
@@ -33,7 +33,7 @@ trait RegExpConstructor
   @JSName("$9")
   var $9: java.lang.String = js.native
   var lastMatch: java.lang.String = js.native
-  @JSName(ScalablyTyped.runtime.Symbol.species)
+  @JSName(org.scalablytyped.runtime.Symbol.species)
   val species: RegExpConstructor = js.native
   def apply(pattern: java.lang.String): RegExp = js.native
   def apply(pattern: java.lang.String, flags: java.lang.String): RegExp = js.native

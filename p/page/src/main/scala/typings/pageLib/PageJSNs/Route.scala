@@ -12,13 +12,13 @@ trait Route
          * @param {string}  path    path
          * @param {Options} options Options
          */
-ScalablyTyped.runtime.Instantiable1[/* path */ java.lang.String, Route]
+org.scalablytyped.runtime.Instantiable1[/* path */ java.lang.String, Route]
      with /**
          * Initialize `Route` with the given HTTP `path` & `options`
          * @param {string}  path    path
          * @param {Options} options Options
          */
-ScalablyTyped.runtime.Instantiable2[/* path */ java.lang.String, /* options */ RouteOptions, Route] {
+org.scalablytyped.runtime.Instantiable2[/* path */ java.lang.String, /* options */ RouteOptions, Route] {
   /**
            * Check if this route matches `path`, if so populate `params`.
            * @param  {string}  path   path

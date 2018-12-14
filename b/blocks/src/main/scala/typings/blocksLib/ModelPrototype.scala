@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ModelPrototype
-  extends /* propertyName */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Boolean | js.Object | Validator] {
+  extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | js.Object | Validator] {
   /**
   	 * Extracts the raw(non observable) dataItem object values from the Model
   	 */

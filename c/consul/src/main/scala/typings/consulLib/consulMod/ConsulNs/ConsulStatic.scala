@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ConsulStatic
-  extends ScalablyTyped.runtime.Instantiable0[Consul]
-     with ScalablyTyped.runtime.Instantiable1[/* opts */ ConsulOptions, Consul] {
+  extends org.scalablytyped.runtime.Instantiable0[Consul]
+     with org.scalablytyped.runtime.Instantiable1[/* opts */ ConsulOptions, Consul] {
   var Acl: AclStatic = js.native
   var Agent: AgentStatic = js.native
   var Catalog: CatalogStatic = js.native

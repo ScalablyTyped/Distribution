@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Part
   extends nodeLib.streamMod.Stream {
   var filename: js.UndefOr[java.lang.String] = js.native
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var mime: js.UndefOr[java.lang.String] = js.native
   var name: java.lang.String = js.native
 }

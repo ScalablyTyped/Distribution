@@ -30,6 +30,6 @@ trait PannerNode extends AudioNode {
 @JSGlobal("PannerNode")
 @js.native
 object PannerNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, PannerNode]
-     with ScalablyTyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ PannerOptions, PannerNode]
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, PannerNode]
+     with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ PannerOptions, PannerNode]
 

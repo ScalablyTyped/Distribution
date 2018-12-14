@@ -17,7 +17,7 @@ class ContextualizedQueryLatencyStats () extends IContextualizedQueryLatencyStat
        * Converts this ContextualizedQueryLatencyStats to JSON.
        * @returns JSON object
        */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "ContextualizedQueryLatencyStats")
@@ -132,7 +132,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        * @param object Plain object
        * @returns ContextualizedQueryLatencyStats
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
+  def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats = js.native
   /**
        * Creates a plain object from a ContextualizedQueryLatencyStats message. Also converts values to other types if specified.
        * @param message ContextualizedQueryLatencyStats
@@ -141,7 +141,7 @@ object ContextualizedQueryLatencyStats extends js.Object {
        */
   def toObject(
     message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a ContextualizedQueryLatencyStats message. Also converts values to other types if specified.
        * @param message ContextualizedQueryLatencyStats
@@ -151,12 +151,12 @@ object ContextualizedQueryLatencyStats extends js.Object {
   def toObject(
     message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedQueryLatencyStats,
     options: protobufjsLib.protobufjsMod.IConversionOptions
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Verifies a ContextualizedQueryLatencyStats message.
        * @param message Plain object to verify
        * @returns `null` if valid, otherwise the reason why it is not
        */
-  def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+  def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
 }
 

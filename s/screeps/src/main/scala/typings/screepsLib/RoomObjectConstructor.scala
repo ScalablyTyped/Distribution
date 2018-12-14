@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RoomObjectConstructor
   extends _Constructor[RoomObject]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable3[
       /* x */ scala.Double, 
       /* y */ scala.Double, 
       /* roomName */ java.lang.String, 

@@ -17,5 +17,5 @@ trait IIRFilterNode extends AudioNode {
 @JSGlobal("IIRFilterNode")
 @js.native
 object IIRFilterNode
-  extends ScalablyTyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ IIRFilterOptions, IIRFilterNode]
+  extends org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ IIRFilterOptions, IIRFilterNode]
 

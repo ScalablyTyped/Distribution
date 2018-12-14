@@ -10,7 +10,7 @@ trait IgCombo
   extends /**
 	 * Option for igCombo
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * If set to true:
   	 * 1. Allows custom value input only with single selection.

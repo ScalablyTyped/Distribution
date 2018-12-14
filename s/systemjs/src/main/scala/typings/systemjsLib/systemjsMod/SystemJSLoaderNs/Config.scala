@@ -10,7 +10,7 @@ trait Config
   extends /**
          * For custom config names
          */
-/* customName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* customName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Set the Babel transpiler options when System.transpiler is set to babel.
            */

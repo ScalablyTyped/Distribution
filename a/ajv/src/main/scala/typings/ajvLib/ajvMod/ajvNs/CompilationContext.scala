@@ -11,7 +11,7 @@ trait CompilationContext extends js.Object {
   var baseId: java.lang.String
   var compositeRule: scala.Boolean
   var dataLevel: scala.Double
-  var formats: ScalablyTyped.runtime.StringDictionary[js.UndefOr[FormatDefinition]]
+  var formats: org.scalablytyped.runtime.StringDictionary[js.UndefOr[FormatDefinition]]
   var level: scala.Double
   var opts: Options
   var schema: js.Any

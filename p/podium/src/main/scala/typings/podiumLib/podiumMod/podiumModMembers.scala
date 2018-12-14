@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("podium", JSImport.Namespace)
 @js.native
 object podiumModMembers
-  extends ScalablyTyped.runtime.TopLevel[Podium]
+  extends org.scalablytyped.runtime.TopLevel[Podium]
 

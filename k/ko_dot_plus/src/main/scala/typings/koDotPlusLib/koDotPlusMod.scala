@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ko.plus", JSImport.Namespace)
 @js.native
 object koDotPlusMod
-  extends ScalablyTyped.runtime.TopLevel[KnockoutStatic]
+  extends org.scalablytyped.runtime.TopLevel[KnockoutStatic]
 

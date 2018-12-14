@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait WrappedException extends js.Object {
-  var customProperties: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var customProperties: org.scalablytyped.runtime.StringDictionary[js.Any]
   var errorCode: scala.Double
   var eventId: scala.Double
   var helpLink: java.lang.String

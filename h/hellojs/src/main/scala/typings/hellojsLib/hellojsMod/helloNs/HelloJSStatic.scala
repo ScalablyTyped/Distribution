@@ -31,9 +31,9 @@ trait HelloJSStatic extends HelloJSEvent {
   ): js.Thenable[_] = js.native
   def getAuthResponse(): HelloJSAuthResponse = js.native
   def getAuthResponse(network: java.lang.String): HelloJSAuthResponse = js.native
-  def init(serviceAppIds: ScalablyTyped.runtime.StringDictionary[HelloJSServiceDef | java.lang.String]): scala.Unit = js.native
+  def init(serviceAppIds: org.scalablytyped.runtime.StringDictionary[HelloJSServiceDef | java.lang.String]): scala.Unit = js.native
   def init(
-    serviceAppIds: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    serviceAppIds: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     options: HelloJSLoginOptions
   ): scala.Unit = js.native
   def login(): js.Thenable[HelloJSLoginEventArguement] = js.native

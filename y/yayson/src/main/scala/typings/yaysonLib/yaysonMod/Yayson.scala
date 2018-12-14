@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Yayson extends js.Object {
   var Adapter: Adapter
-  var Presenter: ScalablyTyped.runtime.Instantiable0[Presenter]
-  var Store: ScalablyTyped.runtime.Instantiable0[Store]
+  var Presenter: org.scalablytyped.runtime.Instantiable0[Presenter]
+  var Store: org.scalablytyped.runtime.Instantiable0[Store]
 }
 

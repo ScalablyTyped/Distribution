@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MessageBundle protected ()
   extends atAngularCompilerLib.srcI18nMod.MessageBundle {
-  def this(_htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _implicitTags: js.Array[java.lang.String], _implicitAttrs: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]) = this()
-  def this(_htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _implicitTags: js.Array[java.lang.String], _implicitAttrs: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]], _locale: java.lang.String) = this()
+  def this(_htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _implicitTags: js.Array[java.lang.String], _implicitAttrs: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]) = this()
+  def this(_htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _implicitTags: js.Array[java.lang.String], _implicitAttrs: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]], _locale: java.lang.String) = this()
 }
 

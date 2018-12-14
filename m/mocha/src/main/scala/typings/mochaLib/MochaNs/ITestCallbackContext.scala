@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** @deprecated use `Mocha.Context` instead. */
 @js.native
 trait ITestCallbackContext
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** @deprecated `.retries()` has additional overloads in `Mocha.Context`. */
   def retries(n: scala.Double): this.type = js.native
   /** @deprecated `.skip()` returns `never` in `Mocha.Context`. */

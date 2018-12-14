@@ -15,5 +15,5 @@ trait TimeRanges extends js.Object {
 @JSGlobal("TimeRanges")
 @js.native
 object TimeRanges
-  extends ScalablyTyped.runtime.Instantiable0[TimeRanges]
+  extends org.scalablytyped.runtime.Instantiable0[TimeRanges]
 

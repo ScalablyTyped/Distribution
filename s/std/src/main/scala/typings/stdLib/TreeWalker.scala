@@ -23,5 +23,5 @@ trait TreeWalker extends js.Object {
 @JSGlobal("TreeWalker")
 @js.native
 object TreeWalker
-  extends ScalablyTyped.runtime.Instantiable0[TreeWalker]
+  extends org.scalablytyped.runtime.Instantiable0[TreeWalker]
 

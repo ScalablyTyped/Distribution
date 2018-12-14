@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DataRecord extends js.Object {
-  var config: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var config: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var name: java.lang.String = js.native
   def attachEvent(`type`: java.lang.String, functor: WebixCallback): java.lang.String | scala.Double = js.native
   def attachEvent(`type`: java.lang.String, functor: WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native

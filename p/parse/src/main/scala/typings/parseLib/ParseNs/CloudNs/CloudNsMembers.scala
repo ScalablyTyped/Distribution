@@ -13,7 +13,7 @@ object CloudNsMembers extends js.Object {
            *
            *     import Buffer = require("buffer").Buffer;
            */
-  var HTTPOptions: ScalablyTyped.runtime.Instantiable0[HTTPOptions] = js.native
+  var HTTPOptions: org.scalablytyped.runtime.Instantiable0[HTTPOptions] = js.native
   def afterDelete(arg1: js.Any): scala.Unit = js.native
   def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, scala.Unit]): scala.Unit = js.native
   def afterFind(arg1: js.Any): scala.Unit = js.native

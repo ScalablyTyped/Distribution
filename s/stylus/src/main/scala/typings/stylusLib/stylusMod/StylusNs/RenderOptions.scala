@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait RenderOptions extends js.Object {
-  var Evaluator: js.UndefOr[ScalablyTyped.runtime.Instantiable0[Evaluator]] = js.undefined
+  var Evaluator: js.UndefOr[org.scalablytyped.runtime.Instantiable0[Evaluator]] = js.undefined
   var filename: js.UndefOr[java.lang.String] = js.undefined
   var functions: js.UndefOr[Dictionary[_]] = js.undefined
   var globals: js.UndefOr[Dictionary[_]] = js.undefined

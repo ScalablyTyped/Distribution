@@ -56,7 +56,7 @@ object DriverServiceNs extends js.Object {
              *     current environment.
              * @return {!DriverService.Builder} A self reference.
              */
-    def setEnvironment(env: ScalablyTyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
+    def setEnvironment(env: org.scalablytyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
     /**
              * Defines the environment to start the server under. This setting will be
              * inherited by every browser session started by the server. By default, the

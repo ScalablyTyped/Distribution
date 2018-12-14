@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("AudioWorklet")
 @js.native
 object AudioWorklet
-  extends ScalablyTyped.runtime.Instantiable0[AudioWorklet]
+  extends org.scalablytyped.runtime.Instantiable0[AudioWorklet]
 

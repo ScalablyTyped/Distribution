@@ -37,5 +37,5 @@ trait PerfWidgetExternal extends js.Object {
 @JSGlobal("PerfWidgetExternal")
 @js.native
 object PerfWidgetExternal
-  extends ScalablyTyped.runtime.Instantiable0[PerfWidgetExternal]
+  extends org.scalablytyped.runtime.Instantiable0[PerfWidgetExternal]
 

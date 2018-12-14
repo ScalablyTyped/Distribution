@@ -10,7 +10,7 @@ trait IContextualMenuItem
   extends /**
      * Any additional properties to use when custom rendering menu items.
      */
-/* propertyName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Optional accessibility label (aria-label) attribute that will be stamped on to the element.
        * If none is specified, the aria-label attribute will contain the item name

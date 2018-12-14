@@ -11,7 +11,7 @@ class MockList protected ()
   extends graphqlDashToolsLib.distMockMod.MockList {
   def this(len: js.Array[scala.Double]) = this()
   def this(len: scala.Double) = this()
-  def this(len: js.Array[scala.Double], wrappedFunction: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]) = this()
-  def this(len: scala.Double, wrappedFunction: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]) = this()
+  def this(len: js.Array[scala.Double], wrappedFunction: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]) = this()
+  def this(len: scala.Double, wrappedFunction: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]) = this()
 }
 

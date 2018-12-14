@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_OptionsFromObjectObjectIPixelateFilter
-  extends ScalablyTyped.runtime.Instantiable0[fabricLib.fabricDashImplMod.IPixelateFilter]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ Anon_Blocksize, fabricLib.fabricDashImplMod.IPixelateFilter] {
+  extends org.scalablytyped.runtime.Instantiable0[fabricLib.fabricDashImplMod.IPixelateFilter]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ Anon_Blocksize, fabricLib.fabricDashImplMod.IPixelateFilter] {
   /**
   		 * Returns filter instance from an object representation
   		 * @param object Object to create an instance from

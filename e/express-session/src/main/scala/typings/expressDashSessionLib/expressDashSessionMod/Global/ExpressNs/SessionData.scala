@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait SessionData
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var cookie: SessionCookieData
 }
 

@@ -31,7 +31,7 @@ trait ConfigOptions extends js.Object {
        * Any values to be set as [environment variables](https://docs.cypress.io/guides/guides/environment-variables.html)
        * @default {}
        */
-  var env: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var env: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * Time, in milliseconds, to wait for a system command to finish executing during a [cy.exec()](https://on.cypress.io/exec) command
        * @default 60000

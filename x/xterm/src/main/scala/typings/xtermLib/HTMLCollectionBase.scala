@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait HTMLCollectionBase
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Element] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Element] {
   /**
        * Sets or retrieves the number of objects in a collection.
        */

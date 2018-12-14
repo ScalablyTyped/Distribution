@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EventEmitterStatic
-  extends ScalablyTyped.runtime.Instantiable0[eventemitter3Lib.eventemitter3Mod.EventEmitter[java.lang.String | js.Symbol]]
+  extends org.scalablytyped.runtime.Instantiable0[eventemitter3Lib.eventemitter3Mod.EventEmitter[java.lang.String | js.Symbol]]
 

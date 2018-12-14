@@ -13,15 +13,15 @@ trait Request extends js.Object {
   var body: js.Any = js.native
   var context: Context = js.native
   var database: java.lang.String = js.native
-  var headers: ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = js.native
+  var headers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = js.native
   var hostname: java.lang.String = js.native
   var method: arangodbLib.ArangoDBNs.HttpMethod = js.native
   var originalUrl: java.lang.String = js.native
   var path: java.lang.String = js.native
-  var pathParams: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var pathParams: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var port: scala.Double = js.native
   var protocol: java.lang.String = js.native
-  var queryParams: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var queryParams: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var rawBody: nodeLib.Buffer = js.native
   var remoteAddress: java.lang.String = js.native
   var remoteAddresses: js.Array[java.lang.String] = js.native
@@ -49,11 +49,11 @@ trait Request extends js.Object {
   def is(types: js.Array[java.lang.String]): java.lang.String = js.native
   def json(): js.Any = js.native
   def makeAbsolute(path: java.lang.String): java.lang.String = js.native
+  def makeAbsolute(path: java.lang.String, query: java.lang.String): java.lang.String = js.native
   def makeAbsolute(
     path: java.lang.String,
-    query: ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+    query: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   ): java.lang.String = js.native
-  def makeAbsolute(path: java.lang.String, query: java.lang.String): java.lang.String = js.native
   def param(name: java.lang.String): js.Any = js.native
   def range(): Ranges | scala.Double = js.native
   def range(size: scala.Double): Ranges | scala.Double = js.native

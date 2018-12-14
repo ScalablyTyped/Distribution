@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ReflectResult
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Array[Metadata]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[Metadata]]
 

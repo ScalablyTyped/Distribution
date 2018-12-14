@@ -17,7 +17,7 @@ trait RequestDelegate extends js.Object {
   var method: java.lang.String = js.native
   var path: java.lang.String = js.native
   var protocol: java.lang.String = js.native
-  var query: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] = js.native
+  var query: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] = js.native
   var querystring: java.lang.String = js.native
   var search: java.lang.String = js.native
   var secure: scala.Boolean = js.native

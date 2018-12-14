@@ -12,5 +12,5 @@ trait SVGSpriterConstructor
          * The spriter's constructor (always the entry point)
          * @param config Main configuration for the spriting process
          */
-ScalablyTyped.runtime.Instantiable1[/* config */ Config, SVGSpriter]
+org.scalablytyped.runtime.Instantiable1[/* config */ Config, SVGSpriter]
 

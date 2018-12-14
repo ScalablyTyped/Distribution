@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Rules
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[Rule] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[Rule] {
   @JSName("abbr_close")
   var abbr_close_Original: Rule = js.native
   @JSName("abbr_open")

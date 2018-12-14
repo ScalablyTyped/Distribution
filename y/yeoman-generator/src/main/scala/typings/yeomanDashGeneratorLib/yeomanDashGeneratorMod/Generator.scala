@@ -13,7 +13,7 @@ trait Generator
   var description: java.lang.String = js.native
   var env: yeomanDashGeneratorLib.Anon_Error = js.native
   var fs: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.MemFsEditor = js.native
-  var options: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var options: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var resolved: java.lang.String = js.native
   // actions/user mixin
   val user: yeomanDashGeneratorLib.Anon_Git = js.native
@@ -100,10 +100,10 @@ trait Generator
        * @param spawnOptions Options to pass `child_process.spawn`.
        */
   def bowerInstall(component: js.Array[java.lang.String], options: js.Object, spawnOptions: js.Object): scala.Unit = js.native
-  def composeWith(namespace: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def composeWith(namespace: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   def composeWith(
     namespace: java.lang.String,
-    options: ScalablyTyped.runtime.StringDictionary[js.Any],
+    options: org.scalablytyped.runtime.StringDictionary[js.Any],
     settings: yeomanDashGeneratorLib.Anon_Link
   ): this.type = js.native
   def desc(description: java.lang.String): this.type = js.native

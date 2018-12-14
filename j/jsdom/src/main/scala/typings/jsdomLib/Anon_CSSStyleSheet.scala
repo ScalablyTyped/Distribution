@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_CSSStyleSheet
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.CSSStyleSheet]
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.CSSStyleSheet]
 

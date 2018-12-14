@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ZeptoEventHandlers
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ZeptoEventHandler]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ZeptoEventHandler]
 

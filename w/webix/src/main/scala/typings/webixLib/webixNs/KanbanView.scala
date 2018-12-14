@@ -13,7 +13,7 @@ trait KanbanView extends js.Object {
   var $kanban: scala.Boolean = js.native
   @JSName("$skin")
   var $skin_Original: WebixCallback = js.native
-  var on_context: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("$dragCreate")
   def $dragCreate(source: stdLib.HTMLElement, event: stdLib.Event): stdLib.HTMLElement = js.native
   @JSName("$dragPos")

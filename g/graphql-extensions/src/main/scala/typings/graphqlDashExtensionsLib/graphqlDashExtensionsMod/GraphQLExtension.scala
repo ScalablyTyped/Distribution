@@ -25,7 +25,7 @@ class GraphQLExtension[TContext] () extends js.Object {
   var willResolveField: js.UndefOr[
     js.Function4[
       /* source */ js.Any, 
-      /* args */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+      /* args */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       /* context */ TContext, 
       /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
       (js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[_], scala.Unit]) | scala.Unit

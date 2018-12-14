@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Message
-  extends ScalablyTyped.runtime.Instantiable1[
-      /* message */ java.lang.String, 
+  extends org.scalablytyped.runtime.Instantiable0[
       zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HaltedError | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.ExpiredAuthError | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.RefreshAuthError
     ]
-     with ScalablyTyped.runtime.Instantiable0[
+     with org.scalablytyped.runtime.Instantiable1[
+      /* message */ java.lang.String, 
       zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HaltedError | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.ExpiredAuthError | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.RefreshAuthError
     ]
 

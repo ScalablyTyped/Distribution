@@ -15,7 +15,7 @@ class State () extends StateInfo {
   /**
        * Gets the formatted default array NavigationData for this State
        */
-  var formattedArrayDefaults: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
+  var formattedArrayDefaults: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   /**
        * Gets the formatted default NavigationData for this State
        */

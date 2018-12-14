@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait GraphQLResponse
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var data: js.UndefOr[js.Any] = js.undefined
   var errors: js.UndefOr[js.Array[GraphQLError]] = js.undefined
   var status: scala.Double

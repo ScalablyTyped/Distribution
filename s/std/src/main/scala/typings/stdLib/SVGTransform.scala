@@ -28,7 +28,7 @@ trait SVGTransform extends js.Object {
 @JSGlobal("SVGTransform")
 @js.native
 object SVGTransform
-  extends ScalablyTyped.runtime.Instantiable0[SVGTransform] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGTransform] {
   val SVG_TRANSFORM_MATRIX: scala.Double = js.native
   val SVG_TRANSFORM_ROTATE: scala.Double = js.native
   val SVG_TRANSFORM_SCALE: scala.Double = js.native

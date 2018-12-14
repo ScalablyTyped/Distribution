@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jquery-easy-loading", JSImport.Namespace)
 @js.native
 object jqueryDashEasyDashLoadingMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function2[/* root */ js.UndefOr[js.Any], /* jQuery */ js.UndefOr[JQueryStatic], JQueryStatic]
     ]
 

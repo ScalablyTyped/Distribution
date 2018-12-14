@@ -42,5 +42,5 @@ trait FileTransfer extends js.Object {
 @JSGlobal("FileTransfer")
 @js.native
 object FileTransfer
-  extends ScalablyTyped.runtime.Instantiable0[FileTransfer]
+  extends org.scalablytyped.runtime.Instantiable0[FileTransfer]
 

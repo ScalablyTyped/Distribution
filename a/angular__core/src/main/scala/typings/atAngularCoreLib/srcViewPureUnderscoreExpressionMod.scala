@@ -29,7 +29,7 @@ object srcViewPureUnderscoreExpressionMod extends js.Object {
   ): scala.Boolean = js.native
   def createPureExpression(view: atAngularCoreLib.srcViewTypesMod.ViewData, `def`: atAngularCoreLib.srcViewTypesMod.NodeDef): atAngularCoreLib.srcViewTypesMod.PureExpressionData = js.native
   def pureArrayDef(checkIndex: scala.Double, argCount: scala.Double): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
-  def pureObjectDef(checkIndex: scala.Double, propToIndex: ScalablyTyped.runtime.StringDictionary[scala.Double]): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def pureObjectDef(checkIndex: scala.Double, propToIndex: org.scalablytyped.runtime.StringDictionary[scala.Double]): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def purePipeDef(checkIndex: scala.Double, argCount: scala.Double): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
 }
 

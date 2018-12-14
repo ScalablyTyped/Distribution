@@ -15,7 +15,7 @@ trait ContactField extends js.Object {
 @JSGlobal("ContactField")
 @js.native
 object ContactField
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* type */ java.lang.String, 
       /* calue */ java.lang.String, 
       /* perf */ scala.Boolean, 

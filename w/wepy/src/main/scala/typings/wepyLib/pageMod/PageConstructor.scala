@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PageConstructor
-  extends ScalablyTyped.runtime.Instantiable0[page]
+  extends org.scalablytyped.runtime.Instantiable0[page]
 

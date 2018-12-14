@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-spinkit", JSImport.Namespace)
 @js.native
 object reactDashSpinkitModMembers
-  extends ScalablyTyped.runtime.TopLevel[reactDashSpinkitLib.reactDashSpinkitMod.spinnerNs.Spinner]
+  extends org.scalablytyped.runtime.TopLevel[reactDashSpinkitLib.reactDashSpinkitMod.spinnerNs.Spinner]
 

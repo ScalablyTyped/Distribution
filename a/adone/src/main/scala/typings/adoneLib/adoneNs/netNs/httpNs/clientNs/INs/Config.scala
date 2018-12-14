@@ -11,7 +11,7 @@ trait Config extends js.Object {
   var baseURL: java.lang.String
   var cancelToken: adoneLib.adoneNs.netNs.httpNs.clientNs.CancelToken
   var data: Data
-  var formData: ScalablyTyped.runtime.StringDictionary[FormValue | js.Array[FormValue]]
+  var formData: org.scalablytyped.runtime.StringDictionary[FormValue | js.Array[FormValue]]
   var headers: RequestHeaders
   var httpAgent: js.Object
   var httpsAgent: js.Object

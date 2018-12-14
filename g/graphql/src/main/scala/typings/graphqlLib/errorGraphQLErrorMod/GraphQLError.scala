@@ -11,11 +11,11 @@ class GraphQLError protected ()
   extends stdLib.Error {
   def this(message: java.lang.String, nodes: js.UndefOr[
       graphqlLib.languageAstMod.ASTNode | js.Array[graphqlLib.languageAstMod.ASTNode] | js.UndefOr[scala.Nothing]
-    ], source: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageSourceMod.Source]], positions: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[scala.Double]]], path: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[java.lang.String | scala.Double]]], originalError: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[stdLib.Error]], extensions: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]]]) = this()
+    ], source: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageSourceMod.Source]], positions: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[scala.Double]]], path: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[java.lang.String | scala.Double]]], originalError: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[stdLib.Error]], extensions: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]]) = this()
   /**
        * Extension fields to add to the formatted error.
        */
-  val extensions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  val extensions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
        * An array of { line, column } locations within the source GraphQL document
        * which correspond to this error.

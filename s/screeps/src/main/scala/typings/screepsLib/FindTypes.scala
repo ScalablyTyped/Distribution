@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait FindTypes
-  extends /* key */ ScalablyTyped.runtime.NumberDictionary[
+  extends /* key */ org.scalablytyped.runtime.NumberDictionary[
       RoomPosition | Creep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
     ] {
   var `1`: RoomPosition

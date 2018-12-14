@@ -18,11 +18,11 @@ trait DOMQuad extends js.Object {
 @JSGlobal("DOMQuad")
 @js.native
 object DOMQuad
-  extends ScalablyTyped.runtime.Instantiable0[DOMQuad]
-     with ScalablyTyped.runtime.Instantiable1[/* p1 */ DOMPointInit, DOMQuad]
-     with ScalablyTyped.runtime.Instantiable2[/* p1 */ DOMPointInit, /* p2 */ DOMPointInit, DOMQuad]
-     with ScalablyTyped.runtime.Instantiable3[/* p1 */ DOMPointInit, /* p2 */ DOMPointInit, /* p3 */ DOMPointInit, DOMQuad]
-     with ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable0[DOMQuad]
+     with org.scalablytyped.runtime.Instantiable1[/* p1 */ DOMPointInit, DOMQuad]
+     with org.scalablytyped.runtime.Instantiable2[/* p1 */ DOMPointInit, /* p2 */ DOMPointInit, DOMQuad]
+     with org.scalablytyped.runtime.Instantiable3[/* p1 */ DOMPointInit, /* p2 */ DOMPointInit, /* p3 */ DOMPointInit, DOMQuad]
+     with org.scalablytyped.runtime.Instantiable4[
       /* p1 */ DOMPointInit, 
       /* p2 */ DOMPointInit, 
       /* p3 */ DOMPointInit, 

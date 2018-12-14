@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ExpansionPanelProps
   extends reactDashMdLib.libMod.Props
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var animateContent: js.UndefOr[scala.Boolean] = js.undefined
   var cancelLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var cancelPrimary: js.UndefOr[scala.Boolean] = js.undefined

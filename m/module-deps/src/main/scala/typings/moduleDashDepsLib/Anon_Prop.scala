@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Prop
-  extends /* prop */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var filename: java.lang.String
   var id: java.lang.String
 }

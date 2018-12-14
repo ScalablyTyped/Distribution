@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait DecomposeOptions
-  extends /* foreignTable */ ScalablyTyped.runtime.StringDictionary[DecomposeOptions | js.Any] {
+  extends /* foreignTable */ org.scalablytyped.runtime.StringDictionary[DecomposeOptions | js.Any] {
   var columns: js.UndefOr[js.Array[java.lang.String] | AnyObject[java.lang.String]] = js.undefined
   var pk: java.lang.String
 }

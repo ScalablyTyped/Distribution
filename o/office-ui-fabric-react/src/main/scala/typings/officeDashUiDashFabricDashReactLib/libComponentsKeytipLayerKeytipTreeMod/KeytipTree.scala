@@ -11,7 +11,7 @@ class KeytipTree () extends js.Object {
   var currentKeytip: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsKeytipLayerIKeytipTreeNodeMod.IKeytipTreeNode
   ] = js.native
-  var nodeMap: ScalablyTyped.runtime.StringDictionary[
+  var nodeMap: org.scalablytyped.runtime.StringDictionary[
     officeDashUiDashFabricDashReactLib.libComponentsKeytipLayerIKeytipTreeNodeMod.IKeytipTreeNode
   ] = js.native
   var root: officeDashUiDashFabricDashReactLib.libComponentsKeytipLayerIKeytipTreeNodeMod.IKeytipTreeNode = js.native

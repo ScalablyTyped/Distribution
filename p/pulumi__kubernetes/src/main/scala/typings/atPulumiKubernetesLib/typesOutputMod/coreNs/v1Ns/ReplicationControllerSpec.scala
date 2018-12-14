@@ -29,7 +29,7 @@ trait ReplicationControllerSpec extends js.Object {
                * defaulted to labels on Pod template. More info:
                * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
                */
-  val selector: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val selector: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * Template is the object that describes the pod that will be created if insufficient replicas
                * are detected. This takes precedence over a TemplateRef. More info:

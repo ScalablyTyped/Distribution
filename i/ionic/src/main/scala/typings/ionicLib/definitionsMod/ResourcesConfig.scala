@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ResourcesConfig
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[ResourcesPlatform]
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[ResourcesPlatform]
 

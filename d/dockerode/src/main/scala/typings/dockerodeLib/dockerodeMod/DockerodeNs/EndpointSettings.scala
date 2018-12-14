@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait EndpointSettings extends js.Object {
   var Aliases: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var DriverOpts: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var DriverOpts: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var EndpointID: js.UndefOr[java.lang.String] = js.undefined
   var Gateway: js.UndefOr[java.lang.String] = js.undefined
   var GlobalIPV6PrefixLen: js.UndefOr[scala.Double] = js.undefined

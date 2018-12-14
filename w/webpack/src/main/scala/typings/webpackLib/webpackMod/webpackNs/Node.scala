@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Node
-  extends /* nodeBuiltin */ ScalablyTyped.runtime.StringDictionary[
+  extends /* nodeBuiltin */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[
         scala.Boolean | webpackLib.webpackLibStrings.mock | webpackLib.webpackLibStrings.empty
       ]

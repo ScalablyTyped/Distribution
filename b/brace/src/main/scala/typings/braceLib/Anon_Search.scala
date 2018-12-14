@@ -19,5 +19,5 @@ trait Anon_Search
          * - `start`: The starting [[Range]] or cursor position to begin the search
          * - `skipCurrent`: Whether or not to include the current line in the search. Default to `false`.
         **/
-ScalablyTyped.runtime.Instantiable0[braceLib.braceMod.AceAjaxNs.Search]
+org.scalablytyped.runtime.Instantiable0[braceLib.braceMod.AceAjaxNs.Search]
 

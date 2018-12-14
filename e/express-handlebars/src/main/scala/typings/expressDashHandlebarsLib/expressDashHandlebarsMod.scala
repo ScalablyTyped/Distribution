@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("express-handlebars", JSImport.Namespace)
 @js.native
 object expressDashHandlebarsMod
-  extends ScalablyTyped.runtime.TopLevel[ExpressHandlebars]
+  extends org.scalablytyped.runtime.TopLevel[ExpressHandlebars]
 

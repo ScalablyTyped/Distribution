@@ -43,7 +43,7 @@ object baconjsModMembers extends js.Object {
        * @returns {Property<E, A>}
        */
   def combineTemplate[E, A](
-    template: ScalablyTyped.runtime.StringDictionary[
+    template: org.scalablytyped.runtime.StringDictionary[
       scala.Double | scala.Boolean | java.lang.String | js.Object | (baconjsLib.BaconNs.Observable[E, _])
     ]
   ): baconjsLib.BaconNs.Property[E, A] = js.native

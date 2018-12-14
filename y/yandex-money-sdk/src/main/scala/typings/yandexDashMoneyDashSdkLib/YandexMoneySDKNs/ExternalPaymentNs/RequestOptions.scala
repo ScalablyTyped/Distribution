@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait RequestOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var amount: js.UndefOr[scala.Double] = js.undefined
   var amount_due: js.UndefOr[scala.Double] = js.undefined
   var message: js.UndefOr[java.lang.String] = js.undefined

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Args
-  extends /* opt */ ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String | scala.Boolean]
+  extends /* opt */ org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String | scala.Boolean]
 

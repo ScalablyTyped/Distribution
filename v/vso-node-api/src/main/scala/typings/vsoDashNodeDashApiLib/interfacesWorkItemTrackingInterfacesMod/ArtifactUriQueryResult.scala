@@ -10,6 +10,6 @@ trait ArtifactUriQueryResult extends js.Object {
   /**
        * A Dictionary that maps a list of work item references to the given list of artifact URI.
        */
-  var artifactUrisQueryResult: ScalablyTyped.runtime.StringDictionary[js.Array[WorkItemReference]]
+  var artifactUrisQueryResult: org.scalablytyped.runtime.StringDictionary[js.Array[WorkItemReference]]
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("validate.js", JSImport.Namespace)
 @js.native
 object validateDotJsModMembers
-  extends ScalablyTyped.runtime.TopLevel[validateDotJsLib.validateDotJsMod.validateNs.ValidateJS]
+  extends org.scalablytyped.runtime.TopLevel[validateDotJsLib.validateDotJsMod.validateNs.ValidateJS]
 

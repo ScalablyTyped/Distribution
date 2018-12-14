@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sugar", JSImport.Namespace)
 @js.native
 object sugarMod
-  extends ScalablyTyped.runtime.TopLevel[sugarDashCoreLib.sugarjsNs.Sugar]
+  extends org.scalablytyped.runtime.TopLevel[sugarDashCoreLib.sugarjsNs.Sugar]
 

@@ -24,7 +24,7 @@ class ReflectionCapabilities ()
   /* CompleteClass */
   override def getter(name: java.lang.String): atAngularCoreLib.srcReflectionTypesMod.GetterFn = js.native
   /* CompleteClass */
-  override def guards(`type`: js.Any): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  override def guards(`type`: js.Any): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /* CompleteClass */
   override def hasLifecycleHook(`type`: js.Any, lcProperty: java.lang.String): scala.Boolean = js.native
   /* CompleteClass */
@@ -43,8 +43,8 @@ class ReflectionCapabilities ()
        * Return a object literal which describes the annotations on Class fields/properties.
        */
   /* CompleteClass */
-  override def propMetadata(typeOrFunc: atAngularCoreLib.srcTypeMod.Type[_]): ScalablyTyped.runtime.StringDictionary[js.Array[_]] = js.native
-  def propMetadata(typeOrFunc: js.Any): ScalablyTyped.runtime.StringDictionary[js.Array[_]] = js.native
+  override def propMetadata(typeOrFunc: atAngularCoreLib.srcTypeMod.Type[_]): org.scalablytyped.runtime.StringDictionary[js.Array[_]] = js.native
+  def propMetadata(typeOrFunc: js.Any): org.scalablytyped.runtime.StringDictionary[js.Array[_]] = js.native
   /* CompleteClass */
   override def resolveEnum(enumIdentifier: js.Any, name: java.lang.String): js.Any = js.native
   /* CompleteClass */

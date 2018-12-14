@@ -73,5 +73,5 @@ trait SVGPolygonElement
 @JSGlobal("SVGPolygonElement")
 @js.native
 object SVGPolygonElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGPolygonElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPolygonElement]
 

@@ -27,7 +27,7 @@ object modelNs extends js.Object {
     protected def this(children: stdLib.Iterable[Node]) = this()
     val childCount: scala.Double = js.native
     val isEmpty: scala.Boolean = js.native
-    @JSName(ScalablyTyped.runtime.Symbol.iterator)
+    @JSName(org.scalablytyped.runtime.Symbol.iterator)
     var iterator: js.Function0[stdLib.Iterator[Node]] = js.native
     val markers: stdLib.Map[java.lang.String, Range] = js.native
     val maxOffset: scala.Double = js.native
@@ -202,7 +202,7 @@ object modelNs extends js.Object {
   class NodeList ()
     extends stdLib.Iterable[Node] {
     /* CompleteClass */
-    @JSName(ScalablyTyped.runtime.Symbol.iterator)
+    @JSName(org.scalablytyped.runtime.Symbol.iterator)
     override var iterator: js.Function0[stdLib.Iterator[Node]] = js.native
     val length: scala.Double = js.native
     val maxOffset: scala.Double = js.native
@@ -258,7 +258,7 @@ object modelNs extends js.Object {
     var isCollapsed: scala.Boolean = js.native
     var isFlat: scala.Boolean = js.native
     /* CompleteClass */
-    @JSName(ScalablyTyped.runtime.Symbol.iterator)
+    @JSName(org.scalablytyped.runtime.Symbol.iterator)
     override var iterator: js.Function0[stdLib.Iterator[Node]] = js.native
     var root: Element | DocumentFragment = js.native
     val start: Position = js.native
@@ -378,7 +378,7 @@ object modelNs extends js.Object {
     val direction: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.backward | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.forward = js.native
     val ignoreElementEnd: scala.Boolean = js.native
     /* CompleteClass */
-    @JSName(ScalablyTyped.runtime.Symbol.iterator)
+    @JSName(org.scalablytyped.runtime.Symbol.iterator)
     override var iterator: js.Function0[stdLib.Iterator[TreeWalkerValue]] = js.native
     val position: Position = js.native
     val shallow: scala.Boolean = js.native

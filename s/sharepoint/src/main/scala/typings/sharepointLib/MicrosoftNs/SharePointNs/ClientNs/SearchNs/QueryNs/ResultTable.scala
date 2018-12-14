@@ -11,10 +11,10 @@ class ResultTable ()
   extends sharepointLib.SPNs.ClientValueObject {
   def get_groupTemplateId(): java.lang.String = js.native
   def get_itemTemplateId(): java.lang.String = js.native
-  def get_properties(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def get_properties(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def get_queryId(): java.lang.String = js.native
   def get_queryRuleId(): java.lang.String = js.native
-  def get_resultRows(): js.Array[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def get_resultRows(): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def get_resultTitle(): java.lang.String = js.native
   def get_resultTitleUrl(): java.lang.String = js.native
   def get_rowCount(): scala.Double = js.native

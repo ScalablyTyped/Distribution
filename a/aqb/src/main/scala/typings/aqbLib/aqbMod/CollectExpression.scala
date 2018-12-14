@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CollectExpression
   extends PartialStatement
-     with ScalablyTyped.runtime.Instantiable6[
+     with org.scalablytyped.runtime.Instantiable6[
       /* prev */ PartialStatement, 
       /* dfns */ js.Array[js.Any], 
       /* varname */ js.Any, 

@@ -11,5 +11,5 @@ trait HTMLUnknownElement extends HTMLElement
 @JSGlobal("HTMLUnknownElement")
 @js.native
 object HTMLUnknownElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLUnknownElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLUnknownElement]
 

@@ -10,7 +10,7 @@ trait IgButton
   extends /**
 	 * Option for igButton
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var centerLabel: js.UndefOr[scala.Boolean] = js.undefined
   var css: js.UndefOr[js.Any] = js.undefined
   var height: js.UndefOr[js.Any] = js.undefined

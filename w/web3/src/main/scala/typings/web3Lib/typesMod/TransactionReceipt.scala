@@ -11,7 +11,7 @@ trait TransactionReceipt extends js.Object {
   var blockNumber: scala.Double
   var contractAddress: java.lang.String
   var cumulativeGasUsed: scala.Double
-  var events: js.UndefOr[ScalablyTyped.runtime.StringDictionary[EventLog]] = js.undefined
+  var events: js.UndefOr[org.scalablytyped.runtime.StringDictionary[EventLog]] = js.undefined
   var from: java.lang.String
   var gasUsed: scala.Double
   var logs: js.UndefOr[js.Array[Log]] = js.undefined

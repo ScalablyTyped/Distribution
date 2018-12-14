@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait MergeFileOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var ancestorLabel: js.UndefOr[java.lang.String] = js.undefined
   var favor: js.UndefOr[scala.Double] = js.undefined
   var flags: js.UndefOr[scala.Double] = js.undefined

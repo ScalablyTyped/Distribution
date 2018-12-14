@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait VarsOption
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[InsertFunction]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[InsertFunction]]
 

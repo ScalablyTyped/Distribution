@@ -22,7 +22,7 @@ object metadataNs extends js.Object {
   
   @js.native
   trait AggregateStatic
-    extends ScalablyTyped.runtime.Instantiable0[Aggregate]
+    extends org.scalablytyped.runtime.Instantiable0[Aggregate]
   
   
   trait ClientState extends js.Object {
@@ -33,7 +33,7 @@ object metadataNs extends js.Object {
   
   @js.native
   trait ClientStateStatic
-    extends ScalablyTyped.runtime.Instantiable0[ClientState]
+    extends org.scalablytyped.runtime.Instantiable0[ClientState]
   
   
   trait ColumnInfo extends js.Object {
@@ -48,7 +48,7 @@ object metadataNs extends js.Object {
     var clusterKeys: js.Array[cassandraDashDriverLib.Anon_Order]
     var clusteringOrder: js.Array[java.lang.String]
     var columns: js.Array[ColumnInfo]
-    var columnsByName: ScalablyTyped.runtime.StringDictionary[ColumnInfo]
+    var columnsByName: org.scalablytyped.runtime.StringDictionary[ColumnInfo]
     var comment: java.lang.String
     var compactionClass: java.lang.String
     var compactionOptions: js.Any
@@ -87,7 +87,7 @@ object metadataNs extends js.Object {
   
   @js.native
   trait IndexStatic
-    extends ScalablyTyped.runtime.Instantiable4[
+    extends org.scalablytyped.runtime.Instantiable4[
           /* name */ java.lang.String, 
           /* target */ java.lang.String, 
           /* kind */ IndexType, 
@@ -96,7 +96,7 @@ object metadataNs extends js.Object {
         ] {
     def fromColumnRows(
       columnRows: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Row],
-      columnsByName: ScalablyTyped.runtime.StringDictionary[ColumnInfo]
+      columnsByName: org.scalablytyped.runtime.StringDictionary[ColumnInfo]
     ): js.Array[Index] = js.native
     def fromRows(indexRows: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Row]): js.Array[Index] = js.native
   }
@@ -106,7 +106,7 @@ object metadataNs extends js.Object {
   
   @js.native
   trait MaterializedViewStatic
-    extends ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, MaterializedView]
+    extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, MaterializedView]
   
   @js.native
   trait Metadata extends js.Object {
@@ -161,7 +161,7 @@ object metadataNs extends js.Object {
   
   @js.native
   trait MetadataStatic
-    extends ScalablyTyped.runtime.Instantiable2[
+    extends org.scalablytyped.runtime.Instantiable2[
           /* options */ cassandraDashDriverLib.cassandraDashDriverMod.ClientOptions, 
           /* controlConnection */ js.Any, 
           Metadata
@@ -182,7 +182,7 @@ object metadataNs extends js.Object {
   
   @js.native
   trait SchemaFunctionStatic
-    extends ScalablyTyped.runtime.Instantiable0[SchemaFunction]
+    extends org.scalablytyped.runtime.Instantiable0[SchemaFunction]
   
   
   trait TableMetadata extends DataCollection {
@@ -195,7 +195,7 @@ object metadataNs extends js.Object {
   
   @js.native
   trait TableMetadataStatic
-    extends ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, TableMetadata]
+    extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, TableMetadata]
   
   var Aggregate: AggregateStatic = js.native
   var Index: IndexStatic = js.native

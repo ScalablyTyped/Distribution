@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AgentStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* consul */ Consul, Agent] {
+  extends org.scalablytyped.runtime.Instantiable1[/* consul */ Consul, Agent] {
   var Check: consulLib.consulMod.ConsulNs.AgentNs.CheckStatic = js.native
   var Service: consulLib.consulMod.ConsulNs.AgentNs.ServiceStatic = js.native
 }

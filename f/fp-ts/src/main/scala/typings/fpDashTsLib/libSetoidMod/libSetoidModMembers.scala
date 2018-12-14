@@ -15,7 +15,7 @@ object libSetoidModMembers extends js.Object {
   def contramap[A, B](f: js.Function1[/* b */ B, A], fa: Setoid[A]): Setoid[B] = js.native
   def getArraySetoid[A](S: Setoid[A]): Setoid[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
   def getProductSetoid[A, B](SA: Setoid[A], SB: Setoid[B]): Setoid[js.Tuple2[A, B]] = js.native
-  def getRecordSetoid[O /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](setoids: fpDashTsLib.fpDashTsLibStrings.getRecordSetoid with O): Setoid[O] = js.native
+  def getRecordSetoid[O /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](setoids: fpDashTsLib.fpDashTsLibStrings.getRecordSetoid with O): Setoid[O] = js.native
   def strictEqual[A](a: A, b: A): scala.Boolean = js.native
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RIPEMD160Static
-  extends ScalablyTyped.runtime.Instantiable0[nodeLib.cryptoMod.Hash]
+  extends org.scalablytyped.runtime.Instantiable0[nodeLib.cryptoMod.Hash]
 

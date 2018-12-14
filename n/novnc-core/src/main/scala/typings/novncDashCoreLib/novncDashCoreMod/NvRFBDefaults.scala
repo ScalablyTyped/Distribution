@@ -27,7 +27,7 @@ trait NvRFBDefaults extends js.Object {
       /* rfb */ RFB, 
       /* msg */ java.lang.String, 
       /* level */ novncDashCoreLib.novncDashCoreLibStrings.normal | novncDashCoreLib.novncDashCoreLibStrings.warn | novncDashCoreLib.novncDashCoreLibStrings.error, 
-      /* options */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* options */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Unit
     ]
   ] = js.undefined

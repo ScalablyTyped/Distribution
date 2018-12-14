@@ -13,5 +13,5 @@ trait RTCSsrcConflictEvent extends Event {
 @JSGlobal("RTCSsrcConflictEvent")
 @js.native
 object RTCSsrcConflictEvent
-  extends ScalablyTyped.runtime.Instantiable0[RTCSsrcConflictEvent]
+  extends org.scalablytyped.runtime.Instantiable0[RTCSsrcConflictEvent]
 

@@ -10,7 +10,7 @@ trait FreedomInModuleEnv
   extends // We use this specification so that you can reference freedom sub-modules by
 // an array-lookup of its name. One day, maybe we'll have a nicer way to do
 // this.
-/* moduleName */ ScalablyTyped.runtime.StringDictionary[FreedomModuleFactoryManager[_]] {
+/* moduleName */ org.scalablytyped.runtime.StringDictionary[FreedomModuleFactoryManager[_]] {
   @JSName("core.console")
   var `core.console_Original`: FreedomModuleFactoryManager[freedomLib.freedomNs.ConsoleNs.Console] = js.native
   @JSName("core.rtcdatachannel")

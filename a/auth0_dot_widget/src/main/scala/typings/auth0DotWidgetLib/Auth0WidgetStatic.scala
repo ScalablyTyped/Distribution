@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Auth0WidgetStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* params */ Auth0Constructor, Auth0WidgetStatic] {
+  extends org.scalablytyped.runtime.Instantiable1[/* params */ Auth0Constructor, Auth0WidgetStatic] {
   def getClient(): js.Any = js.native
   def getProfile(token: java.lang.String, callback: js.Function): js.Any = js.native
   def parseHash(hash: java.lang.String): js.Any = js.native

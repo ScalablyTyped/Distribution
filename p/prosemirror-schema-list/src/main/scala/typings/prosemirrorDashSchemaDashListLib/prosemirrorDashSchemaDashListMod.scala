@@ -62,7 +62,7 @@ object prosemirrorDashSchemaDashListMod extends js.Object {
   ] = js.native
   def wrapInList[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     listType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any]
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Function2[
     /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
     /* dispatch */ js.UndefOr[

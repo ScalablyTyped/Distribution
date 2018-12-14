@@ -18,7 +18,7 @@ trait FindRequest[Content /* <: js.Object */] extends js.Object {
   /** Defines a list of fields defining how you want to sort. Note that sorted fields also have to be selected in the selector. */
   var sort: js.UndefOr[
     js.Array[
-      java.lang.String | (ScalablyTyped.runtime.StringDictionary[
+      java.lang.String | (org.scalablytyped.runtime.StringDictionary[
         pouchdbDashFindLib.pouchdbDashFindLibStrings.asc | pouchdbDashFindLib.pouchdbDashFindLibStrings.desc
       ])
     ]

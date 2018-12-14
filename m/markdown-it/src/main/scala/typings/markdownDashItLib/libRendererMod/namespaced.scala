@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends Renderer {
   /* CompleteClass */
-  override var rules: ScalablyTyped.runtime.StringDictionary[markdownDashItLib.libMod.MarkdownItNs.TokenRender] = js.native
+  override var rules: org.scalablytyped.runtime.StringDictionary[markdownDashItLib.libMod.MarkdownItNs.TokenRender] = js.native
   /* CompleteClass */
   override def render(tokens: js.Array[markdownDashItLib.libTokenMod.namespaced], options: js.Any, env: js.Any): java.lang.String = js.native
   /* CompleteClass */

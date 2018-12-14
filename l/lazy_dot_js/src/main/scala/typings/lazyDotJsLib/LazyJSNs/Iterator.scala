@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 @js.native
 trait Iterator[T]
-  extends ScalablyTyped.runtime.Instantiable1[/* sequence */ Sequence[T], Iterator[T]] {
+  extends org.scalablytyped.runtime.Instantiable1[/* sequence */ Sequence[T], Iterator[T]] {
   def current(): T = js.native
   def moveNext(): scala.Boolean = js.native
 }

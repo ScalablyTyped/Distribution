@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("Foundation", JSImport.Namespace)
 @js.native
 object foundationMod
-  extends ScalablyTyped.runtime.TopLevel[foundationDashSitesLib.FoundationSitesNs.FoundationSitesStatic]
+  extends org.scalablytyped.runtime.TopLevel[foundationDashSitesLib.FoundationSitesNs.FoundationSitesStatic]
 

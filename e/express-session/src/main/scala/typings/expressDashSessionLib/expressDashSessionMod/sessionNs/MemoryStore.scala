@@ -11,7 +11,7 @@ trait MemoryStore extends BaseMemoryStore {
     callback: js.Function2[
       /* err */ js.Any, 
       /* obj */ js.UndefOr[
-        ScalablyTyped.runtime.StringDictionary[expressDashSessionLib.expressDashSessionMod.Global.ExpressNs.SessionData] | scala.Null
+        org.scalablytyped.runtime.StringDictionary[expressDashSessionLib.expressDashSessionMod.Global.ExpressNs.SessionData] | scala.Null
       ], 
       scala.Unit
     ]

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait JobsHash
-  extends /* jobName */ ScalablyTyped.runtime.StringDictionary[Job[_]]
+  extends /* jobName */ org.scalablytyped.runtime.StringDictionary[Job[_]]
 

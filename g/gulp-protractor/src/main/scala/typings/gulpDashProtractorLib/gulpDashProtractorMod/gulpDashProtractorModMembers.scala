@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-protractor", JSImport.Namespace)
 @js.native
 object gulpDashProtractorModMembers
-  extends ScalablyTyped.runtime.TopLevel[IGulpProtractor]
+  extends org.scalablytyped.runtime.TopLevel[IGulpProtractor]
 

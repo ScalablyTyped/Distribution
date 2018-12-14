@@ -14,7 +14,7 @@ package object graphqlMod {
   type GraphQLFieldConfigMapThunk = js.Function0[GraphQLFieldConfigMap]
   type GraphQLFieldResolveFn = js.Function4[
     /* source */ js.Any, 
-    /* args */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* args */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* context */ js.Any, 
     /* info */ GraphQLResolveInfo, 
     js.Any

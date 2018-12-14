@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
          */
 
 trait ServiceParameters
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

@@ -28,11 +28,11 @@ object backboneDotRadioModMembers extends js.Object {
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Commands = js.native
   def comply(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Commands = js.native
   def comply(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
     context: js.Any
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Commands = js.native
   def complyOnce(
@@ -48,11 +48,11 @@ object backboneDotRadioModMembers extends js.Object {
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Commands = js.native
   def complyOnce(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Commands = js.native
   def complyOnce(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
     context: js.Any
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Commands = js.native
   def listenTo(channelName: java.lang.String, `object`: js.Any, events: java.lang.String, callback: js.Function): js.Any = js.native
@@ -72,11 +72,11 @@ object backboneDotRadioModMembers extends js.Object {
   def once(channelName: java.lang.String, events: java.lang.String, callback: js.Function, context: js.Any): js.Any = js.native
   def reply(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests = js.native
   def reply(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
     context: js.Any
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests = js.native
   def reply(
@@ -92,11 +92,11 @@ object backboneDotRadioModMembers extends js.Object {
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests = js.native
   def replyOnce(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests = js.native
   def replyOnce(
     channelName: java.lang.String,
-    commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
+    commands: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],
     context: js.Any
   ): backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests = js.native
   def replyOnce(

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait Anon_PreventDefault extends js.Object {
   def addListener(
     el: stdLib.HTMLElement,
-    eventMap: ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn]
+    eventMap: org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn]
   ): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def addListener(
     el: stdLib.HTMLElement,
-    eventMap: ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn],
+    eventMap: org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn],
     context: js.Any
   ): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def addListener(
@@ -34,11 +34,11 @@ trait Anon_PreventDefault extends js.Object {
   def getWheelDelta(ev: stdLib.Event): scala.Double = js.native
   def off(
     el: stdLib.HTMLElement,
-    eventMap: ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn]
+    eventMap: org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn]
   ): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def off(
     el: stdLib.HTMLElement,
-    eventMap: ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn],
+    eventMap: org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn],
     context: js.Any
   ): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def off(
@@ -54,11 +54,11 @@ trait Anon_PreventDefault extends js.Object {
   ): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def on(
     el: stdLib.HTMLElement,
-    eventMap: ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn]
+    eventMap: org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn]
   ): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def on(
     el: stdLib.HTMLElement,
-    eventMap: ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn],
+    eventMap: org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn],
     context: js.Any
   ): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def on(
@@ -75,11 +75,11 @@ trait Anon_PreventDefault extends js.Object {
   def preventDefault(ev: stdLib.Event): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def removeListener(
     el: stdLib.HTMLElement,
-    eventMap: ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn]
+    eventMap: org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn]
   ): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def removeListener(
     el: stdLib.HTMLElement,
-    eventMap: ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn],
+    eventMap: org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.DomEventNs.EventHandlerFn],
     context: js.Any
   ): /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(leaflet), TsIdentModule(None,List(leaflet)), TsIdentNamespace(DomEvent)))) */js.Any = js.native
   def removeListener(

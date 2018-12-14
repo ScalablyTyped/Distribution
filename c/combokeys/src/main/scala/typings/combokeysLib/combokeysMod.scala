@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("combokeys", JSImport.Namespace)
 @js.native
 object combokeysMod
-  extends ScalablyTyped.runtime.TopLevel[combokeysLib.CombokeysNs.CombokeysStatic]
+  extends org.scalablytyped.runtime.TopLevel[combokeysLib.CombokeysNs.CombokeysStatic]
 

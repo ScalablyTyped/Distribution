@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Resources
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[stdLib.HTMLCanvasElement]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[stdLib.HTMLCanvasElement]
 

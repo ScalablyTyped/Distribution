@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ColorConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Color]
-     with ScalablyTyped.runtime.Instantiable1[/* obj */ colorLib.ColorParam, Color]
-     with ScalablyTyped.runtime.Instantiable2[/* obj */ colorLib.ColorParam, /* model */ java.lang.String, Color] {
+  extends org.scalablytyped.runtime.Instantiable0[Color]
+     with org.scalablytyped.runtime.Instantiable1[/* obj */ colorLib.ColorParam, Color]
+     with org.scalablytyped.runtime.Instantiable2[/* obj */ colorLib.ColorParam, /* model */ java.lang.String, Color] {
   def apply(): Color = js.native
   def apply(obj: colorLib.ColorParam): Color = js.native
   def apply(obj: colorLib.ColorParam, model: java.lang.String): Color = js.native

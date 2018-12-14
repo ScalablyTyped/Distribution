@@ -14,8 +14,8 @@ trait HashChangeEvent extends Event {
 @JSGlobal("HashChangeEvent")
 @js.native
 object HashChangeEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, HashChangeEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, HashChangeEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ HashChangeEventInit, 
       HashChangeEvent

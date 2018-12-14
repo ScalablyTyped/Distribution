@@ -11,5 +11,5 @@ trait Anon_Parent
          * Creates a new `ScrollBar`. `parent` is the owner of the scroll bar.
          * @param parent A DOM element
         **/
-ScalablyTyped.runtime.Instantiable1[/* parent */ stdLib.HTMLElement, braceLib.braceMod.AceAjaxNs.ScrollBar]
+org.scalablytyped.runtime.Instantiable1[/* parent */ stdLib.HTMLElement, braceLib.braceMod.AceAjaxNs.ScrollBar]
 

@@ -19,7 +19,7 @@ class Namespace protected () extends NamespaceBase {
        * @param name Namespace name
        * @param [options] Declared options
        */
-  def this(name: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 
 @JSImport("protobufjs", "Namespace")
@@ -31,7 +31,7 @@ object Namespace extends js.Object {
        * @param [toJSONOptions] JSON conversion options
        * @returns JSON object or `undefined` when array is empty
        */
-  def arrayToJSON(array: js.Array[protobufjsLib.protobufjsMod.ReflectionObject]): js.UndefOr[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def arrayToJSON(array: js.Array[protobufjsLib.protobufjsMod.ReflectionObject]): js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
        * Converts an array of reflection objects to JSON.
        * @param array Object array
@@ -41,7 +41,7 @@ object Namespace extends js.Object {
   def arrayToJSON(
     array: js.Array[protobufjsLib.protobufjsMod.ReflectionObject],
     toJSONOptions: protobufjsLib.protobufjsMod.IToJSONOptions
-  ): js.UndefOr[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
        * Constructs a namespace from JSON.
        * @param name Namespace name
@@ -49,7 +49,7 @@ object Namespace extends js.Object {
        * @returns Created namespace
        * @throws {TypeError} If arguments are invalid
        */
-  def fromJSON(name: java.lang.String, json: ScalablyTyped.runtime.StringDictionary[js.Any]): protobufjsLib.protobufjsMod.Namespace = js.native
+  def fromJSON(name: java.lang.String, json: org.scalablytyped.runtime.StringDictionary[js.Any]): protobufjsLib.protobufjsMod.Namespace = js.native
   /**
        * Tests if the specified id is reserved.
        * @param reserved Array of reserved ranges and names

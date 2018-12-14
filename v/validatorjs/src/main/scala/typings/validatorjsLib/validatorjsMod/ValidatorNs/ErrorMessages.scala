@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ErrorMessages
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | ErrorMessages]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | ErrorMessages]
 

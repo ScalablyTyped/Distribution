@@ -41,6 +41,6 @@ trait FormData extends js.Object {
 @JSGlobal("FormData")
 @js.native
 object FormData
-  extends ScalablyTyped.runtime.Instantiable0[FormData]
-     with ScalablyTyped.runtime.Instantiable1[/* form */ HTMLFormElement, FormData]
+  extends org.scalablytyped.runtime.Instantiable0[FormData]
+     with org.scalablytyped.runtime.Instantiable1[/* form */ HTMLFormElement, FormData]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IObjectTypeColumnMapping
-  extends ScalablyTyped.runtime.Instantiable0[IObjectTypeColumnMapping]
+  extends org.scalablytyped.runtime.Instantiable0[IObjectTypeColumnMapping]
 

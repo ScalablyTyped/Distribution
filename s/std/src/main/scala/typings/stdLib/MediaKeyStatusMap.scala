@@ -23,5 +23,5 @@ trait MediaKeyStatusMap extends js.Object {
 @JSGlobal("MediaKeyStatusMap")
 @js.native
 object MediaKeyStatusMap
-  extends ScalablyTyped.runtime.Instantiable0[MediaKeyStatusMap]
+  extends org.scalablytyped.runtime.Instantiable0[MediaKeyStatusMap]
 

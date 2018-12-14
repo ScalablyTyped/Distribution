@@ -27,7 +27,7 @@ trait REPLServer
   /**
            * The commands registered via `replServer.defineCommand()`.
            */
-  val commands: ScalablyTyped.runtime.StringDictionary[js.UndefOr[REPLCommand]] = js.native
+  val commands: org.scalablytyped.runtime.StringDictionary[js.UndefOr[REPLCommand]] = js.native
   /**
            * Specified in the REPL options, this is the function to use for custom Tab auto-completion.
            */

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FieldObjectChoice
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | FieldObjectChoice]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | FieldObjectChoice]
 

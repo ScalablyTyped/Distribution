@@ -15,7 +15,7 @@ object srcUtilMod extends js.Object {
   def stringify(token: js.Any): java.lang.String = js.native
   @js.native
   object global
-    extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any]
+    extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
 }
 

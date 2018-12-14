@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/core/date", JSImport.Namespace)
 @js.native
 object libraryCoreDateMod
-  extends ScalablyTyped.runtime.TopLevel[Anon_Now]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Now]
 

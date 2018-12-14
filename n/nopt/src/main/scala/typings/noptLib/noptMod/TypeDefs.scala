@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TypeDefs
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[TypeInfo]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[TypeInfo]
 

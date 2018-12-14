@@ -12,12 +12,12 @@ object ltxModMembers extends js.Object {
   def childrenEqual(a: ltxLib.libElementMod.Element, b: ltxLib.libElementMod.Element): scala.Boolean = js.native
   def clone[T /* <: ltxLib.libElementMod.Element */](el: T): T = js.native
   def createElement(name: java.lang.String): ltxLib.libElementMod.Element = js.native
+  def createElement(name: java.lang.String, attrs: java.lang.String, children: ltxLib.libElementMod.Node*): ltxLib.libElementMod.Element = js.native
   def createElement(
     name: java.lang.String,
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     children: ltxLib.libElementMod.Node*
   ): ltxLib.libElementMod.Element = js.native
-  def createElement(name: java.lang.String, attrs: java.lang.String, children: ltxLib.libElementMod.Node*): ltxLib.libElementMod.Element = js.native
   def equal(a: ltxLib.libElementMod.Element, b: ltxLib.libElementMod.Element): scala.Boolean = js.native
   def escapeXML(s: java.lang.String): java.lang.String = js.native
   def escapeXMLText(s: java.lang.String): java.lang.String = js.native

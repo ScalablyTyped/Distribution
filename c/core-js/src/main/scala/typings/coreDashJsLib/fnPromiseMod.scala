@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/promise", JSImport.Namespace)
 @js.native
 object fnPromiseMod
-  extends ScalablyTyped.runtime.TopLevel[stdLib.PromiseConstructor]
+  extends org.scalablytyped.runtime.TopLevel[stdLib.PromiseConstructor]
 

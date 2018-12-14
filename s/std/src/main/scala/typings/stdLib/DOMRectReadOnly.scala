@@ -21,11 +21,11 @@ trait DOMRectReadOnly extends js.Object {
 @JSGlobal("DOMRectReadOnly")
 @js.native
 object DOMRectReadOnly
-  extends ScalablyTyped.runtime.Instantiable0[DOMRectReadOnly]
-     with ScalablyTyped.runtime.Instantiable1[/* x */ scala.Double, DOMRectReadOnly]
-     with ScalablyTyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, DOMRectReadOnly]
-     with ScalablyTyped.runtime.Instantiable3[/* x */ scala.Double, /* y */ scala.Double, /* width */ scala.Double, DOMRectReadOnly]
-     with ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable0[DOMRectReadOnly]
+     with org.scalablytyped.runtime.Instantiable1[/* x */ scala.Double, DOMRectReadOnly]
+     with org.scalablytyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, DOMRectReadOnly]
+     with org.scalablytyped.runtime.Instantiable3[/* x */ scala.Double, /* y */ scala.Double, /* width */ scala.Double, DOMRectReadOnly]
+     with org.scalablytyped.runtime.Instantiable4[
       /* x */ scala.Double, 
       /* y */ scala.Double, 
       /* width */ scala.Double, 

@@ -16,12 +16,12 @@ class Response ()
            * Instantiates Response using the supplied options.
            *
            */
-  def this(options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(options: expressLib.expressMod.eNs.Response) = this()
   /**
            * Instantiates Response using the supplied options.
            *
            */
-  def this(options: expressLib.expressMod.eNs.Response) = this()
+  def this(options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
            * Returns the specified HTTP header field. The match is case-insensitive.
            *

@@ -10,6 +10,6 @@ trait TorrentRecord extends js.Object {
   var connected: scala.Boolean
   var filters: delugeLib.Anon_State
   var stats: DelugeStats
-  var torrents: ScalablyTyped.runtime.StringDictionary[Torrent]
+  var torrents: org.scalablytyped.runtime.StringDictionary[Torrent]
 }
 

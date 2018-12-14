@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PressRecognizerStatic
-  extends ScalablyTyped.runtime.Instantiable0[PressRecognizer]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ RecognizerOptions, PressRecognizer]
+  extends org.scalablytyped.runtime.Instantiable0[PressRecognizer]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ RecognizerOptions, PressRecognizer]
 

@@ -20,7 +20,7 @@ trait Namespace
   		 * A dictionary of all the Sockets connected to this Namespace, where
   		 * the Socket ID is the key
   		 */
-  var connected: ScalablyTyped.runtime.StringDictionary[Socket] = js.native
+  var connected: org.scalablytyped.runtime.StringDictionary[Socket] = js.native
   /**
   		 * Sets the 'json' flag when emitting an event
   		 */
@@ -37,7 +37,7 @@ trait Namespace
   		 * A dictionary of all the Sockets connected to this Namespace, where
   		 * the Socket ID is the key
   		 */
-  var sockets: ScalablyTyped.runtime.StringDictionary[Socket] = js.native
+  var sockets: org.scalablytyped.runtime.StringDictionary[Socket] = js.native
   /**
   		 * Gets a list of clients.
   		 * @return This Namespace

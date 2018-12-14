@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AltFactory
-  extends ScalablyTyped.runtime.Instantiable0[Alt]
-     with ScalablyTyped.runtime.Instantiable1[/* config */ AltConfig, Alt]
+  extends org.scalablytyped.runtime.Instantiable0[Alt]
+     with org.scalablytyped.runtime.Instantiable1[/* config */ AltConfig, Alt]
 

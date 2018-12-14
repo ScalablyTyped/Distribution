@@ -74,13 +74,13 @@ class Object () extends BaseObject {
   def remove(attr: java.lang.String, item: js.Any): js.Any = js.native
   def revert(): scala.Unit = js.native
   def save(): js.Promise[this.type] = js.native
-  def save(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Promise[this.type] = js.native
-  def save(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
-    options: parseLib.ParseNs.ObjectNs.SaveOptions
-  ): js.Promise[this.type] = js.native
   def save(attrs: js.Object): js.Promise[this.type] = js.native
   def save(attrs: js.Object, options: parseLib.ParseNs.ObjectNs.SaveOptions): js.Promise[this.type] = js.native
+  def save(attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[this.type] = js.native
+  def save(
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
+    options: parseLib.ParseNs.ObjectNs.SaveOptions
+  ): js.Promise[this.type] = js.native
   def save(attrs: scala.Null, options: parseLib.ParseNs.ObjectNs.SaveOptions): js.Promise[this.type] = js.native
   def save(key: java.lang.String, value: js.Any): js.Promise[this.type] = js.native
   def save(key: java.lang.String, value: js.Any, options: parseLib.ParseNs.ObjectNs.SaveOptions): js.Promise[this.type] = js.native
@@ -136,7 +136,7 @@ object Object extends js.Object {
   def fromJSON(json: js.Any, `override`: scala.Boolean): js.Any = js.native
   def registerSubclass[T /* <: parseLib.ParseNs.Object */](
     className: java.lang.String,
-    clazz: ScalablyTyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], T]
+    clazz: org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], T]
   ): scala.Unit = js.native
   def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
   def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.SaveAllOptions): js.Promise[js.Array[T]] = js.native

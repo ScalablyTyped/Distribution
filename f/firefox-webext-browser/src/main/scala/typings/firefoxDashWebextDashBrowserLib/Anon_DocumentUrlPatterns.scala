@@ -26,7 +26,7 @@ trait Anon_DocumentUrlPatterns extends js.Object {
   var documentUrlPatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Whether this context menu item is enabled or disabled. Defaults to true. */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
-  var icons: js.UndefOr[ScalablyTyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
+  var icons: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
   /**
            * The unique ID to assign to this item. Mandatory for event pages. Cannot be the same as another ID for this
            * extension.

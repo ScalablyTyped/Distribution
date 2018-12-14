@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-transition", JSImport.Namespace)
 @js.native
 object semanticDashUiDashTransitionMod
-  extends ScalablyTyped.runtime.TopLevel[semanticDashUiDashTransitionLib.SemanticUINs.Transition]
+  extends org.scalablytyped.runtime.TopLevel[semanticDashUiDashTransitionLib.SemanticUINs.Transition]
 

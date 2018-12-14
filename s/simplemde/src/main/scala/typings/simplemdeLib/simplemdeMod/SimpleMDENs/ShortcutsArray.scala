@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ShortcutsArray
-  extends /* action */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
+  extends /* action */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
   var cleanBlock: js.UndefOr[java.lang.String] = js.undefined
   var drawImage: js.UndefOr[java.lang.String] = js.undefined
   var drawLink: js.UndefOr[java.lang.String] = js.undefined

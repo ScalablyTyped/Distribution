@@ -16,7 +16,7 @@ class ClientRequestContext () extends js.Object {
   /** Debug information */
   val debugInfo: RequestContextDebugInfo = js.native
   /** Request headers */
-  var requestHeaders: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var requestHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /** Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document. */
   var trackedObjects: TrackedObjects = js.native
   /**
@@ -63,7 +63,7 @@ class ClientRequestContext () extends js.Object {
           */
   def loadRecursive(
     `object`: ClientObject,
-    options: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | LoadOption]
+    options: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | LoadOption]
   ): scala.Unit = js.native
   /**
           * Queues up a command to recursively load the specified properties of the object and its navigation properties.
@@ -77,7 +77,7 @@ class ClientRequestContext () extends js.Object {
           */
   def loadRecursive(
     `object`: ClientObject,
-    options: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | LoadOption],
+    options: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String] | LoadOption],
     maxDepth: scala.Double
   ): scala.Unit = js.native
   /**

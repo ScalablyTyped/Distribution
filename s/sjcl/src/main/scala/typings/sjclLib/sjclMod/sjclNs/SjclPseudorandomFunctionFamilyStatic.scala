@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SjclPseudorandomFunctionFamilyStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* key */ BitArray, SjclPseudorandomFunctionFamily]
+  extends org.scalablytyped.runtime.Instantiable1[/* key */ BitArray, SjclPseudorandomFunctionFamily]
 

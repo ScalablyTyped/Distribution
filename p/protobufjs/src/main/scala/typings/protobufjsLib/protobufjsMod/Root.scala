@@ -12,7 +12,7 @@ class Root () extends NamespaceBase {
        * Constructs a new root namespace instance.
        * @param [options] Top level options
        */
-  def this(options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /** Deferred extension fields. */
   var deferred: js.Array[Field] = js.native
   /** Resolved file names of loaded files. */

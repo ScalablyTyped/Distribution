@@ -10,7 +10,7 @@ trait IgGridHidingLocale
   extends /**
 	 * Option for IgGridHidingLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies the text of the button which applies changes in the modal dialog.
   	 *

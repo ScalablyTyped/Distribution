@@ -14,7 +14,7 @@ trait CustomOptions
    * Custom properties can be defined on Options.
    * These options are forwarded along to module-deps and browser-pack directly.
    */
-/* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** the directory that Browserify starts bundling from for filenames that start with .. */
   var basedir: js.UndefOr[java.lang.String] = js.undefined
 }

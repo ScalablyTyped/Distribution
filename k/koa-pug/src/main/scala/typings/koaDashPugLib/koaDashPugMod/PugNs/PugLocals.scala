@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PugLocals
-  extends /* str */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* str */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

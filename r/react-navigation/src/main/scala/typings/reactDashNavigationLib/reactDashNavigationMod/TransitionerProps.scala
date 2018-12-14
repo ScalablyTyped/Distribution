@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TransitionerProps extends js.Object {
-  var descriptors: js.UndefOr[ScalablyTyped.runtime.StringDictionary[NavigationDescriptor[NavigationParams]]] = js.native
+  var descriptors: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[NavigationDescriptor[NavigationParams]]
+  ] = js.native
   var navigation: NavigationScreenProp[NavigationState, NavigationParams] = js.native
   var onTransitionEnd: js.UndefOr[
     js.Function2[

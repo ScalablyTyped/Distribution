@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Encoding
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       /* encoding */ java.lang.String, 
       easyDashXDashHeadersLib.stringUnderscoreDecoderMod.NodeStringDecoder
     ]

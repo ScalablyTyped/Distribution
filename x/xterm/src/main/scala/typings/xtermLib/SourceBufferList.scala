@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SourceBufferList
   extends EventTarget
-     with /* index */ ScalablyTyped.runtime.NumberDictionary[SourceBuffer] {
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[SourceBuffer] {
   val length: scala.Double = js.native
   def item(index: scala.Double): SourceBuffer = js.native
 }
@@ -16,5 +16,5 @@ trait SourceBufferList
 @JSGlobal("SourceBufferList")
 @js.native
 object SourceBufferList
-  extends ScalablyTyped.runtime.Instantiable0[SourceBufferList]
+  extends org.scalablytyped.runtime.Instantiable0[SourceBufferList]
 

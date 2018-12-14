@@ -16,6 +16,6 @@ trait JsonpOptions extends js.Object {
   /** The data to be interpolated into the URL and serialized into the querystring. */
   var data: js.UndefOr[js.Any] = js.undefined
   /** A constructor to be applied to each object in the response. */
-  var `type`: js.UndefOr[ScalablyTyped.runtime.Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
+  var `type`: js.UndefOr[org.scalablytyped.runtime.Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
 }
 

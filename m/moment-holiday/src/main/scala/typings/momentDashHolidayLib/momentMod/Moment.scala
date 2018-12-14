@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Moment
   extends stdLib.Object {
-  def holiday(): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
-  def holiday(holidays: java.lang.String): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
-  def holiday(holidays: java.lang.String, adjust: scala.Boolean): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
-  def holiday(holidays: js.Array[java.lang.String]): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
-  def holiday(holidays: js.Array[java.lang.String], adjust: scala.Boolean): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
-  def holidays(): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
-  def holidays(holidays: java.lang.String): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
-  def holidays(holidays: java.lang.String, adjust: scala.Boolean): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
-  def holidays(holidays: js.Array[java.lang.String]): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
-  def holidays(holidays: js.Array[java.lang.String], adjust: scala.Boolean): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holiday(): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holiday(holidays: java.lang.String): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holiday(holidays: java.lang.String, adjust: scala.Boolean): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holiday(holidays: js.Array[java.lang.String]): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holiday(holidays: js.Array[java.lang.String], adjust: scala.Boolean): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holidays(): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holidays(holidays: java.lang.String): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holidays(holidays: java.lang.String, adjust: scala.Boolean): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holidays(holidays: js.Array[java.lang.String]): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
+  def holidays(holidays: js.Array[java.lang.String], adjust: scala.Boolean): momentLib.momentMod.momentNs.Moment | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[momentLib.momentMod.momentNs.Moment] = js.native
   def holidaysBetween(m: momentLib.momentMod.momentNs.Moment): js.Array[momentLib.momentMod.momentNs.Moment] | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` = js.native
   def holidaysBetween(m: momentLib.momentMod.momentNs.Moment, adjust: scala.Boolean): js.Array[momentLib.momentMod.momentNs.Moment] | momentDashHolidayLib.momentDashHolidayLibNumbers.`false` = js.native
   def isHoliday(): scala.Boolean | java.lang.String | js.Array[java.lang.String] = js.native

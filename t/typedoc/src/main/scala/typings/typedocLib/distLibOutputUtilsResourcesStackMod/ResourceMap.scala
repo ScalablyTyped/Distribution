@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ResourceMap[T /* <: Resource */]
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[T]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[T]
 

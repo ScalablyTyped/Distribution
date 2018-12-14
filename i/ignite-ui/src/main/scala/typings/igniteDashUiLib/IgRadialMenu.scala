@@ -10,7 +10,7 @@ trait IgRadialMenu
   extends /**
 	 * Option for igRadialMenu
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Returns or sets the background of the center button of the menu when the IsOpen property is false.
   	 */

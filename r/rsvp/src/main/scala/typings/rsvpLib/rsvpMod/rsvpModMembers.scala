@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("rsvp", JSImport.Namespace)
 @js.native
 object rsvpModMembers extends js.Object {
-  val EventTarget: ScalablyTyped.runtime.Instantiable0[rsvpLib.rsvpMod.RSVPNs.EventTarget] = js.native
-  val Promise: ScalablyTyped.runtime.Instantiable2[
+  val EventTarget: org.scalablytyped.runtime.Instantiable0[rsvpLib.rsvpMod.RSVPNs.EventTarget] = js.native
+  val Promise: org.scalablytyped.runtime.Instantiable2[
     /* executor */ js.Function2[
       /* resolve */ js.Function1[/* value */ js.UndefOr[rsvpLib.rsvpMod.RSVPNs.Arg[js.Object]], scala.Unit], 
       /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 

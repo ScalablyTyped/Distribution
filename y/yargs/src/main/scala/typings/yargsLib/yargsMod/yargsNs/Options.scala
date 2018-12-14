@@ -15,7 +15,7 @@ trait Options extends js.Object {
   var config: js.UndefOr[scala.Boolean] = js.undefined
   var configParser: js.UndefOr[js.Function1[/* configPath */ java.lang.String, js.Object]] = js.undefined
   var conflicts: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | (ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]])
+    java.lang.String | js.Array[java.lang.String] | (org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]])
   ] = js.undefined
   var count: js.UndefOr[scala.Boolean] = js.undefined
   var default: js.UndefOr[js.Any] = js.undefined
@@ -33,7 +33,7 @@ trait Options extends js.Object {
   var group: js.UndefOr[java.lang.String] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var implies: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | (ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]])
+    java.lang.String | js.Array[java.lang.String] | (org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]])
   ] = js.undefined
   var nargs: js.UndefOr[scala.Double] = js.undefined
   var normalize: js.UndefOr[scala.Boolean] = js.undefined

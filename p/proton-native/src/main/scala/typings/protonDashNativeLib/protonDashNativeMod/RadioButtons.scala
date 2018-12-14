@@ -13,6 +13,6 @@ class RadioButtons ()
 @JSImport("proton-native", "RadioButtons")
 @js.native
 object RadioButtons extends js.Object {
-  var Item: ScalablyTyped.runtime.Instantiable0[protonDashNativeLib.protonDashNativeMod.RadioButtonsItem] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[protonDashNativeLib.protonDashNativeMod.RadioButtonsItem] = js.native
 }
 

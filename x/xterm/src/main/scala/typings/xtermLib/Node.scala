@@ -153,7 +153,7 @@ trait Node extends EventTarget {
 @JSGlobal("Node")
 @js.native
 object Node
-  extends ScalablyTyped.runtime.Instantiable0[Node] {
+  extends org.scalablytyped.runtime.Instantiable0[Node] {
   val ATTRIBUTE_NODE: scala.Double = js.native
   val CDATA_SECTION_NODE: scala.Double = js.native
   val COMMENT_NODE: scala.Double = js.native

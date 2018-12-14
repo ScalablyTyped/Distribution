@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WriterConstructor
-  extends ScalablyTyped.runtime.Instantiable0[N3Writer[rdfDashJsLib.rdfDashJsMod.BaseQuad]]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[N3Writer[rdfDashJsLib.rdfDashJsMod.BaseQuad]]
+     with org.scalablytyped.runtime.Instantiable2[
       /* fd */ js.Any, 
       /* options */ WriterOptions, 
       N3Writer[rdfDashJsLib.rdfDashJsMod.BaseQuad]
     ]
-     with ScalablyTyped.runtime.Instantiable1[
+     with org.scalablytyped.runtime.Instantiable1[
       (/* options */ WriterOptions) | (/* fd */ js.Any), 
       N3Writer[rdfDashJsLib.rdfDashJsMod.BaseQuad]
     ] {

@@ -31,7 +31,7 @@ object distGenerateModMembers extends js.Object {
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native
   def addSchemaLevelResolveFunction(
     schema: graphqlLib.graphqlMod.GraphQLSchema,
-    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Unit = js.native
   def assertResolveFunctionsPresent(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native
   def assertResolveFunctionsPresent(
@@ -49,11 +49,11 @@ object distGenerateModMembers extends js.Object {
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native
   def chainResolvers(
     resolvers: js.Array[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ): js.Function4[
     /* root */ js.Any, 
-    /* args */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* args */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* ctx */ js.Any, 
     /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
     _
@@ -66,15 +66,15 @@ object distGenerateModMembers extends js.Object {
     calledFunctionRefs: js.Any
   ): java.lang.String = js.native
   def decorateWithLogger(
-    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]],
+    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     logger: graphqlDashToolsLib.distInterfacesMod.ILogger,
     hint: java.lang.String
-  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def decorateWithLogger(
     fn: js.UndefOr[scala.Nothing],
     logger: graphqlDashToolsLib.distInterfacesMod.ILogger,
     hint: java.lang.String
-  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def extendResolversFromInterfaces(
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     resolvers: graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]

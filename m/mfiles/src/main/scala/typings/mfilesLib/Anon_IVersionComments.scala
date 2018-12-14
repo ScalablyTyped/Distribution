@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IVersionComments
-  extends ScalablyTyped.runtime.Instantiable0[IVersionComments]
+  extends org.scalablytyped.runtime.Instantiable0[IVersionComments]
 

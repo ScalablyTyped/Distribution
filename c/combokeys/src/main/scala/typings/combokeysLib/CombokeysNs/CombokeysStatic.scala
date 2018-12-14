@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CombokeysStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* element */ stdLib.Element, Combokeys] {
+  extends org.scalablytyped.runtime.Instantiable1[/* element */ stdLib.Element, Combokeys] {
   /**
            * all instances of Combokeys
            */

@@ -19,5 +19,5 @@ trait Screen extends js.Object {
 @JSGlobal("Screen")
 @js.native
 object Screen
-  extends ScalablyTyped.runtime.Instantiable0[Screen]
+  extends org.scalablytyped.runtime.Instantiable0[Screen]
 

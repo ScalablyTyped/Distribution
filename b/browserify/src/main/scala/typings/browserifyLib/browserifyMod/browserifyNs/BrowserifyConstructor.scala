@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BrowserifyConstructor
-  extends ScalablyTyped.runtime.Instantiable0[BrowserifyObject]
-     with ScalablyTyped.runtime.Instantiable1[
-      (/* files */ js.Array[InputFile]) | (/* file */ InputFile) | (/* opts */ Options), 
-      BrowserifyObject
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[BrowserifyObject]
+     with org.scalablytyped.runtime.Instantiable2[
       (/* files */ js.Array[InputFile]) | (/* file */ InputFile), 
       /* opts */ Options, 
+      BrowserifyObject
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* files */ js.Array[InputFile]) | (/* file */ InputFile) | (/* opts */ Options), 
       BrowserifyObject
     ] {
   def apply(): BrowserifyObject = js.native

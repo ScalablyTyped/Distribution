@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Options
-  extends /* plugin_name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* plugin_name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   // Action cache. Makes inbound messages idempotent.
   var actcache: js.UndefOr[senecaLib.Anon_Active] = js.undefined
   // Default seneca-admin settings.

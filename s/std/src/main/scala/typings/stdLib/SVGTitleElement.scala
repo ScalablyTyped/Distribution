@@ -11,5 +11,5 @@ trait SVGTitleElement extends SVGElement
 @JSGlobal("SVGTitleElement")
 @js.native
 object SVGTitleElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGTitleElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGTitleElement]
 

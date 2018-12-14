@@ -11,7 +11,7 @@ trait Source
      * A matching name to the type with extra information about the payment method
      * @see type
      */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * A positive integer in the smallest currency unit (that is, 100 cents for $1.00,
        * or 1 for ¥1, Japanese Yen being a zero-decimal currency) representing the total
@@ -54,7 +54,7 @@ trait Source
   /**
        * Your own saved information with this bank account
        */
-  var metadata: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var metadata: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var `object`: stripejsLib.stripejsLibStrings.source
   /**
        * Information about the owner of the payment instrument that may be used or

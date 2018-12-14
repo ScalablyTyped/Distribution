@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait RouterLike
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
-     with /* key */ ScalablyTyped.runtime.NumberDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
+     with /* key */ org.scalablytyped.runtime.NumberDictionary[js.Any] {
   var get: expressLib.expressMod.eNs.IRouterMatcher[this.type]
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("check-more-types", JSImport.Namespace)
 @js.native
 object checkDashMoreDashTypesModMembers
-  extends ScalablyTyped.runtime.TopLevel[CheckModeTypes]
+  extends org.scalablytyped.runtime.TopLevel[CheckModeTypes]
 

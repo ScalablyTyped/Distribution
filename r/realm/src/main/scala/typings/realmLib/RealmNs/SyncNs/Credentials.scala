@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Credentials () extends js.Object {
   val identityProvider: java.lang.String = js.native
   val token: java.lang.String = js.native
-  val userInfo: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  val userInfo: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
 @JSGlobal("Realm.Sync.Credentials")
@@ -23,7 +23,7 @@ object Credentials extends js.Object {
   def custom(
     providerName: java.lang.String,
     token: java.lang.String,
-    userInfo: ScalablyTyped.runtime.StringDictionary[js.Any]
+    userInfo: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): realmLib.RealmNs.SyncNs.Credentials = js.native
   def facebook(token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
   def google(token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native

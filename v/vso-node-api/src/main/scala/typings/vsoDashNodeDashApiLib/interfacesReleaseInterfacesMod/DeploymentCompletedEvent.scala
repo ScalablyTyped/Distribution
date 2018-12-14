@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait DeploymentCompletedEvent extends js.Object {
   var comment: java.lang.String
-  var data: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var data: org.scalablytyped.runtime.StringDictionary[js.Any]
   var deployment: Deployment
   var environment: ReleaseEnvironment
   var project: ProjectReference

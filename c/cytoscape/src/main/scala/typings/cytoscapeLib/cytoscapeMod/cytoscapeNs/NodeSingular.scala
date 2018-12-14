@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
          *
          * @param index The index of the element to get.
          * /
-/ * index * / ScalablyTyped.runtime.NumberDictionary[cytoscapeLib.cytoscapeMod.cytoscapeNs.NodeSingular])*/
+/ * index * / org.scalablytyped.runtime.NumberDictionary[cytoscapeLib.cytoscapeMod.cytoscapeNs.NodeSingular])*/
 @js.native
 trait NodeSingular
   extends Singular[NodeSingular, NodeSingular]

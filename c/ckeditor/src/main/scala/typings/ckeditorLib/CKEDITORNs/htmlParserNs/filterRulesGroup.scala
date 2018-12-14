@@ -11,7 +11,7 @@ class filterRulesGroup () extends js.Object {
   var rules: js.Array[ckeditorLib.Anon_Value] = js.native
   def add(rule: rule, priority: scala.Double, options: ruleOptions): scala.Unit = js.native
   def addMany(
-    rules: js.Array[ScalablyTyped.runtime.StringDictionary[_]],
+    rules: js.Array[org.scalablytyped.runtime.StringDictionary[_]],
     priority: scala.Double,
     options: ruleOptions
   ): scala.Unit = js.native

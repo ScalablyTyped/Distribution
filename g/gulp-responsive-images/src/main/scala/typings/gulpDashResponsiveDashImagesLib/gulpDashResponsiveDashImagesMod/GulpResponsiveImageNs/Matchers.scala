@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Matchers
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Array[Settings]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Array[Settings]]
 

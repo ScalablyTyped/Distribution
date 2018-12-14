@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hammerjs", JSImport.Namespace)
 @js.native
 object hammerjsMod
-  extends ScalablyTyped.runtime.TopLevel[HammerStatic]
+  extends org.scalablytyped.runtime.TopLevel[HammerStatic]
 

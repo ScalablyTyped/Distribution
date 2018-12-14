@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class Tapable () extends js.Object {
   /** @deprecated Private internals. Do not use directly */
   var _pluginCompat: Hook[_, _, _, _, _] = js.native
-  var _plugins: ScalablyTyped.runtime.StringDictionary[js.Array[tapableLib.tapableMod.TapableNs.Handler]] = js.native
+  var _plugins: org.scalablytyped.runtime.StringDictionary[js.Array[tapableLib.tapableMod.TapableNs.Handler]] = js.native
   /**
        * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
        * invoke all plugins with this attached.

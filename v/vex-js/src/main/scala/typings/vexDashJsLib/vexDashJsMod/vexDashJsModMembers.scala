@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("vex-js", JSImport.Namespace)
 @js.native
 object vexDashJsModMembers
-  extends ScalablyTyped.runtime.TopLevel[vexDashJsLib.vexDashJsMod.vexNs.Vex]
+  extends org.scalablytyped.runtime.TopLevel[vexDashJsLib.vexDashJsMod.vexNs.Vex]
 

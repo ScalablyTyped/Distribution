@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait APIConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* apiName */ java.lang.String, API]
+  extends org.scalablytyped.runtime.Instantiable1[/* apiName */ java.lang.String, API]
 

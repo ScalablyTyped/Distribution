@@ -78,7 +78,7 @@ trait RiotRoute extends js.Object {
        * This is an utility function to extract the query from the url.
        * @since v2.3
        */
-  def query(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def query(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
        * Start listening the url changes
        * and also exec routing on the current url.

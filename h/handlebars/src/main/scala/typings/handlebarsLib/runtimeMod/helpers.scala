@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("handlebars/runtime", "helpers")
 @js.native
 object helpers
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[handlebarsLib.HandlebarsNs.HelperDelegate]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[handlebarsLib.HandlebarsNs.HelperDelegate]
 

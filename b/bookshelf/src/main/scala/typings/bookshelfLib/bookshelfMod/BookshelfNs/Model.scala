@@ -91,14 +91,14 @@ trait Model[T /* <: Model[_] */] extends ModelBase[T] {
   // Declaration order matters otherwise TypeScript gets confused between query() and query(...query: string[])
   def query(): knexLib.knexMod.KnexNs.QueryBuilder = js.native
   def query(callback: js.Function1[/* qb */ knexLib.knexMod.KnexNs.QueryBuilder, scala.Unit]): T = js.native
-  def query(query: ScalablyTyped.runtime.StringDictionary[js.Any]): T = js.native
   def query(query: java.lang.String*): T = js.native
+  def query(query: org.scalablytyped.runtime.StringDictionary[js.Any]): T = js.native
   def refresh(): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def refresh(options: FetchOptions): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def resetQuery(): T = js.native
   def save(): bluebirdLib.bluebirdMod.namespaced[T] = js.native
-  def save(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
-  def save(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], options: SaveOptions): bluebirdLib.bluebirdMod.namespaced[T] = js.native
+  def save(attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): bluebirdLib.bluebirdMod.namespaced[T] = js.native
+  def save(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], options: SaveOptions): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def save(key: java.lang.String): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def save(key: java.lang.String, `val`: js.Any): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def save(key: java.lang.String, `val`: js.Any, options: SaveOptions): bluebirdLib.bluebirdMod.namespaced[T] = js.native
@@ -132,6 +132,6 @@ trait Model[T /* <: Model[_] */] extends ModelBase[T] {
   ): T = js.native
   def where(key: java.lang.String, operatorOrValue: scala.Double, valueIfOperator: scala.Boolean): T = js.native
   def where(key: java.lang.String, operatorOrValue: scala.Double, valueIfOperator: scala.Double): T = js.native
-  def where(properties: ScalablyTyped.runtime.StringDictionary[js.Any]): T = js.native
+  def where(properties: org.scalablytyped.runtime.StringDictionary[js.Any]): T = js.native
 }
 

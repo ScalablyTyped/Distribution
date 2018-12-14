@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 // http://docs.couchdb.org/en/latest/api/database/find.html#selector-syntax
 
 trait MangoSelector
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[MangoSelector | MangoValue | js.Array[MangoValue]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[MangoSelector | MangoValue | js.Array[MangoValue]]
 

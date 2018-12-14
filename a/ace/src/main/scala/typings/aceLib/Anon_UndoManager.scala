@@ -10,5 +10,5 @@ trait Anon_UndoManager
   extends /**
          * Resets the current undo state and creates a new `UndoManager`.
         **/
-ScalablyTyped.runtime.Instantiable0[aceLib.AceAjaxNs.UndoManager]
+org.scalablytyped.runtime.Instantiable0[aceLib.AceAjaxNs.UndoManager]
 

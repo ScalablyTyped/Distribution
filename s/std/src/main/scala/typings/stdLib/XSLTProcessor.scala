@@ -20,5 +20,5 @@ trait XSLTProcessor extends js.Object {
 @JSGlobal("XSLTProcessor")
 @js.native
 object XSLTProcessor
-  extends ScalablyTyped.runtime.Instantiable0[XSLTProcessor]
+  extends org.scalablytyped.runtime.Instantiable0[XSLTProcessor]
 

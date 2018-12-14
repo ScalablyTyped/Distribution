@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CSSSupportsRule")
 @js.native
 object CSSSupportsRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSSupportsRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSSupportsRule]
 

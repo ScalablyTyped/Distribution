@@ -18,7 +18,7 @@ object AndroidSDK extends js.Object {
   var DEFAULT_API_LEVELS: java.lang.String = js.native
   var DEFAULT_ARCHITECTURES: java.lang.String = js.native
   var DEFAULT_PLATFORMS: java.lang.String = js.native
-  var VERSIONS: ScalablyTyped.runtime.NumberDictionary[java.lang.String] = js.native
+  var VERSIONS: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = js.native
   var id: java.lang.String = js.native
   var isDefault: scala.Boolean = js.native
   var os: js.Array[webdriverDashManagerLib.builtLibBinariesBinaryMod.OS] = js.native

@@ -31,11 +31,11 @@ trait RavenOptions extends js.Object {
   var environment: js.UndefOr[java.lang.String] = js.undefined
   var extra: js.UndefOr[js.Any] = js.undefined
   /** `fetch` init parameters */
-  var fetchParameters: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Function]] = js.undefined
+  var fetchParameters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Function]] = js.undefined
   /** In some cases you may see issues where Sentry groups multiple events together when they should be separate entities. In other cases, Sentry simply doesn’t group events together because they’re so sporadic that they never look the same. */
   var fingerprint: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Append headers to the fetch or XMLHttpRequest request. Should be in a form of hash, were value can be string or function */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Function]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Function]] = js.undefined
   /** List of messages to be filtered out before being sent to Sentry. */
   var ignoreErrors: js.UndefOr[js.Array[stdLib.RegExp | java.lang.String]] = js.undefined
   /** Similar to ignoreErrors, but will ignore errors from whole urls patching a regex pattern. */
@@ -69,7 +69,7 @@ trait RavenOptions extends js.Object {
   /** set to true to get the stack trace of your message */
   var stacktrace: js.UndefOr[scala.Boolean] = js.undefined
   /** Additional data to be tagged onto the error. */
-  var tags: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** Override the default HTTP data transport handler. */
   var transport: js.UndefOr[js.Function1[/* options */ RavenTransportOptions, scala.Unit]] = js.undefined
   /** The inverse of ignoreUrls. Only report errors from whole urls matching a regex pattern. */

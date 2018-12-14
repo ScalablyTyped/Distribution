@@ -10,5 +10,5 @@ trait HierarchicalDataSourceSettingsSchema
   extends /**
 	 * Option for HierarchicalDataSourceSettingsSchema
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

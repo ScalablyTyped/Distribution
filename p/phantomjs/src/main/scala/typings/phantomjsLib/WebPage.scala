@@ -13,7 +13,7 @@ trait WebPage extends js.Object {
   var clipRect: ClipRect = js.native
   var content: java.lang.String = js.native
   var cookies: js.Array[Cookie] = js.native
-  var customHeaders: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var customHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var event: js.Any = js.native
    // :TODO: elaborate this when documentation improves
   var focusedFrameName: java.lang.String = js.native

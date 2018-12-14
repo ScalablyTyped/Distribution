@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Args
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
-  var options: ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  var options: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

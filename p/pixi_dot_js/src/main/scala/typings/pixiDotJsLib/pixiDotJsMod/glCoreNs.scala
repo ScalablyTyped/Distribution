@@ -39,10 +39,10 @@ object glCoreNs extends js.Object {
     def this(gl: stdLib.WebGLRenderingContext, vertexSrc: java.lang.String, fragmentSrc: js.Array[java.lang.String], precision: java.lang.String) = this()
     def this(gl: stdLib.WebGLRenderingContext, vertexSrc: js.Array[java.lang.String], fragmentSrc: java.lang.String, precision: java.lang.String) = this()
     def this(gl: stdLib.WebGLRenderingContext, vertexSrc: js.Array[java.lang.String], fragmentSrc: js.Array[java.lang.String], precision: java.lang.String) = this()
-    def this(gl: stdLib.WebGLRenderingContext, vertexSrc: java.lang.String, fragmentSrc: java.lang.String, precision: java.lang.String, attributeLocations: ScalablyTyped.runtime.StringDictionary[scala.Double]) = this()
-    def this(gl: stdLib.WebGLRenderingContext, vertexSrc: java.lang.String, fragmentSrc: js.Array[java.lang.String], precision: java.lang.String, attributeLocations: ScalablyTyped.runtime.StringDictionary[scala.Double]) = this()
-    def this(gl: stdLib.WebGLRenderingContext, vertexSrc: js.Array[java.lang.String], fragmentSrc: java.lang.String, precision: java.lang.String, attributeLocations: ScalablyTyped.runtime.StringDictionary[scala.Double]) = this()
-    def this(gl: stdLib.WebGLRenderingContext, vertexSrc: js.Array[java.lang.String], fragmentSrc: js.Array[java.lang.String], precision: java.lang.String, attributeLocations: ScalablyTyped.runtime.StringDictionary[scala.Double]) = this()
+    def this(gl: stdLib.WebGLRenderingContext, vertexSrc: java.lang.String, fragmentSrc: java.lang.String, precision: java.lang.String, attributeLocations: org.scalablytyped.runtime.StringDictionary[scala.Double]) = this()
+    def this(gl: stdLib.WebGLRenderingContext, vertexSrc: java.lang.String, fragmentSrc: js.Array[java.lang.String], precision: java.lang.String, attributeLocations: org.scalablytyped.runtime.StringDictionary[scala.Double]) = this()
+    def this(gl: stdLib.WebGLRenderingContext, vertexSrc: js.Array[java.lang.String], fragmentSrc: java.lang.String, precision: java.lang.String, attributeLocations: org.scalablytyped.runtime.StringDictionary[scala.Double]) = this()
+    def this(gl: stdLib.WebGLRenderingContext, vertexSrc: js.Array[java.lang.String], fragmentSrc: js.Array[java.lang.String], precision: java.lang.String, attributeLocations: org.scalablytyped.runtime.StringDictionary[scala.Double]) = this()
   }
   
   @js.native

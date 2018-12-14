@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ErrorMap
-  extends /* errorCode */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* errorCode */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

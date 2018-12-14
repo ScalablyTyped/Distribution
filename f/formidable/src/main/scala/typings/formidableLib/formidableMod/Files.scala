@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Files
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[File]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[File]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait AssetMap
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.assetAssetMod.Asset | Archive]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.assetAssetMod.Asset | Archive]
 

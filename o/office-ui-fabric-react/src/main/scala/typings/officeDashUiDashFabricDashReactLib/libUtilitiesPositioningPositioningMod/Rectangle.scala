@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class Rectangle ()
   extends officeDashUiDashFabricDashReactLib.libUtilitiesMod.Rectangle
-     with /* key */ ScalablyTyped.runtime.StringDictionary[scala.Double | scala.Boolean | js.Any]
+     with /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double | scala.Boolean | js.Any]
 

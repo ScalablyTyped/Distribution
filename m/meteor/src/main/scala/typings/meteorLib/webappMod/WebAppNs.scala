@@ -17,7 +17,7 @@ object WebAppNs extends js.Object {
   def suppressConnectErrors(): scala.Unit = js.native
   @js.native
   object clientPrograms
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[meteorLib.Anon_Format]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[meteorLib.Anon_Format]
   
 }
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class AddArgumentsAsVariables protected ()
   extends apolloDashServerLib.distExportsMod.AddArgumentsAsVariables {
-  def this(schema: graphqlLib.graphqlMod.GraphQLSchema, args: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(schema: graphqlLib.graphqlMod.GraphQLSchema, args: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 

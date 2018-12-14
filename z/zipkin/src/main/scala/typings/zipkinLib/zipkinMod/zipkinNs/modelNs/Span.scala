@@ -17,7 +17,7 @@ trait Span extends js.Object {
   val parentId: js.UndefOr[java.lang.String] = js.undefined
   val remoteEndpoint: js.UndefOr[Endpoint] = js.undefined
   val shared: scala.Boolean
-  val tags: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val tags: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   val timestamp: js.UndefOr[scala.Double] = js.undefined
   val traceId: java.lang.String
   def addAnnotation(timestamp: scala.Double, value: java.lang.String): scala.Unit

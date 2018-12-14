@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class PropertyBinding protected () extends js.Object {
   def this(rootNode: js.Any, path: java.lang.String) = this()
   def this(rootNode: js.Any, path: java.lang.String, parsedPath: js.Any) = this()
-  var BindingType: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var BindingType: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   var GetterByBindingType: js.Array[js.Function] = js.native
   var SetterByBindingTypeAndVersioning: js.Array[js.Array[js.Function]] = js.native
-  var Versioning: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var Versioning: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   var node: js.Any = js.native
   var parsedPath: js.Any = js.native
   var path: java.lang.String = js.native

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BaseAdapter[SchemaT]
   extends AdapterOptions[SchemaT]
-     with ScalablyTyped.runtime.Instantiable1[/* source */ java.lang.String, BaseAdapter[js.Object]]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable1[/* source */ java.lang.String, BaseAdapter[js.Object]]
+     with org.scalablytyped.runtime.Instantiable2[
       /* source */ java.lang.String, 
       /* options */ AdapterOptions[js.Object], 
       BaseAdapter[js.Object]

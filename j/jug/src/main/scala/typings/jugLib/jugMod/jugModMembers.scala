@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("jug", JSImport.Namespace)
 @js.native
 object jugModMembers
-  extends ScalablyTyped.runtime.TopLevel[Graph]
+  extends org.scalablytyped.runtime.TopLevel[Graph]
 

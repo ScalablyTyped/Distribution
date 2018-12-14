@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SQSMessageAttributes
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[SQSMessageAttribute]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[SQSMessageAttribute]
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PinchRecognizerStatic
-  extends ScalablyTyped.runtime.Instantiable0[PinchRecognizer]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ RecognizerOptions, PinchRecognizer]
+  extends org.scalablytyped.runtime.Instantiable0[PinchRecognizer]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ RecognizerOptions, PinchRecognizer]
 

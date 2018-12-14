@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait request extends js.Object {
-  var response: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var response: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var task: ckeditorLib.CKEDITORNs.pluginsNs.notificationAggregatorNs.task
   var url: java.lang.String
   def callback(): scala.Unit

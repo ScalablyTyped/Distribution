@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait MimeTypeArray
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Plugin] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Plugin] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Plugin]]
   val length: scala.Double
   def item(index: scala.Double): Plugin
@@ -18,5 +18,5 @@ trait MimeTypeArray
 @JSGlobal("MimeTypeArray")
 @js.native
 object MimeTypeArray
-  extends ScalablyTyped.runtime.Instantiable0[MimeTypeArray]
+  extends org.scalablytyped.runtime.Instantiable0[MimeTypeArray]
 

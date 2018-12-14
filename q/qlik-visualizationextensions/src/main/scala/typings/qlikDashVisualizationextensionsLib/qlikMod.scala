@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("qlik", JSImport.Namespace)
 @js.native
 object qlikMod
-  extends ScalablyTyped.runtime.TopLevel[qlikDashVisualizationextensionsLib.RootAPINs.IRoot]
+  extends org.scalablytyped.runtime.TopLevel[qlikDashVisualizationextensionsLib.RootAPINs.IRoot]
 

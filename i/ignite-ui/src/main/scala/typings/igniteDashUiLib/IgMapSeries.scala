@@ -10,7 +10,7 @@ trait IgMapSeries
   extends /**
 	 * Option for IgMapSeries
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets the x-radius of the ellipse that is used to round the corners of the column.
   	 */

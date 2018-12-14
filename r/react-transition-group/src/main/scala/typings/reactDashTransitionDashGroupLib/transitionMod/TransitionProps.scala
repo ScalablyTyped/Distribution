@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait TransitionProps
   extends TransitionActions
-     with /* prop */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var addEndListener: js.UndefOr[EndHandler] = js.undefined
   var children: js.UndefOr[TransitionChildren] = js.undefined
   var in: js.UndefOr[scala.Boolean] = js.undefined

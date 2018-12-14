@@ -20,6 +20,6 @@ trait IGrowlMessageConfig extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
   var translateMessage: js.UndefOr[scala.Boolean] = js.undefined
   var ttl: js.UndefOr[scala.Double] = js.undefined
-  var variables: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("ua-parser-js", JSImport.Namespace)
 @js.native
 object uaDashParserDashJsModMembers
-  extends ScalablyTyped.runtime.TopLevel[
-      (ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.TopLevel[
+      (org.scalablytyped.runtime.Instantiable2[
         /* uastring */ js.UndefOr[/* uastring */ java.lang.String], 
         /* extensions */ js.UndefOr[/* extensions */ js.Any], 
         UAParser

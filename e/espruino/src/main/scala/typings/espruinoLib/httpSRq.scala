@@ -16,7 +16,7 @@ trait httpSRq
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[httpSRq] {
+org.scalablytyped.runtime.Instantiable0[httpSRq] {
   /**
        * <p>Return how many bytes are available to read. If there is already a listener for data, this will always return 0.</p>
        * 

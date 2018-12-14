@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Sys.Services.ProfileService")
 @js.native
 class ProfileService ()
-  extends ScalablyTyped.runtime.Instantiable0[ProfileService]
+  extends org.scalablytyped.runtime.Instantiable0[ProfileService]
 
 /**
         * Provides the client proxy class for the profile service.

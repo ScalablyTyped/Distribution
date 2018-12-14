@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IPCheckConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* input */ java.lang.String, IPCheck]
+  extends org.scalablytyped.runtime.Instantiable1[/* input */ java.lang.String, IPCheck]
 

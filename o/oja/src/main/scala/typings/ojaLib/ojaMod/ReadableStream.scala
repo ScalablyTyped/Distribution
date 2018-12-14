@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReadableStream ()
   extends nodeLib.streamMod.Readable
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* topic */ java.lang.String, 
       /* emitter */ nodeLib.eventsMod.EventEmitter, 
       ReadableStream

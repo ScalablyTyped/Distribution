@@ -61,7 +61,7 @@ object U extends js.Object {
   /** Concatenates two URL fragments and returns resulting URL */
   def concatUrl(firstPart: java.lang.String, secondPart: java.lang.String): java.lang.String = js.native
   /** Returns copy of the passed source dictionary */
-  def copyDictionary(source: ScalablyTyped.runtime.StringDictionary[js.Any]): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def copyDictionary(source: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /** Copies the specified string to clipboard, if possible */
   def copyLink(link: java.lang.String): scala.Unit = js.native
   def createBehavior(id: java.lang.String, `type`: js.Any, properties: js.Any, targetElementId: java.lang.String): js.Any = js.native
@@ -227,7 +227,7 @@ object U extends js.Object {
             */
   def registerRenderTemplateByName(name: java.lang.String, templateFunction: sharepointLib.SrchNs.RenderFunction): scala.Unit = js.native
   /** Registers in system resources defined by the dictionary object */
-  def registerResourceDictionary(locale: java.lang.String, dict: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def registerResourceDictionary(locale: java.lang.String, dict: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
   /** Removes the specified item from the specified array and returns array that has the deleted item */
   def removeArray(array: js.Array[_], item: js.Any): js.Array[_] = js.native
   /** Same as $removeHandler with safety checks */

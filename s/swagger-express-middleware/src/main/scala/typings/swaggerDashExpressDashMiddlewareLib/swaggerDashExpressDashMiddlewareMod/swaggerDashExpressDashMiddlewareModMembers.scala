@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("swagger-express-middleware", JSImport.Namespace)
 @js.native
 object swaggerDashExpressDashMiddlewareModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       swaggerDashExpressDashMiddlewareLib.swaggerDashExpressDashMiddlewareMod.sNs.SwaggerMiddlewareConstructor
     ]
 

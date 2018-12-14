@@ -19,7 +19,7 @@ trait LinkifyOptions extends js.Object {
        * (e.g., 'url', 'email', etc.) and returns the object.
        */
   var attributes: js.UndefOr[
-    PossiblyFuncOfHrefAndType[ScalablyTyped.runtime.StringDictionary[java.lang.String]] | scala.Null
+    PossiblyFuncOfHrefAndType[org.scalablytyped.runtime.StringDictionary[java.lang.String]] | scala.Null
   ] = js.undefined
   /**
        * className
@@ -63,7 +63,7 @@ trait LinkifyOptions extends js.Object {
        * See the React Event docs and the linkify-react event docs
        */
   var events: js.UndefOr[
-    PossiblyFuncOfHrefAndType[ScalablyTyped.runtime.StringDictionary[EventHandler]] | scala.Null
+    PossiblyFuncOfHrefAndType[org.scalablytyped.runtime.StringDictionary[EventHandler]] | scala.Null
   ] = js.undefined
   /**
        * format

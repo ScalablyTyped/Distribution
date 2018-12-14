@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ControllerParameterMetadata
-  extends /* methodName */ ScalablyTyped.runtime.StringDictionary[js.Array[ParameterMetadata]]
+  extends /* methodName */ org.scalablytyped.runtime.StringDictionary[js.Array[ParameterMetadata]]
 

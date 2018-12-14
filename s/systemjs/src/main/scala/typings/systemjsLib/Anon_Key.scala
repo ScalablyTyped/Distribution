@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Key
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
                * A boolean flag which instructs the plugin to load configuration from "tsconfig.json".
                * To override the location of the file set this option to the path of the configuration file,

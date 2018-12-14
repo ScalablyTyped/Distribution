@@ -445,7 +445,7 @@ object CloudSearchNs extends js.Object {
   
   
   trait DomainNameMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[APIVersion]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[APIVersion]
   
   
   trait DomainStatus extends js.Object {

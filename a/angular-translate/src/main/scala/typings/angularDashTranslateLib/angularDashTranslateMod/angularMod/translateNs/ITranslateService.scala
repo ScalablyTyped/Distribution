@@ -31,26 +31,26 @@ trait ITranslateService extends js.Object {
     forceLanguage: java.lang.String,
     sanitizeStrategy: java.lang.String
   ): angularLib.angularMod.angularNs.IPromise[java.lang.String] = js.native
-  def apply(translationId: js.Array[java.lang.String]): angularLib.angularMod.angularNs.IPromise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
-  def apply(translationId: js.Array[java.lang.String], interpolateParams: js.Any): angularLib.angularMod.angularNs.IPromise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  def apply(translationId: js.Array[java.lang.String]): angularLib.angularMod.angularNs.IPromise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+  def apply(translationId: js.Array[java.lang.String], interpolateParams: js.Any): angularLib.angularMod.angularNs.IPromise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def apply(
     translationId: js.Array[java.lang.String],
     interpolateParams: js.Any,
     interpolationId: java.lang.String
-  ): angularLib.angularMod.angularNs.IPromise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  ): angularLib.angularMod.angularNs.IPromise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def apply(
     translationId: js.Array[java.lang.String],
     interpolateParams: js.Any,
     interpolationId: java.lang.String,
     defaultTranslationText: java.lang.String
-  ): angularLib.angularMod.angularNs.IPromise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  ): angularLib.angularMod.angularNs.IPromise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def apply(
     translationId: js.Array[java.lang.String],
     interpolateParams: js.Any,
     interpolationId: java.lang.String,
     defaultTranslationText: java.lang.String,
     forceLanguage: java.lang.String
-  ): angularLib.angularMod.angularNs.IPromise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  ): angularLib.angularMod.angularNs.IPromise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def apply(
     translationId: js.Array[java.lang.String],
     interpolateParams: js.Any,
@@ -58,7 +58,7 @@ trait ITranslateService extends js.Object {
     defaultTranslationText: java.lang.String,
     forceLanguage: java.lang.String,
     sanitizeStrategy: java.lang.String
-  ): angularLib.angularMod.angularNs.IPromise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  ): angularLib.angularMod.angularNs.IPromise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def cloakClassName(): java.lang.String = js.native
   def cloakClassName(name: java.lang.String): ITranslateProvider = js.native
   def fallbackLanguage(): java.lang.String = js.native
@@ -81,26 +81,26 @@ trait ITranslateService extends js.Object {
     forceLanguage: java.lang.String,
     sanitizeStrategy: java.lang.String
   ): java.lang.String = js.native
-  def instant(translationId: js.Array[java.lang.String]): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
-  def instant(translationId: js.Array[java.lang.String], interpolateParams: js.Any): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def instant(translationId: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+  def instant(translationId: js.Array[java.lang.String], interpolateParams: js.Any): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def instant(
     translationId: js.Array[java.lang.String],
     interpolateParams: js.Any,
     interpolationId: java.lang.String
-  ): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def instant(
     translationId: js.Array[java.lang.String],
     interpolateParams: js.Any,
     interpolationId: java.lang.String,
     forceLanguage: java.lang.String
-  ): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def instant(
     translationId: js.Array[java.lang.String],
     interpolateParams: js.Any,
     interpolationId: java.lang.String,
     forceLanguage: java.lang.String,
     sanitizeStrategy: java.lang.String
-  ): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def isPostCompilingEnabled(): scala.Boolean = js.native
   def isReady(): scala.Boolean = js.native
   def loaderCache(): js.Any = js.native

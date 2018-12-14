@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IShepherdTour
-  extends ScalablyTyped.runtime.Instantiable0[IShepherdTour]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ IShepherdTourOptions, IShepherdTour] {
+  extends org.scalablytyped.runtime.Instantiable0[IShepherdTour]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ IShepherdTourOptions, IShepherdTour] {
   def addStep(id: java.lang.String, options: IShepherdTourStep): IShepherdTour = js.native
   /**
            * Creates a new Step object with options, and returns the Tour object for convenient chaining when creating multiple steps. If you'd like you can also just pass an options hash which includes id as a key. If the options hash doesn't include an id, one will be generated. You can also pass an existing Step instance rather than options, but note that Shepherd does not support a Step being attached to multiple Tours.

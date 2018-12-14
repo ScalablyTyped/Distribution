@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("markdown-it", JSImport.Namespace)
 @js.native
 object markdownDashItModMembers
-  extends ScalablyTyped.runtime.TopLevel[markdownDashItLib.libMod.MarkdownItConstructor]
+  extends org.scalablytyped.runtime.TopLevel[markdownDashItLib.libMod.MarkdownItConstructor]
 

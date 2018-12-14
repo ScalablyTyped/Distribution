@@ -19,7 +19,7 @@ trait InjectedFormProps[FormData, P, ErrorType] extends js.Object {
   var initialized: scala.Boolean = js.native
   var invalid: scala.Boolean = js.native
   var pristine: scala.Boolean = js.native
-  var registeredFields: ScalablyTyped.runtime.StringDictionary[RegisteredField] = js.native
+  var registeredFields: org.scalablytyped.runtime.StringDictionary[RegisteredField] = js.native
   var submitFailed: scala.Boolean = js.native
   var submitSucceeded: scala.Boolean = js.native
   var submitting: scala.Boolean = js.native

@@ -14,7 +14,7 @@ trait RTCCertificate extends js.Object {
 @JSGlobal("RTCCertificate")
 @js.native
 object RTCCertificate
-  extends ScalablyTyped.runtime.Instantiable0[RTCCertificate] {
+  extends org.scalablytyped.runtime.Instantiable0[RTCCertificate] {
   def getSupportedAlgorithms(): js.Array[xtermLib.AlgorithmIdentifier] = js.native
 }
 

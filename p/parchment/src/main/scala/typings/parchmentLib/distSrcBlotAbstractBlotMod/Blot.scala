@@ -26,10 +26,10 @@ trait Blot
   def isolate(index: scala.Double, length: scala.Double): Blot = js.native
   def offset(): scala.Double = js.native
   def offset(root: Blot): scala.Double = js.native
-  def optimize(context: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def optimize(context: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def optimize(
     mutations: js.Array[stdLib.MutationRecord],
-    context: ScalablyTyped.runtime.StringDictionary[js.Any]
+    context: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def remove(): scala.Unit = js.native
   def replace(target: Blot): scala.Unit = js.native
@@ -39,7 +39,7 @@ trait Blot
   def split(index: scala.Double, force: scala.Boolean): Blot = js.native
   def update(
     mutations: js.Array[stdLib.MutationRecord],
-    context: ScalablyTyped.runtime.StringDictionary[js.Any]
+    context: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def wrap(name: java.lang.String, value: js.Any): Parent = js.native
   def wrap(wrapper: Parent): Parent = js.native

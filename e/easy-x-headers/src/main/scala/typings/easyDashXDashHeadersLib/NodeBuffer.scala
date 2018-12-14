@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait NodeBuffer
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[scala.Double] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[scala.Double] {
   var length: scala.Double = js.native
   def compare(otherBuffer: Buffer): scala.Double = js.native
   def copy(targetBuffer: Buffer): scala.Double = js.native

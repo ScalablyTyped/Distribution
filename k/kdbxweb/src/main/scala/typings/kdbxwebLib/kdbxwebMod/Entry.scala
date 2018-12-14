@@ -12,7 +12,7 @@ class Entry () extends js.Object {
   var bgColor: StringProtected = js.native
   var customIcon: KdbxUuid = js.native
   var fgColor: StringProtected = js.native
-  var fields: ScalablyTyped.runtime.StringDictionary[StringProtected] = js.native
+  var fields: org.scalablytyped.runtime.StringDictionary[StringProtected] = js.native
   var history: js.Array[Entry] = js.native
   var icon: scala.Double = js.native
   var overrideUrl: StringProtected = js.native

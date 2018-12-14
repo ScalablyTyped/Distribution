@@ -52,7 +52,7 @@ trait Range extends AbstractRange {
 @JSGlobal("Range")
 @js.native
 object Range
-  extends ScalablyTyped.runtime.Instantiable0[Range] {
+  extends org.scalablytyped.runtime.Instantiable0[Range] {
   val END_TO_END: scala.Double = js.native
   val END_TO_START: scala.Double = js.native
   val START_TO_END: scala.Double = js.native

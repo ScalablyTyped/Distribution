@@ -232,9 +232,9 @@ trait VocaStatic extends js.Object {
   def titleCase(subject: java.lang.String, ignoreWords: js.Array[java.lang.String]): java.lang.String = js.native
   def tr(): java.lang.String = js.native
   def tr(subject: java.lang.String): java.lang.String = js.native
-  def tr(subject: java.lang.String, from: ScalablyTyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
   def tr(subject: java.lang.String, from: java.lang.String): java.lang.String = js.native
   def tr(subject: java.lang.String, from: java.lang.String, to: java.lang.String): java.lang.String = js.native
+  def tr(subject: java.lang.String, from: org.scalablytyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
   def trim(): java.lang.String = js.native
   def trim(subject: java.lang.String): java.lang.String = js.native
   def trim(subject: java.lang.String, whitespace: java.lang.String): java.lang.String = js.native

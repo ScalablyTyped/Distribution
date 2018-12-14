@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait IRangeRequestsPluginConstructor
-  extends ScalablyTyped.runtime.Instantiable0[RangeRequestsPlugin]
+  extends org.scalablytyped.runtime.Instantiable0[RangeRequestsPlugin]
 

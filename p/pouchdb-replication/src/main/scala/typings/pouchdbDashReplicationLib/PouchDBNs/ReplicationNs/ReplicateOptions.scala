@@ -46,7 +46,7 @@ trait ReplicateOptions extends js.Object {
                * where "bar" will be available in the filter function as params.query.foo.
                * To access the params, define your filter function like function (doc, params).
                */
-  var query_params: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var query_params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
                * If true will attempt to retry replications in the case of failure (due to being offline),
                * using a backoff algorithm that retries at longer and longer intervals until a connection is re-established,

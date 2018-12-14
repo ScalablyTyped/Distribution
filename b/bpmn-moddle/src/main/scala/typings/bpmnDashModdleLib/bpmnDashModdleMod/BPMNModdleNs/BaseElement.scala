@@ -12,7 +12,7 @@ trait BaseElement extends TypeDerived {
            * as Camunda properties
            */
   @JSName("$attrs")
-  var $attrs: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var $attrs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * Documentation for the element
            */

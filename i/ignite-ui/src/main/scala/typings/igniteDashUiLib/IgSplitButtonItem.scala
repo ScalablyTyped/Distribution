@@ -10,7 +10,7 @@ trait IgSplitButtonItem
   extends /**
 	 * Option for IgSplitButtonItem
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Css class to represent the iconClass of the item
   	 */

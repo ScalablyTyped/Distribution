@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object TuningNs extends js.Object {
   @js.native
   object names
-    extends /* name */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
 }
 

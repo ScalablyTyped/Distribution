@@ -19,7 +19,7 @@ trait IBottomSheetOptions extends js.Object {
    // default: root node
   var disableParentScroll: js.UndefOr[scala.Boolean] = js.undefined
   var escapeToClose: js.UndefOr[scala.Boolean] = js.undefined
-  var locals: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var locals: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var parent: js.UndefOr[
     (js.Function2[
       /* scope */ angularLib.angularMod.angularNs.IScope, 

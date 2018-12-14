@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ExceptionParams
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var exd: js.UndefOr[java.lang.String] = js.undefined
   var exf: js.UndefOr[scala.Boolean] = js.undefined
 }

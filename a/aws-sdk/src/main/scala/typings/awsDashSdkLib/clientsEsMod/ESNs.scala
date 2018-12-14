@@ -46,7 +46,7 @@ object ESNs extends js.Object {
   
   
   trait AdvancedOptions
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait AdvancedOptionsStatus extends js.Object {
@@ -577,7 +577,7 @@ object ESNs extends js.Object {
   
   
   trait EndpointsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ServiceUrl]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ServiceUrl]
   
   
   trait GetCompatibleElasticsearchVersionsRequest extends js.Object {
@@ -658,7 +658,7 @@ object ESNs extends js.Object {
   
   
   trait LimitsByRole
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Limits]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Limits]
   
   
   trait ListDomainNamesResponse extends js.Object {
@@ -742,7 +742,7 @@ object ESNs extends js.Object {
   
   
   trait LogPublishingOptions
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[LogPublishingOption]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[LogPublishingOption]
   
   
   trait LogPublishingOptionsStatus extends js.Object {

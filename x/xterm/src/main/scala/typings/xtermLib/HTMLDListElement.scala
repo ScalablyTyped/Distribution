@@ -14,5 +14,5 @@ trait HTMLDListElement extends HTMLElement {
 @JSGlobal("HTMLDListElement")
 @js.native
 object HTMLDListElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLDListElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLDListElement]
 

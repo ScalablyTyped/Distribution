@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Query[T] ()
   extends nodeLib.streamMod.Readable
      with stdLib.Promise[T] {
-  @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
+  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   var toStringTag_Query: jsforceLib.jsforceLibStrings.Promise = js.native
   def del(): js.Any = js.native
   def del(

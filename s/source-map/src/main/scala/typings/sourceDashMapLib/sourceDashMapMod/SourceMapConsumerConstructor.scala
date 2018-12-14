@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SourceMapConsumerConstructor
-  extends ScalablyTyped.runtime.Instantiable1[
-      (/* rawSourceMap */ RawSourceMap) | (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ java.lang.String), 
-      js.Promise[BasicSourceMapConsumer] | js.Promise[IndexedSourceMapConsumer] | (js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer])
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       (/* rawSourceMap */ RawSourceMap) | (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ java.lang.String), 
       /* sourceMapUrl */ SourceMapUrl, 
+      js.Promise[BasicSourceMapConsumer] | js.Promise[IndexedSourceMapConsumer] | (js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer])
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* rawSourceMap */ RawSourceMap) | (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ java.lang.String), 
       js.Promise[BasicSourceMapConsumer] | js.Promise[IndexedSourceMapConsumer] | (js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer])
     ] {
   var GENERATED_ORDER: scala.Double = js.native

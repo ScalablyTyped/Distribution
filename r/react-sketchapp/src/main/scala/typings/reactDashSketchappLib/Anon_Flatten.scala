@@ -12,7 +12,7 @@ trait Anon_Flatten extends js.Object {
        * Create an optimized `StyleSheet` reference from a style object.
        */
   var create: js.Function1[
-    /* t */ ScalablyTyped.runtime.StringDictionary[
+    /* t */ org.scalablytyped.runtime.StringDictionary[
       reactDashSketchappLib.reactDashSketchappMod.Style | reactDashSketchappLib.reactDashSketchappMod.TextStyle
     ], 
     reactDashSketchappLib.reactDashSketchappLibStrings.Anon_Flatten with js.Any

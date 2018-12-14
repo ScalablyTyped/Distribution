@@ -26,5 +26,5 @@ trait ImageBitmap extends js.Object {
 @JSGlobal("ImageBitmap")
 @js.native
 object ImageBitmap
-  extends ScalablyTyped.runtime.Instantiable0[ImageBitmap]
+  extends org.scalablytyped.runtime.Instantiable0[ImageBitmap]
 

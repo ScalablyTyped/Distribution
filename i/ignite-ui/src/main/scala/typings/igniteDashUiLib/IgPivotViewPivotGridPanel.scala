@@ -10,7 +10,7 @@ trait IgPivotViewPivotGridPanel
   extends /**
 	 * Option for IgPivotViewPivotGridPanel
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Determines if the panel containing the igPivotGrid will initially collapsed.
   	 */

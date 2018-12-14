@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IObjectVersionWorkflowState
-  extends ScalablyTyped.runtime.Instantiable0[IObjectVersionWorkflowState]
+  extends org.scalablytyped.runtime.Instantiable0[IObjectVersionWorkflowState]
 

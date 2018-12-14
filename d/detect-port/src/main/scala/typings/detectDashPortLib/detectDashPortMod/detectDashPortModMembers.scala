@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("detect-port", JSImport.Namespace)
 @js.native
 object detectDashPortModMembers
-  extends ScalablyTyped.runtime.TopLevel[DetectPort]
+  extends org.scalablytyped.runtime.TopLevel[DetectPort]
 

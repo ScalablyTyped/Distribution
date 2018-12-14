@@ -14,7 +14,7 @@ class ResponseBuilder protected () extends js.Object {
        * @param permissions permissions
        * @returns ResponseBuilder
        */
-  def askForPermissionsConsentCard(permissions: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String]]): ResponseBuilder = js.native
+  def askForPermissionsConsentCard(permissions: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]): ResponseBuilder = js.native
   /**
        * Creates a play, stop or clearQueue audioPlayer directive depending on the directive type passed in.
        * @deprecated - use audioPlayerPlay, audioPlayerStop, audioPlayerClearQueue instead

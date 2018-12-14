@@ -25,7 +25,10 @@ class Map protected () extends Evented {
   // Methods for layers and controls
   def addControl(control: Control): this.type = js.native
   // Other methods
-  def addHandler(name: java.lang.String, HandlerClass: ScalablyTyped.runtime.Instantiable1[/* map */ Map, Handler]): this.type = js.native
+  def addHandler(
+    name: java.lang.String,
+    HandlerClass: org.scalablytyped.runtime.Instantiable1[/* map */ Map, Handler]
+  ): this.type = js.native
   def addLayer(layer: Layer): this.type = js.native
   def closePopup(): this.type = js.native
   def closePopup(popup: Popup): this.type = js.native
@@ -63,7 +66,7 @@ class Map protected () extends Evented {
        * Name of the pane or the pane as HTML-Element
        */
   def getPane(pane: stdLib.HTMLElement): js.UndefOr[stdLib.HTMLElement] = js.native
-  def getPanes(): ScalablyTyped.runtime.StringDictionary[stdLib.HTMLElement] with DefaultMapPanes = js.native
+  def getPanes(): org.scalablytyped.runtime.StringDictionary[stdLib.HTMLElement] with DefaultMapPanes = js.native
   def getPixelBounds(): Bounds = js.native
   def getPixelOrigin(): Point = js.native
   def getPixelWorldBounds(): Bounds = js.native

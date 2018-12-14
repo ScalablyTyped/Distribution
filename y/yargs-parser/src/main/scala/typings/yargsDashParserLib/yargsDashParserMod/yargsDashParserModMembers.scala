@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("yargs-parser", JSImport.Namespace)
 @js.native
 object yargsDashParserModMembers
-  extends ScalablyTyped.runtime.TopLevel[yargsDashParserLib.yargsDashParserMod.yargsParserNs.Parser]
+  extends org.scalablytyped.runtime.TopLevel[yargsDashParserLib.yargsDashParserMod.yargsParserNs.Parser]
 

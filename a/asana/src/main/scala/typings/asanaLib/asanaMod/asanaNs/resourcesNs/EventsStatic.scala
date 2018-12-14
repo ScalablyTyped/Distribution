@@ -11,5 +11,5 @@ trait EventsStatic
              * @param dispatcher
              * @return
              */
-ScalablyTyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Events]
+org.scalablytyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Events]
 

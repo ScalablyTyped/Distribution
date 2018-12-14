@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait TextTrackCueList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[TextTrackCue] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[TextTrackCue] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[TextTrackCue]]
   val length: scala.Double
   def getCueById(id: java.lang.String): TextTrackCue
@@ -18,5 +18,5 @@ trait TextTrackCueList
 @JSGlobal("TextTrackCueList")
 @js.native
 object TextTrackCueList
-  extends ScalablyTyped.runtime.Instantiable0[TextTrackCueList]
+  extends org.scalablytyped.runtime.Instantiable0[TextTrackCueList]
 

@@ -15,10 +15,10 @@ class StatsReport () extends IStatsReport {
   def this(properties: IStatsReport) = this()
   /** StatsReport legacyPerQueryImplicitOperationName. */
   @JSName("legacyPerQueryImplicitOperationName")
-  var legacyPerQueryImplicitOperationName_StatsReport: ScalablyTyped.runtime.StringDictionary[IQueryStats] = js.native
+  var legacyPerQueryImplicitOperationName_StatsReport: org.scalablytyped.runtime.StringDictionary[IQueryStats] = js.native
   /** StatsReport perQuery. */
   @JSName("perQuery")
-  var perQuery_StatsReport: ScalablyTyped.runtime.StringDictionary[IQueryStats] = js.native
+  var perQuery_StatsReport: org.scalablytyped.runtime.StringDictionary[IQueryStats] = js.native
   /** StatsReport realtimeDuration. */
   @JSName("realtimeDuration")
   var realtimeDuration_StatsReport: scala.Double = js.native
@@ -29,7 +29,7 @@ class StatsReport () extends IStatsReport {
        * Converts this StatsReport to JSON.
        * @returns JSON object
        */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "StatsReport")
@@ -138,14 +138,14 @@ object StatsReport extends js.Object {
        * @param object Plain object
        * @returns StatsReport
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
+  def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport = js.native
   /**
        * Creates a plain object from a StatsReport message. Also converts values to other types if specified.
        * @param message StatsReport
        * @param [options] Conversion options
        * @returns Plain object
        */
-  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a StatsReport message. Also converts values to other types if specified.
        * @param message StatsReport
@@ -155,12 +155,12 @@ object StatsReport extends js.Object {
   def toObject(
     message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.StatsReport,
     options: protobufjsLib.protobufjsMod.IConversionOptions
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Verifies a StatsReport message.
        * @param message Plain object to verify
        * @returns `null` if valid, otherwise the reason why it is not
        */
-  def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+  def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
 }
 

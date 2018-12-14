@@ -11,10 +11,10 @@ package object distServerMod {
     /* document */ graphqlLib.languageAstMod.DocumentNode, 
     /* rootValue */ js.UndefOr[js.Any], 
     /* contextValue */ js.UndefOr[js.Any], 
-    /* variableValues */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* variableValues */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
     /* operationName */ js.UndefOr[java.lang.String], 
     /* fieldResolver */ js.UndefOr[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
     ], 
     graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault] | (js.Promise[
       graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
@@ -30,13 +30,13 @@ package object distServerMod {
     /* document */ graphqlLib.languageAstMod.DocumentNode, 
     /* rootValue */ js.UndefOr[js.Any], 
     /* contextValue */ js.UndefOr[js.Any], 
-    /* variableValues */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* variableValues */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
     /* operationName */ js.UndefOr[java.lang.String], 
     /* fieldResolver */ js.UndefOr[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
     ], 
     /* subscribeFieldResolver */ js.UndefOr[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
     ], 
     (stdLib.AsyncIterator[
       graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]

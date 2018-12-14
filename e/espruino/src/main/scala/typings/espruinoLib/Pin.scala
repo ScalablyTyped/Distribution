@@ -17,7 +17,7 @@ trait Pin
      * @param value 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable1[/* value */ js.Any, js.Any] {
+org.scalablytyped.runtime.Instantiable1[/* value */ js.Any, js.Any] {
   /**
        * <p>Return the current mode of the given pin. See <code>pinMode</code> for more information.</p>
        * 

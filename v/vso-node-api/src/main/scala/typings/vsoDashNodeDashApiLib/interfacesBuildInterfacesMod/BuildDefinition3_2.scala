@@ -56,6 +56,6 @@ trait BuildDefinition3_2 extends BuildDefinitionReference3_2 {
   var retentionRules: js.Array[RetentionPolicy]
   var tags: js.Array[java.lang.String]
   var triggers: js.Array[BuildTrigger]
-  var variables: ScalablyTyped.runtime.StringDictionary[BuildDefinitionVariable]
+  var variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
 }
 

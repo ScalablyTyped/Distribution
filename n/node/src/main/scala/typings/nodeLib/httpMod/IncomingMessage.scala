@@ -30,7 +30,7 @@ class IncomingMessage protected ()
            * Only valid for response obtained from http.ClientRequest.
            */
   var statusMessage: js.UndefOr[java.lang.String] = js.native
-  var trailers: ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = js.native
+  var trailers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = js.native
   /**
            * Only valid for request obtained from http.Server.
            */

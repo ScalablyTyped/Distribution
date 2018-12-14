@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MockObserverStatic
   extends rxDashCoreLib.RxNs.ObserverStatic
-     with ScalablyTyped.runtime.Instantiable1[/* scheduler */ rxDashCoreLib.RxNs.IScheduler, MockObserver[js.Object]]
+     with org.scalablytyped.runtime.Instantiable1[/* scheduler */ rxDashCoreLib.RxNs.IScheduler, MockObserver[js.Object]]
 

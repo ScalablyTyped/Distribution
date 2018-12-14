@@ -180,14 +180,14 @@ object TraceNs extends js.Object {
              * @param object Plain object
              * @returns CachePolicy
              */
-    def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.CachePolicy = js.native
+    def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.CachePolicy = js.native
     /**
              * Creates a plain object from a CachePolicy message. Also converts values to other types if specified.
              * @param message CachePolicy
              * @param [options] Conversion options
              * @returns Plain object
              */
-    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.CachePolicy): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.CachePolicy): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Creates a plain object from a CachePolicy message. Also converts values to other types if specified.
              * @param message CachePolicy
@@ -197,13 +197,13 @@ object TraceNs extends js.Object {
     def toObject(
       message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.CachePolicy,
       options: protobufjsLib.protobufjsMod.IConversionOptions
-    ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Verifies a CachePolicy message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-    def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
   }
   
   @JSName("CachePolicy")
@@ -330,14 +330,14 @@ object TraceNs extends js.Object {
              * @param object Plain object
              * @returns Details
              */
-    def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Details = js.native
+    def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Details = js.native
     /**
              * Creates a plain object from a Details message. Also converts values to other types if specified.
              * @param message Details
              * @param [options] Conversion options
              * @returns Plain object
              */
-    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Details): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Details): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Creates a plain object from a Details message. Also converts values to other types if specified.
              * @param message Details
@@ -347,13 +347,13 @@ object TraceNs extends js.Object {
     def toObject(
       message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Details,
       options: protobufjsLib.protobufjsMod.IConversionOptions
-    ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Verifies a Details message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-    def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
   }
   
   /** Represents an Error. */
@@ -462,14 +462,14 @@ object TraceNs extends js.Object {
              * @param object Plain object
              * @returns Error
              */
-    def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Error = js.native
+    def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Error = js.native
     /**
              * Creates a plain object from an Error message. Also converts values to other types if specified.
              * @param message Error
              * @param [options] Conversion options
              * @returns Plain object
              */
-    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Error): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Error): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Creates a plain object from an Error message. Also converts values to other types if specified.
              * @param message Error
@@ -479,13 +479,13 @@ object TraceNs extends js.Object {
     def toObject(
       message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Error,
       options: protobufjsLib.protobufjsMod.IConversionOptions
-    ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Verifies an Error message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-    def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
   }
   
   /** Represents a HTTP. */
@@ -594,14 +594,14 @@ object TraceNs extends js.Object {
              * @param object Plain object
              * @returns HTTP
              */
-    def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTP = js.native
+    def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTP = js.native
     /**
              * Creates a plain object from a HTTP message. Also converts values to other types if specified.
              * @param message HTTP
              * @param [options] Conversion options
              * @returns Plain object
              */
-    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTP): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTP): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Creates a plain object from a HTTP message. Also converts values to other types if specified.
              * @param message HTTP
@@ -611,13 +611,13 @@ object TraceNs extends js.Object {
     def toObject(
       message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTP,
       options: protobufjsLib.protobufjsMod.IConversionOptions
-    ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Verifies a HTTP message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-    def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
   }
   
   @JSName("HTTP")
@@ -759,14 +759,14 @@ object TraceNs extends js.Object {
                    * @param object Plain object
                    * @returns Values
                    */
-      def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTPNs.Values = js.native
+      def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTPNs.Values = js.native
       /**
                    * Creates a plain object from a Values message. Also converts values to other types if specified.
                    * @param message Values
                    * @param [options] Conversion options
                    * @returns Plain object
                    */
-      def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTPNs.Values): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+      def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTPNs.Values): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
       /**
                    * Creates a plain object from a Values message. Also converts values to other types if specified.
                    * @param message Values
@@ -776,13 +776,13 @@ object TraceNs extends js.Object {
       def toObject(
         message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTPNs.Values,
         options: protobufjsLib.protobufjsMod.IConversionOptions
-      ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
       /**
                    * Verifies a Values message.
                    * @param message Plain object to verify
                    * @returns `null` if valid, otherwise the reason why it is not
                    */
-      def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+      def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
     }
     
     type Method = apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.HTTPNs.Method
@@ -894,14 +894,14 @@ object TraceNs extends js.Object {
              * @param object Plain object
              * @returns Location
              */
-    def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Location = js.native
+    def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Location = js.native
     /**
              * Creates a plain object from a Location message. Also converts values to other types if specified.
              * @param message Location
              * @param [options] Conversion options
              * @returns Plain object
              */
-    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Location): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Location): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Creates a plain object from a Location message. Also converts values to other types if specified.
              * @param message Location
@@ -911,13 +911,13 @@ object TraceNs extends js.Object {
     def toObject(
       message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Location,
       options: protobufjsLib.protobufjsMod.IConversionOptions
-    ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Verifies a Location message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-    def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
   }
   
   /** Represents a Node. */
@@ -1026,14 +1026,14 @@ object TraceNs extends js.Object {
              * @param object Plain object
              * @returns Node
              */
-    def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Node = js.native
+    def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Node = js.native
     /**
              * Creates a plain object from a Node message. Also converts values to other types if specified.
              * @param message Node
              * @param [options] Conversion options
              * @returns Plain object
              */
-    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Node): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Node): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Creates a plain object from a Node message. Also converts values to other types if specified.
              * @param message Node
@@ -1043,13 +1043,13 @@ object TraceNs extends js.Object {
     def toObject(
       message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.TraceNs.Node,
       options: protobufjsLib.protobufjsMod.IConversionOptions
-    ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Verifies a Node message.
              * @param message Plain object to verify
              * @returns `null` if valid, otherwise the reason why it is not
              */
-    def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+    def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
   }
   
 }

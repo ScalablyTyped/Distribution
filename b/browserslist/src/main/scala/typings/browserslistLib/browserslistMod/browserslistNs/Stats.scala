@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Stats
-  extends /* browser */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[scala.Double]]
+  extends /* browser */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]]
 

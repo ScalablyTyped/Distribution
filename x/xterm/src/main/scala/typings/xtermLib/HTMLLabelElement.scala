@@ -21,5 +21,5 @@ trait HTMLLabelElement extends HTMLElement {
 @JSGlobal("HTMLLabelElement")
 @js.native
 object HTMLLabelElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLLabelElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLLabelElement]
 

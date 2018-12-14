@@ -425,7 +425,7 @@ trait ITaskAgentApiBase
   ): js.Promise[vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentJobRequest] = js.native
   def updateAgentUpdateState(poolId: scala.Double, agentId: scala.Double, currentState: java.lang.String): js.Promise[vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgent] = js.native
   def updateAgentUserCapabilities(
-    userCapabilities: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    userCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     poolId: scala.Double,
     agentId: scala.Double
   ): js.Promise[vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgent] = js.native

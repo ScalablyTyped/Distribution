@@ -10,6 +10,6 @@ trait IContextualizedTypeStats extends js.Object {
   /** ContextualizedTypeStats context */
   var context: js.UndefOr[IStatsContext | scala.Null] = js.undefined
   /** ContextualizedTypeStats perTypeStat */
-  var perTypeStat: js.UndefOr[ScalablyTyped.runtime.StringDictionary[ITypeStat] | scala.Null] = js.undefined
+  var perTypeStat: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ITypeStat] | scala.Null] = js.undefined
 }
 

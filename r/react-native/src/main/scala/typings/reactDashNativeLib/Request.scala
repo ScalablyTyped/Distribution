@@ -20,10 +20,10 @@ trait Request
 @JSGlobal("Request")
 @js.native
 object Request
-  extends ScalablyTyped.runtime.Instantiable1[(/* input */ Request) | (/* input */ java.lang.String), Request]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       (/* input */ Request) | (/* input */ java.lang.String), 
       /* init */ RequestInit, 
       Request
     ]
+     with org.scalablytyped.runtime.Instantiable1[(/* input */ Request) | (/* input */ java.lang.String), Request]
 

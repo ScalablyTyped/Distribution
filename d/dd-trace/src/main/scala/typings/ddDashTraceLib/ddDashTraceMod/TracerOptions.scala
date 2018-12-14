@@ -60,6 +60,6 @@ trait TracerOptions extends js.Object {
   /**
        * Global tags that should be assigned to every span.
        */
-  var tags: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

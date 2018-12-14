@@ -11,6 +11,6 @@ class UrlSegment protected ()
   extends atAngularRouterLib.srcMod.UrlSegment {
   def this(/** The path part of a URL segment */
   path: java.lang.String, /** The matrix parameters associated with a segment */
-  parameters: ScalablyTyped.runtime.StringDictionary[java.lang.String]) = this()
+  parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String]) = this()
 }
 

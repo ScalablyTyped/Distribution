@@ -22,7 +22,7 @@ trait OptionsData extends js.Object {
            * This function may be async.
            */
   var extensions: js.UndefOr[
-    (js.Function1[/* info */ RequestInfo, ScalablyTyped.runtime.StringDictionary[_]]) | scala.Null
+    (js.Function1[/* info */ RequestInfo, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Null
   ] = js.undefined
   /**
            * An optional function which will be used to format any errors produced by

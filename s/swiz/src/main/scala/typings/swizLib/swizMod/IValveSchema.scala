@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IValveSchema
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[IValveSchemaMember]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[IValveSchemaMember]
 

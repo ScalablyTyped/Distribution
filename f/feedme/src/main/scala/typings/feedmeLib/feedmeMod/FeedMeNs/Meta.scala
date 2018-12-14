@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Meta
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var author: java.lang.String
   var categories: js.Array[java.lang.String]
   var copyright: java.lang.String

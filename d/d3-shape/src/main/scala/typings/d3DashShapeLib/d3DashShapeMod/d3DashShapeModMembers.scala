@@ -78,7 +78,7 @@ object d3DashShapeModMembers extends js.Object {
   def radialLine(): RadialLine[js.Tuple2[scala.Double, scala.Double]] = js.native
   @JSName("radialLine")
   def radialLine_Datum[Datum](): RadialLine[Datum] = js.native
-  def stack(): Stack[_, ScalablyTyped.runtime.StringDictionary[scala.Double], java.lang.String] = js.native
+  def stack(): Stack[_, org.scalablytyped.runtime.StringDictionary[scala.Double], java.lang.String] = js.native
   def stackOffsetDiverging(series: Series[_, _], order: js.Array[scala.Double]): scala.Unit = js.native
   def stackOffsetExpand(series: Series[_, _], order: js.Array[scala.Double]): scala.Unit = js.native
   def stackOffsetNone(series: Series[_, _], order: js.Array[scala.Double]): scala.Unit = js.native

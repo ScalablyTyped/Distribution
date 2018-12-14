@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class QueryScheduler[TCacheShape] protected () extends js.Object {
   def this(hasQueryManagerSsrMode: apolloDashClientLib.Anon_QueryManager[TCacheShape]) = this()
-  var inFlightQueries: ScalablyTyped.runtime.StringDictionary[
+  var inFlightQueries: org.scalablytyped.runtime.StringDictionary[
     apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
   ] = js.native
-  var intervalQueries: ScalablyTyped.runtime.NumberDictionary[js.Array[java.lang.String]] = js.native
+  var intervalQueries: org.scalablytyped.runtime.NumberDictionary[js.Array[java.lang.String]] = js.native
   var pollingTimers: js.Any = js.native
   var queryManager: apolloDashClientLib.coreQueryManagerMod.QueryManager[TCacheShape] = js.native
-  var registeredQueries: ScalablyTyped.runtime.StringDictionary[
+  var registeredQueries: org.scalablytyped.runtime.StringDictionary[
     apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
   ] = js.native
   var ssrMode: js.Any = js.native

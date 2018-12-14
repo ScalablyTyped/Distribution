@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait OutputBundle
-  extends /* fileName */ ScalablyTyped.runtime.StringDictionary[OutputChunk | OutputFile]
+  extends /* fileName */ org.scalablytyped.runtime.StringDictionary[OutputChunk | OutputFile]
 

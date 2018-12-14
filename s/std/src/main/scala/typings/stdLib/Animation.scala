@@ -98,11 +98,11 @@ trait Animation extends EventTarget {
 @JSGlobal("Animation")
 @js.native
 object Animation
-  extends ScalablyTyped.runtime.Instantiable1[/* effect */ AnimationEffect, Animation]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[Animation]
+     with org.scalablytyped.runtime.Instantiable2[
       (/* effect */ AnimationEffect) | (/* effect */ scala.Null), 
       /* timeline */ AnimationTimeline, 
       Animation
     ]
-     with ScalablyTyped.runtime.Instantiable0[Animation]
+     with org.scalablytyped.runtime.Instantiable1[/* effect */ AnimationEffect, Animation]
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HammerManagerConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* element */ stdLib.EventTarget, HammerManager]
-     with ScalablyTyped.runtime.Instantiable2[/* element */ stdLib.EventTarget, /* options */ HammerOptions, HammerManager]
+  extends org.scalablytyped.runtime.Instantiable1[/* element */ stdLib.EventTarget, HammerManager]
+     with org.scalablytyped.runtime.Instantiable2[/* element */ stdLib.EventTarget, /* options */ HammerOptions, HammerManager]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ArrayLike[T]
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[T] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[T] {
   var length: scala.Double
   def item(index: scala.Double): T | scala.Null
 }

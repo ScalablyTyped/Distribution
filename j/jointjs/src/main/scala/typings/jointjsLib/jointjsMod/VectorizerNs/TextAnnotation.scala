@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait TextAnnotation extends js.Object {
-  var attrs: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var attrs: org.scalablytyped.runtime.StringDictionary[js.Any]
   var end: scala.Double
   var start: scala.Double
 }

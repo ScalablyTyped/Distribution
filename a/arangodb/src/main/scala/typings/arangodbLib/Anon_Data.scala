@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Data extends js.Object {
   var data: java.lang.String
-  var headers: ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+  var headers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Index
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var created_at: scala.Double
   var id: java.lang.String | scala.Double
   var monthly_spend: js.UndefOr[scala.Double] = js.undefined

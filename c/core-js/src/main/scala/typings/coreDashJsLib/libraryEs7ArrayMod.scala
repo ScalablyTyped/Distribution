@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/es7/array", JSImport.Namespace)
 @js.native
 object libraryEs7ArrayMod
-  extends ScalablyTyped.runtime.TopLevel[Anon_Find]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Find]
 

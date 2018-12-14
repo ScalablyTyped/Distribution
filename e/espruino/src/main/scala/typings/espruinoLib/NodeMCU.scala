@@ -16,5 +16,5 @@ trait NodeMCU
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[NodeMCU]
+org.scalablytyped.runtime.Instantiable0[NodeMCU]
 

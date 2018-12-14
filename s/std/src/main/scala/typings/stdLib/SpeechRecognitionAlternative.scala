@@ -14,5 +14,5 @@ trait SpeechRecognitionAlternative extends js.Object {
 @JSGlobal("SpeechRecognitionAlternative")
 @js.native
 object SpeechRecognitionAlternative
-  extends ScalablyTyped.runtime.Instantiable0[SpeechRecognitionAlternative]
+  extends org.scalablytyped.runtime.Instantiable0[SpeechRecognitionAlternative]
 

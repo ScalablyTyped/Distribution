@@ -10,7 +10,7 @@ trait Options[T /* <: js.Thenable[scala.Unit] */] extends js.Object {
   /**
            * (Default: global.Promise) The promise implementation to use, defaults to Node's.
            */
-  var Promise: js.UndefOr[ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]] = js.undefined
+  var Promise: js.UndefOr[org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]] = js.undefined
   /**
            * (Default: require('fs')) The filesystem module to use. Can be used to use graceful-fs or to inject a mock.
            */

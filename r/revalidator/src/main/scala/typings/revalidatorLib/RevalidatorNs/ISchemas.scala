@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ISchemas[T]
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[ISchema[T] | JSONSchema[T]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[ISchema[T] | JSONSchema[T]]
 

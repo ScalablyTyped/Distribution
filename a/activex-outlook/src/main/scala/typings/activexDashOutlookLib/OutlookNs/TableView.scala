@@ -50,7 +50,7 @@ class TableView protected () extends js.Object {
   def Copy(Name: java.lang.String, SaveOption: OlViewSaveOption): View = js.native
   def Delete(): scala.Unit = js.native
   def GetTable(): Table = js.native
-  def GoToDate(Date: activexDashInteropLib.VarDate): scala.Unit = js.native
+  def GoToDate(Date: stdLib.VarDate): scala.Unit = js.native
   def Reset(): scala.Unit = js.native
   def Save(): scala.Unit = js.native
 }

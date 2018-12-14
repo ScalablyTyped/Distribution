@@ -13,16 +13,16 @@ trait ErrorBuilder
      * @param {string | Error | Config} config - If config is a string, it will be treated as config.message.
      *                                           If config is an Error object, it will be treated as config.cause.
      */
-ScalablyTyped.runtime.Instantiable1[
-      (/* config */ java.lang.String) | (/* config */ stdLib.Error) | (/* config */ Config), 
-      HttpError
-    ]
+org.scalablytyped.runtime.Instantiable0[HttpError]
      with /**
      *  Creates an Error object. The new keyword is optional.
      * @param {string | Error | Config} config - If config is a string, it will be treated as config.message.
      *                                           If config is an Error object, it will be treated as config.cause.
      */
-ScalablyTyped.runtime.Instantiable0[HttpError] {
+org.scalablytyped.runtime.Instantiable1[
+      (/* config */ java.lang.String) | (/* config */ stdLib.Error) | (/* config */ Config), 
+      HttpError
+    ] {
   /**
        *  Creates an Error object. The new keyword is optional.
        * @param {string | Error | Config} config - If config is a string, it will be treated as config.message.

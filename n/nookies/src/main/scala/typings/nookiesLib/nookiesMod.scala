@@ -13,11 +13,11 @@ object nookiesMod extends js.Object {
     ctx: nextLib.nextMod.nextNs.NextContext[nextDashServerLib.routerMod.DefaultQuery],
     name: java.lang.String
   ): scala.Unit = js.native
-  def parseCookies(ctx: nextLib.nextMod.nextNs.NextContext[nextDashServerLib.routerMod.DefaultQuery]): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def parseCookies(ctx: nextLib.nextMod.nextNs.NextContext[nextDashServerLib.routerMod.DefaultQuery]): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def parseCookies(
     ctx: nextLib.nextMod.nextNs.NextContext[nextDashServerLib.routerMod.DefaultQuery],
     options: cookieLib.cookieMod.CookieParseOptions
-  ): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def setCookie(
     ctx: nextLib.nextMod.nextNs.NextContext[nextDashServerLib.routerMod.DefaultQuery],
     name: java.lang.String,

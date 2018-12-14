@@ -19,7 +19,7 @@ trait Options extends js.Object {
   /**
        * Either a blacklist of tag keys or a callback function. Will be used to decide if a feature is interesting enough for its own GeoJSON feature.
        */
-  var uninterestingTags: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Boolean] | js.Function] = js.undefined
+  var uninterestingTags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean] | js.Function] = js.undefined
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 

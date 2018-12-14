@@ -85,7 +85,7 @@ trait SVGFETurbulenceElement
 @JSGlobal("SVGFETurbulenceElement")
 @js.native
 object SVGFETurbulenceElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFETurbulenceElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGFETurbulenceElement] {
   val SVG_STITCHTYPE_NOSTITCH: scala.Double = js.native
   val SVG_STITCHTYPE_STITCH: scala.Double = js.native
   val SVG_STITCHTYPE_UNKNOWN: scala.Double = js.native

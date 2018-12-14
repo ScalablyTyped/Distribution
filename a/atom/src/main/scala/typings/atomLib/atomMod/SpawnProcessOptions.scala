@@ -12,7 +12,7 @@ trait SpawnProcessOptions extends js.Object {
   /** Prepare child to run independently of its parent process. */
   var detached: js.UndefOr[scala.Boolean] = js.undefined
   /** Environment key-value pairs. */
-  var env: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var env: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** Sets the group identity of the process. */
   var gid: js.UndefOr[scala.Double] = js.undefined
   /**

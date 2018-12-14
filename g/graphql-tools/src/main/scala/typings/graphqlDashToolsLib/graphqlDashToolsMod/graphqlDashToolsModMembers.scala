@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object graphqlDashToolsModMembers extends js.Object {
   val attachConnectorsToContext: js.Function = js.native
-  val defaultMergedResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  val defaultMergedResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def addCatchUndefinedToSchema(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native
   def addErrorLoggingToSchema(schema: graphqlLib.graphqlMod.GraphQLSchema, logger: graphqlDashToolsLib.distInterfacesMod.ILogger): scala.Unit = js.native
   def addMockFunctionsToSchema(hasSchemaMocksPreserveResolvers: graphqlDashToolsLib.distInterfacesMod.IMockOptions): scala.Unit = js.native
@@ -35,7 +35,7 @@ object graphqlDashToolsModMembers extends js.Object {
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native
   def addSchemaLevelResolveFunction(
     schema: graphqlLib.graphqlMod.GraphQLSchema,
-    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Unit = js.native
   def assertResolveFunctionsPresent(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native
   def assertResolveFunctionsPresent(
@@ -53,11 +53,11 @@ object graphqlDashToolsModMembers extends js.Object {
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native
   def chainResolvers(
     resolvers: js.Array[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ): js.Function4[
     /* root */ js.Any, 
-    /* args */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* args */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* ctx */ js.Any, 
     /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
     _
@@ -70,18 +70,18 @@ object graphqlDashToolsModMembers extends js.Object {
     calledFunctionRefs: js.Any
   ): java.lang.String = js.native
   def decorateWithLogger(
-    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]],
+    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     logger: graphqlDashToolsLib.distInterfacesMod.ILogger,
     hint: java.lang.String
-  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def decorateWithLogger(
     fn: js.UndefOr[scala.Nothing],
     logger: graphqlDashToolsLib.distInterfacesMod.ILogger,
     hint: java.lang.String
-  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def defaultCreateRemoteResolver(fetcher: graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def defaultCreateRemoteResolver(fetcher: graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def delegateToSchema(
-    options: graphqlDashToolsLib.distInterfacesMod.IDelegateToSchemaOptions[ScalablyTyped.runtime.StringDictionary[_]],
+    options: graphqlDashToolsLib.distInterfacesMod.IDelegateToSchemaOptions[org.scalablytyped.runtime.StringDictionary[_]],
     args: js.Any*
   ): js.Promise[_] = js.native
   def delegateToSchema(options: graphqlLib.graphqlMod.GraphQLSchema, args: js.Any*): js.Promise[_] = js.native
@@ -97,12 +97,12 @@ object graphqlDashToolsModMembers extends js.Object {
   def introspectSchema(fetcher: apolloDashLinkLib.apolloDashLinkMod.ApolloLink): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
   def introspectSchema(
     fetcher: apolloDashLinkLib.apolloDashLinkMod.ApolloLink,
-    linkContext: ScalablyTyped.runtime.StringDictionary[js.Any]
+    linkContext: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
   def introspectSchema(fetcher: graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
   def introspectSchema(
     fetcher: graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher,
-    linkContext: ScalablyTyped.runtime.StringDictionary[js.Any]
+    linkContext: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Promise[graphqlLib.graphqlMod.GraphQLSchema] = js.native
   def makeExecutableSchema[TContext](
     hasTypeDefsResolversConnectorsLoggerAllowUndefinedInResolveResolverValidationOptionsDirectiveResolversSchemaDirectivesParseOptionsInheritResolversFromInterfaces: graphqlDashToolsLib.distInterfacesMod.IExecutableSchemaDefinition[TContext]

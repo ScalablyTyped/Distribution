@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CopyOnWriteArrayList[T] () extends js.Object {
   var isDataNew: js.Any = js.native
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator_FCopyOnWriteArrayList: js.Function0[stdLib.IterableIterator[T]] = js.native
   var mData: js.Any = js.native
   def add(items: T*): scala.Unit = js.native

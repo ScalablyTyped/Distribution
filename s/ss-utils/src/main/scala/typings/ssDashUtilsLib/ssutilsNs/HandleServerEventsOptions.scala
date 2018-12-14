@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait HandleServerEventsOptions extends js.Object {
-  var handlers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Function]] = js.undefined
+  var handlers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Function]] = js.undefined
   var heartbeatIntervalMs: js.UndefOr[scala.Double] = js.undefined
   var heartbeatUrl: js.UndefOr[java.lang.String] = js.undefined
-  var receivers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var receivers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var success: js.UndefOr[
     js.Function3[
       /* selector */ java.lang.String, 

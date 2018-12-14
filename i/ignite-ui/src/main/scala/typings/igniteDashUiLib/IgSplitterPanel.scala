@@ -10,7 +10,7 @@ trait IgSplitterPanel
   extends /**
 	 * Option for IgSplitterPanel
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets whether the panel is initially collapsed
   	 *

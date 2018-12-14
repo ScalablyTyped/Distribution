@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RenderStatic
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[NamedTemplate]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[NamedTemplate]
 

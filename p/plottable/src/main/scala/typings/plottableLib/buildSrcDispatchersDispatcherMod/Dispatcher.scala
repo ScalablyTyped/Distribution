@@ -24,7 +24,7 @@ class Dispatcher () extends js.Object {
        * eventname is a DOM event name like "mouseup", "touchstart", etc. The
        * callback is simply registered to the event callback with bubbling.
        */
-  var _eventToProcessingFunction: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ stdLib.Event, _]] = js.native
+  var _eventToProcessingFunction: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ stdLib.Event, _]] = js.native
   /* protected */ def _addCallbackForEvent(eventName: java.lang.String, callback: js.Function): scala.Unit = js.native
   /* protected */ def _callCallbacksForEvent(eventName: java.lang.String, args: js.Any*): scala.Unit = js.native
   /* private */ def _connect(): js.Any = js.native

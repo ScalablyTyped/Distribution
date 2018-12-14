@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ItemParams
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var ic: js.UndefOr[java.lang.String] = js.undefined
   var in: js.UndefOr[java.lang.String] = js.undefined
   var ip: js.UndefOr[java.lang.String | scala.Double] = js.undefined

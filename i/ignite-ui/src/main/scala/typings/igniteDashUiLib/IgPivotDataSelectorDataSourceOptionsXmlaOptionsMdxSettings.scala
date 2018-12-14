@@ -10,7 +10,7 @@ trait IgPivotDataSelectorDataSourceOptionsXmlaOptionsMdxSettings
   extends /**
 	 * Option for IgPivotDataSelectorDataSourceOptionsXmlaOptionsMdxSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Optional="true" a value indicating whether a members' set expressions on COLUMNS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true
   	 */

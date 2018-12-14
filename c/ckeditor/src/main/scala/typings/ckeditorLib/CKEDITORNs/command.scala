@@ -21,7 +21,7 @@ class command protected ()
   def disable(): scala.Unit = js.native
   def enable(): scala.Unit = js.native
   def exec(): scala.Boolean = js.native
-  def exec(data: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
+  def exec(data: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
   @JSName("refresh")
   def refresh_Mcommand(editor: editor, path: ckeditorLib.CKEDITORNs.domNs.elementPath): scala.Unit = js.native
   def setState(newState: scala.Double): scala.Boolean = js.native

@@ -13,7 +13,7 @@ trait HashTable extends js.Object {
   def hasKey(key: java.lang.String): scala.Boolean
   def remove(values: js.Any*): HashTable
   def reset(): HashTable
-  def table(): ScalablyTyped.runtime.StringDictionary[HashTableItem]
+  def table(): org.scalablytyped.runtime.StringDictionary[HashTableItem]
   def toArray(): js.Array[HashTableItemWithKey]
 }
 

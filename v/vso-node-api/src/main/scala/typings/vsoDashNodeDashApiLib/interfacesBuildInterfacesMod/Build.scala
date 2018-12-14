@@ -153,7 +153,7 @@ trait Build extends js.Object {
   /**
        * Sourceprovider-specific information about what triggered the build
        */
-  var triggerInfo: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var triggerInfo: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The URI of the build.
        */

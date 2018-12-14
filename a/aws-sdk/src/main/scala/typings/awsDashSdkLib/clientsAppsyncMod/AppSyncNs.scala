@@ -888,7 +888,7 @@ object AppSyncNs extends js.Object {
   
   
   trait MapOfStringToString
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait OpenIDConnectConfig extends js.Object {

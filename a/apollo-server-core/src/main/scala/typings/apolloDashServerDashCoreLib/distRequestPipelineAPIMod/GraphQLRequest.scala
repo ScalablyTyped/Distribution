@@ -16,6 +16,6 @@ trait GraphQLRequest extends js.Object {
   ] = js.undefined
   var operationName: js.UndefOr[java.lang.String] = js.undefined
   var query: js.UndefOr[java.lang.String] = js.undefined
-  var variables: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

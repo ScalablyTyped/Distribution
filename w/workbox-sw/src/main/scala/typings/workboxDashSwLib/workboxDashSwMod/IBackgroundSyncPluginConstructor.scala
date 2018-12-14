@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait IBackgroundSyncPluginConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* queueArgs (repeated) */ js.Any, BackgroundSyncPlugin]
+  extends org.scalablytyped.runtime.Instantiable1[/* queueArgs (repeated) */ js.Any, BackgroundSyncPlugin]
 

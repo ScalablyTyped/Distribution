@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.htmlParser.element")
 @js.native
 class element protected () extends node {
-  def this(name: java.lang.String, attributes: ScalablyTyped.runtime.StringDictionary[java.lang.String]) = this()
-  var attributes: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def this(name: java.lang.String, attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]) = this()
+  var attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var children: js.Array[node] = js.native
   var name: java.lang.String = js.native
   var `type`: scala.Double = js.native
@@ -32,9 +32,9 @@ class element protected () extends node {
     `type`: scala.Double,
     skipRoot: scala.Boolean
   ): scala.Unit = js.native
-  def getFirst(condition: ScalablyTyped.runtime.StringDictionary[java.lang.String]): node = js.native
   def getFirst(condition: java.lang.String): node = js.native
   def getFirst(condition: js.Function1[/* node */ node, scala.Boolean]): node = js.native
+  def getFirst(condition: org.scalablytyped.runtime.StringDictionary[java.lang.String]): node = js.native
   def getHtml(): java.lang.String = js.native
   def getOuterHtml(): java.lang.String = js.native
   def hasClass(className: java.lang.String): scala.Boolean = js.native

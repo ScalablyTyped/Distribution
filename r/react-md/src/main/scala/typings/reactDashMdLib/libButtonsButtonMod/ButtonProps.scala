@@ -11,7 +11,7 @@ trait ButtonProps
   extends reactDashMdLib.libInksInjectInkMod.InjectedInkProps
      with reactDashMdLib.libTooltipsInjectTooltipMod.InjectedTooltipProps
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var fixed: js.UndefOr[scala.Boolean] = js.undefined

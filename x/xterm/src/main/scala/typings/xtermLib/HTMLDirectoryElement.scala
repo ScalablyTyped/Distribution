@@ -14,5 +14,5 @@ trait HTMLDirectoryElement extends HTMLElement {
 @JSGlobal("HTMLDirectoryElement")
 @js.native
 object HTMLDirectoryElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLDirectoryElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLDirectoryElement]
 

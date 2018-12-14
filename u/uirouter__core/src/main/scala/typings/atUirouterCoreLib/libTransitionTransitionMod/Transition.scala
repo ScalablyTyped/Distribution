@@ -576,7 +576,7 @@ class Transition protected ()
        *
        * @returns transition parameter values for the desired path.
        */
-  def params(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def params(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Gets transition parameter values
        *
@@ -602,7 +602,7 @@ class Transition protected ()
        *
        * @returns transition parameter values for the desired path.
        */
-  def params(pathname: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def params(pathname: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Gets the new values of any parameters that changed during this transition.
        *
@@ -662,7 +662,7 @@ class Transition protected ()
        *
        * @returns an immutable object with changed parameter keys/values.
        */
-  def paramsChanged(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def paramsChanged(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("paramsChanged")
   def paramsChanged_TT[T](): T = js.native
   @JSName("params")
@@ -796,7 +796,7 @@ class Transition protected ()
 @js.native
 object Transition extends js.Object {
   /** @hidden */
-  var diToken: ScalablyTyped.runtime.Instantiable3[
+  var diToken: org.scalablytyped.runtime.Instantiable3[
     /* fromPath */ js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode], 
     /* targetState */ atUirouterCoreLib.libStateTargetStateMod.TargetState, 
     /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 

@@ -10,7 +10,7 @@ trait IgRating
   extends /**
 	 * Option for igRating
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets custom css votes.
   	 * That object should be 2-dimentional array or object with indexes, where every item of first level represents settings for a vote at that index.

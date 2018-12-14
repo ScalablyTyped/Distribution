@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait INavigationRouteConstructor
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* handler */ workboxDashSwLib.HandlerCallback, 
       /* options */ stdLib.Partial[INavigationRouteOptions], 
       NavigationRoute

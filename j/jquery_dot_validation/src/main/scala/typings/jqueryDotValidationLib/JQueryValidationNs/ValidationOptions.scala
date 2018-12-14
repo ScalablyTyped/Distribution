@@ -66,7 +66,7 @@ trait ValidationOptions extends js.Object {
            * Specify grouping of error messages. A group consists of an arbitrary group name as the key and a space separated list of
            * element names as the value. Use errorPlacement to control where the group message is placed.
            */
-  var groups: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var groups: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * How to highlight invalid fields. Override to decide which fields and how to highlight.
            *

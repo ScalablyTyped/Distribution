@@ -30,7 +30,7 @@ trait NotificationSubscription extends js.Object {
   /**
        * Any extra properties like detailed description for different contexts, user/group contexts
        */
-  var extendedProperties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var extendedProperties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Matching criteria for the subscription. ExpressionFilter
        */

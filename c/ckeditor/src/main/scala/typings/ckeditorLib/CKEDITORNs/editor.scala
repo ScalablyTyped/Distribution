@@ -51,7 +51,7 @@ class editor () extends event {
   def addMenuGroup(name: java.lang.String, order: scala.Double): scala.Unit = js.native
   def addMenuItem(name: java.lang.String): scala.Unit = js.native
   def addMenuItem(name: java.lang.String, definition: IMenuItemDefinition): scala.Unit = js.native
-  def addMenuItems(definitions: ScalablyTyped.runtime.StringDictionary[IMenuItemDefinition]): scala.Unit = js.native
+  def addMenuItems(definitions: org.scalablytyped.runtime.StringDictionary[IMenuItemDefinition]): scala.Unit = js.native
   def addMode(mode: java.lang.String, exec: js.Function0[scala.Unit]): scala.Unit = js.native
   def addRemoveFormatFilter(func: js.Function1[/* element */ ckeditorLib.CKEDITORNs.domNs.element, scala.Boolean]): scala.Unit = js.native
   def applyStyle(style: style): scala.Unit = js.native
@@ -92,7 +92,7 @@ class editor () extends event {
   def getColorFromDialog(callback: js.Function1[/* color */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def getColorFromDialog(
     callback: js.Function1[/* color */ java.lang.String, scala.Unit],
-    scope: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scope: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def getCommand(commandName: java.lang.String): command = js.native
   def getCommandKeystroke(command: command): scala.Double | scala.Null = js.native

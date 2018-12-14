@@ -14,7 +14,7 @@ trait Artifact extends js.Object {
   /**
        * Gets or sets definition reference. e.g. {"project":{"id":"fed755ea-49c5-4399-acea-fd5b5aa90a6c","name":"myProject"},"definition":{"id":"1","name":"mybuildDefinition"},"connection":{"id":"1","name":"myConnection"}}
        */
-  var definitionReference: ScalablyTyped.runtime.StringDictionary[ArtifactSourceReference]
+  var definitionReference: org.scalablytyped.runtime.StringDictionary[ArtifactSourceReference]
   /**
        * Gets or sets as artifact is primary or not.
        */

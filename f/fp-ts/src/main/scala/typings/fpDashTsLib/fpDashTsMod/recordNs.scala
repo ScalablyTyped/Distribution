@@ -62,7 +62,7 @@ object recordNs extends js.Object {
     /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Record[java.lang.String, _]
   ] = js.native
-  def getMonoid[A](S: js.Any): fpDashTsLib.libMonoidMod.Monoid[ScalablyTyped.runtime.StringDictionary[A]] = js.native
+  def getMonoid[A](S: js.Any): fpDashTsLib.libMonoidMod.Monoid[org.scalablytyped.runtime.StringDictionary[A]] = js.native
   def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[stdLib.Record[java.lang.String, A]] = js.native
   def insert[A](k: java.lang.String, a: A, d: stdLib.Record[java.lang.String, A]): stdLib.Record[java.lang.String, A] = js.native
   def isEmpty[A](d: stdLib.Record[java.lang.String, A]): scala.Boolean = js.native

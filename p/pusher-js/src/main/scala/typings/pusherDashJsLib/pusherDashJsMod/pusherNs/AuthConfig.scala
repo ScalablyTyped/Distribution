@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait AuthConfig extends js.Object {
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var params: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

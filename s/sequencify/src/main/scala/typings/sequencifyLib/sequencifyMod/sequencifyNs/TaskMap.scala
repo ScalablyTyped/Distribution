@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TaskMap
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[Task]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[Task]
 

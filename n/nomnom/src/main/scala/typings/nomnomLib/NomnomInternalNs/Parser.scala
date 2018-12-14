@@ -57,7 +57,7 @@ trait Parser extends js.Object {
            * @param specs The specifications of the options.
            * @returns The command-line parser.
            */
-  def options(specs: ScalablyTyped.runtime.StringDictionary[nomnomLib.NomnomInternalNs.ParserNs.Option]): Parser = js.native
+  def options(specs: org.scalablytyped.runtime.StringDictionary[nomnomLib.NomnomInternalNs.ParserNs.Option]): Parser = js.native
   /**
            * Parses the command-line.
            * @param argv The command-line arguments.

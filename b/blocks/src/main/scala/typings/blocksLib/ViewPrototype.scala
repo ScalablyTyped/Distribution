@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 /////////////////////////////////////////
 
 trait ViewPrototype
-  extends /* propertyName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Override the init method to perform actions when the View is first created and shown on the page
   	 */

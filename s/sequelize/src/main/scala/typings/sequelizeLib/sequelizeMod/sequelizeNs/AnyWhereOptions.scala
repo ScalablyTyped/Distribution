@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait AnyWhereOptions
-  extends /* field */ ScalablyTyped.runtime.StringDictionary[js.Array[WhereOptions[_]] | js.Object]
+  extends /* field */ org.scalablytyped.runtime.StringDictionary[js.Array[WhereOptions[_]] | js.Object]
 

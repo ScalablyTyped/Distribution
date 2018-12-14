@@ -137,7 +137,7 @@ trait DatetimepickerOptions extends js.Object {
   	 * The widget parameter is false, if the datepicker is closed.
   	 */
   var keyBinds: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       js.Function1[
         /* widget */ scala.Boolean | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.Global.JQuery, 
         scala.Unit

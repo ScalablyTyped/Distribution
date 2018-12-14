@@ -16,9 +16,9 @@ trait WritableStream[W] extends js.Object {
 @JSGlobal("WritableStream")
 @js.native
 object WritableStream
-  extends ScalablyTyped.runtime.Instantiable0[WritableStream[js.Object]]
-     with ScalablyTyped.runtime.Instantiable1[/* underlyingSink */ UnderlyingSink[js.Object], WritableStream[js.Object]]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[WritableStream[js.Object]]
+     with org.scalablytyped.runtime.Instantiable1[/* underlyingSink */ UnderlyingSink[js.Object], WritableStream[js.Object]]
+     with org.scalablytyped.runtime.Instantiable2[
       /* underlyingSink */ UnderlyingSink[js.Object], 
       /* strategy */ QueuingStrategy[js.Object], 
       WritableStream[js.Object]

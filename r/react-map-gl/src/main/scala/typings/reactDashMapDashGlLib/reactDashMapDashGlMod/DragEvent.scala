@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait DragEvent
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var lngLat: js.Tuple2[scala.Double, scala.Double]
 }
 

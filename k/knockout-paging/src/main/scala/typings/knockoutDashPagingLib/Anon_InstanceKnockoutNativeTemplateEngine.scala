@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_InstanceKnockoutNativeTemplateEngine
-  extends ScalablyTyped.runtime.Instantiable0[KnockoutNativeTemplateEngine] {
+  extends org.scalablytyped.runtime.Instantiable0[KnockoutNativeTemplateEngine] {
   var instance: KnockoutNativeTemplateEngine = js.native
 }
 

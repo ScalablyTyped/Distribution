@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("provinces", JSImport.Namespace)
 @js.native
 object provincesModMembers
-  extends ScalablyTyped.runtime.TopLevel[js.Array[provincesLib.provincesMod.Global.Province]]
+  extends org.scalablytyped.runtime.TopLevel[js.Array[provincesLib.provincesMod.Global.Province]]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cldrjs", JSImport.Namespace)
 @js.native
 object cldrjsModMembers
-  extends ScalablyTyped.runtime.TopLevel[cldrjsLib.cldrjsMod.selfNs.CldrFactory]
+  extends org.scalablytyped.runtime.TopLevel[cldrjsLib.cldrjsMod.selfNs.CldrFactory]
 

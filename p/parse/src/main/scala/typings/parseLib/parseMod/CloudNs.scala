@@ -20,7 +20,7 @@ object CloudNs extends js.Object {
            *
            *     import Buffer = require("buffer").Buffer;
            */
-  var HTTPOptions: ScalablyTyped.runtime.Instantiable0[parseLib.ParseNs.CloudNs.HTTPOptions] = js.native
+  var HTTPOptions: org.scalablytyped.runtime.Instantiable0[parseLib.ParseNs.CloudNs.HTTPOptions] = js.native
   def afterDelete(arg1: js.Any): scala.Unit = js.native
   def afterDelete(
     arg1: js.Any,

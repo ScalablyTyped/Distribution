@@ -14,5 +14,5 @@ trait colStatic
          *
          * @param col The name of the column
          */
-ScalablyTyped.runtime.Instantiable1[/* col */ java.lang.String, col]
+org.scalablytyped.runtime.Instantiable1[/* col */ java.lang.String, col]
 

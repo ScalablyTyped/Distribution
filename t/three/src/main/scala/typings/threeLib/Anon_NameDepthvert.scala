@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_NameDepthvert
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[java.lang.String] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   var alphamap_fragment: java.lang.String
   var alphamap_pars_fragment: java.lang.String
   var alphatest_fragment: java.lang.String

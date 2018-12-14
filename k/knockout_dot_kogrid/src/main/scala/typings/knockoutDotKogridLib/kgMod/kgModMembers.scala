@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("kg", JSImport.Namespace)
 @js.native
 object kgModMembers
-  extends ScalablyTyped.runtime.TopLevel[knockoutDotKogridLib.IKg]
+  extends org.scalablytyped.runtime.TopLevel[knockoutDotKogridLib.IKg]
 

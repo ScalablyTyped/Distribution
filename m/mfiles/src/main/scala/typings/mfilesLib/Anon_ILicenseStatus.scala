@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ILicenseStatus
-  extends ScalablyTyped.runtime.Instantiable0[ILicenseStatus]
+  extends org.scalablytyped.runtime.Instantiable0[ILicenseStatus]
 

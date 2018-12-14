@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("excel-style-dataformatter/lib/locales/ru", JSImport.Namespace)
 @js.native
 object libLocalesRuMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       excelDashStyleDashDataformatterLib.excelDashStyleDashDataformatterMod.DataFormatterNs.LocalesOptions
     ]
 

@@ -79,7 +79,7 @@ object Object extends js.Object {
   def fromJSON(json: js.Any, `override`: scala.Boolean): js.Any = js.native
   def registerSubclass[T /* <: parseLib.ParseNs.Object */](
     className: java.lang.String,
-    clazz: ScalablyTyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], T]
+    clazz: org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], T]
   ): scala.Unit = js.native
   def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
   def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.SaveAllOptions): js.Promise[js.Array[T]] = js.native

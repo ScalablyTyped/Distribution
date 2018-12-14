@@ -19,11 +19,11 @@ object urlNs extends js.Object {
   @js.native
   class URLSearchParams ()
     extends nodeLib.urlMod.URLSearchParams {
-    def this(init: ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]]) = this()
     def this(init: java.lang.String) = this()
     def this(init: js.Array[js.Tuple2[java.lang.String, java.lang.String]]) = this()
     def this(init: nodeLib.Iterable[js.Tuple2[java.lang.String, java.lang.String]]) = this()
     def this(init: nodeLib.urlMod.URLSearchParams) = this()
+    def this(init: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]]) = this()
   }
   
   def domainToASCII(domain: java.lang.String): java.lang.String = js.native

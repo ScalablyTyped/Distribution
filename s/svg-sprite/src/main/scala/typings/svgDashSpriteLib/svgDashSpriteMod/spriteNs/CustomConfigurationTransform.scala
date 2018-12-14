@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait CustomConfigurationTransform
-  extends /* transformationName */ ScalablyTyped.runtime.StringDictionary[svgDashSpriteLib.Anon_Plugins]
+  extends /* transformationName */ org.scalablytyped.runtime.StringDictionary[svgDashSpriteLib.Anon_Plugins]
 

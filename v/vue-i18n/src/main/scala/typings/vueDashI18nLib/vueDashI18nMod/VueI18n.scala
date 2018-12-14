@@ -17,7 +17,7 @@ trait VueI18n extends js.Object {
   val numberFormats: vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormats = js.native
   var silentTranslationWarn: scala.Boolean = js.native
   def d(value: scala.Double): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
-  def d(value: scala.Double, args: ScalablyTyped.runtime.StringDictionary[java.lang.String]): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
+  def d(value: scala.Double, args: org.scalablytyped.runtime.StringDictionary[java.lang.String]): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
   def d(value: scala.Double, key: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Path): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
   def d(
     value: scala.Double,
@@ -25,7 +25,7 @@ trait VueI18n extends js.Object {
     locale: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Locale
   ): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
   def d(value: stdLib.Date): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
-  def d(value: stdLib.Date, args: ScalablyTyped.runtime.StringDictionary[java.lang.String]): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
+  def d(value: stdLib.Date, args: org.scalablytyped.runtime.StringDictionary[java.lang.String]): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
   def d(value: stdLib.Date, key: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Path): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
   def d(
     value: stdLib.Date,
@@ -63,7 +63,7 @@ trait VueI18n extends js.Object {
     vm: vueLib.typesVueMod.Vue
   ): java.lang.String | scala.Unit = js.native
   def n(value: scala.Double): vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormatResult = js.native
-  def n(value: scala.Double, args: ScalablyTyped.runtime.StringDictionary[java.lang.String]): vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormatResult = js.native
+  def n(value: scala.Double, args: org.scalablytyped.runtime.StringDictionary[java.lang.String]): vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormatResult = js.native
   def n(value: scala.Double, key: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Path): vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormatResult = js.native
   def n(
     value: scala.Double,

@@ -12,9 +12,9 @@ trait WorkflowTask extends js.Object {
   var continueOnError: scala.Boolean
   var definitionType: java.lang.String
   var enabled: scala.Boolean
-  var inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var name: java.lang.String
-  var overrideInputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var overrideInputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var refName: java.lang.String
   var taskId: java.lang.String
   var timeoutInMinutes: scala.Double

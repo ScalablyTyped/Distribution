@@ -16,7 +16,7 @@ trait DeserializeOptions extends js.Object {
   /** {default:false}, evaluate functions in the BSON document scoped to the object deserialized. */
   var evalFunctions: js.UndefOr[scala.Boolean] = js.undefined
   /** {default:null}, allow to specify if there what fields we wish to return as unserialized raw buffer. */
-  var fieldsAsRaw: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
+  var fieldsAsRaw: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
   /** {default:false}, deserialize Binary data directly into node.js Buffer object. */
   var promoteBuffers: js.UndefOr[scala.Boolean] = js.undefined
   /** {default:true}, when deserializing a Long will fit it into a Number if it's smaller than 53 bits. */

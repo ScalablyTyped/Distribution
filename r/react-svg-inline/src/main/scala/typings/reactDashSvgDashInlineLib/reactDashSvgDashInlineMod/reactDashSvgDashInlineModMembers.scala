@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-svg-inline", JSImport.Namespace)
 @js.native
 object reactDashSvgDashInlineModMembers
-  extends ScalablyTyped.runtime.TopLevel[reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.svgInlineNs.SVGInline]
+  extends org.scalablytyped.runtime.TopLevel[reactDashSvgDashInlineLib.reactDashSvgDashInlineMod.svgInlineNs.SVGInline]
 

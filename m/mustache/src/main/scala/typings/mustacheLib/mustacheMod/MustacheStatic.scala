@@ -10,17 +10,17 @@ trait MustacheStatic extends js.Object {
   /**
        * Represents a rendering context by wrapping a view object and maintaining a reference to the parent context.
        */
-  var Context: ScalablyTyped.runtime.Instantiable2[/* view */ js.Any, /* parentContext */ MustacheContext, MustacheContext] = js.native
+  var Context: org.scalablytyped.runtime.Instantiable2[/* view */ js.Any, /* parentContext */ MustacheContext, MustacheContext] = js.native
   /**
        * A simple string scanner that is used by the template parser to find tokens in template strings.
        */
-  var Scanner: ScalablyTyped.runtime.Instantiable1[/* string */ java.lang.String, MustacheScanner] = js.native
+  var Scanner: org.scalablytyped.runtime.Instantiable1[/* string */ java.lang.String, MustacheScanner] = js.native
   /**
        * A Writer knows how to take a stream of tokens and render them to a `string`, given a context.
        *
        * It also maintains a cache of templates to avoid the need to parse the same template twice.
        */
-  var Writer: ScalablyTyped.runtime.Instantiable0[MustacheWriter] = js.native
+  var Writer: org.scalablytyped.runtime.Instantiable0[MustacheWriter] = js.native
   /**
        * The name of the module.
        */

@@ -12,7 +12,7 @@ trait ConfigurationOptions extends js.Object {
            * Note that this will *not* overwrite existing properties with the same name.
            * @default undefined
            */
-  var api: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var api: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * Watch for changes in json files to reload locale on updates
            * @default false
@@ -47,7 +47,7 @@ trait ConfigurationOptions extends js.Object {
            * Language fallback map
            * @default {}
            */
-  var fallbacks: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var fallbacks: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * What to use as the indentation unit
            * @default "\t"

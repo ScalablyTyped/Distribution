@@ -47,8 +47,8 @@ trait KeyboardEvent extends UIEvent {
 @JSGlobal("KeyboardEvent")
 @js.native
 object KeyboardEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, KeyboardEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ KeyboardEventInit, KeyboardEvent] {
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, KeyboardEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ KeyboardEventInit, KeyboardEvent] {
   val DOM_KEY_LOCATION_JOYSTICK: scala.Double = js.native
   val DOM_KEY_LOCATION_LEFT: scala.Double = js.native
   val DOM_KEY_LOCATION_MOBILE: scala.Double = js.native

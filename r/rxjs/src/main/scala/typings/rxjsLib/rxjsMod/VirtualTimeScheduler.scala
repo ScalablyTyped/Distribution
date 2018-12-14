@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class VirtualTimeScheduler ()
   extends rxjsLib.internalSchedulerVirtualTimeSchedulerMod.VirtualTimeScheduler {
-  def this(SchedulerAction: ScalablyTyped.runtime.Instantiable2[
+  def this(SchedulerAction: org.scalablytyped.runtime.Instantiable2[
       /* scheduler */ rxjsLib.internalSchedulerAsyncSchedulerMod.AsyncScheduler, 
       /* work */ js.ThisFunction1[
         /* this */ rxjsLib.internalTypesMod.SchedulerAction[js.Object], 
@@ -18,7 +18,7 @@ class VirtualTimeScheduler ()
       ], 
       rxjsLib.internalSchedulerAsyncActionMod.AsyncAction[js.Object]
     ]) = this()
-  def this(SchedulerAction: ScalablyTyped.runtime.Instantiable2[
+  def this(SchedulerAction: org.scalablytyped.runtime.Instantiable2[
       /* scheduler */ rxjsLib.internalSchedulerAsyncSchedulerMod.AsyncScheduler, 
       /* work */ js.ThisFunction1[
         /* this */ rxjsLib.internalTypesMod.SchedulerAction[js.Object], 

@@ -154,5 +154,5 @@ trait HTMLVideoElement extends HTMLMediaElement {
 @JSGlobal("HTMLVideoElement")
 @js.native
 object HTMLVideoElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLVideoElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLVideoElement]
 

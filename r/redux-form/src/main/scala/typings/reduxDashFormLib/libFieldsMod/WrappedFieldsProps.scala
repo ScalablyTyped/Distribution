@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait WrappedFieldsProps
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[WrappedFieldsProps with reduxDashFormLib.libFieldMod.WrappedFieldProps]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[WrappedFieldsProps with reduxDashFormLib.libFieldMod.WrappedFieldProps]
 

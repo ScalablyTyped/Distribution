@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CellCssStylesHash
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
 

@@ -15,7 +15,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   ] = js.native
   val COACHMARK_ATTRIBUTE_NAME: /* data-coachmarkid */ java.lang.String = js.native
   val ColorClassNames: atUifabricStylingLib.libClassNamesColorClassNamesMod.IColorClassNames = js.native
-  val CommandButton: ScalablyTyped.runtime.Instantiable0[
+  val CommandButton: org.scalablytyped.runtime.Instantiable0[
     officeDashUiDashFabricDashReactLib.libComponentsButtonActionButtonActionButtonMod.ActionButton
   ] = js.native
   val CustomizerContext: reactLib.reactMod.ReactNs.Context[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
@@ -41,7 +41,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   val MAX_COLOR_SATURATION: /* 100 */ scala.Double = js.native
   val MAX_COLOR_VALUE: /* 100 */ scala.Double = js.native
   val PulsingBeaconAnimationStyles: atUifabricStylingLib.Anon_CreateDefaultAnimation = js.native
-  val ResizeGroup: ScalablyTyped.runtime.Instantiable1[
+  val ResizeGroup: org.scalablytyped.runtime.Instantiable1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotTypesMod.IResizeGroupProps, 
     officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotBaseMod.ResizeGroupBase
   ] = js.native
@@ -1092,7 +1092,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def isRelativeUrl(url: java.lang.String): scala.Boolean = js.native
   def isValidShade(): scala.Boolean = js.native
   def isValidShade(shade: officeDashUiDashFabricDashReactLib.libUtilitiesColorShadesMod.Shade): scala.Boolean = js.native
-  def keyframes(timeline: ScalablyTyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
+  def keyframes(timeline: org.scalablytyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme, depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def mapEnumByName[T](

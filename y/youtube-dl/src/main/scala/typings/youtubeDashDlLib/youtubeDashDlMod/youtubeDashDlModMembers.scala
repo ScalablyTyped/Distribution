@@ -11,7 +11,7 @@ object youtubeDashDlModMembers extends js.Object {
   def apply(
     url: java.lang.String,
     arg: js.Array[java.lang.String],
-    opt: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    opt: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): youtubeDashDlLib.youtubeDashDlMod.youtubedlNs.Youtubedl = js.native
 }
 

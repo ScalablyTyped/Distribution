@@ -10,7 +10,7 @@ trait IgTreeGridLocale
   extends /**
 	 * Option for IgTreeGridLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies the collapse indicator tooltip text.
   	 *

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ListSchema_InView extends ListSchema {
   /** Key-value object that represents all aggregations defined for the view.
               Key specifies the field internal name, and value specifies the type of the aggregation. */
-  var Aggregate: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var Aggregate: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /** Either "TRUE" or false (for grouping) */
   var Collapse: java.lang.String
   /** Specifies whether to open items in a client application ("1") or in browser ("0"). */
@@ -41,7 +41,7 @@ trait ListSchema_InView extends ListSchema {
   var ParentHierarchyDisplayField: java.lang.String
   var PresenceAlt: java.lang.String
   /** Represents SPList.RootFolder.Properties. Exists only if SPList.FetchPropertyBagForListView property is set to true. */
-  var PropertyBag: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var PropertyBag: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /** Either "True" or "False" */
   var RenderSaveAsNewViewButton: java.lang.String
   /** Either "True" or "False" */

@@ -289,14 +289,14 @@ trait IAngularStatic extends js.Object {
            * @param context Object to become context (this) for the iterator function.
            */
   def forEach[T](
-    obj: ScalablyTyped.runtime.StringDictionary[T],
+    obj: org.scalablytyped.runtime.StringDictionary[T],
     iterator: js.Function3[
       /* value */ T, 
       /* key */ java.lang.String, 
-      /* obj */ ScalablyTyped.runtime.StringDictionary[T], 
+      /* obj */ org.scalablytyped.runtime.StringDictionary[T], 
       scala.Unit
     ]
-  ): ScalablyTyped.runtime.StringDictionary[T] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[T] = js.native
   /**
            * Invokes the iterator function once for each item in obj collection, which can be either an object or an array. The iterator function is invoked with iterator(value, key), where value is the value of an object property or an array element and key is the object property key or array element index. Specifying a context for the function is optional.
            *
@@ -307,15 +307,15 @@ trait IAngularStatic extends js.Object {
            * @param context Object to become context (this) for the iterator function.
            */
   def forEach[T](
-    obj: ScalablyTyped.runtime.StringDictionary[T],
+    obj: org.scalablytyped.runtime.StringDictionary[T],
     iterator: js.Function3[
       /* value */ T, 
       /* key */ java.lang.String, 
-      /* obj */ ScalablyTyped.runtime.StringDictionary[T], 
+      /* obj */ org.scalablytyped.runtime.StringDictionary[T], 
       scala.Unit
     ],
     context: js.Any
-  ): ScalablyTyped.runtime.StringDictionary[T] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[T] = js.native
   /**
            * Invokes the iterator function once for each item in obj collection, which can be either an object or an array. The iterator function is invoked with iterator(value, key), where value is the value of an object property or an array element and key is the object property key or array element index. Specifying a context for the function is optional.
            *

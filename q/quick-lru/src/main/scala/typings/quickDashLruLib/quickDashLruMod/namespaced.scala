@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced[K, V] () extends QuickLRU[K, V] {
   def this(options: quickDashLruLib.quickDashLruMod.QuickLRUNs.Options) = this()
   /* CompleteClass */
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   override var iterator: js.Function0[stdLib.Iterator[js.Tuple2[K, V]]] = js.native
   /* CompleteClass */
   override val size: scala.Double = js.native

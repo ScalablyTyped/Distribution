@@ -34,5 +34,5 @@ trait PerformanceTiming extends js.Object {
 @JSGlobal("PerformanceTiming")
 @js.native
 object PerformanceTiming
-  extends ScalablyTyped.runtime.Instantiable0[PerformanceTiming]
+  extends org.scalablytyped.runtime.Instantiable0[PerformanceTiming]
 

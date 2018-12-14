@@ -214,6 +214,6 @@ class RangeSort ()
     hasHeaders: scala.Boolean,
     orientation: officeDashJsLib.officeDashJsLibStrings.Rows
   ): scala.Unit = js.native
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 

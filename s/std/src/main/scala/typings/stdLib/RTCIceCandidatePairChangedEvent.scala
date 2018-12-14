@@ -13,5 +13,5 @@ trait RTCIceCandidatePairChangedEvent extends Event {
 @JSGlobal("RTCIceCandidatePairChangedEvent")
 @js.native
 object RTCIceCandidatePairChangedEvent
-  extends ScalablyTyped.runtime.Instantiable0[RTCIceCandidatePairChangedEvent]
+  extends org.scalablytyped.runtime.Instantiable0[RTCIceCandidatePairChangedEvent]
 

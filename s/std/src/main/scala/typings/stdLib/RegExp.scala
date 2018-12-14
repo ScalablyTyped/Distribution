@@ -35,7 +35,7 @@ trait RegExp extends js.Object {
        * that search.
        * @param string A string to search within.
        */
-  @JSName(ScalablyTyped.runtime.Symbol.`match`)
+  @JSName(org.scalablytyped.runtime.Symbol.`match`)
   var `match`: js.Function1[/* string */ java.lang.String, RegExpMatchArray | scala.Null]
   /** Returns a Boolean value indicating the state of the multiline flag (m) used with a regular expression. Default is false. Read-only. */
   val multiline: scala.Boolean
@@ -65,7 +65,7 @@ trait RegExp extends js.Object {
        *               this regular expression will be replaced
        * @param replacer A function that returns the replacement text.
        */
-  @JSName(ScalablyTyped.runtime.Symbol.replace)
+  @JSName(org.scalablytyped.runtime.Symbol.replace)
   var replace: (js.Function2[/* string */ java.lang.String, /* replaceValue */ java.lang.String, java.lang.String]) with (js.Function2[
     /* string */ java.lang.String, 
     /* replacer */ js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String], 
@@ -77,7 +77,7 @@ trait RegExp extends js.Object {
        *
        * @param string The string to search within.
        */
-  @JSName(ScalablyTyped.runtime.Symbol.search)
+  @JSName(org.scalablytyped.runtime.Symbol.search)
   var search: js.Function1[/* string */ java.lang.String, scala.Double]
   /** Returns a copy of the text of the regular expression pattern. Read-only. The regExp argument is a Regular expression object. It can be a variable name or a literal. */
   val source: java.lang.String
@@ -93,7 +93,7 @@ trait RegExp extends js.Object {
        * @param limit if not undefined, the output array is truncated so that it contains no more
        * than 'limit' elements.
        */
-  @JSName(ScalablyTyped.runtime.Symbol.split)
+  @JSName(org.scalablytyped.runtime.Symbol.split)
   var split: js.Function2[
     /* string */ java.lang.String, 
     /* limit */ js.UndefOr[scala.Double], 

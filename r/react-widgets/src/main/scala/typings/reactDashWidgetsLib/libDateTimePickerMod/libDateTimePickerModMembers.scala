@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-widgets/lib/DateTimePicker", JSImport.Namespace)
 @js.native
 object libDateTimePickerModMembers
-  extends ScalablyTyped.runtime.TopLevel[DateTimePickerClass]
+  extends org.scalablytyped.runtime.TopLevel[DateTimePickerClass]
 

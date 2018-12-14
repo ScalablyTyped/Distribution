@@ -13,7 +13,7 @@ trait ContainerInfo extends js.Object {
   var Id: java.lang.String
   var Image: java.lang.String
   var ImageID: java.lang.String
-  var Labels: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var Names: js.Array[java.lang.String]
   var NetworkSettings: dockerodeLib.Anon_Networks
   var Ports: js.Array[Port]

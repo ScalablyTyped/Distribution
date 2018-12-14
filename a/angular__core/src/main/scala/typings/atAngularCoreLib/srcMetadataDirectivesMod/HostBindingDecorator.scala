@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HostBindingDecorator
-  extends ScalablyTyped.runtime.Instantiable0[js.Any]
-     with ScalablyTyped.runtime.Instantiable1[/* hostPropertyName */ java.lang.String, js.Any] {
+  extends org.scalablytyped.runtime.Instantiable0[js.Any]
+     with org.scalablytyped.runtime.Instantiable1[/* hostPropertyName */ java.lang.String, js.Any] {
   /**
        * Decorator that marks a DOM property as a host-binding property and supplies configuration
        * metadata.

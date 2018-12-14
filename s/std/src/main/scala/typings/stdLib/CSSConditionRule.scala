@@ -13,5 +13,5 @@ trait CSSConditionRule extends CSSGroupingRule {
 @JSGlobal("CSSConditionRule")
 @js.native
 object CSSConditionRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSConditionRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSConditionRule]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait WebhookObject
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

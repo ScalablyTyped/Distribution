@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Routes
-  extends /* path */ ScalablyTyped.runtime.StringDictionary[Route]
+  extends /* path */ org.scalablytyped.runtime.StringDictionary[Route]
 

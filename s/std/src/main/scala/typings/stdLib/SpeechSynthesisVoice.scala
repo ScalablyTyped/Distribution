@@ -17,5 +17,5 @@ trait SpeechSynthesisVoice extends js.Object {
 @JSGlobal("SpeechSynthesisVoice")
 @js.native
 object SpeechSynthesisVoice
-  extends ScalablyTyped.runtime.Instantiable0[SpeechSynthesisVoice]
+  extends org.scalablytyped.runtime.Instantiable0[SpeechSynthesisVoice]
 

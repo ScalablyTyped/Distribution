@@ -372,7 +372,7 @@ object WorkDocsNs extends js.Object {
   
   
   trait CustomMetadataMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[CustomMetadataValueType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[CustomMetadataValueType]
   
   
   trait DeactivateUserRequest extends js.Object {
@@ -926,11 +926,11 @@ object WorkDocsNs extends js.Object {
   
   
   trait DocumentSourceUrlMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[UrlType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[UrlType]
   
   
   trait DocumentThumbnailUrlMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[UrlType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[UrlType]
   
   
   trait DocumentVersionMetadata extends js.Object {
@@ -1490,7 +1490,7 @@ object WorkDocsNs extends js.Object {
   
   
   trait SignedHeaderMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[HeaderValueType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[HeaderValueType]
   
   
   trait StorageRuleType extends js.Object {

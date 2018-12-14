@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ResponsiveOptions
-  extends /* breakpoint */ ScalablyTyped.runtime.NumberDictionary[CommonOptions]
+  extends /* breakpoint */ org.scalablytyped.runtime.NumberDictionary[CommonOptions]
 

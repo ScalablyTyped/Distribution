@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TextBufferStatic
   extends /** Create a new buffer with the given params. */
-ScalablyTyped.runtime.Instantiable0[TextBuffer]
+org.scalablytyped.runtime.Instantiable0[TextBuffer]
      with /** Create a new buffer with the given starting text. */
 /** Create a new buffer with the given params. */
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       (/* text */ java.lang.String) | (/* params */ textDashBufferLib.Anon_Text), 
       TextBuffer
     ] {

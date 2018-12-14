@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("consolidate", JSImport.Namespace)
 @js.native
 object consolidateModMembers
-  extends ScalablyTyped.runtime.TopLevel[Consolidate]
+  extends org.scalablytyped.runtime.TopLevel[Consolidate]
 

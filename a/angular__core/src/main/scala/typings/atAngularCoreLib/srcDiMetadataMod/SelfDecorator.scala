@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SelfDecorator
-  extends ScalablyTyped.runtime.Instantiable0[Self] {
+  extends org.scalablytyped.runtime.Instantiable0[Self] {
   /**
        * A constructor parameter decorator that tells the DI framework
        * to retrieve a dependency only from the local injector.

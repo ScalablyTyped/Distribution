@@ -37,5 +37,5 @@ trait SVGFEOffsetElement
 @JSGlobal("SVGFEOffsetElement")
 @js.native
 object SVGFEOffsetElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEOffsetElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEOffsetElement]
 

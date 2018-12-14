@@ -14,6 +14,6 @@ trait ContributedFeatureValueRule extends js.Object {
   /**
        * Properties to feed to the IContributedFeatureValuePlugin
        */
-  var properties: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var properties: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

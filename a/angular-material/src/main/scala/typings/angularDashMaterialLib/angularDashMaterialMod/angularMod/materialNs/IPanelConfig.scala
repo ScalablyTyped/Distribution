@@ -27,7 +27,7 @@ trait IPanelConfig extends js.Object {
   var hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
    // default: true
-  var locals: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var locals: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ java.lang.String, _]] = js.undefined
    // default: false
   var onDomAdded: js.UndefOr[js.Function1[/* repeated */js.Any, js.Thenable[scala.Unit] | scala.Unit]] = js.undefined

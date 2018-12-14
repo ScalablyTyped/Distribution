@@ -11,7 +11,7 @@ trait ArrayFunction extends js.Object {
   // Since syntax is like check.array.of.number(2) - it's not yet clear to me how this even works, so...
   // I might use of: CheckType, but it will just return type guards for primitives and object type
   // and will make variable simply non array type in conditionals.
-  var of: ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  var of: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   def apply(a: js.Any): /* is Array */scala.Boolean = js.native
 }
 

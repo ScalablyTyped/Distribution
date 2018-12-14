@@ -10,7 +10,7 @@ trait IgSchedulerDayViewSettings
   extends /**
 	 * Option for IgSchedulerDayViewSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets the number of days are visible at a time in the day view. 1 to 7 days are supported.
   	 *

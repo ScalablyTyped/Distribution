@@ -65,6 +65,6 @@ trait Dimensions extends js.Object {
        * This should only be called from native code by sending the didUpdateDimensions event.
        * @param dims Simple string-keyed object of dimensions to set
        */
-  def set(dims: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def set(dims: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
 }
 

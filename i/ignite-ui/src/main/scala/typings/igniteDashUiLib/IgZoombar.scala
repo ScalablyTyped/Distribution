@@ -10,7 +10,7 @@ trait IgZoombar
   extends /**
 	 * Option for igZoombar
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies how the target widget's clone is rendered inside the Zoombar.
   	 * object A valid set of properties to initialize the clone with.

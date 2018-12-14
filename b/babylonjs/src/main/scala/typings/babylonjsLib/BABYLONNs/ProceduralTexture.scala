@@ -94,7 +94,7 @@ class ProceduralTexture protected () extends Texture {
   var _samplers: js.Any = js.native
   var _size: js.Any = js.native
   /** @hidden */
-  var _textures: ScalablyTyped.runtime.StringDictionary[Texture] = js.native
+  var _textures: org.scalablytyped.runtime.StringDictionary[Texture] = js.native
   var _uniforms: js.Any = js.native
   var _vectors2: js.Any = js.native
   var _vectors3: js.Any = js.native

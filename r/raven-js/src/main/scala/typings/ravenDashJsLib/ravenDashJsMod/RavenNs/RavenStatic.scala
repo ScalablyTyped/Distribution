@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RavenStatic extends js.Object {
-  var Plugins: ScalablyTyped.runtime.StringDictionary[RavenPlugin] = js.native
+  var Plugins: org.scalablytyped.runtime.StringDictionary[RavenPlugin] = js.native
   /** Raven.js version. */
   var VERSION: java.lang.String = js.native
   /*
@@ -212,7 +212,7 @@ trait RavenStatic extends js.Object {
           *                 If user is undefined, the current user context will be removed.
           * @return {Raven}
           */
-  def setUserContext(user: ScalablyTyped.runtime.StringDictionary[js.Any]): RavenStatic = js.native
+  def setUserContext(user: org.scalablytyped.runtime.StringDictionary[js.Any]): RavenStatic = js.native
   /** Show Sentry user feedback dialog */
   def showReportDialog(): scala.Unit = js.native
   /** Show Sentry user feedback dialog */

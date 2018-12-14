@@ -43,6 +43,6 @@ object Node extends js.Object {
   /**
      * Deserialize a node from its JSON representation.
      */
-  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, json: ScalablyTyped.runtime.StringDictionary[js.Any]): prosemirrorDashModelLib.prosemirrorDashModelMod.ProsemirrorNode[S] = js.native
+  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, json: org.scalablytyped.runtime.StringDictionary[js.Any]): prosemirrorDashModelLib.prosemirrorDashModelMod.ProsemirrorNode[S] = js.native
 }
 

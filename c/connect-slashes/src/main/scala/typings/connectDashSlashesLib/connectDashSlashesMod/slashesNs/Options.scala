@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var base: js.UndefOr[java.lang.String] = js.undefined
   var code: js.UndefOr[scala.Double] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 

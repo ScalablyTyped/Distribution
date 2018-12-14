@@ -10,5 +10,5 @@ trait SelectionCollectionSettingsSubscribers
   extends /**
 	 * Option for SelectionCollectionSettingsSubscribers
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

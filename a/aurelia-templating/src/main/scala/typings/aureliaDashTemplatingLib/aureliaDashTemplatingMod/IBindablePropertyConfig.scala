@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IBindablePropertyConfig
   extends // For compatibility and future extension
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var attribute: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The name of a view model method to invoke when the property is updated.

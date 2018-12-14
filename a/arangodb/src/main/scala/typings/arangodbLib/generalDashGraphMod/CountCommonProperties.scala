@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CountCommonProperties
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[scala.Double]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]]
 

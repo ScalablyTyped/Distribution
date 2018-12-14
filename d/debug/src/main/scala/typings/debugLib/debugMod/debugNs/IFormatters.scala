@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IFormatters
-  extends /* formatter */ ScalablyTyped.runtime.StringDictionary[js.Function]
+  extends /* formatter */ org.scalablytyped.runtime.StringDictionary[js.Function]
 

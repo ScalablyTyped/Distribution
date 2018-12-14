@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TypeMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[graphqlLib.typeDefinitionMod.GraphQLNamedType]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[graphqlLib.typeDefinitionMod.GraphQLNamedType]
 

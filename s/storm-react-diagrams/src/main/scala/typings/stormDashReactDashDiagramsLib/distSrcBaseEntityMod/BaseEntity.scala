@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 class BaseEntity[T /* <: BaseListener[_] */] () extends js.Object {
   def this(id: java.lang.String) = this()
   var id: java.lang.String = js.native
-  var listeners: ScalablyTyped.runtime.StringDictionary[T] = js.native
+  var listeners: org.scalablytyped.runtime.StringDictionary[T] = js.native
   var locked: scala.Boolean = js.native
   def addListener(listener: T): java.lang.String = js.native
   def clearListeners(): scala.Unit = js.native
-  def clone(lookupTable: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def clone(lookupTable: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   def deSerialize(
-    data: ScalablyTyped.runtime.StringDictionary[js.Any],
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
     engine: stormDashReactDashDiagramsLib.distSrcDiagramEngineMod.DiagramEngine
   ): scala.Unit = js.native
-  def doClone(lookupTable: ScalablyTyped.runtime.StringDictionary[js.Any], clone: js.Any): scala.Unit = js.native
+  def doClone(lookupTable: org.scalablytyped.runtime.StringDictionary[js.Any], clone: js.Any): scala.Unit = js.native
   def getID(): java.lang.String = js.native
   def isLocked(): scala.Boolean = js.native
   def iterateListeners(cb: js.Function2[/* t */ T, /* event */ BaseEvent[_], _]): scala.Unit = js.native

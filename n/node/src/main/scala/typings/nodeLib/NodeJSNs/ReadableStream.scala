@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ReadableStream extends EventEmitter {
-  @JSName(ScalablyTyped.runtime.Symbol.asyncIterator)
+  @JSName(org.scalablytyped.runtime.Symbol.asyncIterator)
   var asyncIterator: js.Function0[nodeLib.AsyncIterableIterator[java.lang.String | nodeLib.Buffer]] = js.native
   var readable: scala.Boolean = js.native
   def isPaused(): scala.Boolean = js.native

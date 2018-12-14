@@ -10,7 +10,7 @@ trait Anon_RegistryUrls
   extends /**
              * Registry url's with token information
              */
-/* registryUrls */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
+/* registryUrls */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
   /**
                * A registry url used for matching
                */

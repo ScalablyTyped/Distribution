@@ -21,7 +21,7 @@ trait AsyncWriter extends js.Object {
   def error(e: nodeLib.Error): scala.Unit = js.native
   def flush(): scala.Unit = js.native
   def getAttribute(): js.Any = js.native
-  def getAttributes(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getAttributes(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getOutput(): java.lang.String = js.native
   def handleBeginAsync(options: BeginAsyncOptions, parent: AsyncWriter): scala.Unit = js.native
   def handleBeginAsync(options: scala.Double, parent: AsyncWriter): scala.Unit = js.native

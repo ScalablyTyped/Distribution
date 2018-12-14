@@ -20,7 +20,7 @@ trait nlobjSelectOption
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * return internal ID for select option
        * @return {string}

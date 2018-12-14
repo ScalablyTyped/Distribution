@@ -15,7 +15,7 @@ class DefaultPortModel protected ()
   var in: scala.Boolean = js.native
   var label: java.lang.String = js.native
   @JSName("links")
-  var links_DefaultPortModel: ScalablyTyped.runtime.StringDictionary[
+  var links_DefaultPortModel: org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcDefaultsModelsDefaultLinkModelMod.DefaultLinkModel
   ] = js.native
   def link(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener] = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("istanbul", JSImport.Namespace)
 @js.native
 object istanbulModMembers
-  extends ScalablyTyped.runtime.TopLevel[istanbulLib.istanbulMod.istanbulNs.Istanbul]
+  extends org.scalablytyped.runtime.TopLevel[istanbulLib.istanbulMod.istanbulNs.Istanbul]
 

@@ -14,6 +14,6 @@ trait TaskOptions extends js.Object {
   /**
            * Object documenting options which can be passed to your task
            */
-  var options: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 

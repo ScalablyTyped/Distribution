@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.ui.balloonPanel")
 @js.native
 class balloonPanel () extends js.Object {
-  var activeShowListeners: ScalablyTyped.runtime.NumberDictionary[ckeditorLib.Anon_RemoveListenerListenerRegistration] = js.native
+  var activeShowListeners: org.scalablytyped.runtime.NumberDictionary[ckeditorLib.Anon_RemoveListenerListenerRegistration] = js.native
   var editor: ckeditorLib.CKEDITORNs.editor = js.native
-  var focusables: ScalablyTyped.runtime.NumberDictionary[ckeditorLib.CKEDITORNs.domNs.element] = js.native
+  var focusables: org.scalablytyped.runtime.NumberDictionary[ckeditorLib.CKEDITORNs.domNs.element] = js.native
   var height: java.lang.String = js.native
   var parts: ckeditorLib.CKEDITORNs.uiNs.balloonPanelNs.parts = js.native
   var rect: ckeditorLib.CKEDITORNs.uiNs.balloonPanelNs.rect = js.native
-  var showListeners: ScalablyTyped.runtime.NumberDictionary[js.Function0[ckeditorLib.CKEDITORNs.listenerRegistration]] = js.native
+  var showListeners: org.scalablytyped.runtime.NumberDictionary[js.Function0[ckeditorLib.CKEDITORNs.listenerRegistration]] = js.native
   var templateDefinitions: ckeditorLib.CKEDITORNs.uiNs.balloonPanelNs.templateDefinitions = js.native
   var templates: ckeditorLib.CKEDITORNs.uiNs.balloonPanelNs.templates = js.native
   var triangleHeight: scala.Double = js.native

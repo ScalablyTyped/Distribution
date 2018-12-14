@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object nodeDashXmppDashCoreModMembers extends js.Object {
   def createElement(name: java.lang.String): ltxLib.libElementMod.Element = js.native
+  def createElement(name: java.lang.String, attrs: java.lang.String, children: ltxLib.libElementMod.Node*): ltxLib.libElementMod.Element = js.native
   def createElement(
     name: java.lang.String,
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     children: ltxLib.libElementMod.Node*
   ): ltxLib.libElementMod.Element = js.native
-  def createElement(name: java.lang.String, attrs: java.lang.String, children: ltxLib.libElementMod.Node*): ltxLib.libElementMod.Element = js.native
   def createStanza(name: java.lang.String): ltxLib.ltxMod.Element = js.native
   def createStanza(name: java.lang.String, attrs: js.Any): ltxLib.ltxMod.Element = js.native
   def escapeXML(s: java.lang.String): java.lang.String = js.native

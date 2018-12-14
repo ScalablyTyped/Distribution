@@ -32,7 +32,7 @@ trait MarkOptions extends js.Object {
   var log: js.UndefOr[js.Object] = js.undefined
   var noMatch: js.UndefOr[js.Function1[/* term */ java.lang.String, scala.Unit]] = js.undefined
   var separateWordSearch: js.UndefOr[scala.Boolean] = js.undefined
-  var synonyms: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var synonyms: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var wildcards: js.UndefOr[
     markDotJsLib.markDotJsLibStrings.disabled | markDotJsLib.markDotJsLibStrings.enabled | markDotJsLib.markDotJsLibStrings.withSpaces
   ] = js.undefined

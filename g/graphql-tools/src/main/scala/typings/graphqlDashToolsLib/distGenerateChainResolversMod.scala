@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 object distGenerateChainResolversMod extends js.Object {
   def chainResolvers(
     resolvers: js.Array[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ): js.Function4[
     /* root */ js.Any, 
-    /* args */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* args */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* ctx */ js.Any, 
     /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
     _

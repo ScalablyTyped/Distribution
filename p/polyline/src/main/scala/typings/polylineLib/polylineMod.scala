@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("polyline", JSImport.Namespace)
 @js.native
 object polylineMod
-  extends ScalablyTyped.runtime.TopLevel[Polyline]
+  extends org.scalablytyped.runtime.TopLevel[Polyline]
 

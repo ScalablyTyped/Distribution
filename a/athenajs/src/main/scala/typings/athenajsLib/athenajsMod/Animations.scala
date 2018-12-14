@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Animations
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[AnimationObject]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[AnimationObject]
 

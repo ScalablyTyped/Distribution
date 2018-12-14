@@ -22,5 +22,5 @@ trait SVGTransformList extends js.Object {
 @JSGlobal("SVGTransformList")
 @js.native
 object SVGTransformList
-  extends ScalablyTyped.runtime.Instantiable0[SVGTransformList]
+  extends org.scalablytyped.runtime.Instantiable0[SVGTransformList]
 

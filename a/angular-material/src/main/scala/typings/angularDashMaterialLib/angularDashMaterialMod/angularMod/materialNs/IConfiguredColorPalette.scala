@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait IConfiguredColorPalette
   extends IColorPalette
-     with /* name */ ScalablyTyped.runtime.StringDictionary[IPalette]
+     with /* name */ org.scalablytyped.runtime.StringDictionary[IPalette]
 

@@ -3515,19 +3515,19 @@ object MediaConvertNs extends js.Object {
   
   
   trait __mapOfAudioSelector
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AudioSelector]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AudioSelector]
   
   
   trait __mapOfAudioSelectorGroup
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AudioSelectorGroup]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AudioSelectorGroup]
   
   
   trait __mapOfCaptionSelector
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[CaptionSelector]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[CaptionSelector]
   
   
   trait __mapOf__string
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[__string]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   val TypesNs: this.type = js.native
   type AacAudioDescriptionBroadcasterMix = awsDashSdkLib.awsDashSdkLibStrings.BROADCASTER_MIXED_AD | awsDashSdkLib.awsDashSdkLibStrings.NORMAL | java.lang.String

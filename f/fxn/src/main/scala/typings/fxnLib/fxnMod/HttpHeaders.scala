@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait HttpHeaders
-  extends /* item */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* item */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

@@ -13,7 +13,7 @@ class List ()
 @JSImport("antd", "List")
 @js.native
 object List extends js.Object {
-  var Item: ScalablyTyped.runtime.Instantiable0[antdLib.libListItemMod.default] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[antdLib.libListItemMod.default] = js.native
   var childContextTypes: antdLib.Anon_Grid = js.native
   var defaultProps: antdLib.Anon_BorderedLoading = js.native
 }

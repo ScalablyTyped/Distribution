@@ -78,5 +78,5 @@ trait MutationObserver extends js.Object {
 @JSGlobal("MutationObserver")
 @js.native
 object MutationObserver
-  extends ScalablyTyped.runtime.Instantiable1[/* callback */ MutationCallback, MutationObserver]
+  extends org.scalablytyped.runtime.Instantiable1[/* callback */ MutationCallback, MutationObserver]
 

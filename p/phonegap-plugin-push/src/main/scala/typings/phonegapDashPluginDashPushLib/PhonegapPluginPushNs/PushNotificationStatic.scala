@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PushNotificationStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ InitOptions, PushNotification] {
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ InitOptions, PushNotification] {
   def init(options: InitOptions): PushNotification = js.native
 }
 

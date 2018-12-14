@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DialogContainerProps
   extends reactDashMdLib.libDialogsDialogMod.DialogProps
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var activeElementFocus: js.UndefOr[scala.Boolean] = js.undefined
   var closeOnEsc: js.UndefOr[scala.Boolean] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined

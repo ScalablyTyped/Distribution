@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("autoprefixer", JSImport.Namespace)
 @js.native
 object autoprefixerModMembers
-  extends ScalablyTyped.runtime.TopLevel[autoprefixerLib.autoprefixerMod.autoprefixerNs.Autoprefixer]
+  extends org.scalablytyped.runtime.TopLevel[autoprefixerLib.autoprefixerMod.autoprefixerNs.Autoprefixer]
 

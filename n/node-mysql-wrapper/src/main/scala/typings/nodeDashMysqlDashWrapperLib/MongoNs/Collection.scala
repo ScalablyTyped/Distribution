@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Collection[T] extends js.Object {
   def _ensureIndex(indexName: java.lang.String): scala.Unit = js.native
-  def _ensureIndex(indexName: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def _ensureIndex(indexName: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def allow(options: nodeDashMysqlDashWrapperLib.Anon_Insert[T]): scala.Boolean = js.native
   def deny(options: nodeDashMysqlDashWrapperLib.Anon_Insert[T]): scala.Boolean = js.native
   def find(): Cursor[T] = js.native

@@ -23,7 +23,7 @@ trait LContext extends js.Object {
        * The map of local references (local reference name => element or directive instance) that exist
        * on this element.
        */
-  var localRefs: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null]
+  var localRefs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null]
   /**
        * The instance of the DOM node that is attached to the lNode.
        */

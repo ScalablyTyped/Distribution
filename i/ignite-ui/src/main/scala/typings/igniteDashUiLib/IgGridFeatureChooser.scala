@@ -10,7 +10,7 @@ trait IgGridFeatureChooser
   extends /**
 	 * Option for igGridFeatureChooser
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var animationDuration: js.UndefOr[scala.Double] = js.undefined
   var dropDownWidth: js.UndefOr[js.Any] = js.undefined
   var featureChooserDropDownOpened: js.UndefOr[FeatureChooserDropDownOpenedEvent] = js.undefined

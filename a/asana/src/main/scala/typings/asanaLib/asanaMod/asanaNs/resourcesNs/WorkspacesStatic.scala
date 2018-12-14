@@ -10,5 +10,5 @@ trait WorkspacesStatic
   extends /**
              * @param dispatcher
              */
-ScalablyTyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Workspaces]
+org.scalablytyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Workspaces]
 

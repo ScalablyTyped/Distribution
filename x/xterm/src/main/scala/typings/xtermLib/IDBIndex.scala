@@ -172,5 +172,5 @@ trait IDBIndex extends js.Object {
 @JSGlobal("IDBIndex")
 @js.native
 object IDBIndex
-  extends ScalablyTyped.runtime.Instantiable0[IDBIndex]
+  extends org.scalablytyped.runtime.Instantiable0[IDBIndex]
 

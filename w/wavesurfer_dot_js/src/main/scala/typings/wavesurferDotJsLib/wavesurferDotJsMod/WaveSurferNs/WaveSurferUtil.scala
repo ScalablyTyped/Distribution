@@ -16,6 +16,6 @@ trait WaveSurferUtil extends js.Object {
   def min(values: js.Array[scala.Double]): scala.Double
   def preventClick(): scala.Unit
   def requestAnimationFrame(): js.Function1[/* fn */ js.Function1[/* t */ scala.Double, scala.Unit], scala.Double]
-  def style(el: stdLib.HTMLElement, styles: ScalablyTyped.runtime.StringDictionary[java.lang.String]): stdLib.HTMLElement
+  def style(el: stdLib.HTMLElement, styles: org.scalablytyped.runtime.StringDictionary[java.lang.String]): stdLib.HTMLElement
 }
 

@@ -15,7 +15,7 @@ object libDirectivesModMembers extends js.Object {
   def shouldInclude(selection: graphqlLib.languageAstMod.SelectionNode): scala.Boolean = js.native
   def shouldInclude(
     selection: graphqlLib.languageAstMod.SelectionNode,
-    variables: ScalablyTyped.runtime.StringDictionary[js.Any]
+    variables: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Boolean = js.native
 }
 

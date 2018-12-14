@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 class MockList protected () extends js.Object {
   def this(len: js.Array[scala.Double]) = this()
   def this(len: scala.Double) = this()
-  def this(len: js.Array[scala.Double], wrappedFunction: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]) = this()
-  def this(len: scala.Double, wrappedFunction: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]) = this()
+  def this(len: js.Array[scala.Double], wrappedFunction: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]) = this()
+  def this(len: scala.Double, wrappedFunction: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]) = this()
   var len: js.Any = js.native
   var randint: js.Any = js.native
   var wrappedFunction: js.Any = js.native
   def mock(
     root: js.Any,
-    args: ScalablyTyped.runtime.StringDictionary[js.Any],
+    args: org.scalablytyped.runtime.StringDictionary[js.Any],
     context: js.Any,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
     fieldType: graphqlLib.typeDefinitionMod.GraphQLList[_],

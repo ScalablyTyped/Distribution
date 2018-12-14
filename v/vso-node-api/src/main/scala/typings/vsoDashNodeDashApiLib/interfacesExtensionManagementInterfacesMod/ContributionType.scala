@@ -18,6 +18,6 @@ trait ContributionType extends ContributionBase {
   /**
        * Describes the allowed properties for this contribution type
        */
-  var properties: ScalablyTyped.runtime.StringDictionary[ContributionPropertyDescription]
+  var properties: org.scalablytyped.runtime.StringDictionary[ContributionPropertyDescription]
 }
 

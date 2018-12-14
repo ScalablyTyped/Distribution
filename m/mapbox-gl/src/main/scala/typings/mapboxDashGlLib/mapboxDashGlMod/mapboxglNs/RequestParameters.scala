@@ -17,7 +17,7 @@ trait RequestParameters extends js.Object {
   /**
            * The headers to be sent with the request.
            */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var method: js.UndefOr[
     mapboxDashGlLib.mapboxDashGlLibStrings.GET | mapboxDashGlLib.mapboxDashGlLibStrings.POST | mapboxDashGlLib.mapboxDashGlLibStrings.PUT
   ] = js.undefined

@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object fluxibleDashRouterModMembers extends js.Object {
   def handleHistory(
-    Component: ScalablyTyped.runtime.Instantiable1[
+    Component: org.scalablytyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
       reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ]
-  ): ScalablyTyped.runtime.Instantiable1[
+  ): org.scalablytyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
     reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native
   def handleHistory(
-    Component: ScalablyTyped.runtime.Instantiable1[
+    Component: org.scalablytyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
       reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ],
     opts: js.Object
-  ): ScalablyTyped.runtime.Instantiable1[
+  ): org.scalablytyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
     reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native

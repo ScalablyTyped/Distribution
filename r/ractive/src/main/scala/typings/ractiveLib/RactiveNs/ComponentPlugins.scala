@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ComponentPlugins
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ComponentPlugin]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ComponentPlugin]
 

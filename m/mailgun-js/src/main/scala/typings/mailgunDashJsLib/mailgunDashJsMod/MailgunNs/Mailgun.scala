@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Mailgun extends js.Object {
-  var Attachment: ScalablyTyped.runtime.Instantiable1[/* params */ AttachmentParams, Attachment] = js.native
+  var Attachment: org.scalablytyped.runtime.Instantiable1[/* params */ AttachmentParams, Attachment] = js.native
   def lists(list: java.lang.String): Lists = js.native
   def messages(): Messages = js.native
   def parse(addressList: js.Array[java.lang.String]): js.Promise[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ParseResponse] = js.native

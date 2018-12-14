@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LambdaLog ()
   extends nodeLib.eventsMod.EventEmitter
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def this(options: LambdaLogOptions) = this()
   def this(options: LambdaLogOptions, levels: js.Any) = this()
   var LambdaLog: LambdaLog = js.native

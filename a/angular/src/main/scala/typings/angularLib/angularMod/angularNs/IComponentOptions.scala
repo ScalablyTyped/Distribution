@@ -19,7 +19,7 @@ trait IComponentOptions extends js.Object {
            * Define DOM attribute binding to component properties. Component properties are always bound to the component
            * controller and not to the scope.
            */
-  var bindings: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var bindings: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * Controller constructor function that should be associated with newly created scope or the name of a registered
            * controller if passed as a string. Empty function by default.
@@ -37,7 +37,7 @@ trait IComponentOptions extends js.Object {
            * Note that the required controllers will not be available during the instantiation of the controller,
            * but they are guaranteed to be available just before the $onInit method is executed!
            */
-  var require: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var require: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * html template as a string or a function that returns an html template as a string which should be used as the
            * contents of this component. Empty string by default.
@@ -58,6 +58,6 @@ trait IComponentOptions extends js.Object {
   /**
            * Whether transclusion is enabled. Disabled by default.
            */
-  var transclude: js.UndefOr[scala.Boolean | ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var transclude: js.UndefOr[scala.Boolean | org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 

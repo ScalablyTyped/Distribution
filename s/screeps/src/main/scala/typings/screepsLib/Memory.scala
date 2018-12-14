@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait Memory
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
-  var creeps: ScalablyTyped.runtime.StringDictionary[CreepMemory]
-  var flags: ScalablyTyped.runtime.StringDictionary[FlagMemory]
-  var rooms: ScalablyTyped.runtime.StringDictionary[RoomMemory]
-  var spawns: ScalablyTyped.runtime.StringDictionary[SpawnMemory]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  var creeps: org.scalablytyped.runtime.StringDictionary[CreepMemory]
+  var flags: org.scalablytyped.runtime.StringDictionary[FlagMemory]
+  var rooms: org.scalablytyped.runtime.StringDictionary[RoomMemory]
+  var spawns: org.scalablytyped.runtime.StringDictionary[SpawnMemory]
 }
 

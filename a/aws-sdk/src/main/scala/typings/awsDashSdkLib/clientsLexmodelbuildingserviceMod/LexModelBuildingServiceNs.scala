@@ -142,7 +142,7 @@ object LexModelBuildingServiceNs extends js.Object {
   
   
   trait ChannelConfigurationMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait ClientApiVersions extends js.Object {

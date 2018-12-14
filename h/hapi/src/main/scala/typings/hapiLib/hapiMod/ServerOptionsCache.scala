@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ServerOptionsCache
   extends catboxLib.catboxMod.PolicyOptions[js.Any]
      with /** other options passed to the catbox strategy used. Other options are only passed to catbox when engine above is a class or function and ignored if engine is a catbox engine object). */
-/* s */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* s */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** a class, a prototype function, or a catbox engine object. */
   var engine: js.UndefOr[catboxLib.catboxMod.EnginePrototypeOrObject] = js.undefined
   /**

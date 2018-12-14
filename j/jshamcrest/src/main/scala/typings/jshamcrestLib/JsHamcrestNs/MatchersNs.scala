@@ -38,7 +38,7 @@ object MatchersNs extends js.Object {
   def hasMember(memberName: java.lang.String): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native
   def hasMember(memberName: java.lang.String, matcherOrValue: js.Any): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native
   def hasSize(matcherOrValue: js.Any): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native
-  def instanceOf(clazz: ScalablyTyped.runtime.Instantiable0[js.Any]): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native
+  def instanceOf(clazz: org.scalablytyped.runtime.Instantiable0[js.Any]): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native
   def is(matcherOrValue: js.Any): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native
   def isIn(items: js.Any*): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native
   def lessThan(expected: js.Any): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native

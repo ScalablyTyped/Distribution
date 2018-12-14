@@ -32,9 +32,9 @@ object NavNs extends js.Object {
   def navigate(url: java.lang.String): scala.Unit = js.native
   def onClickHook(evt: stdLib.Event, topElm: stdLib.HTMLElement): scala.Unit = js.native
   def pageUrlValidation(url: java.lang.String, alertString: java.lang.String): java.lang.String = js.native
-  def parseHash(hash: java.lang.String): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def parseHash(hash: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def removeMDSQueryParametersFromUrl(url: java.lang.String): java.lang.String = js.native
-  def urlFromHashBag(hashObject: ScalablyTyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
+  def urlFromHashBag(hashObject: org.scalablytyped.runtime.StringDictionary[java.lang.String]): java.lang.String = js.native
   def wantsNewTab(evt: stdLib.Event): scala.Boolean = js.native
 }
 

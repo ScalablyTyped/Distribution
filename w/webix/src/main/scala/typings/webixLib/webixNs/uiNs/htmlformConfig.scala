@@ -26,7 +26,7 @@ trait htmlformConfig extends js.Object {
   var minHeight: js.UndefOr[scala.Double] = js.undefined
   var minWidth: js.UndefOr[scala.Double] = js.undefined
   var on: js.UndefOr[webixLib.webixNs.EventHash] = js.undefined
-  var onClick: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined

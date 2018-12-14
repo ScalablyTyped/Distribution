@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IPropertyDefAdmin
-  extends ScalablyTyped.runtime.Instantiable0[IPropertyDefAdmin]
+  extends org.scalablytyped.runtime.Instantiable0[IPropertyDefAdmin]
 

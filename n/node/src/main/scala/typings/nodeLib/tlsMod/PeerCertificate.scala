@@ -10,7 +10,7 @@ trait PeerCertificate extends js.Object {
   var exponent: java.lang.String
   var ext_key_usage: js.Array[java.lang.String]
   var fingerprint: java.lang.String
-  var infoAccess: ScalablyTyped.runtime.StringDictionary[js.UndefOr[js.Array[java.lang.String]]]
+  var infoAccess: org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Array[java.lang.String]]]
   var issuer: Certificate
   var modulus: java.lang.String
   var raw: nodeLib.Buffer

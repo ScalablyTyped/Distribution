@@ -12,7 +12,7 @@ class StaticDataSource protected () extends js.Object {
   def this(jsGridData: IGridData, optFnGetPropType: js.Function3[
       /* recordKey */ java.lang.String, 
       /* key */ java.lang.String, 
-      /* dataPropMap */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+      /* dataPropMap */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       _
     ]) = this()
   def AddColumn(gridField: GridField, values: js.Array[IValue]): scala.Unit = js.native

@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait IStaleWhileRevalidateConstructor
-  extends ScalablyTyped.runtime.Instantiable0[StaleWhileRevalidate]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ stdLib.Partial[IStaleWhileRevalidateOptions], StaleWhileRevalidate]
+  extends org.scalablytyped.runtime.Instantiable0[StaleWhileRevalidate]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ stdLib.Partial[IStaleWhileRevalidateOptions], StaleWhileRevalidate]
 

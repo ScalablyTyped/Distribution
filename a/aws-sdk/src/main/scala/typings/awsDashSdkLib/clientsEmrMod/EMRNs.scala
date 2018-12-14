@@ -2238,7 +2238,7 @@ object EMRNs extends js.Object {
   
   
   trait StringMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait SupportedProductConfig extends js.Object {

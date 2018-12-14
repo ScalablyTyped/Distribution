@@ -14,7 +14,7 @@ class Layer () extends Evented {
   var getAttribution: js.UndefOr[js.Function0[java.lang.String | scala.Null]] = js.native
   var getEvents: js.UndefOr[
     js.Function0[
-      ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ LeafletEvent, scala.Unit]]
+      org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ LeafletEvent, scala.Unit]]
     ]
   ] = js.native
   def addTo(map: LayerGroup[_]): this.type = js.native

@@ -10,7 +10,7 @@ trait Anon_ApplicationDataAltitude extends js.Object {
   var altitude: js.UndefOr[scala.Double] = js.undefined
   var applicationData: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.LazyMap] = js.undefined
   var author: js.UndefOr[java.lang.String] = js.undefined
-  var classifications: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var classifications: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var contentClass: js.UndefOr[java.lang.String] = js.undefined
   var creatorId: js.UndefOr[scala.Double] = js.undefined
   var lastEditedBy: js.UndefOr[java.lang.String] = js.undefined

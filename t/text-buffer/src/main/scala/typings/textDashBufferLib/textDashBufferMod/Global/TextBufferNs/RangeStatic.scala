@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RangeStatic
   extends /** Construct a Range object. */
-ScalablyTyped.runtime.Instantiable0[Range]
+org.scalablytyped.runtime.Instantiable0[Range]
      with /** Construct a Range object. */
-ScalablyTyped.runtime.Instantiable1[/* pointA */ PointCompatible, Range]
+org.scalablytyped.runtime.Instantiable1[/* pointA */ PointCompatible, Range]
      with /** Construct a Range object. */
-ScalablyTyped.runtime.Instantiable2[/* pointA */ PointCompatible, /* pointB */ PointCompatible, Range] {
+org.scalablytyped.runtime.Instantiable2[/* pointA */ PointCompatible, /* pointB */ PointCompatible, Range] {
   /** Call this with the result of Range::serialize to construct a new Range. */
   def deserialize(array: js.Object): Range = js.native
   /** Convert any range-compatible object to a Range. */

@@ -33,7 +33,7 @@ trait Contact extends ContactProperties {
 @js.native
 object Contact
   extends /** Constructor of Contact object */
-ScalablyTyped.runtime.Instantiable14[
+org.scalablytyped.runtime.Instantiable14[
       /* id */ js.UndefOr[/* id */ java.lang.String], 
       /* displayName */ js.UndefOr[/* displayName */ java.lang.String], 
       /* name */ js.UndefOr[/* name */ ContactName], 

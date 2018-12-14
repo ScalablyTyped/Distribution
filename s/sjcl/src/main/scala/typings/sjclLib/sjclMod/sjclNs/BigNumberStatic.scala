@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BigNumberStatic
-  extends ScalablyTyped.runtime.Instantiable0[BigNumber]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[BigNumber]
+     with org.scalablytyped.runtime.Instantiable1[
       (/* n */ java.lang.String) | (/* n */ scala.Double) | (/* n */ BigNumber), 
       BigNumber
     ] {

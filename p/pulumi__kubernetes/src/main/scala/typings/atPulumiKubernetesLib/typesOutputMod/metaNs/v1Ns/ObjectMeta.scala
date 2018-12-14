@@ -17,7 +17,7 @@ trait ObjectMeta extends js.Object {
                * be preserved when modifying objects. More info:
                * http://kubernetes.io/docs/user-guide/annotations
                */
-  val annotations: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val annotations: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * The name of the cluster which the object belongs to. This is used to distinguish resources
                * with same name and namespace in different clusters. This field is not set anywhere right
@@ -103,7 +103,7 @@ trait ObjectMeta extends js.Object {
                * select) objects. May match selectors of replication controllers and services. More info:
                * http://kubernetes.io/docs/user-guide/labels
                */
-  val labels: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val labels: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * Name must be unique within a namespace. Is required when creating resources, although some
                * resources may allow a client to request the generation of an appropriate name

@@ -23,14 +23,14 @@ object authNs extends js.Object {
   
   @js.native
   trait AuthenticatorStatic
-    extends ScalablyTyped.runtime.Instantiable0[Authenticator]
+    extends org.scalablytyped.runtime.Instantiable0[Authenticator]
   
   
   trait PlainTextAuthProvider extends AuthProvider
   
   @js.native
   trait PlainTextAuthProviderStatic
-    extends ScalablyTyped.runtime.Instantiable2[
+    extends org.scalablytyped.runtime.Instantiable2[
           /* username */ java.lang.String, 
           /* password */ java.lang.String, 
           PlainTextAuthProvider

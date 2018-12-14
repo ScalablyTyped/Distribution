@@ -13,7 +13,7 @@ class ChildEventRegistration () extends EventRegistration {
        * @param {?function(Error)} cancelCallback_
        * @param {Object=} context_
        */
-  def this(`callbacks_`: ScalablyTyped.runtime.StringDictionary[
+  def this(`callbacks_`: org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, 
         /* s */ js.UndefOr[java.lang.String | scala.Null], 
@@ -25,7 +25,7 @@ class ChildEventRegistration () extends EventRegistration {
        * @param {?function(Error)} cancelCallback_
        * @param {Object=} context_
        */
-  def this(`callbacks_`: ScalablyTyped.runtime.StringDictionary[
+  def this(`callbacks_`: org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, 
         /* s */ js.UndefOr[java.lang.String | scala.Null], 
@@ -43,7 +43,7 @@ class ChildEventRegistration () extends EventRegistration {
        * @param {?function(Error)} cancelCallback_
        * @param {Object=} context_
        */
-  def this(`callbacks_`: ScalablyTyped.runtime.StringDictionary[
+  def this(`callbacks_`: org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, 
         /* s */ js.UndefOr[java.lang.String | scala.Null], 
@@ -55,7 +55,7 @@ class ChildEventRegistration () extends EventRegistration {
        * @param {?function(Error)} cancelCallback_
        * @param {Object=} context_
        */
-  def this(`callbacks_`: ScalablyTyped.runtime.StringDictionary[
+  def this(`callbacks_`: org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, 
         /* s */ js.UndefOr[java.lang.String | scala.Null], 

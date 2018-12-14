@@ -20,7 +20,7 @@ trait Handler extends js.Object {
   var onopentag: js.UndefOr[
     js.Function2[
       /* name */ java.lang.String, 
-      /* attribs */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* attribs */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       scala.Unit
     ]
   ] = js.undefined

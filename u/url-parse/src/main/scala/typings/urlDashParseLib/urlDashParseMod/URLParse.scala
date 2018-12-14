@@ -17,7 +17,7 @@ trait URLParse extends js.Object {
   val pathname: java.lang.String = js.native
   val port: java.lang.String = js.native
   val protocol: java.lang.String = js.native
-  val query: ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = js.native
+  val query: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = js.native
   val slashes: scala.Boolean = js.native
   val username: java.lang.String = js.native
   def set(part: urlDashParseLib.urlDashParseMod.URLParseNs.URLPart): URLParse = js.native

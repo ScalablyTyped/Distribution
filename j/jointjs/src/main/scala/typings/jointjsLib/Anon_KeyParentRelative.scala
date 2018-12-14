@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_KeyParentRelative
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var parentRelative: js.UndefOr[scala.Boolean] = js.undefined
 }
 

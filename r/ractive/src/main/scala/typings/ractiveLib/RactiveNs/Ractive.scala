@@ -122,7 +122,7 @@ trait Ractive extends js.Object {
     handler: js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */js.Any, _]
   ): Observe = js.native
   def on(
-    map: ScalablyTyped.runtime.StringDictionary[js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */js.Any, _]]
+    map: org.scalablytyped.runtime.StringDictionary[js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */js.Any, _]]
   ): Observe = js.native
   // Since 0.7.1
   def once(

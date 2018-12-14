@@ -10,7 +10,7 @@ trait IgPopover
   extends /**
 	 * Option for igPopover
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Sets the time popover fades in and out when showing/hiding
   	 *

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_KeyLevel
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var level: js.UndefOr[pinoLib.pinoMod.PNs.Level | java.lang.String] = js.undefined
-  var serializers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[pinoLib.pinoMod.PNs.SerializerFn]] = js.undefined
+  var serializers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.PNs.SerializerFn]] = js.undefined
 }
 

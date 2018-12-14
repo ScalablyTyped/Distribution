@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object stringDashFormatModMembers extends js.Object {
   def apply(
     template: java.lang.String,
-    args: (ScalablyTyped.runtime.StringDictionary[js.Any] | java.lang.String)*
+    args: (org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String)*
   ): java.lang.String = js.native
   /**
        * create a format function with given transformers

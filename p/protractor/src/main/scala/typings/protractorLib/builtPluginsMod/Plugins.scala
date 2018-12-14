@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Plugins protected () extends js.Object {
   def this(config: protractorLib.builtConfigMod.Config) = this()
-  var assertions: ScalablyTyped.runtime.StringDictionary[js.Array[AssertionResult]] = js.native
+  var assertions: org.scalablytyped.runtime.StringDictionary[js.Array[AssertionResult]] = js.native
   var pluginObjs: js.Array[ProtractorPlugin] = js.native
   var resultsReported: scala.Boolean = js.native
   /**

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Headers ()
   extends atAngularHttpLib.srcHeadersMod.Headers {
-  def this(headers: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
   def this(headers: atAngularHttpLib.srcHeadersMod.Headers) = this()
+  def this(headers: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 
 @JSImport("@angular/http/src", "Headers")

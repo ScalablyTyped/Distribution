@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TokenMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[authmosphereLib.libSrcTypesTokenMod.Token[js.Object]]]
 

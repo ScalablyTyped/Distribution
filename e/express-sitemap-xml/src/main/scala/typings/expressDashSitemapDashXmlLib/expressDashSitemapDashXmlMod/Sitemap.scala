@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Sitemap
-  extends /* leaf */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* leaf */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

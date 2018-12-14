@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Grammar protected () extends js.Object {
   def this(rules: js.Array[Rule]) = this()
-  var byName: ScalablyTyped.runtime.StringDictionary[js.Array[Rule]] = js.native
+  var byName: org.scalablytyped.runtime.StringDictionary[js.Array[Rule]] = js.native
   var lexer: js.UndefOr[Lexer] = js.native
   var rules: js.Array[Rule] = js.native
   var start: java.lang.String = js.native

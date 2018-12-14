@@ -1231,7 +1231,7 @@ object AppStreamNs extends js.Object {
   
   
   trait Metadata
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait NetworkAccessConfiguration extends js.Object {
@@ -1468,7 +1468,7 @@ object AppStreamNs extends js.Object {
   
   
   trait Tags
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   @js.native
   trait Types

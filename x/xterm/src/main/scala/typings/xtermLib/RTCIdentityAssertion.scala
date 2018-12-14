@@ -14,5 +14,5 @@ trait RTCIdentityAssertion extends js.Object {
 @JSGlobal("RTCIdentityAssertion")
 @js.native
 object RTCIdentityAssertion
-  extends ScalablyTyped.runtime.Instantiable2[/* idp */ java.lang.String, /* name */ java.lang.String, RTCIdentityAssertion]
+  extends org.scalablytyped.runtime.Instantiable2[/* idp */ java.lang.String, /* name */ java.lang.String, RTCIdentityAssertion]
 

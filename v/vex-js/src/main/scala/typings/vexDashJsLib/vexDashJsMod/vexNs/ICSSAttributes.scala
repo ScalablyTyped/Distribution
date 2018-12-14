@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ICSSAttributes
-  extends /* property */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]
+  extends /* property */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
 

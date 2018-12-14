@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("webtorrent", JSImport.Namespace)
 @js.native
 object webtorrentModMembers
-  extends ScalablyTyped.runtime.TopLevel[webtorrentLib.webtorrentMod.WebTorrentNs.WebTorrent]
+  extends org.scalablytyped.runtime.TopLevel[webtorrentLib.webtorrentMod.WebTorrentNs.WebTorrent]
 

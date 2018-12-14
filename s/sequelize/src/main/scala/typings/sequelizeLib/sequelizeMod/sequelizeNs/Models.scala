@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait Models
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[Model[_, _]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[Model[_, _]]
 

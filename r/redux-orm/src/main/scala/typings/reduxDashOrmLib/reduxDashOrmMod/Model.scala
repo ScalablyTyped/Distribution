@@ -30,7 +30,7 @@ object Model extends js.Object {
   var modelName: java.lang.String = js.native
    // TODO
   val query: reduxDashOrmLib.reduxDashOrmMod.QuerySet[_, js.Object, js.Object] = js.native
-  var querySetClass: ScalablyTyped.runtime.Instantiable3[
+  var querySetClass: org.scalablytyped.runtime.Instantiable3[
     /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm)), TsIdentSimple(Model)))) *//* modelClass */ js.Any, 
     /* clauses */ reduxDashOrmLib.reduxDashOrmMod.QuerySetClauses, 
     /* opts */ reduxDashOrmLib.reduxDashOrmMod.QuerySetOpts, 
@@ -52,7 +52,7 @@ object Model extends js.Object {
   def options(): js.Object = js.native
   def reducer(
     action: js.Any,
-    modelClass: ScalablyTyped.runtime.Instantiable1[
+    modelClass: org.scalablytyped.runtime.Instantiable1[
       /* props */ reduxDashOrmLib.reduxDashOrmMod.ModelProps, 
       reduxDashOrmLib.reduxDashOrmMod.Model[js.Object, js.Object, js.Object]
     ],

@@ -14,7 +14,7 @@ trait Credstash extends js.Object {
   def deleteSecrets(options: nodecredstashLib.Anon_NameString): js.Promise[
     js.Array[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs.DeleteItemOutput]
   ] = js.native
-  def getAllSecrets(options: nodecredstashLib.Anon_Version): js.Promise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  def getAllSecrets(options: nodecredstashLib.Anon_Version): js.Promise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def getAllVersions(options: nodecredstashLib.Anon_Limit): js.Promise[js.Array[nodecredstashLib.Anon_Secret]] = js.native
   def getHighestVersion(options: nodecredstashLib.Anon_NameString): js.Promise[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap] = js.native
   def getSecret(options: nodecredstashLib.Anon_NameContext): js.Promise[java.lang.String] = js.native

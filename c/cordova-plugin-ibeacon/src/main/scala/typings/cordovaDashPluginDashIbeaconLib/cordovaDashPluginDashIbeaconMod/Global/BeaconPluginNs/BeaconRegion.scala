@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BeaconRegion
   extends Region
-     with ScalablyTyped.runtime.Instantiable2[/* identifier */ java.lang.String, /* uuid */ java.lang.String, BeaconRegion]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable2[/* identifier */ java.lang.String, /* uuid */ java.lang.String, BeaconRegion]
+     with org.scalablytyped.runtime.Instantiable3[
       /* identifier */ java.lang.String, 
       /* uuid */ java.lang.String, 
       /* major */ scala.Double, 
       BeaconRegion
     ]
-     with ScalablyTyped.runtime.Instantiable4[
+     with org.scalablytyped.runtime.Instantiable4[
       /* identifier */ java.lang.String, 
       /* uuid */ java.lang.String, 
       /* major */ scala.Double, 
       /* minor */ scala.Double, 
       BeaconRegion
     ]
-     with ScalablyTyped.runtime.Instantiable5[
+     with org.scalablytyped.runtime.Instantiable5[
       /* identifier */ java.lang.String, 
       /* uuid */ java.lang.String, 
       /* major */ scala.Double, 

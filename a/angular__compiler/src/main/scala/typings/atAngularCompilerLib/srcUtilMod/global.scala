@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/util", "global")
 @js.native
 object global
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

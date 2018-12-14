@@ -19,7 +19,7 @@ object Buffer
      * @param str String to store in buffer.
      * @param encoding encoding to use, optional.  Default is 'utf8'
      */
-ScalablyTyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ java.lang.String, Buffer]
+org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ java.lang.String, Buffer]
      with /**
      * Allocates a new buffer containing the given {str}.
      *
@@ -36,7 +36,7 @@ ScalablyTyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ j
      *
      * @param array The octets to store.
      */
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       (/* str */ java.lang.String) | (/* size */ scala.Double) | (/* array */ stdLib.Uint8Array) | (/* array */ js.Array[js.Any]), 
       Buffer
     ] {

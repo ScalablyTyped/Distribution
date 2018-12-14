@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("babyparse", JSImport.Namespace)
 @js.native
 object babyparseMod
-  extends ScalablyTyped.runtime.TopLevel[babyparseLib.BabyParseNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[babyparseLib.BabyParseNs.Static]
 

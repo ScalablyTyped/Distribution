@@ -21,6 +21,6 @@ trait AudioContext extends BaseAudioContext {
 @JSGlobal("AudioContext")
 @js.native
 object AudioContext
-  extends ScalablyTyped.runtime.Instantiable0[AudioContext]
-     with ScalablyTyped.runtime.Instantiable1[/* contextOptions */ AudioContextOptions, AudioContext]
+  extends org.scalablytyped.runtime.Instantiable0[AudioContext]
+     with org.scalablytyped.runtime.Instantiable1[/* contextOptions */ AudioContextOptions, AudioContext]
 

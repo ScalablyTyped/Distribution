@@ -18,7 +18,7 @@ trait TaskDefinition extends js.Object {
   var demands: js.Array[_]
   var description: java.lang.String
   var disabled: scala.Boolean
-  var execution: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var execution: org.scalablytyped.runtime.StringDictionary[js.Any]
   var friendlyName: java.lang.String
   var groups: js.Array[TaskGroupDefinition]
   var helpMarkDown: java.lang.String

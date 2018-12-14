@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("nes", JSImport.Namespace)
 @js.native
 object nesModMembers
-  extends ScalablyTyped.runtime.TopLevel[NesClassExports with hapiLib.hapiMod.Plugin[js.Object]]
+  extends org.scalablytyped.runtime.TopLevel[NesClassExports with hapiLib.hapiMod.Plugin[js.Object]]
 

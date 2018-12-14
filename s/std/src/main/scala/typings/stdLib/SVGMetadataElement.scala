@@ -11,5 +11,5 @@ trait SVGMetadataElement extends SVGElement
 @JSGlobal("SVGMetadataElement")
 @js.native
 object SVGMetadataElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGMetadataElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGMetadataElement]
 

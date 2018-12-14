@@ -26,18 +26,18 @@ trait Snekfetch
       T
     ]
   ): js.Promise[T] = js.native
-  def query(name: ScalablyTyped.runtime.StringDictionary[js.Any]): Snekfetch = js.native
-  def query(name: ScalablyTyped.runtime.StringDictionary[js.Any], value: java.lang.String): Snekfetch = js.native
   def query(name: java.lang.String): Snekfetch = js.native
   def query(name: java.lang.String, value: java.lang.String): Snekfetch = js.native
+  def query(name: org.scalablytyped.runtime.StringDictionary[js.Any]): Snekfetch = js.native
+  def query(name: org.scalablytyped.runtime.StringDictionary[js.Any], value: java.lang.String): Snekfetch = js.native
   def send(): Snekfetch = js.native
   def send(data: java.lang.String): Snekfetch = js.native
   def send(data: js.Object): Snekfetch = js.native
   def send(data: nodeLib.Buffer): Snekfetch = js.native
-  def set(name: ScalablyTyped.runtime.StringDictionary[js.Any]): Snekfetch = js.native
-  def set(name: ScalablyTyped.runtime.StringDictionary[js.Any], value: java.lang.String): Snekfetch = js.native
   def set(name: java.lang.String): Snekfetch = js.native
   def set(name: java.lang.String, value: java.lang.String): Snekfetch = js.native
+  def set(name: org.scalablytyped.runtime.StringDictionary[js.Any]): Snekfetch = js.native
+  def set(name: org.scalablytyped.runtime.StringDictionary[js.Any], value: java.lang.String): Snekfetch = js.native
   def `then`(): js.Promise[snekfetchLib.snekfetchMod.SnekfetchNs.SnekfetchResponse] = js.native
   def `then`[T](resolver: js.Function1[/* res */ snekfetchLib.snekfetchMod.SnekfetchNs.SnekfetchResponse, T]): js.Promise[T] = js.native
   def `then`[T](

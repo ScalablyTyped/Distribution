@@ -16,5 +16,5 @@ trait HTMLCollection extends HTMLCollectionBase {
 @JSGlobal("HTMLCollection")
 @js.native
 object HTMLCollection
-  extends ScalablyTyped.runtime.Instantiable0[HTMLCollection]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLCollection]
 

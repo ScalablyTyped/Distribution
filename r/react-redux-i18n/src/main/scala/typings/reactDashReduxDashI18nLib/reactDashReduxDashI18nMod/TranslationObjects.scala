@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TranslationObjects
-  extends /* lang */ ScalablyTyped.runtime.StringDictionary[SubTranslationObject]
+  extends /* lang */ org.scalablytyped.runtime.StringDictionary[SubTranslationObject]
 

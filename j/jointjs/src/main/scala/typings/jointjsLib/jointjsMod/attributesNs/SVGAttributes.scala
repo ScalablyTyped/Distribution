@@ -32,10 +32,10 @@ trait SVGAttributes extends NativeSVGAttributes {
   var fillOpacity: js.UndefOr[js.Any] = js.undefined
   var fillRule: js.UndefOr[js.Any] = js.undefined
   @JSName("fill")
-  var fill_SVGAttributes: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var fill_SVGAttributes: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   // Special attributes
   @JSName("filter")
-  var filter_SVGAttributes: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var filter_SVGAttributes: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var floodColor: js.UndefOr[js.Any] = js.undefined
   var floodOpacity: js.UndefOr[js.Any] = js.undefined
   var fontFamily: js.UndefOr[js.Any] = js.undefined
@@ -57,7 +57,7 @@ trait SVGAttributes extends NativeSVGAttributes {
   var markerMid: js.UndefOr[js.Any] = js.undefined
   var markerStart: js.UndefOr[js.Any] = js.undefined
   var pointerEvents: js.UndefOr[js.Any] = js.undefined
-  var port: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var port: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var ref: js.UndefOr[java.lang.String] = js.undefined
   var `ref-dx`: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var `ref-dy`: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -92,7 +92,7 @@ trait SVGAttributes extends NativeSVGAttributes {
   var refY2: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var resetOffset: js.UndefOr[scala.Boolean] = js.undefined
   var shapeRendering: js.UndefOr[js.Any] = js.undefined
-  var sourceMarker: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var sourceMarker: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var stopColor: js.UndefOr[js.Any] = js.undefined
   var stopOpacity: js.UndefOr[js.Any] = js.undefined
   var strokeDasharray: js.UndefOr[js.Any] = js.undefined
@@ -103,10 +103,10 @@ trait SVGAttributes extends NativeSVGAttributes {
   var strokeOpacity: js.UndefOr[js.Any] = js.undefined
   var strokeWidth: js.UndefOr[js.Any] = js.undefined
   @JSName("stroke")
-  var stroke_SVGAttributes: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var stroke_SVGAttributes: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   @JSName("style")
-  var style_SVGAttributes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var targetMarker: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var style_SVGAttributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var targetMarker: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
   var textAnchor: js.UndefOr[js.Any] = js.undefined
   var textDecoration: js.UndefOr[js.Any] = js.undefined
@@ -118,7 +118,7 @@ trait SVGAttributes extends NativeSVGAttributes {
   var textWrap: js.UndefOr[SVGAttributeTextWrap] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
   var unicodeBidi: js.UndefOr[js.Any] = js.undefined
-  var vertexMarker: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var vertexMarker: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var wordSpacing: js.UndefOr[js.Any] = js.undefined
   var writingMode: js.UndefOr[js.Any] = js.undefined
   var `x-alignment`: js.UndefOr[

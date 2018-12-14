@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Image protected ()
   extends // constructor(x: number, y: number)
-ScalablyTyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, js.Function0[scala.Unit]] {
+org.scalablytyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, js.Function0[scala.Unit]] {
   def this(x: scala.Double, y: scala.Double) = this()
   def encode(`type`: java.lang.String): scala.Unit = js.native
   def encode(

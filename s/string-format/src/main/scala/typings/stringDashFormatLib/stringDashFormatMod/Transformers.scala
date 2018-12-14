@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Transformers
-  extends /* k */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* s */ js.Any, java.lang.String]]
+  extends /* k */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* s */ js.Any, java.lang.String]]
 

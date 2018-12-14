@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait EffectsMapObject
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Effect | EffectWithType]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Effect | EffectWithType]
 

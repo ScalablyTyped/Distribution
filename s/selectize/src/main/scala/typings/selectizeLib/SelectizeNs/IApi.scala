@@ -15,7 +15,7 @@ trait IApi[T, U] extends js.Object {
   /**
            * An object containing the entire pool of options. The object is keyed by each object's value.
            */
-  var options: ScalablyTyped.runtime.StringDictionary[U] = js.native
+  var options: org.scalablytyped.runtime.StringDictionary[U] = js.native
   /**
            * "Selects" an item. Adds it to the list at the current caret position.
            */

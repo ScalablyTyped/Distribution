@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Selectors
-  extends /* selector */ ScalablyTyped.runtime.StringDictionary[Properties]
+  extends /* selector */ org.scalablytyped.runtime.StringDictionary[Properties]
 

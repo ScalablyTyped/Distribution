@@ -10,7 +10,7 @@ trait IgBulletGraph
   extends /**
 	 * Option for igBulletGraph
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event which is raised when a label of the bullet graph is aligned along the scale.
   	 * Function takes first argument evt and second argument ui.

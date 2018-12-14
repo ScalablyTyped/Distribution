@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Render
-  extends ScalablyTyped.runtime.Instantiable0[dagreDashD3Lib.dagreDashD3Mod.Render]
+  extends org.scalablytyped.runtime.Instantiable0[dagreDashD3Lib.dagreDashD3Mod.Render]
 

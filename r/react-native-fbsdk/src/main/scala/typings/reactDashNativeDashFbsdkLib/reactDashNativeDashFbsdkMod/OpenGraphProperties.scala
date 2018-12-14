@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait OpenGraphProperties
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[OpenGraphValue]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[OpenGraphValue]
 

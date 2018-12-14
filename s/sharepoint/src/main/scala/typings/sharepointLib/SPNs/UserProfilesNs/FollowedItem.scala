@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class FollowedItem ()
   extends sharepointLib.SPNs.ClientValueObject {
   /** Additional metadata associated with this item */
-  def get_data(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def get_data(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /** Specifies the type of the file if this item is a file. Otherwise, this property is the empty string. */
   def get_fileType(): java.lang.String = js.native
   /** Provides information about the application that opens a followed document. */
@@ -51,7 +51,7 @@ class FollowedItem ()
   /** Specifies the site identification (GUID) in the Content database for this item if it is a site, or the identification of its parent site if this item is a document. */
   def get_webId(): sharepointLib.SPNs.Guid = js.native
   /** Additional metadata associated with this item */
-  def set_data(value: ScalablyTyped.runtime.StringDictionary[js.Any]): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def set_data(value: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /** Specifies the type of the file if this item is a file. Otherwise, this property is the empty string. */
   def set_fileType(value: java.lang.String): java.lang.String = js.native
   /** Provides information about the application that opens a followed document. */

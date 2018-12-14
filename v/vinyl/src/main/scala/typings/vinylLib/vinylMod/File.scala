@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait File
-  extends /* customProperty */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* customProperty */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   //
   /**
        * Gets and sets base directory. Used for relative pathing (typically where a glob starts).

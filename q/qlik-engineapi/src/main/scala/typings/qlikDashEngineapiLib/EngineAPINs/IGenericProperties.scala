@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait IGenericProperties
   extends // ?Dynamic properties?
-/* qMetaDef */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* qMetaDef */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Identifier and type of the object.
            * >> This parameter is mandatory.

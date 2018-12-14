@@ -18,9 +18,9 @@ class CacheFactory () extends js.Object {
   def exists(id: java.lang.String): scala.Boolean = js.native
   def get(id: java.lang.String): Cache = js.native
   def info(): CacheFactoryInfo = js.native
-  def keySet(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def keySet(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def keys(): js.Array[java.lang.String] = js.native
-  def removeExpiredFromAll(): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  def removeExpiredFromAll(): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def touchAll(): scala.Unit = js.native
 }
 

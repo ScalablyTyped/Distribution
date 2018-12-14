@@ -13,5 +13,5 @@ trait HTMLTimeElement extends HTMLElement {
 @JSGlobal("HTMLTimeElement")
 @js.native
 object HTMLTimeElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLTimeElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLTimeElement]
 

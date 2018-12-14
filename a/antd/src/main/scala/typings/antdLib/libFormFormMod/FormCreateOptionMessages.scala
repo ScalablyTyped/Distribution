@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FormCreateOptionMessages
-  extends /* messageId */ ScalablyTyped.runtime.StringDictionary[java.lang.String | FormCreateOptionMessagesCallback | FormCreateOptionMessages]
+  extends /* messageId */ org.scalablytyped.runtime.StringDictionary[java.lang.String | FormCreateOptionMessagesCallback | FormCreateOptionMessages]
 

@@ -17,7 +17,7 @@ trait Browser extends js.Object {
            */
   def addPageAction(
     name: java.lang.String,
-    attributes: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]
+    attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   /**
            * Adds a unique name and ID to identify releases with multiple JavaScript bundles on the same page.

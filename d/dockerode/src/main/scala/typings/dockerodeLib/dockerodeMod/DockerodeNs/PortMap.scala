@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PortMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Array[PortBinding]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[PortBinding]]
 

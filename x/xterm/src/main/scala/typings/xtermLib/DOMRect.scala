@@ -11,11 +11,11 @@ trait DOMRect extends DOMRectReadOnly
 @JSGlobal("DOMRect")
 @js.native
 object DOMRect
-  extends ScalablyTyped.runtime.Instantiable0[DOMRect]
-     with ScalablyTyped.runtime.Instantiable1[/* x */ scala.Double, DOMRect]
-     with ScalablyTyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, DOMRect]
-     with ScalablyTyped.runtime.Instantiable3[/* x */ scala.Double, /* y */ scala.Double, /* width */ scala.Double, DOMRect]
-     with ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable0[DOMRect]
+     with org.scalablytyped.runtime.Instantiable1[/* x */ scala.Double, DOMRect]
+     with org.scalablytyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, DOMRect]
+     with org.scalablytyped.runtime.Instantiable3[/* x */ scala.Double, /* y */ scala.Double, /* width */ scala.Double, DOMRect]
+     with org.scalablytyped.runtime.Instantiable4[
       /* x */ scala.Double, 
       /* y */ scala.Double, 
       /* width */ scala.Double, 

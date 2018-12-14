@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait args extends js.Object {
-  var options: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var options: org.scalablytyped.runtime.StringDictionary[js.Any]
   var targets: js.Array[java.lang.String]
 }
 

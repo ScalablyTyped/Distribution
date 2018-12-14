@@ -82,7 +82,7 @@ object OpsWorksNs extends js.Object {
   
   
   trait AppAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait AssignInstanceRequest extends js.Object {
@@ -788,7 +788,7 @@ object OpsWorksNs extends js.Object {
   
   
   trait DailyAutoScalingSchedule
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Switch]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Switch]
   
   
   trait DataSource extends js.Object {
@@ -917,7 +917,7 @@ object OpsWorksNs extends js.Object {
   
   
   trait DeploymentCommandArgs
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Strings]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Strings]
   
   
   trait DeregisterEcsClusterRequest extends js.Object {
@@ -1942,7 +1942,7 @@ object OpsWorksNs extends js.Object {
   
   
   trait LayerAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait LifecycleEventConfiguration extends js.Object {
@@ -2046,7 +2046,7 @@ object OpsWorksNs extends js.Object {
   
   
   trait Parameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait Permission extends js.Object {
@@ -2587,7 +2587,7 @@ object OpsWorksNs extends js.Object {
   
   
   trait StackAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait StackConfigurationManager extends js.Object {
@@ -2679,7 +2679,7 @@ object OpsWorksNs extends js.Object {
   
   
   trait Tags
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   
   trait TemporaryCredential extends js.Object {

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("webpack-merge", JSImport.Namespace)
 @js.native
 object webpackDashMergeModMembers
-  extends ScalablyTyped.runtime.TopLevel[webpackDashMergeLib.webpackDashMergeMod.webpackMergeNs.WebpackMerge]
+  extends org.scalablytyped.runtime.TopLevel[webpackDashMergeLib.webpackDashMergeMod.webpackMergeNs.WebpackMerge]
 

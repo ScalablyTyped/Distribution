@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BigUint64Array
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[BigInt] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[BigInt] {
   /** The size in bytes of each element in the array. */
   val BYTES_PER_ELEMENT: scala.Double = js.native
   /** The ArrayBuffer instance referenced by the array. */
@@ -20,11 +20,11 @@ trait BigUint64Array
   val byteLength: scala.Double = js.native
   /** The offset in bytes of the array. */
   val byteOffset: scala.Double = js.native
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[BigInt]] = js.native
   /** The length of the array. */
   val length: scala.Double = js.native
-  @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
+  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   val toStringTag: stdLib.stdLibStrings.BigUint64Array = js.native
   /**
         * Returns the this object after copying a section of the array identified by start and end

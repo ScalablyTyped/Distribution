@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait FeathersAuthCredentials
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var strategy: java.lang.String
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Renderer extends js.Object {
-  var rules: ScalablyTyped.runtime.StringDictionary[markdownDashItLib.libMod.MarkdownItNs.TokenRender]
+  var rules: org.scalablytyped.runtime.StringDictionary[markdownDashItLib.libMod.MarkdownItNs.TokenRender]
   def render(tokens: js.Array[markdownDashItLib.libTokenMod.namespaced], options: js.Any, env: js.Any): java.lang.String
   def renderAttrs(token: markdownDashItLib.libTokenMod.namespaced): java.lang.String
   def renderInline(tokens: js.Array[markdownDashItLib.libTokenMod.namespaced], options: js.Any, env: js.Any): java.lang.String

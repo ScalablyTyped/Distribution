@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rdflib", "ClassOrder")
 @js.native
 object ClassOrder
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[scala.Double]
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait RouteParams
-  extends /* key */ ScalablyTyped.runtime.NumberDictionary[java.lang.String | scala.Double]
-     with /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]
+  extends /* key */ org.scalablytyped.runtime.NumberDictionary[java.lang.String | scala.Double]
+     with /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
 

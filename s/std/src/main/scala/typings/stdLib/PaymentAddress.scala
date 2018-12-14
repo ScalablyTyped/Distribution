@@ -24,5 +24,5 @@ trait PaymentAddress extends js.Object {
 @JSGlobal("PaymentAddress")
 @js.native
 object PaymentAddress
-  extends ScalablyTyped.runtime.Instantiable0[PaymentAddress]
+  extends org.scalablytyped.runtime.Instantiable0[PaymentAddress]
 

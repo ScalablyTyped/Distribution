@@ -15,9 +15,9 @@ trait TypeConstructorOptions extends js.Object {
   ] = js.undefined
   var predicate: js.UndefOr[java.lang.String] = js.undefined
   var represent: js.UndefOr[
-    (js.Function1[/* data */ js.Object, _]) | (ScalablyTyped.runtime.StringDictionary[js.Function1[/* data */ js.Object, _]])
+    (js.Function1[/* data */ js.Object, _]) | (org.scalablytyped.runtime.StringDictionary[js.Function1[/* data */ js.Object, _]])
   ] = js.undefined
   var resolve: js.UndefOr[js.Function1[/* data */ js.Any, scala.Boolean]] = js.undefined
-  var styleAliases: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var styleAliases: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rison", JSImport.Namespace)
 @js.native
 object risonModMembers
-  extends ScalablyTyped.runtime.TopLevel[IRison]
+  extends org.scalablytyped.runtime.TopLevel[IRison]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Identifier
-  extends /* alias */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* alias */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

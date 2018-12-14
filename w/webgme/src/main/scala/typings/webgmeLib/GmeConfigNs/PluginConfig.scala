@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class PluginConfig ()
   extends GmeConfig
-     with /* propName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+     with /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

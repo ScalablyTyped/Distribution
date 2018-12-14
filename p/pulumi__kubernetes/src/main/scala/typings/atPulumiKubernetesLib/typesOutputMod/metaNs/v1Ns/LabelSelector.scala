@@ -21,6 +21,6 @@ trait LabelSelector extends js.Object {
                * equivalent to an element of matchExpressions, whose key field is "key", the operator is
                * "In", and the values array contains only "value". The requirements are ANDed.
                */
-  val matchLabels: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val matchLabels: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

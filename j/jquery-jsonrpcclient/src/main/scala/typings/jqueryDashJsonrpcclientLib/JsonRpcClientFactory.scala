@@ -30,7 +30,7 @@ trait JsonRpcClientFactory
     *                           call. If specified a setTimeout will be used to keep track of calls
     *                           made through a websocket.
     */
-ScalablyTyped.runtime.Instantiable0[JsonRpcClient]
+org.scalablytyped.runtime.Instantiable0[JsonRpcClient]
      with /**
     * @fn new
     * @memberof JsonRpcClient
@@ -54,5 +54,5 @@ ScalablyTyped.runtime.Instantiable0[JsonRpcClient]
     *                           call. If specified a setTimeout will be used to keep track of calls
     *                           made through a websocket.
     */
-ScalablyTyped.runtime.Instantiable1[/* options */ JsonRpcClientOptions, JsonRpcClient]
+org.scalablytyped.runtime.Instantiable1[/* options */ JsonRpcClientOptions, JsonRpcClient]
 

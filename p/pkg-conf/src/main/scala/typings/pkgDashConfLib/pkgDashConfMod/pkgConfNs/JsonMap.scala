@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait JsonMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[AnyJson]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[AnyJson]
 

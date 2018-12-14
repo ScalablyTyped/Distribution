@@ -10,7 +10,7 @@ trait GitSuggestion extends js.Object {
   /**
        * Specific properties describing the suggestion.
        */
-  var properties: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var properties: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * The type of suggestion (e.g. pull request).
        */

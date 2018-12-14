@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("globule", JSImport.Namespace)
 @js.native
 object globuleModMembers
-  extends ScalablyTyped.runtime.TopLevel[GlobuleStatic]
+  extends org.scalablytyped.runtime.TopLevel[GlobuleStatic]
 

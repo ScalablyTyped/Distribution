@@ -13,9 +13,9 @@ trait CameraInputsMap[TCamera /* <: Camera */]
   extends /**
          * Accessor to the input by input type.
          */
-/* name */ ScalablyTyped.runtime.StringDictionary[ICameraInput[TCamera]]
+/* name */ org.scalablytyped.runtime.StringDictionary[ICameraInput[TCamera]]
      with /**
          * Accessor to the input by input index.
          */
-/* idx */ ScalablyTyped.runtime.NumberDictionary[ICameraInput[TCamera]]
+/* idx */ org.scalablytyped.runtime.NumberDictionary[ICameraInput[TCamera]]
 

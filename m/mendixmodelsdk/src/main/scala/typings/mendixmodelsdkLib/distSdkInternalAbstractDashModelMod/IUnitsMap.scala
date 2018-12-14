@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IUnitsMap
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit]
 

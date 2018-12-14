@@ -43,6 +43,6 @@ trait VariableGroup extends js.Object {
        * Gets or sets type.
        */
   var `type`: java.lang.String
-  var variables: ScalablyTyped.runtime.StringDictionary[VariableValue]
+  var variables: org.scalablytyped.runtime.StringDictionary[VariableValue]
 }
 

@@ -18,7 +18,7 @@ trait nlobjColumn
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * add a URL parameter (optionally defined per row) to this column's URL.
        *

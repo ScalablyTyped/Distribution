@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait VisitorKeys
-  extends /* type */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[js.Array[java.lang.String]]]
+  extends /* type */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Array[java.lang.String]]]
 

@@ -10,6 +10,6 @@ trait BacklogFields extends js.Object {
   /**
        * Field Type (e.g. Order, Activity) to Field Reference Name map
        */
-  var typeFields: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var typeFields: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

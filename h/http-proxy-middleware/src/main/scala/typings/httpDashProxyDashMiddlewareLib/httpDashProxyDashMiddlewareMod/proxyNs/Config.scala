@@ -13,14 +13,14 @@ trait Config extends js.Object {
   var buffer: js.UndefOr[nodeLib.streamMod.Readable] = js.undefined
   var changeOrigin: js.UndefOr[scala.Boolean] = js.undefined
   var cookieDomainRewrite: js.UndefOr[
-    httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibNumbers.`false` | java.lang.String | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
   var cookiePathRewrite: js.UndefOr[
-    httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibNumbers.`false` | java.lang.String | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
   var followRedirects: js.UndefOr[scala.Boolean] = js.undefined
   var forward: js.UndefOr[java.lang.String] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var hostRewrite: js.UndefOr[java.lang.String] = js.undefined
   var ignorePath: js.UndefOr[scala.Boolean] = js.undefined
   var localAddress: js.UndefOr[java.lang.String] = js.undefined
@@ -72,7 +72,7 @@ trait Config extends js.Object {
     ]
   ] = js.undefined
   var pathRewrite: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String] | (js.Function2[
+    org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function2[
       /* path */ java.lang.String, 
       /* req */ nodeLib.httpMod.IncomingMessage, 
       java.lang.String
@@ -91,7 +91,7 @@ trait Config extends js.Object {
   var proxyTable: js.UndefOr[js.Any] = js.undefined
   var proxyTimeout: js.UndefOr[scala.Double] = js.undefined
   var router: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String] | (js.Function1[/* req */ nodeLib.httpMod.IncomingMessage, java.lang.String])
+    org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function1[/* req */ nodeLib.httpMod.IncomingMessage, java.lang.String])
   ] = js.undefined
   var secure: js.UndefOr[scala.Boolean] = js.undefined
   var selfHandleResponse: js.UndefOr[scala.Boolean] = js.undefined

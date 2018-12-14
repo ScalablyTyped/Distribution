@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TabsContainerProps
   extends reactDashMdLib.libMod.Props
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var activeTabIndex: js.UndefOr[scala.Double] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[reactDashMdLib.libTabsTabsMod.TabsProps]] = js.undefined
   var colored: js.UndefOr[scala.Boolean] = js.undefined

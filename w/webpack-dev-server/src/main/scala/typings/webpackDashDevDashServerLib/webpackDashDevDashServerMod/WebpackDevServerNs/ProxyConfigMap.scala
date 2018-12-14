@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ProxyConfigMap
-  extends /* url */ ScalablyTyped.runtime.StringDictionary[
+  extends /* url */ org.scalablytyped.runtime.StringDictionary[
       java.lang.String | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareMod.proxyNs.Config
     ]
 

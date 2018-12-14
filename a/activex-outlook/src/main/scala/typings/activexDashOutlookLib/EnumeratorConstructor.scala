@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EnumeratorConstructor
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       (/* col */ activexDashOutlookLib.OutlookNs.ItemProperties) | (/* col */ activexDashOutlookLib.OutlookNs.Reminders) | (/* col */ activexDashOutlookLib.OutlookNs.Views), 
-      activexDashInteropLib.Enumerator[activexDashOutlookLib.OutlookNs.ItemProperty] | activexDashInteropLib.Enumerator[activexDashOutlookLib.OutlookNs.Reminder] | activexDashInteropLib.Enumerator[activexDashOutlookLib.OutlookNs.View]
+      stdLib.Enumerator[activexDashOutlookLib.OutlookNs.ItemProperty] | stdLib.Enumerator[activexDashOutlookLib.OutlookNs.Reminder] | stdLib.Enumerator[activexDashOutlookLib.OutlookNs.View]
     ]
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
          */
 
 trait ServiceResult
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var Response: js.UndefOr[heremapsLib.Anon_MetaInfo] = js.undefined
   var response: js.UndefOr[heremapsLib.Anon_MetaInfoRoute] = js.undefined
   var results: js.UndefOr[heremapsLib.Anon_Next] = js.undefined

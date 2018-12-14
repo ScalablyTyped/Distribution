@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MultiRemoteOptions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[Options]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[Options]
 

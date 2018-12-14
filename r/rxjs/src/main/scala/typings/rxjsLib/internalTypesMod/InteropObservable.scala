@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait InteropObservable[T] extends js.Object {
-  @JSName(ScalablyTyped.runtime.Symbol.observable)
+  @JSName(org.scalablytyped.runtime.Symbol.observable)
   var observable: js.Function0[Subscribable[T]]
 }
 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BlotConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* node */ stdLib.Node, parchmentLib.distSrcBlotAbstractBlotMod.Blot]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* node */ stdLib.Node, parchmentLib.distSrcBlotAbstractBlotMod.Blot]
+     with org.scalablytyped.runtime.Instantiable2[
       /* node */ stdLib.Node, 
       /* value */ js.Any, 
       parchmentLib.distSrcBlotAbstractBlotMod.Blot

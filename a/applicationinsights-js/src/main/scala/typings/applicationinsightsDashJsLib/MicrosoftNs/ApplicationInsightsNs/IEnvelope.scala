@@ -18,7 +18,7 @@ trait IEnvelope extends ISerializable {
   var osVer: java.lang.String
   var sampleRate: scala.Double
   var seq: java.lang.String
-  var tags: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   var time: java.lang.String
   var userId: java.lang.String
   var ver: scala.Double

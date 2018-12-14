@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Properties
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double]] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double]] {
   var addStyleName: js.UndefOr[java.lang.String] = js.undefined
   var averageWidth: js.UndefOr[scala.Double] = js.undefined
   var capHeight: js.UndefOr[scala.Double] = js.undefined

@@ -10,7 +10,7 @@ trait IgDatePicker
   extends /**
 	 * Option for igDatePicker
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets whether the editor value can become null.
   	 * If that option is false, and editor has no value, then value is set to an empty string.

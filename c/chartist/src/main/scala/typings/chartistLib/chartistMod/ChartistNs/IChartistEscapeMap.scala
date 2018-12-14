@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IChartistEscapeMap
-  extends /* Key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* Key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

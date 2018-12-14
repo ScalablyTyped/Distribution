@@ -14,7 +14,7 @@ trait CookiesStatic extends js.Object {
   /**
            * Read all available cookies
            */
-  def get(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def get(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
            * Read cookie
            */
@@ -23,7 +23,7 @@ trait CookiesStatic extends js.Object {
            * Returns the parsed representation of
            * all cookies according to JSON.parse
            */
-  def getJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
            * Returns the parsed representation of the string
            * stored in the cookie according to JSON.parse

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait AttributesLocation
-  extends /* attributeName */ ScalablyTyped.runtime.StringDictionary[Location]
+  extends /* attributeName */ org.scalablytyped.runtime.StringDictionary[Location]
 

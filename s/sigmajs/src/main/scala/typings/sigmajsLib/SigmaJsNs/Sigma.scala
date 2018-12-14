@@ -14,7 +14,7 @@ trait Sigma extends js.Object {
   def addRenderer(configs: RendererConfigs): Renderer = js.native
   def bind(event: java.lang.String, callback: js.Function1[/* e */ js.Any, scala.Unit]): scala.Unit = js.native
   // forceAtlas2 layout
-  def configForceAtlas2(configs: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def configForceAtlas2(configs: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def isForceAtlas2Running(): scala.Boolean = js.native
   def kill(): scala.Unit = js.native
   def killForceAtlas2(): scala.Unit = js.native
@@ -24,7 +24,7 @@ trait Sigma extends js.Object {
   def settings(key: java.lang.String): js.Any = js.native
   def settings(settings: Settings): scala.Unit = js.native
   def startForceAtlas2(): scala.Unit = js.native
-  def startForceAtlas2(configs: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def startForceAtlas2(configs: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def stopForceAtlas2(): scala.Unit = js.native
 }
 

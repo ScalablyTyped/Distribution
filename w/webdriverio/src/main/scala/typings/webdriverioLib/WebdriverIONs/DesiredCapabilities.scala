@@ -70,7 +70,7 @@ trait DesiredCapabilities extends Capabilities {
   var requireWindowFocus: js.UndefOr[scala.Boolean] = js.undefined
   var rotatable: js.UndefOr[scala.Boolean] = js.undefined
   // Safari specific
-  var `safari.options`: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var `safari.options`: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   // Selenese-Backed-WebDriver specific
   var `selenium.server.url`: js.UndefOr[java.lang.String] = js.undefined
   // Grid-specific

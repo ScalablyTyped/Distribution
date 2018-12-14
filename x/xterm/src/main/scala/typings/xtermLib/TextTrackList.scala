@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TextTrackList
   extends EventTarget
-     with /* index */ ScalablyTyped.runtime.NumberDictionary[TextTrack] {
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[TextTrack] {
   val length: scala.Double = js.native
   var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]) | scala.Null = js.native
   @JSName("addEventListener")
@@ -51,5 +51,5 @@ trait TextTrackList
 @JSGlobal("TextTrackList")
 @js.native
 object TextTrackList
-  extends ScalablyTyped.runtime.Instantiable0[TextTrackList]
+  extends org.scalablytyped.runtime.Instantiable0[TextTrackList]
 

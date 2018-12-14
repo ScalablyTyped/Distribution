@@ -62,7 +62,7 @@ object MarketplaceEntitlementServiceNs extends js.Object {
   
   
   trait GetEntitlementFilters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[FilterValueList]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[FilterValueList]
   
   
   trait GetEntitlementsRequest extends js.Object {

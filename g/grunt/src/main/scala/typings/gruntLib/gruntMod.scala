@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("grunt", JSImport.Namespace)
 @js.native
 object gruntMod
-  extends ScalablyTyped.runtime.TopLevel[IGrunt]
+  extends org.scalablytyped.runtime.TopLevel[IGrunt]
 

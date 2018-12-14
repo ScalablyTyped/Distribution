@@ -25,7 +25,7 @@
 // Project: https://webrtc.org/
 // Definitions by: Toshiya Nakakura <https://github.com/nakakura>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 3.0
 // Type definitions for WebRTC 2016-09-13
 // Project: https://www.w3.org/TR/webrtc/
 // Definitions by: Danilo Bargen <https://github.com/dbrgn/>

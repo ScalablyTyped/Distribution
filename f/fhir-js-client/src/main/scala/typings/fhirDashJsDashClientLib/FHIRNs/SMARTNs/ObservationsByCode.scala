@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
          */
 
 trait ObservationsByCode
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Array[Resource]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Array[Resource]]
 

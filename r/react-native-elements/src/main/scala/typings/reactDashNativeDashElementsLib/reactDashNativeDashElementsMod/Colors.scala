@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Colors
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   val disabled: java.lang.String
   val dkGreyBg: java.lang.String
   val error: java.lang.String

@@ -10,7 +10,7 @@ trait IgGridRestSettingsCreate
   extends /**
 	 * Option for IgGridRestSettingsCreate
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies whether create requests will be sent in batches
   	 *

@@ -10,7 +10,7 @@ trait IgTreeGridUpdatingLocale
   extends /**
 	 * Option for IgTreeGridUpdatingLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies the label of the add child button in touch environment.
   	 *

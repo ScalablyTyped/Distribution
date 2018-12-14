@@ -22,7 +22,7 @@ trait DevServer
   def contentBase(value: js.Array[java.lang.String]): this.type = js.native
   def contentBase(value: scala.Boolean): this.type = js.native
   def filename(value: java.lang.String): this.type = js.native
-  def headers(value: ScalablyTyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
+  def headers(value: org.scalablytyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
   def historyApiFallback(value: js.Any): this.type = js.native
   def historyApiFallback(value: scala.Boolean): this.type = js.native
   def host(value: java.lang.String): this.type = js.native

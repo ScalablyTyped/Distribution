@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("voca", JSImport.Namespace)
 @js.native
 object vocaModMembers
-  extends ScalablyTyped.runtime.TopLevel[vocaLib.vocaMod.vNs.VocaStatic]
+  extends org.scalablytyped.runtime.TopLevel[vocaLib.vocaMod.vNs.VocaStatic]
 

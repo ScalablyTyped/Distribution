@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object MobileNs extends js.Object {
   
   trait Attributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait BundleDetails extends js.Object {

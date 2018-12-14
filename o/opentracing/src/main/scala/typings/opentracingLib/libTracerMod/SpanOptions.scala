@@ -32,6 +32,6 @@ trait SpanOptions extends js.Object {
        * efficiency reasons (the caller should not modify this object after
        * calling startSpan).
        */
-  var tags: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

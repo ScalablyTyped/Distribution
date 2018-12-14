@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
      */
 @js.native
 trait EditableStatic
-  extends ScalablyTyped.runtime.Instantiable2[/* map */ leafletLib.leafletMod.Map, /* options */ EditOptions, Editable]
+  extends org.scalablytyped.runtime.Instantiable2[/* map */ leafletLib.leafletMod.Map, /* options */ EditOptions, Editable]
 

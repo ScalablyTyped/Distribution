@@ -12,7 +12,7 @@ trait FilterXSS extends js.Object {
 
 @js.native
 trait filterXSS extends js.Object {
-  var FilterXSS: ScalablyTyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ xssLib.XSSNs.IFilterXSSOptions], FilterXSS] = js.native
+  var FilterXSS: org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ xssLib.XSSNs.IFilterXSSOptions], FilterXSS] = js.native
   @JSName("StripTagBody")
   var StripTagBody_Original: js.Function2[
     /* tags */ js.Array[java.lang.String], 

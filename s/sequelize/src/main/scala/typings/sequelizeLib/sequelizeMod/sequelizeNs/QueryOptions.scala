@@ -20,7 +20,7 @@ trait QueryOptions
                */
   var bind: js.UndefOr[js.Object | js.Array[java.lang.String]] = js.undefined
   // TODO: force, cascade
-  var fieldMap: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var fieldMap: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * A sequelize instance used to build the return instance
            */

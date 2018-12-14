@@ -13,5 +13,5 @@ package object TypesNs {
   //   commonly used in mongoose and is found in an example in the docs:
   //   http://mongoosejs.com/docs/api.html#aggregate_Aggregate
   // constructor exposes static methods of mongodb.ObjectID and ObjectId(id)
-  type ObjectIdConstructor = ScalablyTyped.runtime.Instantiable0[mongodbLib.mongodbMod.ObjectID] with mongooseLib.Anon_S
+  type ObjectIdConstructor = org.scalablytyped.runtime.Instantiable0[mongodbLib.mongodbMod.ObjectID] with mongooseLib.Anon_S
 }

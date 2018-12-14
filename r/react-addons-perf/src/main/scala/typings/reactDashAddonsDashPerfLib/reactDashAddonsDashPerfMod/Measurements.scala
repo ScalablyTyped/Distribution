@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Measurements extends js.Object {
   var counts: NumericPerfContext
-  var displayNames: ScalablyTyped.runtime.StringDictionary[ComponentPerfContext]
+  var displayNames: org.scalablytyped.runtime.StringDictionary[ComponentPerfContext]
   var exclusive: NumericPerfContext
   var inclusive: NumericPerfContext
   var render: NumericPerfContext

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Lifecycle[Attrs, State]
   extends /** WORKAROUND: TypeScript 2.4 does not allow extending an interface with all-optional properties. */
-/* _ */ ScalablyTyped.runtime.NumberDictionary[js.Any] {
+/* _ */ org.scalablytyped.runtime.NumberDictionary[js.Any] {
   /** The onbeforeremove hook is called before a DOM element is detached from the document. If a Promise is returned, Mithril only detaches the DOM element after the promise completes. */
   var onbeforeremove: js.UndefOr[
     js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | scala.Unit]

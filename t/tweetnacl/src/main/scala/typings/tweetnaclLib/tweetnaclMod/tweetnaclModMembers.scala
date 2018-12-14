@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("tweetnacl", JSImport.Namespace)
 @js.native
 object tweetnaclModMembers
-  extends ScalablyTyped.runtime.TopLevel[nacl]
+  extends org.scalablytyped.runtime.TopLevel[nacl]
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object BatchNs extends js.Object {
   
   trait ArrayJobStatusSummary
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Integer]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Integer]
   
   
   trait ArrayProperties extends js.Object {
@@ -1034,7 +1034,7 @@ object BatchNs extends js.Object {
   
   
   trait ParametersMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait RegisterJobDefinitionRequest extends js.Object {
@@ -1150,7 +1150,7 @@ object BatchNs extends js.Object {
   
   
   trait TagsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait TerminateJobRequest extends js.Object {

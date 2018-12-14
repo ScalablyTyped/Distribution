@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 /** Represents evaluated, named, custom objects in a DataView. */
 
 trait DataViewObjects
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[DataViewObject]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[DataViewObject]
 

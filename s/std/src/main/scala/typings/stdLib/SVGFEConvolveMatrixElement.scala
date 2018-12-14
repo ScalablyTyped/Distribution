@@ -50,7 +50,7 @@ trait SVGFEConvolveMatrixElement
 @JSGlobal("SVGFEConvolveMatrixElement")
 @js.native
 object SVGFEConvolveMatrixElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEConvolveMatrixElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEConvolveMatrixElement] {
   val SVG_EDGEMODE_DUPLICATE: scala.Double = js.native
   val SVG_EDGEMODE_NONE: scala.Double = js.native
   val SVG_EDGEMODE_UNKNOWN: scala.Double = js.native

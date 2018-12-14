@@ -17,5 +17,5 @@ trait AbstractRange extends js.Object {
 @JSGlobal("AbstractRange")
 @js.native
 object AbstractRange
-  extends ScalablyTyped.runtime.Instantiable0[AbstractRange]
+  extends org.scalablytyped.runtime.Instantiable0[AbstractRange]
 

@@ -100,6 +100,10 @@ trait Model extends js.Object {
                * @Default {false}
                */
   var enableMemberEditorPaging: js.UndefOr[scala.Boolean] = js.undefined
+  /** Enables/Disables sorting option in member editor dialog for the members of the respective field.
+               * @Default {false}
+               */
+  var enableMemberEditorSorting: js.UndefOr[scala.Boolean] = js.undefined
   /** Allows you to enable the paging for both the pivot chart and the pivot grid components for viewing the large data.
                * @Default {false}
                */

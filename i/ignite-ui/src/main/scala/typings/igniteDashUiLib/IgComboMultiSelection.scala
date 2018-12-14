@@ -10,7 +10,7 @@ trait IgComboMultiSelection
   extends /**
 	 * Option for IgComboMultiSelection
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Set addWithKeyModifier to true to disable the additive selection, then additive selection can be done by ctrl + mouse click / enter.
   	 *

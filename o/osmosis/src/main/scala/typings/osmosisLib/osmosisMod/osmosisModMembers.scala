@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("osmosis", JSImport.Namespace)
 @js.native
 object osmosisModMembers
-  extends ScalablyTyped.runtime.TopLevel[Osmosis]
+  extends org.scalablytyped.runtime.TopLevel[Osmosis]
 

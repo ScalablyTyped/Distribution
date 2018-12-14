@@ -19,7 +19,7 @@ object JSRequest extends js.Object {
   /** Current file path (before last '/' in url).*/
   var PathName: java.lang.String = js.native
   /** Query string parts.*/
-  var QueryString: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var QueryString: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /** initializes class.*/
   def EnsureSetup(): scala.Unit = js.native
 }

@@ -26,7 +26,7 @@ trait IModule extends js.Object {
            *
            * @param object Object map of components where the keys are the names and the values are the component definition objects
            */
-  def component(`object`: ScalablyTyped.runtime.StringDictionary[IComponentOptions]): IModule = js.native
+  def component(`object`: org.scalablytyped.runtime.StringDictionary[IComponentOptions]): IModule = js.native
   /**
            * Use this method to register work which needs to be performed on module loading.
            *
@@ -57,7 +57,7 @@ trait IModule extends js.Object {
            * @param controllerConstructor Controller constructor fn (optionally decorated with DI annotations in the array notation).
            */
   def controller(name: java.lang.String, controllerConstructor: Injectable[IControllerConstructor]): IModule = js.native
-  def controller(`object`: ScalablyTyped.runtime.StringDictionary[Injectable[IControllerConstructor]]): IModule = js.native
+  def controller(`object`: org.scalablytyped.runtime.StringDictionary[Injectable[IControllerConstructor]]): IModule = js.native
   /**
            * Register a service decorator with the $injector. A service decorator intercepts the creation of a service, allowing it to override or modify the behaviour of the service. The object returned by the decorator may be the original service, or a new service object which replaces or wraps and delegates to the original service.
            * @param name The name of the service to decorate
@@ -71,7 +71,7 @@ trait IModule extends js.Object {
            * @param directiveFactory An injectable directive factory function.
            */
   def directive[TScope /* <: IScope */](name: java.lang.String, directiveFactory: Injectable[IDirectiveFactory[TScope]]): IModule = js.native
-  def directive[TScope /* <: IScope */](`object`: ScalablyTyped.runtime.StringDictionary[Injectable[IDirectiveFactory[TScope]]]): IModule = js.native
+  def directive[TScope /* <: IScope */](`object`: org.scalablytyped.runtime.StringDictionary[Injectable[IDirectiveFactory[TScope]]]): IModule = js.native
   /**
            * Register a service factory, which will be called to return the service instance. This is short for registering a service where its provider consists of only a $get property, which is the given service factory function. You should use $provide.factory(getFn) if you do not need to configure your service in a provider.
            *
@@ -80,10 +80,10 @@ trait IModule extends js.Object {
            */
   def factory(name: java.lang.String, $getFn: Injectable[angularLib.angularMod.Global.Function]): IModule = js.native
   def factory(
-    `object`: ScalablyTyped.runtime.StringDictionary[Injectable[angularLib.angularMod.Global.Function]]
+    `object`: org.scalablytyped.runtime.StringDictionary[Injectable[angularLib.angularMod.Global.Function]]
   ): IModule = js.native
   def filter(name: java.lang.String, filterFactoryFunction: Injectable[FilterFactory]): IModule = js.native
-  def filter(`object`: ScalablyTyped.runtime.StringDictionary[Injectable[FilterFactory]]): IModule = js.native
+  def filter(`object`: org.scalablytyped.runtime.StringDictionary[Injectable[FilterFactory]]): IModule = js.native
   def provider(name: java.lang.String, inlineAnnotatedConstructor: js.Array[_]): IModule = js.native
   def provider(name: java.lang.String, providerObject: IServiceProvider): IModule = js.native
   def provider(name: java.lang.String, serviceProviderConstructor: IServiceProviderClass): IModule = js.native
@@ -101,7 +101,7 @@ trait IModule extends js.Object {
            */
   def service(name: java.lang.String, serviceConstructor: Injectable[angularLib.angularMod.Global.Function]): IModule = js.native
   def service(
-    `object`: ScalablyTyped.runtime.StringDictionary[Injectable[angularLib.angularMod.Global.Function]]
+    `object`: org.scalablytyped.runtime.StringDictionary[Injectable[angularLib.angularMod.Global.Function]]
   ): IModule = js.native
   def value(`object`: js.Object): IModule = js.native
   /**

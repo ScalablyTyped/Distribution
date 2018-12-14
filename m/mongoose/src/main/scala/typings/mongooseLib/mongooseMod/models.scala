@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mongoose", "models")
 @js.native
 object models
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[Model[_, js.Object]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[Model[_, js.Object]]
 

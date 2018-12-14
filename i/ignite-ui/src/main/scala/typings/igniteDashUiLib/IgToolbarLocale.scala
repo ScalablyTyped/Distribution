@@ -10,7 +10,7 @@ trait IgToolbarLocale
   extends /**
 	 * Option for IgToolbarLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets collapse button title.
   	 *

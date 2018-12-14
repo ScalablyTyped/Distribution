@@ -12,13 +12,13 @@ trait LineByLineReaderConstructor
      * @param filename filename to read
      * @param options Optional. {@link LineByLineReaderOptions}
      */
-ScalablyTyped.runtime.Instantiable1[/* filename */ java.lang.String, LineByLineReader]
+org.scalablytyped.runtime.Instantiable1[/* filename */ java.lang.String, LineByLineReader]
      with /**
      * Constructs a new LineByLineReader object
      * @param filename filename to read
      * @param options Optional. {@link LineByLineReaderOptions}
      */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* filename */ java.lang.String, 
       /* options */ LineByLineReaderOptions, 
       LineByLineReader

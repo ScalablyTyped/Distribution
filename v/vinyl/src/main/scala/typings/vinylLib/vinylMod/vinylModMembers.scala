@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("vinyl", JSImport.Namespace)
 @js.native
 object vinylModMembers
-  extends ScalablyTyped.runtime.TopLevel[FileConstructor]
+  extends org.scalablytyped.runtime.TopLevel[FileConstructor]
 

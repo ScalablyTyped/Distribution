@@ -17,7 +17,7 @@ trait PushManager extends js.Object {
 @JSGlobal("PushManager")
 @js.native
 object PushManager
-  extends ScalablyTyped.runtime.Instantiable0[PushManager] {
+  extends org.scalablytyped.runtime.Instantiable0[PushManager] {
   val supportedContentEncodings: js.Array[java.lang.String] = js.native
 }
 

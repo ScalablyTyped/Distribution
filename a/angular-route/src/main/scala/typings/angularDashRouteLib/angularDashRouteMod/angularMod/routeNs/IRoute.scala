@@ -96,7 +96,7 @@ trait IRoute extends js.Object {
                *   `ngRoute.$routeParams` will still refer to the previous route within these resolve functions.  Use
                *   `$route.current.params` to access the new route parameters, instead.
                */
-  var resolve: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var resolve: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
                * {string=}
                * The name under which the `resolve` map will be available on the scope of the route. If omitted, defaults

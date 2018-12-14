@@ -21,6 +21,6 @@ trait AnalyserNode extends AudioNode {
 @JSGlobal("AnalyserNode")
 @js.native
 object AnalyserNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, AnalyserNode]
-     with ScalablyTyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ AnalyserOptions, AnalyserNode]
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, AnalyserNode]
+     with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ AnalyserOptions, AnalyserNode]
 

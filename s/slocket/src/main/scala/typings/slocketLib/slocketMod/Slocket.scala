@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Slocket
-  extends ScalablyTyped.runtime.Instantiable1[/* lockFile */ java.lang.String, slocketLib.slocketMod.slocketNs.Slocket]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* lockFile */ java.lang.String, slocketLib.slocketMod.slocketNs.Slocket]
+     with org.scalablytyped.runtime.Instantiable2[
       /* lockFile */ java.lang.String, 
       /* cb */ js.Function2[
         /* error */ nodeLib.Error | scala.Null, 

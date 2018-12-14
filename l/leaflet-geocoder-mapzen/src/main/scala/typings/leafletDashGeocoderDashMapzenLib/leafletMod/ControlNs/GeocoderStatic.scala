@@ -11,9 +11,9 @@ trait GeocoderStatic
   extends /**
              * Creates a geocoder control.
              */
-ScalablyTyped.runtime.Instantiable0[Geocoder]
+org.scalablytyped.runtime.Instantiable0[Geocoder]
      with /**
              * Creates a geocoder control.
              */
-ScalablyTyped.runtime.Instantiable1[/* options */ GeocoderOptions, Geocoder]
+org.scalablytyped.runtime.Instantiable1[/* options */ GeocoderOptions, Geocoder]
 

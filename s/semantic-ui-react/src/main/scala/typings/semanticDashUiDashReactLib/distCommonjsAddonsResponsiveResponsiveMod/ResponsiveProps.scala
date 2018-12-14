@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait ResponsiveProps
   extends StrictResponsiveProps
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

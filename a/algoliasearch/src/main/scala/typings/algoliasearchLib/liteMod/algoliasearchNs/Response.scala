@@ -13,9 +13,9 @@ trait Response extends js.Object {
        */
   var cursor: js.UndefOr[java.lang.String] = js.undefined
   var facets: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[scala.Double]]
+    org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]]
   ] = js.undefined
-  var facets_stats: js.UndefOr[ScalablyTyped.runtime.StringDictionary[algoliasearchLib.Anon_Max]] = js.undefined
+  var facets_stats: js.UndefOr[org.scalablytyped.runtime.StringDictionary[algoliasearchLib.Anon_Max]] = js.undefined
   /**
        * Contains all the hits matching the query
        * https://www.algolia.com/doc/api-reference/api-methods/search/?language=javascript#response

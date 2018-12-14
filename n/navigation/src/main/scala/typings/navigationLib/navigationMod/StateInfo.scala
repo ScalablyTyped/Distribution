@@ -10,7 +10,7 @@ trait StateInfo
   extends /**
      * Gets the additional state attributes
      */
-/* extras */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* extras */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Gets the default NavigationData Types for  this State
        */

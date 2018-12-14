@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait DataSourceSchemaModelFieldValidation
-  extends /* rule */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* rule */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var max: js.UndefOr[js.Any] = js.undefined
   var maxLength: js.UndefOr[js.Any] = js.undefined
   var min: js.UndefOr[js.Any] = js.undefined

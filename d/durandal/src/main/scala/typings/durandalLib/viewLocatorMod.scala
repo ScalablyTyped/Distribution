@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("durandal/viewLocator", JSImport.Namespace)
 @js.native
 object viewLocatorMod
-  extends ScalablyTyped.runtime.TopLevel[DurandalViewLocatorModule]
+  extends org.scalablytyped.runtime.TopLevel[DurandalViewLocatorModule]
 

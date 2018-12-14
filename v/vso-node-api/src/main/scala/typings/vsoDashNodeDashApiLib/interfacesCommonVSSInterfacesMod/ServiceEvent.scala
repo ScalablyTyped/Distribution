@@ -22,7 +22,7 @@ trait ServiceEvent extends js.Object {
   /**
        * This dictionary carries the context descriptors along with their ids.
        */
-  var resourceContainers: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var resourceContainers: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * This is the version of the resource.
        */

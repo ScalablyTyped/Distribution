@@ -10,7 +10,7 @@ trait DataSourceSettingsPaging
   extends /**
 	 * Option for DataSourceSettingsPaging
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Whether when a new page of data is requested we should append the new data to the existing data
   	 *

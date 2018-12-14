@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "react-toolbox"
-version := "2.0.0-beta.13-e4825b"
+version := "2.0.0-beta.13-d4f101"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180910Z-c23652",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-102207",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-2b5950",
-  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180910Z-8c7bdd",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
-  "org.scalablytyped" %%% "ramda" % "0.25-dt-20181208Z-cb2465",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
-  "org.scalablytyped" %%% "react-css-themr" % "2.1.2-f3a5d7",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-0f3c05",
-  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20180910Z-4f97e6",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180910Z-4a9357",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-3acce5",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-eb24f4",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-5410a5",
+  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180910Z-fb4ed9",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-32d5ea",
+  "org.scalablytyped" %%% "ramda" % "0.25-dt-20181208Z-b3e852",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-7d04f8",
+  "org.scalablytyped" %%% "react-css-themr" % "2.1.2-772d0f",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-71b187",
+  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20180910Z-8273af",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

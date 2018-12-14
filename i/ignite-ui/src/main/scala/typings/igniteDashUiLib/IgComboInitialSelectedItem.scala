@@ -10,7 +10,7 @@ trait IgComboInitialSelectedItem
   extends /**
 	 * Option for IgComboInitialSelectedItem
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Optional="true" Index of item in the list. The index should be greater than -1 and less than the count of the [items](ui.igcombo#methods:items) in the list (rows in dataSource).
   	 *

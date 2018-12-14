@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Decoders
-  extends /* decoderName */ ScalablyTyped.runtime.StringDictionary[Decoder] {
+  extends /* decoderName */ org.scalablytyped.runtime.StringDictionary[Decoder] {
   @JSName("jsSend")
   var jsSend_Original: Decoder = js.native
   def jsSend(): scala.Unit = js.native

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Line
-  extends /* row */ ScalablyTyped.runtime.NumberDictionary[Object]
+  extends /* row */ org.scalablytyped.runtime.NumberDictionary[Object]
 

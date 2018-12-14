@@ -14,14 +14,14 @@ abstract class Message () extends js.Object {
   def readBinaryExtension(
     proto: Message,
     reader: BinaryReader,
-    extensions: ScalablyTyped.runtime.NumberDictionary[ExtensionFieldBinaryInfo[Message]],
+    extensions: org.scalablytyped.runtime.NumberDictionary[ExtensionFieldBinaryInfo[Message]],
     setExtensionFn: js.Function2[/* fieldInfo */ ExtensionFieldInfo[_], /* val */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def serializeBinary(): stdLib.Uint8Array = js.native
   def serializeBinaryExtensions(
     proto: Message,
     writer: BinaryWriter,
-    extensions: ScalablyTyped.runtime.NumberDictionary[ExtensionFieldBinaryInfo[Message]],
+    extensions: org.scalablytyped.runtime.NumberDictionary[ExtensionFieldBinaryInfo[Message]],
     getExtensionFn: js.Function1[/* fieldInfo */ ExtensionFieldInfo[_], _]
   ): scala.Unit = js.native
   def setExtension[T](fieldInfo: ExtensionFieldInfo[T], value: T): scala.Unit = js.native
@@ -33,10 +33,10 @@ abstract class Message () extends js.Object {
 @JSImport("google-protobuf", "Message")
 @js.native
 object Message extends js.Object {
-  var extensions: ScalablyTyped.runtime.NumberDictionary[
+  var extensions: org.scalablytyped.runtime.NumberDictionary[
     googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
   ] = js.native
-  var extensionsBinary: ScalablyTyped.runtime.NumberDictionary[
+  var extensionsBinary: org.scalablytyped.runtime.NumberDictionary[
     googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldBinaryInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
   ] = js.native
   def addToRepeatedField(msg: googleDashProtobufLib.googleDashProtobufMod.Message, fieldNumber: scala.Double, value: js.Any): scala.Unit = js.native
@@ -220,7 +220,7 @@ object Message extends js.Object {
   def toObjectExtension(
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,
     obj: js.Object,
-    extensions: ScalablyTyped.runtime.NumberDictionary[
+    extensions: org.scalablytyped.runtime.NumberDictionary[
       googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
     ],
     getExtensionFn: js.Function1[
@@ -231,7 +231,7 @@ object Message extends js.Object {
   def toObjectExtension(
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,
     obj: js.Object,
-    extensions: ScalablyTyped.runtime.NumberDictionary[
+    extensions: org.scalablytyped.runtime.NumberDictionary[
       googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
     ],
     getExtensionFn: js.Function1[

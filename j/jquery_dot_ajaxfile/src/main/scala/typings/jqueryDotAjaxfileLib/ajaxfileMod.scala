@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ajaxfile", JSImport.Namespace)
 @js.native
 object ajaxfileMod
-  extends ScalablyTyped.runtime.TopLevel[IAjaxFileStatic]
+  extends org.scalablytyped.runtime.TopLevel[IAjaxFileStatic]
 

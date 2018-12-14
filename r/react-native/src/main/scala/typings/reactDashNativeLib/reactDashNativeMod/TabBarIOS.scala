@@ -13,6 +13,6 @@ class TabBarIOS ()
 @JSImport("react-native", "TabBarIOS")
 @js.native
 object TabBarIOS extends js.Object {
-  var Item: ScalablyTyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TabBarIOSItem] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TabBarIOSItem] = js.native
 }
 

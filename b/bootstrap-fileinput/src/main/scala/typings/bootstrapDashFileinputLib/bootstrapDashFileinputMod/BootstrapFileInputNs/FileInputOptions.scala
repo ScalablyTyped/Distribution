@@ -215,7 +215,7 @@ trait FileInputOptions extends js.Object {
   /**
           this is an extension of previewThumbTags specifically for initial preview content - but will be configured as an array of objects corresponding to each initial preview thumbnail. The initial preview thumbnails set via initialPreview will read this configuration for replacing tags.
           */
-  var initialPreviewThumbTags: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var initialPreviewThumbTags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
           Language configuration for the plugin to enable the plugin to display messages for your locale (you must set the ISO code for the language).
            You can have multiple language widgets on the same page.
@@ -534,7 +534,7 @@ trait FileInputOptions extends js.Object {
   /**
           this will be a list of tags used in thumbnail templates that will be replaced dynamically within the thumbnail markup, when the thumbnail is rendered.
           */
-  var previewThumbTags: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var previewThumbTags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
           the upload progress bar CSS class to be applied when AJAX upload is in process (applicable only for ajax uploads).
           Defaults to progress-bar progress-bar-success progress-bar-striped active.

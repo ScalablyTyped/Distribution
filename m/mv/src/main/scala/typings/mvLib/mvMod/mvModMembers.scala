@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mv", JSImport.Namespace)
 @js.native
 object mvModMembers
-  extends ScalablyTyped.runtime.TopLevel[Mv]
+  extends org.scalablytyped.runtime.TopLevel[Mv]
 

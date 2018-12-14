@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "chalk"
-version := "2.4.1-76fe8f"
+version := "2.4.1-c5701d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-ed6428",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-f388aa",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-404a30",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-d7a900")
+  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-226182",
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-7f8b58",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-ca86dd",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
+  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-7348e2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

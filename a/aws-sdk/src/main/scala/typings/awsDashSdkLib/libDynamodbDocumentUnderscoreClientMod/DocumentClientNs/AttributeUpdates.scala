@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait AttributeUpdates
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValueUpdate]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValueUpdate]
 

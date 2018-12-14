@@ -10,7 +10,7 @@ trait SimpleTextMarkerTemplateSettings
   extends /**
 	 * Option for SimpleTextMarkerTemplateSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var borderColor: js.UndefOr[java.lang.String] = js.undefined
   var borderThickness: js.UndefOr[scala.Double] = js.undefined

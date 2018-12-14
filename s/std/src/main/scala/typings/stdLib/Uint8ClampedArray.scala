@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Uint8ClampedArray
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[scala.Double] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[scala.Double] {
   /**
         * The size in bytes of each element in the array.
         */
@@ -28,13 +28,13 @@ trait Uint8ClampedArray
         * The offset in bytes of the array.
         */
   val byteOffset: scala.Double = js.native
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[scala.Double]] = js.native
   /**
         * The length of the array.
         */
   val length: scala.Double = js.native
-  @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
+  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   val toStringTag: stdLib.stdLibStrings.Uint8ClampedArray = js.native
   /**
         * Returns the this object after copying a section of the array identified by start and end

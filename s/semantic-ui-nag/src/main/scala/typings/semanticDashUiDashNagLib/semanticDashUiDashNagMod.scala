@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-nag", JSImport.Namespace)
 @js.native
 object semanticDashUiDashNagMod
-  extends ScalablyTyped.runtime.TopLevel[semanticDashUiDashNagLib.SemanticUINs.Nag]
+  extends org.scalablytyped.runtime.TopLevel[semanticDashUiDashNagLib.SemanticUINs.Nag]
 

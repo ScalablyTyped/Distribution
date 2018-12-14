@@ -14,7 +14,7 @@ trait TaskConstructor
      * @param container The container specification.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* container */ Container, Task]
+org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* container */ Container, Task]
      with /**
      * Construct a new Task, which is a Container that can be run many times as individual tasks.
      *
@@ -22,7 +22,7 @@ ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* container */
      * @param container The container specification.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* name */ java.lang.String, 
       /* container */ Container, 
       /* opts */ atPulumiPulumiLib.resourceMod.ResourceOptions, 

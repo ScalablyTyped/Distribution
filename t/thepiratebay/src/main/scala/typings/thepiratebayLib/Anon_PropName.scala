@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_PropName
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var link: java.lang.String
 }
 

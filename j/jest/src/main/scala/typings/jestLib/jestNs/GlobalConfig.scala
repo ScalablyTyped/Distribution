@@ -10,7 +10,7 @@ trait GlobalConfig extends js.Object {
   var bail: scala.Boolean
   var collectCoverage: scala.Boolean
   var collectCoverageFrom: js.Array[Glob]
-  var collectCoverageOnlyFrom: Maybe[ScalablyTyped.runtime.StringDictionary[scala.Boolean]]
+  var collectCoverageOnlyFrom: Maybe[org.scalablytyped.runtime.StringDictionary[scala.Boolean]]
   var coverageDirectory: java.lang.String
   var coverageReporters: js.Array[java.lang.String]
   var coverageThreshold: jestLib.Anon_Global

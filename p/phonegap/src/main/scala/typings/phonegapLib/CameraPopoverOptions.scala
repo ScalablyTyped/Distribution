@@ -17,7 +17,7 @@ trait CameraPopoverOptions extends js.Object {
 @JSGlobal("CameraPopoverOptions")
 @js.native
 object CameraPopoverOptions
-  extends ScalablyTyped.runtime.Instantiable5[
+  extends org.scalablytyped.runtime.Instantiable5[
       /* x */ scala.Double, 
       /* y */ scala.Double, 
       /* width */ scala.Double, 

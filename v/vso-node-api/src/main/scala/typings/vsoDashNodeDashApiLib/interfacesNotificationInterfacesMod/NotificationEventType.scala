@@ -14,7 +14,7 @@ trait NotificationEventType extends js.Object {
   var color: java.lang.String
   var customSubscriptionsAllowed: scala.Boolean
   var eventPublisher: NotificationEventPublisher
-  var fields: ScalablyTyped.runtime.StringDictionary[NotificationEventField]
+  var fields: org.scalablytyped.runtime.StringDictionary[NotificationEventField]
   var hasInitiator: scala.Boolean
   /**
        * Gets or sets the icon representing this event type. Can be a URL or a CSS class. Example: css://some-css-class

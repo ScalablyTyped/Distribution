@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ModelsHashInterface
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[Model[_, _]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[Model[_, _]]
 

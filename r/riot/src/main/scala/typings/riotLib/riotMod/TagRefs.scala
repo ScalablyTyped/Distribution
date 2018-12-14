@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TagRefs
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[TagInstance | stdLib.Element]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[TagInstance | stdLib.Element]
 

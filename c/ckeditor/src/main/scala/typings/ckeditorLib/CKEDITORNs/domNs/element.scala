@@ -25,7 +25,7 @@ class element protected () extends node {
   def appendText(text: java.lang.String): node = js.native
   def breakParent(parent: element): scala.Unit = js.native
   def contains(node: node): scala.Boolean = js.native
-  def copyAttributes(dest: element, skipAttributes: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def copyAttributes(dest: element, skipAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
   def data(name: java.lang.String): java.lang.String = js.native
   def data(name: java.lang.String, value: ckeditorLib.ckeditorLibNumbers.`false`): java.lang.String = js.native
   def data(name: java.lang.String, value: java.lang.String): java.lang.String = js.native
@@ -79,7 +79,7 @@ class element protected () extends node {
   def hide(): scala.Unit = js.native
   def is(name: java.lang.String*): scala.Boolean = js.native
   def is(name: js.Any): scala.Boolean = js.native
-  def isBlockBoundary(customNodeNames: ScalablyTyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]): scala.Boolean = js.native
+  def isBlockBoundary(customNodeNames: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]): scala.Boolean = js.native
   def isEditable(): scala.Boolean = js.native
   def isEditable(textCursor: scala.Boolean): scala.Boolean = js.native
   def isEmptyInlineRemoveable(): scala.Boolean = js.native
@@ -100,7 +100,7 @@ class element protected () extends node {
   def scrollIntoView(): scala.Unit = js.native
   def scrollIntoView(alignToTop: scala.Boolean): scala.Unit = js.native
   def setAttribute(name: java.lang.String, value: java.lang.String): element = js.native
-  def setAttributes(attributesPairs: ScalablyTyped.runtime.StringDictionary[java.lang.String]): element = js.native
+  def setAttributes(attributesPairs: org.scalablytyped.runtime.StringDictionary[java.lang.String]): element = js.native
   def setHtml(html: java.lang.String): java.lang.String = js.native
   def setOpacity(opacity: scala.Double): scala.Unit = js.native
   def setSize(`type`: java.lang.String, size: scala.Double, isBorderBox: scala.Boolean): scala.Unit = js.native
@@ -108,7 +108,7 @@ class element protected () extends node {
   def setState(state: scala.Double, base: java.lang.String): scala.Unit = js.native
   def setState(state: scala.Double, base: java.lang.String, useAria: scala.Boolean): scala.Unit = js.native
   def setStyle(name: java.lang.String, value: java.lang.String): element = js.native
-  def setStyles(stylesPair: ScalablyTyped.runtime.StringDictionary[java.lang.String]): element = js.native
+  def setStyles(stylesPair: org.scalablytyped.runtime.StringDictionary[java.lang.String]): element = js.native
   def setText(text: java.lang.String): java.lang.String = js.native
   def setValue(value: java.lang.String): element = js.native
   def show(): scala.Unit = js.native

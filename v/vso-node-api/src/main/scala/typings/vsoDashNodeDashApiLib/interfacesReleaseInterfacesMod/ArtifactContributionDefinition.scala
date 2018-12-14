@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait ArtifactContributionDefinition extends js.Object {
   var artifactType: java.lang.String
-  var artifactTypeStreamMapping: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var browsableArtifactTypeMapping: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var artifactTypeStreamMapping: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var browsableArtifactTypeMapping: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var dataSourceBindings: js.Array[DataSourceBinding]
   var displayName: java.lang.String
   var downloadTaskId: java.lang.String

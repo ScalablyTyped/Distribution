@@ -12,6 +12,6 @@ trait DimmerComponent
     semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerDimmableMod.DimmerDimmableProps, 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
-  var Inner: ScalablyTyped.runtime.Instantiable0[semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerInnerMod.default] = js.native
+  var Inner: org.scalablytyped.runtime.Instantiable0[semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerInnerMod.default] = js.native
 }
 

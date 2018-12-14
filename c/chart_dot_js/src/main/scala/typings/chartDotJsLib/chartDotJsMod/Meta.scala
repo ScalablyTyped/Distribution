@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait Meta extends js.Object {
   @JSName("$filler")
-  var $filler: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var controller: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var $filler: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var controller: org.scalablytyped.runtime.StringDictionary[js.Any]
   var data: js.Array[MetaData]
   var dataset: js.UndefOr[chartDotJsLib.chartDotJsMod.ChartNs.ChartDataSets] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined

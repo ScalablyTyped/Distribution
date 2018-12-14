@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class styles () extends js.Object {
   def pushStylesLower(
     element: ckeditorLib.CKEDITORNs.htmlParserNs.element,
-    exceptions: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+    exceptions: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   ): scala.Boolean = js.native
   def pushStylesLower(
     element: ckeditorLib.CKEDITORNs.htmlParserNs.element,
-    exceptions: ScalablyTyped.runtime.StringDictionary[scala.Boolean],
+    exceptions: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
     wrapText: scala.Boolean
   ): scala.Boolean = js.native
 }

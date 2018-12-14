@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait UntypedServiceImplementation
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[handleCall[_, _]]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[handleCall[_, _]]
 

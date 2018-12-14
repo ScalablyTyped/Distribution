@@ -10,7 +10,7 @@ trait IgTreeBindings
   extends /**
 	 * Option for IgTreeBindings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets the next layer of bindings in a recursive fashion.
   	 *

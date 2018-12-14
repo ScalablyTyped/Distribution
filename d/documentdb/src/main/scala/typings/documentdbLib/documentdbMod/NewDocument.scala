@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait NewDocument
   extends UniqueId
      with /** Custom properties */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** The time to live in seconds of the document. */
   var ttl: js.UndefOr[scala.Double] = js.undefined
 }

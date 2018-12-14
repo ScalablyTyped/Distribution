@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ParsedArguments
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var argv: js.Array[java.lang.String]
   var rest: js.Array[java.lang.String]
 }

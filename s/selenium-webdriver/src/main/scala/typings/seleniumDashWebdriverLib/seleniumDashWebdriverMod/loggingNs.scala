@@ -414,7 +414,7 @@ object loggingNs extends js.Object {
     def setLevel(`type`: java.lang.String, level: java.lang.String): scala.Unit = js.native
     def setLevel(`type`: java.lang.String, level: scala.Double): scala.Unit = js.native
     def setLevel(`type`: java.lang.String, level: Level): scala.Unit = js.native
-    def toJSON(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+    def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   }
   
   /**

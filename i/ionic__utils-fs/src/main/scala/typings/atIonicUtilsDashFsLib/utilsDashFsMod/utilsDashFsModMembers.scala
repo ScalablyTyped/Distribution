@@ -34,8 +34,8 @@ object utilsDashFsModMembers extends js.Object {
   def readDirp(dir: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def readDirp(dir: java.lang.String, hasFilterWalkerOptions: ReadDirROptions): js.Promise[js.Array[java.lang.String]] = js.native
   def readFile(arg1: java.lang.String, arg2: ReadFileOptions): js.Promise[java.lang.String] = js.native
-  def readJsonFile(filePath: java.lang.String): js.Promise[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def readJsonFile(filePath: java.lang.String, options: ReadFileOptions): js.Promise[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def readJsonFile(filePath: java.lang.String): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def readJsonFile(filePath: java.lang.String, options: ReadFileOptions): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def removeDirectory(dir: java.lang.String): js.Promise[scala.Unit] = js.native
   def stat(arg1: java.lang.String): js.Promise[nodeLib.fsMod.Stats] = js.native
   def statSafe(p: java.lang.String): js.Promise[js.UndefOr[nodeLib.fsMod.Stats]] = js.native
@@ -47,7 +47,7 @@ object utilsDashFsModMembers extends js.Object {
   def writeFile(arg1: java.lang.String, arg2: js.Any, arg3: WriteFileOptions): js.Promise[scala.Unit] = js.native
   def writeJsonFile(
     filePath: java.lang.String,
-    json: ScalablyTyped.runtime.StringDictionary[js.Any],
+    json: org.scalablytyped.runtime.StringDictionary[js.Any],
     options: WriteFileOptions
   ): js.Promise[scala.Unit] = js.native
   def writeStreamToFile(stream: nodeLib.NodeJSNs.ReadableStream, destination: java.lang.String): js.Promise[_] = js.native

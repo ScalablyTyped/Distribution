@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/type/introspection", JSImport.Namespace)
 @js.native
 object typeIntrospectionMod extends js.Object {
-  val SchemaMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  val SchemaMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val TypeKind: graphqlLib.Anon_ENUM = js.native
-  val TypeMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
-  val TypeNameMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  val TypeMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
+  val TypeNameMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val __Directive: graphqlLib.typeDefinitionMod.GraphQLObjectType = js.native
   val __DirectiveLocation: graphqlLib.typeDefinitionMod.GraphQLEnumType = js.native
   val __EnumValue: graphqlLib.typeDefinitionMod.GraphQLObjectType = js.native

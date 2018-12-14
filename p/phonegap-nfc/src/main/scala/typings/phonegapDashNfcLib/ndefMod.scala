@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ndef", JSImport.Namespace)
 @js.native
 object ndefMod
-  extends ScalablyTyped.runtime.TopLevel[phonegapDashNfcLib.PhoneGapNfcNs.Ndef]
+  extends org.scalablytyped.runtime.TopLevel[phonegapDashNfcLib.PhoneGapNfcNs.Ndef]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-codemirror", JSImport.Namespace)
 @js.native
 object reactDashCodemirrorMod
-  extends ScalablyTyped.runtime.TopLevel[reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorClass]
+  extends org.scalablytyped.runtime.TopLevel[reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorClass]
 

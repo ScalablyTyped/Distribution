@@ -16,7 +16,7 @@ trait DownfileParams extends js.Object {
   /**
                * 	HTTP 请求的 Header，Header 中不能设置 Referer
                */
-  var header: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var header: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
                * res.tempFilePath 临时文件路径。如果没传入 filePath 指定文件存储路径，则下载后的文件会存储到一个临时文件
                * res.statusCode 开发者服务器返回的 HTTP 状态码

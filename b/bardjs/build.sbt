@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "bardjs"
-version := "0.1.4-dt-20180910Z-16743d"
+version := "0.1.4-dt-20180910Z-1ff400"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-b4446a",
-  "org.scalablytyped" %%% "chai" % "4.1-dt-20181027Z-6866ba",
-  "org.scalablytyped" %%% "mocha" % "5.2-dt-20180910Z-28d204",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-9a8364",
+  "org.scalablytyped" %%% "chai" % "4.1-dt-20181027Z-afd95f",
+  "org.scalablytyped" %%% "mocha" % "5.2-dt-20180910Z-3ebcb3",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

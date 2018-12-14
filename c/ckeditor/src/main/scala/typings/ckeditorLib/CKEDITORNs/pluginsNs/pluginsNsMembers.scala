@@ -22,7 +22,7 @@ object pluginsNsMembers extends js.Object {
   def load(
     name: java.lang.String,
     callback: js.Function1[/* plugins */ js.Array[java.lang.String], scala.Unit],
-    scope: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scope: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def setLang(pluginName: java.lang.String, languageCode: java.lang.String, languageEntries: js.Any): scala.Unit = js.native
 }

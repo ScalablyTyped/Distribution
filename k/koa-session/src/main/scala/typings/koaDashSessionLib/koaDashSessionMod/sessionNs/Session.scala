@@ -13,7 +13,7 @@ trait Session
   extends /**
          * allow to put any value on session object
          */
-/* _ */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* _ */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Return how many values there are in the session object.
            * Used to see if it"s "populated".

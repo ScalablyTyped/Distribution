@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CommandHandlers
-  extends /* command */ ScalablyTyped.runtime.StringDictionary[
+  extends /* command */ org.scalablytyped.runtime.StringDictionary[
       js.Function2[/* frame */ nodeLib.streamMod.Writable, /* callback */ commandHandler, scala.Unit]
     ]
 

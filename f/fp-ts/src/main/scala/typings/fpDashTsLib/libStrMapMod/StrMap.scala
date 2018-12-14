@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/StrMap", "StrMap")
 @js.native
 class StrMap[A] protected () extends js.Object {
-  def this(value: ScalablyTyped.runtime.StringDictionary[A]) = this()
+  def this(value: org.scalablytyped.runtime.StringDictionary[A]) = this()
   val _A: A = js.native
   val _URI: URI = js.native
-  val value: ScalablyTyped.runtime.StringDictionary[A] = js.native
+  val value: org.scalablytyped.runtime.StringDictionary[A] = js.native
   def filter(p: fpDashTsLib.libFunctionMod.Predicate[A]): StrMap[A] = js.native
   /**
        * @since 1.12.0

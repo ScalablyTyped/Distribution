@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 
 trait Room extends js.Object {
   var length: scala.Double
-  var sockets: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  var sockets: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 }
 

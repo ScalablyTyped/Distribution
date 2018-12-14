@@ -15,7 +15,7 @@ object yamlNs extends js.Object {
     def this(resourceType: java.lang.String, name: java.lang.String, config: js.Any, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
     var getResourceImpl: js.Any = js.native
     var resources: atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
       ] = js.native
     /**
              * getCustomResource returns a resource defined by a CRD with the given group/version/kind and name.
@@ -1529,7 +1529,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.updated_annotations
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
@@ -1561,7 +1561,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.updated_annotations
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Deployment`,
@@ -4511,7 +4511,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.updated_annotations
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
@@ -4543,7 +4543,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.updated_annotations
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Deployment`,
@@ -7040,7 +7040,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.parameters
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClass`,
@@ -7099,7 +7099,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.parameters
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClass`,
@@ -7400,7 +7400,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.parameters
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClass`,
@@ -7459,7 +7459,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.parameters
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClass`,
@@ -7972,7 +7972,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.data
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMap`,
@@ -8002,7 +8002,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.data
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMap`,
@@ -9355,7 +9355,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.string_data
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Secret`,
@@ -9393,7 +9393,7 @@ object yamlNs extends js.Object {
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.string_data
     ): atPulumiPulumiLib.pulumiMod.Output[
-        ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
       ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccountList`,
@@ -11832,10 +11832,10 @@ object yamlNs extends js.Object {
   }
   
   def parse(config: ConfigGroupOpts): atPulumiPulumiLib.pulumiMod.Output[
-    ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
+    org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
   ] = js.native
   def parse(config: ConfigGroupOpts, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions): atPulumiPulumiLib.pulumiMod.Output[
-    ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
+    org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
   ] = js.native
 }
 

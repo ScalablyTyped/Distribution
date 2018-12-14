@@ -10,7 +10,7 @@ trait IgPivotViewPivotGridOptionsLevelSortDirection
   extends /**
 	 * Option for IgPivotViewPivotGridOptionsLevelSortDirection
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies the unique name of the level, which will be sorted.
   	 */

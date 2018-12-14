@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_HTMLMarqueeElement
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.HTMLMarqueeElement]
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.HTMLMarqueeElement]
 

@@ -24,5 +24,5 @@ trait IR
          * @param anode 
          * @return  
          */
-ScalablyTyped.runtime.Instantiable3[/* data */ js.Any, /* cathode */ espruinoLib.Pin, /* anode */ espruinoLib.Pin, IR]
+org.scalablytyped.runtime.Instantiable3[/* data */ js.Any, /* cathode */ espruinoLib.Pin, /* anode */ espruinoLib.Pin, IR]
 

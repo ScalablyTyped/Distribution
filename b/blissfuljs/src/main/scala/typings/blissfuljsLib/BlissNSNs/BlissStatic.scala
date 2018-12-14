@@ -36,11 +36,11 @@ trait BlissStatic extends js.Object {
   def Class(options: blissfuljsLib.Anon_PropertyNameStatic): js.Object = js.native
   @JSName("Class")
   def Class_TT[T](options: blissfuljsLib.Anon_PropertyNameStatic): T = js.native
-  def add(callbacks: ScalablyTyped.runtime.StringDictionary[js.Function]): scala.Unit = js.native
-  def add(callbacks: ScalablyTyped.runtime.StringDictionary[js.Function], on: blissfuljsLib.Array[_]): scala.Unit = js.native
-  def add(callbacks: ScalablyTyped.runtime.StringDictionary[js.Function], on: BlissStatic): scala.Unit = js.native
-  def add(callbacks: ScalablyTyped.runtime.StringDictionary[js.Function], on: BlissStaticCollection): scala.Unit = js.native
-  def add(callbacks: ScalablyTyped.runtime.StringDictionary[js.Function], on: blissfuljsLib.Element): scala.Unit = js.native
+  def add(callbacks: org.scalablytyped.runtime.StringDictionary[js.Function]): scala.Unit = js.native
+  def add(callbacks: org.scalablytyped.runtime.StringDictionary[js.Function], on: blissfuljsLib.Array[_]): scala.Unit = js.native
+  def add(callbacks: org.scalablytyped.runtime.StringDictionary[js.Function], on: BlissStatic): scala.Unit = js.native
+  def add(callbacks: org.scalablytyped.runtime.StringDictionary[js.Function], on: BlissStaticCollection): scala.Unit = js.native
+  def add(callbacks: org.scalablytyped.runtime.StringDictionary[js.Function], on: blissfuljsLib.Element): scala.Unit = js.native
   def add(name: java.lang.String, callback: js.Function): scala.Unit = js.native
   def add(name: java.lang.String, callback: js.Function, on: blissfuljsLib.Array[_]): scala.Unit = js.native
   def add(name: java.lang.String, callback: js.Function, on: BlissStatic): scala.Unit = js.native
@@ -278,12 +278,12 @@ trait BlissStatic extends js.Object {
   def delegate[T](
     subject: blissfuljsLib.Array[BlissDecoratedElement[T]],
     `type`: java.lang.String,
-    selectorsToCallbacks: ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
+    selectorsToCallbacks: org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
   ): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def delegate[T](
     subject: blissfuljsLib.Array[BlissDecoratedElement[T]],
-    typesToSelectorsToCallbacks: ScalablyTyped.runtime.StringDictionary[
-      ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
+    typesToSelectorsToCallbacks: org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
     ]
   ): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def delegate[T](
@@ -295,30 +295,30 @@ trait BlissStatic extends js.Object {
   def delegate[T](
     subject: BlissDecoratedElement[T],
     `type`: java.lang.String,
-    selectorsToCallbacks: ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
+    selectorsToCallbacks: org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
   ): BlissDecoratedElement[T] = js.native
   def delegate[T](
     subject: BlissDecoratedElement[T],
-    typesToSelectorsToCallbacks: ScalablyTyped.runtime.StringDictionary[
-      ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
+    typesToSelectorsToCallbacks: org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
     ]
   ): BlissDecoratedElement[T] = js.native
-  def each(obj: ScalablyTyped.runtime.StringDictionary[js.Any], callback: js.Function): js.Object = js.native
-  def each(obj: ScalablyTyped.runtime.StringDictionary[js.Any], callback: js.Function, ret: js.Object): js.Object = js.native
+  def each(obj: org.scalablytyped.runtime.StringDictionary[js.Any], callback: js.Function): js.Object = js.native
+  def each(obj: org.scalablytyped.runtime.StringDictionary[js.Any], callback: js.Function, ret: js.Object): js.Object = js.native
   @JSName("each")
-  def each_TT[T](obj: ScalablyTyped.runtime.StringDictionary[js.Any], callback: js.Function): T = js.native
+  def each_TT[T](obj: org.scalablytyped.runtime.StringDictionary[js.Any], callback: js.Function): T = js.native
   @JSName("each")
-  def each_TT[T](obj: ScalablyTyped.runtime.StringDictionary[js.Any], callback: js.Function, ret: js.Object): T = js.native
-  def events[T](
-    subject: blissfuljsLib.Array[BlissDecoratedElement[T]],
-    handlers: ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
-  ): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
+  def each_TT[T](obj: org.scalablytyped.runtime.StringDictionary[js.Any], callback: js.Function, ret: js.Object): T = js.native
   def events[T](subject: blissfuljsLib.Array[BlissDecoratedElement[T]], handlers: blissfuljsLib.Element): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def events[T](
-    subject: BlissDecoratedElement[T],
-    handlers: ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
-  ): BlissDecoratedElement[T] = js.native
+    subject: blissfuljsLib.Array[BlissDecoratedElement[T]],
+    handlers: org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
+  ): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def events[T](subject: BlissDecoratedElement[T], handlers: blissfuljsLib.Element): BlissDecoratedElement[T] = js.native
+  def events[T](
+    subject: BlissDecoratedElement[T],
+    handlers: org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
+  ): BlissDecoratedElement[T] = js.native
   def extend(target: js.Object, source: js.Any): js.Object = js.native
   def extend(target: js.Object, source: js.Any, whitelist: blissfuljsLib.Array[java.lang.String]): js.Object = js.native
   def extend(target: js.Object, source: js.Any, whitelist: java.lang.String): js.Object = js.native
@@ -340,42 +340,48 @@ trait BlissStatic extends js.Object {
   def fire[T](
     subject: blissfuljsLib.Array[BlissDecoratedElement[T]],
     `type`: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[js.Any]
+    properties: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def fire[T](subject: BlissDecoratedElement[T], `type`: java.lang.String): BlissDecoratedElement[T] = js.native
   def fire[T](
     subject: BlissDecoratedElement[T],
     `type`: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[js.Any]
+    properties: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): BlissDecoratedElement[T] = js.native
   def include(condition: js.Any, url: java.lang.String): js.Promise[scala.Unit] = js.native
   def include(url: java.lang.String): js.Promise[scala.Unit] = js.native
   def inside[T](subject: BlissDecoratedElement[T], element: blissfuljsLib.Element): BlissDecoratedElement[T] = js.native
-  def `lazy`(`object`: js.Object, properties: ScalablyTyped.runtime.StringDictionary[js.Function0[_]]): js.Object = js.native
+  def `lazy`(`object`: js.Object, properties: org.scalablytyped.runtime.StringDictionary[js.Function0[_]]): js.Object = js.native
   def `lazy`(`object`: js.Object, property: java.lang.String, getter: js.Function0[_]): js.Object = js.native
   @JSName("lazy")
-  def lazy_TT[T](`object`: js.Object, properties: ScalablyTyped.runtime.StringDictionary[js.Function0[_]]): T = js.native
+  def lazy_TT[T](`object`: js.Object, properties: org.scalablytyped.runtime.StringDictionary[js.Function0[_]]): T = js.native
   @JSName("lazy")
   def lazy_TT[T](`object`: js.Object, property: java.lang.String, getter: js.Function0[_]): T = js.native
-  def live(`object`: js.Object, properties: ScalablyTyped.runtime.StringDictionary[js.Object | js.Function]): js.Object = js.native
+  def live(
+    `object`: js.Object,
+    properties: org.scalablytyped.runtime.StringDictionary[js.Object | js.Function]
+  ): js.Object = js.native
   def live(`object`: js.Object, property: java.lang.String, descriptor: js.Function): js.Object = js.native
   def live(`object`: js.Object, property: java.lang.String, descriptor: js.Object): js.Object = js.native
   @JSName("live")
-  def live_TT[T](`object`: js.Object, properties: ScalablyTyped.runtime.StringDictionary[js.Object | js.Function]): T = js.native
+  def live_TT[T](
+    `object`: js.Object,
+    properties: org.scalablytyped.runtime.StringDictionary[js.Object | js.Function]
+  ): T = js.native
   @JSName("live")
   def live_TT[T](`object`: js.Object, property: java.lang.String, descriptor: js.Function): T = js.native
   @JSName("live")
   def live_TT[T](`object`: js.Object, property: java.lang.String, descriptor: js.Object): T = js.native
-  def once[T](
-    subject: blissfuljsLib.Array[BlissDecoratedElement[T]],
-    handlers: ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
-  ): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def once[T](subject: blissfuljsLib.Array[BlissDecoratedElement[T]], handlers: blissfuljsLib.Element): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def once[T](
-    subject: BlissDecoratedElement[T],
-    handlers: ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
-  ): BlissDecoratedElement[T] = js.native
+    subject: blissfuljsLib.Array[BlissDecoratedElement[T]],
+    handlers: org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
+  ): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def once[T](subject: BlissDecoratedElement[T], handlers: blissfuljsLib.Element): BlissDecoratedElement[T] = js.native
+  def once[T](
+    subject: BlissDecoratedElement[T],
+    handlers: org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ stdLib.Event, scala.Unit]]
+  ): BlissDecoratedElement[T] = js.native
   def properties[T](subject: blissfuljsLib.Array[BlissDecoratedElement[T]], props: js.Object): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def properties[T](subject: BlissDecoratedElement[T], props: js.Object): BlissDecoratedElement[T] = js.native
   def ready(): js.Promise[_] = js.native

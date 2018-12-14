@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Index[T]
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[T] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[T] {
   var length: scala.Double
 }
 

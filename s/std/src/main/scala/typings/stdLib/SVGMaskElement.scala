@@ -40,5 +40,5 @@ trait SVGMaskElement
 @JSGlobal("SVGMaskElement")
 @js.native
 object SVGMaskElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGMaskElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGMaskElement]
 

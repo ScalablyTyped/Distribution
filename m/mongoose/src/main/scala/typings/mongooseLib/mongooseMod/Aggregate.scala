@@ -63,7 +63,7 @@ trait Aggregate[T] extends js.Object {
        * Appends a new $facet operator to this aggregate pipeline.
        * @param arg $facet operator contents
        */
-  def facet(arg: ScalablyTyped.runtime.StringDictionary[js.Array[js.Object]]): this.type = js.native
+  def facet(arg: org.scalablytyped.runtime.StringDictionary[js.Array[js.Object]]): this.type = js.native
   /**
        * Appends new custom $graphLookup operator(s) to this aggregate pipeline, performing a recursive search on a collection.
        * Note that graphLookup can only consume at most 100MB of memory, and does not allow disk use even if { allowDiskUse: true } is specified.

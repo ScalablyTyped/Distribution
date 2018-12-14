@@ -10,5 +10,5 @@ trait BasicAuthenticatorStatic
   extends /**
              * @param apiKey
              */
-ScalablyTyped.runtime.Instantiable1[/* apiKey */ java.lang.String, BasicAuthenticator]
+org.scalablytyped.runtime.Instantiable1[/* apiKey */ java.lang.String, BasicAuthenticator]
 

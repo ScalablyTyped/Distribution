@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait IModelMap
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[IModel]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[IModel]
 

@@ -24,7 +24,7 @@ class FBResult () extends js.Object {
   def fetch(
     rowCount: scala.Double,
     asObject: firebirdLib.firebirdLibNumbers.`true`,
-    rowCallback: js.Function1[/* row */ ScalablyTyped.runtime.StringDictionary[DataType], scala.Unit],
+    rowCallback: js.Function1[/* row */ org.scalablytyped.runtime.StringDictionary[DataType], scala.Unit],
     eofCallback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* eof */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -39,13 +39,13 @@ class FBResult () extends js.Object {
     rowCount: scala.Double,
     asObject: scala.Boolean,
     rowCallback: js.Function1[
-      /* row */ js.Array[DataType] | ScalablyTyped.runtime.StringDictionary[DataType], 
+      /* row */ js.Array[DataType] | org.scalablytyped.runtime.StringDictionary[DataType], 
       scala.Unit
     ],
     eofCallback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* eof */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   def fetchSync(rowCount: scala.Double, asObject: firebirdLib.firebirdLibNumbers.`false`): js.Array[js.Array[DataType]] = js.native
-  def fetchSync(rowCount: scala.Double, asObject: firebirdLib.firebirdLibNumbers.`true`): js.Array[ScalablyTyped.runtime.StringDictionary[DataType]] = js.native
+  def fetchSync(rowCount: scala.Double, asObject: firebirdLib.firebirdLibNumbers.`true`): js.Array[org.scalablytyped.runtime.StringDictionary[DataType]] = js.native
   /**
            * @summary
            * Synchronously fetches result rows.
@@ -59,13 +59,13 @@ class FBResult () extends js.Object {
            * @param rowCount number of rows to fetch from results;
            * @param asObject format of returned rows. When false - methods returns array of array, when true - array of objects.
            */
-  def fetchSync(rowCount: scala.Double, asObject: scala.Boolean): js.Array[js.Array[DataType]] | js.Array[ScalablyTyped.runtime.StringDictionary[DataType]] = js.native
+  def fetchSync(rowCount: scala.Double, asObject: scala.Boolean): js.Array[js.Array[DataType]] | js.Array[org.scalablytyped.runtime.StringDictionary[DataType]] = js.native
   @JSName("fetchSync")
   def fetchSync_TObject[T /* <: js.Object */](rowCount: scala.Double, asObject: firebirdLib.firebirdLibNumbers.`true`): js.Array[T] = js.native
   @JSName("fetchSync")
   def fetchSync_all(rowCount: firebirdLib.firebirdLibStrings.all, asObject: firebirdLib.firebirdLibNumbers.`false`): js.Array[js.Array[DataType]] = js.native
   @JSName("fetchSync")
-  def fetchSync_all(rowCount: firebirdLib.firebirdLibStrings.all, asObject: firebirdLib.firebirdLibNumbers.`true`): js.Array[ScalablyTyped.runtime.StringDictionary[DataType]] = js.native
+  def fetchSync_all(rowCount: firebirdLib.firebirdLibStrings.all, asObject: firebirdLib.firebirdLibNumbers.`true`): js.Array[org.scalablytyped.runtime.StringDictionary[DataType]] = js.native
   /**
            * @summary
            * Synchronously fetches result rows.
@@ -80,7 +80,7 @@ class FBResult () extends js.Object {
            * @param asObject format of returned rows. When false - methods returns array of array, when true - array of objects.
            */
   @JSName("fetchSync")
-  def fetchSync_all(rowCount: firebirdLib.firebirdLibStrings.all, asObject: scala.Boolean): js.Array[js.Array[DataType]] | js.Array[ScalablyTyped.runtime.StringDictionary[DataType]] = js.native
+  def fetchSync_all(rowCount: firebirdLib.firebirdLibStrings.all, asObject: scala.Boolean): js.Array[js.Array[DataType]] | js.Array[org.scalablytyped.runtime.StringDictionary[DataType]] = js.native
   @JSName("fetchSync")
   def fetchSync_all_TObject[T /* <: js.Object */](rowCount: firebirdLib.firebirdLibStrings.all, asObject: firebirdLib.firebirdLibNumbers.`true`): js.Array[T] = js.native
   @JSName("fetch")
@@ -101,7 +101,7 @@ class FBResult () extends js.Object {
   def fetch_all(
     rowCount: firebirdLib.firebirdLibStrings.all,
     asObject: firebirdLib.firebirdLibNumbers.`true`,
-    rowCallback: js.Function1[/* row */ ScalablyTyped.runtime.StringDictionary[DataType], scala.Unit],
+    rowCallback: js.Function1[/* row */ org.scalablytyped.runtime.StringDictionary[DataType], scala.Unit],
     eofCallback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* eof */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -117,7 +117,7 @@ class FBResult () extends js.Object {
     rowCount: firebirdLib.firebirdLibStrings.all,
     asObject: scala.Boolean,
     rowCallback: js.Function1[
-      /* row */ js.Array[DataType] | ScalablyTyped.runtime.StringDictionary[DataType], 
+      /* row */ js.Array[DataType] | org.scalablytyped.runtime.StringDictionary[DataType], 
       scala.Unit
     ],
     eofCallback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* eof */ scala.Boolean, scala.Unit]

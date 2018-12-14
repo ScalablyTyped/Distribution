@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("yargs", JSImport.Namespace)
 @js.native
 object yargsModMembers
-  extends ScalablyTyped.runtime.TopLevel[yargsLib.yargsMod.yargsNs.Argv]
+  extends org.scalablytyped.runtime.TopLevel[yargsLib.yargsMod.yargsNs.Argv]
 

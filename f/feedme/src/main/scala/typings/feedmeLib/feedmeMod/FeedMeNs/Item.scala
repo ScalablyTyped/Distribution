@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Item
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var author: java.lang.String
   var categories: js.Array[java.lang.String]
   var comments: java.lang.String

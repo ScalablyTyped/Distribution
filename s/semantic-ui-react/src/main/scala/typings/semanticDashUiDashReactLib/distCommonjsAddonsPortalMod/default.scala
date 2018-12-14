@@ -13,6 +13,6 @@ class default ()
 @JSImport("semantic-ui-react/dist/commonjs/addons/Portal", "default")
 @js.native
 object default extends js.Object {
-  var Inner: ScalablyTyped.runtime.Instantiable0[semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalInnerMod.default] = js.native
+  var Inner: org.scalablytyped.runtime.Instantiable0[semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalInnerMod.default] = js.native
 }
 

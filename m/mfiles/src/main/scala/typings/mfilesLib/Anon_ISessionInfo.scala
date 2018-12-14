@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ISessionInfo
-  extends ScalablyTyped.runtime.Instantiable0[ISessionInfo]
+  extends org.scalablytyped.runtime.Instantiable0[ISessionInfo]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait EventsMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Function]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function]
 

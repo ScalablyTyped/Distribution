@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait XMLObject
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var attribute: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var namespace: js.UndefOr[java.lang.String] = js.undefined

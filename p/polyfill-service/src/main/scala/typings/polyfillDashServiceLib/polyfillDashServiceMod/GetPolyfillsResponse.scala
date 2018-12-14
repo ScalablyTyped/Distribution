@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait GetPolyfillsResponse
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[PolyfillSpec]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[PolyfillSpec]
 

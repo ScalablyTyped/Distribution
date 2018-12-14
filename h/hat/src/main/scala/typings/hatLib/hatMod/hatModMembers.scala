@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hat", JSImport.Namespace)
 @js.native
 object hatModMembers
-  extends ScalablyTyped.runtime.TopLevel[Hat]
+  extends org.scalablytyped.runtime.TopLevel[Hat]
 

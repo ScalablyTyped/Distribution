@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Callback
-  extends ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable4[
       /* retType */ js.Any, 
       /* argTypes */ js.Array[js.Any], 
       /* abi */ scala.Double, 
       /* fn */ js.Any, 
       ffiDashNapiLib.Buffer
     ]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable3[
       /* retType */ js.Any, 
       /* argTypes */ js.Array[js.Any], 
       /* fn */ js.Any, 

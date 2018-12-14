@@ -18,5 +18,5 @@ trait HTMLLIElement extends HTMLElement {
 @JSGlobal("HTMLLIElement")
 @js.native
 object HTMLLIElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLLIElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLLIElement]
 

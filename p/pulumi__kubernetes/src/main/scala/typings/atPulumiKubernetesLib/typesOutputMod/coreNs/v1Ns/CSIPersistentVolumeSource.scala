@@ -48,7 +48,7 @@ trait CSIPersistentVolumeSource extends js.Object {
   /**
                * Attributes of the volume to publish.
                */
-  val volumeAttributes: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val volumeAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume
                * to refer to the volume on all subsequent calls. Required.

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Rules
-  extends /* ruleName */ ScalablyTyped.runtime.StringDictionary[stdLib.RegExp | Rules]
+  extends /* ruleName */ org.scalablytyped.runtime.StringDictionary[stdLib.RegExp | Rules]
 

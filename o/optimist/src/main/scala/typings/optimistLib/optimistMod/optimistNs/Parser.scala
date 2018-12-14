@@ -12,7 +12,7 @@ trait Parser extends js.Object {
   /** Pass in the process.argv yourself */
   def apply(args: js.Array[java.lang.String]): js.Any = js.native
   /** Take an object that maps keys to aliases. */
-  def alias(aliases: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): Parser = js.native
+  def alias(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): Parser = js.native
   // The types below follow the order and documentation of https://github.com/substack/node-optimist
   /** Set key names as equivalent such that updates to a key will propagate to aliases and vice-versa. */
   def alias(key: java.lang.String, alias: java.lang.String): Parser = js.native
@@ -30,7 +30,7 @@ trait Parser extends js.Object {
           */
   def check(fn: js.Function1[/* argv */ js.Any, _]): Parser = js.native
   /** Take an object that maps keys to default values */
-  def default(defaults: ScalablyTyped.runtime.StringDictionary[js.Any]): Parser = js.native
+  def default(defaults: org.scalablytyped.runtime.StringDictionary[js.Any]): Parser = js.native
   /** Set argv[key] to value if no option was specified on process.argv */
   def default(key: java.lang.String, value: js.Any): Parser = js.native
   /** Show the usage information and exit if key wasn't specified in process.argv */
@@ -40,7 +40,7 @@ trait Parser extends js.Object {
   /** Demand at least as many non-option arguments, which show up in argv._ */
   def demand(key: scala.Double): Parser = js.native
   /** Take an object that maps keys to descriptions */
-  def describe(descriptions: ScalablyTyped.runtime.StringDictionary[java.lang.String]): Parser = js.native
+  def describe(descriptions: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Parser = js.native
   /** Describe a key for the generated usage information */
   def describe(key: java.lang.String, desc: java.lang.String): Parser = js.native
   /** Return the generated usage string. */
@@ -49,7 +49,7 @@ trait Parser extends js.Object {
           you can specify keys in opt for each of the chainable methods. */
   def options(key: java.lang.String, opt: Opt): Parser = js.native
   /** Take an object that maps keys to opt parameters */
-  def options(options: ScalablyTyped.runtime.StringDictionary[Opt]): Parser = js.native
+  def options(options: org.scalablytyped.runtime.StringDictionary[Opt]): Parser = js.native
   /** Use .parse() to do the same thing as treating optimist as a function */
   def parse(args: js.Array[java.lang.String]): js.Any = js.native
   /** Print the usage data using fn for printing (defaults to console.error). */

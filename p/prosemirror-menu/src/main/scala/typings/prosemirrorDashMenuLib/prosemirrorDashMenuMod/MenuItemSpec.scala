@@ -54,7 +54,7 @@ trait MenuItemSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schem
      * optional `css` property giving additional CSS styling for the
      * text. _Or_ it may contain `dom` property containing a DOM node.
      */
-  var icon: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null] = js.undefined
+  var icon: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null] = js.undefined
   /**
      * Makes the item show up as a text label. Mostly useful for items
      * wrapped in a [drop-down](#menu.Dropdown) or similar menu. The object

@@ -14,5 +14,5 @@ trait CSSStyleRule extends CSSRule {
 @JSGlobal("CSSStyleRule")
 @js.native
 object CSSStyleRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSStyleRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSStyleRule]
 

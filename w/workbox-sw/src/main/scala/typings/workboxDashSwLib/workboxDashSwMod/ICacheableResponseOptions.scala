@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ICacheableResponseOptions extends js.Object {
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var statuses: js.Array[scala.Double]
 }
 

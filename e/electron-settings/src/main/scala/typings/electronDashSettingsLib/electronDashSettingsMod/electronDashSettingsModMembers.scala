@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("electron-settings", JSImport.Namespace)
 @js.native
 object electronDashSettingsModMembers
-  extends ScalablyTyped.runtime.TopLevel[Settings]
+  extends org.scalablytyped.runtime.TopLevel[Settings]
 

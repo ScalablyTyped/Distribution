@@ -20,5 +20,5 @@ trait SVGPointList extends js.Object {
 @JSGlobal("SVGPointList")
 @js.native
 object SVGPointList
-  extends ScalablyTyped.runtime.Instantiable0[SVGPointList]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPointList]
 

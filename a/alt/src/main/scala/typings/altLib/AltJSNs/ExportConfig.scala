@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ExportConfig
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
 

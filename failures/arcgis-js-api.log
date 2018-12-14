@@ -50,7 +50,7 @@
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(destroy)) [id => arcgis-js-api, phase => scala.js, this => Name(arcgisDashJsDashApiLib) / Name(underscoreUnderscoreEsriNs) / Name(ColorSlider)] 
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(destroy)) [id => arcgis-js-api, phase => scala.js, this => Name(arcgisDashJsDashApiLib) / Name(underscoreUnderscoreEsriNs) / Name(SizeSlider)] 
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(destroy)) [id => arcgis-js-api, phase => scala.js, this => Name(arcgisDashJsDashApiLib) / Name(underscoreUnderscoreEsriNs) / Name(UnivariateColorSizeSlider)] 
-[info ] CompleteClass.scala:60 Completed implementations Vector(hasEventListener, on, emit) [id => arcgis-js-api, phase => scala.js, this => Name(arcgisDashJsDashApiLib) / Name(underscoreUnderscoreEsriNs) / Name(Collection)] 
+[info ] CompleteClass.scala:58 Completed implementations Vector(hasEventListener, on, emit) [id => arcgis-js-api, phase => scala.js, this => Name(arcgisDashJsDashApiLib) / Name(underscoreUnderscoreEsriNs) / Name(Collection)] 
 [debug] PhaseRunner.scala:78 Success [id => arcgis-js-api, phase => scala.js] 
 [error] LabelSymbol3D.scala:21 overriding value type in trait Symbol of type String;
  value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`label-3d` = js.native [id => arcgis-js-api, phase => build] 

@@ -20,7 +20,7 @@ trait ConnectionConfig[P] extends js.Object {
   ] = js.undefined
   var query: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode
   def getVariables(
-    props: ScalablyTyped.runtime.StringDictionary[js.Any],
+    props: org.scalablytyped.runtime.StringDictionary[js.Any],
     paginationInfo: reactDashRelayLib.Anon_Count,
     fragmentVariables: relayDashRuntimeLib.relayDashRuntimeMod.Variables
   ): relayDashRuntimeLib.relayDashRuntimeMod.Variables

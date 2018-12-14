@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IServerLicenseManagementOperations
-  extends ScalablyTyped.runtime.Instantiable0[IServerLicenseManagementOperations]
+  extends org.scalablytyped.runtime.Instantiable0[IServerLicenseManagementOperations]
 

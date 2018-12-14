@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PrettyPrinter
-  extends ScalablyTyped.runtime.Instantiable0[js.Any] {
+  extends org.scalablytyped.runtime.Instantiable0[js.Any] {
   def append(value: js.Any): scala.Unit = js.native
   def emitArray(array: js.Array[_]): scala.Unit = js.native
   def emitObject(obj: js.Any): scala.Unit = js.native

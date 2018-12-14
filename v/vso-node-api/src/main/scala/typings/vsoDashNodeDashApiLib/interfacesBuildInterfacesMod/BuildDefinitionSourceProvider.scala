@@ -14,7 +14,7 @@ trait BuildDefinitionSourceProvider extends js.Object {
   /**
        * fields associated with this build definition
        */
-  var fields: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var fields: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Id of this source provider
        */

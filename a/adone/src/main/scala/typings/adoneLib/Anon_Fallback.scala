@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Fallback extends js.Object {
-  var fallback: ScalablyTyped.runtime.StringDictionary[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
-  var mapping: ScalablyTyped.runtime.StringDictionary[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
-  var scalar: ScalablyTyped.runtime.StringDictionary[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
-  var sequence: ScalablyTyped.runtime.StringDictionary[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
+  var fallback: org.scalablytyped.runtime.StringDictionary[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
+  var mapping: org.scalablytyped.runtime.StringDictionary[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
+  var scalar: org.scalablytyped.runtime.StringDictionary[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
+  var sequence: org.scalablytyped.runtime.StringDictionary[adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]]
 }
 

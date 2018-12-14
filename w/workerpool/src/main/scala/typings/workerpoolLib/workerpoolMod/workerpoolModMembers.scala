@@ -16,6 +16,6 @@ object workerpoolModMembers extends js.Object {
   def pool(pathToScript: java.lang.String): WorkerPool = js.native
   def pool(pathToScript: java.lang.String, options: WorkerPoolOptions): WorkerPool = js.native
   def worker(): js.Any = js.native
-  def worker(methods: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): js.Any = js.native
+  def worker(methods: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): js.Any = js.native
 }
 

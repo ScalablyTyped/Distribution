@@ -1858,7 +1858,7 @@ object CloudDirectoryNs extends js.Object {
   
   
   trait LinkNameToObjectIdentifierMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ObjectIdentifier]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ObjectIdentifier]
   
   
   trait ListAppliedSchemaArnsRequest extends js.Object {
@@ -2618,7 +2618,7 @@ object CloudDirectoryNs extends js.Object {
   
   
   trait ObjectIdentifierToLinkNameMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[LinkName]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[LinkName]
   
   
   trait ObjectReference extends js.Object {
@@ -2749,11 +2749,11 @@ object CloudDirectoryNs extends js.Object {
   
   
   trait RuleMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Rule]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Rule]
   
   
   trait RuleParameterMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[RuleParameterValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[RuleParameterValue]
   
   
   trait SchemaFacet extends js.Object {

@@ -1,0 +1,7 @@
+[debug] PhaseRunner.scala:78 Success [id => react-contrib, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => react-contrib, phase => scala.js] 
+[error] ReactDsl.scala:3 not found: object ScalablyTyped, import ScalablyTyped.runtime.{Instantiable1, Instantiable2} [id => react-contrib, phase => build] 
+[error] ReactDsl.scala:236 not found: type Instantiable1,   @inline def componentInstantiable1[P <: js.Any](_ctor: Instantiable1[P, ReactElement[_]]): BuildComponent[P] = [id => react-contrib, phase => build] 
+[error] ReactDsl.scala:239 not found: type Instantiable2,   @inline def componentInstantiable2[P <: js.Any](_ctor: Instantiable2[P, _, ReactElement[_]]): BuildComponent[P] = [id => react-contrib, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [react-contrib => Compilation failed] [id => react-contrib, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [react-contrib => Compilation failed] [id => react-contrib, phase => publish] 

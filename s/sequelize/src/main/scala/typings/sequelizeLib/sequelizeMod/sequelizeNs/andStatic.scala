@@ -12,5 +12,5 @@ trait andStatic
          *
          * @param args Each argument will be joined by AND
          */
-ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ java.lang.String | js.Object, and]
+org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ java.lang.String | js.Object, and]
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LineStreamCreatable
   extends nodeLib.streamMod.Transform
-     with ScalablyTyped.runtime.Instantiable0[LineStream]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ LineStreamOptions, LineStream] {
+     with org.scalablytyped.runtime.Instantiable0[LineStream]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ LineStreamOptions, LineStream] {
   /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def _destroy(error: nodeLib.Error, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native

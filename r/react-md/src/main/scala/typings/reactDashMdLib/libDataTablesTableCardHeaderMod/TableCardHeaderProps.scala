@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TableCardHeaderProps
   extends reactDashMdLib.libMod.Props
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var actions: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
   ] = js.undefined

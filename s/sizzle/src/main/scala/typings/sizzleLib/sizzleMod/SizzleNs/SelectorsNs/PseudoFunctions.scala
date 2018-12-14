@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PseudoFunctions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[PseudoFunction]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[PseudoFunction]
 

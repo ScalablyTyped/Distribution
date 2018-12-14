@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait PluginMap extends js.Object {
-  var constructors: ScalablyTyped.runtime.StringDictionary[
-    ScalablyTyped.runtime.Instantiable2[
+  var constructors: org.scalablytyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.Instantiable2[
       /* scrollbar */ smoothDashScrollbarLib.scrollbarMod.Scrollbar, 
       /* options */ js.UndefOr[/* options */ js.Any], 
       ScrollbarPlugin

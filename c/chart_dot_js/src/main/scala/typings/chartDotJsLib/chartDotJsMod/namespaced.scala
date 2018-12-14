@@ -19,9 +19,9 @@ class namespaced protected () extends Chart {
 object namespaced extends js.Object {
   // Tooltip Static Options
   var Tooltip: chartDotJsLib.chartDotJsMod.ChartNs.ChartTooltipsStaticConfiguration = js.native
-  var controllers: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var controllers: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var defaults: chartDotJsLib.Anon_Key = js.native
-  var helpers: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var helpers: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var pluginService: chartDotJsLib.chartDotJsMod.PluginServiceStatic = js.native
   var plugins: chartDotJsLib.chartDotJsMod.PluginServiceStatic = js.native
 }

@@ -14,5 +14,5 @@ trait SVGAnimatedPreserveAspectRatio extends js.Object {
 @JSGlobal("SVGAnimatedPreserveAspectRatio")
 @js.native
 object SVGAnimatedPreserveAspectRatio
-  extends ScalablyTyped.runtime.Instantiable0[SVGAnimatedPreserveAspectRatio]
+  extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedPreserveAspectRatio]
 

@@ -33,7 +33,7 @@ object CLIEngineNs extends js.Object {
   class Options () extends js.Object {
     var allowInlineConfig: js.UndefOr[scala.Boolean] = js.native
     var baseConfig: js.UndefOr[
-        eslintLib.eslintLibNumbers.`false` | ScalablyTyped.runtime.StringDictionary[js.Any]
+        eslintLib.eslintLibNumbers.`false` | org.scalablytyped.runtime.StringDictionary[js.Any]
       ] = js.native
     var cache: js.UndefOr[scala.Boolean] = js.native
     var cacheFile: js.UndefOr[java.lang.String] = js.native
@@ -53,7 +53,7 @@ object CLIEngineNs extends js.Object {
     var reportUnusedDisableDirectives: js.UndefOr[scala.Boolean] = js.native
     var rulePaths: js.UndefOr[js.Array[java.lang.String]] = js.native
     var rules: js.UndefOr[
-        ScalablyTyped.runtime.StringDictionary[
+        org.scalablytyped.runtime.StringDictionary[
           eslintLib.eslintMod.LinterNs.RuleLevel | eslintLib.eslintMod.LinterNs.RuleLevelAndOptions
         ]
       ] = js.native

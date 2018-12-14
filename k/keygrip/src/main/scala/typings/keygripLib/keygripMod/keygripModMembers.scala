@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("keygrip", JSImport.Namespace)
 @js.native
 object keygripModMembers
-  extends ScalablyTyped.runtime.TopLevel[KeygripFunction]
+  extends org.scalablytyped.runtime.TopLevel[KeygripFunction]
 

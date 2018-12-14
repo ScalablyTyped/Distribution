@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Utils extends js.Object {
-  var Promise: ScalablyTyped.runtime.Instantiable1[
+  var Promise: org.scalablytyped.runtime.Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[bluebirdLib.Resolvable[js.Object]], scala.Unit], 
       /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit], 

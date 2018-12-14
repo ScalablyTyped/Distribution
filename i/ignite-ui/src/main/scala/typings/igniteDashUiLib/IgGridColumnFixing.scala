@@ -10,7 +10,7 @@ trait IgGridColumnFixing
   extends /**
 	 * Option for igGridColumnFixing
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event which is fired when column fixing operation is finished
   	 */

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SchemaRules
-  extends /* schema */ ScalablyTyped.runtime.StringDictionary[Rule]
+  extends /* schema */ org.scalablytyped.runtime.StringDictionary[Rule]
 

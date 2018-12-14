@@ -29,5 +29,5 @@ trait CanvasRenderingContext2D
 @JSGlobal("CanvasRenderingContext2D")
 @js.native
 object CanvasRenderingContext2D
-  extends ScalablyTyped.runtime.Instantiable0[CanvasRenderingContext2D]
+  extends org.scalablytyped.runtime.Instantiable0[CanvasRenderingContext2D]
 

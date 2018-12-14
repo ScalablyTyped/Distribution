@@ -23,5 +23,5 @@ trait ValidityState extends js.Object {
 @JSGlobal("ValidityState")
 @js.native
 object ValidityState
-  extends ScalablyTyped.runtime.Instantiable0[ValidityState]
+  extends org.scalablytyped.runtime.Instantiable0[ValidityState]
 

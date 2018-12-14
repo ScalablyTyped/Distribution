@@ -10,7 +10,7 @@ trait OlapTableViewOptionsViewSettings
   extends /**
 	 * Option for OlapTableViewOptionsViewSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Optional="false" value indicating wheter the column headers should be arranged for compact header layout - each hieararchy is in a single row.
   	 */

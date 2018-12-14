@@ -73,5 +73,5 @@ trait SVGFEMergeElement
 @JSGlobal("SVGFEMergeElement")
 @js.native
 object SVGFEMergeElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEMergeElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEMergeElement]
 

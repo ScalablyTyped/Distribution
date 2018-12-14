@@ -18,16 +18,16 @@ trait Element extends js.Object {
   def align(el: Element, way: java.lang.String): Element = js.native
   def animate(animation: js.Any): Element = js.native
   def animate(
-    attrs: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
     duration: scala.Double
   ): Element = js.native
   def animate(
-    attrs: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
     duration: scala.Double,
     easing: js.Function1[/* num */ scala.Double, scala.Double]
   ): Element = js.native
   def animate(
-    attrs: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
     duration: scala.Double,
     easing: js.Function1[/* num */ scala.Double, scala.Double],
     callback: js.Function0[scala.Unit]
@@ -39,7 +39,7 @@ trait Element extends js.Object {
   def asPX(attr: java.lang.String, value: java.lang.String): scala.Double = js.native
   def attr(param: java.lang.String): java.lang.String = js.native
   def attr(
-    params: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | BBox | js.Any]
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | BBox | js.Any]
   ): Element = js.native
               //TODO: check what is really returned
   @JSName("attr")

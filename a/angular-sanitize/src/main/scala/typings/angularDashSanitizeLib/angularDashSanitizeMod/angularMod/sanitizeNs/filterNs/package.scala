@@ -18,9 +18,9 @@ package object filterNs {
     /* text */ java.lang.String, 
     /* target */ js.UndefOr[java.lang.String], 
     /* attributes */ js.UndefOr[
-      ScalablyTyped.runtime.StringDictionary[java.lang.String] | (js.Function1[
+      org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function1[
         /* url */ java.lang.String, 
-        ScalablyTyped.runtime.StringDictionary[java.lang.String]
+        org.scalablytyped.runtime.StringDictionary[java.lang.String]
       ])
     ], 
     java.lang.String

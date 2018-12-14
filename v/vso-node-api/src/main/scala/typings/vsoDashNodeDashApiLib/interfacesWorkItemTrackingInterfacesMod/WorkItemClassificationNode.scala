@@ -10,7 +10,7 @@ trait WorkItemClassificationNode extends WorkItemTrackingResource {
   /**
        * Dictionary that has node attributes like start/finish date for iteration nodes.
        */
-  var attributes: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var attributes: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * List of child nodes fetched.
        */

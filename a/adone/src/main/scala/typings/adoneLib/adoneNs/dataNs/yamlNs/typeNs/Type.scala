@@ -16,7 +16,7 @@ class Type[T] protected () extends js.Object {
     js.Function2[
       /* obj */ js.Any, 
       /* style */ java.lang.String, 
-      java.lang.String | (ScalablyTyped.runtime.StringDictionary[js.Function2[/* obj */ _, /* style */ java.lang.String, java.lang.String]])
+      java.lang.String | (org.scalablytyped.runtime.StringDictionary[js.Function2[/* obj */ _, /* style */ java.lang.String, java.lang.String]])
     ]
   ] = js.native
   var styleAliases: js.UndefOr[js.Object] = js.native

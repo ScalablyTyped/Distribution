@@ -64,8 +64,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Parse.Query")
 @js.native
 class Query[T /* <: Object */] protected () extends BaseObject {
-  def this(objectClass: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]) = this()
   def this(objectClass: java.lang.String) = this()
+  def this(objectClass: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]) = this()
   var className: java.lang.String = js.native
   var objectClass: js.Any = js.native
   def addAscending(key: java.lang.String): Query[T] = js.native

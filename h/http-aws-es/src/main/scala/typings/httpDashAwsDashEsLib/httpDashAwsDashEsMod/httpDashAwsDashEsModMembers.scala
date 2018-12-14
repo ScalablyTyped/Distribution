@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("http-aws-es", JSImport.Namespace)
 @js.native
 object httpDashAwsDashEsModMembers
-  extends ScalablyTyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Any]
 

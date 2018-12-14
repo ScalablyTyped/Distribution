@@ -394,11 +394,11 @@ object SNSNs extends js.Object {
   
   
   trait MapStringToString
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait MessageAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MessageAttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MessageAttributeValue]
   
   
   trait MessageAttributeValue extends js.Object {
@@ -616,7 +616,7 @@ object SNSNs extends js.Object {
   
   
   trait SubscriptionAttributesMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[attributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[attributeValue]
   
   
   trait Topic extends js.Object {
@@ -628,7 +628,7 @@ object SNSNs extends js.Object {
   
   
   trait TopicAttributesMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[attributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[attributeValue]
   
   @js.native
   trait Types

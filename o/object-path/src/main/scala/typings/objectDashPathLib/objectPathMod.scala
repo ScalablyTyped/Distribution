@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("objectPath", JSImport.Namespace)
 @js.native
 object objectPathMod
-  extends ScalablyTyped.runtime.TopLevel[objectDashPathLib.ObjectPathGlobalNs.IObjectPathStatic]
+  extends org.scalablytyped.runtime.TopLevel[objectDashPathLib.ObjectPathGlobalNs.IObjectPathStatic]
 

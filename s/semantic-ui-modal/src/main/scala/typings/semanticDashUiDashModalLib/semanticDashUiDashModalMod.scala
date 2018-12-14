@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-modal", JSImport.Namespace)
 @js.native
 object semanticDashUiDashModalMod
-  extends ScalablyTyped.runtime.TopLevel[semanticDashUiDashModalLib.SemanticUINs.Modal]
+  extends org.scalablytyped.runtime.TopLevel[semanticDashUiDashModalLib.SemanticUINs.Modal]
 

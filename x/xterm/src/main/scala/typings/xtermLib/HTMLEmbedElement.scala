@@ -121,5 +121,5 @@ trait HTMLEmbedElement
 @JSGlobal("HTMLEmbedElement")
 @js.native
 object HTMLEmbedElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLEmbedElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLEmbedElement]
 

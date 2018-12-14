@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object utilsObjectModMembers extends js.Object {
   val CaseInsensitiveProxyHandler: stdLib.ProxyHandler[js.Any] = js.native
-  def createCaseInsensitiveObject[T](): ScalablyTyped.runtime.StringDictionary[T] = js.native
+  def createCaseInsensitiveObject[T](): org.scalablytyped.runtime.StringDictionary[T] = js.native
 }
 

@@ -13,6 +13,6 @@ trait AttributorStore extends js.Object {
   def build(): scala.Unit
   def copy(target: parchmentLib.distSrcBlotAbstractBlotMod.Formattable): scala.Unit
   def move(target: parchmentLib.distSrcBlotAbstractBlotMod.Formattable): scala.Unit
-  def values(): ScalablyTyped.runtime.StringDictionary[js.Any]
+  def values(): org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

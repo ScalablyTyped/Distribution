@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Auth0LockThemeButtonOptions
-  extends /* provider */ ScalablyTyped.runtime.StringDictionary[Auth0LockThemeButton]
+  extends /* provider */ org.scalablytyped.runtime.StringDictionary[Auth0LockThemeButton]
 

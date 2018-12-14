@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Collection[T] extends js.Object {
-  def _dropIndex(keys: ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String]): scala.Unit = js.native
   def _dropIndex(keys: java.lang.String): scala.Unit = js.native
-  def _ensureIndex(keys: ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String]): scala.Unit = js.native
-  def _ensureIndex(
-    keys: ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String],
-    options: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
+  def _dropIndex(keys: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]): scala.Unit = js.native
   def _ensureIndex(keys: java.lang.String): scala.Unit = js.native
-  def _ensureIndex(keys: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def _ensureIndex(keys: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def _ensureIndex(keys: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]): scala.Unit = js.native
+  def _ensureIndex(
+    keys: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String],
+    options: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
   def allow(options: meteorDashTypingsLib.Anon_Insert[T]): scala.Boolean = js.native
   def deny(options: meteorDashTypingsLib.Anon_Insert[T]): scala.Boolean = js.native
   def find(): Cursor[T] = js.native

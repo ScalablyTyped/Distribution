@@ -166,7 +166,7 @@ object CognitoSyncNs extends js.Object {
   
   
   trait Events
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[LambdaFunctionArn]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[LambdaFunctionArn]
   
   
   trait GetBulkPublishDetailsRequest extends js.Object {

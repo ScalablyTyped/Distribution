@@ -19,5 +19,5 @@ trait LED
          * @param blue 
          * @return  
          */
-ScalablyTyped.runtime.Instantiable3[/* red */ scala.Double, /* green */ scala.Double, /* blue */ scala.Double, LED]
+org.scalablytyped.runtime.Instantiable3[/* red */ scala.Double, /* green */ scala.Double, /* blue */ scala.Double, LED]
 

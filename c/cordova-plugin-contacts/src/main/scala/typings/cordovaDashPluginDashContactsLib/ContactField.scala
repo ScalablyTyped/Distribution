@@ -31,13 +31,13 @@ trait ContactField extends js.Object {
 @js.native
 object ContactField
   extends /** Constructor for ContactField object */
-ScalablyTyped.runtime.Instantiable0[ContactField]
+org.scalablytyped.runtime.Instantiable0[ContactField]
      with /** Constructor for ContactField object */
-ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, ContactField]
+org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, ContactField]
      with /** Constructor for ContactField object */
-ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* value */ java.lang.String, ContactField]
+org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* value */ java.lang.String, ContactField]
      with /** Constructor for ContactField object */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* type */ java.lang.String, 
       /* value */ java.lang.String, 
       /* pref */ scala.Boolean, 

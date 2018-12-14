@@ -10,12 +10,12 @@ trait Data extends js.Object {
   /**
        * Set y axis the data related to. y and y2 can be used.
        */
-  var axes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var axes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * Set custom data class.
        * If this option is specified, the element g for the data has an additional class that has the prefix c3-target- (e.g. c3-target-additional-data1-class).
        */
-  var classes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var classes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * Set color converter function.
        * This option should a function and the specified function receives color (e.g. '#ff0000') and d that has data parameters like id, value, index, etc. And it must return a string that
@@ -32,7 +32,7 @@ trait Data extends js.Object {
        * Set color for each data.
        */
   var colors: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | (js.Function1[/* d */ js.Any, java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor])
     ]
   ] = js.undefined
@@ -80,7 +80,7 @@ trait Data extends js.Object {
   /**
        * Set custom data name.
        */
-  var names: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var names: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * Set a callback for click event on each data point.
        * This callback will be called when each data point clicked and will receive d and element as the arguments.
@@ -116,7 +116,7 @@ trait Data extends js.Object {
        * end will be the last data point.
        * Currently this option supports only line chart and dashed style. If this option specified, the line will be dashed only in the regions.
        */
-  var regions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var regions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
        * Load data from a multidimensional array, with the first element containing the data names, the following containing related data in that order.
        */
@@ -132,7 +132,7 @@ trait Data extends js.Object {
        * Set chart type for each data.
        * This setting overwrites data.type setting.
        */
-  var types: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var types: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * Load a CSV or JSON file from a URL. Note that this will not work if loading via the "file://" protocol as most browsers with block XMLHTTPRequests.
        */
@@ -152,6 +152,6 @@ trait Data extends js.Object {
        * Specify the keys of the x values for each data.
        * This option can be used if we want to show the data that has different x values.
        */
-  var xs: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var xs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 

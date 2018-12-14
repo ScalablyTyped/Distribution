@@ -15,7 +15,7 @@ trait TableConstructor
      * @param primaryKeyType An optional primary key type.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Table]
+org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Table]
      with /**
      * Creates a new Table.
      *
@@ -24,7 +24,7 @@ ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Table]
      * @param primaryKeyType An optional primary key type.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* name */ java.lang.String, 
       /* primaryKey */ atPulumiPulumiLib.resourceMod.Input[java.lang.String], 
       Table
@@ -37,7 +37,7 @@ ScalablyTyped.runtime.Instantiable2[
      * @param primaryKeyType An optional primary key type.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* name */ java.lang.String, 
       /* primaryKey */ atPulumiPulumiLib.resourceMod.Input[java.lang.String], 
       /* primaryKeyType */ atPulumiPulumiLib.resourceMod.Input[PrimaryKeyType], 
@@ -51,7 +51,7 @@ ScalablyTyped.runtime.Instantiable3[
      * @param primaryKeyType An optional primary key type.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable4[
+org.scalablytyped.runtime.Instantiable4[
       /* name */ java.lang.String, 
       /* primaryKey */ atPulumiPulumiLib.resourceMod.Input[java.lang.String], 
       /* primaryKeyType */ atPulumiPulumiLib.resourceMod.Input[PrimaryKeyType], 

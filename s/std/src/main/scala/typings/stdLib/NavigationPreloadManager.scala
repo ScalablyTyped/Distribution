@@ -16,5 +16,5 @@ trait NavigationPreloadManager extends js.Object {
 @JSGlobal("NavigationPreloadManager")
 @js.native
 object NavigationPreloadManager
-  extends ScalablyTyped.runtime.Instantiable0[NavigationPreloadManager]
+  extends org.scalablytyped.runtime.Instantiable0[NavigationPreloadManager]
 

@@ -96,7 +96,7 @@ trait FS extends js.Object {
        * Android only method, request media scanner to scan the file.
        * @param  pairs Array contains Key value pairs with key `path` and `mime`.
        */
-  def scanFile(pairs: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String]]): js.Promise[scala.Unit] = js.native
+  def scanFile(pairs: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]): js.Promise[scala.Unit] = js.native
   /**
        * Get a file cache session
        * @param  name Stream ID

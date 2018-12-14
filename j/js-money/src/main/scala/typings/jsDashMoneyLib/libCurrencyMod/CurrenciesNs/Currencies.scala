@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Currencies
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Currency] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Currency] {
   var AED: Currency
   var AFN: Currency
   var ALL: Currency

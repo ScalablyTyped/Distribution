@@ -13,5 +13,5 @@ trait MSFIDOSignatureAssertion extends MSAssertion {
 @JSGlobal("MSFIDOSignatureAssertion")
 @js.native
 object MSFIDOSignatureAssertion
-  extends ScalablyTyped.runtime.Instantiable0[MSFIDOSignatureAssertion]
+  extends org.scalablytyped.runtime.Instantiable0[MSFIDOSignatureAssertion]
 

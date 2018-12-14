@@ -13,5 +13,5 @@ trait ISceneLoaderPluginExtensions
   extends /**
          * Defines the list of supported extensions
          */
-/* extension */ ScalablyTyped.runtime.StringDictionary[babylonjsLib.Anon_IsBinary]
+/* extension */ org.scalablytyped.runtime.StringDictionary[babylonjsLib.Anon_IsBinary]
 

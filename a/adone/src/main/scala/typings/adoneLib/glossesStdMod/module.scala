@@ -16,7 +16,7 @@ class module protected ()
 @JSImport("adone/glosses/std", "module")
 @js.native
 object module extends js.Object {
-  var Module: ScalablyTyped.runtime.Instantiable2[
+  var Module: org.scalablytyped.runtime.Instantiable2[
     /* id */ java.lang.String, 
     /* parent */ js.UndefOr[/* parent */ nodeLib.NodeJSNs.Module], 
     nodeLib.NodeJSNs.Module

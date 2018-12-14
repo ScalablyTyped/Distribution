@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ValidationErrors
-  extends /* field */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* field */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

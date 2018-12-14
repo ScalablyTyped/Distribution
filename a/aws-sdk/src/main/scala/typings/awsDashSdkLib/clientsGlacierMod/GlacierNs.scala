@@ -1150,7 +1150,7 @@ object GlacierNs extends js.Object {
   
   
   trait TagMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   @js.native
   trait Types
@@ -2194,7 +2194,7 @@ object GlacierNs extends js.Object {
   
   
   trait hashmap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
   val TypesNs: this.type = js.native
   type AccessControlPolicyList = js.Array[Grant]

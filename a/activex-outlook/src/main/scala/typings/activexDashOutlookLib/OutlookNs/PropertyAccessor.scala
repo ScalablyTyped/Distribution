@@ -18,10 +18,10 @@ class PropertyAccessor protected () extends js.Object {
   def DeleteProperty(SchemaName: java.lang.String): scala.Unit = js.native
   def GetProperties(SchemaNames: js.Any): js.Any = js.native
   def GetProperty(SchemaName: java.lang.String): js.Any = js.native
-  def LocalTimeToUTC(Value: activexDashInteropLib.VarDate): activexDashInteropLib.VarDate = js.native
+  def LocalTimeToUTC(Value: stdLib.VarDate): stdLib.VarDate = js.native
   def SetProperties(SchemaNames: js.Any, Values: js.Any): js.Any = js.native
   def SetProperty(SchemaName: java.lang.String, Value: js.Any): scala.Unit = js.native
   def StringToBinary(Value: java.lang.String): js.Any = js.native
-  def UTCToLocalTime(Value: activexDashInteropLib.VarDate): activexDashInteropLib.VarDate = js.native
+  def UTCToLocalTime(Value: stdLib.VarDate): stdLib.VarDate = js.native
 }
 

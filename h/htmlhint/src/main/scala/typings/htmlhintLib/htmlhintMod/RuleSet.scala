@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RuleSet
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[scala.Boolean | java.lang.String]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[scala.Boolean | java.lang.String]
 

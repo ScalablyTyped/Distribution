@@ -15,7 +15,7 @@ trait Chart
          * and in these cases the chart object will not be finished directly after callingnew Highcharts.Chart().
          * s a consequence, code that relies on the newly built Chart object should always run in the callback. Defining a chart.event.load handler is equivalent.
          */
-ScalablyTyped.runtime.Instantiable1[/* options */ Options, ChartObject]
+org.scalablytyped.runtime.Instantiable1[/* options */ Options, ChartObject]
      with /**
          * This is the constructor for creating a new chart object.
          * @param  options The chart options
@@ -33,7 +33,7 @@ ScalablyTyped.runtime.Instantiable1[/* options */ Options, ChartObject]
          * and in these cases the chart object will not be finished directly after callingnew Highcharts.Chart().
          * As a consequence, code that relies on the newly built Chart object should always run in the callback. Defining a chart.event.load handler is equivalent.
          */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       (/* options */ Options) | (/* renderTo */ java.lang.String) | (/* renderTo */ stdLib.HTMLElement), 
       (/* callback */ js.Function1[/* chart */ ChartObject, scala.Unit]) | (/* options */ Options), 
       ChartObject
@@ -47,7 +47,7 @@ ScalablyTyped.runtime.Instantiable2[
          * and in these cases the chart object will not be finished directly after callingnew Highcharts.Chart().
          * As a consequence, code that relies on the newly built Chart object should always run in the callback. Defining a chart.event.load handler is equivalent.
          */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       (/* renderTo */ java.lang.String) | (/* renderTo */ stdLib.HTMLElement), 
       /* options */ Options, 
       /* callback */ js.Function1[/* chart */ ChartObject, scala.Unit], 

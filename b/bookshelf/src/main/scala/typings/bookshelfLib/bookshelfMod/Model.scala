@@ -65,6 +65,6 @@ object Model extends js.Object {
   ): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: scala.Double, valueIfOperator: scala.Boolean): T = js.native
   def where[T](key: java.lang.String, operatorOrValue: scala.Double, valueIfOperator: scala.Double): T = js.native
-  def where[T](properties: ScalablyTyped.runtime.StringDictionary[js.Any]): T = js.native
+  def where[T](properties: org.scalablytyped.runtime.StringDictionary[js.Any]): T = js.native
 }
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("BOOSTS")
 @js.native
 object BOOSTS
-  extends /* part */ ScalablyTyped.runtime.StringDictionary[
-      ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[scala.Double]]
+  extends /* part */ org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]]
     ] {
   var attack: screepsLib.Anon_UH2OUH = js.native
   var carry: screepsLib.Anon_KH = js.native

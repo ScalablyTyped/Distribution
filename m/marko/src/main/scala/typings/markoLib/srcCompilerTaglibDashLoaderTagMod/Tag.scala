@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Tag extends js.Object {
   var attributeGroups: js.Array[java.lang.String] = js.native
-  var attributes: ScalablyTyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderAttributeMod.default] = js.native
+  var attributes: org.scalablytyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderAttributeMod.default] = js.native
   var body: js.Any = js.native
   var bodyFunction: js.Any = js.native
   var codeGeneratorModulePath: java.lang.String | scala.Null = js.native
@@ -17,7 +17,7 @@ trait Tag extends js.Object {
   var isNestedTag: scala.Boolean = js.native
   var isRepeated: scala.Boolean | scala.Null = js.native
   var name: java.lang.String = js.native
-  var nestedTags: ScalablyTyped.runtime.StringDictionary[Tag] | scala.Null = js.native
+  var nestedTags: org.scalablytyped.runtime.StringDictionary[Tag] | scala.Null = js.native
   var nestedVariables: js.Any = js.native
   var nodeFactoryPath: java.lang.String | scala.Null = js.native
   var openTagOnly: js.Any = js.native
@@ -28,7 +28,7 @@ trait Tag extends js.Object {
   var taglibPath: java.lang.String | scala.Null = js.native
   var targetProperty: js.UndefOr[java.lang.String] = js.native
   var template: js.Any = js.native
-  var transformers: ScalablyTyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderTransformerMod.default] = js.native
+  var transformers: org.scalablytyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderTransformerMod.default] = js.native
   var `type`: js.Any = js.native
   def addAttribute(attr: markoLib.srcCompilerTaglibDashLoaderAttributeMod.default): scala.Unit = js.native
   def addImportedVariable(importedVariable: js.Any): scala.Unit = js.native

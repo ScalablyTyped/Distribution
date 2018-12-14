@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait VideoTrackList
   extends EventTarget
-     with /* index */ ScalablyTyped.runtime.NumberDictionary[VideoTrack] {
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[VideoTrack] {
   val length: scala.Double = js.native
   var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ TrackEvent, _]) | scala.Null = js.native
   var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
@@ -123,5 +123,5 @@ trait VideoTrackList
 @JSGlobal("VideoTrackList")
 @js.native
 object VideoTrackList
-  extends ScalablyTyped.runtime.Instantiable0[VideoTrackList]
+  extends org.scalablytyped.runtime.Instantiable0[VideoTrackList]
 

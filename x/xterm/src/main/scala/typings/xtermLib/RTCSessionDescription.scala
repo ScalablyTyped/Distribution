@@ -15,5 +15,5 @@ trait RTCSessionDescription extends js.Object {
 @JSGlobal("RTCSessionDescription")
 @js.native
 object RTCSessionDescription
-  extends ScalablyTyped.runtime.Instantiable1[/* descriptionInitDict */ RTCSessionDescriptionInit, RTCSessionDescription]
+  extends org.scalablytyped.runtime.Instantiable1[/* descriptionInitDict */ RTCSessionDescriptionInit, RTCSessionDescription]
 

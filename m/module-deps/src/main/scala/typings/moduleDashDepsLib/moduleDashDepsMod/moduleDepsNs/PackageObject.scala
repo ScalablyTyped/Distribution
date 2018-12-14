@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait PackageObject
-  extends /* prop */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

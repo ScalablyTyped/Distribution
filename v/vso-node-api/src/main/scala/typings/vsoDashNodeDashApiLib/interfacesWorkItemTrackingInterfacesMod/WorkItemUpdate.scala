@@ -10,7 +10,7 @@ trait WorkItemUpdate extends WorkItemTrackingResource {
   /**
        * List of updates to fields.
        */
-  var fields: ScalablyTyped.runtime.StringDictionary[WorkItemFieldUpdate]
+  var fields: org.scalablytyped.runtime.StringDictionary[WorkItemFieldUpdate]
   /**
        * ID of update.
        */

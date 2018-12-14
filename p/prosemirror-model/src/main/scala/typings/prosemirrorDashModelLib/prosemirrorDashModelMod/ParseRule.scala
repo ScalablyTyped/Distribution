@@ -11,7 +11,7 @@ trait ParseRule extends js.Object {
      * Attributes for the node or mark created by this rule. When
      * `getAttrs` is provided, it takes precedence.
      */
-  var attrs: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null] = js.undefined
+  var attrs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null] = js.undefined
   /**
      * For `tag` rules that produce non-leaf nodes or marks, by default
      * the content of the DOM element is parsed as content of the mark
@@ -49,7 +49,7 @@ trait ParseRule extends js.Object {
     (js.Function1[
       /* p */ stdLib.Node | java.lang.String, 
       js.UndefOr[
-        ScalablyTyped.runtime.StringDictionary[_] | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`false` | scala.Null
+        org.scalablytyped.runtime.StringDictionary[_] | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`false` | scala.Null
       ]
     ]) | scala.Null
   ] = js.undefined

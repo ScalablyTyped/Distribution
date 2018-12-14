@@ -11,7 +11,7 @@ trait ITooltipsterOptions
 		 * Several plugins may have options of the same name. To resolve the conflict, wrap the options of plugins 
 		 * under a property with their full name.
 		 */
-/* pluginName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* pluginName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   		 * The minimum version of Internet Explorer to run on. 
   		 * @default 6

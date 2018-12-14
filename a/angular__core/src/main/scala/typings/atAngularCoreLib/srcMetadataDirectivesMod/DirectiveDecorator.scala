@@ -10,7 +10,7 @@ trait DirectiveDecorator
   extends /**
      * See the `Directive` decorator.
      */
-ScalablyTyped.runtime.Instantiable1[/* obj */ Directive, Directive] {
+org.scalablytyped.runtime.Instantiable1[/* obj */ Directive, Directive] {
   /**
        * Marks a class as an Angular directive. You can define your own
        * directives to attach custom behavior to elements in the DOM.

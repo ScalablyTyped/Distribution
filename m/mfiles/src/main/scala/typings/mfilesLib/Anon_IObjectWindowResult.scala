@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IObjectWindowResult
-  extends ScalablyTyped.runtime.Instantiable0[IObjectWindowResult]
+  extends org.scalablytyped.runtime.Instantiable0[IObjectWindowResult]
 

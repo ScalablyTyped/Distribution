@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object mooModMembers extends js.Object {
   val error: mooLib.Anon_Error = js.native
   def compile(rules: Rules): Lexer = js.native
-  def states(states: ScalablyTyped.runtime.StringDictionary[Rules]): Lexer = js.native
-  def states(states: ScalablyTyped.runtime.StringDictionary[Rules], start: java.lang.String): Lexer = js.native
+  def states(states: org.scalablytyped.runtime.StringDictionary[Rules]): Lexer = js.native
+  def states(states: org.scalablytyped.runtime.StringDictionary[Rules], start: java.lang.String): Lexer = js.native
 }
 

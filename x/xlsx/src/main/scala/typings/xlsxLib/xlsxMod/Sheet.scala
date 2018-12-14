@@ -11,7 +11,7 @@ trait Sheet
      * Indexing with a cell address string maps to a cell object
      * Special keys start with '!'
      */
-/* cell */ ScalablyTyped.runtime.StringDictionary[CellObject | SheetKeys | js.Any] {
+/* cell */ org.scalablytyped.runtime.StringDictionary[CellObject | SheetKeys | js.Any] {
   /** Page Margins */
   var `!margins`: js.UndefOr[MarginInfo] = js.undefined
   /** Sheet Range */

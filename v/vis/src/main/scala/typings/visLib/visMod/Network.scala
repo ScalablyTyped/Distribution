@@ -266,7 +266,7 @@ class Network protected () extends js.Object {
      * When a String is supplied, the position of the node corresponding to the ID is returned.
      * When nothing is supplied, the positions of all nodes are returned.
      */
-  def getPositions(): ScalablyTyped.runtime.StringDictionary[Position] = js.native
+  def getPositions(): org.scalablytyped.runtime.StringDictionary[Position] = js.native
   /**
      * Returns the x y positions in canvas space of the nodes with the supplied nodeIds as an object.
      *
@@ -274,7 +274,7 @@ class Network protected () extends js.Object {
      * When a String is supplied, the position of the node corresponding to the ID is returned.
      * When nothing is supplied, the positions of all nodes are returned.
      */
-  def getPositions(nodeIds: js.Array[IdType]): ScalablyTyped.runtime.StringDictionary[Position] = js.native
+  def getPositions(nodeIds: js.Array[IdType]): org.scalablytyped.runtime.StringDictionary[Position] = js.native
   def getPositions(nodeId: IdType): Position = js.native
   /**
      * Returns the current scale of the network.

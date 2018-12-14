@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TreeNodeSimpleMode
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Boolean | reactLib.reactMod.ReactNs.ReactNode]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | reactLib.reactMod.ReactNs.ReactNode]
 

@@ -10,7 +10,7 @@ trait ResourceStatic
   extends /**
              * @param dispatcher
              */
-ScalablyTyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Resource] {
+org.scalablytyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Resource] {
   /**
                * @type {number} Default number of items to get per page.
                */

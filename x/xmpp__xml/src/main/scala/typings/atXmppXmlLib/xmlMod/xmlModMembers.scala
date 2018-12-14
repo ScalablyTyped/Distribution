@@ -15,15 +15,15 @@ object xmlModMembers extends js.Object {
   def apply(name: java.lang.String): atXmppXmlLib.xmlMod.xmlNs.Element = js.native
   def apply(
     name: java.lang.String,
-    attrs: java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any],
     children: atXmppXmlLib.xmlMod.xmlNs.ElementChild*
   ): atXmppXmlLib.xmlMod.xmlNs.Element = js.native
   def x(name: java.lang.String): atXmppXmlLib.xmlMod.xmlNs.Element = js.native
+  def x(name: java.lang.String, attrs: java.lang.String, children: atXmppXmlLib.xmlMod.xmlNs.ElementChild*): atXmppXmlLib.xmlMod.xmlNs.Element = js.native
   def x(
     name: java.lang.String,
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     children: atXmppXmlLib.xmlMod.xmlNs.ElementChild*
   ): atXmppXmlLib.xmlMod.xmlNs.Element = js.native
-  def x(name: java.lang.String, attrs: java.lang.String, children: atXmppXmlLib.xmlMod.xmlNs.ElementChild*): atXmppXmlLib.xmlMod.xmlNs.Element = js.native
 }
 

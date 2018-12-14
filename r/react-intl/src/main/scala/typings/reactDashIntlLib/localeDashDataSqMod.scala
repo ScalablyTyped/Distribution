@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-intl/locale-data/sq", JSImport.Namespace)
 @js.native
 object localeDashDataSqMod
-  extends ScalablyTyped.runtime.TopLevel[reactDashIntlLib.ReactIntlNs.LocaleData]
+  extends org.scalablytyped.runtime.TopLevel[reactDashIntlLib.ReactIntlNs.LocaleData]
 

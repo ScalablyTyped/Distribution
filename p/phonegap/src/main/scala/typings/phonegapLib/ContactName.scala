@@ -18,5 +18,5 @@ trait ContactName extends js.Object {
 @JSGlobal("ContactName")
 @js.native
 object ContactName
-  extends ScalablyTyped.runtime.Instantiable0[ContactName]
+  extends org.scalablytyped.runtime.Instantiable0[ContactName]
 

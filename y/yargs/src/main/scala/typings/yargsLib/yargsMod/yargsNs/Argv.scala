@@ -11,7 +11,7 @@ trait Argv extends js.Object {
   def apply(): Arguments = js.native
   def apply(args: js.Array[java.lang.String]): Arguments = js.native
   def apply(args: js.Array[java.lang.String], cwd: java.lang.String): Arguments = js.native
-  def alias(aliases: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): Argv = js.native
+  def alias(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): Argv = js.native
   def alias(shortName: java.lang.String, longName: java.lang.String): Argv = js.native
   def alias(shortName: java.lang.String, longName: js.Array[java.lang.String]): Argv = js.native
   def alias(shortName: js.Array[java.lang.String], longName: java.lang.String): Argv = js.native
@@ -23,35 +23,24 @@ trait Argv extends js.Object {
   def check(
     func: js.Function2[
       /* argv */ Arguments, 
-      /* aliases */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* aliases */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       _
     ]
   ): Argv = js.native
   def check(
     func: js.Function2[
       /* argv */ Arguments, 
-      /* aliases */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* aliases */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       _
     ],
     global: scala.Boolean
   ): Argv = js.native
-  def choices(choices: ScalablyTyped.runtime.StringDictionary[Choices]): Argv = js.native
+  def choices(choices: org.scalablytyped.runtime.StringDictionary[Choices]): Argv = js.native
   def choices(key: java.lang.String, values: Choices): Argv = js.native
   def coerce(key: java.lang.String, func: js.Function1[/* arg */ js.Any, _]): Argv = js.native
   def coerce(key: js.Array[java.lang.String], func: js.Function1[/* arg */ js.Any, _]): Argv = js.native
-  def coerce(opts: ScalablyTyped.runtime.StringDictionary[js.Function1[/* arg */ js.Any, _]]): Argv = js.native
+  def coerce(opts: org.scalablytyped.runtime.StringDictionary[js.Function1[/* arg */ js.Any, _]]): Argv = js.native
   def command(command: java.lang.String, description: java.lang.String): Argv = js.native
-  def command(
-    command: java.lang.String,
-    description: java.lang.String,
-    builder: ScalablyTyped.runtime.StringDictionary[Options]
-  ): Argv = js.native
-  def command(
-    command: java.lang.String,
-    description: java.lang.String,
-    builder: ScalablyTyped.runtime.StringDictionary[Options],
-    handler: js.Function1[/* args */ Arguments, scala.Unit]
-  ): Argv = js.native
   def command(
     command: java.lang.String,
     description: java.lang.String,
@@ -61,6 +50,17 @@ trait Argv extends js.Object {
     command: java.lang.String,
     description: java.lang.String,
     builder: js.Function1[/* args */ this.type, this.type],
+    handler: js.Function1[/* args */ Arguments, scala.Unit]
+  ): Argv = js.native
+  def command(
+    command: java.lang.String,
+    description: java.lang.String,
+    builder: org.scalablytyped.runtime.StringDictionary[Options]
+  ): Argv = js.native
+  def command(
+    command: java.lang.String,
+    description: java.lang.String,
+    builder: org.scalablytyped.runtime.StringDictionary[Options],
     handler: js.Function1[/* args */ Arguments, scala.Unit]
   ): Argv = js.native
   def command(command: java.lang.String, description: java.lang.String, module: CommandModule): Argv = js.native
@@ -68,23 +68,23 @@ trait Argv extends js.Object {
   def command(
     command: java.lang.String,
     showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: ScalablyTyped.runtime.StringDictionary[Options]
-  ): Argv = js.native
-  def command(
-    command: java.lang.String,
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: ScalablyTyped.runtime.StringDictionary[Options],
-    handler: js.Function1[/* args */ Arguments, scala.Unit]
-  ): Argv = js.native
-  def command(
-    command: java.lang.String,
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
     builder: js.Function1[/* args */ this.type, this.type]
   ): Argv = js.native
   def command(
     command: java.lang.String,
     showInHelp: yargsLib.yargsLibNumbers.`false`,
     builder: js.Function1[/* args */ this.type, this.type],
+    handler: js.Function1[/* args */ Arguments, scala.Unit]
+  ): Argv = js.native
+  def command(
+    command: java.lang.String,
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: org.scalablytyped.runtime.StringDictionary[Options]
+  ): Argv = js.native
+  def command(
+    command: java.lang.String,
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: org.scalablytyped.runtime.StringDictionary[Options],
     handler: js.Function1[/* args */ Arguments, scala.Unit]
   ): Argv = js.native
   def command(command: java.lang.String, showInHelp: yargsLib.yargsLibNumbers.`false`, module: CommandModule): Argv = js.native
@@ -92,23 +92,23 @@ trait Argv extends js.Object {
   def command(
     command: js.Array[java.lang.String],
     description: java.lang.String,
-    builder: ScalablyTyped.runtime.StringDictionary[Options]
-  ): Argv = js.native
-  def command(
-    command: js.Array[java.lang.String],
-    description: java.lang.String,
-    builder: ScalablyTyped.runtime.StringDictionary[Options],
-    handler: js.Function1[/* args */ Arguments, scala.Unit]
-  ): Argv = js.native
-  def command(
-    command: js.Array[java.lang.String],
-    description: java.lang.String,
     builder: js.Function1[/* args */ this.type, this.type]
   ): Argv = js.native
   def command(
     command: js.Array[java.lang.String],
     description: java.lang.String,
     builder: js.Function1[/* args */ this.type, this.type],
+    handler: js.Function1[/* args */ Arguments, scala.Unit]
+  ): Argv = js.native
+  def command(
+    command: js.Array[java.lang.String],
+    description: java.lang.String,
+    builder: org.scalablytyped.runtime.StringDictionary[Options]
+  ): Argv = js.native
+  def command(
+    command: js.Array[java.lang.String],
+    description: java.lang.String,
+    builder: org.scalablytyped.runtime.StringDictionary[Options],
     handler: js.Function1[/* args */ Arguments, scala.Unit]
   ): Argv = js.native
   def command(command: js.Array[java.lang.String], description: java.lang.String, module: CommandModule): Argv = js.native
@@ -116,23 +116,23 @@ trait Argv extends js.Object {
   def command(
     command: js.Array[java.lang.String],
     showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: ScalablyTyped.runtime.StringDictionary[Options]
-  ): Argv = js.native
-  def command(
-    command: js.Array[java.lang.String],
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: ScalablyTyped.runtime.StringDictionary[Options],
-    handler: js.Function1[/* args */ Arguments, scala.Unit]
-  ): Argv = js.native
-  def command(
-    command: js.Array[java.lang.String],
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
     builder: js.Function1[/* args */ this.type, this.type]
   ): Argv = js.native
   def command(
     command: js.Array[java.lang.String],
     showInHelp: yargsLib.yargsLibNumbers.`false`,
     builder: js.Function1[/* args */ this.type, this.type],
+    handler: js.Function1[/* args */ Arguments, scala.Unit]
+  ): Argv = js.native
+  def command(
+    command: js.Array[java.lang.String],
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: org.scalablytyped.runtime.StringDictionary[Options]
+  ): Argv = js.native
+  def command(
+    command: js.Array[java.lang.String],
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: org.scalablytyped.runtime.StringDictionary[Options],
     handler: js.Function1[/* args */ Arguments, scala.Unit]
   ): Argv = js.native
   def command(
@@ -173,13 +173,15 @@ trait Argv extends js.Object {
     key: js.Array[java.lang.String],
     parseFn: js.Function1[/* configPath */ java.lang.String, js.Object]
   ): Argv = js.native
-  def conflicts(conflicts: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): Argv = js.native
+  def conflicts(
+    conflicts: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+  ): Argv = js.native
   def conflicts(key: java.lang.String, value: java.lang.String): Argv = js.native
   def conflicts(key: java.lang.String, value: js.Array[java.lang.String]): Argv = js.native
   def count(key: java.lang.String): Argv = js.native
   def count(key: js.Array[java.lang.String]): Argv = js.native
-  def default(defaults: ScalablyTyped.runtime.StringDictionary[js.Any]): Argv = js.native
-  def default(defaults: ScalablyTyped.runtime.StringDictionary[js.Any], description: java.lang.String): Argv = js.native
+  def default(defaults: org.scalablytyped.runtime.StringDictionary[js.Any]): Argv = js.native
+  def default(defaults: org.scalablytyped.runtime.StringDictionary[js.Any], description: java.lang.String): Argv = js.native
   def default(key: java.lang.String, value: js.Any): Argv = js.native
   def default(key: java.lang.String, value: js.Any, description: java.lang.String): Argv = js.native
   def demand(key: java.lang.String): Argv = js.native
@@ -213,7 +215,7 @@ trait Argv extends js.Object {
   def demandOption(key: js.Array[java.lang.String]): Argv = js.native
   def demandOption(key: js.Array[java.lang.String], demand: scala.Boolean): Argv = js.native
   def demandOption(key: js.Array[java.lang.String], msg: java.lang.String): Argv = js.native
-  def describe(descriptions: ScalablyTyped.runtime.StringDictionary[java.lang.String]): Argv = js.native
+  def describe(descriptions: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Argv = js.native
   def describe(key: java.lang.String, description: java.lang.String): Argv = js.native
   def describe(key: js.Array[java.lang.String], description: java.lang.String): Argv = js.native
   def detectLocale(detect: scala.Boolean): Argv = js.native
@@ -240,7 +242,7 @@ trait Argv extends js.Object {
   def help(option: java.lang.String, description: java.lang.String, enableExplicit: scala.Boolean): Argv = js.native
   def help(option: java.lang.String, enableExplicit: scala.Boolean): Argv = js.native
   def hide(key: java.lang.String): Argv = js.native
-  def implies(implies: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): Argv = js.native
+  def implies(implies: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): Argv = js.native
   def implies(key: java.lang.String, value: java.lang.String): Argv = js.native
   def implies(key: java.lang.String, value: js.Array[java.lang.String]): Argv = js.native
   def locale(): java.lang.String = js.native
@@ -248,15 +250,15 @@ trait Argv extends js.Object {
   def middleware(callbacks: js.Array[MiddlewareFunction]): Argv = js.native
   def middleware(callbacks: MiddlewareFunction): Argv = js.native
   def nargs(key: java.lang.String, count: scala.Double): Argv = js.native
-  def nargs(nargs: ScalablyTyped.runtime.StringDictionary[scala.Double]): Argv = js.native
+  def nargs(nargs: org.scalablytyped.runtime.StringDictionary[scala.Double]): Argv = js.native
   def normalize(key: java.lang.String): Argv = js.native
   def normalize(key: js.Array[java.lang.String]): Argv = js.native
   def number(key: java.lang.String): Argv = js.native
   def number(key: js.Array[java.lang.String]): Argv = js.native
   def option(key: java.lang.String, options: Options): Argv = js.native
-  def option(options: ScalablyTyped.runtime.StringDictionary[Options]): Argv = js.native
+  def option(options: org.scalablytyped.runtime.StringDictionary[Options]): Argv = js.native
   def options(key: java.lang.String, options: Options): Argv = js.native
-  def options(options: ScalablyTyped.runtime.StringDictionary[Options]): Argv = js.native
+  def options(options: org.scalablytyped.runtime.StringDictionary[Options]): Argv = js.native
   def parse(): Arguments = js.native
   def parse(arg: java.lang.String): Arguments = js.native
   def parse(arg: java.lang.String, context: js.Object): Arguments = js.native
@@ -318,20 +320,9 @@ trait Argv extends js.Object {
   def string(key: js.Array[java.lang.String]): Argv = js.native
   // Intended to be used with '.wrap()'
   def terminalWidth(): scala.Double = js.native
-  def updateLocale(obj: ScalablyTyped.runtime.StringDictionary[java.lang.String]): Argv = js.native
-  def updateStrings(obj: ScalablyTyped.runtime.StringDictionary[java.lang.String]): Argv = js.native
+  def updateLocale(obj: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Argv = js.native
+  def updateStrings(obj: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Argv = js.native
   def usage(command: java.lang.String, description: java.lang.String): Argv = js.native
-  def usage(
-    command: java.lang.String,
-    description: java.lang.String,
-    builder: ScalablyTyped.runtime.StringDictionary[Options]
-  ): Argv = js.native
-  def usage(
-    command: java.lang.String,
-    description: java.lang.String,
-    builder: ScalablyTyped.runtime.StringDictionary[Options],
-    handler: js.Function1[/* args */ Arguments, scala.Unit]
-  ): Argv = js.native
   def usage(
     command: java.lang.String,
     description: java.lang.String,
@@ -341,6 +332,17 @@ trait Argv extends js.Object {
     command: java.lang.String,
     description: java.lang.String,
     builder: js.Function1[/* args */ this.type, this.type],
+    handler: js.Function1[/* args */ Arguments, scala.Unit]
+  ): Argv = js.native
+  def usage(
+    command: java.lang.String,
+    description: java.lang.String,
+    builder: org.scalablytyped.runtime.StringDictionary[Options]
+  ): Argv = js.native
+  def usage(
+    command: java.lang.String,
+    description: java.lang.String,
+    builder: org.scalablytyped.runtime.StringDictionary[Options],
     handler: js.Function1[/* args */ Arguments, scala.Unit]
   ): Argv = js.native
   def usage(command: java.lang.String, showInHelp: scala.Boolean): Argv = js.native
@@ -359,23 +361,23 @@ trait Argv extends js.Object {
   def usage(
     command: js.Array[java.lang.String],
     description: java.lang.String,
-    builder: ScalablyTyped.runtime.StringDictionary[Options]
-  ): Argv = js.native
-  def usage(
-    command: js.Array[java.lang.String],
-    description: java.lang.String,
-    builder: ScalablyTyped.runtime.StringDictionary[Options],
-    handler: js.Function1[/* args */ Arguments, scala.Unit]
-  ): Argv = js.native
-  def usage(
-    command: js.Array[java.lang.String],
-    description: java.lang.String,
     builder: js.Function1[/* args */ this.type, this.type]
   ): Argv = js.native
   def usage(
     command: js.Array[java.lang.String],
     description: java.lang.String,
     builder: js.Function1[/* args */ this.type, this.type],
+    handler: js.Function1[/* args */ Arguments, scala.Unit]
+  ): Argv = js.native
+  def usage(
+    command: js.Array[java.lang.String],
+    description: java.lang.String,
+    builder: org.scalablytyped.runtime.StringDictionary[Options]
+  ): Argv = js.native
+  def usage(
+    command: js.Array[java.lang.String],
+    description: java.lang.String,
+    builder: org.scalablytyped.runtime.StringDictionary[Options],
     handler: js.Function1[/* args */ Arguments, scala.Unit]
   ): Argv = js.native
   def usage(command: js.Array[java.lang.String], showInHelp: scala.Boolean): Argv = js.native
@@ -393,23 +395,23 @@ trait Argv extends js.Object {
   def usage(
     commands: java.lang.String,
     showInHelp: scala.Boolean,
-    builder: ScalablyTyped.runtime.StringDictionary[Options]
+    builder: org.scalablytyped.runtime.StringDictionary[Options]
   ): Argv = js.native
   def usage(
     commands: java.lang.String,
     showInHelp: scala.Boolean,
-    builder: ScalablyTyped.runtime.StringDictionary[Options],
+    builder: org.scalablytyped.runtime.StringDictionary[Options],
     handler: js.Function1[/* args */ Arguments, scala.Unit]
   ): Argv = js.native
   def usage(
     commands: js.Array[java.lang.String],
     showInHelp: scala.Boolean,
-    builder: ScalablyTyped.runtime.StringDictionary[Options]
+    builder: org.scalablytyped.runtime.StringDictionary[Options]
   ): Argv = js.native
   def usage(
     commands: js.Array[java.lang.String],
     showInHelp: scala.Boolean,
-    builder: ScalablyTyped.runtime.StringDictionary[Options],
+    builder: org.scalablytyped.runtime.StringDictionary[Options],
     handler: js.Function1[/* args */ Arguments, scala.Unit]
   ): Argv = js.native
   def usage(message: java.lang.String): Argv = js.native

@@ -546,7 +546,7 @@ object SESNs extends js.Object {
   
   
   trait DkimAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[IdentityDkimAttributes]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[IdentityDkimAttributes]
   
   
   trait EventDestination extends js.Object {
@@ -1014,7 +1014,7 @@ object SESNs extends js.Object {
   
   
   trait MailFromDomainAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[IdentityMailFromDomainAttributes]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[IdentityMailFromDomainAttributes]
   
   
   trait Message extends js.Object {
@@ -1058,11 +1058,11 @@ object SESNs extends js.Object {
   
   
   trait NotificationAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[IdentityNotificationAttributes]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[IdentityNotificationAttributes]
   
   
   trait PolicyMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Policy]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Policy]
   
   
   trait PutIdentityPolicyRequest extends js.Object {
@@ -3842,7 +3842,7 @@ object SESNs extends js.Object {
   
   
   trait VerificationAttributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[IdentityVerificationAttributes]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[IdentityVerificationAttributes]
   
   
   trait VerifyDomainDkimRequest extends js.Object {

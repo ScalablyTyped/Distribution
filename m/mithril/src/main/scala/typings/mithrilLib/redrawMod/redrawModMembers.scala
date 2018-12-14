@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mithril/redraw", JSImport.Namespace)
 @js.native
 object redrawModMembers
-  extends ScalablyTyped.runtime.TopLevel[mithrilLib.redrawMod.RedrawServiceNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[mithrilLib.redrawMod.RedrawServiceNs.Static]
 

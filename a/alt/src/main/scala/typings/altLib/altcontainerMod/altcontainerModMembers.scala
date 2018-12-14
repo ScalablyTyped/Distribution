@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("alt/AltContainer", JSImport.Namespace)
 @js.native
 object altcontainerModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       reactLib.reactMod.ReactNs.ComponentClass[ContainerProps, reactLib.reactMod.ReactNs.ComponentState]
     ]
 

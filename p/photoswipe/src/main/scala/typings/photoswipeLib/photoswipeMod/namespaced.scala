@@ -26,7 +26,7 @@ class namespaced[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] pr
        * (3) Array with objects (slides).
        * (4) Options.
        */
-  def this(pswpElement: stdLib.HTMLElement, uiConstructor: ScalablyTyped.runtime.Instantiable2[
+  def this(pswpElement: stdLib.HTMLElement, uiConstructor: org.scalablytyped.runtime.Instantiable2[
       /* pswp */ PhotoSwipe[T], 
       /* framework */ photoswipeLib.photoswipeMod.PhotoSwipeNs.UIFramework, 
       photoswipeLib.photoswipeMod.PhotoSwipeNs.UI[T]

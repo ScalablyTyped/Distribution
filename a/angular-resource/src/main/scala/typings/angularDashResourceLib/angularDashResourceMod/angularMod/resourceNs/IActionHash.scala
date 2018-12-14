@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 // Hash of action descriptors allows custom action names
 
 trait IActionHash
-  extends /* action */ ScalablyTyped.runtime.StringDictionary[IActionDescriptor]
+  extends /* action */ org.scalablytyped.runtime.StringDictionary[IActionDescriptor]
 

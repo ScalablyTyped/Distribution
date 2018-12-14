@@ -27,7 +27,7 @@ class Metadata () extends js.Object {
        * This reflects the most common way that people will want to see metadata.
        * @return A key/value mapping of the metadata.
        */
-  def getMap(): ScalablyTyped.runtime.StringDictionary[MetadataValue] = js.native
+  def getMap(): org.scalablytyped.runtime.StringDictionary[MetadataValue] = js.native
   /**
        * Removes the given key and any associated values. Normalizes the key.
        * @param key The key whose values should be removed.

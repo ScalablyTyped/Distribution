@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/log", JSImport.Namespace)
 @js.native
 object libraryFnLogMod
-  extends ScalablyTyped.runtime.TopLevel[Log]
+  extends org.scalablytyped.runtime.TopLevel[Log]
 

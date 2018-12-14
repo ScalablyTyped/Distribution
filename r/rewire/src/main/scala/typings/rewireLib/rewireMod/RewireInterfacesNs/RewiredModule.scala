@@ -18,11 +18,11 @@ trait RewiredModule extends js.Object {
   /**
            * Takes all enumerable keys of obj as variable names and sets the values respectively. Returns a function which can be called to revert the change.
            */
-  def `__set__`(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Function0[scala.Unit] = js.native
+  def `__set__`(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Function0[scala.Unit] = js.native
   /**
            * Returns a function which - when being called - sets obj, executes the given callback and reverts obj. If callback returns a promise, obj is only reverted after
            * the promise has been resolved or rejected. For your convenience the returned function passes the received promise through.
            */
-  def `__with__`(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Function1[/* callback */ js.Function0[_], _] = js.native
+  def `__with__`(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Function1[/* callback */ js.Function0[_], _] = js.native
 }
 

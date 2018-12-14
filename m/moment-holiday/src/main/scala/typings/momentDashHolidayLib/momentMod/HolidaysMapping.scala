@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait HolidaysMapping
-  extends /* holidayName */ ScalablyTyped.runtime.StringDictionary[HolidayDefinition]
+  extends /* holidayName */ org.scalablytyped.runtime.StringDictionary[HolidayDefinition]
 

@@ -19,14 +19,14 @@ trait KeyframeEffect extends AnimationEffect {
 @JSGlobal("KeyframeEffect")
 @js.native
 object KeyframeEffect
-  extends ScalablyTyped.runtime.Instantiable1[(/* target */ Element) | (/* source */ KeyframeEffect), KeyframeEffect]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[KeyframeEffect]
+     with org.scalablytyped.runtime.Instantiable2[
       (/* target */ Element) | (/* target */ scala.Null), 
       (/* keyframes */ js.Array[Keyframe]) | (/* keyframes */ PropertyIndexedKeyframes), 
       KeyframeEffect
     ]
-     with ScalablyTyped.runtime.Instantiable0[KeyframeEffect]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable1[(/* target */ Element) | (/* source */ KeyframeEffect), KeyframeEffect]
+     with org.scalablytyped.runtime.Instantiable3[
       (/* target */ Element) | (/* target */ scala.Null), 
       (/* keyframes */ js.Array[Keyframe]) | (/* keyframes */ PropertyIndexedKeyframes) | (/* keyframes */ scala.Null), 
       (/* options */ scala.Double) | (/* options */ KeyframeEffectOptions), 

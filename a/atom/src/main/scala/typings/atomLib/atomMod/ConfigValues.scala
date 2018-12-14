@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ConfigValues
   extends // tslint:disable-next-line:no-any
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            *  If you are experiencing performance issues when typing, you should try
            *  increasing this value to a non-zero number (e.g. 100).
@@ -134,7 +134,7 @@ trait ConfigValues
        *  Associates scope names (e.g. "source.coffee") with arrays of file extensions
        *  and file names (e.g. ["Cakefile", ".coffee2"]).
        */
-  var `core.customFileTypes`: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  var `core.customFileTypes`: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   /** When the last tab of a pane is closed, remove that pane as well. */
   var `core.destroyEmptyPanes`: scala.Boolean
   /** List of names of installed packages which are not loaded at startup. */

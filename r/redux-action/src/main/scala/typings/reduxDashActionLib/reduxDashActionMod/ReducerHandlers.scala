@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ReducerHandlers[State]
-  extends /* type */ ScalablyTyped.runtime.StringDictionary[ReducerHandler[State]]
+  extends /* type */ org.scalablytyped.runtime.StringDictionary[ReducerHandler[State]]
 

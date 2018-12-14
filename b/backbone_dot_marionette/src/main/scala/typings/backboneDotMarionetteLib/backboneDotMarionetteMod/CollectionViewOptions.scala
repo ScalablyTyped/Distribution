@@ -15,8 +15,8 @@ trait CollectionViewOptions[TModel /* <: backboneLib.backboneMod.Model */, TColl
   var childView: js.UndefOr[
     (js.Function1[
       /* model */ TModel, 
-      ScalablyTyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
-    ]) | ScalablyTyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
+      org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
+    ]) | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
   ] = js.undefined
   /**
        * Define options to pass to the childView constructor.
@@ -27,8 +27,8 @@ trait CollectionViewOptions[TModel /* <: backboneLib.backboneMod.Model */, TColl
        */
   var emptyView: js.UndefOr[
     (js.Function0[
-      ScalablyTyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
-    ]) | ScalablyTyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
+      org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
+    ]) | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
   ] = js.undefined
   /**
        * Define options to pass to the emptyView constructor.

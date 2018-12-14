@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ITfIdfTokenMap
-  extends /* token */ ScalablyTyped.runtime.StringDictionary[ITfIdfTokenMetadata]
+  extends /* token */ org.scalablytyped.runtime.StringDictionary[ITfIdfTokenMetadata]
 

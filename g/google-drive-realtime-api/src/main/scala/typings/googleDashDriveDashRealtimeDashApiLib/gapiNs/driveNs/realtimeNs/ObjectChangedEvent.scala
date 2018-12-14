@@ -13,7 +13,7 @@ trait ObjectChangedEvent
 // Array of gapi.drive.realtime.BaseModelEvent
 // The specific events that document the changes that occurred on the object.
 // Value must not be null.
-ScalablyTyped.runtime.Instantiable8[
+org.scalablytyped.runtime.Instantiable8[
       /* target */ CollaborativeObject, 
       /* sessionId */ java.lang.String, 
       /* userId */ java.lang.String, 

@@ -10,8 +10,8 @@ trait MergeInfo extends js.Object {
   var delegate: js.Function6[
     /* type */ graphqlDashToolsLib.graphqlDashToolsLibStrings.query | graphqlDashToolsLib.graphqlDashToolsLibStrings.mutation | graphqlDashToolsLib.graphqlDashToolsLibStrings.subscription, 
     /* fieldName */ java.lang.String, 
-    /* args */ ScalablyTyped.runtime.StringDictionary[js.Any], 
-    /* context */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* args */ org.scalablytyped.runtime.StringDictionary[js.Any], 
+    /* context */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
     /* transforms */ js.UndefOr[js.Array[Transform]], 
     _

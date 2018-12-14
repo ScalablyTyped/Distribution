@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("atom-mocha-test-runner", JSImport.Namespace)
 @js.native
 object atomDashMochaDashTestDashRunnerModMembers
-  extends ScalablyTyped.runtime.TopLevel[TestRunnerExport]
+  extends org.scalablytyped.runtime.TopLevel[TestRunnerExport]
 

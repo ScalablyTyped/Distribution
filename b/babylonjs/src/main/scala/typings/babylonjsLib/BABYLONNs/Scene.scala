@@ -140,7 +140,7 @@ class Scene protected () extends AbstractScene {
   var _delayedSimpleClick: js.Any = js.native
   var _delayedSimpleClickTimeout: js.Any = js.native
   /** @hidden (Backing field) */
-  var _depthRenderer: ScalablyTyped.runtime.StringDictionary[DepthRenderer] = js.native
+  var _depthRenderer: org.scalablytyped.runtime.StringDictionary[DepthRenderer] = js.native
   var _doubleClickOccured: js.Any = js.native
   var _engine: js.Any = js.native
   /** @hidden */

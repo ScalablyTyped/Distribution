@@ -113,7 +113,7 @@ object AlexaForBusinessNs extends js.Object {
   
   
   trait AuthorizationResult
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
   
   
   trait BusinessReport extends js.Object {
@@ -1564,7 +1564,7 @@ object AlexaForBusinessNs extends js.Object {
   
   
   trait Reviews
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ReviewValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ReviewValue]
   
   
   trait RevokeInvitationRequest extends js.Object {

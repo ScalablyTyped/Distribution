@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Views extends js.Object {
-  var views: ScalablyTyped.runtime.StringDictionary[js.Object]
+  var views: org.scalablytyped.runtime.StringDictionary[js.Object]
 }
 

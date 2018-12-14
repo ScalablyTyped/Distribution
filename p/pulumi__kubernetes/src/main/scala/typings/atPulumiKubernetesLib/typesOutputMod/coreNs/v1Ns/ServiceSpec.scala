@@ -82,7 +82,7 @@ trait ServiceSpec extends js.Object {
                * LoadBalancer. Ignored if type is ExternalName. More info:
                * https://kubernetes.io/docs/concepts/services-networking/service/
                */
-  val selector: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val selector: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * Supports "ClientIP" and "None". Used to maintain session affinity. Enable client IP based
                * session affinity. Must be ClientIP or None. Defaults to None. More info:

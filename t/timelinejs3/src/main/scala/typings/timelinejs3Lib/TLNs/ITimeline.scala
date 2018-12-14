@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ITimeline
   extends ITimelineEvents
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* containerId */ java.lang.String, 
       (/* data */ java.lang.String) | (/* data */ ITimelineConfig), 
       ITimeline
     ]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable3[
       /* containerId */ java.lang.String, 
       (/* data */ java.lang.String) | (/* data */ ITimelineConfig), 
       /* options */ ITimelineOptions, 

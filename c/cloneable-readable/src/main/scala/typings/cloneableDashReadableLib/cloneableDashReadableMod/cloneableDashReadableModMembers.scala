@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cloneable-readable", JSImport.Namespace)
 @js.native
 object cloneableDashReadableModMembers
-  extends ScalablyTyped.runtime.TopLevel[CloneableFn]
+  extends org.scalablytyped.runtime.TopLevel[CloneableFn]
 

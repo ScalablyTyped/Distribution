@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Members[T] extends js.Object {
   var count: scala.Double
   var me: Member[T]
-  var members: ScalablyTyped.runtime.StringDictionary[Member[T]]
+  var members: org.scalablytyped.runtime.StringDictionary[Member[T]]
   var myID: java.lang.String
   /**
            * Calls back for each member in unspecified order.

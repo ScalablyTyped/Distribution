@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ripemd160", JSImport.Namespace)
 @js.native
 object ripemd160ModMembers
-  extends ScalablyTyped.runtime.TopLevel[RIPEMD160Static]
+  extends org.scalablytyped.runtime.TopLevel[RIPEMD160Static]
 

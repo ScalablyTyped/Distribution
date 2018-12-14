@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ICustomApplications
-  extends ScalablyTyped.runtime.Instantiable0[ICustomApplications]
+  extends org.scalablytyped.runtime.Instantiable0[ICustomApplications]
 

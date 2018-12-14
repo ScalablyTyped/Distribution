@@ -3698,7 +3698,7 @@ trait Commands[R] extends js.Object {
   def HGET(key: java.lang.String, field: java.lang.String): R = js.native
   def HGET(key: java.lang.String, field: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   def HGETALL(key: java.lang.String): R = js.native
-  def HGETALL(key: java.lang.String, cb: Callback[ScalablyTyped.runtime.StringDictionary[java.lang.String]]): R = js.native
+  def HGETALL(key: java.lang.String, cb: Callback[org.scalablytyped.runtime.StringDictionary[java.lang.String]]): R = js.native
   def HINCRBY(key: java.lang.String, field: java.lang.String, increment: scala.Double): R = js.native
   def HINCRBY(
     key: java.lang.String,
@@ -3789,15 +3789,6 @@ trait Commands[R] extends js.Object {
   def HMGET(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
   def HMGET(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
   def HMGET(key: java.lang.String, args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]
-  ): R = js.native
-  def HMSET(
-    key: java.lang.String,
-    arg1: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double],
-    cb: Callback[scala.Boolean]
-  ): R = js.native
   def HMSET(key: java.lang.String, arg1: java.lang.String | scala.Double): R = js.native
   def HMSET(
     key: java.lang.String,
@@ -3996,6 +3987,15 @@ trait Commands[R] extends js.Object {
   def HMSET(
     key: java.lang.String,
     arg1: js.Array[java.lang.String | scala.Double],
+    cb: Callback[scala.Boolean]
+  ): R = js.native
+  def HMSET(
+    key: java.lang.String,
+    arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
+  ): R = js.native
+  def HMSET(
+    key: java.lang.String,
+    arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
     cb: Callback[scala.Boolean]
   ): R = js.native
   def HMSET(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String): R = js.native
@@ -13397,7 +13397,7 @@ trait Commands[R] extends js.Object {
   /**
        * Get all fields and values in a hash.
        */
-  def hgetall(key: java.lang.String, cb: Callback[ScalablyTyped.runtime.StringDictionary[java.lang.String]]): R = js.native
+  def hgetall(key: java.lang.String, cb: Callback[org.scalablytyped.runtime.StringDictionary[java.lang.String]]): R = js.native
   /**
        * Increment the integer value of a hash field by the given number.
        */
@@ -13560,21 +13560,6 @@ trait Commands[R] extends js.Object {
        * Get the values of all the given hash fields.
        */
   def hmget(key: java.lang.String, args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]
-  ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
-  def hmset(
-    key: java.lang.String,
-    arg1: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double],
-    cb: Callback[scala.Boolean]
-  ): R = js.native
   /**
        * Set multiple hash fields to multiple values.
        */
@@ -13881,6 +13866,21 @@ trait Commands[R] extends js.Object {
   def hmset(
     key: java.lang.String,
     arg1: js.Array[java.lang.String | scala.Double],
+    cb: Callback[scala.Boolean]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  def hmset(
+    key: java.lang.String,
+    arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
+  ): R = js.native
+  /**
+       * Set multiple hash fields to multiple values.
+       */
+  def hmset(
+    key: java.lang.String,
+    arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
     cb: Callback[scala.Boolean]
   ): R = js.native
   /**

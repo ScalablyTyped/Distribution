@@ -17,8 +17,8 @@ trait ServiceWorkerMessageEvent extends Event {
 @JSGlobal("ServiceWorkerMessageEvent")
 @js.native
 object ServiceWorkerMessageEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, ServiceWorkerMessageEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, ServiceWorkerMessageEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ ServiceWorkerMessageEventInit, 
       ServiceWorkerMessageEvent

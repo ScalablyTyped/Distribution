@@ -12,10 +12,10 @@ trait Wire
   val amChoking: scala.Boolean = js.native
    // are we choking the peer?
   val amInterested: scala.Boolean = js.native
-  val extendedMapping: ScalablyTyped.runtime.NumberDictionary[java.lang.String] = js.native
+  val extendedMapping: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = js.native
    // are we interested in the peer?
   val peerChoking: scala.Boolean = js.native
-  val peerExtendedMapping: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  val peerExtendedMapping: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   val peerId: java.lang.String = js.native
    // remote peer id (hex string)
   val peerIdBuffer: nodeLib.Buffer = js.native

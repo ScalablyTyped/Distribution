@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/set-timeout", JSImport.Namespace)
 @js.native
 object libraryFnSetDashTimeoutMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function3[
         /* handler */ js.Any, 
         /* timeout */ js.UndefOr[js.Any], 

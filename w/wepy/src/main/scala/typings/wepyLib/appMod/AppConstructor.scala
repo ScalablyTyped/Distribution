@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AppConstructor
-  extends ScalablyTyped.runtime.Instantiable0[app]
+  extends org.scalablytyped.runtime.Instantiable0[app]
 

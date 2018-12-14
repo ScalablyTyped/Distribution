@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("platform", JSImport.Namespace)
 @js.native
 object platformMod
-  extends ScalablyTyped.runtime.TopLevel[Platform]
+  extends org.scalablytyped.runtime.TopLevel[Platform]
 

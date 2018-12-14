@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "smooth-scrollbar"
-version := "8.3.1-d49e1d"
+version := "8.3.1-d99698"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-102207",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-93340d",
-  "org.scalablytyped" %%% "lodash-es" % "4.17-dt-20180910Z-b82fca",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-13238d")
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-3acce5",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-17fe49",
+  "org.scalablytyped" %%% "lodash-es" % "4.17-dt-20180910Z-c1ba73",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-866b29")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

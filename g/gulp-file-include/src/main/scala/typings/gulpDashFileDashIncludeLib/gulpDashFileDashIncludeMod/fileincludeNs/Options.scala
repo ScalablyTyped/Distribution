@@ -17,14 +17,14 @@ trait Options extends js.Object {
   /**
            * Effectively a context for variables used in 'if' statements.
            */
-  var context: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var context: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * Filters basically look like functions that get passed into '@@include'.
            * When one of these functions is called, something of that name is looked
            * up in this object and called to get the contents of that include.
            */
   var filters: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Function1[/* arg */ js.Any, java.lang.String]]
+    org.scalablytyped.runtime.StringDictionary[js.Function1[/* arg */ js.Any, java.lang.String]]
   ] = js.undefined
   /**
            * default: false

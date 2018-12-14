@@ -14,6 +14,6 @@ trait ExchangeRate extends js.Object {
   /**
        * Rates as floating points in strings; indexed by currency id
        */
-  var rates: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var rates: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

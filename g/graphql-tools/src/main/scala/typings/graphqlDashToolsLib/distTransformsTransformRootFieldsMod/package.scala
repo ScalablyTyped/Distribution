@@ -9,9 +9,9 @@ package object distTransformsTransformRootFieldsMod {
   type RootTransformer = js.Function3[
     /* operation */ graphqlDashToolsLib.graphqlDashToolsLibStrings.Query | graphqlDashToolsLib.graphqlDashToolsLibStrings.Mutation | graphqlDashToolsLib.graphqlDashToolsLibStrings.Subscription, 
     /* fieldName */ java.lang.String, 
-    /* field */ graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* field */ graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]], 
     js.UndefOr[
-      (graphqlLib.typeDefinitionMod.GraphQLFieldConfig[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]]) | graphqlDashToolsLib.Anon_Field | scala.Null
+      (graphqlLib.typeDefinitionMod.GraphQLFieldConfig[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | graphqlDashToolsLib.Anon_Field | scala.Null
     ]
   ]
 }

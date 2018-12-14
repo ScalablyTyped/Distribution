@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IThemeRules
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[
       officeDashUiDashFabricDashReactLib.libComponentsThemeGeneratorIThemeSlotRuleMod.IThemeSlotRule
     ]
 

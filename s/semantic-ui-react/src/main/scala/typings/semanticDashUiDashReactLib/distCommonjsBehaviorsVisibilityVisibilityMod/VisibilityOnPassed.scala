@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait VisibilityOnPassed
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[
       js.Function2[/* nothing */ scala.Null, /* data */ VisibilityEventData, scala.Unit]
     ]
 

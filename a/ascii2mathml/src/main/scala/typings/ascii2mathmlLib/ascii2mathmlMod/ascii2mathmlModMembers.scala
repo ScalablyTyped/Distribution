@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ascii2mathml", JSImport.Namespace)
 @js.native
 object ascii2mathmlModMembers
-  extends ScalablyTyped.runtime.TopLevel[ascii2mathml]
+  extends org.scalablytyped.runtime.TopLevel[ascii2mathml]
 

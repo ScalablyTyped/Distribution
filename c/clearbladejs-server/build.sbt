@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "clearbladejs-server"
-version := "1.1-dt-20180910Z-461d21"
+version := "1.1-dt-20180910Z-83f93f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "paho-mqtt" % "1.0-dt-20181109Z-49ae3e",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "paho-mqtt" % "1.0-dt-20181109Z-39c30c",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

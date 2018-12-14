@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait svgUnitConversion
-  extends /* unitType */ ScalablyTyped.runtime.StringDictionary[makerDotJsLib.Anon_ScaleConversion]
+  extends /* unitType */ org.scalablytyped.runtime.StringDictionary[makerDotJsLib.Anon_ScaleConversion]
 

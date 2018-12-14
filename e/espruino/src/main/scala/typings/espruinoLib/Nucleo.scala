@@ -16,5 +16,5 @@ trait Nucleo
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[Nucleo]
+org.scalablytyped.runtime.Instantiable0[Nucleo]
 

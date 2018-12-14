@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-localstorage/lib/adapters/localStorage", JSImport.Namespace)
 @js.native
 object libAdaptersLocalStorageMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       reduxDashLocalstorageLib.reduxDashLocalstorageMod.StorageAdapterCreator[stdLib.Storage]
     ]
 

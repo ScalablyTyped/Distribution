@@ -14,11 +14,11 @@ object mimeDashTypesMod extends js.Object {
   def lookup(filenameOrExt: java.lang.String): java.lang.String | mimeDashTypesLib.mimeDashTypesLibNumbers.`false` = js.native
   @js.native
   object extensions
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   
   @js.native
   object types
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
 }
 

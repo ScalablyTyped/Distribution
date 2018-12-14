@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-intl/locale-data/agq", JSImport.Namespace)
 @js.native
 object localeDashDataAgqMod
-  extends ScalablyTyped.runtime.TopLevel[reactDashIntlLib.ReactIntlNs.LocaleData]
+  extends org.scalablytyped.runtime.TopLevel[reactDashIntlLib.ReactIntlNs.LocaleData]
 

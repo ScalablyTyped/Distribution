@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TaglibLookup extends js.Object {
   var merged: markoLib.Anon_AttributeGroups = js.native
-  var taglibsById: ScalablyTyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderTaglibMod.default] = js.native
+  var taglibsById: org.scalablytyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderTaglibMod.default] = js.native
   def addTaglib(taglib: markoLib.srcCompilerTaglibDashLoaderTaglibMod.default): scala.Unit = js.native
   def forEachAttribute(
     tagName: java.lang.String,

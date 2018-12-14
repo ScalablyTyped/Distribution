@@ -20,5 +20,5 @@ trait SVGPathSegList extends js.Object {
 @JSGlobal("SVGPathSegList")
 @js.native
 object SVGPathSegList
-  extends ScalablyTyped.runtime.Instantiable0[SVGPathSegList]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPathSegList]
 

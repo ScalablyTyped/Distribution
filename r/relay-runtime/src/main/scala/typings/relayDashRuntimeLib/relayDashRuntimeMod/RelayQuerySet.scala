@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RelayQuerySet
-  extends /* queryName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* queryName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

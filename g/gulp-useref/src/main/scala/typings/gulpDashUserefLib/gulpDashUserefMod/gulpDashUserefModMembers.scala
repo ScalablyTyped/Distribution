@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-useref", JSImport.Namespace)
 @js.native
 object gulpDashUserefModMembers
-  extends ScalablyTyped.runtime.TopLevel[Useref]
+  extends org.scalablytyped.runtime.TopLevel[Useref]
 

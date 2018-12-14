@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IfUtils
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[IfUtilsFn] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[IfUtilsFn] {
   @JSName("ifDev")
   var ifDev_Original: IfUtilsFn = js.native
   @JSName("ifDevelopment")

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Lengths
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double]
 

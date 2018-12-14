@@ -10,7 +10,7 @@ trait IgNotifierHeaderTemplate
   extends /**
 	 * Option for IgNotifierHeaderTemplate
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Controls whether the popover renders a functional close button
   	 *

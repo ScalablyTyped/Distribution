@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait User extends js.Object {
   val active: scala.Boolean
-  val attributes: ScalablyTyped.runtime.StringDictionary[js.Any]
+  val attributes: org.scalablytyped.runtime.StringDictionary[js.Any]
   val displayname: java.lang.String
   val email: java.lang.String
   val firstname: java.lang.String

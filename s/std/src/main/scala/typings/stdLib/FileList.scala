@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait FileList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[File] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[File] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[File]]
   val length: scala.Double
   def item(index: scala.Double): File | scala.Null
@@ -17,5 +17,5 @@ trait FileList
 @JSGlobal("FileList")
 @js.native
 object FileList
-  extends ScalablyTyped.runtime.Instantiable0[FileList]
+  extends org.scalablytyped.runtime.Instantiable0[FileList]
 

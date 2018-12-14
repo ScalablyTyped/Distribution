@@ -19,7 +19,7 @@ trait tooltip extends js.Object {
   var $width: scala.Double = js.native
   var config: tooltipConfig = js.native
   var name: java.lang.String = js.native
-  var `type`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("$getSize")
   def $getSize(): js.Array[_] = js.native
   @JSName("$setSize")

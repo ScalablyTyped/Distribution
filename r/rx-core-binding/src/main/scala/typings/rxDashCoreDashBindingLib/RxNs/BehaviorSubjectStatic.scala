@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BehaviorSubjectStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* initialValue */ js.Object, BehaviorSubject[js.Object]]
+  extends org.scalablytyped.runtime.Instantiable1[/* initialValue */ js.Object, BehaviorSubject[js.Object]]
 

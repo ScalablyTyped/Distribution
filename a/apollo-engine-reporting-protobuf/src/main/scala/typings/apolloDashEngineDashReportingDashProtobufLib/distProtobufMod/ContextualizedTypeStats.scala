@@ -15,12 +15,12 @@ class ContextualizedTypeStats () extends IContextualizedTypeStats {
   def this(properties: IContextualizedTypeStats) = this()
   /** ContextualizedTypeStats perTypeStat. */
   @JSName("perTypeStat")
-  var perTypeStat_ContextualizedTypeStats: ScalablyTyped.runtime.StringDictionary[ITypeStat] = js.native
+  var perTypeStat_ContextualizedTypeStats: org.scalablytyped.runtime.StringDictionary[ITypeStat] = js.native
   /**
        * Converts this ContextualizedTypeStats to JSON.
        * @returns JSON object
        */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "ContextualizedTypeStats")
@@ -129,14 +129,14 @@ object ContextualizedTypeStats extends js.Object {
        * @param object Plain object
        * @returns ContextualizedTypeStats
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedTypeStats = js.native
+  def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedTypeStats = js.native
   /**
        * Creates a plain object from a ContextualizedTypeStats message. Also converts values to other types if specified.
        * @param message ContextualizedTypeStats
        * @param [options] Conversion options
        * @returns Plain object
        */
-  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedTypeStats): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedTypeStats): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a ContextualizedTypeStats message. Also converts values to other types if specified.
        * @param message ContextualizedTypeStats
@@ -146,12 +146,12 @@ object ContextualizedTypeStats extends js.Object {
   def toObject(
     message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ContextualizedTypeStats,
     options: protobufjsLib.protobufjsMod.IConversionOptions
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Verifies a ContextualizedTypeStats message.
        * @param message Plain object to verify
        * @returns `null` if valid, otherwise the reason why it is not
        */
-  def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+  def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
 }
 

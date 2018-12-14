@@ -100,9 +100,9 @@ class BlobClient protected () extends js.Object {
     data: webgmeLib.GmeCommonNs.Payload,
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]
   ): scala.Unit = js.native
-  def putFiles(o: ScalablyTyped.runtime.StringDictionary[webgmeLib.GmeCommonNs.Payload]): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
+  def putFiles(o: org.scalablytyped.runtime.StringDictionary[webgmeLib.GmeCommonNs.Payload]): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] = js.native
   def putFiles(
-    o: ScalablyTyped.runtime.StringDictionary[webgmeLib.GmeCommonNs.Payload],
+    o: org.scalablytyped.runtime.StringDictionary[webgmeLib.GmeCommonNs.Payload],
     callback: webgmeLib.GmeCommonNs.ResultCallback[js.Array[webgmeLib.GmeCommonNs.MetadataHash]]
   ): scala.Unit = js.native
   def putMetadata(metadataDescriptor: BlobMetadataDescriptor): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native

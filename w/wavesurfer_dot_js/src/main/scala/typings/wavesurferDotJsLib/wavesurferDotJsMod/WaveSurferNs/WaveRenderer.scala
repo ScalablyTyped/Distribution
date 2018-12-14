@@ -41,7 +41,7 @@ trait WaveRenderer
   def resetScroll(): scala.Unit = js.native
   def setHeight(height: scala.Double): scala.Boolean = js.native
   def setWidth(width: scala.Double): scala.Boolean = js.native
-  def style(el: stdLib.HTMLElement, styles: ScalablyTyped.runtime.StringDictionary[java.lang.String]): stdLib.HTMLElement = js.native
+  def style(el: stdLib.HTMLElement, styles: org.scalablytyped.runtime.StringDictionary[java.lang.String]): stdLib.HTMLElement = js.native
   def updateProgress(position: scala.Double): scala.Unit = js.native
   def updateSize(): scala.Unit = js.native
 }

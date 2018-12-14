@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CustomFunctionMappings")
 @js.native
 object CustomFunctionMappings
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Function]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function]
 

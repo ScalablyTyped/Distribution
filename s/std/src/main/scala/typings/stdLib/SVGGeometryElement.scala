@@ -19,5 +19,5 @@ trait SVGGeometryElement extends SVGGraphicsElement {
 @JSGlobal("SVGGeometryElement")
 @js.native
 object SVGGeometryElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGGeometryElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGGeometryElement]
 

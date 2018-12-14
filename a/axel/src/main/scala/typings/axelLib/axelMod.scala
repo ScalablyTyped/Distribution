@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("axel", JSImport.Namespace)
 @js.native
 object axelMod
-  extends ScalablyTyped.runtime.TopLevel[Axel]
+  extends org.scalablytyped.runtime.TopLevel[Axel]
 

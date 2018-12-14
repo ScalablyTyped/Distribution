@@ -13,5 +13,5 @@ trait SpeechSynthesisErrorEvent extends SpeechSynthesisEvent {
 @JSGlobal("SpeechSynthesisErrorEvent")
 @js.native
 object SpeechSynthesisErrorEvent
-  extends ScalablyTyped.runtime.Instantiable0[SpeechSynthesisErrorEvent]
+  extends org.scalablytyped.runtime.Instantiable0[SpeechSynthesisErrorEvent]
 

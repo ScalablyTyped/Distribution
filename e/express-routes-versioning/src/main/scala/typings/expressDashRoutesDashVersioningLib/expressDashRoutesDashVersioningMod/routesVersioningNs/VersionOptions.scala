@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait VersionOptions
-  extends /* versionKey */ ScalablyTyped.runtime.StringDictionary[expressLib.expressMod.eNs.Handler]
+  extends /* versionKey */ org.scalablytyped.runtime.StringDictionary[expressLib.expressMod.eNs.Handler]
 

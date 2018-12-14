@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("windows-1251", JSImport.Namespace)
 @js.native
 object windowsDash1251ModMembers
-  extends ScalablyTyped.runtime.TopLevel[windowsDash1251Lib.Anon_Encode]
+  extends org.scalablytyped.runtime.TopLevel[windowsDash1251Lib.Anon_Encode]
 

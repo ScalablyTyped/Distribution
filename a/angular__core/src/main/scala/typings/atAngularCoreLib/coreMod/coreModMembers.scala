@@ -390,7 +390,7 @@ object coreModMembers extends js.Object {
   def ɵangular_packages_core_core_f(providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider]): js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider] = js.native
   def ɵangular_packages_core_core_g(): java.lang.String = js.native
   def ɵangular_packages_core_core_h(
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
@@ -398,8 +398,8 @@ object coreModMembers extends js.Object {
     view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
   def ɵangular_packages_core_core_i[T](
-    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any]],
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    TemplateRefToken: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any]],
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
@@ -502,8 +502,8 @@ object coreModMembers extends js.Object {
     selector: java.lang.String,
     componentType: atAngularCoreLib.srcTypeMod.Type[_],
     viewDefFactory: atAngularCoreLib.srcViewTypesMod.ViewDefinitionFactory,
-    inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ngContentSelectors: js.Array[java.lang.String]
   ): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[_] = js.native
   def ɵccf(
@@ -511,7 +511,7 @@ object coreModMembers extends js.Object {
     componentType: atAngularCoreLib.srcTypeMod.Type[_],
     viewDefFactory: atAngularCoreLib.srcViewTypesMod.ViewDefinitionFactory,
     inputs: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ngContentSelectors: js.Array[java.lang.String]
   ): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[_] = js.native
   def ɵclearOverrides(): scala.Unit = js.native
@@ -576,7 +576,7 @@ object coreModMembers extends js.Object {
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -587,8 +587,8 @@ object coreModMembers extends js.Object {
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -600,7 +600,7 @@ object coreModMembers extends js.Object {
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
     props: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -617,7 +617,7 @@ object coreModMembers extends js.Object {
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -626,8 +626,8 @@ object coreModMembers extends js.Object {
     childCount: scala.Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    props: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdid(
     checkIndex: scala.Double,
@@ -637,7 +637,7 @@ object coreModMembers extends js.Object {
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
     props: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵdirectiveInject[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T = js.native
   def ɵdirectiveInject[T](
@@ -929,56 +929,27 @@ object coreModMembers extends js.Object {
   def ɵelementStylingApply(index: scala.Double): scala.Unit = js.native
   def ɵelementStylingApply(index: scala.Double, directiveIndex: scala.Double): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double): scala.Unit = js.native
-  def ɵelementStylingMap[T](index: scala.Double, classes: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: scala.Null,
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double, classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
   def ɵelementStylingMap[T](
     index: scala.Double,
     classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](
     index: scala.Double,
     classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any],
     directiveIndex: scala.Double
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](
@@ -991,17 +962,6 @@ object coreModMembers extends js.Object {
   def ɵelementStylingMap[T](
     index: scala.Double,
     classes: java.lang.String,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: java.lang.String,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: java.lang.String,
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](
@@ -1010,12 +970,45 @@ object coreModMembers extends js.Object {
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
     directiveIndex: scala.Double
   ): scala.Unit = js.native
-  def ɵelementStylingMap[T](index: scala.Double, classes: java.lang.String, styles: scala.Null, directiveIndex: scala.Double): scala.Unit = js.native
-  def ɵelementStylingMap[T](index: scala.Double, classes: scala.Null, styles: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def ɵelementStylingMap[T](
     index: scala.Double,
-    classes: scala.Null,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
+    classes: java.lang.String,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: java.lang.String,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any],
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](index: scala.Double, classes: java.lang.String, styles: scala.Null, directiveIndex: scala.Double): scala.Unit = js.native
+  def ɵelementStylingMap[T](index: scala.Double, classes: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any],
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: scala.Null,
     directiveIndex: scala.Double
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double, classes: scala.Null, styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
@@ -1023,6 +1016,17 @@ object coreModMembers extends js.Object {
     index: scala.Double,
     classes: scala.Null,
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: scala.Null,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: scala.Null,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any],
     directiveIndex: scala.Double
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double, classes: scala.Null, styles: scala.Null, directiveIndex: scala.Double): scala.Unit = js.native
@@ -1047,7 +1051,7 @@ object coreModMembers extends js.Object {
   def ɵi18nExp[T](expression: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
   def ɵi18nPostprocess(
     message: java.lang.String,
-    replacements: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    replacements: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ): java.lang.String = js.native
   def ɵi18nStart(index: scala.Double, message: java.lang.String): scala.Unit = js.native
   def ɵi18nStart(index: scala.Double, message: java.lang.String, subTemplateIndex: scala.Double): scala.Unit = js.native
@@ -1246,7 +1250,7 @@ object coreModMembers extends js.Object {
   def ɵpipeBind3(index: scala.Double, slotOffset: scala.Double, v1: js.Any, v2: js.Any, v3: js.Any): js.Any = js.native
   def ɵpipeBind4(index: scala.Double, slotOffset: scala.Double, v1: js.Any, v2: js.Any, v3: js.Any, v4: js.Any): js.Any = js.native
   def ɵpipeBindV(index: scala.Double, slotOffset: scala.Double, values: js.Array[_]): js.Any = js.native
-  def ɵpod(checkIndex: scala.Double, propToIndex: ScalablyTyped.runtime.StringDictionary[scala.Double]): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def ɵpod(checkIndex: scala.Double, propToIndex: org.scalablytyped.runtime.StringDictionary[scala.Double]): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵppd(checkIndex: scala.Double, argCount: scala.Double): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵprd(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
@@ -1476,7 +1480,7 @@ object coreModMembers extends js.Object {
   def ɵqud(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     id: scala.Double,
-    bindings: ScalablyTyped.runtime.StringDictionary[atAngularCoreLib.srcViewTypesMod.QueryBindingType]
+    bindings: org.scalablytyped.runtime.StringDictionary[atAngularCoreLib.srcViewTypesMod.QueryBindingType]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵquery[T](memoryIndex: scala.Double, predicate: atAngularCoreLib.srcTypeMod.Type[_]): atAngularCoreLib.srcRender3QueryMod.QueryList[T] = js.native
   def ɵquery[T](memoryIndex: scala.Double, predicate: atAngularCoreLib.srcTypeMod.Type[_], descend: scala.Boolean): atAngularCoreLib.srcRender3QueryMod.QueryList[T] = js.native
@@ -1545,26 +1549,26 @@ object coreModMembers extends js.Object {
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: js.Array[_],
     ctorParameters: js.Array[_],
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def ɵsetClassMetadata(
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: js.Array[_],
     ctorParameters: scala.Null,
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def ɵsetClassMetadata(`type`: atAngularCoreLib.srcTypeMod.Type[_], decorators: scala.Null, ctorParameters: js.Array[_]): scala.Unit = js.native
   def ɵsetClassMetadata(
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: scala.Null,
     ctorParameters: js.Array[_],
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def ɵsetClassMetadata(
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: scala.Null,
     ctorParameters: scala.Null,
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def ɵsetCurrentInjector(): js.UndefOr[atAngularCoreLib.srcDiInjectorMod.Injector | scala.Null] = js.native
   def ɵsetCurrentInjector(injector: atAngularCoreLib.srcDiInjectorMod.Injector): js.UndefOr[atAngularCoreLib.srcDiInjectorMod.Injector | scala.Null] = js.native

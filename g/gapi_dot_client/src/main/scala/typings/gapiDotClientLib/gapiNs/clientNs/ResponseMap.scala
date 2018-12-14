@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ResponseMap[T]
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[Response[T]]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[Response[T]]
 

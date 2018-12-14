@@ -10,7 +10,7 @@ trait InputValue extends js.Object {
   /**
        * Any other data about this input
        */
-  var data: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var data: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * The text to show for the display of this value
        */

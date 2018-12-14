@@ -15,7 +15,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 * see http://angular-formly.com/#/example/other/unique-value-async-validation
   		 */
   var asyncValidators: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | IExpressionFunction | IValidator]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | IExpressionFunction | IValidator]
   ] = js.undefined
   /**
   		 * You can specify your own class that will be applied to the formly-field directive (or ng-form of
@@ -37,7 +37,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 *
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#data-object
   		 */
-  var data: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
   		 * Use defaultValue to initialize it the model. If this is provided and the value of the
   		 * model at compile-time is undefined, then the value of the model will be assigned to defaultValue.
@@ -45,7 +45,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#defaultvalue-any
   		 */
   var defaultValue: js.UndefOr[js.Any] = js.undefined
-  var elementAttributes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var elementAttributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
   		 * An object where the key is a property to be set on the main field config and the value is an
   		 * expression used to assign that property. The value is a formly expressions. The returned value is
@@ -54,7 +54,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#expressionproperties-object
   		 */
   var expressionProperties: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | IExpressionFunction | IValidator]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | IExpressionFunction | IValidator]
   ] = js.undefined
   //ALL PROPERTIES BELOW ARE ADDED (So you should not be setting them yourself.)
   /**
@@ -121,7 +121,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 *
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#model-object--string
   		 */
-  var model: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var model: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
   		 * Allows you to take advantage of ng-model-options directive. Formly's built-in templateManipulator (see
   		 * below) will add this attribute to your ng-model element automatically if this property exists. Note,
@@ -156,7 +156,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 *
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#ngmodelelattrs-object
   		 */
-  var ngModelElAttrs: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var ngModelElAttrs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
   		 * Used to tell angular-formly to not attempt to add the formControl property to your object. This is useful
   		 * for things like validation, but not necessary if your "field" doesn't use ng-model (if it's just a horizontal
@@ -248,7 +248,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#validators-object
   		 */
   var validators: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | IExpressionFunction | IValidator]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | IExpressionFunction | IValidator]
   ] = js.undefined
   /**
   		 * This is a getter/setter function for the value that your field is representing. Useful when using getterSetter: true

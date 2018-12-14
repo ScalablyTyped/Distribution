@@ -19,7 +19,7 @@ trait formConfig extends js.Object {
   var datatype: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var elements: js.UndefOr[js.Array[_]] = js.undefined
-  var elementsConfig: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var elementsConfig: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var gravity: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined

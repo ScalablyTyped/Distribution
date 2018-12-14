@@ -11,7 +11,7 @@ class ReflectionGroupSerializer ()
   extends typedocLib.distLibSerializationComponentsMod.SerializerComponent[typedocLib.distLibModelsReflectionGroupMod.ReflectionGroup] {
   var serializeGroup: js.Any = js.native
   @JSName("serializeGroupSymbol")
-  var serializeGroupSymbol_ReflectionGroupSerializer: ScalablyTyped.runtime.Instantiable2[
+  var serializeGroupSymbol_ReflectionGroupSerializer: org.scalablytyped.runtime.Instantiable2[
     /* title */ java.lang.String, 
     /* kind */ typedocLib.distLibModelsReflectionsAbstractMod.ReflectionKind, 
     typedocLib.distLibModelsReflectionGroupMod.ReflectionGroup

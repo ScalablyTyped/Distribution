@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/core/snap/IndexMap", "IndexMap")
 @js.native
 class IndexMap protected () extends js.Object {
-  def this(`indexes_`: ScalablyTyped.runtime.StringDictionary[
+  def this(`indexes_`: org.scalablytyped.runtime.StringDictionary[
       (atFirebaseDatabaseLib.distSrcCoreUtilSortedMapMod.SortedMap[
         atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.NamedNode, 
         atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node
       ]) | js.Object
-    ], `indexSet_`: ScalablyTyped.runtime.StringDictionary[atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index]) = this()
+    ], `indexSet_`: org.scalablytyped.runtime.StringDictionary[atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index]) = this()
   var `indexSet_`: js.Any = js.native
   var `indexes_`: js.Any = js.native
   /**

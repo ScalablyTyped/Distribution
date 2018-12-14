@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("npm", JSImport.Namespace)
 @js.native
 object npmModMembers
-  extends ScalablyTyped.runtime.TopLevel[npmLib.npmMod.NPMNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[npmLib.npmMod.NPMNs.Static]
 

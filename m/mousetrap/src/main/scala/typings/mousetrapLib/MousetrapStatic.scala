@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MousetrapStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* el */ stdLib.Element, MousetrapInstance] {
+  extends org.scalablytyped.runtime.Instantiable1[/* el */ stdLib.Element, MousetrapInstance] {
   def apply(el: stdLib.Element): MousetrapInstance = js.native
-  def addKeycodes(keycodes: ScalablyTyped.runtime.NumberDictionary[java.lang.String]): scala.Unit = js.native
+  def addKeycodes(keycodes: org.scalablytyped.runtime.NumberDictionary[java.lang.String]): scala.Unit = js.native
   def bind(
     keys: java.lang.String,
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait InputValuesQuery extends js.Object {
-  var currentValues: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var currentValues: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The input values to return on input, and the result from the consumer on output.
        */

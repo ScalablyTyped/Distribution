@@ -13,8 +13,8 @@ trait MediaStreamAudioDestinationNode extends AudioNode {
 @JSGlobal("MediaStreamAudioDestinationNode")
 @js.native
 object MediaStreamAudioDestinationNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ AudioContext, MediaStreamAudioDestinationNode]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ AudioContext, MediaStreamAudioDestinationNode]
+     with org.scalablytyped.runtime.Instantiable2[
       /* context */ AudioContext, 
       /* options */ AudioNodeOptions, 
       MediaStreamAudioDestinationNode

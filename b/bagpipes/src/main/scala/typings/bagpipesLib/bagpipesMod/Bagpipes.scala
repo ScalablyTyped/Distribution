@@ -16,7 +16,7 @@ class Bagpipes () extends js.Object {
        */
   var fittingTypes: FittingTypesMap = js.native
   /** The pipes */
-  var pipes: ScalablyTyped.runtime.StringDictionary[Pipe] = js.native
+  var pipes: org.scalablytyped.runtime.StringDictionary[Pipe] = js.native
   /**
        * Creates a `Fitting`
        * @throws {Error} Throws error if an invalid (not defined) fitting typ is used

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ActionFactoriesMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ScopedActionFactory[_] | reduxLib.reduxMod.ActionCreator[_] | ActionFactoriesMap]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ScopedActionFactory[_] | reduxLib.reduxMod.ActionCreator[_] | ActionFactoriesMap]
 

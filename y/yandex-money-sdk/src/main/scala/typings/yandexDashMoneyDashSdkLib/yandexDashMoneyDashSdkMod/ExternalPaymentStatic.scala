@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ExternalPaymentStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* instanceId */ java.lang.String, ExternalPayment] {
+  extends org.scalablytyped.runtime.Instantiable1[/* instanceId */ java.lang.String, ExternalPayment] {
   def getInstanceId(
     clientId: java.lang.String,
     callback: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.ExternalPaymentNs.GetInstanceIdResult]

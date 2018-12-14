@@ -16,7 +16,7 @@ trait NodeSpec extends js.Object {
   /**
      * The attributes that nodes of this type get.
      */
-  var attrs: js.UndefOr[ScalablyTyped.runtime.StringDictionary[AttributeSpec] | scala.Null] = js.undefined
+  var attrs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[AttributeSpec] | scala.Null] = js.undefined
   /**
      * Can be used to indicate that this node contains code, which
      * causes some commands to behave differently.

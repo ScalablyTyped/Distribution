@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/map", JSImport.Namespace)
 @js.native
 object fnMapMod
-  extends ScalablyTyped.runtime.TopLevel[nodeLib.MapConstructor]
+  extends org.scalablytyped.runtime.TopLevel[nodeLib.MapConstructor]
 

@@ -15,11 +15,11 @@ object reactDashHyperscriptMod extends js.Object {
     componentOrTag: (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[js.Object] | java.lang.String,
     children: js.Array[reactDashHyperscriptLib.Element] | reactDashHyperscriptLib.Element
   ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def apply[P /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](
+  def apply[P /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
     componentOrTag: (reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[P] | java.lang.String,
     properties: P
   ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
-  def apply[P /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](
+  def apply[P /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
     componentOrTag: (reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[P] | java.lang.String,
     properties: P,
     children: js.Array[reactDashHyperscriptLib.Element] | reactDashHyperscriptLib.Element

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait DateTimeFormats
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[DateTimeFormat]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[DateTimeFormat]
 

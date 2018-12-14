@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait KnockoutBindingHandlers
-  extends /* bindingHandler */ ScalablyTyped.runtime.StringDictionary[KnockoutBindingHandler] {
+  extends /* bindingHandler */ org.scalablytyped.runtime.StringDictionary[KnockoutBindingHandler] {
   var attr: KnockoutBindingHandler
   var checked: KnockoutBindingHandler
   // Working with form fields

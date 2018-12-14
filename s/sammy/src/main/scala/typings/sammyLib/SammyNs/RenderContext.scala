@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RenderContext
   extends Object
-     with ScalablyTyped.runtime.Instantiable1[/* event_context */ js.Any, js.Any] {
+     with org.scalablytyped.runtime.Instantiable1[/* event_context */ js.Any, js.Any] {
   def appendTo(selector: java.lang.String): RenderContext = js.native
   def collect(array: js.Array[_], callback: js.Function): RenderContext = js.native
   def collect(array: js.Array[_], callback: js.Function, now: scala.Boolean): RenderContext = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("animejs", "easings")
 @js.native
 object easings
-  extends /* EasingFunction */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* t */ scala.Double, _]]
+  extends /* EasingFunction */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* t */ scala.Double, _]]
 

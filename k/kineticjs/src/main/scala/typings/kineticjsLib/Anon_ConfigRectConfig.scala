@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ConfigRectConfig
-  extends ScalablyTyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.RectConfig, kineticjsLib.KineticNs.IRect]
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.RectConfig, kineticjsLib.KineticNs.IRect]
 

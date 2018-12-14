@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IColumnStatic
-  extends ScalablyTyped.runtime.Instantiable6[
+  extends org.scalablytyped.runtime.Instantiable6[
       /* config */ IGridOptions, 
       /* $scope */ IGridScope, 
       /* grid */ IGridInstance, 

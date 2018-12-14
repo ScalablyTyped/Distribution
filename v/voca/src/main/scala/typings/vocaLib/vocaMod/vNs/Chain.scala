@@ -157,9 +157,9 @@ trait Chain extends js.Object {
   def titleCase(): Chain = js.native
   def titleCase(ignoreWordsopt: js.Array[java.lang.String]): Chain = js.native
   def tr(): Chain = js.native
-  def tr(from: ScalablyTyped.runtime.StringDictionary[java.lang.String]): Chain = js.native
   def tr(from: java.lang.String): Chain = js.native
   def tr(from: java.lang.String, to: java.lang.String): Chain = js.native
+  def tr(from: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Chain = js.native
   def trim(): Chain = js.native
   def trim(whitespace: java.lang.String): Chain = js.native
   def trimLeft(): Chain = js.native

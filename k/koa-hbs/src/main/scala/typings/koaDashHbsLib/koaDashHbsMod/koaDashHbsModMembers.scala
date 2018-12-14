@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("koa-hbs", JSImport.Namespace)
 @js.native
 object koaDashHbsModMembers
-  extends ScalablyTyped.runtime.TopLevel[Hbs]
+  extends org.scalablytyped.runtime.TopLevel[Hbs]
 

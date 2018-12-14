@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait ViewDocument[D] extends IdentifiedDocument {
-  var views: ScalablyTyped.runtime.StringDictionary[View[D]]
+  var views: org.scalablytyped.runtime.StringDictionary[View[D]]
 }
 

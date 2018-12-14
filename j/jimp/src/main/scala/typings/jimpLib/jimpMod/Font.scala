@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait Font extends js.Object {
-  var chars: ScalablyTyped.runtime.StringDictionary[FontChar]
+  var chars: org.scalablytyped.runtime.StringDictionary[FontChar]
   var common: FontCommon
   var info: FontInfo
-  var kernings: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[scala.Double]]
+  var kernings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]]
   var pages: coreDashJsLib.Array[java.lang.String]
 }
 

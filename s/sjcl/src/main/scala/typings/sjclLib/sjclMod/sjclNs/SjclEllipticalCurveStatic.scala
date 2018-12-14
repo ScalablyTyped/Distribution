@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SjclEllipticalCurveStatic
-  extends ScalablyTyped.runtime.Instantiable6[
+  extends org.scalablytyped.runtime.Instantiable6[
       /* Field */ BigNumber, 
       /* r */ BigNumber, 
       /* a */ BigNumber, 

@@ -19,7 +19,7 @@ trait RTCRtpReceiver extends js.Object {
 @JSGlobal("RTCRtpReceiver")
 @js.native
 object RTCRtpReceiver
-  extends ScalablyTyped.runtime.Instantiable0[RTCRtpReceiver] {
+  extends org.scalablytyped.runtime.Instantiable0[RTCRtpReceiver] {
   def getCapabilities(kind: java.lang.String): xtermLib.RTCRtpCapabilities | scala.Null = js.native
 }
 

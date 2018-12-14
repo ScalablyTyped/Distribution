@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Driver
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       /* driver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
       axeDashWebdriverjsLib.axeDashWebdriverjsMod.AxeBuilder
     ] {

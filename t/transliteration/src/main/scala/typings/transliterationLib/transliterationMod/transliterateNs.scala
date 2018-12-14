@@ -18,7 +18,7 @@ object transliterateNs extends js.Object {
              * Custom replacement of the strings before transliteration
              */
     var replace: js.UndefOr[
-        js.Array[js.Array[java.lang.String]] | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+        js.Array[js.Array[java.lang.String]] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
       ] = js.undefined
     /**
              * Unicode characters that are not in the database will be replaced with `unknown`

@@ -10,7 +10,7 @@ trait IgTreeGridUpdating
   extends /**
 	 * Option for igTreeGridUpdating
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * This option has been deprecated as of the 2017.2 Volume release.
   	 * Specifies the label of the add child button in touch environment. Use option [locale.addChildButtonLabel](ui.igtreegridupdating#options:locale.addChildButtonLabel).

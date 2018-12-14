@@ -23,7 +23,7 @@ trait Market extends js.Object {
   /**
        * An object with your active and inactive buy/sell orders on the market.
        */
-  var orders: ScalablyTyped.runtime.StringDictionary[Order] = js.native
+  var orders: org.scalablytyped.runtime.StringDictionary[Order] = js.native
   /**
        * An array of the last 100 outgoing transactions from your terminals
        */

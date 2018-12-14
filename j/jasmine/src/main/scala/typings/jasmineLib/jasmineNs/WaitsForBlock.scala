@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WaitsForBlock
   extends Block
-     with ScalablyTyped.runtime.Instantiable5[
+     with org.scalablytyped.runtime.Instantiable5[
       /* env */ Env, 
       /* timeout */ scala.Double, 
       /* latchFunction */ SpecFunction, 

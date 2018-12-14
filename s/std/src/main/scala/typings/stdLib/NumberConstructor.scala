@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NumberConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Number]
-     with ScalablyTyped.runtime.Instantiable1[/* value */ js.Any, Number] {
+  extends org.scalablytyped.runtime.Instantiable0[Number]
+     with org.scalablytyped.runtime.Instantiable1[/* value */ js.Any, Number] {
   /**
        * The value of Number.EPSILON is the difference between 1 and the smallest value greater than 1
        * that is representable as a Number value, which is approximately:

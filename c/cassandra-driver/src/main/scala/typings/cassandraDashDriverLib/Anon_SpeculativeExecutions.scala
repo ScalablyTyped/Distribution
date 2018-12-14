@@ -12,7 +12,7 @@ trait Anon_SpeculativeExecutions extends js.Object {
   var queriedHost: cassandraDashDriverLib.cassandraDashDriverMod.Host
   var speculativeExecutions: scala.Double
   var traceId: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Uuid
-  var triedHosts: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var triedHosts: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var warnings: js.Array[java.lang.String]
 }
 

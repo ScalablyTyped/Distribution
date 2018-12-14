@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Operations
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[Operation]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[Operation]
 

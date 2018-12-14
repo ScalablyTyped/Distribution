@@ -27,16 +27,6 @@ class Field protected () extends FieldBase {
        * @param [extend] Extended type if different from parent
        * @param [options] Declared options
        */
-  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       */
   def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String) = this()
   /**
        * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
@@ -47,27 +37,7 @@ class Field protected () extends FieldBase {
        * @param [extend] Extended type if different from parent
        * @param [options] Declared options
        */
-  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: ScalablyTyped.runtime.StringDictionary[js.Any], extend: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  /**
-       * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       */
-  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: ScalablyTyped.runtime.StringDictionary[js.Any], extend: java.lang.String) = this()
-  /**
-       * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
-       * @param name Unique name within its namespace
-       * @param id Unique id within its namespace
-       * @param type Value type
-       * @param [rule="optional"] Field rule
-       * @param [extend] Extended type if different from parent
-       * @param [options] Declared options
-       */
-  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
        * @param name Unique name within its namespace
@@ -87,7 +57,7 @@ class Field protected () extends FieldBase {
        * @param [extend] Extended type if different from parent
        * @param [options] Declared options
        */
-  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: ScalablyTyped.runtime.StringDictionary[js.Any], extend: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
        * @param name Unique name within its namespace
@@ -97,7 +67,7 @@ class Field protected () extends FieldBase {
        * @param [extend] Extended type if different from parent
        * @param [options] Declared options
        */
-  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: ScalablyTyped.runtime.StringDictionary[js.Any], extend: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: java.lang.String) = this()
   /**
        * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
        * @param name Unique name within its namespace
@@ -107,7 +77,7 @@ class Field protected () extends FieldBase {
        * @param [extend] Extended type if different from parent
        * @param [options] Declared options
        */
-  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
        * @param name Unique name within its namespace
@@ -117,7 +87,37 @@ class Field protected () extends FieldBase {
        * @param [extend] Extended type if different from parent
        * @param [options] Declared options
        */
-  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: java.lang.String, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  /**
+       * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
+       * @param name Unique name within its namespace
+       * @param id Unique id within its namespace
+       * @param type Value type
+       * @param [rule="optional"] Field rule
+       * @param [extend] Extended type if different from parent
+       * @param [options] Declared options
+       */
+  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: java.lang.String, extend: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  /**
+       * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
+       * @param name Unique name within its namespace
+       * @param id Unique id within its namespace
+       * @param type Value type
+       * @param [rule="optional"] Field rule
+       * @param [extend] Extended type if different from parent
+       * @param [options] Declared options
+       */
+  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  /**
+       * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
+       * @param name Unique name within its namespace
+       * @param id Unique id within its namespace
+       * @param type Value type
+       * @param [rule="optional"] Field rule
+       * @param [extend] Extended type if different from parent
+       * @param [options] Declared options
+       */
+  def this(name: java.lang.String, id: scala.Double, `type`: java.lang.String, rule: org.scalablytyped.runtime.StringDictionary[js.Any], extend: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /** Determines whether this field is packed. Only relevant when repeated and working with proto2. */
   val packed: scala.Boolean = js.native
 }

@@ -13,5 +13,5 @@ class namespaced ()
      * Creates a new instance
      * @returns {Forge} a new instance.
      */
-ScalablyTyped.runtime.Instantiable0[Forge]
+org.scalablytyped.runtime.Instantiable0[Forge]
 

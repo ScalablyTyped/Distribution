@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait BasicReq extends js.Object {
   val isLogging: scala.Boolean
-  val params: ScalablyTyped.runtime.StringDictionary[js.Any]
+  val params: org.scalablytyped.runtime.StringDictionary[js.Any]
   val systemKey: java.lang.String
   val systemSecret: java.lang.String
   val userEmail: java.lang.String

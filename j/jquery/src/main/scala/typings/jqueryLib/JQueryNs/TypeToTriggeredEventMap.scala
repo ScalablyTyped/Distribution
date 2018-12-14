@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 // #endregion
 
 trait TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget]
-  extends /* type */ ScalablyTyped.runtime.StringDictionary[TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]] {
+  extends /* type */ org.scalablytyped.runtime.StringDictionary[TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]] {
   // FocusEvent
   var blur: BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
   // Event

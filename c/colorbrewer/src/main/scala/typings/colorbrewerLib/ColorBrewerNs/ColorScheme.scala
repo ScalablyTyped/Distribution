@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ColorScheme
-  extends /* n */ ScalablyTyped.runtime.NumberDictionary[js.Array[java.lang.String]]
+  extends /* n */ org.scalablytyped.runtime.NumberDictionary[js.Array[java.lang.String]]
 

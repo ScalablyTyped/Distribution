@@ -14,5 +14,5 @@ trait VRDisplayEvent extends Event {
 @JSGlobal("VRDisplayEvent")
 @js.native
 object VRDisplayEvent
-  extends ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ VRDisplayEventInit, VRDisplayEvent]
+  extends org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ VRDisplayEventInit, VRDisplayEvent]
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ValuesICustomBar
-  extends ScalablyTyped.runtime.Instantiable0[teechartLib.TeeNs.ICustomBar]
-     with ScalablyTyped.runtime.Instantiable1[/* values */ js.Array[scala.Double], teechartLib.TeeNs.ICustomBar]
+  extends org.scalablytyped.runtime.Instantiable0[teechartLib.TeeNs.ICustomBar]
+     with org.scalablytyped.runtime.Instantiable1[/* values */ js.Array[scala.Double], teechartLib.TeeNs.ICustomBar]
 

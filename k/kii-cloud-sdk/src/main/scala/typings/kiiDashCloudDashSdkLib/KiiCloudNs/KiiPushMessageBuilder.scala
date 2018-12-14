@@ -82,7 +82,7 @@ class KiiPushMessageBuilder protected () extends js.Object {
            *
            * @return builder instance.
            */
-  def apnsData(data: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]): KiiPushMessageBuilder = js.native
+  def apnsData(data: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]): KiiPushMessageBuilder = js.native
   /**
            * Set sound for APNS subscribers.
            * If this method is not called, no sound is applied.
@@ -154,7 +154,7 @@ class KiiPushMessageBuilder protected () extends js.Object {
            *
            * @return builder instance.
            */
-  def gcmData(data: ScalablyTyped.runtime.StringDictionary[java.lang.String]): KiiPushMessageBuilder = js.native
+  def gcmData(data: org.scalablytyped.runtime.StringDictionary[java.lang.String]): KiiPushMessageBuilder = js.native
   /**
            * Set delay_while_idle for GCM subscribers.
            * If this method is not called, no delay_while_idle is applied.
@@ -193,7 +193,7 @@ class KiiPushMessageBuilder protected () extends js.Object {
            *
            * @return builder instance.
            */
-  def jpushData(data: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]): KiiPushMessageBuilder = js.native
+  def jpushData(data: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]): KiiPushMessageBuilder = js.native
   /**
            * Set specific data for MQTT subscribers.
            * If this method is not called, no specific data is not applied
@@ -205,7 +205,7 @@ class KiiPushMessageBuilder protected () extends js.Object {
            *
            * @return builder instance.
            */
-  def mqttData(data: ScalablyTyped.runtime.StringDictionary[java.lang.String]): KiiPushMessageBuilder = js.native
+  def mqttData(data: org.scalablytyped.runtime.StringDictionary[java.lang.String]): KiiPushMessageBuilder = js.native
   /**
            * Indicate whether send this message to development environment.
            * If this method is not called, true will be applied as default.

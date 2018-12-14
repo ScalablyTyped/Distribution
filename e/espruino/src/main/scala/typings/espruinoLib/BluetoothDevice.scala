@@ -16,7 +16,7 @@ trait BluetoothDevice
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[BluetoothDevice] {
+org.scalablytyped.runtime.Instantiable0[BluetoothDevice] {
   /**
        * <p><strong>Note:</strong> This is only available on some devices</p>
        * 

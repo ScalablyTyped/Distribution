@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Navigators[TState]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Navigator[TState]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Navigator[TState]]
 

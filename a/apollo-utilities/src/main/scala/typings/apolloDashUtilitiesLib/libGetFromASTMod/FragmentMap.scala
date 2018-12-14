@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FragmentMap
-  extends /* fragmentName */ ScalablyTyped.runtime.StringDictionary[graphqlLib.languageAstMod.FragmentDefinitionNode]
+  extends /* fragmentName */ org.scalablytyped.runtime.StringDictionary[graphqlLib.languageAstMod.FragmentDefinitionNode]
 

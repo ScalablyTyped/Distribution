@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rest/interceptor/pathPrefix", JSImport.Namespace)
 @js.native
 object interceptorPathPrefixModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       restLib.restMod.restNs.Interceptor[restLib.interceptorPathPrefixMod.pathPrefixNs.Config]
     ]
 

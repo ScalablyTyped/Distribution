@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Pkg extends js.Object {
   var path: java.lang.String
-  var pkg: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var pkg: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

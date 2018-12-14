@@ -122,7 +122,7 @@ trait IProvider extends js.Object {
       _
     ]
   ): IProvider = js.native
-  def setRestangularFields(fields: ScalablyTyped.runtime.StringDictionary[java.lang.String]): IProvider = js.native
+  def setRestangularFields(fields: org.scalablytyped.runtime.StringDictionary[java.lang.String]): IProvider = js.native
   def setSelfLinkAbsoluteUrl(value: scala.Boolean): IProvider = js.native
   def setTransformOnlyServerElements(active: scala.Boolean): IProvider = js.native
   def setUseCannonicalId(useCannonicalId: scala.Boolean): IProvider = js.native

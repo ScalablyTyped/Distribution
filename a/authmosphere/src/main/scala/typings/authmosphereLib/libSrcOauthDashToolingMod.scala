@@ -45,7 +45,7 @@ object libSrcOauthDashToolingMod extends js.Object {
     authorizationEndpoint: java.lang.String,
     redirectUri: java.lang.String,
     clientId: java.lang.String,
-    queryParams: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    queryParams: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): java.lang.String = js.native
   /**
    * Requests a token based on the given configuration (which specifies the grant type and corresponding parameters).

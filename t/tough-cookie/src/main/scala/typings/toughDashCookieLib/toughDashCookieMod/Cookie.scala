@@ -35,7 +35,7 @@ class Cookie () extends js.Object {
   def expiryTime(now: scala.Double): scala.Double = js.native
   def setExpires(String: java.lang.String): scala.Unit = js.native
   def setMaxAge(number: scala.Double): scala.Unit = js.native
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def validate(): scala.Boolean | java.lang.String = js.native
 }
 

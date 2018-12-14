@@ -1247,5 +1247,5 @@ trait Window
 @JSGlobal("Window")
 @js.native
 object Window
-  extends ScalablyTyped.runtime.Instantiable0[Window]
+  extends org.scalablytyped.runtime.Instantiable0[Window]
 

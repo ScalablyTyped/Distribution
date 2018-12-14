@@ -16,7 +16,7 @@ object semigroupNs extends js.Object {
   val semigroupVoid: fpDashTsLib.libSemigroupMod.Semigroup[scala.Unit] = js.native
   def fold[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): js.Function1[/* a */ A, js.Function1[/* as */ fpDashTsLib.libArrayMod.Global.Array[A], A]] = js.native
   def getArraySemigroup[A](): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
-  def getDictionarySemigroup[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[ScalablyTyped.runtime.StringDictionary[A]] = js.native
+  def getDictionarySemigroup[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[org.scalablytyped.runtime.StringDictionary[A]] = js.native
   def getDualSemigroup[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[A] = js.native
   def getFirstSemigroup[A](): fpDashTsLib.libSemigroupMod.Semigroup[A] = js.native
   def getFunctionSemigroup[S](S: fpDashTsLib.libSemigroupMod.Semigroup[S]): js.Function0[fpDashTsLib.libSemigroupMod.Semigroup[js.Function1[/* a */ _, S]]] = js.native
@@ -25,6 +25,6 @@ object semigroupNs extends js.Object {
   def getMeetSemigroup[A](O: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libSemigroupMod.Semigroup[A] = js.native
   def getObjectSemigroup[A /* <: js.Object */](): fpDashTsLib.libSemigroupMod.Semigroup[A] = js.native
   def getProductSemigroup[A, B](SA: fpDashTsLib.libSemigroupMod.Semigroup[A], SB: fpDashTsLib.libSemigroupMod.Semigroup[B]): fpDashTsLib.libSemigroupMod.Semigroup[js.Tuple2[A, B]] = js.native
-  def getRecordSemigroup[O /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](semigroups: fpDashTsLib.fpDashTsLibStrings.getRecordSemigroup with O): fpDashTsLib.libSemigroupMod.Semigroup[O] = js.native
+  def getRecordSemigroup[O /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](semigroups: fpDashTsLib.fpDashTsLibStrings.getRecordSemigroup with O): fpDashTsLib.libSemigroupMod.Semigroup[O] = js.native
 }
 

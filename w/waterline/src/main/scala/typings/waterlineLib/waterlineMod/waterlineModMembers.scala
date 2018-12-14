@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("waterline", JSImport.Namespace)
 @js.native
 object waterlineModMembers
-  extends ScalablyTyped.runtime.TopLevel[WaterlineStatic]
+  extends org.scalablytyped.runtime.TopLevel[WaterlineStatic]
 

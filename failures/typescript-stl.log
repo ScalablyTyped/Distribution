@@ -52,9 +52,9 @@
 [info ] RemoveMultipleInheritance.scala:39 Dropped parents List(typescriptDashStlLib.stdNs.baseNs.IArrayIterator because Would inherit conflicting mutable fields List(`source_`, value)) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(DequeReverseIterator)] 
 [info ] RemoveMultipleInheritance.scala:39 Dropped parents List(typescriptDashStlLib.stdNs.baseNs.IArrayIterator because Would inherit conflicting mutable fields List(`source_`, value)) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(VectorReverseIterator)] 
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(push)) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(Vector)] 
-[info ] CompleteClass.scala:60 Completed implementations Vector(message, name) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(Exception)] 
-[info ] CompleteClass.scala:60 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(MapIterator)] 
-[info ] CompleteClass.scala:60 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(SetIterator)] 
+[info ] CompleteClass.scala:58 Completed implementations Vector(message, name) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(Exception)] 
+[info ] CompleteClass.scala:58 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(MapIterator)] 
+[info ] CompleteClass.scala:58 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(SetIterator)] 
 [debug] PhaseRunner.scala:78 Success [id => typescript-stl, phase => scala.js] 
 [error] Vector.scala:349 name clash between defined and inherited member:
 def push(items: T*): Double in trait Array and

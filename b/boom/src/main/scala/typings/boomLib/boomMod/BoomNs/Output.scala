@@ -12,7 +12,7 @@ trait Output extends js.Object {
            * value is the header content. (Limited value type to string
            * https://github.com/hapijs/boom/issues/151 )
            */
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
            * payload - the formatted object used as the response payload (stringified).
            * Can be directly manipulated but any changes will be lost if reformat() is called.

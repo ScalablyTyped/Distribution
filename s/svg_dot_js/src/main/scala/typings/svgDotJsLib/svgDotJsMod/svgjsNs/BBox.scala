@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BBox
   extends Box
-     with ScalablyTyped.runtime.Instantiable0[BBox]
-     with ScalablyTyped.runtime.Instantiable1[/* element */ Element, BBox]
+     with org.scalablytyped.runtime.Instantiable0[BBox]
+     with org.scalablytyped.runtime.Instantiable1[/* element */ Element, BBox]
 

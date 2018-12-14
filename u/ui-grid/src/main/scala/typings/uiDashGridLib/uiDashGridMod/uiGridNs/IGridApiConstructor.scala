@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IGridApiConstructor[TEntity]
-  extends ScalablyTyped.runtime.Instantiable1[/* grid */ IGridInstanceOf[TEntity], IGridApiOf[TEntity]]
+  extends org.scalablytyped.runtime.Instantiable1[/* grid */ IGridInstanceOf[TEntity], IGridApiOf[TEntity]]
 

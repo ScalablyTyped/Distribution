@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait UmzugStatic
-  extends ScalablyTyped.runtime.Instantiable0[Umzug]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ UmzugOptions, Umzug]
+  extends org.scalablytyped.runtime.Instantiable0[Umzug]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ UmzugOptions, Umzug]
 

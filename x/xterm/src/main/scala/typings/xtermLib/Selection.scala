@@ -37,5 +37,5 @@ trait Selection extends js.Object {
 @JSGlobal("Selection")
 @js.native
 object Selection
-  extends ScalablyTyped.runtime.Instantiable0[Selection]
+  extends org.scalablytyped.runtime.Instantiable0[Selection]
 

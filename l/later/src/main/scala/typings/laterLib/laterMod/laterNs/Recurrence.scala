@@ -12,7 +12,7 @@ trait Recurrence
          * For acces to custom time periods created as extension to the later static type
          * and modifiers created on the later modifier static type.
          */
-/* timeperiodAndModifierName */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[js.Array[scala.Double]]] {
+/* timeperiodAndModifierName */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Array[scala.Double]]] {
   /** Day of the month. */
   var D: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /** After modifiers. */

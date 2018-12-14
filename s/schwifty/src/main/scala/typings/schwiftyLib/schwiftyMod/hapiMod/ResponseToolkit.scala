@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResponseToolkit extends js.Object {
   def knex(): knexLib.knexMod.Knex = js.native
-  def models(): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.Instantiable0[schwiftyLib.schwiftyMod.Model]] = js.native
-  def models(all: scala.Boolean): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.Instantiable0[schwiftyLib.schwiftyMod.Model]] = js.native
+  def models(): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.Instantiable0[schwiftyLib.schwiftyMod.Model]] = js.native
+  def models(all: scala.Boolean): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.Instantiable0[schwiftyLib.schwiftyMod.Model]] = js.native
 }
 

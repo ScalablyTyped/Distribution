@@ -52,7 +52,7 @@ trait IObservable[T] extends js.Object {
   	 * Observes specified event
   	 * @param eventName Object with key/value pairs (eg. {'after:render': handler, 'selection:cleared': handler})
   	 */
-  def on(events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ IEvent, scala.Unit]]): T = js.native
+  def on(events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ IEvent, scala.Unit]]): T = js.native
   /**
   	 * Fires event with an optional options object
   	 * @param eventName Event name to fire

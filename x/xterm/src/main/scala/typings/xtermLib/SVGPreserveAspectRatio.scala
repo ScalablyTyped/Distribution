@@ -28,7 +28,7 @@ trait SVGPreserveAspectRatio extends js.Object {
 @JSGlobal("SVGPreserveAspectRatio")
 @js.native
 object SVGPreserveAspectRatio
-  extends ScalablyTyped.runtime.Instantiable0[SVGPreserveAspectRatio] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGPreserveAspectRatio] {
   val SVG_MEETORSLICE_MEET: scala.Double = js.native
   val SVG_MEETORSLICE_SLICE: scala.Double = js.native
   val SVG_MEETORSLICE_UNKNOWN: scala.Double = js.native

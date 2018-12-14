@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ITimeEntryLocales
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[ITimeEntryRegionalOptions]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[ITimeEntryRegionalOptions]
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait _Dom[TElement]
   extends stdLib.Iterable[TElement]
-     with /* key */ ScalablyTyped.runtime.NumberDictionary[TElement] {
+     with /* key */ org.scalablytyped.runtime.NumberDictionary[TElement] {
   var length: scala.Double = js.native
   def addClass(classes: java.lang.String): _Dom[TElement] = js.native
   def appendTo(selector: _Dom[TElement]): _Dom[TElement] = js.native

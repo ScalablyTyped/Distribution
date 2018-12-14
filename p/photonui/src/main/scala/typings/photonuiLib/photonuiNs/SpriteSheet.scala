@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("photonui.SpriteSheet")
 @js.native
 class SpriteSheet () extends Base {
-  var icons: ScalablyTyped.runtime.StringDictionary[js.Array[scala.Double]] = js.native
+  var icons: org.scalablytyped.runtime.StringDictionary[js.Array[scala.Double]] = js.native
   var imageUrl: java.lang.String = js.native
   var name: java.lang.String = js.native
   var size: java.lang.String = js.native

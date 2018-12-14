@@ -12,6 +12,6 @@ trait CoverageMap extends js.Object {
   def fileCoverageFor(file: java.lang.String): FileCoverage
   def files(): js.Array[java.lang.String]
   def getCoverageSummary(): FileCoverage
-  def merge(data: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit
+  def merge(data: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit
 }
 

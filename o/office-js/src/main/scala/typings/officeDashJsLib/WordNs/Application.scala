@@ -33,7 +33,7 @@ class Application ()
            * @param base64File Optional. The base64 encoded .docx file. The default value is null.
            */
   def createDocument(base64File: java.lang.String): DocumentCreated = js.native
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 
 /**

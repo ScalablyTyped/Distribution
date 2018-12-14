@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SchemaMap
-  extends /* uri */ ScalablyTyped.runtime.StringDictionary[JsonSchema]
+  extends /* uri */ org.scalablytyped.runtime.StringDictionary[JsonSchema]
 

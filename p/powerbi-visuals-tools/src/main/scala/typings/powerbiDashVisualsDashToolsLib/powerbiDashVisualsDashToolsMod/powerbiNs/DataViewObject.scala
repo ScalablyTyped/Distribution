@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 
 trait DataViewObject
   extends /** Map of property name to property value. */
-/* propertyName */ ScalablyTyped.runtime.StringDictionary[DataViewPropertyValue | DataViewObjectMap]
+/* propertyName */ org.scalablytyped.runtime.StringDictionary[DataViewPropertyValue | DataViewObjectMap]
 

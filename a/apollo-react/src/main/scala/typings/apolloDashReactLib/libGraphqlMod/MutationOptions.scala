@@ -14,7 +14,7 @@ trait MutationOptions extends js.Object {
   var optimisticResponse: js.UndefOr[js.Object] = js.undefined
   var resultBehaviors: js.UndefOr[js.Array[_]] = js.undefined
   var updateQueries: js.UndefOr[
-    apolloDashClientLib.coreTypesMod.MutationQueryReducersMap[ScalablyTyped.runtime.StringDictionary[_]]
+    apolloDashClientLib.coreTypesMod.MutationQueryReducersMap[org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined
   var variables: js.UndefOr[js.Object] = js.undefined
 }

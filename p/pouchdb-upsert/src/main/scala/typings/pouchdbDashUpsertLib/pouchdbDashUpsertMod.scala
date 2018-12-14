@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pouchdb-upsert", JSImport.Namespace)
 @js.native
 object pouchdbDashUpsertMod
-  extends ScalablyTyped.runtime.TopLevel[pouchdbDashCoreLib.PouchDBNs.Plugin]
+  extends org.scalablytyped.runtime.TopLevel[pouchdbDashCoreLib.PouchDBNs.Plugin]
 

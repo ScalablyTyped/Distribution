@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
          *
          * @param index The index of the element to get.
          * /
-/ * index * / ScalablyTyped.runtime.NumberDictionary[cytoscapeLib.cytoscapeMod.cytoscapeNs.EdgeSingular])*/
+/ * index * / org.scalablytyped.runtime.NumberDictionary[cytoscapeLib.cytoscapeMod.cytoscapeNs.EdgeSingular])*/
 @js.native
 trait EdgeSingular
   extends Singular[EdgeSingular, EdgeSingular]

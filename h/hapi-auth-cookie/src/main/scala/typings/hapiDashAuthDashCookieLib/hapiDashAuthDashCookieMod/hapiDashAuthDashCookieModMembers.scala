@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hapi-auth-cookie", JSImport.Namespace)
 @js.native
 object hapiDashAuthDashCookieModMembers
-  extends ScalablyTyped.runtime.TopLevel[hapiLib.hapiMod.Plugin[scala.Unit]]
+  extends org.scalablytyped.runtime.TopLevel[hapiLib.hapiMod.Plugin[scala.Unit]]
 

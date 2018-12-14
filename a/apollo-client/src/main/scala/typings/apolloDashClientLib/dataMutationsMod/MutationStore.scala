@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class MutationStore () extends js.Object {
   var store: js.Any = js.native
   def get(mutationId: java.lang.String): MutationStoreValue = js.native
-  def getStore(): ScalablyTyped.runtime.StringDictionary[MutationStoreValue] = js.native
+  def getStore(): org.scalablytyped.runtime.StringDictionary[MutationStoreValue] = js.native
   def initMutation(mutationId: java.lang.String, mutationString: java.lang.String): scala.Unit = js.native
   def initMutation(mutationId: java.lang.String, mutationString: java.lang.String, variables: js.Object): scala.Unit = js.native
   def markMutationError(mutationId: java.lang.String, error: stdLib.Error): scala.Unit = js.native

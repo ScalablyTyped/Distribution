@@ -10,7 +10,7 @@ trait ZoombarProviderDefaultSettings
   extends /**
 	 * Option for ZoombarProviderDefaultSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Contains the target component's instance
   	 */

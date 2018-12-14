@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait XmlDescArray
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[xmlLib.Anon_AttrXmlAttrs | xmlLib.XmlObject]
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[xmlLib.Anon_AttrXmlAttrs | xmlLib.XmlObject]
 

@@ -13,7 +13,7 @@ trait MockOptions extends js.Object {
   /**
            * key/value map of headers to match
            */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * as specified above
            */
@@ -41,7 +41,7 @@ trait MockOptions extends js.Object {
   /**
            * key/value map of query strings to match, in any order
            */
-  var query: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var query: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * integer, n, limiting the number of times the matcher can be used.
            * If the route has already been called n times the route will be

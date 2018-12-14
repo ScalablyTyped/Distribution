@@ -24,7 +24,7 @@ trait IDialogOpenOptions extends IDialogOptions {
   			 * is instantiated.
   			 */
   var resolve: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | angularLib.angularMod.Global.Function]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | angularLib.angularMod.Global.Function]
   ] = js.undefined
   /**
   			 * Scope object that will be passed to dialog. If you use controller with separate $scope service this object will be passed to $scope.$parent param.

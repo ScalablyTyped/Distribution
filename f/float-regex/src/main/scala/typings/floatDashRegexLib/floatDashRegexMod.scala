@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("float-regex", JSImport.Namespace)
 @js.native
 object floatDashRegexMod
-  extends ScalablyTyped.runtime.TopLevel[stdLib.RegExp]
+  extends org.scalablytyped.runtime.TopLevel[stdLib.RegExp]
 

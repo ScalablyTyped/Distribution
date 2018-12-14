@@ -29,5 +29,5 @@ trait PerformanceResourceTiming extends PerformanceEntry {
 @JSGlobal("PerformanceResourceTiming")
 @js.native
 object PerformanceResourceTiming
-  extends ScalablyTyped.runtime.Instantiable0[PerformanceResourceTiming]
+  extends org.scalablytyped.runtime.Instantiable0[PerformanceResourceTiming]
 

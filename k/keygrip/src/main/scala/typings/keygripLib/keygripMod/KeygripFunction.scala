@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait KeygripFunction
-  extends ScalablyTyped.runtime.Instantiable1[/* keys */ js.Array[java.lang.String], Keygrip]
-     with ScalablyTyped.runtime.Instantiable2[/* keys */ js.Array[java.lang.String], /* algorithm */ java.lang.String, Keygrip]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable1[/* keys */ js.Array[java.lang.String], Keygrip]
+     with org.scalablytyped.runtime.Instantiable2[/* keys */ js.Array[java.lang.String], /* algorithm */ java.lang.String, Keygrip]
+     with org.scalablytyped.runtime.Instantiable3[
       /* keys */ js.Array[java.lang.String], 
       /* algorithm */ java.lang.String, 
       /* encoding */ java.lang.String, 

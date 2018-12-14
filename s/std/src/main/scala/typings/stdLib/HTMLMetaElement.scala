@@ -29,5 +29,5 @@ trait HTMLMetaElement extends HTMLElement {
 @JSGlobal("HTMLMetaElement")
 @js.native
 object HTMLMetaElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLMetaElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLMetaElement]
 

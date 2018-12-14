@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ValuesIPie
-  extends ScalablyTyped.runtime.Instantiable0[teechartLib.TeeNs.IPie]
-     with ScalablyTyped.runtime.Instantiable1[/* values */ js.Array[scala.Double], teechartLib.TeeNs.IPie]
+  extends org.scalablytyped.runtime.Instantiable0[teechartLib.TeeNs.IPie]
+     with org.scalablytyped.runtime.Instantiable1[/* values */ js.Array[scala.Double], teechartLib.TeeNs.IPie]
 

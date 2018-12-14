@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Page
   extends Component
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   		 * 强制更新
   		 */

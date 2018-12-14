@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TArgs
-  extends /* argument */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* argument */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

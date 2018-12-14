@@ -18,7 +18,7 @@ trait ICompileProvider extends IServiceProvider {
   def commentDirectivesEnabled(): scala.Boolean = js.native
   def commentDirectivesEnabled(enabled: scala.Boolean): ICompileProvider = js.native
   def component(name: java.lang.String, options: IComponentOptions): ICompileProvider = js.native
-  def component(`object`: ScalablyTyped.runtime.StringDictionary[IComponentOptions]): ICompileProvider = js.native
+  def component(`object`: org.scalablytyped.runtime.StringDictionary[IComponentOptions]): ICompileProvider = js.native
   /**
            * It indicates to the compiler whether or not directives on element classes should be compiled.
            * It results in a compilation performance gain since the compiler doesn't have to check element classes when looking for directives.
@@ -30,7 +30,7 @@ trait ICompileProvider extends IServiceProvider {
   def debugInfoEnabled(): scala.Boolean = js.native
   def debugInfoEnabled(enabled: scala.Boolean): ICompileProvider = js.native
   def directive[TScope /* <: IScope */](name: java.lang.String, directiveFactory: Injectable[IDirectiveFactory[TScope]]): ICompileProvider = js.native
-  def directive[TScope /* <: IScope */](`object`: ScalablyTyped.runtime.StringDictionary[Injectable[IDirectiveFactory[TScope]]]): ICompileProvider = js.native
+  def directive[TScope /* <: IScope */](`object`: org.scalablytyped.runtime.StringDictionary[Injectable[IDirectiveFactory[TScope]]]): ICompileProvider = js.native
   def imgSrcSanitizationWhitelist(): stdLib.RegExp = js.native
   def imgSrcSanitizationWhitelist(regexp: stdLib.RegExp): ICompileProvider = js.native
   /**

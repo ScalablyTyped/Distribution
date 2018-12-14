@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("nanoid/async", JSImport.Namespace)
 @js.native
 object asyncModMembers
-  extends ScalablyTyped.runtime.TopLevel[NanoidAsync]
+  extends org.scalablytyped.runtime.TopLevel[NanoidAsync]
 

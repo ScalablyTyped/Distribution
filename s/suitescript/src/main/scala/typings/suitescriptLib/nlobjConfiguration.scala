@@ -20,7 +20,7 @@ trait nlobjConfiguration
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * return an Array of all field names on the record.
        * @return {string[]}

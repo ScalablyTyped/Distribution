@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Codecs
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Codec]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Codec]
 

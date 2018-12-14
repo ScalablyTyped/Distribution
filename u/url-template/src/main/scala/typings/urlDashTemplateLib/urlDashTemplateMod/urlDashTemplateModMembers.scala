@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("url-template", JSImport.Namespace)
 @js.native
 object urlDashTemplateModMembers
-  extends ScalablyTyped.runtime.TopLevel[urlDashTemplateLib.urlDashTemplateMod.UrlTemplateNs.TemplateParser]
+  extends org.scalablytyped.runtime.TopLevel[urlDashTemplateLib.urlDashTemplateMod.UrlTemplateNs.TemplateParser]
 

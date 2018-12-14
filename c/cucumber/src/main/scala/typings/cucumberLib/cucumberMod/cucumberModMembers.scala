@@ -43,7 +43,7 @@ object cucumberModMembers extends js.Object {
   def getSupportCodeFns(): js.Array[SupportCodeConsumer] = js.native
   def setDefaultTimeout(time: scala.Double): scala.Unit = js.native
   def setDefinitionFunctionWrapper(fn: js.Function0[scala.Unit]): scala.Unit = js.native
-  def setDefinitionFunctionWrapper(fn: js.Function0[scala.Unit], options: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def setDefinitionFunctionWrapper(fn: js.Function0[scala.Unit], options: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def setWorldConstructor(world: js.Object): scala.Unit = js.native
   def setWorldConstructor(world: js.ThisFunction1[/* this */ World, /* init */ cucumberLib.Anon_Parameters, scala.Unit]): scala.Unit = js.native
 }

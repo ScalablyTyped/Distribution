@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cli-box", JSImport.Namespace)
 @js.native
 object cliDashBoxModMembers
-  extends ScalablyTyped.runtime.TopLevel[BoxConstructor]
+  extends org.scalablytyped.runtime.TopLevel[BoxConstructor]
 

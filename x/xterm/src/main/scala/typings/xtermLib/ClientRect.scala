@@ -18,5 +18,5 @@ trait ClientRect extends js.Object {
 @JSGlobal("ClientRect")
 @js.native
 object ClientRect
-  extends ScalablyTyped.runtime.Instantiable0[ClientRect]
+  extends org.scalablytyped.runtime.Instantiable0[ClientRect]
 

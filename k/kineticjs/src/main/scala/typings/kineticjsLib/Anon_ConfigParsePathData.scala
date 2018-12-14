@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ConfigParsePathData
-  extends ScalablyTyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.PathConfig, kineticjsLib.KineticNs.IPath] {
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.PathConfig, kineticjsLib.KineticNs.IPath] {
   def parsePathData(data: java.lang.String): js.Any = js.native
 }
 

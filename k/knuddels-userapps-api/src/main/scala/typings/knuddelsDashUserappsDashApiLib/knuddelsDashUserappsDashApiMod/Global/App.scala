@@ -14,7 +14,7 @@ trait App extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/App.html#property_chatCommands
   		 */
   var chatCommands: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       js.Function3[
         /* user */ User, 
         /* params */ java.lang.String, 

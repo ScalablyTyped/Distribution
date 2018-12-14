@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@egjs/component", JSImport.Namespace)
 @js.native
 class namespaced () extends Component {
-  def this(options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 

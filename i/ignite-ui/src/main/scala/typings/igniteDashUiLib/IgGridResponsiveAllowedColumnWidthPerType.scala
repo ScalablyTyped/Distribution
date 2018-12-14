@@ -10,7 +10,7 @@ trait IgGridResponsiveAllowedColumnWidthPerType
   extends /**
 	 * Option for IgGridResponsiveAllowedColumnWidthPerType
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Minimal width in pixels bool columns can take before forcing vertical rendering
   	 *

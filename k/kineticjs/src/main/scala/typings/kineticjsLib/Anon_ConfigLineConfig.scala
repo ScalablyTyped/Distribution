@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ConfigLineConfig
-  extends ScalablyTyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.LineConfig, kineticjsLib.KineticNs.ILine]
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.LineConfig, kineticjsLib.KineticNs.ILine]
 

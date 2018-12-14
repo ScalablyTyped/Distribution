@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait OnCriteria
-  extends /* column */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* column */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

@@ -48,7 +48,7 @@ trait Ng1ViewDeclaration
        * ```
        *
        */
-  var bindings: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var bindings: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * The name of the component to use for this view.
        *

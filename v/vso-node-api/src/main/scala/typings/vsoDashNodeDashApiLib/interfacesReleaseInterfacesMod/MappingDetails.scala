@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait MappingDetails extends js.Object {
-  var mappings: ScalablyTyped.runtime.StringDictionary[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputValue]
+  var mappings: org.scalablytyped.runtime.StringDictionary[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputValue]
 }
 

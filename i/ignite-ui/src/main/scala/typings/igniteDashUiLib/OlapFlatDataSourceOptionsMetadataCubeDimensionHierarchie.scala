@@ -10,7 +10,7 @@ trait OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie
   extends /**
 	 * Option for OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A caption for the hierarchy.
   	 */

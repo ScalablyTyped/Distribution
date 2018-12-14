@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("durandal/viewEngine", JSImport.Namespace)
 @js.native
 object viewEngineMod
-  extends ScalablyTyped.runtime.TopLevel[DurandalViewEngineModule]
+  extends org.scalablytyped.runtime.TopLevel[DurandalViewEngineModule]
 

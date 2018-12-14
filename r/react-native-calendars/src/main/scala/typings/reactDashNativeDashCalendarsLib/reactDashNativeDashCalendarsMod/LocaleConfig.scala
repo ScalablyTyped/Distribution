@@ -121,7 +121,7 @@ class LocaleConfig ()
 object LocaleConfig extends js.Object {
   var defaultLocale: java.lang.String = js.native
   var formatters: xdateLib.xdateMod.formatters_info = js.native
-  var locales: ScalablyTyped.runtime.StringDictionary[xdateLib.xdateMod.locale_detail] = js.native
+  var locales: org.scalablytyped.runtime.StringDictionary[xdateLib.xdateMod.locale_detail] = js.native
   def UTC(year: scala.Double, month: scala.Double, day: scala.Double): scala.Double = js.native
   def UTC(year: scala.Double, month: scala.Double, day: scala.Double, hours: scala.Double): scala.Double = js.native
   def UTC(

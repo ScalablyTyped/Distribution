@@ -10,7 +10,7 @@ trait Anon_GetLevel extends js.Object {
   /**
      * A single log entry.
      */
-  var Entry: ScalablyTyped.runtime.Instantiable2[
+  var Entry: org.scalablytyped.runtime.Instantiable2[
     /* level */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Level, 
     /* message */ java.lang.String, 
     seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Entry
@@ -20,7 +20,7 @@ trait Anon_GetLevel extends js.Object {
      *
      * @final
      */
-  var Level: ScalablyTyped.runtime.Instantiable2[
+  var Level: org.scalablytyped.runtime.Instantiable2[
     /* name */ java.lang.String, 
     /* level */ scala.Double, 
     seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Level
@@ -30,7 +30,7 @@ trait Anon_GetLevel extends js.Object {
      *
      * @final
      */
-  var LogManager: ScalablyTyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.LogManager] = js.native
+  var LogManager: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.LogManager] = js.native
   /**
      * An object used to log debugging messages. Loggers use a hierarchical,
      * dot-separated naming scheme. For instance, 'foo' is considered the parent of
@@ -47,7 +47,7 @@ trait Anon_GetLevel extends js.Object {
      *
      * @final
      */
-  var Logger: ScalablyTyped.runtime.Instantiable1[
+  var Logger: org.scalablytyped.runtime.Instantiable1[
     /* name */ java.lang.String, 
     seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Logger
   ] = js.native
@@ -55,7 +55,7 @@ trait Anon_GetLevel extends js.Object {
      * A hash describing log preferences.
      * @typedef {Object.<logging.Type, logging.LevelName>}
      */
-  var Preferences: ScalablyTyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Preferences] = js.native
+  var Preferences: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Preferences] = js.native
   /**
      * Common log types.
      * @enum {string}

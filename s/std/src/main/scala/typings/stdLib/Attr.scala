@@ -18,5 +18,5 @@ trait Attr extends Node {
 @JSGlobal("Attr")
 @js.native
 object Attr
-  extends ScalablyTyped.runtime.Instantiable0[Attr]
+  extends org.scalablytyped.runtime.Instantiable0[Attr]
 

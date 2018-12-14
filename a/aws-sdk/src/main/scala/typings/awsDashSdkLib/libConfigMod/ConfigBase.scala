@@ -37,7 +37,7 @@ class ConfigBase () extends ConfigurationOptions {
        * @param {boolean} allowUnknownKeys - Whether unknown keys can be set on the configuration object.
        */
   def update(
-    options: ConfigurationOptions with ScalablyTyped.runtime.StringDictionary[js.Any],
+    options: ConfigurationOptions with org.scalablytyped.runtime.StringDictionary[js.Any],
     allowUnknownKeys: awsDashSdkLib.awsDashSdkLibNumbers.`true`
   ): scala.Unit = js.native
   /**

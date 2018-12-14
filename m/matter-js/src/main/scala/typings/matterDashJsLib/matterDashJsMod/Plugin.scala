@@ -27,7 +27,7 @@ object Plugin extends js.Object {
            * @return {object} A dependency graph.
            */
   def dependencies(module: matterDashJsLib.matterDashJsMod.MatterNs.Dependency): js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] | java.lang.String
+    org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | java.lang.String
   ] = js.native
   /**
            * Recursively finds all of a module's dependencies and returns a flat dependency graph.
@@ -37,9 +37,9 @@ object Plugin extends js.Object {
            */
   def dependencies(
     module: matterDashJsLib.matterDashJsMod.MatterNs.Dependency,
-    tracked: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+    tracked: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   ): js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] | java.lang.String
+    org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | java.lang.String
   ] = js.native
   /**
            * Parses a dependency string into its components.

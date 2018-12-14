@@ -141,8 +141,8 @@ trait DeviceMotionEvent extends Event {
 @JSGlobal("DeviceMotionEvent")
 @js.native
 object DeviceMotionEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, DeviceMotionEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, DeviceMotionEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* typeArg */ java.lang.String, 
       /* eventInitDict */ DeviceMotionEventInit, 
       DeviceMotionEvent

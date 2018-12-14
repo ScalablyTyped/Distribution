@@ -44,7 +44,7 @@ class User () extends js.Object {
 @JSGlobal("Realm.Sync.User")
 @js.native
 object User extends js.Object {
-  val all: ScalablyTyped.runtime.StringDictionary[realmLib.RealmNs.SyncNs.User] = js.native
+  val all: org.scalablytyped.runtime.StringDictionary[realmLib.RealmNs.SyncNs.User] = js.native
   val current: realmLib.RealmNs.SyncNs.User = js.native
   // Deprecated
   /** @deprecated, to be removed in future versions */

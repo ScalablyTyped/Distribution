@@ -59,7 +59,7 @@ object d3DashFetchMod extends js.Object {
   def html(url: java.lang.String): js.Promise[stdLib.Document] = js.native
   def html(url: java.lang.String, init: stdLib.RequestInit): js.Promise[stdLib.Document] = js.native
   def image(url: java.lang.String): js.Promise[stdLib.HTMLImageElement] = js.native
-  def image(url: java.lang.String, init: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Promise[stdLib.HTMLImageElement] = js.native
+  def image(url: java.lang.String, init: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[stdLib.HTMLImageElement] = js.native
   def json[ParsedJSONObject /* <: js.Any */](url: java.lang.String): js.Promise[ParsedJSONObject] = js.native
   def json[ParsedJSONObject /* <: js.Any */](url: java.lang.String, init: stdLib.RequestInit): js.Promise[ParsedJSONObject] = js.native
   def svg(url: java.lang.String): js.Promise[stdLib.Document] = js.native

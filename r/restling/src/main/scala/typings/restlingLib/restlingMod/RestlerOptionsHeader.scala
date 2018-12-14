@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RestlerOptionsHeader
-  extends /* headerName */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* headerName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

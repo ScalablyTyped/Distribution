@@ -19,7 +19,7 @@ trait Server extends js.Object {
   /**
   		 * A dictionary of all the namespaces currently on this Server
   		 */
-  var nsps: ScalablyTyped.runtime.StringDictionary[Namespace] = js.native
+  var nsps: org.scalablytyped.runtime.StringDictionary[Namespace] = js.native
   /**
   		 * The default '/' Namespace
   		 */

@@ -1543,7 +1543,7 @@ object KinesisAnalyticsV2Ns extends js.Object {
   
   
   trait PropertyMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[PropertyValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[PropertyValue]
   
   
   trait RecordColumn extends js.Object {

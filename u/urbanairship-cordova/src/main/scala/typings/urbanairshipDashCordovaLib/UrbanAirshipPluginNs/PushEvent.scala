@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PushEvent
   extends stdLib.Event {
-  var extras: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var extras: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var message: java.lang.String = js.native
 }
 

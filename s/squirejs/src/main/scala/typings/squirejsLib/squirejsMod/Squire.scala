@@ -10,7 +10,7 @@ trait Squire extends js.Object {
   def clean(): Squire = js.native
   def clean(name: java.lang.String): Squire = js.native
   def clean(name: js.Array[java.lang.String]): Squire = js.native
-  def mock(mocks: ScalablyTyped.runtime.StringDictionary[js.Any]): Squire = js.native
+  def mock(mocks: org.scalablytyped.runtime.StringDictionary[js.Any]): Squire = js.native
   def mock(name: java.lang.String, mock: js.Any): Squire = js.native
   def remove(): java.lang.String = js.native
   def require(dependencies: js.Array[java.lang.String], callback: js.Function): Squire = js.native

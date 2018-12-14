@@ -37,7 +37,7 @@ class Default protected () extends js.Object {
   var triggerWith: js.Function3[/* types */ js.Any, /* context */ js.Any, /* args */ js.Any, _] = js.native
   var view: fullcalendarLib.viewMod.default = js.native
   var viewSpecManager: fullcalendarLib.viewspecmanagerMod.default = js.native
-  var viewsByType: ScalablyTyped.runtime.StringDictionary[fullcalendarLib.viewMod.default] = js.native
+  var viewsByType: org.scalablytyped.runtime.StringDictionary[fullcalendarLib.viewMod.default] = js.native
   var windowResizeProxy: js.Any = js.native
   def _calcSize(): scala.Unit = js.native
   def addEventSource(sourceInput: fullcalendarLib.srcTypesInputDashTypesMod.EventSourceInput): scala.Unit = js.native

@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class resourceManager protected () extends js.Object {
   def this(basePath: java.lang.String, fileName: java.lang.String) = this()
   var basePath: java.lang.String = js.native
-  var externals: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var externals: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var fileName: java.lang.String = js.native
-  var loaded: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var registered: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var loaded: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var registered: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def add(name: java.lang.String): scala.Unit = js.native
   def add(name: java.lang.String, definition: pluginDefinition): scala.Unit = js.native
   def addExternal(names: java.lang.String, path: java.lang.String): scala.Unit = js.native
@@ -28,7 +28,7 @@ class resourceManager protected () extends js.Object {
   def load(
     name: java.lang.String,
     callback: js.Function1[/* loaded */ js.Array[java.lang.String], scala.Unit],
-    scope: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scope: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def load(
     name: js.Array[java.lang.String],
@@ -37,7 +37,7 @@ class resourceManager protected () extends js.Object {
   def load(
     name: js.Array[java.lang.String],
     callback: js.Function1[/* loaded */ js.Array[java.lang.String], scala.Unit],
-    scope: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scope: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
 }
 

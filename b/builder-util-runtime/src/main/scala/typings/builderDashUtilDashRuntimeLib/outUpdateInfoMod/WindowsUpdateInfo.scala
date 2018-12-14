@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait WindowsUpdateInfo extends UpdateInfo {
-  var packages: js.UndefOr[ScalablyTyped.runtime.StringDictionary[PackageFileInfo] | scala.Null] = js.undefined
+  var packages: js.UndefOr[org.scalablytyped.runtime.StringDictionary[PackageFileInfo] | scala.Null] = js.undefined
   /**
        * @deprecated
        * @private

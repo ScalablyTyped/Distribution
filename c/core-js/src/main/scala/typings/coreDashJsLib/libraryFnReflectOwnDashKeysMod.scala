@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/reflect/own-keys", JSImport.Namespace)
 @js.native
 object libraryFnReflectOwnDashKeysMod
-  extends ScalablyTyped.runtime.TopLevel[js.Function1[/* target */ js.Any, Array[stdLib.PropertyKey]]]
+  extends org.scalablytyped.runtime.TopLevel[js.Function1[/* target */ js.Any, Array[stdLib.PropertyKey]]]
 

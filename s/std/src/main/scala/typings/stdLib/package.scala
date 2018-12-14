@@ -48,7 +48,7 @@ package object stdLib {
   /**
    * Obtain the parameters of a constructor function type in a tuple
    */
-  type ConstructorParameters[T /* <: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
+  type ConstructorParameters[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
   type DOMHighResTimeStamp = scala.Double
   type DOMTimeStamp = scala.Double
   type DecodeErrorCallback = js.Function1[/* error */ DOMException, scala.Unit]
@@ -120,7 +120,7 @@ package object stdLib {
   /**
    * Obtain the return type of a constructor function type
    */
-  type InstanceType[T /* <: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
+  type InstanceType[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
   type Int32List = Int32Array | js.Array[GLint]
   type IntersectionObserverCallback = js.Function2[
     /* entries */ js.Array[IntersectionObserverEntry], 
@@ -222,7 +222,7 @@ package object stdLib {
   type PositionAlignSetting = stdLib.stdLibStrings.`line-left` | stdLib.stdLibStrings.center | stdLib.stdLibStrings.`line-right` | stdLib.stdLibStrings.auto
   type PositionCallback = js.Function1[/* position */ Position, scala.Unit]
   type PositionErrorCallback = js.Function1[/* positionError */ PositionError, scala.Unit]
-  type PromiseConstructorLike = ScalablyTyped.runtime.Instantiable1[
+  type PromiseConstructorLike = org.scalablytyped.runtime.Instantiable1[
     /* executor */ js.Function2[
       /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | js.Thenable[js.Object]], scala.Unit], 
       /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
@@ -289,7 +289,7 @@ package object stdLib {
   /**
    * Construct a type with a set of properties K of type T
    */
-  type Record[K /* <: java.lang.String */, T] = ScalablyTyped.runtime.StringDictionary[K]
+  type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[K]
   type ReferenceError = Error
   type ReferrerPolicy = stdLib.stdLibStrings.Empty | stdLib.stdLibStrings.`no-referrer` | stdLib.stdLibStrings.`no-referrer-when-downgrade` | stdLib.stdLibStrings.`origin-only` | stdLib.stdLibStrings.`origin-when-cross-origin` | stdLib.stdLibStrings.`unsafe-url`
   type RenderingContext = CanvasRenderingContext2D | ImageBitmapRenderingContext | WebGLRenderingContext

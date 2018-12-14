@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DataTransferItemList
-  extends /* name */ ScalablyTyped.runtime.NumberDictionary[DataTransferItem] {
+  extends /* name */ org.scalablytyped.runtime.NumberDictionary[DataTransferItem] {
   /**
        * Returns the number of items in the drag data store.
        */
@@ -33,5 +33,5 @@ trait DataTransferItemList
 @JSGlobal("DataTransferItemList")
 @js.native
 object DataTransferItemList
-  extends ScalablyTyped.runtime.Instantiable0[DataTransferItemList]
+  extends org.scalablytyped.runtime.Instantiable0[DataTransferItemList]
 

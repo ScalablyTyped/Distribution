@@ -42,5 +42,5 @@ trait HTMLTableSectionElement extends HTMLElement {
 @JSGlobal("HTMLTableSectionElement")
 @js.native
 object HTMLTableSectionElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLTableSectionElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLTableSectionElement]
 

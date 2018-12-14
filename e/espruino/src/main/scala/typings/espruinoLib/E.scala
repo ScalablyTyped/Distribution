@@ -16,5 +16,5 @@ trait E
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[E]
+org.scalablytyped.runtime.Instantiable0[E]
 

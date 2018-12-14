@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 
 trait ExecutionContext extends js.Object {
   var errors: js.Array[GraphQLError]
-  var fragments: ScalablyTyped.runtime.StringDictionary[FragmentDefinition]
+  var fragments: org.scalablytyped.runtime.StringDictionary[FragmentDefinition]
   var operation: OperationDefinition
   var rootValue: js.Any
   var schema: GraphQLSchema
-  var variableValues: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

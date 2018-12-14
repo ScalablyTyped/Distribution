@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("harmony-proxy", JSImport.Namespace)
 @js.native
 object harmonyDashProxyModMembers
-  extends ScalablyTyped.runtime.TopLevel[harmonyDashProxyLib.harmonyDashProxyMod.harmonyProxyNs.ProxyConstructor]
+  extends org.scalablytyped.runtime.TopLevel[harmonyDashProxyLib.harmonyDashProxyMod.harmonyProxyNs.ProxyConstructor]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("async-cache", JSImport.Namespace)
 @js.native
 object asyncDashCacheModMembers
-  extends ScalablyTyped.runtime.TopLevel[AsyncCacheFactory]
+  extends org.scalablytyped.runtime.TopLevel[AsyncCacheFactory]
 

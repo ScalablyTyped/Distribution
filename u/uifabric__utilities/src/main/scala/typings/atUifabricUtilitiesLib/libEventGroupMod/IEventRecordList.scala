@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IEventRecordList
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[js.Array[IEventRecord] | scala.Double] {
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Array[IEventRecord] | scala.Double] {
   var count: scala.Double
 }
 

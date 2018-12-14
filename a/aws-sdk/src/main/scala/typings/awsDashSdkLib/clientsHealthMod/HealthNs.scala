@@ -636,11 +636,11 @@ object HealthNs extends js.Object {
   
   
   trait eventMetadata
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[metadataValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[metadataValue]
   
   
   trait tagSet
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[tagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[tagValue]
   
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions

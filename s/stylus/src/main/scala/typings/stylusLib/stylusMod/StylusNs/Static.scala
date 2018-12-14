@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Static extends js.Object {
-  var Compiler: ScalablyTyped.runtime.Instantiable0[Compiler] = js.native
-  var Evaluator: ScalablyTyped.runtime.Instantiable0[Evaluator] = js.native
-  var Parser: ScalablyTyped.runtime.Instantiable0[Parser] = js.native
-  var Visitor: ScalablyTyped.runtime.Instantiable0[Visitor] = js.native
+  var Compiler: org.scalablytyped.runtime.Instantiable0[Compiler] = js.native
+  var Evaluator: org.scalablytyped.runtime.Instantiable0[Evaluator] = js.native
+  var Parser: org.scalablytyped.runtime.Instantiable0[Parser] = js.native
+  var Visitor: org.scalablytyped.runtime.Instantiable0[Visitor] = js.native
   /**
            * Expose BIFs.
            */

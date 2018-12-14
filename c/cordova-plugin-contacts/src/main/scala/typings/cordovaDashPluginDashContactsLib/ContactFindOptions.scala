@@ -20,13 +20,13 @@ trait ContactFindOptions extends js.Object {
 @js.native
 object ContactFindOptions
   extends /** Constructor for ContactFindOptions object */
-ScalablyTyped.runtime.Instantiable0[ContactFindOptions]
+org.scalablytyped.runtime.Instantiable0[ContactFindOptions]
      with /** Constructor for ContactFindOptions object */
-ScalablyTyped.runtime.Instantiable1[/* filter */ java.lang.String, ContactFindOptions]
+org.scalablytyped.runtime.Instantiable1[/* filter */ java.lang.String, ContactFindOptions]
      with /** Constructor for ContactFindOptions object */
-ScalablyTyped.runtime.Instantiable2[/* filter */ java.lang.String, /* multiple */ scala.Boolean, ContactFindOptions]
+org.scalablytyped.runtime.Instantiable2[/* filter */ java.lang.String, /* multiple */ scala.Boolean, ContactFindOptions]
      with /** Constructor for ContactFindOptions object */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* filter */ java.lang.String, 
       /* multiple */ scala.Boolean, 
       /* desiredFields */ js.Array[ContactFieldType], 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("jasmine-node", JSImport.Namespace)
 @js.native
 object jasmineDashNodeMod
-  extends ScalablyTyped.runtime.TopLevel[jasmineDashNodeLib.jasmineNs.JasmineNode]
+  extends org.scalablytyped.runtime.TopLevel[jasmineDashNodeLib.jasmineNs.JasmineNode]
 

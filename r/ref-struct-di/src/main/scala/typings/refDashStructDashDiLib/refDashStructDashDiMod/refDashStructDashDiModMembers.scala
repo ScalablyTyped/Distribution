@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ref-struct-di", JSImport.Namespace)
 @js.native
 object refDashStructDashDiModMembers
-  extends ScalablyTyped.runtime.TopLevel[refDashStructDashDiLib.Anon_Fields]
+  extends org.scalablytyped.runtime.TopLevel[refDashStructDashDiLib.Anon_Fields]
 

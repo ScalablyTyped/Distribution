@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 //
 @js.native
 trait Dict[T]
-  extends Type[ScalablyTyped.runtime.StringDictionary[T]] {
+  extends Type[org.scalablytyped.runtime.StringDictionary[T]] {
   @JSName("meta")
   var meta_Dict: tcombLib.Anon_NameDomain[T] = js.native
   @JSName("update")
-  var update_Original: tcombLib.Update[ScalablyTyped.runtime.StringDictionary[T]] = js.native
+  var update_Original: tcombLib.Update[org.scalablytyped.runtime.StringDictionary[T]] = js.native
   def update(
-    instance: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[T]],
+    instance: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[T]],
     spec: tcombLib.UpdatePatch
-  ): ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[T]] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[T]] = js.native
 }
 

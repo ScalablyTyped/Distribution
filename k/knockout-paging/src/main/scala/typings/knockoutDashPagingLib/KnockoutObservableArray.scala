@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(knockoutDashPagingLib.KnockoutObservableArrayFunctions because Already inherited // Ko specific
-/ * key * / ScalablyTyped.runtime.StringDictionary[knockoutDashPagingLib.KnockoutBindingHandler])*/
+/ * key * / org.scalablytyped.runtime.StringDictionary[knockoutDashPagingLib.KnockoutBindingHandler])*/
 @js.native
 trait KnockoutObservableArray[T]
   extends KnockoutObservable[js.Array[T]] {

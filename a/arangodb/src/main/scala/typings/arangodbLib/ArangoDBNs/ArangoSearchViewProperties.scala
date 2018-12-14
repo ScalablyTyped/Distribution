@@ -11,7 +11,7 @@ trait ArangoSearchViewProperties extends js.Object {
   var consolidationIntervalMsec: scala.Double
   var consolidationPolicy: arangodbLib.Anon_ThresholdType
   var id: java.lang.String
-  var links: ScalablyTyped.runtime.StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]
+  var links: org.scalablytyped.runtime.StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]
   var name: java.lang.String
   var `type`: arangodbLib.arangodbLibStrings.arangosearch
 }

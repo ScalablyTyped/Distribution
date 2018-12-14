@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mongoose-mock", JSImport.Namespace)
 @js.native
 object mongooseDashMockMod
-  extends ScalablyTyped.runtime.TopLevel[mongooseLib.mongooseMod.Mongoose]
+  extends org.scalablytyped.runtime.TopLevel[mongooseLib.mongooseMod.Mongoose]
 

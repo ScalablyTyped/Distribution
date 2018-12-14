@@ -13,7 +13,7 @@ trait Request
   /** available when bodyParser plugin is used. */
   var body: js.UndefOr[js.Any] = js.native
   /** available when serveStatic plugin is used. */
-  var files: js.UndefOr[ScalablyTyped.runtime.StringDictionary[RequestFileInterface]] = js.native
+  var files: js.UndefOr[org.scalablytyped.runtime.StringDictionary[RequestFileInterface]] = js.native
   /** bunyan logger you can piggyback on. */
   var log: bunyanLib.bunyanMod.namespaced = js.native
   /** available when queryParser or bodyParser plugin is used with mapParams enabled. */

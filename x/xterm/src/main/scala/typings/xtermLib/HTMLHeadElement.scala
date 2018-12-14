@@ -11,5 +11,5 @@ trait HTMLHeadElement extends HTMLElement
 @JSGlobal("HTMLHeadElement")
 @js.native
 object HTMLHeadElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLHeadElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLHeadElement]
 

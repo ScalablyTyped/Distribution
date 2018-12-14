@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DragAndDropOptions extends js.Object {
   var formatConstructors: js.UndefOr[
     js.Array[
-      ScalablyTyped.runtime.Instantiable0[openlayersLib.openlayersMod.formatNs.Feature]
+      org.scalablytyped.runtime.Instantiable0[openlayersLib.openlayersMod.formatNs.Feature]
     ]
   ] = js.undefined
   var projection: openlayersLib.openlayersMod.ProjectionLike

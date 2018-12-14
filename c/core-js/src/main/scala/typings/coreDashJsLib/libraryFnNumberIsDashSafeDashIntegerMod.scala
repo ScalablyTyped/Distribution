@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/number/is-safe-integer", JSImport.Namespace)
 @js.native
 object libraryFnNumberIsDashSafeDashIntegerMod
-  extends ScalablyTyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Any]
 

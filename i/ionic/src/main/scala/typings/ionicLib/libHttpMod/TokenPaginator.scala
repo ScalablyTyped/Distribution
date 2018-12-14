@@ -13,7 +13,7 @@ class TokenPaginator[T /* <: ionicLib.definitionsMod.Response[js.Array[js.Object
   var client: ionicLib.definitionsMod.IClient = js.native
   @JSName("guard")
   var guard_Original: ionicLib.definitionsMod.PaginatorGuard[T] = js.native
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[TokenPaginator[T]] = js.native
   var max: js.UndefOr[scala.Double] = js.native
   @JSName("reqgen")

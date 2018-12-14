@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Errors extends js.Object {
-  var validation: ScalablyTyped.runtime.StringDictionary[jjvLib.Anon_Required]
+  var validation: org.scalablytyped.runtime.StringDictionary[jjvLib.Anon_Required]
 }
 

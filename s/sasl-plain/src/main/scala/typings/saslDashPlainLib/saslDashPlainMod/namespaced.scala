@@ -18,7 +18,7 @@ class namespaced () extends PlainMechanism {
   /* CompleteClass */
   override def challenge(chal: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
-  override def response(cred: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  override def response(cred: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   /* CompleteClass */
   override def response(cred: saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials): java.lang.String = js.native
 }

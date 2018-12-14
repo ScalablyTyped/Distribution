@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait pdfMakeStatic extends js.Object {
-  var fonts: ScalablyTyped.runtime.StringDictionary[TFontFamilyTypes]
+  var fonts: org.scalablytyped.runtime.StringDictionary[TFontFamilyTypes]
   var vfs: TFontFamily
   def createPdf(documentDefinitions: TDocumentDefinitions): TCreatedPdf
 }

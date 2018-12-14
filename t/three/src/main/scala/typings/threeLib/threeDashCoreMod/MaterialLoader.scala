@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class MaterialLoader () extends js.Object {
   def this(manager: LoadingManager) = this()
   var manager: LoadingManager = js.native
-  var textures: ScalablyTyped.runtime.StringDictionary[Texture] = js.native
+  var textures: org.scalablytyped.runtime.StringDictionary[Texture] = js.native
   def getTexture(name: java.lang.String): Texture = js.native
   def load(url: java.lang.String, onLoad: js.Function1[/* material */ Material, scala.Unit]): scala.Unit = js.native
   def load(
@@ -25,6 +25,6 @@ class MaterialLoader () extends js.Object {
     onError: js.Function1[/* event */ stdLib.Error | stdLib.ErrorEvent, scala.Unit]
   ): scala.Unit = js.native
   def parse(json: js.Any): Material = js.native
-  def setTextures(textures: ScalablyTyped.runtime.StringDictionary[Texture]): scala.Unit = js.native
+  def setTextures(textures: org.scalablytyped.runtime.StringDictionary[Texture]): scala.Unit = js.native
 }
 

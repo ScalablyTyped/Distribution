@@ -39,7 +39,7 @@ class Node protected () extends IBehaviorAware[Node] {
   var _onDisposeObserver: js.Any = js.native
   var _parentNode: js.Any = js.native
   var _parentRenderId: js.Any = js.native
-  var _ranges: ScalablyTyped.runtime.StringDictionary[Nullable[AnimationRange]] = js.native
+  var _ranges: org.scalablytyped.runtime.StringDictionary[Nullable[AnimationRange]] = js.native
   /** @hidden */
   var _scene: Scene = js.native
   /** @hidden */

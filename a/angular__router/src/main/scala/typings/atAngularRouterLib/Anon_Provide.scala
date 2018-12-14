@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Provide extends js.Object {
   var deps: js.Array[
-    ScalablyTyped.runtime.Instantiable1[
+    org.scalablytyped.runtime.Instantiable1[
       /* injector */ atAngularCoreLib.coreMod.Injector, 
       atAngularRouterLib.srcRouterUnderscoreModuleMod.RouterInitializer
     ]

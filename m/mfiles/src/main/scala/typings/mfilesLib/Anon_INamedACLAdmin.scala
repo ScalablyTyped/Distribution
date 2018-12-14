@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_INamedACLAdmin
-  extends ScalablyTyped.runtime.Instantiable0[INamedACLAdmin]
+  extends org.scalablytyped.runtime.Instantiable0[INamedACLAdmin]
 

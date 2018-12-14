@@ -22,6 +22,6 @@ class default protected () extends AttributorStore {
   /* CompleteClass */
   override def move(target: parchmentLib.distSrcBlotAbstractBlotMod.Formattable): scala.Unit = js.native
   /* CompleteClass */
-  override def values(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  override def values(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 

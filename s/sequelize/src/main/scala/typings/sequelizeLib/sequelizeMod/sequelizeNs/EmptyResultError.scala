@@ -11,5 +11,5 @@ trait EmptyResultError
      with /**
          * Thrown when a record was not found, Usually used with rejectOnEmpty mode (see message for details)
          */
-ScalablyTyped.runtime.Instantiable1[/* parent */ nodeLib.Error, EmptyResultError]
+org.scalablytyped.runtime.Instantiable1[/* parent */ nodeLib.Error, EmptyResultError]
 

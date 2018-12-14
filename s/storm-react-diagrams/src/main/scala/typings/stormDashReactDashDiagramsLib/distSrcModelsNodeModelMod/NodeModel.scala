@@ -16,7 +16,7 @@ class NodeModel ()
   def this(nodeType: java.lang.String, id: java.lang.String) = this()
   var extras: js.Any = js.native
   var height: scala.Double = js.native
-  var ports: ScalablyTyped.runtime.StringDictionary[stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel] = js.native
+  var ports: org.scalablytyped.runtime.StringDictionary[stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel] = js.native
   var width: scala.Double = js.native
   var x: scala.Double = js.native
   var y: scala.Double = js.native
@@ -24,7 +24,7 @@ class NodeModel ()
   def doClone(lookupTable: js.Object, clone: js.Any): scala.Unit = js.native
   def getPort(name: java.lang.String): stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel | scala.Null = js.native
   def getPortFromID(id: js.Any): stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel | scala.Null = js.native
-  def getPorts(): ScalablyTyped.runtime.StringDictionary[stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel] = js.native
+  def getPorts(): org.scalablytyped.runtime.StringDictionary[stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel] = js.native
   def removePort(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): scala.Unit = js.native
   def setPosition(x: js.Any, y: js.Any): scala.Unit = js.native
   def updateDimensions(hasWidthHeight: stormDashReactDashDiagramsLib.Anon_Height): scala.Unit = js.native

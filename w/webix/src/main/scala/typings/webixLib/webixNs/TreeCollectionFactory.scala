@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TreeCollectionFactory
-  extends ScalablyTyped.runtime.Instantiable0[TreeCollection]
-     with ScalablyTyped.runtime.Instantiable1[/* config */ TreeCollectionConfig, TreeCollection]
+  extends org.scalablytyped.runtime.Instantiable0[TreeCollection]
+     with org.scalablytyped.runtime.Instantiable1[/* config */ TreeCollectionConfig, TreeCollection]
 

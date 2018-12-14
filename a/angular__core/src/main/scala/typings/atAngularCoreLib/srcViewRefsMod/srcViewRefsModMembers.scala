@@ -13,8 +13,8 @@ object srcViewRefsModMembers extends js.Object {
     selector: java.lang.String,
     componentType: atAngularCoreLib.srcTypeMod.Type[_],
     viewDefFactory: atAngularCoreLib.srcViewTypesMod.ViewDefinitionFactory,
-    inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ngContentSelectors: js.Array[java.lang.String]
   ): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[_] = js.native
   def createComponentFactory(
@@ -22,7 +22,7 @@ object srcViewRefsModMembers extends js.Object {
     componentType: atAngularCoreLib.srcTypeMod.Type[_],
     viewDefFactory: atAngularCoreLib.srcViewTypesMod.ViewDefinitionFactory,
     inputs: scala.Null,
-    outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ngContentSelectors: js.Array[java.lang.String]
   ): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[_] = js.native
   def createInjector(view: atAngularCoreLib.srcViewTypesMod.ViewData, elDef: atAngularCoreLib.srcViewTypesMod.NodeDef): atAngularCoreLib.srcDiInjectorMod.Injector = js.native

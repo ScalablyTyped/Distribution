@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait SimpleChanges
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[
       atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectionUnderscoreUtilMod.SimpleChange
     ]
 

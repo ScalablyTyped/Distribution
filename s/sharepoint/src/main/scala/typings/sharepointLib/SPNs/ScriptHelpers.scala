@@ -13,12 +13,12 @@ class ScriptHelpers () extends js.Object
 @js.native
 object ScriptHelpers extends js.Object {
   def disableWebpartSelection(context: sharepointLib.SPClientTemplatesNs.RenderContext): scala.Unit = js.native
-  def getDocumentQueryPairs(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def getDocumentQueryPairs(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def getFieldFromSchema(schema: sharepointLib.SPClientTemplatesNs.ListSchema, fieldName: java.lang.String): sharepointLib.SPClientTemplatesNs.FieldSchema = js.native
   def getLayoutsPageUrl(pageName: java.lang.String, webServerRelativeUrl: java.lang.String): java.lang.String = js.native
   def getListLevelPermissionMask(jsonItem: java.lang.String): scala.Double = js.native
   def getTextAreaElementValue(textAreaElement: stdLib.HTMLTextAreaElement): java.lang.String = js.native
-  def getUrlQueryPairs(docUrl: java.lang.String): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def getUrlQueryPairs(docUrl: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def getUserFieldProperty(item: sharepointLib.SPNs.ListItem[_], fieldName: java.lang.String, propertyName: java.lang.String): js.Any = js.native
   def hasPermission(listPermissionMask: scala.Double, listPermission: sharepointLib.SPNs.ListLevelPermissionMask): scala.Boolean = js.native
   def isNullOrEmptyString(str: java.lang.String): scala.Boolean = js.native

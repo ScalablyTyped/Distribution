@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ThemedComponentClass[P, S]
   extends reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]
-     with ScalablyTyped.runtime.Instantiable0[ThemedComponent[P, S]]
+     with org.scalablytyped.runtime.Instantiable0[ThemedComponent[P, S]]
 

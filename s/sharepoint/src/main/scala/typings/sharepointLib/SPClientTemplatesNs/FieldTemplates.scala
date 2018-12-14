@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FieldTemplates
-  extends /* fieldInternalName */ ScalablyTyped.runtime.StringDictionary[FieldCallback]
+  extends /* fieldInternalName */ org.scalablytyped.runtime.StringDictionary[FieldCallback]
 

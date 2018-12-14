@@ -11,7 +11,7 @@ trait LinkProps
      with /**
    * Additional parameters passed to anchor element.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * If true, adds active style to link.
      * @default false

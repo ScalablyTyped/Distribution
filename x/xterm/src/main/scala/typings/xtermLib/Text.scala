@@ -22,6 +22,6 @@ trait Text
 @JSGlobal("Text")
 @js.native
 object Text
-  extends ScalablyTyped.runtime.Instantiable0[Text]
-     with ScalablyTyped.runtime.Instantiable1[/* data */ java.lang.String, Text]
+  extends org.scalablytyped.runtime.Instantiable0[Text]
+     with org.scalablytyped.runtime.Instantiable1[/* data */ java.lang.String, Text]
 

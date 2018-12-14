@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IWallabyBuiltInCompilerOptions
-  extends /* option */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* option */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

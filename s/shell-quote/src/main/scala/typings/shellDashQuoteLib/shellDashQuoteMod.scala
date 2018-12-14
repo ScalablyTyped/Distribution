@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object shellDashQuoteMod extends js.Object {
   def parse(cmd: java.lang.String): js.Array[java.lang.String] = js.native
-  def parse(cmd: java.lang.String, env: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Array[java.lang.String] = js.native
-  def parse(
-    cmd: java.lang.String,
-    env: ScalablyTyped.runtime.StringDictionary[java.lang.String],
-    opts: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  ): js.Array[java.lang.String] = js.native
   def parse(cmd: java.lang.String, env: js.Function1[/* key */ java.lang.String, java.lang.String | js.Object]): js.Array[java.lang.String] = js.native
   def parse(
     cmd: java.lang.String,
     env: js.Function1[/* key */ java.lang.String, java.lang.String | js.Object],
-    opts: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    opts: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  def parse(cmd: java.lang.String, env: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Array[java.lang.String] = js.native
+  def parse(
+    cmd: java.lang.String,
+    env: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    opts: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Array[java.lang.String] = js.native
   def quote(args: js.Array[java.lang.String]): java.lang.String = js.native
 }

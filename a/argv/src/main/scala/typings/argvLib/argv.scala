@@ -21,7 +21,7 @@ trait argv extends js.Object {
   var run: js.Function1[/* argv */ js.UndefOr[js.Array[java.lang.String]], args]
   // Creates custom type function
   var `type`: js.Function2[
-    /* name */ java.lang.String | ScalablyTyped.runtime.StringDictionary[typeFunction], 
+    /* name */ java.lang.String | org.scalablytyped.runtime.StringDictionary[typeFunction], 
     /* callback */ js.UndefOr[typeFunction], 
     _
   ]

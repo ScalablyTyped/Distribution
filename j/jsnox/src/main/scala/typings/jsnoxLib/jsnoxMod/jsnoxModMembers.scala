@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("jsnox", JSImport.Namespace)
 @js.native
 object jsnoxModMembers
-  extends ScalablyTyped.runtime.TopLevel[jsnoxLib.Module]
+  extends org.scalablytyped.runtime.TopLevel[jsnoxLib.Module]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_I[T]
-  extends /* i */ ScalablyTyped.runtime.NumberDictionary[T] {
+  extends /* i */ org.scalablytyped.runtime.NumberDictionary[T] {
   var buffer: nodeLib.Buffer
   var length: scala.Double
   def inspect(): java.lang.String

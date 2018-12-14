@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IBackupJob
-  extends ScalablyTyped.runtime.Instantiable0[IBackupJob]
+  extends org.scalablytyped.runtime.Instantiable0[IBackupJob]
 

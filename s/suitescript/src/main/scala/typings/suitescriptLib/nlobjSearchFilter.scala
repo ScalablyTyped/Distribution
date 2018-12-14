@@ -30,7 +30,7 @@ trait nlobjSearchFilter
      * @param value2
      * @return
      */
-ScalablyTyped.runtime.Instantiable5[
+org.scalablytyped.runtime.Instantiable5[
       /* name */ java.lang.String, 
       /* join */ java.lang.String, 
       /* operator */ java.lang.String, 

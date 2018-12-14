@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Set
-  extends ScalablyTyped.runtime.Instantiable0[Set]
-     with ScalablyTyped.runtime.Instantiable1[/* members */ js.Array[Element], Set] {
+  extends org.scalablytyped.runtime.Instantiable0[Set]
+     with org.scalablytyped.runtime.Instantiable1[/* members */ js.Array[Element], Set] {
   def add(elments: Element*): this.type = js.native
   def bbox(): BBox = js.native
   def clear(): this.type = js.native

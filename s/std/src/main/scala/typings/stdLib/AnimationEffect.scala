@@ -16,5 +16,5 @@ trait AnimationEffect extends js.Object {
 @JSGlobal("AnimationEffect")
 @js.native
 object AnimationEffect
-  extends ScalablyTyped.runtime.Instantiable0[AnimationEffect]
+  extends org.scalablytyped.runtime.Instantiable0[AnimationEffect]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait InputObjectFieldMap
-  extends /* fieldName */ ScalablyTyped.runtime.StringDictionary[InputObjectField]
+  extends /* fieldName */ org.scalablytyped.runtime.StringDictionary[InputObjectField]
 

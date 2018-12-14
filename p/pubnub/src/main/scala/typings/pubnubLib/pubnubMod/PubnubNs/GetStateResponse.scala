@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait GetStateResponse extends js.Object {
-  var channels: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var channels: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

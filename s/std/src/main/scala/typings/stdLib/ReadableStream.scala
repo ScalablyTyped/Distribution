@@ -22,14 +22,14 @@ trait ReadableStream[R] extends js.Object {
 @JSGlobal("ReadableStream")
 @js.native
 object ReadableStream
-  extends ScalablyTyped.runtime.Instantiable0[ReadableStream[js.Object]]
-     with ScalablyTyped.runtime.Instantiable1[
-      (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
-      ReadableStream[Uint8Array] | ReadableStream[js.Object]
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[ReadableStream[js.Object]]
+     with org.scalablytyped.runtime.Instantiable2[
       (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
       (/* strategy */ Anon_HighWaterMark) | (/* strategy */ QueuingStrategy[js.Object]), 
+      ReadableStream[Uint8Array] | ReadableStream[js.Object]
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
       ReadableStream[Uint8Array] | ReadableStream[js.Object]
     ]
 

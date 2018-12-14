@@ -22,7 +22,7 @@ trait nlobjAssistant
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * add a field to this page and return it.
        * @param {string} name field name

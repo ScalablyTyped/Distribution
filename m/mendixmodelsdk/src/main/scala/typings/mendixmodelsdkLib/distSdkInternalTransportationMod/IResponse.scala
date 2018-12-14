@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait IResponse extends js.Object {
-  var headers: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var headers: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

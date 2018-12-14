@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IMocks
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[IMockFn]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[IMockFn]
 

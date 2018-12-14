@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Taglib extends js.Object {
-  var attributeGroups: ScalablyTyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderAttributeMod.default] = js.native
-  var attributes: ScalablyTyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderAttributeMod.default] = js.native
+  var attributeGroups: org.scalablytyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderAttributeMod.default] = js.native
+  var attributes: org.scalablytyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderAttributeMod.default] = js.native
   var dirname: java.lang.String = js.native
   var filePath: java.lang.String = js.native
   var id: java.lang.String = js.native
@@ -18,7 +18,7 @@ trait Taglib extends js.Object {
   /** @deprecated */
   var path: java.lang.String = js.native
   var patternAttributes: js.Array[markoLib.srcCompilerTaglibDashLoaderAttributeMod.default] = js.native
-  var tags: ScalablyTyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced] = js.native
+  var tags: org.scalablytyped.runtime.StringDictionary[markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced] = js.native
   var textTransformers: js.Array[markoLib.srcCompilerTaglibDashLoaderTransformerMod.default] = js.native
   var transformers: js.Array[markoLib.srcCompilerTaglibDashLoaderTransformerMod.default] = js.native
   def addAttribute(attribute: markoLib.srcCompilerTaglibDashLoaderAttributeMod.default): scala.Unit = js.native

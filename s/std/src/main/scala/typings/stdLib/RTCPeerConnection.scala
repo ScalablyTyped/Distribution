@@ -404,8 +404,8 @@ trait RTCPeerConnection extends EventTarget {
 @JSGlobal("RTCPeerConnection")
 @js.native
 object RTCPeerConnection
-  extends ScalablyTyped.runtime.Instantiable0[RTCPeerConnection]
-     with ScalablyTyped.runtime.Instantiable1[/* configuration */ RTCConfiguration, RTCPeerConnection] {
+  extends org.scalablytyped.runtime.Instantiable0[RTCPeerConnection]
+     with org.scalablytyped.runtime.Instantiable1[/* configuration */ RTCConfiguration, RTCPeerConnection] {
   def generateCertificate(keygenAlgorithm: stdLib.AlgorithmIdentifier): js.Promise[stdLib.RTCCertificate] = js.native
   def getDefaultIceServers(): js.Array[stdLib.RTCIceServer] = js.native
 }

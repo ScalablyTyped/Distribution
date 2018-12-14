@@ -75,7 +75,7 @@ trait HTMLViewProps extends js.Object {
        */
   var rootComponentProps: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewProperties] = js.undefined
   var stylesheet: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       reactDashNativeLib.reactDashNativeMod.StyleProp[
         reactDashNativeLib.reactDashNativeMod.ViewStyle | reactDashNativeLib.reactDashNativeMod.TextStyle | reactDashNativeLib.reactDashNativeMod.ImageStyle
       ]

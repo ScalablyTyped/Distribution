@@ -23,7 +23,7 @@ trait SourceRepository extends js.Object {
        * The friendly name of the repository.
        */
   var name: java.lang.String
-  var properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The name of the source provider the repository is from.
        */

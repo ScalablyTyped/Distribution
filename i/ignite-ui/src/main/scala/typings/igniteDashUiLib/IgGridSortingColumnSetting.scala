@@ -10,7 +10,7 @@ trait IgGridSortingColumnSetting
   extends /**
 	 * Option for IgGridSortingColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Enables/disables sorting on the specified column. By default all columns are sortable.
   	 *

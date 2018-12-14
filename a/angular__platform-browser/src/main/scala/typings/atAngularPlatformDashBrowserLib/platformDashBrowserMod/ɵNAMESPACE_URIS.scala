@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/platform-browser", "ɵNAMESPACE_URIS")
 @js.native
 object ɵNAMESPACE_URIS
-  extends /* ns */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* ns */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

@@ -10,7 +10,7 @@ trait ErrorContext extends js.Object {
   /**
            * attributes passed into the Boom method call
            */
-  var attributes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var attributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * Boom method to call (eg. unauthorized)
            */

@@ -18,7 +18,7 @@ trait Request extends js.Object {
   /**
        * The headers of the HTTP request.
        */
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   /**
        * The hostname of the request.
        */
@@ -31,7 +31,7 @@ trait Request extends js.Object {
        * The path parameters of the HTTP request. Each `{param}` in the matched
        * route is available as a property of this oject.
        */
-  var params: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var params: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The raw path from the HTTP request.
        */
@@ -43,7 +43,7 @@ trait Request extends js.Object {
   /**
        * The query parameters parsed from the query string of the request URL.
        */
-  var query: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+  var query: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   /**
        * The headers of the HTTP request.
        */

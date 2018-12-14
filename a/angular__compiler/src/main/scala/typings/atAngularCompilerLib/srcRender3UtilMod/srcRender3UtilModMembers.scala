@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object srcRender3UtilModMembers extends js.Object {
   def convertMetaToOutput(meta: js.Any, ctx: atAngularCompilerLib.srcUtilMod.OutputContext): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def mapToMapExpression(
-    map: ScalablyTyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression]
+    map: org.scalablytyped.runtime.StringDictionary[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression]
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralMapExpr = js.native
   def typeWithParameters(`type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression, numParams: scala.Double): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExpressionType = js.native
 }

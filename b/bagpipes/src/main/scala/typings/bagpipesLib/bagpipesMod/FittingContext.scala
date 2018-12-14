@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait FittingContext
-  extends /* prop */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * The input defined in the fitting definition
        * (string, number, object, array)

@@ -14,7 +14,7 @@ trait HttpServerConstructor
      * computation (like setting up a set of routes).  The function returned can then utilize the
      * results of that computation.
      */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* name */ java.lang.String, 
       /* createRequestListener */ RequestListenerFactory, 
       HttpServer
@@ -26,7 +26,7 @@ ScalablyTyped.runtime.Instantiable2[
      * computation (like setting up a set of routes).  The function returned can then utilize the
      * results of that computation.
      */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* name */ java.lang.String, 
       /* createRequestListener */ RequestListenerFactory, 
       /* opts */ atPulumiPulumiLib.resourceMod.ResourceOptions, 

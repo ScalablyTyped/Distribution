@@ -28,5 +28,5 @@ package object MemcachedNs {
        * to connect to servers with weight use
        * {"127.0.0.1:11211": 1,"127.0.0.1:11212": 2}
        */
-  type Location = java.lang.String | js.Array[java.lang.String] | ScalablyTyped.runtime.StringDictionary[scala.Double]
+  type Location = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Double]
 }

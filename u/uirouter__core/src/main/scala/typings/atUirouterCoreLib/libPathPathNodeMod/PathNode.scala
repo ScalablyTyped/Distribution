@@ -15,7 +15,7 @@ class PathNode protected () extends js.Object {
   /** The parameters declared on the state */
   var paramSchema: js.Array[atUirouterCoreLib.libParamsParamMod.Param] = js.native
   /** The parameter values that belong to the state */
-  var paramValues: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var paramValues: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /** The individual (stateful) resolvable objects that belong to the state */
   var resolvables: js.Array[atUirouterCoreLib.libResolveResolvableMod.Resolvable] = js.native
   /** The state being entered, exited, or retained */

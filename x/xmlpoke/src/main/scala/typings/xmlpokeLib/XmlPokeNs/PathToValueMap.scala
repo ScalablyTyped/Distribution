@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PathToValueMap
-  extends /* xpath */ ScalablyTyped.runtime.StringDictionary[Value]
+  extends /* xpath */ org.scalablytyped.runtime.StringDictionary[Value]
 

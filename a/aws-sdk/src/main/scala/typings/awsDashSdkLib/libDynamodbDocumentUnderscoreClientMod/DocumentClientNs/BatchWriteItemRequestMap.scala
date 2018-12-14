@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait BatchWriteItemRequestMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[WriteRequests]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[WriteRequests]
 

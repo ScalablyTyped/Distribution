@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PackedFeature
-  extends /* encodedKey */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* encodedKey */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLFormElement
   extends HTMLElement
-     with /* index */ ScalablyTyped.runtime.NumberDictionary[Element]
-     with /* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[Element]
+     with /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Sets or retrieves a list of character encodings for input data that must be accepted by the server processing the form.
        */
@@ -131,5 +131,5 @@ trait HTMLFormElement
 @JSGlobal("HTMLFormElement")
 @js.native
 object HTMLFormElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLFormElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLFormElement]
 

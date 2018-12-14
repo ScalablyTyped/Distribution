@@ -11,7 +11,7 @@ object strmapNs extends js.Object {
   @js.native
   class StrMap[A] protected ()
     extends fpDashTsLib.libStrMapMod.StrMap[A] {
-    def this(value: ScalablyTyped.runtime.StringDictionary[A]) = this()
+    def this(value: org.scalablytyped.runtime.StringDictionary[A]) = this()
   }
   
   val URI: /* StrMap */ java.lang.String = js.native

@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Constructor
   extends sugarLib.sugarjsNs.SugarNamespace
-     with ScalablyTyped.runtime.Instantiable1[
-      (/* obj */ scala.Double) | (/* obj */ stdLib.ArrayLike[js.Object]), 
-      Chainable[js.Object, js.Array[js.Object]]
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable0[Chainable[js.Object, js.Array[js.Object]]]
+     with org.scalablytyped.runtime.Instantiable2[
       (/* obj */ scala.Double) | (/* obj */ stdLib.ArrayLike[js.Object]), 
       /* clone */ scala.Boolean, 
       Chainable[js.Object, js.Array[js.Object]]
     ]
-     with ScalablyTyped.runtime.Instantiable0[Chainable[js.Object, js.Array[js.Object]]] {
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* obj */ scala.Double) | (/* obj */ stdLib.ArrayLike[js.Object]), 
+      Chainable[js.Object, js.Array[js.Object]]
+    ] {
   def apply[T](): Chainable[T, js.Array[T]] = js.native
   def apply[T](obj: scala.Double): Chainable[T, js.Array[T]] = js.native
   def apply[T](obj: scala.Double, clone: scala.Boolean): Chainable[T, js.Array[T]] = js.native

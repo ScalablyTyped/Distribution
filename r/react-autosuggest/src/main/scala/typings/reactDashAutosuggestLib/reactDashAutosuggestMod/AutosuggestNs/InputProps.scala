@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* RemoveDifficultInheritance: 
 - Lifted 1 members from Set(std.Pick) */ 
 trait InputProps[TSuggestion]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var onBlur: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.FormEvent[_], 

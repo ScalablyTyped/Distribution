@@ -15,8 +15,8 @@ trait AnimationEvent extends Event {
 @JSGlobal("AnimationEvent")
 @js.native
 object AnimationEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, AnimationEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, AnimationEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* animationEventInitDict */ AnimationEventInit, 
       AnimationEvent

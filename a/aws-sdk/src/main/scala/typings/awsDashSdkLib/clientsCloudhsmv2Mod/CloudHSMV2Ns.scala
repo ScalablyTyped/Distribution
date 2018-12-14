@@ -319,11 +319,11 @@ object CloudHSMV2Ns extends js.Object {
   
   
   trait ExternalSubnetMapping
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[SubnetId]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[SubnetId]
   
   
   trait Filters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Strings]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Strings]
   
   
   trait Hsm extends js.Object {

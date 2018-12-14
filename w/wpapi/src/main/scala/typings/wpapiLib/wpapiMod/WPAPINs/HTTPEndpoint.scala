@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait HTTPEndpoint extends js.Object {
-  var args: ScalablyTyped.runtime.StringDictionary[HTTPArgument]
+  var args: org.scalablytyped.runtime.StringDictionary[HTTPArgument]
   var methods: js.Array[HTTPMethod]
 }
 

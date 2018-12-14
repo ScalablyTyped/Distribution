@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("string-template/compile", JSImport.Namespace)
 @js.native
 object compileMod
-  extends ScalablyTyped.runtime.TopLevel[stringDashTemplateLib.StringTemplateNs.Compile]
+  extends org.scalablytyped.runtime.TopLevel[stringDashTemplateLib.StringTemplateNs.Compile]
 

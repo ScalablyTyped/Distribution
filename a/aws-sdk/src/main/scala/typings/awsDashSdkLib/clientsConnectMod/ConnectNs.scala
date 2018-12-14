@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ConnectNs extends js.Object {
   
   trait Attributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait ClientApiVersions extends js.Object {

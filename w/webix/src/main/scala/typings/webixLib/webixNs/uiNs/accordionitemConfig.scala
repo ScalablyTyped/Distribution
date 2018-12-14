@@ -28,8 +28,8 @@ trait accordionitemConfig extends js.Object {
   var minWidth: js.UndefOr[scala.Double] = js.undefined
   var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
   var on: js.UndefOr[webixLib.webixNs.EventHash] = js.undefined
-  var onClick: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var onContext: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var onDblClick: js.UndefOr[webixLib.webixNs.WebixCallback] = js.undefined
   var onMouseMove: js.UndefOr[webixLib.webixNs.WebixCallback] = js.undefined
   var view: js.UndefOr[java.lang.String] = js.undefined

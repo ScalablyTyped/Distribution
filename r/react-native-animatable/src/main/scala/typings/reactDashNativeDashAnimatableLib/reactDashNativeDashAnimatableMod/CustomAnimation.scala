@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CustomAnimation[T]
-  extends /* progress */ ScalablyTyped.runtime.NumberDictionary[T] {
+  extends /* progress */ org.scalablytyped.runtime.NumberDictionary[T] {
   var easing: js.UndefOr[reactDashNativeDashAnimatableLib.Easing] = js.undefined
   var from: js.UndefOr[T] = js.undefined
   var style: js.UndefOr[T] = js.undefined

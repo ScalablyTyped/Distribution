@@ -33,7 +33,7 @@ class EngineReportingExtension[TContext] protected ()
   @JSName("willResolveField")
   def willResolveField_MEngineReportingExtension(
     _source: js.Any,
-    _args: ScalablyTyped.runtime.StringDictionary[js.Any],
+    _args: org.scalablytyped.runtime.StringDictionary[js.Any],
     _context: TContext,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
   ): (js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ js.Any, scala.Unit]) | scala.Unit = js.native

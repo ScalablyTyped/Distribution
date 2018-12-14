@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait OAuthScope
-  extends /* scopeName */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* scopeName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

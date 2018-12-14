@@ -10,7 +10,7 @@ trait IgQRCodeBarcode
   extends /**
 	 * Option for igQRCodeBarcode
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets the Application Indicator assigned to identify the specification concerned by AIM International.
   	 * The value is respected only when the Fnc1Mode is set to Industry. Its value may take the form of any single Latin alphabetic character from the set {a - z, A - Z} or a two-digit number.

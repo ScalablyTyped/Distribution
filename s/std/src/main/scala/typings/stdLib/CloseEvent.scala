@@ -24,6 +24,6 @@ trait CloseEvent extends Event {
 @JSGlobal("CloseEvent")
 @js.native
 object CloseEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, CloseEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ CloseEventInit, CloseEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, CloseEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ CloseEventInit, CloseEvent]
 

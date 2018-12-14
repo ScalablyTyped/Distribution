@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ParsedArgs
-  extends /* arg */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* arg */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * If opts['--'] is true, populated with everything after the --
            */

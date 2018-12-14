@@ -15,5 +15,5 @@ trait CSSGroupingRule extends CSSRule {
 @JSGlobal("CSSGroupingRule")
 @js.native
 object CSSGroupingRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSGroupingRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSGroupingRule]
 

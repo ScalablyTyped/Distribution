@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait PluralPropsWithoutI18n
   extends atLinguiMacroLib.renderMod.RenderProps
-     with /* exact */ ScalablyTyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode] {
+     with /* exact */ org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode] {
   var few: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var many: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

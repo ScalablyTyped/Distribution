@@ -10,7 +10,7 @@ trait RadioProps
   extends /**
    * Additional properties passed to Radio container.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * If true, the input element will be selected by default. Transferred from the parent.
      * @default false

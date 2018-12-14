@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SVGEdgeLabels
-  extends /* renderType */ ScalablyTyped.runtime.StringDictionary[SVGObject[Edge]]
+  extends /* renderType */ org.scalablytyped.runtime.StringDictionary[SVGObject[Edge]]
 

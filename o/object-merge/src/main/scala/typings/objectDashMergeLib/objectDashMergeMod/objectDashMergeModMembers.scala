@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("object-merge", JSImport.Namespace)
 @js.native
 object objectDashMergeModMembers
-  extends ScalablyTyped.runtime.TopLevel[ObjectMerge]
+  extends org.scalablytyped.runtime.TopLevel[ObjectMerge]
 

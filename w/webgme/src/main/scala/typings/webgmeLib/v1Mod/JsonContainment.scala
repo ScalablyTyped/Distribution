@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait JsonContainment
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[JsonContainment]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[JsonContainment]
 

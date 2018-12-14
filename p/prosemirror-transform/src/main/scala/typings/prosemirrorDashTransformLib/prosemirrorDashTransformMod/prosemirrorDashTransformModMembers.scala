@@ -33,12 +33,12 @@ object prosemirrorDashTransformModMembers extends js.Object {
   def findWrapping[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     range: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeRange[S],
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any]
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.UndefOr[js.Array[prosemirrorDashTransformLib.Anon_Type[S]] | scala.Null] = js.native
   def findWrapping[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     range: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeRange[S],
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     innerRange: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeRange[S]
   ): js.UndefOr[js.Array[prosemirrorDashTransformLib.Anon_Type[S]] | scala.Null] = js.native
   def insertPoint[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](

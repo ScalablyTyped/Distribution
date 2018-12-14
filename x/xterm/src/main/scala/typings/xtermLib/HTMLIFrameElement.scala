@@ -135,5 +135,5 @@ trait HTMLIFrameElement
 @JSGlobal("HTMLIFrameElement")
 @js.native
 object HTMLIFrameElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLIFrameElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLIFrameElement]
 

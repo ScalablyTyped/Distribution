@@ -35,5 +35,5 @@ trait SVGFEComponentTransferElement
 @JSGlobal("SVGFEComponentTransferElement")
 @js.native
 object SVGFEComponentTransferElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEComponentTransferElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEComponentTransferElement]
 

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BigInt64ArrayConstructor
-  extends ScalablyTyped.runtime.Instantiable0[BigInt64Array]
-     with ScalablyTyped.runtime.Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ scala.Double, BigInt64Array]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable0[BigInt64Array]
+     with org.scalablytyped.runtime.Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ scala.Double, BigInt64Array]
+     with org.scalablytyped.runtime.Instantiable3[
       /* buffer */ ArrayBufferLike, 
       /* byteOffset */ scala.Double, 
       /* length */ scala.Double, 
       BigInt64Array
     ]
-     with ScalablyTyped.runtime.Instantiable1[
+     with org.scalablytyped.runtime.Instantiable1[
       (/* length */ scala.Double) | (/* array */ Iterable[BigInt]) | (/* buffer */ ArrayBufferLike), 
       BigInt64Array
     ] {

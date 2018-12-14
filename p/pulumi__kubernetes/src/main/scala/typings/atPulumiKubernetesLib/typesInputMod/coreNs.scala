@@ -240,7 +240,7 @@ object coreNs extends js.Object {
                    */
       var volumeAttributes: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -527,7 +527,7 @@ object coreNs extends js.Object {
                    */
       var data: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -1563,7 +1563,7 @@ object coreNs extends js.Object {
                    */
       var options: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -1599,7 +1599,7 @@ object coreNs extends js.Object {
                    */
       var options: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -3628,7 +3628,7 @@ object coreNs extends js.Object {
                    */
       var nodeSelector: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -4252,7 +4252,7 @@ object coreNs extends js.Object {
                    */
       var selector: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -4650,7 +4650,7 @@ object coreNs extends js.Object {
                    */
       var stringData: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -5173,7 +5173,7 @@ object coreNs extends js.Object {
                    */
       var selector: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**

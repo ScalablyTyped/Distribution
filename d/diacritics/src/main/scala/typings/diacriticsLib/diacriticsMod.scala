@@ -12,7 +12,7 @@ object diacriticsMod extends js.Object {
   def remove(str: java.lang.String): java.lang.String = js.native
   @js.native
   object diacriticsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
 }
 

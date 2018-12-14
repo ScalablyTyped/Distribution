@@ -30,7 +30,7 @@ trait NodePowershell extends js.Object {
            */
   def addCommand(
     command: java.lang.String,
-    params: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String] | java.lang.String]
+    params: js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   ): js.Promise[js.Array[java.lang.String]] = js.native
   /**
            * Releases all resources used by the shell object and closes the PowerShell child_process.

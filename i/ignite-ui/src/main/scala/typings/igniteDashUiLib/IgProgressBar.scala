@@ -10,7 +10,7 @@ trait IgProgressBar
   extends /**
 	 * Option for igProgressBar
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var animate: js.UndefOr[scala.Boolean] = js.undefined
   var animateTimeout: js.UndefOr[scala.Double] = js.undefined
   var change: js.UndefOr[ChangeEvent] = js.undefined

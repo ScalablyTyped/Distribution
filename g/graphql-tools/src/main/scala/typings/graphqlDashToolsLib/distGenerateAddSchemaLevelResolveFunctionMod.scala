@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object distGenerateAddSchemaLevelResolveFunctionMod extends js.Object {
   def default(
     schema: graphqlLib.graphqlMod.GraphQLSchema,
-    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Unit = js.native
 }
 

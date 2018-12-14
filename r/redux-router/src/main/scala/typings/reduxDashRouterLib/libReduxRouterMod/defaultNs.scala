@@ -39,7 +39,7 @@ object defaultNs extends js.Object {
   def generatePath(pattern: java.lang.String): java.lang.String = js.native
   def generatePath(
     pattern: java.lang.String,
-    params: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
   ): java.lang.String = js.native
   def matchPath[Params /* <: reduxDashRouterLib.reduxDashRouterLibStrings.matchPath with js.Any */](pathname: java.lang.String, props: java.lang.String): reactDashRouterLib.reactDashRouterMod.`match`[Params] | scala.Null = js.native
   def matchPath[Params /* <: reduxDashRouterLib.reduxDashRouterLibStrings.matchPath with js.Any */](

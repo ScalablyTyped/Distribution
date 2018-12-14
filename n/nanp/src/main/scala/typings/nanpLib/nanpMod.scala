@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("nanp", JSImport.Namespace)
 @js.native
 object nanpMod
-  extends ScalablyTyped.runtime.TopLevel[Nanp]
+  extends org.scalablytyped.runtime.TopLevel[Nanp]
 

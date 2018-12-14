@@ -13,20 +13,20 @@ class DiagramEngine ()
   var canvasMatrix: js.Array[js.Array[scala.Double]] = js.native
   var diagramModel: stormDashReactDashDiagramsLib.distSrcModelsDiagramModelMod.DiagramModel = js.native
   var hAdjustmentFactor: scala.Double = js.native
-  var labelFactories: ScalablyTyped.runtime.StringDictionary[
+  var labelFactories: org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractLabelFactoryMod.AbstractLabelFactory[stormDashReactDashDiagramsLib.distSrcModelsLabelModelMod.LabelModel]
   ] = js.native
-  var linkFactories: ScalablyTyped.runtime.StringDictionary[
+  var linkFactories: org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractLinkFactoryMod.AbstractLinkFactory[
       stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
     ]
   ] = js.native
   var maxNumberPointsPerLink: scala.Double = js.native
-  var nodeFactories: ScalablyTyped.runtime.StringDictionary[
+  var nodeFactories: org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractNodeFactoryMod.AbstractNodeFactory[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel]
   ] = js.native
   var nodesRendered: scala.Boolean = js.native
-  var portFactories: ScalablyTyped.runtime.StringDictionary[
+  var portFactories: org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractPortFactoryMod.AbstractPortFactory[stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel]
   ] = js.native
   var routingMatrix: js.Array[js.Array[scala.Double]] = js.native
@@ -81,11 +81,11 @@ class DiagramEngine ()
     stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
   ]) | scala.Null = js.native
   def getFactoryForNode(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): stormDashReactDashDiagramsLib.distSrcFactoriesAbstractNodeFactoryMod.AbstractNodeFactory[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel] | scala.Null = js.native
-  def getLabelFactories(): ScalablyTyped.runtime.StringDictionary[
+  def getLabelFactories(): org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractLabelFactoryMod.AbstractLabelFactory[stormDashReactDashDiagramsLib.distSrcModelsLabelModelMod.LabelModel]
   ] = js.native
   def getLabelFactory(`type`: java.lang.String): stormDashReactDashDiagramsLib.distSrcFactoriesAbstractLabelFactoryMod.AbstractLabelFactory[stormDashReactDashDiagramsLib.distSrcModelsLabelModelMod.LabelModel] = js.native
-  def getLinkFactories(): ScalablyTyped.runtime.StringDictionary[
+  def getLinkFactories(): org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractLinkFactoryMod.AbstractLinkFactory[
       stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
     ]
@@ -100,7 +100,7 @@ class DiagramEngine ()
        */
   def getNodeDimensions(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): stormDashReactDashDiagramsLib.Anon_Height = js.native
   def getNodeElement(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): reactLib.Element = js.native
-  def getNodeFactories(): ScalablyTyped.runtime.StringDictionary[
+  def getNodeFactories(): org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractNodeFactoryMod.AbstractNodeFactory[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel]
   ] = js.native
   def getNodeFactory(`type`: java.lang.String): stormDashReactDashDiagramsLib.distSrcFactoriesAbstractNodeFactoryMod.AbstractNodeFactory[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel] = js.native

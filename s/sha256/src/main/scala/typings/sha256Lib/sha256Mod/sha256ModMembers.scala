@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sha256", JSImport.Namespace)
 @js.native
 object sha256ModMembers
-  extends ScalablyTyped.runtime.TopLevel[Sha256WithX2]
+  extends org.scalablytyped.runtime.TopLevel[Sha256WithX2]
 

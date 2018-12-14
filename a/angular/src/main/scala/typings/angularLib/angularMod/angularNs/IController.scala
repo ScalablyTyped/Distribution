@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait IController
   extends // IController implementations frequently do not implement any of its methods.
 // A string indexer indicates to TypeScript not to issue a weak type error in this case.
-/* s */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* s */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Called on each turn of the digest cycle. Provides an opportunity to detect and act on changes.
            * Any actions that you wish to take in response to the changes that you detect must be invoked from this hook;

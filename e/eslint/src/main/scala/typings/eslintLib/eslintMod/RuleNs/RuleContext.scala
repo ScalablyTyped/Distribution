@@ -12,7 +12,7 @@ trait RuleContext extends js.Object {
   var parserOptions: eslintLib.eslintMod.LinterNs.ParserOptions
   var parserPath: java.lang.String
   var parserServices: eslintLib.eslintMod.SourceCodeNs.ParserServices
-  var settings: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var settings: org.scalablytyped.runtime.StringDictionary[js.Any]
   def getAncestors(): js.Array[estreeLib.estreeMod.Node]
   def getDeclaredVariables(node: estreeLib.estreeMod.Node): js.Array[eslintLib.eslintMod.ScopeNs.Variable]
   def getFilename(): java.lang.String

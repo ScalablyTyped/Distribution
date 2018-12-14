@@ -11,7 +11,7 @@ trait TV4 extends js.Object {
   var errorCodes: ErrorCodes = js.native
   var missing: js.Array[java.lang.String] = js.native
   def addFormat(format: java.lang.String, validationFunction: FormatValidationFunction): scala.Unit = js.native
-  def addFormat(formats: ScalablyTyped.runtime.StringDictionary[FormatValidationFunction]): scala.Unit = js.native
+  def addFormat(formats: org.scalablytyped.runtime.StringDictionary[FormatValidationFunction]): scala.Unit = js.native
   def addLanguage(code: java.lang.String, map: ErrorMap): scala.Unit = js.native
   // additional API for more complex cases
   def addSchema(schema: JsonSchema): scala.Unit = js.native

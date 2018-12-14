@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TTransportConstructor
-  extends ScalablyTyped.runtime.Instantiable0[TTransport]
-     with ScalablyTyped.runtime.Instantiable1[/* buffer */ nodeLib.Buffer, TTransport]
-     with ScalablyTyped.runtime.Instantiable2[/* buffer */ nodeLib.Buffer, /* callback */ TTransportCallback, TTransport]
+  extends org.scalablytyped.runtime.Instantiable0[TTransport]
+     with org.scalablytyped.runtime.Instantiable1[/* buffer */ nodeLib.Buffer, TTransport]
+     with org.scalablytyped.runtime.Instantiable2[/* buffer */ nodeLib.Buffer, /* callback */ TTransportCallback, TTransport]
 

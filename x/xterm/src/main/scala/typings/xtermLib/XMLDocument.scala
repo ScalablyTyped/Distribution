@@ -11,5 +11,5 @@ trait XMLDocument extends Document
 @JSGlobal("XMLDocument")
 @js.native
 object XMLDocument
-  extends ScalablyTyped.runtime.Instantiable0[XMLDocument]
+  extends org.scalablytyped.runtime.Instantiable0[XMLDocument]
 

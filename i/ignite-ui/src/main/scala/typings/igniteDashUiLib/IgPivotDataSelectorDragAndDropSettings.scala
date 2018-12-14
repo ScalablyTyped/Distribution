@@ -10,7 +10,7 @@ trait IgPivotDataSelectorDragAndDropSettings
   extends /**
 	 * Option for IgPivotDataSelectorDragAndDropSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Which element the draggable helper should be appended to while dragging.
   	 */

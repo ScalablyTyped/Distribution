@@ -13,7 +13,7 @@ class namespaced[T] () extends OrderedMap[T]
 @js.native
 object namespaced extends js.Object {
   def from[T](): orderedmapLib.orderedmapMod.OrderedMap[T] = js.native
-  def from[T](value: ScalablyTyped.runtime.StringDictionary[T]): orderedmapLib.orderedmapMod.OrderedMap[T] = js.native
   def from[T](value: orderedmapLib.orderedmapMod.OrderedMap[T]): orderedmapLib.orderedmapMod.OrderedMap[T] = js.native
+  def from[T](value: org.scalablytyped.runtime.StringDictionary[T]): orderedmapLib.orderedmapMod.OrderedMap[T] = js.native
 }
 

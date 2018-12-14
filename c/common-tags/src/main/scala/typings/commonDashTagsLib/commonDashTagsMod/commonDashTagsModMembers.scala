@@ -29,54 +29,54 @@ object commonDashTagsModMembers extends js.Object {
   def createTag(): TemplateTag = js.native
   def createTag(transformers: (PluginFunction | TemplateTransformer[_])*): TemplateTag = js.native
   def createTag(transformers: js.Array[TemplateTransformer[_]]): TemplateTag = js.native
-  def inlineArrayTransformer(): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def inlineArrayTransformer(opts: commonDashTagsLib.Anon_Conjunction): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def replaceResultTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def inlineArrayTransformer(): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def inlineArrayTransformer(opts: commonDashTagsLib.Anon_Conjunction): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def replaceResultTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceResultTransformer(
     replaceWhat: java.lang.String,
     replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
-  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def replaceResultTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def replaceResultTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceResultTransformer(
     replaceWhat: stdLib.RegExp,
     replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
-  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def replaceStringTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def replaceStringTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceStringTransformer(
     replaceWhat: java.lang.String,
     replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
-  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def replaceStringTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def replaceStringTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceStringTransformer(
     replaceWhat: stdLib.RegExp,
     replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
-  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def replaceSubstitutionTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def replaceSubstitutionTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceSubstitutionTransformer(
     replaceWhat: java.lang.String,
     replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
-  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def replaceSubstitutionTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def replaceSubstitutionTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceSubstitutionTransformer(
     replaceWhat: stdLib.RegExp,
     replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
-  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def splitStringTransformer(splitBy: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def stripIndentTransformer(): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def splitStringTransformer(splitBy: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def stripIndentTransformer(): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("stripIndentTransformer")
-  def stripIndentTransformer_all(`type`: commonDashTagsLib.commonDashTagsLibStrings.all): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def stripIndentTransformer_all(`type`: commonDashTagsLib.commonDashTagsLibStrings.all): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("stripIndentTransformer")
-  def stripIndentTransformer_initial(`type`: commonDashTagsLib.commonDashTagsLibStrings.initial): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
-  def trimResultTransformer(): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def stripIndentTransformer_initial(`type`: commonDashTagsLib.commonDashTagsLibStrings.initial): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def trimResultTransformer(): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("trimResultTransformer")
-  def `trimResultTransformer_`(side: commonDashTagsLib.commonDashTagsLibStrings.Empty): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def `trimResultTransformer_`(side: commonDashTagsLib.commonDashTagsLibStrings.Empty): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("trimResultTransformer")
-  def trimResultTransformer_end(side: commonDashTagsLib.commonDashTagsLibStrings.end): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def trimResultTransformer_end(side: commonDashTagsLib.commonDashTagsLibStrings.end): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("trimResultTransformer")
-  def trimResultTransformer_left(side: commonDashTagsLib.commonDashTagsLibStrings.left): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def trimResultTransformer_left(side: commonDashTagsLib.commonDashTagsLibStrings.left): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("trimResultTransformer")
-  def trimResultTransformer_right(side: commonDashTagsLib.commonDashTagsLibStrings.right): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def trimResultTransformer_right(side: commonDashTagsLib.commonDashTagsLibStrings.right): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("trimResultTransformer")
-  def trimResultTransformer_start(side: commonDashTagsLib.commonDashTagsLibStrings.start): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def trimResultTransformer_start(side: commonDashTagsLib.commonDashTagsLibStrings.start): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
 }
 

@@ -15,7 +15,7 @@ trait SVGUnitTypes extends js.Object {
 @JSGlobal("SVGUnitTypes")
 @js.native
 object SVGUnitTypes
-  extends ScalablyTyped.runtime.Instantiable0[SVGUnitTypes] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGUnitTypes] {
   val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: scala.Double = js.native
   val SVG_UNIT_TYPE_UNKNOWN: scala.Double = js.native
   val SVG_UNIT_TYPE_USERSPACEONUSE: scala.Double = js.native

@@ -14,12 +14,12 @@ class pager () extends baseview {
   var config_pager: pagerConfig = js.native
   @JSName("on_click")
   var on_click_Original: webixLib.webixNs.WebixCallback = js.native
-  var on_context: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("on_dblclick")
   var on_dblclick_Original: webixLib.webixNs.WebixCallback = js.native
   @JSName("on_mouse_move")
   var on_mouse_move_Original: webixLib.webixNs.WebixCallback = js.native
-  var `type`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def attachEvent(`type`: pagerEventName, functor: webixLib.webixNs.WebixCallback): java.lang.String | scala.Double = js.native
   def attachEvent(`type`: pagerEventName, functor: webixLib.webixNs.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
   def blockEvent(): scala.Unit = js.native

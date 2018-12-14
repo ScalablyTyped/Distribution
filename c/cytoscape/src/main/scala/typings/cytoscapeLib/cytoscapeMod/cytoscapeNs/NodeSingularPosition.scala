@@ -103,7 +103,7 @@ trait NodeSingularPosition extends js.Object {
            */
   def relativePoint(dimension: PositionDimension): Position = js.native
   def relativePoint(dimension: PositionDimension, value: Position): this.type = js.native
-  def relativePoint(pos: ScalablyTyped.runtime.StringDictionary[scala.Double]): this.type = js.native
+  def relativePoint(pos: org.scalablytyped.runtime.StringDictionary[scala.Double]): this.type = js.native
   /**
            *
            * http://js.cytoscape.org/#node.relativePosition
@@ -127,7 +127,7 @@ trait NodeSingularPosition extends js.Object {
            */
   def relativePosition(dimension: PositionDimension): Position = js.native
   def relativePosition(dimension: PositionDimension, value: Position): this.type = js.native
-  def relativePosition(pos: ScalablyTyped.runtime.StringDictionary[scala.Double]): this.type = js.native
+  def relativePosition(pos: org.scalablytyped.runtime.StringDictionary[scala.Double]): this.type = js.native
   /**
            * Set the value of a specified rendered position dimension.
            * @param dimension The position dimension to set.
@@ -143,7 +143,7 @@ trait NodeSingularPosition extends js.Object {
            */
   def renderedPoint(dimension: PositionDimension): Position = js.native
   def renderedPoint(dimension: PositionDimension, value: Position): this.type = js.native
-  def renderedPoint(pos: ScalablyTyped.runtime.StringDictionary[scala.Double]): this.type = js.native
+  def renderedPoint(pos: org.scalablytyped.runtime.StringDictionary[scala.Double]): this.type = js.native
   /**
            * Get or set the rendered (on-screen) position of a node.
            * http://js.cytoscape.org/#node.renderedPosition
@@ -167,6 +167,6 @@ trait NodeSingularPosition extends js.Object {
            */
   def renderedPosition(dimension: PositionDimension): Position = js.native
   def renderedPosition(dimension: PositionDimension, value: Position): this.type = js.native
-  def renderedPosition(pos: ScalablyTyped.runtime.StringDictionary[scala.Double]): this.type = js.native
+  def renderedPosition(pos: org.scalablytyped.runtime.StringDictionary[scala.Double]): this.type = js.native
 }
 

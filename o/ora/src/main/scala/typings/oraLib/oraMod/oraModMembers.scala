@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ora", JSImport.Namespace)
 @js.native
 object oraModMembers
-  extends ScalablyTyped.runtime.TopLevel[oraFactory]
+  extends org.scalablytyped.runtime.TopLevel[oraFactory]
 

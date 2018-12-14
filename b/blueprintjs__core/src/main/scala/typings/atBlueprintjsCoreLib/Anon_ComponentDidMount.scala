@@ -56,7 +56,7 @@ trait Anon_ComponentDidMount extends js.Object {
   var globalHotkeysEvents: js.UndefOr[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysEventsMod.HotkeysEvents] = js.native
   var localHotkeysEvents: js.UndefOr[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysEventsMod.HotkeysEvents] = js.native
   val props: stdLib.Readonly[Anon_Children] with stdLib.Readonly[js.Object] = js.native
-  var refs: ScalablyTyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactInstance] = js.native
+  var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
       /* nextProps */ stdLib.Readonly[js.Object], 

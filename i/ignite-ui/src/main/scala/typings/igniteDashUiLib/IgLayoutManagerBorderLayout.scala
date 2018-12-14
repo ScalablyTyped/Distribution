@@ -10,7 +10,7 @@ trait IgLayoutManagerBorderLayout
   extends /**
 	 * Option for IgLayoutManagerBorderLayout
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Option specifying the width of the left region, either in px or percentages
   	 *

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("crossfilter", JSImport.Namespace)
 @js.native
 object crossfilterMod
-  extends ScalablyTyped.runtime.TopLevel[crossfilterLib.CrossFilterNs.CrossFilterStatic]
+  extends org.scalablytyped.runtime.TopLevel[crossfilterLib.CrossFilterNs.CrossFilterStatic]
 

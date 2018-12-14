@@ -16,5 +16,5 @@ trait WioLTE
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[WioLTE]
+org.scalablytyped.runtime.Instantiable0[WioLTE]
 

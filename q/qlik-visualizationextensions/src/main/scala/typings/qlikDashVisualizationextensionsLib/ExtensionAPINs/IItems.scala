@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IItems
-  extends /* other */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* other */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var AddOns: js.UndefOr[IAddOns] = js.undefined
   var appearance: js.UndefOr[IAppearance] = js.undefined
   var dimentions: js.UndefOr[IDimensions] = js.undefined

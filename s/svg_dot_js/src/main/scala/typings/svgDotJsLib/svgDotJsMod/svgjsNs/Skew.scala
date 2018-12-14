@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Skew
   extends Transformation
-     with ScalablyTyped.runtime.Instantiable0[Skew]
+     with org.scalablytyped.runtime.Instantiable0[Skew]
 

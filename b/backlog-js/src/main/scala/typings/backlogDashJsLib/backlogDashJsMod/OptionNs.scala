@@ -164,7 +164,7 @@ object OptionNs extends js.Object {
     
     
     trait GetIssuesParams
-      extends /* customField_ */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+      extends /* customField_ */ org.scalablytyped.runtime.StringDictionary[js.Any] {
       var assigneeId: js.UndefOr[js.Array[scala.Double]] = js.undefined
       var attachment: js.UndefOr[scala.Boolean] = js.undefined
       var categoryId: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -215,7 +215,7 @@ object OptionNs extends js.Object {
     
     
     trait PatchIssueParams
-      extends /* customField_ */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+      extends /* customField_ */ org.scalablytyped.runtime.StringDictionary[js.Any] {
       var actualHours: js.UndefOr[scala.Double] = js.undefined
       var assigneeId: js.UndefOr[scala.Double] = js.undefined
       var attachmentId: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -245,7 +245,7 @@ object OptionNs extends js.Object {
     
     
     trait PostIssueParams
-      extends /* customField_ */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+      extends /* customField_ */ org.scalablytyped.runtime.StringDictionary[js.Any] {
       var actualHours: js.UndefOr[scala.Double] = js.undefined
       var assigneeId: js.UndefOr[scala.Double] = js.undefined
       var attachmentId: js.UndefOr[js.Array[scala.Double]] = js.undefined

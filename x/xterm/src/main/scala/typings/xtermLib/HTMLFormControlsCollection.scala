@@ -16,5 +16,5 @@ trait HTMLFormControlsCollection extends HTMLCollectionBase {
 @JSGlobal("HTMLFormControlsCollection")
 @js.native
 object HTMLFormControlsCollection
-  extends ScalablyTyped.runtime.Instantiable0[HTMLFormControlsCollection]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLFormControlsCollection]
 

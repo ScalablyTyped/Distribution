@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Links extends js.Object {
-  var links: ScalablyTyped.runtime.StringDictionary[Anon_Href]
+  var links: org.scalablytyped.runtime.StringDictionary[Anon_Href]
 }
 

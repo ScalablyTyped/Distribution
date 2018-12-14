@@ -10,7 +10,7 @@ trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension
   extends /**
 	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A caption for the measures dimension.
   	 * The default value is "Measures".

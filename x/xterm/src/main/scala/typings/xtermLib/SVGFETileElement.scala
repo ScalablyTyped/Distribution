@@ -74,5 +74,5 @@ trait SVGFETileElement
 @JSGlobal("SVGFETileElement")
 @js.native
 object SVGFETileElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFETileElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFETileElement]
 

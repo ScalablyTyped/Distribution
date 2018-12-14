@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Locals
-  extends /* filterName */ ScalablyTyped.runtime.StringDictionary[Filter]
+  extends /* filterName */ org.scalablytyped.runtime.StringDictionary[Filter]
 

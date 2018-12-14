@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-strip-comments", JSImport.Namespace)
 @js.native
 object gulpDashStripDashCommentsModMembers
-  extends ScalablyTyped.runtime.TopLevel[gulpDashStripDashCommentsLib.gulpDashStripDashCommentsMod.stripCommentsNs.Strip]
+  extends org.scalablytyped.runtime.TopLevel[gulpDashStripDashCommentsLib.gulpDashStripDashCommentsMod.stripCommentsNs.Strip]
 

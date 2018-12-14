@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IWallabyProcessor
-  extends /* pattern */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* file */ IWallabyFile, scala.Unit]]
+  extends /* pattern */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* file */ IWallabyFile, scala.Unit]]
 

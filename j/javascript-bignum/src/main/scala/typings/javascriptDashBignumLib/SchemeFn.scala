@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SchemeFn
-  extends /* opname */ ScalablyTyped.runtime.StringDictionary[SchemeOperator] {
+  extends /* opname */ org.scalablytyped.runtime.StringDictionary[SchemeOperator] {
   @JSName("abs")
   var abs_Original: SchemeOperator = js.native
   @JSName("acos")

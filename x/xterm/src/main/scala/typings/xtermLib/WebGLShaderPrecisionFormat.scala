@@ -15,5 +15,5 @@ trait WebGLShaderPrecisionFormat extends js.Object {
 @JSGlobal("WebGLShaderPrecisionFormat")
 @js.native
 object WebGLShaderPrecisionFormat
-  extends ScalablyTyped.runtime.Instantiable0[WebGLShaderPrecisionFormat]
+  extends org.scalablytyped.runtime.Instantiable0[WebGLShaderPrecisionFormat]
 

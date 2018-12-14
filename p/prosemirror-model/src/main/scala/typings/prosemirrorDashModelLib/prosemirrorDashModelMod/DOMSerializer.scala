@@ -17,15 +17,15 @@ class DOMSerializer[S /* <: Schema[_, _] */] protected () extends js.Object {
      * serializer may be `null` to indicate that marks of that type
      * should not be serialized.
      */
-  def this(nodes: ScalablyTyped.runtime.StringDictionary[js.Function1[/* node */ ProsemirrorNode[S], DOMOutputSpec]], marks: ScalablyTyped.runtime.StringDictionary[js.Function2[/* mark */ Mark[S], /* inline */ scala.Boolean, DOMOutputSpec]]) = this()
+  def this(nodes: org.scalablytyped.runtime.StringDictionary[js.Function1[/* node */ ProsemirrorNode[S], DOMOutputSpec]], marks: org.scalablytyped.runtime.StringDictionary[js.Function2[/* mark */ Mark[S], /* inline */ scala.Boolean, DOMOutputSpec]]) = this()
   /**
      * The mark serialization functions.
      */
-  var marks: ScalablyTyped.runtime.StringDictionary[js.Function2[/* mark */ Mark[S], /* inline */ scala.Boolean, DOMOutputSpec]] = js.native
+  var marks: org.scalablytyped.runtime.StringDictionary[js.Function2[/* mark */ Mark[S], /* inline */ scala.Boolean, DOMOutputSpec]] = js.native
   /**
      * The node serialization functions.
      */
-  var nodes: ScalablyTyped.runtime.StringDictionary[js.Function1[/* node */ ProsemirrorNode[S], DOMOutputSpec]] = js.native
+  var nodes: org.scalablytyped.runtime.StringDictionary[js.Function1[/* node */ ProsemirrorNode[S], DOMOutputSpec]] = js.native
   /**
      * Serialize the content of this fragment to a DOM fragment. When
      * not in the browser, the `document` option, containing a DOM
@@ -39,7 +39,7 @@ class DOMSerializer[S /* <: Schema[_, _] */] protected () extends js.Object {
      * document, should be passed so that the serializer can create
      * nodes.
      */
-  def serializeFragment(fragment: Fragment[S], options: ScalablyTyped.runtime.StringDictionary[js.Any]): stdLib.DocumentFragment = js.native
+  def serializeFragment(fragment: Fragment[S], options: org.scalablytyped.runtime.StringDictionary[js.Any]): stdLib.DocumentFragment = js.native
   /**
      * Serialize this node to a DOM node. This can be useful when you
      * need to serialize a part of a document, as opposed to the whole
@@ -55,7 +55,7 @@ class DOMSerializer[S /* <: Schema[_, _] */] protected () extends js.Object {
      * [`serializeFragment`](#model.DOMSerializer.serializeFragment) on
      * its [content](#model.Node.content).
      */
-  def serializeNode(node: ProsemirrorNode[S], options: ScalablyTyped.runtime.StringDictionary[js.Any]): stdLib.Node = js.native
+  def serializeNode(node: ProsemirrorNode[S], options: org.scalablytyped.runtime.StringDictionary[js.Any]): stdLib.Node = js.native
 }
 
 @JSImport("prosemirror-model", "DOMSerializer")

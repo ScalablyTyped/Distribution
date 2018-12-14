@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Mode
-  extends /* customConfigName */ ScalablyTyped.runtime.StringDictionary[ModeConfig | scala.Boolean] {
+  extends /* customConfigName */ org.scalablytyped.runtime.StringDictionary[ModeConfig | scala.Boolean] {
   var css: js.UndefOr[CssAndViewSpecificModeConfig | scala.Boolean] = js.undefined
   var defs: js.UndefOr[DefsAndSymbolSpecificModeConfig | scala.Boolean] = js.undefined
   var stack: js.UndefOr[ModeConfig | scala.Boolean] = js.undefined

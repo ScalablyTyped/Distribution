@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("uuid/v5", JSImport.Namespace)
 @js.native
 object v5ModMembers
-  extends ScalablyTyped.runtime.TopLevel[v5Static with uuidLib.interfacesMod.v5]
+  extends org.scalablytyped.runtime.TopLevel[v5Static with uuidLib.interfacesMod.v5]
 

@@ -10,5 +10,5 @@ trait AttachmentsStatic
   extends /**
              * @param dispatcher
              */
-ScalablyTyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Attachments]
+org.scalablytyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Attachments]
 

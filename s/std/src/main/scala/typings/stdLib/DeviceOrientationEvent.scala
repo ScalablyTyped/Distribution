@@ -88,8 +88,8 @@ trait DeviceOrientationEvent extends Event {
 @JSGlobal("DeviceOrientationEvent")
 @js.native
 object DeviceOrientationEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, DeviceOrientationEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, DeviceOrientationEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* typeArg */ java.lang.String, 
       /* eventInitDict */ DeviceOrientationEventInit, 
       DeviceOrientationEvent

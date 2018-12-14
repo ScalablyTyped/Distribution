@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait StringResult extends js.Object {
-  var errors: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var errors: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var expressions: js.Array[CronExpression]
-  var variables: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

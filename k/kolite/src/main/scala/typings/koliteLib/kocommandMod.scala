@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("kocommand", JSImport.Namespace)
 @js.native
 object kocommandMod
-  extends ScalablyTyped.runtime.TopLevel[KnockoutCommandStatic]
+  extends org.scalablytyped.runtime.TopLevel[KnockoutCommandStatic]
 

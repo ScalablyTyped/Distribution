@@ -27,20 +27,20 @@ trait ContactOrganization extends js.Object {
 @js.native
 object ContactOrganization
   extends /** Constructor for ContactOrganization object */
-ScalablyTyped.runtime.Instantiable0[ContactOrganization]
+org.scalablytyped.runtime.Instantiable0[ContactOrganization]
      with /** Constructor for ContactOrganization object */
-ScalablyTyped.runtime.Instantiable1[/* pref */ scala.Boolean, ContactOrganization]
+org.scalablytyped.runtime.Instantiable1[/* pref */ scala.Boolean, ContactOrganization]
      with /** Constructor for ContactOrganization object */
-ScalablyTyped.runtime.Instantiable2[/* pref */ scala.Boolean, /* type */ java.lang.String, ContactOrganization]
+org.scalablytyped.runtime.Instantiable2[/* pref */ scala.Boolean, /* type */ java.lang.String, ContactOrganization]
      with /** Constructor for ContactOrganization object */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* pref */ scala.Boolean, 
       /* type */ java.lang.String, 
       /* name */ java.lang.String, 
       ContactOrganization
     ]
      with /** Constructor for ContactOrganization object */
-ScalablyTyped.runtime.Instantiable4[
+org.scalablytyped.runtime.Instantiable4[
       /* pref */ scala.Boolean, 
       /* type */ java.lang.String, 
       /* name */ java.lang.String, 
@@ -48,7 +48,7 @@ ScalablyTyped.runtime.Instantiable4[
       ContactOrganization
     ]
      with /** Constructor for ContactOrganization object */
-ScalablyTyped.runtime.Instantiable5[
+org.scalablytyped.runtime.Instantiable5[
       /* pref */ scala.Boolean, 
       /* type */ java.lang.String, 
       /* name */ java.lang.String, 

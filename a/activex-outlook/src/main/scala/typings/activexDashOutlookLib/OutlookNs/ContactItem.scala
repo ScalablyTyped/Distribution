@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 class ContactItem protected () extends js.Object {
   var Account: java.lang.String = js.native
   val Actions: Actions = js.native
-  var Anniversary: activexDashInteropLib.VarDate = js.native
+  var Anniversary: stdLib.VarDate = js.native
   val Application: Application = js.native
   var AssistantName: java.lang.String = js.native
   var AssistantTelephoneNumber: java.lang.String = js.native
   val Attachments: Attachments = js.native
   val AutoResolvedWinner: scala.Boolean = js.native
   var BillingInformation: java.lang.String = js.native
-  var Birthday: activexDashInteropLib.VarDate = js.native
+  var Birthday: stdLib.VarDate = js.native
   var Body: java.lang.String = js.native
   var Business2TelephoneNumber: java.lang.String = js.native
   var BusinessAddress: java.lang.String = js.native
@@ -48,7 +48,7 @@ class ContactItem protected () extends js.Object {
   val ConversationID: java.lang.String = js.native
   val ConversationIndex: java.lang.String = js.native
   val ConversationTopic: java.lang.String = js.native
-  val CreationTime: activexDashInteropLib.VarDate = js.native
+  val CreationTime: stdLib.VarDate = js.native
   var CustomerID: java.lang.String = js.native
   var Department: java.lang.String = js.native
   val DownloadState: OlDownloadState = js.native
@@ -103,7 +103,7 @@ class ContactItem protected () extends js.Object {
   val LastFirstNoSpaceCompany: java.lang.String = js.native
   val LastFirstSpaceOnly: java.lang.String = js.native
   val LastFirstSpaceOnlyCompany: java.lang.String = js.native
-  val LastModificationTime: activexDashInteropLib.VarDate = js.native
+  val LastModificationTime: stdLib.VarDate = js.native
   var LastName: java.lang.String = js.native
   val LastNameAndFirstName: java.lang.String = js.native
   val Links: Links = js.native
@@ -152,7 +152,7 @@ class ContactItem protected () extends js.Object {
   var ReminderPlaySound: scala.Boolean = js.native
   var ReminderSet: scala.Boolean = js.native
   var ReminderSoundFile: java.lang.String = js.native
-  var ReminderTime: activexDashInteropLib.VarDate = js.native
+  var ReminderTime: stdLib.VarDate = js.native
   val Saved: scala.Boolean = js.native
   var SelectedMailingAddress: OlMailingAddress = js.native
   var Sensitivity: OlSensitivity = js.native
@@ -162,13 +162,13 @@ class ContactItem protected () extends js.Object {
   var Subject: java.lang.String = js.native
   var Suffix: java.lang.String = js.native
   var TTYTDDTelephoneNumber: java.lang.String = js.native
-  var TaskCompletedDate: activexDashInteropLib.VarDate = js.native
-  var TaskDueDate: activexDashInteropLib.VarDate = js.native
-  var TaskStartDate: activexDashInteropLib.VarDate = js.native
+  var TaskCompletedDate: stdLib.VarDate = js.native
+  var TaskDueDate: stdLib.VarDate = js.native
+  var TaskStartDate: stdLib.VarDate = js.native
   var TaskSubject: java.lang.String = js.native
   var TelexNumber: java.lang.String = js.native
   var Title: java.lang.String = js.native
-  var ToDoTaskOrdinal: activexDashInteropLib.VarDate = js.native
+  var ToDoTaskOrdinal: stdLib.VarDate = js.native
   var UnRead: scala.Boolean = js.native
   var User1: java.lang.String = js.native
   var User2: java.lang.String = js.native

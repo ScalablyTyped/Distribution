@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("atmosphere.js", JSImport.Namespace)
 @js.native
 object atmosphereDotJsMod
-  extends ScalablyTyped.runtime.TopLevel[atmosphereDotJsLib.AtmosphereNs.Atmosphere]
+  extends org.scalablytyped.runtime.TopLevel[atmosphereDotJsLib.AtmosphereNs.Atmosphere]
 

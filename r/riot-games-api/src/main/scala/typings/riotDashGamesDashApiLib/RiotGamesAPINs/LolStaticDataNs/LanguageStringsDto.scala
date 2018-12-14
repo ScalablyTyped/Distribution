@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait LanguageStringsDto extends js.Object {
-  var data: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+  var data: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   var `type`: java.lang.String
   var version: java.lang.String
 }

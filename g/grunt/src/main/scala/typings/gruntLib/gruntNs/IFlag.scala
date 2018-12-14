@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IFlag
-  extends /* flag */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  extends /* flag */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 

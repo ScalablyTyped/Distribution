@@ -10,7 +10,7 @@ trait IgTreeGridDataSourceSettings
   extends /**
 	 * Option for IgTreeGridDataSourceSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * The name of the property that keeps track of the level in the hierarchy.Defaults to __ig_options.dataLevel.
   	 *

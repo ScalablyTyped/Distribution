@@ -63,8 +63,8 @@ object protractorDashHelpersModMembers extends js.Object {
   ): scala.Unit = js.native
   def translate(translationId: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[java.lang.String] = js.native
   def translate(translationId: java.lang.String, interpolateParams: js.Any): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[java.lang.String] = js.native
-  def translate(translationId: js.Array[java.lang.String]): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
-  def translate(translationId: js.Array[java.lang.String], interpolateParams: js.Any): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  def translate(translationId: js.Array[java.lang.String]): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+  def translate(translationId: js.Array[java.lang.String], interpolateParams: js.Any): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   def waitForElement(element: protractorDashHelpersLib.protractorDashHelpersMod.Global.protractorNs.ElementFinder): scala.Unit = js.native
   def waitForElement(
     element: protractorDashHelpersLib.protractorDashHelpersMod.Global.protractorNs.ElementFinder,

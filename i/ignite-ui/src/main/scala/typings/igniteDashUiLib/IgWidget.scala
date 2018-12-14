@@ -10,7 +10,7 @@ trait IgWidget
   extends /**
 	 * Option for igWidget
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Set/Get the locale language setting for the widget.
   	 *

@@ -20,7 +20,7 @@ class ProjectDetails protected () extends js.Object {
   def getTypeFromConfig(config: ionicLib.definitionsMod.IProjectConfig): js.Promise[js.UndefOr[ionicLib.definitionsMod.ProjectType]] = js.native
   def getTypeFromDetection(): js.Promise[js.UndefOr[ionicLib.definitionsMod.ProjectType]] = js.native
   def processResult(result: ProjectDetailsResult): scala.Unit = js.native
-  def readConfig(p: java.lang.String): js.Promise[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def readConfig(p: java.lang.String): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
        * Gather project details from specified configuration.
        *

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ArrayConstructor
-  extends ScalablyTyped.runtime.Instantiable0[js.Array[js.Any]]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[js.Array[js.Any]]
+     with org.scalablytyped.runtime.Instantiable1[
       (/* arrayLength */ scala.Double) | (/* items (repeated) */ js.Object), 
       js.Array[js.Any] | js.Array[js.Object]
     ] {
-  @JSName(ScalablyTyped.runtime.Symbol.species)
+  @JSName(org.scalablytyped.runtime.Symbol.species)
   val species: ArrayConstructor = js.native
   def apply(): js.Array[_] = js.native
   def apply(arrayLength: scala.Double): js.Array[_] = js.native

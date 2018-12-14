@@ -10,7 +10,7 @@ trait TreeHierarchicalDataSourceSettingsTreeDSSorting
   extends /**
 	 * Option for TreeHierarchicalDataSourceSettingsTreeDSSorting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies from which data bound level to be applied sorting - 0 is the first level
   	 */

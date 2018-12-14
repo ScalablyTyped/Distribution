@@ -14,15 +14,15 @@ class VariableList protected () extends PropertyList[Variable] {
   def substitute[T](obj: T): T = js.native
   def substitute[T](obj: T, overrides: VariableList): T = js.native
   def substitute[T](obj: T, overrides: VariableList, mutate: scala.Boolean): T = js.native
-  def syncFromObject(obj: ScalablyTyped.runtime.StringDictionary[VariableDefinition]): js.UndefOr[postmanDashCollectionLib.Anon_Created] = js.native
-  def syncFromObject(obj: ScalablyTyped.runtime.StringDictionary[VariableDefinition], track: scala.Boolean): js.UndefOr[postmanDashCollectionLib.Anon_Created] = js.native
+  def syncFromObject(obj: org.scalablytyped.runtime.StringDictionary[VariableDefinition]): js.UndefOr[postmanDashCollectionLib.Anon_Created] = js.native
+  def syncFromObject(obj: org.scalablytyped.runtime.StringDictionary[VariableDefinition], track: scala.Boolean): js.UndefOr[postmanDashCollectionLib.Anon_Created] = js.native
   def syncFromObject(
-    obj: ScalablyTyped.runtime.StringDictionary[VariableDefinition],
+    obj: org.scalablytyped.runtime.StringDictionary[VariableDefinition],
     track: scala.Boolean,
     prune: scala.Boolean
   ): js.UndefOr[postmanDashCollectionLib.Anon_Created] = js.native
-  def syncToObject(): ScalablyTyped.runtime.StringDictionary[VariableDefinition] = js.native
-  def syncToObject(obj: ScalablyTyped.runtime.StringDictionary[VariableDefinition]): ScalablyTyped.runtime.StringDictionary[VariableDefinition] = js.native
+  def syncToObject(): org.scalablytyped.runtime.StringDictionary[VariableDefinition] = js.native
+  def syncToObject(obj: org.scalablytyped.runtime.StringDictionary[VariableDefinition]): org.scalablytyped.runtime.StringDictionary[VariableDefinition] = js.native
 }
 
 @JSImport("postman-collection", "VariableList")

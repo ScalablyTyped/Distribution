@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_EventHandler
-  extends /* eventHandler */ ScalablyTyped.runtime.StringDictionary[
+  extends /* eventHandler */ org.scalablytyped.runtime.StringDictionary[
       js.Function4[
         /* io */ socketDotIoLib.socketDotIoMod.SocketIONs.Server, 
         /* socket */ socketDotIoLib.socketDotIoMod.SocketIONs.Socket, 

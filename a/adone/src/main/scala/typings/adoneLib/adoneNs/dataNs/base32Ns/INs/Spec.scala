@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait Spec extends js.Object {
   var alphabet: java.lang.String
-  var charmap: ScalablyTyped.runtime.StringDictionary[scala.Double]
+  var charmap: org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 

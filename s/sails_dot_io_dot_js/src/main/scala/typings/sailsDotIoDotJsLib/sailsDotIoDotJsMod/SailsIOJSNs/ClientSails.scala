@@ -10,7 +10,7 @@ trait ClientSails extends js.Object {
   var autoConnect: js.UndefOr[scala.Boolean] = js.native
   // All logs are disabled when `io.sails.environment = 'production'`
   var environment: js.UndefOr[sailsDotIoDotJsLib.sailsDotIoDotJsLibStrings.production | java.lang.String] = js.native
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   var initialConnectionHeaders: js.UndefOr[InitialConnectionHeaders] = js.native
   var path: js.UndefOr[java.lang.String] = js.native
   var query: js.UndefOr[java.lang.String] = js.native

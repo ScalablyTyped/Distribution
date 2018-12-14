@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_TagName extends js.Object {
-  var properties: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  var properties: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   var tagName: java.lang.String
 }
 

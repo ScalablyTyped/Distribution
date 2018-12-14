@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 	 */
 
 trait IValidationMessages extends js.Object {
-  var messages: ScalablyTyped.runtime.StringDictionary[
+  var messages: org.scalablytyped.runtime.StringDictionary[
     js.Function3[
       /* $viewValue */ js.Any, 
       /* $modelValue */ js.Any, 

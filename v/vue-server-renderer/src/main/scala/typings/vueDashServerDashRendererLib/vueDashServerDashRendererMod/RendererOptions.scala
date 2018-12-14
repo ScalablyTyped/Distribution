@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait RendererOptions extends js.Object {
   var cache: js.UndefOr[RenderCache] = js.undefined
   var directives: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* vnode */ vueLib.typesVnodeMod.VNode, 
         /* dir */ vueLib.typesVnodeMod.VNodeDirective, 

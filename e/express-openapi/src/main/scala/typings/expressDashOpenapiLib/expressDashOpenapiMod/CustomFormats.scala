@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CustomFormats
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[CustomFormatValidator]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[CustomFormatValidator]
 

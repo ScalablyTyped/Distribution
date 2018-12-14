@@ -12,7 +12,7 @@ class default () extends SmoothScrollbar
 @JSImport("smooth-scrollbar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var ScrollbarPlugin: ScalablyTyped.runtime.Instantiable2[
+  var ScrollbarPlugin: org.scalablytyped.runtime.Instantiable2[
     /* scrollbar */ smoothDashScrollbarLib.scrollbarMod.Scrollbar, 
     /* options */ js.UndefOr[/* options */ js.Any], 
     smoothDashScrollbarLib.pluginMod.ScrollbarPlugin
@@ -89,7 +89,7 @@ object default extends js.Object {
        * @param ...Plugins Scrollbar plugin classes
        */
   def use(
-    Plugins: (ScalablyTyped.runtime.Instantiable2[
+    Plugins: (org.scalablytyped.runtime.Instantiable2[
       /* scrollbar */ smoothDashScrollbarLib.scrollbarMod.Scrollbar, 
       /* options */ js.UndefOr[/* options */ js.Any], 
       smoothDashScrollbarLib.pluginMod.ScrollbarPlugin

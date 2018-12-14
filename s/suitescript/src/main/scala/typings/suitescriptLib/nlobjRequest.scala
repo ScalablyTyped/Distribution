@@ -18,7 +18,7 @@ trait nlobjRequest
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * return an Object containing field names to file objects for all uploaded files.
        * @return {Object}

@@ -10,7 +10,7 @@ trait HttpOptions extends CommonOptions {
   /**
        * Additional headers to send (default {}).
        */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * Where to send the stats (default localhost).
        */

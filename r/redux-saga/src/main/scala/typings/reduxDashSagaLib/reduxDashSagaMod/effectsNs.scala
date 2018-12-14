@@ -34,12 +34,12 @@ object effectsNs extends js.Object {
     pattern: reduxDashSagaLib.effectsMod.Pattern,
     buffer: reduxDashSagaLib.reduxDashSagaMod.Buffer[reduxLib.reduxMod.Action[_]]
   ): reduxDashSagaLib.effectsMod.ActionChannelEffect = js.native
-  def all(effects: ScalablyTyped.runtime.StringDictionary[reduxDashSagaLib.effectsMod.Effect]): reduxDashSagaLib.effectsMod.AllEffect = js.native
   def all(effects: js.Array[reduxDashSagaLib.effectsMod.Effect]): reduxDashSagaLib.effectsMod.AllEffect = js.native
-  @JSName("all")
-  def all_TGenericAllEffect[T](effects: ScalablyTyped.runtime.StringDictionary[T]): reduxDashSagaLib.effectsMod.GenericAllEffect[T] = js.native
+  def all(effects: org.scalablytyped.runtime.StringDictionary[reduxDashSagaLib.effectsMod.Effect]): reduxDashSagaLib.effectsMod.AllEffect = js.native
   @JSName("all")
   def all_TGenericAllEffect[T](effects: js.Array[T]): reduxDashSagaLib.effectsMod.GenericAllEffect[T] = js.native
+  @JSName("all")
+  def all_TGenericAllEffect[T](effects: org.scalablytyped.runtime.StringDictionary[T]): reduxDashSagaLib.effectsMod.GenericAllEffect[T] = js.native
   @JSName("apply")
   def apply(context: js.Any, fn: reduxDashSagaLib.effectsMod.Func0): reduxDashSagaLib.effectsMod.CallEffect = js.native
   @JSName("apply")
@@ -148,9 +148,9 @@ object effectsNs extends js.Object {
     tasks: reduxDashSagaLib.reduxDashSagaMod.Task*
   ): js.Array[reduxDashSagaLib.effectsMod.JoinEffect] = js.native
   def join(task: reduxDashSagaLib.reduxDashSagaMod.Task): reduxDashSagaLib.effectsMod.JoinEffect = js.native
-  def race(effects: ScalablyTyped.runtime.StringDictionary[reduxDashSagaLib.effectsMod.Effect]): reduxDashSagaLib.effectsMod.RaceEffect = js.native
+  def race(effects: org.scalablytyped.runtime.StringDictionary[reduxDashSagaLib.effectsMod.Effect]): reduxDashSagaLib.effectsMod.RaceEffect = js.native
   @JSName("race")
-  def race_TGenericRaceEffect[T](effects: ScalablyTyped.runtime.StringDictionary[T]): reduxDashSagaLib.effectsMod.GenericRaceEffect[T] = js.native
+  def race_TGenericRaceEffect[T](effects: org.scalablytyped.runtime.StringDictionary[T]): reduxDashSagaLib.effectsMod.GenericRaceEffect[T] = js.native
   def select(): reduxDashSagaLib.effectsMod.SelectEffect = js.native
   def select[S](selector: reduxDashSagaLib.effectsMod.Func1[S]): reduxDashSagaLib.effectsMod.SelectEffect = js.native
   def select[S, T1](selector: reduxDashSagaLib.effectsMod.Func2[S, T1], arg1: T1): reduxDashSagaLib.effectsMod.SelectEffect = js.native

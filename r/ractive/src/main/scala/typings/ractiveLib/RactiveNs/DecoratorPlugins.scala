@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait DecoratorPlugins
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[DecoratorPlugin]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[DecoratorPlugin]
 

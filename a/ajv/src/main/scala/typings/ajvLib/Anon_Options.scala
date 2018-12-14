@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Options
-  extends ScalablyTyped.runtime.Instantiable0[ajvLib.ajvMod.ajvNs.Ajv]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ ajvLib.ajvMod.ajvNs.Options, ajvLib.ajvMod.ajvNs.Ajv] {
+  extends org.scalablytyped.runtime.Instantiable0[ajvLib.ajvMod.ajvNs.Ajv]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ ajvLib.ajvMod.ajvNs.Options, ajvLib.ajvMod.ajvNs.Ajv] {
   @JSName("$dataMetaSchema")
   var $dataMetaSchema: js.Object = js.native
   var MissingRefError: ajvLib.ajvMod.MissingRefError = js.native

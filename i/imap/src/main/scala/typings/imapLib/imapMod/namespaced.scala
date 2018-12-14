@@ -108,8 +108,8 @@ class namespaced protected () extends Connection {
 @js.native
 object namespaced extends js.Object {
   /** Parses a raw header and returns an object keyed on header fields and the values are Arrays of header field values. Set disableAutoDecode to true to disable automatic decoding of MIME encoded-words that may exist in header field values. */
-  def parseHeader(rawHeader: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
+  def parseHeader(rawHeader: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   /** Parses a raw header and returns an object keyed on header fields and the values are Arrays of header field values. Set disableAutoDecode to true to disable automatic decoding of MIME encoded-words that may exist in header field values. */
-  def parseHeader(rawHeader: java.lang.String, disableAutoDecode: scala.Boolean): ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
+  def parseHeader(rawHeader: java.lang.String, disableAutoDecode: scala.Boolean): org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
 }
 

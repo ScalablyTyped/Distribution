@@ -10,7 +10,7 @@ trait Plugin extends js.Object {
   var defaultOptions: js.UndefOr[stdLib.Partial[RequiredOptions]] = js.undefined
   var languages: js.Array[SupportLanguage]
   var options: js.UndefOr[js.Array[SupportOption]] = js.undefined
-  var parsers: ScalablyTyped.runtime.StringDictionary[Parser]
-  var printers: ScalablyTyped.runtime.StringDictionary[Printer]
+  var parsers: org.scalablytyped.runtime.StringDictionary[Parser]
+  var printers: org.scalablytyped.runtime.StringDictionary[Printer]
 }
 

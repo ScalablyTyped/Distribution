@@ -21,8 +21,8 @@ object apolloDashUtilitiesModMembers extends js.Object {
   def createFragmentMap(): apolloDashUtilitiesLib.libGetFromASTMod.FragmentMap = js.native
   def createFragmentMap(fragments: js.Array[graphqlLib.languageAstMod.FragmentDefinitionNode]): apolloDashUtilitiesLib.libGetFromASTMod.FragmentMap = js.native
   def flattenSelections(selection: graphqlLib.languageAstMod.SelectionNode): js.Array[graphqlLib.languageAstMod.SelectionNode] = js.native
-  def getDefaultValues(): ScalablyTyped.runtime.StringDictionary[apolloDashUtilitiesLib.libStoreUtilsMod.JsonValue] = js.native
-  def getDefaultValues(definition: graphqlLib.languageAstMod.OperationDefinitionNode): ScalablyTyped.runtime.StringDictionary[apolloDashUtilitiesLib.libStoreUtilsMod.JsonValue] = js.native
+  def getDefaultValues(): org.scalablytyped.runtime.StringDictionary[apolloDashUtilitiesLib.libStoreUtilsMod.JsonValue] = js.native
+  def getDefaultValues(definition: graphqlLib.languageAstMod.OperationDefinitionNode): org.scalablytyped.runtime.StringDictionary[apolloDashUtilitiesLib.libStoreUtilsMod.JsonValue] = js.native
   def getDirectiveInfoFromField(field: graphqlLib.languageAstMod.FieldNode, variables: js.Object): apolloDashUtilitiesLib.libDirectivesMod.DirectiveInfo = js.native
   def getDirectiveNames(doc: graphqlLib.languageAstMod.DocumentNode): js.Array[java.lang.String] = js.native
   def getDirectivesFromDocument(
@@ -77,7 +77,7 @@ object apolloDashUtilitiesModMembers extends js.Object {
   def shouldInclude(selection: graphqlLib.languageAstMod.SelectionNode): scala.Boolean = js.native
   def shouldInclude(
     selection: graphqlLib.languageAstMod.SelectionNode,
-    variables: ScalablyTyped.runtime.StringDictionary[js.Any]
+    variables: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Boolean = js.native
   def storeKeyNameFromField(field: graphqlLib.languageAstMod.FieldNode): java.lang.String = js.native
   def storeKeyNameFromField(field: graphqlLib.languageAstMod.FieldNode, variables: js.Object): java.lang.String = js.native

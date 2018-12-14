@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Clients
-  extends /* clientId */ ScalablyTyped.runtime.StringDictionary[ClientState]
+  extends /* clientId */ org.scalablytyped.runtime.StringDictionary[ClientState]
 

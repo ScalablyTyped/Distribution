@@ -11,11 +11,11 @@ trait FeedParser
   var _emitted_meta: scala.Boolean = js.native
   var errors: js.Array[nodeLib.Error] = js.native
   var in_xhtml: scala.Boolean = js.native
-  var meta: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var meta: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var options: feedparserLib.feedparserMod.FeedParserNs.Options = js.native
   var stack: js.Array[_] = js.native
   var stream: saxLib.saxMod.SAXStream = js.native
-  var xhtml: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var xhtml: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var xmlbase: js.Array[_] = js.native
   /* private */ def _flush(done: js.Function0[_]): scala.Unit = js.native
   /* private */ def _transform(data: js.Any, encoding: java.lang.String, done: js.Function0[_]): scala.Unit = js.native

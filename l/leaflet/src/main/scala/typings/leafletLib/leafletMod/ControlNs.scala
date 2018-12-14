@@ -42,7 +42,7 @@ object ControlNs extends js.Object {
   
   
   trait LayersObject
-    extends /* name */ ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.Layer]
+    extends /* name */ org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.Layer]
   
   
   trait LayersOptions

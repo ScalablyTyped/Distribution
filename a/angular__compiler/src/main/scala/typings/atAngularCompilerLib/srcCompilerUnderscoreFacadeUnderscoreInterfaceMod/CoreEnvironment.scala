@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CoreEnvironment
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Function]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Function]
 

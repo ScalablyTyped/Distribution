@@ -153,14 +153,14 @@ class Client protected () extends js.Object {
     bucketName: java.lang.String,
     objectName: java.lang.String,
     expiry: scala.Double,
-    reqParams: ScalablyTyped.runtime.StringDictionary[js.Any]
+    reqParams: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Promise[java.lang.String] = js.native
   def presignedUrl(
     httpMethod: java.lang.String,
     bucketName: java.lang.String,
     objectName: java.lang.String,
     expiry: scala.Double,
-    reqParams: ScalablyTyped.runtime.StringDictionary[js.Any],
+    reqParams: org.scalablytyped.runtime.StringDictionary[js.Any],
     callback: ResultCallback[java.lang.String]
   ): scala.Unit = js.native
   def putObject(bucketName: java.lang.String, objectName: java.lang.String, stream: java.lang.String): js.Promise[java.lang.String] = js.native

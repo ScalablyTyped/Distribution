@@ -17,7 +17,7 @@ trait ContactError extends js.Object {
 @JSGlobal("ContactError")
 @js.native
 object ContactError
-  extends ScalablyTyped.runtime.Instantiable1[/* code */ scala.Double, ContactError] {
+  extends org.scalablytyped.runtime.Instantiable1[/* code */ scala.Double, ContactError] {
   var INVALID_ARGUMENT_ERROR: scala.Double = js.native
   var IO_ERROR: scala.Double = js.native
   var NOT_SUPPORTED_ERROR: scala.Double = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CascaderOptionType
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var children: js.UndefOr[js.Array[CascaderOptionType]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

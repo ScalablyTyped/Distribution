@@ -13,14 +13,14 @@ trait SharedVolumeConstructor
      * @param name The unique name of the volume.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, SharedVolume]
+org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, SharedVolume]
      with /**
      * Construct a new Volume with the given unique name.
      *
      * @param name The unique name of the volume.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* name */ java.lang.String, 
       /* opts */ atPulumiPulumiLib.resourceMod.ResourceOptions, 
       SharedVolume

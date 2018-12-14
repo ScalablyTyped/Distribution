@@ -829,7 +829,7 @@ trait Client[T] extends js.Object {
   @JSName("setViewportSize")
   def setViewportSize_PClient[P](size: Size, `type`: scala.Boolean): Client[P] = js.native
   def settings(): Client[T] = js.native
-  def settings(settings: ScalablyTyped.runtime.StringDictionary[java.lang.String]): Client[T] = js.native
+  def settings(settings: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Client[T] = js.native
   def shake(): Client[T] = js.native
   def source(): Client[RawResult[java.lang.String]] with RawResult[java.lang.String] = js.native
   @JSName("source")

@@ -20,7 +20,7 @@ trait nlobjAssistantStep
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * return an array of the names of all fields entered by the user during this step.
        * @return {string[]}

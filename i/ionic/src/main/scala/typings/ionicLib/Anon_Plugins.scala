@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Plugins extends js.Object {
   var platforms: js.Array[java.lang.String]
-  var plugins: ScalablyTyped.runtime.StringDictionary[js.Object]
+  var plugins: org.scalablytyped.runtime.StringDictionary[js.Object]
 }
 

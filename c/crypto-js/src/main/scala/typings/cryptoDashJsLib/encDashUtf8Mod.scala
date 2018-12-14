@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto-js/enc-utf8", JSImport.Namespace)
 @js.native
 object encDashUtf8Mod
-  extends ScalablyTyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Any]
 

@@ -11,5 +11,5 @@ trait webkitRTCPeerConnection extends RTCPeerConnection
 @JSGlobal("webkitRTCPeerConnection")
 @js.native
 object webkitRTCPeerConnection
-  extends ScalablyTyped.runtime.Instantiable1[/* configuration */ RTCConfiguration, webkitRTCPeerConnection]
+  extends org.scalablytyped.runtime.Instantiable1[/* configuration */ RTCConfiguration, webkitRTCPeerConnection]
 

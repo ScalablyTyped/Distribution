@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CookiesFunction
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* request */ nodeLib.httpMod.IncomingMessage, 
       /* response */ nodeLib.httpMod.ServerResponse, 
       Cookies
@@ -19,7 +19,7 @@ trait CookiesFunction
 /**
      * "options" instance of Keygrip is deprecated, provide using options {"keys": keygrip}
      */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* request */ nodeLib.httpMod.IncomingMessage, 
       /* response */ nodeLib.httpMod.ServerResponse, 
       (/* options */ cookiesLib.cookiesMod.CookiesNs.Option) | (/* options */ js.Array[java.lang.String]) | (/* options */ keygripLib.keygripMod.Keygrip), 

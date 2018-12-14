@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hashtable", JSImport.Namespace)
 @js.native
 object hashtableMod
-  extends ScalablyTyped.runtime.TopLevel[IHashtableStatic]
+  extends org.scalablytyped.runtime.TopLevel[IHashtableStatic]
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TapRecognizerStatic
-  extends ScalablyTyped.runtime.Instantiable0[TapRecognizer]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ RecognizerOptions, TapRecognizer]
+  extends org.scalablytyped.runtime.Instantiable0[TapRecognizer]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ RecognizerOptions, TapRecognizer]
 

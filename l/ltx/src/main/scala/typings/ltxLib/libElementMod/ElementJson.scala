@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ElementJson extends js.Object {
-  var attrs: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var attrs: org.scalablytyped.runtime.StringDictionary[js.Any]
   var children: js.Array[ElementJson | TextNode]
   var name: java.lang.String
 }

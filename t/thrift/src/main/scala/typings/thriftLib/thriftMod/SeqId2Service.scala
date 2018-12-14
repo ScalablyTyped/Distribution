@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SeqId2Service
-  extends /* seqid */ ScalablyTyped.runtime.NumberDictionary[java.lang.String]
+  extends /* seqid */ org.scalablytyped.runtime.NumberDictionary[java.lang.String]
 

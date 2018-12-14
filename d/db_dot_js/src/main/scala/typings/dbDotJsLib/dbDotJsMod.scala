@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("db.js", JSImport.Namespace)
 @js.native
 object dbDotJsMod
-  extends ScalablyTyped.runtime.TopLevel[dbDotJsLib.DbJsNs.DbJsStatic]
+  extends org.scalablytyped.runtime.TopLevel[dbDotJsLib.DbJsNs.DbJsStatic]
 

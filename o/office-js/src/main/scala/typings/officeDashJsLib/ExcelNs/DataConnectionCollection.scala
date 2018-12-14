@@ -22,6 +22,6 @@ class DataConnectionCollection ()
            * [Api set: ExcelApi 1.7]
            */
   def refreshAll(): scala.Unit = js.native
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 

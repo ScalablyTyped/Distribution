@@ -18,7 +18,7 @@ trait KeycloakLoginOptions extends js.Object {
   		 * All available options are defined at https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/.
   		 * Example of use: { zoom: "no", hardwareback: "yes" }
   		 */
-  var cordovaOptions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var cordovaOptions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
   		 * Used to tell Keycloak which IDP the user wants to authenticate with.
   		 */

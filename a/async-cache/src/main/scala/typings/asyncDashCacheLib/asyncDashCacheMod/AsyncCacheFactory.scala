@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AsyncCacheFactory
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       /* options */ asyncDashCacheLib.asyncDashCacheMod.AsyncCacheNs.Options[js.Object], 
       asyncDashCacheLib.asyncDashCacheMod.AsyncCacheNs.Cache[js.Object]
     ] {

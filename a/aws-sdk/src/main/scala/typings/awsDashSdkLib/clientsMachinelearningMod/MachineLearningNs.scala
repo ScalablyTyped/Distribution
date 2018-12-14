@@ -749,7 +749,7 @@ object MachineLearningNs extends js.Object {
   
   
   trait DetailsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DetailsValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DetailsValue]
   
   
   trait Evaluation extends js.Object {
@@ -1210,7 +1210,7 @@ object MachineLearningNs extends js.Object {
   
   
   trait PerformanceMetricsProperties
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[PerformanceMetricsPropertyValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[PerformanceMetricsPropertyValue]
   
   
   trait PredictInput extends js.Object {
@@ -1351,7 +1351,7 @@ object MachineLearningNs extends js.Object {
   
   
   trait Record
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[VariableValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[VariableValue]
   
   
   trait RedshiftDataSpec extends js.Object {
@@ -1429,7 +1429,7 @@ object MachineLearningNs extends js.Object {
   
   
   trait ScoreValuePerLabelMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ScoreValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ScoreValue]
   
   
   trait Tag extends js.Object {
@@ -1445,7 +1445,7 @@ object MachineLearningNs extends js.Object {
   
   
   trait TrainingParameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[StringType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[StringType]
   
   @js.native
   trait Types

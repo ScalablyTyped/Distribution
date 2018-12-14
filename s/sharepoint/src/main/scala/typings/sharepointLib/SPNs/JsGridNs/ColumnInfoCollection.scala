@@ -13,7 +13,7 @@ class ColumnInfoCollection protected () extends js.Object {
   def GetColumnArray(): js.Array[_] = js.native
   def GetColumnArray(bVisibleOnly: scala.Boolean): js.Array[_] = js.native
   def GetColumnByKey(key: java.lang.String): js.Any = js.native
-  def GetColumnMap(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def GetColumnMap(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /** Returns null if the specified column is not found or hidden. */
   def GetColumnPosition(key: java.lang.String): scala.Double = js.native
   def InsertColumnAt(idx: scala.Double, colInfo: js.Any): scala.Unit = js.native

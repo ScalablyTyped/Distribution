@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.ui.floatPanel")
 @js.native
 class floatPanel protected () extends js.Object {
-  def this(editor: ckeditorLib.CKEDITORNs.editor, parentElement: ckeditorLib.CKEDITORNs.domNs.element, definition: ScalablyTyped.runtime.StringDictionary[js.Any], level: scala.Double) = this()
-  def addBlock(name: java.lang.String, block: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def this(editor: ckeditorLib.CKEDITORNs.editor, parentElement: ckeditorLib.CKEDITORNs.domNs.element, definition: org.scalablytyped.runtime.StringDictionary[js.Any], level: scala.Double) = this()
+  def addBlock(name: java.lang.String, block: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def addListBlock(name: java.lang.String, multiSelect: scala.Boolean): scala.Unit = js.native
   def allowBlur(allow: scala.Boolean): scala.Unit = js.native
   def blur(): scala.Unit = js.native

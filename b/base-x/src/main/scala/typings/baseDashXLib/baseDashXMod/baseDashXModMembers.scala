@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("base-x", JSImport.Namespace)
 @js.native
 object baseDashXModMembers
-  extends ScalablyTyped.runtime.TopLevel[baseDashXLib.baseDashXMod.BaseXNs.Base]
+  extends org.scalablytyped.runtime.TopLevel[baseDashXLib.baseDashXMod.BaseXNs.Base]
 

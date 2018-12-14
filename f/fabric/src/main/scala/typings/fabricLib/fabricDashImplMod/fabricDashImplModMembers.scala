@@ -16,7 +16,7 @@ object fabricDashImplModMembers extends js.Object {
   def createSVGFontFacesMarkup(objects: js.Array[Object]): java.lang.String = js.native
   def createSVGRefElementsMarkup(canvas: StaticCanvas): java.lang.String = js.native
   def getCSSRules(doc: stdLib.SVGElement): js.Any = js.native
-  def getGradientDefs(doc: stdLib.SVGElement): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getGradientDefs(doc: stdLib.SVGElement): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def loadSVGFromString(
     string: java.lang.String,
     callback: js.Function2[/* results */ js.Array[Object], /* options */ js.Any, scala.Unit]
@@ -36,8 +36,8 @@ object fabricDashImplModMembers extends js.Object {
     reviver: js.Function
   ): scala.Unit = js.native
   def log(values: js.Any*): scala.Unit = js.native
-  def parseAttributes(element: stdLib.HTMLElement, attributes: js.Array[java.lang.String]): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
-  def parseAttributes(element: stdLib.HTMLElement, attributes: js.Array[java.lang.String], svgUid: java.lang.String): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def parseAttributes(element: stdLib.HTMLElement, attributes: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+  def parseAttributes(element: stdLib.HTMLElement, attributes: js.Array[java.lang.String], svgUid: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def parseElements(elements: js.Array[stdLib.SVGElement], callback: js.Function): scala.Unit = js.native
   def parseElements(elements: js.Array[_ | stdLib.SVGElement], callback: js.Function, options: js.Any): scala.Unit = js.native
   def parseElements(

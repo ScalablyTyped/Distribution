@@ -35,7 +35,7 @@ trait JQueryColorpickerOptions extends js.Object {
   var init: js.UndefOr[js.Function] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   var inlineFrame: js.UndefOr[scala.Boolean] = js.undefined
-  var layout: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Array[scala.Double]]] = js.undefined
+  var layout: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[scala.Double]]] = js.undefined
   var limit: js.UndefOr[java.lang.String] = js.undefined
   var modal: js.UndefOr[scala.Boolean] = js.undefined
   var mode: js.UndefOr[java.lang.String] = js.undefined

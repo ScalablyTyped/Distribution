@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait INetworkOnlyConstructor
-  extends ScalablyTyped.runtime.Instantiable0[NetworkOnly]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ stdLib.Partial[INetworkOnlyOptions], NetworkOnly]
+  extends org.scalablytyped.runtime.Instantiable0[NetworkOnly]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ stdLib.Partial[INetworkOnlyOptions], NetworkOnly]
 

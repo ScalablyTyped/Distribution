@@ -20,15 +20,15 @@ object prosemirrorDashInputrulesModMembers extends js.Object {
   def textblockTypeInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     regexp: stdLib.RegExp,
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    getAttrs: ScalablyTyped.runtime.StringDictionary[js.Any]
+    getAttrs: js.Function1[
+      /* p */ js.Array[java.lang.String], 
+      js.UndefOr[org.scalablytyped.runtime.StringDictionary[_] | scala.Null]
+    ]
   ): InputRule[S] = js.native
   def textblockTypeInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     regexp: stdLib.RegExp,
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    getAttrs: js.Function1[
-      /* p */ js.Array[java.lang.String], 
-      js.UndefOr[ScalablyTyped.runtime.StringDictionary[_] | scala.Null]
-    ]
+    getAttrs: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): InputRule[S] = js.native
   def undoInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Boolean = js.native
   def undoInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
@@ -39,12 +39,18 @@ object prosemirrorDashInputrulesModMembers extends js.Object {
   def wrappingInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     regexp: stdLib.RegExp,
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    getAttrs: ScalablyTyped.runtime.StringDictionary[js.Any]
+    getAttrs: js.Function1[
+      /* p */ js.Array[java.lang.String], 
+      js.UndefOr[org.scalablytyped.runtime.StringDictionary[_] | scala.Null]
+    ]
   ): InputRule[S] = js.native
   def wrappingInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     regexp: stdLib.RegExp,
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    getAttrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    getAttrs: js.Function1[
+      /* p */ js.Array[java.lang.String], 
+      js.UndefOr[org.scalablytyped.runtime.StringDictionary[_] | scala.Null]
+    ],
     joinPredicate: js.Function2[
       /* p1 */ js.Array[java.lang.String], 
       /* p2 */ prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], 
@@ -54,18 +60,12 @@ object prosemirrorDashInputrulesModMembers extends js.Object {
   def wrappingInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     regexp: stdLib.RegExp,
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    getAttrs: js.Function1[
-      /* p */ js.Array[java.lang.String], 
-      js.UndefOr[ScalablyTyped.runtime.StringDictionary[_] | scala.Null]
-    ]
+    getAttrs: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): InputRule[S] = js.native
   def wrappingInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     regexp: stdLib.RegExp,
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    getAttrs: js.Function1[
-      /* p */ js.Array[java.lang.String], 
-      js.UndefOr[ScalablyTyped.runtime.StringDictionary[_] | scala.Null]
-    ],
+    getAttrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     joinPredicate: js.Function2[
       /* p1 */ js.Array[java.lang.String], 
       /* p2 */ prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], 

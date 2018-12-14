@@ -11,7 +11,7 @@ trait Anon_Tooltip extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
 }
 

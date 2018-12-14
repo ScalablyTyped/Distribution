@@ -11,7 +11,7 @@ class MsoEnvelope protected () extends js.Object {
   @JSName("CommandBars")
   val CommandBars_Original: CommandBars = js.native
   var Introduction: java.lang.String = js.native
-  val Item: js.Any = js.native
+  val Item: activexDashOutlookLib.OutlookNs.MailItem = js.native
   var `Office.MsoEnvelope_typekey`: MsoEnvelope = js.native
   val Parent: js.Any = js.native
   def CommandBars(Index: java.lang.String): CommandBar = js.native

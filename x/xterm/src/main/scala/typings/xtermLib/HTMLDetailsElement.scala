@@ -13,5 +13,5 @@ trait HTMLDetailsElement extends HTMLElement {
 @JSGlobal("HTMLDetailsElement")
 @js.native
 object HTMLDetailsElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLDetailsElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLDetailsElement]
 

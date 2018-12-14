@@ -10,7 +10,7 @@ trait IgDataChart
   extends /**
 	 * Option for igDataChart
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Set to true in order to override the default behavior in which series do not animate if an axis range changes
   	 */

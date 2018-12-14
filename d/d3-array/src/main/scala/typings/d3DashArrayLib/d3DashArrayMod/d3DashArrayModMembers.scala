@@ -149,7 +149,7 @@ object d3DashArrayModMembers extends js.Object {
   ): js.UndefOr[U] = js.native
   def pairs[T](array: stdLib.ArrayLike[T]): js.Array[js.Tuple2[T, T]] = js.native
   def pairs[T, U](array: stdLib.ArrayLike[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = js.native
-  def permute[T](array: ScalablyTyped.runtime.NumberDictionary[T], keys: stdLib.ArrayLike[scala.Double]): js.Array[T] = js.native
+  def permute[T](array: org.scalablytyped.runtime.NumberDictionary[T], keys: stdLib.ArrayLike[scala.Double]): js.Array[T] = js.native
   def permute[T, K /* <: java.lang.String */](`object`: T, keys: stdLib.ArrayLike[K]): js.Array[
     /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
   ] = js.native

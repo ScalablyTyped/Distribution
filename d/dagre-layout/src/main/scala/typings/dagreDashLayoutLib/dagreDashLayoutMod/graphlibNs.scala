@@ -27,16 +27,16 @@ object graphlibNs extends js.Object {
     def setEdge(
       sourceId: java.lang.String,
       targetId: java.lang.String,
-      options: ScalablyTyped.runtime.StringDictionary[js.Any]
+      options: org.scalablytyped.runtime.StringDictionary[js.Any]
     ): Graph = js.native
     def setEdge(
       sourceId: java.lang.String,
       targetId: java.lang.String,
-      options: ScalablyTyped.runtime.StringDictionary[js.Any],
+      options: org.scalablytyped.runtime.StringDictionary[js.Any],
       value: java.lang.String
     ): Graph = js.native
     def setGraph(label: dagreDashLayoutLib.dagreDashLayoutMod.GraphLabel): Graph = js.native
-    def setNode(id: java.lang.String, node: ScalablyTyped.runtime.StringDictionary[js.Any]): Graph = js.native
+    def setNode(id: java.lang.String, node: org.scalablytyped.runtime.StringDictionary[js.Any]): Graph = js.native
     def setParent(name: java.lang.String, parentName: java.lang.String): scala.Unit = js.native
   }
   

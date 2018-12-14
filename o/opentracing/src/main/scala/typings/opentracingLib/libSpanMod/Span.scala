@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("opentracing/lib/span", "Span")
 @js.native
 class Span () extends js.Object {
-  /* protected */ def _addTags(keyValuePairs: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  /* protected */ def _addTags(keyValuePairs: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /* protected */ def _context(): opentracingLib.libSpanUnderscoreContextMod.default = js.native
   /* protected */ def _finish(): scala.Unit = js.native
   /* protected */ def _finish(finishTime: scala.Double): scala.Unit = js.native
   /* protected */ def _getBaggageItem(key: java.lang.String): js.UndefOr[java.lang.String] = js.native
-  /* protected */ def _log(keyValuePairs: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  /* protected */ def _log(keyValuePairs: ScalablyTyped.runtime.StringDictionary[js.Any], timestamp: scala.Double): scala.Unit = js.native
+  /* protected */ def _log(keyValuePairs: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  /* protected */ def _log(keyValuePairs: org.scalablytyped.runtime.StringDictionary[js.Any], timestamp: scala.Double): scala.Unit = js.native
   /* protected */ def _setBaggageItem(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
   /* protected */ def _setOperationName(name: java.lang.String): scala.Unit = js.native
   /* protected */ def _tracer(): opentracingLib.libTracerMod.default = js.native
@@ -34,7 +34,7 @@ class Span () extends js.Object {
        *
        * @return {[type]} [description]
        */
-  def addTags(keyValueMap: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def addTags(keyValueMap: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
        * Returns the SpanContext object associated with this Span.
        *
@@ -106,7 +106,7 @@ class Span () extends js.Object {
        *        not specified, the implementation is expected to use its notion
        *        of the current time of the call.
        */
-  def log(keyValuePairs: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def log(keyValuePairs: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
        * Add a log record to this Span, optionally at a user-provided timestamp.
        *
@@ -134,7 +134,7 @@ class Span () extends js.Object {
        *        not specified, the implementation is expected to use its notion
        *        of the current time of the call.
        */
-  def log(keyValuePairs: ScalablyTyped.runtime.StringDictionary[js.Any], timestamp: scala.Double): this.type = js.native
+  def log(keyValuePairs: org.scalablytyped.runtime.StringDictionary[js.Any], timestamp: scala.Double): this.type = js.native
   /**
        * DEPRECATED
        */

@@ -13,9 +13,9 @@ abstract class SchemaVisitor () extends js.Object {
   def visitEnum(`type`: graphqlLib.graphqlMod.GraphQLEnumType): graphqlLib.graphqlMod.GraphQLEnumType | scala.Unit | scala.Null = js.native
   def visitEnumValue(value: graphqlLib.typeDefinitionMod.GraphQLEnumValue, details: graphqlDashToolsLib.Anon_EnumType): graphqlLib.typeDefinitionMod.GraphQLEnumValue | scala.Unit | scala.Null = js.native
   def visitFieldDefinition(
-    field: graphqlLib.typeDefinitionMod.GraphQLField[_, _, ScalablyTyped.runtime.StringDictionary[_]],
+    field: graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     details: graphqlDashToolsLib.Anon_ObjectType
-  ): (graphqlLib.typeDefinitionMod.GraphQLField[_, _, ScalablyTyped.runtime.StringDictionary[_]]) | scala.Unit | scala.Null = js.native
+  ): (graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Unit | scala.Null = js.native
   def visitInputFieldDefinition(
     field: graphqlLib.typeDefinitionMod.GraphQLInputField,
     details: graphqlDashToolsLib.Anon_ObjectTypeGraphQLInputObjectType

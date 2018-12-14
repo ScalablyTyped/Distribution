@@ -401,7 +401,7 @@ object EvernoteNs extends js.Object {
   
   
   trait ClientConfig extends js.Object {
-    var additionalHeaders: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+    var additionalHeaders: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
     var consumerKey: js.UndefOr[java.lang.String] = js.undefined
     var consumerSecret: js.UndefOr[java.lang.String] = js.undefined
     var sandbox: js.UndefOr[scala.Boolean] = js.undefined
@@ -578,7 +578,7 @@ object EvernoteNs extends js.Object {
   @js.native
   class LazyMap () extends js.Object {
     def this(args: evernoteLib.Anon_FullMap) = this()
-    var fullMap: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+    var fullMap: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     var keysOnly: js.Array[java.lang.String] = js.native
   }
   
@@ -997,7 +997,7 @@ object EvernoteNs extends js.Object {
     var altitude: scala.Double = js.native
     var applicationData: LazyMap = js.native
     var author: java.lang.String = js.native
-    var classifications: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+    var classifications: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     var contentClass: java.lang.String = js.native
     var creatorId: scala.Double = js.native
     var lastEditedBy: java.lang.String = js.native
@@ -1044,8 +1044,8 @@ object EvernoteNs extends js.Object {
   @js.native
   class NoteCollectionCounts () extends js.Object {
     def this(args: evernoteLib.Anon_TrashCount) = this()
-    var notebookCounts: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
-    var tagCounts: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+    var notebookCounts: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
+    var tagCounts: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
     var trashCount: scala.Double = js.native
   }
   

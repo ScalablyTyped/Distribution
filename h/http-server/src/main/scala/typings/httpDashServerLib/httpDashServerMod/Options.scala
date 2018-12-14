@@ -15,7 +15,7 @@ trait Options extends js.Object {
   var corsHeaders: js.UndefOr[java.lang.String] = js.undefined
   var ext: js.UndefOr[scala.Boolean] = js.undefined
   var gzip: js.UndefOr[scala.Boolean] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var https: js.UndefOr[nodeLib.httpsMod.ServerOptions] = js.undefined
   // tslint:disable-next-line prefer-method-signature
   var logFn: js.UndefOr[

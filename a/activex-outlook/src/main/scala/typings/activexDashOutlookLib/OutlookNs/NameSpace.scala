@@ -33,7 +33,7 @@ class NameSpace protected () extends js.Object {
   def AddStore(Store: js.Any): scala.Unit = js.native
   def AddStoreEx(Store: js.Any, Type: OlStoreType): scala.Unit = js.native
   def CompareEntryIDs(FirstEntryID: java.lang.String, SecondEntryID: java.lang.String): scala.Boolean = js.native
-  def CreateContactCard(AddressEntry: AddressEntry): activexDashOfficeLib.OfficeNs.ContactCard = js.native
+  def CreateContactCard(AddressEntry: AddressEntry): js.Any = js.native
   def CreateRecipient(RecipientName: java.lang.String): Recipient = js.native
   def CreateSharingItem(Context: js.Any): SharingItem = js.native
   def CreateSharingItem(Context: js.Any, Provider: js.Any): SharingItem = js.native

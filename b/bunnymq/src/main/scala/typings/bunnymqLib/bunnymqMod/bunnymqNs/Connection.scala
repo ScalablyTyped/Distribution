@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Connection
-  extends /* address */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* address */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var startedAt: java.lang.String
 }
 

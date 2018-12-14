@@ -32,7 +32,7 @@ trait TaskAgent extends TaskAgentReference {
        * Gets the date on which the last connectivity status change occurred.
        */
   var statusChangedOn: stdLib.Date
-  var systemCapabilities: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var userCapabilities: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var systemCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var userCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

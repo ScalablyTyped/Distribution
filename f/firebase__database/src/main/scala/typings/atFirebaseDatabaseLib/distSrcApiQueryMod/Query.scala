@@ -236,7 +236,7 @@ class Query protected () extends js.Object {
        * @param {?Object} context
        * @protected
        */
-  def onChildEvent(callbacks: ScalablyTyped.runtime.StringDictionary[SnapshotCallback]): scala.Unit = js.native
+  def onChildEvent(callbacks: org.scalablytyped.runtime.StringDictionary[SnapshotCallback]): scala.Unit = js.native
   /**
        * @param {!Object.<string, !function(!DataSnapshot, ?string)>} callbacks
        * @param {?function(Error)} cancelCallback
@@ -244,7 +244,7 @@ class Query protected () extends js.Object {
        * @protected
        */
   def onChildEvent(
-    callbacks: ScalablyTyped.runtime.StringDictionary[SnapshotCallback],
+    callbacks: org.scalablytyped.runtime.StringDictionary[SnapshotCallback],
     cancelCallback: js.Function1[/* a */ stdLib.Error, _]
   ): scala.Unit = js.native
   /**
@@ -254,7 +254,7 @@ class Query protected () extends js.Object {
        * @protected
        */
   def onChildEvent(
-    callbacks: ScalablyTyped.runtime.StringDictionary[SnapshotCallback],
+    callbacks: org.scalablytyped.runtime.StringDictionary[SnapshotCallback],
     cancelCallback: js.Function1[/* a */ stdLib.Error, _],
     context: js.Object
   ): scala.Unit = js.native
@@ -265,7 +265,7 @@ class Query protected () extends js.Object {
        * @protected
        */
   def onChildEvent(
-    callbacks: ScalablyTyped.runtime.StringDictionary[SnapshotCallback],
+    callbacks: org.scalablytyped.runtime.StringDictionary[SnapshotCallback],
     cancelCallback: scala.Null,
     context: js.Object
   ): scala.Unit = js.native
@@ -468,7 +468,7 @@ class Query protected () extends js.Object {
 @JSImport("@firebase/database/dist/src/api/Query", "Query")
 @js.native
 object Query extends js.Object {
-  var __referenceConstructor: ScalablyTyped.runtime.Instantiable2[
+  var __referenceConstructor: org.scalablytyped.runtime.Instantiable2[
     /* repo */ atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, 
     /* path */ atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, 
     atFirebaseDatabaseLib.distSrcApiQueryMod.Query

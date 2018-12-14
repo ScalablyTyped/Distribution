@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Mocha.Context")
 @js.native
 class Context ()
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var _runnable: js.Any = js.native
   var currentTest: js.UndefOr[Test] = js.native
   var test: js.UndefOr[Runnable] = js.native

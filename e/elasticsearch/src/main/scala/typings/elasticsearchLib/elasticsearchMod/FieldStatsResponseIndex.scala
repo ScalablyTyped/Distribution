@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait FieldStatsResponseIndex extends js.Object {
-  var fields: ScalablyTyped.runtime.StringDictionary[FieldStatsResponseField]
+  var fields: org.scalablytyped.runtime.StringDictionary[FieldStatsResponseField]
 }
 

@@ -27,5 +27,5 @@ trait TextMetrics extends js.Object {
 @JSGlobal("TextMetrics")
 @js.native
 object TextMetrics
-  extends ScalablyTyped.runtime.Instantiable0[TextMetrics]
+  extends org.scalablytyped.runtime.Instantiable0[TextMetrics]
 

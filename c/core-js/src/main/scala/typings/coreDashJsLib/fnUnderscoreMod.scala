@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/_", JSImport.Namespace)
 @js.native
 object fnUnderscoreMod
-  extends ScalablyTyped.runtime.TopLevel[scala.Boolean]
+  extends org.scalablytyped.runtime.TopLevel[scala.Boolean]
 

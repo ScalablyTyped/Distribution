@@ -244,5 +244,5 @@ trait HTMLInputElement extends HTMLElement {
 @JSGlobal("HTMLInputElement")
 @js.native
 object HTMLInputElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLInputElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLInputElement]
 

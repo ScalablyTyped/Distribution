@@ -10,7 +10,7 @@ trait InitializeResult
   extends /**
      * Custom initialization results.
      */
-/* custom */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* custom */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * The capabilities the language server provides.
        */

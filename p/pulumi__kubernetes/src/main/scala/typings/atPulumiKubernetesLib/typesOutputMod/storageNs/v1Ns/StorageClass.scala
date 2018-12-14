@@ -54,7 +54,7 @@ trait StorageClass extends js.Object {
                * Parameters holds the parameters for the provisioner that should create volumes of this
                * storage class.
                */
-  val parameters: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * Provisioner indicates the type of the provisioner.
                */

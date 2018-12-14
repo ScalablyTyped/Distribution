@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Logger
-  extends ScalablyTyped.runtime.Instantiable1[/* config */ LoggerConfig, LoggerConfig] {
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ LoggerConfig, LoggerConfig] {
   def debug(message: java.lang.String): scala.Unit = js.native
   def debug(message: java.lang.String, data: js.Object): scala.Unit = js.native
   def error(message: java.lang.String): scala.Unit = js.native

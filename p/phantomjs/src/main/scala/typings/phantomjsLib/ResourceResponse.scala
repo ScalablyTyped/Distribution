@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ResourceResponse extends js.Object {
   var bodySize: scala.Double
   var contentType: js.UndefOr[java.lang.String] = js.undefined
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var id: scala.Double
   var redirectURL: js.UndefOr[java.lang.String] = js.undefined
   var stage: java.lang.String

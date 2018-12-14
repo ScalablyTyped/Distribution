@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LicenseLookup
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[Entry]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[Entry]
 

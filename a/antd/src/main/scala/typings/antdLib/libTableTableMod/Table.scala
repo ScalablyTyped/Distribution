@@ -12,7 +12,7 @@ trait Table[T]
       antdLib.libTableInterfaceMod.TableState[T], 
       js.Any
     ] {
-  var CheckboxPropsCache: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var CheckboxPropsCache: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]] = js.native
   var components: antdLib.libTableInterfaceMod.TableComponents = js.native
   var getColumnTitle: js.Any = js.native

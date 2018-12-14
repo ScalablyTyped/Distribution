@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IDevTools
-  extends ScalablyTyped.runtime.Instantiable0[reactLib.reactMod.Global.JSXNs.ElementClass] {
+  extends org.scalablytyped.runtime.Instantiable0[reactLib.reactMod.Global.JSXNs.ElementClass] {
   def instrument(): js.Any = js.native
 }
 

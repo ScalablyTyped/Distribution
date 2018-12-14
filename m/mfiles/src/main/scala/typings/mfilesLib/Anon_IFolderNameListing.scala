@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IFolderNameListing
-  extends ScalablyTyped.runtime.Instantiable0[IFolderNameListing]
+  extends org.scalablytyped.runtime.Instantiable0[IFolderNameListing]
 

@@ -36,11 +36,6 @@ class MarkerClusterGroup ()
           * If you have customized the clusters icon to use some data from the contained markers,
           * and later that data changes, use this method to force a refresh of the cluster icons.
           */
-  def refreshClusters(clusters: ScalablyTyped.runtime.StringDictionary[leafletLib.leafletMod.Layer]): this.type = js.native
-  /*
-          * If you have customized the clusters icon to use some data from the contained markers,
-          * and later that data changes, use this method to force a refresh of the cluster icons.
-          */
   def refreshClusters(clusters: js.Array[leafletLib.leafletMod.Marker[_]]): this.type = js.native
   /*
           * If you have customized the clusters icon to use some data from the contained markers,
@@ -52,6 +47,11 @@ class MarkerClusterGroup ()
           * and later that data changes, use this method to force a refresh of the cluster icons.
           */
   def refreshClusters(clusters: leafletLib.leafletMod.Marker[_]): this.type = js.native
+  /*
+          * If you have customized the clusters icon to use some data from the contained markers,
+          * and later that data changes, use this method to force a refresh of the cluster icons.
+          */
+  def refreshClusters(clusters: org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.Layer]): this.type = js.native
   def removeLayers(layers: js.Array[leafletLib.leafletMod.Layer]): this.type = js.native
   /*
           * Zooms to show the given marker (spiderfying if required),

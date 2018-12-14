@@ -16,7 +16,7 @@ class Model () extends Query {
   def getConnection(): js.Promise[mongodbLib.mongodbMod.Db] = js.native
   def increment(key: java.lang.String): js.Promise[RefreshedAction] = js.native
   def increment(key: java.lang.String, value: scala.Double): js.Promise[RefreshedAction] = js.native
-  def increment(keys: ScalablyTyped.runtime.StringDictionary[scala.Double]): js.Promise[RefreshedAction] = js.native
+  def increment(keys: org.scalablytyped.runtime.StringDictionary[scala.Double]): js.Promise[RefreshedAction] = js.native
   def isSaved(): scala.Boolean = js.native
   def refresh(): js.Promise[RefreshedAction] = js.native
   def remove(): js.Promise[RemovedAction] = js.native

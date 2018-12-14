@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Hash[T]
-  extends /* path */ ScalablyTyped.runtime.StringDictionary[T]
+  extends /* path */ org.scalablytyped.runtime.StringDictionary[T]
 

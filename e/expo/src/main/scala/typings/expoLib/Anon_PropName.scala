@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_PropName
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var dev: js.UndefOr[scala.Boolean] = js.undefined
   var hostType: js.UndefOr[java.lang.String] = js.undefined
   var lanType: js.UndefOr[java.lang.String] = js.undefined

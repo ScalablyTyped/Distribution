@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Encoder ()
   extends nodeLib.streamMod.Transform {
   def addSemanticType[T](
-    `type`: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
+    `type`: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
     encodeFunction: js.Function2[/* encoder */ this.type, /* t */ T, scala.Unit]
   ): scala.Unit = js.native
   def pushAny(input: js.Any): scala.Unit = js.native

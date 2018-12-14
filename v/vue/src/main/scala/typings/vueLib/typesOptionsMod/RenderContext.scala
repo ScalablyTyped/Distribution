@@ -10,7 +10,7 @@ trait RenderContext[Props] extends js.Object {
   var children: js.Array[vueLib.typesVnodeMod.VNode]
   var data: vueLib.typesVnodeMod.VNodeData
   var injections: js.Any
-  var listeners: ScalablyTyped.runtime.StringDictionary[js.Function | js.Array[js.Function]]
+  var listeners: org.scalablytyped.runtime.StringDictionary[js.Function | js.Array[js.Function]]
   var parent: vueLib.typesVueMod.Vue
   var props: Props
   def slots(): js.Any

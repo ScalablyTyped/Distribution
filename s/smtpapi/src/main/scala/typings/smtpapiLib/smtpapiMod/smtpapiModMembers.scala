@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("smtpapi", JSImport.Namespace)
 @js.native
 object smtpapiModMembers
-  extends ScalablyTyped.runtime.TopLevel[smtpapiLib.smtpapiMod.SmtpApiNs.Constructor]
+  extends org.scalablytyped.runtime.TopLevel[smtpapiLib.smtpapiMod.SmtpApiNs.Constructor]
 

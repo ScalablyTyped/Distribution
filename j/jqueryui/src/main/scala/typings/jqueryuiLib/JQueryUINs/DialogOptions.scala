@@ -11,7 +11,7 @@ trait DialogOptions extends DialogEvents {
   var appendTo: js.UndefOr[java.lang.String] = js.undefined
   var autoOpen: js.UndefOr[scala.Boolean] = js.undefined
   var buttons: js.UndefOr[
-    (ScalablyTyped.runtime.StringDictionary[js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit]]) | js.Array[DialogButtonOptions]
+    (org.scalablytyped.runtime.StringDictionary[js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit]]) | js.Array[DialogButtonOptions]
   ] = js.undefined
   var classes: js.UndefOr[DialogClasses] = js.undefined
   var closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined

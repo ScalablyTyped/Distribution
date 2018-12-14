@@ -10,7 +10,7 @@ trait QueryComplexity extends js.Object {
   var OperationDefinition: js.Object = js.native
   var complexity: scala.Double = js.native
   var context: graphqlLib.graphqlMod.ValidationContext = js.native
-  var fragments: ScalablyTyped.runtime.StringDictionary[graphqlLib.languageAstMod.FragmentDefinitionNode] = js.native
+  var fragments: org.scalablytyped.runtime.StringDictionary[graphqlLib.languageAstMod.FragmentDefinitionNode] = js.native
   var options: QueryComplexityOptions = js.native
   def createError(): graphqlLib.graphqlMod.GraphQLError = js.native
   def getDefaultComplexity(args: js.Object, childScore: scala.Double): scala.Double = js.native

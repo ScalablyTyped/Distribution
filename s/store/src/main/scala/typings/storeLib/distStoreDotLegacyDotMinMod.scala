@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("store/dist/store.legacy.min", JSImport.Namespace)
 @js.native
 object distStoreDotLegacyDotMinMod
-  extends ScalablyTyped.runtime.TopLevel[StoreJsAPI]
+  extends org.scalablytyped.runtime.TopLevel[StoreJsAPI]
 

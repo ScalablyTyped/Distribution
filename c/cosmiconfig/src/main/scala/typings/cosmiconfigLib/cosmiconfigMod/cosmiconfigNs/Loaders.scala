@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Loaders
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[LoaderEntry]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[LoaderEntry]
 

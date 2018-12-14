@@ -89,7 +89,7 @@ trait TextTrackCue extends EventTarget {
 @JSGlobal("TextTrackCue")
 @js.native
 object TextTrackCue
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* startTime */ scala.Double, 
       /* endTime */ scala.Double, 
       /* text */ java.lang.String, 

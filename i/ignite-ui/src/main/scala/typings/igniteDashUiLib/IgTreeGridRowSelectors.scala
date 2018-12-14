@@ -10,7 +10,7 @@ trait IgTreeGridRowSelectors
   extends /**
 	 * Option for igTreeGridRowSelectors
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets the type of checkboxes rendered in the row selector. Can be set only at initialization.
   	 *

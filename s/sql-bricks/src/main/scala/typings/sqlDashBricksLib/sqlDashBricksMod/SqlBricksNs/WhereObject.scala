@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait WhereObject
-  extends /* column */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* column */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

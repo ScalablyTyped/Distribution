@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SNSMessageAttributes
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[SNSMessageAttribute]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[SNSMessageAttribute]
 

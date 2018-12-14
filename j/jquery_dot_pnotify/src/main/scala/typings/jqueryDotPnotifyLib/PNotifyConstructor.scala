@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PNotifyConstructor
-  extends ScalablyTyped.runtime.Instantiable0[PNotify]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ PNotifyOptions, PNotify] {
+  extends org.scalablytyped.runtime.Instantiable0[PNotify]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ PNotifyOptions, PNotify] {
   /**
        * Reposition the notices, optionally animating their movement.
        */

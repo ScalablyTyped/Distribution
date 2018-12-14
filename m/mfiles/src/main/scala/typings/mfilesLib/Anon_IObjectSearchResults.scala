@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IObjectSearchResults
-  extends ScalablyTyped.runtime.Instantiable0[IObjectSearchResults]
+  extends org.scalablytyped.runtime.Instantiable0[IObjectSearchResults]
 

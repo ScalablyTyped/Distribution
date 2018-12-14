@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait SignatureMethodStatic extends js.Object {
   /** A map from signature method name to constructor. */
-  var REGISTERED: ScalablyTyped.runtime.StringDictionary[oauthDotJsLib.Anon_SignatureMethod]
+  var REGISTERED: org.scalablytyped.runtime.StringDictionary[oauthDotJsLib.Anon_SignatureMethod]
   /**
            * Generate a signature base string from a Message object.
            * @see {@link https://tools.ietf.org/html/rfc5849#section-3.4.1}

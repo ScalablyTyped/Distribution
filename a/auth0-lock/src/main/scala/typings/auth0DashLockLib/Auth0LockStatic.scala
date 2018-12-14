@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Auth0LockStatic
-  extends ScalablyTyped.runtime.Instantiable2[/* clientId */ java.lang.String, /* domain */ java.lang.String, Auth0LockStatic]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable2[/* clientId */ java.lang.String, /* domain */ java.lang.String, Auth0LockStatic]
+     with org.scalablytyped.runtime.Instantiable3[
       /* clientId */ java.lang.String, 
       /* domain */ java.lang.String, 
       /* options */ Auth0LockConstructorOptions, 

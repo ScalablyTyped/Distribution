@@ -561,7 +561,7 @@ object CodeStarNs extends js.Object {
   
   
   trait Tags
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   
   trait TeamMember extends js.Object {
@@ -581,7 +581,7 @@ object CodeStarNs extends js.Object {
   
   
   trait TemplateParameterMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TemplateParameterValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TemplateParameterValue]
   
   
   trait Toolchain extends js.Object {

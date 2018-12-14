@@ -17,6 +17,6 @@ object persistenceNs extends js.Object {
   val Memory: FactoryFunc = js.native
   val Mongo: FactoryFunc = js.native
   val Redis: FactoryFunc = js.native
-  type FactoryFunc = js.Function1[/* options */ ScalablyTyped.runtime.StringDictionary[js.Any], Persistence]
+  type FactoryFunc = js.Function1[/* options */ org.scalablytyped.runtime.StringDictionary[js.Any], Persistence]
 }
 

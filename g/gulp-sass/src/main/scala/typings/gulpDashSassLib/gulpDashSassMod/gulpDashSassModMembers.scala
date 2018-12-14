@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-sass", JSImport.Namespace)
 @js.native
 object gulpDashSassModMembers
-  extends ScalablyTyped.runtime.TopLevel[Sass]
+  extends org.scalablytyped.runtime.TopLevel[Sass]
 

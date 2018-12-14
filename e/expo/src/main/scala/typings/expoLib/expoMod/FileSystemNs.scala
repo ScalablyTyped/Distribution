@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object FileSystemNs extends js.Object {
   
   trait DownloadOptions extends js.Object {
-    var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+    var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
     var md5: js.UndefOr[scala.Boolean] = js.undefined
   }
   
@@ -22,7 +22,7 @@ object FileSystemNs extends js.Object {
   
   
   trait DownloadResult extends js.Object {
-    var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
     var md5: js.UndefOr[expoLib.expoMod.Md5] = js.undefined
     var status: scala.Double
     var uri: java.lang.String

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LookForAtAreaResultMatrix[T, K /* <: java.lang.String */]
-  extends /* y */ ScalablyTyped.runtime.NumberDictionary[ScalablyTyped.runtime.NumberDictionary[js.Array[LookForAtAreaResult[T, K]]]]
+  extends /* y */ org.scalablytyped.runtime.NumberDictionary[org.scalablytyped.runtime.NumberDictionary[js.Array[LookForAtAreaResult[T, K]]]]
 

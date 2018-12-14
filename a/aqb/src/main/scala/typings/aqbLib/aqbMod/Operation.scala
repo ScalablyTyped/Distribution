@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Operation
   extends Expression
-     with ScalablyTyped.runtime.Instantiable0[Expression]
+     with org.scalablytyped.runtime.Instantiable0[Expression]
 

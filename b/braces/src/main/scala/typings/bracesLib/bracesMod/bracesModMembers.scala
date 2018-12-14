@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("braces", JSImport.Namespace)
 @js.native
 object bracesModMembers
-  extends ScalablyTyped.runtime.TopLevel[Braces]
+  extends org.scalablytyped.runtime.TopLevel[Braces]
 

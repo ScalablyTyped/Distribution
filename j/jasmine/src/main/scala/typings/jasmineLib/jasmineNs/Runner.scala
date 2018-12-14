@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Runner
-  extends ScalablyTyped.runtime.Instantiable1[/* env */ Env, js.Any] {
+  extends org.scalablytyped.runtime.Instantiable1[/* env */ Env, js.Any] {
   def add(block: Block): scala.Unit = js.native
   def addSuite(suite: Suite): scala.Unit = js.native
   def afterAll(afterAllFunction: SpecFunction): scala.Unit = js.native

@@ -78,5 +78,5 @@ trait SVGFEDiffuseLightingElement
 @JSGlobal("SVGFEDiffuseLightingElement")
 @js.native
 object SVGFEDiffuseLightingElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEDiffuseLightingElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEDiffuseLightingElement]
 

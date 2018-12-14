@@ -17,8 +17,8 @@ trait WebpackMerge extends js.Object {
   def apply(customizeOptions: CustomizeOptions): ConfigurationMergeFunction = js.native
   def multiple(configs: webpackLib.webpackMod.webpackNs.Configuration*): webpackLib.webpackMod.webpackNs.Configuration = js.native
   def smart(configs: webpackLib.webpackMod.webpackNs.Configuration*): webpackLib.webpackMod.webpackNs.Configuration = js.native
-  def smartStrategy(options: ScalablyTyped.runtime.StringDictionary[MergeStrategy]): ConfigurationMergeFunction = js.native
-  def strategy(options: ScalablyTyped.runtime.StringDictionary[MergeStrategy]): ConfigurationMergeFunction = js.native
+  def smartStrategy(options: org.scalablytyped.runtime.StringDictionary[MergeStrategy]): ConfigurationMergeFunction = js.native
+  def strategy(options: org.scalablytyped.runtime.StringDictionary[MergeStrategy]): ConfigurationMergeFunction = js.native
   def unique(
     field: java.lang.String,
     fields: js.Array[java.lang.String],

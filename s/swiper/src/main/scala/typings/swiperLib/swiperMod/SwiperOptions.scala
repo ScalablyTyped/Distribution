@@ -19,7 +19,7 @@ trait SwiperOptions extends js.Object {
   var autoHeight: js.UndefOr[scala.Boolean] = js.undefined
   var autoplay: js.UndefOr[AutoplayOptions | scala.Boolean] = js.undefined
   // Breakpoints
-  var breakpoints: js.UndefOr[ScalablyTyped.runtime.NumberDictionary[SwiperOptions]] = js.undefined
+  var breakpoints: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[SwiperOptions]] = js.undefined
   var breakpointsInverse: js.UndefOr[scala.Boolean] = js.undefined
   var centerInsufficientSlides: js.UndefOr[scala.Boolean] = js.undefined
   var centeredSlides: js.UndefOr[scala.Boolean] = js.undefined

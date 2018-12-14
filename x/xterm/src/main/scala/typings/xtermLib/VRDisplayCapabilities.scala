@@ -17,5 +17,5 @@ trait VRDisplayCapabilities extends js.Object {
 @JSGlobal("VRDisplayCapabilities")
 @js.native
 object VRDisplayCapabilities
-  extends ScalablyTyped.runtime.Instantiable0[VRDisplayCapabilities]
+  extends org.scalablytyped.runtime.Instantiable0[VRDisplayCapabilities]
 

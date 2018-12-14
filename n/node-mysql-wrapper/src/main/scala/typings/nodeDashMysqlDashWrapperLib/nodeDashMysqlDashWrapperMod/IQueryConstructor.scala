@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IQueryConstructor[T]
-  extends ScalablyTyped.runtime.Instantiable1[/* _table */ Table[T], IQuery[T]]
+  extends org.scalablytyped.runtime.Instantiable1[/* _table */ Table[T], IQuery[T]]
 

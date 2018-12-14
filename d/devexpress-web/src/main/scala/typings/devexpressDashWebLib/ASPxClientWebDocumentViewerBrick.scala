@@ -14,7 +14,7 @@ trait ASPxClientWebDocumentViewerBrick extends js.Object {
        * Provides access to a brick's content.
        * Value: A dictionary that stores content keys along with the corresponding contents.
        */
-  var content: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var content: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Provides access to a brick's height.
        * Value: An integer value that specifies the brick height.

@@ -10,7 +10,7 @@ trait IgShapeChart
   extends /**
 	 * Option for igShapeChart
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets a value indicating whether grid and tick lines are aligned to device pixels.
   	 */

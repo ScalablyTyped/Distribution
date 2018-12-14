@@ -60,7 +60,7 @@ trait JSONSchema6 extends js.Object {
   /**
        * @see https://tools.ietf.org/html/draft-wright-json-schema-validation-01#section-7.1
        */
-  var definitions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema6Definition]] = js.undefined
+  var definitions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JSONSchema6Definition]] = js.undefined
   /**
        * This keyword specifies rules that are evaluated if the instance is an object and contains a certain property.
        * Each property specifies a dependency.
@@ -69,7 +69,7 @@ trait JSONSchema6 extends js.Object {
        * @see https://tools.ietf.org/html/draft-wright-json-schema-validation-01#section-6.21
        */
   var dependencies: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[JSONSchema6Definition | js.Array[java.lang.String]]
+    org.scalablytyped.runtime.StringDictionary[JSONSchema6Definition | js.Array[java.lang.String]]
   ] = js.undefined
   /**
        * This attribute is a string that provides a full description of the of purpose the instance property.
@@ -193,7 +193,7 @@ trait JSONSchema6 extends js.Object {
        * Omitting this keyword has the same behavior as an empty object.
        * @see https://tools.ietf.org/html/draft-wright-json-schema-validation-01#section-6.19
        */
-  var patternProperties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema6Definition]] = js.undefined
+  var patternProperties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JSONSchema6Definition]] = js.undefined
   /**
        * This keyword determines how child instances validate for objects, and does not directly validate the immediate instance itself.
        * Validation succeeds if, for each name that appears in both the instance and as a name within this keyword's value,
@@ -201,7 +201,7 @@ trait JSONSchema6 extends js.Object {
        * Omitting this keyword has the same behavior as an empty object.
        * @see https://tools.ietf.org/html/draft-wright-json-schema-validation-01#section-6.18
        */
-  var properties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema6Definition]] = js.undefined
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JSONSchema6Definition]] = js.undefined
   /**
        * Takes a schema which validates the names of all properties rather than their values.
        * Note the property name that the schema is testing will always be a string.

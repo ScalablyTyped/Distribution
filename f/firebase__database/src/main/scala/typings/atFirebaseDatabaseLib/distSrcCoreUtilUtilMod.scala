@@ -45,7 +45,7 @@ object distSrcCoreUtilUtilMod extends js.Object {
   def log(var_args: java.lang.String*): scala.Unit = js.native
   def logWrapper(prefix: java.lang.String): js.Function1[/* repeated */js.Any, scala.Unit] = js.native
   def nameCompare(a: java.lang.String, b: java.lang.String): scala.Double = js.native
-  def requireKey(key: java.lang.String, obj: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def requireKey(key: java.lang.String, obj: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   def setTimeoutNonBlocking(fn: js.Function, time: scala.Double): scala.Double | js.Object = js.native
   def sha1(str: java.lang.String): java.lang.String = js.native
   def splitStringBySize(str: java.lang.String, segsize: scala.Double): js.Array[java.lang.String] = js.native

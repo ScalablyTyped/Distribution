@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Spotify")
 @js.native
 object SpotifyNsMembers extends js.Object {
-  val Player: ScalablyTyped.runtime.Instantiable1[/* options */ PlayerInit, SpotifyPlayer] = js.native
+  val Player: org.scalablytyped.runtime.Instantiable1[/* options */ PlayerInit, SpotifyPlayer] = js.native
 }
 

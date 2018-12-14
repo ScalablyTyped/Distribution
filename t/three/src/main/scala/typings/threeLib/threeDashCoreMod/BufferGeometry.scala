@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three/three-core", "BufferGeometry")
 @js.native
 class BufferGeometry () extends EventDispatcher {
-  var attributes: ScalablyTyped.runtime.StringDictionary[BufferAttribute | InterleavedBufferAttribute] = js.native
+  var attributes: org.scalablytyped.runtime.StringDictionary[BufferAttribute | InterleavedBufferAttribute] = js.native
   var boundingBox: Box3 = js.native
   var boundingSphere: Sphere = js.native
   var drawRange: threeLib.Anon_CountStartNumber = js.native

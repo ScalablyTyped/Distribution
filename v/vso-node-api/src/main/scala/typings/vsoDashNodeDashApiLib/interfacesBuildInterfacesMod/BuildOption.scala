@@ -15,6 +15,6 @@ trait BuildOption extends js.Object {
        * Indicates whether the behavior is enabled.
        */
   var enabled: scala.Boolean
-  var inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

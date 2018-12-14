@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ConnectionParams
-  extends /* paramName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* paramName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

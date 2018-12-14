@@ -72,7 +72,7 @@ trait Options extends js.Object {
            * All values on the slider are part of a range. The range has a minimum and maximum value.
            * The minimum value cannot be equal to the maximum value.
            */
-  var range: ScalablyTyped.runtime.StringDictionary[scala.Double | js.Array[scala.Double]]
+  var range: org.scalablytyped.runtime.StringDictionary[scala.Double | js.Array[scala.Double]]
   /**
            * When a non-linear slider has been configured, the snap option can be set to true to force the slider to jump
            * between the specified values.

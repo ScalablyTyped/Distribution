@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Users
-  extends /* userId */ ScalablyTyped.runtime.StringDictionary[UserProfile]
+  extends /* userId */ org.scalablytyped.runtime.StringDictionary[UserProfile]
 

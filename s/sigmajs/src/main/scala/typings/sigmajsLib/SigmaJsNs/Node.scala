@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Node
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var id: java.lang.String
   var image: js.UndefOr[js.Any] = js.undefined

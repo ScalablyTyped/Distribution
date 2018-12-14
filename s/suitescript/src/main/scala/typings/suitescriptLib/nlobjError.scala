@@ -19,7 +19,7 @@ class nlobjError protected ()
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, join: java.lang.String) = this()
   def this(name: java.lang.String, join: java.lang.String, summary: java.lang.String) = this()

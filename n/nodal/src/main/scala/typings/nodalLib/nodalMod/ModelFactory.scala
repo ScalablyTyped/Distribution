@@ -12,7 +12,7 @@ class ModelFactory protected () extends js.Object {
      * Create the ModelFactory with a provided Model to use as a reference.
      * @param {Nodal.Model} modelConstructor Must pass the constructor for the type of ModelFactory you wish to create.
      */
-  def this(modelConstructor: ScalablyTyped.runtime.Instantiable3[
+  def this(modelConstructor: org.scalablytyped.runtime.Instantiable3[
       /* modelData */ js.Object, 
       /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
       /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
@@ -37,7 +37,7 @@ object ModelFactory extends js.Object {
      */
   def createFromModels(
     Models: js.Array[
-      ScalablyTyped.runtime.Instantiable3[
+      org.scalablytyped.runtime.Instantiable3[
         /* modelData */ js.Object, 
         /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
         /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 

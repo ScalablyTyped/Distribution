@@ -10,5 +10,5 @@ package object redomMod {
   type RedomMiddleware = js.Function1[/* el */ stdLib.HTMLElement, scala.Unit]
   type RedomQuery = java.lang.String | RedomElement
   type RedomQueryArgument = RedomQueryArgumentValue | js.Array[RedomQueryArgumentValue]
-  type RedomQueryArgumentValue = RedomElement | java.lang.String | scala.Double | ScalablyTyped.runtime.StringDictionary[js.Any] | RedomMiddleware
+  type RedomQueryArgumentValue = RedomElement | java.lang.String | scala.Double | org.scalablytyped.runtime.StringDictionary[js.Any] | RedomMiddleware
 }

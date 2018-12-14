@@ -12,7 +12,7 @@ trait Render extends js.Object {
     g: dagreLib.dagreMod.graphlibNs.Graph
   ): scala.Unit = js.native
   // see http://cpettitt.github.io/project/dagre-d3/latest/demo/user-defined.html for example usage
-  def arrows(): ScalablyTyped.runtime.StringDictionary[
+  def arrows(): org.scalablytyped.runtime.StringDictionary[
     js.Function4[
       /* parent */ d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _], 
       /* id */ java.lang.String, 
@@ -21,7 +21,7 @@ trait Render extends js.Object {
       scala.Unit
     ]
   ] = js.native
-  def shapes(): ScalablyTyped.runtime.StringDictionary[
+  def shapes(): org.scalablytyped.runtime.StringDictionary[
     js.Function3[
       /* parent */ d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _], 
       /* bbox */ js.Any, 

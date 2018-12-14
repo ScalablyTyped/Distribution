@@ -10,7 +10,7 @@ trait FormattingOptions
   extends /**
      * Signature for further properties.
      */
-/* key */ ScalablyTyped.runtime.StringDictionary[scala.Boolean | scala.Double | java.lang.String] {
+/* key */ org.scalablytyped.runtime.StringDictionary[scala.Boolean | scala.Double | java.lang.String] {
   /**
        * Prefer spaces over tabs.
        */

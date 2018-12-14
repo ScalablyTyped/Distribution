@@ -14,7 +14,7 @@ trait Server
   /**
   		 * hash of connected clients by id.
   		 */
-  var clients: ScalablyTyped.runtime.StringDictionary[Socket] = js.native
+  var clients: org.scalablytyped.runtime.StringDictionary[Socket] = js.native
   /**
   		 * number of connected clients.
   		 */

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("browser-fingerprint", JSImport.Namespace)
 @js.native
 object browserDashFingerprintModMembers
-  extends ScalablyTyped.runtime.TopLevel[browserFingerprint]
+  extends org.scalablytyped.runtime.TopLevel[browserFingerprint]
 

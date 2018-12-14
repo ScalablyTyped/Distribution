@@ -11,28 +11,40 @@ import scala.scalajs.js.annotation._
      */
 @js.native
 trait CoreEvents extends js.Object {
-  def addListener(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler]): this.type = js.native
-  def addListener(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
-  def addListener(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
+  def addListener(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
+  def addListener(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
+  def addListener(
+    eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler],
+    selector: Selector,
+    data: js.Any
+  ): this.type = js.native
   def addListener(events: EventNames, handler: EventHandler): this.type = js.native
   def addListener(events: EventNames, selector: Selector, data: js.Any, handler: EventHandler): this.type = js.native
   def addListener(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
-  def bind(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler]): this.type = js.native
-  def bind(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
-  def bind(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
+  def bind(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
+  def bind(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
+  def bind(
+    eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler],
+    selector: Selector,
+    data: js.Any
+  ): this.type = js.native
   def bind(events: EventNames, handler: EventHandler): this.type = js.native
   def bind(events: EventNames, selector: Selector, data: js.Any, handler: EventHandler): this.type = js.native
   def bind(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
   def emit(events: EventNames): this.type = js.native
   def emit(events: EventNames, extraParams: js.Array[_]): this.type = js.native
-  def listen(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler]): this.type = js.native
-  def listen(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
-  def listen(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
+  def listen(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
+  def listen(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
+  def listen(
+    eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler],
+    selector: Selector,
+    data: js.Any
+  ): this.type = js.native
   def listen(events: EventNames, handler: EventHandler): this.type = js.native
   def listen(events: EventNames, selector: Selector, data: js.Any, handler: EventHandler): this.type = js.native
   def listen(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
-  def off(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler]): this.type = js.native
-  def off(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
+  def off(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
+  def off(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
   /**
            * Remove event handlers.
            *  http://js.cytoscape.org/#cy.off
@@ -63,9 +75,13 @@ trait CoreEvents extends js.Object {
            * @param eventsMap A map of event names to handler functions to remove.
            */
   def off(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
-  def on(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler]): this.type = js.native
-  def on(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
-  def on(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
+  def on(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
+  def on(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
+  def on(
+    eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler],
+    selector: Selector,
+    data: js.Any
+  ): this.type = js.native
   /**
            * Bind to events that occur in the graph.
            *
@@ -86,7 +102,7 @@ trait CoreEvents extends js.Object {
            * @param selector A selector to specify elements for which the handler is triggered.
            * @param data A plain object which is passed to the handler in the event object argument.
            */
-  def one(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler]): this.type = js.native
+  def one(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
   /**
            * Bind to events that occur in the graph, and trigger the handler only once.
            *
@@ -94,7 +110,7 @@ trait CoreEvents extends js.Object {
            * @param selector A selector to specify elements for which the handler is triggered.
            * @param data A plain object which is passed to the handler in the event object argument.
            */
-  def one(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
+  def one(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
   /**
            * Bind to events that occur in the graph, and trigger the handler only once.
            *
@@ -102,7 +118,11 @@ trait CoreEvents extends js.Object {
            * @param selector A selector to specify elements for which the handler is triggered.
            * @param data A plain object which is passed to the handler in the event object argument.
            */
-  def one(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector, data: js.Any): this.type = js.native
+  def one(
+    eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler],
+    selector: Selector,
+    data: js.Any
+  ): this.type = js.native
   /**
            * Bind to events that occur in the graph, and trigger the handler only once.
            *
@@ -148,8 +168,8 @@ trait CoreEvents extends js.Object {
            * @param fn The callback run as soon as the graph is ready, inside which this refers to the core (cy).
            */
   def ready(fn: EventHandler): this.type = js.native
-  def removeListener(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler]): this.type = js.native
-  def removeListener(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
+  def removeListener(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
+  def removeListener(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def removeListener(events: EventNames): this.type = js.native
   def removeListener(events: EventNames, selector: Selector): this.type = js.native
   def removeListener(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
@@ -167,13 +187,13 @@ trait CoreEvents extends js.Object {
            * @param extraParams [optional] An array of additional parameters to pass to the handler.
            */
   def trigger(events: EventNames, extraParams: js.Array[_]): this.type = js.native
-  def unbind(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler]): this.type = js.native
-  def unbind(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
+  def unbind(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
+  def unbind(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def unbind(events: EventNames): this.type = js.native
   def unbind(events: EventNames, selector: Selector): this.type = js.native
   def unbind(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native
-  def unlisten(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler]): this.type = js.native
-  def unlisten(eventsMap: ScalablyTyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
+  def unlisten(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler]): this.type = js.native
+  def unlisten(eventsMap: org.scalablytyped.runtime.StringDictionary[EventHandler], selector: Selector): this.type = js.native
   def unlisten(events: EventNames): this.type = js.native
   def unlisten(events: EventNames, selector: Selector): this.type = js.native
   def unlisten(events: EventNames, selector: Selector, handler: EventHandler): this.type = js.native

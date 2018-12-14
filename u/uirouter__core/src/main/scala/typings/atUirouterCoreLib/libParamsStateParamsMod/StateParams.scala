@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core/lib/params/stateParams", "StateParams")
 @js.native
 class StateParams ()
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def this(params: atUirouterCoreLib.libCommonCommonMod.Obj) = this()
   /**
        * Merges a set of parameters with all parameters inherited between the common parents of the

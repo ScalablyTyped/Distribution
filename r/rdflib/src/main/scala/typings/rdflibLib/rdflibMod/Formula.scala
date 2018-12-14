@@ -15,7 +15,7 @@ class Formula protected () extends Node {
        * @param initBindings The initial bindings
        * @param optional
        */
-  def this(statements: js.Array[Statement], constraints: js.Array[_], initBindings: ScalablyTyped.runtime.StringDictionary[Node], optional: js.Array[_]) = this()
+  def this(statements: js.Array[Statement], constraints: js.Array[_], initBindings: org.scalablytyped.runtime.StringDictionary[Node], optional: js.Array[_]) = this()
   /**
        * The stored statements
        */
@@ -25,7 +25,7 @@ class Formula protected () extends Node {
        * @param t some iterable colletion of NTriple URI strings
        * @return a collection of the URIs as strings
        */
-  def NTtoURI(t: ScalablyTyped.runtime.StringDictionary[js.Any]): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def NTtoURI(t: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Adds a statement to this formula
        * @param s The subject
@@ -59,7 +59,7 @@ class Formula protected () extends Node {
        * know the class DAG.
        * @param types A map of the types
        */
-  def bottomTypeURIs(types: ScalablyTyped.runtime.StringDictionary[java.lang.String | NamedNode]): ScalablyTyped.runtime.StringDictionary[java.lang.String | NamedNode] = js.native
+  def bottomTypeURIs(types: org.scalablytyped.runtime.StringDictionary[java.lang.String | NamedNode]): org.scalablytyped.runtime.StringDictionary[java.lang.String | NamedNode] = js.native
   /**
        * Gets a new collection
        */
@@ -95,7 +95,7 @@ class Formula protected () extends Node {
        * Get all the Classes of which we can RDFS-infer the subject is a member
        * @param subject A named node
        */
-  def findMemberURIs(subject: Node): ScalablyTyped.runtime.StringDictionary[Statement] = js.native
+  def findMemberURIs(subject: Node): org.scalablytyped.runtime.StringDictionary[Statement] = js.native
   /**
        * For thisClass or any subclass, anything which has it is its type
        * or is the object of something which has the type as its range, or subject
@@ -105,7 +105,7 @@ class Formula protected () extends Node {
        * Get all the Classes of which we can RDFS-infer the subject is a member
        * @param thisClass A named node
        */
-  def findMembersNT(thisClass: Node): ScalablyTyped.runtime.StringDictionary[Statement] = js.native
+  def findMembersNT(thisClass: Node): org.scalablytyped.runtime.StringDictionary[Statement] = js.native
   /**
        * Get all the Classes of which we can RDFS-infer the subject is a superclass
        * Returns a hash table where key is NT of type and value is statement why we
@@ -114,7 +114,7 @@ class Formula protected () extends Node {
        * We use NT representations in this version because they handle blank nodes.
        * @param subject A subject node
        */
-  def findSubClassesNT(subject: Node): ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  def findSubClassesNT(subject: Node): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   /**
        * Get all the Classes of which we can RDFS-infer the subject is a subclass
        * Returns a hash table where key is NT of type and value is statement why we
@@ -123,7 +123,7 @@ class Formula protected () extends Node {
        * We use NT representations in this version because they handle blank nodes.
        * @param subject A subject node
        */
-  def findSuperClassesNT(subject: Node): ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  def findSuperClassesNT(subject: Node): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   /**
        * Get all the Classes of which we can RDFS-infer the subject is a member
        * todo: This will loop is there is a class subclass loop (Sublass loops are
@@ -134,7 +134,7 @@ class Formula protected () extends Node {
        * We use NT representations in this version because they handle blank nodes.
        * @param subject A subject node
        */
-  def findTypeURIs(subject: Node): ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  def findTypeURIs(subject: Node): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   /**
        * Get all the Classes of which we can RDFS-infer the subject is a member
        * todo: This will loop is there is a class subclass loop (Sublass loops are
@@ -145,7 +145,7 @@ class Formula protected () extends Node {
        * We use NT representations in this version because they handle blank nodes.
        * @param subject A subject node
        */
-  def findTypesNT(subject: Node): ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  def findTypesNT(subject: Node): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   /**
        * Creates a new empty formula
        */
@@ -234,7 +234,7 @@ class Formula protected () extends Node {
        * information-free.
        * @param types The types
        */
-  def topTypeURIs(types: ScalablyTyped.runtime.StringDictionary[java.lang.String | NamedNode]): ScalablyTyped.runtime.StringDictionary[java.lang.String | NamedNode] = js.native
+  def topTypeURIs(types: org.scalablytyped.runtime.StringDictionary[java.lang.String | NamedNode]): org.scalablytyped.runtime.StringDictionary[java.lang.String | NamedNode] = js.native
   /**
        * RDFS Inference
        * These are hand-written implementations of a backward-chaining reasoner
@@ -243,7 +243,7 @@ class Formula protected () extends Node {
        * @param predicate The property to trace though
        * @param inverse Trace inverse direction
        */
-  def transitiveClosure(seeds: ScalablyTyped.runtime.StringDictionary[scala.Boolean], predicate: Node, inverse: Node): ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  def transitiveClosure(seeds: org.scalablytyped.runtime.StringDictionary[scala.Boolean], predicate: Node, inverse: Node): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   /**
        * Gets a new variable
        * @param name The variable's name

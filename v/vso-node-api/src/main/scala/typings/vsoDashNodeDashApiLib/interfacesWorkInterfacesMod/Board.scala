@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Board extends BoardReference {
   var _links: js.Any
-  var allowedMappings: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]]
+  var allowedMappings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]]
   var canEdit: scala.Boolean
   var columns: js.Array[BoardColumn]
   var fields: BoardFields

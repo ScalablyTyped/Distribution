@@ -11,5 +11,5 @@ trait HTMLSpanElement extends HTMLElement
 @JSGlobal("HTMLSpanElement")
 @js.native
 object HTMLSpanElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLSpanElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLSpanElement]
 

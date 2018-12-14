@@ -100,7 +100,7 @@ trait ConfigOptions extends js.Object {
        * you can specify how many browsers should be running at once at any given point in time.
        */
   var concurrency: js.UndefOr[scala.Double] = js.undefined
-  var customLaunchers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[CustomLauncher]] = js.undefined
+  var customLaunchers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[CustomLauncher]] = js.undefined
   /**
        * @default []
        * @description List of files/patterns to exclude from loaded files.
@@ -147,7 +147,7 @@ trait ConfigOptions extends js.Object {
        * @description A list of log appenders to be used. See the documentation for [log4js] for more information.
        */
   var loggers: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[log4jsLib.log4jsMod.Appender] | js.Array[log4jsLib.log4jsMod.Appender]
+    org.scalablytyped.runtime.StringDictionary[log4jsLib.log4jsMod.Appender] | js.Array[log4jsLib.log4jsMod.Appender]
   ] = js.undefined
   /**
        * @default []
@@ -166,7 +166,7 @@ trait ConfigOptions extends js.Object {
        * @description Redefine default mapping from file extensions to MIME-type.
        * Set property name to required MIME, provide Array of extensions (without dots) as it's value.
        */
-  var mime: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
+  var mime: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
   /**
        * @default ['karma-*']
        * @description List of plugins to load. A plugin can be a string (in which case it will be required
@@ -197,7 +197,7 @@ trait ConfigOptions extends js.Object {
        *
        */
   var preprocessors: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ] = js.undefined
   /**
        * @default 'http:'
@@ -215,7 +215,7 @@ trait ConfigOptions extends js.Object {
        * @default {}
        * @description A map of path-proxy pairs.
        */
-  var proxies: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var proxies: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * @default true
        * @description Whether or not Karma or any browsers should raise an error when an inavlid SSL certificate is found.

@@ -125,5 +125,5 @@ trait ServiceWorkerContainer extends EventTarget {
 @JSGlobal("ServiceWorkerContainer")
 @js.native
 object ServiceWorkerContainer
-  extends ScalablyTyped.runtime.Instantiable0[ServiceWorkerContainer]
+  extends org.scalablytyped.runtime.Instantiable0[ServiceWorkerContainer]
 

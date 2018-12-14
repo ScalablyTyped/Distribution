@@ -10,8 +10,8 @@ trait Anon_AvgObjSize extends js.Object {
   var avgObjSize: scala.Double
   var capped: scala.Boolean
   var count: scala.Double
-  var indexDetails: ScalablyTyped.runtime.StringDictionary[js.Any]
-  var indexSizes: ScalablyTyped.runtime.StringDictionary[scala.Double]
+  var indexDetails: org.scalablytyped.runtime.StringDictionary[js.Any]
+  var indexSizes: org.scalablytyped.runtime.StringDictionary[scala.Double]
   var nindexes: scala.Double
   var ns: java.lang.String
   var ok: monkLib.monkLibNumbers.`1` | monkLib.monkLibNumbers.`0`

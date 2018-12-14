@@ -1435,11 +1435,11 @@ object WidgetsNs extends js.Object {
              * An object for any miscellanous user data.
              */
     @JSName("$")
-    var $: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    var $: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * An object for any miscellanous user data.
              */
-    var `_`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    var `_`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     /**
              * Array of node's children.
              */
@@ -1447,7 +1447,7 @@ object WidgetsNs extends js.Object {
     /**
              * An object for any miscellanous user data.
              */
-    var data: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    var data: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var focusable: scala.Boolean = js.native
     /**
              * Render index (document order index) of the last render call.

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends js.Object {
   def createContainerRef(
-    ViewContainerRefToken: ScalablyTyped.runtime.Instantiable0[
+    ViewContainerRefToken: org.scalablytyped.runtime.Instantiable0[
       atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
     ],
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
@@ -20,10 +20,10 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
   ): atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef = js.native
   def createContainerRef(
-    ViewContainerRefToken: ScalablyTyped.runtime.Instantiable0[
+    ViewContainerRefToken: org.scalablytyped.runtime.Instantiable0[
       atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
     ],
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
@@ -31,10 +31,10 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
   ): atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef = js.native
   def createContainerRef(
-    ViewContainerRefToken: ScalablyTyped.runtime.Instantiable0[
+    ViewContainerRefToken: org.scalablytyped.runtime.Instantiable0[
       atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
     ],
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
@@ -42,7 +42,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
   ): atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef = js.native
   def createElementRef(
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
@@ -50,8 +50,8 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
     view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
   def createTemplateRef[T](
-    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any]],
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    TemplateRefToken: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any]],
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
@@ -65,24 +65,24 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityModMembers extends j
   ): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectorUnderscoreRefMod.ChangeDetectorRef = js.native
   def injectChangeDetectorRef(): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectorUnderscoreRefMod.ChangeDetectorRef = js.native
   def injectElementRef(
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ]
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
   def injectRenderer2(): atAngularCoreLib.srcRenderApiMod.Renderer2 = js.native
   def injectTemplateRef[T](
-    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any]],
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    TemplateRefToken: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any]],
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ]
   ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[T] | scala.Null = js.native
   def injectViewContainerRef(
-    ViewContainerRefToken: ScalablyTyped.runtime.Instantiable0[
+    ViewContainerRefToken: org.scalablytyped.runtime.Instantiable0[
       atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
     ],
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+    ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* nativeElement */ js.Object, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ]

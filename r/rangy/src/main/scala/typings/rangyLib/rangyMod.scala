@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rangy", JSImport.Namespace)
 @js.native
 object rangyMod
-  extends ScalablyTyped.runtime.TopLevel[RangyStatic]
+  extends org.scalablytyped.runtime.TopLevel[RangyStatic]
 

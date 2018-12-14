@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BottomBar
   extends BaseUI[BottomBarOption]
-     with ScalablyTyped.runtime.Instantiable0[BottomBar] {
+     with org.scalablytyped.runtime.Instantiable0[BottomBar] {
   var log: throughLib.throughMod.throughNs.ThroughStream = js.native
   /**
                * Make sure line end on a line feed

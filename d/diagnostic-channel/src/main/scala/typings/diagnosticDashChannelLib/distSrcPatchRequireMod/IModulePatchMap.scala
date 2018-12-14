@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IModulePatchMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Array[IModulePatcher]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[IModulePatcher]]
 

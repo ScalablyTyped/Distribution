@@ -119,7 +119,7 @@ class Selection[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
      * `type` property whose value matches the ID under which you
      * [registered](#state.Selection^jsonID) your class.
      */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
 @JSImport("prosemirror-state", "Selection")
@@ -163,7 +163,7 @@ object Selection extends js.Object {
      */
   def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
-    json: ScalablyTyped.runtime.StringDictionary[js.Any]
+    json: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): prosemirrorDashStateLib.prosemirrorDashStateMod.Selection[S] = js.native
   /**
      * To be able to deserialize selections from JSON, custom selection

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_DOCUMENTPOSITIONCONTAINS
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.Node] {
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.Node] {
   val ATTRIBUTE_NODE: scala.Double = js.native
   val CDATA_SECTION_NODE: scala.Double = js.native
   val COMMENT_NODE: scala.Double = js.native

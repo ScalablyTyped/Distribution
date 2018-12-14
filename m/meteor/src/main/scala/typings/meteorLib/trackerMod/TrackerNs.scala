@@ -29,7 +29,7 @@ object TrackerNs extends js.Object {
   
   @js.native
   trait DependencyStatic
-    extends ScalablyTyped.runtime.Instantiable0[Dependency]
+    extends org.scalablytyped.runtime.Instantiable0[Dependency]
   
   var Dependency: DependencyStatic = js.native
   var active: scala.Boolean = js.native

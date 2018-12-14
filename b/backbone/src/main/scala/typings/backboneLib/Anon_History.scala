@@ -9,25 +9,25 @@ import scala.scalajs.js.annotation._
 trait Anon_History extends js.Object {
   @JSName("$")
   var $: jqueryLib.JQueryStatic = js.native
-  var Collection: ScalablyTyped.runtime.Instantiable2[
+  var Collection: org.scalablytyped.runtime.Instantiable2[
     /* models */ js.UndefOr[
       /* models */ js.Array[backboneLib.backboneMod.BackboneNs.Model] | js.Array[js.Object]
     ], 
     /* options */ js.UndefOr[/* options */ js.Any], 
     backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model]
   ] = js.native
-  var History: ScalablyTyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.History] = js.native
-  var Model: ScalablyTyped.runtime.Instantiable2[
+  var History: org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.History] = js.native
+  var Model: org.scalablytyped.runtime.Instantiable2[
     /* attributes */ js.UndefOr[/* attributes */ js.Any], 
     /* options */ js.UndefOr[/* options */ js.Any], 
     backboneLib.backboneMod.BackboneNs.Model
   ] = js.native
-  var ModelBase: ScalablyTyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.ModelBase] = js.native
-  var Router: ScalablyTyped.runtime.Instantiable1[
+  var ModelBase: org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.ModelBase] = js.native
+  var Router: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[/* options */ backboneLib.backboneMod.BackboneNs.RouterOptions], 
     backboneLib.backboneMod.BackboneNs.Router
   ] = js.native
-  var View: ScalablyTyped.runtime.Instantiable1[
+  var View: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
       /* options */ backboneLib.backboneMod.BackboneNs.ViewOptions[backboneLib.backboneMod.BackboneNs.Model]
     ], 

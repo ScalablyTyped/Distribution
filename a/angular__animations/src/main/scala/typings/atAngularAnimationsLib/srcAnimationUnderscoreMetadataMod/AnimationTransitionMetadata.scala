@@ -18,7 +18,7 @@ trait AnimationTransitionMetadata extends AnimationMetadata {
     /* fromState */ java.lang.String, 
     /* toState */ java.lang.String, 
     /* element */ js.UndefOr[js.Any], 
-    /* params */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
     scala.Boolean
   ])
   /**

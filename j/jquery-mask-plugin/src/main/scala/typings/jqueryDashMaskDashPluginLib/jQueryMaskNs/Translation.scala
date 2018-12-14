@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Translation
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[Pattern | js.Object]] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[Pattern | js.Object]] {
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
 }
 

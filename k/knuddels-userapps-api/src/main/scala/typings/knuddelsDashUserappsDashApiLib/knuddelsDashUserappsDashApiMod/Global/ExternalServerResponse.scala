@@ -24,7 +24,7 @@ class ExternalServerResponse () extends js.Object {
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ExternalServerResponse.html#method_getHeaderFields
   		 */
-  def getHeaderFields(): ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
+  def getHeaderFields(): org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ExternalServerResponse.html#method_getResponseCode
   		 */

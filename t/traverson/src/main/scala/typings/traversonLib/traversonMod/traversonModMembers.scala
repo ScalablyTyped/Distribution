@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("traverson", JSImport.Namespace)
 @js.native
 object traversonModMembers
-  extends ScalablyTyped.runtime.TopLevel[traversonLib.traversonMod.TraversonNs.TraversonMethods]
+  extends org.scalablytyped.runtime.TopLevel[traversonLib.traversonMod.TraversonNs.TraversonMethods]
 

@@ -23,7 +23,7 @@ trait HTMLTrackElement extends HTMLElement {
 @JSGlobal("HTMLTrackElement")
 @js.native
 object HTMLTrackElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLTrackElement] {
+  extends org.scalablytyped.runtime.Instantiable0[HTMLTrackElement] {
   val ERROR: scala.Double = js.native
   val LOADED: scala.Double = js.native
   val LOADING: scala.Double = js.native

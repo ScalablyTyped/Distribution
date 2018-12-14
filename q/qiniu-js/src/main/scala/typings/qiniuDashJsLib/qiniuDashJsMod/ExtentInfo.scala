@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ExtentInfo
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ExtentInfoValue] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ExtentInfoValue] {
   var DateTime: ExtentInfoValue
   var ExposureBiasValue: ExtentInfoValue
   var ExposureTime: ExtentInfoValue

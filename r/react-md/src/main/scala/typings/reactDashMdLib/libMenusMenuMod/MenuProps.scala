@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait MenuProps
   extends BaseMenuProps
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * @deprecated
      * */

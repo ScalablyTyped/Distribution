@@ -23,9 +23,9 @@ trait InputOptions extends js.Object {
   var inlineDynamicImports: js.UndefOr[scala.Boolean] = js.undefined
   var input: InputOption
   var load: js.UndefOr[LoadHook] = js.undefined
-  var manualChunks: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
+  var manualChunks: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
   var moduleContext: js.UndefOr[
-    java.lang.String | (js.Function1[/* id */ java.lang.String, java.lang.String]) | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    java.lang.String | (js.Function1[/* id */ java.lang.String, java.lang.String]) | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
   var onwarn: js.UndefOr[WarningHandler] = js.undefined
   var optimizeChunks: js.UndefOr[scala.Boolean] = js.undefined

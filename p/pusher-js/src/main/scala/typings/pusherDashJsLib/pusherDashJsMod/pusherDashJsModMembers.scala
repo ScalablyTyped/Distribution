@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("pusher-js", JSImport.Namespace)
 @js.native
 object pusherDashJsModMembers
-  extends ScalablyTyped.runtime.TopLevel[pusherDashJsLib.pusherDashJsMod.pusherNs.PusherStatic]
+  extends org.scalablytyped.runtime.TopLevel[pusherDashJsLib.pusherDashJsMod.pusherNs.PusherStatic]
 

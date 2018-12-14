@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IFactoryStatic
-  extends ScalablyTyped.runtime.Instantiable0[IFactory[js.Object]] {
+  extends org.scalablytyped.runtime.Instantiable0[IFactory[js.Object]] {
   /**
        * Locates a factory by name and calls #attributes on it.
        *
@@ -104,10 +104,7 @@ trait IFactoryStatic
        * @param {function(object): *=} constructor
        * @return {Factory}
        */
-  def define[T](
-    name: java.lang.String,
-    constructor: ScalablyTyped.runtime.Instantiable1[/* opts (repeated) */ js.Any, js.Any]
-  ): IFactory[T] = js.native
+  def define[T](name: java.lang.String, constructor: js.Function1[/* repeated */js.Any, _]): IFactory[T] = js.native
   /**
        * Defines a factory by name and constructor function. Call #attr and #option
        * on the result to define the properties of this factory.
@@ -116,6 +113,9 @@ trait IFactoryStatic
        * @param {function(object): *=} constructor
        * @return {Factory}
        */
-  def define[T](name: java.lang.String, constructor: js.Function1[/* repeated */js.Any, _]): IFactory[T] = js.native
+  def define[T](
+    name: java.lang.String,
+    constructor: org.scalablytyped.runtime.Instantiable1[/* opts (repeated) */ js.Any, js.Any]
+  ): IFactory[T] = js.native
 }
 

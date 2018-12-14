@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("assertion-error", JSImport.Namespace)
 @js.native
 object assertionDashErrorModMembers
-  extends ScalablyTyped.runtime.TopLevel[AssertionErrorConstructor]
+  extends org.scalablytyped.runtime.TopLevel[AssertionErrorConstructor]
 

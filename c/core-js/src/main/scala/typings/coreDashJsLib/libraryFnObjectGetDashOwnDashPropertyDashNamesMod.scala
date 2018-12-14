@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/object/get-own-property-names", JSImport.Namespace)
 @js.native
 object libraryFnObjectGetDashOwnDashPropertyDashNamesMod
-  extends ScalablyTyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Any]
 

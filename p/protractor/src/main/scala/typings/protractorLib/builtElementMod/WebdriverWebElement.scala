@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebdriverWebElement ()
   extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Returns either this instance's serialized represention, if immediately
      * available, or a promise for its serialized representation. This function is

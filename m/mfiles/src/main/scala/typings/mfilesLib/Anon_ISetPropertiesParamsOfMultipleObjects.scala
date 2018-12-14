@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ISetPropertiesParamsOfMultipleObjects
-  extends ScalablyTyped.runtime.Instantiable0[ISetPropertiesParamsOfMultipleObjects]
+  extends org.scalablytyped.runtime.Instantiable0[ISetPropertiesParamsOfMultipleObjects]
 

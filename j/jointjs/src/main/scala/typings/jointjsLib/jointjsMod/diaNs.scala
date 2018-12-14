@@ -118,11 +118,11 @@ object diaNs extends js.Object {
     def hideTools(): this.type = js.native
     def highlight(): this.type = js.native
     def highlight(el: java.lang.String): this.type = js.native
-    def highlight(el: java.lang.String, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def highlight(el: java.lang.String, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def highlight(el: jqueryLib.JQuery[stdLib.HTMLElement]): this.type = js.native
-    def highlight(el: jqueryLib.JQuery[stdLib.HTMLElement], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def highlight(el: jqueryLib.JQuery[stdLib.HTMLElement], opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def highlight(el: stdLib.SVGElement): this.type = js.native
-    def highlight(el: stdLib.SVGElement, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def highlight(el: stdLib.SVGElement, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     /* protected */ def mouseenter(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     /* protected */ def mouseleave(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     /* protected */ def mouseout(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
@@ -141,13 +141,13 @@ object diaNs extends js.Object {
     def showTools(): this.type = js.native
     def unhighlight(): this.type = js.native
     def unhighlight(el: java.lang.String): this.type = js.native
-    def unhighlight(el: java.lang.String, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def unhighlight(el: java.lang.String, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def unhighlight(el: jqueryLib.JQuery[stdLib.HTMLElement]): this.type = js.native
-    def unhighlight(el: jqueryLib.JQuery[stdLib.HTMLElement], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def unhighlight(el: jqueryLib.JQuery[stdLib.HTMLElement], opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def unhighlight(el: stdLib.SVGElement): this.type = js.native
-    def unhighlight(el: stdLib.SVGElement, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def unhighlight(el: stdLib.SVGElement, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def updateTools(): this.type = js.native
-    def updateTools(opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def updateTools(opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   }
   
   @js.native
@@ -170,7 +170,7 @@ object diaNs extends js.Object {
     def getPortIndex(port: java.lang.String): scala.Double = js.native
     def getPortIndex(port: jointjsLib.jointjsMod.diaNs.ElementNs.Port): scala.Double = js.native
     def getPorts(): js.Array[jointjsLib.jointjsMod.diaNs.ElementNs.Port] = js.native
-    def getPortsPositions(groupName: java.lang.String): ScalablyTyped.runtime.StringDictionary[jointjsLib.jointjsMod.diaNs.ElementNs.PortPosition] = js.native
+    def getPortsPositions(groupName: java.lang.String): org.scalablytyped.runtime.StringDictionary[jointjsLib.jointjsMod.diaNs.ElementNs.PortPosition] = js.native
     def hasPort(id: java.lang.String): scala.Boolean = js.native
     def hasPorts(): scala.Boolean = js.native
     def portProp(portId: java.lang.String, path: js.Any): Element = js.native
@@ -205,7 +205,7 @@ object diaNs extends js.Object {
       deg: scala.Double,
       absolute: scala.Boolean,
       origin: Point,
-      opt: ScalablyTyped.runtime.StringDictionary[js.Any]
+      opt: org.scalablytyped.runtime.StringDictionary[js.Any]
     ): this.type = js.native
     def scale(scaleX: scala.Double, scaleY: scala.Double): this.type = js.native
     def scale(scaleX: scala.Double, scaleY: scala.Double, origin: Point): this.type = js.native
@@ -213,7 +213,7 @@ object diaNs extends js.Object {
       scaleX: scala.Double,
       scaleY: scala.Double,
       origin: Point,
-      opt: ScalablyTyped.runtime.StringDictionary[js.Any]
+      opt: org.scalablytyped.runtime.StringDictionary[js.Any]
     ): this.type = js.native
     def size(): Size = js.native
     def size(width: scala.Double): this.type = js.native
@@ -245,7 +245,7 @@ object diaNs extends js.Object {
     def setInteractivity(value: jointjsLib.jointjsMod.diaNs.ElementViewNs.InteractivityOptions): scala.Unit = js.native
     def setInteractivity(value: scala.Boolean): scala.Unit = js.native
     def update(element: Element): scala.Unit = js.native
-    def update(element: Element, renderingOnlyAttrs: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    def update(element: Element, renderingOnlyAttrs: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   }
   
   @js.native
@@ -254,11 +254,11 @@ object diaNs extends js.Object {
     def this(attributes: js.Any) = this()
     def this(attributes: js.Any, opt: jointjsLib.Anon_CellNamespace) = this()
     def addCell(cell: Cell): this.type = js.native
-    def addCell(cell: Cell, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def addCell(cell: Cell, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def addCell(cell: js.Array[Cell]): this.type = js.native
-    def addCell(cell: js.Array[Cell], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def addCell(cell: js.Array[Cell], opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def addCells(cells: js.Array[Cell]): this.type = js.native
-    def addCells(cells: js.Array[Cell], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def addCells(cells: js.Array[Cell], opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def bfs(
       element: Element,
       iteratee: js.Function2[/* element */ Element, /* distance */ scala.Double, scala.Boolean]
@@ -268,10 +268,10 @@ object diaNs extends js.Object {
       iteratee: js.Function2[/* element */ Element, /* distance */ scala.Double, scala.Boolean],
       opt: jointjsLib.jointjsMod.diaNs.GraphNs.ConnectionOptions
     ): scala.Unit = js.native
-    def clear(opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
-    def cloneCells(cells: js.Array[Cell]): ScalablyTyped.runtime.StringDictionary[Cell] = js.native
-    def cloneSubgraph(cells: js.Array[Cell]): ScalablyTyped.runtime.StringDictionary[Cell] = js.native
-    def cloneSubgraph(cells: js.Array[Cell], opt: jointjsLib.jointjsMod.diaNs.CellNs.EmbeddableOptions): ScalablyTyped.runtime.StringDictionary[Cell] = js.native
+    def clear(opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def cloneCells(cells: js.Array[Cell]): org.scalablytyped.runtime.StringDictionary[Cell] = js.native
+    def cloneSubgraph(cells: js.Array[Cell]): org.scalablytyped.runtime.StringDictionary[Cell] = js.native
+    def cloneSubgraph(cells: js.Array[Cell], opt: jointjsLib.jointjsMod.diaNs.CellNs.EmbeddableOptions): org.scalablytyped.runtime.StringDictionary[Cell] = js.native
     def dfs(
       element: Element,
       iteratee: js.Function2[/* element */ Element, /* distance */ scala.Double, scala.Boolean]
@@ -282,16 +282,16 @@ object diaNs extends js.Object {
       opt: jointjsLib.jointjsMod.diaNs.GraphNs.ConnectionOptions
     ): scala.Unit = js.native
     def disconnectLinks(cell: Cell): scala.Unit = js.native
-    def disconnectLinks(cell: Cell, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    def disconnectLinks(cell: Cell, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
     def findModelsFromPoint(p: Point): js.Array[Element] = js.native
     def findModelsInArea(rect: BBox): js.Array[Element] = js.native
     def findModelsInArea(rect: BBox, opt: jointjsLib.Anon_Strict): js.Array[Element] = js.native
     def findModelsUnderElement(element: Element): js.Array[Element] = js.native
     def findModelsUnderElement(element: Element, opt: jointjsLib.Anon_SearchBy): js.Array[Element] = js.native
     def fromGraphLib(glGraph: js.Any): this.type = js.native
-    def fromGraphLib(glGraph: js.Any, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def fromGraphLib(glGraph: js.Any, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def fromJSON(json: js.Any): this.type = js.native
-    def fromJSON(json: js.Any, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def fromJSON(json: js.Any, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def getBBox(): jointjsLib.jointjsMod.gNs.Rect | scala.Null = js.native
     def getBBox(cells: js.Array[Cell]): jointjsLib.jointjsMod.gNs.Rect | scala.Null = js.native
     def getBBox(cells: js.Array[Cell], opt: jointjsLib.jointjsMod.diaNs.CellNs.EmbeddableOptions): jointjsLib.jointjsMod.gNs.Rect | scala.Null = js.native
@@ -332,17 +332,17 @@ object diaNs extends js.Object {
     def removeCells(cells: js.Array[Cell]): this.type = js.native
     def removeCells(cells: js.Array[Cell], opt: jointjsLib.jointjsMod.diaNs.CellNs.DisconnectableOptions): this.type = js.native
     def removeLinks(cell: Cell): scala.Unit = js.native
-    def removeLinks(cell: Cell, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    def removeLinks(cell: Cell, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
     def resetCells(cells: js.Array[Cell]): this.type = js.native
-    def resetCells(cells: js.Array[Cell], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def resetCells(cells: js.Array[Cell], opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def resize(width: scala.Double, height: scala.Double): this.type = js.native
-    def resize(width: scala.Double, height: scala.Double, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def resize(width: scala.Double, height: scala.Double, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def resizeCells(width: scala.Double, height: scala.Double, cells: js.Array[Cell]): this.type = js.native
     def resizeCells(
       width: scala.Double,
       height: scala.Double,
       cells: js.Array[Cell],
-      opt: ScalablyTyped.runtime.StringDictionary[js.Any]
+      opt: org.scalablytyped.runtime.StringDictionary[js.Any]
     ): this.type = js.native
     def search(
       element: Element,
@@ -354,11 +354,11 @@ object diaNs extends js.Object {
       opt: jointjsLib.jointjsMod.diaNs.GraphNs.ExploreOptions
     ): scala.Unit = js.native
     def startBatch(name: java.lang.String): this.type = js.native
-    def startBatch(name: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def startBatch(name: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def stopBatch(name: java.lang.String): this.type = js.native
-    def stopBatch(name: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def stopBatch(name: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def toGraphLib(): js.Any = js.native
-    def toGraphLib(opt: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+    def toGraphLib(opt: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
     def translate(tx: scala.Double): this.type = js.native
     def translate(tx: scala.Double, ty: scala.Double): this.type = js.native
     def translate(tx: scala.Double, ty: scala.Double, opt: jointjsLib.jointjsMod.diaNs.ElementNs.TranslateOptions): this.type = js.native
@@ -556,12 +556,12 @@ object diaNs extends js.Object {
     /* protected */ def onLabelsChange(
       link: Link,
       labels: js.Array[jointjsLib.jointjsMod.diaNs.LinkNs.Label],
-      opt: ScalablyTyped.runtime.StringDictionary[js.Any]
+      opt: org.scalablytyped.runtime.StringDictionary[js.Any]
     ): scala.Unit = js.native
-    /* protected */ def onSourceChange(element: Element, sourceEnd: js.Any, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-    /* protected */ def onTargetChange(element: Element, targetEnd: js.Any, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-    /* protected */ def onToolsChange(link: Link, toolsMarkup: java.lang.String, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-    /* protected */ def onVerticesChange(link: Link, vertices: js.Array[Point], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    /* protected */ def onSourceChange(element: Element, sourceEnd: js.Any, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    /* protected */ def onTargetChange(element: Element, targetEnd: js.Any, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    /* protected */ def onToolsChange(link: Link, toolsMarkup: java.lang.String, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    /* protected */ def onVerticesChange(link: Link, vertices: js.Array[Point], opt: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
     /* protected */ def onlabel(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
     def sendToken(token: stdLib.SVGElement): scala.Unit = js.native
     def sendToken(token: stdLib.SVGElement, duration: scala.Double): scala.Unit = js.native
@@ -571,7 +571,7 @@ object diaNs extends js.Object {
     def setInteractivity(value: jointjsLib.jointjsMod.diaNs.LinkViewNs.InteractivityOptions): scala.Unit = js.native
     def setInteractivity(value: scala.Boolean): scala.Unit = js.native
     def update(link: Link, attributes: js.Any): this.type = js.native
-    def update(link: Link, attributes: js.Any, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+    def update(link: Link, attributes: js.Any, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   }
   
   
@@ -582,7 +582,7 @@ object diaNs extends js.Object {
     var groupSelector: js.UndefOr[java.lang.String] = js.undefined
     var namespaceUri: js.UndefOr[java.lang.String] = js.undefined
     var selector: js.UndefOr[java.lang.String] = js.undefined
-    var style: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+    var style: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var tagName: java.lang.String
     var textContent: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -605,7 +605,7 @@ object diaNs extends js.Object {
     var viewport: stdLib.SVGGElement = js.native
     /* protected */ def afterRenderViews(): scala.Unit = js.native
     /* protected */ def asyncRenderViews(cells: js.Array[Cell]): scala.Unit = js.native
-    /* protected */ def asyncRenderViews(cells: js.Array[Cell], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    /* protected */ def asyncRenderViews(cells: js.Array[Cell], opt: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
     /* protected */ def beforeRenderViews(cells: js.Array[Cell]): js.Array[Cell] = js.native
     def cancelRenderViews(): scala.Unit = js.native
     def clearGrid(): this.type = js.native
@@ -618,12 +618,12 @@ object diaNs extends js.Object {
     /* protected */ def cloneOptions(): jointjsLib.jointjsMod.diaNs.PaperNs.Options = js.native
     /* protected */ def contextmenu(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     /* protected */ def createViewForModel(cell: Cell): CellView = js.native
-    def defineFilter(filter: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+    def defineFilter(filter: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
     def defineGradient(gradient: jointjsLib.jointjsMod.diaNs.PaperNs.GradientOptions): java.lang.String = js.native
-    def defineMarker(marker: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+    def defineMarker(marker: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
     def drawBackground(): this.type = js.native
     def drawBackground(opt: jointjsLib.jointjsMod.diaNs.PaperNs.BackgroundOptions): this.type = js.native
-    /* protected */ def drawBackgroundImage(img: stdLib.HTMLImageElement, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    /* protected */ def drawBackgroundImage(img: stdLib.HTMLImageElement, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
     def drawGrid(): this.type = js.native
     def drawGrid(opt: jointjsLib.jointjsMod.diaNs.PaperNs.GridOptions): this.type = js.native
     def drawGrid(opt: js.Array[jointjsLib.jointjsMod.diaNs.PaperNs.GridOptions]): this.type = js.native
@@ -703,7 +703,7 @@ object diaNs extends js.Object {
     /* protected */ def removeView(cell: Cell): CellView = js.native
     /* protected */ def removeViews(): scala.Unit = js.native
     /* protected */ def renderView(cell: Cell): CellView = js.native
-    /* protected */ def resetViews(cellsCollection: js.Array[Cell], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+    /* protected */ def resetViews(cellsCollection: js.Array[Cell], opt: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
     def scale(): jointjsLib.jointjsMod.VectorizerNs.Scale = js.native
     def scale(sx: scala.Double): this.type = js.native
     def scale(sx: scala.Double, sy: scala.Double): this.type = js.native
@@ -790,8 +790,8 @@ object diaNs extends js.Object {
     
     @js.native
     trait Constructor[T /* <: backboneLib.backboneMod.Model */]
-      extends ScalablyTyped.runtime.Instantiable0[T]
-         with ScalablyTyped.runtime.Instantiable1[/* opt */ jointjsLib.Anon_Id, T]
+      extends org.scalablytyped.runtime.Instantiable0[T]
+         with org.scalablytyped.runtime.Instantiable1[/* opt */ jointjsLib.Anon_Id, T]
     
     
     trait DisconnectableOptions extends js.Object {
@@ -805,18 +805,18 @@ object diaNs extends js.Object {
     
     
     trait GenericAttributes[T]
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
       var attrs: js.UndefOr[T] = js.undefined
       var z: js.UndefOr[scala.Double] = js.undefined
     }
     
     
     trait Options
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
     
     
     trait Selectors
-      extends /* selector */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]]
+      extends /* selector */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes]]
     
     
     trait TransitionOptions extends Options {
@@ -874,7 +874,7 @@ object diaNs extends js.Object {
     
     
     trait Port extends js.Object {
-      var args: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+      var args: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
       var attrs: js.UndefOr[jointjsLib.jointjsMod.diaNs.CellNs.Selectors] = js.undefined
       var group: js.UndefOr[java.lang.String] = js.undefined
       var id: js.UndefOr[java.lang.String] = js.undefined
@@ -934,7 +934,7 @@ object diaNs extends js.Object {
     
     
     trait Options
-      extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+      extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
     
   }
   
@@ -1024,7 +1024,7 @@ object diaNs extends js.Object {
     
     trait Vertex
       extends jointjsLib.jointjsMod.gNs.PlainPoint
-         with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+         with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
     
   }
   
@@ -1099,7 +1099,7 @@ object diaNs extends js.Object {
     
     trait GridOptions extends js.Object {
       var args: js.UndefOr[
-            js.Array[ScalablyTyped.runtime.StringDictionary[_]] | ScalablyTyped.runtime.StringDictionary[js.Any]
+            js.Array[org.scalablytyped.runtime.StringDictionary[_]] | org.scalablytyped.runtime.StringDictionary[js.Any]
           ] = js.undefined
       var color: js.UndefOr[java.lang.String] = js.undefined
       var name: js.UndefOr[
@@ -1147,9 +1147,9 @@ object diaNs extends js.Object {
       var drawGrid: js.UndefOr[scala.Boolean | GridOptions | js.Array[GridOptions]] = js.undefined
       // views
       var elementView: js.UndefOr[
-            ScalablyTyped.runtime.Instantiable0[jointjsLib.jointjsMod.diaNs.ElementView] | (js.Function1[
+            org.scalablytyped.runtime.Instantiable0[jointjsLib.jointjsMod.diaNs.ElementView] | (js.Function1[
               /* element */ jointjsLib.jointjsMod.diaNs.Element, 
-              ScalablyTyped.runtime.Instantiable0[jointjsLib.jointjsMod.diaNs.ElementView]
+              org.scalablytyped.runtime.Instantiable0[jointjsLib.jointjsMod.diaNs.ElementView]
             ])
           ] = js.undefined
       // embedding
@@ -1170,7 +1170,7 @@ object diaNs extends js.Object {
       var height: js.UndefOr[Dimension] = js.undefined
       var highlighterNamespace: js.UndefOr[js.Any] = js.undefined
       var highlighting: js.UndefOr[
-            ScalablyTyped.runtime.StringDictionary[jointjsLib.jointjsMod.highlightersNs.HighlighterJSON]
+            org.scalablytyped.runtime.StringDictionary[jointjsLib.jointjsMod.highlightersNs.HighlighterJSON]
           ] = js.undefined
       var interactive: js.UndefOr[
             (js.Function2[
@@ -1182,9 +1182,9 @@ object diaNs extends js.Object {
       var linkConnectionPoint: js.UndefOr[jointjsLib.jointjsMod.diaNs.LinkViewNs.GetConnectionPoint] = js.undefined
       var linkPinning: js.UndefOr[scala.Boolean] = js.undefined
       var linkView: js.UndefOr[
-            ScalablyTyped.runtime.Instantiable0[jointjsLib.jointjsMod.diaNs.LinkView] | (js.Function1[
+            org.scalablytyped.runtime.Instantiable0[jointjsLib.jointjsMod.diaNs.LinkView] | (js.Function1[
               /* link */ jointjsLib.jointjsMod.diaNs.Link, 
-              ScalablyTyped.runtime.Instantiable0[jointjsLib.jointjsMod.diaNs.LinkView]
+              org.scalablytyped.runtime.Instantiable0[jointjsLib.jointjsMod.diaNs.LinkView]
             ])
           ] = js.undefined
       var magnetThreshold: js.UndefOr[scala.Double | java.lang.String] = js.undefined

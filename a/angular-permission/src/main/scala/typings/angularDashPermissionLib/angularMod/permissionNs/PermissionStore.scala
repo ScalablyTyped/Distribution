@@ -42,7 +42,7 @@ trait PermissionStore extends js.Object {
          *
          * @returns {Object} Permissions collection
          */
-  def getStore(): ScalablyTyped.runtime.StringDictionary[Permission]
+  def getStore(): org.scalablytyped.runtime.StringDictionary[Permission]
   /**
          * Checks if permission exists
          * @method

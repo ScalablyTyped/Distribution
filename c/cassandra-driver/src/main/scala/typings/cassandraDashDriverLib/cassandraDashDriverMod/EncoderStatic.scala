@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EncoderStatic
-  extends ScalablyTyped.runtime.Instantiable2[/* protocolVersion */ scala.Double, /* options */ ClientOptions, Encoder]
+  extends org.scalablytyped.runtime.Instantiable2[/* protocolVersion */ scala.Double, /* options */ ClientOptions, Encoder]
 

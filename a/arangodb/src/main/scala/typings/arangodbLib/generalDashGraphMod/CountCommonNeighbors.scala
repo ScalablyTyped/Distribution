@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CountCommonNeighbors
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[
-      js.UndefOr[js.Array[ScalablyTyped.runtime.StringDictionary[js.UndefOr[scala.Double]]]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[
+      js.UndefOr[js.Array[org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]]]]
     ]
 

@@ -12,7 +12,7 @@ class SourceReferenceContainerSerializer ()
       typedocLib.distLibSerializationSerializersModelsSourceDashReferenceDashWrapperMod.SourceReferenceWrapper
     ] {
   @JSName("serializeGroupSymbol")
-  var serializeGroupSymbol_SourceReferenceContainerSerializer: ScalablyTyped.runtime.Instantiable1[
+  var serializeGroupSymbol_SourceReferenceContainerSerializer: org.scalablytyped.runtime.Instantiable1[
     /* sourceReference */ typedocLib.distLibModelsSourcesFileMod.SourceReference, 
     typedocLib.distLibSerializationSerializersModelsSourceDashReferenceDashWrapperMod.SourceReferenceWrapper
   ] = js.native

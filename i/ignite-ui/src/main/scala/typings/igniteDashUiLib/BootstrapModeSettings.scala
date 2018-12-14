@@ -10,7 +10,7 @@ trait BootstrapModeSettings
   extends /**
 	 * Option for BootstrapModeSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var key: js.UndefOr[java.lang.String] = js.undefined
   var visibilityTester: js.UndefOr[js.Any] = js.undefined
 }

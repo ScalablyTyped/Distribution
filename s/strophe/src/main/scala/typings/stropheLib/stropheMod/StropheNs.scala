@@ -1856,7 +1856,7 @@ object StropheNs extends js.Object {
     
     
     trait OccupantMap
-      extends /* jid */ ScalablyTyped.runtime.StringDictionary[stropheLib.mucMod.stropheMod.StropheNs.MUCNs.Occupant]
+      extends /* jid */ org.scalablytyped.runtime.StringDictionary[stropheLib.mucMod.stropheMod.StropheNs.MUCNs.Occupant]
     
     @js.native
     trait Plugin extends js.Object {

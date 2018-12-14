@@ -29,7 +29,7 @@ package object effectsMod {
     /* repeated */js.Any, 
     js.Any
   ]
-  type GenericAllEffectDescriptor[T] = js.Array[T] | ScalablyTyped.runtime.StringDictionary[T]
+  type GenericAllEffectDescriptor[T] = js.Array[T] | org.scalablytyped.runtime.StringDictionary[T]
   type GetContextEffectDescriptor = java.lang.String
   type HelperFunc0[A] = js.Function1[/* action */ A, js.Any]
   type HelperFunc1[A, T1] = js.Function2[/* arg1 */ T1, /* action */ A, js.Any]

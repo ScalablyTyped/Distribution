@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("counterpart", JSImport.Namespace)
 @js.native
 object counterpartModMembers
-  extends ScalablyTyped.runtime.TopLevel[Counterpart]
+  extends org.scalablytyped.runtime.TopLevel[Counterpart]
 

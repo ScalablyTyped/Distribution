@@ -13,7 +13,7 @@ trait commandDefinition extends js.Object {
   var contextSensitive: js.UndefOr[scala.Boolean] = js.native
   var editorFocus: js.UndefOr[scala.Boolean] = js.native
   var fakeKeystroke: js.UndefOr[scala.Double] = js.native
-  var modes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  var modes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   var readOnly: js.UndefOr[scala.Boolean] = js.native
   var refresh: js.UndefOr[
     js.Function2[/* editor */ editor, /* path */ ckeditorLib.CKEDITORNs.domNs.elementPath, scala.Unit]

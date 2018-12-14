@@ -101,7 +101,7 @@ object firestoreNs extends js.Object {
   
   
   trait DocumentData
-    extends /* field */ ScalablyTyped.runtime.StringDictionary[js.Any]
+    extends /* field */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
   @js.native
   class DocumentReference protected () extends js.Object {
@@ -1253,7 +1253,7 @@ object firestoreNs extends js.Object {
   
   
   trait UpdateData
-    extends /* fieldPath */ ScalablyTyped.runtime.StringDictionary[js.Any]
+    extends /* fieldPath */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
   @js.native
   class WriteBatch protected () extends js.Object {

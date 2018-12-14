@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait MouseEvents extends js.Object {
   @JSName("on_click")
   var on_click_Original: WebixCallback = js.native
-  var on_context: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("on_dblclick")
   var on_dblclick_Original: WebixCallback = js.native
   @JSName("on_mouse_move")

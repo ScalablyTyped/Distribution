@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait SpeechRecognitionResultList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[SpeechRecognitionResult] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[SpeechRecognitionResult] {
   val length: scala.Double
   def item(index: scala.Double): SpeechRecognitionResult
 }
@@ -15,5 +15,5 @@ trait SpeechRecognitionResultList
 @JSGlobal("SpeechRecognitionResultList")
 @js.native
 object SpeechRecognitionResultList
-  extends ScalablyTyped.runtime.Instantiable0[SpeechRecognitionResultList]
+  extends org.scalablytyped.runtime.Instantiable0[SpeechRecognitionResultList]
 

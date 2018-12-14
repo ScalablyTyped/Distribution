@@ -42,7 +42,7 @@ trait Secret extends js.Object {
                * write-only convenience method. All keys and values are merged into the data field on write,
                * overwriting any existing values. It is never output when reading from the API.
                */
-  val stringData: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val stringData: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * Used to facilitate programmatic handling of secret data.
                */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Tcp extends js.Object {
-  var `_`: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var `_`: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var inode: java.lang.String
   var local_address: java.lang.String
   var rem_address: java.lang.String

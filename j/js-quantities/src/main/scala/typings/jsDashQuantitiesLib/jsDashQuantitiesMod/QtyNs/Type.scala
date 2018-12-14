@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Type
-  extends ScalablyTyped.runtime.Instantiable1[/* value */ Source, jsDashQuantitiesLib.jsDashQuantitiesMod.Qty]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* value */ Source, jsDashQuantitiesLib.jsDashQuantitiesMod.Qty]
+     with org.scalablytyped.runtime.Instantiable2[
       /* value */ scala.Double, 
       /* unit */ java.lang.String, 
       jsDashQuantitiesLib.jsDashQuantitiesMod.Qty

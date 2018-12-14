@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Float32ArrayConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Float32Array]
-     with ScalablyTyped.runtime.Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ scala.Double, Float32Array]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable0[Float32Array]
+     with org.scalablytyped.runtime.Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ scala.Double, Float32Array]
+     with org.scalablytyped.runtime.Instantiable3[
       /* buffer */ ArrayBufferLike, 
       /* byteOffset */ scala.Double, 
       /* length */ scala.Double, 
       Float32Array
     ]
-     with ScalablyTyped.runtime.Instantiable1[
+     with org.scalablytyped.runtime.Instantiable1[
       (/* elements */ Iterable[scala.Double]) | (/* length */ scala.Double) | (/* arrayOrArrayBuffer */ ArrayLike[scala.Double]) | (/* arrayOrArrayBuffer */ ArrayBufferLike), 
       Float32Array
     ] {

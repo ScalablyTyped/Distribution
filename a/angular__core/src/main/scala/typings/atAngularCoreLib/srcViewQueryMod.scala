@@ -19,7 +19,7 @@ object srcViewQueryMod extends js.Object {
   def queryDef(
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
     id: scala.Double,
-    bindings: ScalablyTyped.runtime.StringDictionary[atAngularCoreLib.srcViewTypesMod.QueryBindingType]
+    bindings: org.scalablytyped.runtime.StringDictionary[atAngularCoreLib.srcViewTypesMod.QueryBindingType]
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
 }
 

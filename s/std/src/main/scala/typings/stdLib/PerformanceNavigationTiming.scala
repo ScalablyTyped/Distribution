@@ -22,5 +22,5 @@ trait PerformanceNavigationTiming extends PerformanceResourceTiming {
 @JSGlobal("PerformanceNavigationTiming")
 @js.native
 object PerformanceNavigationTiming
-  extends ScalablyTyped.runtime.Instantiable0[PerformanceNavigationTiming]
+  extends org.scalablytyped.runtime.Instantiable0[PerformanceNavigationTiming]
 

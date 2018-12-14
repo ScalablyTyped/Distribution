@@ -24,5 +24,5 @@ package object i18nextNs {
     TResult
   ]
   // Add an indexer to assure that interpolation arguments can be passed
-  type TranslationOptions[TCustomOptions /* <: js.Object */] = TranslationOptionsBase with TCustomOptions with ScalablyTyped.runtime.StringDictionary[js.Any]
+  type TranslationOptions[TCustomOptions /* <: js.Object */] = TranslationOptionsBase with TCustomOptions with org.scalablytyped.runtime.StringDictionary[js.Any]
 }

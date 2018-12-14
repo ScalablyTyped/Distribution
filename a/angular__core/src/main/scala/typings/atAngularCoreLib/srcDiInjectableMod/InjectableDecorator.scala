@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait InjectableDecorator
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ atAngularCoreLib.Anon_ProvidedIn with InjectableProvider, Injectable]
-     with ScalablyTyped.runtime.Instantiable0[Injectable] {
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ atAngularCoreLib.Anon_ProvidedIn with InjectableProvider, Injectable]
+     with org.scalablytyped.runtime.Instantiable0[Injectable] {
   /**
        * A marker metadata that marks a class as available to `Injector` for creation.
        *

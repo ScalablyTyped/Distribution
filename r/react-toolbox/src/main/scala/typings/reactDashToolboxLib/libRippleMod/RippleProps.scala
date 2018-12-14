@@ -10,7 +10,7 @@ trait RippleProps
   extends /**
    * Additional properties passed to rippled component.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Children to pass through the component.
      */

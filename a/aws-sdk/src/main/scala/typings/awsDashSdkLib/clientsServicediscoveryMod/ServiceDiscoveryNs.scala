@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ServiceDiscoveryNs extends js.Object {
   
   trait Attributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttrValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttrValue]
   
   
   trait ClientApiVersions extends js.Object {
@@ -433,7 +433,7 @@ object ServiceDiscoveryNs extends js.Object {
   
   
   trait InstanceHealthStatusMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[HealthStatus]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[HealthStatus]
   
   
   trait InstanceSummary extends js.Object {
@@ -726,7 +726,7 @@ object ServiceDiscoveryNs extends js.Object {
   
   
   trait OperationTargetsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ResourceId]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ResourceId]
   
   
   trait RegisterInstanceRequest extends js.Object {

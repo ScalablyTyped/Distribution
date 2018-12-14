@@ -22,7 +22,7 @@ trait OptionsInputBase extends js.Object {
   var contentHeight: js.UndefOr[
     scala.Double | fullcalendarLib.fullcalendarLibStrings.auto | js.Function0[scala.Double]
   ] = js.undefined
-  var customButtons: js.UndefOr[ScalablyTyped.runtime.StringDictionary[CustomButtonInput]] = js.undefined
+  var customButtons: js.UndefOr[org.scalablytyped.runtime.StringDictionary[CustomButtonInput]] = js.undefined
   var dateAlignment: js.UndefOr[java.lang.String] = js.undefined
   var dateIncrement: js.UndefOr[DurationInput] = js.undefined
   var dayClick: js.UndefOr[

@@ -73,6 +73,6 @@ trait MouseEvent extends UIEvent {
 @JSGlobal("MouseEvent")
 @js.native
 object MouseEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, MouseEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ MouseEventInit, MouseEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, MouseEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ MouseEventInit, MouseEvent]
 

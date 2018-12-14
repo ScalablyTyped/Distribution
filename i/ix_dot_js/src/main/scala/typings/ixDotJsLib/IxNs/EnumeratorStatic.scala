@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EnumeratorStatic
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* moveNext */ js.Function0[scala.Boolean], 
       /* getCurrent */ js.Function0[js.Object], 
       /* dispose */ js.Function0[scala.Unit], 

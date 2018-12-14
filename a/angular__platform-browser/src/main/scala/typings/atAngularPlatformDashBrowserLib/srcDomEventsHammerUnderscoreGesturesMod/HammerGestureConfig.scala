@@ -38,7 +38,7 @@ class HammerGestureConfig () extends js.Object {
       * [HammerJS documentation](http://hammerjs.github.io/).
       *
       */
-  var overrides: ScalablyTyped.runtime.StringDictionary[js.Object] = js.native
+  var overrides: org.scalablytyped.runtime.StringDictionary[js.Object] = js.native
   /**
        * Creates a [HammerJS Manager](http://hammerjs.github.io/api/#hammer.manager)
        * and attaches it to a given HTML element.

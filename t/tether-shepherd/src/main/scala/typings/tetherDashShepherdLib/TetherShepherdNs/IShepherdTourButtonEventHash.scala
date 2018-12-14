@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IShepherdTourButtonEventHash
-  extends /* Key */ ScalablyTyped.runtime.StringDictionary[js.Function]
+  extends /* Key */ org.scalablytyped.runtime.StringDictionary[js.Function]
 

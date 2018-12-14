@@ -27,13 +27,13 @@ object MeteorNs extends js.Object {
   
   @js.native
   trait ErrorStatic
-    extends ScalablyTyped.runtime.Instantiable1[(/* error */ java.lang.String) | (/* error */ scala.Double), Error]
-       with ScalablyTyped.runtime.Instantiable2[
+    extends org.scalablytyped.runtime.Instantiable2[
           (/* error */ java.lang.String) | (/* error */ scala.Double), 
           /* reason */ java.lang.String, 
           Error
         ]
-       with ScalablyTyped.runtime.Instantiable3[
+       with org.scalablytyped.runtime.Instantiable1[(/* error */ java.lang.String) | (/* error */ scala.Double), Error]
+       with org.scalablytyped.runtime.Instantiable3[
           (/* error */ java.lang.String) | (/* error */ scala.Double), 
           /* reason */ java.lang.String, 
           /* details */ java.lang.String, 
@@ -67,7 +67,7 @@ object MeteorNs extends js.Object {
   
   
   trait EventMap
-    extends /* id */ ScalablyTyped.runtime.StringDictionary[EventHandlerFunction]
+    extends /* id */ org.scalablytyped.runtime.StringDictionary[EventHandlerFunction]
   
   
   trait LiveQueryHandle extends js.Object {
@@ -99,8 +99,8 @@ object MeteorNs extends js.Object {
   /** Settings **/
   
   trait Settings
-    extends /* id */ ScalablyTyped.runtime.StringDictionary[js.Any] {
-    var public: ScalablyTyped.runtime.StringDictionary[js.Any]
+    extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+    var public: org.scalablytyped.runtime.StringDictionary[js.Any]
   }
   
   /** utils **/

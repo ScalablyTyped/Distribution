@@ -18,7 +18,7 @@ trait Graphics
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[Graphics] {
+org.scalablytyped.runtime.Instantiable0[Graphics] {
   /**
        * <p>Clear the LCD with the Background Color</p>
        * 

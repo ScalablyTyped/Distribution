@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GlideRecord
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, GlideRecord] {
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, GlideRecord] {
   val sys_created_by: java.lang.String with GlideElement = js.native
   val sys_created_on: servicenowLib.GlideDateTime with GlideElement = js.native
   val sys_id: java.lang.String = js.native

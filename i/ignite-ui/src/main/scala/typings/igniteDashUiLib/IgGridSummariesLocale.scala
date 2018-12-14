@@ -10,7 +10,7 @@ trait IgGridSummariesLocale
   extends /**
 	 * Option for IgGridSummariesLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Text of the button Cancel in the summaries dropdown
   	 *

@@ -10,7 +10,7 @@ trait TimePickerProps
   extends /**
    * Additional attributes passed to inner Input component.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Whether time picker is active.
      * @default false

@@ -73,7 +73,7 @@ object QioFSNsMembers extends js.Object {
   def statLink(path: java.lang.String): qLib.qMod.QNs.Promise[Stats] = js.native
   def symbolicCopy(source: java.lang.String, target: java.lang.String, `type`: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
   def symbolicLink(target: java.lang.String, link: java.lang.String, `type`: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
-  def toObject(path: java.lang.String): ScalablyTyped.runtime.StringDictionary[nodeLib.Buffer] = js.native
+  def toObject(path: java.lang.String): org.scalablytyped.runtime.StringDictionary[nodeLib.Buffer] = js.native
   def write(path: java.lang.String, content: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
   def write(path: java.lang.String, content: java.lang.String, options: js.Any): qLib.qMod.QNs.Promise[scala.Unit] = js.native
   def write(path: java.lang.String, content: nodeLib.Buffer): qLib.qMod.QNs.Promise[scala.Unit] = js.native

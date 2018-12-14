@@ -21,5 +21,5 @@ trait HTMLOptGroupElement extends HTMLElement {
 @JSGlobal("HTMLOptGroupElement")
 @js.native
 object HTMLOptGroupElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLOptGroupElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLOptGroupElement]
 

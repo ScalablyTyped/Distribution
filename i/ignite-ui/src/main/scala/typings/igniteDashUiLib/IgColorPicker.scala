@@ -10,7 +10,7 @@ trait IgColorPicker
   extends /**
 	 * Option for igColorPicker
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * The event is fired when a color is selected.
   	 *

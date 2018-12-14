@@ -41,7 +41,7 @@ trait SVGFEMorphologyElement
 @JSGlobal("SVGFEMorphologyElement")
 @js.native
 object SVGFEMorphologyElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEMorphologyElement] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEMorphologyElement] {
   val SVG_MORPHOLOGY_OPERATOR_DILATE: scala.Double = js.native
   val SVG_MORPHOLOGY_OPERATOR_ERODE: scala.Double = js.native
   val SVG_MORPHOLOGY_OPERATOR_UNKNOWN: scala.Double = js.native

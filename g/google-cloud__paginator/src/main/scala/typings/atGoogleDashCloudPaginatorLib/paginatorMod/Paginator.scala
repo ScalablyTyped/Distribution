@@ -78,7 +78,7 @@ class Paginator () extends js.Object {
        * @return {function} - Wrapped function.
        */
   def streamify(methodName: java.lang.String): js.ThisFunction1[
-    /* this */ ScalablyTyped.runtime.StringDictionary[js.Function], 
+    /* this */ org.scalablytyped.runtime.StringDictionary[js.Function], 
     /* repeated */js.Any, 
     _
   ] = js.native

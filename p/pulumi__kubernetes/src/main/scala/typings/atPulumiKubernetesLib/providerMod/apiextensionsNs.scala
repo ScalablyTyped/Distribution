@@ -68,7 +68,7 @@ object apiextensionsNs extends js.Object {
        */
   
   trait CustomResourceArgs
-    extends /* othersFields */ ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[_]] {
+    extends /* othersFields */ org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[_]] {
     var apiVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
     var kind: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
     var metadata: js.UndefOr[

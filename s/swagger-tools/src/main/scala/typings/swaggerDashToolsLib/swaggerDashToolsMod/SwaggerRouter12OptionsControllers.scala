@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SwaggerRouter12OptionsControllers
-  extends /* handlerName */ ScalablyTyped.runtime.StringDictionary[SwaggerRouter12HandlerFunction]
+  extends /* handlerName */ org.scalablytyped.runtime.StringDictionary[SwaggerRouter12HandlerFunction]
 

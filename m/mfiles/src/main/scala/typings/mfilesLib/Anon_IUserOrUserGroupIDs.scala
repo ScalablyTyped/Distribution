@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IUserOrUserGroupIDs
-  extends ScalablyTyped.runtime.Instantiable0[IUserOrUserGroupIDs]
+  extends org.scalablytyped.runtime.Instantiable0[IUserOrUserGroupIDs]
 

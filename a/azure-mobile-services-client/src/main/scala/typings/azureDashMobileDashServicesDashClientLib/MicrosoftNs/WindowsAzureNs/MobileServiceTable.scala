@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MobileServiceTable
   extends IQuery
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* tableName */ java.lang.String, 
       /* client */ MobileServiceClient, 
       MobileServiceTable

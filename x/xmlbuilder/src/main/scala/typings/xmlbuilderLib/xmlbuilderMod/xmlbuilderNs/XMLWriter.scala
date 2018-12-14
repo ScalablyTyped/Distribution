@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait XMLWriter
-  extends /* x */ ScalablyTyped.runtime.StringDictionary[
+  extends /* x */ org.scalablytyped.runtime.StringDictionary[
       js.Function2[/* e */ XMLElementOrXMLNode, /* level */ js.UndefOr[scala.Double], scala.Unit]
     ]
 

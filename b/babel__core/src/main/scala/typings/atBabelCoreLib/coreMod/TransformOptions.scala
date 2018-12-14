@@ -78,7 +78,7 @@ trait TransformOptions extends js.Object {
        * Default: `{}`
        */
   var env: js.UndefOr[
-    (ScalablyTyped.runtime.StringDictionary[js.UndefOr[TransformOptions | scala.Null]]) | scala.Null
+    (org.scalablytyped.runtime.StringDictionary[js.UndefOr[TransformOptions | scala.Null]]) | scala.Null
   ] = js.undefined
   /**
        * Defaults to environment variable `BABEL_ENV` if set, or else `NODE_ENV` if set, or else it defaults to `"development"`

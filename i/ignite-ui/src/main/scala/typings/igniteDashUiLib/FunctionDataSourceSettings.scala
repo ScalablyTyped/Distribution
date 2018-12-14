@@ -10,7 +10,7 @@ trait FunctionDataSourceSettings
   extends /**
 	 * Option for FunctionDataSourceSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Type of the data source.
   	 */

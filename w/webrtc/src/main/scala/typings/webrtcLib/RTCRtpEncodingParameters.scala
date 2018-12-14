@@ -11,7 +11,7 @@ trait RTCRtpEncodingParameters extends js.Object {
   //ssrc: number;
   //rtx: RTCRtpRtxParameters;
   //fec: RTCRtpFecParameters;
-  var dtx: RTCDtxStatus
+  var dtx: js.UndefOr[stdLib.RTCDtxStatus] = js.undefined
   //active: boolean;
   //priority: RTCPriorityType;
   //maxBitrate: number;

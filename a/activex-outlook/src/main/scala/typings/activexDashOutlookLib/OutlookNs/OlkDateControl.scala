@@ -12,7 +12,7 @@ class OlkDateControl protected () extends js.Object {
   var AutoWordSelect: scala.Boolean = js.native
   var BackColor: activexDashStdoleLib.stdoleNs.OLE_COLOR = js.native
   var BackStyle: OlBackStyle = js.native
-  var Date: activexDashInteropLib.VarDate = js.native
+  var Date: stdLib.VarDate = js.native
   var Enabled: scala.Boolean = js.native
   var EnterFieldBehavior: OlEnterFieldBehavior = js.native
   val Font: activexDashStdoleLib.stdoleNs.StdFont = js.native

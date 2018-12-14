@@ -11,7 +11,7 @@ trait Api
      with /**
          * API should be array-like
          */
-/* key */ ScalablyTyped.runtime.NumberDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.NumberDictionary[js.Any] {
   //#endregion "Cell/Cells"
   //#region "Column/Columns"
   /**

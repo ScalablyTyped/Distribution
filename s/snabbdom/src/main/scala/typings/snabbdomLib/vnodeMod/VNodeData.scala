@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait VNodeData
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var args: js.UndefOr[js.Array[_]] = js.undefined
   var attachData: js.UndefOr[snabbdomLib.helpersAttachtoMod.AttachData] = js.undefined
   var attrs: js.UndefOr[snabbdomLib.modulesAttributesMod.Attrs] = js.undefined

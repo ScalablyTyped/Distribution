@@ -11,5 +11,5 @@ trait ObjectObserver_static
 		 * Constructor
 		 * @param receiver the target for observation
 		 */
-ScalablyTyped.runtime.Instantiable1[/* receiver */ js.Any, ObjectObserver_instance]
+org.scalablytyped.runtime.Instantiable1[/* receiver */ js.Any, ObjectObserver_instance]
 

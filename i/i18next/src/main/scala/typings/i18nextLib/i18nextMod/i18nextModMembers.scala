@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("i18next", JSImport.Namespace)
 @js.native
 object i18nextModMembers
-  extends ScalablyTyped.runtime.TopLevel[i18nextLib.i18nextMod.i18nextNs.i18n]
+  extends org.scalablytyped.runtime.TopLevel[i18nextLib.i18nextMod.i18nextNs.i18n]
 

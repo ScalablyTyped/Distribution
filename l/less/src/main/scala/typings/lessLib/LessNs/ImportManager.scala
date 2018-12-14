@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait ImportManager extends js.Object {
-  var contents: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var contents: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

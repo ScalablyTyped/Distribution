@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_XLengthNumberTOther[TOther]
-  extends /* x */ ScalablyTyped.runtime.NumberDictionary[TOther] {
+  extends /* x */ org.scalablytyped.runtime.NumberDictionary[TOther] {
   var length: scala.Double
 }
 

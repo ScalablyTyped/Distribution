@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ThreeSymbolsSet
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Icon] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] {
   var greenCheckSymbol: Icon
   var redCrossSymbol: Icon
   var yellowExclamationSymbol: Icon

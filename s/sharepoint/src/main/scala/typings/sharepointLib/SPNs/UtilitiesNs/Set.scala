@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Set () extends js.Object {
   // tslint:disable-next-line: unified-signatures
-  def this(items: ScalablyTyped.runtime.NumberDictionary[scala.Double]) = this()
-  def this(items: ScalablyTyped.runtime.StringDictionary[scala.Double]) = this()
+  def this(items: org.scalablytyped.runtime.NumberDictionary[scala.Double]) = this()
+  def this(items: org.scalablytyped.runtime.StringDictionary[scala.Double]) = this()
   /** Adds an item to the set */
   def Add(item: js.Any): js.Any = js.native
   /** Adds all items from array to the set, and returns the set */

@@ -14,7 +14,7 @@ class Model protected () extends js.Object {
   var _calculations: ICalculations = js.native
   var _calculationsList: js.Array[java.lang.String] = js.native
   var _changed: js.Any = js.native
-  var _columnLookup: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var _columnLookup: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var _columnNames: js.Array[java.lang.String] = js.native
   var _columns: js.Array[IColumn] = js.native
   var _data: js.Any = js.native
@@ -30,7 +30,7 @@ class Model protected () extends js.Object {
   var _validationsList: js.Array[_] = js.native
   var _verificationsList: js.Any = js.native
   var aggregateBy: nodalLib.Anon_Createdat = js.native
-  var constructor: ScalablyTyped.runtime.Instantiable3[
+  var constructor: org.scalablytyped.runtime.Instantiable3[
     /* modelData */ js.Object, 
     /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
     /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
@@ -419,7 +419,7 @@ object Model extends js.Object {
      *   "multiple": Whether the child exists in multiples for the parent (defaults to false)
      */
   def joinsTo(
-    modelClass: ScalablyTyped.runtime.Instantiable3[
+    modelClass: org.scalablytyped.runtime.Instantiable3[
       /* modelData */ js.Object, 
       /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
       /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 

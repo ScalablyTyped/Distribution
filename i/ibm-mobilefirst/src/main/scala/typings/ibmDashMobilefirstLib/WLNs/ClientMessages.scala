@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WL.ClientMessages")
 @js.native
 object ClientMessages
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

@@ -933,7 +933,7 @@ object RoboMakerNs extends js.Object {
   
   
   trait EnvironmentVariableMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[EnvironmentVariableValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[EnvironmentVariableValue]
   
   
   trait Filter extends js.Object {

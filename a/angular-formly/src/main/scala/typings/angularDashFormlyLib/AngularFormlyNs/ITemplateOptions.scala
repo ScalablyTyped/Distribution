@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 	 */
 
 trait ITemplateOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var description: js.UndefOr[java.lang.String] = js.undefined
   // both attribute or regular attribute
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

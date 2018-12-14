@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait HTMLCollectionBase
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Element] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Element] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Element]]
   /**
        * Sets or retrieves the number of objects in a collection.

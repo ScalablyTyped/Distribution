@@ -17,7 +17,7 @@ object hapiDashDecoratorsModMembers extends js.Object {
   def cache(cacheConfig: ICacheConfig): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, _] = js.native
   def config(config: js.Any): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, _] = js.native
   def controller(baseUrl: java.lang.String): js.Function1[/* target */ ControllerStatic, scala.Unit] = js.native
-  def pre(pre: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, _] = js.native
+  def pre(pre: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, _] = js.native
   def validate(config: js.Any): js.Function3[/* target */ js.Any, /* key */ js.Any, /* descriptor */ js.Any, _] = js.native
 }
 

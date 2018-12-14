@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("flat", JSImport.Namespace)
 @js.native
 object flatModMembers
-  extends ScalablyTyped.runtime.TopLevel[flatLib.flatMod.FlatTypesNs.Flatten]
+  extends org.scalablytyped.runtime.TopLevel[flatLib.flatMod.FlatTypesNs.Flatten]
 

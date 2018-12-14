@@ -15,7 +15,7 @@ object spineNsMembers extends js.Object {
     scala.Unit
   ] = js.native
   def staticImageLoader(
-    pages: ScalablyTyped.runtime.StringDictionary[pixiDotJsLib.PIXINs.BaseTexture | pixiDotJsLib.PIXINs.Texture]
+    pages: org.scalablytyped.runtime.StringDictionary[pixiDotJsLib.PIXINs.BaseTexture | pixiDotJsLib.PIXINs.Texture]
   ): js.Function2[/* line */ js.Any, /* callback */ js.Any, scala.Unit] = js.native
   def syncImageLoaderAdapter(baseUrl: js.Any, crossOrigin: js.Any): js.Function2[/* line */ js.Any, /* callback */ js.Any, scala.Unit] = js.native
 }

@@ -62,5 +62,5 @@ trait HTMLFrameElement extends HTMLElement {
 @JSGlobal("HTMLFrameElement")
 @js.native
 object HTMLFrameElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLFrameElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLFrameElement]
 

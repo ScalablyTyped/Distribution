@@ -13,5 +13,5 @@ trait HTMLDataListElement extends HTMLElement {
 @JSGlobal("HTMLDataListElement")
 @js.native
 object HTMLDataListElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLDataListElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLDataListElement]
 

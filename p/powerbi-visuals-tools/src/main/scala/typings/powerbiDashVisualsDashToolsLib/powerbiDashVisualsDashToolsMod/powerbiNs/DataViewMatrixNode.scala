@@ -33,6 +33,6 @@ trait DataViewMatrixNode extends DataViewTreeNode {
           * When this DataViewMatrixNode is used under the context of DataView.matrix.columns, this property is not used.
           */
   @JSName("values")
-  var values_DataViewMatrixNode: js.UndefOr[ScalablyTyped.runtime.NumberDictionary[DataViewMatrixNodeValue]] = js.undefined
+  var values_DataViewMatrixNode: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[DataViewMatrixNodeValue]] = js.undefined
 }
 

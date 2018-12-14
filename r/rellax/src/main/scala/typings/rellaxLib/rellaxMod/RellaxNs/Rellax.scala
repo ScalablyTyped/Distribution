@@ -12,13 +12,13 @@ trait Rellax
          * @param el Single element or string with selector of elements
          * @param options Options
          */
-ScalablyTyped.runtime.Instantiable1[(/* el */ java.lang.String) | (/* el */ stdLib.Element), RellaxInstance]
+org.scalablytyped.runtime.Instantiable0[RellaxInstance]
      with /**
          * Inits and starts the Parallax animations
          * @param el Single element or string with selector of elements
          * @param options Options
          */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       (/* el */ java.lang.String) | (/* el */ stdLib.Element), 
       /* options */ RellaxOptions, 
       RellaxInstance
@@ -28,7 +28,7 @@ ScalablyTyped.runtime.Instantiable2[
          * @param el Single element or string with selector of elements
          * @param options Options
          */
-ScalablyTyped.runtime.Instantiable0[RellaxInstance] {
+org.scalablytyped.runtime.Instantiable1[(/* el */ java.lang.String) | (/* el */ stdLib.Element), RellaxInstance] {
   /**
            * Inits and starts the Parallax animations
            * @param el Single element or string with selector of elements

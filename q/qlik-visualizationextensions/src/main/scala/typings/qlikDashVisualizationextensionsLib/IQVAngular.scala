@@ -22,7 +22,7 @@ trait IQVAngular extends js.Object {
     ]
   ): scala.Unit = js.native
   def directive(
-    `object`: ScalablyTyped.runtime.StringDictionary[
+    `object`: org.scalablytyped.runtime.StringDictionary[
       angularLib.angularMod.angularNs.Injectable[
         angularLib.angularMod.angularNs.IDirectiveFactory[angularLib.angularMod.angularNs.IScope]
       ]
@@ -33,7 +33,7 @@ trait IQVAngular extends js.Object {
     filterFactoryFunction: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function]
   ): scala.Unit = js.native
   def filter(
-    `object`: ScalablyTyped.runtime.StringDictionary[
+    `object`: org.scalablytyped.runtime.StringDictionary[
       angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function]
     ]
   ): scala.Unit = js.native
@@ -51,7 +51,7 @@ trait IQVAngular extends js.Object {
     serviceConstructor: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function]
   ): T = js.native
   def service[T](
-    `object`: ScalablyTyped.runtime.StringDictionary[
+    `object`: org.scalablytyped.runtime.StringDictionary[
       angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function]
     ]
   ): T = js.native

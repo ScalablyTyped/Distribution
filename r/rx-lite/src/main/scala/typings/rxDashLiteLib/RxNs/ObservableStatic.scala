@@ -854,8 +854,8 @@ trait ObservableStatic extends js.Object {
            * @returns The observable sequence whose elements are pulled from the given arguments.
            */
   def ofWithScheduler[T](scheduler: IScheduler, values: T*): Observable[T] = js.native
-  def pairs[T](obj: ScalablyTyped.runtime.StringDictionary[T]): Observable[js.Tuple2[java.lang.String, T]] = js.native
-  def pairs[T](obj: ScalablyTyped.runtime.StringDictionary[T], scheduler: IScheduler): Observable[js.Tuple2[java.lang.String, T]] = js.native
+  def pairs[T](obj: org.scalablytyped.runtime.StringDictionary[T]): Observable[js.Tuple2[java.lang.String, T]] = js.native
+  def pairs[T](obj: org.scalablytyped.runtime.StringDictionary[T], scheduler: IScheduler): Observable[js.Tuple2[java.lang.String, T]] = js.native
   def range(start: scala.Double, count: scala.Double): Observable[scala.Double] = js.native
   def range(start: scala.Double, count: scala.Double, scheduler: IScheduler): Observable[scala.Double] = js.native
   def repeat[T](value: T): Observable[T] = js.native

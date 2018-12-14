@@ -10,7 +10,7 @@ trait IgHierarchicalGridRestSettingsCreate
   extends /**
 	 * Option for IgHierarchicalGridRestSettingsCreate
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Specifies whether create requests will be sent in batches
   	 *

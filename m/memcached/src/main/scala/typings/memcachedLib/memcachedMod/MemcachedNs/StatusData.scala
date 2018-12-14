@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait StatusData
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Boolean | scala.Double]] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Boolean | scala.Double]] {
   var server: js.UndefOr[java.lang.String] = js.undefined
 }
 

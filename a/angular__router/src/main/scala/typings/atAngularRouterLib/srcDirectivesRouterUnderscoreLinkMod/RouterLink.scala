@@ -17,7 +17,7 @@ class RouterLink protected () extends js.Object {
        * @deprecated 4.0.0 use `queryParamsHandling` instead.
        */
   var preserveQueryParams: scala.Boolean = js.native
-  var queryParams: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var queryParams: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var queryParamsHandling: atAngularRouterLib.srcConfigMod.QueryParamsHandling = js.native
   var replaceUrl: scala.Boolean = js.native
   var route: js.Any = js.native

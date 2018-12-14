@@ -401,24 +401,6 @@ trait Bucket
        * @param params A list or map to do replacements on a N1QL query.
        * @param callback The callback function.
        */
-  def query(query: N1qlQuery, params: ScalablyTyped.runtime.StringDictionary[js.Any]): couchbaseLib.couchbaseMod.BucketNs.N1qlQueryResponse = js.native
-  /**
-       * Executes a previously prepared query object.
-       * @param query The query to execute.
-       * @param params A list or map to do replacements on a N1QL query.
-       * @param callback The callback function.
-       */
-  def query(
-    query: N1qlQuery,
-    params: ScalablyTyped.runtime.StringDictionary[js.Any],
-    callback: couchbaseLib.couchbaseMod.BucketNs.N1qlQueryCallback
-  ): couchbaseLib.couchbaseMod.BucketNs.N1qlQueryResponse = js.native
-  /**
-       * Executes a previously prepared query object.
-       * @param query The query to execute.
-       * @param params A list or map to do replacements on a N1QL query.
-       * @param callback The callback function.
-       */
   def query(query: N1qlQuery, params: js.Array[_]): couchbaseLib.couchbaseMod.BucketNs.N1qlQueryResponse = js.native
   /**
        * Executes a previously prepared query object.
@@ -429,6 +411,24 @@ trait Bucket
   def query(
     query: N1qlQuery,
     params: js.Array[_],
+    callback: couchbaseLib.couchbaseMod.BucketNs.N1qlQueryCallback
+  ): couchbaseLib.couchbaseMod.BucketNs.N1qlQueryResponse = js.native
+  /**
+       * Executes a previously prepared query object.
+       * @param query The query to execute.
+       * @param params A list or map to do replacements on a N1QL query.
+       * @param callback The callback function.
+       */
+  def query(query: N1qlQuery, params: org.scalablytyped.runtime.StringDictionary[js.Any]): couchbaseLib.couchbaseMod.BucketNs.N1qlQueryResponse = js.native
+  /**
+       * Executes a previously prepared query object.
+       * @param query The query to execute.
+       * @param params A list or map to do replacements on a N1QL query.
+       * @param callback The callback function.
+       */
+  def query(
+    query: N1qlQuery,
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
     callback: couchbaseLib.couchbaseMod.BucketNs.N1qlQueryCallback
   ): couchbaseLib.couchbaseMod.BucketNs.N1qlQueryResponse = js.native
   /**

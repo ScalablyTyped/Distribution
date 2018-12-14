@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/reflect/delete-property", JSImport.Namespace)
 @js.native
 object fnReflectDeleteDashPropertyMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function2[/* target */ js.Any, /* propertyKey */ stdLib.PropertyKey, scala.Boolean]
     ]
 

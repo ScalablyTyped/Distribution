@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 
 trait UrlObject extends UrlObjectCommon {
   var port: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var query: js.UndefOr[java.lang.String | scala.Null | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var query: js.UndefOr[
+    java.lang.String | scala.Null | org.scalablytyped.runtime.StringDictionary[js.Any]
+  ] = js.undefined
 }
 

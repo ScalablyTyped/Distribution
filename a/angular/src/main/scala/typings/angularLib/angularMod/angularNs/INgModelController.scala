@@ -16,7 +16,7 @@ trait INgModelController extends js.Object {
   @JSName("$dirty")
   var $dirty: scala.Boolean = js.native
   @JSName("$error")
-  var $error: ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  var $error: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   @JSName("$formatters")
   var $formatters: js.Array[IModelFormatter] = js.native
   @JSName("$invalid")
@@ -28,7 +28,7 @@ trait INgModelController extends js.Object {
   @JSName("$parsers")
   var $parsers: js.Array[IModelParser] = js.native
   @JSName("$pending")
-  var $pending: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Boolean]] = js.native
+  var $pending: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = js.native
   @JSName("$pristine")
   var $pristine: scala.Boolean = js.native
   @JSName("$touched")

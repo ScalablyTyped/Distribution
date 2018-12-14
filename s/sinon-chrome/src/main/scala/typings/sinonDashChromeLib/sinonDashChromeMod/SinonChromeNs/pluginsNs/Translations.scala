@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Translations
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[sinonDashChromeLib.Anon_Description]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[sinonDashChromeLib.Anon_Description]
 

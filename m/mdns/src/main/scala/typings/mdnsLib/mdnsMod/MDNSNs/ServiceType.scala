@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ServiceType
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* name */ java.lang.String, 
       /* protocol */ java.lang.String, 
       /* subtypes (repeated) */ java.lang.String, 
       ServiceType
     ]
-     with ScalablyTyped.runtime.Instantiable1[
+     with org.scalablytyped.runtime.Instantiable1[
       (/* serviceTypeIdentifier */ java.lang.String) | (/* serviceTypeIdentifier */ js.Array[java.lang.String]) | (/* serviceTypeIdentifier */ mdnsLib.Anon_Name) | (/* serviceType */ ServiceType), 
       ServiceType
     ] {

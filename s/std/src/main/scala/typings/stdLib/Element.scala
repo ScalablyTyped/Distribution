@@ -1269,5 +1269,5 @@ trait Element
 @JSGlobal("Element")
 @js.native
 object Element
-  extends ScalablyTyped.runtime.Instantiable0[Element]
+  extends org.scalablytyped.runtime.Instantiable0[Element]
 

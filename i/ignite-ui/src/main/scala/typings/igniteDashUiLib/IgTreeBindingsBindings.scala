@@ -10,5 +10,5 @@ trait IgTreeBindingsBindings
   extends /**
 	 * Option for IgTreeBindingsBindings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

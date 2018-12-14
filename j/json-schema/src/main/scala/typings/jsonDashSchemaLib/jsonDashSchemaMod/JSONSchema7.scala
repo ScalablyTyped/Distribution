@@ -33,9 +33,9 @@ trait JSONSchema7 extends js.Object {
   /**
        * @see https://tools.ietf.org/html/draft-handrews-json-schema-validation-01#section-9
        */
-  var definitions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema7Definition]] = js.undefined
+  var definitions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JSONSchema7Definition]] = js.undefined
   var dependencies: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[JSONSchema7Definition | js.Array[java.lang.String]]
+    org.scalablytyped.runtime.StringDictionary[JSONSchema7Definition | js.Array[java.lang.String]]
   ] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var `else`: js.UndefOr[JSONSchema7Definition] = js.undefined
@@ -76,8 +76,8 @@ trait JSONSchema7 extends js.Object {
   var not: js.UndefOr[JSONSchema7Definition] = js.undefined
   var oneOf: js.UndefOr[js.Array[JSONSchema7Definition]] = js.undefined
   var pattern: js.UndefOr[java.lang.String] = js.undefined
-  var patternProperties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema7Definition]] = js.undefined
-  var properties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema7Definition]] = js.undefined
+  var patternProperties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JSONSchema7Definition]] = js.undefined
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JSONSchema7Definition]] = js.undefined
   var propertyNames: js.UndefOr[JSONSchema7Definition] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var required: js.UndefOr[js.Array[java.lang.String]] = js.undefined

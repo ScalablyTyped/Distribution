@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 
 trait CommonProperties
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[
-        js.Array[arangodbLib.Anon_Id with ScalablyTyped.runtime.StringDictionary[js.Any]]
+        js.Array[arangodbLib.Anon_Id with org.scalablytyped.runtime.StringDictionary[js.Any]]
       ]
     ]
 

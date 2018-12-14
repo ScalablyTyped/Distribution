@@ -46,13 +46,13 @@ class MarkdownParser[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sch
      * **`ignore`**`: ?bool`
      * : When true, ignore content for the matched token.
      */
-  def this(schema: S, tokenizer: markdownDashItLib.libMod.MarkdownIt, tokens: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(schema: S, tokenizer: markdownDashItLib.libMod.MarkdownIt, tokens: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
      * The value of the `tokens` object used to construct
      * this parser. Can be useful to copy and modify to base other
      * parsers on.
      */
-  var tokens: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var tokens: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
      * Parse a string as [CommonMark](http://commonmark.org/) markup,
      * and create a ProseMirror document as prescribed by this parser's

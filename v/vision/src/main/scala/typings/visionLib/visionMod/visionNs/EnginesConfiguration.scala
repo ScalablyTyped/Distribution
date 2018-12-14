@@ -13,6 +13,6 @@ trait EnginesConfiguration extends js.Object {
            * Required object where each key is a file extension (e.g. 'html', 'hbr'), mapped to the npm module used for rendering the templates.
            * Alternatively, the extension can be mapped to an object
            */
-  var engines: ScalablyTyped.runtime.StringDictionary[NpmModule] | ServerViewsEnginesOptions
+  var engines: org.scalablytyped.runtime.StringDictionary[NpmModule] | ServerViewsEnginesOptions
 }
 

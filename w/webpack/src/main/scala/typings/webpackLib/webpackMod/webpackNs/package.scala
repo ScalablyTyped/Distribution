@@ -57,7 +57,7 @@ package object webpackNs {
        */
   type Rule = RuleSetRule
   type RuleSetCondition = stdLib.RegExp | java.lang.String | (js.Function1[/* path */ java.lang.String, scala.Boolean]) | RuleSetConditions | webpackLib.Anon_Test
-  type RuleSetQuery = java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]
+  type RuleSetQuery = java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]
   type RuleSetUse = RuleSetUseItem | js.Array[RuleSetUseItem] | (js.Function1[/* data */ js.Any, RuleSetUseItem | js.Array[RuleSetUseItem]])
   type RuleSetUseItem = java.lang.String | RuleSetLoader | (js.Function1[/* data */ js.Any, java.lang.String | RuleSetLoader])
   type SourceMapDevToolPlugin = Plugin

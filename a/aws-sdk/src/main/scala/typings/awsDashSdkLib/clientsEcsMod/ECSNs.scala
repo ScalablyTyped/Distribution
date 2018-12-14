@@ -890,7 +890,7 @@ object ECSNs extends js.Object {
   
   
   trait DockerLabelsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait DockerVolumeConfiguration extends js.Object {
@@ -1366,7 +1366,7 @@ object ECSNs extends js.Object {
   
   
   trait LogConfigurationOptionsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait MountPoint extends js.Object {
@@ -2006,7 +2006,7 @@ object ECSNs extends js.Object {
   
   
   trait StringMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait SubmitContainerStateChangeRequest extends js.Object {

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CoverageMapData
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[FileCoverage]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[FileCoverage]
 

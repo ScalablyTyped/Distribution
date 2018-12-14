@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rest/interceptor/template", JSImport.Namespace)
 @js.native
 object interceptorTemplateModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       restLib.restMod.restNs.Interceptor[restLib.interceptorTemplateMod.templateNs.Config]
     ]
 

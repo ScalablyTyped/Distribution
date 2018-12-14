@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sequelize-fixtures", JSImport.Namespace)
 @js.native
 object sequelizeDashFixturesModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       sequelizeDashFixturesLib.sequelizeDashFixturesMod.SequelizeFixturesNs.SequelizeFixturesStatic
     ]
 

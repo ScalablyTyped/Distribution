@@ -9,18 +9,16 @@ import scala.scalajs.js.annotation._
 trait Animation
   extends stdLib.EventTarget {
   var currentTime: scala.Double | scala.Null = js.native
-  var effect: AnimationEffectReadOnly = js.native
+  var effect: stdLib.AnimationEffect | scala.Null = js.native
   val finished: js.Promise[Animation] = js.native
   var id: java.lang.String = js.native
-  @JSName("oncancel")
-  var oncancel_Original: AnimationEventListener = js.native
-  @JSName("onfinish")
-  var onfinish_Original: AnimationEventListener = js.native
-  val playState: AnimationPlayState = js.native
+  var oncancel: AnimationEventListener = js.native
+  var onfinish: AnimationEventListener = js.native
+  val playState: stdLib.AnimationPlayState = js.native
   var playbackRate: scala.Double = js.native
   val ready: js.Promise[Animation] = js.native
-  var startTime: scala.Double = js.native
-  var timeline: AnimationTimeline = js.native
+  var startTime: scala.Double | scala.Null = js.native
+  var timeline: AnimationTimeline | scala.Null = js.native
   @JSName("addEventListener")
   def addEventListener_cancel(
     `type`: webDashAnimationsDashJsLib.webDashAnimationsDashJsLibStrings.cancel,
@@ -33,8 +31,6 @@ trait Animation
   ): scala.Unit = js.native
   def cancel(): scala.Unit = js.native
   def finish(): scala.Unit = js.native
-  def oncancel(`this`: Animation, evt: AnimationPlaybackEvent): js.Any = js.native
-  def onfinish(`this`: Animation, evt: AnimationPlaybackEvent): js.Any = js.native
   def pause(): scala.Unit = js.native
   def play(): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -53,7 +49,11 @@ trait Animation
 @JSGlobal("Animation")
 @js.native
 object Animation
-  extends ScalablyTyped.runtime.Instantiable0[Animation]
-     with ScalablyTyped.runtime.Instantiable1[/* effect */ AnimationEffectReadOnly, Animation]
-     with ScalablyTyped.runtime.Instantiable2[/* effect */ AnimationEffectReadOnly, /* timeline */ AnimationTimeline, Animation]
+  extends org.scalablytyped.runtime.Instantiable0[Animation]
+     with org.scalablytyped.runtime.Instantiable2[
+      (/* effect */ stdLib.AnimationEffect) | (/* effect */ scala.Null), 
+      /* timeline */ AnimationTimeline, 
+      Animation
+    ]
+     with org.scalablytyped.runtime.Instantiable1[/* effect */ stdLib.AnimationEffect, Animation]
 

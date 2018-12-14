@@ -30,7 +30,7 @@ trait ConfigMap extends js.Object {
                * keys stored in Data must not overlap with the keys in the BinaryData field, this is
                * enforced during validation process.
                */
-  val data: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val data: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * Kind is a string value representing the REST resource this object represents. Servers may
                * infer this from the endpoint the client submits requests to. Cannot be updated. In

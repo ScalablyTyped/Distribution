@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mainloop.js", JSImport.Namespace)
 @js.native
 object mainloopDotJsModMembers
-  extends ScalablyTyped.runtime.TopLevel[MainLoop]
+  extends org.scalablytyped.runtime.TopLevel[MainLoop]
 

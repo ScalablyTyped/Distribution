@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NamedNodeMap
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Attr] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Attr] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Attr]] = js.native
   val length: scala.Double = js.native
   def getNamedItem(qualifiedName: java.lang.String): Attr | scala.Null = js.native
@@ -25,5 +25,5 @@ trait NamedNodeMap
 @JSGlobal("NamedNodeMap")
 @js.native
 object NamedNodeMap
-  extends ScalablyTyped.runtime.Instantiable0[NamedNodeMap]
+  extends org.scalablytyped.runtime.Instantiable0[NamedNodeMap]
 

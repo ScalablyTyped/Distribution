@@ -312,7 +312,7 @@ trait JQuery extends js.Object {
        * @param obj An object of key-value pairs of data to update.
        * @see {@link https://api.jquery.com/data/#data-obj}
        */
-  def data(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def data(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
        * Remove the set of matched elements from the DOM.
        *
@@ -377,7 +377,7 @@ trait JQuery extends js.Object {
   def inheritedData(): js.Any = js.native
   def inheritedData(key: java.lang.String): js.Any = js.native
   def inheritedData(key: java.lang.String, value: js.Any): this.type = js.native
-  def inheritedData(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def inheritedData(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   def injector(): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   /**
        * Returns the `$scope` of the element.
@@ -398,22 +398,6 @@ trait JQuery extends js.Object {
        * @see {@link https://api.jquery.com/off/#off}
        */
   def off(): this.type = js.native
-  /**
-       * Remove an event handler.
-       *
-       * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
-       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
-       * @see {@link https://api.jquery.com/off/#off-events-selector}
-       */
-  def off(events: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
-  /**
-       * Remove an event handler.
-       *
-       * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
-       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
-       * @see {@link https://api.jquery.com/off/#off-events-selector}
-       */
-  def off(events: ScalablyTyped.runtime.StringDictionary[js.Any], selector: java.lang.String): this.type = js.native
   /**
        * Remove an event handler.
        *
@@ -465,52 +449,21 @@ trait JQuery extends js.Object {
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
   ): this.type = js.native
   /**
-       * Attach an event handler function for one or more events to the selected elements.
+       * Remove an event handler.
        *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see {@link https://api.jquery.com/on/#on-events-selector-data}
+       * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
+       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
+       * @see {@link https://api.jquery.com/off/#off-events-selector}
        */
-  def on(
-    events: ScalablyTyped.runtime.StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */js.Any, _]]
-  ): this.type = js.native
+  def off(events: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
-       * Attach an event handler function for one or more events to the selected elements.
+       * Remove an event handler.
        *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see {@link https://api.jquery.com/on/#on-events-selector-data}
+       * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
+       * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
+       * @see {@link https://api.jquery.com/off/#off-events-selector}
        */
-  def on(
-    events: ScalablyTyped.runtime.StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */js.Any, _]],
-    data: js.Any
-  ): this.type = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see {@link https://api.jquery.com/on/#on-events-selector-data}
-       */
-  def on(
-    events: ScalablyTyped.runtime.StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */js.Any, _]],
-    selector: java.lang.String
-  ): this.type = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see {@link https://api.jquery.com/on/#on-events-selector-data}
-       */
-  def on(
-    events: ScalablyTyped.runtime.StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */js.Any, _]],
-    selector: java.lang.String,
-    data: js.Any
-  ): this.type = js.native
+  def off(events: org.scalablytyped.runtime.StringDictionary[js.Any], selector: java.lang.String): this.type = js.native
   /**
        * Attach an event handler function for one or more events to the selected elements.
        *
@@ -564,40 +517,52 @@ trait JQuery extends js.Object {
     handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */js.Any, _]
   ): this.type = js.native
   /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       * Attach an event handler function for one or more events to the selected elements.
        *
        * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
        * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
        * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see {@link https://api.jquery.com/one/#one-events-selector-data}
+       * @see {@link https://api.jquery.com/on/#on-events-selector-data}
        */
-  def one(events: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def on(
+    events: org.scalablytyped.runtime.StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */js.Any, _]]
+  ): this.type = js.native
   /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       * Attach an event handler function for one or more events to the selected elements.
        *
        * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
        * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see {@link https://api.jquery.com/one/#one-events-selector-data}
+       * @see {@link https://api.jquery.com/on/#on-events-selector-data}
        */
-  def one(events: ScalablyTyped.runtime.StringDictionary[js.Any], data: js.Any): this.type = js.native
+  def on(
+    events: org.scalablytyped.runtime.StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */js.Any, _]],
+    data: js.Any
+  ): this.type = js.native
   /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
-       *
-       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see {@link https://api.jquery.com/one/#one-events-selector-data}
-       */
-  def one(events: ScalablyTyped.runtime.StringDictionary[js.Any], selector: java.lang.String): this.type = js.native
-  /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       * Attach an event handler function for one or more events to the selected elements.
        *
        * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
        * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
        * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see {@link https://api.jquery.com/one/#one-events-selector-data}
+       * @see {@link https://api.jquery.com/on/#on-events-selector-data}
        */
-  def one(events: ScalablyTyped.runtime.StringDictionary[js.Any], selector: java.lang.String, data: js.Any): this.type = js.native
+  def on(
+    events: org.scalablytyped.runtime.StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */js.Any, _]],
+    selector: java.lang.String
+  ): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see {@link https://api.jquery.com/on/#on-events-selector-data}
+       */
+  def on(
+    events: org.scalablytyped.runtime.StringDictionary[js.Function2[/* eventObject */ JQueryEventObject, /* repeated */js.Any, _]],
+    selector: java.lang.String,
+    data: js.Any
+  ): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
        *
@@ -646,6 +611,45 @@ trait JQuery extends js.Object {
     events: java.lang.String,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see {@link https://api.jquery.com/one/#one-events-selector-data}
+       */
+  def one(events: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see {@link https://api.jquery.com/one/#one-events-selector-data}
+       */
+  def one(events: org.scalablytyped.runtime.StringDictionary[js.Any], data: js.Any): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see {@link https://api.jquery.com/one/#one-events-selector-data}
+       */
+  def one(events: org.scalablytyped.runtime.StringDictionary[js.Any], selector: java.lang.String): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       *
+       * @param events An object in which the string keys represent one or more space-separated event types and optional namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see {@link https://api.jquery.com/one/#one-events-selector-data}
+       */
+  def one(
+    events: org.scalablytyped.runtime.StringDictionary[js.Any],
+    selector: java.lang.String,
+    data: js.Any
   ): this.type = js.native
   /**
        * Get the parent of each element in the current set of matched elements, optionally filtered by a selector.

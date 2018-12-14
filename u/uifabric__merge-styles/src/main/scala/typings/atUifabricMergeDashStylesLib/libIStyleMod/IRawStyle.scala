@@ -15,6 +15,6 @@ trait IRawStyle
   /**
        * Custom selectors for the style.
        */
-  var selectors: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IStyle]] = js.undefined
+  var selectors: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IStyle]] = js.undefined
 }
 

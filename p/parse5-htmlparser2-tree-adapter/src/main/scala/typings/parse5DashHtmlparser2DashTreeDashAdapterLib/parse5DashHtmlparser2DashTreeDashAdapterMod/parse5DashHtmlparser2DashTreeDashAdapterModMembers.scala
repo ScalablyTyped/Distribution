@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("parse5-htmlparser2-tree-adapter", JSImport.Namespace)
 @js.native
 object parse5DashHtmlparser2DashTreeDashAdapterModMembers
-  extends ScalablyTyped.runtime.TopLevel[parse5Lib.parse5Mod.TreeAdapter]
+  extends org.scalablytyped.runtime.TopLevel[parse5Lib.parse5Mod.TreeAdapter]
 

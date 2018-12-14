@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Shader extends js.Object {
   var fragmentShader: java.lang.String
-  var uniforms: ScalablyTyped.runtime.StringDictionary[IUniform]
+  var uniforms: org.scalablytyped.runtime.StringDictionary[IUniform]
   var vertexShader: java.lang.String
 }
 

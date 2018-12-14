@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Set extends js.Object {
   def animate(
-    attrs: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
     duration: scala.Double
   ): Element = js.native
   def animate(
-    attrs: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
     duration: scala.Double,
     easing: js.Function1[/* num */ scala.Double, scala.Double]
   ): Element = js.native
   def animate(
-    attrs: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Any],
     duration: scala.Double,
     easing: js.Function1[/* num */ scala.Double, scala.Double],
     callback: js.Function0[scala.Unit]
@@ -25,7 +25,7 @@ trait Set extends js.Object {
   def animate(params: snapsvgLib.Anon_Attrs*): Element = js.native
   def attr(param: java.lang.String): java.lang.String = js.native
   def attr(
-    params: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | BBox | js.Any]
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | BBox | js.Any]
   ): Element = js.native
   @JSName("attr")
   def attr_viewBox(param: snapsvgLib.snapsvgLibStrings.viewBox): BBox = js.native

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Directives
-  extends /* directiveName */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Any]]
+  extends /* directiveName */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
 

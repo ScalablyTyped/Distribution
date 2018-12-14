@@ -18,6 +18,6 @@ class DebugNode protected () extends js.Object {
   var nativeNode: js.Any = js.native
   var parent: DebugElement | scala.Null = js.native
   val providerTokens: js.Array[_] = js.native
-  val references: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  val references: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 

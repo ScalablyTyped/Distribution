@@ -29,7 +29,7 @@ trait config extends js.Object {
   var coceSnippet_theme: js.UndefOr[java.lang.String] = js.undefined
   var codeSnippetGeshi_url: js.UndefOr[java.lang.String] = js.undefined
   var codeSnippet_codeClass: js.UndefOr[java.lang.String] = js.undefined
-  var codeSnippet_languages: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var codeSnippet_languages: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var colorButton_backStyle: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
   var colorButton_colors: js.UndefOr[java.lang.String] = js.undefined
   var colorButton_colorsPerRow: js.UndefOr[scala.Double] = js.undefined
@@ -79,7 +79,7 @@ trait config extends js.Object {
   var docType: js.UndefOr[java.lang.String] = js.undefined
   var easyimage_class: js.UndefOr[java.lang.String] = js.undefined
   var easyimage_defaultStyle: js.UndefOr[java.lang.String] = js.undefined
-  var easyimage_styles: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var easyimage_styles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var easyimage_toolbar: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
   var emailProtection: js.UndefOr[java.lang.String] = js.undefined
   var embed_provider: js.UndefOr[java.lang.String] = js.undefined
@@ -93,7 +93,7 @@ trait config extends js.Object {
   var extraAllowedContent: js.UndefOr[ckeditorLib.CKEDITORNs.filterNs.allowedContentRules] = js.undefined
   var extraPlugins: js.UndefOr[java.lang.String] = js.undefined
   var fileTools_defaultFileName: js.UndefOr[java.lang.String] = js.undefined
-  var fileTools_requestHeaders: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var fileTools_requestHeaders: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var filebrowserBrowseUrl: js.UndefOr[java.lang.String] = js.undefined
   var filebrowserFlashBrowseUrl: js.UndefOr[java.lang.String] = js.undefined
   var filebrowserFlashUploadUrl: js.UndefOr[java.lang.String] = js.undefined
@@ -216,7 +216,7 @@ trait config extends js.Object {
   var scayt_minWordLength: js.UndefOr[scala.Double] = js.undefined
   var scayt_moreSuggestions: js.UndefOr[java.lang.String] = js.undefined
   var scayt_multiLanguageMode: js.UndefOr[scala.Boolean] = js.undefined
-  var scayt_multiLanguageStyles: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var scayt_multiLanguageStyles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var scayt_sLang: js.UndefOr[java.lang.String] = js.undefined
   var scayt_serviceHost: js.UndefOr[java.lang.String] = js.undefined
   var scayt_servicePath: js.UndefOr[java.lang.String] = js.undefined
@@ -246,7 +246,7 @@ trait config extends js.Object {
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var tabSpaces: js.UndefOr[scala.Double] = js.undefined
   var templates: js.UndefOr[java.lang.String] = js.undefined
-  var templates_files: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var templates_files: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var templates_replaceContent: js.UndefOr[scala.Boolean] = js.undefined
   var title: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var toolbar: js.UndefOr[

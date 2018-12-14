@@ -24,7 +24,7 @@ class CacheControlExtension[TContext] ()
   @JSName("willResolveField")
   def willResolveField_MCacheControlExtension(
     _source: js.Any,
-    _args: ScalablyTyped.runtime.StringDictionary[js.Any],
+    _args: org.scalablytyped.runtime.StringDictionary[js.Any],
     _context: TContext,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
   ): scala.Unit = js.native

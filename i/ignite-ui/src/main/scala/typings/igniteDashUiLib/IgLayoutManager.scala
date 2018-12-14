@@ -10,7 +10,7 @@ trait IgLayoutManager
   extends /**
 	 * Option for igLayoutManager
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Options specific to a border layout
   	 *

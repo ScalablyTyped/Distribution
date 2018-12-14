@@ -10,7 +10,7 @@ trait IgVideoPlayerBanner
   extends /**
 	 * Option for IgVideoPlayerBanner
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets whether to apply animation effects when showing or hiding the banner. If set to true, the animation is played for banner.duration in milliseconds.
   	 *

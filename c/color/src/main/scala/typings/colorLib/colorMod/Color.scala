@@ -62,7 +62,7 @@ trait Color extends js.Object {
   def mix(mixinColor: Color): Color = js.native
   def mix(mixinColor: Color, weight: scala.Double): Color = js.native
   def negate(): Color = js.native
-  def `object`(): colorLib.Anon_Alpha with ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  def `object`(): colorLib.Anon_Alpha with org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   def opaquer(ratio: scala.Double): Color = js.native
   def percentString(): java.lang.String = js.native
   def percentString(places: scala.Double): java.lang.String = js.native

@@ -10,7 +10,7 @@ trait QueueOptions extends js.Object {
   /**
      * a map of additional arguments to pass in when creating a queue
      */
-  var arguments: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var arguments: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
      * Default: true
      *

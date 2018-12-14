@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait LayerConfig
-  extends /* layerName */ ScalablyTyped.runtime.StringDictionary[
+  extends /* layerName */ org.scalablytyped.runtime.StringDictionary[
       java.lang.String | js.Array[java.lang.String] | LayerConfig | js.Array[LayerConfig]
     ]
 

@@ -12,8 +12,8 @@ object dotNsMembers extends js.Object {
   val version: java.lang.String = js.native
   def compile(tmpl: java.lang.String): adoneLib.adoneNs.templatingNs.dotNs.INs.RenderFunction = js.native
   def compile(tmpl: java.lang.String, `def`: js.Object): adoneLib.adoneNs.templatingNs.dotNs.INs.RenderFunction = js.native
-  def process(): ScalablyTyped.runtime.StringDictionary[adoneLib.adoneNs.templatingNs.dotNs.INs.RenderFunction] = js.native
-  def process(options: adoneLib.adoneNs.templatingNs.dotNs.INs.ProcessOptions): ScalablyTyped.runtime.StringDictionary[adoneLib.adoneNs.templatingNs.dotNs.INs.RenderFunction] = js.native
+  def process(): org.scalablytyped.runtime.StringDictionary[adoneLib.adoneNs.templatingNs.dotNs.INs.RenderFunction] = js.native
+  def process(options: adoneLib.adoneNs.templatingNs.dotNs.INs.ProcessOptions): org.scalablytyped.runtime.StringDictionary[adoneLib.adoneNs.templatingNs.dotNs.INs.RenderFunction] = js.native
   def template(tmpl: java.lang.String): adoneLib.adoneNs.templatingNs.dotNs.INs.RenderFunction = js.native
   def template(tmpl: java.lang.String, c: adoneLib.adoneNs.templatingNs.dotNs.INs.TemplateSettings): adoneLib.adoneNs.templatingNs.dotNs.INs.RenderFunction = js.native
   def template(

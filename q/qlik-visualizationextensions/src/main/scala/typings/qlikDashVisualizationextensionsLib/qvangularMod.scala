@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("qvangular", JSImport.Namespace)
 @js.native
 object qvangularMod
-  extends ScalablyTyped.runtime.TopLevel[IQVAngular]
+  extends org.scalablytyped.runtime.TopLevel[IQVAngular]
 

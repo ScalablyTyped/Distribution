@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ListHeaders
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ListHeader | js.Array[ListHeader] | js.Array[js.Array[ListHeader]]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ListHeader | js.Array[ListHeader] | js.Array[js.Array[ListHeader]]]
 

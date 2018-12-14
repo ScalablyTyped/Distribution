@@ -20,6 +20,8 @@ trait PieChartProps extends js.Object {
   var padding: js.UndefOr[scala.Double] = js.undefined
   /** Size in pixels in each dimension */
   var size: js.UndefOr[scala.Double] = js.undefined
-  var styles: js.UndefOr[ScalablyTyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties]] = js.undefined
+  var styles: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties]
+  ] = js.undefined
 }
 

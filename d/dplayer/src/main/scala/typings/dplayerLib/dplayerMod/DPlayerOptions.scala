@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait DPlayerOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var apiBackend: js.UndefOr[DPlayerAPIBackend] = js.undefined
   var autoplay: js.UndefOr[scala.Boolean] = js.undefined
   var container: stdLib.HTMLElement | scala.Null

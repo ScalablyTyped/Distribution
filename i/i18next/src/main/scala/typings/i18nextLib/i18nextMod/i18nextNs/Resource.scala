@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Resource
-  extends /* language */ ScalablyTyped.runtime.StringDictionary[ResourceLanguage]
+  extends /* language */ org.scalablytyped.runtime.StringDictionary[ResourceLanguage]
 

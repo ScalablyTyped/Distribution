@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait IExpirationPluginConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* config */ stdLib.Partial[ICacheExpirationOptions], ExpirationPlugin]
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ stdLib.Partial[ICacheExpirationOptions], ExpirationPlugin]
 

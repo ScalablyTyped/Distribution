@@ -10,7 +10,7 @@ trait Lead extends js.Object {
   var avatar: intercomDashClientLib.userMod.Avatar
   var companies: intercomDashClientLib.Anon_Type
   val created_at: scala.Double
-  var custom_attributes: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var custom_attributes: org.scalablytyped.runtime.StringDictionary[js.Any]
   var email: java.lang.String | scala.Null
   val id: java.lang.String
   var last_request_at: scala.Double | scala.Null

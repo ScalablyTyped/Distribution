@@ -51,7 +51,7 @@ class Object () extends Observable {
        * @fires ol.ObjectEvent
        * @api
        */
-  def this(opt_values: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(opt_values: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Gets a value.
        * @param key Key name.
@@ -70,7 +70,7 @@ class Object () extends Observable {
        * @return Object.
        * @api stable
        */
-  def getProperties(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getProperties(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Sets a value.
        * @param key Key name.
@@ -94,7 +94,7 @@ class Object () extends Observable {
        * @param opt_silent Update without triggering an event.
        * @api stable
        */
-  def setProperties(values: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def setProperties(values: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * Sets a collection of key-value pairs.  Note that this changes any existing
        * properties and adds new ones (it does not remove any existing properties).
@@ -102,7 +102,7 @@ class Object () extends Observable {
        * @param opt_silent Update without triggering an event.
        * @api stable
        */
-  def setProperties(values: ScalablyTyped.runtime.StringDictionary[js.Any], opt_silent: scala.Boolean): scala.Unit = js.native
+  def setProperties(values: org.scalablytyped.runtime.StringDictionary[js.Any], opt_silent: scala.Boolean): scala.Unit = js.native
   /**
        * Unsets a property.
        * @param key Key name.

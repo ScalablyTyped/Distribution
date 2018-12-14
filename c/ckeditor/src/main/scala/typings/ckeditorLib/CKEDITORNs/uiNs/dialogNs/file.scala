@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class file protected () extends labeledElement {
   def this(dialog: ckeditorLib.CKEDITORNs.dialog, elementDefinition: ckeditorLib.CKEDITORNs.uiNs.dialogNs.definitionsNs.file, htmlList: js.Array[_]) = this()
   def getAction(): java.lang.String = js.native
-  def registerEvents(definition: ScalablyTyped.runtime.StringDictionary[js.Any]): file = js.native
+  def registerEvents(definition: org.scalablytyped.runtime.StringDictionary[js.Any]): file = js.native
   def reset(): scala.Unit = js.native
   def setInitValue(): scala.Unit = js.native
   def submit(): file = js.native

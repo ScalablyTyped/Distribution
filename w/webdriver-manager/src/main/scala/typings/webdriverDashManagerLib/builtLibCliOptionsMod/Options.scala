@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Options
-  extends /* opt */ ScalablyTyped.runtime.StringDictionary[Option]
+  extends /* opt */ org.scalablytyped.runtime.StringDictionary[Option]
 

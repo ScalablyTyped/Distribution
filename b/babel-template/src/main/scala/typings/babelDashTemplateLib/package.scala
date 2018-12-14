@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object babelDashTemplateLib {
   type Node = js.Any
-  type UseTemplate = js.Function1[/* nodes */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[Node]], Node]
+  type UseTemplate = js.Function1[/* nodes */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[Node]], Node]
 }

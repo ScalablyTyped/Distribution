@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("store/storages/memoryStorage", JSImport.Namespace)
 @js.native
 object storagesMemoryStorageMod
-  extends ScalablyTyped.runtime.TopLevel[StoreJsStorage]
+  extends org.scalablytyped.runtime.TopLevel[StoreJsStorage]
 

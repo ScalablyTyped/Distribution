@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Catalogs
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Catalog]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Catalog]
 

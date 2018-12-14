@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait URLSearchParams extends js.Object {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native
   /**
        * Appends a specified key/value pair as a new search parameter.

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ModelUpdateOptions
   extends ModelOptions
      with /** other options */
-/* other */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* other */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** whether multiple documents should be updated (false) */
   var multi: js.UndefOr[scala.Boolean] = js.undefined
   /** disables update-only mode, allowing you to overwrite the doc (false) */

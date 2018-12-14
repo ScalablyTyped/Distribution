@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GeneratedSequence[T]
   extends Sequence[T]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* generatorFn */ GeneratorCallback[T], 
       /* length */ scala.Double, 
       GeneratedSequence[T]

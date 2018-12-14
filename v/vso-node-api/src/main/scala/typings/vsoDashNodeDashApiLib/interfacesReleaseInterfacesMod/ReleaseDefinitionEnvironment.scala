@@ -26,9 +26,9 @@ trait ReleaseDefinitionEnvironment extends js.Object {
   var queueId: scala.Double
   var rank: scala.Double
   var retentionPolicy: EnvironmentRetentionPolicy
-  var runOptions: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var runOptions: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var schedules: js.Array[ReleaseSchedule]
   var variableGroups: js.Array[scala.Double]
-  var variables: ScalablyTyped.runtime.StringDictionary[ConfigurationVariableValue]
+  var variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.plugins.condesnippet.highlighter")
 @js.native
 class highlighter () extends js.Object {
-  var languages: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var languages: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   val queue: js.Array[
     js.Function3[
       /* code */ java.lang.String, 

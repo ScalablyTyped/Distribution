@@ -17,5 +17,5 @@ trait PerformanceEntry extends js.Object {
 @JSGlobal("PerformanceEntry")
 @js.native
 object PerformanceEntry
-  extends ScalablyTyped.runtime.Instantiable0[PerformanceEntry]
+  extends org.scalablytyped.runtime.Instantiable0[PerformanceEntry]
 

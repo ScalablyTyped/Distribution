@@ -174,7 +174,7 @@ object defaultNs extends js.Object {
          *     include a Geometry associated with a `geometry` key.
          * @api stable
          */
-    def this(opt_geometryOrProperties: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+    def this(opt_geometryOrProperties: openlayersLib.openlayersMod.geomNs.Geometry) = this()
     /**
          * @classdesc
          * A vector object for geographic features with a geometry and other
@@ -218,7 +218,7 @@ object defaultNs extends js.Object {
          *     include a Geometry associated with a `geometry` key.
          * @api stable
          */
-    def this(opt_geometryOrProperties: openlayersLib.openlayersMod.geomNs.Geometry) = this()
+    def this(opt_geometryOrProperties: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   }
   
   @js.native
@@ -525,7 +525,7 @@ object defaultNs extends js.Object {
          * @fires ol.ObjectEvent
          * @api
          */
-    def this(opt_values: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+    def this(opt_values: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   }
   
   @js.native
@@ -5723,7 +5723,7 @@ object defaultNs extends js.Object {
          */
     @js.native
     object METERS_PER_UNIT
-      extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+      extends /* k */ org.scalablytyped.runtime.StringDictionary[scala.Double]
     
   }
   
@@ -5807,7 +5807,7 @@ object defaultNs extends js.Object {
                * @param ends Ends or Endss.
                * @param properties Properties.
                */
-      def this(`type`: openlayersLib.openlayersMod.geomNs.GeometryType, flatCoordinates: js.Array[scala.Double], ends: js.Array[scala.Double | js.Array[scala.Double]], properties: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+      def this(`type`: openlayersLib.openlayersMod.geomNs.GeometryType, flatCoordinates: js.Array[scala.Double], ends: js.Array[scala.Double | js.Array[scala.Double]], properties: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     }
     
     /**

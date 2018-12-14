@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MockJaxCustomLogger
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[MockJaxLoggingFunction]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[MockJaxLoggingFunction]
 

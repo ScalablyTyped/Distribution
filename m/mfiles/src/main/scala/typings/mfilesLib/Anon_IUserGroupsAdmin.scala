@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IUserGroupsAdmin
-  extends ScalablyTyped.runtime.Instantiable0[IUserGroupsAdmin]
+  extends org.scalablytyped.runtime.Instantiable0[IUserGroupsAdmin]
 

@@ -44,7 +44,7 @@ object mvcNs extends js.Object {
   
   
   trait viewEventData
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
 }
 

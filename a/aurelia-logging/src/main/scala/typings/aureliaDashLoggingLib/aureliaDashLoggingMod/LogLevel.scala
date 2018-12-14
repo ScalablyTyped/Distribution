@@ -10,7 +10,7 @@ trait LogLevel
   extends /**
     * Additional log levels defined at runtime.
     */
-/* level */ ScalablyTyped.runtime.StringDictionary[scala.Double] {
+/* level */ org.scalablytyped.runtime.StringDictionary[scala.Double] {
   /**
       * Log all messages.
       */

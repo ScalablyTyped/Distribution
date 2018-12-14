@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Url
-  extends ScalablyTyped.runtime.Instantiable1[/* url */ java.lang.String, stdLib.WebSocket]
-     with ScalablyTyped.runtime.Instantiable2[/* url */ java.lang.String, /* _reserved */ js.Any, stdLib.WebSocket]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable1[/* url */ java.lang.String, stdLib.WebSocket]
+     with org.scalablytyped.runtime.Instantiable2[/* url */ java.lang.String, /* _reserved */ js.Any, stdLib.WebSocket]
+     with org.scalablytyped.runtime.Instantiable3[
       /* url */ java.lang.String, 
       /* _reserved */ js.Any, 
       /* options */ sockjsDashClientLib.sockjsDashClientMod.SockJSNs.Options, 

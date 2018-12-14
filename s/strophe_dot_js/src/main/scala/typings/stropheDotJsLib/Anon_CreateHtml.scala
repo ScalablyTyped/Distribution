@@ -32,7 +32,7 @@ trait Anon_CreateHtml extends js.Object {
        *  > builder.c('child1', ...).up().c('child2', ...)
        *  The next operation on the Builder will be relative to the second child.
        */
-  var Builder: ScalablyTyped.runtime.Instantiable2[
+  var Builder: org.scalablytyped.runtime.Instantiable2[
     /* name */ java.lang.String, 
     /* attrs */ js.UndefOr[/* attrs */ js.Any], 
     stropheDotJsLib.stropheDotJsMod.StropheNs.Builder
@@ -58,7 +58,7 @@ trait Anon_CreateHtml extends js.Object {
        *
        *  To send data to the connection, use send().
        */
-  var Connection: ScalablyTyped.runtime.Instantiable2[
+  var Connection: org.scalablytyped.runtime.Instantiable2[
     /* service */ java.lang.String, 
     /* options */ js.UndefOr[/* options */ stropheDotJsLib.stropheDotJsMod.StropheNs.ConnectionOptions], 
     stropheDotJsLib.stropheDotJsMod.StropheNs.Connection

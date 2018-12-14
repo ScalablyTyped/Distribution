@@ -49,12 +49,12 @@ object reduxDashActionsModMembers extends js.Object {
     payloadCreator: ActionFunction1[Arg1, Payload],
     metaCreator: ActionFunction1[Arg1, Meta]
   ): ActionFunction1[Arg1, ActionMeta[Payload, Meta]] = js.native
-  def createActions(actionMapOrIdentityAction: java.lang.String, identityActions: (java.lang.String | Options)*): ScalablyTyped.runtime.StringDictionary[ActionFunctionAny[Action[_]]] = js.native
-  def createActions(actionMapOrIdentityAction: ActionMap[_, _], identityActions: (java.lang.String | Options)*): ScalablyTyped.runtime.StringDictionary[ActionFunctionAny[Action[_]]] = js.native
+  def createActions(actionMapOrIdentityAction: java.lang.String, identityActions: (java.lang.String | Options)*): org.scalablytyped.runtime.StringDictionary[ActionFunctionAny[Action[_]]] = js.native
+  def createActions(actionMapOrIdentityAction: ActionMap[_, _], identityActions: (java.lang.String | Options)*): org.scalablytyped.runtime.StringDictionary[ActionFunctionAny[Action[_]]] = js.native
   @JSName("createActions")
-  def createActions_Payload[Payload](actionMapOrIdentityAction: java.lang.String, identityActions: (java.lang.String | Options)*): ScalablyTyped.runtime.StringDictionary[ActionFunctionAny[Action[Payload]]] = js.native
+  def createActions_Payload[Payload](actionMapOrIdentityAction: java.lang.String, identityActions: (java.lang.String | Options)*): org.scalablytyped.runtime.StringDictionary[ActionFunctionAny[Action[Payload]]] = js.native
   @JSName("createActions")
-  def createActions_Payload[Payload](actionMapOrIdentityAction: ActionMap[Payload, _], identityActions: (java.lang.String | Options)*): ScalablyTyped.runtime.StringDictionary[ActionFunctionAny[Action[Payload]]] = js.native
+  def createActions_Payload[Payload](actionMapOrIdentityAction: ActionMap[Payload, _], identityActions: (java.lang.String | Options)*): org.scalablytyped.runtime.StringDictionary[ActionFunctionAny[Action[Payload]]] = js.native
   def handleAction[State, Payload](actionType: java.lang.String, reducer: ReducerNextThrow[State, Payload], initialState: State): Reducer[State, Payload] = js.native
   def handleAction[State, Payload](actionType: java.lang.String, reducer: Reducer[State, Payload], initialState: State): Reducer[State, Payload] = js.native
   def handleAction[State, Payload](

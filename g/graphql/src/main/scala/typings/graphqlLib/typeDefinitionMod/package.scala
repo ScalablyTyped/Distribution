@@ -32,7 +32,7 @@ package object typeDefinitionMod {
   ])
   type GraphQLScalarLiteralParser[TInternal] = js.Function2[
     /* valueNode */ graphqlLib.languageAstMod.ValueNode, 
-    /* variables */ graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* variables */ graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[js.Any]], 
     graphqlLib.tsutilsMaybeMod.Maybe[TInternal]
   ]
   type GraphQLScalarSerializer[TExternal] = js.Function1[/* value */ js.Any, graphqlLib.tsutilsMaybeMod.Maybe[TExternal]]

@@ -14,6 +14,6 @@ trait BoardChart extends BoardChartReference {
   /**
        * The settings for the resource
        */
-  var settings: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var settings: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

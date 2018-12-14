@@ -13,7 +13,7 @@ object helpersNs extends js.Object {
   def createTransaction(): adoneLib.adoneNs.fakeNs.INs.Transaction = js.native
   def mustache(
     str: java.lang.String,
-    data: ScalablyTyped.runtime.StringDictionary[
+    data: org.scalablytyped.runtime.StringDictionary[
       java.lang.String | (js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String])
     ]
   ): java.lang.String = js.native

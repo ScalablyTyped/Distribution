@@ -9,10 +9,10 @@ package object hapiMod {
   type CachePolicyOptions[T] = catboxLib.catboxMod.PolicyOptionVariants[T] with hapiLib.Anon_Cache
   type DecorateName = java.lang.String | js.Symbol
   type DecorationMethod[T] = js.ThisFunction1[/* this */ T, /* repeated */js.Any, js.Any]
-  type Dependencies = java.lang.String | js.Array[java.lang.String] | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  type Dependencies = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type LogEventHandler = js.Function2[
     /* event */ LogEvent, 
-    /* tags */ ScalablyTyped.runtime.StringDictionary[hapiLib.hapiLibNumbers.`true`], 
+    /* tags */ org.scalablytyped.runtime.StringDictionary[hapiLib.hapiLibNumbers.`true`], 
     scala.Unit
   ]
   type PayloadCompressionDecoderSettings = js.Object
@@ -23,7 +23,7 @@ package object hapiMod {
   type RequestEventHandler = js.Function3[
     /* request */ Request, 
     /* event */ RequestEvent, 
-    /* tags */ ScalablyTyped.runtime.StringDictionary[hapiLib.hapiLibNumbers.`true`], 
+    /* tags */ org.scalablytyped.runtime.StringDictionary[hapiLib.hapiLibNumbers.`true`], 
     scala.Unit
   ]
   type RequestEventType = hapiLib.hapiLibStrings.peek | hapiLib.hapiLibStrings.finish | hapiLib.hapiLibStrings.disconnect

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait OptionsWithMap[Props, Exports /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */] extends CommonOptions {
+trait OptionsWithMap[Props, Exports /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */] extends CommonOptions {
   /**
            * An object containing functions which return promises, which resolve to an object to be passed to `render` on success.
            */

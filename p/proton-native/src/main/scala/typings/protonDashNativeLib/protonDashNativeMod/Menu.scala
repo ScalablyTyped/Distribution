@@ -16,6 +16,6 @@ object Menu extends js.Object {
   /**
        * A single item in a Menu.
        */
-  var Item: ScalablyTyped.runtime.Instantiable0[protonDashNativeLib.protonDashNativeMod.MenuItem] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[protonDashNativeLib.protonDashNativeMod.MenuItem] = js.native
 }
 

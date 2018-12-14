@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("REACTIONS")
 @js.native
 object REACTIONS
-  extends /* resource */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String]] {
+  extends /* resource */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]] {
   var G: screepsLib.Anon_O = js.native
   var GH: screepsLib.Anon_OHGH2O = js.native
   var GH2O: screepsLib.Anon_XXGH2O = js.native

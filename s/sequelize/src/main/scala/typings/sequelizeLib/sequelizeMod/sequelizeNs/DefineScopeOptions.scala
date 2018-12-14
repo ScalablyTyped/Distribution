@@ -15,5 +15,5 @@ trait DefineScopeOptions
   extends /**
          * Name of the scope and it's query
          */
-/* scopeName */ ScalablyTyped.runtime.StringDictionary[AnyFindOptions | js.Function]
+/* scopeName */ org.scalablytyped.runtime.StringDictionary[AnyFindOptions | js.Function]
 

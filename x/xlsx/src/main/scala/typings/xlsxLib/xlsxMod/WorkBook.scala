@@ -17,7 +17,7 @@ trait WorkBook extends js.Object {
        * A dictionary of the worksheets in the workbook.
        * Use SheetNames to reference these.
        */
-  var Sheets: ScalablyTyped.runtime.StringDictionary[WorkSheet]
+  var Sheets: org.scalablytyped.runtime.StringDictionary[WorkSheet]
   var Workbook: js.UndefOr[WBProps] = js.undefined
   var vbaraw: js.UndefOr[js.Any] = js.undefined
 }

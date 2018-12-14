@@ -22,7 +22,7 @@ class GraphQLScalarType protected () extends js.Object {
   def inspect(): java.lang.String = js.native
   def parseLiteral(
     valueNode: graphqlLib.languageAstMod.ValueNode,
-    variables: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]]
+    variables: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
   ): graphqlLib.tsutilsMaybeMod.Maybe[_] = js.native
   def parseValue(value: js.Any): graphqlLib.tsutilsMaybeMod.Maybe[_] = js.native
   def serialize(value: js.Any): graphqlLib.tsutilsMaybeMod.Maybe[_] = js.native

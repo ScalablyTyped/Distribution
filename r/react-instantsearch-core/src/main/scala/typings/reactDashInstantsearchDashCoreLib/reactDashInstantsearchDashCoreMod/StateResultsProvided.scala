@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait StateResultsProvided[TDoc] extends js.Object {
   /** In case of multiple indices you can retrieve all the results */
-  var allSearchResults: ScalablyTyped.runtime.StringDictionary[SearchResults[TDoc]]
+  var allSearchResults: org.scalablytyped.runtime.StringDictionary[SearchResults[TDoc]]
   /** If the search failed, the error will be logged here. */
   var error: AlgoliaError
   /** Flag that indicates if React InstantSearch has detected that searches are stalled. */

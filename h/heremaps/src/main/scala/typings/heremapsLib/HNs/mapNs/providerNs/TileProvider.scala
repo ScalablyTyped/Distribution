@@ -50,7 +50,7 @@ class TileProvider protected () extends Provider {
     y: scala.Double,
     z: scala.Double,
     data: stdLib.HTMLCanvasElement,
-    opt_options: ScalablyTyped.runtime.StringDictionary[js.Any]
+    opt_options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Tile = js.native
   /**
                    * This method creates a tile object with given parameters
@@ -76,7 +76,7 @@ class TileProvider protected () extends Provider {
     y: scala.Double,
     z: scala.Double,
     data: stdLib.HTMLImageElement,
-    opt_options: ScalablyTyped.runtime.StringDictionary[js.Any]
+    opt_options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Tile = js.native
   /**
                    * This method creates a tile key consisting of the provider&#x27;s uri, and the tile&#x27;s x, y and z coordinates, seperated by underscores e.g.: &quot;4711_7_42_23&quot;

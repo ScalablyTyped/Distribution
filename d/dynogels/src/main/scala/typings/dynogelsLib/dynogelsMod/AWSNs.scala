@@ -2861,9 +2861,9 @@ object AWSNs extends js.Object {
     object Converter extends js.Object {
       def input(data: js.Any): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue = js.native
       def input(data: js.Any, options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue = js.native
-      def marshall(data: ScalablyTyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap = js.native
+      def marshall(data: org.scalablytyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap = js.native
       def marshall(
-        data: ScalablyTyped.runtime.StringDictionary[js.Any],
+        data: org.scalablytyped.runtime.StringDictionary[js.Any],
         options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
       ): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap = js.native
       def output(data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue): js.Any = js.native
@@ -2871,11 +2871,11 @@ object AWSNs extends js.Object {
         data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue,
         options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
       ): js.Any = js.native
-      def unmarshall(data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+      def unmarshall(data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
       def unmarshall(
         data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap,
         options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
-      ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     }
     
     @JSName("DynamoDB")
@@ -2899,9 +2899,9 @@ object AWSNs extends js.Object {
       object Converter extends js.Object {
         def input(data: js.Any): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue = js.native
         def input(data: js.Any, options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue = js.native
-        def marshall(data: ScalablyTyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap = js.native
+        def marshall(data: org.scalablytyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap = js.native
         def marshall(
-          data: ScalablyTyped.runtime.StringDictionary[js.Any],
+          data: org.scalablytyped.runtime.StringDictionary[js.Any],
           options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
         ): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap = js.native
         def output(data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue): js.Any = js.native
@@ -2909,11 +2909,11 @@ object AWSNs extends js.Object {
           data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue,
           options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
         ): js.Any = js.native
-        def unmarshall(data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+        def unmarshall(data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
         def unmarshall(
           data: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeMap,
           options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
-        ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+        ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
       }
       
     }

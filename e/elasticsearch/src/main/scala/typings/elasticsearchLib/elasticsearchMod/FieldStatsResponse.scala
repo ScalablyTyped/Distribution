@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait FieldStatsResponse extends js.Object {
   var _shards: ShardsResponse
-  var conflicts: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
-  var indices: ScalablyTyped.runtime.StringDictionary[FieldStatsResponseIndex]
+  var conflicts: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var indices: org.scalablytyped.runtime.StringDictionary[FieldStatsResponseIndex]
 }
 

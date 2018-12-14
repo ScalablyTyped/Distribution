@@ -11,5 +11,5 @@ trait HTMLAudioElement extends HTMLMediaElement
 @JSGlobal("HTMLAudioElement")
 @js.native
 object HTMLAudioElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLAudioElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLAudioElement]
 

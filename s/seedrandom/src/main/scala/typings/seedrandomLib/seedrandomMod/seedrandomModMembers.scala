@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("seedrandom", JSImport.Namespace)
 @js.native
 object seedrandomModMembers
-  extends ScalablyTyped.runtime.TopLevel[seedrandomLib.seedrandomMod.seedrandomNs.seedrandom_prng]
+  extends org.scalablytyped.runtime.TopLevel[seedrandomLib.seedrandomMod.seedrandomNs.seedrandom_prng]
 

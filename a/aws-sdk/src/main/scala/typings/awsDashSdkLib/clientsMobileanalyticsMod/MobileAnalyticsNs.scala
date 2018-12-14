@@ -46,11 +46,11 @@ object MobileAnalyticsNs extends js.Object {
   
   
   trait MapOfStringToNumber
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Double]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Double]
   
   
   trait MapOfStringToString
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String0to1000Chars]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String0to1000Chars]
   
   
   trait PutEventsInput extends js.Object {

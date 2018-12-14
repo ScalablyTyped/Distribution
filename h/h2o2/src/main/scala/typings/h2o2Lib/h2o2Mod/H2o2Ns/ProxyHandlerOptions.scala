@@ -28,7 +28,7 @@ trait ProxyHandlerOptions extends js.Object {
       /* callback */ js.Function3[
         /* err */ scala.Null | js.Any, 
         /* uri */ java.lang.String, 
-        /* headers */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]], 
+        /* headers */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]], 
         scala.Unit
       ], 
       scala.Unit

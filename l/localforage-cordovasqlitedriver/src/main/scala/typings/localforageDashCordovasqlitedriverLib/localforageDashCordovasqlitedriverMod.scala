@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("localforage-cordovasqlitedriver", JSImport.Namespace)
 @js.native
 object localforageDashCordovasqlitedriverMod
-  extends ScalablyTyped.runtime.TopLevel[localforageLib.LocalForageDriver]
+  extends org.scalablytyped.runtime.TopLevel[localforageLib.LocalForageDriver]
 

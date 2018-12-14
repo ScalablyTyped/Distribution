@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-json-editor", JSImport.Namespace)
 @js.native
 object gulpDashJsonDashEditorModMembers
-  extends ScalablyTyped.runtime.TopLevel[JEditor]
+  extends org.scalablytyped.runtime.TopLevel[JEditor]
 

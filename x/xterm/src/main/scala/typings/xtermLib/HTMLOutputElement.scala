@@ -25,5 +25,5 @@ trait HTMLOutputElement extends HTMLElement {
 @JSGlobal("HTMLOutputElement")
 @js.native
 object HTMLOutputElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLOutputElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLOutputElement]
 

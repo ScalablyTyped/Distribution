@@ -13,6 +13,6 @@ class Picker ()
 @JSImport("proton-native", "Picker")
 @js.native
 object Picker extends js.Object {
-  var Item: ScalablyTyped.runtime.Instantiable0[protonDashNativeLib.protonDashNativeMod.PickerItem] = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[protonDashNativeLib.protonDashNativeMod.PickerItem] = js.native
 }
 

@@ -5691,7 +5691,7 @@ object GreengrassNs extends js.Object {
   
   
   trait __mapOf__string
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[__string]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   val TypesNs: this.type = js.native
   type BulkDeploymentResults = js.Array[BulkDeploymentResult]

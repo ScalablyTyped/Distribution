@@ -359,7 +359,7 @@ object DataPipelineNs extends js.Object {
   
   
   trait PipelineObjectMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[PipelineObject]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[PipelineObject]
   
   
   trait PollForTaskInput extends js.Object {

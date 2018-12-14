@@ -24,7 +24,7 @@ trait DispatcherStatic
          * @option {Number} [requestTimeout] Timeout (in milliseconds) to wait for the
          *     request to finish.
          */
-ScalablyTyped.runtime.Instantiable0[Dispatcher]
+org.scalablytyped.runtime.Instantiable0[Dispatcher]
      with /**
          * Creates a dispatcher which will act as a basic wrapper for making HTTP
          * requests to the API, and handle authentication.
@@ -42,7 +42,7 @@ ScalablyTyped.runtime.Instantiable0[Dispatcher]
          * @option {Number} [requestTimeout] Timeout (in milliseconds) to wait for the
          *     request to finish.
          */
-ScalablyTyped.runtime.Instantiable1[/* options */ DispatcherOptions, Dispatcher] {
+org.scalablytyped.runtime.Instantiable1[/* options */ DispatcherOptions, Dispatcher] {
   /**
            * The relative API path for the current version of the Asana API.
            * @type {String}

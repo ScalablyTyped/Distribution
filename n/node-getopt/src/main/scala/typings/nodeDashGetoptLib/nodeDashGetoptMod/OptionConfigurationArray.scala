@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait OptionConfigurationArray
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[js.Array[java.lang.String]]
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[js.Array[java.lang.String]]
 

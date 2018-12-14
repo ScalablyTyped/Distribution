@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait DataByNumber
-  extends /* key */ ScalablyTyped.runtime.NumberDictionary[DataValue]
+  extends /* key */ org.scalablytyped.runtime.NumberDictionary[DataValue]
 

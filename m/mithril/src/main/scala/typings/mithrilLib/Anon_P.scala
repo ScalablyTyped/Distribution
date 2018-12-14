@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_P
-  extends /* p */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* p */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var currentTarget: js.Any
 }
 

@@ -85,7 +85,7 @@ object routerModMembers extends js.Object {
   def ɵangular_packages_router_router_i(r: atAngularRouterLib.srcRouterUnderscoreModuleMod.RouterInitializer): js.Any = js.native
   def ɵangular_packages_router_router_j(r: atAngularRouterLib.srcRouterUnderscoreModuleMod.RouterInitializer): js.Any = js.native
   def ɵangular_packages_router_router_k(): js.Array[
-    (ScalablyTyped.runtime.Instantiable1[
+    (org.scalablytyped.runtime.Instantiable1[
       /* injector */ atAngularCoreLib.coreMod.Injector, 
       atAngularRouterLib.srcRouterUnderscoreModuleMod.RouterInitializer
     ]) | atAngularRouterLib.Anon_Provide | atAngularRouterLib.Anon_ProvideCompRef | atAngularRouterLib.Anon_ProvideCompRefUseExisting

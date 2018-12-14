@@ -17,5 +17,5 @@ trait HTMLBRElement extends HTMLElement {
 @JSGlobal("HTMLBRElement")
 @js.native
 object HTMLBRElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLBRElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLBRElement]
 

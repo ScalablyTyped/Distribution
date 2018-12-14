@@ -11,10 +11,10 @@ trait ConverterStatic
          * @constructor
          * @param converterOptions Configuration object, describes which extensions to apply
          */
-ScalablyTyped.runtime.Instantiable0[Converter]
+org.scalablytyped.runtime.Instantiable0[Converter]
      with /**
          * @constructor
          * @param converterOptions Configuration object, describes which extensions to apply
          */
-ScalablyTyped.runtime.Instantiable1[/* converterOptions */ ConverterOptions, Converter]
+org.scalablytyped.runtime.Instantiable1[/* converterOptions */ ConverterOptions, Converter]
 

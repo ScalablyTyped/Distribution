@@ -13,7 +13,7 @@ trait Anon_Name extends js.Object {
        *
        * DO NOT call this constuctor directly (use firebase.app() instead).
        */
-  var App: ScalablyTyped.runtime.Instantiable0[atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp] = js.native
+  var App: org.scalablytyped.runtime.Instantiable0[atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp] = js.native
   /**
        * Retrieve an instance of a FirebaseApp.
        *

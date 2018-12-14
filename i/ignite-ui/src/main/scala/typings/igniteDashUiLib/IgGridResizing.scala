@@ -10,7 +10,7 @@ trait IgGridResizing
   extends /**
 	 * Option for igGridResizing
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Resize the column to the size of the longest currently visible cell value.
   	 *

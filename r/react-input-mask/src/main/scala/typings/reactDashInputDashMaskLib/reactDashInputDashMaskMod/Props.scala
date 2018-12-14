@@ -35,7 +35,7 @@ trait Props
      *   "*": "[A-Za-z0-9]"
      * }```
      */
-  var formatChars: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var formatChars: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
      * Use inputRef instead of ref if you need input node to manage focus, selection, etc.
      */

@@ -51,13 +51,13 @@ object yamlNs extends js.Object {
   }
   
   def parse(config: atPulumiKubernetesLib.providerMod.yamlNs.ConfigGroupOpts): atPulumiPulumiLib.pulumiMod.Output[
-    ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
+    org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
   ] = js.native
   def parse(
     config: atPulumiKubernetesLib.providerMod.yamlNs.ConfigGroupOpts,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiPulumiLib.pulumiMod.Output[
-    ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
+    org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
   ] = js.native
 }
 

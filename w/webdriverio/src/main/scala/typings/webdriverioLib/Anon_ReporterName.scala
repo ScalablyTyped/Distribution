@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_ReporterName
-  extends /* reporterName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* reporterName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var outputDir: js.UndefOr[java.lang.String] = js.undefined
 }
 

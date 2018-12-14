@@ -10,7 +10,7 @@ trait VNodeProperties
   extends /**
      * Everything that is not explicitly listed (properties and attributes that are either uncommon or custom).
      */
-/* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   val accessKey: js.UndefOr[java.lang.String] = js.undefined
   val action: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -79,7 +79,9 @@ trait VNodeProperties
        * An object literal like `{important:true}` which allows css classes, like `important` to be added and removed
        * dynamically.
        */
-  val classes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.UndefOr[scala.Boolean | scala.Null]]] = js.undefined
+  val classes: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean | scala.Null]]
+  ] = js.undefined
   val disabled: js.UndefOr[scala.Boolean] = js.undefined
   val draggable: js.UndefOr[scala.Boolean] = js.undefined
   val encoding: js.UndefOr[java.lang.String] = js.undefined

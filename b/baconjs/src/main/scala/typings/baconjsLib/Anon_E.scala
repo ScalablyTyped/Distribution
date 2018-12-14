@@ -13,5 +13,5 @@ trait Anon_E
          * @description Returns a new [Bus]{@link Bacon.Bus}.
          * @returns {Bus<E, A>}
          */
-ScalablyTyped.runtime.Instantiable0[baconjsLib.BaconNs.Bus[js.Object, js.Object]]
+org.scalablytyped.runtime.Instantiable0[baconjsLib.BaconNs.Bus[js.Object, js.Object]]
 

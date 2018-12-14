@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MockHeaders
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

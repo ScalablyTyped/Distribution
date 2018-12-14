@@ -16,7 +16,7 @@ trait httpSrv
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[httpSrv] {
+org.scalablytyped.runtime.Instantiable0[httpSrv] {
   /**
        * <p>Stop listening for new HTTP connections</p>
        * 

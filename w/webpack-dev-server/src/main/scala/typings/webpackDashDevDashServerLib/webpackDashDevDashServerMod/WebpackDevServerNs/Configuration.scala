@@ -41,7 +41,7 @@ trait Configuration extends js.Object {
            */
   var filename: js.UndefOr[java.lang.String] = js.undefined
   /** Adds headers to all responses. */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** When using the HTML5 History API, the index.html page will likely have to be served in place of any 404 responses. */
   var historyApiFallback: js.UndefOr[scala.Boolean | HistoryApiFallbackConfig] = js.undefined
   /** Specify a host to use. By default this is localhost. */

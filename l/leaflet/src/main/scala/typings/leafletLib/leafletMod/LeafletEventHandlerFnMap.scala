@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LeafletEventHandlerFnMap
-  extends /* type */ ScalablyTyped.runtime.StringDictionary[LeafletEventHandlerFn]
+  extends /* type */ org.scalablytyped.runtime.StringDictionary[LeafletEventHandlerFn]
 

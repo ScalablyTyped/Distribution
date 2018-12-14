@@ -43,7 +43,7 @@ trait DataViewMetadataColumn extends js.Object {
   /** The query name the source column in the query. */
   var queryName: js.UndefOr[java.lang.String] = js.undefined
   /** The properties that this column provides to the visualization. */
-  var roles: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
+  var roles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
   /** The sort direction of this column. */
   var sort: js.UndefOr[SortDirection] = js.undefined
   /** The order sorts are applied. Lower values are applied first. Undefined indicates no sort was done on this column. */

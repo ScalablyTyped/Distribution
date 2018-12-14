@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ContentWorker
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ jpmLib.Anon_ContentScriptWindow, ContentWorker] {
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ jpmLib.Anon_ContentScriptWindow, ContentWorker] {
   var port: Port = js.native
   var tab: Tab = js.native
   var url: stdLib.URL = js.native

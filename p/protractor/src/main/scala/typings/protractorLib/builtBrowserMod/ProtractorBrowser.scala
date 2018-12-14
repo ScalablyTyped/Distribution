@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProtractorBrowser protected ()
   extends AbstractExtendedWebDriver
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def this(webdriverInstance: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver) = this()
   def this(webdriverInstance: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, opt_baseUrl: java.lang.String) = this()
   def this(webdriverInstance: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, opt_baseUrl: java.lang.String, opt_rootElement: java.lang.String) = this()

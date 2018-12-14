@@ -13,5 +13,5 @@ trait CSSMediaRule extends CSSConditionRule {
 @JSGlobal("CSSMediaRule")
 @js.native
 object CSSMediaRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSMediaRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSMediaRule]
 

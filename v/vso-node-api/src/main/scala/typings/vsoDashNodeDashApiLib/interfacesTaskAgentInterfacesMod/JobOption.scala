@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait JobOption extends js.Object {
-  var data: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var data: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Gets the id of the option.
        */

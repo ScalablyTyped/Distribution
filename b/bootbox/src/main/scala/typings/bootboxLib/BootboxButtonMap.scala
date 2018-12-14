@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait BootboxButtonMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[BootboxButton | js.Function]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[BootboxButton | js.Function]
 

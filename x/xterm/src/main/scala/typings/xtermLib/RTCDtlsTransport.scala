@@ -85,5 +85,5 @@ trait RTCDtlsTransport extends EventTarget {
 @JSGlobal("RTCDtlsTransport")
 @js.native
 object RTCDtlsTransport
-  extends ScalablyTyped.runtime.Instantiable0[RTCDtlsTransport]
+  extends org.scalablytyped.runtime.Instantiable0[RTCDtlsTransport]
 

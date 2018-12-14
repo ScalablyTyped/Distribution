@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/reflect/es7/has-own-metadata'", JSImport.Namespace)
 @js.native
 object `libraryFnReflectEs7HasDashOwnDashMetadata'Mod`
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function3[
         /* metadataKey */ js.Any, 
         /* target */ Object, 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_SimpleEventEmitter extends js.Object {
-  var SimpleEventEmitter: ScalablyTyped.runtime.Instantiable0[mobservableLib.libSimpleeventemitterMod.default]
+  var SimpleEventEmitter: org.scalablytyped.runtime.Instantiable0[mobservableLib.libSimpleeventemitterMod.default]
   var getDNode: js.Function1[/* thing */ js.Any, _]
   var getDependencyTree: js.Function2[
     /* thing */ js.Any, 

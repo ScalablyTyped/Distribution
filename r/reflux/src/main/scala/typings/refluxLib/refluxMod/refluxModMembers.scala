@@ -19,7 +19,7 @@ object refluxModMembers extends js.Object {
   def createActions(definitions: js.Array[java.lang.String | ActionDefinition]): js.Any = js.native
   def createActions(definitions: ActionObjectDefinition): js.Any = js.native
   def createStore(definition: StoreDefinition): Store = js.native
-  def initStore(typeOfStore: ScalablyTyped.runtime.Instantiable0[Store]): Store = js.native
+  def initStore(typeOfStore: org.scalablytyped.runtime.Instantiable0[Store]): Store = js.native
   def listenTo(store: Store, handler: java.lang.String): scala.Unit = js.native
   def setState(state: js.Any): scala.Unit = js.native
 }

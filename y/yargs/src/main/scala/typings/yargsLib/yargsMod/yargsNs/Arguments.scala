@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Arguments
   extends /** All remaining options */
-/* argName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* argName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** The script name or node command */
   @JSName("$0")
   var $0: java.lang.String

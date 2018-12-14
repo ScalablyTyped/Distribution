@@ -16,5 +16,5 @@ trait HTMLTitleElement extends HTMLElement {
 @JSGlobal("HTMLTitleElement")
 @js.native
 object HTMLTitleElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLTitleElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLTitleElement]
 

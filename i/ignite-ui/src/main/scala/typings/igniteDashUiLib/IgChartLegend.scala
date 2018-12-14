@@ -10,7 +10,7 @@ trait IgChartLegend
   extends /**
 	 * Option for igChartLegend
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * The height of the legend. It can be set as a number in pixels, string (px) or percentage (%).
   	 */

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("shelljs-exec-proxy", JSImport.Namespace)
 @js.native
 object shelljsDashExecDashProxyModMembers
-  extends ScalablyTyped.runtime.TopLevel[shelljsDashExecDashProxyLib.ShelljsExecProxy]
+  extends org.scalablytyped.runtime.TopLevel[shelljsDashExecDashProxyLib.ShelljsExecProxy]
 

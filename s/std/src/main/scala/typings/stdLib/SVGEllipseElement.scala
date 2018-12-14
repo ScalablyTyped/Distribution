@@ -16,5 +16,5 @@ trait SVGEllipseElement extends SVGGraphicsElement {
 @JSGlobal("SVGEllipseElement")
 @js.native
 object SVGEllipseElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGEllipseElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGEllipseElement]
 

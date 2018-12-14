@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IArrInterface
-  extends /* item */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  extends /* item */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 

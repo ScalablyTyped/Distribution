@@ -10,6 +10,6 @@ trait StepStyles extends js.Object {
   /**
        * See https://github.com/gilbarbara/react-joyride/blob/master/docs/styling.md
        */
-  var options: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

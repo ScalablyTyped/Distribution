@@ -16,16 +16,7 @@ class Database () extends js.Object {
   def each(
     sql: java.lang.String,
     callback: js.Function1[
-      /* obj */ ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array], 
-      scala.Unit
-    ],
-    done: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
-  def each(
-    sql: java.lang.String,
-    params: ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array],
-    callback: js.Function1[
-      /* obj */ ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array], 
+      /* obj */ org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array], 
       scala.Unit
     ],
     done: js.Function0[scala.Unit]
@@ -34,7 +25,16 @@ class Database () extends js.Object {
     sql: java.lang.String,
     params: js.Array[scala.Double | java.lang.String | stdLib.Uint8Array],
     callback: js.Function1[
-      /* obj */ ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array], 
+      /* obj */ org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array], 
+      scala.Unit
+    ],
+    done: js.Function0[scala.Unit]
+  ): scala.Unit = js.native
+  def each(
+    sql: java.lang.String,
+    params: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array],
+    callback: js.Function1[
+      /* obj */ org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array], 
       scala.Unit
     ],
     done: js.Function0[scala.Unit]
@@ -43,16 +43,16 @@ class Database () extends js.Object {
   def export(): stdLib.Uint8Array = js.native
   def getRowsModified(): scala.Double = js.native
   def prepare(sql: java.lang.String): Statement = js.native
+  def prepare(sql: java.lang.String, params: js.Array[scala.Double | java.lang.String | stdLib.Uint8Array]): Statement = js.native
   def prepare(
     sql: java.lang.String,
-    params: ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array]
+    params: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array]
   ): Statement = js.native
-  def prepare(sql: java.lang.String, params: js.Array[scala.Double | java.lang.String | stdLib.Uint8Array]): Statement = js.native
   def run(sql: java.lang.String): Database = js.native
+  def run(sql: java.lang.String, params: js.Array[scala.Double | java.lang.String | stdLib.Uint8Array]): Database = js.native
   def run(
     sql: java.lang.String,
-    params: ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array]
+    params: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String | stdLib.Uint8Array]
   ): Database = js.native
-  def run(sql: java.lang.String, params: js.Array[scala.Double | java.lang.String | stdLib.Uint8Array]): Database = js.native
 }
 

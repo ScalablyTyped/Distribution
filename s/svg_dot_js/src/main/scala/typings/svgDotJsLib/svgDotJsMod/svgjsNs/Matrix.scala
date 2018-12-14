@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Matrix
-  extends ScalablyTyped.runtime.Instantiable0[Matrix]
-     with ScalablyTyped.runtime.Instantiable1[/* source */ MatrixAlias, Matrix]
-     with ScalablyTyped.runtime.Instantiable6[
+  extends org.scalablytyped.runtime.Instantiable0[Matrix]
+     with org.scalablytyped.runtime.Instantiable1[/* source */ MatrixAlias, Matrix]
+     with org.scalablytyped.runtime.Instantiable6[
       /* a */ scala.Double, 
       /* b */ scala.Double, 
       /* c */ scala.Double, 

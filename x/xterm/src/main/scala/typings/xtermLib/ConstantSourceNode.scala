@@ -13,8 +13,8 @@ trait ConstantSourceNode extends AudioScheduledSourceNode {
 @JSGlobal("ConstantSourceNode")
 @js.native
 object ConstantSourceNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, ConstantSourceNode]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, ConstantSourceNode]
+     with org.scalablytyped.runtime.Instantiable2[
       /* context */ BaseAudioContext, 
       /* options */ ConstantSourceOptions, 
       ConstantSourceNode

@@ -19,7 +19,7 @@ class namespaced () extends DigestMd5Mechanism {
   /* CompleteClass */
   override def challenge(chal: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
-  override def response(cred: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  override def response(cred: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   /* CompleteClass */
   override def response(cred: saslDashDigestDashMd5Lib.saslDashDigestDashMd5Mod.DigestMd5MechanismNs.Credentials): java.lang.String = js.native
 }

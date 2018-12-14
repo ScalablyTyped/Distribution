@@ -11,8 +11,8 @@ class repository ()
   extends ckeditorLib.CKEDITORNs.event {
   val editor: ckeditorLib.CKEDITORNs.editor = js.native
   val focused: ckeditorLib.CKEDITORNs.pluginsNs.widget = js.native
-  val instances: ScalablyTyped.runtime.StringDictionary[ckeditorLib.CKEDITORNs.pluginsNs.widget] = js.native
-  val registered: ScalablyTyped.runtime.StringDictionary[definition] = js.native
+  val instances: org.scalablytyped.runtime.StringDictionary[ckeditorLib.CKEDITORNs.pluginsNs.widget] = js.native
+  val registered: org.scalablytyped.runtime.StringDictionary[definition] = js.native
   val selected: js.Array[ckeditorLib.CKEDITORNs.pluginsNs.widget] = js.native
   val widgetHoldingFocusedEditable: ckeditorLib.CKEDITORNs.pluginsNs.widget = js.native
   def add(name: java.lang.String, widgetDef: definition): scala.Unit = js.native
@@ -38,13 +38,13 @@ class repository ()
   def initOn(
     element: ckeditorLib.CKEDITORNs.domNs.element,
     widgetDef: definition,
-    startupData: ScalablyTyped.runtime.StringDictionary[js.Any]
+    startupData: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): ckeditorLib.CKEDITORNs.pluginsNs.widget = js.native
   def initOn(element: ckeditorLib.CKEDITORNs.domNs.element, widgetDef: java.lang.String): ckeditorLib.CKEDITORNs.pluginsNs.widget = js.native
   def initOn(
     element: ckeditorLib.CKEDITORNs.domNs.element,
     widgetDef: java.lang.String,
-    startupData: ScalablyTyped.runtime.StringDictionary[js.Any]
+    startupData: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): ckeditorLib.CKEDITORNs.pluginsNs.widget = js.native
   def initOnAll(): js.Array[ckeditorLib.CKEDITORNs.pluginsNs.widget] = js.native
   def initOnAll(container: ckeditorLib.CKEDITORNs.domNs.element): js.Array[ckeditorLib.CKEDITORNs.pluginsNs.widget] = js.native

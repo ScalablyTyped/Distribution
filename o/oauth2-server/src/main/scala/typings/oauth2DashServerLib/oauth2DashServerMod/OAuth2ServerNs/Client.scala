@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
      */
 
 trait Client
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var accessTokenLifetime: js.UndefOr[scala.Double] = js.undefined
   var grants: java.lang.String | js.Array[java.lang.String]
   var id: java.lang.String

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Scripts
-  extends /* scriptName */ ScalablyTyped.runtime.StringDictionary[Script]
+  extends /* scriptName */ org.scalablytyped.runtime.StringDictionary[Script]
 

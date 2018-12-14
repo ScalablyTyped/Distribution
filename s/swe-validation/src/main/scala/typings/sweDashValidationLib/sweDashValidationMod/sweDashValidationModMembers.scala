@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("swe-validation", JSImport.Namespace)
 @js.native
 object sweDashValidationModMembers
-  extends ScalablyTyped.runtime.TopLevel[sweDashValidationLib.Anon_SsnNumber]
+  extends org.scalablytyped.runtime.TopLevel[sweDashValidationLib.Anon_SsnNumber]
 

@@ -10,7 +10,7 @@ trait IgGridUpdatingColumnSetting
   extends /**
 	 * Option for IgGridUpdatingColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Identifies the grid column by key.
   	 *

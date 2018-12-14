@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait SliderState extends js.Object {
-  var visibles: ScalablyTyped.runtime.NumberDictionary[scala.Boolean]
+  var visibles: org.scalablytyped.runtime.NumberDictionary[scala.Boolean]
 }
 

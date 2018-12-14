@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ExtensionConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* wire */ Wire, Extension]
+  extends org.scalablytyped.runtime.Instantiable1[/* wire */ Wire, Extension]
 

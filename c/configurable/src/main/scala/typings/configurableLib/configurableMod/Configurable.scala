@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Configurable[T] extends js.Object {
-  var settings: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var settings: org.scalablytyped.runtime.StringDictionary[js.Any]
   def disable(name: java.lang.String): T with Configurable[T]
   def disabled(name: java.lang.String): scala.Boolean
   def enable(name: java.lang.String): T with Configurable[T]

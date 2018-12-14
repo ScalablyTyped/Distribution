@@ -24,7 +24,7 @@ class Font protected () extends js.Object {
   @JSName("substitution")
   var substitution_Original: Substitution = js.native
   var supported: scala.Boolean = js.native
-  var tables: ScalablyTyped.runtime.StringDictionary[Table] = js.native
+  var tables: org.scalablytyped.runtime.StringDictionary[Table] = js.native
   var unitsPerEm: scala.Double = js.native
   def charToGlyph(c: java.lang.String): Glyph = js.native
   def charToGlyphIndex(s: java.lang.String): scala.Double = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait AppOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * 生命周期函数--监听小程序隐藏
            * 当小程序从前台进入后台，会触发 onHide

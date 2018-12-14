@@ -13,13 +13,13 @@ trait EventEmitter
      * @param subscriber - Optional subscriber instance
      *   to use. If omitted, a new subscriber will be created for the emitter.
      */
-ScalablyTyped.runtime.Instantiable0[EventEmitter]
+org.scalablytyped.runtime.Instantiable0[EventEmitter]
      with /**
      *
      * @param subscriber - Optional subscriber instance
      *   to use. If omitted, a new subscriber will be created for the emitter.
      */
-ScalablyTyped.runtime.Instantiable1[/* subscriber */ EventSubscriptionVendor, EventEmitter] {
+org.scalablytyped.runtime.Instantiable1[/* subscriber */ EventSubscriptionVendor, EventEmitter] {
   /**
        * Emits an event of the given type with the given data. All handlers of that
        * particular type will be notified.

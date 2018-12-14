@@ -46,7 +46,7 @@ trait ChangesOptions extends js.Object {
                * where "bar" will be available in the filter function as params.query.foo.
                * To access the params, define your filter function like function (doc, params).
                */
-  var query_params: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var query_params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
                * (previously options.returnDocs): Is available for non-http databases and defaults to true.
                * Passing false prevents the changes feed from keeping all the documents in memory – in other

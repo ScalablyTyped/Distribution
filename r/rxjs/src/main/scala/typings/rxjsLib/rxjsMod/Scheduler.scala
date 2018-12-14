@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Scheduler protected ()
   extends rxjsLib.internalSchedulerMod.Scheduler {
-  def this(SchedulerAction: ScalablyTyped.runtime.Instantiable2[
+  def this(SchedulerAction: org.scalablytyped.runtime.Instantiable2[
       /* scheduler */ rxjsLib.internalSchedulerMod.Scheduler, 
       /* work */ js.ThisFunction1[
         /* this */ rxjsLib.internalTypesMod.SchedulerAction[js.Object], 
@@ -18,7 +18,7 @@ class Scheduler protected ()
       ], 
       rxjsLib.internalSchedulerActionMod.Action[js.Object]
     ]) = this()
-  def this(SchedulerAction: ScalablyTyped.runtime.Instantiable2[
+  def this(SchedulerAction: org.scalablytyped.runtime.Instantiable2[
       /* scheduler */ rxjsLib.internalSchedulerMod.Scheduler, 
       /* work */ js.ThisFunction1[
         /* this */ rxjsLib.internalTypesMod.SchedulerAction[js.Object], 

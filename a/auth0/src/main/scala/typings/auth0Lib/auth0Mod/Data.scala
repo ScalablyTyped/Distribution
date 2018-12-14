@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Data
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 

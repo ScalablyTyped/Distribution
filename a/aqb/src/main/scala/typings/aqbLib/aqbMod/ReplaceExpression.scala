@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReplaceExpression
   extends PartialStatement
-     with ScalablyTyped.runtime.Instantiable5[
+     with org.scalablytyped.runtime.Instantiable5[
       /* prev */ PartialStatement, 
       /* expr */ js.Any, 
       /* withExpr */ js.Any, 

@@ -11,7 +11,7 @@ trait ServerState extends js.Object {
        * An object containing the configuration of each cookie added via [server.state()](https://github.com/hapijs/hapi/blob/master/API.md#server.state()) where each key is the
        * cookie name and value is the configuration object.
        */
-  val cookies: ScalablyTyped.runtime.StringDictionary[ServerStateCookieOptions] = js.native
+  val cookies: org.scalablytyped.runtime.StringDictionary[ServerStateCookieOptions] = js.native
   /**
        * An array containing the names of all configued cookies.
        */

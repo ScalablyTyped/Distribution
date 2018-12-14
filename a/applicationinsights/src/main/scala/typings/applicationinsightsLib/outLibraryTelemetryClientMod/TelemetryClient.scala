@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait TelemetryClient extends js.Object {
   var _telemetryProcessors: js.Any = js.native
   var channel: applicationinsightsLib.outLibraryChannelMod.namespaced = js.native
-  var commonProperties: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var commonProperties: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var config: applicationinsightsLib.outLibraryConfigMod.namespaced = js.native
   var context: applicationinsightsLib.outLibraryContextMod.namespaced = js.native
   /**
@@ -25,7 +25,7 @@ trait TelemetryClient extends js.Object {
   def addTelemetryProcessor(
     telemetryProcessor: js.Function2[
       /* envelope */ applicationinsightsLib.outDeclarationsContractsMod.Envelope, 
-      /* contextObjects */ js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]], 
+      /* contextObjects */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ]
   ): scala.Unit = js.native

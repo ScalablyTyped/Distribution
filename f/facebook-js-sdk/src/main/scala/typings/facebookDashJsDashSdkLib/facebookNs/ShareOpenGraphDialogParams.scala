@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ShareOpenGraphDialogParams extends DialogParams {
-  var action_properties: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var action_properties: org.scalablytyped.runtime.StringDictionary[js.Any]
   var action_type: java.lang.String
   var hashtag: js.UndefOr[java.lang.String] = js.undefined
   var href: java.lang.String

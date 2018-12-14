@@ -10,7 +10,7 @@ trait IgTooltip
   extends /**
 	 * Option for igTooltip
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var arrowLocation: js.UndefOr[java.lang.String] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
 }

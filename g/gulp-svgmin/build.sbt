@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "gulp-svgmin"
-version := "1.2-dt-20180910Z-208a4b"
+version := "1.2-dt-20180910Z-6af759"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "svgo" % "1.0-dt-20180910Z-5efc60",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20180910Z-9f101b")
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
+  "org.scalablytyped" %%% "svgo" % "1.0-dt-20180910Z-cb4ac9",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20180910Z-1dc2db")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

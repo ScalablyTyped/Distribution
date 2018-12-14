@@ -135,7 +135,7 @@ object googleNs extends js.Object {
                    * @param object Plain object
                    * @returns Timestamp
                    */
-      def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
+      def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp = js.native
       /**
                    * Creates a plain object from a Timestamp message. Also converts values to other types if specified.
                    * @param message Timestamp
@@ -144,7 +144,7 @@ object googleNs extends js.Object {
                    */
       def toObject(
         message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp
-      ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
       /**
                    * Creates a plain object from a Timestamp message. Also converts values to other types if specified.
                    * @param message Timestamp
@@ -154,13 +154,13 @@ object googleNs extends js.Object {
       def toObject(
         message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.Timestamp,
         options: protobufjsLib.protobufjsMod.IConversionOptions
-      ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+      ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
       /**
                    * Verifies a Timestamp message.
                    * @param message Plain object to verify
                    * @returns `null` if valid, otherwise the reason why it is not
                    */
-      def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+      def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
     }
     
   }

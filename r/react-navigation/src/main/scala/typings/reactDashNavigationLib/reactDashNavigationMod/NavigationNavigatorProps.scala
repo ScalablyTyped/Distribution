@@ -10,6 +10,6 @@ trait NavigationNavigatorProps[O, S] extends js.Object {
   var detached: js.UndefOr[scala.Boolean] = js.undefined
   var navigation: js.UndefOr[NavigationProp[S]] = js.undefined
   var navigationOptions: js.UndefOr[O] = js.undefined
-  var screenProps: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var screenProps: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

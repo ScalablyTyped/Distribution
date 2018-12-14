@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FindFunctions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[FindFunction]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[FindFunction]
 

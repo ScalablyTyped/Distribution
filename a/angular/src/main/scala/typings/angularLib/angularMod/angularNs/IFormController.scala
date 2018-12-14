@@ -14,18 +14,18 @@ trait IFormController
   extends /**
          * Indexer which should return ng.INgModelController for most properties but cannot because of "All named properties must be assignable to string indexer type" constraint - see https://github.com/Microsoft/TypeScript/issues/272
          */
-/* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   @JSName("$dirty")
   var $dirty: scala.Boolean = js.native
   @JSName("$error")
-  var $error: ScalablyTyped.runtime.StringDictionary[js.Array[INgModelController | IFormController]] = js.native
+  var $error: org.scalablytyped.runtime.StringDictionary[js.Array[INgModelController | IFormController]] = js.native
   @JSName("$invalid")
   var $invalid: scala.Boolean = js.native
   @JSName("$name")
   var $name: js.UndefOr[java.lang.String] = js.native
   @JSName("$pending")
   var $pending: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Array[INgModelController | IFormController]]
+    org.scalablytyped.runtime.StringDictionary[js.Array[INgModelController | IFormController]]
   ] = js.native
   @JSName("$pristine")
   var $pristine: scala.Boolean = js.native

@@ -14,5 +14,5 @@ trait SVGPathSegMovetoRel extends SVGPathSeg {
 @JSGlobal("SVGPathSegMovetoRel")
 @js.native
 object SVGPathSegMovetoRel
-  extends ScalablyTyped.runtime.Instantiable0[SVGPathSegMovetoRel]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPathSegMovetoRel]
 

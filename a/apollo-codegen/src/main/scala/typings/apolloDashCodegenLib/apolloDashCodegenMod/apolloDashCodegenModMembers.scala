@@ -11,7 +11,7 @@ object apolloDashCodegenModMembers extends js.Object {
   def downloadSchema(
     url: java.lang.String,
     outputPath: java.lang.String,
-    additionalHeaders: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    additionalHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     insecure: scala.Boolean,
     method: java.lang.String
   ): js.Promise[scala.Unit] = js.native

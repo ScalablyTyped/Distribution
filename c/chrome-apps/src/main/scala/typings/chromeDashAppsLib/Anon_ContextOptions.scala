@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ContextOptions
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.AudioContext]
-     with ScalablyTyped.runtime.Instantiable1[/* contextOptions */ stdLib.AudioContextOptions, stdLib.AudioContext]
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.AudioContext]
+     with org.scalablytyped.runtime.Instantiable1[/* contextOptions */ stdLib.AudioContextOptions, stdLib.AudioContext]
 

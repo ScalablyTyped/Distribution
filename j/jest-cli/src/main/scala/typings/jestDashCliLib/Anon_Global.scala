@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Global extends js.Object {
-  var global: ScalablyTyped.runtime.StringDictionary[scala.Double]
+  var global: org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 

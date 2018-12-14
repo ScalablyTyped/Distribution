@@ -10,7 +10,7 @@ trait Anon_Fetcher extends js.Object {
   var createResolver: js.UndefOr[
     js.Function1[
       /* fetcher */ graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher, 
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ] = js.undefined
   var fetcher: js.UndefOr[graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher] = js.undefined

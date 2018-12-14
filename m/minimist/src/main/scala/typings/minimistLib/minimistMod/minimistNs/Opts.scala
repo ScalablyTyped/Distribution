@@ -16,7 +16,7 @@ trait Opts extends js.Object {
            * An object mapping string names to strings or arrays of string argument names to use as aliases
            */
   var alias: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ] = js.undefined
   /**
            * A boolean, string or array of strings to always treat as booleans. If true will treat
@@ -26,7 +26,7 @@ trait Opts extends js.Object {
   /**
            * An object mapping string argument names to default values
            */
-  var default: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var default: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * When true, populate argv._ with everything after the first non-option
            */

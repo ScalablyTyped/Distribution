@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("screenfull", JSImport.Namespace)
 @js.native
 object screenfullModMembers
-  extends ScalablyTyped.runtime.TopLevel[IScreenfull | screenfullLib.screenfullLibNumbers.`false`]
+  extends org.scalablytyped.runtime.TopLevel[IScreenfull | screenfullLib.screenfullLibNumbers.`false`]
 

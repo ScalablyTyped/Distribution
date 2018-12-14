@@ -17,5 +17,5 @@ trait ESP8266
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[ESP8266]
+org.scalablytyped.runtime.Instantiable0[ESP8266]
 

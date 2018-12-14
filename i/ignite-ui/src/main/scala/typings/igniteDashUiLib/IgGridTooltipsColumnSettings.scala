@@ -10,7 +10,7 @@ trait IgGridTooltipsColumnSettings
   extends /**
 	 * Option for IgGridTooltipsColumnSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Enables / disables tooltips on the specified column. By default tooltips are displayed for each column. Note: This option is mandatory.
   	 *

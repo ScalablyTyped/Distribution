@@ -65,7 +65,7 @@ object sharepointLibMembers extends js.Object {
   def $isNull(value: js.Any): scala.Boolean = js.native
   /** Registers in system resources defined by the dictionary object (alias for Srch.U.registerResourceDictionary) */
   @JSName("$registerResourceDictionary")
-  def $registerResourceDictionary(locale: java.lang.String, dict: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def $registerResourceDictionary(locale: java.lang.String, dict: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
   /** Retrieves localized string with the specified id */
   @JSName("$resource")
   def $resource(id: java.lang.String): java.lang.String = js.native

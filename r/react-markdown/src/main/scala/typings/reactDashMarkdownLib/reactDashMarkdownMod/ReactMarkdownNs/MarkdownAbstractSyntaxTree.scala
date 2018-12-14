@@ -11,7 +11,7 @@ trait MarkdownAbstractSyntaxTree extends js.Object {
   var alt: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var checked: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
   var children: js.UndefOr[js.Array[MarkdownAbstractSyntaxTree]] = js.undefined
-  var data: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var depth: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var identifier: js.UndefOr[java.lang.String] = js.undefined

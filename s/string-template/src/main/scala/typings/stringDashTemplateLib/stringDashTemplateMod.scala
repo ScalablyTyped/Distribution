@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 @JSImport("string-template", JSImport.Namespace)
 @js.native
 object stringDashTemplateMod
-  extends ScalablyTyped.runtime.TopLevel[stringDashTemplateLib.StringTemplateNs.Format]
+  extends org.scalablytyped.runtime.TopLevel[stringDashTemplateLib.StringTemplateNs.Format]
 

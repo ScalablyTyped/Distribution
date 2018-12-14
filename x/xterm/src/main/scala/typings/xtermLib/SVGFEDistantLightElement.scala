@@ -14,5 +14,5 @@ trait SVGFEDistantLightElement extends SVGElement {
 @JSGlobal("SVGFEDistantLightElement")
 @js.native
 object SVGFEDistantLightElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEDistantLightElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEDistantLightElement]
 

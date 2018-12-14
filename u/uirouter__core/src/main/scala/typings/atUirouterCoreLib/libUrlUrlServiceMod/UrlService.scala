@@ -189,7 +189,7 @@ class UrlService protected ()
        * @return the search (query) portion of the url, as an object
        */
   @JSName("search")
-  def search_MUrlService(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def search_MUrlService(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Activates the best rule for the current URL
        *

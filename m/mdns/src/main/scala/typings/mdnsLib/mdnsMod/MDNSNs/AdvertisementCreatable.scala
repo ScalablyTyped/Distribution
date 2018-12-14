@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AdvertisementCreatable
-  extends ScalablyTyped.runtime.Instantiable2[/* serviceType */ ServiceType, /* port */ scala.Double, Advertisement]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable2[/* serviceType */ ServiceType, /* port */ scala.Double, Advertisement]
+     with org.scalablytyped.runtime.Instantiable3[
       /* serviceType */ ServiceType, 
       /* port */ scala.Double, 
       /* options */ AdvertisementOptions, 
       Advertisement
     ]
-     with ScalablyTyped.runtime.Instantiable4[
+     with org.scalablytyped.runtime.Instantiable4[
       /* serviceType */ ServiceType, 
       /* port */ scala.Double, 
       /* options */ AdvertisementOptions, 

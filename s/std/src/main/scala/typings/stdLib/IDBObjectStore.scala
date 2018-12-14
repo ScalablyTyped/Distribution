@@ -273,5 +273,5 @@ trait IDBObjectStore extends js.Object {
 @JSGlobal("IDBObjectStore")
 @js.native
 object IDBObjectStore
-  extends ScalablyTyped.runtime.Instantiable0[IDBObjectStore]
+  extends org.scalablytyped.runtime.Instantiable0[IDBObjectStore]
 

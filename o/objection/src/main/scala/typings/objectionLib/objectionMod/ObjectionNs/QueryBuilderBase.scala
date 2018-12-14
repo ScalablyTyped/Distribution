@@ -246,7 +246,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def mergeJoinEager(relationExpression: RelationExpression, filters: FilterExpression[QM]): this.type = js.native
   def mergeNaiveEager(relationExpression: RelationExpression): this.type = js.native
   def mergeNaiveEager(relationExpression: RelationExpression, filters: FilterExpression[QM]): this.type = js.native
-  def modelClass(): ScalablyTyped.runtime.Instantiable0[Model] = js.native
+  def modelClass(): org.scalablytyped.runtime.Instantiable0[Model] = js.native
   def modify(func: js.Function1[/* builder */ this.type, scala.Unit]): this.type = js.native
   def modify(namedFilter: java.lang.String): this.type = js.native
   def modifyEager[QM2 /* <: Model */](
@@ -256,7 +256,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def naiveEager(relationExpression: RelationExpression): this.type = js.native
   def naiveEager(relationExpression: RelationExpression, filters: FilterExpression[QM]): this.type = js.native
   def nodeify(callback: NodeStyleCallback): js.Promise[QM] = js.native
-  def omit(modelClass: ScalablyTyped.runtime.Instantiable0[Model], properties: js.Array[java.lang.String]): this.type = js.native
+  def omit(modelClass: org.scalablytyped.runtime.Instantiable0[Model], properties: js.Array[java.lang.String]): this.type = js.native
   def omit(properties: js.Array[java.lang.String]): this.type = js.native
   def onBuild(fn: js.Function1[/* builder */ this.type, scala.Unit]): this.type = js.native
   def onBuildKnex(
@@ -288,7 +288,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def patch(modelOrObject: PartialUpdate[QM]): QueryBuilderYieldingCount[QM, RM] = js.native
   def patchAndFetch(modelOrObject: PartialUpdate[QM]): QueryBuilder[QM, QM, QM] = js.native
   def patchAndFetchById(idOrIds: IdOrIds, modelOrObject: PartialUpdate[QM]): QueryBuilder[QM, QM, QM] = js.native
-  def pick(modelClass: ScalablyTyped.runtime.Instantiable0[Model], properties: js.Array[java.lang.String]): this.type = js.native
+  def pick(modelClass: org.scalablytyped.runtime.Instantiable0[Model], properties: js.Array[java.lang.String]): this.type = js.native
   def pick(properties: js.Array[java.lang.String]): this.type = js.native
   def range(start: scala.Double, end: scala.Double): QueryBuilder[QM, Page[QM], Page[QM]] = js.native
   def reflect(): js.Promise[QM] = js.native
@@ -313,7 +313,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def timeout(ms: scala.Double): this.type = js.native
   def timeout(ms: scala.Double, options: TimeoutOptions): this.type = js.native
   def toSql(): java.lang.String = js.native
-  def traverse(modelClass: ScalablyTyped.runtime.Instantiable0[Model], traverser: TraverserFunction): this.type = js.native
+  def traverse(modelClass: org.scalablytyped.runtime.Instantiable0[Model], traverser: TraverserFunction): this.type = js.native
   def unrelate(): this.type = js.native
   /**
        * @return a Promise of the number of updated rows

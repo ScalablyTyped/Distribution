@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TernaryOperation
   extends Operation
-     with ScalablyTyped.runtime.Instantiable5[
+     with org.scalablytyped.runtime.Instantiable5[
       /* operator1 */ java.lang.String, 
       /* operator2 */ java.lang.String, 
       /* value1 */ Expression, 

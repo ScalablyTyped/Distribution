@@ -29,8 +29,8 @@ class AddressEntry protected () extends js.Object {
   def GetContact(): ContactItem = js.native
   def GetExchangeDistributionList(): ExchangeDistributionList = js.native
   def GetExchangeUser(): ExchangeUser = js.native
-  def GetFreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
-  def GetFreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
+  def GetFreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
+  def GetFreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
   def Update(): scala.Unit = js.native
   def Update(MakePermanent: js.Any): scala.Unit = js.native
   def Update(MakePermanent: js.Any, Refresh: js.Any): scala.Unit = js.native

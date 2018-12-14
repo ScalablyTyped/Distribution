@@ -10,7 +10,7 @@ trait WorkspaceEdit extends js.Object {
   /**
        * Holds changes to existing resources.
        */
-  var changes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Array[TextEdit]]] = js.undefined
+  var changes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[TextEdit]]] = js.undefined
   /**
        * Depending on the client capability `workspace.workspaceEdit.resourceOperations` document changes
        * are either an array of `TextDocumentEdit`s to express changes to n different text documents

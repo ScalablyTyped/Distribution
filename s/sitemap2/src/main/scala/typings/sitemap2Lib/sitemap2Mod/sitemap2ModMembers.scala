@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sitemap2", JSImport.Namespace)
 @js.native
 object sitemap2ModMembers
-  extends ScalablyTyped.runtime.TopLevel[Sitemap]
+  extends org.scalablytyped.runtime.TopLevel[Sitemap]
 

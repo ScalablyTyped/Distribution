@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait SFCCustomBlock extends js.Object {
-  var attrs: ScalablyTyped.runtime.StringDictionary[
+  var attrs: org.scalablytyped.runtime.StringDictionary[
     java.lang.String | atVueComponentDashCompilerDashUtilsLib.atVueComponentDashCompilerDashUtilsLibNumbers.`true`
   ]
   var content: java.lang.String

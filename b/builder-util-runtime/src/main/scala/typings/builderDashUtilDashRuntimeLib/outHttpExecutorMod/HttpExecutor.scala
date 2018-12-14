@@ -50,7 +50,7 @@ abstract class HttpExecutor[REQUEST] () extends js.Object {
   def request(
     options: nodeLib.httpMod.RequestOptions,
     cancellationToken: builderDashUtilDashRuntimeLib.outCancellationTokenMod.CancellationToken,
-    data: ScalablyTyped.runtime.StringDictionary[js.Any]
+    data: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Promise[java.lang.String | scala.Null] = js.native
 }
 

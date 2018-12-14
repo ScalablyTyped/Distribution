@@ -11,7 +11,7 @@ class namespaced () extends Web3 {
   def this(provider: java.lang.String) = this()
   def this(provider: web3Lib.providersMod.Provider) = this()
   /* CompleteClass */
-  override var BatchRequest: ScalablyTyped.runtime.Instantiable0[web3Lib.ethTypesMod.BatchRequest] = js.native
+  override var BatchRequest: org.scalablytyped.runtime.Instantiable0[web3Lib.ethTypesMod.BatchRequest] = js.native
    // TODO
   /* CompleteClass */
   override var bzz: web3Lib.typesMod.Bzz = js.native

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 	 */
 
 trait NotificationEventAdditionalData
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   		 * Will be true if the application is started by clicking on the push notification, false if the app is already started. (Android/iOS only)
   		 */

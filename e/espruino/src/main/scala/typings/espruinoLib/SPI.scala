@@ -17,7 +17,7 @@ trait SPI
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[SPI] {
+org.scalablytyped.runtime.Instantiable0[SPI] {
   /**
        * <p>Try and find an SPI hardware device that will work on this pin (eg. <code>SPI1</code>)</p>
        * <p>May return undefined if no device can be found.</p>

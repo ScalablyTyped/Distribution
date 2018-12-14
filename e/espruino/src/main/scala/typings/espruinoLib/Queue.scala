@@ -17,7 +17,7 @@ trait Queue
      * @param queueName 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable1[/* queueName */ js.Any, js.Any] {
+org.scalablytyped.runtime.Instantiable1[/* queueName */ js.Any, js.Any] {
   /**
        * <p>logs list of queues</p>
        * 

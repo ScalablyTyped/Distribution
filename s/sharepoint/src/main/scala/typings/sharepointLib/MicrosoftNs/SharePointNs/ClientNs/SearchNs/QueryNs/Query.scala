@@ -40,7 +40,7 @@ class Query ()
   def get_processPersonalFavorites(): scala.Boolean = js.native
   def get_queryTag(): java.lang.String = js.native
   def get_queryTemplate(): java.lang.String = js.native
-  def get_queryTemplateParameters(): ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  def get_queryTemplateParameters(): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   def get_queryText(): java.lang.String = js.native
   def get_rankingModelId(): java.lang.String = js.native
   def get_resultsUrl(): java.lang.String = js.native

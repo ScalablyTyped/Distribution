@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IStructureJSON
-  extends /* propertyName */ ScalablyTyped.runtime.StringDictionary[
+  extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[
       PrimitiveValue | js.Array[PrimitiveValue] | IStructureJSON | js.Array[IStructureJSON] | scala.Null
     ] {
   @JSName("$ID")

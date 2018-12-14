@@ -19,5 +19,5 @@ trait VRPose extends js.Object {
 @JSGlobal("VRPose")
 @js.native
 object VRPose
-  extends ScalablyTyped.runtime.Instantiable0[VRPose]
+  extends org.scalablytyped.runtime.Instantiable0[VRPose]
 

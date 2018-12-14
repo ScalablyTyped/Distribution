@@ -14,7 +14,7 @@ trait TeamSetting extends TeamSettingsDataContractBase {
   /**
        * Information about categories that are visible on the backlog.
        */
-  var backlogVisibilities: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  var backlogVisibilities: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   /**
        * BugsBehavior (Off, AsTasks, AsRequirements, ...)
        */

@@ -10,5 +10,5 @@ trait ProjectsStatic
   extends /**
              * @param dispatcher
              */
-ScalablyTyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Projects]
+org.scalablytyped.runtime.Instantiable1[/* dispatcher */ asanaLib.asanaMod.asanaNs.Dispatcher, Projects]
 

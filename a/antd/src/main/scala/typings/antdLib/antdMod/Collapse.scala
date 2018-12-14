@@ -13,7 +13,7 @@ class Collapse ()
 @JSImport("antd", "Collapse")
 @js.native
 object Collapse extends js.Object {
-  var Panel: ScalablyTyped.runtime.Instantiable0[antdLib.libCollapseCollapsePanelMod.default] = js.native
+  var Panel: org.scalablytyped.runtime.Instantiable0[antdLib.libCollapseCollapsePanelMod.default] = js.native
   var defaultProps: antdLib.Anon_PrefixClsOpenAnimation = js.native
 }
 

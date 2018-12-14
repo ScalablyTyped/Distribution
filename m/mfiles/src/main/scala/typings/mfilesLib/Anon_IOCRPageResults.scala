@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IOCRPageResults
-  extends ScalablyTyped.runtime.Instantiable0[IOCRPageResults]
+  extends org.scalablytyped.runtime.Instantiable0[IOCRPageResults]
 

@@ -16,5 +16,5 @@ trait VRFieldOfView extends js.Object {
 @JSGlobal("VRFieldOfView")
 @js.native
 object VRFieldOfView
-  extends ScalablyTyped.runtime.Instantiable0[VRFieldOfView]
+  extends org.scalablytyped.runtime.Instantiable0[VRFieldOfView]
 

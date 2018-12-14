@@ -20,5 +20,5 @@ trait RTCRtpTransceiver extends js.Object {
 @JSGlobal("RTCRtpTransceiver")
 @js.native
 object RTCRtpTransceiver
-  extends ScalablyTyped.runtime.Instantiable0[RTCRtpTransceiver]
+  extends org.scalablytyped.runtime.Instantiable0[RTCRtpTransceiver]
 

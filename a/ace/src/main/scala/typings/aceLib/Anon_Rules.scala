@@ -12,5 +12,5 @@ trait Anon_Rules
          * @param rules The highlighting rules
          * @param flag Any additional regular expression flags to pass (like "i" for case insensitive)
         **/
-ScalablyTyped.runtime.Instantiable2[/* rules */ js.Any, /* flag */ java.lang.String, aceLib.AceAjaxNs.Tokenizer]
+org.scalablytyped.runtime.Instantiable2[/* rules */ js.Any, /* flag */ java.lang.String, aceLib.AceAjaxNs.Tokenizer]
 

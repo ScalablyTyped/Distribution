@@ -10,6 +10,6 @@ trait NgModuleDefinition extends Definition[NgModuleDefinitionFactory] {
   var isRoot: scala.Boolean
   var modules: js.Array[_]
   var providers: js.Array[NgModuleProviderDef]
-  var providersByKey: ScalablyTyped.runtime.StringDictionary[NgModuleProviderDef]
+  var providersByKey: org.scalablytyped.runtime.StringDictionary[NgModuleProviderDef]
 }
 

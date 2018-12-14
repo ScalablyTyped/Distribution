@@ -52,7 +52,9 @@ trait ModeConfig extends js.Object {
            * which all reside in the directory tmpl/css. Example: {css: true, scss: {dest: '_sprite.scss'}}
            * @default {}
            */
-  var render: js.UndefOr[ScalablyTyped.runtime.StringDictionary[RenderingConfiguration | scala.Boolean]] = js.undefined
+  var render: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[RenderingConfiguration | scala.Boolean]
+  ] = js.undefined
   /**
            * SVG sprite path and file name, relative to the mode.<mode>.dest directory.
            * You may omit the file extension, in which case it will be set to ".svg" automatically.

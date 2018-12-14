@@ -24,10 +24,10 @@ object libApiObjectDashApiMod extends js.Object {
   def remove[T](obj: mobxLib.libTypesObservablearrayMod.IObservableArray[T], index: scala.Double): js.Any = js.native
   def remove[K, V](obj: mobxLib.libInternalMod.ObservableMap[K, V], key: K): js.Any = js.native
   def set[T /* <: js.Object */](obj: T, key: java.lang.String, value: js.Any): js.Any = js.native
-  def set[T /* <: js.Object */](obj: T, values: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def set[T /* <: js.Object */](obj: T, values: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   def set[V](
     obj: mobxLib.libInternalMod.ObservableMap[java.lang.String, V],
-    values: ScalablyTyped.runtime.StringDictionary[V]
+    values: org.scalablytyped.runtime.StringDictionary[V]
   ): js.Any = js.native
   def set[T](obj: mobxLib.libTypesObservablearrayMod.IObservableArray[T], index: scala.Double, value: T): js.Any = js.native
   def set[K, V](obj: mobxLib.libInternalMod.ObservableMap[K, V], key: K, value: V): js.Any = js.native

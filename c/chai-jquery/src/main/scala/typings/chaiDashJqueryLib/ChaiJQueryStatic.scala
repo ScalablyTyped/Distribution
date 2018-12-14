@@ -16,7 +16,7 @@ trait ChaiJQueryStatic extends js.Object {
   /**
        * Hook directly into jQuery to override how particular CSS properties are retrieved or set, normalize CSS property naming, or create custom properties.
        */
-  var cssHooks: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var cssHooks: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var cssNumber: js.Any = js.native
   var expr: js.Any = js.native
   var fn: js.Any = js.native

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ExpressionAttributeNameMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeName]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeName]
 

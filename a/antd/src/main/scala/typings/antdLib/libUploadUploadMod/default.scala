@@ -14,7 +14,7 @@ class default protected () extends Upload {
 @JSImport("antd/lib/upload/Upload", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Dragger: ScalablyTyped.runtime.Instantiable0[antdLib.libUploadDraggerMod.default] = js.native
+  var Dragger: org.scalablytyped.runtime.Instantiable0[antdLib.libUploadDraggerMod.default] = js.native
   var defaultProps: antdLib.Anon_BeforeUpload = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libUploadInterfaceMod.UploadProps): antdLib.Anon_FileList | scala.Null = js.native
 }

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait prng
-  extends ScalablyTyped.runtime.Instantiable0[prng]
-     with ScalablyTyped.runtime.Instantiable1[/* seed */ java.lang.String, prng]
-     with ScalablyTyped.runtime.Instantiable2[/* seed */ java.lang.String, /* options */ seedRandomOptions, prng]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable0[prng]
+     with org.scalablytyped.runtime.Instantiable1[/* seed */ java.lang.String, prng]
+     with org.scalablytyped.runtime.Instantiable2[/* seed */ java.lang.String, /* options */ seedRandomOptions, prng]
+     with org.scalablytyped.runtime.Instantiable3[
       /* seed */ java.lang.String, 
       /* options */ seedRandomOptions, 
       /* callback */ js.Any, 

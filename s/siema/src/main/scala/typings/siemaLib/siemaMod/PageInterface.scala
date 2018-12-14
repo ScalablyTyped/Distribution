@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PageInterface
-  extends /* key */ ScalablyTyped.runtime.NumberDictionary[scala.Double]
+  extends /* key */ org.scalablytyped.runtime.NumberDictionary[scala.Double]
 

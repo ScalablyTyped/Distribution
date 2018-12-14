@@ -25,11 +25,11 @@ class Recipient protected () extends js.Object {
   var Sendable: scala.Boolean = js.native
   val Session: NameSpace = js.native
   var TrackingStatus: OlTrackingStatus = js.native
-  var TrackingStatusTime: activexDashInteropLib.VarDate = js.native
+  var TrackingStatusTime: stdLib.VarDate = js.native
   var Type: scala.Double = js.native
   def Delete(): scala.Unit = js.native
-  def FreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
-  def FreeBusy(Start: activexDashInteropLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
+  def FreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double): java.lang.String = js.native
+  def FreeBusy(Start: stdLib.VarDate, MinPerChar: scala.Double, CompleteFormat: js.Any): java.lang.String = js.native
   def Resolve(): scala.Boolean = js.native
 }
 

@@ -76,7 +76,7 @@ object Tools extends js.Object {
            * Use this object to register external classes like custom textures or material
            * to allow the laoders to instantiate them
            */
-  var RegisteredExternalClasses: ScalablyTyped.runtime.StringDictionary[js.Object] = js.native
+  var RegisteredExternalClasses: org.scalablytyped.runtime.StringDictionary[js.Object] = js.native
   /**
            * Gets or sets a global variable indicating if fallback texture must be used when a texture cannot be loaded
            * @ignorenaming

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("jszip", JSImport.Namespace)
 @js.native
 object jszipModMembers
-  extends ScalablyTyped.runtime.TopLevel[JSZip]
+  extends org.scalablytyped.runtime.TopLevel[JSZip]
 

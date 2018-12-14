@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("component-emitter", JSImport.Namespace)
 @js.native
 object componentDashEmitterModMembers
-  extends ScalablyTyped.runtime.TopLevel[componentDashEmitterLib.Anon_Obj]
+  extends org.scalablytyped.runtime.TopLevel[componentDashEmitterLib.Anon_Obj]
 

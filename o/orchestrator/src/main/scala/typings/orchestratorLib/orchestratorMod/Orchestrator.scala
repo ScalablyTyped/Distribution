@@ -17,7 +17,7 @@ trait Orchestrator
   var sequence_Original: orchestratorLib.orchestratorMod.OrchestratorNs.Sequencify = js.native
   @JSName("start")
   var start_Original: orchestratorLib.orchestratorMod.OrchestratorNs.StartMethod = js.native
-  var tasks: ScalablyTyped.runtime.StringDictionary[orchestratorLib.orchestratorMod.OrchestratorNs.Task] = js.native
+  var tasks: org.scalablytyped.runtime.StringDictionary[orchestratorLib.orchestratorMod.OrchestratorNs.Task] = js.native
   def _emitTaskDone(task: orchestratorLib.orchestratorMod.OrchestratorNs.Task, message: java.lang.String): scala.Unit = js.native
   def _emitTaskDone(task: orchestratorLib.orchestratorMod.OrchestratorNs.Task, message: java.lang.String, err: js.Any): scala.Unit = js.native
   def _readyToRunTask(task: orchestratorLib.orchestratorMod.OrchestratorNs.Task): scala.Boolean = js.native

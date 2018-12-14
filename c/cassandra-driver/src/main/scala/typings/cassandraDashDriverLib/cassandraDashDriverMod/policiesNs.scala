@@ -27,7 +27,7 @@ object policiesNs extends js.Object {
     
     @js.native
     trait EC2MultiRegionTranslatorStatic
-      extends ScalablyTyped.runtime.Instantiable0[EC2MultiRegionTranslator]
+      extends org.scalablytyped.runtime.Instantiable0[EC2MultiRegionTranslator]
     
     var EC2MultiRegionTranslator: EC2MultiRegionTranslatorStatic = js.native
   }
@@ -43,9 +43,9 @@ object policiesNs extends js.Object {
     
     @js.native
     trait DCAwareRoundRobinPolicyStatic
-      extends ScalablyTyped.runtime.Instantiable0[DCAwareRoundRobinPolicy]
-         with ScalablyTyped.runtime.Instantiable1[/* localDc */ java.lang.String, DCAwareRoundRobinPolicy]
-         with ScalablyTyped.runtime.Instantiable2[
+      extends org.scalablytyped.runtime.Instantiable0[DCAwareRoundRobinPolicy]
+         with org.scalablytyped.runtime.Instantiable1[/* localDc */ java.lang.String, DCAwareRoundRobinPolicy]
+         with org.scalablytyped.runtime.Instantiable2[
               /* localDc */ java.lang.String, 
               /* usedHostsPerRemoteDc */ scala.Double, 
               DCAwareRoundRobinPolicy
@@ -68,15 +68,15 @@ object policiesNs extends js.Object {
     
     @js.native
     trait RoundRobinPolicyStatic
-      extends ScalablyTyped.runtime.Instantiable0[RoundRobinPolicy]
+      extends org.scalablytyped.runtime.Instantiable0[RoundRobinPolicy]
     
     @js.native
     trait TokenAwarePolicyStatic
-      extends ScalablyTyped.runtime.Instantiable1[/* childPolicy */ LoadBalancingPolicy, TokenAwarePolicy]
+      extends org.scalablytyped.runtime.Instantiable1[/* childPolicy */ LoadBalancingPolicy, TokenAwarePolicy]
     
     @js.native
     trait WhiteListPolicyStatic
-      extends ScalablyTyped.runtime.Instantiable2[
+      extends org.scalablytyped.runtime.Instantiable2[
               /* childPolicy */ LoadBalancingPolicy, 
               /* whiteList */ js.Array[java.lang.String], 
               WhiteListPolicy
@@ -96,11 +96,11 @@ object policiesNs extends js.Object {
   object reconnectionNs extends js.Object {
     @js.native
     trait ConstantReconnectionPolicyStatic
-      extends ScalablyTyped.runtime.Instantiable1[/* delay */ scala.Double, ConstantReconnectionPolicy]
+      extends org.scalablytyped.runtime.Instantiable1[/* delay */ scala.Double, ConstantReconnectionPolicy]
     
     @js.native
     trait ExponentialReconnectionPolicyStatic
-      extends ScalablyTyped.runtime.Instantiable3[
+      extends org.scalablytyped.runtime.Instantiable3[
               /* baseDelay */ scala.Double, 
               /* maxDelay */ scala.Double, 
               /* startWithNoDelay */ scala.Boolean, 
@@ -161,7 +161,7 @@ object policiesNs extends js.Object {
     
     @js.native
     trait RetryPolicyStatic
-      extends ScalablyTyped.runtime.Instantiable0[RetryPolicy] {
+      extends org.scalablytyped.runtime.Instantiable0[RetryPolicy] {
       var retryDecision: cassandraDashDriverLib.Anon_Rethrow = js.native
     }
     
@@ -199,7 +199,7 @@ object policiesNs extends js.Object {
   object speculativeExecutionNs extends js.Object {
     @js.native
     trait ConstantSpeculativeExecutionPolicyStatic
-      extends ScalablyTyped.runtime.Instantiable2[
+      extends org.scalablytyped.runtime.Instantiable2[
               /* delay */ scala.Double, 
               /* maxSpeculativeExecutions */ scala.Double, 
               ConstantSpeculativeExecutionPolicy
@@ -207,7 +207,7 @@ object policiesNs extends js.Object {
     
     @js.native
     trait NoSpeculativeExecutionPolicyStatic
-      extends ScalablyTyped.runtime.Instantiable0[NoSpeculativeExecutionPolicy]
+      extends org.scalablytyped.runtime.Instantiable0[NoSpeculativeExecutionPolicy]
     
     @js.native
     trait SpeculativeExecutionPolicy extends js.Object {
@@ -231,9 +231,9 @@ object policiesNs extends js.Object {
     
     @js.native
     trait MonotonicTimestampGeneratorStatic
-      extends ScalablyTyped.runtime.Instantiable0[MonotonicTimestampGeneratorStatic]
-         with ScalablyTyped.runtime.Instantiable1[/* warningThreshold */ scala.Double, MonotonicTimestampGeneratorStatic]
-         with ScalablyTyped.runtime.Instantiable2[
+      extends org.scalablytyped.runtime.Instantiable0[MonotonicTimestampGeneratorStatic]
+         with org.scalablytyped.runtime.Instantiable1[/* warningThreshold */ scala.Double, MonotonicTimestampGeneratorStatic]
+         with org.scalablytyped.runtime.Instantiable2[
               /* warningThreshold */ scala.Double, 
               /* minLogInterval */ scala.Double, 
               MonotonicTimestampGeneratorStatic

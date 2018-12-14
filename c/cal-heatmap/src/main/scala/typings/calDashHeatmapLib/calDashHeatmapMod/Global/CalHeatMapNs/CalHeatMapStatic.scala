@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CalHeatMapStatic
-  extends ScalablyTyped.runtime.Instantiable0[CalHeatMap]
+  extends org.scalablytyped.runtime.Instantiable0[CalHeatMap]
 

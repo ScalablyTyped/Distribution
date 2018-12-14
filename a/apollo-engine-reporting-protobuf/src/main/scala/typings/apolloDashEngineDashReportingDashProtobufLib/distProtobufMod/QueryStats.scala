@@ -15,10 +15,10 @@ class QueryStats () extends IQueryStats {
   def this(properties: IQueryStats) = this()
   /** QueryStats perClientName. */
   @JSName("perClientName")
-  var perClientName_QueryStats: ScalablyTyped.runtime.StringDictionary[IClientNameStats] = js.native
+  var perClientName_QueryStats: org.scalablytyped.runtime.StringDictionary[IClientNameStats] = js.native
   /** QueryStats perTypeStat. */
   @JSName("perTypeStat")
-  var perTypeStat_QueryStats: ScalablyTyped.runtime.StringDictionary[ITypeStat] = js.native
+  var perTypeStat_QueryStats: org.scalablytyped.runtime.StringDictionary[ITypeStat] = js.native
   /** QueryStats perType. */
   @JSName("perType")
   var perType_QueryStats: js.Array[ITypeStat] = js.native
@@ -32,7 +32,7 @@ class QueryStats () extends IQueryStats {
        * Converts this QueryStats to JSON.
        * @returns JSON object
        */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "QueryStats")
@@ -141,14 +141,14 @@ object QueryStats extends js.Object {
        * @param object Plain object
        * @returns QueryStats
        */
-  def fromObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
+  def fromObject(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats = js.native
   /**
        * Creates a plain object from a QueryStats message. Also converts values to other types if specified.
        * @param message QueryStats
        * @param [options] Conversion options
        * @returns Plain object
        */
-  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toObject(message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a plain object from a QueryStats message. Also converts values to other types if specified.
        * @param message QueryStats
@@ -158,12 +158,12 @@ object QueryStats extends js.Object {
   def toObject(
     message: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.QueryStats,
     options: protobufjsLib.protobufjsMod.IConversionOptions
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Verifies a QueryStats message.
        * @param message Plain object to verify
        * @returns `null` if valid, otherwise the reason why it is not
        */
-  def verify(message: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
+  def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
 }
 

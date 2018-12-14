@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
      */
 
 trait RefreshToken
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var client: Client
   var refreshToken: java.lang.String
   var refreshTokenExpiresAt: js.UndefOr[stdLib.Date] = js.undefined

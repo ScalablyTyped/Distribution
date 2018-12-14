@@ -21,7 +21,7 @@ trait VTTCue extends TextTrackCue {
 @JSGlobal("VTTCue")
 @js.native
 object VTTCue
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* startTime */ scala.Double, 
       /* endTime */ scala.Double, 
       /* text */ java.lang.String, 

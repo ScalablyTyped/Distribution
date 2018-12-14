@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WebGLProgram")
 @js.native
 object WebGLProgram
-  extends ScalablyTyped.runtime.Instantiable0[WebGLProgram]
+  extends org.scalablytyped.runtime.Instantiable0[WebGLProgram]
 

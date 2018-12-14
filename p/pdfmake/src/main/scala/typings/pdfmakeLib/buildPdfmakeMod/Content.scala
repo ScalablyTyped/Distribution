@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Content
-  extends /* additionalProperty */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* additionalProperty */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var alignment: js.UndefOr[Alignment] = js.undefined
   var columns: js.UndefOr[js.Array[Content]] = js.undefined
   var fit: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined

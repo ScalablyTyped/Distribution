@@ -83,6 +83,6 @@ object FilesInput extends js.Object {
   /**
            * List of files ready to be loaded
            */
-  var FilesToLoad: ScalablyTyped.runtime.StringDictionary[stdLib.File] = js.native
+  var FilesToLoad: org.scalablytyped.runtime.StringDictionary[stdLib.File] = js.native
 }
 

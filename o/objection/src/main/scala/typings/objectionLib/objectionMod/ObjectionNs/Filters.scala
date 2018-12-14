@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Filters[QM /* <: Model */]
-  extends /* filterName */ ScalablyTyped.runtime.StringDictionary[
+  extends /* filterName */ org.scalablytyped.runtime.StringDictionary[
       js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
     ]
 

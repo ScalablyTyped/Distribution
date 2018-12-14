@@ -12,7 +12,7 @@ trait Rule extends js.Object {
        */
   var error: js.UndefOr[mooLib.mooLibNumbers.`true`] = js.undefined
   var keywords: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ] = js.undefined
   /**
        * Moo tracks detailed information about the input for you.

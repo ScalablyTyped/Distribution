@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ReferenceConstructor
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* repo */ atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, 
       /* path */ atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, 
       Reference

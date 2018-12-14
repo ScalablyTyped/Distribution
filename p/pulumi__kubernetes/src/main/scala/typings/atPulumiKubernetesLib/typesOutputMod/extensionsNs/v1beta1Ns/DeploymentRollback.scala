@@ -35,6 +35,6 @@ trait DeploymentRollback extends js.Object {
   /**
                * The annotations to be updated to a deployment
                */
-  val updatedAnnotations: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val updatedAnnotations: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

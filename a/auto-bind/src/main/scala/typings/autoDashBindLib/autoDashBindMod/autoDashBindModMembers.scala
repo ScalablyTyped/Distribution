@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("auto-bind", JSImport.Namespace)
 @js.native
 object autoDashBindModMembers
-  extends ScalablyTyped.runtime.TopLevel[AutoBindModule[js.Object]]
+  extends org.scalablytyped.runtime.TopLevel[AutoBindModule[js.Object]]
 

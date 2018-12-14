@@ -12,7 +12,7 @@ class RenameRootFields protected ()
   def this(renamer: js.Function3[
       /* operation */ apolloDashServerDashExpressLib.apolloDashServerDashExpressLibStrings.Query | apolloDashServerDashExpressLib.apolloDashServerDashExpressLibStrings.Mutation | apolloDashServerDashExpressLib.apolloDashServerDashExpressLibStrings.Subscription, 
       /* name */ java.lang.String, 
-      /* field */ graphqlLib.typeDefinitionMod.GraphQLField[_, _, ScalablyTyped.runtime.StringDictionary[_]], 
+      /* field */ graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]], 
       java.lang.String
     ]) = this()
 }

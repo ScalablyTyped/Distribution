@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core/src/view/util", "EMPTY_MAP")
 @js.native
 object EMPTY_MAP
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

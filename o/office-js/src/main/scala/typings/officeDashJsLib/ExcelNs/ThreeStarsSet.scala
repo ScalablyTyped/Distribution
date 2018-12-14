@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ThreeStarsSet
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Icon] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] {
   var goldStar: Icon
   var halfGoldStar: Icon
   var silverStar: Icon

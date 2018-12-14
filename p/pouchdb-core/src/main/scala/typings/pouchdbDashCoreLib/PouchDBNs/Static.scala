@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Static
   extends pouchdbDashCoreLib.EventEmitter
-     with ScalablyTyped.runtime.Instantiable0[Database[js.Object]]
-     with ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Database[js.Object]]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable0[Database[js.Object]]
+     with org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Database[js.Object]]
+     with org.scalablytyped.runtime.Instantiable2[
       /* name */ java.lang.String, 
       /* options */ pouchdbDashCoreLib.PouchDBNs.ConfigurationNs.DatabaseConfiguration, 
       Database[js.Object]

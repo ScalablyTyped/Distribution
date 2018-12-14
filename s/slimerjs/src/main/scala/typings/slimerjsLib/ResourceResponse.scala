@@ -11,7 +11,7 @@ trait ResourceResponse extends js.Object {
   var bodySize: scala.Double
   var contentCharset: java.lang.String
   var contentType: js.UndefOr[java.lang.String] = js.undefined
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var httpVersion: HttpVersion
   var id: scala.Double
   var isFileDownloading: scala.Boolean

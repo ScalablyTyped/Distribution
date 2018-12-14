@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CursorStatic
-  extends ScalablyTyped.runtime.Instantiable0[Cursor[js.Object]]
+  extends org.scalablytyped.runtime.Instantiable0[Cursor[js.Object]]
 

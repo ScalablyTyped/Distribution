@@ -13,7 +13,7 @@ class default ()
 @JSImport("antd/lib/dropdown", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Button: ScalablyTyped.runtime.Instantiable0[antdLib.libDropdownDropdownDashButtonMod.default] = js.native
+  var Button: org.scalablytyped.runtime.Instantiable0[antdLib.libDropdownDropdownDashButtonMod.default] = js.native
   var defaultProps: antdLib.Anon_PrefixClsPlacement = js.native
 }
 

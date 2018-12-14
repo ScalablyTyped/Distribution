@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced () extends ElectronConfig {
   def this(options: ElectronConfigOptions) = this()
   /* CompleteClass */
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   override var iterator: js.Function0[
     stdLib.Iterator[
       js.Tuple2[

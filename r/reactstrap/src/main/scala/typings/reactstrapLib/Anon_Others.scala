@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Others
   extends // if a is passed as a string
 // this could be href
-/* others */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* others */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined

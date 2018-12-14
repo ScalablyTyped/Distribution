@@ -12,7 +12,7 @@ trait ItemDto extends js.Object {
   var consumed: scala.Boolean
   var depth: scala.Double
   var description: java.lang.String
-  var effect: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+  var effect: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   var from: js.Array[java.lang.String]
   var gold: GoldDto
   var group: java.lang.String
@@ -21,7 +21,7 @@ trait ItemDto extends js.Object {
   var image: ImageDto
   var inStore: scala.Boolean
   var into: js.Array[java.lang.String]
-  var maps: js.Array[ScalablyTyped.runtime.StringDictionary[scala.Boolean]]
+  var maps: js.Array[org.scalablytyped.runtime.StringDictionary[scala.Boolean]]
   var name: java.lang.String
   var plaintext: java.lang.String
   var requiredChampion: java.lang.String

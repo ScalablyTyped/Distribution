@@ -10,6 +10,6 @@ trait GraphQLParams extends js.Object {
   var operationName: js.UndefOr[java.lang.String | scala.Null]
   var query: js.UndefOr[java.lang.String | scala.Null]
   var raw: js.UndefOr[scala.Boolean | scala.Null]
-  var variables: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null]
+  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null]
 }
 

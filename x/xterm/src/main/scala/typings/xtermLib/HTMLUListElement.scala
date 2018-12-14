@@ -16,5 +16,5 @@ trait HTMLUListElement extends HTMLElement {
 @JSGlobal("HTMLUListElement")
 @js.native
 object HTMLUListElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLUListElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLUListElement]
 

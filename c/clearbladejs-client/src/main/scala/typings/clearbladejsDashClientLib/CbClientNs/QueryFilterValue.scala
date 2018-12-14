@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait QueryFilterValue
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[QueryValue]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[QueryValue]
 

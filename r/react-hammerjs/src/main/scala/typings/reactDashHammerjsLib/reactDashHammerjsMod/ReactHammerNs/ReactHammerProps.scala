@@ -32,7 +32,7 @@ trait ReactHammerProps extends js.Object {
   var onTap: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
   var options: js.UndefOr[reactDashHammerjsLib.HammerOptionsWithRecognizers] = js.undefined
   var recognizeWith: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[hammerjsLib.Recognizer | java.lang.String]
+    org.scalablytyped.runtime.StringDictionary[hammerjsLib.Recognizer | java.lang.String]
   ] = js.undefined
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }

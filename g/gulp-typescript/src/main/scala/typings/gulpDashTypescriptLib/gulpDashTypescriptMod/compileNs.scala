@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object compileNs extends js.Object {
   
   trait Settings
-    extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+    extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     var allowNonTsExtensions: js.UndefOr[scala.Boolean] = js.undefined
     var charset: js.UndefOr[java.lang.String] = js.undefined
     var codepage: js.UndefOr[scala.Double] = js.undefined

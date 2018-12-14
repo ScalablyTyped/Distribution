@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("p-cancelable", JSImport.Namespace)
 @js.native
 object pDashCancelableModMembers
-  extends ScalablyTyped.runtime.TopLevel[PCancelableConstructor]
+  extends org.scalablytyped.runtime.TopLevel[PCancelableConstructor]
 

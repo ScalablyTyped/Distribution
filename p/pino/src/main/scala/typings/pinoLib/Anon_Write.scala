@@ -19,7 +19,7 @@ trait Anon_Write extends js.Object {
                * method is called. If a method isn't present, the logging falls back to using the `console`.
                */
   var write: js.UndefOr[
-    pinoLib.pinoMod.PNs.WriteFn | (Anon_Trace with ScalablyTyped.runtime.StringDictionary[pinoLib.pinoMod.PNs.WriteFn])
+    pinoLib.pinoMod.PNs.WriteFn | (Anon_Trace with org.scalablytyped.runtime.StringDictionary[pinoLib.pinoMod.PNs.WriteFn])
   ] = js.undefined
 }
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ItemCollectionMetricsPerTable
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ItemCollectionMetricsMultiple]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ItemCollectionMetricsMultiple]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ParserConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Parser[js.UndefOr[scala.Nothing]]]
+  extends org.scalablytyped.runtime.Instantiable0[Parser[js.UndefOr[scala.Nothing]]]
 

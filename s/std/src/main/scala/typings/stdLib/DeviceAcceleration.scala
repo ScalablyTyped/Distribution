@@ -15,5 +15,5 @@ trait DeviceAcceleration extends js.Object {
 @JSGlobal("DeviceAcceleration")
 @js.native
 object DeviceAcceleration
-  extends ScalablyTyped.runtime.Instantiable0[DeviceAcceleration]
+  extends org.scalablytyped.runtime.Instantiable0[DeviceAcceleration]
 

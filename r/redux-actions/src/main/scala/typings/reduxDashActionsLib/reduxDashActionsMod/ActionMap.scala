@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ActionMap[Payload, Meta]
-  extends /* actionType */ ScalablyTyped.runtime.StringDictionary[
+  extends /* actionType */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[
         (ActionMap[Payload, Meta]) | ActionFunctionAny[Payload] | (js.Tuple2[ActionFunctionAny[Payload], ActionFunctionAny[Meta]])
       ]

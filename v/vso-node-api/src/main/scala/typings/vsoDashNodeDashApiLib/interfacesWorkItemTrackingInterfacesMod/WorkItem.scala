@@ -10,7 +10,7 @@ trait WorkItem extends WorkItemTrackingResource {
   /**
        * Map of field and values for the work item.
        */
-  var fields: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var fields: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * The work item ID.
        */

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Matchers[T]
-  extends ScalablyTyped.runtime.Instantiable3[/* env */ Env, /* actual */ T, /* spec */ Env, js.Any]
-     with ScalablyTyped.runtime.Instantiable4[/* env */ Env, /* actual */ T, /* spec */ Env, /* isNot */ scala.Boolean, js.Any] {
+  extends org.scalablytyped.runtime.Instantiable3[/* env */ Env, /* actual */ T, /* spec */ Env, js.Any]
+     with org.scalablytyped.runtime.Instantiable4[/* env */ Env, /* actual */ T, /* spec */ Env, /* isNot */ scala.Boolean, js.Any] {
   @JSName("Any")
   var Any_Original: Any = js.native
   var actual: T = js.native
@@ -87,13 +87,13 @@ trait Matchers[T]
   def toThrow(): scala.Boolean = js.native
   def toThrow(expected: js.Any): scala.Boolean = js.native
   def toThrowError(): scala.Boolean = js.native
-  def toThrowError(expected: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]): scala.Boolean = js.native
+  def toThrowError(expected: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error]): scala.Boolean = js.native
   def toThrowError(
-    expected: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error],
+    expected: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error],
     message: java.lang.String
   ): scala.Boolean = js.native
   def toThrowError(
-    expected: ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error],
+    expected: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, stdLib.Error],
     message: stdLib.RegExp
   ): scala.Boolean = js.native
   def toThrowError(message: java.lang.String): scala.Boolean = js.native

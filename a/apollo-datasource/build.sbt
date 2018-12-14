@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "apollo-datasource"
-version := "0.2.1-4abba2"
+version := "0.2.1-71febc"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-server-caching" % "0.2.1-daf44d",
-  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-3df38f",
-  "org.scalablytyped" %%% "lru-cache" % "4.1-dt-20180910Z-9f29f5",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-21ad57",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-055952",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "util_dot_promisify" % "1.0-dt-20180910Z-1eb4cb")
+  "org.scalablytyped" %%% "apollo-server-caching" % "0.2.1-33c37f",
+  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-360fbe",
+  "org.scalablytyped" %%% "lru-cache" % "4.1-dt-20180910Z-91487f",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-d32d36",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
+  "org.scalablytyped" %%% "util_dot_promisify" % "1.0-dt-20180910Z-7e731a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

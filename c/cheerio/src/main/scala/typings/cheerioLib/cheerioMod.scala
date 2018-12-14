@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cheerio", JSImport.Namespace)
 @js.native
 object cheerioMod
-  extends ScalablyTyped.runtime.TopLevel[CheerioAPI]
+  extends org.scalablytyped.runtime.TopLevel[CheerioAPI]
 

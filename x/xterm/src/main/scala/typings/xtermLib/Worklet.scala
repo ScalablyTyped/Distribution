@@ -14,5 +14,5 @@ trait Worklet extends js.Object {
 @JSGlobal("Worklet")
 @js.native
 object Worklet
-  extends ScalablyTyped.runtime.Instantiable0[Worklet]
+  extends org.scalablytyped.runtime.Instantiable0[Worklet]
 

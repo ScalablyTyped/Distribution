@@ -11,7 +11,7 @@ class BaseFloatingPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   extends officeDashUiDashFabricDashReactLib.libUtilitiesMod.BaseComponent[P, IBaseFloatingPickerState]
      with officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPicker {
   def this(basePickerProps: P) = this()
-  var SuggestionsControlOfProperType: ScalablyTyped.runtime.Instantiable1[
+  var SuggestionsControlOfProperType: org.scalablytyped.runtime.Instantiable1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsDotTypesMod.ISuggestionsControlProps[T], 
     officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionsControl[T]
   ] = js.native

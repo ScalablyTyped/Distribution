@@ -93,5 +93,5 @@ trait BaseAudioContext extends EventTarget {
 @JSGlobal("BaseAudioContext")
 @js.native
 object BaseAudioContext
-  extends ScalablyTyped.runtime.Instantiable0[BaseAudioContext]
+  extends org.scalablytyped.runtime.Instantiable0[BaseAudioContext]
 

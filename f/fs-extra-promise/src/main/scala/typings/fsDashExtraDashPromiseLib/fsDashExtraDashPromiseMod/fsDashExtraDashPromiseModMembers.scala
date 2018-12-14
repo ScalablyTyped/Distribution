@@ -2429,10 +2429,10 @@ object fsDashExtraDashPromiseModMembers extends js.Object {
     ]
   ): scala.Unit = js.native
   def realpath(path: java.lang.String): js.Promise[java.lang.String] = js.native
-  def realpath(path: java.lang.String, cache: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Promise[java.lang.String] = js.native
+  def realpath(path: java.lang.String, cache: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Promise[java.lang.String] = js.native
   def realpath(
     path: java.lang.String,
-    cache: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    cache: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* resolvedPath */ java.lang.String, _]
   ): scala.Unit = js.native
   def realpath(
@@ -2440,10 +2440,10 @@ object fsDashExtraDashPromiseModMembers extends js.Object {
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* resolvedPath */ java.lang.String, _]
   ): scala.Unit = js.native
   def realpath(path: nodeLib.Buffer): js.Promise[java.lang.String] = js.native
-  def realpath(path: nodeLib.Buffer, cache: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Promise[java.lang.String] = js.native
+  def realpath(path: nodeLib.Buffer, cache: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Promise[java.lang.String] = js.native
   def realpath(
     path: nodeLib.Buffer,
-    cache: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    cache: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* resolvedPath */ java.lang.String, _]
   ): scala.Unit = js.native
   def realpath(
@@ -2547,7 +2547,7 @@ object fsDashExtraDashPromiseModMembers extends js.Object {
     ]
   ): scala.Unit = js.native
   def realpathAsync(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
-  def realpathAsync(path: java.lang.String, cache: ScalablyTyped.runtime.StringDictionary[java.lang.String]): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def realpathAsync(path: java.lang.String, cache: org.scalablytyped.runtime.StringDictionary[java.lang.String]): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   /**
        * Synchronous realpath(3) - return the canonicalized absolute pathname.
        * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

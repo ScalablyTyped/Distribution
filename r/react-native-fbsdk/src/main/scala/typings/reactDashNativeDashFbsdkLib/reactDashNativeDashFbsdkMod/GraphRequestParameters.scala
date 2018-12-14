@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait GraphRequestParameters
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Object]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Object]
 

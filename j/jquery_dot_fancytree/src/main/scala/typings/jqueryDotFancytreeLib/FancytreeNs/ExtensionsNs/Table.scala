@@ -13,7 +13,7 @@ trait Table
   extends /**
              * Support misc options
              */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
                * Render the checkboxes into the this column index (default: nodeColumnIdx)
                */

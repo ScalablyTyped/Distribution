@@ -10,7 +10,7 @@ trait IgDialog
   extends /**
 	 * Option for igDialog
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event which is raised after the end of the animation when the dialog was closed or opened.
   	 */

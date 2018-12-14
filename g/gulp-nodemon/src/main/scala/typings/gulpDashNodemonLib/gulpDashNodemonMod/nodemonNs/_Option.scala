@@ -15,15 +15,15 @@ trait _Option extends js.Object {
            */
   var delay: js.UndefOr[scala.Double] = js.undefined
   var env: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double]
   ] = js.undefined
-  var events: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var events: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * Execute script with "app", ie. -x "python -v".
            */
   var exec: js.UndefOr[java.lang.String] = js.undefined
   var execMap: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double]
+    org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double]
   ] = js.undefined
   /**
            * Exit on crash, allows use of nodemon with daemon tools like forever.js.

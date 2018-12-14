@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnchorStatic
-  extends ScalablyTyped.runtime.Instantiable0[Anchor]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ AnchorOptions, Anchor]
+  extends org.scalablytyped.runtime.Instantiable0[Anchor]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ AnchorOptions, Anchor]
 

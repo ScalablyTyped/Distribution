@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ModelSubclass
-  extends ScalablyTyped.runtime.Instantiable0[Model[js.Any]]
+  extends org.scalablytyped.runtime.Instantiable0[Model[js.Any]]
 

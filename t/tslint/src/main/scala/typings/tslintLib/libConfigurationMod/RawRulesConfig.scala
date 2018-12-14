@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RawRulesConfig
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[RawRuleConfig]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[RawRuleConfig]
 

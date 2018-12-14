@@ -19,7 +19,7 @@ trait Config
   var plugins: webpackDashChainLib.webpackDashChainMod.ConfigNs.Plugins[this.type] = js.native
   var resolve: webpackDashChainLib.webpackDashChainMod.ConfigNs.Resolve = js.native
   var resolveLoader: webpackDashChainLib.webpackDashChainMod.ConfigNs.ResolveLoader = js.native
-  def amd(value: ScalablyTyped.runtime.StringDictionary[scala.Boolean]): this.type = js.native
+  def amd(value: org.scalablytyped.runtime.StringDictionary[scala.Boolean]): this.type = js.native
   def bail(value: scala.Boolean): this.type = js.native
   def cache(value: js.Any): this.type = js.native
   def cache(value: scala.Boolean): this.type = js.native

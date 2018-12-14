@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait MapStore extends js.Object {
   var baseDir: java.lang.String | scala.Null
-  var data: ScalablyTyped.runtime.StringDictionary[istanbulDashLibDashSourceDashMapsLib.Anon_Type]
+  var data: org.scalablytyped.runtime.StringDictionary[istanbulDashLibDashSourceDashMapsLib.Anon_Type]
   var sourceStore: SourceStore
   var verbose: scala.Boolean
   def dispose(): scala.Unit

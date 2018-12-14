@@ -16,7 +16,7 @@ trait Anon_UnescapeJsonPointer extends js.Object {
   def getData(jsonPointer: java.lang.String, dataLevel: scala.Double, paths: js.Array[java.lang.String]): java.lang.String = js.native
   def getProperty(str: java.lang.String): java.lang.String = js.native
   def schemaHasRules(schema: js.Object, rules: js.Any): java.lang.String = js.native
-  def toHash(source: js.Array[java.lang.String]): ScalablyTyped.runtime.StringDictionary[js.UndefOr[ajvLib.ajvLibNumbers.`true`]] = js.native
+  def toHash(source: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[js.UndefOr[ajvLib.ajvLibNumbers.`true`]] = js.native
   def toQuotedString(str: java.lang.String): java.lang.String = js.native
   def unescapeFragment(str: java.lang.String): java.lang.String = js.native
   def unescapeJsonPointer(str: java.lang.String): java.lang.String = js.native

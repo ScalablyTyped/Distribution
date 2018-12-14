@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CompilerOptions
-  extends /* option */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[CompilerOptionsValue | TsConfigSourceFile]] {
+  extends /* option */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[CompilerOptionsValue | TsConfigSourceFile]] {
   var allowJs: js.UndefOr[scala.Boolean] = js.undefined
   var allowSyntheticDefaultImports: js.UndefOr[scala.Boolean] = js.undefined
   var allowUnreachableCode: js.UndefOr[scala.Boolean] = js.undefined

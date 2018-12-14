@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IGrandientStatic
-  extends ScalablyTyped.runtime.Instantiable0[IGradient]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ IGradientOptions, IGradient] {
+  extends org.scalablytyped.runtime.Instantiable0[IGradient]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ IGradientOptions, IGradient] {
   /**
   	 * Returns instance from an SVG element
   	 * @param el SVG gradient element

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait DOMRectList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[DOMRect] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[DOMRect] {
   val length: scala.Double
   def item(index: scala.Double): DOMRect | scala.Null
 }
@@ -15,5 +15,5 @@ trait DOMRectList
 @JSGlobal("DOMRectList")
 @js.native
 object DOMRectList
-  extends ScalablyTyped.runtime.Instantiable0[DOMRectList]
+  extends org.scalablytyped.runtime.Instantiable0[DOMRectList]
 

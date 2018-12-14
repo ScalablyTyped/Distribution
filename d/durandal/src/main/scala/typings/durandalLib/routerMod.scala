@@ -19,5 +19,5 @@ import scala.scalajs.js.annotation._
 @JSImport("plugins/router", JSImport.Namespace)
 @js.native
 object routerMod
-  extends ScalablyTyped.runtime.TopLevel[DurandalRootRouter]
+  extends org.scalablytyped.runtime.TopLevel[DurandalRootRouter]
 

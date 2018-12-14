@@ -23,5 +23,5 @@ trait Flash
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[Flash]
+org.scalablytyped.runtime.Instantiable0[Flash]
 

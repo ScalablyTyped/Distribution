@@ -12,13 +12,13 @@ trait CompileDirectiveSummary extends CompileTypeSummary {
   var componentViewType: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol | ProxyClass | scala.Null
   var entryComponents: js.Array[CompileEntryComponentMetadata]
   var exportAs: java.lang.String | scala.Null
-  var guards: ScalablyTyped.runtime.StringDictionary[js.Any]
-  var hostAttributes: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var hostListeners: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var hostProperties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var guards: org.scalablytyped.runtime.StringDictionary[js.Any]
+  var hostAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var hostListeners: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var hostProperties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var isComponent: scala.Boolean
-  var outputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var providers: js.Array[CompileProviderMetadata]
   var queries: js.Array[CompileQueryMetadata]
   var rendererType: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol | js.Object | scala.Null

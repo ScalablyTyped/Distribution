@@ -17,7 +17,7 @@ trait Route extends js.Object {
        * var route = new Route('/:one/:two')
        * route.match('/foo/bar/') // -> {one: 'foo', two: 'bar'}
        */
-  def `match`(pathname: java.lang.String): ScalablyTyped.runtime.StringDictionary[java.lang.String] | routeDashParserLib.routeDashParserLibNumbers.`false`
+  def `match`(pathname: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] | routeDashParserLib.routeDashParserLibNumbers.`false`
   /**
        * Reverse a route specification to a path, returning false if it can't be
        * fulfilled
@@ -25,6 +25,6 @@ trait Route extends js.Object {
        * var route = new Route('/:one/:two')
        * route.reverse({one: 'foo', two: 'bar'}) -> '/foo/bar'
        */
-  def reverse(params: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String | routeDashParserLib.routeDashParserLibNumbers.`false`
+  def reverse(params: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | routeDashParserLib.routeDashParserLibNumbers.`false`
 }
 

@@ -13,6 +13,6 @@ trait PopStateEvent extends Event {
 @JSGlobal("PopStateEvent")
 @js.native
 object PopStateEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, PopStateEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ PopStateEventInit, PopStateEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, PopStateEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ PopStateEventInit, PopStateEvent]
 

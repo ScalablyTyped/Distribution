@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class CameraHelper protected () extends LineSegments {
   def this(camera: Camera) = this()
   var camera: Camera = js.native
-  var pointMap: ScalablyTyped.runtime.StringDictionary[js.Array[scala.Double]] = js.native
+  var pointMap: org.scalablytyped.runtime.StringDictionary[js.Array[scala.Double]] = js.native
   def update(): scala.Unit = js.native
 }
 

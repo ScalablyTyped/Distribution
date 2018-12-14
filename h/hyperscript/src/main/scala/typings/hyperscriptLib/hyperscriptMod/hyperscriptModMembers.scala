@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hyperscript", JSImport.Namespace)
 @js.native
 object hyperscriptModMembers
-  extends ScalablyTyped.runtime.TopLevel[HyperScript]
+  extends org.scalablytyped.runtime.TopLevel[HyperScript]
 

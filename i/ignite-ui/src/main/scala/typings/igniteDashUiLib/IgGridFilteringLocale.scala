@@ -10,7 +10,7 @@ trait IgGridFilteringLocale
   extends /**
 	 * Option for IgGridFilteringLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * 'Advance Button' label that is used for the predefined filtering conditions in the filter dropdowns.
   	 *

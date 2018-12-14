@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("write-pkg", JSImport.Namespace)
 @js.native
 object writeDashPkgModMembers
-  extends ScalablyTyped.runtime.TopLevel[WritePkg]
+  extends org.scalablytyped.runtime.TopLevel[WritePkg]
 

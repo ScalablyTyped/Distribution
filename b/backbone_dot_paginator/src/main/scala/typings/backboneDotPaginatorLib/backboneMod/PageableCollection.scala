@@ -54,7 +54,7 @@ class PageableCollection[TModel /* <: backboneLib.backboneMod.Model */] ()
 @JSGlobal("backbone.PageableCollection")
 @js.native
 object PageableCollection extends js.Object {
-  def noConflict(): ScalablyTyped.runtime.Instantiable2[
+  def noConflict(): org.scalablytyped.runtime.Instantiable2[
     /* models */ js.UndefOr[/* models */ js.Array[backboneLib.backboneMod.Model]], 
     /* options */ js.UndefOr[/* options */ backboneDotPaginatorLib.backboneMod.PageableInitialOptions], 
     backboneDotPaginatorLib.backboneMod.PageableCollection[backboneLib.backboneMod.Model]

@@ -14,8 +14,8 @@ trait File extends Blob {
 @JSGlobal("File")
 @js.native
 object File
-  extends ScalablyTyped.runtime.Instantiable2[/* fileBits */ js.Array[BlobPart], /* fileName */ java.lang.String, File]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable2[/* fileBits */ js.Array[BlobPart], /* fileName */ java.lang.String, File]
+     with org.scalablytyped.runtime.Instantiable3[
       /* fileBits */ js.Array[BlobPart], 
       /* fileName */ java.lang.String, 
       /* options */ FilePropertyBag, 

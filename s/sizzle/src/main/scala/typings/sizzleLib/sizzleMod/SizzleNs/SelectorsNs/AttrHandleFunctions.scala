@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait AttrHandleFunctions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[AttrHandleFunction]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[AttrHandleFunction]
 

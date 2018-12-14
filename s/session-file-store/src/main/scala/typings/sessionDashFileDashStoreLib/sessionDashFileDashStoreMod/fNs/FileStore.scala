@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FileStore
-  extends ScalablyTyped.runtime.Instantiable0[expressDashSessionLib.expressDashSessionMod.Store]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ Options, expressDashSessionLib.expressDashSessionMod.Store]
+  extends org.scalablytyped.runtime.Instantiable0[expressDashSessionLib.expressDashSessionMod.Store]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ Options, expressDashSessionLib.expressDashSessionMod.Store]
 

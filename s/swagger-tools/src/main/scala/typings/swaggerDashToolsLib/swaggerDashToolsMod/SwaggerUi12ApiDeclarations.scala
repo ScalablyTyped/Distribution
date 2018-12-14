@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SwaggerUi12ApiDeclarations
-  extends /* path */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* path */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

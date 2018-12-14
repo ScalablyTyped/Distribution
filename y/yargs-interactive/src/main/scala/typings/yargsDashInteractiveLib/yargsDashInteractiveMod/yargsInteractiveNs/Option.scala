@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Option
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[OptionData | yargsDashInteractiveLib.Anon_Default]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[OptionData | yargsDashInteractiveLib.Anon_Default]
 

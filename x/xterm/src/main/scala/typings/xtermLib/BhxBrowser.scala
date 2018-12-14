@@ -41,5 +41,5 @@ trait BhxBrowser extends js.Object {
 @JSGlobal("BhxBrowser")
 @js.native
 object BhxBrowser
-  extends ScalablyTyped.runtime.Instantiable0[BhxBrowser]
+  extends org.scalablytyped.runtime.Instantiable0[BhxBrowser]
 

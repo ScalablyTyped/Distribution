@@ -33,6 +33,6 @@ trait Phase extends js.Object {
        * The target (agent, server, etc.) for this phase.
        */
   var target: PhaseTarget
-  var variables: ScalablyTyped.runtime.StringDictionary[BuildDefinitionVariable]
+  var variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
 }
 

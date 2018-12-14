@@ -17,7 +17,7 @@ class NgStyle protected ()
   var _ngStyle: js.Any = js.native
   var _renderer: js.Any = js.native
   var _setStyle: js.Any = js.native
-  var ngStyle: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var ngStyle: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
          * A callback method that performs change-detection, invoked
          * after the default change-detector runs.

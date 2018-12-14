@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Client
-  extends ScalablyTyped.runtime.Instantiable0[MariaClient] {
+  extends org.scalablytyped.runtime.Instantiable0[MariaClient] {
   def apply(): MariaClient = js.native
 }
 

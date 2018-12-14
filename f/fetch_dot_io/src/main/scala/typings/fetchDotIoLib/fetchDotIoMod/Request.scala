@@ -13,12 +13,12 @@ class Request protected () extends js.Object {
      * append formData
      */
   def append(key: java.lang.String, value: js.Any): this.type = js.native
-  def append(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def append(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
      * Set Options
      */
   def config(key: java.lang.String, value: js.Any): this.type = js.native
-  def config(opts: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def config(opts: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
      * HTTP delete method
      */
@@ -58,16 +58,16 @@ class Request protected () extends js.Object {
   /**
      * Add query string
      */
-  def query(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def query(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
      * Send data
      */
-  def send(data: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def send(data: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
      * Set Header
      */
   def set(key: java.lang.String, value: js.Any): this.type = js.native
-  def set(opts: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def set(opts: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
      * Make Response to string
      */

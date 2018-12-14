@@ -16,7 +16,9 @@ trait Params extends js.Object {
            * accepted by S3.
            */
   var Conditions: js.UndefOr[
-    js.Array[ScalablyTyped.runtime.StringDictionary[_] | (js.Tuple3[java.lang.String, _, _])]
+    js.Array[
+      org.scalablytyped.runtime.StringDictionary[_] | (js.Tuple3[java.lang.String, _, _])
+    ]
   ] = js.undefined
   /**
            * The number of seconds for which the POST form's signed policy should be
@@ -28,6 +30,6 @@ trait Params extends js.Object {
            * (except 'key') will be included as exact match conditions in the
            * presigned policy.
            */
-  var Fields: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var Fields: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

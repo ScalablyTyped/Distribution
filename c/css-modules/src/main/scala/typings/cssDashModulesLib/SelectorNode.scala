@@ -10,5 +10,5 @@ trait SelectorNode
   extends /**
      * Returns the specific selector from imported stylesheet as string
      */
-/* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+/* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

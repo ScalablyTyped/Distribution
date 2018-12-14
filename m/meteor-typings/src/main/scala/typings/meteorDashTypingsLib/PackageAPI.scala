@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PackageAPI
-  extends ScalablyTyped.runtime.Instantiable0[PackageAPI] {
+  extends org.scalablytyped.runtime.Instantiable0[PackageAPI] {
   def addAssets(filenames: java.lang.String, architecture: java.lang.String): scala.Unit = js.native
   def addAssets(filenames: java.lang.String, architecture: js.Array[java.lang.String]): scala.Unit = js.native
   def addAssets(filenames: js.Array[java.lang.String], architecture: java.lang.String): scala.Unit = js.native

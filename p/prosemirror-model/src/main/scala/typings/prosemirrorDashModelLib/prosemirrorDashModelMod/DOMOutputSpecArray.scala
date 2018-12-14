@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DOMOutputSpecArray extends js.Object {
   var `0`: java.lang.String
   var `1`: js.UndefOr[
-    DOMOutputSpec | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`0` | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    DOMOutputSpec | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`0` | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
   var `2`: js.UndefOr[DOMOutputSpec | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`0`] = js.undefined
   var `3`: js.UndefOr[DOMOutputSpec | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`0`] = js.undefined

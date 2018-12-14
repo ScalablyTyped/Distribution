@@ -362,7 +362,7 @@ class Request[D, E] protected () extends js.Object {
     event: awsDashSdkLib.awsDashSdkLibStrings.httpHeaders,
     listener: js.Function4[
       /* statusCode */ scala.Double, 
-      /* headers */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* headers */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* response */ awsDashSdkLib.libResponseMod.Response[D, E], 
       /* statusMessage */ java.lang.String, 
       scala.Unit
@@ -380,7 +380,7 @@ class Request[D, E] protected () extends js.Object {
     event: awsDashSdkLib.awsDashSdkLibStrings.httpHeaders,
     listener: js.Function4[
       /* statusCode */ scala.Double, 
-      /* headers */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* headers */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* response */ awsDashSdkLib.libResponseMod.Response[D, E], 
       /* statusMessage */ java.lang.String, 
       scala.Unit
@@ -814,7 +814,7 @@ class Request[D, E] protected () extends js.Object {
     event: awsDashSdkLib.awsDashSdkLibStrings.httpHeaders,
     listener: js.Function4[
       /* statusCode */ scala.Double, 
-      /* headers */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* headers */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* response */ awsDashSdkLib.libResponseMod.Response[D, E], 
       /* statusMessage */ java.lang.String, 
       scala.Unit
@@ -832,7 +832,7 @@ class Request[D, E] protected () extends js.Object {
     event: awsDashSdkLib.awsDashSdkLibStrings.httpHeaders,
     listener: js.Function4[
       /* statusCode */ scala.Double, 
-      /* headers */ ScalablyTyped.runtime.StringDictionary[java.lang.String], 
+      /* headers */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* response */ awsDashSdkLib.libResponseMod.Response[D, E], 
       /* statusMessage */ java.lang.String, 
       scala.Unit

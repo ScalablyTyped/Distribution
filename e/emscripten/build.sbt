@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "emscripten"
-version := "0.0-unknown-dt-20180910Z-76273f"
+version := "0.0-unknown-dt-20180910Z-3d0efd"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "webassembly-js-api" % "0.0-unknown-dt-20181121Z-b8659f")
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
+  "org.scalablytyped" %%% "webassembly-js-api" % "0.0-unknown-dt-20181121Z-6269e0")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

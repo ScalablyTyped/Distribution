@@ -11,5 +11,5 @@ trait HTMLDocument extends Document
 @JSGlobal("HTMLDocument")
 @js.native
 object HTMLDocument
-  extends ScalablyTyped.runtime.Instantiable0[HTMLDocument]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLDocument]
 

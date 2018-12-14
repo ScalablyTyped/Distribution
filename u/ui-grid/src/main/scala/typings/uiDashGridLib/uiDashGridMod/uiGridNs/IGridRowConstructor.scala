@@ -14,7 +14,7 @@ trait IGridRowConstructor[TEntity]
          * @param index the current position of the row in the array
          * @param reference to the parent grid
          */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* entity */ TEntity, 
       /* index */ scala.Double, 
       /* reference */ IGridInstanceOf[TEntity], 

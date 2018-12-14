@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait GroupingResult[T]
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Array[T]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Array[T]]
 

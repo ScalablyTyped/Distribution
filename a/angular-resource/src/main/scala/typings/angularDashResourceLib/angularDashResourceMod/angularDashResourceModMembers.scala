@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("angular-resource", JSImport.Namespace)
 @js.native
 object angularDashResourceModMembers
-  extends ScalablyTyped.runtime.TopLevel[java.lang.String]
+  extends org.scalablytyped.runtime.TopLevel[java.lang.String]
 

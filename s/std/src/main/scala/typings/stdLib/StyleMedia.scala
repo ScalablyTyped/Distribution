@@ -14,5 +14,5 @@ trait StyleMedia extends js.Object {
 @JSGlobal("StyleMedia")
 @js.native
 object StyleMedia
-  extends ScalablyTyped.runtime.Instantiable0[StyleMedia]
+  extends org.scalablytyped.runtime.Instantiable0[StyleMedia]
 

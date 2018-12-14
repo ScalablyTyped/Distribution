@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SerializablePluginCache
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, _]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, _]]
 

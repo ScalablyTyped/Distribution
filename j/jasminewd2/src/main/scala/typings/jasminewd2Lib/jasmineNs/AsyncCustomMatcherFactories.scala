@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait AsyncCustomMatcherFactories
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[AsyncCustomMatcherFactory]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[AsyncCustomMatcherFactory]
 

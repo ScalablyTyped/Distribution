@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait HostKeys
-  extends /* format */ ScalablyTyped.runtime.StringDictionary[HostKey]
+  extends /* format */ org.scalablytyped.runtime.StringDictionary[HostKey]
 

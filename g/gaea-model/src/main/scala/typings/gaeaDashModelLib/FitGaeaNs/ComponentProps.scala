@@ -12,7 +12,7 @@ trait ComponentProps
          * 渲染编辑回调
          */
 // renderEditer?:(React.ComponentClass<FitGaea.ComponentProps>,{})=>void
-/* x */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* x */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * 是否可以拖入子元素
            */
@@ -56,6 +56,6 @@ trait ComponentProps
   /**
            * 存储变量信息
            */
-  var gaeaVariables: js.UndefOr[ScalablyTyped.runtime.StringDictionary[VariableData]] = js.undefined
+  var gaeaVariables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[VariableData]] = js.undefined
 }
 

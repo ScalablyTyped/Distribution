@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait PreProcessorExtraInfo extends js.Object {
   var context: lessLib.Anon_PluginManager
   var fileInfo: RootFileInfo
-  var imports: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var imports: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait LanguageMap
   extends /** Get a defined language's definition */
-/* key */ ScalablyTyped.runtime.StringDictionary[LanguageDefinition]
+/* key */ org.scalablytyped.runtime.StringDictionary[LanguageDefinition]
 

@@ -10,7 +10,7 @@ trait IgGridModalDialog
   extends /**
 	 * Option for igGridModalDialog
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var animationDuration: js.UndefOr[scala.Double] = js.undefined
   var buttonApplyDisabled: js.UndefOr[scala.Boolean] = js.undefined
   /**

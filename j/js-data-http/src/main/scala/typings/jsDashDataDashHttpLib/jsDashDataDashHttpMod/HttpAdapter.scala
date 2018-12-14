@@ -115,18 +115,18 @@ class HttpAdapter ()
 @js.native
 object HttpAdapter extends js.Object {
   var version: jsDashDataDashHttpLib.Anon_Alpha = js.native
-  def extend(): ScalablyTyped.runtime.Instantiable1[
+  def extend(): org.scalablytyped.runtime.Instantiable1[
     /* opts */ js.UndefOr[/* opts */ jsDashDataDashHttpLib.jsDashDataDashHttpMod.IBaseHttpAdapter], 
     jsDashDataDashHttpLib.jsDashDataDashHttpMod.HttpAdapter
   ] = js.native
-  def extend(instanceProps: jsDashDataDashHttpLib.jsDashDataDashHttpMod.IDict): ScalablyTyped.runtime.Instantiable1[
+  def extend(instanceProps: jsDashDataDashHttpLib.jsDashDataDashHttpMod.IDict): org.scalablytyped.runtime.Instantiable1[
     /* opts */ js.UndefOr[/* opts */ jsDashDataDashHttpLib.jsDashDataDashHttpMod.IBaseHttpAdapter], 
     jsDashDataDashHttpLib.jsDashDataDashHttpMod.HttpAdapter
   ] = js.native
   def extend(
     instanceProps: jsDashDataDashHttpLib.jsDashDataDashHttpMod.IDict,
     classProps: jsDashDataDashHttpLib.jsDashDataDashHttpMod.IDict
-  ): ScalablyTyped.runtime.Instantiable1[
+  ): org.scalablytyped.runtime.Instantiable1[
     /* opts */ js.UndefOr[/* opts */ jsDashDataDashHttpLib.jsDashDataDashHttpMod.IBaseHttpAdapter], 
     jsDashDataDashHttpLib.jsDashDataDashHttpMod.HttpAdapter
   ] = js.native

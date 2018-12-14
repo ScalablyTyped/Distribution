@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait SsdpHeaders
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[java.lang.String | scala.Double | scala.Boolean | scala.Null | js.Symbol]
     ] {
   /**

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("tail", JSImport.Namespace)
 @js.native
 object tailModMembers
-  extends ScalablyTyped.runtime.TopLevel[tailLib.tailMod.TailNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[tailLib.tailMod.TailNs.Static]
 

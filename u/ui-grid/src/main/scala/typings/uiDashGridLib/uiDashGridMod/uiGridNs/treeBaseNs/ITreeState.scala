@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait ITreeState extends js.Object {
-  var expandedState: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var expandedState: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

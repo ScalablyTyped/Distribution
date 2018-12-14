@@ -200,7 +200,7 @@ object IotNs extends js.Object {
   
   
   trait AdditionalParameterMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
   
   
   trait AlertTarget extends js.Object {
@@ -216,7 +216,7 @@ object IotNs extends js.Object {
   
   
   trait AlertTargets
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AlertTarget]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AlertTarget]
   
   
   trait Allowed extends js.Object {
@@ -326,11 +326,11 @@ object IotNs extends js.Object {
   
   
   trait Attributes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait AttributesMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
   
   
   trait AuditCheckConfiguration extends js.Object {
@@ -342,7 +342,7 @@ object IotNs extends js.Object {
   
   
   trait AuditCheckConfigurations
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AuditCheckConfiguration]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AuditCheckConfiguration]
   
   
   trait AuditCheckDetails extends js.Object {
@@ -374,7 +374,7 @@ object IotNs extends js.Object {
   
   
   trait AuditDetails
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AuditCheckDetails]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AuditCheckDetails]
   
   
   trait AuditFinding extends js.Object {
@@ -434,7 +434,7 @@ object IotNs extends js.Object {
   
   
   trait AuditNotificationTargetConfigurations
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AuditNotificationTarget]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AuditNotificationTarget]
   
   
   trait AuditTaskMetadata extends js.Object {
@@ -2486,7 +2486,7 @@ object IotNs extends js.Object {
   
   
   trait DetailsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DetailsValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DetailsValue]
   
   
   trait DisableTopicRuleRequest extends js.Object {
@@ -2614,7 +2614,7 @@ object IotNs extends js.Object {
   
   
   trait EventConfigurations
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Configuration]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Configuration]
   
   
   trait ExplicitDeny extends js.Object {
@@ -4642,7 +4642,7 @@ object IotNs extends js.Object {
   
   
   trait Parameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
   
   
   trait Policy extends js.Object {
@@ -4698,7 +4698,7 @@ object IotNs extends js.Object {
   
   
   trait PublicKeyMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[KeyValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[KeyValue]
   
   
   trait PutItemInput extends js.Object {
@@ -4924,7 +4924,7 @@ object IotNs extends js.Object {
   
   
   trait ResourceArns
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ResourceArn]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ResourceArn]
   
   
   trait ResourceIdentifier extends js.Object {
@@ -5427,7 +5427,7 @@ object IotNs extends js.Object {
   
   
   trait StringMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait Tag extends js.Object {

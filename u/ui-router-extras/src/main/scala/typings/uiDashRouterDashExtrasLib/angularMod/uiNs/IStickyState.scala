@@ -37,6 +37,6 @@ trait IStickyState extends js.Object {
   /*
                * Note: named views are mandatory when using sticky states!
                */
-  var views: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var views: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

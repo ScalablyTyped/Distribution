@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("is-my-json-valid", JSImport.Namespace)
 @js.native
 object isDashMyDashJsonDashValidModMembers
-  extends ScalablyTyped.runtime.TopLevel[Validator]
+  extends org.scalablytyped.runtime.TopLevel[Validator]
 

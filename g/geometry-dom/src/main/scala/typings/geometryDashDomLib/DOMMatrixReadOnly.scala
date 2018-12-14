@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DOMMatrixReadOnly")
 @js.native
 object DOMMatrixReadOnly
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       /* numberSequence */ js.Array[scala.Double], 
       geometryDashDomLib.GeometryDomNs.DOMMatrixReadOnly
     ]

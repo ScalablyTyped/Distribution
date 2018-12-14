@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait NumberFormats
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[NumberFormat]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[NumberFormat]
 

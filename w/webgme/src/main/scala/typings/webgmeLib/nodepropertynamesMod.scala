@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("js/NodePropertyNames", JSImport.Namespace)
 @js.native
 object nodepropertynamesMod
-  extends ScalablyTyped.runtime.TopLevel[webgmeLib.GmeNs.NodePropertyNames]
+  extends org.scalablytyped.runtime.TopLevel[webgmeLib.GmeNs.NodePropertyNames]
 

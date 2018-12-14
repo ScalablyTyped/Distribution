@@ -12,7 +12,7 @@ trait ScriptType extends js.Object {
        * @type {{ [key: string]: pc.AttributesArgs }}
        * @memberof Script
        */
-  var attributes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[playcanvasLib.pcNs.AttributesArgs]] = js.undefined
+  var attributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[playcanvasLib.pcNs.AttributesArgs]] = js.undefined
   /**
        * initialize is called if defined when script is about to run for the first time.
        * @memberof ScriptType

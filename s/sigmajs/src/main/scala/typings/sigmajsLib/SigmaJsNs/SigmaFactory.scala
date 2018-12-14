@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SigmaFactory
-  extends ScalablyTyped.runtime.Instantiable0[Sigma]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[Sigma]
+     with org.scalablytyped.runtime.Instantiable1[
       (/* container */ java.lang.String) | (/* container */ stdLib.Element) | (/* configuration */ SigmaConfigs), 
       Sigma
     ] {

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DirectoryWatcher
   extends nodeLib.eventsMod.EventEmitter {
-  var directories: ScalablyTyped.runtime.StringDictionary[watchpackLib.watcherMod.namespaced | watchpackLib.watchpackLibNumbers.`true`] = js.native
-  var files: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, scala.Double]] = js.native
+  var directories: org.scalablytyped.runtime.StringDictionary[watchpackLib.watcherMod.namespaced | watchpackLib.watchpackLibNumbers.`true`] = js.native
+  var files: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, scala.Double]] = js.native
   var initialScan: scala.Boolean = js.native
   var initialScanRemoved: js.Array[java.lang.String] = js.native
   var nestedWatching: scala.Boolean = js.native
@@ -17,11 +17,11 @@ trait DirectoryWatcher
   var path: java.lang.String = js.native
   var refs: scala.Double = js.native
   var watcher: nodeLib.fsMod.FSWatcher = js.native
-  var watchers: ScalablyTyped.runtime.StringDictionary[js.Array[watchpackLib.watcherMod.namespaced]] = js.native
+  var watchers: org.scalablytyped.runtime.StringDictionary[js.Array[watchpackLib.watcherMod.namespaced]] = js.native
   def close(): scala.Unit = js.native
   def createNestedWatcher(directoryPath: java.lang.String): scala.Unit = js.native
   def doInitialScan(): scala.Unit = js.native
-  def getTimes(): ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  def getTimes(): org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   def onChange(filePath: java.lang.String, stat: gracefulDashFsLib.gracefulDashFsMod.Stats): scala.Unit = js.native
   def onDirectoryAdded(directoryPath: java.lang.String): scala.Unit = js.native
   def onDirectoryUnlinked(directoryPath: java.lang.String): scala.Unit = js.native

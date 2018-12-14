@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HammerStatic
-  extends ScalablyTyped.runtime.Instantiable1[
-      (/* element */ stdLib.HTMLElement) | (/* element */ stdLib.SVGElement), 
-      HammerManager
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       (/* element */ stdLib.HTMLElement) | (/* element */ stdLib.SVGElement), 
       /* options */ HammerOptions, 
+      HammerManager
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* element */ stdLib.HTMLElement) | (/* element */ stdLib.SVGElement), 
       HammerManager
     ] {
   var AttrRecognizer: AttrRecognizerStatic = js.native

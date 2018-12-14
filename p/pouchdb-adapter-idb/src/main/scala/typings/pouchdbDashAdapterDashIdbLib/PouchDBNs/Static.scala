@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Static
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       (/* name */ java.lang.String) | (/* name */ scala.Null), 
       /* options */ pouchdbDashAdapterDashIdbLib.PouchDBNs.IdbAdapterNs.IdbAdapterConfiguration, 
       pouchdbDashCoreLib.PouchDBNs.Database[js.Object]

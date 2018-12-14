@@ -14,7 +14,7 @@ trait TeamProject extends TeamProjectReference {
   /**
        * Set of capabilities this project has (such as process template & version control).
        */
-  var capabilities: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+  var capabilities: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   /**
        * The shallow ref to the default team.
        */

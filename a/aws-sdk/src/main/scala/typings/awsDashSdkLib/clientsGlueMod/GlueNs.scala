@@ -478,7 +478,7 @@ object GlueNs extends js.Object {
   
   
   trait ConnectionProperties
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ValueString]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ValueString]
   
   
   trait ConnectionsList extends js.Object {
@@ -1480,7 +1480,7 @@ object GlueNs extends js.Object {
   
   
   trait ErrorByName
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ErrorDetail]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ErrorDetail]
   
   
   trait ErrorDetail extends js.Object {
@@ -1504,7 +1504,7 @@ object GlueNs extends js.Object {
   
   
   trait GenericMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[GenericString]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[GenericString]
   
   
   trait GetCatalogImportStatusRequest extends js.Object {
@@ -2710,7 +2710,7 @@ object GlueNs extends js.Object {
   
   
   trait LocationMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ColumnValuesString]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ColumnValuesString]
   
   
   trait MappingEntry extends js.Object {
@@ -2762,7 +2762,7 @@ object GlueNs extends js.Object {
   
   
   trait ParametersMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ParametersMapValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ParametersMapValue]
   
   
   trait Partition extends js.Object {

@@ -97,7 +97,7 @@ object srcCompilerModMembers extends js.Object {
   def isSyntaxError(error: stdLib.Error): scala.Boolean = js.native
   def jitExpression(
     `def`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
-    context: ScalablyTyped.runtime.StringDictionary[js.Any],
+    context: org.scalablytyped.runtime.StringDictionary[js.Any],
     sourceUrl: java.lang.String,
     preStatements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
   ): js.Any = js.native
@@ -105,7 +105,7 @@ object srcCompilerModMembers extends js.Object {
   def mergeAnalyzedFiles(analyzedFiles: js.Array[atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedFile]): atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedModules = js.native
   def mergeNsAndName(prefix: java.lang.String, localName: java.lang.String): java.lang.String = js.native
   def ngModuleJitUrl(moduleMeta: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileNgModuleMetadata): java.lang.String = js.native
-  def parseHostBindings(host: ScalablyTyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_AttributesKey = js.native
+  def parseHostBindings(host: org.scalablytyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_AttributesKey = js.native
   def parseTemplate(
     template: java.lang.String,
     templateUrl: java.lang.String,

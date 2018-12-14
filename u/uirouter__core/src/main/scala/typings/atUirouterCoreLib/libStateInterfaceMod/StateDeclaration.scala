@@ -271,7 +271,7 @@ trait StateDeclaration extends js.Object {
        * ```
        */
   var params: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[atUirouterCoreLib.libParamsInterfaceMod.ParamDeclaration | js.Any]
+    org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libParamsInterfaceMod.ParamDeclaration | js.Any]
   ] = js.undefined
   /**
        * The parent state
@@ -499,7 +499,7 @@ trait StateDeclaration extends js.Object {
        * ```
        */
   var resolve: js.UndefOr[
-    js.Array[ResolveTypes] | ScalablyTyped.runtime.StringDictionary[atUirouterCoreLib.libCommonCommonMod.IInjectable]
+    js.Array[ResolveTypes] | org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libCommonCommonMod.IInjectable]
   ] = js.undefined
   /**
        * Sets the resolve policy defaults for all resolves on this state
@@ -588,6 +588,6 @@ trait StateDeclaration extends js.Object {
        * }
        * ```
        */
-  var views: js.UndefOr[ScalablyTyped.runtime.StringDictionary[_ViewDeclaration]] = js.undefined
+  var views: js.UndefOr[org.scalablytyped.runtime.StringDictionary[_ViewDeclaration]] = js.undefined
 }
 

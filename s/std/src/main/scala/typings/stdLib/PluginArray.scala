@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PluginArray
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Plugin] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Plugin] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Plugin]] = js.native
   val length: scala.Double = js.native
   def item(index: scala.Double): Plugin = js.native
@@ -20,5 +20,5 @@ trait PluginArray
 @JSGlobal("PluginArray")
 @js.native
 object PluginArray
-  extends ScalablyTyped.runtime.Instantiable0[PluginArray]
+  extends org.scalablytyped.runtime.Instantiable0[PluginArray]
 

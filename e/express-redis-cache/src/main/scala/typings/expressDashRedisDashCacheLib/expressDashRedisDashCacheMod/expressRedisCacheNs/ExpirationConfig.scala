@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ExpirationConfig
-  extends /* statusCode */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+  extends /* statusCode */ org.scalablytyped.runtime.StringDictionary[scala.Double]
 

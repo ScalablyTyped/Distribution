@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FakeXMLHttpRequestStatic
-  extends ScalablyTyped.runtime.Instantiable0[FakeXMLHttpRequest] {
+  extends org.scalablytyped.runtime.Instantiable0[FakeXMLHttpRequest] {
   /**
        * Default false.
        * When set to true, Sinon will check added filters if certain requests should be “unfaked”

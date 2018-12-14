@@ -19,5 +19,5 @@ trait SVGPathSegArcRel extends SVGPathSeg {
 @JSGlobal("SVGPathSegArcRel")
 @js.native
 object SVGPathSegArcRel
-  extends ScalablyTyped.runtime.Instantiable0[SVGPathSegArcRel]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPathSegArcRel]
 

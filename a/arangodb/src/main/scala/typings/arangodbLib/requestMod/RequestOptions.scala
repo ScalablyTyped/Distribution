@@ -12,7 +12,7 @@ trait RequestOptions extends js.Object {
   var encoding: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var followRedirect: js.UndefOr[scala.Boolean] = js.undefined
   var form: js.UndefOr[js.Any] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]] = js.undefined
   var json: js.UndefOr[scala.Boolean] = js.undefined
   var maxRedirects: js.UndefOr[scala.Double] = js.undefined
   var qs: js.UndefOr[js.Object] = js.undefined

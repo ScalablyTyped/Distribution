@@ -46,7 +46,7 @@ trait RoleStore extends js.Object {
          *
          * @returns {Object} Defined roles collection
          */
-  def getStore(): ScalablyTyped.runtime.StringDictionary[Role] = js.native
+  def getStore(): org.scalablytyped.runtime.StringDictionary[Role] = js.native
   /**
          * Checks if role is defined in store
          * @method

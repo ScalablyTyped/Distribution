@@ -10,7 +10,7 @@ trait DataSourceSettingsGroupby
   extends /**
 	 * Option for DataSourceSettingsGroupby
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Default collapse state
   	 *

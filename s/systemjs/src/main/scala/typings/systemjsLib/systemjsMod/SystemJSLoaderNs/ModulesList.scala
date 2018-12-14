@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ModulesList
-  extends /* bundleName */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  extends /* bundleName */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 

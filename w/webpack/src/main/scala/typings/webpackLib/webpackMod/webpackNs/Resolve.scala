@@ -12,7 +12,7 @@ trait Resolve extends js.Object {
            *
            * @see aliasFields
            */
-  var alias: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var alias: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * A list of fields in a package description object to try to parse
            * in the same format as the `alias` resolve option.

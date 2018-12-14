@@ -56,7 +56,7 @@ trait Schema
        * instance methods to schema virtuals, statics, and methods.
        */
   def loadClass(model: js.Function): this.type = js.native
-  def method(methodObj: ScalablyTyped.runtime.StringDictionary[js.Function]): this.type = js.native
+  def method(methodObj: org.scalablytyped.runtime.StringDictionary[js.Function]): this.type = js.native
   /**
        * Adds an instance method to documents constructed from Models compiled from this schema.
        * If a hash of name/fn pairs is passed as the only argument, each name/fn pair will be added as methods.
@@ -399,7 +399,7 @@ trait Schema
        * @returns an Array of path strings that are required by this schema.
        */
   def requiredPaths(invalidate: scala.Boolean): js.Array[java.lang.String] = js.native
-  def static(nameObj: ScalablyTyped.runtime.StringDictionary[js.Function]): this.type = js.native
+  def static(nameObj: org.scalablytyped.runtime.StringDictionary[js.Function]): this.type = js.native
   /**
        * Adds static "class" methods to Models compiled from this schema.
        */

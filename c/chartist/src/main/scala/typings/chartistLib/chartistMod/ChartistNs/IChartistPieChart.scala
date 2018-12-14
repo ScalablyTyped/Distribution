@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IChartistPieChart
   extends IChartistBase[IPieChartOptions]
-     with ScalablyTyped.runtime.Instantiable2[/* target */ js.Any, /* data */ IChartistData, IChartistPieChart]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable2[/* target */ js.Any, /* data */ IChartistData, IChartistPieChart]
+     with org.scalablytyped.runtime.Instantiable3[
       /* target */ js.Any, 
       /* data */ IChartistData, 
       /* options */ IPieChartOptions, 
       IChartistPieChart
     ]
-     with ScalablyTyped.runtime.Instantiable4[
+     with org.scalablytyped.runtime.Instantiable4[
       /* target */ js.Any, 
       /* data */ IChartistData, 
       /* options */ IPieChartOptions, 

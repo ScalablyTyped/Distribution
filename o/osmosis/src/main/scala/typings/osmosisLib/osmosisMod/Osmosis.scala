@@ -10,19 +10,19 @@ trait Osmosis extends js.Object {
   /**
        * Set configuration options for the **preceeding** command on down the chain.
        */
-  def config(option: ScalablyTyped.runtime.StringDictionary[js.Any]): Osmosis = js.native
-  /**
-       * Set configuration options for the **preceeding** command on down the chain.
-       */
-  def config(option: ScalablyTyped.runtime.StringDictionary[js.Any], value: js.Any): Osmosis = js.native
-  /**
-       * Set configuration options for the **preceeding** command on down the chain.
-       */
   def config(option: java.lang.String): Osmosis = js.native
   /**
        * Set configuration options for the **preceeding** command on down the chain.
        */
   def config(option: java.lang.String, value: js.Any): Osmosis = js.native
+  /**
+       * Set configuration options for the **preceeding** command on down the chain.
+       */
+  def config(option: org.scalablytyped.runtime.StringDictionary[js.Any]): Osmosis = js.native
+  /**
+       * Set configuration options for the **preceeding** command on down the chain.
+       */
+  def config(option: org.scalablytyped.runtime.StringDictionary[js.Any], value: js.Any): Osmosis = js.native
   /**
        * Set a cookie. Short for `.config({ cookies: ... })`. Note: Setting a cookie to `null` will delete the cookie.
        */
@@ -70,7 +70,7 @@ trait Osmosis extends js.Object {
   /**
        * Set multiple HTTP headers. Short for `.config({ headers: ... })`.
        */
-  def headers(headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]): Osmosis = js.native
+  def headers(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Osmosis = js.native
   /**
        * passing string to your function
        * log data

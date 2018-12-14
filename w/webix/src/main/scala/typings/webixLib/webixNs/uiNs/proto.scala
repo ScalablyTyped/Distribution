@@ -13,8 +13,8 @@ class proto () extends baseview {
   @JSName("config")
   var config_proto: protoConfig = js.native
   var data: webixLib.webixNs.DataStore = js.native
-  var `type`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var types: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native

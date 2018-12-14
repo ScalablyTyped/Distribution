@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Point
-  extends ScalablyTyped.runtime.Instantiable0[Point]
-     with ScalablyTyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, Point]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[Point]
+     with org.scalablytyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, Point]
+     with org.scalablytyped.runtime.Instantiable1[
       (/* position */ ArrayPoint) | (/* point */ Point) | (/* position */ svgDotJsLib.Anon_Y), 
       Point
     ] {

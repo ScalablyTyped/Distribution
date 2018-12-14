@@ -42,7 +42,7 @@ trait Anon_Directives[T] extends js.Object {
        *
        * see: animation
        */
-  var data: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
        * Registry of directives and components that may be found in this component's view.
        *

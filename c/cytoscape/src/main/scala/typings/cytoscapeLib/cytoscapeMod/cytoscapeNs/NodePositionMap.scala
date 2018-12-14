@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait NodePositionMap
-  extends /* nodeid */ ScalablyTyped.runtime.StringDictionary[Position]
+  extends /* nodeid */ org.scalablytyped.runtime.StringDictionary[Position]
 

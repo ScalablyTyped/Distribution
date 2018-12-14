@@ -31,5 +31,5 @@ trait HTMLHRElement extends HTMLElement {
 @JSGlobal("HTMLHRElement")
 @js.native
 object HTMLHRElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLHRElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLHRElement]
 

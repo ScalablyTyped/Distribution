@@ -20,7 +20,7 @@ trait MediaSource extends EventTarget {
 @JSGlobal("MediaSource")
 @js.native
 object MediaSource
-  extends ScalablyTyped.runtime.Instantiable0[MediaSource] {
+  extends org.scalablytyped.runtime.Instantiable0[MediaSource] {
   def isTypeSupported(`type`: java.lang.String): scala.Boolean = js.native
 }
 

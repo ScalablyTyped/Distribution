@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("jexl", JSImport.Namespace)
 @js.native
 object jexlModMembers
-  extends ScalablyTyped.runtime.TopLevel[BuildableJexl]
+  extends org.scalablytyped.runtime.TopLevel[BuildableJexl]
 

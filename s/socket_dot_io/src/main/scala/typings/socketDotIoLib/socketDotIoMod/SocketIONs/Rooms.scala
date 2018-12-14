@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Rooms
-  extends /* room */ ScalablyTyped.runtime.StringDictionary[Room]
+  extends /* room */ org.scalablytyped.runtime.StringDictionary[Room]
 

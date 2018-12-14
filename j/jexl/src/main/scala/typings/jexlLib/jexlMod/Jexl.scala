@@ -44,7 +44,7 @@ trait Jexl extends js.Object {
        * accepts a map of one or more transform names to their transform function.
        * @param map A map of transform names to transform functions
        */
-  def addTransforms(map: ScalablyTyped.runtime.StringDictionary[jexlLib.TransformFunction]): scala.Unit = js.native
+  def addTransforms(map: org.scalablytyped.runtime.StringDictionary[jexlLib.TransformFunction]): scala.Unit = js.native
   /**
        * Adds a unary operator to Jexl. Unary operators are currently only supported
        * on the left side of the value on which it will operate.

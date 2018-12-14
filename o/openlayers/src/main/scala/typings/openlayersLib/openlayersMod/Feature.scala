@@ -51,7 +51,7 @@ class Feature () extends Object {
        *     include a Geometry associated with a `geometry` key.
        * @api stable
        */
-  def this(opt_geometryOrProperties: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(opt_geometryOrProperties: openlayersLib.openlayersMod.geomNs.Geometry) = this()
   /**
        * @classdesc
        * A vector object for geographic features with a geometry and other
@@ -95,7 +95,7 @@ class Feature () extends Object {
        *     include a Geometry associated with a `geometry` key.
        * @api stable
        */
-  def this(opt_geometryOrProperties: openlayersLib.openlayersMod.geomNs.Geometry) = this()
+  def this(opt_geometryOrProperties: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Get the feature's default geometry.  A feature may have any number of named
        * geometries.  The "default" geometry (the one that is rendered by default) is

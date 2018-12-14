@@ -19,11 +19,11 @@ import scala.scalajs.js.annotation._
 trait UnionType
   extends refLib.refMod.Type
      with /** Pass it an existing Buffer instance to use that as the backing buffer. */
-ScalablyTyped.runtime.Instantiable2[/* arg */ nodeLib.Buffer, /* data */ js.Object, js.Any]
-     with ScalablyTyped.runtime.Instantiable0[js.Any]
+org.scalablytyped.runtime.Instantiable2[/* arg */ nodeLib.Buffer, /* data */ js.Object, js.Any]
+     with org.scalablytyped.runtime.Instantiable0[js.Any]
      with /** Pass it an existing Buffer instance to use that as the backing buffer. */
-ScalablyTyped.runtime.Instantiable1[(/* arg */ nodeLib.Buffer) | (/* data */ js.Object), js.Any] {
-  var fields: ScalablyTyped.runtime.StringDictionary[refDashUnionLib.Anon_Type] = js.native
+org.scalablytyped.runtime.Instantiable1[(/* arg */ nodeLib.Buffer) | (/* data */ js.Object), js.Any] {
+  var fields: org.scalablytyped.runtime.StringDictionary[refDashUnionLib.Anon_Type] = js.native
   def apply(): js.Any = js.native
   /** Pass it an existing Buffer instance to use that as the backing buffer. */
   def apply(arg: nodeLib.Buffer): js.Any = js.native

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IVaultValueListItemOperations
-  extends ScalablyTyped.runtime.Instantiable0[IVaultValueListItemOperations]
+  extends org.scalablytyped.runtime.Instantiable0[IVaultValueListItemOperations]
 

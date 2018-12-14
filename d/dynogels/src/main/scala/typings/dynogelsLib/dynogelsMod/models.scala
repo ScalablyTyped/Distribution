@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("dynogels", "models")
 @js.native
 object models
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Model]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Model]
 

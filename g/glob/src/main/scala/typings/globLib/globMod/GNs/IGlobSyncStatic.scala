@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IGlobSyncStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* pattern */ java.lang.String, IGlobBase]
-     with ScalablyTyped.runtime.Instantiable2[/* pattern */ java.lang.String, /* options */ IOptions, IGlobBase]
+  extends org.scalablytyped.runtime.Instantiable1[/* pattern */ java.lang.String, IGlobBase]
+     with org.scalablytyped.runtime.Instantiable2[/* pattern */ java.lang.String, /* options */ IOptions, IGlobBase]
 

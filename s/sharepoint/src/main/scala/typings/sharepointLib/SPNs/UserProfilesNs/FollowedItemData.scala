@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 class FollowedItemData ()
   extends sharepointLib.SPNs.ClientObject {
   /** An unordered collection of key/value pairs for custom properties to be set on the item. */
-  def get_properties(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def get_properties(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 

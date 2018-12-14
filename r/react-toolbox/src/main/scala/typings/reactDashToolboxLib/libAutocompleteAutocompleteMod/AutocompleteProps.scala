@@ -11,7 +11,7 @@ trait AutocompleteProps
      with /**
    * Additional properties passed to inner Input component.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Determines if user can create a new option with the current typed value.
      * @default false

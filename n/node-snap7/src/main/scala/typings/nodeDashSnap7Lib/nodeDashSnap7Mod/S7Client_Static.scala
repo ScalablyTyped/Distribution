@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait S7Client_Static
-  extends ScalablyTyped.runtime.Instantiable0[S7Client]
+  extends org.scalablytyped.runtime.Instantiable0[S7Client]
 

@@ -18,8 +18,8 @@ trait CustomEvent[T] extends Event {
 @JSGlobal("CustomEvent")
 @js.native
 object CustomEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, CustomEvent[js.Object]]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, CustomEvent[js.Object]]
+     with org.scalablytyped.runtime.Instantiable2[
       /* typeArg */ java.lang.String, 
       /* eventInitDict */ CustomEventInit[js.Object], 
       CustomEvent[js.Object]

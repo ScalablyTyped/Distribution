@@ -19,7 +19,7 @@ trait nlobjField
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * add a select option to this field (valid for select/multiselect fields).
        * This method is only supported on scripted fields via the UI Object API

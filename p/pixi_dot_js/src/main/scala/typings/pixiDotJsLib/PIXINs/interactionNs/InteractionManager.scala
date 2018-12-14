@@ -16,7 +16,7 @@ class InteractionManager protected ()
   def this(renderer: pixiDotJsLib.PIXINs.SystemRenderer, options: InteractionManagerOptions) = this()
   def this(renderer: pixiDotJsLib.PIXINs.WebGLRenderer, options: InteractionManagerOptions) = this()
   var _tempPoint: pixiDotJsLib.PIXINs.Point = js.native
-  var activeInteractionData: ScalablyTyped.runtime.NumberDictionary[InteractionData] = js.native
+  var activeInteractionData: org.scalablytyped.runtime.NumberDictionary[InteractionData] = js.native
   var autoPreventDefault: scala.Boolean = js.native
   var currentCursorMode: java.lang.String = js.native
   var currentCursorStyle: java.lang.String = js.native

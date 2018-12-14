@@ -51,6 +51,6 @@ trait $Refs extends js.Object {
        *
        * @param types (optional) Optionally only return values from certain locations ("file", "http", etc.)
        */
-  def values(types: java.lang.String*): ScalablyTyped.runtime.StringDictionary[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4]
+  def values(types: java.lang.String*): org.scalablytyped.runtime.StringDictionary[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4]
 }
 

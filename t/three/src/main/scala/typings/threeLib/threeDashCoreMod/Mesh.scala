@@ -18,7 +18,7 @@ class Mesh () extends Object3D {
   var geometry: Geometry | BufferGeometry = js.native
   var isMesh: threeLib.threeLibNumbers.`true` = js.native
   var material: Material | js.Array[Material] = js.native
-  var morphTargetDictionary: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Double]] = js.native
+  var morphTargetDictionary: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.native
   var morphTargetInfluences: js.UndefOr[js.Array[scala.Double]] = js.native
   def setDrawMode(drawMode: TrianglesDrawModes): scala.Unit = js.native
   def updateMorphTargets(): scala.Unit = js.native

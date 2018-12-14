@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("resolve-pkg", JSImport.Namespace)
 @js.native
 object resolveDashPkgModMembers
-  extends ScalablyTyped.runtime.TopLevel[resolveDashPkgLib.ResolveFunction]
+  extends org.scalablytyped.runtime.TopLevel[resolveDashPkgLib.ResolveFunction]
 

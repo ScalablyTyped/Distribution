@@ -12,7 +12,7 @@ trait Anon_Renderer
          * @param renderer Associated `VirtualRenderer` that draws everything
          * @param session The `EditSession` to refer to
         **/
-ScalablyTyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable1[
       /* renderer */ braceLib.braceMod.AceAjaxNs.VirtualRenderer, 
       braceLib.braceMod.AceAjaxNs.Editor
     ]
@@ -21,7 +21,7 @@ ScalablyTyped.runtime.Instantiable1[
          * @param renderer Associated `VirtualRenderer` that draws everything
          * @param session The `EditSession` to refer to
         **/
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* renderer */ braceLib.braceMod.AceAjaxNs.VirtualRenderer, 
       /* session */ braceLib.braceMod.AceAjaxNs.IEditSession, 
       braceLib.braceMod.AceAjaxNs.Editor

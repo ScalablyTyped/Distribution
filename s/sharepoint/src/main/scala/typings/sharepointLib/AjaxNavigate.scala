@@ -19,7 +19,7 @@ class AjaxNavigate () extends js.Object {
   def submit(formToSubmit: stdLib.HTMLFormElement): scala.Unit = js.native
   def update(
     url: java.lang.String,
-    updateParts: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double],
+    updateParts: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
     fullNavigate: scala.Boolean,
     anchorName: java.lang.String
   ): scala.Unit = js.native

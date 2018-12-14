@@ -10,7 +10,7 @@ trait IgRadialMenuItem
   extends /**
 	 * Option for IgRadialMenuItem
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Returns or sets a boolean indicating if the children should be rotated to align with the location of this element.
   	 */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Key[Q /* <: nextDashServerLib.routerMod.DefaultQuery */]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var assetPrefix: js.UndefOr[java.lang.String] = js.undefined
   var buildId: java.lang.String
   var err: js.UndefOr[js.Any] = js.undefined

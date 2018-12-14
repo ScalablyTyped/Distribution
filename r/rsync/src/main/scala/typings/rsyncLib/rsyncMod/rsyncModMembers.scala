@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rsync", JSImport.Namespace)
 @js.native
 object rsyncModMembers
-  extends ScalablyTyped.runtime.TopLevel[RsyncStatic]
+  extends org.scalablytyped.runtime.TopLevel[RsyncStatic]
 

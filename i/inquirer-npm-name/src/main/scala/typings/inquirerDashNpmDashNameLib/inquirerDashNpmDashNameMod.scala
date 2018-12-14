@@ -11,6 +11,6 @@ object inquirerDashNpmDashNameMod extends js.Object {
   def apply(
     name: java.lang.String | inquirerLib.inquirerMod.inquirerNs.Question[inquirerLib.inquirerMod.inquirerNs.Answers],
     inquirer: inquirerLib.inquirerMod.inquirerNs.Inquirer
-  ): js.Promise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  ): js.Promise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
 }
 

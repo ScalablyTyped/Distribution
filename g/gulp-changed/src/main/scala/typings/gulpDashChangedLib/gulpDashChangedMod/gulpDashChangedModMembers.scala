@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-changed", JSImport.Namespace)
 @js.native
 object gulpDashChangedModMembers
-  extends ScalablyTyped.runtime.TopLevel[IGulpChanged]
+  extends org.scalablytyped.runtime.TopLevel[IGulpChanged]
 

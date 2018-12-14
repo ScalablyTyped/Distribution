@@ -35,7 +35,7 @@ class WriteTree () extends js.Object {
        */
   def addMerge(
     path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path,
-    changedChildren: ScalablyTyped.runtime.StringDictionary[atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node],
+    changedChildren: org.scalablytyped.runtime.StringDictionary[atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node],
     writeId: scala.Double
   ): scala.Unit = js.native
   /**

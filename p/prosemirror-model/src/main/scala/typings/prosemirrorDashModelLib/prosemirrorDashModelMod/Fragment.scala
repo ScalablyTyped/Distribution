@@ -128,7 +128,7 @@ class Fragment[S /* <: Schema[_, _] */] () extends js.Object {
   /**
      * Create a JSON-serializeable representation of this fragment.
      */
-  def toJSON(): js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null] = js.native
+  def toJSON(): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null] = js.native
 }
 
 @JSImport("prosemirror-model", "Fragment")
@@ -180,6 +180,6 @@ object Fragment extends js.Object {
   /**
      * Deserialize a fragment from its JSON representation.
      */
-  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, value: ScalablyTyped.runtime.StringDictionary[js.Any]): prosemirrorDashModelLib.prosemirrorDashModelMod.Fragment[S] = js.native
+  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, value: org.scalablytyped.runtime.StringDictionary[js.Any]): prosemirrorDashModelLib.prosemirrorDashModelMod.Fragment[S] = js.native
 }
 

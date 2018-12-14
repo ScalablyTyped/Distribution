@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LDFlagSet
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[LDFlagValue]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[LDFlagValue]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CustomType
-  extends /* typeName */ ScalablyTyped.runtime.StringDictionary[typeDashCheckLib.Anon_TypeOf]
+  extends /* typeName */ org.scalablytyped.runtime.StringDictionary[typeDashCheckLib.Anon_TypeOf]
 

@@ -27,11 +27,11 @@ class TokenCache protected ()
        * @param tokenConfig
        * @param oauthConfig
        */
-  def this(tokenConfig: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]], oauthConfig: authmosphereLib.libSrcTypesOAuthConfigMod.TokenCacheOAuthConfig) = this()
+  def this(tokenConfig: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]], oauthConfig: authmosphereLib.libSrcTypesOAuthConfigMod.TokenCacheOAuthConfig) = this()
   /**
        * @param tokenConfig
        * @param oauthConfig
        */
-  def this(tokenConfig: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]], oauthConfig: authmosphereLib.libSrcTypesOAuthConfigMod.TokenCacheOAuthConfig, options: authmosphereLib.libSrcTypesTokenCacheConfigMod.TokenCacheOptions) = this()
+  def this(tokenConfig: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]], oauthConfig: authmosphereLib.libSrcTypesOAuthConfigMod.TokenCacheOAuthConfig, options: authmosphereLib.libSrcTypesTokenCacheConfigMod.TokenCacheOptions) = this()
 }
 

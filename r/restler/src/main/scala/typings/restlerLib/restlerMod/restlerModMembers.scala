@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("restler", JSImport.Namespace)
 @js.native
 object restlerModMembers
-  extends ScalablyTyped.runtime.TopLevel[RestlerStatic]
+  extends org.scalablytyped.runtime.TopLevel[RestlerStatic]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CFragmentMap[TFragment]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[TFragment]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[TFragment]
 

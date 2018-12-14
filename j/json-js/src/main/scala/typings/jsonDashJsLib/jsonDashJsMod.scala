@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("json-js", JSImport.Namespace)
 @js.native
 object jsonDashJsMod
-  extends ScalablyTyped.runtime.TopLevel[stdLib.JSON]
+  extends org.scalablytyped.runtime.TopLevel[stdLib.JSON]
 

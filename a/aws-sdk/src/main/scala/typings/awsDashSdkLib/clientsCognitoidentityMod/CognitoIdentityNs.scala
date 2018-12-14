@@ -326,7 +326,7 @@ object CognitoIdentityNs extends js.Object {
   
   
   trait IdentityProviders
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[IdentityProviderId]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[IdentityProviderId]
   
   
   trait ListIdentitiesInput extends js.Object {
@@ -390,7 +390,7 @@ object CognitoIdentityNs extends js.Object {
   
   
   trait LoginsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[IdentityProviderToken]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[IdentityProviderToken]
   
   
   trait LookupDeveloperIdentityInput extends js.Object {
@@ -498,11 +498,11 @@ object CognitoIdentityNs extends js.Object {
   
   
   trait RoleMappingMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[RoleMapping]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[RoleMapping]
   
   
   trait RolesMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ARNString]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ARNString]
   
   
   trait RulesConfigurationType extends js.Object {

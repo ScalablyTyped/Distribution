@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ErrorPOJO
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var message: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var stack: js.UndefOr[java.lang.String] = js.undefined

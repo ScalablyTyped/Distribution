@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait GlobalStrings[T]
-  extends /* language */ ScalablyTyped.runtime.StringDictionary[T]
+  extends /* language */ org.scalablytyped.runtime.StringDictionary[T]
 

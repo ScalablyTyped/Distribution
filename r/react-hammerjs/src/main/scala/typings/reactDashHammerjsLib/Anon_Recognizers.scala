@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Recognizers extends js.Object {
-  var recognizers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[hammerjsLib.RecognizerOptions]] = js.undefined
+  var recognizers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[hammerjsLib.RecognizerOptions]] = js.undefined
 }
 

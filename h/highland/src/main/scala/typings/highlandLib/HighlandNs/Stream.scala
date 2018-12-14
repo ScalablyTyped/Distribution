@@ -378,8 +378,8 @@ trait Stream[R]
   		 * @api public
   		 */
   // TODO verify this
-  def group(f: js.Function1[/* x */ R, java.lang.String]): Stream[ScalablyTyped.runtime.StringDictionary[js.Array[R]]] = js.native
-  def group(prop: java.lang.String): Stream[ScalablyTyped.runtime.StringDictionary[js.Array[R]]] = js.native
+  def group(f: js.Function1[/* x */ R, java.lang.String]): Stream[org.scalablytyped.runtime.StringDictionary[js.Array[R]]] = js.native
+  def group(prop: java.lang.String): Stream[org.scalablytyped.runtime.StringDictionary[js.Array[R]]] = js.native
   /**
   		 * Creates a new Stream with only the first value from the source.
   		 *

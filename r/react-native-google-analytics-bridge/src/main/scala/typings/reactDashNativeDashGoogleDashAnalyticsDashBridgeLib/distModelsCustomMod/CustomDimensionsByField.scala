@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CustomDimensionsByField
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String | scala.Boolean]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String | scala.Boolean]
 

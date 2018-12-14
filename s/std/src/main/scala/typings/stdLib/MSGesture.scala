@@ -15,5 +15,5 @@ trait MSGesture extends js.Object {
 @JSGlobal("MSGesture")
 @js.native
 object MSGesture
-  extends ScalablyTyped.runtime.Instantiable0[MSGesture]
+  extends org.scalablytyped.runtime.Instantiable0[MSGesture]
 

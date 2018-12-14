@@ -10,7 +10,7 @@ trait LayoutAnimationStatic extends js.Object {
   var Presets: reactDashNativeLib.Anon_Spring = js.native
   var Properties: LayoutAnimationProperties = js.native
   var Types: LayoutAnimationTypes = js.native
-  def configChecker(shapeTypes: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def configChecker(shapeTypes: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   /** Schedules an animation to happen on the next layout.
        * @param config Specifies animation properties:
        * `duration` in milliseconds

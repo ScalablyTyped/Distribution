@@ -11,10 +11,10 @@ trait VProperties
     The relaxation on `style` above is the reason why we need `any` as an option
     on the indexer type.
     */
-/* index */ ScalablyTyped.runtime.StringDictionary[
-      js.Any | java.lang.String | scala.Boolean | scala.Double | VHook | EventHandler | (ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double])
+/* index */ org.scalablytyped.runtime.StringDictionary[
+      js.Any | java.lang.String | scala.Boolean | scala.Double | VHook | EventHandler | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double])
     ] {
-  var attributes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var attributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
       I would like to use {[index: string]: string}, but then we couldn't use an
       object literal when setting the styles, since TypeScript doesn't seem to

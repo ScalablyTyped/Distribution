@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ConfigFile
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   var android: js.UndefOr[java.lang.String] = js.undefined
   var appium: js.UndefOr[java.lang.String] = js.undefined
   var chrome: js.UndefOr[java.lang.String] = js.undefined

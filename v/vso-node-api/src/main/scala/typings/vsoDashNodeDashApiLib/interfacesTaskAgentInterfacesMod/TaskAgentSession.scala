@@ -23,6 +23,6 @@ trait TaskAgentSession extends js.Object {
        * Gets the unique identifier for this session.
        */
   var sessionId: java.lang.String
-  var systemCapabilities: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var systemCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

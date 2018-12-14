@@ -12,7 +12,7 @@ class dialog protected () extends js.Object {
   val state: scala.Double = js.native
   def addFocusable(element: ckeditorLib.CKEDITORNs.domNs.element): scala.Unit = js.native
   def addFocusable(element: ckeditorLib.CKEDITORNs.domNs.element, index: scala.Double): scala.Unit = js.native
-  def addPage(contents: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def addPage(contents: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def click(id: java.lang.String): js.Any = js.native
   def commitContent(): scala.Unit = js.native
   def disableButton(id: java.lang.String): scala.Unit = js.native
@@ -24,9 +24,9 @@ class dialog protected () extends js.Object {
   def getName(): java.lang.String = js.native
   def getPageCount(): scala.Double = js.native
   def getParentEditor(): editor = js.native
-  def getPosition(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getPosition(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getSelectedElement(): ckeditorLib.CKEDITORNs.domNs.element = js.native
-  def getSize(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getSize(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getValueOf(pageId: java.lang.String, elementId: java.lang.String): js.Any = js.native
   def hide(): scala.Unit = js.native
   def hidePage(id: java.lang.String): scala.Unit = js.native
@@ -68,7 +68,7 @@ object dialog extends js.Object {
     minWidth: scala.Double,
     minHeight: scala.Double,
     onContentLoad: js.Function0[scala.Unit],
-    userDefinition: ScalablyTyped.runtime.StringDictionary[js.Any]
+    userDefinition: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def addUIElement(typeName: java.lang.String, builder: js.Function0[scala.Unit]): scala.Unit = js.native
   def cancelButton(): scala.Unit = js.native

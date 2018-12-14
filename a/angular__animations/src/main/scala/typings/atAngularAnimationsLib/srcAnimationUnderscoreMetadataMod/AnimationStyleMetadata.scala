@@ -14,8 +14,8 @@ trait AnimationStyleMetadata extends AnimationMetadata {
   /**
        * A set of CSS style properties.
        */
-  var styles: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` | (ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]) | (js.Array[
-    (ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]) | atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`
+  var styles: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]) | (js.Array[
+    (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]) | atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`
   ])
 }
 

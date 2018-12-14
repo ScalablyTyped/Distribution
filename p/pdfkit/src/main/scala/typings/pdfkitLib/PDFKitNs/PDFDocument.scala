@@ -14,8 +14,8 @@ trait PDFDocument
      with pdfkitLib.PDFKitNs.MixinsNs.PDFText[PDFDocument]
      with pdfkitLib.PDFKitNs.MixinsNs.PDFVector[PDFDocument]
      with pdfkitLib.PDFKitNs.MixinsNs.PDFFont[PDFDocument]
-     with ScalablyTyped.runtime.Instantiable0[PDFDocument]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ PDFDocumentOptions, PDFDocument] {
+     with org.scalablytyped.runtime.Instantiable0[PDFDocument]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ PDFDocumentOptions, PDFDocument] {
   /**
           * Wheter streams should be compressed
           */

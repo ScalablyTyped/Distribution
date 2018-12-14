@@ -14,6 +14,6 @@ trait InteractiveTarget extends js.Object {
   var hitArea: pixiDotJsLib.PIXINs.Rectangle | pixiDotJsLib.PIXINs.Circle | pixiDotJsLib.PIXINs.Ellipse | pixiDotJsLib.PIXINs.Polygon | pixiDotJsLib.PIXINs.RoundedRectangle | pixiDotJsLib.PIXINs.HitArea
   var interactive: scala.Boolean
   var interactiveChildren: scala.Boolean
-  var trackedPointers: ScalablyTyped.runtime.NumberDictionary[InteractionTrackingData]
+  var trackedPointers: org.scalablytyped.runtime.NumberDictionary[InteractionTrackingData]
 }
 

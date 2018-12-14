@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait SVGStringList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[java.lang.String] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   val length: scala.Double
   val numberOfItems: scala.Double
   def appendItem(newItem: java.lang.String): java.lang.String
@@ -22,5 +22,5 @@ trait SVGStringList
 @JSGlobal("SVGStringList")
 @js.native
 object SVGStringList
-  extends ScalablyTyped.runtime.Instantiable0[SVGStringList]
+  extends org.scalablytyped.runtime.Instantiable0[SVGStringList]
 

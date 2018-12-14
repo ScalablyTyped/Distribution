@@ -13,7 +13,7 @@ trait Filter
   extends /**
              * Support misc options
              */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
                * Re-apply last filter if lazy data is loaded
                */

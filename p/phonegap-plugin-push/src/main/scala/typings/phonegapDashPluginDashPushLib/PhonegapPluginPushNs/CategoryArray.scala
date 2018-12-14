@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CategoryArray
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[CategoryAction]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[CategoryAction]
 

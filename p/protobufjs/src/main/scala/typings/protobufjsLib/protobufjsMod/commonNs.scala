@@ -77,7 +77,7 @@ object commonNs extends js.Object {
   /** Properties of a google.protobuf.Struct message. */
   
   trait IStruct extends js.Object {
-    var fields: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IValue]] = js.undefined
+    var fields: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IValue]] = js.undefined
   }
   
   /** Properties of a google.protobuf.Timestamp message. */

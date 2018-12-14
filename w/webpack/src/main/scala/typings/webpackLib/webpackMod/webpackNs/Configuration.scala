@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Configuration extends js.Object {
   /** Set the value of require.amd and define.amd. */
-  var amd: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
+  var amd: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
   /** Report the first error as a hard error instead of tolerating it. */
   var bail: js.UndefOr[scala.Boolean] = js.undefined
   /** Cache generated modules and chunks to improve performance for multiple incremental builds. */

@@ -13,6 +13,6 @@ trait StereoPannerNode extends AudioNode {
 @JSGlobal("StereoPannerNode")
 @js.native
 object StereoPannerNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, StereoPannerNode]
-     with ScalablyTyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ StereoPannerOptions, StereoPannerNode]
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, StereoPannerNode]
+     with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ StereoPannerOptions, StereoPannerNode]
 

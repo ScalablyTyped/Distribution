@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WatchStatic
-  extends ScalablyTyped.runtime.Instantiable2[/* consul */ Consul, /* opts */ consulLib.consulMod.ConsulNs.WatchNs.Options, Watch]
+  extends org.scalablytyped.runtime.Instantiable2[/* consul */ Consul, /* opts */ consulLib.consulMod.ConsulNs.WatchNs.Options, Watch]
 

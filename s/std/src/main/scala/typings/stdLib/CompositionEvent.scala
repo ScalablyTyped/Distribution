@@ -22,8 +22,8 @@ trait CompositionEvent extends UIEvent {
 @JSGlobal("CompositionEvent")
 @js.native
 object CompositionEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, CompositionEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, CompositionEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* typeArg */ java.lang.String, 
       /* eventInitDict */ CompositionEventInit, 
       CompositionEvent

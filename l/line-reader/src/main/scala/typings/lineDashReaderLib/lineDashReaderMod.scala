@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("line-reader", JSImport.Namespace)
 @js.native
 object lineDashReaderMod
-  extends ScalablyTyped.runtime.TopLevel[LineReader]
+  extends org.scalablytyped.runtime.TopLevel[LineReader]
 

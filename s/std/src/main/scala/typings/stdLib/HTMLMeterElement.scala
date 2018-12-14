@@ -19,5 +19,5 @@ trait HTMLMeterElement extends HTMLElement {
 @JSGlobal("HTMLMeterElement")
 @js.native
 object HTMLMeterElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLMeterElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLMeterElement]
 

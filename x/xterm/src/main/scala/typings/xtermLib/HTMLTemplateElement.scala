@@ -13,5 +13,5 @@ trait HTMLTemplateElement extends HTMLElement {
 @JSGlobal("HTMLTemplateElement")
 @js.native
 object HTMLTemplateElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLTemplateElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLTemplateElement]
 

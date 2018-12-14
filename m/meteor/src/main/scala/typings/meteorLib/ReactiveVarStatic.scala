@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ReactiveVarStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* initialValue */ js.Object, ReactiveVar[js.Object]]
-     with ScalablyTyped.runtime.Instantiable2[/* initialValue */ js.Object, /* equalsFunc */ js.Function, ReactiveVar[js.Object]]
+  extends org.scalablytyped.runtime.Instantiable1[/* initialValue */ js.Object, ReactiveVar[js.Object]]
+     with org.scalablytyped.runtime.Instantiable2[/* initialValue */ js.Object, /* equalsFunc */ js.Function, ReactiveVar[js.Object]]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SharedArrayBufferConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* byteLength */ scala.Double, SharedArrayBuffer]
+  extends org.scalablytyped.runtime.Instantiable1[/* byteLength */ scala.Double, SharedArrayBuffer]
 

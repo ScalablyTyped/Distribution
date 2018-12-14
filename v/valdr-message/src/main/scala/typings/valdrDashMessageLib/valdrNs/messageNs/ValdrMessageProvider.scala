@@ -11,7 +11,7 @@ trait ValdrMessageProvider extends js.Object {
            * Adds messages for AngularJS build-in validators (eg "required" and "number") or for specific fields (eg "Person.lastName.required").
            * @param messages the list of key/value pairs.
            */
-  def addMessages(messages: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit
+  def addMessages(messages: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit
   /**
            * Gets the validator message.
            * @param typeName the name of the type.

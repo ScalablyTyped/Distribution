@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object indentNsMembers extends js.Object {
   def registerCommands(
     editor: ckeditorLib.CKEDITORNs.editor,
-    commands: ScalablyTyped.runtime.StringDictionary[ckeditorLib.CKEDITORNs.command]
+    commands: org.scalablytyped.runtime.StringDictionary[ckeditorLib.CKEDITORNs.command]
   ): scala.Unit = js.native
 }
 

@@ -14,5 +14,5 @@ trait MSGraphicsTrust extends js.Object {
 @JSGlobal("MSGraphicsTrust")
 @js.native
 object MSGraphicsTrust
-  extends ScalablyTyped.runtime.Instantiable0[MSGraphicsTrust]
+  extends org.scalablytyped.runtime.Instantiable0[MSGraphicsTrust]
 

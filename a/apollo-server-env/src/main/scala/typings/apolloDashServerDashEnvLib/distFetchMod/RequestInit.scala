@@ -14,7 +14,7 @@ trait RequestInit extends js.Object {
   var cache: js.UndefOr[RequestCache] = js.undefined
   // Cloudflare Workers accept a `cf` property to control Cloudflare features
   // See https://developers.cloudflare.com/workers/reference/cloudflare-features/
-  var cf: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var cf: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var compress: js.UndefOr[scala.Boolean] = js.undefined
   var credentials: js.UndefOr[RequestCredentials] = js.undefined
   // The following properties are node-fetch extensions

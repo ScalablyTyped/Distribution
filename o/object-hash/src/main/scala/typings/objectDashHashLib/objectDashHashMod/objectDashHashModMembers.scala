@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("object-hash", JSImport.Namespace)
 @js.native
 object objectDashHashModMembers
-  extends ScalablyTyped.runtime.TopLevel[objectDashHashLib.objectDashHashMod.ObjectHashNs.Hash]
+  extends org.scalablytyped.runtime.TopLevel[objectDashHashLib.objectDashHashMod.ObjectHashNs.Hash]
 

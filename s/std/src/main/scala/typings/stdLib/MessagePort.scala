@@ -106,5 +106,5 @@ trait MessagePort extends EventTarget {
 @JSGlobal("MessagePort")
 @js.native
 object MessagePort
-  extends ScalablyTyped.runtime.Instantiable0[MessagePort]
+  extends org.scalablytyped.runtime.Instantiable0[MessagePort]
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ILinkHTMLAttributes[T]
   extends reactLib.reactMod.ReactNs.HTMLAttributes[T]
-     with /* index */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var download: js.UndefOr[js.Any] = js.undefined

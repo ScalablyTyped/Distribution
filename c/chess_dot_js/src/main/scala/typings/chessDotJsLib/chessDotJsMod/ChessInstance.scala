@@ -64,7 +64,7 @@ trait ChessInstance extends js.Object {
        * @param args (optional) Header pairs to store in the header.
        * @returns The current header information after storing any values.
        */
-  def header(args: java.lang.String*): ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = js.native
+  def header(args: java.lang.String*): org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = js.native
   /**
        * Returns a list containing the moves of the current game.
        * Options is an optional parameter which may contain a 'verbose' flag.

@@ -19,8 +19,8 @@ trait IntersectionObserver extends js.Object {
 @JSGlobal("IntersectionObserver")
 @js.native
 object IntersectionObserver
-  extends ScalablyTyped.runtime.Instantiable1[/* callback */ IntersectionObserverCallback, IntersectionObserver]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* callback */ IntersectionObserverCallback, IntersectionObserver]
+     with org.scalablytyped.runtime.Instantiable2[
       /* callback */ IntersectionObserverCallback, 
       /* options */ IntersectionObserverInit, 
       IntersectionObserver

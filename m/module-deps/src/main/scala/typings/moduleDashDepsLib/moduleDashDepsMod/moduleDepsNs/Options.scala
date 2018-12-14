@@ -10,23 +10,23 @@ import scala.scalajs.js.annotation._
      */
 
 trait Options
-  extends /* prop */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   // un-documented options used by module-deps
   var basedir: js.UndefOr[java.lang.String] = js.undefined
   /**
            * An object mapping filenames to file objects to skip costly io
            */
-  var cache: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var cache: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * A custom dependency detection function. opts.detect(source) should return an array of dependency module names. By default detective is used
            */
   var detect: js.UndefOr[js.Function1[/* source */ java.lang.String, js.Array[java.lang.String]]] = js.undefined
-  var expose: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var expose: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var extensions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
            * An object mapping filenames to raw source to avoid reading from disk.
            */
-  var fileCache: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var fileCache: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * A function (id) to skip resolution of some module id strings. If defined,
            * opts.filter(id) should return truthy for all the ids to include and falsey for all the ids to skip.
@@ -37,7 +37,7 @@ trait Options
            * Ignore files that failed to resolve
            */
   var ignoreMissing: js.UndefOr[scala.Boolean] = js.undefined
-  var modules: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var modules: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * An array of absolute paths to not parse for dependencies.
            * Use this for large dependencies like jquery or threejs which take forever to parse.
@@ -47,7 +47,7 @@ trait Options
            * An object mapping filenames to their parent package.json contents
            * for browser fields, main entries, and transforms
            */
-  var packageCache: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var packageCache: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
    // tslint:disable-line:void-return
   /**
            * Transform the parsed package.json contents before using the values.

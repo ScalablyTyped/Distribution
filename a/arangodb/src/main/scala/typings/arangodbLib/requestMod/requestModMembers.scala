@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@arangodb/request", JSImport.Namespace)
 @js.native
 object requestModMembers
-  extends ScalablyTyped.runtime.TopLevel[Request]
+  extends org.scalablytyped.runtime.TopLevel[Request]
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("vnu-jar", JSImport.Namespace)
 @js.native
 object vnuDashJarMod
-  extends ScalablyTyped.runtime.TopLevel[java.lang.String]
+  extends org.scalablytyped.runtime.TopLevel[java.lang.String]
 

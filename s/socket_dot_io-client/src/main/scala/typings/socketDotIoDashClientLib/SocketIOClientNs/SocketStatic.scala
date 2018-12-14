@@ -16,7 +16,7 @@ trait SocketStatic
 		 * @param nsp The namespace that this socket is for (@default '/')
 		 * @return A new Socket
 		 */
-ScalablyTyped.runtime.Instantiable2[/* url */ java.lang.String, /* opts */ js.Any, Manager] {
+org.scalablytyped.runtime.Instantiable2[/* url */ java.lang.String, /* opts */ js.Any, Manager] {
   /**
   		 * Creates a new Socket, used for communicating with a specific namespace
   		 * @param io The Manager that's controlling this socket

@@ -17,7 +17,7 @@ trait Anon_DocumentResult extends js.Object {
       scala.Unit
     ]
   ]
-  var updateQueries: ScalablyTyped.runtime.StringDictionary[apolloDashClientLib.dataStoreMod.QueryWithUpdater]
+  var updateQueries: org.scalablytyped.runtime.StringDictionary[apolloDashClientLib.dataStoreMod.QueryWithUpdater]
   var variables: js.Any
 }
 

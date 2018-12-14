@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ResourcesPlatform
-  extends /* imgType */ ScalablyTyped.runtime.StringDictionary[ionicLib.Anon_NodeAttributes]
+  extends /* imgType */ org.scalablytyped.runtime.StringDictionary[ionicLib.Anon_NodeAttributes]
 

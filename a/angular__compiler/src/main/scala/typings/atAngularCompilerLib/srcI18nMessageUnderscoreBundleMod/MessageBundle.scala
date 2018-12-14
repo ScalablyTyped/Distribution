@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/i18n/message_bundle", "MessageBundle")
 @js.native
 class MessageBundle protected () extends js.Object {
-  def this(_htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _implicitTags: js.Array[java.lang.String], _implicitAttrs: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]) = this()
-  def this(_htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _implicitTags: js.Array[java.lang.String], _implicitAttrs: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]], _locale: java.lang.String) = this()
+  def this(_htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _implicitTags: js.Array[java.lang.String], _implicitAttrs: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]) = this()
+  def this(_htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _implicitTags: js.Array[java.lang.String], _implicitAttrs: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]], _locale: java.lang.String) = this()
   var _htmlParser: js.Any = js.native
   var _implicitAttrs: js.Any = js.native
   var _implicitTags: js.Any = js.native

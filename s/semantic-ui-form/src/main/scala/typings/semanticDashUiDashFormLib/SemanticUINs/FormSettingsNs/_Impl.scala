@@ -15,7 +15,7 @@ trait _Impl extends js.Object {
                * Debug output to console
                */
   var debug: scala.Boolean
-  var defaults: ScalablyTyped.runtime.StringDictionary[semanticDashUiDashFormLib.SemanticUINs.FormNs.Field]
+  var defaults: org.scalablytyped.runtime.StringDictionary[semanticDashUiDashFormLib.SemanticUINs.FormNs.Field]
   /**
                * Delay from last typed letter to validate a field when using on: change or when revalidating a field.
                *
@@ -31,7 +31,7 @@ trait _Impl extends js.Object {
   // endregion
   // region Debug Settings
   var error: semanticDashUiDashFormLib.SemanticUINs.FormNs.ErrorSettings
-  var fields: ScalablyTyped.runtime.StringDictionary[
+  var fields: org.scalablytyped.runtime.StringDictionary[
     java.lang.String | js.Array[java.lang.String] | semanticDashUiDashFormLib.SemanticUINs.FormNs.Field
   ]
   /**
@@ -83,7 +83,7 @@ trait _Impl extends js.Object {
   var revalidate: scala.Boolean
   // endregion
   // region Rules
-  var rules: ScalablyTyped.runtime.StringDictionary[
+  var rules: org.scalablytyped.runtime.StringDictionary[
     js.ThisFunction1[/* this */ stdLib.HTMLElement, /* repeated */js.Any, scala.Boolean]
   ]
   // endregion

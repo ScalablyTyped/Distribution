@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DataTables
   extends CoreMethods
-     with /* index */ ScalablyTyped.runtime.NumberDictionary[Api]
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[Api]
 

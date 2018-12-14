@@ -10,7 +10,7 @@ trait IgGridCellMerging
   extends /**
 	 * Option for igGridCellMerging
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var cellsMerged: js.UndefOr[CellsMergedEvent] = js.undefined
   /**
   	 * Event fired before a new merged cells group is created.

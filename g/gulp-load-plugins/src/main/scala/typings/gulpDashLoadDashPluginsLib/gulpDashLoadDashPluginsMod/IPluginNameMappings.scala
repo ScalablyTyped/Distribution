@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IPluginNameMappings
-  extends /* npmPackageName */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* npmPackageName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

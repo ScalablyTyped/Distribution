@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 /* RemoveDifficultInheritance: 
 - Lifted 1 members from Set(std.Readonly) */ 
 trait DirectiveBinding extends js.Object {
-  val modifiers: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  val modifiers: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 }
 

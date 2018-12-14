@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("moxios", JSImport.Namespace)
 @js.native
 object moxiosModMembers
-  extends ScalablyTyped.runtime.TopLevel[moxiosLib.Anon_Delay]
+  extends org.scalablytyped.runtime.TopLevel[moxiosLib.Anon_Delay]
 

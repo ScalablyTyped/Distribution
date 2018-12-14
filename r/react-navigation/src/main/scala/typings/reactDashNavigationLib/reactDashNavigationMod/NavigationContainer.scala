@@ -13,7 +13,7 @@ trait NavigationContainer
     ] {
   var navigationOptions: js.Any = js.native
   var router: NavigationRouter[_, _] = js.native
-  var screenProps: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var screenProps: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var state: reactDashNavigationLib.Anon_Nav = js.native
 }
 

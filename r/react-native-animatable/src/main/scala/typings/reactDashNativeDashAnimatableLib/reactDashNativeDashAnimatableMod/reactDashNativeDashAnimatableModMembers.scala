@@ -29,7 +29,7 @@ object reactDashNativeDashAnimatableModMembers extends js.Object {
     ]
   ): js.Object = js.native
   def initializeRegistryWithDefinitions(
-    animations: ScalablyTyped.runtime.StringDictionary[
+    animations: org.scalablytyped.runtime.StringDictionary[
       CustomAnimation[
         reactDashNativeLib.reactDashNativeMod.TextStyle with reactDashNativeLib.reactDashNativeMod.ViewStyle with reactDashNativeLib.reactDashNativeMod.ImageStyle
       ]

@@ -10,7 +10,7 @@ trait IgTreeGridMultiColumnHeaders
   extends /**
 	 * Option for igTreeGridMultiColumnHeaders
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event fired after the group collapsing has been executed and results are rendered.
   	 */

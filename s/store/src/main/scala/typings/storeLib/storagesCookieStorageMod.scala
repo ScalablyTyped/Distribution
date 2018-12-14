@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("store/storages/cookieStorage", JSImport.Namespace)
 @js.native
 object storagesCookieStorageMod
-  extends ScalablyTyped.runtime.TopLevel[StoreJsStorage]
+  extends org.scalablytyped.runtime.TopLevel[StoreJsStorage]
 

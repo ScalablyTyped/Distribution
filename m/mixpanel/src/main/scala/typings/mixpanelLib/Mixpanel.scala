@@ -246,7 +246,7 @@ trait Mixpanel extends js.Object {
        * @param properties An associative array of properties to store about the user
        * @param days How many days since the user's last visit to store the super properties
        */
-  def register(properties: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def register(properties: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * Register a set of super properties, which are included with all
        * events. This will overwrite previous super property values.
@@ -265,7 +265,7 @@ trait Mixpanel extends js.Object {
        * @param properties An associative array of properties to store about the user
        * @param days How many days since the user's last visit to store the super properties
        */
-  def register(properties: ScalablyTyped.runtime.StringDictionary[js.Any], days: scala.Double): scala.Unit = js.native
+  def register(properties: org.scalablytyped.runtime.StringDictionary[js.Any], days: scala.Double): scala.Unit = js.native
   /**
        * Register a set of super properties only once. This will not
        * overwrite previous super property values, unlike `register()`.
@@ -286,7 +286,7 @@ trait Mixpanel extends js.Object {
        * @param defaultValue Value to override if already set in super properties (ex: 'False') Default: 'None'
        * @param days How many days since the users last visit to store the super properties
        */
-  def register_once(properties: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def register_once(properties: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * Register a set of super properties only once. This will not
        * overwrite previous super property values, unlike `register()`.
@@ -307,7 +307,7 @@ trait Mixpanel extends js.Object {
        * @param defaultValue Value to override if already set in super properties (ex: 'False') Default: 'None'
        * @param days How many days since the users last visit to store the super properties
        */
-  def register_once(properties: ScalablyTyped.runtime.StringDictionary[js.Any], defaultValue: java.lang.String): scala.Unit = js.native
+  def register_once(properties: org.scalablytyped.runtime.StringDictionary[js.Any], defaultValue: java.lang.String): scala.Unit = js.native
   /**
        * Register a set of super properties only once. This will not
        * overwrite previous super property values, unlike `register()`.
@@ -329,7 +329,7 @@ trait Mixpanel extends js.Object {
        * @param days How many days since the users last visit to store the super properties
        */
   def register_once(
-    properties: ScalablyTyped.runtime.StringDictionary[js.Any],
+    properties: org.scalablytyped.runtime.StringDictionary[js.Any],
     defaultValue: java.lang.String,
     days: scala.Double
   ): scala.Unit = js.native
@@ -393,7 +393,7 @@ trait Mixpanel extends js.Object {
        * @param properties A set of properties to include with the event you're sending. These describe the user who did the event or details about the event itself.
        * @param callback If provided, the callback function will be called after tracking the event.
        */
-  def track(eventName: java.lang.String, properties: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def track(eventName: java.lang.String, properties: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * Track an event. This is the most important and
        * frequently used Mixpanel function.
@@ -411,7 +411,7 @@ trait Mixpanel extends js.Object {
        */
   def track(
     eventName: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[js.Any],
+    properties: org.scalablytyped.runtime.StringDictionary[js.Any],
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -470,7 +470,7 @@ trait Mixpanel extends js.Object {
   def track_forms(
     querySelector: java.lang.String,
     eventName: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[js.Any]
+    properties: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   /**
        * Track clicks on a set of document elements. Selector must be a
@@ -530,7 +530,7 @@ trait Mixpanel extends js.Object {
   def track_links(
     querySelector: java.lang.String,
     eventName: java.lang.String,
-    properties: ScalablyTyped.runtime.StringDictionary[js.Any]
+    properties: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   /**
        * Delete a super property stored with the current user.

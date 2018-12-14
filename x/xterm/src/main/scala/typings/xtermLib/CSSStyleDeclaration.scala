@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CSSStyleDeclaration
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[java.lang.String] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   var alignContent: java.lang.String | scala.Null = js.native
   var alignItems: java.lang.String | scala.Null = js.native
   var alignSelf: java.lang.String | scala.Null = js.native
@@ -478,5 +478,5 @@ trait CSSStyleDeclaration
 @JSGlobal("CSSStyleDeclaration")
 @js.native
 object CSSStyleDeclaration
-  extends ScalablyTyped.runtime.Instantiable0[CSSStyleDeclaration]
+  extends org.scalablytyped.runtime.Instantiable0[CSSStyleDeclaration]
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait ListItemProps
   extends reactDashMdLib.libInksInjectInkMod.InjectedInkProps
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var actionButtonIcon: js.UndefOr[java.lang.String] = js.undefined
   var actionButtonOnClick: js.UndefOr[
     js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]

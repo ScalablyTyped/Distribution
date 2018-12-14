@@ -21,5 +21,5 @@ trait HSBtoRGB
          * @param bri 
          * @return  
          */
-ScalablyTyped.runtime.Instantiable3[/* hue */ scala.Double, /* sat */ scala.Double, /* bri */ scala.Double, scala.Double]
+org.scalablytyped.runtime.Instantiable3[/* hue */ scala.Double, /* sat */ scala.Double, /* bri */ scala.Double, scala.Double]
 

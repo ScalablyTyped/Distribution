@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait BatchGetRequestMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[KeysAndAttributes]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[KeysAndAttributes]
 

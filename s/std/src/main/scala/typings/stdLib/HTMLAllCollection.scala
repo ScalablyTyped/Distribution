@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HTMLAllCollection
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Element] {
-  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[Element] {
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Element]] = js.native
   /**
        * Returns the number of elements in the collection.
@@ -31,5 +31,5 @@ trait HTMLAllCollection
 @JSGlobal("HTMLAllCollection")
 @js.native
 object HTMLAllCollection
-  extends ScalablyTyped.runtime.Instantiable0[HTMLAllCollection]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLAllCollection]
 

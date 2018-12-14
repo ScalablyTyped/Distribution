@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NgModuleDecorator
-  extends ScalablyTyped.runtime.Instantiable0[NgModule]
-     with ScalablyTyped.runtime.Instantiable1[/* obj */ NgModule, NgModule] {
+  extends org.scalablytyped.runtime.Instantiable0[NgModule]
+     with org.scalablytyped.runtime.Instantiable1[/* obj */ NgModule, NgModule] {
   /**
        * Marks a class as an NgModule and supplies configuration metadata.
        */

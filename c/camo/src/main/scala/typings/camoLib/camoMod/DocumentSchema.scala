@@ -10,7 +10,7 @@ trait DocumentSchema
   extends /**
 		 * Index signature
 		 */
-/* property */ ScalablyTyped.runtime.StringDictionary[SchemaType] {
+/* property */ org.scalablytyped.runtime.StringDictionary[SchemaType] {
   /**
   		 * Document id
   		 */

@@ -27,14 +27,14 @@ object graphqlModMembers extends js.Object {
     requestString: java.lang.String,
     rootValue: js.Any,
     contextValue: js.Any,
-    variableValues: ScalablyTyped.runtime.StringDictionary[js.Any]
+    variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Promise[GraphQLResult] = js.native
   def graphql(
     schema: GraphQLSchema,
     requestString: java.lang.String,
     rootValue: js.Any,
     contextValue: js.Any,
-    variableValues: ScalablyTyped.runtime.StringDictionary[js.Any],
+    variableValues: org.scalablytyped.runtime.StringDictionary[js.Any],
     operationName: java.lang.String
   ): js.Promise[GraphQLResult] = js.native
   def validate(schema: GraphQLSchema, ast: Document): js.Array[GraphQLError] = js.native

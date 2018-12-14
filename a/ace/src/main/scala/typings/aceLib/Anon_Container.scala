@@ -12,13 +12,13 @@ trait Anon_Container
          * @param container The root element of the editor
          * @param theme The starting theme
         **/
-ScalablyTyped.runtime.Instantiable1[/* container */ stdLib.HTMLElement, aceLib.AceAjaxNs.VirtualRenderer]
+org.scalablytyped.runtime.Instantiable1[/* container */ stdLib.HTMLElement, aceLib.AceAjaxNs.VirtualRenderer]
      with /**
          * Constructs a new `VirtualRenderer` within the `container` specified, applying the given `theme`.
          * @param container The root element of the editor
          * @param theme The starting theme
         **/
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* container */ stdLib.HTMLElement, 
       /* theme */ java.lang.String, 
       aceLib.AceAjaxNs.VirtualRenderer

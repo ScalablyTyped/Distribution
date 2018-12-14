@@ -14,7 +14,7 @@ object newrelicModMembers extends js.Object {
   val instrumentWebframework: Instrument = js.native
   def addCustomAttribute(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def addCustomAttribute(key: java.lang.String, value: scala.Double): scala.Unit = js.native
-  def addCustomAttributes(atts: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]): scala.Unit = js.native
+  def addCustomAttributes(atts: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): scala.Unit = js.native
   def addIgnoringRule(pattern: java.lang.String): scala.Unit = js.native
   def addIgnoringRule(pattern: stdLib.RegExp): scala.Unit = js.native
   def addNamingRule(pattern: java.lang.String, name: java.lang.String): scala.Unit = js.native
@@ -26,10 +26,13 @@ object newrelicModMembers extends js.Object {
   def incrementMetric(name: java.lang.String): scala.Unit = js.native
   def incrementMetric(name: java.lang.String, value: scala.Double): scala.Unit = js.native
   def noticeError(error: stdLib.Error): scala.Unit = js.native
-  def noticeError(error: stdLib.Error, customAttributes: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def noticeError(
+    error: stdLib.Error,
+    customAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): scala.Unit = js.native
   def recordCustomEvent(
     eventType: java.lang.String,
-    attributes: ScalablyTyped.runtime.StringDictionary[scala.Boolean | scala.Double | java.lang.String]
+    attributes: org.scalablytyped.runtime.StringDictionary[scala.Boolean | scala.Double | java.lang.String]
   ): scala.Unit = js.native
   def recordMetric(name: java.lang.String, value: Metric): scala.Unit = js.native
   def recordMetric(name: java.lang.String, value: scala.Double): scala.Unit = js.native

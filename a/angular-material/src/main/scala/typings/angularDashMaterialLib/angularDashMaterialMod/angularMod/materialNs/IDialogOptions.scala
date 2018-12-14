@@ -27,7 +27,7 @@ trait IDialogOptions extends js.Object {
   var fullscreen: js.UndefOr[scala.Boolean] = js.undefined
    // default: true
   var hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined
-  var locals: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var locals: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var onComplete: js.UndefOr[
     js.Function2[

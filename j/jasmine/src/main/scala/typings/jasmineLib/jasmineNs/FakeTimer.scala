@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FakeTimer
-  extends ScalablyTyped.runtime.Instantiable0[js.Any] {
+  extends org.scalablytyped.runtime.Instantiable0[js.Any] {
   def reset(): scala.Unit = js.native
   def runFunctionsWithinRange(oldMillis: scala.Double, nowMillis: scala.Double): scala.Unit = js.native
   def scheduleFunction(

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ITestGroup
-  extends /* property */ ScalablyTyped.runtime.StringDictionary[
+  extends /* property */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[
         ITestGroup | ITestBody | (js.Function1[/* callback */ ICallbackFunction, scala.Unit])
       ]

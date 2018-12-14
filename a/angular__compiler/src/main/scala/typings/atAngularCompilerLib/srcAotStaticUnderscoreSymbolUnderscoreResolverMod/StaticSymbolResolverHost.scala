@@ -16,7 +16,7 @@ trait StaticSymbolResolverHost extends js.Object {
        * @param modulePath is a string identifier for a module as an absolute path.
        * @returns the metadata for the given module.
        */
-  def getMetadataFor(modulePath: java.lang.String): js.UndefOr[js.Array[ScalablyTyped.runtime.StringDictionary[_]]] = js.native
+  def getMetadataFor(modulePath: java.lang.String): js.UndefOr[js.Array[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
        * Get a file suitable for display to the user that should be relative to the project directory
        * or the current directory.

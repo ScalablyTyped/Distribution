@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait InputDecorator
-  extends ScalablyTyped.runtime.Instantiable0[js.Any]
-     with ScalablyTyped.runtime.Instantiable1[/* bindingPropertyName */ java.lang.String, js.Any] {
+  extends org.scalablytyped.runtime.Instantiable0[js.Any]
+     with org.scalablytyped.runtime.Instantiable1[/* bindingPropertyName */ java.lang.String, js.Any] {
   /**
        * Decorator that marks a class as pipe and supplies configuration metadata.
        *

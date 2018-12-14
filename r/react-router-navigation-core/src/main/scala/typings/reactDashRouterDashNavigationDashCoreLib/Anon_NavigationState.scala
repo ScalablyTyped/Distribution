@@ -13,6 +13,6 @@ trait Anon_NavigationState extends js.Object {
   var tabs: js.Array[
     reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.Tab
   ]
-  var tabsHistory: ScalablyTyped.runtime.NumberDictionary[js.Array[historyLib.historyMod.Location[historyLib.historyMod.LocationState]]]
+  var tabsHistory: org.scalablytyped.runtime.NumberDictionary[js.Array[historyLib.historyMod.Location[historyLib.historyMod.LocationState]]]
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object enzymeDashExtensionsModMembers extends js.Object {
   def apply(
-    s: ScalablyTyped.runtime.Instantiable1[
+    s: org.scalablytyped.runtime.Instantiable1[
       /* nodes */ js.Array[reactLib.reactMod.Global.JSXNs.Element], 
       enzymeLib.enzymeMod.ShallowWrapper[js.Object, js.Object, js.Object]
     ]

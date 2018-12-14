@@ -10,7 +10,7 @@ trait ComponentDecorator
   extends /**
      * See the `@Component` decorator.
      */
-ScalablyTyped.runtime.Instantiable1[/* obj */ Component, Component] {
+org.scalablytyped.runtime.Instantiable1[/* obj */ Component, Component] {
   /**
        * Decorator that marks a class as an Angular component and provides configuration
        * metadata that determines how the component should be processed,

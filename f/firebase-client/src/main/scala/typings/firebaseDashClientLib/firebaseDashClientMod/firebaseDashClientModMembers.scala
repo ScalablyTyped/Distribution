@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("firebase-client", JSImport.Namespace)
 @js.native
 object firebaseDashClientModMembers
-  extends ScalablyTyped.runtime.TopLevel[FirebaseClient]
+  extends org.scalablytyped.runtime.TopLevel[FirebaseClient]
 

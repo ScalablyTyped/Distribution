@@ -856,7 +856,7 @@ object IAMNs extends js.Object {
   
   
   trait EvalDecisionDetailsType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[PolicyEvaluationDecisionType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[PolicyEvaluationDecisionType]
   
   
   trait EvaluationResult extends js.Object {
@@ -7345,7 +7345,7 @@ object IAMNs extends js.Object {
   
   
   trait summaryMapType
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[summaryValueType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[summaryValueType]
   
   val TypesNs: this.type = js.native
   type ActionNameListType = js.Array[ActionNameType]

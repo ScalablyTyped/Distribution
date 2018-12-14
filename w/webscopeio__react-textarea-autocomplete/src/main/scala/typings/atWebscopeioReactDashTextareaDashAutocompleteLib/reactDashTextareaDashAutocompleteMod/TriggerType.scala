@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TriggerType[TItem]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[SettingType[TItem]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[SettingType[TItem]]
 

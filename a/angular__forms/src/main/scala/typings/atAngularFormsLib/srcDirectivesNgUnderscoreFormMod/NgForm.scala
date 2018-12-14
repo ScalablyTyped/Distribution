@@ -24,7 +24,7 @@ class NgForm protected ()
        * @description
        * Returns a map of the controls in this group.
        */
-  val controls: ScalablyTyped.runtime.StringDictionary[atAngularFormsLib.srcModelMod.AbstractControl] = js.native
+  val controls: org.scalablytyped.runtime.StringDictionary[atAngularFormsLib.srcModelMod.AbstractControl] = js.native
   /**
        * @description
        * The `FormGroup` instance created for this form.
@@ -201,7 +201,7 @@ class NgForm protected ()
        *
        * @param value The new value
        */
-  def setValue(value: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def setValue(value: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * @description
        * Update the model for a particular control with a new value.

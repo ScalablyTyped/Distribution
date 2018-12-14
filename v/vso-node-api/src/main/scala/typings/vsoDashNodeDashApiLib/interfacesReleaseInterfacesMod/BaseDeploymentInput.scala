@@ -12,7 +12,7 @@ trait BaseDeploymentInput extends js.Object {
        * Gets or sets the job cancel timeout in minutes for deployment which are cancelled by user for this release environment
        */
   var jobCancelTimeoutInMinutes: scala.Double
-  var overrideInputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var overrideInputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Gets or sets the job execution timeout in minutes for deployment which are queued against this release environment
        */

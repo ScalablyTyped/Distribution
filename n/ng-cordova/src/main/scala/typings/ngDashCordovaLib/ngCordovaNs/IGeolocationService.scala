@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IGeolocationService extends js.Object {
-  def clearWatch(watchID: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def clearWatch(watchID: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def getCurrentPosition(): js.Any = js.native
   def getCurrentPosition(options: IGeolocationOptions): js.Any = js.native
   def watchPosition(): js.Any = js.native

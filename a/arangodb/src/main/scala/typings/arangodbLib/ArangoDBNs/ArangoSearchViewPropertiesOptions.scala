@@ -11,7 +11,7 @@ trait ArangoSearchViewPropertiesOptions extends js.Object {
   var consolidationIntervalMsec: js.UndefOr[scala.Double] = js.undefined
   var consolidationPolicy: js.UndefOr[arangodbLib.Anon_Threshold] = js.undefined
   var links: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]
+    org.scalablytyped.runtime.StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]
   ] = js.undefined
 }
 

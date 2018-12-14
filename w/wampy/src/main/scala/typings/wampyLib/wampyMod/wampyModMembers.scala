@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("wampy", JSImport.Namespace)
 @js.native
 object wampyModMembers
-  extends ScalablyTyped.runtime.TopLevel[wampyLib.wampyMod.wampyNs.WampyStatic]
+  extends org.scalablytyped.runtime.TopLevel[wampyLib.wampyMod.wampyNs.WampyStatic]
 

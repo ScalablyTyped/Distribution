@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ConditionBlock
-  extends /* condition */ ScalablyTyped.runtime.StringDictionary[Condition | js.Array[Condition]]
+  extends /* condition */ org.scalablytyped.runtime.StringDictionary[Condition | js.Array[Condition]]
 

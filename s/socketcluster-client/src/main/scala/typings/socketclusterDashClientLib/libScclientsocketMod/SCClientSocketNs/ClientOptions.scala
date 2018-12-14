@@ -67,7 +67,7 @@ trait ClientOptions extends js.Object {
   // same name which can be configured on the server.
   var pubSubBatchDuration: js.UndefOr[scala.Double] = js.undefined
   // A map of key-value pairs which will be used as query parameters for the initial HTTP handshake which will initiate the WebSocket connection.
-  var query: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var query: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   // Set this to false during debugging - Otherwise client connection will fail when using self-signed certificates.
   var rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined
   // Defaults to false.

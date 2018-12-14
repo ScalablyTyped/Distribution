@@ -52,7 +52,7 @@ class SPClientPeoplePicker () extends js.Object {
   var PrincipalAccountType: java.lang.String = js.native
    // '',
   var PrincipalAccountTypeEnum: sharepointLib.SPNs.UtilitiesNs.PrincipalType = js.native
-  var ProcessedUserList: ScalablyTyped.runtime.StringDictionary[SPClientPeoplePickerProcessedUser] = js.native
+  var ProcessedUserList: org.scalablytyped.runtime.StringDictionary[SPClientPeoplePickerProcessedUser] = js.native
    // false,
   var QueryScriptInit: scala.Boolean = js.native
    // null,
@@ -77,7 +77,7 @@ class SPClientPeoplePicker () extends js.Object {
   var UrlZone: sharepointLib.SPNs.UrlZone = js.native
   var UseLocalSuggestionCache: scala.Boolean = js.native
    // 0,
-  var UserQueryDict: ScalablyTyped.runtime.StringDictionary[sharepointLib.SPNs.StringResult] = js.native
+  var UserQueryDict: org.scalablytyped.runtime.StringDictionary[sharepointLib.SPNs.StringResult] = js.native
   var VisibleSuggestions: scala.Double = js.native
    // '',
   var WaitImageId: java.lang.String = js.native
@@ -173,7 +173,7 @@ object SPClientPeoplePicker extends js.Object {
    // = 'Description';
   var SIPAddressName: java.lang.String = js.native
    // = 'DomainText';
-  var SPClientPeoplePickerDict: ScalablyTyped.runtime.StringDictionary[sharepointLib.SPClientPeoplePicker] = js.native
+  var SPClientPeoplePickerDict: org.scalablytyped.runtime.StringDictionary[sharepointLib.SPClientPeoplePicker] = js.native
    // = 'DisplayText';
   var SubDisplayTextName: java.lang.String = js.native
    // = 'AutoFillDisplayText';

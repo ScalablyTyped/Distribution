@@ -500,7 +500,7 @@ object CloudWatchLogsNs extends js.Object {
   
   
   trait ExtractedValues
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
   
   
   trait FilterLogEventsRequest extends js.Object {
@@ -761,7 +761,7 @@ object CloudWatchLogsNs extends js.Object {
   
   
   trait LogRecord
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
   
   
   trait LogStream extends js.Object {
@@ -1201,7 +1201,7 @@ object CloudWatchLogsNs extends js.Object {
   
   
   trait Tags
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TagValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
   
   
   trait TestMetricFilterRequest extends js.Object {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EventContext
   extends Object
-     with ScalablyTyped.runtime.Instantiable5[
+     with org.scalablytyped.runtime.Instantiable5[
       /* app */ js.Any, 
       /* verb */ js.Any, 
       /* path */ js.Any, 

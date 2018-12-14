@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait PubSub extends js.Object {
   var nextStreamId: scala.Double = js.native
   var prefix: js.UndefOr[java.lang.String] = js.native
-  var streams: ScalablyTyped.runtime.StringDictionary[sharedbLib.sharedbMod.Stream] = js.native
+  var streams: org.scalablytyped.runtime.StringDictionary[sharedbLib.sharedbMod.Stream] = js.native
   var streamsCount: scala.Double = js.native
-  var subscribed: ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  var subscribed: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   /* private */ def _createStream(channel: js.Any): scala.Unit = js.native
-  /* protected */ def _emit(channel: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  /* protected */ def _emit(channel: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /* protected */ def _publish(
     channels: js.Array[java.lang.String],
     data: js.Any,
@@ -26,7 +26,7 @@ trait PubSub extends js.Object {
   def close(callback: js.Function1[/* err */ Error | scala.Null, scala.Unit]): scala.Unit = js.native
   def publish(
     channels: js.Array[java.lang.String],
-    data: ScalablyTyped.runtime.StringDictionary[js.Any],
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
     callback: js.Function1[/* err */ Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def subscribe(

@@ -10,7 +10,7 @@ trait IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions
   extends /**
 	 * Option for IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A callback to be invoked right before the request is send to the server. Extends beforeSend callback of jQuery.ajax’s options object.
   	 */

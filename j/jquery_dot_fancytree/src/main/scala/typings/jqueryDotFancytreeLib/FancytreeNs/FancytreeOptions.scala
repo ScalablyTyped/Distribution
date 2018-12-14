@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait FancytreeOptions
   extends FancytreeEvents
      with /** Options for misc extensions - see docs for typings */
-/* extension */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* extension */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** Make sure that the active node is always visible, i.e. its parents are expanded (default: true). */
   var activeVisible: js.UndefOr[scala.Boolean] = js.undefined
   /** Default options for ajax requests. */

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/weak-map", JSImport.Namespace)
 @js.native
 object fnWeakDashMapMod
-  extends ScalablyTyped.runtime.TopLevel[nodeLib.WeakMapConstructor]
+  extends org.scalablytyped.runtime.TopLevel[nodeLib.WeakMapConstructor]
 

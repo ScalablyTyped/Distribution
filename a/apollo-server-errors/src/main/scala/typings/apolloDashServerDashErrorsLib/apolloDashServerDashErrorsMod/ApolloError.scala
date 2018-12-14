@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ApolloError protected ()
   extends graphqlLib.graphqlMod.GraphQLError
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def this(message: java.lang.String) = this()
   def this(message: java.lang.String, code: java.lang.String) = this()
   def this(message: java.lang.String, code: java.lang.String, properties: stdLib.Record[java.lang.String, _]) = this()

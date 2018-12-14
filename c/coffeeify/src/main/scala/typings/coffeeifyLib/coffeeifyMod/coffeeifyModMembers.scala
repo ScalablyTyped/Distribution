@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("coffeeify", JSImport.Namespace)
 @js.native
 object coffeeifyModMembers
-  extends ScalablyTyped.runtime.TopLevel[coffeeifyLib.coffeeifyMod.coffeeifyNs.Coffeeify]
+  extends org.scalablytyped.runtime.TopLevel[coffeeifyLib.coffeeifyMod.coffeeifyNs.Coffeeify]
 

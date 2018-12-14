@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IXMLSearchResult
-  extends ScalablyTyped.runtime.Instantiable0[IXMLSearchResult]
+  extends org.scalablytyped.runtime.Instantiable0[IXMLSearchResult]
 

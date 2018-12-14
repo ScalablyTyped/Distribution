@@ -13,7 +13,7 @@ abstract class Renderer2 () extends js.Object {
        * as an object containing key-value pairs.
        * This is useful for renderers that delegate to other renderers.
        */
-  val data: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  val data: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * If null or undefined, the view engine won't call it.
        * This is used as a performance optimization for production mode.

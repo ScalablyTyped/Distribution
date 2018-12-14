@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait IPermissions
-  extends /* scope */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+  extends /* scope */ org.scalablytyped.runtime.StringDictionary[scala.Double]
 

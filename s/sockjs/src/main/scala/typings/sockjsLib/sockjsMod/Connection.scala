@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Connection
   extends nodeLib.NodeJSNs.ReadWriteStream {
-  var address: ScalablyTyped.runtime.StringDictionary[sockjsLib.Anon_Address] = js.native
-  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var address: org.scalablytyped.runtime.StringDictionary[sockjsLib.Anon_Address] = js.native
+  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var id: java.lang.String = js.native
   var pathname: java.lang.String = js.native
   var prefix: java.lang.String = js.native

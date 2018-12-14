@@ -16,11 +16,11 @@ trait Anon_FailName extends js.Object {
   /**
            * HTTP 请求中其他额外的 form data
            */
-  var formData: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var formData: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * HTTP 请求 Header，Header 中不能设置 Referer
            */
-  var header: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var header: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
            * 文件对应的 key，开发者在服务端可以通过这个 key 获取文件的二进制内容
            */

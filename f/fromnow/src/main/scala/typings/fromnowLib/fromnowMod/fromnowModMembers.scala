@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("fromnow", JSImport.Namespace)
 @js.native
 object fromnowModMembers
-  extends ScalablyTyped.runtime.TopLevel[fromnowLib.fromnowMod.FromNowNs.FromNowStatic]
+  extends org.scalablytyped.runtime.TopLevel[fromnowLib.fromnowMod.FromNowNs.FromNowStatic]
 

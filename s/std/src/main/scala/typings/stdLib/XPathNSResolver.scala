@@ -13,5 +13,5 @@ trait XPathNSResolver extends js.Object {
 @JSGlobal("XPathNSResolver")
 @js.native
 object XPathNSResolver
-  extends ScalablyTyped.runtime.Instantiable0[XPathNSResolver]
+  extends org.scalablytyped.runtime.Instantiable0[XPathNSResolver]
 

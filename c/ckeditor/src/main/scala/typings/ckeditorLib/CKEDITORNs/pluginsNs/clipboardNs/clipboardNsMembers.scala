@@ -15,7 +15,7 @@ object clipboardNsMembers extends js.Object {
   def addPasteButton(
     editor: ckeditorLib.CKEDITORNs.editor,
     name: java.lang.String,
-    definition: ScalablyTyped.runtime.StringDictionary[js.Any]
+    definition: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def canClipboardApiBeTrusted(dataTransfer: dataTransfer, editor: ckeditorLib.CKEDITORNs.editor): scala.Boolean = js.native
   def getDropTarget(editor: ckeditorLib.CKEDITORNs.editor): ckeditorLib.CKEDITORNs.domNs.domObject = js.native

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PredicateFactory
-  extends ScalablyTyped.runtime.Instantiable1[/* propertyOrValueOrPredicate */ js.Any, Predicate]
-     with ScalablyTyped.runtime.Instantiable2[/* propertyOrValueOrPredicate */ js.Any, /* valueOrOperator */ js.Any, Predicate]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable1[/* propertyOrValueOrPredicate */ js.Any, Predicate]
+     with org.scalablytyped.runtime.Instantiable2[/* propertyOrValueOrPredicate */ js.Any, /* valueOrOperator */ js.Any, Predicate]
+     with org.scalablytyped.runtime.Instantiable3[
       /* propertyOrValueOrPredicate */ js.Any, 
       /* valueOrOperator */ js.Any, 
       /* value */ js.Any, 

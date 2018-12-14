@@ -13,5 +13,5 @@ trait SVGStopElement extends SVGElement {
 @JSGlobal("SVGStopElement")
 @js.native
 object SVGStopElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGStopElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGStopElement]
 

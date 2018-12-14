@@ -19,7 +19,7 @@ trait ArtifactResource extends js.Object {
   /**
        * Type-specific properties of the artifact.
        */
-  var properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * The type of the resource: File container, version control folder, UNC path, etc.
        */

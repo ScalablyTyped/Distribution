@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CheerioElement extends js.Object {
-  var attribs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var attribs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var childNodes: js.Array[CheerioElement]
   var children: js.Array[CheerioElement]
   var data: js.UndefOr[java.lang.String] = js.undefined

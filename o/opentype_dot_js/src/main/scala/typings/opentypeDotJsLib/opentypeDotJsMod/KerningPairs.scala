@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait KerningPairs
-  extends /* pair */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+  extends /* pair */ org.scalablytyped.runtime.StringDictionary[scala.Double]
 

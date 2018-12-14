@@ -10,6 +10,6 @@ trait PropertyBag extends js.Object {
   /**
        * Generic store for test session data
        */
-  var bag: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var bag: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

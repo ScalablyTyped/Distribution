@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ConfigCircleConfigIEllipse
-  extends ScalablyTyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.CircleConfig, kineticjsLib.KineticNs.IEllipse]
+  extends org.scalablytyped.runtime.Instantiable1[/* config */ kineticjsLib.KineticNs.CircleConfig, kineticjsLib.KineticNs.IEllipse]
 

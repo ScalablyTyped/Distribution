@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Mappings
-  extends /* enviromentVariableName */ ScalablyTyped.runtime.StringDictionary[Mapping]
+  extends /* enviromentVariableName */ org.scalablytyped.runtime.StringDictionary[Mapping]
 

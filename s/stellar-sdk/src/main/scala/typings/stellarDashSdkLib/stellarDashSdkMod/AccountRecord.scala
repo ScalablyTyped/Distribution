@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait AccountRecord extends Record {
   var account_id: java.lang.String = js.native
   var balances: js.Array[stellarDashSdkLib.Anon_Balance | stellarDashSdkLib.Anon_Assettype] = js.native
-  var data_attr: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var data_attr: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   @JSName("effects")
   var effects_Original: CallCollectionFunction[EffectRecord] = js.native
   var flags: stellarDashSdkLib.Anon_Authrevocable = js.native

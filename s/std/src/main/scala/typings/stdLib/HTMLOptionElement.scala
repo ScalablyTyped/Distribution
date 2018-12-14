@@ -41,5 +41,5 @@ trait HTMLOptionElement extends HTMLElement {
 @JSGlobal("HTMLOptionElement")
 @js.native
 object HTMLOptionElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLOptionElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLOptionElement]
 

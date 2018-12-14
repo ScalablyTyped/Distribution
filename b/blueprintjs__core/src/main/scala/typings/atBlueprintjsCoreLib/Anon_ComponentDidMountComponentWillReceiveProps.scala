@@ -58,7 +58,7 @@ trait Anon_ComponentDidMountComponentWillReceiveProps extends js.Object {
   ] = js.native
   var onContextMenuClose: js.UndefOr[js.Function0[scala.Unit]] = js.native
   val props: stdLib.Readonly[Anon_Children] with stdLib.Readonly[js.Object] = js.native
-  var refs: ScalablyTyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactInstance] = js.native
+  var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
       /* nextProps */ stdLib.Readonly[js.Object], 

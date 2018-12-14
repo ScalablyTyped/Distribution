@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FormStateMap
-  extends /* formName */ ScalablyTyped.runtime.StringDictionary[FormState]
+  extends /* formName */ org.scalablytyped.runtime.StringDictionary[FormState]
 

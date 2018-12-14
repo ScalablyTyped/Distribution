@@ -10,7 +10,7 @@ trait IgDoughnutChartSeries
   extends /**
 	 * Option for IgDoughnutChartSeries
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets the palette of brushes to use for coloring the slices.
   	 * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.

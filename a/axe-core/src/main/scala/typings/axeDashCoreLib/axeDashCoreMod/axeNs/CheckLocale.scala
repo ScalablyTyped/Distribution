@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CheckLocale
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[axeDashCoreLib.Anon_Pass]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[axeDashCoreLib.Anon_Pass]
 

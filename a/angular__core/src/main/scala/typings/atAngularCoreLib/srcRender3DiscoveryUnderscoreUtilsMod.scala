@@ -12,7 +12,7 @@ object srcRender3DiscoveryUnderscoreUtilsMod extends js.Object {
   def getDirectives(target: js.Object): js.Array[js.Object] = js.native
   def getHostElement[T](directive: T): stdLib.Element = js.native
   def getInjector(target: js.Object): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
-  def getLocalRefs(target: js.Object): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getLocalRefs(target: js.Object): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getRenderedText(component: js.Any): java.lang.String = js.native
   def getRootComponents(target: js.Object): js.Array[_] = js.native
   def getRootContext(target: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData): atAngularCoreLib.srcRender3InterfacesViewMod.RootContext = js.native

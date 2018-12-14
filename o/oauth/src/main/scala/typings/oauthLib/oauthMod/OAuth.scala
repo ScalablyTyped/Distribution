@@ -53,7 +53,7 @@ class OAuth protected () extends js.Object {
   /* protected */ def _getTimestamp(): scala.Double | java.lang.String = js.native
   /* protected */ def _isParameterNameAnOAuthParameter(parameter: java.lang.String): scala.Boolean = js.native
   /* protected */ def _makeArrayOfArgumentsHash(
-    argumentHash: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    argumentHash: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ): js.Array[js.Array[java.lang.String]] = js.native
   /* protected */ def _normaliseRequestParams(args: js.Array[js.Array[java.lang.String]]): java.lang.String = js.native
   /* protected */ def _normalizeUrl(url: java.lang.String): java.lang.String = js.native

@@ -9,54 +9,54 @@ import scala.scalajs.js.annotation._
 @js.native
 object fluxibleDashAddonsDashReactMod extends js.Object {
   def connectToStores(
-    Component: ScalablyTyped.runtime.Instantiable1[
+    Component: org.scalablytyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
       reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ],
     stores: js.Array[
-      (ScalablyTyped.runtime.Instantiable1[
+      java.lang.String | (org.scalablytyped.runtime.Instantiable1[
         /* dispatcher */ dispatchrLib.dispatchrMod.DispatcherInterface, 
         fluxibleLib.addonsBaseStoreMod.namespaced[js.Object]
-      ]) | java.lang.String
+      ])
     ],
     getStateFromStores: js.Function2[/* context */ fluxibleLib.fluxibleMod.ComponentContext, /* props */ js.Any, _]
-  ): ScalablyTyped.runtime.Instantiable1[
+  ): org.scalablytyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
     reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native
   def connectToStores(
-    Component: ScalablyTyped.runtime.Instantiable1[
+    Component: org.scalablytyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
       reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ],
     stores: js.Array[
-      (ScalablyTyped.runtime.Instantiable1[
+      java.lang.String | (org.scalablytyped.runtime.Instantiable1[
         /* dispatcher */ dispatchrLib.dispatchrMod.DispatcherInterface, 
         fluxibleLib.addonsBaseStoreMod.namespaced[js.Object]
-      ]) | java.lang.String
+      ])
     ],
     getStateFromStores: js.Function2[/* context */ fluxibleLib.fluxibleMod.ComponentContext, /* props */ js.Any, _],
     customContextTypes: js.Any
-  ): ScalablyTyped.runtime.Instantiable1[
+  ): org.scalablytyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
     reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native
   def provideContext(
-    Component: ScalablyTyped.runtime.Instantiable1[
+    Component: org.scalablytyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
       reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ]
-  ): ScalablyTyped.runtime.Instantiable1[
+  ): org.scalablytyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
     reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native
   def provideContext(
-    Component: ScalablyTyped.runtime.Instantiable1[
+    Component: org.scalablytyped.runtime.Instantiable1[
       /* props */ stdLib.Readonly[js.Object], 
       reactLib.reactMod.Component[js.Object, js.Object, js.Object]
     ],
     customContextTypes: js.Any
-  ): ScalablyTyped.runtime.Instantiable1[
+  ): org.scalablytyped.runtime.Instantiable1[
     /* props */ stdLib.Readonly[js.Object], 
     reactLib.reactMod.Component[js.Object, js.Object, js.Object]
   ] = js.native

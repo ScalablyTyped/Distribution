@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 // the correct options interfaces for each method
 
 trait Options
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

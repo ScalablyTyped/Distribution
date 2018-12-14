@@ -454,7 +454,7 @@ object SignerNs extends js.Object {
   
   
   trait SigningParameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[SigningParameterValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[SigningParameterValue]
   
   
   trait SigningPlatform extends js.Object {

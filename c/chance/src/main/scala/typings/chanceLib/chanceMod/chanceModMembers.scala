@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("chance", JSImport.Namespace)
 @js.native
 object chanceModMembers
-  extends ScalablyTyped.runtime.TopLevel[ExportedChance]
+  extends org.scalablytyped.runtime.TopLevel[ExportedChance]
 

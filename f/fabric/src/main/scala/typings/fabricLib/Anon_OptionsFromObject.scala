@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_OptionsFromObject
-  extends ScalablyTyped.runtime.Instantiable0[fabricLib.fabricDashImplMod.IRemoveWhiteFilter]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ Anon_Threshold, fabricLib.fabricDashImplMod.IRemoveWhiteFilter] {
+  extends org.scalablytyped.runtime.Instantiable0[fabricLib.fabricDashImplMod.IRemoveWhiteFilter]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ Anon_Threshold, fabricLib.fabricDashImplMod.IRemoveWhiteFilter] {
   /**
   		 * Returns filter instance from an object representation
   		 * @param object Object to create an instance from

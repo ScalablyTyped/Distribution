@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OneToOne () extends RelationalField {
   def install(
-    model: ScalablyTyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]],
+    model: org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]],
     fieldName: java.lang.String,
     orm: ORM[ORMCommonState]
   ): scala.Unit = js.native

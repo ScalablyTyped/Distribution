@@ -35,6 +35,6 @@ trait DataViewTreeNode extends js.Object {
            * The key of each of the key-value-pair in this dictionary is the position of the column in the
            * select statement to which the value belongs.
            */
-  var values: js.UndefOr[ScalablyTyped.runtime.NumberDictionary[DataViewTreeNodeValue]] = js.undefined
+  var values: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[DataViewTreeNodeValue]] = js.undefined
 }
 

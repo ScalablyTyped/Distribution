@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-nodemon", JSImport.Namespace)
 @js.native
 object gulpDashNodemonModMembers
-  extends ScalablyTyped.runtime.TopLevel[gulpDashNodemonLib.gulpDashNodemonMod.nodemonNs.Nodemon]
+  extends org.scalablytyped.runtime.TopLevel[gulpDashNodemonLib.gulpDashNodemonMod.nodemonNs.Nodemon]
 

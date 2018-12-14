@@ -85,7 +85,7 @@ class WorksheetFreezePanes ()
            * [Api set: ExcelApi 1.7]
            */
   def getLocationOrNullObject(): Range = js.native
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
            *
            * Removes all frozen panes in the worksheet.

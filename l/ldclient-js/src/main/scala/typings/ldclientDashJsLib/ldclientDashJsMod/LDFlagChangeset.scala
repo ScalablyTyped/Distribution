@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait LDFlagChangeset
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[ldclientDashJsLib.Anon_Current]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[ldclientDashJsLib.Anon_Current]
 

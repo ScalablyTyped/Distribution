@@ -17,8 +17,8 @@ trait Anon_Min extends js.Object {
   def populate(association: java.lang.String): js.Object = js.native
   def populate(association: java.lang.String, filter: js.Any): js.Object = js.native
   def skip(num: scala.Double): js.Object = js.native
-  def sort(criteria: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Object = js.native
   def sort(criteria: java.lang.String): js.Object = js.native
+  def sort(criteria: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Object = js.native
   def sum(attribute: java.lang.String): js.Object = js.native
   def where(condition: js.Any): js.Object = js.native
 }

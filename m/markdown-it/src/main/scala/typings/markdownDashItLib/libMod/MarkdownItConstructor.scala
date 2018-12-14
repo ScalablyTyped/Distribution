@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MarkdownItConstructor
-  extends ScalablyTyped.runtime.Instantiable0[MarkdownIt]
-     with ScalablyTyped.runtime.Instantiable1[
-      markdownDashItLib.markdownDashItLibStrings.commonmark | markdownDashItLib.markdownDashItLibStrings.zero | markdownDashItLib.markdownDashItLibStrings.default | (/* options */ markdownDashItLib.libMod.MarkdownItNs.Options), 
-      MarkdownIt
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[MarkdownIt]
+     with org.scalablytyped.runtime.Instantiable2[
       markdownDashItLib.markdownDashItLibStrings.commonmark | markdownDashItLib.markdownDashItLibStrings.zero | markdownDashItLib.markdownDashItLibStrings.default, 
       /* options */ markdownDashItLib.libMod.MarkdownItNs.Options, 
+      MarkdownIt
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      markdownDashItLib.markdownDashItLibStrings.commonmark | markdownDashItLib.markdownDashItLibStrings.zero | markdownDashItLib.markdownDashItLibStrings.default | (/* options */ markdownDashItLib.libMod.MarkdownItNs.Options), 
       MarkdownIt
     ] {
   def apply(): MarkdownIt = js.native

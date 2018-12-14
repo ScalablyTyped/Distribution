@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ServiceStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* consul */ consulLib.consulMod.ConsulNs.Consul, Service]
+  extends org.scalablytyped.runtime.Instantiable1[/* consul */ consulLib.consulMod.ConsulNs.Consul, Service]
 

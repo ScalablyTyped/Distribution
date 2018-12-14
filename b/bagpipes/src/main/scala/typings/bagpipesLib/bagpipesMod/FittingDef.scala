@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait FittingDef
   extends // allow other config settings
-/* prop */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** Static values passed to the fitting during construction */
   var config: js.UndefOr[js.Any] = js.undefined
   /** Dynamic values passed to the fitting during execution */

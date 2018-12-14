@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lru-cache", JSImport.Namespace)
 @js.native
 object lruDashCacheModMembers
-  extends ScalablyTyped.runtime.TopLevel[LRU]
+  extends org.scalablytyped.runtime.TopLevel[LRU]
 

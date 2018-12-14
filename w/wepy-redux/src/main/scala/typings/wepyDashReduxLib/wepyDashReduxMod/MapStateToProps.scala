@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MapStateToProps
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[(js.Function1[/* state */ js.Any, _]) | java.lang.String]
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[(js.Function1[/* state */ js.Any, _]) | java.lang.String]
 

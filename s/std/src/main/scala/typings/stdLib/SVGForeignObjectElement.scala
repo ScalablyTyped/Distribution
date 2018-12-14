@@ -16,5 +16,5 @@ trait SVGForeignObjectElement extends SVGGraphicsElement {
 @JSGlobal("SVGForeignObjectElement")
 @js.native
 object SVGForeignObjectElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGForeignObjectElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGForeignObjectElement]
 

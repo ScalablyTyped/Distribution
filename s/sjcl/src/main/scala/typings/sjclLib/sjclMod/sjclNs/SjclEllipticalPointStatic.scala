@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SjclEllipticalPointStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* curve */ SjclEllipticalCurve, SjclEllipticalPoint]
-     with ScalablyTyped.runtime.Instantiable2[/* curve */ SjclEllipticalCurve, /* x */ BigNumber, SjclEllipticalPoint]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable1[/* curve */ SjclEllipticalCurve, SjclEllipticalPoint]
+     with org.scalablytyped.runtime.Instantiable2[/* curve */ SjclEllipticalCurve, /* x */ BigNumber, SjclEllipticalPoint]
+     with org.scalablytyped.runtime.Instantiable3[
       /* curve */ SjclEllipticalCurve, 
       /* x */ BigNumber, 
       /* y */ BigNumber, 

@@ -15,11 +15,7 @@ class TimeZones protected () extends js.Object {
   var `Outlook.TimeZones_typekey`: TimeZones = js.native
   val Parent: js.Any = js.native
   val Session: NameSpace = js.native
-  def ConvertTime(
-    SourceDateTime: activexDashInteropLib.VarDate,
-    SourceTimeZone: TimeZone,
-    DestinationTimeZone: TimeZone
-  ): activexDashInteropLib.VarDate = js.native
+  def ConvertTime(SourceDateTime: stdLib.VarDate, SourceTimeZone: TimeZone, DestinationTimeZone: TimeZone): stdLib.VarDate = js.native
   def Item(Index: js.Any): TimeZone = js.native
 }
 

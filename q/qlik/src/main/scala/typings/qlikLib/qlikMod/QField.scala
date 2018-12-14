@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait QField extends js.Object {
-  var qStateCounts: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Double]] = js.native
+  var qStateCounts: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.native
   var rowCount: js.UndefOr[scala.Double] = js.native
   var rows: js.UndefOr[js.Array[QFieldValue]] = js.native
   def clear(): js.Promise[_] = js.native

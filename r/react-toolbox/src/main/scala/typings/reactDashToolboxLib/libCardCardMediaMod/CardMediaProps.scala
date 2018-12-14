@@ -11,7 +11,7 @@ trait CardMediaProps
      with /**
    * Additional properties passed to component root.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Forces a 16:9 or 1:1 aspect ratio respectively. Unset, the media area will have a flexible height.
      */

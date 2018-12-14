@@ -11,5 +11,5 @@ trait SVGGElement extends SVGGraphicsElement
 @JSGlobal("SVGGElement")
 @js.native
 object SVGGElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGGElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGGElement]
 

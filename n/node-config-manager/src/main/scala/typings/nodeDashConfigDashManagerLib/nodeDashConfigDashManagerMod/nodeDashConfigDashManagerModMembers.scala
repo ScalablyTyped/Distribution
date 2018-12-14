@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("node-config-manager", JSImport.Namespace)
 @js.native
 object nodeDashConfigDashManagerModMembers
-  extends ScalablyTyped.runtime.TopLevel[ConfigManager]
+  extends org.scalablytyped.runtime.TopLevel[ConfigManager]
 

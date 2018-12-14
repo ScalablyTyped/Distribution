@@ -13,5 +13,5 @@ trait SVGPathSegLinetoVerticalRel extends SVGPathSeg {
 @JSGlobal("SVGPathSegLinetoVerticalRel")
 @js.native
 object SVGPathSegLinetoVerticalRel
-  extends ScalablyTyped.runtime.Instantiable0[SVGPathSegLinetoVerticalRel]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPathSegLinetoVerticalRel]
 

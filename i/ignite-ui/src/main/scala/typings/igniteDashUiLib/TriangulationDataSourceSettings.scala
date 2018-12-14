@@ -10,7 +10,7 @@ trait TriangulationDataSourceSettings
   extends /**
 	 * Option for TriangulationDataSourceSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Callback function to call when data binding is complete
   	 */

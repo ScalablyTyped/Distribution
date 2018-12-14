@@ -206,7 +206,7 @@ object InspectorNs extends js.Object {
   
   
   trait AssessmentRunFindingCounts
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[FindingCount]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[FindingCount]
   
   
   trait AssessmentRunNotification extends js.Object {
@@ -719,7 +719,7 @@ object InspectorNs extends js.Object {
   
   
   trait ExclusionMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Exclusion]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[Exclusion]
   
   
   trait ExclusionPreview extends js.Object {
@@ -759,7 +759,7 @@ object InspectorNs extends js.Object {
   
   
   trait FailedItems
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[FailedItemDetails]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[FailedItemDetails]
   
   
   trait Finding extends js.Object {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("memory-cache", JSImport.Namespace)
 @js.native
 object memoryDashCacheModMembers extends js.Object {
-  val Cache: ScalablyTyped.runtime.Instantiable0[CacheClass[js.Any, js.Any]] = js.native
+  val Cache: org.scalablytyped.runtime.Instantiable0[CacheClass[js.Any, js.Any]] = js.native
   def clear(): scala.Unit = js.native
   def debug(bool: scala.Boolean): scala.Unit = js.native
   def del(key: js.Any): scala.Unit = js.native

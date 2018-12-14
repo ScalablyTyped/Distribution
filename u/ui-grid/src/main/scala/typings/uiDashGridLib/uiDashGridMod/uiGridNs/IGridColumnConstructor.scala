@@ -14,7 +14,7 @@ trait IGridColumnConstructor[TEntity]
          * @param index the current position of the column in the array
          * @param grid reference to the grid
          */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* gridCol */ IColumnDefOf[TEntity], 
       /* index */ scala.Double, 
       /* grid */ IGridInstanceOf[TEntity], 

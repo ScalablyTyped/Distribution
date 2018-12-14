@@ -19,12 +19,12 @@ trait ServerOptions extends js.Object {
   var changeOrigin: js.UndefOr[scala.Boolean] = js.undefined
   /** rewrites domain of set-cookie headers. */
   var cookieDomainRewrite: js.UndefOr[
-    httpDashProxyLib.httpDashProxyLibNumbers.`false` | java.lang.String | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    httpDashProxyLib.httpDashProxyLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
   /** URL string to be parsed with the url module. */
   var forward: js.UndefOr[httpDashProxyLib.ProxyTargetUrl] = js.undefined
   /** object with extra headers to be added to target requests. */
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** Rewrites the location hostname on (301 / 302 / 307 / 308) redirects, Default: null. */
   var hostRewrite: js.UndefOr[java.lang.String] = js.undefined
   /** Specify whether you want to ignore the proxy path of the incoming request. */

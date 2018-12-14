@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PerformanceMark")
 @js.native
 object PerformanceMark
-  extends ScalablyTyped.runtime.Instantiable0[PerformanceMark]
+  extends org.scalablytyped.runtime.Instantiable0[PerformanceMark]
 

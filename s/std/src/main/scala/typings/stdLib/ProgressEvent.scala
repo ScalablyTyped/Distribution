@@ -15,6 +15,6 @@ trait ProgressEvent extends Event {
 @JSGlobal("ProgressEvent")
 @js.native
 object ProgressEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, ProgressEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ ProgressEventInit, ProgressEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, ProgressEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ ProgressEventInit, ProgressEvent]
 

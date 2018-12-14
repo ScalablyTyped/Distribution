@@ -13,6 +13,6 @@ trait GamepadEvent extends Event {
 @JSGlobal("GamepadEvent")
 @js.native
 object GamepadEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, GamepadEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ GamepadEventInit, GamepadEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, GamepadEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ GamepadEventInit, GamepadEvent]
 

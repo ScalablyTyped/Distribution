@@ -12,5 +12,5 @@ trait literalStatic
          *
          * @param val
          */
-ScalablyTyped.runtime.Instantiable1[/* val */ js.Any, literal]
+org.scalablytyped.runtime.Instantiable1[/* val */ js.Any, literal]
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ValuesRemovedEvent[V]
   extends BaseModelEvent
-     with ScalablyTyped.runtime.Instantiable11[
+     with org.scalablytyped.runtime.Instantiable11[
       /* target */ CollaborativeObject, 
       /* sessionId */ java.lang.String, 
       /* userId */ java.lang.String, 

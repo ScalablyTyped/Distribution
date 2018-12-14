@@ -10,7 +10,7 @@ trait IgUploadLocale
   extends /**
 	 * Option for IgUploadLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Get or set error message when AJAX Request to get file size throws error.
   	 *

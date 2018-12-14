@@ -11,7 +11,7 @@ trait Item extends js.Object {
   def destroy(callback: DynogelsItemCallback): scala.Unit = js.native
   def destroy(options: DestroyItemOptions): scala.Unit = js.native
   def destroy(options: DestroyItemOptions, callback: DynogelsItemCallback): scala.Unit = js.native
-  def get(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def get(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def get(key: java.lang.String): js.Any = js.native
   def save(): scala.Unit = js.native
   def save(callback: DynogelsItemCallback): scala.Unit = js.native

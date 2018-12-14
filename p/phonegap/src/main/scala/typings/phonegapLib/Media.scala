@@ -16,14 +16,14 @@ interface InAppBrowser {
 
 @js.native
 trait Media
-  extends ScalablyTyped.runtime.Instantiable2[/* src */ java.lang.String, /* mediaSuccess */ js.Function, Media]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable2[/* src */ java.lang.String, /* mediaSuccess */ js.Function, Media]
+     with org.scalablytyped.runtime.Instantiable3[
       /* src */ java.lang.String, 
       /* mediaSuccess */ js.Function, 
       /* mediaError */ js.Function1[/* mediaError */ stdLib.MediaError, js.Any], 
       Media
     ]
-     with ScalablyTyped.runtime.Instantiable4[
+     with org.scalablytyped.runtime.Instantiable4[
       /* src */ java.lang.String, 
       /* mediaSuccess */ js.Function, 
       /* mediaError */ js.Function1[/* mediaError */ stdLib.MediaError, js.Any], 
@@ -45,7 +45,7 @@ trait Media
 @JSGlobal("Media")
 @js.native
 object Media
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* src */ java.lang.String, 
       /* onSuccess */ js.Function1[/* arg */ js.Any, js.Any], 
       /* onError */ js.Function1[/* error */ js.Any, js.Any], 

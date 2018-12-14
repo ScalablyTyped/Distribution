@@ -48,7 +48,7 @@ trait RTCSrtpSdesTransport extends EventTarget {
 @JSGlobal("RTCSrtpSdesTransport")
 @js.native
 object RTCSrtpSdesTransport
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       /* transport */ RTCIceTransport, 
       /* encryptParameters */ RTCSrtpSdesParameters, 
       /* decryptParameters */ RTCSrtpSdesParameters, 

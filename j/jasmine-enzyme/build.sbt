@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "jasmine-enzyme"
-version := "3.6-dt-20180910Z-e18db6"
+version := "3.6-dt-20180910Z-469248"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-939493",
-  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20181204Z-fc8566",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-7481e3",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-296d60",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "csstype" % "2.5.8-eb24f4",
+  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20181214Z-9bd0fc",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-32d5ea",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-7d04f8",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
    */
 
 trait SchemaTypeOpts[T]
-  extends /* other */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* other */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var alias: js.UndefOr[java.lang.String] = js.undefined
   /** ObjectId only - Adds an auto-generated ObjectId default if turnOn is true. */
   var auto: js.UndefOr[scala.Boolean | js.Any] = js.undefined

@@ -13,5 +13,5 @@ trait AnimationTimeline extends js.Object {
 @JSGlobal("AnimationTimeline")
 @js.native
 object AnimationTimeline
-  extends ScalablyTyped.runtime.Instantiable0[AnimationTimeline]
+  extends org.scalablytyped.runtime.Instantiable0[AnimationTimeline]
 

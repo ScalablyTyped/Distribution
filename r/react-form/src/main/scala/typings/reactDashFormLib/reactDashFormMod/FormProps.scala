@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait FormProps extends js.Object {
   var asyncValidators: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Function1[/* value */ FormValue, js.Promise[_]]]
+    org.scalablytyped.runtime.StringDictionary[js.Function1[/* value */ FormValue, js.Promise[_]]]
   ] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[reactDashFormLib.Anon_FormApi]] = js.undefined
   var defaultValues: js.UndefOr[FormValues] = js.undefined

@@ -11,7 +11,7 @@ trait ITooltipsterInstance
 		 * Several plugins may have methods of the same name. To resolve the conflict, use the instance object of the 
 		 * tooltip and specify the full name of the desired plugin in your calls.
 		 */
-/* pluginName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* pluginName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   		 * Closes the tooltip. When the animation is over, its HTML element is destroyed (definitely removed from the 
   		 * DOM). The `callback` function argument is optional.

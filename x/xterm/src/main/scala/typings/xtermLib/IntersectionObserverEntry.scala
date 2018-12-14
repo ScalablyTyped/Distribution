@@ -19,7 +19,7 @@ trait IntersectionObserverEntry extends js.Object {
 @JSGlobal("IntersectionObserverEntry")
 @js.native
 object IntersectionObserverEntry
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable1[
       /* intersectionObserverEntryInit */ IntersectionObserverEntryInit, 
       IntersectionObserverEntry
     ]

@@ -110,7 +110,7 @@ object LightsailNs extends js.Object {
   
   
   trait AttachedDiskMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DiskMapList]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DiskMapList]
   
   
   trait AvailabilityZone extends js.Object {
@@ -1298,7 +1298,7 @@ object LightsailNs extends js.Object {
   
   
   trait DomainEntryOptions
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
   
   trait DownloadDefaultKeyPairRequest extends js.Object
@@ -2800,7 +2800,7 @@ object LightsailNs extends js.Object {
   
   
   trait LoadBalancerConfigurationOptions
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
   
   
   trait LoadBalancerTlsCertificate extends js.Object {

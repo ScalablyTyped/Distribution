@@ -43,11 +43,11 @@ trait ModelBase[T /* <: Model[_] */]
   def serialize(): js.Any = js.native
   def serialize(options: SerializeOptions): js.Any = js.native
   def set(): T = js.native
-  def set(attribute: ScalablyTyped.runtime.StringDictionary[js.Any]): T = js.native
-  def set(attribute: ScalablyTyped.runtime.StringDictionary[js.Any], options: SetOptions): T = js.native
   def set(attribute: java.lang.String): T = js.native
   def set(attribute: java.lang.String, value: js.Any): T = js.native
   def set(attribute: java.lang.String, value: js.Any, options: SetOptions): T = js.native
+  def set(attribute: org.scalablytyped.runtime.StringDictionary[js.Any]): T = js.native
+  def set(attribute: org.scalablytyped.runtime.StringDictionary[js.Any], options: SetOptions): T = js.native
   def timestamp(): js.Any = js.native
   def timestamp(options: TimestampOptions): js.Any = js.native
   def toJSON(): js.Any = js.native

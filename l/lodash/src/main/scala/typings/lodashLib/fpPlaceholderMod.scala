@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lodash/fp/placeholder", JSImport.Namespace)
 @js.native
 object fpPlaceholderMod
-  extends ScalablyTyped.runtime.TopLevel[lodashLib.lodashMod.underscoreNs.`__`]
+  extends org.scalablytyped.runtime.TopLevel[lodashLib.lodashMod.underscoreNs.`__`]
 

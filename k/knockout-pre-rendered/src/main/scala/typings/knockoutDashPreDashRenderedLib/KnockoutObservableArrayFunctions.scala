@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KnockoutObservableArrayFunctions[T]
   extends // Ko specific
-/* key */ ScalablyTyped.runtime.StringDictionary[KnockoutBindingHandler] {
+/* key */ org.scalablytyped.runtime.StringDictionary[KnockoutBindingHandler] {
   def destroy(destroyFunction: js.Function1[/* item */ T, scala.Boolean]): scala.Unit = js.native
   def destroy(item: T): scala.Unit = js.native
   def destroyAll(): scala.Unit = js.native

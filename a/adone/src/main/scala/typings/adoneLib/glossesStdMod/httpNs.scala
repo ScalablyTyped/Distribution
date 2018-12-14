@@ -123,8 +123,8 @@ object httpNs extends js.Object {
   ): nodeLib.httpMod.ClientRequest = js.native
   @js.native
   object STATUS_CODES
-    extends /* errorCode */ ScalablyTyped.runtime.NumberDictionary[js.UndefOr[java.lang.String]]
-       with /* errorCode */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+    extends /* errorCode */ org.scalablytyped.runtime.NumberDictionary[js.UndefOr[java.lang.String]]
+       with /* errorCode */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   
 }
 

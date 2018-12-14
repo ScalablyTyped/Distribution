@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Response extends js.Object {
   var body: nodeLib.Buffer | java.lang.String = js.native
   var context: Context = js.native
-  var headers: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var headers: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var statusCode: scala.Double = js.native
   def attachment(): this.type = js.native
   def attachment(filename: java.lang.String): this.type = js.native
@@ -29,7 +29,7 @@ trait Response extends js.Object {
   def sendFile(path: java.lang.String, options: arangodbLib.Anon_LastModified): this.type = js.native
   def sendStatus(status: arangodbLib.ArangoDBNs.HttpStatus): this.type = js.native
   def sendStatus(status: scala.Double): this.type = js.native
-  def set(headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
+  def set(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
   def set(name: java.lang.String, value: java.lang.String): this.type = js.native
   def setHeader(name: java.lang.String, value: java.lang.String): this.type = js.native
   def status(status: arangodbLib.ArangoDBNs.HttpStatus): this.type = js.native

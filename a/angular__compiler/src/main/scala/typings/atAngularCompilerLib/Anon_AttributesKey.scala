@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_AttributesKey extends js.Object {
-  var animations: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var attributes: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var listeners: ScalablyTyped.runtime.StringDictionary[java.lang.String]
-  var properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var animations: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var listeners: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 

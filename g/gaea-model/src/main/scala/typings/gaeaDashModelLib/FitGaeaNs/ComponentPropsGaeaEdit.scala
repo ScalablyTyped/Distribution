@@ -35,7 +35,7 @@ trait ComponentPropsGaeaEdit extends js.Object {
   /**
            * 枚举实例
            */
-  var instance: js.UndefOr[js.Array[ScalablyTyped.runtime.StringDictionary[ComponentPropsOptionValue]]] = js.undefined
+  var instance: js.UndefOr[js.Array[org.scalablytyped.runtime.StringDictionary[ComponentPropsOptionValue]]] = js.undefined
   /**
            * 选项名称
            */

@@ -18,10 +18,10 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
      * [`someProp`](#view.EditorView.someProp)) will be used.
      */
   var attributes: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[java.lang.String] | (js.Function1[
+    org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function1[
       /* p */ js.Any, 
       js.UndefOr[
-        ScalablyTyped.runtime.StringDictionary[java.lang.String] | scala.Null | scala.Unit
+        org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null | scala.Unit
       ]
     ]) | scala.Null
   ] = js.undefined
@@ -130,7 +130,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
      * default behavior).
      */
   var handleDOMEvents: js.UndefOr[
-    (ScalablyTyped.runtime.StringDictionary[js.Function2[/* view */ EditorView[S], /* event */ stdLib.Event, scala.Boolean]]) | scala.Null
+    (org.scalablytyped.runtime.StringDictionary[js.Function2[/* view */ EditorView[S], /* event */ stdLib.Event, scala.Boolean]]) | scala.Null
   ] = js.undefined
   /**
      * Called when the editor is double-clicked, after `handleDoubleClickOn`.
@@ -257,7 +257,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
      * the node view without adding it to the document itself.
      */
   var nodeViews: js.UndefOr[
-    (ScalablyTyped.runtime.StringDictionary[
+    (org.scalablytyped.runtime.StringDictionary[
       js.Function4[
         /* node */ prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], 
         /* view */ EditorView[S], 

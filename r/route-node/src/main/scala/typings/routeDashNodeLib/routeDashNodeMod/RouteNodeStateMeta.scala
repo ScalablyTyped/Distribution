@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait RouteNodeStateMeta
-  extends /* routeName */ ScalablyTyped.runtime.StringDictionary[
-      ScalablyTyped.runtime.StringDictionary[
+  extends /* routeName */ org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.StringDictionary[
         routeDashNodeLib.routeDashNodeLibStrings.query | routeDashNodeLib.routeDashNodeLibStrings.url
       ]
     ]

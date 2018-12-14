@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/reflect/prevent-extensions", JSImport.Namespace)
 @js.native
 object fnReflectPreventDashExtensionsMod
-  extends ScalablyTyped.runtime.TopLevel[js.Function1[/* target */ js.Any, scala.Boolean]]
+  extends org.scalablytyped.runtime.TopLevel[js.Function1[/* target */ js.Any, scala.Boolean]]
 

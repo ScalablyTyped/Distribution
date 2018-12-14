@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_HTMLFrameElement
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.HTMLFrameElement]
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.HTMLFrameElement]
 

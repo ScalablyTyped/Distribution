@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("postcss-modules-resolve-imports", JSImport.Namespace)
 @js.native
 object postcssDashModulesDashResolveDashImportsModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       postcssDashModulesDashResolveDashImportsLib.postcssDashModulesDashResolveDashImportsMod.resolveImportsNs.ResolveImports
     ]
 

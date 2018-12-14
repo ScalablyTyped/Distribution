@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("urlparser", JSImport.Namespace)
 @js.native
 object urlparserModMembers
-  extends ScalablyTyped.runtime.TopLevel[UrlParser]
+  extends org.scalablytyped.runtime.TopLevel[UrlParser]
 

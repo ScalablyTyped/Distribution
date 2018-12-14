@@ -11,8 +11,8 @@ class ResultTableCollection ()
   extends sharepointLib.SPNs.ClientValueObjectCollection[ResultTable] {
   def get_elapsedTime(): scala.Double = js.native
   def get_item(index: scala.Double): ResultTable = js.native
-  def get_properties(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  def get_queryErrors(): ScalablyTyped.runtime.StringDictionary[
+  def get_properties(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def get_queryErrors(): org.scalablytyped.runtime.StringDictionary[
     sharepointLib.MicrosoftNs.SharePointNs.ClientNs.SearchNs.WebControlsNs.ControlMessage
   ] = js.native
   def get_queryId(): java.lang.String = js.native

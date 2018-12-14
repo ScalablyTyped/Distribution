@@ -10,7 +10,7 @@ trait OlapTableViewOptions
   extends /**
 	 * Option for OlapTableViewOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Optional="false" a value indicating whether the result has one or more hierarchies in the columns.
   	 */

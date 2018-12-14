@@ -138,7 +138,7 @@ abstract class ServerActions () extends js.Object {
   /**
        * @param {Object.<string, *>} stats
        */
-  def reportStats(stats: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def reportStats(stats: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * Remove a listen.
        *

@@ -9,8 +9,8 @@ package object underscoreManifestNs {
   type ExtensionID = java.lang.String
   type ExtensionURL = java.lang.String
   type HttpURL = java.lang.String
-  type IconImageData = ScalablyTyped.runtime.NumberDictionary[ImageData] | ImageData
-  type IconPath = ScalablyTyped.runtime.NumberDictionary[ExtensionURL] | ExtensionURL
+  type IconImageData = org.scalablytyped.runtime.NumberDictionary[ImageData] | ImageData
+  type IconPath = org.scalablytyped.runtime.NumberDictionary[ExtensionURL] | ExtensionURL
   type ImageData = js.Any
   type ImageDataOrExtensionURL = java.lang.String
   type KeyName = java.lang.String

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("inert", JSImport.Namespace)
 @js.native
 object inertModMembers
-  extends ScalablyTyped.runtime.TopLevel[hapiLib.hapiMod.Plugin[inertLib.inertMod.inertNs.OptionalRegistrationOptions]]
+  extends org.scalablytyped.runtime.TopLevel[hapiLib.hapiMod.Plugin[inertLib.inertMod.inertNs.OptionalRegistrationOptions]]
 

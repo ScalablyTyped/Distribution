@@ -10,7 +10,7 @@ trait IgComboLoadOnDemandSettings
   extends /**
 	 * Option for IgComboLoadOnDemandSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets option to enable load on demand.
   	 *

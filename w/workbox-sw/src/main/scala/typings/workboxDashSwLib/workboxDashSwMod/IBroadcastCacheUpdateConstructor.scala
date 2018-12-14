@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait IBroadcastCacheUpdateConstructor
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* channelName */ java.lang.String, 
       /* options */ stdLib.Partial[IBroadcastCacheUpdateOptions], 
       BroadcastCacheUpdate

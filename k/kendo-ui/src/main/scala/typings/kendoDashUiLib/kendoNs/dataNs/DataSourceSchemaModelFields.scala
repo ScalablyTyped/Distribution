@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait DataSourceSchemaModelFields
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[DataSourceSchemaModelField]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[DataSourceSchemaModelField]
 

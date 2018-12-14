@@ -10,7 +10,7 @@ trait IgLinearGaugeRange
   extends /**
 	 * Option for IgLinearGaugeRange
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets or sets the brush to use to fill the range.
   	 */

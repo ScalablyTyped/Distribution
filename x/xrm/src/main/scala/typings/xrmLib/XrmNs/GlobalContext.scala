@@ -97,7 +97,7 @@ trait GlobalContext extends js.Object {
            * @deprecated Deprecated in v9 (Still applicable in Web Client).
            * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
            */
-  def getQueryStringParameters(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def getQueryStringParameters(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
            * Returns the difference between the local time and Coordinated Universal Time (UTC).
            * @returns The time zone offset, in minutes.

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DrawerProps
   extends SharedDrawerProps
      with // for the `component` prop until refactored out
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var constantType: js.UndefOr[scala.Boolean] = js.undefined
   var desktopMinWidth: js.UndefOr[scala.Double] = js.undefined

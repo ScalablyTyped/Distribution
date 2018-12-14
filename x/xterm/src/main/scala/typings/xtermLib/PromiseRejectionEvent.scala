@@ -14,7 +14,7 @@ trait PromiseRejectionEvent extends Event {
 @JSGlobal("PromiseRejectionEvent")
 @js.native
 object PromiseRejectionEvent
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ PromiseRejectionEventInit, 
       PromiseRejectionEvent

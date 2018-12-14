@@ -16,7 +16,7 @@ trait Anon_Subject extends js.Object {
   /**
            * By default is an access token
            */
-  var header: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var header: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * The issuing server, application or resource
            */

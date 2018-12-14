@@ -9,30 +9,38 @@ import scala.scalajs.js.annotation._
 @js.native
 class event () extends js.Object {
   def capture(): scala.Unit = js.native
-  def define(name: java.lang.String, meta: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def define(name: java.lang.String, meta: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def fire(eventName: java.lang.String): js.Any = js.native
-  def fire(eventName: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
-  def fire(eventName: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any], editor: editor): js.Any = js.native
+  def fire(eventName: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def fire(
+    eventName: java.lang.String,
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    editor: editor
+  ): js.Any = js.native
   def fireOnce(eventName: java.lang.String): js.Any = js.native
-  def fireOnce(eventName: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
-  def fireOnce(eventName: java.lang.String, data: ScalablyTyped.runtime.StringDictionary[js.Any], editor: editor): js.Any = js.native
+  def fireOnce(eventName: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native
+  def fireOnce(
+    eventName: java.lang.String,
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    editor: editor
+  ): js.Any = js.native
   def hasListeners(eventName: java.lang.String): scala.Boolean = js.native
   def on(eventName: java.lang.String, listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit]): listenerRegistration = js.native
   def on(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): listenerRegistration = js.native
   def on(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any],
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
     listenerData: js.Any
   ): listenerRegistration = js.native
   def on(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any],
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
     listenerData: js.Any,
     priority: scala.Double
   ): listenerRegistration = js.native
@@ -53,18 +61,18 @@ class event () extends js.Object {
   def once(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any]
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): listenerRegistration = js.native
   def once(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any],
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
     listenerData: js.Any
   ): listenerRegistration = js.native
   def once(
     eventName: java.lang.String,
     listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit],
-    scopeObj: ScalablyTyped.runtime.StringDictionary[js.Any],
+    scopeObj: org.scalablytyped.runtime.StringDictionary[js.Any],
     listenerData: js.Any,
     priority: scala.Double
   ): listenerRegistration = js.native
@@ -89,6 +97,6 @@ class event () extends js.Object {
 @js.native
 object event extends js.Object {
   var useCapture: scala.Boolean = js.native
-  def implementOn(targetObject: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def implementOn(targetObject: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
 }
 

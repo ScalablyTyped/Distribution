@@ -13,8 +13,7 @@ class Explorer protected () extends js.Object {
   val AttachmentSelection: AttachmentSelection = js.native
   val Caption: java.lang.String = js.native
   val Class: OlObjectClass = js.native
-  @JSName("CommandBars")
-  val CommandBars_Original: activexDashOfficeLib.OfficeNs.CommandBars = js.native
+  val CommandBars: js.Any = js.native
   var CurrentFolder: Folder = js.native
   var CurrentView: js.Any = js.native
   val HTMLDocument: js.Any = js.native
@@ -35,8 +34,6 @@ class Explorer protected () extends js.Object {
   def ClearSearch(): scala.Unit = js.native
   def ClearSelection(): scala.Unit = js.native
   def Close(): scala.Unit = js.native
-  def CommandBars(Index: java.lang.String): activexDashOfficeLib.OfficeNs.CommandBar = js.native
-  def CommandBars(Index: scala.Double): activexDashOfficeLib.OfficeNs.CommandBar = js.native
   def DeselectFolder(Folder: Folder): scala.Unit = js.native
   def Display(): scala.Unit = js.native
   def IsFolderSelected(Folder: Folder): scala.Boolean = js.native

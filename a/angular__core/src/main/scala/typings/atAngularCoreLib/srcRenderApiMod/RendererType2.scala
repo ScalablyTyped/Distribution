@@ -11,7 +11,7 @@ trait RendererType2 extends js.Object {
        * Defines arbitrary developer-defined data to be stored on a renderer instance.
        * This is useful for renderers that delegate to other renderers.
        */
-  var data: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var data: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
        * The view encapsulation type, which determines how styles are applied to
        * DOM elements. One of

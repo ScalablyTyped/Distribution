@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait KarmaCoverageReporter
-  extends /* moreSettings */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* moreSettings */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var check: js.UndefOr[js.Any] = js.undefined
   var dir: js.UndefOr[java.lang.String] = js.undefined
   var includeAllSources: js.UndefOr[scala.Boolean] = js.undefined

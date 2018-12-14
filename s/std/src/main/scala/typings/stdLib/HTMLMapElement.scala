@@ -20,5 +20,5 @@ trait HTMLMapElement extends HTMLElement {
 @JSGlobal("HTMLMapElement")
 @js.native
 object HTMLMapElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLMapElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLMapElement]
 

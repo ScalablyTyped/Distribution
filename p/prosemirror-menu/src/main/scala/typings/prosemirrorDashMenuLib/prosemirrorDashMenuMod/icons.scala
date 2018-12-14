@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("prosemirror-menu", "icons")
 @js.native
 object icons
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

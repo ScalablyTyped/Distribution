@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("angular-formly", JSImport.Namespace)
 @js.native
 object angularDashFormlyMod
-  extends ScalablyTyped.runtime.TopLevel[java.lang.String]
+  extends org.scalablytyped.runtime.TopLevel[java.lang.String]
 

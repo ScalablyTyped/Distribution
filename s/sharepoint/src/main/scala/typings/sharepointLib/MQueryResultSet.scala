@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MQueryResultSet[T]
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[T] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[T] {
   def contains(contained: T): scala.Boolean = js.native
   def every(
     fn: js.Function2[/* elementOfArray */ T, /* indexInArray */ js.UndefOr[scala.Double], scala.Boolean]

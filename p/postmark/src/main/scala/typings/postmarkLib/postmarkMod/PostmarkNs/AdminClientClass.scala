@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AdminClientClass
-  extends ScalablyTyped.runtime.Instantiable2[/* apiKey */ java.lang.String, /* options */ stdLib.Partial[Options], AdminClient]
+  extends org.scalablytyped.runtime.Instantiable2[/* apiKey */ java.lang.String, /* options */ stdLib.Partial[Options], AdminClient]
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RemoveExpression
   extends PartialStatement
-     with ScalablyTyped.runtime.Instantiable4[
+     with org.scalablytyped.runtime.Instantiable4[
       /* prev */ PartialStatement, 
       /* expr */ js.Any, 
       /* collection */ js.Any, 

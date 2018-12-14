@@ -16,7 +16,7 @@ trait Anon_Clear extends js.Object {
        */
   var create: js.Function2[
     /* options */ Anon_ClearExistingStyles, 
-    /* styles */ ScalablyTyped.runtime.StringDictionary[reactDashSketchappLib.reactDashSketchappMod.TextStyle], 
+    /* styles */ org.scalablytyped.runtime.StringDictionary[reactDashSketchappLib.reactDashSketchappMod.TextStyle], 
     _
   ]
   /**
@@ -34,6 +34,6 @@ trait Anon_Clear extends js.Object {
   /**
        * Find all of the registered styles. You probably don't need to use this.
        */
-  var styles: ScalablyTyped.runtime.StringDictionary[js.UndefOr[reactDashSketchappLib.reactDashSketchappMod.TextStyle]]
+  var styles: org.scalablytyped.runtime.StringDictionary[js.UndefOr[reactDashSketchappLib.reactDashSketchappMod.TextStyle]]
 }
 

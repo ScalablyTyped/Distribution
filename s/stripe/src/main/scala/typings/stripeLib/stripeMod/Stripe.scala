@@ -13,7 +13,7 @@ trait Stripe extends js.Object {
   var DEFAULT_PORT: java.lang.String = js.native
   var DEFAULT_TIMEOUT: scala.Double = js.native
   var PACKAGE_VERSION: java.lang.String = js.native
-  var StripeResource: ScalablyTyped.runtime.Instantiable2[
+  var StripeResource: org.scalablytyped.runtime.Instantiable2[
     /* stripe */ Stripe, 
     /* urlData */ js.Any, 
     stripeLib.stripeMod.StripeNs.StripeResource

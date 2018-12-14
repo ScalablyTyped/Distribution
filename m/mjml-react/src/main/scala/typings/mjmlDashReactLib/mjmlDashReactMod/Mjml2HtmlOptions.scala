@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Mjml2HtmlOptions extends js.Object {
   var beautify: js.UndefOr[scala.Boolean] = js.undefined
   var filePath: js.UndefOr[java.lang.String] = js.undefined
-  var fonts: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var fonts: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var keepComments: js.UndefOr[scala.Boolean] = js.undefined
   var minify: js.UndefOr[scala.Boolean] = js.undefined
   var validationLevel: js.UndefOr[

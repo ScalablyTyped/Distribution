@@ -37,7 +37,7 @@ trait Column[T] extends js.Object {
            * @example
            * function onXxx(ev :SyntheticEvent, (rowIdx, idx, name): args)
            */
-  var events: js.UndefOr[ScalablyTyped.runtime.StringDictionary[ColumnEventCallback]] = js.undefined
+  var events: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ColumnEventCallback]] = js.undefined
   /**
            * A custom formatter for this column's filter.
            */

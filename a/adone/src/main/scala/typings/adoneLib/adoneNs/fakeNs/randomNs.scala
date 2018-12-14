@@ -21,14 +21,14 @@ object randomNs extends js.Object {
   def number(max: scala.Double): scala.Double = js.native
   def number(options: adoneLib.Anon_Max): scala.Double = js.native
   def objectElement(): java.lang.String = js.native
-  def objectElement(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
-  def objectElement[T](`object`: ScalablyTyped.runtime.StringDictionary[T], field: js.Any): T = js.native
+  def objectElement(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  def objectElement[T](`object`: org.scalablytyped.runtime.StringDictionary[T], field: js.Any): T = js.native
   @JSName("objectElement")
   def objectElement_TT[T](): T = js.native
   @JSName("objectElement")
-  def objectElement_TT[T](`object`: ScalablyTyped.runtime.StringDictionary[T]): T = js.native
+  def objectElement_TT[T](`object`: org.scalablytyped.runtime.StringDictionary[T]): T = js.native
   @JSName("objectElement")
-  def objectElement_key(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], field: adoneLib.adoneLibStrings.key): java.lang.String = js.native
+  def objectElement_key(`object`: org.scalablytyped.runtime.StringDictionary[js.Any], field: adoneLib.adoneLibStrings.key): java.lang.String = js.native
   def uuid(): java.lang.String = js.native
   def word(): java.lang.String = js.native
   def word(`type`: java.lang.String): java.lang.String = js.native

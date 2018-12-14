@@ -21,6 +21,6 @@ trait ValdrValidator extends js.Object {
   /**
            * Method to be called to perform custom validation over given value.
            */
-  def validate(value: js.Any, validationArguments: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
+  def validate(value: js.Any, validationArguments: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
 }
 

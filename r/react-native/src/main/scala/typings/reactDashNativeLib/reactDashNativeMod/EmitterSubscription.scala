@@ -21,7 +21,7 @@ trait EmitterSubscription
      * @param context - Optional context object to use when invoking the
      *   listener
      */
-ScalablyTyped.runtime.Instantiable4[
+org.scalablytyped.runtime.Instantiable4[
       /* emitter */ EventEmitter, 
       /* subscriber */ EventSubscriptionVendor, 
       /* listener */ js.Function0[js.Any], 

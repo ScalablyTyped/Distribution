@@ -321,7 +321,7 @@ trait Options extends js.Object {
        * Default: empty object
        * Object containing responsive options. Can be set to false to remove responsive capabilities..
        */
-  var responsive: js.UndefOr[ScalablyTyped.runtime.StringDictionary[Options]] = js.undefined
+  var responsive: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Options]] = js.undefined
   /**
        * Default: window
        * Set on any DOM element.

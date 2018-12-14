@@ -690,9 +690,9 @@ trait Cypress extends js.Object {
   @JSName("config")
   def config_defaultCommandTimeout(key: cypressLib.cypressLibStrings.defaultCommandTimeout, value: scala.Double): scala.Unit = js.native
   @JSName("config")
-  def config_env(key: cypressLib.cypressLibStrings.env): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def config_env(key: cypressLib.cypressLibStrings.env): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("config")
-  def config_env(key: cypressLib.cypressLibStrings.env, value: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def config_env(key: cypressLib.cypressLibStrings.env, value: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   @JSName("config")
   def config_execTimeout(key: cypressLib.cypressLibStrings.execTimeout): scala.Double = js.native
   @JSName("config")

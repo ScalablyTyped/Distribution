@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("module", JSImport.Namespace)
 @js.native
 object moduleMod
-  extends ScalablyTyped.runtime.TopLevel[Anon_Config]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Config]
 

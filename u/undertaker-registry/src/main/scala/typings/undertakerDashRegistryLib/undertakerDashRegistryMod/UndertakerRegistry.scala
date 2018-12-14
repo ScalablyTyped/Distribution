@@ -35,6 +35,6 @@ trait UndertakerRegistry extends js.Object {
        * Necessary to override if the get method is overridden for custom task storage.
        * Custom registries can override this when when inheriting from this default registry.
        */
-  def tasks(): ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
+  def tasks(): org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]
 }
 

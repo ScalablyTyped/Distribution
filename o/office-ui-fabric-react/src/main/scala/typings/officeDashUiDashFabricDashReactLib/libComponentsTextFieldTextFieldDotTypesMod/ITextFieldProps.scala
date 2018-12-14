@@ -99,7 +99,7 @@ trait ITextFieldProps
        *  '*': /[a-zA-Z0-9]/
        * \}
        */
-  var maskFormat: js.UndefOr[ScalablyTyped.runtime.StringDictionary[stdLib.RegExp]] = js.undefined
+  var maskFormat: js.UndefOr[org.scalablytyped.runtime.StringDictionary[stdLib.RegExp]] = js.undefined
   /**
        * Whether or not the text field is a multiline text field.
        * @defaultvalue false

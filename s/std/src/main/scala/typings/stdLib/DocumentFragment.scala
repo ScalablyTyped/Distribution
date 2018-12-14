@@ -14,5 +14,5 @@ trait DocumentFragment
 @JSGlobal("DocumentFragment")
 @js.native
 object DocumentFragment
-  extends ScalablyTyped.runtime.Instantiable0[DocumentFragment]
+  extends org.scalablytyped.runtime.Instantiable0[DocumentFragment]
 

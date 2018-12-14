@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait HelperDeclareSpec
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[HelperDelegate]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[HelperDelegate]
 

@@ -15,7 +15,7 @@ trait LiftoffEnv extends js.Object {
            * an object of filepaths for each found config file (filepath values will be null if not found)
            */
   var configFiles: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Null]]
+    org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]]
   ]
   /**
            * the config files searched for
@@ -32,7 +32,7 @@ trait LiftoffEnv extends js.Object {
   /**
            * the contents of the local module's package.json (if found)
            */
-  var modulePackage: js.UndefOr[ScalablyTyped.runtime.StringDictionary[_]]
+  var modulePackage: js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]
   /**
            * the full path to the local module your project relies on (if found)
            */

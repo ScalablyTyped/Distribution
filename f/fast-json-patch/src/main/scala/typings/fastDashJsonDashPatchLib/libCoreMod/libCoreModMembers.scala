@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fast-json-patch/lib/core", JSImport.Namespace)
 @js.native
 object libCoreModMembers extends js.Object {
-  val JsonPatchError: ScalablyTyped.runtime.Instantiable5[
+  val JsonPatchError: org.scalablytyped.runtime.Instantiable5[
     /* message */ java.lang.String, 
     /* name */ fastDashJsonDashPatchLib.libHelpersMod.JsonPatchErrorName, 
     /* index */ js.UndefOr[/* index */ scala.Double], 

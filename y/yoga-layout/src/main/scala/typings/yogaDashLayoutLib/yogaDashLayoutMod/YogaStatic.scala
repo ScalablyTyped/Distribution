@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait YogaStatic extends ConstantsStatic {
   var Config: ConfigStatic
-  var Layout: ScalablyTyped.runtime.Instantiable6[
+  var Layout: org.scalablytyped.runtime.Instantiable6[
     /* left */ scala.Double, 
     /* right */ scala.Double, 
     /* top */ scala.Double, 
@@ -18,8 +18,8 @@ trait YogaStatic extends ConstantsStatic {
     Layout
   ]
   var Node: NodeStatic
-  var Size: ScalablyTyped.runtime.Instantiable2[/* width */ scala.Double, /* height */ scala.Double, Size]
-  var Value: ScalablyTyped.runtime.Instantiable2[/* unit */ YogaUnit | scala.Double, /* value */ scala.Double, Value]
+  var Size: org.scalablytyped.runtime.Instantiable2[/* width */ scala.Double, /* height */ scala.Double, Size]
+  var Value: org.scalablytyped.runtime.Instantiable2[/* unit */ YogaUnit | scala.Double, /* value */ scala.Double, Value]
   def getInstanceCount(): scala.Double
 }
 

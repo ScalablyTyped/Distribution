@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Endpoints
-  extends /* containerName */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.NumberDictionary[Endpoint]]
+  extends /* containerName */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.NumberDictionary[Endpoint]]
 

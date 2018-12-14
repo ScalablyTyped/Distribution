@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait UserMetadata
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

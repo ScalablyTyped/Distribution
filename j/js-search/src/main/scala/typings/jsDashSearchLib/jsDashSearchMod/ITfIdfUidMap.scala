@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ITfIdfUidMap
-  extends /* uid */ ScalablyTyped.runtime.StringDictionary[ITfIdfUidMetadata]
+  extends /* uid */ org.scalablytyped.runtime.StringDictionary[ITfIdfUidMetadata]
 

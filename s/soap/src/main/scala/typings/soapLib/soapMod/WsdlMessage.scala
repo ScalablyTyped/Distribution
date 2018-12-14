@@ -10,6 +10,6 @@ trait WsdlMessage extends XsdTypeBase {
   @JSName("$name")
   var $name: java.lang.String
   var element: XsdElement
-  var parts: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var parts: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

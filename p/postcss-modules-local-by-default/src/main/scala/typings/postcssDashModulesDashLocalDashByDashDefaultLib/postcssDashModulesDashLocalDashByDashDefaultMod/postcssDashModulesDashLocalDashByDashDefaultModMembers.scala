@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("postcss-modules-local-by-default", JSImport.Namespace)
 @js.native
 object postcssDashModulesDashLocalDashByDashDefaultModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       postcssDashModulesDashLocalDashByDashDefaultLib.postcssDashModulesDashLocalDashByDashDefaultMod.localByDefaultNs.LocalByDefault
     ]
 

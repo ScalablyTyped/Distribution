@@ -16,5 +16,5 @@ trait Puck
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[Puck]
+org.scalablytyped.runtime.Instantiable0[Puck]
 

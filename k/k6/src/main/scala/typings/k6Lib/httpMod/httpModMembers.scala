@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object httpModMembers extends js.Object {
   def batch(requests: js.Array[Request]): js.Array[Response] = js.native
   @JSName("batch")
-  def batch_StringDictionary(requests: js.Array[Request]): ScalablyTyped.runtime.StringDictionary[Response] = js.native
+  def batch_StringDictionary(requests: js.Array[Request]): org.scalablytyped.runtime.StringDictionary[Response] = js.native
   def del(url: java.lang.String): Response = js.native
   def del(url: java.lang.String, body: java.lang.String): Response = js.native
   def del(url: java.lang.String, body: java.lang.String, params: RequestParams): Response = js.native

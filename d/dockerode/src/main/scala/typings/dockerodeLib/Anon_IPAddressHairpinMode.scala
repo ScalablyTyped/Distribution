@@ -19,9 +19,9 @@ trait Anon_IPAddressHairpinMode extends js.Object {
   var LinkLocalIPv6Address: java.lang.String
   var LinkLocalIPv6PrefixLen: scala.Double
   var MacAddress: java.lang.String
-  var Networks: ScalablyTyped.runtime.StringDictionary[Anon_IPAddress]
+  var Networks: org.scalablytyped.runtime.StringDictionary[Anon_IPAddress]
   var Node: js.UndefOr[Anon_ID] = js.undefined
-  var Ports: ScalablyTyped.runtime.StringDictionary[js.Array[Anon_HostIp]]
+  var Ports: org.scalablytyped.runtime.StringDictionary[js.Array[Anon_HostIp]]
   var SandboxID: java.lang.String
   var SandboxKey: java.lang.String
   var SecondaryIPAddresses: js.UndefOr[js.Any] = js.undefined

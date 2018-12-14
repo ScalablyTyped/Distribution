@@ -26,7 +26,7 @@ class TableViewParameters () extends js.Object {
   var defaultEditMode: sharepointLib.SPNs.JsGridNs.EditMode = js.native
    // TODO
   var ganttParams: GanttParameters = js.native
-  var gridFieldMap: ScalablyTyped.runtime.StringDictionary[sharepointLib.SPNs.JsGridNs.GridField] = js.native
+  var gridFieldMap: org.scalablytyped.runtime.StringDictionary[sharepointLib.SPNs.JsGridNs.GridField] = js.native
   var keyFieldName: java.lang.String = js.native
   var messageOverrides: js.Any = js.native
    // TODO

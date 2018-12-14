@@ -10,7 +10,7 @@ trait IgGridSummariesColumnSettingSummaryOperand
   extends /**
 	 * Option for IgGridSummariesColumnSettingSummaryOperand
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * If it is false the summary operand will be shown in dropdown but it will not be made calculation
   	 *

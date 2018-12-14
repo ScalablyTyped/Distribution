@@ -11,7 +11,7 @@ trait CustomEditorProps[TRow /* <: js.Object */, K /* <: java.lang.String */]
      with /**
 	 * Contents of the customEditorParameters object.
 	 */
-/* parameterName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* parameterName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Default value for the editor cell.
   	 */

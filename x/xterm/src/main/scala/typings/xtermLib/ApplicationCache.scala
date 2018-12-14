@@ -314,7 +314,7 @@ trait ApplicationCache extends EventTarget {
 @JSGlobal("ApplicationCache")
 @js.native
 object ApplicationCache
-  extends ScalablyTyped.runtime.Instantiable0[ApplicationCache] {
+  extends org.scalablytyped.runtime.Instantiable0[ApplicationCache] {
   val CHECKING: scala.Double = js.native
   val DOWNLOADING: scala.Double = js.native
   val IDLE: scala.Double = js.native

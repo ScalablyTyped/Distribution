@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait PageOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** 页面的初始数据 */
   var data: js.UndefOr[js.Any] = js.undefined
   /** 生命周期函数--监听页面隐藏 */

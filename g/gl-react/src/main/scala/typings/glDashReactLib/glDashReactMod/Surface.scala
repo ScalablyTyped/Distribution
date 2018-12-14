@@ -15,7 +15,7 @@ class Surface[T] ()
   var id: scala.Double = js.native
   var loaderResolver: js.UndefOr[js.Any] = js.native
   var root: Node = js.native
-  var shaders: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var shaders: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def capture(): js.Array[_] = js.native
   def capture(x: scala.Double): js.Array[_] = js.native
   def capture(x: scala.Double, y: scala.Double): js.Array[_] = js.native

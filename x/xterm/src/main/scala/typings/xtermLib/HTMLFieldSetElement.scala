@@ -42,5 +42,5 @@ trait HTMLFieldSetElement extends HTMLElement {
 @JSGlobal("HTMLFieldSetElement")
 @js.native
 object HTMLFieldSetElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLFieldSetElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLFieldSetElement]
 

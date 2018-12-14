@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MediaTypeStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* s */ java.lang.String, MediaType]
-     with ScalablyTyped.runtime.Instantiable2[/* s */ java.lang.String, /* p */ js.Any, MediaType] {
+  extends org.scalablytyped.runtime.Instantiable1[/* s */ java.lang.String, MediaType]
+     with org.scalablytyped.runtime.Instantiable2[/* s */ java.lang.String, /* p */ js.Any, MediaType] {
   def mediaCmp(a: MediaType, b: MediaType): scala.Double = js.native
   def parseMedia(`type`: java.lang.String): MediaType = js.native
   def select(availableTypes: js.Array[MediaType], acceptedTypes: js.Array[MediaType]): java.lang.String = js.native

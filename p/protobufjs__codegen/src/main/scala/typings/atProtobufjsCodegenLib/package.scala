@@ -13,7 +13,7 @@ package object atProtobufjsCodegenLib {
    * @throws {Error} If format parameter counts do not match
    */
   type Codegen = js.Function2[
-    /* formatStringOrScope */ js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* formatStringOrScope */ js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]], 
     /* repeated */js.Any, 
     js.Object | js.Function
   ]

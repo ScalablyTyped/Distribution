@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
          */
 @js.native
 trait BaseUI[TOpt]
-  extends ScalablyTyped.runtime.Instantiable1[/* opt */ TOpt, scala.Unit] {
+  extends org.scalablytyped.runtime.Instantiable1[/* opt */ TOpt, scala.Unit] {
   /**
                * Close the interface and cleanup listeners
                */

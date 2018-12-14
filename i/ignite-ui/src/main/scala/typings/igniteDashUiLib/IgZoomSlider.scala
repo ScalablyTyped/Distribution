@@ -10,7 +10,7 @@ trait IgZoomSlider
   extends /**
 	 * Option for igZoomSlider
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var actualPixelScalingRatio: js.UndefOr[scala.Double] = js.undefined
   var areThumbCalloutsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var barBrush: js.UndefOr[js.Any] = js.undefined

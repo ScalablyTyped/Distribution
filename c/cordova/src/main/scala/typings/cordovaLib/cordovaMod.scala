@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cordova", JSImport.Namespace)
 @js.native
 object cordovaMod
-  extends ScalablyTyped.runtime.TopLevel[Cordova]
+  extends org.scalablytyped.runtime.TopLevel[Cordova]
 

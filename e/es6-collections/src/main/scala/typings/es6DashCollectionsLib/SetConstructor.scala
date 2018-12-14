@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SetConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Set[js.Object]]
-     with ScalablyTyped.runtime.Instantiable1[/* iterable */ ForEachable[js.Object], Set[js.Object]]
+  extends org.scalablytyped.runtime.Instantiable0[Set[js.Object]]
+     with org.scalablytyped.runtime.Instantiable1[/* iterable */ ForEachable[js.Object], Set[js.Object]]
 

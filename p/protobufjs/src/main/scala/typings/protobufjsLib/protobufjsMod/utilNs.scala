@@ -131,7 +131,7 @@ object utilNs extends js.Object {
              * @param message Error message
              * @param [properties] Additional properties
              */
-    def this(message: java.lang.String, properties: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+    def this(message: java.lang.String, properties: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
     /** So far decoded message instance. */
     var instance: protobufjsLib.protobufjsMod.Message[T] = js.native
   }
@@ -355,9 +355,9 @@ object utilNs extends js.Object {
        * @returns Destination object
        */
   def merge(
-    dst: ScalablyTyped.runtime.StringDictionary[js.Any],
-    src: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    dst: org.scalablytyped.runtime.StringDictionary[js.Any],
+    src: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Merges the properties of the source object into the destination object.
        * @param dst Destination object
@@ -366,10 +366,10 @@ object utilNs extends js.Object {
        * @returns Destination object
        */
   def merge(
-    dst: ScalablyTyped.runtime.StringDictionary[js.Any],
-    src: ScalablyTyped.runtime.StringDictionary[js.Any],
+    dst: org.scalablytyped.runtime.StringDictionary[js.Any],
+    src: org.scalablytyped.runtime.StringDictionary[js.Any],
     ifNotSet: scala.Boolean
-  ): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Creates a new buffer of whatever type supported by the environment.
        * @param [sizeOrArray=0] Buffer size or number array
@@ -433,13 +433,13 @@ object utilNs extends js.Object {
        * @param object Object to convert
        * @returns Converted array
        */
-  def toArray(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Array[_] = js.native
+  def toArray(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Array[_] = js.native
   /**
        * Converts an array of keys immediately followed by their respective value to an object, omitting undefined values.
        * @param array Array to convert
        * @returns Converted object
        */
-  def toObject(array: js.Array[_]): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toObject(array: js.Array[_]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
        * Converts the first character of a string to upper case.
        * @param str String to convert
@@ -592,7 +592,7 @@ object utilNs extends js.Object {
   /** Node's fs module if available. */
   @js.native
   object fs
-    extends /* k */ ScalablyTyped.runtime.StringDictionary[js.Any]
+    extends /* k */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
   /** A minimal path module to resolve Unix, Windows and URL paths alike. */
   @JSName("path")

@@ -26,7 +26,7 @@ trait CustomProtocol1 extends CustomProtocol {
   def profile(
     `this`: CustomProviderOptions,
     credentials: Credentials1,
-    params: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     get: AuthedRequest
   ): js.Promise[scala.Unit] = js.native
 }

@@ -20,11 +20,11 @@
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_TModel) [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclClass(Collection) / TsMemberProperty(model) / TsTypeObject())] 
 [debug] PhaseRunner.scala:78 Success [id => giraffe, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing giraffe [id => giraffe, phase => scala.js] 
-[info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Collection)] 
-[info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Model)] 
-[info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Router)] 
-[info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(View)] 
-[info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(ContribNs) / Name(Controller)] 
+[info ] CompleteClass.scala:58 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Collection)] 
+[info ] CompleteClass.scala:58 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Model)] 
+[info ] CompleteClass.scala:58 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Router)] 
+[info ] CompleteClass.scala:58 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(View)] 
+[info ] CompleteClass.scala:58 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(ContribNs) / Name(Controller)] 
 [debug] PhaseRunner.scala:78 Success [id => giraffe, phase => scala.js] 
 [error] Collection.scala:10 class Collection inherits conflicting members:
   method initialize in trait Collection of type ()Unit  and

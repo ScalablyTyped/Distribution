@@ -18,7 +18,7 @@ object MarketplaceCommerceAnalyticsNs extends js.Object {
   
   
   trait CustomerDefinedValues
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[OptionalValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[OptionalValue]
   
   
   trait GenerateDataSetRequest extends js.Object {

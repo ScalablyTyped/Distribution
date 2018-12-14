@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ParserOptions
-  extends /* optName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* optName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var system: js.UndefOr[scala.Boolean] = js.undefined
 }
 

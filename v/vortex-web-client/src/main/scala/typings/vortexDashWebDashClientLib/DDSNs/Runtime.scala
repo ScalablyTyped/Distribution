@@ -13,7 +13,7 @@ trait Runtime
 		 * maintains the connection with the server, re-establish the connection
 		 * if dropped and mediates the `DataReader` and `DataWriter` communication.
 		 */
-ScalablyTyped.runtime.Instantiable0[Runtime] {
+org.scalablytyped.runtime.Instantiable0[Runtime] {
   /**
   		 * Closes the DDS runtime and as a consequence all the `DataReaders` and `DataWriters` that belong to this runtime.
   		 *

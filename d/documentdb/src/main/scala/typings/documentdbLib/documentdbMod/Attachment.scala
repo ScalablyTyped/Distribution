@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Attachment
   extends /** Other properties */
-/* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** The MIME contentType of the attachment. */
   var contentType: java.lang.String
   /** Media link associated with the attachment content. */

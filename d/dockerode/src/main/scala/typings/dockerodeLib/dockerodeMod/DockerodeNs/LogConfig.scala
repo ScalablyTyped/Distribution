@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait LogConfig extends js.Object {
-  var Config: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var Config: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var Type: LoggingDriverType
 }
 

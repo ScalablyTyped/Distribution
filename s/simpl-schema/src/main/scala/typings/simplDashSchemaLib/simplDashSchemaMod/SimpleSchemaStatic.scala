@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SimpleSchemaStatic
-  extends ScalablyTyped.runtime.Instantiable1[
-      (/* schema */ ScalablyTyped.runtime.StringDictionary[
-        SchemaDefinition | stdLib.BooleanConstructor | stdLib.StringConstructor | stdLib.NumberConstructor | stdLib.DateConstructor | stdLib.ArrayConstructor | java.lang.String | stdLib.RegExp | SimpleSchema
-      ]) | (/* schema */ js.Array[js.Any]), 
-      SimpleSchema
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
-      (/* schema */ ScalablyTyped.runtime.StringDictionary[
+  extends org.scalablytyped.runtime.Instantiable2[
+      (/* schema */ org.scalablytyped.runtime.StringDictionary[
         SchemaDefinition | stdLib.BooleanConstructor | stdLib.StringConstructor | stdLib.NumberConstructor | stdLib.DateConstructor | stdLib.ArrayConstructor | java.lang.String | stdLib.RegExp | SimpleSchema
       ]) | (/* schema */ js.Array[js.Any]), 
       /* options */ SimpleSchemaOptions, 
+      SimpleSchema
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* schema */ org.scalablytyped.runtime.StringDictionary[
+        SchemaDefinition | stdLib.BooleanConstructor | stdLib.StringConstructor | stdLib.NumberConstructor | stdLib.DateConstructor | stdLib.ArrayConstructor | java.lang.String | stdLib.RegExp | SimpleSchema
+      ]) | (/* schema */ js.Array[js.Any]), 
       SimpleSchema
     ] {
   var ErrorTypes: simplDashSchemaLib.Anon_BADDATE = js.native
@@ -32,7 +32,7 @@ trait SimpleSchemaStatic
   def getDefinition(key: java.lang.String, propList: js.Any, functionContext: js.Any): js.Any = js.native
   def keyIsInBlackBox(key: java.lang.String): scala.Boolean = js.native
   def label(key: js.Any): js.Any = js.native
-  def labels(labels: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def labels(labels: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
   def messageForError(`type`: js.Any, key: js.Any, `def`: js.Any, value: js.Any): java.lang.String = js.native
   def messages(messages: js.Any): js.Any = js.native
   def namedContext(): SimpleSchemaValidationContextStatic = js.native

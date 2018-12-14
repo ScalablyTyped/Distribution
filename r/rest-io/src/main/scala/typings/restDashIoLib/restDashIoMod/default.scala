@@ -16,20 +16,20 @@ class default protected () extends RestIO {
 @js.native
 object default extends js.Object {
   var AuthorizedResource: js.Any = js.native
-  var AuthorizedSubResource: ScalablyTyped.runtime.Instantiable1[
+  var AuthorizedSubResource: org.scalablytyped.runtime.Instantiable1[
     /* subResDef */ restDashIoLib.libSrcAuthorizedSubResourceMod.ISubResource, 
     restDashIoLib.libSrcAuthorizedSubResourceMod.default
   ] = js.native
   var ROLES: restDashIoLib.Anon_SUPERUSER = js.native
-  var Resource: ScalablyTyped.runtime.Instantiable1[
+  var Resource: org.scalablytyped.runtime.Instantiable1[
     /* resDef */ restDashIoLib.libSrcResourceMod.IResource, 
     restDashIoLib.libSrcResourceMod.Resource
   ] = js.native
-  var SubResource: ScalablyTyped.runtime.Instantiable1[
+  var SubResource: org.scalablytyped.runtime.Instantiable1[
     /* subResDef */ restDashIoLib.libSrcSubResourceMod.ISubResource, 
     restDashIoLib.libSrcSubResourceMod.default
   ] = js.native
-  var UserResource: ScalablyTyped.runtime.Instantiable0[restDashIoLib.libSrcUserResourceMod.default] = js.native
+  var UserResource: org.scalablytyped.runtime.Instantiable0[restDashIoLib.libSrcUserResourceMod.default] = js.native
   var authorizedResource: js.Any = js.native
 }
 

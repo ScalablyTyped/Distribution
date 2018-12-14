@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TFontFamily
-  extends /* fontName */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* fontName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

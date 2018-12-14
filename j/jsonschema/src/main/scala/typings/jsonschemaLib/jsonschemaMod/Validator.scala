@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("jsonschema", "Validator")
 @js.native
 class Validator () extends js.Object {
-  var attributes: ScalablyTyped.runtime.StringDictionary[CustomProperty] = js.native
-  var customFormats: ScalablyTyped.runtime.StringDictionary[CustomFormat] = js.native
-  var schemas: ScalablyTyped.runtime.StringDictionary[Schema] = js.native
+  var attributes: org.scalablytyped.runtime.StringDictionary[CustomProperty] = js.native
+  var customFormats: org.scalablytyped.runtime.StringDictionary[CustomFormat] = js.native
+  var schemas: org.scalablytyped.runtime.StringDictionary[Schema] = js.native
   var unresolvedRefs: js.Array[java.lang.String] = js.native
   def addSchema(): Schema | scala.Unit = js.native
   def addSchema(schema: Schema): Schema | scala.Unit = js.native

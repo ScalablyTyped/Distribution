@@ -31,7 +31,7 @@ class MarkType[S /* <: Schema[_, _] */] () extends js.Object {
      * containing only some of the mark's attributes. The others, if
      * they have defaults, will be added.
      */
-  def create(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): Mark[S] = js.native
+  def create(attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): Mark[S] = js.native
   /**
      * Queries whether a given mark type is
      * [excluded](#model.MarkSpec.excludes) by this one.

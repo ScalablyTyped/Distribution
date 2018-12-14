@@ -13,14 +13,14 @@ trait ServiceConstructor
      * @param name The unique name of the service.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* args */ ServiceArguments, Service]
+org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* args */ ServiceArguments, Service]
      with /**
      * Construct a new Service, which is one or more managed replicas of a group of one or more Containers.
      *
      * @param name The unique name of the service.
      * @param opts A bag of options that controls how this resource behaves.
      */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* name */ java.lang.String, 
       /* args */ ServiceArguments, 
       /* opts */ atPulumiPulumiLib.resourceMod.ResourceOptions, 

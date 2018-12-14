@@ -75,5 +75,5 @@ trait SVGFEImageElement
 @JSGlobal("SVGFEImageElement")
 @js.native
 object SVGFEImageElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGFEImageElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGFEImageElement]
 

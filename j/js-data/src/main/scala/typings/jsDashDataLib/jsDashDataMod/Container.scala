@@ -11,7 +11,7 @@ class Container () extends Component {
   def this(opts: js.Any) = this()
   var _adapters: js.Object = js.native
   var _mappers: js.Object = js.native
-  var mapperClass: ScalablyTyped.runtime.Instantiable1[/* opts */ js.UndefOr[/* opts */ js.Any], Mapper] = js.native
+  var mapperClass: org.scalablytyped.runtime.Instantiable1[/* opts */ js.UndefOr[/* opts */ js.Any], Mapper] = js.native
   var mapperDefaults: js.Any = js.native
   def as(name: java.lang.String): js.Any = js.native
   def createRecord(name: java.lang.String): Record = js.native

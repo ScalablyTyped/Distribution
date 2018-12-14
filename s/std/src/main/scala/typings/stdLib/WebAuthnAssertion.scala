@@ -16,5 +16,5 @@ trait WebAuthnAssertion extends js.Object {
 @JSGlobal("WebAuthnAssertion")
 @js.native
 object WebAuthnAssertion
-  extends ScalablyTyped.runtime.Instantiable0[WebAuthnAssertion]
+  extends org.scalablytyped.runtime.Instantiable0[WebAuthnAssertion]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Links
-  extends /* rel */ ScalablyTyped.runtime.StringDictionary[Link]
+  extends /* rel */ org.scalablytyped.runtime.StringDictionary[Link]
 

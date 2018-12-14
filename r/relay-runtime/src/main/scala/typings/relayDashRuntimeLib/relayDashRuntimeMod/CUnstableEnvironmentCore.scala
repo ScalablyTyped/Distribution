@@ -41,7 +41,7 @@ trait CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNod
        * Similar to `getSelectorsFromObject()`, this function can be useful in
        * determining the "identity" of the props passed to a component.
        */
-  def getDataIDsFromObject(fragments: CFragmentMap[TFragment], props: Props): ScalablyTyped.runtime.StringDictionary[js.UndefOr[DataID | js.Array[DataID] | scala.Null]]
+  def getDataIDsFromObject(fragments: CFragmentMap[TFragment], props: Props): org.scalablytyped.runtime.StringDictionary[js.UndefOr[DataID | js.Array[DataID] | scala.Null]]
   /**
        * Given a graphql`...` tagged template, extract a fragment definition usable
        * by this version of Relay core. Throws if the value is not a fragment.
@@ -96,7 +96,7 @@ trait CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNod
        * use this function to convert (props, fragments) into selectors so that they
        * can read the results to pass to the inner component.
        */
-  def getSelectorsFromObject(operationVariables: Variables, fragments: CFragmentMap[TFragment], props: Props): ScalablyTyped.runtime.StringDictionary[js.UndefOr[CSelector[TNode] | js.Array[CSelector[TNode]] | scala.Null]]
+  def getSelectorsFromObject(operationVariables: Variables, fragments: CFragmentMap[TFragment], props: Props): org.scalablytyped.runtime.StringDictionary[js.UndefOr[CSelector[TNode] | js.Array[CSelector[TNode]] | scala.Null]]
   /**
        * Given a mapping of keys -> results and a mapping of keys -> fragments,
        * extracts the merged variables that would be in scope for those

@@ -10,6 +10,6 @@ trait WorkItemRelationType extends WorkItemTrackingReference {
   /**
        * The collection of relation type attributes.
        */
-  var attributes: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var attributes: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

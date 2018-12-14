@@ -74,5 +74,5 @@ trait SVGAElement
 @JSGlobal("SVGAElement")
 @js.native
 object SVGAElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGAElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGAElement]
 

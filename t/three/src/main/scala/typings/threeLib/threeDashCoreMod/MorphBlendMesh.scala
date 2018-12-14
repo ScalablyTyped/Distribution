@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class MorphBlendMesh protected () extends Mesh {
   def this(geometry: Geometry, material: Material) = this()
   var animationsList: js.Array[MorphBlendMeshAnimation] = js.native
-  var animationsMap: ScalablyTyped.runtime.StringDictionary[MorphBlendMeshAnimation] = js.native
+  var animationsMap: org.scalablytyped.runtime.StringDictionary[MorphBlendMeshAnimation] = js.native
   def autoCreateAnimations(fps: scala.Double): scala.Unit = js.native
   def createAnimation(name: java.lang.String, start: scala.Double, end: scala.Double, fps: scala.Double): scala.Unit = js.native
   def getAnimationDuration(name: java.lang.String): scala.Double = js.native

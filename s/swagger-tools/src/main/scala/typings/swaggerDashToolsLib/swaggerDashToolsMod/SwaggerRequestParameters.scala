@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SwaggerRequestParameters
-  extends /* paramName */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[SwaggerRequestParameter[_]]]
+  extends /* paramName */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[SwaggerRequestParameter[_]]]
 

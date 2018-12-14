@@ -43,7 +43,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -67,7 +67,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -91,7 +91,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -103,7 +103,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -115,7 +115,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -139,7 +139,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -151,7 +151,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -163,7 +163,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -187,7 +187,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -199,7 +199,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -211,7 +211,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -223,7 +223,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: scala.Boolean, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: scala.Boolean, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -235,7 +235,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -247,7 +247,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -259,7 +259,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -271,7 +271,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: scala.Boolean, options: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: scala.Boolean, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -283,7 +283,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -295,7 +295,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean, options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean, options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -307,7 +307,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -319,7 +319,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: scala.Boolean, options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: scala.Boolean, options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -331,7 +331,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -343,7 +343,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: ScalablyTyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean, options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: org.scalablytyped.runtime.StringDictionary[js.Any], responseStream: scala.Boolean, options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -355,7 +355,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: ScalablyTyped.runtime.StringDictionary[js.Any], options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: org.scalablytyped.runtime.StringDictionary[js.Any], options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /**
        * Constructs a new service method instance.
        * @param name Method name
@@ -367,7 +367,7 @@ class Method protected () extends ReflectionObject {
        * @param [options] Declared options
        * @param [comment] The comment for this method
        */
-  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: scala.Boolean, options: ScalablyTyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
+  def this(name: java.lang.String, `type`: js.UndefOr[scala.Nothing], requestType: java.lang.String, responseType: java.lang.String, requestStream: scala.Boolean, responseStream: scala.Boolean, options: org.scalablytyped.runtime.StringDictionary[js.Any], comment: java.lang.String) = this()
   /** Whether requests are streamed or not. */
   var requestStream: js.UndefOr[scala.Boolean] = js.native
   /** Request type. */

@@ -13,8 +13,8 @@ trait MediaStreamTrackEvent extends Event {
 @JSGlobal("MediaStreamTrackEvent")
 @js.native
 object MediaStreamTrackEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* typeArg */ java.lang.String, MediaStreamTrackEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, MediaStreamTrackEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* typeArg */ java.lang.String, 
       /* eventInitDict */ MediaStreamTrackEventInit, 
       MediaStreamTrackEvent

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Spec
   extends SuiteOrSpec
-     with ScalablyTyped.runtime.Instantiable3[/* env */ Env, /* suite */ Suite, /* description */ java.lang.String, js.Any] {
+     with org.scalablytyped.runtime.Instantiable3[/* env */ Env, /* suite */ Suite, /* description */ java.lang.String, js.Any] {
   var afterCallbacks: js.Array[SpecFunction] = js.native
   var matchersClass: Matchers[_] = js.native
   var `results_`: NestedResults = js.native

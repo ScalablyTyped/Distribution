@@ -14,5 +14,5 @@ trait SVGPathSegLinetoAbs extends SVGPathSeg {
 @JSGlobal("SVGPathSegLinetoAbs")
 @js.native
 object SVGPathSegLinetoAbs
-  extends ScalablyTyped.runtime.Instantiable0[SVGPathSegLinetoAbs]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPathSegLinetoAbs]
 

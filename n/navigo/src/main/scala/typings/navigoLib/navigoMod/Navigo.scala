@@ -32,7 +32,7 @@ trait Navigo extends js.Object {
   ): Navigo = js.native
   def on(rootHandler: navigoLib.RouteHandler): Navigo = js.native
   def on(rootHandler: navigoLib.RouteHandler, hooks: NavigoHooks): Navigo = js.native
-  def on(routes: ScalablyTyped.runtime.StringDictionary[navigoLib.RouteHandler]): Navigo = js.native
+  def on(routes: org.scalablytyped.runtime.StringDictionary[navigoLib.RouteHandler]): Navigo = js.native
   def pause(): scala.Unit = js.native
   def pause(change: scala.Boolean): scala.Unit = js.native
   def resolve(): scala.Boolean = js.native

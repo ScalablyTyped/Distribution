@@ -9,7 +9,7 @@ package object distInterfacesMod {
   type DirectiveResolverFn[TSource, TContext] = js.Function5[
     /* next */ NextResolverFn, 
     /* source */ TSource, 
-    /* args */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* args */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* context */ TContext, 
     /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
     js.Any
@@ -17,7 +17,7 @@ package object distInterfacesMod {
   type IConnector[TContext] = IConnectorCls[TContext] | IConnectorFn[TContext]
   type IConnectorFn[TContext] = js.Function1[/* context */ js.UndefOr[TContext], js.Any]
   type IFieldIteratorFn = js.Function3[
-    /* fieldDef */ graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]], 
+    /* fieldDef */ graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]], 
     /* typeName */ java.lang.String, 
     /* fieldName */ java.lang.String, 
     scala.Unit
@@ -29,12 +29,12 @@ package object distInterfacesMod {
     /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo with graphqlDashToolsLib.Anon_MergeInfo, 
     js.Any
   ]
-  type IMockFn = graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]]
+  type IMockFn = graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
   type IMockTypeFn = js.Function3[
     /* type */ graphqlLib.typeDefinitionMod.GraphQLType, 
     /* typeName */ js.UndefOr[java.lang.String], 
     /* fieldName */ js.UndefOr[java.lang.String], 
-    graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]]
+    graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
   ]
   type IResolversParameter = (js.Array[
     (IResolvers[js.Any, js.Any]) | (js.Function1[/* mergeInfo */ MergeInfo, IResolvers[js.Any, js.Any]])

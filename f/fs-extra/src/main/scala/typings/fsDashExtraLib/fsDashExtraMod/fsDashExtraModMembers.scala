@@ -2355,10 +2355,10 @@ object fsDashExtraModMembers extends js.Object {
     ]
   ): scala.Unit = js.native
   def realpath(path: java.lang.String): js.Promise[java.lang.String] = js.native
-  def realpath(path: java.lang.String, cache: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Promise[java.lang.String] = js.native
+  def realpath(path: java.lang.String, cache: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Promise[java.lang.String] = js.native
   def realpath(
     path: java.lang.String,
-    cache: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    cache: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* resolvedPath */ java.lang.String, _]
   ): scala.Unit = js.native
   def realpath(
@@ -2366,10 +2366,10 @@ object fsDashExtraModMembers extends js.Object {
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* resolvedPath */ java.lang.String, _]
   ): scala.Unit = js.native
   def realpath(path: nodeLib.Buffer): js.Promise[java.lang.String] = js.native
-  def realpath(path: nodeLib.Buffer, cache: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Promise[java.lang.String] = js.native
+  def realpath(path: nodeLib.Buffer, cache: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Promise[java.lang.String] = js.native
   def realpath(
     path: nodeLib.Buffer,
-    cache: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    cache: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* resolvedPath */ java.lang.String, _]
   ): scala.Unit = js.native
   def realpath(

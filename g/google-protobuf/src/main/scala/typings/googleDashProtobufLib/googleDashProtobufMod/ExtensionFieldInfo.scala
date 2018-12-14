@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf", "ExtensionFieldInfo")
 @js.native
 class ExtensionFieldInfo[T] protected () extends js.Object {
-  def this(fieldIndex: scala.Double, fieldName: ScalablyTyped.runtime.StringDictionary[scala.Double], ctor: js.Object, toObjectFn: googleDashProtobufLib.googleDashProtobufMod.MessageNs.StaticToObject, isRepeated: scala.Double) = this()
+  def this(fieldIndex: scala.Double, fieldName: org.scalablytyped.runtime.StringDictionary[scala.Double], ctor: js.Object, toObjectFn: googleDashProtobufLib.googleDashProtobufMod.MessageNs.StaticToObject, isRepeated: scala.Double) = this()
   var fieldIndex: scala.Double = js.native
   var fieldName: scala.Double = js.native
   var isRepeated: scala.Double = js.native

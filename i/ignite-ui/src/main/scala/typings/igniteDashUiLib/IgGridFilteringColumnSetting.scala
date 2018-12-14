@@ -10,7 +10,7 @@ trait IgGridFilteringColumnSetting
   extends /**
 	 * Option for IgGridFilteringColumnSetting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Enables/disables filtering for the column.
   	 *

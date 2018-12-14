@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MixedSchemaConstructor
-  extends ScalablyTyped.runtime.Instantiable0[MixedSchema]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ yupLib.Anon_Key, MixedSchema] {
+  extends org.scalablytyped.runtime.Instantiable0[MixedSchema]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ yupLib.Anon_Key, MixedSchema] {
   def apply(): MixedSchema = js.native
 }
 

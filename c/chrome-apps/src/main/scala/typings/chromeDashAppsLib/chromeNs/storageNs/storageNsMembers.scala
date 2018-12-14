@@ -20,7 +20,7 @@ object storageNsMembers extends js.Object {
   /** Fired when one or more items change. */
   val onChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
-      /* changes */ ScalablyTyped.runtime.StringDictionary[StorageChange], 
+      /* changes */ org.scalablytyped.runtime.StringDictionary[StorageChange], 
       /* areaName */ StorageAreas, 
       scala.Unit
     ]

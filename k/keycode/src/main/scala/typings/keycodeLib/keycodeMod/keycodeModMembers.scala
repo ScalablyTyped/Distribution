@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("keycode", JSImport.Namespace)
 @js.native
 object keycodeModMembers
-  extends ScalablyTyped.runtime.TopLevel[Keycode]
+  extends org.scalablytyped.runtime.TopLevel[Keycode]
 

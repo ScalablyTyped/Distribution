@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cleave.js/react", JSImport.Namespace)
 @js.native
 object reactMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       reactLib.reactMod.ReactNs.ComponentClass[cleaveDotJsLib.reactPropsMod.Props, reactLib.reactMod.ReactNs.ComponentState]
     ]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Objects[P /* <: Properties */]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[GeometryObject[P]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[GeometryObject[P]]
 

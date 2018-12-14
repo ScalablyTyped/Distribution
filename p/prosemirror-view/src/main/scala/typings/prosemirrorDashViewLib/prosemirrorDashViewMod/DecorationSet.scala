@@ -52,7 +52,7 @@ class DecorationSet[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
   def find(
     start: scala.Double,
     end: scala.Double,
-    predicate: js.Function1[/* spec */ ScalablyTyped.runtime.StringDictionary[js.Any], scala.Boolean]
+    predicate: js.Function1[/* spec */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Boolean]
   ): js.Array[Decoration] = js.native
   /**
      * Map the set of decorations in response to a change in the

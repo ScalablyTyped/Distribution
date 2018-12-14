@@ -22,8 +22,8 @@ trait SecurityPolicyViolationEvent extends Event {
 @JSGlobal("SecurityPolicyViolationEvent")
 @js.native
 object SecurityPolicyViolationEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, SecurityPolicyViolationEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, SecurityPolicyViolationEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ SecurityPolicyViolationEventInit, 
       SecurityPolicyViolationEvent

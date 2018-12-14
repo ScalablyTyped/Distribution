@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("client-sessions", JSImport.Namespace)
 @js.native
 object clientDashSessionsModMembers
-  extends ScalablyTyped.runtime.TopLevel[clientDashSessionsLib.clientDashSessionsMod.clientUnderscoreSessionsNs.Sessions]
+  extends org.scalablytyped.runtime.TopLevel[clientDashSessionsLib.clientDashSessionsMod.clientUnderscoreSessionsNs.Sessions]
 

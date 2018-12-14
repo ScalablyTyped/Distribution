@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ParseError
   extends stdLib.Error
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable3[
       /* error */ js.Any, 
       /* src */ java.lang.String, 
       /* file */ java.lang.String, 

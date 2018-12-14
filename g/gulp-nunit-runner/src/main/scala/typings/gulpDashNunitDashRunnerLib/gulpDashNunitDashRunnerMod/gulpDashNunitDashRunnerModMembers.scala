@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-nunit-runner", JSImport.Namespace)
 @js.native
 object gulpDashNunitDashRunnerModMembers
-  extends ScalablyTyped.runtime.TopLevel[gulpDashNunitDashRunnerLib.gulpDashNunitDashRunnerMod.nunitNs.NUnit]
+  extends org.scalablytyped.runtime.TopLevel[gulpDashNunitDashRunnerLib.gulpDashNunitDashRunnerMod.nunitNs.NUnit]
 

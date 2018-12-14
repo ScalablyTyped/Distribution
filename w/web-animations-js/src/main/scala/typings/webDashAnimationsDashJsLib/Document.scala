@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Document extends js.Object {
-  var timeline: AnimationTimeline
+  val timeline: AnimationTimeline
 }
 

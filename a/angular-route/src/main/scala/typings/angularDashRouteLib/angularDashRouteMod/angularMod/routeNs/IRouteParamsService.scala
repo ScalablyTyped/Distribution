@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 ///////////////////////////////////////////////////////////////////////////
 
 trait IRouteParamsService
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

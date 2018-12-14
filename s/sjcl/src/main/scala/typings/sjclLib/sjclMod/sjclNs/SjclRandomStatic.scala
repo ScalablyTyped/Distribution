@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SjclRandomStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* defaultParanoia */ scala.Double, SjclRandom]
+  extends org.scalablytyped.runtime.Instantiable1[/* defaultParanoia */ scala.Double, SjclRandom]
 

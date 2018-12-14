@@ -20,7 +20,7 @@ trait MediaError extends js.Object {
 @JSGlobal("MediaError")
 @js.native
 object MediaError
-  extends ScalablyTyped.runtime.Instantiable0[MediaError] {
+  extends org.scalablytyped.runtime.Instantiable0[MediaError] {
   val MEDIA_ERR_ABORTED: scala.Double = js.native
   val MEDIA_ERR_DECODE: scala.Double = js.native
   val MEDIA_ERR_NETWORK: scala.Double = js.native

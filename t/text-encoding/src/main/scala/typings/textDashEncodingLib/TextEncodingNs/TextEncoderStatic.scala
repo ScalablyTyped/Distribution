@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TextEncoderStatic
-  extends ScalablyTyped.runtime.Instantiable0[textDashEncodingLib.TextEncoder]
-     with ScalablyTyped.runtime.Instantiable1[/* utfLabel */ java.lang.String, textDashEncodingLib.TextEncoder]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable0[textDashEncodingLib.TextEncoder]
+     with org.scalablytyped.runtime.Instantiable1[/* utfLabel */ java.lang.String, textDashEncodingLib.TextEncoder]
+     with org.scalablytyped.runtime.Instantiable2[
       /* utfLabel */ java.lang.String, 
       /* options */ TextEncoderOptions, 
       textDashEncodingLib.TextEncoder

@@ -62,6 +62,6 @@ class filter protected () extends js.Object {
 @JSGlobal("CKEDITOR.filter")
 @js.native
 object filter extends js.Object {
-  var instances: ScalablyTyped.runtime.StringDictionary[ckeditorLib.CKEDITORNs.filter] = js.native
+  var instances: org.scalablytyped.runtime.StringDictionary[ckeditorLib.CKEDITORNs.filter] = js.native
 }
 

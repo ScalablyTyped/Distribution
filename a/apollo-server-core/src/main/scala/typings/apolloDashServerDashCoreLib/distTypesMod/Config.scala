@@ -38,7 +38,7 @@ trait Config extends js.Object {
   var schemaDirectives: js.UndefOr[
     stdLib.Record[
       java.lang.String, 
-      ScalablyTyped.runtime.Instantiable1[
+      org.scalablytyped.runtime.Instantiable1[
         /* config */ graphqlDashToolsLib.Anon_Name, 
         graphqlDashToolsLib.graphqlDashToolsMod.SchemaDirectiveVisitor
       ]

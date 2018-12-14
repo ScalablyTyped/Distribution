@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ResourceDictionary
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[Resource]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[Resource]
 

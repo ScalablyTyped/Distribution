@@ -71,8 +71,8 @@ trait Event extends js.Object {
 @JSGlobal("Event")
 @js.native
 object Event
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, Event]
-     with ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ EventInit, Event] {
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, Event]
+     with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ EventInit, Event] {
   val AT_TARGET: scala.Double = js.native
   val BUBBLING_PHASE: scala.Double = js.native
   val CAPTURING_PHASE: scala.Double = js.native

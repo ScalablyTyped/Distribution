@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Serializers
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Serializer]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Serializer]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ValdrConstraintValidator
-  extends /* argumentName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* argumentName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var message: java.lang.String
 }
 

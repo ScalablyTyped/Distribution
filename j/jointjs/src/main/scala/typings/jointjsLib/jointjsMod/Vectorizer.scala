@@ -10,26 +10,26 @@ import scala.scalajs.js.annotation._
 class Vectorizer protected () extends js.Object {
   def this(el: java.lang.String) = this()
   def this(el: stdLib.SVGElement) = this()
-  def this(el: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  def this(el: stdLib.SVGElement, attrs: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
-  def this(el: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any], children: Vectorizer) = this()
-  def this(el: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any], children: js.Array[Vectorizer | stdLib.SVGElement]) = this()
-  def this(el: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any], children: stdLib.SVGElement) = this()
-  def this(el: stdLib.SVGElement, attrs: ScalablyTyped.runtime.StringDictionary[js.Any], children: Vectorizer) = this()
-  def this(el: stdLib.SVGElement, attrs: ScalablyTyped.runtime.StringDictionary[js.Any], children: js.Array[Vectorizer | stdLib.SVGElement]) = this()
-  def this(el: stdLib.SVGElement, attrs: ScalablyTyped.runtime.StringDictionary[js.Any], children: stdLib.SVGElement) = this()
+  def this(el: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  def this(el: stdLib.SVGElement, attrs: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+  def this(el: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: Vectorizer) = this()
+  def this(el: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: js.Array[Vectorizer | stdLib.SVGElement]) = this()
+  def this(el: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: stdLib.SVGElement) = this()
+  def this(el: stdLib.SVGElement, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: Vectorizer) = this()
+  def this(el: stdLib.SVGElement, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: js.Array[Vectorizer | stdLib.SVGElement]) = this()
+  def this(el: stdLib.SVGElement, attrs: org.scalablytyped.runtime.StringDictionary[js.Any], children: stdLib.SVGElement) = this()
   var id: java.lang.String = js.native
   var node: stdLib.SVGElement = js.native
   def addClass(className: java.lang.String): Vectorizer = js.native
-  def animateAlongPath(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], path: Vectorizer): scala.Unit = js.native
-  def animateAlongPath(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], path: stdLib.SVGElement): scala.Unit = js.native
+  def animateAlongPath(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], path: Vectorizer): scala.Unit = js.native
+  def animateAlongPath(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], path: stdLib.SVGElement): scala.Unit = js.native
   def append(els: Vectorizer): this.type = js.native
   def append(els: js.Array[Vectorizer | stdLib.SVGElement]): this.type = js.native
   def append(els: stdLib.SVGElement): this.type = js.native
   def appendTo(el: Vectorizer): this.type = js.native
   def appendTo(el: stdLib.SVGElement): this.type = js.native
-  def attr(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
-  def attr(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def attr(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+  def attr(attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   def attr(name: java.lang.String): java.lang.String | scala.Null = js.native
   def attr(name: java.lang.String, value: js.Any): this.type = js.native
   def bbox(): jointjsLib.jointjsMod.gNs.Rect = js.native
@@ -81,7 +81,7 @@ class Vectorizer protected () extends js.Object {
   def scale(sx: scala.Double): this.type = js.native
   def scale(sx: scala.Double, sy: scala.Double): this.type = js.native
   /* private */ def setAttribute(name: java.lang.String, value: java.lang.String): this.type = js.native
-  /* private */ def setAttributes(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  /* private */ def setAttributes(attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   // returns either this or Vectorizer, no point in specifying this.
   def svg(): Vectorizer = js.native
   def tagName(): java.lang.String = js.native
@@ -119,12 +119,12 @@ class Vectorizer protected () extends js.Object {
 @JSImport("jointjs", "Vectorizer")
 @js.native
 object Vectorizer extends js.Object {
-  def annotateString(t: java.lang.String, annotations: js.Array[jointjsLib.jointjsMod.VectorizerNs.TextAnnotation]): js.Array[java.lang.String | ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def annotateString(t: java.lang.String, annotations: js.Array[jointjsLib.jointjsMod.VectorizerNs.TextAnnotation]): js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def annotateString(
     t: java.lang.String,
     annotations: js.Array[jointjsLib.jointjsMod.VectorizerNs.TextAnnotation],
     opt: jointjsLib.jointjsMod.VectorizerNs.AnnotateStringOptions
-  ): js.Array[java.lang.String | ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  ): js.Array[java.lang.String | org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def convertCircleToPathData(circle: java.lang.String): java.lang.String = js.native
   def convertCircleToPathData(circle: jointjsLib.jointjsMod.Vectorizer): java.lang.String = js.native
   def convertCircleToPathData(circle: stdLib.SVGElement): java.lang.String = js.native
@@ -200,7 +200,7 @@ object Vectorizer extends js.Object {
     index: scala.Double,
     offset: scala.Double
   ): js.Array[jointjsLib.jointjsMod.VectorizerNs.TextAnnotation] = js.native
-  def styleToObject(styleString: java.lang.String): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def styleToObject(styleString: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def svgPointsToPath(points: js.Array[jointjsLib.jointjsMod.gNs.PlainPoint | stdLib.SVGPoint]): java.lang.String = js.native
   def toNode(el: jointjsLib.jointjsMod.Vectorizer): stdLib.SVGElement = js.native
   def toNode(el: js.Array[stdLib.SVGElement]): stdLib.SVGElement = js.native

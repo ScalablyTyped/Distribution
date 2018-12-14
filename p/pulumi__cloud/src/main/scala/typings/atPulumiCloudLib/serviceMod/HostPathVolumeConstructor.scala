@@ -10,5 +10,5 @@ trait HostPathVolumeConstructor
   extends /**
      * Construct a new Volume with the given unique name.
      */
-ScalablyTyped.runtime.Instantiable1[/* path */ java.lang.String, HostPathVolume]
+org.scalablytyped.runtime.Instantiable1[/* path */ java.lang.String, HostPathVolume]
 

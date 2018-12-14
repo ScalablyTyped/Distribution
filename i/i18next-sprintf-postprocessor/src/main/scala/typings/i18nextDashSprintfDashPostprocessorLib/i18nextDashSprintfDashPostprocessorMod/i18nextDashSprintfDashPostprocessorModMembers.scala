@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("i18next-sprintf-postprocessor", JSImport.Namespace)
 @js.native
 object i18nextDashSprintfDashPostprocessorModMembers
-  extends ScalablyTyped.runtime.TopLevel[I18nextSprintfPostProcessor]
+  extends org.scalablytyped.runtime.TopLevel[I18nextSprintfPostProcessor]
 

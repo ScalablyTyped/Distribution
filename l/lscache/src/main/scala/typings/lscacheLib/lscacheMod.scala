@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("lscache", JSImport.Namespace)
 @js.native
 object lscacheMod
-  extends ScalablyTyped.runtime.TopLevel[LSCache]
+  extends org.scalablytyped.runtime.TopLevel[LSCache]
 

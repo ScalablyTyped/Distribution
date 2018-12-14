@@ -11,10 +11,10 @@ trait Anon_OptionsIBaseFilter
 		 * Constructor
 		 * @param [options] Options object
 		 */
-ScalablyTyped.runtime.Instantiable0[fabricLib.fabricDashImplMod.IBaseFilter]
+org.scalablytyped.runtime.Instantiable0[fabricLib.fabricDashImplMod.IBaseFilter]
      with /**
 		 * Constructor
 		 * @param [options] Options object
 		 */
-ScalablyTyped.runtime.Instantiable1[/* options */ js.Any, fabricLib.fabricDashImplMod.IBaseFilter]
+org.scalablytyped.runtime.Instantiable1[/* options */ js.Any, fabricLib.fabricDashImplMod.IBaseFilter]
 

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_INVALIDCHARACTERERR
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.DOMException]
-     with ScalablyTyped.runtime.Instantiable1[/* message */ java.lang.String, stdLib.DOMException]
-     with ScalablyTyped.runtime.Instantiable2[/* message */ java.lang.String, /* name */ java.lang.String, stdLib.DOMException] {
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.DOMException]
+     with org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, stdLib.DOMException]
+     with org.scalablytyped.runtime.Instantiable2[/* message */ java.lang.String, /* name */ java.lang.String, stdLib.DOMException] {
   val ABORT_ERR: scala.Double = js.native
   val DATA_CLONE_ERR: scala.Double = js.native
   val DOMSTRING_SIZE_ERR: scala.Double = js.native

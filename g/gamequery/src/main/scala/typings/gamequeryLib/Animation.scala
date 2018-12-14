@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Animation
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ AnimationOptions, Animation] {
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ AnimationOptions, Animation] {
   var delta: scala.Double = js.native
   var distance: scala.Double = js.native
   var imageURL: java.lang.String = js.native

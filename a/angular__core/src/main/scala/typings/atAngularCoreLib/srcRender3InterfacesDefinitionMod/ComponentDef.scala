@@ -23,7 +23,7 @@ trait ComponentDef[T] extends DirectiveDef[T] {
        * Defines arbitrary developer-defined data to be stored on a renderer instance.
        * This is useful for renderers that delegate to other renderers.
        */
-  val data: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  val data: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
     
        * Registry of directives and components that may be found in this view.

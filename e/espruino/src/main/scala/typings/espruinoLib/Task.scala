@@ -17,7 +17,7 @@ trait Task
      * @param taskName 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable1[/* taskName */ js.Any, js.Any] {
+org.scalablytyped.runtime.Instantiable1[/* taskName */ js.Any, js.Any] {
   /**
        * <p>returns name of actual task</p>
        * 

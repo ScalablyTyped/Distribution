@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 // and compile with --noImplicitAny
 @js.native
 trait AtmosphereRequest
-  extends ScalablyTyped.runtime.Instantiable0[Request]
+  extends org.scalablytyped.runtime.Instantiable0[Request]
 

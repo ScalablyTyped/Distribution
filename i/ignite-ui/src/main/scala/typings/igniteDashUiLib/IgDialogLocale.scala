@@ -10,7 +10,7 @@ trait IgDialogLocale
   extends /**
 	 * Option for IgDialogLocale
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets the title/tooltip for the close button in the dialog.
   	 *

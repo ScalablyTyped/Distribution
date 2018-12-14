@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DateConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* vd */ VarDate, Date]
+  extends org.scalablytyped.runtime.Instantiable1[/* vd */ VarDate, Date]
 

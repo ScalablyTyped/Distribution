@@ -146,5 +146,5 @@ trait HTMLMarqueeElement extends HTMLElement {
 @JSGlobal("HTMLMarqueeElement")
 @js.native
 object HTMLMarqueeElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLMarqueeElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLMarqueeElement]
 

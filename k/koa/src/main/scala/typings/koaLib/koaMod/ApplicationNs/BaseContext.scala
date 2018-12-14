@@ -12,7 +12,7 @@ trait BaseContext
      with /**
          * Custom properties.
          */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Similar to .throw(), adds assertion.
            *

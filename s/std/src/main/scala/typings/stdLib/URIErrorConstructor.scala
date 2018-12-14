@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait URIErrorConstructor
-  extends ScalablyTyped.runtime.Instantiable0[URIError]
-     with ScalablyTyped.runtime.Instantiable1[/* message */ java.lang.String, URIError] {
+  extends org.scalablytyped.runtime.Instantiable0[URIError]
+     with org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, URIError] {
   def apply(): URIError = js.native
   def apply(message: java.lang.String): URIError = js.native
 }

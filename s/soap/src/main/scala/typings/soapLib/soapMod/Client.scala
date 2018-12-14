@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Client protected ()
   extends nodeLib.eventsMod.EventEmitter
-     with /* method */ ScalablyTyped.runtime.StringDictionary[ISoapMethod | WSDL | js.Function] {
+     with /* method */ org.scalablytyped.runtime.StringDictionary[ISoapMethod | WSDL | js.Function] {
   def this(wsdl: WSDL) = this()
   def this(wsdl: WSDL, endpoint: java.lang.String) = this()
   def this(wsdl: WSDL, endpoint: java.lang.String, options: IOptions) = this()
@@ -43,7 +43,7 @@ class Client protected ()
   def clearSoapHeaders(): scala.Unit = js.native
   def describe(): js.Any = js.native
   def getBodyAttributes(): js.Array[_] = js.native
-  def getHttpHeaders(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def getHttpHeaders(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def getSoapHeaders(): js.Array[java.lang.String] = js.native
   def setEndpoint(endpoint: java.lang.String): scala.Unit = js.native
   def setSOAPAction(action: java.lang.String): scala.Unit = js.native

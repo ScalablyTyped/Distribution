@@ -42,7 +42,7 @@ trait WorkItemType extends WorkItemTrackingResource {
   /**
        * Gets the various state transition mappings in the work item type.
        */
-  var transitions: ScalablyTyped.runtime.StringDictionary[js.Array[WorkItemStateTransition]]
+  var transitions: org.scalablytyped.runtime.StringDictionary[js.Array[WorkItemStateTransition]]
   /**
        * The XML form.
        */

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ViewBox
-  extends ScalablyTyped.runtime.Instantiable1[/* source */ ViewBoxAlias, ViewBox]
-     with ScalablyTyped.runtime.Instantiable4[
+  extends org.scalablytyped.runtime.Instantiable1[/* source */ ViewBoxAlias, ViewBox]
+     with org.scalablytyped.runtime.Instantiable4[
       /* x */ scala.Double, 
       /* y */ scala.Double, 
       /* width */ scala.Double, 

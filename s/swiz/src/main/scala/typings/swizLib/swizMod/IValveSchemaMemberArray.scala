@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait IValveSchemaMemberArray
   extends IValveSchemaMember
-     with /* index */ ScalablyTyped.runtime.StringDictionary[IValveSchemaMember]
+     with /* index */ org.scalablytyped.runtime.StringDictionary[IValveSchemaMember]
 

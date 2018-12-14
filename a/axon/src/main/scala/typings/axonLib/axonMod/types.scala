@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("axon", "types")
 @js.native
 object types
-  extends /* propName */ ScalablyTyped.runtime.StringDictionary[axonLib.Anon_PubEmitterSocket]
+  extends /* propName */ org.scalablytyped.runtime.StringDictionary[axonLib.Anon_PubEmitterSocket]
 

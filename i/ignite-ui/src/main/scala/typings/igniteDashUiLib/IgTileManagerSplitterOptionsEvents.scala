@@ -10,7 +10,7 @@ trait IgTileManagerSplitterOptionsEvents
   extends /**
 	 * Option for IgTileManagerSplitterOptionsEvents
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Event fired after collapsing is performed. Not cancellable.
   	 *

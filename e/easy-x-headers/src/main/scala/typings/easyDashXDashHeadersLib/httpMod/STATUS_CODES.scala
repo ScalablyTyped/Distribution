@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("http", "STATUS_CODES")
 @js.native
 object STATUS_CODES
-  extends /* errorCode */ ScalablyTyped.runtime.NumberDictionary[java.lang.String]
-     with /* errorCode */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* errorCode */ org.scalablytyped.runtime.NumberDictionary[java.lang.String]
+     with /* errorCode */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

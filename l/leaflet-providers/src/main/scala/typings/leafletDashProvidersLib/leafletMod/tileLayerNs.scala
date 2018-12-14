@@ -11,7 +11,7 @@ object tileLayerNs extends js.Object {
   def provider(provider: java.lang.String): leafletDashProvidersLib.leafletMod.TileLayerNs.Provider = js.native
   def provider(
     provider: java.lang.String,
-    options: leafletLib.leafletMod.TileLayerOptions with ScalablyTyped.runtime.StringDictionary[java.lang.String]
+    options: leafletLib.leafletMod.TileLayerOptions with org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): leafletDashProvidersLib.leafletMod.TileLayerNs.Provider = js.native
 }
 

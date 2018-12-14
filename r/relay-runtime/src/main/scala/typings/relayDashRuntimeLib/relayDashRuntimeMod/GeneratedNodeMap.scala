@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait GeneratedNodeMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[GraphQLTaggedNode]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[GraphQLTaggedNode]
 

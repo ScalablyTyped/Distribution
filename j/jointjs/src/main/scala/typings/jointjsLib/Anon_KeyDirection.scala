@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_KeyDirection
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var direction: js.UndefOr[jointjsLib.jointjsMod.diaNs.Direction] = js.undefined
 }
 

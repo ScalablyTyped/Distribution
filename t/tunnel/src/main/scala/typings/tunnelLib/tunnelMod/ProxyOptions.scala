@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ProxyOptions extends js.Object {
-  var headers: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var headers: org.scalablytyped.runtime.StringDictionary[js.Any]
   var host: js.UndefOr[java.lang.String] = js.undefined
   var localAddress: js.UndefOr[java.lang.String] = js.undefined
   var port: js.UndefOr[scala.Double] = js.undefined

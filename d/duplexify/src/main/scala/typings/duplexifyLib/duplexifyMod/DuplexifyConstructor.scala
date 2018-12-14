@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DuplexifyConstructor
-  extends ScalablyTyped.runtime.Instantiable0[duplexifyLib.duplexifyMod.duplexifyNs.Duplexify]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[duplexifyLib.duplexifyMod.duplexifyNs.Duplexify]
+     with org.scalablytyped.runtime.Instantiable1[
       /* writable */ nodeLib.streamMod.Writable, 
       duplexifyLib.duplexifyMod.duplexifyNs.Duplexify
     ]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* writable */ nodeLib.streamMod.Writable, 
       /* readable */ nodeLib.streamMod.Readable, 
       duplexifyLib.duplexifyMod.duplexifyNs.Duplexify
     ]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable3[
       /* writable */ nodeLib.streamMod.Writable, 
       /* readable */ nodeLib.streamMod.Readable, 
       /* streamOptions */ nodeLib.streamMod.internalNs.DuplexOptions, 

@@ -44,7 +44,7 @@ object routersNs extends js.Object {
   
   
   trait RouterArgumentsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[js.Any]] {
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] {
     var manhattan: ManhattanRouterArguments
     var metro: ManhattanRouterArguments
     var normal: NormalRouterArguments

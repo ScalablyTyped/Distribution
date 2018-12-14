@@ -46,7 +46,7 @@ class StackReference protected ()
   /**
        * The outputs of the referenced stack.
        */
-  val outputs: atPulumiPulumiLib.resourceMod.Output[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  val outputs: atPulumiPulumiLib.resourceMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
        * Fetches the value of the named stack output.
        *

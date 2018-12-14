@@ -17,5 +17,5 @@ trait AES
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[AES]
+org.scalablytyped.runtime.Instantiable0[AES]
 

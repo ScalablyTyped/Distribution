@@ -17,7 +17,7 @@ trait BluetoothRemoteGATTCharacteristic
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[BluetoothRemoteGATTCharacteristic] {
+org.scalablytyped.runtime.Instantiable0[BluetoothRemoteGATTCharacteristic] {
   /**
        * <p><strong>Note:</strong> This is only available on some devices</p>
        * 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MapCacheConstructor
-  extends ScalablyTyped.runtime.Instantiable0[MapCache]
+  extends org.scalablytyped.runtime.Instantiable0[MapCache]
 

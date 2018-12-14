@@ -30,11 +30,11 @@ object skinNs extends js.Object {
   def path(): java.lang.String = js.native
   @js.native
   object icons
-    extends /* name */ ScalablyTyped.runtime.StringDictionary[ckeditorLib.Anon_Path]
+    extends /* name */ org.scalablytyped.runtime.StringDictionary[ckeditorLib.Anon_Path]
   
   @js.native
   object ua
-    extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any]
+    extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
 }
 

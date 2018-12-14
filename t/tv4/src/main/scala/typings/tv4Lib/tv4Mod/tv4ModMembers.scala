@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("tv4", JSImport.Namespace)
 @js.native
 object tv4ModMembers
-  extends ScalablyTyped.runtime.TopLevel[tv4Lib.tv4Mod.tv4Ns.TV4]
+  extends org.scalablytyped.runtime.TopLevel[tv4Lib.tv4Mod.tv4Ns.TV4]
 

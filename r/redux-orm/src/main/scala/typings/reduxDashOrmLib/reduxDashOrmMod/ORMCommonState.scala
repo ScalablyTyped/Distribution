@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ORMCommonState
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[TableState[_, _]]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[TableState[_, _]]
 

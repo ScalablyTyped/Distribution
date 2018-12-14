@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait MailBoxes
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[Folder]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[Folder]
 

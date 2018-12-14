@@ -11,6 +11,6 @@ trait RenderedChunk extends js.Object {
   var fileName: java.lang.String
   var imports: js.Array[java.lang.String]
   var isEntry: scala.Boolean
-  var modules: ScalablyTyped.runtime.StringDictionary[RenderedModule]
+  var modules: org.scalablytyped.runtime.StringDictionary[RenderedModule]
 }
 

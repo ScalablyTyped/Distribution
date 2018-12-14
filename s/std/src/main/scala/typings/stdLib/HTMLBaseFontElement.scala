@@ -44,5 +44,5 @@ trait HTMLBaseFontElement
 @JSGlobal("HTMLBaseFontElement")
 @js.native
 object HTMLBaseFontElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLBaseFontElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLBaseFontElement]
 

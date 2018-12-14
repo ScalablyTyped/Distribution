@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mailcheck", JSImport.Namespace)
 @js.native
 object mailcheckMod
-  extends ScalablyTyped.runtime.TopLevel[mailcheckLib.MailcheckModuleNs.Static]
+  extends org.scalablytyped.runtime.TopLevel[mailcheckLib.MailcheckModuleNs.Static]
 

@@ -14,5 +14,5 @@ trait SyncManager extends js.Object {
 @JSGlobal("SyncManager")
 @js.native
 object SyncManager
-  extends ScalablyTyped.runtime.Instantiable0[SyncManager]
+  extends org.scalablytyped.runtime.Instantiable0[SyncManager]
 

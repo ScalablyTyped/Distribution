@@ -88,6 +88,6 @@ trait Request extends Body {
 @JSGlobal("Request")
 @js.native
 object Request
-  extends ScalablyTyped.runtime.Instantiable1[/* input */ RequestInfo, Request]
-     with ScalablyTyped.runtime.Instantiable2[/* input */ RequestInfo, /* init */ RequestInit, Request]
+  extends org.scalablytyped.runtime.Instantiable1[/* input */ RequestInfo, Request]
+     with org.scalablytyped.runtime.Instantiable2[/* input */ RequestInfo, /* init */ RequestInit, Request]
 

@@ -14,7 +14,7 @@ trait IKit
          * The constructor. The kit must be "new-able" and it must produce an IModel.
          * It can have any number of any type of parameters.
          */
-ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, IModel] {
+org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, IModel] {
   /**
            * Attached to the constructor is a property named metaParameters which is an array of IMetaParameter objects.
            * Each element of the array corresponds to a parameter of the constructor, in order.

@@ -137,7 +137,7 @@ class ListView protected () extends Widget {
            */
   def show(): scala.Unit = js.native
   /** To show item in the given index.
-           * @param {number} Specifies the index value to show the hided item.
+           * @param {number} Specifies the index value to show the hidden item.
            * @returns {void}
            */
   def showItem(index: scala.Double): scala.Unit = js.native

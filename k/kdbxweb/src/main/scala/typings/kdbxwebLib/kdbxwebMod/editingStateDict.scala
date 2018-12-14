@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait editingStateDict
-  extends /* uuid */ ScalablyTyped.runtime.StringDictionary[editingState] {
+  extends /* uuid */ org.scalablytyped.runtime.StringDictionary[editingState] {
   var meta: editingState
 }
 

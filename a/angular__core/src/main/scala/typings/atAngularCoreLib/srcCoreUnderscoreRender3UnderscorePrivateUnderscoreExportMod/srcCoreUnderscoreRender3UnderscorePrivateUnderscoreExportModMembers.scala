@@ -390,56 +390,27 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
   def ɵelementStylingApply(index: scala.Double): scala.Unit = js.native
   def ɵelementStylingApply(index: scala.Double, directiveIndex: scala.Double): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double): scala.Unit = js.native
-  def ɵelementStylingMap[T](index: scala.Double, classes: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
-    styles: scala.Null,
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double, classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
   def ɵelementStylingMap[T](
     index: scala.Double,
     classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](
     index: scala.Double,
     classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any],
     directiveIndex: scala.Double
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](
@@ -452,17 +423,6 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
   def ɵelementStylingMap[T](
     index: scala.Double,
     classes: java.lang.String,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: java.lang.String,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
-    directiveIndex: scala.Double
-  ): scala.Unit = js.native
-  def ɵelementStylingMap[T](
-    index: scala.Double,
-    classes: java.lang.String,
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](
@@ -471,12 +431,45 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
     directiveIndex: scala.Double
   ): scala.Unit = js.native
-  def ɵelementStylingMap[T](index: scala.Double, classes: java.lang.String, styles: scala.Null, directiveIndex: scala.Double): scala.Unit = js.native
-  def ɵelementStylingMap[T](index: scala.Double, classes: scala.Null, styles: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def ɵelementStylingMap[T](
     index: scala.Double,
-    classes: scala.Null,
-    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
+    classes: java.lang.String,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: java.lang.String,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any],
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](index: scala.Double, classes: java.lang.String, styles: scala.Null, directiveIndex: scala.Double): scala.Unit = js.native
+  def ɵelementStylingMap[T](index: scala.Double, classes: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any],
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    styles: scala.Null,
     directiveIndex: scala.Double
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double, classes: scala.Null, styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
@@ -484,6 +477,17 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
     index: scala.Double,
     classes: scala.Null,
     styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: scala.Null,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def ɵelementStylingMap[T](
+    index: scala.Double,
+    classes: scala.Null,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any],
     directiveIndex: scala.Double
   ): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double, classes: scala.Null, styles: scala.Null, directiveIndex: scala.Double): scala.Unit = js.native
@@ -506,7 +510,7 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
   def ɵi18nExp[T](expression: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
   def ɵi18nPostprocess(
     message: java.lang.String,
-    replacements: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+    replacements: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
   ): java.lang.String = js.native
   def ɵi18nStart(index: scala.Double, message: java.lang.String): scala.Unit = js.native
   def ɵi18nStart(index: scala.Double, message: java.lang.String, subTemplateIndex: scala.Double): scala.Unit = js.native
@@ -888,26 +892,26 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: js.Array[_],
     ctorParameters: js.Array[_],
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def ɵsetClassMetadata(
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: js.Array[_],
     ctorParameters: scala.Null,
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def ɵsetClassMetadata(`type`: atAngularCoreLib.srcTypeMod.Type[_], decorators: scala.Null, ctorParameters: js.Array[_]): scala.Unit = js.native
   def ɵsetClassMetadata(
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: scala.Null,
     ctorParameters: js.Array[_],
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def ɵsetClassMetadata(
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     decorators: scala.Null,
     ctorParameters: scala.Null,
-    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+    propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
   def ɵstore[T](index: scala.Double, value: T): scala.Unit = js.native
   def ɵtemplate(

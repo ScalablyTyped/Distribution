@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait StyleSheetList
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[StyleSheet] {
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[StyleSheet] {
   val length: scala.Double
   def item(index: scala.Double): StyleSheet | scala.Null
 }
@@ -15,5 +15,5 @@ trait StyleSheetList
 @JSGlobal("StyleSheetList")
 @js.native
 object StyleSheetList
-  extends ScalablyTyped.runtime.Instantiable0[StyleSheetList]
+  extends org.scalablytyped.runtime.Instantiable0[StyleSheetList]
 

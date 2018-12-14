@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ErrorConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* params (repeated) */ js.Any, Error]
+  extends org.scalablytyped.runtime.Instantiable1[/* params (repeated) */ js.Any, Error]
 

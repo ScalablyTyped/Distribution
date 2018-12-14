@@ -15,5 +15,5 @@ trait ManifestIcons
              *   '128': 'icon128.png'
              * }
              */
-/* size */ ScalablyTyped.runtime.NumberDictionary[java.lang.String]
+/* size */ org.scalablytyped.runtime.NumberDictionary[java.lang.String]
 

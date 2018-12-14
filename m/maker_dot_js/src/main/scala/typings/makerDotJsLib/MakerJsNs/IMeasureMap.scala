@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait IMeasureMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[IMeasure]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[IMeasure]
 

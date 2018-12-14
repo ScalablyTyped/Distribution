@@ -384,7 +384,7 @@ class NodePath[T] protected () extends js.Object {
   def buildCodeFrameError[TError /* <: stdLib.Error */](msg: java.lang.String): TError = js.native
   def buildCodeFrameError[TError /* <: stdLib.Error */](
     msg: java.lang.String,
-    Error: ScalablyTyped.runtime.Instantiable1[/* msg */ java.lang.String, TError]
+    Error: org.scalablytyped.runtime.Instantiable1[/* msg */ java.lang.String, TError]
   ): TError = js.native
   // ------------------------- context -------------------------
   def call(key: java.lang.String): scala.Boolean = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait App
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var data: js.Any
   /**
   		 * 获取当前页面

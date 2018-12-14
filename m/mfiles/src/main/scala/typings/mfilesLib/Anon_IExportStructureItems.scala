@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IExportStructureItems
-  extends ScalablyTyped.runtime.Instantiable0[IExportStructureItems]
+  extends org.scalablytyped.runtime.Instantiable0[IExportStructureItems]
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Binding protected ()
   extends kendoDashUiLib.kendoNs.Observable {
   def this(parents: js.Array[_], path: java.lang.String) = this()
-  var dependencies: ScalablyTyped.runtime.StringDictionary[scala.Boolean] = js.native
+  var dependencies: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   var observable: scala.Boolean = js.native
   var parents: js.Array[_] = js.native
   var path: java.lang.String = js.native

@@ -79,7 +79,7 @@ trait Options extends js.Object {
            * When the value is a String, the filename of a plist file. Its contents are added to the app's plist.
            * When the value is an Object, an already-parsed plist data structure that is merged into the app's plist.
            */
-  var extendInfo: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var extendInfo: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
            * One or more files to be copied directly into the app's Contents/Resources directory for OS X target platforms, and the resources directory for other target platforms.
            */

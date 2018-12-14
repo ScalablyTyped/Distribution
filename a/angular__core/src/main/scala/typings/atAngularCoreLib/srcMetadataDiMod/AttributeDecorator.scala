@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AttributeDecorator
-  extends ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Attribute] {
+  extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Attribute] {
   /**
        * Specifies that a constant attribute value should be injected.
        *

@@ -17,5 +17,5 @@ trait HTMLSlotElement extends HTMLElement {
 @JSGlobal("HTMLSlotElement")
 @js.native
 object HTMLSlotElement
-  extends ScalablyTyped.runtime.Instantiable0[HTMLSlotElement]
+  extends org.scalablytyped.runtime.Instantiable0[HTMLSlotElement]
 

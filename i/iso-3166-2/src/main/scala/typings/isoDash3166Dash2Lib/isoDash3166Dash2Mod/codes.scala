@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("iso-3166-2", "codes")
 @js.native
 object codes
-  extends /* alpha3 */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* alpha3 */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

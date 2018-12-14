@@ -10,7 +10,7 @@ trait HierarchicalDataSourceSettings
   extends /**
 	 * Option for HierarchicalDataSourceSettings
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var autogenerate: js.UndefOr[scala.Boolean] = js.undefined
   var callback: js.UndefOr[js.Any] = js.undefined
   var callee: js.UndefOr[js.Any] = js.undefined

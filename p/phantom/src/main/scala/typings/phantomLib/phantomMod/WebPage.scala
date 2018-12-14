@@ -274,7 +274,7 @@ trait WebPage extends js.Object {
   @JSName("property")
   def property_cookies(key: phantomLib.phantomLibStrings.cookies): js.Promise[js.Array[ICookie]] = js.native
   @JSName("property")
-  def property_customHeaders(key: phantomLib.phantomLibStrings.customHeaders): js.Promise[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.native
+  def property_customHeaders(key: phantomLib.phantomLibStrings.customHeaders): js.Promise[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
   @JSName("property")
   def property_framesCount(key: phantomLib.phantomLibStrings.framesCount): js.Promise[scala.Double] = js.native
   @JSName("property")

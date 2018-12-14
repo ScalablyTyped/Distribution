@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait TypeArgumentMap
-  extends /* n */ ScalablyTyped.runtime.NumberDictionary[PullTypeSymbol]
+  extends /* n */ org.scalablytyped.runtime.NumberDictionary[PullTypeSymbol]
 

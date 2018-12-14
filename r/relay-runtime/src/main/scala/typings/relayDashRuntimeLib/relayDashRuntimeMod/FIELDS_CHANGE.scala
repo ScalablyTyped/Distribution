@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait FIELDS_CHANGE extends js.Object {
-  var fieldIDs: ScalablyTyped.runtime.StringDictionary[DataID | js.Array[DataID]]
+  var fieldIDs: org.scalablytyped.runtime.StringDictionary[DataID | js.Array[DataID]]
   var `type`: relayDashRuntimeLib.relayDashRuntimeLibStrings.FIELDS_CHANGE
 }
 

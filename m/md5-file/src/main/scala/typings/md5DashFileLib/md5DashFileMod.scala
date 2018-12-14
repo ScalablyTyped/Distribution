@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("md5-file", JSImport.Namespace)
 @js.native
 object md5DashFileMod
-  extends ScalablyTyped.runtime.TopLevel[Anon_Filename]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Filename]
 

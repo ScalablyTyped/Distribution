@@ -15,5 +15,5 @@ trait MSStream extends js.Object {
 @JSGlobal("MSStream")
 @js.native
 object MSStream
-  extends ScalablyTyped.runtime.Instantiable0[MSStream]
+  extends org.scalablytyped.runtime.Instantiable0[MSStream]
 

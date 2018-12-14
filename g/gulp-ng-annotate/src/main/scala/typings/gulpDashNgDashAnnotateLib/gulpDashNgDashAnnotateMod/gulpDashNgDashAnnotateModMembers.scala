@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-ng-annotate", JSImport.Namespace)
 @js.native
 object gulpDashNgDashAnnotateModMembers
-  extends ScalablyTyped.runtime.TopLevel[gulpDashNgDashAnnotateLib.gulpDashNgDashAnnotateMod.ngAnnotateNs.NgAnnotate]
+  extends org.scalablytyped.runtime.TopLevel[gulpDashNgDashAnnotateLib.gulpDashNgDashAnnotateMod.ngAnnotateNs.NgAnnotate]
 

@@ -87,7 +87,7 @@ object storageNs extends js.Object {
                    * storage class.
                    */
       val parameters: atPulumiPulumiLib.pulumiMod.Output[
-            ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+            org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
           ] = js.native
       /**
                    * Provisioner indicates the type of the provisioner.
@@ -622,7 +622,7 @@ object storageNs extends js.Object {
                    * storage class.
                    */
       val parameters: atPulumiPulumiLib.pulumiMod.Output[
-            ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+            org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
           ] = js.native
       /**
                    * Provisioner indicates the type of the provisioner.

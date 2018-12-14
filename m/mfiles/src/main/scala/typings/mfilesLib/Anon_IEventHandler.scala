@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IEventHandler
-  extends ScalablyTyped.runtime.Instantiable0[IEventHandler]
+  extends org.scalablytyped.runtime.Instantiable0[IEventHandler]
 

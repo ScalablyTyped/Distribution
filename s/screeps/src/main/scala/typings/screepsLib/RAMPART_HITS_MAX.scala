@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("RAMPART_HITS_MAX")
 @js.native
 object RAMPART_HITS_MAX
-  extends /* rcl */ ScalablyTyped.runtime.NumberDictionary[scala.Double] {
+  extends /* rcl */ org.scalablytyped.runtime.NumberDictionary[scala.Double] {
   var `2`: screepsLib.screepsLibNumbers.`300000` = js.native
   var `3`: screepsLib.screepsLibNumbers.`1000000` = js.native
   var `4`: screepsLib.screepsLibNumbers.`3000000` = js.native

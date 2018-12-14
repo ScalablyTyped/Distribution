@@ -10,7 +10,7 @@ trait Anon_PropName
   extends /**
                  * Making this interface extendable so that we can add more custom filter parameters
                  */
-/* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
                    * Type: dateTime	Only include resource versions that were current at some point during the time period specified
                    * in the date time value (may be more than one)

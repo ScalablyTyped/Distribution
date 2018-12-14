@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SpecialEventHooks
-  extends /* event */ ScalablyTyped.runtime.StringDictionary[SpecialEventHook[stdLib.EventTarget, _]]
+  extends /* event */ org.scalablytyped.runtime.StringDictionary[SpecialEventHook[stdLib.EventTarget, _]]
 

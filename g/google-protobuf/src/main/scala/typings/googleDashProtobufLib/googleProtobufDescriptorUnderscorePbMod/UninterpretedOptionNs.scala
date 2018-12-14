@@ -36,10 +36,10 @@ object UninterpretedOptionNs extends js.Object {
   
   @js.native
   object NamePart extends js.Object {
-    var extensions: ScalablyTyped.runtime.NumberDictionary[
+    var extensions: org.scalablytyped.runtime.NumberDictionary[
         googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
       ] = js.native
-    var extensionsBinary: ScalablyTyped.runtime.NumberDictionary[
+    var extensionsBinary: org.scalablytyped.runtime.NumberDictionary[
         googleDashProtobufLib.googleDashProtobufMod.ExtensionFieldBinaryInfo[googleDashProtobufLib.googleDashProtobufMod.Message]
       ] = js.native
     def deserializeBinary(bytes: stdLib.Uint8Array): googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.NamePart = js.native

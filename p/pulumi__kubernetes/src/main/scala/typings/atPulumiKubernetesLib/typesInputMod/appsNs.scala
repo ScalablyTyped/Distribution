@@ -1172,7 +1172,7 @@ object appsNs extends js.Object {
                    */
       var updatedAnnotations: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
     }
@@ -1410,7 +1410,7 @@ object appsNs extends js.Object {
                    */
       var selector: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -2450,7 +2450,7 @@ object appsNs extends js.Object {
                    */
       var selector: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**

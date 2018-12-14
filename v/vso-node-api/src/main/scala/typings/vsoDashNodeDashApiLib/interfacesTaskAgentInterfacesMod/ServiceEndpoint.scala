@@ -16,7 +16,7 @@ trait ServiceEndpoint extends js.Object {
        * The Gets or sets Identity reference for the user who created the Service endpoint
        */
   var createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
-  var data: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var data: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Gets or Sets description of endpoint
        */

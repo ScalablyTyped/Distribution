@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ValidationDefinitions
-  extends /* field */ ScalablyTyped.runtime.StringDictionary[js.Array[stdLib.PropertyDecorator]]
+  extends /* field */ org.scalablytyped.runtime.StringDictionary[js.Array[stdLib.PropertyDecorator]]
 

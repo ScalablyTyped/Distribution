@@ -15,13 +15,13 @@ class organogram () extends baseview {
   var data: webixLib.webixNs.DataStore = js.native
   @JSName("on_click")
   var on_click_Original: webixLib.webixNs.WebixCallback = js.native
-  var on_context: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("on_dblclick")
   var on_dblclick_Original: webixLib.webixNs.WebixCallback = js.native
   @JSName("on_mouse_move")
   var on_mouse_move_Original: webixLib.webixNs.WebixCallback = js.native
-  var `type`: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var types: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): java.lang.String | scala.Double = js.native
   def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native

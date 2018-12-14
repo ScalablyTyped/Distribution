@@ -21,5 +21,5 @@ trait AudioBuffer extends js.Object {
 @JSGlobal("AudioBuffer")
 @js.native
 object AudioBuffer
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ AudioBufferOptions, AudioBuffer]
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ AudioBufferOptions, AudioBuffer]
 

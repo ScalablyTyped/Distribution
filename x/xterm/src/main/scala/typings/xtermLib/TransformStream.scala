@@ -14,17 +14,17 @@ trait TransformStream[I, O] extends js.Object {
 @JSGlobal("TransformStream")
 @js.native
 object TransformStream
-  extends ScalablyTyped.runtime.Instantiable0[TransformStream[js.Object, js.Object]]
-     with ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[TransformStream[js.Object, js.Object]]
+     with org.scalablytyped.runtime.Instantiable1[
       /* transformer */ Transformer[js.Object, js.Object], 
       TransformStream[js.Object, js.Object]
     ]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* transformer */ Transformer[js.Object, js.Object], 
       /* writableStrategy */ QueuingStrategy[js.Object], 
       TransformStream[js.Object, js.Object]
     ]
-     with ScalablyTyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable3[
       /* transformer */ Transformer[js.Object, js.Object], 
       /* writableStrategy */ QueuingStrategy[js.Object], 
       /* readableStrategy */ QueuingStrategy[js.Object], 

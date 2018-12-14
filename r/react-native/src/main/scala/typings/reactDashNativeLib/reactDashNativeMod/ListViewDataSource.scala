@@ -32,44 +32,7 @@ trait ListViewDataSource
      * - rowHasChanged(prevRowData, nextRowData);
      * - sectionHeaderHasChanged(prevSectionData, nextSectionData);
      */
-ScalablyTyped.runtime.Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
-  /**
-       * Clones this `ListViewDataSource` with the specified `dataBlob` and
-       * `rowIdentities`. The `dataBlob` is just an aribitrary blob of data. At
-       * construction an extractor to get the interesting informatoin was defined
-       * (or the default was used).
-       *
-       * The `rowIdentities` is is a 2D array of identifiers for rows.
-       * ie. [['a1', 'a2'], ['b1', 'b2', 'b3'], ...].  If not provided, it's
-       * assumed that the keys of the section data are the row identities.
-       *
-       * Note: This function does NOT clone the data in this data source. It simply
-       * passes the functions defined at construction to a new data source with
-       * the data specified. If you wish to maintain the existing data you must
-       * handle merging of old and new data separately and then pass that into
-       * this function as the `dataBlob`.
-       */
-  def cloneWithRows(dataBlob: ScalablyTyped.runtime.StringDictionary[js.Any]): ListViewDataSource = js.native
-  /**
-       * Clones this `ListViewDataSource` with the specified `dataBlob` and
-       * `rowIdentities`. The `dataBlob` is just an aribitrary blob of data. At
-       * construction an extractor to get the interesting informatoin was defined
-       * (or the default was used).
-       *
-       * The `rowIdentities` is is a 2D array of identifiers for rows.
-       * ie. [['a1', 'a2'], ['b1', 'b2', 'b3'], ...].  If not provided, it's
-       * assumed that the keys of the section data are the row identities.
-       *
-       * Note: This function does NOT clone the data in this data source. It simply
-       * passes the functions defined at construction to a new data source with
-       * the data specified. If you wish to maintain the existing data you must
-       * handle merging of old and new data separately and then pass that into
-       * this function as the `dataBlob`.
-       */
-  def cloneWithRows(
-    dataBlob: ScalablyTyped.runtime.StringDictionary[js.Any],
-    rowIdentities: js.Array[java.lang.String | scala.Double]
-  ): ListViewDataSource = js.native
+org.scalablytyped.runtime.Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
   /**
        * Clones this `ListViewDataSource` with the specified `dataBlob` and
        * `rowIdentities`. The `dataBlob` is just an aribitrary blob of data. At
@@ -105,47 +68,41 @@ ScalablyTyped.runtime.Instantiable1[/* onAsset */ DataSourceAssetCallback, ListV
        */
   def cloneWithRows(dataBlob: js.Array[_], rowIdentities: js.Array[java.lang.String | scala.Double]): ListViewDataSource = js.native
   /**
-       * This performs the same function as the `cloneWithRows` function but here
-       * you also specify what your `sectionIdentities` are. If you don't care
-       * about sections you should safely be able to use `cloneWithRows`.
+       * Clones this `ListViewDataSource` with the specified `dataBlob` and
+       * `rowIdentities`. The `dataBlob` is just an aribitrary blob of data. At
+       * construction an extractor to get the interesting informatoin was defined
+       * (or the default was used).
        *
-       * `sectionIdentities` is an array of identifiers for  sections.
-       * ie. ['s1', 's2', ...].  If not provided, it's assumed that the
-       * keys of dataBlob are the section identities.
+       * The `rowIdentities` is is a 2D array of identifiers for rows.
+       * ie. [['a1', 'a2'], ['b1', 'b2', 'b3'], ...].  If not provided, it's
+       * assumed that the keys of the section data are the row identities.
        *
-       * Note: this returns a new object!
+       * Note: This function does NOT clone the data in this data source. It simply
+       * passes the functions defined at construction to a new data source with
+       * the data specified. If you wish to maintain the existing data you must
+       * handle merging of old and new data separately and then pass that into
+       * this function as the `dataBlob`.
        */
-  def cloneWithRowsAndSections(dataBlob: ScalablyTyped.runtime.StringDictionary[js.Any]): ListViewDataSource = js.native
+  def cloneWithRows(dataBlob: org.scalablytyped.runtime.StringDictionary[js.Any]): ListViewDataSource = js.native
   /**
-       * This performs the same function as the `cloneWithRows` function but here
-       * you also specify what your `sectionIdentities` are. If you don't care
-       * about sections you should safely be able to use `cloneWithRows`.
+       * Clones this `ListViewDataSource` with the specified `dataBlob` and
+       * `rowIdentities`. The `dataBlob` is just an aribitrary blob of data. At
+       * construction an extractor to get the interesting informatoin was defined
+       * (or the default was used).
        *
-       * `sectionIdentities` is an array of identifiers for  sections.
-       * ie. ['s1', 's2', ...].  If not provided, it's assumed that the
-       * keys of dataBlob are the section identities.
+       * The `rowIdentities` is is a 2D array of identifiers for rows.
+       * ie. [['a1', 'a2'], ['b1', 'b2', 'b3'], ...].  If not provided, it's
+       * assumed that the keys of the section data are the row identities.
        *
-       * Note: this returns a new object!
+       * Note: This function does NOT clone the data in this data source. It simply
+       * passes the functions defined at construction to a new data source with
+       * the data specified. If you wish to maintain the existing data you must
+       * handle merging of old and new data separately and then pass that into
+       * this function as the `dataBlob`.
        */
-  def cloneWithRowsAndSections(
-    dataBlob: ScalablyTyped.runtime.StringDictionary[js.Any],
-    sectionIdentities: js.Array[java.lang.String | scala.Double]
-  ): ListViewDataSource = js.native
-  /**
-       * This performs the same function as the `cloneWithRows` function but here
-       * you also specify what your `sectionIdentities` are. If you don't care
-       * about sections you should safely be able to use `cloneWithRows`.
-       *
-       * `sectionIdentities` is an array of identifiers for  sections.
-       * ie. ['s1', 's2', ...].  If not provided, it's assumed that the
-       * keys of dataBlob are the section identities.
-       *
-       * Note: this returns a new object!
-       */
-  def cloneWithRowsAndSections(
-    dataBlob: ScalablyTyped.runtime.StringDictionary[js.Any],
-    sectionIdentities: js.Array[java.lang.String | scala.Double],
-    rowIdentities: js.Array[js.Array[java.lang.String | scala.Double]]
+  def cloneWithRows(
+    dataBlob: org.scalablytyped.runtime.StringDictionary[js.Any],
+    rowIdentities: js.Array[java.lang.String | scala.Double]
   ): ListViewDataSource = js.native
   /**
        * This performs the same function as the `cloneWithRows` function but here
@@ -184,6 +141,49 @@ ScalablyTyped.runtime.Instantiable1[/* onAsset */ DataSourceAssetCallback, ListV
        */
   def cloneWithRowsAndSections(
     dataBlob: js.Array[_],
+    sectionIdentities: js.Array[java.lang.String | scala.Double],
+    rowIdentities: js.Array[js.Array[java.lang.String | scala.Double]]
+  ): ListViewDataSource = js.native
+  /**
+       * This performs the same function as the `cloneWithRows` function but here
+       * you also specify what your `sectionIdentities` are. If you don't care
+       * about sections you should safely be able to use `cloneWithRows`.
+       *
+       * `sectionIdentities` is an array of identifiers for  sections.
+       * ie. ['s1', 's2', ...].  If not provided, it's assumed that the
+       * keys of dataBlob are the section identities.
+       *
+       * Note: this returns a new object!
+       */
+  def cloneWithRowsAndSections(dataBlob: org.scalablytyped.runtime.StringDictionary[js.Any]): ListViewDataSource = js.native
+  /**
+       * This performs the same function as the `cloneWithRows` function but here
+       * you also specify what your `sectionIdentities` are. If you don't care
+       * about sections you should safely be able to use `cloneWithRows`.
+       *
+       * `sectionIdentities` is an array of identifiers for  sections.
+       * ie. ['s1', 's2', ...].  If not provided, it's assumed that the
+       * keys of dataBlob are the section identities.
+       *
+       * Note: this returns a new object!
+       */
+  def cloneWithRowsAndSections(
+    dataBlob: org.scalablytyped.runtime.StringDictionary[js.Any],
+    sectionIdentities: js.Array[java.lang.String | scala.Double]
+  ): ListViewDataSource = js.native
+  /**
+       * This performs the same function as the `cloneWithRows` function but here
+       * you also specify what your `sectionIdentities` are. If you don't care
+       * about sections you should safely be able to use `cloneWithRows`.
+       *
+       * `sectionIdentities` is an array of identifiers for  sections.
+       * ie. ['s1', 's2', ...].  If not provided, it's assumed that the
+       * keys of dataBlob are the section identities.
+       *
+       * Note: this returns a new object!
+       */
+  def cloneWithRowsAndSections(
+    dataBlob: org.scalablytyped.runtime.StringDictionary[js.Any],
     sectionIdentities: js.Array[java.lang.String | scala.Double],
     rowIdentities: js.Array[js.Array[java.lang.String | scala.Double]]
   ): ListViewDataSource = js.native

@@ -179,7 +179,7 @@ object AnimatedNs extends js.Object {
              *  style={this.state.anim.getLayout()}
              *```
              */
-    def getLayout(): ScalablyTyped.runtime.StringDictionary[AnimatedValue] = js.native
+    def getLayout(): org.scalablytyped.runtime.StringDictionary[AnimatedValue] = js.native
     /**
              * Converts `{x, y}` into a useable translation transform, e.g.
              *
@@ -189,7 +189,7 @@ object AnimatedNs extends js.Object {
              *  }}
              *```
              */
-    def getTranslateTransform(): js.Array[ScalablyTyped.runtime.StringDictionary[AnimatedValue]] = js.native
+    def getTranslateTransform(): js.Array[org.scalablytyped.runtime.StringDictionary[AnimatedValue]] = js.native
     def removeListener(id: java.lang.String): scala.Unit = js.native
     def setOffset(offset: reactDashNativeLib.Anon_YX): scala.Unit = js.native
     def setValue(value: reactDashNativeLib.Anon_YX): scala.Unit = js.native
@@ -227,7 +227,7 @@ object AnimatedNs extends js.Object {
   type Base = Animated
   type EndCallback = js.Function1[/* result */ EndResult, scala.Unit]
   type ExtrapolateType = reactDashNativeLib.reactDashNativeLibStrings.extend | reactDashNativeLib.reactDashNativeLibStrings.identity | reactDashNativeLib.reactDashNativeLibStrings.clamp
-  type Mapping = ScalablyTyped.runtime.StringDictionary[js.Object] | AnimatedValue
+  type Mapping = org.scalablytyped.runtime.StringDictionary[js.Object] | AnimatedValue
   type ValueListenerCallback = js.Function1[/* state */ reactDashNativeLib.Anon_Value, scala.Unit]
   type ValueXYListenerCallback = js.Function1[/* value */ reactDashNativeLib.Anon_YX, scala.Unit]
 }

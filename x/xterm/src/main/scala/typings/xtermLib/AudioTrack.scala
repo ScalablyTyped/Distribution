@@ -18,5 +18,5 @@ trait AudioTrack extends js.Object {
 @JSGlobal("AudioTrack")
 @js.native
 object AudioTrack
-  extends ScalablyTyped.runtime.Instantiable0[AudioTrack]
+  extends org.scalablytyped.runtime.Instantiable0[AudioTrack]
 

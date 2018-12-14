@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class DiagramModel ()
   extends stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[DiagramListener] {
   var gridSize: scala.Double = js.native
-  var links: ScalablyTyped.runtime.StringDictionary[
+  var links: org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
   ] = js.native
-  var nodes: ScalablyTyped.runtime.StringDictionary[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel] = js.native
+  var nodes: org.scalablytyped.runtime.StringDictionary[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel] = js.native
   var offsetX: scala.Double = js.native
   var offsetY: scala.Double = js.native
   var rendered: scala.Boolean = js.native
@@ -49,12 +49,12 @@ class DiagramModel ()
   def getLink(
     link: stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
   ): stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener] | scala.Null = js.native
-  def getLinks(): ScalablyTyped.runtime.StringDictionary[
+  def getLinks(): org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
   ] = js.native
   def getNode(node: java.lang.String): stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel | scala.Null = js.native
   def getNode(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel | scala.Null = js.native
-  def getNodes(): ScalablyTyped.runtime.StringDictionary[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel] = js.native
+  def getNodes(): org.scalablytyped.runtime.StringDictionary[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel] = js.native
   def getOffsetX(): scala.Double = js.native
   def getOffsetY(): scala.Double = js.native
   def getSelectedItems(filters: stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntityType*): js.Array[

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/ResizeGroup/ResizeGroup", JSImport.Namespace)
 @js.native
 object libComponentsResizeGroupResizeGroupMod extends js.Object {
-  val ResizeGroup: ScalablyTyped.runtime.Instantiable1[
+  val ResizeGroup: org.scalablytyped.runtime.Instantiable1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotTypesMod.IResizeGroupProps, 
     officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotBaseMod.ResizeGroupBase
   ] = js.native

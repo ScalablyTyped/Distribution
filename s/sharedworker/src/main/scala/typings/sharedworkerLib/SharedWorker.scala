@@ -13,13 +13,13 @@ object SharedWorker
      * @param {string} stringUrl    Pathname to JavaScript file
      * @param {string} name         Name of the worker to execute
      */
-ScalablyTyped.runtime.Instantiable1[/* stringUrl */ java.lang.String, sharedworkerLib.SharedWorkerNs.SharedWorker]
+org.scalablytyped.runtime.Instantiable1[/* stringUrl */ java.lang.String, sharedworkerLib.SharedWorkerNs.SharedWorker]
      with /***
      *
      * @param {string} stringUrl    Pathname to JavaScript file
      * @param {string} name         Name of the worker to execute
      */
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* stringUrl */ java.lang.String, 
       /* name */ java.lang.String, 
       sharedworkerLib.SharedWorkerNs.SharedWorker

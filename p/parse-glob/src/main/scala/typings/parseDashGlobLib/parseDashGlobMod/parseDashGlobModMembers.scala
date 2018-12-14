@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("parse-glob", JSImport.Namespace)
 @js.native
 object parseDashGlobModMembers
-  extends ScalablyTyped.runtime.TopLevel[ParseGlob]
+  extends org.scalablytyped.runtime.TopLevel[ParseGlob]
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Key
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String] {
   var lastupdated: java.lang.String
 }
 

@@ -45,7 +45,7 @@ class Statement protected () extends js.Object {
        * Gets this statement with the bindings substituted
        * @param bindings The bindings
        */
-  def substitute(bindings: ScalablyTyped.runtime.StringDictionary[Node]): Statement = js.native
+  def substitute(bindings: org.scalablytyped.runtime.StringDictionary[Node]): Statement = js.native
   /**
        * Gets the canonical string representation of this statement
        */

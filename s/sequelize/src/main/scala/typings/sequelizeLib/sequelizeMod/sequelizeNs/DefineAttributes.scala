@@ -15,5 +15,5 @@ trait DefineAttributes
   extends /**
          * The description of a database column
          */
-/* name */ ScalablyTyped.runtime.StringDictionary[java.lang.String | DataTypeAbstract | DefineAttributeColumnOptions]
+/* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String | DataTypeAbstract | DefineAttributeColumnOptions]
 

@@ -37,7 +37,7 @@ object LayerNs extends js.Object {
   @js.native
   sealed trait gateType extends js.Object
   
-  var connection: ScalablyTyped.runtime.Instantiable0[LayerConnection] = js.native
+  var connection: org.scalablytyped.runtime.Instantiable0[LayerConnection] = js.native
   /**
        * Represents a connection from one layer to another, and keeps track of its weight and gain.
        */

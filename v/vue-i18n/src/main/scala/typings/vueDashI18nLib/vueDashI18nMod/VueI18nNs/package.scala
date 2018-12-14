@@ -19,5 +19,5 @@ package object VueI18nNs {
   type NumberFormatResult = java.lang.String
   type Path = java.lang.String
   type TranslateResult = java.lang.String | LocaleMessages
-  type Values = js.Array[js.Any] | ScalablyTyped.runtime.StringDictionary[js.Any]
+  type Values = js.Array[js.Any] | org.scalablytyped.runtime.StringDictionary[js.Any]
 }

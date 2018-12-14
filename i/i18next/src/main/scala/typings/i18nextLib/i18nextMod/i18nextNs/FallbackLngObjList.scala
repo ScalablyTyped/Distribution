@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FallbackLngObjList
-  extends /* language */ ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  extends /* language */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
 

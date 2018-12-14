@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Uint8ArrayConstructor
-  extends ScalablyTyped.runtime.Instantiable0[Uint8Array]
-     with ScalablyTyped.runtime.Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ scala.Double, Uint8Array]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable0[Uint8Array]
+     with org.scalablytyped.runtime.Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ scala.Double, Uint8Array]
+     with org.scalablytyped.runtime.Instantiable3[
       /* buffer */ ArrayBufferLike, 
       /* byteOffset */ scala.Double, 
       /* length */ scala.Double, 
       Uint8Array
     ]
-     with ScalablyTyped.runtime.Instantiable1[
+     with org.scalablytyped.runtime.Instantiable1[
       (/* elements */ Iterable[scala.Double]) | (/* length */ scala.Double) | (/* arrayOrArrayBuffer */ ArrayLike[scala.Double]) | (/* arrayOrArrayBuffer */ ArrayBufferLike), 
       Uint8Array
     ] {

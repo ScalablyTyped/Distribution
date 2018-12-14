@@ -269,7 +269,7 @@ object jshamcrestLibMembers extends js.Object {
    * @param clazz Constructor function
    * @return {JsHamcrest.SimpleMatcher} Instance of JsHamcrest.SimpleMatcher
    */
-  def instanceOf(clazz: ScalablyTyped.runtime.Instantiable0[js.Any]): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native
+  def instanceOf(clazz: org.scalablytyped.runtime.Instantiable0[js.Any]): jshamcrestLib.JsHamcrestNs.SimpleMatcher = js.native
   /**
    * Delegate-only matcher frequently used to improve readability.
    *

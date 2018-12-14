@@ -27,7 +27,7 @@ object osNs extends js.Object {
   def homedir(): java.lang.String = js.native
   def hostname(): java.lang.String = js.native
   def loadavg(): js.Array[scala.Double] = js.native
-  def networkInterfaces(): ScalablyTyped.runtime.StringDictionary[js.Array[nodeLib.osMod.NetworkInterfaceInfo]] = js.native
+  def networkInterfaces(): org.scalablytyped.runtime.StringDictionary[js.Array[nodeLib.osMod.NetworkInterfaceInfo]] = js.native
   def platform(): nodeLib.NodeJSNs.Platform = js.native
   def release(): java.lang.String = js.native
   /**

@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait ClassCSS
-  extends /* propertyName */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

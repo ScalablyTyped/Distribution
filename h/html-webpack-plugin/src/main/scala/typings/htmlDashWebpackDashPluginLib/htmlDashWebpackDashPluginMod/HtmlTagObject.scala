@@ -11,7 +11,7 @@ trait HtmlTagObject extends js.Object {
   	 * Attributes of the html tag
   	 * E.g. `{'disabled': true, 'value': 'demo'}`
   	 */
-  var attributes: ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Boolean]
+  var attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean]
   /**
   	 * Inner HTML The
   	 */

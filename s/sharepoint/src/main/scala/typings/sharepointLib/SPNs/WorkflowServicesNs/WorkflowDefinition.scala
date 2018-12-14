@@ -22,7 +22,7 @@ class WorkflowDefinition protected ()
   def get_id(): java.lang.String = js.native
   def get_initiationUrl(): java.lang.String = js.native
   /** Gets custom properties of the workflow definition */
-  def get_properties(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def get_properties(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /** true if the workflow definition has been published to the external workflow host; false if the workflow definition is only saved on the site  */
   def get_published(): scala.Boolean = js.native
   /** Determines whether to automatically generate an association form for this workflow.

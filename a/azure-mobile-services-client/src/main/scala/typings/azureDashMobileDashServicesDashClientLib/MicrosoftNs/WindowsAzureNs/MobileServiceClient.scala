@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 // MobileServiceClient object based on Microsoft Azure documentation: http://msdn.microsoft.com/en-us/library/windowsazure/jj554219.aspx
 @js.native
 trait MobileServiceClient
-  extends ScalablyTyped.runtime.Instantiable1[/* applicationUrl */ java.lang.String, MobileServiceClient]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* applicationUrl */ java.lang.String, MobileServiceClient]
+     with org.scalablytyped.runtime.Instantiable2[
       /* applicationUrl */ java.lang.String, 
       /* applicationKey */ java.lang.String, 
       MobileServiceClient

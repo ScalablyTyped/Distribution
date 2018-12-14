@@ -14,5 +14,5 @@ trait CryptoKeyPair extends js.Object {
 @JSGlobal("CryptoKeyPair")
 @js.native
 object CryptoKeyPair
-  extends ScalablyTyped.runtime.Instantiable0[CryptoKeyPair]
+  extends org.scalablytyped.runtime.Instantiable0[CryptoKeyPair]
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 /** Settings **/
 
 trait Settings
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[js.Any] {
-  var public: ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  var public: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

@@ -1945,7 +1945,7 @@ object ServiceCatalogNs extends js.Object {
   
   
   trait ProductViewAggregations
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ProductViewAggregationValues]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ProductViewAggregationValues]
   
   
   trait ProductViewDetail extends js.Object {
@@ -1969,7 +1969,7 @@ object ServiceCatalogNs extends js.Object {
   
   
   trait ProductViewFilters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ProductViewFilterValues]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ProductViewFilterValues]
   
   
   trait ProductViewSummary extends js.Object {
@@ -2185,7 +2185,7 @@ object ServiceCatalogNs extends js.Object {
   
   
   trait ProvisionedProductFilters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ProvisionedProductViewFilterValues]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ProvisionedProductViewFilterValues]
   
   
   trait ProvisionedProductPlanDetails extends js.Object {
@@ -2329,7 +2329,7 @@ object ServiceCatalogNs extends js.Object {
   
   
   trait ProvisioningArtifactInfo
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ProvisioningArtifactInfoValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ProvisioningArtifactInfoValue]
   
   
   trait ProvisioningArtifactParameter extends js.Object {
@@ -2860,7 +2860,7 @@ object ServiceCatalogNs extends js.Object {
   
   
   trait ServiceActionDefinitionMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ServiceActionDefinitionValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ServiceActionDefinitionValue]
   
   
   trait ServiceActionDetail extends js.Object {
@@ -2924,7 +2924,7 @@ object ServiceCatalogNs extends js.Object {
   
   
   trait SourceProvisioningArtifactPropertiesMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ProvisioningArtifactPropertyValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ProvisioningArtifactPropertyValue]
   
   
   trait Tag extends js.Object {

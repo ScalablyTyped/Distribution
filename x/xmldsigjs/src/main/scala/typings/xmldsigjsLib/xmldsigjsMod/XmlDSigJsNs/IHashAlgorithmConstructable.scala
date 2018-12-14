@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IHashAlgorithmConstructable
-  extends ScalablyTyped.runtime.Instantiable0[IHashAlgorithm]
+  extends org.scalablytyped.runtime.Instantiable0[IHashAlgorithm]
 

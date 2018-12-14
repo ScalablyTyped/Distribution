@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait RenderContext_Form extends RenderContext {
   var CSRCustomLayout: js.UndefOr[scala.Boolean] = js.undefined
   var CurrentItem: Item
-  var FieldControlModes: ScalablyTyped.runtime.StringDictionary[ClientControlMode]
+  var FieldControlModes: org.scalablytyped.runtime.StringDictionary[ClientControlMode]
   var FormContext: ClientFormContext
   var FormUniqueId: java.lang.String
   var ListData: ListData_InForm

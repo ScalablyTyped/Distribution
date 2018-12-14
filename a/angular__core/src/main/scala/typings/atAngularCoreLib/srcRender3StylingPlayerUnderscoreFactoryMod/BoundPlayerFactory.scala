@@ -16,13 +16,13 @@ class BoundPlayerFactory[T] protected () extends js.Object {
   def fn(
     element: stdLib.HTMLElement,
     `type`: atAngularCoreLib.srcRender3InterfacesPlayerMod.BindingType,
-    values: ScalablyTyped.runtime.StringDictionary[js.Any],
+    values: org.scalablytyped.runtime.StringDictionary[js.Any],
     isFirstRender: scala.Boolean
   ): atAngularCoreLib.srcRender3InterfacesPlayerMod.Player | scala.Null = js.native
   def fn(
     element: stdLib.HTMLElement,
     `type`: atAngularCoreLib.srcRender3InterfacesPlayerMod.BindingType,
-    values: ScalablyTyped.runtime.StringDictionary[js.Any],
+    values: org.scalablytyped.runtime.StringDictionary[js.Any],
     isFirstRender: scala.Boolean,
     currentPlayer: atAngularCoreLib.srcRender3InterfacesPlayerMod.Player
   ): atAngularCoreLib.srcRender3InterfacesPlayerMod.Player | scala.Null = js.native

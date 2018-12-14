@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Record extends js.Object {
-  var _links: ScalablyTyped.runtime.StringDictionary[RecordLink]
+  var _links: org.scalablytyped.runtime.StringDictionary[RecordLink]
 }
 

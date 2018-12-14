@@ -2488,7 +2488,7 @@ object S3Ns extends js.Object {
   
   
   trait Metadata
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MetadataValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MetadataValue]
   
   
   trait MetadataEntry extends js.Object {
@@ -6481,7 +6481,7 @@ object S3Ns extends js.Object {
              * will include signature metadata as well as any fields provided to
              * s3.createPresignedPost
              */
-    /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String] {
+    /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
       /**
                * A base64-encoded policy detailing what constitutes an acceptable POST
                * upload. Composed of the conditions and expiration provided to
@@ -6506,7 +6506,9 @@ object S3Ns extends js.Object {
                * accepted by S3.
                */
       var Conditions: js.UndefOr[
-            js.Array[ScalablyTyped.runtime.StringDictionary[_] | (js.Tuple3[java.lang.String, _, _])]
+            js.Array[
+              org.scalablytyped.runtime.StringDictionary[_] | (js.Tuple3[java.lang.String, _, _])
+            ]
           ] = js.undefined
       /**
                * The number of seconds for which the POST form's signed policy should be
@@ -6518,7 +6520,7 @@ object S3Ns extends js.Object {
                * (except 'key') will be included as exact match conditions in the
                * presigned policy.
                */
-      var Fields: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+      var Fields: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     }
     
   }

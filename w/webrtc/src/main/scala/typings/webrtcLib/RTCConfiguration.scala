@@ -18,6 +18,6 @@ trait RTCConfiguration extends js.Object {
    // default = 'require'
   var peerIdentity: js.UndefOr[java.lang.String] = js.undefined
    // default = 'balanced'
-  var rtcpMuxPolicy: js.UndefOr[RTCRtcpMuxPolicy] = js.undefined
+  var rtcpMuxPolicy: js.UndefOr[stdLib.RTCRtcpMuxPolicy] = js.undefined
 }
 

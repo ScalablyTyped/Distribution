@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IntrinsicElements
-  extends /* elemName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* elemName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

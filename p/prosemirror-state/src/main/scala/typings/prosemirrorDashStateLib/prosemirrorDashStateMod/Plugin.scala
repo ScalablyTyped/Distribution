@@ -19,7 +19,7 @@ class Plugin[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _
   /**
      * The plugin's [spec object](#state.PluginSpec).
      */
-  var spec: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var spec: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
      * Extract the plugin's state field from an editor state.
      */

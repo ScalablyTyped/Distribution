@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait EventPlugins
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[EventPlugin]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[EventPlugin]
 

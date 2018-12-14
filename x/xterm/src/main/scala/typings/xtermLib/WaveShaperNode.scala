@@ -14,6 +14,6 @@ trait WaveShaperNode extends AudioNode {
 @JSGlobal("WaveShaperNode")
 @js.native
 object WaveShaperNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, WaveShaperNode]
-     with ScalablyTyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ WaveShaperOptions, WaveShaperNode]
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, WaveShaperNode]
+     with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ WaveShaperOptions, WaveShaperNode]
 

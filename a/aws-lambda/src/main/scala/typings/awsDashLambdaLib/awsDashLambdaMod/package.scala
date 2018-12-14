@@ -43,7 +43,7 @@ package object awsDashLambdaMod {
     scala.Unit | js.Promise[TResult]
   ]
   type KinesisStreamHandler = Handler[KinesisStreamEvent, scala.Unit]
-  type PrincipalValue = (ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]) | java.lang.String | js.Array[java.lang.String]
+  type PrincipalValue = (org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]) | java.lang.String | js.Array[java.lang.String]
   type ProxyCallback = APIGatewayProxyCallback
   type ProxyHandler = APIGatewayProxyHandler
   type ProxyResult = APIGatewayProxyResult

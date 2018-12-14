@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("http-errors", JSImport.Namespace)
 @js.native
 object httpDashErrorsModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       httpDashErrorsLib.httpDashErrorsMod.createHttpErrorNs.CreateHttpError with httpDashErrorsLib.httpDashErrorsMod.createHttpErrorNs.NamedConstructors
     ]
 

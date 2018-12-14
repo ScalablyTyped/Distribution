@@ -24,7 +24,7 @@ trait Options extends js.Object {
   /** Filename of the main file to be passed to less.render() */
   var filename: js.UndefOr[java.lang.String] = js.undefined
   /** Defines a variable that can be referenced by the file. */
-  var globalVars: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var globalVars: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** @deprecated False by default. */
   var ieCompat: js.UndefOr[scala.Boolean] = js.undefined
   /** If true, allow imports from insecure https hosts. */
@@ -39,7 +39,7 @@ trait Options extends js.Object {
   ] = js.undefined
   var maxLineLen: js.UndefOr[scala.Double] = js.undefined
   /** Puts Var declaration at the end of base file. */
-  var modifyVars: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var modifyVars: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** The locations for less looking for files in @import rules */
   var paths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Pre-load global Less.js plugins */

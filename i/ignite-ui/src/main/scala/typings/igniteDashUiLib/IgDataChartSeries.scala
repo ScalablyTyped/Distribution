@@ -10,7 +10,7 @@ trait IgDataChartSeries
   extends /**
 	 * Option for IgDataChartSeries
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets the effective angle axis for the current series object.
   	 */

@@ -13,8 +13,10 @@ trait IJsonSchema extends js.Object {
   var additionalProperties: js.UndefOr[scala.Boolean | IJsonSchema] = js.undefined
   var allOf: js.UndefOr[js.Array[IJsonSchema]] = js.undefined
   var anyOf: js.UndefOr[js.Array[IJsonSchema]] = js.undefined
-  var definitions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IJsonSchema]] = js.undefined
-  var dependencies: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IJsonSchema | js.Array[java.lang.String]]] = js.undefined
+  var definitions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IJsonSchema]] = js.undefined
+  var dependencies: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[IJsonSchema | js.Array[java.lang.String]]
+  ] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var enum: js.UndefOr[js.Array[_]] = js.undefined
   var exclusiveMaximum: js.UndefOr[scala.Boolean] = js.undefined
@@ -33,8 +35,8 @@ trait IJsonSchema extends js.Object {
   var not: js.UndefOr[IJsonSchema] = js.undefined
   var oneOf: js.UndefOr[js.Array[IJsonSchema]] = js.undefined
   var pattern: js.UndefOr[java.lang.String] = js.undefined
-  var patternProperties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IJsonSchema]] = js.undefined
-  var properties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[IJsonSchema]] = js.undefined
+  var patternProperties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IJsonSchema]] = js.undefined
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IJsonSchema]] = js.undefined
   var required: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
   var `type`: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

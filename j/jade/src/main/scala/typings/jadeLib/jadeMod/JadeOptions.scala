@@ -13,7 +13,7 @@ trait JadeOptions extends js.Object {
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var doctype: js.UndefOr[java.lang.String] = js.undefined
   var filename: js.UndefOr[java.lang.String] = js.undefined
-  var filters: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JadeCustomFilterFunction]] = js.undefined
+  var filters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JadeCustomFilterFunction]] = js.undefined
   var globals: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var inlineRuntimeFunctions: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

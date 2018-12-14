@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait DiffOptions
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var contextLines: js.UndefOr[scala.Double] = js.undefined
   var flags: js.UndefOr[scala.Double] = js.undefined
   var idAbbrev: js.UndefOr[scala.Double] = js.undefined

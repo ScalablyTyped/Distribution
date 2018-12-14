@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ICache
-  extends /* path */ ScalablyTyped.runtime.StringDictionary[nodeLib.NodeJSNs.ReadWriteStream]
+  extends /* path */ org.scalablytyped.runtime.StringDictionary[nodeLib.NodeJSNs.ReadWriteStream]
 

@@ -46,7 +46,7 @@ trait IPresetDialog[T] extends js.Object {
   def hasBackdrop(hasBackdrop: scala.Boolean): T = js.native
   def htmlContent(htmlContent: java.lang.String): T = js.native
   def locals(): T = js.native
-  def locals(locals: ScalablyTyped.runtime.StringDictionary[js.Any]): T = js.native
+  def locals(locals: org.scalablytyped.runtime.StringDictionary[js.Any]): T = js.native
   def multiple(multiple: scala.Boolean): T = js.native
   def ok(ok: java.lang.String): T = js.native
   def openFrom(from: angularDashMaterialLib.Anon_Top): T = js.native

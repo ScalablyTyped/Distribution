@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DictConstructor
-  extends ScalablyTyped.runtime.Instantiable1[
+  extends org.scalablytyped.runtime.Instantiable0[Dict[js.Object] | Dict[js.Any]]
+     with org.scalablytyped.runtime.Instantiable1[
       (/* value */ Dict[js.Object]) | (/* value */ js.Any), 
       Dict[js.Object] | Dict[js.Any]
-    ]
-     with ScalablyTyped.runtime.Instantiable0[Dict[js.Object] | Dict[js.Any]] {
+    ] {
   def apply(): Dict[_] = js.native
   def apply(value: js.Any): Dict[_] = js.native
   def apply[T](value: Dict[T]): Dict[T] = js.native

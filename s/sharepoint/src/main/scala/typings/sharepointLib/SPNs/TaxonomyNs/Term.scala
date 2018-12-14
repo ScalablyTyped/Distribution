@@ -36,7 +36,7 @@ class Term () extends TermSetItem {
   def get_isRoot(): scala.Boolean = js.native
   def get_isSourceTerm(): scala.Boolean = js.native
   def get_labels(): LabelCollection = js.native
-  def get_localCustomProperties(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def get_localCustomProperties(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def get_mergedTermIds(): js.Array[sharepointLib.SPNs.Guid] = js.native
   def get_parent(): Term = js.native
   def get_pathOfTerm(): java.lang.String = js.native

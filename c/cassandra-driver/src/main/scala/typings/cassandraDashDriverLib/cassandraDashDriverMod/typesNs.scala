@@ -25,7 +25,7 @@ object typesNs extends js.Object {
   
   @js.native
   trait BigDecimalStatic
-    extends ScalablyTyped.runtime.Instantiable2[/* unscaledValue */ scala.Double, /* scale */ scala.Double, BigDecimal] {
+    extends org.scalablytyped.runtime.Instantiable2[/* unscaledValue */ scala.Double, /* scale */ scala.Double, BigDecimal] {
     def fromBuffer(buf: nodeLib.Buffer): BigDecimal = js.native
     def fromNumber(value: scala.Double): BigDecimal = js.native
     def fromString(value: java.lang.String): BigDecimal = js.native
@@ -40,7 +40,7 @@ object typesNs extends js.Object {
   
   @js.native
   trait DurationStatic
-    extends ScalablyTyped.runtime.Instantiable3[
+    extends org.scalablytyped.runtime.Instantiable3[
           /* month */ scala.Double, 
           /* days */ scala.Double, 
           (/* nanoseconds */ scala.Double) | (/* nanoseconds */ longLib.longMod.namespaced), 
@@ -62,7 +62,7 @@ object typesNs extends js.Object {
   
   @js.native
   trait InetAddressStatic
-    extends ScalablyTyped.runtime.Instantiable1[/* buffer */ nodeLib.Buffer, InetAddress] {
+    extends org.scalablytyped.runtime.Instantiable1[/* buffer */ nodeLib.Buffer, InetAddress] {
     def fromString(value: java.lang.String): InetAddress = js.native
   }
   
@@ -104,7 +104,7 @@ object typesNs extends js.Object {
   
   @js.native
   trait IntegerStatic
-    extends ScalablyTyped.runtime.Instantiable2[/* bits */ js.Array[scala.Double], /* sign */ scala.Double, Integer] {
+    extends org.scalablytyped.runtime.Instantiable2[/* bits */ js.Array[scala.Double], /* sign */ scala.Double, Integer] {
     var ONE: Integer = js.native
     var ZERO: Integer = js.native
     def fromBits(bits: js.Array[scala.Double]): Integer = js.native
@@ -130,7 +130,7 @@ object typesNs extends js.Object {
   
   @js.native
   trait LocalDateStatic
-    extends ScalablyTyped.runtime.Instantiable3[/* year */ scala.Double, /* month */ scala.Double, /* day */ scala.Double, LocalDate] {
+    extends org.scalablytyped.runtime.Instantiable3[/* year */ scala.Double, /* month */ scala.Double, /* day */ scala.Double, LocalDate] {
     def fromBuffer(buffer: nodeLib.Buffer): LocalDate = js.native
     def fromDate(date: stdLib.Date): LocalDate = js.native
     def fromString(value: java.lang.String): LocalDate = js.native
@@ -154,7 +154,7 @@ object typesNs extends js.Object {
   
   @js.native
   trait LocalTimeStatic
-    extends ScalablyTyped.runtime.Instantiable1[/* totalNanoseconds */ longLib.longMod.namespaced, LocalTime] {
+    extends org.scalablytyped.runtime.Instantiable1[/* totalNanoseconds */ longLib.longMod.namespaced, LocalTime] {
     def fromBuffer(value: nodeLib.Buffer): LocalTime = js.native
     def fromDate(date: stdLib.Date, nanoseconds: scala.Double): LocalTime = js.native
     def fromMilliseconds(milliseconds: scala.Double): LocalTime = js.native
@@ -166,26 +166,26 @@ object typesNs extends js.Object {
   
   
   trait ResultSet extends js.Object {
-    var columns: js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+    var columns: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
     var info: cassandraDashDriverLib.Anon_SpeculativeExecutions
-    @JSName(ScalablyTyped.runtime.Symbol.iterator)
+    @JSName(org.scalablytyped.runtime.Symbol.iterator)
     var iterator: js.Function0[nodeLib.Iterator[Row]]
     var nextPage: js.Function
     var pageState: java.lang.String
     var rowLength: scala.Double
     var rows: js.Array[Row]
     def first(): Row | scala.Null
-    def getColumns(): js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+    def getColumns(): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
     def getPageState(): java.lang.String
     def wasApplied(): scala.Boolean
   }
   
   @js.native
   trait ResultSetStatic
-    extends ScalablyTyped.runtime.Instantiable5[
+    extends org.scalablytyped.runtime.Instantiable5[
           /* response */ js.Any, 
           /* host */ java.lang.String, 
-          /* triedHost */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+          /* triedHost */ org.scalablytyped.runtime.StringDictionary[js.Any], 
           /* speculativeExecutions */ scala.Double, 
           /* consistency */ consistencies, 
           ResultSet
@@ -202,22 +202,22 @@ object typesNs extends js.Object {
   
   @js.native
   trait ResultStreamStatic
-    extends ScalablyTyped.runtime.Instantiable1[/* opt */ js.Any, ResultSet]
+    extends org.scalablytyped.runtime.Instantiable1[/* opt */ js.Any, ResultSet]
   
   @js.native
   trait Row
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     def forEach(callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback): scala.Unit = js.native
-    def get(columnName: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-    def get(columnName: scala.Double): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+    def get(columnName: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+    def get(columnName: scala.Double): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     def keys(): js.Array[java.lang.String] = js.native
-    def values(): js.Array[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+    def values(): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   }
   
   @js.native
   trait RowStatic
-    extends ScalablyTyped.runtime.Instantiable1[
-          /* columns */ js.Array[ScalablyTyped.runtime.StringDictionary[java.lang.String]], 
+    extends org.scalablytyped.runtime.Instantiable1[
+          /* columns */ js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]], 
           Row
         ]
   
@@ -231,22 +231,22 @@ object typesNs extends js.Object {
   
   @js.native
   trait TimeUuidStatic
-    extends ScalablyTyped.runtime.Instantiable4[
+    extends org.scalablytyped.runtime.Instantiable1[/* value */ stdLib.Date, TimeUuid]
+       with org.scalablytyped.runtime.Instantiable4[
           /* value */ stdLib.Date, 
           /* ticks */ scala.Double, 
           (/* nodeId */ java.lang.String) | (/* nodeId */ nodeLib.Buffer), 
           (/* clockId */ java.lang.String) | (/* clockId */ nodeLib.Buffer), 
           TimeUuid
         ]
-       with ScalablyTyped.runtime.Instantiable0[TimeUuid]
-       with ScalablyTyped.runtime.Instantiable1[/* value */ stdLib.Date, TimeUuid]
-       with ScalablyTyped.runtime.Instantiable2[/* value */ stdLib.Date, /* ticks */ scala.Double, TimeUuid]
-       with ScalablyTyped.runtime.Instantiable3[
+       with org.scalablytyped.runtime.Instantiable3[
           /* value */ stdLib.Date, 
           /* ticks */ scala.Double, 
           (/* nodeId */ java.lang.String) | (/* nodeId */ nodeLib.Buffer), 
           TimeUuid
-        ] {
+        ]
+       with org.scalablytyped.runtime.Instantiable2[/* value */ stdLib.Date, /* ticks */ scala.Double, TimeUuid]
+       with org.scalablytyped.runtime.Instantiable0[TimeUuid] {
     def fromDate(date: stdLib.Date): TimeUuid = js.native
     def fromDate(date: stdLib.Date, ticks: scala.Double): TimeUuid = js.native
     def fromDate(date: stdLib.Date, ticks: scala.Double, nodeId: java.lang.String): TimeUuid = js.native
@@ -280,7 +280,7 @@ object typesNs extends js.Object {
   
   @js.native
   trait TupleStatic
-    extends ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Tuple] {
+    extends org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Tuple] {
     def fromArray(elements: js.Array[_]): Tuple = js.native
   }
   
@@ -295,7 +295,7 @@ object typesNs extends js.Object {
   
   @js.native
   trait UuidStatic
-    extends ScalablyTyped.runtime.Instantiable1[/* buffer */ nodeLib.Buffer, Uuid] {
+    extends org.scalablytyped.runtime.Instantiable1[/* buffer */ nodeLib.Buffer, Uuid] {
     def fromString(value: java.lang.String): Uuid = js.native
     def random(): Uuid = js.native
   }
@@ -311,7 +311,7 @@ object typesNs extends js.Object {
   
   
   trait responseErrorCodes
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double]
   
   
   trait unset extends js.Object {

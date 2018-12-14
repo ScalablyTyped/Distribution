@@ -12,7 +12,7 @@ abstract class DomAdapter () extends js.Object {
        * Maps attribute names to their corresponding property names for cases
        * where attribute name doesn't match property name.
        */
-  var attrToPropMap: ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  var attrToPropMap: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var resourceLoaderType: atAngularCoreLib.srcTypeMod.Type[_] = js.native
   def addClass(element: js.Any, className: java.lang.String): js.Any = js.native
   def adoptNode(node: stdLib.Node): stdLib.Node = js.native

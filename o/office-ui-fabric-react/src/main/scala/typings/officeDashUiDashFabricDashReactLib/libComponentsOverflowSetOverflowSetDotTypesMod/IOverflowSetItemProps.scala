@@ -10,7 +10,7 @@ trait IOverflowSetItemProps
   extends /**
      * Any additional properties to use when custom rendering menu items.
      */
-/* propertyName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Unique id to identify the item.
        */

@@ -11,8 +11,8 @@ trait Context extends js.Object {
   var basePath: java.lang.String = js.native
   var baseUrl: java.lang.String = js.native
   var collectionPrefix: java.lang.String = js.native
-  var configuration: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
-  var dependencies: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var configuration: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var dependencies: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var isDevelopment: scala.Boolean = js.native
   var isProduction: scala.Boolean = js.native
   var manifest: Manifest = js.native

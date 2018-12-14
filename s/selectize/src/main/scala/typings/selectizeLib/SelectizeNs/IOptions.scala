@@ -265,7 +265,7 @@ trait IOptions[T, U] extends js.Object {
            * Default: null
            */
   var plugins: js.UndefOr[
-    js.Array[java.lang.String] | js.Array[IPluginOption] | ScalablyTyped.runtime.StringDictionary[js.Any]
+    js.Array[java.lang.String] | js.Array[IPluginOption] | org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.undefined
   /**
            * If true, the "load" function will be called upon control initialization (with an empty search).

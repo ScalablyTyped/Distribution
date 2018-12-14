@@ -12,9 +12,9 @@ class namespaced protected () extends FileCookieStore {
   /* CompleteClass */
   override var filePath: java.lang.String = js.native
   /* CompleteClass */
-  override var idx: ScalablyTyped.runtime.StringDictionary[
-    ScalablyTyped.runtime.StringDictionary[
-      ScalablyTyped.runtime.StringDictionary[
+  override var idx: org.scalablytyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.StringDictionary[
         toughDashCookieDashFilestoreLib.toughDashCookieDashFilestoreMod.FileCookieStoreNs.Cookie
       ]
     ]

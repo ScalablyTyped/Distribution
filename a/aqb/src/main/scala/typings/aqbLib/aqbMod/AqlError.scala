@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AqlError
   extends stdLib.Error
-     with ScalablyTyped.runtime.Instantiable1[/* message */ java.lang.String, stdLib.Error]
+     with org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, stdLib.Error]
 

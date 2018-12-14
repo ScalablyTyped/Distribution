@@ -20,7 +20,7 @@ trait Timer
      * @param isrIndex 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable4[
+org.scalablytyped.runtime.Instantiable4[
       /* timerName */ js.Any, 
       /* group */ scala.Double, 
       /* index */ scala.Double, 

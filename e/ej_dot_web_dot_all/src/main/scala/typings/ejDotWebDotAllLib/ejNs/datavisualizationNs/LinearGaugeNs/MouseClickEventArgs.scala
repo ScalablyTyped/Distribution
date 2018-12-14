@@ -13,15 +13,15 @@ trait MouseClickEventArgs extends js.Object {
   /** returns the context element* @param {Object} args.markerpointer returns the context element
                */
   var context: js.UndefOr[js.Any] = js.undefined
+  /** returns the pointer element.
+               */
+  var markerPointerElement: js.UndefOr[js.Any] = js.undefined
   /** returns the pointer Index
                */
   var markerPointerIndex: js.UndefOr[scala.Double] = js.undefined
-  /** returns the pointer element.
-               */
-  var markerpointerelement: js.UndefOr[js.Any] = js.undefined
   /** returns the value of the pointer.
                */
-  var markerpointervalue: js.UndefOr[scala.Double] = js.undefined
+  var markerPointerValue: js.UndefOr[scala.Double] = js.undefined
   /** returns the gauge model
                */
   var model: js.UndefOr[js.Any] = js.undefined

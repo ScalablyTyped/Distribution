@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("socketcluster-client", "clients")
 @js.native
 object clients
-  extends /* id */ ScalablyTyped.runtime.StringDictionary[SCClientSocket]
+  extends /* id */ org.scalablytyped.runtime.StringDictionary[SCClientSocket]
 

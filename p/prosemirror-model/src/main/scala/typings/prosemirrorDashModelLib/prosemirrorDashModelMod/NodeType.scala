@@ -83,7 +83,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * `null`. Similarly `marks` may be `null` to default to the empty
      * set of marks.
      */
-  def create(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): ProsemirrorNode[S] = js.native
+  def create(attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): ProsemirrorNode[S] = js.native
   /**
      * Create a `Node` of this type. The given attributes are
      * checked and defaulted (you can pass `null` to use the type's
@@ -92,7 +92,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * `null`. Similarly `marks` may be `null` to default to the empty
      * set of marks.
      */
-  def create(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
+  def create(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
   /**
      * Create a `Node` of this type. The given attributes are
      * checked and defaulted (you can pass `null` to use the type's
@@ -102,7 +102,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * set of marks.
      */
   def create(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     content: js.Array[ProsemirrorNode[S]],
     marks: js.Array[Mark[S]]
   ): ProsemirrorNode[S] = js.native
@@ -114,7 +114,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * `null`. Similarly `marks` may be `null` to default to the empty
      * set of marks.
      */
-  def create(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], content: Fragment[S]): ProsemirrorNode[S] = js.native
+  def create(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], content: Fragment[S]): ProsemirrorNode[S] = js.native
   /**
      * Create a `Node` of this type. The given attributes are
      * checked and defaulted (you can pass `null` to use the type's
@@ -124,7 +124,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * set of marks.
      */
   def create(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     content: Fragment[S],
     marks: js.Array[Mark[S]]
   ): ProsemirrorNode[S] = js.native
@@ -136,7 +136,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * `null`. Similarly `marks` may be `null` to default to the empty
      * set of marks.
      */
-  def create(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
+  def create(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
   /**
      * Create a `Node` of this type. The given attributes are
      * checked and defaulted (you can pass `null` to use the type's
@@ -146,7 +146,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * set of marks.
      */
   def create(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     content: ProsemirrorNode[S],
     marks: js.Array[Mark[S]]
   ): ProsemirrorNode[S] = js.native
@@ -167,7 +167,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * created, this will always succeed if you pass null or
      * `Fragment.empty` as content.
      */
-  def createAndFill(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
   /**
      * Like [`create`](#model.NodeType.create), but see if it is necessary to
      * add nodes to the start or end of the given fragment to make it
@@ -176,7 +176,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * created, this will always succeed if you pass null or
      * `Fragment.empty` as content.
      */
-  def createAndFill(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
   /**
      * Like [`create`](#model.NodeType.create), but see if it is necessary to
      * add nodes to the start or end of the given fragment to make it
@@ -186,7 +186,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * `Fragment.empty` as content.
      */
   def createAndFill(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     content: js.Array[ProsemirrorNode[S]],
     marks: js.Array[Mark[S]]
   ): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
@@ -198,7 +198,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * created, this will always succeed if you pass null or
      * `Fragment.empty` as content.
      */
-  def createAndFill(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], content: Fragment[S]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], content: Fragment[S]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
   /**
      * Like [`create`](#model.NodeType.create), but see if it is necessary to
      * add nodes to the start or end of the given fragment to make it
@@ -208,7 +208,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * `Fragment.empty` as content.
      */
   def createAndFill(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     content: Fragment[S],
     marks: js.Array[Mark[S]]
   ): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
@@ -220,7 +220,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * created, this will always succeed if you pass null or
      * `Fragment.empty` as content.
      */
-  def createAndFill(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], content: ProsemirrorNode[S]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], content: ProsemirrorNode[S]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
   /**
      * Like [`create`](#model.NodeType.create), but see if it is necessary to
      * add nodes to the start or end of the given fragment to make it
@@ -230,7 +230,7 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * `Fragment.empty` as content.
      */
   def createAndFill(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     content: ProsemirrorNode[S],
     marks: js.Array[Mark[S]]
   ): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
@@ -245,20 +245,20 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * against the node type's content restrictions, and throw an error
      * if it doesn't match.
      */
-  def createChecked(attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): ProsemirrorNode[S] = js.native
   /**
      * Like [`create`](#model.NodeType.create), but check the given content
      * against the node type's content restrictions, and throw an error
      * if it doesn't match.
      */
-  def createChecked(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
   /**
      * Like [`create`](#model.NodeType.create), but check the given content
      * against the node type's content restrictions, and throw an error
      * if it doesn't match.
      */
   def createChecked(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     content: js.Array[ProsemirrorNode[S]],
     marks: js.Array[Mark[S]]
   ): ProsemirrorNode[S] = js.native
@@ -267,14 +267,14 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * against the node type's content restrictions, and throw an error
      * if it doesn't match.
      */
-  def createChecked(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], content: Fragment[S]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], content: Fragment[S]): ProsemirrorNode[S] = js.native
   /**
      * Like [`create`](#model.NodeType.create), but check the given content
      * against the node type's content restrictions, and throw an error
      * if it doesn't match.
      */
   def createChecked(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     content: Fragment[S],
     marks: js.Array[Mark[S]]
   ): ProsemirrorNode[S] = js.native
@@ -283,14 +283,14 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
      * against the node type's content restrictions, and throw an error
      * if it doesn't match.
      */
-  def createChecked(attrs: ScalablyTyped.runtime.StringDictionary[js.Any], content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
   /**
      * Like [`create`](#model.NodeType.create), but check the given content
      * against the node type's content restrictions, and throw an error
      * if it doesn't match.
      */
   def createChecked(
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     content: ProsemirrorNode[S],
     marks: js.Array[Mark[S]]
   ): ProsemirrorNode[S] = js.native

@@ -33,12 +33,12 @@ trait Static extends Hyperscript {
     js.Function1[/* e */ mithrilLib.Anon_P, scala.Unit]
   ] = js.native
   /** Turns the key/value pairs of an object into a string of the form: a=1&b=2 */
-  def buildQueryString(values: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  def buildQueryString(values: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   def jsonp[T](url: java.lang.String): js.Promise[T] = js.native
   def jsonp[T](url: java.lang.String, options: JsonpOptions): js.Promise[T] = js.native
   def mount(element: stdLib.Element): scala.Unit = js.native
   /** Returns an object with key/value pairs parsed from a string of the form: ?a=1&b=2 */
-  def parseQueryString(queryString: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def parseQueryString(queryString: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def redraw(): scala.Unit = js.native
   def render(el: stdLib.Element, vnodes: Children): scala.Unit = js.native
   def request[T](url: java.lang.String): js.Promise[T] = js.native

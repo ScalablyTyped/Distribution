@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 // properties types
 
 trait PropertiesTypes
-  extends /* keys */ ScalablyTyped.runtime.StringDictionary[PropertyType | ObjectSchemaProperty]
+  extends /* keys */ org.scalablytyped.runtime.StringDictionary[PropertyType | ObjectSchemaProperty]
 

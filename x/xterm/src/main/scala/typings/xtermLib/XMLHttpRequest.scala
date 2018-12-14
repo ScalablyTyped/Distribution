@@ -165,7 +165,7 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
 @JSGlobal("XMLHttpRequest")
 @js.native
 object XMLHttpRequest
-  extends ScalablyTyped.runtime.Instantiable0[XMLHttpRequest] {
+  extends org.scalablytyped.runtime.Instantiable0[XMLHttpRequest] {
   val DONE: scala.Double = js.native
   val HEADERS_RECEIVED: scala.Double = js.native
   val LOADING: scala.Double = js.native

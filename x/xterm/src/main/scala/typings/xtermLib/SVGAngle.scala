@@ -23,7 +23,7 @@ trait SVGAngle extends js.Object {
 @JSGlobal("SVGAngle")
 @js.native
 object SVGAngle
-  extends ScalablyTyped.runtime.Instantiable0[SVGAngle] {
+  extends org.scalablytyped.runtime.Instantiable0[SVGAngle] {
   val SVG_ANGLETYPE_DEG: scala.Double = js.native
   val SVG_ANGLETYPE_GRAD: scala.Double = js.native
   val SVG_ANGLETYPE_RAD: scala.Double = js.native

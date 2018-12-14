@@ -191,7 +191,7 @@ trait EventEmitter extends js.Object {
            * @param {string|RegExp} event Name of the event to return the listeners from.
            * @return {Function[]|Object} All listener functions for the event.
            */
-  def getListeners(event: stdLib.RegExp): ScalablyTyped.runtime.StringDictionary[js.Function] = js.native
+  def getListeners(event: stdLib.RegExp): org.scalablytyped.runtime.StringDictionary[js.Function] = js.native
   /**
            * Fetches the requested listeners via getListeners but will always return the results inside an object.
            * This is mainly for internal use but others may find it useful.
@@ -199,7 +199,7 @@ trait EventEmitter extends js.Object {
            * @param event {string|RegExp} Name of the event to return the listeners from.
            * @return {Object} All listener functions for an event in object
            */
-  def getListenersAsObject(event: java.lang.String): ScalablyTyped.runtime.StringDictionary[js.Function] = js.native
+  def getListenersAsObject(event: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Function] = js.native
   /**
            * Fetches the requested listeners via getListeners but will always return the results inside an object.
            * This is mainly for internal use but others may find it useful.
@@ -207,7 +207,7 @@ trait EventEmitter extends js.Object {
            * @param event {string|RegExp} Name of the event to return the listeners from.
            * @return {Object} All listener functions for an event in object
            */
-  def getListenersAsObject(event: stdLib.RegExp): ScalablyTyped.runtime.StringDictionary[js.Function] = js.native
+  def getListenersAsObject(event: stdLib.RegExp): org.scalablytyped.runtime.StringDictionary[js.Function] = js.native
   /**
            * Edits listeners in bulk. The addListeners and removeListeners methods both use this to do their job.
            * You should really use those instead, this is a little lower level.

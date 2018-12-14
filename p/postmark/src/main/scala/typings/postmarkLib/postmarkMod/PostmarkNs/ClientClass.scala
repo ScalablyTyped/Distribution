@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ClientClass
-  extends ScalablyTyped.runtime.Instantiable2[/* serverKey */ java.lang.String, /* options */ stdLib.Partial[Options], Client]
+  extends org.scalablytyped.runtime.Instantiable2[/* serverKey */ java.lang.String, /* options */ stdLib.Partial[Options], Client]
 

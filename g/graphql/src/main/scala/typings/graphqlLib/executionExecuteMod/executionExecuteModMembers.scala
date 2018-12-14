@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/execution/execute", JSImport.Namespace)
 @js.native
 object executionExecuteModMembers extends js.Object {
-  val defaultFieldResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, ScalablyTyped.runtime.StringDictionary[js.Any]] = js.native
+  val defaultFieldResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def addPath(prev: graphqlLib.typeDefinitionMod.ResponsePath, key: java.lang.String): graphqlLib.Anon_Prev = js.native
   def addPath(prev: graphqlLib.typeDefinitionMod.ResponsePath, key: scala.Double): graphqlLib.Anon_Prev = js.native
   def addPath(prev: js.UndefOr[scala.Nothing], key: java.lang.String): graphqlLib.Anon_Prev = js.native
@@ -16,22 +16,22 @@ object executionExecuteModMembers extends js.Object {
   def assertValidExecutionArguments(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
-    rawVariableValues: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]]
+    rawVariableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Unit = js.native
   def buildExecutionContext(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any,
-    rawVariableValues: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]],
+    rawVariableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]],
     operationName: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String],
     fieldResolver: graphqlLib.tsutilsMaybeMod.Maybe[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ): js.Array[graphqlLib.errorMod.GraphQLError] | ExecutionContext = js.native
   def buildResolveInfo(
     exeContext: ExecutionContext,
-    fieldDef: graphqlLib.typeDefinitionMod.GraphQLField[_, _, ScalablyTyped.runtime.StringDictionary[_]],
+    fieldDef: graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     fieldNodes: js.Array[graphqlLib.languageAstMod.FieldNode],
     parentType: graphqlLib.typeDefinitionMod.GraphQLObjectType,
     path: graphqlLib.typeDefinitionMod.ResponsePath
@@ -40,9 +40,9 @@ object executionExecuteModMembers extends js.Object {
     exeContext: ExecutionContext,
     runtimeType: graphqlLib.typeDefinitionMod.GraphQLObjectType,
     selectionSet: graphqlLib.languageAstMod.SelectionSetNode,
-    fields: ScalablyTyped.runtime.StringDictionary[js.Array[graphqlLib.languageAstMod.FieldNode]],
-    visitedFragmentNames: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
-  ): ScalablyTyped.runtime.StringDictionary[js.Array[graphqlLib.languageAstMod.FieldNode]] = js.native
+    fields: org.scalablytyped.runtime.StringDictionary[js.Array[graphqlLib.languageAstMod.FieldNode]],
+    visitedFragmentNames: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+  ): org.scalablytyped.runtime.StringDictionary[js.Array[graphqlLib.languageAstMod.FieldNode]] = js.native
   def execute[TData](args: ExecutionArgs): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[ExecutionResult[TData]] = js.native
   def execute[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[ExecutionResult[TData]] = js.native
   def execute[TData](
@@ -61,14 +61,14 @@ object executionExecuteModMembers extends js.Object {
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any,
-    variableValues: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]]
+    variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
   ): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[ExecutionResult[TData]] = js.native
   def execute[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any,
-    variableValues: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]],
+    variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]],
     operationName: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String]
   ): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[ExecutionResult[TData]] = js.native
   def execute[TData](
@@ -76,10 +76,10 @@ object executionExecuteModMembers extends js.Object {
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any,
-    variableValues: graphqlLib.tsutilsMaybeMod.Maybe[ScalablyTyped.runtime.StringDictionary[_]],
+    variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]],
     operationName: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String],
     fieldResolver: graphqlLib.tsutilsMaybeMod.Maybe[
-      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[ExecutionResult[TData]] = js.native
   def getFieldDef(
@@ -87,13 +87,13 @@ object executionExecuteModMembers extends js.Object {
     parentType: graphqlLib.typeDefinitionMod.GraphQLObjectType,
     fieldName: java.lang.String
   ): graphqlLib.tsutilsMaybeMod.Maybe[
-    graphqlLib.typeDefinitionMod.GraphQLField[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+    graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.native
   def resolveFieldValueOrError[TSource](
     exeContext: ExecutionContext,
-    fieldDef: graphqlLib.typeDefinitionMod.GraphQLField[TSource, _, ScalablyTyped.runtime.StringDictionary[_]],
+    fieldDef: graphqlLib.typeDefinitionMod.GraphQLField[TSource, _, org.scalablytyped.runtime.StringDictionary[_]],
     fieldNodes: js.Array[graphqlLib.languageAstMod.FieldNode],
-    resolveFn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[TSource, _, ScalablyTyped.runtime.StringDictionary[_]],
+    resolveFn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[TSource, _, org.scalablytyped.runtime.StringDictionary[_]],
     source: TSource,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
   ): stdLib.Error | js.Any = js.native

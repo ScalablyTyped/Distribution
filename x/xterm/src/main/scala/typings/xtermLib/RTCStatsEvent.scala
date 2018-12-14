@@ -13,5 +13,5 @@ trait RTCStatsEvent extends Event {
 @JSGlobal("RTCStatsEvent")
 @js.native
 object RTCStatsEvent
-  extends ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ RTCStatsEventInit, RTCStatsEvent]
+  extends org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ RTCStatsEventInit, RTCStatsEvent]
 

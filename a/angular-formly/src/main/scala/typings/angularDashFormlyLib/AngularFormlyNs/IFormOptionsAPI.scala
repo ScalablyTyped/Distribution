@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IFormOptionsAPI extends js.Object {
-  var data: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var fieldTransform: js.UndefOr[
     angularLib.angularMod.Global.Function | js.Array[angularLib.angularMod.Global.Function]
   ] = js.undefined

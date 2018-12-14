@@ -12,7 +12,7 @@ trait EntityQos
 		 *
 		 * @param policies - list of policies for the Qos entity
 		 */
-ScalablyTyped.runtime.Instantiable1[/* policies (repeated) */ Policy, EntityQos] {
+org.scalablytyped.runtime.Instantiable1[/* policies (repeated) */ Policy, EntityQos] {
   /**
   		 * Adds the given policy to this instance.
   		 * @param policy - the policy to add

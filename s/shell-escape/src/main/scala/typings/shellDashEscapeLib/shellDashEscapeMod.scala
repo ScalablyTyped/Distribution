@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("shell-escape", JSImport.Namespace)
 @js.native
 object shellDashEscapeMod
-  extends ScalablyTyped.runtime.TopLevel[ShellEscape]
+  extends org.scalablytyped.runtime.TopLevel[ShellEscape]
 

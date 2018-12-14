@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CSSModule
-  extends /* className */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  extends /* className */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 

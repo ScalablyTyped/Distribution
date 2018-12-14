@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait FlatPaths
-  extends /* path */ ScalablyTyped.runtime.StringDictionary[js.Any]
+  extends /* path */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

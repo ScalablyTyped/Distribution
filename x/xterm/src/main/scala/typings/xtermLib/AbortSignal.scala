@@ -52,5 +52,5 @@ trait AbortSignal extends EventTarget {
 @JSGlobal("AbortSignal")
 @js.native
 object AbortSignal
-  extends ScalablyTyped.runtime.Instantiable0[AbortSignal]
+  extends org.scalablytyped.runtime.Instantiable0[AbortSignal]
 

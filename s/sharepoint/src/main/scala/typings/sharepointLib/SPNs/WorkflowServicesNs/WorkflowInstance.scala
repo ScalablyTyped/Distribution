@@ -19,7 +19,7 @@ class WorkflowInstance ()
   /** Gets the Coordinated Universal Time (UTC) when the workflow instance state was last persisted */
   def get_lastUpdated(): java.lang.String = js.native
   /** Specifies properties of this workflow instance */
-  def get_properties(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def get_properties(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /** Returns runtime status of the workflow instance */
   def get_status(): WorkflowStatus = js.native
   /** Specifies the custom status set by workflow authors. */

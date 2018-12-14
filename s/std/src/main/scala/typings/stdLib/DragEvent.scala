@@ -16,6 +16,6 @@ trait DragEvent extends MouseEvent {
 @JSGlobal("DragEvent")
 @js.native
 object DragEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, DragEvent]
-     with ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ DragEventInit, DragEvent]
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, DragEvent]
+     with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ DragEventInit, DragEvent]
 

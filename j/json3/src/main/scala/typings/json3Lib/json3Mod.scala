@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("json3", JSImport.Namespace)
 @js.native
 object json3Mod
-  extends ScalablyTyped.runtime.TopLevel[stdLib.JSON]
+  extends org.scalablytyped.runtime.TopLevel[stdLib.JSON]
 

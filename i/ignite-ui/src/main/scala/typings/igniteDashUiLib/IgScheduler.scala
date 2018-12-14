@@ -10,7 +10,7 @@ trait IgScheduler
   extends /**
 	 * Option for igScheduler
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Fired after agenda view range is changed when using previous and next buttons (fired only in Agenda View)
   	 */

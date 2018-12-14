@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait GraphQLEnumValueConfigMap
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[GraphQLEnumValueConfig]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[GraphQLEnumValueConfig]
 

@@ -48,7 +48,7 @@ object microsoftDashAjaxLibMembers extends js.Object {
   @JSName("$addHandlers")
   def $addHandlers(
     element: stdLib.HTMLElement,
-    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit]]
+    events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit]]
   ): scala.Unit = js.native
   /**
   * Provides a shortcut to the addHandlers method of the Sys.UI.DomEvent class. This member is static and can be invoked without creating an instance of the class.
@@ -61,7 +61,7 @@ object microsoftDashAjaxLibMembers extends js.Object {
   @JSName("$addHandlers")
   def $addHandlers(
     element: stdLib.HTMLElement,
-    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit]],
+    events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit]],
     handlerOwner: js.Any
   ): scala.Unit = js.native
   /**
@@ -75,7 +75,7 @@ object microsoftDashAjaxLibMembers extends js.Object {
   @JSName("$addHandlers")
   def $addHandlers(
     element: stdLib.HTMLElement,
-    events: ScalablyTyped.runtime.StringDictionary[js.Function1[/* e */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit]],
+    events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* e */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit]],
     handlerOwner: js.Any,
     autoRemove: scala.Boolean
   ): scala.Unit = js.native

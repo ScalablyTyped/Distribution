@@ -18,7 +18,7 @@ trait nlobjResponse
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * add a value for a response header.
        * @param  {string} name of header

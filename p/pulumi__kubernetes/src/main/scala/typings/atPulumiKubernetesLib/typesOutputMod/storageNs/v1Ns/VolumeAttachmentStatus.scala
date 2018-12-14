@@ -25,7 +25,7 @@ trait VolumeAttachmentStatus extends js.Object {
                * operation that must be passed into subsequent WaitForAttach or Mount calls. This field must
                * only be set by the entity completing the attach operation, i.e. the external-attacher.
                */
-  val attachmentMetadata: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val attachmentMetadata: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * The last error encountered during detach operation, if any. This field must only be set by
                * the entity completing the detach operation, i.e. the external-attacher.

@@ -16,7 +16,7 @@ trait IAttributes
          * because you have to use attrs['foo'] instead of attrs.foo but I don't know of a better way
          * this should really be limited to return string but it creates this problem: http://stackoverflow.com/q/17201854/165656
          */
-/* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * A map of DOM element attribute names to the normalized name. This is needed
            * to do reverse lookup from normalized name back to actual name.

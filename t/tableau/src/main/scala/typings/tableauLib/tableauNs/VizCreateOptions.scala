@@ -12,7 +12,7 @@ trait VizCreateOptions
          * For example, if you have an Academic Year filter and only want to display data for 2017,
          * you might enter "Academic Year": "2016". For more information, see Filtering.
          */
-/* filter */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* filter */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
            * Specifies a device layout for a dashboard, if it exists.
            * Values can be desktop, tablet, or phone.

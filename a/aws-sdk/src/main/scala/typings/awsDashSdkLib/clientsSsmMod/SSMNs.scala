@@ -345,7 +345,7 @@ object SSMNs extends js.Object {
   
   
   trait AssociationStatusAggregatedCount
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[InstanceCount]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[InstanceCount]
   
   
   trait AssociationVersionInfo extends js.Object {
@@ -654,7 +654,7 @@ object SSMNs extends js.Object {
   
   
   trait AutomationParameterMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AutomationParameterValueList]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AutomationParameterValueList]
   
   
   trait CancelCommandRequest extends js.Object {
@@ -990,7 +990,7 @@ object SSMNs extends js.Object {
   
   
   trait ComplianceItemDetails
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait ComplianceItemEntry extends js.Object {
@@ -3715,7 +3715,7 @@ object SSMNs extends js.Object {
   
   
   trait InstanceAssociationStatusAggregatedCount
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[InstanceCount]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[InstanceCount]
   
   
   trait InstanceAssociationStatusInfo extends js.Object {
@@ -4103,11 +4103,11 @@ object SSMNs extends js.Object {
   
   
   trait InventoryItemContentContext
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait InventoryItemEntry
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait InventoryItemSchema extends js.Object {
@@ -4167,7 +4167,7 @@ object SSMNs extends js.Object {
   
   
   trait InventoryResultItemMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[InventoryResultItem]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[InventoryResultItem]
   
   
   trait LabelParameterVersionRequest extends js.Object {
@@ -4975,7 +4975,7 @@ object SSMNs extends js.Object {
   
   
   trait MaintenanceWindowTaskParameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[MaintenanceWindowTaskParameterValueExpression]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[MaintenanceWindowTaskParameterValueExpression]
   
   
   trait ModifyDocumentPermissionRequest extends js.Object {
@@ -5014,7 +5014,7 @@ object SSMNs extends js.Object {
   
   
   trait NormalStringMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[String]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[String]
   
   
   trait NotificationConfig extends js.Object {
@@ -5178,7 +5178,7 @@ object SSMNs extends js.Object {
   
   
   trait Parameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ParameterValueList]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[ParameterValueList]
   
   
   trait ParametersFilter extends js.Object {
@@ -6027,7 +6027,7 @@ object SSMNs extends js.Object {
   
   
   trait SessionManagerParameters
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[SessionManagerParameterValueList]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[SessionManagerParameterValueList]
   
   
   trait SeveritySummary extends js.Object {
@@ -6325,7 +6325,7 @@ object SSMNs extends js.Object {
   
   
   trait TargetMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TargetMapValueList]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TargetMapValueList]
   
   
   trait TerminateSessionRequest extends js.Object {

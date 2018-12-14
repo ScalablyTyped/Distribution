@@ -14,5 +14,5 @@ trait SVGAnimatedInteger extends js.Object {
 @JSGlobal("SVGAnimatedInteger")
 @js.native
 object SVGAnimatedInteger
-  extends ScalablyTyped.runtime.Instantiable0[SVGAnimatedInteger]
+  extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedInteger]
 

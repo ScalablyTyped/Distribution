@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("reflux", "PureComponent")
 @js.native
-class PureComponent[TOfStore /* <: ScalablyTyped.runtime.Instantiable0[Store] */, P, S, SS] ()
+class PureComponent[TOfStore /* <: org.scalablytyped.runtime.Instantiable0[Store] */, P, S, SS] ()
   extends reactLib.reactMod.PureComponent[P, S, SS] {
   var store: TOfStore = js.native
   var storeKeys: js.Array[java.lang.String] = js.native

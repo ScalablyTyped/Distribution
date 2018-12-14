@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Link protected ()
   extends readDashPackageDashTreeLib.readDashPackageDashTreeMod.rptNs.Link {
-  def this(pkg: js.Any, logical: java.lang.String, physical: java.lang.String, realpath: java.lang.String, er: scala.Null, cache: ScalablyTyped.runtime.StringDictionary[readDashPackageDashTreeLib.readDashPackageDashTreeMod.rptNs.Node]) = this()
-  def this(pkg: js.Any, logical: java.lang.String, physical: java.lang.String, realpath: java.lang.String, er: stdLib.Error, cache: ScalablyTyped.runtime.StringDictionary[readDashPackageDashTreeLib.readDashPackageDashTreeMod.rptNs.Node]) = this()
+  def this(pkg: js.Any, logical: java.lang.String, physical: java.lang.String, realpath: java.lang.String, er: scala.Null, cache: org.scalablytyped.runtime.StringDictionary[readDashPackageDashTreeLib.readDashPackageDashTreeMod.rptNs.Node]) = this()
+  def this(pkg: js.Any, logical: java.lang.String, physical: java.lang.String, realpath: java.lang.String, er: stdLib.Error, cache: org.scalablytyped.runtime.StringDictionary[readDashPackageDashTreeLib.readDashPackageDashTreeMod.rptNs.Node]) = this()
   /* CompleteClass */
   override var children: js.Array[readDashPackageDashTreeLib.readDashPackageDashTreeMod.rptNs.Node] = js.native
   /* CompleteClass */

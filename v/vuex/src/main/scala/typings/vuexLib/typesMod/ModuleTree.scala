@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ModuleTree[R]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Module[_, R]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Module[_, R]]
 

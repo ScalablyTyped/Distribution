@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("oblo-util", JSImport.Namespace)
 @js.native
 object obloDashUtilMod
-  extends ScalablyTyped.runtime.TopLevel[ObloUtilStatic]
+  extends org.scalablytyped.runtime.TopLevel[ObloUtilStatic]
 

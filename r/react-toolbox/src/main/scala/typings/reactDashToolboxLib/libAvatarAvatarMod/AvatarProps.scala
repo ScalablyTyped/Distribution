@@ -11,7 +11,7 @@ trait AvatarProps
      with /**
    * Additional properties for component root element.
    */
-/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
      * Children to pass through the component.
      */

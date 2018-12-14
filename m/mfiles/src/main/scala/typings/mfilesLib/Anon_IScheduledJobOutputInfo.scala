@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IScheduledJobOutputInfo
-  extends ScalablyTyped.runtime.Instantiable0[IScheduledJobOutputInfo]
+  extends org.scalablytyped.runtime.Instantiable0[IScheduledJobOutputInfo]
 

@@ -293,6 +293,6 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
        * Updates the Report Designer properties' localization settings.
        * @param localization A dictionary containing the property names, along with their localized equivalents.
        */
-  def UpdateLocalization(localization: ScalablyTyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
+  def UpdateLocalization(localization: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
 }
 

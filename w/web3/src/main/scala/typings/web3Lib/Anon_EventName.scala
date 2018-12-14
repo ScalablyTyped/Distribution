@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_EventName
-  extends /* eventName */ ScalablyTyped.runtime.StringDictionary[
+  extends /* eventName */ org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* options */ js.UndefOr[Anon_Filter], 
         /* cb */ js.UndefOr[web3Lib.typesMod.Callback[web3Lib.typesMod.EventLog]], 

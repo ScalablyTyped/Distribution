@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IOptimizeVaultJob
-  extends ScalablyTyped.runtime.Instantiable0[IOptimizeVaultJob]
+  extends org.scalablytyped.runtime.Instantiable0[IOptimizeVaultJob]
 

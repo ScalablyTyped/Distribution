@@ -10,7 +10,7 @@ trait JSONSchema4
   extends /**
      * @see https://tools.ietf.org/html/draft-zyp-json-schema-04#section-5.6
      */
-/* k */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* k */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   @JSName("$ref")
   var $ref: js.UndefOr[java.lang.String] = js.undefined
   @JSName("$schema")
@@ -42,8 +42,10 @@ trait JSONSchema4
   var allOf: js.UndefOr[js.Array[JSONSchema4]] = js.undefined
   var anyOf: js.UndefOr[js.Array[JSONSchema4]] = js.undefined
   var default: js.UndefOr[JSONSchema4Type] = js.undefined
-  var definitions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema4]] = js.undefined
-  var dependencies: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema4 | js.Array[java.lang.String]]] = js.undefined
+  var definitions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JSONSchema4]] = js.undefined
+  var dependencies: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[JSONSchema4 | js.Array[java.lang.String]]
+  ] = js.undefined
   /**
        * This attribute is a string that provides a full description of the of
        * purpose the instance property.
@@ -125,7 +127,7 @@ trait JSONSchema4
        *
        * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.3
        */
-  var patternProperties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema4]] = js.undefined
+  var patternProperties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JSONSchema4]] = js.undefined
   /**
        * This attribute is an object with property definitions that define the
        * valid values of instance object property values. When the instance
@@ -139,7 +141,7 @@ trait JSONSchema4
        *
        * @see https://tools.ietf.org/html/draft-zyp-json-schema-03#section-5.2
        */
-  var properties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JSONSchema4]] = js.undefined
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JSONSchema4]] = js.undefined
   /**
        * This attribute indicates if the instance must have a value, and not
        * be undefined. This is false by default, making the instance

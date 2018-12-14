@@ -207,7 +207,7 @@ object ActionManager extends js.Object {
            */
   val OnRightPickTrigger: scala.Double = js.native
   /** Gets the list of active triggers */
-  var Triggers: ScalablyTyped.runtime.StringDictionary[scala.Double] = js.native
+  var Triggers: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /**
            * Get a trigger name by index
            * @param trigger defines the trigger index

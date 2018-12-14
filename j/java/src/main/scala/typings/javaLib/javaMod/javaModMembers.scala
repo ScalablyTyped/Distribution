@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("java", JSImport.Namespace)
 @js.native
 object javaModMembers
-  extends ScalablyTyped.runtime.TopLevel[javaLib.javaMod.NodeJavaCoreNs.NodeAPI]
+  extends org.scalablytyped.runtime.TopLevel[javaLib.javaMod.NodeJavaCoreNs.NodeAPI]
 

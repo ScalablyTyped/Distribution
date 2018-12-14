@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "nouislider"
-version := "v9.0.0-dt-20180910Z-cf52b9"
+version := "v9.0.0-dt-20180910Z-b3ed07"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79",
-  "org.scalablytyped" %%% "wnumb" % "1.0-dt-20180910Z-90c3f9")
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",
+  "org.scalablytyped" %%% "wnumb" % "1.0-dt-20180910Z-db00c8")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

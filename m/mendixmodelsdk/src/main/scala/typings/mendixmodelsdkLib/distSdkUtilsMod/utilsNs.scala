@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object utilsNs extends js.Object {
   
   trait IMap[T]
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[T]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[T]
   
   def assertNotNull[T](value: T, propertyName: java.lang.String): scala.Unit = js.native
   def assertNotNull[T](value: T, propertyName: java.lang.String, listy: scala.Boolean): scala.Unit = js.native

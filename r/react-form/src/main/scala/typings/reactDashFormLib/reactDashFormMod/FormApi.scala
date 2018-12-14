@@ -13,8 +13,8 @@ trait FormApi extends js.Object {
   var submitted: scala.Boolean
   var successes: FormErrors
   var touched: Touched
-  var validating: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
-  var validationFailed: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  var validating: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+  var validationFailed: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   var validationFailures: scala.Double
   // State
   var values: FormValues
@@ -23,7 +23,7 @@ trait FormApi extends js.Object {
   def getFormState(): FormState
   def removeValue(name: java.lang.String, index: scala.Double): scala.Unit
   def resetAll(): scala.Unit
-  def setAllTouched(touches: ScalablyTyped.runtime.StringDictionary[scala.Boolean]): scala.Unit
+  def setAllTouched(touches: org.scalablytyped.runtime.StringDictionary[scala.Boolean]): scala.Unit
   def setAllValues(values: FormValues): scala.Unit
   def setError(field: java.lang.String, error: java.lang.String): scala.Unit
   def setFormState(state: FormState): scala.Unit

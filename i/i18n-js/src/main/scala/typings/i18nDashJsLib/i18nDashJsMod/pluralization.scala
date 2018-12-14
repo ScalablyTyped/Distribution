@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("i18n-js", "pluralization")
 @js.native
 object pluralization
-  extends /* locale */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* count */ scala.Double, js.Array[java.lang.String]]]
+  extends /* locale */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* count */ scala.Double, js.Array[java.lang.String]]]
 

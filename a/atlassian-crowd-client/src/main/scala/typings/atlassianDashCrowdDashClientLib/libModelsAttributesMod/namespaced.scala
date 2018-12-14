@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("atlassian-crowd-client/lib/models/attributes", JSImport.Namespace)
 @js.native
 class namespaced protected () extends Attributes {
-  def this(attributePairs: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(attributePairs: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 
 @JSImport("atlassian-crowd-client/lib/models/attributes", JSImport.Namespace)

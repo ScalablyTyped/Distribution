@@ -16,7 +16,7 @@ trait Server
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[Server] {
+org.scalablytyped.runtime.Instantiable0[Server] {
   /**
        * <p>Stop listening for new connections</p>
        * 

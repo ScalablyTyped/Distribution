@@ -111,6 +111,6 @@ trait Worker
 @JSGlobal("Worker")
 @js.native
 object Worker
-  extends ScalablyTyped.runtime.Instantiable1[/* stringUrl */ java.lang.String, Worker]
-     with ScalablyTyped.runtime.Instantiable2[/* stringUrl */ java.lang.String, /* options */ WorkerOptions, Worker]
+  extends org.scalablytyped.runtime.Instantiable1[/* stringUrl */ java.lang.String, Worker]
+     with org.scalablytyped.runtime.Instantiable2[/* stringUrl */ java.lang.String, /* options */ WorkerOptions, Worker]
 

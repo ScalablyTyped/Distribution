@@ -11,7 +11,7 @@ trait GeneratorFunctionConstructor
      * Creates a new Generator function.
      * @param args A list of arguments the function accepts.
      */
-ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ java.lang.String, GeneratorFunction] {
+org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ java.lang.String, GeneratorFunction] {
   /**
        * The length of the arguments.
        */

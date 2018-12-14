@@ -23,7 +23,7 @@ trait LDUser extends js.Object {
        * Any additional attributes associated with the user.
        */
   var custom: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       java.lang.String | scala.Boolean | scala.Double | (js.Array[java.lang.String | scala.Boolean | scala.Double])
     ]
   ] = js.undefined

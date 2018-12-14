@@ -13,5 +13,5 @@ trait DOMParser extends js.Object {
 @JSGlobal("DOMParser")
 @js.native
 object DOMParser
-  extends ScalablyTyped.runtime.Instantiable0[DOMParser]
+  extends org.scalablytyped.runtime.Instantiable0[DOMParser]
 

@@ -10,7 +10,7 @@ trait IgPivotViewDataSelectorPanel
   extends /**
 	 * Option for IgPivotViewDataSelectorPanel
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Determines if the panel containing the igPivotDataSelector will initially collapsed.
   	 */

@@ -16,7 +16,7 @@ trait WLAN
      * 
      * @return  
      */
-ScalablyTyped.runtime.Instantiable0[WLAN] {
+org.scalablytyped.runtime.Instantiable0[WLAN] {
   /**
        * <p>Connect to a wireless network</p>
        * 

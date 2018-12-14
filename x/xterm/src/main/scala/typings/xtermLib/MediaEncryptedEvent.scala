@@ -14,8 +14,8 @@ trait MediaEncryptedEvent extends Event {
 @JSGlobal("MediaEncryptedEvent")
 @js.native
 object MediaEncryptedEvent
-  extends ScalablyTyped.runtime.Instantiable1[/* type */ java.lang.String, MediaEncryptedEvent]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, MediaEncryptedEvent]
+     with org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ MediaEncryptedEventInit, 
       MediaEncryptedEvent

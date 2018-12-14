@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait UniformOptions
   extends UniformCoreOptions
-     with /* option */ ScalablyTyped.runtime.StringDictionary[js.Any]
+     with /* option */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IMinimatchStatic
-  extends ScalablyTyped.runtime.Instantiable1[/* pattern */ java.lang.String, IMinimatch]
-     with ScalablyTyped.runtime.Instantiable2[/* pattern */ java.lang.String, /* options */ IOptions, IMinimatch]
+  extends org.scalablytyped.runtime.Instantiable1[/* pattern */ java.lang.String, IMinimatch]
+     with org.scalablytyped.runtime.Instantiable2[/* pattern */ java.lang.String, /* options */ IOptions, IMinimatch]
 

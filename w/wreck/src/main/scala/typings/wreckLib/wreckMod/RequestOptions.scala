@@ -14,7 +14,7 @@ trait RequestOptions extends js.Object {
       /* redirectMethod */ java.lang.String, 
       /* statusCode */ scala.Double, 
       /* location */ java.lang.String, 
-      /* resHeaders */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+      /* resHeaders */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       /* redirectOptions */ js.Any, 
       /* next */ js.Function0[js.Object], 
       scala.Unit
@@ -23,7 +23,7 @@ trait RequestOptions extends js.Object {
   var ciphers: js.UndefOr[java.lang.String] = js.undefined
   var downstreamRes: js.UndefOr[js.Any] = js.undefined
   var events: js.UndefOr[scala.Boolean] = js.undefined
-  var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var maxBytes: js.UndefOr[scala.Double] = js.undefined
   var payload: js.UndefOr[js.Any] = js.undefined
   var redirect303: js.UndefOr[scala.Boolean] = js.undefined

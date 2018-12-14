@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 
 trait RouteDefs
   extends /** The key represents the route. The value represents the corresponding component. */
-/* url */ ScalablyTyped.runtime.StringDictionary[(ComponentTypes[_, _]) | (RouteResolver[_, _])]
+/* url */ org.scalablytyped.runtime.StringDictionary[(ComponentTypes[_, _]) | (RouteResolver[_, _])]
 

@@ -10,7 +10,7 @@ trait IgPivotDataSelectorDataSourceOptions
   extends /**
 	 * Option for IgPivotDataSelectorDataSourceOptions
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source.
   	 */

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 trait Extension extends js.Object {
   var name: java.lang.String
   var onExtendedHandshake: js.UndefOr[
-    js.Function1[/* handshake */ ScalablyTyped.runtime.StringDictionary[js.Any], scala.Unit]
+    js.Function1[/* handshake */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
   ] = js.undefined
   var onHandshake: js.UndefOr[
     js.Function3[
       /* infoHash */ java.lang.String, 
       /* peerId */ java.lang.String, 
-      /* extensions */ ScalablyTyped.runtime.StringDictionary[scala.Boolean], 
+      /* extensions */ org.scalablytyped.runtime.StringDictionary[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined

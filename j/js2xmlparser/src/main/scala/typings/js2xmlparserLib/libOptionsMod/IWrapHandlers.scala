@@ -16,7 +16,7 @@ trait IWrapHandlers
      * XML element for each item in the array or set, or `null` to indicate that
      * wrapping should not occur.
      */
-/* key */ ScalablyTyped.runtime.StringDictionary[
+/* key */ org.scalablytyped.runtime.StringDictionary[
       js.Function2[/* key */ java.lang.String, /* value */ js.Any, java.lang.String | scala.Null]
     ]
 

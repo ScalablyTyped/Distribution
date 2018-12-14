@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait PreFilterFunctions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[PreFilterFunction]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[PreFilterFunction]
 

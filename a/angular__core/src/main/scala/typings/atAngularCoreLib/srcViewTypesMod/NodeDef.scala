@@ -28,7 +28,7 @@ trait NodeDef extends js.Object {
   /**
        * ids and value types of all queries that are matched by this node.
        */
-  var matchedQueries: ScalablyTyped.runtime.NumberDictionary[QueryValueType]
+  var matchedQueries: org.scalablytyped.runtime.NumberDictionary[QueryValueType]
   /** Binary or of all matched query ids of this node. */
   var matchedQueryIds: scala.Double
   var ngContent: NgContentDef | scala.Null
@@ -43,7 +43,7 @@ trait NodeDef extends js.Object {
   /**
        * references that the user placed on the element
        */
-  var references: ScalablyTyped.runtime.StringDictionary[QueryValueType]
+  var references: org.scalablytyped.runtime.StringDictionary[QueryValueType]
   var renderParent: NodeDef | scala.Null
   var text: TextDef | scala.Null
 }

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mem", JSImport.Namespace)
 @js.native
 object memModMembers
-  extends ScalablyTyped.runtime.TopLevel[memLib.Anon_Args]
+  extends org.scalablytyped.runtime.TopLevel[memLib.Anon_Args]
 

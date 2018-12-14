@@ -19,7 +19,7 @@ trait SocketIOClientStatic extends js.Object {
   /**
        * Managers cache
        */
-  var managers: ScalablyTyped.runtime.StringDictionary[socketDotIoDashClientLib.SocketIOClientNs.Manager] = js.native
+  var managers: org.scalablytyped.runtime.StringDictionary[socketDotIoDashClientLib.SocketIOClientNs.Manager] = js.native
   /**
   	 * The socket.io protocol revision number this client works with
   	 * @default 4

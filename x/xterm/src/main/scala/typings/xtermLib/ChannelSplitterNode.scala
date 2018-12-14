@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ChannelSplitterNode")
 @js.native
 object ChannelSplitterNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, ChannelSplitterNode]
-     with ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, ChannelSplitterNode]
+     with org.scalablytyped.runtime.Instantiable2[
       /* context */ BaseAudioContext, 
       /* options */ ChannelSplitterOptions, 
       ChannelSplitterNode

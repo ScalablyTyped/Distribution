@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait GraphQLNodeDefinitions extends js.Object {
-  var nodeField: graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+  var nodeField: graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   var nodeInterface: graphqlLib.graphqlMod.GraphQLInterfaceType
-  var nodesField: graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, ScalablyTyped.runtime.StringDictionary[_]]
+  var nodesField: graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]]
 }
 

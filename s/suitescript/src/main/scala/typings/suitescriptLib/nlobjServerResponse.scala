@@ -20,7 +20,7 @@ trait nlobjServerResponse
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * return an Array of all headers returned.
        * @return {string[]}

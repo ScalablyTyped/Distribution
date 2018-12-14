@@ -15,7 +15,7 @@ trait AudioProcessingEvent extends Event {
 @JSGlobal("AudioProcessingEvent")
 @js.native
 object AudioProcessingEvent
-  extends ScalablyTyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ AudioProcessingEventInit, 
       AudioProcessingEvent

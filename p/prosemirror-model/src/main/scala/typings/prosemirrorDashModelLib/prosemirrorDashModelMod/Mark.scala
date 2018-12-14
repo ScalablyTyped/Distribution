@@ -11,7 +11,7 @@ class Mark[S /* <: Schema[_, _] */] () extends js.Object {
   /**
      * The attributes associated with this mark.
      */
-  var attrs: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
      * The type of this mark.
      */
@@ -41,7 +41,7 @@ class Mark[S /* <: Schema[_, _] */] () extends js.Object {
   /**
      * Convert this mark to a JSON-serializeable representation.
      */
-  def toJSON(): ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
 @JSImport("prosemirror-model", "Mark")
@@ -51,7 +51,7 @@ object Mark extends js.Object {
      * The empty set of marks.
      */
   var none: js.Array[prosemirrorDashModelLib.prosemirrorDashModelMod.Mark[_]] = js.native
-  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, json: ScalablyTyped.runtime.StringDictionary[js.Any]): prosemirrorDashModelLib.prosemirrorDashModelMod.Mark[S] = js.native
+  def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](schema: S, json: org.scalablytyped.runtime.StringDictionary[js.Any]): prosemirrorDashModelLib.prosemirrorDashModelMod.Mark[S] = js.native
   /**
      * Test whether two sets of marks are identical.
      */

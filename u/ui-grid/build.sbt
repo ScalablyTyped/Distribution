@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "ui-grid"
-version := "0.0-unknown-dt-20180910Z-e51f35"
+version := "0.0-unknown-dt-20180910Z-8e147b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-b4446a",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181214Z-702232",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-27b737",
-  "org.scalablytyped" %%% "std" % "3.2.2-04ea79")
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-9a8364",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181214Z-7b71e9",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-e65330",
+  "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

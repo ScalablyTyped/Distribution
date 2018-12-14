@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SecurityDefinitionsObject
-  extends /* index */ ScalablyTyped.runtime.StringDictionary[SecuritySchemeObject]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[SecuritySchemeObject]
 

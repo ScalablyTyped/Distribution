@@ -18,5 +18,5 @@ trait VideoTrack extends js.Object {
 @JSGlobal("VideoTrack")
 @js.native
 object VideoTrack
-  extends ScalablyTyped.runtime.Instantiable0[VideoTrack]
+  extends org.scalablytyped.runtime.Instantiable0[VideoTrack]
 

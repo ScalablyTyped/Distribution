@@ -10,13 +10,13 @@ trait FlagIconOptions extends js.Object {
   /**
        * An object literal whose keys are your custom codes.
        */
-  var customCodes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var customCodes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
        * Set this if useCssModules is true and a) you want to apply styles to FlagIcon
        * using .theme-base and/or b) you are using custom flags.
        */
   var themeStyles: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[
+    org.scalablytyped.runtime.StringDictionary[
       (csstypeLib.csstypeMod.Properties[
         java.lang.String | reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssLibNumbers.`0`
       ]) with (csstypeLib.csstypeMod.PropertiesHyphen[

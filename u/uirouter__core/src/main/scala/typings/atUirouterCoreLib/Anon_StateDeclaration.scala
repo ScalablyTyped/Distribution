@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_StateDeclaration
-  extends ScalablyTyped.runtime.Instantiable0[atUirouterCoreLib.libStateInterfaceMod.StateDeclaration]
+  extends org.scalablytyped.runtime.Instantiable0[atUirouterCoreLib.libStateInterfaceMod.StateDeclaration]
 

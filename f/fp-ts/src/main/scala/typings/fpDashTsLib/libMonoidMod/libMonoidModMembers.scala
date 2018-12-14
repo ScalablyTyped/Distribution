@@ -17,13 +17,13 @@ object libMonoidModMembers extends js.Object {
   val unsafeMonoidArray: Monoid[fpDashTsLib.libArrayMod.Global.Array[js.Any]] = js.native
   def fold[A](M: Monoid[A]): js.Function1[/* as */ fpDashTsLib.libArrayMod.Global.Array[A], A] = js.native
   def getArrayMonoid[A](): Monoid[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
-  def getDictionaryMonoid[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): Monoid[ScalablyTyped.runtime.StringDictionary[A]] = js.native
+  def getDictionaryMonoid[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): Monoid[org.scalablytyped.runtime.StringDictionary[A]] = js.native
   def getDualMonoid[A](M: Monoid[A]): Monoid[A] = js.native
   def getEndomorphismMonoid[A](): Monoid[fpDashTsLib.libFunctionMod.Endomorphism[A]] = js.native
   def getFunctionMonoid[M](M: Monoid[M]): js.Function0[Monoid[js.Function1[/* a */ _, M]]] = js.native
   def getJoinMonoid[A](B: fpDashTsLib.libBoundedMod.Bounded[A]): Monoid[A] = js.native
   def getMeetMonoid[A](B: fpDashTsLib.libBoundedMod.Bounded[A]): Monoid[A] = js.native
   def getProductMonoid[A, B](MA: Monoid[A], MB: Monoid[B]): Monoid[js.Tuple2[A, B]] = js.native
-  def getRecordMonoid[O /* <: ScalablyTyped.runtime.StringDictionary[js.Any] */](monoids: fpDashTsLib.fpDashTsLibStrings.getRecordMonoid with O): Monoid[O] = js.native
+  def getRecordMonoid[O /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](monoids: fpDashTsLib.fpDashTsLibStrings.getRecordMonoid with O): Monoid[O] = js.native
 }
 

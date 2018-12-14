@@ -10,7 +10,7 @@ trait IgUploadFileExtensionIcons
   extends /**
 	 * Option for IgUploadFileExtensionIcons
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Css classes which sets icon.
   	 */

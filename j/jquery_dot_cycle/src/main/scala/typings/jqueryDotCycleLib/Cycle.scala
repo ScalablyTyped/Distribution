@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Cycle extends js.Object {
   var debug: scala.Boolean = js.native
   var defaults: CycleOptions = js.native
-  var transitions: ScalablyTyped.runtime.StringDictionary[
+  var transitions: org.scalablytyped.runtime.StringDictionary[
     js.Function3[/* $cont */ JQuery, /* $slides */ JQuery, /* options */ CycleOptions, scala.Unit]
   ] = js.native
   def apply(): JQuery = js.native

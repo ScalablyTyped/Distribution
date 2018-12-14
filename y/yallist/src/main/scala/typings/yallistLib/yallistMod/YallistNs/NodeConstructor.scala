@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NodeConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* value */ js.Object, Node[js.Object]]
-     with ScalablyTyped.runtime.Instantiable2[/* value */ js.Object, /* prev */ Node[js.Object], Node[js.Object]]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable1[/* value */ js.Object, Node[js.Object]]
+     with org.scalablytyped.runtime.Instantiable2[/* value */ js.Object, /* prev */ Node[js.Object], Node[js.Object]]
+     with org.scalablytyped.runtime.Instantiable3[
       /* value */ js.Object, 
       /* prev */ Node[js.Object], 
       /* next */ Node[js.Object], 
       Node[js.Object]
     ]
-     with ScalablyTyped.runtime.Instantiable4[
+     with org.scalablytyped.runtime.Instantiable4[
       /* value */ js.Object, 
       /* prev */ Node[js.Object], 
       /* next */ Node[js.Object], 

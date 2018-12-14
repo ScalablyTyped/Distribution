@@ -15,5 +15,5 @@ trait CSSImportRule extends CSSRule {
 @JSGlobal("CSSImportRule")
 @js.native
 object CSSImportRule
-  extends ScalablyTyped.runtime.Instantiable0[CSSImportRule]
+  extends org.scalablytyped.runtime.Instantiable0[CSSImportRule]
 

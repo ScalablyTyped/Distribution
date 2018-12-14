@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pick-weight", JSImport.Namespace)
 @js.native
 object pickDashWeightMod
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       js.Function2[/* arr */ js.Array[js.Any], /* weights */ js.Array[scala.Double], js.Any]
     ]
 

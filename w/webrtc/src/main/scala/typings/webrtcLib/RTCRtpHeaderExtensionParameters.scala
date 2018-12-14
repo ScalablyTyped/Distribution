@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 trait RTCRtpHeaderExtensionParameters extends js.Object {
   //uri: string;
   //id: number;
-  var encrypted: scala.Boolean
+  var encrypted: js.UndefOr[scala.Boolean] = js.undefined
 }
 

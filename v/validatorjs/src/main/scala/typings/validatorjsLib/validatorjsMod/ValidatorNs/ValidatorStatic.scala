@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ValidatorStatic
-  extends ScalablyTyped.runtime.Instantiable2[/* data */ js.Object, /* rules */ js.Any, Validator[js.Object]]
-     with ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable2[/* data */ js.Object, /* rules */ js.Any, Validator[js.Object]]
+     with org.scalablytyped.runtime.Instantiable3[
       /* data */ js.Object, 
       /* rules */ js.Any, 
       /* customMessages */ ErrorMessages, 

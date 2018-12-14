@@ -18,7 +18,7 @@ trait ClientContributionProviderDetails extends js.Object {
   /**
        * Properties associated with the provider
        */
-  var properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
        * Version of contributions assoicated with this contribution provider.
        */

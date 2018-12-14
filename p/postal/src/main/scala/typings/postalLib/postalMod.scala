@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("postal", JSImport.Namespace)
 @js.native
 object postalMod
-  extends ScalablyTyped.runtime.TopLevel[IPostal]
+  extends org.scalablytyped.runtime.TopLevel[IPostal]
 

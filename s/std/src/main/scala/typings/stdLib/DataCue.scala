@@ -13,5 +13,5 @@ trait DataCue extends TextTrackCue {
 @JSGlobal("DataCue")
 @js.native
 object DataCue
-  extends ScalablyTyped.runtime.Instantiable0[DataCue]
+  extends org.scalablytyped.runtime.Instantiable0[DataCue]
 

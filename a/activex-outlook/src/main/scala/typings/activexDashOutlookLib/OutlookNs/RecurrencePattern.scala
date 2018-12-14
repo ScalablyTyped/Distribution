@@ -13,7 +13,7 @@ class RecurrencePattern protected () extends js.Object {
   var DayOfMonth: scala.Double = js.native
   var DayOfWeekMask: OlDaysOfWeek = js.native
   var Duration: scala.Double = js.native
-  var EndTime: activexDashInteropLib.VarDate = js.native
+  var EndTime: stdLib.VarDate = js.native
   val Exceptions: Exceptions = js.native
   var Instance: scala.Double = js.native
   var Interval: scala.Double = js.native
@@ -22,12 +22,12 @@ class RecurrencePattern protected () extends js.Object {
   var Occurrences: scala.Double = js.native
   var `Outlook.RecurrencePattern_typekey`: RecurrencePattern = js.native
   val Parent: js.Any = js.native
-  var PatternEndDate: activexDashInteropLib.VarDate = js.native
-  var PatternStartDate: activexDashInteropLib.VarDate = js.native
+  var PatternEndDate: stdLib.VarDate = js.native
+  var PatternStartDate: stdLib.VarDate = js.native
   var RecurrenceType: OlRecurrenceType = js.native
   var Regenerate: scala.Boolean = js.native
   val Session: NameSpace = js.native
-  var StartTime: activexDashInteropLib.VarDate = js.native
-  def GetOccurrence(StartDate: activexDashInteropLib.VarDate): AppointmentItem = js.native
+  var StartTime: stdLib.VarDate = js.native
+  def GetOccurrence(StartDate: stdLib.VarDate): AppointmentItem = js.native
 }
 

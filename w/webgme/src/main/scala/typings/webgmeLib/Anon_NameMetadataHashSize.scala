@@ -19,9 +19,9 @@ trait Anon_NameMetadataHashSize extends js.Object {
     size: scala.Double,
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]
   ): scala.Unit = js.native
-  def apply(objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
+  def apply(objectHashes: org.scalablytyped.runtime.StringDictionary[java.lang.String]): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   def apply(
-    objectHashes: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    objectHashes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]
   ): scala.Unit = js.native
 }

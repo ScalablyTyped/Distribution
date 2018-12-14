@@ -21,7 +21,7 @@ object utilNsMembers extends js.Object {
   def arrify[T](`val`: js.Array[T]): js.Array[T] = js.native
   def assignDeep[T](target: T, sources: js.Object*): T = js.native
   def asyncFor[T](
-    obj: ScalablyTyped.runtime.StringDictionary[T],
+    obj: org.scalablytyped.runtime.StringDictionary[T],
     iter: js.Function5[
       /* key */ java.lang.String, 
       /* value */ T, 

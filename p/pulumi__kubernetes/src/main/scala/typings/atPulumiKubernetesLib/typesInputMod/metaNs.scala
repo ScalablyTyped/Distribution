@@ -315,7 +315,7 @@ object metaNs extends js.Object {
                    */
       var matchLabels: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
     }
@@ -386,7 +386,7 @@ object metaNs extends js.Object {
                    */
       var annotations: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -476,7 +476,7 @@ object metaNs extends js.Object {
                    */
       var labels: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
-              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**

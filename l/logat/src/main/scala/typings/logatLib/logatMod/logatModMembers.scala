@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("logat", JSImport.Namespace)
 @js.native
 object logatModMembers
-  extends ScalablyTyped.runtime.TopLevel[Logger]
+  extends org.scalablytyped.runtime.TopLevel[Logger]
 

@@ -73,5 +73,5 @@ trait SVGSymbolElement
 @JSGlobal("SVGSymbolElement")
 @js.native
 object SVGSymbolElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGSymbolElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGSymbolElement]
 

@@ -15,7 +15,7 @@ class textFilter ()
   /* CompleteClass */
   override def refresh(master: webixLib.webixNs.uiNs.baseview, node: stdLib.HTMLElement, value: js.Any): scala.Unit = js.native
   /* CompleteClass */
-  override def render(master: webixLib.webixNs.uiNs.baseview, config: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  override def render(master: webixLib.webixNs.uiNs.baseview, config: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   /* CompleteClass */
   override def setValue(node: stdLib.HTMLElement, value: js.Any): js.Any = js.native
 }

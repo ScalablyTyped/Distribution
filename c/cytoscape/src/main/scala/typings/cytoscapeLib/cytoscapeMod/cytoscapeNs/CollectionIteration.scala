@@ -15,7 +15,7 @@ trait CollectionIteration[TOut, TIn]
          *
          * @param index The index of the element to get.
          */
-/* index */ ScalablyTyped.runtime.NumberDictionary[TOut] {
+/* index */ org.scalablytyped.runtime.NumberDictionary[TOut] {
   /**
            * Get the number of elements in the collection.
            */

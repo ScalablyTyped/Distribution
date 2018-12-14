@@ -13,6 +13,6 @@ trait RTCRtpCodecParameters extends js.Object {
   //payloadType: number;
   var mimeType: java.lang.String
    // default = 1
-  var sdpFmtpLine: java.lang.String
+  var sdpFmtpLine: js.UndefOr[java.lang.String] = js.undefined
 }
 

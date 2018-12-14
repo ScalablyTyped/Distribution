@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait FormFields
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[Field | FormFields]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[Field | FormFields]
 

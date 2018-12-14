@@ -12,11 +12,11 @@ trait component extends js.Object {
   @JSName("$prefix")
   var $prefix: java.lang.String = js.native
   var computed: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Function1[/* self */ js.UndefOr[component], _]]
+    org.scalablytyped.runtime.StringDictionary[js.Function1[/* self */ js.UndefOr[component], _]]
   ] = js.native
-  var data: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var data: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var methods: js.UndefOr[
-    ScalablyTyped.runtime.StringDictionary[js.Function1[/* evt */ js.UndefOr[wepyLib.eventMod.default], _]]
+    org.scalablytyped.runtime.StringDictionary[js.Function1[/* evt */ js.UndefOr[wepyLib.eventMod.default], _]]
   ] = js.native
   @JSName("$apply")
   def $apply(fn: js.Function0[scala.Unit]): scala.Unit = js.native

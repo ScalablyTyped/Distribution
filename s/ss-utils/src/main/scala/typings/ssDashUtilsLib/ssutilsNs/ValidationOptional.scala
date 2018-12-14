@@ -15,7 +15,7 @@ trait ValidationOptional extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var messages: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var messages: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var overrideMessages: js.UndefOr[scala.Boolean] = js.undefined
 }
 

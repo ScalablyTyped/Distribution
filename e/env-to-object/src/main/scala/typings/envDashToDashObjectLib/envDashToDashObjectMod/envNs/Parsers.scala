@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Parsers
-  extends /* parserName */ ScalablyTyped.runtime.StringDictionary[js.Function2[/* str */ java.lang.String, /* opts */ js.Any, _]]
+  extends /* parserName */ org.scalablytyped.runtime.StringDictionary[js.Function2[/* str */ java.lang.String, /* opts */ js.Any, _]]
 

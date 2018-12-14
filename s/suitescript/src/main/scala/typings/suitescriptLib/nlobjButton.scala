@@ -20,7 +20,7 @@ trait nlobjButton
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[nlobjButton] {
+org.scalablytyped.runtime.Instantiable0[nlobjButton] {
   /**
        * disable or enable button.
        * @param {boolean} disabled if true then this button should be disabled on the page

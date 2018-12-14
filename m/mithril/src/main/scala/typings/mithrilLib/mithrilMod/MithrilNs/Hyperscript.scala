@@ -21,7 +21,7 @@ trait Hyperscript extends js.Object {
   ): Vnode[Attrs, State] = js.native
   /** Creates a fragment virtual element (Vnode). */
   def fragment(
-    attrs: (Lifecycle[_, _]) with ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: (Lifecycle[_, _]) with org.scalablytyped.runtime.StringDictionary[js.Any],
     children: ChildArrayOrPrimitive
   ): Vnode[_, _] = js.native
   /** Turns an HTML string into a virtual element (Vnode). Do not use trust on unsanitized user input. */

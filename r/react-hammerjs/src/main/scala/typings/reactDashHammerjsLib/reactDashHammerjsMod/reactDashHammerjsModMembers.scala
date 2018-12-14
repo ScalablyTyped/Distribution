@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-hammerjs", JSImport.Namespace)
 @js.native
 object reactDashHammerjsModMembers
-  extends ScalablyTyped.runtime.TopLevel[
+  extends org.scalablytyped.runtime.TopLevel[
       reactLib.reactMod.ReactNs.ComponentClass[
         reactDashHammerjsLib.reactDashHammerjsMod.ReactHammerNs.ReactHammerProps, 
         reactLib.reactMod.ReactNs.ComponentState

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait QueryAstNode
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var subNodes: js.UndefOr[js.Array[QueryAstNode]] = js.undefined
   var `type`: java.lang.String
 }

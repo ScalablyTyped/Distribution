@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("semantic-ui-rating", JSImport.Namespace)
 @js.native
 object semanticDashUiDashRatingMod
-  extends ScalablyTyped.runtime.TopLevel[semanticDashUiDashRatingLib.SemanticUINs.Rating]
+  extends org.scalablytyped.runtime.TopLevel[semanticDashUiDashRatingLib.SemanticUINs.Rating]
 

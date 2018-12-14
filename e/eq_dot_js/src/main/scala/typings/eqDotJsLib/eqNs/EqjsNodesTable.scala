@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait EqjsNodesTable
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[stdLib.HTMLElement]
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[stdLib.HTMLElement]
 

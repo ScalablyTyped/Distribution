@@ -26,7 +26,7 @@ object IoTAnalyticsNs extends js.Object {
   
   
   trait AttributeNameMapping
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeName]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeName]
   
   
   trait BatchPutMessageErrorEntry extends js.Object {

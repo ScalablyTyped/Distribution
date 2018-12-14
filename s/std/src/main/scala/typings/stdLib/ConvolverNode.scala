@@ -14,6 +14,6 @@ trait ConvolverNode extends AudioNode {
 @JSGlobal("ConvolverNode")
 @js.native
 object ConvolverNode
-  extends ScalablyTyped.runtime.Instantiable1[/* context */ BaseAudioContext, ConvolverNode]
-     with ScalablyTyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ ConvolverOptions, ConvolverNode]
+  extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, ConvolverNode]
+     with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ ConvolverOptions, ConvolverNode]
 

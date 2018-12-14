@@ -34,5 +34,5 @@ trait SVGPolylineElement
 @JSGlobal("SVGPolylineElement")
 @js.native
 object SVGPolylineElement
-  extends ScalablyTyped.runtime.Instantiable0[SVGPolylineElement]
+  extends org.scalablytyped.runtime.Instantiable0[SVGPolylineElement]
 

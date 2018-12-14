@@ -10,7 +10,7 @@ trait IgValidatorField
   extends /**
 	 * Option for IgValidatorField
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets the target element (input or control target) to be validated. This field setting is required.
   	 *

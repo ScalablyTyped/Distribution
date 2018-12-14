@@ -18,7 +18,7 @@ trait nlobjList
      *
      * @return
      */
-ScalablyTyped.runtime.Instantiable0[js.Any] {
+org.scalablytyped.runtime.Instantiable0[js.Any] {
   /**
        * add a button (nlobjButton) to the footer of this page.
        *

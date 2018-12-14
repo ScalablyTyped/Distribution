@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 // transform.js
 @js.native
 trait Element
-  extends ScalablyTyped.runtime.Instantiable0[Element] {
+  extends org.scalablytyped.runtime.Instantiable0[Element] {
   var clipper: ClipPath = js.native
   var masker: Mask = js.native
   var node: LinkedHTMLElement = js.native

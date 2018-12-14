@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("nodal", "ModelArray")
 @js.native
 class ModelArray[T] protected () extends ItemArray[T] {
-  def this(modelConstructor: ScalablyTyped.runtime.Instantiable3[
+  def this(modelConstructor: org.scalablytyped.runtime.Instantiable3[
       /* modelData */ js.Object, 
       /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
       /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
       Model
     ]) = this()
-  var Model: ScalablyTyped.runtime.Instantiable3[
+  var Model: org.scalablytyped.runtime.Instantiable3[
     /* modelData */ js.Object, 
     /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
     /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 

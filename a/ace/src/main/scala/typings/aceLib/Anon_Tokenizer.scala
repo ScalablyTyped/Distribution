@@ -12,7 +12,7 @@ trait Anon_Tokenizer
          * @param tokenizer The tokenizer to use
          * @param editor The editor to associate with
         **/
-ScalablyTyped.runtime.Instantiable2[
+org.scalablytyped.runtime.Instantiable2[
       /* tokenizer */ aceLib.AceAjaxNs.Tokenizer, 
       /* editor */ aceLib.AceAjaxNs.Editor, 
       aceLib.AceAjaxNs.BackgroundTokenizer

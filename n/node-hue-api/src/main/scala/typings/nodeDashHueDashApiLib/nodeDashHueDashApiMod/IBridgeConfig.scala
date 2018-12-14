@@ -30,7 +30,7 @@ trait IBridgeConfig extends js.Object {
   var swupdate: nodeDashHueDashApiLib.Anon_Notify
   var swversion: java.lang.String
   var timezone: java.lang.String
-  var whitelist: ScalablyTyped.runtime.StringDictionary[nodeDashHueDashApiLib.Anon_Createdate]
+  var whitelist: org.scalablytyped.runtime.StringDictionary[nodeDashHueDashApiLib.Anon_Createdate]
   var zigbeechannel: scala.Double
 }
 

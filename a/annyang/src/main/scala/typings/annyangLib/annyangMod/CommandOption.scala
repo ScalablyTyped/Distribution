@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait CommandOption
-  extends /* command */ ScalablyTyped.runtime.StringDictionary[CommandOptionRegex | js.Function0[scala.Unit]]
+  extends /* command */ org.scalablytyped.runtime.StringDictionary[CommandOptionRegex | js.Function0[scala.Unit]]
 

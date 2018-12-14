@@ -20,7 +20,7 @@ trait RequireDefine extends js.Object {
   	* Define Simple Name/Value Pairs
   	* @param config Dictionary of Named/Value pairs for the config.
   	**/
-  def apply(config: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def apply(config: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
   	* Define function with dependencies.
   	* @param deps List of dependencies module IDs.
@@ -61,7 +61,7 @@ trait RequireDefine extends js.Object {
   def apply(
     ready: js.Function3[
       /* require */ Require, 
-      /* exports */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+      /* exports */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       /* module */ RequireModule, 
       _
     ]

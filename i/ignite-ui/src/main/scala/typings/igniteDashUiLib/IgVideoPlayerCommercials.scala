@@ -10,7 +10,7 @@ trait IgVideoPlayerCommercials
   extends /**
 	 * Option for IgVideoPlayerCommercials
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Customizes the ad message settings of the commercial. Ad message shows the duration of the commercial and pops up when the commercial starts playing.
   	 *

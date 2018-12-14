@@ -57,5 +57,5 @@ trait MediaQueryList extends EventTarget {
 @JSGlobal("MediaQueryList")
 @js.native
 object MediaQueryList
-  extends ScalablyTyped.runtime.Instantiable0[MediaQueryList]
+  extends org.scalablytyped.runtime.Instantiable0[MediaQueryList]
 

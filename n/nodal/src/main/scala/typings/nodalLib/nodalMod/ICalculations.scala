@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait ICalculations
-  extends /* calculations */ ScalablyTyped.runtime.StringDictionary[ICalculation]
+  extends /* calculations */ org.scalablytyped.runtime.StringDictionary[ICalculation]
 

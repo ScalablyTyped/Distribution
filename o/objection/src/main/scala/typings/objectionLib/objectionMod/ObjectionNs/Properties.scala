@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Properties
-  extends /* propertyName */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 

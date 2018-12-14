@@ -131,7 +131,7 @@ object mergeDashStylesModMembers extends js.Object {
     styleSet4: TStyleSet4 | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   def fontFace(font: atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontFace): scala.Unit = js.native
-  def keyframes(timeline: ScalablyTyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
+  def keyframes(timeline: org.scalablytyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
   def mergeStyleSets(
     styleSets: (js.UndefOr[
       atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[_] | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`false` | scala.Null

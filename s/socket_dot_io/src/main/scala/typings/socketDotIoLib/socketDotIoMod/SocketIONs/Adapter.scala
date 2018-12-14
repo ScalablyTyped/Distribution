@@ -23,7 +23,7 @@ trait Adapter
   		 * A dictionary of all the socket ids that we're dealing with, and all
   		 * the rooms that the socket is currently in
   		 */
-  var sids: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[scala.Boolean]] = js.native
+  var sids: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = js.native
   /**
   		 * Adds a socket to a room. If the room doesn't exist, it's created
   		 * @param id The ID of the socket to add

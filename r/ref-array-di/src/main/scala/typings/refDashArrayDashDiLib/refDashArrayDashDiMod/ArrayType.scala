@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ArrayType[T]
   extends refDashNapiLib.refDashNapiMod.Type
-     with ScalablyTyped.runtime.Instantiable0[refDashArrayDashDiLib.Anon_I[T]]
-     with ScalablyTyped.runtime.Instantiable1[
-      (/* length */ scala.Double) | (/* data */ js.Array[scala.Double]) | (/* data */ nodeLib.Buffer), 
-      refDashArrayDashDiLib.Anon_I[T]
-    ]
-     with ScalablyTyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable0[refDashArrayDashDiLib.Anon_I[T]]
+     with org.scalablytyped.runtime.Instantiable2[
       (/* data */ js.Array[scala.Double]) | (/* data */ nodeLib.Buffer), 
       /* length */ scala.Double, 
+      refDashArrayDashDiLib.Anon_I[T]
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* length */ scala.Double) | (/* data */ js.Array[scala.Double]) | (/* data */ nodeLib.Buffer), 
       refDashArrayDashDiLib.Anon_I[T]
     ] {
   var BYTES_PER_ELEMENT: scala.Double = js.native

@@ -16,5 +16,5 @@ trait MediaDeviceInfo extends js.Object {
 @JSGlobal("MediaDeviceInfo")
 @js.native
 object MediaDeviceInfo
-  extends ScalablyTyped.runtime.Instantiable0[MediaDeviceInfo]
+  extends org.scalablytyped.runtime.Instantiable0[MediaDeviceInfo]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait RelationRuleDictionary
-  extends /* absolutePathOfTarget */ ScalablyTyped.runtime.StringDictionary[RelationRuleDetail]
+  extends /* absolutePathOfTarget */ org.scalablytyped.runtime.StringDictionary[RelationRuleDetail]
 

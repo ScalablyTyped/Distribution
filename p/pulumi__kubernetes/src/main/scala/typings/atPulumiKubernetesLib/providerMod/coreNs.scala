@@ -235,7 +235,7 @@ object coreNs extends js.Object {
                    * enforced during validation process.
                    */
       val data: atPulumiPulumiLib.pulumiMod.Output[
-            ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+            org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
           ] = js.native
       /**
                    * Kind is a string value representing the REST resource this object represents. Servers may
@@ -1827,7 +1827,7 @@ object coreNs extends js.Object {
                    * overwriting any existing values. It is never output when reading from the API.
                    */
       val stringData: atPulumiPulumiLib.pulumiMod.Output[
-            ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+            org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
           ] = js.native
       /**
                    * Used to facilitate programmatic handling of secret data.

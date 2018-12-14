@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait KnockoutComputedFunctions[T]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[KnockoutBindingHandler]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[KnockoutBindingHandler]
 

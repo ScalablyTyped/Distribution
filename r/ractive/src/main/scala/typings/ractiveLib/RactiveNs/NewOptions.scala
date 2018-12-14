@@ -43,7 +43,7 @@ trait NewOptions extends js.Object {
   var events: js.UndefOr[EventPlugins] = js.undefined
   // Since 0.5.5
   // TODO: unclear in documantation
-  var interpolators: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var interpolators: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   // Default false
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   // Default false
@@ -103,7 +103,7 @@ trait NewOptions extends js.Object {
   /**
   	     * any is same type as template
   	     */
-  var partials: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var partials: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   // Default false
   var preserveWhitespace: js.UndefOr[scala.Boolean] = js.undefined
   /**

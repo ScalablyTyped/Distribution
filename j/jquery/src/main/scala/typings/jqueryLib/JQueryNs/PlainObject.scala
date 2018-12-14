@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
      */
 
 trait PlainObject[T]
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[T]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[T]
 

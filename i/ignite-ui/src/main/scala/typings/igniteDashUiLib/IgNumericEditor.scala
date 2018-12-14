@@ -10,7 +10,7 @@ trait IgNumericEditor
   extends /**
 	 * Option for igNumericEditor
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Gets/Sets whether the editor value can become null.
   	 * If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue).

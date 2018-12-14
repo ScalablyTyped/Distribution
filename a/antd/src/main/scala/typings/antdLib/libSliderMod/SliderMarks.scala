@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SliderMarks
-  extends /* key */ ScalablyTyped.runtime.NumberDictionary[reactLib.reactMod.ReactNs.ReactNode | antdLib.Anon_Label]
+  extends /* key */ org.scalablytyped.runtime.NumberDictionary[reactLib.reactMod.ReactNs.ReactNode | antdLib.Anon_Label]
 

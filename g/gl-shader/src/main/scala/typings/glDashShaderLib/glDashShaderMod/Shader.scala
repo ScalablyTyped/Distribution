@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Shader extends js.Object {
-  val attributes: ScalablyTyped.runtime.StringDictionary[Attribute with js.Array[_]] = js.native
+  val attributes: org.scalablytyped.runtime.StringDictionary[Attribute with js.Array[_]] = js.native
   val fragShader: stdLib.WebGLShader = js.native
   val gl: stdLib.WebGLRenderingContext = js.native
   val program: stdLib.WebGLProgram = js.native
-  var uniforms: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var uniforms: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   val vertShader: stdLib.WebGLShader = js.native
   def bind(): scala.Unit = js.native
   def dispose(): scala.Unit = js.native

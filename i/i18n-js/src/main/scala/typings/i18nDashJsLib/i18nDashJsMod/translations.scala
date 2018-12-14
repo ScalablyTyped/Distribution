@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("i18n-js", "translations")
 @js.native
 object translations
-  extends /* locale */ ScalablyTyped.runtime.StringDictionary[js.Object]
+  extends /* locale */ org.scalablytyped.runtime.StringDictionary[js.Object]
 

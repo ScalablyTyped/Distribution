@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Attributes
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
 

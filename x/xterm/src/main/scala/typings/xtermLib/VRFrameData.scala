@@ -18,5 +18,5 @@ trait VRFrameData extends js.Object {
 @JSGlobal("VRFrameData")
 @js.native
 object VRFrameData
-  extends ScalablyTyped.runtime.Instantiable0[VRFrameData]
+  extends org.scalablytyped.runtime.Instantiable0[VRFrameData]
 

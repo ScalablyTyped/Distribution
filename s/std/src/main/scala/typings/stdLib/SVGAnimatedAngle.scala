@@ -14,5 +14,5 @@ trait SVGAnimatedAngle extends js.Object {
 @JSGlobal("SVGAnimatedAngle")
 @js.native
 object SVGAnimatedAngle
-  extends ScalablyTyped.runtime.Instantiable0[SVGAnimatedAngle]
+  extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedAngle]
 

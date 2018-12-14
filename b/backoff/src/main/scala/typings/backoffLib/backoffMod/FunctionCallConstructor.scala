@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FunctionCallConstructor
-  extends ScalablyTyped.runtime.Instantiable3[
+  extends org.scalablytyped.runtime.Instantiable3[
       (/* wrappedFunction */ js.Function1[
         /* cb */ js.Function4[
           /* err */ js.Object, 

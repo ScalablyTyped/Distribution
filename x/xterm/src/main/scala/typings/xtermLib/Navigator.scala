@@ -51,5 +51,5 @@ trait Navigator
 @JSGlobal("Navigator")
 @js.native
 object Navigator
-  extends ScalablyTyped.runtime.Instantiable0[Navigator]
+  extends org.scalablytyped.runtime.Instantiable0[Navigator]
 

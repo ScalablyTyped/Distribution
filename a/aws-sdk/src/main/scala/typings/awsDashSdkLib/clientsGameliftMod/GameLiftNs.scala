@@ -1675,7 +1675,7 @@ object GameLiftNs extends js.Object {
   
   
   trait LatencyMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[PositiveInteger]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[PositiveInteger]
   
   
   trait ListAliasesInput extends js.Object {
@@ -1927,11 +1927,11 @@ object GameLiftNs extends js.Object {
   
   
   trait PlayerAttributeMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
   
   trait PlayerDataMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[PlayerData]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[PlayerData]
   
   
   trait PlayerLatency extends js.Object {
@@ -2412,7 +2412,7 @@ object GameLiftNs extends js.Object {
   
   
   trait StringDoubleMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DoubleObject]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DoubleObject]
   
   
   trait TargetConfiguration extends js.Object {

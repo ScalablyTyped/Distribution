@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Parser extends js.Object {
-  var Lexer: ScalablyTyped.runtime.Instantiable1[
+  var Lexer: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[/* options */ markedLib.markedMod.markedNs.MarkedOptions], 
     markedLib.markedMod.markedNs.Lexer
   ] = js.native
-  var Renderer: ScalablyTyped.runtime.Instantiable1[
+  var Renderer: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[/* options */ markedLib.markedMod.markedNs.MarkedOptions], 
     markedLib.markedMod.markedNs.Renderer
   ] = js.native

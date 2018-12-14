@@ -38,7 +38,7 @@ class DefaultKeyValueDiffer[K, V] ()
        * Check the current state of the map vs the previous.
        * The algorithm is optimised for when the keys do no change.
        */
-  def check(map: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
+  def check(map: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
   /**
        * Check the current state of the map vs the previous.
        * The algorithm is optimised for when the keys do no change.

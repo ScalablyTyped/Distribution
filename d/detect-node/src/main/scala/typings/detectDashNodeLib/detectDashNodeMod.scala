@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("detect-node", JSImport.Namespace)
 @js.native
 object detectDashNodeMod
-  extends ScalablyTyped.runtime.TopLevel[scala.Boolean]
+  extends org.scalablytyped.runtime.TopLevel[scala.Boolean]
 

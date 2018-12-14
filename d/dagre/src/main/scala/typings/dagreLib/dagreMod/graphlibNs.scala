@@ -44,8 +44,8 @@ object graphlibNs extends js.Object {
     def setDefaultNodeLabel(callback: java.lang.String): Graph = js.native
     def setDefaultNodeLabel(callback: js.Function1[/* nodeId */ java.lang.String, java.lang.String | dagreLib.dagreMod.Label]): Graph = js.native
     def setEdge(params: dagreLib.dagreMod.Edge): Graph = js.native
-    def setEdge(params: dagreLib.dagreMod.Edge, value: ScalablyTyped.runtime.StringDictionary[js.Any]): Graph = js.native
     def setEdge(params: dagreLib.dagreMod.Edge, value: java.lang.String): Graph = js.native
+    def setEdge(params: dagreLib.dagreMod.Edge, value: org.scalablytyped.runtime.StringDictionary[js.Any]): Graph = js.native
     def setEdge(sourceId: java.lang.String, targetId: java.lang.String): Graph = js.native
     def setEdge(sourceId: java.lang.String, targetId: java.lang.String, value: dagreLib.dagreMod.Label): Graph = js.native
     def setEdge(

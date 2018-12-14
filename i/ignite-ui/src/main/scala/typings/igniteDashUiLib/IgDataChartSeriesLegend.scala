@@ -10,7 +10,7 @@ trait IgDataChartSeriesLegend
   extends /**
 	 * Option for IgDataChartSeriesLegend
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * The name of the element to turn into a legend.
   	 */

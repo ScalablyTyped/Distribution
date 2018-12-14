@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("nodegit/checkout-options", "CheckoutOptions")
 @js.native
 class CheckoutOptions ()
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var ancestorLabel: js.UndefOr[java.lang.String] = js.native
   var baseline: js.UndefOr[nodegitLib.treeMod.Tree] = js.native
   var baselineIndex: js.UndefOr[nodegitLib.nodegitMod.Index] = js.native

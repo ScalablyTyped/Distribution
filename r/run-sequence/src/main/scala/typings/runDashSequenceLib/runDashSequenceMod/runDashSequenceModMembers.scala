@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("run-sequence", JSImport.Namespace)
 @js.native
 object runDashSequenceModMembers
-  extends ScalablyTyped.runtime.TopLevel[IRunSequence]
+  extends org.scalablytyped.runtime.TopLevel[IRunSequence]
 

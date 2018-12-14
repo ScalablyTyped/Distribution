@@ -34,7 +34,7 @@ trait JsonSchema extends js.Object {
        * Holds simple JSON Schema definitions for
        * referencing from elsewhere.
        */
-  var definitions: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JsonSchema]] = js.undefined
+  var definitions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JsonSchema]] = js.undefined
   /**
        * If the key is present as a property then the
        * string of properties must also be present.
@@ -42,7 +42,9 @@ trait JsonSchema extends js.Object {
        * also be valid for the object if the key is
        * present.
        */
-  var dependencies: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JsonSchema | js.Array[java.lang.String]]] = js.undefined
+  var dependencies: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[JsonSchema | js.Array[java.lang.String]]
+  ] = js.undefined
   /**
        * Schema description
        */
@@ -110,12 +112,12 @@ trait JsonSchema extends js.Object {
        * The key of this object is a regex for which
        * properties the schema applies to
        */
-  var patternProperties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JsonSchema]] = js.undefined
+  var patternProperties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JsonSchema]] = js.undefined
   /**
        * The keys that can exist on the object with the
        * json schema that should validate their value
        */
-  var properties: js.UndefOr[ScalablyTyped.runtime.StringDictionary[JsonSchema]] = js.undefined
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[JsonSchema]] = js.undefined
   var required: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
        * Title of the schema

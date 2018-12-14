@@ -18,5 +18,5 @@ trait AppStatic
              * @option {String} [asanaBaseUrl] Base URL to use for Asana, for debugging
              * @constructor
              */
-ScalablyTyped.runtime.Instantiable1[/* options */ AppOptions, App]
+org.scalablytyped.runtime.Instantiable1[/* options */ AppOptions, App]
 

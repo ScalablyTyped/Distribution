@@ -31,7 +31,7 @@ trait XPathResult extends js.Object {
 @JSGlobal("XPathResult")
 @js.native
 object XPathResult
-  extends ScalablyTyped.runtime.Instantiable0[XPathResult] {
+  extends org.scalablytyped.runtime.Instantiable0[XPathResult] {
   val ANY_TYPE: scala.Double = js.native
   val ANY_UNORDERED_NODE_TYPE: scala.Double = js.native
   val BOOLEAN_TYPE: scala.Double = js.native

@@ -11,7 +11,7 @@ trait eventInfo extends js.Object {
   var editor: editor
   var listenerData: js.Any
   var name: java.lang.String
-  var sender: ScalablyTyped.runtime.StringDictionary[js.Any]
+  var sender: org.scalablytyped.runtime.StringDictionary[js.Any]
   def cancel(): scala.Unit
   def removeListener(): scala.Unit
   def stop(): scala.Unit

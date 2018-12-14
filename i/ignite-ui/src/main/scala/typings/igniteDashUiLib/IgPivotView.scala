@@ -10,7 +10,7 @@ trait IgPivotView
   extends /**
 	 * Option for igPivotView
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * Configuration settings that will be assigned to the igPivotDataSelector widget.
   	 *

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProtractorBy ()
   extends WebdriverBy
-     with /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
        * Add a locator to this instance of ProtractorBy. This locator can then be
        * used with element(by.locatorName(args)).

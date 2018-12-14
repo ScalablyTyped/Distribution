@@ -14,14 +14,14 @@ trait Collection
      * @param conn A MongooseConnection instance
      * @param opts optional collection options
      */
-ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* conn */ Connection, Collection]
+org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* conn */ Connection, Collection]
      with /**
      * Collection constructor
      * @param name name of the collection
      * @param conn A MongooseConnection instance
      * @param opts optional collection options
      */
-ScalablyTyped.runtime.Instantiable3[/* name */ java.lang.String, /* conn */ Connection, /* opts */ js.Any, Collection] {
+org.scalablytyped.runtime.Instantiable3[/* name */ java.lang.String, /* conn */ Connection, /* opts */ js.Any, Collection] {
   /** Formatter for debug print args */
   @JSName("$format")
   def $format(arg: js.Any): java.lang.String = js.native

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait SetFilterFunctions
-  extends /* name */ ScalablyTyped.runtime.StringDictionary[SetFilterFunction]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[SetFilterFunction]
 

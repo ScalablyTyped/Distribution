@@ -241,7 +241,7 @@ class Transform[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
     from: scala.Double,
     to: js.UndefOr[scala.Nothing],
     `type`: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any]
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): this.type = js.native
   /**
      * Set the type of all textblocks (partly) between `from` and `to` to
@@ -260,7 +260,7 @@ class Transform[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
     from: scala.Double,
     to: scala.Double,
     `type`: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any]
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): this.type = js.native
   /**
      * Change the type, attributes, and/or marks of the node at `pos`.
@@ -279,7 +279,7 @@ class Transform[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
   def setNodeMarkup(
     pos: scala.Double,
     `type`: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any]
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): this.type = js.native
   /**
      * Change the type, attributes, and/or marks of the node at `pos`.
@@ -288,7 +288,7 @@ class Transform[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
   def setNodeMarkup(
     pos: scala.Double,
     `type`: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
-    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     marks: js.Array[prosemirrorDashModelLib.prosemirrorDashModelMod.Mark[S]]
   ): this.type = js.native
   /**

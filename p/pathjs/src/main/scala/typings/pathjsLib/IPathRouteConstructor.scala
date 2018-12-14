@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IPathRouteConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* path */ java.lang.String, IPathRoute]
+  extends org.scalablytyped.runtime.Instantiable1[/* path */ java.lang.String, IPathRoute]
 

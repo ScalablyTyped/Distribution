@@ -16,6 +16,6 @@ trait ElementsOptions extends js.Object {
   var paymentRequest: js.UndefOr[stripeDashV3Lib.stripeNs.paymentRequestNs.StripePaymentRequest] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[stripeDashV3Lib.Anon_PaymentRequestButton] = js.undefined
-  var value: js.UndefOr[java.lang.String | ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var value: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 

@@ -14,7 +14,7 @@ object runtimeModMembers extends js.Object {
   val specialAssetSig: /* c44067f5952c0a294b673a41bacd8c17 */ java.lang.String = js.native
   val specialSigKey: /* 4dabf18193072939515e22adb298388d */ java.lang.String = js.native
   val unknownValue: /* 04da6b54-80e4-46f7-96ec-b56ff0331ba9 */ java.lang.String = js.native
-  def allConfig(): ScalablyTyped.runtime.StringDictionary[java.lang.String] = js.native
+  def allConfig(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def computeCodePaths(): js.Promise[
     lodashLib.lodashMod.Global.Map[
       java.lang.String, 

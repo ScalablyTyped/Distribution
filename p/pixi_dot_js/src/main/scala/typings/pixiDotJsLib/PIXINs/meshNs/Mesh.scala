@@ -15,7 +15,7 @@ class Mesh protected ()
   def this(texture: pixiDotJsLib.PIXINs.Texture, vertices: stdLib.Float32Array, uvs: stdLib.Float32Array, indices: stdLib.Uint16Array) = this()
   def this(texture: pixiDotJsLib.PIXINs.Texture, vertices: stdLib.Float32Array, uvs: stdLib.Float32Array, indices: stdLib.Uint16Array, drawMode: scala.Double) = this()
   var _geometryVersion: scala.Double = js.native
-  var _glDatas: ScalablyTyped.runtime.NumberDictionary[js.Any] = js.native
+  var _glDatas: org.scalablytyped.runtime.NumberDictionary[js.Any] = js.native
   var _texture: pixiDotJsLib.PIXINs.Texture = js.native
   var _uvTransform: pixiDotJsLib.PIXINs.extrasNs.TextureMatrix = js.native
   var autoUpdate: scala.Boolean = js.native

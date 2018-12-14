@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("rsmq", JSImport.Namespace)
 @js.native
 object rsmqModMembers
-  extends ScalablyTyped.runtime.TopLevel[RedisSMQStatic]
+  extends org.scalablytyped.runtime.TopLevel[RedisSMQStatic]
 

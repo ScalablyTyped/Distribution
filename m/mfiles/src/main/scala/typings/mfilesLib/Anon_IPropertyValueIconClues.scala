@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IPropertyValueIconClues
-  extends ScalablyTyped.runtime.Instantiable0[IPropertyValueIconClues]
+  extends org.scalablytyped.runtime.Instantiable0[IPropertyValueIconClues]
 

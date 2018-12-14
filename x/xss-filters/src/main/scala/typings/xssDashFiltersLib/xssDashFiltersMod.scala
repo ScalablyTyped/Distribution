@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("xss-filters", JSImport.Namespace)
 @js.native
 object xssDashFiltersMod
-  extends ScalablyTyped.runtime.TopLevel[XSSFilters]
+  extends org.scalablytyped.runtime.TopLevel[XSSFilters]
 

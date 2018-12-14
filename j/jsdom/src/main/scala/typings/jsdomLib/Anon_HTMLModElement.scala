@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_HTMLModElement
-  extends ScalablyTyped.runtime.Instantiable0[stdLib.HTMLModElement]
+  extends org.scalablytyped.runtime.Instantiable0[stdLib.HTMLModElement]
 

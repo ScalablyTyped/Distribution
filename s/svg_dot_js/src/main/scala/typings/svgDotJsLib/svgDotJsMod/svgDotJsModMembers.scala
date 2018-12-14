@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("svg.js", JSImport.Namespace)
 @js.native
 object svgDotJsModMembers
-  extends ScalablyTyped.runtime.TopLevel[svgDotJsLib.svgDotJsMod.svgjsNs.Library]
+  extends org.scalablytyped.runtime.TopLevel[svgDotJsLib.svgDotJsMod.svgjsNs.Library]
 

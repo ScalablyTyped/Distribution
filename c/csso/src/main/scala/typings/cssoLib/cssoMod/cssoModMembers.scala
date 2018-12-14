@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("csso", JSImport.Namespace)
 @js.native
 object cssoModMembers
-  extends ScalablyTyped.runtime.TopLevel[Csso]
+  extends org.scalablytyped.runtime.TopLevel[Csso]
 

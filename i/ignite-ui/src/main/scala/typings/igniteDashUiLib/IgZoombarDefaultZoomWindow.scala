@@ -10,7 +10,7 @@ trait IgZoombarDefaultZoomWindow
   extends /**
 	 * Option for IgZoombarDefaultZoomWindow
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
   	 * The left component of the zoom window in percentages.
   	 *

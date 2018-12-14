@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait ICacheFirstConstructor
-  extends ScalablyTyped.runtime.Instantiable0[CacheFirst]
-     with ScalablyTyped.runtime.Instantiable1[/* options */ stdLib.Partial[ICacheFirstOptions], CacheFirst]
+  extends org.scalablytyped.runtime.Instantiable0[CacheFirst]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ stdLib.Partial[ICacheFirstOptions], CacheFirst]
 

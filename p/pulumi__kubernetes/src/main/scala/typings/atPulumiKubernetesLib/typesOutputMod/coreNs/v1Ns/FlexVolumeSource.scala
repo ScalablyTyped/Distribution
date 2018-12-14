@@ -23,7 +23,7 @@ trait FlexVolumeSource extends js.Object {
   /**
                * Optional: Extra command options if any.
                */
-  val options: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  val options: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
                * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
                * VolumeMounts.

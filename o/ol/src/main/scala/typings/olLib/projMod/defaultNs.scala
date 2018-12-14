@@ -272,7 +272,7 @@ object defaultNs extends js.Object {
        */
   @js.native
   object METERS_PER_UNIT
-    extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Double]
+    extends /* k */ org.scalablytyped.runtime.StringDictionary[scala.Double]
   
 }
 

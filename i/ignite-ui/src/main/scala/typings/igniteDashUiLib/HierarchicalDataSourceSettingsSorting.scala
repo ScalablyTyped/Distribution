@@ -10,5 +10,5 @@ trait HierarchicalDataSourceSettingsSorting
   extends /**
 	 * Option for HierarchicalDataSourceSettingsSorting
 	 */
-/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any]
+/* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

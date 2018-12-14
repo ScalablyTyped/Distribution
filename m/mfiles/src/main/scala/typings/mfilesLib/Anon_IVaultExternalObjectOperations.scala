@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IVaultExternalObjectOperations
-  extends ScalablyTyped.runtime.Instantiable0[IVaultExternalObjectOperations]
+  extends org.scalablytyped.runtime.Instantiable0[IVaultExternalObjectOperations]
 

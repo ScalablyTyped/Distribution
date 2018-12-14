@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ConstantsNs extends js.Object {
   
   trait Manifest
-    extends /* propName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+    extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     var android: js.UndefOr[expoLib.Anon_Config] = js.undefined
     var androidShowExponentNotificationInShellApp: js.UndefOr[scala.Boolean] = js.undefined
     var androidStatusBar: js.UndefOr[expoLib.Anon_BarStyle] = js.undefined
@@ -18,7 +18,7 @@ object ConstantsNs extends js.Object {
     var assetBundlePatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     var description: js.UndefOr[java.lang.String] = js.undefined
     var entryPoint: js.UndefOr[java.lang.String] = js.undefined
-    var extra: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+    var extra: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var facebookAppId: js.UndefOr[java.lang.String] = js.undefined
     var facebookDisplayName: js.UndefOr[java.lang.String] = js.undefined
     var facebookScheme: js.UndefOr[js.Any] = js.undefined

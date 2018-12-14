@@ -11,7 +11,7 @@ trait IRecord extends js.Object {
   /** True if this is an entry row */
   var bIsNewRow: scala.Boolean
   /** Please use SetProp and GetProp */
-  var properties: ScalablyTyped.runtime.StringDictionary[IPropertyBase]
+  var properties: org.scalablytyped.runtime.StringDictionary[IPropertyBase]
   /** Update the specified field with the specified value */
   def AddFieldValue(fieldKey: java.lang.String, value: js.Any): scala.Unit
   /** returns raw data value for the specified field */

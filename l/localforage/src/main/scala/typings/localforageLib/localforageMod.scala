@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("localforage", JSImport.Namespace)
 @js.native
 object localforageMod
-  extends ScalablyTyped.runtime.TopLevel[LocalForage]
+  extends org.scalablytyped.runtime.TopLevel[LocalForage]
 

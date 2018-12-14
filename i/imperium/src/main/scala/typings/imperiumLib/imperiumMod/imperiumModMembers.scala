@@ -20,7 +20,10 @@ object imperiumModMembers extends js.Object {
     context: Context
   ): java.lang.String = js.native
   def evaluateRouteActions(req: expressLib.expressMod.eNs.Request, action: js.Array[Action], context: Context): Actions = js.native
-  def evaluateUserAction(action: RoleParams, context: ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]]): ScalablyTyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
+  def evaluateUserAction(
+    action: RoleParams,
+    context: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  ): org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   def evaluateUserActions(req: expressLib.expressMod.eNs.Request, roles: js.Array[Role]): js.Promise[js.Array[Action]] = js.native
   def is(roleNames: java.lang.String): js.Promise[expressLib.expressMod.eNs.RequestHandler] = js.native
   def is(roleNames: js.Array[java.lang.String]): js.Promise[expressLib.expressMod.eNs.RequestHandler] = js.native

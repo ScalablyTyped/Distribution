@@ -13,5 +13,5 @@ trait orStatic
          *
          * @param args Each argument will be joined by OR
          */
-ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ java.lang.String | js.Object, or]
+org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ java.lang.String | js.Object, or]
 

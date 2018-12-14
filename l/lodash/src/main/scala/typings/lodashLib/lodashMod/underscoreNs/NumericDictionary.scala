@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait NumericDictionary[T]
-  extends /* index */ ScalablyTyped.runtime.NumberDictionary[T]
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[T]
 

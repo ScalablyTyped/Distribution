@@ -17,7 +17,7 @@ trait jsSHA
          * @param {{encoding: (string|undefined), numRounds: (string|undefined)}=}
          *   options Optional values
          */
-ScalablyTyped.runtime.Instantiable2[/* variant */ java.lang.String, /* inputFormat */ java.lang.String, jsSHA]
+org.scalablytyped.runtime.Instantiable2[/* variant */ java.lang.String, /* inputFormat */ java.lang.String, jsSHA]
      with /**
          * jsSHA is the workhorse of the library.  Instantiate it with the string to
          * be hashed as the parameter
@@ -28,7 +28,7 @@ ScalablyTyped.runtime.Instantiable2[/* variant */ java.lang.String, /* inputForm
          * @param {{encoding: (string|undefined), numRounds: (string|undefined)}=}
          *   options Optional values
          */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* variant */ java.lang.String, 
       /* inputFormat */ java.lang.String, 
       /* options */ Options, 

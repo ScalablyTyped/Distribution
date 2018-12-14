@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ZeroClipboardStatic
   extends ZeroClipboardCommon
-     with ScalablyTyped.runtime.Instantiable1[
+     with org.scalablytyped.runtime.Instantiable0[ZeroClipboardClient]
+     with org.scalablytyped.runtime.Instantiable1[
       (/* elements */ stdLib.Element) | (/* elements */ List[stdLib.Element]), 
       ZeroClipboardClient
-    ]
-     with ScalablyTyped.runtime.Instantiable0[ZeroClipboardClient] {
+    ] {
   /**
        * The version of the ZeroClipboard library being used, e.g. "2.0.0".
        * @type {string}

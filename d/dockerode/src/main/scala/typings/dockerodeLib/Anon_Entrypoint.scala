@@ -14,16 +14,16 @@ trait Anon_Entrypoint extends js.Object {
   var Domainname: java.lang.String
   var Entrypoint: js.UndefOr[js.Any] = js.undefined
   var Env: js.Array[java.lang.String]
-  var ExposedPorts: ScalablyTyped.runtime.StringDictionary[js.Object]
+  var ExposedPorts: org.scalablytyped.runtime.StringDictionary[js.Object]
   var Hostname: java.lang.String
   var Image: java.lang.String
-  var Labels: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var OnBuild: js.UndefOr[js.Any] = js.undefined
   var OpenStdin: scala.Boolean
   var StdinOnce: scala.Boolean
   var Tty: scala.Boolean
   var User: java.lang.String
-  var Volumes: ScalablyTyped.runtime.StringDictionary[js.Object]
+  var Volumes: org.scalablytyped.runtime.StringDictionary[js.Object]
   var WorkingDir: java.lang.String
 }
 

@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
  */
 @js.native
 trait ICacheableResponseConstructor
-  extends ScalablyTyped.runtime.Instantiable1[/* options */ stdLib.Partial[ICacheableResponseOptions], CacheableResponse]
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ stdLib.Partial[ICacheableResponseOptions], CacheableResponse]
 

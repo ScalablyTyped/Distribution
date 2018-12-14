@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait IndexedHours
-  extends /* hour */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  extends /* hour */ org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 

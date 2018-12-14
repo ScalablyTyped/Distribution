@@ -10,7 +10,7 @@ trait FirebaseClient
   extends /**
 	 * Creates a new FirebaseClient given the provided configuration
 	 */
-ScalablyTyped.runtime.Instantiable1[/* config */ FirebaseConfig, FirebaseClient] {
+org.scalablytyped.runtime.Instantiable1[/* config */ FirebaseConfig, FirebaseClient] {
   /**
   	 * Deletes the resource at a given path
   	 * @param path Relative path from the base for the resource

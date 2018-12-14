@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait AnyObject
   extends stdLib.Object
-     with /* index */ ScalablyTyped.runtime.StringDictionary[js.Any]
+     with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

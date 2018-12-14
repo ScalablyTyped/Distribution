@@ -14,7 +14,7 @@ trait RoomPositionConstructor
      * @param y Y position in the room.
      * @param roomName The room name.
      */
-ScalablyTyped.runtime.Instantiable3[
+org.scalablytyped.runtime.Instantiable3[
       /* x */ scala.Double, 
       /* y */ scala.Double, 
       /* roomName */ java.lang.String, 

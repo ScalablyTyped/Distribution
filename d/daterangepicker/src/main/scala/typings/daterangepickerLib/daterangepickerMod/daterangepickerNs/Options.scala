@@ -99,7 +99,9 @@ trait Options extends js.Object {
   /**
            * Set predefined date ranges the user can select from.Each key is the label for the range, and its value an array with two dates representing the bounds of the range.
            */
-  var ranges: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Tuple2[DateOrString, DateOrString]]] = js.undefined
+  var ranges: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[js.Tuple2[DateOrString, DateOrString]]
+  ] = js.undefined
   /**
            * Whether to show the 'Custom Range' label or just pre-defined ranges
            */

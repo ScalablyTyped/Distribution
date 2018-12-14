@@ -46,7 +46,7 @@ object IoTJobsDataPlaneNs extends js.Object {
   
   
   trait DetailsMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[DetailsValue]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[DetailsValue]
   
   
   trait GetPendingJobExecutionsRequest extends js.Object {
