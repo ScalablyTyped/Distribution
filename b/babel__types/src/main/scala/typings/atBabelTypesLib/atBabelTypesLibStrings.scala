@@ -445,6 +445,15 @@ object atBabelTypesLibStrings {
   sealed trait ParenthesizedExpression extends js.Object
   
   @js.native
+  sealed trait PipelineBareFunction extends js.Object
+  
+  @js.native
+  sealed trait PipelinePrimaryTopicReference extends js.Object
+  
+  @js.native
+  sealed trait PipelineTopicExpression extends js.Object
+  
+  @js.native
   sealed trait PrivateName extends js.Object
   
   @js.native
@@ -965,6 +974,9 @@ object atBabelTypesLibStrings {
   def OptionalCallExpression: OptionalCallExpression = "OptionalCallExpression".asInstanceOf[OptionalCallExpression]
   def OptionalMemberExpression: OptionalMemberExpression = "OptionalMemberExpression".asInstanceOf[OptionalMemberExpression]
   def ParenthesizedExpression: ParenthesizedExpression = "ParenthesizedExpression".asInstanceOf[ParenthesizedExpression]
+  def PipelineBareFunction: PipelineBareFunction = "PipelineBareFunction".asInstanceOf[PipelineBareFunction]
+  def PipelinePrimaryTopicReference: PipelinePrimaryTopicReference = "PipelinePrimaryTopicReference".asInstanceOf[PipelinePrimaryTopicReference]
+  def PipelineTopicExpression: PipelineTopicExpression = "PipelineTopicExpression".asInstanceOf[PipelineTopicExpression]
   def PrivateName: PrivateName = "PrivateName".asInstanceOf[PrivateName]
   def Program: Program = "Program".asInstanceOf[Program]
   def QualifiedTypeIdentifier: QualifiedTypeIdentifier = "QualifiedTypeIdentifier".asInstanceOf[QualifiedTypeIdentifier]

@@ -222,6 +222,47 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Makes a private skill available for enrolled users to enable on their devices.
+     */
+  def associateSkillWithUsers(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithUsersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Makes a private skill available for enrolled users to enable on their devices.
+     */
+  def associateSkillWithUsers(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithUsersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithUsersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Makes a private skill available for enrolled users to enable on their devices.
+     */
+  def associateSkillWithUsers(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithUsersRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithUsersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Makes a private skill available for enrolled users to enable on their devices.
+     */
+  def associateSkillWithUsers(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithUsersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithUsersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithUsersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Creates an address book with the specified details.
      */
   def createAddressBook(): awsDashSdkLib.libRequestMod.Request[
@@ -1139,6 +1180,49 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Makes a private skill unavailable for enrolled users and prevents them from enabling it on their devices.
+     */
+  def disassociateSkillFromUsers(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromUsersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Makes a private skill unavailable for enrolled users and prevents them from enabling it on their devices.
+     */
+  def disassociateSkillFromUsers(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromUsersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromUsersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Makes a private skill unavailable for enrolled users and prevents them from enabling it on their devices.
+     */
+  def disassociateSkillFromUsers(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromUsersRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromUsersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Makes a private skill unavailable for enrolled users and prevents them from enabling it on their devices.
+     */
+  def disassociateSkillFromUsers(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromUsersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromUsersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromUsersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

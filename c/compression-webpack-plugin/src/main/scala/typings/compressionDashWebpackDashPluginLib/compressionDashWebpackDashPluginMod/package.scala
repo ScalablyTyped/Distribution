@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object compressionDashWebpackDashPluginMod {
-  type CompressionPlugin = webpackLib.webpackMod.Plugin
+  type CompressionPlugin[O] = webpackLib.webpackMod.Plugin
 }

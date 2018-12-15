@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait SCBrokerServerOptions extends js.Object {
   var brokerControllerPath: js.UndefOr[java.lang.String] = js.undefined
-  var brokerOptions: js.UndefOr[js.Any] = js.undefined
+  var brokerOptions: js.UndefOr[socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var downgradeToUser: scala.Double | java.lang.String
   var expiryAccuracy: js.UndefOr[scala.Double] = js.undefined

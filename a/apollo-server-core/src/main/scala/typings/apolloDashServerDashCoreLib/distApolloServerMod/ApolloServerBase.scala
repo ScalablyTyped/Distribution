@@ -18,7 +18,9 @@ class ApolloServerBase protected () extends js.Object {
   var playgroundOptions: js.UndefOr[
     atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.RenderPageOptions
   ] = js.native
-  var plugins: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_] = js.native
+  var plugins: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+    apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
+  ] = js.native
   var requestOptions: stdLib.Partial[apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[_, _]] = js.native
   var schema: graphqlLib.graphqlMod.GraphQLSchema = js.native
   var schemaHash: js.Any = js.native
@@ -26,7 +28,7 @@ class ApolloServerBase protected () extends js.Object {
   var subscriptionServerOptions: js.UndefOr[apolloDashServerDashCoreLib.distTypesMod.SubscriptionServerOptions] = js.native
   var subscriptionsPath: js.UndefOr[java.lang.String] = js.native
   var uploadsConfig: js.UndefOr[apolloDashServerDashCoreLib.distTypesMod.FileUploadOptions] = js.native
-  def executeOperation(request: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequest): js.Promise[apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse] = js.native
+  def executeOperation(request: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequest): js.Promise[_] = js.native
   /* protected */ def graphQLServerOptions(): js.Promise[
     apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
   ] = js.native

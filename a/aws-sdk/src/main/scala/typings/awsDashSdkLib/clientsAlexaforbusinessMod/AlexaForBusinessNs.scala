@@ -112,6 +112,21 @@ object AlexaForBusinessNs extends js.Object {
   trait AssociateSkillWithSkillGroupResponse extends js.Object
   
   
+  trait AssociateSkillWithUsersRequest extends js.Object {
+    /**
+         * The ARN of the organization.
+         */
+    var OrganizationArn: js.UndefOr[Arn] = js.undefined
+    /**
+         * The private skill ID you want to make available to enrolled users.&gt;
+         */
+    var SkillId: SkillId
+  }
+  
+  
+  trait AssociateSkillWithUsersResponse extends js.Object
+  
+  
   trait AuthorizationResult
     extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
   
@@ -906,6 +921,21 @@ object AlexaForBusinessNs extends js.Object {
   trait DisassociateSkillFromSkillGroupResponse extends js.Object
   
   
+  trait DisassociateSkillFromUsersRequest extends js.Object {
+    /**
+         * The ARN of the organization.
+         */
+    var OrganizationArn: js.UndefOr[Arn] = js.undefined
+    /**
+         *  The private skill ID you want to make unavailable for enrolled users.
+         */
+    var SkillId: SkillId
+  }
+  
+  
+  trait DisassociateSkillFromUsersResponse extends js.Object
+  
+  
   trait DisassociateSkillGroupFromRoomRequest extends js.Object {
     /**
          * The ARN of the room from which the skill group is to be disassociated. Required.
@@ -1189,15 +1219,15 @@ object AlexaForBusinessNs extends js.Object {
          */
     var EnablementType: js.UndefOr[EnablementTypeFilter] = js.undefined
     /**
-         * The maximum number of results to include in the response. If more results exist than the specified MaxResults value, a token is included in the response so that the remaining results can be retrieved. Required.
+         * The maximum number of results to include in the response. If more results exist than the specified MaxResults value, a token is included in the response so that the remaining results can be retrieved.
          */
     var MaxResults: js.UndefOr[SkillListMaxResults] = js.undefined
     /**
-         * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults. Required.
+         * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults.
          */
     var NextToken: js.UndefOr[NextToken] = js.undefined
     /**
-         * The ARN of the skill group for which to list enabled skills. Required.
+         * The ARN of the skill group for which to list enabled skills.
          */
     var SkillGroupArn: js.UndefOr[Arn] = js.undefined
     /**
@@ -2276,6 +2306,35 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateSkillWithSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Makes a private skill available for enrolled users to enable on their devices.
+       */
+    def associateSkillWithUsers(): awsDashSdkLib.libRequestMod.Request[AssociateSkillWithUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Makes a private skill available for enrolled users to enable on their devices.
+       */
+    def associateSkillWithUsers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociateSkillWithUsersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociateSkillWithUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Makes a private skill available for enrolled users to enable on their devices.
+       */
+    def associateSkillWithUsers(params: AssociateSkillWithUsersRequest): awsDashSdkLib.libRequestMod.Request[AssociateSkillWithUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Makes a private skill available for enrolled users to enable on their devices.
+       */
+    def associateSkillWithUsers(
+      params: AssociateSkillWithUsersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociateSkillWithUsersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociateSkillWithUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Creates an address book with the specified details.
        */
     def createAddressBook(): awsDashSdkLib.libRequestMod.Request[CreateAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2913,6 +2972,35 @@ object AlexaForBusinessNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DisassociateSkillFromSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Makes a private skill unavailable for enrolled users and prevents them from enabling it on their devices.
+       */
+    def disassociateSkillFromUsers(): awsDashSdkLib.libRequestMod.Request[DisassociateSkillFromUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Makes a private skill unavailable for enrolled users and prevents them from enabling it on their devices.
+       */
+    def disassociateSkillFromUsers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociateSkillFromUsersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociateSkillFromUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Makes a private skill unavailable for enrolled users and prevents them from enabling it on their devices.
+       */
+    def disassociateSkillFromUsers(params: DisassociateSkillFromUsersRequest): awsDashSdkLib.libRequestMod.Request[DisassociateSkillFromUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Makes a private skill unavailable for enrolled users and prevents them from enabling it on their devices.
+       */
+    def disassociateSkillFromUsers(
+      params: DisassociateSkillFromUsersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociateSkillFromUsersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociateSkillFromUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Disassociates a skill group from a specified room. This disables all skills in the skill group on all devices in the room.
        */

@@ -31,7 +31,5 @@ object router5ModMembers extends js.Object {
     options: stdLib.Partial[router5Lib.createDashRouterMod.Options],
     dependencies: router5Lib.createDashRouterMod.Dependencies
   ): router5Lib.createDashRouterMod.Router = js.native
-  def transitionPath(toState: js.Any): router5DashTransitionDashPathLib.router5DashTransitionDashPathMod.TransitionPath = js.native
-  def transitionPath(toState: js.Any, fromState: js.Any): router5DashTransitionDashPathLib.router5DashTransitionDashPathMod.TransitionPath = js.native
 }
 

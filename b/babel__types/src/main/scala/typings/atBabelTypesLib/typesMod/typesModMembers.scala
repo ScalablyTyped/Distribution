@@ -993,6 +993,12 @@ object typesModMembers extends js.Object {
   def isPattern(node: js.Object, opts: js.Object): /* is Pattern */scala.Boolean = js.native
   def isPatternLike(node: js.Object): /* is PatternLike */scala.Boolean = js.native
   def isPatternLike(node: js.Object, opts: js.Object): /* is PatternLike */scala.Boolean = js.native
+  def isPipelineBareFunction(node: js.Object): /* is PipelineBareFunction */scala.Boolean = js.native
+  def isPipelineBareFunction(node: js.Object, opts: js.Object): /* is PipelineBareFunction */scala.Boolean = js.native
+  def isPipelinePrimaryTopicReference(node: js.Object): /* is PipelinePrimaryTopicReference */scala.Boolean = js.native
+  def isPipelinePrimaryTopicReference(node: js.Object, opts: js.Object): /* is PipelinePrimaryTopicReference */scala.Boolean = js.native
+  def isPipelineTopicExpression(node: js.Object): /* is PipelineTopicExpression */scala.Boolean = js.native
+  def isPipelineTopicExpression(node: js.Object, opts: js.Object): /* is PipelineTopicExpression */scala.Boolean = js.native
   def isPrivate(node: js.Object): /* is Private */scala.Boolean = js.native
   def isPrivate(node: js.Object, opts: js.Object): /* is Private */scala.Boolean = js.native
   def isPrivateName(node: js.Object): /* is PrivateName */scala.Boolean = js.native
@@ -1745,6 +1751,9 @@ object typesModMembers extends js.Object {
   ): OptionalMemberExpression = js.native
   def optionalMemberExpression(`object`: Expression, property: js.Any, computed: scala.Boolean, optional: scala.Boolean): OptionalMemberExpression = js.native
   def parenthesizedExpression(expression: Expression): ParenthesizedExpression = js.native
+  def pipelineBareFunction(callee: Expression): PipelineBareFunction = js.native
+  def pipelinePrimaryTopicReference(): PipelinePrimaryTopicReference = js.native
+  def pipelineTopicExpression(expression: Expression): PipelineTopicExpression = js.native
   def privateName(id: Identifier): PrivateName = js.native
   def program(body: js.Array[Statement]): Program = js.native
   def program(body: js.Array[Statement], directives: js.Array[Directive]): Program = js.native

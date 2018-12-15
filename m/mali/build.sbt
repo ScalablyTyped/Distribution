@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mali"
-version := "0.10.2-f6275b"
+version := "0.10.2-466113"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -21,6 +21,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash_dot_upperfirst" % "4.3-dt-20180910Z-2d90db",
   "org.scalablytyped" %%% "lodash_dot_values" % "4.3-dt-20180910Z-7a66ef",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180910Z-153ce0",
+  "org.scalablytyped" %%% "mali-compose" % "1.1-dt-20181120Z-5c6d9a",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
   "org.scalablytyped" %%% "p-map" % "1.1-dt-20180910Z-9a84f5",
   "org.scalablytyped" %%% "pify" % "3.0.0-dt-20180910Z-307b85",

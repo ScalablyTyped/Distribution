@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("mem-fs", JSImport.Namespace)
 @js.native
 object memDashFsModMembers extends js.Object {
-  def create(args: js.Any*): Store = js.native
+  def create(): Store = js.native
 }
 

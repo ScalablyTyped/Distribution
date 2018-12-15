@@ -775,6 +775,7 @@ trait Static extends js.Object {
            * of the condition predicate.
            */
   def ifElse(fn: Pred, onTrue: Arity1Fn, onFalse: Arity1Fn): Arity1Fn = js.native
+  def ifElse(fn: Pred, onTrue: Arity2Fn, onFalse: Arity2Fn): Arity2Fn = js.native
   /**
            * Increments its argument.
            */

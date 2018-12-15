@@ -30,7 +30,10 @@ trait SCBrokerServer
   @JSName("on")
   def on_exit(
     event: scDashBrokerLib.scDashBrokerLibStrings.exit,
-    listener: js.Function1[/* data */ js.Any, scala.Unit]
+    listener: js.Function1[
+      /* data */ socketclusterLib.socketclusterMod.SocketClusterNs.WorkerExitInfo, 
+      scala.Unit
+    ]
   ): this.type = js.native
   @JSName("on")
   def on_ready(

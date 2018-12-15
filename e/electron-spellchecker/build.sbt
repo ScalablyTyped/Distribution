@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "electron-spellchecker"
-version := "1.1-dt-20181018Z-768e7b"
+version := "1.1-dt-20181018Z-310932"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "electron" % "3.0.11-dbf742",
+  "org.scalablytyped" %%% "electron" % "3.0.12-dbf742",
   "org.scalablytyped" %%% "extract-zip" % "1.6-dt-20180910Z-6a4b04",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
   "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")

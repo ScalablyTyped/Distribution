@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("compression-webpack-plugin", JSImport.Namespace)
 @js.native
-class namespaced () extends CompressionPlugin {
-  def this(options: compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginMod.CompressionPluginNs.Options) = this()
+class namespaced[O] () extends CompressionPlugin[O] {
+  def this(options: compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginMod.CompressionPluginNs.Options[O]) = this()
 }
 

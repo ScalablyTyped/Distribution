@@ -266,7 +266,7 @@ trait Editor extends OptionProvider {
   /**
            * Returns `true` if the current `textInput` is in focus.
           **/
-  def isFocused(): scala.Unit = js.native
+  def isFocused(): scala.Boolean = js.native
   /**
            * Indicates if the entire row is currently visible on the screen.
            * @param row The row to check

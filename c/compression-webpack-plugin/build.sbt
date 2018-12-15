@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "compression-webpack-plugin"
-version := "0.4-dt-20180910Z-0069ae"
+version := "2.0-dt-20181215Z-695efb"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
