@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ReactDatesNs {
-  // SHAPES    
+  // SHAPES
   //
   // shapes/AnchorDirectionShape.js
   type AnchorDirectionShape = reactDashDatesLib.reactDashDatesLibStrings.left | reactDashDatesLib.reactDashDatesLibStrings.right
   // shapes/CalendarInfoPositionShape.js
   type CalendarInfoPositionShape = reactDashDatesLib.reactDashDatesLibStrings.top | reactDashDatesLib.reactDashDatesLibStrings.bottom | reactDashDatesLib.reactDashDatesLibStrings.before | reactDashDatesLib.reactDashDatesLibStrings.after
   // COMPONENTS
-  // 
+  //
   // components/DateRangePicker.js
   type DateRangePicker = reactLib.reactMod.ReactNs.ClassicComponentClass[DateRangePickerShape]
   // shapes/DayOfWeekShape.js

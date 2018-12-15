@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dates"
-version := "v17.1.0-dt-20181203Z-b3229f"
+version := "v17.1.0-dt-20181214Z-93e9df"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

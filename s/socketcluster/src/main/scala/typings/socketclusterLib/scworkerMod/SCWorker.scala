@@ -15,7 +15,7 @@ trait SCWorker
   val EVENT_WARNING: socketclusterLib.socketclusterLibStrings.warning = js.native
   val MIDDLEWARE_START: socketclusterLib.socketclusterLibStrings.start = js.native
   var auth: scDashAuthLib.scDashAuthMod.SCAuthEngine = js.native
-  var exchange: js.Any = js.native
+  var exchange: scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.SCExchange = js.native
   var httpServer: nodeLib.httpMod.Server | nodeLib.httpsMod.Server = js.native
   var id: scala.Double = js.native
   var isLeader: scala.Boolean = js.native

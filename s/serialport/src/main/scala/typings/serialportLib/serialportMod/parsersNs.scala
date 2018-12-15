@@ -21,7 +21,7 @@ object parsersNs extends js.Object {
   @js.native
   class Delimiter protected ()
     extends serialportLib.serialportMod.SerialPortNs.parsersNs.Delimiter {
-    def this(options: serialportLib.Anon_Delimiter) = this()
+    def this(options: serialportLib.Anon_DelimiterIncludeDelimiter) = this()
   }
   
   @js.native
@@ -33,7 +33,7 @@ object parsersNs extends js.Object {
   @js.native
   class Ready protected ()
     extends serialportLib.serialportMod.SerialPortNs.parsersNs.Ready {
-    def this(options: serialportLib.Anon_Data) = this()
+    def this(options: serialportLib.Anon_Delimiter) = this()
   }
   
   @js.native

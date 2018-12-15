@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-map-gl"
-version := "4.0-dt-20181126Z-20a591"
+version := "4.0-dt-20181126Z-71422a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-eb24f4",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-413c9e",
-  "org.scalablytyped" %%% "mapbox-gl" % "v0.51.0-dt-20181213Z-ca04c5",
+  "org.scalablytyped" %%% "mapbox-gl" % "v0.51.0-dt-20181214Z-8e9011",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-32d5ea",
   "org.scalablytyped" %%% "react" % "16.7-dt-20181213Z-7d04f8",
   "org.scalablytyped" %%% "std" % "3.2.2-beaa2f")

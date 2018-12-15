@@ -1,5 +1,0 @@
-[debug] PhaseRunner.scala:78 Success [id => react-japgolly-contrib, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => react-japgolly-contrib, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [react-contrib => Compilation failed] [id => react-japgolly-contrib, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [react-contrib => Compilation failed] [id => react-japgolly-contrib, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [react-contrib => Compilation failed] [id => react-japgolly-contrib, phase => publish] 

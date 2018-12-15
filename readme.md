@@ -2,10 +2,26 @@
 
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
-This is the home of Scala.js typings for **5793** Javascript libraries,
+This is the home of Scala.js typings for **5795** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
-This should make it one of the biggest Scala repos on the planet with millions of lines of code
+This should make it one of the biggest Scala repos on the planet:
+```
+
+--------------------------------------------------------------------------------
+ Language             Files        Lines        Blank      Comment         Code
+--------------------------------------------------------------------------------
+ Scala               170379      7050940       724335      2456617      3869988
+ Markdown              5526       213220        34866            0       178354
+ JSON                     3           19            0            0           19
+ Makefile                 2           26            7            0           19
+ HTML                     1            6            0            0            6
+--------------------------------------------------------------------------------
+ Total               175911      7264211       759208      2456617      4048386
+--------------------------------------------------------------------------------
+
+```
+
 
 ## Typing?
 Javascript is infamously unityped. Given a library function like this:
@@ -67,7 +83,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201812141113")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201812150109")
 ```
 
 ### `build.sbt`
@@ -99,7 +115,8 @@ As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
 For now we just have the following contrib-libs:
-
+- [react](contrib/react)
+- [react-japgolly](contrib/react-japgolly)
 
 These libraries can depend both on typings and external libraries, and
  will be versioned and published alongside ScalablyTyped typings.

@@ -1,6 +1,6 @@
 name := "sbt-ScalablyTyped"
 organization := "org.scalablytyped"
-version := "201812141113"
+version := "201812150109"
 sbtPlugin := true
 scalaVersion := "2.12.7"
 bintrayRepository := "ScalablyTyped"

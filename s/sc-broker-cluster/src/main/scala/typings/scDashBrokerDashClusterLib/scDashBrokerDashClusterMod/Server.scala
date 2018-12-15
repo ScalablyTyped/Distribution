@@ -15,10 +15,7 @@ class Server protected ()
   @JSName("on")
   def on_brokerExit(
     event: scDashBrokerDashClusterLib.scDashBrokerDashClusterLibStrings.brokerExit,
-    listener: js.Function1[
-      /* brokerInfo */ socketclusterLib.socketclusterMod.SocketClusterNs.BrokerExitInfo, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* brokerInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_brokerMessage(
@@ -33,10 +30,7 @@ class Server protected ()
   @JSName("on")
   def on_brokerStart(
     event: scDashBrokerDashClusterLib.scDashBrokerDashClusterLibStrings.brokerStart,
-    listener: js.Function1[
-      /* brokerInfo */ socketclusterLib.socketclusterMod.SocketClusterNs.BrokerStartInfo, 
-      scala.Unit
-    ]
+    listener: js.Function1[/* brokerInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_error(
