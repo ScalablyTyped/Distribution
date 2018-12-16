@@ -18,6 +18,10 @@ trait TracerOptions extends js.Object {
        */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
+       * Set an application’s environment e.g. prod, pre-prod, stage.
+       */
+  var env: js.UndefOr[java.lang.String] = js.undefined
+  /**
        * Experimental features can be enabled all at once by using true or individually using key / value pairs.
        * @default {}
        */

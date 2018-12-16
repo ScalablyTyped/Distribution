@@ -8,11 +8,14 @@ import scala.scalajs.js.annotation._
 
 trait ApolloServerPlugin extends js.Object {
   var requestDidStart: js.UndefOr[
-    js.Function1[/* requestContext */ js.Any, GraphQLRequestListener[_] | scala.Unit]
+    js.Function1[
+      /* requestContext */ apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[_], 
+      GraphQLRequestListener[_] | scala.Unit
+    ]
   ] = js.undefined
   var serverWillStart: js.UndefOr[
     js.Function1[
-      /* service */ js.Any, 
+      /* service */ apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLServiceContext, 
       apolloDashServerDashPluginDashBaseLib.ValueOrPromise[scala.Unit]
     ]
   ] = js.undefined

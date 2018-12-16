@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object proxyNs {
   type Filter = js.Function2[
-    /* pathanme */ java.lang.String, 
+    /* pathname */ java.lang.String, 
     /* req */ nodeLib.httpMod.IncomingMessage, 
     scala.Boolean
   ]

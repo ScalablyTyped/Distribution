@@ -10,12 +10,18 @@ import scala.scalajs.js.annotation._
 class Store () extends js.Object {
   var componentsByName: js.Any = js.native
   var propsById: js.Any = js.native
-  def cleanId(id: java.lang.String): scala.Unit = js.native
-  def getComponentClassForName(componentName: java.lang.String): js.Any = js.native
-  def getComponentClassForName(componentName: scala.Double): js.Any = js.native
+  def cleanId(componentId: java.lang.String): scala.Unit = js.native
+  def getComponentClassForName(componentName: java.lang.String): js.Function0[reactLib.reactMod.ReactNs.ComponentClass[_, _]] = js.native
+  def getComponentClassForName(componentName: scala.Double): js.Function0[reactLib.reactMod.ReactNs.ComponentClass[_, _]] = js.native
   def getPropsForId(componentId: java.lang.String): js.Any = js.native
-  def setComponentClassForName(componentName: java.lang.String, ComponentClass: js.Any): scala.Unit = js.native
-  def setComponentClassForName(componentName: scala.Double, ComponentClass: js.Any): scala.Unit = js.native
+  def setComponentClassForName(
+    componentName: java.lang.String,
+    ComponentClass: js.Function0[reactLib.reactMod.ReactNs.ComponentClass[_, _]]
+  ): scala.Unit = js.native
+  def setComponentClassForName(
+    componentName: scala.Double,
+    ComponentClass: js.Function0[reactLib.reactMod.ReactNs.ComponentClass[_, _]]
+  ): scala.Unit = js.native
   def setPropsForId(componentId: java.lang.String, props: js.Any): scala.Unit = js.native
 }
 

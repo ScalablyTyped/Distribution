@@ -11,18 +11,18 @@ trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
     apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
   ] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
-  var extensions: js.UndefOr[apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[js.Function0[_]]] = js.undefined
+  var extensions: js.UndefOr[
+    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
+    ]
+  ] = js.undefined
   var fieldResolver: js.UndefOr[
     graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined
   var formatError: js.UndefOr[coreDashJsLib.Function] = js.undefined
   var formatResponse: js.UndefOr[coreDashJsLib.Function] = js.undefined
   var persistedQueries: js.UndefOr[apolloDashServerDashCoreLib.distGraphqlOptionsMod.PersistedQueryOptions] = js.undefined
-  var plugins: js.UndefOr[
-    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
-      apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
-    ]
-  ] = js.undefined
+  var plugins: js.UndefOr[apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_]] = js.undefined
   var rootValue: js.UndefOr[
     (js.Function1[/* document */ graphqlLib.languageAstMod.DocumentNode, _]) | js.Any
   ] = js.undefined

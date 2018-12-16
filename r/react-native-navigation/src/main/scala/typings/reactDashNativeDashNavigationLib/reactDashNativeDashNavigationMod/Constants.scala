@@ -14,6 +14,6 @@ class Constants protected ()
 @js.native
 object Constants extends js.Object {
   var instance: js.Any = js.native
-  def get(): js.Promise[_] = js.native
+  def get(): js.Promise[reactDashNativeDashNavigationLib.libDistAdaptersConstantsMod.NavigationConstants] = js.native
 }
 

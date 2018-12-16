@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("react-native-navigation/lib/dist/Navigation", "Navigation")
+@JSImport("react-native-navigation/lib/dist/Navigation", "NavigationRoot")
 @js.native
-class Navigation () extends js.Object {
+class NavigationRoot () extends js.Object {
   val Element: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashNavigationLib.Anon_ElementId] = js.native
   val TouchablePreview: reactLib.reactMod.ReactNs.ComponentType[_] = js.native
   val commands: js.Any = js.native
@@ -110,7 +110,16 @@ class Navigation () extends js.Object {
        */
   def registerComponent(
     componentName: java.lang.String,
-    getComponentClassFunc: reactDashNativeLib.reactDashNativeMod.ComponentProvider
+    componentProvider: reactDashNativeLib.reactDashNativeMod.ComponentProvider
+  ): reactDashNativeLib.reactDashNativeMod.ComponentProvider = js.native
+  /**
+       * Every navigation component in your app must be registered with a unique name.
+       * The component itself is a traditional React component extending React.Component.
+       */
+  def registerComponent(
+    componentName: java.lang.String,
+    componentProvider: reactDashNativeLib.reactDashNativeMod.ComponentProvider,
+    concreteComponentProvider: reactDashNativeLib.reactDashNativeMod.ComponentProvider
   ): reactDashNativeLib.reactDashNativeMod.ComponentProvider = js.native
   /**
        * Every navigation component in your app must be registered with a unique name.
@@ -118,7 +127,16 @@ class Navigation () extends js.Object {
        */
   def registerComponent(
     componentName: scala.Double,
-    getComponentClassFunc: reactDashNativeLib.reactDashNativeMod.ComponentProvider
+    componentProvider: reactDashNativeLib.reactDashNativeMod.ComponentProvider
+  ): reactDashNativeLib.reactDashNativeMod.ComponentProvider = js.native
+  /**
+       * Every navigation component in your app must be registered with a unique name.
+       * The component itself is a traditional React component extending React.Component.
+       */
+  def registerComponent(
+    componentName: scala.Double,
+    componentProvider: reactDashNativeLib.reactDashNativeMod.ComponentProvider,
+    concreteComponentProvider: reactDashNativeLib.reactDashNativeMod.ComponentProvider
   ): reactDashNativeLib.reactDashNativeMod.ComponentProvider = js.native
   /**
        * Utility helper function like registerComponent,

@@ -1,24 +1,23 @@
 organization := "org.scalablytyped"
 name := "apollo-server-express"
-version := "2.3.1-30f989"
+version := "2.3.1-6355e3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20180910Z-5e1aa3",
-  "org.scalablytyped" %%% "apollo-cache-control" % "0.4.0-f77582",
+  "org.scalablytyped" %%% "apollo-cache-control" % "0.4.0-52e4bf",
   "org.scalablytyped" %%% "apollo-datasource" % "0.2.1-71febc",
-  "org.scalablytyped" %%% "apollo-engine-reporting" % "0.2.0-fb315c",
+  "org.scalablytyped" %%% "apollo-engine-reporting" % "0.2.0-900e32",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.0-c1f915",
   "org.scalablytyped" %%% "apollo-env" % "0.2.5-6ccb23",
   "org.scalablytyped" %%% "apollo-link" % "1.2.4-b0ec7c",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.2.1-33c37f",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.3.1-b2f444",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.3.1-279078",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-360fbe",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.0-7ac9fb",
-  "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.2.1-d44f7f",
-  "org.scalablytyped" %%% "apollo-tracing" % "0.4.0-eaac63",
+  "org.scalablytyped" %%% "apollo-tracing" % "0.4.0-3917b9",
   "org.scalablytyped" %%% "apollo-utilities" % "1.0.26-062b35",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.9-ba95be",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.6-b2d41e",
@@ -33,6 +32,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.16-dt-20180910Z-50ee2c",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-a97c36",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-6c0a30",
+  "org.scalablytyped" %%% "graphql-extensions" % "0.4.0-035c87",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.0.0-11da4c",
   "org.scalablytyped" %%% "graphql-tag" % "2.10.0-1c61be",
   "org.scalablytyped" %%% "graphql-tools" % "4.0.3-cda9bc",

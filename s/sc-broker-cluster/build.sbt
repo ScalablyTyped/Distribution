@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sc-broker-cluster"
-version := "6.1-dt-20181205Z-76e05e"
+version := "6.1-dt-20181205Z-8b3a5b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,6 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
   "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181205Z-ffc9d2",
   "org.scalablytyped" %%% "sc-broker" % "5.1-dt-20181205Z-aeed2a",
-  "org.scalablytyped" %%% "sc-channel" % "1.2-dt-20181205Z-47c53d",
   "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20181205Z-07c718",
   "org.scalablytyped" %%% "socketcluster-server" % "13.1-dt-20181205Z-c55c9f",
   "org.scalablytyped" %%% "std" % "3.2.2-beaa2f",

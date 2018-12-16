@@ -11,6 +11,7 @@ trait PluginContext extends js.Object {
   @JSName("isExternal")
   var isExternal_Original: IsExternal = js.native
   var meta: PluginContextMeta = js.native
+  var moduleIds: nodeLib.IterableIterator[java.lang.String] = js.native
   @JSName("resolveId")
   var resolveId_Original: ResolveIdHook = js.native
   // TODO deprecate:
@@ -24,6 +25,7 @@ trait PluginContext extends js.Object {
   def error(err: RollupError): scala.Unit = js.native
   def error(err: RollupError, pos: rollupLib.Anon_Column): scala.Unit = js.native
   def getAssetFileName(assetId: java.lang.String): java.lang.String = js.native
+  def getModuleInfo(moduleId: java.lang.String): rollupLib.Anon_IsExternal = js.native
   def isExternal(id: java.lang.String, parentId: java.lang.String, isResolved: scala.Boolean): scala.Boolean | scala.Unit = js.native
   def parse(input: java.lang.String, options: js.Any): estreeLib.estreeMod.Program = js.native
   def resolveId(`this`: PluginContext, id: java.lang.String, parent: java.lang.String): (js.Promise[java.lang.String | scala.Boolean | scala.Unit | scala.Null]) | java.lang.String | scala.Boolean | scala.Unit | scala.Null = js.native

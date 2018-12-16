@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-navigation"
-version := "2.2.1-5dde42"
+version := "2.2.5-72163d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

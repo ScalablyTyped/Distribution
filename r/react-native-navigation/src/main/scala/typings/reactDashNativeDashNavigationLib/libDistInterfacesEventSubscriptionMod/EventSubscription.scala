@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait EventSubscription extends js.Object {
-  def remove(): js.Any
+  def remove(): scala.Unit
 }
 

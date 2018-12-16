@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-dev-server"
-version := "3.1-dt-20180917Z-0b371a"
+version := "3.1-dt-20180917Z-d953a6"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.16-dt-20180910Z-50ee2c",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-a97c36",
   "org.scalablytyped" %%% "http-proxy" % "1.16-dt-20180910Z-da220e",
-  "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20181120Z-7a33bc",
+  "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20181216Z-0f7aaa",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-1d49f8",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181208Z-481dd9",

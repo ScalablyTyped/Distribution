@@ -16,7 +16,7 @@ trait InputOptions extends js.Object {
   var entry: js.UndefOr[java.lang.String] = js.undefined
   var experimentalCacheExpiry: js.UndefOr[scala.Double] = js.undefined
   var experimentalCodeSplitting: js.UndefOr[scala.Boolean] = js.undefined
-  var experimentalDynamicImport: js.UndefOr[scala.Boolean] = js.undefined
+  var experimentalOptimizeChunks: js.UndefOr[scala.Boolean] = js.undefined
   var experimentalPreserveModules: js.UndefOr[scala.Boolean] = js.undefined
   var experimentalTopLevelAwait: js.UndefOr[scala.Boolean] = js.undefined
   var external: js.UndefOr[ExternalOption] = js.undefined
@@ -28,7 +28,6 @@ trait InputOptions extends js.Object {
     java.lang.String | (js.Function1[/* id */ java.lang.String, java.lang.String]) | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
   var onwarn: js.UndefOr[WarningHandler] = js.undefined
-  var optimizeChunks: js.UndefOr[scala.Boolean] = js.undefined
   var perf: js.UndefOr[scala.Boolean] = js.undefined
   var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
   var preferConst: js.UndefOr[scala.Boolean] = js.undefined
