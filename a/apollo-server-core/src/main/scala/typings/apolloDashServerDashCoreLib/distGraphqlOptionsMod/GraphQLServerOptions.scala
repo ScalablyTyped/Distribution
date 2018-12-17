@@ -25,7 +25,11 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var formatError: js.UndefOr[coreDashJsLib.Function] = js.undefined
   var formatResponse: js.UndefOr[coreDashJsLib.Function] = js.undefined
   var persistedQueries: js.UndefOr[PersistedQueryOptions] = js.undefined
-  var plugins: js.UndefOr[apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_]] = js.undefined
+  var plugins: js.UndefOr[
+    apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
+      apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseMod.ApolloServerPlugin
+    ]
+  ] = js.undefined
   var rootValue: js.UndefOr[
     (js.Function1[/* parsedQuery */ graphqlLib.languageAstMod.DocumentNode, TRootValue]) | TRootValue
   ] = js.undefined

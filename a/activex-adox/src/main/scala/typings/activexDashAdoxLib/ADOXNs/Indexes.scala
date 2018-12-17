@@ -13,11 +13,11 @@ trait Indexes extends js.Object {
   def apply(Item: java.lang.String): Index = js.native
   def apply(Item: scala.Double): Index = js.native
   def Append(Item: Index): scala.Unit = js.native
+  def Append(Item: Index, Columns: activexDashInteropLib.SafeArray[java.lang.String]): scala.Unit = js.native
   def Append(Item: Index, Columns: java.lang.String): scala.Unit = js.native
-  def Append(Item: Index, Columns: stdLib.SafeArray[java.lang.String]): scala.Unit = js.native
   def Append(Item: java.lang.String): scala.Unit = js.native
+  def Append(Item: java.lang.String, Columns: activexDashInteropLib.SafeArray[java.lang.String]): scala.Unit = js.native
   def Append(Item: java.lang.String, Columns: java.lang.String): scala.Unit = js.native
-  def Append(Item: java.lang.String, Columns: stdLib.SafeArray[java.lang.String]): scala.Unit = js.native
   def Delete(Item: java.lang.String): scala.Unit = js.native
   def Delete(Item: scala.Double): scala.Unit = js.native
   def Item(Item: java.lang.String): Index = js.native

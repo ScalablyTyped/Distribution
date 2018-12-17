@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sc-broker/scbroker", JSImport.Namespace)
 @js.native
 class namespaced () extends SCBroker {
-  def this(options: js.Any) = this()
+  def this(options: socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions) = this()
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.3-056f8b"
+version := "3.1.3-70ff11"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -26,6 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "getos" % "3.0-dt-20180910Z-0bceb0",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-274633",
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180910Z-3a9571",
+  "org.scalablytyped" %%% "is-installed-globally" % "0.1-dt-20181217Z-33c4c8",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20181214Z-7b71e9",
   "org.scalablytyped" %%% "lazy-ass" % "1.6.0-aac949",
   "org.scalablytyped" %%% "listr" % "0.13-dt-20180910Z-ca3ef0",

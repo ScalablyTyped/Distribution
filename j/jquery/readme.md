@@ -31,9 +31,9 @@
 // tslint:disable:jsdoc-format
 // tslint:disable:max-line-length
 // tslint:disable:no-irregular-whitespace
+// tslint:disable:no-irregular-whitespace
+// tslint:disable-next-line:no-empty-interface
 // tslint:disable:jsdoc-format
 // tslint:disable:max-line-length
 // tslint:disable:no-irregular-whitespace
-// tslint:disable:no-irregular-whitespace
-// tslint:disable-next-line:no-empty-interface
 ```

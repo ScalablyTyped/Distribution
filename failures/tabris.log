@@ -1,9 +1,9 @@
-[debug] PhaseRunner.scala:78 Success [id => tabris, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => tabris, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => tabris, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/tabris/tabris.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/tabris),TsIdentLibrarySimple(tabris)),TsIdentModule(None,List(tabris))) [id => tabris, phase => typescript] 
+[debug] PhaseRunner.scala:81 Success [id => tabris, phase => typescript] 
+[debug] PhaseRunner.scala:81 Success [id => tabris, phase => typescript] 
+[debug] PhaseRunner.scala:81 Success [id => tabris, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:153 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/tabris/tabris.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/tabris),TsIdentLibrarySimple(tabris)),TsIdentModule(None,List(tabris))) [id => tabris, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(tabris)) [id => tabris, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(tabris) [id => tabris, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(tabris) [id => tabris, phase => typescript] 
 [warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(NativeObject))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(Properties) / TsTypeParam() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(Widget))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(SelectorFunction) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeRef())] 
 [warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(_ActionSheetProperties))),List()), defaulting to any [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(ActionSheetProperties) / TsTypeRef() / TsTypeRef())] 
@@ -60,9 +60,6 @@
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(_CanvasProperties))] 
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(CanvasEvents))] 
 [error] PhaseRes.scala:78 StackOverflowError [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at java.lang.String.valueOf(String.java:2994)
-	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:203)
-	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:362)
 	at scala.collection.immutable.List.foreach(List.scala:392)
 	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
 	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
@@ -1084,8 +1081,11 @@
 	at scala.collection.immutable.List.map(List.scala:298)
 	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:82)
 	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$2.applyOrElse(ExpandCallables.scala:100)
+	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$2.applyOrElse(ExpandCallables.scala:91)
+	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
+	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
 
-[debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
-[debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 
-[debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => publish] 
+[debug] PhaseRunner.scala:85 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
+[debug] PhaseRunner.scala:85 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 
+[debug] PhaseRunner.scala:85 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => build] 
+[debug] PhaseRunner.scala:85 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => publish] 

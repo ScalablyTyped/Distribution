@@ -1,0 +1,25 @@
+package typings
+package reactDashHighchartsLib.reactDashHighchartsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+ * Props for ReactHighcharts component.
+ */
+
+trait ReactHighchartsProps extends js.Object {
+  /**
+       *
+       * @param after-render callback.
+       */
+  var callback: js.UndefOr[
+    js.Function1[/* chart */ highchartsLib.highchartsMod.HighchartsNs.ChartObject, scala.Unit]
+  ] = js.undefined
+  /**
+       * Highcharts configuration options.
+       */
+  var config: highchartsLib.highchartsMod.HighchartsNs.Options
+}
+

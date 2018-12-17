@@ -976,6 +976,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait popper extends js.Object
   
   @js.native
+  sealed trait popperInteractive extends js.Object
+  
+  @js.native
   sealed trait positionAbsolute extends js.Object
   
   @js.native
@@ -1634,6 +1637,7 @@ object atMaterialDashUiCoreLibStrings {
   def permanent: permanent = "permanent".asInstanceOf[permanent]
   def persistent: persistent = "persistent".asInstanceOf[persistent]
   def popper: popper = "popper".asInstanceOf[popper]
+  def popperInteractive: popperInteractive = "popperInteractive".asInstanceOf[popperInteractive]
   def positionAbsolute: positionAbsolute = "positionAbsolute".asInstanceOf[positionAbsolute]
   def positionBottom: positionBottom = "positionBottom".asInstanceOf[positionBottom]
   def positionEnd: positionEnd = "positionEnd".asInstanceOf[positionEnd]

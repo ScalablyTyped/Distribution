@@ -1,0 +1,27 @@
+[debug] PhaseRunner.scala:81 Success [id => ipify, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:153 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ipify/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ipify),TsIdentLibrarySimple(ipify)),TsIdentModule(None,List(ipify))) [id => ipify, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(ipify)) [id => ipify, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:191 Processing TsIdentLibrarySimple(ipify) [id => ipify, phase => typescript] 
+[debug] PhaseRunner.scala:81 Success [id => ipify, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:36 Processing ipify [id => ipify, phase => scala.js] 
+[debug] PhaseRunner.scala:81 Success [id => ipify, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:197 Built ipify in 52447 ms [id => ipify, phase => build] 
+[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/ipify_sjs0.6_2.12/2.0-dt-20181217Z-7843dc/jars/ipify_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/ipify_sjs0.6_2.12/2.0-dt-20181217Z-7843dc/srcs/ipify_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/ipify_sjs0.6_2.12/2.0-dt-20181217Z-7843dc/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/ipify_sjs0.6_2.12/2.0-dt-20181217Z-7843dc/poms/ipify_sjs0.6_2.12.pom] [id => ipify, phase => build] 
+[debug] PhaseRunner.scala:81 Success [id => ipify, phase => build] 
+[error] PhaseRes.scala:75 Caught exception: was not able to find or create version 2.0-dt-20181217Z-7843dc for oyvindberg in ScalablyTyped for package ipify [id => ipify, phase => publish] java.lang.RuntimeException: was not able to find or create version 2.0-dt-20181217Z-7843dc for oyvindberg in ScalablyTyped for package ipify
+	at scala.sys.package$.error(package.scala:30)
+	at com.olvind.tso.importer.build.BinTrayPublisher.$anonfun$checkVersion$2(BinTrayPublisher.scala:63)
+	at com.olvind.tso.importer.build.BinTrayPublisher.$anonfun$checkVersion$2$adapted(BinTrayPublisher.scala:59)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+
+[debug] PhaseRunner.scala:85 Failure, [ipify => java.lang.RuntimeException: was not able to find or create version 2.0-dt-20181217Z-7843dc for oyvindberg in ScalablyTyped for package ipify] [id => ipify, phase => publish] 

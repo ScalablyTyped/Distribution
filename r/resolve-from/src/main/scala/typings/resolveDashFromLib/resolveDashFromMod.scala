@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object resolveDashFromMod extends js.Object {
   def apply(fromDir: java.lang.String, moduleId: java.lang.String): java.lang.String = js.native
+  def silent(fromDir: java.lang.String, moduleId: java.lang.String): java.lang.String | scala.Null = js.native
 }
 

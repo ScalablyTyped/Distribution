@@ -27,6 +27,35 @@ trait Keys extends js.Object {
            * @param RelatedTable [RelatedTable='']
            * @param RelatedColumn [RelatedColumn='']
            */
+  def Append(Item: Key, Type: KeyTypeEnum, Column: activexDashInteropLib.SafeArray[java.lang.String]): scala.Unit = js.native
+  /**
+           * @param Type [Type=1]
+           * @param RelatedTable [RelatedTable='']
+           * @param RelatedColumn [RelatedColumn='']
+           */
+  def Append(
+    Item: Key,
+    Type: KeyTypeEnum,
+    Column: activexDashInteropLib.SafeArray[java.lang.String],
+    RelatedTable: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * @param Type [Type=1]
+           * @param RelatedTable [RelatedTable='']
+           * @param RelatedColumn [RelatedColumn='']
+           */
+  def Append(
+    Item: Key,
+    Type: KeyTypeEnum,
+    Column: activexDashInteropLib.SafeArray[java.lang.String],
+    RelatedTable: java.lang.String,
+    RelatedColumn: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * @param Type [Type=1]
+           * @param RelatedTable [RelatedTable='']
+           * @param RelatedColumn [RelatedColumn='']
+           */
   def Append(Item: Key, Type: KeyTypeEnum, Column: java.lang.String): scala.Unit = js.native
   /**
            * @param Type [Type=1]
@@ -51,16 +80,32 @@ trait Keys extends js.Object {
            * @param RelatedTable [RelatedTable='']
            * @param RelatedColumn [RelatedColumn='']
            */
-  def Append(Item: Key, Type: KeyTypeEnum, Column: stdLib.SafeArray[java.lang.String]): scala.Unit = js.native
+  def Append(Item: java.lang.String): scala.Unit = js.native
+  /**
+           * @param Type [Type=1]
+           * @param RelatedTable [RelatedTable='']
+           * @param RelatedColumn [RelatedColumn='']
+           */
+  def Append(Item: java.lang.String, Type: KeyTypeEnum): scala.Unit = js.native
   /**
            * @param Type [Type=1]
            * @param RelatedTable [RelatedTable='']
            * @param RelatedColumn [RelatedColumn='']
            */
   def Append(
-    Item: Key,
+    Item: java.lang.String,
     Type: KeyTypeEnum,
-    Column: stdLib.SafeArray[java.lang.String],
+    Column: activexDashInteropLib.SafeArray[java.lang.String]
+  ): scala.Unit = js.native
+  /**
+           * @param Type [Type=1]
+           * @param RelatedTable [RelatedTable='']
+           * @param RelatedColumn [RelatedColumn='']
+           */
+  def Append(
+    Item: java.lang.String,
+    Type: KeyTypeEnum,
+    Column: activexDashInteropLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String
   ): scala.Unit = js.native
   /**
@@ -69,24 +114,12 @@ trait Keys extends js.Object {
            * @param RelatedColumn [RelatedColumn='']
            */
   def Append(
-    Item: Key,
+    Item: java.lang.String,
     Type: KeyTypeEnum,
-    Column: stdLib.SafeArray[java.lang.String],
+    Column: activexDashInteropLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String,
     RelatedColumn: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * @param Type [Type=1]
-           * @param RelatedTable [RelatedTable='']
-           * @param RelatedColumn [RelatedColumn='']
-           */
-  def Append(Item: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Type [Type=1]
-           * @param RelatedTable [RelatedTable='']
-           * @param RelatedColumn [RelatedColumn='']
-           */
-  def Append(Item: java.lang.String, Type: KeyTypeEnum): scala.Unit = js.native
   /**
            * @param Type [Type=1]
            * @param RelatedTable [RelatedTable='']
@@ -113,35 +146,6 @@ trait Keys extends js.Object {
     Item: java.lang.String,
     Type: KeyTypeEnum,
     Column: java.lang.String,
-    RelatedTable: java.lang.String,
-    RelatedColumn: java.lang.String
-  ): scala.Unit = js.native
-  /**
-           * @param Type [Type=1]
-           * @param RelatedTable [RelatedTable='']
-           * @param RelatedColumn [RelatedColumn='']
-           */
-  def Append(Item: java.lang.String, Type: KeyTypeEnum, Column: stdLib.SafeArray[java.lang.String]): scala.Unit = js.native
-  /**
-           * @param Type [Type=1]
-           * @param RelatedTable [RelatedTable='']
-           * @param RelatedColumn [RelatedColumn='']
-           */
-  def Append(
-    Item: java.lang.String,
-    Type: KeyTypeEnum,
-    Column: stdLib.SafeArray[java.lang.String],
-    RelatedTable: java.lang.String
-  ): scala.Unit = js.native
-  /**
-           * @param Type [Type=1]
-           * @param RelatedTable [RelatedTable='']
-           * @param RelatedColumn [RelatedColumn='']
-           */
-  def Append(
-    Item: java.lang.String,
-    Type: KeyTypeEnum,
-    Column: stdLib.SafeArray[java.lang.String],
     RelatedTable: java.lang.String,
     RelatedColumn: java.lang.String
   ): scala.Unit = js.native

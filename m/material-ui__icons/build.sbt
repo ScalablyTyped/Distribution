@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-ui__icons"
-version := "3.0.1-15680d"
+version := "3.0.1-5541f5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "isobject" % "3.0.1-2692e1",
   "org.scalablytyped" %%% "jss" % "9.5-dt-20181018Z-225825",
   "org.scalablytyped" %%% "keycode" % "2.2.0-9ae7b0",
-  "org.scalablytyped" %%% "material-ui__core" % "3.6.2-306527",
+  "org.scalablytyped" %%% "material-ui__core" % "3.7.0-467aeb",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
   "org.scalablytyped" %%% "normalize-scroll-left" % "0.1.2-2f06f2",
   "org.scalablytyped" %%% "popper_dot_js" % "1.14.6-1b3ef2",

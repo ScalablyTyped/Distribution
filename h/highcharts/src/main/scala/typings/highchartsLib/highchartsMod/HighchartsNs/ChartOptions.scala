@@ -197,6 +197,10 @@ trait ChartOptions extends js.Object {
            */
   var resetZoomButton: js.UndefOr[ChartResetZoomButton] = js.undefined
   /**
+           * Options for a scrollable plot area
+           */
+  var scrollablePlotArea: js.UndefOr[ScrollablePropArea] = js.undefined
+  /**
            * The background color of the marker square when selecting (zooming in on) an area of the chart.
            * @default 'rgba(69,114,167,0.25)'
            * @since 2.1.7

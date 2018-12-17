@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-express"
-version := "2.3.1-6355e3"
+version := "2.3.1-b182ed"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,9 +14,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-env" % "0.2.5-6ccb23",
   "org.scalablytyped" %%% "apollo-link" % "1.2.4-b0ec7c",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.2.1-33c37f",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.3.1-279078",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.3.1-718835",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-360fbe",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.0-7ac9fb",
+  "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.2.1-d44f7f",
   "org.scalablytyped" %%% "apollo-tracing" % "0.4.0-3917b9",
   "org.scalablytyped" %%% "apollo-utilities" % "1.0.26-062b35",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.9-ba95be",

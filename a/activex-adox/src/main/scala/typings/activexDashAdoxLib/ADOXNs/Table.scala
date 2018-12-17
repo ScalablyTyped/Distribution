@@ -11,8 +11,8 @@ class Table protected () extends js.Object {
   var `ADOX.Table_typekey`: Table = js.native
   @JSName("Columns")
   val Columns_Original: Columns = js.native
-  val DateCreated: stdLib.VarDate = js.native
-  val DateModified: stdLib.VarDate = js.native
+  val DateCreated: activexDashInteropLib.VarDate = js.native
+  val DateModified: activexDashInteropLib.VarDate = js.native
   @JSName("Indexes")
   val Indexes_Original: Indexes = js.native
   @JSName("Keys")
