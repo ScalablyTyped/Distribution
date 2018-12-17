@@ -11,11 +11,11 @@ trait IBasePickerStyles extends js.Object {
   var input: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /** Refers to the items already selected(picked). */
   var itemsWrapper: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
-  /** Root element of any picker extending from BasePicker (wraps all the elements)*/
+  /** Root element of any picker extending from BasePicker (wraps all the elements). */
   var root: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /** Refers to helper element used for accessibility tools (hidden from view on screen). */
   var screenReaderText: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
-  /** Refers to the elements already selected(picked) wrapped by `itemsWrapper` along with the input to type new selection */
+  /** Refers to the elements already selected(picked) wrapped by `itemsWrapper` along with the input to type new selection. */
   var text: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
 }
 

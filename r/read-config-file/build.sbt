@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "read-config-file"
-version := "3.2.0-aa9bf9"
+version := "3.2.0-56b719"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ajv" % "6.6.1-5904fe",
+  "org.scalablytyped" %%% "ajv" % "6.6.2-5904fe",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181214Z-21934a",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.6-28c29e",
   "org.scalablytyped" %%% "dotenv" % "6.1-dt-20181109Z-897c8b",

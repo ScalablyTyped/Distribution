@@ -11,14 +11,17 @@ sealed trait ValidationState extends js.Object
 @JSImport("office-ui-fabric-react/lib/components/pickers/BasePicker.types", "ValidationState")
 @js.native
 object ValidationState extends js.Object {
+  /** User input is invalid. */
   @js.native
   sealed trait invalid
     extends officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState
   
+  /** User input is valid. */
   @js.native
   sealed trait valid
     extends officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState
   
+  /** User input could be valid or invalid, its state is not known yet. */
   @js.native
   sealed trait warning
     extends officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState

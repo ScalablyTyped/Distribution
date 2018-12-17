@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "maxmind"
-version := "2.11.0-6aa271"
+version := "2.11.1-04bd3a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

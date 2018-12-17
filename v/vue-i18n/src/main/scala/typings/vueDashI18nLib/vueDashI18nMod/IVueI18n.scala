@@ -15,6 +15,7 @@ trait IVueI18n extends js.Object {
   @JSName("missing")
   var missing_Original: vueDashI18nLib.vueDashI18nMod.VueI18nNs.MissingHandler = js.native
   val numberFormats: vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormats = js.native
+  var pluralizationRules: vueDashI18nLib.vueDashI18nMod.VueI18nNs.PluralizationRulesMap = js.native
   var silentTranslationWarn: scala.Boolean = js.native
   def missing(
     locale: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Locale,

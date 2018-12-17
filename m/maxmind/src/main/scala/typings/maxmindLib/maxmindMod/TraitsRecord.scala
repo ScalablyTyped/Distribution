@@ -15,6 +15,7 @@ trait TraitsRecord extends js.Object {
   val is_anonymous_proxy: js.UndefOr[scala.Boolean] = js.undefined
   val is_anonymous_vpn: js.UndefOr[scala.Boolean] = js.undefined
   val is_hosting_provider: js.UndefOr[scala.Boolean] = js.undefined
+  val is_legitimate_proxy: js.UndefOr[scala.Boolean] = js.undefined
   val is_public_proxy: js.UndefOr[scala.Boolean] = js.undefined
   val is_satellite_provider: js.UndefOr[scala.Boolean] = js.undefined
   val is_tor_exit_node: js.UndefOr[scala.Boolean] = js.undefined

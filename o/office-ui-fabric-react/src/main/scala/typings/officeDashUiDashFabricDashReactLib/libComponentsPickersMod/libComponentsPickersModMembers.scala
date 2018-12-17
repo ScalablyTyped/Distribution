@@ -17,9 +17,20 @@ object libComponentsPickersModMembers extends js.Object {
   def NormalPeoplePicker(
     props: officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerMod.IPeoplePickerProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def TagItem(props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagItemMod.ITagItemProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagItem(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagItemBase(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagItemSuggestion(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemSuggestionProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagItemSuggestionBase(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemSuggestionProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def TagPicker(
-    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerMod.ITagPickerProps
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagPickerProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def createGenericItem(
     name: java.lang.String,

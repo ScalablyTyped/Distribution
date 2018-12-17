@@ -12,7 +12,7 @@ trait SCBroker
   var dataMap: fleximapLib.fleximapMod.FlexiMap = js.native
   var id: scala.Double = js.native
   var instanceId: scala.Double = js.native
-  var options: socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions = js.native
+  var options: js.Any = js.native
   var subscriptions: Subscriptions = js.native
   def exec(
     query: js.Function3[

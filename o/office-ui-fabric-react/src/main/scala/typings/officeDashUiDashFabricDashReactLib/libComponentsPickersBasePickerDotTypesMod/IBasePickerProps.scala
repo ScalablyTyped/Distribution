@@ -180,7 +180,7 @@ trait IBasePickerProps[T]
     atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[IBasePickerStyleProps, IBasePickerStyles]
   ] = js.native
   /**
-       * Theme provided by styled() function
+       * Theme provided by styled() function.
        */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.native
   /**

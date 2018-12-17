@@ -211,9 +211,20 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def SwatchColorPicker(
     props: officeDashUiDashFabricDashReactLib.libComponentsSwatchColorPickerSwatchColorPickerDotTypesMod.ISwatchColorPickerProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def TagItem(props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagItemMod.ITagItemProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagItem(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagItemBase(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagItemSuggestion(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemSuggestionProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def TagItemSuggestionBase(
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemSuggestionProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def TagPicker(
-    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerMod.ITagPickerProps
+    props: officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagPickerProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def TeachingBubble(
     props: officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps

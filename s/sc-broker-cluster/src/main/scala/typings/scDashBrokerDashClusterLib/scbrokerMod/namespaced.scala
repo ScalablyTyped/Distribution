@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced ()
   extends scDashBrokerLib.scbrokerMod.namespaced {
-  def this(options: socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions) = this()
+  def this(options: js.Any) = this()
 }
 

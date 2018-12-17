@@ -24,7 +24,7 @@ trait IBasePickerSuggestionsProps extends js.Object {
        */
   var mostRecentlyUsedHeaderText: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * the text that should appear when no results are returned.
+       * The text that should appear when no results are returned.
        */
   var noResultsFoundText: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -36,7 +36,7 @@ trait IBasePickerSuggestionsProps extends js.Object {
        */
   var resultsFooter: js.UndefOr[js.Function0[reactLib.reactMod.Global.JSXNs.Element]] = js.undefined
   /**
-       * A renderer that adds an element at the end of the suggestions list it has more items than resultsMaximumNumber.
+       * A renderer that adds an element at the end of the suggestions list if it has more items than resultsMaximumNumber.
        */
   var resultsFooterFull: js.UndefOr[js.Function0[reactLib.reactMod.Global.JSXNs.Element]] = js.undefined
   /**
@@ -48,7 +48,7 @@ trait IBasePickerSuggestionsProps extends js.Object {
        */
   var searchForMoreText: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The text to display while searching for more results in a limited sugesstions list.
+       * The text to display while searching for more results in a limited suggestions list.
        */
   var searchingText: js.UndefOr[java.lang.String] = js.undefined
   /**

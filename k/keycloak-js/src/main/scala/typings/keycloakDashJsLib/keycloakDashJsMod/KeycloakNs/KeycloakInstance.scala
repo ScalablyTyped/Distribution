@@ -88,7 +88,7 @@ trait KeycloakInstance extends js.Object {
   /**
   		 * The realm roles associated with the token.
   		 */
-  var realmAccess: js.UndefOr[keycloakDashJsLib.Anon_Roles] = js.native
+  var realmAccess: js.UndefOr[KeycloakRoles] = js.native
   /**
   		 * @private Undocumented.
   		 */
@@ -104,7 +104,7 @@ trait KeycloakInstance extends js.Object {
   /**
   		 * The resource roles associated with the token.
   		 */
-  var resourceAccess: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var resourceAccess: js.UndefOr[KeycloakResourceAccess] = js.native
   /**
   		 * Response mode passed in init (default value is `'fragment'`).
   		 */

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "schwifty"
-version := "4.0-dt-20180910Z-faac1c"
+version := "4.0-dt-20180910Z-01317a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ajv" % "6.6.1-5904fe",
+  "org.scalablytyped" %%% "ajv" % "6.6.2-5904fe",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181214Z-21934a",
   "org.scalablytyped" %%% "boom" % "7.2-dt-20181120Z-678fe2",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20181121Z-9fafc7",
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20180910Z-90fc20",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20180910Z-66eb34",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181214Z-702cdc",
-  "org.scalablytyped" %%% "objection" % "1.4.0-ce0c36",
+  "org.scalablytyped" %%% "objection" % "1.4.0-1b2d35",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20180910Z-7ccab7",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181208Z-06df8d",
   "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-878ba9",

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait IPersonaSharedProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotBaseMod.PersonaBase | reactLib.HTMLDivElement
+      officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotBaseMod.PersonaBase | officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaCoinPersonaCoinDotBaseMod.PersonaCoinBase | reactLib.HTMLDivElement
     ] {
   /**
        * Whether initials are calculated for phone numbers and number sequences.

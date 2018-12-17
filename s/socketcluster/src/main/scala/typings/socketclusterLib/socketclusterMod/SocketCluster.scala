@@ -18,7 +18,7 @@ trait SocketCluster
   val EVENT_WORKER_CLUSTER_START: socketclusterLib.socketclusterLibStrings.workerClusterStart = js.native
   val EVENT_WORKER_EXIT: socketclusterLib.socketclusterLibStrings.workerExit = js.native
   val EVENT_WORKER_START: socketclusterLib.socketclusterLibStrings.workerStart = js.native
-  var options: socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions = js.native
+  var options: js.Any = js.native
   @JSName("on")
   def on_brokerExit(
     event: socketclusterLib.socketclusterLibStrings.brokerExit,
